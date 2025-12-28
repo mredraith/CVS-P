@@ -249,7 +249,7 @@ palFX.sinAdd= -255,-255,-255,48
 type = hitdef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
-trigger1 = animelem = 3 && anim = 208
+trigger1 = animelem = 3 && anim = 20
 attr = S, NA
 damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
 animtype = Medium
@@ -1643,7 +1643,7 @@ hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 0 + 3 * var(29)
-ground.hittime = 15 + 3 * var(29)
+ground.hittime = 17 + 3 * var(29)
 ground.velocity = 0
 ground.cornerpush.veloff = 0;ifelse(var(20), -5.78, -10.47)
 air.type = Low

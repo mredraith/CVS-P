@@ -1,9 +1,12 @@
 {
-  "playtime": 140.5,
+  "playtime": 206.55,
   "modes": {
     "training": {
       "playtime": 0,
-      "clear": 0
+      "clear": 1,
+      "clearcount": {
+        "funny ryu": 1
+      }
     },
     "freebattle": {
       "playtime": 0,
@@ -42,8 +45,11 @@
       ]
     },
     "watch": {
-      "playtime": 0,
-      "clear": 0
+      "playtime": 66.05,
+      "clear": 1,
+      "clearcount": {
+        "shin akuma": 1
+      }
     }
   }
 }
