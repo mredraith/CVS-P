@@ -1,0 +1,11 @@
+﻿[FNT v2]
+fntversion = 2,00
+name = "MvC-lifebar"
+
+[Def]
+Type = bitmap
+BankType = palette
+Size = 24,24 ;width, height.  Width is used for spaces.
+Spacing = -3,0
+Offset = 0,0
+File = MvC-lifebar.sff

@@ -1,0 +1,11 @@
+﻿[FNT v2]
+fntversion = 2,00
+name = "MvC-regular"
+
+[Def]
+Type = bitmap
+BankType = palette
+Size = 32,32 ;width, height.  Width is used for spaces.
+Spacing = -1,0
+Offset = 0,0
+File = MvC-regular.sff

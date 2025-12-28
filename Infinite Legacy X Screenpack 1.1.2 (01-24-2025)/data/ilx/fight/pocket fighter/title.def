@@ -1,0 +1,32 @@
+[Info]
+name = "Infinite Legacy X (Logo)"
+author = "OroCrimson"
+localcoord = 1280,720
+
+[SceneDef]
+spr = title.sff
+
+;--------------------------
+[Scene 0]
+; Fade
+fadein.time = 60
+fadeout.time = 60
+bgm = sound/ILX.mp3
+bgm.loop = 0
+bg.name = BG0
+clearcolor = 0,0,0
+end.time = 1200
+
+[BG0 BG]
+type=normal
+spriteno = 0,0
+start = -640,0
+
+[BG0 Text]
+type=anim
+actionno = 111
+start = 0,562
+
+[Begin Action 111]
+0,1, 0,0, 30
+-1,0, 0,0, 30
