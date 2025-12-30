@@ -277,12 +277,12 @@ ignoreHitPause = 1
 
 [State 1005, Projectile Flag Off]
 type = ParentVarSet
-trigger1 = pos x != [-200,200]
+trigger1 = pos x != [-300,300]
 var(39) = 0
 
 [State 1005, End]
 type = DestroySelf
-trigger1 = pos x != [-200,200]
+trigger1 = pos x != [-300,300]
 trigger2 = Anim = 1006 && !AnimTime
 
 
@@ -3513,12 +3513,12 @@ ignoreHitPause = 1
 
 [State 3405, ParentVarSet: Projectile Flag Off]
 type = ParentVarSet
-trigger1 = Pos x != [-200,200]
+trigger1 = pos x != [-300,300]
 var(39) = 0
 
 [State 3405, End]
 type = DestroySelf
-trigger1 = Pos x != [-200,200]
+trigger1 = pos x != [-300,300]
 
 
 ;Disappear

@@ -186,52 +186,52 @@ time = 24
 
 [Command]
 name = "641236p"
-command = ~F, B, DB, D, DF, F, x+y
+command = ~F, B, D, F, x+y
 time = 40
 [Command]
 name = "641236p"
-command = ~F, B, DB, D, DF, F, x+z
+command = ~F, B, D, F, x+z
 time = 40
 [Command]
 name = "641236p"
-command = ~F, B, DB, D, DF, F, y+z
+command = ~F, B, D, F, y+z
 time = 40
 [Command]
 name = "641236p"
-command = ~F, B, DB, D, DF, F, ~x+y
+command = ~F, B, D, F, ~x+y
 time = 40
 [Command]
 name = "641236p"
-command = ~F, B, DB, D, DF, F, ~x+z
+command = ~F, B, D, F, ~x+z
 time = 40
 [Command]
 name = "641236p"
-command = ~F, B, DB, D, DF, F, ~y+z
+command = ~F, B, D, F, ~y+z
 time = 40
 
 [Command]
 name = "641236k"
-command = ~F, B, DB, D, DF, F, a+b
+command = ~F, B, D, F, a+b
 time = 40
 [Command]
 name = "641236k"
-command = ~F, B, DB, D, DF, F, a+c
+command = ~F, B, D, F, a+c
 time = 40
 [Command]
 name = "641236k"
-command = ~F, B, DB, D, DF, F, b+c
+command = ~F, B, D, F, b+c
 time = 40
 [Command]
 name = "641236k"
-command = ~F, B, DB, D, DF, F, ~a+b
+command = ~F, B, D, F, ~a+b
 time = 40
 [Command]
 name = "641236k"
-command = ~F, B, DB, D, DF, F, ~a+c
+command = ~F, B, D, F, ~a+c
 time = 40
 [Command]
 name = "641236k"
-command = ~F, B, DB, D, DF, F, ~b+c
+command = ~F, B, D, F, ~b+c
 time = 40
 
 [Command]
@@ -362,40 +362,40 @@ time = 16
 
 [Command]
 name = "63214pp"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 32
 [Command]
 name = "63214pp"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 32
 [Command]
 name = "63214pp"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 32
 
 [Command]
 name = "63214p"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 32
 [Command]
 name = "63214p"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 32
 [Command]
 name = "63214p"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 32
 [Command]
 name = "63214p"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 32
 [Command]
 name = "63214p"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 32
 [Command]
 name = "63214p"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 32
 
 [Command]

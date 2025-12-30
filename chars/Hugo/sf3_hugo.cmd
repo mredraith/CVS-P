@@ -102,82 +102,82 @@ time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, x
+command = ~U, UB, B, D, F, UF, U, UB, B, DB, D, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, x
+command = ~B, D, F, UF, U, UB, B, D, F, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, x
+command = ~D, DF, F, UF, U, UB, B, D, F, UF, U, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, x
+command = ~F, UF, U, UB, B, D, F, UF, U, UB, B, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, x
+command = ~U, UF, F, D, B, UB, U, UF, F, DF, D, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, x
+command = ~F, D, B, UB, U, UF, F, D, B, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, x
+command = ~D, DB, B, UB, U, UF, F, D, B, UB, U, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, x
+command = ~B, UB, U, UF, F, D, B, UB, U, UF, F, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, x
+command = ~UB, B, D, F, UF, U, UB, B, DB, D, DF, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, x
+command = ~DB, D, DF, F, UF, U, UB, B, D, F, UF, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, x
+command = ~DF, F, UF, U, UB, B, D, F, UF, U, UB, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, x
+command = ~UF, U, UB, B, D, F, UF, U, UB, B, DB, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, x
+command = ~UF, F, D, B, UB, U, UF, F, DF, D, DB, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, x
+command = ~DF, D, DB, B, UB, U, UF, F, D, B, UB, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, x
+command = ~DB, B, UB, U, UF, F, D, B, UB, U, UF, x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, x
+command = ~UB, U, UF, F, D, B, UB, U, UF, F, DF, x
 time = 36
 
 [Command]
@@ -222,82 +222,82 @@ time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, ~x
+command = ~U, UB, B, D, F, UF, U, UB, B, DB, D, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, ~x
+command = ~B, D, F, UF, U, UB, B, D, F, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, ~x
+command = ~D, DF, F, UF, U, UB, B, D, F, UF, U, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, ~x
+command = ~F, UF, U, UB, B, D, F, UF, U, UB, B, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, ~x
+command = ~U, UF, F, D, B, UB, U, UF, F, DF, D, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, ~x
+command = ~F, D, B, UB, U, UF, F, D, B, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, ~x
+command = ~D, DB, B, UB, U, UF, F, D, B, UB, U, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, ~x
+command = ~B, UB, U, UF, F, D, B, UB, U, UF, F, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, ~x
+command = ~UB, B, D, F, UF, U, UB, B, DB, D, DF, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, ~x
+command = ~DB, D, DF, F, UF, U, UB, B, D, F, UF, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, ~x
+command = ~DF, F, UF, U, UB, B, D, F, UF, U, UB, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, ~x
+command = ~UF, U, UB, B, D, F, UF, U, UB, B, DB, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, ~x
+command = ~UF, F, D, B, UB, U, UF, F, DF, D, DB, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, ~x
+command = ~DF, D, DB, B, UB, U, UF, F, D, B, UB, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, ~x
+command = ~DB, B, UB, U, UF, F, D, B, UB, U, UF, ~x
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, ~x
+command = ~UB, U, UF, F, D, B, UB, U, UF, F, DF, ~x
 time = 36
 
 [Command]
@@ -502,82 +502,82 @@ time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, y
+command = ~U, UB, B, D, F, UF, U, UB, B, DB, D, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, y
+command = ~B, D, F, UF, U, UB, B, D, F, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, y
+command = ~D, DF, F, UF, U, UB, B, D, F, UF, U, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, y
+command = ~F, UF, U, UB, B, D, F, UF, U, UB, B, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, y
+command = ~U, UF, F, D, B, UB, U, UF, F, DF, D, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, y
+command = ~F, D, B, UB, U, UF, F, D, B, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, y
+command = ~D, DB, B, UB, U, UF, F, D, B, UB, U, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, y
+command = ~B, UB, U, UF, F, D, B, UB, U, UF, F, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, y
+command = ~UB, B, D, F, UF, U, UB, B, DB, D, DF, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, y
+command = ~DB, D, DF, F, UF, U, UB, B, D, F, UF, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, y
+command = ~DF, F, UF, U, UB, B, D, F, UF, U, UB, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, y
+command = ~UF, U, UB, B, D, F, UF, U, UB, B, DB, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, y
+command = ~UF, F, D, B, UB, U, UF, F, DF, D, DB, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, y
+command = ~DF, D, DB, B, UB, U, UF, F, D, B, UB, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, y
+command = ~DB, B, UB, U, UF, F, D, B, UB, U, UF, y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, y
+command = ~UB, U, UF, F, D, B, UB, U, UF, F, DF, y
 time = 36
 
 [Command]
@@ -622,82 +622,82 @@ time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, ~y
+command = ~U, UB, B, D, F, UF, U, UB, B, DB, D, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, ~y
+command = ~B, D, F, UF, U, UB, B, D, F, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, ~y
+command = ~D, DF, F, UF, U, UB, B, D, F, UF, U, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, ~y
+command = ~F, UF, U, UB, B, D, F, UF, U, UB, B, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, ~y
+command = ~U, UF, F, D, B, UB, U, UF, F, DF, D, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, ~y
+command = ~F, D, B, UB, U, UF, F, D, B, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, ~y
+command = ~D, DB, B, UB, U, UF, F, D, B, UB, U, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, ~y
+command = ~B, UB, U, UF, F, D, B, UB, U, UF, F, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, ~y
+command = ~UB, B, D, F, UF, U, UB, B, DB, D, DF, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, ~y
+command = ~DB, D, DF, F, UF, U, UB, B, D, F, UF, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, ~y
+command = ~DF, F, UF, U, UB, B, D, F, UF, U, UB, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, ~y
+command = ~UF, U, UB, B, D, F, UF, U, UB, B, DB, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, ~y
+command = ~UF, F, D, B, UB, U, UF, F, DF, D, DB, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, ~y
+command = ~DF, D, DB, B, UB, U, UF, F, D, B, UB, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, ~y
+command = ~DB, B, UB, U, UF, F, D, B, UB, U, UF, ~y
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, ~y
+command = ~UB, U, UF, F, D, B, UB, U, UF, F, DF, ~y
 time = 36
 
 [Command]
@@ -902,82 +902,82 @@ time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, z
+command = ~U, UB, B, D, F, UF, U, UB, B, DB, D, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, z
+command = ~B, D, F, UF, U, UB, B, D, F, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, z
+command = ~D, DF, F, UF, U, UB, B, D, F, UF, U, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, z
+command = ~F, UF, U, UB, B, D, F, UF, U, UB, B, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, z
+command = ~U, UF, F, D, B, UB, U, UF, F, DF, D, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, z
+command = ~F, D, B, UB, U, UF, F, D, B, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, z
+command = ~D, DB, B, UB, U, UF, F, D, B, UB, U, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, z
+command = ~B, UB, U, UF, F, D, B, UB, U, UF, F, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, z
+command = ~UB, B, D, F, UF, U, UB, B, DB, D, DF, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, z
+command = ~DB, D, DF, F, UF, U, UB, B, D, F, UF, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, z
+command = ~DF, F, UF, U, UB, B, D, F, UF, U, UB, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, z
+command = ~UF, U, UB, B, D, F, UF, U, UB, B, DB, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, z
+command = ~UF, F, D, B, UB, U, UF, F, DF, D, DB, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, z
+command = ~DF, D, DB, B, UB, U, UF, F, D, B, UB, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, z
+command = ~DB, B, UB, U, UF, F, D, B, UB, U, UF, z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, z
+command = ~UB, U, UF, F, D, B, UB, U, UF, F, DF, z
 time = 36
 
 [Command]
@@ -1022,82 +1022,82 @@ time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, ~z
+command = ~U, UB, B, D, F, UF, U, UB, B, DB, D, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, ~z
+command = ~B, D, F, UF, U, UB, B, D, F, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, ~z
+command = ~D, DF, F, UF, U, UB, B, D, F, UF, U, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, ~z
+command = ~F, UF, U, UB, B, D, F, UF, U, UB, B, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, ~z
+command = ~U, UF, F, D, B, UB, U, UF, F, DF, D, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, ~z
+command = ~F, D, B, UB, U, UF, F, D, B, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, ~z
+command = ~D, DB, B, UB, U, UF, F, D, B, UB, U, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, ~z
+command = ~B, UB, U, UF, F, D, B, UB, U, UF, F, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, B, DB, D, DF, F, UF, U, UB, B, DB, D, DF, ~z
+command = ~UB, B, D, F, UF, U, UB, B, DB, D, DF, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, D, DF, F, UF, U, UB, B, DB, D, DF, F, UF, ~z
+command = ~DB, D, DF, F, UF, U, UB, B, D, F, UF, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, F, UF, U, UB, B, DB, D, DF, F, UF, U, UB, ~z
+command = ~DF, F, UF, U, UB, B, D, F, UF, U, UB, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, U, UB, B, DB, D, DF, F, UF, U, UB, B, DB, ~z
+command = ~UF, U, UB, B, D, F, UF, U, UB, B, DB, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UF, F, DF, D, DB, B, UB, U, UF, F, DF, D, DB, ~z
+command = ~UF, F, D, B, UB, U, UF, F, DF, D, DB, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DF, D, DB, B, UB, U, UF, F, DF, D, DB, B, UB, ~z
+command = ~DF, D, DB, B, UB, U, UF, F, D, B, UB, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~DB, B, UB, U, UF, F, DF, D, DB, B, UB, U, UF, ~z
+command = ~DB, B, UB, U, UF, F, D, B, UB, U, UF, ~z
 time = 36
 
 [Command]
 name = "ギガスブリーカー"
-command = ~UB, U, UF, F, DF, D, DB, B, UB, U, UF, F, DF, ~z
+command = ~UB, U, UF, F, D, B, UB, U, UF, F, DF, ~z
 time = 36
 
 [Command]
@@ -1426,12 +1426,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~U, UB, B, DB, D, DF, F, x
+command = ~U, UB, B, D, F, x
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~B, DB, D, DF, F, UF, U, x
+command = ~B, D, F, UF, U, x
 time = 24
 
 [Command]
@@ -1446,12 +1446,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~U, UF, F, DF, D, DB, B, x
+command = ~U, UF, F, D, B, x
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~F, DF, D, DB, B, UB, U, x
+command = ~F, D, B, UB, U, x
 time = 24
 
 [Command]
@@ -1471,7 +1471,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UB, B, DB, D, DF, F, UF, x
+command = ~UB, B, D, F, UF, x
 time = 24
 
 [Command]
@@ -1491,7 +1491,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UF, F, DF, D, DB, B, UB, x
+command = ~UF, F, D, B, UB, x
 time = 24
 
 [Command]
@@ -1506,7 +1506,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UB, B, DB, D, DF, F, UF, x
+command = ~UB, B, D, F, UF, x
 time = 24
 
 [Command]
@@ -1526,7 +1526,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UF, F, DF, D, DB, B, UB, x
+command = ~UF, F, D, B, UB, x
 time = 24
 
 [Command]
@@ -1586,12 +1586,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~U, UB, B, DB, D, DF, F, ~x
+command = ~U, UB, B, D, F, ~x
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~B, DB, D, DF, F, UF, U, ~x
+command = ~B, D, F, UF, U, ~x
 time = 24
 
 [Command]
@@ -1606,12 +1606,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~U, UF, F, DF, D, DB, B, ~x
+command = ~U, UF, F, D, B, ~x
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~F, DF, D, DB, B, UB, U, ~x
+command = ~F, D, B, UB, U, ~x
 time = 24
 
 [Command]
@@ -1631,7 +1631,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UB, B, DB, D, DF, F, UF, ~x
+command = ~UB, B, D, F, UF, ~x
 time = 24
 
 [Command]
@@ -1651,7 +1651,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UF, F, DF, D, DB, B, UB, ~x
+command = ~UF, F, D, B, UB, ~x
 time = 24
 
 [Command]
@@ -1666,7 +1666,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UB, B, DB, D, DF, F, UF, ~x
+command = ~UB, B, D, F, UF, ~x
 time = 24
 
 [Command]
@@ -1686,7 +1686,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_x"
-command = ~UF, F, DF, D, DB, B, UB, ~x
+command = ~UF, F, D, B, UB, ~x
 time = 24
 
 [Command]
@@ -1906,12 +1906,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~U, UB, B, DB, D, DF, F, y
+command = ~U, UB, B, D, F, y
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~B, DB, D, DF, F, UF, U, y
+command = ~B, D, F, UF, U, y
 time = 24
 
 [Command]
@@ -1926,12 +1926,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~U, UF, F, DF, D, DB, B, y
+command = ~U, UF, F, D, B, y
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~F, DF, D, DB, B, UB, U, y
+command = ~F, D, B, UB, U, y
 time = 24
 
 [Command]
@@ -1951,7 +1951,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UB, B, DB, D, DF, F, UF, y
+command = ~UB, B, D, F, UF, y
 time = 24
 
 [Command]
@@ -1971,7 +1971,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UF, F, DF, D, DB, B, UB, y
+command = ~UF, F, D, B, UB, y
 time = 24
 
 [Command]
@@ -1986,7 +1986,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UB, B, DB, D, DF, F, UF, y
+command = ~UB, B, D, F, UF, y
 time = 24
 
 [Command]
@@ -2006,7 +2006,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UF, F, DF, D, DB, B, UB, y
+command = ~UF, F, D, B, UB, y
 time = 24
 
 [Command]
@@ -2066,12 +2066,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~U, UB, B, DB, D, DF, F, ~y
+command = ~U, UB, B, D, F, ~y
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~B, DB, D, DF, F, UF, U, ~y
+command = ~B, D, F, UF, U, ~y
 time = 24
 
 [Command]
@@ -2086,12 +2086,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~U, UF, F, DF, D, DB, B, ~y
+command = ~U, UF, F, D, B, ~y
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~F, DF, D, DB, B, UB, U, ~y
+command = ~F, D, B, UB, U, ~y
 time = 24
 
 [Command]
@@ -2111,7 +2111,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UB, B, DB, D, DF, F, UF, ~y
+command = ~UB, B, D, F, UF, ~y
 time = 24
 
 [Command]
@@ -2131,7 +2131,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UF, F, DF, D, DB, B, UB, ~y
+command = ~UF, F, D, B, UB, ~y
 time = 24
 
 [Command]
@@ -2146,7 +2146,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UB, B, DB, D, DF, F, UF, ~y
+command = ~UB, B, D, F, UF, ~y
 time = 24
 
 [Command]
@@ -2166,7 +2166,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_y"
-command = ~UF, F, DF, D, DB, B, UB, ~y
+command = ~UF, F, D, B, UB, ~y
 time = 24
 
 [Command]
@@ -2386,12 +2386,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~U, UB, B, DB, D, DF, F, z
+command = ~U, UB, B, D, F, z
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~B, DB, D, DF, F, UF, U, z
+command = ~B, D, F, UF, U, z
 time = 24
 
 [Command]
@@ -2406,12 +2406,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~U, UF, F, DF, D, DB, B, z
+command = ~U, UF, F, D, B, z
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~F, DF, D, DB, B, UB, U, z
+command = ~F, D, B, UB, U, z
 time = 24
 
 [Command]
@@ -2431,7 +2431,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UB, B, DB, D, DF, F, UF, z
+command = ~UB, B, D, F, UF, z
 time = 24
 
 [Command]
@@ -2451,7 +2451,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UF, F, DF, D, DB, B, UB, z
+command = ~UF, F, D, B, UB, z
 time = 24
 
 [Command]
@@ -2466,7 +2466,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UB, B, DB, D, DF, F, UF, z
+command = ~UB, B, D, F, UF, z
 time = 24
 
 [Command]
@@ -2486,7 +2486,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UF, F, DF, D, DB, B, UB, z
+command = ~UF, F, D, B, UB, z
 time = 24
 
 [Command]
@@ -2546,12 +2546,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~U, UB, B, DB, D, DF, F, ~z
+command = ~U, UB, B, D, F, ~z
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~B, DB, D, DF, F, UF, U, ~z
+command = ~B, D, F, UF, U, ~z
 time = 24
 
 [Command]
@@ -2566,12 +2566,12 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~U, UF, F, DF, D, DB, B, ~z
+command = ~U, UF, F, D, B, ~z
 time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~F, DF, D, DB, B, UB, U, ~z
+command = ~F, D, B, UB, U, ~z
 time = 24
 
 [Command]
@@ -2591,7 +2591,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UB, B, DB, D, DF, F, UF, ~z
+command = ~UB, B, D, F, UF, ~z
 time = 24
 
 [Command]
@@ -2611,7 +2611,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UF, F, DF, D, DB, B, UB, ~z
+command = ~UF, F, D, B, UB, ~z
 time = 24
 
 [Command]
@@ -2626,7 +2626,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UB, B, DB, D, DF, F, UF, ~z
+command = ~UB, B, D, F, UF, ~z
 time = 24
 
 [Command]
@@ -2646,7 +2646,7 @@ time = 24
 
 [Command]
 name = "ムーンサルトプレス_z"
-command = ~UF, F, DF, D, DB, B, UB, ~z
+command = ~UF, F, D, B, UB, ~z
 time = 24
 
 [Command]
@@ -2826,32 +2826,32 @@ time = 24
 
 [Command]
 name = "ウルトラスルー_a"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 18
 
 [Command]
 name = "ウルトラスルー_a"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 18
 
 [Command]
 name = "ウルトラスルー_b"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 18
 
 [Command]
 name = "ウルトラスルー_b"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 18
 
 [Command]
 name = "ウルトラスルー_c"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 18
 
 [Command]
 name = "ウルトラスルー_c"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 18
 
 [Command]
@@ -2896,12 +2896,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~U, UB, B, DB, D, DF, F, a
+command = ~U, UB, B, D, F, a
 time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~B, DB, D, DF, F, UF, U, a
+command = ~B, D, F, UF, U, a
 time = 24
 
 [Command]
@@ -2916,12 +2916,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~U, UF, F, DF, D, DB, B, a
+command = ~U, UF, F, D, B, a
 time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~F, DF, D, DB, B, UB, U, a
+command = ~F, D, B, UB, U, a
 time = 24
 
 [Command]
@@ -2941,7 +2941,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UB, B, DB, D, DF, F, UF, a
+command = ~UB, B, D, F, UF, a
 time = 24
 
 [Command]
@@ -2961,7 +2961,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UF, F, DF, D, DB, B, UB, a
+command = ~UF, F, D, B, UB, a
 time = 24
 
 [Command]
@@ -2976,7 +2976,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UB, B, DB, D, DF, F, UF, a
+command = ~UB, B, D, F, UF, a
 time = 24
 
 [Command]
@@ -2996,7 +2996,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UF, F, DF, D, DB, B, UB, a
+command = ~UF, F, D, B, UB, a
 time = 24
 
 [Command]
@@ -3056,12 +3056,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~U, UB, B, DB, D, DF, F, ~a
+command = ~U, UB, B, D, F, ~a
 time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~B, DB, D, DF, F, UF, U, ~a
+command = ~B, D, F, UF, U, ~a
 time = 24
 
 [Command]
@@ -3076,12 +3076,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~U, UF, F, DF, D, DB, B, ~a
+command = ~U, UF, F, D, B, ~a
 time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~F, DF, D, DB, B, UB, U, ~a
+command = ~F, D, B, UB, U, ~a
 time = 24
 
 [Command]
@@ -3101,7 +3101,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UB, B, DB, D, DF, F, UF, ~a
+command = ~UB, B, D, F, UF, ~a
 time = 24
 
 [Command]
@@ -3121,7 +3121,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UF, F, DF, D, DB, B, UB, ~a
+command = ~UF, F, D, B, UB, ~a
 time = 24
 
 [Command]
@@ -3136,7 +3136,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UB, B, DB, D, DF, F, UF, ~a
+command = ~UB, B, D, F, UF, ~a
 time = 24
 
 [Command]
@@ -3156,7 +3156,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_a"
-command = ~UF, F, DF, D, DB, B, UB, ~a
+command = ~UF, F, D, B, UB, ~a
 time = 24
 
 [Command]
@@ -3376,12 +3376,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~U, UB, B, DB, D, DF, F, b
+command = ~U, UB, B, D, F, b
 time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~B, DB, D, DF, F, UF, U, b
+command = ~B, D, F, UF, U, b
 time = 24
 
 [Command]
@@ -3396,12 +3396,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~U, UF, F, DF, D, DB, B, b
+command = ~U, UF, F, D, B, b
 time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~F, DF, D, DB, B, UB, U, b
+command = ~F, D, B, UB, U, b
 time = 24
 
 [Command]
@@ -3421,7 +3421,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UB, B, DB, D, DF, F, UF, b
+command = ~UB, B, D, F, UF, b
 time = 24
 
 [Command]
@@ -3436,12 +3436,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UB, U, UF, F, DF, D, DB, b
+command = ~UB, U, UF, F, D, B
 time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UF, F, DF, D, DB, B, UB, b
+command = ~UF, F, D, B, UB, b
 time = 24
 
 [Command]
@@ -3456,7 +3456,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UB, B, DB, D, DF, F, UF, b
+command = ~UB, B, D, F, UF, b
 time = 24
 
 [Command]
@@ -3476,7 +3476,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UF, F, DF, D, DB, B, UB, b
+command = ~UF, F, D, B, UB, b
 time = 24
 
 [Command]
@@ -3491,7 +3491,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UB, U, UF, F, DF, D, DB, b
+command = ~UB, U, UF, F, D, B
 time = 24
 
 [Command]
@@ -3536,12 +3536,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~U, UB, B, DB, D, DF, F, ~b
+command = ~U, UB, B, D, F, ~b
 time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~B, DB, D, DF, F, UF, U, ~b
+command = ~B, D, F, UF, U, ~b
 time = 24
 
 [Command]
@@ -3556,12 +3556,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~U, UF, F, DF, D, DB, B, ~b
+command = ~U, UF, F, D, B, ~b
 time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~F, DF, D, DB, B, UB, U, ~b
+command = ~F, D, B, UB, U, ~b
 time = 24
 
 [Command]
@@ -3581,7 +3581,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UB, B, DB, D, DF, F, UF, ~b
+command = ~UB, B, D, F, UF, ~b
 time = 24
 
 [Command]
@@ -3601,7 +3601,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UF, F, DF, D, DB, B, UB, ~b
+command = ~UF, F, D, B, UB, ~b
 time = 24
 
 [Command]
@@ -3616,7 +3616,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UB, B, DB, D, DF, F, UF, ~b
+command = ~UB, B, D, F, UF, ~b
 time = 24
 
 [Command]
@@ -3636,7 +3636,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_b"
-command = ~UF, F, DF, D, DB, B, UB, ~b
+command = ~UF, F, D, B, UB, ~b
 time = 24
 
 [Command]
@@ -3856,12 +3856,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~U, UB, B, DB, D, DF, F, c
+command = ~U, UB, B, D, F, c
 time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~B, DB, D, DF, F, UF, U, c
+command = ~B, D, F, UF, U, c
 time = 24
 
 [Command]
@@ -3876,12 +3876,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~U, UF, F, DF, D, DB, B, c
+command = ~U, UF, F, D, B, c
 time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~F, DF, D, DB, B, UB, U, c
+command = ~F, D, B, UB, U, c
 time = 24
 
 [Command]
@@ -3901,7 +3901,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UB, B, DB, D, DF, F, UF, c
+command = ~UB, B, D, F, UF, c
 time = 24
 
 [Command]
@@ -3921,7 +3921,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UF, F, DF, D, DB, B, UB, c
+command = ~UF, F, D, B, UB, c
 time = 24
 
 [Command]
@@ -3936,7 +3936,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UB, B, DB, D, DF, F, UF, c
+command = ~UB, B, D, F, UF, c
 time = 24
 
 [Command]
@@ -3956,7 +3956,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UF, F, DF, D, DB, B, UB, c
+command = ~UF, F, D, B, UB, c
 time = 24
 
 [Command]
@@ -4016,12 +4016,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~U, UB, B, DB, D, DF, F, ~c
+command = ~U, UB, B, D, F, ~c
 time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~B, DB, D, DF, F, UF, U, ~c
+command = ~B, D, F, UF, U, ~c
 time = 24
 
 [Command]
@@ -4036,12 +4036,12 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~U, UF, F, DF, D, DB, B, ~c
+command = ~U, UF, F, D, B, ~c
 time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~F, DF, D, DB, B, UB, U, ~c
+command = ~F, D, B, UB, U, ~c
 time = 24
 
 [Command]
@@ -4061,7 +4061,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UB, B, DB, D, DF, F, UF, ~c
+command = ~UB, B, D, F, UF, ~c
 time = 24
 
 [Command]
@@ -4081,7 +4081,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UF, F, DF, D, DB, B, UB, ~c
+command = ~UF, F, D, B, UB, ~c
 time = 24
 
 [Command]
@@ -4096,7 +4096,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UB, B, DB, D, DF, F, UF, ~c
+command = ~UB, B, D, F, UF, ~c
 time = 24
 
 [Command]
@@ -4116,7 +4116,7 @@ time = 24
 
 [Command]
 name = "ミートスカッシャー_c"
-command = ~UF, F, DF, D, DB, B, UB, ~c
+command = ~UF, F, D, B, UB, ~c
 time = 24
 
 [Command]

@@ -148,28 +148,28 @@ time = 1
 
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 30
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 30
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 30
 
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 30
 
 [Command]

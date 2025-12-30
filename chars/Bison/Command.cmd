@@ -726,142 +726,142 @@ time = 25
 
 [Command]
 name = "PsychoField"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 30
 
 [Command]
 name = "PsychoField"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 30
 
 [Command]
 name = "PsychoField"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 30
 
 [Command]
 name = "PsychoField"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 30
 
 [Command]
 name = "PsychoField"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 30
 
 [Command]
 name = "PsychoField"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 30
 
 
 [Command]
 name = "EXPsychoField"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 30
 
 [Command]
 name = "EXPsychoField"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 30
 
 [Command]
 name = "EXPsychoField"
-command = ~F, DF, D, DB, B, z+x
+command = ~F, D, B, z+x
 time = 30
 
 
 [Command]
 name = "PsychoImpact"
-command = ~B, DB, D, DF, F, x
+command = ~B, D, F, x
 time = 30
 
 [Command]
 name = "PsychoImpact"
-command = ~B, DB, D, DF, F, y
+command = ~B, D, F, y
 time = 30
 
 [Command]
 name = "PsychoImpact"
-command = ~B, DB, D, DF, F, z
+command = ~B, D, F, z
 time = 30
 
 [Command]
 name = "PsychoImpact"
-command = ~B, DB, D, DF, F, ~x
+command = ~B, D, F, ~x
 time = 30
 
 [Command]
 name = "PsychoImpact"
-command = ~B, DB, D, DF, F, ~y
+command = ~B, D, F, ~y
 time = 30
 
 [Command]
 name = "PsychoImpact"
-command = ~B, DB, D, DF, F, ~z
+command = ~B, D, F, ~z
 time = 30
 
 
 [Command]
 name = "EXPsychoImpact"
-command = ~B, DB, D, DF, F, x+z
+command = ~B, D, F, x+z
 time = 30
 
 [Command]
 name = "EXPsychoImpact"
-command = ~B, DB, D, DF, F, y+x
+command = ~B, D, F, y+x
 time = 30
 
 [Command]
 name = "EXPsychoImpact"
-command = ~B, DB, D, DF, F, z+y
+command = ~B, D, F, z+y
 time = 30
 
 
 [Command]
 name = "PsychoSever"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 30
 
 [Command]
 name = "PsychoSever"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 30
 
 [Command]
 name = "PsychoSever"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 30
 
 [Command]
 name = "PsychoSever"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 30
 
 [Command]
 name = "PsychoSever"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 30
 
 [Command]
 name = "PsychoSever"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 30
 
 
 [Command]
 name = "EXPsychoSever"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 30
 
 [Command]
 name = "EXPsychoSever"
-command = ~B, DB, D, DF, F, b+a
+command = ~B, D, F, b+a
 time = 30
 
 [Command]
 name = "EXPsychoSever"
-command = ~B, DB, D, DF, F, c+b
+command = ~B, D, F, c+b
 time = 30
 
 [Command]

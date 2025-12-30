@@ -633,32 +633,32 @@ time = 12
 
 [Command]
 name = "JaguarTooth"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 32
 
 [Command]
 name = "JaguarTooth"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 32
 
 [Command]
 name = "JaguarTooth"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 32
 
 [Command]
 name = "JaguarTooth"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 32
 
 [Command]
 name = "JaguarTooth"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 32
 
 [Command]
 name = "JaguarTooth"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 32
 
 [Command]
@@ -678,17 +678,17 @@ time = 32
 
 [Command]
 name = "EXJaguarTooth"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 32
 
 [Command]
 name = "EXJaguarTooth"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 32
 
 [Command]
 name = "EXJaguarTooth"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 32
 
 [Command]
@@ -708,32 +708,32 @@ time = 32
 
 [Command]
 name = "ThousandJaguar"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 32
 
 [Command]
 name = "ThousandJaguar"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 32
 
 [Command]
 name = "ThousandJaguar"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 32
 
 [Command]
 name = "ThousandJaguar"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 32
 
 [Command]
 name = "ThousandJaguar"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 32
 
 [Command]
 name = "ThousandJaguar"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 32
 
 [Command]
@@ -753,17 +753,17 @@ time = 32
 
 [Command]
 name = "EXThousandJaguar"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 32
 
 [Command]
 name = "EXThousandJaguar"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 32
 
 [Command]
 name = "EXThousandJaguar"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 32
 
 [Command]

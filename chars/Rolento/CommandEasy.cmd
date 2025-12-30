@@ -400,33 +400,33 @@ time = 32
 
 [Command]
 name = "PatriotSweeper"
-command = ~B, DB, D, DF, F, x+y
+command = ~B, D, F, x+y
 time = 16
 
 [Command]
 name = "PatriotSweeper"
-command = ~B, DB, D, DF, F, y+z
+command = ~B, D, F, y+z
 time = 16
 
 [Command]
 name = "PatriotSweeper"
-command = ~B, DB, D, DF, F, x+z
+command = ~B, D, F, x+z
 time = 16
 
 
 [Command]
 name = "PatriotSweeperCircle"
-command = ~B, DB, D, DF, F, x+y
+command = ~B, D, F, x+y
 time = 12
 
 [Command]
 name = "PatriotSweeperCircle"
-command = ~B, DB, D, DF, F, y+z
+command = ~B, D, F, y+z
 time = 12
 
 [Command]
 name = "PatriotSweeperCircle"
-command = ~B, DB, D, DF, F, x+z
+command = ~B, D, F, x+z
 time = 12
 
 

@@ -197,17 +197,17 @@ time = 15
 
 [command]
 name = "EX Side"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 15
 
 [command]
 name = "EX Side"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 15
 
 [command]
 name = "EX Side"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 15
 
 [command]

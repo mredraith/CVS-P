@@ -214,17 +214,17 @@ time = 1
 
 [Command]
 name = "HCBF+2P"
-command = ~F, DF, D, DB, B, F, x+y
+command = ~F, D, B, F, x+y
 time = 42
 
 [Command]
 name = "HCBF+2P"
-command = ~F, DF, D, DB, B, F, y+z
+command = ~F, D, B, F, y+z
 time = 42
 
 [Command]
 name = "HCB+2P"
-command = ~F, DF, D, DB, B, F, x+z
+command = ~F, D, B, F, x+z
 time = 42
 
 
@@ -573,48 +573,48 @@ time = 16
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 32
 
 
 [Command]
 name = "HCB+2K"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 32
 
 [Command]
 name = "HCB+2K"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 32
 
 [Command]
 name = "HCB+2K"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 32
 
 

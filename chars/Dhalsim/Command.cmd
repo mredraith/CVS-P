@@ -466,32 +466,32 @@ time = 32
 
 [Command]
 name = "YogaCatastrophe"
-command = ~F, B, DB, D, DF, F, x+y
+command = ~F, B, D, F, x+y
 time = 32
 
 [Command]
 name = "YogaCatastrophe"
-command = ~F, B, DB, D, DF, F, y+z
+command = ~F, B, D, F, y+z
 time = 32
 
 [Command]
 name = "YogaCatastrophe"
-command = ~F, B, DB, D, DF, F, x+z
+command = ~F, B, D, F, x+z
 time = 32
 
 [Command]
 name = "YogaCatastrophe"
-command = ~F, B, DB, D, DF, F, ~x+y
+command = ~F, B, D, F, ~x+y
 time = 32
 
 [Command]
 name = "YogaCatastrophe"
-command = ~F, B, DB, D, DF, F, ~y+z
+command = ~F, B, D, F, ~y+z
 time = 32
 
 [Command]
 name = "YogaCatastrophe"
-command = ~F, B, DB, D, DF, F, ~x+z
+command = ~F, B, D, F, ~x+z
 time = 32
 
 
@@ -567,95 +567,95 @@ time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 16
 
 
 [Command]
 name = "EXYogaBlast"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 16
 
 [Command]
 name = "EXYogaBlast"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 16
 
 [Command]
 name = "EXYogaBlast"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 16
 
 
 [Command]
 name = "YogaFlame"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 16
 
 
 [Command]
 name = "EXYogaFlame"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 16
 
 [Command]
 name = "EXYogaFlame"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 16
 
 [Command]
 name = "EXYogaFlame"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 16
 
 
@@ -1217,7 +1217,7 @@ type = ChangeState
 value = 659
 triggerAll = !AILevel
 triggerAll = command = "holddown" && command = "c"
-triggerAll = StateType = A && pos y <= -40
+triggerAll = StateType = A
 trigger1 = ctrl
 trigger2 = var(4)
 
@@ -1226,7 +1226,7 @@ type = ChangeState
 value = 649
 triggerAll = !AILevel
 triggerAll = command = "holddown" && command = "b"
-triggerAll = StateType = A && pos y <= -40
+triggerAll = StateType = A
 trigger1 = ctrl
 trigger2 = var(4)
 
@@ -1235,7 +1235,7 @@ type = ChangeState
 value = 639
 triggerAll = !AILevel
 triggerAll = command = "holddown" && command = "a"
-triggerAll = StateType = A && pos y <= -40
+triggerAll = StateType = A
 trigger1 = ctrl
 trigger2 = var(4)
 
@@ -1244,7 +1244,7 @@ type = ChangeState
 value = 629
 triggerAll = !AILevel
 triggerAll = command = "holddown" && command = "z"
-triggerAll = StateType = A && pos y <= -40
+triggerAll = StateType = A
 trigger1 = ctrl
 trigger2 = var(4)
 

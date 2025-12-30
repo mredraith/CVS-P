@@ -61,7 +61,7 @@ time=32
 
 [Command]
 name="Shi o Osorenu Kokoro Nari"
-command=~F, B, DB, D, DF, F, x+y+z
+command=~F, B, D, F, x+y+z
 time=32
 
 
@@ -210,47 +210,47 @@ time = 20
 
 [Command]
 name = "I o Awasu Nari1"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 20
 
 [Command]
 name = "I o Awasu Nari2"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 20
 
 [Command]
 name = "I o Awasu Nari3"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 20
 
 [Command]
 name = "I o Awasu Nari1"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 20
 
 [Command]
 name = "I o Awasu Nari2"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 20
 
 [Command]
 name = "I o Awasu Nari3"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 20
 
 [Command]
 name = "I o Awasu NariEX"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 20
 
 [Command]
 name = "I o Awasu NariEX"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 20
 
 [Command]
 name = "I o Awasu NariEX"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 20
 
 [Command]

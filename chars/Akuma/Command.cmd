@@ -215,32 +215,32 @@ time = 15
 
 [command]
 name = "Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 32
 
 [command]
 name = "Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 32
 
 [command]
 name = "Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 32
 
 [command]
 name = "Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 32
 
 [command]
 name = "Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 32
 
 [command]
 name = "Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 32
 
 [Command]
@@ -400,17 +400,17 @@ time = 15
 
 [command]
 name = "EX Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 32
 
 [command]
 name = "EX Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 32
 
 [command]
 name = "EX Shakunetsu Hadouken"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 32
 
 [Command]

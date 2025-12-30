@@ -281,48 +281,48 @@ time = 32
 
 [Command]
 name = "ExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, x
+command = ~D, DF, F, D, B, x
 time = 32
 
 [Command]
 name = "ExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, y
+command = ~D, DF, F, D, B, y
 time = 32
 
 [Command]
 name = "ExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, z
+command = ~D, DF, F, D, B, z
 time = 32
 
 [Command]
 name = "ExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, ~x
+command = ~D, DF, F, D, B, ~x
 time = 32
 
 [Command]
 name = "ExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, ~y
+command = ~D, DF, F, D, B, ~y
 time = 32
 
 [Command]
 name = "ExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, ~z
+command = ~D, DF, F, D, B, ~z
 time = 32
 
 
 [Command]
 name = "MAXExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, x+y
+command = ~D, DF, F, D, B, x+y
 time = 32
 
 [Command]
 name = "MAXExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, y+z
+command = ~D, DF, F, D, B, y+z
 time = 32
 
 [Command]
 name = "MAXExplodingHurricaneTigerHeel"
-command = ~D, DF, F, DF, D, DB, B, x+z
+command = ~D, DF, F, D, B, x+z
 time = 32
 
 
@@ -456,48 +456,48 @@ time = 32
 
 [Command]
 name = "PoisonBreath"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 32
 
 [Command]
 name = "PoisonBreath"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 32
 
 [Command]
 name = "PoisonBreath"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 32
 
 [Command]
 name = "PoisonBreath"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 32
 
 [Command]
 name = "PoisonBreath"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 32
 
 [Command]
 name = "PoisonBreath"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 32
 
 
 [Command]
 name = "EXSlashKick"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 32
 
 [Command]
 name = "EXSlashKick"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 32
 
 [Command]
 name = "EXSlashKick"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 32
 
 

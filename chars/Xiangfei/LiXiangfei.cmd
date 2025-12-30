@@ -23,7 +23,7 @@ time = 30
 
 [Command]
 name = "MAXDai Tetsujin"
-command = ~D, DF, F, DF, D, DB, b+c
+command = ~D, DF, F, D, B+c
 time = 30
 
 [Command]
@@ -38,7 +38,7 @@ time = 30
 
 [Command]
 name = "Dai Tetsujin"
-command = ~D, DF, F, DF, D, DB, b
+command = ~D, DF, F, D, B
 time = 30
 
 [Command]
@@ -173,17 +173,17 @@ time = 20
 
 [Command]
 name = "Command Throw EX"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 20
 
 [Command]
 name = "Command Throw EX"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 20
 
 [Command]
 name = "Command Throw EX"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 20
 
 
@@ -206,17 +206,17 @@ time = 20
 
 [Command]
 name = "Command Throw L"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 20
 
 [Command]
 name = "Command Throw M"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 20
 
 [Command]
 name = "Command Throw H"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 20
 
 [Command]
@@ -253,17 +253,17 @@ time = 20
 
 [Command]
 name = "Command Throw L"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 20
 
 [Command]
 name = "Command Throw M"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 20
 
 [Command]
 name = "Command Throw H"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 20
 
 [Command]

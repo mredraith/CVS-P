@@ -156,78 +156,78 @@ time=32
 ;-| Special Motions |------------------------------------------------------
 [Command]
 name = "SuperArgentineBackbreaker1"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 32
 [Command]
 name = "SuperArgentineBackbreaker2"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 32
 [Command]
 name = "SuperArgentineBackbreaker3"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 32
 [Command]
 name = "SuperArgentineBackbreaker1"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 32
 [Command]
 name = "SuperArgentineBackbreaker2"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 32
 [Command]
 name = "SuperArgentineBackbreaker3"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 32
 
 [Command]
 name = "SuperArgentineBackbreakerEX"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 32
 [Command]
 name = "SuperArgentineBackbreakerEX"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 32
 [Command]
 name = "SuperArgentineBackbreakerEX"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 32
 
 [Command]
 name = "RalfTackle1"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 32
 [Command]
 name = "RalfTackle2"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 32
 [Command]
 name = "RalfTackle3"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 32
 [Command]
 name = "RalfTackle1"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 32
 [Command]
 name = "RalfTackle2"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 32
 [Command]
 name = "RalfTackle3"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 32
 
 [Command]
 name = "RalfTackleEX"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 32
 [Command]
 name = "RalfTackleEX"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 32
 [Command]
 name = "RalfTackleEX"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 32
 
 [Command]

@@ -1,5 +1,5 @@
 {
-  "playtime": 206.55,
+  "playtime": 719.34,
   "modes": {
     "training": {
       "playtime": 0,
@@ -9,11 +9,11 @@
       }
     },
     "freebattle": {
-      "playtime": 0,
+      "playtime": 227.82,
       "clear": 0
     },
     "arcade": {
-      "playtime": 140.5,
+      "playtime": 224.1,
       "clear": 0,
       "ranking": [
         {
@@ -41,14 +41,27 @@
           ],
           "tmode": 0,
           "ailevel": 8
+        },
+        {
+          "score": 3600,
+          "time": 83.6,
+          "win": 0,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "ryu"
+          ],
+          "tmode": 0,
+          "ailevel": 8
         }
       ]
     },
     "watch": {
-      "playtime": 66.05,
-      "clear": 1,
+      "playtime": 267.42,
+      "clear": 2,
       "clearcount": {
-        "shin akuma": 1
+        "shin akuma": 2
       }
     }
   }

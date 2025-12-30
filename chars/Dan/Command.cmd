@@ -530,77 +530,77 @@ time = 30
 
 [Command]
 name = "hcfx"
-command = ~B, DB, D, DF, F, x
+command = ~B, D, F, x
 time = 30
 [Command]
 name = "hcfy"
-command = ~B, DB, D, DF, F, y
+command = ~B, D, F, y
 time = 30
 [Command]
 name = "hcfz"
-command = ~B, DB, D, DF, F, z
+command = ~B, D, F, z
 time = 30
 [Command]
 name = "hcfx"
-command = ~B, DB, D, DF, F, ~x
+command = ~B, D, F, ~x
 time = 30
 [Command]
 name = "hcfy"
-command = ~B, DB, D, DF, F, ~y
+command = ~B, D, F, ~y
 time = 30
 [Command]
 name = "hcfz"
-command = ~B, DB, D, DF, F, ~z
+command = ~B, D, F, ~z
 time = 30
 
 [Command]
 name = "hcfa"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 30
 [Command]
 name = "hcfb"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 30
 [Command]
 name = "hcfc"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 30
 [Command]
 name = "hcfa"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 30
 [Command]
 name = "hcfb"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 30
 [Command]
 name = "hcfc"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 30
 
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, c+a
+command = ~B, D, F, c+a
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, ~a+b
+command = ~B, D, F, ~a+b
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, ~b+c
+command = ~B, D, F, ~b+c
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, ~c+a
+command = ~B, D, F, ~c+a
 time = 30
 
 [Command]
@@ -618,15 +618,15 @@ time = 30
 
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 30
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 30
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 30
 
 [Command]

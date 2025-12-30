@@ -379,15 +379,15 @@ time = 60
 ;----------------Rainbow Cyclone
 [Command]
 name = "dbdf2p"
-command = ~D, DB, B, DB, D, DF, F, x+y
+command = ~D, DB, B, D, F, x+y
 time = 40
 [Command]
 name = "dbdf2p"
-command = ~D, DB, B, DB, D, DF, F, y+z
+command = ~D, DB, B, D, F, y+z
 time = 40
 [Command]
 name = "dbdf2p"
-command = ~D, DB, B, DB, D, DF, F, x+z
+command = ~D, DB, B, D, F, x+z
 time = 40
 ;----------------
 
@@ -865,49 +865,49 @@ time = 40
 ;----------------EX Wingless Airplane
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 32
 
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 32
 
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 32
 ;----------------
 
 ;----------------Wingless Airplane
 [Command]
 name = "hcbk"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 32
 
 [Command]
 name = "hcbk"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 32
 
 [Command]
 name = "hcbk"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 32
 
 [Command]
 name = "hcbk"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 32
 
 [Command]
 name = "hcbk"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 32
 
 [Command]
 name = "hcbk"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 32
 
 ;----------------EX Flying Peach

@@ -734,48 +734,48 @@ time = 32
 
 [Command]
 name = "Gorefest"
-command = ~F, DF, D, DB, B, F, x
+command = ~F, D, B, F, x
 time = 32
 
 [Command]
 name = "Gorefest"
-command = ~F, DF, D, DB, B, F, y
+command = ~F, D, B, F, y
 time = 32
 
 [Command]
 name = "Gorefest"
-command = ~F, DF, D, DB, B, F, z
+command = ~F, D, B, F, z
 time = 32
 
 [Command]
 name = "Gorefest"
-command = ~F, DF, D, DB, B, F, ~x
+command = ~F, D, B, F, ~x
 time = 32
 
 [Command]
 name = "Gorefest"
-command = ~F, DF, D, DB, B, F, ~y
+command = ~F, D, B, F, ~y
 time = 32
 
 [Command]
 name = "Gorefest"
-command = ~F, DF, D, DB, B, F, ~z
+command = ~F, D, B, F, ~z
 time = 32
 
 
 [Command]
 name = "EXGorefest"
-command = ~F, DF, D, DB, B, F, x+y
+command = ~F, D, B, F, x+y
 time = 32
 
 [Command]
 name = "EXGorefest"
-command = ~F, DF, D, DB, B, F, y+z
+command = ~F, D, B, F, y+z
 time = 32
 
 [Command]
 name = "EXGorefest"
-command = ~F, DF, D, DB, B, F, x+z
+command = ~F, D, B, F, x+z
 time = 32
 
 
@@ -812,48 +812,48 @@ time = 16
 
 [Command]
 name = "Deicide"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 32
 
 [Command]
 name = "Deicide"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 32
 
 [Command]
 name = "Deicide"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 32
 
 [Command]
 name = "Deicide"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 32
 
 [Command]
 name = "Deicide"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 32
 
 [Command]
 name = "Deicide"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 32
 
 
 [Command]
 name = "EXDeicide"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 32
 
 [Command]
 name = "EXDeicide"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 32
 
 [Command]
 name = "EXDeicide"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 32
 
 
@@ -906,32 +906,32 @@ time = 16
 
 [Command]
 name = "Blackend"
-command = ~B, DB, D, DF, F, x
+command = ~B, D, F, x
 time = 32
 
 [Command]
 name = "Blackend"
-command = ~B, DB, D, DF, F, y
+command = ~B, D, F, y
 time = 32
 
 [Command]
 name = "Blackend"
-command = ~B, DB, D, DF, F, z
+command = ~B, D, F, z
 time = 32
 
 [Command]
 name = "Blackend"
-command = ~B, DB, D, DF, F, ~x
+command = ~B, D, F, ~x
 time = 32
 
 [Command]
 name = "Blackend"
-command = ~B, DB, D, DF, F, ~y
+command = ~B, D, F, ~y
 time = 32
 
 [Command]
 name = "Blackend"
-command = ~B, DB, D, DF, F, ~z
+command = ~B, D, F, ~z
 time = 32
 
 
@@ -968,17 +968,17 @@ time = 16
 
 [Command]
 name = "Nailbomb"
-command = ~B, DB, D, DF, F, x+y
+command = ~B, D, F, x+y
 time = 32
 
 [Command]
 name = "Nailbomb"
-command = ~B, DB, D, DF, F, y+z
+command = ~B, D, F, y+z
 time = 32
 
 [Command]
 name = "Nailbomb"
-command = ~B, DB, D, DF, F, x+z
+command = ~B, D, F, x+z
 time = 32
 
 

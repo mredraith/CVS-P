@@ -7,7 +7,7 @@
 ; ---------------------
 ; Note: The commands are CASE-SENSITIVE, and so are the command names.
 ; The eight directions are:
-;   B, DB, D, DF, F, UF, U, UB     (all CAPS)
+;   B, D, F, UF, U, UB     (all CAPS)
 ;   corresponding to back, down-back, down, downforward, etc.
 ; The six buttons are:
 ;   a, b, c, x, y, z               (all lower case)
@@ -100,7 +100,7 @@
 ;
 ; [Command] ;Half circle back + a
 ; name = "HCB_a"
-; command = ~F, DF, D, DB, B, a
+; command = ~F, D, B, a
 ;
 ; [Command] ;Two quarter circles forward + y
 ; name = "2QCF_y"

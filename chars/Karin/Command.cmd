@@ -695,27 +695,27 @@ time = 30
 
 [Command]
 name = "hcfp"
-command = ~B, DB, D, DF, F, x
+command = ~B, D, F, x
 time = 30
 [Command]
 name = "hcfp"
-command = ~B, DB, D, DF, F, y
+command = ~B, D, F, y
 time = 30
 [Command]
 name = "hcfp"
-command = ~B, DB, D, DF, F, z
+command = ~B, D, F, z
 time = 30
 [Command]
 name = "hcfp"
-command = ~B, DB, D, DF, F, ~x
+command = ~B, D, F, ~x
 time = 30
 [Command]
 name = "hcfp"
-command = ~B, DB, D, DF, F, ~y
+command = ~B, D, F, ~y
 time = 30
 [Command]
 name = "hcfp"
-command = ~B, DB, D, DF, F, ~z
+command = ~B, D, F, ~z
 time = 30
 
 [Command]

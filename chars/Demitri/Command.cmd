@@ -446,47 +446,47 @@ time = 16
 
 [Command]
 name = "NegativeStolen"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 16
 
 [Command]
 name = "NegativeStolen"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 16
 
 [Command]
 name = "NegativeStolen"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 16
 
 [Command]
 name = "NegativeStolen"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 16
 
 [Command]
 name = "NegativeStolen"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 16
 
 [Command]
 name = "NegativeStolen"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 16
 
 [Command]
 name = "EXNegativeStolen"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 16
 
 [Command]
 name = "EXNegativeStolen"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 16
 
 [Command]
 name = "EXNegativeStolen"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 16
 
 [Command]

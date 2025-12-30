@@ -729,7 +729,7 @@ match.font = 2,0,1
 ;Big portraits
 p1.num = 4                   ;Ikemen feature
 p1.anim = 0                  ;Ikemen feature
-;p1.spr = 9000, 1
+p1.spr = 9000, 1
 p1.offset = 444, 540
 p1.facing = 1
 p1.scale = 1, 1
@@ -740,7 +740,7 @@ p1.applypal = 1              ;Ikemen feature
 
 p2.num = 4                   ;Ikemen feature
 p2.anim = 0                  ;Ikemen feature
-;p2.spr = 9000, 1
+p2.spr = 9000, 1
 p2.offset = 836, 540
 p2.facing = -1
 p2.scale = 1, 1

@@ -106,40 +106,40 @@ time=32
 ;-| Special Motions |------------------------------------------------------
 [Command]
 name = "Ebony Tears1"
-command = ~D, DF, F, DF, D, DB, B, x
+command = ~D, DF, F, D, B, x
 time = 30
 [Command]
 name = "Ebony Tears1"
-command = ~D, DF, F, DF, D, DB, B, ~x
+command = ~D, DF, F, D, B, ~x
 time = 30
 [Command]
 name = "Ebony Tears2"
-command = ~D, DF, F, DF, D, DB, B, y
+command = ~D, DF, F, D, B, y
 time = 30
 [Command]
 name = "Ebony Tears2"
-command = ~D, DF, F, DF, D, DB, B, ~y
+command = ~D, DF, F, D, B, ~y
 time = 30
 [Command]
 name = "Ebony Tears3"
-command = ~D, DF, F, DF, D, DB, B, z
+command = ~D, DF, F, D, B, z
 time = 30
 [Command]
 name = "Ebony Tears3"
-command = ~D, DF, F, DF, D, DB, B, ~z
+command = ~D, DF, F, D, B, ~z
 time = 30
 
 [Command]
 name = "Ebony TearsEX"
-command = ~D, DF, F, DF, D, DB, B, x+y
+command = ~D, DF, F, D, B, x+y
 time = 30
 [Command]
 name = "Ebony TearsEX"
-command = ~D, DF, F, DF, D, DB, B, y+z
+command = ~D, DF, F, D, B, y+z
 time = 30
 [Command]
 name = "Ebony TearsEX"
-command = ~D, DF, F, DF, D, DB, B, x+z
+command = ~D, DF, F, D, B, x+z
 time = 30
 
 [Command]

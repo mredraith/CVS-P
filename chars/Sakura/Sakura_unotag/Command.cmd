@@ -184,15 +184,15 @@ time = 30
 
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 30
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 30
 [Command]
 name = "hcb2k"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 30
 
 [Command]

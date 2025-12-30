@@ -2002,13 +2002,13 @@ format.integer.separator =
 format.decimal.places = 0
 format.decimal.separator = .
 
-p1.enabled.arcade = 1
-p1.enabled.bossrush = 1
-p1.enabled.freebattle = 1
-p1.enabled.netplayteamcoop = 1
+p1.enabled.arcade = 0
+p1.enabled.bossrush = 0
+p1.enabled.freebattle = 0
+p1.enabled.netplayteamcoop = 0
 p1.enabled.scorechallenge = 1
-p1.enabled.teamcoop = 1
-p1.enabled.training = 1
+p1.enabled.teamcoop = 0
+p1.enabled.training = 0
 
 ;-----------------------------------------------------------
 ; Ikemen feature

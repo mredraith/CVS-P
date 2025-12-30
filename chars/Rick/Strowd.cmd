@@ -237,47 +237,47 @@ time = 15
 
 [Command]
 name = "LSH"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 15
 
 [Command]
 name = "LSH"
-command =  ~B, DB, D, DF, F, ~a
+command =  ~B, D, F, ~a
 time = 15
 
 [Command]
 name = "MSH"
-command =   ~B, DB, D, DF, F, b
+command =   ~B, D, F, b
 time = 15
 
 [Command]
 name = "MSH"
-command =   ~B, DB, D, DF, F, ~b
+command =   ~B, D, F, ~b
 time = 15
 
 [Command]
 name = "SSH"
-command =   ~B, DB, D, DF, F, c
+command =   ~B, D, F, c
 time = 15
 
 [Command]
 name = "SSH"
-command =   ~B, DB, D, DF, F, ~c
+command =   ~B, D, F, ~c
 time = 15
 
 [Command]
 name = "EXSH"
-command =   ~B, DB, D, DF, F, a+b
+command =   ~B, D, F, a+b
 time = 15
 
 [Command]
 name = "EXSH"
-command =  ~B, DB, D, DF, F, b+c
+command =  ~B, D, F, b+c
 time = 15
 
 [Command]
 name = "EXSH"
-command =   ~B, DB, D, DF, F, a+c
+command =   ~B, D, F, a+c
 time = 15
 
 [Command]

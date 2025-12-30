@@ -572,48 +572,48 @@ time = 16
 ;----------------Fire Kick
 [Command]
 name = "FireKick"
-command = ~B, DB, D, DF, F, a;~15$B, F, a
+command = ~B, D, F, a;~15$B, F, a
 time = 16
 
 [Command]
 name = "FireKick"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 16
 
 [Command]
 name = "FireKick"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 16
 
 [Command]
 name = "FireKick"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 16
 
 [Command]
 name = "FireKick"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 16
 
 [Command]
 name = "FireKick"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 16
 ;----------------
 ;----------------Fire Kick (EX)
 [Command]
 name = "EXFireKick"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 16
 
 [Command]
 name = "EXFireKick"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 16
 
 [Command]
 name = "EXFireKick"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 16
 ;----------------
 ;----------------Power Charge 1

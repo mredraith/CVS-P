@@ -159,15 +159,15 @@ time = 30
 
 ;[Command]
 ;name = "Bushin Goraisenpujin"
-;command = ~B, DB, D, DF, F, x+y
+;command = ~B, D, F, x+y
 ;time = 30
 ;[Command]
 ;name = "Bushin Goraisenpujin"
-;command = ~B, DB, D, DF, F, x+z
+;command = ~B, D, F, x+z
 ;time = 30
 ;[Command]
 ;name = "Bushin Goraisenpujin"
-;command = ~B, DB, D, DF, F, y+z
+;command = ~B, D, F, y+z
 ;time = 30
 
 [Command]

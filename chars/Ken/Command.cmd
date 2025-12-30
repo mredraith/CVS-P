@@ -420,17 +420,17 @@ time = 32
 
 [Command]
 name = "JouenShinryuken"
-command = ~B, DB, D, DF, F, x+y
+command = ~B, D, F, x+y
 time = 32
 
 [Command]
 name = "JouenShinryuken"
-command = ~B, DB, D, DF, F, y+z
+command = ~B, D, F, y+z
 time = 32
 
 [Command]
 name = "JouenShinryuken"
-command = ~B, DB, D, DF, F, x+z
+command = ~B, D, F, x+z
 time = 32
 
 
@@ -457,17 +457,17 @@ time = 32
 
 [Command]
 name = "GurenSenpukyaku"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 32
 
 [Command]
 name = "GurenSenpukyaku"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 32
 
 [Command]
 name = "GurenSenpukyaku"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 32
 
 
@@ -618,32 +618,32 @@ time = 16
 
 [Command]
 name = "ClassicAirborneTatsumakiSenpukyaku"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 32
 
 [Command]
 name = "ClassicAirborneTatsumakiSenpukyaku"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 32
 
 [Command]
 name = "ClassicAirborneTatsumakiSenpukyaku"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 32
 
 [Command]
 name = "ClassicAirborneTatsumakiSenpukyaku"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 32
 
 [Command]
 name = "ClassicAirborneTatsumakiSenpukyaku"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 32
 
 [Command]
 name = "ClassicAirborneTatsumakiSenpukyaku"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 32
 
 

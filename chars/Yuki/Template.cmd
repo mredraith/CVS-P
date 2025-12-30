@@ -220,47 +220,47 @@ time = 15
 
 [Command]
 name = "Suizan1"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 20
 
 [Command]
 name = "Suizan2"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 20
 
 [Command]
 name = "Suizan3"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 20
 
 [Command]
 name = "Suizan1"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 20
 
 [Command]
 name = "Suizan2"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 20
 
 [Command]
 name = "Suizan3"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 20
 
 [Command]
 name = "SuizanEX"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 20
 
 [Command]
 name = "SuizanEX"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 20
 
 [Command]
 name = "SuizanEX"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 20
 
 [Command]

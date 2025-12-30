@@ -252,40 +252,40 @@ time=32
 ;-| Special Motions |------------------------------------------------------
 [Command]
 name = "Kuuhadan1"
-command = ~B, DB, D, DF, F, a
+command = ~B, D, F, a
 time = 32
 [Command]
 name = "Kuuhadan2"
-command = ~B, DB, D, DF, F, b
+command = ~B, D, F, b
 time = 32
 [Command]
 name = "Kuuhadan3"
-command = ~B, DB, D, DF, F, c
+command = ~B, D, F, c
 time = 32
 [Command]
 name = "Kuuhadan1"
-command = ~B, DB, D, DF, F, ~a
+command = ~B, D, F, ~a
 time = 32
 [Command]
 name = "Kuuhadan2"
-command = ~B, DB, D, DF, F, ~b
+command = ~B, D, F, ~b
 time = 32
 [Command]
 name = "Kuuhadan3"
-command = ~B, DB, D, DF, F, ~c
+command = ~B, D, F, ~c
 time = 32
 
 [Command]
 name = "KuuhadanEX"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 32
 [Command]
 name = "KuuhadanEX"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 32
 [Command]
 name = "KuuhadanEX"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 32
 
 [Command]
@@ -328,40 +328,40 @@ time = 15
 
 [Command]
 name = "Bakushin1"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 32
 [Command]
 name = "Bakushin2"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 32
 [Command]
 name = "Bakushin3"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 32
 [Command]
 name = "Bakushin1"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 32
 [Command]
 name = "Bakushin2"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 32
 [Command]
 name = "Bakushin3"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 32
 
 [Command]
 name = "BakushinEX"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 32
 [Command]
 name = "BakushinEX"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 32
 [Command]
 name = "BakushinEX"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 32
 
 [Command]

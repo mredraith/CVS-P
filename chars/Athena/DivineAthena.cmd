@@ -51,12 +51,12 @@ time = 24
 ;-| Special Motions |--------------------------------------------------------
 ;[command]
 ;name = "HCB"
-;command = ~F, DF, D, DB, B
+;command = ~F, D, B
 ;time = 32
 
 ;[command]
 ;name = "HCF"
-;command = ~B, DB, D, DF, F
+;command = ~B, D, F
 ;time = 32
 ;------------------------------
 [command];easier HCB/F

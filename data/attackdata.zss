@@ -11,7 +11,7 @@
 [Function fPotSAttackDataConfig()]
 
 # Text
-mapset{map: "_pots_attackdata_cfg_starthidden"; value: 1}					# Hide text by default
+mapset{map: "_pots_attackdata_cfg_starthidden"; value: 0}					# Hide text by default
 mapset{map: "_pots_attackdata_cfg_font"; value: -1}							# Lifebar font number. Default -1 (debug font)
 mapset{map: "_pots_attackdata_cfg_layer"; value: 0}							# Layer number for text. 0 behind chars. 1 in front
 mapset{map: "_pots_attackdata_cfg_text_x"; value: 125}						# X offset. Default 125

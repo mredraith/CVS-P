@@ -608,48 +608,48 @@ time = 12
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 32
 
 [Command]
 name = "HCB+K"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 32
 
 
 [Command]
 name = "HCB+2K"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 32
 
 [Command]
 name = "HCB+2K"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 32
 
 [Command]
 name = "HCB+2K"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 32
 
 
@@ -702,32 +702,32 @@ time = 15
 
 [Command]
 name = "Kuzukaze"
-command = ~F, DF, D, DB, B, F, x
+command = ~F, D, B, F, x
 time = 22
 
 [Command]
 name = "Kuzukaze"
-command = ~F, DF, D, DB, B, F, y
+command = ~F, D, B, F, y
 time = 22
 
 [Command]
 name = "Kuzukaze"
-command = ~F, DF, D, DB, B, F, z
+command = ~F, D, B, F, z
 time = 22
 
 [Command]
 name = "Kuzukaze"
-command = ~F, DF, D, DB, B, F, ~x
+command = ~F, D, B, F, ~x
 time = 22
 
 [Command]
 name = "Kuzukaze"
-command = ~F, DF, D, DB, B, F, ~y
+command = ~F, D, B, F, ~y
 time = 22
 
 [Command]
 name = "Kuzukaze"
-command = ~F, DF, D, DB, B, F, ~z
+command = ~F, D, B, F, ~z
 time = 22
 
 

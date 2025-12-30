@@ -262,28 +262,28 @@ time = 30
 
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, a+b
+command = ~B, D, F, a+b
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, a+c
+command = ~B, D, F, a+c
 time = 30
 [Command]
 name = "hcf2k"
-command = ~B, DB, D, DF, F, b+c
+command = ~B, D, F, b+c
 time = 30
 
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 30
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 30
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 30
 
 [Command]
@@ -479,102 +479,102 @@ time = 30
 
 [Command]
 name = "hcfx"
-command = ~B, DB, D, DF, F, x
+command = ~B, D, F, x
 time = 25
 [Command]
 name = "hcfy"
-command = ~B, DB, D, DF, F, y
+command = ~B, D, F, y
 time = 25
 [Command]
 name = "hcfz"
-command = ~B, DB, D, DF, F, z
+command = ~B, D, F, z
 time = 25
 [Command]
 name = "hcfx"
-command = ~B, DB, D, DF, F, ~x
+command = ~B, D, F, ~x
 time = 25
 [Command]
 name = "hcfy"
-command = ~B, DB, D, DF, F, ~y
+command = ~B, D, F, ~y
 time = 25
 [Command]
 name = "hcfz"
-command = ~B, DB, D, DF, F, ~z
+command = ~B, D, F, ~z
 time = 25
 
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 25
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 25
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 25
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, ~x+y
+command = ~F, D, B, ~x+y
 time = 25
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, ~y+z
+command = ~F, D, B, ~y+z
 time = 25
 [Command]
 name = "hcb2p"
-command = ~F, DF, D, DB, B, ~x+y
+command = ~F, D, B, ~x+y
 time = 25
 
 [Command]
 name = "hcbx"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 25
 [Command]
 name = "hcby"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 25
 [Command]
 name = "hcbz"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 25
 [Command]
 name = "hcbx"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 25
 [Command]
 name = "hcby"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 25
 [Command]
 name = "hcbz"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 25
 
 [Command]
 name = "hcba"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 30
 [Command]
 name = "hcbb"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 30
 [Command]
 name = "hcbc"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 30
 [Command]
 name = "hcba"
-command = ~F, DF, D, DB, B, ~a
+command = ~F, D, B, ~a
 time = 30
 [Command]
 name = "hcbb"
-command = ~F, DF, D, DB, B, ~b
+command = ~F, D, B, ~b
 time = 30
 [Command]
 name = "hcbc"
-command = ~F, DF, D, DB, B, ~c
+command = ~F, D, B, ~c
 time = 30
 
 [Command]

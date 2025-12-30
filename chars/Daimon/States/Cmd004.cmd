@@ -350,15 +350,15 @@ time = 32
 
 [Command]
 name = "Tenchi Gaeshi1"
-command = ~F, DF, D, DB, B, F, x
+command = ~F, D, B, F, x
 time = 45
 [Command]
 name = "Tenchi Gaeshi2"
-command = ~F, DF, D, DB, B, F, y
+command = ~F, D, B, F, y
 time = 45
 [Command]
 name = "Tenchi Gaeshi3"
-command = ~F, DF, D, DB, B, F, z
+command = ~F, D, B, F, z
 time = 45
 [Command]
 name = "Tenchi Gaeshi1"
@@ -375,15 +375,15 @@ time = 45
 
 [Command]
 name = "Tenchi GaeshiEX"
-command = ~F, DF, D, DB, B, F, x+y
+command = ~F, D, B, F, x+y
 time = 45
 [Command]
 name = "Tenchi GaeshiEX"
-command = ~F, DF, D, DB, B, F, y+z
+command = ~F, D, B, F, y+z
 time = 45
 [Command]
 name = "Tenchi GaeshiEX"
-command = ~F, DF, D, DB, B, F, x+z
+command = ~F, D, B, F, x+z
 time = 45
 [Command]
 name = "Tenchi GaeshiEX"
@@ -426,15 +426,15 @@ time = 22
 
 [Command]
 name = "Kirikabu Gaeshi1"
-command = ~B, DB, D, DF, F, x
+command = ~B, D, F, x
 time = 22
 [Command]
 name = "Kirikabu Gaeshi2"
-command = ~B, DB, D, DF, F, y
+command = ~B, D, F, y
 time = 22
 [Command]
 name = "Kirikabu Gaeshi3"
-command = ~B, DB, D, DF, F, z
+command = ~B, D, F, z
 time = 22
 [Command]
 name = "Kirikabu Gaeshi1"
@@ -451,15 +451,15 @@ time = 22
 
 [Command]
 name = "Kirikabu GaeshiEX"
-command = ~B, DB, D, DF, F, x+y
+command = ~B, D, F, x+y
 time = 22
 [Command]
 name = "Kirikabu GaeshiEX"
-command = ~B, DB, D, DF, F, y+z
+command = ~B, D, F, y+z
 time = 22
 [Command]
 name = "Kirikabu GaeshiEX"
-command = ~B, DB, D, DF, F, x+z
+command = ~B, D, F, x+z
 time = 22
 [Command]
 name = "Kirikabu GaeshiEX"
@@ -476,15 +476,15 @@ time = 22
 
 [Command]
 name = "Kumo Tsukami Nage1"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 22
 [Command]
 name = "Kumo Tsukami Nage2"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 22
 [Command]
 name = "Kumo Tsukami Nage3"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 22
 [Command]
 name = "Kumo Tsukami Nage1"
@@ -501,15 +501,15 @@ time = 22
 
 [Command]
 name = "Kumo Tsukami NageEX"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 22
 [Command]
 name = "Kumo Tsukami NageEX"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 22
 [Command]
 name = "Kumo Tsukami NageEX"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 22
 [Command]
 name = "Kumo Tsukami NageEX"
@@ -526,15 +526,15 @@ time = 22
 
 [Command]
 name = "Ura Nage1"
-command = ~F, DF, D, DB, B, F, a
+command = ~F, D, B, F, a
 time = 45
 [Command]
 name = "Ura Nage2"
-command = ~F, DF, D, DB, B, F, b
+command = ~F, D, B, F, b
 time = 45
 [Command]
 name = "Ura Nage3"
-command = ~F, DF, D, DB, B, F, c
+command = ~F, D, B, F, c
 time = 45
 
 [Command]
@@ -552,15 +552,15 @@ time = 45
 
 [Command]
 name = "Ura NageEX"
-command = ~F, DF, D, DB, B, F, a+b
+command = ~F, D, B, F, a+b
 time = 45
 [Command]
 name = "Ura NageEX"
-command = ~F, DF, D, DB, B, F, b+c
+command = ~F, D, B, F, b+c
 time = 45
 [Command]
 name = "Ura NageEX"
-command = ~F, DF, D, DB, B, F, a+c
+command = ~F, D, B, F, a+c
 time = 45
 
 [Command]

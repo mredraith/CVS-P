@@ -551,32 +551,32 @@ time = 16
 
 [Command]
 name = "KaiserWave"
-command = ~F, B, DB, D, DF, F, x
+command = ~F, B, D, F, x
 time = 32
 
 [Command]
 name = "KaiserWave"
-command = ~F, B, DB, D, DF, F, y
+command = ~F, B, D, F, y
 time = 32
 
 [Command]
 name = "KaiserWave"
-command = ~F, B, DB, D, DF, F, z
+command = ~F, B, D, F, z
 time = 32
 
 [Command]
 name = "EXKaiserWave"
-command = ~F, B, DB, D, DF, F, x+y
+command = ~F, B, D, F, x+y
 time = 32
 
 [Command]
 name = "EXKaiserWave"
-command = ~F, B, DB, D, DF, F, y+z
+command = ~F, B, D, F, y+z
 time = 32
 
 [Command]
 name = "EXKaiserWave"
-command = ~F, B, DB, D, DF, F, x+z
+command = ~F, B, D, F, x+z
 time = 32
 
 [Command]

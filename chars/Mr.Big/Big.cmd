@@ -311,17 +311,17 @@ time = 15
 
 [Command]
 name = "クロスダイビング弱"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 20
 
 [Command]
 name = "クロスダイビング強"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 20
 
 [Command]
 name = "クロスダイビング強"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 20
 
 [Command]
@@ -356,17 +356,17 @@ time = 16
 
 [Command]
 name = "スピニング弱"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 20
 
 [Command]
 name = "スピニング強"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 20
 
 [Command]
 name = "スピニング強"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 20
 
 [Command]

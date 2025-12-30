@@ -279,28 +279,28 @@ time = 30
 
 [Command]
 name = "Killing BringerEX"
-command = ~F, DF, D, DB, B, a+b
+command = ~F, D, B, a+b
 time = 30
 [Command]
 name = "Killing BringerEX"
-command = ~F, DF, D, DB, B, b+c
+command = ~F, D, B, b+c
 time = 30
 [Command]
 name = "Killing BringerEX"
-command = ~F, DF, D, DB, B, a+c
+command = ~F, D, B, a+c
 time = 30
 
 [Command]
 name = "Killing Bringer1"
-command = ~F, DF, D, DB, B, a
+command = ~F, D, B, a
 time = 30
 [Command]
 name = "Killing Bringer2"
-command = ~F, DF, D, DB, B, b
+command = ~F, D, B, b
 time = 30
 [Command]
 name = "Killing Bringer3"
-command = ~F, DF, D, DB, B, c
+command = ~F, D, B, c
 time = 30
 
 ;---------------------------------------------------------------------------
@@ -312,28 +312,28 @@ time = 30
 
 [Command]
 name = "Storm BringerEX"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 30
 [Command]
 name = "Storm BringerEX"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 30
 [Command]
 name = "Storm BringerEX"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 30
 
 [Command]
 name = "Storm Bringer1"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 30
 [Command]
 name = "Storm Bringer2"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 30
 [Command]
 name = "Storm Bringer3"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 30
 ;-------------------------------------------
 

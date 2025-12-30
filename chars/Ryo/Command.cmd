@@ -260,48 +260,48 @@ time = 32
 
 [Command]
 name = "HaohShokoken"
-command = ~F, B, DB, D, DF, F, x
+command = ~F, B, D, F, x
 time = 32
 
 [Command]
 name = "HaohShokoken"
-command = ~F, B, DB, D, DF, F, y
+command = ~F, B, D, F, y
 time = 32
 
 [Command]
 name = "HaohShokoken"
-command = ~F, B, DB, D, DF, F, z
+command = ~F, B, D, F, z
 time = 32
 
 [Command]
 name = "HaohShokoken"
-command = ~F, B, DB, D, DF, F, ~x
+command = ~F, B, D, F, ~x
 time = 32
 
 [Command]
 name = "HaohShokoken"
-command = ~F, B, DB, D, DF, F, ~y
+command = ~F, B, D, F, ~y
 time = 32
 
 [Command]
 name = "HaohShokoken"
-command = ~F, B, DB, D, DF, F, ~z
+command = ~F, B, D, F, ~z
 time = 32
 
 
 [Command]
 name = "MAXHaohShokoken"
-command = ~F, B, DB, D, DF, F, x+y
+command = ~F, B, D, F, x+y
 time = 32
 
 [Command]
 name = "MAXHaohShokoken"
-command = ~F, B, DB, D, DF, F, y+z
+command = ~F, B, D, F, y+z
 time = 32
 
 [Command]
 name = "MAXHaohShokoken"
-command = ~F, B, DB, D, DF, F, x+z
+command = ~F, B, D, F, x+z
 time = 32
 
 
@@ -514,48 +514,48 @@ time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, x
+command = ~F, D, B, x
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, y
+command = ~F, D, B, y
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, z
+command = ~F, D, B, z
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, ~x
+command = ~F, D, B, ~x
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, ~y
+command = ~F, D, B, ~y
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, ~z
+command = ~F, D, B, ~z
 time = 16
 
 
 [Command]
 name = "EXKyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, x+y
+command = ~F, D, B, x+y
 time = 16
 
 [Command]
 name = "EXKyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, y+z
+command = ~F, D, B, y+z
 time = 16
 
 [Command]
 name = "EXKyokugenryuRenbuken"
-command = ~F, DF, D, DB, B, x+z
+command = ~F, D, B, x+z
 time = 16
 
 

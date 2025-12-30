@@ -461,33 +461,33 @@ time = 35
 
 [Command]
 name = "Gaia Driver"
-command = ~U, UB, B, DB, D, DF, F, ~x
+command = ~U, UB, B, D, F, ~x
 time = 35
 
 [Command]
 name = "Gaia Driver"
-command = ~U, UB, B, DB, D, DF, F, ~y
+command = ~U, UB, B, D, F, ~y
 time = 35
 
 [Command]
 name = "Gaia Driver"
-command = ~U, UB, B, DB, D, DF, F, ~z
+command = ~U, UB, B, D, F, ~z
 time = 35
 ;----------------
 ;----------------EX Special 4
 [Command]
 name = "EXGaia Driver"
-command = ~U, UB, B, DB, D, DF, F, x+y
+command = ~U, UB, B, D, F, x+y
 time = 35
 
 [Command]
 name = "EXGaia Driver"
-command = ~U, UB, B, DB, D, DF, F, y+z
+command = ~U, UB, B, D, F, y+z
 time = 35
 
 [Command]
 name = "EXGaia Driver"
-command = ~U, UB, B, DB, D, DF, F, x+z
+command = ~U, UB, B, D, F, x+z
 time = 35
 ;----------------
 
