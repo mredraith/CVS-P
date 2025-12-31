@@ -16,6 +16,7 @@ localcoord = 427,240
 
 
 [Files]
+movelist = movelist.dat
 sprite =Cody.sff
 anim =Cody.air
 cmd =command.cmd

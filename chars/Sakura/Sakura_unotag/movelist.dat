@@ -1,0 +1,35 @@
+<#f0f000>:Special Moves:</>
+UNO Mode			_D_D_D^C_+^Z
+Change Attack			^C_+^Z
+TagIn			^C_+^Z
+roll / dodge			[~F]
+nekketsuhadouken			_QCF_QCF^X/^Y_+^Y/^Z
+sakurasenkuu			_DSF^X/^Y_+^Y/^Z
+shungokusatsu			^X^X_F_+^A_+^Z
+haruissen			_D_F_D_B^X/^Y/^Z
+MVCharuichiban			_F_D_B^A/^B_+^B/^C
+midarezakura			_QCF_D_DF^A/^B/^C
+haruichiban			_QCB_QCB^A/^B/^C
+shinkuuhadouken			_QCF_QCF^X/^Y/^Z
+shinkuutengyouhadouken			_QCB_QCB^X/^Y/^Z
+EXshou'ouken			_DSF^X/^Y_+^Y/^Z
+EXkuuchuushunpuukyaku			_QCB^A/^B_+^B/^C
+EXshunpuukyaku			_QCB^A/^B_+^B/^C
+EXoukakyaku			_QCF^A/^B_+^B/^C
+EXhadoushou			_QCF^X/^Y_+^Y/^Z
+EXtengyouhadoushou			_QCB^X/^Y_+^Y/^Z
+shou'ouken			_DSF^X
+sakuraotoshi			_DSF^A
+kuuchuushunpukyaku			_QCB^A
+shunpukyaku			_QCB^A
+oukakyaku			_QCF^A
+hadouken			_QCF^X
+tengyouhadouken			_QCB^X
+modechange			_D_D_D^A
+Zero Counter			_DSF^X/^Y/^Z
+powercharge			[^B]
+extaunt			_D_D^S
+
+<#f0f000>:Hyper Moves:</>
+Team Hyper Attack <#bebebe>(3000)</>			_QCF^C_+^Z
+Delayed Hyper <#bebebe>(1000)</>			_QCF^C_+^Z

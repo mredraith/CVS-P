@@ -13,6 +13,7 @@ pal.defaults = 4,3,1,2
 localcoord = 427,240
 
 [Files]
+movelist = movelist.dat
 sprite = Zero.sff
 anim = Zero.air
 sound = ZeroJAP.snd

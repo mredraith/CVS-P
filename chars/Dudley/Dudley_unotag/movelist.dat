@@ -1,0 +1,37 @@
+<#f0f000>:Special Moves:</>
+Team Hyper Attack			_QCF^C_+^Z
+Change Attack			^C_+^Z
+TagIn			^C_+^Z
+EX Ducking			_QCF^A/^B/^C_+^B/^C/^A
+Light Ducking			_QCF^A
+Strong Ducking			_QCF^B
+Fierce Ducking			_QCF^C
+EX Jet Upper			_DSF^X/^Y/^Z_+^Y/^Z/^X
+Light Jet Upper			_DSF^X
+Strong Jet Upper			_DSF^Y
+Fierce Jet Upper			_DSF^Z
+EX Machine Gun Blow			_QCF^Y/^X_+^Z/^X
+Light Machine Gun Blow			_QCF^X
+Strong Machine Gun Blow			_QCF^Y
+Fierce Machine Gun Blow			_QCF^Z
+EX Cross-Counter			_QCB^X/^Y/^Z_+^Y/^Z/^X
+Cross-Counter			_QCB^X
+EX Jet Upper			_DSF^X/^Y/^Z_+^Y/^Z/^X
+Light Jet Upper			_DSF^X
+EX Back Swing Blow			_QCB^A/^B/^C_+^B/^C/^A
+Light Back Swing Blow			_F_D_F_QCB^A
+Strong Back Swing Blow			_QCB^B
+Fierce Back Swing Blow			_QCB^C
+Zero Counter			_QBD^X/^Y/^Z
+powercharge			[^B]
+roll / dodge			[~F]
+Throw			[~F ~B]
+Throw			[~F ~B]
+
+<#f0f000>:Hyper Moves:</>
+MAX Rolling Thunder <#bebebe>(3000)</>			_QCF_QCF^A/^B/^C_+^B/^C/^A
+Rolling Thunder <#bebebe>(2000)</>			_QCF_QCF^A/^B/^C
+MAX Rocket Upper <#bebebe>(2000)</>			_QCF_QCF^X/^Y/^Z_+^Y/^Z/^X
+Rocket Uppercut <#bebebe>(1000)</>			_QCF_QCF^X/^Y/^Z
+Cork Screw Cross <#bebebe>(3000)</>			_QCB_D_DB^X/^Y_+^Y/^Z
+Cork Screw Blow <#bebebe>(1000)</>			_QCB_QCB^X/^Y/^Z

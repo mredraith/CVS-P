@@ -1,0 +1,21 @@
+<#f0f000>:Special Moves:</>
+スピニングランサー弱			_F_D_B^A
+スピニングランサー強			_F_D_B^B/^C
+カルフォルニアロマンス弱			_DSF^X
+カルフォルニアロマンス強			_DSF^Y/^Z
+クロスダイビング弱			_F_D_B^X
+クロスダイビング強			_F_D_B^Y/^Z
+クレイジードラム			_QCF^A/^B/^C
+弱グランドブラスター			_QCF^X
+強グランドブラスター			_QCF^Y/^Z
+Roll Forward			[~F]
+Roll Backward			[~B]
+Power Charge			[^B]
+ハイリフトスルー			[~F]
+ハイリフトスルー			[~F]
+
+<#f0f000>:Hyper Moves:</>
+ライトニングスピア <#bebebe>(3000)</>			_F_D_B_F_D_B^Z_+^C
+ドラムショットタイフーン <#bebebe>(2000)</>			_D_B_D_F^A/^B_+^B/^C
+ブラスターウェイブ <#bebebe>(1000)</>			_QCF_QCF^X/^Y/^Z
+ふっとばし <#bebebe>(1000)</>			^C

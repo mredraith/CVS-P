@@ -1108,16 +1108,6 @@ triggerAll = Enemy, StateNo != [1145,1148]
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(6)
 
-[State -1, EX Thosand Jaguar (Mashing)]
-type = ChangeState
-value = 1330
-triggerAll = !AILevel
-triggerAll = command = "pp" && var(45) >= 5
-triggerAll = RoundState=2 && StateType != A
-triggerAll = Power >= 500 && var(20) <= 60
-trigger1 = ctrl || StateNo = 40 || stateNo = 52 || (StateNo = [100,101])
-trigger2 = var(6)
-
 [State -1, EX Thosand Jaguar (HCB)]
 type = ChangeState
 value = 1330
@@ -1162,15 +1152,6 @@ triggerAll = !AILevel
 triggerAll = command = "JaguarTooth"
 triggerAll = RoundState = 2 && StateType != A
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(6)
-
-[State -1, Thosand Jaguar (Mashing)]
-type = ChangeState
-value = 1300
-triggerAll = !AILevel
-triggerAll = (command = "x" || command = "y" || command = "z") && var(45) >= 5
-triggerAll = RoundState = 2 && StateType != A
-trigger1 = ctrl || StateNo = 40 || StateNo= 52 || (StateNo = [100,101])
 trigger2 = var(6)
 
 [State -1, Thosand Jaguar (HCB)]

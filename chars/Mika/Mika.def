@@ -8,6 +8,7 @@ pal.defaults = 1,2,3,4
 localcoord = 427,240
 
 [Files]
+movelist = movelist.dat
 sprite = Sprites.sff
 anim = Anim.air
 sound = Sound.snd

@@ -13,6 +13,7 @@ localcoord = 427,240
 
 ; Files for the player
 [Files]
+movelist = movelist.dat
 sprite =DivineSagat.sff
 anim =DivineSagat.air
 sound =DivineSagat.snd

@@ -9,6 +9,7 @@ mugenversion = 1.0
 localcoord = 320,240  
 
 [Files]
+movelist = movelist.dat
 cmd = kof_Jae.cmd 
 cns = 3v3.cns    
 st = 3v3.cns     

@@ -13,6 +13,7 @@ pal.defaults= 4,5,6,1,2,3,10,11,12,7,8,9
 localcoord = 320,240
 
 [Files]
+movelist = Sakura_unotag\movelist.dat
 cmd     =Sakura_unotag\Command.cmd
 cns = Constants.cns
 st      =Sakura_unotag\System.st

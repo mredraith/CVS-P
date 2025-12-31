@@ -13,6 +13,7 @@ localcoord = 427,240
 
 ; Files for the player
 [Files]
+movelist = movelist.dat
 cmd     =DivineLilith.cmd
 cns     =Coding/System.cns
 st      =Coding/System.cns

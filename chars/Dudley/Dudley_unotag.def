@@ -11,6 +11,7 @@ author		= "DickBuckus&Mr.Ansatsuken"
 pal.defaults	= 1,12
 
 [Files]
+movelist = Dudley_unotag\movelist.dat
 cmd		= Dudley_unotag\CommandEasy (Custom).cmd
 cns		= Constants.cns
 st		= Dudley_unotag\System (Custom).st

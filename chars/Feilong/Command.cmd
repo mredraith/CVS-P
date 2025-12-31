@@ -1119,8 +1119,7 @@ triggerAll = !AILevel
 triggerAll = command != "holddown" && command = "a"
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
-trigger2 = (StateNo = 200 || StateNo = 205 || StateNo = 230 || StateNo = 400 || StateNo = 430) && Time >= 5
-trigger3 = var(4)
+trigger2 = var(4)
 
 [State -1, Crouching Heavy Punch]
 type = ChangeState

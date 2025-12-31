@@ -16,6 +16,7 @@ author = "Falcon Rapper"
 pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
 localcoord = 427,240
 [Files]
+movelist = States\movelist.dat
 sprite = Sff.sff
 anim = Anim.air
 sound = Sound.snd

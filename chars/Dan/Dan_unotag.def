@@ -12,6 +12,7 @@ pal.defaults= 4,5,6,1,2,3,10,11,12,7,8,9
 localcoord = 320,240
 
 [Files]
+movelist = Dan_unotag\movelist.dat
 cmd     =Dan_unotag\Command (Custom).cmd
 cns = Constants.cns
 st      =Dan_unotag\System (Custom).st

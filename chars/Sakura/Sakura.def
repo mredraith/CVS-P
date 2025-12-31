@@ -13,6 +13,7 @@ pal.defaults= 4,5,6,1,2,3
 localcoord = 427,240
 
 [Files]
+movelist = movelist.dat
 cmd = Command.cmd
 cns = Constants.cns
 st = States/System.st

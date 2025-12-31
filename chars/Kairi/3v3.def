@@ -17,6 +17,7 @@ mugenversion = 1.0
 author = "Mr.Karate and Gustavo C. Moraes"
 pal.defaults = 1
 [Files]
+movelist = states\movelist.dat
 sprite = states\kairi.sff
 anim = 3v3.air
 sound = states\kairi.snd

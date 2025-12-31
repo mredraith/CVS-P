@@ -9,6 +9,7 @@ pal.defaults =4,1,2,6,3,5,7,8,9,10,11,12
 localcoord = 427,240
 
 [Files]
+movelist = movelist.dat
 sprite =Vanessa.sff
 anim =Vanessa.air
 sound =Vanessa.snd

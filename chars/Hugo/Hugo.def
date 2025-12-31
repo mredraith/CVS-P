@@ -14,6 +14,7 @@ author = "GM"
 pal.defaults = 4,2,3,1,5,6,7,8,9,10,11,12
 localcoord = 427,240
 [Files]
+movelist = movelist.dat
 sprite = sf3_hugo.sff
 sound = sf3_hugo.snd
 anim = sf3_hugo.air

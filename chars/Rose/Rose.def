@@ -13,6 +13,7 @@ localCoord = 427,240
 ;SPRITER FeLo_Llop
 
 [Files]
+movelist = movelist.dat
 cmd     =Command.cmd
 cns     =Constants.cns
 st      =States/System.st

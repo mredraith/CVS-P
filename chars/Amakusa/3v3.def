@@ -12,6 +12,7 @@ pal.defaults =6,3,4,2
 
 ; Files for the player
 [Files]
+movelist = movelist.dat
 cmd     =Amakusa.cmd
 cns     =3v3.cns
 st      =3v3.cns

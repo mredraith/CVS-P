@@ -3406,6 +3406,7 @@ value = SCA
 type = velset
 trigger1 = 1
 x = 5
+
 [State 4000, Snd]
 type = playsnd
 trigger1 = animelemtime(1) > 1
@@ -3437,6 +3438,7 @@ fall.recover = 0
 [State 4000, End]
 type = changestate
 trigger1 = !animtime
+trigger2 = in
 value = 0
 ctrl = 1
 

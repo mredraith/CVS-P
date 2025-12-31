@@ -1,0 +1,24 @@
+<#f0f000>:Special Moves:</>
+Roll Forward			[~F ~F]
+Roll Backward			[~B ~B]
+Power Charge			[^B]
+Zero Counter			_QBD^X/^Y/^Z
+EXHienzan			_D/_DSF_U/^A/^B^A/^B/_+_+/^B/^C
+Hienzan Weak			_D/_DSF_U/^A
+Hienzan strong			_D_U^B/^C
+Ryuusei Rakku			_QCF^A
+Ryuusei Rakku			_QCF^B/^C
+Hangetsu Zan			_QCB^A
+Hangetsu Zan			_QCB^B/^C
+Shakka Shuu weak			_QCF^X/^Y
+Shakka Shuu strong			_QCF^Z
+Hishou Kyaku into DB+K			_QCB^A
+Hishou Kyaku into DB+K			_QCB^B/^C
+
+<#f0f000>:Hyper Moves:</>
+Ray <#bebebe>(3000)</>			_D_D_D^A_+^B
+--------------------------------------------------------------------------- <#bebebe>(2000)</>			_D_F_D_F^A/^B_+^B/^C
+--------------------------------------------------------------------------- <#bebebe>(1000)</>			_D_F_D_F^A/^B/^C
+--------------------------------------------------------------------------- <#bebebe>(2000)</>			_D_F_D_F^X/^Y_+^Y/^Z
+--------------------------------------------------------------------------- <#bebebe>(1000)</>			_D_F_D_F^X/^Y/^Z
+CD attack <#bebebe>(1000)</>			^C
