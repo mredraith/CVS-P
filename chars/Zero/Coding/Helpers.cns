@@ -371,7 +371,7 @@ trigger2=root,Movetype=H
 trigger3=time>=18
 trigger4=(root,stateno=1100)&&((root,var(10)=1&&root,animelemtime(12)>=0)|(root,var(10)=2&&root,animelemtime(15)>=0))
 
-;========================<HADAN GEKI>=============================
+;HADAN GEKI
 [Statedef 1005]
 type=A
 physics=N
@@ -446,7 +446,7 @@ type = Destroyself
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1006]
 type=A
 physics=N
@@ -521,7 +521,7 @@ type = Destroyself
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1007]
 type=A
 physics=N
@@ -596,7 +596,7 @@ type = Destroyself
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1008]
 type=A
 physics=N
@@ -661,7 +661,7 @@ ignorehitpause =1
 type=destroyself
 trigger1= animtime
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1009]
 type=A
 physics=N
@@ -707,7 +707,7 @@ ignorehitpause=1
 type=destroyself
 trigger1= time>= 30
 
-;========================<BUSTER CHARGE>=============================
+;BUSTER CHARGE
 ; Z-Charge
 [Statedef 1050]
 type = A
@@ -860,7 +860,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = 2000
 trigger1 = !IsHelper(2050)
 
-;========================<RAIKOUSEN>=============================
+;RAIKOUSEN
 ;Raikosen bolt A
 [Statedef 1133]
 type=A
@@ -957,7 +957,7 @@ size.yscale=const(size.yscale)
 type=destroyself
 trigger1= !animtime
 
-;-------------------------------------------------------------------------------
+;
 ; Raikosen bolt B
 [Statedef 1134]
 type=A
@@ -1043,7 +1043,7 @@ size.yscale=const(size.yscale)
 type=destroyself
 trigger1= !animtime
 
-;-------------------------------------------------------------------------------
+;
 ; Raikosen bolt C
 [Statedef 1135]
 type=A
@@ -1236,7 +1236,7 @@ size.yscale=const(size.yscale)
 type=destroyself
 trigger1= !animtime
 
-;==============================<Z-BUSTER>=======================================
+;==============================<Z-BUSTER==========
 ;Z BUSTER SHOT
 [Statedef 1404]
 type = A
@@ -1282,8 +1282,8 @@ sparkxy = -1
 hitsound = s2,10
 guardsound = s130, 0
 ground.type = High
-ground.slidetime = 15
-ground.hittime = 20
+ground.slidetime = 3
+ground.hittime = 6
 ground.velocity = -5
 airguard.velocity = -5
 air.type = Low
@@ -1622,7 +1622,7 @@ type = DestroySelf
 trigger1 = time = 60
 trigger2 = movecontact = 1
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1408]
 type=A
 physics=N
@@ -1801,7 +1801,7 @@ ignorehitpause =1
 type=destroyself
 trigger1= animtime
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1409]
 type=A
 physics=N
@@ -1981,7 +1981,7 @@ type = DestroySelf
 trigger1 = time = 60
 trigger2 = movecontact = 1
 
-;-------------------------------------------------------------------------------
+;
 ;LVL 3 CHARGED SHOT
 [Statedef 1411]
 type = A
@@ -2263,7 +2263,7 @@ type=changestate
 trigger1=pos y>=0
 value=1414
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1414]
 type=A
 physics=N
@@ -2319,7 +2319,7 @@ scale=.5,.5
 type=destroyself
 trigger1= time >= 21
 
-;========================<SENTSUIZAN>=============================
+;SENTSUIZAN
 ;Diagonal sword
 [Statedef 1415]
 type=A
@@ -2366,7 +2366,7 @@ trigger2= root,stateno = 1209
 trigger3= root,stateno = 50
 trigger4= movetype = H
 
-;========================<HYOURETSUZAN>=============================
+;HYOURETSUZAN
 ;Saber
 [Statedef 1553]
 type = A
@@ -2497,7 +2497,7 @@ trigger2 = root,stateno != 1304
 trigger2 = root,stateno != 1305
 trigger3 = root,movetype = H
 
-;========================<EX SHIPPUGA SHADOW>=============================
+;EX SHIPPUGA SHADOW
 [Statedef 1600]
 type = S
 movetype= A
@@ -2549,7 +2549,7 @@ trigger1 = time >= 4
 trigger2 = P2BodyDist X < 60
 value = 1601
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 1601]
 type = S
 movetype= A
@@ -2669,7 +2669,7 @@ sprpriority = 4
 type = DestroySelf
 trigger1 = time >= 40
 
-;========================<EX HIENKYAKU>=============================
+;EX HIENKYAKU
 [Statedef 2000]
 movetype = A
 anim = 1034
@@ -2769,7 +2769,7 @@ pausemovetime = -1
 type = DestroySelf
 trigger1 = pos y >= 10
 
-;========================<EX AIR HIENKYAKU>=============================
+;EX AIR HIENKYAKU
 [Statedef 2001]
 movetype = A
 anim = 1035
@@ -2849,7 +2849,7 @@ type = DestroySelf
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 2002]
 movetype = A
 anim = 1035
@@ -2935,7 +2935,7 @@ type = DestroySelf
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 2003]
 movetype = A
 anim = 1036
@@ -3021,7 +3021,7 @@ type = DestroySelf
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 2004]
 movetype = A
 anim = 1036
@@ -3107,7 +3107,7 @@ type = DestroySelf
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 2005]
 movetype = A
 anim = 1037
@@ -3193,7 +3193,7 @@ type = DestroySelf
 trigger1 = movecontact
 trigger2 = frontedgedist <= -70
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 2006]
 type = a
 movetype = a
@@ -3259,7 +3259,7 @@ ignorehitpause=1
 type = destroyself
 trigger1 = screenpos y <= -90
 
-;========================<REKKOUHA MV3>=============================
+;REKKOUHA MV3
 ;Rekkouha MVC3
 [Statedef 3101]
 type=A
@@ -3359,7 +3359,7 @@ type = ChangeState
 trigger1= time >= 70
 value = 3102
 
-;-------------------------------------------------------------------------------
+;
 ; Rekkoha End
 [Statedef 3102]
 type=S
@@ -3484,7 +3484,7 @@ trigger1= pos y > -vel y
 ;trigger1 = animtime = 0
 value = 3112
 
-;-------------------------------------------------------------------------------
+;
 ;Rekkoha end
 [Statedef 3112]
 type=S
@@ -3678,7 +3678,7 @@ type = DestroySelf
 trigger1 = time = 60
 trigger2 = movecontact = 1
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 3006]
 type = S
 movetype= A
@@ -3753,7 +3753,7 @@ trigger2 = time = 60
 value= 1008
 ignorehitpause=1
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 3007]
 type = S
 movetype= A
@@ -3879,7 +3879,7 @@ type = DestroySelf
 trigger1 = time = 60
 trigger2 = movecontact = 1
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 3008]
 type = S
 movetype= A
@@ -4124,7 +4124,7 @@ type=changestate
 trigger1 =time >24
 value=4006
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 4006]
 type=S
 movetype=A
@@ -4689,7 +4689,7 @@ type=changeanim
 trigger1= gametime>root,var(58)
 value=9992
 
-;========================<SHOCK>=============================
+;SHOCK
 [Statedef 6240]
 type=A
 velset=0,0
@@ -4734,7 +4734,7 @@ type = DestroySelf
 trigger1 = time >= 60
 trigger2 = enemynear,ctrl ||(enemynear,movetype!=H) || (enemynear,statetype=L)
 
-;========================<EXCELL CHARGE>=============================
+;EXCELL CHARGE
 [Statedef 7260]
 physics=N
 velset=0,0
@@ -4849,7 +4849,7 @@ trigger1= time>=30
 type=destroyself
 trigger1= time>=30
 
-;========================<SPARKS>=============================
+;SPARKS
 ;launcher spark
 [Statedef 7050]
 physics=N
@@ -5960,7 +5960,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;========================<RECOVER FX>=============================
+;RECOVER FX
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -5987,7 +5987,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;========================<COUNTER FX>=============================
+;COUNTER FX
 [StateDef 8290]
 type = A
 physics = N
@@ -6031,7 +6031,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<MAX MODE TEXT FX>=============================
+;MAX MODE TEXT FX
 [StateDef 8291]
 type = A
 physics = N
@@ -6298,7 +6298,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -6801,7 +6801,7 @@ trigger2= roundstate<3
 type=destroyself
 trigger1= roundstate!=3
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -6954,7 +6954,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL
 [StateDef 8999]
 type = S
 velSet = 0,0
@@ -7008,7 +7008,7 @@ type=destroyself
 trigger1= time>=(ifelse(enemynear,statetype != A ,30,120))
 trigger2= enemynear,ctrl || (enemynear,movetype!=H) || (enemynear,statetype=L)
 
-;========================<HYPER BACKGROUND>=============================
+;HYPER BACKGROUND
 [Statedef 40001]
 anim = 9992
 SPRPRIORITY = -21
@@ -7080,7 +7080,7 @@ trigger1 = root,stateno = 3204 && time >= 96
 trigger2 = root,StateNo != [300,3499]
 value = stateno+1+(root,stateno = [300,3499])*1
 
-;-------------------------------------------------------------------------------
+;
 [Statedef 40002]
 anim = 9992
 
@@ -7115,7 +7115,7 @@ ignorehitpause = 1
 type = DestroySelf
 trigger1 = time = 1
 
-;-------------------------------------------------------------------------------
+;
 ;---------------------------------------------------------------------------
 ; Aura Shadow
 [Statedef 9999]

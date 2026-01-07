@@ -1,5 +1,5 @@
 ; Standing Light Punch
-; CNS difficulty: easy
+
 [Statedef 200]
 type = S
 movetype= A
@@ -190,7 +190,7 @@ ctrl = 1
 
 ;------------------------------------------
 ; Standing Strong Punch
-; CNS difficulty: easy
+
 [Statedef 220]
 type = S
 movetype= A
@@ -288,7 +288,7 @@ ctrl = 1
 
 ;-------------------------------------------------------------------------------
 ; Dodge Strong Punch
-; CNS difficulty: easy
+
 [Statedef 221]
 type = S
 movetype= A
@@ -389,7 +389,7 @@ ctrl = 1
 
 ;-------------------------------------------------------------------------------
 ; Z-Counter - Slash
-; CNS difficulty: easy
+
 [Statedef 222]
 type = S
 movetype= A
@@ -530,7 +530,7 @@ value = 5100
 
 ;------------------------------------------------------
 ; dodge roundhouse Kick
-; CNS difficulty: easy
+
 [Statedef 224]
 type = S
 movetype= A
@@ -610,7 +610,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing light Kick - Z buster
-; CNS difficulty: easy
+
 [Statedef 230]
 type = S
 movetype = A
@@ -662,7 +662,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing medium Kick
-; CNS difficulty: easy
+
 [Statedef 240]
 type = S
 movetype= A
@@ -743,7 +743,7 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Standing strong Kick
-; CNS difficulty: easy
+
 [Statedef 250]
 type = S
 movetype= A
@@ -867,7 +867,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
-; CNS difficulty: easy
+
 [Statedef 400]
 type = C
 movetype= A
@@ -965,7 +965,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
-; CNS difficulty: easy
+
 [Statedef 410]
 type = C
 movetype= A
@@ -1237,7 +1237,7 @@ ctrl = 1
 
 ;--------------------------------------------------------------------------
 ; Crouch light Kick - Z buster
-; CNS difficulty: easy
+
 [Statedef 430]
 type = C
 movetype= A
@@ -1331,7 +1331,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching medium Kick
-; CNS difficulty: easy
+
 [Statedef 440]
 type = C
 movetype= A
@@ -1432,7 +1432,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ;Crouch strong Kick
-; CNS difficulty: easy
+
 [Statedef 450]
 type = C
 movetype= A
@@ -1513,7 +1513,7 @@ ctrl = 1
 
 ;-------------------------------------------------------------------------------
 ; Z-Counter - Shouenzan
-; CNS difficulty: easy
+
 [Statedef 451]
 type = C
 movetype= A
@@ -1641,7 +1641,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
-; CNS difficulty: easy
+
 [Statedef 600]
 type = A
 movetype= A
@@ -1767,7 +1767,7 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Medium Punch
-; CNS difficulty: easy
+
 [Statedef 610]
 type = A
 movetype= A
@@ -1870,7 +1870,7 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Strong Punch
-; CNS difficulty: easy
+
 [Statedef 620]
 type = A
 movetype= A
@@ -2095,7 +2095,7 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump light Kick - Z buster
-; CNS difficulty: easy
+
 [Statedef 630]
 type = A
 movetype= A
@@ -2164,7 +2164,7 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump medium Kick
-; CNS difficulty: easy
+
 [Statedef 640]
 type = A
 movetype= A
@@ -2250,7 +2250,7 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump strong Kick
-; CNS difficulty: easy
+
 [Statedef 650]
 type = A
 movetype= A
