@@ -1,5 +1,4 @@
 ; Standing Light Punch
-; CNS difficulty: easy
 [Statedef 200]
 type = S
 movetype= A
@@ -78,7 +77,6 @@ ctrl = 1
 
 ;-----------------------------------
 ; Standing Medium Punch
-;CNS Difficulty: easy
 [Statedef 210]
 type = S
 movetype= A
@@ -157,7 +155,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Standing Strong Punch
-; CNS difficulty: easy
 [Statedef 220]
 type = S
 movetype= A
@@ -236,7 +233,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Close Strong Punch
-; CNS difficulty: easy
 [Statedef 221]
 type = S
 movetype= A
@@ -315,7 +311,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
-; CNS difficulty: easy
 [Statedef 230]
 type = S
 movetype= A
@@ -436,7 +431,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Medium Kick
-; CNS difficulty: easy
 [Statedef 240]
 type = S
 movetype= A
@@ -557,7 +551,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Strong Kick
-; CNS difficulty: easy
 [Statedef 250]
 type = S
 movetype= A
@@ -677,7 +670,6 @@ value = 0
 ctrl = 1
 
 ; Tiger Thrust(unique attack)
-; CNS difficulty: easy
 [Statedef 251]
 type = S
 movetype= A
@@ -761,7 +753,6 @@ value = 0
 ctrl = 1
 
 ; Tiger Thrust(comboed)
-; CNS difficulty: easy
 [Statedef 252]
 type = S
 movetype= A
@@ -845,7 +836,6 @@ value = 0
 ctrl = 1
 
 ; Tiger Thrust(during dodge)
-; CNS difficulty: easy
 [Statedef 253]
 type = S
 movetype= A
@@ -929,7 +919,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
-; CNS difficulty: easy
 [Statedef 400]
 type = C
 movetype= A
@@ -977,8 +966,8 @@ air.animType = Back
 fall.animType = Back
 ground.type = Low      ;Low,Trip,None
 air.type = Low
-ground.slidetime = 12 + 2*var(9)
-ground.hittime = 12 + 2*var(9)
+ground.slidetime = 14 + 2*var(9)
+ground.hittime = 14 + 2*var(9)
 guard.hittime = 12
 air.hittime = 120
 ground.velocity = -4
@@ -1008,7 +997,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
-; CNS difficulty: easy
 [Statedef 410]
 type = C
 movetype= A
@@ -1087,7 +1075,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Strong Punch
-;CNS difficulty: easy
 [Statedef 420]
 type = C
 movetype= A
@@ -1166,7 +1153,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Kick
-; CNS difficulty: easy
 [Statedef 430]
 type = C
 movetype= A
@@ -1214,8 +1200,8 @@ air.animType = Back
 fall.animType = Back
 ground.type = Low      ;Low,Trip,None
 air.type = Low
-ground.slidetime = 12 + 2*var(9)
-ground.hittime = 12 + 2*var(9)
+ground.slidetime = 14 + 2*var(9)
+ground.hittime = 14 + 2*var(9)
 guard.hittime = 12
 air.hittime = 120
 ground.velocity = -4.5
@@ -1245,7 +1231,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Medium Kick
-; CNS difficulty: easy
 [Statedef 440]
 type = C
 movetype= A
@@ -1324,7 +1309,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouch Strong Kick
-; CNS difficulty: easy
 [Statedef 450]
 type = C
 movetype= A
@@ -1408,7 +1392,6 @@ value = 11
 ctrl = 1
 
 ; Z-Counter Trip
-; CNS difficulty: easy
 [Statedef 451]
 type = C
 movetype= A
@@ -1567,7 +1550,6 @@ value = IfElse(Alive,5120,5150)
 
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
-; CNS difficulty: easy
 [Statedef 600]
 type = A
 movetype= A
@@ -1649,7 +1631,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Medium Punch
-; CNS difficulty: easy
 [Statedef 610]
 type = A
 movetype= A
@@ -1731,7 +1712,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Strong Punch
-; CNS difficulty: easy
 [Statedef 620]
 type = A
 movetype= A
@@ -1813,7 +1793,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Light Kick
-; CNS difficulty: easy
 [Statedef 630]
 type = A
 movetype= A
@@ -1895,7 +1874,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Medium Kick
-; CNS difficulty: easy
 [Statedef 640]
 type = A
 movetype= A
@@ -1977,7 +1955,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Strong Kick
-; CNS difficulty: easy
 [Statedef 650]
 type = A
 movetype= A
@@ -2055,7 +2032,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;============<THROW ATTEMPT>==========
+;THROW ATTEMPT
 [Statedef 800]
 type = S
 movetype= A
@@ -2141,8 +2118,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES
 [StateDef 805]
 type = S
 moveType = A
@@ -2217,8 +2193,7 @@ ctrl = 1
 type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = ifElse(var(10), 830, 810)
-
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)
 [StateDef 806]
 type = A
 moveType = H
@@ -2248,8 +2223,7 @@ type = SelfState
 trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
-
-;===========<TIGER TOSS>================
+;TIGER TOSS
 [Statedef 810]
 type = S
 movetype = A
@@ -2410,8 +2384,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-
-;===========<TIGER TOSS (TARGET)>================
+;TIGER TOSS (TARGET)
 [Statedef 820]
 type = A
 movetype = H
@@ -2443,8 +2416,7 @@ elem = 1
 type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
-
-;===========<TIGER TOSS (TOSSED AWAY)>================
+;TIGER TOSS (TOSSED AWAY)
 [Statedef 821]
 type = A
 movetype= H
@@ -2485,7 +2457,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100 ;hit ground anim
 
-;============<KING'S CLUTCH>===========
+;KING'S CLUTCH=
 [Statedef 830]
 type = S
 movetype = A
@@ -2579,7 +2551,7 @@ type = ChangeState
 trigger1 = !AnimTime 
 value = 831
 
-;============<KING'S CLUTCH(KNEEING FOE)>===========
+;KING'S CLUTCH(KNEEING FOE)=
 [StateDef 831]
 type = S
 physics = N
@@ -2926,7 +2898,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;============<KING'S CLUTCH (TARGET)>==============
+;KING'S CLUTCH (TARGET)====
 [Statedef 840]
 type = A
 movetype = H
@@ -2952,7 +2924,7 @@ trigger1 = PrevStateNo = 806
 value = 840
 elem = 1
 
-;===========<THE KING'S CLUTCH (TARGET BEING HIT)>==========
+;THE KING'S CLUTCH (TARGET BEING HIT)
 [StateDef 841]
 type = A
 moveType = H
@@ -3074,7 +3046,7 @@ trigger1 = pos y >= 25
 value = 5100
 
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D
 [StateDef 890]
 type = S
 physics = N
