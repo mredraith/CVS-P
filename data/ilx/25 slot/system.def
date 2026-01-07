@@ -159,25 +159,13 @@ cancel.snd = 100,2
 ;Ikemen feature: Flexible submenu grouping.
 ;Full documentation of this feature is available on Ikemen GO features wiki
 
-; Submenu: Arcade
-menu.itemname.menuarcade = "ARCADE"                          ;Ikemen feature
-menu.itemname.menuarcade.arcade = "SINGLE MODE"
-menu.itemname.menuarcade.teamarcade = "TEAM ARCADE"
-menu.itemname.menuarcade.teamcoop = "TEAM CO-OP"
-menu.itemname.menuarcade.back = "BACK"                       ;Ikemen feature
-
 ; Submenu: Versus
-menu.itemname.menuversus = "VERSUS"
+menu.itemname.menuversus = "VS MODE"
 menu.itemname.menuversus.versus = "1V1 VERSUS"
 menu.itemname.menuversus.teamversus = "TEAM VERSUS"
 menu.itemname.menuversus.versuscoop = "VERSUS CO-OP"         ;Ikemen feature
 menu.itemname.menuversus.freebattle = "FREE BATTLE"          ;Ikemen feature
 menu.itemname.menuversus.back = "BACK"                       ;Ikemen feature
-
-; Submenu: Story Mode
-menu.itemname.storymode = "STORY MODE"                       ;Ikemen feature
-; story arcs menu items are automatically added before storymode.back
-menu.itemname.storymode.back = "BACK"                        ;Ikemen feature
 
 ; Submenu: Network
 menu.itemname.menunetwork = "NETWORK PLAY"                        ;Ikemen feature
@@ -202,6 +190,21 @@ menu.itemname.menupractice.training = "TRAINING"             ;Ikemen feature
 ;menu.itemname.menupractice.trials = "TRIALS"                 ;Ikemen feature (not implemented yet)
 menu.itemname.menupractice.back = "BACK"                     ;Ikemen feature
 
+; Options
+menu.itemname.options = "OPTIONS"
+
+; Submenu: Arcade
+menu.itemname.menuarcade = "CLASSIC MODE"                          ;Ikemen feature
+menu.itemname.menuarcade.arcade = "SINGLE MODE"
+menu.itemname.menuarcade.teamarcade = "TEAM ARCADE"
+menu.itemname.menuarcade.teamcoop = "TEAM CO-OP"
+menu.itemname.menuarcade.back = "BACK"                       ;Ikemen feature
+
+; Submenu: Story Mode
+menu.itemname.storymode = "STORY MODE"                       ;Ikemen feature
+; story arcs menu items are automatically added before storymode.back
+menu.itemname.storymode.back = "BACK"                        ;Ikemen feature
+
 ; Submenu: Mission
 menu.itemname.menumission = "MISSION MODE"                        ;Ikemen feature
 menu.itemname.menumission.survival = "SURVIVAL MODE"
@@ -222,9 +225,6 @@ menu.itemname.menuwatch.watch = "CPU MATCH"
 menu.itemname.menuwatch.randomtest = "RANDOMTEST"            ;Ikemen feature
 menu.itemname.menuwatch.replay = "REPLAY"                    ;Ikemen feature
 menu.itemname.menuwatch.back = "BACK"                        ;Ikemen feature
-
-; Options
-menu.itemname.options = "OPTIONS"
 
 ; Exit Game
 menu.itemname.exit = "EXIT"
