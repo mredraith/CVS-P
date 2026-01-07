@@ -206,100 +206,123 @@ time = 23
 
 [Command]
 name = "spd"
-command = ~B, D, F, U, x
-time = 40
+command = ~F, D, B, x
+time = 20
+
 [Command]
 name = "spd"
-command = ~D, F, U, B, x
-time = 40
+command = ~B, D, F, x
+time = 20
+
 [Command]
 name = "spd"
-command = ~F, U, B, D, x
-time = 40
+command = ~F, D, B, ~x
+time = 20
+
 [Command]
 name = "spd"
-command = ~U, B, D, F, x
-time = 40
+command = ~B, D, F, ~x
+time = 20
+
 [Command]
 name = "spd"
-command = ~B, U, F, D, x
-time = 40
+command = ~F, D, B, y
+time = 20
+
 [Command]
 name = "spd"
-command = ~U, F, D, B, x
-time = 40
+command = ~B, D, F, y
+time = 20
+
 [Command]
 name = "spd"
-command = ~F, D, B, U, x
-time = 40
+command = ~F, D, B, ~y
+time = 20
+
 [Command]
 name = "spd"
-command = ~D, B, U, F, x
-time = 40
+command = ~B, D, F, ~y
+time = 20
+
 [Command]
 name = "spd"
-command = ~B, D, F, U, y
-time = 40
+command = ~F, D, B, z
+time = 20
+
 [Command]
 name = "spd"
-command = ~D, F, U, B, y
-time = 40
+command = ~B, D, F, z
+time = 20
+
 [Command]
 name = "spd"
-command = ~F, U, B, D, y
-time = 40
+command = ~F, D, B, ~z
+time = 20
+
 [Command]
 name = "spd"
-command = ~U, B, D, F, y
-time = 40
+command = ~B, D, F, ~z
+time = 20
+
 [Command]
-name = "spd"
-command = ~B, U, F, D, y
-time = 40
+name = "EXspd"
+command = ~F, D, B, x+y
+time = 20
+
 [Command]
-name = "spd"
-command = ~U, F, D, B, y
-time = 40
+name = "EXspd"
+command = ~B, D, F, x+y
+time = 20
+
 [Command]
-name = "spd"
-command = ~F, D, B, U, y
-time = 40
+name = "EXspd"
+command = ~F, D, B, ~x+y
+time = 20
+
 [Command]
-name = "spd"
-command = ~D, B, U, F, y
-time = 40
+name = "EXspd"
+command = ~B, D, F, ~x+y
+time = 20
+
 [Command]
-name = "spd"
-command = ~B, D, F, U, z
-time = 40
+name = "EXspd"
+command = ~F, D, B, y+z
+time = 20
+
 [Command]
-name = "spd"
-command = ~D, F, U, B, z
-time = 40
+name = "EXspd"
+command = ~B, D, F, y+z
+time = 20
+
 [Command]
-name = "spd"
-command = ~F, U, B, D, z
-time = 40
+name = "EXspd"
+command = ~F, D, B, ~y+z
+time = 20
+
 [Command]
-name = "spd"
-command = ~U, B, D, F, z
-time = 40
+name = "EXspd"
+command = ~B, D, F, ~y+z
+time = 20
+
 [Command]
-name = "spd"
-command = ~B, U, F, D, z
-time = 40
+name = "EXspd"
+command = ~F, D, B, x+z
+time = 20
+
 [Command]
-name = "spd"
-command = ~U, F, D, B, z
-time = 40
+name = "EXspd"
+command = ~B, D, F, x+z
+time = 20
+
 [Command]
-name = "spd"
-command = ~F, D, B, U, z
-time = 40
+name = "EXspd"
+command = ~F, D, B, ~x+z
+time = 20
+
 [Command]
-name = "spd"
-command = ~D, B, U, F, z
-time = 40
+name = "EXspd"
+command = ~B, D, F, ~x+z
+time = 20
 
 [Command]
 name = "Shoryuken"
@@ -376,105 +399,6 @@ time = 15
 name = "SonicBoom"
 command = ~D, DF, F, ~z
 time = 15
-
-[Command]
-name = "EXspd"
-command = ~B, D, F, U, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~D, F, U, B, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~F, U, B, D, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~U, B, D, F, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~B, U, F, D, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~U, F, D, B, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~F, D, B, U, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~D, B, U, F, x+y
-time = 40
-
-[Command]
-name = "EXspd"
-command = ~B, D, F, U, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~D, F, U, B, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~F, U, B, D, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~U, B, D, F, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~B, U, F, D, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~U, F, D, B, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~F, D, B, U, x+y
-time = 40
-[Command]
-name = "EXspd"
-command = ~D, B, U, F, x+y
-time = 40
-
-[Command]
-name = "EXspd"
-command = ~B, D, F, U, x+z
-time = 40
-[Command]
-name = "EXspd"
-command = ~D, F, U, B, x+z
-time = 40
-[Command]
-name = "EXspd"
-command = ~F, U, B, D, x+z
-time = 40
-[Command]
-name = "EXspd"
-command = ~U, B, D, F, x+z
-time = 40
-[Command]
-name = "EXspd"
-command = ~B, U, F, D, x+z
-time = 40
-[Command]
-name = "EXspd"
-command = ~U, F, D, B, x+z
-time = 40
-[Command]
-name = "EXspd"
-command = ~F, D, B, U, x+z
-time = 40
-[Command]
-name = "EXspd"
-command = ~D, B, U, F, x+z
-time = 40
 
 [Command]
 name = "EX KF Palm"
