@@ -401,13 +401,13 @@ Funny Ryu, stages\kfm.def, includestage=0, order=5
  ;
  ;Insert your stages below.
 
-stages/stage1.def
-stages/stage3d.def
-stages/stage3d_outline.def
-stages/stageZ.def
 stages/kfm.def
-stages/stage0.def
-stages/stage0-720.def
+;;;;;stages/stage3d.def
+stages/stage3d_outline.def
+stages/stage1.def
+;;;;;stages/stageZ.def
+;;;;;stages/stage0.def
+;;;;;stages/stage0-720.def
 
 ;-------------------------------------------------------------------------------
 [Options]
