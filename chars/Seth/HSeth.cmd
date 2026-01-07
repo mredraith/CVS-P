@@ -207,122 +207,122 @@ time = 23
 [Command]
 name = "spd"
 command = ~F, D, B, x
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~B, D, F, x
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~F, D, B, ~x
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~B, D, F, ~x
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~F, D, B, y
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~B, D, F, y
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~F, D, B, ~y
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~B, D, F, ~y
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~F, D, B, z
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~B, D, F, z
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~F, D, B, ~z
-time = 20
+time = 16
 
 [Command]
 name = "spd"
 command = ~B, D, F, ~z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~F, D, B, x+y
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~B, D, F, x+y
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~F, D, B, ~x+y
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~B, D, F, ~x+y
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~F, D, B, y+z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~B, D, F, y+z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~F, D, B, ~y+z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~B, D, F, ~y+z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~F, D, B, x+z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~B, D, F, x+z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~F, D, B, ~x+z
-time = 20
+time = 16
 
 [Command]
 name = "EXspd"
 command = ~B, D, F, ~x+z
-time = 20
+time = 16
 
 [Command]
 name = "Shoryuken"
