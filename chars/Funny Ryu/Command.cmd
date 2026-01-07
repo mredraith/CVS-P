@@ -1490,7 +1490,7 @@ type = changestate
 value = 740
 trigger1 = !AIlevel
 trigger1 = command = "holdb" && command = "holdy"
-trigger1 = roundstate = 2 && statetype != A && ctrl
+trigger1 = roundstate = 2 && ctrl
 trigger1 = power < const(data.power) && power < powermax && !var(20)
 
 [State -1, seichuunidantsuki]

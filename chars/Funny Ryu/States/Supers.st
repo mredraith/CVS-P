@@ -3438,7 +3438,6 @@ fall.recover = 0
 [State 4000, End]
 type = changestate
 trigger1 = !animtime
-trigger2 = in
 value = 0
 ctrl = 1
 

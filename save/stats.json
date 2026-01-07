@@ -1,5 +1,5 @@
 {
-  "playtime": 783.36,
+  "playtime": 1068.21,
   "modes": {
     "training": {
       "playtime": 0,
@@ -9,8 +9,11 @@
       }
     },
     "freebattle": {
-      "playtime": 227.82,
-      "clear": 0
+      "playtime": 396.67,
+      "clear": 1,
+      "clearcount": {
+        "sagat": 1
+      }
     },
     "arcade": {
       "playtime": 288.12,
@@ -58,7 +61,7 @@
       ]
     },
     "watch": {
-      "playtime": 267.42,
+      "playtime": 383.42,
       "clear": 2,
       "clearcount": {
         "shin akuma": 2
