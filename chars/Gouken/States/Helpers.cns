@@ -426,7 +426,7 @@ value=Ifelse(var(24)&&var(8)<2,1005,1006)
 ignorehitpause=1
 [State 1005, End]
 type=destroyself
-trigger1=pos x != [ -220, 220]
+trigger1=pos x != [ -300, 300]
 ;------------------------------------------------------------------
 [Statedef 1006]
 type=A
@@ -768,7 +768,7 @@ value=Ifelse(var(10)=3&&var(8)<2,1055,1056)
 ignorehitpause=1
 [State 1055, End]
 type=destroyself
-trigger1=pos x != [ -220, 220]
+trigger1=pos x != [ -300, 300]
 ;------------------------------------------------------------------
 [Statedef 1056]
 type=A
@@ -1361,7 +1361,7 @@ value=Ifelse(var(8)<5+var(24),3005,3006)
 ignorehitpause=1
 [State 3005, End]
 type=destroyself
-trigger1=pos x != [ -220, 220]
+trigger1=pos x != [ -300, 300]
 ;------------------------------------------------------------------
 [Statedef 3006]
 type=A
@@ -1843,7 +1843,7 @@ value=1006
 ignorehitpause=1
 [State 3040, End]
 type=destroyself
-trigger1=pos x != [ -220, 220]
+trigger1=pos x != [ -300, 300]
 ;---------------------------------------------------------------------------
 ;Max Denjin Hadouken
 [Statedef 3055]
@@ -2643,7 +2643,7 @@ anim=3355
 
 [State 3355,Dust]
 type = Explod
-trigger1 = (p2bodydist x=[-200,200])&&time%8&&P2statetype=S
+trigger1 = (p2bodydist x=[-300,300])&&time%8&&P2statetype=S
 anim=8104
 postype=p2
 facing=-1
@@ -2672,7 +2672,7 @@ trigger1 = (Facing = Parent, Facing)
 
 [State 3355, Push]
 type = PlayerPush
-trigger1 = (root,p2bodydist x=[-200,200])&&root,stateno=3350
+trigger1 = (root,p2bodydist x=[-300,300])&&root,stateno=3350
 value = 1
 [State 3355, Push]
 type = PlayerPush
@@ -2680,7 +2680,7 @@ trigger1 = root,stateno=3370
 value = 1
 [State 3355, VSet]
 type = VelSet
-trigger1 = (root,p2bodydist x=[-200,200])
+trigger1 = (root,p2bodydist x=[-300,300])
 x = Ifelse((Parentdist X = [0,80]), 6, IfElse((ParentDist X = [80,140]), 3, 1))
 [State 3355, VSet]
 type = VelSet
@@ -2688,7 +2688,7 @@ trigger1 = root,stateno=3370
 x = Ifelse((Parentdist X = [0,80]), 12, IfElse((ParentDist X = [80,140]), 6, 2))
 [State 3355, PosFix]
 type = PosAdd
-trigger1 = (root,p2bodydist x=[-200,200])
+trigger1 = (root,p2bodydist x=[-300,300])
 x = ceil(P2Dist X) - EnemyNear, Const(size.ground.back) - 5
 
 [State 3355, End]
