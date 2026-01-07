@@ -10,7 +10,7 @@ c = c
 s = s
 ;-| Default Values |-------------------------------------------------------
 [Defaults]
-command.time = 15
+command.time = 16
 command.buffer.time = 1
 
 ;-| Super Motions |--------------------------------------------------------
@@ -187,22 +187,22 @@ time = 1
 [command]
 name = "YogaTeleeportXY"
 command = F,D,F,x+y+z
-time = 23
+time = 16
 
 [command]
 name = "YogaTeleeportXYB"
 command = B,D,B,x+y+z
-time = 23
+time = 16
 
 [command]
 name = "YogaTeleeportab"
 command = F,D,F,a+b+c
-time = 23
+time = 16
 
 [command]
 name = "YogaTeleeportbB"
 command = B,D,B,a+b+c
-time = 23
+time = 16
 
 [Command]
 name = "spd"
@@ -373,47 +373,47 @@ time = 16
 [Command]
 name = "SonicBoom"
 command = ~D, DF, F, x
-time = 15
+time = 16
 
 [Command]
 name = "SonicBoomm"
 command = ~D, DF, F, ~x
-time = 15
+time = 16
 
 [Command]
 name = "SonicBoom"
 command = ~D, DF, F, y
-time = 15
+time = 16
 
 [Command]
 name = "SonicBoom"
 command = ~D, DF, F, ~y
-time = 15
+time = 16
 
 [Command]
 name = "SonicBoom"
 command = ~D, DF, F, z
-time = 15
+time = 16
 
 [Command]
 name = "SonicBoom"
 command = ~D, DF, F, ~z
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Palm"
 command = ~D, DF, F, x+y
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Palm"
 command = ~D, DF, F, y+z
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Palm"
 command = ~D, DF, F, x+z
-time = 15
+time = 16
 
 [Command]
 name = "KF Upper"
@@ -476,92 +476,92 @@ time = 16
 [Command]
 name = "SpinKicks"
 command = ~D, DB, B, a
-time = 15
+time = 16
 
 [Command]
 name = "SpinKicks"
 command = ~D, DB, B, ~a
-time = 15
+time = 16
 
 [Command]
 name = "SpinKicks"
 command = ~D, DB, B, b
-time = 15
+time = 16
 
 [Command]
 name = "SpinKicks"
 command = ~D, DB, B, ~b
-time = 15
+time = 16
 
 [Command]
 name = "SpinKicks"
 command = ~D, DB, B, c
-time = 15
+time = 16
 
 [Command]
 name = "SpinKicks"
 command = ~D, DB, B, ~c
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Blow"
 command = ~D, DB, B, x+y
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Blow"
 command = ~D, DB, B, y+z
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Blow"
 command = ~D, DB, B, x+z
-time = 15
+time = 16
 
 [Command]
 name = "KF Knee"
 command = ~F, F, a
-time = 15
+time = 16
 
 [Command]
 name = "KF Knee"
 command = ~F, F, ~a
-time = 15
+time = 16
 
 [Command]
 name = "KF Knee2"
 command = ~F, F, b
-time = 15
+time = 16
 
 [Command]
 name = "KF Knee2"
 command = ~F, F, ~b
-time = 15
+time = 16
 
 [Command]
 name = "KF Knee3"
 command = ~F, F, c
-time = 15
+time = 16
 
 [Command]
 name = "KF Knee3"
 command = ~F, F, ~c
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Knee"
 command = ~F, F, a+b
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Knee"
 command = ~F, F, b+c
-time = 15
+time = 16
 
 [Command]
 name = "EX KF Knee"
 command = ~F, F, a+c
-time = 15
+time = 16
 
 [Command]
 name = "412p" ;Zero Counter
@@ -1083,7 +1083,7 @@ time = 1
 [Command]
 name = "highjump"
 command = $D, $U
-time = 15
+time = 16
 ;---------------------------------------------------------------------------
 [Statedef -1]
 
