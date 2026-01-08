@@ -5,8 +5,7 @@
 ;====<SPECIAL MOVES>===
 ;==
 
-;=<HYAKURENKU>==
-;Startup
+;HYAKURENKU Startup
 [StateDef 1000]
 type = S
 physics = S
@@ -318,7 +317,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;====<EX HYAKURENKU>=
+;EX HYAKURENKU
 [StateDef 1030]
 type = S
 physics = S
@@ -600,7 +599,7 @@ type = ChangeState
 trigger1 = var(46) <= 0
 value = 1010
 
-;====<GEKIRO>=
+;GEKIRO
 [StateDef 1100]
 type = S
 physics = N
@@ -1204,7 +1203,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<EX GEKIRO>=
+;EX GEKIRO
 [StateDef 1130]
 type = S
 physics = N
@@ -1374,7 +1373,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1105
 
-;====<JYASEN>=
+;JYASEN
 [StateDef 11000]
 type = S
 physics = S
@@ -1643,7 +1642,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<EX JYASEN>=
+;EX JYASEN
 [StateDef 11030]
 type = S
 physics = S
@@ -1853,7 +1852,7 @@ guard.cornerPush.velOff = 0
 air.velocity = -6.48, -5.405
 air.cornerPush.velOff = 0
 yAccel = 0.5
-fall = 0
+fall = 1
 air.fall = 1
 fall.recover = 1
 fall.recoverTime = 120
