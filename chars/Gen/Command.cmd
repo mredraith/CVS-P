@@ -430,6 +430,51 @@ time = 32
 ;====================<SPECIAL MOTIONS>====================
 
 [Command]
+name = "EXHyakurenku"
+command = ~D, DF, F, x+y
+time = 16
+
+[Command]
+name = "EXHyakurenku"
+command = ~D, DF, F, x+z
+time = 16
+
+[Command]
+name = "EXHyakurenku"
+command = ~D, DF, F, y+z
+time = 16
+
+[Command]
+name = "Hyakurenku"
+command = ~D, DF, F, x
+time = 16
+
+[Command]
+name = "Hyakurenku"
+command = ~D, DF, F, ~x
+time = 16
+
+[Command]
+name = "Hyakurenku"
+command = ~D, DF, F, y
+time = 16
+
+[Command]
+name = "Hyakurenku"
+command = ~D, DF, F, ~y
+time = 16
+
+[Command]
+name = "Hyakurenku"
+command = ~D, DF, F, z
+time = 16
+
+[Command]
+name = "Hyakurenku"
+command = ~D, DF, F, ~z
+time = 16
+
+[Command]
 name = "EXGekiro"
 command = ~F, D, DF, a+b
 time = 16
@@ -1083,7 +1128,7 @@ type = ChangeState
 value = 1030
 triggerAll = !AILevel
 triggerAll = !var(1)
-triggerAll = command = "pp" && var(45) >= 4
+triggerAll = command = "EXHyakurenku" && var(45) >= 4
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = Power >= 500 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo= 52 || (StateNo = [100,101])
@@ -1181,7 +1226,7 @@ type = ChangeState
 value = 1000
 triggerAll = !AILevel
 triggerAll = !var(1)
-triggerAll = (command = "x" || command = "y" || command = "z") && var(45) >= 4
+triggerAll = (command = "Hyakurenku" || command = "Hyakurenku" || command = "Hyakurenku")
 triggerAll = RoundState = 2 && StateType != A
 trigger1 = ctrl || StateNo = 40 || StateNo= 52 || (StateNo = [100,101])
 trigger2 = var(6)
