@@ -1,5 +1,4 @@
 ; Standing Light Punch
-
 [Statedef 200]
 type = S
 movetype= A
@@ -89,7 +88,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
-;CNS Difficulty: easy
 [Statedef 210]
 type = S
 movetype= A
@@ -190,7 +188,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Standing Strong Punch
-
 [Statedef 220]
 type = S
 movetype= A
@@ -288,7 +285,6 @@ ctrl = 1
 
 ;-------------------------------------------------------------------------------
 ; Dodge Strong Punch
-
 [Statedef 221]
 type = S
 movetype= A
@@ -389,7 +385,6 @@ ctrl = 1
 
 ;-------------------------------------------------------------------------------
 ; Z-Counter - Slash
-
 [Statedef 222]
 type = S
 movetype= A
@@ -530,7 +525,6 @@ value = 5100
 
 ;------------------------------------------------------
 ; dodge roundhouse Kick
-
 [Statedef 224]
 type = S
 movetype= A
@@ -610,7 +604,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing light Kick - Z buster
-
 [Statedef 230]
 type = S
 movetype = A
@@ -662,7 +655,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing medium Kick
-
 [Statedef 240]
 type = S
 movetype= A
@@ -743,7 +735,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Standing strong Kick
-
 [Statedef 250]
 type = S
 movetype= A
@@ -867,7 +858,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
-
 [Statedef 400]
 type = C
 movetype= A
@@ -965,7 +955,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
-
 [Statedef 410]
 type = C
 movetype= A
@@ -1125,7 +1114,6 @@ ctrl = 1
 
 ;--------------------------------------------------------------------------
 ; Crouching Strong Punch- Launcher
-;CNS difficulty: easy
 [Statedef 420]
 type = C
 movetype= A
@@ -1237,7 +1225,6 @@ ctrl = 1
 
 ;--------------------------------------------------------------------------
 ; Crouch light Kick - Z buster
-
 [Statedef 430]
 type = C
 movetype= A
@@ -1331,7 +1318,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching medium Kick
-
 [Statedef 440]
 type = C
 movetype= A
@@ -1432,7 +1418,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ;Crouch strong Kick
-
 [Statedef 450]
 type = C
 movetype= A
@@ -1513,7 +1498,6 @@ ctrl = 1
 
 ;-------------------------------------------------------------------------------
 ; Z-Counter - Shouenzan
-
 [Statedef 451]
 type = C
 movetype= A
@@ -1641,7 +1625,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
-
 [Statedef 600]
 type = A
 movetype= A
@@ -1767,7 +1750,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Medium Punch
-
 [Statedef 610]
 type = A
 movetype= A
@@ -1870,7 +1852,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Strong Punch
-
 [Statedef 620]
 type = A
 movetype= A
@@ -2095,7 +2076,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump light Kick - Z buster
-
 [Statedef 630]
 type = A
 movetype= A
@@ -2164,7 +2144,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump medium Kick
-
 [Statedef 640]
 type = A
 movetype= A
@@ -2250,7 +2229,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump strong Kick
-
 [Statedef 650]
 type = A
 movetype= A
@@ -2359,7 +2337,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ;Kung Fu Throw - Attempt
-; CNS difficulty: medium-advanced
 [Statedef 800]
 type = S
 movetype= A
@@ -2425,8 +2402,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES
 [StateDef 805]
 type = S
 moveType = A
@@ -2497,7 +2473,7 @@ type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = 810
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)
 [StateDef 806]
 type = A
 moveType = H
