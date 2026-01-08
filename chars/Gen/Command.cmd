@@ -1128,7 +1128,7 @@ type = ChangeState
 value = 1030
 triggerAll = !AILevel
 triggerAll = !var(1)
-triggerAll = command = "EXHyakurenku" && var(45) >= 4
+triggerAll = command = "EXHyakurenku"
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = Power >= 500 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo= 52 || (StateNo = [100,101])
