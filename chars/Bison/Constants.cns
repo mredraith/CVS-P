@@ -2,7 +2,7 @@
             ;Vega by Froz
 ;Special Thanks to Elecbyte & DivineWolf for the creation of Kung Fu Man that I used as a template
 
-;====================<VARIABLE LIST>====================
+;<VARIABLE LIST>====================
 
 ;var(0)  : StateDef
 ;var(1)  : Psycho Cannon: Charge Levels
@@ -67,7 +67,7 @@
 ;fvar(10): Damage Dampener
 ;fvar(11): Damage Dampener with Counter Multiplier Added
 
-;====================<CONSTANTS>====================
+;<CONSTANTS>====================
 [Data]
 life = 1000		;Amount of life to start with
 power = 3000                  ;Amount of power to start with

@@ -2795,7 +2795,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;===========<THROW SWITCHING SIDES>==========
+;<THROW SWITCHING SIDES>==========
 ;Throw - Switching Sides
 [Statedef 805]
 type=S
@@ -2862,7 +2862,7 @@ ctrl=1
 type=changestate
 trigger1= animelemtime(4)>=0
 value=ifelse(var(10),820,810)
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;<THROW SWITCHING SIDES (TARGET)>==========
 ;Throw - Target Switching Sides
 [StateDef 806]
 type = A
@@ -3269,7 +3269,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100
 
-;===========<THROW ESC'D>==========
+;<THROW ESC'D>==========
 ;Throw - Escaped
 [StateDef 890]
 type = S

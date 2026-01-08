@@ -1067,7 +1067,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========================================
+;
 ; Hiten Souryujin
 [StateDef 3100]
 type = A
@@ -1988,7 +1988,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= ifelse((anim = [5051,5059]) || (anim = [5061,5069]), 0, 25)
 value = 5100 
 
-;===========================================
+;
 ; SFIV You Hou 
 [Statedef 3300]
 type = S
@@ -2451,7 +2451,7 @@ trigger2 = Vel Y > 0
 trigger2 = Pos Y >= 10  ;.
 value = 5100
 
-;===========================================
+;
 ; CVS2 You Hou 
 [Statedef 3350]
 type = S
@@ -4302,7 +4302,7 @@ value = 0
 ctrl = 1
 
 
-;======================< MODE CHANGE >=============================
+;< MODE CHANGE >=============================
 ;Mode Change
 [Statedef 4400]
 type = S

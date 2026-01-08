@@ -1,38 +1,38 @@
 ;                          ____________________
-;=========================|Terry Bogard by Memo|=========================
+;|Terry Bogard by Memo|=========================
 ;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
 
 
-;=================< CUSTOM SHIT STOLEN FROM OTHERS >=====================
+;< CUSTOM SHIT STOLEN FROM OTHERS >=====================
 
-;=================< Palette Selector ON/OFF >============================
+;< Palette Selector ON/OFF >============================
 
 ;Scroll Down for ON or OFF / OFF by default
 
-;=================< Ground Bounce >======================================
+;< Ground Bounce >======================================
 
 ;Statedef 1330 / EX Power Dunk
 
-;=================< Wall Bounce >========================================
+;< Wall Bounce >========================================
 
 ;Statedef 1005 (In Helpers.st) / EX Round Wave
 ;Statedef 1431 / EX Fire Kick (Follow Up)
 ;Statedef 1630 / EX Power Charge 1
 
-;=================<De-activating Wall or Ground Bounce>===================
+;<De-activating Wall or Ground Bounce>===================
 
 ;To de-activate Wall or Ground Bounce look for the hitdef in
 ;the statedef's mentioned above, find this line (p2stateno =)
 ;and put a semicolon in the begining like this (;p2stateno =)
 
-;==================< INITIALIZE >========================================
+;< INITIALIZE >========================================
 
 ;Initialize Start Round
 [Statedef 5900]
 type = S
 
-;==========================================================================
+;
 
 [state 5900, Reset Variables]
 type = varrangeset
@@ -47,8 +47,8 @@ fvalue = 0
 ;Change the value number to 0 if you want Regular Andy
 ;Change the value number to 1 if you want EX Mode Andy
 ;Default value is 0.
-;==========================
-;===========================================================================
+;
+;
 ; Terry version : Normal/EX
 [State 5900, Terry version : Normal/EX]
 type = VarSet
@@ -61,7 +61,7 @@ value = 0
 ;Change the value number to 2 if you want Terry in Default mode.
 ;Default value is 0.
 
-;==========================================================================
+;
 
 ; Terry version : Regular
 ;[State 5900, Terry version : Regular]
@@ -74,7 +74,7 @@ value = 0
 ;Change the value number to 1 if you want Terry in EX or Normal version
 ;Default value is 0.
 
-;==========================================================================
+;
 
 
 ; Palette Selector
@@ -87,7 +87,7 @@ value = 0
 ;0= OFF
 ;1= ON
 
-;===========================================================================
+;
 [State 5900, Pal Selector on]
 type=helper
 triggerall=var(42)&&!numhelper(256)&&!AILevel&&numenemy 
@@ -163,7 +163,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;========================<Ground Bounce>=================================
+;<Ground Bounce>=================================
 
 [Statedef 242]
 type = A
@@ -229,7 +229,7 @@ trigger1 = time >= 15
 trigger1 = pos y >= 0
 value = 5110
 
-;========================<HIT WALL>======================================
+;<HIT WALL>======================================
 ;---Hit Pause---
 [Statedef 1125]
 type=A

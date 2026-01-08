@@ -1,4 +1,4 @@
-;========================<EX HADAN GEKI>=======================
+;<EX HADAN GEKI>=======================
 ;EX Hadangeki
 [Statedef 1083]
 type = S
@@ -184,7 +184,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;========================<EX ELETRIC BLADE>==========================================
+;<EX ELETRIC BLADE>==========================================
 ;EX Eletric Blade
 [Statedef 1103]
 type = S
@@ -533,7 +533,7 @@ trigger1 = AnimElemTime(6) > 0
 ctrl = 0
 value = 1104
 
-;========================<EX AIR ELETRIC BLADE>=======================
+;<EX AIR ELETRIC BLADE>=======================
 ;EX Air Eletric Blade
 [Statedef 1109]
 type = A
@@ -842,7 +842,7 @@ trigger1 = Pos Y >= 0
 value = 52
 ctrl = 0
 
-;========================<EX SHIPPUGA>=======================
+;<EX SHIPPUGA>=======================
 ;EX Shippuga - W-Shredder
 [Statedef 1211]
 type = S
@@ -1094,7 +1094,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX SENTSUIZAN>=======================
+;<EX SENTSUIZAN>=======================
 ;EX Sentsuizan (Enkoukyaku)
 [Statedef 1213]
 type = A
@@ -1266,7 +1266,7 @@ trigger1= pos y > -vel y
 value = 52
 ctrl = 0
 
-;========================<EX HIENKYAKU>=======================
+;<EX HIENKYAKU>=======================
 ;EX Hienkyaku (Rekkoha)
 [Statedef 1235]
 type = S
@@ -1522,7 +1522,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<EX AIR HIENKYAKU>=======================
+;<EX AIR HIENKYAKU>=======================
 ;EX air Hienkyaku (Messenkou)
 [Statedef 1236]
 type = S
@@ -2091,7 +2091,7 @@ type = changestate
 trigger1 = animtime = 0
 value = 0
 ctrl = 1
-;========================<EX RAIJINGEKI>=======================
+;<EX RAIJINGEKI>=======================
 ;EX Raijingeki
 [Statedef 1243]
 type = S
@@ -2328,7 +2328,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;========================<EX HYOURETSUZAN>=======================
+;<EX HYOURETSUZAN>=======================
 ;EX Ryoretsuzan - Fire (Danchien)
 [Statedef 1304]
 type = A
@@ -2686,7 +2686,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<EX RAIKOUSEN>=======================
+;<EX RAIKOUSEN>=======================
 ;EX Raikosen
 [Statedef 1326]
 type = A
@@ -3019,7 +3019,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX SHOUENZAN>=======================
+;<EX SHOUENZAN>=======================
 ;EX Shouenzan
 [Statedef 1333]
 type = S

@@ -1,4 +1,4 @@
-;======================<Messatsu Goushouryu>===================
+;<Messatsu Goushouryu>===================
 [Statedef 3000]
 type = S
 movetype= A
@@ -521,7 +521,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Messatsu Goushouryu MAX>===================
+;<Messatsu Goushouryu MAX>===================
 [Statedef 3050]
 type = S
 movetype= A
@@ -1143,7 +1143,7 @@ trigger1 = AnimElemTime(25)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3001
 
-;======================<Messatsu Gouhadou>===================
+;<Messatsu Gouhadou>===================
 [Statedef 3100]
 type = S
 movetype= A
@@ -1325,7 +1325,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Messatsu Gouhadou MAX>===================
+;<Messatsu Gouhadou MAX>===================
 [Statedef 3150]
 type = S
 movetype= A
@@ -1501,7 +1501,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Tenma Zanku>===================
+;<Tenma Zanku>===================
 [Statedef 3200]
 type = A
 movetype= A
@@ -1649,7 +1649,7 @@ trigger1 = AnimElemTime(8) >= 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 1201
 
-;======================<Tenma Zanku MAX>===================
+;<Tenma Zanku MAX>===================
 [Statedef 3250]
 type = A
 movetype= A
@@ -1791,7 +1791,7 @@ trigger1 = AnimElemTime(8) >= 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 1201
 
-;======================<Messatsu Gorasen>===================
+;<Messatsu Gorasen>===================
 [Statedef 3300]
 type = S
 movetype= A
@@ -2200,7 +2200,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Messatsu Gousenpuu>===================
+;<Messatsu Gousenpuu>===================
 [Statedef 3310]
 type = A
 movetype= A
@@ -2504,7 +2504,7 @@ trigger1 = Anim=3311
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3305
 
-;======================<MAX Messatsu Gorasen>===================
+;<MAX Messatsu Gorasen>===================
 [Statedef 3350]
 type = S
 movetype= A
@@ -2913,7 +2913,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<MAX Messatsu Gousenpuu>===================
+;<MAX Messatsu Gousenpuu>===================
 [Statedef 3360]
 type = A
 movetype= A
@@ -3218,7 +3218,7 @@ trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3305
 
 
-;======================<Kongou Kokuretsu Zan>===================
+;<Kongou Kokuretsu Zan>===================
 [Statedef 3400]
 type = S
 movetype= A
@@ -3453,7 +3453,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Shun Goku Satsu>===================
+;<Shun Goku Satsu>===================
 [Statedef 3500]
 type = S
 movetype= A
@@ -3746,7 +3746,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===============<Shun Goku Satsu(Target)>==============
+;<Shun Goku Satsu(Target)>==============
 [Statedef 3505]
 type = A
 physics = N

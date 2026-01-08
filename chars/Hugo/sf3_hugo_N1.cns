@@ -3064,7 +3064,7 @@ value = 0
 ctrl = 1
 
 
-;====================< ROLL >====================
+;< ROLL >====================
 ;--- Forward ---
 [Statedef 710]
 type = S
@@ -3167,7 +3167,7 @@ value = 0
 ctrl = 1
 
 
-;==========< POWER CHARGE >==========
+;< POWER CHARGE >==========
 [Statedef 730]
 type = S
 physics = S
@@ -3258,7 +3258,7 @@ ctrl = 1
 
 
 
-;====================< ZERO COUNTER >====================
+;< ZERO COUNTER >====================
 [Statedef 750]
 type = S
 physics = S

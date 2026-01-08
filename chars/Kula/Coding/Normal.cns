@@ -2818,7 +2818,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==================<THROW ATTEMPT>==================
+;<THROW ATTEMPT>==================
 [Statedef 800]
 type = S
 movetype= A
@@ -2905,7 +2905,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;<THROW SWITCHING SIDES>==========
 [StateDef 805]
 type = S
 moveType = A
@@ -2971,7 +2971,7 @@ type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = ifElse(var(10), 830, 810)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;<THROW SWITCHING SIDES (TARGET)>==========
 [StateDef 806]
 type = A
 moveType = H
@@ -3002,7 +3002,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;===========<ICE COFFIN>================
+;<ICE COFFIN>================
 [Statedef 810]
 type = S
 movetype = A
@@ -3169,7 +3169,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<ICE COFFIN(TARGET)>================
+;<ICE COFFIN(TARGET)>================
 [Statedef 815]
 type = A
 movetype = H
@@ -3211,7 +3211,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<ICE COFFIN(HIT AWAY)>================
+;<ICE COFFIN(HIT AWAY)>================
 [Statedef 816]
 Type = A
 MoveType =  H
@@ -3239,7 +3239,7 @@ type = SelfState
 Trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;===========<BEHIND SLASH>================
+;<BEHIND SLASH>================
 [Statedef 830]
 type = S
 movetype = A
@@ -3401,7 +3401,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<BEHIND SLASH(TARGET)>================
+;<BEHIND SLASH(TARGET)>================
 [Statedef 840]
 type = A
 movetype = H
@@ -3443,7 +3443,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<BEHIND SLASH(HIT AWAY)>================
+;<BEHIND SLASH(HIT AWAY)>================
 [Statedef 841]
 Type = A
 MoveType =  H
@@ -3490,7 +3490,7 @@ Triggerall = AnimElemTime(5) > 0
 Trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;===========<THROW ESC'D>==========
+;<THROW ESC'D>==========
 [StateDef 890]
 type = S
 physics = N
@@ -3642,7 +3642,7 @@ trigger1 = Time >= 27
 value = 0
 ctrl = 1
 
-;======================<WALL BOUNCE STATE>===========================
+;<WALL BOUNCE STATE>===========================
 ;Being Launched
 [StateDef 1090]
 type = A

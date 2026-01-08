@@ -1,4 +1,4 @@
-;=====================<SOUL FIST(NORMAL)>==========================
+;<SOUL FIST(NORMAL)>==========================
 [StateDef 1000]
 type = S
 physics = S
@@ -65,7 +65,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<SOUL FIST(ARRANGED)>==========================
+;<SOUL FIST(ARRANGED)>==========================
 [StateDef 1001]
 type = S
 physics = S
@@ -151,7 +151,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX SOUL FIST>==========================
+;<EX SOUL FIST>==========================
 [StateDef 1030]
 type = S
 physics = S
@@ -236,7 +236,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<AIR SOUL FIST(NORMAL)>==========================
+;<AIR SOUL FIST(NORMAL)>==========================
 [StateDef 1100]
 type = A
 physics = N
@@ -309,7 +309,7 @@ trigger1 = AnimElemTime(6) > 0;StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1135
 
-;=====================<AIR SOUL FIST(ARRANGED)>==========================
+;<AIR SOUL FIST(ARRANGED)>==========================
 [StateDef 1101]
 type = A
 physics = N
@@ -406,7 +406,7 @@ trigger1 = AnimElemTime(6) > 0;StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1135
 
-;=====================<EX AIR SOUL FIST>==========================
+;<EX AIR SOUL FIST>==========================
 [StateDef 1130]
 type = A
 physics = N
@@ -538,7 +538,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<SHADOW BLADE>=======================
+;<SHADOW BLADE>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -1047,7 +1047,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX SHADOW BLADE>========================
+;<EX SHADOW BLADE>========================
 [Statedef 1230]
 type = S
 movetype = A
@@ -1300,7 +1300,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1205
 
-;==================<VECTOR DRAIN>==================
+;<VECTOR DRAIN>==================
 [Statedef 1300]
 type = S
 movetype= A
@@ -1791,7 +1791,7 @@ type = SelfState
 trigger1 = AnimElemTime(2)>=0 && vel y>0 && pos y>=-10
 value = 5100
 
-;==================<EX VECTOR DRAIN>==================
+;<EX VECTOR DRAIN>==================
 [Statedef 1330]
 type = S
 movetype= A

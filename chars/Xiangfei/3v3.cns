@@ -4992,7 +4992,7 @@ value = 11
 ctrl = 1
 
 
-;==========< POWER CHARGE >==========
+;< POWER CHARGE >==========
 [Statedef 730]
 type = S
 physics = S
@@ -5083,7 +5083,7 @@ value = 0
 ctrl = 1
 
 
-;====================< ZERO COUNTER >====================
+;< ZERO COUNTER >====================
 [Statedef 750]
 type = S
 physics = S
@@ -5153,7 +5153,7 @@ value = ifelse(var(10) = 1, 2910, 2900)
 
 
 
-;====================< PARRY >====================
+;< PARRY >====================
 ;--- STANDING ---
 [Statedef 760]
 type = S
@@ -12975,7 +12975,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;=====================<HIT GROUND(BOUNCE)>===================
+;<HIT GROUND(BOUNCE)>===================
 [Statedef 5100]
 type = L
 movetype= H
@@ -13064,7 +13064,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;================<HIT LIEDOWN>====================
+;<HIT LIEDOWN>====================
 [Statedef 5110]
 type = L
 movetype= H
@@ -13182,7 +13182,7 @@ trigger1 = Time = 0
 ampl = 200, 7, -.467
 time = 30
 waveform = sine
-;==========< FALL RECOVERY >==========
+;< FALL RECOVERY >==========
 [Statedef 5200]
 type = A
 movetype = H
@@ -13356,7 +13356,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 52
 
-;==========< TARGET SAFE FALL >==========
+;< TARGET SAFE FALL >==========
 [Statedef 5205]
 type = A
 physics = N

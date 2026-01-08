@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (27/12/2018)
-;==============================================
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==============================================
+;
 
 
 [Data]
@@ -80,7 +80,7 @@ down.friction.threshold = 0.5
 ;---------------------------------------------------------------------------
 ; Override common states (use same number to override) :
 ;---------------------------------------------------------------------------
-;======================<RUN>===========================
+;<RUN>===========================
 [StateDef 100]
 type = S
 physics = N
@@ -2072,7 +2072,7 @@ value = 0
 ctrl = 1
 
 
-;====================< ROLL >====================
+;< ROLL >====================
 ;--- Forward ---
 [Statedef 710]
 type = S
@@ -2175,7 +2175,7 @@ value = 0
 ctrl = 1
 
 
-;==========< POWER CHARGE >==========
+;< POWER CHARGE >==========
 [Statedef 730]
 type = S
 physics = S
@@ -2266,7 +2266,7 @@ ctrl = 1
 
 
 
-;====================< ZERO COUNTER >====================
+;< ZERO COUNTER >====================
 [Statedef 750]
 type = S
 physics = S
@@ -2336,7 +2336,7 @@ value = ifelse(var(10) = 1, 2910, 2900)
 
 
 
-;====================< PARRY >====================
+;< PARRY >====================
 ;--- STANDING ---
 [Statedef 760]
 type = S
@@ -2706,7 +2706,7 @@ trigger2 = time >= 2
 
 
 
-;====================< CUSTOM COMBO >====================
+;< CUSTOM COMBO >====================
 ;--- GROUND ---
 [Statedef 900]
 type = S
@@ -3627,7 +3627,7 @@ time = 2
 add = 64 + ceil(sin(var(20) / 8.0 * pi) * 64), 64 + ceil(sin(var(20) / 8.0 * pi) * 64), 64 + ceil(sin(var(20) / 8.0 * pi) * 64)
 ignorehitpause = 1
 
-;============================================================================
+;
 ; edited life & power bar
 [State -2,1]
 	type = null;Helper
@@ -3643,7 +3643,7 @@ ignorehitpause = 1
 
 ; (* 'ID = 90801' power bar off mode)
 ; (* 'ID = 90801' はパワーバー非表示モード)
-;======================================
+;
 ;--------------------------------------
 ; blocking/JD system helper set
 [State -2,1]
@@ -3688,7 +3688,7 @@ ignorehitpause = 1
 	trigger2 = Helper(99998),StateNo = [99996, 99997]
 	value = SCA, NT, ST, HT
 	IgnoreHitPause = 1
-;============================================================================
+;
 
 [State 0, DefenceMulSet]
 type=DefenceMulSet
@@ -3710,9 +3710,9 @@ value = 0
 
 
 ;---------------------------------------------------------------------------
-;===========================================================================
+;
 [Statedef -3]
-;===========================================================================
+;
 ;---------------------------------------------------------------------------
 
 [State -3, 2];跳跃系统相关(普通跳)

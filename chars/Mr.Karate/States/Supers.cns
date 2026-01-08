@@ -6199,7 +6199,7 @@ Trigger1 = Vel Y > 0
 Trigger1 = AnimElem = 11 > 0
 value = 5100
 
-;======================< MODE CHANGE >=============================
+;< MODE CHANGE >=============================
 [Statedef 4400]
 type = S
 physics = S

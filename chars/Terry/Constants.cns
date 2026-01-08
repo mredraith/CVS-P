@@ -51,9 +51,9 @@
 ;fvar(11):= -2, 1001 - Power Wave, 1002 - EX Power Wave, 1003 - Round Wave, 1005 - EX Round Wave, 3005 - Power Geyser, 3055 - MAX Over Heat Geyser Projectile, 3056 - MAX Over Heat Geyser Projectile 2, 3065 - MAX Over Heat Geyser Projectile, 3066 - MAX Over Heat Geyser Projectile 2, 3205 - Over Heat Geyser, 3305 - Buster Wolf, 3306 - MAX Buster Wolf, 3405 - Trinity Geyser
 
 ;                          ____________________
-;=========================|Terry Bogard by Memo|=========================
+;|Terry Bogard by Memo|=========================
 ;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====================<CONSTANTS>====================
+;<CONSTANTS>====================
 [Data]
 life = 1000
 power = 3000

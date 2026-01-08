@@ -2788,7 +2788,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==================<THROW ATTEMPT>==================
+;<THROW ATTEMPT>==================
 [Statedef 800]
 type = S
 movetype= A
@@ -2875,7 +2875,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;<THROW SWITCHING SIDES>==========
 [StateDef 805]
 type = S
 moveType = A
@@ -2956,7 +2956,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = ifElse(var(10), 830, 810)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;<THROW SWITCHING SIDES (TARGET)>==========
 [StateDef 806]
 type = A
 moveType = H
@@ -2987,7 +2987,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;===========<Shoulder Throw>================
+;<Shoulder Throw>================
 [Statedef 810]
 type = S
 movetype = A
@@ -3146,7 +3146,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<Shoulder Throw (TARGET)>================
+;<Shoulder Throw (TARGET)>================
 [Statedef 820]
 type = A
 movetype = H
@@ -3194,7 +3194,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<Shoulder Throw (TARGET FALL)>================
+;<Shoulder Throw (TARGET FALL)>================
 [Statedef 821]
 type = A
 movetype= H
@@ -3224,7 +3224,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;===========<Kick Throw>================
+;<Kick Throw>================
 [Statedef 830]
 type = S
 movetype = A
@@ -3388,7 +3388,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<Kick Throw (TARGET)>================
+;<Kick Throw (TARGET)>================
 [Statedef 840]
 type = A
 movetype = H
@@ -3421,7 +3421,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<Shoulder Throw (TARGET FALL)>================
+;<Shoulder Throw (TARGET FALL)>================
 [Statedef 841]
 type = A
 movetype= H
@@ -3451,7 +3451,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;===========<THROW ESC'D>==========
+;<THROW ESC'D>==========
 [StateDef 890]
 type = S
 physics = N

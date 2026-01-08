@@ -2310,7 +2310,7 @@ x = -2.5
 type = SelfState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 5100
-;===========<THROW ESC'D>==========
+;<THROW ESC'D>==========
 ;Throw - Escaped
 [StateDef 890]
 type = S

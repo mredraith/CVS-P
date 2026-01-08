@@ -1,4 +1,4 @@
-;====================<VARIABLE LIST>====================
+;<VARIABLE LIST>====================
 
 ;var(0)  : Palette Number
 ;var(1)  : Shadow Lady eye spark (0 = delays super spark; 1 = plays during super spark)
@@ -64,7 +64,7 @@
 ; _______________________________________
 ;| Chun-Li by Jmorphman                  |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====================<CONSTANTS>====================
+;<CONSTANTS>====================
 [Data]
 life = 1000
 power = 3000

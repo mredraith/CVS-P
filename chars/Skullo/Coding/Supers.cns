@@ -1,4 +1,4 @@
-;======================<SUPER SKULLO CRUSHER>===================
+;<SUPER SKULLO CRUSHER>===================
 [Statedef 3000]
 type = S
 movetype= A
@@ -283,7 +283,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<AIR SUPER SKULLO CRUSHER>===================
+;<AIR SUPER SKULLO CRUSHER>===================
 [Statedef 3010]
 type = A
 movetype= A
@@ -510,7 +510,7 @@ trigger1 = Vel Y > 0 && Pos Y >= 0;pos y > -vel y
 value = 3001
 ctrl = 0
 
-;======================<SUPER SKULLO CRUSHER MAX>===================
+;<SUPER SKULLO CRUSHER MAX>===================
 [Statedef 3050]
 type = S
 movetype= A
@@ -841,7 +841,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<AIR SUPER SKULLO CRUSHER MAX>===================
+;<AIR SUPER SKULLO CRUSHER MAX>===================
 [Statedef 3060]
 type = A
 movetype= A
@@ -1108,7 +1108,7 @@ trigger1 = Vel Y > 0 && Pos Y >= 0;pos y > -vel y
 value = 3051
 ctrl = 0
 
-;======================<SUPER SKULLO SLIDER>===================
+;<SUPER SKULLO SLIDER>===================
 [Statedef 3100]
 type = C
 movetype= A
@@ -1400,7 +1400,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<SUPER SKULLO SLIDER MAX>===================
+;<SUPER SKULLO SLIDER MAX>===================
 [Statedef 3150]
 type = C
 movetype= A
@@ -1737,7 +1737,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<SKULLO BALL>==========================
+;<SKULLO BALL>==========================
 [Statedef 3200]
 type = S
 movetype = A
@@ -1864,7 +1864,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<SKULLO ENERGY>==========================
+;<SKULLO ENERGY>==========================
 [Statedef 3300]
 type = S
 movetype = A
@@ -2030,7 +2030,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<SUPER SKULLO ENERGY>==========================
+;<SUPER SKULLO ENERGY>==========================
 [Statedef 3400]
 type = S
 movetype = A
@@ -2229,7 +2229,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<SKULLO DREAM>===================
+;<SKULLO DREAM>===================
 [Statedef 3500]
 type = S
 movetype = A
@@ -2417,7 +2417,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===============<SKULLO DREAM (SUCCESS)>=============
+;<SKULLO DREAM (SUCCESS)>=============
 [Statedef 3510]
 type = S
 movetype = A
@@ -2671,7 +2671,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;============<SKULLO DREAM (TARGET)>====================
+;<SKULLO DREAM (TARGET)>====================
 [Statedef 3520]
 type = A
 movetype = H
@@ -2698,7 +2698,7 @@ trigger1 = !gethitvar(isbound)
 trigger1 = Time >= 135
 value = 5050
 
-;============<SKULLO DREAM (TARGET: falling)>====================
+;<SKULLO DREAM (TARGET: falling)>====================
 [Statedef 3521]
 type = A
 movetype = H
@@ -2727,7 +2727,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;======================<NEO SKULLO DREAM>===================
+;<NEO SKULLO DREAM>===================
 [Statedef 3600]
 type = S
 movetype = A
@@ -2880,7 +2880,7 @@ trigger1 = Time >= 110
 value = 3501
 ctrl = 0
 
-;===============<NEO SKULLO DREAM (SUCCESS)>=============
+;<NEO SKULLO DREAM (SUCCESS)>=============
 [Statedef 3610]
 type = S
 movetype = A
@@ -3137,7 +3137,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;============<NEO SKULLO DREAM (TARGET)>====================
+;<NEO SKULLO DREAM (TARGET)>====================
 [Statedef 3620]
 type = A
 movetype = H
@@ -3172,7 +3172,7 @@ trigger1 = !gethitvar(isbound)
 trigger1 = Time >= 135
 value = 5050
 
-;============<NEO SKULLO DREAM (TARGET: falling)>====================
+;<NEO SKULLO DREAM (TARGET: falling)>====================
 [Statedef 3621]
 type = A
 movetype = H

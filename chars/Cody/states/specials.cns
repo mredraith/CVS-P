@@ -1687,7 +1687,7 @@ trigger3 = enemynear, statetype = L && (enemynear, stateno != [5080, 5081])
 type = destroyself
 trigger1 = !numenemy || time >= 120
 
-;====================<CUSTOM COMBO>====================
+;<CUSTOM COMBO>====================
 ;---GROUND---
 [Statedef 910]
 type = S
@@ -2196,7 +2196,7 @@ value = 0
 ctrl = 1
 
 
-;====================< ROLL >====================
+;< ROLL >====================
 ;--- Forward ---
 [Statedef 4000]
 type = S
@@ -2299,7 +2299,7 @@ value = 0
 ctrl = 1
 
 
-;==========< POWER CHARGE >==========
+;< POWER CHARGE >==========
 [Statedef 4100]
 type = S
 physics = S

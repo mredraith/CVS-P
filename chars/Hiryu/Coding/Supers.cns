@@ -1,4 +1,4 @@
-;======================<Boost Slash>===================
+;<Boost Slash>===================
 [Statedef 3000]
 type = S
 movetype= A
@@ -293,7 +293,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Nagrarok>===================
+;<Nagrarok>===================
 [Statedef 3100]
 type = S
 movetype= A
@@ -1084,7 +1084,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;==================<Hit by Nagrarok TargetSates>=====================
+;<Hit by Nagrarok TargetSates>=====================
 ;Initial Hit
 [StateDef 3180]
 type = S
@@ -1292,7 +1292,7 @@ type=selfstate
 trigger1= vel y>0 && pos y>=-5
 value=5100
 
-;======================<Legion(Direct)>===================
+;<Legion(Direct)>===================
 [Statedef 3200]
 type = S
 movetype= A
@@ -1576,7 +1576,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Legion(Warp)>===================
+;<Legion(Warp)>===================
 [Statedef 3210]
 type = S
 movetype= A
@@ -1873,7 +1873,7 @@ type = Changestate
 trigger1 = Time >= 155
 value = 3201
 
-;======================<Ouroboros>===================
+;<Ouroboros>===================
 [Statedef 3300]
 type = S
 movetype= A
@@ -2019,7 +2019,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Ragnarok>===================
+;<Ragnarok>===================
 [Statedef 3400]
 type = S
 movetype= A
@@ -2723,7 +2723,7 @@ value = 0
 ctrl = 1
 
 
-;======================<Ragnarok P2 States>===================
+;<Ragnarok P2 States>===================
 [Statedef 3450]
 type = A
 movetype= H

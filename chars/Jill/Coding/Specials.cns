@@ -1,4 +1,4 @@
-;========================<S.T.A.R.S CHARGE>=======================
+;<S.T.A.R.S CHARGE>=======================
 [Statedef 1000]
 type = S
 movetype = A
@@ -433,7 +433,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX S.T.A.R.S CHARGE>=======================
+;<EX S.T.A.R.S CHARGE>=======================
 [Statedef 1030]
 type = S
 movetype = A
@@ -678,7 +678,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<AIR S.T.A.R.S CHARGE>=======================
+;<AIR S.T.A.R.S CHARGE>=======================
 [Statedef 1100]
 type = A
 movetype = A
@@ -1056,7 +1056,7 @@ trigger1 = AnimElemTime(5) >= 0
 trigger1 = pos y > -vel y
 value = 52
 
-;========================<EX AIR S.T.A.R.S CHARGE>=======================
+;<EX AIR S.T.A.R.S CHARGE>=======================
 [Statedef 1130]
 type = A
 movetype = A
@@ -1282,7 +1282,7 @@ trigger1 = AnimElemTime(8) >= 0
 trigger1 = pos y > -vel y
 value = 52
 
-;========================<KNIFE SLASH ALPHA>=======================
+;<KNIFE SLASH ALPHA>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -1480,7 +1480,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<KNIFE SLASH TANGO>================
+;<KNIFE SLASH TANGO>================
 [Statedef 1201]
 type = S
 movetype= A
@@ -1741,7 +1741,7 @@ triggerall = pos y > -vel y
 trigger1 = AnimElemTime(4) > 0
 value = 52
 
-;===========<KNIFE SLASH TANGO(TARGET)>================
+;<KNIFE SLASH TANGO(TARGET)>================
 [Statedef 1204]
 type = A
 movetype = H
@@ -1772,7 +1772,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<KNIFE SLASH TANGO(HIT AWAY)>================
+;<KNIFE SLASH TANGO(HIT AWAY)>================
 [Statedef 1205]
 type = A
 movetype= H
@@ -1807,7 +1807,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;========================<KNIFE SLASH DELTA>=======================
+;<KNIFE SLASH DELTA>=======================
 [Statedef 1206]
 type = S
 movetype = A
@@ -1924,7 +1924,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;======================<KNIFE SLASH ALPHA(MEDIUM)>=====================
+;<KNIFE SLASH ALPHA(MEDIUM)>=====================
 [Statedef 1210]
 type = S
 movetype = A
@@ -2122,7 +2122,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<KNIFE SLASH ALPHA(STRONG)>=====================
+;<KNIFE SLASH ALPHA(STRONG)>=====================
 [Statedef 1220]
 type = S
 movetype = A
@@ -2320,7 +2320,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX KNIFE SLASH ALPHA>=======================
+;<EX KNIFE SLASH ALPHA>=======================
 [Statedef 1230]
 type = S
 movetype = A
@@ -2596,7 +2596,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<EX KNIFE SLASH TANGO>================
+;<EX KNIFE SLASH TANGO>================
 [Statedef 1231]
 type = S
 movetype= A
@@ -2821,7 +2821,7 @@ triggerall = pos y > -vel y
 trigger1 = AnimElemTime(4) > 0
 value = 52
 
-;===========<EX KNIFE SLASH TANGO(TARGET)>================
+;<EX KNIFE SLASH TANGO(TARGET)>================
 [Statedef 1233]
 type = A
 movetype = H
@@ -2852,7 +2852,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<EX KNIFE SLASH TANGO(HIT AWAY)>================
+;<EX KNIFE SLASH TANGO(HIT AWAY)>================
 [Statedef 1234]
 type = A
 movetype= H
@@ -2887,7 +2887,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;========================<EX KNIFE SLASH DELTA>=======================
+;<EX KNIFE SLASH DELTA>=======================
 [Statedef 1235]
 type = S
 movetype = A
@@ -3008,7 +3008,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;========================<RETURN FIRE>=======================
+;<RETURN FIRE>=======================
 [Statedef 1300]
 type = S
 movetype = I
@@ -3292,7 +3292,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX RETURN FIRE>=======================
+;<EX RETURN FIRE>=======================
 [Statedef 1330]
 type = S
 movetype = I
@@ -3690,7 +3690,7 @@ trigger1 = HitOver
 value = 0
 ctrl = 1
 
-;=====================<SHOTGUN BLAST>==========================
+;<SHOTGUN BLAST>==========================
 [StateDef 1400]
 type = S
 physics = S
@@ -3768,7 +3768,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<MAGNUM BURST>==========================
+;<MAGNUM BURST>==========================
 [StateDef 1430]
 type = S
 physics = S
@@ -3869,7 +3869,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<GRENADE LAUNCHER(NORMAL)>==========================
+;<GRENADE LAUNCHER(NORMAL)>==========================
 [StateDef 1500]
 type = S
 physics = S
@@ -3946,7 +3946,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=================<EX GRENADE LAUNCHER(ICE: STRAIGHT)>====================
+;<EX GRENADE LAUNCHER(ICE: STRAIGHT)>====================
 [StateDef 1530]
 type = S
 physics = S
@@ -4025,7 +4025,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<GRENADE LAUNCHER(ACID)>==========================
+;<GRENADE LAUNCHER(ACID)>==========================
 [StateDef 1600]
 type = S
 physics = S
@@ -4102,7 +4102,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=================<EX GRENADE LAUNCHER(ICE: UP)>====================
+;<EX GRENADE LAUNCHER(ICE: UP)>====================
 [StateDef 1630]
 type = S
 physics = S

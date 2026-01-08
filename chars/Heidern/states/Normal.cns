@@ -7,7 +7,7 @@
 ;***************************************************************************;
 ;***************************************************************************;
 
-;===============================================================================
+;
 ; Soco fraco (X)
 [Statedef 200]
 type = S
@@ -77,15 +77,15 @@ palFX.sinAdd= -255,-255,-255,48
 type=StateTypeSet
 trigger1=AnimElemTime(4) = 0
 moveType=I
-;===============================================================================
+;
 ;Finisher
-;===============================================================================
+;
 [State 200,1]
 type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Soco médio (Y)
 [Statedef 210]
 type = S
@@ -262,7 +262,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Soco Forte (Z)
 [Statedef 220];Ok
 type = S
@@ -358,7 +358,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Chute fraco (A) - Longe
 [Statedef 230];Ok
 type = S
@@ -434,7 +434,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Chute fraco (A) - Perto
 [Statedef 235];Ok
 type = S
@@ -510,7 +510,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Chute médio (B)
 [Statedef 240];Ok
 type = S
@@ -588,7 +588,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Chute forte (C)
 [Statedef 245];Ok
 type = S
@@ -676,7 +676,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ;Knockdown (Z+C)
 [Statedef 250]
 type = S
@@ -799,7 +799,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Chute duplo (FWD+A)
 [Statedef 236];Ok
 type = S
@@ -926,7 +926,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ; Soco fraco baixo (X)
 [Statedef 400];Ok
 type = C
@@ -1019,7 +1019,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
-;===============================================================================
+;
 ; Soco médio baixo (Y)
 [Statedef 410];Ok
 type = C
@@ -1116,7 +1116,7 @@ trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
 
-;===============================================================================
+;
 ; Gancho (ou uppercut pros metidos a gringo rs) (Z)
 [Statedef 420];Ok
 type = C
@@ -1239,7 +1239,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
-;===============================================================================
+;
 ; Chute fraco baixo (A)
 [Statedef 430];Ok
 type = c
@@ -1314,7 +1314,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
-;===============================================================================
+;
 ; Chute médio baixo (B)
 [Statedef 435];Ok
 type = c
@@ -1398,7 +1398,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
-;===============================================================================
+;
 ;Chute forte baixo (Z)
 [Statedef 440];Ok
 type = c
@@ -1654,7 +1654,7 @@ type=ChangeState
 trigger1=!AnimTime
 value=0
 ctrl=1
-;===============================================================================
+;
 ;Voadora soco fraco (X)
 [Statedef 600]
 type = A
@@ -1750,7 +1750,7 @@ type = CtrlSet
 trigger1 = time = 32 && var(55) = 2
 value = 1
 
-;===============================================================================
+;
 ;Voadora soco médio (Y)
 [Statedef 605];Ok
 type = A
@@ -1826,7 +1826,7 @@ moveType=I
 type = CtrlSet
 trigger1 = time = 22 && var(55) = 2
 value = 1
-;===============================================================================
+;
 ;Voadora soco forte (Z)
 [Statedef 610];Ok
 type = A
@@ -1924,7 +1924,7 @@ type = CtrlSet
 trigger1 = time = 23 && var(55) = 2
 value = 1
 
-;===============================================================================
+;
 ;Voadora chute fraco (A)
 [Statedef 630];Ok
 type = A
@@ -2009,7 +2009,7 @@ trigger2 = Prevstateno = 40
 trigger2 = Pos Y >= 0 && Vel Y > 0
 trigger2 = Time > 5
 value = 52
-;===============================================================================
+;
 ;Voadora chute fraco (A)
 [Statedef 635];Ok
 type = A
@@ -2094,7 +2094,7 @@ trigger2 = Prevstateno = 40
 trigger2 = Pos Y >= 0 && Vel Y > 0
 trigger2 = Time > 5
 value = 52
-;===============================================================================
+;
 ;Voadora chute médio (B)
 [Statedef 640]
 type = A
@@ -2177,7 +2177,7 @@ triggerall = movecontact
 trigger1=AIlevel && numenemy
 value = 610
 ctrl = 1
-;===============================================================================
+;
 ;Voadora chute forte (C)
 [Statedef 645]
 type = A
@@ -2254,7 +2254,7 @@ moveType=I
 type = CtrlSet
 trigger1 = time = 23 && var(55) = 2
 value = 1
-;===============================================================================
+;
 ;Voadora e Knockdown (Z+C)
 [Statedef 650]
 type = A
@@ -2265,9 +2265,9 @@ ctrl = 0
 juggle = 0
 poweradd= 30 * !var(20)
 
-;===============================================================================
+;
 ;Jump Stuff
-;===============================================================================
+;
 [State 0, PlaySnd]
 type = PlaySnd
 trigger1 = time = 0
@@ -2280,9 +2280,9 @@ trigger1 = Vel X = const(velocity.runjump.fwd.x) || Vel X = const(velocity.runju
 value = S1,4
 volume = 50
 
-;===============================================================================
 ;
-;===============================================================================
+;
+;
 
 [State 5100, 10]
 type = PlaySnd
@@ -2372,7 +2372,7 @@ trigger2 = Prevstateno = 40
 trigger2 = Pos Y >= 0 && Vel Y > 0
 trigger2 = Time > 5
 value = 52
-;===============================================================================
+;
 ;Arremesso 1
 [Statedef 800]
 type = S
@@ -2446,7 +2446,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;===============================================================================
+;
 ;Arremesso 1
 [Statedef 805]
 type = S
@@ -2519,7 +2519,7 @@ type=ChangeState
 trigger1=!AnimTime
 value=0
 ctrl=1
-;===============================================================================
+;
 ;Arremesso 2
 [Statedef 850]
 type = S
@@ -2571,7 +2571,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;===============================================================================
+;
 ;Arremesso 2
 [Statedef 855]
 type = S
@@ -2623,9 +2623,9 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;===============================================================================
+;
 ;Throw 1 Lead Belcher
-;===============================================================================
+;
 [Statedef 801]
 type = S
 movetype= A
@@ -2774,9 +2774,9 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ;Throw 1 GetHit
-;===============================================================================
+;
 [Statedef 910]
 type = L
 movetype= H
@@ -2792,9 +2792,9 @@ value = 820
 type = SprPriority
 trigger1 = AnimElemTime(5) = 0
 value = 4
-;===============================================================================
+;
 ;Throw 1 Turn Lead Belcher
-;===============================================================================
+;
 [Statedef 851]
 type = S
 movetype= A
@@ -3005,9 +3005,9 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ;Throw 1 Turn GetHit
-;===============================================================================
+;
 [Statedef 960]
 type = S
 movetype= H
@@ -3023,7 +3023,7 @@ value = 860
 type = SprPriority
 trigger1 = AnimElemTime(5) = 0
 value = 4
-;===============================================================================
+;
 ;Arremesso aéreo
 [Statedef 870]
 type = A
@@ -3056,7 +3056,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 50
 ctrl = 1
-;===============================================================================
+;
 ;Arremesso aéreo
 [Statedef 875]
 type = A
@@ -3089,9 +3089,9 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 50
 ctrl = 1
-;===============================================================================
+;
 ;Throw 3 Lead Belcher
-;===============================================================================
+;
 [Statedef 880]
 type = A
 movetype= A
@@ -3193,9 +3193,9 @@ trigger1 = Pos Y + Vel Y >= 0
 value = 885
 ctrl = 0
 
-;===============================================================================
+;
 ;Throw 3 2
-;===============================================================================
+;
 [Statedef 885]
 type = A
 movetype= A
@@ -3280,9 +3280,9 @@ trigger1 = Time > 22
 trigger1 = Pos Y + Vel Y >= 0
 value = 886
 ctrl = 0
-;===============================================================================
+;
 ;Throw 3 3
-;===============================================================================
+;
 [Statedef 886]
 type = S
 movetype= I
@@ -3303,9 +3303,9 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ;Throw 3 GetHit
-;===============================================================================
+;
 [Statedef 890]
 type = L
 movetype= H
@@ -3316,9 +3316,9 @@ ctrl = 0
 type = ChangeAnim2
 trigger1 = !Time
 value = 890
-;===============================================================================
+;
 ;Throw 3 GetHit 1
-;===============================================================================
+;
 [Statedef 895]
 type = L
 movetype= H
@@ -3364,9 +3364,9 @@ trigger1 = Time > 22
 trigger1 = Pos Y + Vel Y >= 0
 value = 5100
 
-;===============================================================================
+;
 ;Throw 3 GetHit 1
-;===============================================================================
+;
 [Statedef 896]
 type = L
 movetype= H
@@ -3852,7 +3852,7 @@ type = ChangeState
 trigger1=!animtime
 value = 0
 ctrl = 1
-;========================= NORMAL FINISH =================
+; NORMAL FINISH =================
 [Statedef 9994]
 ctrl = 0
 anim = 9999
@@ -3885,7 +3885,7 @@ under=-9999
 type=destroyself
 trigger1= roundstate!=3
 
-;========================= SPECIAL COMBO FINISH =================
+; SPECIAL COMBO FINISH =================
 [Statedef 9995]
 ctrl = 0
 anim = 9999
@@ -3947,8 +3947,8 @@ trigger2= roundstate<3
 type=destroyself
 trigger1= roundstate!=3
 ;-----------------------------------------------------------------------------
-;========================<SUPER FINISH>=============================
-;==========================SUPER FINISH==================================
+;<SUPER FINISH>=============================
+;SUPER FINISH==================================
 [Statedef 9996]
 velset=0,0
 anim=9999

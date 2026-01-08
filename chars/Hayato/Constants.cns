@@ -1,4 +1,4 @@
-;====================<VARIABLE LIST>====================
+;<VARIABLE LIST>====================
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -50,7 +50,7 @@
 ; _________________________________________
 ;| Hayato by varo_hades                    |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====================<CONSTANTS>====================
+;<CONSTANTS>====================
 [Data]
 life = 1000
 power = 3000

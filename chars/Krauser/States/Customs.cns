@@ -142,7 +142,7 @@ value = 5210 ;HITFALL_AIRRECOVER
 type = SelfState
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 5100 ;Hit ground
-;========================<HIT WALL>=============================
+;<HIT WALL>=============================
 ;---Hit Pause---
 [Statedef 1125]
 type=A

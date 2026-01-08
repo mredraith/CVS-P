@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (08/02/2017)
-;==============================================
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==============================================
+;
 
 
 ;---------------------------------------------------------------------------
@@ -434,7 +434,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;=========<DODGE>=============
+;<DODGE>=============
 ;Dodge
 [Statedef 700]
 type = S
@@ -480,7 +480,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========<ROLLING>===========
+;<ROLLING>===========
 ;Roll Forward
 [StateDef 710]
 type = S
@@ -579,7 +579,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<POWER CHARGE>==================
+;<POWER CHARGE>==================
 ;Power Charge
 [StateDef 730]
 type = S
@@ -667,7 +667,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<ZERO COUNTER>====================
+;<ZERO COUNTER>====================
 ;Zero Counter
 [StateDef 750]
 type = S
@@ -730,7 +730,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 450, 221)
 
-;====================<CUSTOM COMBO>====================
+;<CUSTOM COMBO>====================
 ;Ground Version
 [StateDef 900]
 type = S
@@ -950,7 +950,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;====================<CROUCHING>====================
+;<CROUCHING>====================
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -1052,7 +1052,7 @@ trigger1 = Anim != 21 && Anim != 5
 trigger2 = Anim = 5 && AnimElemTime(1) >= 1
 value = 21
 
-;====================<Jumping>====================
+;<Jumping>====================
 ;Jumping
 [StateDef 40]
 type = S
@@ -1257,7 +1257,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=============<Running>====================
+;<Running>====================
 ;Running
 [Statedef 100]
 type = S
@@ -1350,7 +1350,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;======================< DASH >===========================
+;< DASH >===========================
 ;Dash
 [Statedef 102]
 type = S
@@ -1591,7 +1591,7 @@ type = ChangeState
 trigger1 = !animtime
 value = 50
 ctrl = 1
-;=====================<HIT GROUND(BOUNCE)>===================
+;<HIT GROUND(BOUNCE)>===================
 ;Hit ground
 [Statedef 5100]
 type = L
@@ -1681,7 +1681,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;================<HIT LIEDOWN>====================
+;<HIT LIEDOWN>====================
 ;Hit Liedown
 [Statedef 5110]
 type = L
@@ -1801,7 +1801,7 @@ ampl = 200, 7, -.467
 time = 30
 waveform = sine
 
-;==========< GUARD >==========
+;< GUARD >==========
 ;--- START ---
 [Statedef 120]
 type = U
@@ -2203,7 +2203,7 @@ value = 130
 type = changestate
 trigger1 = sysvar(0)
 value = 52
-;==========<FORCED P2 RECOVERY>==========
+;<FORCED P2 RECOVERY>==========
 [StateDef 5025]
 type = A
 moveType = H
@@ -2221,7 +2221,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y, 5020, 5000)
 
-;==========<TARGET SAFE FALL>==========
+;<TARGET SAFE FALL>==========
 [StateDef 5205]
 type = A
 physics = N
@@ -2232,7 +2232,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y < -20, 5210, 5200)
 
-;==========<FALL RECOVERY>==========
+;<FALL RECOVERY>==========
 [StateDef 5200]
 type = A
 moveType = H
@@ -2390,7 +2390,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;============<CONTINUE?>==============
+;<CONTINUE?>==============
 [Statedef 5500]
 type = S
 anim = 5300
@@ -2401,7 +2401,7 @@ ctrl = 0
 type = ChangeAnim
 trigger1 = !Time
 value = 5500
-;====================< K.O. >====================
+;< K.O. >====================
 [Statedef 5150]
 type = L
 movetype = H
@@ -2427,7 +2427,7 @@ type = nothitby
 trigger1 = 1
 value = SCA
 time = 1
-;=============<CHEAP K.O.>=============
+;<CHEAP K.O.>=============
 [StateDef 5950]
 type = S
 moveType = H
@@ -2481,7 +2481,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;================<AIR HIT TRANSITION>=================
+;<AIR HIT TRANSITION>=================
 [Statedef 5035]
 type = A
 movetype = H
@@ -3730,9 +3730,9 @@ facing = -1
 pos = 0,0
 ownPal = 1
 ignorehitpause=1
-;=========================================================================
+;
 ;Dampener
-;=========================================================================
+;
 [State -2, Damage based on hits]
 type=varset
 triggerall= numenemy

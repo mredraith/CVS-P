@@ -1,4 +1,4 @@
-;========================<SLIDING ARROW>=======================
+;<SLIDING ARROW>=======================
 [Statedef 1000]
 type = S
 movetype = A
@@ -590,7 +590,7 @@ type = ChangeState
 trigger1 = AnimElemTime(5) >= 21
 value = 1005
 
-;========================<EX SLIDING ARROW>=======================
+;<EX SLIDING ARROW>=======================
 [Statedef 1030]
 type = S
 movetype = A
@@ -901,7 +901,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<SHOOT KICK>=======================
+;<SHOOT KICK>=======================
 [Statedef 1100]
 type = S
 movetype = A
@@ -1785,7 +1785,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX SHOOT KICK>=======================
+;<EX SHOOT KICK>=======================
 [Statedef 1130]
 type = S
 movetype = A
@@ -2668,7 +2668,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==============<SLAMMED BY EX AXE KICK>================
+;<SLAMMED BY EX AXE KICK>================
 ;Being Slammed
 [StateDef 1140]
 type = A
@@ -2758,7 +2758,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;========================<LIGHTNING KNEE>=======================
+;<LIGHTNING KNEE>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -3337,7 +3337,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1205
 
-;==========================<EX LIGHTNING KNEE>===========================
+;<EX LIGHTNING KNEE>===========================
 [Statedef 1230]
 type = S
 movetype = A
@@ -3582,7 +3582,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1205
 
-;==========================<SHOOT UPPER>============================
+;<SHOOT UPPER>============================
 [Statedef 1300]
 type = S
 movetype = A
@@ -3755,7 +3755,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==========================<EX SHOOT UPPER>============================
+;<EX SHOOT UPPER>============================
 [Statedef 1330]
 type = S
 movetype = A
@@ -3999,7 +3999,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<CRESCENT WRENCH KICK>===========================
+;<CRESCENT WRENCH KICK>===========================
 [Statedef 1400]
 type = A
 movetype = A
@@ -4095,7 +4095,7 @@ trigger1 = AnimElemTime(5) >= 0
 trigger1 = pos y > -vel y
 value = 52
 
-;=======================<EX CRESCENT WRENCH KICK>=========================
+;<EX CRESCENT WRENCH KICK>=========================
 [Statedef 1430]
 type = A
 movetype = A

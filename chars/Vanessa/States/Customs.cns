@@ -1,4 +1,4 @@
-;========================<HIT WALL>=============================
+;<HIT WALL>=============================
 ;Wall Bounce-Hit Pause
 [Statedef 1125]
 type=A
@@ -166,7 +166,7 @@ type=selfstate
 trigger1= vel y>0 && pos y>=0
 value=5100
 
-;=====================================================
+;
 ;Wall Bounce
 [Statedef 1225]
 type=A

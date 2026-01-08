@@ -3158,7 +3158,7 @@ trigger1 = Pos Y >= 25 && Vel Y > 0 && time > 0
 value = 5100
 
 
-;===========<THROW ESC'D>==========
+;<THROW ESC'D>==========
 [StateDef 8990]
 type = S
 physics = N

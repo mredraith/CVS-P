@@ -1,4 +1,4 @@
-;========================<Gatling Attack>=======================
+;<Gatling Attack>=======================
 [Statedef 1000]
 type = S
 movetype = A
@@ -649,7 +649,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<EX Gatling Attack>===========================
+;<EX Gatling Attack>===========================
 [Statedef 1030]
 type = S
 movetype = A
@@ -1455,7 +1455,7 @@ value=0
 ctrl=1
 
 
-;========================<Super Argentine Backbreaker>=======================
+;<Super Argentine Backbreaker>=======================
 [Statedef 1100];special thanks to Infinite
 type = S
 movetype = A
@@ -2103,7 +2103,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;=======================<EX Super Argentine Backbreaker>===========================
+;<EX Super Argentine Backbreaker>===========================
 [Statedef 1130]
 type = S
 movetype = A
@@ -2569,7 +2569,7 @@ type = SelfState
 trigger1 = (pos y-16)>-vel y
 value = 5100
 
-;========================<Napalm Stretch>=======================
+;<Napalm Stretch>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -3115,7 +3115,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;========================<EX Napalm Stretch>=======================
+;<EX Napalm Stretch>=======================
 [Statedef 1230]
 type = S
 movetype = A
@@ -3441,7 +3441,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;========================<Frankensteiner>=======================
+;<Frankensteiner>=======================
 [Statedef 1300]
 type = S
 movetype = A
@@ -3969,7 +3969,7 @@ type = SelfState
 trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
-;========================<EX Frankensteiner>=======================
+;<EX Frankensteiner>=======================
 [Statedef 1330]
 type = S
 movetype = A
@@ -4251,7 +4251,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;========================<Mount Tackle>=======================
+;<Mount Tackle>=======================
 [Statedef 1400]
 type = S
 movetype = A
@@ -4803,7 +4803,7 @@ type = SelfState
 trigger1 = !AnimTime
 value = 5110
 
-;========================<EX Mount Tackle>=======================
+;<EX Mount Tackle>=======================
 [Statedef 1430]
 type = S
 movetype = A
@@ -7050,7 +7050,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;========================<Shining Wizard>=======================
+;<Shining Wizard>=======================
 [Statedef 1500]
 type = S
 movetype = A
@@ -7422,7 +7422,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX Shining Wizard>=======================
+;<EX Shining Wizard>=======================
 [Statedef 1530]
 type = S
 movetype = A
@@ -7920,7 +7920,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;========================<Flashing Elbow>=======================
+;<Flashing Elbow>=======================
 [Statedef 1600]
 type = S
 movetype = A
@@ -8163,7 +8163,7 @@ type = SelfState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 5100
 
-;========================<EX Flashing Elbow>=======================
+;<EX Flashing Elbow>=======================
 [Statedef 1630]
 type = S
 movetype = A

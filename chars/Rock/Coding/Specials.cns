@@ -1,4 +1,4 @@
-;=====================<REPPUKEN>==========================
+;<REPPUKEN>==========================
 [StateDef 1000]
 type = S
 physics = S
@@ -235,7 +235,7 @@ trigger1 = !AnimTime
 value = 300
 ctrl = 1
 
-;=======================<EX REPPUKEN>=======================
+;<EX REPPUKEN>=======================
 [StateDef 1030]
 type = S
 physics = S
@@ -365,7 +365,7 @@ trigger1 = !AnimTime
 value = 300
 ctrl = 1
 
-;========================<HARD EDGE>=======================
+;<HARD EDGE>=======================
 [Statedef 1100]
 type = S
 movetype = A
@@ -1554,7 +1554,7 @@ trigger1 = !AnimTime
 value = 301
 ctrl = 1 
 
-;=========================<EX HARD EDGE>========================
+;<EX HARD EDGE>========================
 [Statedef 1130]
 type = S
 physics = N
@@ -2067,7 +2067,7 @@ trigger1 = !Animtime
 value = 301
 ctrl = 1
 
-;======================<P2 Wall Bounce>===========================
+;<P2 Wall Bounce>===========================
 ;Being Launched
 [StateDef 1190]
 type = A
@@ -2231,7 +2231,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;========================<CRACK COUNTER>=======================
+;<CRACK COUNTER>=======================
 [Statedef 1200]
 type = S
 movetype = I
@@ -2794,7 +2794,7 @@ trigger1 = AnimElemTime(3) > 0
 trigger1 = pos y > -vel y
 value = 1205
 
-;========================<EX CRACK COUNTER>=======================
+;<EX CRACK COUNTER>=======================
 [Statedef 1230]
 type = S
 movetype = I
@@ -3201,7 +3201,7 @@ value = 5110
 ;trigger1 = pos y>-vel y
 ;value = 5100
 
-;========================<RAGE RUN>=======================
+;<RAGE RUN>=======================
 [Statedef 1300]
 type = S
 movetype = I
@@ -3571,7 +3571,7 @@ trigger1 = !AnimTime
 value = 301
 ctrl = 1
 
-;========================<EX RAGE RUN>=======================
+;<EX RAGE RUN>=======================
 [Statedef 1330]
 type = S
 movetype = I
@@ -3814,7 +3814,7 @@ trigger1 = AnimElemTime(6) > 0
 trigger1 = pos y > -vel y
 value = 1305
 
-;===============Hit by EX Rage Run(Fall)============
+;Hit by EX Rage Run(Fall)============
 [Statedef 1390]
 type = A
 movetype = H
@@ -3907,7 +3907,7 @@ type = SelfState
 trigger1 = (pos y-16)>-vel y
 value = 5100
 
-;=======================<RISING TACKLE>=======================
+;<RISING TACKLE>=======================
 [Statedef 1400]
 type = S
 movetype = A
@@ -4500,7 +4500,7 @@ trigger1 = AnimElemTime(14) > 0
 trigger1 = pos y > -vel y
 value = 1405
 
-;=======================<EX RISING TACKLE>=======================
+;<EX RISING TACKLE>=======================
 [StateDef 1430]
 type = S
 physics = N
@@ -4714,7 +4714,7 @@ trigger1 = AnimElemTime(14) > 0
 trigger1 = pos y > -vel y
 value = 1405
 
-;==================<SHINKU NAGE>==================
+;<SHINKU NAGE>==================
 [Statedef 1500]
 type = S
 movetype= A
@@ -5117,7 +5117,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==================<EX SHINKU NAGE>==================
+;<EX SHINKU NAGE>==================
 [Statedef 1530]
 type = S
 movetype= A

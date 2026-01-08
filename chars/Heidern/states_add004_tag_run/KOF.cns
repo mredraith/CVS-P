@@ -1,8 +1,8 @@
-;============================================================================
+;
 ;From now on, it's all about KOF features.
-;============================================================================
+;
 ;Guard Crushed
-;============================================================================
+;
 [Statedef 5350]
 type = S
 movetype = H
@@ -33,12 +33,12 @@ type = ChangeState
 trigger1 = animtime = 0
 value = 0
 ctrl = 1
-;============================================================================
+;
 ; Cheap KO
 ; This is the "collapse into their knees" anim that KOF has since 2003, as well
 ; as SVC characters. You'll probably need to edit this.
 ; CNS Difficult: Easy
-;============================================================================
+;
 [Statedef 5950]
 physics = S
 movetype = H
@@ -80,10 +80,10 @@ x = 20
 type = ChangeState
 trigger1 = AnimElem = 10
 value = 5150
-;===============================================================================
+;
 ;Thanks to Warusaki's original roll code, which these rolls were adapted from.
 ;Roll 1
-;===============================================================================
+;
 [Statedef 700]
 type = S
 movetype= i
@@ -230,10 +230,10 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;===============================================================================
+;
 ;Thanks to Warusaki's original roll code, which these rolls were adapted from.
 ;Roll 1
-;===============================================================================
+;
 [Statedef 720]
 type = S
 Physics = S

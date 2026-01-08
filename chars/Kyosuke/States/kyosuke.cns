@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (7/9/2016)
-;==============================================
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==============================================
+;
 
 ; jump cancel
 [Statedef 710]
@@ -49,7 +49,7 @@ type = VarSet
 trigger1 = command = "holdback" && !AILevel
 sysvar(1) = -1
 
-;==AI(CPU)
+;AI(CPU)
 [State 40, 2]
 type = VarSet
 trigger1 = AILevel
@@ -99,7 +99,7 @@ trigger1 = !AnimTime
 value = 50
 ctrl = 1;ifelse(!AILevel, 1, 0)
 
-;======================<RUN>===========================
+;<RUN>===========================
 [StateDef 100]
 type = S
 physics = N
@@ -257,7 +257,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<INITIALIZE>====================
+;<INITIALIZE>====================
 [StateDef 5900]
 type = S
 
@@ -2304,7 +2304,7 @@ value = 0
 ctrl = 1
 
 
-;====================< ROLL >====================
+;< ROLL >====================
 ;--- Forward ---
 [Statedef 4000]
 type = S
@@ -2406,7 +2406,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;==========< POWER CHARGE >==========
+;< POWER CHARGE >==========
 [Statedef 4100]
 type = S
 physics = S
@@ -3244,9 +3244,9 @@ trigger1= (movetype = A || numproj) && var(5) = 1
 value= 1.05
 ignorehitpause= 1
 
-;===============================================================================
+;
 ; ------- CvS2 Cornerpush System by Vans & Jesuszilla --------
-;===============================================================================
+;
 ;[State -2, Kill Cornerpush]
 ;type = VarSet
 ;trigger1 = StateNo = 3110 && AnimElem = 5

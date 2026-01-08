@@ -1,4 +1,4 @@
-;=====================<TIGER SHOT>==========================
+;<TIGER SHOT>==========================
 [StateDef 1000]
 type = S
 physics = S
@@ -76,7 +76,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX TIGER SHOT>==========================
+;<EX TIGER SHOT>==========================
 [StateDef 1030]
 type = S
 physics = S
@@ -173,7 +173,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<LOW TIGER SHOT>==========================
+;<LOW TIGER SHOT>==========================
 [StateDef 1100]
 type = S
 physics = S
@@ -251,7 +251,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX LOW TIGER SHOT>==========================
+;<EX LOW TIGER SHOT>==========================
 [StateDef 1130]
 type = S
 physics = S
@@ -348,7 +348,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<TIGER UPPERCUT>=======================
+;<TIGER UPPERCUT>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -1288,7 +1288,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1201
 
-;=======================<EX TIGER UPPERCUT>=======================
+;<EX TIGER UPPERCUT>=======================
 [Statedef 1230]
 type = S
 movetype = A
@@ -1540,7 +1540,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1201
 
-;=================<TIGER KNEE(CRUSH?)>===============
+;<TIGER KNEE(CRUSH?)>===============
 [Statedef 1300]
 type = S
 movetype = A
@@ -2236,7 +2236,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1301
 
-;=================<EX TIGER KNEE(CRUSH?)>===============
+;<EX TIGER KNEE(CRUSH?)>===============
 [Statedef 1330]
 type = S
 movetype = A
@@ -2505,7 +2505,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1301
 
-;======================<HIT BY EX Tiger Knee>===========================
+;<HIT BY EX Tiger Knee>===========================
 ;Being Launched
 [StateDef 1390]
 type = A

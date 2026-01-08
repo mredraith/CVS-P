@@ -1,10 +1,10 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;=======================================< HELPER STATES >========================================
-;==============================================================================================
-;=====================<MAX MODE BAR HELPER>============================
+;
+;< HELPER STATES >========================================
+;
+;<MAX MODE BAR HELPER>============================
 [Statedef 780]
 type = S
 movetype = I
@@ -95,7 +95,7 @@ type = DestroySelf
 trigger1 = root, Var(53) <= 0
 ignorehitpause = 1
 
-;========================<SPARKS>=============================
+;<SPARKS>=============================
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -1370,7 +1370,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================< EXCEL COMBO CHARGE >=============================
+;< EXCEL COMBO CHARGE >=============================
 [Statedef 8400]
 type = A
 velset = 0, 0
@@ -1473,7 +1473,7 @@ type = destroyself
 trigger1 = time >= 30
 
 
-;========================< EXCEL TIMER >=============================
+;< EXCEL TIMER >=============================
 [Statedef 8405]
 physics = N
 velset = 0, 0
@@ -1540,7 +1540,7 @@ type = destroyself
 trigger1 = (root, var(20) <= 0)
 
 
-;========================< SUPERPAUSE FX >=============================
+;< SUPERPAUSE FX >=============================
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A
@@ -2079,7 +2079,7 @@ type = destroyself
 trigger1 = time >= 40
 
 
-;========================< SUPER FINISH >=============================
+;< SUPER FINISH >=============================
 [Statedef 8600]
 type = A
 velset = 0, 0
@@ -2366,7 +2366,7 @@ type = DestroySelf
 trigger1 = Time >= 46
 trigger2 = root,movetype =h
 
-;========================< CAMERA CONTROL >=============================
+;< CAMERA CONTROL >=============================
 [Statedef 8999]
 type = S
 velset = 0, 0
@@ -2443,7 +2443,7 @@ trigger1 = Time = 50
 trigger1 = enemy, Life >= 1
 trigger2=numhelper(6001)>=2
 
-;===<DIALOGUE>===
+;<DIALOGUE>===
 [Statedef 9200]
 physics = N
 anim = 9741

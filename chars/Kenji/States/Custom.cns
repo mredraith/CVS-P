@@ -1,30 +1,30 @@
-;=================<         CUSTOM STATES         >======================
+;<         CUSTOM STATES         >======================
 
-;=================< Palette Selector ON/OFF >============================
+;< Palette Selector ON/OFF >============================
 
 ;Scroll Down for ON or OFF / OFF by default
 
-;=================< Ground Bounce >======================================
+;< Ground Bounce >======================================
 
-;p2stateno = 242  ;===Ground bounce state
+;p2stateno = 242  ;Ground bounce state
 
-;=================< Wall Bounce >========================================
+;< Wall Bounce >========================================
 
-;p2stateno = 1125 ;===wall bounce state
+;p2stateno = 1125 ;wall bounce state
 
-;=================<Deactivating Wall or Ground Bounce>===================
+;<Deactivating Wall or Ground Bounce>===================
 
 ;To activate Wall or Ground Bounce
 ;Add this line, p2stateno = whatever state you want, 242 or 11225,
 ;in the HitDef of the attack 
 
-;==================< INITIALIZE >========================================
+;< INITIALIZE >========================================
 
 ;Initialize Start Round
 [Statedef 5900]
 type = S
 
-;==========================================================================
+;
 
 [state 5900, Reset Variables]
 type = null;varrangeset
@@ -61,7 +61,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;==========================================================================
+;
 
 ; Palette Selector
 [State 5900, Palette Selector]
@@ -117,7 +117,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;========================<Ground Bounce>=================================
+;<Ground Bounce>=================================
 
 [Statedef 242]
 type = A
@@ -183,7 +183,7 @@ trigger1 = time >= 15
 trigger1 = pos y >= 0
 value = 5110
 
-;========================<HIT WALL>======================================
+;<HIT WALL>======================================
 ;---Hit Pause---
 [Statedef 1125]
 type=A

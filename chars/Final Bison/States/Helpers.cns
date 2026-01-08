@@ -1,4 +1,4 @@
-;====================<PARRY HELPER>=========================
+;<PARRY HELPER>=========================
 [StateDef 765]
 type = A
 physics = N
@@ -105,7 +105,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;========================<CAPE>=============================
+;<CAPE>=============================
 [Statedef 10190]
 physics = N
 anim = 10190
@@ -127,7 +127,7 @@ alpha = ceil(256 - 13 * Time), 13 * Time
 type = DestroySelf
 trigger1 = Time >= 20
 
-;========================<INTRO AURA>=============================
+;<INTRO AURA>=============================
 [Statedef 10191]
 physics = N
 anim = 10193
@@ -378,7 +378,7 @@ type = DestroySelf
 trigger1 = Parent, StateNo != 310
 trigger2 = Parent, StateNo = 310 && Parent, AnimElemTime(11) >= 0
 
-;========================<PSYCHO CRUSHER>=============================
+;<PSYCHO CRUSHER>=============================
 [Statedef 1005]
 physics = N
 anim = 1005
@@ -406,7 +406,7 @@ type = DestroySelf
 trigger1 = (Root, StateNo != 1000) || (Root, Anim != 1000)
 trigger2 = (Root, StateNo = 1000) && Root, AnimElemTime(6) < 0
 
-;========================<PSYCHO CRUSHER>=============================
+;<PSYCHO CRUSHER>=============================
 [Statedef 1055]
 physics = N
 anim = 1015
@@ -434,7 +434,7 @@ type = DestroySelf
 trigger1 = (Root, StateNo != 1050) || (Root, Anim != 1000)
 trigger2 = (Root, StateNo = 1050) && Root, AnimElemTime(6) < 0
 
-;====================<PROJECTILE HITTER>=========================
+;<PROJECTILE HITTER>=========================
 [Statedef 1007]
 type = A
 movetype = I
@@ -495,7 +495,7 @@ trigger3 = Root, StateNo = 3000 && (Root, Anim != 3000 || AnimElemTime(6) < 0)
 trigger4 = Root, StateNo = 3050 && (Root, Anim != 3050 || AnimElemTime(13) < 0)
 trigger5 = Root, StateNo = 3501 && Root, Anim != 3501
 
-;========================<EX DEVIL REVERSE>=============================
+;<EX DEVIL REVERSE>=============================
 [Statedef 1355]
 physics = N
 anim = 1005
@@ -539,7 +539,7 @@ flag = NoShadow
 type = DestroySelf
 trigger1 = (Root, StateNo != 1351) || (Root, Anim != 1351)
 
-;====================<PROJECTILE BANISHER>=========================
+;<PROJECTILE BANISHER>=========================
 [Statedef 1407]
 type = A
 physics = N
@@ -587,7 +587,7 @@ trigger3 = Root, Anim = 1400 && Root, AnimElemTime(10) >= 0
 trigger4 = Root, Anim = 1401 && Root, AnimElemTime(11) >= 0
 trigger5 = Root, Anim = 1402 && Root, AnimElemTime(12) >= 0
 
-;====================<PROJECTILE BANISHER>=========================
+;<PROJECTILE BANISHER>=========================
 [Statedef 1408]
 type = A
 physics = N
@@ -633,7 +633,7 @@ trigger1 = Root, StateNo != 1450 || (Root, Anim != 1402)
 trigger2 = Root, AnimElemTime(7) < 0 || Root, MoveType = H
 trigger3 = Root, Anim = 1402 && Root, AnimElemTime(12) >= 0
 
-;========================<WARP FX>=============================
+;<WARP FX>=============================
 ;Fade Out
 [Statedef 1505]
 physics = N
@@ -752,7 +752,7 @@ alpha = Ceil(256 - 25 * Time), 25 * Time
 type = DestroySelf
 trigger1 = Time >= 10 || Root, MoveType = H
 
-;========================<PSYCHO FIELD>=============================
+;<PSYCHO FIELD>=============================
 ;Create
 [StateDef 1605]
 type = A
@@ -1166,7 +1166,7 @@ trigger1 = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;========================<PSYCHO FIELD>=============================
+;<PSYCHO FIELD>=============================
 ;Create
 [StateDef 1655]
 type = A
@@ -2150,7 +2150,7 @@ trigger1 = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;========================<PSYCHO SHOT>=============================
+;<PSYCHO SHOT>=============================
 ;Create
 [StateDef 1804]
 type = A
@@ -2197,7 +2197,7 @@ trigger1 = Root, StateNo = 1800 && Root, AnimElem = 6
 trigger2 = Root, StateNo != 1800
 trigger3 = Root, MoveType = H
 
-;========================<PSYCHO SHOT>=============================
+;<PSYCHO SHOT>=============================
 [StateDef 1805]
 type = S
 physics = N
@@ -2481,7 +2481,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;========================<PSYCHO CRUSHER>=============================
+;<PSYCHO CRUSHER>=============================
 [Statedef 1905]
 type = S
 movetype = A
@@ -2607,7 +2607,7 @@ type = ChangeState
 trigger1 = !Time
 value = 1905
 
-;========================<PSYCHO SHART>=============================
+;<PSYCHO SHART>=============================
 [StateDef 1910]
 type = S
 physics = N
@@ -2863,7 +2863,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1808
 
-;========================< REFLECTED HELPER >=============================
+;< REFLECTED HELPER >=============================
 [Statedef 1913]
 type = S
 movetype = A
@@ -2893,7 +2893,7 @@ type = DestroySelf
 trigger1 = 1
 ignorehitpause = 1
 
-;========================<PSYCHO CRUSHER>=============================
+;<PSYCHO CRUSHER>=============================
 [Statedef 1955]
 type = S
 movetype = A
@@ -2962,7 +2962,7 @@ trigger1 = Root, StateNo != 1950 || Root, MoveType = H || !AnimTime
 value = 1907
 ignorehitpause = 1
 
-;========================<PSYCHO BREAK SMASHER>=============================
+;<PSYCHO BREAK SMASHER>=============================
 [Statedef 3005]
 physics = N
 anim = 3005
@@ -2996,7 +2996,7 @@ value = 3007
 type = DestroySelf
 trigger1 = Anim = 3007 && !Animtime
 
-;====================<HEARTBREAK DESPAIR>=========================
+;<HEARTBREAK DESPAIR>=========================
 [Statedef 3205]
 physics = N
 anim = 3205
@@ -3088,7 +3088,7 @@ trigger2 = Root, StateNo = 3201 && Time >= 2
 trigger3 = !Root, Alive
 trigger4 = Root, MoveType = H
 
-;========================<PSYCHO PUNISHER>=============================
+;<PSYCHO PUNISHER>=============================
 ;Charge - First Phase
 [Statedef 3350]
 physics = N
@@ -3384,7 +3384,7 @@ type = DestroySelf
 trigger1 = Time >= 18
 trigger2 = (Root, StateNo != 3315) || (Root, Anim != 3315)
 
-;========================<PSYCHO CANNON STARTUP>=============================
+;<PSYCHO CANNON STARTUP>=============================
 ;Create
 [StateDef 3404]
 type = A
@@ -3417,7 +3417,7 @@ trigger1 = Root, StateNo = 3410
 trigger2 = Root, StateNo != [3400,3402]
 trigger3 = Root, MoveType = H
 
-;=====================<PSYCHO CANNON PROJECTILE>=========================
+;<PSYCHO CANNON PROJECTILE>=========================
 [StateDef 3405]
 type = S
 physics = N
@@ -3703,7 +3703,7 @@ type = DestroySelf
 trigger1 = Pos X != [-200,200]
 trigger2 = pos y > -vel y
 
-;========================<PSYCHO SHOT>=============================
+;<PSYCHO SHOT>=============================
 ;Create
 [StateDef 3406]
 type = A
@@ -3807,7 +3807,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1808
 
-;========================<PSYCHO CANNON PROJECTILE>=============================
+;<PSYCHO CANNON PROJECTILE>=============================
 [StateDef 3455]
 type = S
 physics = N
@@ -4203,7 +4203,7 @@ type = DestroySelf
 trigger1 = Root, MoveType = H
 trigger2 = Time >= 34
 
-;========================<PSYCHO CANNON CLONE>=============================
+;<PSYCHO CANNON CLONE>=============================
 ;Clone - Appear
 [Statedef 3470]
 physics = N
@@ -4362,7 +4362,7 @@ trigger2 = Root, MoveType = H
 trigger3 = !Root, StateNo = [3460,3461]
 trigger4 = !Alive
 
-;========================<SUPER PSYCHO BREAK SMASHER>=============================
+;<SUPER PSYCHO BREAK SMASHER>=============================
 [Statedef 3506]
 physics = N
 anim = 3506
@@ -4395,7 +4395,7 @@ alpha = 256 -(16 * time), 256
 type = DestroySelf
 trigger1 = Time >= 16
 
-;======================<KNEE PRESS NIGHTMARE>===================
+;<KNEE PRESS NIGHTMARE>===================
 [Statedef 3605]
 type = S
 movetype = A
@@ -4727,7 +4727,7 @@ trigger1 = Pos X != [-200,200]
 trigger2 = Root, MoveType = H
 trigger3 = !AnimTime
 
-;======================<KNEE PRESS NIGHTMARE>===================
+;<KNEE PRESS NIGHTMARE>===================
 [Statedef 3606]
 type = A
 movetype = A
@@ -5089,7 +5089,7 @@ trigger1 = Pos X != [-200,200]
 trigger2 = Root, MoveType = H
 trigger3 = !AnimTime
 
-;=====================<PSYCHO EXPLOSION PROJECTILE>=========================
+;<PSYCHO EXPLOSION PROJECTILE>=========================
 [StateDef 3705]
 type = S
 physics = N
@@ -5360,7 +5360,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;========================<PSYCHO EXPLOSION>=============================
+;<PSYCHO EXPLOSION>=============================
 [Statedef 3710]
 type = S
 physics = N
@@ -5660,7 +5660,7 @@ ignorehitpause = 1
 type = DestroySelf
 trigger1 = !Animtime
 
-;========================<SPARKS>=============================
+;<SPARKS>=============================
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -6421,7 +6421,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;======================<JUMP DUST>===========================
+;<JUMP DUST>===========================
 [StateDef 8100]
 type = S
 anim = 1
@@ -6458,7 +6458,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;======================<DASH DUST>===========================
+;<DASH DUST>===========================
 [StateDef 8103]
 type = A
 anim = 1
@@ -6518,7 +6518,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<IMPACT DUST>===========================
+;<IMPACT DUST>===========================
 [StateDef 8110]
 type = A
 anim = 1
@@ -6562,7 +6562,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<WALL IMPACT DUST>===========================
+;<WALL IMPACT DUST>===========================
 [StateDef 8111]
 type = A
 anim = 1
@@ -6606,7 +6606,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;========================<FLAMES>=============================
+;<FLAMES>=============================
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -6675,7 +6675,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;========================<FLAMES>=============================
+;<FLAMES>=============================
 [StateDef 8151]
 type = A
 velSet = 0,0
@@ -6744,7 +6744,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;========================< SHOCK >=============================
+;< SHOCK >=============================
 [Statedef 8155]
 type = A
 velset = 0, 0
@@ -6798,7 +6798,7 @@ trigger1 = PlayerID(var(0)), Ctrl
 trigger2 = PlayerID(var(0)), MoveType != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080, 5081])
 
-;========================<RECOVER FX>=============================
+;<RECOVER FX>=============================
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -6825,7 +6825,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;========================<COUNTER FX>=============================
+;<COUNTER FX>=============================
 [StateDef 8290]
 type = A
 physics = N
@@ -6869,7 +6869,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<MAX MODE TEXT FX>=============================
+;<MAX MODE TEXT FX>=============================
 [StateDef 8291]
 type = A
 physics = N
@@ -6913,7 +6913,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;==================<POWER CHARGE FX>==================
+;<POWER CHARGE FX>==================
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -7020,7 +7020,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;==================<ZERO COUNTER FX>==================
+;<ZERO COUNTER FX>==================
 [StateDef 8350]
 type = A
 physics = N
@@ -7070,7 +7070,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<CUSTOM COMBO>=============================
+;<CUSTOM COMBO>=============================
 [StateDef 8400]
 type = A
 physics = N
@@ -7174,7 +7174,7 @@ trigger1 = Time >= 26
 type = DestroySelf
 trigger1 = Time >= 26
 
-;========================<SUPER PAUSE FX>=============================
+;<SUPER PAUSE FX>=============================
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -7604,7 +7604,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;========================<SUPER FINISH>=============================
+;<SUPER FINISH>=============================
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -7776,7 +7776,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;========================<CAMERA CONTROL>=============================
+;<CAMERA CONTROL>=============================
 [StateDef 8999]
 type = S
 velSet = 0,0

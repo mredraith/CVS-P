@@ -1,4 +1,4 @@
-;======================<HYPER S.T.A.R.S CHARGE>===================
+;<HYPER S.T.A.R.S CHARGE>===================
 [Statedef 3000]
 type = S
 movetype= A
@@ -311,7 +311,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<AIR HYPER S.T.A.R.S CHARGE>===================
+;<AIR HYPER S.T.A.R.S CHARGE>===================
 [Statedef 3010]
 type = A
 movetype= A
@@ -600,7 +600,7 @@ trigger1 = AnimElemTime(11) >= 0
 trigger1 = pos y > -vel y
 value = 52
 
-;======================<HYPER S.T.A.R.S CHARGE MAX>===================
+;<HYPER S.T.A.R.S CHARGE MAX>===================
 [Statedef 3050]
 type = S
 movetype= A
@@ -913,7 +913,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<AIR HYPER S.T.A.R.S CHARGE MAX>===================
+;<AIR HYPER S.T.A.R.S CHARGE MAX>===================
 [Statedef 3060]
 type = A
 movetype= A
@@ -1202,7 +1202,7 @@ trigger1 = AnimElemTime(13) >= 0
 trigger1 = pos y > -vel y
 value = 52
 
-;===========================<ARSENAL>=============================
+;<ARSENAL>=============================
 [Statedef 3100]
 type = S
 movetype= A
@@ -1451,7 +1451,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<ROCKET LAUNCHER>===================
+;<ROCKET LAUNCHER>===================
 [Statedef 3200]
 type = S
 movetype = A

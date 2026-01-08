@@ -1,4 +1,4 @@
-;========================<Shermie Clutch>=======================
+;<Shermie Clutch>=======================
 [Statedef 1000]
 type = S
 movetype = A
@@ -1200,7 +1200,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;========================<EX Shermie Clutch>=======================
+;<EX Shermie Clutch>=======================
 [Statedef 1030]
 type = S
 movetype = A
@@ -1560,7 +1560,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;========================<Shermie Spiral>=======================
+;<Shermie Spiral>=======================
 [Statedef 1100]
 type = S
 movetype = A
@@ -1914,7 +1914,7 @@ triggerall = AnimElemTime(12) > 0
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;========================<EX Shermie Spiral>=======================
+;<EX Shermie Spiral>=======================
 [Statedef 1130]
 type = S
 movetype = A
@@ -2299,7 +2299,7 @@ triggerall = AnimElemTime(12) > 0
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;========================<Shermie Whip>=======================
+;<Shermie Whip>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -3066,7 +3066,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;========================<EX Shermie Whip>=======================
+;<EX Shermie Whip>=======================
 [Statedef 1230]
 type = S
 movetype = A
@@ -3636,7 +3636,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;========================<Diamond Dust>=======================
+;<Diamond Dust>=======================
 [Statedef 1300]
 type = S
 movetype = A
@@ -4178,7 +4178,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;========================<EX Diamond Dust (Shermie Shoot)>=======================
+;<EX Diamond Dust (Shermie Shoot)>=======================
 [Statedef 1330]
 type = S
 movetype = A
@@ -4633,7 +4633,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;========================<Axle Spin Kick>=======================
+;<Axle Spin Kick>=======================
 [Statedef 1400]
 type = S
 movetype = A
@@ -4998,7 +4998,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX Axle Spin Kick>=======================
+;<EX Axle Spin Kick>=======================
 [Statedef 1430]
 type = S
 movetype = A
@@ -5246,7 +5246,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<F. CAPTURED>=======================
+;<F. CAPTURED>=======================
 [Statedef 1500]
 type = S
 movetype = I
@@ -5680,7 +5680,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;========================<EX F. CAPTURED>=======================
+;<EX F. CAPTURED>=======================
 [Statedef 1530]
 type = S
 movetype = I
@@ -5980,7 +5980,7 @@ trigger1=!AnimTime
 value=0
 ctrl=1
 
-;========================<Shermie Catch>=======================
+;<Shermie Catch>=======================
 [Statedef 1600]
 type = S
 movetype = A
@@ -6782,7 +6782,7 @@ triggerall = AnimElemTime(5) > 0
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;========================<EX Shermie Catch>=======================
+;<EX Shermie Catch>=======================
 [Statedef 1630]
 type = S
 movetype = A
@@ -7041,7 +7041,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<Aerial Spin Kick>=======================
+;<Aerial Spin Kick>=======================
 [Statedef 1700]
 type = A
 movetype = A
@@ -7467,7 +7467,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<CUSTOM STATES>=============================
+;<CUSTOM STATES>=============================
 ;Being Slammed
 [StateDef 1755]
 type = A
@@ -7557,7 +7557,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;========================<EX Aerial Spin Kick>=======================
+;<EX Aerial Spin Kick>=======================
 [Statedef 1730]
 type = A
 movetype = A
@@ -7701,7 +7701,7 @@ type = ChangeState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1701
 
-;======================<HIT BY EX AERIAL SPIN KICK>===========================
+;<HIT BY EX AERIAL SPIN KICK>===========================
 ;Being Launched
 [Statedef 1732]
 type = A
@@ -7929,7 +7929,7 @@ value = 5100
 ;value = 0
 ;ctrl = 1
 
-;========================<CUSTOM STATES>=============================
+;<CUSTOM STATES>=============================
 ;Being Slammed
 ;[StateDef 1765]
 ;type = A
@@ -8043,7 +8043,7 @@ value = 5100
 ;trigger1 = pos y >= 12
 ;value = 5110
 
-;========================<Shermie Cute>=======================
+;<Shermie Cute>=======================
 [Statedef 1800]
 type = S
 movetype = A
@@ -8297,7 +8297,7 @@ type = SelfState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 5100
 
-;========================<EX Shermie Cute>=======================
+;<EX Shermie Cute>=======================
 [Statedef 1830]
 type = S
 movetype = A

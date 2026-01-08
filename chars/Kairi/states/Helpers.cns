@@ -3,11 +3,11 @@
 ;CODES - Mr.KARATE
 ;SPRITES - GUSTAVO C. MORAES
 
-;==============================================================================================
-;=======================================<HELPERS STATES>=======================================
-;==============================================================================================
+;
+;<HELPERS STATES>=======================================
+;
 
-;====================<PARRY HELPER>=========================
+;<PARRY HELPER>=========================
 [StateDef 765]
 type = A
 physics = N
@@ -4199,7 +4199,7 @@ trigger1 = time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<RECOVER FX>=============================
+;<RECOVER FX>=============================
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -4226,7 +4226,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;========================<COUNTER FX>=============================
+;<COUNTER FX>=============================
 [StateDef 8290]
 type = A
 physics = N
@@ -4372,7 +4372,7 @@ trigger1 = Root, StateNo != 340
 type = DestroySelf
 trigger1 = Root, StateNo != 340
 
-;========================< SUPERPAUSE FX >=============================
+;< SUPERPAUSE FX >=============================
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A
@@ -5265,7 +5265,7 @@ supermovetime=300
 type=destroyself
 trigger1= time >= 20
 
-;========================<HYPER BACKGROUND>=============================
+;<HYPER BACKGROUND>=============================
 [Statedef 40001]
 anim = 9992
 

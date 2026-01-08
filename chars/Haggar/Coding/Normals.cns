@@ -2097,7 +2097,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==============<SLAMMED BY ???>================
+;<SLAMMED BY ???>================
 ;Being Slammed
 [StateDef 17500]
 type = A
@@ -2486,7 +2486,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;=================================================================================
+;
 ;Throw Attempt
 [Statedef 800]
 type = S
@@ -3164,7 +3164,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5110 ;Hit ground
 
-;===========<THROW ESCAPED>==========
+;<THROW ESCAPED>==========
 [StateDef 890, Throw Escape]
 type = S
 physics = N

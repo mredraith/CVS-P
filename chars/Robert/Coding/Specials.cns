@@ -1,4 +1,4 @@
-;=====================<Ryuugeki Ken>==========================
+;<Ryuugeki Ken>==========================
 [StateDef 1000]
 type = S
 physics = S
@@ -99,7 +99,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX Ryuugeki Ken>==========================
+;<EX Ryuugeki Ken>==========================
 [StateDef 1030]
 type = S
 physics = S
@@ -218,7 +218,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<Ryuuga>=======================
+;<Ryuuga>=======================
 [Statedef 1100]
 type = S
 movetype = A
@@ -865,7 +865,7 @@ trigger1 = AnimElemTime(5)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0;pos y > -vel y
 value = 1105
 
-;========================<EX Ryuuga>=======================
+;<EX Ryuuga>=======================
 [Statedef 1130]
 type = S
 movetype = A
@@ -1113,7 +1113,7 @@ trigger1 = AnimElemTime(4)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0;pos y > -vel y
 value = 1105
 
-;=====================<Hien Ryuujin Kyaku>==========================
+;<Hien Ryuujin Kyaku>==========================
 [StateDef 1200]
 type = A
 physics = N
@@ -1316,7 +1316,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX Hien Ryuujin Kyaku>==========================
+;<EX Hien Ryuujin Kyaku>==========================
 [StateDef 1230]
 type = A
 physics = N
@@ -1491,7 +1491,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<Gen'ei Kyaku>=======================
+;<Gen'ei Kyaku>=======================
 [Statedef 1300]
 type = S
 movetype = A
@@ -1987,7 +1987,7 @@ type = SelfState
 Trigger1 = !AnimTime
 value = 5050
 
-;========================<EX Gen'ei Kyaku>=======================
+;<EX Gen'ei Kyaku>=======================
 [Statedef 1330]
 type = S
 movetype = A
@@ -2511,7 +2511,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<Kyokugen Renbu Kyaku>==========================
+;<Kyokugen Renbu Kyaku>==========================
 [StateDef 1400]
 type = S
 physics = S
@@ -2869,7 +2869,7 @@ trigger1 = AnimTime=0
 value = 0
 ctrl = 1
 
-;=====================<EX Kyokugen Renbu Kyaku>==========================
+;<EX Kyokugen Renbu Kyaku>==========================
 [StateDef 1430]
 type = S
 physics = S
@@ -3391,7 +3391,7 @@ type = SelfState
 trigger1 = animtime = 0
 value = Ifelse(alive,5120,5150)
 
-;========================<Hien Senpuu Kyaku>=======================
+;<Hien Senpuu Kyaku>=======================
 [Statedef 1500]
 type = S
 movetype = A
@@ -3931,7 +3931,7 @@ trigger1 = AnimElemTime(3)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0;pos y > -vel y
 value = 1505
 
-;========================<EX Hien Senpuu Kyaku>=======================
+;<EX Hien Senpuu Kyaku>=======================
 [Statedef 1530]
 type = S
 movetype = A

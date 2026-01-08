@@ -1,4 +1,4 @@
-;====================<VARIABLE LIST>====================
+;<VARIABLE LIST>====================
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -45,7 +45,7 @@
 ; _________________________________________
 ;| Iori Yagami by Knuckles8864             |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====================<CONSTANTS>====================
+;<CONSTANTS>====================
 [Data]
 life = 1000
 power = 3000
@@ -111,7 +111,7 @@ down.bounce.groundLevel = 12
 down.friction.threshold = 0.5
 
 [Quotes]
-;====================<IORI WINQUOTES>====================
+;<IORI WINQUOTES>====================
 victory0 = "A rose blooms best near death. You're in full bloom, pal!"
 victory1 = "Well, you had to die sometime. Now is as good a time as any!"
 victory2 = "This is your last fight. A memorable final performance!"
@@ -281,7 +281,7 @@ victory81 = "Back off, girl nerd. Do you really want to die for your research? D
 victory82 = "I see you again and I'll bust you up good, chick or not!"
 
 
-;====================<OROCHI IORI WINQUOTES>====================
+;<OROCHI IORI WINQUOTES>====================
 victory83 = "Ugh...... Ugh...... Ugh...... ...... Ugh...... Ugh...... Ugh..."
 victory84 = "I... I'll... slash... you... apart..."
 victory85 = "Gaaaaahhhhhhhhhhhhhhh!!!"

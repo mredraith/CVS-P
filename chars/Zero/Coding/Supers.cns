@@ -1,4 +1,4 @@
-;====================<BUSTER SHOT COMBO>===================
+;<BUSTER SHOT COMBO>===================
 [Statedef 3000]
 type = S
 movetype= A
@@ -266,7 +266,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====================<BUSTER SHOT COMBO lV2>===================
+;<BUSTER SHOT COMBO lV2>===================
 [Statedef 3002]
 type = S
 movetype= A
@@ -627,7 +627,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====================<GENMU ZERO>===================
+;<GENMU ZERO>===================
 ;Stand
 [Statedef 3025]
 type = S
@@ -1095,7 +1095,7 @@ trigger1 = time > 100
 value = 50
 ctrl = 1
 
-;====================<REKKOUHA MVC3>===================
+;<REKKOUHA MVC3>===================
 [Statedef 3100]
 type = S
 movetype= A
@@ -1516,7 +1516,7 @@ trigger1= animtime = 0
 value=0
 ctrl=1
 
-;====================<REKKOUHA TVC>===================
+;<REKKOUHA TVC>===================
 [Statedef 3110]
 type=S
 physics=S
@@ -1823,7 +1823,7 @@ trigger1= animtime = 0
 value=0
 ctrl=1
 
-;====================<DARK HOLD>===================
+;<DARK HOLD>===================
 [Statedef 3200]
 type = S
 movetype = A
@@ -2873,7 +2873,7 @@ trigger1 = AnimTime = 0
 value = 50
 ctrl = 0
 
-;====================<Z SABER COMBO>===================
+;<Z SABER COMBO>===================
 [Statedef 3300]
 type = S
 movetype = A
@@ -3715,7 +3715,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====================<Z SABER COMBO Lv2>===================
+;<Z SABER COMBO Lv2>===================
 [Statedef 3350]
 type = S
 movetype = A
@@ -4611,7 +4611,7 @@ trigger1 = time > 52
 value = 0
 ctrl = 1
 
-;====================<SOUGENMU>===================
+;<SOUGENMU>===================
 [Statedef 300]
 type = S
 movetype = A
@@ -4856,7 +4856,7 @@ ignorehitpause = 1
 flag = NoShadow
 flag2 = Invisible
 
-;============================
+;
 ;----- Record Information -----
 [State 330, Helper]
 type = Helper
@@ -4956,7 +4956,7 @@ postype = P1
 stateno = 340
 keyctrl = 0
 ;------------------------------
-;============================
+;
 
 [State 330, StateTypeSet]
 type = StateTypeSet
@@ -5028,7 +5028,7 @@ trigger1 = 1
 ignorehitpause = 1
 flag = NoJuggleCheck
 
-;============================
+;
 ;----- AfterImage Effect -----
 [State 330, AssertSpecial]
 type = AssertSpecial
@@ -5055,9 +5055,9 @@ trigger1 = 1
 ignorehitpause = 1
 time = 2
 ;------------------------------
-;============================
+;
 
-;============================
+;
 ;----- Record Direction -----
 [State 330, Turn]
 type = Turn
@@ -5140,9 +5140,9 @@ ignorehitpause = 1
 text = "Anim: %d \t AnimElem: %d \t AnimElem Time: %d \nPos X: %d \t Pos Y: %d"
 params = Helper(341), Var(StateTime%60), Helper(342), Var(StateTime%60), Var(2), ceil(Helper(343), Var(StateTime%60)) + ceil(Helper(340), Pos X + 160), ceil(Helper(344), Var(StateTime%60))
 ;------------------------------
-;============================
+;
 
-;============================
+;
 ;---------- StateType ----------
 [State 330, StateTypeSet]
 type = StateTypeSet
@@ -5184,9 +5184,9 @@ type = StateTypeSet
 trigger1 = Anim >= 5000
 MoveType = H
 ;------------------------------
-;============================
+;
 
-;=== Contact/Hit/Guard =====
+; Contact/Hit/Guard =====
 ;----- MoveContact -----
 [State -2, VarSet]
 type = VarSet
@@ -5240,9 +5240,9 @@ ignorehitpause = 1
 v = 22
 value = 1
 ;-----------------------
-;============================
+;
 
-;======== HitDefs ==========
+; HitDefs ==========
 ;-----------------------------
 ;PLACE ALL YOUR CHARACTER'S HITDEF & PROJECTILE CODES HERE.
 ;-----------------------------
@@ -7012,7 +7012,7 @@ type = MoveHitReset
 trigger1 = MoveContact
 ignorehitpause = 1
 ;------------------------------
-;============================
+;
 
 [State 330, Destroy]
 type = DestroySelf

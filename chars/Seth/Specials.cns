@@ -1,4 +1,4 @@
-;========================<SONIC BOOM>=======================
+;<SONIC BOOM>=======================
 [Statedef 1000]
 type = S
 movetype = A
@@ -81,7 +81,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX SONIC BOOM>=============================
+;<EX SONIC BOOM>=============================
 [StateDef 1030]
 type = S
 physics = N
@@ -214,7 +214,7 @@ ctrl = 1
 
 
 
-;======================<HIT BY EX KUNG FU PALM>===========================
+;<HIT BY EX KUNG FU PALM>===========================
 ;Being Launched
 [StateDef 1031]
 type = A
@@ -378,7 +378,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;======================< SHORYUU KEN >=============================
+;< SHORYUU KEN >=============================
 [Statedef 1100]
 type = S
 physics = N
@@ -548,7 +548,7 @@ trigger1 = anim = 1101
 movetype = I
 
 
-;======================<EX SHORYUU KEN >=============================
+;<EX SHORYUU KEN >=============================
 [Statedef 1110]
 type = S
 physics = N
@@ -749,7 +749,7 @@ trigger1 = anim = 1101
 movetype = I
 
 
-;========================<Spin Kicks>=======================
+;<Spin Kicks>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -838,7 +838,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX Spin Kicks>=======================
+;<EX Spin Kicks>=======================
 [Statedef 1230]
 type = S
 movetype = A
@@ -2320,7 +2320,7 @@ trigger1 = Time > 0
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 5100
 
-;======================================================================
+;
 ;Yoga Teleport Far Forward
 
 [Statedef 1500]
@@ -2383,7 +2383,7 @@ trigger1 = animelemtime(13)>1
 value = 1599
 ctrl = 0
 
-;======================================================================
+;
 ;Yoga Teleport Far Back
 
 [Statedef 1501]
@@ -2446,7 +2446,7 @@ trigger1 = animelemtime(13)>1
 value = 1599
 ctrl = 0
 
-;======================================================================
+;
 ;Yoga Teleport Close Forward
 
 [Statedef 1502]
@@ -2509,7 +2509,7 @@ trigger1 = animelemtime(13)>1
 value = 1599
 ctrl = 0
 
-;======================================================================
+;
 ;Yoga Teleport Close Back
 
 [Statedef 1503]
@@ -2572,7 +2572,7 @@ trigger1 = animelemtime(13)>1
 value = 1599
 ctrl = 0
 
-;======================================================================
+;
 ;Bison Warp End
 [Statedef 1599]
 type = S

@@ -1,4 +1,4 @@
-;======================<Shermie Flash>===================
+;<Shermie Flash>===================
 [Statedef 3000]
 type = S
 movetype= A
@@ -448,7 +448,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;======================<Shermie Flash MAX>===================
+;<Shermie Flash MAX>===================
 [Statedef 3050]
 type = S
 movetype= A
@@ -1118,7 +1118,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;======================<Shermie Carnival>===================
+;<Shermie Carnival>===================
 [Statedef 3100]
 type = S
 movetype= A
@@ -1901,7 +1901,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;======================<Shermie Carnival MAX>===================
+;<Shermie Carnival MAX>===================
 [Statedef 3150]
 type = S
 movetype= A
@@ -2615,7 +2615,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;======================<Lightning Leg Lariat>===================
+;<Lightning Leg Lariat>===================
 [Statedef 3200]
 type = S
 movetype = A

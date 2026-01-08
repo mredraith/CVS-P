@@ -1,4 +1,4 @@
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;<THROW SWITCHING SIDES (TARGET)>==========
 [StateDef 806]
 type=A
 moveType=H
@@ -190,7 +190,7 @@ value = 5200
 type = selfstate
 Trigger1=time = 20
 value = ifelse(Alive, 5120, 5150)
-;========================<HIT WALL>=============================
+;<HIT WALL>=============================
 ;---Hit Pause---
 [Statedef 1125]
 type=A

@@ -3384,9 +3384,9 @@ var(28) = 1
 ;trigger1 = partner, authorname = "Lost_Avenger"
 ;var(26) = ifelse(partner, name = "Ken", 1, ifelse(partner, name = "Sakura Kasugano", 2, ifelse(partner, name = "Sean", 3, 4)))
 
-;===============================================================================
+;
 ; ------- CvS2 Cornerpush System by Vans & Jesuszilla --------
-;===============================================================================
+;
 [State -2, Reset Time counter]
 type = VarSet
 trigger1 = movecontact = 1

@@ -1581,7 +1581,7 @@ trigger1 = animtime = 0
 value= 0
 ctrl = 1
 
-;=============================<FINAL HAGGAR BUSTER>===============================
+;<FINAL HAGGAR BUSTER>===============================
 ;Final Haggar Buster
 [Statedef 3400]
 type = S
@@ -2157,7 +2157,7 @@ trigger1 = !AnimTime
 value = 3450
 ctrl = 0
 
-;=====================================================================
+;
 ;P2 Stateno 1
 [Statedef 3420]
 type = A
@@ -2171,7 +2171,7 @@ Trigger1 = !Time
 value = 3420
 elem = 1
 
-;=====================================================================
+;
 ;P2 Stateno 2
 [Statedef 3421]
 type = A
@@ -2190,7 +2190,7 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 3421
 
-;=====================================================================
+;
 ;P2 Stateno 3
 [Statedef 3422]
 type = A
@@ -2209,7 +2209,7 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 3422
 
-;=====================================================================
+;
 ;P2 Stateno 4
 [Statedef 3423]
 type = A
@@ -2228,7 +2228,7 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 3423
 
-;=====================================================================
+;
 ;P2 Stateno 5
 [Statedef 3424]
 type = A
@@ -2266,7 +2266,7 @@ type = VelAdd
 Trigger1 = 1
 y = .56
 
-;=====================================================================
+;
 ;Jump
 [Statedef 3450]
 type = S

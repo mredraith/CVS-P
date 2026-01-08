@@ -1042,7 +1042,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1001
 
-;======================<HIT BY EX KUNG FU PALM>===========================
+;<HIT BY EX KUNG FU PALM>===========================
 ;Being Launched
 [StateDef 1031]
 type = A

@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (13/02/2017)
-;==============================================
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==============================================
+;
 
 ;***************************************************************************;
 ;***************************************************************************;
@@ -545,9 +545,9 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
-;============================================================================
+;
 ; Override common states (use same number to override) :
-;============================================================================
+;
 ;STANDING
 [StateDef 0]
 type=S
@@ -583,7 +583,7 @@ type=ChangeState
 trigger1=!Alive
 value=5050
 
-;====================<CROUCHING>====================
+;<CROUCHING>====================
 ;Stand to Crouch
 [StateDef 10]
 type=C
@@ -685,7 +685,7 @@ trigger1=Anim != 21 && Anim != 5
 trigger2=Anim=5 && animelemTime(1) >= 1
 value=21
 
-;====================<Jumping>====================
+;<Jumping>====================
 ;Jumping
 [StateDef 40]
 type = S
@@ -890,7 +890,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=============<Running>====================
+;<Running>====================
 ;Running
 [Statedef 100]
 type = S
@@ -989,7 +989,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;======================< DASH >===========================
+;< DASH >===========================
 ;Dash
 [Statedef 102]
 type = S
@@ -1176,9 +1176,9 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===============================================================================
+;
 ;Attention!
-;===============================================================================
+;
 [State 105, VelAdd]
 type = VelMul
 trigger1 = time > 1
@@ -1188,9 +1188,9 @@ x = 0.94231936854887674559805707346691 ;Change this number by whatever your VelM
 type = VelAdd
 trigger1 = time > 0
 y = 0.5390625  ;Change this number by whatever your gravity should be.
-;===============================================================================
 ;
-;===============================================================================
+;
+;
 [State 105, 3]
 type = ChangeState
 trigger1 = !AnimTime
@@ -1290,7 +1290,7 @@ trigger1 = !animtime
 value = 50
 ctrl = 1
 
-;=========<DODGE>=============
+;<DODGE>=============
 ;Dodge
 [Statedef 700]
 type = S
@@ -1336,7 +1336,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========<ROLLING>===========
+;<ROLLING>===========
 ;Roll Forward
 [StateDef 710]
 type = S
@@ -1434,7 +1434,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;===========<POWER CHARGE>==================
+;<POWER CHARGE>==================
 ;Power Charge
 [StateDef 730]
 type = S
@@ -1513,7 +1513,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;====================<ZERO COUNTER>====================
+;<ZERO COUNTER>====================
 [StateDef 750]
 type = S
 physics = S
@@ -1574,7 +1574,7 @@ darken = 0
 type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 440, 250)
-;====================<CUSTOM COMBO>====================
+;<CUSTOM COMBO>====================
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1765,7 +1765,7 @@ trigger1 = Pos Y >= 0 && Vel Y > 0
 value =52
 ctrl = 0
 
-;=====================<HIT GROUND(BOUNCE)>===================
+;<HIT GROUND(BOUNCE)>===================
 ;Hit ground
 [Statedef 5100]
 type = L
@@ -1855,7 +1855,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;================<HIT LIEDOWN>====================
+;<HIT LIEDOWN>====================
 ;Hit Liedown
 [Statedef 5110]
 type = L
@@ -1975,7 +1975,7 @@ ampl = 200, 7, -.467
 time = 30
 waveform = sine
 
-;==========<FORCED P2 RECOVERY>==========
+;<FORCED P2 RECOVERY>==========
 [StateDef 5025]
 type = A
 moveType = H
@@ -1993,7 +1993,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y, 5020, 5000)
 
-;==========<TARGET SAFE FALL>==========
+;<TARGET SAFE FALL>==========
 [StateDef 5205]
 type = A
 physics = N
@@ -2004,7 +2004,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y < -20, 5210, 5200)
 
-;==========<FALL RECOVERY>==========
+;<FALL RECOVERY>==========
 [StateDef 5200]
 type = A
 moveType = H
@@ -2162,7 +2162,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;============<CONTINUE?>==============
+;<CONTINUE?>==============
 [Statedef 5500]
 type = S
 anim = 5300
@@ -2173,7 +2173,7 @@ ctrl = 0
 type = ChangeAnim
 trigger1 = !Time
 value = 5500
-;====================< K.O. >====================
+;< K.O. >====================
 [Statedef 5150]
 type = L
 movetype = H
@@ -2199,7 +2199,7 @@ type = nothitby
 trigger1 = 1
 value = SCA
 time = 1
-;=============<CHEAP K.O.>=============
+;<CHEAP K.O.>=============
 [StateDef 5950]
 type = S
 moveType = H
@@ -2254,7 +2254,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;================<AIR HIT TRANSITION>=================
+;<AIR HIT TRANSITION>=================
 [Statedef 5035]
 type = A
 movetype = H
@@ -2292,7 +2292,7 @@ trigger4 = !Time
 trigger4 = Anim != 5035
 value = 5050
 
-;=====================<HIT GROUND(BOUNCE)>===================
+;<HIT GROUND(BOUNCE)>===================
 ;Hit ground
 [Statedef 5100]
 type = L
@@ -2382,7 +2382,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;================<HIT LIEDOWN>====================
+;<HIT LIEDOWN>====================
 ;Hit Liedown
 [Statedef 5110]
 type = L
@@ -2839,9 +2839,9 @@ ownpal = 1
 type = ChangeState
 trigger1 = !Animtime
 value = 0
-;============================================================================
+;
 ; End of Override common states
-;============================================================================
+;
 ;---------------------------------------------------------------------------
 ; States that are always executed (use statedef -2)
 ;---------------------------------------------------------------------------
@@ -3071,12 +3071,12 @@ value = 0
 ;//==========================
 
 
-;=================================================;
+;;
 
 ; EXTRAS DO CHAR, VALEU "Raposo" SEU Heidern FOI A BASE PRA CRIAÇÃO DESTE CHAR
 ; VALEU A TODOS OS HEIDERNS QUE EU BAIXEI KKKK TUDO PRA ACHAR O CHAR PERFEITO...
 
-;=================================================;
+;;
 
 [State 0, RemoveExplod]
 type = RemoveExplod
@@ -3097,12 +3097,12 @@ persistent = 0
 value = 1,30
 
 
-;=================================================;
+;;
 
 ; EXTRAS DO CHAR, VALEU "Raposo" SEU Heidern FOI A BASE PRA CRIAÇÃO DESTE CHAR
 ; VALEU A TODOS OS HEIDERNS QUE EU BAIXEI KKKK TUDO PRA ACHAR O CHAR PERFEITO...
 
-;=================================================;
+;;
 
 [State -2, Finish]
 type = ScreenBound
@@ -3533,9 +3533,9 @@ facing = -1
 pos = 0,0
 ownPal = 1
 ignorehitpause=1
-;=========================================================================
+;
 ;Dampener
-;=========================================================================
+;
 [State -2, Damage based on hits]
 type=varset
 triggerall= numenemy

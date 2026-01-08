@@ -1,4 +1,4 @@
-;====================<VARIABLE LIST>====================
+;<VARIABLE LIST>====================
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -50,7 +50,7 @@
 ; _________________________________________
 ;| Vice by Jmorphman                       |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====================<CONSTANTS>====================
+;<CONSTANTS>====================
 [Data]
 life = 1000
 power = 3000
@@ -117,7 +117,7 @@ down.friction.threshold = 0.5
 
 
 [Quotes]
-;====================<VICE WINQUOTES>====================
+;<VICE WINQUOTES>====================
 victory0 = "Humans rush to self-destruction. Ya got to love these guys!"
 victory1 = "The weak must be defeated. That's my only compromise."
 victory2 = "Throughout time, man's only true nature has been evil."

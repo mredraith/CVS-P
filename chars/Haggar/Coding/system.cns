@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (27/12/2018)
-;==============================================
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==============================================
+;
 
 ;--------------------- Variable List ----------------------
 ; Var(0) - StateDef
@@ -621,7 +621,7 @@ trigger1 = anim = 197
 trigger1 = animelemtime(14) = 0
 x = 0
 
-;====================<FRONT ROW OIL DRUMS>======================
+;<FRONT ROW OIL DRUMS>======================
 [State 0, Drum 1];Bottom Right
 type = Helper
 trigger1 = Time = 0
@@ -652,7 +652,7 @@ pos = ceil(253*const(size.xscale)),-12
 ownpal = 1
 ID = 7304
 
-;====================<BACK ROW OIL DRUMS>======================
+;<BACK ROW OIL DRUMS>======================
 [State 0, Drum 2];Bottom Left
 type = Helper
 trigger1 = Time = 0
@@ -683,7 +683,7 @@ pos = ceil(200*const(size.xscale)),-12
 ownpal = 1
 ID = 7305
 
-;===============================================================
+;
 [State 821, Hit Spark]
 type = Helper
 trigger1 = Anim = 197 && AnimElemTime(16) = 1
@@ -1071,7 +1071,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;===================<MAD GEAR GANG>===================
+;<MAD GEAR GANG>===================
 ;Goons
 [Statedef 20000]
 type=A
@@ -1168,7 +1168,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 20001
 
-;=========<LIE DEAD>==========
+;<LIE DEAD>==========
 [Statedef 20001]
 type=S
 physics=S
@@ -1814,7 +1814,7 @@ y = 0
 type = DestroySelf
 trigger1 =  time = 60
 
-;====================<TURNS INTRO>====================
+;<TURNS INTRO>====================
 [Statedef 6900]
 type = A
 anim = 6900
@@ -1986,7 +1986,7 @@ value = 0
 ctrl = 1
 
 
-;====================< ROLL >====================
+;< ROLL >====================
 ;--- Forward ---
 [Statedef 710]
 type = S
@@ -2105,7 +2105,7 @@ value = 0
 ctrl = 1
 
 
-;===========<POWER CHARGE>==================
+;<POWER CHARGE>==================
 [StateDef 730]
 type = S
 physics = S
@@ -2197,7 +2197,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<COUNTER MOVEMENT>====================
+;<COUNTER MOVEMENT>====================
 [StateDef 740]
 type = S
 physics = S
@@ -2262,7 +2262,7 @@ type = ChangeState
 trigger1 = Time >= 12
 value = ifElse(var(10) = 1, 715, 710)
 
-;====================<ZERO COUNTER>====================
+;<ZERO COUNTER>====================
 [StateDef 750]
 type = S
 physics = S
@@ -2330,7 +2330,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 450, 1500)
 
-;====================<PARRY>====================
+;<PARRY>====================
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -2587,7 +2587,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===============<MAX Mode>===============
+;<MAX Mode>===============
 [Statedef 770]
 type = S
 movetype = I
@@ -2774,7 +2774,7 @@ trigger1 = Anim != 21 && Anim != 5
 trigger2 = Anim = 5 && AnimTime = 0
 value = 21
 
-;====================<Jumping>====================
+;<Jumping>====================
 [StateDef 40]
 type = S
 physics = S
@@ -3168,7 +3168,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===================<GUARD>================
+;<GUARD>================
 ;Guard Start
 [StateDef 120]
 type = U
@@ -3638,7 +3638,7 @@ type = ChangeState
 trigger1 = sysvar(0)
 value = 52
 
-;=====================<HIT GROUND(BOUNCE)>===================
+;<HIT GROUND(BOUNCE)>===================
 [Statedef 5100]
 type = L
 movetype= H
@@ -3727,7 +3727,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;================<HIT LIEDOWN>====================
+;<HIT LIEDOWN>====================
 [Statedef 5110]
 type = L
 movetype= H
@@ -3846,7 +3846,7 @@ ampl = 200, 7, -.467
 time = 30
 waveform = sine
 
-;==========<FORCED P2 RECOVERY>==========
+;<FORCED P2 RECOVERY>==========
 [StateDef 5025]
 type = A
 moveType = H
@@ -3864,7 +3864,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y, 5020, 5000)
 
-;==========<TARGET SAFE FALL>==========
+;<TARGET SAFE FALL>==========
 [StateDef 5205]
 type = A
 physics = N
@@ -3875,7 +3875,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y < -20, 5210, 5200)
 
-;==========<FALL RECOVERY>==========
+;<FALL RECOVERY>==========
 [StateDef 5200]
 type = A
 moveType = H
@@ -4033,7 +4033,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;============<CONTINUE?>==============
+;<CONTINUE?>==============
 [Statedef 5500]
 type = S
 anim = 5300
@@ -4045,7 +4045,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = 5500
 
-;=============<CHEAP K.O.>=============
+;<CHEAP K.O.>=============
 [Statedef 5950]
 type=S
 movetype=H
@@ -4099,7 +4099,7 @@ ownpal=1
 type=changestate
 trigger1= !animtime
 value=ifelse(alive,5110,5150)
-;================<AIR HIT TRANSITION>=================
+;<AIR HIT TRANSITION>=================
 [Statedef 5035]
 type = A
 movetype = H

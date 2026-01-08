@@ -2,11 +2,14 @@ Version: nightly
 Build Time: 2025.12.26
 
 Error log:
-.\external\script\start.lua:2441: <game end>
+.\external\script\start.lua:1599: chars/gen/Command.cmd:1131:
+Command doesn't exist: EXHyakurenu
 stack traceback:
-	[G]: in function 'refresh'
-	.\external\script\start.lua:2441: in function 'f_selectScreen'
-	.\external\script\start.lua:1629: in function 'f'
+	[G]: in function 'game'
+	.\external\script\start.lua:1599: in function 'f_game'
+	.\external\script\start.lua:2020: in function 'launchFight'
+	external/script/default.lua:2: in function <external/script/default.lua:0>
+	.\external\script\start.lua:1665: in function 'f'
 	external/script/main.lua:2514: in function 'loop'
 	external/script/main.lua:3598: in main chunk
 	[G]: ?
