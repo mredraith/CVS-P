@@ -76,7 +76,7 @@ type = S
 movetype= I
 physics = S
 velset = 0
-anim = 4
+anim = 150080
 ctrl = 1
 
 [State 1, 1]
@@ -95,7 +95,7 @@ type = S
 movetype= I
 physics = S
 velset = 0
-anim = 10005
+anim = 150040
 ctrl = 0
 
 [State 2, 1]

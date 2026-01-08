@@ -9,7 +9,7 @@ displayname = "Shin Gouki"
 versiondate = 12,30,2012
 mugenversion = 1.0
 author = "Phantom.of.the.Server"
-pal.defaults = 1,5,6,4,2,3,10,11,12,7,8,9
+pal.defaults = 1,5,6,4,2,3,7,8,9,10,11,12
 
 [Files]
 movelist = movelist.dat
