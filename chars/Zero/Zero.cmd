@@ -2082,25 +2082,25 @@ trigger1 = statetype = S
 trigger1 = ctrl
 
 ;------ Air Dash ------
-[State -1, Air Dash]
-type = ChangeState
-value = 102
-triggerall = command = "FF"
-triggerall = !var(14)
-triggerall = var(59)=0
-triggerall = var(1) <= 0
-trigger1 = statetype = A
-trigger1 = ctrl
-
-[State -1, Back Air Dash]
-type = ChangeState
-value = 103
-triggerall = command = "BB"
-triggerall = !var(14)
-triggerall = var(59)=0
-triggerall = var(1) <= 0
-trigger1 = statetype = A
-trigger1 = ctrl
+;[State -1, Air Dash]
+;type = ChangeState
+;value = 102
+;triggerall = command = "FF"
+;triggerall = !var(14)
+;triggerall = var(59)=0
+;triggerall = var(1) <= 0
+;trigger1 = statetype = A
+;trigger1 = ctrl
+;
+;[State -1, Back Air Dash]
+;type = ChangeState
+;value = 103
+;triggerall = command = "BB"
+;triggerall = !var(14)
+;triggerall = var(59)=0
+;triggerall = var(1) <= 0
+;trigger1 = statetype = A
+;trigger1 = ctrl
 
 ;---------------------------------------------------------------------------
 ; Wall Jump
