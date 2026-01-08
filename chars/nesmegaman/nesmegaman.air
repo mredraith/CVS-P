@@ -1,0 +1,1102 @@
+;Animation of KFM!
+;Use with KFM.SFF
+;AIR file V2
+
+; groupno, imageno, offx, offy, duration [, flags]
+; if duration is -1, then frame is displayed indefinitely.
+; for flags (optional), H - horizonal flip, V - vertical flip.
+
+; Optional collision dection info (Clsn1 or Clsn2):
+; Clsn1: numcollisionelements
+;  Clsn1[x] = x1, y1, x2, y2     Bounding box for rectangle
+; Use "Clsn1Default" to specify default collision box to assign each element
+; following it.
+
+;---------------------------------------------------------------------------
+; Standing Animation
+[Begin Action 0]
+Clsn2Default: 1
+ Clsn2[0] =   9,  0,-11,-23
+0,0, 0,0, 100
+0,1, 0,0, 5
+
+; Turning
+[Begin Action 5]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-23
+0,0, 0,0, 1, H
+0,0, 0,0, 1
+
+; Crouch Turning
+[Begin Action 6]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-23
+0,0, 0,0, 1, H
+0,0, 0,0, 1
+
+; Stand to crouch
+[Begin Action 010]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-23
+0,0, 0,0, 1
+
+; Crouching animation
+[Begin Action 011]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-23
+0,0, 0,0, 1
+
+; Crouch to Stand
+[Begin Action 012]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-23
+0,0, 0,0, 1
+
+; Walking Forward
+[Begin Action 020]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-22
+20,0, 0,0, 8
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+20,1, 0,0, 8
+Clsn2: 1
+ Clsn2[0] =  11,-21,-12,  0
+20,2, 0,0, 8
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+20,1, 0,0, 8
+
+; Walking Back
+[Begin Action 021]
+Clsn2: 1
+ Clsn2[0] =  11,  0, -9,-21
+20,0, 0,0, 8, H
+Clsn2: 1
+ Clsn2[0] =   8,-24, -7,  0
+20,1, 0,0, 8, H
+Clsn2: 1
+ Clsn2[0] =  12,-21,-11,  0
+20,2, 0,0, 8, H
+Clsn2: 1
+ Clsn2[0] =   8,-23, -7,  0
+20,1, 0,0, 8, H
+
+; Jump start frame
+[Begin Action 040]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; Starting Jumping up
+[Begin Action 041]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1
+
+; Starting Jumping forwards
+[Begin Action 042]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1
+
+; Starting Jumping backwards
+[Begin Action 043]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1
+
+; Peak and coming down from Jumping up
+;[Begin Action 044]
+
+; Peak and coming down from Jumping forwards
+;[Begin Action 045]
+
+; Peak and coming down from Jumping backwards
+;[Begin Action 046]
+
+; Jump land frame
+[Begin Action 047]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; Starting Jumping up
+[Begin Action 051]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1, H
+
+; Run forwards
+[Begin Action 100]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-22
+20,0, 0,0, 4
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+20,1, 0,0, 4
+Clsn2: 1
+ Clsn2[0] =  11,-21,-12,  0
+20,2, 0,0, 4
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+20,1, 0,0, 4
+
+; Hop backwards
+[Begin Action 105]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1
+
+;---------------------------
+; Lose
+[Begin Action 170]
+0,0, 0,0, 100
+0,1, 0,0, 5
+
+;---------------------------
+; Win
+[Begin Action 181]
+Clsn2Default: 1
+ Clsn2[0] =   9,  0,-11,-23
+0,0, 0,0, 100
+0,1, 0,0, 5
+
+;-----------------------------------
+; Intro
+[Begin Action 190]
+Clsn2Default: 1
+ Clsn2[0] =   9,  0,-11,-23
+ -1,0, 0,0, 1
+191,0, 0,0, 2;3
+191,1, 0,0, 3
+191,2, 0,0, 3
+191,3, 0,0, 3
+191,5, -4,-16, 40
+
+;-----------------------------------
+; Intro Teleportation Helper
+[Begin Action 192]
+Clsn2Default: 1
+ Clsn2[0] =   9,  0,-11,-23
+191,0, 0,0, -1
+
+;-----------------------------------
+; Shoot
+[Begin Action 200]
+Clsn2: 1
+ Clsn2[0] =   9,-23,-11,  0
+200,0, 0,0, 15
+
+;-----------------------------------
+; Throw
+[Begin Action 202]
+Clsn2: 1
+ Clsn2[0] =   9,-23,-11,  0
+202,0, 0,0, 15
+
+;-----------------------------------
+; Throw Backwards
+[Begin Action 203]
+Clsn2: 1
+ Clsn2[0] =  -9,-23, 11,  0
+202,0, 0,0, 15, H
+
+;-----------------------------------
+; Shooting Walking Forward
+[Begin Action 220]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-22
+220,0, 0,0, 8
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+220,1, 0,0, 8
+Clsn2: 1
+ Clsn2[0] =  11,-21,-12,  0
+220,2, 0,0, 8
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+220,1, 0,0, 8
+
+;-----------------------------------
+; Shooting Walking Backward
+[Begin Action 221]
+Clsn2: 1
+ Clsn2[0] =   9,  0,-11,-22
+220,0, 0,0, 8, H
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+220,1, 0,0, 8, H
+Clsn2: 1
+ Clsn2[0] =  11,-21,-12,  0
+220,2, 0,0, 8, H
+Clsn2: 1
+ Clsn2[0] =   7,-23, -8,  0
+220,1, 0,0, 8, H
+
+;-----------------------------------
+; Shooting while jumping
+[Begin Action 241]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+241,0, 0,0, 8
+
+;-----------------------------------
+; Throw while jumping
+[Begin Action 242]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+242,0, 0,0, 8
+
+;-----------------------------------
+; Shooting while jumping back
+[Begin Action 251]
+Clsn2: 1
+ Clsn2[0] =  13,-29,-12,  0
+241,0, 0,0, 8, H
+
+;-----------------------------------
+; Throw while jumping back
+[Begin Action 252]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+242,0, 0,0, 8, H
+
+;-----------------------------------
+; MEGABUSTER SHOT
+[Begin Action 2000]
+Clsn1: 1
+ Clsn1[0] =  -4, -3,  3,  2
+Clsn2: 1
+ Clsn2[0] =  -4, -3,  3,  2
+2000,0, 0,0, -1
+
+;-----------------------------------
+; Air Tornado
+[Begin Action 1020]
+Clsn1Default: 1
+ Clsn1[0] =  -6, -9,  6,  7
+Clsn2Default: 1
+ Clsn2[0] =  -6, -9,  6,  7
+1020,0, 0,0, 2
+1020,1, 0,0, 2
+1020,2, 0,0, 2
+
+;-----------------------------------
+; Metal Blade
+[Begin Action 1060]
+1060,0, 0,0, 7
+1060,1, 0,0, 7
+1060,2, 0,0, 7
+
+;-----------------------------------
+; Metal Blade
+[Begin Action 1070]
+Clsn1Default: 1
+ Clsn1[0] =  -7, -7,  8,  8
+Clsn2Default: 1
+ Clsn2[0] =  -7, -7,  8,  8
+1070,0, 0,0, 5
+1070,1, 0,0, 5
+
+;--------------------
+; GUARDSTART (stand)
+[Begin Action 120]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARDSTART (crouch)
+[Begin Action 121]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARDSTART (air)
+[Begin Action 122]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARD (stand)
+[Begin Action 130]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARD (crouch)
+[Begin Action 131]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARD (air)
+[Begin Action 132]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARDEND (stand)
+[Begin Action 140]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARDEND (crouch)
+[Begin Action 141]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; GUARDEND (air)
+[Begin Action 142]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; Hit back while guarding (stand)
+[Begin Action 150]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; Hit back while guarding (crouch)
+[Begin Action 151]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+; Hit back while guarding (air)
+[Begin Action 152]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+;---------------------------
+; Stand/Air Hit high (light)
+[Begin Action 5000]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Stand/Air Hit high (medium)
+[Begin Action 5001]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Stand/Air Hit high (hard)
+[Begin Action 5002]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;Stand Recover high (light)
+[Begin Action 5005]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Stand Recover high (medium)
+[Begin Action 5006]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Stand Recover high (hard)
+[Begin Action 5007]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;Stand/Air Hit low (light)
+[Begin Action 5010]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Stand/Air Hit low (medium)
+[Begin Action 5011]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Stand/Air Hit low (hard)
+[Begin Action 5012]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;Stand Recover low (light)
+[Begin Action 5015]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+;Stand Recover low (medium)
+[Begin Action 5016]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+;Stand Recover low (hard)
+[Begin Action 5017]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+;---------------------------
+;Crouch Hit (light)
+[Begin Action 5020]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Crouch Hit (medium)
+[Begin Action 5021]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Crouch Hit (hard)
+[Begin Action 5022]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;Crouch Recover (light)
+[Begin Action 5025]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Crouch Recover (medium)
+[Begin Action 5026]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Crouch Recover (hard)
+[Begin Action 5027]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;Stand/Air Hit back
+[Begin Action 5030]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;Stand/Air Hit transition
+[Begin Action 5035]
+Clsn2: 1
+ Clsn2[0] = -11,  0,  9,-23
+0,0, 0,0, 1
+
+;---------------------------
+;Air Recover
+[Begin Action 5040]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1
+
+;---------------------------
+;Air Fall
+[Begin Action 5050]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;Tripped
+[Begin Action 5070]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;LieDown Hit (stay down)
+[Begin Action 5080]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;LieDown Hit (hit up into air)
+[Begin Action 5090]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+; Bounce from ground into air
+[Begin Action 5100]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 3
+
+; Bounce into air
+[Begin Action 5160]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+; Hit ground from bounce
+[Begin Action 5170]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+; LieDown
+[Begin Action 5110]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+; Get up from LieDown
+[Begin Action 5120]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+0,0, 0,0, 1
+
+;LieDead animation
+[Begin Action 5150]
+-1, 0, 0,0, 1
+
+;---------------------------
+; Fall-recovery near ground
+[Begin Action 5200]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1
+
+;Fall-recovery in mid-air
+[Begin Action 5210]
+Clsn2: 1
+ Clsn2[0] = -13,-29, 12,  0
+41,0, 0,0, -1
+
+;---------------------------
+; Dizzy
+[Begin Action 5300]
+Clsn2Default: 1
+ Clsn2[0] =  12,  0,-13,-25
+5000, 0, 0,0, 2
+  -1, 2, 0,0, 2
+5000, 1, 0,0, 2
+  -1, 2, 0,0, 2
+
+;---------------------------
+;Invisible
+[Begin Action 4000]
+-1,0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Appear
+[Begin Action 4001]
+4001, 0, 0,0, 1
+4001, 1, 0,0, 1
+4001, 2, 0,0, 1
+4001, 3, 0,0, 1
+4001, 4, 0,0, 1
+4001, 5, 0,0, 1
+4001, 6, 0,0, 1
+4001, 7, 0,0, 1
+4001, 8, 0,0, 1
+4001, 9, 0,0, 1
+4001,10, 0,0, 1
+4001,11, 0,0, 1
+4001,12, 0,0, 1
+4001,13, 0,0, 1
+4001,14, 0,0, -1
+
+;---------------------------
+;Megaman 2 Menu Cancel
+[Begin Action 4002]
+4002, 0, 0,0, 1
+4002, 1, 0,0, 1
+4002, 2, 0,0, 1
+4002, 3, 0,0, 1
+4002, 4, 0,0, 1
+4002, 5, 0,0, 1
+4002, 6, 0,0, 1
+4002, 7, 0,0, 1
+4002, 8, 0,0, 1
+4002, 9, 0,0, 1
+4002,10, 0,0, 1
+4002,11, 0,0, 1
+4002,12, 0,0, 1
+4002,13, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 1
+[Begin Action 4010]
+4010, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 2
+[Begin Action 4011]
+4011, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 3
+[Begin Action 4012]
+4012, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 4
+[Begin Action 4013]
+4013, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 5
+[Begin Action 4014]
+4014, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 6
+[Begin Action 4015]
+4015, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 7
+[Begin Action 4016]
+4016, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 8
+[Begin Action 4017]
+4017, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 9
+[Begin Action 4018]
+4018, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 10
+[Begin Action 4019]
+4019, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 11
+[Begin Action 4020]
+4020, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 12
+[Begin Action 4021]
+4021, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 13
+[Begin Action 4022]
+4022, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 14
+[Begin Action 4023]
+4023, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Menu Item 1b
+[Begin Action 4029]
+4029, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 0
+[Begin Action 4030]
+4030, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 1
+[Begin Action 4031]
+4031, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 2
+[Begin Action 4032]
+4032, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 3
+[Begin Action 4033]
+4033, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 4
+[Begin Action 4034]
+4034, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 5
+[Begin Action 4035]
+4035, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 6
+[Begin Action 4036]
+4036, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 7
+[Begin Action 4037]
+4037, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 8
+[Begin Action 4038]
+4038, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 9
+[Begin Action 4039]
+4039, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 10
+[Begin Action 4040]
+4040, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 11
+[Begin Action 4041]
+4041, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 12
+[Begin Action 4042]
+4042, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 13
+[Begin Action 4043]
+4043, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 14
+[Begin Action 4044]
+4044, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 15
+[Begin Action 4045]
+4045, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 16
+[Begin Action 4046]
+4046, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 17
+[Begin Action 4047]
+4047, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 18
+[Begin Action 4048]
+4048, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 19
+[Begin Action 4049]
+4049, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 20
+[Begin Action 4050]
+4050, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 21
+[Begin Action 4051]
+4051, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 22
+[Begin Action 4052]
+4052, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 23
+[Begin Action 4053]
+4053, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 24
+[Begin Action 4054]
+4054, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 25
+[Begin Action 4055]
+4055, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 26
+[Begin Action 4056]
+4056, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 27
+[Begin Action 4057]
+4057, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Horizontal Bar 28
+[Begin Action 4058]
+4058, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 0
+[Begin Action 4060]
+4060, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 1
+[Begin Action 4061]
+4061, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 2
+[Begin Action 4062]
+4062, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 3
+[Begin Action 4063]
+4063, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 4
+[Begin Action 4064]
+4064, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 5
+[Begin Action 4065]
+4065, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 6
+[Begin Action 4066]
+4066, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 7
+[Begin Action 4067]
+4067, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 8
+[Begin Action 4068]
+4068, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 9
+[Begin Action 4069]
+4069, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 10
+[Begin Action 4070]
+4070, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 11
+[Begin Action 4071]
+4071, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 12
+[Begin Action 4072]
+4072, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 13
+[Begin Action 4073]
+4073, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 14
+[Begin Action 4074]
+4074, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 15
+[Begin Action 4075]
+4075, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 16
+[Begin Action 4076]
+4076, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 17
+[Begin Action 4077]
+4077, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 18
+[Begin Action 4078]
+4078, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 19
+[Begin Action 4079]
+4079, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 20
+[Begin Action 4080]
+4080, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 21
+[Begin Action 4081]
+4081, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 22
+[Begin Action 4082]
+4082, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 23
+[Begin Action 4083]
+4083, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 24
+[Begin Action 4084]
+4084, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 25
+[Begin Action 4085]
+4085, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 26
+[Begin Action 4086]
+4086, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 27
+[Begin Action 4087]
+4087, 0, 0,0, 1
+
+;---------------------------
+;Megaman 2 Vertical Bar 28
+[Begin Action 4088]
+4088, 0, 0,0, 1
+
+;---------------------------
+;Dead Explosion (Inner)
+[Begin Action 4150]
+4150,0, 0,0, 10
+4150, 1, 0,0, 2
+4150, 2, 0,0, 2
+4150, 3, 0,0, 2
+
+;---------------------------
+;Dead Explosion	(Outer)
+[Begin Action 4152]
+4150, 3, 0,0, 1
+  -1, 3, 0,0, 1
+4150, 3, 0,0, 1
+  -1, 3, 0,0, 1
+4150, 0, 0,0, 1
+  -1, 0, 0,0, 1
+4150, 0, 0,0, 1
+  -1, 0, 0,0, 1
+4150, 1, 0,0, 1
+  -1, 1, 0,0, 1
+4150, 1, 0,0, 1
+  -1, 1, 0,0, 1
+4150, 2, 0,0, 1
+  -1, 2, 0,0, 1
+4150, 2, 0,0, 1
+  -1, 2, 0,0, 1
+
+; Death
+[Begin Action 5555]
+202,0, 0,0, 30
+10000,0, 0,-9, 23

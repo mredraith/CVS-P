@@ -1,0 +1,3066 @@
+; Classic Megaman's constants.
+; Format (case insensitive):
+;  [groupname]        
+;  constname = value  
+
+[Data]
+life = 1000          ;Amount of life to start with
+power = 3000
+attack = 100         ;100% attack power (more is stronger)
+defence = 100        ;100% defensive power (more is stronger)
+fall.defence_up = 50 ;Def goes up by 50% everytime player is hit on ground
+liedown.time = 1     ;Time player takes before getting up from HIT_LIEDOWN
+airjuggle = 15       ;Can do 15 points of juggling
+;sparkno = 1        ;Default spark number
+guard.sparkno = 0,20 ;Default guard spark number
+KO.echo = 1          ;1 to enable echo on KO
+volume = 0           ;Volume offset (negative for softer)
+
+[Size]
+xscale = 1           ;Horizontal scaling factor.
+yscale = 1           ;Vertical scaling factor.
+ground.back = 10     ;Player width (back, ground)
+ground.front = 10    ;Player width (front, ground)
+air.back = 15        ;Player width (back, air)
+air.front = 15       ;Player width (front, air)
+z.width = 3          ;Player width (into and out)
+height = 18	     ;Height of player (for opponent to jump over)
+attack.width = 4,4   ;Default attack width: back, front
+attack.dist = 160    ;Default attack distance
+proj.attack.dist = 90 ;Default attack distance for projectiles
+proj.doscale = 0     ;Set to 1 to scale projectiles too   
+head.pos = -5, -90   ;Approximate position of head
+mid.pos = -5, -60    ;Approximate position of midsection
+shadowoffset = 0     ;Number of pixels to vertically offset the shadow
+
+[Velocity]
+walk.fwd  = 2.0      ;Walk forward
+walk.back = -2.0     ;Walk backward
+run.fwd  = -2.0, 0   ;Run forward (x, y)  - if y<0, player will hop
+run.back = -2.0, 0   ;Run backward (x, y) - if y=0, player will run
+jump.neu = 0,0       ;Neutral jumping velocity (x, y)
+jump.back = 0        ;Jump back Speed (x, y)
+jump.fwd = 0         ;Jump forward Speed (x, y)
+
+[Movement]
+yaccel = .43          ;Vertical acceleration
+stand.friction = .85  ;Friction coefficient when standing
+crouch.friction = .82 ;Friction coefficient when crouching
+
+;---------------------------------------------------------------------------
+; Variables
+; Var(0) = Weapon Selected Number
+; Var(1-15) = Weapons
+; Var(16) = Current Weapon Activated
+; Var(58) - AI Last StateNo & Move Hit
+; Var(59) - AI
+;
+; Menu Helper
+; Var(0) = Menu Item Number
+
+;---------------------------------------------------------------------------
+; Format:
+; [Statedef STATENO]
+; type = ?      S/C/A/L  stand/crouch/air/liedown
+; movetype = ?  I/A/H    idle/attack/gethit
+; physics = ?   S/C/A/N  stand/crouch/air/none
+; juggle = ?             air juggle points move requires
+;
+; [State STATENO, ?]     ? - any number you choose
+; type = ?
+; ...
+
+;---------------------------------------------------------------------------
+; LOSE (Time over)
+[Statedef 170]
+type = S
+ctrl = 0
+anim = 170
+velset = 0,0,0
+
+[State 170, 1]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+;---------------------------------------------------------------------------
+; Win Pose Decider
+[Statedef 180]
+type = S
+
+[State 180, 1]
+type = ChangeState
+trigger1 = Time = 0
+value = 181
+
+;---------------------------------------------------------------------------
+; Win Pose 1
+[Statedef 181]
+type = S
+ctrl = 0
+anim = 181
+velset = 0,0,0
+
+[State 181, 1]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+;---------------------------------------------------------------------------
+; Introduction
+[Statedef 191]
+type = S
+ctrl = 0
+anim = 0
+velset = 0,0
+
+[State 191, 1] ;Freeze animation until PreIntro is over
+type = ChangeAnim
+trigger1 = RoundState = 0
+trigger2 = NumHelper(192) != 0
+trigger2 = Helper(192), Pos Y < 0
+value = 190
+
+[State 191, 2] ;Assert this until you want "round 1, fight" to begin
+type = AssertSpecial
+trigger1 = 1
+flag = Intro
+
+[State 191, 3]
+type = Helper
+trigger1 = RoundState = 0
+trigger1 = NumHelper(192) = 0
+ID = 192
+name = "intro"
+pos = 0,-480
+stateno = 192
+
+[State 192, 3] ;Teleport Sound
+type = PlaySnd
+trigger1 = NumHelper(192) != 0
+trigger1 = Helper(192), Pos Y >= 0
+value = 191,0
+
+[State 191, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+
+;---------------------------------------------------------------------------
+; Introduction (Teleporting)
+[Statedef 192]
+type = A
+ctrl = 0
+anim = 0
+velset = 0,0
+
+[State 192, 1] ;Freeze animation until PreIntro is over
+type = ChangeAnim
+trigger1 = RoundState = 0
+value = 192
+
+[State 192, 2] ;Change Velocity when PreIntro is over
+type = VelSet
+trigger1 = RoundState != 0
+y = 16
+
+[State 192, 3]
+type = DestroySelf
+trigger1 = Pos Y >= 0
+
+;---------------------------------------------------------------------------
+; Megabuster
+[Statedef 200]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 200
+ctrl = 0
+
+[State 200, 1] ;Uncomment if you want to play a sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 10, 0
+
+[State 200, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Mega Buster"
+id = 2000
+pos = 15, -12
+stateno = 201
+ownpal = 1
+
+[State 200, 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1
+
+;---------------------------------------------------------------------------
+; Megabuster Shot
+[Statedef 201]
+type    = A
+movetype= A
+physics = N
+velset = 4,0
+anim = 2000
+ctrl = 0
+
+[State 201, 1]
+type = HitDef
+trigger1 = Time = 0
+attr = S, NP
+numhits = 1
+damage   = 20,5
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+animtype = light
+pausetime = 0,0
+hitsound   = S10,1
+guardsound = S10,2
+ground.type = Low
+ground.slidetime = 0
+ground.hittime  = 0
+guard.velocity = 0
+ground.velocity = 0
+air.animtype = back
+air.velocity = 0,0
+airguard.velocity = 0,0
+palfx.time = 3
+palfx.add = 255,255,255
+
+[State 201, 2]
+type = VelSet
+trigger1 = MoveGuarded
+x = -8
+y = -4
+
+[State 201, 3]
+type = Width
+trigger1 = 1
+value = -5,-5
+
+[State 201, 4]
+type = HitOverride
+trigger1 = 1
+attr = SCA, AA, AP, AT
+stateno = 202
+
+[State 201, 5]
+type = NotHitBy
+trigger1 = 1
+value = SCA, AA, AT
+
+[State 201, 6]
+type = DestroySelf
+trigger1 = MoveHit
+trigger2 = ScreenPos X != [0,359]
+
+;---------------------------------------------------------------------------
+; Megabuster Shot Destory
+[Statedef 202]
+type    = A
+movetype= I
+physics = N
+
+[State 202, 1]
+type = DestroySelf
+trigger1 = 1
+
+;---------------------------------------------------------------------------
+;JUMP_UP
+[Statedef 210]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 41
+ctrl = 0
+
+[State 210, 1]
+type = Velset
+trigger1 = time = 0
+x = 0
+y = -4.8
+
+[State 210, 2]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 210, 3]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 210, 4]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 41
+
+[State 210, 5]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 51
+
+[State 210, 6]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 210, 7]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 210, 8]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 211
+
+;---------------------------------------------------------------------------
+;JUMP_DOWN
+[Statedef 211]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+
+[State 211, 1] ; slow descent
+type = VelAdd
+trigger1 = 1
+y = -0.1
+
+[State 211, 2]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 41
+
+[State 211, 3]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 51
+
+[State 211, 4]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 211, 5]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+;---------------------------------------------------------------------------
+;JUMP_UP_SHOOTING
+[Statedef 212]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 241
+
+[State 212, 1]
+type = PlaySnd
+trigger1 = Time = 0
+value = 10, 0
+
+[State 212, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Mega Buster"
+id = 2000
+pos = 13, -16
+stateno = 201
+ownpal = 1
+
+[State 212, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 212, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 212, 5]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 241
+
+[State 212, 6]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 251
+
+[State 212, 7]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 212, 8]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 212, 9]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 213
+
+;---------------------------------------------------------------------------
+;JUMP_DOWN_SHOOTING
+[Statedef 213]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+
+[State 213, 1] ; slow descent
+type = VelAdd
+trigger1 = 1
+y = -0.1
+
+[State 213, 2]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 241
+
+[State 213, 3]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 251
+
+[State 213, 4]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 213, 5]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+;---------------------------------------------------------------------------
+;JUMP_UP_SHOOTING_BACK
+[Statedef 214]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 251
+
+[State 214, 1]
+type = PlaySnd
+trigger1 = Time = 0
+value = 10, 0
+
+[State 214, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Mega Buster"
+id = 2000
+pos = -13, -16
+stateno = 201
+ownpal = 1
+facing = -1
+
+[State 214, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 214, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 214, 5]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 214, 6]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 214, 7]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 213
+
+;---------------------------------------------------------------------------
+; MEGABUSTER WHILE WALKING
+[Statedef 220]
+type    = S
+movetype= A
+physics = S
+ctrl = 0
+velset = 0,0,0
+
+[State 220, 1]
+type = ChangeAnim
+trigger1 = Anim != 220
+value = 220
+
+[State 220, 2]
+type = PlaySnd
+trigger1 = Time = 0
+value = 10, 0
+
+[State 220, 3]
+type = VelSet
+trigger1 = stateno = 220
+x = const(velocity.walk.fwd.x)
+
+[State 220, 4]
+type = Helper
+trigger1 = Time = 0
+name = "Mega Buster"
+id = 2000
+pos = 15, -12
+stateno = 201
+ownpal = 1
+
+[State 220, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 20
+
+[State 220, 6]
+type = ChangeState
+trigger1 = command != "holdfwd"
+value = 1
+
+;---------------------------------------------------------------------------
+; MEGABUSTER WHILE WALKING BACK
+[Statedef 221]
+type    = S
+movetype= A
+physics = S
+ctrl = 0
+velset = 0,0
+
+[State 221, 1]
+type = ChangeAnim
+trigger1 = Anim != 221
+value = 221
+
+[State 221, 2]
+type = PlaySnd
+trigger1 = Time = 0
+value = 10, 0
+
+[State 221, 3]
+type = VelSet
+trigger1 = stateno = 221
+x = const(velocity.walk.back.x)
+
+[State 221, 4]
+type = Helper
+trigger1 = Time = 0
+name = "Mega Buster"
+id = 2000
+pos = -15, -12
+stateno = 201
+ownpal = 1
+facing = -1
+
+[State 221, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 20
+
+[State 221, 6]
+type = ChangeState
+trigger1 = command != "holdback"
+value = 1
+
+;---------------------------------------------------------------------------
+; Shoot Air Tornado
+[Statedef 1020]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 200
+ctrl = 0
+
+[State 1020, 1] ;Air Tornado Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1020, 0
+
+[State 1020, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1021
+ownpal = 1
+
+[State 1020, 3]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1022
+ownpal = 1
+
+[State 1020, 4]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1023
+ownpal = 1
+
+[State 1020, 5] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 2
+value = -8
+
+[State 1020, 6]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1
+
+;---------------------------------------------------------------------------
+; Air Tornado 1
+[Statedef 1021]
+type    = A
+movetype= A
+physics = N
+velset = 1,0
+
+[State 1021, 1]
+type = ChangeState
+trigger1 = 1
+value = 1024
+
+;---------------------------------------------------------------------------
+; Air Tornado 2
+[Statedef 1022]
+type    = A
+movetype= A
+physics = N
+velset = 1.5,0
+
+[State 1022, 1]
+type = ChangeState
+trigger1 = 1
+value = 1024
+
+;---------------------------------------------------------------------------
+; Air Tornado 3
+[Statedef 1023]
+type    = A
+movetype= A
+physics = N
+velset = 2.25,0
+
+[State 1023, 1]
+type = ChangeState
+trigger1 = 1
+value = 1024
+
+;---------------------------------------------------------------------------
+; Air Tornado
+[Statedef 1024]
+type    = A
+movetype= A
+physics = N
+anim = 1020
+ctrl = 0
+
+[State 1024, 1]
+type = HitDef
+trigger1 = Time = 0
+attr = S, NP
+numhits = 1
+damage   = 30,7
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+animtype = light
+pausetime = 0,0
+hitsound   = S10,1
+guardsound = S10,2
+ground.type = Low
+ground.slidetime = 0
+ground.hittime  = 0
+guard.velocity = 0
+ground.velocity = 0
+air.animtype = back
+air.velocity = 0,0
+airguard.velocity = 0,0
+palfx.time = 3
+palfx.add = 255,255,255
+
+[State 1024, 3]
+type = VelSet
+trigger1 = MoveGuarded
+x = -8
+y = -4
+
+[State 1024, 4]
+type = Width
+trigger1 = 1
+value = -5,-5
+
+[State 1024, 5]
+type = HitOverride
+trigger1 = 1
+attr = SCA, AA, AP, AT
+stateno = 202
+
+[State 1024, 6]
+type = NotHitBy
+trigger1 = 1
+value = SCA, AA, AT
+
+[State 1024, 7]
+type = SprPriority
+trigger1 = 1
+value = ifelse(Time % 2 = 0, 3,-1)
+
+[State 1024, 8]
+type = VelAdd
+trigger1 = MoveGuarded = 0
+y = -.07
+
+[State 1024, 8]
+type = DestroySelf
+trigger1 = MoveHit
+trigger2 = ScreenPos X != [0,359]
+trigger3 = ScreenPos Y != [0,239]
+
+;---------------------------------------------------------------------------
+; Shoot Air Tornado While Walking
+[Statedef 1025]
+type    = S
+movetype= A
+physics = S
+ctrl = 0
+velset = 0,0
+
+[State 1025, 1] ;Air Tornado Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1020, 0
+
+[State 1025, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1021
+ownpal = 1
+
+[State 1025, 3]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1022
+ownpal = 1
+
+[State 1025, 4]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1023
+ownpal = 1
+
+[State 1025, 5] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 2
+value = -8
+
+[State 1025-220, 1]
+type = ChangeAnim
+trigger1 = Anim != 220
+value = 220
+
+[State 1025-220, 3]
+type = VelSet
+trigger1 = 1
+x = const(velocity.walk.fwd.x)
+
+[State 1025-220, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 20
+
+[State 1025-220, 6]
+type = ChangeState
+trigger1 = command != "holdfwd"
+value = 1
+
+;---------------------------------------------------------------------------
+; Shoot Air Tornado While Walking Back
+[Statedef 1026]
+type    = S
+movetype= A
+physics = S
+ctrl = 0
+velset = 0,0
+
+[State 1026, 1] ;Air Tornado Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1020, 0
+
+[State 1026, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = -19,-11
+facing = -1
+stateno = 1021
+ownpal = 1
+
+[State 1026, 3]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = -19,-11
+facing = -1
+stateno = 1022
+ownpal = 1
+
+[State 1026, 4]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = -19,-11
+facing = -1
+stateno = 1023
+ownpal = 1
+
+[State 1026, 5] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 2
+value = -8
+
+[State 1026-221, 1]
+type = ChangeAnim
+trigger1 = Anim != 221
+value = 221
+
+[State 1026-221, 3]
+type = VelSet
+trigger1 = 1
+x = const(velocity.walk.back.x)
+
+[State 1026-221, 5]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 20
+
+[State 1026-221, 6]
+type = ChangeState
+trigger1 = command != "holdback"
+value = 1
+
+;---------------------------------------------------------------------------
+; Jump Up Shoot Air Tornado
+[Statedef 1027]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 241
+
+[State 1027, 1] ;Air Tornado Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1020, 0
+
+[State 1027, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1021
+ownpal = 1
+
+[State 1027, 3]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1022
+ownpal = 1
+
+[State 1027, 4]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = 19,-11
+stateno = 1023
+ownpal = 1
+
+[State 1027, 5] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 2
+value = -8
+
+[State 1027-212, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 1027-212, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 1027-212, 5]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 241
+
+[State 1027-212, 6]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 251
+
+[State 1027-212, 7]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1027-212, 8]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 1027-212, 9]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1028
+
+;---------------------------------------------------------------------------
+; Jump Down Shoot Air Tornado
+[Statedef 1028]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+
+[State 1028-213, 1] ; slow descent
+type = VelAdd
+trigger1 = 1
+y = -0.1
+
+[State 1028-213, 2]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 241
+
+[State 1028-213, 3]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 251
+
+[State 1028-213, 4]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1028-213, 5]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+;---------------------------------------------------------------------------
+; Jump Up Shoot Air Tornado Back
+[Statedef 1029]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 251
+
+[State 1029, 1] ;Air Tornado Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1020, 0
+
+[State 1029, 2]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = -19,-11
+facing = -1
+stateno = 1021
+ownpal = 1
+
+[State 1029, 3]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = -19,-11
+facing = -1
+stateno = 1022
+ownpal = 1
+
+[State 1029, 4]
+type = Helper
+trigger1 = Time = 0
+name = "Air Tornado"
+ID = 1020
+pos = -19,-11
+facing = -1
+stateno = 1023
+ownpal = 1
+
+[State 1029, 5] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 2
+value = -8
+
+[State 1029-214, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 1029-214, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 1029-214, 5]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1029-214, 6]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 1029-214, 7]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1028
+
+;---------------------------------------------------------------------------
+; Flash Stop
+[Statedef 1060]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 202
+ctrl = 0
+
+[State 1060, 1] ;Flash Stop Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1060, 0
+
+[State 1060, 2] ;Flash Stop Start
+type = VarSet
+trigger1 = Time = 0
+v = 16
+value = ceil(Var(6)*15/4.0)+1
+
+[State 1060, 3]
+type = Pause
+trigger1 = Time = 0
+time = 9999999999999999999999
+movetime = 9999999999999999999999
+
+[State 1060, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1
+
+;---------------------------------------------------------------------------
+; Flash Stop Backwards
+[Statedef 1061]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 203
+ctrl = 0
+
+[State 1061, 1] ;Flash Stop Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1060, 0
+
+[State 1061, 2] ;Flash Stop Start
+type = VarSet
+trigger1 = Time = 0
+v = 16
+value = ceil(Var(6)*15/4.0)+1
+
+[State 1061, 3]
+type = Pause
+trigger1 = Time = 0
+time = 9999999999999999999999
+movetime = 9999999999999999999999
+
+[State 1061, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1
+
+;---------------------------------------------------------------------------
+;Jump Up Flash Stop
+[Statedef 1062]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 242
+
+[State 1062, 1] ;Flash Stop Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1060, 0
+
+[State 1062, 2] ;Flash Stop Start
+type = VarSet
+trigger1 = Time = 0
+v = 16
+value = ceil(Var(6)*15/4.0)+1
+
+[State 1062, 3]
+type = Pause
+trigger1 = Time = 0
+time = 9999999999999999999999
+movetime = 9999999999999999999999
+
+[State 1062-212, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 1062-212, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 1062-212, 5]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 242
+
+[State 1062-212, 6]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 252
+
+[State 1062-212, 7]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1062-212, 8]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 1062-212, 9]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1063
+
+;---------------------------------------------------------------------------
+;Jump Down Flash Stop
+[Statedef 1063]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+
+[State 1063-213, 1] ; slow descent
+type = VelAdd
+trigger1 = 1
+y = -0.1
+
+[State 1063-213, 2]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 242
+
+[State 1063-213, 3]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 252
+
+[State 1063-213, 4]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1063-213, 5]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+;---------------------------------------------------------------------------
+;JUMP_UP_SHOOTING_BACK
+[Statedef 1064]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 252
+
+[State 1064, 1] ;Flash Stop Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1060, 0
+
+[State 1064, 2] ;Flash Stop Start
+type = VarSet
+trigger1 = Time = 0
+v = 16
+value = ceil(Var(6)*15/4.0)+1
+
+[State 1064, 3]
+type = Pause
+trigger1 = Time = 0
+time = 9999999999999999999999
+movetime = 9999999999999999999999
+
+[State 1064-214, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 1064-214, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 1064-214, 5]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1064-214, 6]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 1064-214, 7]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1063
+
+;---------------------------------------------------------------------------
+; Metal Blade Toss
+[Statedef 1070]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 202
+ctrl = 0
+
+[State 1070, 1] ;Metal Blade Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1070, 0
+
+[State 1070, 2]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+name = "Metal Blade"
+ID = 1070
+pos = -1,-12  ;3-4,-12
+stateno = 1072
+ownpal = 1
+
+[State 1070, 3]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command = "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -2,-12  ;1-3,-15+3
+stateno = 1073
+ownpal = 1
+
+[State 1070, 4]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command != "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -1,-12  ;-1,-16+4
+stateno = 1074
+ownpal = 1
+
+[State 1070, 5]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command = "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -2,-13  ;1-3,-10-3
+stateno = 1075
+ownpal = 1
+
+[State 1070, 6]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command != "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -1,-12  ;-1,-8-4
+stateno = 1076
+ownpal = 1
+
+[State 1070, 7] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 7
+value = -1
+
+[State 1070, 8]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1
+
+;---------------------------------------------------------------------------
+; Metal Blade Toss Backwards
+[Statedef 1071]
+type    = S
+movetype= A
+physics = S
+velset = 0,0
+anim = 203
+ctrl = 0
+
+[State 1071, 1] ;Metal Blade Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1070, 0
+
+[State 1071, 2]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+name = "Metal Blade"
+ID = 1070
+pos = 1,-12  ;-3+4,-12
+facing = -1
+stateno = 1072
+ownpal = 1
+
+[State 1071, 3]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command = "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 2,-12  ;-1+3,-15+3
+facing = -1
+stateno = 1073
+ownpal = 1
+
+[State 1071, 4]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command != "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 1,-12  ;1,-16+4
+facing = -1
+stateno = 1074
+ownpal = 1
+
+[State 1071, 5]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command = "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 2,-13  ;-1+3,-10-3
+facing = -1
+stateno = 1075
+ownpal = 1
+
+[State 1071, 6]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command != "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 1,-12  ;1,-8-4
+facing = -1
+stateno = 1076
+ownpal = 1
+
+[State 1071, 7] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 7
+value = -1
+
+[State 1071, 8]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1
+
+;---------------------------------------------------------------------------
+; Metal Blade - Forward
+[Statedef 1072]
+type    = A
+movetype= A
+physics = N
+velset = 4,0
+
+[State 1072, 1]
+type = ChangeState
+trigger1 = 1
+value = 1077
+
+;---------------------------------------------------------------------------
+; Metal Blade - Diagonal Up
+[Statedef 1073]
+type    = A
+movetype= A
+physics = N
+velset = 3,-3
+
+[State 1073, 1]
+type = ChangeState
+trigger1 = 1
+value = 1077
+
+;---------------------------------------------------------------------------
+; Metal Blade - Up
+[Statedef 1074]
+type    = A
+movetype= A
+physics = N
+velset = 0,-4
+
+[State 1074, 1]
+type = ChangeState
+trigger1 = 1
+value = 1077
+
+;---------------------------------------------------------------------------
+; Metal Blade - Diagonal Down
+[Statedef 1075]
+type    = A
+movetype= A
+physics = N
+velset = 3,3
+
+[State 1075, 1]
+type = ChangeState
+trigger1 = 1
+value = 1077
+
+;---------------------------------------------------------------------------
+; Metal Blade - Down
+[Statedef 1076]
+type    = A
+movetype= A
+physics = N
+velset = 0,4
+
+[State 1076, 1]
+type = ChangeState
+trigger1 = 1
+value = 1077
+
+;---------------------------------------------------------------------------
+; Metal Blade
+[Statedef 1077]
+type    = A
+movetype= A
+physics = N
+anim = 1070
+ctrl = 0
+
+[State 1077, 1]
+type = HitDef
+trigger1 = Time = 0
+attr = S, NP
+numhits = 1
+damage   = 20,5
+sparkno = -1
+guard.sparkno = -1
+guardflag = MA
+animtype = light
+pausetime = 0,0
+hitsound   = S10,1
+guardsound = S10,2
+ground.type = Low
+ground.slidetime = 0
+ground.hittime  = 0
+guard.velocity = 0
+ground.velocity = 0
+air.animtype = back
+air.velocity = 0,0
+airguard.velocity = 0,0
+palfx.time = 3
+palfx.add = 255,255,255
+
+[State 1077, 3]
+type = VelSet
+trigger1 = MoveGuarded
+x = -8
+y = -4
+
+[State 1077, 4]
+type = Width
+trigger1 = 1
+value = -5,-5
+
+[State 1077, 5]
+type = HitOverride
+trigger1 = 1
+attr = SCA, AA, AP, AT
+stateno = 202
+
+[State 1077, 6]
+type = NotHitBy
+trigger1 = 1
+value = SCA, AA, AT
+
+[State 1077, 7]
+type = SprPriority
+trigger1 = 1
+value = ifelse(Time % 2 = 0, 3,-1)
+
+[State 1077, 8]
+type = DestroySelf
+trigger1 = MoveHit
+trigger2 = ScreenPos X != [0,359]
+trigger3 = ScreenPos Y != [0,239]
+
+;---------------------------------------------------------------------------
+;Jump Up Shoot Metal Blade
+[Statedef 1078]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 242
+
+[State 1078, 1] ;Metal Blade Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1070, 0
+
+[State 1078, 2]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+name = "Metal Blade"
+ID = 1070
+pos = -1,-12  ;3-4,-12
+stateno = 1072
+ownpal = 1
+
+[State 1078, 3]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command = "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -2,-12  ;1-3,-15+3
+stateno = 1073
+ownpal = 1
+
+[State 1078, 4]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command != "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -1,-12  ;-1,-16+4
+stateno = 1074
+ownpal = 1
+
+[State 1078, 5]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command = "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -2,-13  ;1-3,-10-3
+stateno = 1075
+ownpal = 1
+
+[State 1078, 6]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command != "holdfwd"
+name = "Metal Blade"
+ID = 1070
+pos = -1,-12  ;-1,-8-4
+stateno = 1076
+ownpal = 1
+
+[State 1078, 7] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 7
+value = -1
+
+[State 1078-212, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 1078-212, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 1078-212, 5]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 242
+
+[State 1078-212, 6]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 252
+
+[State 1078-212, 7]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1078-212, 8]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 1078-212, 9]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1079
+
+;---------------------------------------------------------------------------
+;Jump Down Shoot Metal Blade
+[Statedef 1079]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+
+[State 1079-213, 1] ; slow descent
+type = VelAdd
+trigger1 = 1
+y = -0.1
+
+[State 1079-213, 2]
+type = ChangeAnim
+trigger1 = command = "holdfwd"
+trigger1 = anim != 41
+value = 242
+
+[State 1079-213, 3]
+type = ChangeAnim
+trigger1 = command = "holdback"
+trigger1 = anim != 51
+value = 252
+
+[State 1079-213, 4]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 1079-213, 5]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+;---------------------------------------------------------------------------
+;JUMP_UP_SHOOTING_BACK
+[Statedef 10781]
+type    = A
+movetype= A
+physics = A
+poweradd= 0
+anim = 252
+
+[State 10781, 1] ;Metal Blade Sound
+type = PlaySnd
+trigger1 = Time = 0
+value = 1070, 0
+
+[State 10781, 2]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+name = "Metal Blade"
+ID = 1070
+pos = 1,-12  ;-3+4,-12
+facing = -1
+stateno = 1072
+ownpal = 1
+
+[State 10781, 3]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command = "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 2,-12  ;-1+3,-15+3
+facing = -1
+stateno = 1073
+ownpal = 1
+
+[State 10781, 4]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command = "holdup"
+trigger1 = command != "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 1,-12  ;1,-16+4
+facing = -1
+stateno = 1074
+ownpal = 1
+
+[State 10781, 5]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command = "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 2,-13  ;-1+3,-10-3
+facing = -1
+stateno = 1075
+ownpal = 1
+
+[State 10781, 6]
+type = Helper
+trigger1 = Time = 0
+trigger1 = command != "holdup"
+trigger1 = command = "holddown"
+trigger1 = command != "holdback"
+name = "Metal Blade"
+ID = 1070
+pos = 1,-12  ;1,-8-4
+facing = -1
+stateno = 1076
+ownpal = 1
+
+[State 10781, 7] ;Decrement weapon power left
+type = VarAdd
+trigger1 = Time = 0
+v = 7
+value = -1
+
+[State 10781-214, 3]
+type = VelAdd
+trigger1 = command = "holdb"
+y = -0.15
+
+[State 10781-214, 4]
+type = PosAdd
+trigger1 = command = "holdb"
+y = -1
+
+[State 10781-214, 5]
+type = PosAdd
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 10781-214, 6]
+type = PosAdd
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 10781-214, 7]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1079
+
+;---------------------------------------------------------------------------
+; Megaman 2 Menu Appear
+[Statedef 4000]
+type    = A
+movetype= I
+physics = N
+velset = 0,0
+anim = 4000
+
+[State 4000, 1]
+type = PlaySnd
+trigger1 = Time = 0
+value = 4000,0
+
+[State 4000, 2]
+type = Explod
+trigger1 = Time = 0
+ID = 4000
+anim = 4001
+pos = 192,32
+postype = left
+facing = 1
+removetime = -1
+bindtime = -1
+sprpriority = 4
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4000, 3]
+type = Pause
+trigger1 = Time = 0
+time = 9999999999999999999999
+movetime = 9999999999999999999999
+
+[State 4000, 4] ; Menu Item Number
+type = VarSet
+trigger1 = Time = 0
+v = 0
+value = 1
+
+[State 4000, 5] ;Translate weapon choice into menu item selection
+type = VarSet
+trigger1 = Time >= 14
+trigger1 = parent, Var(0) = [0,5]
+v = 0
+value = parent, Var(0) + 1
+
+[State 4000, 6] ;Translate weapon choice into menu item selection
+type = VarSet
+trigger1 = Time >= 14
+trigger1 = parent, Var(0) = [6,11]
+v = 0
+value = parent, Var(0) - 5
+
+[State 4000, 7]
+type = ChangeState
+trigger1 = Time >= 14
+trigger1 = parent, Var(0) = [0,5]
+value = 4001
+
+[State 4000, 8]
+type = ChangeState
+trigger1 = Time >= 14
+trigger1 = parent, Var(0) = [6,11]
+value = 4002
+
+;---------------------------------------------------------------------------
+; Megaman 2 Menu - Page 1
+[Statedef 4001]
+type    = A
+movetype= I
+physics = N
+
+[State 4001, 1]
+type = RemoveExplod
+trigger1 = Time = 0
+ID = 4010
+
+[State 4001, 2] ;Menu Item 1
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 0
+ID = 4010
+anim = 4010
+pos = 204,53 ;192+12,32+21
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 3] ;Menu Item 2
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 1
+ID = 4010
+anim = 4011
+pos = 204,69 ;192+12,32+37
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 4] ;Menu Item 3
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 2
+ID = 4010
+anim = 4012
+pos = 204,85 ;192+12,32+53
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 5] ;Menu Item 4
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 3
+ID = 4010
+anim = 4013
+pos = 204,101 ;192+12,32+69
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 6] ;Menu Item 5
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 4
+ID = 4010
+anim = 4014
+pos = 204,117 ;192+12,32+85
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 7] ;Menu Item 6
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 5
+ID = 4010
+anim = 4015
+pos = 204,133 ;192+12,32+101
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 8] ;Menu Item 7
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 6
+ID = 4010
+anim = 4016
+pos = 204,149 ;192+12,32+117
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 9] ;Menu Item 8
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 7
+ID = 4010
+anim = 4017
+pos = 204,165 ;192+12,32+133
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4001, 10] ;Menu Item 1 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4029
+pos = 220,53 ;192+28,32+21
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4001, 11] ;Menu Item 2 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + floor(parent,life*27/1000) + 1
+pos = 220,69 ;192+28,32+37
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4001, 12] ;Menu Item 3 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(1)/4.0)
+pos = 220,85 ;192+28,32+53
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4001, 13] ;Menu Item 4 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(2)/4.0)
+pos = 220,101 ;192+28,32+69
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4001, 14] ;Menu Item 5 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(3)/4.0)
+pos = 220,117 ;192+28,32+85
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4001, 15] ;Menu Item 6 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(4)/4.0)
+pos = 220,133 ;192+28,32+101
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4001, 16] ;Menu Item 7 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(5)/4.0)
+pos = 220,149 ;192+28,32+117
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4001, 17]
+type = VarAdd
+trigger1 = parent, command = "down"
+v = 0
+value = 1
+
+[State 4001, 18]
+type = VarAdd
+trigger1 = parent, command = "up"
+v = 0
+value = -1
+
+[State 4001, 19] ;Menu Sound
+type = PlaySnd
+trigger1 = parent, command = "up"
+trigger2 = parent, command = "down"
+value = 4000,1
+
+[State 4001, 20]
+type = VarSet
+trigger1 = Var(0) > 7
+v = 0
+value = 0
+
+[State 4001, 21]
+type = VarSet
+trigger1 = Var(0) < 0
+v = 0
+value = 7
+
+[State 4001, 22]
+type = ChangeState
+trigger1 = parent, command = "start"
+trigger1 = Time > 0
+trigger1 = Var(0) = 0
+value = 4002
+
+[State 4001, 23]
+type = ParentVarSet
+trigger1 = parent, command = "start"
+trigger1 = Time > 0
+trigger1 = Var(0) = [1,6]
+v = 0
+value = Var(0) - 1
+
+[State 4001, 24]
+type = ChangeState
+trigger1 = parent, command = "start"
+trigger1 = Time > 0
+trigger1 = Var(0) = [1,6]
+value = 4003
+
+[State 4001, AI 1]
+type = ParentVarSet
+trigger1 = parent, Var(59) != 0
+v = 0
+value = 1
+
+[State 4001, AI 2]
+type = ChangeState
+trigger1 = parent, Var(59) != 0
+value = 4003
+
+;---------------------------------------------------------------------------
+; Megaman 2 Menu - Page 2
+[Statedef 4002]
+type    = A
+movetype= I
+physics = N
+
+[State 4002, 1]
+type = RemoveExplod
+trigger1 = Time = 0
+ID = 4010
+
+[State 4002, 2] ;Menu Item 1
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 0
+ID = 4010
+anim = 4010
+pos = 204,53 ;192+12,32+21
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4002, 3] ;Menu Item 2
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 1
+ID = 4010
+anim = 4018
+pos = 204,69 ;192+12,32+37
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4002, 4] ;Menu Item 3
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 2
+ID = 4010
+anim = 4019
+pos = 204,85 ;192+12,32+53
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4002, 5] ;Menu Item 4
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 3
+ID = 4010
+anim = 4020
+pos = 204,101 ;192+12,32+69
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4002, 6] ;Menu Item 5
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 4
+ID = 4010
+anim = 4021
+pos = 204,117 ;192+12,32+85
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4002, 7] ;Menu Item 6
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 5
+ID = 4010
+anim = 4022
+pos = 204,133 ;192+12,32+101
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4002, 8] ;Menu Item 7
+type = Explod
+trigger1 = Time % 16 = [0,7]
+trigger2 = Var(0) != 6
+ID = 4010
+anim = 4023
+pos = 204,149 ;192+12,32+117
+postype = left
+facing = 1
+bindtime = -1
+removetime = 1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 1
+
+[State 4002, 9] ;Menu Item 1 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4029
+pos = 220,53 ;192+28,32+21
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4002, 10] ;Menu Item 2 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(6)/4.0)
+pos = 220,69 ;192+28,32+37
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4002, 11] ;Menu Item 3 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(7)/4.0)
+pos = 220,85 ;192+28,32+53
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4002, 12] ;Menu Item 4 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(8)/4.0)
+pos = 220,101 ;192+28,32+69
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4002, 13] ;Menu Item 5 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(9)/4.0)
+pos = 220,117 ;192+28,32+85
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4002, 14] ;Menu Item 6 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(10)/4.0)
+pos = 220,133 ;192+28,32+101
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4002, 15] ;Menu Item 7 Value
+type = Explod
+trigger1 = Time = 0
+ID = 4010
+anim = 4030 + ceil(parent,Var(11)/4.0)
+pos = 220,149 ;192+28,32+117
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4002, 16]
+type = VarAdd
+trigger1 = parent, command = "down"
+v = 0
+value = 1
+
+[State 4002, 17]
+type = VarAdd
+trigger1 = parent, command = "up"
+v = 0
+value = -1
+
+[State 4002, 18] ;Menu Sound
+type = PlaySnd
+trigger1 = parent, command = "up"
+trigger2 = parent, command = "down"
+value = 4000,1
+
+[State 4002, 19]
+type = VarSet
+trigger1 = Var(0) > 6
+v = 0
+value = 0
+
+[State 4002, 20]
+type = VarSet
+trigger1 = Var(0) < 0
+v = 0
+value = 6
+
+[State 4002, 21]
+type = ChangeState
+trigger1 = parent, command = "start"
+trigger1 = Time > 0
+trigger1 = Var(0) = 0
+value = 4001
+
+[State 4002, 22]
+type = ParentVarSet
+trigger1 = parent, command = "start"
+trigger1 = Time > 0
+trigger1 = Var(0) = [1,6]
+v = 0
+value = Var(0) + 5
+
+[State 4002, 23]
+type = ChangeState
+trigger1 = parent, command = "start"
+trigger1 = Time > 0
+trigger1 = Var(0) = [1,6]
+value = 4003
+
+[State 4002, AI 1]
+type = ChangeState
+trigger1 = parent, Var(59) != 0
+value = 4001
+
+;---------------------------------------------------------------------------
+; Megaman 2 Menu Cancel
+[Statedef 4003]
+type    = A
+movetype= I
+physics = N
+
+[State 4003, 1]
+type = RemoveExplod
+trigger1 = Time = 0
+trigger2 = Time = 14
+ID = 4000
+
+[State 4003, 2]
+type = RemoveExplod
+trigger1 = Time = 0
+ID = 4010
+
+[State 4003, 3]
+type = Explod
+trigger1 = Time = 0
+ID = 4000
+anim = 4002
+pos = 192,32
+postype = left
+facing = 1
+bindtime = -1
+removetime = -1
+sprpriority = 5
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State 4003, 4]
+type = Pause
+trigger1 = Time = 14
+time = 0
+
+[State 4003, 5]
+type = DestroySelf
+trigger1 = Time = 14
+
+;---------------------------------------------------------------------------
+; Override common states (use same number to override) :
+;---------------------------------------------------------------------------
+;---------------------------------------------------------------------------
+; Stand
+[Statedef 0]
+type = S
+physics = S
+sprpriority = 0
+
+[State 0, Custom 1]
+type = ChangeState
+triggerall = PrevStateNo != 1
+trigger1 = Ctrl
+trigger2 = PrevStateNo != [190,191]
+trigger2 = PrevStateNo != 5900
+value = 1
+
+[State 0, 1]
+type = ChangeAnim
+trigger1 = Anim != 0 && Anim != 5
+trigger2 = Anim = 5 && AnimTime = 0 ;Turn anim over
+value = 0
+
+[State 0, 2]
+type = VelSet
+trigger1 = Time = 0
+y = 0
+
+[State 0, 3] ;Stop moving if low velocity or 4 ticks pass
+type = VelSet
+trigger1 = abs(vel x) < 2
+trigger2 = Time = 4
+x = 0
+
+[State 0, 4] ;Are you dead?
+type = ChangeState
+trigger1 = !alive
+value = 5050
+
+;---------------------------------------------------------------------------
+; Stand - Custom
+[Statedef 1]
+type = S
+physics = S
+sprpriority = 0
+
+[State 1, 1]
+type = ChangeAnim
+trigger1 = Anim != 0 && Anim != 5
+trigger2 = Anim = 5 && AnimTime = 0 ;Turn anim over
+value = 0
+
+[State 1, 2]
+type = VelSet
+trigger1 = Time = 0
+y = 0
+
+[State 1, 3] ;Stop moving if low velocity or 4 ticks pass
+type = VelSet
+trigger1 = abs(vel x) < 2
+trigger2 = Time = 4
+x = 0
+
+[State 1, 4] ;Are you dead?
+type = ChangeState
+trigger1 = !alive
+value = 5050
+
+[State 1, Custom 1]
+type = CtrlSet
+trigger1 = 1
+value = 0
+
+[State 1, Custom 2] ;Win Game go to stand state
+type = ChangeState
+trigger1 = RoundState = 3
+value = 0
+ctrl = 1
+
+[State 1, Custom 3]
+type = Turn
+trigger1 = P2Dist X < 0
+trigger1 = P2Name != "M-NES Game 1"
+
+;---------------------------------------------------------------------------
+; Stand to Crouch
+[Statedef 10]
+type    = C
+physics = C
+anim = 10
+
+[State 10, 1]
+type = ChangeState
+trigger1 = 1
+value = 1
+
+;---------------------------------------------------------------------------
+; Crouching
+[Statedef 11]
+type    = C
+physics = C
+anim = 11
+sprpriority = 0
+
+[State 11, 1]
+type = ChangeState
+trigger1 = 1
+value = 1
+
+;---------------------------------------------------------------------------
+; Crouch to Stand
+[Statedef 12]
+type    = S
+physics = S
+anim = 12
+
+[State 12, 1]
+type = ChangeState
+trigger1 = 1
+value = 1
+
+;---------------------------------------------------------------------------
+; Walk
+[Statedef 20]
+type    = S
+physics = S
+sprpriority = 0
+
+[State 20, Custom 1]
+type = CtrlSet
+trigger1 = 1
+value = 0
+
+;[State 20, Turn]
+;type = Turn
+;trigger1 = command = "holdback"
+
+[State 20, 1]
+type = VelSet
+trigger1 = command = "holdfwd"
+x = const(velocity.walk.fwd.x)
+
+[State 20, 2]
+type = VelSet
+trigger1 = command = "holdback"
+x = const(velocity.walk.back.x)
+
+[State 20, 3]
+type = ChangeAnim
+triggerall = vel x > 0
+trigger1 = Anim != 20 && Anim != 5
+trigger2 = Anim = 5 && AnimTime = 0
+value = 20
+
+[State 20, 4]
+type = ChangeAnim
+triggerall = vel x < 0
+trigger1 = Anim != 21 && Anim != 5
+trigger2 = Anim = 5 && AnimTime = 0
+value = 21
+
+[State 20, 2]
+type = ChangeState
+trigger1 = command != "holdfwd"
+trigger1 = command != "holdback"
+value = 1
+
+;---------------------------------------------------------------------------
+; Jump Start
+[Statedef 40]
+type    = U
+physics = U
+
+[State 40, 1]
+type = ChangeState
+trigger1 = 1
+value = 1
+
+;---------------------------------------------------------------------------
+; Jump Land
+[Statedef 52]
+type    = S
+physics = S
+ctrl = 0
+anim = 47
+
+[State 52, 1]
+type = VelSet
+trigger1 = Time = 0
+y = 0
+
+[State 52, 2]
+type = PosSet
+trigger1 = Time = 0
+y = 0
+
+[State 52, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1
+
+;---------------------------------------------------------------------------
+;Die (Explod)
+[Statedef 5149]
+type = A
+movetype = I
+physics = N
+anim = 5150
+ctrl = 0
+velset = 0,0
+addlife= -1000
+sprpriority = 7
+
+[State 5149, 1] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4150
+pos = 0,-10
+vel = 0,-.5
+removetime = -1
+sprpriority = 7
+
+[State 5149, 2] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4150
+pos = 0,-10
+vel = -.5,0
+removetime = -1
+sprpriority = 7
+
+[State 5149, 3] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4150
+pos = 0,-10
+vel = 0,.5
+removetime = -1
+sprpriority = 7
+
+[State 5149, 4] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4150
+pos = 0,-10
+vel = .5,0
+removetime = -1
+sprpriority = 7
+
+[State 5149, 5] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4152
+pos = 0,-10
+vel = 0,-2
+removetime = -1
+sprpriority = 7
+
+[State 5149, 6] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4151
+pos = 0,-10
+vel = -1.5,-1.5
+removetime = -1
+sprpriority = 7
+
+[State 5149, 7] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4152
+pos = 0,-10
+vel = -2,0
+removetime = -1
+sprpriority = 7
+
+[State 5149, 8] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4151
+pos = 0,-10
+vel = -1.5,1.5
+removetime = -1
+sprpriority = 7
+
+[State 5149, 9] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4152
+pos = 0,-10
+vel = 0,2
+removetime = -1
+sprpriority = 7
+
+[State 5149, 10] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4151
+pos = 0,-10
+vel = 1.5,1.5
+removetime = -1
+sprpriority = 7
+
+[State 5149, 11] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4152
+pos = 0,-10
+vel = 2,0
+removetime = -1
+sprpriority = 7
+
+[State 5149, 12] ;Dead Explod
+type = Explod
+trigger1 = Time = 0
+anim = 4151
+pos = 0,-10
+vel = 1.5,-1.5
+removetime = -1
+sprpriority = 7
+
+[State 5149, 13] ;Die Explode
+type = PlaySnd
+trigger1 = Time = 0
+value = 11,1
+
+;[State 5149, 14]
+;type = PosSet
+;trigger1 = Time = 0
+;y = 0
+
+[State 5149, 15]
+type = ChangeState
+trigger1 = Time = 0
+value = 5150
+
+;---------------------------------------------------------------------------
+; Initialize (at the start of the round)
+[Statedef 5900]
+type = S
+
+[State 5900, 1] ;Clear all int variables
+type = VarRangeSet
+trigger1 = roundsexisted = 0
+value = 0
+
+[State 5900, 2] ;Clear all float variables
+type = VarRangeSet
+trigger1 = roundsexisted = 0
+fvalue = 0
+
+[State 5900, Air Tornado]
+type = VarSet
+trigger1 = Time = 0
+v = 2
+value = 112
+
+[State 5900, Flash Stop]
+type = VarSet
+trigger1 = Time = 0
+v = 6
+value = 112
+
+[State 5900, Metal Blade]
+type = VarSet
+trigger1 = Time = 0
+v = 7
+value = 112
+
+[State 5900, 3] ;Intro for round 1
+type = ChangeState
+trigger1 = roundno = 1
+value = 190
+
+;---------------------------------------------------------------------------
+; States that are always checked (use -2) :
+;---------------------------------------------------------------------------
+;---------------------------------------------------------------------------
+[Statedef -2]
+
+[State -2, Jump Land]
+type = PlaySnd
+trigger1 = anim = 47
+value = 47, 0
+
+[State -2, Disable Guard]
+type = AssertSpecial
+trigger1 = 1
+flag  = nostandguard
+flag2 = nocrouchguard
+flag3 = noairguard
+
+;[State -2, noautoturn]
+;type = AssertSpecial
+;trigger1 = 1
+;flag = noautoturn
+
+[State -2, Die State]
+type = ChangeState
+trigger1 = Life = 0
+trigger1 = StateNo != 5149
+trigger1 = StateNo != 5150
+value = 5149
+
+[State -2, Weapon Power Bar]
+type = Explod
+trigger1 = Var(0) != 0
+anim = 4060+ceil(Var(Var(0))/4.0)
+pos = 24,17
+postype = left
+bindtime = -1
+removetime = 1
+ownpal = 1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Spark 1]
+type = Explod
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+trigger1 = Var(16) % 21 = 0
+anim = 1060
+pos = floor(Random/2.778),floor(Random/4.167)
+postype = left
+bindtime = -1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Spark 2]
+type = Explod
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+trigger1 = Var(16) % 21 = 0
+anim = 1060
+pos = floor(Random/2.778),floor(Random/4.167)
+postype = left
+bindtime = -1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Spark 3]
+type = Explod
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+trigger1 = Var(16) % 21 = 0
+anim = 1060
+pos = floor(Random/2.778),floor(Random/4.167)
+postype = left
+bindtime = -1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Spark 4]
+type = Explod
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+trigger1 = Var(16) % 21 = 0
+anim = 1060
+pos = floor(Random/2.778),floor(Random/4.167)
+postype = left
+bindtime = -1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Spark 5]
+type = Explod
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+trigger1 = Var(16) % 21 = 0
+anim = 1060
+pos = floor(Random/2.778),floor(Random/4.167)
+postype = left
+bindtime = -1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Spark 6]
+type = Explod
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+trigger1 = Var(16) % 21 = 0
+anim = 1060
+pos = floor(Random/2.778),floor(Random/4.167)
+postype = left
+bindtime = -1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Spark 7]
+type = Explod
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+trigger1 = Var(16) % 21 = 0
+anim = 1060
+pos = floor(Random/2.778),floor(Random/4.167)
+postype = left
+bindtime = -1
+pausemovetime = 9999999999999999999999
+
+[State -2, Flash Stop Decrement]
+type = VarAdd
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+v = 16
+value = -1
+
+[State -2, Flash Stop Decrement 2]
+type = VarSet
+trigger1 = Var(16) > 0
+trigger1 = Var(6) > 0
+trigger1 = Var(0) = 6
+v = 6
+value = ceil((Var(16)-1)*4/15.0)
+
+[State -2, Turn Off Flash Stop Pause]
+type = Pause
+trigger1 = Var(16) = 1
+trigger1 = Var(6) = 0
+trigger1 = Var(0) = 6
+time = 0
+
+[State -2, Remove Flash Stop Explod]
+type = RemoveExplod
+trigger1 = Var(16) = 1
+trigger1 = Var(6) = 0
+trigger1 = Var(0) = 6
+ID = 1060
+
+[State -2, Turn Off Flash Stop VarSet]
+type = VarSet
+trigger1 = Var(16) = 1
+trigger1 = Var(6) = 0
+trigger1 = Var(0) = 6
+v = 16
+value = 0

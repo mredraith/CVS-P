@@ -1,0 +1,18 @@
+; Definition file for NES Megaman
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name = "NES Megaman"
+displayname = "Mega Man"
+
+; Files for the player
+[Files]
+cmd     = nesmegaman.cmd   ;Command set
+cns     = nesmegaman.cns   ;Constants
+st      = nesmegaman.cns   ;States
+stcommon = common1.cns    ;Common states
+sprite  = nesmegaman.sff   ;Sprite
+anim    = nesmegaman.air   ;Animation
+sound   = nesmegaman.snd   ;Sound
+pal1    = nesmegaman.act   ;Palettes (can have up to 12)
