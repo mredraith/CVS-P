@@ -77,7 +77,7 @@ movetype= I
 physics = S
 velset = 0
 anim = 150080
-ctrl = 1
+ctrl = 0
 
 [State 1, 1]
 type = VarSet
