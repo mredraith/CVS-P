@@ -1,11 +1,10 @@
 ; _________________________________________
 ;| Gen by mwryly & varo_hades              |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;===<HELPER STATES>====
-;==
+;HELPER STATES
 
-;====<PARRY HELPER>=
+
+;PARRY HELPER
 [StateDef 765]
 type = A
 physics = N
@@ -132,7 +131,7 @@ trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
 
 
-;=<ZANEI HIT>=
+;ZANEI HIT
 [StateDef 3002]
 type = S
 physics = N
@@ -310,7 +309,7 @@ type = DestroySelf
 trigger1 = MoveContact
 
 
-;=<ZANEI FINAL HIT>=
+;ZANEI FINAL HIT
 [StateDef 3004]
 type = S
 physics = N
@@ -444,7 +443,7 @@ persistent = 0
 type = DestroySelf
 trigger1 = MoveContact
 
-;=<ZANEI HIT MAX>=
+;ZANEI HIT MAX
 [StateDef 3006]
 type = S
 physics = N
@@ -622,7 +621,7 @@ type = DestroySelf
 trigger1 = MoveContact
 
 
-;=<ZANEI FINAL HIT MAX>=
+;ZANEI FINAL HIT MAX
 [StateDef 3008]
 type = S
 physics = N
@@ -756,7 +755,7 @@ persistent = 0
 type = DestroySelf
 trigger1 = MoveContact
 
-;==<TURNING>===
+;TURNING
 [Statedef 6000]
 physics = N
 sprpriority = 0
@@ -781,7 +780,7 @@ value = IfElse(Root, Var(1), 10006, 7)
 type = DestroySelf
 trigger1 = Time > 5
 trigger2 = !(Root, Stateno = 52) && !(Root, Anim = 5) && !(Root, Stateno = 11)
-;====<SONIC HURRICANE PROJECTILE>=
+;SONIC HURRICANE PROJECTILE
 [StateDef 3205]
 type = S
 moveType = A
@@ -1078,8 +1077,8 @@ type = ChangeState
 trigger1 = Time = 8
 value = 1008
 
-;====< KICKED by EX DANKUU KYAKU >=
-;--- Hit Pause ---
+;KICKED by EX DANKUU KYAKU
+;Hit Pause
 [Statedef 1111200]
 type = A
 movetype = H

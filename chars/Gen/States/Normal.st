@@ -1,11 +1,9 @@
 ; _________________________________________
 ;| Gen by mwryly & varo_hades              |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<NORMAL MOVES>====
-;==
+;NORMAL MOVES
 
-;===<STANDING LIGHT PUNCH (MANTIS)>==
+;STANDING LIGHT PUNCH (MANTIS)
 [StateDef 200]
 type = S
 physics = S
@@ -82,7 +80,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING MEDIUM PUNCH (MANTIS)>==
+;STANDING MEDIUM PUNCH (MANTIS)
 [StateDef 210]
 type = S
 physics = S
@@ -169,7 +167,7 @@ value = 0
 ctrl = 1
 
 
-;===<STANDING HEAVY PUNCH (MANTIS)>==
+;STANDING HEAVY PUNCH (MANTIS)
 [StateDef 220]
 type = S
 physics = S
@@ -343,7 +341,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING LIGHT KICK (MANTIS)>==
+;STANDING LIGHT KICK (MANTIS)
 [StateDef 230]
 type = S
 physics = S
@@ -420,7 +418,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING MEDIUM KICK (MANTIS)>==
+;STANDING MEDIUM KICK (MANTIS)
 [StateDef 240]
 type = S
 physics = S
@@ -504,7 +502,7 @@ value = 0
 ctrl = 1
 
 
-;===<STANDING HEAVY KICK (MANTIS)>==
+;STANDING HEAVY KICK (MANTIS)
 [StateDef 250]
 type = S
 physics = S
@@ -601,7 +599,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING LIGHT PUNCH (CRANE)>==
+;STANDING LIGHT PUNCH (CRANE)
 [StateDef 10200]
 type = S
 physics = S
@@ -678,7 +676,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING MEDIUM PUNCH (CRANE)>==
+;STANDING MEDIUM PUNCH (CRANE)
 [StateDef 10210]
 type = S
 physics = S
@@ -870,7 +868,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING HEAVY PUNCH (CRANE)>==
+;STANDING HEAVY PUNCH (CRANE)
 [StateDef 10220]
 type = S
 physics = S
@@ -1011,7 +1009,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===< STANDING LIGHT KICK (CRANE) >==
+; STANDING LIGHT KICK (CRANE) >==
 [StateDef 10230]
 type = S
 physics = S
@@ -1109,7 +1107,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING MEDIUM KICK (CRANE)>==
+;STANDING MEDIUM KICK (CRANE)
 [StateDef 10240]
 type = S
 physics = S
@@ -1195,7 +1193,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<STANDING HEAVY KICK (CRANE)>==
+;STANDING HEAVY KICK (CRANE)
 [StateDef 10250]
 type = S
 physics = S
@@ -1348,7 +1346,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<CROUCHING LIGHT PUNCH (MANTIS)>==
+;CROUCHING LIGHT PUNCH (MANTIS)
 [StateDef 400]
 type = C
 physics = C
@@ -1427,7 +1425,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING MEDIUM PUNCH (MANTIS)>==
+;CROUCHING MEDIUM PUNCH (MANTIS)
 [StateDef 410]
 type = C
 physics = C
@@ -1506,7 +1504,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING HEAVY PUNCH (MANTIS)>==
+;CROUCHING HEAVY PUNCH (MANTIS)
 [StateDef 420]
 type = C
 physics = C
@@ -1594,7 +1592,7 @@ value = 11
 ctrl = 1
 
 
-;===<CROUCHING LIGHT KICK (MANTIS)>==
+;CROUCHING LIGHT KICK (MANTIS)
 [StateDef 430]
 type = C
 physics = C
@@ -1673,7 +1671,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING MEDIUM KICK (MANTIS)>==
+;CROUCHING MEDIUM KICK (MANTIS)
 [StateDef 440]
 type = C
 physics = C
@@ -1761,7 +1759,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING HEAVY KICK (MANTIS)>==
+;CROUCHING HEAVY KICK (MANTIS)
 [StateDef 450]
 type = C
 physics = C
@@ -1838,7 +1836,7 @@ value = 11
 ctrl = 1
 
 
-;===<CROUCHING LIGHT PUNCH (CRANE)>==
+;CROUCHING LIGHT PUNCH (CRANE)
 [StateDef 10400]
 type = C
 physics = C
@@ -1917,7 +1915,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING MEDIUM PUNCH (CRANE)>==
+;CROUCHING MEDIUM PUNCH (CRANE)
 [StateDef 10410]
 type = C
 physics = C
@@ -1996,7 +1994,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING HEAVY PUNCH (CRANE)>==
+;CROUCHING HEAVY PUNCH (CRANE)
 [StateDef 10420]
 type = C
 physics = C
@@ -2085,7 +2083,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING LIGHT KICK (CRANE)>==
+;CROUCHING LIGHT KICK (CRANE)
 [StateDef 10430]
 type = C
 physics = C
@@ -2169,7 +2167,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;===<CROUCHING MEDIUM KICK (CRANE)>==
+;CROUCHING MEDIUM KICK (CRANE)
 [StateDef 10440]
 type = C
 physics = C
@@ -2257,7 +2255,7 @@ ctrl = 1
 
 
 
-;===<CROUCHING HEAVY KICK (CRANE)>==
+;CROUCHING HEAVY KICK (CRANE)
 [StateDef 10450]
 type = C
 physics = C
@@ -2366,7 +2364,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;===<JUMPING LIGHT PUNCH>==
+;JUMPING LIGHT PUNCH
 [StateDef 600]
 type = A
 physics = N
@@ -2449,7 +2447,7 @@ value = 52
 
 
 
-;===<JUMPING MEDIUM PUNCH (MANTIS)>==
+;JUMPING MEDIUM PUNCH (MANTIS)
 [StateDef 610]
 type = A
 physics = N
@@ -2530,7 +2528,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<JUMPING HEAVY PUNCH (MANTIS)>==
+;JUMPING HEAVY PUNCH (MANTIS)
 [StateDef 620]
 type = A
 physics = N
@@ -2654,7 +2652,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<JUMPING LIGHT KICK (MANTIS)>==
+;JUMPING LIGHT KICK (MANTIS)
 [StateDef 630]
 type = A
 physics = N
@@ -2735,7 +2733,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<JUMPING MEDIUM KICK (MANTIS)>==
+;JUMPING MEDIUM KICK (MANTIS)
 [StateDef 640]
 type = A
 physics = N
@@ -2817,7 +2815,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;===<JUMPING HEAVY KICK (MANTIS)>==
+;JUMPING HEAVY KICK (MANTIS)
 [StateDef 650]
 type = A
 physics = N
@@ -2898,7 +2896,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<JUMPING MEDIUM PUNCH (CRANE)>==
+;JUMPING MEDIUM PUNCH (CRANE)
 [StateDef 10610]
 type = A
 physics = N
@@ -2979,7 +2977,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<JUMPING HEAVY PUNCH (CRANE)>==
+;JUMPING HEAVY PUNCH (CRANE)
 [StateDef 10620]
 type = A
 physics = N
@@ -3060,7 +3058,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<JUMPING LIGHT KICK (CRANE)>==
+;JUMPING LIGHT KICK (CRANE)
 [StateDef 10630]
 type = A
 physics = N
@@ -3141,7 +3139,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<JUMPING MEDIUM KICK (CRANE)>==
+;JUMPING MEDIUM KICK (CRANE)
 [StateDef 10640]
 type = A
 physics = N
@@ -3272,7 +3270,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;===<JUMPING HEAVY KICK (CRANE)>==
+;JUMPING HEAVY KICK (CRANE)
 [StateDef 10650]
 type = A
 physics = N
@@ -3442,7 +3440,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<THROW ATTEMPT>==
+;THROW ATTEMPT>==
 [StateDef 800]
 type = S
 physics = S
@@ -3544,7 +3542,7 @@ ctrl = 1
 
 
 
-;===<THROW SWITCHING SIDES>==
+;THROW SWITCHING SIDES>==
 [StateDef 805]
 type = S
 moveType = A
@@ -3623,7 +3621,7 @@ value = ifElse(var(10), 820, 810)
 
 
 
-;===<THROW SWITCHING SIDES (TARGET)>==
+;THROW SWITCHING SIDES (TARGET)
 [StateDef 806]
 type = A
 moveType = H
@@ -3657,7 +3655,7 @@ ctrl = 1
 
 
 
-;===<JUDO THROW>==
+;JUDO THROW>==
 [Statedef 810]
 type = A
 physics = N
@@ -3791,7 +3789,7 @@ ctrl = 1
 
 
 
-;===<JUDO THROW (TARGET)>==
+;JUDO THROW (TARGET)
 ;Being Thrown
 [StateDef 815]
 type = A
@@ -3859,7 +3857,7 @@ type = SelfState
 trigger1 = pos y > -vel y
 value = 5100
 
-;===<DRAGON SUPLEX>==
+;DRAGON SUPLEX>==
 [StateDef 820]
 type = S
 physics = N
@@ -4002,7 +4000,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<DRAGON SUPLEX (TARGET)>==
+;DRAGON SUPLEX (TARGET)
 ;Being Hit
 [StateDef 825]
 type = A
@@ -4062,7 +4060,7 @@ type = SelfState
 trigger1 = pos y > -vel y
 value = 5100
 
-;===<AIR THROW ATTEMPT>==
+;AIR THROW ATTEMPT>==
 [StateDef 850]
 type = A
 physics = N
@@ -4170,7 +4168,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===<FLYING MARE>==
+;FLYING MARE>==
 [StateDef 860]
 type = A
 physics = N
@@ -4356,7 +4354,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 52
 
-;===<FLYING MARE (TARGET)>==
+;FLYING MARE (TARGET)
 ;In Air
 [StateDef 865]
 type = S
@@ -4401,7 +4399,7 @@ type = selfstate
 Trigger1 = time = 5
 value = 5050
 
-;===<FLYING BUSTER DROP>==
+;FLYING BUSTER DROP>==
 [StateDef 870]
 type = A
 physics = N
@@ -4610,7 +4608,7 @@ ctrl = 1
 
 
 
-;===<FLYING BUSTER DROP (TARGET)>==
+;FLYING BUSTER DROP (TARGET)
 ;In Air
 [StateDef 875]
 type = A
@@ -4711,7 +4709,7 @@ value = 5100
 
 
 
-;===<THROW ESCAPED>==
+;THROW ESCAPED>==
 [StateDef 890]
 type = S
 physics = N
@@ -4868,7 +4866,7 @@ ctrl = 1
 
 
 
-;===<THROW ESCAPE MIDAIR>==
+;THROW ESCAPE MIDAIR>==
 [StateDef 892]
 type = A
 physics = N
