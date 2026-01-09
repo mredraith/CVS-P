@@ -1664,10 +1664,11 @@ type = PlaySnd
 trigger1 = AnimElem = 1 && anim = 601
 value = S0,4
 
-[State 600, Hit]
+[State 600, Hit Full Jump]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 1
 trigger1 = !Time
+trigger1 = var(70) = 1
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 0
 animtype = Light
@@ -1687,6 +1688,50 @@ ground.type = High
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
 guard.hittime = 12
+ground.velocity = -4
+guard.velocity = -4
+airguard.ctrlTime = 16
+air.animType = Back
+fall.animType = Back
+air.type = High
+air.velocity = -3.2, -3.5
+airguard.velocity = -4.75, -0.5
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+air.hittime = 120
+yaccel = .58
+fall = 0
+fall.recover = 1
+fall.recovertime = 120
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+
+[State 600, Hit Low Jump]
+type = HitDef
+;trigger1 = !var(16) && var(15) < 1
+trigger1 = !Time
+trigger1 = var(70) = 0
+attr = A, NA
+damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 0
+animtype = Light
+guardflag = MA
+hitflag = MAF
+ID = 200
+getpower = 10 * !var(20), 0
+givepower = 30, 30
+priority = 4, Hit
+pausetime = 7, 7
+sparkNo = -1 + 0 * (var(33) := 8015)
+guard.sparkNo = -1 + 0 * (var(34) := 8000)
+sparkXY = -10 + 0 * (var(35) := 80), var(36):=-50
+hitsound = S2, 9
+guardsound = s130, 0
+ground.type = High
+ground.slidetime = 4 + 2*var(9)
+ground.hittime = 4 + 2*var(9)
+guard.hittime = 4
 ground.velocity = -4
 guard.velocity = -4
 airguard.ctrlTime = 16
@@ -1785,10 +1830,11 @@ trigger1 = AnimElem = 2
 value = 0, ifElse(Random < 500, 14, 15)
 channel = 0
 
-[State 610, Hit]
+[State 610, Hit Full Jump]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 1
 trigger1 = !Time
+trigger1 = var(70) = 1
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 46 < 7, 7, fvar(11) * 46)), 0
 animtype = Medium
@@ -1808,6 +1854,50 @@ ground.type = High
 ground.slidetime = 12 + 3*var(9)
 ground.hittime = 12 + 3*var(9)
 guard.hittime = 15
+ground.velocity = -4
+guard.velocity = -4
+air.animType = Back
+fall.animType = Back
+air.type = High
+air.velocity = -3.2, -3.5
+airguard.velocity = -5.5, -1
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+air.hittime = 120
+airguard.ctrlTime = 16
+yaccel = .58
+fall = 0
+fall.recover = 1
+fall.recovertime = 120
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+
+[State 610, Hit Low Jump]
+type = HitDef
+;trigger1 = !var(16) && var(15) < 1
+trigger1 = !Time
+trigger1 = var(70) = 0
+attr = A, NA
+damage = ceil(ifElse(fvar(11) * 46 < 7, 7, fvar(11) * 46)), 0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+ID = 200
+getpower = 20 * !var(20), 0
+givepower = 30, 30
+priority = 4, Hit
+pausetime = 13,14
+sparkNo = -1 + 0 * (var(33) := 8015)
+guard.sparkNo = -1 + 0 * (var(34) := 8000)
+sparkXY = -10 + 0 * (var(35) := 85), var(36) := -40
+hitsound = S2, 9
+guardsound = s130, 0
+ground.type = High
+ground.slidetime = 3 + 3*var(9)
+ground.hittime = 3 + 3*var(9)
+guard.hittime = 4
 ground.velocity = -4
 guard.velocity = -4
 air.animType = Back
@@ -1903,7 +1993,7 @@ getpower = 30 * !var(20), 0
 animtype = Heavy
 air.animtype = Back
 fall.animtype = Back
-guardflag = HA
+guardflag = MA
 hitflag = MAF
 priority = 4, Hit
 pausetime = 6,6
@@ -2179,10 +2269,11 @@ type=playsnd
 trigger1= animelem=2
 value=1,3
 
-[State 630, Hit]
+[State 630, Hit Full Jump]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 1
 trigger1 = !Time
+trigger1 = var(70) = 1
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 0
 animtype = Light
@@ -2204,6 +2295,50 @@ ground.type = High
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
 guard.hittime = 12
+ground.velocity = -4
+guard.velocity = -4
+air.type = High
+airguard.ctrlTime = 16
+air.velocity = -3.2, -3.5
+airguard.velocity = -5, -1
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+air.hittime = 120
+yaccel = .58
+fall = 0
+fall.recover = 1
+fall.recovertime = 120
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+
+[State 630, Hit Low Jump]
+type = HitDef
+;trigger1 = !var(16) && var(15) < 1
+trigger1 = !Time
+trigger1 = var(70) = 0
+attr = A, NA
+damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 0
+animtype = Light
+guardflag = MA
+hitflag = MAF
+ID = 200
+getpower = 10 * !var(20), 0
+givepower = 30, 30
+priority = 4, Hit
+pausetime = 13,14
+sparkNo = -1 + 0 * (var(33) := 8011)
+guard.sparkNo = -1 + 0 * (var(34) := 8000)
+sparkXY = -10 + 0 * (var(35) := 80), var(36):=-40
+hitsound = S2, 4
+guardsound = s130, 0
+air.animType = Back
+fall.animType = Back
+ground.type = High
+ground.slidetime = 3 + 2*var(9)
+ground.hittime = 3 + 2*var(9)
+guard.hittime = 3
 ground.velocity = -4
 guard.velocity = -4
 air.type = High
@@ -2288,10 +2423,11 @@ removeongethit = 1
 ignorehitpause = 0
 ;persistent =
 
-[State 0, Explod]
+[State 0, Explod Full Jump]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 1
 trigger1 = animelem = 3
+trigger1 = var(70) = 1
 attr = A, NA
 damage = 12, 0
 getpower = 30 * !var(20), 0
@@ -2310,6 +2446,41 @@ guardsound = s130, 0
 ground.type = High
 ground.slidetime = 5
 ground.hittime = 12
+ground.velocity = -7
+air.type = Low
+airguard.velocity = -3, 5
+air.velocity = -4, 9
+fall = 0
+air.fall = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=3
+
+[State 0, Explod Low Jump]
+type = HitDef
+;trigger1 = !var(16) && var(15) < 1
+trigger1 = animelem = 3
+trigger1 = var(70) = 0
+attr = A, NA
+damage = 12, 0
+getpower = 30 * !var(20), 0
+animtype = Heavy
+air.animtype = Back
+fall.animtype = Back
+guardflag = HA
+hitflag = MAF
+priority = 4, Hit
+pausetime = 8,8
+sparkNo = -1 + 0 * (var(33) := 8012)
+guard.sparkNo = -1 + 0 * (var(34) := 8000)
+sparkXY = -10 + 0 * (var(35) := 85), var(36) := -20
+hitsound = S2, 5
+guardsound = s130, 0
+ground.type = High
+ground.slidetime = 2
+ground.hittime = 3
 ground.velocity = -7
 air.type = Low
 airguard.velocity = -3, 5

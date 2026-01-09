@@ -1282,13 +1282,13 @@ sparkxy = -1
 hitsound = s2,10
 guardsound = s130, 0
 ground.type = High
-ground.slidetime = 3
-ground.hittime = 3
-air.hittime = 3
-ground.velocity = -5
-airguard.velocity = -5
+ground.slidetime = 0
+ground.hittime = 0
+air.hittime = 0
+ground.velocity = -1
+airguard.velocity = -1
 air.type = Low
-air.velocity = -5,-1
+air.velocity = -1,-1
 
 [State 1006, HitSpark]
 type = Helper

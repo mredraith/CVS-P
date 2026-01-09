@@ -1607,6 +1607,16 @@ trigger1 = !AnimTime && var(3) = 3
 x = ifElse(!sysvar(1), const(velocity.jump.neu.x), ifElse(sysvar(1) = 1, const(velocity.runjump.fwd.x), const(velocity.runjump.back.x)))
 y = ifElse(!sysvar(1), const(velocity.runjump.y), const(velocity.jump.y))
 
+[State 40, Clear height flag]
+type = VarSet
+trigger1 = Time = 0
+var(70) = 0
+
+[State 40, Store jump start Y]
+type = VarSet
+trigger1 = Time = 0
+var(67) = Pos Y
+
 [State 40, End]
 type = ChangeState
 trigger1 = !AnimTime
@@ -1628,6 +1638,23 @@ trigger1 = 1
 type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
+
+[State 50, Init max height]
+type = VarSet
+trigger1 = Time = 0
+var(69) = Pos Y
+
+[State 50, Update max height]
+type = VarSet
+trigger1 = Pos Y < var(11)
+var(69) = Pos Y
+
+[State 50, Set height flag]
+type = VarSet
+trigger1 = var(70) = 0
+trigger1 = var(69) <= -80
+var(70) = 1
+
 
 ;----------------------------------
 ; Mega Man style air control

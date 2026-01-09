@@ -2021,6 +2021,7 @@ trigger2 = var(21)
 type = ChangeState
 value = 620
 triggerall = command = "z"
+triggerall = Abs(Vel Y) >= 2.0
 trigger1 = statetype = A
 trigger1 = ctrl
 ;trigger2 = stateno = 610 && movecontact
