@@ -43,7 +43,7 @@ jump.back = 0        ;Jump back Speed (x, y)
 jump.fwd = 0         ;Jump forward Speed (x, y)
 
 [Movement]
-yaccel = .43          ;Vertical acceleration
+yaccel = .25          ;Vertical acceleration
 stand.friction = .85  ;Friction coefficient when standing
 crouch.friction = .82 ;Friction coefficient when crouching
 
@@ -287,16 +287,6 @@ trigger1 = time = 0
 x = 0
 y = -4.8
 
-[State 210, 2]
-type = VelAdd
-trigger1 = command = "holdb"
-y = -0.15
-
-[State 210, 3]
-type = PosAdd
-trigger1 = command = "holdb"
-y = -1
-
 [State 210, 4]
 type = ChangeAnim
 trigger1 = command = "holdfwd"
@@ -318,6 +308,13 @@ x = const(velocity.walk.fwd.x)
 type = PosAdd
 trigger1 = command = "holdback"
 x = const(velocity.walk.back.x)
+
+; Variable jump height (cut jump on UP release)
+[State 210, Jump Cut]
+type = VelSet
+trigger1 = vel y < 0
+trigger1 = !command = "holda"
+y = 0
 
 [State 210, 8]
 type = ChangeState
@@ -382,16 +379,6 @@ pos = 13, -16
 stateno = 201
 ownpal = 1
 
-[State 212, 3]
-type = VelAdd
-trigger1 = command = "holdb"
-y = -0.15
-
-[State 212, 4]
-type = PosAdd
-trigger1 = command = "holdb"
-y = -1
-
 [State 212, 5]
 type = ChangeAnim
 trigger1 = command = "holdfwd"
@@ -418,6 +405,12 @@ x = const(velocity.walk.back.x)
 type = ChangeState
 trigger1 = Vel Y >= 0
 value = 213
+
+[State 212, Jump Cut]
+type = VelSet
+trigger1 = vel y < 0
+trigger1 = !command = "holda"
+y = 0
 
 ;---------------------------------------------------------------------------
 ;JUMP_DOWN_SHOOTING
@@ -478,16 +471,6 @@ stateno = 201
 ownpal = 1
 facing = -1
 
-[State 214, 3]
-type = VelAdd
-trigger1 = command = "holdb"
-y = -0.15
-
-[State 214, 4]
-type = PosAdd
-trigger1 = command = "holdb"
-y = -1
-
 [State 214, 5]
 type = PosAdd
 trigger1 = command = "holdfwd"
@@ -502,6 +485,12 @@ x = const(velocity.walk.back.x)
 type = ChangeState
 trigger1 = Vel Y >= 0
 value = 213
+
+[State 214, Jump Cut]
+type = VelSet
+trigger1 = vel y < 0
+trigger1 = !command = "holda"
+y = 0
 
 ;---------------------------------------------------------------------------
 ; MEGABUSTER WHILE WALKING
@@ -937,16 +926,6 @@ trigger1 = Time = 0
 v = 2
 value = -8
 
-[State 1027-212, 3]
-type = VelAdd
-trigger1 = command = "holdb"
-y = -0.15
-
-[State 1027-212, 4]
-type = PosAdd
-trigger1 = command = "holdb"
-y = -1
-
 [State 1027-212, 5]
 type = ChangeAnim
 trigger1 = command = "holdfwd"
@@ -968,6 +947,12 @@ x = const(velocity.walk.fwd.x)
 type = PosAdd
 trigger1 = command = "holdback"
 x = const(velocity.walk.back.x)
+
+[State 1027, Jump Cut]
+type = VelSet
+trigger1 = vel y < 0
+trigger1 = !command = "holda"
+y = 0
 
 [State 1027-212, 9]
 type = ChangeState
@@ -1059,16 +1044,6 @@ trigger1 = Time = 0
 v = 2
 value = -8
 
-[State 1029-214, 3]
-type = VelAdd
-trigger1 = command = "holdb"
-y = -0.15
-
-[State 1029-214, 4]
-type = PosAdd
-trigger1 = command = "holdb"
-y = -1
-
 [State 1029-214, 5]
 type = PosAdd
 trigger1 = command = "holdfwd"
@@ -1078,6 +1053,12 @@ x = const(velocity.walk.fwd.x)
 type = PosAdd
 trigger1 = command = "holdback"
 x = const(velocity.walk.back.x)
+
+[State 1029, Jump Cut]
+type = VelSet
+trigger1 = vel y < 0
+trigger1 = !command = "holda"
+y = 0
 
 [State 1029-214, 7]
 type = ChangeState
@@ -1174,16 +1155,6 @@ trigger1 = Time = 0
 time = 9999999999999999999999
 movetime = 9999999999999999999999
 
-[State 1062-212, 3]
-type = VelAdd
-trigger1 = command = "holdb"
-y = -0.15
-
-[State 1062-212, 4]
-type = PosAdd
-trigger1 = command = "holdb"
-y = -1
-
 [State 1062-212, 5]
 type = ChangeAnim
 trigger1 = command = "holdfwd"
@@ -1205,6 +1176,12 @@ x = const(velocity.walk.fwd.x)
 type = PosAdd
 trigger1 = command = "holdback"
 x = const(velocity.walk.back.x)
+
+[State 1062, Jump Cut]
+type = VelSet
+trigger1 = vel y < 0
+trigger1 = !command = "holda"
+y = 0
 
 [State 1062-212, 9]
 type = ChangeState
@@ -1272,16 +1249,6 @@ trigger1 = Time = 0
 time = 9999999999999999999999
 movetime = 9999999999999999999999
 
-[State 1064-214, 3]
-type = VelAdd
-trigger1 = command = "holdb"
-y = -0.15
-
-[State 1064-214, 4]
-type = PosAdd
-trigger1 = command = "holdb"
-y = -1
-
 [State 1064-214, 5]
 type = PosAdd
 trigger1 = command = "holdfwd"
@@ -1291,6 +1258,12 @@ x = const(velocity.walk.fwd.x)
 type = PosAdd
 trigger1 = command = "holdback"
 x = const(velocity.walk.back.x)
+
+[State 1064, Jump Cut]
+type = VelSet
+trigger1 = vel y < 0
+trigger1 = !command = "holda"
+y = 0
 
 [State 1064-214, 7]
 type = ChangeState
