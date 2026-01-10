@@ -1,0 +1,272 @@
+# Universal Clashing System by Phantom.of.the.Server
+# For Ikemen GO February 2025 build and above
+
+# See the readme for installation instructions
+
+
+#===============================================================================
+# Configuration
+#===============================================================================
+
+[Function F_PotS_Clashing_Config()]
+
+mapset{map: "_pots_clashing_cfg_prioritycheck"; value: 1}		# Clash only if both attacks have the same priority
+mapset{map: "_pots_clashing_cfg_attrcheck"; value: 1}			# Clash only if both attacks are of the same type (normal, special, super)
+mapset{map: "_pots_clashing_cfg_clsn2check"; value: 1}			# Clash only if the hurtboxes are not hit
+mapset{map: "_pots_clashing_cfg_flagguard"; value: 1}			# Makes a clash count as if the attacks were guarded
+mapset{map: "_pots_clashing_cfg_pause"; value: 15}				# Duration of pause upon a clash
+mapset{map: "_pots_clashing_cfg_zoom"; value: 1.1}				# Amount to zoom during a clash
+mapset{map: "_pots_clashing_cfg_simul"; value: 0}				# Allow clashes during simul mode
+
+
+
+#===============================================================================
+# Negative states
+#===============================================================================
+
+[Statedef +1]
+
+ignorehitpause if !ishelper {
+
+	# Run config
+	if roundState = 0 {
+		call F_PotS_Clashing_Config();
+	}
+
+	if roundstate = 2
+	&& (map(_pots_clashing_cfg_simul) != 0 || (teammode != Simul && p2, teammode != Simul)) # Check simul mode
+	&& ID > p2, ID # Run code from last player that is processed
+	&& ID = p2, p2, ID # Ensure both players are referring to each other
+	&& movetype = A
+	&& p2movetype = A
+	&& hitdefattr = SCA, AA
+	&& p2, hitdefattr = SCA, AA
+	&& moveguarded = 0
+	&& p2, moveguarded = 0
+	&& movereversed = 0
+	&& p2, movereversed = 0
+	&& reversaldefattr != SCA, AA, AP, AT
+	&& p2, reversaldefattr != SCA, AA, AP, AT
+	&& (map(_pots_clashing_cfg_prioritycheck) = 0 || (hitdefvar(priority) = p2, hitdefvar(priority))) {	# Check priority
+
+		# Check attack attributes
+		let attrcheckok = 0;
+		if map(_pots_clashing_cfg_attrcheck) {
+			if hitdefattr = SCA, NA && p2, hitdefattr = SCA, NA
+			|| hitdefattr = SCA, SA && p2, hitdefattr = SCA, SA
+			|| hitdefattr = SCA, HA && p2, hitdefattr = SCA, HA {
+				let attrcheckok = 1;
+			}
+		} else {
+			let attrcheckok = 1;
+		}
+
+		# Check if the chars can hit each other
+		let p1canhitp2 = 0;
+		let p2canhitp1 = 0;
+		# Check if player can hit enemy
+		if cond(hitdefattr = S, NA, p2, hitbyattr(S, NA), 1)
+		&& cond(hitdefattr = C, NA, p2, hitbyattr(C, NA), 1)
+		&& cond(hitdefattr = A, NA, p2, hitbyattr(A, NA), 1)
+		&& cond(hitdefattr = S, SA, p2, hitbyattr(S, SA), 1)
+		&& cond(hitdefattr = C, SA, p2, hitbyattr(C, SA), 1)
+		&& cond(hitdefattr = A, SA, p2, hitbyattr(A, SA), 1)
+		&& cond(hitdefattr = S, HA, p2, hitbyattr(S, HA), 1)
+		&& cond(hitdefattr = C, HA, p2, hitbyattr(C, HA), 1)
+		&& cond(hitdefattr = A, HA, p2, hitbyattr(A, HA), 1) {
+			let p1canhitp2 = 1;
+		}
+		# Check if enemy can hit player
+		if cond(p2, hitdefattr = S, NA, hitbyattr(S, NA), 1)
+		&& cond(p2, hitdefattr = C, NA, hitbyattr(C, NA), 1)
+		&& cond(p2, hitdefattr = A, NA, hitbyattr(A, NA), 1)
+		&& cond(p2, hitdefattr = S, SA, hitbyattr(S, SA), 1)
+		&& cond(p2, hitdefattr = C, SA, hitbyattr(C, SA), 1)
+		&& cond(p2, hitdefattr = A, SA, hitbyattr(A, SA), 1)
+		&& cond(p2, hitdefattr = S, HA, hitbyattr(S, HA), 1)
+		&& cond(p2, hitdefattr = C, HA, hitbyattr(C, HA), 1)
+		&& cond(p2, hitdefattr = A, HA, hitbyattr(A, HA), 1) {
+			let p2canhitp1 = 1;
+		}
+
+		# If attribute check passed and players can hit each other or are both invincible
+		if $attrcheckok && $p1canhitp2 = $p2canhitp1 {
+
+			# Collision detection
+			# Using ClsnOverlap will not account for the velocity of the second player that is processed
+			# To get around it, one should run the code from a third entity that is processed last, such as a helper
+			if clsnoverlap(clsn1, p2, ID, clsn1)
+			&& cond(map(_pots_clashing_cfg_clsn2check), clsnoverlap(clsn1, p2, ID, clsn2) = 0 && p2, clsnoverlap(clsn1, ID, clsn2) = 0, 1) {
+
+				# Disable Hitdefs
+				# Some characters will get around this but it should work most of the time
+				modifyHitdef{attr: ; hitflag: ;}
+				modifyHitdef{attr: ; hitflag: ; redirectID: p2, ID}
+
+				# Flag MoveGuarded
+				# MoveReversed would trigger Ikemen's "Parry" lifebar message. In addition, MoveGuarded allows most chars to cancel clashed moves
+				if map(_pots_clashing_cfg_flagguard) {
+					modifyPlayer{moveguarded: 1}
+					modifyPlayer{moveguarded: 1; redirectID: p2, ID}
+				}
+
+				# Lifebar messages
+				lifebaraction{text: "CLASH!!!"; top: 1}
+				lifebaraction{text: "CLASH!!!"; top: 1; redirectID: p2, ID}
+
+				# Pause
+				pause{time: map(_pots_clashing_cfg_pause); endcmdbuftime: 10; pausebg: 0}
+
+				# Screen flash
+				bgpalfx{
+					time: map(_pots_clashing_cfg_pause);
+					add: 128, 128, 128;
+					sinadd: -128, -128, -128, 120;
+				}
+
+				# Screen shake
+				envshake{
+					time: 20;
+					ampl: ifelse((gametime % 2), -4, 4);
+					freq: 180;
+					mul: 0.67;
+				}
+
+				# Zoom
+				if map(_pots_clashing_cfg_zoom) != 1.0 {
+					zoom{
+						scale: map(_pots_clashing_cfg_zoom);
+						time: 6;
+						pos: 0, 0;
+						lag: 0.618;
+						stagebound: 1;
+						camerabound: 1;
+					}
+				}
+
+				# Sound
+				# You can add your own sounds here by adding them to common.snd
+				playsnd{
+					value: F 6, 0;
+					volumescale: 100;
+					freqmul: 1.00;
+				}
+				playsnd{
+					value: F 5, 3;
+					volumescale: 100;
+					freqmul: 2.00;
+				}
+				playsnd{
+					value: F 7, 2;
+					volumescale: 100;
+					freqmul: 2.00;
+				}
+
+				# Find spark position
+
+				# Player 1 (Me)
+				# Assume there's only one Clsn1 first
+				let sparkback1 = clsnVar(clsn1, 0, back);
+				let sparkfront1 = clsnVar(clsn1, 0, front);
+				let sparktop1 = clsnVar(clsn1, 0, top);
+				let sparkbot1 = clsnVar(clsn1, 0, bottom);
+
+				# If more, find edges
+				if animElemVar(numClsn1) > 1 {
+					for i = 1; animElemVar(numClsn1); 1 {
+						if clsnVar(clsn1, $i, back) < $sparkback1 {
+							let sparkback1 = clsnVar(clsn1, $i, back);
+						}
+						if clsnVar(clsn1, $i, front) > $sparkfront1 {
+							let sparkfront1 = clsnVar(clsn1, $i, front);
+						}
+						if clsnVar(clsn1, $i, top) < $sparktop1 {
+							let sparktop1 = clsnVar(clsn1, $i, top);
+						}
+						if clsnVar(clsn1, $i, bottom) > $sparkbot1 {
+							let sparkbot1 = clsnVar(clsn1, $i, bottom);
+						}
+					}
+				}
+
+				# Player 2 (Them)
+				# Assume there's only one Clsn1 first
+				let sparkback2 = p2, clsnVar(clsn1, 0, back);
+				let sparkfront2 = p2, clsnVar(clsn1, 0, front);
+				let sparktop2 = p2, clsnVar(clsn1, 0, top);
+				let sparkbot2 = p2, clsnVar(clsn1, 0, bottom);
+
+				# If more, find edges
+				if p2, animElemVar(numClsn1) > 1 {
+					for i = 1; p2, animElemVar(numClsn1); 1 {
+						if p2, clsnVar(clsn1, $i, back) < $sparkback2 {
+							let sparkback2 = p2, clsnVar(clsn1, $i, back);
+						}
+						if p2, clsnVar(clsn1, $i, front) > $sparkfront2 {
+							let sparkfront2 = p2, clsnVar(clsn1, $i, front);
+						}
+						if p2, clsnVar(clsn1, $i, top) < $sparktop2 {
+							let sparktop2 = p2, clsnVar(clsn1, $i, top);
+						}
+						if p2, clsnVar(clsn1, $i, bottom) > $sparkbot2 {
+							let sparkbot2 = p2, clsnVar(clsn1, $i, bottom);
+						}
+					}
+				}
+
+				# Account for scaling and facing
+				let sparkback1 = $sparkback1 * const(size.xscale) * facing;
+				let sparkfront1 = $sparkfront1 * const(size.xscale) * facing;
+				let sparktop1 = $sparktop1 * const(size.yscale);
+				let sparkbot1 = $sparkbot1 * const(size.yscale);
+
+				let sparkback2 = $sparkback2 * p2, const(size.xscale) * p2, facing;
+				let sparkfront2 = $sparkfront2 * p2, const(size.xscale) * p2, facing;
+				let sparktop2 = $sparktop2 * p2, const(size.yscale);
+				let sparkbot2 = $sparkbot2 * p2, const(size.yscale);
+
+				# Calculate middle point
+				let sparkx1 = screenpos x + ifelse(p2dist x < 0, $sparkback1, $sparkfront1);
+				let sparky1 = screenpos y + ifelse(p2dist y < 0, $sparktop1, $sparkbot1);
+
+				let sparkx2 = p2, screenpos x + ifelse(p2, p2dist x <= 0, $sparkback2, $sparkfront2);
+				let sparky2 = p2, screenpos y + ifelse(p2, p2dist y <= 0, $sparktop2, $sparkbot2);
+
+				let sparkx = ($sparkx1 + $sparkx2) / 2.0 * camerazoom;
+				let sparky = ($sparky1 + $sparky2) / 2.0 * camerazoom;
+
+				# This would be a lot more simple, but it's also less accurate
+				#let sparkx = (screenpos x + p2, screenpos x) / 2.0 * camerazoom;
+				#let sparky = (screenpos y + hitdefvar(sparky) + p2, screenpos y + p2, hitdefvar(sparky)) / 2.0 * camerazoom;
+
+				# Create sparks
+				# You can add your own sparks here by adding them to the fightfx
+				explod{
+					anim: F 60;
+					postype: left;
+					pos: $sparkx, $sparky;
+					scale: 2.00, 0.67;
+					angle: 45;
+					facing: 1;
+					ontop: 1;
+					pausemovetime: -1;
+					supermovetime: -1;
+					ownpal: 1
+				}
+				explod{
+					anim: F 60;
+					postype: left;
+					pos: $sparkx, $sparky;
+					scale: 2.00, 0.67;
+					angle: 45;
+					facing: -1;
+					ontop: 1;
+					pausemovetime: -1;
+					supermovetime: -1;
+					ownpal: 1
+				}
+
+			}
+		}
+	}
+}

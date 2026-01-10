@@ -1,5 +1,5 @@
 {
-  "playtime": 1075.79,
+  "playtime": 1250.17,
   "modes": {
     "training": {
       "playtime": 0,
@@ -10,11 +10,12 @@
       }
     },
     "freebattle": {
-      "playtime": 404.25,
-      "clear": 2,
+      "playtime": 578.63,
+      "clear": 3,
       "clearcount": {
         "sagat": 1,
-        "nesmegaman": 1
+        "nesmegaman": 1,
+        "ryu": 1
       }
     },
     "arcade": {
@@ -68,6 +69,10 @@
       "clearcount": {
         "shin akuma": 2
       }
+    },
+    "versus": {
+      "playtime": 0,
+      "clear": 0
     }
   }
 }
