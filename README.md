@@ -1,3 +1,5 @@
+<img width="800" height="600" alt="cvs revo 2 logo" src="https://github.com/user-attachments/assets/00c2f8a4-d4a0-4ae3-8260-6c7aecdd78a7" />
+
 This is a patched/updated version of the Mugen game [Capcom vs SNK Evolution Rev 2](https://gamejolt.com/games/Capcom_vs_SNK/509026), due to its current release being very oddly balanced.
 
 Some of the listed changes made are;
