@@ -317,7 +317,7 @@ Shadow Lady, stages\kfm.def, includestage=0, order=3
 Final Bison, stages\kfm.def, includestage=0, order=5
 empty
 empty
-kfm
+empty
 God Rugal, stages\kfm.def, includestage=0, order=5
 goenitz, stages\kfm.def, includestage=0, order=2
 mr.big, stages\kfm.def, includestage=0, order=2
@@ -329,8 +329,17 @@ hayato, stages\kfm.def, includestage=0, order=1
 balrog, stages\kfm.def, includestage=0, order=2
 seth, stages\kfm.def, includestage=0, order=2
 Shin Akuma, stages\kfm.def, includestage=0, order=5
-nesmegaman
+empty
 Funny Ryu, stages\kfm.def, includestage=0, order=5
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+nesmegaman
 
 ;-------------------------------------------------------------------------------
 [ExtraStages]
