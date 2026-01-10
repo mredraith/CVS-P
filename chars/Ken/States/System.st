@@ -221,6 +221,13 @@ type = VarSet
 trigger1 = AILevel
 sysvar(1) = ifElse((EnemyNear, MoveType != A || BackEdgeBodyDist <= 10), 1, ifElse((EnemyNear, MoveType = A), -1, 0))
 
+[State 40, QCF+UF Special Cancel]
+type = ChangeState
+value = 1000                    ; your ground QCF special
+triggerall = Time <= 4          ; jumpsquat cancel window
+triggerall = statetype = S
+trigger1 = command = "Hadoken"
+
 [State 40, High Jump]
 type = VarSet
 trigger1 = !Time && !AILevel
