@@ -411,12 +411,30 @@ nesmegaman
  ;Insert your stages below.
 
 stages/kfm.def
-;;;;;stages/stage3d.def
 stages/stage3d_outline.def
 stages/stage1.def
-;;;;;stages/stageZ.def
-;;;;;stages/stage0.def
-;;;;;stages/stage0-720.def
+stages/MemoriaOcean.def
+stages/UltimeciaCastleBridge.def
+stages/BalambGardenTrainingCenter.def
+stages/IfritLair.def
+stages/DeepSeaDeposit.def
+stages/OdinThroneRoom.def
+stages/SalvageArchipelago.def
+stages/IceCavernIcicleFields.def
+stages/MemoriaTimeInterval.def
+stages/DeadForest.def
+stages/CargoShipDeck.def
+stages/PinnacleRocks.def
+stages/AlexandriaMainStreet.def
+stages/MemoriaWorldFusion.def
+stages/QuMarsh.def
+stages/TrenoBattleArena.def
+stages/TerraPath.def
+stages/CleyraObservationPost.def
+stages/OeilvertArk.def
+stages/DaliLandingGround.def
+stages/EvilForestLightClearing.def
+stages/EidolonWall.def
 
 ;-------------------------------------------------------------------------------
 [Options]

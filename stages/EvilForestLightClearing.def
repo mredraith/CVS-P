@@ -1,0 +1,97 @@
+;Evil Forest - Light Clearing, adapted from Final Fantasy IX by Phantom.of.the.Server
+;
+;Special thanks:
+;Tirlititi, creator of Hades Workshop
+;tasior2, creator of Rɘverse FF9
+;Frankeh, for providing the BGM mixed with the ambience
+
+[Info]
+name = "Evil Forest - Light Clearing"
+author = "Phantom.of.the.Server"
+versiondate = 26.04.2025
+ikemenversion = 1.0
+
+[Music]
+bgmusic = EvilForestLightClearing.mp3
+bgmvolume = 100
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -640
+boundright = 640
+boundhigh = -480
+boundlow = 0
+tension = 120
+tensionhigh = 240
+tensionlow = 0
+verticalfollow = 1; Ikemen
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 104
+cutlow = 16
+startzoom = 1
+zoomout = 0.80; Samsho
+zoomin = 1
+fov = 40; together with the model offset this results in a classic zoffset
+yshift = 0
+
+[PlayerInfo]
+p1startx = -140
+p1starty = 0
+p1facing = 1
+
+p2startx = 140
+p2starty = 0
+p2facing = -1
+
+leftbound = -2000
+rightbound = 2000
+
+[Bound]
+screenleft = 30
+screenright = 30
+
+[StageInfo]
+zoffset = 432; not used. Automatic in 3D stages
+autoturn = 1
+resetBG = 0
+localcoord = 640, 480
+
+[Shadow]
+intensity = 128
+color = 0, 0, 0
+yscale = 0.20
+fade.range = -480, 0
+;xshear = 0.20
+
+[Reflection]
+intensity = 0
+
+
+;=====<MAIN BG DEFINITION>=====
+[BGdef]
+model = EvilForestLightClearing.glb
+spr = EvilForestLightClearing.sff
+bgclearcolor = 0, 0, 0
+debugbg = 0
+
+;[BG Ruler]
+;type = normal
+;spriteno = 9000, 1
+;layerno = 0
+;start = 0, 432
+;delta = 1, 1
+
+
+;=====<MODEL DEFINITION>=====
+[Model]
+offset = 0, -0.29, -1
+scale = 0.05, 0.05, 0.05
+;environment =
+;environmentintensity = 0.25
+
+
+;=====<ANIMATION>=====
+[Begin Action 9000]
+9000,1, 0,0, 1
