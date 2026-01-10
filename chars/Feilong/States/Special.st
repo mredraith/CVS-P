@@ -2,15 +2,14 @@
 ;| Feilong by varo_hades                  |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==
-;====<SPECIAL MOVES>===
+;====<SPECIAL MOVES
 ;==
 
-;=<REKKAKEN>==
+;REKKAKEN
 [StateDef 1000]
 type = S
 physics = S
 moveType = A
-anim = 1000
 ctrl = 0
 velSet = 0,0
 sprPriority = 1
@@ -27,23 +26,15 @@ type = VarSet
 trigger1 = !Time && AILevel
 var(10) = ifElse((P2MoveType = H || Random < 500), 2, ifElse(Random < 500, 1, 0))
 
-[State 220, Vel]
-type = VelSet
-triggerall = var(10) = 0
+[State 1000, Select Rekka Anim]
+type = ChangeAnim
 trigger1 = Time = 0
-x = 6
+value = 10000 + var(10)
 
-[State 220, Vel]
+[State 1000, Vel]
 type = VelSet
-triggerall = var(10) = 1
 trigger1 = Time = 0
-x = 10
-
-[State 220, Vel]
-type = VelSet
-triggerall = var(10) = 2
-trigger1 = Time = 0
-x = 14
+x = 6 + 4 * var(10)
 
 [State 105, Dust Helper]
 type = Helper
@@ -82,19 +73,18 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 34 < 7, 7, fvar(11) * 34)), 15
+damage = ceil(ifElse(fvar(11) * (26 + 6 * var(10)) < 7, 7, fvar(11) * (26 + 6 * var(10)))), 15
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
-pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
+pauseTime = ifElse(var(20), 6 + var(10), 10 + 2 * var(10)), ifElse(var(20), 6 + var(10), 10 + 2 * var(10))
 guard.pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
 animType = Hard
 air.animType = Back
 fall.animType = Back
 ground.type = High
 air.type = Low
-ground.hitTime = 18 + 4 * var(9)
-ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 14
+ground.hitTime = 16 + 2 * var(10) + 4 * var(9)
+guard.hitTime = 12 + 4 * var(10)
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -3.36, -6.52), 0
 ground.cornerPush.velOff = 0
@@ -133,13 +123,18 @@ value = 1001
 triggerall = Time >= 10
 trigger1 = command = "Rekkaken"
 
+[State 1000, Clear Rekka Strength]
+type = VarSet
+trigger1 = !AnimTime
+var(10) = 0
+
 [State 1000, End]
 type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<REKKAKEN SECOND IMPACT>==
+;REKKAKEN SECOND IMPACT
 [StateDef 1001]
 type = S
 physics = S
@@ -150,23 +145,20 @@ velSet = 0,0
 sprPriority = 1
 powerAdd = 72 * !var(20)
 
-[State 220, Vel]
-type = VelSet
-triggerall = var(10) = 0
-trigger1 = Time = 0
-x = 6
+[State 1000, Button Detect]
+type = VarSet
+trigger1 = !Time && !AILevel
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
-[State 220, Vel]
-type = VelSet
-triggerall = var(10) = 1
-trigger1 = Time = 0
-x = 10
+[State 1000, Button Detect (AI)]
+type = VarSet
+trigger1 = !Time && AILevel
+var(10) = ifElse((P2MoveType = H || Random < 500), 2, ifElse(Random < 500, 1, 0))
 
-[State 220, Vel]
+[State 1000, Vel]
 type = VelSet
-triggerall = var(10) = 2
 trigger1 = Time = 0
-x = 14
+x = 6 + 4 * var(10)
 
 [State 105, Dust Helper]
 type = Helper
@@ -205,7 +197,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 34 < 7, 7, fvar(11) * 34)), 15
+damage = ceil(ifElse(fvar(11) * (22 + 5 * var(10)) < 7, 7, fvar(11) * (22 + 5 * var(10)))), 15
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -217,7 +209,7 @@ ground.type = Low
 air.type = Low
 ground.hitTime = 18 + 5 * var(9)
 ground.slideTime = 17 + 5 * var(9)
-guard.hitTime = 14
+guard.hitTime = 10 + 4 * var(10)
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -3.36, -6.52), 0
 ground.cornerPush.velOff = 0
@@ -262,7 +254,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<REKKAKEN THIRD IMPACT>==
+;REKKAKEN THIRD IMPACT
 [StateDef 1002]
 type = S
 physics = S
@@ -273,23 +265,20 @@ velSet = 0,0
 sprPriority = 1
 powerAdd = 72 * !var(20)
 
-[State 220, Vel]
-type = VelSet
-triggerall = var(10) = 0
-trigger1 = Time = 0
-x = 8
+[State 1000, Button Detect]
+type = VarSet
+trigger1 = !Time && !AILevel
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
-[State 220, Vel]
-type = VelSet
-triggerall = var(10) = 1
-trigger1 = Time = 0
-x = 12
+[State 1000, Button Detect (AI)]
+type = VarSet
+trigger1 = !Time && AILevel
+var(10) = ifElse((P2MoveType = H || Random < 500), 2, ifElse(Random < 500, 1, 0))
 
-[State 220, Vel]
+[State 1000, Vel]
 type = VelSet
-triggerall = var(10) = 2
 trigger1 = Time = 0
-x = 16
+x = 8 + 4 * var(10)
 
 [State 105, Dust Helper]
 type = Helper
@@ -328,7 +317,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 15
+damage = ceil(ifElse(fvar(11) * (18 + 4 * var(10)) < 7, 7, fvar(11) * (18 + 4 * var(10)))), 15
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -340,7 +329,7 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 5 * var(9)
 ground.slideTime = 17 + 5 * var(9)
-guard.hitTime = 14
+guard.hitTime = 8 + 4 * var(10)
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -2.36, -4), -8
 ground.cornerPush.velOff = 0
@@ -370,7 +359,7 @@ trigger1 = Time = 40
 value = 0
 ctrl = 1
 
-;====<EX REKKAKEN>=
+;EX REKKAKEN
 [StateDef 1030]
 type = S
 physics = S
@@ -557,7 +546,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<EX REKKAKEN SECOND IMPACT>==
+;EX REKKAKEN SECOND IMPACT>==
 [StateDef 1031]
 type = S
 physics = S
@@ -702,7 +691,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<EX REKKAKEN THIRD IMPACT>==
+;EX REKKAKEN THIRD IMPACT>==
 [StateDef 1032]
 type = S
 physics = S
