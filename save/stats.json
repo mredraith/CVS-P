@@ -1,5 +1,5 @@
 {
-  "playtime": 1250.17,
+  "playtime": 1649.66,
   "modes": {
     "training": {
       "playtime": 0,
@@ -10,7 +10,7 @@
       }
     },
     "freebattle": {
-      "playtime": 578.63,
+      "playtime": 691.13,
       "clear": 3,
       "clearcount": {
         "sagat": 1,
@@ -64,10 +64,12 @@
       ]
     },
     "watch": {
-      "playtime": 383.42,
-      "clear": 2,
+      "playtime": 670.41,
+      "clear": 4,
       "clearcount": {
-        "shin akuma": 2
+        "shin akuma": 2,
+        "ken": 1,
+        "chunli": 1
       }
     },
     "versus": {

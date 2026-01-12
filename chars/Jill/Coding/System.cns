@@ -116,7 +116,6 @@ victory3 = "Sorry, but you're finished."
 victory4 = "Phew…mission complete, for now."
 ;---------------------------------------------------------------------------
 ; Lose by Time Over
-; CNS difficulty: basic
 [Statedef 170]
 type = S
 ctrl = 0
@@ -137,7 +136,6 @@ channel = 0
 
 ;---------------------------------------------------------------------------
 ; Win state decider
-; CNS difficulty: basic
 [Statedef 180]
 type = S
 
@@ -148,7 +146,6 @@ value = 181 + (random%5)
 
 ;---------------------------------------------------------------------------
 ; Win pose 1
-; CNS difficulty: basic
 [Statedef 181]
 type = S
 ctrl = 0
@@ -179,7 +176,6 @@ flag = roundnotover
 
 ;----------------------------
 ; Win pose 2
-; CNS difficulty: basic
 [Statedef 182]
 type = S
 ctrl = 0
@@ -236,7 +232,6 @@ flag = roundnotover
 
 ;--------------------------
 ; Win pose 3
-; CNS difficulty: basic
 [Statedef 183]
 type = S
 ctrl = 0
@@ -267,7 +262,6 @@ flag = roundnotover
 
 ;--------------------------
 ; Win pose 4
-; CNS difficulty: basic
 [Statedef 184]
 type = S
 ctrl = 0
@@ -292,7 +286,6 @@ flag = roundnotover
 
 ;--------------------------
 ; Win pose 5
-; CNS difficulty: basic
 [Statedef 185]
 type = S
 ctrl = 0
@@ -367,7 +360,6 @@ value = 0
 
 ;---------------------------------------------------------------------------
 ; Introduction
-; CNS difficulty: basic
 [Statedef 190]
 type = S
 ctrl = 0
@@ -401,7 +393,6 @@ value = 0
 
 ;--------------
 ; Intro 2
-; CNS difficulty: basic
 [Statedef 191]
 type = S
 ctrl = 0
@@ -482,7 +473,7 @@ trigger1 = time
 trigger1 = pos y > -vel y
 value = 6901
 
-;---Land---
+;Land
 [Statedef 6901]
 type = S
 physics = S
@@ -528,7 +519,6 @@ value = 0
 
 ;-----------------------
 ; Taunt
-; CNS difficulty: easy
 [Statedef 195]
 type = S
 ctrl = 0
@@ -550,7 +540,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<DODGE>=============
+;DODGE
 [Statedef 700]
 type = S
 movetype= I
