@@ -484,9 +484,9 @@ air.animType = Back
 fall.animType = Back
 ground.type = High
 air.type = Low
-ground.hitTime = 18 + 5 * var(9)
+ground.hitTime = 21 + 5 * var(9)
 ground.slideTime = 17 + 5 * var(9)
-guard.hitTime = 14
+guard.hitTime = 17
 air.hitTime = 120
 ground.velocity = -6.52
 ground.cornerPush.velOff = 0
@@ -629,7 +629,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = Low
 air.type = Low
-ground.hitTime = 18 + 5 * var(9)
+ground.hitTime = 20 + 5 * var(9)
 ground.slideTime = 17 + 5 * var(9)
 guard.hitTime = 14
 air.hitTime = 120
@@ -821,7 +821,7 @@ trigger1 = Time = 40
 value = 0
 ctrl = 1
 
-;SHIENKYAKU>=
+;SHIENKYAKU
 [StateDef 1100]
 type = S
 physics = N
@@ -1709,7 +1709,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX SHIENKYAKU>=
+;EX SHIENKYAKU
 [StateDef 1130]
 type = S
 physics = N
@@ -1890,7 +1890,7 @@ trigger1 = time = 9
 value = 1131
 ctrl = 0
 
-;EX SHIENKYAKU AIR>=
+;EX SHIENKYAKU AIR
 [StateDef 1131]
 type = A
 physics = N
@@ -2118,7 +2118,7 @@ trigger1 = Vel Y > 0
 value = 1101
 ctrl = 0
 
-;REKKUKYAKU>=
+;REKKUKYAKU
 [StateDef 1200]
 type = S
 physics = S
@@ -2150,7 +2150,7 @@ type = ChangeState
 trigger1 = AnimElem = 4
 value = 1201
 
-;REKKUKYAKU ATTACK>=
+;REKKUKYAKU ATTACK
 [Statedef 1201]
 type = A
 movetype = A
@@ -2361,7 +2361,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX REKKUKYAKU>=
+;EX REKKUKYAKU
 [StateDef 1230]
 type = S
 physics = S
@@ -2418,7 +2418,7 @@ type = ChangeState
 trigger1 = AnimElem = 4
 value = 1231
 
-;EX REKKUKYAKU ATTACK>=
+;EX REKKUKYAKU ATTACK
 [Statedef 1231]
 type = A
 movetype = A
@@ -2549,7 +2549,7 @@ triggerall = Time > 10
 trigger1 = Pos Y >= 0
 value = 1202
 
-;REKKUKYAKU 2>=
+;REKKUKYAKU 2
 [StateDef 1300]
 type = S
 physics = N
@@ -2598,7 +2598,7 @@ trigger1 = time = 4
 value = 1305
 ctrl = 0
 
-;REKKUKYAKU 2 ATTACK>=
+;REKKUKYAKU 2 ATTACK
 [Statedef 1305]
 type = A
 movetype = A
@@ -2784,7 +2784,7 @@ trigger1 = pos Y >=20 && vel Y > 0
 value = 1310
 ctrl = 0
 
-;EX REKKUKYAKU 2>=
+;EX REKKUKYAKU 2
 [StateDef 1330]
 type = S
 physics = N
@@ -2858,7 +2858,7 @@ trigger1 = time = 4
 value = 1335
 ctrl = 0
 
-;EX REKKUKYAKU 2 ATTACK>=
+;EX REKKUKYAKU 2 ATTACK
 [Statedef 1335]
 type = A
 movetype = A
