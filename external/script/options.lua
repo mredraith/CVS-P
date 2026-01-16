@@ -199,12 +199,19 @@ options.t_itemname = {
 			--modifyGameOption('Debug.ClipboardRows', 2)
 			--modifyGameOption('Debug.ConsoleRows', 15)
 			--modifyGameOption('Debug.ClsnDarken', true)
+			--modifyGameOption('Debug.DumpLuaTables', false)
 			--modifyGameOption('Debug.Font', "font/debug.def")
 			--modifyGameOption('Debug.FontScale', 1.0)
 			--modifyGameOption('Debug.StartStage', "stages/stage0-720.def")
 			--modifyGameOption('Debug.ForceStageZoomout', 0)
 			--modifyGameOption('Debug.ForceStageZoomin', 0)
-			modifyGameOption('Video.RenderMode', "OpenGL 3.2")
+			-- This is platform dependent now
+			local runtimeOS = getRuntimeOS()
+			if runtimeOS == 'android' then
+				modifyGameOption('Video.RenderMode', 'OpenGL ES 3.2')
+			else
+				modifyGameOption('Video.RenderMode', "OpenGL 3.2")
+			end
 			modifyGameOption('Video.GameWidth', 1280)
 			modifyGameOption('Video.GameHeight', 720)
 			--modifyGameOption('Video.WindowWidth', 0)
@@ -223,6 +230,7 @@ options.t_itemname = {
 			modifyGameOption('Video.EnableModel', true)
 			modifyGameOption('Video.EnableModelShadow', true)
 			--modifyGameOption('Sound.SampleRate', 44100)
+			--modifyGameOption('Sound.SoundFont', "sound/soundfont.sf2")
 			modifyGameOption('Sound.StereoEffects', true)
 			modifyGameOption('Sound.PanningRange', 30)
 			--modifyGameOption('Sound.WavChannels', 32)
@@ -773,6 +781,17 @@ options.t_itemname = {
 			t.items[item].vardisplay = gameOption('Video.RenderMode')
 			options.modified = true
 			options.needReload = true
+		end
+		return true
+	end,
+	--gles32
+	['gles32'] = function(t, item, cursorPosY, moveTxt)
+		if main.f_input(main.t_players, motif.option_info.menu.done.key) then
+			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
+			modifyGameOption('Video.RenderMode', "OpenGL ES 3.2")
+			options.modified = true
+			options.needReload = true
+			return false
 		end
 		return true
 	end,
@@ -1839,7 +1858,7 @@ function options.f_start()
 			end
 		end
 	end
-	if main.debugLog then main.f_printTable(options.t_itemname, 'debug/t_optionsItemname.txt') end
+	if gameOption('Debug.DumpLuaTables') then main.f_printTable(options.t_itemname, 'debug/t_optionsItemname.txt') end
 	-- create menu
 	options.menu = {title = main.f_itemnameUpper(motif.option_info.title.text, motif.option_info.menu.title.uppercase), submenu = {}, items = {}}
 	options.menu.loop = options.f_createMenu(options.menu, true)
@@ -1951,7 +1970,7 @@ function options.f_start()
 		animSetWindow(v.AnimData, kw[1], kw[2], kw[3], kw[4])
 	end
 	-- log
-	if main.debugLog then main.f_printTable(options.menu, 'debug/t_optionsMenu.txt') end
+	if gameOption('Debug.DumpLuaTables') then main.f_printTable(options.menu, 'debug/t_optionsMenu.txt') end
 end
 
 --;===========================================================
@@ -1959,9 +1978,9 @@ end
 --;===========================================================
 local t_keyCfg = {}
 table.insert(t_keyCfg, {itemname = 'spacer', displayname = '-', paramname = 'spacer'})
-for _, v in ipairs(motif.option_info.keymenu.itemname_order or {}) do
+for _, v in ipairs(motif.option_info.keymenu.menu.itemname_order or {}) do
 	if main.t_defaultKeysMapping[v] ~= nil or v == "configall" then
-		table.insert(t_keyCfg, {itemname = v, displayname = motif.option_info.keymenu.itemname[v] or '', paramname = v, infodisplay = ''})
+		table.insert(t_keyCfg, {itemname = v, displayname = motif.option_info.keymenu.menu.itemname[v] or '', paramname = v, infodisplay = ''})
 	end
 end
 table.insert(t_keyCfg, {itemname = 'page', displayname = '', paramname = 'page', infodisplay = ''})
@@ -2134,7 +2153,7 @@ end
 function options.f_keyCfg(cfgType, controller, bg, skipClear)
 	local t = t_keyCfg
 	-- Dynamically add/remove the "Rumble" option based on type
-	if motif.option_info.keymenu.itemname.rumble ~= '' then
+	if motif.option_info.keymenu.menu.itemname.rumble ~= nil then
 		if cfgType ~= 'Joystick' then
 			for k,v in ipairs(t) do
 				if t[k].itemname == 'rumble' then
@@ -2151,7 +2170,7 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 				end
 			end
 			if not found then
-				table.insert(t, #t, {itemname = 'rumble', displayname = motif.option_info.keymenu.itemname.rumble, paramname = 'rumble', infodisplay = ''})
+				table.insert(t, #t, {itemname = 'rumble', displayname = motif.option_info.keymenu.menu.itemname.rumble, paramname = 'rumble', infodisplay = ''})
 				options.f_keyCfgReset(cfgType)
 			end
 		end
@@ -2409,6 +2428,8 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 	end
 	--draw layerno = 0 backgrounds
 	bgDraw(bg.BGDef, 0)
+	--draw layerno = 1 backgrounds
+	bgDraw(bg.BGDef, 1)
 	--draw title
 	textImgDraw(motif.option_info.title.TextSpriteData)
 	-- Build per-pane item arrays with correct vardisplay/infodisplay and conflict flags
@@ -2431,14 +2452,14 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 				row.infodisplay = string.format(motif.option_info.menu.valuename.f, pane + player - side)
 			elseif base.itemname == 'page' then
 				if pane == 1 then
-					row.displayname = motif.option_info.keymenu.itemname.back
+					row.displayname = motif.option_info.keymenu.menu.itemname.back
 					row.infodisplay = motif.option_info.menu.valuename.esc
 				else
 					if gameOption('Config.Players') > 2 then
-						row.displayname = motif.option_info.keymenu.itemname.page
+						row.displayname = motif.option_info.keymenu.menu.itemname.page
 						row.infodisplay = motif.option_info.menu.valuename.page
 					else
-						row.displayname = motif.option_info.keymenu.itemname.back
+						row.displayname = motif.option_info.keymenu.menu.itemname.back
 						row.infodisplay = motif.option_info.menu.valuename.esc
 					end
 				end
@@ -2487,8 +2508,6 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 		)
 		textImgDraw(motif.option_info.keymenu['p' .. i].playerno.TextSpriteData)
 	end
-	--draw layerno = 1 backgrounds
-	bgDraw(bg.BGDef, 1)
 	main.f_cmdInput()
 	if not skipClear then
 		refresh()

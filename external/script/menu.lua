@@ -246,6 +246,7 @@ menu.t_itemname = {
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
 			endMatch()
+			start.characterchange = true
 			main.pauseMenu = false
 			return false
 		end
@@ -446,7 +447,7 @@ function menu.f_start()
 		--for _, v2 in pairs(v.sec.menu.item.active.bg) do
 		--	animSetWindow(v2.AnimData, w[1], w[2], w[3], w[4])
 		--end
-		if main.debugLog then main.f_printTable(menu[v.id], 'debug/t_' .. v.id .. 'Menu.txt') end
+		if gameOption('Debug.DumpLuaTables') then main.f_printTable(menu[v.id], 'debug/t_' .. v.id .. 'Menu.txt') end
 		-- Move list
 		if v.movelist then
 			local t = v.sec.movelist
@@ -529,12 +530,67 @@ function menu.f_run()
 	return main.pauseMenu
 end
 
+-- Reset selection/scroll state recursively for a menu table (root + submenus)
+local function f_resetMenuState(tbl)
+	if type(tbl) ~= "table" then return end
+	-- Reset cursor/scroll
+	tbl.cursorPosY = 1
+	tbl.moveTxt = 0
+	tbl.item = 1
+	-- Force one-frame input refresh path used by f_createMenu
+	tbl.reset = true
+	-- Clear any "selected" flags on items (if used by custom menus)
+	if type(tbl.items) == "table" then
+		for i = 1, #tbl.items do
+			if type(tbl.items[i]) == "table" then
+				tbl.items[i].selected = false
+			end
+		end
+	end
+	-- Recurse into submenus
+	if type(tbl.submenu) == "table" then
+		for _, sub in pairs(tbl.submenu) do
+			f_resetMenuState(sub)
+		end
+	end
+end
+
+function menu.f_reset()
+	-- exit any special screens rendered by menu.f_run()
+	menu.itemname = ''
+	-- Reset movelist selector (command list screen)
+	menu.movelistChar = 1
+	-- Reset tween caches
+	motif.menu_info.menuTweenData = nil
+	motif.menu_info.boxCursorData = nil
+	motif.training_info.menuTweenData = nil
+	motif.training_info.boxCursorData = nil
+	-- Determine which root menu is active and reset its cursor/item/scroll (and all submenus)
+	if menu.currentMenu ~= nil and menu.currentMenu[2] ~= nil then
+		if menu.training ~= nil and menu.training.loop ~= nil and menu.currentMenu[2] == menu.training.loop then
+			f_resetMenuState(menu.training)
+		else
+			f_resetMenuState(menu.menu)
+		end
+	end
+	-- Force snap on next calc so we don't keep old scroll offsets.
+	main.menuSnap = true
+	-- restore root menu loop
+	if menu.currentMenu ~= nil and menu.currentMenu[2] ~= nil then
+		menu.currentMenu[1] = menu.currentMenu[2]
+	end
+end
+
 function menuInit()
 	return menu.f_init()
 end
 
 function menuRun()
 	return menu.f_run()
+end
+
+function menuReset()
+	return menu.f_reset()
 end
 
 --;===========================================================
@@ -581,16 +637,19 @@ end
 
 function menu.f_commandlistParse()
 	menu.t_movelists = {}
-	local t_uniqueRefs = {}
-	for player, tbl in ipairs({start.p[1].t_selected, start.p[2].t_selected}) do
+	for side, tbl in ipairs({start.p[1].t_selected, start.p[2].t_selected}) do
 		for member, sel in ipairs(tbl) do
-			if t_uniqueRefs[sel.ref] == nil then
-				t_uniqueRefs[sel.ref] = true
-				if sel.movelistLine == nil then
-					sel.movelistLine = 1
-				end
-				if start.f_getCharData(sel.ref).commandlist == nil then
-					local movelist = getCharMovelist(sel.ref)
+			if sel.movelistLine == nil then
+				sel.movelistLine = 1
+			end
+			local pn = side
+			if member > 1 then
+				pn = pn + (member - 1) * 2
+			end
+			if player(pn) and ailevel() == 0 then
+				local ref = selectno()
+				if start.f_getCharData(ref).commandlist == nil then
+					local movelist = getCharMovelist(ref)
 					if movelist ~= '' then
 						-- Replace glyph tokens with <token> for later lookup in motif.glyphs.
 						for k, v in main.f_sortKeys(motif.glyphs, function(t, a, b) return string.len(a) > string.len(b) end) do
@@ -626,26 +685,30 @@ function menu.f_commandlistParse()
 							table.insert(t, subt)
 						end
 						t[#t] = nil --blank line produced by regexp matching
-						start.f_getCharData(sel.ref).commandlist = t
+						start.f_getCharData(ref).commandlist = t
 					end
-				end
-				local pn = player
-				if member > 1 then
-					pn = pn + (member - 1) * 2
 				end
 				table.insert(menu.t_movelists, {
 					pn = pn,
-					name = start.f_getCharData(sel.ref).name,
+					name = start.f_getCharData(ref).name,
 					tbl = sel,
-					commandlist = start.f_getCharData(sel.ref).commandlist,
+					commandlist = start.f_getCharData(ref).commandlist,
 				})
 			end
 		end
 	end
+	if #menu.t_movelists == 0 then
+		table.insert(menu.t_movelists, {
+			pn = 1,
+			name = "",
+			tbl = {movelistLine = 1},
+			commandlist = nil,
+		})
+	end
 	if menu.movelistChar > #menu.t_movelists then
 		menu.movelistChar = 1
 	end
-	if main.debugLog then main.f_printTable(menu.t_movelists, "debug/t_movelists.txt") end
+	if gameOption('Debug.DumpLuaTables') then main.f_printTable(menu.t_movelists, "debug/t_movelists.txt") end
 end
 
 function menu.f_commandlistRender(sec, t)
@@ -755,7 +818,7 @@ function menu.f_commandlistRender(sec, t)
 					textImgSetText(sec.movelist.text.TextSpriteData, v.text)
 					textImgDraw(sec.movelist.text.TextSpriteData)
 					if k < #cmdList[n] then
-						width = fontGetTextWidth(motif.Fnt[tostring(sec.movelist.text.font[1])], v.text, sec.movelist.text.font[2]) * sec.movelist.text.scale[1] + sec.movelist.text.spacing[1]
+						width = textImgGetTextWidth(sec.movelist.text.TextSpriteData, v.text) * sec.movelist.text.scale[1] + sec.movelist.text.spacing[1]
 					end
 				end
 				if v.align == 0 then

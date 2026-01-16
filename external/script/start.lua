@@ -145,7 +145,7 @@ function start.f_makeRoster(t_ret)
 			end
 		end
 	end
-	if main.debugLog then main.f_printTable(t_ret, 'debug/t_roster.txt') end
+	if gameOption('Debug.DumpLuaTables') then main.f_printTable(t_ret, 'debug/t_roster.txt') end
 	return t_ret
 end
 
@@ -204,7 +204,7 @@ function start.f_aiRamp(currentMatch)
 			table.insert(t_aiRamp, endAI)
 		end
 	end
-	if main.debugLog then main.f_printTable(t_aiRamp, 'debug/t_aiRamp.txt') end
+	if gameOption('Debug.DumpLuaTables') then main.f_printTable(t_aiRamp, 'debug/t_aiRamp.txt') end
 end
 --;===========================================================
 
@@ -429,10 +429,10 @@ function start.stageShuffleBag(id, pool)
 
 	-- safety check: prevent nil id
 	id = id or 'defaultStageBag'
-	start.shuffleBags = start.shuffleBags or {}
-	start.shuffleBags[id] = start.shuffleBags[id] or {}
+	start.shuffleStages = start.shuffleStages or {}
+	start.shuffleStages[id] = start.shuffleStages[id] or {}
 
-	if #start.shuffleBags[id] == 0 then
+	if #start.shuffleStages[id] == 0 then
 		local t = {}
 		for i = 1, #pool do
 			table.insert(t, i)
@@ -442,10 +442,10 @@ function start.stageShuffleBag(id, pool)
 		if start.lastStageIdx and #pool > 1 and t[#t] == start.lastStageIdx then
 			table.insert(t, 1, table.remove(t)) -- rotate
 		end
-		start.shuffleBags[id] = t
+		start.shuffleStages[id] = t
 	end
 
-	local idx = table.remove(start.shuffleBags[id])
+	local idx = table.remove(start.shuffleStages[id])
 	start.lastStageIdx = idx
 	local result = pool[idx]
 
@@ -480,13 +480,6 @@ function start.f_setStage(num, assigned)
 			num = start.f_getStageRef(gameOption('Config.TrainingStage'))
 		else
 			num = start.stageShuffleBag('includeStage', main.t_includeStage[1])
-		end
-	end
-	if not num then -- extra fallback to prevent rare cases of nil num
-		if main.t_selectableStages and #main.t_selectableStages > 0 then
-			num = main.t_selectableStages[1]
-		else
-			num = 1
 		end
 	end
 	selectStage(num)
@@ -760,7 +753,7 @@ function start.f_animGet(ref, side, member, paramsSide, params, loop, srcAnim)
 				animSetXAngle(a, params.xangle)
 				animSetYAngle(a, params.yangle)
 				animSetProjection(a, params.projection)
-				animSetfLength(a, params.focallength)
+				animSetFocalLength(a, params.focallength)
 				animSetWindow(a, params.window[1], params.window[2], params.window[3], params.window[4])
 				if srcAnim ~= nil then
 					animApplyVel(a, srcAnim)
@@ -831,7 +824,19 @@ local function drawPortraitLayer(t_portraits, side, t, subname, last, dataField)
 		return
 	end
 	-- stacked portraits up to num
-	for member = lastIdx, 1, -1 do
+	local order = {}
+	for member = 1, lastIdx do
+		local paramsSide, params = getParams(side, member, t, subname)
+		order[#order + 1] = {m = member, o = params.draworder}
+	end
+	table.sort(order, function(a, b)
+		if a.o == b.o then
+			return a.m < b.m -- stable legacy tie-break (invertorder=0 behavior)
+		end
+		return a.o < b.o
+	end)
+	for _, it in ipairs(order) do
+		local member = it.m
 		local paramsSide, params = getParams(side, member, t, subname)
 		local v = t_portraits[member]
 		local data = v[dataField]
@@ -1167,7 +1172,7 @@ function start.f_drawCursor(pn, x, y, param, done)
 		animSetXAngle(a, getCellTransform(x, y, "xangle", params.xangle))
 		animSetYAngle(a, getCellTransform(x, y, "yangle", params.yangle))
 		animSetProjection(a, getCellTransform(x, y, "projection", params.projection))
-		animSetfLength(a, getCellTransform(x, y, "focallength", params.focallength))
+		animSetFocalLength(a, getCellTransform(x, y, "focallength", params.focallength))
 		animUpdate(a)
 	end
 	main.f_animPosDraw(
@@ -1347,9 +1352,9 @@ function start.f_randomChar(pn)
 	if #main.t_randomChars == 0 then
 		return nil
 	end
-	start.shuffleBags = start.shuffleBags or {}
+	start.shuffleChars = start.shuffleChars or {}
 
-	if not start.shuffleBags[pn] or #start.shuffleBags[pn] == 0 then
+	if not start.shuffleChars[pn] or #start.shuffleChars[pn] == 0 then
 		local last = start.lastRandomChar and start.lastRandomChar[pn]
 		local t = {}
 		for _, v in ipairs(main.t_randomChars) do
@@ -1358,10 +1363,10 @@ function start.f_randomChar(pn)
 			end
 		end
 		start.f_shuffleTable(t, last)
-		start.shuffleBags[pn] = t
+		start.shuffleChars[pn] = t
 	end
 	-- draw one char from the bag
-	local result = table.remove(start.shuffleBags[pn])
+	local result = table.remove(start.shuffleChars[pn])
 	-- store the last drawn value
 	start.lastRandomChar = start.lastRandomChar or {}
 	start.lastRandomChar[pn] = result
@@ -1468,7 +1473,7 @@ for i = 1, motif.select_info.rows * motif.select_info.columns do
 		start.t_grid[row][col].skip = 1
 	end
 end
-if main.debugLog then main.f_printTable(start.t_grid, 'debug/t_grid.txt') end
+if gameOption('Debug.DumpLuaTables') then main.f_printTable(start.t_grid, 'debug/t_grid.txt') end
 
 -- return amount of life to recover
 local function f_lifeRecovery(lifeMax, ratioLevel)
@@ -1575,7 +1580,7 @@ end
 --start game
 function start.f_game(lua)
 	clearColor(0, 0, 0)
-	if main.debugLog and start ~= nil then main.f_printTable(start.p, 'debug/t_p.txt') end
+	if gameOption('Debug.DumpLuaTables') and start ~= nil then main.f_printTable(start.p, 'debug/t_p.txt') end
 	local p2In = main.t_pIn[2]
 	main.t_pIn[2] = 2
 	if lua ~= '' then
@@ -1598,7 +1603,7 @@ function start.f_game(lua)
 	local winner = -1
 	winner, start.challenger = game()
 
-	if main.debugLog then main.f_printTable(readGameStats(), 'debug/t_gameStats.txt') end
+	if gameOption('Debug.DumpLuaTables') then main.f_printTable(readGameStats(), 'debug/t_gameStats.txt') end
 
 	main.f_restoreInput()
 	if lua ~= '' then
@@ -1835,6 +1840,35 @@ function start.f_selectChallenger()
 	return true
 end
 
+local function buildMusicParams(data)
+	local out = {}
+	for k, v in pairs(data) do
+		if type(k) == "string" and k:match("music$") then
+			if type(v) == "string" then
+				out[#out + 1] = k .. "=" .. v
+			elseif type(v) == "table" and #v > 0 then
+				local first = v[1]
+				-- If table looks like { "path.mp3", 100, 123, 456 } => positional args
+				local positional = (type(first) == "string") and (#v == 1 or type(v[2]) ~= "string")
+				if positional then
+					local pieces = {}
+					for i = 1, #v do
+						pieces[i] = tostring(v[i])
+					end
+					-- space-separated to avoid commas inside the value
+					out[#out + 1] = k .. "=" .. table.concat(pieces, " ")
+				else
+					-- Treat as multiple candidate tracks: {"a.mp3","b.mp3",...}
+					for i = 1, #v do
+						out[#out + 1] = k .. "=" .. tostring(v[i])
+					end
+				end
+			end
+		end
+	end
+	return table.concat(out, ", ")
+end
+
 function launchFight(data)
 	local t = {}
 	if continue() then -- on rematch all arguments are ignored and values are restored from last match
@@ -1859,17 +1893,7 @@ function launchFight(data)
 		t.p2numratio = data.p2numratio or {}
 		t.p2rounds = data.p2rounds or nil
 		t.exclude = data.exclude or {}
-		-- Music
-		t.musicParams = ''
-		for k, v in pairs(data) do
-			if (type(v) == "string" or type(v) == "number") and k:match('bgm') then
-				if t.musicParams == '' then
-					t.musicParams = k .. '=' .. v
-				else
-					t.musicParams = t.musicParams .. ', ' .. k .. '=' .. v
-				end
-			end
-		end
+		t.musicParams = buildMusicParams(data)
 		t.stage = data.stage or ''
 		t.ai = data.ai or nil
 		t.vsscreen = main.f_arg(data.vsscreen, main.motif.versusscreen)
@@ -2021,8 +2045,11 @@ function launchFight(data)
 		main.motif.continuescreen = continueScreen
 		main.motif.victoryscreen = victoryScreen
 		clearColor(motif.selectbgdef.bgclearcolor[1], motif.selectbgdef.bgclearcolor[2], motif.selectbgdef.bgclearcolor[3])
+		if start.exit or start.characterchange then
+			start.characterchange = false
+			break
 		-- here comes a new challenger
-		if start.challenger > 0 then
+		elseif start.challenger > 0 then
 			if t.challenger then -- end function called by f_arcadeChallenger() regardless of outcome
 				ok = not start.exit and not esc()
 				break
@@ -2232,6 +2259,8 @@ function start.f_selectScreen()
 		clearColor(motif.selectbgdef.bgclearcolor[1], motif.selectbgdef.bgclearcolor[2], motif.selectbgdef.bgclearcolor[3])
 		--draw layerno = 0 backgrounds
 		bgDraw(motif.selectbgdef.BGDef, 0)
+		--draw layerno = 1 backgrounds
+		bgDraw(motif.selectbgdef.BGDef, 1)
 		--draw title
 		textImgDraw(motif.select_info.title.TextSpriteData)
 		--draw portraits
@@ -2424,8 +2453,6 @@ function start.f_selectScreen()
 		end
 		-- hook
 		hook.run("start.f_selectScreen")
-		--draw layerno = 1 backgrounds
-		bgDraw(motif.selectbgdef.BGDef, 1)
 		--draw fadein / fadeout
 		main.f_fadeAnim(motif.select_info)
 		--frame transition
@@ -2452,6 +2479,11 @@ local t_teamActiveState = {false, false}
 function start.f_teamMenu(side, t)
 	if #t == 0 then
 		start.p[side].teamEnd = true
+		-- Team menu has no renderable entries (e.g. itemname_order hides them).
+		-- Still allow character selection for this side if enabled.
+		if not start.p[side].selEnd and #start.p[side].t_selCmd == 0 then
+			table.insert(start.p[side].t_selCmd, {cmd = side, player = side, selectState = 0})
+		end
 		return
 	end
 	--skip selection if only 1 team mode is available and team size is fixed
@@ -2814,22 +2846,22 @@ local function resolvePalConflict(side, charRef, pal)
 	end
 	-- if the chosen palette is not used, keep it
 	if not usedPals[pal] then
-		return ValidatePal(pal, charRef)
+		return validatePal(pal, charRef)
 	end
 	-- if it's in use, try to find the next free one
 	local maxPal = gameOption('Config.PaletteMax')
 	for i = pal + 1, maxPal do
 	if not usedPals[i] then
-			return ValidatePal(i, charRef)
+			return validatePal(i, charRef)
 		end
 	end
 	for i = 1, pal - 1 do
 		if not usedPals[i] then
-			return ValidatePal(i, charRef)
+			return validatePal(i, charRef)
 		end
 	end
 
-	return ValidatePal(pal, charRef)
+	return validatePal(pal, charRef)
 end
 
 local function applyPalette(sel, charData, palIndex)
@@ -2851,10 +2883,10 @@ function start.f_palMenu(side, cmd, player, member, selectState)
 	local pn = 2 * (member - 1) + side
 	-- initialize palette list and index if character changed or not yet set
 	if st.validPalsCharRef ~= charRef or not st.validPals then
-		local valid, seen, cur = {}, {}, ValidatePal(1, charRef)
+		local valid, seen, cur = {}, {}, validatePal(1, charRef)
 		valid[1], seen[cur] = cur, true
 		for i = 1, #charData.pal do
-			local nextp = ValidatePal(cur + 1, charRef)
+			local nextp = validatePal(cur + 1, charRef)
 			if seen[nextp] then break end
 			table.insert(valid, nextp)
 			seen[nextp], cur = true, nextp
@@ -3189,6 +3221,16 @@ function start.f_selectMenu(side, cmd, player, member, selectState)
 			if not gameOption('Options.Team.Duplicates') then
 				t_reservedChars[side][start.c[player].selRef] = true
 			end
+			-- If we just confirmed a pick while hovering Random Select, force the random preview to advance for the next team member.
+			-- This prevents mashing select from picking the same random character repeatedly.
+			local cellIdx = (start.c[player].cell or -1) + 1
+			if cellIdx > 0 then
+				local g = start.f_selGrid(cellIdx)
+				if g.char == 'randomselect' or g.hidden == 3 then
+					start.c[player].randCnt = 0
+					start.c[player].randRef = nil
+				end
+			end
 			start.p[side].t_cursor[member] = {x = start.c[player].selX, y = start.c[player].selY}
 			if main.f_tableLength(start.p[side].t_selected) == start.p[side].numChars then --if all characters have been chosen
 				if side == 1 and main.cpuSide[2] and start.reset then --if player1 is allowed to select p2 characters
@@ -3406,6 +3448,8 @@ function start.f_selectVersus(active, t_orderSelect)
 		clearColor(motif.versusbgdef.bgclearcolor[1], motif.versusbgdef.bgclearcolor[2], motif.versusbgdef.bgclearcolor[3])
 		--draw layerno = 0 backgrounds
 		bgDraw(motif.versusbgdef.BGDef, 0)
+		--draw layerno = 1 backgrounds
+		bgDraw(motif.versusbgdef.BGDef, 1)
 		--draw portraits and order icons
 		for side = 1, 2 do
 			start.f_drawPortraits(main.f_remapTable(start.p[side].t_selTemp, start.t_orderRemap[side]), side, motif.vs_screen, '', false, t_icon[side])
@@ -3476,12 +3520,11 @@ function start.f_selectVersus(active, t_orderSelect)
 		end
 		-- hook
 		hook.run("start.f_selectVersus")
-		--draw layerno = 1 backgrounds
-		bgDraw(motif.versusbgdef.BGDef, 1)
 		--draw fadein / fadeout
 		for side = 1, 2 do
 			if not fadeOutStarted and (
-				counter >= motif.vs_screen.time
+				-- Wait for order select to finish before vs_screen.time can end the screen.
+				(counter >= motif.vs_screen.time and (not (t_orderSelect[1] or t_orderSelect[2]) or done))
 				or (not main.cpuSide[side] and main.f_input({side}, motif.vs_screen.skip.key))
 				or (done and main.f_input({side}, motif.vs_screen.done.key))
 				) then
@@ -3516,14 +3559,13 @@ end
 --loading loop called after versus screen is finished
 function start.f_selectLoading(musicParams)
 	clearAllSound()
-	local params = musicParams or ''
+	local parts = {}
+	if musicParams and musicParams ~= "" then
+		parts[#parts + 1] = musicParams
+	end
 	local function addParam(k, v)
 		if v == nil then return end
-		if params == '' then
-			params = k .. '=' .. tostring(v)
-		else
-			params = params .. ', ' .. k .. '=' .. tostring(v)
-		end
+		parts[#parts + 1] = k .. "=" .. tostring(v)
 	end
 	for side = 1, 2 do
 		for member, v in ipairs(start.p[side].t_selected) do
@@ -3532,27 +3574,28 @@ function start.f_selectLoading(musicParams)
 				v.loading = true
 			end
 			-- fold overrideCharData() payload into loadStart() params
-			local lifeRatio = nil
-			local attackRatio = nil
+			local lifeRatio, attackRatio
 			if v.ratioLevel then
-				lifeRatio = gameOption('Options.Ratio.Level' .. v.ratioLevel .. '.Life')
-				attackRatio = gameOption('Options.Ratio.Level' .. v.ratioLevel .. '.Attack')
+				lifeRatio = gameOption("Options.Ratio.Level" .. v.ratioLevel .. ".Life")
+				attackRatio = gameOption("Options.Ratio.Level" .. v.ratioLevel .. ".Attack")
 			end
-			local pfx = 'p' .. side .. '.' .. member .. '.'
-			addParam(pfx .. 'life', v.life)
-			addParam(pfx .. 'lifemax', v.lifeMax)
-			addParam(pfx .. 'power', v.power)
-			addParam(pfx .. 'dizzypoints', v.dizzyPoints)
-			addParam(pfx .. 'guardpoints', v.guardPoints)
-			addParam(pfx .. 'ratiolevel', v.ratioLevel)
-			addParam(pfx .. 'liferatio', v.lifeRatio or lifeRatio)
-			addParam(pfx .. 'attackratio', v.attackRatio or attackRatio)
-			addParam(pfx .. 'existed', v.existed)
+			local pfx = "p" .. side .. "." .. member .. "."
+			addParam(pfx .. "life", v.life)
+			addParam(pfx .. "lifemax", v.lifeMax)
+			addParam(pfx .. "power", v.power)
+			addParam(pfx .. "dizzypoints", v.dizzyPoints)
+			addParam(pfx .. "guardpoints", v.guardPoints)
+			addParam(pfx .. "ratiolevel", v.ratioLevel)
+			addParam(pfx .. "liferatio", v.lifeRatio or lifeRatio)
+			addParam(pfx .. "attackratio", v.attackRatio or attackRatio)
+			addParam(pfx .. "existed", v.existed)
 		end
 	end
-	addParam('persistlife', main.persistLife)
-	addParam('persistmusic', main.persistMusic)
-	addParam('persistrounds', main.persistRounds)
+	addParam("persistlife", main.persistLife)
+	addParam("persistmusic", main.persistMusic)
+	addParam("persistrounds", main.persistRounds)
+	local params = table.concat(parts, ", ")
+	if gameOption('Debug.DumpLuaTables') then main.f_printTable(params, "debug/loadStartParams.txt") end
 	loadStart(params)
 end
 
