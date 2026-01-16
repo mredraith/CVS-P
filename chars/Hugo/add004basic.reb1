@@ -32495,163 +32495,163 @@ ctrl = 1
 
 ;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
 ;気絶(開始)
-[Statedef 5300]
-type = C
-movetype= I
-physics = N
-ctrl = 0
-velset = 0,0
-
-[State 5300, ChangeAnim]
-type = ChangeAnim
-trigger1 = time = 0
-value = 5300
-
-[State 5300, varset]
-type = VarSet
-trigger1 = prevstateno != [5300,5301] 
-trigger1 = time = 0
-fvar(20) = 120+(random%4)*40
-ignorehitpause = 1
-
-[State 5300, varadd]
-type = VarAdd
-triggerall = fvar(20)
-trigger1 = 1
-fvar(20) = -1
-ignorehitpause = 1
-
-[State 5300, varadd]
-type = VarAdd
-triggerall = fvar(20)
-trigger1 = command = "レバガチャ"
-fvar(20) = -1
-ignorehitpause = 1
-
-[State 5300, varset]
-type = VarSet
-trigger1 = Time = 0
-fvar(22) = 0
-ignorehitpause = 1
-
-[State 5300, varadd]
-type = VarAdd
-trigger1 = command = "レバガチャ"
-fvar(22) = 1
-ignorehitpause = 1
-
-[state -2, helper]
-type = helper
-trigger1 = !numhelper(8550)
-trigger1 = time = 0
-ID = 8550
-pos = 0,0
-postype = p1
-stateno = 8550
-helpertype = normal
-name = "Stun"
-sprpriority = -5
-ownpal = 1
-keyctrl = 0
-ignorehitpause = 1
-
-[State 5300, ChangeState]
-type = ChangeState
-trigger1 = fvar(20)
-trigger1 = animtime = 0
-trigger1 = fvar(22) <= 9
-value = 5300
-
-[State 5300, ChangeState]
-type = ChangeState
-trigger1 = fvar(20)
-trigger1 = animtime = 0
-trigger1 = fvar(22) > 9
-value = 5301
-
-[State 5300, ChangeState]
-type = ChangeState
-value = Var(55)
-triggerall = Var(55) = 195 || Var(55) = [1000,3200]
-triggerall = roundstate = 2
-triggerall = var(50) = 0
-trigger1 = fvar(20) = 0
-ignorehitpause = 0
-
-[State 5300, ChangeState]
-type = ChangeState
-trigger1 = fvar(20) = 0
-value = 11
-ctrl = 1
+;[Statedef 5300]
+;type = C
+;movetype= I
+;physics = N
+;ctrl = 0
+;velset = 0,0
+;
+;[State 5300, ChangeAnim]
+;type = ChangeAnim
+;trigger1 = time = 0
+;value = 5300
+;
+;[State 5300, varset]
+;type = VarSet
+;trigger1 = prevstateno != [5300,5301] 
+;trigger1 = time = 0
+;fvar(20) = 120+(random%4)*40
+;ignorehitpause = 1
+;
+;[State 5300, varadd]
+;type = VarAdd
+;triggerall = fvar(20)
+;trigger1 = 1
+;fvar(20) = -1
+;ignorehitpause = 1
+;
+;[State 5300, varadd]
+;type = VarAdd
+;triggerall = fvar(20)
+;trigger1 = command = "レバガチャ"
+;fvar(20) = -1
+;ignorehitpause = 1
+;
+;[State 5300, varset]
+;type = VarSet
+;trigger1 = Time = 0
+;fvar(22) = 0
+;ignorehitpause = 1
+;
+;[State 5300, varadd]
+;type = VarAdd
+;trigger1 = command = "レバガチャ"
+;fvar(22) = 1
+;ignorehitpause = 1
+;
+;[state -2, helper]
+;type = helper
+;trigger1 = !numhelper(8550)
+;trigger1 = time = 0
+;ID = 8550
+;pos = 0,0
+;postype = p1
+;stateno = 8550
+;helpertype = normal
+;name = "Stun"
+;sprpriority = -5
+;ownpal = 1
+;keyctrl = 0
+;ignorehitpause = 1
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;trigger1 = fvar(20)
+;trigger1 = animtime = 0
+;trigger1 = fvar(22) <= 9
+;value = 5300
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;trigger1 = fvar(20)
+;trigger1 = animtime = 0
+;trigger1 = fvar(22) > 9
+;value = 5301
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;value = Var(55)
+;triggerall = Var(55) = 195 || Var(55) = [1000,3200]
+;triggerall = roundstate = 2
+;triggerall = var(50) = 0
+;trigger1 = fvar(20) = 0
+;ignorehitpause = 0
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;trigger1 = fvar(20) = 0
+;value = 11
+;ctrl = 1
 
 ;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-[Statedef 5301]
-type = C
-movetype= I
-physics = N
-ctrl = 0
-velset = 0,0
-sprpriority = -1
-
-[State 5300, ChangeAnim]
-type = ChangeAnim
-trigger1 = time = 0
-value = 5301
-
-[State 5300, varadd]
-type = VarAdd
-triggerall = fvar(20)
-trigger1 = 1
-fvar(20) = -1
-ignorehitpause = 1
-
-[State 5300, varadd]
-type = VarAdd
-triggerall = fvar(20)
-trigger1 = command = "レバガチャ"
-fvar(20) = -1
-ignorehitpause = 1
-
-[State 5300, varset]
-type = VarSet
-trigger1 = Time = 0
-fvar(22) = 0
-ignorehitpause = 1
-
-[State 5300, varadd]
-type = VarAdd
-trigger1 = command = "レバガチャ"
-fvar(22) = 1
-ignorehitpause = 1
-
-[State 5300, ChangeState]
-type = ChangeState
-trigger1 = fvar(20)
-trigger1 = animtime = 0
-trigger1 = fvar(22) <= 5
-value = 5300
-
-[State 5300, ChangeState]
-type = ChangeState
-trigger1 = fvar(20)
-trigger1 = animtime = 0
-trigger1 = fvar(22) > 5
-value = 5301
-
-[State 5300, ChangeState]
-type = ChangeState
-value = Var(55)
-triggerall = Var(55) = 195 || Var(55) = [1000,3200]
-triggerall = roundstate = 2
-triggerall = var(50) = 0
-trigger1 = fvar(20) = 0
-ignorehitpause = 0
-
-[State 5300, ChangeState]
-type = ChangeState
-trigger1 = fvar(20) = 0
-value = 11
-ctrl = 1
+;[Statedef 5301]
+;type = C
+;movetype= I
+;physics = N
+;ctrl = 0
+;velset = 0,0
+;sprpriority = -1
+;
+;[State 5300, ChangeAnim]
+;type = ChangeAnim
+;trigger1 = time = 0
+;value = 5301
+;
+;[State 5300, varadd]
+;type = VarAdd
+;triggerall = fvar(20)
+;trigger1 = 1
+;fvar(20) = -1
+;ignorehitpause = 1
+;
+;[State 5300, varadd]
+;type = VarAdd
+;triggerall = fvar(20)
+;trigger1 = command = "レバガチャ"
+;fvar(20) = -1
+;ignorehitpause = 1
+;
+;[State 5300, varset]
+;type = VarSet
+;trigger1 = Time = 0
+;fvar(22) = 0
+;ignorehitpause = 1
+;
+;[State 5300, varadd]
+;type = VarAdd
+;trigger1 = command = "レバガチャ"
+;fvar(22) = 1
+;ignorehitpause = 1
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;trigger1 = fvar(20)
+;trigger1 = animtime = 0
+;trigger1 = fvar(22) <= 5
+;value = 5300
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;trigger1 = fvar(20)
+;trigger1 = animtime = 0
+;trigger1 = fvar(22) > 5
+;value = 5301
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;value = Var(55)
+;triggerall = Var(55) = 195 || Var(55) = [1000,3200]
+;triggerall = roundstate = 2
+;triggerall = var(50) = 0
+;trigger1 = fvar(20) = 0
+;ignorehitpause = 0
+;
+;[State 5300, ChangeState]
+;type = ChangeState
+;trigger1 = fvar(20) = 0
+;value = 11
+;ctrl = 1
 
 ;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
 ;クイックスタンディング(前転)
