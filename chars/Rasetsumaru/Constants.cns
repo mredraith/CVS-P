@@ -1,4 +1,4 @@
-;<VARIABLE LIST>====================
+;VARIABLE LIST=
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -48,7 +48,7 @@
 ; ________________________
 ;| Haohmaru by Chazzanova |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 1000
 power = 3000
@@ -115,7 +115,7 @@ down.friction.threshold = 0.5
 
 [Quotes]
 
-;<HAOHMARU WINQUOTES>====================
+;HAOHMARU WINQUOTES=
 
 victory0 = "Lucky you. About to be killed by a legend!!"
 victory1 = "To fight. To die. Get ready for the afterlife."
@@ -163,7 +163,7 @@ victory35 = "Wait for me in hell, Genjuro. But you’re not fit to be Charon’s rud
 ;Hanzo Hattori
 victory36 = "Did you say, Hanzo? The one and only Hanzo? You don’t live up to your spin!"
 
-;<RASETSUMARU WINQUOTES>====================
+;RASETSUMARU WINQUOTES=
 
 victory37 = "Beg for mercy."
 victory38 = "Suffer more, for my entertainment."

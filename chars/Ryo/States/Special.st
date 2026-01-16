@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Ryo Sakazaki by CrazyKoopa & Jmorphman  |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>====
-;==
+;
+;SPECIAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ;Ko'ouken
@@ -3443,7 +3443,7 @@ ctrl = 1
 
 
 
-;====<SLAMMED AGAINST THE GROUND>=
+;SLAMMED AGAINST THE GROUND>=
 ;Being Slammed (Standing)
 [StateDef 5420]
 type = U
@@ -4112,7 +4112,7 @@ value = 5120
 
 
 
-;====< PUNCH ZERO COUNTER >=
+; PUNCH ZERO COUNTER >=
 [Statedef 2900]
 type = S
 physics = N
@@ -4200,7 +4200,7 @@ value = 0
 ctrl = 1
 
 
-;====< KICK ZERO COUNTER >=
+; KICK ZERO COUNTER >=
 [Statedef 2910]
 type = S
 physics = N

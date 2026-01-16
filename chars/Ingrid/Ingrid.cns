@@ -3199,7 +3199,7 @@ type = SelfState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 5100
 
-;< Target Escaped >==========
+; Target Escaped =
 [Statedef 890]
 type = S
 physics = N
@@ -6965,7 +6965,7 @@ trigger1 = Pos Y >= 12
 type = SelfState
 value = 5100
 
-;< PUNCH ZERO COUNTER >=============================
+; PUNCH ZERO COUNTER ==
 [Statedef 2900]
 type = S
 physics = N
@@ -7076,7 +7076,7 @@ value = 0
 ctrl = 1
 
 
-;< KICK ZERO COUNTER >=============================
+; KICK ZERO COUNTER ==
 [Statedef 2910]
 type = S
 physics = N

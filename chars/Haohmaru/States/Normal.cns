@@ -2789,7 +2789,7 @@ trigger1 = 1
 value = SCA
 
 ;---------------------------------------------------------------------------
-;<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Rugal by varo_hades                     |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<GIGANTIC PRESSURE>=
+;GIGANTIC PRESSURE>=
 [StateDef 3000]
 type = S
 physics = N
@@ -548,7 +548,7 @@ type = changeanim2
 trigger1 = time = 0
 value = 1207
 
-;====<MAX GIGANTIC PRESSURE>=
+;MAX GIGANTIC PRESSURE>=
 [StateDef 3050]
 type = S
 physics = N
@@ -1325,7 +1325,7 @@ type = changeanim2
 trigger1 = time = 0
 value = 1207
 
-;====<GENOCIDE HEAVEN>=
+;GENOCIDE HEAVEN>=
 [StateDef 3100]
 type = S
 physics = S
@@ -1823,7 +1823,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<MAX GENOCIDE HEAVEN>=
+;MAX GENOCIDE HEAVEN>=
 [StateDef 3150]
 type = S
 physics = S
@@ -2404,7 +2404,7 @@ type = ChangeState
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3105
 
-;====<MAX GOD RUGAL GENOCIDE HEAVEN>=
+;MAX GOD RUGAL GENOCIDE HEAVEN>=
 [StateDef 3160]
 type = S
 physics = S
@@ -3068,7 +3068,7 @@ type = ChangeState
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3105
 
-;====<KAISER PHOENIX>=
+;KAISER PHOENIX>=
 [StateDef 3200]
 type = S
 physics = N
@@ -3269,7 +3269,7 @@ trigger1 = !AnimTime
 value = 3210
 ctrl = 0
 
-;====<KAISER PHOENIX>=
+;KAISER PHOENIX>=
 [Statedef 3210]
 type = S
 physics = N
@@ -3369,7 +3369,7 @@ type = changestate
 trigger1 = !animtime
 value = 3210
 
-;====<KAISER PHOENIX>=
+;KAISER PHOENIX>=
 [Statedef 3220]
 type = S
 physics = N
@@ -3385,7 +3385,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;====<DESTRUCTION OMEGA>=
+;DESTRUCTION OMEGA>=
 [StateDef 3300]
 type = S
 physics = S
@@ -3671,7 +3671,7 @@ trigger1 = AnimTime = 0
 value = 3302
 ctrl = 0
 
-;=<SUCCESS COMBO>=
+;SUCCESS COMBO>=
 [Statedef 3302]
 type = S
 movetype = A
@@ -4239,7 +4239,7 @@ trigger1 = HitOver
 value = 0
 ctrl = 1
 
-;====<MAX DESTRUCTION OMEGA>=
+;MAX DESTRUCTION OMEGA>=
 [StateDef 3350]
 type = S
 physics = S
@@ -4525,7 +4525,7 @@ trigger1 = AnimTime = 0
 value = 3352
 ctrl = 0
 
-;====<MAX DESTRUCTION OMEGA>=
+;MAX DESTRUCTION OMEGA>=
 [Statedef 3352]
 type = S
 movetype = A
@@ -4870,7 +4870,7 @@ triggerall = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(47) >= 2
 value = 1105
 
-;====<MAX DESTRUCTION OMEGA>=
+;MAX DESTRUCTION OMEGA>=
 [Statedef 3353]
 type = S
 movetype = A
@@ -5194,7 +5194,7 @@ triggerall = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(3) >= 2
 value = 1105
 
-;====<DEAD END SCREAMER>=
+;DEAD END SCREAMER>=
 [StateDef 3400]
 type = A
 physics = N
@@ -5383,7 +5383,7 @@ type = ChangeState
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3410
 
-;====<DEAD END SCREAMER>=
+;DEAD END SCREAMER>=
 [Statedef 3410]
 type = S
 physics = S
@@ -5411,7 +5411,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<DEAD END SCREAMER>=
+;DEAD END SCREAMER>=
 [Statedef 3401]
 type = S
 movetype = A
@@ -5673,7 +5673,7 @@ type = SelfState
 trigger1 = time = 1
 value = 5050
 
-;====<MAX DEAD END SCREAMER>=
+;MAX DEAD END SCREAMER>=
 [StateDef 3450]
 type = A
 physics = N
@@ -5862,7 +5862,7 @@ type = ChangeState
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3460
 
-;====<MAX DEAD END SCREAMER>=
+;MAX DEAD END SCREAMER>=
 [Statedef 3460]
 type = S
 physics = S
@@ -5890,7 +5890,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<MAX DEAD END SCREAMER>=
+;MAX DEAD END SCREAMER>=
 [Statedef 3461]
 type = S
 movetype = A
@@ -6164,7 +6164,7 @@ type = SelfState
 trigger1 = time = 1
 value = 5050
 
-;====<LAST JUDGEMENT>=
+;LAST JUDGEMENT>=
 [StateDef 3500]
 type = S
 physics = N
@@ -6513,7 +6513,7 @@ type = SelfState
 trigger1 = !AnimTime && Anim = 3506
 value = IfElse(Alive,5120,5150)
 
-;====<GOD END>=
+;GOD END>=
 [StateDef 3600]
 type = S
 physics = N
@@ -6666,7 +6666,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<G End Connect>==
+;G End Connect>==
 [Statedef 3610]
 type = S
 movetype = A
@@ -6995,7 +6995,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<G Emd P2 State 1>==
+;G Emd P2 State 1>==
 [Statedef 3620]
 type = S
 movetype = H
@@ -7081,7 +7081,7 @@ trigger1 = AnimElemTime(5) >= 0
 scale = 1,1
 ignorehitpause = 1
 
-;=<G Emd P2 State 1>==
+;G Emd P2 State 1>==
 [Statedef 3630]
 type = A
 movetype = H

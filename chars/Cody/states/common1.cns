@@ -2206,7 +2206,7 @@ value = SCA
 time = 1
 
 
-;< FALL RECOVERY >==========
+; FALL RECOVERY =
 [Statedef 5200]
 type = A
 movetype = H
@@ -2335,7 +2335,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 52
 
-;< TARGET SAFE FALL >==========
+; TARGET SAFE FALL =
 [Statedef 5205]
 type = A
 physics = N

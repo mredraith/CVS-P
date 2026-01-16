@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Blanka by varo_hades                    |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>===
-;==
+;
+;SPECIAL MOVES
+;
 
-;=<Electric Thunder>==
+;Electric Thunder>==
 [StateDef 1000]
 type = S
 physics = S
@@ -318,7 +318,7 @@ type = selfState
 trigger1 = Vel Y > 0 && Pos Y >= 10
 value = 5100
 
-;====<Ex Electric Thunder>=
+;Ex Electric Thunder>=
 [StateDef 1030]
 type = S
 physics = N
@@ -469,7 +469,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Rolling Attack>=
+;Rolling Attack>=
 [StateDef 1100]
 type = S
 physics = N
@@ -829,7 +829,7 @@ trigger1 = Anim=1150 && AnimTime=0
 value = 11
 ctrl = 1
 
-;====<Ex Rolling Attack>=
+;Ex Rolling Attack>=
 [StateDef 1130]
 type = S
 physics = N
@@ -953,7 +953,7 @@ type = ChangeState
 trigger1 = time=38 || hitcount || FrontEdgeBodyDist <= 0 || moveguarded
 value = 1150
 
-;====<Backstep Rolling>=
+;Backstep Rolling>=
 [StateDef 1200]
 type = S
 physics = S
@@ -1389,7 +1389,7 @@ trigger1 = Anim=1250 && AnimTime=0
 value = 11
 ctrl = 1
 
-;====<Ex Backstep Rolling>=
+;Ex Backstep Rolling>=
 [StateDef 1230]
 type = S
 physics = N
@@ -1553,7 +1553,7 @@ type = ChangeState
 trigger1 = time=50 || movecontact
 value = 1250
 
-;====<Vertical Rolling>=
+;Vertical Rolling>=
 [StateDef 1300]
 type = S
 physics = S
@@ -1993,7 +1993,7 @@ trigger1 = Anim=1380 && AnimTime=0
 value = 11
 ctrl = 1
 
-;====<Ex Vertical Rolling>=
+;Ex Vertical Rolling>=
 [StateDef 1330]
 type = S
 physics = N
@@ -2211,7 +2211,7 @@ type = ChangeState
 trigger1 = Vel Y > 0 && Pos Y >= 10
 value = 52
 
-;====<Surprise Forward>=
+;Surprise Forward>=
 [Statedef 1400]
 type = S
 movetype = I
@@ -2323,7 +2323,7 @@ trigger1 = AnimTime=0
 value = 0
 ctrl = 1
 
-;====<Surprise Back>=
+;Surprise Back>=
 [Statedef 1500]
 type = S
 movetype = I
@@ -2437,7 +2437,7 @@ trigger1 = AnimTime=0
 value = 0
 ctrl = 1
 
-;====<Coward Crouch>=
+;Coward Crouch>=
 [Statedef 1600]
 type = S
 movetype = I
@@ -2476,7 +2476,7 @@ trigger1 = Time >= 90
 value = 11
 ctrl = 1
 
-;====<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -2563,7 +2563,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

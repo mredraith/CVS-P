@@ -903,7 +903,7 @@ trigger1 = pos y >= 0 && vel y > 0
 value = 1505
 ctrl = 1
 
-;< Target Escaped >==========
+; Target Escaped =
 [Statedef 900]
 type = S
 physics = N
@@ -1046,7 +1046,7 @@ trigger1 = time >= 27
 value = 0
 ctrl = 1
 
-;< Target Escaped Midair >==========
+; Target Escaped Midair =
 [Statedef 892]
 type = A
 physics = N

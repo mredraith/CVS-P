@@ -4,7 +4,7 @@
 ;SPRITES - GUSTAVO C. MORAES
 
 ;
-;<COMMON STATES>========================================
+;COMMON STATES=
 ;
 ; Common state file for M.U.G.E.N beta 2002.04.14
 ;
@@ -34,7 +34,7 @@
 ; Hitfall_airrecover (5210): player's defence is restored at time = 0
 
 ;
-;<COMMON STATES>========================================
+;COMMON STATES=
 ;
 ; Stand
 [Statedef 0]
@@ -2647,7 +2647,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;<FALL RECOVERY>==========
+;FALL RECOVERY=
 [Statedef 5200]
 type=A
 movetype=H
@@ -2947,7 +2947,7 @@ type=selfstate
 trigger1= vel y>0 && pos y>=-10
 value=5221
 
-;<FORCED P2 RECOVERY>==========
+;FORCED P2 RECOVERY=
 [Statedef 5025]
 type=A
 movetype=H
@@ -3223,7 +3223,7 @@ type = ChangeState
 trigger1 = 1
 value = IfElse(RoundNo>=2,0,190)
 
-;< KICKED by Moryu Kasen`s - Last hit >=============================
+; KICKED by Moryu Kasen`s - Last hit ==
 ;--- Hit Pause ---
 [Statedef 1111300]
 type = A

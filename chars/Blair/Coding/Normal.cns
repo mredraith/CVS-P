@@ -2045,7 +2045,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<THROW ATTEMPT>==================
+;THROW ATTEMPT=
 [Statedef 800]
 type = S
 movetype= A
@@ -2132,7 +2132,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -2203,7 +2203,7 @@ type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = ifElse(var(10), 820, 810)
 
-;<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -2234,7 +2234,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;<NECK THROW>==========
+;NECK THROW=
 [Statedef 810]
 type = S
 movetype = A
@@ -2416,7 +2416,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<NECK THROW(TARGET)>==========
+;NECK THROW(TARGET)=
 [Statedef 815]
 type = A
 movetype = H
@@ -2487,7 +2487,7 @@ type = SelfState
 trigger1 = !AnimTime && Anim = 816
 value = IfElse(Alive,5120,5150)
 
-;<TSUKAMI HIZA KICK>==========
+;TSUKAMI HIZA KICK=
 [StateDef 820]
 type = S
 physics = N
@@ -2820,7 +2820,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;<TSUKAMI HIZA KICK(TARGET)>==========
+;TSUKAMI HIZA KICK(TARGET)=
 [StateDef 825]
 type = A
 moveType = H
@@ -2936,7 +2936,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 25
 value = 5100
 
-;<AIR THROW ATTEMPT>==========
+;AIR THROW ATTEMPT=
 [StateDef 850]
 type = A
 physics = N
@@ -2996,7 +2996,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<FLYING NECK DROP>==========
+;FLYING NECK DROP=
 [Statedef 860]
 type = A
 movetype = A
@@ -3157,7 +3157,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<FLYING NECK DROP(TARGET)>==========
+;FLYING NECK DROP(TARGET)=
 [Statedef 865]
 type = A
 movetype = H
@@ -3217,7 +3217,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

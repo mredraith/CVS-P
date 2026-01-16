@@ -1,5 +1,5 @@
 
-;<PARRY HELPER>=========================
+;PARRY HELPER==
 [StateDef 765]
 type = A
 physics = N
@@ -106,7 +106,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;<MAX MODE BAR HELPER>============================
+;MAX MODE BAR HELPER=
 [Statedef 780]
 type = S
 movetype = I
@@ -1236,7 +1236,7 @@ size.yscale=const(size.yscale)
 type=destroyself
 trigger1= !animtime
 
-;<Z-BUSTER==========
+;Z-BUSTER==
 ;Z BUSTER SHOT
 [Statedef 1404]
 type = A
@@ -3381,7 +3381,7 @@ type=destroyself
 trigger1= !animtime
 trigger2 = root,movetype = H
 
-;<REKKOUHA TVC>===========================
+;REKKOUHA TVC=
 ;Rekkouha TVC
 [Statedef 3111]
 type=A
@@ -3553,7 +3553,7 @@ invertall = 0
 type=destroyself
 trigger1= time > 46
 
-;<BUSTER SHOT COMBO SHOTS Lv1>====================
+;BUSTER SHOT COMBO SHOTS Lv1=
 [Statedef 3005]
 type = S
 movetype= A
@@ -3955,7 +3955,7 @@ trigger2 = time = 60
 value= 1008
 ignorehitpause=1
 
-;<GENMU ZERO PROJECTILE>====================
+;GENMU ZERO PROJECTILE=
 [Statedef 3022]
 type=A
 physics=N
@@ -4049,7 +4049,7 @@ superMoveTime = 65535
 ignoreHitPause = 1
 
 
-;<DARK HOLD>====================
+;DARK HOLD=
 [Statedef 3206]
 type = S
 movetype= A
@@ -4079,7 +4079,7 @@ ignorehitpause=1
 type = destroyself
 trigger1 = time >= 121
 
-;<TWIN NIGHTMARE>===================
+;TWIN NIGHTMARE=
 [Statedef 4005]
 type=A
 physics=N
@@ -4631,7 +4631,7 @@ ignorehitpause=1
 type=destroyself
 trigger1=time>=32
 
-;<SHADOW DISTORTION>====================
+;SHADOW DISTORTION=
 [Statedef 6010]
 type=A
 physics=N
@@ -5776,7 +5776,7 @@ flag = noshadow
 type = DestroySelf
 trigger1 = AnimTime = 0
 
-;<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -5813,7 +5813,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -5873,7 +5873,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -5917,7 +5917,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -6076,7 +6076,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<EXCELL TIMER>==================
+;EXCELL TIMER=
 [Statedef 8305]
 physics = N
 velset = 0, 0
@@ -6142,7 +6142,7 @@ trigger1 = (root, var(20) <= 0)
 type = destroyself
 trigger1 = (root, var(20) <= 0)
 
-;<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -6249,7 +6249,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -6739,7 +6739,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;<SPECIAL FINISH>=================
+;SPECIAL FINISH==
 [Statedef 8700]
 ctrl = 0
 anim = 1
@@ -7225,7 +7225,7 @@ trigger2 = Var(10) >= 300
 var(10) = 0
 ;-------------------------
 
-; Twitch Size X,Y =====
+; Twitch Size X,Y =
 ;----- Size X Scale -----
 [State 9999, VarSet]
 type = VarSet
@@ -7253,7 +7253,7 @@ fvar(1) = -0.05
 ;-------------------------
 ;
 
-; Grow/Shrink X,Y =====
+; Grow/Shrink X,Y =
 ;----- Resize X Scale -----
 ; -=[ Grow ]=-
 [State 9999, VarAdd]
@@ -7311,7 +7311,7 @@ fvar(11) = 0
 ;-------------------------
 ;
 
-; Scale X,Y Difference =====
+; Scale X,Y Difference =
 ;----- Size X Difference -----
 [State 9999, VarSet]
 type = VarSet

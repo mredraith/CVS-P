@@ -1044,7 +1044,7 @@ value = 0
 ctrl = 1
 
 
-;====<EX OXFORD RED>=
+;EX OXFORD RED>=
 [StateDef 1230]
 type = S
 physics = N
@@ -1589,7 +1589,7 @@ value = 0
 ctrl = 1
 
 
-;====<EX LIVERPOOL WHITE>=
+;EX LIVERPOOL WHITE>=
 [StateDef 1330]
 type = S
 physics = N
@@ -2039,7 +2039,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;====< PUNCH ZERO COUNTER >=
+; PUNCH ZERO COUNTER >=
 [Statedef 2900]
 type = S
 physics = N
@@ -2125,7 +2125,7 @@ value = 0
 ctrl = 1
 
 
-;====< KICK ZERO COUNTER >=
+; KICK ZERO COUNTER >=
 [Statedef 2910]
 type = S
 physics = N

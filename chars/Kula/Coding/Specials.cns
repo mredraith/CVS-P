@@ -1,4 +1,4 @@
-;<DIAMOND BREATH>==========================
+;DIAMOND BREATH=
 [StateDef 1000]
 type = S
 physics = S
@@ -154,7 +154,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX DIAMOND BREATH>======================
+;EX DIAMOND BREATH=
 [StateDef 1030]
 type = S
 physics = S
@@ -234,7 +234,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<CROW BITE>=======================
+;CROW BITE=
 [Statedef 1100]
 type = S
 movetype = A
@@ -952,7 +952,7 @@ trigger1 = AnimElemTime(6)>0
 trigger1 = pos y>-vel y
 value = 1105
 
-;<EX CROW BITE>=====================
+;EX CROW BITE==
 [Statedef 1130]
 type = S
 movetype = A
@@ -1240,7 +1240,7 @@ trigger1 = AnimElemTime(6)>0
 trigger1 = pos y>-vel y
 value = 1105
 
-;<COUNTER SHELL>==========================
+;COUNTER SHELL=
 [StateDef 1200]
 type = S
 physics = S
@@ -1415,7 +1415,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX COUNTER SHELL>==========================
+;EX COUNTER SHELL=
 [StateDef 1230]
 type = S
 physics = S
@@ -1623,7 +1623,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<RAY SPIN>=======================
+;RAY SPIN=
 [Statedef 1300]
 type = S
 movetype = A
@@ -2360,7 +2360,7 @@ trigger1 = AnimElemTime(2)>0
 trigger1 = pos y>-vel y
 value = 1305
 
-;<EX RAY SPIN>=======================
+;EX RAY SPIN=
 [Statedef 1330]
 type = S
 movetype = A
@@ -2798,7 +2798,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<DIAMOND SHOOT>==========================
+;DIAMOND SHOOT=
 [StateDef 1400]
 type = A
 physics = N
@@ -2888,7 +2888,7 @@ trigger1 = AnimElemTime(12) > 0
 trigger1 = pos y > -vel y
 value = 1105
 
-;<EX DIAMOND SHOOT>==========================
+;EX DIAMOND SHOOT=
 [StateDef 1430]
 type = A
 physics = N

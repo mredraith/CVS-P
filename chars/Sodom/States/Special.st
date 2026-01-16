@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Sodom by varo_hades                     |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>===
-;==
+;
+;SPECIAL MOVES
+;
 
-;=<Jigoku Scrape>==
+;Jigoku Scrape>==
 [StateDef 1000]
 type = S
 physics = S
@@ -353,7 +353,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Ex Jigoku Scrape>=
+;Ex Jigoku Scrape>=
 [StateDef 1030]
 type = S
 physics = N
@@ -751,7 +751,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Shiraha Catch>=
+;Shiraha Catch>=
 [StateDef 1100]
 type = S
 physics = N
@@ -1137,7 +1137,7 @@ trigger1 = Pos Y >= 0
 value = 5100
 ctrl = 0
 
-;====<Ex Shiraha Catch>=
+;Ex Shiraha Catch>=
 [StateDef 1130]
 type = S
 physics = N
@@ -1347,7 +1347,7 @@ trigger1 = Pos Y >= 0
 value = 5100
 ctrl = 0
 
-;=<Jigoku Scrape>==
+;Jigoku Scrape>==
 [StateDef 1200]
 type = S
 physics = S
@@ -1763,7 +1763,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<Jigoku Scrape>==
+;Jigoku Scrape>==
 [StateDef 1201]
 type = S
 physics = S
@@ -2300,7 +2300,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<Ex Jigoku Scrape>==
+;Ex Jigoku Scrape>==
 [StateDef 1230]
 type = S
 physics = S
@@ -2551,7 +2551,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Butsumetsu Buster>=
+;Butsumetsu Buster>=
 [StateDef 1300]
 type = S
 physics = N
@@ -3899,7 +3899,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;====<Ex Butsumetsu Buster>=
+;Ex Butsumetsu Buster>=
 [StateDef 1330]
 type = S
 physics = N
@@ -4422,7 +4422,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;=<Daikyou Burning>==
+;Daikyou Burning>==
 [StateDef 1400]
 type = S
 physics = S
@@ -6125,7 +6125,7 @@ trigger1 = command = "holddown"
 value = 11
 ctrl = 1
 
-;=<Ex Daikyou Burning>==
+;Ex Daikyou Burning>==
 [StateDef 1430]
 type = S
 physics = S
@@ -6989,7 +6989,7 @@ trigger1 = command = "holddown"
 value = 11
 ctrl = 1
 
-;=<Shokattoken>==
+;Shokattoken>==
 [StateDef 1500]
 type = S
 physics = S
@@ -7862,7 +7862,7 @@ trigger1 = command = "holddown"
 value = 11
 ctrl = 1
 
-;=<Ex Shokattoken>==
+;Ex Shokattoken>==
 [StateDef 1530]
 type = S
 physics = S
@@ -8419,7 +8419,7 @@ trigger1 = command = "holddown"
 value = 11
 ctrl = 1
 
-;====<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -8559,7 +8559,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

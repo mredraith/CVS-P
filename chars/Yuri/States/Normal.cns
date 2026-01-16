@@ -2197,7 +2197,7 @@ value = ifelse(pos y < 0, 5040, 0)
 ctrl = 1
 
 
-;< Oni Harite >==========
+; Oni Harite =
 [Statedef 810]
 type = S
 physics = S
@@ -2377,7 +2377,7 @@ value = 5200
 type = selfstate
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
-;< Silent Nage >==========
+; Silent Nage =
 [Statedef 820]
 type = A
 physics = N
@@ -2660,7 +2660,7 @@ type = selfstate
 trigger1 = vel y > 0 && pos y >= -const(size.ground.back)
 value = 5100
 
-;< Air Throw Attempt >==========
+; Air Throw Attempt =
 [Statedef 850]
 type = A
 physics = N
@@ -2730,7 +2730,7 @@ trigger1 = vel y > 0 && pos y >= 0
 value = 52
 
 
-;< Izuna Otoshi >==========
+; Izuna Otoshi =
 [Statedef 860]
 type = A
 physics = N
@@ -2967,7 +2967,7 @@ trigger1 = animelemtime(2) >= 0
 trigger1 = vel y > 0 && pos y >= 0
 value = 5110
 
-;<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

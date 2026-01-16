@@ -1,4 +1,4 @@
-;<Tandem Storm>===================
+;Tandem Storm=
 [Statedef 3000]
 type = S
 movetype= A
@@ -376,7 +376,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Tandem Storm Lv2>===================
+;Tandem Storm Lv2=
 [Statedef 3025]
 type = S
 movetype= A
@@ -755,7 +755,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Tandem Tornado>===================
+;Tandem Tornado=
 [Statedef 3050]
 type = S
 movetype = A
@@ -1025,7 +1025,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Tandem Tornado Lv2>===================
+;Tandem Tornado Lv2=
 [Statedef 3060]
 type = S
 movetype = A
@@ -1295,7 +1295,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Tandem Stream>===================
+;Tandem Stream=
 [Statedef 3100]
 type = S
 movetype = A
@@ -1490,7 +1490,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Tandem Stream Waiting===================
+;Tandem Stream Waiting=
 [Statedef 3101]
 type = S
 movetype= A
@@ -1536,7 +1536,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Tandem Stream Finish>===================
+;Tandem Stream Finish=
 [Statedef 3104]
 type = S
 movetype= A
@@ -1666,7 +1666,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Tandem Stream p2>===================
+;Tandem Stream p2=
 [Statedef 3102]
 type = A
 moveType = H
@@ -1681,7 +1681,7 @@ type = ChangeAnim2
 trigger1 = !time
 value = 3102
 
-;<Tandem Stream p2>===================
+;Tandem Stream p2=
 [Statedef 3103]
 type = A
 moveType = H
@@ -1696,7 +1696,7 @@ value = 3103
 
 
 
-;<Launch>===========================
+;Launch=
 ;Being Launched
 [StateDef 3131]
 type = A

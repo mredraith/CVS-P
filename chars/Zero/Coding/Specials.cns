@@ -1,4 +1,4 @@
-;<Z BUSTER CHARGE>=======================
+;Z BUSTER CHARGE=
 ;Half Charged Shot Ground
 [Statedef 1001]
 type = A
@@ -623,7 +623,7 @@ trigger1 = AnimElem = 3
 trigger2 = AnimElem = 4
 y = -2
 
-;<HADANGEKI>=======================
+;HADANGEKI=
 ;Hadangeki light
 [Statedef 1080]
 type = S
@@ -908,7 +908,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<RYUENJIN>=======================
+;RYUENJIN=
 ;Ryuenjin weak
 [StateDef 1100]
 type = S
@@ -1618,7 +1618,7 @@ trigger1 = AnimTime = 0
 value = 12
 ctrl = 1
 
-;<AIR RYUENJIN>=======================
+;AIR RYUENJIN=
 ;Air Ryuenjin weak
 [Statedef 1106]
 type = S
@@ -2178,7 +2178,7 @@ trigger1 = Pos Y >= 0
 value = 52
 ctrl = 0
 
-;<SHIPPUGA>=======================
+;SHIPPUGA=
 ;Shippuga weak
 [Statedef 1200]
 type = S
@@ -2664,7 +2664,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<AIR SENTSUIZAN>=======================
+;AIR SENTSUIZAN=
 ;Weak Sentsuizan
 [Statedef 1206]
 type = A
@@ -3265,7 +3265,7 @@ trigger1 = Pos Y >= 0
 value = 52
 ctrl = 0
 
-;<HIENKYAKU>=======================
+;HIENKYAKU=
 ; Hienkyaku A
 [Statedef 1225]
 type = S
@@ -3840,7 +3840,7 @@ trigger1 = Pos Y >= 0
 value = 52
 ctrl = 0
 
-;<RAIJINGEKI>=======================
+;RAIJINGEKI=
 ;Raijingeki weak
 [Statedef 1240]
 type = S
@@ -4355,7 +4355,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<HYOURETSUZAN>=======================
+;HYOURETSUZAN=
 ;Saber
 [Statedef 1290]
 type = A
@@ -5158,7 +5158,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;<RAIKOUSEN>=======================
+;RAIKOUSEN=
 ;Raikosen A
 [Statedef 1320]
 type = A
@@ -5579,7 +5579,7 @@ trigger1 = Pos Y >= 0
 value = 52
 ctrl = 0
 
-;<SHOUENZAN>=======================
+;SHOUENZAN=
 ;Shouenzan weak
 [Statedef 1330]
 type = S

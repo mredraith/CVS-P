@@ -214,7 +214,7 @@ sysvar(4) = 8
 type = ChangeAnim
 trigger1 = p2bodydist x = [0,175]
 trigger2 = Pos x = [(Partner, pos x - 150),(Partner, pos x + 150)]
-value = 640;<KICK>
+value = 640;KICK>
 persistent = 0
 
 [State 1251104, Turn]
@@ -427,7 +427,7 @@ trigger3 = !Root, Life
 type = S
 movetype = I
 physics = S
-anim = 195;<EX_TAUNT>
+anim = 195;EX_TAUNT>
 SprPriority = 5
 velset = 0,0
 ctrl = 0
@@ -555,7 +555,7 @@ ctrl = 1
 type = S
 movetype = I
 physics = S
-anim = 5300;<DIZZY>
+anim = 5300;DIZZY>
 SprPriority = -4
 velset = 0,0
 ctrl = 0
@@ -606,7 +606,7 @@ type = S
 movetype = I
 physics = N
 velset = 0,0
-anim = 100;<RUN>
+anim = 100;RUN>
 SprPriority = -2
 ctrl = 0
 facep2 = 1
@@ -698,7 +698,7 @@ ctrl = 0
 [State 1251110, Taunt]
 type = ChangeAnim
 trigger1 = Time = [0,1]
-value = 195;<TAUNT>
+value = 195;TAUNT>
 persistent = 0
 
 [State -2, antala]
@@ -1119,7 +1119,7 @@ persistent = 0
 [State 1251115, anim]
 type = ChangeAnim
 trigger1 = vel x > 0
-value = 100;<RUN>
+value = 100;RUN>
 persistent = 0
 
 [State 1251115, inv]
@@ -1216,7 +1216,7 @@ type = A
 movetype = A
 physics = S
 SprPriority = 2
-anim = 100;<RUN>
+anim = 100;RUN>
 velset = 0,0
 movehitpersist = 1
 hitcountpersist = 1
@@ -1485,7 +1485,7 @@ Time = 0
 [State 1251121, 1]
 type = ChangeAnim
 trigger1 = BackEdgeBodyDist <= 0
-value = 100;<RUN>
+value = 100;RUN>
 
 [State 1251121, 2]
 type = VelSet
@@ -1632,7 +1632,7 @@ ctrl = 0
 [State 1251125, Taunt]
 type = ChangeAnim
 trigger1 = Time = 1
-value = 195;<TAUNT>
+value = 195;TAUNT>
 persistent = 0
 
 [State 1251125, def]
@@ -1815,7 +1815,7 @@ value = 5030
 type = S
 movetype = I
 physics = S
-anim = 5300;<DIZZY>
+anim = 5300;DIZZY>
 SprPriority = 5
 velset = 0,0
 ctrl = 0
@@ -2045,7 +2045,7 @@ trigger1 = EnemyNear, Pos Y <= -25 || EnemyNear, statetype = A
 trigger1 = P2Dist x = [0,100]
 trigger1 = Time > 0
 ;trigger1 = SelfAnimExist(3000)	; <---| change this..
-value = 3100;<hyper_a>
+value = 3100;hyper_a>
 
 ; - Define this one!
 [State 1251131, HyperMove]
@@ -2053,7 +2053,7 @@ type = ChangeState
 triggerall = !NumHelper(1251101) && !NumHelper(1251102)
 trigger1 = PrevStateNo = 1251125 || Time > 0
 ;trigger1 = SelfAnimExist(3000)	; <---| change this..
-value = 3000;<hyper_b>
+value = 3000;hyper_b>
 
 [State 1251131, End]
 type = ChangeState
@@ -2082,7 +2082,7 @@ value = 1
 type = ChangeState
 trigger1 = Time = [0,1]
 ;trigger1 = SelfAnimExist(3100)	; <---| change this..
-value = 3200;<hyper_max>
+value = 3200;hyper_max>
 
 [State 1251132, End]
 type = ChangeState
@@ -2104,7 +2104,7 @@ ctrl = 0
 [State 1251133, EnterAgain]
 type = ChangeAnim
 trigger1 = BackEdgeBodyDist <= 0
-value = 100;<RUN>
+value = 100;RUN>
 persistent = 0
 
 [State 1251133, vel]
@@ -2129,14 +2129,14 @@ triggerall = BackEdgeBodyDist >= 0
 trigger1 = P2Dist Y <= -19 
 trigger1 = P2Dist x = [-50,70]
 ;trigger1 = SelfAnimExist(1100)	; <---| change this..
-value = 1100;<assist_a>
+value = 1100;assist_a>
 
 ; - Define this one!
 [State 1251133, SpecialMove] 
 type = ChangeState
 trigger1 = BackEdgeBodyDist >= 0
 ;trigger1 = SelfAnimExist(1000)	; <---| change this..
-value = 1000;<assist_b>
+value = 1000;assist_b>
 
 [State 1251133, End]
 type = ChangeState

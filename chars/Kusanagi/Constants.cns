@@ -1,4 +1,4 @@
-;<VARIABLE LIST>====================
+;VARIABLE LIST=
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -54,7 +54,7 @@
 ; _________________________________________
 ;| Kyo Kusanagi by Jmorphman               |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 1000
 power = 3000
@@ -120,12 +120,12 @@ down.bounce.groundLevel = 12
 down.friction.threshold = 0.5
 
 
-;<WINQUOTES>====================
+;WINQUOTES=
 [Quotes]
 
 
 
-;<KYO WINQUOTES>====================
+;KYO WINQUOTES=
 victory0 = "Stop moping around and butch up, you weenie!"
 victory1 = "Eat my flames of fury, wimp! Grovel before the Kusanagis!"
 victory2 = "You just ain't got it. So stop whining and get lost."
@@ -308,7 +308,7 @@ victory84 = "If you could punch as much as you can talk, you'd be a lot better a
 
 
 
-;<KUSANAGI WINQUOTES>====================
+;KUSANAGI WINQUOTES=
 victory85 = "Hallelujah, brother! You've just met your maker."
 victory86 = "So, did you enjoy my little welcome party?"
 victory87 = "The flames live within me!"

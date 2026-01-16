@@ -4992,7 +4992,7 @@ value = 11
 ctrl = 1
 
 
-;< POWER CHARGE >==========
+; POWER CHARGE =
 [Statedef 730]
 type = S
 physics = S
@@ -5083,7 +5083,7 @@ value = 0
 ctrl = 1
 
 
-;< ZERO COUNTER >====================
+; ZERO COUNTER =
 [Statedef 750]
 type = S
 physics = S
@@ -5153,7 +5153,7 @@ value = ifelse(var(10) = 1, 2910, 2900)
 
 
 
-;< PARRY >====================
+; PARRY =
 ;--- STANDING ---
 [Statedef 760]
 type = S
@@ -12975,7 +12975,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;<HIT GROUND(BOUNCE)>===================
+;HIT GROUND(BOUNCE)
 [Statedef 5100]
 type = L
 movetype= H
@@ -13064,7 +13064,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;<HIT LIEDOWN>====================
+;HIT LIEDOWN
 [Statedef 5110]
 type = L
 movetype= H
@@ -13182,7 +13182,7 @@ trigger1 = Time = 0
 ampl = 200, 7, -.467
 time = 30
 waveform = sine
-;< FALL RECOVERY >==========
+; FALL RECOVERY =
 [Statedef 5200]
 type = A
 movetype = H
@@ -13356,7 +13356,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 52
 
-;< TARGET SAFE FALL >==========
+; TARGET SAFE FALL =
 [Statedef 5205]
 type = A
 physics = N
@@ -13387,9 +13387,9 @@ value = 5210
 [statedef -2, -2]
 
 ;#ADD004BASIC PIEs#
-;//==========================
+;//==
 ;// add004 supplementary sctrls v1.103
-;//==========================
+;//==
 
 ;// partner jump-out ; ???????
 [state 0]
@@ -13445,7 +13445,7 @@ value = 5210
 	time=1
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Face>>
 ;; face / portrait (?)
 [state 0]
@@ -13489,7 +13489,7 @@ value = 5210
 	alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Camera>>
 ;; change camera / ????
 [state 0]
@@ -13513,9 +13513,9 @@ value = 5210
 	movecamera=0,0 ;; [x,y]
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;; optional settings
-;//==========================
+;//==
 ;;--- guard crush ; ????????
 [state 0]
 	type=palfx
@@ -13532,8 +13532,8 @@ value = 5210
 ;;--- dizzy
 [state 0]
 	type=changestate
-	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;<-dizzy birds
-	value=190116 ;;<- goto dizzy/stun state
+	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;-dizzy birds
+	value=190116 ;;- goto dizzy/stun state
 ;;--- fadeout when KOed ; KO????
 [state 0]
 	type=varset
@@ -13567,8 +13567,8 @@ value = 5210
 	trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
 	x=const240p(144)*ifelse(teamside=1,-1,1)
 
-;//==========================
-;//==========================
+;//==
+;//==
 
 [State -2, AssertSpecial]
 type = AssertSpecial

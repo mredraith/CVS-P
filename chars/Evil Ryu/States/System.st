@@ -1,16 +1,16 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (24/12/2018)
-;=
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;=
+;
 
 ; ________________________________________
 ;| Ryu by Phantom.of.the.Server and Mwryly |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
-;===< COMMON STATES===
-;====
+;
+; COMMON STATES=
+;
 
 ;PARRY
 ;STANDING ---
@@ -663,7 +663,7 @@ trigger3 = (enemy(1), name = "M -NES Game 1" + enemy(1), name = "M -NES Game 2" 
 value = 50
 
 
-;CROUCHING=
+;CROUCHING
 [Statedef 10]
 type = C
 physics = C
@@ -984,7 +984,7 @@ value = 0
 ctrl = 1
 
 
-;====< RUN==
+; RUN==
 [Statedef 100]
 type = S
 movetype = I
@@ -1043,7 +1043,7 @@ trigger1 = anim = 101 && !animtime
 value = 0
 ctrl = 1
 
-;< FORWARD DASH=
+; FORWARD DASH=
 [Statedef 102]
 type = S
 movetype = I
@@ -1091,7 +1091,7 @@ value = 0
 ctrl = 1
 
 
-;< BACK DASH=
+; BACK DASH=
 [Statedef 105]
 type = A
 movetype = I
@@ -1989,7 +1989,7 @@ value = ifelse(random < 333, 355, ifelse(random < 500, 352, 353))
 type = changestate
 trigger1 = time && var(1) = 2
 value = ifelse(random < 500, 354, 356)
-;=<INTRO VS KEN (FIST BUMP)>=
+;INTRO VS KEN (FIST BUMP)>=
 [Statedef 192]
 type=S
 anim=192
@@ -2016,7 +2016,7 @@ trigger1=!animtime
 value=0
 
 
-;=<INTRO vs KEN VS (NOOGIE)>=
+;INTRO vs KEN VS (NOOGIE)>=
 [Statedef 193]
 type=S
 anim=193
@@ -2045,7 +2045,7 @@ type=changestate
 trigger1= !animtime
 value=0
 
-;=<INTRO VS SAGAT>=
+;INTRO VS SAGAT>=
 [Statedef 374]
 type=S
 anim=374
@@ -2058,7 +2058,7 @@ type=changestate
 trigger1= !animtime
 value=0
 
-;=<INTRO vs KYO>=
+;INTRO vs KYO>=
 [Statedef 375]
 type=S
 anim=375
@@ -2093,7 +2093,7 @@ value=0
 
 
 
-;=<INTRO RYU vs EVIL RYU (SFA3 STYLE)>=
+;INTRO RYU vs EVIL RYU (SFA3 STYLE)>=
 [Statedef 380]
 type=S
 physics=N
@@ -2277,7 +2277,7 @@ trigger2= !animtime && var(1)=2 && anim = 1000
 value=0
 
 
-;=<EVIL INTRO VS VIOLENT KEN>=
+;EVIL INTRO VS VIOLENT KEN>=
 [Statedef 5982]
 type=S
 anim=1000
@@ -2960,7 +2960,7 @@ type = changestate
 trigger1 = !animtime
 value = 0
 
-;==<TURNS INTRO>==
+;TURNS INTRO>==
 [StateDef 6900]
 type = A
 anim = 42
@@ -3255,7 +3255,7 @@ trigger1 = !time && var(1) = 2
 value = ifelse(random < 500, 364, 365)
 
 
-;==<WIN VS KEN>==
+;WIN VS KEN>==
 [StateDef 184]
 type = S
 physics = S
@@ -3714,7 +3714,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;==<K.O.>==
+;K.O.>==
 [StateDef 5150]
 type = L
 movetype = H
@@ -3756,7 +3756,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;==<AIR HIT TRANSITION>==
+;AIR HIT TRANSITION>==
 [Statedef 5035]
 type = A
 movetype = H
@@ -3794,9 +3794,9 @@ trigger4 = !Time
 trigger4 = Anim != 5035
 value = 5050
 
-;===
-;====< -2 STATES=
-;===
+;
+; -2 STATES=
+;
 [Statedef -2]
 
 ;#ADD004BASIC PIEs#
@@ -4514,9 +4514,9 @@ text = "\nBy PotS - http://www.mugenguild.com/pots/"
 ignorehitpause = 1
 
 
-;===
-;====< -3 STATES=
-;===
+;
+; -3 STATES=
+;
 [Statedef -3]
 
 [State -3, Gametime Var]

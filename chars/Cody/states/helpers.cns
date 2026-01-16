@@ -3146,7 +3146,7 @@ ignorehitpause = 1
 type = destroyself
 trigger1 = !time;!animtime
 
-;< SPARKS >=============================
+; SPARKS ==
 ;--- Guard Normal ---
 [Statedef 8000]
 type = A
@@ -3834,7 +3834,7 @@ trigger1 = time >= 16
 type = destroyself
 trigger1 = time >= 16
 
-;< SUPERPAUSE FX >=============================
+; SUPERPAUSE FX ==
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A
@@ -4235,7 +4235,7 @@ trigger1 = time >= 40
 type = destroyself
 trigger1 = time >= 40
 
-;< EXCEL COMBO CHARGE >=============================
+; EXCEL COMBO CHARGE ==
 [Statedef 8400]
 type = A
 velset = 0, 0
@@ -4331,7 +4331,7 @@ trigger1 = time >= 26
 type = destroyself
 trigger1 = time >= 30
 
-;< ZERO COUNTER CHARGE >====================
+; ZERO COUNTER CHARGE =
 [Statedef 8350]
 type = S
 anim = 9741

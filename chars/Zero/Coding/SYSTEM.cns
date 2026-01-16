@@ -585,7 +585,7 @@ type = changestate
 trigger1 = animtime = 0
 value = 0
 
-;TURNS INTRO=======
+;TURNS INTRO=
 [Statedef 6900]
 type = A
 anim = 39
@@ -924,7 +924,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;ZERO COUNTER=======
+;ZERO COUNTER=
 [StateDef 750]
 type = S
 physics = S
@@ -986,7 +986,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 451, 222)
 
-;PARRY=======
+;PARRY=
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1410,7 +1410,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;CROUCHING=======
+;CROUCHING=
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -1838,7 +1838,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;WALL JUMP=========================
+;WALL JUMP=
 ;Wall Jump
 [Statedef 60]
 type = A
@@ -1890,7 +1890,7 @@ ctrl = 1
 
 
 
-;RUNNING - DASH=======
+;RUNNING - DASH=
 ;Dash
 [Statedef 100]
 type = S
@@ -2066,7 +2066,7 @@ ctrl = 1
 
 
 
-;HIT GROUND(BOUNCE)======
+;HIT GROUND(BOUNCE)==
 [Statedef 5100]
 type = L
 movetype= H
@@ -2155,7 +2155,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;HIT LIEDOWN=======
+;HIT LIEDOWN=
 [Statedef 5110]
 type = L
 movetype= H
@@ -2585,7 +2585,7 @@ type = PosSet
 trigger1 = animelem=16 && anim=5151
 y = 0
 
-;GUARDING=====
+;GUARDING=
 [StateDef 120]
 type = U
 physics = U
@@ -3435,7 +3435,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;AIR HIT TRANSITION====
+;AIR HIT TRANSITION=
 [Statedef 5035]
 type = A
 movetype = H
@@ -3479,9 +3479,9 @@ value = 5050
 [Statedef -2]
 
 ;#ADD004BASIC PIEs#
-;//==========================
+;//==
 ;// add004-sctrls-start
-;//==========================
+;//==
 ;sys::-2::partners_standby ; ???????
 [state 0]
 	type=selfstate
@@ -3551,7 +3551,7 @@ value = 5050
 	time=1
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Face>>
 ;sys::-2::face_d ; portrait (?)
 [state 0]
@@ -3586,7 +3586,7 @@ value = 5050
 	id=490600
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Camera>>
 ;sys::-2::camera_nc ; ????
 [state 0]
@@ -3612,7 +3612,7 @@ value = 5050
 	movecamera=0,0 ;; [x,y]
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;sys::-2::add.option2-noko
 [state 0] ;; opt-noko
 	type=assertspecial
@@ -3631,7 +3631,7 @@ value = 5050
 	kill=0
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;// optional settings
 ;sys::-2::guard_crush_fx ; ????????
 [state 0]
@@ -3693,12 +3693,12 @@ value = 5050
 	trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
 	x=const240p(144)*ifelse(teamside=1,-1,1)
 
-;//==========================
+;//==
 ;// add004-sctrls-end
-;//==========================
+;//==
 
 
-;SOULGENMU STATES========================
+;SOULGENMU STATES=
 [State -2, V-ism]
 type = AttackMulSet
 trigger1 = 1
@@ -3888,7 +3888,7 @@ type = removeexplod
 trigger1 = Var(2) = 0
 ID = 6007
 
-;VIRUS ZERO ACT==========================
+;VIRUS ZERO ACT==
 [State -2, Nightmare Zero]
 type = helper
 trigger1 = palno = 12
@@ -3913,7 +3913,7 @@ type = sprpriority
 trigger1 = palno = 12
 value = -1
 
-;OMEGA ZERO ACT==========================
+;OMEGA ZERO ACT==
 ;Aura Shadow
 [State -2, Helper]
 type = Helper
@@ -3939,7 +3939,7 @@ stateno = 9999
 keyctrl = 0
 ownpal = 1
 
-;BUSTER CHARGE VARS and FX==============
+;BUSTER CHARGE VARS and FX==
 ; Charged Z-Buster
 [State -2, State]
 type = ChangeState
@@ -4112,7 +4112,7 @@ sinadd = 110,55,85,10
 invertall = 0
 color = 0
 
-;CUSTOM COMBO========================
+;CUSTOM COMBO=
 [State -2, Original Combo End]
 type=varset
 trigger1= var(20)<0

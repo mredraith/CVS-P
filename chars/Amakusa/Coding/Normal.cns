@@ -2486,7 +2486,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 ;---------------------------------------------------------------------------
 ;Kung Fu Throw - Throwing the opponent
 ; Description: In this state, KFM throws the opponent by binding him to

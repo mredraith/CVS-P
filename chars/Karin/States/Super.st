@@ -1,11 +1,11 @@
 ; ________________________________
 ;| Karin by Phantom.of.the.Server |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
-;==< SUPER STATES >====
-;====
+;
+; SUPER STATES =
+;
 
-;==< SHINPI KAIBYAKU >====
+; SHINPI KAIBYAKU =
 [Statedef 3000]
 type = S
 physics = N
@@ -317,7 +317,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;==< SHINPI KAIBYAKU >====
+; SHINPI KAIBYAKU =
 [Statedef 3050]
 type = S
 physics = N
@@ -630,7 +630,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;==< KOU'OU KEN >====
+; KOU'OU KEN =
 [Statedef 3100]
 type = S
 physics = N
@@ -911,7 +911,7 @@ value = 0
 ctrl = 1
 
 
-;==< KOU'OU KEN >====
+; KOU'OU KEN =
 [Statedef 3150]
 type = S
 physics = N
@@ -1150,7 +1150,7 @@ type = changestate
 trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 3101
-;==< KILLER SATELLITE-BOUND PUNCH >====
+; KILLER SATELLITE-BOUND PUNCH =
 [Statedef 3200]
 type = S
 physics = N
@@ -1677,7 +1677,7 @@ value = 0
 ctrl = 1
 
 
-;==< KISAKI NO KAKOU >====
+; KISAKI NO KAKOU =
 [Statedef 3300]
 type = A
 physics = N
@@ -3015,7 +3015,7 @@ Trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;====
+;
 ;------------------------------------------------------------------------
 [Statedef 3511]
 type = S
@@ -3534,7 +3534,7 @@ value = 3451
 ctrl = 0
 
 
-;==< NEKKETSU HADOU KEN >=
+; NEKKETSU HADOU KEN >=
 [Statedef 4300]
 type = S
 physics = S
@@ -3753,7 +3753,7 @@ ctrl = 1
 
 
 
-;==< MODE CHANGE >=
+; MODE CHANGE >=
 [Statedef 4400]
 type = S
 physics = S

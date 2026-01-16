@@ -1,4 +1,4 @@
-;<PARRY HELPER>=========================
+;PARRY HELPER==
 [StateDef 765]
 type = A
 physics = N
@@ -105,7 +105,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;<MAX MODE BAR HELPER>============================
+;MAX MODE BAR HELPER=
 [Statedef 780]
 type = S
 movetype = I
@@ -196,7 +196,7 @@ type = DestroySelf
 trigger1 = root, Var(20) <= 0
 ignorehitpause = 1
 
-;<TAUNT BUBBLE HELPER>=======================
+;TAUNT BUBBLE HELPER=
 [Statedef 390]
 type = A
 ctrl = 0
@@ -290,7 +290,7 @@ trigger1 = Root,AnimElem=8
 trigger2 = Root,MoveType=H
 trigger3 = NumHelper(196)>1
 
-;<SOUL FLASH PROJECTILE>=======================
+;SOUL FLASH PROJECTILE=
 [StateDef 1005]
 type = S
 physics = N
@@ -629,7 +629,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
 
-;<EX SOUL FLASH>=========================
+;EX SOUL FLASH==
 [StateDef 1020]
 type = S
 physics = N
@@ -843,7 +843,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<AIR SOUL FLASH PROJECTILE>=======================
+;AIR SOUL FLASH PROJECTILE=
 [StateDef 1105]
 type = A
 physics = N
@@ -1017,7 +1017,7 @@ type = DestroySelf
 trigger1 = Pos x != [-200,200]
 trigger2 = Anim = 1015 && !AnimTime
 
-;<EX AIR SOUL FLASH>=========================
+;EX AIR SOUL FLASH==
 [StateDef 1120]
 type = A
 physics = N
@@ -1231,7 +1231,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<SPLENDOR LOVE BATS>=============================
+;SPLENDOR LOVE BATS==
 [Statedef 4200]
 type = A
 ctrl = 0
@@ -1369,7 +1369,7 @@ type = DestroySelf
 trigger1 = !AnimTime
 trigger2 = Root,MoveType=H
 
-;<LUMINOUS ILLUSION CLONE>=============================
+;LUMINOUS ILLUSION CLONE==
 [Statedef 3250]
 type = S
 ctrl = 0
@@ -2071,7 +2071,7 @@ trigger2 = !IsHelper(3250) || Root,StateNo!=3211
 trigger3 = AnimElemTime(41)>0 && pos y > -vel y
 value = 1016
 
-;<BAT HELPERS>=============================
+;BAT HELPERS==
 ;---LIE DOWN---
 [Statedef 6105]
 Type = A
@@ -2212,7 +2212,7 @@ y=.8
 type=destroyself
 trigger1= root,stateno!=181 || root,movetype=H
 
-;<SPARKS>=============================
+;SPARKS==
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -3191,7 +3191,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -3228,7 +3228,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -3288,7 +3288,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -3332,7 +3332,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -3376,7 +3376,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<RECOVER FX>=============================
+;RECOVER FX==
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -3403,7 +3403,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<COUNTER FX>=============================
+;COUNTER FX==
 [StateDef 8290]
 type = A
 physics = N
@@ -3447,7 +3447,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<MAX MODE TEXT FX>=============================
+;MAX MODE TEXT FX==
 [StateDef 8291]
 type = A
 physics = N
@@ -3491,7 +3491,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -3598,7 +3598,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<ALPHA COUNTER FX>==================
+;ALPHA COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -3648,7 +3648,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX==
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -4078,7 +4078,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;<SUPER FINISH>=============================
+;SUPER FINISH==
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -4226,7 +4226,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;<KO CAMERA FOCUS>=============================
+;KO CAMERA FOCUS==
 [Statedef 8998]
 type = S
 physics = N;S
@@ -4290,7 +4290,7 @@ trigger1 = Time >= 50
 trigger1 = Enemy,Life >= 1
 trigger2 = NumHelper(8998)>1
 
-;<CAMERA CONTROL>=============================
+;CAMERA CONTROL==
 [StateDef 8999]
 type = S
 velSet = 0,0

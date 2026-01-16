@@ -2955,7 +2955,7 @@ value = 0
 ctrl = 1
 
 
-;< ROLL >====================
+; ROLL =
 ;--- Forward ---
 [Statedef 710]
 type = S
@@ -3057,7 +3057,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;< POWER CHARGE >==========
+; POWER CHARGE =
 [Statedef 730]
 type = S
 physics = S
@@ -6650,9 +6650,9 @@ ctrl = 1
 [Statedef -2]
 
 ;#ADD004BASIC PIEs#
-;//==========================
+;//==
 ;// add004 supplementary sctrls v1.103
-;//==========================
+;//==
 
 ;// partner jump-out ; ???????
 [state 0]
@@ -6708,7 +6708,7 @@ ctrl = 1
 	time=1
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Face>>
 ;; face / portrait (?)
 [state 0]
@@ -6752,7 +6752,7 @@ ctrl = 1
 	alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Camera>>
 ;; change camera / ????
 [state 0]
@@ -6776,9 +6776,9 @@ ctrl = 1
 	movecamera=0,0 ;; [x,y]
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;; optional settings
-;//==========================
+;//==
 ;;--- guard crush ; ????????
 [state 0]
 	type=palfx
@@ -6795,8 +6795,8 @@ ctrl = 1
 ;;--- dizzy
 [state 0]
 	type=changestate
-	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;<-dizzy birds
-	value=190116 ;;<- goto dizzy/stun state
+	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;-dizzy birds
+	value=190116 ;;- goto dizzy/stun state
 ;;--- fadeout when KOed ; KO????
 [state 0]
 	type=varset
@@ -6829,8 +6829,8 @@ ctrl = 1
 	trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
 	trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
 	x=const240p(144)*ifelse(teamside=1,-1,1)
-;//==========================
-;//==========================
+;//==
+;//==
 
 [State -2, AssertSpecial]
 type = AssertSpecial
@@ -7663,7 +7663,7 @@ ctrl=0
    type=nothitby
    trigger1=1
    value=sca
-   time=8 ;;<-options
+   time=8 ;;-options
 [state 0]
    type=screenbound
    trigger1=1

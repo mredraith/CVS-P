@@ -1,4 +1,4 @@
-;<PARRY HELPER>=========================
+;PARRY HELPER==
 [StateDef 765]
 type = A
 physics = N
@@ -105,7 +105,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;<MAX MODE BAR HELPER>============================
+;MAX MODE BAR HELPER=
 [Statedef 780]
 type = S
 movetype = I
@@ -196,7 +196,7 @@ type = DestroySelf
 trigger1 = root, Var(20) <= 0
 ignorehitpause = 1
 
-;<THROW CLAW HELPER>=============================
+;THROW CLAW HELPER==
 [Statedef 830]
 type = A
 physics = N
@@ -251,7 +251,7 @@ trigger2= IfElse((Root,StateNo=820 && Root,Anim=820),Root,AnimElemTime(9)>=0,1)
 trigger2= FrontEdgeDist < 2
 value = 6110
 
-;<SOUL FIST PROJECTILE(NORMAL)>=======================
+;SOUL FIST PROJECTILE(NORMAL)=
 [StateDef 1005]
 type = S
 physics = N
@@ -423,7 +423,7 @@ type = DestroySelf
 trigger1 = Pos x != [-200,200]
 trigger2 = Anim = 1015 && !AnimTime
 
-;<SOUL FIST PROJECTILE(ARRANGED)>======================
+;SOUL FIST PROJECTILE(ARRANGED)=
 [StateDef 1010]
 type = S
 physics = N
@@ -936,7 +936,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
 
-;<EX SOUL FIST>=========================
+;EX SOUL FIST==
 [StateDef 1020]
 type = S
 physics = N
@@ -1144,7 +1144,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<SOUL FIST SPECIAL INTRO>=======================
+;SOUL FIST SPECIAL INTRO=
 [StateDef 1050]
 type = S
 physics = N
@@ -1191,7 +1191,7 @@ type = ChangeState
 trigger1 = Time >=20
 value = 1011
 
-;<AIR SOUL FIST(NORMAL)>=========================
+;AIR SOUL FIST(NORMAL)==
 [StateDef 1105]
 type = A
 physics = N
@@ -1374,7 +1374,7 @@ type = DestroySelf
 trigger1 = Pos x != [-200,200]
 trigger2 = Anim = 1015 && !AnimTime
 
-;<AIR SOUL FIST(ARRANGED)>=========================
+;AIR SOUL FIST(ARRANGED)==
 [StateDef 1110]
 type = A
 physics = N
@@ -1579,7 +1579,7 @@ type = DestroySelf
 trigger1 = Pos x != [-200,200]
 trigger2 = Anim = 1015 && !AnimTime
 
-;<EX AIR SOUL FIST>=========================
+;EX AIR SOUL FIST==
 [StateDef 1120]
 type = A
 physics = N
@@ -1801,7 +1801,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<SOUL PHOENIX BLAST>=========================
+;SOUL PHOENIX BLAST==
 [StateDef 3010]
 type = S
 physics = N
@@ -2010,7 +2010,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<AIR SOUL PHOENIX BLAST>=========================
+;AIR SOUL PHOENIX BLAST==
 [StateDef 3030]
 type = A
 physics = N
@@ -2233,7 +2233,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<MAX SOUL PHOENIX BLAST>=========================
+;MAX SOUL PHOENIX BLAST==
 [StateDef 3055]
 type = S
 physics = N
@@ -2436,7 +2436,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<AIR MAX SOUL PHOENIX BLAST>=======================
+;AIR MAX SOUL PHOENIX BLAST=
 [StateDef 3056]
 type = A
 physics = N
@@ -2708,7 +2708,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<LILITH HELPER>=========================
+;LILITH HELPER==
 [StateDef 3155]
 type = A
 physics = N
@@ -2900,7 +2900,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1016
 
-;<VALKYRIE DRILL FX>=============================
+;VALKYRIE DRILL FX==
 [Statedef 3205]
 type = A
 physics = N
@@ -2948,7 +2948,7 @@ type = DestroySelf
 trigger1 = (Root,StateNo!=3201) && (Root,StateNo!=3251) && (Root,Anim!=3202);(Root,StateNo!=3201) || (Root,Anim!=3202)
 trigger2 = (Root,Anim=3202) && (Root,AnimElemTime(3)<0)
 
-;<FINISHING SHOWER MISSILES>======================
+;FINISHING SHOWER MISSILES=
 [StateDef 3310]
 type = A
 physics = N
@@ -3301,7 +3301,7 @@ type = DestroySelf
 trigger1 = NumHelper(3310) > 1
 ignorehitpause = 1
 
-;<DARKNESS ILLUSION LILITH>===================
+;DARKNESS ILLUSION LILITH=
 [Statedef 3500]
 type = A
 physics = N
@@ -4170,7 +4170,7 @@ type = ChangeState
 trigger1 = Time >= 30 || pos y >= 0
 value = 1016
 
-;<INTRO HOLE HELPER>========================
+;INTRO HOLE HELPER=
 [Statedef 6005]
 type = S
 physics = N
@@ -4194,7 +4194,7 @@ type = DestroySelf
 trigger1 = Root,StateNo!=191
 trigger2 = Root,StateNo=191 && Root,AnimElemTime(13)>=25
 
-;<WALK AURA>=============================
+;WALK AURA==
 [Statedef 6010]
 type = S
 physics = N
@@ -4245,7 +4245,7 @@ value = 6011
 type = DestroySelf
 trigger1 = Root,StateNo!=20
 
-;<JET BOOSTER FX>========================
+;JET BOOSTER FX=
 [Statedef 6020]
 type = A
 physics = N
@@ -4489,7 +4489,7 @@ scale = (BackEdgeDist+160)/32.0,1
 type = DestroySelf
 trigger1= !AnimTime
 
-;<BAT HELPERS>=============================
+;BAT HELPERS==
 ;---WALK---
 [Statedef 6100]
 type = A
@@ -4984,7 +4984,7 @@ trigger1= root,statetype!=C && (rootdist x=[-10,10]) && (rootdist y=[55,75])
 trigger2= root,statetype=C && (rootdist x=[-10,10]) && (rootdist y=[15,35])
 
 
-;<SPARKS>=============================
+;SPARKS==
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -5964,7 +5964,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -6001,7 +6001,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -6061,7 +6061,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -6105,7 +6105,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -6149,7 +6149,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<RECOVER FX>=============================
+;RECOVER FX==
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -6176,7 +6176,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<COUNTER FX>=============================
+;COUNTER FX==
 [StateDef 8290]
 type = A
 physics = N
@@ -6220,7 +6220,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<MAX MODE TEXT FX>=============================
+;MAX MODE TEXT FX==
 [StateDef 8291]
 type = A
 physics = N
@@ -6264,7 +6264,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -6371,7 +6371,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<ALPHA COUNTER FX>==================
+;ALPHA COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -6421,7 +6421,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX==
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -6851,7 +6851,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;<SUPER FINISH>=============================
+;SUPER FINISH==
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -7014,7 +7014,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;<KO CAMERA FOCUS>=============================
+;KO CAMERA FOCUS==
 [Statedef 8998]
 type = S
 physics = N;S
@@ -7078,7 +7078,7 @@ trigger1 = Time >= 50
 trigger1 = Enemy,Life >= 1
 trigger2 = NumHelper(8998)>1
 
-;<CAMERA CONTROL>=============================
+;CAMERA CONTROL==
 [StateDef 8999]
 type = S
 velSet = 0,0

@@ -1,9 +1,9 @@
 ; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
-;=< HYPER STATES >=
-;====
+;
+; HYPER STATES >=
+;
 
 ; Corkscrew Blow
 [Statedef 3000]

@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Goenitz by varo_hades                   |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>===
-;==
+;
+;SPECIAL MOVES
+;
 
-;=<YONOKAZE>==
+;YONOKAZE>==
 [StateDef 1000]
 type = S
 physics = S
@@ -87,7 +87,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<EX YONOKAZE>=
+;EX YONOKAZE>=
 [StateDef 1030]
 type = S
 physics = S
@@ -170,7 +170,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<YANPYOU TOKOBUSE>=
+;YANPYOU TOKOBUSE>=
 [StateDef 1100]
 type = S
 physics = N
@@ -426,7 +426,7 @@ Trigger1 = !AnimTime
 value = 0
 Ctrl = 1
 
-;====<EX YANPYOU TOKOBUSE>=
+;EX YANPYOU TOKOBUSE>=
 [StateDef 1130]
 type = S
 physics = N
@@ -686,7 +686,7 @@ type = ChangeState
 Trigger1 = Time > 80
 value = 1110
 
-;=<HYOUGA>==
+;HYOUGA>==
 [StateDef 1200]
 type = S
 physics = N
@@ -844,7 +844,7 @@ Trigger1 = !AnimTime
 value = 0
 Ctrl = 1
 
-;=<SHIN AOI HANA: SEIRAN>==
+;SHIN AOI HANA: SEIRAN>==
 [StateDef 1300]
 type = S
 physics = N
@@ -1230,7 +1230,7 @@ Trigger1 = !AnimTime
 Value = 0
 Ctrl = 1
 
-;====<EX SHIN AOI HANA: SEIRAN>=
+;EX SHIN AOI HANA: SEIRAN>=
 [StateDef 1330]
 type = S
 physics = N
@@ -1575,7 +1575,7 @@ Trigger1 = !AnimTime
 Value = 0
 Ctrl = 1
 
-;====<SOUGA>=
+;SOUGA>=
 [Statedef 1400]
 type = S
 physics = N
@@ -1923,7 +1923,7 @@ trigger1 = Pos Y >= 0
 trigger1 = Vel Y > 0
 value = 5100
 
-;====<EX SOUGA>=
+;EX SOUGA>=
 [Statedef 1430]
 type = S
 physics = N
@@ -2314,7 +2314,7 @@ trigger1 = Pos Y >= 0
 trigger1 = Vel Y > 0
 value = 5100
 
-;====<CUTTING WIND>=
+;CUTTING WIND>=
 [Statedef 1500]
 type = S
 physics = N
@@ -2614,7 +2614,7 @@ Trigger1 = !AnimTime
 value = 0
 Ctrl = 1
 
-;====<EX CUTTING WIND>=
+;EX CUTTING WIND>=
 [Statedef 1530]
 type = S
 physics = N
@@ -2883,7 +2883,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 1515
 
-;====<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -2969,7 +2969,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

@@ -873,7 +873,7 @@ value = 5100
 
 
 ;
-;<KUNG FU BARRAGE>===================
+;KUNG FU BARRAGE=
 [Statedef 3000]
 type = S
 movetype= A
@@ -1116,7 +1116,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<KUNG FU BARRAGE MAX>===================
+;KUNG FU BARRAGE MAX=
 [Statedef 3050]
 type = S
 movetype= A

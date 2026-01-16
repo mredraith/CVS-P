@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Zangief by varo_hades                   |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES=
-;==
+;
+;SPECIAL MOVES=
+;
 
 ;Lariat
 [StateDef 1000]
@@ -5038,7 +5038,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<EX Vodka Fire>=
+;EX Vodka Fire>=
 [StateDef 1630]
 type = S
 movetype = A
@@ -5239,7 +5239,7 @@ trigger2 = time > 32 && var(10) = 1
 trigger3 = time > 34 && var(10) = 2
 value = 1601
 
-;====<EX Vodka Fire>=
+;EX Vodka Fire>=
 [StateDef 1730]
 type = S
 movetype = A
@@ -6327,7 +6327,7 @@ movecamera=1,0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 1917  ;<===custom animation
+value = 1917  ;=custom animation
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = vel y>=0
@@ -6370,7 +6370,7 @@ trigger1 =time>=60
 value = 5050
 ctrl = 0
 
-;====<EX Toss Up>=
+;EX Toss Up>=
 [StateDef 1930]
 type = S
 movetype = A
@@ -6630,7 +6630,7 @@ trigger1 =!animtime
 value = 0
 ctrl = 1
 
-;====<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -6736,7 +6736,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

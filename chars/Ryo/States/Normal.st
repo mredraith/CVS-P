@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Ryo Sakazaki by CrazyKoopa & Jmorphman  |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<NORMAL MOVES>====
-;==
+;
+;NORMAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
@@ -2152,7 +2152,7 @@ value=52
 
 
 
-;===<Throw Attempt>==
+;Throw Attempt>==
 [Statedef 800]
 type=S
 physics=S
@@ -2891,7 +2891,7 @@ trigger1 = pos y > -vel y
 value = 5100
 
 
-;===< Target Escaped >==
+; Target Escaped >==
 [Statedef 890]
 type = S
 physics = N

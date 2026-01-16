@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Gen by mwryly & varo_hades              |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<Zanei>=
+;Zanei>=
 [StateDef 3000]
 type = S
 physics = S
@@ -266,7 +266,7 @@ type = SelfState
 trigger1 = time >= 90
 value = 5001
 
-;====<Zanei Max>=
+;Zanei Max>=
 [StateDef 3050]
 type = S
 physics = S
@@ -533,7 +533,7 @@ type = SelfState
 trigger1 = time >= 90
 value = 5001
 
-;====<Zetsuei>=
+;Zetsuei>=
 [StateDef 3100]
 type = S
 physics = S
@@ -2276,7 +2276,7 @@ ctrl = 1
 ;ignorehitpause = 0
 ;persistent = 1
 
-;====<Shitenshuu>=
+;Shitenshuu>=
 [StateDef 3200]
 type = S
 physics = S
@@ -2463,7 +2463,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<Shitenshuu Max>=
+;Shitenshuu Max>=
 [StateDef 3250]
 type = S
 physics = S
@@ -2802,7 +2802,7 @@ trigger1 = time > 140
 value = 0
 ctrl = 1
 
-;====<Shitenketsu>=
+;Shitenketsu>=
 [StateDef 3300]
 type = S
 physics = N
@@ -3986,7 +3986,7 @@ type = selfstate
 trigger1 = Pos Y >= 0
 value = 5100
 
-;====<Yasen>=
+;Yasen>=
 [StateDef 3400]
 type = S
 physics = S
@@ -4284,7 +4284,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;====<Yasen Max>=
+;Yasen Max>=
 [StateDef 3450]
 type = S
 physics = S
@@ -4880,7 +4880,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;====<JYAKOHA>=
+;JYAKOHA>=
 [StateDef 13000]
 type = S
 physics = N
@@ -5346,7 +5346,7 @@ type = SelfState
 trigger1 = Time >= 72 && Alive
 value = 5120
 
-;====<JYAKOHA Max>=
+;JYAKOHA Max>=
 [StateDef 13050]
 type = S
 physics = N
@@ -5745,7 +5745,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 13045
 
-;====<Ryukoha>=
+;Ryukoha>=
 [StateDef 13100]
 type = S
 physics = N
@@ -6650,7 +6650,7 @@ type = selfstate
 trigger1 = Pos Y >= -60 && vel Y > 0
 value = 5100
 
-;====<Kouga>=
+;Kouga>=
 [StateDef 13200]
 type = S
 physics = N
@@ -7399,7 +7399,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Kouga Max>=
+;Kouga Max>=
 [StateDef 13250]
 type = S
 physics = N
@@ -8406,7 +8406,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Teiga>=
+;Teiga>=
 [StateDef 13300]
 type = S
 physics = N

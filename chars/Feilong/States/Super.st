@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Feilong by varo_hades                  |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<REKKA SHINKEN>=
+;REKKA SHINKEN>=
 [StateDef 3000]
 type = S
 physics = S
@@ -304,7 +304,7 @@ trigger1 = Time = 135
 value = 0
 ctrl = 1
 
-;====<MAX REKKA SHINKEN>=
+;MAX REKKA SHINKEN>=
 [StateDef 3050]
 type = S
 physics = S
@@ -603,7 +603,7 @@ trigger1 = Time = 145
 value = 0
 ctrl = 1
 
-;====<SHIEN RENKYAKU>=
+;SHIEN RENKYAKU>=
 [StateDef 3100]
 type = A
 physics = N
@@ -807,7 +807,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 3111
 
-;====<SHIEN RENKYAKU ATTACK>=
+;SHIEN RENKYAKU ATTACK>=
 [Statedef 3111]
 type = A
 movetype = A
@@ -1092,7 +1092,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<MAX SHIEN RENKYAKU>=
+;MAX SHIEN RENKYAKU>=
 [StateDef 3150]
 type = A
 physics = N
@@ -1296,7 +1296,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 3161
 
-;====<MAX SHIEN RENKYAKU ATTACK>=
+;MAX SHIEN RENKYAKU ATTACK>=
 [Statedef 3161]
 type = A
 movetype = A
@@ -1521,7 +1521,7 @@ triggerall = Anim = 3101
 trigger1 = Vel Y > 0
 value = 3130
 
-;====<GEKIRINKEN>=
+;GEKIRINKEN>=
 [StateDef 3200]
 type = S
 physics = S
@@ -2250,7 +2250,7 @@ type = SelfState
 trigger1 = (Vel Y > 0) && (Pos Y >= 0)
 value = 5100
 
-;====<RYU YASSAI>=
+;RYU YASSAI>=
 [StateDef 3300]
 type = S
 physics = S
@@ -2761,7 +2761,7 @@ triggerall = Time > 10
 trigger1 = Pos Y >= 0
 value = 3355
 
-;====<MAX RYU YASSAI>=
+;MAX RYU YASSAI>=
 [StateDef 3350]
 type = S
 physics = S
@@ -3482,7 +3482,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<RYU REKKASHINGEKI>=
+;RYU REKKASHINGEKI>=
 [StateDef 3400]
 type = S
 physics = N
@@ -4349,7 +4349,7 @@ envShake.time = 18
 envShake.ampl = 6
 envShake.freq = 120
 
-;====<MAX REKKASHINGEKI>=
+;MAX REKKASHINGEKI>=
 [StateDef 3450]
 type = S
 physics = N

@@ -2898,7 +2898,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;KING'S CLUTCH (TARGET)====
+;KING'S CLUTCH (TARGET)=
 [Statedef 840]
 type = A
 movetype = H

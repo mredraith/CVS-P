@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Todoh by varo_hades                      |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>===
-;==
+;
+;SPECIAL MOVES
+;
 
-;=<KASANE ATE>==
+;KASANE ATE>==
 [StateDef 1000]
 type = S
 physics = S
@@ -69,7 +69,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<EX KASANE ATE>=
+;EX KASANE ATE>=
 [StateDef 1030]
 type = S
 physics = N
@@ -158,7 +158,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<TAIKUU>==
+;TAIKUU>==
 [StateDef 1050]
 type = S
 physics = S
@@ -215,7 +215,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<EX TAIKUU>=
+;EX TAIKUU>=
 [StateDef 1080]
 type = S
 physics = N
@@ -297,7 +297,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<AIR KASANE ATE>==
+;AIR KASANE ATE>==
 [StateDef 1100]
 type = A
 physics = N
@@ -399,7 +399,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<EX AIR KASANE ATE>=
+;EX AIR KASANE ATE>=
 [StateDef 1130]
 type = A
 physics = N
@@ -490,7 +490,7 @@ trigger1 = animelemtime(9) > 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 1101
 
-;=<STUNNING GRAB>==
+;STUNNING GRAB>==
 [StateDef 1200]
 type = S
 physics = S
@@ -791,7 +791,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;=<EX STUNNING GRAB>==
+;EX STUNNING GRAB>==
 [StateDef 1230]
 type = S
 physics = S
@@ -1045,7 +1045,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====< PUNCHED BY EX STUNNING GRAB>=
+; PUNCHED BY EX STUNNING GRAB>=
 ;--- Hit Pause ---
 [Statedef 1111200]
 type = A
@@ -1224,7 +1224,7 @@ type = selfstate
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;====<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -1310,7 +1310,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

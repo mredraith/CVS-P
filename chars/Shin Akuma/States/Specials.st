@@ -1,9 +1,9 @@
 ; ________________________________________
 ;| Gouki by Phantom.of.the.Server and Mwryly |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
-;=< SPECIAL STATES >===
-;====
+;
+; SPECIAL STATES 
+;
 
 ;HADOU KEN >=
 [Statedef 1000]
@@ -1677,7 +1677,7 @@ trigger1 = pos y >= 0
 value = 52
 
 
-;=< HYAKKI GOU DAN >==
+; HYAKKI GOU DAN >==
 [Statedef 1303]
 type = A
 movetype = A
@@ -1866,7 +1866,7 @@ value = 0
 ctrl = 1
 
 
-;=< HYAKKI GOU ZAN >==
+; HYAKKI GOU ZAN >==
 [Statedef 1305]
 type = A
 movetype = A
@@ -2613,7 +2613,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====
+;
 [Statedef 1360]
 type = S
 movetype= H
@@ -2633,7 +2633,7 @@ type = ChangeAnim2
 Trigger1 = !time
 value = 1360
 
-;====
+;
 [Statedef 1370]
 type = A
 movetype= H

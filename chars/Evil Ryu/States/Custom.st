@@ -1,9 +1,9 @@
 ; ________________________________________
 ;| Ryu by Phantom.of.the.Server and Mwryly |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;==< CUSTOM STATES====
-;==
+;
+; CUSTOM STATES=
+;
 
 ;SHOCKED
 [Statedef 7696]

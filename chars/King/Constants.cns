@@ -1,4 +1,4 @@
-;<VARIABLE LIST>====================
+;VARIABLE LIST=
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -49,7 +49,7 @@
 ; _________________________________________
 ;| King by Jmorphman                       |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 1000
 power = 3000
@@ -115,7 +115,7 @@ down.bounce.groundLevel = 12
 down.friction.threshold = 0.5
 
 
-;<WINQUOTES>====================
+;WINQUOTES=
 [Quotes]
 victory0 = "God, what a wimp!"
 victory1 = "Come on, weeniemeister. I'll show you my stuff."

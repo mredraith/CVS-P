@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Gen by mwryly & varo_hades              |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>===
-;==
+;
+;SPECIAL MOVES
+;
 
 ;HYAKURENKU Startup
 [StateDef 1000]
@@ -752,7 +752,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1105
 
-;===
+;
 ;Set 1 kicks
 [StateDef 1150]
 type = A
@@ -1939,7 +1939,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<OUGA>==
+;OUGA>==
 ;Startup Auto
 [StateDef 11100]
 type = S
@@ -3199,7 +3199,7 @@ value = 0
 ctrl = 1
 
 
-;=<EX OUGA>==
+;EX OUGA>==
 ;Startup Auto
 [StateDef 11200]
 type = S
@@ -3319,7 +3319,7 @@ type = ChangeState
 trigger1 = !AnimTime
 trigger1 = Var(12) = 2
 value = 11112
-;====<PUNCH ZERO COUNTER (CRANE)>=
+;PUNCH ZERO COUNTER (CRANE)>=
 [StateDef 2900]
 type = S
 physics = N
@@ -3406,7 +3406,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER (MANTIS)>=
+;KICK ZERO COUNTER (MANTIS)>=
 [StateDef 2910]
 type = S
 physics = N

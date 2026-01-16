@@ -1,9 +1,9 @@
 ; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
-;=< SPECIAL STATES >===
-;====
+;
+; SPECIAL STATES 
+;
 
 ; Light Machine Gun Blow
 [Statedef 1000]

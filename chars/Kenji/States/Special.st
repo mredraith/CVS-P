@@ -1,9 +1,9 @@
 ; _________________________________________
 ;|Kenji by K6666orochi
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>====
-;==
+;
+;SPECIAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ;Projectile
@@ -2689,7 +2689,7 @@ type = ChangeState
 trigger1 = Vel Y>0 && Pos Y>=-Vel Y
 value = 52
 
-;====< ZERO COUNTER >=
+; ZERO COUNTER >=
 ;PUNCH ZERO COUNTER
 [Statedef 2900]
 type = S
@@ -2778,7 +2778,7 @@ value = 0
 ctrl = 1
 
 
-;====< ZERO COUNTER >=
+; ZERO COUNTER >=
 ;KICK ZERO COUNTER
 [Statedef 2910]
 type = S

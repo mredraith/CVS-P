@@ -1,4 +1,4 @@
-;<VARIABLE LIST>====================
+;VARIABLE LIST=
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -49,7 +49,7 @@
 ; _________________________________________
 ;| Rolento by Jmorphman                    |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 972
 power = 3000
@@ -115,7 +115,7 @@ down.bounce.groundLevel = 12
 down.friction.threshold = 0.5
 
 
-;<WINQUOTES>====================
+;WINQUOTES=
 [Quotes]
 victory0 = "Let's fight again, so I can stick it to you!"
 victory1 = "Fear prevents learning and you've failed."

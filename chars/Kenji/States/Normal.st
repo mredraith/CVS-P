@@ -1,9 +1,9 @@
 ; _________________________________________
 ;|Kenji by K6666orochi
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<NORMAL MOVES>====
-;==
+;
+;NORMAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
@@ -4471,7 +4471,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;===< Target Escaped >==
+; Target Escaped >==
 [Statedef 890]
 type = S
 physics = N

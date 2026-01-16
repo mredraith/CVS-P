@@ -1,7 +1,7 @@
 ; _____________________
 ;| Eagle by CrazyKoopa |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;<CONSTANTS>====================
+;CONSTANTS=
 
 [Data]
 life = 1000
@@ -64,7 +64,7 @@ down.bounce.yaccel = 0.4
 down.bounce.groundlevel = 12
 down.friction.threshold = 0.5
 
-;<WINQUOTES>====================
+;WINQUOTES=
 [Quotes]
 victory0 = "Opportunity knocks for those willing to pay the price!"
 victory1 = "The joy of victory runs through my body..."

@@ -1,4 +1,4 @@
-;<SKULLO CRUSHER>=======================
+;SKULLO CRUSHER=
 [Statedef 1000]
 type = S
 movetype = A
@@ -228,7 +228,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX SKULLO CRUSHER>===========================
+;EX SKULLO CRUSHER=
 [Statedef 1030]
 type = S
 movetype = A
@@ -388,7 +388,7 @@ trigger1 = pos y > -vel y
 value = 1003
 ctrl = 0
 
-;<SKULLO SLIDER>=======================
+;SKULLO SLIDER=
 [Statedef 1100]
 type = C
 movetype = A
@@ -724,7 +724,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX SKULLO SLIDER>=======================
+;EX SKULLO SLIDER=
 [Statedef 1130]
 type = C
 movetype = A
@@ -918,7 +918,7 @@ type=selfstate
 trigger1= vel y>0 && pos y>=-5
 value=5100
 
-;<SKULLO HEAD>=======================
+;SKULLO HEAD=
 [Statedef 1200]
 type = S
 movetype = A
@@ -1915,7 +1915,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1201
 
-;<EX SKULLO HEAD>=======================
+;EX SKULLO HEAD=
 [Statedef 1230]
 type = S
 movetype = A
@@ -2459,7 +2459,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<SKULLO DIVE>========================
+;SKULLO DIVE=
 [Statedef 1300]
 type = A
 movetype = A
@@ -2714,7 +2714,7 @@ trigger1 = AnimElemTime(3) >= 0
 trigger1 = Vel Y > 0 && Pos Y >= 0;pos y > -vel y
 value = 1204
 
-;<EX SKULLO DIVE>=========================
+;EX SKULLO DIVE==
 [Statedef 1330]
 type = A
 movetype = A
@@ -2828,7 +2828,7 @@ trigger1 = AnimElemTime(3) >= 0
 trigger1 = Vel Y > 0 && Pos Y >= 0;pos y > -vel y
 value = 1233
 
-;<SKULLO FACE SLAM>====================
+;SKULLO FACE SLAM=
 [Statedef 1400]
 type = S
 movetype = A
@@ -3190,7 +3190,7 @@ type = SelfState
 trigger1 = !AnimTime && Anim = 1420
 value = IfElse(Alive,5120,5150)
 
-;<EX SKULLO FACE SLAM>====================
+;EX SKULLO FACE SLAM=
 [Statedef 1430]
 type = S
 movetype = A

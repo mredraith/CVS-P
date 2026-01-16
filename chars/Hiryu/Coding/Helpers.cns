@@ -1,4 +1,4 @@
-;<PARRY HELPER>=========================
+;PARRY HELPER==
 [StateDef 765]
 type = A
 physics = N
@@ -105,7 +105,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;<MAX MODE BAR HELPER>============================
+;MAX MODE BAR HELPER=
 [Statedef 780]
 type = S
 movetype = I
@@ -196,7 +196,7 @@ type = DestroySelf
 trigger1 = root, Var(20) <= 0
 ignorehitpause = 1
 
-;<Winpose Tiger Helper>============================
+;Winpose Tiger Helper=
 [Statedef 384]
 type = A
 movetype = I
@@ -252,7 +252,7 @@ pauseMoveTime = -1
 superMoveTime = -1
 ownPal = 1
 
-;<Intro Item Helper>============================
+;Intro Item Helper=
 [Statedef 392]
 type = S
 anim = 392
@@ -307,7 +307,7 @@ type = DestroySelf
 trigger1 = Pos x != [-200,200];BackEdgeDist >= 180;325
 trigger2 = Time >= 300
 
-;<Excalibur FX Helper>============================
+;Excalibur FX Helper=
 ;LK
 [Statedef 1401]
 type = A
@@ -452,7 +452,7 @@ trigger2 = Root,StateNo!=1420
 trigger2 = Root,StateNo!=1432
 trigger3 = NumHelper(1403)>1
 
-;<Vajra Clones>=============================
+;Vajra Clones==
 [Statedef 1610]
 type = A
 movetype = I
@@ -508,7 +508,7 @@ type = DestroySelf
 trigger1 = !AnimTime
 trigger2 = Root,MoveType=H
 
-;<Formation Helpers>=========================
+;Formation Helpers==
 [StateDef 1710]
 type = C
 physics = N
@@ -2354,7 +2354,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-240,240]
 
-;<Formation C Helpers>=========================
+;Formation C Helpers==
 ;Eagle Carrying Bomb
 [Statedef 1905]
 type = A
@@ -2901,7 +2901,7 @@ type = ChangeState
 trigger1 = Time >= 8
 value = 1715
 
-;<EX Formation C Helpers>=========================
+;EX Formation C Helpers==
 ;EX Eagle Carrying Bomb
 [Statedef 1935]
 type = A
@@ -3297,7 +3297,7 @@ trigger1 = FrontEdgeDist <= -80;-40
 trigger2 = !AnimTime
 
 
-;<Boost Slash Helpers>=========================
+;Boost Slash Helpers==
 [StateDef 3010]
 type = S
 physics = N
@@ -3773,7 +3773,7 @@ type = DestroySelf
 trigger1 = NumHelper(3010) > 1
 ignorehitpause = 1
 
-;<Nagrarok FX Helpers>====================
+;Nagrarok FX Helpers=
 [Statedef 3120]
 type = A
 movetype = I
@@ -3885,7 +3885,7 @@ type = DestroySelf
 trigger1 = !AnimTime
 trigger2 = Root,MoveType=H
 
-;<Legion Helpers>=============================
+;Legion Helpers==
 ;Legion Tiger 1
 [StateDef 3250]
 type = A
@@ -4783,7 +4783,7 @@ type = ChangeState
 trigger1 = BackEdgeDist >= 440
 value = 1715
 
-;<Ouroboros Helpers>=============================
+;Ouroboros Helpers==
 ;Ouroboros Satellites
 [StateDef 3305]
 type = A
@@ -5317,7 +5317,7 @@ trigger1 = NumHelper(3310) > 1
 ignorehitpause = 1
 
 
-;<Ragnarok Helpers>=============================
+;Ragnarok Helpers==
 ;Flying Attacks(special thanks to Ahuron)
 [Statedef 3420]
 type = A
@@ -5556,7 +5556,7 @@ type = DestroySelf
 trigger1 = Time = 38
 
 
-;<SPARKS>=============================
+;SPARKS==
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -6535,7 +6535,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -6572,7 +6572,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -6632,7 +6632,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -6676,7 +6676,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -6720,7 +6720,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<FLAMES>=============================
+;FLAMES==
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -6787,7 +6787,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;<RECOVER FX>=============================
+;RECOVER FX==
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -6814,7 +6814,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<COUNTER FX>=============================
+;COUNTER FX==
 [StateDef 8290]
 type = A
 physics = N
@@ -6858,7 +6858,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<MAX MODE TEXT FX>=============================
+;MAX MODE TEXT FX==
 [StateDef 8291]
 type = A
 physics = N
@@ -6902,7 +6902,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -7009,7 +7009,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -7059,7 +7059,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX==
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -7489,7 +7489,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;<SUPER FINISH>=============================
+;SUPER FINISH==
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -7647,7 +7647,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;<CAMERA CONTROL>=============================
+;CAMERA CONTROL==
 [StateDef 8999]
 type = S
 velSet = 0,0

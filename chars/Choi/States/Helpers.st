@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| CVS Choi Bounge by Falcon Rapper        |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;===< HELPER STATES >====
-;==
+;
+; HELPER STATES =
+;
 ;--------------------------------------------------------------------------------------
 ;Pal Select
 [Statedef 256]
@@ -148,10 +148,10 @@ trigger1 = Time = 50
 trigger1 = enemy, Life >= 1
 trigger2=numhelper(6001)>=2
 
-;=
+;
 ;HI Res Hitspark Coding 1.0
-;=
-;====<SPARKS>=
+;
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -224,9 +224,9 @@ type = DestroySelf
 trigger1 = Time >= 8
 
 
-;=
+;
 ;HI Res Hitspark Coding 1.0
-;=
+;
 ;Hit Spark for Helpers and Throws
 [StateDef 8005]
 physics = N
@@ -1934,7 +1934,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;====< SUPERPAUSE FX >=
+; SUPERPAUSE FX >=
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A
@@ -2511,7 +2511,7 @@ type=DestroySelf
 trigger1=Time >= 40
 trigger2=root,stateno!=[3050,3510]
 
-;;= SPECIAL FINISH =
+;; SPECIAL FINISH =
 [Statedef 8550]
 ctrl = 0
 anim = 1

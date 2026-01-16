@@ -3,11 +3,11 @@
 ;CODES - Mr.KARATE
 ;SPRITES - GUSTAVO C. MORAES
 
-;==
-;===<SYSTEM STATES>====
-;==
+;
+;SYSTEM STATES=
+;
 
-;====<RUN/DASH>====
+;RUN/DASH=
 ; Dash Forward
 [Statedef 100]
 type = S
@@ -399,7 +399,7 @@ trigger1 = animTime = 0
 value = 0
 ctrl = 1
 
-;====<WIN POSES/INTROS>====
+;WIN POSES/INTROS=
 ; Lose by Time Over
 [Statedef 170]
 type = S
@@ -796,7 +796,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 
-;====<TAUNT>====
+;TAUNT=
 [Statedef 195]
 type = S
 ctrl = 0
@@ -835,7 +835,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<ROLL-DODGE>====
+;ROLL-DODGE=
 ;Roll forward
 [Statedef 300]
 type = S
@@ -1209,7 +1209,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<EXCEL>====
+;EXCEL=
 ;Excel - Original combo
 [Statedef 360]
 type=U
@@ -1306,7 +1306,7 @@ trigger1= anim=760 && !animtime
 value=0
 ctrl=1
 
-;====<POWER CHARGE>====
+;POWER CHARGE=
 [Statedef 340]
 type=S
 physics=S
@@ -1453,7 +1453,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<ZERO COUNTER>====
+;ZERO COUNTER
 [Statedef 350]
 type=S
 physics=S
@@ -1858,7 +1858,7 @@ type = SelfState
 trigger1 = Pos Y >= 0
 value = 5100
 
-;====<PARRY>====
+;PARRY
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -2137,7 +2137,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value=52
 
-;====<TRHOWS>====
+;TRHOWS=
 ;Trhow 1 - Kutei Kaku
 [Statedef 800]
 type = S

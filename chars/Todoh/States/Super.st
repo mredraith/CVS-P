@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Todoh by varo_hades                      |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<CHOU KASANE ATE>=
+;CHOU KASANE ATE>=
 [StateDef 3000]
 type = S
 physics = N
@@ -121,7 +121,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<MAX CHOU KASANE ATE>=
+;MAX CHOU KASANE ATE>=
 [StateDef 3050]
 type = S
 physics = N
@@ -237,7 +237,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<SHINGAN KUZU OTOSHI>=
+;SHINGAN KUZU OTOSHI>=
 [StateDef 3100]
 type = S
 physics = N

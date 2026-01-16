@@ -1928,7 +1928,7 @@ forcestand = 1
 type = Destroyself
 trigger1 = AnimTime =0
 
-;< SHOCK >=============================
+; SHOCK ==
 [Statedef 8155]
 type = A
 velset = 0, 0
@@ -2029,7 +2029,7 @@ type = destroyself
 trigger1 = Time = 50
 trigger1 = enemy, Life >= 1
 trigger2=numhelper(6001)>=2
-;<SPARKS>=============================
+;SPARKS==
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -2954,7 +2954,7 @@ alpha = 256 - (32 * Time),256
 [State 8024, End]
 type = DestroySelf
 trigger1 = Time >= 16
-;<JUMP DUST>===========================
+;JUMP DUST=
 ;Jump Dust 
 [StateDef 8100]
 type = S
@@ -2992,7 +2992,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>===========================
+;DASH DUST=
 ;Dash Dust
 [StateDef 8103]
 type = A
@@ -3053,7 +3053,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>===========================
+;IMPACT DUST=
 ;Impact Dust 
 [StateDef 8110]
 type = A
@@ -3098,7 +3098,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 ;Wall Impact Dust
 [StateDef 8111]
 type = A
@@ -3143,7 +3143,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<RECOVER FX>=============================
+;RECOVER FX==
 ;Recover FX
 [StateDef 8200]
 type = A
@@ -3171,7 +3171,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<COUNTER FX>=============================
+;COUNTER FX==
 ;Counter FX
 [StateDef 8290]
 type = A
@@ -3216,7 +3216,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -3323,7 +3323,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 ;Zero Counter FX
 [StateDef 8350]
 type = A
@@ -3374,7 +3374,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;< EXCEL COMBO CHARGE >=============================
+; EXCEL COMBO CHARGE ==
 [Statedef 8400]
 type = A
 velset = 0, 0
@@ -3477,7 +3477,7 @@ type = destroyself
 trigger1 = time >= 30
 
 
-;< EXCEL TIMER >=============================
+; EXCEL TIMER ==
 [Statedef 8405]
 physics = N
 velset = 0, 0
@@ -3543,7 +3543,7 @@ trigger1 = (root, var(20) <= 0)
 type = destroyself
 trigger1 = (root, var(20) <= 0)
 
-;<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX==
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -4072,7 +4072,7 @@ trigger1 = Time >= 40
 [State 8520, End]
 type = DestroySelf
 trigger1 = Time >= 40
-;< SPECIAL FINISH >=================
+; SPECIAL FINISH ==
 ;Special Finish FX
 [Statedef 8600]
 ctrl = 0
@@ -4134,7 +4134,7 @@ trigger2= roundstate<3
 [State 8600, End]
 type=destroyself
 trigger1= roundstate!=3
-;<SUPER FINISH>=============================
+;SUPER FINISH==
 ;Super Finish FX 
 [StateDef 8605]
 type = A
@@ -4292,7 +4292,7 @@ trigger2= roundstate<3
 type=destroyself
 trigger1= roundstate!=3
 
-;<CAMERA CONTROL>=============================
+;CAMERA CONTROL==
 ;Camera Control
 [StateDef 8999]
 type = S

@@ -1,4 +1,4 @@
-;<SOUL FLASH>==========================
+;SOUL FLASH=
 [StateDef 1000]
 type = S
 physics = S
@@ -82,7 +82,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX SOUL FLASH>==========================
+;EX SOUL FLASH=
 [StateDef 1030]
 type = S
 physics = S
@@ -184,7 +184,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<AIR SOUL FLASH>==========================
+;AIR SOUL FLASH=
 [StateDef 1100]
 type = A
 physics = N
@@ -316,7 +316,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX AIR SOUL FLASH>==========================
+;EX AIR SOUL FLASH=
 [StateDef 1130]
 type = A
 physics = N
@@ -435,7 +435,7 @@ trigger1 = AnimElemTime(6) >= 0
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<SHINING BLADE>=======================
+;SHINING BLADE=
 [Statedef 1200]
 type = S
 movetype = A
@@ -898,7 +898,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<EX SHINING BLADE>=======================
+;EX SHINING BLADE=
 [Statedef 1230]
 type = S
 movetype = A
@@ -1376,7 +1376,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<MERRY SPIN>=======================
+;MERRY SPIN=
 [Statedef 1300]
 type = S
 movetype = A
@@ -1574,7 +1574,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<EX MERRY SPIN>=======================
+;EX MERRY SPIN=
 [Statedef 1330]
 type = S
 movetype = A
@@ -1883,7 +1883,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<MYSTIC ARROW>==================
+;MYSTIC ARROW=
 [Statedef 1400]
 type = S
 movetype= A
@@ -2415,7 +2415,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;<EX MYSTIC ARROW>==========================
+;EX MYSTIC ARROW=
 [StateDef 1430]
 type = S
 physics = S

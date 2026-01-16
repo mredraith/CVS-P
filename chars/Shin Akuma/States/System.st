@@ -1,16 +1,16 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (27/12/2018)
-;====
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;====
+;
 
  ________________________________________
 ;| Gouki by Phantom.of.the.Server and Mwryly |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
-;===< COMMON STATES===
-;====
+;
+; COMMON STATES=
+;
 
 ;PARRY
 ;STANDING ---
@@ -614,7 +614,7 @@ value = 0
 ctrl = 1
 
 
-;==< STANDING=
+; STANDING=
 [Statedef 0]
 type = S
 physics = S
@@ -652,7 +652,7 @@ trigger3 = (enemy(1), name = "M -NES Game 1" + enemy(1), name = "M -NES Game 2" 
 value = 50
 
 
-;==< CROUCHING=
+; CROUCHING
 [Statedef 10]
 type = C
 physics = C
@@ -981,7 +981,7 @@ value = 0
 ctrl = 1
 
 
-;====< RUN==
+; RUN==
 [Statedef 100]
 type = S
 movetype = I
@@ -1028,7 +1028,7 @@ value = 0
 ctrl = 1
 
 
-;< FORWARD DASH=
+; FORWARD DASH=
 [Statedef 102]
 type = S
 movetype = I
@@ -1071,7 +1071,7 @@ value = 0
 ctrl = 1
 
 
-;< BACK DASH=
+; BACK DASH=
 [Statedef 105]
 type = A
 movetype = I
@@ -1338,7 +1338,7 @@ value = 150
 type = changestate
 trigger1 = hitshakeover
 value = 151 + 2 * ((!AIlevel && command = "holddown") || (AIlevel && (enemynear, movetype = A) && (enemynear, statetype = C)))
-;=
+;
 ;[State 150, ChangeState]
 ;type = ChangeState
 ;trigger1 = (HitShakeOver) && (Command = "holdback")
@@ -1353,7 +1353,7 @@ value = 151 + 2 * ((!AIlevel && command = "holddown") || (AIlevel && (enemynear,
 ;type = ChangeState
 ;trigger1 = (Command != "holdback")
 ;value = 10160
-;====
+;
 [State 150, High to Low]
 type = statetypeset
 trigger1 = !AIlevel && statetype = S && command = "holddown"
@@ -1368,7 +1368,7 @@ trigger2 = AIlevel && random < (125 * (AIlevel ** 2 / 64.0))
 trigger2 = statetype = C && (enemynear, movetype = A) && (enemynear, statetype != C)
 statetype = S
 physics = S
-;=
+;
 ;[State 150, VarSet]
 ;type = VarSet
 ;trigger1 = Time = 0
@@ -1379,7 +1379,7 @@ physics = S
 ;trigger1 = (!Time)
 ;waveform = Square
 ;time = 3
-;===
+;
 ;SGUARDHIT2 (knocked back) ---
 [Statedef 151]
 type = S
@@ -2121,7 +2121,7 @@ trigger1 = animelem = 5
 value = 5, 4
 
 
-;===<PRE INTRO>=
+;PRE INTRO>=
 [Statedef 190]
 type = S
 ctrl = 0
@@ -2485,7 +2485,7 @@ trigger1 = !animtime
 value = 0
 
 
-;< SGS INTRO====
+; SGS INTRO=
 [Statedef 178]
 type = A
 physics = N
@@ -2665,7 +2665,7 @@ type = changestate
 trigger1 = !animtime
 value = 0
 
-;< MISOGI INTRO====
+; MISOGI INTRO=
 [Statedef 188]
 type = A
 physics = N
@@ -3110,7 +3110,7 @@ trigger1 = !animtime
 value = 0
 
 
-;< INTRO vs VEGA====
+; INTRO vs VEGA=
 [Statedef 350]
 type = A
 physics = N
@@ -3499,7 +3499,7 @@ trigger1 = time >= 120 && roundstate = 3
 value = ifelse(roundstate = 3, 180, 0)
 ctrl = 1
 
-;==<TURNS INTRO>==
+;TURNS INTRO>==
 [StateDef 6900]
 type = A
 anim = 42
@@ -3834,7 +3834,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;==<K.O.>==
+;K.O.>==
 [StateDef 5150]
 type = L
 movetype = H
@@ -3876,7 +3876,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;==<AIR HIT TRANSITION>==
+;AIR HIT TRANSITION>==
 [Statedef 5035]
 type = A
 movetype = H
@@ -3914,8 +3914,8 @@ trigger4 = !Time
 trigger4 = Anim != 5035
 value = 5050
 
-;=< -2 STATES==
-;===
+; -2 STATES==
+;
 [Statedef -2]
 
 ;#ADD004BASIC PIEs#
@@ -4617,9 +4617,9 @@ text = "\nBy PotS - http://www.mugenguild.com/pots/"
 ignorehitpause = 1
 
 
-;===
-;=< -3 STATES==
-;===
+;
+; -3 STATES==
+;
 [Statedef -3]
 
 [State -3, Gametime Var]

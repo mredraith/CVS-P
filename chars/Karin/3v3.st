@@ -1,18 +1,18 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (6/12/2015)
-;==
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; use assist tool, or delete this file, then remove ".a4bk" from the neme of backup to Restore.
-;==
+;
 
 ; ________________________________
 ;| Karin by Phantom.of.the.Server |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;===< SYSTEM STATES >====
-;==
+;
+; SYSTEM STATES =
+;
 
-;====< STANDING >====
+; STANDING =
 [Statedef 0]
 type = S
 physics = S
@@ -51,7 +51,7 @@ trigger3 = (enemy(1), name = "M -NES Game 1" + enemy(1), name = "M -NES Game 2" 
 value = 50
 
 
-;====< CROUCHING >====
+; CROUCHING =
 [Statedef 10]
 type = C
 physics = C
@@ -109,7 +109,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====< WALKING >====
+; WALKING =
 [Statedef 20]
 type = S
 physics = S
@@ -141,7 +141,7 @@ trigger2 = anim = 5 && animelemtime(1) >= 1
 value = 21
 
 
-;====< JUMPING >====
+; JUMPING =
 [Statedef 40]
 type = S
 physics = S
@@ -346,7 +346,7 @@ value = 0
 ctrl = 1
 
 
-;====< HIGH JUMP CANCEL >====
+; HIGH JUMP CANCEL =
 [Statedef 60]
 type = S
 physics = S
@@ -404,7 +404,7 @@ value = 50
 ctrl = 1
 
 
-;==< RUN >===
+; RUN 
 [Statedef 100]
 type = S
 physics = N
@@ -598,7 +598,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;====< BACK DASH >==
+; BACK DASH >==
 [Statedef 105]
 type = A
 physics = N
@@ -679,7 +679,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;====< OFF SCREEN >==
+; OFF SCREEN >==
 [Statedef 110]
 type = S
 physics = S
@@ -743,7 +743,7 @@ type = changestate
 trigger1 = anim = 101 && !animtime
 value = 0
 ctrl = 1
-;====< DODGE >====
+; DODGE =
 [Statedef 710]
 type = S
 physics = S
@@ -792,7 +792,7 @@ value = 0
 ctrl = 1
 
 
-;====< FORWARD ROLL >====
+; FORWARD ROLL =
 [Statedef 720]
 type = S
 physics = N
@@ -889,7 +889,7 @@ value = 0
 ctrl = 1
 
 
-;==< POWER CHARGE >==
+; POWER CHARGE >==
 [Statedef 730]
 type = S
 physics = S
@@ -973,7 +973,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;==< POWER CHARGE >==
+; POWER CHARGE >==
 [Statedef 732]
 type = S
 physics = S
@@ -1032,7 +1032,7 @@ trigger3 = AIlevel && (inguarddist || p2movetype = A || p2bodydist x <= 120)
 value = 731
 ctrl = 1
 
-;====< ZERO COUNTER >====
+; ZERO COUNTER =
 [Statedef 750]
 type = S
 physics = S
@@ -1098,7 +1098,7 @@ trigger1 = time >= 15
 value = ifelse(var(10) = 1, 2950, 2900)
 
 
-;====< PARRY >====
+; PARRY =
 ;--- STANDING ---
 [Statedef 760]
 type = S
@@ -1437,7 +1437,7 @@ trigger1 = root, stateno = [760, 762]
 trigger2 = time >= 2
 
 
-;====< CUSTOM COMBO >====
+; CUSTOM COMBO =
 ;--- GROUND ---
 [Statedef 900]
 type = S
@@ -1622,7 +1622,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;==< TARGET SAFE FALL >==
+; TARGET SAFE FALL >==
 [Statedef 5205]
 type = A
 physics = N
@@ -1651,7 +1651,7 @@ trigger1 = time >= 60
 value = 5210
 
 
-;==< FALL RECOVERY >==
+; FALL RECOVERY >==
 [Statedef 5200]
 type = A
 movetype = H
@@ -1806,7 +1806,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;==< RECOVERY ROLL >==
+; RECOVERY ROLL >==
 [Statedef 5220]
 type = A
 movetype = H
@@ -1856,7 +1856,7 @@ value = 11
 ctrl = 1
 
 
-;===< GUARD >====
+; GUARD =
 ;--- START ---
 [Statedef 120]
 type = U
@@ -2268,7 +2268,7 @@ trigger1 = sysvar(0)
 value = ifelse(var(0), 5221, 52)
 
 
-;====< LOSE >====
+; LOSE =
 [Statedef 170]
 type = S
 ctrl = 0
@@ -2281,7 +2281,7 @@ value = SCA
 time = 1
 
 
-;====< DRAW GAME >====
+; DRAW GAME =
 [Statedef 175]
 type = S
 ctrl = 0
@@ -2301,7 +2301,7 @@ value = SCA
 time = 1
 
 
-;====< CONTINUE? >====
+; CONTINUE? =
 [Statedef 5500]
 type = S
 anim = 5300
@@ -2313,7 +2313,7 @@ trigger1 = !time
 value = 5500
 
 
-;====< INITIALIZE >====
+; INITIALIZE =
 [Statedef 5900]
 type = S
 
@@ -2361,7 +2361,7 @@ type = changestate
 trigger1 = 1
 value = 0
 
-;====< INTRO 1 >====
+; INTRO 1 =
 [Statedef 190]
 type = S
 physics = S
@@ -2384,7 +2384,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====< INTRO 2 >====
+; INTRO 2 =
 [Statedef 191]
 type = A
 anim = 191
@@ -2494,7 +2494,7 @@ type = changestate
 trigger1 = !animtime
 value = 0
 
-;====< INTRO 3 >====
+; INTRO 3 =
 [Statedef 193]
 type = S
 physics = S
@@ -2515,7 +2515,7 @@ channel = 0
 type = changestate
 trigger1 = !animtime
 value = 0
-;====< TURNS INTRO >====
+; TURNS INTRO =
 [Statedef 6900]
 type = A
 anim = 6900
@@ -2606,7 +2606,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====< HELICOPTER INTRO >====
+; HELICOPTER INTRO =
 [Statedef 6910]
 type = A
 physics = N
@@ -2761,7 +2761,7 @@ type = changestate
 trigger1 = !animtime
 value = 0
 
-;====< WIN POSE DECIDER >====
+; WIN POSE DECIDER =
 [Statedef 180]
 type = S
 ctrl = 0
@@ -2800,7 +2800,7 @@ trigger1 = 1
 value = 181 + (random % 6)
 
 
-;====< WIN 1 >====
+; WIN 1 =
 [Statedef 181]
 type = S
 physics = S
@@ -2832,7 +2832,7 @@ value = 6, 2
 channel = 0
 
 
-;====< WIN 2 >====
+; WIN 2 =
 [Statedef 182]
 type = S
 physics = S
@@ -2864,7 +2864,7 @@ trigger1 = time < 300
 flag = roundnotover
 
 
-;====< WIN 3 >====
+; WIN 3 =
 [Statedef 183]
 type = S
 physics = S
@@ -2902,7 +2902,7 @@ value = 9, 10
 channel = 0
 
 
-;====< WIN 4 >====
+; WIN 4 =
 [Statedef 184]
 type = S
 physics = S
@@ -2946,7 +2946,7 @@ value = 6, 6
 channel = 0
 
 
-;====< WIN 5 >====
+; WIN 5 =
 [Statedef 185]
 type = S
 physics = S
@@ -2990,7 +2990,7 @@ value = 6, 5
 channel = 0
 
 
-;====< WIN 6 >====
+; WIN 6 =
 [Statedef 186]
 type = S
 physics = S
@@ -3039,7 +3039,7 @@ postype = back
 pos = -30, 0
 ownpal = 1
 
-;==< WIN by PERFECT >==
+; WIN by PERFECT >==
 [Statedef 187]
 type = S
 anim = 187
@@ -3115,7 +3115,7 @@ trigger1 = Time >= 120 && RoundState = 3
 value = Ifelse(RoundState = 3, 188, 0)
 ctrl = 1
 
-;====< WIN 7 >====
+; WIN 7 =
 [Statedef 189]
 type = S
 physics = S
@@ -3145,7 +3145,7 @@ type = playsnd
 trigger1 = animelem = 2
 value = 6, 4
 channel = 0
-;====< TAUNT >====
+; TAUNT =
 [Statedef 195]
 type = S
 physics = S
@@ -3190,7 +3190,7 @@ value = 0
 ctrl = 1
 
 
-;==< CHEAP K.O. >==
+; CHEAP K.O. >==
 [Statedef 5950]
 type = S
 movetype = H
@@ -3242,7 +3242,7 @@ trigger1 = !animtime
 value = ifelse(alive, 5110, 5150)
 
 
-;====< AIR HIT TRANSITION >====
+; AIR HIT TRANSITION =
 [Statedef 5035]
 type = A
 movetype = H
@@ -3281,9 +3281,9 @@ trigger4 = anim != 5035
 value = 5050
 
 
-;===
-;===< -2 STATES >=
-;===
+;
+; -2 STATES >=
+;
 [Statedef -2]
 
 ;//==
@@ -6372,9 +6372,9 @@ ignorehitpause = 1
 ;-------------------------------------------------------------
 ;^^^^^^^ ELECTR0's IM Code ^^^^^^^^
 ;-------------------------------------------------------------
-;===
-;===< -3 STATES >=
-;===
+;
+; -3 STATES >=
+;
 [Statedef -3]
 
 [State -3, Gametime Var]
@@ -6833,7 +6833,7 @@ ctrl=0
    type=nothitby
    trigger1=1
    value=sca
-   time=8 ;;<-options
+   time=8 ;;-options
 [state 0]
    type=screenbound
    trigger1=1

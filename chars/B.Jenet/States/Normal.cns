@@ -2046,7 +2046,7 @@ type=ChangeState
 trigger1=!AnimTime
 value=0
 ctrl=1
-;<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type=S
 moveType=A
@@ -2859,7 +2859,7 @@ x = 0.98
 type = ChangeState
 trigger1 = Pos Y >= 0&&Vel Y > 0
 value = 106
-;<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

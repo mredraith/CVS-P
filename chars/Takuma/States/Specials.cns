@@ -199,7 +199,7 @@ type = selfstate
 trigger1 = time >= 110
 value = ifelse(alive, 5120, 5150)
 
-;<HIT BY EX KUNG FU PALM>===========================
+;HIT BY EX KUNG FU PALM=
 ;Being Launched
 [StateDef 1031]
 type = A
@@ -5052,7 +5052,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<HIT by EX COUNTER>========================
+;HIT by EX COUNTER=
 ;Initial hit state
 [Statedef 1490]
 type = S

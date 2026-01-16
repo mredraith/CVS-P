@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Sodom by varo_hades                     |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<Meido no Miyage>=
+;Meido no Miyage>=
 [StateDef 3000]
 type = S
 physics = S
@@ -547,7 +547,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<Max Meido no Miyage>=
+;Max Meido no Miyage>=
 [StateDef 3050]
 type = S
 physics = S
@@ -1253,7 +1253,7 @@ trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
 
-;====<Ten Chuu Satsu>=
+;Ten Chuu Satsu>=
 [StateDef 3100]
 type = S
 physics = N
@@ -2350,7 +2350,7 @@ trigger1 = Vel Y > 0
 value = 5100
 ctrl = 0
 
-;====<MAX Ten Chuu Satsu>=
+;MAX Ten Chuu Satsu>=
 [StateDef 3150]
 type = S
 physics = N
@@ -3534,7 +3534,7 @@ trigger1 = Vel Y > 0
 value = 5100
 ctrl = 0
 
-;====<Samurai's Revenge>=
+;Samurai's Revenge>=
 [StateDef 3200]
 type = S
 physics = S
@@ -5642,7 +5642,7 @@ type = SelfState
 trigger1 = time > 10 && pos Y >= 0 && vel Y > 0
 value = 5100
 
-;====<Final Samurai>=
+;Final Samurai>=
 [StateDef 3300]
 type = S
 physics = N
@@ -5978,7 +5978,7 @@ type = ScreenBound
 trigger1 = 1
 movecamera = 0,0
 
-;====<Max Final Samurai>=
+;Max Final Samurai>=
 [StateDef 3350]
 type = S
 physics = N
@@ -6314,7 +6314,7 @@ type = ScreenBound
 trigger1 = 1
 movecamera = 0,0
 
-;====<Slasher Attack>=
+;Slasher Attack>=
 [StateDef 3400]
 type = S
 physics = N
@@ -6762,7 +6762,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<Max Slasher Attack>=
+;Max Slasher Attack>=
 [StateDef 3450]
 type = S
 physics = N
@@ -7594,7 +7594,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<Sodom's Revenge>=
+;Sodom's Revenge>=
 [StateDef 3500]
 type = S
 physics = S

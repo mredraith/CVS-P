@@ -1,4 +1,4 @@
-;<RAISING STORM>==========================
+;RAISING STORM=
 [Statedef 3000]
 type = S
 movetype = A
@@ -184,7 +184,7 @@ trigger1 = !AnimTime
 value = 301
 ctrl = 1
 
-;<MAX RAISING STORM>==========================
+;MAX RAISING STORM=
 [Statedef 3050]
 type = S
 movetype = A
@@ -492,7 +492,7 @@ trigger1 = !AnimTime
 value = 301
 ctrl = 1
 
-;<SHINE KNUCKLE>==========================
+;SHINE KNUCKLE=
 [Statedef 3100]
 type = S
 movetype = A
@@ -751,7 +751,7 @@ trigger1 = !AnimTime
 value = 301
 ctrl = 1
 
-;<MAX SHINE KNUCKLE>==========================
+;MAX SHINE KNUCKLE=
 [Statedef 3150]
 type = S
 movetype = A
@@ -1283,7 +1283,7 @@ trigger1 = !AnimTime
 value = 301
 ctrl = 1
 
-;<NEO DEADLY RAVE>===================
+;NEO DEADLY RAVE=
 [Statedef 3200]
 type = S
 movetype= A

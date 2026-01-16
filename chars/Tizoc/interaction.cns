@@ -22419,11 +22419,11 @@ type = Explod
 trigger1 = Movehit
 trigger1 = NumHelper(889576)
 trigger1 = NumExplod(889576) = 0
-trigger1 = abs(Rootdist X-Helper(889576),Rootdist X)=[-5,5];<40
+trigger1 = abs(Rootdist X-Helper(889576),Rootdist X)=[-5,5];40
 trigger2 = Movehit
 trigger2 = NumHelper(889576)
 trigger2 = NumExplod(889576) = 0
-trigger2 = abs(P2dist X-Helper(889576),P2dist X)=[-5,5];<40
+trigger2 = abs(P2dist X-Helper(889576),P2dist X)=[-5,5];40
 anim = F89182 
 ID = 889576
 pos = 3,0
@@ -22552,11 +22552,11 @@ type = Explod
 trigger1 = Movehit
 trigger1 = NumHelper(889577)
 trigger1 = NumExplod(889576) = 0
-trigger1 = abs(Rootdist X-Helper(889577),Rootdist X)=[-5,5];<40
+trigger1 = abs(Rootdist X-Helper(889577),Rootdist X)=[-5,5];40
 trigger2 = Movehit
 trigger2 = NumHelper(889577)
 trigger2 = NumExplod(889576) = 0
-trigger2 = abs(P2dist X-Helper(889577),P2dist X)=[-5,5];<40
+trigger2 = abs(P2dist X-Helper(889577),P2dist X)=[-5,5];40
 anim = F89182 
 ;ID = 889544
 pos = 3,0
@@ -28075,7 +28075,7 @@ trigger1 = NumExplod(889484) = 0
 trigger2 = Movehit
 trigger2 = NumHelper(889622)
 trigger2 = NumExplod(889484) = 0
-trigger2 = abs(P2dist X-Helper(889622),P2dist X)=[-5,5];<40
+trigger2 = abs(P2dist X-Helper(889622),P2dist X)=[-5,5];40
 anim = F89182 
 ID = 889484
 pos = 3,0
@@ -38893,7 +38893,7 @@ x = 1
 
 [State 889732, stop]
 type = VelSet
-trigger1 = P2BodyDist X = [-170,170];<= 170
+trigger1 = P2BodyDist X = [-170,170]; 170
 x = 0
 
 [State 889732, HitBy]
@@ -39048,7 +39048,7 @@ ctrl = 0
 
 [State 889732, ChangeState]
 type = ChangeState
-trigger1 = P2BodyDist X =[-170,170];<= 170
+trigger1 = P2BodyDist X =[-170,170]; 170
 trigger1 = life >= 1
 trigger1 = numhelper(889724)
 value = 889735 + random%2
@@ -39149,7 +39149,7 @@ x = 1
 
 [State 889733, stop]
 type = VelSet
-trigger1 = RootDist X =[-170,170];<= 170
+trigger1 = RootDist X =[-170,170]; 170
 x = 0
 
 [State 889733, HitBy]
@@ -39304,7 +39304,7 @@ ctrl = 0
 
 [State 889733, ChangeState]
 type = ChangeState
-trigger1 = RootDist X =[-170,170];<= 170
+trigger1 = RootDist X =[-170,170]; 170
 trigger1 = life >= 1
 trigger1 = numhelper(889724)
 value = 889738 + random%2
@@ -40694,7 +40694,7 @@ x = 1
 
 [State 889739, stop]
 type = VelSet
-trigger1 = RootDist X =[-15,15];<= 15
+trigger1 = RootDist X =[-15,15]; 15
 x = 0
 
 [State 889739, HitBy]
@@ -41210,11 +41210,11 @@ type = Explod
 trigger1 = Movehit
 trigger1 = NumHelper(889741)
 trigger1 = NumExplod(889741) = 0
-trigger1 = abs(Rootdist X-Helper(889741),Rootdist X)=[-5,5];<40
+trigger1 = abs(Rootdist X-Helper(889741),Rootdist X)=[-5,5];40
 trigger2 = Movehit
 trigger2 = NumHelper(889741)
 trigger2 = NumExplod(889741) = 0
-trigger2 = abs(P2dist X-Helper(889741),P2dist X)=[-5,5];<40
+trigger2 = abs(P2dist X-Helper(889741),P2dist X)=[-5,5];40
 anim = F89182 
 ID = 889741
 pos = 3,0
@@ -41343,11 +41343,11 @@ type = Explod
 trigger1 = Movehit
 trigger1 = NumHelper(889742)
 trigger1 = NumExplod(889742) = 0
-trigger1 = abs(Rootdist X-Helper(889742),Rootdist X)=[-5,5];<40
+trigger1 = abs(Rootdist X-Helper(889742),Rootdist X)=[-5,5];40
 trigger2 = Movehit
 trigger2 = NumHelper(889742)
 trigger2 = NumExplod(889742) = 0
-trigger2 = abs(P2dist X-Helper(889742),P2dist X)=[-5,5];<40
+trigger2 = abs(P2dist X-Helper(889742),P2dist X)=[-5,5];40
 anim = F89182 
 ID = 889742
 pos = 3,0

@@ -1,4 +1,4 @@
-;<HIT WALL>=============================
+;HIT WALL==
 ;---Hit Pause---
 [Statedef 1125]
 type=A
@@ -296,7 +296,7 @@ value = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3420  ;<=======custom animation
+value = 3420  ;custom animation
 [State 0,Bound]
 type = ScreenBound
 trigger1 = animelemtime(3)<0
@@ -394,7 +394,7 @@ y=0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3520  ;<=======custom animation
+value = 3520  ;custom animation
 [State 0, SelfState]
 type = SelfState
 trigger1=!animtime
@@ -470,7 +470,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;<=======custom animation
+value = 4020  ;custom animation
 
 [State 0, ChangeState]
 type = changeState
@@ -540,7 +540,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4058  ;<=======custom animation
+value = 4058  ;custom animation
 
 [State 0, SelfState]
 type = SelfState
@@ -588,7 +588,7 @@ x = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4059  ;<=======custom animation
+value = 4059  ;custom animation
 [State 0, SelfState]
 type = SelfState
 trigger1 = animtime=0

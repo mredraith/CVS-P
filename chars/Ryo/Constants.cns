@@ -1,4 +1,4 @@
-;<VARIABLE LIST>====================
+;VARIABLE LIST=
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -50,7 +50,7 @@
 ; _________________________________________
 ;| Ryo Sakazaki by CrazyKoopa & Jmorphman  |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 1000
 power = 3000
@@ -116,7 +116,7 @@ down.bounce.groundLevel = 12
 down.friction.threshold = 0.5
 
 
-;<WINQUOTES>====================
+;WINQUOTES=
 [Quotes]
 victory0 = "Anytime, anywhere, cross my path again and you're mine!"
 victory1 = "Whew! Talk about kicking major butt. That was a chore!"

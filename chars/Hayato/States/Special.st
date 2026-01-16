@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Hayato by varo_hades                    |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>===
-;==
+;
+;SPECIAL MOVES
+;
 
-;=<Flash Sword>==
+;Flash Sword>==
 [StateDef 1000]
 type = S
 physics = S
@@ -221,7 +221,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<EX Flash Sword>=
+;EX Flash Sword>=
 [StateDef 1030]
 type = S
 physics = N
@@ -476,7 +476,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Crimson Sword>=
+;Crimson Sword>=
 [StateDef 1100]
 type = S
 physics = N
@@ -931,7 +931,7 @@ flag = NoShadow
 type = DestroySelf
 trigger1 = animtime = 0
 
-;====<EX Crimson Sword>=
+;EX Crimson Sword>=
 [StateDef 1130]
 type = S
 physics = N
@@ -1368,7 +1368,7 @@ triggerall = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(6) > 0
 value = 1105
 
-;=<Grab Launcher>==
+;Grab Launcher>==
 [StateDef 1200]
 type = S
 physics = S
@@ -1811,7 +1811,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;=<EX Grab Launcher>==
+;EX Grab Launcher>==
 [StateDef 1230]
 type = S
 physics = S
@@ -2079,7 +2079,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -2165,7 +2165,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

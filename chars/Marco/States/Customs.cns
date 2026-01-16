@@ -1,4 +1,4 @@
-;<HIT WALL>=============================
+;HIT WALL==
 ;---Hit Pause---
 [Statedef 1125]
 type=A
@@ -286,7 +286,7 @@ sprpriority = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3222  ;<=======custom animation
+value = 3222  ;custom animation
 
 [State 0, HitFallSet]
 type = HitFallSet
@@ -336,7 +336,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;<=======custom animation
+value = 4020  ;custom animation
 
 [State 0, ChangeState]
 type = changeState
@@ -391,7 +391,7 @@ facep2 = 1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4056  ;<=======custom animation
+value = 4056  ;custom animation
 [State 0, HitBy]
 type = HitBy
 trigger1 =1
@@ -432,7 +432,7 @@ value = SCA,HA,HP,HT
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4057  ;<=======custom animation
+value = 4057  ;custom animation
 
 [State 0, HitVelSet]
 type = HitVelSet
@@ -468,7 +468,7 @@ y = GetHitVar(yaccel)
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4063  ;<=======custom animation
+value = 4063  ;custom animation
 [State 0, HitBy]
 type = HitBy
 trigger1 =1
@@ -512,7 +512,7 @@ y = GetHitVar(yaccel)
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4063  ;<=======custom animation
+value = 4063  ;custom animation
 [State 0, HitBy]
 type = HitBy
 trigger1 =1

@@ -1,4 +1,4 @@
-;<SPLENDOR LOVE>===================
+;SPLENDOR LOVE=
 [Statedef 3000]
 type = S
 movetype= A
@@ -337,7 +337,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<SPLENDOR LOVE MAX>===================
+;SPLENDOR LOVE MAX=
 [Statedef 3050]
 type = S
 movetype= A
@@ -725,7 +725,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<SOUL SPIN>===================
+;SOUL SPIN=
 [Statedef 3100]
 type = S
 movetype= A
@@ -986,7 +986,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<SOUL SPIN MAX>===================
+;SOUL SPIN MAX=
 [Statedef 3150]
 type = S
 movetype= A
@@ -1293,7 +1293,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1101
 
-;<LUMINOUS ILLUSION>===================
+;LUMINOUS ILLUSION=
 [Statedef 3200]
 type = A
 movetype= A

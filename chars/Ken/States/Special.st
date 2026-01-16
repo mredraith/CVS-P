@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Ken by Phantom.of.the.Server & Jmorphman|
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
+;
 ;SPECIAL MOVES=
-;==
+;
 
 ;HADOKEN
 [StateDef 1000]
@@ -4356,7 +4356,7 @@ ctrl = 1
 
 
 
-;===<INAZUMA KAKATO WARI
+;INAZUMA KAKATO WARI
 [StateDef 1405]
 type = S
 physics = S
@@ -5092,7 +5092,7 @@ value = 5100
 
 
 
-;===<ZENPOU TENSHIN
+;ZENPOU TENSHIN
 [StateDef 1500]
 type = S
 physics = N
@@ -5182,7 +5182,7 @@ ctrl = 1
 
 
 
-;===<ZENTOU
+;ZENTOU
 [StateDef 1530]
 type = S
 physics = N
@@ -5269,7 +5269,7 @@ value = 52
 
 
 
-;===<RASETSU KYAKU
+;RASETSU KYAKU
 [StateDef 1600]
 type = S
 physics = N

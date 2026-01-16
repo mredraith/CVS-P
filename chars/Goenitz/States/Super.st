@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Goenitz by varo_hades                   |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<SHIN YAOTOME: MIZUCHI>=
+;SHIN YAOTOME: MIZUCHI>=
 [StateDef 3000]
 type = S
 physics = N
@@ -640,7 +640,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100
 
-;====<MAX SHIN YAOTOME: MIZUCHI>=
+;MAX SHIN YAOTOME: MIZUCHI>=
 [StateDef 3050]
 type = S
 physics = N
@@ -1414,7 +1414,7 @@ type = SelfState
 trigger1 = !AnimTime
 value = 5050
 
-;====<YAMIDOUKOKU>=
+;YAMIDOUKOKU>=
 [StateDef 3100]
 type = S
 physics = S
@@ -1795,7 +1795,7 @@ type = SelfState
 trigger1 = !AnimTime
 value = 5050
 
-;====<MAX YAMIDOUKOKU>=
+;MAX YAMIDOUKOKU>=
 [StateDef 3150]
 type = S
 physics = S
@@ -2099,7 +2099,7 @@ trigger1 = !AnimTime
 value = 0
 Ctrl = 1
 
-;====<FUUJIN IBUKI>=
+;FUUJIN IBUKI>=
 [StateDef 3200]
 type = S
 physics = N
@@ -2543,7 +2543,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<MAX FUUJIN IBUKI>=
+;MAX FUUJIN IBUKI>=
 [StateDef 3250]
 type = S
 physics = N
@@ -3069,7 +3069,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;==SUPER YAMIDOUKOKU>=
+;SUPER YAMIDOUKOKU>=
 [Statedef 3300]
 type = S
 physics = S

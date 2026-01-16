@@ -3852,7 +3852,7 @@ type = ChangeState
 trigger1=!animtime
 value = 0
 ctrl = 1
-; NORMAL FINISH =================
+; NORMAL FINISH =
 [Statedef 9994]
 ctrl = 0
 anim = 9999
@@ -3885,7 +3885,7 @@ under=-9999
 type=destroyself
 trigger1= roundstate!=3
 
-; SPECIAL COMBO FINISH =================
+; SPECIAL COMBO FINISH =
 [Statedef 9995]
 ctrl = 0
 anim = 9999
@@ -3947,8 +3947,8 @@ trigger2= roundstate<3
 type=destroyself
 trigger1= roundstate!=3
 ;-----------------------------------------------------------------------------
-;<SUPER FINISH>=============================
-;SUPER FINISH==================================
+;SUPER FINISH==
+;SUPER FINISH==
 [Statedef 9996]
 velset=0,0
 anim=9999

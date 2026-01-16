@@ -2541,7 +2541,7 @@ value = 5150
 
 
 
-;====<LONDON SILVER>=
+;LONDON SILVER>=
 [StateDef 3200]
 type = S
 physics = N

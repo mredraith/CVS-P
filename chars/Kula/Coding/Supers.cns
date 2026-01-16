@@ -1,4 +1,4 @@
-;<DIAMOND EDGE>===================
+;DIAMOND EDGE=
 [Statedef 3000]
 type = S
 movetype= A
@@ -122,7 +122,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<DIAMOND EDGE MAX>=====================
+;DIAMOND EDGE MAX==
 [Statedef 3050]
 type = S
 movetype= A
@@ -287,7 +287,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Glacier Shoot>=====================
+;Glacier Shoot==
 [Statedef 3100]
 type = S
 movetype= A
@@ -454,7 +454,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<FREEZE EXECUTION>=====================
+;FREEZE EXECUTION==
 [Statedef 3200]
 type = S
 movetype= A

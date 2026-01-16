@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER MOVES>====
-;==
+;
+;SUPER MOVES=
+;
 
-;==<CRAZY BUFFALO>===
+;CRAZY BUFFALO
 [Statedef 3000]
 type = S
 movetype= A
@@ -412,7 +412,7 @@ trigger1 = !Animtime
 value = 0
 ctrl = 1
 
-;====<MAX CRAZY BUFFALO>=
+;MAX CRAZY BUFFALO>=
 [Statedef 3050]
 type = S
 movetype= A
@@ -721,7 +721,7 @@ trigger1 = time = 92
 value = 3003
 ctrl = 0
 
-;====<GIGATON BLOW>=
+;GIGATON BLOW>=
 [Statedef 3100]
 type = S
 movetype= A

@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Blanka by varo_hades                    |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<Direct Lightning>=
+;Direct Lightning>=
 [StateDef 3000]
 type = S
 physics = S
@@ -284,7 +284,7 @@ trigger1 = Anim=3050 && AnimTime=0
 value = 11
 ctrl = 1
 
-;====<Max Direct Lightning>=
+;Max Direct Lightning>=
 [StateDef 3050]
 type = S
 physics = S
@@ -496,7 +496,7 @@ type = ChangeState
 trigger1 = time= 78 || movecontact || movereversed || FrontEdgeBodyDist <10
 value = 3010
 
-;====<Ground Shave Rolling>=
+;Ground Shave Rolling>=
 [StateDef 3100]
 type = S
 physics = N
@@ -907,7 +907,7 @@ type = ChangeState
 trigger1 = Vel Y > 0 && Pos Y >= 10
 value = 52
 
-;====<MAX Ground Shave Rolling>=
+;MAX Ground Shave Rolling>=
 [StateDef 3150]
 type = S
 physics = N
@@ -1297,7 +1297,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<Shout of Thunder>=
+;Shout of Thunder>=
 [StateDef 3200]
 type = S
 physics = S
@@ -1754,7 +1754,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<Shout of Thunder>=
+;Shout of Thunder>=
 [StateDef 3250]
 type = S
 physics = S
@@ -1984,7 +1984,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;====<Shout of Earth>=
+;Shout of Earth>=
 [StateDef 3300]
 type = S
 physics = N
@@ -2255,7 +2255,7 @@ trigger1 = Animtime= 0
 value = 0
 ctrl=1
 
-;====<MAX Shout of Earth>=
+;MAX Shout of Earth>=
 [StateDef 3350]
 type = S
 physics = N
@@ -2526,7 +2526,7 @@ trigger1 = Animtime= 0
 value = 0
 ctrl=1
 
-;====<Tropical Hazard>=
+;Tropical Hazard>=
 [StateDef 3400]
 type = S
 physics = S
@@ -2915,7 +2915,7 @@ trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
 
-;====<Max Tropical Hazard>=
+;Max Tropical Hazard>=
 [StateDef 3450]
 type = S
 physics = S
@@ -3264,7 +3264,7 @@ type = ChangeState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 3405
 
-;====<Jungle Heat>=
+;Jungle Heat>=
 [StateDef 3500]
 type = S
 physics = S
@@ -3747,7 +3747,7 @@ type = SelfState
 trigger1 = Pos Y>=0 && Vel Y>0
 value = 5100
 
-;====<Max Jungle Heat>=
+;Max Jungle Heat>=
 [StateDef 3550]
 type = S
 physics = S

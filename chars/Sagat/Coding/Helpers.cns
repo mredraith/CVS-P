@@ -1,4 +1,4 @@
-;<PARRY HELPER>=========================
+;PARRY HELPER==
 [StateDef 765]
 type = A
 physics = N
@@ -105,7 +105,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;<MAX MODE BAR HELPER>============================
+;MAX MODE BAR HELPER=
 [Statedef 780]
 type = S
 movetype = I
@@ -196,7 +196,7 @@ type = DestroySelf
 trigger1 = root, Var(20) <= 0
 ignorehitpause = 1
 
-;<TIGER SHOT PROJECTILE>=========================
+;TIGER SHOT PROJECTILE==
 [StateDef 1010]
 type = S
 physics = N
@@ -458,7 +458,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
 
-;<EX TIGER SHOT PROJECTILE>=========================
+;EX TIGER SHOT PROJECTILE==
 [StateDef 1020]
 type = S
 physics = N
@@ -646,7 +646,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<TIGER SHOT HAND FX>=========================
+;TIGER SHOT HAND FX==
 ;special thanks to Mr. Infinite
 [StateDef 1025]
 physics = N
@@ -698,7 +698,7 @@ trigger1 = root,Movetype= H
 trigger2 = !animtime
 trigger3 = root,stateno!=1000 && root,stateno!=1030 && root,stateno!=1100 && root,stateno!=1130
 
-;<LOW TIGER SHOT PROJECTILE>=========================
+;LOW TIGER SHOT PROJECTILE==
 [StateDef 1110]
 type = S
 physics = N
@@ -841,7 +841,7 @@ type = DestroySelf
 trigger1 = Pos x != [-200,200]
 trigger2 = Anim = 1015 && !AnimTime
 
-;<EX LOW TIGER SHOT PROJECTILE>=========================
+;EX LOW TIGER SHOT PROJECTILE==
 [StateDef 1120]
 type = S
 physics = N
@@ -1029,7 +1029,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<TIGER CANNON PROJECTILE>=========================
+;TIGER CANNON PROJECTILE==
 [StateDef 3010]
 type = S
 physics = N
@@ -1293,7 +1293,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
 
-;<TIGER CANNON HAND FX>=========================
+;TIGER CANNON HAND FX==
 ;special thanks to Mr. Infinite
 [StateDef 3025]
 physics = N
@@ -1340,7 +1340,7 @@ trigger1 = root,Movetype= H
 trigger2 = anim=3028 && !animtime
 trigger3 = root,stateno!=3000 && root,stateno!=3050
 
-;<TIGER CANNON MAX PROJECTILE>=========================
+;TIGER CANNON MAX PROJECTILE==
 [StateDef 3060]
 type = S
 physics = N
@@ -1580,7 +1580,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<GROUND TIGER CANNON PROJECTILE>=========================
+;GROUND TIGER CANNON PROJECTILE==
 [StateDef 3110]
 type = S
 physics = N
@@ -1765,7 +1765,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<GROUND TIGER CANNON HAND FX>=========================
+;GROUND TIGER CANNON HAND FX==
 ;special thanks to Mr. Infinite
 [StateDef 3125]
 physics = N
@@ -1825,7 +1825,7 @@ trigger1 = root,Movetype= H
 trigger2 = anim=3028 && !animtime
 trigger3 = root,stateno!=3100 && root,stateno!=3150
 
-;<GROUND TIGER CANNON MAX PROJECTILE>=========================
+;GROUND TIGER CANNON MAX PROJECTILE==
 [StateDef 3160]
 type = S
 physics = N
@@ -2065,7 +2065,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
 
-;<TIGER STORM BLAST>=========================
+;TIGER STORM BLAST==
 [StateDef 3410]
 type = S
 physics = N
@@ -2355,7 +2355,7 @@ time = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;<TIGER STORM HAND FX>=========================
+;TIGER STORM HAND FX==
 ;special thanks to Mr. Infinite
 [StateDef 3425]
 physics = N
@@ -2415,7 +2415,7 @@ trigger1 = root,Movetype= H
 trigger2 = anim=3028 && !animtime
 trigger3 = root,stateno!=3402
 
-;<SPARKS>=============================
+;SPARKS==
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -3394,7 +3394,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -3431,7 +3431,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -3491,7 +3491,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -3535,7 +3535,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -3579,7 +3579,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<FLAMES>=============================
+;FLAMES==
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -3713,7 +3713,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;<RECOVER FX>=============================
+;RECOVER FX==
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -3740,7 +3740,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<COUNTER FX>=============================
+;COUNTER FX==
 [StateDef 8290]
 type = A
 physics = N
@@ -3784,7 +3784,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<MAX MODE FX>=============================
+;MAX MODE FX==
 [StateDef 8291]
 type = A
 physics = N
@@ -3828,7 +3828,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -3935,7 +3935,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -3985,7 +3985,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX==
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -4415,7 +4415,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;<SUPER FINISH>=============================
+;SUPER FINISH==
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -4573,7 +4573,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;<CAMERA CONTROL>=============================
+;CAMERA CONTROL==
 [StateDef 8999]
 type = S
 velSet = 0,0

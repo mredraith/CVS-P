@@ -1,4 +1,4 @@
-;<PSYCHO BALL>==========================
+;PSYCHO BALL=
 [StateDef 1000]
 type = S
 physics = S
@@ -92,7 +92,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX PSYCHO BALL(SHOOT)>==========================
+;EX PSYCHO BALL(SHOOT)=
 [StateDef 1030]
 type = S
 physics = S
@@ -219,7 +219,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<PSYCHO SWORD>=======================
+;PSYCHO SWORD=
 [Statedef 1100]
 type = S
 movetype = A
@@ -1191,7 +1191,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1105
 
-;<EX PSYCHO SWORD>==========================
+;EX PSYCHO SWORD=
 [StateDef 1130]
 type = S
 physics = N
@@ -1477,7 +1477,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1105
 
-;<AIR PSYCHO SWORD>=======================
+;AIR PSYCHO SWORD=
 [Statedef 1140]
 type = A
 movetype = A
@@ -2112,7 +2112,7 @@ trigger1 = AnimElemTime(14) >= 0
 trigger1 = pos y > -vel y
 value = 1105
 
-;<EX AIR PSYCHO SWORD>==========================
+;EX AIR PSYCHO SWORD=
 [StateDef 1170]
 type = A
 physics = N
@@ -2382,7 +2382,7 @@ trigger1 = AnimElemTime(14) >= 0
 trigger1 = pos y > -vel y
 value = 1105
 
-;<SUPER PSYCHIC THROW>==================
+;SUPER PSYCHIC THROW=
 [Statedef 1200]
 type = S
 movetype= A
@@ -2674,7 +2674,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;<EX SUPER PSYCHIC THROW>=========================
+;EX SUPER PSYCHIC THROW==
 [StateDef 1230]
 type = S
 physics = S
@@ -2963,7 +2963,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;<PSYCHO TELEPORT>=======================
+;PSYCHO TELEPORT=
 [Statedef 1300]
 type = S
 movetype = I
@@ -3116,7 +3116,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<PHOENIX ARROW>=======================
+;PHOENIX ARROW=
 [Statedef 1400]
 type = A
 movetype = A
@@ -3660,7 +3660,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX PHOENIX ARROW>==========================
+;EX PHOENIX ARROW=
 [StateDef 1430]
 type = A
 physics = N
@@ -3939,7 +3939,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<PSYCHO REFLECTOR>==========================
+;PSYCHO REFLECTOR=
 [StateDef 1500]
 type = S
 physics = S
@@ -4029,7 +4029,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX PSYCHO REFLECTOR>==========================
+;EX PSYCHO REFLECTOR=
 [StateDef 1530]
 type = S
 physics = S

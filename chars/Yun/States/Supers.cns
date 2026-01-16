@@ -4302,7 +4302,7 @@ value = 0
 ctrl = 1
 
 
-;< MODE CHANGE >=============================
+; MODE CHANGE ==
 ;Mode Change
 [Statedef 4400]
 type = S

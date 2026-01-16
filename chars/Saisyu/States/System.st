@@ -1,18 +1,18 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (21/02/2017)
-;==
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==
+;
 
 ; _________________________________________
 ;| Saisyu Kusanagi by Lurker               |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;===<SYSTEM STATES>====
-;==
+;
+;SYSTEM STATES=
+;
 
-;====<STANDING>====
+;STANDING=
 [StateDef 0]
 type = S
 physics = S
@@ -52,7 +52,7 @@ value = 50
 
 
 
-;====<CROUCHING>====
+;CROUCHING
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -124,7 +124,7 @@ value = 0
 
 
 
-;====<WALKING>====
+;WALKING
 [StateDef 20]
 type = S
 physics = S
@@ -157,7 +157,7 @@ value = 21
 
 
 
-;====<JUMPING>====
+;JUMPING
 ;Jumping
 [StateDef 40]
 type = S
@@ -374,7 +374,7 @@ ctrl = 1
 
 
 
-;==<RUN>===
+;RUN
 [StateDef 100]
 type = S
 physics = N
@@ -451,7 +451,7 @@ ctrl = 1
 
 
 
-;====<DASH BACKWARDS>==
+;DASH BACKWARDS
 [StateDef 105]
 type = A
 physics = N
@@ -550,7 +550,7 @@ ctrl = 1
 
 
 
-;=<DASH FORWARD>=
+;DASH FORWARD>=
 [StateDef 110]
 type = S
 physics = N
@@ -658,7 +658,7 @@ ctrl = 1
 
 
 
-;====<DODGE>====
+;DODGE
 [StateDef 700]
 type = S
 physics = S
@@ -710,7 +710,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<ROLL FORWARD>====
+;ROLL FORWARD
 [StateDef 710]
 type = S
 physics = N
@@ -762,7 +762,7 @@ ctrl = 1
 
 
 
-;===<ROLL BACKWARDS>===
+;ROLL BACKWARDS
 [StateDef 715]
 type = S
 physics = N
@@ -812,7 +812,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==<POWER CHARGE>==
+;POWER CHARGE
 [StateDef 730]
 type = S
 physics = S
@@ -903,7 +903,7 @@ ctrl = 1
 
 
 
-;====<ZERO COUNTER>====
+;ZERO COUNTER
 [StateDef 750]
 type = S
 physics = S
@@ -973,7 +973,7 @@ value = ifElse(var(10) = 1, 2910, 2900)
 
 
 
-;====<PARRY>====
+;PARRY
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1233,7 +1233,7 @@ value = 52
 
 
 
-;====<CUSTOM COMBO>====
+;CUSTOM COMBO
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1430,7 +1430,7 @@ value = 52
 
 
 
-;==<TARGET SAFE FALL>==
+;TARGET SAFE FALL
 [StateDef 5205]
 type = A
 physics = N
@@ -1460,7 +1460,7 @@ value = 5210
 
 
 
-;==<FALL RECOVERY>==
+;FALL RECOVERY
 [StateDef 5200]
 type = A
 moveType = H
@@ -1620,7 +1620,7 @@ value = 52
 
 
 
-;===<GUARD>====
+;GUARD
 ;Guard Start
 [StateDef 120]
 type = U
@@ -2092,7 +2092,7 @@ value = 52
 
 
 
-;====<LOSE>====
+;LOSE
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2106,7 +2106,7 @@ flag = RoundNotOver
 
 
 
-;====<DRAW GAME>====
+;DRAW GAME
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2119,7 +2119,7 @@ value = 170
 
 
 
-;====<CONTINUE?>====
+;CONTINUE?
 [StateDef 5500]
 type = S
 anim = 5300
@@ -2133,7 +2133,7 @@ value = 5500
 
 
 
-;====<INITIALIZE>====
+;INITIALIZE
 [StateDef 5900]
 type = S
 
@@ -2183,7 +2183,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;====<INTRO>====
+;INTRO=
 [StateDef 190]
 type = S
 physics = S
@@ -2244,7 +2244,7 @@ value = 0
 
 
 
-;====<INTRO VS KYO KUSANAGI>====
+;INTRO VS KYO KUSANAGI=
 [StateDef 191]
 type = S
 physics = S
@@ -2281,7 +2281,7 @@ value = 0
 
 
 
-;====<INTRO VS RUGAL>====
+;INTRO VS RUGAL=
 [StateDef 192]
 type = S
 physics = S
@@ -2311,7 +2311,7 @@ trigger1 = !Animtime
 value = 0
 
 
-;====<TURNS INTRO>====
+;TURNS INTRO
 [StateDef 6900]
 type = A
 anim = 42
@@ -2450,7 +2450,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====<WIN POSE DECIDER>====
+;WIN POSE DECIDER
 [StateDef 180]
 type = S
 
@@ -2491,7 +2491,7 @@ trigger1 = 1
 value = 181 + (Random % 4)
 
 
-;====<WIN 1>====
+;WIN 1=
 [StateDef 181]
 type = S
 physics = S
@@ -2513,7 +2513,7 @@ type = PlaySnd
 trigger1 = AnimElem = 17
 value = 181,1
 
-;====<WIN 2>====
+;WIN 2=
 [StateDef 182]
 type = S
 physics = S
@@ -2532,7 +2532,7 @@ value = 182,0
 channel = 0
 
 
-;====<WIN 3>====
+;WIN 3=
 [StateDef 183]
 type = S
 physics = S
@@ -2550,7 +2550,7 @@ trigger1 = AnimElem = 4
 value = 183,0
 
 
-;====<WIN 4>====
+;WIN 4=
 [StateDef 184]
 type = S
 physics = S
@@ -2567,7 +2567,7 @@ type = PlaySnd
 trigger1 = AnimElem = 4
 value = 184,0
 
-;==<TAUNT>==
+;TAUNT>==
 [StateDef 195]
 type = S
 moveType = I
@@ -2591,7 +2591,7 @@ ctrl = 1
 
 
 
-;====<CHEAP K.O.>====
+;CHEAP K.O.=
 [StateDef 5950]
 type = S
 moveType = H
@@ -2645,7 +2645,7 @@ value = ifElse(Alive, 5110, 5150)
 
 
 
-;====<AIR HIT TRANSITION>====
+;AIR HIT TRANSITION=
 [Statedef 5035]
 type = A
 movetype = H
@@ -2685,9 +2685,9 @@ value = 5050
 
 
 
-;===
-;===<-2 STATES>=
-;===
+;
+;-2 STATES>=
+;
 [StateDef -2]
 
 ;#ADD004BASIC PIEs#
@@ -3527,7 +3527,7 @@ sprpriority = -10
 [State 3680, 4]
 type = changeanim
 trigger1 = time%2 = 0
-value = 1 ;<----- cada charpossui um anim diferente
+value = 1 ;----- cada charpossui um anim diferente
 
 [State 3680, 4]
 type = ChangeAnim
@@ -3566,7 +3566,7 @@ type = S
 movetype= H
 physics = N
 velset = 0,0
-anim = 1 ;<----- cada charpossui um anim diferente
+anim = 1 ;----- cada charpossui um anim diferente
 sprpriority = -10
 
 [State 3680,1]
@@ -3591,7 +3591,7 @@ type = S
 movetype= H
 physics = N
 velset = 0,0
-anim = 1 ;<----- cada charpossui um anim diferente
+anim = 1 ;----- cada charpossui um anim diferente
 sprpriority = -10
 
 [State 3680,1]
@@ -3611,9 +3611,9 @@ value = SCA
 ;--------------------------------------------------------------
 ;¹âÐ§´úÂë½áÊø
 ;--------------------------------------------------------------
-;===
-;===<-3 STATES>=
-;===
+;
+;-3 STATES>=
+;
 [StateDef -3]
 
 [State -3, GameTime]

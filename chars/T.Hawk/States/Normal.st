@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| T.Hawk by varo_hades                    |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;===
-;==<NORMAL MOVES=
-;===
+;
+;NORMAL MOVES=
+;
 
 ;STANDING LIGHT PUNCH
 [StateDef 200]

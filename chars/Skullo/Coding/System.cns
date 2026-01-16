@@ -442,7 +442,7 @@ type = ChangeState
 trigger1 = !Animtime
 value = 0
 
-;<TURNS INTRO>====================
+;TURNS INTRO=
 [Statedef 6900]
 type = A
 anim = 6900
@@ -559,7 +559,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<DODGE>=============
+;DODGE
 [Statedef 700]
 type = S
 movetype= I
@@ -607,7 +607,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<ROLLING>===========
+;ROLLING
 [StateDef 710]
 type = S
 physics = N
@@ -705,7 +705,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<POWER CHARGE>==================
+;POWER CHARGE
 [StateDef 730]
 type = S
 physics = S
@@ -792,7 +792,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<ZERO COUNTER>====================
+;ZERO COUNTER=
 [StateDef 750]
 type = S
 physics = S
@@ -854,7 +854,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 451, 222)
 
-;<PARRY>====================
+;PARRY=
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1109,7 +1109,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value=52
 
-;<MAX Mode>===============
+;MAX Mode
 [Statedef 770]
 type = S
 movetype = I
@@ -1209,7 +1209,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;<CROUCHING>====================
+;CROUCHING
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -1279,7 +1279,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;<WALKING>====================
+;WALKING=
 [StateDef 20]
 type = S
 physics = S
@@ -1310,7 +1310,7 @@ trigger1 = Anim != 21 && Anim != 5
 trigger2 = Anim = 5 && AnimElemTime(1) >= 1
 value = 21
 
-;<JUMPING>====================
+;JUMPING=
 [StateDef 40]
 type = S
 physics = S
@@ -1506,7 +1506,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<RUNNING>====================
+;RUNNING=
 [Statedef 100]
 type = S
 movetype = I
@@ -1613,7 +1613,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<SKULLO TACKLE>=======================
+;SKULLO TACKLE=
 [Statedef 102]
 type = S
 movetype = A
@@ -1695,7 +1695,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<BACK DASH>==========================
+;BACK DASH=
 [Statedef 105]
 type = A
 physics = N
@@ -1776,7 +1776,7 @@ trigger1= !Animtime
 value=0
 ctrl=1
 
-;<HIT GROUND(BOUNCE)>===================
+;HIT GROUND(BOUNCE)
 [Statedef 5100]
 type = L
 movetype= H
@@ -1865,7 +1865,7 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;<HIT LIEDOWN>====================
+;HIT LIEDOWN
 [Statedef 5110]
 type = L
 movetype= H
@@ -1984,7 +1984,7 @@ ampl = 200, 7, -.467
 time = 30
 waveform = sine
 
-;<GUARDING>==================
+;GUARDING=
 [StateDef 120]
 type = U
 physics = U
@@ -2400,7 +2400,7 @@ type = ChangeState
 trigger1 = sysvar(0)
 value = 52
 
-;<FORCED P2 RECOVERY>==========
+;FORCED P2 RECOVERY=
 [StateDef 5025]
 type = A
 moveType = H
@@ -2418,7 +2418,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y, 5020, 5000)
 
-;<TARGET SAFE FALL>==========
+;TARGET SAFE FALL=
 [StateDef 5205]
 type = A
 physics = N
@@ -2429,7 +2429,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y < -20, 5210, 5200)
 
-;<FALL RECOVERY>==========
+;FALL RECOVERY=
 [StateDef 5200]
 type = A
 moveType = H
@@ -2587,7 +2587,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<CONTINUE?>==============
+;CONTINUE?=
 [Statedef 5500]
 type = S
 anim = 5300
@@ -2599,7 +2599,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = 5500
 
-;<CHEAP K.O.>=============
+;CHEAP K.O.==
 [StateDef 5950]
 type = S
 moveType = H
@@ -2654,7 +2654,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;<AIR HIT TRANSITION>=================
+;AIR HIT TRANSITION==
 [Statedef 5035]
 type = A
 movetype = H
@@ -2697,9 +2697,9 @@ value = 5050
 [Statedef -2]
 
 ;#ADD004BASIC PIEs#
-;//==========================
+;//==
 ;// add004-sctrls-start
-;//==========================
+;//==
 ;sys::-2::partners_standby ; ???????
 [state 0]
 	type=selfstate
@@ -2769,7 +2769,7 @@ value = 5050
 	time=1
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Face>>
 ;sys::-2::face_d ; portrait (?)
 [state 0]
@@ -2804,7 +2804,7 @@ value = 5050
 	id=490600
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;;>>@Config.Camera>>
 ;sys::-2::camera_nc ; ????
 [state 0]
@@ -2830,7 +2830,7 @@ value = 5050
 	movecamera=0,0 ;; [x,y]
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;sys::-2::add.option2-noko
 [state 0] ;; opt-noko
 	type=assertspecial
@@ -2849,7 +2849,7 @@ value = 5050
 	kill=0
 	ignorehitpause=1
 
-;//==========================
+;//==
 ;// optional settings
 ;sys::-2::guard_crush_fx ; ????????
 [state 0]
@@ -2911,9 +2911,9 @@ value = 5050
 	trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
 	x=const240p(144)*ifelse(teamside=1,-1,1)
 
-;//==========================
+;//==
 ;// add004-sctrls-end
-;//==========================
+;//==
 
 
 [State -2, AssertSpecial: No MUGEN Juggle System]
@@ -3037,7 +3037,7 @@ type = Helper
 triggerAll = MoveContact = 1 && var(30) = HitPauseTime
 trigger1 = MoveHit = 1 && NumEnemy
 trigger1 = var(33) = 8010 || var(33) = 8011 || var(33) = 8012 || var(33) = 8013 || var(33) = 8014
-trigger1 = StateNo != 1410 && StateNo != 1440 && StateNo != 3510 && StateNo != 3610;<--Extra trigger to stop hitfx from showing during said states 
+trigger1 = StateNo != 1410 && StateNo != 1440 && StateNo != 3510 && StateNo != 3610;--Extra trigger to stop hitfx from showing during said states 
 trigger2 = MoveGuarded = 1 && NumEnemy
 trigger2 = var(34) = 8000 || var(34) = 8001
 helperType = Normal

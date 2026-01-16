@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Kyo Kusanagi by Jmorphman               |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
+;
 ;SPECIAL MOVES=
-;==
+;
 
 ;114 SHIKI: ARAGAMI>=
 [StateDef 1000]
@@ -1579,7 +1579,7 @@ ctrl = 1
 
 
 
-;===<212 SHIKI: KOTOTSUKI YOU (TARGET, FROM YANOSABI)
+;212 SHIKI: KOTOTSUKI YOU (TARGET, FROM YANOSABI)
 ;Being Thrown
 [StateDef 1080]
 type = A
@@ -5747,7 +5747,7 @@ ctrl = 1
 
 
 
-;===<212 SHIKI: KOTOTSUKI YOU (TARGET)
+;212 SHIKI: KOTOTSUKI YOU (TARGET)
 ;Being Thrown
 [StateDef 1530]
 type = A

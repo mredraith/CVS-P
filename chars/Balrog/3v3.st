@@ -1,16 +1,16 @@
 ﻿; ADD004 BASIC PIEs ReBuilded CNS (25/05/2017)
-;==
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==
+;
 
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;===<SYSTEM STATES>====
-;==
+;
+;SYSTEM STATES=
+;
 
 ;---------------------------------------------------------------------------
 ;STANDING
@@ -40,7 +40,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;====<CROUCHING>====
+;CROUCHING
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -2662,7 +2662,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;====<OFF SCREEN STAND BY>=
+;OFF SCREEN STAND BY>=
 ;Stand by
 [Statedef 7827]
 type=S
@@ -2692,7 +2692,7 @@ type=ChangeState
 trigger1=NumEnemy=2
 trigger1=Enemy(1),statetype=L || Enemy(1),movetype != H
 value=7828
-;====<OFF SCREEN RUN IN>=
+;OFF SCREEN RUN IN>=
 ;Off Screen Run In
 [Statedef 7828]
 type   =S
@@ -2737,7 +2737,7 @@ type=ChangeState
 trigger1= time>=20
 value=7829
 ctrl=0
-;====<OFF SCREEN RUN STOP>=
+;OFF SCREEN RUN STOP>=
 ;Off Screen Run Stop
 [Statedef 7829]
 type   =S
@@ -3910,9 +3910,9 @@ trigger1 = Pos Y >= 0
 value = 52 ;Jump land
 ctrl = 1
 
-;==
-;====Syn===
-;==
+;
+;Syn=
+;
 ;DRAMATIC KO PAUSE
 [Statedef 9944]
 type = s
@@ -3944,9 +3944,9 @@ supermovetime = 9999999999
 pausemovetime = 9999999999
 persistent = 0
 ignorehitpause = 1
-;==
-;===Syn====
-;==
+;
+;Syn=
+;
 ;DRAMATIC KO PAUSE HELPER
 [Statedef 9955]
 type = s
@@ -3958,7 +3958,7 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = invisible
-flag3 = nokoslow;<------------optional
+flag3 = nokoslow;------------optional
 ignorehitpause = 1
 
 [State 9955,NHB]
@@ -3969,17 +3969,17 @@ value = SCA
 [State 9955, pause]
 type = Pause
 trigger1 = 1
-time = 28;<---adjust to your likings
+time = 28;---adjust to your likings
 ignorehitpause = 1
 persistent = 0
 
 [State 9955, DestroySelf]
 type = DestroySelf
-trigger1 = time >= 28;<---make the time match the time in the pause code above
+trigger1 = time >= 28;---make the time match the time in the pause code above
 
-;===
-;===< -2 STATES >=
-;===
+;
+; -2 STATES >=
+;
 [Statedef -2]
 
 ;#ADD004BASIC PIEs#
@@ -4128,8 +4128,8 @@ trigger1 = time >= 28;<---make the time match the time in the pause code above
 ;;--- dizzy
 [state 0]
 	type=changestate
-	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;<-dizzy birds
-	value=190116 ;;<- goto dizzy/stun state
+	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;-dizzy birds
+	value=190116 ;;- goto dizzy/stun state
 ;;--- fadeout when KOed ; KO後消える
 [state 0]
 	type=varset
@@ -4663,9 +4663,9 @@ ignorehitpause=1
 
 ;---------------------------------------------------------------------------
 
-;===
-;===< -3 STATES >=
-;===
+;
+; -3 STATES >=
+;
 [Statedef -3]
 
 [State -3, Gametime Var]

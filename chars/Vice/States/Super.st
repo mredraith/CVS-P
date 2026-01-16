@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Vice by Jmorphman                       |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
-;====<NEGATIVE GAIN>=
+;NEGATIVE GAIN>=
 ;Throw Attempt
 [StateDef 3000]
 type = S
@@ -932,7 +932,7 @@ value = 5100
 
 
 
-;====<MAX NEGATIVE GAIN>=
+;MAX NEGATIVE GAIN>=
 ;Throw Attempt
 [StateDef 3050]
 type = S
@@ -1386,7 +1386,7 @@ ignoreHitPause = 1
 
 
 
-;====<WITHERING SURFACE>=
+;WITHERING SURFACE>=
 ;Startup
 [StateDef 3100]
 type = S
@@ -2032,7 +2032,7 @@ ignoreHitPause = 1
 
 
 
-;====<MAX WITHERING SURFACE>=
+;MAX WITHERING SURFACE>=
 ;Throw Attempt
 [StateDef 3150]
 type = S
@@ -3060,7 +3060,7 @@ ignoreHitPause = 1
 
 
 
-;====<OVERKILL>=
+;OVERKILL>=
 ;Throw Attempt
 [StateDef 3200]
 type = A
@@ -3605,7 +3605,7 @@ value = 5100
 
 
 
-;====<MAX OVERKILL>=
+;MAX OVERKILL>=
 ;Throw Attempt
 [StateDef 3250]
 type = A
@@ -4212,7 +4212,7 @@ ignoreHitPause = 1
 
 
 
-;====<CANNIBAL CORPSE>=
+;CANNIBAL CORPSE>=
 [StateDef 3300]
 type = S
 physics = N

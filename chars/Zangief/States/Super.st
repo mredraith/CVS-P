@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Zangief by varo_hades                   |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;SUPER STATES>====
-;==
+;
+;SUPER STATES=
+;
 
 ;Final Atomic Buster>=
 [StateDef 3000]

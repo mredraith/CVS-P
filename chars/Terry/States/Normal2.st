@@ -1,9 +1,9 @@
 ;                          ____________________
-;=|Terry Bogard by Memo|=
+;|Terry Bogard by Memo|=
 ;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<NORMAL MOVES>====
-;==
+;
+;NORMAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ; Standing Far Light Punch
@@ -2821,7 +2821,7 @@ type=changestate
 trigger1= pos y>-vel y
 value=52
 
-;= THROWS ==
+; THROWS ==
 ;----------------throw punches----------------
 [Statedef 800]
 type = S
@@ -3400,7 +3400,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;===< Target Escaped >==
+; Target Escaped >==
 [Statedef 890]
 type = S
 physics = N

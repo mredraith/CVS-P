@@ -1,9 +1,9 @@
 ;                          ____________________
-;=|Terry Bogard by Memo|=
+;|Terry Bogard by Memo|=
 ;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES>====
-;==
+;
+;SPECIAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ;Power Wave
@@ -1234,7 +1234,7 @@ scale = .5,.5
 
 [State 1200, VelSet]
 type = VelSet
-trigger1 = AnimElem=8 ;= 1
+trigger1 = AnimElem=8 ; 1
 x = ifElse(var(10) = 2, 18, ifElse(var(10) = 1, 12, 12))
 y = ifElse(var(10) = 2, -1.5, ifElse(var(10) = 1, -1.5, -1))
 
@@ -1533,7 +1533,7 @@ type=hitdef
 trigger1= (var(15)<5 || var(20))
 trigger1 = animelemtime(5)>=0
 trigger1 = animelemtime(11)<0
-;p2stateno = 1125;===wall bounce state
+;p2stateno = 1125;wall bounce state
 ID = 1230
 ;Guard.Dist = 80
 attr = A,SA
@@ -2409,7 +2409,7 @@ p2facing = 1
 ;Third Punch 
 [State 1330, Hit]
 type = hitdef
-p2stateno = 242;===Ground bounce state
+p2stateno = 242;Ground bounce state
 trigger1 = !var(16) && (var(15) < 3 || var(20))
 trigger1 = animelem = 11
 ID = 1330
@@ -2955,7 +2955,7 @@ time = 1
 type=hitdef
 trigger1 = !var(16) && (var(15) < 2 || var(20))
 trigger1= !Time
-p2stateno = 1125;===wall bounce state
+p2stateno = 1125;wall bounce state
 ID = 1431
 attr = S,SA
 hitflag = MAF
@@ -4411,7 +4411,7 @@ ownpal = 1
 
 [State 1730, Velocity]
 type = VelSet
-trigger1 = AnimElem=3 ;= 1
+trigger1 = AnimElem=3 ; 1
 x = 6
 y = 0
 
@@ -4423,7 +4423,7 @@ y = 0
 
 [State 1730, Velocity]
 type = VelSet
-trigger1 = AnimElem=12 ;= 1
+trigger1 = AnimElem=12 ; 1
 x = 8
 y = 0
 
@@ -4435,7 +4435,7 @@ y = 0
 
 [State 1730, Velocity]
 type = VelSet
-trigger1 = AnimElem=20 ;= 1
+trigger1 = AnimElem=20 ; 1
 x = 13
 y = 0
 
@@ -4645,7 +4645,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====< ZERO COUNTER >=
+; ZERO COUNTER >=
 ;PUNCH ZERO COUNTER
 [Statedef 2900]
 type = S
@@ -4739,7 +4739,7 @@ value = 0
 ctrl = 1
 
 
-;====< ZERO COUNTER >=
+; ZERO COUNTER >=
 ;KICK ZERO COUNTER
 [Statedef 2910]
 type = S

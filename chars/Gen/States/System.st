@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (28/12/2018)
-;==
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==
+;
 
 ; _________________________________________
 ;| Gen by mwryly & varo_hades              |
@@ -833,7 +833,7 @@ ctrl = 1
 
 
 
-;ROLL BACKWARDS>===
+;ROLL BACKWARDS
 [StateDef 715]
 type = S
 physics = N
@@ -885,7 +885,7 @@ ctrl = 1
 
 
 
-;POWER CHARGE>==
+;POWER CHARGE
 [StateDef 730]
 type = S
 physics = S
@@ -1509,7 +1509,7 @@ value = 52
 
 
 
-;TARGET SAFE FALL>==
+;TARGET SAFE FALL
 [StateDef 5205]
 type = A
 physics = N
@@ -1540,7 +1540,7 @@ value = 5210
 
 
 
-;FALL RECOVERY>==
+;FALL RECOVERY
 [StateDef 5200]
 type = A
 moveType = H
@@ -2876,9 +2876,9 @@ value = 5050
 
 
 
-;===
+;
 ;-2 STATES>=
-;===
+;
 [StateDef -2]
 
 ;#ADD004BASIC PIEs#
@@ -3606,9 +3606,9 @@ ignoreHitPause = 1
 
 
 
-;===
+;
 ;-3 STATES>=
-;===
+;
 [StateDef -3]
 
 [State -3, GameTime]

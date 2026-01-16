@@ -1,4 +1,4 @@
-;<Haoh Shokoken>===================
+;Haoh Shokoken=
 [Statedef 3000]
 type = S
 movetype= A
@@ -166,7 +166,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<MAX Haoh Shokoken>===================
+;MAX Haoh Shokoken=
 [Statedef 3050]
 type = S
 movetype= A
@@ -328,7 +328,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Ryuko Ranbu>===================
+;Ryuko Ranbu=
 [Statedef 3100]
 type = S
 movetype= A
@@ -1314,7 +1314,7 @@ trigger1 = HitOver
 value = 0
 ctrl = 1
 
-;<MAX Ryuko Ranbu>===================
+;MAX Ryuko Ranbu=
 [Statedef 3150]
 type = S
 movetype= A
@@ -2430,7 +2430,7 @@ trigger1 = AnimElemTime(11)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3104
 
-;<Zetsu Ryuko Ranbu>===================
+;Zetsu Ryuko Ranbu=
 [Statedef 3200]
 type = S
 movetype= A
@@ -3577,7 +3577,7 @@ trigger1 = AnimElemTime(11)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3104
 
-;<HIT by Zetsu Ryuko Ranbu STATES>=====================
+;HIT by Zetsu Ryuko Ranbu STATES==
 ;hit high
 [Statedef 3290]
 type = S

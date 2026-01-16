@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<NORMAL MOVES>====
-;==
+;
+;NORMAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
@@ -1993,7 +1993,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<THROW SWITCHING SIDES>==
+;THROW SWITCHING SIDES>==
 [StateDef 805]
 type = S
 moveType = A
@@ -2130,7 +2130,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===<THROW SWITCHING SIDES>==
+;THROW SWITCHING SIDES>==
 [StateDef 806]
 type = S
 moveType = A
@@ -2201,7 +2201,7 @@ type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = 820
 
-;===<THROW SWITCHING SIDES (TARGET)>==
+;THROW SWITCHING SIDES (TARGET)>==
 [StateDef 807]
 type = A
 moveType = H
@@ -2867,7 +2867,7 @@ ctrl = 1
 
 
 
-;===<KNEES OF HADES (TARGET)>==
+;KNEES OF HADES (TARGET)>==
 [StateDef 822]
 type = A
 moveType = H
@@ -2983,7 +2983,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 25
 value = 5100
 
-;===<THROW ESC'D>==
+;THROW ESC'D>==
 [StateDef 890]
 type = S
 physics = N

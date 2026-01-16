@@ -6,7 +6,7 @@
 
 
 
-;==< DODGE >==
+; DODGE >==
 [Statedef 710]
 type = S
 physics = S
@@ -45,7 +45,7 @@ value = 0
 ctrl = 1
 
 
-;==< FORWARD ROLL >==
+; FORWARD ROLL >==
 [Statedef 720]
 type = C
 physics = C
@@ -79,7 +79,7 @@ value = 0
 ctrl = 1
 
 
-;==< POWER CHARGE >==
+; POWER CHARGE >==
 [Statedef 740]
 type = S
 physics = S
@@ -152,7 +152,7 @@ value = 0
 ctrl = 1
 
 
-;==< ZERO COUNTER >==
+; ZERO COUNTER >==
 [Statedef 750]
 type = S
 physics = S

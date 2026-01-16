@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (25/12/2018)
-;==
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==
+;
 
 
 
@@ -1552,7 +1552,7 @@ value = SCA
 time = 1
 
 
-;==< PALETTE MODE SELECTION >==
+; PALETTE MODE SELECTION >==
 [Statedef 5900]
 type = S
 [State 5900, varreset]
@@ -2110,7 +2110,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====<INTRO VS JOE HIGASHI>====
+;INTRO VS JOE HIGASHI=
 [StateDef 199]
 type = S
 physics = N

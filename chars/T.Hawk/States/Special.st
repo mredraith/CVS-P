@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| T.Hawk by varo_hades                    |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
-;==<SPECIAL MOVES===
-;====
+;
+;SPECIAL MOVES=
+;
 
 ;MEXICAN TYPHOON
 [StateDef 1000]
@@ -3064,7 +3064,7 @@ type = ChangeState
 trigger1 = FrontEdgeBodyDist < 10 || Time = 26
 value = 1450
 
-;PUNCH ZERO COUNTER====
+;PUNCH ZERO COUNTER=
 [StateDef 2900]
 type = S
 physics = N

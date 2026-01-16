@@ -1,9 +1,9 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (24/12/2018)
-;====
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;====
+;
 
 ; ________________________________________
 ;| Ryu by Phantom.of.the.Server and Mwryly |
@@ -665,7 +665,7 @@ trigger3 = (enemy(1), name = "M -NES Game 1" + enemy(1), name = "M -NES Game 2" 
 value = 50
 
 
-;CROUCHING=
+;CROUCHING
 [Statedef 10]
 type = C
 physics = C
@@ -2934,7 +2934,7 @@ type = changestate
 trigger1 = !animtime
 value = 0
 
-;===<TURNS INTRO===
+;TURNS INTRO==
 [StateDef 6900]
 type = A
 anim = 42
@@ -3229,7 +3229,7 @@ trigger1 = !time && var(1) = 2
 value = ifelse(random < 500, 364, 365)
 
 
-;===<WIN VS KEN===
+;WIN VS KEN=
 [StateDef 184]
 type = S
 physics = S
@@ -3688,7 +3688,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;===<K.O.===
+;K.O.=
 [StateDef 5150]
 type = L
 movetype = H
@@ -3730,7 +3730,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;===<AIR HIT TRANSITION===
+;AIR HIT TRANSITION=
 [Statedef 5035]
 type = A
 movetype = H
@@ -3768,9 +3768,9 @@ trigger4 = !Time
 trigger4 = Anim != 5035
 value = 5050
 
-;==
-;< -2 STATES
-;==
+;
+; -2 STATES
+;
 [Statedef -2]
 
 ;#ADD004BASIC PIEs#
@@ -4488,9 +4488,9 @@ text = "\nBy PotS - http://www.mugenguild.com/pots/"
 ignorehitpause = 1
 
 
-;==
-;< -3 STATES
-;==
+;
+; -3 STATES
+;
 [Statedef -3]
 
 [State -3, Gametime Var]

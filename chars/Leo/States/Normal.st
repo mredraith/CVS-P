@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Leo by K6666orochi                      |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<NORMAL MOVES>====
-;==
+;
+;NORMAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
@@ -2331,7 +2331,7 @@ type=changestate
 trigger1= pos y>-vel y
 value=52
 
-;===<Throw Attempt>==
+;Throw Attempt>==
 [Statedef 800]
 type=S
 physics=S
@@ -2426,7 +2426,7 @@ trigger1= !animtime
 value=0
 ctrl=1
 
-;===<Throw Attempt>==
+;Throw Attempt>==
 [Statedef 801]
 type=S
 physics=S
@@ -2522,7 +2522,7 @@ trigger1= !animtime
 value=0
 ctrl=1
 
-;===<Throw Attempt>==
+;Throw Attempt>==
 [Statedef 802]
 type=S
 physics=S
@@ -2618,7 +2618,7 @@ trigger1= !animtime
 value=0
 ctrl=1
 
-;===<Throw Attempt>==
+;Throw Attempt>==
 [Statedef 803]
 type=S
 physics=S

@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Dhalsim by Knuckles8864                 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<NORMAL MOVES>====
-;==
+;
+;NORMAL MOVES=
+;
 
 ;STANDING LIGHT PUNCH>==
 [StateDef 200]
@@ -3861,7 +3861,7 @@ trigger1 = !AnimTime
 value = 811
 
 
-;====<YOGA SMASH(PUNCHING FOE)>===
+;YOGA SMASH(PUNCHING FOE)
 [Statedef 811]
 type = S
 physics = N

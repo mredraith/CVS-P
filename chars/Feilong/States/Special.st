@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Feilong by varo_hades                  |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;====<SPECIAL MOVES
-;==
+;
+;SPECIAL MOVES
+;
 
 ;REKKAKEN
 [StateDef 1000]
@@ -821,7 +821,7 @@ trigger1 = Time = 40
 value = 0
 ctrl = 1
 
-;====<SHIENKYAKU>=
+;SHIENKYAKU>=
 [StateDef 1100]
 type = S
 physics = N
@@ -1289,7 +1289,7 @@ trigger1 = time = 9
 value = 1120
 ctrl = 0
 
-;====<SHIENKYAKU MEDIUM AIR>=
+;SHIENKYAKU MEDIUM AIR>=
 [StateDef 1110]
 type = A
 physics = N
@@ -1476,7 +1476,7 @@ trigger1 = Vel Y > 0
 value = 1101
 ctrl = 0
 
-;====<SHIENKYAKU STRONG AIR>=
+;SHIENKYAKU STRONG AIR>=
 [StateDef 1120]
 type = A
 physics = N
@@ -1709,7 +1709,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<EX SHIENKYAKU>=
+;EX SHIENKYAKU>=
 [StateDef 1130]
 type = S
 physics = N
@@ -1890,7 +1890,7 @@ trigger1 = time = 9
 value = 1131
 ctrl = 0
 
-;====<EX SHIENKYAKU AIR>=
+;EX SHIENKYAKU AIR>=
 [StateDef 1131]
 type = A
 physics = N
@@ -2118,7 +2118,7 @@ trigger1 = Vel Y > 0
 value = 1101
 ctrl = 0
 
-;====<REKKUKYAKU>=
+;REKKUKYAKU>=
 [StateDef 1200]
 type = S
 physics = S
@@ -2150,7 +2150,7 @@ type = ChangeState
 trigger1 = AnimElem = 4
 value = 1201
 
-;====<REKKUKYAKU ATTACK>=
+;REKKUKYAKU ATTACK>=
 [Statedef 1201]
 type = A
 movetype = A
@@ -2361,7 +2361,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<EX REKKUKYAKU>=
+;EX REKKUKYAKU>=
 [StateDef 1230]
 type = S
 physics = S
@@ -2418,7 +2418,7 @@ type = ChangeState
 trigger1 = AnimElem = 4
 value = 1231
 
-;====<EX REKKUKYAKU ATTACK>=
+;EX REKKUKYAKU ATTACK>=
 [Statedef 1231]
 type = A
 movetype = A
@@ -2549,7 +2549,7 @@ triggerall = Time > 10
 trigger1 = Pos Y >= 0
 value = 1202
 
-;====<REKKUKYAKU 2>=
+;REKKUKYAKU 2>=
 [StateDef 1300]
 type = S
 physics = N
@@ -2598,7 +2598,7 @@ trigger1 = time = 4
 value = 1305
 ctrl = 0
 
-;====<REKKUKYAKU 2 ATTACK>=
+;REKKUKYAKU 2 ATTACK>=
 [Statedef 1305]
 type = A
 movetype = A
@@ -2784,7 +2784,7 @@ trigger1 = pos Y >=20 && vel Y > 0
 value = 1310
 ctrl = 0
 
-;====<EX REKKUKYAKU 2>=
+;EX REKKUKYAKU 2>=
 [StateDef 1330]
 type = S
 physics = N
@@ -2858,7 +2858,7 @@ trigger1 = time = 4
 value = 1335
 ctrl = 0
 
-;====<EX REKKUKYAKU 2 ATTACK>=
+;EX REKKUKYAKU 2 ATTACK>=
 [Statedef 1335]
 type = A
 movetype = A
@@ -3095,7 +3095,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<TENSHIN>=
+;TENSHIN>=
 [StateDef 1400]
 type = S
 physics = N
@@ -3381,7 +3381,7 @@ Trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;====<EX TENSHIN>=
+;EX TENSHIN>=
 [StateDef 1430]
 type = S
 physics = N
@@ -3662,7 +3662,7 @@ Trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;====<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -3748,7 +3748,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

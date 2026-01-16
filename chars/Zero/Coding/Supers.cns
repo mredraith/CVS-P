@@ -1,4 +1,4 @@
-;<BUSTER SHOT COMBO>===================
+;BUSTER SHOT COMBO=
 [Statedef 3000]
 type = S
 movetype= A
@@ -266,7 +266,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<BUSTER SHOT COMBO lV2>===================
+;BUSTER SHOT COMBO lV2=
 [Statedef 3002]
 type = S
 movetype= A
@@ -627,7 +627,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<GENMU ZERO>===================
+;GENMU ZERO=
 ;Stand
 [Statedef 3025]
 type = S
@@ -1095,7 +1095,7 @@ trigger1 = time > 100
 value = 50
 ctrl = 1
 
-;<REKKOUHA MVC3>===================
+;REKKOUHA MVC3=
 [Statedef 3100]
 type = S
 movetype= A
@@ -1516,7 +1516,7 @@ trigger1= animtime = 0
 value=0
 ctrl=1
 
-;<REKKOUHA TVC>===================
+;REKKOUHA TVC=
 [Statedef 3110]
 type=S
 physics=S
@@ -1823,7 +1823,7 @@ trigger1= animtime = 0
 value=0
 ctrl=1
 
-;<DARK HOLD>===================
+;DARK HOLD=
 [Statedef 3200]
 type = S
 movetype = A
@@ -2873,7 +2873,7 @@ trigger1 = AnimTime = 0
 value = 50
 ctrl = 0
 
-;<Z SABER COMBO>===================
+;Z SABER COMBO=
 [Statedef 3300]
 type = S
 movetype = A
@@ -3715,7 +3715,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<Z SABER COMBO Lv2>===================
+;Z SABER COMBO Lv2=
 [Statedef 3350]
 type = S
 movetype = A
@@ -4611,7 +4611,7 @@ trigger1 = time > 52
 value = 0
 ctrl = 1
 
-;<SOUGENMU>===================
+;SOUGENMU=
 [Statedef 300]
 type = S
 movetype = A
@@ -5186,7 +5186,7 @@ MoveType = H
 ;------------------------------
 ;
 
-; Contact/Hit/Guard =====
+; Contact/Hit/Guard =
 ;----- MoveContact -----
 [State -2, VarSet]
 type = VarSet
@@ -5242,7 +5242,7 @@ value = 1
 ;-----------------------
 ;
 
-; HitDefs ==========
+; HitDefs ==
 ;-----------------------------
 ;PLACE ALL YOUR CHARACTER'S HITDEF & PROJECTILE CODES HERE.
 ;-----------------------------

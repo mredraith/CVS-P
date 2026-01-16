@@ -1,4 +1,4 @@
-;<HIT WALL>=============================
+;HIT WALL==
 ;Wall Bounce-Hit Pause
 [Statedef 1125]
 type=A
@@ -282,7 +282,7 @@ y =.45
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4020  ;<=======custom animation
+value=4020  ;custom animation
 
 [State 0, ChangeState]
 type=changeState
@@ -345,7 +345,7 @@ value=0
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4058  ;<=======custom animation
+value=4058  ;custom animation
 
 [State 0, SelfState]
 type=SelfState
@@ -374,7 +374,7 @@ value=0
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4059  ;<=======custom animation
+value=4059  ;custom animation
 
 [State 0, SelfState]
 type=SelfState

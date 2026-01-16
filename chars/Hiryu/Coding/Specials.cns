@@ -1,4 +1,4 @@
-;<Ame No Murakumo>=======================
+;Ame No Murakumo=
 [Statedef 1000]
 type = S
 movetype = A
@@ -418,7 +418,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX Ame No Murakumo>=======================
+;EX Ame No Murakumo=
 [Statedef 1030]
 type = S
 movetype = I
@@ -635,7 +635,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Gram(High)>=======================
+;Gram(High)=
 [Statedef 1100]
 type = S
 movetype = A
@@ -1016,7 +1016,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX Gram>=======================
+;EX Gram=
 [Statedef 1130]
 type = S
 movetype = A
@@ -1194,7 +1194,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<WALL BOUNCE STATE>===========================
+;WALL BOUNCE STATE=
 ;Being Launched
 [StateDef 1190]
 type = A
@@ -1358,7 +1358,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;<Gram(Low)>=======================
+;Gram(Low)=
 [Statedef 1200]
 type = C
 movetype = A
@@ -1739,7 +1739,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<EX Gram(Low)>=======================
+;EX Gram(Low)=
 [Statedef 1230]
 type = C
 movetype = A
@@ -1894,7 +1894,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<Gram(Air)>=======================
+;Gram(Air)=
 [Statedef 1300]
 type = A
 movetype = A
@@ -2347,7 +2347,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<EX Air Gram>=======================
+;EX Air Gram=
 [Statedef 1330]
 type = A
 movetype = A
@@ -2549,7 +2549,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<Excalibur>========================
+;Excalibur=
 [Statedef 1400]
 type = A
 movetype = A
@@ -3033,7 +3033,7 @@ trigger1 = AnimElemTime(5) >= 0
 trigger1 = Vel Y > 0 && Pos Y >= 0;pos y > -vel y
 value = 1406
 
-;<EX Excalibur>=======================
+;EX Excalibur=
 [Statedef 1430]
 type = A
 movetype = A
@@ -3533,7 +3533,7 @@ trigger1 = AnimElemTime(5) >= 0
 trigger1 = Vel Y > 0 && Pos Y >= 0;pos y > -vel y
 value = 1406
 
-;<Warp>==========================
+;Warp=
 [StateDef 1500]
 type = S
 physics = N
@@ -3663,7 +3663,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<Vajra>==========================
+;Vajra=
 [StateDef 1600]
 type = S
 physics = N
@@ -3958,7 +3958,7 @@ trigger1 = AnimElemTime(4) > 0
 trigger1 = pos y > -vel y
 value = 1406
 
-;<EX Vajra>==========================
+;EX Vajra=
 [StateDef 1630]
 type = S
 physics = N
@@ -4382,7 +4382,7 @@ type = SelfState
 trigger1 = (pos y-16)>-vel y
 value = 5100
 
-;<Formation A>==========================
+;Formation A=
 [StateDef 1700]
 type = S
 physics = S
@@ -4465,7 +4465,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX Formation A>==========================
+;EX Formation A=
 [StateDef 1730]
 type = S
 physics = S
@@ -4576,7 +4576,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<Formation B>==========================
+;Formation B=
 [StateDef 1800]
 type = S
 physics = S
@@ -4869,7 +4869,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<Formation C>==========================
+;Formation C=
 [StateDef 1900]
 type = S
 physics = S
@@ -4931,7 +4931,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX Formation C>==========================
+;EX Formation C=
 [StateDef 1930]
 type = S
 physics = S

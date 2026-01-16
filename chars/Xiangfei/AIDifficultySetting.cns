@@ -5,7 +5,7 @@ type = VarSet
 triggerall = (var(20) > 0)
 trigger1 = (RoundState = 2)
 trigger2 = Alive
-var(20) = 8 ;<-----Change this to adjust difficulty: 1(easiest) to 8(hardest)
+var(20) = 8 ;-----Change this to adjust difficulty: 1(easiest) to 8(hardest)
 IgnoreHitPause = 1
 
 

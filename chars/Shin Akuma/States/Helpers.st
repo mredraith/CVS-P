@@ -2,7 +2,7 @@
 ;| Gouki by Phantom.of.the.Server and Mwryly |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;===HELPER STATES===
+;HELPER STATES=
 ;
 
 ;JUMP DUST
@@ -1660,7 +1660,7 @@ ignorehitpause = 1
 type = destroyself
 trigger1 = !animtime
 
-;MESSATSU GOU HADO AGYO===
+;MESSATSU GOU HADO AGYO=
 [Statedef 3025]
 type = A
 physics = N
@@ -5298,7 +5298,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;IMPACT DUST>===
+;IMPACT DUST
 [StateDef 8110]
 type = A
 anim = 9741

@@ -1,18 +1,18 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (22/02/2017)
-;==
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==
+;
 
 ; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
-;===< COMMON STATES >====
-;==
+;
+; COMMON STATES =
+;
 
-;==< DODGE >==
+; DODGE >==
 [Statedef 710]
 type = S
 physics = S
@@ -51,7 +51,7 @@ value = 0
 ctrl = 1
 
 
-;==< FORWARD ROLL >==
+; FORWARD ROLL >==
 [Statedef 720]
 type = C
 physics = C
@@ -128,7 +128,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;==< POWER CHARGE >==
+; POWER CHARGE >==
 [Statedef 740]
 type = S
 physics = S
@@ -201,7 +201,7 @@ value = 0
 ctrl = 1
 
 
-;==< ZERO COUNTER >==
+; ZERO COUNTER >==
 [Statedef 750]
 type = S
 physics = S
@@ -238,12 +238,12 @@ type = changestate
 trigger1 = time >= 16
 value = ifelse(anim=750, 1070, 450)
 
-;==
+;
 ;Parry effect
-;==
-;==
+;
+;
 ;Air Parry
-;==
+;
 [Statedef 97]
 type=A
 physics=A
@@ -344,9 +344,9 @@ trigger1= time>10
 value=1
 
 
-;==
+;
 ;Crouch Parry
-;==
+;
 [Statedef 98]
 type=C
 physics=C
@@ -426,9 +426,9 @@ type=changestate
 trigger1= !animtime
 value=11
 ctrl=1
-;==
+;
 ;Standing Parry
-;==
+;
 [Statedef 99]
 type=S
 physics=S
@@ -904,7 +904,7 @@ type = ChangeState
 trigger1 = Pos Y >= 1
 value = 52
 ctrl
-;==<RUN>===
+;RUN
 [Statedef 100]
 type=S
 movetype=I
@@ -976,7 +976,7 @@ type=changestate
 trigger1= anim=101 && !animtime
 value=0
 ctrl=1
-;====<FORWARD DASH>==
+;FORWARD DASH>==
 [Statedef 102]
 type=S
 movetype=I
@@ -3550,7 +3550,7 @@ value = 190
 
 
 
-;====
+;
 
 [Statedef -2]
 
@@ -3997,7 +3997,7 @@ Add.Basic[End]
 ; above SCtrls will be written in [statedef -2]
 ; ???[def -2]???????
 
-;===
+;
 ;----------------------HITSPARKS---------------------
 [State -2, Hit Detection]
 type = varset
@@ -4078,7 +4078,7 @@ add = 64 + ceil(sin(var(20) / 8.0 * pi) * 64), 64 + ceil(sin(var(20) / 8.0 * pi)
 ignorehitpause = 1
 
 
-;====
+;
 ; Super_KO
 
 [State -2, VarSet]
@@ -4123,7 +4123,7 @@ ownpal = 1
 supermovetime = 0
 pausemovetime = 40
 ignorehitpause = 1
-;====
+;
 ;Hit Count
 [State -2, Hitcount]
 type=varadd
@@ -4137,7 +4137,7 @@ trigger1= numenemy && var(4)
 trigger1= (enemynear,movetype!=H) && (enemynear,stateno!=5300)
 var(4)=0
 ignorehitpause=1
-;====
+;
 ;Damage Dampener
 [State -2, Damage based on hits]
 type=varset
@@ -4158,7 +4158,7 @@ type=attackmulset
 trigger1= 1
 value=fvar(12)
 ignorehitpause=1
-;====
+;
 ;Damage Dampener
 [State -2, Dampener]
 type=varset
@@ -4183,7 +4183,7 @@ type=varset
 trigger1= 1
 fvar(11)= fvar(10) * 1;ifelse(var(9),1.2,1)
 ignorehitpause=1
-;==
+;
 ;Special-Super Cancel Reset
 [State -3, Special-Super Cancel Reset]
 type=varset
@@ -4199,7 +4199,7 @@ trigger2 = (stateno = [1000,2999])
 trigger2 = movecontact
 var(35)=1
 ignorehitpause=1
-;====
+;
 ;Super-Super Cancel Reset
 [State -3, Super-Super Cancel Reset]
 type=varset
@@ -4214,7 +4214,7 @@ trigger1 = stateno != [4000,4999] ;Except for sweep kick
 trigger1 = movecontact
 var(36)=1
 ignorehitpause=1
-;====Debug===
+;Debug=
 [State -2, Debug]
 type = DisplayToClipBoard
 trigger1 = 1
@@ -4222,7 +4222,7 @@ text = "P2BodyDist X: %d | P2BodyDist Y: %d | Pos X: %d | Pos Y: %d \n"
 params	= floor(P2BodyDist X),ceil(P2BodyDist Y),ceil(Pos X),ceil(Pos Y)
 ignorehitpause = 1
 
-;===Counter====
+;Counter=
 
 [State -2, counterFX]
 type=helper
@@ -4297,7 +4297,7 @@ sprpriority = -10
 [State 3680, 4]
 type = changeanim
 trigger1 = time%2 = 0
-value = 9741 ;<----- cada charpossui um anim diferente
+value = 9741 ;----- cada charpossui um anim diferente
 
 [State 3680, 4]
 type = ChangeAnim
@@ -4336,7 +4336,7 @@ type = S
 movetype= H
 physics = N
 velset = 0,0
-anim = 9741 ;<----- cada charpossui um anim diferente
+anim = 9741 ;----- cada charpossui um anim diferente
 sprpriority = -10
 
 [State 3680,1]
@@ -4361,7 +4361,7 @@ type = S
 movetype= H
 physics = N
 velset = 0,0
-anim = 9741 ;<----- cada charpossui um anim diferente
+anim = 9741 ;----- cada charpossui um anim diferente
 sprpriority = -10
 
 [State 3680,1]
@@ -4387,9 +4387,9 @@ value = SCA
 
 [Statedef -3]
 
-;===
+;
 ;Normal->Special Attack Chain
-;=
+;
 [State -3, Combo condition Reset]
 type = VarSet
 trigger1 = 1
@@ -4402,9 +4402,9 @@ trigger1 = ctrl
 trigger2 = (stateno = [200,299]) || (stateno = [400,499])
 trigger2 = movecontact
 var(1) = 1
-;===
+;
 ;Special->Super Attack Chain
-;=
+;
 [State -3, Combo condition Reset]
 type = VarSet
 trigger1 = 1
@@ -4418,9 +4418,9 @@ trigger2 = (stateno = [1000,2999])
 trigger2 = movecontact
 trigger2 = stateno != 1256
 var(2) = 1
-;===
+;
 ;Super->Super Attack Chain
-;=
+;
 [State -3, Combo condition Reset]
 type = VarSet
 trigger1 = 1
@@ -4434,7 +4434,7 @@ trigger2 = (stateno = [3000,3999])
 trigger2 = stateno != [4000,4999] ;Except for sweep kick
 trigger2 = movecontact
 var(3) = 1
-;===
+;
 
 ;-------------------------------------------------------------------------------
 

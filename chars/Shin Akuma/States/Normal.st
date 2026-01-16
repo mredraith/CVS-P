@@ -1,9 +1,9 @@
 ; ________________________________________
 ;| Gouki by Phantom.of.the.Server and Mwryly |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====
+;
 ;NORMAL STATES==
-;====
+;
 
 ;Stand Light Punch
 [Statedef 200]
@@ -2655,10 +2655,10 @@ trigger2 = anim = 286 && animelemtime(6) >= 0
 movetype = I
 
 
-;====
-;=THROWS=
-;====
-;====< THROW CONTROLLER
+;
+;THROWS=
+;
+; THROW CONTROLLER
 [Statedef 800]
 type = S
 movetype = A
@@ -2886,7 +2886,7 @@ value = ifelse(pos y < 0, 5040, 0)
 ctrl = 1
 
 
-;====< SEOI NAGE
+; SEOI NAGE
 ;--- PLAYER ---
 [Statedef 805]
 type = S
@@ -3096,7 +3096,7 @@ trigger1 = pos y >= -9
 value = 5110
 
 
-;====< TOMOE NAGE
+; TOMOE NAGE
 ;--- PLAYER ---
 [Statedef 810]
 type = S
@@ -3232,7 +3232,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= (-const(size.ground.front) -const(size.ground.back))
 value = 5100
 
-;====< JIGOKU GURUMA
+; JIGOKU GURUMA
 ;--- PLAYER ---
 [Statedef 815]
 type = S
@@ -3413,7 +3413,7 @@ trigger1 = pos y >= 0
 value = 5100
 
 
-;====< JIGOKU FUUSHA
+; JIGOKU FUUSHA
 [Statedef 850]
 type = A
 movetype = A
@@ -3689,7 +3689,7 @@ trigger1 = pos y >= 0
 value = 5100
 
 
-;==Target Escaped
+;Target Escaped
 [Statedef 890]
 type = S
 physics = N

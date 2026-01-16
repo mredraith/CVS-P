@@ -1,16 +1,16 @@
 ; ADD004 BASIC PIEs ReBuilded CNS (27/12/2018)
-;==
+;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
-;==
+;
 
 ; _________________________________________
 ;| Zangief by varo_hades                   |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==
+;
 ;SYSTEM STATES=
-;==
+;
 
 ;STANDING
 [StateDef 0]
@@ -52,7 +52,7 @@ value = 50
 
 
 
-;CROUCHING=
+;CROUCHING
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -124,7 +124,7 @@ value = 0
 
 
 
-;WALKING=
+;WALKING
 [StateDef 20]
 type = S
 physics = S
@@ -196,7 +196,7 @@ value = 21
 
 
 
-;JUMPING=
+;JUMPING
 ;Jumping
 [StateDef 40]
 type = S
@@ -653,7 +653,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=<DASH FORWARD>=
+;DASH FORWARD>=
 [StateDef 110]
 type = A
 physics = N
@@ -779,7 +779,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;DODGE=
+;DODGE
 [StateDef 700]
 type = S
 physics = S
@@ -843,7 +843,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;ROLL FORWARD=
+;ROLL FORWARD
 [StateDef 710]
 type = S
 physics = N
@@ -1095,7 +1095,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;ZERO COUNTER=
+;ZERO COUNTER
 [StateDef 750]
 type = S
 physics = S
@@ -1169,7 +1169,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 2910, 2900)
 
-;PARRY=
+;PARRY
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1442,7 +1442,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;CUSTOM COMBO=
+;CUSTOM COMBO
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1843,7 +1843,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 52
 
-;GUARD=
+;GUARD
 ;Guard Start
 [StateDef 120]
 type = U
@@ -2321,7 +2321,7 @@ value = 52
 
 
 
-;LOSE=
+;LOSE
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2335,7 +2335,7 @@ flag = RoundNotOver
 
 
 
-;DRAW GAME=
+;DRAW GAME
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2348,7 +2348,7 @@ value = 170
 
 
 
-;CONTINUE?=
+;CONTINUE?
 [StateDef 5500]
 type = S
 anim = 5500
@@ -2362,7 +2362,7 @@ value = 5500
 
 
 
-;INITIALIZE=
+;INITIALIZE
 [StateDef 5901]
 type = S
 
@@ -2394,7 +2394,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;INTRO 1=
+;INTRO 1
 [StateDef 190]
 type = S
 physics = S
@@ -2420,7 +2420,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;INTRO 2=
+;INTRO 2
 [StateDef 191]
 type = S
 physics = S
@@ -2836,7 +2836,7 @@ y = .6
 type = DestroySelf
 trigger1 = Pos Y >= 0 && Vel Y > 0
 
-;TURNS INTRO=
+;TURNS INTRO
 [StateDef 6900]
 type = A
 anim = 42
@@ -2950,7 +2950,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;WIN POSE DECIDER=
+;WIN POSE DECIDER
 [StateDef 180]
 type = S
 
@@ -3344,9 +3344,9 @@ trigger4 = !Time
 trigger4 = Anim != 5035
 value = 5050
 
-;===
+;
 ;-2 STATES>=
-;===
+;
 [StateDef -2]
 
 ;#ADD004BASIC PIEs#
@@ -3899,7 +3899,7 @@ trigger1 = 1
 text = "\nBy Jmorphman"
 ignoreHitPause = 1
 
-;==[Armor]====
+;[Armor]=
 [State -2, HandsOff]
 type = NotHitBy
 triggerall=(stateno!=[120,155])&&var(40)!= 0
@@ -3965,9 +3965,9 @@ type = VarSet
 trigger1=1
 var(24)=0
 
-;===
+;
 ;-3 STATES>=
-;===
+;
 [StateDef -3]
 
 [State -3, GameTime]

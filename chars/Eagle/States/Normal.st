@@ -2303,7 +2303,7 @@ value = 5100
 
 
 
-;===<THROW ESCAPED>==
+;THROW ESCAPED>==
 [StateDef 890]
 type = S
 physics = N

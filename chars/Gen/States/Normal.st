@@ -3359,7 +3359,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==<SHAKUDAN>=
+;SHAKUDAN>=
 [StateDef 10655]
 type = A
 physics = N

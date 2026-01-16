@@ -1,4 +1,4 @@
-;<GROOVY SPECIAL>===================
+;GROOVY SPECIAL=
 [Statedef 3000]
 type = S
 movetype= A
@@ -458,7 +458,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX GROOVY SPECIAL>===================
+;EX GROOVY SPECIAL=
 [Statedef 3050]
 type = S
 movetype= A
@@ -1198,7 +1198,7 @@ trigger1 = time = 10
 value = 0
 ctrl = 1
 
-;<WONDERFUL KICK>===================
+;WONDERFUL KICK=
 [Statedef 3100]
 type = S
 movetype= A
@@ -1674,7 +1674,7 @@ trigger1 = !animtime
 value = 1104
 ctrl = 0
 
-;<EX WONDERFUL KICK>===================
+;EX WONDERFUL KICK=
 [Statedef 3150]
 type = S
 movetype= A
@@ -2156,7 +2156,7 @@ trigger1 = !animtime
 value = 1104
 ctrl = 0
 
-;<TRIPLE HEAVEN'S CROSS>=======================
+;TRIPLE HEAVEN'S CROSS=
 [Statedef 3200]
 type = S
 movetype = A

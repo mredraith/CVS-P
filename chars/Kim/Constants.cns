@@ -1,4 +1,4 @@
-;<VARIABLE LIST>====================
+;VARIABLE LIST=
 
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Chain Combo (0 = Off; 1 = On)
@@ -46,7 +46,7 @@
 ; _________________________________________
 ;| Kim Kaphwan by Jmorphman                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 1000
 power = 3000
@@ -112,7 +112,7 @@ down.bounce.groundLevel = 12
 down.friction.threshold = 0.5
 
 
-;<KIM KAPHWAN WINQUOTES>====================
+;KIM KAPHWAN WINQUOTES=
 [Quotes]
 victory0 = "My Tai Kwon Do is the strongest! No one will stop me!"
 victory1 = "You're as strong as your reputation. I look forward to fighting you again."

@@ -1,9 +1,9 @@
 ; ________________________________________
 ;| Ryu by Phantom.of.the.Server and Mwryly |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;===
-;==NORMAL STATES===
-;===
+;
+;NORMAL STATES=
+;
 
 ;Stand Light Punch
 [Statedef 200]
@@ -2896,9 +2896,9 @@ trigger2 = anim = 286 && animelemtime(6) >= 0
 movetype = I
 
 
-;===
+;
 ;THROWS=
-;===
+;
 ;THROW CONTROLLER
 [Statedef 800]
 type = S
@@ -3474,7 +3474,7 @@ trigger1 = pos y >= (-const(size.ground.front) -const(size.ground.back))
 value = 5100
 
 
-;==Target Escaped
+;Target Escaped
 [Statedef 890]
 type = S
 physics = N

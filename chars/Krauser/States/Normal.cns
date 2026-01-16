@@ -1953,7 +1953,7 @@ type=ChangeState
 trigger1=!AnimTime
 value=0
 ctrl=1
-;<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -2024,7 +2024,7 @@ type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = Ifelse(var(10),830,810)
 
-;<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -2453,7 +2453,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

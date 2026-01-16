@@ -1,32 +1,32 @@
 ;                          ____________________
-;|Terry Bogard by Memo|=========================
+;|Terry Bogard by Memo|=
 ;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
 
 
-;< CUSTOM SHIT STOLEN FROM OTHERS >=====================
+; CUSTOM SHIT STOLEN FROM OTHERS ==
 
-;< Palette Selector ON/OFF >============================
+; Palette Selector ON/OFF =
 
 ;Scroll Down for ON or OFF / OFF by default
 
-;< Ground Bounce >======================================
+; Ground Bounce =
 
 ;Statedef 1330 / EX Power Dunk
 
-;< Wall Bounce >========================================
+; Wall Bounce =
 
 ;Statedef 1005 (In Helpers.st) / EX Round Wave
 ;Statedef 1431 / EX Fire Kick (Follow Up)
 ;Statedef 1630 / EX Power Charge 1
 
-;<De-activating Wall or Ground Bounce>===================
+;De-activating Wall or Ground Bounce=
 
 ;To de-activate Wall or Ground Bounce look for the hitdef in
 ;the statedef's mentioned above, find this line (p2stateno =)
 ;and put a semicolon in the begining like this (;p2stateno =)
 
-;< INITIALIZE >========================================
+; INITIALIZE =
 
 ;Initialize Start Round
 [Statedef 5900]
@@ -163,7 +163,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;<Ground Bounce>=================================
+;Ground Bounce==
 
 [Statedef 242]
 type = A
@@ -229,7 +229,7 @@ trigger1 = time >= 15
 trigger1 = pos y >= 0
 value = 5110
 
-;<HIT WALL>======================================
+;HIT WALL=
 ;---Hit Pause---
 [Statedef 1125]
 type=A
@@ -486,7 +486,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;<=======custom animation
+value = 4020  ;custom animation
 
 [State 0, ChangeState]
 type = changeState

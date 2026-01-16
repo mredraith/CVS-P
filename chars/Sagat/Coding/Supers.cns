@@ -1,4 +1,4 @@
-;<TIGER CANNON>===================
+;TIGER CANNON=
 [Statedef 3000]
 type = S
 movetype= A
@@ -152,7 +152,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<TIGER CANNON MAX>===================
+;TIGER CANNON MAX=
 [Statedef 3050]
 type = S
 movetype= A
@@ -300,7 +300,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<GROUND TIGER CANNON>===================
+;GROUND TIGER CANNON=
 [Statedef 3100]
 type = S
 movetype= A
@@ -454,7 +454,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<GROUND TIGER CANNON MAX>===================
+;GROUND TIGER CANNON MAX=
 [Statedef 3150]
 type = S
 movetype= A
@@ -602,7 +602,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<TIGER GENOCIDE>===================
+;TIGER GENOCIDE=
 [Statedef 3200]
 type = S
 movetype= A
@@ -1100,7 +1100,7 @@ trigger1 = StateType = A && AnimElemTime(11) > 0
 trigger1 = pos y > -vel y
 value = 1201;same state for T.Uppercut landing 
 
-;<TIGER GENOCIDE MAX>===================
+;TIGER GENOCIDE MAX=
 [Statedef 3250]
 type = S
 movetype= A
@@ -1708,7 +1708,7 @@ trigger1 = StateType = A && AnimElemTime(21) > 0
 trigger1 = pos y > -vel y
 value = 1201;same state for T.Uppercut landing
 
-;<TIGER RAID>===================
+;TIGER RAID=
 [Statedef 3300]
 type = S
 movetype= A
@@ -2076,7 +2076,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<TIGER RAID MAX>===================
+;TIGER RAID MAX=
 [Statedef 3350]
 type = S
 movetype= A
@@ -2549,7 +2549,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<TIGER STORM>===================
+;TIGER STORM=
 [Statedef 3400]
 type = S
 movetype = A
@@ -2982,7 +2982,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<HIT by TIGER STORM CUSTOM STATES>=============================
+;HIT by TIGER STORM CUSTOM STATES==
 ;hook punch state
 [Statedef 3420]
 type = S
