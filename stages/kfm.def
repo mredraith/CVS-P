@@ -30,7 +30,7 @@ boundright = 200
  ;Low should usually be 0.
  ;If omitted, defaults to -25 and 0 respectively
  ;***
-boundhigh = -30
+boundhigh = -50
 boundlow = 0
 
  ;This is how much the camera will move vertically towards the
