@@ -1,0 +1,101 @@
+; Stage assets are copyright Capcom (c) 2000. You should buy their games, they're pretty cool :)
+; HUGE thanks to the creators of ModNao, Naomilib, and GD Rom Explorer for making this stage (and the other MvC2 stages) possible.
+; Also special thanks to Violin Ken for introducing me to ModNao! Check out his work, it's good stuff.
+
+; 3/16/2025 update: Changed model scale to render correctly on later Nightly builds, adjusted screenleft/screenright as per PoTS's suggestion
+;--------------------------------------------------------
+[Info]
+name = "Marvel vs. Capcom 2 - River"
+displayname = "Marvel vs. Capcom 2 - River"
+versiondate = 03,16,2025
+mugenversion = 1.1
+author = "SuperFromND"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -512
+boundright = 512
+
+boundhigh = -600
+boundlow = 0
+verticalfollow = .95
+floortension = 200
+tension = 200
+overdrawhigh = 120
+overdrawlow = 120
+cuthigh = 0
+cutlow = 30
+fov = 30
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -140
+p1starty = 0
+p1facing = 1
+
+p2startx = 140
+p2starty = 0
+p2facing = -1
+
+p3startx = -210
+p3starty = 0
+p3facing = 1
+
+p4startx = 210
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+leftbound  = -4000
+rightbound =  4000
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 30
+screenright = 30
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 660
+autoturn = 1
+resetBG = 1
+localcoord = 640, 480
+xscale = 1
+yscale = 1
+portraitscale = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 128
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MarvelVsCapcom2_River.ogg
+bgmloopstart = 355000
+bgmloopend = 2650035
+
+bgmvolume = 100
+
+;========================================================
+[BGdef]
+model = mvc2-river.glb
+spr = mvc2-river.sff
+
+;-------------------------------------
+[Model]
+offset = 0,-0.16,-0.7
+scale = 0.0575, 0.0575, 0.0575
+;-------------------------------------
+; Stage portrait data
+[Begin Action 9000]
+9000,1, 0,0,-1

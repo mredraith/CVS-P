@@ -435,6 +435,16 @@ stages/OeilvertArk.def
 stages/DaliLandingGround.def
 stages/EvilForestLightClearing.def
 stages/EidolonWall.def
+stages\mvc2-airship.def
+stages\mvc2-desert.def
+stages\mvc2-industrial.def
+stages\mvc2-circus.def
+stages\mvc2-swamp.def
+stages\mvc2-cavern.def
+stages\mvc2-clocktower.def
+stages\mvc2-river.def
+stages\mvc2-abysstemple.def
+stages\mvc2-training.def
 
 ;-------------------------------------------------------------------------------
 [Options]
