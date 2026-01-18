@@ -2585,7 +2585,7 @@ ignoreHitPause = 1
 [State 820, Timer Start]
 type = VarSet
 trigger1 = !Time
-var(44) = 115
+var(44) = 70
 
 [State 820, Timer End (Round Over)]
 type = VarSet
