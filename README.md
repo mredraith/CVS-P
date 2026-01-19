@@ -1,6 +1,6 @@
 <img width="800" height="600" alt="Capcom vs SNK Revo 2 logo. Silhouette of Ryu and Kyo crossing over with their attacks." src="https://github.com/user-attachments/assets/00c2f8a4-d4a0-4ae3-8260-6c7aecdd78a7" />
 
-This is my patched/updated version of the Mugen game [Capcom vs SNK Evolution Rev 2](https://gamejolt.com/games/Capcom_vs_SNK/509026). It's more of a passion project/hobby than a real game, due to it already having a current release (even if I thnk it's very oddly balanced) and due to me having next to no knowledge on Mugen systems.
+This is my patched/updated version of the Mugen game [Capcom vs SNK Evolution Rev 2](https://gamejolt.com/games/Capcom_vs_SNK/509026). It's more of a passion project/hobby than a real game, due to it already having a current release (even if I think it's very oddly balanced) and due to me having next to no knowledge on Mugen systems.
 
 Some of the listed changes made are;
 * Complete port to Ikemen GO
