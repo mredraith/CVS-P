@@ -18,8 +18,8 @@
 # If you only want these features and nothing else, you can toggle this group on and all others off
 
 mapset{map: "_pots_stagecamera_cfg_toggle_ikemen"; value: 1}			# Enable to allow changing the parameters in this group
-mapset{map: "_pots_stagecamera_cfg_camera_autocenter"; value: 0}		# Toggle autocenter parameter
-mapset{map: "_pots_stagecamera_cfg_camera_tensionvel"; value: 0.5}		# Adjust tensionvel
+mapset{map: "_pots_stagecamera_cfg_camera_autocenter"; value: 1}		# Toggle autocenter parameter
+mapset{map: "_pots_stagecamera_cfg_camera_tensionvel"; value: 0.2}		# Adjust tensionvel
 mapset{map: "_pots_stagecamera_cfg_camera_zoomindelay"; value: 100}		# Adjust zoomindelay
 mapset{map: "_pots_stagecamera_cfg_camera_zoominspeed"; value: 1.0}		# Adjust zoominspeed
 mapset{map: "_pots_stagecamera_cfg_camera_zoomoutspeed"; value: 1.0}	# Adjust zoomoutspeed
