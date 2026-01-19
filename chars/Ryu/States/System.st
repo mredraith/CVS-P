@@ -13,7 +13,7 @@
 ;
 
 ;PARRY 
-;--- STANDING ---
+;STANDING
 [Statedef 700]
 type = S
 physics = S
@@ -91,7 +91,7 @@ value = 0
 ctrl = 1
 
 
-;--- CROUCHING ---
+;CROUCHING
 [Statedef 701]
 type = C
 physics = C
@@ -169,7 +169,7 @@ value = 11
 ctrl = 1
 
 
-;--- AERIAL ---
+;AERIAL
 [Statedef 702]
 type = A
 physics = A
@@ -1090,7 +1090,7 @@ trigger1 = anim = 103 && animelem = 3
 x = 1
 [State 102, End]
 type = changestate
-triggerall = (animelemtime(2) > 4) && (animelemtime(3) < 0)
+triggerall = (animelemtime(2) > 0) && (animelemtime(3) < 999)
 trigger1 = !AIlevel && command = "holdfwd"
 trigger2 = AIlevel && p2dist x >= 80
 value = 100
@@ -1144,7 +1144,7 @@ ctrl = 1
 
 
 ;GUARD 
-;--- START ---
+;START
 [Statedef 120]
 type = U
 physics = U
@@ -1198,7 +1198,7 @@ trigger3 = enemynear, hitdefattr = SCA, AT
 value = 140
 
 
-;--- STAND GUARD (guarding) ---
+;STAND GUARD (guarding)
 [Statedef 130]
 type = S
 physics = S
@@ -1242,7 +1242,7 @@ ownpal = 1
 pausemovetime = -1
 supermovetime = -1
 
-;--- CROUCH GUARD (guarding) ---
+;CROUCH GUARD (guarding)
 [Statedef 131]
 type = C
 physics = C
@@ -1269,7 +1269,7 @@ trigger3 = enemynear, hitdefattr = SCA, AT
 value = 140
 
 
-;--- AIR GUARD (guarding) ---
+;AIR GUARD (guarding) ---
 [Statedef 132]
 type = A
 physics = N
@@ -1315,7 +1315,7 @@ trigger3 = enemynear, hitdefattr = SCA, AT
 value = 140
 
 
-;--- GUARD (end) ---
+;GUARD (end)
 [Statedef 140]
 type = U
 physics = U
@@ -1355,7 +1355,7 @@ type = changestate
 trigger1 = !animtime
 value = (statetype = C) * 11 + (statetype = A) * 51
 
-;--- SGUARDHIT (shaking) ---
+;SGUARDHIT (shaking)
 [Statedef 150]
 type = S
 movetype = H
@@ -1384,7 +1384,7 @@ trigger2 = statetype = C && (enemynear, movetype = A) && (enemynear, statetype !
 statetype = S
 physics = S
 
-;--- SGUARDHIT2 (knocked back) ---
+;SGUARDHIT2 (knocked back)
 [Statedef 151]
 type = S
 movetype = H
@@ -1423,7 +1423,7 @@ trigger1 = hitover
 value = 130
 ctrl = 1
 
-;--- CGUARDHIT (shaking) ---
+;CGUARDHIT (shaking)
 [Statedef 152]
 type = C
 movetype = H
@@ -1452,7 +1452,7 @@ trigger2 = statetype = C && (enemynear, movetype = A) && (enemynear, statetype !
 statetype = S
 physics = S
 
-;--- CGUARDHIT2 (knocked back) ---
+;CGUARDHIT2 (knocked back) ---
 [Statedef 153]
 type = C
 movetype = H
@@ -1491,7 +1491,7 @@ trigger1 = hitover
 value = 131
 ctrl = 1
 
-;--- AGUARDHIT (shaking) ---
+;AGUARDHIT (shaking) ---
 [Statedef 154]
 type = A
 movetype = H
@@ -1506,7 +1506,7 @@ type = changestate
 trigger1 = hitshakeover
 value = 155
 
-;--- AGUARDHIT2 (knocked away) ---
+;AGUARDHIT2 (knocked away) ---
 [Statedef 155]
 type = A
 movetype = H
@@ -3942,7 +3942,7 @@ value = 5050
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(36)>=50
 	value=190010
 	ignorehitpause=1
-;;--- dizzy
+;;dizzy
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
@@ -3955,7 +3955,7 @@ value = 5050
 	trigger1=(stateno=5030 || stateno=5071) && hitshakeover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195050
-;;--- fadeout when KOed ; KO????
+;;fadeout when KOed ; KO????
 ;sys::-2::st5150-1
 [state 0]
 	type=varset
@@ -3967,7 +3967,7 @@ value = 5050
 	trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
 	flag=invisible
 	flag2=noshadow
-;;--- intro-pos-reset
+;;intro-pos-reset
 ;sys::-2::st5900-p3
 [state 0]
 	type=turn
