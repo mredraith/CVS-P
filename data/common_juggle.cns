@@ -1,0 +1,6 @@
+[Statedef -3]
+
+[State -3, Juggle]
+type = assertspecial
+trigger1 = 1
+flag = nojugglecheck
