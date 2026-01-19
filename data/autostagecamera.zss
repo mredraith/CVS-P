@@ -1,0 +1,252 @@
+# Auto Stage Camera by Phantom.of.the.Server
+# For Ikemen GO May 2025 build and above
+
+# See the readme for installation instructions
+
+
+#===============================================================================
+# Configuration
+#===============================================================================
+
+[Function F_PotS_StageCamera_Config()]
+
+# The settings defined here will be used by all of your stages
+# All values are in a 320 x 240 coordinate space. They will be converted automatically to each stage's resolution
+
+# New Ikemen features
+# Probably the reason you downloaded this module. Enabling these new features should be harmless to old stages
+# If you only want these features and nothing else, you can toggle this group on and all others off
+
+mapset{map: "_pots_stagecamera_cfg_toggle_ikemen"; value: 1}			# Enable to allow changing the parameters in this group
+mapset{map: "_pots_stagecamera_cfg_camera_autocenter"; value: 0}		# Toggle autocenter parameter
+mapset{map: "_pots_stagecamera_cfg_camera_tensionvel"; value: 0.5}		# Adjust tensionvel
+mapset{map: "_pots_stagecamera_cfg_camera_zoomindelay"; value: 100}		# Adjust zoomindelay
+mapset{map: "_pots_stagecamera_cfg_camera_zoominspeed"; value: 1.0}		# Adjust zoominspeed
+mapset{map: "_pots_stagecamera_cfg_camera_zoomoutspeed"; value: 1.0}	# Adjust zoomoutspeed
+mapset{map: "_pots_stagecamera_cfg_camera_lowestcap"; value: 1}			# Zooms out stage when the camera can't scroll higher
+
+
+# Standardize camera
+# These options merely make the camera more similar across different stages
+
+mapset{map: "_pots_stagecamera_cfg_toggle_standardize"; value: 1}		# Enable to allow changing the parameters in this group
+mapset{map: "_pots_stagecamera_cfg_camera_tension"; value: 60}			# Adjust tension
+mapset{map: "_pots_stagecamera_cfg_camera_cutlow"; value: 16}			# Distance from bottom of screen that chars should be when in 16:9 aspect ratio
+
+
+# Zoom limits
+# These options limit camera zoom to a certain range
+
+mapset{map: "_pots_stagecamera_cfg_toggle_zoom_limits"; value: 1}		# Enable to allow changing the parameters in this group
+mapset{map: "_pots_stagecamera_cfg_camera_zoomin"; value: 1.0}			# Lock zoomin to this value
+mapset{map: "_pots_stagecamera_cfg_camera_min_zoomout"; value: 1.0}	# Adjust minimum zoomout
+
+# Experimental features
+# Enabling these will make the code estimate the ideal camera parameters for each stage
+
+mapset{map: "_pots_stagecamera_cfg_toggle_experimental"; value: 1}		# Enable to allow changing the parameters in this group
+mapset{map: "_pots_stagecamera_cfg_auto_floortension"; value: 1}		# Adjust floortension and verticalfollow automatically to stage dimensions
+mapset{map: "_pots_stagecamera_cfg_auto_tensionhigh"; value: 1}			# Force zooming stages to use tensionhigh and tensionlow instead of floortension
+mapset{map: "_pots_stagecamera_cfg_auto_forcezoom"; value: 0}			# Force zoom in stages without it. Breaks deltas. Works better in widescreen
+
+
+# Do not enable
+# These don't work correctly in the current version of Ikemen GO
+#mapset{map: "_pots_stagecamera_cfg_camera_boundsides"; value: 15}		# Adjust boundleft and boundright
+#mapset{map: "_pots_stagecamera_cfg_auto_boundhigh"; value: 1}			# Increase boundhigh when a 4:3 stage is used in 16:9
+
+
+#===============================================================================
+# Negative states
+#===============================================================================
+
+[StateDef -4]
+
+ignorehitpause if playerno = 1 && !ishelper && stageconst(auto_stage_camera_off) = 0 {
+
+	# Waiting a couple of frames before running this whole code makes it more stable
+	if roundTime = 2 {
+
+		# Run config
+		call F_PotS_StageCamera_Config();
+		# Convert config values to player 1's localcoord where needed
+		mapset{map: "_pots_stagecamera_cfg_camera_cutlow"; value: const240p(map(_pots_stagecamera_cfg_camera_cutlow))}
+		mapset{map: "_pots_stagecamera_cfg_camera_tension"; value: const240p(map(_pots_stagecamera_cfg_camera_tension))}
+
+		# Ikemen now does this automatically
+		# let stage_scale = 320.0 / stagevar(stageinfo.localcoord.x);
+
+		# Check if game is in widescreen mode
+		let widescreen = screenwidth / screenheight > 4.0 / 3.0;
+
+		# Adjusting and accessing cutlow in the same frame causes a crash for some reason, hence using a local var instead
+		let stage_new_cutlow = const240p(240) - map(_pots_stagecamera_cfg_camera_cutlow) - stagevar(stageinfo.zoffset);
+
+		# New Ikemen features
+		if map(_pots_stagecamera_cfg_toggle_ikemen) {
+			modifyStageVar{
+				camera.autocenter: map(_pots_stagecamera_cfg_camera_autocenter); # See end of file
+				camera.tensionvel: map(_pots_stagecamera_cfg_camera_tensionvel);
+				camera.zoomindelay: map(_pots_stagecamera_cfg_camera_zoomindelay);
+				camera.zoominspeed: map(_pots_stagecamera_cfg_camera_zoominspeed);
+				camera.zoomoutspeed: map(_pots_stagecamera_cfg_camera_zoomoutspeed);
+				camera.lowestcap: map(_pots_stagecamera_cfg_camera_lowestcap);
+			}
+		}
+
+		# Standardize camera
+		if map(_pots_stagecamera_cfg_toggle_standardize) {
+			modifyStageVar{
+				#bound.screenleft: map(_pots_stagecamera_cfg_camera_boundsides);
+				#bound.screenright: map(_pots_stagecamera_cfg_camera_boundsides);
+				camera.cutlow: $stage_new_cutlow;
+				camera.cuthigh: 60 - $stage_new_cutlow;
+				camera.tension: map(_pots_stagecamera_cfg_camera_tension);
+				# Player starting position can't be changed in time
+			}
+		}
+
+		# Remove BoundLow workarounds 
+		#if stagevar(camera.boundlow) < 0 {
+		#	modifyStageVar{
+		#		camera.boundlow: 0;
+		#	}
+		#}
+
+		# Automatic boundhigh when a 4:3 stage is used in 16:9
+		#if $widescreen
+		#&& map(_pots_stagecamera_cfg_auto_boundhigh)
+		#&& (1.0 * stagevar(stageinfo.localcoord.x) / stagevar(stageinfo.localcoord.y)) = (4.0 / 3.0) {
+		#	modifyStageVar{
+		#		camera.boundhigh: stagevar(camera.boundhigh) - 60 + $stage_new_cutlow;
+		#	}
+		#}
+
+		# Automatic boundlow when zoffset is below floor level
+		# Would break Fatality stages and such, maybe
+		#if stagevar(stageinfo.zoffset) > stagevar(stageinfo.localcoord.y) {
+		#	modifyStageVar{
+		#		camera.boundlow: stagevar(stageinfo.zoffset) - stagevar(stageinfo.localcoord.y);
+		#	}
+		#}
+
+		let zoomout_changed = 0;
+		let stage_original_zoomout = stagevar(camera.zoomout);
+
+		# Zoom limits
+		if map(_pots_stagecamera_cfg_toggle_zoom_limits) {
+			# Fixed zoom in
+			if stagevar(camera.zoomin) != map(_pots_stagecamera_cfg_camera_zoomin) {
+				modifyStageVar{
+					camera.zoomin: map(_pots_stagecamera_cfg_camera_zoomin);
+				}
+			}
+			# Minimum zoom out
+			if stagevar(camera.zoomout) < map(_pots_stagecamera_cfg_camera_min_zoomout) {
+				modifyStageVar{
+					camera.zoomout: map(_pots_stagecamera_cfg_camera_min_zoomout);
+				}
+				let zoomout_changed = 1;
+			}
+		}
+
+		# Experimental features
+		if map(_pots_stagecamera_cfg_toggle_experimental) {
+			# Random attempt at guesstimating zoom into stages that have no zoom
+			if map(_pots_stagecamera_cfg_auto_forcezoom)
+			&& $zoomout_changed = 0
+			&& stagevar(camera.zoomout) >= stagevar(camera.zoomin) {
+				modifyStageVar{
+					camera.zoomin: map(_pots_stagecamera_cfg_camera_zoomin);
+					camera.zoomout: map(_pots_stagecamera_cfg_camera_min_zoomout);
+				}
+				let zoomout_changed = 1;
+			}
+
+			# Automatic tensionhigh and tensionlow
+			# Must be placed after auto zoom
+			if map(_pots_stagecamera_cfg_auto_tensionhigh)
+			&& stagevar(camera.zoomout) < stagevar(camera.zoomin) {
+				modifyStageVar{
+					camera.ytension.enable: 1;
+					camera.tensionhigh: const240p(120);
+					camera.tensionlow: 0;
+				}
+			}
+
+			# Automatic floortension and verticalfollow
+			if map(_pots_stagecamera_cfg_auto_floortension)
+			&& stagevar(camera.ytension.enable) = 0 { # only if floortension is actually used
+
+				let stage_bottom_margin = const240p(240) - stagevar(stageinfo.zoffset);
+				let stage_new_verticalfollow =  min(1, abs(stagevar(camera.boundhigh)) / const240p(240.0));
+				let stage_new_floortension = (const240p(ifelse($widescreen, 90, 120)) - $stage_bottom_margin) * $stage_new_verticalfollow;
+
+				modifyStageVar{
+					camera.floortension: $stage_new_floortension;
+					camera.verticalfollow: $stage_new_verticalfollow;
+				}
+			}
+		}
+
+		# Recalculate boundaries if zoomout is changed
+		if $zoomout_changed {
+			# Original values
+			let stage_original_width_left = stagevar(camera.boundleft) - const240p(160) / $stage_original_zoomout;
+			let stage_original_width_right = stagevar(camera.boundright) + const240p(160) / $stage_original_zoomout;
+			let stage_original_height = stagevar(camera.boundhigh) - const240p(240) / $stage_original_zoomout;
+
+			# New values
+			modifyStageVar{
+				camera.boundleft: min(0, $stage_original_width_left + const240p(160) / stagevar(camera.zoomout));
+				camera.boundright: max(0, $stage_original_width_right - const240p(160) / stagevar(camera.zoomout));
+				camera.boundhigh: min(0, $stage_original_height + const240p(240) / stagevar(camera.zoomout));
+			}
+		}
+
+		# Expand leftbound and rightbound
+		if stagevar(playerinfo.leftbound) > stagevar(camera.boundleft) - const240p(1000) {
+			modifyStageVar{
+				playerinfo.leftbound: stagevar(camera.boundleft) - const240p(1000);
+			}
+		}
+		if stagevar(playerinfo.rightbound) < stagevar(camera.boundright) + const240p(1000) {
+			modifyStageVar{
+				playerinfo.rightbound: stagevar(camera.boundright) + const240p(1000);
+			}
+		}
+
+	}
+
+	# Adjust AutoCenter
+	# Some characters break the camera if AutoCenter is always on, so we only do it during RoundState 2
+	# Update: This code causes as much harm as it does good, making the camera jitter a bit during these transitions
+	# So instead I'm just letting the characters take responsibility for how they're coded
+	#if roundTime >= 2
+	#&& map(_pots_stagecamera_cfg_toggle_ikemen) != 0 {
+	#	if map(_pots_stagecamera_cfg_camera_autocenter) = 0 {
+	#		# Force to disabled
+	#		if stageVar(camera.autocenter) != 0 {
+	#			modifyStageVar{camera.autocenter: 0}
+	#		}
+	#	} else {
+	#		# Toggle on and off during the round
+	#		if roundstate != 2 && stageVar(camera.autocenter) != 0 {
+	#			modifyStageVar{camera.autocenter: 0}
+	#		}
+	#		if roundstate = 2 && stageVar(camera.autocenter) = 0 {
+	#			modifyStageVar{camera.autocenter: 1}
+	#		}
+	#	}
+	#}
+
+	# Debug
+	#text{
+	#	text: "%d";
+	#	params: stagevar(camera.boundleft);
+	#	align: 0;
+	#	pos: 160, 80;
+	#	localcoord: 320, 240;
+	#	removetime: 1;
+	#}
+}
