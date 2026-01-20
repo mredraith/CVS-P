@@ -520,52 +520,6 @@ name = "EXHadoken"
 command = ~D, DF, F, x+z
 time = 16
 
-[Command]
-name = "Hadoken"
-command = ~D, DF, F, UF, x
-time = 16
-
-[Command]
-name = "Hadoken"
-command = ~D, DF, F, UF, y
-time = 16
-
-[Command]
-name = "Hadoken"
-command = ~D, DF, F, UF, z
-time = 16
-
-[Command]
-name = "Hadoken"
-command = ~D, DF, F, UF, ~x
-time = 16
-
-[Command]
-name = "Hadoken"
-command = ~D, DF, F, UF, ~y
-time = 16
-
-[Command]
-name = "Hadoken"
-command = ~D, DF, F, UF, ~z
-time = 16
-
-
-[Command]
-name = "EXHadoken"
-command = ~D, DF, F, UF, x+y
-time = 16
-
-[Command]
-name = "EXHadoken"
-command = ~D, DF, F, UF, y+z
-time = 16
-
-[Command]
-name = "EXHadoken"
-command = ~D, DF, F, UF, x+z
-time = 16
-
 
 [Command]
 name = "Shoryuken"

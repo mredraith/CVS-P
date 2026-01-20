@@ -576,52 +576,6 @@ command = ~D, DF, F, y+z
 time = 15
 
 [Command]
-name = "qcfx"
-command = ~D, DF, F, UF, x
-time = 15
-[Command]
-name = "qcfy"
-command = ~D, DF, F, UF, y
-time = 15
-[Command]
-name = "qcfz"
-command = ~D, DF, F, UF, z
-time = 15
-[Command]
-name = "qcfs"
-command = ~D, DF, F, UF, s
-time = 15
-[Command]
-name = "qcfx"
-command = ~D, DF, F, UF, ~x
-time = 15
-[Command]
-name = "qcfy"
-command = ~D, DF, F, UF, ~y
-time = 15
-[Command]
-name = "qcfz"
-command = ~D, DF, F, UF, ~z
-time = 15
-[Command]
-name = "qcfs"
-command = ~D, DF, F, UF, ~s
-time = 15
-
-[Command]
-name = "qcf2p"
-command = ~D, DF, F, UF, x+y
-time = 15
-[Command]
-name = "qcf2p"
-command = ~D, DF, F, UF, x+z
-time = 15
-[Command]
-name = "qcf2p"
-command = ~D, DF, F, UF, y+z
-time = 15
-
-[Command]
 name = "dfx"
 command = ~F, D, DF, x
 time = 20
@@ -717,44 +671,6 @@ time = 15
 [Command]
 name = "qcfc"
 command = ~D, DF, F, ~c
-time = 15
-
-[Command]
-name = "qcf2k"
-command = ~D, DF, F, UF, a+b
-time = 15
-[Command]
-name = "qcf2k"
-command = ~D, DF, F, UF, a+c
-time = 15
-[Command]
-name = "qcf2k"
-command = ~D, DF, F, UF, b+c
-time = 15
-
-[Command]
-name = "qcfa"
-command = ~D, DF, F, UF, a
-time = 15
-[Command]
-name = "qcfb"
-command = ~D, DF, F, UF, b
-time = 15
-[Command]
-name = "qcfc"
-command = ~D, DF, F, UF, c
-time = 15
-[Command]
-name = "qcfa"
-command = ~D, DF, F, UF, ~a
-time = 15
-[Command]
-name = "qcfb"
-command = ~D, DF, F, UF, ~b
-time = 15
-[Command]
-name = "qcfc"
-command = ~D, DF, F, UF, ~c
 time = 15
 
 [Command]

@@ -5,8 +5,7 @@
 ;SUPER STATES=
 ;
 
-;URA 108 SHIKI: OROCHINAGI>=
-;Startup
+;URA 108 SHIKI: OROCHINAGI Startup
 [StateDef 3000]
 type = S
 physics = N
@@ -278,8 +277,7 @@ ctrl = 1
 
 
 
-;MAX URA 108 SHIKI: OROCHINAGI>=
-;Startup
+;MAX URA 108 SHIKI: OROCHINAGI Startup
 [StateDef 3050]
 type = S
 physics = N
@@ -636,7 +634,7 @@ ctrl = 1
 
 
 
-;SAISHU KESSEN OUGI "MU-SHIKI">=
+;SAISHU KESSEN OUGI "MU-SHIKI"
 [StateDef 3100]
 type = S
 physics = N
@@ -1246,7 +1244,7 @@ ctrl = 1
 
 
 
-;MAX SAISHU KESSEN OUGI "MU-SHIKI">=
+;MAX SAISHU KESSEN OUGI "MU-SHIKI"
 [StateDef 3150]
 type = S
 physics = N
@@ -2269,7 +2267,7 @@ ctrl = 1
 
 
 
-;524 SHIKI: KAMUKURA>=
+;524 SHIKI: KAMUKURA
 [StateDef 3200]
 type = S
 physics = N
