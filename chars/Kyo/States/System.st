@@ -640,7 +640,7 @@ ctrl = 1
 
 
 
-;DASH FORWARD>=
+;DASH FORWARD
 [StateDef 110]
 type = A
 physics = N

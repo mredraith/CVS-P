@@ -4,7 +4,7 @@ displayname = "Balrog"
 versiondate = 12,06,2014 
 mugenversion = 1.0
 author = "Trololo" 
-pal.defaults = 4,1,2,3,5,6,7,8,9,10,11,12
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
 localcoord = 427,240
 
 [Files]
@@ -21,10 +21,10 @@ st2 = States\Special.st
 st3 = States\Super.st
 st4 = States\Helpers.st
 st5 = Custom.txt
-pal1 = Palettes/act001.act
-pal2 = Palettes/HoeHoeHoe.act
-pal3 = Palettes/GrimmRush.act
-pal4 = Palettes/Default.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/act001.act
+pal3 = Palettes/HoeHoeHoe.act
+pal4 = Palettes/GrimmRush.act
 pal5 = Palettes/act005.act
 pal6 = Palettes/act007.act
 pal7 = Palettes/act010.act

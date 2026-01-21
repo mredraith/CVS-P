@@ -35,7 +35,7 @@ pal8	= Palettes/MC2+Hades_Adon.act
 pal9	= Palettes/NDSilva_CyborgJoe.act
 pal10	= Palettes/Knuckles8864_LittleMac.act
 pal11	= Palettes/Flowrelik_SuperSeriousKungFuMan.act
-;pal12	= Palettes/Gogngos_BartSimpson.act ;toe to tip, this is a Bart!
+pal12	= Palettes/Gogngos_BartSimpson.act ;toe to tip, this is a Bart!
 
 [Palette Keymap]
 a = 4

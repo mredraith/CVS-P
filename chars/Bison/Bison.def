@@ -5,7 +5,7 @@ displayname ="Bison"
 versiondate =01,23,2014
 mugenversion = 1.0
 author = "Froz"
-pal.defaults = 4,1,2,3,6,5
+pal.defaults = 1,2,3,4,5,6
 localCoord = 427,240
 
 ; Files for the player
@@ -24,18 +24,18 @@ stCommon = common1.cns
 sprite = Sprite.sff
 anim = Animation.air
 sound = Sound.snd
-pal1 = Palettes/CVS2_HK.act
-pal2 = Palettes/CVS2_MP.act
-pal3 = Palettes/MvC2a2.act
-pal4 = Palettes/Default.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/CVS2_HK.act
+pal3 = Palettes/CVS2_MP.act
+pal4 = Palettes/MvC2a2.act
 pal5 = Palettes/Custom_3.act
 pal6 = Palettes/Custom_4.act
-;pal7 = Palettes/Dark.act
-;pal8 = Palettes/hef.act
-;pal9 = Palettes/dead.act
-;pal10 = Palettes/CVS2_Portrait.act
-;pal11 = Palettes/CVS2_EX_LK.act
-;pal12 = Palettes/XvSF.act
+pal7 = Palettes/Dark.act
+pal8 = Palettes/hef.act
+pal9 = Palettes/dead.act
+pal10 = Palettes/CVS2_Portrait.act
+pal11 = Palettes/CVS2_EX_LK.act
+pal12 = Palettes/XvSF.act
 
 [Palette Keymap]
 a = 1

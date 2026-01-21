@@ -1267,7 +1267,7 @@ channel = 1
 [State 450, Vel]
 type = velset
 trigger1 = AnimElem = 5
-x = 5
+x = 25
 
 [State 450, PlayerPush]
 type = PlayerPush

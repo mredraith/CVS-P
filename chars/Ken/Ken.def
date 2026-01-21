@@ -31,12 +31,12 @@ pal3	= Palettes/Kirishima_ScottPilgrim.act
 pal4	= Palettes/SFIIIDefault.act
 pal5	= Palettes/Cyclysm_SFIV_C10.act
 pal6	= Palettes/Kirishima_SFIV_C9.act
-;pal7	= Palettes/ViolentDefault.act
-;pal8	= Palettes/MalaDingDong_Evil.act
-;pal9	= Palettes/Cyclysm_SVCArt2.act
-;pal10	= Palettes/MalaDingDong_SFI.act
-;pal11	= Palettes/Kirishima_Cartoon.act
-;pal12	= Palettes/MalaDingDong_SFA.act
+pal7	= Palettes/ViolentDefault.act
+pal8	= Palettes/MalaDingDong_Evil.act
+pal9	= Palettes/Cyclysm_SVCArt2.act
+pal10	= Palettes/MalaDingDong_SFI.act
+pal11	= Palettes/Kirishima_Cartoon.act
+pal12	= Palettes/MalaDingDong_SFA.act
 	
 [Palette Keymap]
 a = 4
