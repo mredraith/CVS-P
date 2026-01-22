@@ -8,7 +8,7 @@ displayname ="Amakusa"
 versiondate =04,14,2002
 mugenversion =1.0
 author ="Testament"
-pal.defaults =4,3,1,2
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
 localcoord = 427,240
 
 ; Files for the player
@@ -21,12 +21,12 @@ stcommon =common1.cns
 sprite  =Amakusa.sff
 anim    =Amakusa.air
 sound   =a-amakusa.snd
-pal1=Colors/a-amakusa3.act
-pal2=Colors/a-amakusa5.act
-pal3=Colors/a-amakusa6.act
-pal4=Colors/mio.act
-pal5=Colors/a-amakusa7.act
-pal6=Colors/sad.act
+pal1=Colors/mio.act
+pal2=Colors/a-amakusa7.act
+pal3=Colors/sad.act
+pal4=Colors/a-amakusa3.act
+pal5=Colors/a-amakusa5.act
+pal6=Colors/a-amakusa6.act
 pal7=Colors/a-amakusa.act
 pal8=Colors/a-amakusa10.act
 pal9=Colors/a-amakusa11.act

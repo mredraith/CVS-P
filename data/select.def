@@ -196,141 +196,141 @@
  ;
  ;Insert your characters below.
 
-Mary, stages\kfm.def, includestage=0, order=1
-mai, stages\kfm.def, includestage=0, order=1
-kim, stages\kfm.def, includestage=0, order=1
-ryo, stages\kfm.def, includestage=0, order=1
-terry, stages\kfm.def, includestage=0, order=1
-K', stages\kfm.def, includestage=0, order=1
-kyo, stages\kfm.def, includestage=0, order=1
+Mary, random, includestage=0, order=1
+mai, random, includestage=0, order=1
+kim, random, includestage=0, order=1
+ryo, random, includestage=0, order=1
+terry, random, includestage=0, order=1
+K', random, includestage=0, order=1
+kyo, random, includestage=0, order=1
 randomselect
-Ryu, stages\kfm.def, includestage=0, order=1
-Guile, stages\kfm.def, includestage=0, order=1
-Honda, stages\kfm.def, includestage=0, order=1
-Dan, stages\kfm.def, includestage=0, order=1
-Feilong, stages\kfm.def, includestage=0, order=1
-Sean, stages\kfm.def, includestage=0, order=1
-Mika, stages\kfm.def, includestage=0, order=1
-Billy, stages\kfm.def, includestage=0, order=1
-king, stages\kfm.def, includestage=0, order=1
-Chang, stages\kfm.def, includestage=0, order=1
-Robert, stages\kfm.def, includestage=0, order=1
-Andy, stages\kfm.def, includestage=0, order=1
-Kula, stages\kfm.def, includestage=0, order=1
-Benimaru, stages\kfm.def, includestage=0, order=1
+Ryu, random, includestage=0, order=1
+Guile, random, includestage=0, order=1
+Honda, random, includestage=0, order=1
+Dan, random, includestage=0, order=1
+Feilong, random, includestage=0, order=1
+Sean, random, includestage=0, order=1
+Mika, random, includestage=0, order=1
+Billy, random, includestage=0, order=1
+king, random, includestage=0, order=1
+Chang, random, includestage=0, order=1
+Robert, random, includestage=0, order=1
+Andy, random, includestage=0, order=1
+Kula, random, includestage=0, order=1
+Benimaru, random, includestage=0, order=1
 randomselect
-Ken, stages\kfm.def, includestage=0, order=1
-Charlie, stages\kfm.def, includestage=0, order=1
-Zangief, stages\kfm.def, includestage=0, order=1
-Blanka, stages\kfm.def, includestage=0, order=1
-T.hawk, stages\kfm.def, includestage=0, order=1
-Ibuki, stages\kfm.def, includestage=0, order=1
-Karin, stages\kfm.def, includestage=0, order=1
-Yamazaki, stages\kfm.def, includestage=0, order=1
-yuri, stages\kfm.def, includestage=0, order=1
-Choi, stages\kfm.def, includestage=0, order=1
-Takuma, stages\kfm.def, includestage=0, order=1
-Joe, stages\kfm.def, includestage=0, order=1
-Athena, stages\kfm.def, includestage=0, order=1
-Daimon, stages\kfm.def, includestage=0, order=1
+Ken, random, includestage=0, order=1
+Charlie, random, includestage=0, order=1
+Zangief, random, includestage=0, order=1
+Blanka, random, includestage=0, order=1
+T.hawk, random, includestage=0, order=1
+Ibuki, random, includestage=0, order=1
+Karin, random, includestage=0, order=1
+Yamazaki, random, includestage=0, order=1
+yuri, random, includestage=0, order=1
+Choi, random, includestage=0, order=1
+Takuma, random, includestage=0, order=1
+Joe, random, includestage=0, order=1
+Athena, random, includestage=0, order=1
+Daimon, random, includestage=0, order=1
 randomselect
-Chunli, stages\kfm.def, includestage=0, order=1
-Cammy, stages\kfm.def, includestage=0, order=1
-Dhalsim, stages\kfm.def, includestage=0, order=1
-Sakura, stages\kfm.def, includestage=0, order=1
-yun, stages\kfm.def, includestage=0, order=1
-Dudley, stages\kfm.def, includestage=0, order=1
-eagle, stages\kfm.def, includestage=0, order=1
-shermie, stages\kfm.def, includestage=0, order=1
-vanessa, stages\kfm.def, includestage=0, order=1
-rick, stages\kfm.def, includestage=0, order=1
-heidern, stages\kfm.def, includestage=0, order=1
-tizoc, stages\kfm.def, includestage=0, order=1
-rock, stages\kfm.def, includestage=0, order=1
-iori, stages\kfm.def, includestage=0, order=1
+Chunli, random, includestage=0, order=1
+Cammy, random, includestage=0, order=1
+Dhalsim, random, includestage=0, order=1
+Sakura, random, includestage=0, order=1
+yun, random, includestage=0, order=1
+Dudley, random, includestage=0, order=1
+eagle, random, includestage=0, order=1
+shermie, random, includestage=0, order=1
+vanessa, random, includestage=0, order=1
+rick, random, includestage=0, order=1
+heidern, random, includestage=0, order=1
+tizoc, random, includestage=0, order=1
+rock, random, includestage=0, order=1
+iori, random, includestage=0, order=1
 randomselect
-rose, stages\kfm.def, includestage=0, order=1
-guy, stages\kfm.def, includestage=0, order=1
-haggar, stages\kfm.def, includestage=0, order=1
-sodom, stages\kfm.def, includestage=0, order=1
-demitri, stages\kfm.def, includestage=0, order=1
-batsu, stages\kfm.def, includestage=0, order=1
-kairi, stages\kfm.def, includestage=0, order=1
-hibiki, stages\kfm.def, includestage=0, order=1
-kasumi, stages\kfm.def, includestage=0, order=1
-raiden, stages\kfm.def, includestage=0, order=1
-clark, stages\kfm.def, includestage=0, order=1
-jae, stages\kfm.def, includestage=0, order=1
-kain, stages\kfm.def, includestage=0, order=1
-mature, stages\kfm.def, includestage=0, order=1
+rose, random, includestage=0, order=1
+guy, random, includestage=0, order=1
+haggar, random, includestage=0, order=1
+sodom, random, includestage=0, order=1
+demitri, random, includestage=0, order=1
+batsu, random, includestage=0, order=1
+kairi, random, includestage=0, order=1
+hibiki, random, includestage=0, order=1
+kasumi, random, includestage=0, order=1
+raiden, random, includestage=0, order=1
+clark, random, includestage=0, order=1
+jae, random, includestage=0, order=1
+kain, random, includestage=0, order=1
+mature, random, includestage=0, order=1
 randomselect
-gen, stages\kfm.def, includestage=0, order=1
-cody, stages\kfm.def, includestage=0, order=1
-hugo, stages\kfm.def, includestage=0, order=1
-rolento, stages\kfm.def, includestage=0, order=1
-morrigan, stages\kfm.def, includestage=0, order=1
-kyosuke, stages\kfm.def, includestage=0, order=1
-blair, stages\kfm.def, includestage=0, order=1
-yuki, stages\kfm.def, includestage=0, order=1
-todoh, stages\kfm.def, includestage=0, order=1
-xiangfei, stages\kfm.def, includestage=0, order=1
-ralf, stages\kfm.def, includestage=0, order=1
-marco, stages\kfm.def, includestage=0, order=1
-b.jenet, stages\kfm.def, includestage=0, order=1
-vice, stages\kfm.def, includestage=0, order=1
+gen, random, includestage=0, order=1
+cody, random, includestage=0, order=1
+hugo, random, includestage=0, order=1
+rolento, random, includestage=0, order=1
+morrigan, random, includestage=0, order=1
+kyosuke, random, includestage=0, order=1
+blair, random, includestage=0, order=1
+yuki, random, includestage=0, order=1
+todoh, random, includestage=0, order=1
+xiangfei, random, includestage=0, order=1
+ralf, random, includestage=0, order=1
+marco, random, includestage=0, order=1
+b.jenet, random, includestage=0, order=1
+vice, random, includestage=0, order=1
 randomselect
-ingrid, stages\kfm.def, includestage=0, order=1
-maki, stages\kfm.def, includestage=0, order=1
-gouken, stages\kfm.def, includestage=0, order=1
-B. B. Hood, stages\kfm.def, includestage=0, order=1
-lilith, stages\kfm.def, includestage=0, order=1
-tiffany, stages\kfm.def, includestage=0, order=1
-skullo, stages\kfm.def, includestage=0, order=1
+ingrid, random, includestage=0, order=1
+maki, random, includestage=0, order=1
+gouken, random, includestage=0, order=1
+B. B. Hood, random, includestage=0, order=1
+lilith, random, includestage=0, order=1
+tiffany, random, includestage=0, order=1
+skullo, random, includestage=0, order=1
 empty
-Kusanagi, stages\kfm.def, includestage=0, order=3
-Iori Orochi, stages\kfm.def, includestage=0, order=3
-rugal, stages\kfm.def, includestage=0, order=2
-geese, stages\kfm.def, includestage=0, order=2
-saisyu, stages\kfm.def, includestage=0, order=2
-haohmaru, stages\kfm.def, includestage=0, order=1
+Kusanagi, random, includestage=0, order=3
+Iori Orochi, random, includestage=0, order=3
+rugal, random, includestage=0, order=2
+geese, random, includestage=0, order=2
+saisyu, random, includestage=0, order=2
+haohmaru, random, includestage=0, order=1
 randomselect
-jill, stages\kfm.def, includestage=0, order=1
-leo, stages\kfm.def, includestage=0, order=1
-adon, stages\kfm.def, includestage=0, order=1
-akuma, stages\kfm.def, includestage=0, order=2
-Evil Ryu, stages\kfm.def, includestage=0, order=3
-Violent Ken, stages\kfm.def, includestage=0, order=3
-empty
-empty
-Mr.karate, stages\kfm.def, includestage=0, order=3
-Rasetsumaru, stages\kfm.def, includestage=0, order=3
-grant, stages\kfm.def, includestage=0, order=2
-krauser, stages\kfm.def, includestage=0, order=2
-laurence, stages\kfm.def, includestage=0, order=1
-nakoruru, stages\kfm.def, includestage=0, order=1
-randomselect
-hiryu, stages\kfm.def, includestage=0, order=1
-kenji, stages\kfm.def, includestage=0, order=1
-sagat, stages\kfm.def, includestage=0, order=1
-bison, stages\kfm.def, includestage=0, order=2
-Shadow Lady, stages\kfm.def, includestage=0, order=3
-Final Bison, stages\kfm.def, includestage=0, order=5
+jill, random, includestage=0, order=1
+leo, random, includestage=0, order=1
+adon, random, includestage=0, order=1
+akuma, random, includestage=0, order=2
+Evil Ryu, random, includestage=0, order=3
+Violent Ken, random, includestage=0, order=3
 empty
 empty
-empty
-God Rugal, stages\kfm.def, includestage=0, order=5
-goenitz, stages\kfm.def, includestage=0, order=2
-mr.big, stages\kfm.def, includestage=0, order=2
-amakusa, stages\kfm.def, includestage=0, order=2
-earthquake, stages\kfm.def, includestage=0, order=1
+Mr.karate, random, includestage=0, order=3
+Rasetsumaru, random, includestage=0, order=3
+grant, random, includestage=0, order=2
+krauser, random, includestage=0, order=2
+laurence, random, includestage=0, order=1
+nakoruru, random, includestage=0, order=1
 randomselect
-zero, stages\kfm.def, includestage=0, order=1
-hayato, stages\kfm.def, includestage=0, order=1
-balrog, stages\kfm.def, includestage=0, order=2
-seth, stages\kfm.def, includestage=0, order=2
-Shin Akuma, stages\kfm.def, includestage=0, order=5
+hiryu, random, includestage=0, order=1
+kenji, random, includestage=0, order=1
+sagat, random, includestage=0, order=1
+bison, random, includestage=0, order=2
+Shadow Lady, random, includestage=0, order=3
+Final Bison, random, includestage=0, order=5
 empty
-Funny Ryu, stages\kfm.def, includestage=0, order=5
+empty
+empty
+God Rugal, random, includestage=0, order=5
+goenitz, random, includestage=0, order=2
+mr.big, random, includestage=0, order=2
+amakusa, random, includestage=0, order=2
+earthquake, random, includestage=0, order=1
+randomselect
+zero, random, includestage=0, order=1
+hayato, random, includestage=0, order=1
+balrog, random, includestage=0, order=2
+seth, random, includestage=0, order=2
+Shin Akuma, random, includestage=0, order=5
+empty
+Funny Ryu, random, includestage=0, order=5
 empty
 empty
 empty
