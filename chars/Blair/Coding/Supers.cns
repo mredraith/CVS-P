@@ -3197,8 +3197,8 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 18
 envshake.ampl = 6
 envShake.freq = 120
-mindist = 50,-30            ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 30 pixels up
-maxdist = 80,0	         ;Keep p2 a maximum of 80 pixels away from p1, and no lower than 0 pixels below
+mindist = 50,-30 ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 30 pixels up
+maxdist = 80,0 ;Keep p2 a maximum of 80 pixels away from p1, and no lower than 0 pixels below
 
 [State 3200, Hit 2]
 type = HitDef
@@ -3699,8 +3699,8 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 18
 envshake.ampl = 6
 envShake.freq = 120
-mindist = 50,-30            ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 30 pixels up
-maxdist = 80,0	         ;Keep p2 a maximum of 80 pixels away from p1, and no lower than 0 pixels below
+mindist = 50,-30 ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 30 pixels up
+maxdist = 80,0 ;Keep p2 a maximum of 80 pixels away from p1, and no lower than 0 pixels below
 
 [State 3250, Hit 2]
 type = HitDef
@@ -4061,8 +4061,8 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 18
 envshake.ampl = 6
 envShake.freq = 120
-mindist = 50,-120            ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 120 pixels up
-maxdist = 90,-10	         ;Keep p2 a maximum of 90 pixels away from p1, and no lower than 10 pixels below
+mindist = 50,-120 ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 120 pixels up
+maxdist = 90,-10 ;Keep p2 a maximum of 90 pixels away from p1, and no lower than 10 pixels below
 
 [State 3250, Hit Final] 
 type = HitDef
@@ -4280,8 +4280,8 @@ x = IfElse(AnimElemTime(9) > 0, -5, 5)
 [State 3300, StateTypeSet: Air, No Phys]
 type = StateTypeSet
 trigger1 = AnimElemTime(14) >= 0
-statetype = A    
-movetype = A     
+statetype = A 
+movetype = A 
 physics = N
 
 [State 3300, Velocity: Rising Flip Portion]

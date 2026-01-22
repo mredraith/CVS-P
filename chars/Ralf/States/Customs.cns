@@ -168,7 +168,7 @@ value=5100
 ;---------------------------------------------------------------------------
 ;Custom Air Hit
 [Statedef 1440]
-type   =A
+type =A
 movetype= H
 physics=N
 ctrl=0
@@ -198,7 +198,7 @@ ctrl=0
 ;---------------------------------------------------------------------------
 ;Custom Fall
 [Statedef 1441]
-type   =L
+type =L
 movetype= H
 physics=N
 velset=0,0
@@ -264,7 +264,7 @@ ignorehitpause = 1
 ;---------------------------------------------------------------------------
 ;Off screen Knockback
 [Statedef 4020]
-type   =A
+type =A
 movetype= H
 physics=N
 juggle=1
@@ -282,7 +282,7 @@ y =.45
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4020  ;custom animation
+value=4020 ;custom animation
 
 [State 0, ChangeState]
 type=changeState
@@ -292,7 +292,7 @@ ctrl=0
 ;---------------------------------------------------------------------------
 ;Off screen Knockback Fall
 [Statedef 4021]
-type   =L
+type =L
 movetype= H
 physics=N
 velset=0,0
@@ -326,7 +326,7 @@ value=Ifelse(Alive,5120,5150)
 ;---------------------------------------------------------------------------
 ;Custom Hit Low
 [Statedef 4058]
-type   =S
+type =S
 movetype=H
 physics=N
 velset=0,0
@@ -345,7 +345,7 @@ value=0
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4058  ;custom animation
+value=4058 ;custom animation
 
 [State 0, SelfState]
 type=SelfState
@@ -355,7 +355,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Custom Hit High
 [Statedef 4059]
-type   =S
+type =S
 movetype=H
 physics=N
 velset=0,0
@@ -374,7 +374,7 @@ value=0
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4059  ;custom animation
+value=4059 ;custom animation
 
 [State 0, SelfState]
 type=SelfState
@@ -384,7 +384,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Wall-knockdown
 [Statedef 4060]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -427,7 +427,7 @@ value=4061
 ;---------------------------------------------------------------------------
 ;Wall-knockdown Hit Wall
 [Statedef 4061]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -478,7 +478,7 @@ value=4062
 ;---------------------------------------------------------------------------
 ;Wall-knockdown Fall
 [Statedef 4062]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -531,7 +531,7 @@ value=5100
 ;---------------------------------------------------------------------------
 ;Custom-ceiling bounce
 [Statedef 4065]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0

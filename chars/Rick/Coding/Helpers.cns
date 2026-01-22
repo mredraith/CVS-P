@@ -270,7 +270,7 @@ trigger1 = (gametime%7)
 anim = 8180
 ID = 1006
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = -3,0
 random = 0,20
@@ -406,7 +406,7 @@ sprpriority=5
 velset=0,0
 
 [State 1006, 1]
-type = Trans                                                                              
+type = Trans 
 trigger1 = 1
 trans = add
 ignorehitpause=1
@@ -3537,7 +3537,7 @@ sprpriority=1
 [State 1200, Shake Screen]
 type = EnvShake
 trigger1 = time = 0
-time = 16     
+time = 16 
 ampl = 10 
 freq = 150
 

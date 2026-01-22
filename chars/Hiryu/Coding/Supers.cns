@@ -450,7 +450,7 @@ removeongethit = 1
 [State 3100, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 5  
+trigger1 = AnimElem = 5 
 attr = S, HA
 ID = 3100
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
@@ -666,7 +666,7 @@ removeongethit = 1
 [State 3101, Hit 1 & 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  || AnimElem = 21
+trigger1 = AnimElem = 3 || AnimElem = 21
 attr = S, HA
 ID = 3102
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
@@ -715,7 +715,7 @@ kill = 0
 [State 3101, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 11  
+trigger1 = AnimElem = 11 
 attr = S, HA
 ID = 3101
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
@@ -764,7 +764,7 @@ kill = 0
 [State 3101, Hit 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 28  
+trigger1 = AnimElem = 28 
 attr = S, HA
 ID = 3103
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
@@ -975,7 +975,7 @@ keyctrl = 0
 [State 3102, Hit 1 & 2]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 10 || AnimElem = 13  
+trigger1 = AnimElem = 10 || AnimElem = 13 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
 priority = 4, hit
@@ -2162,7 +2162,7 @@ x = 11
 [State 3400, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 12  
+trigger1 = AnimElem = 12 
 attr = S, HA
 ID = 3400
 damage = 0,0

@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Raiden by Knuckles8864			 |
+;| Raiden by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -24,18 +24,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/NDSilva_FatalFury.act
-pal3	= Palettes/LEON_Custom2.act
-pal4	= Palettes/KoFXIII_Color1.act
-pal5	= Palettes/davismaximus_HartFoundation.act
-pal6	= Palettes/NDSilva_BadBoxArtMegaMan.act
-pal7	= Palettes/StrongBad.act
-pal8	= Palettes/Hatter_Rozay.act
-pal9	= Palettes/FeLo_Llop_Panda.act
-pal10	= Palettes/NDSilva_RaidenbowMika.act
-pal11	= Palettes/davismaximus_VaderTime.act
-pal12	= Palettes/WumpaFruit96_Wario.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/NDSilva_FatalFury.act
+pal3 = Palettes/LEON_Custom2.act
+pal4 = Palettes/KoFXIII_Color1.act
+pal5 = Palettes/davismaximus_HartFoundation.act
+pal6 = Palettes/NDSilva_BadBoxArtMegaMan.act
+pal7 = Palettes/StrongBad.act
+pal8 = Palettes/Hatter_Rozay.act
+pal9 = Palettes/FeLo_Llop_Panda.act
+pal10 = Palettes/NDSilva_RaidenbowMika.act
+pal11 = Palettes/davismaximus_VaderTime.act
+pal12 = Palettes/WumpaFruit96_Wario.act
 
 [Palette Keymap]
 a = 4
@@ -50,7 +50,7 @@ c2 = 12
 x2 = 7
 y2 = 8
 z2 = 9
-	
+ 
 ;[Arcade]
 ;intro.storyBoard = intro.def
 ;ending.storyBoard = ending.def

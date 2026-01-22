@@ -1,5 +1,5 @@
 ﻿; _______________________________________________
-;| Benimaru Nikaido by Jmorphman				 |
+;| Benimaru Nikaido by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -25,18 +25,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/Goodaldo_KOFXIV_Inspired.act
-pal3	= Palettes/Kiri_CoolBlue.act
-pal4	= Palettes/sabockee_SpaceCopBenny.act
-pal5	= Palettes/ink_OddOne.act
-pal6	= Palettes/Project.13_Freakazoid.act
-pal7	= Palettes/NDSilva_JeanPierrePolnareff.act
-pal8	= Palettes/Gogngos_Shocktrooper.act
-pal9	= Palettes/TotalDramaXtremist_KOF98_D.act
-pal10	= Palettes/Goodaldo_Wildland.act
-pal11	= Palettes/sabockee_Torbernite.act
-pal12	= Palettes/NDSilva_VashTheStampede.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/Goodaldo_KOFXIV_Inspired.act
+pal3 = Palettes/Kiri_CoolBlue.act
+pal4 = Palettes/sabockee_SpaceCopBenny.act
+pal5 = Palettes/ink_OddOne.act
+pal6 = Palettes/Project.13_Freakazoid.act
+pal7 = Palettes/NDSilva_JeanPierrePolnareff.act
+pal8 = Palettes/Gogngos_Shocktrooper.act
+pal9 = Palettes/TotalDramaXtremist_KOF98_D.act
+pal10 = Palettes/Goodaldo_Wildland.act
+pal11 = Palettes/sabockee_Torbernite.act
+pal12 = Palettes/NDSilva_VashTheStampede.act
 
 [Palette Keymap]
 a = 4
@@ -50,7 +50,7 @@ b2 = 11
 c2 = 12
 x2 = 7
 y2 = 8
-z2 = 9	
+z2 = 9 
 
 ; Arcade mode
 [Arcade]

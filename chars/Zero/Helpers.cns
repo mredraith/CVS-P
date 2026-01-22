@@ -22,7 +22,7 @@ persistent = 1
 [State 0, ChangeAnim]
 type = ChangeAnim
 trigger1 = power >= powermax
-trigger2 = root, command != "hold_y" && command !=  "hold_b"
+trigger2 = root, command != "hold_y" && command != "hold_b"
 value = 2891
 persistent = 0
 
@@ -178,7 +178,7 @@ trigger1 = AnimElem = 2
 anim = 3095
 ID = 3095
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 1,1
@@ -699,7 +699,7 @@ ignorehitpause = 1
 type = Explod
 trigger1 = time =0
 anim = 9995;+(random%2)
-ID =  9997
+ID = 9997
 pos = 160,119
 postype = back ;p2,front,back,left,right
 vfacing = 1
@@ -801,7 +801,7 @@ ignorehitpause = 1
 type = Explod
 trigger1 = time =0
 anim = 9996;+(random%2)
-ID =  9997
+ID = 9997
 pos = 160,119
 postype = back ;p2,front,back,left,right
 vfacing = 1
@@ -904,7 +904,7 @@ ignorehitpause = 1
 type = Explod
 trigger1 = time =0
 anim = 9997;+(random%2)
-ID =  9997
+ID = 9997
 pos = 160,119
 postype = back ;p2,front,back,left,right
 vfacing = 1
@@ -1055,7 +1055,7 @@ ignorehitpause = 1
 type = Explod
 trigger1 = time = 0
 anim = 7777
-postype = back  ;p2,front,back,left,right
+postype = back ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 supermovetime = 9999
@@ -1128,7 +1128,7 @@ type = Explod
 trigger1 = time = 0
 anim = 7778
 id = 7778
-postype = back  ;p2,front,back,left,right
+postype = back ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 1.01,1

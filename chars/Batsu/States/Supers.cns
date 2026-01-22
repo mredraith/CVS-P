@@ -2979,7 +2979,7 @@ channel = 0
 
 [State 3301, Voice 1-3]
 type = PlaySnd
-trigger1 =  AnimElem = 8 || AnimElem = 14 
+trigger1 = AnimElem = 8 || AnimElem = 14 
 value = 0, 2
 volumescale = 255
 channel = 0
@@ -3952,7 +3952,7 @@ channel = 0
 
 [State 3351, Voice 1-3]
 type = PlaySnd
-trigger1 =  AnimElem = 8 || AnimElem = 14 || AnimElem = 32 || AnimElem = 39|| AnimElem = 77|| AnimElem = 71
+trigger1 = AnimElem = 8 || AnimElem = 14 || AnimElem = 32 || AnimElem = 39|| AnimElem = 77|| AnimElem = 71
 value = 0, 2
 volumescale = 255
 channel = 0
@@ -6292,7 +6292,7 @@ type = velset
 triggerall = anim = 3600
 triggerall = target(3600), stateno = 3650
 triggerall = target(3600),BackEdgeBodyDist = 0
-trigger1 =  time >= 0
+trigger1 = time >= 0
 x = (target(3600),vel x)*1.5
 
 
@@ -6941,7 +6941,7 @@ trigger1 = animelem = 20
 anim =3662
 ID =3662
 pos = -2,-52
-postype = p1  
+postype = p1 
 facing = 1
 vfacing = 1
 bindtime = 2
@@ -6964,7 +6964,7 @@ trigger1 = animelem = 23
 anim =3664
 ID =3664
 pos = 30,-38
-postype = p1  
+postype = p1 
 facing = 1
 vfacing = 1
 bindtime = 2

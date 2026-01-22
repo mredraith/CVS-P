@@ -140,7 +140,7 @@ type=ChangeState
 Triggerall = animelemtime(6) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 1005
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; Mary Spider
@@ -344,7 +344,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;Mary Spider (Target)
 [StateDef 1006]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -368,7 +368,7 @@ value = 5050
 ;------------------------------------------------------------------
 ;Mary Spider(Target#2)
 [StateDef 1007]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 4 
 Ctrl = 0
@@ -413,7 +413,7 @@ value = 5050
 ;Mary Spider(Target#3)
 [StateDef 1008]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = 5, -4
 sprpriority = 1 
 Ctrl = 0
@@ -709,7 +709,7 @@ ownpal = 1
 [State 1100, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElem = 4
-statetype = A       
+statetype = A 
 physics = N
 
 [State 1100, VelSet]
@@ -841,7 +841,7 @@ type=ChangeState
 Triggerall = animelemtime(5) > 0
 trigger1 = Vel Y + Pos Y >= 0
 value = 1106
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; M. Snatcher 
@@ -1076,7 +1076,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; M. Snatcher 
 [StateDef 1107]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -1094,7 +1094,7 @@ value = 5050
 ;------------------------------------------------------------------
 ; M. Snatcher 
 [StateDef 1108]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 1 
 Ctrl = 0
@@ -1113,7 +1113,7 @@ value = 5050
 ; M. Snatcher 
 [StateDef 1109]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = -5, -4
 sprpriority = 1 
 Ctrl = 0
@@ -1236,7 +1236,7 @@ persistent=1
 [State 1130, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElem = 4
-statetype = A       
+statetype = A 
 physics = N
 
 [State 1130, VelSet]
@@ -1369,7 +1369,7 @@ type=ChangeState
 Triggerall = animelemtime(5) > 0
 trigger1 = Vel Y + Pos Y >= 0
 value = 1106
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ;Straight Slicer 
@@ -1427,7 +1427,7 @@ ownpal = 1
 [State 1200, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElem = 2
-statetype = A    
+statetype = A 
 
 [State 1200, VelSet]
 type = VelSet
@@ -1572,7 +1572,7 @@ type=playsnd
 triggerall=var(10)=3
 trigger1= !time
 value=1230,2
-channel=1     
+channel=1 
 
 [State 1200, fat]
 type = Width
@@ -1678,7 +1678,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; Crab Clutch(Target)
 [StateDef 1203]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -1702,7 +1702,7 @@ value = 5050
 ;------------------------------------------------------------------
 ; Crab Clutch(Target#2)
 [StateDef 1204]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 4 
 Ctrl = 0
@@ -1848,7 +1848,7 @@ ctrl = 1
 ; Crab Clutch(Target#3)
 [StateDef 1208]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = -5, -4
 sprpriority = 1 
 Ctrl = 0
@@ -1956,7 +1956,7 @@ ownpal=1
 [State 1200, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElem = 2
-statetype = A    
+statetype = A 
 
 [State 1200, VelSet]
 type = VelSet
@@ -2151,20 +2151,20 @@ triggerall = enemynear, stateno != [120,155]
 triggerall = (p2stateno != [5020,5040]) 
 triggerall = (p2stateno != 5070)
 trigger1 = !time 
-attr = S, ST          
-hitflag = M         
-priority = 1, Miss   
-sparkno = -1 + 0 * (var(33) := 0)          
-p1sprpriority = 1                     
+attr = S, ST 
+hitflag = M 
+priority = 1, Miss 
+sparkno = -1 + 0 * (var(33) := 0) 
+p1sprpriority = 1 
 p1facing = ifelse (command = "holdback", -1, 1)
-p2facing = 1           
-p1stateno = 1304      
+p2facing = 1 
+p1stateno = 1304 
 p2stateno = 1303 
-hitsound=s800,0   
-guard.dist = 0  
-numhits = 0     
-fall = 1  
-ID=1300            
+hitsound=s800,0 
+guard.dist = 0 
+numhits = 0 
+fall = 1 
+ID=1300 
 
 [State 1301]
 type = PosAdd
@@ -2208,20 +2208,20 @@ triggerall = enemynear, stateno != [120,155]
 triggerall = (p2stateno != [5020,5040]) 
 triggerall = (p2stateno != 5070)
 trigger1 = !time 
-attr= S, ST          
-hitflag= M         
-priority= 1, Miss   
-sparkno= -1 + 0 * (var(33) := 0)         
-p1sprpriority = 1                     
+attr= S, ST 
+hitflag= M 
+priority= 1, Miss 
+sparkno= -1 + 0 * (var(33) := 0) 
+p1sprpriority = 1 
 p1facing = ifelse (command = "holdback", -1, 1)
-p2facing = 1                
-p1stateno= 1305      
+p2facing = 1 
+p1stateno= 1305 
 p2stateno= 1307
-hitsound=s800,0    
-guard.dist= 0  
-numhits = 0     
+hitsound=s800,0 
+guard.dist= 0 
+numhits = 0 
 fall = 1
-ID=1300               
+ID=1300 
 
 [State 1301]
 type = PosAdd
@@ -2388,7 +2388,7 @@ ctrl=1
 ;------------------------------------------------------------------
 ;Real Counter
 [StateDef 1303]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -2532,7 +2532,7 @@ ctrl=1
 ;------------------------------------------------------------------
 ;Real Counter
 [StateDef 1307]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -2557,7 +2557,7 @@ value = 5050
 ;Real Counter
 [StateDef 1308]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = -5, -4
 sprpriority = 1 
 Ctrl = 0
@@ -2582,7 +2582,7 @@ value = 5100
 ;Real Counter
 [StateDef 1309]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = -5, -4
 sprpriority = 1 
 Ctrl = 0
@@ -2854,7 +2854,7 @@ channel=0
 type = NotHitBy
 Triggerall = animelemtime(2) > 0
 trigger1 = numtarget(1400)
-trigger1 =  !(enemynear, ishelper)
+trigger1 = !(enemynear, ishelper)
 value = SCA
 
 [State 1401, TargetState]
@@ -2988,7 +2988,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;M.Reverse
 [StateDef 1402]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 1 
 Ctrl = 0
@@ -3013,7 +3013,7 @@ value = 5050
 ;M.Reverse
 [StateDef 1404]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = -5, -4
 sprpriority = 1 
 Ctrl = 0
@@ -3055,7 +3055,7 @@ channel=0
 type = NotHitBy
 Triggerall = animelemtime(2) > 0
 trigger1 = numtarget(1400)
-trigger1 =  !(enemynear, ishelper)
+trigger1 = !(enemynear, ishelper)
 value = SCA
 
 [State 1411, TargetState]
@@ -3135,7 +3135,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;M.Head Buster
 [StateDef 1412]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 1 
 Ctrl = 0
@@ -3160,7 +3160,7 @@ value = 5050
 ;M.Head Buster
 [StateDef 1413]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = 1.7, -10
 sprpriority = 1 
 Ctrl = 0

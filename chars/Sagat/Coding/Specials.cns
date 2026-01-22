@@ -430,7 +430,7 @@ y = 0.7
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 98 < 7, 7, fvar(11) * 98)), 7
 priority = 4, hit
@@ -476,7 +476,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 4, hit
@@ -656,7 +656,7 @@ y = 0.7
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 98 < 7, 7, fvar(11) * 98)), 7
 priority = 6, hit;higher value for counters
@@ -702,7 +702,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 6, hit;higher value for counter
@@ -918,7 +918,7 @@ y = 0.65
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 112 < 7, 7, fvar(11) * 112)), 7
 priority = 4, hit
@@ -964,7 +964,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 7
 priority = 4, hit
@@ -1144,7 +1144,7 @@ y = 0.625
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 126 < 7, 7, fvar(11) * 126)), 7
 priority = 4, hit
@@ -1190,7 +1190,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 7
 priority = 4, hit
@@ -1398,7 +1398,7 @@ y = 0.625
 [State 1230, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 priority = 4, hit
@@ -1443,7 +1443,7 @@ envShake.freq = 120
 [State 1230, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
 priority = 4, hit
@@ -1610,7 +1610,7 @@ y = 1
 [State 1300, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -1662,7 +1662,7 @@ trigger1 = AnimElem = 4 < 0
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 7
 priority = 4, hit
@@ -1708,7 +1708,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 5 || AnimElem = 6  
+trigger1 = AnimElem = 5 || AnimElem = 6 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 7
 priority = 4, hit
@@ -1866,7 +1866,7 @@ y = 1
 [State 1310, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -1918,7 +1918,7 @@ trigger1 = AnimElem = 4 < 0
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 4, hit
@@ -1964,7 +1964,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 5 || AnimElem = 6  
+trigger1 = AnimElem = 5 || AnimElem = 6 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 4, hit
@@ -2086,7 +2086,7 @@ y = 1
 [State 1320, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -2138,7 +2138,7 @@ trigger1 = AnimElem = 4 < 0
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 63 < 7, 7, fvar(11) * 63)), 7
 priority = 4, hit
@@ -2184,7 +2184,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 5 || AnimElem = 6  
+trigger1 = AnimElem = 5 || AnimElem = 6 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 63 < 7, 7, fvar(11) * 63)), 7
 priority = 4, hit
@@ -2336,7 +2336,7 @@ y = 1
 type = HitDef
 triggerall = !NumTarget(1300)
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 priority = 4, hit
@@ -2389,7 +2389,7 @@ type = HitDef
 triggerall = !NumTarget(1300)
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = A, SA
 id = 1300
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 7
@@ -2437,7 +2437,7 @@ type = HitDef
 triggerall = !NumTarget(1300)
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 5 || AnimElem = 6  
+trigger1 = AnimElem = 5 || AnimElem = 6 
 attr = A, SA
 id = 1300
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 7

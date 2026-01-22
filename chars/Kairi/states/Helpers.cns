@@ -813,7 +813,7 @@ guardflag=MA
 pausetime=2,4
 sparkno=-1
 sparkxy = -10,0
-hitsound =  s171,12
+hitsound = s171,12
 guard.sparkno = -1
 guardsound = S2,4
 ground.type=High
@@ -902,7 +902,7 @@ guardflag=MA
 pausetime=0,4
 sparkno=-1
 sparkxy = -10,0
-hitsound =  s171,12
+hitsound = s171,12
 guard.sparkno = -1
 guardsound = S2,4
 ground.type=High
@@ -997,7 +997,7 @@ guardflag=MA
 pausetime=0,4
 sparkno=-1
 sparkxy = -10,0
-hitsound =  s171,12
+hitsound = s171,12
 guard.sparkno = -1
 guardsound = S2,4
 ground.type=High
@@ -1086,7 +1086,7 @@ guardflag=MA
 pausetime=4,6
 sparkno=-1
 sparkxy = -10,0
-hitsound =  s171,12
+hitsound = s171,12
 guard.sparkno = -1
 guardsound = S2,4
 ground.type=High
@@ -1188,7 +1188,7 @@ pauseTime = 7,15
 sparkno= -1
 sparkxy = -1
 guard.sparkno = s7006
-hitsound =  s171,12
+hitsound = s171,12
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 24
@@ -1392,7 +1392,7 @@ pausetime = 0, 2
 guard.sparkno = -1
 sparkno= -1
 sparkxy = -1;ifelse((Random < 330),0,ifelse((Random = [330,660]),-15,-45)), 0
-hitsound =  s171,12
+hitsound = s171,12
 guardsound = S2, 4
 ground.type = Low
 ground.slidetime = 57;27
@@ -1815,7 +1815,7 @@ pausetime = 0, 0
 sparkno= s7030+(random%4)
 guard.sparkno = s7006
 sparkxy = 0,0
-hitsound =  s171,12
+hitsound = s171,12
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 13
@@ -1984,8 +1984,8 @@ trigger1= time
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 1000
-trigger1 =  power <3000
+trigger1 = power >= 1000
+trigger1 = power <3000
 anim = 71001
 postype = p1
 pos = 19,-73
@@ -2001,8 +2001,8 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 4,3)
-trigger1 =  power >= 1000
-trigger1 =  power <3000
+trigger1 = power >= 1000
+trigger1 = power <3000
 anim = 71002
 postype = p1
 pos = 19,-73
@@ -2019,7 +2019,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 5,3)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = -19,-92
@@ -2035,7 +2035,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = 19,-93
@@ -5083,7 +5083,7 @@ trigger1 = animelem = 1
 anim = 70000
 ID = 70000
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5281,7 +5281,7 @@ trigger1 = !time
 anim = 15600
 ID = 15600
 pos = 0,0
-postype = left  ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 removetime = -1
 pausemovetime = -1
 supermovetime = -1
@@ -5325,7 +5325,7 @@ trigger1 = !time
 anim = 15604
 ID = 2550
 pos = 0,0
-postype = left  ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 pausemovetime = -1
 supermovetime = -1
 removetime = -2

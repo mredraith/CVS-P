@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineMorrigan.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineMorrigan.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineMorrigan.sff
-anim    =DivineMorrigan.air
-sound   =DivineMorrigan.snd
+sprite =DivineMorrigan.sff
+anim =DivineMorrigan.air
+sound =DivineMorrigan.snd
 pal1=Colors/CTMorriganJean.act
 pal2=Colors/LEON_3.act
 pal3=Colors/LEON_2.act

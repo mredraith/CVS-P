@@ -962,13 +962,13 @@ trigger5 = AnimElem = 22
 trigger6 = AnimElem = 26
 trigger7 = AnimElem = 31
 trigger8 = AnimElem = 35
-value =  ifElse((var(10)=0), -30, ifElse((var(10)=1), -21, -16))
+value = ifElse((var(10)=0), -30, ifElse((var(10)=1), -21, -16))
 kill=ifElse((var(10)=0), (AnimElem=17), ifElse((var(10)=1), (AnimElem=26),(AnimElem=35)))
 
 [State 801, Damage Adjust -6]
 type = TargetLifeAdd
 trigger1 = AnimElem = 4 && var(10) = 2
-value =  -4
+value = -4
 kill=0
 
 
@@ -985,7 +985,7 @@ trigger7 = AnimElem = 31
 trigger8 = AnimElem = 35
 trigger9 = AnimElem = 40
 trigger10 = AnimElem = 45
-value =  -14
+value = -14
 kill=(AnimElem=45)
 
 [State 801, Hurt 11]

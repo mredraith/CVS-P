@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Iori Yagami by Knuckles8864			 |
+;| Iori Yagami by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -21,24 +21,24 @@ st2 = States/Special.st
 st3 = States/Super.st
 st4 = States/Helpers.st
 st5 = States/OrochiIori.st
-st6	= Config.txt
+st6 = Config.txt
 stCommon= common1.cns
 sprite = SpriteOrochi.sff
 anim = AnimOrochi.air
 sound = Sound.snd
-pal1	= Palettes/Flowrellik_O.IoriXIII-2.act
-pal2	= Palettes/Lurker_KOF98C.act
-pal3	= Palettes/Knuckles8864_OrochiLeona.act
-pal4	= Palettes/OrochiDefault.act
+pal1 = Palettes/Flowrellik_O.IoriXIII-2.act
+pal2 = Palettes/Lurker_KOF98C.act
+pal3 = Palettes/Knuckles8864_OrochiLeona.act
+pal4 = Palettes/OrochiDefault.act
 pal5 = Palettes/Knuckles8864_CvS2-Green.act
-pal6	= Palettes/sabockee_Custom7.act
-pal7	= Palettes/Lurker_SvCArtwork.act
-pal8	= Palettes/sabockee_Custom13.act
-pal9	= Palettes/Quickfist_OrochiChris.act
-pal10	= Palettes/Lurker_CvS2CapcomArtwork.act
-pal11	= Palettes/sabockee_Custom15.act
-pal12	= Palettes/Knuckles8864_Zombie.act
-	
+pal6 = Palettes/sabockee_Custom7.act
+pal7 = Palettes/Lurker_SvCArtwork.act
+pal8 = Palettes/sabockee_Custom13.act
+pal9 = Palettes/Quickfist_OrochiChris.act
+pal10 = Palettes/Lurker_CvS2CapcomArtwork.act
+pal11 = Palettes/sabockee_Custom15.act
+pal12 = Palettes/Knuckles8864_Zombie.act
+ 
 ;[Arcade]
 ;intro.storyBoard = intro.def
 ;ending.storyBoard = ending.def

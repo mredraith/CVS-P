@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Dhalsim by Knuckles8864			 |
+;| Dhalsim by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -20,24 +20,24 @@ st1 = States/Normal.st
 st2 = States/Special.st
 st3 = States/Super.st
 st4 = States/Helpers.st
-st5	= States/Sally.st
-st6	= Config.txt
+st5 = States/Sally.st
+st6 = Config.txt
 stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/XvSF.act
-pal3	= Palettes/Realra_CottonCandy.act
-pal4	= Palettes/Trololo_X-Ism-P.act
-pal5	= Palettes/LEON_Custom7.act
-pal6	= Palettes/SFIV_Color3.act
-pal7	= Palettes/SF2.act
-pal8	= Palettes/Trololo_V-Ism-K.act
-pal9	= Palettes/Brand.act
-pal10	= Palettes/SFIV_Color6.act
-pal11	= Palettes/MCX_Custom1.act
-pal12	= Palettes/Zenyatta.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/XvSF.act
+pal3 = Palettes/Realra_CottonCandy.act
+pal4 = Palettes/Trololo_X-Ism-P.act
+pal5 = Palettes/LEON_Custom7.act
+pal6 = Palettes/SFIV_Color3.act
+pal7 = Palettes/SF2.act
+pal8 = Palettes/Trololo_V-Ism-K.act
+pal9 = Palettes/Brand.act
+pal10 = Palettes/SFIV_Color6.act
+pal11 = Palettes/MCX_Custom1.act
+pal12 = Palettes/Zenyatta.act
 
 [Palette Keymap]
 a = 4
@@ -52,7 +52,7 @@ c2 = 12
 x2 = 7
 y2 = 8
 z2 = 9
-	
+ 
 ; Arcade mode
 [Arcade]
 intro.storyboard =

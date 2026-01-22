@@ -1,7 +1,7 @@
 ;Ko'ouken
 [Statedef 1000]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -82,7 +82,7 @@ ctrl = 1
 ;EX Ko'ouken
 [Statedef 1010]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -561,7 +561,7 @@ ctrl = 1
 ;EX Hien Shippukyaku
 [Statedef 1200]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -825,7 +825,7 @@ pausetime = 7,6
 ground.hittime = 24
 ground.slidetime = 18
 ground.type = High
-ground.velocity = -6.3  
+ground.velocity = -6.3 
 air.velocity = -8.0,15.5
 fall.yvelocity = -4.0
 fall.recover = 0
@@ -883,7 +883,7 @@ ctrl = 1
 ;Harai
 [Statedef 1300]
 type = S
-movetype =  I
+movetype = I
 physics = S
 ctrl = 0
 velset = 0,0
@@ -911,7 +911,7 @@ value = 1310
 ;-
 [Statedef 1310]
 type = S
-movetype =  I
+movetype = I
 physics = S
 anim = 1310
 velset = 0, 0
@@ -2121,7 +2121,7 @@ trigger1=time=0
 trigger2=ifelse(var(10)=0,(animelemno(0)=[3,13])&&!(time%6),ifelse(var(10)=1,(animelemno(0)=[3,25])&&!(time%6),(animelemno(0)=[3,37])&&!(time%6)))
 attr = S,SA
 priority = 7, Hit
-damage =  ifelse(var(10),5,10),4
+damage = ifelse(var(10),5,10),4
 animtype=hard
 air.animtype=hard
 hitflag = MAF
@@ -2173,7 +2173,7 @@ trigger2=var(40)>=2
 trigger2=ifelse(var(10)=0,(animelemno(0)=[3,13])&&!(time%6),ifelse(var(10)=1,(animelemno(0)=[3,25])&&!(time%6),(animelemno(0)=[3,37])&&!(time%6)))
 attr = S,SA
 priority = 7, Hit
-damage =  40,12
+damage = 40,12
 animtype=hard
 air.animtype=hard
 hitflag = MA
@@ -2680,7 +2680,7 @@ trigger1=time=0
 trigger2=ifelse(var(10)=0,(animelemno(0)=[3,13])&&!(time%6),ifelse(var(10)=1,(animelemno(0)=[3,25])&&!(time%6),(animelemno(0)=[3,37])&&!(time%6)))
 attr = S,SA
 priority = 7, Hit
-damage =  10,5
+damage = 10,5
 animtype=hard
 air.animtype=hard
 hitflag = MAF
@@ -2730,7 +2730,7 @@ trigger2=var(40)>=2
 trigger2=ifelse(var(10)=0,(animelemno(0)=[3,13])&&!(time%6),ifelse(var(10)=1,(animelemno(0)=[3,25])&&!(time%6),(animelemno(0)=[3,37])&&!(time%6)))
 attr = S,SA
 priority = 7, Hit
-damage =  40,12
+damage = 40,12
 animtype=hard
 air.animtype=hard
 hitflag = MA

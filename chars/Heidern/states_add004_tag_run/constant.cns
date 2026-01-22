@@ -14,7 +14,7 @@ sparkno = 2
 guard.sparkno = 40
 KO.echo = 0
 volume = 100
-IntPersistIndex = 58	;
+IntPersistIndex = 58 ;
 FloatPersistIndex = 30
 
 [Size]

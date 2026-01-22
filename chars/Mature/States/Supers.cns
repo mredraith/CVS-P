@@ -1155,7 +1155,7 @@ size.yScale = 0.5
 [State 3001, Super]
 type = Helper
 triggerall = !NumHelper(1504)
-trigger1 = AnimElem =  38
+trigger1 = AnimElem = 38
 id = 1504
 name = "Blade Effect"
 pos = 0,0
@@ -1170,7 +1170,7 @@ size.yScale = 0.5
 
 [State -3,Super]
 type = Helper
-trigger1 = AnimElem =  40
+trigger1 = AnimElem = 40
 id = 3105
 name = "Ebony Tears Proj"
 pos = 40,-55
@@ -1185,7 +1185,7 @@ size.xScale = 0.5
 size.yScale = 0.5
 [State 1000, Effect]
 type = PlaySnd
-trigger1 = AnimElem =  40
+trigger1 = AnimElem = 40
 value = 1500, 1
 
 [State 1100, HitDef]
@@ -1720,7 +1720,7 @@ size.yScale = 0.5
 
 [State -3,Super]
 type = Helper
-trigger1 = AnimElem =  58
+trigger1 = AnimElem = 58
 id = 3105
 name = "Ebony Tears Proj"
 pos = 40,-55
@@ -1735,7 +1735,7 @@ size.xScale = 0.5
 size.yScale = 0.5
 [State 1000, Effect]
 type = PlaySnd
-trigger1 = AnimElem =  55
+trigger1 = AnimElem = 55
 value = 1500, 1
 
 [State 1100, HitDef]

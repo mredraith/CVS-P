@@ -1,31 +1,31 @@
 ;;
-;                        CNS File for Sagat                        ;
-;                                by                                ;
-;                            Jesuszilla                            ;
+; CNS File for Sagat ;
+; by ;
+; Jesuszilla ;
 ;;
 
 ;--------------------- Variable List ----------------------
 
-;  Var(0) - Used in Just Defend
-;  Var(1) - NoWalk Parry
-;  Var(2) - Returns ShakeTime for Just Defense
-;  Var(3) - Finest KO, WaruFVar(15)
-;  Var(4) - Used in the Long Jump
-;  Var(5) - 2: Run/Dash
-;           4: Just Defend
-;           8: Parry
-;          16: Super Combo Cancel
-;          32: Counter Attack
-;          64: Counter Movement
-;         128: Safe Fall
-;         256: Air Guard
-;         512: Dizzy Enabled (with exceptions)
-;  1073741824: Dizzy notification (P2)
+; Var(0) - Used in Just Defend
+; Var(1) - NoWalk Parry
+; Var(2) - Returns ShakeTime for Just Defense
+; Var(3) - Finest KO, WaruFVar(15)
+; Var(4) - Used in the Long Jump
+; Var(5) - 2: Run/Dash
+; 4: Just Defend
+; 8: Parry
+; 16: Super Combo Cancel
+; 32: Counter Attack
+; 64: Counter Movement
+; 128: Safe Fall
+; 256: Air Guard
+; 512: Dizzy Enabled (with exceptions)
+; 1073741824: Dizzy notification (P2)
 ; -2147483648: Dizzy notification (P4)
-;  Var(6) - Indicates whether or not Small Jump is activated
-;  Var(7) - Mashy Throw
-;  Var(8) - Animation time offset, Mashy throw
-;  Var(9) - Roll/Dodge 
+; Var(6) - Indicates whether or not Small Jump is activated
+; Var(7) - Mashy Throw
+; Var(8) - Animation time offset, Mashy throw
+; Var(9) - Roll/Dodge 
 ; Var(10) - Gauge Selection
 ; Var(11) - Mashy throw
 ; Var(12) -
@@ -37,14 +37,14 @@
 ; Var(18) - N-Groove MAX Power
 ; Var(19) - K-Groove Rage
 ; Var(20) - Groove Select
-;           0 =  None
-;           1 =  C-Groove
-;           2 =  A-Groove
-;           3 =  P-Groove
-;           4 =  S-Groove
-;           5 =  N-Groove
-;           6 =  K-Groove
-;           7 = EX-Groove
+; 0 = None
+; 1 = C-Groove
+; 2 = A-Groove
+; 3 = P-Groove
+; 4 = S-Groove
+; 5 = N-Groove
+; 6 = K-Groove
+; 7 = EX-Groove
 ; Var(21) - Detects the enemy's MoveType. WaruVar(41)
 ; Var(22) - Differentiation of commands.
 ; Var(23) -
@@ -87,16 +87,16 @@
 
 ;--------------------- Float Variable List ----------------------
 
-;  FVar(0) - Descale Groove Bar, WaruFVar(20)
-;  FVar(1) - Cheap K.O. Anim; Scaling in Super Effect.
-;  FVar(2) - KO Voice; Scaling in the Super Effect.
-;  FVar(3) - Fire/Shock Spark, WaruFVar(25)
-;  FVar(4) - Current HitDef X Air HitVel
-;  FVar(5) - Current HitDef Y Air HitVel
-;  FVar(6) -
-;  FVar(7) - Announcer Voice
-;  FVar(8) - WaruVar(12), Returns Life
-;  FVar(9) - Used in the combo dampener.
+; FVar(0) - Descale Groove Bar, WaruFVar(20)
+; FVar(1) - Cheap K.O. Anim; Scaling in Super Effect.
+; FVar(2) - KO Voice; Scaling in the Super Effect.
+; FVar(3) - Fire/Shock Spark, WaruFVar(25)
+; FVar(4) - Current HitDef X Air HitVel
+; FVar(5) - Current HitDef Y Air HitVel
+; FVar(6) -
+; FVar(7) - Announcer Voice
+; FVar(8) - WaruVar(12), Returns Life
+; FVar(9) - Used in the combo dampener.
 ; FVar(10) - Combo dampener.
 ; FVar(11) - Throw
 ; FVar(12) - WaruFVar(24)
@@ -149,36 +149,36 @@ IntPersistIndex = 0
 FloatPersistIndex = 0
 
 [Size]
-xscale = 1                              	;Horizontal scaling factor.
-yscale = 1                                  	;Vertical scaling factor.
-ground.back = 20				;Player width (back, ground)
-ground.front = 20                       	;Player width (front, ground)
-air.back = 20				;Player width (back, air)
-air.front = 20				;Player width (front, air)
-height = 60				;Height of player (for opponent to jump over) Should be 88 but fuck MUGEN
-attack.dist = 320				;Default attack distance
-proj.attack.dist = 90			;Default attack distance for projectiles
-proj.doscale = 0				;Set to 1 to scale projectiles too
-head.pos = 2, -106				;Approximate position of head
-mid.pos = -2, -75				;Approximate position of midsection
-shadowoffset = 0				;Number of pixels to vertically offset the shadow
-draw.offset = 0,0				;Player drawing offset in pixels (x, y)
+xscale = 1 ;Horizontal scaling factor.
+yscale = 1 ;Vertical scaling factor.
+ground.back = 20 ;Player width (back, ground)
+ground.front = 20 ;Player width (front, ground)
+air.back = 20 ;Player width (back, air)
+air.front = 20 ;Player width (front, air)
+height = 60 ;Height of player (for opponent to jump over) Should be 88 but fuck MUGEN
+attack.dist = 320 ;Default attack distance
+proj.attack.dist = 90 ;Default attack distance for projectiles
+proj.doscale = 0 ;Set to 1 to scale projectiles too
+head.pos = 2, -106 ;Approximate position of head
+mid.pos = -2, -75 ;Approximate position of midsection
+shadowoffset = 0 ;Number of pixels to vertically offset the shadow
+draw.offset = 0,0 ;Player drawing offset in pixels (x, y)
 
 [Velocity]
-walk.fwd = 2.5		;Walk forward
-walk.back = -2		;Walk backward
-run.fwd = 4.5, 0		;Run forward (x, y)
-run.back = -5.5,-2		;Hop backward (x, y)
-jump.neu = 0,-7.375		;Neutral jumping velocity (x, y)
-jump.back = -2.75,-7.625	;Jump back Speed (x, y)
-jump.fwd = 2.265,-7.125	;Jump forward Speed (x, y)
-runjump.back = -4.125	;Running jump speeds (opt)
+walk.fwd = 2.5 ;Walk forward
+walk.back = -2 ;Walk backward
+run.fwd = 4.5, 0 ;Run forward (x, y)
+run.back = -5.5,-2 ;Hop backward (x, y)
+jump.neu = 0,-7.375 ;Neutral jumping velocity (x, y)
+jump.back = -2.75,-7.625 ;Jump back Speed (x, y)
+jump.fwd = 2.265,-7.125 ;Jump forward Speed (x, y)
+runjump.back = -4.125 ;Running jump speeds (opt)
 runjump.fwd = 3.9375
 
 [Movement]
-yaccel = .537109375		; 0.34375 * (25.0/16.0)
-stand.friction = .828125	;Friction coefficient when standing
-crouch.friction = .828125	;Friction coefficient when crouching
+yaccel = .537109375 ; 0.34375 * (25.0/16.0)
+stand.friction = .828125 ;Friction coefficient when standing
+crouch.friction = .828125 ;Friction coefficient when crouching
 
 [Quotes]
 victory0 = "You are too weak! You can't even scratch my body!"
@@ -2977,7 +2977,7 @@ value = 35
 
 [State 810, State End]
 type = ChangeState
-trigger1 =  AnimTime = 0
+trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
@@ -3145,7 +3145,7 @@ value = 35
 
 [State 810, State End]
 type = ChangeState
-trigger1 =  AnimTime = 0
+trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
@@ -4073,7 +4073,7 @@ physics = N
 type = NULL;ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -4117,7 +4117,7 @@ trigger1 = Pos Y >= 0
 value = 5100 ;HIT_BOUNCE
 
 ;
-;                                    SPECIALS
+; SPECIALS
 ;
 
 ;----------------------------------------------------------------------------------
@@ -5186,7 +5186,7 @@ trigger1 = Pos Y + Vel Y >= 0
 value = 1205
 
 ;
-;                                      SUPERS
+; SUPERS
 ;
 ;----------------------------------------------------------------------------------
 ; Tiger Cannon
@@ -7815,7 +7815,7 @@ trigger2 = root,MoveType = H
 trigger3 = Anim = 2201 && AnimTime = 0
 
 ;
-;                                    ABILITIES
+; ABILITIES
 ;
 ;----------------------------------------------------------------------------------
 ; Roll
@@ -7883,7 +7883,7 @@ ctrl = 1
 [Statedef 310]
 type = S
 physics = S
-movetype =  I
+movetype = I
 anim = 310
 ctrl = 0
 velset = 0,0
@@ -7944,7 +7944,7 @@ ctrl = 1
 [Statedef 320]
 type = S
 physics = N
-movetype =  I
+movetype = I
 ctrl = 0
 velset = 0,0
 
@@ -8299,7 +8299,7 @@ trigger3 = Win
 trigger4 = EnemyNear, NumProj
 trigger5 = InGuardDist
 trigger6 = Time > 28-AILevel
-	trigger6 = Random%80 = 2
+ trigger6 = Random%80 = 2
 value = 901
 persistent = 0
 
@@ -8878,7 +8878,7 @@ triggerall = NumEnemy
 trigger1 = Enemy(0), Name = "cvsandy" || Enemy(0), Name = "cvsbison" || Enemy(0), Name = "cvsblanka" || Enemy(0), Name = "cvschunli" || Enemy(0), Name = "cvsdan" || Enemy(0), Name = "cvseagle"
 trigger2 = (Enemy(0), Name = "cvsgeese" && Enemy, PalNo = [1,6]) || Enemy(0), Name = "cvsgeese_normal" || Enemy(0), Name = "cvsguile" || Enemy(0), Name = "cvshaohmaru"
 trigger3 = (Enemy(0), Name = "cvsiori" && Enemy, PalNo = [1,6]) || Enemy(0), Name = "cvsiori_normal" || Enemy(0), Name = "cvsjoe" || (Enemy(0), Name = "cvsken" && Enemy, PalNo = [1,6])
-trigger4 =  Enemy(0), Name = "cvsken_normal" || Enemy(0), Name = "cvskim" || Enemy(0), Name = "cvsking" || Enemy(0), Name = "cvskyo" || Enemy(0), Name = "cvsmaki" || Enemy(0), Name = "cvsrock"
+trigger4 = Enemy(0), Name = "cvsken_normal" || Enemy(0), Name = "cvskim" || Enemy(0), Name = "cvsking" || Enemy(0), Name = "cvskyo" || Enemy(0), Name = "cvsmaki" || Enemy(0), Name = "cvsrock"
 trigger5 = (Enemy(0), Name = "cvsrugal" && (Enemy, PalNo = [1,6])) || Enemy(0), Name = "cvsrugal_normal" || Enemy(0), Name = "cvsryo" || (Enemy(0), Name = "cvsryu" && Enemy, PalNo = [1,6])
 trigger6 = Enemy(0), Name = "cvsryu_normal" || Enemy(0), Name = "cvssagat" || Enemy(0), Name = "cvsterry" || Enemy(0), Name = "cvstodo" || Enemy(0), Name = "cvsvice" || Enemy(0), Name = "cvsyamazaki"
 var(4) = 70
@@ -8911,7 +8911,7 @@ triggerall = Enemy(0), MoveType = H
 triggerall = Enemy(0), PrevStateNo != [5300,5350]
 trigger1 = Enemy(0), ID = PlayerID(root, Var(32)), ID
 trigger2 = root, NumTarget > 1 ; For cases where both opponents are hit at once
-var(6) = root, Var(49)         ; Stun will be the same in either case.
+var(6) = root, Var(49) ; Stun will be the same in either case.
 ignorehitpause = 1
 
 [State -2, Stun Timer]
@@ -8943,7 +8943,7 @@ triggerall = NumEnemy > 1
 trigger1 = Enemy(1), Name = "cvsandy" || Enemy(1), Name = "cvsbison" || Enemy(1), Name = "cvsblanka" || Enemy(1), Name = "cvschunli" || Enemy(1), Name = "cvsdan" || Enemy(1), Name = "cvseagle"
 trigger2 = (Enemy(1), Name = "cvsgeese" && Enemy, PalNo = [1,6]) || Enemy(1), Name = "cvsgeese_normal" || Enemy(1), Name = "cvsguile" || Enemy(1), Name = "cvshaohmaru"
 trigger3 = (Enemy(1), Name = "cvsiori" && Enemy, PalNo = [1,6]) || Enemy(1), Name = "cvsiori_normal" || Enemy(1), Name = "cvsjoe" || (Enemy(1), Name = "cvsken" && Enemy, PalNo = [1,6])
-trigger4 =  Enemy(1), Name = "cvsken_normal" || Enemy(1), Name = "cvskim" || Enemy(1), Name = "cvsking" || Enemy(1), Name = "cvskyo" || Enemy(1), Name = "cvsmaki" || Enemy(1), Name = "cvsrock"
+trigger4 = Enemy(1), Name = "cvsken_normal" || Enemy(1), Name = "cvskim" || Enemy(1), Name = "cvsking" || Enemy(1), Name = "cvskyo" || Enemy(1), Name = "cvsmaki" || Enemy(1), Name = "cvsrock"
 trigger5 = (Enemy(1), Name = "cvsrugal" && (Enemy, PalNo = [1,6])) || Enemy(1), Name = "cvsrugal_normal" || Enemy(1), Name = "cvsryo" || (Enemy(1), Name = "cvsryu" && Enemy, PalNo = [1,6])
 trigger6 = Enemy(1), Name = "cvsryu_normal" || Enemy(1), Name = "cvssagat" || Enemy(1), Name = "cvsterry" || Enemy(1), Name = "cvstodo" || Enemy(1), Name = "cvsvice" || Enemy(1), Name = "cvsyamazaki"
 var(5) = 70
@@ -8976,7 +8976,7 @@ triggerall = Enemy(1), MoveType = H
 triggerall = Enemy(1), PrevStateNo != [5300,5350]
 trigger1 = Enemy(1), ID = PlayerID(root, Var(32)), ID
 trigger2 = root, NumTarget > 1 ; For cases where both opponents are hit at once
-var(8) = root, Var(49)         ; Stun will be the same in either case.
+var(8) = root, Var(49) ; Stun will be the same in either case.
 ignorehitpause = 1
 
 [State -2, Stun Timer]
@@ -9030,7 +9030,7 @@ pos = root, Const(Size.Head.Pos.X), root, Const(Size.Head.Pos.Y)
 [State 0, VarSet]
 type = parentVarSet
 trigger1 = root,movetype=I 
-v = 1    ;fv = 10
+v = 1 ;fv = 10
 value = 0
 [State 0, AssertSpecial]
 type = AssertSpecial
@@ -9049,7 +9049,7 @@ ignorehitpause = 1
 type = VarSet
 trigger1 =var(10)>=0
 trigger2 =var(11)>=0
-v = 3   ;fv = 10
+v = 3 ;fv = 10
 value = 1
 ignorehitpause = 1
 [State 0, VarSet]
@@ -9060,7 +9060,7 @@ trigger3 = Var(12)>=0
 trigger4 = Var(13)>=0
 trigger5 = Var(20)>=0
 trigger6 = Var(21)>=0
-v = 2   ;fv = 10
+v = 2 ;fv = 10
 value = 1
 ignorehitpause = 1
 [State 0, VarSet]
@@ -9071,7 +9071,7 @@ trigger1 = Var(12)=0
 trigger1 = Var(13)=0
 trigger1 = Var(20)=0
 trigger1 = Var(21)=0
-v = 2   ;fv = 10
+v = 2 ;fv = 10
 value = 0
 ignorehitpause = 1
 
@@ -9079,7 +9079,7 @@ ignorehitpause = 1
 type = VarSet
 trigger1 =var(10)=0
 trigger1 =var(11)=0
-v = 3   ;fv = 10
+v = 3 ;fv = 10
 value = 0
 ignorehitpause = 1
 
@@ -9198,7 +9198,7 @@ ignorehitpause = 1
 [State 0, VarSet]
 type = VarSet
 trigger1 = root, Var(50) = 1
-v = 5   ;fv = 10
+v = 5 ;fv = 10
 value =0
 ignorehitpause = 1
 
@@ -9472,10 +9472,10 @@ triggerall = RoundState = 2
 trigger1 =numhelper(10003)=0
 helpertype = normal ;player
 name = "neutrality"
-ID =  10003
+ID = 10003
 stateno = 9999
 pos = Const(Size.Head.Pos.X), Const(Size.Head.Pos.Y)
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -9578,14 +9578,14 @@ type = VarSet
 triggerall = NumEnemy
 triggerall = (SysVar(3)&65535) = 0
 trigger1 = (var(5)&1073741824) = 1073741824
-trigger1 = Enemy(0), Name = "cvsdhalsim" || Enemy(0), Name = "cvsdan"  || Enemy(0), Name = "cvsgeese" || Enemy(0), Name = "cvsgeese_ex"
+trigger1 = Enemy(0), Name = "cvsdhalsim" || Enemy(0), Name = "cvsdan" || Enemy(0), Name = "cvsgeese" || Enemy(0), Name = "cvsgeese_ex"
 sysvar(3) = sysvar(3) | (60*(2**(random%3)))
 [State 777, Dizzy Time (small) (P2)]
 type = VarSet
 triggerall = NumEnemy
 triggerall = (SysVar(3)&65535) = 0
 trigger1 = (var(5)&1073741824) = 1073741824
-trigger1 = Enemy(0), Name = "cvszangief" || Enemy(0), Name = "cvsjoe"  || Enemy(0), Name = "cvschang" || Enemy(0), Name = "cvssieger"
+trigger1 = Enemy(0), Name = "cvszangief" || Enemy(0), Name = "cvsjoe" || Enemy(0), Name = "cvschang" || Enemy(0), Name = "cvssieger"
 trigger2 = Enemy(0), Name = "cvsalex" || Enemy(0), Name = "cvshugo"
 sysvar(3) = sysvar(3) | (30+(60*(2**(random%3))))
 [State 777, Dizzy Time (high-mid) (P2)]
@@ -9593,7 +9593,7 @@ type = VarSet
 triggerall = NumEnemy
 triggerall = (SysVar(3)&65535) = 0
 trigger1 = (var(5)&1073741824) = 1073741824
-trigger1 = Enemy(0), Name = "cvsbison" || Enemy(0), Name = "cvskyosuke"  || Enemy(0), Name = "cvsyun" || Enemy(0), Name = "cvsking"
+trigger1 = Enemy(0), Name = "cvsbison" || Enemy(0), Name = "cvskyosuke" || Enemy(0), Name = "cvsyun" || Enemy(0), Name = "cvsking"
 trigger2 = Enemy(0), Name = "cvsfelicia" || Enemy(0), Name = "cvschamcham"
 sysvar(3) = sysvar(3) | (90+(60*(2**(random%3))))
 [State 777, Dizzy Time (high) (P2)]
@@ -9601,7 +9601,7 @@ type = VarSet
 triggerall = NumEnemy
 triggerall = (SysVar(3)&65535) = 0
 trigger1 = (var(5)&1073741824) = 1073741824
-trigger1 = Enemy(0), Name = "cvsbalrog" || Enemy(0), Name = "cvsvega"  || Enemy(0), Name = "cvsmorrigan" || (Enemy(0), Name = "cvsryu" && Enemy(0), PalNo = [6,12])
+trigger1 = Enemy(0), Name = "cvsbalrog" || Enemy(0), Name = "cvsvega" || Enemy(0), Name = "cvsmorrigan" || (Enemy(0), Name = "cvsryu" && Enemy(0), PalNo = [6,12])
 trigger2 = Enemy(0), Name = "cvsryu_ex" || (Enemy(0), Name = "cvsgouki" && Enemy(0), PalNo = [6,12]) || Enemy(0), Name = "cvsgouki_ex" || Enemy(0), Name = "cvsiori"
 trigger3 = Enemy(0), Name = "cvsbenimaru" || Enemy(0), Name = "cvsnakoruru" || (Enemy(0), Name = "cvsrugal" && Enemy(0), PalNo = [6,12]) || Enemy(0), Name = "cvsg_rugal"
 trigger4 = Enemy(0), Name = "cvsrugal_ex" || Enemy(0), Name = "cvsgallon" || Enemy(0), Name = "cvsdemitri"
@@ -9622,14 +9622,14 @@ type = VarSet
 triggerall = (SysVar(3)&-65536) = 0
 triggerall = NumEnemy > 1
 trigger1 = (var(5)&-2147483648) = -2147483648
-trigger1 = Enemy(1), Name = "cvsdhalsim" || Enemy(1), Name = "cvsdan"  || Enemy(1), Name = "cvsgeese" || Enemy(1), Name = "cvsgeese_ex"
+trigger1 = Enemy(1), Name = "cvsdhalsim" || Enemy(1), Name = "cvsdan" || Enemy(1), Name = "cvsgeese" || Enemy(1), Name = "cvsgeese_ex"
 sysvar(3) = sysvar(3) | (65536*(60*(2**(random%3))))
 [State 777, Dizzy Time (small) (P4)]
 type = VarSet
 triggerall = (SysVar(3)&-65536) = 0
 triggerall = NumEnemy > 1
 trigger1 = (var(5)&-2147483648) = -2147483648
-trigger1 = Enemy(1), Name = "cvszangief" || Enemy(1), Name = "cvsjoe"  || Enemy(1), Name = "cvschang" || Enemy(1), Name = "cvssieger"
+trigger1 = Enemy(1), Name = "cvszangief" || Enemy(1), Name = "cvsjoe" || Enemy(1), Name = "cvschang" || Enemy(1), Name = "cvssieger"
 trigger2 = Enemy(1), Name = "cvsalex" || Enemy(1), Name = "cvshugo"
 sysvar(3) = sysvar(3) | (65536*(30+(60*(2**(random%3)))))
 [State 777, Dizzy Time (high-mid) (P4)]
@@ -9637,7 +9637,7 @@ type = VarSet
 triggerall = (SysVar(3)&-65536) = 0
 triggerall = NumEnemy > 1
 trigger1 = (var(5)&-2147483648) = -2147483648
-trigger1 = Enemy(1), Name = "cvsbison" || Enemy(1), Name = "cvskyosuke"  || Enemy(1), Name = "cvsyun" || Enemy(1), Name = "cvsking"
+trigger1 = Enemy(1), Name = "cvsbison" || Enemy(1), Name = "cvskyosuke" || Enemy(1), Name = "cvsyun" || Enemy(1), Name = "cvsking"
 trigger2 = Enemy(1), Name = "cvsfelicia" || Enemy(1), Name = "cvschamcham"
 sysvar(3) = sysvar(3) | (65536*(90+(60*(2**(random%3)))))
 [State 777, Dizzy Time (high) (P4)]
@@ -9645,7 +9645,7 @@ type = VarSet
 triggerall = (SysVar(3)&-65536) = 0
 triggerall = NumEnemy > 1
 trigger1 = (var(5)&-2147483648) = -2147483648
-trigger1 = Enemy(1), Name = "cvsbalrog" || Enemy(1), Name = "cvsvega"  || Enemy(1), Name = "cvsmorrigan" || (Enemy(1), Name = "cvsryu" && Enemy(1), PalNo = [6,12])
+trigger1 = Enemy(1), Name = "cvsbalrog" || Enemy(1), Name = "cvsvega" || Enemy(1), Name = "cvsmorrigan" || (Enemy(1), Name = "cvsryu" && Enemy(1), PalNo = [6,12])
 trigger2 = Enemy(1), Name = "cvsryu_ex" || (Enemy(1), Name = "cvsgouki" && Enemy(1), PalNo = [6,12]) || Enemy(1), Name = "cvsgouki_ex" || Enemy(1), Name = "cvsiori"
 trigger3 = Enemy(1), Name = "cvsbenimaru" || Enemy(1), Name = "cvsnakoruru" || (Enemy(1), Name = "cvsrugal" && Enemy(1), PalNo = [6,12]) || Enemy(1), Name = "cvsg_rugal"
 trigger4 = Enemy(1), Name = "cvsrugal_ex" || Enemy(1), Name = "cvsgallon" || Enemy(1), Name = "cvsdemitri"
@@ -9805,7 +9805,7 @@ ignorehitpause = 1
 type = VarSet
 trigger1 = Enemy, Name = "Felicia_LG"
 trigger1 = StateNo != 132 && StateNo != 155 ; Air guard
-trigger1 = StateNo != [5000,5999]           ; Gethits
+trigger1 = StateNo != [5000,5999] ; Gethits
 sysvar(0) = (-4 & 65535) | (-117 * 65536)
 
 ;----------------------------------------------------------------------------------
@@ -12651,7 +12651,7 @@ value = 0
 [State -2, Reset]
 type = Null
 triggerall = RoundState = 0
-trigger1 = e|| (var(5)  := var(5)&1073741823)
+trigger1 = e|| (var(5) := var(5)&1073741823)
 trigger1 = e|| (var(17) := 0)
 trigger1 = e|| (var(29) := 0)
 trigger1 = e|| (var(30) := 0)

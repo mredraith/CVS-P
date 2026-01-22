@@ -3095,179 +3095,179 @@ ctrl = 1
 
 ;// partner jump-out ; ???????
 [state 0]
-	type=selfstate
-	triggerall=!ishelper && numpartner && roundstate=2
-	triggerall=(stateno!=[190190,190199]) && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
-	triggerall=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(22)=4
-	;;---// change ;(??)
-	trigger1=sysfvar(4)<1 && movetype!=h && gethitvar(isbound)=0 && (pos y>=0) && (ctrl||(stateno<600&&time<2)) && (playerid(floor(sysfvar(0))),var(48)=11)
-	;;---// as partner-asist ;(??)
-	trigger2=sysfvar(4)>0 && (movetype!=h||(stateno=[120,149])) && (ctrl||stateno<600)
-	;;---// player priority ;(??)
-	trigger3=sysfvar(4)<1 && playerid(floor(sysfvar(0))),var(15)!=id
-	value=190190
-	ignorehitpause=1
+ type=selfstate
+ triggerall=!ishelper && numpartner && roundstate=2
+ triggerall=(stateno!=[190190,190199]) && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
+ triggerall=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(22)=4
+ ;;---// change ;(??)
+ trigger1=sysfvar(4)<1 && movetype!=h && gethitvar(isbound)=0 && (pos y>=0) && (ctrl||(stateno<600&&time<2)) && (playerid(floor(sysfvar(0))),var(48)=11)
+ ;;---// as partner-asist ;(??)
+ trigger2=sysfvar(4)>0 && (movetype!=h||(stateno=[120,149])) && (ctrl||stateno<600)
+ ;;---// player priority ;(??)
+ trigger3=sysfvar(4)<1 && playerid(floor(sysfvar(0))),var(15)!=id
+ value=190190
+ ignorehitpause=1
 
 ;// edited life & power bar ; ?????
 [state 0]
-	type=helper
-	triggerall=!ishelper && !numhelper(90900)
-	trigger1=numpartner
-	trigger1=id<(partner,id) && partner,numhelper(90900)=0
-	trigger2=!numpartner
-	id=90900
-	stateno=90900
-	helpertype=normal
-	ownpal=1
-	size.air.front=1602150 ;; <<-version
-	size.height=0 ;; 1;; <<-powerbar off mode
-	ignorehitpause=1
-	supermovetime=88888
-	pausemovetime=88888
-	pos=0,88888
+ type=helper
+ triggerall=!ishelper && !numhelper(90900)
+ trigger1=numpartner
+ trigger1=id<(partner,id) && partner,numhelper(90900)=0
+ trigger2=!numpartner
+ id=90900
+ stateno=90900
+ helpertype=normal
+ ownpal=1
+ size.air.front=1602150 ;; <<-version
+ size.height=0 ;; 1;; <<-powerbar off mode
+ ignorehitpause=1
+ supermovetime=88888
+ pausemovetime=88888
+ pos=0,88888
 
 ;// input players id ; ID??
 [state 0]
-	type=varset
-	trigger1=!ishelper && numhelper(90900)
-	trigger1=(helper(90900),var(0)=90900) && (sysfvar(0)!=helper(90900),id)
-	sysfvar(0)=(helper(90900),id)
+ type=varset
+ trigger1=!ishelper && numhelper(90900)
+ trigger1=(helper(90900),var(0)=90900) && (sysfvar(0)!=helper(90900),id)
+ sysfvar(0)=(helper(90900),id)
 [state 0]
-	type=varset
-	trigger1=!ishelper && numpartner
-	trigger1=!numhelper(90900) && (partner,numhelper(90900)) && (sysfvar(0)!=(partner,sysfvar(0)))
-	sysfvar(0)=(partner,sysfvar(0))
+ type=varset
+ trigger1=!ishelper && numpartner
+ trigger1=!numhelper(90900) && (partner,numhelper(90900)) && (sysfvar(0)!=(partner,sysfvar(0)))
+ sysfvar(0)=(partner,sysfvar(0))
 
 ;// bk/jd system ; ?????/????D
 [state 0]
-	type=hitoverride
-	trigger1=(numprojid(195502)||numprojid(195503)) && !ishelper && roundstate=2 && alive && (ctrl || stateno=52)
-	attr=sca,na,sa,ha,np,sp,hp
-	stateno=195500
-	time=1
-	ignorehitpause=1
+ type=hitoverride
+ trigger1=(numprojid(195502)||numprojid(195503)) && !ishelper && roundstate=2 && alive && (ctrl || stateno=52)
+ attr=sca,na,sa,ha,np,sp,hp
+ stateno=195500
+ time=1
+ ignorehitpause=1
 
 ;//==
 ;;>>@Config.Face>>
 ;; face / portrait (?)
 [state 0]
-	type=explod
-	trigger1=!ishelper && roundstate=2 && alive && !numexplod(490600) && selfanimexist(909002)
-	trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),numexplod(490600)
-	id=490600
-	anim=909002
-	space=screen
-	postype=left
-	facing=ifelse(teamside=1,1,-1)
-	scale=0,0 ;; <- default
-	ownpal=1
-	bindtime=-1
-	removetime=-1
-	ignorehitpause=1
-	supermovetime=-1
-	pausemovetime=-1
+ type=explod
+ trigger1=!ishelper && roundstate=2 && alive && !numexplod(490600) && selfanimexist(909002)
+ trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),numexplod(490600)
+ id=490600
+ anim=909002
+ space=screen
+ postype=left
+ facing=ifelse(teamside=1,1,-1)
+ scale=0,0 ;; <- default
+ ownpal=1
+ bindtime=-1
+ removetime=-1
+ ignorehitpause=1
+ supermovetime=-1
+ pausemovetime=-1
 
 [state 0] ;; player is NOT in a custom state 
-	type=modifyexplod
-	trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900
-	trigger1=movetype!=h || (stateno=[120,159]) || (stateno=[5000,5199]) || (stateno=[190190,190196])
-	id=490600
-	scale=playerid(floor(sysfvar(0))),fvar(32-(id=playerid(floor(sysfvar(0))),var(15))*10), playerid(floor(sysfvar(0))),fvar(33-(id=playerid(floor(sysfvar(0))),var(15))*10)
-	ignorehitpause=1
+ type=modifyexplod
+ trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ trigger1=movetype!=h || (stateno=[120,159]) || (stateno=[5000,5199]) || (stateno=[190190,190196])
+ id=490600
+ scale=playerid(floor(sysfvar(0))),fvar(32-(id=playerid(floor(sysfvar(0))),var(15))*10), playerid(floor(sysfvar(0))),fvar(33-(id=playerid(floor(sysfvar(0))),var(15))*10)
+ ignorehitpause=1
 
 [state 0]
-	type=modifyexplod
-	trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900
-	id=490600
-	space=screen
-	postype=left
-	pos=floor(const240p(playerid(floor(sysfvar(0))),fvar(30-(id=playerid(floor(sysfvar(0))),var(15))*10))), floor(const240p(playerid(floor(sysfvar(0))),fvar(31-(id=playerid(floor(sysfvar(0))),var(15))*10) -(roundstate!=2||(!alive&&stateno=5150))*88888))
+ type=modifyexplod
+ trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ id=490600
+ space=screen
+ postype=left
+ pos=floor(const240p(playerid(floor(sysfvar(0))),fvar(30-(id=playerid(floor(sysfvar(0))),var(15))*10))), floor(const240p(playerid(floor(sysfvar(0))),fvar(31-(id=playerid(floor(sysfvar(0))),var(15))*10) -(roundstate!=2||(!alive&&stateno=5150))*88888))
 ;;(* if the player has been placed in a custom state, the result of "scale" is affected" by the different player's local coordinate space
-	sprpriority=floor(playerid(floor(sysfvar(0))),fvar(36-(id=playerid(floor(sysfvar(0))),var(15))*10))
-	trans=addalpha
-	alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
-	ignorehitpause=1
+ sprpriority=floor(playerid(floor(sysfvar(0))),fvar(36-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ trans=addalpha
+ alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ ignorehitpause=1
 
 ;//==
 ;;>>@Config.Camera>>
 ;; change camera / ????
 [state 0]
-	type=screenbound
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
-	value=0
-	movecamera=0,0
-	ignorehitpause=1
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ movecamera=0,0
+ ignorehitpause=1
 [state 0]
-	type=playerpush
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
-	value=0
-	ignorehitpause=1
+ type=playerpush
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ ignorehitpause=1
 [state 0]
-	type=screenbound
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && (playerid(floor(sysfvar(0))),var(7)&65536) ;; system_switch
-	value= ((numpartner && sysfvar(4)<1) || !numpartner) ;; [def=0]
-	movecamera=0,0 ;; [x,y]
-	ignorehitpause=1
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && (playerid(floor(sysfvar(0))),var(7)&65536) ;; system_switch
+ value= ((numpartner && sysfvar(4)<1) || !numpartner) ;; [def=0]
+ movecamera=0,0 ;; [x,y]
+ ignorehitpause=1
 
 ;//==
 ;; optional settings
 ;//==
 ;;--- guard crush ; ????????
 [state 0]
-	type=palfx
-	trigger1=(stateno=150 || stateno=152) && alive && !ishelper && (gametime%5=0) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=40)
-	time=2
-	add=200,0,0
+ type=palfx
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && (gametime%5=0) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=40)
+ time=2
+ add=200,0,0
 [state 0]
-	type=changestate
-	trigger1=(stateno=150 || stateno=152) && alive && !ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=50)
-	value=190010
-	ignorehitpause=1
+ type=changestate
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=50)
+ value=190010
+ ignorehitpause=1
 ;;--- dizzy
 [state 0]
-	type=changestate
-	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;-dizzy birds
-	value=190116 ;;- goto dizzy/stun state
+ type=changestate
+ trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;-dizzy birds
+ value=190116 ;;- goto dizzy/stun state
 ;;--- fadeout when KOed ; KO????
 [state 0]
-	type=varset
-	trigger1=stateno=5150 && time=1 && alive=0 && !ishelper && numpartner
-	sysvar(1)=(roundstate<=2)
+ type=varset
+ trigger1=stateno=5150 && time=1 && alive=0 && !ishelper && numpartner
+ sysvar(1)=(roundstate<=2)
 [state 0]
-	type=assertspecial
-	trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
-	flag=invisible
-	flag2=noshadow
+ type=assertspecial
+ trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
+ flag=invisible
+ flag2=noshadow
 [state 0]
-	type=posset
-	trigger1=stateno=5150 && time>=80 && alive=0 && !ishelper && numpartner && sysvar(1)
-	y=(800-partner,pos y) *(((time=[80,150]) && time%10<5) || time>150)
+ type=posset
+ trigger1=stateno=5150 && time>=80 && alive=0 && !ishelper && numpartner && sysvar(1)
+ y=(800-partner,pos y) *(((time=[80,150]) && time%10<5) || time>150)
 
 ;;--- pos reset debug (for mugen only) ---
 [state 0]
-	type=turn
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>1 && facing=ifelse(teamside=1,-1,1)
+ type=turn
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && facing=ifelse(teamside=1,-1,1)
 [state 0]
-	type=posset
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>1 && playeridexist(id-2)
-	trigger1=playerid(id-2),ishelper=0 && playerid(id-2),teamside=teamside
-	x=const240p(120)*ifelse(teamside=1,-1,1)
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && playeridexist(id-2)
+ trigger1=playerid(id-2),ishelper=0 && playerid(id-2),teamside=teamside
+ x=const240p(120)*ifelse(teamside=1,-1,1)
 [state 0]
-	type=posset
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
-	trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
-	x=const240p(144)*ifelse(teamside=1,-1,1)
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
+ trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
+ x=const240p(144)*ifelse(teamside=1,-1,1)
 ;//==
 ;//==
 
@@ -3732,7 +3732,7 @@ ignorehitpause=1
 trigger1 = 1
 type = DisplayToClipboard
 ignorehitpause = 1
-text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
 params = fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]
@@ -3982,7 +3982,7 @@ trigger4 = var(20) && stateno = 1000 && animelemtime(12) > 1
 trigger5 = var(20) && stateno = 1010 && animelemtime(1) > 1
 trigger6 = var(20) && stateno = 1050 && animelemtime(6) > 1
 trigger7 = var(20) && stateno = 1100 && movecontact
-trigger8 = var(20) && (stateno =  [1200,1300]) && movecontact
+trigger8 = var(20) && (stateno = [1200,1300]) && movecontact
 trigger9 = var(20) && (stateno = 450) && movecontact
 trigger10 = (stateno = [200, 250]) && movecontact && stateno!=221 && !var(55)
 trigger10 = anim!=220

@@ -101,7 +101,7 @@ ctrl = 1
 type = S
 movetype = I
 physics = N
-anim = 110	; <- You can use the standard running animation or put another one
+anim = 110 ; <- You can use the standard running animation or put another one
 sprpriority = 2
 ctrl = 0
 
@@ -266,7 +266,7 @@ value = 4511
 type = S
 movetype = I
 physics = N
-anim = 40	; <- Jump Start animation
+anim = 40 ; <- Jump Start animation
 sprpriority = -2
 ctrl = 0
 

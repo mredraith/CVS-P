@@ -1803,7 +1803,7 @@ y = 0
 
 [State 3205, Friction]
 type = VelMul
-trigger1 = Time = 0  
+trigger1 = Time = 0 
 y = 0.75
 
 [State 3205, Friction]
@@ -1813,7 +1813,7 @@ x = 0.75
 
 [State 3205, Velocity]
 type = VelSet
-trigger1 = Time = 0  
+trigger1 = Time = 0 
 y = -vel y
 
 [State 3205, Gravity] ;Acceleration
@@ -1860,7 +1860,7 @@ ctrl = 0
 
 [State 3206, Ground Hit Snd]
 type = PlaySnd
-trigger1 = Time = 0  
+trigger1 = Time = 0 
 value = 5000,11;f7,0
 
 [State 3206, ChangeAnim] ;Hit ground anim (normal)

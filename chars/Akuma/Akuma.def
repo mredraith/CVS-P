@@ -7,20 +7,20 @@ name ="Akuma"
 displayname ="Akuma"
 versiondate =04,14,2002
 mugenversion =1.0
-author ="DivineWolf"     ;Patched by Trololo
+author ="DivineWolf" ;Patched by Trololo
 pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
 localcoord = 427,240
 
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =Command.cmd
-cns     =States/System.cns
-st      =States/System.cns
+cmd =Command.cmd
+cns =States/System.cns
+st =States/System.cns
 stcommon =common1.cns
-sprite  =Sprite.sff
-anim    =Anim.air
-sound   =Sound.snd
+sprite =Sprite.sff
+anim =Anim.air
+sound =Sound.snd
 pal1 = Palettes/act001.act
 pal2 = Palettes/Knuckles9.act
 pal3 = Palettes/TDX_MKvSF.act

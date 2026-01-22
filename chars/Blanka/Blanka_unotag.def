@@ -4,23 +4,23 @@
 
 
 [Info]
-name        ="Blanka"
+name ="Blanka"
 displayName ="Blanka"
 versionDate =24,02,2015
 mugenVersion=1.0
-author      ="varo_hades"
+author ="varo_hades"
 pal.defaults=1,2,3,4,5,6,7,8,9,10,11,12
 localCoord = 320,240
 
 [Files]
 movelist = Blanka_unotag\movelist.dat
-cmd     =Blanka_unotag\Command.cmd
-cns     =ConstantsCvS.cns
-st      =Blanka_unotag\System.st
+cmd =Blanka_unotag\Command.cmd
+cns =ConstantsCvS.cns
+st =Blanka_unotag\System.st
 stCommon=common1.cns
-sprite  =Sprite.sff
-anim    =Anim.air
-sound   =Sound.snd
+sprite =Sprite.sff
+anim =Anim.air
+sound =Sound.snd
 pal1=Palettes\SF_2.act
 pal2=Palettes\SF2_CE.act
 pal3=Palettes\SF2_HF.act
@@ -37,7 +37,7 @@ st1=States\Normal.st
 st2=States\Special.st
 st3=States\Super.st
 st4=States\Helpers.st
-	
+ 
 
 
 

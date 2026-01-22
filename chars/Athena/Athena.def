@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineAthena.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineAthena.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineAthena.sff
-anim    =DivineAthena.air
-sound   =DivineAthena.snd
+sprite =DivineAthena.sff
+anim =DivineAthena.air
+sound =DivineAthena.snd
 pal1=Colors/Gogngos_RedStarlite.act
 pal2=Colors/Girard_LightampDark.act
 pal3=Colors/Froz_DefaultAlt.act

@@ -102,7 +102,7 @@ helperType=Normal
 stateNo=ifElse(MoveGuarded, 8000, 8011)
 ID=8000
 name="Spark"
-pos =  (target, const(size.ground.front) +30), -70
+pos = (target, const(size.ground.front) +30), -70
 facing=-1
 ownPal=1
 size.xScale=1
@@ -249,7 +249,7 @@ helperType=Normal
 stateNo=ifElse(MoveGuarded, 8000, 8011)
 ID=8000
 name="Spark"
-pos =  (target, const(size.ground.front) +30), -70
+pos = (target, const(size.ground.front) +30), -70
 facing=-1
 ownPal=1
 size.xScale=1
@@ -309,7 +309,7 @@ triggerall = parent, stateno != 1000 && parent, stateno != 1001 && parent, state
 trigger1 = time=0
 anim = 7500
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -328,7 +328,7 @@ triggerall = parent, stateno = 1000 || parent, stateno = 1001 || parent, stateno
 trigger1 = time=0
 anim = 7500
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -346,7 +346,7 @@ triggerall = parent, palno>4
 trigger1 = time=0
 anim = 7500
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Rugal by varo_hades				 |
+;| Rugal by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 
@@ -40,7 +40,7 @@ st2=States/Special.st
 st3=States/Super.st
 st4=States/Helpers.st
 st5=States/GodRugal.st
-	
+ 
 [Arcade]
 intro.storyBoard= 
 ending.storyBoard=

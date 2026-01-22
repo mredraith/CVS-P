@@ -125,8 +125,8 @@ ground.hittime = 12
 ground.velocity = 2
 air.velocity = 0
 air.hittime = 12
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 forcestand=1
 getpower = 0
 numhits=0
@@ -827,8 +827,8 @@ ground.hittime = 12
 ground.velocity = 2
 air.velocity = 0
 air.hittime = 12
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 forcestand=1
 getpower = 0
 numhits=0
@@ -3232,7 +3232,7 @@ sparkNo = -1 + 0 * (var(33) := 8020)
 hitsound = S2,1
 numhits = 0
 p1stateno = 4200
-	      
+ 
 [State 3100, End]
 type = ChangeState
 trigger1 = !AnimTime 
@@ -3382,7 +3382,7 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 25
 envshake.ampl = 7
 envShake.freq = 176
-fall.envshake.ampl = 6       
+fall.envshake.ampl = 6 
 fall.envshake.freq = 178
 fall.envshake.time = 15
 
@@ -3431,7 +3431,7 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 25
 envshake.ampl = 7
 envShake.freq = 176
-fall.envshake.ampl = 6       
+fall.envshake.ampl = 6 
 fall.envshake.freq = 178
 fall.envshake.time = 15
 

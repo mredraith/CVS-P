@@ -1,12 +1,12 @@
 ;VARIABLE LIST=
 
-;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
-;var(4)  : Chain Combo (0 = Off; 1 = On)
+;var(3) : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4) : Chain Combo (0 = Off; 1 = On)
 
-;var(6)  : Cancel Flag
-;var(7)  : Able to Super Cancel
-;var(8)  : Able to Hyper Cancel
-;var(9)  : Counter Flag
+;var(6) : Cancel Flag
+;var(7) : Able to Super Cancel
+;var(8) : Able to Hyper Cancel
+;var(9) : Counter Flag
 ;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Heavy)
 
 ;var(13) : Hit Count
@@ -48,7 +48,7 @@
 
 
 ; _________________________________________
-;| Guile by Jmorphman                      |
+;| Guile by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;CONSTANTS=
 [Data]
@@ -237,7 +237,7 @@ victory79 = "Go home and be a schoolgirl. I don't have time for games."
 
 ;Ken
 victory80 = "If you doubt yourself, then go home. No shame in running if you have to."
-victory81 =  "You don't have what it takes. Go home and be a family man."
+victory81 = "You don't have what it takes. Go home and be a family man."
 
 ;Makoto
 victory82 = "Keep losing like that and you'll ruin your dojo's image, kid."

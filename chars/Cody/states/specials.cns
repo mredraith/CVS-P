@@ -57,7 +57,7 @@ Supermovetime = -1
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
-ctrl = 1  
+ctrl = 1 
 
 ;Bad Stone/Knife throw
 [Statedef 1000]

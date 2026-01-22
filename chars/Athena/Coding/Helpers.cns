@@ -1385,7 +1385,7 @@ ignorehitpause =1
 
 [State 1535, Keep Alive State]
 type= ChangeState
-trigger1 = Root,StateNo=3000 || Root,StateNo=3100 || Root,StateNo=3300 ||  Root,StateNo=3400
+trigger1 = Root,StateNo=3000 || Root,StateNo=3100 || Root,StateNo=3300 || Root,StateNo=3400
 value = 13000
 ignorehitpause = 1
 

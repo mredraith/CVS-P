@@ -1340,7 +1340,7 @@ trigger2 = AnimElem = 13
 trigger3 = AnimElem = 22
 trigger4 = AnimElem = 46
 attr = S, HA
-damage    =30
+damage =30
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -1372,7 +1372,7 @@ palfx.mul = 128,128,128
 type = HitDef
 trigger1 = AnimElem = 30
 attr = S, HA
-damage    =30
+damage =30
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -1404,7 +1404,7 @@ palfx.mul = 128,128,128
 type = HitDef
 trigger1 = AnimElem = 35
 attr = S, HA
-damage    =30
+damage =30
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -1436,7 +1436,7 @@ palfx.mul = 128,128,128
 type = HitDef
 trigger1 = AnimElem = 40
 attr = S, HA
-damage    =30
+damage =30
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -1468,7 +1468,7 @@ palfx.mul = 128,128,128
 type = HitDef
 trigger1 = AnimElem = 55
 attr = S, HA
-damage    =30
+damage =30
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -1500,7 +1500,7 @@ palfx.mul = 128,128,128
 type = HitDef
 trigger1 = AnimElem = 64
 attr = S, HA
-damage    =30
+damage =30
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -2699,7 +2699,7 @@ trigger2 = AnimElem = 13
 trigger3 = AnimElem = 22
 trigger4 = AnimElem = 47
 attr = S, HA
-damage    =25
+damage =25
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -2734,7 +2734,7 @@ envShake.freq=120
 type = HitDef
 trigger1 = AnimElem = 30
 attr = S, HA
-damage    =25
+damage =25
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -2769,7 +2769,7 @@ envShake.freq=120
 type = HitDef
 trigger1 = AnimElem = 35
 attr = S, HA
-damage    =25
+damage =25
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -2804,7 +2804,7 @@ envShake.freq=120
 type = HitDef
 trigger1 = AnimElem = 40
 attr = S, HA
-damage    =25
+damage =25
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -2839,7 +2839,7 @@ envShake.freq=120
 type = HitDef
 trigger1 = AnimElem = 55
 attr = S, HA
-damage    =25
+damage =25
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -2874,7 +2874,7 @@ envShake.freq=120
 type = HitDef
 trigger1 = AnimElem = 64
 attr = S, HA
-damage    =25
+damage =25
 animtype = Hard
 guardflag = M
 hitflag = MAF
@@ -3160,11 +3160,11 @@ value= 3525
 type = HitDef
 trigger1 = AnimElem = 112
 trigger2 = AnimElem = 113 && !Movecontact && !movereversed
-attr = C,HA        
-hitflag = MAF       
-guardflag = M         
-animtype = Hard         
-priority = 4, Hit   
+attr = C,HA 
+hitflag = MAF 
+guardflag = M 
+animtype = Hard 
+priority = 4, Hit 
 damage = 75, 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
@@ -3214,7 +3214,7 @@ channel=0
 [State 0, AssertSpecial]
 type = AssertSpecial
 trigger1 = 1
-flag =  noautoturn
+flag = noautoturn
 
 [State 200,Exit]
 type = ChangeState

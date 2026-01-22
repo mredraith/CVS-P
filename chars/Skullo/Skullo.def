@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineSkullo.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineSkullo.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineSkullo.sff
-anim    =DivineSkullo.air
-sound   =DivineSkullo.snd
+sprite =DivineSkullo.sff
+anim =DivineSkullo.air
+sound =DivineSkullo.snd
 pal1=Colors/W&B.act
 pal2=Colors/B&W.act
 pal3=Colors/CGU_Custom1.act

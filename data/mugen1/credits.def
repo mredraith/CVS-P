@@ -11,26 +11,26 @@ localcoord = 320,240
 
 [SceneDef]
 spr = credits.sff
-startscene = 0         ;Starting scene number (for debugging)
+startscene = 0 ;Starting scene number (for debugging)
 
 ;------------------------------------
 [Scene 0]
 ; Fade
 fadeout.time = 90
-fadeout.col = 0,0,0    ;Use 255,255,255 for white-fade
+fadeout.col = 0,0,0 ;Use 255,255,255 for white-fade
 ; Screen color
 clearcolor = 0,0,0
 ; BG
 bg.name = BG0
 ; Overlay Anims (from 0 to 9)
-layerall.pos = 0,0     ;Default position for all layers
-layer0.anim =  10      ;Anim action number
-layer0.offset = 0,24   ;Position offset
-layer0.starttime = 0   ;Time to start display
-layer1.anim =  11
+layerall.pos = 0,0 ;Default position for all layers
+layer0.anim = 10 ;Anim action number
+layer0.offset = 0,24 ;Position offset
+layer0.starttime = 0 ;Time to start display
+layer1.anim = 11
 layer1.offset = 0,215
 ; Music
-bgm = credits.mp3      ;Name of music file to play
+bgm = credits.mp3 ;Name of music file to play
 bgm.loop = 0
 ; Total time
 end.time = 1600

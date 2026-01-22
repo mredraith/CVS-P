@@ -58,7 +58,7 @@ ownpal = 1
 [State 1000, StateTypeSet]
 type = StateTypeSet
 trigger1 =animelem=12
-statetype = A      
+statetype = A 
 [State 1000, VelSet]
 type = VelSet
 trigger1 =animelem=12
@@ -223,7 +223,7 @@ ownpal = 1
 [State 1025, StateTypeSet]
 type = StateTypeSet
 trigger1 =animelem=12
-statetype = A      
+statetype = A 
 [State 1025, VelSet]
 type = VelSet
 trigger1 =animelem=12
@@ -311,7 +311,7 @@ type=PlaySnd
 trigger1=Animelem=5
 value=1000,1
 channel=4
-    
+ 
 [State 1050, VelSet]
 type = VelSet
 trigger1 =animelem=6

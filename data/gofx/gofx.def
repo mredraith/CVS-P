@@ -3,11 +3,11 @@
 ; If you're installing or developing your own fightfx, and it already includes custom animations for Ikemen's functions, you can disable this file from config.json.
 
 [Info]
-prefix = GO           ; This prefix is to be used instead of "F" when calling animations or sounds from this file
-fx.scale = 1          ; For quick adjustment of effects scale
+prefix = GO ; This prefix is to be used instead of "F" when calling animations or sounds from this file
+fx.scale = 1 ; For quick adjustment of effects scale
 localcoord = 320, 240 ; For automatic adjustment between effect and lifebar scale
 
 [Files]
-sff = gofx.sff        ; Complementary to fightfx.sff
-air = gofx.air        ; Complementary to fighfx.air
-snd = gofx.snd        ; Complementary to common.snd
+sff = gofx.sff ; Complementary to fightfx.sff
+air = gofx.air ; Complementary to fighfx.air
+snd = gofx.snd ; Complementary to common.snd

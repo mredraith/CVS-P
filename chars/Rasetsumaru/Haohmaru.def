@@ -25,19 +25,19 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Flowrellik_CrimsonRonin.act
-pal2	= Palettes/Knuckles8864_SamShoVColor3.act
-pal3	= Palettes/sabockee_Custom4.act
-pal4	= Palettes/default.act
-pal5	= Palettes/Knuckles8864_SamuraiJack.act
-pal6	= Palettes/sabockee_Custom9.act
-pal7	= Palettes/Knuckles8864_Dante.act
-pal8	= Palettes/Flowrellik_RasetsuOni.act
-pal9	= Palettes/Knuckles8864_MadJack.act
-pal10	= Palettes/Flowrellik_Rasetsumaru.act
-pal11	= Palettes/MCX_SvCGhost.act
-pal12	= Palettes/Flowrellik_Pandora.act
-	
+pal1 = Palettes/Flowrellik_CrimsonRonin.act
+pal2 = Palettes/Knuckles8864_SamShoVColor3.act
+pal3 = Palettes/sabockee_Custom4.act
+pal4 = Palettes/default.act
+pal5 = Palettes/Knuckles8864_SamuraiJack.act
+pal6 = Palettes/sabockee_Custom9.act
+pal7 = Palettes/Knuckles8864_Dante.act
+pal8 = Palettes/Flowrellik_RasetsuOni.act
+pal9 = Palettes/Knuckles8864_MadJack.act
+pal10 = Palettes/Flowrellik_Rasetsumaru.act
+pal11 = Palettes/MCX_SvCGhost.act
+pal12 = Palettes/Flowrellik_Pandora.act
+ 
 ;[Arcade]
 ;intro.storyBoard = intro.def
 ;ending.storyBoard = ending.def

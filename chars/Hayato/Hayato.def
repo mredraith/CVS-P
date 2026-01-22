@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Hayato by varo_hades				 |
+;| Hayato by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 
@@ -40,7 +40,7 @@ st2=States/Special.st
 st3=States/Super.st
 st4=States/Helpers.st
 st5=States/sword.cns
-	
+ 
 [Arcade]
 intro.storyBoard=
 ending.storyBoard=

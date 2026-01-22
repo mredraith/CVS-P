@@ -14,9 +14,9 @@ localCoord = 320,240
 
 [Files]
 movelist = K'_unotag\movelist.dat
-cmd     =K'_unotag\Command.cmd
+cmd =K'_unotag\Command.cmd
 cns = Constants.cns
-st      =K'_unotag\System.st
+st =K'_unotag\System.st
 st1 = States\Normal.st
 st2 = States\Special.st
 st3 = States\Super.st
@@ -25,19 +25,19 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes\sabockee_Custom2.act
-pal2	= Palettes\Gognos_WhiteLeather.act
-pal3	= Palettes\sabockee_Custom7.act
-pal4	= Palettes\Default.act
-pal5	= Palettes\Flowrellik_PurpleChillpill.act
-pal6	= Palettes\Knuckles8864_Ezreal.act
-pal7	= Palettes\Flowrellik_DefaultAsphalt.act
-pal8	= Palettes\sabockee_Custom4.act
-pal9	= Palettes\Girard_PurpleLeather.act
-pal10	= Palettes\R@CEAKIR@_K'LeanGreen.act
-pal11	= Palettes\TheFisherKing_Custom1.act
-pal12	= Palettes\Flowrellik_EnderTempest.act
-	
+pal1 = Palettes\sabockee_Custom2.act
+pal2 = Palettes\Gognos_WhiteLeather.act
+pal3 = Palettes\sabockee_Custom7.act
+pal4 = Palettes\Default.act
+pal5 = Palettes\Flowrellik_PurpleChillpill.act
+pal6 = Palettes\Knuckles8864_Ezreal.act
+pal7 = Palettes\Flowrellik_DefaultAsphalt.act
+pal8 = Palettes\sabockee_Custom4.act
+pal9 = Palettes\Girard_PurpleLeather.act
+pal10 = Palettes\R@CEAKIR@_K'LeanGreen.act
+pal11 = Palettes\TheFisherKing_Custom1.act
+pal12 = Palettes\Flowrellik_EnderTempest.act
+ 
 
 
 

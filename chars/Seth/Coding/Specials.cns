@@ -393,7 +393,7 @@ faceP2 = 1
 [State 1100, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((command = "z" || command = "rlsz"  || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
+var(10) = ifElse((command = "z" || command = "rlsz" || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
 
 [State 1100, NotHitBy]
 type = NotHitBy
@@ -1234,7 +1234,7 @@ fall.recover = 0
 [State 1100, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((command = "z" || command = "rlsz"  || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
+var(10) = ifElse((command = "z" || command = "rlsz" || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
 
 [State 1200,PlaySnd]
 type = PlaySnd
@@ -1286,7 +1286,7 @@ fall.recover = 0
 [State 1100, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((command = "z" || command = "rlsz"  || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
+var(10) = ifElse((command = "z" || command = "rlsz" || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
 
 [State 1200,PlaySnd]
 type = PlaySnd
@@ -1576,7 +1576,7 @@ sprpriority = 2
 [State 1100, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((command = "z" || command = "rlsz"  || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
+var(10) = ifElse((command = "z" || command = "rlsz" || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
 
 [State 805, miss]
 type = playsnd

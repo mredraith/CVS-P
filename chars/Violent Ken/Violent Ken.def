@@ -25,12 +25,12 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/ViolentDefault.act
-pal2	= Palettes/MalaDingDong_Evil.act
-pal3	= Palettes/Cyclysm_SVCArt2.act
-pal4	= Palettes/MalaDingDong_SFI.act
-pal5	= Palettes/Kirishima_Cartoon.act
-pal6	= Palettes/MalaDingDong_SFA.act
+pal1 = Palettes/ViolentDefault.act
+pal2 = Palettes/MalaDingDong_Evil.act
+pal3 = Palettes/Cyclysm_SVCArt2.act
+pal4 = Palettes/MalaDingDong_SFI.act
+pal5 = Palettes/Kirishima_Cartoon.act
+pal6 = Palettes/MalaDingDong_SFA.act
 
 [Palette Keymap]
 a = 4

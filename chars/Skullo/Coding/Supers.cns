@@ -126,8 +126,8 @@ y = -20
 [State 3000, StateTypeSet: Air, No Phys]
 type = StateTypeSet
 trigger1 = AnimElemTime(3) >= 0
-statetype = A       
-physics = N         
+statetype = A 
+physics = N 
 
 [State 3000, Velocity]
 type = VelSet
@@ -638,8 +638,8 @@ y = -20
 [State 3050, StateTypeSet: Air, No Phys]
 type = StateTypeSet
 trigger1 = AnimElemTime(3) >= 0
-statetype = A       
-physics = N         
+statetype = A 
+physics = N 
 
 [State 3050, Velocity]
 type = VelSet
@@ -2606,7 +2606,7 @@ trigger1 = !Time
 anim = 3560
 ID = 3560
 pos = 160,120
-postype = left  ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

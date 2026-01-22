@@ -1,4 +1,4 @@
-;         CUSTOM STATES         =
+; CUSTOM STATES =
 
 ; Palette Selector ON/OFF =
 
@@ -6,7 +6,7 @@
 
 ; Ground Bounce =
 
-;p2stateno = 242  ;Ground bounce state
+;p2stateno = 242 ;Ground bounce state
 
 ; Wall Bounce =
 
@@ -440,7 +440,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;custom animation
+value = 4020 ;custom animation
 
 [State 0, ChangeState]
 type = changeState

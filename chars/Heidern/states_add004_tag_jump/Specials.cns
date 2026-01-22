@@ -27,7 +27,7 @@ ignorehitpause = 1
 [State 1000, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001,  1002))
+value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001, 1002))
 
 [State 1000, Button Detect (AI)]
 type = VarSet
@@ -63,7 +63,7 @@ trigger1 = AnimElemTime(6) = 0
 anim = 1008
 ID = 1005
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = 12
@@ -471,7 +471,7 @@ name = "Cross"
 ID = 1005
 stateno = 1055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -482,7 +482,7 @@ trigger1 = AnimElemTime(6) = 0
 anim = 1008
 ID = 1005
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = 12
@@ -493,14 +493,14 @@ ownPal=1
 
 [State 0, VarAdd]
 type = VarAdd
-triggerall =  Var(59) = 1
+triggerall = Var(59) = 1
 trigger1 = !Time
 fv = 3
 value = 1
 
 [State 0, VarAdd]
 type = VarAdd
-triggerall =  Var(59) = 1
+triggerall = Var(59) = 1
 trigger1 = !AnimTime
 fv = 3
 value = -1
@@ -573,7 +573,7 @@ trigger1 = Target, IsHelper = 0
 anim = 17008
 ID = 17008
 pos = -10, -75
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 removetime = -2
@@ -837,7 +837,7 @@ var(12)=0
 [State 1000, anim]
 type=ChangeAnim
 Trigger1=!time
-value = ifelse(var(10) = 0, 1050, ifelse(var(10) = 1, 1051,  1052))
+value = ifelse(var(10) = 0, 1050, ifelse(var(10) = 1, 1051, 1052))
 ignorehitpause=1
 
 [State 0, VelSet]
@@ -876,7 +876,7 @@ name = "Cross"
 ID = 1005
 stateno = 1060
 pos = 39,-77
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -887,7 +887,7 @@ trigger1 = AnimElem = 6
 anim = 1055
 ID = 1005
 pos = 44,-73
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = 8
@@ -981,7 +981,7 @@ name = "Cross"
 ID = 1005
 stateno = 1060
 pos = 39,-67
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -992,7 +992,7 @@ trigger1 = AnimElemTime(6) = 0
 anim = 1055
 ID = 1005
 pos = 44,-63
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -1076,7 +1076,7 @@ trigger1 = Target, IsHelper = 0
 anim = 17008
 ID = 17008
 pos = -10, -75
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 removetime = -2
@@ -1315,7 +1315,7 @@ ignorehitpause=1
 [State 1000, anim]
 type=ChangeAnim
 Trigger1=!time
-value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101,  1102))
+value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101, 1102))
 ignorehitpause=1
 
 [State 5100, 10]
@@ -1340,7 +1340,7 @@ trigger1 = AnimElemTime(3) = 0
 anim = 1105
 ID = 1105
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removetime = -2
@@ -1365,7 +1365,7 @@ trigger1 = Target, IsHelper = 0
 anim = 17008
 ID = 17008
 pos = -10, -90
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 removetime = -2
@@ -1533,7 +1533,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1105
 ID = 1105
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removetime = -2
@@ -1562,7 +1562,7 @@ trigger1 = Target, IsHelper = 0
 anim = 17008
 ID = 17008
 pos = -10, -90
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 removetime = -2
@@ -1686,7 +1686,7 @@ facep2 = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElemTime(3) = 0
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 
 [State 5100, 10]
 type = PlaySnd
@@ -1736,7 +1736,7 @@ fall = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Anim = 1210
-MoveType = A       ;S,A,C,L
+MoveType = A ;S,A,C,L
 
 [State 0, ChangeAnim]
 type = ChangeAnim
@@ -1781,7 +1781,7 @@ trigger1 = AnimElem = 9
 anim = 17008
 ID = 1230
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -1797,7 +1797,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -1873,7 +1873,7 @@ facep2 = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElemTime(3) = 0
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 
 [State 5100, 10]
 type = PlaySnd
@@ -1923,7 +1923,7 @@ fall.recover = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Anim = 1210
-MoveType = A       ;S,A,C,L
+MoveType = A ;S,A,C,L
 
 [State 220,2]
 type = ChangeState
@@ -1969,7 +1969,7 @@ trigger1 = AnimElem = 9
 anim = 17008
 ID = 1230
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -1985,7 +1985,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -2067,7 +2067,7 @@ facep2 = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElemTime(3) = 0
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 
 [State 5100, 10]
 type = PlaySnd
@@ -2117,7 +2117,7 @@ fall.recover = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Anim = 1210
-MoveType = A       ;S,A,C,L
+MoveType = A ;S,A,C,L
 
 [State 220,2]
 type = ChangeState
@@ -2163,7 +2163,7 @@ trigger1 = AnimElem = 9
 anim = 17008
 ID = 1230
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -2179,7 +2179,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -2294,7 +2294,7 @@ channel=3
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = AnimElemTime(3) = 0
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 
 [State 5100, 10]
 type = PlaySnd
@@ -2344,7 +2344,7 @@ fall.recover = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Anim = 1210
-MoveType = A       ;S,A,C,L
+MoveType = A ;S,A,C,L
 
 [State 220,2]
 type = ChangeState
@@ -2399,7 +2399,7 @@ trigger1 = AnimElem = 9
 anim = 17008
 ID = 1230
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -2415,7 +2415,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -2696,7 +2696,7 @@ value = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Anim = 1210
-MoveType = A       ;S,A,C,L
+MoveType = A ;S,A,C,L
 
 [State 0, ChangeAnim]
 type = ChangeAnim
@@ -2784,7 +2784,7 @@ value = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Anim = 1210
-MoveType = A       ;S,A,C,L
+MoveType = A ;S,A,C,L
 
 [State 0, ChangeAnim]
 type = ChangeAnim
@@ -2871,7 +2871,7 @@ value = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Anim = 1210
-MoveType = A       ;S,A,C,L
+MoveType = A ;S,A,C,L
 
 [State 0, ChangeAnim]
 type = ChangeAnim
@@ -3012,7 +3012,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -3026,7 +3026,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 17008
 ID = 8002
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -3038,7 +3038,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1351
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3050,7 +3050,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1350
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3093,7 +3093,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3106,7 +3106,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3150,7 +3150,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 17008
 ID = 8002
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -3404,7 +3404,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -3419,7 +3419,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 17008
 ID = 8002
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -3431,7 +3431,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1351
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3443,7 +3443,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1350
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3491,7 +3491,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3504,7 +3504,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3641,7 +3641,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -3655,7 +3655,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 17008
 ID = 8002
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -3668,7 +3668,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1351
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3680,7 +3680,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1350
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3718,7 +3718,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3731,7 +3731,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3886,7 +3886,7 @@ stateNo=ifElse(MoveGuarded, 8001, 8005)
 ID=8000
 name="Spark"
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 size.xScale=1.0
 size.yScale=1.0
@@ -3901,7 +3901,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 17008
 ID = 8002
 pos = 70,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -3914,7 +3914,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1351
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3926,7 +3926,7 @@ trigger1 = AnimElemTime(4) = 0
 anim = 1350
 ID = 1350
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -3963,7 +3963,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3976,7 +3976,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4099,7 +4099,7 @@ trigger1 = AnimElemTime(12) = 0
 anim = 17008
 ID = 8002
 pos = -5,-120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -4169,7 +4169,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1440
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -4181,7 +4181,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1441
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -4237,7 +4237,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4250,7 +4250,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4300,7 +4300,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 17008
 ID = 8002
 pos = -5,-120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -4510,7 +4510,7 @@ trigger1 = AnimElemTime(12) = 0
 anim = 17008
 ID = 8002
 pos = -5,-120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -4580,7 +4580,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1440
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -4592,7 +4592,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1441
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -4648,7 +4648,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4661,7 +4661,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4784,7 +4784,7 @@ trigger1 = AnimElemTime(12) = 0
 anim = 17008
 ID = 8002
 pos = -5,-120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -4854,7 +4854,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1440
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -4866,7 +4866,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1441
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -4917,7 +4917,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4930,7 +4930,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5094,7 +5094,7 @@ trigger1 = AnimElemTime(12) = 0
 anim = 17008
 ID = 8002
 pos = -5,-120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -2
@@ -5173,7 +5173,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1440
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -5185,7 +5185,7 @@ trigger1 = AnimElemTime(1) = 0
 anim = 1441
 ID = 1440
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = 1
 removetime = -1
@@ -5235,7 +5235,7 @@ name = "Player 1"
 ID = 1380
 stateno = 1380
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5248,7 +5248,7 @@ name = "Player 2"
 ID = 1390
 stateno = 1390
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1

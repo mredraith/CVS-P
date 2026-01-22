@@ -2998,7 +2998,7 @@ time = 1
 
 [State 3000, Voice 1-3]
 type = PlaySnd
-trigger1 =  AnimElem = 13 || AnimElem = 15 || AnimElem = 22 || AnimElem = 30|| AnimElem = 38|| AnimElem = 43|| AnimElem = 48
+trigger1 = AnimElem = 13 || AnimElem = 15 || AnimElem = 22 || AnimElem = 30|| AnimElem = 38|| AnimElem = 43|| AnimElem = 48
 value = 3600, 2
 channel = 0
 
@@ -4022,7 +4022,7 @@ time = 1
 
 [State 3251, Voice 1-3]
 type = PlaySnd
-trigger1 =  AnimElem = 13 || AnimElem = 15 || AnimElem = 22 || AnimElem = 30|| AnimElem = 38|| AnimElem = 43|| AnimElem = 48
+trigger1 = AnimElem = 13 || AnimElem = 15 || AnimElem = 22 || AnimElem = 30|| AnimElem = 38|| AnimElem = 43|| AnimElem = 48
 value = 3600, 2
 channel = 0
 
@@ -4480,14 +4480,14 @@ time = 1
 
 [State 3252, Voice 1-3]
 type = PlaySnd
-trigger1 =  AnimElem = 2 || AnimElem = 6 || AnimElem = 12 || AnimElem = 17|| AnimElem = 23|| AnimElem = 27|| AnimElem = 36 || AnimElem = 43|| AnimElem = 48|| AnimElem = 54
+trigger1 = AnimElem = 2 || AnimElem = 6 || AnimElem = 12 || AnimElem = 17|| AnimElem = 23|| AnimElem = 27|| AnimElem = 36 || AnimElem = 43|| AnimElem = 48|| AnimElem = 54
 value = 3600, 2
 channel = 0
 
 
 [State 3252, Swing Snd]
 type = PlaySnd
-trigger1 =  AnimElem = 2 || AnimElem = 6 || AnimElem = 12 || AnimElem = 17|| AnimElem = 23|| AnimElem = 27|| AnimElem = 36 || AnimElem = 43|| AnimElem = 48|| AnimElem = 54
+trigger1 = AnimElem = 2 || AnimElem = 6 || AnimElem = 12 || AnimElem = 17|| AnimElem = 23|| AnimElem = 27|| AnimElem = 36 || AnimElem = 43|| AnimElem = 48|| AnimElem = 54
 value = 1, 5
 channel = 1
 
@@ -6356,7 +6356,7 @@ value = 3356
 ;Max Midare Hien Shippukyaku Start
 [Statedef 3356]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 0
 velset = 0,0
@@ -6581,7 +6581,7 @@ pausetime = 7,6
 ground.hittime = 24
 ground.slidetime = 18
 ground.type = High
-ground.velocity = -6.3  
+ground.velocity = -6.3 
 air.velocity = -6.0,15.5
 fall.yvelocity = -4.0
 fall.recover = 0
@@ -9752,7 +9752,7 @@ type = Hitdef
 trigger1=time=0
 attr = A,HA
 priority = 7, Hit
-damage =  55,10
+damage = 55,10
 animtype=Back
 hitflag = MAF
 guardflag = M
@@ -9853,7 +9853,7 @@ type = Hitdef
 trigger1=time=0
 attr = A,HA
 priority = 7, Hit
-damage =  55,10
+damage = 55,10
 animtype=hard
 hitflag = MAF
 guardflag = H
@@ -9942,7 +9942,7 @@ type = Hitdef
 trigger1=time=0
 attr = A,HA
 priority = 7, Hit
-damage =  55,10
+damage = 55,10
 animtype=Up
 hitflag = MAF
 guardflag = H
@@ -10091,7 +10091,7 @@ type = Hitdef
 trigger1=animelem=1
 attr = S,HA
 priority = 7, Hit
-damage =  25,5
+damage = 25,5
 animtype=hard
 air.animtype=hard
 hitflag = MAF
@@ -10132,7 +10132,7 @@ trigger3=animelem=3,4
 trigger4=animelem=3,7
 attr = A,HA
 priority = 7, Hit
-damage =  25,5
+damage = 25,5
 animtype=hard
 air.animtype=up
 hitflag = MAF
@@ -10169,7 +10169,7 @@ type = Hitdef
 trigger1=animelem=3,10
 attr = A,HA
 priority = 7, Hit
-damage =  15,5
+damage = 15,5
 animtype=hard
 air.animtype=hard
 hitflag = MAF
@@ -10362,7 +10362,7 @@ type = Hitdef
 trigger1=animelem=3
 attr = S,HA
 priority = 7, Hit
-damage =  25,5
+damage = 25,5
 animtype=UP
 hitflag = MAF
 guardflag = M
@@ -10438,7 +10438,7 @@ triggerall= time<=84
 trigger1=timemod=6,0
 attr = A,HA
 priority = 7, Hit
-damage =  10,5
+damage = 10,5
 animtype=UP
 hitflag = MAF
 guardflag = M
@@ -10477,7 +10477,7 @@ type = Hitdef
 trigger1= time>=86
 attr = A,HA
 priority = 7, Hit
-damage =  35,5
+damage = 35,5
 animtype=UP
 hitflag = MAF
 guardflag = M
@@ -11302,7 +11302,7 @@ ignorehitpause=1
 
 [State 3604, Kanji]
 type=helper
-trigger1 = AnimElem = 11  
+trigger1 = AnimElem = 11 
 helpertype=normal
 stateno=7512
 ID=7512
@@ -11313,7 +11313,7 @@ ownpal=1
 
 [State 3250, Boom]
 type = Explod
-trigger1 = AnimElem = 11  
+trigger1 = AnimElem = 11 
 Anim = 3605
 pos = 0, -50
 postype = p2
@@ -11324,7 +11324,7 @@ scale = .75, .75
 
 [State 3250, Boom]
 type = Explod
-trigger1 = AnimElem = 24  
+trigger1 = AnimElem = 24 
 Anim = 3605
 pos = 0, -50
 postype = p2

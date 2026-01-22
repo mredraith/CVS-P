@@ -491,7 +491,7 @@ type = SelfState
 trigger1 = time = 150
 value = 0
 ;---------------------------------------------------------------------------
-; Crazy  Puncher
+; Crazy Puncher
 [Statedef 3009]
 type = S
 movetype= H
@@ -597,7 +597,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;custom animation
+value = 4020 ;custom animation
 
 [State 0, ChangeState]
 type = changeState

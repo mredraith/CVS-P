@@ -317,7 +317,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(4) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -847,7 +847,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(4) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -1183,7 +1183,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(4) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -1543,7 +1543,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(1) >= 0 && AnimElemTime(4) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -1868,7 +1868,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(1) >= 0 && AnimElemTime(4) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -2253,7 +2253,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(1) >= 0 && AnimElemTime(4) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -2895,7 +2895,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(12) >= 0 && AnimElemTime(16) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -3470,7 +3470,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(13) >= 0 && AnimElemTime(20) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -5963,7 +5963,7 @@ type = VarSet
 triggerall = !var(11)
 triggerall = StateType != A
 triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3))  || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10))  || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
 trigger1 = AnimElemTime(6) >= 0 && AnimElemTime(10) < 0
 var(11) = 1
 ignorehitpause = 1
@@ -6448,7 +6448,7 @@ type = VarSet
 triggerall = !var(11)
 ;triggerall = StateType != A
 triggerall = helper(10371), var(21)
-triggerall = (helper(10371), var(0))  || (helper(10371), var(1)) || (helper(10371), var(2)) || (helper(10371), var(7))  || (helper(10371), var(8)) || (helper(10371), var(9)) 
+triggerall = (helper(10371), var(0)) || (helper(10371), var(1)) || (helper(10371), var(2)) || (helper(10371), var(7)) || (helper(10371), var(8)) || (helper(10371), var(9)) 
 trigger1 = AnimElemTime(10) >= 0
 var(11) = 1
 ignorehitpause = 1
@@ -7085,7 +7085,7 @@ y = 0.5
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 10
-id = 1700   
+id = 1700 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 77 < 7, 7, fvar(11) * 77)), 7
 priority = 4, hit
@@ -7227,7 +7227,7 @@ y = 0.5
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 10
-id = 1700   
+id = 1700 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 7
 priority = 4, hit
@@ -7369,7 +7369,7 @@ y = 0.5
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 10
-id = 1700   
+id = 1700 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 91 < 7, 7, fvar(11) * 91)), 7
 priority = 4, hit
@@ -7630,7 +7630,7 @@ y = 0.65
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 10
-id = 1700   
+id = 1700 
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 7
 priority = 4, hit
@@ -7865,11 +7865,11 @@ value = 5100
 ;type = HitDef
 ;;trigger1 = !var(16) && var(15) < 2
 ;trigger1 = AnimElem = 2
-;attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-;hitflag = MFD        ;HLAFD+-
-;guardflag = M        ;HLA
-;animtype = Hard          ;light,medium,hard,back,up,diagup
-;priority = 4, Hit   ;Hit,Miss,Dodge
+;attr = S,SA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+;hitflag = MFD ;HLAFD+-
+;guardflag = M ;HLA
+;animtype = Hard ;light,medium,hard,back,up,diagup
+;priority = 4, Hit ;Hit,Miss,Dodge
 ;damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 ;ID = 1840
 ;getpower = 0, 0
@@ -7883,7 +7883,7 @@ value = 5100
 ;guardsound = s130, 0
 ;air.animType = Back
 ;fall.animType = Back
-;ground.type = Low      ;Low,Trip,None
+;ground.type = Low ;Low,Trip,None
 ;air.type = Low
 ;ground.slidetime = 18
 ;ground.hittime = 18
@@ -8161,11 +8161,11 @@ freq = 120
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 2
 trigger1 = AnimElem = 8
-attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = FD        ;HLAFD+-
-guardflag = M        ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,SA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = FD ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
 ID = 1810
 getpower = 70 * !var(20), 30 * !var(20)
@@ -8179,7 +8179,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18
 ground.hittime = 18
@@ -8415,11 +8415,11 @@ freq = 120
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 2
 trigger1 = AnimElem = 8
-attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = FD        ;HLAFD+-
-guardflag = M        ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,SA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = FD ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
 ID = 1840
 getpower = 0, 0
@@ -8433,7 +8433,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18
 ground.hittime = 18

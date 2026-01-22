@@ -1469,7 +1469,7 @@ facep2 = 1
 
 [State 1100, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(2)  >= 0 && AnimElemTime(3) < 0
+trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -1536,7 +1536,7 @@ facep2 = 1
 
 [State 1110, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(2)  >= 0 && AnimElemTime(3) < 0
+trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -4557,11 +4557,11 @@ value = 15,0
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 2
-attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,SA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = 0, 0
 ID = 1401
 getpower = 70 * !var(20), 30 * !var(20)
@@ -4575,7 +4575,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18
 ground.hittime = 18
@@ -4961,11 +4961,11 @@ value = 15,0
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 2
-attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,SA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = 0, 0
 ID = 1431
 getpower = 0, 0
@@ -4979,7 +4979,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18
 ground.hittime = 18
@@ -6549,12 +6549,12 @@ value = 1466
 [State 1460, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && (AnimElem = 7 || AnimElem = 12 || AnimElem = 17 || AnimElem = 22)
-value = floor(ifElse(21 * fvar(11) < 7, -7, -21  * fvar(11)))
+value = floor(ifElse(21 * fvar(11) < 7, -7, -21 * fvar(11)))
 
 [State 1460, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && AnimElem = 28
-value = floor(ifElse(28 * fvar(11) < 7, -7, -28  * fvar(11)))
+value = floor(ifElse(28 * fvar(11) < 7, -7, -28 * fvar(11)))
 
 
 [State 1460, TargetPowerAdd]
@@ -6831,12 +6831,12 @@ value = 1466
 [State 1461, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && (AnimElem = 7 || AnimElem = 12 || AnimElem = 17 || AnimElem = 22)
-value = floor(ifElse(21 * fvar(11) < 7, -7, -21  * fvar(11)))
+value = floor(ifElse(21 * fvar(11) < 7, -7, -21 * fvar(11)))
 
 [State 1461, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && AnimElem = 28
-value = floor(ifElse(28 * fvar(11) < 7, -7, -28  * fvar(11)))
+value = floor(ifElse(28 * fvar(11) < 7, -7, -28 * fvar(11)))
 
 [State 1461, TargetPowerAdd]
 type = TargetPowerAdd
@@ -8027,11 +8027,11 @@ freq = 120
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 2
 trigger1 = AnimElem = 11
-attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = AFD        ;HLAFD+-
-guardflag = M        ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,SA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = AFD ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
 ID = 1610
 getpower = 70 * !var(20), 30 * !var(20)
@@ -8045,7 +8045,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18
 ground.hittime = 18
@@ -8270,11 +8270,11 @@ freq = 120
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 2
 trigger1 = AnimElem = 11
-attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = AFD        ;HLAFD+-
-guardflag = M        ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,SA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = AFD ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
 ID = 1610
 getpower = 0, 0
@@ -8288,7 +8288,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18
 ground.hittime = 18

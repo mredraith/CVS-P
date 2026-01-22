@@ -19,7 +19,7 @@ ignorehitpause = 1
 [State 1000, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001,  1002))
+value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001, 1002))
 
 [State 1000, Button Detect (AI)]
 type = VarSet
@@ -570,7 +570,7 @@ ctrl = 1
 ;EX Bloody Spin Start Up
 [Statedef 1050]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -966,7 +966,7 @@ ignorehitpause = 1
 [State 1100, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101,  1102))
+value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101, 1102))
 
 [State 1100, Button Detect (AI)]
 type = VarSet
@@ -1553,7 +1553,7 @@ ignorehitpause = 1
 [State 1200, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1200, ifelse(var(10) = 1, 1201,  1202))
+value = ifelse(var(10) = 0, 1200, ifelse(var(10) = 1, 1201, 1202))
 
 [State 1200, Button Detect (AI)]
 type = VarSet
@@ -2157,7 +2157,7 @@ ignorehitpause = 1
 [State 1300, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1300, ifelse(var(10) = 1, 1301,  1302))
+value = ifelse(var(10) = 0, 1300, ifelse(var(10) = 1, 1301, 1302))
 
 [State 1300, Button Detect (AI)]
 type = VarSet
@@ -2908,7 +2908,7 @@ var(10) = ifelse(random < 333, 2, ifelse(random < 500, 1, 0))
 [State 1400, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1400, ifelse(var(10) = 1, 1401,  1402))
+value = ifelse(var(10) = 0, 1400, ifelse(var(10) = 1, 1401, 1402))
 
 [State 1400, velset]
 type = velset
@@ -3153,7 +3153,7 @@ ignorehitpause = 1
 [State 1500, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1500, ifelse(var(10) = 1, 1501,  1502))
+value = ifelse(var(10) = 0, 1500, ifelse(var(10) = 1, 1501, 1502))
 
 
 [State 1500, 1]
@@ -3656,7 +3656,7 @@ ignorehitpause = 1
 [State 1600, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1600, ifelse(var(10) = 1, 1601,  1602))
+value = ifelse(var(10) = 0, 1600, ifelse(var(10) = 1, 1601, 1602))
 
 [State 1600, Vel]
 type = velset

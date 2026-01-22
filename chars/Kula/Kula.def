@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineKula.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineKula.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineKula.sff
-anim    =DivineKula.air
-sound   =DivineKula.snd
+sprite =DivineKula.sff
+anim =DivineKula.air
+sound =DivineKula.snd
 pal1=Colors/Flowrellik_LiChun.act
 pal2=Colors/Flowrellik_BlackCherry.act
 pal3=Colors/Flowrellik_CarrotIce.act

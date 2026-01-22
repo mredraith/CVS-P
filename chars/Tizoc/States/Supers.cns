@@ -7239,7 +7239,7 @@ name = "flash"
 ID = 3605
 stateno = 3605
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -7284,7 +7284,7 @@ ignoreHitPause=1
 
 [State 3600, HitDef]
 type = HitDef
-trigger1 =  var(2)<20
+trigger1 = var(2)<20
 animtype = back
 air.animtype = back
 attr = A, HA

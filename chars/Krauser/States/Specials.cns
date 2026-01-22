@@ -192,7 +192,7 @@ facep2 = 1
 [State 1050, VarSet]
 type = VarSet
 trigger1 =!AILevel&& time =0
-var(10) =  ifelse(command="BlitzBallLo1",0,ifelse(command="BlitzBallLo2",1,2))
+var(10) = ifelse(command="BlitzBallLo1",0,ifelse(command="BlitzBallLo2",1,2))
 ignorehitpause = 1
 [State 1050, VarSet]
 type = VarSet

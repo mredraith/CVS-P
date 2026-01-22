@@ -15,13 +15,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =Strowd.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =Strowd.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =Strowd.sff
-anim    =Strowd.air
-sound   =Strowd.snd
+sprite =Strowd.sff
+anim =Strowd.air
+sound =Strowd.snd
 pal1=Colors/rick_blackred.act
 pal2=Colors/RickPurple.act
 pal3=Colors/RickBlackWhite.act

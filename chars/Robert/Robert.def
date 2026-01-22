@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineRobert.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineRobert.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineRobert.sff
-anim    =DivineRobert.air
-sound   =DivineRobert.snd
+sprite =DivineRobert.sff
+anim =DivineRobert.air
+sound =DivineRobert.snd
 pal1=Colors/MC2_AOFAnime.act
 pal2=Colors/sabockee_1.act
 pal3=Colors/sabockee_2.act

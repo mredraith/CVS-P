@@ -539,7 +539,7 @@ x=8
 [State 3050, StateTypeSet]
 type=StateTypeSet
 trigger1=animelem=93
-statetype=A     
+statetype=A 
 [State 3050, velset]
 type=velset
 trigger1=animelem=93

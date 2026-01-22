@@ -654,7 +654,7 @@ name = "Eagle Shield"
 ID = 1105
 stateno = 1105
 pos = 0,0
-postype = p1   
+postype = p1 
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -852,7 +852,7 @@ name = "Eagle Shield"
 ID = 1109
 stateno = 1105
 pos = 0,0
-postype = p1   
+postype = p1 
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1051,7 +1051,7 @@ type = VarSet
 triggerall = AnimElemTime(1) > 1
 trigger1 = command = "holdfwd" && command = "x" 
 trigger1 = !AILevel
-trigger2 = command = "holdfwd" && command = "y"  
+trigger2 = command = "holdfwd" && command = "y" 
 var(2) = 1
 
 [State 1200, VarSet]
@@ -1175,7 +1175,7 @@ type = VarSet
 triggerall = AnimElemTime(1) > 1
 trigger1 = command = "holdfwd" && command = "x" 
 trigger1 = !AILevel
-trigger2 = command = "holdfwd" && command = "y"  
+trigger2 = command = "holdfwd" && command = "y" 
 var(2) = 1
 
 [State 1203, VarSet]
@@ -1995,7 +1995,7 @@ type = VarSet
 triggerall = AnimElemTime(1) > 1
 trigger1 = command = "holdfwd" && command = "x" 
 trigger1 = !AILevel
-trigger2 = command = "holdfwd" && command = "y"  
+trigger2 = command = "holdfwd" && command = "y" 
 var(2) = 1
 
 [State 1230, VarSet]
@@ -2180,7 +2180,7 @@ type = VarSet
 triggerall = AnimElemTime(1) > 1
 trigger1 = command = "holdfwd" && command = "x" 
 trigger1 = !AILevel
-trigger2 = command = "holdfwd" && command = "y"  
+trigger2 = command = "holdfwd" && command = "y" 
 var(2) = 1
 
 [State 1231, VarSet]
@@ -2478,7 +2478,7 @@ name = "Parrying Puncher Shield"
 ID = 1305
 stateno = 1305
 pos = 0,0
-postype = p1  
+postype = p1 
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2532,7 +2532,7 @@ name = "Parrying Puncher Shield"
 ID = 1305
 stateno = 1305
 pos = 0,0
-postype = p1  
+postype = p1 
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2876,7 +2876,7 @@ name = "Parrying Puncher Shield"
 ID = 1305
 stateno = 1305
 pos = 0,0
-postype = p1  
+postype = p1 
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2930,7 +2930,7 @@ name = "Parrying Puncher Shield"
 ID = 1305
 stateno = 1305
 pos = 0,0
-postype = p1  
+postype = p1 
 facing = 1
 keyctrl = 0
 ownpal = 1

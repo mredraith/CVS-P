@@ -121,7 +121,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = -1
@@ -343,7 +343,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = -1
@@ -3771,7 +3771,7 @@ type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 16
 attr = S, HA
-damage =  ceil(ifElse(fvar(11) * ifElse(var(11) = 1, 7, ifElse(var(11), 7, 15)) < 7, 7, fvar(11) * ifElse(var(11), 7, 15))), 8
+damage = ceil(ifElse(fvar(11) * ifElse(var(11) = 1, 7, ifElse(var(11), 7, 15)) < 7, 7, fvar(11) * ifElse(var(11), 7, 15))), 8
 priority = 4, hit
 animtype = Hard
 getpower = 0, 0
@@ -3818,7 +3818,7 @@ type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 21
 attr = S, HA
-damage =  ceil(ifElse(fvar(11) * ifElse(var(11) = 1, 7, ifElse(var(11), 7, 15)) < 7, 7, fvar(11) * ifElse(var(11), 7, 15))), 8
+damage = ceil(ifElse(fvar(11) * ifElse(var(11) = 1, 7, ifElse(var(11), 7, 15)) < 7, 7, fvar(11) * ifElse(var(11), 7, 15))), 8
 priority = 4, hit
 animtype = Hard
 getpower = 0, 0
@@ -3865,7 +3865,7 @@ type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 25
 attr = S, HA
-damage =  ceil(ifElse(fvar(11) * ifElse(var(11) = 1, 7, ifElse(var(11), 7, 15)) < 7, 7, fvar(11) * ifElse(var(11), 7, 15))), 8
+damage = ceil(ifElse(fvar(11) * ifElse(var(11) = 1, 7, ifElse(var(11), 7, 15)) < 7, 7, fvar(11) * ifElse(var(11), 7, 15))), 8
 priority = 4, hit
 animtype = Hard
 getpower = 0, 0
@@ -4392,7 +4392,7 @@ bindtime = -1
 removetime = 28
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = -1
@@ -4629,7 +4629,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = -1
@@ -4773,7 +4773,7 @@ anim = 4000
 facep2 = 1
 sprpriority = 2
 
-[State 3100, NotHitBy]  
+[State 3100, NotHitBy] 
 type = NotHitBy
 trigger1 = AnimElemTime(6) < 0
 time = 1

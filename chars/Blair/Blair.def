@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineBlair.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineBlair.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineBlair.sff
-anim    =DivineBlair.air
-sound   =DivineBlair.snd
+sprite =DivineBlair.sff
+anim =DivineBlair.air
+sound =DivineBlair.snd
 pal1=Colors/Calhoun_MidnightBlue.act
 pal2=Colors/B&W.act
 pal3=Colors/PrototypeGod_Custom.act

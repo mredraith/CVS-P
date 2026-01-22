@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Joe Higashi by Jmorphman				 |
+;| Joe Higashi by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -24,18 +24,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/TotalDramaXtremist_XtremistTraining.act
-pal3	= Palettes/Kirishima_BruceIrvin.act
-pal4	= Palettes/Cyclysm_RBS.act
-pal5	= Palettes/Hades_KOFXII.act
-pal6	= Palettes/FF3.act
-pal7	= Palettes/MalaDingDong_KOF.act
-pal8	= Palettes/MC2+Hades_Adon.act
-pal9	= Palettes/NDSilva_CyborgJoe.act
-pal10	= Palettes/Knuckles8864_LittleMac.act
-pal11	= Palettes/Flowrelik_SuperSeriousKungFuMan.act
-pal12	= Palettes/Gogngos_BartSimpson.act ;toe to tip, this is a Bart!
+pal1 = Palettes/Default.act
+pal2 = Palettes/TotalDramaXtremist_XtremistTraining.act
+pal3 = Palettes/Kirishima_BruceIrvin.act
+pal4 = Palettes/Cyclysm_RBS.act
+pal5 = Palettes/Hades_KOFXII.act
+pal6 = Palettes/FF3.act
+pal7 = Palettes/MalaDingDong_KOF.act
+pal8 = Palettes/MC2+Hades_Adon.act
+pal9 = Palettes/NDSilva_CyborgJoe.act
+pal10 = Palettes/Knuckles8864_LittleMac.act
+pal11 = Palettes/Flowrelik_SuperSeriousKungFuMan.act
+pal12 = Palettes/Gogngos_BartSimpson.act ;toe to tip, this is a Bart!
 
 [Palette Keymap]
 a = 4
@@ -49,7 +49,7 @@ b2 = 11
 c2 = 12
 x2 = 7
 y2 = 8
-z2 = 9	
+z2 = 9 
 
 ;[Arcade]
 ;intro.storyBoard = intro.def

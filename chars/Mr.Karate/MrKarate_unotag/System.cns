@@ -320,19 +320,19 @@ value = (Random % 5)
 [State 180, Victory Quote Vs. Ryo]
 type = VictoryQuote
 triggerall = !Var(53)
-trigger1 =  Enemy, Name = "Ryo" || Enemy, Name = "Ryo Sakazaki"
+trigger1 = Enemy, Name = "Ryo" || Enemy, Name = "Ryo Sakazaki"
 value = 9
 
 [State 180, Victory Quote Vs. Vega]
 type = VictoryQuote
 triggerall = !Var(53)
-trigger1 =  Enemy, Name = "Vega" && Enemy, Authorname = "N64Mario"
+trigger1 = Enemy, Name = "Vega" && Enemy, Authorname = "N64Mario"
 value = 10
 
 [State 180, Victory Quote Vs. Himself]
 type = VictoryQuote
 triggerall = !Var(53)
-trigger1 =  Enemy, Name = "Mr.Karate" || Enemy, Name = "MrKarate" || Enemy, Name = "Mr Karate"
+trigger1 = Enemy, Name = "Mr.Karate" || Enemy, Name = "MrKarate" || Enemy, Name = "Mr Karate"
 value = 11
 
 [State 180, Victory Quote Vs. Akuma]
@@ -344,7 +344,7 @@ value = 12
 [State 180, Victory Quote Vs. Dan]
 type = VictoryQuote
 triggerall = !Var(53)
-trigger1 =  Enemy, Name = "Dan" || Enemy, Name = "Dan Hibiki"
+trigger1 = Enemy, Name = "Dan" || Enemy, Name = "Dan Hibiki"
 value = 13
 
 
@@ -370,211 +370,211 @@ value = 15
 [State 180, Victory Quote Vs. Andy]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Andy" || Enemy, Name = "Andy Bogard"
+trigger1 = Enemy, Name = "Andy" || Enemy, Name = "Andy Bogard"
 value = 16
 
 [State 180, Victory Quote Vs. Fag Crimson]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Ash" || Enemy, Name = "Ash Crimson"
+trigger1 = Enemy, Name = "Ash" || Enemy, Name = "Ash Crimson"
 value = 17
 
 [State 180, Victory Quote Vs. Athena]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Athena" || Enemy, Name = "Athena Asamiya"
+trigger1 = Enemy, Name = "Athena" || Enemy, Name = "Athena Asamiya"
 value = 18
 
 [State 180, Victory Quote Vs. Benimaru]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Benimaru" || Enemy, Name = "Benimaru Nikaido"
+trigger1 = Enemy, Name = "Benimaru" || Enemy, Name = "Benimaru Nikaido"
 value = 19
 
 [State 180, Victory Quote Vs. Billy]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Billy" || Enemy, Name = "Billy Kane"
+trigger1 = Enemy, Name = "Billy" || Enemy, Name = "Billy Kane"
 value = 20
 
 [State 180, Victory Quote Vs. Chin]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Chin" || Enemy, Name = "Chin Gentsai"
+trigger1 = Enemy, Name = "Chin" || Enemy, Name = "Chin Gentsai"
 value = 21
 
 [State 180, Victory Quote Vs. Clark]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Clark" || Enemy, Name = "Clark Steel"
+trigger1 = Enemy, Name = "Clark" || Enemy, Name = "Clark Steel"
 value = 22
 
 [State 180, Victory Quote Vs. Goro]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Goro" || Enemy, Name = "Goro Daimon" || Enemy, Name = "Daimon"
+trigger1 = Enemy, Name = "Goro" || Enemy, Name = "Goro Daimon" || Enemy, Name = "Daimon"
 value = 23
 
 [State 180, Victory Quote Vs. Duo Lon]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Duo Lon" || Enemy, Name = "Duolon"
+trigger1 = Enemy, Name = "Duo Lon" || Enemy, Name = "Duolon"
 value = 24
 
 [State 180, Victory Quote Vs. Elisabeth]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Elisabeth" || Enemy, Name = "Elisabeth Blanctorche"
+trigger1 = Enemy, Name = "Elisabeth" || Enemy, Name = "Elisabeth Blanctorche"
 value = 25
 
 [State 180, Victory Quote Vs. Iori]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Iori" || Enemy, Name = "Iori Yagami"
+trigger1 = Enemy, Name = "Iori" || Enemy, Name = "Iori Yagami"
 value = 26
 
 [State 180, Victory Quote Vs. Himself]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Mr.Karate" || Enemy, Name = "MrKarate" || Enemy, Name = "Mr Karate"
+trigger1 = Enemy, Name = "Mr.Karate" || Enemy, Name = "MrKarate" || Enemy, Name = "Mr Karate"
 value = 27
 
 [State 180, Victory Quote Vs. Hwa]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Hwa" || Enemy, Name = "Hwa Jai"
+trigger1 = Enemy, Name = "Hwa" || Enemy, Name = "Hwa Jai"
 value = 28
 
 [State 180, Victory Quote Vs. Joe]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Joe" || Enemy, Name = "Joe Higashi"
+trigger1 = Enemy, Name = "Joe" || Enemy, Name = "Joe Higashi"
 value = 29
 
 [State 180, Victory Quote Vs. K']
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "K'" || Enemy, Name = "K"
+trigger1 = Enemy, Name = "K'" || Enemy, Name = "K"
 value = 30
 
 [State 180, Victory Quote Vs. Kensou]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Sie Kensou" || Enemy, Name = "Kensou" || Enemy, Name = "EX Kensou"
+trigger1 = Enemy, Name = "Sie Kensou" || Enemy, Name = "Kensou" || Enemy, Name = "EX Kensou"
 value = 31
 
 [State 180, Victory Quote Vs. Kim]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Kim" || Enemy, Name = "Kim Kaphwan"
+trigger1 = Enemy, Name = "Kim" || Enemy, Name = "Kim Kaphwan"
 value = 32
 
 [State 180, Victory Quote Vs. King]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "King"
+trigger1 = Enemy, Name = "King"
 value = 33
 
 [State 180, Victory Quote Vs. Kula]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Kula" || Enemy, Name = "Kula Diamond"
+trigger1 = Enemy, Name = "Kula" || Enemy, Name = "Kula Diamond"
 value = 34
 
 [State 180, Victory Quote Vs. Kyo]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Kyo" || Enemy, Name = "Kyo Kusanagi"
+trigger1 = Enemy, Name = "Kyo" || Enemy, Name = "Kyo Kusanagi"
 value = 35
 
 [State 180, Victory Quote Vs. Leona]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Leona" || Enemy, Name = "Leona Heidern"
+trigger1 = Enemy, Name = "Leona" || Enemy, Name = "Leona Heidern"
 value = 36
 
 [State 180, Victory Quote Vs. Mai]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Mai" || Enemy, Name = "Mai Shiranui"
+trigger1 = Enemy, Name = "Mai" || Enemy, Name = "Mai Shiranui"
 value = 37
 
 [State 180, Victory Quote Vs. Mature]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Mature"
+trigger1 = Enemy, Name = "Mature"
 value = 38
 
 [State 180, Victory Quote Vs. Mature]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Maxima"
+trigger1 = Enemy, Name = "Maxima"
 value = 39
 
 [State 180, Victory Quote Vs. Raiden]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Raiden" || Enemy, Name = "cvsraiden"
+trigger1 = Enemy, Name = "Raiden" || Enemy, Name = "cvsraiden"
 value = 40
 
 [State 180, Victory Quote Vs. Raiden]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Ralf"
+trigger1 = Enemy, Name = "Ralf"
 value = 41
 
 [State 180, Victory Quote Vs. Robert]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Robert" || Enemy, Name = "Robert Garcia"
+trigger1 = Enemy, Name = "Robert" || Enemy, Name = "Robert Garcia"
 value = 42
 
 [State 180, Victory Quote Vs. Ryo]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Ryo" || Enemy, Name = "Ryo Sakazaki"
+trigger1 = Enemy, Name = "Ryo" || Enemy, Name = "Ryo Sakazaki"
 value = 43
 
 [State 180, Victory Quote Vs. Saiki]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Saiki"
+trigger1 = Enemy, Name = "Saiki"
 value = 44
 
 [State 180, Victory Quote Vs. Shen]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Shen" || Enemy, Name = "Shen Woo"
+trigger1 = Enemy, Name = "Shen" || Enemy, Name = "Shen Woo"
 value = 45
 
 [State 180, Victory Quote Vs. Takuma]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Takuma" || Enemy, Name = "Takuma Sakazaki"
+trigger1 = Enemy, Name = "Takuma" || Enemy, Name = "Takuma Sakazaki"
 value = 46
 
 [State 180, Victory Quote Vs. Terry]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Terry" || Enemy, Name = "Terry Bogard"
+trigger1 = Enemy, Name = "Terry" || Enemy, Name = "Terry Bogard"
 value = 47
 
 [State 180, Victory Quote Vs. Vice]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Vice"
+trigger1 = Enemy, Name = "Vice"
 value = 48
 
 [State 180, Victory Quote Vs. Yuri]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Yuri" || Enemy, Name = "Yuri Sakazaki"
+trigger1 = Enemy, Name = "Yuri" || Enemy, Name = "Yuri Sakazaki"
 value = 49
 
 [State 180, Victory Quote Vs. Ryu]
 type = VictoryQuote
 triggerall = Var(53)
-trigger1 =  Enemy, Name = "Ryu" || Enemy, Name = "Ryu Hoshi"
+trigger1 = Enemy, Name = "Ryu" || Enemy, Name = "Ryu Hoshi"
 value = 50
 
 [State 180, Win Pose vs Strong Enemy]
@@ -3926,7 +3926,7 @@ waveform = sine
 
 [Statedef -2]
 
-;  --- Uno Tag System v3.0 STATEDEF -2 ---
+; --- Uno Tag System v3.0 STATEDEF -2 ---
 
 [State -2, deactivate tag]
 type = VarSet
@@ -4084,7 +4084,7 @@ triggerall = NumTarget
 triggerall = Time = [0,1]
 trigger1 = !Life
 trigger2 = StateNo = [1251101,1251105]
-trigger3 = StateNo = [1251115,1251116]  
+trigger3 = StateNo = [1251115,1251116] 
 trigger4 = StateNo = 1251106 || StateNo = 1251123
 
 [State -2, Buwelo]
@@ -4115,8 +4115,8 @@ y = -1.2
 type = TargetState
 trigger1 = NumTarget
 trigger1 = StateNo = 1251102 || PrevStateNo = 1251102 || StateNo = 1251123 || PrevStateNo = 1251123 || StateNo = 1251126 || PrevStateNo = 1251126
-trigger1 = (Target, Pos Y < 0) && !(Target, StateNo = [120,152]) && (Target, StateNo != [1251109,1251119]) && MoveContact  && (Target, Anim = [5100,5170])  && (Target, Anim != [5110,5120])  && Target, PrevStateNo != 1251119 
-trigger1 = (Target, Statetype != A) ; && (Target, Statetype != S)  && (Target, Statetype != C)
+trigger1 = (Target, Pos Y < 0) && !(Target, StateNo = [120,152]) && (Target, StateNo != [1251109,1251119]) && MoveContact && (Target, Anim = [5100,5170]) && (Target, Anim != [5110,5120]) && Target, PrevStateNo != 1251119 
+trigger1 = (Target, Statetype != A) ; && (Target, Statetype != S) && (Target, Statetype != C)
 trigger1 = !Target, HitOver
 value = 1251119
 ignorehitpause = 1
@@ -4554,7 +4554,7 @@ ownPal = 1
 
 [Statedef -3]
 
-;  --- Uno Tag System v3.0 STATEDEF -3 ---
+; --- Uno Tag System v3.0 STATEDEF -3 ---
 
 
 ; Tag active definer
@@ -4585,10 +4585,10 @@ sysvar(4) = 1 + ((ID > Partner, ID)*4)
 type = ChangeState
 trigger1 = sysvar(4)
 trigger1 = NumPartner
-trigger1 = StateNo = [1251112,1251114]	
+trigger1 = StateNo = [1251112,1251114] 
 trigger1 = Life 
 trigger1 = (Partner, StateNo = [1251109,1251111]) || (Partner, StateNo = 1251125 && Partner, Time > 0)
-trigger1 = Partner, StateNo != 1251110	; for type-r only
+trigger1 = Partner, StateNo != 1251110 ; for type-r only
 value = ifelse((Partner, StateNo = 1251125),1251131,1251101)
 
 ; Jump into the screen (Change Attack)
@@ -4971,7 +4971,7 @@ trigger1 = sysvar(4) = 7 && MoveType = A
 flag = nojugglecheck
 ignorehitpause = 1
 
-[State -3, C_7]	; TimeOVER!
+[State -3, C_7] ; TimeOVER!
 type = LifeAdd
 trigger1 = NumPartner && RoundState > 2 && StateNo != 1251106 && !(Partner, Life) && sysvar(4) = 7 && !Win
 value = -(Life)
@@ -4998,13 +4998,13 @@ Time=10
 type = AfterImage
 triggerall = RoundState <= 2
 triggerall = !Win && !Lose && !MatchOver && !DrawGame
-triggerall = sysvar(4) = 7  && MoveType = A
+triggerall = sysvar(4) = 7 && MoveType = A
 trigger1 = PrevStateNo = 5300 || PrevStateNo = 4600
 trigger2 = (gameTime%10) = 0
 Trans = add
 PalContrast = 256,0,0
 PalBright = 50,0,0
-Time =  -1
+Time = -1
 length = 17
 TimeGap = 1
 FrameGap = 1
@@ -5045,7 +5045,7 @@ trigger3 = StateNo = 1251125
 [State -3, T_T]
 type = SelfState
 triggerall = NumPartner && sysvar(4) > 0
-trigger1 = RoundState = 2  && Pos Y < 0
+trigger1 = RoundState = 2 && Pos Y < 0
 trigger1 = StateNo = 0 && (Partner, StateNo != [1251112,1251114])
 trigger1 = PrevStateNo = [1251112,1251114]
 value = 1251112
@@ -5056,11 +5056,11 @@ triggerall = NumPartner
 triggerall = RoundState = 2
 triggerall = Life && Partner, Life
 triggerall = StateNo != [1251110,1251114]
-trigger1 = sysvar(4) = 2				; performed team attack
+trigger1 = sysvar(4) = 2 ; performed team attack
 trigger1 = (PrevStateNo = [5000,5500]) || (StateNo != [200,1251199]) && (MoveType != H)
-trigger2 = sysvar(4) = 4         		; performed Delayed Cancel
+trigger2 = sysvar(4) = 4 ; performed Delayed Cancel
 trigger2 = MoveType = I || ((Partner, prevStateNo = 1251131 || Partner, StateNo != [1251101,1251135]) && Time > 1)
-trigger3 = sysvar(4) = 3          	; performed Cross Attack
+trigger3 = sysvar(4) = 3 ; performed Cross Attack
 trigger3 = (StateNo = 1251126 && Time > 1) && (Partner, StateNo = 1251102 && Partner, BackEdgeBodyDist > 15)
 trigger4 = (sysvar(4) = [2,4]) && MoveType = I && (StateNo != [1251101,1251133])
 trigger5 = NumHelper(1251125)
@@ -5071,7 +5071,7 @@ ignorehitpause = 1
 
 ; ---- Uno Tag System v3.0 END LINE ----
 
-;  ;]
+; ;]
 
 [State -3, GameTime]
 type = VarSet

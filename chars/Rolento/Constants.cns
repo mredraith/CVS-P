@@ -1,12 +1,12 @@
 ;VARIABLE LIST=
 
-;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
-;var(4)  : Chain Combo (0 = Off; 1 = On)
-;var(5)  : Command Cancel Flag
-;var(6)  : Cancel Flag
-;var(7)  : Super Cancel Flag
-;var(8)  : Hyper Cancel Flag
-;var(9)  : Counter Flag
+;var(3) : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4) : Chain Combo (0 = Off; 1 = On)
+;var(5) : Command Cancel Flag
+;var(6) : Cancel Flag
+;var(7) : Super Cancel Flag
+;var(8) : Hyper Cancel Flag
+;var(9) : Counter Flag
 ;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Heavy)
 ;var(11) : Winpose detection (0 = Off; 1 = able to perform grenade winpose)
 ;var(12) : Mekong Delta Escape/Scouter Jump Gravity toggle (0 = not active; 1 = Mekong Delta Escape gravity; 2 = Scouter Jump gravity)
@@ -48,7 +48,7 @@
 
 
 ; _________________________________________
-;| Rolento by Jmorphman                    |
+;| Rolento by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;CONSTANTS=
 [Data]

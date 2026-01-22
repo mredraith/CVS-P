@@ -2,7 +2,7 @@
 ;Kiai Dan
 [Statedef 1000]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 anim = 1000
@@ -135,7 +135,7 @@ ctrl = 1
 ;EX Kiai Dan
 [Statedef 1050]
 type = S
-movetype =  A
+movetype = A
 physics = S
 anim = 1000
 velset = 0,0

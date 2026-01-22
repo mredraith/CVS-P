@@ -869,7 +869,7 @@ triggerall = numtarget(3050)
 triggerall = (target(3050), StateNo != [150,153])
 triggerall = target(3050), stateno = 3070
 triggerall = target(3050),BackEdgeBodyDist = 0
-trigger1 =  time >= 0
+trigger1 = time >= 0
 x = (target(3000),vel x)*1.5
 
 [State 3055, Velocity]

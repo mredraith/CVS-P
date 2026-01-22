@@ -122,7 +122,7 @@ trigger1 =roundstate<2
 ;---------------------------------------------------------------------------
 ;Cho Hong Ren Salgon Fire
 [Statedef 3110]
-physics  =N
+physics =N
 anim = 3110
 ctrl = 0
 velset=0,0
@@ -739,7 +739,7 @@ trigger1=!animtime
 ;---------------------------------------------------------------------------
 ;Salamander-Fire
 [Statedef 3410]
-physics  =N
+physics =N
 anim = 3410
 ctrl = 0
 velset=0,0
@@ -907,7 +907,7 @@ helperType=Normal
 stateNo=ifElse(MoveGuarded, 8001, 8014)
 ID=8000
 name="Spark"
-pos = (target, const(size.ground.front) -10),  (target,const(size.mid.pos.y) - 10)
+pos = (target, const(size.ground.front) -10), (target,const(size.mid.pos.y) - 10)
 facing=-1
 ownPal=1
 size.xScale=1
@@ -1091,7 +1091,7 @@ helperType=Normal
 stateNo=ifElse(MoveGuarded, 8001, 8014)
 ID=8000
 name="Spark"
-pos = (target, const(size.ground.front) -10),  (target,const(size.mid.pos.y) - 10)
+pos = (target, const(size.ground.front) -10), (target,const(size.mid.pos.y) - 10)
 facing=-1
 ownPal=1
 size.xScale=1
@@ -2028,7 +2028,7 @@ value = 90 * (Random % 4)
 [State 8011, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8011, Transparency]
 type = Trans
@@ -2073,7 +2073,7 @@ value = 90 * (Random % 4)
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8012, Transparency]
 type = Trans
@@ -2125,11 +2125,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 
 [State 8013, Transparency]
 type = Trans
@@ -2184,7 +2184,7 @@ value = 30 * (Random % 12)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 
 [State 8014, Transparency]
 type = Trans

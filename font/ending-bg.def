@@ -1,5 +1,5 @@
 [FNT v2]
-; FNT v2 version number.  Don't change this.
+; FNT v2 version number. Don't change this.
 fntversion = 2,00
 ; Name of this font.
 name = "end type"
@@ -9,13 +9,13 @@ name = "end type"
 [Def]
 ; This is a bitmap font
 Type = bitmap
-; Size of font: width, height.  Width is used for spaces.
+; Size of font: width, height. Width is used for spaces.
 Size = 16,19
 ; Spacing between font glyphs: width, height.
 Spacing = 1,1
 ; Drawing offset: x, y.
 Offset = 0,0
-; Filename of the sff containing the glyphs.  Use sff v2 only.
+; Filename of the sff containing the glyphs. Use sff v2 only.
 File = ending-2.sff
 
 ; Note: All units are in pixels.

@@ -57,7 +57,7 @@ trigger1 = animelem = 4
 anim = 7502
 ID = 7502
 pos = 25,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -169,7 +169,7 @@ trigger1 = animelem = 4
 anim = 7502
 ID = 7502
 pos = 25,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -281,7 +281,7 @@ trigger1 = animelem = 4
 anim = 7502
 ID = 7502
 pos = 25,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -526,7 +526,7 @@ pausetime = 8, 12
 sparkno = -1 + 0 * (var(33) := 8013)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -10 + 0 * (var(35) := 59), var(36) := -33
-hitsound =  s2,13
+hitsound = s2,13
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 5
@@ -657,7 +657,7 @@ pausetime = 8, 12
 sparkno = -1 + 0 * (var(33) := 8013)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -10 + 0 * (var(35) := -59), var(36) := -33
-hitsound =  s2,13
+hitsound = s2,13
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 5
@@ -796,7 +796,7 @@ pausetime = IfElse(var(21),6,12),ifElse(var(21),6,12)
 sparkno = -1 + 0 * (var(33) := 8013)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -10 + 0 * (var(35) := 59), var(36) := -33
-hitsound =  s2,13
+hitsound = s2,13
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 12
@@ -993,7 +993,7 @@ x = 1.5
 [State 1210, voz]
 type = PlaySnd
 trigger1 = AnimElem = 5
-value =  2000,19
+value = 2000,19
 channel = 0
 
 [State 1201, efect]
@@ -1177,7 +1177,7 @@ value = 7,5
 [State 1210, voz]
 type = PlaySnd
 trigger1 = AnimElem = 5
-value =  2000,19
+value = 2000,19
 channel = 0
 
 [State 1206, efect]
@@ -1253,7 +1253,7 @@ trigger1 = animelem = 16
 anim = 7900
 ID = 7900
 pos = 35,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 removetime = 20
 scale = .8,.8
@@ -1356,7 +1356,7 @@ x = 3
 [State 1210, voz]
 type = PlaySnd
 trigger1 = AnimElem = 6
-value =  2000,19
+value = 2000,19
 channel = 0
 
 [State 1211, efect]
@@ -2672,7 +2672,7 @@ trigger1= animelemtime(6)>0 && p2dist x<0
 ;anim = 1274
 ;ID = 3647
 ;pos = -50,0
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;facing = 1
 ;p2facing = 1
 ;bindtime = -1
@@ -2690,7 +2690,7 @@ trigger1 = animelem = 6
 anim = 1274
 ID = 3647
 pos = -50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 p2facing = 1
 bindtime = -1
@@ -2708,7 +2708,7 @@ ignorehitpause =1
 ;anim = 1275
 ;ID = 3647
 ;pos = 50,0
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;facing = 1
 ;p2facing = 1
 ;bindtime = -1
@@ -2726,7 +2726,7 @@ trigger1 = animelem = 6
 anim = 1275
 ID = 3647
 pos = 50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 p2facing = 1
 bindtime = -1
@@ -2855,7 +2855,7 @@ trigger1 = animelem = 3
 anim = 3890
 ID = 3890
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2967,7 +2967,7 @@ trigger1 = animelem = 3
 anim = 3890
 ID = 3890
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3075,7 +3075,7 @@ trigger1 = animelem = 3
 anim = 3890
 ID = 3890
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3188,7 +3188,7 @@ trigger1 = animelem = 3
 anim = 3890
 ID = 3890
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3402,7 +3402,7 @@ persistent = 0
 ;anim = 1191
 ;ID = 3647
 ;pos = 15,-35
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;facing = 1
 ;p2facing = 1
 ;bindtime = -1
@@ -3618,7 +3618,7 @@ persistent = 0
 ;anim = 1191
 ;ID = 3647
 ;pos = 15,-35
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;facing = 1
 ;p2facing = 1
 ;bindtime = -1
@@ -3755,11 +3755,11 @@ x = .90
 
 [State 1610, 1]
 type = HitDef
-trigger1 =  AnimElem=2
+trigger1 = AnimElem=2
 attr = S, SA
 animtype = hard
 air.animtype = back
-damage = ifelse(var(59)<=1 && power>1000,55,45), 10      ;45,5
+damage = ifelse(var(59)<=1 && power>1000,55,45), 10 ;45,5
 guardflag = MA
 hitflag = MAF
 priority = 3, Hit
@@ -3850,7 +3850,7 @@ palfx.mul=128,128,128
 ;anim = 1191
 ;ID = 3647
 ;pos = 15,-35
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;facing = 1
 ;p2facing = 1
 ;bindtime = -1

@@ -428,7 +428,7 @@ damage = 90,5
 guardflag = M
 hitflag = MAFP
 pausetime =1,10
-sparkNo =   s1001 
+sparkNo = s1001 
 guard.sparkno = s8000
 sparkxy =ceil(50*const(size.xscale)),ceil(-90*const(size.yscale))
 hitsound = S8,6
@@ -453,8 +453,8 @@ fall.envshake.ampl = 8
 getpower = 50
 givepower = 20
 palfx.time = 40
-palfx.add = 80,-70,-200                               
-palfx.sinadd = 0,30,0,10                              
+palfx.add = 80,-70,-200 
+palfx.sinadd = 0,30,0,10 
 palfx.color = 0
 palfx.invertall = 1
 
@@ -467,7 +467,7 @@ helperType=Normal
 stateNo=ifElse(MoveGuarded, 8000, 8011)
 ID=8000
 name="Spark"
-pos =  (target, const(size.ground.front) +50), -60
+pos = (target, const(size.ground.front) +50), -60
 facing=-1
 ownPal=1
 size.xScale=1
@@ -669,7 +669,7 @@ guardflag = M
 hitflag = MAFP
 projscale = 1.07,1
 pausetime =1,10
-sparkNo =   s1001 
+sparkNo = s1001 
 guard.sparkno = s8000
 sparkxy =ceil(50*const(size.xscale)),ceil(-90*const(size.yscale))
 hitsound = S8,6
@@ -694,8 +694,8 @@ fall.envshake.ampl = 8
 getpower = 0
 givepower = 20
 palfx.time = 40
-palfx.add = 80,-70,-200                               
-palfx.sinadd = 0,30,0,10                              
+palfx.add = 80,-70,-200 
+palfx.sinadd = 0,30,0,10 
 palfx.color = 0
 palfx.invertall = 1
 
@@ -708,7 +708,7 @@ helperType=Normal
 stateNo=ifElse(MoveGuarded, 8000, 8011)
 ID=8000
 name="Spark"
-pos =  (target, const(size.ground.front) +50), -60
+pos = (target, const(size.ground.front) +50), -60
 facing=-1
 ownPal=1
 size.xScale=1
@@ -937,7 +937,7 @@ trigger1 = time = 0
 helpertype = normal ;player
 stateno = 7500
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1004,12 +1004,12 @@ trigger1 = movecontact = 0
 attr = A,SA
 hitflag = MAF
 guardflag = MA
-getpower =  ifelse(p2movetype=H,22,74)*!(root,var(20)), 10*!(root,var(20))
+getpower = ifelse(p2movetype=H,22,74)*!(root,var(20)), 10*!(root,var(20))
 givepower = 10,2
 animtype = diagup
 air.animtype = hard
 fall.animtype = Back
-priority = 7,Hit   ;Hit,Miss,Dodge
+priority = 7,Hit ;Hit,Miss,Dodge
 damage = 80,10
 guard.pause 10,10
 sparkNo = -1 + 0 * (var(33) := 8012)
@@ -1017,7 +1017,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 50), var(36) := -20
 hitsound = S3,15
 guardsound=s130,0
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 ground.slide = 20
 guard.slide = 5
 ground.hit = 20
@@ -1162,7 +1162,7 @@ ignorehitpause = 1
 supermove = 1
 ownpal = 1
 
-;[State 2200, 4]   Bolão
+;[State 2200, 4] Bolão
 ;type = explod
 ;trigger1 = time = 2
 ;anim = 6013
@@ -1194,7 +1194,7 @@ trigger1 = time = 0
 helpertype = normal ;player
 stateno = 7500
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1262,12 +1262,12 @@ trigger2 = AnimElem = 5,6
 attr = A,SA
 hitflag = MAF
 guardflag = MA
-getpower =  0
+getpower = 0
 givepower = 7,2
 animtype = diagup
 air.animtype = hard
 fall.animtype = Back
-priority = 7,Hit   ;Hit,Miss,Dodge
+priority = 7,Hit ;Hit,Miss,Dodge
 damage = 36,8
 guard.pause 10,10
 sparkNo = -1 + 0 * (var(33) := 8012)
@@ -1275,7 +1275,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 50), var(36) := -20
 hitsound = S3,15
 guardsound=s130,0
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 ground.slide = 20
 guard.slide = 5
 ground.hit = 20
@@ -1620,7 +1620,7 @@ trigger1 = animelem = 2
 anim = 1301
 ID = 1301
 pos = 55,-45
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = 45
 scale = .35,.5
@@ -1773,7 +1773,7 @@ trigger1 = time = 0
 anim = 5000
 ID = 271291
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 2,0
 removetime = 14
@@ -1929,7 +1929,7 @@ name = "trap"
 ID = 1410
 stateno = 1410
 pos = var(41),0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .6
@@ -1940,9 +1940,9 @@ size.yscale = .7
 type = Explod
 trigger1 = animelem = 3
 anim = 950
-ID =  1411
+ID = 1411
 pos = 29,-17
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = 15
 scale = 1,.25
@@ -2025,7 +2025,7 @@ name = "trap"
 ID = 1415
 stateno = 1415
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .9
@@ -2033,7 +2033,7 @@ size.yscale = .9
 
 [State 0, DestroySelf]
 type = DestroySelf
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 
 [Statedef 1415]
 type = A
@@ -2099,7 +2099,7 @@ guardflag = MA
 pausetime = 0,8
 hitsound = S8,8
 guardsound= s130,0
-sparkno =  8010
+sparkno = 8010
 ;guard.sparkno = S6004
 sparkxy = 0, -90; (enemynear,pos y)
 animtype = Up
@@ -2127,7 +2127,7 @@ helperType=Normal
 stateNo=ifElse(MoveGuarded, 8000, 8011)
 ID=8000
 name="Spark"
-pos =  (target, const(size.ground.front) +10), -40
+pos = (target, const(size.ground.front) +10), -40
 facing=-1
 ownPal=1
 size.xScale=1
@@ -2140,4 +2140,4 @@ persistent=0
 
 [State 0, DestroySelf]
 type = DestroySelf
-trigger1 =  animtime = 0
+trigger1 = animtime = 0

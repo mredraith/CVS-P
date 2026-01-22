@@ -151,7 +151,7 @@ value = 3010
 
 [State 3000, End]
 type = ChangeState
-trigger1 =  Time > 199
+trigger1 = Time > 199
 value = 3001
 ctrl = 0
 
@@ -273,7 +273,7 @@ ignorehitpause = 1
 
 [State 3010, End]
 type = ChangeState
-trigger1 =  Time > 60
+trigger1 = Time > 60
 trigger1 = Command!="hold_x" && Command!="hold_y" && Command!="hold_z"
 trigger2 = Time >= 170
 value = 3011
@@ -509,7 +509,7 @@ value = 3060
 
 [State 3050, End]
 type = ChangeState
-trigger1 =  Time > 199
+trigger1 = Time > 199
 value = 3051
 ctrl = 0
 
@@ -666,7 +666,7 @@ ignorehitpause = 1
 
 [State 3060, End]
 type = ChangeState
-trigger1 =  Time > 60
+trigger1 = Time > 60
 trigger1 = Command!="hold_x" && Command!="hold_y" && Command!="hold_z"
 trigger2 = Time >= 170
 value = 3061
@@ -925,7 +925,7 @@ value = 3110
 
 [State 3100, End]
 type = ChangeState
-trigger1 =  Time > 307
+trigger1 = Time > 307
 value = 3101
 ctrl = 0
 
@@ -1047,7 +1047,7 @@ ignorehitpause = 1
 
 [State 3110, End]
 type = ChangeState
-trigger1 =  Time > 60
+trigger1 = Time > 60
 trigger1 = Command!="hold_x" && Command!="hold_y" && Command!="hold_z"
 trigger2 = Time >= 170
 value = 3111
@@ -1300,7 +1300,7 @@ value = 3160
 
 [State 3150, End]
 type = ChangeState
-trigger1 =  Time > 307
+trigger1 = Time > 307
 value = 3151
 ctrl = 0
 
@@ -1421,7 +1421,7 @@ ignorehitpause = 1
 
 [State 3160, End]
 type = ChangeState
-trigger1 =  Time > 60
+trigger1 = Time > 60
 trigger1 = Command!="hold_x" && Command!="hold_y" && Command!="hold_z"
 trigger2 = Time >= 170
 value = 3161

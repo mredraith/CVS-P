@@ -4,7 +4,7 @@
 ; Bank 1 - blue
 
 [FNT v2]
-; FNT v2 version number.  Don't change this.
+; FNT v2 version number. Don't change this.
 fntversion = 2,00
 ; Name of this font.
 name = "Number 72"
@@ -16,13 +16,13 @@ name = "Number 72"
 Type = bitmap
 ; Bank numbers are mapped to sprite group numbers (required for RGBA fonts).
 BankType = sprite
-; Size of font: width, height.  Width is used for spaces.
+; Size of font: width, height. Width is used for spaces.
 Size = 70,71
 ; Spacing between font glyphs: width, height.
 Spacing = 0,1
 ; Drawing offset: x, y.
 Offset = 0,3
-; Filename of the sff containing the glyphs.  Use sff v2 only.
+; Filename of the sff containing the glyphs. Use sff v2 only.
 File = num72.sff
 
 ; Note: All units are in pixels.

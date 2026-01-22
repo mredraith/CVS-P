@@ -3368,7 +3368,7 @@ ignoreHitPause = 1
 type = Helper
 trigger1= movehit=1 && var(30)=hitpausetime
 trigger1= numenemy && var(9)
-trigger1= !(hitdefattr=SCA,AT) && (stateno!=[1000,1051])&& (stateno != [1000, 1051]) && (stateno != [1500, 1599])  && (stateno != [3900, 3960])
+trigger1= !(hitdefattr=SCA,AT) && (stateno!=[1000,1051])&& (stateno != [1000, 1051]) && (stateno != [1500, 1599]) && (stateno != [3900, 3960])
 helperType = Normal
 stateNo = 8290
 ID = 8290
@@ -3761,7 +3761,7 @@ ignorehitpause=1
 trigger1 = 1
 type = DisplayToClipboard
 ignorehitpause = 1
-text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
 params = fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]
@@ -3868,7 +3868,7 @@ ignoreHitPause=1
 [State -3, ProjContact Reset]
 type = VarSet
 triggerAll = var(18)
-trigger1 = (StateNo != [1200,1250]) && (StateNo != [3800,3850])  
+trigger1 = (StateNo != [1200,1250]) && (StateNo != [3800,3850]) 
 var(18) = 0
 
 [State -3, Special Cancel Reset]
@@ -3885,7 +3885,7 @@ trigger4 = var(20) && stateno = 1000 && animelemtime(12) > 1
 trigger5 = var(20) && stateno = 1010 && animelemtime(1) > 1
 trigger6 = var(20) && stateno = 1050 && animelemtime(6) > 1
 trigger7 = var(20) && stateno = 1100 && movecontact
-trigger8 = var(20) && (stateno =  [1200,1300]) && movecontact
+trigger8 = var(20) && (stateno = [1200,1300]) && movecontact
 trigger9 = var(20) && (stateno = 450) && movecontact
 trigger10 = (stateno = [200, 250]) && movecontact && stateno!=221 && !var(55)
 trigger10 = anim!=220

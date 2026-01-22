@@ -3100,7 +3100,7 @@ ctrl = 1
 ;--------------------------------------------------------------------------
 ;Gen'ei Shiranui-Shimo Agito
 [Statedef 1510]
-type   =C
+type =C
 movetype=A
 physics=N
 poweradd=0
@@ -3134,11 +3134,11 @@ channel = 0
 type=HitDef
 trigger1=animelem=7
 trigger2=animelem=8&&!movecontact
-attr=C,SA        
-hitflag=MAF       
-guardflag=L         
-animtype=Hard         
-priority=4,Hit   
+attr=C,SA 
+hitflag=MAF 
+guardflag=L 
+animtype=Hard 
+priority=4,Hit 
 damage = 56, 12
 getpower=72 * !var(20), 0
 givepower=36, 36
@@ -3151,7 +3151,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low   
+ground.type=Low 
 air.type=Low
 ground.slidetime=18
 ground.hittime=18
@@ -3291,7 +3291,7 @@ ctrl=1
 ;--------------------------------------------------------------------------
 ;Gen'ei Shiranui-Uwa Agito
 [Statedef 1520]
-type   =C
+type =C
 movetype=A
 physics=N
 poweradd=0
@@ -3393,11 +3393,11 @@ channel = 0
 [State 1520, HitDef]
 type=HitDef
 trigger1=animelem=8
-attr=A,SA        
-hitflag=MAF       
-guardflag=L         
-animtype=Hard         
-priority=4,Hit   
+attr=A,SA 
+hitflag=MAF 
+guardflag=L 
+animtype=Hard 
+priority=4,Hit 
 damage = 56, 12
 getpower=72 * !var(20), 0
 givepower=36, 36
@@ -3410,7 +3410,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low  
+ground.type=Low 
 air.type=Low
 ground.slidetime=18
 ground.hittime=18
@@ -3445,7 +3445,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Uwa Agito
 [Statedef 1522]
-type   =S
+type =S
 movetype= A
 physics=N
 ctrl=0
@@ -3546,11 +3546,11 @@ persistent=0
 [State 1522, HitDef]
 type=HitDef
 trigger1=animelem=7
-attr=A,SA        
-hitflag=MAF       
-guardflag=H         
-animtype=Hard         
-priority=4,Hit   
+attr=A,SA 
+hitflag=MAF 
+guardflag=H 
+animtype=Hard 
+priority=4,Hit 
 damage = 56,8
 getpower=30 * !var(20), 0
 givepower=30, 30
@@ -3563,7 +3563,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High    
+ground.type=High 
 air.type=Low
 ground.slidetime=16
 ground.hittime=16
@@ -3801,7 +3801,7 @@ ctrl = 1
 ;--------------------------------------------------------------------------
 ;EX-Gen'ei Shiranui-Shimo Agito
 [Statedef 1530]
-type   =C
+type =C
 movetype=A
 physics=N
 poweradd=0
@@ -3834,11 +3834,11 @@ channel = 0
 type=HitDef
 trigger1=animelem=7
 trigger2=animelem=8&&!movecontact
-attr=C,SA        
-hitflag=MAF       
-guardflag=L         
-animtype=Hard         
-priority=4,Hit   
+attr=C,SA 
+hitflag=MAF 
+guardflag=L 
+animtype=Hard 
+priority=4,Hit 
 damage = 56, 12
 getpower=0, 0
 givepower=36, 36
@@ -3850,7 +3850,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low   
+ground.type=Low 
 air.type=Low
 ground.slidetime=18
 ground.hittime=18
@@ -3989,7 +3989,7 @@ ctrl=1
 ;--------------------------------------------------------------------------
 ;EX-Gen'ei Shiranui-Uwa Agito
 [Statedef 1540]
-type   =C
+type =C
 movetype=A
 physics=N
 poweradd=0
@@ -4091,11 +4091,11 @@ channel = 0
 [State 1540, HitDef]
 type=HitDef
 trigger1=animelem=8
-attr=A,SA        
-hitflag=MAF       
-guardflag=L         
-animtype=Hard         
-priority=4,Hit   
+attr=A,SA 
+hitflag=MAF 
+guardflag=L 
+animtype=Hard 
+priority=4,Hit 
 damage = 56, 12
 getpower=0,0
 givepower=36, 36
@@ -4107,7 +4107,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low  
+ground.type=Low 
 air.type=Low
 ground.slidetime=18
 ground.hittime=18
@@ -4143,7 +4143,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;EX-Uwa Agito
 [Statedef 1542]
-type   =S
+type =S
 movetype= A
 physics=N
 ctrl=0
@@ -4244,11 +4244,11 @@ persistent=0
 [State 1542, HitDef]
 type=HitDef
 trigger1=animelem=7
-attr=A,SA        
-hitflag=MAF       
-guardflag=H         
-animtype=Hard         
-priority=4,Hit   
+attr=A,SA 
+hitflag=MAF 
+guardflag=H 
+animtype=Hard 
+priority=4,Hit 
 damage = 56,8
 getpower=0,0
 givepower=30, 30
@@ -4260,7 +4260,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High    
+ground.type=High 
 air.type=Low
 ground.slidetime=16
 ground.hittime=16
@@ -4467,7 +4467,7 @@ p2sprpriority = 0
 p2facing = 1
 p1stateno = 1602
 p2stateno = 1620 
-ground.hittime =122   
+ground.hittime =122 
 numhits=0
 
 [State 1601, End]
@@ -4836,7 +4836,7 @@ p2sprpriority = 0
 p2facing = 1
 p1stateno = 1627
 p2stateno = 1620 
-ground.hittime =122   
+ground.hittime =122 
 numhits=0
 getpower=0,0
 

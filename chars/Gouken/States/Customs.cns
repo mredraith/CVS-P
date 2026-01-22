@@ -190,7 +190,7 @@ movecamera = 1,0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 1215  ;custom animation
+value = 1215 ;custom animation
 
 [State 0, ChangeState]
 type = SelfState
@@ -329,7 +329,7 @@ y = 1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3160  ;custom animation
+value = 3160 ;custom animation
 
 [State 0, ChangeState]
 type = SelfState
@@ -365,7 +365,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3220  ;custom animation
+value = 3220 ;custom animation
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = p2stateno!=3201
@@ -400,7 +400,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3221  ;custom animation
+value = 3221 ;custom animation
 
 [State 0, ChangeState]
 type = SelfState
@@ -421,7 +421,7 @@ sprpriority = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3222  ;custom animation
+value = 3222 ;custom animation
 [State 0, SelfState]
 type = SelfState
 trigger1 = time>=40
@@ -444,7 +444,7 @@ value = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3235  ;custom animation
+value = 3235 ;custom animation
 
 [State 0, selfstate]
 type = SelfState
@@ -539,7 +539,7 @@ y = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3220  ;custom animation
+value = 3220 ;custom animation
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = p2stateno!=3251
@@ -568,7 +568,7 @@ value = SCA,HA
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3222  ;custom animation
+value = 3222 ;custom animation
 [State 0, SelfState]
 type = SelfState
 trigger1 = time>=60
@@ -605,7 +605,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3285  ;custom animation
+value = 3285 ;custom animation
 
 [State 0, SelfState]
 type = SelfState
@@ -642,7 +642,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3286  ;custom animation
+value = 3286 ;custom animation
 [State 0, SelfState]
 type = SelfState
 trigger1 = animtime=0
@@ -1118,7 +1118,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;custom animation
+value = 4020 ;custom animation
 
 [State 0, ChangeState]
 type = changeState

@@ -414,9 +414,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -596,9 +596,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -778,9 +778,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -960,9 +960,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -1142,9 +1142,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -1324,9 +1324,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -2609,7 +2609,7 @@ sprpriority = 2
 [State 2800, power]
 type=poweradd
 triggerall= power<const(data.power) && power<powermax
-trigger1= var(59)<=0 && command = "hold_y" && command =  "hold_b"
+trigger1= var(59)<=0 && command = "hold_y" && command = "hold_b"
 trigger2= var(59)>=1
 value= 2 + ifelse(time<60, 0, (time-60)/12)
 
@@ -2639,7 +2639,7 @@ name = "Charge FX"
 ID = 2890
 stateno = 2890
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2647,7 +2647,7 @@ ownpal = 1
 [State 2800, End]
 type=changestate
 trigger1= power>=const(data.power) || power>=powermax || roundstate!=2
-trigger2= var(59)<=0 && command != "hold_y" && command !=  "hold_b"
+trigger2= var(59)<=0 && command != "hold_y" && command != "hold_b"
 trigger3= var(59)>=1 && (inguarddist || p2bodydist x<=150)
 value=2801
 ctrl=1
@@ -2874,9 +2874,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity

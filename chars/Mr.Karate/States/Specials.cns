@@ -466,7 +466,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 89 < 7, 7, fvar(11) * 89)), 10
 priority = 4, hit
@@ -682,7 +682,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 102 < 7, 7, fvar(11) * 102)), 10
 priority = 4, hit
@@ -862,7 +862,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 111 < 7, 7, fvar(11) * 111)), 10
 priority = 4, hit
@@ -1050,7 +1050,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 90 < 7, 7, fvar(11) * 90)), 10
 priority = 4, hit
@@ -4005,7 +4005,7 @@ value = SCA
 [State 1200, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1=  AnimElem = 3
+trigger1= AnimElem = 3
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 65 < 7, 7, fvar(11) * 65)), 8
 priority = 4, hit
@@ -9467,7 +9467,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = -1

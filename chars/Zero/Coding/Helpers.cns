@@ -639,7 +639,7 @@ trigger1 = animelem = 1
 anim = 3004
 ID = 3006
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1327,7 +1327,7 @@ ignorehitpause=1
 [State 0, VarSet]
 type = ParentVarSet
 trigger1 = time = 0
-v = 8    ;fv = 10
+v = 8 ;fv = 10
 value = -1
 
 [State 2247, End]
@@ -1411,7 +1411,7 @@ var(27) = 1
 
 [State 3005, Hit]
 type = hitdef
-trigger1 =  1
+trigger1 = 1
 priority = 4, Hit
 attr = S, HP
 damage = 20, 8
@@ -1704,7 +1704,7 @@ trigger1 = animelem = 1
 anim = 3006
 ID = 3006
 pos = ifelse(prevstateno = 1404,0,25), ifelse (prevstateno = 1404, 0,0)
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1729,7 +1729,7 @@ trigger1 = animelem = 1
 anim = 3415
 ID = 3006
 pos = ifelse(prevstateno = 2006,0,30), ifelse (prevstateno = 2006, 30,0);30,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2044,7 +2044,7 @@ var(27) = 1
 
 [State 3005, Hit]
 type = hitdef
-trigger1 =  1
+trigger1 = 1
 priority = 4, Hit
 attr = S, HP
 damage = 20, 8
@@ -2636,7 +2636,7 @@ trigger1 = AnimElem = 2
 anim = 6009
 ID = 6009
 pos = 88,130
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 999
 removetime = -2
 scale = .9,.9
@@ -2683,7 +2683,7 @@ type = VelSet
 trigger1 = 1
 y = 8
 
-[State 701: 	AfterImage]
+[State 701: AfterImage]
 type = AfterImage
 trigger1 = !time
 time = -1
@@ -2748,7 +2748,7 @@ trigger1 = pos y >= 10
 value = 7,3
 
 [State 700,EnvShake]
-type	= EnvShake
+type = EnvShake
 trigger1 = pos y >= 10
 time = 5
 freq = 60
@@ -2838,7 +2838,7 @@ trigger1 = pos y >= 10
 value = 2000,0
 
 [State 700,EnvShake]
-type	= EnvShake
+type = EnvShake
 trigger1 = pos y >= 10
 time = 5
 freq = 60
@@ -2924,7 +2924,7 @@ trigger1 = pos y >= 10
 value = 2000,0
 
 [State 700,EnvShake]
-type	= EnvShake
+type = EnvShake
 trigger1 = pos y >= 10
 time = 5
 freq = 60
@@ -3010,7 +3010,7 @@ trigger1 = pos y >= 10
 value = 2000,0
 
 [State 700,EnvShake]
-type	= EnvShake
+type = EnvShake
 trigger1 = pos y >= 10
 time = 5
 freq = 60
@@ -3096,7 +3096,7 @@ trigger1 = pos y >= 10
 value = 2000,0
 
 [State 700,EnvShake]
-type	= EnvShake
+type = EnvShake
 trigger1 = pos y >= 10
 time = 5
 freq = 60
@@ -3182,7 +3182,7 @@ trigger1 = pos y >= 10
 value = 2000,0
 
 [State 700,EnvShake]
-type	= EnvShake
+type = EnvShake
 trigger1 = pos y >= 10
 time = 5
 freq = 60
@@ -3507,7 +3507,7 @@ trigger1 = time = 0
 anim = 3008
 ID = 3008
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4502,7 +4502,7 @@ trigger1 = animelem = 7
 anim = 231
 ID = 400
 pos = 18,-18
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 bindtime = -1
@@ -4521,7 +4521,7 @@ trigger1 = animelem = 14
 anim = 1008
 ID = 400
 pos = -20,-22
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -4544,7 +4544,7 @@ trigger1 = animelem = 34
 anim = 1008
 ID = 400
 pos = 20,-22
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -4568,14 +4568,14 @@ anim = 401
 ID = 400
 scale = .5,.5
 pos = -50,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 0, explod]
@@ -4586,7 +4586,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -7034,7 +7034,7 @@ trigger1 = !time
 anim = 7021
 ID = 7021
 pos = 0,0
-postype = left  ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 removetime = -1
 pausemovetime = -1
 supermovetime = -1
@@ -7053,7 +7053,7 @@ trigger1 = root,stateno = 3202
 anim = 7022
 ID = 7021
 pos = 0,0
-postype = left  ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 removetime = 320
 pausemovetime = -1
 supermovetime = -1
@@ -7102,7 +7102,7 @@ trigger1 = !time
 anim = 2550
 ID = 2550
 pos = 0,0
-postype = left  ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 pausemovetime = -1
 supermovetime = -1
 removetime = -2
@@ -7187,7 +7187,7 @@ add = 150,150,150
 mul = 150,150,150
 
 ;----- Set Animation -----
-[State 9999, VarSet]		; Binded Animation Fix
+[State 9999, VarSet] ; Binded Animation Fix
 type = VarSet
 trigger1 = Root, HitPauseTime = 0
 var(0) = Root, AnimElemNo(0)
@@ -7395,7 +7395,7 @@ time = 2
 [State 9999, Variables]
 type = DisplayToClipboard
 trigger1 = 1
-text = "Scale X:  %f     Scale Y:  %f     Timer: %d \nSize X:   %f     Size Y:   %f"
+text = "Scale X: %f Scale Y: %f Timer: %d \nSize X: %f Size Y: %f"
 params = FVar(0), FVar(1), Var(10), FVar(10), FVar(11)
 
 [State 9999, Destroy]

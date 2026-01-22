@@ -1,33 +1,33 @@
 [Data]
-life = 955			;Amount of life to start with
+life = 955 ;Amount of life to start with
 power = 3000
-attack = 100		;attack power (more is stronger)
-defence = 100		;defensive power (more is stronger)
-fall.defence_up = 50	;Percentage to increase defense everytime player is knocked down
-lieDown.time = 15		;Time which player lies down for, before getting up
-airjuggle = 15		;Number of points for juggling
-sparkno = s8010			;Default hit spark number for HitDefs
-guard.sparkno = s8000	;Default guard spark number
-KO.echo = 0			;1 to enable echo on KO
-volumescale = 100			;Volume offset (negative for softer)
-IntPersistIndex = 60	;Variables with this index and above will not have their values
+attack = 100 ;attack power (more is stronger)
+defence = 100 ;defensive power (more is stronger)
+fall.defence_up = 50 ;Percentage to increase defense everytime player is knocked down
+lieDown.time = 15 ;Time which player lies down for, before getting up
+airjuggle = 15 ;Number of points for juggling
+sparkno = s8010 ;Default hit spark number for HitDefs
+guard.sparkno = s8000 ;Default guard spark number
+KO.echo = 0 ;1 to enable echo on KO
+volumescale = 100 ;Volume offset (negative for softer)
+IntPersistIndex = 60 ;Variables with this index and above will not have their values
 FloatPersistIndex = 40
 
 [Size]
-xscale = 1			;Horizontal scaling factor.
-yscale = 1			;Vertical scaling factor.
-ground.back = 20		;Player width (back, ground)
-ground.front = 16		;Player width (front, ground)
-air.back = 12		;Player width (back, air)
-air.front = 12		;Player width (front, air)
-height = 60			;Height of player (for opponent to jump over)
-attack.dist = 160		;Default attack distance
-proj.attack.dist = 90	;Default attack distance for projectiles
-proj.doscale = 0		;Set to 1 to scale projectiles too   
-head.pos = -6, -83	;Approximate position of head
-mid.pos = -6, -56		;Approximate position of midsection
-shadowoffset = 0		;Number of pixels to vertically offset the shadow
-draw.offset = 0,0		;Player drawing offset in pixels (x, y)
+xscale = 1 ;Horizontal scaling factor.
+yscale = 1 ;Vertical scaling factor.
+ground.back = 20 ;Player width (back, ground)
+ground.front = 16 ;Player width (front, ground)
+air.back = 12 ;Player width (back, air)
+air.front = 12 ;Player width (front, air)
+height = 60 ;Height of player (for opponent to jump over)
+attack.dist = 160 ;Default attack distance
+proj.attack.dist = 90 ;Default attack distance for projectiles
+proj.doscale = 0 ;Set to 1 to scale projectiles too 
+head.pos = -6, -83 ;Approximate position of head
+mid.pos = -6, -56 ;Approximate position of midsection
+shadowoffset = 0 ;Number of pixels to vertically offset the shadow
+draw.offset = 0,0 ;Player drawing offset in pixels (x, y)
 
 [Velocity]
 walk.fwd = 3.33
@@ -277,10 +277,10 @@ time = 160
 length = 5
 timegap = 2
 framegap = 1
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100;255,255,255
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 trans = add1
 
 [State 50, 1]
@@ -404,7 +404,7 @@ trigger1 =animelem = 4 || animelem =6
 anim =840
 ID =840
 pos = -10,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -589,10 +589,10 @@ time = 24
 length = 5
 timegap = 2
 framegap = 1
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100;255,255,255
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 trans = add1
 
 [State 0, HitBy]
@@ -691,10 +691,10 @@ time = 20
 length = 5
 timegap = 2
 framegap = 1
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100;255,255,255
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 trans = add1
 
 [State 0, Step]
@@ -709,7 +709,7 @@ trigger1 =!(time%5)
 anim =840
 ID =840
 pos = 5,7
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -729,12 +729,12 @@ x = 12
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  animelem = 5
+trigger1 = animelem = 5
 x = 5
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  animelem = 7
+trigger1 = animelem = 7
 x = 0
 
 [State 0, PlaySnd]
@@ -786,7 +786,7 @@ trigger1 = numexplod(172) = 0
 anim = 172
 ID = 172
 pos = -5,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1005,7 +1005,7 @@ trigger1 =time = 0
 anim =10181
 ID =10181
 pos = 0,-350
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,1.5
@@ -1025,7 +1025,7 @@ trigger1 = time = 0
 anim =52
 ID =52
 pos = 0,-350
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1045,7 +1045,7 @@ trigger1 =time = 11
 anim =53
 ID =53
 pos = 0,30
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1068,15 +1068,15 @@ y = .4
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 0
-physics = N         ;A,C,S,N
+physics = N ;A,C,S,N
 
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
-statetype = S       ;S,A,C,L
-movetype = I        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = I ;I,A,H
+physics = S ;A,C,S,N
 
 [State 0, VelSet]
 type = VelSet
@@ -1099,7 +1099,7 @@ trigger1 = animelem = 9
 anim =52
 ID =52
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1157,7 +1157,7 @@ trigger1 = random < 300
 anim =10195
 ID =10181
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1221,7 +1221,7 @@ channel = 7
 
 [State 0, AssertSpecial]
 type = AssertSpecial
-trigger1 =  1
+trigger1 = 1
 flag = roundnotover
 
 [State 0, ChangeState]
@@ -1254,7 +1254,7 @@ trigger1 = animtime = -77
 anim =52
 ID =52
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1275,7 +1275,7 @@ trigger1 = animtime = -19
 anim =53
 ID =53
 pos = 0,30
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1330,7 +1330,7 @@ y = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 0
-physics = N         ;A,C,S,N
+physics = N ;A,C,S,N
 
 [State 0, AssertSpecial]
 type = AssertSpecial
@@ -1391,7 +1391,7 @@ trigger1 = animelem = 1
 anim =10186
 ID =10186
 pos = 0,-25
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1413,7 +1413,7 @@ trigger1 = animelem = 4
 anim =10185
 ID =10185
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1475,7 +1475,7 @@ trigger1 = numexplod(188) = 0
 anim = 10188
 ID = 188
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1505,7 +1505,7 @@ trigger1 = numexplod(172) = 0
 anim = 172
 ID = 172
 pos = -5,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1641,7 +1641,7 @@ trigger1 = anim = 190
 anim = 10190
 ID = 190
 pos = 13,-72
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1657,12 +1657,12 @@ shadow = 0,0,0
 ownpal = 1
 
 [state 3100, Shake]
-type = EnvShake			;Shake the screen
+type = EnvShake ;Shake the screen
 trigger1 = anim = 190
 trigger1 = AnimElem = 25
-time = 23			;ticks
-freq = 80			;0-180, default 60
-ampl = -7			;default -4
+time = 23 ;ticks
+freq = 80 ;0-180, default 60
+ampl = -7 ;default -4
 
 [State 0, Land Dust]
 type = Explod
@@ -1671,7 +1671,7 @@ trigger1 = AnimElem = 25
 anim =52
 ID =52
 pos = 23,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1708,7 +1708,7 @@ trigger1 = anim = 191
 anim = 10191
 ID = 191
 pos = -15,-81
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1835,7 +1835,7 @@ trigger1 = animelem = 4
 anim =10193
 ID =10193
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,.2
@@ -1856,7 +1856,7 @@ trigger1 = animelem = 6
 anim =10196
 ID =10196
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -1877,7 +1877,7 @@ trigger1 = animelem = 6
 anim =10197
 ID =10197
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -2033,7 +2033,7 @@ trigger1 = animelem = 5
 anim =10186
 ID =10186
 pos = -9,-25
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -2123,16 +2123,16 @@ value = 0
 ;---------------------------------------------------------------------------
 ; Stand Jab
 [Statedef 200]
-type = S			;State-type: S-stand, C-crouch, A-air, L-liedown
-movetype= A			;Move-type: A-attack, I-idle, H-gethit
-physics = S			;Physics: S-stand, C-crouch, A-air
-juggle = 1			;Number of air juggle points move takes
+type = S ;State-type: S-stand, C-crouch, A-air, L-liedown
+movetype= A ;Move-type: A-attack, I-idle, H-gethit
+physics = S ;Physics: S-stand, C-crouch, A-air
+juggle = 1 ;Number of air juggle points move takes
 ;Commonly-used controllers:
-velset = 0,0			;Set velocity (x,y) (Def: no change)
-ctrl = 0			;Set ctrl (Def: no change)
-anim = 200			;Change animation (Def: no change)
-poweradd = 20			;Power to add (Def: 0)
-sprpriority = 2			;Set layering priority to 2 (in front)
+velset = 0,0 ;Set velocity (x,y) (Def: no change)
+ctrl = 0 ;Set ctrl (Def: no change)
+anim = 200 ;Change animation (Def: no change)
+poweradd = 20 ;Power to add (Def: 0)
+sprpriority = 2 ;Set layering priority to 2 (in front)
 
 [State 0, Swish]
 type = PlaySnd
@@ -2142,8 +2142,8 @@ value = S1,0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 180			;0-180, default 60
+time = 3 ;ticks
+freq = 180 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -2159,26 +2159,26 @@ channel = 7
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(28))
 trigger1 = Time = 0
-attr = S, NA			;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
-damage = 10, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = M			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 6		;Time attacker pauses, time opponent shakes
+attr = S, NA ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
+damage = 10, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = M ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 6 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 55), var(36) := -82
-hitsound = s2, 0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-2		;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
-air.hittime = 12		;Time before opponent regains control in air
+hitsound = s2, 0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-2 ;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
+air.hittime = 12 ;Time before opponent regains control in air
 
 [State 200, Stand Jab2]
 type = ChangeState
@@ -2228,22 +2228,22 @@ value = 0
 ctrl = 1
 
 [Statedef 205, - Stand Jab2]
-type = S			;State-type: S-stand, C-crouch, A-air, L-liedown
-movetype= A			;Move-type: A-attack, I-idle, H-gethit
-physics = S			;Physics: S-stand, C-crouch, A-air
-juggle = 0			;Number of air juggle points move takes
+type = S ;State-type: S-stand, C-crouch, A-air, L-liedown
+movetype= A ;Move-type: A-attack, I-idle, H-gethit
+physics = S ;Physics: S-stand, C-crouch, A-air
+juggle = 0 ;Number of air juggle points move takes
 ;Commonly-used controllers:
-velset = 0,0			;Set velocity (x,y) (Def: no change)
-ctrl = 0			;Set ctrl (Def: no change)
-anim = 205			;Change animation (Def: no change)
-poweradd = 40			;Power to add (Def: 0)
-sprpriority = 2			;Set layering priority to 2 (in front)
+velset = 0,0 ;Set velocity (x,y) (Def: no change)
+ctrl = 0 ;Set ctrl (Def: no change)
+anim = 205 ;Change animation (Def: no change)
+poweradd = 40 ;Power to add (Def: 0)
+sprpriority = 2 ;Set layering priority to 2 (in front)
 
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 150			;0-180, default 60
+time = 3 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -2263,26 +2263,26 @@ channel = 7
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = S, NA			;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
-damage = 15, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = M			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 6		;Time attacker pauses, time opponent shakes
+attr = S, NA ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
+damage = 15, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = M ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 6 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 46), var(36) := -65
-hitsound = s3, 0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 12		;Time that the opponent slides back
-ground.hittime = 16		;Time opponent is in hit state
-ground.velocity = -3		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-2		;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
-air.hittime = 12		;Time before opponent regains control in air
+hitsound = s3, 0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 12 ;Time that the opponent slides back
+ground.hittime = 16 ;Time opponent is in hit state
+ground.velocity = -3 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-2 ;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
+air.hittime = 12 ;Time before opponent regains control in air
 
 
 [State 200, Stand Strong2]
@@ -2342,8 +2342,8 @@ value = S1,1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 8			;ticks
-freq = 150			;0-180, default 60
+time = 8 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -2355,7 +2355,7 @@ attr = S, NA
 animtype = Medium
 damage = 23
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,8
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -2404,8 +2404,8 @@ anim = 215
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 8			;ticks
-freq = 150			;0-180, default 60
+time = 8 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -2429,7 +2429,7 @@ attr = S, NA
 animtype = Medium
 damage = ifelse(prevstateno = 210,12,17),0
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,8
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -2493,8 +2493,8 @@ value = S1,2
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -2506,7 +2506,7 @@ attr = S, NA
 animtype = Hard
 damage = 39
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -2566,8 +2566,8 @@ value = S1,2
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -2579,7 +2579,7 @@ attr = S, NA
 animtype = Hard
 damage = ifelse(prevstateno = 220,20,34),0
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -2620,15 +2620,15 @@ velset = 0,0
 
 [State 0, ChangeAnim]
 type = ChangeAnim
-trigger1 =  time = 0
+trigger1 = time = 0
 value = 230
 elem = ifelse(prevstateno = 230,2,1)
 
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 180			;0-180, default 60
+time = 3 ;ticks
+freq = 180 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -2648,26 +2648,26 @@ channel = 7
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = S, NA			;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
-damage = 14, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = M			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 6		;Time attacker pauses, time opponent shakes
+attr = S, NA ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
+damage = 14, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = M ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 6 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := ifelse(p2statetype = C,43,58)), var(36) := ifelse(p2statetype = C,-53,-81)
-hitsound = s3, 0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime =8		;Time that the opponent slides back
-ground.hittime = 15		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-2		;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
-air.hittime = 12		;Time before opponent regains control in air
+hitsound = s3, 0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime =8 ;Time that the opponent slides back
+ground.hittime = 15 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-2 ;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
+air.hittime = 12 ;Time before opponent regains control in air
 
 
 [State 200, Stand Forward]
@@ -2767,7 +2767,7 @@ attr = S, NA
 animtype = Medium
 damage = 27
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,8
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -2789,7 +2789,7 @@ attr = S, NA
 animtype = Medium
 damage = 47
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 8,10
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -2808,8 +2808,8 @@ getpower = 200,0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -2842,8 +2842,8 @@ anim = 245
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -2867,7 +2867,7 @@ attr = S, NA
 animtype = Medium
 damage = 20
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,8
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -2928,14 +2928,14 @@ y = -10
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = time = 0
-time = 7			;ticks
-freq = 150			;0-180, default 60
+time = 7 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 
 [State 1522, 4] ;Hit ground
 type = SelfState
 Triggerall = time > 10
-trigger1 = Pos Y  >= -20
+trigger1 = Pos Y >= -20
 value = 5100 ;Hit ground
 
 ;---------------------------------------------------------------------------
@@ -2965,8 +2965,8 @@ value = S1,2
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -2991,7 +2991,7 @@ attr = S, NA
 animtype = Hard
 damage = 45
 guardflag = L
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3012,7 +3012,7 @@ attr = S, NA
 animtype = Hard
 damage = 45
 guardflag = L
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3066,8 +3066,8 @@ value = S1,2
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -8
 ignorehitpause = 1
 persistent = 0
@@ -3085,7 +3085,7 @@ attr = S, NA
 animtype = Hard
 damage = 19
 guardflag = H
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3106,7 +3106,7 @@ trigger1 =time = 0
 anim =840
 ID =840
 pos = 5,7
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -3125,7 +3125,7 @@ trigger1 =time = 0
 anim =840
 ID =840
 pos = -30,7
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -3162,8 +3162,8 @@ value = S1,0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 180			;0-180, default 60
+time = 3 ;ticks
+freq = 180 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -3178,26 +3178,26 @@ channel = 7
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = C, NA                    ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
-damage = 10, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = L		;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+attr = C, NA ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
+damage = 10, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = L ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 28), var(36) := -61
-hitsound = s2, 0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = Low		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -3		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = Low			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
-air.hittime = 12		;Time before opponent regains control in air
+hitsound = s2, 0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = Low ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -3 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = Low ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
+air.hittime = 12 ;Time before opponent regains control in air
 
 [State 200, Crouch Jab2]
 type = ChangeState
@@ -3269,8 +3269,8 @@ channel = 7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 180			;0-180, default 60
+time = 3 ;ticks
+freq = 180 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -3278,26 +3278,26 @@ persistent = 0
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = C, NA                    ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
-damage = 15, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = L		;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+attr = C, NA ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
+damage = 15, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = L ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 33), var(36) := -51
-hitsound = s2, 0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = Low		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -3		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = Low			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
-air.hittime = 12		;Time before opponent regains control in air
+hitsound = s2, 0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = Low ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -3 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = Low ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
+air.hittime = 12 ;Time before opponent regains control in air
 
 [State 200, Crouch Strong2]
 type = ChangeState
@@ -3342,8 +3342,8 @@ channel = 7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -3360,7 +3360,7 @@ attr = C, NA
 animtype = Medium
 damage = 23,0
 guardflag = L
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,10
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3421,8 +3421,8 @@ value = S1,1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -3434,7 +3434,7 @@ attr = C, NA
 animtype = Medium
 damage = 17,0
 guardflag = L
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,10
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3496,8 +3496,8 @@ value = S1,2
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -3510,7 +3510,7 @@ attr = C, NA
 animtype = Hard
 damage = 39,0
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3531,7 +3531,7 @@ attr = C, NA
 animtype = Up
 damage = 39,0
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3571,8 +3571,8 @@ value = S1,0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 180			;0-180, default 60
+time = 3 ;ticks
+freq = 180 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -3586,33 +3586,33 @@ channel = 7
 
 [State 0, ChangeAnim]
 type = ChangeAnim
-trigger1 =  time = 0
+trigger1 = time = 0
 value = 430
 elem = ifelse(prevstateno = 430,2,1)
 
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = C, NA                    ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
-damage = 15, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = L			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+attr = C, NA ;Attribute: Stand, Crouch, Air; Normal,Special,Hyper; Attack,Projectile,Throw
+damage = 15, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = L ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0-7, 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 45), var(36) := -29
-hitsound = s3,0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = Low		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = Low			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
-air.hittime = 12		;Time before opponent regains control in air
+hitsound = s3,0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = Low ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = Low ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed, Y-velocity at which opponent is pushed
+air.hittime = 12 ;Time before opponent regains control in air
 
 [State 200, Stand Short]
 type = ChangeState
@@ -3686,8 +3686,8 @@ value = S1,1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -3717,7 +3717,7 @@ attr = C, NA
 animtype = Medium
 damage = 30
 guardflag = L
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,10
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3759,8 +3759,8 @@ anim = 450
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -3807,7 +3807,7 @@ attr = C, NA
 animtype = Hard
 damage = 51
 guardflag = L
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 9,9
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3846,8 +3846,8 @@ anim = 451
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -3855,8 +3855,8 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 2
-statetype = A       ;S,A,C,L
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+physics = N ;A,C,S,N
 
 [State 0, VelSet]
 type = VelSet
@@ -3888,7 +3888,7 @@ attr = C, NA
 animtype = Up
 damage = 19,0
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -3927,8 +3927,8 @@ y = 0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -8
 ignorehitpause = 1
 persistent = 0
@@ -3954,8 +3954,8 @@ y = -5.5
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 2
-statetype = A       ;S,A,C,L
-physics = A         ;A,C,S,N
+statetype = A ;S,A,C,L
+physics = A ;A,C,S,N
 
 [State 0, Land Dust]
 type = Explod
@@ -3963,7 +3963,7 @@ trigger1 = animelem = 1
 anim =52
 ID =52
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -3985,7 +3985,7 @@ attr = C, NA
 animtype = Up
 damage = 19,0
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -4014,8 +4014,8 @@ anim = 600
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 180			;0-180, default 60
+time = 3 ;ticks
+freq = 180 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -4035,26 +4035,26 @@ channel = 7
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = A, NA			;Attribute: Standing, Normal Attack
-damage = 15, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = HA			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+attr = A, NA ;Attribute: Standing, Normal Attack
+damage = 15, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = HA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 36), var(36) := -50
-hitsound = s2, 0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
-air.hittime = 120		;Time before opponent regains control in air
+hitsound = s2, 0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
+air.hittime = 120 ;Time before opponent regains control in air
 airguard.ctrltime = 60
 
 [State 200, Jump Jab]
@@ -4118,8 +4118,8 @@ anim = 610
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -4139,26 +4139,26 @@ value = S1,1
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = A, NA			;Attribute: Standing, Normal Attack
+attr = A, NA ;Attribute: Standing, Normal Attack
 animtype = Medium
 damage = 27,0
-guardflag = HA			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+guardflag = HA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 42), var(36) := -89
-hitsound = s2, 1			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
-air.hittime = 120		;Time before opponent regains control in air
+hitsound = s2, 1 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
+air.hittime = 120 ;Time before opponent regains control in air
 
 [State 200, Jump Forward2]
 type = ChangeState
@@ -4212,8 +4212,8 @@ value = S1,2
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -4225,7 +4225,7 @@ attr = A, NA
 animtype = Hard
 damage = 45
 guardflag = HA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -4263,8 +4263,8 @@ value = S1,0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 3			;ticks
-freq = 180			;0-180, default 60
+time = 3 ;ticks
+freq = 180 ;0-180, default 60
 ampl = -3
 ignorehitpause = 1
 persistent = 0
@@ -4279,26 +4279,26 @@ channel = 7
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
-attr = A, NA			;Attribute: Standing, Normal Attack
-damage = 20, 0			;Damage that move inflicts, guard damage
-animtype = Light		;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = HA			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+attr = A, NA ;Attribute: Standing, Normal Attack
+damage = 20, 0 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = HA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 52), var(36) := -48
-hitsound = s3, 0			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
-air.hittime = 120		;Time before opponent regains control in air
+hitsound = s3, 0 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
+air.hittime = 120 ;Time before opponent regains control in air
 
 [State 200, Jump Jab]
 type = ChangeState
@@ -4373,8 +4373,8 @@ value = S1,1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -4383,51 +4383,51 @@ persistent = 0
 type = HitDef
 trigger1 = Time = 0
 trigger1 = anim = 635
-attr = A, NA			;Attribute: Standing, Normal Attack
+attr = A, NA ;Attribute: Standing, Normal Attack
 animtype = Medium
 damage = 37,0
-guardflag = HA			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+guardflag = HA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 34), var(36) := -22
-hitsound = s3, 1			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
-air.hittime = 120		;Time before opponent regains control in air
+hitsound = s3, 1 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
+air.hittime = 120 ;Time before opponent regains control in air
 
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 0
 trigger1 = anim = 640
-attr = A, NA			;Attribute: Standing, Normal Attack
+attr = A, NA ;Attribute: Standing, Normal Attack
 animtype = Medium
 damage = 47,0
-guardflag = HA			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+guardflag = HA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 27), var(36) := -100
-hitsound = s3, 1			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -4		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-5		;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
-air.hittime = 120		;Time before opponent regains control in air
+hitsound = s3, 1 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-5 ;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
+air.hittime = 120 ;Time before opponent regains control in air
 
 [State 200, Jump Forward2]
 type = ChangeState
@@ -4482,8 +4482,8 @@ value = S1,2
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -7
 ignorehitpause = 1
 persistent = 0
@@ -4495,7 +4495,7 @@ attr = A, NA
 animtype = Hard
 damage = 56
 guardflag = HA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -4539,17 +4539,17 @@ type = Afterimage
 trigger1 = Time = 0
 time = 33
 length =5
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 Trans = Add1
 timegap = 2
 framegap = 1
 
 [State 0, Turn]
 type = Turn
-trigger1 =  p2dist x < 0
+trigger1 = p2dist x < 0
 trigger1 = time > 12
 
 [State 0, VelSet]
@@ -4577,13 +4577,13 @@ value = , AA,AP
 
 [State 0, PosAdd]
 type = PosAdd
-trigger1 = animelem = 2 || animelem = 3  || animelem = 4
+trigger1 = animelem = 2 || animelem = 3 || animelem = 4
 x = 1
 y = -2
 
 [State 0, PosAdd]
 type = PosAdd
-trigger1 = animelem = 10 || animelem = 11  || animelem = 12
+trigger1 = animelem = 10 || animelem = 11 || animelem = 12
 x = 0
 y = 2
 
@@ -4591,21 +4591,21 @@ y = 2
 type = ChangeState
 triggerall = command = "y"
 triggerall = var(20)<4
-trigger1 = time >9  && time < 27
+trigger1 = time >9 && time < 27
 value = 701
 
 [State 200, Slide]
 type = ChangeState
 triggerall = command = "c"
 triggerall = var(20)<4
-trigger1 = time >9  && time < 27
+trigger1 = time >9 && time < 27
 value = 702
 
 [State 200, Hard Hit]
 type = ChangeState
 triggerall = command = "z"
 triggerall = var(20)<4
-trigger1 = time >9  && time < 27
+trigger1 = time >9 && time < 27
 value = 703
 
 [State 800, 2]
@@ -4633,8 +4633,8 @@ channel = 7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 6			;ticks
-freq = 150			;0-180, default 60
+time = 6 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -5
 ignorehitpause = 1
 persistent = 0
@@ -4664,26 +4664,26 @@ y = 3
 [State 200, 1]
 type = HitDef
 trigger1 = Time = 15
-attr = A, NA			;Attribute: Standing, Normal Attack
+attr = A, NA ;Attribute: Standing, Normal Attack
 animtype = Hard
 damage = 17,0
-guardflag = HA			;Flags on how move is to be guarded against
-hitflag = MAF			;Flags of conditions that move can hit
-priority = 3, Hit		;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 8, 8		;Time attacker pauses, time opponent shakes
+guardflag = HA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority = 3, Hit ;Attack priority: 0 (least) to 7 (most), 4 default;Hit/Miss/Dodge type (Def: Hit)
+pausetime = 8, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 27), var(36) := -38
-hitsound = s2, 1			;Sound to play on hit
-guardsound = s0, 0		;Sound to play on guard
-ground.type = High		;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 9		;Time that the opponent slides back
-ground.hittime = 12		;Time opponent is in hit state
-ground.velocity = -7		;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8	;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High			;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3		;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
-air.hittime = 120		;Time before opponent regains control in air
+hitsound = s2, 1 ;Sound to play on hit
+guardsound = s0, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 9 ;Time that the opponent slides back
+ground.hittime = 12 ;Time opponent is in hit state
+ground.velocity = -7 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,;Y-velocity at which opponent is pushed
+air.hittime = 120 ;Time before opponent regains control in air
 
 [State 800, 2]
 type = ChangeState
@@ -4703,8 +4703,8 @@ sprpriority = -7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -8
 ignorehitpause = 1
 persistent = 0
@@ -4738,7 +4738,7 @@ attr = C, NA
 animtype = Hard
 damage = 31
 guardflag = L
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 pausetime = 7,7
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -4772,8 +4772,8 @@ sprpriority = -7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -8
 ignorehitpause = 1
 persistent = 0
@@ -4807,7 +4807,7 @@ attr = S, NA
 animtype = Hard
 damage = 39
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -4861,10 +4861,10 @@ type = Afterimage
 trigger1 = Time = 0
 time = 30
 length =5
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 Trans = Add1
 timegap = 2
 framegap = 1
@@ -4969,10 +4969,10 @@ type = Afterimage
 trigger1 = Time = 0
 time = 33
 length =5
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 Trans = Add1
 timegap = 2
 framegap = 1
@@ -5890,16 +5890,16 @@ trigger1 = var(20) = 0
 trigger1 = command = "holdfwd"
 trigger2 = var(20)
 trigger2 = p2bodydist X < 10 && p2bodydist y = 0 && FrontEdgeDist < 120
-attr = S, NT          ;Attributes: Stand, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, NT ;Attributes: Stand, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
-p1stateno = 810       ;On success, player changes to state 810
-p2stateno = 820       ;If hit, p2 changes to state 820 in player's cns
-fall = 1              ;Force p2 into falling down
+p2facing = 1 ;Force p2 to face player
+p1stateno = 810 ;On success, player changes to state 810
+p2stateno = 820 ;If hit, p2 changes to state 820 in player's cns
+fall = 1 ;Force p2 into falling down
 
 [State 800, 1]
 type = HitDef
@@ -5908,16 +5908,16 @@ trigger1 = var(20) = 0
 trigger1 = command = "holdback"
 trigger2 = var(20)
 trigger2 = p2bodydist X < 15 && p2bodydist y = 0 && BackEdgeDist < 120
-attr = S, NT          ;Attributes: Stand, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, NT ;Attributes: Stand, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
-p1stateno = 815       ;On success, player changes to state 810
-p2stateno = 825       ;If hit, p2 changes to state 820 in player's cns
-fall = 1              ;Force p2 into falling down
+p2facing = 1 ;Force p2 to face player
+p1stateno = 815 ;On success, player changes to state 810
+p2stateno = 825 ;If hit, p2 changes to state 820 in player's cns
+fall = 1 ;Force p2 into falling down
 
 [State 800, 2]
 type = ChangeState
@@ -5961,7 +5961,7 @@ name = "Spark"
 ID = 8000
 stateno = 8010
 pos = 47,-62
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5973,8 +5973,8 @@ persistent = 0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = time = 26
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -10
 ignorehitpause = 1
 persistent = 0
@@ -6052,7 +6052,7 @@ name = "Spark"
 ID = 8000
 stateno = 8010
 pos = -27,-56
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6069,8 +6069,8 @@ value=-80
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = time = 41
-time = 10			;ticks
-freq = 150			;0-180, default 60
+time = 10 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -10
 ignorehitpause = 1
 persistent = 0
@@ -6213,7 +6213,7 @@ name = "Cancel"
 ID = 2901
 stateno = 2901
 pos = 0,-50
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = ifelse(facing = 1,1,-1)
 keyctrl = 0
 ownpal = 1
@@ -6236,7 +6236,7 @@ name = "Attack Limiter"
 ID = 970
 stateno = 970
 pos = 3338,-47
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6292,7 +6292,7 @@ value = 1
 [State 0, HitOverride]
 type = HitOverride
 trigger1 = anim = 900
-attr = SCA,AA,AP       ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SCA,AA,AP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 stateno = 901
 time = 1
 
@@ -6409,7 +6409,7 @@ name = "rings"
 ID = 999
 stateno = 999
 pos = 0,-47
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6460,7 +6460,7 @@ name = "Defense Down"
 ID = 980
 stateno = 980
 pos = 3338,-47
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6579,7 +6579,7 @@ trigger1 = numexplod(905) = 0
 anim = 9999
 ID = 905
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -6636,10 +6636,10 @@ time = 16
 length = 5
 timegap = 2
 framegap = 1
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100;255,255,255
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 trans = add1
 
 [State 0, Width]
@@ -6667,8 +6667,8 @@ channel = 7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 15			;ticks
-freq = 150			;0-180, default 60
+time = 15 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -15
 ignorehitpause = 1
 persistent = 0
@@ -6684,7 +6684,7 @@ attr = S, CA
 animtype = Hard
 damage = 40
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 17,17
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -6710,7 +6710,7 @@ attr = S, SA
 animtype = Hard
 damage = 60
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -6735,7 +6735,7 @@ attr = S, SA
 animtype = Hard
 damage = 80
 guardflag =
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -6794,10 +6794,10 @@ time = 16
 length = 5
 timegap = 2
 framegap = 1
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100;255,255,255
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 trans = add1
 
 [State 0, Width]
@@ -6825,8 +6825,8 @@ channel = 7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 15			;ticks
-freq = 150			;0-180, default 60
+time = 15 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -15
 ignorehitpause = 1
 persistent = 0
@@ -6841,7 +6841,7 @@ attr = S, SA
 animtype = Hard
 damage = 40
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 17,17
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -6866,7 +6866,7 @@ attr = S, SA
 animtype = Hard
 damage = 60
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -6889,7 +6889,7 @@ attr = S, SA
 animtype = Hard
 damage = 80
 guardflag =
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -6947,10 +6947,10 @@ time = 13
 length = 5
 timegap = 2
 framegap = 1
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100;255,255,255
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 trans = add1
 
 [State 0, Width]
@@ -6978,8 +6978,8 @@ channel = 7
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 15			;ticks
-freq = 150			;0-180, default 60
+time = 15 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -15
 ignorehitpause = 1
 persistent = 0
@@ -6993,7 +6993,7 @@ attr = S, SA
 animtype = Hard
 damage = 40
 guardflag = L
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 17,17
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -7017,7 +7017,7 @@ attr = S, SA
 animtype = Hard
 damage = 80
 guardflag = L
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -7042,7 +7042,7 @@ attr = S, SA
 animtype = Hard
 damage = 100
 guardflag =
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -7104,10 +7104,10 @@ time = 46
 length = 5
 timegap = 2
 framegap = 1
-PalBright =   0,  0,  0
+PalBright = 0, 0, 0
 PalContrast = 100,100,100;255,255,255
-PalAdd =   0,  0,  0
-PalMul =  1,1,1
+PalAdd = 0, 0, 0
+PalMul = 1,1,1
 trans = add1
 
 [State 0, VarSet]
@@ -7175,7 +7175,7 @@ x = -1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 60
-statetype = L       ;S,A,C,L
+statetype = L ;S,A,C,L
 
 [State 0, ChangeState]
 type = ChangeState
@@ -7223,7 +7223,7 @@ y = -6
 [State 1522, 4] ;Hit ground
 type = SelfState
 Triggerall = time > 24
-trigger1 = Pos Y  >= -20
+trigger1 = Pos Y >= -20
 value = 5100 ;Hit ground
 
 [Statedef 970, - Damage Limiter]
@@ -7293,13 +7293,13 @@ projedgebound = 40
 projstagebound = 40
 projheightbound = -240
 offset = 98,-57
-postype = p1         ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 projshadow = 0,0,0
 attr = S,SP
 animtype = Hard
 damage = 50,5
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 0,10
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno =-1 + 0*(var(34):=8001)
@@ -7320,13 +7320,13 @@ guard.hittime = 15
 
 [State 0, Helper]
 type = Helper
-trigger1 =  time = 8
+trigger1 = time = 8
 helpertype = normal ;player
 name = "Nanpa"
 ID = 1002
 stateno = 1002
 pos = 98,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -7398,7 +7398,7 @@ trigger1 = time = 0
 anim = 1003
 ID = 1003
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = -2
 scale = .33,.33
 sprpriority = 7
@@ -7480,13 +7480,13 @@ projedgebound = 40
 projstagebound = 40
 projheightbound = -240
 offset = 98,-57
-postype = p1         ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 projshadow = 0,0,0
 attr = S,SP
 animtype = Hard
 damage = 65,7
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 0,10
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno =-1 + 0*(var(34):=8001)
@@ -7513,7 +7513,7 @@ name = "Nanpa"
 ID = 1002
 stateno = 1002
 pos = 98,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -7599,13 +7599,13 @@ projedgebound = 40
 projstagebound = 40
 projheightbound = -240
 offset = 98,-57
-postype = p1         ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 projshadow = 0,0,0
 attr = S,SP
 animtype = Hard
 damage = 80,10
 guardflag = MA
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 pausetime = 0,0
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno =-1 + 0*(var(34):=8001)
@@ -7629,13 +7629,13 @@ airguard.velocity = -10,-1
 
 [State 0, Helper]
 type = Helper
-trigger1 =  time = 17
+trigger1 = time = 17
 helpertype = normal ;player
 name = "Nanpa"
 ID = 1002
 stateno = 1002
 pos = 98,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -7759,13 +7759,13 @@ projedgebound = 40
 projstagebound = 40
 projheightbound = -240
 offset = 98,-57
-postype = p1         ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 projshadow = 0,0,0
 attr = S,SP
 animtype = Hard
 damage = 80,10
 guardflag = MA
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 ;pausetime = 10,10
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno =-1 + 0*(var(34):=8001)
@@ -7810,13 +7810,13 @@ projedgebound = 40
 projstagebound = 40
 projheightbound = -240
 offset = 128,-57
-postype = p1         ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 projshadow = 0,0,0
 attr = S,SP
 animtype = Hard
 damage = 30,5
 guardflag = MA
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 ;pausetime = 10,10
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno =-1 + 0*(var(34):=8001)
@@ -7842,13 +7842,13 @@ airguard.velocity = -10,-1
 
 [State 0, Helper]
 type = Helper
-trigger1 =  time = 17
+trigger1 = time = 17
 helpertype = normal ;player
 name = "Nanpa"
 ID = 1002
 stateno = 1002
 pos = 98,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -7857,13 +7857,13 @@ scale = .5,.5
 
 [State 0, Helper]
 type = Helper
-trigger1 =  time = 27
+trigger1 = time = 27
 helpertype = normal ;player
 name = "Nanpa"
 ID = 1002
 stateno = 1002
 pos = 128,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -7911,21 +7911,21 @@ persistent = 0
 [State 800, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, ST          ;Attributes: Stand, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Stand, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
-p1stateno = 1101       ;On success, player changes to state 810
-p2stateno = 1102       ;If hit, p2 changes to state 820 in player's cns
-fall = 1              ;Force p2 into falling down
+p2facing = 1 ;Force p2 to face player
+p1stateno = 1101 ;On success, player changes to state 810
+p2stateno = 1102 ;If hit, p2 changes to state 820 in player's cns
+fall = 1 ;Force p2 into falling down
 
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 20
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 800, 2]
 type = ChangeState
@@ -7987,7 +7987,7 @@ value = 1103
 
 [State 240, Slide Sound]
 type = PlaySnd
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 value = 810, 0
 
 [State 810, State End]
@@ -8092,7 +8092,7 @@ sprpriority = 2
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 20
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 0, VelSet]
 type = VelSet
@@ -8115,16 +8115,16 @@ value = 15,10
 [State 800, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, ST          ;Attributes: Stand, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Stand, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
-p1stateno = 1112       ;On success, player changes to state 810
-p2stateno = 1113       ;If hit, p2 changes to state 820 in player's cns
-fall = 1              ;Force p2 into falling down
+p2facing = 1 ;Force p2 to face player
+p1stateno = 1112 ;On success, player changes to state 810
+p2stateno = 1113 ;If hit, p2 changes to state 820 in player's cns
+fall = 1 ;Force p2 into falling down
 
 [State 800, 2]
 type = ChangeState
@@ -8163,7 +8163,7 @@ name = "Spark"
 ID = 8000
 stateno = 8013
 pos = 91,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -8394,7 +8394,7 @@ sprpriority = 2
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 20
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -8417,16 +8417,16 @@ value = 15,10
 [State 800, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, ST          ;Attributes: Stand, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Stand, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
-p1stateno = 1112       ;On success, player changes to state 810
-p2stateno = 1113       ;If hit, p2 changes to state 820 in player's cns
-fall = 1              ;Force p2 into falling down
+p2facing = 1 ;Force p2 to face player
+p1stateno = 1112 ;On success, player changes to state 810
+p2stateno = 1113 ;If hit, p2 changes to state 820 in player's cns
+fall = 1 ;Force p2 into falling down
 
 [State 800, 2]
 type = ChangeState
@@ -8531,7 +8531,7 @@ facep2 = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 20
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -8554,16 +8554,16 @@ value = 15,10
 [State 800, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, ST          ;Attributes: Stand, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Stand, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
-p1stateno = 1132       ;On success, player changes to state 810
-p2stateno = 1133       ;If hit, p2 changes to state 820 in player's cns
-fall = 1              ;Force p2 into falling down
+p2facing = 1 ;Force p2 to face player
+p1stateno = 1132 ;On success, player changes to state 810
+p2stateno = 1133 ;If hit, p2 changes to state 820 in player's cns
+fall = 1 ;Force p2 into falling down
 getpower = 0,0
 
 [State 800, 2]
@@ -8665,8 +8665,8 @@ physics = N
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -8707,8 +8707,8 @@ value = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 10
-statetype = A       ;S,A,C,L
-physics = A         ;A,C,S,N
+statetype = A ;S,A,C,L
+physics = A ;A,C,S,N
 
 [State 210, Headbutt]
 type = HitDef
@@ -8717,7 +8717,7 @@ attr = S, NA
 animtype = Hard
 damage = 80
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 12,12
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -8756,8 +8756,8 @@ facep2 = 1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -8768,7 +8768,7 @@ attr = S, SA
 animtype = Hard
 damage = 49,4
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -8793,7 +8793,7 @@ channel = 7
 type = StateTypeSet
 trigger1 = Time>=8
 trigger1 = movehit
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 800, 2]
 type = ChangeState
@@ -8817,8 +8817,8 @@ anim = 1201
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -8851,7 +8851,7 @@ attr = A, SA
 animtype = Hard
 damage = 49,4
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -8887,9 +8887,9 @@ x =0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = 3
-statetype = A       ;S,A,C,L
-movetype = I        ;I,A,H
-physics = A         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = I ;I,A,H
+physics = A ;A,C,S,N
 
 [State 105, 3]
 type = ChangeState
@@ -8917,8 +8917,8 @@ value = 30,10
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -8930,7 +8930,7 @@ attr = S, SA
 animtype = Hard
 damage = 35,4
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -8973,8 +8973,8 @@ anim = 1201
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -9013,7 +9013,7 @@ attr = A, SA
 animtype = Hard
 damage = 49,4
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -9049,8 +9049,8 @@ facep2 = 1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -9067,7 +9067,7 @@ attr = S, SA
 animtype = Hard
 damage = 49,4
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -9110,8 +9110,8 @@ anim = 1201
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -9150,7 +9150,7 @@ attr = A, SA
 animtype = Hard
 damage = 49,4
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -9192,8 +9192,8 @@ var(53) = -500
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -9249,7 +9249,7 @@ trigger1 = AnimElem = 4
 helperType = Normal
 stateNo = 8103
 ID = 8100
-name = "Dash Dust"  
+name = "Dash Dust" 
 posType = P1
 facing = 1
 pauseMoveTime = 255
@@ -9263,7 +9263,7 @@ attr = S, SA
 animtype = Hard
 damage = 59,4
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -9316,8 +9316,8 @@ anim = 1201
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -9356,7 +9356,7 @@ attr = A, SA
 animtype = Hard
 damage = 59,4
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
@@ -9444,11 +9444,11 @@ trigger1 = animelem = 5
 value = S190,2
 
 [state 3100, Shake]
-type = EnvShake			;Shake the screen
+type = EnvShake ;Shake the screen
 trigger1 = AnimElem = 5
-time = 33			;ticks
-freq = 150			;0-180, default 60
-ampl = -12			;default -4
+time = 33 ;ticks
+freq = 150 ;0-180, default 60
+ampl = -12 ;default -4
 
 [State 0, Land Dust]
 type = Explod
@@ -9456,7 +9456,7 @@ trigger1 = AnimElem = 5
 anim =52
 ID =52
 pos = 23,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -9478,7 +9478,7 @@ attr = S, HA
 animtype = Hard
 damage = 200,10
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 0,12
 sparkno = -1 
 guard.sparkno = -1 ;+ 0 * (var(34) := 2010)
@@ -9505,7 +9505,7 @@ name = "Spark"
 ID = 8000
 stateno = ifelse(movehit,8014,8000)
 pos = 58,-61
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -9583,8 +9583,8 @@ value = 15,0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 17			;ticks
-freq = 150			;0-180, default 60
+time = 17 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -9621,7 +9621,7 @@ attr = S, HA
 animtype = Hard
 damage = ifelse(prevstateno = 3000,150,200),10
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 17,17
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
@@ -9680,8 +9680,8 @@ value = -1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 17			;ticks
-freq = 150			;0-180, default 60
+time = 17 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -9723,7 +9723,7 @@ attr = S, HA
 animtype = Hard
 damage = ifelse(prevstateno = 3010,150,200),10
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 17,17
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
@@ -9733,7 +9733,7 @@ guardsound = s0,0
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 21
-p2stateno = 3030       ;If hit, p2 changes to state 820 in player's cns
+p2stateno = 3030 ;If hit, p2 changes to state 820 in player's cns
 getpower = 0,0
 
 [State 0, Jet]
@@ -10001,11 +10001,11 @@ trigger1 = animelem = 5
 value = S190,2
 
 [state 3100, Shake]
-type = EnvShake			;Shake the screen
+type = EnvShake ;Shake the screen
 trigger1 = AnimElem = 5
-time = 33			;ticks
-freq = 150			;0-180, default 60
-ampl = -12			;default -4
+time = 33 ;ticks
+freq = 150 ;0-180, default 60
+ampl = -12 ;default -4
 
 [State 0, Land Dust]
 type = Explod
@@ -10013,7 +10013,7 @@ trigger1 = AnimElem = 5
 anim =52
 ID =52
 pos = 23,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -10035,7 +10035,7 @@ attr = S, HA
 animtype = Hard
 damage = 100,10
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 15,15
 sparkno = -1 + 0 * (var(33) := 8014)
 guard.sparkno=-1 + 0*(var(34):=8001)
@@ -10117,7 +10117,7 @@ value = 15,0
 
 [State 1100, HitDef]
 type = HitDef
-trigger1 = AnimElem = 19  
+trigger1 = AnimElem = 19 
 attr = S, HA
 animtype = Heavy
 air.animtype = Back
@@ -10157,7 +10157,7 @@ kill = 0
 
 [State 1100, HitDef]
 type = HitDef
-trigger1 = AnimElem = 20  
+trigger1 = AnimElem = 20 
 attr = S, HA
 animtype = Heavy
 air.animtype = Back
@@ -10203,7 +10203,7 @@ attr = S, HA
 animtype = Hard
 damage = 200,10
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 20,20
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
@@ -10213,7 +10213,7 @@ guardsound = s0,0
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 21
-p2stateno = 3030       ;If hit, p2 changes to state 820 in player's cns
+p2stateno = 3030 ;If hit, p2 changes to state 820 in player's cns
 getpower = 0,0
 
 [State 0, PlaySnd]
@@ -10436,7 +10436,7 @@ trigger1 = AnimElem = 1
 helperType = Normal
 stateNo = 8103
 ID = 8100
-name = "Dash Dust"  
+name = "Dash Dust" 
 posType = P1
 facing = 1
 pauseMoveTime = 255
@@ -10446,8 +10446,8 @@ ownPal = 1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 17			;ticks
-freq = 150			;0-180, default 60
+time = 17 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -10469,7 +10469,7 @@ attr = A, HA
 animtype = Hard
 damage = 230,10
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 17,17
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
@@ -10513,7 +10513,7 @@ trigger1 = AnimElem = 1
 helperType = Normal
 stateNo = 8103
 ID = 8100
-name = "Dash Dust"  
+name = "Dash Dust" 
 posType = P1
 facing = 1
 pauseMoveTime = 255
@@ -10523,8 +10523,8 @@ ownPal = 1
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 17			;ticks
-freq = 150			;0-180, default 60
+time = 17 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -10546,7 +10546,7 @@ attr = A, HA
 animtype = Hard
 damage = 350,10
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 17,17
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
@@ -10581,8 +10581,8 @@ facep2 = 1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 =animelem = 3
-statetype = S       ;S,A,C,L
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+physics = S ;A,C,S,N
 
 [State 800, 2]
 type = ChangeState
@@ -10617,13 +10617,13 @@ player = 15,15
 [State 800, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, HT          ;Attributes: Stand, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1 + 0*(var(33):=0)          ;No spark
-sprpriority = 1       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player
-p2stateno = 3230       ;If hit, p2 changes to state 820 in player's cns
+attr = S, HT ;Attributes: Stand, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 + 0*(var(33):=0) ;No spark
+sprpriority = 1 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player
+p2stateno = 3230 ;If hit, p2 changes to state 820 in player's cns
 ID = 3200
 
 [State 810, Bind 1]
@@ -10701,7 +10701,7 @@ trigger1 = time = 0
 anim = 3224
 ID = 3224
 pos = 90,-80
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -10735,13 +10735,13 @@ projedgebound = 40
 projstagebound = 40
 projheightbound = -240
 offset = 0,0
-postype = p1         ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 projshadow = 0,0,0
 attr = S,HP
 animtype = Hard
 damage = 300,18
 guardflag = MA
-hitflag = MAFD                    ;Flags of conditions that move can hit
+hitflag = MAFD ;Flags of conditions that move can hit
 pausetime = 10,10
 sparkno = -1 + 0*(var(33):=8013)
 guard.sparkno =-1 + 0*(var(34):=8001)
@@ -10799,7 +10799,7 @@ trigger1 = time = 0
 anim = 3221
 ID = 3221
 pos = 69,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -10827,7 +10827,7 @@ trigger1 = time = 100
 anim = 3222
 ID = 3222
 pos = 65,-66
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -10849,7 +10849,7 @@ trigger1 = time = 0
 anim = 3223
 ID = 3223
 pos = 60,-65
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -10867,7 +10867,7 @@ removeongethit = 0
 [State 0, ModifyShockWave]
 type = ModifyExplod
 trigger1 = time >0
-ID =  3223
+ID = 3223
 scale = .5+time*-.005,.5+time*-.005
 
 [State 0, StopSnd]
@@ -10903,7 +10903,7 @@ trigger1 = time = 0
 anim = 4100
 ID = 4100
 pos = 90,-90
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -10921,7 +10921,7 @@ removeongethit = 0
 [State 0, ModifyShockWave]
 type = ModifyExplod
 trigger1 = time >0
-ID =  4100
+ID = 4100
 scale = .01+time*.03,.01+time*.03
 trans = addalpha
 alpha = 256-(1*time),256
@@ -10934,7 +10934,7 @@ trigger1 = time = 0
 anim = 3224
 ID = 3224
 pos = 90,-90
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = -2
 scale = .5,.5
 sprpriority = 999
@@ -11180,8 +11180,8 @@ darken = 0
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -11198,7 +11198,7 @@ attr = S, SA
 animtype = Hard
 damage = 49,4
 guardflag = M
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 20,20
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
@@ -11235,8 +11235,8 @@ anim = 3301
 [State 0, EnvShake]
 type = EnvShake
 trigger1 = movehit
-time = 12			;ticks
-freq = 150			;0-180, default 60
+time = 12 ;ticks
+freq = 150 ;0-180, default 60
 ampl = -12
 ignorehitpause = 1
 persistent = 0
@@ -11275,7 +11275,7 @@ attr = A, SA
 animtype = Hard
 damage = 49,4
 guardflag = MA
-hitflag = MAF                    ;Flags of conditions that move can hit
+hitflag = MAF ;Flags of conditions that move can hit
 pausetime = 10,10
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
@@ -11336,10 +11336,10 @@ alpha = 256-(23*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4403
+anim = 4403
 ID = 4401
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 8
 scale = 0.15,0.15
 sprpriority = 5
@@ -11354,7 +11354,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4401
+ID = 4401
 scale = .15+time*-.03,.15+time*-.03
 supermovetime = 999
 pausemovetime = 999
@@ -11363,10 +11363,10 @@ pausemovetime = 999
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4403
+anim = 4403
 ID = 4403
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 8
 scale = 0.15,0.15
 sprpriority = 5
@@ -11381,7 +11381,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4403
+ID = 4403
 scale = .15+time*.005,.15+time*.005
 supermovetime = 999
 pausemovetime = 999
@@ -11392,10 +11392,10 @@ alpha = 256-(30*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2.9,-.6
@@ -11411,10 +11411,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = .9,2.4
@@ -11430,10 +11430,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 5,2
@@ -11449,10 +11449,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 5,-2
@@ -11468,10 +11468,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = -2,-1
@@ -11487,10 +11487,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = -2,1
@@ -11506,10 +11506,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2,-1
@@ -11525,10 +11525,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.5,1
@@ -11544,10 +11544,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2.1,-.1
@@ -11563,10 +11563,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.8,.5
@@ -11582,10 +11582,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 3.5,-.3
@@ -11601,10 +11601,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 4,.8
@@ -11620,10 +11620,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.5,-3
@@ -11639,7 +11639,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time > 0
-ID =  4402
+ID = 4402
 supermovetime = 999
 pausemovetime = 999
 trans = addalpha
@@ -11688,10 +11688,10 @@ alpha = 256-(25*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4407
+anim = 4407
 ID = 4401
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 8
 scale = 0.35,0.35
 sprpriority = 5
@@ -11706,7 +11706,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4401
+ID = 4401
 scale = .35+time*-.03,.35+time*-.03
 supermovetime = 999
 pausemovetime = 999
@@ -11715,10 +11715,10 @@ pausemovetime = 999
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4403
+anim = 4403
 ID = 4403
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 8
 scale = 0.3,0.3
 sprpriority = 5
@@ -11733,7 +11733,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4403
+ID = 4403
 scale = .3+time*.01,.3+time*.01
 supermovetime = 999
 pausemovetime = 999
@@ -11744,10 +11744,10 @@ alpha = 256-(30*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2.9,-.6
@@ -11763,10 +11763,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = .9,2.4
@@ -11782,10 +11782,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 5,2
@@ -11801,10 +11801,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 5,-2
@@ -11820,10 +11820,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = -2,-1
@@ -11839,10 +11839,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = -2,1
@@ -11858,10 +11858,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2,-1
@@ -11877,10 +11877,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.5,1
@@ -11896,10 +11896,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2.1,-.1
@@ -11915,10 +11915,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.8,.5
@@ -11934,10 +11934,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 3.5,-.3
@@ -11953,10 +11953,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 4,.8
@@ -11972,10 +11972,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.5,-3
@@ -11991,7 +11991,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time > 0
-ID =  4402
+ID = 4402
 supermovetime = 999
 pausemovetime = 999
 trans = addalpha
@@ -12041,10 +12041,10 @@ alpha = 256-(25*time),256
 [State 0, Rose]
 type = null;Explod
 trigger1 = time = 0
-anim =  7020;4408
+anim = 7020;4408
 ID = 4401
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 8
 scale = 0.5,0.5
 sprpriority = 999
@@ -12061,7 +12061,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4401
+ID = 4401
 scale = .45+time*-.03,.45+time*-.03
 supermovetime = 999
 pausemovetime = 999
@@ -12070,10 +12070,10 @@ pausemovetime = 999
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4403
+anim = 4403
 ID = 4403
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 32;8
 scale = 0.5,0.5
 sprpriority = 9
@@ -12088,7 +12088,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4403
+ID = 4403
 scale = .3+time*.02,.3+time*.02
 supermovetime = 999
 pausemovetime = 999
@@ -12099,10 +12099,10 @@ alpha = 256-(30*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2.9,-.6
@@ -12118,10 +12118,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = .9,2.4
@@ -12137,10 +12137,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 5,2
@@ -12156,10 +12156,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 5,-2
@@ -12175,10 +12175,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = -2,-1
@@ -12194,10 +12194,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = -2,1
@@ -12213,10 +12213,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2,-1
@@ -12232,10 +12232,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.5,1
@@ -12251,10 +12251,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 2.1,-.1
@@ -12270,10 +12270,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.8,.5
@@ -12289,10 +12289,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 3.5,-.3
@@ -12308,10 +12308,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 4,.8
@@ -12327,10 +12327,10 @@ persistent = 0
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4402
+anim = 4402
 ID = 4402
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 18
 scale =.07,.07
 vel = 1.5,-3
@@ -12346,7 +12346,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time > 0
-ID =  4402
+ID = 4402
 supermovetime = 999
 pausemovetime = 999
 trans = addalpha
@@ -12375,10 +12375,10 @@ flag = noshadow
 [State 0, Explod]
 type = Explod
 trigger1 = time = 6
-anim =  4410
+anim = 4410
 ID = 4410
 pos = 5,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 6
 scale = 0.01,0.2
 sprpriority = 5
@@ -12393,7 +12393,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4410
+ID = 4410
 scale = .01+time*.02,.2+time*.025
 supermovetime = 999
 pausemovetime = 999
@@ -12402,10 +12402,10 @@ pausemovetime = 999
 [State 0, Explod]
 type = Explod
 trigger1 = time = 3
-anim =  4410
+anim = 4410
 ID = 4411
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 6
 scale = 0.05,0.35
 sprpriority = 5
@@ -12420,7 +12420,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4411
+ID = 4411
 scale = .05+time*.02,.35+time*.025
 supermovetime = 999
 pausemovetime = 999
@@ -12430,10 +12430,10 @@ pausemovetime = 999
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4410
+anim = 4410
 ID = 4412
 pos = -5,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 6
 scale = 0.1,0.6
 sprpriority = 5
@@ -12448,7 +12448,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4412
+ID = 4412
 scale = .1+time*.02,.6+time*.025
 supermovetime = 999
 pausemovetime = 999
@@ -12491,10 +12491,10 @@ alpha = 256-(25*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4101
+anim = 4101
 ID = 4421
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 25
 scale = 0.15,0.15
 sprpriority = 5
@@ -12509,7 +12509,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time >0
-ID =  4421
+ID = 4421
 scale = .15+time*.05,.15+time*.05
 supermovetime = 999
 pausemovetime = 999
@@ -12520,10 +12520,10 @@ alpha = 256-(18*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4426;4101
+anim = 4426;4101
 ID = 4421
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 11
 scale = 0.1,0.1
 sprpriority = 999
@@ -12538,7 +12538,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4421
+ID = 4421
 scale = .1+time*.03,.1+time*.03
 supermovetime = 999
 pausemovetime = 999
@@ -12583,10 +12583,10 @@ alpha = 256-(25*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4423
+anim = 4423
 ID = 4420
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 11
 scale = 0.35,0.45
 sprpriority = 999
@@ -12602,7 +12602,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4420
+ID = 4420
 scale = .35+time*-.025,.45+time*-.025
 supermovetime = 999
 pausemovetime = 999
@@ -12645,10 +12645,10 @@ alpha = 256-(25*time),256
 [State 0, Explod]
 type = null;Explod
 trigger1 = time = 0
-anim =  4100
+anim = 4100
 ID = 4421
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 11
 scale = 0.25,0.25
 sprpriority = 999
@@ -12663,7 +12663,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4421
+ID = 4421
 scale = .25+time*.03,.25+time*.03
 supermovetime = 999
 pausemovetime = 999
@@ -12674,10 +12674,10 @@ alpha = 256-(18*time),256
 [State 0, Explod]
 type = Explod
 trigger1 = time = 0
-anim =  4426;4101
+anim = 4426;4101
 ID = 4421
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 11
 scale = 0.1,0.1
 sprpriority = 999
@@ -12692,7 +12692,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4421
+ID = 4421
 scale = .1+time*.03,.1+time*.03
 supermovetime = 999
 pausemovetime = 999
@@ -12703,10 +12703,10 @@ alpha = 256-(12*time),256
 [State 0, Explod]
 type = null;Explod
 trigger1 = time = 0
-anim =  4420
+anim = 4420
 ID = 4420
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 11
 scale = 0.45,0.45
 sprpriority = 5
@@ -12722,7 +12722,7 @@ persistent = 0
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4420
+ID = 4420
 scale = .45+time*-.025,.45+time*-.025
 supermovetime = 999
 pausemovetime = 999
@@ -12779,10 +12779,10 @@ flag = noshadow
 [State 0, ShockWave]
 type = Explod
 trigger1 = time = 0
-anim =  4002
+anim = 4002
 ID = 4000
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 14
 scale = 0.2,0.2
 sprpriority = 999
@@ -12797,7 +12797,7 @@ persistent = 0
 [State 0, ModifyShockWave]
 type = ModifyExplod
 trigger1 = time < 20
-ID =  4000
+ID = 4000
 scale = .2+time*.05,.2+time*.05
 supermovetime = 999
 pausemovetime = 999
@@ -12856,7 +12856,7 @@ trigger1 = time = 0
 anim =901
 ID =901
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = ifelse(facing = 1,1,-1)
 vfacing = 1
 bindtime = 1
@@ -12876,7 +12876,7 @@ removeongethit = 0
 [State 0, Modify Words]
 type = ModifyExplod
 trigger1 = time <10
-ID =  901
+ID = 901
 scale = .5+time*.05,.5+time*.05
 supermovetime = 999
 pausemovetime = 999
@@ -12884,7 +12884,7 @@ pausemovetime = 999
 [State 0, Modify Words]
 type = ModifyExplod
 trigger1 = time >=10
-ID =  901
+ID = 901
 trans = addalpha
 alpha = 256-(10*time),256
 supermovetime = 999
@@ -13393,179 +13393,179 @@ value = 5210
 
 ;// partner jump-out ; ???????
 [state 0]
-	type=selfstate
-	triggerall=!ishelper && numpartner && roundstate=2
-	triggerall=(stateno!=[190190,190199]) && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
-	triggerall=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(22)=4
-	;;---// change ;(??)
-	trigger1=sysfvar(4)<1 && movetype!=h && gethitvar(isbound)=0 && (pos y>=0) && (ctrl||(stateno<600&&time<2)) && (playerid(floor(sysfvar(0))),var(48)=11)
-	;;---// as partner-asist ;(??)
-	trigger2=sysfvar(4)>0 && (movetype!=h||(stateno=[120,149])) && (ctrl||stateno<600)
-	;;---// player priority ;(??)
-	trigger3=sysfvar(4)<1 && playerid(floor(sysfvar(0))),var(15)!=id
-	value=190190
-	ignorehitpause=1
+ type=selfstate
+ triggerall=!ishelper && numpartner && roundstate=2
+ triggerall=(stateno!=[190190,190199]) && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
+ triggerall=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(22)=4
+ ;;---// change ;(??)
+ trigger1=sysfvar(4)<1 && movetype!=h && gethitvar(isbound)=0 && (pos y>=0) && (ctrl||(stateno<600&&time<2)) && (playerid(floor(sysfvar(0))),var(48)=11)
+ ;;---// as partner-asist ;(??)
+ trigger2=sysfvar(4)>0 && (movetype!=h||(stateno=[120,149])) && (ctrl||stateno<600)
+ ;;---// player priority ;(??)
+ trigger3=sysfvar(4)<1 && playerid(floor(sysfvar(0))),var(15)!=id
+ value=190190
+ ignorehitpause=1
 
 ;// edited life & power bar ; ?????
 [state 0]
-	type=helper
-	triggerall=!ishelper && !numhelper(90900)
-	trigger1=numpartner
-	trigger1=id<(partner,id) && partner,numhelper(90900)=0
-	trigger2=!numpartner
-	id=90900
-	stateno=90900
-	helpertype=normal
-	ownpal=1
-	size.air.front=1602150 ;; <<-version
-	size.height=0 ;; 1;; <<-powerbar off mode
-	ignorehitpause=1
-	supermovetime=88888
-	pausemovetime=88888
-	pos=0,88888
+ type=helper
+ triggerall=!ishelper && !numhelper(90900)
+ trigger1=numpartner
+ trigger1=id<(partner,id) && partner,numhelper(90900)=0
+ trigger2=!numpartner
+ id=90900
+ stateno=90900
+ helpertype=normal
+ ownpal=1
+ size.air.front=1602150 ;; <<-version
+ size.height=0 ;; 1;; <<-powerbar off mode
+ ignorehitpause=1
+ supermovetime=88888
+ pausemovetime=88888
+ pos=0,88888
 
 ;// input players id ; ID??
 [state 0]
-	type=varset
-	trigger1=!ishelper && numhelper(90900)
-	trigger1=(helper(90900),var(0)=90900) && (sysfvar(0)!=helper(90900),id)
-	sysfvar(0)=(helper(90900),id)
+ type=varset
+ trigger1=!ishelper && numhelper(90900)
+ trigger1=(helper(90900),var(0)=90900) && (sysfvar(0)!=helper(90900),id)
+ sysfvar(0)=(helper(90900),id)
 [state 0]
-	type=varset
-	trigger1=!ishelper && numpartner
-	trigger1=!numhelper(90900) && (partner,numhelper(90900)) && (sysfvar(0)!=(partner,sysfvar(0)))
-	sysfvar(0)=(partner,sysfvar(0))
+ type=varset
+ trigger1=!ishelper && numpartner
+ trigger1=!numhelper(90900) && (partner,numhelper(90900)) && (sysfvar(0)!=(partner,sysfvar(0)))
+ sysfvar(0)=(partner,sysfvar(0))
 
 ;// bk/jd system ; ?????/????D
 [state 0]
-	type=hitoverride
-	trigger1=(numprojid(195502)||numprojid(195503)) && !ishelper && roundstate=2 && alive && (ctrl || stateno=52)
-	attr=sca,na,sa,ha,np,sp,hp
-	stateno=195500
-	time=1
-	ignorehitpause=1
+ type=hitoverride
+ trigger1=(numprojid(195502)||numprojid(195503)) && !ishelper && roundstate=2 && alive && (ctrl || stateno=52)
+ attr=sca,na,sa,ha,np,sp,hp
+ stateno=195500
+ time=1
+ ignorehitpause=1
 
 ;//==
 ;;>>@Config.Face>>
 ;; face / portrait (?)
 [state 0]
-	type=explod
-	trigger1=!ishelper && roundstate=2 && alive && !numexplod(490600) && selfanimexist(909002)
-	trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),numexplod(490600)
-	id=490600
-	anim=909002
-	space=screen
-	postype=left
-	facing=ifelse(teamside=1,1,-1)
-	scale=0,0 ;; <- default
-	ownpal=1
-	bindtime=-1
-	removetime=-1
-	ignorehitpause=1
-	supermovetime=-1
-	pausemovetime=-1
+ type=explod
+ trigger1=!ishelper && roundstate=2 && alive && !numexplod(490600) && selfanimexist(909002)
+ trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),numexplod(490600)
+ id=490600
+ anim=909002
+ space=screen
+ postype=left
+ facing=ifelse(teamside=1,1,-1)
+ scale=0,0 ;; <- default
+ ownpal=1
+ bindtime=-1
+ removetime=-1
+ ignorehitpause=1
+ supermovetime=-1
+ pausemovetime=-1
 
 [state 0] ;; player is NOT in a custom state 
-	type=modifyexplod
-	trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900
-	trigger1=movetype!=h || (stateno=[120,159]) || (stateno=[5000,5199]) || (stateno=[190190,190196])
-	id=490600
-	scale=playerid(floor(sysfvar(0))),fvar(32-(id=playerid(floor(sysfvar(0))),var(15))*10), playerid(floor(sysfvar(0))),fvar(33-(id=playerid(floor(sysfvar(0))),var(15))*10)
-	ignorehitpause=1
+ type=modifyexplod
+ trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ trigger1=movetype!=h || (stateno=[120,159]) || (stateno=[5000,5199]) || (stateno=[190190,190196])
+ id=490600
+ scale=playerid(floor(sysfvar(0))),fvar(32-(id=playerid(floor(sysfvar(0))),var(15))*10), playerid(floor(sysfvar(0))),fvar(33-(id=playerid(floor(sysfvar(0))),var(15))*10)
+ ignorehitpause=1
 
 [state 0]
-	type=modifyexplod
-	trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900
-	id=490600
-	space=screen
-	postype=left
-	pos=floor(const240p(playerid(floor(sysfvar(0))),fvar(30-(id=playerid(floor(sysfvar(0))),var(15))*10))), floor(const240p(playerid(floor(sysfvar(0))),fvar(31-(id=playerid(floor(sysfvar(0))),var(15))*10) -(roundstate!=2||(!alive&&stateno=5150))*88888))
+ type=modifyexplod
+ trigger1=numexplod(490600) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ id=490600
+ space=screen
+ postype=left
+ pos=floor(const240p(playerid(floor(sysfvar(0))),fvar(30-(id=playerid(floor(sysfvar(0))),var(15))*10))), floor(const240p(playerid(floor(sysfvar(0))),fvar(31-(id=playerid(floor(sysfvar(0))),var(15))*10) -(roundstate!=2||(!alive&&stateno=5150))*88888))
 ;;(* if the player has been placed in a custom state, the result of "scale" is affected" by the different player's local coordinate space
-	sprpriority=floor(playerid(floor(sysfvar(0))),fvar(36-(id=playerid(floor(sysfvar(0))),var(15))*10))
-	trans=addalpha
-	alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
-	ignorehitpause=1
+ sprpriority=floor(playerid(floor(sysfvar(0))),fvar(36-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ trans=addalpha
+ alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ ignorehitpause=1
 
 ;//==
 ;;>>@Config.Camera>>
 ;; change camera / ????
 [state 0]
-	type=screenbound
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
-	value=0
-	movecamera=0,0
-	ignorehitpause=1
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ movecamera=0,0
+ ignorehitpause=1
 [state 0]
-	type=playerpush
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
-	value=0
-	ignorehitpause=1
+ type=playerpush
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ ignorehitpause=1
 [state 0]
-	type=screenbound
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && (playerid(floor(sysfvar(0))),var(7)&65536) ;; system_switch
-	value= ((numpartner && sysfvar(4)<1) || !numpartner) ;; [def=0]
-	movecamera=0,0 ;; [x,y]
-	ignorehitpause=1
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && (playerid(floor(sysfvar(0))),var(7)&65536) ;; system_switch
+ value= ((numpartner && sysfvar(4)<1) || !numpartner) ;; [def=0]
+ movecamera=0,0 ;; [x,y]
+ ignorehitpause=1
 
 ;//==
 ;; optional settings
 ;//==
 ;;--- guard crush ; ????????
 [state 0]
-	type=palfx
-	trigger1=(stateno=150 || stateno=152) && alive && !ishelper && (gametime%5=0) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=40)
-	time=2
-	add=200,0,0
+ type=palfx
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && (gametime%5=0) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=40)
+ time=2
+ add=200,0,0
 [state 0]
-	type=changestate
-	trigger1=(stateno=150 || stateno=152) && alive && !ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=50)
-	value=190010
-	ignorehitpause=1
+ type=changestate
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(36)>=50)
+ value=190010
+ ignorehitpause=1
 ;;--- dizzy
 [state 0]
-	type=changestate
-	trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;-dizzy birds
-	value=190116 ;;- goto dizzy/stun state
+ type=changestate
+ trigger1=stateno=5120 && (animtime=0) && !ishelper && numhelper(403000) ;;-dizzy birds
+ value=190116 ;;- goto dizzy/stun state
 ;;--- fadeout when KOed ; KO????
 [state 0]
-	type=varset
-	trigger1=stateno=5150 && time=1 && alive=0 && !ishelper && numpartner
-	sysvar(1)=(roundstate<=2)
+ type=varset
+ trigger1=stateno=5150 && time=1 && alive=0 && !ishelper && numpartner
+ sysvar(1)=(roundstate<=2)
 [state 0]
-	type=assertspecial
-	trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
-	flag=invisible
-	flag2=noshadow
+ type=assertspecial
+ trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
+ flag=invisible
+ flag2=noshadow
 [state 0]
-	type=posset
-	trigger1=stateno=5150 && time>=80 && alive=0 && !ishelper && numpartner && sysvar(1)
-	y=(800-partner,pos y) *(((time=[80,150]) && time%10<5) || time>150)
+ type=posset
+ trigger1=stateno=5150 && time>=80 && alive=0 && !ishelper && numpartner && sysvar(1)
+ y=(800-partner,pos y) *(((time=[80,150]) && time%10<5) || time>150)
 
 ;;--- pos reset debug (for mugen only) ---
 [state 0]
-	type=turn
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>1 && facing=ifelse(teamside=1,-1,1)
+ type=turn
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && facing=ifelse(teamside=1,-1,1)
 [state 0]
-	type=posset
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>1 && playeridexist(id-2)
-	trigger1=playerid(id-2),ishelper=0 && playerid(id-2),teamside=teamside
-	x=const240p(120)*ifelse(teamside=1,-1,1)
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && playeridexist(id-2)
+ trigger1=playerid(id-2),ishelper=0 && playerid(id-2),teamside=teamside
+ x=const240p(120)*ifelse(teamside=1,-1,1)
 [state 0]
-	type=posset
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
-	trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
-	x=const240p(144)*ifelse(teamside=1,-1,1)
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
+ trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
+ x=const240p(144)*ifelse(teamside=1,-1,1)
 
 ;//==
 ;//==
@@ -14132,7 +14132,7 @@ invertall = 0
 color = 0
 
 ;---------------------------------------
-;Electric react   (Remove this code if you have custom Electric animations)
+;Electric react (Remove this code if you have custom Electric animations)
 [State -2,FX]
 type = PalFX
 trigger1 = time =1
@@ -14218,7 +14218,7 @@ invertall = 0
 color = 0
 
 ;---------------------------------------
-;Electric react   (Remove this code if you have custom Electric animations)
+;Electric react (Remove this code if you have custom Electric animations)
 [State -2,FX]
 type = PalFX
 trigger1 = time =1
@@ -14235,11 +14235,11 @@ color = 0
 [State -2, deathmatchfire]
 type = Helper
 trigger1 = stagevar(info.name) = "Death Match"
-trigger1 = Numhelper(88910) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(88910) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Death Match"
-trigger2 = Numhelper(88910) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(88910) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14248,18 +14248,18 @@ name = "Firerope"
 stateno = 88910
 helpertype = normal
 ownpal = 1
-ID = 88910   ;Numhelper and ID have to be the same
+ID = 88910 ;Numhelper and ID have to be the same
 
 ;---------------------------------
 ;Electric Ropes for Hanzo's World heroes Death Match 2 stage
 [State -2, deathmatchfire]
 type = Helper
 trigger1 = stagevar(info.name) = "Death Match 2"
-trigger1 = Numhelper(88920) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(88920) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Death Match 2"
-trigger2 = Numhelper(88920) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(88920) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14268,18 +14268,18 @@ name = "Electricrope"
 stateno = 88920
 helpertype = normal
 ownpal = 1
-ID = 88920    ;Numhelper and ID have to be the same
+ID = 88920 ;Numhelper and ID have to be the same
 
 ;------------------------------------------
 ;Spiked Wall for Fumma's World Heroes Death Match 3 stage
 [State -2, deathmatchspikes]
 type = Helper
 trigger1 = stagevar(info.name) = "Death Match 3"
-trigger1 = Numhelper(88926) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(88926) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Death Match 3"
-trigger2 = Numhelper(88926) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(88926) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14288,7 +14288,7 @@ name = "SpikedWall"
 stateno = 88926
 helpertype = normal
 ownpal = 1
-ID = 88926   ;Numhelper and ID have to be the same
+ID = 88926 ;Numhelper and ID have to be the same
 
 ;----------------------------------------
 ; Water Splash KoF Garou stage
@@ -14300,7 +14300,7 @@ trigger1 = stateno = 5100 || stateno = 5110
 anim = F89059
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -14321,7 +14321,7 @@ trigger1 = stateno = 40 || stateno = 52
 anim = F89056
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -14342,7 +14342,7 @@ trigger1 = stagevar(info.name) = "KoF95_Garou"
 anim = F89228
 ID = 77446
 pos = 0,-8
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -14374,7 +14374,7 @@ trigger2 = stateno = 5100 || stateno = 5110
 anim = F89104
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -14398,7 +14398,7 @@ trigger2 = stateno = 40 || stateno = 52
 anim = F89103
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -14422,7 +14422,7 @@ trigger2 = stagevar(info.name) = "Northern Country Canyon Spring"
 anim = F89102
 ID = 77446
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -14436,15 +14436,15 @@ ownpal = 1
 removeongethit = 0
 
 ;------------------------------------
-;  Totem for "Green Hell" Stage Behind/Lower
+; Totem for "Green Hell" Stage Behind/Lower
 [State -2, Totem]
 type = Helper
 trigger1 = stagevar(info.name) = "Green Hell"
-trigger1 = Numhelper(889360) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889360) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Green Hell"
-trigger2 = Numhelper(889360) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889360) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14453,17 +14453,17 @@ name = "Totem"
 stateno = 889360
 helpertype = normal
 ownpal = 1
-ID = 889360   ;Numhelper and ID have to be the same
+ID = 889360 ;Numhelper and ID have to be the same
 
-;  Totem for "Green Hell" Stage Front/Higher
+; Totem for "Green Hell" Stage Front/Higher
 [State -2, Totem]
 type = Helper
 trigger1 = stagevar(info.name) = "Green Hell"
-trigger1 = Numhelper(889365) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889365) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Green Hell"
-trigger2 = Numhelper(889365) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889365) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14472,7 +14472,7 @@ name = "Totem"
 stateno = 889365
 helpertype = normal
 ownpal = 1
-ID = 889365   ;Numhelper and ID have to be the same
+ID = 889365 ;Numhelper and ID have to be the same
 
 ;--------------------------------
 ;Howard Arena stuff
@@ -14532,7 +14532,7 @@ trigger8 = numpartner = 1 && id<partner,id
 trigger8 = Pos Y = 0
 helpertype = normal ;player
 name = "ff3stagefinisher"
-ID = 889323       ;Numhelper and ID have to be the same
+ID = 889323 ;Numhelper and ID have to be the same
 stateno = 889323
 pos = 0,0
 postype = left
@@ -14546,11 +14546,11 @@ pausemove = 999999999
 [State -2, barrel subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Train"
-trigger1 = Numhelper(889120) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889120) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Train"
-trigger2 = Numhelper(889120) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889120) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14559,7 +14559,7 @@ name = "Barrel 2"
 stateno = 889120
 helpertype = normal
 ownpal = 1
-ID = 889120   ;Numhelper and ID have to be the same
+ID = 889120 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14567,11 +14567,11 @@ size.yscale = 1.0
 [State -2, barrel subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Train"
-trigger1 = Numhelper(889140) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889140) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Train"
-trigger2 = Numhelper(889140) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889140) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14580,7 +14580,7 @@ name = "Barrel 2"
 stateno = 889140
 helpertype = normal
 ownpal = 1
-ID = 889140   ;Numhelper and ID have to be the same
+ID = 889140 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14588,11 +14588,11 @@ size.yscale = 1.0
 [State -2, barrel subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Train"
-trigger1 = Numhelper(889150) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889150) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Train"
-trigger2 = Numhelper(889150) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889150) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14601,7 +14601,7 @@ name = "Barrel 2"
 stateno = 889150
 helpertype = normal
 ownpal = 1
-ID = 889150   ;Numhelper and ID have to be the same
+ID = 889150 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14610,13 +14610,13 @@ size.yscale = 1.0
 [State -2, barrel rolling SBA ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889475) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889475) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamSide = 1
 trigger1 = RoundNo = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889475) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889475) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamSide = 1
 trigger2 = RoundNo = 1
 trigger2 = TeamMode = Simul
@@ -14627,7 +14627,7 @@ name = "BarrelRoll"
 stateno = 889475
 helpertype = normal
 ownpal = 1
-ID = 889475   ;Numhelper and ID have to be the same
+ID = 889475 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14636,12 +14636,12 @@ size.yscale = 1.0
 [State -2, barrel SBA ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889440) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889440) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889440) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889440) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14651,7 +14651,7 @@ name = "Barrel6"
 stateno = 889440
 helpertype = normal
 ownpal = 1
-ID = 889440   ;Numhelper and ID have to be the same
+ID = 889440 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14660,12 +14660,12 @@ size.yscale = 1.0
 [State -2, trashcan#1 SBA ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889458) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889458) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889458) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889458) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14675,7 +14675,7 @@ name = "SBAtrashcan1"
 stateno = 889458
 helpertype = normal
 ownpal = 1
-ID = 889458   ;Numhelper and ID have to be the same
+ID = 889458 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14684,12 +14684,12 @@ size.yscale = 1.0
 [State -2, trashcan#1 subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889467) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889467) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889467) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889467) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14699,7 +14699,7 @@ name = "SBAtrashcan1"
 stateno = 889467
 helpertype = normal
 ownpal = 1
-ID = 889467   ;Numhelper and ID have to be the same
+ID = 889467 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14708,12 +14708,12 @@ size.yscale = 1.0
 [State -2, GalfordBarrel1]
 type = Helper
 trigger1 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger1 = Numhelper(889109) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889109) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger2 = Numhelper(889109) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889109) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14723,17 +14723,17 @@ name = "GalfordBarrel1"
 stateno = 889109
 helpertype = normal
 ownpal = 1
-ID = 889109   ;Numhelper and ID have to be the same
+ID = 889109 ;Numhelper and ID have to be the same
 
 [State -2, GalfordBarrel2]
 type = Helper
 trigger1 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger1 = Numhelper(889113) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889113) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger2 = Numhelper(889113) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889113) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14743,7 +14743,7 @@ name = "GalfordBarrel2"
 stateno = 889113
 helpertype = normal
 ownpal = 1
-ID = 889113   ;Numhelper and ID have to be the same
+ID = 889113 ;Numhelper and ID have to be the same
 
 ;-----------------------------------------------
 ;Samurai Monger Life & Bomb toss for player 1
@@ -14768,7 +14768,7 @@ Pos = -385,-5
 name = "LifeMonger"
 stateno = 889160
 helpertype = normal
-postype = back;p1    ;p2,front,back,left,right
+postype = back;p1 ;p2,front,back,left,right
 ownpal = 1
 ID = 889160
 
@@ -14794,7 +14794,7 @@ Pos = -400,-5
 name = "LifeMonger"
 stateno = 889170
 helpertype = normal
-postype = back;p1    ;p2,front,back,left,right
+postype = back;p1 ;p2,front,back,left,right
 ownpal = 1
 ID = 889170
 
@@ -14803,11 +14803,11 @@ ID = 889170
 [State -2, telephonebooth subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Station - FF"
-trigger1 = Numhelper(889180) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889180) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Station - FF"
-trigger2 = Numhelper(889180) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889180) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14816,7 +14816,7 @@ name = "telephone1"
 stateno = 889180
 helpertype = normal
 ownpal = 1
-ID = 889180   ;Numhelper and ID have to be the same
+ID = 889180 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14825,11 +14825,11 @@ size.yscale = 1.0
 [State -2, trashcan#1 subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Station - FF"
-trigger1 = Numhelper(889195) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889195) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Station - FF"
-trigger2 = Numhelper(889195) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889195) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14838,7 +14838,7 @@ name = "telephone1"
 stateno = 889195
 helpertype = normal
 ownpal = 1
-ID = 889195   ;Numhelper and ID have to be the same
+ID = 889195 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14847,11 +14847,11 @@ size.yscale = 1.0
 [State -2, trashcan#1 subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Station - FF"
-trigger1 = Numhelper(889205) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889205) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Station - FF"
-trigger2 = Numhelper(889205) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889205) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14860,7 +14860,7 @@ name = "telephone1"
 stateno = 889205
 helpertype = normal
 ownpal = 1
-ID = 889205   ;Numhelper and ID have to be the same
+ID = 889205 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14869,12 +14869,12 @@ size.yscale = 1.0
 [State -2, Ryu Sign]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Ryu"
-trigger1 = Numhelper(889211) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889211) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Ryu"
-trigger2 = Numhelper(889211) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889211) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14884,19 +14884,19 @@ name = "Ryusign"
 stateno = 889211
 helpertype = normal
 ownpal = 1
-ID = 889211   ;Numhelper and ID have to be the same
+ID = 889211 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Ryu Sign2]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Ryu"
-trigger1 = Numhelper(889221) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889221) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Ryu"
-trigger2 = Numhelper(889221) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889221) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14906,7 +14906,7 @@ name = "Ryusign2"
 stateno = 889221
 helpertype = normal
 ownpal = 1
-ID = 889221   ;Numhelper and ID have to be the same
+ID = 889221 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14915,11 +14915,11 @@ size.yscale = 1.0
 [State -2, Guile Crate]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Guile" 
-trigger1 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Guile" 
-trigger2 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -14928,7 +14928,7 @@ name = "GuileCrate"
 stateno = 889240
 helpertype = normal
 ownpal = 1
-ID = 889240   ;Numhelper and ID have to be the same
+ID = 889240 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14937,12 +14937,12 @@ size.yscale = 1.0
 [State -2, Ken Barrels/Crates]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Ken"
-trigger1 = Numhelper(889248) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889248) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Ken"
-trigger2 = Numhelper(889248) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889248) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14952,7 +14952,7 @@ name = "KenBarrelsCrates"
 stateno = 889248
 helpertype = normal
 ownpal = 1
-ID = 889248   ;Numhelper and ID have to be the same
+ID = 889248 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -14961,12 +14961,12 @@ size.yscale = 1.0
 [State -2, M.Bison Statue]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) M.Bison"
-trigger1 = Numhelper(889400) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889400) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) M.Bison"
-trigger2 = Numhelper(889400) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889400) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14976,19 +14976,19 @@ name = "MBisonStatue1"
 stateno = 889400
 helpertype = normal
 ownpal = 1
-ID = 889400   ;Numhelper and ID have to be the same
+ID = 889400 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, M.Bison Statue2]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) M.Bison"
-trigger1 = Numhelper(889430) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889430) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) M.Bison"
-trigger2 = Numhelper(889430) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889430) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -14998,7 +14998,7 @@ name = "MBisonStatue2"
 stateno = 889430
 helpertype = normal
 ownpal = 1
-ID = 889430   ;Numhelper and ID have to be the same
+ID = 889430 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -15015,12 +15015,12 @@ size.yscale = 1.0
 [State -2, Death Chamber]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889480) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889480) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889480) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889480) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15030,19 +15030,19 @@ name = "DeathChamber1"
 stateno = 889480
 helpertype = normal
 ownpal = 1
-ID = 889480   ;Numhelper and ID have to be the same
+ID = 889480 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Death Chamber2]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889481) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889481) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889481) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889481) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15052,19 +15052,19 @@ name = "DeathChamber2"
 stateno = 889481
 helpertype = normal
 ownpal = 1
-ID = 889481   ;Numhelper and ID have to be the same
+ID = 889481 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889482) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889482) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889482) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889482) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15074,19 +15074,19 @@ name = "VaporChamber1"
 stateno = 889482
 helpertype = normal
 ownpal = 1
-ID = 889482   ;Numhelper and ID have to be the same
+ID = 889482 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber2]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889483) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889483) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889483) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889483) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15096,19 +15096,19 @@ name = "VaporChamber2"
 stateno = 889483
 helpertype = normal
 ownpal = 1
-ID = 889483   ;Numhelper and ID have to be the same
+ID = 889483 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber Camera Marker]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889478) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889478) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889478) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889478) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15118,19 +15118,19 @@ name = "VaporChamber3"
 stateno = 889478
 helpertype = normal
 ownpal = 1
-ID = 889478   ;Numhelper and ID have to be the same
+ID = 889478 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber Camera Marker2]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889479) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889479) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889479) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889479) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15140,7 +15140,7 @@ name = "VaporChamber4"
 stateno = 889479
 helpertype = normal
 ownpal = 1
-ID = 889479   ;Numhelper and ID have to be the same
+ID = 889479 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -15236,7 +15236,7 @@ trigger1 = facing = 1
 anim = F89156
 ID = 77447
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -15258,7 +15258,7 @@ trigger1 = facing = -1
 anim = F89156
 ID = 77447
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -15286,7 +15286,7 @@ trigger1 = facing = 1
 anim = F89157
 ID = 77448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -15308,7 +15308,7 @@ trigger1 = facing = -1
 anim = F89157
 ID = 77448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -15337,7 +15337,7 @@ trigger1 = facing = 1
 anim = F89158
 ID = 77449
 pos = -16,21
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -15359,7 +15359,7 @@ trigger1 = facing = -1
 anim = F89158
 ID = 77449
 pos = 16,21
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -15375,12 +15375,12 @@ removeongethit = 0
 [State -2, AiroJetSpawner]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Distruction_Surfing"
-trigger1 = Numhelper(889500) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889500) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Distruction_Surfing"
-trigger2 = Numhelper(889500) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889500) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15390,7 +15390,7 @@ name = "FarAiroJetSpawn"
 stateno = 889500
 helpertype = normal
 ownpal = 1
-ID = 889500   ;Numhelper and ID have to be the same
+ID = 889500 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -15399,12 +15399,12 @@ size.yscale = 1.0
 [State -2, Shin TimeBox]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889520) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889520) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889520) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889520) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15414,19 +15414,19 @@ name = "ShinTimebox1"
 stateno = 889520
 helpertype = normal
 ownpal = 1
-ID = 889520   ;Numhelper and ID have to be the same
+ID = 889520 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin TimeBox2]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889525) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889525) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889525) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889525) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15436,19 +15436,19 @@ name = "ShinTimebox2"
 stateno = 889525
 helpertype = normal
 ownpal = 1
-ID = 889525   ;Numhelper and ID have to be the same
+ID = 889525 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin TimeBox3]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889530) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889530) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889530) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889530) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15458,19 +15458,19 @@ name = "ShinTimebox3"
 stateno = 889530
 helpertype = normal
 ownpal = 1
-ID = 889530   ;Numhelper and ID have to be the same
+ID = 889530 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Knife]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889535) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889535) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889535) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889535) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15480,19 +15480,19 @@ name = "ShinKnife1"
 stateno = 889535
 helpertype = normal
 ownpal = 1
-ID = 889535   ;Numhelper and ID have to be the same
+ID = 889535 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Knife2]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889546) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889546) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889546) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889546) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15502,19 +15502,19 @@ name = "ShinKnife2"
 stateno = 889546
 helpertype = normal
 ownpal = 1
-ID = 889546   ;Numhelper and ID have to be the same
+ID = 889546 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Pow1]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889556) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889556) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889556) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889556) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15524,19 +15524,19 @@ name = "ShinPow1"
 stateno = 889556
 helpertype = normal
 ownpal = 1
-ID = 889556   ;Numhelper and ID have to be the same
+ID = 889556 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Pow2]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889563) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889563) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889563) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889563) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15546,7 +15546,7 @@ name = "ShinPow2"
 stateno = 889563
 helpertype = normal
 ownpal = 1
-ID = 889563   ;Numhelper and ID have to be the same
+ID = 889563 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -15573,7 +15573,7 @@ name = "shinknifeToss1"
 ID = 889545
 stateno = 889545
 pos = -5,-75
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -15604,7 +15604,7 @@ name = "shinknifeToss1Low"
 ID = 889555
 stateno = 889555
 pos = -5,-40
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -15659,12 +15659,12 @@ ID = 889582
 [State -2, ShinNinjaSpawner]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889600) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889600) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889600) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889600) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15674,7 +15674,7 @@ name = "ShinNinjaSpawner"
 stateno = 889600
 helpertype = normal
 ownpal = 1
-ID = 889600   ;Numhelper and ID have to be the same
+ID = 889600 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -15683,7 +15683,7 @@ size.yscale = 1.0
 [State -2, Sheep]
 type = Helper
 trigger1 = stagevar(info.name) = "Mareep"
-trigger1 = Numhelper(889632) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889632) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = Pos Y = 0
 ;trigger1 = TeamMode != simul
@@ -15692,7 +15692,7 @@ name = "sheep"
 stateno = 889632
 helpertype = normal
 ownpal = 1
-ID = 889632   ;Numhelper and ID have to be the same
+ID = 889632 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -15756,12 +15756,12 @@ flag2 = nokosnd
 [State -2, RBFFTrain1]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger1 = Numhelper(889665) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889665) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger2 = Numhelper(889665) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889665) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15771,19 +15771,19 @@ name = "RBFFTrain1"
 stateno = 889665
 helpertype = normal
 ownpal = 1
-ID = 889665   ;Numhelper and ID have to be the same
+ID = 889665 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, RBFFTrain2] ;Position marker player 1
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger1 = Numhelper(889671) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889671) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger2 = Numhelper(889671) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889671) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15793,19 +15793,19 @@ name = "RBFFTrainMarker1"
 stateno = 889671
 helpertype = normal
 ownpal = 1
-ID = 889671   ;Numhelper and ID have to be the same
+ID = 889671 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, RBFFTrain2] ;Position marker player 2
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger1 = Numhelper(889676) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889676) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger2 = Numhelper(889676) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889676) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15815,7 +15815,7 @@ name = "RBFFTrainMarker2"
 stateno = 889676
 helpertype = normal
 ownpal = 1
-ID = 889676   ;Numhelper and ID have to be the same
+ID = 889676 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -15860,12 +15860,12 @@ ignorehitpause = 1
 [State -2, barrel1 WestSide Health]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889440) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889440) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15875,19 +15875,19 @@ name = "Barrel1"
 stateno = 889440
 helpertype = normal
 ownpal = 1
-ID = 889440   ;Numhelper and ID have to be the same
+ID = 889440 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, barrel2 WestSide Energy]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889680) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889680) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15897,19 +15897,19 @@ name = "Barrel2"
 stateno = 889680
 helpertype = normal
 ownpal = 1
-ID = 889680   ;Numhelper and ID have to be the same
+ID = 889680 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Trashcan WestSide Energy]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889690) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889690) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15919,19 +15919,19 @@ name = "trashcanWSEnergy"
 stateno = 889690
 helpertype = normal
 ownpal = 1
-ID = 889690   ;Numhelper and ID have to be the same
+ID = 889690 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Trashcan WestSide Empty]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889700) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889700) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15941,19 +15941,19 @@ name = "trashcanWSEmpty"
 stateno = 889700
 helpertype = normal
 ownpal = 1
-ID = 889700   ;Numhelper and ID have to be the same
+ID = 889700 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Trashcan2 WestSide Empty]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889706) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889706) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15963,19 +15963,19 @@ name = "trashcan2WSEmpty"
 stateno = 889706
 helpertype = normal
 ownpal = 1
-ID = 889706   ;Numhelper and ID have to be the same
+ID = 889706 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Wall 1 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889712) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889712) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -15985,19 +15985,19 @@ name = "Wall1"
 stateno = 889712
 helpertype = normal
 ownpal = 1
-ID = 889712  ;Numhelper and ID have to be the same
+ID = 889712 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Wall 2 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889713) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889713) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16007,19 +16007,19 @@ name = "Wall2"
 stateno = 889713
 helpertype = normal
 ownpal = 1
-ID = 889713  ;Numhelper and ID have to be the same
+ID = 889713 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Wall 3 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889714) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889714) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16029,19 +16029,19 @@ name = "Wall3"
 stateno = 889714
 helpertype = normal
 ownpal = 1
-ID = 889714  ;Numhelper and ID have to be the same
+ID = 889714 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Door 1 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889715) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889715) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889715) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889715) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16051,19 +16051,19 @@ name = "WSDoor1"
 stateno = 889715
 helpertype = normal
 ownpal = 1
-ID = 889715  ;Numhelper and ID have to be the same
+ID = 889715 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Door 2 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889717) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889717) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889717) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889717) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id 
@@ -16073,19 +16073,19 @@ name = "WSDoor2"
 stateno = 889717
 helpertype = normal
 ownpal = 1
-ID = 889717  ;Numhelper and ID have to be the same
+ID = 889717 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Door 3 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16095,19 +16095,19 @@ name = "WSDoor3"
 stateno = 889719
 helpertype = normal
 ownpal = 1
-ID = 889719  ;Numhelper and ID have to be the same
+ID = 889719 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Edi E WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889724) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889724) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16117,19 +16117,19 @@ name = "WSEdiE"
 stateno = 889724
 helpertype = normal
 ownpal = 1
-ID = 889724  ;Numhelper and ID have to be the same
+ID = 889724 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Surf Sign1]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889743) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889743) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16139,19 +16139,19 @@ name = "Surfsign1"
 stateno = 889743
 helpertype = normal
 ownpal = 1
-ID = 889743   ;Numhelper and ID have to be the same
+ID = 889743 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Surf Sign2]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889749) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889749) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16161,7 +16161,7 @@ name = "Surfsign2"
 stateno = 889749
 helpertype = normal
 ownpal = 1
-ID = 889749   ;Numhelper and ID have to be the same
+ID = 889749 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -16175,7 +16175,7 @@ trigger1 = stateno = 5100 || stateno = 5110
 anim = F89226
 ID = 7448
 pos = 0,-12
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -16196,7 +16196,7 @@ trigger1 = stateno = 40 || stateno = 52
 anim = F89225
 ID = 7448
 pos = 0,-12
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -16217,7 +16217,7 @@ trigger1 = stagevar(info.name) = "YDA_Forest-of_Desolation"
 anim = F89224
 ID = 77446
 pos = 0,-12
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -16247,7 +16247,7 @@ trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
 helpertype = normal ;player
 name = "Vagnadstagefinisher"
-ID = 889315       ;Numhelper and ID have to be the same
+ID = 889315 ;Numhelper and ID have to be the same
 stateno = 889315
 pos = 0,0
 postype = left
@@ -16275,7 +16275,7 @@ trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
 helpertype = normal ;player
 name = "CBRailstagefinisher"
-ID = 889758       ;Numhelper and ID have to be the same
+ID = 889758 ;Numhelper and ID have to be the same
 stateno = 889758
 pos = 0,0
 postype = left
@@ -16290,11 +16290,11 @@ pausemove = 999999999
 [State -2, deathmatchspikes]
 type = Helper
 trigger1 = stagevar(info.name) = "DEATH MATCH NEEDLE"
-trigger1 = Numhelper(889759) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889759) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "DEATH MATCH NEEDLE"
-trigger2 = Numhelper(889759) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889759) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -16303,19 +16303,19 @@ name = "SpikedWall"
 stateno = 889759
 helpertype = normal
 ownpal = 1
-ID = 889759   ;Numhelper and ID have to be the same
+ID = 889759 ;Numhelper and ID have to be the same
 
 ;--------------------------------------------------
 ;USSR stage finisher stuff
 [State -2, USSRstagefinisher] ;Position marker player 1
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_USSR" 
-trigger1 = Numhelper(889761) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889761) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_USSR" 
-trigger2 = Numhelper(889761) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889761) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16325,19 +16325,19 @@ name = "USSRMarker1"
 stateno = 889761
 helpertype = normal
 ownpal = 1
-ID = 889761   ;Numhelper and ID have to be the same
+ID = 889761 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, USSRstagefinisher] ;Position marker player 2
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_USSR" 
-trigger1 = Numhelper(889762) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889762) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_USSR" 
-trigger2 = Numhelper(889762) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889762) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -16347,7 +16347,7 @@ name = "USSRMarker2"
 stateno = 889762
 helpertype = normal
 ownpal = 1
-ID = 889762   ;Numhelper and ID have to be the same
+ID = 889762 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -16392,11 +16392,11 @@ ignorehitpause = 1
 [State -2, ElectricRing]
 type = Helper
 trigger1 = stagevar(info.name) = "Axel Hawk FFS Night"
-trigger1 = Numhelper(889770) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889770) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Axel Hawk FFS Night"
-trigger2 = Numhelper(889770) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889770) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -16405,18 +16405,18 @@ name = "Electricrope2"
 stateno = 889770
 helpertype = normal
 ownpal = 1
-ID = 889770    ;Numhelper and ID have to be the same
+ID = 889770 ;Numhelper and ID have to be the same
 
 ;---------------------------------
 ;Explode Ropes for Neo Deo World Heroes Death Match stage
 [State -2, deathmatchfire]
 type = Helper
 trigger1 = stagevar(info.name) = "DIO DEATH MATCH"
-trigger1 = Numhelper(889772) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889772) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "DIO DEATH MATCH"
-trigger2 = Numhelper(889772) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889772) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -16425,18 +16425,18 @@ name = "Firerope"
 stateno = 889772
 helpertype = normal
 ownpal = 1
-ID = 889772  ;Numhelper and ID have to be the same
+ID = 889772 ;Numhelper and ID have to be the same
 
 ;------------------------
 ;Andy Barrel
 [State -2, Andy Barrel]
 type = Helper
 trigger1 = stagevar(info.name) = "Andy's FFS stage(day)"
-trigger1 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Andy's FFS stage(day)"
-trigger2 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -16445,7 +16445,7 @@ name = "AndyBarrel"
 stateno = 889240
 helpertype = normal
 ownpal = 1
-ID = 889240   ;Numhelper and ID have to be the same
+ID = 889240 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -16467,7 +16467,7 @@ name = "FireFlair"
 stateno = 889780
 helpertype = normal
 ownpal = 1
-ID = 889780   ;Numhelper and ID have to be the same
+ID = 889780 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -16566,7 +16566,7 @@ ignorehitpause = 1
 
 ;-------------------------------------------------------------
 ;^^^^^^^ ELECTR0's IM Code ^^^^^^^^
-;-------------------------------------------------------------	
+;------------------------------------------------------------- 
 
 [Statedef -3,-3]
 
@@ -16813,13 +16813,13 @@ persistent = 0
 
 [State 0, Nampa Hitspark]
 type = Helper
-trigger1 =  Projhit1001 = 1
+trigger1 = Projhit1001 = 1
 helpertype = normal ;player
 name = "Spark"
 ID = 8000
 stateno = 8013
 pos = 110,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -16836,7 +16836,7 @@ name = "Spark"
 ID = 8000
 stateno = 8013
 pos = 140,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -16847,13 +16847,13 @@ persistent = 0
 
 [State 0, Nampa Guardspark]
 type = Helper
-trigger1 =  Projguarded1001 = 1
+trigger1 = Projguarded1001 = 1
 helpertype = normal ;player
 name = "Spark"
 ID = 8000
 stateno = 8001
 pos = 105,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -16870,7 +16870,7 @@ name = "Spark"
 ID = 8000
 stateno = 8001
 pos = 135,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -17009,8 +17009,8 @@ trigger3 = WinKO && anim = 3225
 ;trigger4 = winko && movetype = A
 helpertype = normal
 name = "Super KO"
-pos = 160, -120      ;1.0
-;pos = 160,0                           ;WinMugen
+pos = 160, -120 ;1.0
+;pos = 160,0 ;WinMugen
 postype = left
 ID = 8600
 facing = 1
@@ -17238,7 +17238,7 @@ y = (root, pos y)
 
 [State 0, AssertSpecial]
 type = null;AssertSpecial
-trigger1 =  1
+trigger1 = 1
 flag = nomusic
 
 

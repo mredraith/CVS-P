@@ -2660,7 +2660,7 @@ trigger1 = AnimElem = 12
 anim = 3403
 ID = 3403
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

@@ -239,7 +239,7 @@ trigger1 = animelem = 4
 anim = 7051
 ID = 7051
 pos = 60,-75
-postype = p1  
+postype = p1 
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -553,7 +553,7 @@ name = "Eye Glint"
 ID = 3150
 stateno = 3150
 pos = ceil(24 * const(size.xScale)), ceil(-94 * const(size.yScale))
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 supermovetime = 65535
@@ -1164,7 +1164,7 @@ trigger1 = time = 0
 anim = 7070
 ID = 7080
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1387,7 +1387,7 @@ trigger1 = animelem = 5
 anim = 7060
 ID = 7060
 pos = 5,-35
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1984,7 +1984,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = -50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2289,7 +2289,7 @@ name = "Eye Glint"
 ID = 3150
 stateno = 3150
 pos = ceil(24 * const(size.xScale)), ceil(-94 * const(size.yScale))
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 supermovetime = 65535
@@ -2504,7 +2504,7 @@ trigger1 = animelem = 1
 anim = f3
 ID = 2
 pos = 50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 supermovetime = 65535
@@ -2573,7 +2573,7 @@ value = 3486
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 4
-statetype = A       
+statetype = A 
 
 [State 0, VelSet]
 type = VelSet
@@ -2591,7 +2591,7 @@ trigger1 = animelem = 1
 anim = 7070
 ID = 7070
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 random = 0,0
 removetime = -2
 supermovetime = 65535

@@ -1,7 +1,7 @@
 ;Hebi Tsukai
 [Statedef 1000]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -40,7 +40,7 @@ value = 1001
 ;Hebi Tsukai Timeout
 [Statedef 1001]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -55,7 +55,7 @@ ctrl = 1
 ;High Hebi Tsukai
 [Statedef 1010]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -190,7 +190,7 @@ ctrl = 1
 ;Mid Hebi Tsukai
 [Statedef 1020]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -319,7 +319,7 @@ ctrl = 1
 ;Low Hebi Tsukai
 [Statedef 1030]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -453,7 +453,7 @@ ctrl = 1
 ;Hebi Tsukai Feint
 [Statedef 1040]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -479,7 +479,7 @@ ctrl = 1
 ;A.I. Hebi Tsukai
 [Statedef 1045]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -685,7 +685,7 @@ ctrl = 1
 ;EX Double Hebi Tsukai
 [Statedef 1050]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -877,7 +877,7 @@ ctrl = 0
 ;EX Double Hebi Tsukai
 [Statedef 1051]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -1007,7 +1007,7 @@ ctrl = 1
 ;Light Sabaki No Aikuchi
 [Statedef 1100]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -1066,7 +1066,7 @@ trigger1 = AnimElem = 4
 anim = 8057
 pos = -70,-38
 ID = 7993
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removetime = -2
@@ -1135,7 +1135,7 @@ ctrl = 1
 ;Medium Sabaki No Aikuchi
 [Statedef 1110]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -1210,7 +1210,7 @@ trigger1 = AnimElem = 4
 anim = 8057
 pos = -70,-38
 ID = 7993
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removetime = -2
@@ -1310,7 +1310,7 @@ ctrl = 1
 ;Fierce Sabaki No Aikuchi
 [Statedef 1120]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 0
 velset = 0,0
@@ -1378,7 +1378,7 @@ trigger1 = AnimElem = 4|| AnimElem = 15
 anim = 8057
 pos = -70,-38
 ID = 7993
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removetime = -2
@@ -1530,7 +1530,7 @@ ctrl = 1
 ;EX Sabaki No Aikuchi
 [Statedef 1150]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -1641,7 +1641,7 @@ trigger1 = AnimElem = 4|| AnimElem = 15
 anim = 8057
 pos = -70,-38
 ID = 7993
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removetime = -2
@@ -1832,7 +1832,7 @@ ctrl = 1
 ;Yami Hinotama
 [Statedef 1200]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -1950,7 +1950,7 @@ ctrl = 1
 ;Bai Gaeshi
 [Statedef 1230]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -2106,7 +2106,7 @@ ctrl = 1
 ;Bai Gaeshi 2nd Part
 [Statedef 1231]
 type = S
-movetype =  A
+movetype = A
 physics = S
 juggle = 8
 velset = 0,0
@@ -2172,7 +2172,7 @@ ctrl = 1
 ;EX Yami Hinotama
 [Statedef 1250]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -2343,7 +2343,7 @@ ctrl = 1
 ;Dokusyu: Charging
 [Statedef 1300]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -2414,7 +2414,7 @@ ctrl = 0
 ;Dokusyu: Dashing
 [Statedef 1305]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -2656,7 +2656,7 @@ ctrl = 1
 ;Dokusyu: Charging
 [Statedef 1340]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -2715,7 +2715,7 @@ value = 1341
 ;Dokusyu: Dashing
 [Statedef 1341]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 14,0
@@ -2936,7 +2936,7 @@ ctrl = 1
 ;Dokusyu: Finale
 [Statedef 1310]
 type = S
-movetype =  A
+movetype = A
 physics = N
 velset = 0,0
 ctrl = 0
@@ -3018,7 +3018,7 @@ ctrl = 1
 ;Hit By Dokusyu
 [Statedef 1315]
 type = A
-movetype =  H
+movetype = H
 physics = N
 velset = 0,0
 sprpriority = -1
@@ -3064,7 +3064,7 @@ value = 5100
 ;A.I. Dokusyu: Charging
 [Statedef 1320]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -3126,7 +3126,7 @@ value = 1321
 ;Dokusyu: Dashing
 [Statedef 1321]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -3355,7 +3355,7 @@ ctrl = 1
 ;EX Dokusyu: Charging
 [Statedef 1350]
 type = S
-movetype =  A
+movetype = A
 physics = S
 ctrl = 0
 anim = 1320
@@ -3461,7 +3461,7 @@ ctrl = 0
 ;EX Dokusyu: Dashing
 [Statedef 1355]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -3678,7 +3678,7 @@ ctrl = 1
 ;Bakudan Pachiki
 [Statedef 1400]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -3764,7 +3764,7 @@ channel = 0
 type = HitDef
 trigger1 = time = 0
 attr = S, ST
-hitflag = M  
+hitflag = M 
 priority = 7, Dodge
 pausetime = 0, 0
 animtype = Light
@@ -3806,7 +3806,7 @@ ctrl = 1
 ;Bakudan Pachiki 2nd Part
 [Statedef 1410]
 type = S
-movetype =  A
+movetype = A
 physics = N
 anim = 1410
 velset = 0, 0
@@ -3951,7 +3951,7 @@ ctrl = 1
 ;Hit By Bakudan Pachiki
 [Statedef 1415]
 type = A
-movetype =  H
+movetype = H
 physics = N
 velset = 0,0
 sprpriority = 3
@@ -4017,7 +4017,7 @@ value = 5100
 ;EX Bakudan Pachiki
 [Statedef 1450]
 type = S
-movetype =  A
+movetype = A
 physics = S
 velset = 0,0
 ctrl = 0
@@ -4138,7 +4138,7 @@ channel = 0
 type = HitDef
 trigger1 = time = 0
 attr = S, ST
-hitflag = M  
+hitflag = M 
 priority = 7, Dodge
 pausetime = 0, 0
 animtype = Light
@@ -4176,7 +4176,7 @@ ctrl = 1
 ;EX Bakudan Pachiki 2nd Part
 [Statedef 1460]
 type = S
-movetype =  A
+movetype = A
 physics = N
 anim = 1410
 velset = 0, 0
@@ -4328,8 +4328,8 @@ ctrl = 0
 ;---------------------------------------------------------------------------
 ;EX Bakudan Pachiki 3rd Part
 [Statedef 1461]
-type = S                                 
-movetype =  A
+type = S 
+movetype = A
 physics = N
 anim = 1410
 velset = 0, 0
@@ -4493,7 +4493,7 @@ ctrl = 1
 ;Hit By Drill Headbutts: Flying
 [Statedef 1455]
 type = A
-movetype =  H
+movetype = H
 physics = N
 velset = 0,0
 poweradd = 0
@@ -4547,7 +4547,7 @@ value = 5100
 ;Sado Mazo_a
 [Statedef 1500]
 type = S
-movetype =  I
+movetype = I
 physics = S
 velset = 0,0
 anim = 1500
@@ -4588,7 +4588,7 @@ ctrl = 1
 ;Sado Mazo_b
 [Statedef 1501]
 type = S
-movetype =  I
+movetype = I
 physics = S
 velset = 0,0
 anim = 1501
@@ -4628,7 +4628,7 @@ ctrl = 1
 ;Sado Mazo_c
 [Statedef 1502]
 type = S
-movetype =  I
+movetype = I
 physics = S
 velset = 0,0
 anim = 1502
@@ -4668,7 +4668,7 @@ ctrl = 1
 ;Sado Mazo Debug
 [Statedef 1505]
 type = A
-movetype =  H
+movetype = H
 physics = N
 velset = 0,0
 sprpriority = -1
@@ -4688,7 +4688,7 @@ value = 5000
 ;Sado Mazo 2nd Part_x
 [Statedef 1510]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -4811,7 +4811,7 @@ ctrl = 1
 ;Sado Mazo 2nd Part_y
 [Statedef 1511]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -4935,7 +4935,7 @@ ctrl = 1
 ;Sado Mazo 2nd Part_z
 [Statedef 1512]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -5060,7 +5060,7 @@ ctrl = 1
 ;EX Sado Mazo
 [Statedef 1550]
 type = S
-movetype =  I
+movetype = I
 physics = S
 velset = 0,0
 anim = 1550
@@ -5150,7 +5150,7 @@ ctrl = 1
 ;EX Sado Mazo 2nd Part
 [Statedef 1555]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -5276,7 +5276,7 @@ ctrl = 1
 ;Suna Kake
 [Statedef 1600]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 10
 velset = 0,0
@@ -5449,7 +5449,7 @@ ctrl = 1
 ;Suna Kake
 [Statedef 1650]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 10
 velset = 0,0
@@ -5662,7 +5662,7 @@ ctrl = 0
 ;Suna Kake
 [Statedef 1651]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 10
 velset = 0,0
@@ -5820,7 +5820,7 @@ ctrl = 1
 ;Yakiire
 [Statedef 1700]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0
@@ -5963,7 +5963,7 @@ ctrl = 1
 ;Yakiire
 [Statedef 1750]
 type = S
-movetype =  A
+movetype = A
 physics = N
 juggle = 8
 velset = 0,0

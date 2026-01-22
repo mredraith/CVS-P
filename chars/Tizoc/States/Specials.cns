@@ -27,7 +27,7 @@ ignorehitpause = 1
 [State 1000, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001,  1002))
+value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001, 1002))
 
 
 [State 1000, Button Detect (AI)]
@@ -88,14 +88,14 @@ triggerall=Numenemy
 triggerall=(!var(16)&&var(15)<1||var(20))
 trigger1=!time
 trigger1=enemynear,stateno!=[150,155]
-attr = S, ST          ;Attributes: Standing, Normal Throw
-hitflag = MAF         ;Affect only ground people who are not being hit
-priority = 3, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Standing, Normal Throw
+hitflag = MAF ;Affect only ground people who are not being hit
+priority = 3, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 p1facing = 1 ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face KFM
-p1stateno = 1050      ;On success, KFM changes to state 810
+p2facing = 1 ;Force p2 to face KFM
+p1stateno = 1050 ;On success, KFM changes to state 810
 getpower = 0
 givepower = 0
 hitsound = -1
@@ -239,14 +239,14 @@ triggerall=Numenemy
 triggerall=(!var(16)&&var(15)<2)
 trigger1=!time
 trigger1=enemynear,stateno!=[150,155]
-attr = S, ST          ;Attributes: Standing, Normal Throw
-hitflag=MAF        ;Affect only ground people who are not being hit
-priority = 3, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Standing, Normal Throw
+hitflag=MAF ;Affect only ground people who are not being hit
+priority = 3, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 p1facing = 1 ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face KFM
-p1stateno = 1054      ;On success, KFM changes to state 810
+p2facing = 1 ;Force p2 to face KFM
+p1stateno = 1054 ;On success, KFM changes to state 810
 getpower = 0
 givepower = 0
 hitsound = -1
@@ -1215,7 +1215,7 @@ ignorehitpause = 1
 [State 1100, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101,  1102))
+value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101, 1102))
 
 [State 1100, Button Detect (AI)]
 type = VarSet
@@ -1834,8 +1834,8 @@ y = 5.5
 [State 7010, 3]
 type = SelfState
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 5050 ;HITA_FALL
 
 [State 7010, 5]
@@ -1873,11 +1873,11 @@ y = GetHitVar(yaccel)
 
 [State 7020, 3]
 type = SelfState
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035
 trigger4 = Anim != 105035
 value = 5050 ;HITA_RECOV
@@ -1904,7 +1904,7 @@ ignorehitpause = 1
 [State 1200, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1200, ifelse(var(10) = 1, 1201,  1202))
+value = ifelse(var(10) = 0, 1200, ifelse(var(10) = 1, 1201, 1202))
 
 [State 1200, Button Detect (AI)]
 type = VarSet
@@ -2398,7 +2398,7 @@ ignorehitpause = 1
 [State 1300, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1300, ifelse(var(10) = 1, 1301,  1302))
+value = ifelse(var(10) = 0, 1300, ifelse(var(10) = 1, 1301, 1302))
 
 [State 1300, Button Detect (AI)]
 type = VarSet
@@ -2467,14 +2467,14 @@ value = S1100,1
 [State 1300, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, ST          ;Attributes: Standing, Normal Throw
-hitflag = MAF         ;Affect only ground people who are not being hit
-priority = 3, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Standing, Normal Throw
+hitflag = MAF ;Affect only ground people who are not being hit
+priority = 3, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 p1facing = 1 ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face KFM
-p1stateno = 1350      ;On success, KFM changes to state 810
+p2facing = 1 ;Force p2 to face KFM
+p1stateno = 1350 ;On success, KFM changes to state 810
 getpower = 0
 givepower = 0
 hitsound = S800,0
@@ -2631,14 +2631,14 @@ value = S1100,1
 [State 1310, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, ST          ;Attributes: Standing, Normal Throw
-hitflag = MAF         ;Affect only ground people who are not being hit
-priority = 3, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Standing, Normal Throw
+hitflag = MAF ;Affect only ground people who are not being hit
+priority = 3, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 p1facing = 1 ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face KFM
-p1stateno = 1352      ;On success, KFM changes to state 810
+p2facing = 1 ;Force p2 to face KFM
+p1stateno = 1352 ;On success, KFM changes to state 810
 getpower = 0
 givepower = 0
 hitsound = S800,0
@@ -3271,7 +3271,7 @@ ignorehitpause = 1
 [State 1400, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1400, ifelse(var(10) = 1, 1401,  1402))
+value = ifelse(var(10) = 0, 1400, ifelse(var(10) = 1, 1401, 1402))
 
 [State 1400, Button Detect (AI)]
 type = VarSet
@@ -3329,14 +3329,14 @@ type = HitDef
 trigger1 = P2StateNo != 40
 trigger1 = P2StateNo != [150,155]
 Trigger1 = Time = 0
-attr = S, ST          ;Attributes: Standing, Normal Throw
-hitflag = M         ;Affect only ground people who are not being hit
-priority = 3, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, ST ;Attributes: Standing, Normal Throw
+hitflag = M ;Affect only ground people who are not being hit
+priority = 3, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 p1facing = 1 ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face KFM
-p1stateno = 1410      ;On success, KFM changes to state 810
+p2facing = 1 ;Force p2 to face KFM
+p1stateno = 1410 ;On success, KFM changes to state 810
 getpower = 0
 givepower = 0
 hitsound = S800,0
@@ -3647,7 +3647,7 @@ ignorehitpause = 1
 [State 1500, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1500, ifelse(var(10) = 1, 1501,  1502))
+value = ifelse(var(10) = 0, 1500, ifelse(var(10) = 1, 1501, 1502))
 
 [State 1500, Button Detect (AI)]
 type = VarSet
@@ -3670,9 +3670,9 @@ type = HitDef
 Trigger1 = Time = 0
 attr = A, SA
 hitflag = AF 
-priority = 3, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+priority = 3, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 p1facing = 1
 p2facing = 1
 p1stateno = 1510
@@ -4035,9 +4035,9 @@ value = 5101
 ;-----------------------------------------------------
 ;Gridro Super Kick
 [Statedef 1600]
-type = S                     
-movetype = A                     
-physics = N                     
+type = S 
+movetype = A 
+physics = N 
 ctrl=0
 velset=0,0
 sprpriority=1
@@ -4056,7 +4056,7 @@ ignorehitpause = 1
 [State 1600, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1600, ifelse(var(10) = 1, 1601,  1602))
+value = ifelse(var(10) = 0, 1600, ifelse(var(10) = 1, 1601, 1602))
 
 [State 1600, Button Detect (AI)]
 type = VarSet
@@ -4200,10 +4200,10 @@ value = 1620
 ;---------------------------------------------------------------------------------------
 ;Gridro Super Kick EX
 [Statedef 1610]
-type = S                     
-movetype = A                     
-physics = N  
-anim = 1610                    
+type = S 
+movetype = A 
+physics = N 
+anim = 1610 
 ctrl=0
 velset=0,0
 poweradd=-500
@@ -4526,7 +4526,7 @@ name = "Griffon Beak Thrust FX"
 ID = 1705
 stateno = 1705
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -4707,7 +4707,7 @@ name = "Griffon Beak Thrust FX"
 ID = 1715
 stateno = 1715
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1

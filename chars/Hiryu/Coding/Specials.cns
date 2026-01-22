@@ -3734,7 +3734,7 @@ ownPal = 1
 
 [State 1600, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 8,8
 
 [State 1600, Clone(Warp Out)]
@@ -4045,7 +4045,7 @@ ownPal = 1
 
 [State 1630, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 8,8
 
 [State 1630, Clone(Warp Out)]

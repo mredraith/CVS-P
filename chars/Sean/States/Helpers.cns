@@ -221,7 +221,7 @@ ignorehitpause = 1
 type = Trans
 trigger1 = 1
 trans = Addalpha
-alpha=  128, 256
+alpha= 128, 256
 ignorehitpause= 1
 
 [State 1205, ChangeState]

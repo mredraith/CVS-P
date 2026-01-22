@@ -81,7 +81,7 @@ trigger1 = anim = 1084 && AnimElem = 2
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -99,7 +99,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -116,7 +116,7 @@ trigger1 = anim = 1084 && animelem = 4
 anim = 254
 ID = 1008
 pos = -40,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -827,9 +827,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -1191,9 +1191,9 @@ value = 1600,0
 type = Explod
 trigger1 = AnimElem = 3
 anim = 3052
-ID =  600
+ID = 600
 pos = -5,16
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1339,7 +1339,7 @@ trigger1 = animelem = 5
 value = S1,12
 
 [State 700,EnvShake]
-type	= EnvShake
+type = EnvShake
 trigger1 = animelem = 5
 time = 5
 freq = 60
@@ -1361,7 +1361,7 @@ trigger1 = animelem = 1
 anim = 3105
 ID = 1120
 pos = -20,-90
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1408,7 +1408,7 @@ trigger1 = ANIMELEM = 5
 anim = 1239
 ID = 400
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1595,7 +1595,7 @@ trigger1 = animelem = 1
 anim = 3105
 ID = 1120
 pos = -20,-90
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1735,7 +1735,7 @@ trigger1 = animelem = 3
 anim = 1239
 ID = 400
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1941,7 +1941,7 @@ trigger1 = animelem = 1
 anim = 3105
 ID = 1120
 pos = -20,-90
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2021,7 +2021,7 @@ trigger1 = time = 27
 anim = 1239
 ID = 400
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2157,7 +2157,7 @@ trigger1 = AnimElem = 3
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -2190,7 +2190,7 @@ trigger1 = animelem = 5
 anim = 1134
 ID = 1202
 pos = 100,-45
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2449,7 +2449,7 @@ name = "fire"
 ID = 1567
 stateno = 1567
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 size.xscale = .5
@@ -2660,7 +2660,7 @@ type = Explod
 trigger1 = animelem = 2
 anim = 4005
 pos = 30,10
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 scale = .6,.6
 vel = 0, 0
@@ -2794,7 +2794,7 @@ name = "Raikosen"
 ID = 1136
 stateno = 1136
 pos = -5,-45
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2810,7 +2810,7 @@ trigger1 = AnimElem = 2
 anim = 1139
 ID = 1139
 pos = 30,-40
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -2853,7 +2853,7 @@ type=S
 physics=S
 movetype=A
 ctrl = 0
-anim =  1327
+anim = 1327
 
 [State 1004, ExShadow]
 type = afterimage
@@ -2915,10 +2915,10 @@ value = 1327, 1
 [State 8000, HitDef]
 type = HitDef
 trigger1 = !time
-attr = S,HA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = MA         ;HLA         ;B,E,F
-animtype = Up       ;light,medium,hard,back,up,diagup
+attr = S,HA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = MA ;HLA ;B,E,F
+animtype = Up ;light,medium,hard,back,up,diagup
 priority = 4,Hit
 damage = 45,10
 pausetime = 0 ,5
@@ -2996,7 +2996,7 @@ trigger1 = animelem = 2
 anim = 7210
 ID = 1120
 pos = 30,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 5
@@ -3038,7 +3038,7 @@ trigger1 = AnimElem = 2
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -3203,14 +3203,14 @@ anim = 402
 ID = 400
 scale = .5,.5
 pos = -70,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 1300, Explod]

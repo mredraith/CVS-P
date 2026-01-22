@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =Clark.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =Clark.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =Clark.sff
-anim    =Clark.air
-sound   =Clark.snd
+sprite =Clark.sff
+anim =Clark.air
+sound =Clark.snd
 pal1=Colors/MCX_Dudley.act
 pal2=Colors/MCX_MOTWTerry.act
 pal3=Colors/PeXXeR_RockHoward.act

@@ -1067,7 +1067,7 @@ value = -106-6*var(10)
 [State FDR]
 type = targetstate
 trigger1 = animelemtime(4) = 5
-value =  Ifelse(var(20), 1217, 1216)
+value = Ifelse(var(20), 1217, 1216)
 
 [State 0, HitAdd]
 type = HitAdd
@@ -1649,7 +1649,7 @@ value = ifElse(var(20), -68-6*var(10), -106-6*var(10))
 [State FDR]
 type = targetstate
 trigger1 = animelemtime(6) = 5
-value =  Ifelse(var(20), 1217, 1216)
+value = Ifelse(var(20), 1217, 1216)
 
 [State 0, HitAdd]
 type = HitAdd

@@ -658,7 +658,7 @@ y = 0
 type = ReversalDef
 trigger1 = AnimElemTime(3) >= 0
 trigger1 = AnimElemTime(4) < 0
-reversal.attr = SCA, NA, SA    
+reversal.attr = SCA, NA, SA 
 pausetime = 10,10
 sparkno = -1 + 0 * (var(34) := 0)
 hitsound = S3,0

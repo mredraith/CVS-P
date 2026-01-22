@@ -4,12 +4,12 @@
 
 ; ----------------------------------------------------------
 [Info]
-name = "Training Stage"        ; Internal name of the stage.
+name = "Training Stage" ; Internal name of the stage.
 displayName = "Training Stage" ; Name to display on the select screen.
-versionDate = 1.0              ; Version / Date of stage.
-mugenVersion = 1.1             ; Version of MUGEN the stage made for, use the (1.0 / 1.1) format
-;ikemenVersion = 1.0           ; Not yet implemented
-author = "Gacel"               ; Stage author name.
+versionDate = 1.0 ; Version / Date of stage.
+mugenVersion = 1.1 ; Version of MUGEN the stage made for, use the (1.0 / 1.1) format
+;ikemenVersion = 1.0 ; Not yet implemented
+author = "Gacel" ; Stage author name.
 
 ; ----------------------------------------------------------
 [Camera]
@@ -50,15 +50,15 @@ floortension = 0
 tension = 50
 
 ; Number of pixels beyond the top and bottom of the screen that may
-; be drawn.  Overdraw specifies the how much can be seen during an
-; EnvShake.  Overdraw pixels will also be used when the screen aspect
+; be drawn. Overdraw specifies the how much can be seen during an
+; EnvShake. Overdraw pixels will also be used when the screen aspect
 ; is taller than the stage aspect.
 overdrawhigh = 50
 overdrawlow = 50
 
 ; Number of pixels into the top and bottom of the screen that may be
 ; cut from drawing when the screen aspect is shorter than the stage
-; aspect.  These parameters suggest a guideline, and the actual
+; aspect. These parameters suggest a guideline, and the actual
 ; number of pixels cut depends on the difference in aspect.
 cuthigh = 35
 cutlow = 25
@@ -70,9 +70,9 @@ cutlow = 25
 ; Player 1 starting coordinates.
 ; p1StartX is typically -70 and p2startx is 70.
 ; p1StartY should be 0.
-p1StartX = -70          ;Starting x coordinates
-p1StartY = 0            ;Starting y coordinates
-p1Facing = 1            ;Direction player faces: 1=right, -1=left
+p1StartX = -70 ;Starting x coordinates
+p1StartY = 0 ;Starting y coordinates
+p1Facing = 1 ;Direction player faces: 1=right, -1=left
 
 ; --- Player 2 ---
 p2StartX = 70
@@ -84,7 +84,7 @@ p2Facing = -1
 ; Normally you do not want to change these values
 ; unless you make a very very wide stage. (Over 700 in screenLeft/screenRight)
 leftBound = -1000
-rightBound =  1000
+rightBound = 1000
 
 ; ----------------------------------------------------------
 [Bound]
@@ -111,7 +111,7 @@ resetBG = 1
 localCoord = 320, 240
 portraitScale = 0.41666
 
-;  Horizontal and vertical scaling factor for drawing.
+; Horizontal and vertical scaling factor for drawing.
 xScale = 1
 yScale = 1
 
@@ -169,22 +169,22 @@ bgmVolume = 100
 ; Background definition
 ; -------------------------------------
 ; [BG x]
-; type = ?       "Normal"/"Parallax"  (def: "normal")
-; spriteNo = ?, ? Sprite group and number: groupno, imgno  (req'd)
-; start = ?, ?   Starting location (integer)  (def: 0, 0)
-; delta = ?, ?   Change in location per camera unit moved (float)  (def: 1,1)
-; trans = ?      Transparency settings: "none"/"add"/"add1"/"sub"" (def: "none")
-; mask = ?       Masking (int): 0 - off, 1 - on  (def: 0)
+; type = ? "Normal"/"Parallax" (def: "normal")
+; spriteNo = ?, ? Sprite group and number: groupno, imgno (req'd)
+; start = ?, ? Starting location (integer) (def: 0, 0)
+; delta = ?, ? Change in location per camera unit moved (float) (def: 1,1)
+; trans = ? Transparency settings: "none"/"add"/"add1"/"sub"" (def: "none")
+; mask = ? Masking (int): 0 - off, 1 - on (def: 0)
 ; velocity = ?, ? Velocity: x, y (float): speed background moves (def: 0, 0)
-; tile = ?, ?    Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
-;                        >1 - tile that number of times  (def: 0, 0) - only for Normal BG
+; tile = ?, ? Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
+; >1 - tile that number of times (def: 0, 0) - only for Normal BG
 ; tilespacing = ?, ? Tiling: x, y (int) : space between tiles (def: 0, 0)
 ;
-;  Parallax-only:
-; xScale = ?, ?    Top xscale, bottom xscale (float)
-; width = ?, ?     Top width, bottom width (int)  (use either this or above, but not both)
-; yScaleStart = ?  Starting y-scale (float, in percent)  (def: 100)
-; yScaleDelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
+; Parallax-only:
+; xScale = ?, ? Top xscale, bottom xscale (float)
+; width = ?, ? Top width, bottom width (int) (use either this or above, but not both)
+; yScaleStart = ? Starting y-scale (float, in percent) (def: 100)
+; yScaleDelta = ? Change in y-scale per unit (float, in percent) (def: 0)
 ; -------------------------------------
 
 ; For more info check the stage docs.
@@ -236,5 +236,5 @@ spriteNo = 0, 0
 layerNo = 0
 start = 12, 190
 delta = 1, 1
-tile  = 1, 0
+tile = 1, 0
 tileSpacing = 0, 0

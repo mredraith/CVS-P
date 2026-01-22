@@ -726,7 +726,7 @@ ignoreHitPause = 1
 [State 1010, End]
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
-trigger2 = Time = 12                
+trigger2 = Time = 12 
 
 ;
 [StateDef 1052]
@@ -1365,7 +1365,7 @@ ignoreHitPause = 1
 [State 1010, End]
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
-trigger2 = Time = 11                                                                                                                              
+trigger2 = Time = 11 
 
 ;Hit Pause
 [StateDef 1602]
@@ -6327,7 +6327,7 @@ trigger1 = var(10) = 6
 ;------------------------------------------------------
 ; Based on the tutorial "Victory Patches" made by
 ; Rock.
-;                    Thanx Rock
+; Thanx Rock
 ;------------------------------------------------------
 ;------------------------------------------------------
 

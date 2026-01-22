@@ -52,17 +52,17 @@
 ;Constants
 ;
 [Data]
-life = 1000			
-attack = 100		
-defence = 100		
+life = 1000 
+attack = 100 
+defence = 100 
 fall.defence_up = 55
-lieDown.time = 15		
-airjuggle = 0		
-sparkno = s8010			
-guard.sparkno = s8000	
-KO.echo = 0			
-volumescale = 150			
-IntPersistIndex = 0	
+lieDown.time = 15 
+airjuggle = 0 
+sparkno = s8010 
+guard.sparkno = s8000 
+KO.echo = 0 
+volumescale = 150 
+IntPersistIndex = 0 
 FloatPersistIndex = 0 
 
 [Size]

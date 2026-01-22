@@ -93,7 +93,7 @@ trigger2 = animelem = 11
 anim = 7023
 ID = 7023
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .3,.3
@@ -140,10 +140,10 @@ time = 1
 type = Explod
 trigger1 = animelem = 3
 trigger2 = animelem = 11
-anim =  3011
-ID =  6015
+anim = 3011
+ID = 6015
 pos = 62,-57
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -212,7 +212,7 @@ trigger1 = AnimElem = 1
 anim = 7023
 ID = 7023
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .4,.4
@@ -228,7 +228,7 @@ trigger1 = animelem = 3
 anim = 251
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -360,7 +360,7 @@ trigger1 = AnimElem = 4
 anim = 7023
 ID = 7023
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .3,.3
@@ -376,7 +376,7 @@ trigger1 = animelem = 12
 anim = 7023
 ID = 7023
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .3,.3
@@ -422,10 +422,10 @@ time = 1
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 5
-anim =  3011
-ID =  6015
+anim = 3011
+ID = 6015
 pos = 72,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -445,10 +445,10 @@ SPRPRIORITY = 4
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 13
-anim =  3011
-ID =  6015
+anim = 3011
+ID = 6015
 pos = 82,-45
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -516,7 +516,7 @@ trigger1 = anim = 240 && AnimElem = 3
 anim = 7023
 ID = 7023
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .4,.4
@@ -545,7 +545,7 @@ anim = 231
 ID = 231
 pos = 10,-15
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -562,7 +562,7 @@ trigger1 = anim = 240 && animelem = 4
 anim = 242
 ID = 400
 pos = 20,42
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -726,7 +726,7 @@ name = "HYPER BACK GROUND"
 ID = 40001
 stateno = 40001
 pos = 160,120
-postype = left    ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -740,7 +740,7 @@ trigger1 = AnimElem = 4
 anim = 7023
 ID = 7023
 pos = -20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .4,.4
@@ -757,7 +757,7 @@ anim = 252
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -773,8 +773,8 @@ type = Explod
 trigger1 = AnimElem = 2
 anim = 3020
 ID = 3020
-pos =  7,-60
-postype = p1  ;p2,front,back,left,right
+pos = 7,-60
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = 55
 scale = .9,1.3
@@ -810,7 +810,7 @@ trigger1 = animelem = 2
 anim = 252
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -962,7 +962,7 @@ name = "HYPER BACK GROUND"
 ID = 40001
 stateno = 40001
 pos = 160,120
-postype = left    ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -977,14 +977,14 @@ anim = 603
 ID = 600
 scale = .5,.5
 pos = -75,-23
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 0, Explod]
@@ -992,8 +992,8 @@ type = Explod
 trigger1 = AnimElem = 2
 anim = 3020
 ID = 3020
-pos =  7,-60
-postype = p1  ;p2,front,back,left,right
+pos = 7,-60
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = 50
 scale = .9,1.3
@@ -1217,7 +1217,7 @@ trigger1 = animelem = 1
 anim = 3105
 ID = 1120
 pos = -20,-90
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1240,7 +1240,7 @@ trigger1 = animelem = 7
 anim = 1121
 ID = 1120
 pos = 30,10
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1265,7 +1265,7 @@ trigger3 = animelem = 20
 anim = 3201
 pos = 80,-80
 id = 8002
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1288,7 +1288,7 @@ trigger2 = animelem = 12
 anim = 3199
 pos = 80,-80
 id = 3199
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1312,7 +1312,7 @@ trigger3 = animelem = 22
 anim = 3199
 pos = 130,-1000
 id = 3200
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1335,7 +1335,7 @@ trigger2 = animelem = 15
 anim = 3199
 pos = 100,-80
 id = 3200
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1358,7 +1358,7 @@ trigger2 = animelem = 18
 anim = 3200
 pos = 50,-80
 id = 3200
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1381,7 +1381,7 @@ trigger2 = animelem = 23
 anim = 3200
 pos = 130,-80
 id = 3200
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1404,7 +1404,7 @@ trigger2 = animelem = 9
 anim = 3201
 pos = 100,-80
 id = 3199
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1427,7 +1427,7 @@ trigger2 = animelem = 12
 anim = 3199
 pos = 40,-80
 id = 3200
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1482,7 +1482,7 @@ trigger1 = AnimElem = 4
 anim = 7023
 ID = 7023
 pos = -20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .4,.4
@@ -1736,7 +1736,7 @@ trigger1 = animelem = 1
 anim = 3105
 ID = 1120
 pos = -20,-90
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1759,7 +1759,7 @@ trigger1 = animelem = 7
 anim = 1121
 ID = 1120
 pos = 30,10
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1789,10 +1789,10 @@ value=SCA
 [State 8000, HitDef]
 type = HitDef
 trigger1 = animelem = 7
-attr = S,HA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAFD        ;HLAFD+-
-guardflag = MA         ;HLA         ;B,E,F
-animtype = Up       ;light,medium,hard,back,up,diagup
+attr = S,HA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAFD ;HLAFD+-
+guardflag = MA ;HLA ;B,E,F
+animtype = Up ;light,medium,hard,back,up,diagup
 priority = 4,Hit
 damage = 20,0
 pausetime = 0 ,5
@@ -1922,7 +1922,7 @@ name = "HYPER BACK GROUND"
 ID = 40001
 stateno = 40001
 pos = 160,120
-postype = left    ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1936,7 +1936,7 @@ trigger1 = AnimElem = 6
 anim = 7023
 ID = 7023
 pos = -20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .4,.4
@@ -2162,7 +2162,7 @@ trigger1 = AnimElem = 4
 anim = 6008
 ID = 6008
 pos = 88,130
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 999
 removetime = -2
 scale = .9,.9
@@ -2358,7 +2358,7 @@ trigger1 = animelem = 3
 anim = 3102
 ID = 3102
 pos = 0,20
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2417,7 +2417,7 @@ anim = 553
 ID = 554
 pos = 14,14;40,2
 facing = -1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = 16
 supermovetime = 9999
@@ -2434,7 +2434,7 @@ anim = 554
 ID = 554
 pos = 4,14;40,2
 facing = -1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = 59
 supermovetime = 9999
@@ -2451,7 +2451,7 @@ anim = 555
 ID = 554
 pos = 0,20
 facing = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = 12
 supermovetime = 9999
@@ -2468,7 +2468,7 @@ anim = 555
 ID = 554
 pos = 10,-5
 facing = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 supermovetime = 9999
@@ -2485,7 +2485,7 @@ anim = 9150
 ID = 554
 pos = 0,0;40,2
 facing = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 supermovetime = 9999
@@ -2502,7 +2502,7 @@ anim = 9151
 ID = 554
 pos = 3,25;40,2
 facing = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 supermovetime = 9999
@@ -2642,7 +2642,7 @@ trigger1 = time = 0
 anim = 7502
 ID = 7502
 pos = 0,10
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2667,7 +2667,7 @@ trigger1 = time = 0
 anim = 7502
 ID = 7502
 pos = 0,10
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -2693,7 +2693,7 @@ anim = 556
 ID = 555
 pos = 130,-50
 facing = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 supermovetime = 9999
@@ -2709,7 +2709,7 @@ trigger1 = time = 6
 anim = 557
 ID = 557
 pos = -172,-186
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2759,25 +2759,25 @@ fall.recover = 0
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 26;what time during the move should the animation play?
-anim = 2550		;use the number you gave to the animation
-ID = 212000000		;i would use the animation number plus a few zeros...
-pos = 160,120		;this aligns it to the screen's edge
-postype = left		;	ditto
-facing = 1		;	ditto
-vfacing = 1		;	ditto
-bindtime = -1		;this ensures it stays anchored to the screen's edge
-vel = 0,0		;not applicable for this one...
-accel = 0,0		;	ditto
-random = 0,0		;	ditto
-removetime = -2		;this ensures the complete animation plays fully
-supermove		;not applicable
-pausemove		;	ditto
-scale = 1,1		;	ditto
-sprpriority = 4		;you may have to experiment with this one...
-ontop = 0		;you may have to experiment with this one...
-shadow = 0,0,0		;not applicable
-ownpal = 0		;	ditto
-removeongethit = 0	;do NOT touch this
+anim = 2550 ;use the number you gave to the animation
+ID = 212000000 ;i would use the animation number plus a few zeros...
+pos = 160,120 ;this aligns it to the screen's edge
+postype = left ; ditto
+facing = 1 ; ditto
+vfacing = 1 ; ditto
+bindtime = -1 ;this ensures it stays anchored to the screen's edge
+vel = 0,0 ;not applicable for this one...
+accel = 0,0 ; ditto
+random = 0,0 ; ditto
+removetime = -2 ;this ensures the complete animation plays fully
+supermove ;not applicable
+pausemove ; ditto
+scale = 1,1 ; ditto
+sprpriority = 4 ;you may have to experiment with this one...
+ontop = 0 ;you may have to experiment with this one...
+shadow = 0,0,0 ;not applicable
+ownpal = 0 ; ditto
+removeongethit = 0 ;do NOT touch this
 
 [State 0, Pause]
 type = Pause
@@ -2819,7 +2819,7 @@ trigger1 = animelem = 5
 anim = 3101
 ID = 3101
 pos = 0,-40
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 vel = 0,0
@@ -3010,7 +3010,7 @@ trigger1 = AnimElem = 5
 anim = 7023
 ID = 7023
 pos = -20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .3,.3
@@ -3464,7 +3464,7 @@ trigger1 = animelem = 8
 anim = 2213
 ID = 400
 pos = 21, -12
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 bindtime = -1
@@ -3483,7 +3483,7 @@ trigger2 = animelem = 45
 anim = 1008
 ID = 400
 pos = 90,-22
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -3507,14 +3507,14 @@ anim = 401
 ID = 400
 scale = .5,.5
 pos = -50,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  8
+removetime = 8
 sprpriority = 4
 
 [State 0, zsaber]
@@ -3524,7 +3524,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -3543,7 +3543,7 @@ anim = 251
 id = 400
 pos = 100,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 ownpal = 1
 ignorehitpause = 0
@@ -3562,14 +3562,14 @@ anim = 401
 ID = 400
 scale = .5,.5
 pos = 170,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  15
+removetime = 15
 sprpriority = 4
 
 [State 200, snd]
@@ -3583,7 +3583,7 @@ channel = 0
 
 [State 2100, PlaySnd]
 type = PlaySnd
-trigger1 =  AnimElem = 10
+trigger1 = AnimElem = 10
 value = 1327, 0
 
 [State 2100, PlaySnd]
@@ -3688,7 +3688,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -3701,13 +3701,13 @@ bindtime = -1
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = animelem = 4	;what time during the move should the SOUND play?
-value = 115,2		;use the group ## and sound ## you assigned to it.
-volume = 300		;you may need to increase it to 300 (max)
-channel = -1		;ensures that this sound plays on any free
-freqmul = 1.0		;do NOT touch this
-loop = 0		;	ditto
-pan = 0			;	ditto
+trigger1 = animelem = 4 ;what time during the move should the SOUND play?
+value = 115,2 ;use the group ## and sound ## you assigned to it.
+volume = 300 ;you may need to increase it to 300 (max)
+channel = -1 ;ensures that this sound plays on any free
+freqmul = 1.0 ;do NOT touch this
+loop = 0 ; ditto
+pan = 0 ; ditto
 
 [State 2110, State]
 type = ChangeState
@@ -3873,7 +3873,7 @@ trigger1 = AnimElem = 5
 anim = 7023
 ID = 7023
 pos = -20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .3,.3
@@ -4308,7 +4308,7 @@ trigger1 = animelem = 10
 anim = 231
 ID = 400
 pos = 18,-18
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 bindtime = -1
@@ -4325,7 +4325,7 @@ trigger1 = animelem = 17
 anim = 1008
 ID = 400
 pos = -20,-22
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -4348,7 +4348,7 @@ trigger1 = animelem = 37
 anim = 1008
 ID = 400
 pos = 20,-22
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -4372,14 +4372,14 @@ anim = 401
 ID = 400
 scale = .5,.5
 pos = -50,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 0, explod]
@@ -4390,7 +4390,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -4549,7 +4549,7 @@ anim = 3354
 id = 3354
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -4709,7 +4709,7 @@ name = "HYPER BACK GROUND"
 ID = 40001
 stateno = 40001
 pos = 160,120
-postype = left    ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5074,36 +5074,36 @@ trigger1 = NumHelper(342) > 0
 value = Helper(341), Var(StateTime%60)
 elem = Helper(342), Var(StateTime%60)
 
-[State 330, VarAdd]	; Record AnimElem Time
+[State 330, VarAdd] ; Record AnimElem Time
 type = VarAdd
 trigger1 = Var(0) = Anim
 trigger1 = Var(1) = AnimElemNo(0)
 var(2) = 1
 
-[State 330, VarSet]	; Reset AnimElem Time
+[State 330, VarSet] ; Reset AnimElem Time
 type = VarSet
 trigger1 = Var(0) != Anim
 trigger2 = Var(1) != AnimElemNo(0)
 var(2) = 0
 
-[State 330, VarSet]	; Set AnimElem
+[State 330, VarSet] ; Set AnimElem
 type = VarSet
 trigger1 = 1
 var(1) = AnimElemNo(0)
 
-[State 330, VarSet]	; Set Anim
+[State 330, VarSet] ; Set Anim
 type = VarSet
 trigger1 = 1
 var(0) = Anim
 ;------------------------------
 
 ;----- Record Position -----
-[State 330, VarSet]	; Set Pos X
+[State 330, VarSet] ; Set Pos X
 type = VarSet
 trigger1 = NumHelper(340) > 0
 var(10) = ceil(Pos X) + ceil(Helper(340), Pos X + 160)
 
-[State 330, VarSet]	; Set Pos Y
+[State 330, VarSet] ; Set Pos Y
 type = VarSet
 trigger1 = 1
 var(11) = ceil(Pos Y)
@@ -5116,13 +5116,13 @@ trigger1 = NumHelper(344) > 0
 x = ceil(Helper(343), Var(StateTime%60)) + ceil(Helper(340), Pos X + 160)
 y = ceil(Helper(344), Var(StateTime%60))
 
-[State 330, VarSet]	; Set Pos X
+[State 330, VarSet] ; Set Pos X
 type = VarSet
 trigger1 = NumHelper(340) > 0
 trigger1 = NumHelper(343) > 0
 var(12) = ceil(Helper(343), Var(StateTime%60)) + ceil(Helper(340), Pos X + 160)
 
-[State 330, VarSet]	; Set Pos Y
+[State 330, VarSet] ; Set Pos Y
 type = VarSet
 trigger1 = NumHelper(344) > 0
 var(13) = ceil(Helper(344), Var(StateTime%60))
@@ -5306,7 +5306,7 @@ trigger1 = animelem = 2
 anim = 231
 ID = 1099
 pos = 10,-10
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 bindtime = -1
@@ -5325,10 +5325,10 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 240
 trigger1 = !time
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-priority = 4 ,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+priority = 4 ,Hit ;Hit,Miss,Dodge
 damage = 46, 0
 ID = 200
 getpower = 0
@@ -5370,7 +5370,7 @@ trigger1 = animelem = 2
 anim = 242
 ID = 400
 pos = 20,42
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5396,11 +5396,11 @@ trigger2=AnimElem=4
 trigger3=animelem=5
 trigger4=AnimElem=6
 trigger5=animelem=7
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = 17, 0
 ID = 200
 getpower = 0
@@ -5413,7 +5413,7 @@ hitsound = s2,9
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -5442,7 +5442,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = -10
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -5464,7 +5464,7 @@ name = "buster shot"
 ID = 1400
 stateno = 1404
 pos = 55,-52
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5472,7 +5472,7 @@ supermove
 pausemove
 size.xscale =.2
 size.yscale =.2
-persistent =  0
+persistent = 0
 
 ;----- Stand medium Kick -----
 [State 230, 2]
@@ -5480,11 +5480,11 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 210
 trigger1 = AnimElem = 4
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 26 < 7, 7, fvar(11) * 26)), 0
 ID = 200
 getpower = 10 * !var(20), 0
@@ -5497,7 +5497,7 @@ hitsound = s2,4
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -5523,11 +5523,11 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 202
 trigger1 = AnimElem = 3
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 47 < 7, 7, fvar(11) * 47)), 0
 ID = 200
 getpower = 20 * !var(20), 0
@@ -5540,7 +5540,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -5565,11 +5565,11 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 203
 trigger1 = AnimElem = 4
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 47 < 7, 7, fvar(11) * 47)), 0
 ID = 200
 getpower = 20 * !var(20), 0
@@ -5582,7 +5582,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -5608,14 +5608,14 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 400
 trigger1 = AnimElem = 4
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
 ID = 200
 getpower = 10 * !var(20), 0
 givepower = 30,30
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 23 < 7, 7, fvar(11) * 23)), 0
 pausetime = 5,5
 sparkNo = -1 + 0 * (var(33) := 8015)
@@ -5625,7 +5625,7 @@ hitsound = s2,9
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -5654,14 +5654,14 @@ anim = 401
 ID = 400
 scale = .5,.5
 pos = -50,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = -10
 
 ;----- Crouch medium Punch -----
@@ -5670,11 +5670,11 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 410
 trigger1 = AnimElem = 4
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4 ,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4 ,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 0
 ID = 200
 getpower = 20 * !var(20), 0
@@ -5687,7 +5687,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 90), var(36) := -20
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -5712,11 +5712,11 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 410
 trigger1 = AnimElem = 7
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4 ,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4 ,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 0
 ID = 200
 getpower = 20 * !var(20), 0
@@ -5729,7 +5729,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 90), var(36) := -83
 air.animType = Back
 fall.animType = Back
-ground.type = High     ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -5757,7 +5757,7 @@ trigger1 = animelem = 2
 anim = 411
 ID = 400
 pos = 20,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -5816,7 +5816,7 @@ anim = 7006
 ID = 7006
 scale = .5,.5
 pos = 5,-3
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -5836,7 +5836,7 @@ name = "buster shot"
 ID = 1400
 stateno = 1404
 pos = 65,-42
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5844,7 +5844,7 @@ supermove
 pausemove
 size.xscale =.2
 size.yscale =.2
-persistent =  0
+persistent = 0
 
 ;----- Crouch Medium Kick -----
 [State 430, HitDef]
@@ -5852,11 +5852,11 @@ type = HitDef
 triggerall = Var(2) <= 0
 trigger1 = Anim = 440
 trigger1 = animelem = 4
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = L         ;HLA
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = L ;HLA
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 26 < 7, 7, fvar(11) * 26)), 0
 ID = 200
 getpower = 10 * !var(20), 0
@@ -5869,7 +5869,7 @@ hitsound = s2,4
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -5912,11 +5912,11 @@ type = HitDef
 triggerall = Var(2) <= 0
 triggerall = Anim = 441
 trigger1 = AnimElem = 5
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MF        ;HLAFD+-
-guardflag = L         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MF ;HLAFD+-
+guardflag = L ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 47 < 7, 7, fvar(11) * 47)), 0
 ID = 200
 getpower = 10 * !var(20), 0
@@ -5929,7 +5929,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 10
 ground.hittime = 18
@@ -5996,7 +5996,7 @@ pos = 20,-20
 ownpal = 1
 ignorehitpause = 0
 removeongethit = 1
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6058,14 +6058,14 @@ anim = 602
 ID = 600
 scale = .5,.5
 pos = -75,-27
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = -10
 
 ;----- Jump Medium Punch -----
@@ -6122,7 +6122,7 @@ anim = 6370
 ID = 600
 pos = 0,0
 scale = .8,.8
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removeongethit = 1
 ignorehitpause = 0
 ownpal = 1
@@ -6184,7 +6184,7 @@ trigger1 = animelem = 2
 anim = 621;1099
 ID = 6000
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6203,7 +6203,7 @@ trigger1 = animelem = 3
 anim = 622
 ID = 6001
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6222,7 +6222,7 @@ trigger1 = animelem = 4
 anim = 623
 ID = 6002
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6241,7 +6241,7 @@ trigger1 = animelem = 5
 anim = 624
 ID = 6003
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6260,7 +6260,7 @@ trigger1 = animelem = 6
 anim = 625
 ID = 6004
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6279,7 +6279,7 @@ trigger1 = animelem = 7
 anim = 626
 ID = 6005
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6298,7 +6298,7 @@ trigger1 = animelem = 8
 anim = 627
 ID = 6006
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6317,7 +6317,7 @@ trigger1 = animelem = 9
 anim = 628
 ID = 6007
 pos = -157,-185
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 scale = .4,.4
 keyctrl = 0
@@ -6339,7 +6339,7 @@ name = "buster shot"
 ID = 1400
 stateno = 1404
 pos = 50,-55
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6347,7 +6347,7 @@ supermove
 pausemove
 size.xscale =.2
 size.yscale =.2
-persistent =  0
+persistent = 0
 
 ;----- Jump Medium Kick -----
 [State 630, Hit]
@@ -6470,10 +6470,10 @@ type = Explod
 triggerall = Var(2) <= 0
 trigger1 = animelem = 3
 trigger1 = anim = 200
-anim =   6000
-ID =  600
+anim = 6000
+ID = 600
 pos = 20,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -6542,7 +6542,7 @@ anim = 7007
 ID = 7007
 scale = .5,.5
 pos = -22,9
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -6590,7 +6590,7 @@ trigger1 = AnimElem = 1
 anim = 6020
 ID = 6008
 pos = 20,50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 999
 removetime = -2
 scale = .5,.5
@@ -6640,7 +6640,7 @@ trigger1 = AnimElem = 4
 anim = 6008
 ID = 6008
 pos = 88,130
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 999
 removetime = -2
 scale = .9,.9
@@ -6692,7 +6692,7 @@ trigger1 = animelem = 5
 anim = 1133
 ID = 1202
 pos = 90,-48
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -6752,7 +6752,7 @@ trigger1 = animelem = 5
 anim = 1133
 ID = 1202
 pos = 90,-48
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -6812,7 +6812,7 @@ trigger1 = animelem = 5
 anim = 1133
 ID = 1202
 pos = 90,-48
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -6841,7 +6841,7 @@ name = "Raikosen"
 ID = 1133
 stateno = 1133
 pos = -5,-45
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6861,7 +6861,7 @@ name = "Raikosen"
 ID = 1134
 stateno = 1134
 pos = 80,-35
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6881,7 +6881,7 @@ name = "Raikosen"
 ID = 1135
 stateno = 1135
 pos = 5,-40
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -6932,7 +6932,7 @@ name = "Hyouretsuzan"
 ID = 1553
 stateno = 1553
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 size.xscale = .7

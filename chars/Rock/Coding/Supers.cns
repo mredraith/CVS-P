@@ -310,7 +310,7 @@ removeongethit = 1
 
 [State 3050, End]
 type = ChangeState
-trigger1 =  Time >= 53
+trigger1 = Time >= 53
 trigger1 = Command != "hold_x" && Command != "hold_y" && Command != "hold_z"
 trigger2 = Time >= 120
 value = 3051
@@ -1493,7 +1493,7 @@ y = 0
  
 [State 3211, Width]
 type = Width
-trigger1 =  1
+trigger1 = 1
 edge = 40,0
 
 [State 3211, Skid Snd]
@@ -1536,7 +1536,7 @@ y = 0
  
 [State 3201, Width]
 type = Width
-trigger1 =  1
+trigger1 = 1
 edge = 40,0
 
 [State 3201, Attack]

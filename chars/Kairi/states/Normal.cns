@@ -26,7 +26,7 @@ value = ifelse(var(59),200,201)
 
 [State 200, 1]
 type = PlaySnd
-trigger1 = Time = 0  && random<200
+trigger1 = Time = 0 && random<200
 trigger1 = random < 500
 value = 1,0
 volume = 100
@@ -179,7 +179,7 @@ value = 7,1
 
 [State 205, 1]
 type = PlaySnd
-trigger1 = Time = 0  && random<200
+trigger1 = Time = 0 && random<200
 value = 2000,12
 
 [State 205, PlaySnd]
@@ -1029,7 +1029,7 @@ ctrl = 1
 
 [State 400, 1]
 type = PlaySnd
-trigger1 = Time = 0  && random<350
+trigger1 = Time = 0 && random<350
 value = 1,0
 
 [State 400, 1]
@@ -1786,7 +1786,7 @@ sprpriority = 1
 
 [State 205, 1]
 type = PlaySnd
-trigger1 = Time = 0  && random<200
+trigger1 = Time = 0 && random<200
 value = 1,15
 
 [State 610, 1]
@@ -1840,7 +1840,7 @@ sprpriority = 1
 
 [State 205, 1]
 type = PlaySnd
-trigger1 = Time = 0  && random<200
+trigger1 = Time = 0 && random<200
 value = 1,1
 
 [State 610, 1]

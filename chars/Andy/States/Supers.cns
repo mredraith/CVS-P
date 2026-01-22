@@ -1548,7 +1548,7 @@ ignorehitpause=1
 type = VarSet
 triggerall=movecontact=1 && var(24)<3
 trigger1=!AIlevel&&(animelemtime(3)>=1&&animelemtime(5)<0)&&(command="x"||command="y"||command="z")
-trigger2=AIlevel&&(animelemtime(3)>=1&&animelemtime(5)<0)  
+trigger2=AIlevel&&(animelemtime(3)>=1&&animelemtime(5)<0) 
 var(8)=1
 ignorehitpause = 1
 

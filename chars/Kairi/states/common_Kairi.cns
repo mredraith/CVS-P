@@ -10,16 +10,16 @@
 ;
 ; System variables usage
 ; ----------------------
-; Var name    Type   Purpose
-; --------    ----   -------
-; sysvar(0)   Temp   Set by state 5081 (HITL_SLIDE) to 1 to prevent
-;                    showing ground hit frame in state 5110 (HIT_LIEDOWN).
-;                    Used by guarding states.
-; sysvar(1)   Temp   Used by state 40 (Jump Start) amd 45 (Air Jump Start)
-;                    to keep track of which way to jump.
-;                    Used by state 5100 and 5110 to remember downward
-;                    velocity of player just before hitting the ground.
-;                    Used in state 5080 for storing the anim # to display.
+; Var name Type Purpose
+; -------- ---- -------
+; sysvar(0) Temp Set by state 5081 (HITL_SLIDE) to 1 to prevent
+; showing ground hit frame in state 5110 (HIT_LIEDOWN).
+; Used by guarding states.
+; sysvar(1) Temp Used by state 40 (Jump Start) amd 45 (Air Jump Start)
+; to keep track of which way to jump.
+; Used by state 5100 and 5110 to remember downward
+; velocity of player just before hitting the ground.
+; Used in state 5080 for storing the anim # to display.
 
 ; The following states have special handling within MUGEN, and should be
 ; overridden with caution:
@@ -27,7 +27,7 @@
 ; All guard states (120-155): guard handling throughout state
 ; Hit_trip, shaking (5070): defence increases at time = 0
 ; Hit_bounce (5100): defence increases at time = 0, player becomes
-;                    invincible if within 10 ticks of getting up
+; invincible if within 10 ticks of getting up
 ; Hit_liedown (5110): player changes to get-up state (5120) when ready
 ; Hit_getup (5120): player's defence is restored to normal at time = 0
 ; Hitfall_recover (5200): player's defence is restored at time = 0
@@ -189,8 +189,8 @@ value = 21
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 2000
-trigger1 =  power <3000
+trigger1 = power >= 2000
+trigger1 = power <3000
 anim = 71001
 postype = p1
 pos = 19,-73
@@ -207,8 +207,8 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 4,3)
-trigger1 =  power >= 2000
-trigger1 =  power <3000
+trigger1 = power >= 2000
+trigger1 = power <3000
 anim = 71002
 postype = p1
 pos = 19,-73
@@ -226,7 +226,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 5,3)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = -19,-92
@@ -243,7 +243,7 @@ ID = 1113
 ;type = Explod
 ;triggerall = var(59) = 0
 ;trigger1 = (timemod = 4,2)
-;trigger1 =  power >= 3000
+;trigger1 = power >= 3000
 ;anim = 71002
 ;postype = p1
 ;pos = 19,-92
@@ -260,7 +260,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = 19,-93
@@ -277,7 +277,7 @@ ID = 1113
 ;type = Explod
 ;triggerall = var(59) = 0
 ;trigger1 = (timemod = 4,3)
-;trigger1 =  power >= 3000
+;trigger1 = power >= 3000
 ;anim = 71002
 ;postype = p1
 ;pos = 19,-93
@@ -574,7 +574,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; GUARD (start)
 [Statedef 120]
-type = U    ;Leave state type unchanged
+type = U ;Leave state type unchanged
 physics = U ;Leave physics unchanged
 
 [State 120, 1]
@@ -728,7 +728,7 @@ value = 140
 ;---------------------------------------------------------------------------
 ; GUARD (end)
 [Statedef 140]
-type = U    ;Leave state type unchanged
+type = U ;Leave state type unchanged
 physics = U ;Leave physics unchanged
 ctrl = 1
 
@@ -1646,16 +1646,16 @@ id = 43240
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 5040 ;HITA_RECOV
 
 [State 5030, 4]
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 5050 ;HITA_FALL
 
 [State 5030, 5]
@@ -1711,22 +1711,22 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;HITA_RECOV
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5050 ;HITA_FALL
 
@@ -1832,7 +1832,7 @@ id = 43240
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim

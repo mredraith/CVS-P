@@ -2523,7 +2523,7 @@ air.fall = 1
 fall.recover = 0
 palfx.time = 73
 palfx.add = 34440,864,1056
-palfx.mul =  1,1,1
+palfx.mul = 1,1,1
 envshake.time = 12
 envshake.ampl = 6
 kill = 0
@@ -2753,7 +2753,7 @@ envshake.time = 12
 envshake.ampl = 6
 palfx.time = 33
 palfx.add = 34440,864,1056
-palfx.mul =  1,1,1
+palfx.mul = 1,1,1
 kill = 0
 p2stateno = 1125
 
@@ -2813,7 +2813,7 @@ guard.sparkno = -1
 sparkxy = -1,-1
 palfx.time = 6
 palfx.add = 34440,864,1056
-palfx.mul =  1,1,1
+palfx.mul = 1,1,1
 envshake.time = 12
 envshake.ampl = 6
 kill = 0
@@ -2860,7 +2860,7 @@ guard.sparkno = -1
 sparkxy = -1,-1
 palfx.time = 6
 palfx.add = 34440,864,1056
-palfx.mul =  1,1,1
+palfx.mul = 1,1,1
 envshake.time = 12
 envshake.ampl = 6
 kill = 1
@@ -5409,7 +5409,7 @@ trigger1 = (gametime%7)
 anim = 3506
 ID = 7997
 pos = 60,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = -3,0
 random = 0,20
@@ -5968,7 +5968,7 @@ trigger1 = (gametime%7)
 anim = 3506
 ID = 7997
 pos = 60,-70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = -3,0
 random = 0,20
@@ -6362,9 +6362,9 @@ persistent=0
 type=helper
 trigger1= animelem=2 
 trigger2= animelem=4
-trigger3= animelem=6  
-trigger4= animelem=8  
-trigger5= animelem=10  
+trigger3= animelem=6 
+trigger4= animelem=8 
+trigger5= animelem=10 
 trigger6= animelem=12 
 helpertype=normal
 stateno=3605
@@ -6383,9 +6383,9 @@ ownpal=1
 type=helper
 trigger1= animelem=2 
 trigger2= animelem=4
-trigger3= animelem=6  
-trigger4= animelem=8  
-trigger5= animelem=10  
+trigger3= animelem=6 
+trigger4= animelem=8 
+trigger5= animelem=10 
 trigger6= animelem=12 
 helpertype=normal
 stateno=3606
@@ -6570,9 +6570,9 @@ persistent=0
 type=helper
 trigger1= animelem=2 
 trigger2= animelem=4
-trigger3= animelem=6  
-trigger4= animelem=8  
-trigger5= animelem=10  
+trigger3= animelem=6 
+trigger4= animelem=8 
+trigger5= animelem=10 
 trigger6= animelem=12 
 helpertype=normal
 stateno=3605
@@ -6591,9 +6591,9 @@ ownpal=1
 type=helper
 trigger1= animelem=2 
 trigger2= animelem=4
-trigger3= animelem=6  
-trigger4= animelem=8  
-trigger5= animelem=10  
+trigger3= animelem=6 
+trigger4= animelem=8 
+trigger5= animelem=10 
 trigger6= animelem=12 
 helpertype=normal
 stateno=3606
@@ -6612,9 +6612,9 @@ ownpal=1
 type=helper
 trigger1= animelem=2 
 trigger2= animelem=4
-trigger3= animelem=6  
-trigger4= animelem=8  
-trigger5= animelem=10  
+trigger3= animelem=6 
+trigger4= animelem=8 
+trigger5= animelem=10 
 trigger6= animelem=12 
 helpertype=normal
 stateno=3608
@@ -6921,7 +6921,7 @@ ignoreHitPause=1
 
 [State 3700, 4]
 type = ChangeState
-trigger1 =  Animelem = 33
+trigger1 = Animelem = 33
 value = 3701
 ctrl = 0
 ;----------------------------------------------------------------------------------------------
@@ -7490,7 +7490,7 @@ ignoreHitPause=1
 
 [State 3750, 4]
 type = ChangeState
-trigger1 =  Animelem = 36
+trigger1 = Animelem = 36
 value = 3751
 ctrl = 0
 ;----------------------------------------------------------------------------------------------

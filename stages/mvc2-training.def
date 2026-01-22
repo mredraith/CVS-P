@@ -49,8 +49,8 @@ p4starty = 0
 p4facing = -1
 
 ;--- Common ---
-leftbound  = -4000
-rightbound =  4000
+leftbound = -4000
+rightbound = 4000
 
 ;--------------------------------------------------------
 [Bound]

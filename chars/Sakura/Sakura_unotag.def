@@ -14,9 +14,9 @@ localcoord = 320,240
 
 [Files]
 movelist = Sakura_unotag\movelist.dat
-cmd     =Sakura_unotag\Command.cmd
+cmd =Sakura_unotag\Command.cmd
 cns = Constants.cns
-st      =Sakura_unotag\System.st
+st =Sakura_unotag\System.st
 st1 = States\Normal.st
 st2 = States\Specials.st
 st3 = States\EX-Specials.st

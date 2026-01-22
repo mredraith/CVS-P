@@ -154,7 +154,7 @@ y = -60
 persistent =0
 [State 0, AngleDraw]
 type = AngleDraw
-trigger1 =  time >= 0
+trigger1 = time >= 0
 value = -45
 scale = 1,1
 [State 1028, Anim 5050] ;Self falling animation
@@ -230,7 +230,7 @@ trigger1 = time=0
 value = 2999
 [State 0, AngleDraw]
 type = AngleDraw
-trigger1 =  time >= 0
+trigger1 = time >= 0
 value = 45
 scale = 1,1
 
@@ -341,7 +341,7 @@ trigger1 = time=0
 value = 2999
 [State 0, AngleDraw]
 type = AngleDraw
-trigger1 =  time >= 0
+trigger1 = time >= 0
 value = 45
 scale = 1,1
 

@@ -155,13 +155,13 @@ ctrl=1
 [Statedef 3001]
 type=S
 movetype=A
-physics=S				
-velset = 0,0			
-ctrl = 0				
-anim = 3001				
-poweradd = 0			
+physics=S 
+velset = 0,0 
+ctrl = 0 
+anim = 3001 
+poweradd = 0 
 sprpriority = 2
-movehitpersist = 1		
+movehitpersist = 1 
 
 [State 3001, NotHitBy]
 type = NotHitBy
@@ -198,14 +198,14 @@ ctrl = 0
 [State 3001, VarSet]
 type = VarSet
 trigger1 = !Time
-var(2) = 0	
+var(2) = 0 
 
 [State 3001, VarSet]
 type = VarSet
 triggerall = AnimElemTime(20) < 0
 triggerall = !AILevel 
 trigger1 = command = "PuncherWeaving1" || command = "PuncherWeaving2" || command = "PuncherWeaving3" 
-var(2) = ifelse(command="PuncherWeaving1",0,ifelse(command="PuncherWeaving2",1,2))		
+var(2) = ifelse(command="PuncherWeaving1",0,ifelse(command="PuncherWeaving2",1,2)) 
 persistent = 0
 
 [State 3001, VarSet]
@@ -213,7 +213,7 @@ type = VarSet
 triggerall = AnimElemTime(20) < 0
 trigger1 = AILevel != 0
 trigger1 = (random<250*(AILevel**2/48.0))
-var(2) = IfElse(FrontEdgeBodyDist < 25, 1, 2)		
+var(2) = IfElse(FrontEdgeBodyDist < 25, 1, 2) 
 persistent = 0
 
 [State 3000, Hit]
@@ -237,7 +237,7 @@ guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
 air.animtype=DiagUp
 fall.animtype=Back
-ground.type=High	
+ground.type=High 
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
@@ -284,7 +284,7 @@ guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
 air.animtype=DiagUp
 fall.animtype=Back
-ground.type=High	
+ground.type=High 
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
@@ -331,7 +331,7 @@ guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
 air.animtype=DiagUp
 fall.animtype=Back
-ground.type=High	
+ground.type=High 
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
@@ -519,13 +519,13 @@ ctrl=1
 [Statedef 3051]
 type=S
 movetype=A
-physics=S				
-velset = 0,0			
-ctrl = 0				
-anim = 3051				
-poweradd = 0			
+physics=S 
+velset = 0,0 
+ctrl = 0 
+anim = 3051 
+poweradd = 0 
 sprpriority = 2
-movehitpersist = 1		
+movehitpersist = 1 
 
 [State 3051, NotHitBy]
 type = NotHitBy
@@ -562,14 +562,14 @@ ctrl = 0
 [State 3051, VarSet]
 type = VarSet
 trigger1 = !Time
-var(2) = 0	
+var(2) = 0 
 
 [State 3051, VarSet]
 type = VarSet
 triggerall = AnimElemTime(20) < 0
 trigger1 = AILevel = 0
 trigger1 = command = "PuncherWeaving1" || command = "PuncherWeaving2"
-var(2) = IfElse(command = "PuncherWeaving1", 1, IfElse(command = "PuncherWeaving2", 2, 0))		
+var(2) = IfElse(command = "PuncherWeaving1", 1, IfElse(command = "PuncherWeaving2", 2, 0)) 
 persistent = 0
 
 [State 3051, VarSet]
@@ -577,7 +577,7 @@ type = VarSet
 triggerall = AnimElemTime(20) < 0
 trigger1 = AILevel != 0
 trigger1 = (random<250*(AILevel**2/48.0))
-var(2) = IfElse(FrontEdgeBodyDist < 25, 1, 2)		
+var(2) = IfElse(FrontEdgeBodyDist < 25, 1, 2) 
 persistent = 0
 
 [State 3000, Hit]
@@ -602,7 +602,7 @@ guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
 air.animtype=DiagUp
 fall.animtype=Back
-ground.type=High	
+ground.type=High 
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
@@ -650,7 +650,7 @@ guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
 air.animtype=DiagUp
 fall.animtype=Back
-ground.type=High	
+ground.type=High 
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
@@ -697,7 +697,7 @@ guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
 air.animtype=DiagUp
 fall.animtype=Back
-ground.type=High	
+ground.type=High 
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
@@ -964,11 +964,11 @@ ctrl=1
 [Statedef 3101]
 type=S
 movetype=A
-physics=S				
-velset=0,0			
-ctrl=0				
-anim=3101				
-poweradd=0			
+physics=S 
+velset=0,0 
+ctrl=0 
+anim=3101 
+poweradd=0 
 sprpriority=2
 movehitpersist=1
 
@@ -980,14 +980,14 @@ value = SCA
 [State 3101, VarSet]
 type = VarSet
 trigger1 = !Time
-var(2) = 0	
+var(2) = 0 
 
 [State 3101, VarSet]
 type = VarSet
 triggerall = AnimElemTime(64) < 0
 trigger1 = AILevel = 0
 trigger1 = command = "PuncherWeaving1" || command = "PuncherWeaving2"
-var(2) = IfElse(command = "PuncherWeaving1", 1, IfElse(command = "PuncherWeaving2", 2, 0))		
+var(2) = IfElse(command = "PuncherWeaving1", 1, IfElse(command = "PuncherWeaving2", 2, 0)) 
 persistent = 0
 
 [State 3101, VarSet]
@@ -995,7 +995,7 @@ type = VarSet
 triggerall = AnimElemTime(64) < 0
 trigger1 = AILevel != 0
 trigger1 = (random<250*(AILevel**2/48.0))
-var(2) = IfElse(FrontEdgeBodyDist < 25, 1, 2)		
+var(2) = IfElse(FrontEdgeBodyDist < 25, 1, 2) 
 persistent = 0
 
 [State 3101, TargetBind]
@@ -1177,11 +1177,11 @@ ctrl = 1
 [Statedef 3102]
 type= S
 movetype= A
-physics= S				
-velset = 0,0			
-ctrl= 0				
-anim= 3102				
-poweradd = -1000			
+physics= S 
+velset = 0,0 
+ctrl= 0 
+anim= 3102 
+poweradd = -1000 
 sprpriority = 2
 movehitpersist = 1
 hitcountpersist = 1
@@ -1270,7 +1270,7 @@ value = SCA
 type = PosAdd
 trigger1 = !Time
 trigger1 = FrontEdgeBodyDist <= 60
-x = -30	
+x = -30 
 
 [State 3102, PlayerPush]
 type = PlayerPush
@@ -1465,11 +1465,11 @@ ctrl = 1
 [Statedef 3103]
 type = S
 movetype = A
-physics = S				
-velset = 0,0			
-ctrl = 0				
-anim = 3103				
-poweradd = -1000			
+physics = S 
+velset = 0,0 
+ctrl = 0 
+anim = 3103 
+poweradd = -1000 
 sprpriority = 2
 movehitpersist = 1
 hitcountpersist = 1
@@ -1539,7 +1539,7 @@ poweradd=0
 [State 3103, NotHitBy]
 type = NotHitBy
 trigger1 = 1
-value = SCA	
+value = SCA 
 
 [State 3103, VelSet]
 type = VelSet
@@ -1914,11 +1914,11 @@ ctrl=1
 [Statedef 3151]
 type=S
 movetype=A
-physics=S				
-velset=0,0			
-ctrl=0				
-anim=3151				
-poweradd=0			
+physics=S 
+velset=0,0 
+ctrl=0 
+anim=3151 
+poweradd=0 
 sprpriority=2
 movehitpersist=1
 

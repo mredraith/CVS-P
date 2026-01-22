@@ -54,17 +54,17 @@
 ;Constants
 ;
 [Data]
-life = 1000			
-attack = 100		
-defence = 100		
-fall.defence_up = 50	
-lieDown.time = 15		
-airjuggle = 0		
-sparkno = s8010			
-guard.sparkno = s8000	
-KO.echo = 0			
-volumescale = 100			
-IntPersistIndex = 0	
+life = 1000 
+attack = 100 
+defence = 100 
+fall.defence_up = 50 
+lieDown.time = 15 
+airjuggle = 0 
+sparkno = s8010 
+guard.sparkno = s8000 
+KO.echo = 0 
+volumescale = 100 
+IntPersistIndex = 0 
 FloatPersistIndex = 0 
 
 [Size]
@@ -93,9 +93,9 @@ jump.fwd = 3.66
 jump.back = -3.575
 runjump.fwd = 5.04,-9.4
 runjump.back = -5.81,-9.4
-airjump.neu = 0,-9.1     
-airjump.back = -2.55      
-airjump.fwd = 2.5         
+airjump.neu = 0,-9.1 
+airjump.back = -2.55 
+airjump.fwd = 2.5 
 
 [Movement]
 airJump.num = 0

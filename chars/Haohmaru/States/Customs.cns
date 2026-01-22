@@ -295,7 +295,7 @@ y = 1
 type = ChangeState
 trigger1 = HitOver
 trigger2 = Vel Y > 0 ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Pos Y >= 10 ;.
 value = 3850 ;HITA_FALL
 
 [State 5030, 5]
@@ -325,11 +325,11 @@ y = GetHitVar(yaccel)
 
 [State 5035, 4]
 type = ChangeState
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
 trigger3 = Vel Y > 0 ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0  ;No transition anim
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 3850 ;HITA_FALL
 
@@ -344,7 +344,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0  ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -694,7 +694,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;custom animation
+value = 4020 ;custom animation
 
 [State 0, ChangeState]
 type = changeState

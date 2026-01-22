@@ -1486,8 +1486,8 @@ x = 3
 type = Veladd
 trigger1 = TimeMod = 3, 0
 trigger1 = vel x < 8
-trigger1 = P2StateType  != A
-trigger1 = P2StateType  != L
+trigger1 = P2StateType != A
+trigger1 = P2StateType != L
 trigger1 = P2StateNo != [120,160)
 x = 0.4
 
@@ -1539,7 +1539,7 @@ Trigger1 = Facing = Parent,Facing
 [State 1360, 1]
 type = DestroySelf
 trigger1 = Parent,stateno != 3301
-trigger1 = P2StateType  != A
+trigger1 = P2StateType != A
 trigger2 = IsHelper(3311)=1
 trigger2 = (pos x)-(Helper(3310),pos x)=[-10,10]
 

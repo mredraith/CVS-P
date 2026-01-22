@@ -1,50 +1,50 @@
 ; Classic Megaman's constants.
 ; Format (case insensitive):
-;  [groupname]        
-;  constname = value  
+; [groupname] 
+; constname = value 
 
 [Data]
-life = 1000          ;Amount of life to start with
+life = 1000 ;Amount of life to start with
 power = 3000
-attack = 100         ;100% attack power (more is stronger)
-defence = 100        ;100% defensive power (more is stronger)
+attack = 100 ;100% attack power (more is stronger)
+defence = 100 ;100% defensive power (more is stronger)
 fall.defence_up = 50 ;Def goes up by 50% everytime player is hit on ground
-liedown.time = 1     ;Time player takes before getting up from HIT_LIEDOWN
-airjuggle = 15       ;Can do 15 points of juggling
-;sparkno = 1        ;Default spark number
+liedown.time = 1 ;Time player takes before getting up from HIT_LIEDOWN
+airjuggle = 15 ;Can do 15 points of juggling
+;sparkno = 1 ;Default spark number
 guard.sparkno = 0,20 ;Default guard spark number
-KO.echo = 1          ;1 to enable echo on KO
-volume = 0           ;Volume offset (negative for softer)
+KO.echo = 1 ;1 to enable echo on KO
+volume = 0 ;Volume offset (negative for softer)
 
 [Size]
-xscale = 1           ;Horizontal scaling factor.
-yscale = 1           ;Vertical scaling factor.
-ground.back = 10     ;Player width (back, ground)
-ground.front = 10    ;Player width (front, ground)
-air.back = 15        ;Player width (back, air)
-air.front = 15       ;Player width (front, air)
-z.width = 3          ;Player width (into and out)
-height = 18	     ;Height of player (for opponent to jump over)
-attack.width = 4,4   ;Default attack width: back, front
-attack.dist = 160    ;Default attack distance
+xscale = 1 ;Horizontal scaling factor.
+yscale = 1 ;Vertical scaling factor.
+ground.back = 10 ;Player width (back, ground)
+ground.front = 10 ;Player width (front, ground)
+air.back = 15 ;Player width (back, air)
+air.front = 15 ;Player width (front, air)
+z.width = 3 ;Player width (into and out)
+height = 18 ;Height of player (for opponent to jump over)
+attack.width = 4,4 ;Default attack width: back, front
+attack.dist = 160 ;Default attack distance
 proj.attack.dist = 90 ;Default attack distance for projectiles
-proj.doscale = 0     ;Set to 1 to scale projectiles too   
-head.pos = -5, -90   ;Approximate position of head
-mid.pos = -5, -60    ;Approximate position of midsection
-shadowoffset = 0     ;Number of pixels to vertically offset the shadow
+proj.doscale = 0 ;Set to 1 to scale projectiles too 
+head.pos = -5, -90 ;Approximate position of head
+mid.pos = -5, -60 ;Approximate position of midsection
+shadowoffset = 0 ;Number of pixels to vertically offset the shadow
 
 [Velocity]
-walk.fwd  = 2.0      ;Walk forward
-walk.back = -2.0     ;Walk backward
-run.fwd  = -2.0, 0   ;Run forward (x, y)  - if y<0, player will hop
-run.back = -2.0, 0   ;Run backward (x, y) - if y=0, player will run
-jump.neu = 0,0       ;Neutral jumping velocity (x, y)
-jump.back = 0        ;Jump back Speed (x, y)
-jump.fwd = 0         ;Jump forward Speed (x, y)
+walk.fwd = 2.0 ;Walk forward
+walk.back = -2.0 ;Walk backward
+run.fwd = -2.0, 0 ;Run forward (x, y) - if y<0, player will hop
+run.back = -2.0, 0 ;Run backward (x, y) - if y=0, player will run
+jump.neu = 0,0 ;Neutral jumping velocity (x, y)
+jump.back = 0 ;Jump back Speed (x, y)
+jump.fwd = 0 ;Jump forward Speed (x, y)
 
 [Movement]
-yaccel = .25          ;Vertical acceleration
-stand.friction = .85  ;Friction coefficient when standing
+yaccel = .25 ;Vertical acceleration
+stand.friction = .85 ;Friction coefficient when standing
 crouch.friction = .82 ;Friction coefficient when crouching
 
 ;---------------------------------------------------------------------------
@@ -61,12 +61,12 @@ crouch.friction = .82 ;Friction coefficient when crouching
 ;---------------------------------------------------------------------------
 ; Format:
 ; [Statedef STATENO]
-; type = ?      S/C/A/L  stand/crouch/air/liedown
-; movetype = ?  I/A/H    idle/attack/gethit
-; physics = ?   S/C/A/N  stand/crouch/air/none
-; juggle = ?             air juggle points move requires
+; type = ? S/C/A/L stand/crouch/air/liedown
+; movetype = ? I/A/H idle/attack/gethit
+; physics = ? S/C/A/N stand/crouch/air/none
+; juggle = ? air juggle points move requires
 ;
-; [State STATENO, ?]     ? - any number you choose
+; [State STATENO, ?] ? - any number you choose
 ; type = ?
 ; ...
 
@@ -173,7 +173,7 @@ trigger1 = Pos Y >= 0
 ;---------------------------------------------------------------------------
 ; Megabuster
 [Statedef 200]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -202,7 +202,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Megabuster Shot
 [Statedef 201]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 4,0
@@ -214,17 +214,17 @@ type = HitDef
 trigger1 = Time = 0
 attr = S, NP
 numhits = 1
-damage   = 20,5
+damage = 20,5
 sparkno = -1
 guard.sparkno = -1
 guardflag = MA
 animtype = light
 pausetime = 0,0
-hitsound   = S10,1
+hitsound = S10,1
 guardsound = S10,2
 ground.type = Low
 ground.slidetime = 0
-ground.hittime  = 0
+ground.hittime = 0
 guard.velocity = 0
 ground.velocity = 0
 air.animtype = back
@@ -263,7 +263,7 @@ trigger2 = ScreenPos X != [0,359]
 ;---------------------------------------------------------------------------
 ; Megabuster Shot Destory
 [Statedef 202]
-type    = A
+type = A
 movetype= I
 physics = N
 
@@ -274,7 +274,7 @@ trigger1 = 1
 ;---------------------------------------------------------------------------
 ;JUMP_UP
 [Statedef 210]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -324,7 +324,7 @@ value = 211
 ;---------------------------------------------------------------------------
 ;JUMP_DOWN
 [Statedef 211]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -359,7 +359,7 @@ x = const(velocity.walk.back.x)
 ;---------------------------------------------------------------------------
 ;JUMP_UP_SHOOTING
 [Statedef 212]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -415,7 +415,7 @@ y = 0
 ;---------------------------------------------------------------------------
 ;JUMP_DOWN_SHOOTING
 [Statedef 213]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -450,7 +450,7 @@ x = const(velocity.walk.back.x)
 ;---------------------------------------------------------------------------
 ;JUMP_UP_SHOOTING_BACK
 [Statedef 214]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -495,7 +495,7 @@ y = 0
 ;---------------------------------------------------------------------------
 ; MEGABUSTER WHILE WALKING
 [Statedef 220]
-type    = S
+type = S
 movetype= A
 physics = S
 ctrl = 0
@@ -538,7 +538,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; MEGABUSTER WHILE WALKING BACK
 [Statedef 221]
-type    = S
+type = S
 movetype= A
 physics = S
 ctrl = 0
@@ -582,7 +582,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Shoot Air Tornado
 [Statedef 1020]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -635,7 +635,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Air Tornado 1
 [Statedef 1021]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 1,0
@@ -648,7 +648,7 @@ value = 1024
 ;---------------------------------------------------------------------------
 ; Air Tornado 2
 [Statedef 1022]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 1.5,0
@@ -661,7 +661,7 @@ value = 1024
 ;---------------------------------------------------------------------------
 ; Air Tornado 3
 [Statedef 1023]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 2.25,0
@@ -674,7 +674,7 @@ value = 1024
 ;---------------------------------------------------------------------------
 ; Air Tornado
 [Statedef 1024]
-type    = A
+type = A
 movetype= A
 physics = N
 anim = 1020
@@ -685,17 +685,17 @@ type = HitDef
 trigger1 = Time = 0
 attr = S, NP
 numhits = 1
-damage   = 30,7
+damage = 30,7
 sparkno = -1
 guard.sparkno = -1
 guardflag = MA
 animtype = light
 pausetime = 0,0
-hitsound   = S10,1
+hitsound = S10,1
 guardsound = S10,2
 ground.type = Low
 ground.slidetime = 0
-ground.hittime  = 0
+ground.hittime = 0
 guard.velocity = 0
 ground.velocity = 0
 air.animtype = back
@@ -745,7 +745,7 @@ trigger3 = ScreenPos Y != [0,239]
 ;---------------------------------------------------------------------------
 ; Shoot Air Tornado While Walking
 [Statedef 1025]
-type    = S
+type = S
 movetype= A
 physics = S
 ctrl = 0
@@ -812,7 +812,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Shoot Air Tornado While Walking Back
 [Statedef 1026]
-type    = S
+type = S
 movetype= A
 physics = S
 ctrl = 0
@@ -882,7 +882,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Jump Up Shoot Air Tornado
 [Statedef 1027]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -962,7 +962,7 @@ value = 1028
 ;---------------------------------------------------------------------------
 ; Jump Down Shoot Air Tornado
 [Statedef 1028]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -997,7 +997,7 @@ x = const(velocity.walk.back.x)
 ;---------------------------------------------------------------------------
 ; Jump Up Shoot Air Tornado Back
 [Statedef 1029]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -1068,7 +1068,7 @@ value = 1028
 ;---------------------------------------------------------------------------
 ; Flash Stop
 [Statedef 1060]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1100,7 +1100,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Flash Stop Backwards
 [Statedef 1061]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1132,7 +1132,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ;Jump Up Flash Stop
 [Statedef 1062]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -1191,7 +1191,7 @@ value = 1063
 ;---------------------------------------------------------------------------
 ;Jump Down Flash Stop
 [Statedef 1063]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -1226,7 +1226,7 @@ x = const(velocity.walk.back.x)
 ;---------------------------------------------------------------------------
 ;JUMP_UP_SHOOTING_BACK
 [Statedef 1064]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -1273,7 +1273,7 @@ value = 1063
 ;---------------------------------------------------------------------------
 ; Metal Blade Toss
 [Statedef 1070]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1292,7 +1292,7 @@ trigger1 = command != "holdup"
 trigger1 = command != "holddown"
 name = "Metal Blade"
 ID = 1070
-pos = -1,-12  ;3-4,-12
+pos = -1,-12 ;3-4,-12
 stateno = 1072
 ownpal = 1
 
@@ -1303,7 +1303,7 @@ trigger1 = command = "holdup"
 trigger1 = command = "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -2,-12  ;1-3,-15+3
+pos = -2,-12 ;1-3,-15+3
 stateno = 1073
 ownpal = 1
 
@@ -1314,7 +1314,7 @@ trigger1 = command = "holdup"
 trigger1 = command != "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -1,-12  ;-1,-16+4
+pos = -1,-12 ;-1,-16+4
 stateno = 1074
 ownpal = 1
 
@@ -1326,7 +1326,7 @@ trigger1 = command = "holddown"
 trigger1 = command = "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -2,-13  ;1-3,-10-3
+pos = -2,-13 ;1-3,-10-3
 stateno = 1075
 ownpal = 1
 
@@ -1338,7 +1338,7 @@ trigger1 = command = "holddown"
 trigger1 = command != "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -1,-12  ;-1,-8-4
+pos = -1,-12 ;-1,-8-4
 stateno = 1076
 ownpal = 1
 
@@ -1356,7 +1356,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Metal Blade Toss Backwards
 [Statedef 1071]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1375,7 +1375,7 @@ trigger1 = command != "holdup"
 trigger1 = command != "holddown"
 name = "Metal Blade"
 ID = 1070
-pos = 1,-12  ;-3+4,-12
+pos = 1,-12 ;-3+4,-12
 facing = -1
 stateno = 1072
 ownpal = 1
@@ -1387,7 +1387,7 @@ trigger1 = command = "holdup"
 trigger1 = command = "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 2,-12  ;-1+3,-15+3
+pos = 2,-12 ;-1+3,-15+3
 facing = -1
 stateno = 1073
 ownpal = 1
@@ -1399,7 +1399,7 @@ trigger1 = command = "holdup"
 trigger1 = command != "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 1,-12  ;1,-16+4
+pos = 1,-12 ;1,-16+4
 facing = -1
 stateno = 1074
 ownpal = 1
@@ -1412,7 +1412,7 @@ trigger1 = command = "holddown"
 trigger1 = command = "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 2,-13  ;-1+3,-10-3
+pos = 2,-13 ;-1+3,-10-3
 facing = -1
 stateno = 1075
 ownpal = 1
@@ -1425,7 +1425,7 @@ trigger1 = command = "holddown"
 trigger1 = command != "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 1,-12  ;1,-8-4
+pos = 1,-12 ;1,-8-4
 facing = -1
 stateno = 1076
 ownpal = 1
@@ -1444,7 +1444,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Metal Blade - Forward
 [Statedef 1072]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 4,0
@@ -1457,7 +1457,7 @@ value = 1077
 ;---------------------------------------------------------------------------
 ; Metal Blade - Diagonal Up
 [Statedef 1073]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 3,-3
@@ -1470,7 +1470,7 @@ value = 1077
 ;---------------------------------------------------------------------------
 ; Metal Blade - Up
 [Statedef 1074]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 0,-4
@@ -1483,7 +1483,7 @@ value = 1077
 ;---------------------------------------------------------------------------
 ; Metal Blade - Diagonal Down
 [Statedef 1075]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 3,3
@@ -1496,7 +1496,7 @@ value = 1077
 ;---------------------------------------------------------------------------
 ; Metal Blade - Down
 [Statedef 1076]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 0,4
@@ -1509,7 +1509,7 @@ value = 1077
 ;---------------------------------------------------------------------------
 ; Metal Blade
 [Statedef 1077]
-type    = A
+type = A
 movetype= A
 physics = N
 anim = 1070
@@ -1520,17 +1520,17 @@ type = HitDef
 trigger1 = Time = 0
 attr = S, NP
 numhits = 1
-damage   = 20,5
+damage = 20,5
 sparkno = -1
 guard.sparkno = -1
 guardflag = MA
 animtype = light
 pausetime = 0,0
-hitsound   = S10,1
+hitsound = S10,1
 guardsound = S10,2
 ground.type = Low
 ground.slidetime = 0
-ground.hittime  = 0
+ground.hittime = 0
 guard.velocity = 0
 ground.velocity = 0
 air.animtype = back
@@ -1575,7 +1575,7 @@ trigger3 = ScreenPos Y != [0,239]
 ;---------------------------------------------------------------------------
 ;Jump Up Shoot Metal Blade
 [Statedef 1078]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -1593,7 +1593,7 @@ trigger1 = command != "holdup"
 trigger1 = command != "holddown"
 name = "Metal Blade"
 ID = 1070
-pos = -1,-12  ;3-4,-12
+pos = -1,-12 ;3-4,-12
 stateno = 1072
 ownpal = 1
 
@@ -1604,7 +1604,7 @@ trigger1 = command = "holdup"
 trigger1 = command = "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -2,-12  ;1-3,-15+3
+pos = -2,-12 ;1-3,-15+3
 stateno = 1073
 ownpal = 1
 
@@ -1615,7 +1615,7 @@ trigger1 = command = "holdup"
 trigger1 = command != "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -1,-12  ;-1,-16+4
+pos = -1,-12 ;-1,-16+4
 stateno = 1074
 ownpal = 1
 
@@ -1627,7 +1627,7 @@ trigger1 = command = "holddown"
 trigger1 = command = "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -2,-13  ;1-3,-10-3
+pos = -2,-13 ;1-3,-10-3
 stateno = 1075
 ownpal = 1
 
@@ -1639,7 +1639,7 @@ trigger1 = command = "holddown"
 trigger1 = command != "holdfwd"
 name = "Metal Blade"
 ID = 1070
-pos = -1,-12  ;-1,-8-4
+pos = -1,-12 ;-1,-8-4
 stateno = 1076
 ownpal = 1
 
@@ -1689,7 +1689,7 @@ value = 1079
 ;---------------------------------------------------------------------------
 ;Jump Down Shoot Metal Blade
 [Statedef 1079]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -1724,7 +1724,7 @@ x = const(velocity.walk.back.x)
 ;---------------------------------------------------------------------------
 ;JUMP_UP_SHOOTING_BACK
 [Statedef 10781]
-type    = A
+type = A
 movetype= A
 physics = A
 poweradd= 0
@@ -1742,7 +1742,7 @@ trigger1 = command != "holdup"
 trigger1 = command != "holddown"
 name = "Metal Blade"
 ID = 1070
-pos = 1,-12  ;-3+4,-12
+pos = 1,-12 ;-3+4,-12
 facing = -1
 stateno = 1072
 ownpal = 1
@@ -1754,7 +1754,7 @@ trigger1 = command = "holdup"
 trigger1 = command = "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 2,-12  ;-1+3,-15+3
+pos = 2,-12 ;-1+3,-15+3
 facing = -1
 stateno = 1073
 ownpal = 1
@@ -1766,7 +1766,7 @@ trigger1 = command = "holdup"
 trigger1 = command != "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 1,-12  ;1,-16+4
+pos = 1,-12 ;1,-16+4
 facing = -1
 stateno = 1074
 ownpal = 1
@@ -1779,7 +1779,7 @@ trigger1 = command = "holddown"
 trigger1 = command = "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 2,-13  ;-1+3,-10-3
+pos = 2,-13 ;-1+3,-10-3
 facing = -1
 stateno = 1075
 ownpal = 1
@@ -1792,7 +1792,7 @@ trigger1 = command = "holddown"
 trigger1 = command != "holdback"
 name = "Metal Blade"
 ID = 1070
-pos = 1,-12  ;1,-8-4
+pos = 1,-12 ;1,-8-4
 facing = -1
 stateno = 1076
 ownpal = 1
@@ -1831,7 +1831,7 @@ value = 1079
 ;---------------------------------------------------------------------------
 ; Megaman 2 Menu Appear
 [Statedef 4000]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -1897,7 +1897,7 @@ value = 4002
 ;---------------------------------------------------------------------------
 ; Megaman 2 Menu - Page 1
 [Statedef 4001]
-type    = A
+type = A
 movetype= I
 physics = N
 
@@ -2190,7 +2190,7 @@ value = 4003
 ;---------------------------------------------------------------------------
 ; Megaman 2 Menu - Page 2
 [Statedef 4002]
-type    = A
+type = A
 movetype= I
 physics = N
 
@@ -2462,7 +2462,7 @@ value = 4001
 ;---------------------------------------------------------------------------
 ; Megaman 2 Menu Cancel
 [Statedef 4003]
-type    = A
+type = A
 movetype= I
 physics = N
 
@@ -2588,7 +2588,7 @@ trigger1 = P2Name != "M-NES Game 1"
 ;---------------------------------------------------------------------------
 ; Stand to Crouch
 [Statedef 10]
-type    = C
+type = C
 physics = C
 anim = 10
 
@@ -2600,7 +2600,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Crouching
 [Statedef 11]
-type    = C
+type = C
 physics = C
 anim = 11
 sprpriority = 0
@@ -2613,7 +2613,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Crouch to Stand
 [Statedef 12]
-type    = S
+type = S
 physics = S
 anim = 12
 
@@ -2625,7 +2625,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Walk
 [Statedef 20]
-type    = S
+type = S
 physics = S
 sprpriority = 0
 
@@ -2671,7 +2671,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Jump Start
 [Statedef 40]
-type    = U
+type = U
 physics = U
 
 [State 40, 1]
@@ -2682,7 +2682,7 @@ value = 1
 ;---------------------------------------------------------------------------
 ; Jump Land
 [Statedef 52]
-type    = S
+type = S
 physics = S
 ctrl = 0
 anim = 47
@@ -2889,7 +2889,7 @@ value = 47, 0
 [State -2, Disable Guard]
 type = AssertSpecial
 trigger1 = 1
-flag  = nostandguard
+flag = nostandguard
 flag2 = nocrouchguard
 flag3 = noairguard
 

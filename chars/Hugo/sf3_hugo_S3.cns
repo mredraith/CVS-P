@@ -2,14 +2,14 @@
 ; ジャイアントパームボンバー(小)
 [Statedef 1400]
 type = S
-movetype= A                      
-physics = S  
-anim = 1400                    
-juggle = 0                   
-ctrl = 0  
-;poweradd = 30                    
-sprpriority = -1  
-facep2 = 1                
+movetype= A 
+physics = S 
+anim = 1400 
+juggle = 0 
+ctrl = 0 
+;poweradd = 30 
+sprpriority = -1 
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -97,7 +97,7 @@ ground.velocity = -9.0*const(size.xscale)
 guard.velocity = -9.0*const(size.xscale)
 air.type = Low 
 air.hittime = 20
-air.velocity = -3.5*const(size.xscale),-10.0*const(size.yscale)  
+air.velocity = -3.5*const(size.xscale),-10.0*const(size.yscale) 
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 fall = 0
@@ -114,7 +114,7 @@ envshake.ampl = -4
 forcestand = 0
 P2facing = 1
 id = 1400
-sprpriority = -1  
+sprpriority = -1 
 
 [State 200, ChangeAnim]
 type = changeanim
@@ -252,14 +252,14 @@ ctrl = 1
 ; ジャイアントパームボンバー(中)
 [Statedef 1410]
 type = S
-movetype= A                      
-physics = S  
-anim = 1410                    
-juggle = 0                   
-ctrl = 0                                               
-;poweradd = 30                    
-sprpriority = -1  
-facep2 = 1                
+movetype= A 
+physics = S 
+anim = 1410 
+juggle = 0 
+ctrl = 0 
+;poweradd = 30 
+sprpriority = -1 
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -347,7 +347,7 @@ ground.velocity = -9.0*const(size.xscale)
 guard.velocity = -9.0*const(size.xscale)
 air.type = Low 
 air.hittime = 24
-air.velocity = -3.5*const(size.xscale),-10.0*const(size.yscale)  
+air.velocity = -3.5*const(size.xscale),-10.0*const(size.yscale) 
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 fall = 0
@@ -364,7 +364,7 @@ envshake.ampl = -4
 forcestand = 0
 P2facing = 1
 id = 1410
-sprpriority = -1  
+sprpriority = -1 
 
 [State 200, ChangeAnim]
 type = changeanim
@@ -502,14 +502,14 @@ ctrl = 1
 ; ジャイアントパームボンバー(大)
 [Statedef 1420]
 type = S
-movetype= A                      
-physics = S  
-anim = 1420                    
-juggle = 0                   
-ctrl = 0                                               
-;poweradd = 30                    
+movetype= A 
+physics = S 
+anim = 1420 
+juggle = 0 
+ctrl = 0 
+;poweradd = 30 
 sprpriority = -1
-facep2 = 1                
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -597,7 +597,7 @@ ground.velocity = -9.0*const(size.xscale)
 guard.velocity = -9.0*const(size.xscale)
 air.type = Low 
 air.hittime = 26
-air.velocity = -3.5*const(size.xscale),-10.0*const(size.yscale)  
+air.velocity = -3.5*const(size.xscale),-10.0*const(size.yscale) 
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 fall = 0
@@ -614,7 +614,7 @@ envshake.ampl = -4
 forcestand = 0
 P2facing = 1
 id = 1420
-sprpriority = -1  
+sprpriority = -1 
 
 [State 200, ChangeAnim]
 type = changeanim
@@ -752,14 +752,14 @@ ctrl = 1
 ; ジャイアントパームボンバー(EX)
 [Statedef 1430]
 type = S
-movetype= A                      
-physics = S  
-anim = 1430                    
-juggle = 0                   
-ctrl = 0                                               
-poweradd = -500                    
-sprpriority = 2  
-facep2 = 1                
+movetype= A 
+physics = S 
+anim = 1430 
+juggle = 0 
+ctrl = 0 
+poweradd = -500 
+sprpriority = 2 
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -896,7 +896,7 @@ envshake.ampl = -6
 forcestand = 0
 P2facing = 1
 id = 1430
-sprpriority = -1  
+sprpriority = -1 
 
 [state -2, helper]
 type = helper
@@ -960,7 +960,7 @@ envshake.ampl = -4
 forcestand = 0
 P2facing = 1
 id = 1431
-sprpriority = -1  
+sprpriority = -1 
 
 [state -2, helper]
 type = helper
@@ -1024,7 +1024,7 @@ envshake.ampl = -4
 forcestand = 0
 P2facing = 1
 id = 1432
-sprpriority = -1  
+sprpriority = -1 
 
 [State 200, ChangeAnim]
 type = changeanim
@@ -1249,14 +1249,14 @@ trigger1 = time = 0
 ; モンスターラリアット(小)
 [Statedef 1500]
 type = S
-movetype= A                      
-physics = N  
-anim = 1500                    
-juggle = 0                   
-ctrl = 0  
-;poweradd = 30                    
+movetype= A 
+physics = N 
+anim = 1500 
+juggle = 0 
+ctrl = 0 
+;poweradd = 30 
 sprpriority = -1 
-facep2 = 1                
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -1339,7 +1339,7 @@ envshake.ampl = 4
 forcestand = 1
 P2facing = 1
 id = 1500
-sprpriority = -1  
+sprpriority = -1 
 
 [State -2, VarSet]
 type = VarSet
@@ -1445,14 +1445,14 @@ ctrl = 1
 ; モンスターラリアット(中)
 [Statedef 1510]
 type = S
-movetype= A                      
-physics = N  
-anim = 1510                    
-juggle = 0                   
-ctrl = 0                                               
-;poweradd = 30                    
-sprpriority = -1  
-facep2 = 1                
+movetype= A 
+physics = N 
+anim = 1510 
+juggle = 0 
+ctrl = 0 
+;poweradd = 30 
+sprpriority = -1 
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -1535,7 +1535,7 @@ envshake.ampl = 4
 forcestand = 1
 P2facing = 1
 id = 1510
-sprpriority = -1  
+sprpriority = -1 
 
 [State -2, VarSet]
 type = VarSet
@@ -1643,14 +1643,14 @@ ctrl = 1
 ; モンスターラリアット(大)
 [Statedef 1520]
 type = S
-movetype= A                      
-physics = N  
-anim = 1520                    
-juggle = 0                   
-ctrl = 0                                               
-;poweradd = 30                    
+movetype= A 
+physics = N 
+anim = 1520 
+juggle = 0 
+ctrl = 0 
+;poweradd = 30 
 sprpriority = -1
-facep2 = 1                
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -1733,7 +1733,7 @@ envshake.ampl = 4
 forcestand = 1
 P2facing = 1
 id = 1520
-sprpriority = -1  
+sprpriority = -1 
 
 [State -2, VarSet]
 type = VarSet
@@ -1847,14 +1847,14 @@ ctrl = 1
 ; モンスターラリアット(EX)
 [Statedef 1530]
 type = S
-movetype= A                      
-physics = N  
-anim = 1530                    
-juggle = 0                   
-ctrl = 0                                               
-poweradd = -500                    
+movetype= A 
+physics = N 
+anim = 1530 
+juggle = 0 
+ctrl = 0 
+poweradd = -500 
 sprpriority = -1
-facep2 = 1                
+facep2 = 1 
 
 [State -2, Varset]
 type = Varset
@@ -1970,7 +1970,7 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.type = Low 
 air.hittime = 16
-air.velocity = -1.0*const(size.xscale),-9.0*const(size.yscale)  
+air.velocity = -1.0*const(size.xscale),-9.0*const(size.yscale) 
 fall = 1
 fall.recover = 0
 fall.envshake.time = 20
@@ -1985,7 +1985,7 @@ envshake.ampl = 4
 forcestand = 1
 P2facing = 1
 id = 1530
-sprpriority = -1  
+sprpriority = -1 
 
 [State -2, VarSet]
 type = VarSet

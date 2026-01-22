@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Vice by Jmorphman							 |
+;| Vice by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -23,18 +23,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/Kiri_YellowBlack.act
-pal3	= Palettes/Goodaldo_Ominous.act
-pal4	= Palettes/Chosis_Leona.act
-pal5	= Palettes/MC2_IdentityCrisis.act
-pal6	= Palettes/Kiri_BrownPurple.act
-pal7	= Palettes/KOF2002.act
-pal8	= Palettes/MC2_Wickedness.act
-pal9	= Palettes/KoopaKoot_KOF2002UM_Artwork.act
-pal10	= Palettes/Zero-Sennin_KillerBlueMoon.act
-pal11	= Palettes/senorfro_Red&Black.act
-pal12	= Palettes/PsychoKrusher_White.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/Kiri_YellowBlack.act
+pal3 = Palettes/Goodaldo_Ominous.act
+pal4 = Palettes/Chosis_Leona.act
+pal5 = Palettes/MC2_IdentityCrisis.act
+pal6 = Palettes/Kiri_BrownPurple.act
+pal7 = Palettes/KOF2002.act
+pal8 = Palettes/MC2_Wickedness.act
+pal9 = Palettes/KoopaKoot_KOF2002UM_Artwork.act
+pal10 = Palettes/Zero-Sennin_KillerBlueMoon.act
+pal11 = Palettes/senorfro_Red&Black.act
+pal12 = Palettes/PsychoKrusher_White.act
 
 [Palette Keymap]
 a = 4

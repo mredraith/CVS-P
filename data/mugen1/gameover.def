@@ -17,8 +17,8 @@ fadeout.col = 255,255,255
 clearcolor = 255,255,255
 ; Overlay Anims (from 0 to 9)
 layerall.pos = 160,120 ;Default position for all layers
-layer0.anim =  0       ;Anim action number
-layer0.starttime = 30  ;Time to start displaying the anim
+layer0.anim = 0 ;Anim action number
+layer0.starttime = 30 ;Time to start displaying the anim
 ; Total time
 end.time = 200
 

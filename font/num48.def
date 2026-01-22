@@ -10,7 +10,7 @@
 ; Bank 7 - yellow
 
 [FNT v2]
-; FNT v2 version number.  Don't change this.
+; FNT v2 version number. Don't change this.
 fntversion = 2,00
 ; Name of this font.
 name = "Number 48"
@@ -22,13 +22,13 @@ name = "Number 48"
 Type = bitmap
 ; Bank numbers are mapped to palette numbers (0, bank).
 BankType = palette
-; Size of font: width, height.  Width is used for spaces.
+; Size of font: width, height. Width is used for spaces.
 Size = 40,48
 ; Spacing between font glyphs: width, height.
 Spacing = 0,0
 ; Drawing offset: x, y.
 Offset = 0,1
-; Filename of the sff containing the glyphs.  Use sff v2 only.
+; Filename of the sff containing the glyphs. Use sff v2 only.
 File = num48.sff
 
 ; Note: All units are in pixels.

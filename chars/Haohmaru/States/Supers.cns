@@ -130,7 +130,7 @@ trigger2 = AnimElem = 8
 trigger3 = AnimElem = 14
 trigger4 = AnimElem = 19
 trigger5 = AnimElem = 20 
-trigger6 = AnimElem = 26  
+trigger6 = AnimElem = 26 
 value = 1100, 1
 channel = 1
 
@@ -141,7 +141,7 @@ trigger2 = AnimElem = 8
 trigger3 = AnimElem = 14
 trigger4 = AnimElem = 19
 trigger5 = AnimElem = 20 
-trigger6 = AnimElem = 26  
+trigger6 = AnimElem = 26 
 helperType = Normal
 stateNo = 8103
 ID = 8100
@@ -2256,7 +2256,7 @@ envshake.ampl = 5
 
 [State 3401, Throw]
 type = TargetState
-trigger1 = time > 1  && numtarget
+trigger1 = time > 1 && numtarget
 value = 3820
 ignorehitpause = 0
 persistent = 0
@@ -2899,7 +2899,7 @@ envshake.ampl = 5
 
 [State 3451, Throw]
 type = TargetState
-trigger1 = time > 1  && numtarget
+trigger1 = time > 1 && numtarget
 value = 3820
 ignorehitpause = 0
 persistent = 0

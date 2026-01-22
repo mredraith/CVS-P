@@ -178,7 +178,7 @@ type = ChangeState
 Triggerall = animelemtime(5) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 3003
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing(Land)
@@ -221,13 +221,13 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
 [Statedef 3001]
-type = A                    
-movetype= A                    
-physics = U                     
-juggle = 0                            
-ctrl = 0                       
+type = A 
+movetype= A 
+physics = U 
+juggle = 0 
+ctrl = 0 
 anim = 3001
-poweradd= 0                        
+poweradd= 0 
 sprpriority = 2
 facep2 = 1
 
@@ -245,21 +245,21 @@ Y = 0.4375
 type = HitDef
 Triggerall = roundstate = 2
 Trigger1 = animelem = 3
-attr = A, HT          
-hitflag = AF         
-priority = 1, Miss   
-sparkno = -1 + 0 * (var(33) :=0)        
-p1sprpriority = 1                     
+attr = A, HT 
+hitflag = AF 
+priority = 1, Miss 
+sparkno = -1 + 0 * (var(33) :=0) 
+p1sprpriority = 1 
 p1facing = ifelse (command = "holdfwd", -1, 1)
-p2facing = 1              
-p1stateno = 3002       
-p2stateno = 3010  
-guard.dist = 0   
+p2facing = 1 
+p1stateno = 3002 
+p2stateno = 3010 
+guard.dist = 0 
 getpower = 0,0
 givepower = 16,16
 hitsound=s800,0 
-numhits = 0    
-fall = 1              
+numhits = 0 
+fall = 1 
 ID = 3000
 
 [State 3001]
@@ -267,7 +267,7 @@ type = ChangeState
 Triggerall = animelemtime(4) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 3003
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
@@ -325,7 +325,7 @@ ctrl = 0
 type=playsnd
 trigger1= animelem=11 
 value=3000,1
-channel=0  
+channel=0 
 
 [State 3004]
 type = PlaySnd
@@ -435,7 +435,7 @@ ctrl = 0
 type=playsnd
 trigger1= animelem=3 
 value=3000,2
-channel=0  
+channel=0 
 
 [State 3005]
 type = PlaySnd
@@ -619,7 +619,7 @@ type = ChangeState
 Triggerall = animelemtime(39) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 3006
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
@@ -645,7 +645,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
 [StateDef 3010]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -663,7 +663,7 @@ value = 5050
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
 [StateDef 3011]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 1 
 Ctrl = 0
@@ -752,7 +752,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
 [StateDef 3014]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 1 
 Ctrl = 0
@@ -776,7 +776,7 @@ value = 5050
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
 [StateDef 3015]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -800,7 +800,7 @@ value = 5050
 ;------------------------------------------------------------------
 ; Mary Dynamite Swing
 [StateDef 3016]
-MoveType =  H
+MoveType = H
 VelSet = -7, -8
 sprpriority = 1 
 Ctrl = 0
@@ -1045,7 +1045,7 @@ type = ChangeState
 triggerall=animelemtime(5) > 0 
 trigger1=Vel Y + Pos Y >= 0
 value = 3003
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; Max Mary Dynamite Swing
@@ -1093,13 +1093,13 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; Max Mary Dynamite Swing
 [Statedef 3053]
-type = A                    
-movetype= A                    
-physics = U                     
-juggle = 0                            
-ctrl = 0                       
+type = A 
+movetype= A 
+physics = U 
+juggle = 0 
+ctrl = 0 
 anim = 3001
-poweradd= 0                        
+poweradd= 0 
 sprpriority = 2
 facep2 = 1
 
@@ -1117,21 +1117,21 @@ Y = 0.4375
 type = HitDef
 Triggerall = roundstate = 2
 Trigger1 = animelem = 3
-attr = A, HT          
-hitflag = AF         
-priority = 1, Miss   
-sparkno = -1 + 0 * (var(33) :=0)        
-p1sprpriority = 1                     
+attr = A, HT 
+hitflag = AF 
+priority = 1, Miss 
+sparkno = -1 + 0 * (var(33) :=0) 
+p1sprpriority = 1 
 p1facing = ifelse (command = "holdback", -1, 1)
-p2facing = 1              
-p1stateno = 3051       
-p2stateno = 3010  
-guard.dist = 0   
+p2facing = 1 
+p1stateno = 3051 
+p2stateno = 3010 
+guard.dist = 0 
 getpower = 0,0
 givepower = 16,16
 hitsound=s800,0 
-numhits = 0    
-fall = 1              
+numhits = 0 
+fall = 1 
 ID = 3050
 
 [State 3053]
@@ -1139,7 +1139,7 @@ type = ChangeState
 Triggerall = animelemtime(4) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 3003
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; Max Mary Dynamite Swing
@@ -1154,7 +1154,7 @@ ctrl = 0
 type=playsnd
 trigger1= animelem=11 
 value=3050,1
-channel=0  
+channel=0 
 
 [State 3054]
 type = PlaySnd
@@ -1243,7 +1243,7 @@ ctrl = 0
 type=playsnd
 trigger1= animelem=42 
 value=3050,2
-channel=0  
+channel=0 
 
 [State 5100, 10]
 type = PlaySnd
@@ -1613,12 +1613,12 @@ type = ChangeState
 Triggerall = animelemtime(108) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 3006
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ; Max Mary Dynamite Swing(Target)
 [StateDef 3060]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -1642,7 +1642,7 @@ value = 5050
 ;------------------------------------------------------------------
 ; Max Mary Dynamite Swing(Target#2)
 [StateDef 3061]
-MoveType =  H
+MoveType = H
 VelSet = 7, -8
 sprpriority = 1 
 Ctrl = 0
@@ -1957,7 +1957,7 @@ statetype = A
 [State 3101]
 type = VelSet
 trigger1 = animelem = 37
-x = 7.8749542236328125;  
+x = 7.8749542236328125; 
 y = -8.5625 
 
 [State 3101]
@@ -2199,7 +2199,7 @@ type = ChangeState
 Triggerall = animelemtime(37) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 3103
-ctrl = 1  
+ctrl = 1 
 
 ;---------------------------------------------------------------------------
 ;Mary Splash Rose (Land)
@@ -2943,7 +2943,7 @@ statetype = A
 [State 3152]
 type = VelSet
 trigger1 = animelem = 6
-x = 3  
+x = 3 
 y = -8.5625 
 
 [State 3152]
@@ -3192,19 +3192,19 @@ Triggerall = enemynear, stateno != [120,155]
 triggerall = (p2stateno != [5020,5040]) 
 triggerall = (p2stateno != 5070)
 Trigger1 = time = 0
-attr = S, ST          
-hitflag = M         
-priority = 1, Miss   
-sparkno = -1         
-p1sprpriority = 1                     
+attr = S, ST 
+hitflag = M 
+priority = 1, Miss 
+sparkno = -1 
+p1sprpriority = 1 
 p1facing = 1
-p2facing = 1             
-p1stateno = 3303       
-p2stateno = 3310  
-guard.dist = 0   
+p2facing = 1 
+p1stateno = 3303 
+p2stateno = 3310 
+guard.dist = 0 
 getpower = 0,0
-numhits = 0    
-fall = 1              
+numhits = 0 
+fall = 1 
 ID = 3300
 
 [State 3300, End]
@@ -3257,7 +3257,7 @@ type = ChangeState
 Triggerall = animelemtime(2) > 0 
 trigger1 = Vel Y + Pos Y >= 0
 value = 3302
-ctrl = 1  
+ctrl = 1 
 
 ;------------------------------------------------------------------
 ;Mary Typhoon
@@ -3461,7 +3461,7 @@ type = Explod
 trigger1 = animelem = 14
 anim = 3305
 pos = 77,33
-postype = p1  
+postype = p1 
 sprpriority = 7
 
 [State 3300]
@@ -3514,7 +3514,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;Mary Typhoon
 [StateDef 3310]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -3539,7 +3539,7 @@ value = 5050
 ;Mary Typhoon
 [StateDef 3311]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = -4, -5.5
 sprpriority = 1 
 Ctrl = 0
@@ -3867,7 +3867,7 @@ type = Explod
 trigger1 = animelem = 15
 anim = 3408
 pos = -9,-18
-postype = p1  
+postype = p1 
 sprpriority = 6
 
 [State 3400, snd]
@@ -3969,7 +3969,7 @@ type = Explod
 trigger1 = animelem = 24
 anim = 3408
 pos = -9,-18
-postype = p1  
+postype = p1 
 sprpriority = 6
 
 [State 3400, snd]
@@ -4043,7 +4043,7 @@ type = Explod
 trigger1 = animelem = 33
 anim = 3408
 pos = -9,-18
-postype = p1  
+postype = p1 
 sprpriority = 6
 
 [State 3401]
@@ -4178,12 +4178,12 @@ ctrl=1
 ;------------------------------------------------------------------
 ;Lv3 Super
 [Statedef 3402]
-type = S                    
-movetype= A                    
-physics = N                     
-juggle = 0                             
-ctrl = 0                       
-anim = 3402                  
+type = S 
+movetype= A 
+physics = N 
+juggle = 0 
+ctrl = 0 
+anim = 3402 
 sprpriority = 2
 velset = 8,0
 
@@ -4247,7 +4247,7 @@ statetype = A
 [State 3402]
 type = VelSet
 trigger1 = animelem = 37
-x = 7.8749542236328125;  
+x = 7.8749542236328125; 
 y = -8.5625 
 
 [State 3402]
@@ -4302,7 +4302,7 @@ type = Explod
 trigger1 = animelemtime(12) = 4
 anim = 3408
 pos = 47,-47
-postype = p1  
+postype = p1 
 sprpriority = 3
 
 [State 3402]
@@ -4311,7 +4311,7 @@ trigger1 = animelemtime(6) = 4
 trigger2 = animelemtime(18) = 4
 anim = 3408
 pos = -47,-47
-postype = p1  
+postype = p1 
 sprpriority = 3
 
 [State 3402]
@@ -4601,7 +4601,7 @@ type = Explod
 trigger1 = animelem = 1
 anim = 3305
 pos = 5,51
-postype = p1  
+postype = p1 
 sprpriority = 7
 
 [State 3408]
@@ -4742,7 +4742,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;Lv3 Super
 [StateDef 3410]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 0 
 Ctrl = 0
@@ -4766,7 +4766,7 @@ value = 5050
 ;------------------------------------------------------------------
 ;Lv3 Super
 [StateDef 3411]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 4 
 Ctrl = 0
@@ -4810,7 +4810,7 @@ value = 5050
 ;------------------------------------------------------------------
 ;Lv3 Super
 [StateDef 3412]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 1 
 Ctrl = 0
@@ -4834,7 +4834,7 @@ value = 5050
 ;------------------------------------------------------------------
 ;Lv3 Super
 [StateDef 3413]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 4 
 Ctrl = 0
@@ -4878,7 +4878,7 @@ value = 5050
 ;------------------------------------------------------------------
 ;Lv3 Super
 [StateDef 3414]
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 sprpriority = 1 
 Ctrl = 0
@@ -4903,7 +4903,7 @@ value = 5050
 ;Lv3 Super
 [StateDef 3415]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = -0.5, -12
 sprpriority = 1 
 Ctrl = 0

@@ -1,26 +1,26 @@
 ; _______________________________________________
-;| Rose by varo_hades				 |
+;| Rose by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
-name        ="Rose"
+name ="Rose"
 displayName ="Rose"
 versionDate =05,02,2012
 mugenVersion=1.0
-author      ="varo_hades"
+author ="varo_hades"
 pal.defaults=1,2,3,4,5,6,7,8,9,10,11,12
 localCoord = 320,240
 ;SPRITER FeLo_Llop
 
 [Files]
 movelist = movelist.dat
-cmd     =Command.cmd
-cns     =Constants.cns
-st      =3v3.st
+cmd =Command.cmd
+cns =Constants.cns
+st =3v3.st
 stCommon=common1.cns
-sprite  =Sprite.sff
-anim    =3v3.air
-sound   =Sound.snd
+sprite =Sprite.sff
+anim =3v3.air
+sound =Sound.snd
 pal1=Palettes/cvs.act
 pal2=Palettes/D.D. Warrior Lady.act
 pal3=Palettes/Lyla.act
@@ -38,7 +38,7 @@ st2=States/Special.st
 st3=States/Super.st
 st4=States/Helpers.st
 st5=States/Rose.st
-	
+ 
 ;[Arcade]
 ;intro.storyBoard = intro.def
 ;ending.storyBoard = ending.def

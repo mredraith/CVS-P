@@ -50,7 +50,7 @@ elem=2
 ignorehitpause=1
 ;---------------------------------------------------------------------------
 [Statedef 816]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=-4,-5
@@ -511,7 +511,7 @@ y =.45
 [State 3420, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3420  ;custom animation
+value = 3420 ;custom animation
 
 [State 3420, ChangeState]
 type = changeState
@@ -696,7 +696,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;custom animation
+value = 4020 ;custom animation
 
 [State 0, ChangeState]
 type = changeState
@@ -767,7 +767,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4058  ;custom animation
+value = 4058 ;custom animation
 
 [State 0, SelfState]
 type = SelfState
@@ -804,7 +804,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4059  ;custom animation
+value = 4059 ;custom animation
 [State 0, SelfState]
 type = SelfState
 trigger1 = animtime=0

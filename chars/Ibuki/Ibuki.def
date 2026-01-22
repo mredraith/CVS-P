@@ -1,25 +1,25 @@
 ; _______________________________________________
-;| Ibuki by varo_hades				 |
+;| Ibuki by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
-name        ="Ibuki"
+name ="Ibuki"
 displayName ="Ibuki"
 versionDate =05,02,2012
 mugenVersion=1.0
-author      ="varo_hades"
+author ="varo_hades"
 pal.defaults=1,2,3,4,5,6,7,8,9,10,11,12
 localCoord = 427,240
 
 [Files]
 movelist = movelist.dat
-cmd     =Command.cmd
-cns     =ConstantsCvS.cns
-st      =States/System.st
+cmd =Command.cmd
+cns =ConstantsCvS.cns
+st =States/System.st
 stCommon=common1.cns
-sprite  =Sprite.sff
-anim    =Anim.air
-sound   =Sound.snd
+sprite =Sprite.sff
+anim =Anim.air
+sound =Sound.snd
 pal1=Palettes/sf3.act
 pal2=Palettes/ibuki02.act
 pal3=Palettes/ibuki03.act
@@ -36,7 +36,7 @@ st1=States/Normal.st
 st2=States/Special.st
 st3=States/Super.st
 st4=States/Helpers.st
-	
+ 
 ; Arcade mode
 [Arcade]
 intro.storyboard =

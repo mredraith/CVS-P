@@ -257,7 +257,7 @@ trigger1 = AnimElem = 9
 anim = 395
 ID = 395
 sprpriority = 5
-postype  =p1
+postype =p1
 bindtime = -1
 
 [State 391, Slice Snd]

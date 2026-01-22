@@ -2,17 +2,17 @@
 ;Constants
 ;
 [Data]
-life = 1000			
-attack = 100		
-defence = 100		
-fall.defence_up = 50	
-lieDown.time = 15		
-airjuggle = 0	
-sparkno = s8010			
-guard.sparkno = s8000	
-KO.echo = 0			
-volumescale = 100			
-IntPersistIndex = 0	
+life = 1000 
+attack = 100 
+defence = 100 
+fall.defence_up = 50 
+lieDown.time = 15 
+airjuggle = 0 
+sparkno = s8010 
+guard.sparkno = s8000 
+KO.echo = 0 
+volumescale = 100 
+IntPersistIndex = 0 
 FloatPersistIndex = 0 
 
 [Size]
@@ -41,9 +41,9 @@ jump.fwd = 2.9625
 jump.back = -3.575
 runjump.fwd = 4.444, -10.9275
 runjump.back = -5.363, -10.9275
-airjump.neu = 0,-9.1     
-airjump.back = -2.55      
-airjump.fwd = 2.5         
+airjump.neu = 0,-9.1 
+airjump.back = -2.55 
+airjump.fwd = 2.5 
 
 [Movement]
 airJump.num = 0
@@ -66,8 +66,8 @@ down.friction.threshold = 0.5
 
 [Quotes]
 victory0 = "It would seem that your passion has done you no favors today."
-victory1 = "What happened?  Did your will to fight just vanish?"
-victory2 = "Broken and crushed beneath the heavy bitterness of defeat.  I expected no less."
+victory1 = "What happened? Did your will to fight just vanish?"
+victory2 = "Broken and crushed beneath the heavy bitterness of defeat. I expected no less."
 victory3 = "Look into the light and know that you are beaten!"
 victory4 = "Your defeat does not bring me joy, merely satisfaction."
 victory5 = "You made yourself vulnerable, all I did was take advantage of the situation."
@@ -108,9 +108,9 @@ victory22 = "You have been dethroned, Geese, South Town is no longer your empire
 ;Vs Blue Mary
 victory23 = "Don't stick your nose too far into matters that don't concern you, woman!"
 ;Vs Andy Bogard
-victory24 = "Unlike your brother, you do not disappoint me.  That is to say, I had no expectations of you anyway."
+victory24 = "Unlike your brother, you do not disappoint me. That is to say, I had no expectations of you anyway."
 ;Vs Kim Kaphwan
-victory25 = "Justice is a buzzword fabricated by those too weak to protect themselves.  If this were not true, you might have beaten me."
+victory25 = "Justice is a buzzword fabricated by those too weak to protect themselves. If this were not true, you might have beaten me."
 ;Vs Raziel
 victory26 = "You have misconstrued me with another, weaker warrior I am afraid."
 ;Vs Deadpool

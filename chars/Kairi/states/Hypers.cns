@@ -75,7 +75,7 @@ name = "HYPER BACK GROUND"
 ID = 40001
 stateno = 40001
 pos = 160,120
-postype = left    ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -89,7 +89,7 @@ trigger1 = animelem = 1
 time = 45
 anim = 0
 pos = 0,10000
-movetime =  30
+movetime = 30
 darken = 0
 p2defmul = 1
 poweradd = 0
@@ -135,7 +135,7 @@ var(10)=5
 [State 4500, 1];One time per round
 type = VarSet
 trigger1 = animelem = 1
-v =  59
+v = 59
 value = 1
 
 [State 4500, width]
@@ -256,7 +256,7 @@ trigger1 = Anim = 20010
 anim = 7502
 ID = 7502
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -282,7 +282,7 @@ trigger1 = Anim = 20010
 anim = 7502
 ID = 7502
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -308,7 +308,7 @@ trigger1 = Anim = 20010
 anim = 8057
 ID = 8057
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -334,7 +334,7 @@ trigger1 = Anim = 20000
 anim = 2222
 ID = 2222
 pos = 27,-65
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -367,7 +367,7 @@ trigger1 = Anim = 20000
 anim = 8581
 ID = 8581
 pos = 27,-65
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -393,7 +393,7 @@ trigger1 = Anim = 20000
 anim = 8582
 ID = 8582
 pos = 27,-65
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -494,7 +494,7 @@ name = "HYPER BACK GROUND"
 ID = 40001
 stateno = 40001
 pos = 160,120
-postype = left    ;p2,front,back,left,right
+postype = left ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -561,13 +561,13 @@ trans=add1
 [State 5200, Varset]
 type = VarSet
 trigger1 = p2stateno = [5000,5999]
-v = 19    ;fv =
+v = 19 ;fv =
 value = 1
 
 [State 5200, Varset]
 type = VarSet
 trigger1 = p2stateno != [5000,5999]
-v = 19    ;fv =
+v = 19 ;fv =
 value = 0
 
 [State 5200, Super Pause]

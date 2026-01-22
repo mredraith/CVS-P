@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Adon by Trololo                       |
+;| Adon by Trololo |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -20,23 +20,23 @@ st1 = States/Normal.st
 st2 = States/Special.st
 st3 = States/Super.st
 st4 = States/Helpers.st
-st5		= Config.txt
+st5 = Config.txt
 stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = SoundSFA.snd
-pal1	= Palettes/Capcom vs SNK 2.act
-pal2	= Palettes/X-Ism 1.act
-pal3	= Palettes/V-Ism 1.act
-pal1	= Palettes/A-Ism 2.act
-pal2	= Palettes/X-Ism 2.act
-pal3	= Palettes/V-Ism 2.act
-pal7	= Palettes/Capcom vs SNK 3.act
-pal8	= Palettes/SFA2 Alt.act
-pal9	= Palettes/SSF4 Color 6 by SpazMaster.act
-pal10	= Palettes/SSF4 Color 10 by SpazMaster.act
-pal11	= Palettes/Sagat.act
-pal12	= Palettes/Joe Higashi.act
+pal1 = Palettes/Capcom vs SNK 2.act
+pal2 = Palettes/X-Ism 1.act
+pal3 = Palettes/V-Ism 1.act
+pal1 = Palettes/A-Ism 2.act
+pal2 = Palettes/X-Ism 2.act
+pal3 = Palettes/V-Ism 2.act
+pal7 = Palettes/Capcom vs SNK 3.act
+pal8 = Palettes/SFA2 Alt.act
+pal9 = Palettes/SSF4 Color 6 by SpazMaster.act
+pal10 = Palettes/SSF4 Color 10 by SpazMaster.act
+pal11 = Palettes/Sagat.act
+pal12 = Palettes/Joe Higashi.act
 
 [Palette Keymap]
 x = 4
@@ -51,7 +51,7 @@ z2 = 12
 a2 = 7
 b2 = 8
 c2 = 9
-	
+ 
 ;[Arcade]
 ;intro.storyBoard = intro.def
 ;ending.storyBoard = ending.def

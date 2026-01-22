@@ -1,9 +1,9 @@
 ; _______________________________________________
-;| Kim Kaphwan by Jmorphman						 |
+;| Kim Kaphwan by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
-name        ="Kim Kaphwan"
+name ="Kim Kaphwan"
 displayName ="Kim"
 versionDate = 08,11,2012
 mugenVersion= 1.0
@@ -24,18 +24,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/Girard_KimDongHwan.act
-pal3	= Palettes/Girard_KimJaeHoon.act
-pal4	= Palettes/.Hades._Black&White.act
-pal5	= Palettes/Agnibyte_White&Black.act
-pal6	= Palettes/Goodaldo_Black&Red.act
-pal7	= Palettes/MDD_HwoarangTekken6.act
-pal8	= Palettes/Koldskool_AllenSnider.act
-pal9	= Palettes/Girard_MayLee.act
-pal10	= Palettes/Dishamonpow_Pink&Green.act
-pal11	= Palettes/Kiri_Orange&Brown.act
-pal12	= Palettes/davismaximus_JackDaniel's.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/Girard_KimDongHwan.act
+pal3 = Palettes/Girard_KimJaeHoon.act
+pal4 = Palettes/.Hades._Black&White.act
+pal5 = Palettes/Agnibyte_White&Black.act
+pal6 = Palettes/Goodaldo_Black&Red.act
+pal7 = Palettes/MDD_HwoarangTekken6.act
+pal8 = Palettes/Koldskool_AllenSnider.act
+pal9 = Palettes/Girard_MayLee.act
+pal10 = Palettes/Dishamonpow_Pink&Green.act
+pal11 = Palettes/Kiri_Orange&Brown.act
+pal12 = Palettes/davismaximus_JackDaniel's.act
 
 [Palette Keymap]
 a = 4
@@ -50,7 +50,7 @@ c2 = 12
 x2 = 7
 y2 = 8
 z2 = 9
-	
+ 
 ;[Arcade]
 ;intro.storyBoard = intro.def
 ;ending.storyBoard = ending.def

@@ -266,7 +266,7 @@ ownPal = 1
 
 [State 1100, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 8,0
 
 [State 1100, Muteki]
@@ -311,7 +311,7 @@ y = 0.5
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 91 < 7, 7, fvar(11) * 91)), 7
 priority = 4, hit
@@ -501,7 +501,7 @@ ownPal = 1
 
 [State 1110, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 8,0
 
 [State 1110, Muteki]
@@ -546,7 +546,7 @@ y = 0.5
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 105 < 7, 7, fvar(11) * 105)), 7
 priority = 4, hit
@@ -693,7 +693,7 @@ ownPal = 1
 
 [State 1120, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 8,0
 
 [State 1120, Muteki]
@@ -766,7 +766,7 @@ ignorehitpause = 0
 [State 1120, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 7
 priority = 4, hit
@@ -941,7 +941,7 @@ ownPal = 1
 
 [State 1130, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 8,0
 
 [State 1130, Muteki]
@@ -1014,7 +1014,7 @@ ignorehitpause = 0
 [State 1130, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 7
 priority = 4, hit
@@ -1521,13 +1521,13 @@ value = 1, 5
 
 [State 1300, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 15,0
 
 [State 1300, Hit Mid]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 4 || AnimElem = 10  
+trigger1 = AnimElem = 4 || AnimElem = 10 
 attr = S, SA
 ID = 1300
 damage = 0, 7
@@ -1574,7 +1574,7 @@ p2facing = 1
 [State 1300, Hit High]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 7  
+trigger1 = AnimElem = 7 
 attr = S, SA
 ID = 1300
 damage = 0, 7
@@ -1621,7 +1621,7 @@ p2facing = 1
 [State 1300, Hit Low]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 13  
+trigger1 = AnimElem = 13 
 attr = S, SA
 ID = 1300
 damage = 0, 7
@@ -1728,7 +1728,7 @@ trigger3 = var(35) := 62 || var(36) := -98
 
 [State 1301, Hit Low]
 type = HitDef
-trigger1 = AnimElem = 2 || AnimElem = 5 || AnimElem = 8  
+trigger1 = AnimElem = 2 || AnimElem = 5 || AnimElem = 8 
 attr = S, SA
 ID = 1301
 damage = ceil(ifElse(fvar(11) * 7 < 7, 7, fvar(11) * 7)), 3
@@ -1775,7 +1775,7 @@ kill = 0
 
 [State 1301, Hit Mid]
 type = HitDef
-trigger1 = AnimElem = 11 || AnimElem = 14 || AnimElem = 17  
+trigger1 = AnimElem = 11 || AnimElem = 14 || AnimElem = 17 
 attr = S, SA
 ID = 1301
 damage = ceil(ifElse(fvar(11) * 7 < 7, 7, fvar(11) * 7)), 3
@@ -1822,7 +1822,7 @@ kill = 0
 
 [State 1301, Hit High]
 type = HitDef
-trigger1 = AnimElem = 20 || AnimElem = 23 || AnimElem = 26 || AnimElem = 29 || AnimElem = 32  
+trigger1 = AnimElem = 20 || AnimElem = 23 || AnimElem = 26 || AnimElem = 29 || AnimElem = 32 
 attr = S, SA
 ID = 1301
 damage = ceil(ifElse(fvar(11) * 7 < 7, 7, fvar(11) * 7)), 3
@@ -1870,7 +1870,7 @@ kill = 0
 [State 1301, Hit Final]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 38  
+trigger1 = AnimElem = 38 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 4, hit
@@ -2040,13 +2040,13 @@ value = 1, 5
 
 [State 1330, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 15,0
 
 [State 1330, Hit Mid]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 4 || AnimElem = 10  
+trigger1 = AnimElem = 4 || AnimElem = 10 
 attr = S, SA
 ID = 1330
 damage = 0, 7
@@ -2093,7 +2093,7 @@ p2facing = 1
 [State 1330, Hit High]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 7  
+trigger1 = AnimElem = 7 
 attr = S, SA
 ID = 1330
 damage = 0, 7
@@ -2140,7 +2140,7 @@ p2facing = 1
 [State 1330, Hit Low]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 13  
+trigger1 = AnimElem = 13 
 attr = S, SA
 ID = 1330
 damage = 0, 7
@@ -2298,7 +2298,7 @@ kill = 0
 
 [State 1331, Hit Mid]
 type = HitDef
-trigger1 = AnimElem = 14 || AnimElem = 17 || AnimElem = 20 || AnimElem = 23  
+trigger1 = AnimElem = 14 || AnimElem = 17 || AnimElem = 20 || AnimElem = 23 
 attr = S, SA
 ID = 1331
 damage = ceil(ifElse(fvar(11) * 7 < 7, 7, fvar(11) * 7)), 3
@@ -2345,7 +2345,7 @@ kill = 0
 
 [State 1331, Hit High]
 type = HitDef
-trigger1 = AnimElem = 26 || AnimElem = 29 || AnimElem = 32 || AnimElem = 35 || AnimElem = 38 || AnimElem = 41  
+trigger1 = AnimElem = 26 || AnimElem = 29 || AnimElem = 32 || AnimElem = 35 || AnimElem = 38 || AnimElem = 41 
 attr = S, SA
 ID = 1331
 damage = ceil(ifElse(fvar(11) * 7 < 7, 7, fvar(11) * 7)), 3
@@ -2393,7 +2393,7 @@ kill = 0
 [State 1331, Hit BackHand]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 46  
+trigger1 = AnimElem = 46 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 priority = 4, hit
@@ -2440,7 +2440,7 @@ kill = 0
 [State 1331, Hit Final]
 type = HitDef
 ;trigger1 = !var(16) && var(15) < 2
-trigger1 = AnimElem = 53  
+trigger1 = AnimElem = 53 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 4, hit
@@ -2564,7 +2564,7 @@ x = 0
 type = HitDef
 trigger1 = P2StateType != A
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
 priority = 4, hit
@@ -2663,7 +2663,7 @@ edge = 10,0
 [State 1405, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
 priority = 4, hit
@@ -2711,7 +2711,7 @@ kill = 0
 [State 1405, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 6  
+trigger1 = AnimElem = 6 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
 priority = 4, hit
@@ -2759,7 +2759,7 @@ kill = 0
 [State 1405, Hit 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 9  
+trigger1 = AnimElem = 9 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
 priority = 4, hit
@@ -2807,7 +2807,7 @@ kill = 0
 [State 1405, Final Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 15  
+trigger1 = AnimElem = 15 
 attr = S, SA
 ID = 1490
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
@@ -2940,7 +2940,7 @@ x = 0
 type = HitDef
 trigger1 = P2StateType != A
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
 priority = 4, hit
@@ -3048,7 +3048,7 @@ var(25) = 50
 [State 1435, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 2  
+trigger1 = AnimElem = 2 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -3096,7 +3096,7 @@ kill = 0
 [State 1435, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 5  
+trigger1 = AnimElem = 5 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -3151,7 +3151,7 @@ x = 8
 [State 1435, Hit 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 12  
+trigger1 = AnimElem = 12 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -3439,7 +3439,7 @@ ownPal = 1
 
 [State 1500, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 10,0
 
 [State 1500, Rising Velocity]
@@ -3649,7 +3649,7 @@ ownPal = 1
 
 [State 1510, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 10,0
 
 [State 1510, Rising Velocity]
@@ -3814,7 +3814,7 @@ ownPal = 1
 
 [State 1520, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 10,0
 
 [State 1520, Rising Velocity]
@@ -4012,7 +4012,7 @@ ownPal = 1
 
 [State 1530, Width]
 type = Width
-trigger1 = 1  
+trigger1 = 1 
 edge = 10,0
 
 [State 1530, Rising Velocity]

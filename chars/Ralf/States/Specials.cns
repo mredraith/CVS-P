@@ -1429,7 +1429,7 @@ time=1
 [State 1200, StateTypeSet]
 type=StateTypeSet
 trigger1=animelem=7
-statetype=A  
+statetype=A 
 [State 1200, VelSet]
 type=VelSet
 trigger1=animelem=7
@@ -1627,7 +1627,7 @@ time=1
 [State 1250, StateTypeSet]
 type=StateTypeSet
 trigger1=animelem=7
-statetype=A  
+statetype=A 
 [State 1250, VelSet]
 type=VelSet
 trigger1=animelem=7
@@ -2303,7 +2303,7 @@ time=1
 [State 1400, StateTypeSet]
 type=StateTypeSet
 trigger1=animelem=4
-statetype=A  
+statetype=A 
 [State 1400, VelSet]
 type=VelSet
 trigger1=animelem=4
@@ -2469,8 +2469,8 @@ sprPriority=1
 
 [State 1410, StateTypeSet]
 type=StateTypeSet
-trigger1=animelem=2       
-movetype=I  
+trigger1=animelem=2 
+movetype=I 
 [State 1410, PosSet]
 type=PosSet
 trigger1=1
@@ -3048,7 +3048,7 @@ time=1
 [State 1450, StateTypeSet]
 type=StateTypeSet
 trigger1=animelem=4
-statetype=A  
+statetype=A 
 [State 1450, VelSet]
 type=VelSet
 trigger1=animelem=4
@@ -3761,7 +3761,7 @@ value=1517
 ;---------------------------------------------------------------------------
 ;Super Argentine Backbreaker - Target3
 [Statedef 1517]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -3798,7 +3798,7 @@ value=1518
 ;---------------------------------------------------------------------------
 ;Super Argentine Backbreaker - Target4
 [Statedef 1518]
-type   =L
+type =L
 movetype= H
 physics=N
 velset=0,0

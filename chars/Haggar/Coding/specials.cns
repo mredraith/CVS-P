@@ -292,7 +292,7 @@ pos = 19, -48
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 4
-statetype = A      
+statetype = A 
 
 [State 0, VelSet]
 type = VelSet
@@ -641,7 +641,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = 50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -742,7 +742,7 @@ value = 1061
 type = StateTypeSet
 trigger1 = animelem = 4
 statetype = A
-																		
+ 
 [State 0, VelSet]
 type = VelSet
 trigger1 = animelem = 3
@@ -776,7 +776,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = 50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -876,7 +876,7 @@ value = 1061
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 4
-statetype = A       
+statetype = A 
 
 [State 0, VelSet]
 type = VelSet
@@ -911,7 +911,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = 50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1046,7 +1046,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = 50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1240,7 +1240,7 @@ trigger1 = AnimElem = 4
 anim = f7800
 ID = 7800
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1921,7 +1921,7 @@ trigger1 = animelem = 4
 anim = 7050
 ID = 7050
 pos = 60,-75
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2016,7 +2016,7 @@ trigger1 = animelem = 8
 anim = 7050
 ID = 7050
 pos = 60,-75
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2154,7 +2154,7 @@ trigger1 = animelem = 8
 anim = 7051
 ID = 7050
 pos = 60,-75
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2374,7 +2374,7 @@ trigger1 = animelem = 8
 anim = 7051
 ID = 7050
 pos = 60,-75
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2392,7 +2392,7 @@ trigger1 = animelem = 11
 anim = 7052
 ID = 7050
 pos = 60,-75
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3220,7 +3220,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = -50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3356,7 +3356,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = -50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3492,7 +3492,7 @@ trigger1 = animelem = 1
 anim = f63
 ID = 61
 pos = -50,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

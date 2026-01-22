@@ -1086,11 +1086,11 @@ type=HitDef
 trigger1 = Animelem = 7
 trigger2 = animelem = 21
 trigger3 = animelem = 35 
-attr=S,HA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,HA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = 20,5
 getpower=0,0
 givepower = 36, 36
@@ -1103,7 +1103,7 @@ hitsound=S2+10*var(44),2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=35 
 ground.hittime=35 
@@ -1131,11 +1131,11 @@ type=HitDef
 trigger1 = Animelem = 8
 trigger2 = animelem = 22
 trigger3 = animelem = 36
-attr=S,HA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,HA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = 20,5
 getpower=0,0
 givepower = 36, 36
@@ -1148,7 +1148,7 @@ hitsound=S2+10*var(44),2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=35 
 ground.hittime=35 
@@ -1177,11 +1177,11 @@ type=HitDef
 trigger1 = Animelem = 9
 trigger2 = animelem = 23
 trigger3 = animelem = 37 
-attr=S,HA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,HA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = 20,5
 getpower=0,0
 givepower = 36, 36
@@ -1194,7 +1194,7 @@ hitsound=S2+10*var(44),2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=35 
 ground.hittime=35 
@@ -1557,11 +1557,11 @@ type=HitDef
 trigger1 = Animelem = 7
 trigger2 = animelem = 21
 trigger3 = animelem = 35 
-attr=S,HA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,HA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = 20,5
 getpower=0,0
 givepower = 36, 36
@@ -1574,7 +1574,7 @@ hitsound=S2+10*var(44),2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=35 
 ground.hittime=35 
@@ -1602,11 +1602,11 @@ type=HitDef
 trigger1 = Animelem = 8
 trigger2 = animelem = 22
 trigger3 = animelem = 36
-attr=S,HA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,HA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = 20,5
 getpower=0,0
 givepower = 36, 36
@@ -1619,7 +1619,7 @@ hitsound=S2+10*var(44),2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=35 
 ground.hittime=35 
@@ -1648,11 +1648,11 @@ type=HitDef
 trigger1 = Animelem = 9
 trigger2 = animelem = 23
 trigger3 = animelem = 37 
-attr=S,HA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,HA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = 20,5
 getpower=0,0
 givepower = 36, 36
@@ -1665,7 +1665,7 @@ hitsound=S2+10*var(44),2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=35 
 ground.hittime=35 

@@ -486,7 +486,7 @@ ignoreHitPause = 1
 [State 1010, End]
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
-trigger2 = Time = 10                 
+trigger2 = Time = 10 
 
 ;
 [StateDef 1052]
@@ -1131,7 +1131,7 @@ ignoreHitPause = 1
 [State 1010, End]
 type = DestroySelf
 trigger1 = Pos x != [-200,200]
-trigger2 = Time = 9                                                                                                                              
+trigger2 = Time = 9 
 
 ; EX Kooh Ken (XIII)
 [StateDef 1651]

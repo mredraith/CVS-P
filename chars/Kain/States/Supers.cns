@@ -1528,12 +1528,12 @@ trigger1 = NumTarget
 pos = ceil(55 * const(size.xScale)), ceil(0 * const(size.yScale))
 [State 3301, Bind 2]
 type = TargetBind
-trigger1 = AnimElemTime(4) >= 0 &&  AnimElemTime(5) < 0
+trigger1 = AnimElemTime(4) >= 0 && AnimElemTime(5) < 0
 trigger1 = NumTarget
 pos = ceil(35 * const(size.xScale)), ceil(0 * const(size.yScale))
 [State 3301, Bind 2]
 type = TargetBind
-trigger1 = AnimElemTime(5) >= 0 &&  AnimElemTime(60) < 0
+trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(60) < 0
 trigger1 = NumTarget
 pos = ceil(45 * const(size.xScale)), ceil(0 * const(size.yScale))
 

@@ -3982,7 +3982,7 @@ triggerall = !var(20)
 triggerall = anim = 1501
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1105
-ctrl =  0
+ctrl = 0
 
 [State 1501, End]
 type = ChangeState
@@ -3990,7 +3990,7 @@ triggerall = var(20)
 triggerall = anim = 1501
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 0
-ctrl =  1
+ctrl = 1
 
 ;EX AIR EXCITING KICK=
 ;Kuuchu Exciting Kick

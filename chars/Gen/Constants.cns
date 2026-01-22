@@ -1,14 +1,14 @@
 ;VARIABLE LIST=
 
-;var(1)  : Stance
-;var(2)  : Air Stance
-;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
-;var(4)  : Chain Combo (0 = Off; 1 = On)
+;var(1) : Stance
+;var(2) : Air Stance
+;var(3) : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4) : Chain Combo (0 = Off; 1 = On)
 
-;var(6)  : Cancel Flag
-;var(7)  : Able to Super Cancel
-;var(8)  : Able to Hyper Cancel
-;var(9)  : Counter Flag
+;var(6) : Cancel Flag
+;var(7) : Able to Super Cancel
+;var(8) : Able to Hyper Cancel
+;var(9) : Counter Flag
 ;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Heavy)
 ;var(11) : Button Detect for Hyakurenku
 ;var(12) : Button Detect for Ouga
@@ -23,7 +23,7 @@
 ;var(21) : Super Cancel Flag
 ;var(22) : Hyper Cancel Flag
 ;var(23) : Super Finish Type (900 = Custom Combo; 3000 = Zanei; 3100 = Zetsuei; 3200 = Shitenshuu; 3300 = Shitenketsu; 3400 = Yasen; 13000 = Jyakoha; 13100 = Ryukoha; 13200 = Kouga; 13300 = Teiga)
-;var(24)   Gekiro Fatigue Timing
+;var(24) Gekiro Fatigue Timing
 ;var(25) : Ticks to Apply EX FX
 ;var(26) : Ticks Unable to Walk
 ;var(27) : Zero Juggle Control
@@ -55,7 +55,7 @@
 
 
 ; _________________________________________
-;| Gen by mwryly & varo_hades              |
+;| Gen by mwryly & varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;CONSTANTS=
 [Data]

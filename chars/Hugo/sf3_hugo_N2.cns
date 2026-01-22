@@ -962,7 +962,7 @@ value = SAC
 type = selfstate
 Triggerall = time = 0
 triggerall = authorname = "GM"
-trigger1 = name = "Ryu" || name = "Ken"  || name = "Gouki" || name = "Sean" || name = "Alex" || name = "Hugo" || name = "Ibuki"
+trigger1 = name = "Ryu" || name = "Ken" || name = "Gouki" || name = "Sean" || name = "Alex" || name = "Hugo" || name = "Ibuki"
 trigger2 = name = "Gill"
 value = 850
 
@@ -2107,14 +2107,14 @@ value = 5100
 ;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
 ; ラリアット
 [Statedef 900]
-type = S                     
-movetype = A                     
-physics = S                     
-juggle = 0                     
-velset = 0,0                   
-ctrl = 0                     
-anim = 900   
-facep2 = 1               
+type = S 
+movetype = A 
+physics = S 
+juggle = 0 
+velset = 0,0 
+ctrl = 0 
+anim = 900 
+facep2 = 1 
 sprpriority = 2
 ;poweradd = 30
 
@@ -2124,44 +2124,44 @@ trigger1 = AnimElemtime(6) = -1
 value = 30
 
 [State 220, ヒット定義]
-type = HitDef     
-triggerall = !var(24) && (!var(5)||(var(5)&&fvar(4)))                               
+type = HitDef 
+triggerall = !var(24) && (!var(5)||(var(5)&&fvar(4))) 
 triggerall = var(23) != 900
 trigger1 = (AnimElemtime(6) >= 0) && (AnimElemtime(9) < 0)
-attr = S, NA                     
+attr = S, NA 
 damage = ceil(160*fvar(0)*fvar(23)*fvar(28)*fvar(31)*fvar(39)),0
-priority = 5,Hit                
-animtype = hard              
-guardflag = M                   
-hitflag = MAF                    
+priority = 5,Hit 
+animtype = hard 
+guardflag = M 
+hitflag = MAF 
 getpower = 40,70
-givepower = 120,0               
+givepower = 120,0 
 pausetime = 14, 19 
-guard.pausetime = 14, 19                
-sparkno = -1 + 0 * (var(43) := 8010)                     
-guard.sparkno = -1 + 0 * (var(42) := 8000)               
-sparkxy = -15 + 0 * (var(46) := 155), var(47) := -110               
+guard.pausetime = 14, 19 
+sparkno = -1 + 0 * (var(43) := 8010) 
+guard.sparkno = -1 + 0 * (var(42) := 8000) 
+sparkxy = -15 + 0 * (var(46) := 155), var(47) := -110 
 hitsound = S2,2
 guardsound = S3,0
-ground.type = High               
-ground.slidetime = 16             
-ground.hittime = Ifelse(p2statetype = C, 35, 33)             
+ground.type = High 
+ground.slidetime = 16 
+ground.hittime = Ifelse(p2statetype = C, 35, 33) 
 guard.hittime = 17
 guard.slidetime = 16
 guard.ctrltime = 17
-ground.velocity = -26.0*const(size.xscale)   
+ground.velocity = -26.0*const(size.xscale) 
 guard.velocity = -26.0*const(size.xscale) 
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.type = Low 
-air.hittime = 33       
-air.velocity = -5.0*const(size.xscale),-8.5*const(size.yscale)  
+air.hittime = 33 
+air.velocity = -5.0*const(size.xscale),-8.5*const(size.yscale) 
 P2facing = 1
 envshake.time = 5
 envshake.freq = 60
 envshake.ampl = 1
-yaccel = .50*const(size.yscale)    
-id = 900    
+yaccel = .50*const(size.yscale) 
+id = 900 
 
 [State 810, posadd]
 type = posadd
@@ -2305,7 +2305,7 @@ attr = A, NA
 damage = ceil(40*fvar(0)*fvar(23)*fvar(28)*fvar(31)),0
 priority = 4,Hit
 getpower = 20,10 
-givepower = 0,0               
+givepower = 0,0 
 hitflag = MAF
 guardflag = H
 pausetime = 9,8
@@ -2438,8 +2438,8 @@ attr = A, NA
 damage = ceil(100*fvar(0)*fvar(23)*fvar(28)*fvar(31)*fvar(39)),0
 priority = 5,Hit
 getpower = 40,70
-givepower = 120,0  
-animtype = hard             
+givepower = 120,0 
+animtype = hard 
 hitflag = MAF
 guardflag = H
 pausetime = 11,10

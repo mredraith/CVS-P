@@ -657,12 +657,12 @@ ctrl = 1
 [Statedef 200]
 type = S
 movetype = A
-physics = S	
+physics = S 
 poweradd = !var(15)*5
 facep2 = 1
 velset = 0,0
 ctrl = 0
-anim = 200 + Var(29)*10000		
+anim = 200 + Var(29)*10000 
 
 [State 0, snd]
 type = playsnd
@@ -687,7 +687,7 @@ type = HitDef
 triggerall = !var(29)
 triggerall = !var(4) && (var(2) < 1 || var(15))
 trigger1 = AnimElem = 2
-attr = S, NA			
+attr = S, NA 
 damage = ceil(ifelse(fvar(11) * 21 < 7, 7, fvar(11) * 21)),0
 animtype = Light
 air.animtype = back
@@ -699,7 +699,7 @@ pausetime = ceil(9*(2-(Var(15)>0))/2),ceil(9*(2-(Var(15)>0))/2)
 guard.pausetime = ceil(10*(2-(Var(15)>0))/2),ceil(10*(2-(Var(15)>0))/2)
 hitsound = S2, 0
 guardsound = S6, 0
-ground.type = High	
+ground.type = High 
 ground.slidetime = 13+(Var(5)*2)
 ground.hittime = 13+(Var(5)*2)
 guard.hittime = 9
@@ -731,7 +731,7 @@ type = HitDef
 triggerall = var(29)
 triggerall = !var(4) && (var(2) < 1 || var(15))
 trigger1 = AnimElem = 2
-attr = S, NA			
+attr = S, NA 
 damage = ceil(ifelse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 4
 animtype = Light
 air.animtype = back
@@ -743,7 +743,7 @@ pausetime = ceil(9*(2-(Var(15)>0))/2),ceil(9*(2-(Var(15)>0))/2)
 guard.pausetime = ceil(10*(2-(Var(15)>0))/2),ceil(10*(2-(Var(15)>0))/2)
 hitsound = S7, 0
 guardsound = S6, 0
-ground.type = High	
+ground.type = High 
 ground.slidetime = 15+(Var(5)*2)
 ground.hittime = 15+(Var(5)*2)
 guard.hittime = 12
@@ -832,7 +832,7 @@ type = HitDef
 triggerall = !var(29)
 triggerall = !var(4) && (var(2) < 1 || var(15))
 trigger1 = AnimElem = 3
-attr = S, NA                     
+attr = S, NA 
 damage = ceil(ifelse(fvar(11) * 63 < 7, 7, fvar(11) * 63)),0
 animtype = Medium
 air.animtype = back
@@ -844,7 +844,7 @@ pausetime = ceil(11*(2-(Var(15)>0))/2),ceil(11*(2-(Var(15)>0))/2)
 guard.pausetime = ceil(10*(2-(Var(15)>0))/2),ceil(10*(2-(Var(15)>0))/2)
 hitsound = S2, 1
 guardsound = S6, 0
-ground.type = High               
+ground.type = High 
 ground.slidetime = 18+(Var(5)*3)
 ground.hittime = 18+(Var(5)*3)
 guard.hittime = 15
@@ -928,12 +928,12 @@ ctrl = 1
 ;--------------------------
 ; Stomach blow
 [Statedef 215]
-type = S                      
+type = S 
 movetype = A
-physics = S                      
+physics = S 
 poweradd = !var(15)*10
 velset = 0, 0
-ctrl = 0                         
+ctrl = 0 
 anim = 215
 facep2 = 1
 
@@ -957,14 +957,14 @@ x = 8
 type = HitDef
 triggerall = !var(4) && (var(2) < 1 || var(15))
 trigger1 = AnimElem = 3
-attr = S, NA                     
+attr = S, NA 
 damage = ceil(ifelse(fvar(11) * 56 < 7, 7, fvar(11) * 56)),0
 animtype = Medium
 air.animtype = back
 fall.animtype = back
 guardflag = M
-hitflag = MAF  
-priority = 4, Hit                
+hitflag = MAF 
+priority = 4, Hit 
 pausetime = ceil(11*(2-(Var(15)>0))/2),ceil(11*(2-(Var(15)>0))/2)
 guard.pausetime = ceil(10*(2-(Var(15)>0))/2),ceil(10*(2-(Var(15)>0))/2)
 hitsound = S2, 1
@@ -3464,10 +3464,10 @@ trigger1 = target, pos y >= -48 && target, vel y > 0
 trigger1 = target, alive && target, hitfall && target, gethitvar(fall.recover)
 trigger1 = target, stateno = 5030 || target, stateno = 5035 || target, stateno = 5050 || target, stateno = 5071
 value = 5205
-ignorehitpause = 1    
+ignorehitpause = 1 
 
 ;-------------------
-; Juggle reseting  |
+; Juggle reseting |
 ;-------------------
 [State -2, P2 Recovery]
 type= targetstate
@@ -3525,7 +3525,7 @@ trigger1 = (stateno = [200, 699]) && var(15)
 trigger2 = (stateno = [1000, 2999]) && var(15) && movecontact && statetype != A
 trigger3 = (stateno = 210 || stateno = 410) && AnimElemtime(4) < 0 && !var(29)
 trigger4 = stateno = 1001 && !var(29) && (AnimElemtime(3) > 0 && AnimElemtime(4) < 0)
-trigger5 = stateno = 1300 && AnimElemtime(10) < 0   
+trigger5 = stateno = 1300 && AnimElemtime(10) < 0 
 var(7) = 1
 ignorehitpause = 1
 
@@ -3542,7 +3542,7 @@ trigger7 = stateno = 420 && AnimElemtime(5) < 0 && !var(29)
 trigger8 = stateno = 225 && AnimElemtime(6) < 0 && !var(29)
 trigger9 = stateno = 1001 && !var(29) && (AnimElemtime(3) > 0 && AnimElemtime(4) < 0)
 trigger10 = stateno = 1100 && Animelemtime(6) < 0
-trigger11 = stateno = 1300 && AnimElemtime(10) < 0   
+trigger11 = stateno = 1300 && AnimElemtime(10) < 0 
 trigger12 = stateno = 1200 && AnimElemtime(6) < 0
 var(7) = 1
 ignorehitpause = 1

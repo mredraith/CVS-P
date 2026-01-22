@@ -1599,7 +1599,7 @@ type = VelSet
 trigger1 = 1
 trigger1 = AnimElemTime(2) >=0 
 x = 4
-ignorehitpause = 1  
+ignorehitpause = 1 
 
 [State 1020, Counter Flag]
 type = VarSet

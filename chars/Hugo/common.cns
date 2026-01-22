@@ -11,7 +11,7 @@ value = 7
 
 [State 0, 1]
 type = ChangeAnim
-trigger1 = Anim != 0 && Anim != 5  && Anim != 7
+trigger1 = Anim != 0 && Anim != 5 && Anim != 7
 trigger2 = Anim = 7 && AnimTime = 0
 value = 0
 
@@ -676,7 +676,7 @@ ctrl = 1
 ;Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢
 ; GUARD (start)
 [Statedef 120]
-type = U    ;Leave state type unchanged
+type = U ;Leave state type unchanged
 physics = U ;Leave physics unchanged
 
 [State 120, 1]
@@ -855,7 +855,7 @@ value = 140
 ;Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢Å¢
 ; GUARD (end)
 [Statedef 140]
-type = U    ;Leave state type unchanged
+type = U ;Leave state type unchanged
 physics = U ;Leave physics unchanged
 ctrl = 1
 
@@ -1383,7 +1383,7 @@ type = stopsnd
 triggerall = Life <= 0
 triggerall = prevstateno != 5190
 triggerall = enemy,hitdefattr = S,NA || enemy,hitdefattr = C,NA || enemy,hitdefattr = A,NA
-trigger1 = enemy,authorname = "GM" &&  enemy,name = "Hugo"
+trigger1 = enemy,authorname = "GM" && enemy,name = "Hugo"
 trigger1 = var(36) = [1,11-(enemy,hitdefattr=A,NA)*3]
 trigger2 = var(36) = [1,7]
 channel = 1
@@ -1394,7 +1394,7 @@ type = changestate
 triggerall = Life <= 0
 triggerall = prevstateno != 5190
 triggerall = enemy,hitdefattr = S,NA || enemy,hitdefattr = C,NA || enemy,hitdefattr = A,NA
-trigger1 = enemy,authorname = "GM" &&  enemy,name = "Hugo"
+trigger1 = enemy,authorname = "GM" && enemy,name = "Hugo"
 trigger1 = var(36) = [1,11-(enemy,hitdefattr=A,NA)*3]
 trigger2 = var(36) = [1,7]
 value = 5190
@@ -1564,7 +1564,7 @@ type = stopsnd
 triggerall = Life <= 0
 triggerall = prevstateno != 5190
 triggerall = enemy,hitdefattr = S,NA || enemy,hitdefattr = C,NA || enemy,hitdefattr = A,NA
-trigger1 = enemy,authorname = "GM" &&  enemy,name = "Hugo"
+trigger1 = enemy,authorname = "GM" && enemy,name = "Hugo"
 trigger1 = var(36) = [1,11-(enemy,hitdefattr=A,NA)*3]
 trigger2 = var(36) = [1,7]
 channel = 1
@@ -1575,7 +1575,7 @@ type = changestate
 triggerall = Life <= 0
 triggerall = prevstateno != 5190
 triggerall = enemy,hitdefattr = S,NA || enemy,hitdefattr = C,NA || enemy,hitdefattr = A,NA
-trigger1 = enemy,authorname = "GM" &&  enemy,name = "Hugo"
+trigger1 = enemy,authorname = "GM" && enemy,name = "Hugo"
 trigger1 = var(36) = [1,11-(enemy,hitdefattr=A,NA)*3]
 trigger2 = var(36) = [1,7]
 value = 5190
@@ -1819,16 +1819,16 @@ y = 1
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 5040 ;HITA_RECOV
 
 [State 5030, 4]
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 5050 ;HITA_FALL
 
 [State 5030, 5]
@@ -1860,22 +1860,22 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;HITA_RECOV
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5050 ;HITA_FALL
 
@@ -1933,7 +1933,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim

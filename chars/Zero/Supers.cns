@@ -1668,8 +1668,8 @@ sparkxy = -7,-21
 hitsound = S7,0
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -2
 air.velocity = -2,-3
 
@@ -1688,8 +1688,8 @@ sparkxy = -7,-21
 hitsound = S7,1
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -2
 air.velocity = -2,-3
 
@@ -1708,8 +1708,8 @@ sparkxy = -7,-21
 hitsound = S7,0
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -2
 air.velocity = -2,-3
 
@@ -1728,8 +1728,8 @@ sparkxy = -7,-21
 hitsound = S7,1
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -2
 air.velocity = -2,-3
 
@@ -1748,8 +1748,8 @@ sparkxy = -7,-21
 hitsound = S7,2
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -2
 air.velocity = -2,-3
 
@@ -2503,7 +2503,7 @@ trigger1 = AnimElem = 6
 anim = 3590
 ID = 3590
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 scale = 1,1
@@ -2522,7 +2522,7 @@ trigger1 = AnimElem = 7
 anim = 3591
 ID = 3591
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 1,1
@@ -2680,7 +2680,7 @@ trigger1 = AnimElem = 4
 anim = 3590
 ID = 3590
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 scale = 1,1
@@ -2699,7 +2699,7 @@ trigger1 = AnimElem = 5
 anim = 3591
 ID = 3591
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 1,1
@@ -2761,7 +2761,7 @@ trigger1 = AnimElem = 4
 anim = 3590
 ID = 3590
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 scale = 1,1
@@ -2780,7 +2780,7 @@ trigger1 = Anim = 1005
 anim = 3591
 ID = 3591
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 1,1
@@ -3017,9 +3017,9 @@ airguard.cornerpush.veloff = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -3420,7 +3420,7 @@ ampl = -2
 ;anim = 8000
 ;ID = 8000
 ;pos = 0,-55
-;postype = p2  ;p2,front,back,left,right
+;postype = p2 ;p2,front,back,left,right
 ;facing = 1
 ;vfacing = 1
 ;bindtime = 1
@@ -3448,15 +3448,15 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;SAS Finish State
 [Statedef 3802]
-type = S				;State-type: S-stand, C-crouch, A-air, L-liedown
-movetype= I				;Move-type: A-attack, I-idle, H-gethit
-physics = S				;Physics: S-stand, C-crouch, A-air
-juggle = 0				;Number of air juggle points move takes
-velset = 0,0			;Set velocity (x,y) (Def: no change)
+type = S ;State-type: S-stand, C-crouch, A-air, L-liedown
+movetype= I ;Move-type: A-attack, I-idle, H-gethit
+physics = S ;Physics: S-stand, C-crouch, A-air
+juggle = 0 ;Number of air juggle points move takes
+velset = 0,0 ;Set velocity (x,y) (Def: no change)
 ctrl = 0
-anim = 3802				;Set ctrl (Def: no change)
-poweradd = 0			;Power to add (Def: 0)
-sprpriority = 0	;Set layering priority to 2 (in front)
+anim = 3802 ;Set ctrl (Def: no change)
+poweradd = 0 ;Power to add (Def: 0)
+sprpriority = 0 ;Set layering priority to 2 (in front)
 
 [State 0, TargetLifeAdd]
 type = TargetLifeAdd
@@ -3527,14 +3527,14 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;p2state
 [Statedef 3805]
-type = S				;State-type: S-stand, C-crouch, A-air, L-liedown
-movetype= H				;Move-type: A-attack, I-idle, H-gethit
-physics = S				;Physics: S-stand, C-crouch, A-air
-juggle = 0				;Number of air juggle points move takes
-velset = 0,0			;Set velocity (x,y) (Def: no change)
-ctrl = 0				;Set ctrl (Def: no change)
-poweradd = 0			;Power to add (Def: 0)
-sprpriority = 1		;Set layering priority to 2 (in front)
+type = S ;State-type: S-stand, C-crouch, A-air, L-liedown
+movetype= H ;Move-type: A-attack, I-idle, H-gethit
+physics = S ;Physics: S-stand, C-crouch, A-air
+juggle = 0 ;Number of air juggle points move takes
+velset = 0,0 ;Set velocity (x,y) (Def: no change)
+ctrl = 0 ;Set ctrl (Def: no change)
+poweradd = 0 ;Power to add (Def: 0)
+sprpriority = 1 ;Set layering priority to 2 (in front)
 
 [State 0, ChangeState]
 type = ChangeState
@@ -3585,14 +3585,14 @@ value=3806
 ;---------------------------------------------------------------------------
 ;p2state
 [Statedef 3806]
-type = S				;State-type: S-stand, C-crouch, A-air, L-liedown
-movetype= H				;Move-type: A-attack, I-idle, H-gethit
-physics = S				;Physics: S-stand, C-crouch, A-air
-juggle = 0				;Number of air juggle points move takes
-velset = 0,0			;Set velocity (x,y) (Def: no change)
-ctrl = 0				;Set ctrl (Def: no change)
-poweradd = 0			;Power to add (Def: 0)
-sprpriority = 2		;Set layering priority to 2 (in front)
+type = S ;State-type: S-stand, C-crouch, A-air, L-liedown
+movetype= H ;Move-type: A-attack, I-idle, H-gethit
+physics = S ;Physics: S-stand, C-crouch, A-air
+juggle = 0 ;Number of air juggle points move takes
+velset = 0,0 ;Set velocity (x,y) (Def: no change)
+ctrl = 0 ;Set ctrl (Def: no change)
+poweradd = 0 ;Power to add (Def: 0)
+sprpriority = 2 ;Set layering priority to 2 (in front)
 
 [State 0, PosSet]
 type = PosSet

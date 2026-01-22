@@ -46,7 +46,7 @@ player = 25,0
 [State 1000, StateTypeSet: Crouch]
 type = StateTypeSet
 trigger1 = AnimElem = 3
-statetype = C       
+statetype = C 
 physics = C
 
 [State 1000, Hit] 
@@ -244,7 +244,7 @@ value = 35
 
 [State 1002, Juggle]
 type = VarAdd
-trigger1 =  AnimElemTime(8) = 8
+trigger1 = AnimElemTime(8) = 8
 var(15) = 1
 ignoreHitPause = 1
 
@@ -422,7 +422,7 @@ player = 25,0
 [State 1010, StateTypeSet: Crouch]
 type = StateTypeSet
 trigger1 = AnimElem = 3
-statetype = C       
+statetype = C 
 physics = C
 
 [State 1010, Hit] 
@@ -530,7 +530,7 @@ player = 25,0
 [State 1020, StateTypeSet: Crouch]
 type = StateTypeSet
 trigger1 = AnimElem = 3
-statetype = C       
+statetype = C 
 physics = C
 
 [State 1020, Hit] 
@@ -667,7 +667,7 @@ player = 25,0
 [State 1030, StateTypeSet: Crouch]
 type = StateTypeSet
 trigger1 = AnimElem = 3
-statetype = C       
+statetype = C 
 physics = C
 
 [State 1030, Hit] 
@@ -864,7 +864,7 @@ value = 35
 
 [State 1032, Juggle]
 type = VarAdd
-trigger1 =  AnimElemTime(8) = 8
+trigger1 = AnimElemTime(8) = 8
 var(15) = 1
 ignoreHitPause = 1
 

@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Kyo Kusanagi by Jmorphman					 |
+;| Kyo Kusanagi by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -25,18 +25,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/MalaDingDong_NESTSChronicles.act
-pal3	= Palettes/MalaDingDong_TalesOfAsh.act
-pal4	= Palettes/KOF.act
-pal5	= Palettes/Kirishima_BenimaruNikado.act
-pal6	= Palettes/Chosis_ShingoYabuki.act
-pal7	= Palettes/Teros_Khaki.act
-pal8	= Palettes/MalaDingDong_SolBadguy.act
-pal9	= Palettes/Kirishima_K'.act
-pal10	= Palettes/MalaDingDong_MaximumImpact.act
-pal11	= Palettes/ShoShingo_Crono.act
-pal12	= Palettes/LurkerSupreme_SaisyuKusanagi.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/MalaDingDong_NESTSChronicles.act
+pal3 = Palettes/MalaDingDong_TalesOfAsh.act
+pal4 = Palettes/KOF.act
+pal5 = Palettes/Kirishima_BenimaruNikado.act
+pal6 = Palettes/Chosis_ShingoYabuki.act
+pal7 = Palettes/Teros_Khaki.act
+pal8 = Palettes/MalaDingDong_SolBadguy.act
+pal9 = Palettes/Kirishima_K'.act
+pal10 = Palettes/MalaDingDong_MaximumImpact.act
+pal11 = Palettes/ShoShingo_Crono.act
+pal12 = Palettes/LurkerSupreme_SaisyuKusanagi.act
 
 [Palette Keymap]
 a = 4

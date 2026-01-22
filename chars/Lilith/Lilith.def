@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineLilith.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineLilith.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineLilith.sff
-anim    =DivineLilith.air
-sound   =DivineLilith.snd
+sprite =DivineLilith.sff
+anim =DivineLilith.air
+sound =DivineLilith.snd
 pal1=Colors/sabockee_5.act
 pal2=Colors/DW_NeoStardust.act
 pal3=Colors/Chazzanova_2.act

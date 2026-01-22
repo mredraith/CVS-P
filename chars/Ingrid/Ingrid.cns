@@ -311,7 +311,7 @@ trigger1 = animelem = 3
 anim = 225
 ID = 225
 pos = 16,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -419,7 +419,7 @@ trigger1 = animelem = 3
 anim = 226
 ID = 226
 pos = -16,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -728,8 +728,8 @@ ownpal=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 3
-statetype = A       ;S,A,C,L
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+physics = N ;A,C,S,N
 
 [State 105, 1]
 type = statetypeset
@@ -1086,7 +1086,7 @@ trigger1 = animelem = 3
 anim = 425
 ID = 425
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1638,7 +1638,7 @@ trigger1 = animelem = 3
 anim = 625+!vel x
 ID = 625
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2030,36 +2030,36 @@ value = 0
 [State 800, 1]
 type = HitDef
 Trigger1 = animelem = 2
-attr = S, NT          ;Attributes: Standing, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
+attr = S, NT ;Attributes: Standing, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
 sparkno = -1 + 0 * (var(33) := 0)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 40), var(36) := -50
 hitsound = -1 + 0 * (var(31) := 800)
-guardsound = -1 + 0 * (var(32) := 0)          ;No spark
-sprpriority = 1       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player
-p1stateno=ifelse(command="holdback",805,820)      ;On success, player changes to state 810
+guardsound = -1 + 0 * (var(32) := 0) ;No spark
+sprpriority = 1 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player
+p1stateno=ifelse(command="holdback",805,820) ;On success, player changes to state 810
 fall = 1
-numhits = 0        ;Force p2 into falling down
+numhits = 0 ;Force p2 into falling down
 
 [State 800, 1]
 type = HitDef
 trigger1= animelem=2 && var(10)
-attr = S, NT          ;Attributes: Standing, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
+attr = S, NT ;Attributes: Standing, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
 sparkno = -1 + 0 * (var(33) := 0)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 40), var(36) := -50
 hitsound = -1 + 0 * (var(31) := 800)
-guardsound = -1 + 0 * (var(32) := 0)         ;No spark
-sprpriority = 1       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player
-p1stateno=ifelse(command="holdback",805,810)      ;On success, player changes to state 810
+guardsound = -1 + 0 * (var(32) := 0) ;No spark
+sprpriority = 1 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player
+p1stateno=ifelse(command="holdback",805,810) ;On success, player changes to state 810
 fall = 1
-numhits = 0      ;Force p2 into falling down
+numhits = 0 ;Force p2 into falling down
 
 [State 800, Snd]
 type = playsnd
@@ -2871,7 +2871,7 @@ name = "Spark"
 ID = 8000
 stateno = 8012
 pos = 52,-88
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -3003,19 +3003,19 @@ trigger1 = 1
 [State 800, 1]
 type = HitDef
 trigger1= animelem=2
-attr = A, NT          ;Attributes: Standing, Normal Throw
-hitflag = A-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
+attr = A, NT ;Attributes: Standing, Normal Throw
+hitflag = A- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
 sparkno = -1 + 0 * (var(33) := 0)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 40), var(36) := -50
 hitsound = -1 + 0 * (var(31) := 800)
-guardsound = -1 + 0 * (var(32) := 0)         ;No spark
-sprpriority = 1       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player
-p1stateno=835     ;On success, player changes to state 810
+guardsound = -1 + 0 * (var(32) := 0) ;No spark
+sprpriority = 1 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player
+p1stateno=835 ;On success, player changes to state 810
 fall = 1
-numhits = 0      ;Force p2 into falling down
+numhits = 0 ;Force p2 into falling down
 
 [State 800, Snd]
 type = playsnd
@@ -3078,7 +3078,7 @@ name = "Spark"
 ID = 8000
 stateno = 8012
 pos = 46,-18
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -3368,7 +3368,7 @@ trigger1 = animelem = 3
 anim = 7001
 ID = 7001
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3707,7 +3707,7 @@ trigger1 = animelem = 3
 anim = 7001
 ID = 7051
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3999,7 +3999,7 @@ sprpriority = 2
 
 [State 1000, Button]
 type=varset
-trigger1= !time  && !var(12)
+trigger1= !time && !var(12)
 var(10)= ifelse((command="c" || command="rlsc"), 2, ifelse((command="b" || command="rlsb"), 1, 0))
 [State 0, VarSet]
 type = VarSet
@@ -4041,7 +4041,7 @@ ownpal=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 2
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 physics = N
 
 [State 0, Explod]
@@ -4050,7 +4050,7 @@ trigger1 = animelem = 2
 anim = 7100
 ID = 7100
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4375,7 +4375,7 @@ ownpal=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 2
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 physics = N
 
 [State 0, Explod]
@@ -4384,7 +4384,7 @@ trigger1 = animelem = 2
 anim = 7100
 ID = 7100
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4553,7 +4553,7 @@ ownpal=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 2
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 physics = N
 
 [State 0, Explod]
@@ -4562,7 +4562,7 @@ trigger1 = animelem = 2
 anim = 7100
 ID = 7100
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4832,7 +4832,7 @@ ownpal=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 2
-statetype = A       ;S,A,C,L
+statetype = A ;S,A,C,L
 physics = N
 
 [State 0, Explod]
@@ -4841,7 +4841,7 @@ trigger1 = animelem = 2
 anim = 7100
 ID = 7100
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4959,7 +4959,7 @@ trigger1 = animelem = 2
 anim = 7200
 ID = 7200
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4980,7 +4980,7 @@ type = ReversalDef
 trigger1 = !numtarget
 trigger1 = AnimElemTime(3) >= 0
 trigger1 = AnimElemTime(5) < 0
-reversal.attr = SA, NA, SA, HA          ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+reversal.attr = SA, NA, SA, HA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 pausetime = 0,0
 sparkno = -1
 p1stateno = 1301
@@ -5108,7 +5108,7 @@ trigger1 = animelem = 2
 anim = 7200
 ID = 7200
 pos = -8, 24
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -5129,7 +5129,7 @@ type = ReversalDef
 trigger1 = !numtarget
 trigger1 = AnimElemTime(3) >= 0
 trigger1 = AnimElemTime(5) < 0
-reversal.attr = SC, NA, SA, HA         ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+reversal.attr = SC, NA, SA, HA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 pausetime = 0,0
 sparkno = -1
 p1stateno = 1351
@@ -5303,7 +5303,7 @@ value = 5051
 
 [State 5050, 1] ;Change anim when done with transition
 type = ChangeAnim
-trigger1 = Time = 0     ;If no transition anim
+trigger1 = Time = 0 ;If no transition anim
 trigger1 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger1 = Anim != 5090 ;Not if hit off ground anim
 value = 5050
@@ -5419,7 +5419,7 @@ sprpriority = 3
 [State 1100, Effect]
 type = PlaySnd
 trigger1 = !var(10)
-trigger1 = AnimElem = 3 ||  animelem = 5 || animelem = 7
+trigger1 = AnimElem = 3 || animelem = 5 || animelem = 7
 value = s1,2
 
 [State 1100, Effect]
@@ -5663,7 +5663,7 @@ name = "Sun Burst"
 ID = 3005
 stateno = 3005
 pos = 8,-74
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5741,8 +5741,8 @@ x = 2
 type = HitDef
 trigger1= !root,var(16) && (root,var(15)<1 || root,var(20))
 trigger1 = time = 0
-attr = S,HP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
+attr = S,HP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
 guardflag = M
 numhits = 0
 [State 3005, Miss]
@@ -5802,7 +5802,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5823,7 +5823,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5844,7 +5844,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5865,7 +5865,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5886,7 +5886,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5907,7 +5907,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5928,7 +5928,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5949,7 +5949,7 @@ trigger1 = !time
 anim = 7300
 ID = 7300
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -6205,8 +6205,8 @@ ownpal=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 28
-statetype = A       ;S,A,C,L
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+physics = N ;A,C,S,N
 
 [State 1100, Velocity]
 type = VelSet
@@ -6419,7 +6419,7 @@ trigger1 = animelem = 3
 anim = 7500
 ID = 7500
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -6440,21 +6440,21 @@ type = HitDef
 trigger1= !var(16) && (var(15)<1 || var(20))
 trigger1 = animelemtime(4) >= 14
 trigger1 = animelemtime(4) <= 28
-attr = S, HP          ;Attributes: Standing, Normal Throw
-hitflag = MAF          ;Affect only ground people who are not being hit
+attr = S, HP ;Attributes: Standing, Normal Throw
+hitflag = MAF ;Affect only ground people who are not being hit
 getpower = 0,0
 guardflag = M
-priority = 3, Hit   ;Throw has low priority, must be miss or dodge type.
+priority = 3, Hit ;Throw has low priority, must be miss or dodge type.
 damage = ceil(ifelse(fvar(11)*104<7, 7, fvar(11)*104)), 7
 sparkno = -1 + 0 * (var(33) := 8014)
 sparkxy = -10 + 0 * (var(35) := 80+(80*var(10))), var(36) := -68
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 hitsound = -1 + 0 * (var(31) := 6)
-guardsound = -1 + 0 * (var(32) := 0)         ;No spark
-sprpriority = 1       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player      ;On success, player changes to state 810
+guardsound = -1 + 0 * (var(32) := 0) ;No spark
+sprpriority = 1 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player ;On success, player changes to state 810
 fall = 1
-numhits = 1        ;Force p2 into falling down
+numhits = 1 ;Force p2 into falling down
 ground.type = High
 ground.hittime = 12 + 2*var(9)
 ground.slidetime = 12 + 2*var(9)
@@ -7003,7 +7003,7 @@ trigger1 = animelem = 3
 anim = 226
 ID = 226
 pos = -16,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1

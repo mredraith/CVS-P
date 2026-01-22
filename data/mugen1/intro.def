@@ -15,16 +15,16 @@ spr = intro.sff
 fadein.time = 120
 fadeout.time = 30
 ; BG
-bg.name = BG0          ;Name of BG to show (no spaces allowed)
+bg.name = BG0 ;Name of BG to show (no spaces allowed)
 ; Total time
 end.time = 240
 
 ;------------------------------------
 ;BG def for scrolling mountain
 ;Note: the name for this BG must correspond to the value of bg.name in
-;      Scene 0. For example, if you used "Scene0bg" instead of "BG0" for
-;      bg.name, then the background definition group name should be
-;      [Scene0bgDef].
+; Scene 0. For example, if you used "Scene0bg" instead of "BG0" for
+; bg.name, then the background definition group name should be
+; [Scene0bgDef].
 [BG0Def]
 
 [BG0 Mountains]
@@ -62,9 +62,9 @@ fadeout.time = 30
 ; Screen color
 clearcolor = 221,248,248
 ; Overlay Anims (from 0 to 9)
-layerall.pos = 160,24  ;Default position for all layers
+layerall.pos = 160,24 ;Default position for all layers
 layer0.offset = -40,150
-layer0.anim =  10      ;Anim action number
+layer0.anim = 10 ;Anim action number
 ; Total time
 end.time = 45
 
@@ -89,9 +89,9 @@ fadeout.time = 30
 ; Screen color
 clearcolor = 221,248,248
 ; Overlay Anims (from 0 to 9)
-layerall.pos = 160,24  ;Default position for all layers
+layerall.pos = 160,24 ;Default position for all layers
 layer0.offset = 40,150
-layer0.anim =  11      ;Anim action number
+layer0.anim = 11 ;Anim action number
 ; Total time
 end.time = 45
 
@@ -117,15 +117,15 @@ fadeout.time = 30
 ; Screen color
 clearcolor = 255,255,255
 ; Overlay Anims (from 0 to 9)
-layerall.pos = 160,24  ;Default position for all layers
+layerall.pos = 160,24 ;Default position for all layers
 layer0.offset = 0,26
-layer0.anim =  100
+layer0.anim = 100
 layer0.starttime = 30
 layer1.offset = 0,26
-layer1.anim =  101
+layer1.anim = 101
 layer1.starttime = 60
 layer2.offset = 0,26
-layer2.anim =  102
+layer2.anim = 102
 layer2.starttime = 90
 ; Total time
 end.time = 180

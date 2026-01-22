@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineRock.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineRock.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineRock.sff
-anim    =DivineRock.air
-sound   =DivineRock.snd
+sprite =DivineRock.sff
+anim =DivineRock.air
+sound =DivineRock.snd
 pal1=Colors/QF_Default.act
 pal2=Colors/sabockee_Custom6.act
 pal3=Colors/CGU_SF4-6.act

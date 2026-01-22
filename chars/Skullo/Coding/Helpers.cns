@@ -310,7 +310,7 @@ ignorehitpause = 1
 [State 3201, HitDef]
 type = HitDef
 trigger1 = !(root,var(16)) && root,var(15)<3
-trigger1 = var(2) <= 4  
+trigger1 = var(2) <= 4 
 attr = A,HP
 hitFlag = MAFP
 guardFlag = M

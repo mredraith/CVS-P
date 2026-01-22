@@ -1,25 +1,25 @@
 ; _______________________________________________
-;| Zangief by varo_hades			 |
+;| Zangief by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
-name        ="Zangief"
+name ="Zangief"
 displayName ="Zangief"
 versionDate =05,02,2012
 mugenVersion=1.0
-author      ="varo_hades and Shinrei"
+author ="varo_hades and Shinrei"
 pal.defaults=1,2,3,4,5,6
 localCoord = 427,240
 
 [Files]
 movelist = movelist.dat
-cmd     =Command.cmd
-cns     =ConstantsCvS.cns
-st      =States/System.st
+cmd =Command.cmd
+cns =ConstantsCvS.cns
+st =States/System.st
 stCommon=common1.cns
-sprite  =Sprite.sff
-anim    =Anim.air
-sound   =Sound.snd
+sprite =Sprite.sff
+anim =Anim.air
+sound =Sound.snd
 pal1=Palettes/New Default.act
 pal2=Palettes/SF2CE.act
 pal3=Palettes/SF2HF.act
@@ -31,7 +31,7 @@ st2=States/Special.st
 st3=States/Super.st
 st4=States/Helpers.st
 st5=States/Zangief.st
-	
+ 
 ; Arcade mode
 [Arcade]
 intro.storyboard =

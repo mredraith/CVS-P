@@ -3421,7 +3421,7 @@ persistent = 1
 type = PalFX
 trigger1 = AnimElemTime(2) >= 0
 trigger1 = !NumHelper(3220)
-time = -1                    
+time = -1 
 add = 0,0,0
 mul = 0,0,0
 ;sinadd = -65,-65,-65,26
@@ -3760,7 +3760,7 @@ value = SCA
 [State 3212, PalFX]
 type = PalFX
 trigger1 = Time >= 28
-time = -1                    
+time = -1 
 add = 0,0,0
 mul = 0,0,0
 ;sinadd = -65,-65,-65,26

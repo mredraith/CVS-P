@@ -1,7 +1,7 @@
 ;ST9
 
 ; -- Uno Tag System ver. 3.2.2 by UnoShe --
-;           "Uno Tag type-S"
+; "Uno Tag type-S"
 ;
 ; - PLEASE GIVE CREDIT IF MODIFYING THIS..
 
@@ -258,8 +258,8 @@ trigger1 = !MoveContact && !(NumTarget)
 attr = A, SA
 damage = 3, 1
 animtype = heavy
-air.animtype 			= back
-fall.animtype			= diagup
+air.animtype = back
+fall.animtype = diagup
 guardflag = MA
 hitflag = MAFD
 priority = 5, Hit
@@ -270,20 +270,20 @@ guardsound = 6,0
 ground.type = High
 ground.slideTime = 3
 ground.hitTime = 24
-guard.hitTime 			= 22
+guard.hitTime = 22
 ground.velocity = -0.25, 0
 airguard.velocity = -2.5, -1.85
 air.type = high
 air.velocity = -2, -5
 air.hitTime = 6
 getpower = 0
-givepower      			= 25
+givepower = 25
 fall = 0
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-down.bounce 			= 0
-down.velocity			= -1,-6
+down.bounce = 0
+down.velocity = -1,-6
 guard.kill = 0
 
 [State 1251104, Anim2]
@@ -293,7 +293,7 @@ trigger1 = MoveContact
 value = ifelse(SelfAnimExist(45),45,44)
 persistent = 0
 
-[State 1251104, NoJC]     
+[State 1251104, NoJC] 
 type = AssertSpecial
 trigger1 = 1
 flag = nojugglecheck
@@ -432,7 +432,7 @@ SprPriority = 5
 velset = 0,0
 ctrl = 0
 
-[State 1251106, voice]	; <---| Define taunt voice here..
+[State 1251106, voice] ; <---| Define taunt voice here..
 type = PlaySnd
 trigger1 = NumPartner
 trigger1 = Partner, StateNo = [5131,5150]
@@ -542,7 +542,7 @@ value = SCA
 
 [State 1251106, End]
 type = SelfState
-trigger1 =  Time = [120,150]
+trigger1 = Time = [120,150]
 trigger2 = AnimTime = 0
 trigger3 = Time >= (3*tickspersecond)
 value =5300
@@ -934,8 +934,8 @@ trigger1 = Partner, StateNo != 1251110
 trigger1 = Partner, StateNo != 1251126
 trigger1 = Partner, StateNo != 1251129
 ;trigger1 = !NumHelper(1251103)
-x = (Partner, pos x)  ;- 10000*facing
-y = (Partner, pos y)	;-150
+x = (Partner, pos x) ;- 10000*facing
+y = (Partner, pos y) ;-150
 
 [State 1251113, ent3r]
 type = ChangeState
@@ -974,7 +974,7 @@ ctrl = 0
 [State -2, def]
 type = VarSet
 trigger1 = Time = [0,2]
-sysvar(4) = 1   
+sysvar(4) = 1 
 
 [state 1251114, Hide]
 type = AssertSpecial
@@ -1019,8 +1019,8 @@ triggerall = NumPartner
 trigger1 = Partner, StateNo != 1251110
 trigger1 = Partner, StateNo != 1251125
 trigger1 = Partner, StateNo != 1251127
-x = (Partner, pos x)  ;- 10000*facing
-y = (Partner, pos y)	;-150
+x = (Partner, pos x) ;- 10000*facing
+y = (Partner, pos y) ;-150
 
 [State 1251114, pos_S]
 type = PosSet
@@ -1401,7 +1401,7 @@ ctrl = 0
 [State 1251120, Turn]
 type = Turn
 triggerall = RoundState >= 2 && NumPartner
-trigger1 = Partner, Alive &&  Facing != Partner, Facing
+trigger1 = Partner, Alive && Facing != Partner, Facing
 trigger2 = !(Partner, Alive) && Facing = 1 && EnemyNear, Pos X < Partner, Pos X
 trigger3 = !(Partner, Alive) && Facing = -1 && EnemyNear, Pos X > Partner, Pos X
 persistent = 0
@@ -1514,7 +1514,7 @@ movecamera = 1,0
 type = ChangeState
 triggerall = NumPartner
 triggerall = Partner, life > 0
-triggerall = Pos y >= 0      
+triggerall = Pos y >= 0 
 triggerall = !Win && !Lose
 triggerall = BackEdgeBodyDist >= 0
 trigger1 = prevStateNo = 1251104
@@ -1723,7 +1723,7 @@ triggerall = Time = [0,1]
 triggerall = NumTarget && Target, StateNo != 5110 && Partner, StateNo = [1251101,1251133]
 triggerall = !(Target, StateNo = [120,152]) && !(Target, Anim = [120,152]) && !(Target, StateNo = [1251109,1251119])
 triggerall = Target, Pos Y > -12
-trigger1 =  P2Dist X <= 55 && (Target, Statetype = A || Target, statetype = L || Target, Anim = [5000,5950])
+trigger1 = P2Dist X <= 55 && (Target, Statetype = A || Target, statetype = L || Target, Anim = [5000,5950])
 trigger2 = Target, StateNo != [5000,5950]
 value = 1251117
 ignorehitpause = 1
@@ -2032,7 +2032,7 @@ type = SelfState
 triggerall = NumPartner
 trigger1 = !NumHelper(1251102) && (Partner, sysvar(4) = 2) && Time > 0
 trigger1 = Partner, life > 0
-trigger1 = Pos y >= 0       
+trigger1 = Pos y >= 0 
 trigger1 = !Win && !Lose
 value = 1251132
 
@@ -2044,7 +2044,7 @@ triggerall = PrevStateNo != 1251125 && NumEnemy
 trigger1 = EnemyNear, Pos Y <= -25 || EnemyNear, statetype = A
 trigger1 = P2Dist x = [0,100]
 trigger1 = Time > 0
-;trigger1 = SelfAnimExist(3000)	; <---| change this..
+;trigger1 = SelfAnimExist(3000) ; <---| change this..
 value = 3100;hyper_a>
 
 ; - Define this one!
@@ -2052,7 +2052,7 @@ value = 3100;hyper_a>
 type = ChangeState
 triggerall = !NumHelper(1251101) && !NumHelper(1251102)
 trigger1 = PrevStateNo = 1251125 || Time > 0
-;trigger1 = SelfAnimExist(3000)	; <---| change this..
+;trigger1 = SelfAnimExist(3000) ; <---| change this..
 value = 3000;hyper_b>
 
 [State 1251131, End]
@@ -2081,7 +2081,7 @@ value = 1
 [State 1251132, LV3_HyperMove]
 type = ChangeState
 trigger1 = Time = [0,1]
-;trigger1 = SelfAnimExist(3100)	; <---| change this..
+;trigger1 = SelfAnimExist(3100) ; <---| change this..
 value = 3200;hyper_max>
 
 [State 1251132, End]
@@ -2128,14 +2128,14 @@ type = ChangeState
 triggerall = BackEdgeBodyDist >= 0
 trigger1 = P2Dist Y <= -19 
 trigger1 = P2Dist x = [-50,70]
-;trigger1 = SelfAnimExist(1100)	; <---| change this..
+;trigger1 = SelfAnimExist(1100) ; <---| change this..
 value = 1100;assist_a>
 
 ; - Define this one!
 [State 1251133, SpecialMove] 
 type = ChangeState
 trigger1 = BackEdgeBodyDist >= 0
-;trigger1 = SelfAnimExist(1000)	; <---| change this..
+;trigger1 = SelfAnimExist(1000) ; <---| change this..
 value = 1000;assist_b>
 
 [State 1251133, End]

@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| King by Jmorphman							 |
+;| King by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -24,18 +24,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/KOF2000.act
-pal3	= Palettes/sabockee_White&Teal.act
-pal4	= Palettes/1.8.7_KOFXIIIish.act
-pal5	= Palettes/Gogngos_CreamVest.act
-pal6	= Palettes/ShiyoKakuge_Black&Grey.act
-pal7	= Palettes/davismaximus_TheRiddler.act
-pal8	= Palettes/Gogngos_SerpentVenom.act
-pal9	= Palettes/NDSilva_Black&White.act
-pal10	= Palettes/ShiyoKakuge_USA.act
-pal11	= Palettes/SpazMaster_CrownJewel.act
-pal12	= Palettes/Guileman_DocScratch.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/KOF2000.act
+pal3 = Palettes/sabockee_White&Teal.act
+pal4 = Palettes/1.8.7_KOFXIIIish.act
+pal5 = Palettes/Gogngos_CreamVest.act
+pal6 = Palettes/ShiyoKakuge_Black&Grey.act
+pal7 = Palettes/davismaximus_TheRiddler.act
+pal8 = Palettes/Gogngos_SerpentVenom.act
+pal9 = Palettes/NDSilva_Black&White.act
+pal10 = Palettes/ShiyoKakuge_USA.act
+pal11 = Palettes/SpazMaster_CrownJewel.act
+pal12 = Palettes/Guileman_DocScratch.act
 
 [Palette Keymap]
 a = 4

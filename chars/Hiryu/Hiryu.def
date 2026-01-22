@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineHiryu.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineHiryu.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineHiryu.sff
-anim    =DivineHiryu.air
-sound   =DivineHiryu.snd
+sprite =DivineHiryu.sff
+anim =DivineHiryu.air
+sound =DivineHiryu.snd
 pal1=Colors/strider01.act
 pal2=Colors/strider02.act
 pal3=Colors/strider03.act

@@ -3432,7 +3432,7 @@ volume = 255
 [State 3500, Hit 1+3]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 8 || AnimElem = 14  
+trigger1 = AnimElem = 8 || AnimElem = 14 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 7 < 7, 7, fvar(11) * 7)), 4
 priority = 4, hit
@@ -3477,7 +3477,7 @@ kill = ifelse((AnimElem=8), 0, (NumTarget!=NumEnemy))
 [State 3500, Hit 2]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 11  
+trigger1 = AnimElem = 11 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3522,7 +3522,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3500, Hit 4]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 19  
+trigger1 = AnimElem = 19 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3567,7 +3567,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3500, Hit 5]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 28  
+trigger1 = AnimElem = 28 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3612,7 +3612,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3500, Hit 6]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 36  
+trigger1 = AnimElem = 36 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3657,7 +3657,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3500, Hit 7]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 37  
+trigger1 = AnimElem = 37 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3702,7 +3702,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3500, Hit 8]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 38  
+trigger1 = AnimElem = 38 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3747,7 +3747,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3500, Hit 9]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 39  
+trigger1 = AnimElem = 39 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3792,7 +3792,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3500, Hit 10]
 type = HitDef
 trigger1 = Anim = 3500
-trigger1 = AnimElem = 48  
+trigger1 = AnimElem = 48 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3837,7 +3837,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3501, Hit 11]
 type = HitDef
 trigger1 = Anim = 3501
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3881,7 +3881,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3501, Hit 12]
 type = HitDef
 trigger1 = Anim = 3501
-trigger1 = AnimElem = 9  
+trigger1 = AnimElem = 9 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3925,7 +3925,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3501, Hit 13]
 type = HitDef
 trigger1 = Anim = 3501
-trigger1 = AnimElem = 15  
+trigger1 = AnimElem = 15 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -3969,7 +3969,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3501, Hit 14]
 type = HitDef
 trigger1 = Anim = 3501
-trigger1 = AnimElem = 20  
+trigger1 = AnimElem = 20 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -4013,7 +4013,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3501, Hit 15]
 type = HitDef
 trigger1 = Anim = 3501
-trigger1 = AnimElem = 25  
+trigger1 = AnimElem = 25 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -4057,7 +4057,7 @@ kill = (NumTarget!=NumEnemy)
 [State 3501, Hit Final]
 type = HitDef
 trigger1 = Anim = 3501
-trigger1 = AnimElem = 32  
+trigger1 = AnimElem = 32 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit

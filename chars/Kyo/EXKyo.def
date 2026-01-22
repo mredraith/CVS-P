@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Kyo Kusanagi by Jmorphman					 |
+;| Kyo Kusanagi by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -25,18 +25,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/EXKyoDefault.act
-pal2	= Palettes/CyanPaul_PseudoKeithB.act
-pal3	= Palettes/ShoShingo_Blue.act
-pal4	= Palettes/Mikel_MotWTerry.act
-pal5	= Palettes/Kirishima_Symphonic.act
-pal6	= Palettes/MalaDingDong_LeonSKennedy.act
-pal7	= Palettes/MC2_XII.act
-pal8	= Palettes/Chosis_Cody.act
-pal9	= Palettes/VioFitz_Default.act
-pal10	= Palettes/Teros_BlackKhaki.act
-pal11	= Palettes/MalaDingDong_BluePsyche.act
-pal12	= Palettes/Kirishima_RobertGarcia.act
+pal1 = Palettes/EXKyoDefault.act
+pal2 = Palettes/CyanPaul_PseudoKeithB.act
+pal3 = Palettes/ShoShingo_Blue.act
+pal4 = Palettes/Mikel_MotWTerry.act
+pal5 = Palettes/Kirishima_Symphonic.act
+pal6 = Palettes/MalaDingDong_LeonSKennedy.act
+pal7 = Palettes/MC2_XII.act
+pal8 = Palettes/Chosis_Cody.act
+pal9 = Palettes/VioFitz_Default.act
+pal10 = Palettes/Teros_BlackKhaki.act
+pal11 = Palettes/MalaDingDong_BluePsyche.act
+pal12 = Palettes/Kirishima_RobertGarcia.act
 
 [Palette Keymap]
 a = 4

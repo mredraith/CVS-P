@@ -20,7 +20,7 @@ FloatPersistIndex = 0
 
 [Size]
 xscale = 0.5
-;xscale = 0.6   ;(to SFZ size)
+;xscale = 0.6 ;(to SFZ size)
 yscale = 0.5
 ;yscale = 0.467 ;(to SFZ size)
 ground.back = 18
@@ -259,7 +259,7 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;"Pack in that kyokugen stuff! \nI told you, this is the age of the saikyo style!"
 
 ; Ryu
-;"You try to dress and act like me... \nBut you´re just a freakin´ poseur!" ;  vs Ansatsuken / Kyokugen dudes
+;"You try to dress and act like me... \nBut you´re just a freakin´ poseur!" ; vs Ansatsuken / Kyokugen dudes
 ;"Your moves are a convincing imitation. \nBut I'm still stronger!"
 
 ; Sagat

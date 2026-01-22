@@ -1450,7 +1450,7 @@ id = 43260
 [State -2, Display To Debug]
 type = DisplayToClipboard
 trigger1 = 1
-text = "Distance= X %f, Y %f  VELS= X %f, Y %d, var1= %d"
+text = "Distance= X %f, Y %f VELS= X %f, Y %d, var1= %d"
 params = p2Dist x, p2Dist y, vel x, floor(vel y), var(1)
 
 ;-------------------------------------------------------------------------------
@@ -1908,7 +1908,7 @@ value = 2,8
 
 [State -3, VarSet]
 type = VarSet
-trigger1 = time = 0 &&  (stateno = 0 || stateno = 20 || stateno = 40 )
+trigger1 = time = 0 && (stateno = 0 || stateno = 20 || stateno = 40 )
 trigger1 = var(45) != 0
 v = 45
 value = 0
@@ -1936,7 +1936,7 @@ ignorehitpause = 1
 [State -3,Shouky hatsudou]
 type = VarSet
 trigger1 = roundstate = 0
-v =  6
+v = 6
 value = 0
 
 [State -3, Excel Finish]

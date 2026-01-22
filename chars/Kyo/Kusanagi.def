@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Kyo Kusanagi by Jmorphman					 |
+;| Kyo Kusanagi by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -25,18 +25,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/KusanagiDefault.act
-pal2	= Palettes/MalaDingDong_Kyo-1.act
-pal3	= Palettes/MalaDingDong_Kyo-2.act
-pal4	= Palettes/KOFKusanagi.act
-pal5	= Palettes/MalaDingDong_ShotaroKaneda.act
-pal6	= Palettes/MC2_SyoKirishima.act
-pal7	= Palettes/Hero_SVCGhost.act
-pal8	= Palettes/Anthem_Nameless.act
-pal9	= Palettes/LurkerSupreme_Chris.act
-pal10	= Palettes/ShoShingo_DomonKasshu.act
-pal11	= Palettes/.Hades._IoriYagami.act
-pal12  	= Palettes/Chosis_IoriYagamiXII.act
+pal1 = Palettes/KusanagiDefault.act
+pal2 = Palettes/MalaDingDong_Kyo-1.act
+pal3 = Palettes/MalaDingDong_Kyo-2.act
+pal4 = Palettes/KOFKusanagi.act
+pal5 = Palettes/MalaDingDong_ShotaroKaneda.act
+pal6 = Palettes/MC2_SyoKirishima.act
+pal7 = Palettes/Hero_SVCGhost.act
+pal8 = Palettes/Anthem_Nameless.act
+pal9 = Palettes/LurkerSupreme_Chris.act
+pal10 = Palettes/ShoShingo_DomonKasshu.act
+pal11 = Palettes/.Hades._IoriYagami.act
+pal12 = Palettes/Chosis_IoriYagamiXII.act
 
 [Palette Keymap]
 a = 4

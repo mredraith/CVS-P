@@ -252,7 +252,7 @@ pos = ceil(10*const(size.xscale)), ceil(-110*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 11  && P2StateNo = 3050
+trigger1 = AnimElem = 11 && P2StateNo = 3050
 pos = 0, ceil(-100*const(size.yscale))
 
 [State 810, TargetBind]
@@ -282,7 +282,7 @@ pos = ceil(25*const(size.xscale)), ceil(-120*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 17  && P2StateNo = 3050
+trigger1 = AnimElem = 17 && P2StateNo = 3050
 pos = 0, ceil(-135*const(size.yscale))
 
 [State 810, TargetBind]
@@ -669,7 +669,7 @@ pos = ceil(10*const(size.xscale)), ceil(-110*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 11  && P2StateNo = 1060
+trigger1 = AnimElem = 11 && P2StateNo = 1060
 pos = 0, ceil(-100*const(size.yscale))
 
 [State 810, TargetBind]
@@ -699,7 +699,7 @@ pos = ceil(10*const(size.xscale)), ceil(-110*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 17  && P2StateNo = 1060
+trigger1 = AnimElem = 17 && P2StateNo = 1060
 pos = ceil(-10*const(size.xscale)), ceil(-110*const(size.yscale))
 
 [State 810, TargetBind]
@@ -729,7 +729,7 @@ pos = ceil(20*const(size.xscale)), ceil(-105*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 23  && P2StateNo = 1060
+trigger1 = AnimElem = 23 && P2StateNo = 1060
 pos = ceil(5*const(size.xscale)), ceil(-115*const(size.yscale))
 
 [State 810, TargetBind]
@@ -759,7 +759,7 @@ pos = ceil(-20*const(size.xscale)), ceil(-60*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 29  && P2StateNo = 1060
+trigger1 = AnimElem = 29 && P2StateNo = 1060
 pos = ceil(-10*const(size.xscale)), ceil(-50*const(size.yscale))
 
 [State 810, TargetBind]
@@ -819,7 +819,7 @@ pos = ceil(-16*const(size.xscale)), ceil(-41*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 11  && P2StateNo = 1070
+trigger1 = AnimElem = 11 && P2StateNo = 1070
 pos = ceil(-17*const(size.yscale)), ceil(-41*const(size.yscale))
 
 [State 810, TargetBind]
@@ -849,7 +849,7 @@ pos = ceil(-10*const(size.xscale)), ceil(-41*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 17  && P2StateNo = 1070
+trigger1 = AnimElem = 17 && P2StateNo = 1070
 pos = ceil(10*const(size.xscale)), ceil(-31*const(size.yscale))
 
 [State 810, TargetBind]
@@ -879,7 +879,7 @@ pos = ceil(22*const(size.xscale)), ceil(-21*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 23  && P2StateNo = 1070
+trigger1 = AnimElem = 23 && P2StateNo = 1070
 pos = ceil(6*const(size.xscale)), ceil(-26*const(size.yscale))
 
 [State 810, TargetBind]
@@ -909,7 +909,7 @@ pos = ceil(-35*const(size.xscale)), ceil(10*const(size.yscale))
 
 [State 810, TargetBind]
 type = TargetBind
-trigger1 = AnimElem = 29  && P2StateNo = 1070
+trigger1 = AnimElem = 29 && P2StateNo = 1070
 pos = ceil(-30*const(size.xscale)), ceil(14*const(size.yscale))
 
 [State 810, TargetBind]

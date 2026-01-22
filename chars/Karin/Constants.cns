@@ -20,7 +20,7 @@ FloatPersistIndex = 0
 
 [Size]
 xscale = 0.8333333 ;.840
-yscale = 1 ;1.010  ;1.020 
+yscale = 1 ;1.010 ;1.020 
 ground.back = 21
 ground.front = 21
 air.back = 21

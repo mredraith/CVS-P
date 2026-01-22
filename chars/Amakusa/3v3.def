@@ -13,13 +13,13 @@ pal.defaults =6,3,4,2
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =Amakusa.cmd
-cns     =3v3.cns
-st      =3v3.cns
+cmd =Amakusa.cmd
+cns =3v3.cns
+st =3v3.cns
 stcommon =common1.cns
-sprite  =Amakusa.sff
-anim    =3v3.air
-sound   =a-amakusa.snd
+sprite =Amakusa.sff
+anim =3v3.air
+sound =a-amakusa.snd
 pal1=Colors/a-amakusa3.act
 pal2=Colors/a-amakusa5.act
 pal3=Colors/a-amakusa6.act

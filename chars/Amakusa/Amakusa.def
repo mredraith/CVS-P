@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =Amakusa.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =Amakusa.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =Amakusa.sff
-anim    =Amakusa.air
-sound   =a-amakusa.snd
+sprite =Amakusa.sff
+anim =Amakusa.air
+sound =a-amakusa.snd
 pal1=Colors/mio.act
 pal2=Colors/a-amakusa7.act
 pal3=Colors/sad.act

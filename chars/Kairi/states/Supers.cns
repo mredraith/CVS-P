@@ -69,7 +69,7 @@ trigger1 = animelem = 1
 time = 40
 anim = 0
 pos = 0,10000
-movetime =  30
+movetime = 30
 darken = 0
 p2defmul = 1
 poweradd = 0
@@ -359,7 +359,7 @@ trigger1 = animelem = 1
 time = 40
 anim = 0
 pos = 0,10000
-movetime =  30
+movetime = 30
 darken = 0
 p2defmul = 1
 poweradd = 0
@@ -453,7 +453,7 @@ trigger1 = anim = 4201 && animelem = 2
 anim = 7502
 ID = 7502
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -478,7 +478,7 @@ trigger1 = anim = 4201 && animelem = 2
 anim = 7502
 ID = 7502
 pos = 0,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -503,7 +503,7 @@ trigger1 = animelem = 4 && anim = 4200
 anim = 7502
 ID = 7502
 pos = 25,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -591,7 +591,7 @@ pausetime = 8, 8
 sparkno = -1 + 0 * (var(33) := 8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -30 + 0 * (var(35) := 40), var(36) := -80
-hitsound =  s2,2
+hitsound = s2,2
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 15
@@ -623,7 +623,7 @@ pausetime = 2, 2
 sparkno = -1 + 0 * (var(33) := 8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -30 + 0 * (var(35) := 90), var(36) := -100
-hitsound =  s2,2
+hitsound = s2,2
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 16
@@ -658,7 +658,7 @@ pausetime = 4, 4
 sparkno = -1 + 0 * (var(33) := 8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -30 + 0 * (var(35) := 180), var(36) := -70
-hitsound =  s2,2
+hitsound = s2,2
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 16
@@ -692,7 +692,7 @@ pausetime = 4, 4
 sparkno = -1 + 0 * (var(33) := 8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -30 + 0 * (var(35) := 180), var(36) := -120
-hitsound =  s2,2
+hitsound = s2,2
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 16
@@ -726,7 +726,7 @@ pausetime = 12, 12
 sparkno = -1 + 0 * (var(33) := 8014)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -30 + 0 * (var(35) := 50), var(36) := -60
-hitsound =  s2000,24
+hitsound = s2000,24
 guardsound = s2,4
 ground.type = Trip
 ground.slidetime = 16
@@ -846,7 +846,7 @@ trigger1 = animelem = 1
 time = 40
 anim = 0
 pos = 0,10000
-movetime =  30
+movetime = 30
 darken = 0
 p2defmul = 1
 poweradd = 0
@@ -1020,7 +1020,7 @@ trigger1 = animelem = 2
 anim = 3493
 ID = 3493
 pos = 8,-75
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1090,7 +1090,7 @@ trigger1 = animelem = 1
 anim = 7502
 ID = 7502
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1351,7 +1351,7 @@ trigger1 = animelem = 1
 anim = 9402
 ID = 9402
 pos = 26, 5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1451,7 +1451,7 @@ trigger1 = animelem = 1
 time = 40
 anim = 0
 pos = 0,10000
-movetime =  30
+movetime = 30
 darken = 0
 p2defmul = 1
 poweradd = 0
@@ -1586,7 +1586,7 @@ trigger1 = animelem = 4
 anim = 7502
 ID = 7502
 pos = 30,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1683,7 +1683,7 @@ trigger1 = animelem = 1
 time = 40
 anim = 0
 pos = 0,10000
-movetime =  30
+movetime = 30
 darken = 0
 p2defmul = 1
 poweradd = 0
@@ -1811,7 +1811,7 @@ trigger1 = animelem = 2
 anim = 7502
 ID = 7502
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

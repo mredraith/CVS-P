@@ -473,13 +473,13 @@ persistent = 0
 
 [State 0, Nampa Hitspark]
 type = Helper
-trigger1 =  Projhit1001 = 1
+trigger1 = Projhit1001 = 1
 helpertype = normal ;player
 name = "hitspark"
 ID = 2000
 stateno = 2021
 pos = 110,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -496,7 +496,7 @@ name = "hitspark"
 ID = 2000
 stateno = 2021
 pos = 140,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -507,13 +507,13 @@ persistent = 0
 
 [State 0, Nampa Guardspark]
 type = Helper
-trigger1 =  Projguarded1001 = 1
+trigger1 = Projguarded1001 = 1
 helpertype = normal ;player
 name = "hitspark"
 ID = 2000
 stateno = 2010
 pos = 105,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -530,7 +530,7 @@ name = "hitspark"
 ID = 2000
 stateno = 2010
 pos = 135,-57
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -550,7 +550,7 @@ trigger3 = WinKO && anim = 3225
 ;trigger4 = winko && movetype = A
 helpertype = normal
 name = "Super KO"
-pos = 160,0                           ;WinMugen
+pos = 160,0 ;WinMugen
 postype = left
 ID = 1800
 facing = 1
@@ -604,7 +604,7 @@ y = (root, pos y)
 
 [State 0, AssertSpecial]
 type = null;AssertSpecial
-trigger1 =  1
+trigger1 = 1
 flag = nomusic
 
 [Statedef 1800,Super KO]
@@ -642,8 +642,8 @@ type = Explod
 trigger1 =time = 0
 anim =1810
 ID =1810
-pos = 160,120                           ;WinMugen
-postype =left  ;p2,front,back,left,right
+pos = 160,120 ;WinMugen
+postype =left ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -661,8 +661,8 @@ type = Explod
 trigger1 =time = 0
 anim =1800
 ID =1800
-pos = 160,120                           ;WinMugen
-postype =left  ;p2,front,back,left,right
+pos = 160,120 ;WinMugen
+postype =left ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -678,7 +678,7 @@ scale= 1,1
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time < 10
-ID =  1800
+ID = 1800
 scale = 1-((time*.05)-(time*-.001)),1-((time*.05)-(time*-.001))
 
 [State 0, Fade to White]
@@ -686,8 +686,8 @@ type =Explod
 trigger1 =time = 25
 anim =1802
 ID =1802
-pos = 160,120                           ;WinMugen
-postype =left  ;p2,front,back,left,right
+pos = 160,120 ;WinMugen
+postype =left ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1

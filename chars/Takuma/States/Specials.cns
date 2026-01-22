@@ -449,7 +449,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 89 < 7, 7, fvar(11) * 89)), 10
 priority = 4, hit
@@ -665,7 +665,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 102 < 7, 7, fvar(11) * 102)), 10
 priority = 4, hit
@@ -845,7 +845,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 111 < 7, 7, fvar(11) * 111)), 10
 priority = 4, hit
@@ -1025,7 +1025,7 @@ y = .45
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 90 < 7, 7, fvar(11) * 90)), 10
 priority = 4, hit
@@ -1233,7 +1233,7 @@ y = .45
 [State 1200, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 45 < 7, 7, fvar(11) * 45)), 10
 priority = 4, hit
@@ -4027,7 +4027,7 @@ trigger1 = NumTarget && Animelem = 3 || Animelem = 10 || Animelem = 12
 trigger2 = NumTarget && Animelem = 15 || Animelem = 21 || Animelem = 28
 trigger3 = NumTarget && Animelem = 30 || Animelem = 33 || Animelem = 39
 trigger4 = NumTarget && Animelem = 6 || Animelem = 24 
-trigger5 = NumTarget &&  Animelem = 18 || Animelem = 36
+trigger5 = NumTarget && Animelem = 18 || Animelem = 36
 time = 14
 ampl = 4
 freq = 120
@@ -4091,7 +4091,7 @@ trigger1 = NumTarget && Animelem = 3 || Animelem = 10 || Animelem = 12
 trigger2 = NumTarget && Animelem = 15 || Animelem = 21 || Animelem = 28
 trigger3 = NumTarget && Animelem = 30 || Animelem = 33 || Animelem = 39
 trigger4 = NumTarget && Animelem = 6 || Animelem = 24 
-trigger5 = NumTarget &&  Animelem = 18 
+trigger5 = NumTarget && Animelem = 18 
 value = floor(ifElse(9 * fvar(11) < 7, -7, -9 * fvar(11)))
 kill = 0
 
@@ -4106,7 +4106,7 @@ trigger1 = NumTarget && Animelem = 3 || Animelem = 10 || Animelem = 12
 trigger2 = NumTarget && Animelem = 15 || Animelem = 21 || Animelem = 28
 trigger3 = NumTarget && Animelem = 30 || Animelem = 33 || Animelem = 39
 trigger4 = NumTarget && Animelem = 6 || Animelem = 24 
-trigger5 = NumTarget &&  Animelem = 18 || Animelem = 36
+trigger5 = NumTarget && Animelem = 18 || Animelem = 36
 value = 3
 
 [State 810, HitAdd]
@@ -4115,7 +4115,7 @@ trigger1 = NumTarget && Animelem = 3 || Animelem = 10 || Animelem = 12
 trigger2 = NumTarget && Animelem = 15 || Animelem = 21 || Animelem = 28
 trigger3 = NumTarget && Animelem = 30 || Animelem = 33 || Animelem = 39
 trigger4 = NumTarget && Animelem = 6 || Animelem = 24 
-trigger5 = NumTarget &&  Animelem = 18 || Animelem = 36
+trigger5 = NumTarget && Animelem = 18 || Animelem = 36
 value = 1
 
 [State 810, VarAdd]
@@ -4124,7 +4124,7 @@ trigger1 = NumTarget && Animelem = 3 || Animelem = 10 || Animelem = 12
 trigger2 = NumTarget && Animelem = 15 || Animelem = 21 || Animelem = 28
 trigger3 = NumTarget && Animelem = 30 || Animelem = 33 || Animelem = 39
 trigger4 = NumTarget && Animelem = 6 || Animelem = 24 
-trigger5 = NumTarget &&  Animelem = 18 || Animelem = 36
+trigger5 = NumTarget && Animelem = 18 || Animelem = 36
 var(13) = 1
 
 [State 1000, End]

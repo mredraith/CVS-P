@@ -20,7 +20,7 @@ hitflag = MAF
 priority = 3, Hit
 sparkno = S8000
 guard.sparkno = S8005
-pausetime =  8,8
+pausetime = 8,8
 sparkxy = -15, -43
 hitsound = S5,0
 guardsound = S6, 0
@@ -65,7 +65,7 @@ animtype = Medium
 guardflag = MA
 hitflag = MAF
 priority = 3, Hit
-pausetime =  8,8
+pausetime = 8,8
 sparkxy = -10, -45
 sparkno = S8001
 guard.sparkno = S8005
@@ -255,7 +255,7 @@ animtype = Light
 guardflag = MA
 hitflag = MAF
 priority = 3, Hit
-pausetime =  8,8
+pausetime = 8,8
 sparkno = S8000
 guard.sparkno = S8005
 sparkxy = -15, -37
@@ -460,8 +460,8 @@ sparkxy = -7,-21
 hitsound = S7,0
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -12
 air.velocity = -7,-2.5
 
@@ -480,8 +480,8 @@ sparkxy = -7,-21
 hitsound = S7,1
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -12
 air.velocity = -7,-2.5
 
@@ -500,8 +500,8 @@ sparkxy = -7,-21
 hitsound = S7,0
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -12
 air.velocity = -7,-2.5
 
@@ -520,8 +520,8 @@ sparkxy = -7,-21
 hitsound = S7,1
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -12
 air.velocity = -7,-2.5
 
@@ -540,8 +540,8 @@ sparkxy = -7,-21
 hitsound = S7,2
 guardsound = S6,0
 ground.type = Low
-ground.slidetime = 18  ;12
-ground.hittime = 21   ;15
+ground.slidetime = 18 ;12
+ground.hittime = 21 ;15
 ground.velocity = -12
 air.velocity = -7,-2.5
 
@@ -862,7 +862,7 @@ anim = 441
 name = "blade"
 pausemovetime = 0
 pos = -14,18
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 sprpriority = 3
 ownpal = 1
@@ -1318,7 +1318,7 @@ animtype = Medium
 guardflag = MA
 hitflag = MAF
 priority = 3, Hit
-pausetime =  8,8
+pausetime = 8,8
 sparkxy = -15, -37
 sparkno = S8001
 guard.sparkno = S8005
@@ -1689,7 +1689,7 @@ animtype = Medium
 guardflag = MA
 hitflag = MAF
 priority = 3, Hit
-pausetime =  8,8
+pausetime = 8,8
 sparkxy = -15, -37
 sparkno = S8000
 guard.sparkno = S8005
@@ -1787,7 +1787,7 @@ animtype = Hard
 damage = 15, 2
 guardflag = HA
 priority = 3
-pausetime =  4,4
+pausetime = 4,4
 sparkno = S8002
 guard.sparkno = S8005
 sparkxy = -10,-63
@@ -1808,7 +1808,7 @@ animtype = Hard
 damage = 15, 2
 guardflag = HA
 priority = 3
-pausetime =  4,4
+pausetime = 4,4
 sparkno = S8002
 guard.sparkno = S8005
 sparkxy = -10,-10
@@ -1829,7 +1829,7 @@ animtype = Hard
 damage = 15, 2
 guardflag = HA
 priority = 3
-pausetime =  4,4
+pausetime = 4,4
 sparkno = S8002
 guard.sparkno = S8005
 sparkxy = -10,30
@@ -1851,7 +1851,7 @@ animtype = Hard
 damage = 15, 2
 guardflag = HA
 priority = 3
-pausetime =  4,4
+pausetime = 4,4
 sparkno = S8002
 guard.sparkno = S8005
 sparkxy = -10,15
@@ -1873,7 +1873,7 @@ animtype = Hard
 damage = 15, 2
 guardflag = HA
 priority = 3
-pausetime =  4,4
+pausetime = 4,4
 sparkno = S8002
 guard.sparkno = S8005
 sparkxy = -10,-27
@@ -1895,7 +1895,7 @@ animtype = Hard
 damage = 15, 2
 guardflag = HA
 priority = 3
-pausetime =  4,4
+pausetime = 4,4
 sparkno = S8002
 guard.sparkno = S8005
 sparkxy = -10,-91
@@ -2067,18 +2067,18 @@ ctrl = 1
 ; Throw - Attempt
 ; CNS difficulty: medium-advanced
 ; Description: Throws are not difficult to make, although then can be
-;     tedious at times. Throw attempt states have a HitDef of a
-;     special format. The key parameters in a throw are p1stateno
-;     and p2stateno. If the HitDef successfully connects, then
-;     the attacker will change to the state number specified by
-;     p1stateno, and the opponent will be change to the state
-;     number assigned to p2stateno. The special thing about p2stateno
-;     is that the opponent will be temporarily brought into the
-;     attacker's state file. In this case, no matter who the
-;     opponent is, he will be taken to state 820 of this file (kfm.cns)
-;     and remain here until the end of the throw (look at his debug
-;     information when he is being thrown; the text changes to yellow
-;     to mean that he is in another player's state file).
+; tedious at times. Throw attempt states have a HitDef of a
+; special format. The key parameters in a throw are p1stateno
+; and p2stateno. If the HitDef successfully connects, then
+; the attacker will change to the state number specified by
+; p1stateno, and the opponent will be change to the state
+; number assigned to p2stateno. The special thing about p2stateno
+; is that the opponent will be temporarily brought into the
+; attacker's state file. In this case, no matter who the
+; opponent is, he will be taken to state 820 of this file (kfm.cns)
+; and remain here until the end of the throw (look at his debug
+; information when he is being thrown; the text changes to yellow
+; to mean that he is in another player's state file).
 [Statedef 700]
 type = S
 movetype= A
@@ -2089,25 +2089,25 @@ ctrl = 0
 anim = 700
 
 ; Notes: The '-' symbol in the hitflag field means that it only affects
-;   players who are not in a hit state. This prevents the player from combo-ing
-;   into the throw. The priority should be set to a low number, such as
-;   1 or 2, so that the throw does not take precedence over normal attacks.
-;   The type of priority must always be set to "Miss" or "Dodge" for throws,
-;   otherwise strange behavior can result.
+; players who are not in a hit state. This prevents the player from combo-ing
+; into the throw. The priority should be set to a low number, such as
+; 1 or 2, so that the throw does not take precedence over normal attacks.
+; The type of priority must always be set to "Miss" or "Dodge" for throws,
+; otherwise strange behavior can result.
 [State 800, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = S, NT          ;Attributes: Standing, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+attr = S, NT ;Attributes: Standing, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
+p2facing = 1 ;Force p2 to face player
 hitsound = S3800,1
-p1stateno = 710       ;On success, player changes to state 810
-p2stateno = 720       ;If hit, p2 changes to state 820 in player's cns
-fall = 1              ;Force p2 into falling down
+p1stateno = 710 ;On success, player changes to state 810
+p2stateno = 720 ;If hit, p2 changes to state 820 in player's cns
+fall = 1 ;Force p2 into falling down
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -2125,19 +2125,19 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Throwing the opponent
 ; Description: In this state, the player throws the opponent by binding him to
-;     various offsets based on his current frame of animation. For
-;     example, [State 810, Bind 1] binds the opponent to an offset of
-;     28 pixels in front of the player. That puts him around where the hand
-;     is at. Is is important to keep the opponent bound using a
-;     TargetBind controller at all times, until you let him go. This
-;     is especially important if your player has a Clsn2 box that
-;     allows him to get hit while throwing someone. Each time a player
-;     gets hit, all his bound targets will be set to a fall state. If
-;     the opponent is not bound, then he might get stuck in his thrown
-;     state when his attacker is knocked out of the throw halfway.
+; various offsets based on his current frame of animation. For
+; example, [State 810, Bind 1] binds the opponent to an offset of
+; 28 pixels in front of the player. That puts him around where the hand
+; is at. Is is important to keep the opponent bound using a
+; TargetBind controller at all times, until you let him go. This
+; is especially important if your player has a Clsn2 box that
+; allows him to get hit while throwing someone. Each time a player
+; gets hit, all his bound targets will be set to a fall state. If
+; the opponent is not bound, then he might get stuck in his thrown
+; state when his attacker is knocked out of the throw halfway.
 ; Notes: There is a TargetLifeAdd controller to decrease the opponent's
-;     life, and a TargetState controller to change his state to a
-;     falling state when KFM lets go of him.
+; life, and a TargetState controller to change his state to a
+; falling state when KFM lets go of him.
 [Statedef 710]
 type = S
 movetype= A
@@ -2169,13 +2169,13 @@ ctrl = 1
 ; Opponent Thrown
 ; (a custom gethit state)
 ; Description: This is the state that the opponent changes to after being
-;     hit by the throw HitDef. The important thing here is to use a
-;     ChangeAnim2 controller. The difference between ChangeAnim2 and
-;     ChangeAnim is that ChangeAnim2 changes the player's animation to
-;     an action in the AIR file of the attacker (in this case, kfm.air),
-;     whereas ChangeAnim always changes the player to an action in his
-;     own AIR file. Look at Action 820 in kfm.air for some extra
-;     comments.
+; hit by the throw HitDef. The important thing here is to use a
+; ChangeAnim2 controller. The difference between ChangeAnim2 and
+; ChangeAnim is that ChangeAnim2 changes the player's animation to
+; an action in the AIR file of the attacker (in this case, kfm.air),
+; whereas ChangeAnim always changes the player to an action in his
+; own AIR file. Look at Action 820 in kfm.air for some extra
+; comments.
 [Statedef 720]
 type = A
 movetype= H
@@ -2196,10 +2196,10 @@ value = 720
 ; Opponent thrown into the air
 ; (a custom gethit state)
 ; Description: This state has the opponent flying through the air and
-;     falling down onto the ground. The SelfState controller sets the
-;     opponent back using to his own state file when he his the ground.
-;     Controllers 821,2 and 821,3 allow the opponent to recover by
-;     hitting his recovery command when he is falling.
+; falling down onto the ground. The SelfState controller sets the
+; opponent back using to his own state file when he his the ground.
+; Controllers 821,2 and 821,3 allow the opponent to recover by
+; hitting his recovery command when he is falling.
 [Statedef 721]
 type = A
 movetype= H

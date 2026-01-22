@@ -512,7 +512,7 @@ value = 1
 
 [State 810, HitSpark]
 type=Helper
-trigger1=enemy,  stateno = 3016
+trigger1=enemy, stateno = 3016
 id = 3005
 name = "jiraisin"
 pos = 0,0
@@ -1621,7 +1621,7 @@ p2facing = 1
 p1stateno = 3101
 p2stateno = 3105
 hitsound = S800,0
-fall = 1              
+fall = 1 
 nochainID = 600,9999
 id = 3005
 
@@ -2112,7 +2112,7 @@ value = 0
 
 [State FDR]
 type = varset
-trigger1 = command = "Chou Oosotogari1" || command = "Chou Oosotogari2" || command = "Chou Oosotogari3"  || command = "Chou OosotogariEX" 
+trigger1 = command = "Chou Oosotogari1" || command = "Chou Oosotogari2" || command = "Chou Oosotogari3" || command = "Chou OosotogariEX" 
 trigger1 = animelemtime(7) >=0
 v = 10
 value = 1
@@ -2815,7 +2815,7 @@ p2facing = 1
 p1stateno = 3151
 p2stateno = 3105
 hitsound = S800,0
-fall = 1              
+fall = 1 
 nochainID = 600,9999
 id = 3005
 
@@ -3170,7 +3170,7 @@ value = 0
 
 [State FDR]
 type = varset
-trigger1 = command = "Chou Oosotogari1" || command = "Chou Oosotogari2" || command = "Chou Oosotogari3"  || command = "Chou OosotogariEX" 
+trigger1 = command = "Chou Oosotogari1" || command = "Chou Oosotogari2" || command = "Chou Oosotogari3" || command = "Chou OosotogariEX" 
 trigger1 = animelemtime(7) >=0
 v = 10
 value = 1
@@ -5613,7 +5613,7 @@ trigger1 = animelem = 28
 anim = 3605
 ID = 3605
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

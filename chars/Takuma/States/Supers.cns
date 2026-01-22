@@ -121,7 +121,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = -1
@@ -316,7 +316,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = -1
@@ -3717,7 +3717,7 @@ anim = 4000
 facep2 = 1
 sprpriority = 2
 
-[State 3100, NotHitBy]  
+[State 3100, NotHitBy] 
 type = NotHitBy
 trigger1 = AnimElemTime(8) < 0
 time = 1
@@ -3828,7 +3828,7 @@ type = StateTypeSet
 trigger1 = AnimElem = 8
 statetype = A
 
-[State 4000,  Camera]
+[State 4000, Camera]
 type = ScreenBound
 trigger1 = 1
 value = 1
@@ -4156,7 +4156,7 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 
-[State 4000,  Camera]
+[State 4000, Camera]
 type = ScreenBound
 trigger1 = 1
 value = 1
@@ -4219,7 +4219,7 @@ Anim = 4010
 Velset = 0,0
 ctrl = 0
 
-[State 4000,  Camera]
+[State 4000, Camera]
 type = ScreenBound
 trigger1 = 1
 value = 1

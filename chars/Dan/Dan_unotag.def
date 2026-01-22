@@ -13,9 +13,9 @@ localcoord = 320,240
 
 [Files]
 movelist = Dan_unotag\movelist.dat
-cmd     =Dan_unotag\Command (Custom).cmd
+cmd =Dan_unotag\Command (Custom).cmd
 cns = Constants.cns
-st      =Dan_unotag\System (Custom).st
+st =Dan_unotag\System (Custom).st
 st1 = States\Normal.st
 st2 = States\Specials.st
 st3 = States\EX-Specials.st
@@ -25,7 +25,7 @@ st6 = States\Helpers.st
 st7 = States\Custom.st
 ;st8 = States\NormalDan.st
 st9 = Dan_unotag\Tag System (Custom).cns
-ST8	= Config.txt
+ST8 = Config.txt
 stcommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air

@@ -5,7 +5,7 @@ type = A
 movetype= A
 physics = S
 ctrl = 0
-anim =  1009
+anim = 1009
 
 [State 0, Explod]
 type = removeExplod
@@ -18,7 +18,7 @@ trigger1 = AnimElem = 3
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -31,10 +31,10 @@ pausemovetime = 9999
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 3
-anim =  3011
-ID =  6015
+anim = 3011
+ID = 6015
 pos = 62,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -71,7 +71,7 @@ name = "LEVEL2"
 ID = 1405
 stateno = 1406
 pos = 80,-48
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -79,7 +79,7 @@ supermove
 pausemove
 size.xscale =.4
 size.yscale =.3
-persistent =  0
+persistent = 0
 
 [State 1122, ChangeState]
 type = ChangeState
@@ -94,7 +94,7 @@ type = A
 movetype= A
 physics = S
 ctrl = 0
-anim =  1009
+anim = 1009
 
 [State 0, Explod]
 type = removeExplod
@@ -108,7 +108,7 @@ value = 255,255,255
 time = 3
 ;under = 0
 ignorehitpause =1
-persistent =  0
+persistent = 0
 
 [State 0, Explod]
 type = Explod
@@ -116,7 +116,7 @@ trigger1 = AnimElem = 3
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -129,10 +129,10 @@ pausemovetime = 9999
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 3
-anim =  3011
-ID =  6015
+anim = 3011
+ID = 6015
 pos = 62,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -180,7 +180,7 @@ name = "LEVEL3"
 ID = 1405
 stateno = 1405
 pos = 80,-48
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -188,7 +188,7 @@ supermove
 pausemove
 size.xscale =.6
 size.yscale =.8
-persistent =  0
+persistent = 0
 
 [State 1122, ChangeState]
 type = ChangeState
@@ -229,10 +229,10 @@ x = ifelse(vel X >0,.2,-.2)
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 3
-anim =  3011
-ID =  6015
+anim = 3011
+ID = 6015
 pos = 62,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -269,7 +269,7 @@ name = "LEVEL2"
 ID = 1405
 stateno = 1412
 pos = 45,-30
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -277,7 +277,7 @@ supermove
 pausemove
 size.xscale =.4
 size.yscale =.3
-persistent =  0
+persistent = 0
 
 [State 1122, ChangeState]
 type = ChangeState
@@ -318,10 +318,10 @@ x = ifelse(vel X >0,.2,-.2)
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 3
-anim =  3011
-ID =  6015
+anim = 3011
+ID = 6015
 pos = 62,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -344,7 +344,7 @@ trigger1 = animelem = 3
 value = 255,255,255
 time = 3
 ignorehitpause =1
-persistent =  0
+persistent = 0
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -372,7 +372,7 @@ name = "LEVEL3"
 ID = 1405
 stateno = 1411
 pos = 45,-30
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -380,7 +380,7 @@ supermove
 pausemove
 size.xscale =.6
 size.yscale =.8
-persistent =  0
+persistent = 0
 
 [State 1122, ChangeState]
 type = ChangeState
@@ -416,7 +416,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -433,7 +433,7 @@ trigger1 = AnimElem = 3
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -469,7 +469,7 @@ trigger1 = animelem = 4
 anim = 1121
 ID = 1120
 pos = 80,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 supermovetime = 0
@@ -544,14 +544,14 @@ anim = 602
 ID = 600
 scale = .5,.5
 pos = -75,-27
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 0, explod]
@@ -580,7 +580,7 @@ trigger1 = animelem = 3
 anim = 1121
 ID = 1120
 pos = 60,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 supermovetime = 0
@@ -650,7 +650,7 @@ trigger1 = AnimElem = 4
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -668,7 +668,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -703,7 +703,7 @@ name = "Handangeki"
 ID = 1005
 stateno = 1005
 pos = 70,-60
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -745,7 +745,7 @@ trigger1 = AnimElem = 4
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -763,7 +763,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -798,7 +798,7 @@ name = "Handangeki"
 ID = 1006
 stateno = 1006
 pos = 70,-60
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -840,7 +840,7 @@ trigger1 = AnimElem = 4
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -858,7 +858,7 @@ anim = 251
 id = 400
 pos = 10,0
 sprpriority = 4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 ignorehitpause = 0
@@ -893,7 +893,7 @@ name = "Handangeki"
 ID = 1007
 stateno = 1007
 pos = 70,-60
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1030,7 +1030,7 @@ anim = 7007
 id = 400
 scale = .5,.5
 pos = -22,9
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -1243,7 +1243,7 @@ anim = 1003
 ID = 400
 scale = .5,.5
 pos = 60,-35
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -1527,7 +1527,7 @@ anim = 1003
 ID = 400
 scale = .5,.5
 pos = 60,-35
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -1707,7 +1707,7 @@ anim = 7007
 ID = 400
 scale = .5,.5
 pos = -22,9
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -1731,9 +1731,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -1900,7 +1900,7 @@ anim = 1003
 ID = 400
 scale = .5,.5
 pos = 60,-35
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -1924,9 +1924,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -2139,7 +2139,7 @@ anim = 1003
 ID = 400
 scale = .5,.5
 pos = 60,-35
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
@@ -2163,9 +2163,9 @@ persistent = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(4) >= 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, Gravity]
 type = Gravity
@@ -2313,7 +2313,7 @@ trigger1 = AnimElem = 3
 anim = 6008
 ID = 400
 pos = 40,120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 999
 removetime = -2
 scale = .9,.9
@@ -2465,7 +2465,7 @@ trigger1 = AnimElem = 3
 anim = 6008
 ID = 400
 pos = 40,120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 999
 removetime = -2
 scale = .9,.9
@@ -2617,7 +2617,7 @@ trigger1 = AnimElem = 3
 anim = 6008
 ID = 400
 pos = 40,120
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 999
 removetime = -2
 scale = .9,.9
@@ -2746,11 +2746,11 @@ name = "diagonal sword"
 ID = 1415
 stateno = 1415
 pos = 0,0
-postype = p1  ;p2,front,back,left,right   ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
-persistent =  0
+persistent = 0
 size.xscale =.7
 size.yscale =.7
 
@@ -2917,11 +2917,11 @@ name = "diagonal sword"
 ID = 1415
 stateno = 1415
 pos = 0,0
-postype = p1  ;p2,front,back,left,right   ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
-persistent =  0
+persistent = 0
 size.xscale =.7
 size.yscale =.7
 
@@ -3088,11 +3088,11 @@ name = "diagonal sword"
 ID = 1415
 stateno = 1415
 pos = 0,0
-postype = p1  ;p2,front,back,left,right   ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
-persistent =  0
+persistent = 0
 size.xscale =.7
 size.yscale =.7
 
@@ -3709,7 +3709,7 @@ anim = 9151
 ID = 600
 pos = -5,35;40,2
 facing = -1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 supermovetime = 9999
@@ -3726,7 +3726,7 @@ anim = 9151
 ID = 600
 pos = -10,35;40,2
 facing = -1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -1
 supermovetime = 9999
@@ -3876,7 +3876,7 @@ trigger1 = AnimElem = 3
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -3909,7 +3909,7 @@ trigger1 = animelem = 5
 anim = 1134
 ID = 400
 pos = 90,-48
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4042,7 +4042,7 @@ trigger1 = AnimElem = 3
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -4075,7 +4075,7 @@ trigger1 = animelem = 5
 anim = 1134
 ID = 400
 pos = 90,-48
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4214,7 +4214,7 @@ trigger1 = AnimElem = 3
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -4247,7 +4247,7 @@ trigger1 = animelem = 5
 anim = 1134
 ID = 400
 pos = 90,-48
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4420,7 +4420,7 @@ name = "Hyouretsuzan"
 ID = 1553
 stateno = 1553
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 size.xscale = .7
@@ -4519,7 +4519,7 @@ type = Explod
 trigger1 = animelem = 2
 anim = 4200
 pos = 35,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 scale = .7,.6
 vfacing = -1
@@ -4637,7 +4637,7 @@ name = "Hyouretsuzan"
 ID = 1554
 stateno = 1554
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 size.xscale = 1.1
@@ -4771,7 +4771,7 @@ type = Explod
 trigger1 = animelem = 2
 anim = 3416
 pos = 30,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 scale = .4,.4
 vel = 0, 0
@@ -4817,7 +4817,7 @@ trigger1 = !time
 anim = 1561
 ID = 1590
 pos = 0,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 2, -3
 accel = 0.1, 0.45
@@ -4833,7 +4833,7 @@ trigger1 = !time
 anim = 1562
 ID = 1590
 pos = 0,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = -2, -3
 accel = 0.1, 0.45
@@ -4849,7 +4849,7 @@ trigger1 = !time
 anim = 1563
 ID = 1590
 pos = 10,-15
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 1, -5
 accel = 0.14, 0.45
@@ -4865,7 +4865,7 @@ trigger1 = !time
 anim = 1564
 ID = 1590
 pos = -10,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = -1, -5
 accel = 0.1, 0.45
@@ -4881,7 +4881,7 @@ trigger1 = !time
 anim = 1565
 ID = 1590
 pos = 15,-25
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 4, -2
 accel = 0.1, 0.45
@@ -4973,7 +4973,7 @@ name = "JUNK"
 ID = 1555
 stateno = 1555
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 size.xscale = 1
@@ -5132,7 +5132,7 @@ type = Explod
 trigger1 = animelem = 2
 anim = 3415
 pos =30,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 scale = .5,.5
 vel = 0, 0
@@ -5231,7 +5231,7 @@ name = "Raikosen"
 ID = 1133
 stateno = 1133
 pos = -5,-45
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5247,7 +5247,7 @@ trigger1 = AnimElem = 2
 anim = 1139
 ID = 1139
 pos = 30,-40
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -5366,7 +5366,7 @@ trigger1 = AnimElem = 2
 anim = 1140
 ID = 1140
 pos = 125,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 vel = 0,0
@@ -5391,7 +5391,7 @@ name = "Raikosen"
 ID = 1134
 stateno = 1134
 pos = 80,-35
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5499,7 +5499,7 @@ name = "Raikosen"
 ID = 1135
 stateno = 1135
 pos = 5,-40
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5515,7 +5515,7 @@ trigger1 = AnimElem = 2
 anim = 1141
 ID = 1141
 pos = 15,-55
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 vel = 0,0
@@ -5598,7 +5598,7 @@ trigger1 = AnimElem = 2
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -5710,14 +5710,14 @@ anim = 402
 ID = 400
 scale = .5,.5
 pos = -70,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 1300, Explod]
@@ -5758,7 +5758,7 @@ trigger1 = AnimElem = 2
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -5871,14 +5871,14 @@ anim = 402
 ID = 400
 scale = .5,.5
 pos = -70,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 1300, Explod]
@@ -5919,7 +5919,7 @@ trigger1 = AnimElem = 2
 anim = 7502
 ID = 7023
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 removetime = -2
 scale = .5,.5
@@ -6038,14 +6038,14 @@ anim = 402
 ID = 400
 scale = .5,.5
 pos = -70,-95
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 bindtime = -1
 removeongethit = 1
 ignorehitpause = 0
 keyctrl = 0
 ownpal = 1
-removetime =  -2
+removetime = -2
 sprpriority = 4
 
 [State 1300, Explod]

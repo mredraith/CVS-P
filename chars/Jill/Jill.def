@@ -14,13 +14,13 @@ localcoord = 427,240
 ; Files for the player
 [Files]
 movelist = movelist.dat
-cmd     =DivineJill.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =DivineJill.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineJill.sff
-anim    =DivineJill.air
-sound   =DivineJill.snd
+sprite =DivineJill.sff
+anim =DivineJill.air
+sound =DivineJill.snd
 pal1=Colors/PAVGN_ResidentEvil.act
 pal2=Colors/davismaximus_Medic.act
 pal3=Colors/PAVGN_Regina.act

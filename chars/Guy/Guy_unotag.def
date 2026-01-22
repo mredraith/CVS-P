@@ -14,9 +14,9 @@ localcoord = 320,240
 
 [Files]
 movelist = Guy_unotag\movelist.dat
-cmd     =Guy_unotag\Command.cmd
+cmd =Guy_unotag\Command.cmd
 cns = Constants.cns
-st      =Guy_unotag\System.st
+st =Guy_unotag\System.st
 st1 = States\Normal.st
 st2 = States\Specials.st
 st3 = States\EX-Specials.st

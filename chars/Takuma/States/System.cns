@@ -50,35 +50,35 @@
 
 
 [Data]
-life = 1000			;Amount of life to start with
-attack = 100		;attack power (more is stronger)
-defence = 100		;defensive power (more is stronger)
-fall.defence_up = 50	;Percentage to increase defense everytime player is knocked down
-lieDown.time = 15		;Time which player lies down for, before getting up
-airjuggle = 15		;Number of points for juggling
-sparkno = s8010			;Default hit spark number for HitDefs
-guard.sparkno = s8000	;Default guard spark number
-KO.echo = 0			;1 to enable echo on KO
-volume = 200			;Volume offset (negative for softer)
-IntPersistIndex = 58	;Variables with this index and above will not have their values
-FloatPersistIndex = 40  ;reset to 0 between rounds or matches. There are 60 int variables,
-  				
+life = 1000 ;Amount of life to start with
+attack = 100 ;attack power (more is stronger)
+defence = 100 ;defensive power (more is stronger)
+fall.defence_up = 50 ;Percentage to increase defense everytime player is knocked down
+lieDown.time = 15 ;Time which player lies down for, before getting up
+airjuggle = 15 ;Number of points for juggling
+sparkno = s8010 ;Default hit spark number for HitDefs
+guard.sparkno = s8000 ;Default guard spark number
+KO.echo = 0 ;1 to enable echo on KO
+volume = 200 ;Volume offset (negative for softer)
+IntPersistIndex = 58 ;Variables with this index and above will not have their values
+FloatPersistIndex = 40 ;reset to 0 between rounds or matches. There are 60 int variables,
+ 
 
 [Size]
-xscale = 1           ;Horizontal scaling factor.
-yscale = 1           ;Vertical scaling factor.
-ground.back = 26    ;Player width (back, ground)
-ground.front = 26    ;Player width (front, ground)
-air.back = 15        ;Player width (back, air)
-air.front = 15       ;Player width (front, air)
-height = 60          ;Height of player (for opponent to jump over)
-attack.dist = 160    ;Default attack distance
+xscale = 1 ;Horizontal scaling factor.
+yscale = 1 ;Vertical scaling factor.
+ground.back = 26 ;Player width (back, ground)
+ground.front = 26 ;Player width (front, ground)
+air.back = 15 ;Player width (back, air)
+air.front = 15 ;Player width (front, air)
+height = 60 ;Height of player (for opponent to jump over)
+attack.dist = 160 ;Default attack distance
 proj.attack.dist = 90 ;Default attack distance for projectiles
-proj.doscale = 0     ;Set to 1 to scale projectiles too
-head.pos = 6, -93   ;Approximate position of head
-mid.pos = -6, -62    ;Approximate position of midsection
-shadowoffset = -1     ;Number of pixels to vertically offset the shadow
-draw.offset = 0,0    ;Player drawing offset in pixels (x, y)
+proj.doscale = 0 ;Set to 1 to scale projectiles too
+head.pos = 6, -93 ;Approximate position of head
+mid.pos = -6, -62 ;Approximate position of midsection
+shadowoffset = -1 ;Number of pixels to vertically offset the shadow
+draw.offset = 0,0 ;Player drawing offset in pixels (x, y)
 
 [Velocity]
 walk.fwd = 2.5
@@ -95,10 +95,10 @@ airjump.back = -3
 airjump.fwd = 3
 
 [Movement]
-airjump.num = 0      ;Number of air jumps allowed (opt)
-airjump.height = 35  ;Minimum distance from ground before you can air jump (opt)
-yaccel = .58         ;Vertical acceleration
-stand.friction = .85  ;Friction coefficient when standing
+airjump.num = 0 ;Number of air jumps allowed (opt)
+airjump.height = 35 ;Minimum distance from ground before you can air jump (opt)
+yaccel = .58 ;Vertical acceleration
+stand.friction = .85 ;Friction coefficient when standing
 crouch.friction = .82 ;Friction coefficient when crouching
 
 [Quotes]
@@ -262,122 +262,122 @@ value = (Random % 15)
 
 [State 180, Victory Quote Vs. Himself]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Takuma Sakazaki" || Enemy, Name = "Takuma" 
+trigger1 = Enemy, Name = "Takuma Sakazaki" || Enemy, Name = "Takuma" 
 value = 15 
 
 [State 180, Victory Quote Vs. Heidern]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Heidern" 
+trigger1 = Enemy, Name = "Heidern" 
 value = 16 
 
 [State 180, Victory Quote Vs. King]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "King" 
+trigger1 = Enemy, Name = "King" 
 value = 17 + (Random % 2)
 
 [State 180, Victory Quote Vs. Ryo]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Ryo" || Enemy, Name = "Ryo Sakazaki"
+trigger1 = Enemy, Name = "Ryo" || Enemy, Name = "Ryo Sakazaki"
 value = 19
 
 [State 180, Victory Quote Vs. Robert]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Robert" || Enemy, Name = "Robert Garcia"
+trigger1 = Enemy, Name = "Robert" || Enemy, Name = "Robert Garcia"
 value = 19 + (Random % 2)
 
 [State 180, Victory Quote Vs. Yuri]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Yuri" || Enemy, Name = "Yuri Sakazaki"
+trigger1 = Enemy, Name = "Yuri" || Enemy, Name = "Yuri Sakazaki"
 value = 21 + (Random % 2)
 
 [State 180, Victory Quote Vs. Faggot]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Ash" || Enemy, Name = "Ash Crimson"
+trigger1 = Enemy, Name = "Ash" || Enemy, Name = "Ash Crimson"
 value = 23
 
 [State 180, Victory Quote Vs. Benimaru]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Benimaru" || Enemy, Name = "Benimaru Nikaido"
+trigger1 = Enemy, Name = "Benimaru" || Enemy, Name = "Benimaru Nikaido"
 value = 24
 
 [State 180, Victory Quote Vs. Chin]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Chin" || Enemy, Name = "Chin Gentsai"
+trigger1 = Enemy, Name = "Chin" || Enemy, Name = "Chin Gentsai"
 value = 25
 
 [State 180, Victory Quote Vs. Goro]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Goro" || Enemy, Name = "Daimon" || Enemy, Name = "Goro Daimon"
+trigger1 = Enemy, Name = "Goro" || Enemy, Name = "Daimon" || Enemy, Name = "Goro Daimon"
 value = 26
 
 [State 180, Victory Quote Vs. Hwa]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Hwa" || Enemy, Name = "Hwa Jai" 
+trigger1 = Enemy, Name = "Hwa" || Enemy, Name = "Hwa Jai" 
 value = 27
 
 [State 180, Victory Quote Vs. Iori]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Iori" || Enemy, Name = "Iori Yagami" 
+trigger1 = Enemy, Name = "Iori" || Enemy, Name = "Iori Yagami" 
 value = 28
 
 [State 180, Victory Quote Vs. Joe/Sagat]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Joe" || Enemy, Name = "Joe Higashi" || Enemy, Name = "Sagat"
+trigger1 = Enemy, Name = "Joe" || Enemy, Name = "Joe Higashi" || Enemy, Name = "Sagat"
 value = 29
 
 [State 180, Victory Quote Vs. K']
 type = VictoryQuote
-trigger1 =  Enemy, Name = "K" || Enemy, Name = "K'" 
+trigger1 = Enemy, Name = "K" || Enemy, Name = "K'" 
 value = 30
 
 [State 180, Victory Quote Vs. Kyo]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Kyo" || Enemy, Name = "Kyo Kusanagi" 
+trigger1 = Enemy, Name = "Kyo" || Enemy, Name = "Kyo Kusanagi" 
 value = 31
 
 [State 180, Victory Quote Vs. Kusanagi]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Kusanagi" 
+trigger1 = Enemy, Name = "Kusanagi" 
 value = 32
 
 [State 180, Victory Quote Vs. Leona]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Leona" || Enemy, Name = "Leona Heidern" 
+trigger1 = Enemy, Name = "Leona" || Enemy, Name = "Leona Heidern" 
 value = 33
 
 [State 180, Victory Quote Vs. Maxima]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Maxima" 
+trigger1 = Enemy, Name = "Maxima" 
 value = 34
 
 [State 180, Victory Quote Vs. Mr.Karate]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Mr.Karate" || Enemy, Name = "Mr Karate" || Enemy, Name = "MrKarate"
+trigger1 = Enemy, Name = "Mr.Karate" || Enemy, Name = "Mr Karate" || Enemy, Name = "MrKarate"
 value = 35
 
 [State 180, Victory Quote Vs. Raiden]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Raiden" || Enemy, Name = "cvsraiden" 
+trigger1 = Enemy, Name = "Raiden" || Enemy, Name = "cvsraiden" 
 value = 36
 
 [State 180, Victory Quote Vs. Saiki]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Saiki" 
+trigger1 = Enemy, Name = "Saiki" 
 value = 37
 
 [State 180, Victory Quote Vs. Shen]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Shen" || Enemy, Name = "Shen Woo" 
+trigger1 = Enemy, Name = "Shen" || Enemy, Name = "Shen Woo" 
 value = 38
 
 [State 180, Victory Quote Vs. Terry]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Terry" || Enemy, Name = "Terry Bogard" 
+trigger1 = Enemy, Name = "Terry" || Enemy, Name = "Terry Bogard" 
 value = 39
 
 [State 180, Victory Quote Vs. Vice]
 type = VictoryQuote
-trigger1 =  Enemy, Name = "Vice" 
+trigger1 = Enemy, Name = "Vice" 
 value = 40
 
 [State 180, 1]
@@ -3641,214 +3641,214 @@ waveform = sine
 ;//==
 ;sys::-2::partners_standby ; ???????
 [state 0]
-	type=selfstate
-	value=190190
-	ctrl=0
-	;;---
-	triggerall=!ishelper && numpartner && roundstate=2 && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
-	triggerall=(stateno!=[190190,190199]) && playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(22)=4
-	;;---// switch / change ;(??)
-	trigger1=sysfvar(4)<1 && ( ctrl || (time<2 && stateno<600) ) && playerid(floor(sysfvar(0))),var(48)=11
-	trigger1=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
-	;;---// assist ;(??)
-	trigger2=sysfvar(4)=1 && ( ctrl || (stateno-playerid(floor(sysfvar(0))),var(53+id-playerid(floor(sysfvar(0))),sysvar(0))!=[0,999]) )
-	trigger2=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
-	;;---// switch-canceling ;(??????)
-	trigger3=sysfvar(4)=2 && ( ctrl || stateno<160 )
-	trigger3=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
-	;;---// player-priority ;(??)
-	trigger4=sysfvar(4)<1 && playerid(floor(sysfvar(0))),var(15)!=id
-	;;---
-	ignorehitpause=1
+ type=selfstate
+ value=190190
+ ctrl=0
+ ;;---
+ triggerall=!ishelper && numpartner && roundstate=2 && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
+ triggerall=(stateno!=[190190,190199]) && playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(22)=4
+ ;;---// switch / change ;(??)
+ trigger1=sysfvar(4)<1 && ( ctrl || (time<2 && stateno<600) ) && playerid(floor(sysfvar(0))),var(48)=11
+ trigger1=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
+ ;;---// assist ;(??)
+ trigger2=sysfvar(4)=1 && ( ctrl || (stateno-playerid(floor(sysfvar(0))),var(53+id-playerid(floor(sysfvar(0))),sysvar(0))!=[0,999]) )
+ trigger2=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
+ ;;---// switch-canceling ;(??????)
+ trigger3=sysfvar(4)=2 && ( ctrl || stateno<160 )
+ trigger3=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
+ ;;---// player-priority ;(??)
+ trigger4=sysfvar(4)<1 && playerid(floor(sysfvar(0))),var(15)!=id
+ ;;---
+ ignorehitpause=1
 
 ;sys::-2::partners_change_interrupted ; ??????
 [state 0]
-	type=varset
-	trigger1=!ishelper && numpartner && roundstate=2 && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(48)=21 && sysfvar(4)<1
-	sysfvar(4)=2 ;; (0:main / 1:assist / 2:switch-canceling)
+ type=varset
+ trigger1=!ishelper && numpartner && roundstate=2 && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(48)=21 && sysfvar(4)<1
+ sysfvar(4)=2 ;; (0:main / 1:assist / 2:switch-canceling)
 
 ;sys::-2::helper::bar004 ; ?????
 [state 0]
-	type=helper
-	triggerall=!ishelper && !numhelper(90900)
-	trigger1=numpartner
-	trigger1=id<(partner,id) && partner,numhelper(90900)=0
-	trigger2=!numpartner
-	id=90900
-	stateno=90900
-	helpertype=normal
-	ownpal=1
-	size.air.front=1702252 ;; <<-version
-	size.height=0
-	ignorehitpause=1
-	supermovetime=88888
-	pausemovetime=88888
-	pos=0,88888
+ type=helper
+ triggerall=!ishelper && !numhelper(90900)
+ trigger1=numpartner
+ trigger1=id<(partner,id) && partner,numhelper(90900)=0
+ trigger2=!numpartner
+ id=90900
+ stateno=90900
+ helpertype=normal
+ ownpal=1
+ size.air.front=1702252 ;; <<-version
+ size.height=0
+ ignorehitpause=1
+ supermovetime=88888
+ pausemovetime=88888
+ pos=0,88888
 
 ;sys::-2::get_helper::bar004_id ; ID??
 [state 0]
-	type=varset
-	trigger1=!ishelper && numhelper(90900)
-	trigger1=(helper(90900),var(0)=90900) && (sysfvar(0)!=helper(90900),id)
-	sysfvar(0)=(helper(90900),id)
+ type=varset
+ trigger1=!ishelper && numhelper(90900)
+ trigger1=(helper(90900),var(0)=90900) && (sysfvar(0)!=helper(90900),id)
+ sysfvar(0)=(helper(90900),id)
 ;sys::-2::get_players_id2
 [state 0]
-	type=varset
-	trigger1=!ishelper && numpartner
-	trigger1=!numhelper(90900) && (partner,numhelper(90900)) && (sysfvar(0)!=(partner,sysfvar(0)))
-	sysfvar(0)=(partner,sysfvar(0))
+ type=varset
+ trigger1=!ishelper && numpartner
+ trigger1=!numhelper(90900) && (partner,numhelper(90900)) && (sysfvar(0)!=(partner,sysfvar(0)))
+ sysfvar(0)=(partner,sysfvar(0))
 
 ;sys::-2::bk/jd_system ; ?????/????D
 [state 0]
-	type=hitoverride
-	trigger1=(numprojid(195502)||numprojid(195503)) && !ishelper && roundstate=2 && alive && (ctrl || stateno=52)
-	attr=sca,na,sa,ha,np,sp,hp
-	stateno=195500
-	time=1
-	ignorehitpause=1
+ type=hitoverride
+ trigger1=(numprojid(195502)||numprojid(195503)) && !ishelper && roundstate=2 && alive && (ctrl || stateno=52)
+ attr=sca,na,sa,ha,np,sp,hp
+ stateno=195500
+ time=1
+ ignorehitpause=1
 
 ;//==
 ;;>>@Config.Face>>
 ;sys::-2::face_d ; portrait (?)
 [state 0]
-	type=explod
-	trigger1=!ishelper && alive && !numexplod(490600) && selfanimexist(909002)
-	trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),numexplod(490600)
-	trigger1=movetype!=h || (stateno=[120,159]) || (stateno=[5000,5199]) || (stateno=[190190,190196])
-	id=490600
-	anim=909002
-	space=screen
-	postype=left
-	facing=ifelse(teamside=1,1,-1)
-	ownpal=1
-	bindtime=-1
-	removetime=-1
-	scale=playerid(floor(sysfvar(0))),fvar(32-(id=playerid(floor(sysfvar(0))),var(15))*10), playerid(floor(sysfvar(0))),fvar(33-(id=playerid(floor(sysfvar(0))),var(15))*10)
-	pos=floor(const240p(playerid(floor(sysfvar(0))),fvar(30-(id=playerid(floor(sysfvar(0))),var(15))*10))), floor(const240p(playerid(floor(sysfvar(0))),fvar(31-(id=playerid(floor(sysfvar(0))),var(15))*10)))
-	sprpriority=floor(playerid(floor(sysfvar(0))),fvar(36-(id=playerid(floor(sysfvar(0))),var(15))*10))
-	trans=addalpha
-	alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
-	ignorehitpause=1
-	supermovetime=-1
-	pausemovetime=-1
+ type=explod
+ trigger1=!ishelper && alive && !numexplod(490600) && selfanimexist(909002)
+ trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),numexplod(490600)
+ trigger1=movetype!=h || (stateno=[120,159]) || (stateno=[5000,5199]) || (stateno=[190190,190196])
+ id=490600
+ anim=909002
+ space=screen
+ postype=left
+ facing=ifelse(teamside=1,1,-1)
+ ownpal=1
+ bindtime=-1
+ removetime=-1
+ scale=playerid(floor(sysfvar(0))),fvar(32-(id=playerid(floor(sysfvar(0))),var(15))*10), playerid(floor(sysfvar(0))),fvar(33-(id=playerid(floor(sysfvar(0))),var(15))*10)
+ pos=floor(const240p(playerid(floor(sysfvar(0))),fvar(30-(id=playerid(floor(sysfvar(0))),var(15))*10))), floor(const240p(playerid(floor(sysfvar(0))),fvar(31-(id=playerid(floor(sysfvar(0))),var(15))*10)))
+ sprpriority=floor(playerid(floor(sysfvar(0))),fvar(36-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ trans=addalpha
+ alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ ignorehitpause=1
+ supermovetime=-1
+ pausemovetime=-1
 ;sys::-2::face_d_mod
 [state 0]
-	type=removeexplod
-	trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=(playerid(floor(sysfvar(0))),var(0)=90900)
-	trigger1=(playerid(floor(sysfvar(0))),var(9)&262144) || !(playerid(floor(sysfvar(0))),var(9)&4)
-	trigger2=roundstate!=2 || (stateno=5150 && time=5 && !alive)
-	id=490600
-	ignorehitpause=1
+ type=removeexplod
+ trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900)
+ trigger1=(playerid(floor(sysfvar(0))),var(9)&262144) || !(playerid(floor(sysfvar(0))),var(9)&4)
+ trigger2=roundstate!=2 || (stateno=5150 && time=5 && !alive)
+ id=490600
+ ignorehitpause=1
 
 ;//==
 ;;>>@Config.Camera>>
 ;sys::-2::camera_nc ; ????
 [state 0]
-	type=screenbound
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
-	value=0
-	movecamera=0,0
-	ignorehitpause=1
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ movecamera=0,0
+ ignorehitpause=1
 ;sys::-2::camera_np
 [state 0]
-	type=playerpush
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
-	value=0
-	ignorehitpause=1
+ type=playerpush
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ ignorehitpause=1
 ;sys::-2::camera_nc2
 [state 0]
-	type=screenbound
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && (playerid(floor(sysfvar(0))),var(7)&65536) ;; system_switch
-	value= ((numpartner && sysfvar(4)<1) || !numpartner) ;; [def=0]
-	movecamera=0,0 ;; [x,y]
-	ignorehitpause=1
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && (playerid(floor(sysfvar(0))),var(7)&65536) ;; system_switch
+ value= ((numpartner && sysfvar(4)<1) || !numpartner) ;; [def=0]
+ movecamera=0,0 ;; [x,y]
+ ignorehitpause=1
 
 ;//==
 ;sys::-2::add.option2-noko
 [state 0] ;; opt-noko
-	type=assertspecial
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900
-	trigger1=id=playerid(floor(sysfvar(0))),var(15) && (playerid(floor(sysfvar(0))),var(9)&65536) ;; opt-noko
-	flag=noko
-	ignorehitpause=1
+ type=assertspecial
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ trigger1=id=playerid(floor(sysfvar(0))),var(15) && (playerid(floor(sysfvar(0))),var(9)&65536) ;; opt-noko
+ flag=noko
+ ignorehitpause=1
 ;sys::-2::add.option3-life-mod
 [state 0] ;; opt-life-mod
-	type=lifeadd
-	trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900
-	trigger1=id=playerid(floor(sysfvar(0))),var(15) && playerid(floor(sysfvar(0))),var(23)!=0 ;; opt-mod-life
-	value=playerid(floor(sysfvar(0))),var(23)
-	kill=0
-	ignorehitpause=1
+ type=lifeadd
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ trigger1=id=playerid(floor(sysfvar(0))),var(15) && playerid(floor(sysfvar(0))),var(23)!=0 ;; opt-mod-life
+ value=playerid(floor(sysfvar(0))),var(23)
+ kill=0
+ ignorehitpause=1
 
 ;//==
 ;// optional settings
 ;sys::-2::guard_crush_fx ; ????????
 [state 0]
-	type=palfx
-	trigger1=(stateno=150 || stateno=152) && alive && !ishelper && (gametime%5=0) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(36)>=40
-	time=2
-	add=200,0,0
+ type=palfx
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && (gametime%5=0) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(36)>=40
+ time=2
+ add=200,0,0
 ;sys::-2::guard_crush_cs
 [state 0]
-	type=changestate
-	trigger1=(stateno=150 || stateno=152) && alive && !ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(36)>=50
-	value=190010
-	ignorehitpause=1
+ type=changestate
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(36)>=50
+ value=190010
+ ignorehitpause=1
 ;;--- dizzy
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
-	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
-	value=195201 ;; (goto-dizzy:190116)
+ type=selfstate
+ trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
+ value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
 [state 0] ;[.03-2d2]
-	type=selfstate
-	trigger1=(stateno=5030 || stateno=5071) && hitshakeover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
-	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
-	value=195050
+ type=selfstate
+ trigger1=(stateno=5030 || stateno=5071) && hitshakeover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
+ value=195050
 ;;--- fadeout when KOed ; KO????
 ;sys::-2::st5150-1
 [state 0]
-	type=varset
-	trigger1=stateno=5150 && time=1 && alive=0 && !ishelper && numpartner
-	sysvar(1)=(roundstate<=2)
+ type=varset
+ trigger1=stateno=5150 && time=1 && alive=0 && !ishelper && numpartner
+ sysvar(1)=(roundstate<=2)
 ;sys::-2::st5150-2
 [state 0]
-	type=assertspecial
-	trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
-	flag=invisible
-	flag2=noshadow
+ type=assertspecial
+ trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
+ flag=invisible
+ flag2=noshadow
 ;;--- intro-pos-reset
 ;sys::-2::st5900-p3
 [state 0]
-	type=turn
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>1 && facing=ifelse(teamside=1,-1,1)
+ type=turn
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && facing=ifelse(teamside=1,-1,1)
 ;sys::-2::st5900-p4
 [state 0]
-	type=posset
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>1 && playeridexist(id-2)
-	trigger1=playerid(id-2),ishelper=0 && playerid(id-2),teamside=teamside
-	x=const240p(120)*ifelse(teamside=1,-1,1)
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && playeridexist(id-2)
+ trigger1=playerid(id-2),ishelper=0 && playerid(id-2),teamside=teamside
+ x=const240p(120)*ifelse(teamside=1,-1,1)
 ;sys::-2::st5900-p5
 [state 0]
-	type=posset
-	trigger1=stateno=5900 && time=0
-	trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
-	trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
-	x=const240p(144)*ifelse(teamside=1,-1,1)
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
+ trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
+ x=const240p(144)*ifelse(teamside=1,-1,1)
 
 ;//==
 ;// add004-sctrls-end

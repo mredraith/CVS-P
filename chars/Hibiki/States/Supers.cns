@@ -497,7 +497,7 @@ value = anim
 
 [State 3006, 5] 
 type = StateTypeSet
-trigger1 = !Time  
+trigger1 = !Time 
 trigger1 = GetHitVar(yvel) != 0 || GetHitVar(fall)
 trigger2 = Pos Y != 0
 statetype = a

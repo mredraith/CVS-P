@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Iori Yagami by Knuckles8864			 |
+;| Iori Yagami by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -21,23 +21,23 @@ st2 = States/Special.st
 st3 = States/Super.st
 st4 = States/Helpers.st
 st5 = States/NormalIori.st
-st6	= Config.txt
+st6 = Config.txt
 stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/QuickFist_IoriEXKOFXIII.act
-pal2	= Palettes/sabockee_Vice.act
-pal3	= Palettes/Quickfist_DuoLon.act
-pal4	= Palettes/Default.act
-pal5	= Palettes/QuickFist_IoriKOFXIII.act
-pal6	= Palettes/Quickfist_KulaDiamond.act
-pal7	= Palettes/Knuckles8864_KOFXIV.act
-pal8	= Palettes/Knuckles8864_Leona.act
-pal9	= Palettes/Quickfist_ShenWoo.act
-pal10	= Palettes/sabockee_KainR.Heinlein.act
-pal11	= Palettes/sabockee_DemitriSNK.act
-pal12	= Palettes/Quickfist_AshCrimson.act
+pal1 = Palettes/QuickFist_IoriEXKOFXIII.act
+pal2 = Palettes/sabockee_Vice.act
+pal3 = Palettes/Quickfist_DuoLon.act
+pal4 = Palettes/Default.act
+pal5 = Palettes/QuickFist_IoriKOFXIII.act
+pal6 = Palettes/Quickfist_KulaDiamond.act
+pal7 = Palettes/Knuckles8864_KOFXIV.act
+pal8 = Palettes/Knuckles8864_Leona.act
+pal9 = Palettes/Quickfist_ShenWoo.act
+pal10 = Palettes/sabockee_KainR.Heinlein.act
+pal11 = Palettes/sabockee_DemitriSNK.act
+pal12 = Palettes/Quickfist_AshCrimson.act
 
 ;[Arcade]
 ;intro.storyBoard = intro.def

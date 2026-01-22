@@ -1566,12 +1566,12 @@ envShake.freq=120
 
 [State 3200, fx Snd]
 type = PlaySnd
-trigger1 =  numtarget(3205)&&movehit
+trigger1 = numtarget(3205)&&movehit
 value = 1005,0
 persistent=0
 [State 3200, Explod]
 type = Explod
-trigger1 =  numtarget(3205)&&movehit
+trigger1 = numtarget(3205)&&movehit
 anim = 1025
 ID = 1025
 pos =10,-70
@@ -1982,12 +1982,12 @@ envShake.freq=120
 
 [State 3250, fx Snd]
 type = PlaySnd
-trigger1 =  numtarget(3255)&&movehit
+trigger1 = numtarget(3255)&&movehit
 value = 1005,0
 persistent=0
 [State 3250, Explod]
 type = Explod
-trigger1 =  numtarget(3255)&&movehit
+trigger1 = numtarget(3255)&&movehit
 anim = 1025
 ID = 1025
 pos =10,-70
@@ -2529,17 +2529,17 @@ p2stateno=4059
 [State 3400, Bind]
 type = TargetBind
 Trigger1 = movehit = 1 && AnimElem = 7
-pos =  (p2dist X +30),0
+pos = (p2dist X +30),0
 time = 1
 [State 3400, Bind]
 type = TargetBind
 Trigger1 = movehit = 1 && AnimElem = 8
-pos =  77,0
+pos = 77,0
 time = 1
 [State 3400, Bind]
 type = TargetBind
 Trigger1 = movehit = 1 && AnimElem = 9
-pos =  87,0
+pos = 87,0
 time = 1
 
 [State 3400, flames]
@@ -2807,17 +2807,17 @@ p2stateno=4059
 [State 3450, Bind]
 type = TargetBind
 Trigger1 = movehit = 1 && AnimElem = 7
-pos =  (p2dist X +30),0
+pos = (p2dist X +30),0
 time = 1
 [State 3450, Bind]
 type = TargetBind
 Trigger1 = movehit = 1 && AnimElem = 8
-pos =  77,0
+pos = 77,0
 time = 1
 [State 3450, Bind]
 type = TargetBind
 Trigger1 = movehit = 1 && AnimElem = 9
-pos =  87,0
+pos = 87,0
 time = 1
 
 [State 3450, flames]

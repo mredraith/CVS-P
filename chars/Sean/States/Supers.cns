@@ -557,7 +557,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = 4
@@ -1324,7 +1324,7 @@ bindtime = -1
 removetime = -1
 supermovetime = 90
 pausemovetime = 90
-scale =  0.5,0.5
+scale = 0.5,0.5
 ignorehitpause=1
 ownpal = 1
 sprpriority = 4
@@ -4259,8 +4259,8 @@ ignorehitpause = 1
 [State 3100, Hit] 
 type = HitDef
 trigger1 = !var(16) && var(15) < 18
-trigger1 =  AnimElem = 1 || AnimElem = 2 || AnimElem = 3 || AnimElem = 4 || AnimElem = 5 || AnimElem = 6
-trigger2 =  AnimElem = 7 || AnimElem = 8 || AnimElem = 9 || AnimElem = 10 || AnimElem = 11 || AnimElem = 12
+trigger1 = AnimElem = 1 || AnimElem = 2 || AnimElem = 3 || AnimElem = 4 || AnimElem = 5 || AnimElem = 6
+trigger2 = AnimElem = 7 || AnimElem = 8 || AnimElem = 9 || AnimElem = 10 || AnimElem = 11 || AnimElem = 12
 trigger3 = AnimElem = 13 || AnimElem = 14 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 10

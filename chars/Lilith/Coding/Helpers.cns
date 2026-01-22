@@ -1435,7 +1435,7 @@ physics = N
 
 [State 3250, Hit 1]
 type = HitDef
-trigger1 = AnimElem = 6  
+trigger1 = AnimElem = 6 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -1567,7 +1567,7 @@ kill = 0
 
 [State 3250, Hit 4]
 type = HitDef
-trigger1 = AnimElem = 19  
+trigger1 = AnimElem = 19 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -1655,7 +1655,7 @@ kill = 0
 
 [State 3250, Hits 6-8]
 type = HitDef
-trigger1 = AnimElem = 31 || AnimElem = 35 || AnimElem = 39  
+trigger1 = AnimElem = 31 || AnimElem = 35 || AnimElem = 39 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
 priority = 4, hit
@@ -1699,7 +1699,7 @@ kill = 0
 
 [State 3250, Final Hit]
 type = HitDef
-trigger1 = AnimElem = 47  
+trigger1 = AnimElem = 47 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 4, hit
@@ -1802,7 +1802,7 @@ alpha = ceil(256 -1.25 * time), ceil(1.25 * time)
 
 [State 3251, Hits 1&4]
 type = HitDef
-trigger1 = AnimElem = 4 || AnimElem = 14  
+trigger1 = AnimElem = 4 || AnimElem = 14 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -1846,7 +1846,7 @@ kill = 0
 
 [State 3251, Hits 2&5]
 type = HitDef
-trigger1 = AnimElem = 7 || AnimElem = 17  
+trigger1 = AnimElem = 7 || AnimElem = 17 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -1890,7 +1890,7 @@ kill = 0
 
 [State 3251, Hit 3]
 type = HitDef
-trigger1 = AnimElem = 11  
+trigger1 = AnimElem = 11 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -1934,7 +1934,7 @@ kill = 0
 
 [State 3251, Hits 6]
 type = HitDef
-trigger1 = AnimElem = 21  
+trigger1 = AnimElem = 21 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 4
 priority = 4, hit
@@ -1978,7 +1978,7 @@ kill = 0
 
 [State 3251, Hits 7-9]
 type = HitDef
-trigger1 = AnimElem = 25 || AnimElem = 29|| AnimElem = 33  
+trigger1 = AnimElem = 25 || AnimElem = 29|| AnimElem = 33 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 4
 priority = 4, hit
@@ -2022,7 +2022,7 @@ kill = 0
 
 [State 3251, Final Hit]
 type = HitDef
-trigger1 = AnimElem = 40  
+trigger1 = AnimElem = 40 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 priority = 4, hit

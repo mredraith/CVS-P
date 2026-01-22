@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Maki Genryusai by Knuckles8864		 |
+;| Maki Genryusai by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 [Info]
@@ -24,18 +24,18 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/Gogngos_Custom1.act
-pal3	= Palettes/ShimmeringBrony_Kasumi.act
-pal4	= Palettes/LEON_Custom3.act
-pal5	= Palettes/LEON_Custom2.act
-pal6	= Palettes/Gogngos_Custom2.act
-pal7	= Palettes/NDSilva_Guy.act
-pal8	= Palettes/LEON_Custom1.act
-pal9	= Palettes/Knuckles8864_KimWu.act
-pal10	= Palettes/ExL_YokoKono.act
-pal11	= Palettes/Knuckles8864_ZeroSuitSamus.act
-pal12	= Palettes/NDSilva_YuriSakazaki.act
+pal1 = Palettes/Default.act
+pal2 = Palettes/Gogngos_Custom1.act
+pal3 = Palettes/ShimmeringBrony_Kasumi.act
+pal4 = Palettes/LEON_Custom3.act
+pal5 = Palettes/LEON_Custom2.act
+pal6 = Palettes/Gogngos_Custom2.act
+pal7 = Palettes/NDSilva_Guy.act
+pal8 = Palettes/LEON_Custom1.act
+pal9 = Palettes/Knuckles8864_KimWu.act
+pal10 = Palettes/ExL_YokoKono.act
+pal11 = Palettes/Knuckles8864_ZeroSuitSamus.act
+pal12 = Palettes/NDSilva_YuriSakazaki.act
 
 [Palette Keymap]
 a = 4
@@ -49,7 +49,7 @@ b2 = 11
 c2 = 12
 x2 = 7
 y2 = 8
-z2 = 9	
+z2 = 9 
 
 ;[Arcade]
 ;intro.storyBoard = intro.def

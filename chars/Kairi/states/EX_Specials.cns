@@ -98,7 +98,7 @@ trigger1 = animelem = 4
 anim = 7502
 ID = 7502
 pos = 25,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -231,7 +231,7 @@ pausetime = 20,20
 sparkno = -1 + 0 * (var(33) := 8013)
 guard.sparkno = -1 + 0 * (var(34) := 8001)
 sparkxy = -10 + 0 * (var(35) := 59), var(36) := -33
-hitsound =  s2,13
+hitsound = s2,13
 guardsound = s2,4
 ground.type = High
 ground.slidetime = 5
@@ -654,7 +654,7 @@ trigger1 = animelem = 2
 anim = 7502
 ID = 7502
 pos = 10,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1254,7 +1254,7 @@ ID = 1422
 pos = 0,-30
 scale = 0.3, 0.2
 ownpal = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 p2facing = 1
 bindtime = -1
@@ -1271,7 +1271,7 @@ ID = 1422
 pos = 0,15
 scale = 1,.5
 ownpal = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 p2facing = 1
 bindtime = -1
@@ -1530,7 +1530,7 @@ x = .85
 
 [State 1611, 1]
 type = HitDef
-trigger1 =  AnimElem=2
+trigger1 = AnimElem=2
 attr = S, SA
 animtype = hard
 air.animtype = back
@@ -1575,7 +1575,7 @@ getpower=0,0
 
 [State 1611, 1]
 type = HitDef
-trigger1 =  AnimElem= 3
+trigger1 = AnimElem= 3
 attr = S, NA
 damage = ifelse(var(59)<=1 && power>1000,55,65), 10
 animtype = Heavy
@@ -1710,7 +1710,7 @@ anim = 1191
 ID = 3647
 pos = 15,-35
 ownpal = 1
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 p2facing = 1
 bindtime = -1

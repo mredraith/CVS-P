@@ -18,7 +18,7 @@ ignorehitpause = 1
 [State 1000, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001,  1002))
+value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001, 1002))
 
 [State 1000, Button Detect (AI)]
 type = VarSet
@@ -93,7 +93,7 @@ ctrl = 1
 ;EX Ougi Senpu Retsu Zan
 [Statedef 1050]
 type = S
-movetype =  A
+movetype = A
 physics = S
 anim = 1050
 velset = 0,0
@@ -243,7 +243,7 @@ ignorehitpause = 1
 [State 1100, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101,  1102))
+value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101, 1102))
 
 [State 1100, Button Detect (AI)]
 type = VarSet
@@ -835,7 +835,7 @@ ctrl = 1
 ;EX Ougi Kogetsu Zan
 [Statedef 1150]
 type = S
-movetype =  A
+movetype = A
 physics = N
 anim = 1150
 velset = 0,0
@@ -1332,7 +1332,7 @@ ignorehitpause = 1
 [State 1200, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1200, ifelse(var(10) = 1, 1201,  1202))
+value = ifelse(var(10) = 0, 1200, ifelse(var(10) = 1, 1201, 1202))
 
 [State 1200, Button Detect (AI)]
 type = VarSet
@@ -1556,7 +1556,7 @@ ctrl = 1
 ;EX Ougi Resshin Zan
 [Statedef 1250]
 type = S
-movetype =  A
+movetype = A
 physics = S
 anim = 1200
 velset = 0,0
@@ -1898,7 +1898,7 @@ ignorehitpause = 1
 [State 1300, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1300, ifelse(var(10) = 1, 1301,  1302))
+value = ifelse(var(10) = 0, 1300, ifelse(var(10) = 1, 1301, 1302))
 
 [State 1300, Button Detect (AI)]
 type = VarSet
@@ -2232,7 +2232,7 @@ ctrl = 1
 ;EX Ougi Dragon Tooth Start
 [Statedef 1350]
 type = S
-movetype =  A
+movetype = A
 physics = S
 anim = 1350
 velset = 0,0
@@ -2549,7 +2549,7 @@ ignorehitpause = 1
 [State 1400, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1400, ifelse(var(10) = 1, 1401,  1402))
+value = ifelse(var(10) = 0, 1400, ifelse(var(10) = 1, 1401, 1402))
 
 [State 1400, Button Detect (AI)]
 type = VarSet
@@ -2663,7 +2663,7 @@ ctrl = 1
 ;EX Sake Kougeki
 [Statedef 1450]
 type = S
-movetype =  A
+movetype = A
 physics = S
 anim = 1450
 velset = 0,0
@@ -2787,7 +2787,7 @@ attr = S, SA
 trigger1 = AnimElem = 7
 trigger2 = AnimElem = 8
 animtype = Hard
-damage  =60,10
+damage =60,10
 getpower=0,0
 givepower = 36, 36
 priority=4, hit

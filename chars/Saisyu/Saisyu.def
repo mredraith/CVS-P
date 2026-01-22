@@ -1,5 +1,5 @@
 ; _______________________________________________
-;| Saisyu Kusanagi by Lurker		         |
+;| Saisyu Kusanagi by Lurker |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====<DEFINITION>====
 
@@ -14,29 +14,29 @@ localCoord = 427,240
 
 [Files]
 movelist = movelist.dat
-cmd	= command.cmd
-cns	= Constants.cns
-stcommon	= common1.cns
-st      	= States/System.st
-st1     	= States/Normal.st
-st2     	= States/Special.st
-st3     	= States/Super.st
-st4     	= States/Helpers.st
-sprite 	= Sprite.sff
-anim 	= Anim.air
-sound 	= sound.snd
-pal1	= Palettes/original.act
-pal2	= Palettes/Dampir_Brown.act
-pal3	= Palettes/Bley43_Black.act
-pal4	= Palettes/CvS.act
-pal5	= Palettes/Bley43_Blue.act
-pal6	= Palettes/Bley43_Rajaa.act
-pal7	= Palettes/Dampir_Brown2.act
-pal8	= Palettes/Orochi.act
-pal9	= Palettes/LeafGreen.act
-pal10	= Palettes/FireRed.act
-pal11	= Palettes/QuickFist_Blue.act
-pal12	= Palettes/QuickFist_PoisonPurple.act
+cmd = command.cmd
+cns = Constants.cns
+stcommon = common1.cns
+st = States/System.st
+st1 = States/Normal.st
+st2 = States/Special.st
+st3 = States/Super.st
+st4 = States/Helpers.st
+sprite = Sprite.sff
+anim = Anim.air
+sound = sound.snd
+pal1 = Palettes/original.act
+pal2 = Palettes/Dampir_Brown.act
+pal3 = Palettes/Bley43_Black.act
+pal4 = Palettes/CvS.act
+pal5 = Palettes/Bley43_Blue.act
+pal6 = Palettes/Bley43_Rajaa.act
+pal7 = Palettes/Dampir_Brown2.act
+pal8 = Palettes/Orochi.act
+pal9 = Palettes/LeafGreen.act
+pal10 = Palettes/FireRed.act
+pal11 = Palettes/QuickFist_Blue.act
+pal12 = Palettes/QuickFist_PoisonPurple.act
 
 [Palette Keymap]
 x = 4

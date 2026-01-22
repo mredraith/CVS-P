@@ -28,7 +28,7 @@ ignorehitpause = 1
 [State 1000, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001,  1002))
+value = ifelse(var(10) = 0, 1000, ifelse(var(10) = 1, 1001, 1002))
 
 [State 1000, Button Detect (AI)]
 type = VarSet
@@ -649,7 +649,7 @@ ignorehitpause = 1
 [State 1100, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101,  1102))
+value = ifelse(var(10) = 0, 1100, ifelse(var(10) = 1, 1101, 1102))
 
 [State 1100, Button Detect (AI)]
 type = VarSet
@@ -1097,7 +1097,7 @@ type = ChangeState
 trigger1 = animtime = 0
 value = 0
 ctrl = 1
-	
+ 
 ;-------------------------------------------------------------------------------------------------------------- 
 ;EX Fat Bound
 [Statedef 1250]
@@ -2127,7 +2127,7 @@ ignorehitpause = 1
 [State 1500, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1500, ifelse(var(10) = 1, 1501,  1502))
+value = ifelse(var(10) = 0, 1500, ifelse(var(10) = 1, 1501, 1502))
 
 
 [State 1500, PlaySnd]
@@ -2286,7 +2286,7 @@ ignorehitpause = 1
 [State 1600, Anim]
 type = changeanim
 trigger1 = !time
-value = ifelse(var(10) = 0, 1600, ifelse(var(10) = 1, 1601,  1602))
+value = ifelse(var(10) = 0, 1600, ifelse(var(10) = 1, 1601, 1602))
 
 [State 1600, Button Detect (AI)]
 type = VarSet
@@ -2555,7 +2555,7 @@ value = S42,0
 type = ChangeState
 trigger1 = animtime = 0
 value = 0
-ctrl = 1 	 
+ctrl = 1 
 ;------------------------------------------------------------------------------------------
 ;EX Air Fat Chainsaw
 [Statedef 1650]

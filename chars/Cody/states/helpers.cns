@@ -570,7 +570,7 @@ alpha = 256-(time*8),time*8
 [State 8200, Destroy]
 type = DestroySelf
 trigger1 = time = 32
-	 
+ 
 ;-----------
 [Statedef 1050]
 type = A
@@ -1279,7 +1279,7 @@ trigger2 = NumTarget && Target, Time <= 1 && !(Target,HitShakeOver)
 trigger3 = !target,hitshakeover && target,statetype = A && target, time <= 1 && numtarget
 ;trigger4 = target, statetype = L || target, pos y >= 0 || target, movetype = H
 ;trigger5 = pos y > -vel y
-;trigger4 = root,numhelper(15000)	 
+;trigger4 = root,numhelper(15000) 
 
 ;------------------------Á?Å?Q
 [Statedef 1070]
@@ -1569,7 +1569,7 @@ var(40) = 16
 
 [State 0, end]
 type = Destroyself
-trigger1 = Time >15  
+trigger1 = Time >15 
 
 ;Criminal Upper
 [Statedef 1150]
@@ -2594,7 +2594,7 @@ persistent = 1
 
 [State 0, Hit]
 type = hitdef
-trigger1 =  (root, numtarget(3000)) || (root, numtarget(1100)) || (root, numtarget(1200)) || (root, numtarget(1101)) || (!var(4) && var(2) < 1) || (root, numtarget(555))
+trigger1 = (root, numtarget(3000)) || (root, numtarget(1100)) || (root, numtarget(1200)) || (root, numtarget(1101)) || (!var(4) && var(2) < 1) || (root, numtarget(555))
 trigger1 = !var(20)
 trigger2 = var(20) < 7 && time >= 4
 priority = 4, Hit

@@ -3,7 +3,7 @@
 ; Bank 0 - mono
 
 [FNT v2]
-; FNT v2 version number.  Don't change this.
+; FNT v2 version number. Don't change this.
 fntversion = 2,00
 ; Name of this font.
 name = "font2"
@@ -15,13 +15,13 @@ name = "font2"
 Type = bitmap
 ; Bank numbers are mapped to palette numbers (0, bank).
 BankType = palette
-; Size of font: width, height.  Width is used for spaces.
+; Size of font: width, height. Width is used for spaces.
 Size = 5,8
 ; Spacing between font glyphs: width, height.
 Spacing = 0,2
 ; Drawing offset: x, y.
 Offset = 0,0
-; Filename of the sff containing the glyphs.  Use sff v2 only.
+; Filename of the sff containing the glyphs. Use sff v2 only.
 File = font2.sff
 
 ; Note: All units are in pixels.

@@ -44,7 +44,7 @@ mapset{map: "_pots_stagecamera_cfg_camera_min_zoomout"; value: 1.0}	# Adjust min
 # Experimental features
 # Enabling these will make the code estimate the ideal camera parameters for each stage
 
-mapset{map: "_pots_stagecamera_cfg_toggle_experimental"; value: 1}		# Enable to allow changing the parameters in this group
+mapset{map: "_pots_stagecamera_cfg_toggle_experimental"; value: 0}		# Enable to allow changing the parameters in this group
 mapset{map: "_pots_stagecamera_cfg_auto_floortension"; value: 1}		# Adjust floortension and verticalfollow automatically to stage dimensions
 mapset{map: "_pots_stagecamera_cfg_auto_tensionhigh"; value: 1}			# Force zooming stages to use tensionhigh and tensionlow instead of floortension
 mapset{map: "_pots_stagecamera_cfg_auto_forcezoom"; value: 0}			# Force zoom in stages without it. Breaks deltas. Works better in widescreen

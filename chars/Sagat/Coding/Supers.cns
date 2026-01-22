@@ -819,7 +819,7 @@ x = 0.825
 [State 3200, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
 priority = 4, hit
@@ -865,7 +865,7 @@ envShake.freq = 120
 [State 3200, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
 priority = 4, hit
@@ -911,7 +911,7 @@ envShake.freq = 120
 [State 3200, Hits 3&4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 5 || AnimElem = 6  
+trigger1 = AnimElem = 5 || AnimElem = 6 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
 priority = 4, hit
@@ -957,7 +957,7 @@ envShake.freq = 120
 [State 3200, Hit 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 = AnimElem = 9  
+trigger1 = AnimElem = 9 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
 priority = 4, hit
@@ -1335,7 +1335,7 @@ x = 0.95
 [State 3250, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 3  
+trigger1 = AnimElem = 3 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -1381,7 +1381,7 @@ envShake.freq = 120
 [State 3250, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
 priority = 4, hit
@@ -1427,7 +1427,7 @@ envShake.freq = 120
 [State 3250, Hit 3&4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 5 || AnimElem = 6  
+trigger1 = AnimElem = 5 || AnimElem = 6 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
 priority = 4, hit
@@ -1473,7 +1473,7 @@ envShake.freq = 120
 [State 3250, Hits 5&6]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 9  || AnimElem = 10
+trigger1 = AnimElem = 9 || AnimElem = 10
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -1885,7 +1885,7 @@ y = 0
 [State 3300, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 5  
+trigger1 = AnimElem = 5 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 7
 priority = 4, hit
@@ -1931,7 +1931,7 @@ envShake.freq = 120
 [State 3300, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 11  
+trigger1 = AnimElem = 11 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 7
 priority = 4, hit
@@ -1977,7 +1977,7 @@ envShake.freq = 120
 [State 3300, Hits 3-5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 = AnimElem = 16 || AnimElem = 17 || AnimElem = 18  
+trigger1 = AnimElem = 16 || AnimElem = 17 || AnimElem = 18 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
 priority = 4, hit
@@ -2023,7 +2023,7 @@ envShake.freq = 120
 [State 3300, Hit 6]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 = AnimElem = 19  
+trigger1 = AnimElem = 19 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 priority = 4, hit
@@ -2187,7 +2187,7 @@ channel = 2
 
 [State 3350, Flames Ignite Snd]
 type = PlaySnd
-trigger1 = AnimElem = 21  
+trigger1 = AnimElem = 21 
 value = 1000,1
 channel = 2
 
@@ -2259,7 +2259,7 @@ y = 0
 [State 3350, Hit 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 5  
+trigger1 = AnimElem = 5 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 7
 priority = 4, hit
@@ -2305,7 +2305,7 @@ envShake.freq = 120
 [State 3350, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 11  
+trigger1 = AnimElem = 11 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 7
 priority = 4, hit
@@ -2351,7 +2351,7 @@ envShake.freq = 120
 [State 3350, Hit 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 17  
+trigger1 = AnimElem = 17 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 7
 priority = 4, hit
@@ -2397,7 +2397,7 @@ envShake.freq = 120
 [State 3350, Hits 4-7]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 = AnimElem = 22 || AnimElem = 23 || AnimElem = 24  
+trigger1 = AnimElem = 22 || AnimElem = 23 || AnimElem = 24 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 priority = 4, hit
@@ -2443,7 +2443,7 @@ envShake.freq = 120
 [State 3300, Hit 8]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 = AnimElem = 25  
+trigger1 = AnimElem = 25 
 attr = A, HA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 priority = 4, hit
@@ -2660,7 +2660,7 @@ x = 5.5
 [State 3400, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 4  
+trigger1 = AnimElem = 4 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 ID = 3400
@@ -2825,7 +2825,7 @@ ignorehitpause= 1
 
 [State 3401, Hit Knee]
 type = HitDef
-trigger1 = AnimElem = 13  
+trigger1 = AnimElem = 13 
 attr = S, HA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
 ID = 3402
@@ -2868,7 +2868,7 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 18
 envshake.ampl = 6
 envShake.freq = 120
-;mindist = 50,-80            
+;mindist = 50,-80 
 ;maxdist = 100,-10
 kill = 0
 snap = 70,-25 ;a sort of binding/placement feature when hitting p2 it seems, kinda like targetbind
