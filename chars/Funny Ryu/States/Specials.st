@@ -1030,7 +1030,7 @@ var(10) = 3
 [State 1250, veladd]
 type = veladd
 trigger1 = animelem = 1
-x = ifElse(vel x >= 0, 0.8, -0.8)
+x = ifElse(vel x >= 0, 8, -8)
 y = ifElse(vel y <= 0, (-2 - var(10)) * 0.225, (2 + var(10))* 0.2)
 
 [State 1250, Snd]
