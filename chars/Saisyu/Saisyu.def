@@ -9,7 +9,7 @@ displayname = "Saisyu"
 versiondate = 09,06,2015
 mugenversion = 1.0
 author = "Lurker"
-pal.defaults= 4,5,6,7,1,2,3,8
+pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
 localCoord = 427,240
 
 [Files]
@@ -25,10 +25,10 @@ st4 = States/Helpers.st
 sprite = Sprite.sff
 anim = Anim.air
 sound = sound.snd
-pal1 = Palettes/original.act
-pal2 = Palettes/Dampir_Brown.act
-pal3 = Palettes/Bley43_Black.act
-pal4 = Palettes/CvS.act
+pal1 = Palettes/CvS.act
+pal2 = Palettes/original.act
+pal3 = Palettes/Dampir_Brown.act
+pal4 = Palettes/Bley43_Black.act
 pal5 = Palettes/Bley43_Blue.act
 pal6 = Palettes/Bley43_Rajaa.act
 pal7 = Palettes/Dampir_Brown2.act

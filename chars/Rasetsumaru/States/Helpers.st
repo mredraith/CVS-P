@@ -3444,7 +3444,7 @@ trigger1 = Time >= 40
 
 
 
-;SUPER FINISH>=
+;SUPER FINISH
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -3509,6 +3509,11 @@ var(0) = 6
 type = VarSet
 trigger1= !Time && Root, var(23) = [3500,3599]
 var(0) = 7
+
+[State 8600, Move Name: Hard Slash]
+type = VarSet
+trigger1= !Time && Root, var(23) = [220,220]
+var(0) = 8
 
 [State 8600, Super Finish Explod]
 type = Explod
