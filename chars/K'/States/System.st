@@ -6137,22 +6137,22 @@ trigger1 = var(20) && (StateNo = [200,699])
 trigger2 = var(20) && (StateNo = [1000,2999]) && (MoveContact || var(18))
 trigger3 = (StateNo = [200,699]) && Time <= 2
 trigger4 = StateNo = 200 && MoveContact
-trigger4 = StateNo = 210 && MoveContact
-trigger5 = StateNo = 219 && MoveContact && MoveContact = [1,8]
-trigger6 = StateNo = 220 && MoveContact && MoveContact = [1,8]
-trigger7 = StateNo = 225 && MoveContact && MoveContact = [1,8]
-trigger8 = StateNo = 230 && MoveContact
-trigger9 = StateNo = 245 && MoveContact && MoveContact = [1,8]
-trigger10 = StateNo = 248 && MoveContact && MoveContact = [1,8]
-trigger11 = StateNo = 249 && MoveContact && MoveContact = [1,8]
-trigger12 = StateNo = 400 && MoveContact
-trigger12 = StateNo = 410 && MoveContact
-trigger13 = StateNo = 420 && MoveContact && MoveContact = [1,8]
-trigger14 = StateNo = 430 && MoveContact
-trigger14 = StateNo = 440 && MoveContact
-trigger15 = StateNo = 450 && MoveContact && MoveContact = [1,8]
-trigger16 = StateNo = 458 && MoveContact && MoveContact = [1,8]
-trigger17 = StateNo = 459 && MoveContact && MoveContact = [1,8]
+trigger5 = StateNo = 210 && MoveContact
+trigger6 = StateNo = 219 && MoveContact && MoveContact = [1,8]
+trigger7 = StateNo = 220 && MoveContact && MoveContact = [1,8]
+trigger8 = StateNo = 225 && MoveContact && MoveContact = [1,8]
+trigger9 = StateNo = 230 && MoveContact
+trigger10 = StateNo = 245 && MoveContact && MoveContact = [1,8]
+trigger11 = StateNo = 248 && MoveContact && MoveContact = [1,8]
+trigger12 = StateNo = 249 && MoveContact && MoveContact = [1,8]
+trigger13 = StateNo = 400 && MoveContact
+trigger14 = StateNo = 410 && MoveContact
+trigger15 = StateNo = 420 && MoveContact && MoveContact = [1,8]
+trigger16 = StateNo = 430 && MoveContact
+trigger17 = StateNo = 440 && MoveContact
+trigger18 = StateNo = 450 && MoveContact && MoveContact = [1,8]
+trigger19 = StateNo = 458 && MoveContact && MoveContact = [1,8]
+trigger20 = StateNo = 459 && MoveContact && MoveContact = [1,8]
 var(6) = 1
 ignoreHitPause = 1
 
@@ -6183,21 +6183,21 @@ trigger9 = StateNo = 245 && MoveContact && MoveContact = [1,8]
 trigger10 = StateNo = 248 && MoveContact && MoveContact = [1,8]
 trigger11 = StateNo = 249 && MoveContact && MoveContact = [1,8]
 trigger12 = StateNo = 400 && MoveContact
-trigger12 = StateNo = 410 && MoveContact
-trigger13 = StateNo = 420 && MoveContact && MoveContact = [1,8]
-trigger14 = StateNo = 430 && MoveContact
-trigger12 = StateNo = 440 && MoveContact
-trigger15 = StateNo = 450 && MoveContact && MoveContact = [1,8]
-trigger16 = StateNo = 458 && MoveContact && MoveContact = [1,8]
-trigger17 = StateNo = 459 && MoveContact && MoveContact = [1,8]
-trigger18 = StateNo = 1100 && MoveContact && AnimElemTime(5) < 0
-trigger29 = StateNo = 1130 && MoveContact && AnimElemTime(15) < 0
-trigger20 = StateNo = 1200 && MoveContact && AnimElemTime(7) < 0
-trigger21 = StateNo = 1230 && MoveContact && AnimElemTime(7) < 0
-trigger22 = StateNo = 1250 && MoveContact && AnimElemTime(8) < 0
-trigger23 = StateNo = 1280 && MoveContact && AnimElemTime(8) < 0
-trigger24 = StateNo = 1300 && MoveContact && AnimElemTime(6) < 0
-trigger25 = StateNo = 1330 && MoveContact && AnimElemTime(6) < 0
+trigger13 = StateNo = 410 && MoveContact
+trigger14 = StateNo = 420 && MoveContact && MoveContact = [1,8]
+trigger15 = StateNo = 430 && MoveContact
+trigger16 = StateNo = 440 && MoveContact
+trigger17 = StateNo = 450 && MoveContact && MoveContact = [1,8]
+trigger18 = StateNo = 458 && MoveContact && MoveContact = [1,8]
+trigger19 = StateNo = 459 && MoveContact && MoveContact = [1,8]
+trigger20 = StateNo = 1100 && MoveContact && AnimElemTime(5) < 0
+trigger21 = StateNo = 1130 && MoveContact && AnimElemTime(15) < 0
+trigger22 = StateNo = 1200 && MoveContact && AnimElemTime(7) < 0
+trigger23 = StateNo = 1230 && MoveContact && AnimElemTime(7) < 0
+trigger24 = StateNo = 1250 && MoveContact && AnimElemTime(8) < 0
+trigger25 = StateNo = 1280 && MoveContact && AnimElemTime(8) < 0
+trigger26 = StateNo = 1300 && MoveContact && AnimElemTime(6) < 0
+trigger27 = StateNo = 1330 && MoveContact && AnimElemTime(6) < 0
 var(7) = 1
 ignoreHitPause = 1
 
