@@ -1,5 +1,5 @@
 {
-  "playtime": 2438.34,
+  "playtime": 2668.7,
   "modes": {
     "training": {
       "playtime": 0,
@@ -10,7 +10,7 @@
       }
     },
     "freebattle": {
-      "playtime": 1383.48,
+      "playtime": 1553.82,
       "clear": 5,
       "clearcount": {
         "sagat": 1,
@@ -19,7 +19,7 @@
       }
     },
     "arcade": {
-      "playtime": 384.45,
+      "playtime": 434.12,
       "clear": 0,
       "ranking": [
         {
@@ -74,6 +74,19 @@
           ],
           "tmode": 0,
           "ailevel": 8
+        },
+        {
+          "score": 1100,
+          "time": 49.67,
+          "win": 0,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "AAA",
+          "chars": [
+            "rasetsumaru"
+          ],
+          "tmode": 0,
+          "ailevel": 8
         }
       ]
     },
@@ -87,7 +100,7 @@
       }
     },
     "versus": {
-      "playtime": 0,
+      "playtime": 10.35,
       "clear": 0
     }
   }

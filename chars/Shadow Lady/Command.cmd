@@ -3130,18 +3130,6 @@ trigger2 = var(6)
 type = ChangeState
 value = 1130
 triggerAll = !AILevel
-;a + b / a + c / b + c
-triggerAll = (ifElse(NumExplod(90000230), 1, 0) + ifElse(NumExplod(90000240), 1, 0) + ifElse(NumExplod(90000250), 1, 0) >= 2) || (ifElse(NumExplod(90000235), 1, 0) + ifElse(NumExplod(90000245), 1, 0) + ifElse(NumExplod(90000255), 1, 0) >= 2)
-triggerAll = var(45) >= 4
-triggerAll = RoundState = 2 && StateType != A && !NumProjID(131035)
-triggerAll = power >= 500 && var(20) <= 60
-trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(6)
-
-[State -1, EX Hyakuretsukyaku (HCF + 2 kicks)]
-type = ChangeState
-value = 1130
-triggerAll = !AILevel
 ;command = "HCF"
 triggerAll = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90010006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90010104))
 ;a + b / a + c / b + c
@@ -3189,17 +3177,6 @@ trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(6)
 
 [State -1, Hyakuretsukyaku]
-type = ChangeState
-value = 1100
-triggerAll = !AILevel
-;a / b / c
-triggerAll = NumExplod(90000230) || NumExplod(90000235) || NumExplod(90000240) || NumExplod(90000245) || NumExplod(90000250) || NumExplod(90000255)
-triggerAll = var(45) >= 4
-triggerAll = RoundState = 2 && StateType != A && !NumProjID(131035)
-trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(6)
-
-[State -1, Hyakuretsukyaku (HCF + kick)]
 type = ChangeState
 value = 1100
 triggerAll = !AILevel

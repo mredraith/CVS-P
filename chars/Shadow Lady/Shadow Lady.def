@@ -20,7 +20,6 @@ st1 = States/Normal.st
 st2 = States/Special.st
 st3 = States/Super.st
 st4 = States/Helpers.st
-st5 = Palette Configuration/ShadowLady.txt
 stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air

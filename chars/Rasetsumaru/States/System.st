@@ -4026,6 +4026,8 @@ trigger7 = (StateNo = [3500,3599])
 trigger7 = var(23) := 3500
 trigger8 = (StateNo = [3600,3699])
 trigger8 = var(23) := 3600
+trigger9 = (StateNo = [220,220])
+trigger9 = var(23) := 220
 helperType = Normal
 stateNo = 8600
 ID = 8600

@@ -1,5 +1,4 @@
 ; Standing Light Punch
-; CNS difficulty: easy
 [Statedef 200]
 type = S
 movetype= A
@@ -83,7 +82,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
-;CNS Difficulty: easy
 [Statedef 210]
 type = S
 movetype= A
@@ -216,7 +214,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Standing Strong Punch
-; CNS difficulty: easy
 [Statedef 220]
 type = S
 movetype= A
@@ -348,7 +345,6 @@ value = 0
 ctrl = 1
 
 ; Push Back(dodge attack)
-; CNS difficulty: easy
 [Statedef 221]
 type = S
 movetype= A
@@ -424,7 +420,6 @@ value = 0
 ctrl = 1
 
 ; Z-Counter Push
-; CNS difficulty: easy
 [Statedef 222]
 type = S
 movetype= A
@@ -506,7 +501,6 @@ value = 0
 ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
-; CNS difficulty: easy
 [Statedef 230]
 type = S
 movetype= A
@@ -590,7 +584,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Standing Medium Kick
-; CNS difficulty: easy
 [Statedef 240]
 type = S
 movetype= A
@@ -723,7 +716,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Strong Kick
-; CNS difficulty: easy
 [Statedef 250]
 type = S
 movetype= A

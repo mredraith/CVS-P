@@ -3513,7 +3513,7 @@ var(0) = 7
 [State 8600, Move Name: Hard Slash]
 type = VarSet
 trigger1= !Time && Root, var(23) = [220,220]
-var(0) = 8
+var(0) = 9
 
 [State 8600, Super Finish Explod]
 type = Explod
