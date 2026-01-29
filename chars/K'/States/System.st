@@ -6137,6 +6137,7 @@ trigger1 = var(20) && (StateNo = [200,699])
 trigger2 = var(20) && (StateNo = [1000,2999]) && (MoveContact || var(18))
 trigger3 = (StateNo = [200,699]) && Time <= 2
 trigger4 = StateNo = 200 && MoveContact
+trigger4 = StateNo = 210 && MoveContact
 trigger5 = StateNo = 219 && MoveContact && MoveContact = [1,8]
 trigger6 = StateNo = 220 && MoveContact && MoveContact = [1,8]
 trigger7 = StateNo = 225 && MoveContact && MoveContact = [1,8]
@@ -6145,8 +6146,10 @@ trigger9 = StateNo = 245 && MoveContact && MoveContact = [1,8]
 trigger10 = StateNo = 248 && MoveContact && MoveContact = [1,8]
 trigger11 = StateNo = 249 && MoveContact && MoveContact = [1,8]
 trigger12 = StateNo = 400 && MoveContact
+trigger12 = StateNo = 410 && MoveContact
 trigger13 = StateNo = 420 && MoveContact && MoveContact = [1,8]
 trigger14 = StateNo = 430 && MoveContact
+trigger14 = StateNo = 440 && MoveContact
 trigger15 = StateNo = 450 && MoveContact && MoveContact = [1,8]
 trigger16 = StateNo = 458 && MoveContact && MoveContact = [1,8]
 trigger17 = StateNo = 459 && MoveContact && MoveContact = [1,8]
@@ -6180,8 +6183,10 @@ trigger9 = StateNo = 245 && MoveContact && MoveContact = [1,8]
 trigger10 = StateNo = 248 && MoveContact && MoveContact = [1,8]
 trigger11 = StateNo = 249 && MoveContact && MoveContact = [1,8]
 trigger12 = StateNo = 400 && MoveContact
+trigger12 = StateNo = 410 && MoveContact
 trigger13 = StateNo = 420 && MoveContact && MoveContact = [1,8]
 trigger14 = StateNo = 430 && MoveContact
+trigger12 = StateNo = 440 && MoveContact
 trigger15 = StateNo = 450 && MoveContact && MoveContact = [1,8]
 trigger16 = StateNo = 458 && MoveContact && MoveContact = [1,8]
 trigger17 = StateNo = 459 && MoveContact && MoveContact = [1,8]
