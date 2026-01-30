@@ -8,68 +8,68 @@ local menu = {}
 -- Can be appended via external module.
 menu.t_valuename = {
 	dummycontrol = {
-		{itemname = 'cooperative', displayname = motif.training_info.menu.valuename.dummycontrol_cooperative},
-		{itemname = 'ai', displayname = motif.training_info.menu.valuename.dummycontrol_ai},
-		{itemname = 'manual', displayname = motif.training_info.menu.valuename.dummycontrol_manual},
+		{itemname = 'cooperative', displayname = motif.pause_menu.training_pause_menu.menu.valuename.dummycontrol_cooperative},
+		{itemname = 'ai', displayname = motif.pause_menu.training_pause_menu.menu.valuename.dummycontrol_ai},
+		{itemname = 'manual', displayname = motif.pause_menu.training_pause_menu.menu.valuename.dummycontrol_manual},
 	},
 	ailevel = {
-		{itemname = '1', displayname = motif.training_info.menu.valuename.ailevel_1},
-		{itemname = '2', displayname = motif.training_info.menu.valuename.ailevel_2},
-		{itemname = '3', displayname = motif.training_info.menu.valuename.ailevel_3},
-		{itemname = '4', displayname = motif.training_info.menu.valuename.ailevel_4},
-		{itemname = '5', displayname = motif.training_info.menu.valuename.ailevel_5},
-		{itemname = '6', displayname = motif.training_info.menu.valuename.ailevel_6},
-		{itemname = '7', displayname = motif.training_info.menu.valuename.ailevel_7},
-		{itemname = '8', displayname = motif.training_info.menu.valuename.ailevel_8},
+		{itemname = '1', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_1},
+		{itemname = '2', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_2},
+		{itemname = '3', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_3},
+		{itemname = '4', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_4},
+		{itemname = '5', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_5},
+		{itemname = '6', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_6},
+		{itemname = '7', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_7},
+		{itemname = '8', displayname = motif.pause_menu.training_pause_menu.menu.valuename.ailevel_8},
 	},
 	dummymode = {
-		{itemname = 'stand', displayname = motif.training_info.menu.valuename.dummymode_stand},
-		{itemname = 'crouch', displayname = motif.training_info.menu.valuename.dummymode_crouch},
-		{itemname = 'jump', displayname = motif.training_info.menu.valuename.dummymode_jump},
-		{itemname = 'wjump', displayname = motif.training_info.menu.valuename.dummymode_wjump},
+		{itemname = 'stand', displayname = motif.pause_menu.training_pause_menu.menu.valuename.dummymode_stand},
+		{itemname = 'crouch', displayname = motif.pause_menu.training_pause_menu.menu.valuename.dummymode_crouch},
+		{itemname = 'jump', displayname = motif.pause_menu.training_pause_menu.menu.valuename.dummymode_jump},
+		{itemname = 'wjump', displayname = motif.pause_menu.training_pause_menu.menu.valuename.dummymode_wjump},
 	},
 	guardmode = {
-		{itemname = 'none', displayname = motif.training_info.menu.valuename.guardmode_none},
-		{itemname = 'auto', displayname = motif.training_info.menu.valuename.guardmode_auto},
-		{itemname = 'all', displayname = motif.training_info.menu.valuename.guardmode_all},
-		{itemname = 'random', displayname = motif.training_info.menu.valuename.guardmode_random},
+		{itemname = 'none', displayname = motif.pause_menu.training_pause_menu.menu.valuename.guardmode_none},
+		{itemname = 'auto', displayname = motif.pause_menu.training_pause_menu.menu.valuename.guardmode_auto},
+		{itemname = 'all', displayname = motif.pause_menu.training_pause_menu.menu.valuename.guardmode_all},
+		{itemname = 'random', displayname = motif.pause_menu.training_pause_menu.menu.valuename.guardmode_random},
 	},
 	fallrecovery = {
-		{itemname = 'none', displayname = motif.training_info.menu.valuename.fallrecovery_none},
-		{itemname = 'ground', displayname = motif.training_info.menu.valuename.fallrecovery_ground},
-		{itemname = 'air', displayname = motif.training_info.menu.valuename.fallrecovery_air},
-		{itemname = 'random', displayname = motif.training_info.menu.valuename.fallrecovery_random},
+		{itemname = 'none', displayname = motif.pause_menu.training_pause_menu.menu.valuename.fallrecovery_none},
+		{itemname = 'ground', displayname = motif.pause_menu.training_pause_menu.menu.valuename.fallrecovery_ground},
+		{itemname = 'air', displayname = motif.pause_menu.training_pause_menu.menu.valuename.fallrecovery_air},
+		{itemname = 'random', displayname = motif.pause_menu.training_pause_menu.menu.valuename.fallrecovery_random},
 	},
 	distance = {
-		{itemname = 'any', displayname = motif.training_info.menu.valuename.distance_any},
-		{itemname = 'close', displayname = motif.training_info.menu.valuename.distance_close},
-		{itemname = 'medium', displayname = motif.training_info.menu.valuename.distance_medium},
-		{itemname = 'far', displayname = motif.training_info.menu.valuename.distance_far},
+		{itemname = 'any', displayname = motif.pause_menu.training_pause_menu.menu.valuename.distance_any},
+		{itemname = 'close', displayname = motif.pause_menu.training_pause_menu.menu.valuename.distance_close},
+		{itemname = 'medium', displayname = motif.pause_menu.training_pause_menu.menu.valuename.distance_medium},
+		{itemname = 'far', displayname = motif.pause_menu.training_pause_menu.menu.valuename.distance_far},
 	},
 	buttonjam = {
-		{itemname = 'none', displayname = motif.training_info.menu.valuename.buttonjam_none},
-		{itemname = 'a', displayname = motif.training_info.menu.valuename.buttonjam_a},
-		{itemname = 'b', displayname = motif.training_info.menu.valuename.buttonjam_b},
-		{itemname = 'c', displayname = motif.training_info.menu.valuename.buttonjam_c},
-		{itemname = 'x', displayname = motif.training_info.menu.valuename.buttonjam_x},
-		{itemname = 'y', displayname = motif.training_info.menu.valuename.buttonjam_y},
-		{itemname = 'z', displayname = motif.training_info.menu.valuename.buttonjam_z},
-		{itemname = 's', displayname = motif.training_info.menu.valuename.buttonjam_s},
-		{itemname = 'd', displayname = motif.training_info.menu.valuename.buttonjam_d},
-		{itemname = 'w', displayname = motif.training_info.menu.valuename.buttonjam_w},
+		{itemname = 'none', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_none},
+		{itemname = 'a', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_a},
+		{itemname = 'b', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_b},
+		{itemname = 'c', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_c},
+		{itemname = 'x', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_x},
+		{itemname = 'y', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_y},
+		{itemname = 'z', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_z},
+		{itemname = 's', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_s},
+		{itemname = 'd', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_d},
+		{itemname = 'w', displayname = motif.pause_menu.training_pause_menu.menu.valuename.buttonjam_w},
 	},
 }
 
--- Shared logic for training menu option change, returns 2 values:
+-- Shared logic for pause menu option change, returns 2 values:
 -- * boolean depending if option has changed (via right/left button press)
 -- * itemname read from t_valuename table based on currently active option
 --   (or nil, if there was no option change in this frame)
 function menu.f_valueChanged(t, sec)
 	local valueitem = menu[t.itemname] or 1
 	local chk = valueitem
-	if main.f_input(main.t_players, sec.menu.add.key) then
+	if getInput(-1, sec.menu.add.key) then
 		valueitem = valueitem + 1
-	elseif main.f_input(main.t_players, sec.menu.subtract.key) then
+	elseif getInput(-1, sec.menu.subtract.key) then
 		valueitem = valueitem - 1
 	end
 	if valueitem > #menu.t_valuename[t.itemname] then
@@ -96,9 +96,9 @@ menu.itemname = ''
 menu.t_itemname = {
 	--Back
 	['back'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) then
+		if getInput(-1, sec.menu.done.key) then
 			if menu.currentMenu[1] == menu.currentMenu[2] then
-				sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
+				sndPlay(motif.Snd, sec.exit.snd[1], sec.exit.snd[2])
 				togglePause(false)
 				main.pauseMenu = false
 			else
@@ -180,7 +180,7 @@ menu.t_itemname = {
 	end,
 	--Key Config
 	['keyboard'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) --[[or getKey('F1')]] then
+		if getInput(-1, sec.menu.done.key) --[[or getKey('F1')]] then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			options.f_keyCfgInit('Keys', t.submenu[t.items[item].itemname].title)
 			menu.itemname = t.items[item].itemname
@@ -189,7 +189,7 @@ menu.t_itemname = {
 	end,
 	--Joystick Config
 	['gamepad'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) --[[or getKey('F2')]] then
+		if getInput(-1, sec.menu.done.key) --[[or getKey('F2')]] then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			options.f_keyCfgInit('Joystick', t.submenu[t.items[item].itemname].title)
 			menu.itemname = t.items[item].itemname
@@ -198,7 +198,7 @@ menu.t_itemname = {
 	end,
 	--Default
 	['inputdefault'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			options.f_keyDefault()
 			options.f_setKeyConfig('Keys')
@@ -211,7 +211,7 @@ menu.t_itemname = {
 	end,
 	--Round Reset
 	['reset'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
 			roundReset()
@@ -222,7 +222,7 @@ menu.t_itemname = {
 	end,
 	--Reload (Rematch)
 	['reload'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
 			reload()
@@ -233,7 +233,7 @@ menu.t_itemname = {
 	end,
 	--Command List
 	['commandlist'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			menu.f_commandlistParse()
 			menu.itemname = t.items[item].itemname
@@ -242,19 +242,20 @@ menu.t_itemname = {
 	end,
 	--Character Change
 	['characterchange'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
 			endMatch()
 			start.characterchange = true
 			main.pauseMenu = false
+			start.f_selectReset(false)
 			return false
 		end
 		return true
 	end,
 	--Exit
 	['exit'] = function(t, item, cursorPosY, moveTxt, sec)
-		if main.f_input(main.t_players, sec.menu.done.key) then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
 			endMatch()
@@ -277,18 +278,22 @@ end
 function menu.f_createMenu(tbl, sec, bg, bool_main)
 	return function()
 		hook.run("menu.menu.loop")
+		if menu._lastMenuTbl ~= tbl then
+			menu._lastMenuTbl = tbl
+			main.f_menuItemBgAnimReset(sec)
+		end
 		local t = tbl.items
 		if tbl.reset then
 			tbl.reset = false
-			main.f_cmdInput()
 		else
 			main.f_menuCommonDraw(t, tbl.item, tbl.cursorPosY, tbl.moveTxt, sec, bg, true)
 		end
 		tbl.cursorPosY, tbl.moveTxt, tbl.item = main.f_menuCommonCalc(t, tbl.item, tbl.cursorPosY, tbl.moveTxt, sec, sec.cursor)
 		textImgReset(sec.title.TextSpriteData)
 		textImgSetText(sec.title.TextSpriteData, tbl.title)
-		if esc() or main.f_input(main.t_players, sec.menu.cancel.key) then
+		if esc() or getInput(-1, sec.menu.cancel.key) then
 			if bool_main then
+				sndPlay(motif.Snd, sec.exit.snd[1], sec.exit.snd[2])
 				togglePause(false)
 				main.pauseMenu = false
 			else
@@ -303,7 +308,7 @@ function menu.f_createMenu(tbl, sec, bg, bool_main)
 			if not menu.t_itemname[t[tbl.item].itemname](tbl, tbl.item, tbl.cursorPosY, tbl.moveTxt, sec) then
 				return
 			end
-		elseif main.f_input(main.t_players, sec.menu.done.key) then
+		elseif getInput(-1, sec.menu.done.key) then
 			local f = t[tbl.item].itemname
 			if tbl.submenu[f].loop ~= nil then
 				sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
@@ -357,14 +362,74 @@ function menu.f_vardisplay(itemname)
 end
 
 -- Table storing arrays with data used for different pause menu types generation.
--- Can be appended via external module.
+-- Can be appended via external module but not necessary - can specify gamemode-specific [<gamemode> Pause Menu] sections in `system.def` instead.
 menu.t_menus = {
-	{id = 'menu', sec = motif.menu_info, bg = motif.menubgdef, movelist = true},
-	{id = 'training', sec = motif.training_info, bg = motif.trainingbgdef, movelist = true},
+	{id = 'menu', sec = motif.pause_menu.pause_menu, bg = motif.pausebgdef.pausebgdef, movelist = true},
+	{id = 'training', sec = motif.pause_menu.training_pause_menu, bg = motif.pausebgdef.trainingpausebgdef, movelist = true},
 }
+menu.t_menuIndex = {}
+
+local function f_pauseMenuKey(gamemodeName)
+	gamemodeName = tostring(gamemodeName or ''):lower()
+	gamemodeName = gamemodeName:gsub('%s+', '_')
+	if gamemodeName == '' then
+		return ''
+	end
+	return gamemodeName .. '_pause_menu'
+end
+
+local function f_pauseMenuIdFromKey(key)
+	key = tostring(key or ''):lower()
+	if key:sub(-11) == '_pause_menu' then
+		key = key:sub(1, -12)
+	end
+	return key
+end
+
+local function f_pauseMenuBgKey(gamemodeName)
+	gamemodeName = tostring(gamemodeName or ''):lower()
+	gamemodeName = gamemodeName:gsub('%s+', '_')
+	if gamemodeName == '' then
+		return ''
+	end
+	return gamemodeName .. 'pausebgdef'
+end
+
+local function f_registerPauseMenu(id, sec, bg, movelist)
+	if id == '' or sec == nil then
+		return
+	end
+	for i = 1, #menu.t_menus do
+		if menu.t_menus[i].id == id then
+			return
+		end
+	end
+	table.insert(menu.t_menus, {id = id, sec = sec, bg = bg, movelist = movelist})
+end
+
+local function f_indexPauseMenus()
+	menu.t_menuIndex = {}
+	for i = 1, #menu.t_menus do
+		menu.t_menuIndex[menu.t_menus[i].id] = menu.t_menus[i]
+	end
+end
 
 -- Dynamically generates all menus and submenus
 function menu.f_start()
+	if motif.pause_menu ~= nil then
+		for k, sec in pairs(motif.pause_menu) do
+			local id = f_pauseMenuIdFromKey(k)
+			if id ~= '' and id ~= 'pause_menu' then
+				local bg = motif.pausebgdef.pausebgdef
+				local bgKey = f_pauseMenuBgKey(id)
+				if bgKey ~= '' and motif.pausebgdef ~= nil and motif.pausebgdef[bgKey] ~= nil then
+					bg = motif.pausebgdef[bgKey]
+				end
+				f_registerPauseMenu(id, sec, bg, true)
+			end
+		end
+	end
+	f_indexPauseMenus()
 	for k, v in ipairs(menu.t_menus) do
 		menu[v.id] = {
 			title = main.f_itemnameUpper(v.sec.title.text, v.sec.menu.title.uppercase),
@@ -488,28 +553,50 @@ function menu.f_init()
 	togglePause(true)
 	main.pauseMenu = true
 	bgReset(motif.optionbgdef.BGDef)
-	if gamemode('training') then
-		sndPlay(motif.Snd, motif.training_info.enter.snd[1], motif.training_info.enter.snd[2])
-		bgReset(motif.trainingbgdef.BGDef)
-		main.f_fadeReset('fadein', motif.training_info)
-		menu.currentMenu = {menu.training.loop, menu.training.loop}
+	local id = f_pauseMenuIdFromKey(f_pauseMenuKey(gamemode()))
+	if id == '' or menu.t_menuIndex == nil or menu.t_menuIndex[id] == nil then
+		id = 'menu'
+	end
+	if menu.t_menuIndex ~= nil and menu.t_menuIndex[id] ~= nil then
+		local entry = menu.t_menuIndex[id]
+		sndPlay(motif.Snd, entry.sec.enter.snd[1], entry.sec.enter.snd[2])
+		bgReset(entry.bg.BGDef)
+		main.f_fadeReset('fadein', entry.sec)
+		if menu[id] ~= nil and menu[id].loop ~= nil then
+			menu.currentMenu = {menu[id].loop, menu[id].loop}
+			menu.currentMenuId = id
+		else
+			menu.currentMenu = {menu.menu.loop, menu.menu.loop}
+			menu.currentMenuId = 'menu'
+		end
 	else
-		sndPlay(motif.Snd, motif.menu_info.enter.snd[1], motif.menu_info.enter.snd[2])
-		bgReset(motif.menubgdef.BGDef)
-		main.f_fadeReset('fadein', motif.menu_info)
-		--menu.menu.cursorPosY = 1
-		--menu.menu.moveTxt = 0
-		--menu.menu.item = 1
+		sndPlay(motif.Snd, motif.pause_menu.pause_menu.enter.snd[1], motif.pause_menu.pause_menu.enter.snd[2])
+		bgReset(motif.pausebgdef.pausebgdef.BGDef)
+		main.f_fadeReset('fadein', motif.pause_menu.pause_menu)
 		menu.currentMenu = {menu.menu.loop, menu.menu.loop}
+		menu.currentMenuId = 'menu'
 	end
 end
 
 function menu.f_run()
-	local sec = motif.menu_info
-	local bg = motif.menubgdef
-	if gamemode('training') then
-		sec = motif.training_info
-		bg = motif.trainingbgdef
+	local entry = nil
+	if menu.t_menuIndex ~= nil then
+		if menu.currentMenuId ~= nil and menu.t_menuIndex[menu.currentMenuId] ~= nil then
+			entry = menu.t_menuIndex[menu.currentMenuId]
+		else
+			local id = f_pauseMenuIdFromKey(f_pauseMenuKey(gamemode()))
+			if id ~= '' and menu.t_menuIndex[id] ~= nil then
+				entry = menu.t_menuIndex[id]
+			elseif menu.t_menuIndex['menu'] ~= nil then
+				entry = menu.t_menuIndex['menu']
+			end
+		end
+	end
+	local sec = motif.pause_menu.pause_menu
+	local bg = motif.pausebgdef.pausebgdef
+	if entry ~= nil and entry.sec ~= nil and entry.bg ~= nil then
+		sec = entry.sec
+		bg = entry.bg
 	end
 	--draw overlay
 	rectDraw(sec.overlay.RectData)
@@ -561,13 +648,20 @@ function menu.f_reset()
 	-- Reset movelist selector (command list screen)
 	menu.movelistChar = 1
 	-- Reset tween caches
-	motif.menu_info.menuTweenData = nil
-	motif.menu_info.boxCursorData = nil
-	motif.training_info.menuTweenData = nil
-	motif.training_info.boxCursorData = nil
+	if menu.t_menus ~= nil then
+		for i = 1, #menu.t_menus do
+			local sec = menu.t_menus[i].sec
+			if sec ~= nil then
+				sec.menuTweenData = nil
+				sec.boxCursorData = nil
+			end
+		end
+	end
 	-- Determine which root menu is active and reset its cursor/item/scroll (and all submenus)
 	if menu.currentMenu ~= nil and menu.currentMenu[2] ~= nil then
-		if menu.training ~= nil and menu.training.loop ~= nil and menu.currentMenu[2] == menu.training.loop then
+		if menu.currentMenuId ~= nil and menu[menu.currentMenuId] ~= nil then
+			f_resetMenuState(menu[menu.currentMenuId])
+		elseif menu.training ~= nil and menu.training.loop ~= nil and menu.currentMenu[2] == menu.training.loop then
 			f_resetMenuState(menu.training)
 		else
 			f_resetMenuState(menu.menu)
@@ -712,40 +806,32 @@ function menu.f_commandlistParse()
 end
 
 function menu.f_commandlistRender(sec, t)
-	main.f_cmdInput()
 	local cmdList = {}
 	if t.commandlist ~= nil then
 		cmdList = t.commandlist
 	else
 		table.insert(cmdList, {{glyph = false, text = sec.movelist.text.text, align = 1, col = {}}})
 	end
-	if esc() or main.f_input(main.t_players, sec.menu.cancel.key) then
+	if esc() or getInput(-1, sec.menu.cancel.key, sec.menu.done.key) then
 		sndPlay(motif.Snd, sec.cancel.snd[1], sec.cancel.snd[2])
 		menu.itemname = ''
 		return
-	elseif main.f_input(main.t_players, sec.menu.done.key) then
-		sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
-		menu.itemname = ''
-		togglePause(false)
-		main.pauseMenu = false
-		menu.currentMenu[1] = menu.currentMenu[2]
-		return
-	elseif main.f_input(main.t_players, sec.menu.subtract.key) and #menu.t_movelists > 1 then
+	elseif getInput(-1, sec.menu.subtract.key) and #menu.t_movelists > 1 then
 		sndPlay(motif.Snd, sec.cursor.move.snd[1], sec.cursor.move.snd[2])
 		menu.movelistChar = menu.movelistChar - 1
 		if menu.movelistChar < 1 then
 			menu.movelistChar = #menu.t_movelists
 		end
-	elseif main.f_input(main.t_players, sec.menu.add.key) and #menu.t_movelists > 1 then
+	elseif getInput(-1, sec.menu.add.key) and #menu.t_movelists > 1 then
 		sndPlay(motif.Snd, sec.cursor.move.snd[1], sec.cursor.move.snd[2])
 		menu.movelistChar = menu.movelistChar + 1
 		if menu.movelistChar > #menu.t_movelists then
 			menu.movelistChar = 1
 		end
-	elseif main.f_input(main.t_players, sec.menu.previous.key) and t.tbl.movelistLine > 1 then
+	elseif getInput(-1, sec.menu.previous.key) and t.tbl.movelistLine > 1 then
 		sndPlay(motif.Snd, sec.cursor.move.snd[1], sec.cursor.move.snd[2])
 		t.tbl.movelistLine = t.tbl.movelistLine - 1
-	elseif main.f_input(main.t_players, sec.menu.next.key) and t.tbl.movelistLine <= #cmdList - sec.movelist.window.visibleitems then
+	elseif getInput(-1, sec.menu.next.key) and t.tbl.movelistLine <= #cmdList - sec.movelist.window.visibleitems then
 		sndPlay(motif.Snd, sec.cursor.move.snd[1], sec.cursor.move.snd[2])
 		t.tbl.movelistLine = t.tbl.movelistLine + 1
 	end
