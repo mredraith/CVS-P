@@ -929,10 +929,10 @@ p2.teammenu.ratio7.icon.facing = 1 ;Ikemen feature
 p2.teammenu.ratio7.icon.scale = 1.0, 1.0 ;Ikemen feature
 
 teammenu.itemname.single = Single ;Ikemen feature
-teammenu.itemname.simul = Simul ;Ikemen feature
 teammenu.itemname.tag = Tag ;Ikemen feature
-teammenu.itemname.turns = Turns ;Ikemen feature
 teammenu.itemname.ratio = Ratio ;Ikemen feature
+teammenu.itemname.turns = Turns ;Ikemen feature
+teammenu.itemname.simul = Simul ;Ikemen feature
 
 paletteselect = 1
 ; Enables or disables palette selection menu in select screen. Accepted values:

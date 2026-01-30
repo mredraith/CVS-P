@@ -3342,7 +3342,7 @@ function main.f_menuCommonDraw(t, item, cursorPosY, moveTxt, sec, bg, skipClear,
 	local tweenDone = math.abs((cur or 0) - (tgt or 0)) < 1
 
 	local items_shown = item + visible - cursorPosY
-	if items_shown > #t or (visible > 0 and items_shown < #t and (sec.menu.window.margins.y[1] ~= 0 or sec.menu.window.margins.y[2] ~= 0)) then
+	if items_shown > #t or (visible > 0 and items_shown < #t and (m.window.margins.y[1] ~= 0 or m.window.margins.y[2] ~= 0)) then
 		items_shown = #t
 	end
 
