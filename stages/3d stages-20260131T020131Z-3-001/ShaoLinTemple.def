@@ -1,0 +1,171 @@
+[Info]
+name = "Shaolin Temple"
+displayname = "Shaolin Temple"
+author = "xcheatdeath"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -475
+boundright = 475
+boundhigh = -10
+boundlow = 0
+
+verticalfollow = .85
+floortension = 200
+tension = 200
+
+overdrawhigh = 120
+overdrawlow = 120
+cuthigh = 0
+cutlow = 0
+
+;Field of view. 30 is good for photorealistic scenes, but feel free to tweak this to your preference.
+fov = 58
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -140
+p1starty = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 140
+p2starty = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -4000
+rightbound =  4000
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 30
+screenright = 30
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 660
+
+autoturn = 1
+resetBG = 0
+
+localcoord = 640,480
+xscale = 1
+yscale = 1
+
+portraitscale = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity=100
+yscale=0.14
+fade.range=-100,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic =ShaolinTemple.mp3
+bgmvolume = 100
+
+;========================================================
+[BGdef]
+
+;Filename of 3D model file
+;Supported file types are gltf and glb; supported by most modern 3D model programs.
+;It is recommended to use PNG/JPEG/embedded image format for textures. Compressed DDS textures are not supported.
+;Make sure the world origin of the model is at the camera's starting point.
+model = ShaolinTemple.glb
+
+;Filename of .sff file, required by spec (and for stage portraits)
+spr = ShaolinTemple.sff
+
+;debugbg = 0
+
+[BG Lightning]
+type  = anim
+start = 0,0
+actionno = 2
+delta = 1,1
+tile = 1,1
+layerno = -1
+
+[BG Rain]
+type = normal
+spriteno = 1, 2
+start = 0, 200
+delta = 1,1
+mask = 1
+tile = 1,1
+trans = addalpha
+alpha = 150,175
+velocity = 7,28
+layerno = -1
+;-------------------------------------
+; Model element definition
+[Model]
+
+; X, Y, and Z coordinates of the model
+offset = 0,-0.2,-0.47
+
+; Scale of the model
+scale = 0.08, 0.08, 0.08
+;-------------------------------------
+
+[Begin Action 2]
+5,0,0,0,300
+6,1,0,0,2, ,as256d256
+6,1,0,0,2, ,as226d256
+6,1,0,0,2, ,as186d256
+6,1,0,0,2, ,as156d256
+6,1,0,0,2, ,as136d256
+6,1,0,0,2, ,as110d256
+6,1,0,0,2, ,as76d256
+6,1,0,0,2, ,as56d256
+6,1,0,0,2, ,as36d256
+6,1,0,0,2, ,as16d256
+6,1,0,0,2, ,as6d256
+5,0,0,0,200
+6,1,0,0,2, ,as256d256
+6,1,0,0,2, ,as226d256
+6,1,0,0,2, ,as186d256
+6,1,0,0,2, ,as156d256
+6,1,0,0,2, ,as136d256
+6,1,0,0,2, ,as110d256
+6,1,0,0,2, ,as76d256
+6,1,0,0,2, ,as56d256
+6,1,0,0,2, ,as36d256
+6,1,0,0,2, ,as16d256
+6,1,0,0,2, ,as6d256
+5,0,0,0,400
+6,1,0,0,2, ,as256d256
+6,1,0,0,2, ,as226d256
+6,1,0,0,2, ,as186d256
+6,1,0,0,2, ,as156d256
+6,1,0,0,2, ,as136d256
+6,1,0,0,2, ,as110d256
+6,1,0,0,2, ,as76d256
+6,1,0,0,2, ,as56d256
+6,1,0,0,2, ,as36d256
+6,1,0,0,2, ,as16d256
+6,1,0,0,2, ,as6d256
+5,0,0,0,20
+6,1,0,0,2, ,as256d256
+6,1,0,0,2, ,as226d256
+6,1,0,0,2, ,as186d256
+6,1,0,0,2, ,as156d256
+6,1,0,0,2, ,as136d256
+6,1,0,0,2, ,as110d256
+6,1,0,0,2, ,as76d256
+6,1,0,0,2, ,as56d256
+6,1,0,0,2, ,as36d256
+6,1,0,0,2, ,as16d256
+6,1,0,0,2, ,as6d256
+
+; Stage portrait data
+[Begin Action 9000]
+9000,1, 0,0,-1
