@@ -6,7 +6,7 @@
  ; charname, stagefilename1, stagefilename2, ...
  ;
  ;e.g. For a player with filename "kfm", and stage filename
- ;"stages/mybg.def" type (without the semicolon):
+ ;"stages/mybg.def type (without the semicolon):
  ; kfm, stages/mybg.def
  ;IKEMEN feature: There can be more than 1 stage assigned to character. In such
  ;case stage will be chosen randomly.
@@ -344,7 +344,7 @@ nesmegaman, random, includestage=0, order=5
 ;-------------------------------------------------------------------------------
 [ExtraStages]
  ;Put extra stages here. They will be available in modes that allow selecting
- ;stage manually. For example, you can insert "stages/mybg.def".
+ ;stage manually. For example, you can insert "stages/mybg.def.
  ;
  ;Zipped stages are also supported.
  ;Place the ZIP file in the stages/ directory. The syntax is as
@@ -446,6 +446,125 @@ stages/mvc2-river.def
 stages/mvc2-abysstemple.def
 stages/mvc2-training.def
 stages/CVS2-Training-Stage.def
+stages/3d stages-20260131T020131Z-3-001/007GoldenEyeDam.def
+stages/3d stages-20260131T020131Z-3-001/AbandondedTemple.def
+stages/3d stages-20260131T020131Z-3-001/BattleInTheSky.def
+stages/3d stages-20260131T020131Z-3-001/BridgeofDeception.def
+stages/3d stages-20260131T020131Z-3-001/BridgeofDeceptionNight.def
+stages/3d stages-20260131T020131Z-3-001/CellGames.def
+stages/3d stages-20260131T020131Z-3-001/ChallengeTower.def
+stages/3d stages-20260131T020131Z-3-001/ChaoKarateNight.def
+stages/3d stages-20260131T020131Z-3-001/CoolingRoom.def
+stages/3d stages-20260131T020131Z-3-001/DaPoolroom.def
+stages/3d stages-20260131T020131Z-3-001/DBFZCavern.def
+stages/3d stages-20260131T020131Z-3-001/DeadlyPremClockTower.def
+stages/3d stages-20260131T020131Z-3-001/DededeArena.def
+stages/3d stages-20260131T020131Z-3-001/DestroyedCity.def
+stages/3d stages-20260131T020131Z-3-001/DiosCastle.def
+stages/3d stages-20260131T020131Z-3-001/DragoonVolcano.def
+stages/3d stages-20260131T020131Z-3-001/DS1FirelinkShrine.def
+stages/3d stages-20260131T020131Z-3-001/EgyptianValley.def
+stages/3d stages-20260131T020131Z-3-001/EternalDarkness.def
+stages/3d stages-20260131T020131Z-3-001/FF7BattleArena3D.def
+stages/3d stages-20260131T020131Z-3-001/ForestTempleBossRoom.def
+stages/3d stages-20260131T020131Z-3-001/GreenDolphinStreetPrison.def
+stages/3d stages-20260131T020131Z-3-001/GreenHouse.def
+stages/3d stages-20260131T020131Z-3-001/GroveStreet.def
+stages/3d stages-20260131T020131Z-3-001/Hallohome.def
+stages/3d stages-20260131T020131Z-3-001/HauntedLorelei.def
+stages/3d stages-20260131T020131Z-3-001/HellsKitchenStreets.def
+stages/3d stages-20260131T020131Z-3-001/HyruleCastleCourtyard.def
+stages/3d stages-20260131T020131Z-3-001/IkemenArcade.def
+stages/3d stages-20260131T020131Z-3-001/IkemenCourts.def
+stages/3d stages-20260131T020131Z-3-001/IkemenQuickStop.def
+stages/3d stages-20260131T020131Z-3-001/InazumaElevenSoccerField.def
+stages/3d stages-20260131T020131Z-3-001/InTheClub.def
+stages/3d stages-20260131T020131Z-3-001/KamiLookout.def
+stages/3d stages-20260131T020131Z-3-001/kfm3D.def
+stages/3d stages-20260131T020131Z-3-001/KOFASCloneLab.def
+stages/3d stages-20260131T020131Z-3-001/KOFASCloneLabNight.def
+stages/3d stages-20260131T020131Z-3-001/KOFASMukaiLair.def
+stages/3d stages-20260131T020131Z-3-001/KOFASOrochiCave.def
+stages/3d stages-20260131T020131Z-3-001/KOFXIVDerelictChurch.def
+stages/3d stages-20260131T020131Z-3-001/KOFXIVMasquerade.def
+stages/3d stages-20260131T020131Z-3-001/Krossroads.def
+stages/3d stages-20260131T020131Z-3-001/KrustyKrab.def
+stages/3d stages-20260131T020131Z-3-001/KrustyKrabAtNight.def
+stages/3d stages-20260131T020131Z-3-001/LinKueiTemple.def
+stages/3d stages-20260131T020131Z-3-001/LoneSakuraDay.def
+stages/3d stages-20260131T020131Z-3-001/LoreleiArena.def
+stages/3d stages-20260131T020131Z-3-001/LoudHouse.def
+stages/3d stages-20260131T020131Z-3-001/MarvelcocKnowhere.def
+stages/3d stages-20260131T020131Z-3-001/MK1TeaHouse.def
+stages/3d stages-20260131T020131Z-3-001/MK1TeaHouseNight.def
+stages/3d stages-20260131T020131Z-3-001/MK2DeadPool.def
+stages/3d stages-20260131T020131Z-3-001/MKDAAcidBath.def
+stages/3d stages-20260131T020131Z-3-001/MKDAIcePalace.def
+stages/3d stages-20260131T020131Z-3-001/MKDALostTomb.def
+stages/3d stages-20260131T020131Z-3-001/NetherrealmArena.def
+stages/3d stages-20260131T020131Z-3-001/NightbeforeXmas.def
+stages/3d stages-20260131T020131Z-3-001/NightmareWorld.def
+stages/3d stages-20260131T020131Z-3-001/OtherworldInvasion.def
+stages/3d stages-20260131T020131Z-3-001/OutsideMariosHouse.def
+stages/3d stages-20260131T020131Z-3-001/PitBottom.def
+stages/3d stages-20260131T020131Z-3-001/PokemonCenter.def
+stages/3d stages-20260131T020131Z-3-001/Retrocade.def
+stages/3d stages-20260131T020131Z-3-001/ShadyGarage.def
+stages/3d stages-20260131T020131Z-3-001/ShaoLinTemple.def
+stages/3d stages-20260131T020131Z-3-001/Skyring.def
+stages/3d stages-20260131T020131Z-3-001/SM64BowserInTheDarkWorld.def
+stages/3d stages-20260131T020131Z-3-001/Smash64Bedroom.def
+stages/3d stages-20260131T020131Z-3-001/Smash64RemixFlatZone.def
+stages/3d stages-20260131T020131Z-3-001/Smash64RemixHomeRunContest.def
+stages/3d stages-20260131T020131Z-3-001/Smash64RemixKongoValleyOmega.def
+stages/3d stages-20260131T020131Z-3-001/Smash64RemixPirateLand.def
+stages/3d stages-20260131T020131Z-3-001/Smash64RemixPlanetZebesOmega.def
+stages/3d stages-20260131T020131Z-3-001/Smash64RemixSaffronCityOmega.def
+stages/3d stages-20260131T020131Z-3-001/Smash64RemixSmashketball.def
+stages/3d stages-20260131T020131Z-3-001/SmeltingRoom.def
+stages/3d stages-20260131T020131Z-3-001/SnowyShrine.def
+stages/3d stages-20260131T020131Z-3-001/SpencerMansion.def
+stages/3d stages-20260131T020131Z-3-001/SpookyAutoChessBrown.def
+stages/3d stages-20260131T020131Z-3-001/SpookyAutoChessGreen.def
+stages/3d stages-20260131T020131Z-3-001/SpookyShack.def
+stages/3d stages-20260131T020131Z-3-001/Stage0_3D.def
+stages/3d stages-20260131T020131Z-3-001/Stage0_3D_GREEN.def
+stages/3d stages-20260131T020131Z-3-001/Stage0_3D_PURPLE.def
+stages/3d stages-20260131T020131Z-3-001/Stage0_3D_RED.def
+stages/3d stages-20260131T020131Z-3-001/StarCity.def
+stages/3d stages-20260131T020131Z-3-001/SuzakuCastle.def
+stages/3d stages-20260131T020131Z-3-001/SuzakuCastleNight.def
+stages/3d stages-20260131T020131Z-3-001/TempleOfTime.def
+stages/3d stages-20260131T020131Z-3-001/TempleOfTimeNight.def
+stages/3d stages-20260131T020131Z-3-001/TenkaichiBudokai.def
+stages/3d stages-20260131T020131Z-3-001/TheChumBucket.def
+stages/3d stages-20260131T020131Z-3-001/ThePitBottomClassic.def
+stages/3d stages-20260131T020131Z-3-001/TheSubway.def
+stages/3d stages-20260131T020131Z-3-001/TheWokFactory.def
+stages/3d stages-20260131T020131Z-3-001/THPS1Warehouse.def
+stages/3d stages-20260131T020131Z-3-001/TropicalResort.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSBalcony.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSBellTower.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSBluePortal.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSBridge.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSCave.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSGraveyard.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSHiddenPortal.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSJadeDesert.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSNoobsDorfen.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSScorpionsLair.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSSoulChamber.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSStreet.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSSubway.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSTemple.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSThePit3.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSTheRooftop.def
+stages/3d stages-20260131T020131Z-3-001/UMK3iOSWaterfront.def
+stages/3d stages-20260131T020131Z-3-001/WiiSportsBaseBall.def
+stages/3d stages-20260131T020131Z-3-001/WindMill.def
+stages/3d stages-20260131T020131Z-3-001/WindMillNight.def
+stages/3d stages-20260131T020131Z-3-001/WondrousPlayRoom.def
+stages/3d stages-20260131T020131Z-3-001/XenaThroneRoom.def
 
 ;-------------------------------------------------------------------------------
 [Options]
