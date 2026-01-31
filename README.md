@@ -6,7 +6,7 @@ Some of the listed changes made are;
 * Complete port to Ikemen GO
 * New screenpack, a little bit buggy
   * Netplay via Ikemen GO's built-in connection system
-* New stages, default ones + 3D stages from Final Fantasy (thank you PotS) and MvC2 (thank you SuperFromND)
+* New stages, default ones + 3D stages from Final Fantasy (thank you PotS), MvC2 (thank you SuperFromND), Cvs2 (thank you amtrash), and miscellaneous (thank you xcheatdeath)
   * Feel free to suggest new stages, or add your own
 * Normalizing life/power values across the entire cast (1000 health, 3000 power)
 * Normalizing fastest attack speed at 3f startup
