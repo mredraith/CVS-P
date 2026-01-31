@@ -1,5 +1,5 @@
 {
-  "playtime": 2892.87,
+  "playtime": 3069.15,
   "modes": {
     "training": {
       "playtime": 0,
@@ -104,12 +104,14 @@
       ]
     },
     "watch": {
-      "playtime": 670.41,
-      "clear": 4,
+      "playtime": 846.69,
+      "clear": 6,
       "clearcount": {
         "shin akuma": 2,
         "ken": 1,
-        "chunli": 1
+        "chunli": 1,
+        "batsu": 1,
+        "hugo": 1
       }
     },
     "versus": {

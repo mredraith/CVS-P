@@ -1,0 +1,127 @@
+
+; Definition of stage
+; *** denotes values you should change/check for each stage.
+; The term "background" is used to mean both backgrounds and foregrounds.
+
+;--------------------------------------------------------
+[Info]
+name         = "Training Stage"	; Name of the stage.
+displayname  = "Training Stage"	; Name to display
+versiondate  = 11,27,2025		; Version date of stage (MM,DD,YYYY or X.XX)
+mugenversion = 1.1 		; Version of MUGENext stage works on (X.XX)
+author       = "AMTRASH"	; Stage author name
+
+;--------------------------------------------------------
+[Camera]
+;Camera starting position: Usually 0 for both
+startx = 0
+starty = 0
+boundleft = -1250
+boundright = 1250
+boundhigh = -20
+boundlow = 0
+verticalfollow = 1
+floortension = 40
+tension = 210
+overdrawhigh = 70
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+
+fov = 30
+
+yshift = -.45
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+;Player 1 starting coordinates.
+;p1startx is typically -70 and p2startx is 70.
+;p1starty should be 0.
+p1startx = -420       ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 420
+p2starty = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -4000 ;Left bound (x-movement)
+rightbound =  4000 ;Right bound
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 160
+screenright = 160
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+localcoord =  1920, 1080
+
+;Horizontal and vertical scaling factor for drawing.
+xscale = 1
+yscale = 1
+
+portraitscale = 1.2
+;--------------------------------------------------------
+[Shadow]
+intensity = 180
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+;Intensity of reflection (from 0 to 256). Set to 0 to have no
+;reflection. Defaults to 0.
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/23_snd_st0B.ogg
+bgmloopstart =  0
+bgmloopend = 2880000
+volume = 255
+;--------------------------------------------------------
+; Background definition
+;-------------------------------------
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+model = CVS2-Training-Stage.glb
+
+;Filename of sprite data
+spr = CVS2-Training-Stage.sff
+
+;Set to 1 if you want to clear the screen to magenta before
+;drawing layer 0 (the default background). Good for spotting \"holes\"
+;in your background.
+;Remember to turn this off when you are done debugging the background,
+;because it slows down performance.
+id= 1
+debugbg = 0
+
+;-------------------------------------
+; Model element definition; similar to [BG] blocks in 2D stages
+[Model]
+
+; X, Y, and Z coordinates of the model
+offset = 0,-.14,-1.0
+ID = 1
+; Scale of the model
+scale = 0.0290, 0.0290, 0.0290
+
+;-------------------------------------
+
+[BGctrldef 1]
+ctrlID = 1
+
+; Stage portrait data
+[Begin Action 9000]
+9000,1, 0,0,-1
+

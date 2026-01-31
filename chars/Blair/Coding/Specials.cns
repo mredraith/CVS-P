@@ -1,4 +1,4 @@
-;SLIDING ARROW=
+;SLIDING ARROW
 [Statedef 1000]
 type = S
 movetype = A
@@ -590,7 +590,7 @@ type = ChangeState
 trigger1 = AnimElemTime(5) >= 21
 value = 1005
 
-;EX SLIDING ARROW=
+;EX SLIDING ARROW
 [Statedef 1030]
 type = S
 movetype = A
@@ -901,7 +901,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;SHOOT KICK=
+;SHOOT KICK
 [Statedef 1100]
 type = S
 movetype = A
@@ -1785,7 +1785,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX SHOOT KICK=
+;EX SHOOT KICK
 [Statedef 1130]
 type = S
 movetype = A
@@ -2029,9 +2029,9 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = Low
 air.type = Low
-ground.slidetime = 20
-ground.hittime = 20
-guard.hittime = 18
+ground.slidetime = 28
+ground.hittime = 28
+guard.hittime = 23
 ground.velocity = -8.5
 air.velocity = -4.5,-5
 guard.velocity = -8.5
