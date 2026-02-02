@@ -1,0 +1,233 @@
+;***************************************************************************;
+;***************************************************************************;
+; CVS Vega (Claw) POTS/Infinite by Falcon Rapper
+;***************************************************************************;
+;***************************************************************************;
+; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+;***************************************************************************;
+;***************************************************************************;
+
+
+;Customizable Configuartion
+;var(45):= Command mode (Normal/Easy Super Combos)
+;var(27):= Palette Selector
+;var(43):= POT's Style Hitsparks
+;var(44):= POT's Style Hit Sounds
+;var(46):= FDR SUPER PORTRAIT LV2
+;var(55):= Chain Combos/Air Combos
+
+
+;-------------------------------------------------------------
+;INITIALIZE
+[Statedef 5900]
+type = S
+
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !roundsexisted && matchno = 1
+value = 0
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !roundsexisted && matchno = 1
+fvalue = 0
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+;==========================================================================
+;Customizable Configuartion 
+;==========================================================================
+; Palette Selector
+[State 5900, Palette Selector]
+type = VarSet
+trigger1 = 1
+v = 27
+value =0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Palette Selector on Intro
+;Change the value number to 1 if you do want Palette Selector on Intro
+;Default value is 1.
+;===========================================================================
+; Super Port
+[State 5900, Super Port]
+type = VarSet
+trigger1 = !var(39)
+v = 41
+value = 2
+;__________________________________________________________________________________________________
+;Change the value number to 0 if you want Super Port 1
+;Change the value number to 1 if you want Super Port 2
+;Change the value number to 2 if you want Super Port 3
+;Default value is 0.
+;==================================================================================================
+; POT's Style Hitsparks
+[State 5900, POT's Style Hitsparks]
+type = VarSet
+trigger1 = 1
+v = 43
+value = 2
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want POT's style hitsparks
+;Change the value number to 1 if you want the POT's style hitsparks
+;Change the value number to 2 if you want multi-colored POT's style hitsparks-Only 1.0 or higher
+;Default value is 0.
+;===========================================================================
+; POT's Style Hit Sounds
+[State 5900, POT's Style Hit Sounds]
+type = VarSet
+trigger1 = 1
+v = 44
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want POT's style hitsounds
+;Change the value number to 1 if you want the POT's style hitsounds
+;Default value is 0.
+;===========================================================================
+; Command Style
+[State 5900, Command Style]
+type = VarSet
+trigger1 = 1
+v = 45
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if want Vega's Tradiditonal command moves
+;Change the value number to 1 if you want Neo Command moves (Motions/DP's)
+;Default value is 0.
+;===========================================================================
+; FDR SUPER PORTRAIT LV2
+[State 5900, Palette Selector]
+type = VarSet
+trigger1 = 1
+v = 46
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want FDR SUPER PORTRAIT LV2
+;Change the value number to 1 if you do want FDR SUPER PORTRAIT LV2
+;Default value is 0.
+;===========================================================================
+; Chain Combos/Air Combos
+[State 5900, Chain Combos/Air Combos]
+type = VarSet
+trigger1 = 1
+v = 55
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want chain comboing
+;Change the value number to 1 if you want chain comboing
+;Change the value number to 2 if you want chain comboing and Air Comboing
+;Default value is 1.
+;===========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[State 5900, Pal Selector on]
+type=helper
+triggerall=var(27)&&!numhelper(256)&&!AILevel&&numenemy 
+trigger1= roundno = 1 && matchno=1 && !(teammode = simul) && !(enemy, teammode = simul)
+trigger2= !var(26) 
+trigger3=(teammode = turns)
+trigger3=!roundsexisted && (enemy,roundsexisted)
+id=256
+stateno=256
+facing=facing
+ownpal=1
+size.xScale=0.5
+size.yScale=0.5
+[state 5900, No Palette selector]
+type = remappal
+trigger1 = !var(27)
+trigger2 = AILevel && !var(26)
+source = 1, 1
+dest = 1, palno
+ignorehitpause = 1
+
+[State 5900, Intro Vs Boys]
+type = Changestate
+triggerall = NumEnemy
+triggerall = RoundNo = 1 || (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
+trigger1 = Enemy, Name = "Benimaru" || Enemy, Name = "Benimaru Nikaido" || Enemy, Name = "cvsbenimaru"
+trigger2 = Enemy, Name = "cvskyosuke" || Enemy, Name = "Kyosuke Kagami" || Enemy, Name = "Kyosuke"
+trigger3 = Enemy, Name = "remy" || Enemy, Name = "Street Fighter 3 Remy"
+value = 191
+
+[State 5900, Intro Vs Girls]
+type = Changestate
+triggerall = NumEnemy
+triggerall = RoundNo = 1 || (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
+trigger1 = Enemy, Name = "Chun-Li"  || Enemy, Name = "Chun Li" || Enemy, Name = "cvschunli"
+trigger2 = Enemy, Name = "Cammy" || Enemy, Name = "cvscammy"
+trigger3 = Enemy, Name = "Sakura" || Enemy, Name = "Sakura Kasugano" || Enemy, Name = "cvssakura"
+trigger4 = Enemy, Name = "Rose" || Enemy, Name = "Karin" || Enemy, Name = "cvskarin"
+trigger5 = Enemy, Name = "cvsmika" || Enemy, Name = "Rainbow Mika" || Enemy, Name = "R. Mika"
+trigger6 = Enemy, Name = "Juni" || Enemy, Name = "cvsjuni" || Enemy, Name = "Juli" || Enemy, Name = "cvsjuli"
+trigger7 = Enemy, Name = "Ibuki" || Enemy, Name = "Makoto" || Enemy, Name = "Elena"
+trigger8 = Enemy, Name = "Morrigan" || Enemy, Name = "Morrigan Aensland" || Enemy, Name = "cvsmorrigan"
+trigger9 = Enemy, Name = "Maki" || Enemy, Name = "cvsMaki" || Enemy, Name = "Genryusai Maki"
+trigger10 = Enemy, Name = "Ingrid" || Enemy, Name = "cvsingrid"
+trigger11 = Enemy, Name = "Jill Valentine"  || Enemy, Name = "Jill" || Enemy, Name = "cvsjill"
+trigger12 = Enemy, Name = "Felicia" || Enemy, Name = "cvsfelicia"
+trigger13 = Enemy, Name = "Lilith" || Enemy, Name = "Lilith Aensland" || Enemy, Name = "cvslilith"
+trigger14 = Enemy, Name = "Mai Shiranui" || Enemy, Name = "Mai" || Enemy, Name = "cvsmai"
+trigger15 = Enemy, Name="King" && enemy, authorname = "Jmorphman" || Enemy, Name = "cvsking"
+trigger16 = Enemy, Name = "Yuri Sakazaki" || Enemy, Name = "Yuri" || Enemy, Name = "cvsyuri"
+trigger17 = Enemy, Name = "Athena Asamiya" || Enemy, Name = "Athena" || Enemy, Name = "cvsathena"
+trigger18 = Enemy, Name = "Nakoruru" || Enemy, Name = "cvsnakoruru"
+trigger19 = Enemy, Name = "Vice" || Enemy, Name = "cvsvice" || Enemy, Name = "Mature"
+trigger20 = Enemy, Name = "Kasumi Todoh" || Enemy, Name = "Kasumi"
+trigger21 = Enemy, Name = "Leona" || Enemy, Name = "Leona Heidern" || Enemy, Name = "CVSZeroLeona"
+trigger22 = Enemy, Name = "Shermie" || Enemy, Name = "Kula" || Enemy, Name = "Kula Diamond"
+trigger23 = Enemy, Name = "Chizuru Kagura" || Enemy, Name = "Chizuru" || Enemy, Name = "Maki Kagura" || Enemy, Name = "Maki"
+trigger24 = Enemy, Name = "Li Xiangfei" || Enemy, Name = "Xiangfei"
+trigger25 = Enemy, Name = "Blue Mary" || Enemy, Name = "ZSMary" || Enemy, Name = "Blue Mary Ryan"
+trigger26 = Enemy, Name = "Whip"
+value = 192
+
+[State 5900, Intro Vs Others]
+type = Changestate
+triggerall = NumEnemy
+triggerall = RoundNo = 1 || (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
+trigger1 = Enemy, Name = "Dhalsim"  || Enemy, Name = "Blanka" || Enemy, Name="Balrog" && enemy, authorname = "Trololo"
+trigger2 = Enemy, Name = "Zangief" || Enemy, Name = "Honda" || Enemy, Name = "Edmond Honda"
+trigger3 = Enemy, Name = "Chang Koehan" || Enemy, Name = "cvschang"
+trigger4 = Enemy, Name = "cvsyamazaki" || Enemy, Name = "Yamazaki" || Enemy, Name = "Ryuji Yamazaki"
+trigger5 = Enemy, Name = "Raiden" || Enemy, Name = "cvsRaiden"
+value = 193
+
+[State 5900, Turns Intro]
+type = ChangeState
+trigger1 = TeamMode = Turns
+trigger1 = !RoundsExisted && RoundNo >= 2
+value = 6900
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1
+value = 190
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 0

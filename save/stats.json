@@ -1,5 +1,5 @@
 {
-  "playtime": 3069.15,
+  "playtime": 3344.79,
   "modes": {
     "training": {
       "playtime": 0,
@@ -10,7 +10,7 @@
       }
     },
     "freebattle": {
-      "playtime": 1553.82,
+      "playtime": 1635.79,
       "clear": 5,
       "clearcount": {
         "sagat": 1,
@@ -19,9 +19,23 @@
       }
     },
     "arcade": {
-      "playtime": 658.29,
+      "playtime": 851.96,
       "clear": 0,
       "ranking": [
+        {
+          "score": 50700,
+          "time": 193.67,
+          "win": 1,
+          "lose": 1,
+          "consecutive": 0,
+          "name": "",
+          "chars": [
+            "ryu",
+            "feilong"
+          ],
+          "tmode": 3,
+          "ailevel": 8
+        },
         {
           "score": 22500,
           "time": 96.33,

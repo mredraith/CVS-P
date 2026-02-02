@@ -1,0 +1,45 @@
+
+[Info]
+name ="Vega"
+displayname ="Vega"
+versiondate =12,28,2013
+mugenversion =1.0
+author ="Falcon Rapper"
+pal.defaults =1,2,3,4,5,6
+localcoord   = 320, 240
+
+[Files]
+movelist = movelist.dat
+sprite =Resources\Sff.sff
+sound =Resources\Snd.snd
+anim =Resources\Air.air
+cmd =Resources\Cmd.cmd
+cns =Resources\Constants.cns
+stcommon =common1.cns
+st =Resources\System.cns
+st1=Resources\Normal.cns
+st2=Resources\Specials.cns
+st3=Resources\Supers.cns
+st4=Resources\Helpers.cns
+st5=config.txt
+
+[Palette Keymap]
+a  = 1
+b  = 2
+c  = 3
+x  = 4
+y  = 5
+z  = 6
+a2 = 7
+b2 = 8
+c2 = 9
+x2 = 10
+y2 = 11
+z2 = 12
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 
+
+
+; FEINT CANCEL PATCHED
