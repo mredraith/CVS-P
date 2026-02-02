@@ -334,13 +334,23 @@ channel = 1
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 420,6969
-channel = 2
+channel = -1
 [State 220, Shake]
 type = EnvShake
 trigger1 = AnimElem = 5
 time = 10
 freq = 180
 ampl = -16
+[State 220, Landing Dust Explod]
+type = Explod
+trigger1 = AnimElem = 5
+anim = 8102
+sprPriority = -3
+posType = P1
+scale = 2,2
+pauseMoveTime = -1
+superMoveTime = -1
+ownPal = 1
 
 [State 220, Slash Explod]
 type = Explod
@@ -436,9 +446,9 @@ ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 18 + 4 * var(9)
 guard.hitTime = 30
 air.hitTime = 120
-ground.velocity = ifElse(PrevStateNo = 700, -6.46, ifElse(var(20), -4.86, -10.52)), ifElse(PrevStateNo = 700, -5.25, 0)
+ground.velocity = -20
 ground.cornerPush.velOff = 0
-guard.velocity = ifElse(var(20), -4.86, -10.52)
+guard.velocity = -20
 guard.cornerPush.velOff = 0
 air.velocity = -5.39, -5.65
 air.cornerPush.velOff = 0
@@ -519,7 +529,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * (132 * (ifElse(var(45), 1.1, 1))) < 7, 7, fvar(11) * (132 * (ifElse(var(45), 1.1, 1))))), 0
+damage = 125
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 9, 18)
@@ -641,7 +651,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * (100 * (ifElse(var(45), 1.1, 1))) < 7, 7, fvar(11) * (100 * (ifElse(var(45), 1.1, 1))))), 0
+damage = 125
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -693,7 +703,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * (32 * (ifElse(var(45), 1.1, 1))) < 7, 7, fvar(11) * (32 * (ifElse(var(45), 1.1, 1))))), 0
+damage = 125
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 7, 14)
