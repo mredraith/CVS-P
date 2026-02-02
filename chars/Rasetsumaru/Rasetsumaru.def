@@ -25,18 +25,6 @@ stCommon= common1.cns
 sprite = Sprite2.sff
 anim = Anim.air
 sound = Sound.snd
-pal1 = Palettes/Knuckles8864_Dante.act
-pal2 = Palettes/Flowrellik_RasetsuOni.act
-pal3 = Palettes/Knuckles8864_MadJack.act
-pal4 = Palettes/Flowrellik_Rasetsumaru.act
-pal5 = Palettes/MCX_SvCGhost.act
-pal6 = Palettes/Flowrellik_Pandora.act
-pal7 = Palettes/Knuckles8864_EvilBuu.act
-pal8 = Palettes/Knuckles8864_Orochimaru.act
-pal9 = Palettes/Flowrellik_CarrotWarrior.act
-pal10 = Palettes/Knuckles8864_RSamShoVIColor5.act
-pal11 = Palettes/CalhounTubbs87_C.R.E.A.M.act
-pal12 = Palettes/sabockee_Custom3.act
  
 ; Arcade mode
 [Arcade]
