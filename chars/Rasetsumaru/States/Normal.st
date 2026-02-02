@@ -330,6 +330,17 @@ type = PlaySnd
 trigger1 = AnimElem = 4
 value = 1,8
 channel = 1
+[State 220, Thud]
+type = PlaySnd
+trigger1 = AnimElem = 5
+value = 420,6969
+channel = 2
+[State 220, Shake]
+type = EnvShake
+trigger1 = AnimElem = 5
+time = 10
+freq = 180
+ampl = -16
 
 [State 220, Slash Explod]
 type = Explod
@@ -423,7 +434,7 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 18 + 4 * var(9)
-guard.hitTime = 18
+guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = ifElse(PrevStateNo = 700, -6.46, ifElse(var(20), -4.86, -10.52)), ifElse(PrevStateNo = 700, -5.25, 0)
 ground.cornerPush.velOff = 0
