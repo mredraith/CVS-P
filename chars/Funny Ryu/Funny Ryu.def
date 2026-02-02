@@ -9,7 +9,7 @@ displayname = "Funny Ryu"
 versiondate = 12,30,2012
 mugenversion = 1.0
 author = "Phantom.of.the.Server"
-pal.defaults = 4,2,3,1,5,6
+pal.defaults = 1,2
 localcoord = 427,240
 
 [Files]
@@ -28,12 +28,6 @@ st4 = States\Supers.st
 st5 = States\Helpers.st
 st6 = States\Custom.st
 st7 = States\FunnyRyu.st
-pal1 = FunnyPalettes\grey.act
-pal2 = FunnyPalettes\dirty.act
-pal3 = MasterPalettes\SF1.act
-pal4 = FunnyPalettes\CvS.act
-pal5 = FunnyPalettes\green.act
-pal6 = FunnyPalettes\pink.act
 
 [Arcade]
 intro.storyboard = 

@@ -1,5 +1,5 @@
 {
-  "playtime": 3448.24,
+  "playtime": 3473.87,
   "modes": {
     "training": {
       "playtime": 0,
@@ -10,12 +10,13 @@
       }
     },
     "freebattle": {
-      "playtime": 1739.24,
-      "clear": 5,
+      "playtime": 1764.87,
+      "clear": 6,
       "clearcount": {
         "sagat": 1,
         "nesmegaman": 1,
-        "ryu": 3
+        "ryu": 3,
+        "rasetsumaru": 1
       }
     },
     "arcade": {
