@@ -124,249 +124,249 @@ time = 32
 
 [Command]
 name = "Bloody High Claw"
-command = ~15$DB,F,B,U, x+a
+command = ~45$DB,F,B,U, x+a
 time = 32
 [Command]
 name = "Bloody High Claw"
-command = ~15$DB,F,B,U, y+b
+command = ~45$DB,F,B,U, y+b
 time = 32
 [Command]
 name = "Bloody High Claw"
-command = ~15$DB,F,B,U, z+c
+command = ~45$DB,F,B,U, z+c
 time = 32
 
 [Command]
 name = "Red Impact"
-command = ~$B, F, B, F, x+y
+command = ~45$B, F, B, F, x+y
 time = 32
 [Command]
 name = "Red Impact"
-command = ~$B, F, B, F, x+z
+command = ~45$B, F, B, F, x+z
 time = 32
 [Command]
 name = "Red Impact"
-command = ~$B, F, B, F, y+z
+command = ~45$B, F, B, F, y+z
 time = 32
 
 [Command]
 name = "MAX Flying Barcelona Special"
-command = ~15$DB,F,B,U, a+b
+command = ~45$DB,F,B,U, a+b
 time = 32
 [Command]
 name = "MAX Flying Barcelona Special"
-command = ~15$DB,F,B,U, b+c
+command = ~45$DB,F,B,U, b+c
 time = 32
 [Command]
 name = "MAX Flying Barcelona Special"
-command = ~15$DB,F,B,U, a+c
+command = ~45$DB,F,B,U, a+c
 time = 32
 
 [Command]
 name = "Flying Barcelona Special"
-command = ~15$DB,F,B,U, a
+command = ~45$DB,F,B,U, a
 time = 32
 [Command]
 name = "Flying Barcelona Special"
-command = ~15$DB,F,B,U, b
+command = ~45$DB,F,B,U, b
 time = 32
 [Command]
 name = "Flying Barcelona Special"
-command = ~15$DB,F,B,U, c
+command = ~45$DB,F,B,U, c
 time = 32
 
 [Command]
 name = "MAX Scarlet Mirage"
-command = ~$B, F, B, F, a+b
+command = ~45$B, F, B, F, a+b
 time = 32
 [Command]
 name = "MAX Scarlet Mirage"
-command = ~$B, F, B, F, b+c
+command = ~45$B, F, B, F, b+c
 time = 32
 [Command]
 name = "MAX Scarlet Mirage"
-command = ~$B, F, B, F, a+c
+command = ~45$B, F, B, F, a+c
 time = 32
 
 [Command]
 name = "Scarlet Mirage"
-command = ~$B, F, B, F, a
+command = ~45$B, F, B, F, a
 time = 32
 [Command]
 name = "Scarlet Mirage"
-command = ~$B, F, B, F, b
+command = ~45$B, F, B, F, b
 time = 32
 [Command]
 name = "Scarlet Mirage"
-command = ~$B, F, B, F, c
+command = ~45$B, F, B, F, c
 time = 32
 
 [Command]
 name = "Scarlet Mirage"
-command = ~$B, F, B, F, ~a
+command = ~45$B, F, B, F, ~a
 time = 32
 [Command]
 name = "Scarlet Mirage"
-command = ~$B, F, B, F, ~b
+command = ~45$B, F, B, F, ~b
 time = 32
 [Command]
 name = "Scarlet Mirage"
-command = ~$B, F, B, F, ~c
+command = ~45$B, F, B, F, ~c
 time = 32
 
 ;-| Special Motions |------------------------------------------------------
 
 [Command]
 name = "Rolling Crystal Flash"
-command = ~$B, $F, x
+command = ~45$B, $F, x
 time = 16
 [Command]
 name = "Rolling Crystal Flash"
-command = ~$B, $F, y
+command = ~45$B, $F, y
 time = 16
 [Command]
 name = "Rolling Crystal Flash"
-command = ~$B, $F, z
+command = ~45$B, $F, z
 time = 16
 [Command]
 name = "Rolling Crystal Flash"
-command = ~$B, $F, ~x
+command = ~45$B, $F, ~x
 time = 16
 [Command]
 name = "Rolling Crystal Flash"
-command = ~$B, $F, ~y
+command = ~45$B, $F, ~y
 time = 16
 [Command]
 name = "Rolling Crystal Flash"
-command = ~$B, $F, ~z
+command = ~45$B, $F, ~z
 time = 16
 
 [Command]
 name = "Rolling Crystal Flash EX"
-command = ~$B, $F, x+y
+command = ~45$B, $F, x+y
 time = 16
 [Command]
 name = "Rolling Crystal Flash EX"
-command = ~$B, $F, y+z
+command = ~45$B, $F, y+z
 time = 16
 [Command]
 name = "Rolling Crystal Flash EX"
-command = ~$B, $F, x+z
+command = ~45$B, $F, x+z
 time = 16
 
 [Command]
 name = "Flying Barcelona Attack"
-command = ~$D, $U, a
+command = ~45$D, $U, a
 time = 16
 [Command]
 name = "Flying Barcelona Attack"
-command = ~$D, $U, b
+command = ~45$D, $U, b
 time = 16
 [Command]
 name = "Flying Barcelona Attack"
-command = ~$D, $U, c
+command = ~45$D, $U, c
 time = 16
 
 [Command]
 name = "Flying Barcelona Attack"
-command = ~$D, $U, ~a
+command = ~45$D, $U, ~a
 time = 16
 [Command]
 name = "Flying Barcelona Attack"
-command = ~$D, $U, ~b
+command = ~45$D, $U, ~b
 time = 16
 [Command]
 name = "Flying Barcelona Attack"
-command = ~$D, $U, ~c
+command = ~45$D, $U, ~c
 time = 16
 
 [Command]
 name = "Flying Barcelona Attack EX"
-command = ~$D, $U, a+b
+command = ~45$D, $U, a+b
 time = 32
 [Command]
 name = "Flying Barcelona Attack EX"
-command = ~$D, $U, b+c
+command = ~45$D, $U, b+c
 time = 32
 [Command]
 name = "Flying Barcelona Attack EX"
-command = ~$D, $U, a+c
+command = ~45$D, $U, a+c
 time = 32
 
 [Command]
 name = "Sky High Claw"
-command = ~$D, $U, x
+command = ~45$D, $U, x
 time = 16
 [Command]
 name = "Sky High Claw"
-command = ~$D, $U, y
+command = ~45$D, $U, y
 time = 16
 [Command]
 name = "Sky High Claw"
-command = ~$D, $U, z
+command = ~45$D, $U, z
 time = 16
 
 [Command]
 name = "Sky High Claw"
-command = ~$D, $U, ~x
+command = ~45$D, $U, ~x
 time = 16
 [Command]
 name = "Sky High Claw"
-command = ~$D, $U, ~y
+command = ~45$D, $U, ~y
 time = 16
 [Command]
 name = "Sky High Claw"
-command = ~$D, $U, ~z
+command = ~45$D, $U, ~z
 time = 16
 
 [Command]
 name = "Sky High Claw EX"
-command = ~$D, $U, x+y
+command = ~45$D, $U, x+y
 time = 32
 [Command]
 name = "Sky High Claw EX"
-command = ~$D, $U, y+z
+command = ~45$D, $U, y+z
 time = 32
 [Command]
 name = "Sky High Claw EX"
-command = ~$D, $U, x+z
+command = ~45$D, $U, x+z
 time = 32
 
 [Command]
 name = "Scarlet Terror"
-command = ~$B, $F, a
+command = ~45$B, $F, a
 time = 32
 [Command]
 name = "Scarlet Terror"
-command = ~$B, $F, b
+command = ~45$B, $F, b
 time = 32
 [Command]
 name = "Scarlet Terror"
-command = ~$B, $F, c
+command = ~45$B, $F, c
 time = 32
 [Command]
 name = "Scarlet Terror"
-command = ~$B, $F, ~a
+command = ~45$B, $F, ~a
 time = 32
 [Command]
 name = "Scarlet Terror"
-command = ~$B, $F, ~b
+command = ~45$B, $F, ~b
 time = 32
 [Command]
 name = "Scarlet Terror"
-command = ~$B, $F, ~c
+command = ~45$B, $F, ~c
 time = 32
 
 [Command]
 name = "Scarlet Terror EX"
-command = ~$B, $F, a+b
+command = ~45$B, $F, a+b
 time = 32
 [Command]
 name = "Scarlet Terror EX"
-command = ~$B, $F, b+c
+command = ~45$B, $F, b+c
 time = 32
 [Command]
 name = "Scarlet TerrorEX"
-command = ~$B, $F, a+c
+command = ~45$B, $F, a+c
 time = 32
 
 [Command]
@@ -642,7 +642,7 @@ command = ~$F
 time = 1
 [Command]
 name = "rlsback"
-command = ~$B
+command = ~45$B
 time = 1
 [Command]
 name = "rlsup"
@@ -650,7 +650,7 @@ command = ~$U
 time = 1
 [Command]
 name = "rlsdown"
-command = ~$D
+command = ~45$D
 time = 1
 ;--------------------------------------------------------------------------
 ;Release Button
