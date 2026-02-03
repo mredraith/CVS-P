@@ -1,0 +1,49 @@
+; _______________________________________________
+;| Dee Jay by varo_hades			 |
+; 
+;====================<DEFINITION>====================
+
+[Info]
+name="Dee Jay"
+displayName="Dee Jay"
+versionDate=05,02,2012
+mugenVersion=1.0
+author="varo_hades" ;Edited by Bahamianking
+pal.defaults=4,10
+localCoord=320,240
+
+[Files]
+movelist = movelist.dat
+novelist =movelist.dat
+cmd=Command.cmd
+cns=Constants.cns
+st=States/System.st
+stCommon=common1.cns
+sprite=Sprite.sff
+anim=Anim.air
+sound=Sound.snd
+
+pal1=Palettes/Default.act
+pal2=Palettes/QuickFist_Custom1.act
+pal3=Palettes/QuickFist_Custom2.act
+pal4=Palettes/Jamaica.act
+pal5=Palettes/QuickFist_Custom3.act
+pal6=Palettes/QuickFist_Custom5.act
+pal7=Palettes/QuickFist_Custom6.act
+pal8=Palettes/QuickFist_Custom7.act
+pal9=Palettes/QuickFist_Custom8.act
+pal10=Palettes/QuickFist_Custom10.act
+pal11=Palettes/QuickFist_Custom11.act
+pal12=Palettes/QuickFist_Custom12.act
+
+st1=States/Normal.st
+st2=States/Special.st
+st3=States/Super.st
+st4=States/Helpers.st
+	
+[Arcade]
+intro.storyBoard=
+ending.storyBoard= 
+
+
+; FEINT CANCEL PATCHED
