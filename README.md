@@ -1,9 +1,10 @@
-<img width="800" height="600" alt="Capcom vs SNK Revo 2 logo. Silhouette of Ryu and Kyo crossing over with their attacks." src="https://github.com/user-attachments/assets/00c2f8a4-d4a0-4ae3-8260-6c7aecdd78a7" />
+<img width="800" height="600" alt="Capcom vs SNK Revo 2 logo. Silhouette of Ryu and Kyo crossing over with their attacks." src="https://github.com/user-attachments/assets/1b90fa31-38e0-4f5d-bc8a-7349f58065cb" />
 
 This is my patched/updated version of the Mugen game [Capcom vs SNK Evolution Rev 2](https://gamejolt.com/games/Capcom_vs_SNK/509026). It's more of a passion project/hobby than a real game, due to it already having a current release (even if I thnk it's very oddly balanced) and due to me having next to no knowledge on Mugen systems.
 
 Some of the listed changes made are;
 * Complete port to Ikemen GO
+* New characters, "The Claw" and Dee Jay
 * New screenpack, a little bit buggy
   * Netplay via Ikemen GO's built-in connection system
 * New stages, default ones + 3D stages from Final Fantasy (thank you PotS), MvC2 (thank you SuperFromND), Cvs2 (thank you amtrash), and miscellaneous (thank you xcheatdeath)
@@ -22,4 +23,7 @@ Some of the listed changes made are;
 * 360 motions replaced with HCF/HCB motions
 
 ***I did not make the original build!!!***
+
 I'm just updating it to make it more balanced and to make it run on Ikemen instead of Mugen. Please don't take this too seriously.
+
+Capcom and SNK are their own separate entities and reserve all rights to the characters and media they encompass. I am not profiting off of Capcom vs SNK Revo 2.
