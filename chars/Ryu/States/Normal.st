@@ -60,8 +60,8 @@ pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
 hitSound = -1 + 0 * (var(31) := 1)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
-ground.slidetime = 12 + 2 * var(29)
-ground.hittime = 12 + 2 * var(29)
+ground.slidetime = 10 + 2 * var(29)
+ground.hittime = 10 + 2 * var(29)
 ground.velocity = ifelse(var(20), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0;ifelse(var(20), -4.33, -8.17)
 air.type = Low
@@ -101,8 +101,8 @@ pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
 hitSound = -1 + 0 * (var(31) := 1)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
-ground.slidetime = 12 + 2 * var(29)
-ground.hittime = 12 + 2 * var(29)
+ground.slidetime = 13 + 2 * var(29)
+ground.hittime = 13 + 2 * var(29)
 ground.velocity = ifelse(var(20), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0;ifelse(var(20), -4.33, -8.17)
 air.type = Low
@@ -183,10 +183,11 @@ pausetime = ifelse(var(20), 5, 10), ifelse(var(20), 5, 10)
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
-ground.slidetime = 15 + 3 * var(29)
-ground.hittime = 15 + 3 * var(29)
+ground.slidetime = 16 + 3 * var(29)
+ground.hittime = 16 + 3 * var(29)
 ground.velocity = ifelse(var(20), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0;ifelse(var(20), -5.78, -10.47)
+guard.hittime = 13
 air.type = Low
 air.hittime = 120
 air.velocity = ifelse(var(20), -2.5, -5), -7
@@ -224,8 +225,8 @@ pausetime = ifelse(var(20), 5, 10), ifelse(var(20), 5, 10)
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
-ground.slidetime = 15 + 3 * var(29)
-ground.hittime = 15 + 3 * var(29)
+ground.slidetime = 18 + 3 * var(29)
+ground.hittime = 18 + 3 * var(29)
 ground.velocity = ifelse(var(20), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0;ifelse(var(20), -5.78, -10.47)
 air.type = Low
