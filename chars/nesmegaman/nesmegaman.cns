@@ -4,7 +4,7 @@
 ; constname = value 
 
 [Data]
-life = 1000 ;Amount of life to start with
+life = 250 ;Amount of life to start with
 power = 3000
 attack = 100 ;100% attack power (more is stronger)
 defence = 100 ;100% defensive power (more is stronger)

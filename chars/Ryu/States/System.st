@@ -779,13 +779,6 @@ type = VarSet
 trigger1 = AILevel
 sysvar(1) = ifElse((EnemyNear, MoveType != A || BackEdgeBodyDist <= 10), 1, ifElse((EnemyNear, MoveType = A), -1, 0))
 
-[State 40, QCF+UF Special Cancel]
-type = ChangeState
-value = 1000                    ; your ground QCF special
-triggerall = Time <= 4          ; jumpsquat cancel window
-triggerall = statetype = S
-trigger1 = command = "qcfx" || command = "qcfy" || command = "qcfz" || command = "qcfs" || command = "qcf2p"
-
 [State 40, High Jump]
 type = VarSet
 trigger1 = !Time && !AILevel
@@ -4735,7 +4728,7 @@ ignoreHitPause = 1
 [State -3, Cancel Restriction]
 type = VarSet
 triggerall = !var(20)
-trigger1 = (stateno = 210 && (anim = 210 || anim = 213))
+trigger1 = stateno = 210
 trigger2 = stateno = 212
 trigger3 = stateno = 213
 trigger4 = (stateno = 220 && anim = 220)

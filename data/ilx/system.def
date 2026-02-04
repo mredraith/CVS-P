@@ -290,12 +290,6 @@ type = anim
 actionno = 105
 start = -810,890
 
-[TitleBG Transition]
-type = anim
-actionno = 205
-layerno = 1
-start = -640,0
-
 [Begin Action 102]
 100,2, 0,0, 20
 100,2, 0,0, 10
