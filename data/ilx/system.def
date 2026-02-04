@@ -44,7 +44,7 @@ fight = fight/fight.def ;Fight definition filename
 font1 = f-4x6.def
 font2 = name14.def
 font3 = ilx/font/tektur46.def ;enter48.def
-font4 = ilx/font/MvC-regular.def ;revamped51.def ;arcade.def
+font4 = ilx/font/Jam 16x25.def ;revamped51.def ;arcade.def
 font5 = ilx/font/tektur26.def ;mssansserif-tt36.def
 ;font5.height = 36 ;Uncomment to override the size of the font (Truetype fonts only)
 font6 = infofont.def
@@ -119,13 +119,13 @@ hiscore.bgm.loopend =
 ;-------------------------------------------------------------------
 ;Title screen definition
 [Title Info]
-fadein.time = 10
-fadeout.time = 10
+fadein.time = 6
+fadeout.time = 6
 menu.pos = 30,180;640,300;1250,450;640,380
 menu.item.font = 4,2,1
 menu.item.active.font = 4,1,1, 224,240,240
-menu.item.scale = 1.2,1.2
-menu.item.active.scale = 1.2,1.2
+menu.item.scale = 2,2
+menu.item.active.scale = 2.2,2.2
 menu.item.spacing = 60, 50;54
 
 connecting.offset = 640, 393 ;Ikemen feature
@@ -656,7 +656,7 @@ portrait.offset = 4,4;2,2
 portrait.scale = 0.32,0.32;0.16,0.16;0.72,0.72
 title.offset = 640,60 ;Position of title (Arcade Mode, etc)
 title.font = 4,1,0 ;Font of title (-1 for none)
-title.scale = 1,1;0.8,0.8
+title.scale = 2,2;0.8,0.8
 
 ;-----------------------
 ; CELL SKIPPING
@@ -780,12 +780,12 @@ p8.face.done.anim = 181
 ;Name
 p1.name.offset = 184,416 ;Position to put name
 p1.name.font = 4,1,0 ;Set to -1 for no display
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1.6,1.6
 p1.name.spacing = 0,36 ;Space between each name for players on the same team
 p2.name.offset = 1096,416
 p2.name.font = 4,1,0
 p2.name.spacing = 0,36
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1.6,1.6
 
 ;Stage select
 stage.pos = 640,706
@@ -941,18 +941,18 @@ p2.palmenu.pos = 1230, 90
 p1.palmenu.text.text = "Color"
 p1.palmenu.text.offset = 50,620
 p1.palmenu.text.font = 4,1,0
-p1.palmenu.text.scale = 1,1
+p1.palmenu.text.scale = 2,2
 p2.palmenu.text.text = "Color"
 p2.palmenu.text.offset = -50,620
 p2.palmenu.text.font = 4,1,0
-p2.palmenu.text.scale = 1,1
+p2.palmenu.text.scale = 2,2
 
 p1.palmenu.number.offset = 160, 620
 p1.palmenu.number.font = 4,1,0
-p1.palmenu.number.scale = 1,1
+p1.palmenu.number.scale = 2,2
 p2.palmenu.number.offset = -160, 620
 p2.palmenu.number.font = 4,1,0
-p2.palmenu.number.scale = 1,1
+p2.palmenu.number.scale = 2,2
 
 p1.palmenu.next.key = $U, $F
 p1.palmenu.previous.key = $D, $B
