@@ -9,7 +9,7 @@ Some of the listed changes made are;
 * New characters, "The Claw" and Dee Jay
 * New screenpack, a little bit buggy
   * Netplay via Ikemen GO's built-in connection system
-* New stages, default ones + 3D stages from Final Fantasy (thank you PotS), MvC2 (thank you SuperFromND), Cvs2 (thank you amtrash), and miscellaneous (thank you xcheatdeath)
+* New stages, default ones + 3D stages from Final Fantasy (thank you PotS), MvC2 (thank you SuperFromND), Cvs2 (thank you amtrash), and miscellaneous (thank you xcheatdeath and Kasasagi)
   * Feel free to suggest new stages, or add your own
 * Normalizing life/power values across the entire cast (1000 health, 3000 power)
 * Normalizing fastest attack speed at 3f startup
