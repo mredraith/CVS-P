@@ -1,0 +1,108 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Sunset Park (Day)"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -169.66666667
+boundright = 169.66666667
+boundhigh = -142
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 0, 24, 48
+intensity = 64
+yscale = 0.2
+
+[Music]
+bgmusic = sound/Uh-OH!2.mp3
+;bgvolume = -100
+
+[BGdef]
+debugbg = 1
+spr = NewPlayground2.sff
+
+[BG 1]
+type = normal
+spriteno = 5, 0
+start = 0, 25
+delta = 0.235, 0.28
+
+[BG Down]
+type = normal
+spriteno = 5, 0
+start = -2, 264
+scalestart = 1, -1
+delta = 0.235, 0.28
+
+[BG 2]
+type = normal
+spriteno = 2, 0
+start = 0, 55
+delta = 0.74, 0.85
+mask = 1
+
+[BG 3]
+type = normal
+spriteno = 3, 0
+start = 0, 55
+delta = 0.76999018, 0.85
+mask = 1
+
+[BG 4]
+type = normal
+spriteno = 4, 0
+start = 0, 55
+delta = 0.76999018, 0.85
+mask = 1
+
+[BG 5]
+type = normal
+spriteno = 6, 0
+start = 1, 55
+delta = 0.92, 1
+mask = 1
+
+[BG 6]
+type = parallax
+spriteno = 1, 0
+start = 0, 154
+delta = 0.92, 1
+xscale = 1, 1.22
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

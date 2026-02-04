@@ -1,0 +1,371 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;Togakushi, Tsunade's stage from Kabuki Klash, by Phantom.of.the.Server
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Togakushi"
+versiondate = 03, 20, 2007
+author = "Phantom.of.the.Server"
+
+[Music]
+bgmusic = sound/Togakushi.mp3
+;bgvolume = 255
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -97.66666667
+boundright = 97.66666667
+boundhigh = -66
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 162
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 0
+yscale = 0
+
+[Reflection]
+reflect = 1
+intensity = 128
+scale = 1
+
+[BGdef]
+spr = Togakushi.sff
+debugbg = 0
+
+[BG trees]
+type = normal
+spriteno = 0, 1
+start = -102, -54
+delta = 0.89761091, 0.91044776
+tile = 1, 0
+tilespacing = 0, 0
+mask = 1
+
+[BG sky]
+type = normal
+spriteno = 0, 2
+start = 0, -54
+delta = 0.89761091, 0.91044776
+mask = 1
+
+[BG main]
+type = normal
+spriteno = 0, 0
+start = 0, -54
+delta = 1, 1
+mask = 1
+
+[BG mill]
+type = anim
+actionno = 1
+start = 0, -54
+delta = 1, 1
+
+[BG waterfall]
+type = anim
+actionno = 2
+start = 0, -54
+delta = 1, 1
+
+[BG fishing bird]
+type = anim
+actionno = 3
+start = 0, -54
+delta = 1, 1
+
+[BG splash]
+type = anim
+actionno = 5
+start = 0, -54
+delta = 1, 1
+
+[BG bird 0]
+type = anim
+actionno = 4
+start = -440, 93
+delta = 1, 1
+velocity = 4, -0.6
+ID = 40
+
+[BG bird 1]
+type = anim
+actionno = 4
+start = -368, 83
+delta = 1, 1
+velocity = 3.5, -0.5
+ID = 41
+
+[BG bird 2]
+type = anim
+actionno = 4
+start = -344, 79
+delta = 1, 1
+velocity = 4, -0.5
+ID = 42
+
+[BG bird 3]
+type = anim
+actionno = 4
+start = -422, 85
+delta = 1, 1
+velocity = 5.5, -0.5
+ID = 43
+
+[BG bird 4]
+type = anim
+actionno = 4
+start = -508, 95
+delta = 1, 1
+velocity = 7, -0.8
+ID = 44
+
+[BG bird 5]
+type = anim
+actionno = 4
+start = -480, 101
+delta = 1, 1
+velocity = 7, -1.2
+ID = 45
+
+[BG bird 6]
+type = anim
+actionno = 4
+start = -332, 76
+delta = 1, 1
+velocity = 5, -1.2
+ID = 46
+
+[BG bird 7]
+type = anim
+actionno = 4
+start = -376, 81
+delta = 1, 1
+velocity = 7, -0.5
+ID = 47
+
+[BG water]
+type = normal
+spriteno = 0, 4
+layerno = 1
+start = 0, -54
+delta = 1, 1
+trans = addalpha
+alpha = 128, 128
+mask = 1
+
+[BG grass]
+type = normal
+spriteno = 0, 3
+layerno = 1
+start = 0, -54
+delta = 1, 1
+mask = 1
+
+[BGctrldef 4]
+ctrlID = 40, 41, 42, 43, 44, 45, 46, 47
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 40
+time = 0
+value = 4
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 41
+time = 4
+value = 4
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 42
+time = 7
+value = 4
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 43
+time = 11
+value = 4
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 44
+time = 14
+value = 4
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 45
+time = 18
+value = 4
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 46
+time = 21
+value = 4
+
+[BGctrl 4, anim]
+type = anim
+ctrlID = 47
+time = 25
+value = 4
+
+[Begin Action 0]
+-1,-1, 0,0, -1
+
+[Begin Action 1]
+1,0, 0,0, 9
+1,1, 0,0, 9
+1,2, 0,0, 9
+1,3, 0,0, 9
+
+[Begin Action 2]
+2,0, 0,0, 9
+2,1, 0,0, 9
+2,2, 0,0, 9
+2,3, 0,0, 9
+
+[Begin Action 3]
+3,0, 0,0, 192
+3,1, 0,0, 120
+3,0, 0,0, 192
+3,1, 0,0, 120
+3,2, 0,0, 1
+3,2, -4,3, 1
+3,2, -8,6, 1
+3,2, -12,9, 1
+3,2, -16,13, 1
+3,2, -20,16, 1
+3,2, -24,19, 1
+3,2, -28,22, 1
+3,2, -32,26, 1
+3,2, -36,29, 1
+3,2, -40,32, 1
+3,2, -44,35, 1
+3,3, 0,0, 10
+3,4, 0,0, 4
+3,3, 0,0, 10
+3,4, 0,0, 4
+3,3, -5,-2, 1
+3,3, -10,-4, 1
+3,3, -14,-6, 1
+3,3, -19,-8, 1
+3,4, -23,-10, 1
+3,4, -28,-12, 1
+3,4, -32,-14, 1
+3,4, -37,-16, 1
+3,3, -41,-18, 1
+3,3, -46,-20, 1
+3,3, -51,-22, 1
+3,3, -55,-24, 1
+3,4, -60,-26, 1
+3,4, -64,-28, 1
+3,4, -69,-30, 1
+3,4, -73,-32, 1
+3,3, -78,-34, 1
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,7, 0,0, 8
+3,5, 0,0, 24
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,7, 0,0, 8
+3,5, 0,0, 30
+3,8, 0,0, 6
+3,9, 0,0, 6
+3,0, -134,6, 30
+3,1, -134,6, 20
+3,0, -134,6, 30
+3,1, -134,6, 20
+3,0, -134,6, 30
+3,1, -134,6, 20
+3,10, 0,0, 1
+3,10, 6,0, 1
+3,10, 11,0, 1
+3,10, 17,-1, 1
+3,11, 0,0, 1
+3,11, 6,0, 1
+3,11, 12,0, 1
+3,11, 17,-1, 1
+3,10, 45,-2, 1
+3,10, 50,-2, 1
+3,10, 56,-2, 1
+3,10, 61,-3, 1
+3,11, 45,-2, 1
+3,11, 51,-2, 1
+3,11, 56,-2, 1
+3,11, 62,-3, 1
+3,10, 89,-4, 1
+3,10, 95,-4, 1
+3,10, 101,-4, 1
+3,10, 106,-5, 1
+3,11, 90,-4, 1
+3,11, 95,-4, 1
+3,11, 101,-4, 1
+
+[Begin Action 4]
+4,0, 0,0, 5
+4,1, 0,0, 5
+4,2, 0,0, 5
+4,3, 0,0, 8
+4,4, 0,0, 5
+
+[Begin Action 5]
+-1,-1, 0,0, 636
+5,0, 0,0, 3
+5,1, 0,0, 3
+5,2, 0,0, 3
+-1,-1, 0,0, 411
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

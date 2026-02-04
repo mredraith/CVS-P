@@ -1,0 +1,129 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+; Stage information :
+; -----------------
+; From the game: 	Street Fighter II - World Warriors
+; Name:			Sagat's Stage (Thailand)
+; Version:		0.1
+
+; Rip information :
+; ---------------
+; By:			Dark Saviour
+; From:			Win Kawaks 1.45
+; With:			MCM 1.5
+; Date:			21/09/2003
+; Update:		18/01/2004
+
+; Contacts :
+; --------
+; Email: 		darksaviour77@hotmail.com
+; site:			http://www.ds-arena.fr.st
+
+; Please don't link these files ;)
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "(SF2) Sagat's Stage"
+displayname = "Ayutthaya Ruins"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -170.66666667
+boundright = 170.66666667
+boundhigh = 0
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 162
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 32, 0, 32
+intensity = 128
+yscale = 0.175
+
+[Music]
+bgmusic = sound/sf2-15-sagat.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = sf2-11-sagat.sff
+debugbg = 0
+
+[BG Background]
+type = normal
+spriteno = 0, 0
+start = 0, -54
+delta = 0.56933594, 0.75
+
+[BG Buddha]
+type = normal
+spriteno = 1, 0
+start = 0, -54
+delta = 0.73925744, 1
+mask = 1
+
+[BG Ground]
+type = parallax
+spriteno = 2, 0
+start = 0, 138
+delta = 0.73925744, 1
+xscale = 1, 1.69
+
+[BG Rock1]
+type = normal
+spriteno = 3, 0
+start = -197, 165
+delta = 1.18, 1
+mask = 1
+layerno = 1
+
+[BG Rock2]
+type = normal
+spriteno = 3, 0
+start = 133, 123
+delta = 0.73925744, 1
+mask = 1
+
+[BG Tree]
+type = anim
+actionno = 0
+start = 69, -54
+delta = 1.24902325, 1.275
+layerno = 1
+
+[Begin Action 0] ; Tree
+4,0, 0,0, 24
+4,1, 0,0, 24
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

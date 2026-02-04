@@ -1,0 +1,184 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;========================================================
+;
+; A ghostly park at night.
+;
+; Stage from the game Samurai Shodown IV by SNK-Playmore.
+;
+; M.U.G.E.N. adaptation by R.o.q.u.e.
+;
+; Special thanks to :
+;  - SNK-Playmore for the Samurai Shodown series
+;  - Mr K, for WinKawaks
+;  - Corel, for Paint Shop Pro
+;  - Sés, for M.C.M.
+;  - Christophe and Winane, for SFFExtract
+;  - Elecbyte, for Sprmaker
+;
+; For more M.U.G.E.N. material, visit the website : http://alice-games.org
+;
+; Notes :
+; - In the original game, the stage is named Arie.
+; - A variant of this stage (without the castle in the background) is used is Samurai Shodown V
+; as Rasetsumaru's stage.
+;
+;========================================================
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Night Park"
+displayname = "Cherry Blossom Park"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -98.66666667
+boundright = 98.66666667
+boundhigh = -212
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 24, 0, 0
+intensity = 128
+yscale = 0.25
+
+[Music]
+bgmusic = sound/nightpark.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = nightpark.sff
+debugbg = 0
+
+[BG Castle Background]
+type = normal
+spriteno = 10, 0
+start = 0, -61
+delta = 0.47, 0.73
+mask = 0
+tile = 1, 0
+
+[BG Castle]
+type = anim
+actionno = 10
+start = 0, -61
+delta = 0.47, 0.73
+
+[BG Park]
+type = normal
+spriteno = 0, 0
+start = 0, -61
+delta = 1, 1
+mask = 1
+
+[BG 1st Lamp]
+type = anim
+actionno = 20
+start = -302, 74
+delta = 1, 1
+
+[BG 2nd Lamp]
+type = anim
+actionno = 30
+start = -193, 65
+delta = 1, 1
+
+[BG 3rd Lamp]
+type = anim
+actionno = 40
+start = -95, 74
+delta = 1, 1
+
+[BG 4th Lamp]
+type = anim
+actionno = 50
+start = -2, 65
+delta = 1, 1
+
+[BG 5th Lamp]
+type = anim
+actionno = 60
+start = 161, 74
+delta = 1, 1
+
+[BG 6th Lamp]
+type = anim
+actionno = 70
+start = 270, 66
+delta = 1, 1
+
+[Begin Action 10]
+10,1, 0,0, 1000, , AS256D0
+
+[Begin Action 20]
+20,1, 0,0, 8
+20,2, 0,0, 8
+20,1, 0,0, 8
+20,4, 0,0, 8
+
+[Begin Action 30]
+30,1, 0,0, 8
+30,2, 0,0, 8
+30,3, 0,0, 8
+30,4, 0,0, 8
+
+[Begin Action 40]
+40,1, 0,0, 8
+40,2, 0,0, 8
+40,3, 0,0, 8
+40,4, 0,0, 8
+
+[Begin Action 50]
+50,1, 0,0, 8
+50,2, 0,0, 8
+50,3, 0,0, 8
+50,4, 0,0, 8
+
+[Begin Action 60]
+60,1, 0,0, 8
+60,2, 0,0, 8
+60,3, 0,0, 8
+60,4, 0,0, 8
+
+[Begin Action 70]
+70,1, 0,0, 8
+70,2, 0,0, 8
+70,3, 0,0, 8
+70,4, 0,0, 8
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

@@ -1,0 +1,216 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;Live House of the Dark Realm, stage from Capcom's Marvel VS Capcom, by Phantom.of.the.Server
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Live House of the Dark Realm"
+displayname = "Makai Live House"
+author = "Phantom.of.the.Server"
+versiondate = 2023
+
+[Music]
+bgmusic = sound/LiveHouse.mp3
+;bgmvolume = 100
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -170.66666667
+boundright = 170.66666667
+boundhigh = -239
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 162
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 0, 8, 48
+intensity = 128
+yscale = 0.5
+
+[BGdef]
+spr = LiveHouse.sff
+debugbg = 0
+
+[BG back]
+type = anim
+actionno = 4
+start = 20, -58
+delta = 0.8, 0.8
+
+[BG middle]
+type = anim
+actionno = 3
+start = 0, -54
+delta = 1, 1
+
+[BG middle down]
+type = normal
+spriteno = 3, 0
+start = 0, 425
+scalestart = 1, -1
+delta = 1, 1
+
+[BG flame 3]
+type = anim
+actionno = 10
+start = 0, -54
+delta = 1, 1
+
+[BG zabel]
+type = anim
+actionno = 6
+start = 0, -54
+delta = 1, 1
+
+[BG flame 1]
+type = anim
+actionno = 8
+start = 0, -54
+delta = 1, 1
+
+[BG skeletons]
+type = anim
+actionno = 5
+start = 0, -54
+delta = 1, 1
+
+[BG front]
+type = anim
+actionno = 1
+start = 0, -54
+delta = 1, 1
+
+[BG table]
+type = anim
+actionno = 2
+start = 0, -54
+delta = 1, 1
+
+[BG flame 2]
+type = anim
+actionno = 9
+start = 0, -54
+delta = 1, 1
+
+[BG guitar]
+type = anim
+actionno = 7
+start = 0, -54
+delta = 1, 1
+
+[Begin Action 1]
+1,0, 0,0, 6
+1,1, 0,0, 6
+
+[Begin Action 2]
+2,0, 0,0, 2
+2,1, 0,0, 6
+2,0, 0,0, 4
+
+[Begin Action 3]
+3,0, 0,0, 3
+3,1, 0,0, 6
+3,0, 0,0, 3
+
+[Begin Action 4]
+4,0, 0,0, 240
+4,1, 0,0, 2
+4,0, 0,0, 2
+4,1, 0,0, 2
+4,0, 0,0, 2
+4,1, 0,0, 2
+4,0, 0,0, 2
+4,0, 0,0, 360
+4,1, 0,0, 2
+4,0, 0,0, 2
+4,1, 0,0, 2
+4,0, 0,0, 2
+4,1, 0,0, 2
+4,0, 0,0, 2
+
+[Begin Action 5]
+5,0, 0,0, 4
+5,1, 0,0, 3
+5,2, 0,0, 4
+5,3, 0,0, 3
+5,4, 0,0, 4
+5,0, 0,0, 3
+5,1, 0,0, 4
+5,2, 0,0, 3
+5,3, 0,0, 4
+5,4, 0,0, 3
+
+[Begin Action 6]
+6,0, 0,0, 13
+6,1, 0,0, 6
+6,2, 0,0, 6
+6,3, 0,0, 6
+6,4, 0,0, 6
+6,5, 0,0, 6
+Loopstart
+6,6, 0,0, 6
+6,7, 0,0, 6
+
+[Begin Action 7]
+7,0, 0,0, 5
+7,1, 0,0, 5
+
+[Begin Action 8]
+8,0, 0,0, 5
+8,1, 0,0, 5
+8,2, 0,0, 5
+8,3, 0,0, 5
+8,4, 0,0, 5
+8,5, 0,0, 5
+8,6, 0,0, 5
+8,7, 0,0, 5
+
+[Begin Action 9]
+9,0, 0,0, 5
+9,1, 0,0, 5
+9,2, 0,0, 5
+9,3, 0,0, 5
+
+[Begin Action 10]
+10,0, 0,0, 3
+10,1, 0,0, 6
+10,2, 0,0, 6
+10,3, 0,0, 6
+10,4, 0,0, 6
+10,5, 0,0, 6
+10,6, 0,0, 6
+10,7, 0,0, 6
+10,0, 0,0, 3
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

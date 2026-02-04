@@ -1,0 +1,111 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;========================================================
+;
+; A japanese castle in the sea at night.
+;
+; Stage from the game Samurai Shodown V Special by SNK-Playmore.
+;
+; M.U.G.E.N. adaptation by R.o.q.u.e.
+;
+; Special thanks to :
+;  - SNK-Playmore for the Samurai Shodown series
+;  - Mr K, for WinKawaks
+;  - Corel, for Paint Shop Pro
+;  - Sés, for M.C.M.
+;  - Christophe and Winane, for SFFExtract
+;  - Elecbyte, for Sprmaker
+;
+; For more M.U.G.E.N. material, visit the website : http://alice-games.org
+;
+;========================================================
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Sea Castle - Night"
+displayname = "Gairyu Isle (Night)"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -98.66666667
+boundright = 98.66666667
+boundhigh = -335
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 169
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+;color = 64, 64, 64
+intensity = 128
+yscale = 0.4
+fade.range = -400,-100
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/sea.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = sea_castle_night.sff
+debugbg = 0
+
+[BG Background]
+type = normal
+spriteno = 1, 1
+start = 0, -55
+delta = 0.18351351, 0.73
+mask = 0
+
+[BG Floor]
+type = anim
+actionno = 0
+start = 0, -57
+delta = 1, 1
+mask = 1
+
+[Begin action 0]
+0,1, 0,0, 8
+0,2, 0,0, 8
+0,3, 0,0, 8
+0,4, 0,0, 8
+0,5, 0,0, 8
+0,6, 0,0, 8
+0,7, 0,0, 8
+0,8, 0,0, 8
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

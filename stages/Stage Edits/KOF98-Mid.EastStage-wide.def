@@ -1,0 +1,160 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;------------------------------------------------------------------------------
+;------------The King Of Fighters'98--Mid.EastStage(Mid.Eastステージ）---------
+;製作：RYO 2005-----11月27日製作終了-------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "KOF98 Mid.East Stage"
+displayname = "Middle Eastern Bazaar"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -162.66666667
+boundright = 162.66666667
+boundhigh = -15
+verticalfollow = 0.125
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 163
+autoturn = 1
+;resetBG = 1
+
+[Shadow]
+intensity = 160
+color = 0,48,128
+yscale = 0.2
+
+[Music]
+;bgvolume = 255
+
+[BGdef]
+spr = KOF98-Mid.EastStage.sff
+debugbg = 0
+
+[BG 0];最背景・街並み・奥
+type = normal
+spriteno = 0, 0
+start = -6, 185
+delta = 0.8, 0.2
+mask = 1
+
+[BG 5];最背景・街並み・手前
+type = normal
+spriteno = 5, 0
+start = 0, 191
+delta = 0.9, 0.5
+mask = 1
+
+[BG 10];背景・商店街全景
+type = normal
+spriteno = 10, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 15];背景・垂れ幕
+type = anim
+actionno = 15
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 15];背景・垂れ幕・アニメーション
+15,0, 0,0, 10
+15,1, 0,0, 10
+15,2, 0,0, 10
+15,3, 0,0, 10
+15,4, 0,0, 10
+15,5, 0,0, 10
+15,6, 0,0, 10
+15,7, 0,0, 10
+
+[BG 20];背景・店の親父
+type = anim
+actionno = 20
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 20];背景・店の親父・アニメーション
+20,0, 0,0, 10
+20,1, 0,0, 10
+20,2, 0,0, 10
+20,3, 0,0, 10
+20,4, 0,0, 10
+20,5, 0,0, 10
+20,6, 0,0, 10
+20,7, 0,0, 10
+
+[BG 25];背景・観客・左
+type = anim
+actionno = 25
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 25];背景・観客・左・アニメーション
+25,0, 0,0, 10
+25,1, 0,0, 10
+25,2, 0,0, 10
+25,3, 0,0, 10
+25,4, 0,0, 10
+25,5, 0,0, 10
+25,6, 0,0, 10
+25,7, 0,0, 10
+
+[BG 30];背景・観客・中央
+type = anim
+actionno = 30
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 30];背景・観客・中央・アニメーション
+30,0, 0,0, 10
+30,1, 0,0, 10
+30,2, 0,0, 10
+30,3, 0,0, 10
+30,4, 0,0, 10
+30,5, 0,0, 10
+30,6, 0,0, 10
+30,7, 0,0, 10
+
+[BG 35];背景・観客・右
+type = normal
+spriteno = 35, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

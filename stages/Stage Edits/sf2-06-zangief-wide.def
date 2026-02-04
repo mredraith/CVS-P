@@ -1,0 +1,153 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+; Stage information :
+; -----------------
+; From the game: 	Street Fighter II - World Warriors
+; Name:			Zangief's Stage (USSR)
+; Version:		0.1
+
+; Rip information :
+; ---------------
+; By:			Dark Saviour
+; From:			Win Kawaks 1.45
+; With:			MCM 1.5
+; Date:			09/12/2002
+
+; Contacts :
+; --------
+; Email: 		darksaviour77@hotmail.com
+; site:			http://www.ds-arena.fr.st
+
+; Please don't link these files ;)
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "(SF2) Zangief's Stage"
+displayname = "Soviet Factory"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -170.66666667
+boundright = 170.66666667
+boundhigh = 0
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 480, 270
+portraitscale = 0.5
+zoffset = 162
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+;color = 128, 128, 128
+intensity = 128
+yscale = -0.15
+fade.range = -240, 0
+
+[Music]
+bgmusic = sound/sf2-06-zangief.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = sf2-06-zangief.sff
+debugbg = 0
+
+[BG Background]
+type = normal
+spriteno = 0, 0
+start = 0, -54
+;start = 0, -63
+delta = 0.28515606, 0.5
+mask = 0
+
+[BG Ground]
+type = parallax
+spriteno = 4, 0
+start = 0, 128
+delta = 0.63378888, 1
+xscale = 1, 1.95
+mask = 0
+
+[BG GridBack]
+type = normal
+spriteno = 1, 0
+start = 0, -54
+delta = 0.63378888, 1
+mask = 1
+
+[BG WorkersUp]
+type = anim
+actionno = 0
+start = -258, -40
+delta = 0.63378888, 1
+mask = 0
+
+[BG WorkersDown]
+type = anim
+actionno = 1
+start = -271, 28
+delta = 0.63378888, 1
+mask = 0
+
+[BG Extinguisher]
+type = normal
+spriteno = 5, 0
+start = 48, 104
+delta = 0.683593, 1
+mask = 1
+
+[BG Chain]
+type = normal
+spriteno = 6, 0
+start = 220, -54
+delta = 1.14, 1
+mask = 1
+layerno = 1
+
+[BG GirdFront]
+type = normal
+spriteno = 7, 0
+start = -426, 92
+delta = 1.24902325, 1.5
+mask = 1
+layerno = 1
+
+[Begin Action 0] ; Workers Up
+2,0, 0,0, 12
+2,1, 0,0, 12
+2,2, 0,0, 12
+
+[Begin Action 1] ; Workers Down
+3,0, 0,0, 12
+3,1, 0,0, 12
+3,2, 0,0, 12
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

@@ -1,0 +1,191 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;------------------------------------------------------------------------------
+;------------月華の剣士--Washizuka Stage--(鷲塚　慶一郎ステージ)---------------
+;製作：RYO 2005-----11月8日製作終了--------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "LB Washizuka Stage"
+displayname = "Court After Rain"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -186.66666667
+boundright = 186.66666667
+boundhigh = -190
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 163
+autoturn = 1
+
+[Shadow]
+intensity = 64
+yscale = 1
+reflect = 1
+
+[Reflection]
+intensity = 32
+reflect = 1
+
+[Music]
+;bgvolume = 255
+
+[BGdef]
+spr = LB-WashizukaStage.sff
+debugbg = 0
+
+[BG 0.0];背景・最背景
+type = normal
+spriteno = 0, 0
+start = 0, 185
+delta = 0.74285714, 0.825
+mask = 0
+
+[BG 0.1];背景・最背景
+type = normal
+spriteno = 0, 1
+start = 0, 185
+delta = 0.87142857, 0.85
+mask = 1
+
+[BG 5];背景・背景
+type = anim
+actionno = 5
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 5]
+5,0, 0,0, 8
+5,1, 0,0, 8
+5,2, 0,0, 8
+5,3, 0,0, 8
+5,4, 0,0, 8
+5,5, 0,0, 8
+5,6, 0,0, 8
+5,7, 0,0, 8
+
+[BG 10];背景・左端
+type = anim
+actionno = 10
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 10];左端・アニメーション
+10,0, 0,0, 8
+10,1, 0,0, 8
+10,2, 0,0, 8
+10,3, 0,0, 8
+10,4, 0,0, 8
+10,5, 0,0, 8
+10,6, 0,0, 8
+10,7, 0,0, 8
+
+;[BG 15];背景・中央
+;type = anim
+;actionno = 15
+;start = 0, 185
+;delta = 1, 1
+;mask = 1
+
+[Begin action 15];中央・アニメーション
+15,0, 0,0, 8
+15,1, 0,0, 8
+15,2, 0,0, 8
+15,3, 0,0, 8
+15,4, 0,0, 8
+15,5, 0,0, 8
+15,6, 0,0, 8
+15,7, 0,0, 8
+
+;[BG 20];背景・右
+;type = anim
+;actionno = 20
+;start = 0, 185
+;delta = 1, 1
+;mask = 1
+
+[Begin action 20];右・アニメーション
+20,0, 0,0, 8
+20,1, 0,0, 8
+20,2, 0,0, 8
+20,3, 0,0, 8
+20,4, 0,0, 8
+20,5, 0,0, 8
+20,6, 0,0, 8
+20,7, 0,0, 8
+
+[BG 25];背景・手前・草
+type = normal
+spriteno = 25, 0
+layerno = 1
+start = -382, 183
+delta = 1.25714286, 1.2
+mask = 1
+
+[BG 30];背景・手前
+type = normal
+spriteno = 30, 0
+layerno = 1
+start = 397, 181
+delta = 1.25714286, 1.2
+mask = 1
+
+[BG 35];背景・手前・草
+type = anim
+actionno = 35
+layerno = 1
+start = 356, 185
+delta = 1.12857143, 1.1
+mask = 1
+
+[Begin action 35];手前・草・アニメーション
+35,0, 0,0, 8
+35,1, 0,0, 8
+35,2, 0,0, 8
+35,3, 0,0, 8
+35,4, 0,0, 8
+35,5, 0,0, 8
+35,6, 0,0, 8
+35,7, 0,0, 8
+
+[BG 40]
+type = normal
+spriteno = 40, 0
+layerno = 1
+start = -345, 155
+delta = 1.12857143, 1.1
+mask = 1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

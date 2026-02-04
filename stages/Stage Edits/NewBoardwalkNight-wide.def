@@ -1,0 +1,155 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;stage template by Eternaga , Email: Eternaga@hotmail.com
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Rockaway Beach (Night)"
+
+[BGdef]
+spr = NewBoardwalkNight.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound\kalimba.mp3
+;bgvolume = -100
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -216.66666667
+boundright = 216.66666667
+boundhigh = -69
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 190
+yscale = 0.2
+
+[Reflection]
+intensity = 0
+
+[BG 0 Layer 1]
+type = normal
+spriteno = 12, 0
+start = 30, -28
+scalestart = -1, 1
+delta = 0.2, 0.75
+mask = 0
+
+[BG 0 Layer 2]
+type = normal
+spriteno = 12, 0
+start = 0, 9
+delta = 0.2, 0.75
+mask = 0
+
+[BG 0 Up]
+type = normal
+spriteno = 12, 0
+start = 30, -152
+scalestart = 1, -1
+delta = 0.2, 0.75
+mask = 0
+
+[BG Beach]
+type = anim
+actionno = 1
+start = 0, 150
+delta = 0.37692308, 0.75
+mask = 1
+
+[BG Beach Down]
+type = anim
+actionno = 1
+start = 0, 147
+scalestart = 1, -1
+delta = 0.37692308, 0.75
+mask = 1
+
+[BG Fighting Ground]
+type = normal
+spriteno = 2, 0
+start = 0, 143
+delta = 1, 1
+mask = 1
+
+[BG Rail]
+type = normal
+spriteno = 4, 0
+start = 0, 145
+mask = 1
+delta = 1, 1
+
+[BG Lamp]
+type = normal
+spriteno = 5, 0
+start = -197, 153
+mask = 1
+delta = 1, 1
+
+[BG Lamp 2]
+type = normal
+spriteno = 5, 0
+start = 196, 153
+mask = 1
+delta = 1, 1
+
+[BG Sign]
+type = normal
+spriteno = 6, 0
+start = -197, 183
+mask = 1
+delta = 1, 1
+
+[BG Benches]
+type = normal
+spriteno = 8, 0
+start = 0, 143
+mask = 1
+delta = 1, 1
+
+[Begin Action 1]
+3,0, 0,0, 11
+3,1, 0,0, 11
+3,2, 0,0, 11
+3,3, 0,0, 11
+3,4, 0,0, 11
+3,5, 0,0, 11
+
+[Begin Action 2]
+9,0, 0,0, -1,,AS60D60
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

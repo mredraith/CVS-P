@@ -1,0 +1,216 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;Geese Tower, Geese's stage from Real Bout Fatal Fury Special, by Phantom.of.the.Server
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Geese Tower"
+displayname = "Geese's Tower"
+versiondate = 19, 12, 2007
+author = "Phantom.of.the.Server"
+
+[Music]
+bgmusic = sound/GeeseTheme.mp3
+;bgvolume = 255
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -258.66666667
+boundright = 258.66666667
+boundhigh = -17
+verticalfollow = 0.15
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 151
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+intensity = 96
+yscale = 0.5
+
+[BGdef]
+spr = GeeseTower.sff
+debugbg = 0
+
+[BG main]
+type = normal
+spriteno = 0, 0
+start = 0, -51
+delta = 1, 1
+mask = 1
+
+[BG center statue]
+type = anim
+actionno = 2
+start = 0, -51
+delta = 1, 1
+
+[BG other statues]
+type = anim
+actionno = 3
+start = 0, -51
+delta = 1, 1
+
+[BG glowing eyes]
+type = anim
+actionno = 4
+start = 0, -51
+delta = 1, 1
+
+[BG lamps]
+type = anim
+actionno = 1
+start = 0, -51
+delta = 1, 1
+
+[BG pillars]
+type = normal
+spriteno = 0, 1
+start = 0, -51
+delta = 1, 1
+mask = 1
+
+[BG front];121/108
+type = normal
+spriteno = 0, 2
+layerno = 1
+start = 0, -51
+delta = 1.1507732, 1.25
+mask = 1
+
+[BG darken]
+type = anim
+actionno = 7
+layerno = 1
+start = 0, -51
+delta = 0, 0
+tile = 1, 1
+tilespacing = 80, 80
+
+[BG door]
+type = normal
+spriteno = 5, 0
+layerno = 1
+start = 0, -51
+delta = 0, 0
+mask = 1
+ID = 5
+
+[BG door]
+type = normal
+spriteno = 6, 0
+layerno = 1
+start = 0, -51
+delta = 0, 0
+mask = 1
+ID = 6
+
+[BGctrldef 5]
+ctrlid = 5, 6
+
+[BGctrl 5, vel]
+type = velset
+time = 20
+ctrlid = 5
+x = -5
+
+[BGctrl 5, vel]
+type = velset
+time = 20
+ctrlid = 6
+x = 5
+
+[BGctrl 5, anim]
+type = anim
+time = 62
+ctrlid = 5, 6
+value = 0
+
+[Begin Action 0]
+-1,-1, 0,0, -1
+
+[Begin Action 1]
+-1,-1, 0,0, 70
+1,0, 0,0, 120
+
+[Begin Action 2]
+2,0, 0,0, 9
+2,1, 0,0, 9
+2,2, 0,0, 9
+2,3, 0,0, 9
+
+[Begin Action 3]
+3,0, 0,0, 9
+3,1, 0,0, 9
+3,2, 0,0, 9
+3,1, 0,0, 9
+
+[Begin Action 4]
+4,0, 0,0, 1,, AS128D256
+4,0, 0,0, 1,, AS256D256
+
+[Begin Action 7]
+7,0, 0,0, 20
+7,0, 0,0, 1,, AS248D8
+7,0, 0,0, 1,, AS240D16
+7,0, 0,0, 1,, AS232D24
+7,0, 0,0, 1,, AS224D32
+7,0, 0,0, 1,, AS216D40
+7,0, 0,0, 1,, AS208D48
+7,0, 0,0, 1,, AS200D56
+7,0, 0,0, 1,, AS192D64
+7,0, 0,0, 1,, AS184D72
+7,0, 0,0, 1,, AS176D80
+7,0, 0,0, 1,, AS168D88
+7,0, 0,0, 1,, AS160D96
+7,0, 0,0, 1,, AS152D104
+7,0, 0,0, 1,, AS144D112
+7,0, 0,0, 1,, AS136D120
+7,0, 0,0, 1,, AS128D128
+7,0, 0,0, 1,, AS120D136
+7,0, 0,0, 1,, AS112D144
+7,0, 0,0, 1,, AS104D152
+7,0, 0,0, 1,, AS96D160
+7,0, 0,0, 1,, AS88D168
+7,0, 0,0, 1,, AS80D176
+7,0, 0,0, 1,, AS72D184
+7,0, 0,0, 1,, AS64D192
+7,0, 0,0, 1,, AS56D200
+7,0, 0,0, 1,, AS48D208
+7,0, 0,0, 1,, AS40D216
+7,0, 0,0, 1,, AS32D224
+7,0, 0,0, 1,, AS24D232
+7,0, 0,0, 1,, AS16D240
+7,0, 0,0, 1,, AS8D248
+-1,-1, 0,0, -1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

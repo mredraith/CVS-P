@@ -1,0 +1,138 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+; Stage informations :
+; -----------------
+; From the game: 	The King of Fighters 95
+; Name:			Military Outpost (Ikari Warriors Team's Stage)
+; Version:		0.3
+
+; Rip Informations :
+; ----------------
+; by:			Dark Saviour
+; from:			Win Kawaks 1.45
+; with:			MCM 1.5
+; date:			13/02/2003
+; update:		26/06/2003 (stage intro attempt removed)
+; 			04/07/2006 (shadow and title fixed, code cleaned)
+
+; Contacts :
+; --------
+; email: 		darksaviour77@hotmail.com
+; site:			http://www.ds-arena.fr.st
+
+; Please don't link these files ;)
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "(KOF95) Military Outpost" ; Ikari Warriors Team's Stage
+displayname = "Helicopter Crash Site"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -162.66666667
+boundright = 162.66666667
+boundhigh = 0
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 168
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+intensity = 0
+;color = 111, 111, 111
+yscale = 0.195
+reflect = 0
+
+[Music]
+bgmusic = sound/kof95-ikari.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = kof95-ikari.sff
+debugbg = 0
+
+[BG 0]
+type = normal
+spriteno = 0, 0
+start = 0, -57
+delta = 0.15, 1
+id = 0
+
+[BG 1]
+type = normal
+spriteno = 1, 0
+start = 0, -56
+delta = 0.31147477, 1
+mask = 1
+
+[BG 2]
+type = anim
+actionno = 2
+start = -96, 72
+delta = 0.31147477, 1
+
+[Begin Action 2]
+2,0, 0,0, 9
+2,1, 0,0, 9
+2,2, 0,0, 9
+2,3, 0,0, 9
+2,4, 0,0, 9
+2,5, 0,0, 9
+2,6, 0,0, 9
+2,7, 0,0, 9
+
+[BG 3]
+type = anim
+actionno = 3
+start = -12, 72
+delta = 0.31147477, 1
+
+[Begin Action 3]
+3,0, 0,0, 10
+3,1, 0,0, 8
+3,2, 0,0, 10
+3,3, 0,0, 8
+3,4, 0,0, 10
+3,5, 0,0, 8
+3,6, 0,0, 10
+3,7, 0,0, 8
+
+[BG 4]
+type = normal
+spriteno = 4, 0
+start = 0, 96
+delta = 1, 1
+mask = 1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

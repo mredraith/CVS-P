@@ -1,0 +1,103 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;Inner Heart, Dark Heart, final stage from
+;Dungeons & Dragons:Shadow over Mystara, by Phantom.of.the.Server
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Inner Heart, Dark Heart"
+author = "Phantom.of.the.Server"
+versiondate = 2023
+
+[Music]
+bgmusic = sound/InnerHeart.mp3
+;bgmvolume = 100
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -74.66666667
+boundright = 74.66666667
+boundhigh = -253
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 162
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 0, 8, 16
+intensity = 128
+yscale = 0.5
+
+[BGdef]
+spr = InnerHeart.sff
+debugbg = 0
+
+[BG back]
+type = normal
+spriteno = 0, 2
+start = 0, -54
+delta = 0.25, 0.4375
+mask = 1
+
+[BG pillar]
+type = normal
+spriteno = 1, 0
+start = 0, -54
+delta = 0.72, 0.72
+mask = 1
+sin.y = 2, 120, 0
+
+[BG pillar]
+type = normal
+spriteno = 1, 1
+start = 0, -54
+delta = 0.58, 0.58
+mask = 1
+sin.y = 1.33, 120, 0
+
+[BG pillar]
+type = normal
+spriteno = 1, 2
+start = 0, -54
+delta = 0.72, 0.72
+mask = 1
+sin.y = 2, 120, 0
+
+[BG floor]
+type = normal
+spriteno = 0, 0
+start = 0, -54
+delta = 1, 1
+mask = 1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

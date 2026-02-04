@@ -1,0 +1,199 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;stage template by Eternaga , Email: Eternaga@hotmail.com
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Clubbin'"
+
+[BGdef]
+spr = NewClub.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound\11h30a.mp3
+;bgvolume = -100
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -196.66666667
+boundright = 196.66666667
+boundhigh = -35
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 161
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 0, 32, 16
+intensity = 96
+yscale = 0.2
+
+[Reflection]
+intensity = 0
+
+[BG Screen 1]
+type = anim
+actionno = 9
+start = -31, 51
+delta = 0.3, 0.6
+mask = 1
+
+[BG Screen 2]
+type = anim
+actionno = 10
+start = -31, 51
+delta = 0.3, 0.6
+mask = 1
+
+[BG Back]
+type = anim
+actionno = 1
+start = -31, 51
+delta = 0.3, 0.6
+mask = 1
+
+[BG Floor]
+type = anim
+actionno = 8
+start = 7, 136
+delta = 0.3, 0.75
+mask = 1
+
+[BG People]
+type = anim
+actionno = 3
+start = -5, 116
+delta = 0.3, 0.75
+mask = 1
+
+[BG Walls]
+type = anim
+actionno = 2
+start = 7, 136
+delta = 0.3, 0.75
+mask = 1
+
+[BG Speakers 1]
+type = anim
+actionno = 4
+start = 148, 201
+delta = 0.6, 0.9
+mask = 1
+
+[BG Speakers 2]
+type = anim
+actionno = 5
+start = -148, 201
+delta = 0.6, 0.9
+mask = 1
+
+[BG Rails]
+type = anim
+actionno = 6
+start = 0, 136
+delta = 1, 1
+mask = 1
+
+[BG Fighting Ground]
+type = anim
+actionno = 7
+start = 0, 136
+delta = 1, 1
+mask = 1
+
+[Begin Action 1]
+1,0, 0,0, 5
+2,1, 0,0, 5
+1,2, 0,0, 5
+2,1, 0,0, 5
+1,0, 0,0, 5
+2,1, 0,0, 5
+1,2, 0,0, 5
+2,1, 0,0, 5
+
+[Begin Action 2]
+7,0, 0,0, 5
+7,1, 0,0, 5
+
+[Begin Action 3]
+8,0, 0,0, 5
+9,1, 0,0, 5
+8,2, 0,0, 5
+9,0, 0,0, 5
+8,1, 0,0, 5
+9,2, 0,0, 5
+
+[Begin Action 4]
+4,0, 0,0, 5
+5,0, 0,0, 5
+4,2, 0,0, 5
+5,0, 0,0, 5
+4,0, 0,0, 5
+5,0, 0,0, 5
+
+[Begin Action 5]
+4,1, 0,0, 5
+5,1, 0,0, 5
+4,3, 0,0, 5
+5,1, 0,0, 5
+4,1, 0,0, 5
+5,1, 0,0, 5
+
+[Begin Action 6]
+10,0, 0,0, 5
+10,1, 0,0, 5
+
+[Begin Action 7]
+6,0, 0,0, 5
+6,1, 0,0, 5
+
+[Begin Action 8]
+7,2, 0,0, 5
+7,3, 0,0, 5
+
+[Begin Action 9]
+11,0, 0,0, 5
+11,1, 0,0, 5
+11,2, 0,0, 5
+11,3, 0,0, 5
+
+[Begin Action 10]
+12,0, 0,0, 5,,A
+12,1, 0,0, 5,,A
+
+[Begin Action 11]
+1,-1, 0,0, 5,,A
+13,0, 0,0, 5,,A1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

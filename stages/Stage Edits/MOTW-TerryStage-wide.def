@@ -1,0 +1,239 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;----------------------------------------------------------------------------------
+;------------餓狼-Mark of the Wolves--Terry Stgae(テリー・ボガードステージ)--------
+;製作：RYO 2005-----11月20日製作終了-----------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "MOTW Terry Stage"
+displayname = "The Freight Express"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -97.66666667
+boundright = 97.66666667
+boundhigh = -160
+verticalfollow = 0.25
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 210
+zoffsetlink = 20
+autoturn = 1
+
+[Shadow]
+intensity = 128
+yscale = 0.2
+
+[Music]
+;bgmusic =
+;bgvolume = 255
+
+[BGdef]
+spr = MOTW-TerryStage.sff
+debugbg = 0
+
+[BG 1]
+type = normal
+spriteno = 1, 0
+start = 0, 127
+delta = 0.2, 0.7
+mask = 0
+
+[BG 0 Center];背景・海
+type = anim
+actionno = 0
+start = 0, 127
+delta = 0.2, 0.7
+mask = 0
+
+[BG 0 Left]
+type = anim
+actionno = 0
+start = -320, 127
+scalestart = -1, 1
+delta = 0.2, 0.7
+mask = 0
+
+[BG 0 Right]
+type = anim
+actionno = 0
+start = 319, 127
+scalestart = -1, 1
+delta = 0.2, 0.7
+mask = 0
+
+[Begin action 0];海・アニメーション
+0,0, 0,0, 9
+0,1, 0,0, 9
+0,2, 0,0, 9
+0,3, 0,0, 9
+
+[BG 5];背景・流れる景色
+type = normal
+spriteno = 5, 0
+start = 0, 187
+delta = 1, 0.75
+mask = 1
+velocity = -7, 0
+tile = 1, 0
+
+[BG 10];背景・列車
+type = anim
+actionno = 10
+start = 700, 187
+delta = 1, 0.75
+mask = 1
+id = 10
+
+[BGCtrlDef 10];背景列車移動用
+CtrlID = 10
+loopTime = 1800
+
+[BGCtrl 10]
+type = posset
+time = 1
+x = 0
+y = 0
+
+[BGCtrl 10]
+type = velset
+time = 1
+x = -8
+
+[Begin action 10];列車・アニメーション
+10,0, 0,0, 1
+
+[BG 15];背景・荷台
+type = anim
+actionno = 15
+start = 0, 187
+delta = 1, 0.85
+mask = 1
+
+[Begin action 15];荷台・アニメーション
+15,0, 0,0, 4
+15,1, 0,0, 4
+15,0, 0,0, 4
+15,1, 0,0, 4
+15,0, 0,0, 60
+
+[BG 20];背景・先頭車両
+type = anim
+actionno = 20
+start = 0, 197
+delta = 1, 0.85
+mask = 1
+
+[Begin action 20];先頭車両・アニメーション
+20,0, 0,0, 4
+20,1, 0,0, 4
+20,0, 0,0, 4
+20,1, 0,0, 4
+20,0, 0,0, 60
+
+[BG 25];バトルフィールド
+type = normal
+spriteno = 25, 0
+start = 0, 187
+delta = 1, 1
+mask = 1
+id = 25
+
+[BG Dummy];足場を背景の動きとリンクさせる
+type = dummy
+start = 0, -53
+id = 20
+
+[BG 30];背景・バトルフィールド・前
+type = normal
+spriteno = 30, 0
+layerno = 1
+start = 0, 191
+delta = 1, 1.1
+mask = 1
+tile = 1, 0
+id = 30
+
+[BG 35];背景・ロープ
+type = anim
+actionno = 35
+layerno = 1
+start = 0, 191
+delta = 1, 1.1
+mask = 1
+id = 35
+
+[Begin action 35];ロープ・アニメーション
+35,0, 0,0, 9
+35,1, 0,0, 9
+35,2, 0,0, 9
+35,3, 0,0, 9
+
+[BGCtrlDef 5];画面振動用（酔ってしまう方、揺れが気になる方はここから下の、SinX、SinYのvalueと言う値を全て0にして下さい。)
+CtrlID = 20, 25
+loopTime = 100
+
+[BGCtrl 5, 0]
+type = SinY
+time = 1
+value = 1, 20
+
+[BGCtrl 5, 0]
+type = SinY
+time = 21
+value = -1, 20
+
+[BGCtrl 5, 0]
+type = SinY
+time = 31
+value = 0, 0
+
+[BGCtrlDef 10];画面振動用（酔ってしまう方、揺れが気になる方はここから下の、SinX、SinYのvalueと言う値を全て0にして下さい。)
+CtrlID = 30, 35
+loopTime = 100
+
+[BGCtrl 5, 0]
+type = SinY
+time = 1
+value = -1, 20
+
+[BGCtrl 5, 0]
+type = SinY
+time = 21
+value = 1, 20
+
+[BGCtrl 5, 0]
+type = SinY
+time = 31
+value = 0, 0
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

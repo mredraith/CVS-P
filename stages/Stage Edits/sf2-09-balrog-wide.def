@@ -1,0 +1,929 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+; Stage information :
+; -----------------
+; From the game: 	Street Fighter II - World Warriors
+; Name:			Balrog's Stage (USA)
+; Version:		0.1
+
+; Rip information :
+; ---------------
+; By:			Dark Saviour
+; From:			Win Kawaks 1.45 & 1.46
+; With:			MCM 1.5
+; Date:			21/04/2003
+
+; Contacts :
+; --------
+; Email: 		darksaviour77@hotmail.com
+; site:			http://www.ds-arena.fr.st
+
+; Please don't link these files ;)
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "(SF2) Balrog's Stage"
+displayname = "Las Vegas Strip"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -170.66666667
+boundright = 170.66666667
+boundhigh = 0
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 162
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 32, 32, 0
+intensity = 96
+yscale = 0.3
+
+[Music]
+bgmusic = sound/sf2-13-balrog.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = sf2-09-balrog.sff
+debugbg = 0
+
+[BG Background]
+type = normal
+spriteno = 0, 0
+start = -270, -54
+tile = 22, 8
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco5a]
+type = anim
+actionno = 4
+start = -267, -6
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco1a]
+type = anim
+actionno = 0
+start = -214, -42
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco2a]
+type = anim
+actionno = 1
+start = -198, -14
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco3a]
+type = anim
+actionno = 2
+start = -142, -22
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco4a]
+type = anim
+actionno = 3
+start = -71, -54
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco2b]
+type = anim
+actionno = 1
+start = -78, -34
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco5b]
+type = anim
+actionno = 4
+start = 27, -38
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco1a]
+type = anim
+actionno = 0
+start = 80, -54
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco2c]
+type = anim
+actionno = 1
+start = 96, -26
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco3b]
+type = anim
+actionno = 2
+start = 156, -22
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco4b]
+type = anim
+actionno = 3
+start = 223, -54
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG BgDeco2d]
+type = anim
+actionno = 1
+start = 216, -34
+delta = 0.15, 0.7
+;delta = 0, 0.7
+
+[BG Scene]
+type = normal
+spriteno = 6, 0
+start = 0, -54
+delta = 0.37890531, 1
+mask = 1
+
+[BG LeftHighPanel]
+type = anim
+actionno = 5
+start = -278, -41
+delta = 0.37890531, 1
+
+[BG LeftCasinoPanel]
+type = anim
+actionno = 6
+start = -278, 42
+delta = 0.37890531, 1
+
+[BG LeftSide]
+type = anim
+actionno = 7
+start = -207, 11
+delta = 0.37890531, 1
+
+[BG CapcomPanel]
+type = anim
+actionno = 8
+start = -47, 42
+delta = 0.37890531, 1
+
+[BG RightSide]
+type = anim
+actionno = 9
+start = 209, 11
+delta = 0.37890531, 1
+
+[BG GoldenGoosePanel]
+type = anim
+actionno = 10
+start = 97, -6
+delta = 0.37890531, 1
+
+[BG RightHighPanel]
+type = anim
+actionno = 11
+start = 280, -41
+delta = 0.37890531, 1
+
+[BG RightCasinoPanel]
+type = anim
+actionno = 12
+start = 209, 42
+delta = 0.37890531, 1
+
+[BG Spectators]
+type = normal
+spriteno = 13, 0
+start = 0, 48
+delta = 0.37890531, 1
+mask = 1
+
+[BG WhiteManAlone]
+type = anim
+actionno = 13
+start = -223, 51
+delta = 0.37890531, 1
+
+[BG Group1]
+type = anim
+actionno = 14
+start = -160, 43
+delta = 0.37890531, 1
+
+[BG Group2]
+type = anim
+actionno = 15
+start = -31, 32
+delta = 0.37890531, 1
+
+[BG ManOnCar]
+type = anim
+actionno = 16
+start = 99, 43
+delta = 0.37890531, 1
+
+[BG BlackManAlone]
+type = anim
+actionno = 17
+start = 171, 51
+delta = 0.37890531, 1
+
+[BG BlueDancer]
+type = anim
+actionno = 18
+id = 1
+start = 75, 137
+delta = 0.37890531, 1
+
+[BG RedDancer]
+type = anim
+actionno = 19
+id = 2
+start = 151, 137
+delta = 0.37890531, 1
+
+[BG GroundLeftSideLights]
+type = anim
+actionno = 20
+start = -360, 138
+delta = 0.86230431, 1
+
+[BG GroundLights]
+type = anim
+actionno = 21
+start = -303, 138
+tile = 4, 0
+tilespacing = 192, 0
+delta = 0.86230431, 1
+
+[BG GroundRightSideLights]
+type = anim
+actionno = 22
+start = 359, 138
+delta = 0.86230431, 1
+
+[BG GroundSprite1]
+type = parallax
+spriteno = 23, 0
+id = 3
+start = 0, 150
+delta = 0.86230431, 1
+xscale = 1, 1.44
+
+[BG GroundSprite2]
+type = parallax
+spriteno = 23, 1
+id = 4
+start = 0, 150
+delta = 0.86230431, 1
+xscale = 1, 1.44
+
+[BG GroundSprite3]
+type = parallax
+spriteno = 23, 2
+id = 5
+start = 0, 150
+delta = 0.86230431, 1
+xscale = 1, 1.44
+
+[Begin Action 0] ; Background Deco 1 a, b
+1,0, 0,0, 10
+1,1, 0,0, 10
+
+[Begin Action 1] ; Background Deco 2 a, b, c, d
+2,0, 0,0, 10
+2,1, 0,0, 10
+
+[Begin Action 2] ; Background Deco 3 a, b
+3,0, 0,0, 12
+3,1, 0,0, 12
+3,2, 0,0, 12
+3,1, 0,0, 12
+3,2, 0,0, 12
+3,3, 0,0, 12
+3,2, 0,0, 12
+3,1, 0,0, 12
+3,2, 0,0, 12
+3,1, 0,0, 12
+3,0, 0,0, 12
+
+[Begin Action 3] ; Background Deco 4 a, b
+4,0, 0,0, 10, H
+4,1, 0,0, 10, H
+
+[Begin Action 4] ; Background Deco 5 a, b
+5,0, 0,0, 7
+5,1, 0,0, 7
+5,2, 0,0, 7
+5,3, 0,0, 7
+5,2, 0,0, 7
+5,1, 0,0, 7
+5,0, 0,0, 7
+
+[Begin Action 5] ; Left High Panel
+7,0, 0,0, 20
+7,1, 0,0, 20
+
+[Begin Action 6] ; Left Casino Panel
+8,0, 0,0, 4
+8,1, 0,0, 4
+8,2, 0,0, 4
+8,3, 0,0, 4
+8,0, 0,0, 4
+8,1, 0,0, 4
+8,2, 0,0, 4
+8,3, 0,0, 4
+8,0, 0,0, 4
+8,1, 0,0, 4
+8,2, 0,0, 4
+8,3, 0,0, 4
+8,0, 0,0, 4
+8,1, 0,0, 4
+8,2, 0,0, 4
+8,4, 0,0, 4
+8,5, 0,0, 4
+8,4, 0,0, 4
+8,5, 0,0, 4
+
+[Begin Action 7] ; Left Side
+9,0, 0,0, 14
+9,1, 0,0, 14
+9,2, 0,0, 14
+9,1, 0,0, 14
+
+[Begin Action 8] ; Capcom Logo
+10,0, 0,0, 4
+10,1, 0,0, 4
+10,2, 0,0, 4
+
+[Begin Action 9] ; Right Side
+9,0, 0,0, 14, H
+9,1, 0,0, 14, H
+9,2, 0,0, 14, H
+9,1, 0,0, 14, H
+
+[Begin Action 10] ; Golden Goose Panel
+11,0, 0,0, 10
+11,1, 0,0, 10
+11,2, 0,0, 10
+11,3, 0,0, 10
+
+[Begin Action 11] ; Right High Panel
+7,0, 0,0, 20, H
+7,1, 0,0, 20, H
+
+[Begin Action 12] ; Right Casino Panel
+12,0, 0,0, 4
+12,1, 0,0, 4
+12,2, 0,0, 4
+12,3, 0,0, 4
+12,0, 0,0, 4
+12,1, 0,0, 4
+12,2, 0,0, 4
+12,3, 0,0, 4
+12,0, 0,0, 4
+12,1, 0,0, 4
+12,2, 0,0, 4
+12,3, 0,0, 4
+12,0, 0,0, 4
+12,1, 0,0, 4
+12,2, 0,0, 4
+12,4, 0,0, 4
+12,5, 0,0, 4
+12,4, 0,0, 4
+12,5, 0,0, 4
+
+[Begin Action 13] ; White Man Alone
+14,0, 0,0, 8
+14,1, 0,0, 8
+14,0, 0,0, 8
+14,2, 0,0, 8
+14,0, 0,0, 8
+14,3, 0,0, 8
+14,0, 0,0, 8
+14,4, 0,0, 8
+
+[Begin Action 14] ; Group 1
+15,0, 0,0, 10
+15,1, 0,0, 10
+
+[Begin Action 15] ; Group 2
+16,0, 0,0, 12
+16,1, 0,0, 6
+16,2, 0,0, 6
+16,3, 0,0, 12
+16,4, 0,0, 12
+16,5, 0,0, 6
+16,6, 0,0, 6
+16,7, 0,0, 12
+
+[Begin Action 16] ; Man on Car
+17,0, 0,0, 8
+17,1, 0,0, 8
+
+[Begin Action 17] ; Black Man Alone
+18,0, 0,0, 12
+18,1, 0,0, 12
+
+[Begin Action 18] ; Blue Dancer
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 4
+19,0, 0,0, 2, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 2, H
+19,1, 0,0, 6
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 6
+19,1, 0,0, 2, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 2, H
+19,2, 0,0, 4
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 4, H
+19,3, 0,0, 4
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 4, H
+19,0, 0,0, 2
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 2
+19,1, 0,0, 6, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 6, H
+19,1, 0,0, 2
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 2
+19,2, 0,0, 4, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 8
+19,0, 0,0, 6
+19,1, 0,0, 8
+19,2, 0,0, 6
+19,3, 0,0, 4
+19,3, 0,0, 4, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+19,0, 0,0, 6, H
+19,1, 0,0, 8, H
+19,2, 0,0, 6, H
+19,3, 0,0, 8, H
+
+[Begin Action 19] ; Red Dancer
+20,0, 0,0, 6
+20,1, 0,0, 6
+20,1, 0,0, 2, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 2, H
+20,2, 0,0, 4
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 4, H
+20,3, 0,0, 4
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 4, H
+20,0, 0,0, 2
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 2
+20,1, 0,0, 6, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 6, H
+20,1, 0,0, 2
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 2
+20,2, 0,0, 4, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 4
+20,3, 0,0, 4, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 4
+20,0, 0,0, 2, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 8, H
+20,2, 0,0, 6, H
+20,3, 0,0, 8, H
+20,0, 0,0, 6, H
+20,1, 0,0, 2, H
+20,1, 0,0, 6
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+20,0, 0,0, 6
+20,1, 0,0, 8
+20,2, 0,0, 6
+20,3, 0,0, 8
+
+[Begin Action 20] ; Ground Left Side Lights
+21,0, 0,0, 16
+21,1, 0,0, 16
+21,2, 0,0, 16
+
+[Begin Action 21] ; Ground Lights
+22,0, 0,0, 4
+22,1, 0,0, 4
+22,2, 0,0, 4
+
+[Begin Action 22] ; Ground Left Side Lights
+21,0, 0,0, 16, H
+21,1, 0,0, 16, H
+21,2, 0,0, 16, H
+
+[BGCtrlDef BlueDancer] ; Blue Dancer Velocity
+looptime = 176
+CtrlID = 1
+
+[BGCtrl 1.1]
+type = VelSet
+time = 0
+x = 1
+
+[BGCtrl 1.2]
+type = VelSet
+time = 88
+x = -1
+
+[BGCtrlDef RedDancer] ; Red Dancer Velocity
+looptime = 176
+CtrlID = 2
+
+[BGCtrl 2.1]
+type = VelSet
+time = 0
+x = 1
+
+[BGCtrl 2.2]
+type = VelSet
+time = 12
+x = -1
+
+[BGCtrl 2.3]
+type = VelSet
+time = 100
+x = 1
+
+[BGCtrlDef GroundSprite1] ; Ground Animation Sprite 1
+looptime = 48
+CtrlID = 3
+
+[BGCtrl 3.1]
+type = Visible
+time = 0
+value = 1
+
+[BGCtrl 3.2]
+type = Visible
+time = 16
+value = 0
+
+[BGCtrlDef GroundSprite2] ; Ground Animation Sprite 2
+looptime = 48
+CtrlID = 4
+
+[BGCtrl 4.1]
+type = Visible
+time = 16
+value = 3
+
+[BGCtrl 4.2]
+type = Visible
+time = 32
+value = 0
+
+[BGCtrlDef GroundSprite3] ; Ground Animation Sprite 3
+looptime = 48
+CtrlID = 5
+
+[BGCtrl 5.1]
+type = Visible
+time = 32
+value = 1
+
+[BGCtrl 5.2]
+type = Visible
+time = 0
+value = 0
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

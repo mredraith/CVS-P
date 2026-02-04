@@ -1,0 +1,99 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+; Definition of Streets of Hell by dark-shade
+;
+; Hosted @ http://www.Mugen-Infantry.com
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Streets of Hell"
+displayname = "Destroyed Streets"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -42.66666667
+boundright = 42.66666667
+boundhigh = -224
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 154
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 96
+yscale = 0.085
+fade.range = -120, 0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/StreetOfDoom.ogg
+;bgvolume = 255
+
+[BGdef]
+spr = StreetOfDoom.sff
+debugbg = 0
+
+[BG 0]
+type = normal
+spriteno = 0, 2
+start = -20, 208
+delta = 0.325, 0.65
+mask = 0
+
+[BG 1]
+type = normal
+spriteno = 0, 0
+start = 0, 200
+delta = 1, 1
+mask = 1
+
+[BG 2]
+type = normal
+spriteno = 0, 1
+start = 0, 208
+delta = 1, 1
+mask = 1
+
+[BG 3]
+type = normal
+spriteno = 0, 3
+layerno = 1
+start = 0, 200
+delta = 1, 1.25
+mask = 1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

@@ -1,0 +1,178 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;stage template by Eternaga , Email: Eternaga@hotmail.com
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Rooftop (Night)"
+
+[BGdef]
+spr = NewRooftop.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound\01-Deep in the Rain(Neireo_ theme).mp3
+;bgvolume = 255
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -346
+boundright = 346
+boundhigh = -106
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 161
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 48, 24, 0
+intensity = 128
+yscale = 0.2
+
+[Reflection]
+intensity = 0
+
+[BG Clouds Back]
+type = normal
+spriteno = 7, 0
+start = 0, 11
+delta = 0, 0.4
+velocity = 0.15, 0
+tile = 1, 0
+
+[BG Clouds Middle]
+type = normal
+spriteno = 8, 0
+start = 0, -34
+delta = 0, 0.45
+velocity = 0.25, 0
+tile = 1, 0
+mask = 1
+
+[BG Clouds Front]
+type = normal
+spriteno = 9, 0
+start = 0, -59
+delta = 0, 0.5
+velocity = 0.35, 0
+tile = 1, 0
+mask = 1
+
+[BG City Back Right]
+type = normal
+spriteno = 2, 2
+start = -55, 191
+delta = 0.2, 0.6
+mask = 1
+
+[BG City Back Middle]
+type = normal
+spriteno = 2, 3
+start = -30, 236
+delta = 0.225, 0.6
+mask = 1
+
+[BG City Back Left]
+type = normal
+spriteno = 2, 4
+start = -16, 241
+delta = 0.25, 0.6
+mask = 1
+
+[BG City Front Left]
+type = normal
+spriteno = 2, 0
+start = -30, 191
+delta = 0.3, 0.7
+mask = 1
+
+[BG City Front Right]
+type = normal
+spriteno = 2, 1
+start = -30, 158
+delta = 0.3, 0.7
+mask = 1
+
+[BG Hoke Sign]
+type = anim
+actionno = 1
+start = -30, 191
+delta = 0.3, 0.7
+mask = 1
+
+[BG JVO Sign]
+type = anim
+actionno = 2
+start = -30, 191
+delta = 0.3, 0.7
+mask = 1
+
+[BG Neon Sign]
+type = anim
+actionno = 3
+start = -30, 191
+delta = 0.3, 0.7
+mask = 1
+
+[BG Fighting Ground]
+type = normal
+spriteno = 1, 0
+start = 22, 167
+delta = 1, 1
+mask = 1
+
+[Begin Action 1]
+4,0, 0,0, 9
+4,1, 0,0, 9
+4,2, 0,0, 9
+4,3, 0,0, 9
+
+[Begin Action 2]
+5,0, 0,0, 15
+5,1, 0,0, 15
+5,2, 0,0, 15
+5,3, 0,0, 15
+
+[Begin Action 3]
+3,0, 0,0, 10
+3,1, 0,0, 10
+3,2, 0,0, 10
+3,3, 0,0, 10
+3,4, 0,0, 10
+3,5, 0,0, 10
+3,6, 0,0, 10
+3,7, 0,0, 10
+3,8, 0,0, 10
+3,9, 0,0, 10
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

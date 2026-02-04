@@ -1,0 +1,289 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;------------------------------------------------------------------------------
+;------------Real Bout 餓狼伝説 SPECIAL--SokakuStage(望月双角ステージ)---------
+;製作：RYO 2005-----5月4日製作終了---------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "RBS Sokaku Stage"
+displayname = "Matsumoto Castle (Night)"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -258
+boundright = 258
+boundhigh = -13
+verticalfollow = 0.135
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -500
+rightbound = 400
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+
+[Shadow]
+color = 24, 12, 0
+intensity = 128
+yscale = 0.2
+
+[Music]
+bgmusic = sound/TAKU-HATSU-Rock.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = RBS-SokakuStage.sff
+debugbg = 0
+
+[BG 5];最背景
+type = anim
+actionno = 5
+start = 0, 185
+delta = 0.91388489, 0.9
+mask = 0
+
+[Begin action 5];最背景・アニメーション
+5,0, 0,0, 3
+5,1, 0,0, 3
+
+[BG 6];最背景・水面
+type = anim
+actionno = 6
+start = 0, 185
+delta = 0.91388489, 0.9
+mask = 0
+
+[Begin action 6];最背景・水面・アニメーション
+6,0, 0,0, 17
+6,1, 0,0, 17
+6,2, 0,0, 17
+6,3, 0,0, 17
+6,4, 0,0, 17
+6,5, 0,0, 17
+6,6, 0,0, 17
+6,7, 0,0, 17
+
+[BG 7];最背景
+type = anim
+actionno = 7
+start = 0, 185
+delta = 0.91388489, 0.9
+mask = 0
+
+[Begin action 7];最背景・アニメーション
+7,0, 0,0, 3
+7,1, 0,0, 3
+
+[BG 10];バトルフィールド
+type = normal
+spriteno = 10, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 11];バトルフィールド・左
+type = anim
+actionno = 11
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 11];バトルフィールド・左・アニメーション
+11,0, 0,0, 3
+11,1, 0,0, 3
+
+11,2, 0,0, 3
+11,3, 0,0, 3
+
+11,4, 0,0, 3
+11,5, 0,0, 3
+
+11,6, 0,0, 3
+11,7, 0,0, 3
+
+11,8, 0,0, 3
+11,9, 0,0, 3
+
+11,10, 0,0, 3
+11,11, 0,0, 3
+
+11,12, 0,0, 3
+11,13, 0,0, 3
+
+11,14, 0,0, 3
+11,15, 0,0, 3
+
+[BG 12];バトルフィールド・柱の影
+type = anim
+actionno = 12
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 12];バトルフィールド・柱の影・アニメーション
+12,0, 0,0, 17
+12,1, 0,0, 17
+12,2, 0,0, 17
+12,3, 0,0, 17
+
+[BG 13];バトルフィールド・右
+type = anim
+actionno = 13
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 13];バトルフィールド・右・アニメーション
+13,0, 0,0, 3
+13,1, 0,0, 3
+
+13,2, 0,0, 3
+13,3, 0,0, 3
+
+13,4, 0,0, 3
+13,5, 0,0, 3
+
+13,6, 0,0, 3
+13,7, 0,0, 3
+
+13,8, 0,0, 3
+13,9, 0,0, 3
+
+13,10, 0,0, 3
+13,11, 0,0, 3
+
+13,12, 0,0, 3
+13,13, 0,0, 3
+
+13,14, 0,0, 3
+13,15, 0,0, 3
+
+[BG 14];バトルフィールド・柱の影
+type = anim
+actionno = 14
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 14];バトルフィールド・柱の影・アニメーション
+14,0, 0,0, 1
+14,1, 0,0, 1
+
+[BG 15];背景・桜１
+type = anim
+actionno = 15
+layerno = 1
+start = -300, -85
+delta = 1.2, 1.2
+mask = 1
+sin.x = 20, 150
+id = 15
+
+[BG 15];背景・桜１
+type = anim
+actionno = 15
+layerno = 1
+start = 300, -85
+delta = 1.2, 1.2
+mask = 1
+sin.x = 20, 150
+id = 15
+
+[BGCtrlDef 15]
+CtrlID = 15
+loopTime = 320
+
+[BGCtrl 15]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 15]
+type = velset
+time = 0
+x = -0.5
+y = 1
+
+[Begin action 15];桜１・アニメーション
+15,0, 0,0, 4
+15,1, 0,0, 4
+15,2, 0,0, 4
+15,3, 0,0, 4
+15,4, 0,0, 4
+15,5, 0,0, 4
+
+[BG 20];背景・桜２
+type = anim
+actionno = 20
+layerno = 1
+start = -250, -85
+delta = 1.2, 1.2
+mask = 1
+sin.x = 20, 150
+id = 20
+
+[BG 20];背景・桜２
+type = anim
+actionno = 20
+layerno = 1
+start = 250, -85
+delta = 1.2, 1.2
+mask = 1
+sin.x = 20, 150
+id = 20
+
+[BGCtrlDef 20]
+CtrlID = 20
+loopTime = 380
+
+[BGCtrl 20]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 20]
+type = velset
+time = 0
+x = 0.5
+y = 0.8
+
+[Begin action 20];桜２・アニメーション
+20,0, 0,0, 4
+20,1, 0,0, 4
+20,2, 0,0, 4
+20,3, 0,0, 4
+20,4, 0,0, 4
+20,5, 0,0, 4
+20,6, 0,0, 4
+20,7, 0,0, 4
+20,8, 0,0, 4
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

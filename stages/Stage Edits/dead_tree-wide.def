@@ -1,0 +1,175 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;========================================================
+;
+; A dead cherry tree in a japanese courtyard.
+;
+;
+; Sokaku Mochizuki's stage from the game Real Bout Fatal Fury 2 by SNK-Playmore.
+;
+; M.U.G.E.N. adaptation by R.o.q.u.e.
+;
+; Special thanks to :
+;  - SNK-Playmore for the Real Bout series
+;  - ElSemi, for Nebula
+;  - Corel, for Paint Shop Pro
+;  - Sés, for M.C.M.
+;  - Christophe and Winane, for SFFExtract
+;  - Elecbyte, for Sprmaker
+;
+; For more M.U.G.E.N. material, visit the website : http://alice-games.org
+;
+; Notes : In the original game, there are two versions of this stage : one with hardly any rain and
+; another with a downpour. This stage is the second version.
+;
+;========================================================
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Dead Tree"
+displayname = "Withered Cherry Tree"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -106.66666667
+boundright = 106.66666667
+boundhigh = -70
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 156
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 0, 0, 16
+intensity = 64
+yscale = 0.2
+
+[Music]
+bgmusic = sound/sokaku_rbs.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = dead_tree.sff
+debugbg = 0
+
+[BG Left water]
+type = anim
+actionno = 20
+start = 0, -52
+delta = 1, 1
+
+[BG Right water]
+type = anim
+actionno = 21
+start = 0, -52
+delta = 1, 1
+
+[BG Garden]
+type = normal
+spriteno = 0, 0
+start = 0, -52
+delta = 1, 1
+mask = 1
+
+[BG Tree]
+type = normal
+spriteno = 10, 0
+start = 0, -52
+delta = 1, 1
+mask = 1
+
+[BG Rain]
+type = anim
+actionno = 30
+layerno = 1
+start = -160, -292
+delta = 1, 1
+tile = 1, 2
+tilespacing = 160, 240
+
+[Begin action 20]
+20,1, 0,0, 3
+20,2, 0,0, 3
+20,3, 0,0, 3
+20,4, 0,0, 3
+20,5, 0,0, 3
+20,6, 0,0, 3
+20,7, 0,0, 3
+20,8, 0,0, 3
+
+[Begin action 21]
+21,1, 0,0, 3
+21,2, 0,0, 3
+21,3, 0,0, 3
+21,4, 0,0, 3
+21,5, 0,0, 3
+21,6, 0,0, 3
+21,7, 0,0, 3
+21,8, 0,0, 3
+
+[Begin action 30]
+30,1, 0,0, 1
+30,1, 80,0, 1
+30,1, 160,0, 1
+
+30,2, 240,0, 1
+30,2, 0,0, 1
+30,2, 80,0, 1
+
+30,3, 160,0, 1
+30,3, 240,0, 1
+30,3, 0,0, 1
+
+30,4, 80,0, 1
+30,4, 160,0, 1
+30,4, 240,0, 1
+
+30,5, 0,0, 1
+30,5, 80,0, 1
+30,5, 160,0, 1
+
+30,6, 240,0, 1
+30,6, 0,0, 1
+30,6, 80,0, 1
+
+30,7, 160,0, 1
+30,7, 240,0, 1
+30,7, 0,0, 1
+
+30,8, 80,0, 1
+30,8, 160,0, 1
+30,8, 240,0, 1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

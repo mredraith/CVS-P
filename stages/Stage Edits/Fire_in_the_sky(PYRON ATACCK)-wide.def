@@ -1,0 +1,596 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;========================================================
+;  DARKSTALKERS BY  MASTER YODA
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Fire_in_the_sky(PYRON ATACCK)"; DARKSTALKERS
+displayname = "Fire in the Sky"
+author = "Master Yoda"
+;DATE = 06/05/09
+
+[BGdef]
+spr = Fire_in_the_sky(PYRON ATACCK).sff
+debugbg = 0
+
+[Music]
+bgmusic = sound/pyron_stage.mp3
+;bgvolume = 225
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -406.66666667
+boundright = 406.66666667
+boundhigh = -466
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 128, 0, 0
+intensity = 72
+yscale = 0.075
+fade.range = -64, 0
+
+[BG SPACE]
+type = normal
+spriteno = 0, 0
+start = 0, -55
+delta = 0.83032787, 0.85
+mask = 1
+
+[BG GALAXY PINK]
+type = normal
+spriteno = 0, 1
+start = 0, -55
+delta = 0.84163934, 0.86
+mask = 1
+
+[BG GALAXY GREEN]
+type = normal
+spriteno = 0, 2
+start = 0, -55
+delta = 0.84163934, 0.86
+mask = 1
+
+[BG GALAXY BLUE]
+type = normal
+spriteno = 0, 3
+start = 0, -55
+delta = 0.84163934, 0.86
+mask = 1
+
+[BG STARS]
+type = normal
+spriteno = 1, 0
+start = 0, -55
+delta = 0.8642623, 0.88
+mask = 1
+TILE = 1, 1
+
+[BG FLY STARS]
+type = anim
+actionno = 8
+start = 0, -55
+delta = 0.8642623, 0.88
+mask = 1
+tile = 1, 1
+tilespacing = 220, 260
+id = 1
+
+[BG FLY STARS2]
+type = anim
+actionno = 8
+start = 0, -55
+delta = 0.8642623, 0.88
+mask = 1
+tile = 1, 1
+tilespacing = 250, 240
+id = 2
+
+[BG FLY STARS3]
+type = anim
+actionno = 8
+start = 0, -55
+delta = 0.8642623, 0.88
+mask = 1
+tile = 1, 1
+tilespacing = 190, 220
+id = 3
+
+[BG MARTE]
+type = normal
+spriteno = 2, 3
+start = 0, -55
+delta = 0.87557377, 0.89
+mask = 1
+
+[BG MARTE TRANS]
+type = normal
+spriteno = 2, 3
+start = 0, -55
+delta = 0.87557377, 0.89
+trans = addalpha
+alpha = 80, 256
+mask = 1
+
+[BG SMALL PLANET]
+type = normal
+spriteno = 2, 5
+start = 0, -55
+delta = 0.89819672, 0.91
+mask = 1
+
+[BG SMALL PLANET]
+type = normal
+spriteno = 2, 5
+start = 0, -55
+delta = 0.89819672, 0.91
+trans = addalpha
+alpha = 40, 256
+mask = 1
+
+[BG SATURNO]
+type = normal
+spriteno = 2, 2
+start = 0, -55
+delta = 0.88688525, 0.9
+mask = 1
+
+[BG SATURNO TRANS]
+type = normal
+spriteno = 2, 2
+start = 0, -55
+delta = 0.88688525, 0.9
+trans = addalpha
+alpha = 60, 256
+mask = 1
+
+[BG PLANETA GRIS]
+type = normal
+spriteno = 2, 4
+start = 0, -55
+delta = 0.8642623, 0.88
+mask = 1
+
+[BG PLANETA GRIS]
+type = normal
+spriteno = 2, 4
+start = 0, -55
+delta = 0.8642623, 0.88
+trans = addalpha
+alpha = 60, 256
+mask = 1
+
+[BG MOON]
+type = normal
+spriteno = 2, 1
+start = 0, -55
+delta = 0.89819672, 0.91
+mask = 1
+
+[BG MOON TRANS]
+type = normal
+spriteno = 2, 1
+start = 0, -55
+delta = 0.89819672, 0.91
+trans = addalpha
+alpha = 50, 256
+mask = 1
+
+[BG EART]
+type = normal
+spriteno = 2, 0
+start = 0, -55
+delta = 0.87557377, 0.89
+mask = 1
+
+[BG EART TRANS]
+type = normal
+spriteno = 2, 0
+start = 0, -55
+delta = 0.87557377, 0.89
+trans = addalpha
+alpha = 80, 256
+mask = 1
+
+[BG COMETA RIGTH]
+type = normal
+spriteno = 9, 0
+start = 0, -55
+delta = 0.89819672, 0.91
+mask = 1
+ID = 4
+
+[BG COMETA LEFT]
+type = normal
+spriteno = 9, 1
+start = 0, -55
+delta = 0.89819672, 0.91
+mask = 1
+ID = 5
+
+[BG COMETA ESTELA RIGTH]
+type = anim
+actionno = 10
+start = 0, -55
+delta = 0.89819672, 0.91
+mask = 1
+ID = 4
+
+[BG COMETA ESTELA LEFT]
+type = anim
+actionno = 11
+start = 0, -55
+delta = 0.89819672, 0.91
+mask = 1
+ID = 5
+
+[BG SUN]
+type = anim
+actionno = 7
+start = 0, -55
+delta = 0.85295082, 0.87
+mask = 1
+
+[BG BRILLO PYRON]
+type = anim
+actionno = 4
+start = 0, -55
+delta = 0.8642623, 0.88
+trans = add
+mask = 1
+
+[BG PYRON]
+type = normal
+spriteno = 4, 0
+start = 0, -55
+delta = 0.8642623, 0.88
+mask = 1
+
+[BG PYRON TRANS]
+type = normal
+spriteno = 4, 2
+start = 0, -55
+delta = 0.8642623, 0.88
+trans = addalpha
+alpha = 20, 256
+mask = 1
+
+[BG OJOS]
+type = normal
+spriteno = 4, 3
+start = 0, -55
+delta = 0.8642623, 0.88
+trans = add
+mask = 1
+
+[BG PHOBOS1 PROPULSORES]
+type = anim
+actionno = 13
+start = 208, 45
+delta = 0.89140984, 0.90
+trans = add
+mask = 1
+sin.y = -3, 180
+
+[BG PHOBOS1 PROPULSORES]
+type = anim
+actionno = 13
+start = 227, 45
+delta = 0.89140984, 0.90
+trans = add
+mask = 1
+sin.y = -3, 180
+
+[BG PHOBOS2 PROPULSORES]
+type = anim
+actionno = 13
+start = 122, 32
+delta = 0.89140984, 0.90
+trans = add
+mask = 1
+sin.y = -3, 180
+
+[BG PHOBOS3 PROPULSORES]
+type = anim
+actionno = 13
+start = 320, 32
+delta = 0.89140984, 0.90
+trans = add
+mask = 1
+sin.y = -3, 180
+
+[BG PHOBOS1]
+type = normal
+spriteno = 12, 2
+start = 0, -55
+delta = 0.89140984, 0.90
+mask = 1
+sin.y = -3, 180
+
+[BG PHOBOS2]
+type = normal
+spriteno = 12, 3
+start = 0, -55
+delta = 0.89140984, 0.90
+mask = 1
+sin.y = -3, 180
+
+[BG PHOBOS3]
+type = normal
+spriteno = 12, 4
+start = 0, -55
+delta = 0.89140984, 0.90
+mask = 1
+sin.y = -3, 180
+
+[BG MOUNTAINS MOON]
+type = normal
+spriteno = 5, 0
+start = 0, -55
+delta = 0.92081967, 0.93
+mask = 1
+tile = 1, 0
+
+[BG FLOOR]
+type = normal
+spriteno = 5, 1
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[BG ESTATUA LUNA]
+type = normal
+spriteno = 6, 0
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[BG ESTATUA CUERNO]
+type = normal
+spriteno = 6, 1
+start = 5, -58
+delta = 1, 1
+mask = 1
+
+;ANIMATIONS
+
+[Begin Action 4]
+4,4, 0,0, 2, ,as200d256
+4,4, 0,0, 2, ,as210d256
+4,4, 0,0, 2, ,as220d256
+4,4, 0,0, 2, ,as230d256
+4,4, 0,0, 2, ,as240d256
+4,4, 0,0, 2, ,as250d256
+4,4, 0,0, 2, ,as240d256
+4,4, 0,0, 2, ,as230d256
+4,4, 0,0, 2, ,as220d256
+4,4, 0,0, 2, ,as210d256
+
+[Begin Action 7]
+7,0, 0,0, 5, ,A
+7,1, 0,0, 5, ,A
+7,2, 0,0, 5, ,A
+7,3, 0,0, 5, ,A
+7,4, 0,0, 5, ,A
+7,5, 0,0, 5, ,A
+7,6, 0,0, 5, ,A
+7,7, 0,0, 5, ,A
+7,8, 0,0, 5, ,A
+7,9, 0,0, 5, ,A
+
+[Begin Action 8]
+8,0, 0,0, 10
+8,1, 0,0, 10
+8,2, 0,0, 10
+8,3, 0,0, 10
+
+[Begin Action 10]
+10,0, 0,0, 3, ,A
+10,1, 0,0, 3, ,A
+10,2, 0,0, 3, ,A
+10,3, 0,0, 3, ,A
+
+[Begin Action 11]
+11,0, 0,0, 3, ,A
+11,1, 0,0, 3, ,A
+11,2, 0,0, 3, ,A
+11,3, 0,0, 3, ,A
+
+[Begin Action 13]
+13,0, 0,0, 3, ,A
+13,1, 0,0, 3, ,A
+-1,1, 0,0, 3, ,A
+
+;BG CONTROLS
+
+;STARS
+[BGCtrlDef STARS]
+Looptime = 2201
+CtrlID = 1
+
+[BGCtrl STARS]
+type = posset
+time = 0
+x = 10
+y = 42
+
+[BGCtrl STARS]
+type = velset
+time = 0
+x = -2.4
+y = 2.2
+
+[BGCtrl STARS]
+type = Enable
+time = 1400
+value = 0; desactivado
+
+[BGCtrl STARS]
+type = Enable
+time = 2200
+value = 1
+
+;STARS2
+[BGCtrlDef STARS]
+Looptime = 2201
+CtrlID = 2
+
+[BGCtrl STARS]
+type = posset
+time = 0
+x = 60
+y = 45
+
+[BGCtrl STARS]
+type = velset
+time = 0
+x = -2.4
+y = 2.2
+
+[BGCtrl STARS]
+type = Enable
+time = 1460
+value = 0; desactivado
+
+[BGCtrl STARS]
+type = Enable
+time = 2200
+value = 1
+
+;STARS3
+[BGCtrlDef STARS]
+Looptime = 2201
+CtrlID = 3
+
+[BGCtrl STARS]
+type = posset
+time = 0
+x = -120
+y = 22
+
+[BGCtrl STARS]
+type = velset
+time = 0
+x = -2.4
+y = 2.2
+
+[BGCtrl STARS]
+type = Enable
+time = 1470
+value = 0; desactivado
+
+[BGCtrl STARS]
+type = Enable
+time = 2200
+value = 0; desactivado
+
+;COMETA RIGTH
+[BGCtrlDef COMETA RIGTH]
+looptime = 5500
+CtrlID = 4
+
+[BGCtrl COMETA RIGTH]
+type = posset
+time = 0
+x = -700
+y = 50
+
+[BGCtrl COMETA RIGTH]
+type = VELSET
+time = 100
+x = 1
+
+[BGCtrl COMETA RIGTH]
+type = Enable
+time = 2000
+value = 0; desactivado
+
+[BGCtrl COMETA RIGTH]
+type = Enable
+time = 3339
+value = 1
+
+[BGCtrl COMETA RIGTH]
+type = posset
+time = 3400
+x = -700
+y = 40
+
+[BGCtrl COMETA RIGTH]
+type = VELSET
+time = 3400
+x = 1
+
+;COMETA LEFT
+[BGCtrlDef COMETA LEFT]
+looptime = 7500
+CtrlID = 5
+
+[BGCtrl COMETA LEFT]
+type = posset
+time = 0
+x = 600
+y = 25
+
+[BGCtrl COMETA LEFT]
+type = VELSET
+time = 2000
+x = -1
+
+[BGCtrl COMETA LEFT]
+type = Enable
+time = 4500
+value = 0; desactivado
+
+[BGCtrl COMETA LEFT]
+type = Enable
+time = 5199
+value = 1
+
+[BGCtrl COMETA LEFT]
+type = posset
+time = 5200
+x = 600
+y = 90
+
+[BGCtrl COMETA LEFT]
+type = VELSET
+time = 5200
+x = -1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

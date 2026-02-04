@@ -1,0 +1,190 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;------------------------------------------------------------------------------
+;------------月華の剣士--Lee Stage--(李　烈火ステージ)-------------------------
+;製作：RYO 2005-----11月1日製作終了--------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "LB Lee Stage"
+displayname = "Harbour at Sunset"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -186.66666667
+boundright = 186.66666667
+boundhigh = -84
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+
+[Shadow]
+intensity = 128
+color = 0, 48, 128
+yscale = 0.2
+
+[Music]
+;bgvolume = 255
+
+[BGdef]
+spr = LB-LeeStage.sff
+debugbg = 0
+
+[BG 0];背景・最背景
+type = normal
+spriteno = 0, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 5];背景・空・鳥
+type = anim
+actionno = 5
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 5];空・鳥・アニメーション
+5,0, 0,0, 6
+5,1, 0,0, 6
+5,2, 0,0, 6
+5,3, 0,0, 6
+5,4, 0,0, 6
+5,5, 0,0, 6
+5,6, 0,0, 6
+5,7, 0,0, 6
+5,8, 0,0, 6
+5,9, 0,0, 6
+5,10, 0,0, 6
+5,11, 0,0, 6
+5,12, 0,0, 6
+5,13, 0,0, 6
+5,14, 0,0, 6
+5,15, 0,0, 6
+
+[BG 10];背景・空
+type = anim
+actionno = 10
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 10];空・アニメーション
+10,0, 0,0, 18
+10,1, 0,0, 18
+10,2, 0,0, 18
+10,3, 0,0, 18
+
+[BG 15];背景・手前・舟
+type = anim
+actionno = 15
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 15];手前・舟・アニメーション
+15,0, 0,0, 9
+15,1, 0,0, 9
+15,2, 0,0, 9
+15,3, 0,0, 9
+
+[BG 20];背景・ポール
+type = normal
+spriteno = 20, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 25];背景・右側
+type = anim
+actionno = 25
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 25];右側・アニメーション
+25,0, 0,0, 9
+25,1, 0,0, 9
+25,2, 0,0, 9
+25,3, 0,0, 9
+25,4, 0,0, 9
+25,5, 0,0, 9
+25,6, 0,0, 9
+25,7, 0,0, 9
+
+[BG 30];背景・舟・煙突
+type = anim
+actionno = 30
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 30];中心・アニメーション
+30,0, 0,0, 9
+30,1, 0,0, 9
+30,2, 0,0, 9
+30,3, 0,0, 9
+30,4, 0,0, 9
+30,5, 0,0, 9
+30,6, 0,0, 9
+30,7, 0,0, 9
+
+[BG 35];背景・手前・柵・右
+type = anim
+actionno = 35
+layerno = 1
+start = 320, 185
+delta = 1.25714286, 1.2
+mask = 1
+
+[Begin action 35];手前・柵・右・アニメーション
+35,0, 0,0, 9
+35,1, 0,0, 9
+35,2, 0,0, 9
+35,1, 0,0, 9
+
+[BG 40];背景・手前・柵・左
+type = anim
+actionno = 40
+layerno = 1
+start = -100, 185
+delta = 1.25714286, 1.2
+mask = 1
+
+[Begin action 40];手前・柵・左・アニメーション
+40,0, 0,0, 9
+40,1, 0,0, 9
+40,2, 0,0, 9
+40,1, 0,0, 9
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

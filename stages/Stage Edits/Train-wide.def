@@ -1,0 +1,335 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;stage template by Eternaga , Email: Eternaga@hotmail.com
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Chase the Express"
+
+[BGdef]
+spr = Train.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound/robot5.mp3
+;bgvolume = 255
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -156.66666667
+boundright = 156.66666667
+boundhigh = -52
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 161
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 8, 16, 0
+intensity = 96
+yscale = 0.175
+
+[Reflection]
+intensity = 0
+
+[BG 0]
+type = normal
+spriteno = 3, 0
+start = -160, -100
+delta = 0, 0.35
+tile = 1, 0
+velocity = -1, 0
+
+[BG 0 Down]
+type = normal
+spriteno = 3, 0
+start = -160, 347
+scalestart = 1, -1
+delta = 0, 0.35
+tile = 1, 0
+velocity = -1, 0
+
+[BG Chopper]
+type = anim
+actionno = 8
+ID = 8
+start = 70, 6
+delta = 0.75, 0.5
+mask = 1
+
+[Begin Action 08]
+5,0, 0,0, -1,h
+
+[BGCtrlDef 8]
+CtrlID = 8
+Looptime = 240
+
+[BGCtrl 8]
+type = VelSet
+time = 0
+y = 0.2
+
+[BGCtrl 8]
+type = VelSet
+time = 60
+y = 0.1
+
+[BGCtrl 8]
+type = VelSet
+time = 90
+y = -0.1
+
+[BGCtrl 8]
+type = VelSet
+time = 120
+y = -0.2
+
+[BGCtrl 8]
+type = VelSet
+time = 180
+y = -0.1
+
+[BGCtrl 8]
+type = VelSet
+time = 210
+y = 0.1
+
+[BG Back prop]
+type = anim
+actionno = 1
+start = 70, 6
+ID = 1
+delta = 0.75, 0.5
+mask = 1
+
+[Begin Action 1]
+4,0, 0,0, 1,h
+4,1, 0,0, 1,h
+4,2, 0,0, 1,h
+4,3, 0,0, 1,h
+4,4, 0,0, 1,h
+4,5, 0,0, 1,h
+
+[BGCtrlDef 1]
+CtrlID = 1
+Looptime = 240
+
+[BGCtrl 1]
+type = VelSet
+time = 0
+y = 0.2
+
+[BGCtrl 1]
+type = VelSet
+time = 60
+y = 0.1
+
+[BGCtrl 1]
+type = VelSet
+time = 90
+y = -0.1
+
+[BGCtrl 1]
+type = VelSet
+time = 120
+y = -0.2
+
+[BGCtrl 1]
+type = VelSet
+time = 180
+y = -0.1
+
+[BGCtrl 8]
+type = VelSet
+time = 210
+y = 0.1
+
+[BG Top prop]
+type = anim
+actionno = 2
+start = 70, 6
+ID = 2
+delta = 0.75, 0.5
+mask = 1
+
+[Begin Action 2]
+7,0, 0,0, 1,h
+7,1, 0,0, 1,h
+7,2, 0,0, 1,h
+7,3, 0,0, 1,h
+
+[BGCtrlDef 2]
+CtrlID = 2
+Looptime = 240
+
+[BGCtrl 2]
+type = VelSet
+time = 0
+y = 0.2
+
+[BGCtrl 2]
+type = VelSet
+time = 60
+y = 0.1
+
+[BGCtrl 2]
+type = VelSet
+time = 90
+y = -0.1
+
+[BGCtrl 2]
+type = VelSet
+time = 120
+y = -0.2
+
+[BGCtrl 2]
+type = VelSet
+time = 180
+y = -0.1
+
+[BGCtrl 8]
+type = VelSet
+time = 210
+y = 0.1
+
+[BG Chopper Guy]
+type = anim
+actionno = 3
+ID = 3
+start = 70, 6
+delta = 0.75, 0.5
+mask = 1
+
+[Begin Action 3]
+6,0, 0,0, 5,h
+6,1, 0,0, 5,h
+
+[BGCtrlDef 3]
+CtrlID = 3
+Looptime = 240
+
+[BGCtrl 3]
+type = VelSet
+time = 0
+y = 0.2
+
+[BGCtrl 3]
+type = VelSet
+time = 60
+y = 0.1
+
+[BGCtrl 3]
+type = VelSet
+time = 90
+y = -0.1
+
+[BGCtrl 3]
+type = VelSet
+time = 120
+y = -0.2
+
+[BGCtrl 3]
+type = VelSet
+time = 180
+y = -0.1
+
+[BGCtrl 8]
+type = VelSet
+time = 210
+y = 0.1
+
+[BG Bridge]
+type = anim
+actionno = 4
+start = -213.3333333, -126
+scalestart = 1.33333334, 1.33333334
+;start = -260, -190
+;scalestart = 1.67, 1.67 ; portrait mode
+delta = 0, 0.7
+mask = 1
+
+[BG Bridge Down]
+type = anim
+actionno = 4
+start = -213.3333333, 396
+scalestart = 1.33333334, -1.33333334
+;start = -260, -190
+;scalestart = 1.67, 1.67 ; portrait mode
+delta = 0, 0.7
+mask = 1
+
+[Begin Action 4]
+1,0, 0,0, 1
+1,1, 0,0, 1
+1,2, 0,0, 1
+1,3, 0,0, 1
+1,4, 0,0, 1
+1,5, 0,0, 1
+1,6, 0,0, 1
+1,7, 0,0, 1
+1,8, 0,0, 1
+1,9, 0,0, 1
+1,10, 0,0, 1
+1,11, 0,0, 1
+1,12, 0,0, 1
+1,13, 0,0, 1
+1,14, 0,0, 1
+1,15, 0,0, 1
+
+[BG Fighting Ground]
+type = normal
+spriteno = 2, 0
+start = -380, 91
+mask = 1
+delta = 1, 1
+
+[BG Fighting Ground]
+type = normal
+spriteno = 2, 1
+start = -380, 91
+mask = 1
+delta = 1, 1
+
+[BG Fighting Ground]
+type = anim
+actionno = 5
+start = -380, 91
+delta = 1, 1
+mask = 1
+
+[Begin Action 5]
+2,2, 0,0, 5
+2,3, 0,0, 5
+2,4, 0,0, 5
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

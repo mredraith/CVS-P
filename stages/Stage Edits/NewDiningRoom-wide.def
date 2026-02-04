@@ -1,0 +1,142 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;stage template by Eternaga , Email: Eternaga@hotmail.com
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Dining Room (Sunset)"
+
+[BGdef]
+spr = NewDiningRoom.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound\222546_lesthanb.mp3
+;bgvolume = -100
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -116.66666667
+boundright = 116.66666667
+boundhigh = -54
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 163
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 0
+
+[Reflection]
+intensity = 80
+
+[BG Sky]
+type = normal
+spriteno = 3, 0
+start = 20, 50
+delta = 0.2, 0.5
+
+[BG Sky Anim]
+type = anim
+actionno = 1
+start = 20, 50
+delta = 0.2, 0.5
+
+[Begin Action 1]
+3,1, 0,0, 2, ,AS0D256
+3,1, 0,0, 2, ,AS32D224
+3,1, 0,0, 2, ,AS64D192
+3,1, 0,0, 2, ,AS96D160
+3,1, 0,0, 2, ,AS128D128
+3,1, 0,0, 2, ,AS160D96
+3,1, 0,0, 2, ,AS192D64
+3,1, 0,0, 2, ,AS224D32
+3,1, 0,0, 2, ,AS256D0
+3,1, 0,0, 2, ,AS224D32
+3,1, 0,0, 2, ,AS192D64
+3,1, 0,0, 2, ,AS160D96
+3,1, 0,0, 2, ,AS128D128
+3,1, 0,0, 2, ,AS96D160
+3,1, 0,0, 2, ,AS64D192
+3,1, 0,0, 2, ,AS32D224
+3,1, 0,0, 2, ,AS0D256
+;3,2, 0,0, 2, ,AS0D256
+3,2, 0,0, 2, ,AS32D224
+3,2, 0,0, 2, ,AS64D192
+3,2, 0,0, 2, ,AS96D160
+3,2, 0,0, 2, ,AS128D128
+3,2, 0,0, 2, ,AS160D96
+3,2, 0,0, 2, ,AS192D64
+3,2, 0,0, 2, ,AS224D32
+3,2, 0,0, 2, ,AS256D0
+3,2, 0,0, 2, ,AS224D32
+3,2, 0,0, 2, ,AS192D64
+3,2, 0,0, 2, ,AS160D96
+3,2, 0,0, 2, ,AS128D128
+3,2, 0,0, 2, ,AS96D160
+3,2, 0,0, 2, ,AS64D192
+3,2, 0,0, 2, ,AS32D224
+3,2, 0,0, 2, ,AS0D256
+;3,3, 0,0, 2, ,AS0D256
+3,3, 0,0, 2, ,AS32D224
+3,3, 0,0, 2, ,AS64D192
+3,3, 0,0, 2, ,AS96D160
+3,3, 0,0, 2, ,AS128D128
+3,3, 0,0, 2, ,AS160D96
+3,3, 0,0, 2, ,AS192D64
+3,3, 0,0, 2, ,AS224D32
+3,3, 0,0, 2, ,AS256D0
+3,3, 0,0, 2, ,AS224D32
+3,3, 0,0, 2, ,AS192D64
+3,3, 0,0, 2, ,AS160D96
+3,3, 0,0, 2, ,AS128D128
+3,3, 0,0, 2, ,AS96D160
+3,3, 0,0, 2, ,AS64D192
+3,3, 0,0, 2, ,AS32D224
+;3,3, 0,0, 2, ,AS0D256
+
+[BG City]
+type = normal
+spriteno = 2, 0
+start = 120, 67
+delta = 0.6, 0.75
+mask = 1
+
+[BG Fighting Ground]
+type = normal
+spriteno = 1, 0
+start = 0, 50
+delta = 1, 1
+mask = 1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

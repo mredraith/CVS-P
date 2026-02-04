@@ -1,0 +1,647 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;Mittelbirge Castle, Krauser's stage from Real Bout Fatal Fury Special, by Phantom.of.the.Server
+;Special thanks to dresmasher for rendering the fire sprites
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Mittelbirge Castle"
+versiondate = 12, 19, 2007
+author = "Phantom.of.the.Server"
+
+[Music]
+bgmusic = sound/Lacrimosa.mp3
+;bgvolume = 255
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -258.66666667
+boundright = 258.66666667
+boundhigh = -15
+verticalfollow = 0.15
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 162
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+intensity = 96
+yscale = 0.33
+
+[BGdef]
+spr = Mittelbirge.sff
+debugbg = 0
+
+[BG black]
+type = normal
+spriteno = 0, 99
+start = 0, -54
+delta = 0, 0
+tile = 1, 1
+tilespacing = 0, 0
+mask = 0
+
+[BG clouds]
+type = parallax
+spriteno = 0, 4
+start = 0, -54
+delta = 0.25, 0.25
+width = 740, 185
+tile = 1, 0
+tilespacing = 0
+velocity = 0.25, 0
+mask = 1
+
+[BG clouds]
+type = normal
+spriteno = 0, 4
+start = 370, -70
+delta = 0.24613402, 0.3
+tile = 1, 0
+tilespacing = 0
+velocity = 0.375, 0
+trans = addalpha
+alpha = 160, 256
+mask = 1
+
+[BG bolt back]
+type = anim
+actionno = 0
+start = -60, -54
+delta = 0.39690722, 0.4
+ID = 10
+
+[BG highlight]
+type = anim
+actionno = 0
+start = 0, -54
+delta = 0, 0
+ID = 8
+tile = 1, 1
+tilespacing = 80, 80
+
+[BG town]
+type = normal
+spriteno = 0, 3
+start = 100, -54
+delta = 0.51752577, 0.5
+mask = 1
+
+[BG bolt front]
+type = anim
+actionno = 0
+start = -60, -64
+delta = 0.39690722, 0.625
+ID = 14
+
+[BG singer]
+type = anim
+actionno = 7
+start = 0, -66
+delta = 0.76804124, 0.75
+ID = 7
+
+[BG castle]
+type = normal
+spriteno = 0, 2
+start = 0, -66
+delta = 0.76804124, 0.75
+mask = 1
+
+[BG castle highlight]
+type = anim
+actionno = 0
+start = 0, -66
+delta = 0.76804124, 0.75
+ID = 9
+
+[BG rain back]
+type = anim
+actionno = 6
+start = 0, -54
+delta = 0.76804124, 0.75
+tile = 1, 1
+tilespacing = 160, 240
+velocity = 0.16, 0
+
+[BG main]
+type = normal
+spriteno = 0, 0
+start = 0, -54
+delta = 1, 1
+mask = 1
+
+[BG fire]
+type = anim
+actionno = 1
+start = -105, 58
+delta = 1, 1
+ID = 1
+
+[BG fire]
+type = anim
+actionno = 2
+start = 105, 58
+delta = 1, 1
+ID = 2
+
+[BG column]
+type = normal
+spriteno = 0, 1
+layerno = 1
+start = 0, -54
+delta = 1, 1
+mask = 1
+
+[BG rain front]
+type = anim
+actionno = 5
+layerno = 1
+start = 0, -54
+delta = 1, 1
+tile = 1, 1
+tilespacing = 380, 240
+velocity = 0.2, 0
+
+;---Put out fire---
+[BGctrldef 1]
+ctrlid = 1, 2
+
+[BGctrl 1, anim]
+type = anim
+time = 3072
+ctrlid = 1
+value = 3
+
+[BGctrl 1, anim]
+type = anim
+time = 2432
+ctrlid = 2
+value = 4
+
+;---Singer---
+[BGctrldef 7]
+ctrlid = 7
+
+[BGctrl 7, pos]
+type = posset
+time = 0
+x = 15
+y = 15
+
+[BGctrl 7, vel]
+type = velset
+time = 600
+x = -0.075
+y = -0.075
+
+[BGctrl 7, vel]
+type = velset
+time = 800
+x = 0
+y = 0
+
+[BGctrl 7, pos]
+type = posset
+time = 800
+x = 0
+y = 0
+
+;---Lightning Bolt Anims---
+[BGctrldef 10]
+ctrlid = 8, 9, 10, 14
+looptime = 900
+
+[BGctrl 10, anim]
+type = anim
+time = 0
+value = 0
+
+[BGctrl 10, anim]
+type = anim
+time = 120
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 120
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 120
+ctrlid = 10
+value = 10
+
+[BGctrl 10, anim]
+type = anim
+time = 180
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 180
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 180
+ctrlid = 10
+value = 12
+
+[BGctrl 10, anim]
+type = anim
+time = 300
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 300
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 300
+ctrlid = 14
+value = 14
+
+[BGctrl 10, anim]
+type = anim
+time = 420
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 420
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 420
+ctrlid = 10
+value = 13
+
+[BGctrl 10, anim]
+type = anim
+time = 540
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 540
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 540
+ctrlid = 10
+value = 11
+
+[BGctrl 10, anim]
+type = anim
+time = 600
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 600
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 600
+ctrlid = 10
+value = 13
+
+[BGctrl 10, anim]
+type = anim
+time = 720
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 720
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 720
+ctrlid = 10
+value = 10
+
+[BGctrl 10, anim]
+type = anim
+time = 780
+ctrlid = 8
+value = 8
+
+[BGctrl 10, anim]
+type = anim
+time = 780
+ctrlid = 9
+value = 9
+
+[BGctrl 10, anim]
+type = anim
+time = 780
+ctrlid = 14
+value = 15
+
+;---Lightning Bolt Positions---
+[BGctrldef 11]
+ctrlid = 10, 12
+looptime = 600
+
+[BGctrl 11, pos]
+type = posset
+time = 0
+x = 0
+
+[BGctrl 11, pos]
+type = posset
+time = 60
+x = 50
+
+[BGctrl 11, pos]
+type = posset
+time = 120
+x = -25
+
+[BGctrl 11, pos]
+type = posset
+time = 180
+x = 25
+
+[BGctrl 11, pos]
+type = posset
+time = 240
+x = -50
+
+[BGctrl 11, pos]
+type = posset
+time = 360
+x = -100
+
+[BGctrl 11, pos]
+type = posset
+time = 480
+x = 100
+
+[Begin Action 0]
+-1,-1, 0,0, -1
+
+[Begin Action 1]
+1,0, 0,0, 4,, A
+1,1, 0,0, 4,, A
+1,2, 0,0, 4,, A
+1,3, 0,0, 4,, A
+1,4, 0,0, 4,, A
+1,5, 0,0, 4,, A
+1,6, 0,0, 4,, A
+1,7, 0,0, 4,, A
+1,8, 0,0, 4,, A
+1,9, 0,0, 4,, A
+1,10, 0,0, 4,, A
+1,11, 0,0, 4,, A
+1,12, 0,0, 4,, A
+1,13, 0,0, 4,, A
+1,14, 0,0, 4,, A
+1,15, 0,0, 4,, A
+1,16, 0,0, 4,, A
+1,17, 0,0, 4,, A
+1,18, 0,0, 4,, A
+1,19, 0,0, 4,, A
+1,20, 0,0, 4,, A
+1,21, 0,0, 4,, A
+1,22, 0,0, 4,, A
+1,23, 0,0, 4,, A
+1,24, 0,0, 4,, A
+1,25, 0,0, 4,, A
+1,26, 0,0, 4,, A
+1,27, 0,0, 4,, A
+1,28, 0,0, 4,, A
+1,29, 0,0, 4,, A
+1,30, 0,0, 4,, A
+1,31, 0,0, 4,, A
+
+[Begin Action 2]
+1,16, 0,0, 4,H, A
+1,17, 0,0, 4,H, A
+1,18, 0,0, 4,H, A
+1,19, 0,0, 4,H, A
+1,20, 0,0, 4,H, A
+1,21, 0,0, 4,H, A
+1,22, 0,0, 4,H, A
+1,23, 0,0, 4,H, A
+1,24, 0,0, 4,H, A
+1,25, 0,0, 4,H, A
+1,26, 0,0, 4,H, A
+1,27, 0,0, 4,H, A
+1,28, 0,0, 4,H, A
+1,29, 0,0, 4,H, A
+1,30, 0,0, 4,H, A
+1,31, 0,0, 4,H, A
+1,0, 0,0, 4,H, A
+1,1, 0,0, 4,H, A
+1,2, 0,0, 4,H, A
+1,3, 0,0, 4,H, A
+1,4, 0,0, 4,H, A
+1,5, 0,0, 4,H, A
+1,6, 0,0, 4,H, A
+1,7, 0,0, 4,H, A
+1,8, 0,0, 4,H, A
+1,9, 0,0, 4,H, A
+1,10, 0,0, 4,H, A
+1,11, 0,0, 4,H, A
+1,12, 0,0, 4,H, A
+1,13, 0,0, 4,H, A
+1,14, 0,0, 4,H, A
+1,15, 0,0, 4,H, A
+
+[Begin Action 3]
+1,0, 0,0, 4,, AS240D256
+1,1, 0,0, 4,, AS224D256
+1,2, 0,0, 4,, AS208D256
+1,3, 0,0, 4,, AS192D256
+1,4, 0,0, 4,, AS176D256
+1,5, 0,0, 4,, AS160D256
+1,6, 0,0, 4,, AS144D256
+1,7, 0,0, 4,, AS128D256
+1,8, 0,0, 4,, AS112D256
+1,9, 0,0, 4,, AS96D256
+1,10, 0,0, 4,, AS80D256
+1,11, 0,0, 4,, AS64D256
+1,12, 0,0, 4,, AS48D256
+1,13, 0,0, 4,, AS32D256
+1,14, 0,0, 4,, AS16D256
+-1,-1, 0,0, -1
+
+[Begin Action 4]
+1,16, 0,0, 4,H, AS240D256
+1,17, 0,0, 4,H, AS224D256
+1,18, 0,0, 4,H, AS208D256
+1,19, 0,0, 4,H, AS192D256
+1,20, 0,0, 4,H, AS176D256
+1,21, 0,0, 4,H, AS160D256
+1,22, 0,0, 4,H, AS144D256
+1,23, 0,0, 4,H, AS128D256
+1,24, 0,0, 4,H, AS112D256
+1,25, 0,0, 4,H, AS96D256
+1,26, 0,0, 4,H, AS80D256
+1,27, 0,0, 4,H, AS64D256
+1,28, 0,0, 4,H, AS48D256
+1,29, 0,0, 4,H, AS32D256
+1,30, 0,0, 4,H, AS16D256
+-1,-1, 0,0, -1
+
+[Begin Action 5]
+5,0, 0,0, 6,, A
+5,1, 0,0, 6,, A
+5,2, 0,0, 6,, A
+5,3, 0,0, 6,, A
+5,4, 0,0, 6,, A
+
+[Begin Action 6]
+6,0, 0,0, 4,, A
+6,1, 0,0, 4,, A
+6,2, 0,0, 4,, A
+6,3, 0,0, 4,, A
+6,4, 0,0, 4,, A
+
+[Begin Action 7]
+7,0, 0,0, 4
+7,1, 0,0, 4
+
+[Begin Action 8]
+-1,-1, 0,0, 8
+8,0, 0,0, 1, , AS256D256
+8,0, 0,0, 1, , AS228D256
+8,0, 0,0, 1, , AS199D256
+8,0, 0,0, 1, , AS171D256
+8,0, 0,0, 1, , AS142D256
+8,0, 0,0, 1, , AS114D256
+8,0, 0,0, 1, , AS85D256
+8,0, 0,0, 1, , AS57D256
+8,0, 0,0, 1, , AS28D256
+-1,-1, 0,0, 3
+8,0, 0,0, 1, , AS256D256
+8,0, 0,0, 1, , AS240D256
+8,0, 0,0, 1, , AS224D256
+8,0, 0,0, 1, , AS208D256
+8,0, 0,0, 1, , AS192D256
+8,0, 0,0, 1, , AS176D256
+8,0, 0,0, 1, , AS160D256
+8,0, 0,0, 1, , AS144D256
+8,0, 0,0, 1, , AS128D256
+8,0, 0,0, 1, , AS112D256
+8,0, 0,0, 1, , AS96D256
+8,0, 0,0, 1, , AS80D256
+8,0, 0,0, 1, , AS64D256
+8,0, 0,0, 1, , AS48D256
+8,0, 0,0, 1, , AS32D256
+8,0, 0,0, 1, , AS16D256
+-1,-1, 0,0, -1
+
+[Begin Action 9]
+9,0, 0,0, 1,, AS256D256
+9,0, 0,0, 1,, AS240D256
+9,0, 0,0, 1,, AS224D256
+9,0, 0,0, 1,, AS208D256
+9,0, 0,0, 1,, AS192D256
+9,0, 0,0, 1,, AS176D256
+9,0, 0,0, 1,, AS160D256
+9,0, 0,0, 1,, AS144D256
+9,0, 0,0, 1,, AS128D256
+9,0, 0,0, 1,, AS112D256
+9,0, 0,0, 1,, AS96D256
+9,0, 0,0, 1,, AS80D256
+9,0, 0,0, 1,, AS64D256
+9,0, 0,0, 1,, AS48D256
+9,0, 0,0, 1,, AS32D256
+9,0, 0,0, 1,, AS16D256
+-1,-1, 0,0, -1
+
+[Begin Action 10]
+10,0, 0,0, 2,, A
+10,1, 0,0, 2,, A
+10,2, 0,0, 2,, A
+10,3, 0,0, 2,, A
+10,4, 0,0, 2,, A
+10,8, 0,0, 2,, A
+-1,-1, 0,0, -1
+
+[Begin Action 11]
+10,0, 0,0, 2,H, A
+10,1, 0,0, 2,H, A
+10,2, 0,0, 2,H, A
+10,3, 0,0, 2,H, A
+10,4, 0,0, 2,H, A
+10,8, 0,0, 2,H, A
+-1,-1, 0,0, -1
+
+[Begin Action 12]
+12,0, 0,0, 3,, A
+12,1, 0,0, 3,, A
+12,2, 0,0, 3,, A
+-1,-1, 0,0, -1
+
+[Begin Action 13]
+12,0, 0,0, 3,H, A
+12,1, 0,0, 3,H, A
+12,2, 0,0, 3,H, A
+-1,-1, 0,0, -1
+
+[Begin Action 14]
+14,0, 0,0, 3,, A
+14,1, 0,0, 3,, A
+-1,-1, 0,0, -1
+
+[Begin Action 15]
+14,0, 0,0, 3,H, A
+14,1, 0,0, 3,H, A
+-1,-1, 0,0, -1
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

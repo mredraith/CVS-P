@@ -1,0 +1,175 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;                            _                    _
+;                            ))\ __  __  ___  __  ))
+;                           ((_/((_)(|  ((_( ((_)((
+;                                         _))
+;                     ***********************************
+;                     *Superior Soldiers Stage by Dorgol*
+;                     ***********************************
+;-----------------------------------------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Superior_Soldiers_Nuclear_Reactor"
+displayname = "Nuclear Reactor"
+
+[camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -106.66666667
+boundright = 106.66666667
+boundhigh = -44
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 157
+autoturn = 1
+
+[Shadow]
+;color = 30, 64, 130
+intensity = 100
+yscale = 0.2
+
+[Music]
+bgmusic = sound/reactorss.mp3
+;bgvolume = 255
+
+[BGdef]
+spr = SS_Nuclear.sff
+debugbg = 0
+
+[BG 0]
+type = anim
+actionno = 1
+delta = 0.1, 0.25
+start = 0, -53
+
+[BG 0 Left]
+type = anim
+actionno = 1
+delta = 0.1, 0.25
+start = -319, -53
+scalestart = -1, 1
+
+[BG 0 Right]
+type = anim
+actionno = 1
+delta = 0.1, 0.25
+start = 317, -53
+scalestart = -1, 1
+
+[Begin Action 1]
+0,0, 0,0, 40
+0,1, 0,0, 40
+0,2, 0,0, 40
+
+[BG 3]
+type = normal
+spriteno = 1, 0
+start = 0, -43
+delta = 0.465, 0.5654
+mask = 1
+
+[BG 4]
+type = anim
+actionno = 2
+start = 0, -43
+delta = 0.465, 0.5654
+
+[Begin Action 2]
+2,0, 0,0, 15
+2,1, 0,0, 8
+;2,2, 0,0, 7
+2,3, 0,0, 8
+2,4, 0,0, 8
+2,5, 0,0, 8
+2,6, 0,0, 40
+2,5, 0,0, 8
+2,4, 0,0, 8
+2,3, 0,0, 8
+;2,2, 0,0, 7
+2,1, 0,0, 8
+2,0, 0,0, 15
+
+[BG 5]
+type = anim
+actionno = 3
+delta = 0.8685184, 1
+start = 0, -53
+trans = add
+alpha = 160, 256
+
+[Begin Action 3]
+3,0, 0,0, 60
+3,4, 0,0, 10
+3,1, 0,0, 60
+3,4, 0,0, 10
+3,2, 0,0, 60
+3,4, 0,0, 10
+3,3, 0,0, 60
+3,4, 0,0, 10
+
+[BG 6]
+type = anim
+actionno = 4
+delta = 0.8685184, 1
+start = 0, -53
+trans = add
+alpha = 160, 256
+
+[Begin Action 4]
+6,0, 0,0, 60
+6,4, 0,0, 10
+6,1, 0,0, 60
+6,4, 0,0, 10
+6,2, 0,0, 60
+6,4, 0,0, 10
+6,3, 0,0, 60
+6,4, 0,0, 10
+
+[BG 7]
+type = parallax
+spriteno = 5, 0
+start = 0, -53
+delta = 0.8685184, 1
+xscale = 1, 1.4
+mask = 1
+
+[BG 8]
+type = normal
+spriteno = 4, 0
+start = 0, -53
+delta = 0.8685184, 1
+mask = 1
+
+;End? XP
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

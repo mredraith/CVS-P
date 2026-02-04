@@ -1,0 +1,373 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;------------------------------------------------------------------------------
+;------------餓狼-Mark of the Wolves--Kain Stage(カイン・Ｒ・ハインラインステージ)---
+;製作：RYO 2005-----11月2日製作終了-----------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "MOTW Kain Stage"
+displayname = "Kain's Palace"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -106.66666667
+boundright = 106.66666667
+boundhigh = -427
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 163
+autoturn = 1
+
+[Shadow]
+intensity = 0
+
+[Reflection]
+intensity = 96
+reflect = 1
+
+[Music]
+;bgvolume = 255
+
+[BGdef]
+spr = MOTW-KainStage.sff
+debugbg = 0
+
+[BG 0];背景・最背景
+type = normal
+spriteno = 0, 0
+start = 36, 145
+delta = 0.25, 0.5
+mask = 0
+
+[BG 1]
+type = anim
+actionno = 1
+start = 34, 137
+delta = 0.475, 0.8
+mask = 1
+
+[Begin action 1]
+1,0, 0,0, 8
+1,1, 0,0, 8
+1,2, 0,0, 8
+1,3, 0,0, 8
+1,4, 0,0, 8
+1,5, 0,0, 8
+1,6, 0,0, 8
+1,7, 0,0, 8
+
+[BG 2]
+type = anim
+actionno = 2
+start = -46, 137
+delta = 0.475, 0.8
+mask = 1
+
+[Begin action 2]
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,2, 0,0, 8
+2,3, 0,0, 8
+2,4, 0,0, 8
+2,5, 0,0, 8
+2,6, 0,0, 8
+2,7, 0,0, 8
+
+[BG 5];背景・建物
+type = anim
+actionno = 5
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 5]
+5,0, 0,0, 8
+5,1, 0,0, 8
+5,2, 0,0, 8
+5,3, 0,0, 8
+5,4, 0,0, 8
+5,5, 0,0, 8
+5,6, 0,0, 8
+5,7, 0,0, 8
+
+[BG 20]
+type = normal
+spriteno = 20, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 20];背景・灯り・左１
+type = anim
+actionno = 20
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 20];灯り・左１・アニメーション
+20,1, 0,0, 32, ,AS256D0
+Interpolate Blend
+20,1, 0,0, 8, ,AS0D256
+20,1, 0,0, 32, ,AS0D256
+Interpolate Blend
+20,1, 0,0, 8, ,AS256D0
+
+[BG 25]
+type = normal
+spriteno = 25, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 25];背景・灯り・左２
+type = anim
+actionno = 25
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 25];灯り・左２・アニメーション
+25,1, 0,0, 32, ,AS256D0
+Interpolate Blend
+25,1, 0,0, 8, ,AS0D256
+25,1, 0,0, 32, ,AS0D256
+Interpolate Blend
+25,1, 0,0, 8, ,AS256D0
+
+[BG 30]
+type = normal
+spriteno = 30, 0
+start = 0, 185
+delta = 1, 1
+
+[BG 30];背景・灯り・左３
+type = anim
+actionno = 30
+start = 0, 185
+delta = 1, 1
+
+[Begin action 30];灯り・左３・アニメーション
+30,1, 0,0, 32, ,AS256D0
+Interpolate Blend
+30,1, 0,0, 8, ,AS0D256
+30,1, 0,0, 32, ,AS0D256
+Interpolate Blend
+30,1, 0,0, 8, ,AS256D0
+
+[BG 35]
+type = normal
+spriteno = 35, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 35];背景・灯り・右１
+type = anim
+actionno = 35
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 35];灯り・右１・アニメーション
+35,1, 0,0, 32, ,AS256D0
+Interpolate Blend
+35,1, 0,0, 8, ,AS0D256
+35,1, 0,0, 32, ,AS0D256
+Interpolate Blend
+35,1, 0,0, 8, ,AS256D0
+
+[BG 40]
+type = normal
+spriteno = 40, 0
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[BG 40];背景・灯り・右２
+type = anim
+actionno = 40
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 40];灯り・右２・アニメーション
+40,1, 0,0, 32, ,AS256D0
+Interpolate Blend
+40,1, 0,0, 8, ,AS0D256
+40,1, 0,0, 32, ,AS0D256
+Interpolate Blend
+40,1, 0,0, 8, ,AS256D0
+
+[BG 45]
+type = normal
+spriteno = 45, 0
+start = 0, 185
+delta = 1, 1
+
+[BG 45];背景・灯り・右３
+type = anim
+actionno = 45
+start = 0, 185
+delta = 1, 1
+
+[Begin action 45];灯り・右３・アニメーション
+45,1, 0,0, 32, ,AS256D0
+Interpolate Blend
+45,1, 0,0, 8, ,AS0D256
+45,1, 0,0, 32, ,AS0D256
+Interpolate Blend
+45,1, 0,0, 8, ,AS256D0
+
+[BG 55];背景・もや・中央
+type = anim
+actionno = 55
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 55];もや・中央・アニメーション
+55,0, 0,0, 8
+55,1, 0,0, 8
+55,2, 0,0, 8
+55,3, 0,0, 8
+55,4, 0,0, 8
+55,5, 0,0, 8
+55,6, 0,0, 8
+55,7, 0,0, 8
+
+[BG 56]
+type = anim
+actionno = 56
+start = 0, 185
+delta = 1, 1
+mask = 1
+
+[Begin action 56]
+55,0, 0,0, 4, ,AS128D128
+55,1, 0,0, 8, ,AS128D128
+55,2, 0,0, 8, ,AS128D128
+55,3, 0,0, 8, ,AS128D128
+55,4, 0,0, 8, ,AS128D128
+55,5, 0,0, 8, ,AS128D128
+55,6, 0,0, 8, ,AS128D128
+55,7, 0,0, 8, ,AS128D128
+55,0, 0,0, 4, ,AS128D128
+
+[BG 70]
+type = anim
+actionno = 70
+start = -200, 115
+delta = 0.9, 0.9
+velocity = 2.5, 0
+tile = 1, 0
+tilespacing = 2000, 0
+sin.y = 30,800
+sin.x = 75,650
+mask = 1
+
+[Begin action 70]
+-1,-1, 0,0, 400
+Loopstart
+70,0, 0,0, 6
+70,1, 0,0, 6
+70,2, 0,0, 6
+70,3, 0,0, 6
+
+[BG 71]
+type = anim
+actionno = 71
+start = -240, 125
+delta = 1.2, 1.2
+velocity = 3, 0
+tile = 1, 0
+tilespacing = 1800, 0
+sin.y = 25,600
+sin.x = 80,700
+layerno = 1
+mask = 1
+
+[Begin action 71]
+70,0, 0,0, 6
+70,1, 0,0, 6
+70,2, 0,0, 6
+70,3, 0,0, 6
+
+[BG 75]
+type = anim
+actionno = 75
+start = -320, 135
+scalestart = 1, -1
+delta = 0.9, 0.9
+velocity = 2.5, 0
+tile = 1, 0
+tilespacing = 1900, 0
+sin.y = 30,760
+sin.x = 70,700
+mask = 1
+
+[Begin action 75]
+75,0, 0,0, 3
+75,1, 0,0, 3
+75,2, 0,0, 3
+75,3, 0,0, 3
+75,4, 0,0, 3
+75,5, 0,0, 3
+75,6, 0,0, 3
+75,7, 0,0, 3
+
+[BG 76]
+type = anim
+actionno = 76
+start = -300, 145
+delta = 1.3, 1.3
+velocity = 3, 0
+tile = 1, 0
+tilespacing = 2100, 0
+sin.y = 20,700
+sin.x = 60,600
+layerno = 1
+mask = 1
+
+[Begin action 76]
+-1,-1, 0,0, 350
+Loopstart
+75,0, 0,0, 3
+75,1, 0,0, 3
+75,2, 0,0, 3
+75,3, 0,0, 3
+75,4, 0,0, 3
+75,5, 0,0, 3
+75,6, 0,0, 3
+75,7, 0,0, 3
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

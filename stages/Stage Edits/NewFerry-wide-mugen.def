@@ -1,0 +1,159 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;stage template by Eternaga , Email: Eternaga@hotmail.com
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Staten Island Ferry"
+
+[BGdef]
+spr = NewFerry.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound\storms.mp3
+;bgvolume = -100
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -157
+boundright = 157
+boundhigh = -112
+verticalfollow = 0.2
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 220
+zoffsetlink = 30
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+yscale = 0.2
+intensity = 96
+color = 24, 24, 0
+
+[BG Water]
+type = anim
+actionno = 1
+start = 0, 89
+scalestart = -1, 1
+tile = 1, 0
+tilespacing = 32, 0
+; Compenstate for Mugen quirk of moving background layers when changing 'zoffset'.
+sin.y = 2, 180
+delta = 0.3, 0.6
+mask = 0
+
+[Begin Action 1]
+7,0, 0,0, 8
+7,1, 0,0, 8
+7,2, 0,0, 8
+7,3, 0,0, 8
+7,4, 0,0, 8
+7,5, 0,0, 8
+7,6, 0,0, 8
+7,7, 0,0, 8
+
+[BG Skyline Reflection]
+type = normal
+spriteno = 6, 0
+start = 90, 39
+scalestart = 1, -0.8
+tile = 1, 0
+velocity = -0.1, 0
+; Compenstate for Mugen quirk of moving background layers when changing 'zoffset'.
+sin.y = 2, 180
+delta = 0.3, 0.6
+trans = add
+alpha = 64, 224
+
+[BG Skyline]
+type = normal
+spriteno = 6, 0
+start = 90, 91
+tile = 1, 0
+velocity = -0.1, 0
+; Compenstate for Mugen quirk of moving background layers when changing 'zoffset'.
+sin.y = 2, 180
+delta = 0.3, 0.6
+mask = 1
+
+[BG Statue]
+type = normal
+spriteno = 9, 0
+start = 140, 19
+tile = 1, 0
+tilespacing = 2048, 0
+velocity = -0.15, 0
+; Compenstate for Mugen quirk of moving background layers when changing 'zoffset'.
+sin.y = 2, 180
+delta = 0.4, 0.65
+mask = 1
+
+[BG Rail]
+type = normal
+spriteno = 10, 0
+start = -47, 73
+sin.y = -3, 180
+delta = 0.7, 0.7
+mask = 1
+
+[BG Window]
+type = normal
+spriteno = 3, 0
+start = -48, 218
+sin.y = -6, 180
+delta = 0.8, 0.8
+mask = 1
+
+[BG Fighting Ground]
+type = parallax
+spriteno = 2, 0
+start = 0, 179
+sin.y = -6, 180
+delta = 0.9, 1
+xscale = 1, 1.5
+
+[BG Seats]
+type = normal
+spriteno = 5, 0
+start = 0, 119
+sin.y = -6, 180
+mask = 1
+delta = 0.925, 1
+
+[BG Dummy]
+type = dummy
+id = 30
+start = 0, -55
+sin.y = -6, 180
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

@@ -1,0 +1,154 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;Night Street stage by Chok (iori371@hotmail.fr)
+;From Aggressors Of Dark Kombat
+;15/07/06
+
+;--------------------------------------------------------
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Night Street"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -98.66666667
+boundright = 98.66666667
+boundhigh = -71
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 16, 12, 0
+intensity = 96
+yscale = 0.3
+
+[Music]
+bgmusic = sound/nightstreet.mp3
+;bgvolume = 0
+
+[BGdef]
+spr = nightstreet.sff
+debugbg = 0
+
+[BG 0]
+type = anim
+actionno = 0
+start = 0, -55
+delta = 0.2, 0.3250
+mask = 0
+
+[Begin action 0]
+0,0, 0,0, 9
+0,1, 0,0, 9
+0,2, 0,0, 9
+0,3, 0,0, 9
+0,4, 0,0, 9
+0,5, 0,0, 9
+0,6, 0,0, 9
+0,7, 0,0, 9
+
+[BG 1]
+type = normal
+spriteno = 1, 0
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[BG 2]
+type = anim
+actionno = 1
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[Begin action 1]
+2,0, 0,0, 9
+2,1, 0,0, 9
+2,2, 0,0, 9
+2,3, 0,0, 9
+
+[BG 3]
+type = anim
+actionno = 2
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[Begin action 2]
+3,0, 0,0, 9
+3,1, 0,0, 9
+3,2, 0,0, 9
+3,3, 0,0, 9
+
+[BG 4]
+type = anim
+actionno = 3
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[Begin action 3]
+4,0, 0,0, 9
+4,1, 0,0, 9
+4,2, 0,0, 9
+
+[BG 5]
+type = anim
+actionno = 4
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[Begin action 4]
+5,0, 0,0, 9
+5,1, 0,0, 9
+5,2, 0,0, 9
+5,3, 0,0, 9
+
+[BG 6]
+type = anim
+actionno = 5
+start = 0, -55
+delta = 1, 1
+mask = 1
+
+[Begin action 5]
+6,0, 0,0, 4
+6,1, 0,0, 4
+6,2, 0,0, 4
+6,3, 0,0, 4
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

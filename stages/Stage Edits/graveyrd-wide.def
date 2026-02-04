@@ -1,0 +1,406 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "Eternal Rest"
+displayname = "Forgotten Graveyard"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -178.66666667
+boundright = 178.66666667
+boundhigh = -80
+verticalfollow = 0.3
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 165
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+;color = 0, 8, 48
+intensity = 96
+yscale = 0.3
+
+[Music]
+;bgvolume =
+
+[BGdef]
+debugbg = 0
+spr = graveyrd.sff
+
+[BG 1]
+type = anim
+actionno = 0
+start = 0, 185
+delta = 1, 1
+
+[BG 2a]
+type = anim
+actionno = 1
+ID = 11
+start = 410, 125
+delta = 1, 1
+
+[BG 2b]
+type = anim
+actionno = 1
+ID = 12
+start = 470, 125
+delta = 1, 1
+
+[BG 2c]
+type = anim
+actionno = 1
+ID = 13
+start = 430, 125
+delta = 1, 1
+
+[BG 2d]
+type = anim
+actionno = 1
+ID = 14
+start = 450, 125
+delta = 1, 1
+
+[BG 3a]
+type = anim
+actionno = 2
+layerno = 1
+ID = 21
+start = 410, 135
+delta = 1, 1.1
+
+[BG 3b]
+type = anim
+actionno = 2
+layerno = 1
+ID = 22
+start = 420, 135
+delta = 1, 1.1
+
+[BG 4a]
+type = anim
+actionno = 3
+layerno = 1
+ID = 31
+start = 410, 145
+delta = 1, 1.1
+
+[BG 4b]
+type = anim
+actionno = 3
+layerno = 1
+ID = 32
+start = 410, 130
+delta = 1, 1.1
+
+[BG 4c]
+type = anim
+actionno = 3
+layerno = 1
+ID = 33
+start = 410, 105
+delta = 1, 1.1
+
+[BG 5]
+type = anim
+actionno = 4
+layerno = 1
+start = 0, 185
+delta = 1, 1.1
+
+[Begin action 0]
+0,0, 0,0, 6
+0,1, 0,0, 6
+0,2, 0,0, 6
+0,3, 0,0, 6
+
+[Begin action 1]
+1,0, 0,0, 6
+1,1, 0,0, 6
+1,2, 0,0, 6
+1,3, 0,0, 6
+
+[Begin action 2]
+2,0, 0,0, 6
+2,1, 0,0, 6
+2,2, 0,0, 6
+2,3, 0,0, 6
+
+[Begin action 3]
+3,0, 0,0, 10
+3,1, 0,0, 10
+3,2, 0,0, 10
+3,3, 0,0, 10
+3,4, 0,0, 10
+3,5, 0,0, 10
+3,6, 0,0, 10
+3,7, 0,0, 10
+
+[Begin action 4]
+4,0, 0,0, 6
+4,1, 0,0, 6
+4,2, 0,0, 6
+4,3, 0,0, 6
+
+[BGCtrlDef 11]
+CtrlID = 11
+looptime = 398
+
+[BGCtrl 11.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 11.2]
+type = VelSet
+time = 0
+x = -6
+y = 0
+
+[BGCtrl 11.3]
+type = VelAdd
+time = 0, 0, 1
+y = -0.015
+
+[BGCtrlDef 12]
+CtrlID = 12
+looptime = 478
+
+[BGCtrl 12.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 12.2]
+type = VelSet
+time = 0, 250
+x = 0
+y = 0
+
+[BGCtrl 12.3]
+type = VelSet
+time = 250
+x = -6
+
+[BGCtrl 12.4]
+type = VelAdd
+time = 0, 0, 1
+y = -0.016
+
+[BGCtrlDef 13]
+CtrlID = 13
+looptime = 300
+
+[BGCtrl 13.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 13.2]
+type = VelSet
+time = 0, 120
+x = 0
+y = 0
+
+[BGCtrl 13.3]
+type = VelSet
+time = 120
+x = -6
+
+[BGCtrl 13.4]
+type = VelAdd
+time = 0, 0, 1
+y = -0.015
+
+[BGCtrlDef 14]
+CtrlID = 14
+looptime = 775
+
+[BGCtrl 14.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 14.2]
+type = VelSet
+time = 0, 565
+x = 0
+y = 0
+
+[BGCtrl 14.1]
+type = VelSet
+time = 565
+x = -6
+
+[BGCtrl 14.2]
+type = VelAdd
+time = 0, 0, 1
+y = -0.014
+
+[BGCtrlDef 21]
+CtrlID = 21
+looptime = 445
+
+[BGCtrl 21.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 21.2]
+type = VelSet
+time = 0, 30
+x = 0
+y = 0
+
+[BGCtrl 21.2]
+type = VelSet
+time = 30
+x = -7
+y = 0
+
+[BGCtrl 21.3]
+type = VelAdd
+time = 0, 0, 1
+y = -0.019
+
+[BGCtrlDef 22]
+CtrlID = 22
+looptime = 720
+
+[BGCtrl 22.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 22.2]
+type = VelSet
+time = 0, 175
+x = 0
+y = 0
+
+[BGCtrl 22.2]
+type = VelSet
+time = 175
+x = -7
+y = 0
+
+[BGCtrl 22.3]
+type = VelAdd
+time = 0, 0, 1
+y = -0.018
+
+[BGCtrlDef 31]
+CtrlID = 31
+looptime = 630
+
+[BGCtrl 31.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 31.2]
+type = VelSet
+time = 0, 410
+x = 0
+y = 0
+
+[BGCtrl 31.3]
+type = VelSet
+time = 410
+x = -7
+
+[BGCtrl 31.4]
+type = VelAdd
+time = 0, 0, 1
+y = -0.023
+
+[BGCtrlDef 32]
+CtrlID = 32
+looptime = 902
+
+[BGCtrl 32.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 32.2]
+type = VelSet
+time = 0, 100
+x = 0
+y = 0
+
+[BGCtrl 32.3]
+type = VelSet
+time = 100
+x = -7
+
+[BGCtrl 32.4]
+type = VelAdd
+time = 0, 0, 1
+y = -0.023
+
+[BGCtrlDef 33]
+CtrlID = 33
+looptime = 215
+
+[BGCtrl 33.1]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 33.2]
+type = VelSet
+time = 0, 5
+x = 0
+y = 0
+
+[BGCtrl 33.3]
+type = VelSet
+time = 5
+x = -7
+
+[BGCtrl 33.4]
+type = VelAdd
+time = 0, 0, 1
+y = -0.023
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1

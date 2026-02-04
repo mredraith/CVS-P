@@ -1,0 +1,136 @@
+
+; *Stage edit by Kasasagi*
+; Website: https://tilde.town/~kasasagi/
+; Downloads: https://drive.proton.me/urls/PDERG8YN00#RwM3MVN730fv
+
+;*********************************************************************************************;                                          ;
+;                                            China                                            ;
+;                                  Made by BaoJJ Aka Chinina                                  ;
+;                                                                                             ;
+;                        http://perso.wanadoo.fr/mugenchinina/index.htm                       ;
+;                                                                                             ;
+;                                         baojj@free.fr                                       ;
+;              Thanks Beat92Box (aka OrochiKOF97) for making the BGM track, China.            ;
+;*********************************************************************************************;
+
+[Info]
+mugenversion = 1.1
+ikemenversion = 1.0
+name = "China"
+displayname = "Wulingyuan Riverbank"
+
+[Camera]
+zoomin = 0.75
+zoomout = 0.75
+boundleft = -162.66666667
+boundright = 162.66666667
+boundhigh = -8
+verticalfollow = 0.05
+tension = 120
+
+[PlayerInfo]
+p1startx = -92
+p1starty = 0
+p1facing = 1
+p2startx = 92
+p2starty = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+localcoord = 320, 180
+portraitscale = 0.5
+zoffset = 161
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+;color = 70, 70, 70
+yscale = 0.3
+
+[Music]
+bgmusic = sound/china.mp3
+;bgvolume = 255
+
+[BGdef]
+debugbg = 0
+spr = China.sff
+
+[BG Mont]
+type = Normal
+spriteno = 0, 0
+start = 0, -62
+delta = 0.60163934, 1
+
+[BG Eau]
+type = anim
+actionno = 0
+start = 0, -62
+delta = 0.60163934, 1
+mask = 1
+
+[Begin action 0]
+0,1, 0,0, 17
+0,2, 0,0, 17
+0,3, 0,0, 17
+
+[BG Sol]
+type = Normal
+spriteno = 1, 0
+start = 0, -62
+delta = 1, 1
+mask = 1
+
+[BG Perso]
+type = anim
+actionno = 1
+start = 0, -62
+delta = 1, 1
+mask = 1
+
+[Begin action 1]
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,2, 0,0, 8
+2,3, 0,0, 8
+2,4, 0,0, 8
+2,5, 0,0, 8
+
+[BG Girl1]
+type = anim
+actionno = 2
+start = 0, -62
+delta = 1, 1
+mask = 1
+
+[Begin action 2]
+3,0, 0,0, 8
+3,1, 0,0, 8
+3,2, 0,0, 8
+
+[BG Xiaolon]
+type = anim
+actionno = 3
+start = 0, -62
+delta = 1, 1
+mask = 1
+
+[Begin action 3]
+4,0, 0,0, 8
+4,1, 0,0, 8
+4,2, 0,0, 8
+4,3, 0,0, 8
+4,4, 0,0, 8
+
+; 480x200 portrait
+[Begin Action 9000]
+9000,1, 0,0, 1
+
+; 512x240 portrait
+[Begin Action 9001]
+9001,1, 0,0, 1
