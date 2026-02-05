@@ -1,5 +1,4 @@
 ; Standing Light Punch
-; CNS difficulty: easy
 [Statedef 200]
 type = S
 movetype= A
@@ -72,7 +71,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
-;CNS Difficulty: easy
 [Statedef 210]
 type = S
 movetype= A
@@ -89,94 +87,10 @@ type = attackmulset
 trigger1 = numtarget >= 1
 value = 0.90 ** target, gethitvar(hitcount)
 
-[State 210, Voice]
-type = Playsnd
-trigger1 = Animelem = 1 && Random < 400
-value = 0, 5
-channel = 0
-
-[State 210, Swing Snd]
-type = Playsnd
-trigger1 = AnimElem = 5
-value = 1,1
-channel = 1
-
-[State 210, Hit]
-type = HitDef
-trigger1 = AnimElem = 3
-attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF ;HLAFD+-
-guardflag = M ;HLA
-priority = 2,Hit ;Hit,Miss,Dodge
-damage = ceil(ifElse(fvar(11) * 65 < 7, 7, fvar(11) * 65)), 4
-ID = 200
-getpower = ifElse(!var(13), 50, 40)*!var(20), 15 * !var(20)
-givepower = 15, 15
-hitsound = s2, 1
-guardsound = s130, 0
-pausetime = 12,14
-guard.pausetime = 10, 10
-sparkNo = -1 + 0 * (var(33) := 8011)
-guard.sparkNo = -1 + 0 * (var(34) := 8000)
-sparkXY = -10 + 0 * (var(35) := 70), var(36) := -70
-animType = Medium
-air.animType = Back
-fall.animType = Back
-ground.type = low
-air.type = low
-ground.slidetime = 15 + 3*var(9)
-ground.hittime = 15 + 3*var(9)
-guard.hittime = 15
-air.hittime = 120
-ground.velocity = -3
-guard.velocity = -3
-air.velocity = -1,-3
-ground.cornerPush.velOff = 0
-guard.cornerPush.velOff = 0
-air.cornerPush.velOff = 0
-yaccel = .58
-fall = 0
-fall.recover = 1
-fall.recoverTime = 120
-palFX.time = 12 * var(9)
-palFX.add = 255,255,255
-palFX.sinAdd= -255,-255,-255,48
-
-[State 210, End]
-type = ChangeState
-trigger1 = !AnimTime 
-value = 0
-ctrl = 1
-
-;------------------------------------------
-; Standing Strong Punch
-; CNS difficulty: easy
-[Statedef 220]
-type = S
-movetype= A
-physics = S
-poweradd= 30 * !var(20)
-ctrl = 0
-velset = 0,0
-anim = 220
-sprpriority = 2
-facep2 = 1
-
 [State 220, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 3 
 value = 0, 13
-channel = 0
-
-[state -3, dampener]
-type = attackmulset
-trigger1 = numtarget >= 1
-value = 0.90 ** target, gethitvar(hitcount)
-
-[State 220, Voice]
-type = PlaySnd
-trigger1 = AnimElem = 9 
-value = 0, 12
 channel = 0
 
 [State 220, Swing Snd]
@@ -185,16 +99,9 @@ trigger1 = animelem = 2
 value = 1,2
 channel = 1
 
-
-[State 220, Swing Snd]
-type = playsnd
-trigger1 = animelem = 10
-value = 1,2
-channel = 1
-
 [State 220, HitDef]
 type = HitDef
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 2
 attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF ;HLAFD+-
 guardflag = M ;HLA
@@ -215,12 +122,12 @@ air.animType = Back
 fall.animType = Back
 ground.type = low ;Low,Trip,None
 air.type = high
-ground.slidetime = 18 + 4*var(9)
-ground.hittime = 18 + 4*var(9)
-guard.hittime = 18
+ground.slidetime = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
+guard.hittime = 6
 air.hittime = 120
-ground.velocity = -2
-guard.velocity = -3
+ground.velocity = -4
+guard.velocity = -4
 air.velocity = -5.25,-6
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
@@ -236,15 +143,52 @@ envshake.time = 10
 envshake.ampl = 6
 envShake.freq = 100
 
+[State 210, End]
+type = ChangeState
+trigger1 = !AnimTime 
+value = 0
+ctrl = 1
+
+;------------------------------------------
+; Standing Strong Punch
+[Statedef 220]
+type = S
+movetype= A
+physics = S
+poweradd= 30 * !var(20)
+ctrl = 0
+velset = 0,0
+anim = 220
+sprpriority = 2
+facep2 = 1
+
+[state -3, dampener]
+type = attackmulset
+trigger1 = numtarget >= 1
+value = 0.90 ** target, gethitvar(hitcount)
+
+[State 220, Voice]
+type = PlaySnd
+trigger1 = AnimElem = 9 
+value = 0, 12
+channel = 0
+
+
+[State 220, Swing Snd]
+type = playsnd
+trigger1 = animelem = 10
+value = 1,2
+channel = 1
+
 [State 220, HitDef]
 type = HitDef
-trigger1 = AnimElem = 12
+trigger1 = AnimElem = 2
 attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF ;HLAFD+-
 guardflag = M ;HLA
 animtype = Hard ;light,medium,hard,back,up,diagup
 priority = 4, Hit ;Hit,Miss,Dodge
-damage = ceil(ifElse(fvar(11) * 30 < 7, 7, fvar(11) * 30)), 7
+damage = ceil(ifElse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
 ID = 200
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
 givepower = 30, 30
@@ -287,7 +231,6 @@ value = 0
 ctrl = 1
 
 ; Dodge Strong Punch
-; CNS difficulty: easy
 [Statedef 221]
 type = S
 movetype= A
@@ -361,7 +304,6 @@ value = 0
 ctrl = 1
 
 ; Z-Counter Punch
-; CNS difficulty: easy
 [Statedef 222]
 type = S
 movetype= A
@@ -573,7 +515,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
-; CNS difficulty: easy
 [Statedef 230]
 type = S
 movetype= A
@@ -651,7 +592,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Standing Medium Kick
-; CNS difficulty: easy
 [Statedef 240]
 type = S
 movetype= A
@@ -662,6 +602,7 @@ velset = 0,0
 anim = 240
 sprpriority = 2
 facep2=1
+juggle = 20
 
 [State 240, Voice]
 type = playsnd
@@ -688,7 +629,7 @@ hitflag = MAF ;HLAFD+-
 guardflag = M ;HLA
 animtype = Medium ;light,medium,hard,back,up,diagup
 priority = 2,Hit ;Hit,Miss,Dodge
-damage = ceil(ifElse(fvar(11) * 63 < 7, 7, fvar(11) * 63)), 7
+damage = ceil(ifElse(fvar(11) * 40 < 7, 7, fvar(11) * 40)), 7
 ID = 200
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
 givepower = 30, 30
@@ -709,7 +650,7 @@ guard.hittime = 15
 air.hittime = 120
 ground.velocity = -3
 guard.velocity = -3
-air.velocity = -3, -7.2
+air.velocity = -1, -14
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
