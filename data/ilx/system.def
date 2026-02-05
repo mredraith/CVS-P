@@ -41,15 +41,15 @@ snd = system.snd ;Filename of sound data
 select = select.def ;Character and stage selection list
 fight = fight/fight.def ;Fight definition filename
 ;System fonts
-font1 = f-4x6.def
-font2 = name14.def
-font3 = ilx/font/tektur46.def ;enter48.def
+font1 = ilx/font/Jam 16x25.def
+font2 = ilx/font/Jam 16x25.def
+font3 = ilx/font/Jam 16x25.def ;enter48.def
 font4 = ilx/font/Jam 16x25.def ;revamped51.def ;arcade.def
-font5 = ilx/font/tektur26.def ;mssansserif-tt36.def
+font5 = ilx/font/Jam 16x25.def ;mssansserif-tt36.def
 ;font5.height = 36 ;Uncomment to override the size of the font (Truetype fonts only)
-font6 = infofont.def
-font7 = ilx/font/MvC-lifebar.def;Open_Sans.def
-font8 = ilx/fight/fonts/NG_timer.fnt;num48.def
+font6 = ilx/font/Jam 16x25.def
+font7 = ilx/font/Jam 16x25.def;Open_Sans.def
+font8 = ilx/font/Jam 16x25.def;num48.def
 module = ;Ikemen feature: External Lua code
 
 ;----------------------------
@@ -62,25 +62,25 @@ module = ;Ikemen feature: External Lua code
  ;Music will continue to play between screens if the files names
  ;are the same, and both BGMs are specified to loop.
  ;Music to play at title screen.
-title.bgm = sound/menu.mp3;sound/title.mp3
+title.bgm = 
 title.bgm.volume = 100 ;volume scaling factor in percent. 100 is default
 title.bgm.loop = 1 ;Set to 0 to prevent looping
 title.bgm.loopstart = 
 title.bgm.loopend = 
  ;Music to play at char select screen.
-select.bgm = sound/menu.mp3;sound/title.mp3
+select.bgm = 
 select.bgm.volume = 100
 select.bgm.loop = 1
 select.bgm.loopstart = 
 select.bgm.loopend = 
  ;Music to play at versus screen.
-vs.bgm = sound/vs.mp3;sound/versus.mp3
+vs.bgm = 
 vs.bgm.volume = 100
 vs.bgm.loop = 1
 vs.bgm.loopstart = 
 vs.bgm.loopend = 
  ;Music to play at victory screen.
-victory.bgm = sound/winner.mp3
+victory.bgm = 
 victory.bgm.volume = 100
 victory.bgm.loop = 1
 victory.bgm.loopstart = 

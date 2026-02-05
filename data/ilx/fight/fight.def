@@ -1,4 +1,4 @@
-; Definition of fight screen
+	; Definition of fight screen
 
 ; Motif: Infinite Legacy X (ILX)
 ; Optimal resolution: 1280x720
@@ -31,11 +31,11 @@ localcoord = 1280,720 ;Local coordinate space width and height
 [Files]
 sff = fight.sff
 snd = fight.snd
-font1 = 
-font2 = fonts/win.fnt
-font3 = fonts/MvC-lifebar.def
-font4 = fonts/NG_timer.fnt
-font5 = fonts/combo.fnt
+font1 = Jam 16x25.def
+font2 = Jam 16x25.def
+font3 = Jam 16x25.def
+font4 = Jam 16x25.def
+font5 = Jam 16x25.def
 fightfx.sff = fightfx.sff
 fightfx.air = fightfx.air
 common.snd = common.snd
@@ -753,9 +753,9 @@ p1.front.anim = 11
 p1.front.layerno = 2
 ;p1.front.offset = -6,4
 p1.range.x = 198,0
-p1.counter.offset = -2,34;-256,15
+p1.counter.offset = -2,18;-256,15
 p1.counter.font = 2,0, -1, ;242,242,255
-p1.counter.scale = 0.5, 0.5
+p1.counter.scale = 1,1
 p1.counter.layerno = 2
 p1.levelbars = 1 ;Ikemen feature
 
@@ -773,9 +773,9 @@ p2.front.layerno = 2
 ;p2.front.offset = 6,4
 p2.front.facing = -1
 p2.range.x = -198,0
-p2.counter.offset = 8,34
+p2.counter.offset = 8,18
 p2.counter.font = 2,0, 1, ;242,242,255
-p2.counter.scale = 0.5, 0.5
+p2.counter.scale = 1,1
 p2.counter.layerno = 2
 p2.levelbars = 1 ;Ikemen feature
 
@@ -1032,35 +1032,35 @@ p2.teammate.face.layerno = 2
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 
 [Simul Name]
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 ;Player 3
 p3.pos = 24,44
 p3.name.font = 3,6, 1
-p3.name.scale = 0.8,0.8
+p3.name.scale = 1,1
 p3.name.layerno = 2
 ;Player 4
 p4.pos = 1256,44
 p4.name.font = 3,6, -1
-p4.name.scale = 0.8,0.8
+p4.name.scale = 1,1
 p4.name.layerno = 2
 
 ; Ikemen feature
@@ -1068,32 +1068,32 @@ p4.name.layerno = 2
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 ;Player 3
 p3.pos = 82,134
 p3.name.font = 3,6, 1
-p3.name.scale = 0.8,0.8
+p3.name.scale = 1,1
 p3.name.layerno = 2
 ;Player 4
 p4.pos = 1198,134
 p4.name.font = 3,6, -1
-p4.name.scale = 0.8,0.8
+p4.name.scale = 1,1
 p4.name.layerno = 2
 ;Player 5
 p5.pos = 82,154
 p5.name.font = 3,6,1
-p5.name.scale = 0.8,0.8
+p5.name.scale = 1,1
 p5.name.layerno = 2
 ;Player 6
 p6.pos = 1198,154
 p6.name.font = 3,6,-1
-p6.name.scale = 0.8,0.8
+p6.name.scale = 1,1
 p6.name.layerno = 2
 
 ; Ikemen feature
@@ -1101,42 +1101,42 @@ p6.name.layerno = 2
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 ;Player 3
 p3.pos = 82,134
 p3.name.font = 3,6, 1
-p3.name.scale = 0.8,0.8
+p3.name.scale = 1,1
 p3.name.layerno = 2
 ;Player 4
 p4.pos = 1198,134
 p4.name.font = 3,6, -1
-p4.name.scale = 0.8,0.8
+p4.name.scale = 1,1
 p4.name.layerno = 2
 ;Player 5
 p5.pos = 82,154
 p5.name.font = 3,6,1
-p5.name.scale = 0.8,0.8
+p5.name.scale = 1,1
 p5.name.layerno = 2
 ;Player 6
 p6.pos = 1198,154
 p6.name.font = 3,6,-1
-p6.name.scale = 0.8,0.8
+p6.name.scale = 1,1
 p6.name.layerno = 2
 ;Player 7
 p7.pos = 82,174
 p7.name.font = 3,6,1
-p7.name.scale = 0.8,0.8
+p7.name.scale = 1,1
 p7.name.layerno = 2
 ;Player 8
 p8.pos = 1198,174
 p8.name.font = 3,6,-1
-p8.name.scale = 0.8,0.8
+p8.name.scale = 1,1
 p8.name.layerno = 2
 
 ; Ikemen feature
@@ -1144,109 +1144,109 @@ p8.name.layerno = 2
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 ;Player 3
 p3.pos = 24,44
 p3.name.font = 3,6, 1
-p3.name.scale = 0.8,0.8
+p3.name.scale = 1,1
 p3.name.layerno = 2
 ;Player 4
 p4.pos = 1256,44
 p4.name.font = 3,6, -1
-p4.name.scale = 0.8,0.8
+p4.name.scale = 1,1
 p4.name.layerno = 2
 
 [Tag_3P Name]
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 ;Player 3
 p3.pos = 82,134
 p3.name.font = 3,6, 1
-p3.name.scale = 0.6,0.6
+p3.name.scale = 0.75,0.75
 p3.name.layerno = 2
 ;Player 4
 p4.pos = 1198,134
 p4.name.font = 3,6, -1
-p4.name.scale = 0.6,0.6
+p4.name.scale = 0.75,0.75
 p4.name.layerno = 2
 ;Player 5
 p5.pos = 82,154
 p5.name.font = 3,6,1
-p5.name.scale = 0.6,0.6
+p5.name.scale = 0.75,0.75
 p5.name.layerno = 2
 ;Player 6
 p6.pos = 1198,154
 p6.name.font = 3,6,-1
-p6.name.scale = 0.6,0.6
+p6.name.scale = 0.75,0.75
 p6.name.layerno = 2
 
 [Tag_4P Name]
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 ;Player 3
 p3.pos = 82,134
 p3.name.font = 3,6, 1
-p3.name.scale = 0.6,0.6
+p3.name.scale = 0.75,0.75
 p3.name.layerno = 2
 ;Player 4
 p4.pos = 1198,134
 p4.name.font = 3,6, -1
-p4.name.scale = 0.6,0.6
+p4.name.scale = 0.75,0.75
 p4.name.layerno = 2
 ;Player 5
 p5.pos = 82,154
 p5.name.font = 3,6,1
-p5.name.scale = 0.6,0.6
+p5.name.scale = 0.75,0.75
 p5.name.layerno = 2
 ;Player 6
 p6.pos = 1198,154
 p6.name.font = 3,6,-1
-p6.name.scale = 0.6,0.6
+p6.name.scale = 0.75,0.75
 p6.name.layerno = 2
 ;Player 7
 p7.pos = 82,174
 p7.name.font = 3,6,1
-p7.name.scale = 0.6,0.6
+p7.name.scale = 0.75,0.75
 p7.name.layerno = 2
 ;Player 8
 p8.pos = 1198,174
 p8.name.font = 3,6,-1
-p8.name.scale = 0.6,0.6
+p8.name.scale = 0.75,0.75
 p8.name.layerno = 2
 
 [Turns Name]
 ;Player 1
 p1.pos = 82,114
 p1.name.font = 3,6, 1
-p1.name.scale = 0.8,0.8
+p1.name.scale = 1,1
 p1.name.layerno = 2
 
 ;Player 2
 p2.pos = 1198,114
 p2.name.font = 3,6, -1
-p2.name.scale = 0.8,0.8
+p2.name.scale = 1,1
 p2.name.layerno = 2
 
 
@@ -1278,8 +1278,8 @@ team1.text.layerno = 2
 ; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
 team1.text.text = "%p Damage !" ;You can use %i to show count in the text, eg "%i Hit!"
 team1.text.font = 5,0,1;1,4,1
-team1.text.scale = 0.8,0.8;1,1
-team1.text.offset = -20,-170;-20,-100 ;Offset of text
+team1.text.scale = 1.25,1.25;1,1
+team1.text.offset = 0,0;Offset of text
 team1.displaytime = 90 ;Time to show text
 team1.showspeed = 8 ;Ikemen feature: text showing up speed (1 = instant)
 team1.hidespeed = 4 ;Ikemen feature: text hiding speed (the larger value, the faster speed)
@@ -1296,8 +1296,8 @@ team2.text.layerno = 2
 ; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
 team2.text.text = "%p Damage !";"COMBO" ;You can use %i to show count in the text, eg "%i Hit!"
 team2.text.font = 5,0,1;1,4,1
-team2.text.scale = 0.8,0.8;1,1;
-team2.text.offset = -240,-170;-20,-170;-20,-100 ;Offset of text
+team2.text.scale =1.25,1.25;1,1;
+team2.text.offset = -210,0;-20,-100 ;Offset of text
 team2.displaytime = 90 ;Time to show text
 team2.showspeed = 8 ;Ikemen feature: text showing up speed (1 = instant)
 team2.hidespeed = 4 ;Ikemen feature: text hiding speed (the larger value, the faster speed)

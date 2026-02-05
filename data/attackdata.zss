@@ -15,7 +15,7 @@ mapset{map: "_pots_attackdata_cfg_starthidden"; value: 0}					# Hide text by def
 mapset{map: "_pots_attackdata_cfg_font"; value: -1}							# Lifebar font number. Default -1 (debug font)
 mapset{map: "_pots_attackdata_cfg_layer"; value: 0}							# Layer number for text. 0 behind chars. 1 in front
 mapset{map: "_pots_attackdata_cfg_text_x"; value: 125}						# X offset. Default 125
-mapset{map: "_pots_attackdata_cfg_text_y"; value: 35}						# Y offset. Default 35
+mapset{map: "_pots_attackdata_cfg_text_y"; value: 45}						# Y offset. Default 35
 mapset{map: "_pots_attackdata_cfg_text_scale"; value: 0.50}					# Font scale. Default 0.50
 mapset{map: "_pots_attackdata_cfg_text_linespacing"; value: 7}				# Text line spacing. Default 7
 mapset{map: "_pots_attackdata_cfg_text_columnspacing"; value: 70}			# Text column spacing. Default 70
