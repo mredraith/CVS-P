@@ -1,6 +1,6 @@
 ; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; NORMAL STATES;
 ;
@@ -42,7 +42,8 @@ hitsound = s2, 1                  ;Sound to play on hit
 guardsound = s6, 0                ;Sound to play on guard
 ground.type = High               ;Type: High, Low, Trip (def: Normal)
 ground.slidetime = 5             ;Time that the opponent slides back
-ground.hittime = 10             ;Time opponent is in hit state
+ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -4             ;Velocity at which opponent is pushed
 airguard.velocity = -1.9,-.8     ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
 air.type = High                  ;Type: High, Low, Trip (def: same as ground.type)
@@ -110,7 +111,8 @@ hitsound = s2, 1                  ;Sound to play on hit
 guardsound = s6, 0                ;Sound to play on guard
 ground.type = High               ;Type: High, Low, Trip (def: Normal)
 ground.slidetime = 5             ;Time that the opponent slides back
-ground.hittime = 10             ;Time opponent is in hit state
+ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -4             ;Velocity at which opponent is pushed
 airguard.velocity = -1.9,-.8     ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
 air.type = High                  ;Type: High, Low, Trip (def: same as ground.type)
@@ -193,6 +195,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = -5.5
 air.velocity = -2.5,-4
 
@@ -291,6 +294,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = -5.5
 air.velocity = -2.5,-4
 
@@ -370,6 +374,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -2.5,-4
 
@@ -454,6 +459,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = -5.5
 air.velocity = -2.5,-4
 
@@ -525,6 +531,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 10
 ground.hittime = 11
+guard.hittime = (11) - 5
 ground.velocity = -5
 air.velocity = -2.5,-3.5
 
@@ -597,6 +604,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 
@@ -680,6 +688,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 
@@ -757,6 +766,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 
@@ -780,6 +790,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 
@@ -869,6 +880,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 
@@ -942,6 +954,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -4
 air.velocity = -3,-4
 
@@ -1000,6 +1013,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = -5.5
 air.velocity = -2.5,-4
 
@@ -1079,6 +1093,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 
@@ -1166,6 +1181,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -2.5,-4
 
@@ -1218,6 +1234,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 4
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -4
 air.velocity = -1.5,-3
 
@@ -1294,6 +1311,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -4
 air.velocity = -3,-4
 
@@ -1344,6 +1362,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -4
 air.velocity = -3,-4
 
@@ -1395,6 +1414,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 6
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -5
 air.velocity = -2,-3
 down.velocity = -5,0
@@ -1451,6 +1471,7 @@ guardsound = s6,0
 ground.type = Trip
 ground.slidetime = 10
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -1.5,-2
 air.velocity = -1.2,-3
 guard.velocity = -5
@@ -1519,6 +1540,7 @@ guardsound = s6,0
 ground.type = Trip
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -1,-12
 air.velocity = -1,-12
 guard.velocity = -8
@@ -1571,6 +1593,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 air.slidetime = 18
 air.hittime = 18
 ground.velocity = -4
@@ -1622,6 +1645,7 @@ animtype = Med
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 air.slidetime = 18
 air.hittime = 18
 ground.velocity = -5
@@ -1668,6 +1692,7 @@ animtype = Med
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 air.slidetime = 18
 air.hittime = 18
 ground.velocity = -5
@@ -1715,6 +1740,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 air.slidetime = 18
 air.hittime = 18
 ground.velocity = -4
@@ -1761,6 +1787,7 @@ animtype = Med
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 air.slidetime = 18
 air.hittime = 18
 ground.velocity = -5
@@ -1806,6 +1833,7 @@ animtype = Hard
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 air.slidetime = 18
 air.hittime = 18
 ground.velocity = -5

@@ -1,6 +1,6 @@
 ; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; SPECIAL STATES 
 ;
@@ -79,6 +79,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -4,0
 air.velocity = -4,0
 envshake.time=16
@@ -104,6 +105,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6,0
 air.velocity = -.5,-5
 envshake.time=16
@@ -219,6 +221,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -4,0
 air.velocity = -4,0
 envshake.time=16
@@ -244,6 +247,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -6,0
 air.velocity = -.5,-5
 envshake.time=16
@@ -364,6 +368,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -4,0
 air.velocity = -4,0
 envshake.time=16
@@ -389,6 +394,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = -6,0
 air.velocity = -.5,-5
 envshake.time=16
@@ -496,6 +502,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1,-8
 guard.velocity = -6
 air.velocity = -1,-6.5
@@ -527,6 +534,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1,-8
 guard.velocity = -6
 air.velocity = -1,-6.5
@@ -675,6 +683,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1,-8
 guard.velocity = -6
 air.velocity = -1,-6.5
@@ -706,6 +715,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1,-8
 guard.velocity = -6
 air.velocity = -1,-6.5
@@ -830,6 +840,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 4
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -2, 0
 air.velocity = -0,-3
 envshake.time=16
@@ -855,6 +866,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1,-8
 guard.velocity = -6
 air.velocity = -1,-6.5
@@ -1011,6 +1023,7 @@ guardsound = S6, 0
 ground.type = High
 guard.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -2, -10
 air.velocity = Ifelse ((Var(2) = 3 && AnimElem = 8), 3, Ifelse ((Var(2) = 3 && AnimElem = 18), -5, -2)), Ifelse ((Var(2) = 3 && AnimElem = 8), -8, -10)
 p2facing = 1
@@ -1168,6 +1181,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 19
+guard.hittime = (19) - 5
 ground.velocity = -10.5
 air.velocity = -2.5,-4
 envshake.time=16
@@ -1243,6 +1257,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -1
 air.velocity = -1,-2
 envshake.time=16
@@ -1268,6 +1283,7 @@ guardsound = s6,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 23
+guard.hittime = (23) - 5
 ground.velocity = -8.6
 air.velocity = -3,-4
 envshake.time=16
@@ -1549,6 +1565,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 envshake.time=16
@@ -1640,6 +1657,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 envshake.time=16
@@ -1732,6 +1750,7 @@ guardsound = s6,0
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 envshake.time=16
@@ -1750,8 +1769,8 @@ value = 0
 ctrl = 1
 
 
-;¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢
-; “Áê”½“]‹Â‚¯”½‚è(HITSHAKE)3rdƒLƒƒƒ‰ê—p
+;
+; ê”½]Â‚(HITSHAKE)3rdLp
 [Statedef 5600]
 type = S
 movetype= H
@@ -1828,8 +1847,8 @@ time = 15
 waveform = sinesquare
 ampl = 140
 
-;¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢
-; “Áê”½“]‹Â‚¯”½‚è(HITBACK)3rdƒLƒƒƒ‰ê—p
+;
+; ê”½]Â‚(HITBACK)3rdLp
 [Statedef 5610]
 type = S
 movetype= H
@@ -1885,8 +1904,8 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢
-; “Áê”½“]‹Â‚¯”½‚è(HITSHAKE)”Ä—p
+;
+; ê”½]Â‚(HITSHAKE)Ä—p
 [Statedef 5620]
 type = S
 movetype= H
@@ -1953,8 +1972,8 @@ time = 15
 waveform = sinesquare
 ampl = 140
 
-;¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢¢
-; “Áê”½“]‹Â‚¯”½‚è(HITBACK)”Ä—p
+;
+; ê”½]Â‚(HITBACK)Ä—p
 [Statedef 5630]
 type = S
 movetype= H

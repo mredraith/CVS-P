@@ -1,6 +1,6 @@
 ; ________________________________________________
 ;| Dan by Phantom.of.the.Server and Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; SPECIAL STATES 
 ;
@@ -213,6 +213,7 @@ p2facing = 1
 ground.type = Low
 ground.slidetime = 22
 ground.hittime = 22	
+guard.hittime = (22) - 5
 ground.velocity = -1.5 -(var(10) / 2), -6.5 -var(10)
 air.type = Low
 air.velocity = -1.5 -(var(10) / 2), -6.5 -var(10)
@@ -251,6 +252,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -1.5 -(var(10) / 2), -6 -var(10)
 air.type = Low
 air.velocity = -1.5 -(var(10) / 2), -6 -var(10)
@@ -365,6 +367,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5, -6.2
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -537,6 +540,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -10, 0
 air.type = Low
 air.velocity = -4, -4
@@ -574,6 +578,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -5, -5
 air.type = Low
 air.velocity = -5, -5
@@ -736,6 +741,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -10, 0
 air.type = Low
 air.velocity = -4, -4.5
@@ -773,6 +779,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -5, -8
 air.type = Low
 air.velocity = -5, -8
@@ -869,6 +876,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 14
 ground.hittime = 14
+guard.hittime = (14) - 5
 ground.velocity = -7, 0
 air.type = Low
 air.velocity = -3, -3
@@ -1329,6 +1337,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 32
 ground.hittime = 32
+guard.hittime = (32) - 5
 ground.velocity = -8, -ifelse(var(10)=4,10,4)
 air.type = Low
 air.velocity = -8, -ifelse(var(10)=4,10,4)
@@ -1364,6 +1373,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 32
 ground.hittime = 32
+guard.hittime = (32) - 5
 ground.velocity = -8, -ifelse(var(10)=4,10,4)
 air.type = Low
 air.velocity = -8, -ifelse(var(10)=4,10,4)
@@ -1541,6 +1551,7 @@ hitsound = s2, 6
 guardsound = s2, 0
 ground.type = Low
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = 0, 0
 air.hittime = 8

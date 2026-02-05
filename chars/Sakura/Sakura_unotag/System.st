@@ -1524,6 +1524,7 @@ hitsound = s2, 1
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.slidetime = 12
 ground.velocity = -5.62, 0
 ground.cornerpush.veloff = 0

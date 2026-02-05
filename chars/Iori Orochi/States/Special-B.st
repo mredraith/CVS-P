@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Iori Yagami by Knuckles8864             |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES
 ;
@@ -4374,6 +4374,7 @@ numhits = 0
 ground.type = low
 ground.slidetime = 1
 ground.hittime = 1
+guard.hittime = (1) - 5
 ground.velocity = 0
 air.velocity = 0
 p1stateno = 1510

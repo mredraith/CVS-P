@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Sodom by varo_hades                     |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES
 ;
@@ -1813,6 +1813,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = L
 ground.slidetime = 10
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = ifElse(var(20), -7.5, -15), 0
 air.velocity = -5,-4
 envshake.time = 20
@@ -1841,6 +1842,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = L
 ground.slidetime = 10
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = ifElse(var(20), -7.5, -15), 0
 air.velocity = -5,-4
 envshake.time = 20
@@ -1869,6 +1871,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = L
 ground.slidetime = 10
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = ifElse(var(20), -7.5, -15), 0
 air.velocity = -5,-4
 envshake.time = 20

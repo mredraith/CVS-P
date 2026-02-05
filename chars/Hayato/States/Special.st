@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Hayato by varo_hades                    |
-; ｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯ
+; 
 ;
 ;SPECIAL MOVES
 ;
@@ -641,6 +641,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = ifelse(var(20), 0, 0), -9.5
 ground.cornerpush.veloff = 0
@@ -684,6 +685,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = ifelse(var(20), 0, 0), -9.5
 ground.cornerpush.veloff = 0
@@ -728,6 +730,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = ifelse(var(20), 0, 0), -9.5
 ground.cornerpush.veloff = 0
@@ -775,6 +778,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = ifelse(var(20), 0, 0), -9.5
 ground.cornerpush.veloff = 0
@@ -823,6 +827,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = ifelse(var(20), 0, 0), -9.5
 ground.cornerpush.veloff = 0
@@ -894,7 +899,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;紅蓮（エフェクト）（表）
+;g@iGtFNgji\j
 [Statedef 7000]
 type = A
 movetype = I
@@ -913,7 +918,7 @@ type = DestroySelf
 trigger1 = animtime = 0
 
 ;---------------------------------------------------------------------------
-;紅蓮（エフェクト）（・）
+;g@iGtFNgjiEj
 [Statedef 7001]
 type = A
 movetype = I
@@ -1127,6 +1132,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = 0, -10.
 ground.cornerpush.veloff = 0
@@ -1170,6 +1176,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = 0, -10.5
 ground.cornerpush.veloff = 0
@@ -1213,6 +1220,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = 0, -10.5
 ground.cornerpush.veloff = 0
@@ -1256,6 +1264,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = 0, -10.5
 ground.cornerpush.veloff = 0
@@ -1299,6 +1308,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = 0, -10.5
 ground.cornerpush.veloff = 0
@@ -1342,6 +1352,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = 0, -10.5
 ground.cornerpush.veloff = 0

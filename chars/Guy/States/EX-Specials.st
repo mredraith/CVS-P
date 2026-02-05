@@ -1,6 +1,6 @@
 ; ______________________________
 ;| Guy by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; EX SPECIAL STATES >==
 ;
@@ -107,6 +107,7 @@ hitsound = s2, 3
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = -10, -5
 air.type = High
@@ -331,6 +332,7 @@ hitsound = s2, 6
 guardsound = s2, 0
 ground.type = Trip
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = -6, -4
 air.type = Trip
@@ -428,6 +430,7 @@ hitsound = s2, 6
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = -12, 0
 air.type = Low
@@ -462,6 +465,7 @@ hitsound = s2, 6
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = -12, 0
 air.type = Low
@@ -557,6 +561,7 @@ hitsound = s2, 6
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = -3, -12
 air.type = Low
@@ -789,6 +794,7 @@ hitsound = s2, 6
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = -6.5, -8
 air.type = Low
@@ -827,6 +833,7 @@ hitsound = s2, 6
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.slidetime = 16
 ground.velocity = 6.5, -7
 air.type = Low

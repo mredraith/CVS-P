@@ -1,6 +1,6 @@
 ; ________________________________________________
 ;| Dan by Phantom.of.the.Server and Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; EX SPECIAL STATES >==
 ;
@@ -199,6 +199,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = 0.5, -5.5
 air.type = Low
 air.velocity = 0.5, -5.5
@@ -235,6 +236,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -4, -10
 air.type = Low
 air.velocity = -4, -10
@@ -358,6 +360,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10, 0
 air.type = Low
 air.velocity = -3, -6
@@ -391,6 +394,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -.5, -15
 air.type = Low
 air.velocity = -.5, -15
@@ -564,6 +568,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10, 0
 air.type = Low
 air.velocity = -4, -4
@@ -599,6 +604,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5, -5
 air.type = Low
 air.velocity = -5, -5
@@ -743,6 +749,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10, -5
 air.type = Low
 air.velocity = -10, -5
@@ -928,6 +935,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10, 0
 air.type = Low
 air.velocity = -4, -4
@@ -963,6 +971,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5, -8
 air.type = Low
 air.velocity = -5, -8

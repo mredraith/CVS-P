@@ -1,6 +1,6 @@
 ; ________________________________________________
 ;| Dan by Phantom.of.the.Server and Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; TAUNT STATES >=
 ;
@@ -81,6 +81,7 @@ hitsound = s2, 1
 guardsound = s2, 0
 ground.type = Low
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.slidetime = 12
 ground.velocity = ifelse(var(20), -2.66, -4.49), 0
 guard.velocity = ifelse(var(20), -2.66, -4.49)
@@ -163,6 +164,7 @@ hitsound = s2, 4
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.slidetime = 12
 ground.velocity = ifelse(var(20), -2.66, -4.49), 0
 guard.velocity = ifelse(var(20), -2.66, -4.49)

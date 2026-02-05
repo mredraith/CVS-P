@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Zangief by varo_hades                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES=
 ;
@@ -964,6 +964,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.ctrltime = 20
 air.hitTime = 120
 ground.velocity = -8,0
@@ -1130,6 +1131,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.ctrltime = 20
 air.hitTime = 120
 ground.velocity = -3,0
@@ -1178,6 +1180,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.ctrltime = 20
 air.hitTime = 120
 ground.velocity = -4,-4

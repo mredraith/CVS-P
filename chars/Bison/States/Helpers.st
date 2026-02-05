@@ -1,6 +1,6 @@
 ; _______________________________
 ;| Vega by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; HELPER STATES =
 ;
@@ -314,6 +314,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10.52, 0
 ground.cornerpush.veloff = 0
 air.type = Low

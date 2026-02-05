@@ -8,7 +8,7 @@
 
 ;_________________________________
 ;| Sakura by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; COMMON STATES =
 ;
@@ -1671,6 +1671,7 @@ hitsound = s2, 1
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.slidetime = 12
 ground.velocity = -5.62, 0
 ground.cornerpush.veloff = 0
@@ -3622,7 +3623,7 @@ persistent = 0
 ignorehitpause = 1
 postype = right
 ;--------------------------------------------------------------
-;1aD§3oE?I?OA
+;1aD3oE?I?OA
 ;--------------------------------------------------------------
 [Statedef 23680]
 type = S
@@ -3666,7 +3667,7 @@ time = -1
 facing = 1
 pos = (1+ifelse(Parent,fvar(36) = 1,-1,0)+ifelse(Parent,fvar(36) = 2,-2,0))*ifelse(Facing = -1,-1,1),0
 ;--------------------------------------------------------------
-;1aD§×o
+;1aDo
 ;--------------------------------------------------------------
 [Statedef 23681]
 type = S
@@ -3691,7 +3692,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 ;--------------------------------------------------------------
-;1aD§OO
+;1aDOO
 ;--------------------------------------------------------------
 [Statedef 23682]
 type = S

@@ -1569,6 +1569,7 @@ sparkxy = -10 + 0*(var(35):=130), var(36):=-50
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -3,15
 air.velocity = -3,15
 fall = 1
@@ -1594,6 +1595,7 @@ sparkxy = -10 + 0*(var(35):=130), var(36):=-50
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -3,15
 air.velocity = -3,15
 fall = 1

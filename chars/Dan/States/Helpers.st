@@ -1,6 +1,6 @@
 ; ________________________________________________
 ;| Dan by Phantom.of.the.Server and Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; HELPER STATES =
 ;
@@ -167,6 +167,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10.52, 0
 ground.cornerpush.veloff = 0
 air.velocity = -3, -3
@@ -400,6 +401,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -3
 ground.cornerpush.veloff = 0
 air.velocity = -6, -3
@@ -583,6 +585,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -3*(time <= 12)
 ground.cornerpush.veloff = 0
 air.velocity = -6, -3
@@ -793,6 +796,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -7.51, 0
 ground.cornerpush.veloff = 0
 air.velocity = -4, -4
@@ -1066,6 +1070,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -6
 ground.cornerpush.veloff = 0
 air.velocity = -6, -6
@@ -1301,6 +1306,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(2) < 5, -10.52, -6), ifelse(var(2) < 5, 0, -4)
 ground.cornerpush.veloff = 0
 air.velocity = -6, -4
@@ -1505,6 +1511,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(p2dist x >= 0, -1, -2), -4
 ground.cornerpush.veloff = 0
 air.velocity = ifelse(p2dist x >= 0, -1, -2), -4
@@ -2038,6 +2045,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3, -1
 ground.cornerpush.veloff = 0
 guard.velocity = -10.52
@@ -2075,6 +2083,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -7, -9
 ground.cornerpush.veloff = 0
 guard.velocity = -10.52
@@ -2349,6 +2358,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, -6
 yaccel = 0.3
 ground.cornerpush.veloff = 0
@@ -3538,6 +3548,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -6
 ground.cornerpush.veloff = 0
 air.velocity = -6, -6
@@ -3579,6 +3590,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -7.5
 ground.cornerpush.veloff = 0
 air.velocity = -6, -7.5

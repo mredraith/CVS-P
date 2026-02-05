@@ -710,6 +710,7 @@ guardsound = S50,6
 ground.type = Low
 ground.slidetime = 88
 ground.hittime = 88
+guard.hittime = (88) - 5
 air.hittime = 88
 guard.ctrltime = 18
 ground.velocity = -7, -8

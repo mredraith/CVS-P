@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Blanka by varo_hades                    |
-; ｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯ
+; 
 ;
 ;HELPER STATES=
 ;
@@ -1032,6 +1032,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1,-5
 guard.velocity = -7
 air.velocity = -1,-5
@@ -1117,7 +1118,7 @@ type = PosSet
 trigger1 = Time = 0
 y = 0
 
-;遠距離弱中キック
+;纈�LbN
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1129,7 +1130,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 74 && parentDist 
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 74 && parentDist X >= 28
 value = 4100
 
-;ロッククラッシュ
+;bNNbV
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1141,7 +1142,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 132 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 132 && parentDist X >= 36
 value = 4100
 
-;しゃがみ弱パンチ
+;痰ｪﾝ姿`
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1153,7 +1154,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 153 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 153 && parentDist X >= 16
 value = 4100
 
-;しゃがみ弱キック
+;痰ｪﾝ鮫bN
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1165,7 +1166,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 123 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 123 && parentDist X >= 12
 value = 4100
 
-;しゃがみ中キック
+;痰ｪﾝ鱈bN
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1177,7 +1178,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 143 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 143 && parentDist X >= 9
 value = 4100
 
-;しゃがみ強キック
+;痰ｪﾝ記bN
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1189,7 +1190,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 139 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 139 && parentDist X >= -8
 value = 4100
 
-;アマゾンリバーラン
+;A}]o[
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1201,7 +1202,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 144 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 144 && parentDist X >= -3
 value = 4100
 
-;ジャンプ強パンチ（斜め）
+;Wvp`iﾎめ）
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1214,7 +1215,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 107 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 107 && parentDist X >= 35
 value = 4100
 
-;ジャンプ強キック
+;WvLbN
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1227,7 +1228,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 127 && parentDist
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 127 && parentDist X >= 36
 value = 4100
 
-;エレクトリックサンダ－
+;GNgbNT_|
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1238,7 +1239,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 65 && parentDist 
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 65 && parentDist X >= -41
 value = 4100
 
-;ローリングアタック
+;[OA^bN
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1249,7 +1250,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 41 && parentDist 
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 41 && parentDist X >= -25
 value = 4100
 
-;バックステップローリング
+;obNXebv[O
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1261,7 +1262,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 42 && parentDist 
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 42 && parentDist X >= -17
 value = 4100
 
-;グランドシェイブローリング
+;OhVFCu[O
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1273,7 +1274,7 @@ trigger3 = parent,facing = 1 && facing = -1 && parentDist X <= 52 && parentDist 
 trigger4 = parent,facing = -1 && facing = 1 && parentDist X <= 52 && parentDist X >= -56
 value = 4100
 
-;トロピカルハザード
+;gsJnU[h
 [State 4010,ChangeState]
 type = ChangeState
 triggerall = Time < 240
@@ -1349,6 +1350,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = 1*(Enemy,facing),-5
 guard.velocity = 7*(Enemy,facing)
 air.velocity = 1*(Enemy,facing),-5
@@ -1373,6 +1375,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1*(Enemy,facing),-5
 guard.velocity = -7*(Enemy,facing)
 air.velocity = -1*(Enemy,facing),-5
@@ -1515,6 +1518,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = 1*(parent,facing),-5
 guard.velocity = 7*(parent,facing)
 air.velocity = 1*(parent,facing),-5
@@ -1539,6 +1543,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -1*(parent,facing),-5
 guard.velocity = -7*(parent,facing)
 air.velocity = -1*(parent,facing),-5

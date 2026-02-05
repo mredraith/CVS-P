@@ -2910,6 +2910,7 @@ sparkXY=-10 + 0 * (var(35) :=150), var(36) :=9999
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 9
+guard.hittime = (9) - 5
 ground.velocity = -3.5,-6
 guard.velocity = -9
 air.velocity = -3.5,-6
@@ -3151,6 +3152,7 @@ sparkXY=-10 + 0 * (var(35) :=150), var(36) :=9999
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 9
+guard.hittime = (9) - 5
 ground.velocity = -3.5,-6
 guard.velocity = -9
 air.velocity = -3.5,-6
@@ -3386,6 +3388,7 @@ guardsound = s3,1
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -6,-8
 guard.velocity = -10
 air.hittime = 13

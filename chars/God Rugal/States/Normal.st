@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Rugal by varo_hades                     |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;NORMAL MOVES
 ;
@@ -1942,6 +1942,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = ifelse(var(20), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0;ifelse(var(20), -4.33, -8.17)
 guard.velocity = ifelse(var(20), -4.30, -7.51)

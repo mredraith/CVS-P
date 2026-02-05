@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Rose by varo_hades                      |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SUPER STATES=
 ;
@@ -2142,6 +2142,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -8.2
 ground.cornerpush.veloff = -4.0
 air.velocity = -5.0,-3.5

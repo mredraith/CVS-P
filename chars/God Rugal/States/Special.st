@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Rugal by varo_hades                     |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES
 ;
@@ -4792,6 +4792,7 @@ sparkXY = -10 + 0 * (var(35) := 157), var(36) := -66
 guard.dist = 0
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 guard.ctrltime = 17
 ground.velocity = 0
 air.velocity = 0,0

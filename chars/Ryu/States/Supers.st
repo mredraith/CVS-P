@@ -1,6 +1,6 @@
 ; ________________________________________
 ;| Ryu by Phantom.of.the.Server and Mwryly |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HYPER STATES=
 ;
@@ -918,6 +918,7 @@ p2facing = 1
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = 0, 0
 guard.velocity = -10.52
 ground.cornerpush.veloff = 0
@@ -962,6 +963,7 @@ p2facing = 1
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -7, -7
 guard.velocity = -10.52
 ground.cornerpush.veloff = 0
@@ -1112,6 +1114,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(43), (p2dist x) / 22.0, 0.5), -6
 air.type = Low
 air.velocity = ifelse(var(43), (p2dist x) / 22.0, 0.5), ifelse(var(43), -6, -4)
@@ -1155,6 +1158,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -4, -12
 air.type = Low
 air.velocity = -4, -12
@@ -1365,6 +1369,7 @@ p2facing = 1
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = 0.77, -6;ifelse((anim = 3121), 0, (p2dist x) / 22.0), -6
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -1408,6 +1413,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3, -10
 air.type = Low
 air.velocity = -3, -10
@@ -1453,6 +1459,7 @@ p2facing = 1
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse((animelem = 4), 0, -2), ifelse((animelem = 4), -12, -30)
 air.type = Low
 air.velocity = ifelse((animelem = 4), 0, -2), ifelse((animelem = 4), -12, -30)
@@ -1810,6 +1817,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 24
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -4, 0
 ground.cornerpush.veloff = 0
 air.velocity = -4, -6
@@ -1848,6 +1856,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 24
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -4, 0
 ground.cornerpush.veloff = 0
 air.velocity = -4, -6
@@ -1887,6 +1896,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 24
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -1.5, -7.55
 air.velocity = -1.5, -7.55
 ground.cornerpush.veloff = 0
@@ -1929,6 +1939,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 24
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -1, -6
 air.velocity = -1, -6
 ground.cornerpush.veloff = 0
@@ -1969,6 +1980,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 24
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -4, 0
 ground.cornerpush.veloff = 0
 air.velocity = -3.78*ifelse(p2dist x>=5,1,-1)*const(size.xscale),-9.85*const(size.yscale);-4.25, -5.45
@@ -2007,6 +2019,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 24
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -4, 0
 ground.cornerpush.veloff = 0
 air.velocity = -5.8*ifelse(p2dist x>=5,1,-1)*const(size.xscale),-10.0*const(size.yscale);-4.25, -5.45
@@ -2046,6 +2059,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -12
 air.velocity = -6, -12
 ground.cornerpush.veloff = 0
@@ -2251,6 +2265,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -5, -5
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -2407,6 +2422,7 @@ p2facing = 1
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = 1
 ground.velocity = 0.5, -7.5
 air.type = Low
@@ -2452,6 +2468,7 @@ p2facing = 1
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = 1
 ground.velocity = -3, -12
 air.type = Low
@@ -2696,6 +2713,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = ifelse(p2bodydist x > 35, 1, -2), 0
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -2735,6 +2753,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = ifelse(p2bodydist x > 35, 1, -3), 0
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -2776,6 +2795,7 @@ p2facing = 1
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -2, -13
 air.type = Low
 air.velocity = -2, -13
@@ -2998,6 +3018,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = 1
 ground.velocity = ifelse((p2dist x != [ -30, 30]), 20, 15), 0
 ground.cornerpush.veloff = 0
@@ -3044,6 +3065,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = -1
 ground.velocity = ifelse((p2dist x != [ -30, 30]), -20, -15), 0
 ground.cornerpush.veloff = 0
@@ -3090,6 +3112,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = -1
 ground.velocity = -6, -4
 air.type = Low
@@ -3137,6 +3160,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = 1
 ground.velocity = ifelse(p2dist x > 30, 18, 15), 0;ifelse(p2dist y < (enemy, const(size.mid.pos.y)) + 60, 0, -3.5)
 air.type = Low
@@ -3184,6 +3208,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = -1
 ground.velocity = ifelse(p2dist x > 30, -18, -15), 0;ifelse(p2dist y < (enemy, const(size.mid.pos.y)) + 60, 0, -3.5)
 air.type = Low
@@ -3231,6 +3256,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = 1
 ground.velocity = -12, -4
 air.type = Low

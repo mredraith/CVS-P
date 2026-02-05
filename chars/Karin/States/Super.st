@@ -1,6 +1,6 @@
 ; ________________________________
 ;| Karin by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; SUPER STATES =
 ;
@@ -2577,6 +2577,7 @@ guardsound = s3, 0
 ground.type = Low
 ground.slidetime = 45
 ground.hittime = 45
+guard.hittime = (45) - 5
 ground.velocity = -5.77
 air.type = Low
 air.velocity = -2, -5
@@ -2625,6 +2626,7 @@ guardsound = s3, 0
 ground.type = High
 ground.slidetime = 45
 ground.hittime = 45
+guard.hittime = (45) - 5
 ground.velocity = -5.77
 air.type = High
 air.velocity = -2, -5
@@ -2673,6 +2675,7 @@ guardsound = s3, 0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = ifelse(p2bodydist x < 60, -1, ifelse(((p2bodydist x = [60, 90])), 1.5, 3)), -12
 air.type = Low
 air.velocity = ifelse(p2bodydist x < 60, -1, ifelse(((p2bodydist x = [60, 90])), 1.5, 3)), -12

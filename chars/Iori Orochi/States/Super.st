@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Iori Yagami by Knuckles8864             |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SUPER STATES=
 ;
@@ -7557,6 +7557,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = Low
 ground.hitTime = 1
+guard.hittime = (1) - 5
 air.hittime = 13
 fall = 0
 air.fall = 1

@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| B. B. Hood by varo_hades                |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES=
 ;
@@ -122,6 +122,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3.8 ,-5.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -200,6 +201,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3.8 ,-5.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -278,6 +280,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3.8 ,-5.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -436,6 +439,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3.8 ,-5.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -540,6 +544,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3.8 ,-5.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -686,6 +691,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -0.8 ,-5.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -796,6 +802,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3.8 ,-5.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -941,6 +948,7 @@ ground.type = High
 ground.slidetime = 9
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2.8 ,-1.8
 guard.velocity = -12
 airguard.velocity = -11,-3
@@ -3005,6 +3013,7 @@ sparkXY = -10 + 0 * (var(35) := 43), var(36) := 0
 ground.type = High
 ground.slidetime = 13
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = 0
 down.velocity = 0
 guard.velocity = 0
@@ -3047,6 +3056,7 @@ sparkXY = -10 + 0 * (var(35) := 43), var(36) := 0
 ground.type = High
 ground.slidetime = 13
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = 0
 down.velocity = 0
 guard.velocity = 0
@@ -3358,6 +3368,7 @@ sparkXY = -10 + 0 * (var(35) := 43), var(36) := 0
 ground.type = High
 ground.slidetime = 13
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = 0
 down.velocity = 0
 guard.velocity = 0
@@ -3475,6 +3486,7 @@ sparkXY = -10 + 0 * (var(35) := 43), var(36) := 0
 ground.type = High
 ground.slidetime = 13
 ground.hittime = 13
+guard.hittime = (13) - 5
 ground.velocity = 0
 down.velocity = 0
 guard.velocity = 0

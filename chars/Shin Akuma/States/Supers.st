@@ -1,6 +1,6 @@
 ; ________________________________________
 ;| Gouki by Phantom.of.the.Server and Mwryly |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; HYPER STATES =
 ;
@@ -799,6 +799,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -4, 0
 air.velocity = -4, -2
 getpower = 0
@@ -839,6 +840,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -4, 0
 air.velocity = -4, -6
 getpower = 0
@@ -879,6 +881,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -1, -6
 air.velocity = -1, -6
 ground.cornerpush.veloff = 0
@@ -922,6 +925,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -1, -6
 air.velocity = -1, -6
 ground.cornerpush.veloff = 0
@@ -964,6 +968,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -4, 0
 air.velocity = -4.5*ifelse(p2dist x>=5,1,-1)*const(size.xscale),-9.85*const(size.yscale)
 getpower = 0
@@ -1004,6 +1009,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 24
 ground.hittime = 24
+guard.hittime = (24) - 5
 ground.velocity = -4, 0
 ground.cornerpush.veloff = 0
 air.velocity = -5.8*ifelse(p2dist x>=5,1,-1)*const(size.xscale),-10.0*const(size.yscale);-4.25, -5.45
@@ -1043,6 +1049,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -12
 air.velocity = -6, -12
 ground.cornerpush.veloff = 0
@@ -1274,6 +1281,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(p2bodydist x > 15, 2, 0), -6
 air.type = Low
 air.velocity = ifelse(p2bodydist x > 15, 2, 0), -5
@@ -1322,6 +1330,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(p2bodydist x > 15, 1.5, 0), -10
 air.type = Low
 air.velocity = ifelse(p2bodydist x > 15, 1.5, 0), (vel y - 1.5)
@@ -1366,6 +1375,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(p2bodydist x > 15, 1.5, 0), -10
 air.type = Low
 air.velocity = ifelse(p2bodydist x > 15, 1.5, 0), (vel y - 1.5)
@@ -1408,6 +1418,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -7, -2
 air.type = Low
 air.velocity = -7, -2
@@ -1600,6 +1611,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(p2bodydist x > 15, 1.5, 0), -10
 air.type = Low
 air.velocity = ifelse(p2bodydist x > 15, 1.5, 0), (vel y - 4)/1.5
@@ -1645,6 +1657,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(p2bodydist x > 15, 1.5, 0), -10
 ground.cornerpush.veloff = 0
 guard.velocity = -10.52
@@ -1688,6 +1701,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -7, -2
 air.type = Low
 air.velocity = -7, -2
@@ -1871,6 +1885,7 @@ animtype = Diagup
 fall.animtype = Diagup
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = 0, -6.85
 air.velocity = 0, -6.85
 ground.cornerpush.veloff = 0
@@ -3036,6 +3051,7 @@ ground.type = High
 air.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 guard.velocity = -10
 air.velocity = 0, 20

@@ -1,6 +1,6 @@
 ;                          ____________________
 ;|Terry Bogard by Memo|=
-;                          ｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯ
+;                          
 ;
 ; HELPER STATES =
 ;
@@ -599,6 +599,7 @@ ground.type = High
 air.type = High
 ground.slidetime = 88
 ground.hittime = 88
+guard.hittime = (88) - 5
 air.hittime = 88
 guard.ctrltime = 18
 ground.velocity = -4, -9.5
@@ -796,6 +797,7 @@ guardsound = S50,6
 ground.type = Low
 ground.slidetime = 88
 ground.hittime = 88
+guard.hittime = (88) - 5
 air.hittime = 88
 guard.ctrltime = 18
 ground.velocity = -5, -9.5
@@ -3347,7 +3349,7 @@ trigger3 = (root,stateno = [200,999]) && (root,movecontact)
 ;trigger4 = (root,stateno = [3000,3999]) && (root,movecontact)
 
 ;---------------------------------------------------------------------------
-;帽子1（イントロ（対ケン））
+;Xq1iCgiﾎケjj
 [Statedef 7910]
 type = A
 physics = N
@@ -3367,7 +3369,7 @@ trigger1 = animtime = 0
 value = 7911
 
 ;---------------------------------------------------------------------------
-;帽子2（イントロ（対ケン））
+;Xq2iCgiﾎケjj
 [Statedef 7911]
 type = A
 physics = N

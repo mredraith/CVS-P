@@ -1073,6 +1073,7 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-50
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -5.5,-4
 forcenofall = 1
@@ -1094,6 +1095,7 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-50
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -5.5,-4
 forcenofall = 1
@@ -1150,6 +1152,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = -3
 air.velocity = -3,-4
 forcenofall = 1
@@ -1173,6 +1176,7 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = -3
 air.velocity = -3,-4
 forcenofall = 1
@@ -1196,6 +1200,7 @@ guardsound = S3,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = -3
 air.velocity = -3,-4
 fall = 1
@@ -1218,6 +1223,7 @@ guardsound = S3,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = -3
 air.velocity = -3,-4
 fall = 1
@@ -1240,6 +1246,7 @@ guardsound = S3,0
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = -3
 air.velocity = -3,-4
 fall = 1
@@ -1398,6 +1405,7 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-50
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -5.5,-4
 forcenofall = 1
@@ -1419,6 +1427,7 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-50
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -5.5,-4
 forcenofall = 1
@@ -1440,6 +1449,7 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-50
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -5.5,-4
 forcenofall = 1
@@ -1676,6 +1686,7 @@ sparkxy = -10 + 0*(var(35):=92), var(36):=-70
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -5.5
 air.velocity = -2.5,-4
 forcenofall = 1
@@ -1812,6 +1823,7 @@ sparkxy = -10 + 0*(var(35):=92), var(36):=-70
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = 1
 ground.velocity = ifelse((p2dist x != [ -30, 30]), 20, 15), 0
 ground.cornerpush.veloff = 0
@@ -1847,6 +1859,7 @@ sparkxy = -10 + 0*(var(35):=-20), var(36):=-70
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = -1
 ground.velocity = ifelse((p2dist x != [ -30, 30]), -20, -15), 0
 ground.cornerpush.veloff = 0
@@ -1884,6 +1897,7 @@ sparkxy = -10 + 0*(var(35):=-20), var(36):=-70
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 p2facing = -1
 ground.velocity = -6, -4
 air.type = Low

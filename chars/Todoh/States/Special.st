@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Todoh by varo_hades                      |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES
 ;
@@ -703,6 +703,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = -10.52, 0
 guard.velocity = -10.52
@@ -1004,6 +1005,7 @@ ground.type = Low
 air.type = Low
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.ctrltime = 18
 ground.velocity = -15, -6.5
 guard.velocity = -8.52

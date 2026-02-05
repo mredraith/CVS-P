@@ -1,6 +1,6 @@
 ; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; HELPER STATES =
 ;
@@ -2416,6 +2416,7 @@ guardsound = S6, 0
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -1
 airguard.velocity = -1
 air.type = High

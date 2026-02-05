@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Gen by mwryly & varo_hades              |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SUPER STATES=
 ;
@@ -2397,6 +2397,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = 0,0
 air.velocity = 0,0
 envshake.time = 10
@@ -2427,6 +2428,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = -15
 air.velocity = -5,-4
 envshake.time = 20
@@ -2588,6 +2590,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = 0,0
 air.velocity = 0,0
 envshake.time = 10
@@ -2620,6 +2623,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 30
+guard.hittime = (30) - 5
 ground.velocity = -15
 air.velocity = -5,-4
 envshake.time = 20
@@ -2732,6 +2736,7 @@ guardsound = -1
 ground.type = L
 ground.slidetime = 0
 ground.hittime = 0
+guard.hittime = (0) - 5
 getpower = 0
 givepower = 0
 down.bounce = 0
@@ -2758,6 +2763,7 @@ guardsound = -1
 ground.type = L
 ground.slidetime = 0
 ground.hittime = 0
+guard.hittime = (0) - 5
 getpower = 0
 givepower = 0
 down.bounce = 0

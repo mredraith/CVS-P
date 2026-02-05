@@ -1205,6 +1205,7 @@ palfx.sinadd= -255,-255,-255,48
 ground.type = Low
 ground.slidetime = 12
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -3,-8
 air.velocity = -3,-8
 yaccel = .55

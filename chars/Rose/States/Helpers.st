@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Rose by varo_hades                      |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -763,6 +763,7 @@ guardsound = -1
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -4.5, ifelse((var(2) < 3),0,-4.2)
 ground.cornerpush.veloff = 0
 guard.velocity = -10.52
@@ -993,6 +994,7 @@ guardsound=s130,1
 ground.type=High
 ground.slidetime=16
 ground.hittime=16
+guard.hittime = (16) - 5
 ground.velocity=Ifelse(root,var(20),-5,-10),0
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=Ifelse(root,var(20),-2,-4), -4
@@ -1655,6 +1657,7 @@ guardsound = s130, 1
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity=-1,-8
 guard.velocity=-6
 ground.cornerpush.veloff=0
@@ -1921,6 +1924,7 @@ guardsound = s130, 1
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity=-1,-8
 guard.velocity=-6
 ground.cornerpush.veloff=0

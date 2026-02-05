@@ -1,6 +1,6 @@
 ; _______________________________
 ;| Vega by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; SPECIAL STATES 
 ;
@@ -153,6 +153,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(10) = 3, -6, ifelse(var(10) = 2, -5, -4)), ifelse(var(10) = 3, -6, ifelse(var(10) = 2, -5, -4))
 ground.cornerpush.veloff = 0
 guard.velocity = -10.52
@@ -339,6 +340,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -7, 0
 air.type = Low
 air.velocity = -3, -3
@@ -376,6 +378,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3, -6
 air.type = Low
 air.velocity = -3, -6
@@ -550,6 +553,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -7, 0
 air.type = Low
 air.velocity = -4, -4
@@ -760,6 +764,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -7
 air.type = Low
 air.velocity = -5, -6
@@ -933,6 +938,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -4, -8.5
 air.type = Low
 air.velocity = -4, -8.5
@@ -1094,6 +1100,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10, 0
 air.type = Low
 air.velocity = -4, -4
@@ -1127,6 +1134,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -3
 air.type = Low
 air.velocity = -6, -3
@@ -1259,6 +1267,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -10, 0
 ground.cornerpush.veloff = 0;-20.0 * (animelemno(0) >= var(10) + 8)
 ;ground.cornerpush.veloff = 0;-20.0 / (animelemno(0) -var(10) -5);-13

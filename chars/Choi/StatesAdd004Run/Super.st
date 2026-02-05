@@ -2430,6 +2430,7 @@ sparkxy = 12,9999
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -6,-12
 guard.velocity = -10
 air.velocity = -6,-12

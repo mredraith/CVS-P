@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Goenitz by varo_hades                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SUPER STATES=
 ;
@@ -455,6 +455,7 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -130
 ground.Type = High
 ground.SlideTime = 9
 ground.HitTime = 9
+guard.hittime = (9) - 5
 ground.Velocity = 0
 Air.Velocity = 0
 Ground.cornerpush.veloff = 0;0
@@ -956,6 +957,7 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -40
 ground.Type = Low
 ground.SlideTime = 17
 ground.HitTime = 20
+guard.hittime = (20) - 5
 ground.Velocity = -4
 Air.Velocity = -4
 Ground.cornerpush.veloff = 0
@@ -989,6 +991,7 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -75
 ground.Type = High
 ground.SlideTime = 17
 ground.HitTime = 20
+guard.hittime = (20) - 5
 ground.Velocity = -4
 Air.Velocity = -4
 Ground.cornerpush.veloff = 0
@@ -1065,6 +1068,7 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -130
 ground.Type = High
 ground.SlideTime = 9
 ground.HitTime = 9
+guard.hittime = (9) - 5
 ground.Velocity = 0
 Air.Velocity = 0
 Ground.cornerpush.veloff = 0
@@ -1511,6 +1515,7 @@ fall.animtype = back
 priority = 1, Miss
 ground.type = low
 ground.hittime = 60
+guard.hittime = (60) - 5
 sparkno = -1
 sparkxy = -30,-70
 HitSound = -1
@@ -1534,6 +1539,7 @@ hitflag = M-
 fall.animtype = back
 ground.type = low
 ground.hittime = 60
+guard.hittime = (60) - 5
 priority = 7, Miss
 sparkno = -1
 sparkxy = -30,-70
@@ -1892,6 +1898,7 @@ fall.animtype = back
 priority = 1, Miss
 ground.type = low
 ground.hittime = 60
+guard.hittime = (60) - 5
 sparkno = -1
 sparkxy = -30,-70
 HitSound = -1
@@ -1915,6 +1922,7 @@ hitflag = M-
 fall.animtype = back
 ground.type = low
 ground.hittime = 60
+guard.hittime = (60) - 5
 priority = 7, Miss
 sparkno = -1
 sparkxy = -30,-70

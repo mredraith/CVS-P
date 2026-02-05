@@ -1,6 +1,6 @@
 ; _________________________________
 ;| Sakura by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; SPECIAL STATES 
 ;
@@ -325,6 +325,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 air.type = Low
 air.velocity = -2, 0.5
@@ -360,6 +361,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 air.type = Low
 air.velocity = -2, 0.5
@@ -394,6 +396,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
 air.type = Low
 air.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
@@ -430,6 +433,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
 air.type = High
 air.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
@@ -529,6 +533,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 air.type = Low
 air.velocity = -2, 0.5
@@ -590,6 +595,7 @@ guardsound = s2, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 air.type = Low
 air.velocity = -2, 0.5
@@ -624,6 +630,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 air.type = Low
 air.velocity = -2, 0.5
@@ -658,6 +665,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -4, -8
 air.type = High
 air.velocity = -4, -8
@@ -815,6 +823,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = ifelse(var(1) = 2, -3.5, -7), ifelse(var(1) = 2, -5, 0)
 air.type = Low
 air.velocity = ifelse(var(1) = 2, -3.5, -5), ifelse(var(1) = 2, -5, -5)
@@ -853,6 +862,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(1) = 2, 3.5, 7), ifelse(var(1) = 2, -5, 0)
 air.type = Low
 air.velocity = ifelse(var(1) = 2, 3.5, 5), ifelse(var(1) = 2, -5, -5)
@@ -1010,6 +1020,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -6, -3
 air.type = Low
 air.velocity = -6, -3
@@ -1246,6 +1257,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -4, -4
 air.type = Low
 air.velocity = -4, -4
@@ -1284,6 +1296,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = 4, -4
 air.type = Low
 air.velocity = 4, -4
@@ -1549,6 +1562,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -3, -8
 air.type = High
 air.velocity = -3, -8
@@ -1587,6 +1601,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -8, 4
 air.type = High
 air.velocity = -8, 4
@@ -1805,6 +1820,7 @@ guardsound = s2, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -10, 0
 air.type = Low
 air.velocity = -4, 2

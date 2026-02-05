@@ -1,6 +1,6 @@
 ; ________________________________
 ;| Karin by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; SPECIAL MOVES 
 ;
@@ -3245,6 +3245,7 @@ guardsound = s3, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 air.type = Low
 air.velocity = -2, 0.5
@@ -3280,6 +3281,7 @@ guardsound = s3, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = -2, 0
 air.type = Low
 air.velocity = -2, 0.5
@@ -3314,6 +3316,7 @@ guardsound = s3, 0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
 air.type = Low
 air.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
@@ -3350,6 +3353,7 @@ guardsound = s3, 0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
+guard.hittime = (16) - 5
 ground.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
 air.type = High
 air.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -10, ifelse(var(10) = 2, -9, -8))
