@@ -205,7 +205,7 @@ ctrl = 1
 
 
 
-;STANDING FAR MEDIUM PUNCH>==
+;STANDING FAR MEDIUM PUNCH
 [StateDef 210]
 type = S
 physics = S
@@ -233,7 +233,6 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 6
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
 forceNoFall = !var(20)
 attr = S, NA
 hitFlag = MAF
@@ -433,7 +432,6 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 6
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
 forceNoFall = !var(20)
 attr = S, NA
 hitFlag = MAF
@@ -636,7 +634,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 4
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = S, NA
 hitFlag = MAF
@@ -795,7 +793,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 6
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = S, NA
 hitFlag = MAF
@@ -1124,7 +1122,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 5
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = C, NA
 hitFlag = MAF
@@ -1283,7 +1281,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 5
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = C, NA
 hitFlag = MAF
@@ -1442,7 +1440,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 5
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = C, NA
 hitFlag = MAF
@@ -2340,7 +2338,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 4
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = A, NA
 hitFlag = MAF
@@ -2507,7 +2505,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 4
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = A, NA
 hitFlag = MAF
@@ -2761,7 +2759,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 4
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = A, NA
 hitFlag = MAF
@@ -3015,7 +3013,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 4
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = A, NA
 hitFlag = MAF
@@ -3269,7 +3267,7 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 6
-trigger1 = P2BodyDist x > const(size.Ground.Front) * 2.0
+
 forceNoFall = !var(20)
 attr = A, NA
 hitFlag = MAF
