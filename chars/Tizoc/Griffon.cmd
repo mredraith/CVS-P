@@ -85,210 +85,63 @@ time=32
 
 [command]
 name = "Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,x
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,x
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,x
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,x
-time = 60
+command = ~F,D,B,F,D,B,x
+time = 40
 
 [command]
 name = "Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,~x
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,~x
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,~x
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,~x
-time = 60
+command = ~F,D,B,F,D,B,y
+time = 40
 
 [command]
 name = "Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,y
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,y
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,y
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,y
-time = 60
+command = ~F,D,B,F,D,B,z
+time = 40
 
 [command]
 name = "Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,~y
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,~y
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,~y
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,~y
-time = 60
+command = ~B,D,F,B,D,F,x
+time = 40
 
 [command]
 name = "Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,z
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,z
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,z
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,z
-time = 60
+command = ~B,D,F,B,D,F,y
+time = 40
 
 [command]
 name = "Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,~z
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,~z
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,~z
-time = 60
-[command]
-name = "Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,~z
-time = 60
+command = ~B,D,F,B,D,F,z
+time = 40
 
 [command]
 name = "Max Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,x+y
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,x+y
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,x+y
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,x+y
-time = 60
+command = ~F,D,B,F,D,B,x+y
+time = 40
 
 [command]
 name = "Max Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,~x+y
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,~x+y
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,~x+y
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,~x+y
-time = 60
-
+command = ~F,D,B,F,D,B,x+z
+time = 40
 
 [command]
 name = "Max Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,y+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,y+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,y+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,y+z
-time = 60
+command = ~F,D,B,F,D,B,y+z
+time = 40
 
 [command]
 name = "Max Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,~y+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,~y+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,~y+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,~y+z
-time = 60
-
-
+command = ~B,D,F,B,D,F,x+y
+time = 40
 
 [command]
 name = "Max Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,x+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,x+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,x+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,x+z
-time = 60
+command = ~B,D,F,B,D,F,x+z
+time = 40
 
 [command]
 name = "Max Big Fall Griffon 2"
-command = ~F,D,B,U,F,D,B,U,~x+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~B,D,F,U,B,D,F,U,~x+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,F,D,B,U,F,D,B,~x+z
-time = 60
-[command]
-name = "Max Big Fall Griffon 2"
-command = ~U,B,D,F,U,B,D,F,~x+z
-time = 60
+command = ~B,D,F,B,D,F,y+z
+time = 40
 
 
 [Command]
@@ -374,112 +227,126 @@ command = ~D, DB, B, x+z
 time = 15
 
 
-[command]
+[Command]
 name = "Justice Hurricane 2"
-command = ~F,D,B,U,x
-time = 48
-[command]
+command = ~F, D, B, x
+time = 16
+
+[Command]
 name = "Justice Hurricane 2"
-command = ~B,D,F,U,x
-time = 48
-[command]
+command = ~B, D, F, x
+time = 16
+
+[Command]
 name = "Justice Hurricane 2"
-command = ~U,F,D,B,x
-time = 48
-[command]
+command = ~F, D, B, ~x
+time = 16
+
+[Command]
 name = "Justice Hurricane 2"
-command = ~U,B,D,F,x
-time = 48
+command = ~B, D, F, ~x
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~F, D, B, y
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~B, D, F, y
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~F, D, B, ~y
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~B, D, F, ~y
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~F, D, B, z
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~B, D, F, z
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~F, D, B, ~z
+time = 16
+
+[Command]
+name = "Justice Hurricane 2"
+command = ~B, D, F, ~z
+time = 16
 
 
-[command]
-name = "Justice Hurricane 2"
-command = ~F,D,B,U,y
-time = 48
-[command]
-name = "Justice Hurricane 2"
-command = ~B,D,F,U,y
-time = 48
-[command]
-name = "Justice Hurricane 2"
-command = ~U,F,D,B,y
-time = 48
-[command]
-name = "Justice Hurricane 2"
-command = ~U,B,D,F,y
-time = 48
+[Command]
+name = "Justice Hurricane EX 2"
+command = ~F, D, B, x+y
+time = 16
 
+[Command]
+name = "Justice Hurricane EX 2"
+command = ~B, D, F, x+y
+time = 16
 
-[command]
-name = "Justice Hurricane 2"
-command = ~F,D,B,U,z
-time = 48
-[command]
-name = "Justice Hurricane 2"
-command = ~B,D,F,U,z
-time = 48
-[command]
-name = "Justice Hurricane 2"
-command = ~U,F,D,B,z
-time = 48
-[command]
-name = "Justice Hurricane 2"
-command = ~U,B,D,F,z
-time = 48
+[Command]
+name = "Justice Hurricane EX 2"
+command = ~F, D, B, ~x+y
+time = 16
 
+[Command]
+name = "Justice Hurricane EX 2"
+command = ~B, D, F, ~x+y
+time = 16
 
-[command]
+[Command]
 name = "Justice Hurricane EX 2"
-command = ~F,D,B,U,x+y
-time = 48
-[command]
-name = "Justice Hurricane EX 2"
-command = ~B,D,F,U,x+y
-time = 48
-[command]
-name = "Justice Hurricane EX 2"
-command = ~U,F,D,B,x+y
-time = 48
-[command]
-name = "Justice Hurricane EX 2"
-command = ~U,B,D,F,x+y
-time = 48
+command = ~F, D, B, y+z
+time = 16
 
+[Command]
+name = "Justice Hurricane EX 2"
+command = ~B, D, F, y+z
+time = 16
 
-[command]
+[Command]
 name = "Justice Hurricane EX 2"
-command = ~F,D,B,U,y+z
-time = 48
-[command]
-name = "Justice Hurricane EX 2"
-command = ~B,D,F,U,y+z
-time = 48
-[command]
-name = "Justice Hurricane EX 2"
-command = ~U,F,D,B,y+z
-time = 48
-[command]
-name = "Justice Hurricane EX 2"
-command = ~U,B,D,F,y+z
-time = 48
+command = ~F, D, B, ~y+z
+time = 16
 
+[Command]
+name = "Justice Hurricane EX 2"
+command = ~B, D, F, ~y+z
+time = 16
 
-[command]
+[Command]
 name = "Justice Hurricane EX 2"
-command = ~F,D,B,U,x+z
-time = 48
-[command]
+command = ~F, D, B, x+z
+time = 16
+
+[Command]
 name = "Justice Hurricane EX 2"
-command = ~B,D,F,U,x+z
-time = 48
-[command]
+command = ~B, D, F, x+z
+time = 16
+
+[Command]
 name = "Justice Hurricane EX 2"
-command = ~U,F,D,B,x+z
-time = 48
-[command]
+command = ~F, D, B, ~x+z
+time = 16
+
+[Command]
 name = "Justice Hurricane EX 2"
-command = ~U,B,D,F,x+z
-time = 48
+command = ~B, D, F, ~x+z
+time = 16
 
 
 [Command]
