@@ -907,29 +907,16 @@ time = 16
 
 [Command]
 name = "Counter_K"
-command = ~B, DB, D, a
-time = 16
+command = F, a+b
+time = 8
 [Command]
 name = "Counter_K"
-command = ~B, DB, D, b
-time = 16
+command = F, a+c
+time = 8
 [Command]
 name = "Counter_K"
-command = ~B, DB, D, c
-time = 16
-[Command]
-name = "Counter_K"
-command = ~B, DB, D, ~a
-time = 16
-[Command]
-name = "Counter_K"
-command = ~B, DB, D, ~b
-time = 16
-[Command]
-name = "Counter_K"
-command = ~B, DB, D, ~c
-time = 16
-
+command = F, b+c
+time = 8
 
 
 ;---------------------------------------------------------------------------

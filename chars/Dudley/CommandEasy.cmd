@@ -887,29 +887,16 @@ time=1
 
 [Command]
 name = "Counter_P"
-command = ~B, DB, D, x
-time = 16
+command = F, x+y
+time = 8
 [Command]
 name = "Counter_P"
-command = ~B, DB, D, y
-time = 16
+command = F, x+z
+time = 8
 [Command]
 name = "Counter_P"
-command = ~B, DB, D, z
-time = 16
-
-[Command]
-name = "Counter_P"
-command = ~B, DB, D, ~x
-time = 16
-[Command]
-name = "Counter_P"
-command = ~B, DB, D, ~y
-time = 16
-[Command]
-name = "Counter_P"
-command = ~B, DB, D, ~z
-time = 16
+command = F, y+z
+time = 8
 
 [Command]
 name = "Counter_K"
