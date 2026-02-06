@@ -264,53 +264,30 @@ name = "RaigekiShuu3"
 command = /DF, c
 
 [Command]
-name = "412p" ;Zero Counter
-command = ~B, DB, D, x
-time = 16
+name = "412p"
+command = F, x+y
+time = 8
 [Command]
-name = "412p" ;Zero Counter
-command = ~B, DB, D, y
-time = 16
+name = "412p"
+command = F, x+z
+time = 8
 [Command]
-name = "412p" ;Zero Counter
-command = ~B, DB, D, z
-time = 16
+name = "412p"
+command = F, y+z
+time = 8
+
 [Command]
-name = "412p" ;Zero Counter
-command = ~B, DB, D, ~x
-time = 16
+name = "412k"
+command = F, a+b
+time = 8
 [Command]
-name = "412p" ;Zero Counter
-command = ~B, DB, D, ~y
-time = 16
+name = "412k"
+command = F, a+c
+time = 8
 [Command]
-name = "412p" ;Zero Counter
-command = ~B, DB, D, ~z
-time = 16
-[Command]
-name = "412k" ;Zero Counter
-command = ~B, DB, D, a
-time = 16
-[Command]
-name = "412k" ;Zero Counter
-command = ~B, DB, D, b
-time = 16
-[Command]
-name=  "412k" ;Zero Counter
-command = ~B, DB, D, c
-time = 16
-[Command]
-name = "412k" ;Zero Counter
-command = ~B, DB, D, ~a
-time = 16
-[Command]
-name = "412k" ;Zero Counter
-command = ~B, DB, D, ~b
-time = 16
-[Command]
-name = "412k" ;Zero Counter
-command = ~B, DB, D, ~c
-time = 16
+name = "412k"
+command = F, b+c
+time = 8
 ;-| Double Tap |-----------------------------------------------------------
 [Command]
 name = "FF"     ;Required (do not remove)

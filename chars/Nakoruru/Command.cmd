@@ -586,29 +586,29 @@ time = 16
 
 [Command]
 name = "counter_p"
-command = ~B, DB, D, x
-time = 16
+command = F, x+y
+time = 8
 [Command]
 name = "counter_p"
-command = ~B, DB, D, y
-time = 16
+command = F, x+z
+time = 8
 [Command]
 name = "counter_p"
-command = ~B, DB, D, z
-time = 16
+command = F, y+z
+time = 8
 
 [Command]
 name = "counter_k"
-command = ~B, DB, D, a
-time = 16
+command = F, a+b
+time = 8
 [Command]
 name = "counter_k"
-command = ~B, DB, D, b
-time = 16
+command = F, a+c
+time = 8
 [Command]
 name = "counter_k"
-command = ~B, DB, D, c
-time = 16
+command = F, b+c
+time = 8
 
 
 ;====================< OTHER >====================

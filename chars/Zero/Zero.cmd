@@ -361,14 +361,30 @@ command = ~F, D, DF, c+a
 time = 32
 
 [Command]
-name = "412k" ;Zero Counter
-command = y+b
-time = 16
+name = "412p"
+command = F, x+y
+time = 8
+[Command]
+name = "412p"
+command = F, x+z
+time = 8
+[Command]
+name = "412p"
+command = F, y+z
+time = 8
 
 [Command]
-name = "412p" ;Zero Counter
-command = z+c
-time = 16
+name = "412k"
+command = F, a+b
+time = 8
+[Command]
+name = "412k"
+command = F, a+c
+time = 8
+[Command]
+name = "412k"
+command = F, b+c
+time = 8
 
 ;-| Double Tap |-----------------------------------------------------------
 [Command]
