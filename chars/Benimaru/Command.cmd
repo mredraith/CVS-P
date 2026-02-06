@@ -3219,7 +3219,7 @@ triggerAll = !AILevel
 triggerAll = StateNo = 150 || StateNo = 152
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = power >= 1000 && !var(20)
-trigger1 = command = "Counter_P" || command = "Counter_K"
+trigger1 = command = "412p" || command = "412k"
 
 [State -1, Custom Combo]
 type = ChangeState
