@@ -458,29 +458,29 @@ time = 20
 
 [Command]
 name = "Counter_P"
-command = F, D, DF, x
-time = 16
+command = F, x+y
+time = 8
 [Command]
 name = "Counter_P"
-command = F, D, DF, y
-time = 16
+command = F, x+z
+time = 8
 [Command]
 name = "Counter_P"
-command = F, D, DF, z
-time = 16
+command = F, y+z
+time = 8
 
 [Command]
 name = "Counter_K"
-command = F, D, DF, a
-time = 16
+command = F, a+b
+time = 8
 [Command]
 name = "Counter_K"
-command = F, D, DF, b
-time = 16
+command = F, a+c
+time = 8
 [Command]
 name = "Counter_K"
-command = F, D, DF, c
-time = 16
+command = F, b+c
+time = 8
 
 
 ;===================< OTHER >===================

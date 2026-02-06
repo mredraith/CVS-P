@@ -359,6 +359,32 @@ name = "b+c"
 command = b+c
 time = 1
 
+[Command]
+name = "412p"
+command = F, x+y
+time = 8
+[Command]
+name = "412p"
+command = F, x+z
+time = 8
+[Command]
+name = "412p"
+command = F, y+z
+time = 8
+
+[Command]
+name = "412k"
+command = F, a+b
+time = 8
+[Command]
+name = "412k"
+command = F, a+c
+time = 8
+[Command]
+name = "412k"
+command = F, b+c
+time = 8
+
 [Statedef -1]
 
 ;//==========================
@@ -3058,12 +3084,11 @@ trigger1 = ctrl
 [State -1, Alpha Counter]
 type = ChangeState
 value = 750
-triggerAll = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90007552)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90007502))
-triggerall = StateNo = 150 || StateNo = 152
-triggerall = RoundState = 2 && StateType != A
-triggerall = power >= 1000 && !var(20)
-trigger1 = NumExplod(90000200) || NumExplod(90000205) || NumExplod(90000210) || NumExplod(90000215) || NumExplod(90000220) || NumExplod(90000225)
-trigger2 = NumExplod(90000230) || NumExplod(90000235) || NumExplod(90000240) || NumExplod(90000245) || NumExplod(90000250) || NumExplod(90000255)
+triggerAll = !AILevel
+triggerAll = StateNo = 150 || StateNo = 152
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = power >= 1000 && !var(20)
+trigger1 = command = "412p" || command = "412k"
 
 [State -1, Counter Movement]
 type = ChangeState
