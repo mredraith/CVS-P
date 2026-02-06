@@ -19,8 +19,11 @@ Some of the listed changes made are;
 * Shin Akuma and God Rugal now have very funny divekicks that can combo into itself
 * Evil Ryu now has an overpowered dumb joke version called Funny Ryu with long legs
 * Some characters that didn't have hyper hops now have functioning hyper hops
-* E. Honda and Chun Li can now QCF for mash attacks
-* 360 motions replaced with HCF/HCB motions
+* Motion inputs truncated whenever possible
+  * Half circles > quarter circles
+  * 360s > half circles
+  * Mash inputs > quarter circles
+  * Alpha Counter is now forward + 2 punches/kicks
 
 ***I did not make the original build!!!***
 
