@@ -666,63 +666,29 @@ time = 16
 
 [Command]
 name = "412p"
-command = ~F, x
-time = 12
-
+command = F, x+y
+time = 8
 [Command]
 name = "412p"
-command = ~F, y
-time = 12
-
+command = F, x+z
+time = 8
 [Command]
 name = "412p"
-command = ~F, z
-time = 12
-
-[Command]
-name = "412p"
-command = ~F, x 
-time = 12
-
-[Command]
-name = "412p"
-command = ~F, y
-time = 12
-
-[Command]
-name = "412p"
-command = ~F, z
-time = 12
+command = F, y+z
+time = 8
 
 [Command]
 name = "412k"
-command = ~F, a
-time = 12
-
+command = F, a+b
+time = 8
 [Command]
 name = "412k"
-command = ~F, b
-time = 12
-
-[Command]
-name=  "412k"
-command = ~F, c
-time = 12
-
+command = F, a+c
+time = 8
 [Command]
 name = "412k"
-command = ~F, a
-time = 12
-
-[Command]
-name = "412k"
-command = ~F, b
-time = 12
-
-[Command]
-name = "412k"
-command = ~F, c
-time = 12
+command = F, b+c
+time = 8
 
 ;====================<OTHER>====================
 

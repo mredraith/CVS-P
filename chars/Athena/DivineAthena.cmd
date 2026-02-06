@@ -512,6 +512,32 @@ name = "highjump"
 command = $D, $U
 time = 15
 
+[Command]
+name = "412p"
+command = F, x+y
+time = 8
+[Command]
+name = "412p"
+command = F, x+z
+time = 8
+[Command]
+name = "412p"
+command = F, y+z
+time = 8
+
+[Command]
+name = "412k"
+command = F, a+b
+time = 8
+[Command]
+name = "412k"
+command = F, a+c
+time = 8
+[Command]
+name = "412k"
+command = F, b+c
+time = 8
+
 ;---------------------------------------------------------------------------
 ;It is VERY important to note, that the placement of Changestates, 
 ;here are HEAVILY important with this buffering system! 
@@ -946,25 +972,12 @@ triggerall = RoundState = 2 && StateType != A
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(5)
 
-[State -1, Alpha Counter(Kick)]
+[State -1, Zero Counter]
 type = ChangeState
 value = 750
-triggerall = !IsHelper(10371) ;Always add this!
-triggerall = numhelper(10371)
-triggerall = helper(10371), var(20)
-triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
+triggerAll = !AILevel
 trigger1 = StateNo = 150 || StateNo = 152
-trigger1 = RoundState = 2 && StateType != A
-trigger1 = power >= 1000 && !var(20)
-
-[State -1, Alpha Counter(Punch)]
-type = ChangeState
-value = 750
-triggerall = !IsHelper(10371) ;Always add this!
-triggerall = numhelper(10371)
-triggerall = helper(10371), var(20)
-triggerall = (helper(10371), var(0)) || (helper(10371), var(1)) || (helper(10371), var(2)) || (helper(10371), var(7)) || (helper(10371), var(8)) || (helper(10371), var(9))
-trigger1 = StateNo = 150 || StateNo = 152
+trigger1 = command = "412p" || command = "412k"
 trigger1 = RoundState = 2 && StateType != A
 trigger1 = power >= 1000 && !var(20)
 

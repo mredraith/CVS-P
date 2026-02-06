@@ -319,6 +319,32 @@ name = "b+c"
 command = b+c
 time = 1
 
+[Command]
+name = "Counter_P"
+command = F, x+y
+time = 8
+[Command]
+name = "Counter_P"
+command = F, x+z
+time = 8
+[Command]
+name = "Counter_P"
+command = F, y+z
+time = 8
+
+[Command]
+name = "Counter_K"
+command = F, a+b
+time = 8
+[Command]
+name = "Counter_K"
+command = F, a+c
+time = 8
+[Command]
+name = "Counter_K"
+command = F, b+c
+time = 8
+
 
 
 ;==============================================================================================
@@ -3058,12 +3084,7 @@ triggerAll = !AILevel
 triggerAll = StateNo = 150 || StateNo = 152
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = power >= 1000 && !var(20)
-;command = "412p" || command = "412k"
-triggerAll = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90007552)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90007502))
-;x / y / z
-trigger1 = NumExplod(90000200) || NumExplod(90000205) || NumExplod(90000210) || NumExplod(90000215) || NumExplod(90000220) || NumExplod(90000225)
-;a / b / c
-trigger2 = NumExplod(90000230) || NumExplod(90000235) || NumExplod(90000240) || NumExplod(90000245) || NumExplod(90000250) || NumExplod(90000255)
+trigger1 = command = "Counter_P" || command = "Counter_K"
 
 [State -1, Custom Combo]
 type = ChangeState
