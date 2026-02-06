@@ -325,48 +325,33 @@ time=1
 ;Zero counter
 [Command]
 name="bdx"
-command= z+c
-time=20
+command = F, x+y
+time = 8
 
 [Command]
 name="bdy"
-command= z+c
-time=20
+command = F, x+z
+time = 8
 
 [Command]
 name="bdz"
-command= z+c
-time=20
+command = F, y+z
+time = 8
 
 [Command]
 name="bda"
-command= y+b
-time=20
+command = F, a+b
+time = 8
 
 [Command]
 name="bdb"
-command= y+b
-time=20
+command = F, a+c
+time = 8
 
 [Command]
 name="bdc"
-command= y+b
-time=20
-
-[Command]
-name="BDA"
-command= F, x+a
-time=20
-
-[Command]
-name="BDB"
-command= F, x+a
-time=20
-
-[Command]
-name="BDC"
-command= B, x+a
-time=20
+command = F, b+c
+time = 8
 
 ;-| Dir + Button |---------------------------------------------------------
 [Command]

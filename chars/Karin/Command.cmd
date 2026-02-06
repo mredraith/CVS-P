@@ -998,29 +998,29 @@ time = 15
 
 [Command]
 name = "bdp"
-command = ~B, DB, D, x
-time = 20
+command = F, x+y
+time = 8
 [Command]
 name = "bdp"
-command = ~B, DB, D, y
-time = 20
+command = F, x+z
+time = 8
 [Command]
 name = "bdp"
-command = ~B, DB, D, z
-time = 20
+command = F, y+z
+time = 8
 
 [Command]
 name = "bdk"
-command = ~B, DB, D, a
-time = 20
+command = F, a+b
+time = 8
 [Command]
 name = "bdk"
-command = ~B, DB, D, b
-time = 20
+command = F, a+c
+time = 8
 [Command]
 name = "bdk"
-command = ~B, DB, D, c
-time = 20
+command = F, b+c
+time = 8
 
 [Command]
 name = "qcfx"
