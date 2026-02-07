@@ -5,7 +5,7 @@ movetype= A
 physics = S
 velset = 0,0
 ctrl = 0
-anim = 200 + (Abs(P2BodyDist X) <= Const(Size.XScale) * 25) * 5
+anim = 200
 poweradd = 0
 sprpriority = 1
 facep2 = 1
@@ -968,7 +968,6 @@ value = 11
 ctrl = 1
 ;--------------------------------------------------------------------------
 ; Crouching Strong Punch
-;CNS difficulty: easy
 [Statedef 420]
 type = C
 movetype= A
@@ -2471,7 +2470,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ;Throw - Attempt
-; CNS difficulty: advanced
 [Statedef 800]
 type = S
 movetype= A
@@ -3077,7 +3075,7 @@ type = SelfState
 trigger1 = Vel Y > 0 && Pos Y >= (Const(Size.Head.Pos.Y) - Const(Size.Mid.Pos.Y))
 value = 5100
 
-;THROW ESCAPED=
+;THROW ESCAPED
 [StateDef 890]
 type = S
 physics = N

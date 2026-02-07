@@ -259,6 +259,7 @@ start = -1783,90
 type = anim
 actionno = 111
 start = -1783,90
+layerno = 1
 
 [TitleBG Banner T]
 type = anim
@@ -405,189 +406,95 @@ Interpolate Offset
 101,1, 0,0, 50
 101,1, 0,0, 20
 Interpolate Offset
-101,1, 1863,0, 600
+101,1, 1863,0, 300
 Interpolate Offset
 101,1, 1913,0, 10 ;+50
 Interpolate Offset
 101,1, 2513,0, 50 ;+600
-102,1, 0,15, 20
+102,1, 0,0, 20
 Interpolate Offset
-102,1, 1787,15, 600
+102,1, 1787,0, 300
 Interpolate Offset
-102,1, 1837,15, 10 ;+50
+102,1, 1837,0, 10 ;+50
 Interpolate Offset
-102,1, 2437,15, 50 ;+600
-103,1, 0,-55, 20
+102,1, 2437,0, 50 ;+600
+103,1, 0,0, 20
 Interpolate Offset
-103,1, 1798,-55, 600
+103,1, 1798,0, 300
 Interpolate Offset
-103,1, 1848,-55, 10 ;+50
+103,1, 1848,0, 10 ;+50
 Interpolate Offset
-103,1, 2448,-55, 50 ;+600
-104,1, 0,-21, 20
+103,1, 2448,0, 50 ;+600
+104,1, 0,0, 20
 Interpolate Offset
-104,1, 1766,-21, 600
+104,1, 1766,0, 300
 Interpolate Offset
-104,1, 1816,-21, 10 ;+50
+104,1, 1816,0, 10 ;+50
 Interpolate Offset
-104,1, 2416,-21, 50 ;+600
-105,1, 0,-60, 20
+104,1, 2416,0, 50 ;+600
+105,1, 0,0, 20
 Interpolate Offset
-105,1, 1774,-60, 600
+105,1, 1774,0, 300
 Interpolate Offset
-105,1, 1824,-60, 10 ;+50
+105,1, 1824,0, 10 ;+50
 Interpolate Offset
-105,1, 2424,-60, 50 ;+600
-106,1, 0,-1, 20
+105,1, 2424,0, 50 ;+600
+106,1, 0,0, 20
 Interpolate Offset
-106,1, 1681,-1, 600
+106,1, 1681,0, 300
 Interpolate Offset
-106,1, 1731,-1, 10 ;+50
+106,1, 1731,0, 10 ;+50
 Interpolate Offset
-106,1, 2431,-1, 50 ;Magneto, +700 ;+600
-107,1, 0,-15, 20
+106,1, 2431,0, 50 ;Magneto, +700 ;+600
+107,1, 0,0, 20
 Interpolate Offset
-107,1, 1825,-15, 600
+107,1, 1825,0, 300
 Interpolate Offset
-107,1, 1875,-15, 10 ;+50
+107,1, 1875,0, 10 ;+50
 Interpolate Offset
-107,1, 2475,-15, 50 ;+600
-108,1, 0,-88, 20
+107,1, 2475,0, 50 ;+600
+108,1, 0,0, 20
 Interpolate Offset
-108,1, 1748,-88, 600
+108,1, 1748,0, 300
 Interpolate Offset
-108,1, 1798,-88, 10 ;+50
+108,1, 1798,0, 10 ;+50
 Interpolate Offset
-108,1, 2398,-88, 50 ;+600
-109,1, 0,-3, 20
+108,1, 2398,0, 50 ;+600
+109,1, 0,0, 20
 Interpolate Offset
-109,1, 1844,-3, 600
+109,1, 1844,0, 300
 Interpolate Offset
-109,1, 1894,-3, 10 ;+50
+109,1, 1894,0, 10 ;+50
 Interpolate Offset
-109,1, 2494,-3, 50 ;+600
-110,1, 0,-3, 20
+109,1, 2494,0, 50 ;+600
+110,1, 0,0, 20
 Interpolate Offset
-110,1, 1764,-3, 600
+110,1, 1764,0, 300
 Interpolate Offset
-110,1, 1814,-3, 10 ;+50
+110,1, 1814,0, 10 ;+50
 Interpolate Offset
-110,1, 2414,-3, 50 ;+600
-111,1, 0,-8, 20
+110,1, 2414,0, 50 ;+600
+111,1, 0,0, 20
 Interpolate Offset
-111,1, 1745,-8, 600
+111,1, 1745,0, 300
 Interpolate Offset
-111,1, 1795,-8, 10 ;+50
+111,1, 1795,0, 10 ;+50
 Interpolate Offset
-111,1, 2395,-8, 50 ;+600
-112,1, 0,13, 20
+111,1, 2395,0, 50 ;+600
+112,1, 0,0, 20
 Interpolate Offset
-112,1, 1802,13, 600
+112,1, 1802,0, 300
 Interpolate Offset
-112,1, 1852,13, 10 ;+50
+112,1, 1852,0, 10 ;+50
 Interpolate Offset
-112,1, 2452,13, 50 ;+600
-113,1, 0,-17, 20
+112,1, 2452,0, 50 ;+600
+113,1, 0,0, 20
 Interpolate Offset
-113,1, 1863,-17, 600
+113,1, 1863,0, 300
 Interpolate Offset
-113,1, 1913,-17, 10 ;+50
+113,1, 1913,0, 10 ;+50
 Interpolate Offset
-113,1, 2513,-17, 0 ;+600
-
-[Begin Action 112] ;BG
-101,2, 0,0, 50
-101,2, 0,0, 20
-Interpolate Offset
-101,2, 1873,0, 600
-Interpolate Offset
-101,2, 1913,0, 10 ;+40
-Interpolate Offset
-101,2, 2513,0, 50 ;+600
-102,2, 0,15, 20
-Interpolate Offset
-102,2, 1797,15, 600
-Interpolate Offset
-102,2, 1837,15, 10 ;+40
-Interpolate Offset
-102,2, 2437,15, 50 ;+600
-103,2, 0,-55, 20
-Interpolate Offset
-103,2, 1808,-55, 600
-Interpolate Offset
-103,2, 1848,-55, 10 ;+40
-Interpolate Offset
-103,2, 2448,-55, 50 ;+600
-104,2, 0,-55, 20
-Interpolate Offset
-104,2, 1776,-21, 600
-Interpolate Offset
-104,2, 1816,-21, 10 ;+40
-Interpolate Offset
-104,2, 2416,-21, 50 ;+600
-105,2, 0,-60, 20
-Interpolate Offset
-105,2, 1784,-60, 600
-Interpolate Offset
-105,2, 1824,-60, 10 ;+40
-Interpolate Offset
-105,2, 2424,-60, 50 ;+600
-106,2, 0,-1, 20
-Interpolate Offset
-106,2, 1691,-1, 600
-Interpolate Offset
-106,2, 1731,-1, 10 ;+40
-Interpolate Offset
-106,2, 2431,-1, 50 ;Magneto, +700 ;+600
-107,2, 0,-15, 20
-Interpolate Offset
-107,2, 1835,-15, 600
-Interpolate Offset
-107,2, 1875,-15, 10 ;+40
-Interpolate Offset
-107,2, 2475,-15, 50 ;+600
-108,2, 0,-88, 20
-Interpolate Offset
-108,2, 1758,-88, 600
-Interpolate Offset
-108,2, 1798,-88, 10 ;+40
-Interpolate Offset
-108,2, 2398,-88, 50 ;+600
-109,2, 0,-3, 20
-Interpolate Offset
-109,2, 1854,-3, 600
-Interpolate Offset
-109,2, 1894,-3, 10 ;+40
-Interpolate Offset
-109,2, 2494,-3, 50 ;+600
-110,2, 0,-3, 20
-Interpolate Offset
-110,2, 1774,-3, 600
-Interpolate Offset
-110,2, 1814,-3, 10 ;+40
-Interpolate Offset
-110,2, 2414,-3, 50 ;+600
-111,2, 0,-8, 20
-Interpolate Offset
-111,2, 1755,-8, 600
-Interpolate Offset
-111,2, 1795,-8, 10 ;+40
-Interpolate Offset
-111,2, 2395,-8, 50 ;+600
-112,2, 0,13, 20
-Interpolate Offset
-112,2, 1812,13, 600
-Interpolate Offset
-112,2, 1852,13, 10 ;+40
-Interpolate Offset
-112,2, 2452,13, 50 ;+600
-113,2, 0,-17, 20
-Interpolate Offset
-113,2, 1873,-17, 600
-Interpolate Offset
-113,2, 1913,-17, 10 ;+40
-Interpolate Offset
-113,2, 2513,-17, 0 ;+600
+113,1, 2513,0, 0 ;+600
 
 ;----------------------------
 [Infobox] ;(new in MUGEN 1.0)
