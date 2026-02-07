@@ -301,6 +301,7 @@ sparkXY=-1
 ground.type=High
 ground.slidetime=18
 ground.hittime=18
+guard.hittime = (18) - 5
 air.hittime = 18
 ground.velocity= -4,-6
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)

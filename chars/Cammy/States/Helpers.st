@@ -1,6 +1,6 @@
 ; ________________________________
 ;| Cammy by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; HELPER STATES =
 ;
@@ -718,8 +718,8 @@ fall.animtype = Hard
 ground.type = Low
 air.type = Low
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -13.3, -3.66
 ground.cornerpush.veloff = 0
@@ -1043,8 +1043,8 @@ fall.animtype = Hard
 ground.type = Low
 air.type = Low
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -13.3, -3.66
 ground.cornerpush.veloff = 0

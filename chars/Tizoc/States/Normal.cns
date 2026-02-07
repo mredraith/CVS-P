@@ -48,7 +48,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=12 + 2 * var(9)
 ground.hittime =12 + 2 * var(9)
-guard.hittime=12
+guard.hittime = (12 + 2 * var(9)) - 5
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 air.velocity=-4.21,-7.36
@@ -137,7 +137,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=18 + 3*var(9)
 ground.hittime=18 + 3*var(9)
-guard.hittime=18
+guard.hittime = (18 + 3*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -181,7 +181,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=15 + 3*var(9)
 ground.hittime=15 + 3*var(9)
-guard.hittime=15
+guard.hittime = (15 + 3*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -273,7 +273,7 @@ ground.type=High ;Low,Trip,None
 air.type=Low
 ground.slidetime = 24 + 4*var(9)
 ground.hittime = 24 + 4*var(9)
-guard.hittime = 24
+guard.hittime = (24 + 4*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-7,-8.52)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-7,-8.52)*(ifelse(!var(20),1,.5)))
@@ -317,7 +317,7 @@ ground.type=High ;Low,Trip,None
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
-guard.hittime=18
+guard.hittime = (18 + 4*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
@@ -403,7 +403,7 @@ ground.type=High ;Low,Trip,None
 air.type=Low
 ground.slidetime = 24 + 4*var(9)
 ground.hittime = 24 + 4*var(9)
-guard.hittime = 24
+guard.hittime = (24 + 4*var(9)) - 5
 air.hittime=120
 ground.velocity=Ifelse(var(20),-4,-8), -2.5
 guard.velocity=Ifelse(var(20),-5,-10)
@@ -447,7 +447,7 @@ ground.type=High ;Low,Trip,None
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
-guard.hittime=18
+guard.hittime = (18 + 4*var(9)) - 5
 air.hittime=120
 ground.velocity=Ifelse(var(20),-4,-8), -2.5
 guard.velocity=Ifelse(var(20),-5,-10)
@@ -536,7 +536,7 @@ ground.type=high ;Low,Trip,None
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
-guard.hittime=12
+guard.hittime = (12 + 2*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
@@ -625,7 +625,7 @@ ground.type=low
 air.type=Low
 ground.slidetime=18 + 3*var(9)
 ground.hittime=18 + 3*var(9)
-guard.hittime=18
+guard.hittime = (18 + 3*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -712,7 +712,7 @@ ground.type=High ;Low,Trip,None
 air.type=Low
 ground.slidetime = 24 + 4*var(9)
 ground.hittime = 24 + 4*var(9)
-guard.hittime = 24
+guard.hittime = (24 + 4*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
@@ -756,7 +756,7 @@ ground.type=High ;Low,Trip,None
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
-guard.hittime=18
+guard.hittime = (18 + 4*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
@@ -837,7 +837,7 @@ ground.type=Low ;Low,Trip,None
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
-guard.hittime=12
+guard.hittime = (12 + 2*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
@@ -917,7 +917,7 @@ ground.type=Low ;Low,Trip,None
 air.type=Low
 ground.slidetime=18 + 3*var(9)
 ground.hittime=18 + 3*var(9)
-guard.hittime=18
+guard.hittime = (18 + 3*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -1015,7 +1015,7 @@ ground.type = High
 air.type = Low
 ground.slidetime = 24 + 4*var(9)
 ground.hittime = 24 + 4*var(9)
-guard.hittime = 24
+guard.hittime = (24 + 4*var(9)) - 5
 air.hittime = Ifelse(var(55)=2,30,120)
 ground.velocity = Ifelse(var(55)=2,0,Ifelse(var(55)=1,-9,-10.52))*(ifelse(!var(20),1,.5)),Ifelse(var(55)=2,-11.8,0)
 guard.velocity = Ifelse(var(20),-4,-8)
@@ -1061,7 +1061,7 @@ ground.type = High
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
-guard.hittime = 18
+guard.hittime = (18 + 4*var(9)) - 5
 air.hittime = Ifelse((var(20)),30,120)
 ground.velocity=Ifelse(var(20),-2,-8),Ifelse(var(20),0,0)
 guard.velocity = Ifelse(var(20),-3,-8)
@@ -1148,7 +1148,7 @@ ground.type=Low ;Low,Trip,None
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
-guard.hittime=12
+guard.hittime = (12 + 2*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
@@ -1227,7 +1227,7 @@ ground.type=Low ;Low,Trip,None
 air.type=Low
 ground.slidetime=18 + 3*var(9)
 ground.hittime=18 + 3*var(9)
-guard.hittime=18
+guard.hittime = (18 + 3*var(9)) - 5
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -1311,7 +1311,7 @@ ground.type=Trip ;Low,Trip,None
 air.type=Trip
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
-guard.hittime=18
+guard.hittime = (18 + 4*var(9)) - 5
 air.hittime=120
 fall=1
 fall.recover=1
@@ -1356,7 +1356,7 @@ ground.type=Low ;Low,Trip,None
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
-guard.hittime=18
+guard.hittime = (18 + 4*var(9)) - 5
 air.hittime=120
 fall=1
 fall.recover=0
@@ -1430,7 +1430,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=12 + 2*var(9)
 ground.hittime =12 + 2*var(9)
-guard.hittime =12
+guard.hittime = (12 + 2*var(9)) - 5
 ground.velocity=Ifelse(var(20),-2,-4)
 guard.velocity=Ifelse(var(20),-2,-4)
 airguard.ctrlTime=16
@@ -1512,7 +1512,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=18 + 3*var(9)
 ground.hittime =18 + 3*var(9)
-guard.hittime =18 + 3*var(9)
+guard.hittime = (18 + 3*var(9)) - 5
 ground.velocity=Ifelse(var(20),-2,-4)
 guard.velocity=Ifelse(var(20),-2,-4)
 air.animType=Back
@@ -1593,7 +1593,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=24 + 4*var(9)
 ground.hittime =24 + 4*var(9)
-guard.hittime =24 + 4*var(9)
+guard.hittime = (24 + 4*var(9)) - 5
 ground.velocity = Ifelse(var(20),-2.5,-5)
 guard.velocity = Ifelse(var(20),-2.5,-5)
 air.animType=Back
@@ -1680,7 +1680,7 @@ fall.animType=Back
 ground.type=High
 ground.slidetime=12 + 2*var(9)
 ground.hittime =12 + 2*var(9)
-guard.hittime=12
+guard.hittime = (12 + 2*var(9)) - 5
 ground.velocity=Ifelse(var(20),-2,-4)
 guard.velocity=Ifelse(var(20),-2,-4)
 air.type=High
@@ -1760,7 +1760,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=18 + 3*var(9)
 ground.hittime =18 + 3*var(9)
-guard.hittime=15
+guard.hittime = (18 + 3*var(9)) - 5
 ground.velocity=Ifelse(var(20),-2.5,-5)
 guard.velocity=Ifelse(var(20),-2.5,-5)
 air.animType=Back
@@ -1841,7 +1841,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=24 + 4*var(9)
 ground.hittime =24 + 4*var(9)
-guard.hittime =24 + 4*var(9)
+guard.hittime = (24 + 4*var(9)) - 5
 ground.velocity=Ifelse(var(20),-2.5,-5)
 guard.velocity=Ifelse(var(20),-2.5,-5)
 air.type=High
@@ -2352,7 +2352,7 @@ type = StateTypeSet
 trigger1 = AnimelemTime(6) >= 0
 statetype = A
 
-[State -3, 音を鳴らす]
+[State -3, ﾂらす]
 type = PlaySnd
 trigger1 = animelem = 6
 value = 50, 0
@@ -2390,7 +2390,7 @@ type = null;TargetBind
 trigger1 = time = 0
 pos = 0, 0
 
-[State -3, 音を鳴らす]
+[State -3, ﾂらす]
 type = PlaySnd
 trigger1 = time = 0
 value = 880, 0
@@ -2439,7 +2439,7 @@ ownpal = 1
 facing = 1
 scale = const(size.xscale),const(size.yscale)
 
-[State 650, 音を鳴らす]
+[State 650, ﾂらす]
 type = playsnd
 trigger1 = numtarget
 trigger1 = Time = 0
@@ -2595,7 +2595,7 @@ ignorehitpause = 1
 ownpal = 1
 scale = const(size.xscale),const(size.yscale)
 
-[State 830, 音を鳴らす]
+[State 830, ﾂらす]
 type = PlaySnd
 trigger1 = time = 0
 value = 830, 0
@@ -2666,11 +2666,11 @@ trigger1 = authorname = "GM"
 trigger1 = name = "terry" || name = "gato" ||name = "hotaru"
 value = 850
 
-[State 840,ChangeAnim];クリエーターズジャパン指定anim
+[State 840,ChangeAnim];NG[^[YWpwanim
 type = ChangeAnim
 triggerall = Time = 0
 triggerall = SelfAnimExist(5940)
-trigger1 = authorname = "H”" || authorname = "Warusaki3" || authorname = "M.M.R."
+trigger1 = authorname = "Hh" || authorname = "Warusaki3" || authorname = "M.M.R."
 trigger2 = authorname = "Mouser" || authorname = "Nyankoro" || authorname = "ryokucha"
 trigger3 = authorname = "Bad Darkness" || authorname = "Third" || authorname = "adamskie"
 value = 5940

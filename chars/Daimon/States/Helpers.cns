@@ -3,7 +3,7 @@
 ; CVS Goro Daimon POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fÈ nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -2842,6 +2842,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1,-5
 down.velocity = -1,-5
 yaccel = .48
@@ -2981,6 +2982,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.5,-9
 yaccel = 0.4
 guard.velocity = -8
@@ -3156,6 +3158,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.5,-9
 yaccel = 0.4
 guard.velocity = -8
@@ -3183,6 +3186,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.5,-9
 yaccel = 0.4
 guard.velocity = -8
@@ -3352,7 +3356,7 @@ trigger1 = 1
 v = 1
 value = -16
 
-;---------------------[ìßâﬂ]
+;---------------------[]
 [State FDR]
 type = Trans
 trigger1 = 1
@@ -3468,7 +3472,7 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 
-;---------------------[ÉAÉjÉÅÅ[ÉVÉáÉì]
+;---------------------[Aj[V]
 [State FDR]
 type = changeanim
 trigger1 = ishelper(3556)
@@ -3487,7 +3491,7 @@ trigger1 = ishelper(3558)
 trigger1 = time = 0
 value = 3558
 
-;---------------------[ïœêî]
+;---------------------[œê]
 [State FDR]
 type = varset
 trigger1 = time = 0
@@ -3610,7 +3614,7 @@ trigger1 = animelem = 2,<0
 v = 3
 value = 5
 
-;---------------------[à⁄ìÆ]
+;---------------------[⁄ì]
 [State FDR]
 type = posset
 trigger1 = 1
@@ -3618,7 +3622,7 @@ x = 0 + var(2)
 y = pos y - screenpos y + 120 + var(3)
 
 
-;---------------------[ìßâﬂ]
+;---------------------[]
 [State FDR]
 type = Trans
 trigger1 = 1
@@ -3696,6 +3700,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.5,-9
 yaccel = 0.4
 guard.velocity = -8

@@ -203,8 +203,8 @@ hitsound = s2, ifelse((animelem = 19), 6, 3)
 guardsound = s2, 0
 ground.type = High
 ground.hittime = 32
+guard.hittime = (32) - 5
 ground.slidetime = 32
-guard.hittime = 16
 ground.velocity = -5.62, 0
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -236,8 +236,8 @@ hitsound = s2, ifelse((animelem = 17), 6, 3)
 guardsound = s2, 0
 ground.type = Low
 ground.hittime = 32
+guard.hittime = (32) - 5
 ground.slidetime = 32
-guard.hittime = 16
 ground.velocity = -5.62
 ground.cornerpush.veloff = 0
 air.type = Low

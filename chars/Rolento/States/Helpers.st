@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Rolento by Jmorphman                    |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -597,8 +597,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -956,8 +956,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.slidetime = 12
-guard.hittime = 12
 air.hittime = 60
 airguard.ctrltime = 16
 down.hittime = 20
@@ -1551,8 +1551,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 down.hitTime = 20
@@ -1714,8 +1714,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 down.hitTime = 20
@@ -1867,8 +1867,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 down.hitTime = 20
@@ -2217,8 +2217,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = 10.49, -4.49
@@ -2542,8 +2542,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.slidetime = 22
-guard.hittime = 22
 air.hittime = 60
 airguard.ctrltime = 16
 down.hittime = 20
@@ -2742,8 +2742,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = ifElse(Root, var(10) = 1, 16.49, -16.49), -3.49

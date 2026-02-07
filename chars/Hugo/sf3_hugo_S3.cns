@@ -1,5 +1,5 @@
-;☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
-; ジャイアントパームボンバー(小)
+;
+; WCAgp[{o[()
 [Statedef 1400]
 type = S
 movetype= A 
@@ -54,7 +54,7 @@ stateno = 1440
 ID = 1440
 helpertype = normal
 keyctrl = 0
-name = "飛び道具破壊ヘルパー"
+name = "ﾑ屠wp["
 ignorehitpause = 1
 persistent = 0
 size.xscale = const(size.xscale)
@@ -90,7 +90,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 17
 ground.hittime = Ifelse(p2statetype = C, 21, 19)
-guard.hittime = 17
+guard.hittime = (Ifelse(p2statetype = C, 21, 19)) - 5
 guard.slidetime = 17
 guard.ctrltime = 17
 ground.velocity = -9.0*const(size.xscale)
@@ -144,13 +144,13 @@ type = posadd
 trigger1 = animelemtime(5) = 0
 x = 8*const(size.xscale)
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 0, 0
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 8
 value = 5100, 0
@@ -248,8 +248,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ジャイアントパームボンバー(中)
+;
+; WCAgp[{o[()
 [Statedef 1410]
 type = S
 movetype= A 
@@ -304,7 +304,7 @@ stateno = 1440
 ID = 1441
 helpertype = normal
 keyctrl = 0
-name = "飛び道具破壊ヘルパー"
+name = "ﾑ屠wp["
 ignorehitpause = 1
 persistent = 0
 size.xscale = const(size.xscale)
@@ -340,7 +340,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 17
 ground.hittime = Ifelse(p2statetype = C, 25, 23)
-guard.hittime = 21
+guard.hittime = (Ifelse(p2statetype = C, 25, 23)) - 5
 guard.slidetime = 17
 guard.ctrltime = 21
 ground.velocity = -9.0*const(size.xscale)
@@ -394,13 +394,13 @@ type = posadd
 trigger1 = animelemtime(5) = 0
 x = 8*const(size.xscale)
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 0, 0
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 8
 value = 5100, 0
@@ -498,8 +498,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ジャイアントパームボンバー(大)
+;
+; WCAgp[{o[()
 [Statedef 1420]
 type = S
 movetype= A 
@@ -554,7 +554,7 @@ stateno = 1440
 ID = 1442
 helpertype = normal
 keyctrl = 0
-name = "飛び道具破壊ヘルパー"
+name = "ﾑ屠wp["
 ignorehitpause = 1
 persistent = 0
 size.xscale = const(size.xscale)
@@ -590,7 +590,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 18
 ground.hittime = Ifelse(p2statetype = C, 27, 25)
-guard.hittime = 23
+guard.hittime = (Ifelse(p2statetype = C, 27, 25)) - 5
 guard.slidetime = 18
 guard.ctrltime = 23
 ground.velocity = -9.0*const(size.xscale)
@@ -644,13 +644,13 @@ type = posadd
 trigger1 = animelemtime(5) = 0
 x = 8*const(size.xscale)
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 0, 0
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 8
 value = 5100, 0
@@ -748,8 +748,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ジャイアントパームボンバー(EX)
+;
+; WCAgp[{o[(EX)
 [Statedef 1430]
 type = S
 movetype= A 
@@ -805,7 +805,7 @@ pausemovetime = -1
 supermovetime = -1
 ownpal = 1
 
-[State 1050, 音を鳴らす]
+[State 1050, ﾂらす]
 type = PlaySnd
 trigger1 = time = 1
 value = 2000, 0
@@ -843,7 +843,7 @@ stateno = 1440
 ID = 1443
 helpertype = normal
 keyctrl = 0
-name = "飛び道具破壊ヘルパー"
+name = "ﾑ屠wp["
 ignorehitpause = 1
 persistent = 0
 size.xscale = const(size.xscale)
@@ -872,7 +872,7 @@ guardsound = S3,1
 ground.type = low
 ground.slidetime = 15
 ground.hittime = Ifelse(p2statetype = C, 19, 17)
-guard.hittime = 15
+guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 5
 guard.slidetime = 15
 guard.ctrltime = 15
 ground.velocity = -9.0*const(size.xscale)
@@ -907,7 +907,7 @@ stateno = 1440
 ID = 1444
 helpertype = normal
 keyctrl = 0
-name = "飛び道具破壊ヘルパー"
+name = "ﾑ屠wp["
 ignorehitpause = 1
 persistent = 0
 size.xscale = const(size.xscale)
@@ -936,7 +936,7 @@ guardsound = S3,1
 ground.type = low
 ground.slidetime = 15
 ground.hittime = Ifelse(p2statetype = C, 19, 17)
-guard.hittime = 15
+guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 5
 guard.slidetime = 15
 guard.ctrltime = 15
 ground.velocity = -9.0*const(size.xscale)
@@ -971,7 +971,7 @@ stateno = 1440
 ID = 1445
 helpertype = normal
 keyctrl = 0
-name = "飛び道具破壊ヘルパー"
+name = "ﾑ屠wp["
 ignorehitpause = 1
 persistent = 0
 size.xscale = const(size.xscale)
@@ -1000,7 +1000,7 @@ guardsound = S3,1
 ground.type = low
 ground.slidetime = 15
 ground.hittime = Ifelse(p2statetype = C, 19, 17)
-guard.hittime = 15
+guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 5
 guard.slidetime = 15
 guard.ctrltime = 15
 ground.velocity = -4.0*const(size.xscale),-11.0*const(size.yscale)
@@ -1054,13 +1054,13 @@ type = posadd
 trigger1 = animelemtime(5) = 0
 x = 8*const(size.xscale)
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 0, 2
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 8
 value = 5100, 0
@@ -1163,8 +1163,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;飛び道具破壊ヘルパー
+;
+;ﾑ屠wp[
 [Statedef 1440]
 type = S
 movetype = A
@@ -1233,8 +1233,8 @@ trigger1 = root,stateno != [1400,1430]
 trigger1 = root,stateno != 3210
 trigger2 = root,movetype = H
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;飛び道具破壊ヘルパー(消滅)
+;
+;ﾑ屠wp[()
 [Statedef 1445]
 type = S
 movetype = I
@@ -1245,8 +1245,8 @@ anim = 9999
 type = DestroySelf
 trigger1 = time = 0
 
-;☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
-; モンスターラリアット(小)
+;
+; X^[Abg()
 [Statedef 1500]
 type = S
 movetype= A 
@@ -1315,7 +1315,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 14
 ground.hittime = 16
-guard.hittime = 14
+guard.hittime = (16) - 5
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,5.0*const(size.yscale)
@@ -1372,13 +1372,13 @@ type = velset
 trigger1 = animelemtime(12) = 0
 x = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 0, 3
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 3
 value = 5100, 0
@@ -1390,7 +1390,7 @@ time = 3
 freq = 120
 ampl = 3
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 7
 value = 1, 2
@@ -1441,8 +1441,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(中)
+;
+; X^[Abg()
 [Statedef 1510]
 type = S
 movetype= A 
@@ -1511,7 +1511,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 14
 ground.hittime = 16
-guard.hittime = 14
+guard.hittime = (16) - 5
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,5.0*const(size.yscale)
@@ -1568,13 +1568,13 @@ type = velset
 trigger1 = animelemtime(12) = 0
 x = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 0, 3
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 3
 trigger2 = AnimElem = 8
@@ -1588,7 +1588,7 @@ time = 3
 freq = 120
 ampl = 3
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 7
 value = 1, 2
@@ -1639,8 +1639,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(大)
+;
+; X^[Abg()
 [Statedef 1520]
 type = S
 movetype= A 
@@ -1709,7 +1709,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 14
 ground.hittime = 16
-guard.hittime = 14
+guard.hittime = (16) - 5
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,5.0*const(size.yscale)
@@ -1770,13 +1770,13 @@ type = velset
 trigger1 = animelemtime(16) = 0
 x = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 9
 value = 0, 3
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 3
 trigger2 = AnimElem = 7
@@ -1792,7 +1792,7 @@ time = 3
 freq = 120
 ampl = 3
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 11
 value = 1, 2
@@ -1843,8 +1843,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(EX)
+;
+; X^[Abg(EX)
 [Statedef 1530]
 type = S
 movetype= A 
@@ -1905,7 +1905,7 @@ pausemovetime = -1
 supermovetime = -1
 ownpal = 1
 
-[State 1050, 音を鳴らす]
+[State 1050, ﾂらす]
 type = PlaySnd
 trigger1 = time = 1
 value = 2000, 0
@@ -1961,7 +1961,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = 14
+guard.hittime = (16) - 5
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,-14.0*const(size.yscale)
@@ -2038,14 +2038,14 @@ trigger1 = anim = 1531
 trigger1 = animelemtime(8) >= 0
 x = .90
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = anim = 1531
 trigger1 = AnimElem = 1
 value = 0, 3
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 triggerall = anim = 1530
 trigger1 = AnimElem = 3
@@ -2053,7 +2053,7 @@ trigger2 = AnimElem = 7
 trigger3 = AnimElem = 12
 value = 5100, 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 triggerall = anim = 1531
 trigger1 = AnimElem = 4
@@ -2077,7 +2077,7 @@ time = 3
 freq = 120
 ampl = 3
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = anim = 1531
 trigger1 = AnimElem = 3
@@ -2136,8 +2136,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(ヒット)
+;
+; X^[Abg(qbg)
 [Statedef 1550]
 type = S
 movetype= A
@@ -2240,8 +2240,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(ガード)
+;
+; X^[Abg(K[h)
 [Statedef 1555]
 type = S
 movetype= A
@@ -2289,8 +2289,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(当身)
+;
+; X^[Abg(g)
 [Statedef 1556]
 type = S
 movetype= A
@@ -2345,8 +2345,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(相手喰らい状態)1
+;
+; X^[Abg(轤｢)1
 [Statedef 1560]
 type = A
 movetype= H
@@ -2376,8 +2376,8 @@ type = changestate
 trigger1 = animtime = 0
 value = 1561
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアット(相手喰らい状態)2
+;
+; X^[Abg(轤｢)2
 [Statedef 1561]
 type = A
 movetype= H
@@ -2447,8 +2447,8 @@ type = selfstate
 trigger1 = Pos Y >= 25 && Vel Y > 0 && time > 0
 value = 5100
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアットEX(相手喰らい状態)1
+;
+; X^[AbgEX(轤｢)1
 [Statedef 1570]
 type = A
 movetype= H
@@ -2478,8 +2478,8 @@ type = changestate
 trigger1 = animtime = 0
 value = 1571
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; モンスターラリアットEX(相手喰らい状態)2
+;
+; X^[AbgEX(轤｢)2
 [Statedef 1571]
 type = A
 movetype= H

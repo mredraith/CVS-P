@@ -1170,6 +1170,7 @@ guardsound=s130, 0
 ground.type = High 
 ground.slidetime = 5 
 ground.hittime = 10 
+guard.hittime = (10) - 5
 ground.velocity = -7 
 airguard.velocity = -1.9,-.8 
 air.type = High 

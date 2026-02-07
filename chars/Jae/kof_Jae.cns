@@ -769,6 +769,7 @@ guardsound = s10,7
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 23
+guard.hittime = (23) - 5
 ground.velocity = -8,0
 guard.velocity = -6
 air.velocity = -7,38
@@ -797,6 +798,7 @@ guardsound = s10,7
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 23
+guard.hittime = (23) - 5
 ground.velocity = -8,0
 guard.velocity = -6
 air.velocity = -7,-4
@@ -846,6 +848,7 @@ guardsound = s10,7
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 23
+guard.hittime = (23) - 5
 ground.velocity = -4.5,0
 guard.velocity = -7
 air.velocity = -5,-4
@@ -901,6 +904,7 @@ guardsound = s10,6
 ground.type = High
 ground.slidetime = 8
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -3
 air.type = Low
 air.velocity = -1.8,-2
@@ -961,6 +965,7 @@ sparkxy = -8 + 0 * (var(35) := 155), var(36) := -79
 ground.type = High
 ground.slidetime = 8
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -3
 air.type = Low
 air.velocity = -1.8,-2
@@ -1027,6 +1032,7 @@ sparkxy = -5 + 0 * (var(35) := 155), var(36) := -75
 ground.type = Low 
 ground.slidetime = 10
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = -4
 air.velocity = -2,-3.2
 hitflag = MAF
@@ -1086,6 +1092,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Low 
 ground.slidetime = 10
 ground.hittime = 12
+guard.hittime = (12) - 5
 ground.velocity = -4
 air.velocity = -2,-3.2
 hitflag = MAF
@@ -1145,6 +1152,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -5
 air.type = Low
 air.velocity = -3,-4
@@ -1205,6 +1213,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -3
 air.velocity = -4,-2.5
 hitflag = MAF
@@ -1229,6 +1238,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -6.8
 air.type = Low
 air.velocity = -3,-5
@@ -1293,6 +1303,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -6.5
 air.type = Low
 air.velocity = -4,-2.5
@@ -1360,6 +1371,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -2
 air.velocity = -3,-4
 hitflag = MAF
@@ -1384,6 +1396,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -6.8
 air.type = Low
 air.velocity = -3,-4
@@ -1511,6 +1524,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Low
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -2.5, -8
 air.velocity = -3,-6
 fall.animtype = Hard
@@ -1579,6 +1593,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -3
 air.velocity = -2,-2
 hitflag = MAF
@@ -1639,6 +1654,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Low
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -3
 air.velocity = -2,-2
 hitflag = MAF
@@ -1699,6 +1715,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -6
 air.velocity = -3,-3
 hitflag = MAF
@@ -1758,6 +1775,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = Trip
 ground.slidetime = 18
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -2,-4 
 guard.velocity = -5
 air.velocity = -3,-3
@@ -1820,6 +1838,7 @@ guardsound = s10,6
 ground.type = High
 ground.slidetime = 5
 ground.hittime = 5
+guard.hittime = (5) - 5
 air.hittime = 5
 ground.velocity = -4
 air.velocity = -1.3,-3
@@ -1875,6 +1894,7 @@ guardsound = s10,6
 ground.type = High
 ground.slidetime = 9
 ground.hittime = 9
+guard.hittime = (9) - 5
 air.hittime = 9
 ground.velocity = -4
 air.velocity = -1.3,-3
@@ -1931,6 +1951,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 17
+guard.hittime = (17) - 5
 air.hittime = 15
 ground.velocity = -4
 air.velocity = -3,-3
@@ -1986,6 +2007,7 @@ guardsound = s10,6
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 air.hittime = 18
 ground.velocity = -4
 air.velocity = -3,-3
@@ -3515,7 +3537,7 @@ last = 36
 value = -1
 ignorehitpause = 1
 
-[State -2, 4];ÌøÔ¾ÏµÍ³Ïà¹Ø
+[State -2, 4];Ô¾ÏµÍ³
 type = varadd
 trigger1 = 1
 v = 15
@@ -3642,7 +3664,7 @@ ignorehitpause = 1
  Stateno = 90800
 
 ; (* 'ID = 90801' power bar off mode)
-; (* 'ID = 90801' ¤Ï¥Ñ¥ï©`¥Ð©`·Ç±íÊ¾¥â©`¥É)
+; (* 'ID = 90801' Ï¥Ñ¥`Ð©`Ç±Ê¾`)
 ;
 ;--------------------------------------
 ; blocking/JD system helper set
@@ -3673,7 +3695,7 @@ ignorehitpause = 1
  trigger1 = Helper(99997),StateNo = 99996
  trigger2 = NumHelper(99998)
  trigger2 = Helper(99998),StateNo = 99996
- value = 195500 ;; << ³É¹¦¤·¤¿•r¤Î¥¹¥Æ©`¥È(ÉÏ•ø¤­¿É)
+ value = 195500 ;; << É¹rÎ¥Æ©`(Ï•)
  IgnoreHitPause = 1
 ;--------------------------------------
 ; muteki
@@ -3715,7 +3737,7 @@ value = 0
 ;
 ;---------------------------------------------------------------------------
 
-[State -3, 2];ÌøÔ¾ÏµÍ³Ïà¹Ø(ÆÕÍ¨Ìø)
+[State -3, 2];Ô¾ÏµÍ³(Í¨)
 type = PlaySnd
 triggerall = time = 1
 trigger1 = stateno = 40 
@@ -3723,7 +3745,7 @@ trigger1 = var(15) <= 0
 value = 40, 0
 channel = 3
 
-[State -3, 2];ÌøÔ¾ÏµÍ³Ïà¹Ø£¨´óÌø/Ð¡Ìø£©
+[State -3, 2];Ô¾ÏµÍ³Ø£/Ð¡
 type = PlaySnd
 triggerall = time = 1
 trigger1 = stateno = 40 
@@ -3732,7 +3754,7 @@ value = 40, 1
 channel = 3
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; AH´óÉñµÄ´óÌøÏµÍ³
+; AHÄ´ÏµÍ³
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [State -3, 5]
 type = varset
@@ -4154,7 +4176,7 @@ supermovetime = 255
 ignorehitpause = 1
 
 ;--------------------------------------------------------------
-;¹âÐ§´úÂë¿ªÊ¼
+;Ð§ë¿ªÊ¼
 ;--------------------------------------------------------------
 [State -2]
 type = Helper
@@ -4192,7 +4214,7 @@ persistent = 0
 ignorehitpause = 1
 postype = right
 ;--------------------------------------------------------------
-;¹âÐ§³õÊ¼Î»ÖÃ
+;Ð§Ê¼Î»
 ;--------------------------------------------------------------
 [Statedef 23680]
 type = S
@@ -4236,7 +4258,7 @@ time = -1
 facing = 1
 pos = (1+ifelse(Parent,fvar(36) = 1,-1,0)+ifelse(Parent,fvar(36) = 2,-2,0))*ifelse(Facing = -1,-1,1),0
 ;--------------------------------------------------------------
-;¹âÐ§×ó
+;Ð§
 ;--------------------------------------------------------------
 [Statedef 23681]
 type = S
@@ -4261,7 +4283,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 ;--------------------------------------------------------------
-;¹âÐ§ÓÒ
+;Ð§
 ;--------------------------------------------------------------
 [Statedef 23682]
 type = S
@@ -4286,7 +4308,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 ;--------------------------------------------------------------
-;¹âÐ§´úÂë½áÊø
+;Ð§
 ;--------------------------------------------------------------
 [StateDef 5900]
 type = S

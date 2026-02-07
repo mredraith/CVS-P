@@ -3,7 +3,7 @@
 ; CVS Mature POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -136,6 +136,7 @@ guard.dist = 0
 ground.type = low
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = 0
 air.velocity = 0,0
@@ -642,6 +643,7 @@ guard.dist = 0
 ground.type = low
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = 0
 air.velocity = 0,0
@@ -1205,6 +1207,7 @@ guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 ground.type = High
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = -4
 guard.velocity = -4
@@ -1250,6 +1253,7 @@ guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 ground.type = Low
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = -4
 guard.velocity = -4
@@ -1295,6 +1299,7 @@ guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 ground.type = Low
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = -5,-7.5
 guard.velocity = -8
@@ -1755,6 +1760,7 @@ guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 ground.type = High
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = -4
 guard.velocity = -4
@@ -1802,6 +1808,7 @@ guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 ground.type = Low
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = -4
 guard.velocity = -4
@@ -1850,6 +1857,7 @@ guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 ground.type = Low
 ground.slidetime = 35
 ground.hittime = 35
+guard.hittime = (35) - 5
 guard.ctrltime = 35
 ground.velocity = -5,-7.5
 guard.velocity = -8
@@ -2082,6 +2090,7 @@ guard.pauseTime = 7,7
 ground.type = High
 ground.slidetime = 14
 ground.hittime = 18
+guard.hittime = (18) - 5
 yaccel = .45
 ground.velocity = -4,-5
 air.velocity = -4,-7

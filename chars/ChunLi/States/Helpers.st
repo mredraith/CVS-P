@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Chun-Li by Jmorphman                    |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -246,8 +246,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -296,8 +296,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -635,8 +635,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -683,8 +683,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0

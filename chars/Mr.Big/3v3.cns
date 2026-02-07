@@ -6,73 +6,73 @@
 ;
 
 ;
-; ƒRƒ“ƒXƒ^ƒ“ƒci’è”j
+; RX^ciè”j
 ;---------------------------------------------------------------------------
-; Šî–{ƒf[ƒ^
+; {f[^
 ;---------------------------------------------------------------------------
 [Data]
-life = 1000 ;ƒ‰ƒCƒti‘Ì—ÍƒQ[ƒWjÅ‘å’l
-power = 3000 ;ƒpƒ[ƒQ[ƒWÅ‘å’liƒIƒvƒVƒ‡ƒ“EƒfƒtƒHƒ‹ƒg‚Í3000=Lv.3j
-attack = 100 ;UŒ‚—ÍiƒfƒtƒHƒ‹ƒg‚Í‚P‚O‚O“j
-defence = 100 ;–hŒä—ÍiƒfƒtƒHƒ‹ƒg‚Í‚P‚O‚O“j
-fall.defence_up = 50 ;‰¡‚É“|‚ê‚Ä‚¢‚é‚Éˆê“I‚É‰Á‚¦‚é–hŒä—Íi“j
-lieDown.time = 15 ;‰¡‚É“|‚ê‚Ä‚¢‚éŠÔiƒtƒŒ[ƒ€j
-airjuggle = 15 ;ƒWƒƒƒOƒ‹ƒ|ƒCƒ“ƒgŒÀŠE’liu¬ƒlƒ^.txtvQÆj
-sparkno = 2 ;ƒfƒtƒHƒ‹ƒg‚ÌƒqƒbƒgƒXƒp[ƒNifightfx‚©‚çj
-guard.sparkno = 40 ;ƒfƒtƒHƒ‹ƒg‚ÌƒK[ƒhƒXƒp[ƒNifightfx‚©‚çj
-KO.echo = 0 ;‚j‚n‚Ì‰¹ºi11,0j‚ÉƒGƒR[‚ğŠ|‚¯‚é‚©”Û‚©i0=Š|‚¯‚È‚¢,1=Š|‚¯‚éj
-volume = 0 ;ƒLƒƒƒ‰‚Ì•W€‚Ì‰¹—ÊiÅ¬-255EÅ‘å255j
-IntPersistIndex = 54 ;Ÿ‚Ìƒ‰ƒEƒ“ƒh‚Ö‚¿‰z‚¹‚éuVarv‚ÌƒAƒhƒŒƒX‚Ì”ÍˆÍ‚ğŒˆ‚ß‚éi¦‚Pj
-FloatPersistIndex = 40 ;Ÿ‚Ìƒ‰ƒEƒ“ƒh‚Ö‚¿‰z‚¹‚éuFVarv‚ÌƒAƒhƒŒƒX‚Ì”ÍˆÍ‚ğŒˆ‚ß‚éi¦‚Pj
+life = 1000 ;CtiÌ—ÍƒQ[WjÅ‘l
+power = 3000 ;p[Q[WÅ‘liIvVEftHg3000=Lv.3j
+attack = 100 ;UÍiftHgÍ‚POOj
+defence = 100 ;hÍiftHgÍ‚POOj
+fall.defence_up = 50 ;É“|Ä‚éÉˆêIÉ‰hÍij
+lieDown.time = 15 ;É“|Ä‚éÔit[j
+airjuggle = 15 ;WO|CgEliul^.txtvQÆj
+sparkno = 2 ;ftHgÌƒqbgXp[Nifightfxj
+guard.sparkno = 40 ;ftHgÌƒK[hXp[Nifightfxj
+KO.echo = 0 ;jnÌ‰i11,0jÉƒGR[|é‚©Û‚i0=|È‚,1=|j
+volume = 0 ;LÌ•WÌ‰ÊiÅ-255EÅ‘255j
+IntPersistIndex = 54 ;ÌƒEhÖzuVarvÌƒAhXÌ”ÍˆÍ‚ß‚iPj
+FloatPersistIndex = 40 ;ÌƒEhÖzuFVarvÌƒAhXÌ”ÍˆÍ‚ß‚iPj
 
 ;---------------------------------------------------------------------------
-; ƒTƒCƒY
+; TCY
 ;---------------------------------------------------------------------------
 [Size]
-xscale = .990 ;ƒLƒƒƒ‰‚Ì‰¡‚Ì‘å‚«‚³iâ‘Î’lEfloatj
-yscale = 1.010 ;ƒLƒƒƒ‰‚Ìc‚Ì‘å‚«‚³iâ‘Î’lEfloatj
-ground.back = 25 ;’nã‚É‚¢‚é‚ÌuŒã•û‚Ì•¨—“I‚È•v
-ground.front = 27 ;’nã‚É‚¢‚é‚Ìu‘O•û‚Ì•¨—“I‚È•v
-air.back = 14 ;‹ó’†‚É‚¢‚é‚ÌuŒã•û‚Ì•¨—“I‚È•v
-air.front = 18 ;‹ó’†‚É‚¢‚é‚Ìu‘O•û‚Ì•¨—“I‚È•v
-height = 65 ;ƒLƒƒƒ‰‚Ì•¨—“I‚È‚‚³i‚‚¢‚Ù‚Ç‘Šè‚Í”ò‚Ñ‰z‚µ‚É‚­‚­‚È‚éj
-attack.dist = 160 ;‘Šè‚ªƒK[ƒh‘Ô¨‚É“ü‚éÅ’á‚Ì‹——£
-proj.attack.dist = 90 ;©•ª‚ÌuProjectilev‚É‘Î‚µ‚Ä‘Šè‚ªƒK[ƒh‘Ô¨‚É“ü‚éÅ’á‚Ì‹——£
-proj.doscale = 0 ;xscale‚Æyscale‚ğuProjectilev‚É‚à‰e‹¿‚³‚¹‚é‚©”Û‚©i0=‚³‚¹‚È‚¢E1=‚³‚¹‚éj
-head.pos = 0,-97 ;ƒLƒƒƒ‰‚Ì•W€‚Ì“ª‚ÌÀ•WiBindŒn‚Å“K—p‚³‚ê‚éj
-mid.pos = 4,-65 ;ƒLƒƒƒ‰‚Ì•W€‚Ì‘Ì’†S‚ÌÀ•WiBindŒn‚Å“K—p‚³‚ê‚éj
-shadowoffset = 0 ;‰e‚Ì‚x²•ûŒü‚ÌˆÊ’uÀ•W
-draw.offset = 0,0 ;ƒLƒƒƒ‰‚Ì•\¦À•Wi‚w²,‚x²j
+xscale = .990 ;LÌ‰Ì‘å‚«iÎ’lEfloatj
+yscale = 1.010 ;LÌcÌ‘å‚«iÎ’lEfloatj
+ground.back = 25 ;nÉ‚éÌuÌ•IÈ•v
+ground.front = 27 ;nÉ‚éÌuOÌ•IÈ•v
+air.back = 14 ;ó’†‚É‚éÌuÌ•IÈ•v
+air.front = 18 ;ó’†‚É‚éÌuOÌ•IÈ•v
+height = 65 ;LÌ•IÈiÙ‚Ç‘Í”Ñ‰zÉ‚È‚j
+attack.dist = 160 ;è‚ªK[hÔÉ“Å’Ì‹
+proj.attack.dist = 90 ;ÌuProjectilevÉ‘Î‚Ä‘è‚ªK[hÔÉ“Å’Ì‹
+proj.doscale = 0 ;xscaleyscaleuProjectilevÉ‚eé‚©Û‚i0=È‚E1=j
+head.pos = 0,-97 ;LÌ•WÌ“ÌWiBindnÅ“Kpj
+mid.pos = 4,-65 ;LÌ•WÌ‘Ì’SÌWiBindnÅ“Kpj
+shadowoffset = 0 ;eÌ‚xÌˆÊ’uW
+draw.offset = 0,0 ;LÌ•\Wiw,xj
 
 ;---------------------------------------------------------------------------
-; ˆÚ“®‘¬“x
+; Ú“x
 ;---------------------------------------------------------------------------
 [Velocity]
-walk.fwd = 2.4 ;‘Oi‘¬“xi‚w²E[Statedef 20]‚É“K—p‚³‚ê‚éj
-walk.back = -2.1 ;Œã‘Ş‘¬“xi‚w²E[Statedef 20]‚É“K—p‚³‚ê‚éj
-run.fwd = 4.8,0 ;‘O•û‚É‘–‚é‘¬“xi‚w²,‚x²E[Statedef 100]‚É“K—p‚³‚ê‚éj
-run.back = -6,-4.2 ;Œã•û‚É‘–‚é‘¬“xi‚w²,‚x²E[Statedef 105]‚É“K—p‚³‚ê‚éj
-jump.neu = 0,-9.5 ;‚’¼ƒWƒƒƒ“ƒv‚Ì‘¬“xi‚w²,‚x²E[Statedef 40]‚É“K—p‚³‚ê‚éj
-jump.back = -3.3 ;Œã•ûƒWƒƒƒ“ƒv‚Ì‘¬“xi‚w²E[Statedef 40]‚É“K—p‚³‚ê‚éj
-jump.fwd = 3.3 ;‘O•ûƒWƒƒƒ“ƒv‚Ì‘¬“xi‚w²E[Statedef 40]‚É“K—p‚³‚ê‚éj
-runjump.back = -3,-8.1 ;Œã•û‚É‘–‚Á‚Ä‚©‚ç‚ÌƒWƒƒƒ“ƒv‘¬“xi‚w²,‚x²E[Statedef 40]‚É“K—p‚³‚ê‚éj
-runjump.fwd = 4,-8.1 ;‘O•û‚É‘–‚Á‚Ä‚©‚ç‚ÌƒWƒƒƒ“ƒv‘¬“xi‚w²,‚x²E[Statedef 40]‚É“K—p‚³‚ê‚éj
-airjump.neu = 0,-8.1 ;‹ó’†‚’¼ƒWƒƒƒ“ƒv‘¬“xi‚w²,‚x²E[Statedef 45]‚É“K—p‚³‚ê‚éj
-airjump.back = -2.55 ;‹ó’†Œã•ûƒWƒƒƒ“ƒv‘¬“xi‚w²E[Statedef 45]‚É“K—p‚³‚ê‚éj
-airjump.fwd = 2.5 ;‹ó’†‘O•ûƒWƒƒƒ“ƒv‘¬“xi‚w²E[Statedef 45]‚É“K—p‚³‚ê‚éj
+walk.fwd = 2.4 ;OixiwE[Statedef 20]É“Kpj
+walk.back = -2.1 ;Ş‘xiwE[Statedef 20]É“Kpj
+run.fwd = 4.8,0 ;OÉ‘é‘¬xiw,xE[Statedef 100]É“Kpj
+run.back = -6,-4.2 ;É‘é‘¬xiw,xE[Statedef 105]É“Kpj
+jump.neu = 0,-9.5 ;WvÌ‘xiw,xE[Statedef 40]É“Kpj
+jump.back = -3.3 ;WvÌ‘xiwE[Statedef 40]É“Kpj
+jump.fwd = 3.3 ;OWvÌ‘xiwE[Statedef 40]É“Kpj
+runjump.back = -3,-8.1 ;É‘Ä‚ÌƒWvxiw,xE[Statedef 40]É“Kpj
+runjump.fwd = 4,-8.1 ;OÉ‘Ä‚ÌƒWvxiw,xE[Statedef 40]É“Kpj
+airjump.neu = 0,-8.1 ;ó’†Wvxiw,xE[Statedef 45]É“Kpj
+airjump.back = -2.55 ;ó’†ŒWvxiwE[Statedef 45]É“Kpj
+airjump.fwd = 2.5 ;ó’†‘OWvxiwE[Statedef 45]É“Kpj
 
 ;---------------------------------------------------------------------------
-; ‰^“®ŠÖŒW
+; ^ÖŒW
 ;---------------------------------------------------------------------------
 [Movement]
-airjump.num = 0 ;‹ó’†ƒWƒƒƒ“ƒv‚ªo—ˆ‚é‰ñ”
-airjump.height = 35 ;‹ó’†ƒWƒƒƒ“ƒv‚ªo—ˆ‚éÅ’á‚Ì‚“xi‚x²j
-yaccel = .57 ;‚x²‰Á‘¬“xid—Íj
-stand.friction = .85 ;—§‚Á‚Ä‚¢‚é‚Ì–€CŒW”iƒXƒe[ƒg‚ÌPhysics‚ªuSv‚Ìj
-crouch.friction = .82 ;‚µ‚á‚ª‚ñ‚Å‚¢‚é‚Ì–€CŒW”iƒXƒe[ƒg‚ÌPhysics‚ªuCv‚Ìj
+airjump.num = 0 ;ó’†ƒWvo
+airjump.height = 35 ;ó’†ƒWvoÅ’Ìxixj
+yaccel = .57 ;xxidÍj
+stand.friction = .85 ;Ä‚éÌ–CWiXe[gPhysicsuSvÌj
+crouch.friction = .82 ;á‚ªÅ‚éÌ–CWiXe[gPhysicsuCvÌj
 
 ;
-; Šî–{s“®
+; {s
 ;
 ;---------------------------------------------------------------------------
 ; Stand
@@ -99,7 +99,7 @@ trigger1 = time = 0
 ;trigger2 = Time = 4
 x = 0
 
-[State 0, PosSet];•‚—VƒoƒO‘Îô
+[State 0, PosSet];VoOÎ
 type = PosSet
 trigger1 = alive && Life>0
 trigger1 = abs(Pos Y) > 5
@@ -420,7 +420,7 @@ value = 50
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; Jump Start(AI)‚’¼
+; Jump Start(AI)
 [Statedef 42]
 type = S
 physics = S
@@ -593,10 +593,10 @@ trigger8 = time = 60
 value = 0
 ctrl = 1
 
-[State -1, AI run stop];‹­§ƒXƒgƒbƒv
+[State -1, AI run stop];Xgbv
 type = ChangeState
 triggerall = Stateno = 99
-trigger1 = RoundState = 4 ;ƒ‰ƒEƒ“ƒhI—¹
+trigger1 = RoundState = 4 ;EhI
 value = 0
 ctrl = 1
 
@@ -1196,27 +1196,27 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-;ƒ^ƒCƒ€ƒI[ƒo[i•‰‚¯‚½j
+;^CI[o[ij
 [Statedef 170]
 type = S
 ctrl = 0
 anim = 170
 velset = 0,0
 
-[State 181];‚Í‚Á‚Í‚Á‚Í
+[State 181];Í‚Í‚
 type = PlaySnd
 trigger1 = animelemtime(4)=1
 value = 190,1
 
-[State 170, –³“G]
+[State 170, G]
 type = NotHitBy
-trigger1 = 1 ;ƒgƒŠƒK[‚ğ‰½‚à‘‚©‚¸u1v‚É‚·‚é–‚É‚æ‚èAw–³ğŒ‚Åí‚ÉÀs‚³‚¹‚é–½—ßx‚É‚È‚éB
+trigger1 = 1 ;gK[u1vÉ‚é–É‚AwÅÉsé–½ßxÉ‚È‚B
 value = SCA
 time = 1
 
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-;Ÿ—˜ƒ|[ƒY•ªŠòicommon1.cns‚É‚Í–³‚¢‚¯‚ÇA‚±‚ê‚àƒRƒ‚ƒ“ƒXƒe[ƒgj
+;|[Yicommon1.cnsÉ‚Í–ÇARXe[gj
 [Statedef 180]
 type = S
 
@@ -1232,8 +1232,8 @@ trigger1 = var(2)!=0
 value = 180 + var(2)
 
 ;---------------------------------------------------------------------------
-;Ÿ—˜ƒ|[ƒY
-;‚Ü‚Á‚½‚­ƒOƒŒƒCƒg‚¾‚º
+;|[Y
+;Ü‚OCg
 [Statedef 181]
 type = S
 ctrl = 0
@@ -1241,25 +1241,25 @@ anim = 180
 velset = 0,0
 physics = N
 
-[State 1];ƒJƒƒ‰ŒÅ’è
+[State 1];JÅ’
 type = screenbound
 trigger1 = 1
 value = 1
 movecamera = 1
 
-[State 181, –³“G]
+[State 181, G]
 type = NotHitBy
 trigger1 = 1
 value = SCA
 time = 1
 
-[State 181];‚Í‚Á‚Í‚Á‚Í
+[State 181];Í‚Í‚
 type = PlaySnd
 trigger1 = animelemtime(4)=1
 value = 190,1
 volume = 255
 
-[State 181];‚Ü‚Á‚½‚­ƒOƒŒƒCƒg‚¾‚º
+[State 181];Ü‚OCg
 type = PlaySnd
 trigger1 = animelemtime(11)=30
 value = 180,2
@@ -1271,8 +1271,8 @@ trigger1 = time = [0,180]
 flag = roundnotover
 
 ;---------------------------------------------------------------------------
-;Ÿ—˜ƒ|[ƒY
-;ƒCƒG[ƒC
+;|[Y
+;CG[C
 [Statedef 182]
 type = S
 ctrl = 0
@@ -1280,19 +1280,19 @@ anim = 181
 velset = 0,0
 physics = N
 
-[State 1];ƒJƒƒ‰ŒÅ’è
+[State 1];JÅ’
 type = screenbound
 trigger1 = 1
 value = 1
 movecamera = 1
 
-[State 181, –³“G]
+[State 181, G]
 type = NotHitBy
 trigger1 = 1
 value = SCA
 time = 1
 
-[State 181];ƒCƒG[ƒC
+[State 181];CG[C
 type = PlaySnd
 trigger1 = animelemtime(4)=1
 value = 180,1
@@ -1304,8 +1304,8 @@ trigger1 = time = [0,120]
 flag = roundnotover
 
 ;---------------------------------------------------------------------------
-;Ÿ—˜ƒ|[ƒY
-;ƒtƒ“Iƒtƒ“I
+;|[Y
+;tItI
 [Statedef 183]
 type = S
 ctrl = 0
@@ -1313,19 +1313,19 @@ anim = 183
 velset = 0,0
 physics = N
 
-[State 1];ƒJƒƒ‰ŒÅ’è
+[State 1];JÅ’
 type = screenbound
 trigger1 = 1
 value = 1
 movecamera = 1
 
-[State 181, –³“G]
+[State 181, G]
 type = NotHitBy
 trigger1 = 1
 value = SCA
 time = 1
 
-[State 181];ƒtƒ“I
+[State 181];tI
 type = PlaySnd
 trigger1 = animelemtime(7)=1
 value = 180,0
@@ -1337,14 +1337,14 @@ trigger1 = time = [0,110]
 flag = roundnotover
 
 ;---------------------------------------------------------------------------
-;ƒCƒ“ƒgƒi‡ŠJn‘O‚Ì“oê‰‰oƒAƒNƒVƒ‡ƒ“j
+;CgiJnOÌ“oê‰‰oANVj
 [Statedef 190]
 type = S
 ctrl = 0
 anim = 190
 velset = 0,0
 
-[state 190, ƒŠƒ‡ƒEƒƒo];‘Î‹ÉŒÀ—¬(without ƒ†ƒŠandƒ}ƒ‹ƒR)
+[state 190, Eo];Î‹ÉŒ(without and}R)
 type = ChangeState
 triggerall = time = 0
 trigger1 = p2name = "ryo" || p4name = "ryo"
@@ -1367,7 +1367,7 @@ trigger17 = p2name ="Mrkarate-2nd" || p4name = "Mrkarate-2nd"
 trigger18 = p2name = "King" || p4name = "cvsking"
 value = 192
 
-[state 190, ƒM[ƒX];‘ÎƒM[ƒX
+[state 190, M[X];ÎƒM[X
 type = ChangeState
 triggerall = time = 0
 trigger1 = p2name = "Geese" || p4name = "Geese"
@@ -1381,16 +1381,16 @@ trigger8 = p2name = "GeeseHoward" || p4name = "GeeseHoward"
 trigger9 = p2name = "GEESEHOWARD" || p4name = "GEESEHOWARD"
 value = 193
 
-[state 190, ƒM[ƒX];‘ÎNo.1
+[state 190, M[X];No.1
 type = ChangeState
 triggerall = time = 0
-;----ƒL[ƒXEƒEƒFƒCƒ“uNo.1‚ÍA‰´‚¾Iv----
+;----L[XEEFCuNo.1ÍAIv----
 trigger1 = p2name = "Keith Wayne" || p4name = "Keith Wayne"
-;----ƒ}ƒbƒXƒ‹Eƒpƒ[uƒiƒ“ƒo[ƒ[ƒ“IIv----
+;----}bXEp[uio[[IIv----
 trigger2 = p2name = "Muscle Power" || p4name = "Muscle Power"
 value = 193
 
-;------------------------------------ƒCƒ“ƒgƒìHelper
+;------------------------------------CgHelper
 [State 1000, Helper]
 type = Helper
 Trigger1 = NumHelper(20191)=0
@@ -1420,18 +1420,18 @@ keyctrl = 0
 ownpal = 1
 ;------------------------------------
 
-[State 190, “ÁêŒø‰Ê];‡‚ªŠJn‚·‚é‚Ü‚Å‚Í‚±‚ÌƒRƒ“ƒgƒ[ƒ‰‚ğg‚¨‚¤i¦‚Qj
+[State 190, ];JnÜ‚Å‚Í‚ÌƒRg[giQj
 type = AssertSpecial
 trigger1 = 1
-flag = Intro ;ƒCƒ“ƒgƒ‚Ìó‘Ô
+flag = Intro ;CgÌ
 
-[State 190, ƒXƒe[ƒg•ÏX];ƒAƒjƒ[ƒVƒ‡ƒ“‚ªI‚í‚ê‚Îu’Êí—§‚¿v‚ÌƒXƒe[ƒg‚É•ÏX‚·‚é
+[State 190, Xe[gÏX];Aj[VIÎuÊí—§vÌƒXe[gÉ•ÏX
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 
 ;---------------------------------------------------------------------------
-; ƒCƒ“ƒgƒìA(oŒ»ƒXƒe[ƒg)
+; CgA(oXe[g)
 ; (HELPER)
 [Statedef 20191]
 type = S
@@ -1444,12 +1444,12 @@ poweradd = 0
 ctrl = 0
 sprpriority = 1
 
-[State 1000, NotHitBy];–³“G
+[State 1000, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-[State 190, ƒXƒe[ƒg•ÏX]
+[State 190, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 20192
@@ -1459,7 +1459,7 @@ type = Destroyself
 trigger1 = root,stateno = [191,192]
 
 ;---------------------------------------------------------------------------
-; ƒCƒ“ƒgƒìA(•às~Á–Å)
+; CgA(s~)
 ; (HELPER)
 [Statedef 20192]
 type = S
@@ -1477,7 +1477,7 @@ type = VelSet
 trigger1 = animelem = 5
 x = -1.2
 
-[State 190, ‰¹];”Ş‚Í‚·‚²‚¢‚í‚æc
+[State 190, ];Ş‚Í‚c
 type = PlaySnd
 trigger1 = animelemtime(2)=1
 value = 190,4
@@ -1485,7 +1485,7 @@ channel = 0
 volume = 255
 
 ;-------------------------------------
-;[State -2, ƒfƒoƒbƒN(•Ï”Šm”F)]
+;[State -2, fobN(ÏmF)]
 ;Type = DisplayToClipBoard
 ;Trigger1 = 1
 ;Text = "frontedge=%3d, backedge=%3d"
@@ -1500,7 +1500,7 @@ trigger2 = root,movetype = H
 trigger3 = root,stateno = [191,192]
 
 ;---------------------------------------------------------------------------
-; ƒCƒ“ƒgƒìB(oŒ»ƒXƒe[ƒg)
+; CgB(oXe[g)
 ; (HELPER)
 [Statedef 20193]
 type = S
@@ -1513,12 +1513,12 @@ poweradd = 0
 ctrl = 0
 sprpriority = 2
 
-[State 1000, NotHitBy];–³“G
+[State 1000, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-[State 190, ƒXƒe[ƒg•ÏX]
+[State 190, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 20194
@@ -1528,7 +1528,7 @@ type = Destroyself
 trigger1 = root,stateno = [191,192]
 
 ;---------------------------------------------------------------------------
-; ƒCƒ“ƒgƒìB(•às~Á–Å)
+; CgB(s~)
 ; (HELPER)
 [Statedef 20194]
 type = S
@@ -1547,7 +1547,7 @@ trigger1 = animelem = 3
 x = -1.0
 
 ;-------------------------------------
-;[State -2, ƒfƒoƒbƒN(•Ï”Šm”F)]
+;[State -2, fobN(ÏmF)]
 ;Type = DisplayToClipBoard
 ;Trigger1 = 1
 ;Text = "frontedge=%3d, backedge=%3d"
@@ -1562,57 +1562,57 @@ trigger2 = root,movetype = H
 trigger3 = root,stateno = [191,192]
 
 ;---------------------------------------------------------------------------
-;ƒCƒ“ƒgƒi‘Î‹ÉŒÀ—¬j
+;CgiÎ‹ÉŒj
 [Statedef 192]
 type = S
 ctrl = 0
 anim = 192
 velset = 0,0
 
-[State 190, ‰¹]
+[State 190, ]
 type = PlaySnd
 trigger1 = animelemtime(2)=70
 value = 190,3
 channel = 0
 volume = 255
 
-[State 190, “ÁêŒø‰Ê];‡‚ªŠJn‚·‚é‚Ü‚Å‚Í‚±‚ÌƒRƒ“ƒgƒ[ƒ‰‚ğg‚¨‚¤i¦‚Qj
+[State 190, ];JnÜ‚Å‚Í‚ÌƒRg[giQj
 type = AssertSpecial
 trigger1 = 1
-flag = Intro ;ƒCƒ“ƒgƒ‚Ìó‘Ô
+flag = Intro ;CgÌ
 
-[State 190, ƒXƒe[ƒg•ÏX];ƒAƒjƒ[ƒVƒ‡ƒ“‚ªI‚í‚ê‚Îu’Êí—§‚¿v‚ÌƒXƒe[ƒg‚É•ÏX‚·‚é
+[State 190, Xe[gÏX];Aj[VIÎuÊí—§vÌƒXe[gÉ•ÏX
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 
 ;---------------------------------------------------------------------------
-;ƒCƒ“ƒgƒi‘ÎƒM[ƒXorNo.1j
+;CgiÎƒM[XorNo.1j
 [Statedef 193]
 type = S
 ctrl = 0
 anim = 193
 velset = 0,0
 
-[State 190, ‰¹]
+[State 190, ]
 type = PlaySnd
 trigger1 = animelemtime(5)=1
 value = 190,2
 channel = 0
 volume = 255
 
-[State 190, “ÁêŒø‰Ê];‡‚ªŠJn‚·‚é‚Ü‚Å‚Í‚±‚ÌƒRƒ“ƒgƒ[ƒ‰‚ğg‚¨‚¤i¦‚Qj
+[State 190, ];JnÜ‚Å‚Í‚ÌƒRg[giQj
 type = AssertSpecial
 trigger1 = 1
-flag = Intro ;ƒCƒ“ƒgƒ‚Ìó‘Ô
+flag = Intro ;CgÌ
 
-[State 190, ƒXƒe[ƒg•ÏX];ƒAƒjƒ[ƒVƒ‡ƒ“‚ªI‚í‚ê‚Îu’Êí—§‚¿v‚ÌƒXƒe[ƒg‚É•ÏX‚·‚é
+[State 190, Xe[gÏX];Aj[VIÎuÊí—§vÌƒXe[gÉ•ÏX
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 
 ;---------------------------------------------------------------------------
-;’§”­
+;
 [Statedef 195]
 type = S
 movetype = I
@@ -1623,30 +1623,30 @@ velset = 0,0
 poweradd = 100
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelemtime(4) = 1
 value = 195, random%2
 channel = 0
 volume = 255
 
-[State 195, ƒRƒ“ƒgƒ[ƒ‹]
+[State 195, Rg[]
 type = CtrlSet
 trigger1 = animelemtime(6)>3
-value = 1 ;ƒL[ƒRƒ“ƒgƒ[ƒ‹‚ª‰Â”\‚É‚È‚éB
+value = 1 ;L[Rg[Â”\É‚È‚B
 
-[State 195, ƒXƒe[ƒg•ÏX]
+[State 195, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;
-; ’ÊíUŒ‚‹Z
+; ÊUZ
 ;
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-; ‰“‹——£—§‚¿EãEƒpƒ“ƒ`E‚Ì“®ì
+; EEp`EÌ“
 [Statedef 200]
 type = S
 movetype= A
@@ -1658,7 +1658,7 @@ anim = 200
 poweradd = 0
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -1666,12 +1666,12 @@ value = 200, 0
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 value = 300, 0
 
-[State 200, ƒqƒbƒg’è‹`]
+[State 200, qbg`]
 type = HitDef
 trigger1 = AnimElem = 2
 attr = S, NA
@@ -1690,20 +1690,21 @@ guardsound = s120, 0
 ground.type = High
 ground.slidetime = 9
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -5
 airguard.velocity = -2,-2
 air.type = High
 air.velocity = -2,-1.5
 air.hittime = 10
 
-[State 200, ƒXƒe[ƒg•ÏX]
+[State 200, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; ‹ß‹——£—§‚¿EãEƒpƒ“ƒ`E‚Ì“®ì
+; ß‹EEp`EÌ“
 [Statedef 205]
 type = S
 movetype= A
@@ -1715,7 +1716,7 @@ anim = 205
 poweradd = 0
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -1723,12 +1724,12 @@ value = 200, 0
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 value = 300, 0
 
-[State 200, ƒqƒbƒg’è‹`]
+[State 200, qbg`]
 type = HitDef
 trigger1 = AnimElem = 2
 attr = S, NA
@@ -1747,13 +1748,14 @@ guardsound = s120, 0
 ground.type = High
 ground.slidetime = 9
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -5
 airguard.velocity = -2,-2
 air.type = High
 air.velocity = -1.4,-3
 air.hittime = 12
 
-[State 205, ƒXƒe[ƒg•ÏX]
+[State 205, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
@@ -1761,7 +1763,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-;‰“‹——£‹­ƒpƒ“ƒ`
+;p`
 [Statedef 210]
 type = S
 movetype= A
@@ -1773,7 +1775,7 @@ velset = 0,0
 anim = 210
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 4
 trigger1 = random<500
@@ -1781,7 +1783,7 @@ value = 200, 2
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 5
 value = 300, 0
@@ -1814,7 +1816,7 @@ trigger1 = animelemtime(5)<0
 ;edge = 64,64
 player = 25,0
 
-[State 210, ƒqƒbƒg’è‹`]
+[State 210, qbg`]
 type = HitDef
 trigger1 = animelem = 5
 attr = S, NA
@@ -1832,13 +1834,14 @@ guardsound = s120,0
 ground.type = low
 ground.slidetime = 16
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -6
 guard.velocity = -7
 air.velocity = -2.5,-4
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 
-[State 210, ƒqƒbƒg’è‹`]
+[State 210, qbg`]
 type = HitDef
 trigger1 = animelem = 9
 attr = S, NA
@@ -1856,17 +1859,18 @@ guardsound = s120,0
 ground.type = low
 ground.slidetime = 13
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -8
 air.velocity = -2.5,-4
 
-[State 210, ƒXƒe[ƒg•ÏX]
+[State 210, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; ‹ß‹——£—§‚¿E‹­Eƒpƒ“ƒ`E‚Ì“®ì
+; ß‹EEp`EÌ“
 [Statedef 215]
 type = S
 movetype= A
@@ -1878,7 +1882,7 @@ velset = 0,0
 anim = 215
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 3
 trigger1 = random<500
@@ -1886,12 +1890,12 @@ value = 200, 1
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 value = 300, 1
 
-[State 215, ƒqƒbƒg’è‹`]
+[State 215, qbg`]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
@@ -1909,19 +1913,20 @@ guardsound = s120,0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 19
+guard.hittime = (19) - 5
 ground.velocity = -8
 air.type = High
 air.velocity = -2.5,-4
 air.hittime = 20
 
-[State 210, ƒXƒe[ƒg•ÏX]
+[State 210, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;‰“‹——£ —§‚¿EãEƒLƒbƒN
+; EELbN
 [Statedef 230]
 type = S
 movetype= A
@@ -1933,7 +1938,7 @@ velset = 0,0
 anim = 230
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -1941,12 +1946,12 @@ value = 200, 0
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 value = 300, 2
 
-[State 230, ƒqƒbƒg’è‹`]
+[State 230, qbg`]
 type = HitDef
 trigger1 = animelem = 3
 attr = S, NA
@@ -1964,17 +1969,18 @@ guardsound = s120,0
 ground.type = high
 ground.slidetime = 10
 ground.hittime = 11
+guard.hittime = (11) - 5
 ground.velocity = -5
 air.velocity = -2.5,-3.5
 
-[State 230, ƒXƒe[ƒg•ÏX]
+[State 230, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;‹ß‹——£ —§‚¿EãEƒLƒbƒN
+;ß‹ EELbN
 [Statedef 235]
 type = S
 movetype= A
@@ -1986,7 +1992,7 @@ velset = 0,0
 anim = 235
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -1994,12 +2000,12 @@ value = 200, 0
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 value = 300, 2
 
-[State 230, ƒqƒbƒg’è‹`]
+[State 230, qbg`]
 type = HitDef
 trigger1 = animelem = 3
 attr = S, NA
@@ -2017,17 +2023,18 @@ guardsound = s120,0
 ground.type = Low
 ground.slidetime = 10
 ground.hittime = 11
+guard.hittime = (11) - 5
 ground.velocity = -4.5
 air.velocity = -2.5,-3.5
 
-[State 230, ƒXƒe[ƒg•ÏX]
+[State 230, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;‰“‹——£ —§‚¿E‹­EƒLƒbƒN
+; EELbN
 [Statedef 240]
 type = S
 movetype= A
@@ -2039,7 +2046,7 @@ velset = 0,0
 anim = 240
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -2047,12 +2054,12 @@ value = 200, 2
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 3
 value = 300, 2
 
-[State 240, ƒqƒbƒg’è‹`]
+[State 240, qbg`]
 type = HitDef
 trigger1 = animelem = 5
 attr = S, NA
@@ -2070,20 +2077,21 @@ guardsound = s120,0
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -9
 airguard.velocity = -2.3,-1.8
 air.type = High
 air.velocity = -2.5,-3
 air.hittime = 20
 
-[State 240, ƒXƒe[ƒg•ÏX]
+[State 240, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; ‹ß‹——£—§‚¿‹­ƒLƒbƒN
+; ß‹LbN
 [Statedef 245]
 type = S
 movetype= A
@@ -2095,7 +2103,7 @@ velset = 0,0
 anim = 245
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -2103,12 +2111,12 @@ value = 200, 2
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 3
 value = 300, 2
 
-[State 240, ƒqƒbƒg’è‹`]
+[State 240, qbg`]
 type = HitDef
 trigger1 = AnimElem = 4
 attr = S, NA
@@ -2126,6 +2134,7 @@ guardsound = s120,0
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -6
 guard.ctrltime = 14
 air.velocity = -3,-5
@@ -2133,27 +2142,27 @@ airguard.velocity = -2.6,-2
 air.type = High
 air.hittime = 22
 
-[State 240, ƒXƒe[ƒg•ÏX]
+[State 240, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; ƒ`ƒ‡ƒbƒvƒXƒeƒBƒbƒN
+; `bvXeBbN
 [Statedef 250]
 type = S 
 movetype= A 
 physics = S 
 juggle = 8 
 ;Commonly-used controllers:
-velset = 0,0 ;‚±‚ÌƒXƒe[ƒg‚ªn‚Ü‚Á‚½‚ÉˆÚ“®‚·‚é‚©i0,0‚Å“®‚©‚È‚¢j
-ctrl = 0 ;‚±‚ÌƒXƒe[ƒg’†‚É‘¼‚ÌƒRƒ}ƒ“ƒh‚ğó‚¯•t‚¯‚é‚©(1‚Åó‚¯•t‚¯‚é)
-anim = 250 ;‚±‚ÌƒXƒe[ƒg‚Å•\¦‚·‚éƒXƒvƒ‰ƒCƒgƒXƒe[ƒg”Ô†(0‚Å•Ï‰»–³‚µ)
-poweradd = 0 ;‚±‚ÌƒXƒe[ƒg‚ğg‚Á‚½‚Ìƒpƒ[‘‰Á—Ê(0‚Å•Ï‰»–³‚µ)
-sprpriority = 2 ;•\¦‚µ‚½ŠG‚Ìd‚È‚è‹ï‡(2ˆê”Ô‘O@0’Êí@-1‰œ)
+velset = 0,0 ;ÌƒXe[gnÜ‚ÉˆÚ“é‚©i0,0Å“È‚j
+ctrl = 0 ;ÌƒXe[gÉ‘ÌƒR}hó‚¯•té‚©(1Åó‚¯•t)
+anim = 250 ;ÌƒXe[gÅ•\XvCgXe[gÔ(0Å•Ï‰)
+poweradd = 0 ;ÌƒXe[ggÌƒp[(0Å•Ï‰)
+sprpriority = 2 ;\GÌdÈ‚ï‡(2Ô‘O@0Ê@-1)
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 3
 trigger2 = animelem = 8
@@ -2161,13 +2170,13 @@ value = 200, 5
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 trigger2 = animelem = 7
 value = 300, 0
 
-[State 215, ƒqƒbƒg’è‹`]
+[State 215, qbg`]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
@@ -2185,6 +2194,7 @@ guardsound = s120,0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = 0
 air.type = High
 air.velocity = -2.5,-4
@@ -2194,28 +2204,28 @@ id = 250
 [State 250, HitDef]
 type = HitDef
 trigger1 = animelem = 4
-attr = S, NA ;—§‚¿ó‘Ô‚ÅA’Êí‚ÌUŒ‚(‚“‚Í—§‚¿A‚‚Í’ÊíAa‚ÍUŒ‚‚ğ•\‚·)
-damage = 33, 0 ;ƒ_ƒ[ƒW—Êi¶‚ª“–‚½‚Á‚½A‰E‚ÍƒK[ƒh‚µ‚½j
+attr = S, NA ;Ô‚ÅAÊÌU(Í—AÍ’ÊAaÍU\)
+damage = 33, 0 ;_[WÊiAEÍƒK[hj
 getpower = 45, 45
-animtype = hard ;“–‚Ä‚½‚Ì‘Šè‚Ìƒ|[ƒYilight/midium/hard/backj‚©‚ç‘I‘ğ
-guardflag = H ;ƒK[ƒh‚Å‚«‚éó‘Ôi‚a‚Í‘S‚Ä‚Ìó‘Ô‚ÅƒK[ƒh‰Â”\j
-hitflag = MAF ;“–‚Ä‚é–‚Ì‚Å‚«‚éğŒ
-priority = 4, Hit ;UŒ‚‚Ì—DæŒ i0ã‚¢@4’Êí@7‹­‚¢
-pausetime = 12, 12 ;UŒ‚‚ª“–‚½‚Á‚½‚Ìd’¼ŠÔi¶‚ª©•ªA‰E‚ª‘Šèj
+animtype = hard ;Ä‚Ì‘Ìƒ|[Yilight/midium/hard/backjI
+guardflag = H ;K[hÅ‚ÔiaÍ‘SÄ‚ÌÔ‚ÅƒK[hÂ”\j
+hitflag = MAF ;Ä‚é–Ì‚Å‚
+priority = 4, Hit ;UÌ—DæŒ i0ã‚¢@4Ê@7
+pausetime = 12, 12 ;UÌdÔiAEj
 sparkno = -1 + 0 * (var(33) := 8010)
-guard.sparkno = -1 + 0 * (var(34) := 8000) ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ÌƒXƒvƒ‰ƒCƒgƒXƒe[ƒgi–³‚¯‚ê‚Î0j
-sparkxy = -23 + 0 * (var(35) := 89), var(36):= -70 ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ğ•\¦‚·‚éêŠi‘Šè‚ÌÀ•W‚Åj
-hitsound = s1, 2 ;ƒqƒbƒg‚µ‚½‚Ì‰¹i‚“*,*‚É‚·‚é‚Æ©•ª‚Ì‰¹‚ğg‚¤j
-guardsound = s120, 0 ;ƒK[ƒh‚µ‚½‚Ì‰¹i“¯ãj
-ground.type = low ;‘Šè‚Ì‚­‚ç‚Á‚½êŠiHighF“ªA‘Ì, LowF‘«, TripF‘«•¥‚¢j
-ground.slidetime = 18 ;‘Šè‚ªŒã‚É‚·‚×‚éŠÔ
-ground.hittime = 20 ;ƒRƒ“ƒ{‚ªŒq‚ª‚éŠÔi‚‚­‚µ‚·‚¬‚È‚¢–j
-ground.velocity = -8.5 ;’nã‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
-guard.hittime = 20
+guard.sparkno = -1 + 0 * (var(34) := 8000) ;qbgGtFNgÌƒXvCgXe[gi0j
+sparkxy = -23 + 0 * (var(35) := 89), var(36):= -70 ;qbgGtFNg\êŠiÌWÅj
+hitsound = s1, 2 ;qbgÌ‰i*,*É‚ÆÌ‰gj
+guardsound = s120, 0 ;K[hÌ‰ij
+ground.type = low ;Ì‚êŠiHighFA, LowF, TripFj
+ground.slidetime = 18 ;è‚ªÉ‚×‚é
+ground.hittime = 20 ;R{qéÔiÈ‚j
+guard.hittime = (20 ;R{qéÔiÈ‚j) - 5
+ground.velocity = -8.5 ;nÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
 guard.velocity = -9
-air.type = High ;‹ó’†‚Å‘Šè‚ª‚­‚ç‚Á‚½êŠiã‚Æ“¯‚¶j
-air.velocity = -5,-3 ;‹ó’†‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
-air.hittime = 24 ;‹ó’†‚ÅƒRƒ“ƒ{‚ªŒq‚ª‚éŠÔ
+air.type = High ;ó’†‚Å‘è‚ªêŠiÆ“j
+air.velocity = -5,-3 ;ó’†‚ÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
+air.hittime = 24 ;ó’†‚ÅƒR{qé
 id = 250
 
 [State 250, 3]
@@ -2225,20 +2235,20 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; ƒ`ƒ‡ƒbƒvƒXƒeƒBƒbƒNiƒLƒƒƒ“ƒZƒ‹j
+; `bvXeBbNiLZj
 [Statedef 251]
 type = S 
 movetype= A 
 physics = S 
 juggle = 8 
 ;Commonly-used controllers:
-velset = 0,0 ;‚±‚ÌƒXƒe[ƒg‚ªn‚Ü‚Á‚½‚ÉˆÚ“®‚·‚é‚©i0,0‚Å“®‚©‚È‚¢j
-ctrl = 0 ;‚±‚ÌƒXƒe[ƒg’†‚É‘¼‚ÌƒRƒ}ƒ“ƒh‚ğó‚¯•t‚¯‚é‚©(1‚Åó‚¯•t‚¯‚é)
-anim = 251 ;‚±‚ÌƒXƒe[ƒg‚Å•\¦‚·‚éƒXƒvƒ‰ƒCƒgƒXƒe[ƒg”Ô†(0‚Å•Ï‰»–³‚µ)
-poweradd = 0 ;‚±‚ÌƒXƒe[ƒg‚ğg‚Á‚½‚Ìƒpƒ[‘‰Á—Ê(0‚Å•Ï‰»–³‚µ)
-sprpriority = 2 ;•\¦‚µ‚½ŠG‚Ìd‚È‚è‹ï‡(2ˆê”Ô‘O@0’Êí@-1‰œ)
+velset = 0,0 ;ÌƒXe[gnÜ‚ÉˆÚ“é‚©i0,0Å“È‚j
+ctrl = 0 ;ÌƒXe[gÉ‘ÌƒR}hó‚¯•té‚©(1Åó‚¯•t)
+anim = 251 ;ÌƒXe[gÅ•\XvCgXe[gÔ(0Å•Ï‰)
+poweradd = 0 ;ÌƒXe[ggÌƒp[(0Å•Ï‰)
+sprpriority = 2 ;\GÌdÈ‚ï‡(2Ô‘O@0Ê@-1)
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 3
 trigger2 = animelem = 8
@@ -2246,13 +2256,13 @@ value = 200, 5
 channel = 0
 volume = 255
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 trigger2 = animelem = 7
 value = 300, 0
 
-[State 215, ƒqƒbƒg’è‹`]
+[State 215, qbg`]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
@@ -2270,6 +2280,7 @@ guardsound = s120,0
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = 0
 air.type = High
 air.velocity = -2.5,-4
@@ -2279,28 +2290,28 @@ id = 250
 [State 250, HitDef]
 type = HitDef
 trigger1 = animelem = 4
-attr = S, NA ;—§‚¿ó‘Ô‚ÅA’Êí‚ÌUŒ‚(‚“‚Í—§‚¿A‚‚Í’ÊíAa‚ÍUŒ‚‚ğ•\‚·)
-damage = 25, 0 ;ƒ_ƒ[ƒW—Êi¶‚ª“–‚½‚Á‚½A‰E‚ÍƒK[ƒh‚µ‚½j
+attr = S, NA ;Ô‚ÅAÊÌU(Í—AÍ’ÊAaÍU\)
+damage = 25, 0 ;_[WÊiAEÍƒK[hj
 getpower = 30, 30
-animtype = hard ;“–‚Ä‚½‚Ì‘Šè‚Ìƒ|[ƒYilight/midium/hard/backj‚©‚ç‘I‘ğ
-guardflag = M ;ƒK[ƒh‚Å‚«‚éó‘Ôi‚a‚Í‘S‚Ä‚Ìó‘Ô‚ÅƒK[ƒh‰Â”\j
-hitflag = MAF ;“–‚Ä‚é–‚Ì‚Å‚«‚éğŒ
-priority = 4, Hit ;UŒ‚‚Ì—DæŒ i0ã‚¢@4’Êí@7‹­‚¢
-pausetime = 12, 12 ;UŒ‚‚ª“–‚½‚Á‚½‚Ìd’¼ŠÔi¶‚ª©•ªA‰E‚ª‘Šèj
+animtype = hard ;Ä‚Ì‘Ìƒ|[Yilight/midium/hard/backjI
+guardflag = M ;K[hÅ‚ÔiaÍ‘SÄ‚ÌÔ‚ÅƒK[hÂ”\j
+hitflag = MAF ;Ä‚é–Ì‚Å‚
+priority = 4, Hit ;UÌ—DæŒ i0ã‚¢@4Ê@7
+pausetime = 12, 12 ;UÌdÔiAEj
 sparkno = -1 + 0 * (var(33) := 8010)
-guard.sparkno = -1 + 0 * (var(34) := 8000) ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ÌƒXƒvƒ‰ƒCƒgƒXƒe[ƒgi–³‚¯‚ê‚Î0j
-sparkxy = -23 + 0 * (var(35) := 89), var(36):= -70 ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ğ•\¦‚·‚éêŠi‘Šè‚ÌÀ•W‚Åj
-hitsound = s1, 2 ;ƒqƒbƒg‚µ‚½‚Ì‰¹i‚“*,*‚É‚·‚é‚Æ©•ª‚Ì‰¹‚ğg‚¤j
-guardsound = s120, 0 ;ƒK[ƒh‚µ‚½‚Ì‰¹i“¯ãj
-ground.type = low ;‘Šè‚Ì‚­‚ç‚Á‚½êŠiHighF“ªA‘Ì, LowF‘«, TripF‘«•¥‚¢j
-ground.slidetime = 18 ;‘Šè‚ªŒã‚É‚·‚×‚éŠÔ
-ground.hittime = 20 ;ƒRƒ“ƒ{‚ªŒq‚ª‚éŠÔi‚‚­‚µ‚·‚¬‚È‚¢–j
-ground.velocity = -7 ;’nã‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
-guard.hittime = 20
+guard.sparkno = -1 + 0 * (var(34) := 8000) ;qbgGtFNgÌƒXvCgXe[gi0j
+sparkxy = -23 + 0 * (var(35) := 89), var(36):= -70 ;qbgGtFNg\êŠiÌWÅj
+hitsound = s1, 2 ;qbgÌ‰i*,*É‚ÆÌ‰gj
+guardsound = s120, 0 ;K[hÌ‰ij
+ground.type = low ;Ì‚êŠiHighFA, LowF, TripFj
+ground.slidetime = 18 ;è‚ªÉ‚×‚é
+ground.hittime = 20 ;R{qéÔiÈ‚j
+guard.hittime = (20 ;R{qéÔiÈ‚j) - 5
+ground.velocity = -7 ;nÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
 guard.velocity = -9
-air.type = High ;‹ó’†‚Å‘Šè‚ª‚­‚ç‚Á‚½êŠiã‚Æ“¯‚¶j
-air.velocity = -5,-3 ;‹ó’†‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
-air.hittime = 24 ;‹ó’†‚ÅƒRƒ“ƒ{‚ªŒq‚ª‚éŠÔ
+air.type = High ;ó’†‚Å‘è‚ªêŠiÆ“j
+air.velocity = -5,-3 ;ó’†‚ÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
+air.hittime = 24 ;ó’†‚ÅƒR{qé
 id = 250
 
 [State 250, 3]
@@ -2310,20 +2321,20 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; ‚Ó‚Á”ò‚Î‚µUŒ‚
+; Ó‚Î‚U
 [Statedef 290]
 type = S
 movetype= A
 physics = S
 juggle = 14
 ;Commonly-used controllers:
-velset = 0,0 ;‚±‚ÌƒXƒe[ƒg‚ªn‚Ü‚Á‚½‚ÉˆÚ“®‚·‚é‚©i0,0‚Å“®‚©‚È‚¢j
-ctrl = 0 ;‚±‚ÌƒXƒe[ƒg’†‚É‘¼‚ÌƒRƒ}ƒ“ƒh‚ğó‚¯•t‚¯‚é‚©(1‚Åó‚¯•t‚¯‚é)
-anim = 290 ;‚±‚ÌƒXƒe[ƒg‚Å•\¦‚·‚éƒXƒvƒ‰ƒCƒgƒXƒe[ƒg”Ô†(0‚Å•Ï‰»–³‚µ)
+velset = 0,0 ;ÌƒXe[gnÜ‚ÉˆÚ“é‚©i0,0Å“È‚j
+ctrl = 0 ;ÌƒXe[gÉ‘ÌƒR}hó‚¯•té‚©(1Åó‚¯•t)
+anim = 290 ;ÌƒXe[gÅ•\XvCgXe[gÔ(0Å•Ï‰)
 poweradd = 0
-sprpriority = 2 ;•\¦‚µ‚½ŠG‚Ìd‚È‚è‹ï‡(2ˆê”Ô‘O@0’Êí@-1‰œ)
+sprpriority = 2 ;\GÌdÈ‚ï‡(2Ô‘O@0Ê@-1)
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 6
 value = 200, 6
@@ -2343,25 +2354,26 @@ x = 12
 [State 290, 1]
 type = HitDef
 trigger1 = animelem = 7
-attr = S, NA ;—§‚¿ó‘Ô‚ÅA’Êí‚ÌUŒ‚(‚“‚Í—§‚¿A‚‚Í’ÊíAa‚ÍUŒ‚‚ğ•\‚·)
-damage = 133, 0 ;ƒ_ƒ[ƒW—Êi¶‚ª“–‚½‚Á‚½A‰E‚ÍƒK[ƒh‚µ‚½j
+attr = S, NA ;Ô‚ÅAÊÌU(Í—AÍ’ÊAaÍU\)
+damage = 133, 0 ;_[WÊiAEÍƒK[hj
 getpower = 121, 121
-animtype = back ;“–‚Ä‚½‚Ì‘Šè‚Ìƒ|[ƒYilight/midium/hard/backj‚©‚ç‘I‘ğ
-guardflag = M ;ƒK[ƒh‚Å‚«‚éó‘Ôi‚a‚Í‘S‚Ä‚Ìó‘Ô‚ÅƒK[ƒh‰Â”\j
-hitflag = MAF ;“–‚Ä‚é–‚Ì‚Å‚«‚éğŒ
-priority = 4, Hit ;UŒ‚‚Ì—DæŒ i0ã‚¢@4’Êí@7‹­‚¢
-pausetime = 13, 13 ;UŒ‚‚ª“–‚½‚Á‚½‚Ìd’¼ŠÔi¶‚ª©•ªA‰E‚ª‘Šèj
+animtype = back ;Ä‚Ì‘Ìƒ|[Yilight/midium/hard/backjI
+guardflag = M ;K[hÅ‚ÔiaÍ‘SÄ‚ÌÔ‚ÅƒK[hÂ”\j
+hitflag = MAF ;Ä‚é–Ì‚Å‚
+priority = 4, Hit ;UÌ—DæŒ i0ã‚¢@4Ê@7
+pausetime = 13, 13 ;UÌdÔiAEj
 sparkno = -1 + 0 * (var(33) := 8010)
-guard.sparkno = -1 + 0 * (var(34) := 8000) ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ÌƒXƒvƒ‰ƒCƒgƒXƒe[ƒgi–³‚¯‚ê‚Î0j
-sparkxy = -25 + 0 * (var(35) := 89), var(36):= -72 ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ğ•\¦‚·‚éêŠi‘Šè‚ÌÀ•W‚Åj
-hitsound = s1, 4 ;ƒqƒbƒg‚µ‚½‚Ì‰¹i‚“*,*‚É‚·‚é‚Æ©•ª‚Ì‰¹‚ğg‚¤j
-guardsound = s121, 0 ;ƒK[ƒh‚µ‚½‚Ì‰¹i“¯ãj
-ground.type = high ;‘Šè‚Ì‚­‚ç‚Á‚½êŠiHighF“ªA‘Ì, LowF‘«, TripF‘«•¥‚¢j
+guard.sparkno = -1 + 0 * (var(34) := 8000) ;qbgGtFNgÌƒXvCgXe[gi0j
+sparkxy = -25 + 0 * (var(35) := 89), var(36):= -72 ;qbgGtFNg\êŠiÌWÅj
+hitsound = s1, 4 ;qbgÌ‰i*,*É‚ÆÌ‰gj
+guardsound = s121, 0 ;K[hÌ‰ij
+ground.type = high ;Ì‚êŠiHighFA, LowF, TripFj
 ground.slidetime = 18
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -9
-air.type = high ;‹ó’†‚Å‘Šè‚ª‚­‚ç‚Á‚½êŠiã‚Æ“¯‚¶j
-air.velocity = -7,-6.5 ;‹ó’†‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
+air.type = high ;ó’†‚Å‘è‚ªêŠiÆ“j
+air.velocity = -7,-6.5 ;ó’†‚ÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
 fall = 0
 fall.recover = 0
 yaccel = .48
@@ -2374,7 +2386,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; ƒK[ƒhƒLƒƒƒ“ƒZƒ‹‚Ó‚Á”ò‚Î‚µUŒ‚
+; K[hLZÓ‚Î‚U
 [Statedef 291]
 type = S
 movetype= A
@@ -2382,12 +2394,12 @@ physics = S
 juggle = 14
 poweradd= -1000
 ;Commonly-used controllers:
-velset = 0,0 ;‚±‚ÌƒXƒe[ƒg‚ªn‚Ü‚Á‚½‚ÉˆÚ“®‚·‚é‚©i0,0‚Å“®‚©‚È‚¢j
-ctrl = 0 ;‚±‚ÌƒXƒe[ƒg’†‚É‘¼‚ÌƒRƒ}ƒ“ƒh‚ğó‚¯•t‚¯‚é‚©(1‚Åó‚¯•t‚¯‚é)
-anim = 291 ;‚±‚ÌƒXƒe[ƒg‚Å•\¦‚·‚éƒXƒvƒ‰ƒCƒgƒXƒe[ƒg”Ô†(0‚Å•Ï‰»–³‚µ)
-sprpriority = 2 ;•\¦‚µ‚½ŠG‚Ìd‚È‚è‹ï‡(2ˆê”Ô‘O@0’Êí@-1‰œ)
+velset = 0,0 ;ÌƒXe[gnÜ‚ÉˆÚ“é‚©i0,0Å“È‚j
+ctrl = 0 ;ÌƒXe[gÉ‘ÌƒR}hó‚¯•té‚©(1Åó‚¯•t)
+anim = 291 ;ÌƒXe[gÅ•\XvCgXe[gÔ(0Å•Ï‰)
+sprpriority = 2 ;\GÌdÈ‚ï‡(2Ô‘O@0Ê@-1)
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 5
 value = 200, 4
@@ -2399,12 +2411,12 @@ type = PlaySnd
 trigger1 = animelem = 6
 value = 300, 1
 
-[State 291, NotHitBy];–³“G
+[State 291, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-[State 291, EnvColor];ƒtƒ‰ƒbƒVƒ…
+[State 291, EnvColor];tbV
 type = EnvColor
 trigger1 = movehit = 1
 time = 2
@@ -2416,25 +2428,26 @@ ignorehitpause = 1
 [State 290, HitDef]
 type = HitDef
 trigger1 = animelem = 7
-attr = S, NA ;—§‚¿ó‘Ô‚ÅA’Êí‚ÌUŒ‚(‚“‚Í—§‚¿A‚‚Í’ÊíAa‚ÍUŒ‚‚ğ•\‚·)
-damage = 50, 0 ;ƒ_ƒ[ƒW—Êi¶‚ª“–‚½‚Á‚½A‰E‚ÍƒK[ƒh‚µ‚½j
+attr = S, NA ;Ô‚ÅAÊÌU(Í—AÍ’ÊAaÍU\)
+damage = 50, 0 ;_[WÊiAEÍƒK[hj
 getpower = 0, 0
-animtype = back ;“–‚Ä‚½‚Ì‘Šè‚Ìƒ|[ƒYilight/midium/hard/backj‚©‚ç‘I‘ğ
-guardflag = M ;ƒK[ƒh‚Å‚«‚éó‘Ôi‚a‚Í‘S‚Ä‚Ìó‘Ô‚ÅƒK[ƒh‰Â”\j
-hitflag = MAF ;“–‚Ä‚é–‚Ì‚Å‚«‚éğŒ
-priority = 4, Hit ;UŒ‚‚Ì—DæŒ i0ã‚¢@4’Êí@7‹­‚¢
-pausetime = 13, 13 ;UŒ‚‚ª“–‚½‚Á‚½‚Ìd’¼ŠÔi¶‚ª©•ªA‰E‚ª‘Šèj
+animtype = back ;Ä‚Ì‘Ìƒ|[Yilight/midium/hard/backjI
+guardflag = M ;K[hÅ‚ÔiaÍ‘SÄ‚ÌÔ‚ÅƒK[hÂ”\j
+hitflag = MAF ;Ä‚é–Ì‚Å‚
+priority = 4, Hit ;UÌ—DæŒ i0ã‚¢@4Ê@7
+pausetime = 13, 13 ;UÌdÔiAEj
 sparkno = -1 + 0 * (var(33) := 8010)
-guard.sparkno = -1 + 0 * (var(34) := 8000) ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ÌƒXƒvƒ‰ƒCƒgƒXƒe[ƒgi–³‚¯‚ê‚Î0j
-sparkxy = -25 + 0 * (var(35) := 89), var(36):= -57 ;ƒqƒbƒgƒGƒtƒFƒNƒg‚ğ•\¦‚·‚éêŠi‘Šè‚ÌÀ•W‚Åj
-hitsound = s1, 4 ;ƒqƒbƒg‚µ‚½‚Ì‰¹i‚“*,*‚É‚·‚é‚Æ©•ª‚Ì‰¹‚ğg‚¤j
-guardsound = s121, 0 ;ƒK[ƒh‚µ‚½‚Ì‰¹i“¯ãj
-ground.type = high ;‘Šè‚Ì‚­‚ç‚Á‚½êŠiHighF“ªA‘Ì, LowF‘«, TripF‘«•¥‚¢j
-ground.slidetime = 15 ;‘Šè‚ªŒã‚É‚·‚×‚éŠÔ
-ground.hittime = 20 ;ƒRƒ“ƒ{‚ªŒq‚ª‚éŠÔi‚‚­‚µ‚·‚¬‚È‚¢–j
-ground.velocity = -7,-6 ;’nã‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
-air.type = high ;‹ó’†‚Å‘Šè‚ª‚­‚ç‚Á‚½êŠiã‚Æ“¯‚¶j
-air.velocity = -7,-6 ;‹ó’†‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
+guard.sparkno = -1 + 0 * (var(34) := 8000) ;qbgGtFNgÌƒXvCgXe[gi0j
+sparkxy = -25 + 0 * (var(35) := 89), var(36):= -57 ;qbgGtFNg\êŠiÌWÅj
+hitsound = s1, 4 ;qbgÌ‰i*,*É‚ÆÌ‰gj
+guardsound = s121, 0 ;K[hÌ‰ij
+ground.type = high ;Ì‚êŠiHighFA, LowF, TripFj
+ground.slidetime = 15 ;è‚ªÉ‚×‚é
+ground.hittime = 20 ;R{qéÔiÈ‚j
+guard.hittime = (20 ;R{qéÔiÈ‚j) - 5
+ground.velocity = -7,-6 ;nÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
+air.type = high ;ó’†‚Å‘è‚ªêŠiÆ“j
+air.velocity = -7,-6 ;ó’†‚ÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
 fall = 1
 fall.recover = 0
 yaccel = .45
@@ -2448,7 +2461,7 @@ ctrl = 1
 
 ;
 ;---------------------------------------------------------------------------
-;‚µ‚á‚ª‚İãƒpƒ“ƒ`
+;á‚ªİp`
 [Statedef 400]
 type = C
 movetype= A
@@ -2460,7 +2473,7 @@ ctrl = 0
 anim = 400
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -2468,12 +2481,12 @@ value = 200, 0
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 value = 300, 0
 
-[State 400, ƒqƒbƒg’è‹`]
+[State 400, qbg`]
 type = HitDef
 trigger1 = animelem = 2
 attr = C, NA
@@ -2491,18 +2504,19 @@ guardsound = s120,0
 ground.type = Low
 ground.slidetime = 8
 ground.hittime = 11
+guard.hittime = (11) - 5
 ground.velocity = -4.5
 air.velocity = -1.5,-3
 
-[State 400, ƒXƒe[ƒg•ÏX]
+[State 400, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 11 ;‚µ‚á‚ª‚ŞƒXƒe[ƒg‚ÖiƒRƒ‚ƒ“ƒXƒe[ƒgj
+value = 11 ;á‚ªŞƒXe[gÖiRXe[gj
 ctrl = 1
 
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-;‚µ‚á‚ª‚İ‹­ƒpƒ“ƒ`
+;á‚ªİ‹p`
 [Statedef 410]
 type = C
 movetype= A
@@ -2514,7 +2528,7 @@ ctrl = 0
 anim = 410
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 5
 trigger1 = random<500
@@ -2522,12 +2536,12 @@ value = 200, 1
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 4
 value = 300, 1
 
-[State 440, ƒqƒbƒg’è‹`]
+[State 440, qbg`]
 type = HitDef
 trigger1 = animelem = 5
 attr = C, NA
@@ -2541,23 +2555,24 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -25 + 0 * (var(35) := 89), var(36):= -17
 hitsound = s1,3
 guardsound = s120,0
-ground.type = Trip ;‚±‚ÌUŒ‚‚ğH‚ç‚¤‚Æ‘Šè‚Í‚Á”ò‚×‚ÎuƒRƒP‚éƒAƒjƒv‚É‚È‚é
+ground.type = Trip ;ÌUHç‚¤Æ‘Í×‚ÎuRPAjvÉ‚È‚
 ground.slidetime = 17
 ground.hittime = 22
+guard.hittime = (22) - 5
 ground.velocity = -3.5,-4
 air.velocity = -4,-4
 guard.velocity = -7.5
 fall = 1
 fall.recover = 0
 
-[State 410, ƒXƒe[ƒg•ÏX]
+[State 410, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;‚µ‚á‚ª‚İãƒLƒbƒN
+;á‚ªİLbN
 [Statedef 430]
 type = C
 movetype= A
@@ -2569,7 +2584,7 @@ ctrl = 0
 anim = 430
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 2
 trigger1 = random<500
@@ -2577,12 +2592,12 @@ value = 200, 0
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 3
 value = 300, 2
 
-[State 430, ƒqƒbƒg’è‹`]
+[State 430, qbg`]
 type = HitDef
 trigger1 = animelem = 3
 attr = C, NA
@@ -2600,12 +2615,13 @@ guardsound = s120,0
 ground.type = Low
 ground.slidetime = 8
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -4.5
 air.velocity = -2,-3
 down.velocity = -5,0
 down.hittime = 20
 
-[State 430, ƒXƒe[ƒg•ÏX]
+[State 430, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 11
@@ -2613,7 +2629,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-;‚µ‚á‚ª‚İ‹­ƒLƒbƒN
+;á‚ªİ‹LbN
 [Statedef 440]
 type = C
 movetype= A
@@ -2625,7 +2641,7 @@ ctrl = 0
 anim = 440
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 3
 trigger1 = random<500
@@ -2633,12 +2649,12 @@ value = 200, 2
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 4
 value = 300, 3
 
-[State 410, ˆê”­–Ú‚Ìƒqƒbƒg’è‹`]
+[State 410, ê”­Ú‚Ìƒqbg`]
 type = HitDef
 trigger1 = AnimElem = 4
 attr = C, NA
@@ -2656,10 +2672,11 @@ guardsound = s120,0
 ground.type = low
 ground.slidetime = 15
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8
 air.velocity = -3,-4
 
-[State 440, ƒXƒe[ƒg•ÏX]
+[State 440, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 11
@@ -2668,7 +2685,7 @@ ctrl = 1
 ;
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-;ƒWƒƒƒ“ƒvãƒpƒ“ƒ`
+;Wvp`
 [Statedef 600]
 type = A
 movetype= A
@@ -2679,7 +2696,7 @@ ctrl = 0
 anim = ifelse(vel x, 605, 600)
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 4
 trigger1 = random<500
@@ -2687,12 +2704,12 @@ value = 200, 0
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 5
 value = 300, 0
 
-[State 600, ƒqƒbƒg’è‹`]
+[State 600, qbg`]
 type = HitDef
 trigger1 = animelem = 3
 attr = A, NA
@@ -2709,11 +2726,12 @@ guardsound = s120,0
 ground.type = high
 ground.slidetime = 9
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -4
 air.velocity = -4,-3
 
 ;---------------------------------------------------------------------------
-;ƒWƒƒƒ“ƒv‹­ƒpƒ“ƒ`
+;Wvp`
 [Statedef 610]
 type = A
 movetype= A
@@ -2724,7 +2742,7 @@ ctrl = 0
 anim = 610
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 1
 trigger1 = random<500
@@ -2732,12 +2750,12 @@ value = 200, 1
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 value = 300, 1
 
-[State 610, ƒqƒbƒg’è‹`]
+[State 610, qbg`]
 type = HitDef
 trigger1 = animelem = 3
 attr = A, NA
@@ -2755,11 +2773,12 @@ animtype = hard
 ground.type = high
 ground.slidetime = 17
 ground.hittime = 19
+guard.hittime = (19) - 5
 ground.velocity = -6
 air.velocity = -4,-4
 
 ;---------------------------------------------------------------------------
-;ƒWƒƒƒ“ƒvãƒLƒbƒN
+;WvLbN
 [Statedef 630]
 type = A
 movetype= A
@@ -2770,7 +2789,7 @@ ctrl = 0
 anim = 630
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 1
 trigger1 = random<500
@@ -2778,12 +2797,12 @@ value = 200, 1
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 3
 value = 300, 2
 
-[State 630, ƒqƒbƒg’è‹`]
+[State 630, qbg`]
 type = HitDef
 trigger1 = animelem = 2
 attr = A, NA
@@ -2801,11 +2820,12 @@ animtype = hard
 ground.type = high
 ground.slidetime = 10
 ground.hittime = 10
+guard.hittime = (10) - 5
 ground.velocity = -5
 air.velocity = -4,-4
 
 ;---------------------------------------------------------------------------
-;ƒWƒƒƒ“ƒv‹­ƒLƒbƒN
+;WvLbN
 [Statedef 640]
 type = A
 movetype= A
@@ -2816,7 +2836,7 @@ ctrl = 0
 anim = ifelse(vel x, 645, 640)
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 trigger1 = random<500
@@ -2824,12 +2844,12 @@ value = 200, 4
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 value = 300, 3
 
-[State 640, ƒqƒbƒg’è‹`]
+[State 640, qbg`]
 type = HitDef
 trigger1 = animelem = 4
 attr = A, NA
@@ -2847,11 +2867,12 @@ animtype = hard
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 19
+guard.hittime = (19) - 5
 ground.velocity = -6
 air.velocity = -5,-4
 
 ;---------------------------------------------------------------------------
-;‹ó’†‚Ó‚Á‚Æ‚Î‚µ
+;ó’†‚Ó‚Æ‚Î‚
 [Statedef 690]
 type = A
 movetype= A
@@ -2862,19 +2883,19 @@ ctrl = 0
 anim = 690
 sprpriority = 2
 
-[State 200, ‰¹‚ğ–Â‚ç‚·]
+[State 200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 3
 value = 200, 3
 channel = 0
 volume = 255
 
-[State 400, ‰¹‚ğ–Â‚ç‚·]
+[State 400, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 2
 value = 300, 1
 
-[State 690, ƒqƒbƒg’è‹`]
+[State 690, qbg`]
 type = HitDef
 trigger1 = animelem = 3
 attr = A, NA
@@ -2892,16 +2913,17 @@ animtype = hard
 ground.type = low
 ground.slidetime = 18
 ground.hittime = 20
-ground.velocity = -9 ;’nã‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
-air.type = High ;‹ó’†‚Å‘Šè‚ª‚­‚ç‚Á‚½êŠiã‚Æ“¯‚¶j
-air.velocity = -6,-5 ;‹ó’†‚ÅUŒ‚‚ğ‚­‚ç‚Á‚½ê‡‚Ì‘Šè‚ÌˆÚ“®ó‹µi‚˜‚Æ‚™‚Å¬”“_‰Âj
+guard.hittime = (20) - 5
+ground.velocity = -9 ;nÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
+air.type = High ;ó’†‚Å‘è‚ªêŠiÆ“j
+air.velocity = -6,-5 ;ó’†‚ÅUê‡Ì‘ÌˆÚ“ó‹µiÆ‚Å_Âj
 fall = 0
 fall.recover = 0
 id = 290
 yaccel = .48
 
 ;
-;‰ñ”ğ
+;
 ;--- Dodge ---
 [Statedef 700]
 type = S
@@ -3147,12 +3169,12 @@ value = 0
 ctrl = 1
 
 ;
-; “Š‚°‹Z
+; Z
 ;
 ;---------------------------------------------------------------------------
 ;---------------------------------------------------------------------------
-;“Š‚°
-;ƒnƒCƒŠƒtƒgƒXƒ‹[
+;
+;nCtgX[
 [Statedef 800]
 type = S
 movetype= A
@@ -3163,32 +3185,32 @@ ctrl = 0
 anim = 800
 sprpriority = 2
 
-[State 800, ƒqƒbƒg’è‹`i“Š‚°—pj]
+[State 800, qbg`ipj]
 type = HitDef
 trigger1 = Time = 0
 attr = S, NT
 hitflag = M-
 priority = 1, Miss
-sparkno = -1 ;-‚ğ‚Â‚¯‚ê‚ÎƒXƒp[ƒNƒGƒtƒFƒNƒg‚Í–³‚¢
+sparkno = -1 ;-Â‚ÎƒXp[NGtFNgÍ–
 sparkxy = -15,-80
 p1sprpriority = 1
-p2sprpriority = 0 ;UŒ‚‚ª“–‚½‚Á‚½‚É‘Šè‚Ì‰æ‘œ•\¦—Dæ“x‚ğ0‚É‚µ‚Ü‚·
+p2sprpriority = 0 ;UÉ‘Ì‰æ‘œ\Dx0É‚Ü‚
 p1facing = 1
 p2facing = 1
 p1stateno = 801
 p2stateno = 810
-guard.dist = 0 ;‘Šè‚ÌƒK[ƒh‘Ô¨‚É“ü‚é‹——£‚ğ‚O‚É‚µ‚Ä‚é‚Ì‚ÅAƒK[ƒh•s‰Â
+guard.dist = 0 ;ÌƒK[hÔÉ“é‹—OÉ‚Ä‚Ì‚ÅAK[hs
 fall = 1
 id = 800
 
-[State 800, ƒXƒe[ƒg•ÏX]
+[State 800, Xe[gÏX]
 type = ChangeState
 Trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒnƒCƒŠƒtƒgƒXƒ‹[i¬Œ÷j
+;nCtgX[ij
 [Statedef 801]
 type = S
 movetype= A
@@ -3197,31 +3219,31 @@ anim = 801
 juggle = 0
 sprpriority = 2
 
-[State 810, ‰¹‚ğ–Â‚ç‚·];’Í‚İ—p
+[State 810, Â‚ç‚·];Í‚İ—p
 type = PlaySnd
 trigger1 = AnimElem = 1
 value = 800, 0
 
-[State 810, ‰¹‚ğ–Â‚ç‚·];ƒOƒbƒiƒC
+[State 810, Â‚ç‚·];ObiC
 type = PlaySnd
 trigger1 = AnimElem = 9
 value = 800, 1
 channel = 0
 volume = 255
 
-[State 600, ‰¹‚ğ–Â‚ç‚·];ƒhƒ“I
+[State 600, Â‚ç‚·];hI
 type = PlaySnd
 trigger1 = animelemtime(9)=1
 value = 1,6
 
-[state 1000, TargetState];ÄƒƒbƒN
+[state 1000, TargetState];ÄƒbN
 type = TargetState
 trigger1 = time = 0
 trigger1 = NumTarget(800)
 trigger1 = Target(800),stateno!=810
 value = 810
 
-[State 801, Explod];’Í‚İƒXƒp[ƒN
+[State 801, Explod];Í‚İƒXp[N
 type = Explod
 trigger1 = animelem = 1
 anim = 4012
@@ -3229,17 +3251,17 @@ ID = 4012
 postype = p1
 pos = 34*(1-(prevstateno=802)*2), -78
 facing = 1
-sprpriority = 4 ; •\¦—Dæ“x
-bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 1 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 1 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 4 ; \Dx
+bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 1 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 1 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 ;supermovetime = 9999
 ;pausemovetime = 9999
 
-[State 801, Explod];ÕŒ‚‰œ
+[State 801, Explod];ÕŒ
 type = Explod
 trigger1 = animelemtime(9) = 0
 anim = 4051
@@ -3251,7 +3273,7 @@ sprpriority = 0
 ownpal = 1
 removeongethit = 1
 
-[State 801, Explod];ÕŒ‚è‘O
+[State 801, Explod];ÕŒO
 type = Explod
 trigger1 = animelemtime(9) = 4
 anim = 4050
@@ -3263,62 +3285,62 @@ sprpriority = 4
 ownpal = 1
 removeongethit = 1
 
-[State 1000, NotHitBy];–³“G
+[State 1000, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-[State 801, •¨—“I‚ÈƒLƒƒƒ‰‚Ì•]
+[State 801, IÈƒLÌ•]
 type = Width
 trigger1 = time = 0
-edge = 60,60 ;‰æ–Ê’[‚ğ‰Ÿ‚·•‚ğ•Ï‚¦‚éiƒIƒŒƒ“ƒW‚Ìüj
+edge = 60,60 ;Ê’[Ï‚iIWÌj
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u1]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u1]
 type = Targetbind
 trigger1 = time = 0
 pos = 35,0
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u2]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u2]
 type = Targetbind
 trigger1 = animelem = 2
 pos = 26,-87
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u3]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u3]
 type = Targetbind
 trigger1 = animelem = 3
 pos = 28,-112
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u4]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u4]
 type = Targetbind
 trigger1 = animelem = 4
 pos = 22,-114
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u5]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u5]
 type = Targetbind
 trigger1 = animelem = 5
 pos = 25,-114
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u6]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u6]
 type = Targetbind
 trigger1 = animelem = 6
 pos = 19,-128
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u7]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u7]
 type = Targetbind
 trigger1 = animelem = 7
 pos = 19,-118
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u8]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u8]
 type = Targetbind
 trigger1 = animelem = 8
 pos = 53,-97
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u9]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u9]
 type = Targetbind
 trigger1 = animelem = 9
 pos = 74,-20
 
-[State 810, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u10]
+[State 810, Í‚ñ‚¾‘ÌˆÊ’u10]
 type = Targetbind
 trigger1 = animelem = 10
 pos = 70,0
@@ -3333,21 +3355,21 @@ phase = 95
 persistent = 0
 ignorehitpause = 1
 
-[State 810, ’Í‚ñ‚¾‘Šè‚Ìƒ‰ƒCƒt‘Œ¸]
+[State 810, Í‚ñ‚¾‘ÌƒCt]
 type = TargetLifeAdd
 trigger1 = AnimElem = 9
-absolute = 1 ;UŒ‚^–hŒä–³‹
+absolute = 1 ;U^hä–³
 value = -100
 
-[State 810, ƒXƒe[ƒg•ÏX]
+[State 810, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;“Š‚°
-;ƒnƒCƒŠƒtƒgƒXƒ‹[‚°(Œã•û)
+;
+;nCtgX[()
 [Statedef 802]
 type = S
 movetype= A
@@ -3358,32 +3380,32 @@ ctrl = 0
 anim = 800
 sprpriority = 2
 
-[State 800, ƒqƒbƒg’è‹`i“Š‚°—pj]
+[State 800, qbg`ipj]
 type = HitDef
 trigger1 = Time = 0
 attr = S, NT
 hitflag = M-
 priority = 1, Miss
-sparkno = -1 ;-‚ğ‚Â‚¯‚ê‚ÎƒXƒp[ƒNƒGƒtƒFƒNƒg‚Í–³‚¢
+sparkno = -1 ;-Â‚ÎƒXp[NGtFNgÍ–
 sparkxy = -15,-80
 p1sprpriority = 1
-p2sprpriority = 0 ;UŒ‚‚ª“–‚½‚Á‚½‚É‘Šè‚Ì‰æ‘œ•\¦—Dæ“x‚ğ0‚É‚µ‚Ü‚·
+p2sprpriority = 0 ;UÉ‘Ì‰æ‘œ\Dx0É‚Ü‚
 p1facing = -1
 p2facing = 1
 p1stateno = 801
 p2stateno = 810
-guard.dist = 0 ;‘Šè‚ÌƒK[ƒh‘Ô¨‚É“ü‚é‹——£‚ğ‚O‚É‚µ‚Ä‚é‚Ì‚ÅAƒK[ƒh•s‰Â
+guard.dist = 0 ;ÌƒK[hÔÉ“é‹—OÉ‚Ä‚Ì‚ÅAK[hs
 fall = 1
 id = 800
 
-[State 800, ƒXƒe[ƒg•ÏX]
+[State 800, Xe[gÏX]
 type = ChangeState
 Trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒnƒCƒŠƒtƒgƒXƒ‹[i‘Šèj
+;nCtgX[ij
 [Statedef 810]
 type = A
 movetype= H
@@ -3391,13 +3413,13 @@ physics = N
 velset = 0,0
 
 ;---------------------------------------------
-[State 1050, SelfState];Helper‚Í•Ô‹p
+[State 1050, SelfState];HelperÍ•Ô‹p
 type = SelfState
 trigger1 = ishelper
 value = PrevStateNo
 ;---------------------------------------------
 
-[State 810, ‘Šè‚ÌƒAƒjƒ•ÏX]
+[State 810, ÌƒAjÏX]
 type = ChangeAnim2
 trigger1 = Time = 0
 value = 810
@@ -3420,10 +3442,10 @@ value = 5100
 
 ;---------------------------------------------------------------------------
 ;
-; •KE‹Z
+; KEZ
 ;
 ;---------------------------------------------------------------------------
-;ãƒOƒ‰ƒ“ƒhƒuƒ‰ƒXƒ^[
+;OhuX^[
 [Statedef 1000]
 type = S
 movetype= A
@@ -3435,14 +3457,14 @@ anim = 1000
 ctrl = 0
 sprpriority = 2
 
-[State 700, ‰¹‚ğ–Â‚ç‚·]
+[State 700, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 4
 value = 1000, 0
 channel = 0
 volume = 255
 
-[State 700, ‰¹‚ğ–Â‚ç‚·]
+[State 700, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 6
 value = 1000, 1
@@ -3452,7 +3474,7 @@ type = PosAdd
 trigger1 = animelem = 14
 x = 4
 
-;------------------------------------‰Î‰ÔƒGƒtƒFƒNƒg
+;------------------------------------Î‰ÔƒGtFNg
 [State 1000, Explod]
 type = Explod
 Trigger1 = NumExplod(1040) = 0
@@ -3462,13 +3484,13 @@ ID = 1040
 postype = p1
 pos = 0,0
 facing = 1
-sprpriority = 3 ; •\¦—Dæ“x
-;bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 1 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 0 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 3 ; \Dx
+;bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 1 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 0 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 ;supermovetime = 9999
 ;pausemovetime = 9999
 ;------------------------------------
@@ -3476,20 +3498,20 @@ ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
 type = Projectile
 trigger1 = animelem = 7
 projID = 1000 ; ProjID
-projanim = 1050 ; Projectile‚ÌƒAƒjƒ
-projhitanim = 1051 ; Á–ÅƒAƒjƒ, -1: •ÏX‚È‚µ
+projanim = 1050 ; ProjectileÌƒAj
+projhitanim = 1051 ; ÅƒAj, -1: ÏXÈ‚
 projremanim = -1
 projscale = 1, 1
-projremove = 1 ; 0: ƒqƒbƒgÁ–Å‚µ‚È‚¢, 1: Á–Å
+projremove = 1 ; 0: qbgÅ‚È‚, 1: 
 projremovetime = 29
-projhits = 1 ; ƒqƒbƒg”
-projpriority = 1 ; Proj—Dæ“x
-projsprpriority = 4 ; •\¦—Dæ“x
+projhits = 1 ; qbg
+projpriority = 1 ; ProjDx
+projsprpriority = 4 ; \Dx
 air.juggle = 4
 ;projremovetime = 25
-offset = 53, 0 ; oŒ»ˆÊ’u
-velocity = 0.8 ; ‰‘¬“x
-ownpal = 1 ; “Æ©ƒpƒŒ(ƒoƒO—L)
+offset = 53, 0 ; oÊ’u
+velocity = 0.8 ; x
+ownpal = 1 ; Æp(oOL)
 postype = p1
 attr = S, SP
 damage = 106, 15
@@ -3535,31 +3557,31 @@ pauseMoveTime = 65535
 superMoveTime = 65535
 ignoreHitPause = 1
 ;------------------------------------
-[State 1000, Varset];ƒqƒbƒg”»’èƒŠƒZƒbƒg
+[State 1000, Varset];qbgèƒŠZbg
 type = Varset
 trigger1 = animtime = 0
 trigger2 = time = 0
 trigger3 = animelemtime(12)>=0
 var(10) = 0
 
-[State 1000, Varset];ƒK[ƒh”»’è
+[State 1000, Varset];K[h
 type = Varset
 trigger1 = ProjGuardedTime(1000)=1
 var(10) = 2
 
-[State 1000, Varset];ƒqƒbƒg”»’è
+[State 1000, Varset];qbg
 type = Varset
 trigger1 = ProjHitTime(1000)=1
 var(10) = 1
 ;------------------------------------
-[State 1000, ƒXƒe[ƒg•ÏX]
+[State 1000, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;‹­ƒOƒ‰ƒ“ƒhƒuƒ‰ƒXƒ^[
+;OhuX^[
 [Statedef 1010]
 type = S
 movetype= A
@@ -3571,14 +3593,14 @@ anim = 1010
 ctrl = 0
 sprpriority = 2
 
-[State 700, ‰¹‚ğ–Â‚ç‚·]
+[State 700, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 4
 value = 1000, 0
 channel = 0
 volume = 255
 
-[State 700, ‰¹‚ğ–Â‚ç‚·]
+[State 700, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 6
 value = 1000, 1
@@ -3604,7 +3626,7 @@ type = StateTypeSet
 Trigger1 = animelem = 8
 Physics = S
 
-;------------------------------------‰Î‰ÔƒGƒtƒFƒNƒg
+;------------------------------------Î‰ÔƒGtFNg
 [State 1000, Explod]
 type = Explod
 Trigger1 = NumExplod(1040) = 0
@@ -3614,13 +3636,13 @@ ID = 1040
 postype = p1
 pos = 0,0
 facing = 1
-sprpriority = 3 ; •\¦—Dæ“x
-;bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 1 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 0 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 3 ; \Dx
+;bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 1 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 0 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 ;supermovetime = 9999
 ;pausemovetime = 9999
 ;------------------------------------
@@ -3628,20 +3650,20 @@ ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
 type = Projectile
 trigger1 = animelem = 7
 projID = 1000 ; ProjID
-projanim = 1050 ; Projectile‚ÌƒAƒjƒ
-projhitanim = 1051 ; Á–ÅƒAƒjƒ, -1: •ÏX‚È‚µ
+projanim = 1050 ; ProjectileÌƒAj
+projhitanim = 1051 ; ÅƒAj, -1: ÏXÈ‚
 projremanim = -1
 projscale = 1, 1
-projremove = 1 ; 0: ƒqƒbƒgÁ–Å‚µ‚È‚¢, 1: Á–Å
+projremove = 1 ; 0: qbgÅ‚È‚, 1: 
 projremovetime = 29
-projhits = 1 ; ƒqƒbƒg”
-projpriority = 1 ; Proj—Dæ“x
-projsprpriority = 4 ; •\¦—Dæ“x
+projhits = 1 ; qbg
+projpriority = 1 ; ProjDx
+projsprpriority = 4 ; \Dx
 air.juggle = 4
 ;projremovetime = 25
-offset = 53, 0 ; oŒ»ˆÊ’u
-velocity = 1.5 ; ‰‘¬“x
-ownpal = 1 ; “Æ©ƒpƒŒ(ƒoƒO—L)
+offset = 53, 0 ; oÊ’u
+velocity = 1.5 ; x
+ownpal = 1 ; Æp(oOL)
 postype = p1
 attr = S, SP
 damage = 106, 15
@@ -3687,31 +3709,31 @@ pauseMoveTime = 65535
 superMoveTime = 65535
 ignoreHitPause = 1
 ;------------------------------------
-[State 1000, Varset];ƒqƒbƒg”»’èƒŠƒZƒbƒg
+[State 1000, Varset];qbgèƒŠZbg
 type = Varset
 trigger1 = animtime = 0
 trigger2 = time = 0
 trigger3 = animelemtime(12)>=0
 var(10) = 0
 
-[State 1000, Varset];ƒK[ƒh”»’è
+[State 1000, Varset];K[h
 type = Varset
 trigger1 = ProjGuardedTime(1000)=1
 var(10) = 2
 
-[State 1000, Varset];ƒqƒbƒg”»’è
+[State 1000, Varset];qbg
 type = Varset
 trigger1 = ProjHitTime(1000)=1
 var(10) = 1
 ;------------------------------------
-[State 1000, ƒXƒe[ƒg•ÏX]
+[State 1000, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€in“®j
+;NCW[hinj
 [Statedef 1100]
 type = S
 movetype= A
@@ -3723,14 +3745,14 @@ anim = 1100
 ctrl = 0
 sprpriority = 2
 
-[State 700, ‰¹‚ğ–Â‚ç‚·]
+[State 700, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 1
 value = 1100, 0
 channel = 0
 volume = 255
 
-[State 1100, VarSet];v11~13‚ÌƒŠƒZƒbƒg
+[State 1100, VarSet];v11~13ÌƒZbg
 type = VarRangeSet
 trigger1 = time = 0
 value = 0
@@ -3743,7 +3765,7 @@ trigger1 = animtime = 0
 value = 1101
 
 ;---------------------------------------------------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€(˜A‘Å)
+;NCW[h(A)
 [Statedef 1101]
 type = S
 movetype= A
@@ -3755,18 +3777,18 @@ anim = 1101
 ctrl = 0
 sprpriority = 2
 
-[State 1100, ‰¹‚ğ–Â‚ç‚·]
+[State 1100, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 3
 trigger2 = AnimElem = 9
 value = 300, 1
 ;------------------------------------
-[State 1100, VarSet];’Ç‰ÁƒRƒ}ƒ“ƒh”»’è•Ï”ƒŠƒZƒbƒg
+[State 1100, VarSet];Ç‰R}hÏZbg
 type = VarSet
 trigger1 = var(11)
 var(11) = 0
 
-[State 1100, VarSet];’Ç‰ÁƒRƒ}ƒ“ƒh”»’è
+[State 1100, VarSet];Ç‰R}h
 type = VarSet
 triggerall = var(11) = 0
 triggerall = animelemtime(10)<0
@@ -3777,17 +3799,17 @@ trigger3 = var(59)>0
 trigger3 = random<10*var(59)
 var(11) = 1
 
-[State 1100, VarSet];’Ç‰ÁƒRƒ}ƒ“ƒh¬—§‰ñ””»’è
+[State 1100, VarSet];Ç‰R}hñ””
 type = VarAdd
 trigger1 = var(11) = 1
 var(12) = 1
 
-[State 1100, VarSet];’ÇŒ‚‰ñ”§ŒÀ
+[State 1100, VarSet];ÇŒñ”
 type = VarAdd
 trigger1 = time = 0
 var(13) = 1
 ;------------------------------------
-[State 1201, ƒqƒbƒg’è‹`]
+[State 1201, qbg`]
 type = HitDef
 trigger1 = animelem = 4
 trigger2 = animelem = 10
@@ -3807,6 +3829,7 @@ guardsound = s121,0
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 25
+guard.hittime = (25) - 5
 ground.velocity = -3.5
 guard.velocity = -5
 air.hittime = 99
@@ -3819,14 +3842,14 @@ fall.recovertime = 45
 id = 1100+(var(13))
 nochainid = 290
 
-[State 1100, ƒXƒe[ƒg•ÏX];’ÇŒ‚
+[State 1100, Xe[gÏX];ÇŒ
 type = ChangeState
 triggerall = AnimTime = 0
 triggerall = var(13)<2
 trigger1 = var(12)>3
 value = 1101
 
-[State 1100, ƒXƒe[ƒg•ÏX];ƒtƒBƒjƒbƒVƒ…
+[State 1100, Xe[gÏX];tBjbV
 type = ChangeState
 triggerall = AnimTime = 0
 trigger1 = var(13)>=2
@@ -3834,7 +3857,7 @@ trigger2 = var(12)<=3
 value = 1102
 
 ;---------------------------------------------------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€(ƒtƒBƒjƒbƒVƒ…)
+;NCW[h(tBjbV)
 [Statedef 1102]
 type = S
 movetype= A
@@ -3846,14 +3869,14 @@ anim = 1102
 ctrl = 0
 sprpriority = 2
 
-[State 700, ‰¹‚ğ–Â‚ç‚·]
+[State 700, Â‚ç‚·]
 type = PlaySnd
 trigger1 = animelem = 5
 value = 200, 6
 channel = 0
 volume = 255
 
-[State 1100, ‰¹‚ğ–Â‚ç‚·]
+[State 1100, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 6
 value = 300, 1
@@ -3875,7 +3898,7 @@ trigger2 = NumTarget(1101)
 trigger3 = NumTarget(1102)
 flag = NoJuggleCheck
 
-[State 1100, ƒqƒbƒg’è‹`]
+[State 1100, qbg`]
 type = HitDef
 trigger1 = animelem = 7
 attr = S, SA
@@ -3894,6 +3917,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 25
+guard.hittime = (25) - 5
 ground.velocity = -6,-5
 guard.velocity = -8
 air.hittime = 99
@@ -3904,10 +3928,10 @@ air.cornerpush.veloff = 0
 air.fall = 1
 fall.recover = 0
 p2facing = 1
-id = 1102 + (var(1))*10 ; v1: ƒJƒEƒ“ƒ^[”»’è
+id = 1102 + (var(1))*10 ; v1: JE^[
 nochainid = 290
 
-[state 1900, TargetState];ƒJƒEƒ“ƒ^[
+[state 1900, TargetState];JE^[
 type = TargetState
 trigger1 = NumTarget(1112)
 trigger1 = MoveHit
@@ -3916,7 +3940,7 @@ id = 1112
 persistent = 0
 ignorehitpause = 1
 
-[state 1900, TargetState];’Êíƒqƒbƒg
+[state 1900, TargetState];Êqbg
 type = TargetState
 trigger1 = NumTarget(1102)
 trigger1 = MoveHit
@@ -3925,15 +3949,15 @@ id = 1102
 persistent = 0
 ignorehitpause = 1
 
-[State 1000, ƒXƒe[ƒg•ÏX]
+[State 1000, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€
-;‘Šè‚â‚ç‚ê(’Êíƒqƒbƒg)
+;NCW[h
+;(Êqbg)
 [Statedef 1150]
 type = A
 movetype= H
@@ -3941,7 +3965,7 @@ physics = N
 velset = 0,0
 
 ;---------------------------------------------
-[state 1050, SelfState];Helper‚Í•Ô‹p
+[state 1050, SelfState];HelperÍ•Ô‹p
 type = SelfState
 trigger1 = ishelper
 value = PrevStateNo
@@ -3997,7 +4021,7 @@ type = PosSet
 Trigger1 = Pos Y >= 0
 y = 0
 
-[State 801, Explod];‰Œ
+[State 801, Explod];
 type = Explod
 trigger1 = anim = 1151
 trigger1 = animelemtime(1)>=0
@@ -4018,8 +4042,8 @@ trigger1 = AnimTime = 0
 value = 5120 + (!alive)*30
 
 ;---------------------------------------------------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€
-;‘Šè‚â‚ç‚ê(ƒJƒEƒ“ƒ^[ƒƒCƒ„[)
+;NCW[h
+;(JE^[C[)
 [Statedef 1155]
 type = A
 movetype= H
@@ -4027,7 +4051,7 @@ physics = N
 velset = 0,0
 
 ;---------------------------------------------
-[state 1050, SelfState];Helper‚Í•Ô‹p
+[state 1050, SelfState];HelperÍ•Ô‹p
 type = SelfState
 trigger1 = ishelper
 value = PrevStateNo
@@ -4038,7 +4062,7 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 1155
 
-[State 1000, NotHitBy];–³“G
+[State 1000, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
@@ -4049,7 +4073,7 @@ trigger1 = animelem = 2
 x = -11
 y = -1.5
 
-[State 1905, ScreenBound];‰æ–ÊŒÅ’è
+[State 1905, ScreenBound];ÊŒÅ’
 type = ScreenBound
 trigger1 = 1
 value = 1
@@ -4063,8 +4087,8 @@ trigger2 = time >=100
 value = 1156
 
 ;---------------------------------------------------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€
-;‘Šè‚â‚ç‚ê(CW•ÇƒoƒEƒ“ƒh)
+;NCW[h
+;(CWÇƒoEh)
 [Statedef 1156]
 type = A
 movetype= H
@@ -4076,12 +4100,12 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 1156
 
-[State 1906, ‰¹‚ğ–Â‚ç‚·]
+[State 1906, Â‚ç‚·]
 type = PlaySnd
 trigger1 = Time = 0
 value = F7,2
 
-[State 1905, ScreenBound];‰æ–ÊŒÅ’è
+[State 1905, ScreenBound];ÊŒÅ’
 type = ScreenBound
 trigger1 = 1
 value = 1
@@ -4113,8 +4137,8 @@ trigger1 = animtime = 0
 value = 1157
 
 ;---------------------------------------------------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€
-;‘Šè‚â‚ç‚ê(CW’µ‚Ë•Ô‚è)
+;NCW[h
+;(CWË•Ô‚)
 [Statedef 1157]
 type = A
 movetype= H
@@ -4126,7 +4150,7 @@ type = ChangeAnim
 Trigger1 = Time = 0
 value = 5050
 
-[State 1905, ScreenBound];‰æ–ÊŒÅ’è
+[State 1905, ScreenBound];ÊŒÅ’
 type = ScreenBound
 trigger1 = 1
 value = 1
@@ -4143,7 +4167,7 @@ trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 5100 
 
 ;---------------------------------------------------------------------------
-;ƒNƒƒXƒ_ƒCƒrƒ“ƒOã(—£—¤)
+;NX_CrO()
 [Statedef 1200]
 type = S
 movetype= A
@@ -4155,20 +4179,20 @@ anim = 1200
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 3
 value = 1200, 0
 channel = 0
 volume = 255
 
-[State 1200, ƒXƒe[ƒg•ÏX]
+[State 1200, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 1201
 
 ;---------------------------------------------------------------------------
-;ƒNƒƒXƒ_ƒCƒrƒ“ƒOã(‹ó’†)
+;NX_CrO()
 [Statedef 1201]
 type = A
 movetype= A
@@ -4180,7 +4204,7 @@ anim = 1201
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 2
 value = 1200, 1
@@ -4195,7 +4219,7 @@ type = Velset
 trigger1 = animelemtime(2)>=0
 x = 8.5
 
-[State 1201, ƒqƒbƒg’è‹`]
+[State 1201, qbg`]
 type = HitDef
 trigger1 = animelem = 2
 attr = A, SA
@@ -4214,6 +4238,7 @@ guardsound = s121,0
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -3.5,-8
 guard.velocity = -8
 air.hittime = 99
@@ -4226,13 +4251,13 @@ fall.recover = 0
 id = 1200
 nochainid = 290
 
-[State 1201, ƒXƒe[ƒg•ÏX];’…’nƒXƒe[ƒg‚Ö
+[State 1201, Xe[gÏX];nXe[g
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 1202
 
 ;---------------------------------------------------------------------------
-;ƒNƒƒXƒ_ƒCƒrƒ“ƒO(’…’n)
+;NX_CrO(n)
 [Statedef 1202]
 type = S
 movetype = A
@@ -4259,14 +4284,14 @@ type = PosSet
 trigger1 = time = 0
 y = 0
 
-[State 1000, I—¹]
+[State 1000, I]
 type = ChangeState
 trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒNƒƒXƒ_ƒCƒrƒ“ƒO‹­(—£—¤)
+;NX_CrO()
 [Statedef 1210]
 type = S
 movetype= A
@@ -4278,20 +4303,20 @@ anim = 1210
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 3
 value = 1200, 0
 channel = 0
 volume = 255
 
-[State 1200, ƒXƒe[ƒg•ÏX]
+[State 1200, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 1211
 
 ;---------------------------------------------------------------------------
-;ƒNƒƒXƒ_ƒCƒrƒ“ƒO‹­(‹ó’†)
+;NX_CrO()
 [Statedef 1211]
 type = A
 movetype= A
@@ -4303,7 +4328,7 @@ anim = 1211
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 2
 value = 1200, 1
@@ -4318,7 +4343,7 @@ type = Velset
 trigger1 = animelemtime(2)>=0
 x = 8.5
 
-[State 1201, ƒqƒbƒg’è‹`]
+[State 1201, qbg`]
 type = HitDef
 trigger1 = animelem = 2
 attr = A, SA
@@ -4337,6 +4362,7 @@ guardsound = s121,0
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -3.5,-8
 guard.velocity = -8.5
 air.hittime = 99
@@ -4349,13 +4375,13 @@ fall.recover = 0
 id = 1200
 nochainid = 290
 
-[State 1201, ƒXƒe[ƒg•ÏX];’…’nƒXƒe[ƒg‚Ö
+[State 1201, Xe[gÏX];nXe[g
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 1202
 
 ;---------------------------------------------------------------------------
-;ƒJƒ‹ƒtƒHƒ‹ƒjƒAƒƒ}ƒ“ƒXã
+;JtHjA}X
 [Statedef 1300]
 type = S
 movetype= A
@@ -4367,14 +4393,14 @@ anim = 1300
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 2
 value = 1300, 0
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 6
 value = 1300, 1
@@ -4405,7 +4431,7 @@ type = VelAdd
 trigger1 = animelemtime(9)>=0
 y = .5
 
-[State 1000, StateTypeSet];ó‘ÔF‹ó’†‚É
+[State 1000, StateTypeSet];ÔFó’†‚
 type = StateTypeSet
 trigger1 = animelem = 9
 statetype = A
@@ -4423,7 +4449,7 @@ sparkxy = 15,0
 hitsound = s121,0
 numhits = 0
 
-[State 1000, ƒqƒbƒg’è‹`]
+[State 1000, qbg`]
 type = HitDef
 trigger1 = animelem = 5
 attr = S, SA
@@ -4442,6 +4468,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -1
 guard.velocity = -5
 air.hittime = 99
@@ -4454,7 +4481,7 @@ fall.recovertime = 45
 id = 1300
 nochainid = 290, 1301
 
-[State 1300, ƒqƒbƒg’è‹`]
+[State 1300, qbg`]
 type = HitDef
 trigger1 = animelem = 8
 attr = A, SA
@@ -4473,6 +4500,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -3,-10
 guard.velocity = -5.5
 air.hittime = 99
@@ -4485,14 +4513,14 @@ fall.recover = 0
 id = 1301
 nochainid = 290, 1301
 
-[State 1000, ChangeState];’…’n
+[State 1000, ChangeState];n
 type = ChangeState
 trigger1 = animelemtime(12) >= 0
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1301
 
 ;---------------------------------------------------------------------------
-;ƒJƒ‹ƒtƒHƒ‹ƒjƒAƒƒ}ƒ“ƒX(’…’n)
+;JtHjA}X(n)
 [Statedef 1301]
 type = S
 movetype = A
@@ -4507,14 +4535,14 @@ type = PosSet
 trigger1 = time = 0
 y = 0
 
-[State 1311, I—¹]
+[State 1311, I]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒJƒ‹ƒtƒHƒ‹ƒjƒAƒƒ}ƒ“ƒX‹­
+;JtHjA}X
 [Statedef 1310]
 type = S
 movetype= A
@@ -4526,14 +4554,14 @@ anim = 1310
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 6
 value = 1300, 0
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 7
 value = 1300, 1
@@ -4576,7 +4604,7 @@ trigger1 = animelem = 10
 statetype = A
 
 ;------------------------------------
-[State 1000, ƒqƒbƒg’è‹`]
+[State 1000, qbg`]
 type = HitDef
 trigger1 = animelem = 2
 trigger2 = animelem = 4
@@ -4596,6 +4624,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -3
 guard.velocity = -4
 air.hittime = 99
@@ -4608,7 +4637,7 @@ fall.recovertime = 45
 id = 1300
 nochainid = 290, 1301
 
-[State 1000, ƒqƒbƒg’è‹`]
+[State 1000, qbg`]
 type = HitDef
 trigger1 = animelem = 6
 attr = S, SA
@@ -4627,6 +4656,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -1
 guard.velocity = -5
 air.hittime = 99
@@ -4639,7 +4669,7 @@ fall.recovertime = 45
 id = 1300
 nochainid = 290, 1301
 
-[State 1300, ƒqƒbƒg’è‹`]
+[State 1300, qbg`]
 type = HitDef
 trigger1 = animelem = 8
 attr = A, SA
@@ -4658,6 +4688,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -3,-12
 guard.velocity = -5.5
 air.hittime = 99
@@ -4670,14 +4701,14 @@ fall.recover = 0
 id = 1301
 nochainid = 290, 1301
 
-[State 1000, ChangeState];’…’n
+[State 1000, ChangeState];n
 type = Changestate
 trigger1 = animelemtime(13) >= 0
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1301
 
 ;---------------------------------------------------------------------------
-;ƒXƒsƒjƒ“ƒOƒ‰ƒ“ƒT[ã
+;XsjOT[
 [Statedef 1400]
 type = S
 movetype= A
@@ -4689,14 +4720,14 @@ anim = 1400
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 3
 value = 1400, 0
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 1200, 1
@@ -4723,7 +4754,7 @@ triggerall = animelemtime(5)>=0
 trigger1 = command = "holdback"
 x = -2
 ;--------------------------------
-[State 1201, ƒqƒbƒg’è‹`]
+[State 1201, qbg`]
 type = HitDef
 trigger1 = animelem = 6
 attr = S, SA
@@ -4742,6 +4773,7 @@ guardsound = s121,0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -4,-5
 guard.velocity = -10
 air.hittime = 99
@@ -4754,13 +4786,13 @@ fall.recovertime = 48
 id = 1400
 nochainid = 290
 
-[State 1400, I—¹];I—¹
+[State 1400, I];I
 type = Changestate
 trigger1 = animtime = 0
 value = 1401
 
 ;---------------------------------------------------------------------------
-;ƒXƒsƒjƒ“ƒOƒ‰ƒ“ƒT[(I—¹)
+;XsjOT[(I)
 [Statedef 1401]
 type = S
 movetype = A
@@ -4780,14 +4812,14 @@ type = PosAdd
 trigger1 = animelem = 2
 x = 5
 
-[State 1000, I—¹]
+[State 1000, I]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒXƒsƒjƒ“ƒOƒ‰ƒ“ƒT[‹­
+;XsjOT[
 [Statedef 1410]
 type = S
 movetype= A
@@ -4799,14 +4831,14 @@ anim = 1410
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 1400, 0
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 1200, 1
@@ -4833,7 +4865,7 @@ triggerall = animelemtime(5)>=0
 trigger1 = command = "holdback"
 x = -2
 ;--------------------------------
-[State 1201, ƒqƒbƒg’è‹`]
+[State 1201, qbg`]
 type = HitDef
 trigger1 = animelem = 6
 attr = S, SA
@@ -4852,6 +4884,7 @@ guardsound = s121,0
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -4,-5
 guard.velocity = -10
 air.hittime = 99
@@ -4864,16 +4897,16 @@ fall.recovertime = 48
 id = 1400
 nochainid = 290
 
-[State 1400, I—¹];I—¹
+[State 1400, I];I
 type = Changestate
 trigger1 = animtime = 0
 value = 1401
 
 ;
-; ’´•KE‹Z
+; KEZ
 ;
 ;---------------------------------------------------------------------------
-;ƒuƒ‰ƒXƒ^[ƒEƒFƒCƒu
+;uX^[EFCu
 [Statedef 3000]
 type = S
 movetype= A
@@ -4885,19 +4918,19 @@ anim = 3000
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 3000, 0
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 3000, 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·]
+[State 1200, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElem = 6
 value = 3000, 1
@@ -4915,13 +4948,13 @@ ID = 3040
 postype = p1
 pos = 3,-121
 facing = 1
-sprpriority = 3 ; •\¦—Dæ“x
-bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -1 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 0 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 1 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 3 ; \Dx
+bindtime = -1 ; -1: ivÅ’
+removetime = -1 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 0 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 1 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 supermovetime = 9999
 pausemovetime = 9999
 
@@ -4933,17 +4966,17 @@ ID = 3040
 postype = p1
 pos = 41,-89
 facing = 1
-sprpriority = 3 ; •\¦—Dæ“x
-bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -1 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 0 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 1 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 3 ; \Dx
+bindtime = -1 ; -1: ivÅ’
+removetime = -1 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 0 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 1 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 supermovetime = 9999
 pausemovetime = 9999
 
-[State 1000, Á‹]
+[State 1000, ]
 type = RemoveExplod
 Trigger1 = NumExplod(3040)
 Trigger1 = animelem = 4
@@ -4957,13 +4990,13 @@ ID = 3041
 postype = p1
 pos = -25,-119
 facing = 1
-sprpriority = 3 ; •\¦—Dæ“x
-bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 0 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 0 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 3 ; \Dx
+bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 0 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 0 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 ;supermovetime = 9999
 ;pausemovetime = 9999
 
@@ -4975,13 +5008,13 @@ ID = 3041
 postype = p1
 pos = 26,-103
 facing = 1
-sprpriority = 3 ; •\¦—Dæ“x
-bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 0 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 0 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 3 ; \Dx
+bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 0 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 0 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 ;supermovetime = 9999
 ;pausemovetime = 9999
 
@@ -4993,13 +5026,13 @@ ID = 3041
 postype = p1
 pos = -35,-91
 facing = 1
-sprpriority = 3 ; •\¦—Dæ“x
-bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 0 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 0 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 3 ; \Dx
+bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 0 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 0 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 ;supermovetime = 9999
 ;pausemovetime = 9999
 
@@ -5011,16 +5044,16 @@ ID = 3041
 postype = p1
 pos = 22,-91
 facing = 1
-sprpriority = 1 ; •\¦—Dæ“x
-bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 0 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 0 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 1 ; \Dx
+bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 0 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 0 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 ;supermovetime = 9999
 ;pausemovetime = 9999
-;------------------------------------ƒvƒ‰ƒYƒ}‹…Helper
+;------------------------------------vY}Helper
 [State 1000, Helper]
 type = Helper
 Trigger1 = animelemtime(6)=0
@@ -5138,15 +5171,15 @@ sound = s8500,0
 darken = 0
 ;-------------------------------------
 
-[State 3000, ƒXƒe[ƒg•ÏX]
+[State 3000, Xe[gÏX]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒuƒ‰ƒXƒ^[ƒEƒFƒCƒu
-; (qHELPER)ƒvƒ‰ƒYƒ}‹…
+;uX^[EFCu
+; (qHELPER)vY}
 [Statedef 3050]
 type = A
 movetype= A
@@ -5163,12 +5196,12 @@ Type = AssertSpecial
 Trigger1 = 1
 Flag = NoShadow
 
-[State 1000, NotHitBy];–³“G
+[State 1000, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;--------------------------------”ò‚Ñ“¹‹ï‘ŠE—pHelper
+;--------------------------------Ñ“ï‘ŠEpHelper
 [State 1000, Helper]
 type = helper
 trigger1 = time = 0
@@ -5182,7 +5215,7 @@ helpertype = normal
 keyctrl = 0
 ;ownpal = 1
 ;--------------------------------
-[State 1000, ƒqƒbƒg’è‹`]
+[State 1000, qbg`]
 type = HitDef
 trigger1 = time = 0
 attr = A, HP
@@ -5203,6 +5236,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -5,-6
 guard.velocity = -6
 air.velocity = -5,-6
@@ -5213,12 +5247,12 @@ fall = 1
 fall.recover = 0
 id = 3050
 nochainid = 290
-palfx.time = 46 ;‘±ŠÔ
-palfx.mul = 230,230,250 ;æZ
+palfx.time = 46 ;
+palfx.mul = 230,230,250 ;Z
 palfx.sinadd = 255,255,255,5
-palfx.add = 16,16,16 ;‰ÁZ
-palfx.color = 1 ;Ê“x
-palfx.invertall = 1 ;”½“]
+palfx.add = 16,16,16 ;Z
+palfx.color = 1 ;Ê“x
+palfx.invertall = 1 ;]
 
 [State 3120, HitSpark]
 type = Helper
@@ -5239,14 +5273,14 @@ superMoveTime = 65535
 ignoreHitPause = 1
 ;--------------------------------
 
-[State 10000, DestroySelf];Á–Å
+[State 10000, DestroySelf];
 type = DestroySelf
 trigger1 = root,movetype = H
 trigger2 = animtime = 0
 
 ;---------------------------------------------------------------------------
-;ƒuƒ‰ƒXƒ^[ƒEƒFƒCƒu
-; (qHELPER)ƒvƒ‰ƒYƒ}‹…2
+;uX^[EFCu
+; (qHELPER)vY}2
 [Statedef 3051]
 type = A
 movetype= A
@@ -5263,12 +5297,12 @@ Type = AssertSpecial
 Trigger1 = 1
 Flag = NoShadow
 
-[State 1000, NotHitBy];–³“G
+[State 1000, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;--------------------------------”ò‚Ñ“¹‹ï‘ŠE—pHelper
+;--------------------------------Ñ“ï‘ŠEpHelper
 [State 1000, Helper]
 type = helper
 trigger1 = time = 0
@@ -5282,7 +5316,7 @@ helpertype = normal
 keyctrl = 0
 ;ownpal = 1
 ;--------------------------------
-[State 1000, ƒqƒbƒg’è‹`]
+[State 1000, qbg`]
 type = HitDef
 trigger1 = time = 0
 attr = A, HP
@@ -5303,6 +5337,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -5,-6
 guard.velocity = -6
 air.velocity = -5,-6
@@ -5313,22 +5348,22 @@ fall = 1
 fall.recover = 0
 id = 3050
 nochainid = 290
-palfx.time = 46 ;‘±ŠÔ
-palfx.mul = 230,230,250 ;æZ
+palfx.time = 46 ;
+palfx.mul = 230,230,250 ;Z
 palfx.sinadd = 255,255,255,5
-palfx.add = 16,16,16 ;‰ÁZ
-palfx.color = 1 ;Ê“x
-palfx.invertall = 1 ;”½“]
+palfx.add = 16,16,16 ;Z
+palfx.color = 1 ;Ê“x
+palfx.invertall = 1 ;]
 ;--------------------------------
 
-[State 10000, DestroySelf];Á–Å
+[State 10000, DestroySelf];
 type = DestroySelf
 trigger1 = root,movetype = H
 trigger2 = animtime = 0
 
 ;---------------------------------------------------------------------------
-;ƒuƒ‰ƒXƒ^[ƒEƒFƒCƒu
-;(‘·HELPER)”ò‚Ñ“¹‹ï‘ŠE—p
+;uX^[EFCu
+;(HELPER)Ñ“ï‘ŠEp
 [Statedef 3060]
 type = A
 movetype= A
@@ -5340,22 +5375,22 @@ ctrl = 0
 anim = 3060
 sprpriority = 0
 
-[state 3020, BindToParent];ˆÊ’uŒˆ’è
+[state 3020, BindToParent];Ê’u
 type = BindToParent
 trigger1 = numhelper(3050)
 pos = 0,0
 
-[State 11101, NotHitBy];–³“G
+[State 11101, NotHitBy];G
 type = NotHitBy
 trigger1 = Time >= 0
 value = SCA
 
-[State 11101, HitBy];”ò‚Ñ“¹‹ï‚Ì‚İÚG‹–‰Â
+[State 11101, HitBy];Ñ“Ì‚İÚG
 type = HitBy
 trigger1 = Time >= 0
 value = SCA, NP, SP, HP, AP
 
-[State 11101, HitOverRide];”ò‚Ñ“¹‹ï‚ğó‚¯‚½Û‚Ì‰‰o
+[State 11101, HitOverRide];Ñ“ó‚¯‚Û‚Ì‰o
 Type = HitOverRide
 trigger1 = 1
 time = -1
@@ -5378,7 +5413,7 @@ trigger4 = parent,stateno = 3050
 trigger4 = parent,animelem = 5
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“(n“®)
+;hVbg^Ct[(n)
 [Statedef 3100]
 type = S
 movetype= A
@@ -5390,14 +5425,14 @@ anim = 3100
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·];ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgI
+[State 1200, Â‚ç‚·];hVbgI
 type = PlaySnd
 trigger1 = AnimElem = 3
 value = 3100, 0
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·];ˆÚ“®‰¹
+[State 1200, Â‚ç‚·];Ú“
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 3100, 2
@@ -5424,7 +5459,7 @@ trigger1 = vel x >.5
 trigger1 = animelemtime(7)>=0
 x = -.5
 
-[State 1000, ƒqƒbƒg’è‹`]
+[State 1000, qbg`]
 type = HitDef
 trigger1 = animelem = 5
 attr = S, HA
@@ -5445,6 +5480,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 17
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -1, 0
 guard.ctrltime = 28
 air.velocity = -1, 0
@@ -5458,7 +5494,7 @@ p1stateno = 3101
 p2stateno = 3110
 p1facing = 1
 p2facing = 1
-forcestand = 1 ;‹­§—§‚½‚¹
+forcestand = 1 ;
 numhits = 0
 id = 3100
 nochainid = 290
@@ -5490,14 +5526,14 @@ sound = s8500,0
 darken = 0
 ;-------------------------------------
 
-[State 3000, ƒXƒe[ƒg•ÏX];I—¹
+[State 3000, Xe[gÏX];I
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“(¬Œ÷‰£‚èˆÚs)
+;hVbg^Ct[(Ús)
 [Statedef 3101]
 type = A
 movetype= A
@@ -5508,21 +5544,21 @@ anim = 3101
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·];ƒ^ƒCƒt[ƒ“I
+[State 1200, Â‚ç‚·];^Ct[I
 type = PlaySnd
 trigger1 = AnimElem = 5
 value = 3100, 1
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·];‚¤‚è‚áI
+[State 1200, Â‚ç‚·];I
 type = PlaySnd
 trigger1 = AnimElem = 55
 value = 200, 6
 channel = 0
 volume = 255
 
-[State 1120, ‘Sg–³“G]
+[State 1120, SgG]
 type = NotHitBy
 trigger1 = 1
 value = SCA
@@ -5565,7 +5601,7 @@ trigger1 = animelemtime(2)>=0
 trigger1 = animelemtime(56)<2
 pos = 50,0
 
-[State 1000, ƒqƒbƒg’è‹`];ƒNƒŒƒCƒW[ƒhƒ‰ƒ€¶˜r
+[State 1000, qbg`];NCW[hr
 type = HitDef
 trigger1 = animelem = 4
 trigger2 = animelem = 12
@@ -5589,6 +5625,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 17
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -5, 0
 guard.ctrltime = 28
 air.velocity = 0, 0
@@ -5599,12 +5636,12 @@ yaccel = .47
 ;air.fall = 1
 ;fall.recover = 0
 p2stateno = 3110
-forcestand = 1 ;‹­§—§‚½‚¹
+forcestand = 1 ;
 id = 3100
 nochainid = 290
 kill = 0
 
-[State 1000, ƒqƒbƒg’è‹`];ƒNƒŒƒCƒW[ƒhƒ‰ƒ€‰E˜r
+[State 1000, qbg`];NCW[hEr
 type = HitDef
 trigger1 = animelem = 8
 trigger2 = animelem = 16
@@ -5628,6 +5665,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 17
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -5, 0
 guard.ctrltime = 28
 air.velocity = 0, 0
@@ -5638,12 +5676,12 @@ yaccel = .47
 ;air.fall = 1
 ;fall.recover = 0
 p2stateno = 3115
-forcestand = 1 ;‹­§—§‚½‚¹
+forcestand = 1 ;
 id = 3100
 nochainid = 290
 kill = 0
 
-[State 1000, ƒqƒbƒg’è‹`];ƒ`ƒ‡ƒbƒvƒXƒeƒBƒbƒN
+[State 1000, qbg`];`bvXeBbN
 type = HitDef
 trigger1 = animelem = 44
 attr = S, HA
@@ -5664,6 +5702,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 ground.velocity = -4, 0
 guard.ctrltime = 28
 air.velocity = 0, 0
@@ -5674,11 +5713,11 @@ yaccel = .47
 air.fall = 1
 fall.recover = 0
 p2stateno = 3110
-forcestand = 1 ;‹­§—§‚½‚¹
+forcestand = 1 ;
 id = 3100
 nochainid = 290
 
-[State 1000, ƒqƒbƒg’è‹`];ƒtƒBƒjƒbƒVƒ…
+[State 1000, qbg`];tBjbV
 type = HitDef
 trigger1 = animelem = 56
 attr = S, HA
@@ -5699,6 +5738,7 @@ guardsound = s121,0
 ground.type = high
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 ground.velocity = -6,-6.5
 guard.ctrltime = 28
 air.velocity = -6,-6.5
@@ -5708,18 +5748,18 @@ yaccel = .45
 air.fall = 1
 fall.recover = 0
 p2stateno = 3120
-forcestand = 1 ;‹­§—§‚½‚¹
+forcestand = 1 ;
 id = 3100
 nochainid = 290
 
-[State 3000, ƒXƒe[ƒg•ÏX];I—¹
+[State 3000, Xe[gÏX];I
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“(‘Šèã’i‚â‚ç‚ê)
+;hVbg^Ct[(i)
 [Statedef 3110]
 type = S
 movetype= H
@@ -5728,7 +5768,7 @@ physics = N
 ;facep2 = 1
 
 ;---------------------------------------------
-[state 1050, SelfState];Helper‚Í•Ô‹p
+[state 1050, SelfState];HelperÍ•Ô‹p
 type = SelfState
 trigger1 = ishelper
 value = PrevStateNo
@@ -5742,7 +5782,7 @@ value = 3110
 [State 1000, HitFallSet]
 type = HitFallSet
 trigger1 = time = 0
-value = 0 ;Falló‘Ô‚Ì‰ğœ
+value = 0 ;FallÔ‚Ì‰
 
 [State 1000, Pos]
 type = VelSet
@@ -5766,7 +5806,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“(‘Šè‰º’i‚â‚ç‚ê)
+;hVbg^Ct[(è‰ºi)
 [Statedef 3115]
 type = S
 movetype= H
@@ -5775,7 +5815,7 @@ physics = N
 ;facep2 = 1
 
 ;---------------------------------------------
-[state 1050, SelfState];Helper‚Í•Ô‹p
+[state 1050, SelfState];HelperÍ•Ô‹p
 type = SelfState
 trigger1 = ishelper
 value = PrevStateNo
@@ -5789,7 +5829,7 @@ value = 3115
 [State 1000, HitFallSet]
 type = HitFallSet
 trigger1 = time = 0
-value = 0 ;Falló‘Ô‚Ì‰ğœ
+value = 0 ;FallÔ‚Ì‰
 
 [State 1000, Pos]
 type = VelSet
@@ -5813,8 +5853,8 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“
-;‘Šè‚â‚ç‚êi†‚İj
+;hVbg^Ct[
+;iİj
 [Statedef 3120]
 type = S
 movetype= H
@@ -5822,7 +5862,7 @@ physics = N
 velset = 0,0
 
 ;---------------------------------------------
-[state 1050, SelfState];Helper‚Í•Ô‹p
+[state 1050, SelfState];HelperÍ•Ô‹p
 type = SelfState
 trigger1 = ishelper
 value = PrevStateNo
@@ -5861,8 +5901,8 @@ waveform = sinesquare
 ampl = 140
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“
-;‘Šè‚â‚ç‚ê
+;hVbg^Ct[
+;
 ;HITA_UP (initial going up)
 [Statedef 3121]
 type = A
@@ -5897,8 +5937,8 @@ trigger2 = Pos Y >= 10 ;.
 value = 3123 ;HITA_FALL
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“
-;‘Šè‚â‚ç‚ê
+;hVbg^Ct[
+;
 ; HITA_UP_T (transition)
 [Statedef 3122]
 type = A
@@ -5930,8 +5970,8 @@ trigger4 = Anim != 5035 ;.
 value = 3123 ;HITA_FALL
 
 ;---------------------------------------------------------------------------
-;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“
-;‘Šè‚â‚ç‚ê
+;hVbg^Ct[
+;
 ;HITA_FALL (knocked up, falling)
 [Statedef 3123]
 type = A
@@ -5968,10 +6008,10 @@ trigger1 = Pos Y >= ifelse((anim = [5051,5059]) || (anim = [5061,5069]), 0, 25)
 value = 5100 ;HIT_BOUNCE
 
 ;
-; ƒŠ[ƒ_[’´•KE‹Z
+; [_[KEZ
 ;
 ;---------------------------------------------------------------------------
-;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA(’Í‚İ)
+;CWOXsA(Í‚)
 [Statedef 3200]
 type = S
 movetype= A
@@ -5984,22 +6024,22 @@ ctrl = 0
 sprpriority = 2
 
 ;----------------------------------
-; SC,DC“_–Å—p
+; SC,DC_Å—p
 ; var(8), var(9)
 ;----------------------------------
-;“Š‚°‹ZSC“_–Å—p•Ï”
+;ZSC_Å—pÏ
 [State 1000, varset]
 type = varset
 trigger1 = time = 0
 var(8) = prevstateno
 
-;“Š‚°‹ZDC“_–Å—p•Ï”
+;ZDC_Å—pÏ
 [State 1000, varset]
 type = varset
 trigger1 = time = 0
 var(9) = prevstateno
 ;----------------------------------
-[State 2100, c‘œ]
+[State 2100, c]
 type = AfterImage
 trigger1 = time = 0
 time = 0
@@ -6009,7 +6049,7 @@ type = PosSet
 trigger1 = time = 0
 y = 0
 
-[State 800, ƒqƒbƒg’è‹`i“Š‚°—pj]
+[State 800, qbg`ipj]
 type = HitDef
 trigger1 = Time = 0
 trigger1 = P2StateNo != [150,155]
@@ -6017,14 +6057,14 @@ attr = S, HT
 hitflag = M
 priority = 5, Miss
 sparkxy = -15,-80
-sparkno = -1 ;-‚ğ‚Â‚¯‚ê‚ÎƒXƒp[ƒNƒGƒtƒFƒNƒg‚Í–³‚¢
-p1sprpriority = 2 ;UŒ‚‚ª“–‚½‚Á‚½‚É©•ª‚Ì‰æ‘œ•\¦—Dæ“x‚ğ1‚É‚µ‚Ü‚·
-p2sprpriority = 1 ;UŒ‚‚ª“–‚½‚Á‚½‚É‘Šè‚Ì‰æ‘œ•\¦—Dæ“x‚ğ0‚É‚µ‚Ü‚·
+sparkno = -1 ;-Â‚ÎƒXp[NGtFNgÍ–
+p1sprpriority = 2 ;UÉÌ‰æ‘œ\Dx1É‚Ü‚
+p2sprpriority = 1 ;UÉ‘Ì‰æ‘œ\Dx0É‚Ü‚
 p1facing = 1
 p2facing = 1
 p1stateno = 3201
 p2stateno = 3210
-guard.dist = 0 ;‘Šè‚ÌƒK[ƒh‘Ô¨‚É“ü‚é‹——£‚ğ‚O‚É‚µ‚Ä‚é‚Ì‚ÅAƒK[ƒh•s‰Â
+guard.dist = 0 ;ÌƒK[hÔÉ“é‹—OÉ‚Ä‚Ì‚ÅAK[hs
 fall = 1
 id = 3200
 numhits = 0
@@ -6038,7 +6078,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 ;---------------------------------------------------------------------------
-; ƒ‰ƒCƒWƒ“ƒOƒXƒsƒAi¬Œ÷j
+; CWOXsAij
 [Statedef 3201]
 type = S
 movetype= A
@@ -6049,14 +6089,14 @@ anim = 3201
 ctrl = 0
 sprpriority = 2
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·];ƒOƒbƒoƒC
+[State 1200, Â‚ç‚·];OboC
 type = PlaySnd
 trigger1 = AnimElem = 2
 value = 3200, 0
 channel = 0
 volume = 255
 
-[State 1200, ‰¹‚ğ–Â‚ç‚·];ƒtƒB[ƒo[II
+[State 1200, Â‚ç‚·];tB[o[II
 type = PlaySnd
 trigger1 = AnimElem = 32
 value = 3200, 1
@@ -6068,12 +6108,12 @@ type = PosAdd
 trigger1 = animelem = 36
 x = -10
 
-[State 3200, NotHitBy];–³“G
+[State 3200, NotHitBy];G
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-[State 801, Explod];’Í‚İƒXƒp[ƒN
+[State 801, Explod];Í‚İƒXp[N
 type = Explod
 trigger1 = animelem = 1
 anim = 4022
@@ -6081,17 +6121,17 @@ ID = 4022
 postype = p1
 pos = 55, -65
 facing = 1
-sprpriority = 5 ; •\¦—Dæ“x
-;bindtime = -1 ; -1: ‰i‹vŒÅ’è
-removetime = -2 ; -1: Á–Å‚µ‚È‚¢, -2: animtime=0‚ÅÁ–Å
-ignorehitpause = 1 ; 0: hitpause’†‚Í“®‚©‚È‚¢, 1: “®‚­
-removeongethit = 1 ; 0: UŒ‚‚ğó‚¯‚ÄÁ‚¦‚È‚¢, 1: Á‚¦‚é
-;shadow = -1 ; ‰eƒXƒe[ƒWˆË‘¶(—ª–³)
-ownpal = 1 ; “Æ©ƒpƒŒƒbƒg
+sprpriority = 5 ; \Dx
+;bindtime = -1 ; -1: ivÅ’
+removetime = -2 ; -1: Å‚È‚, -2: animtime=0Å
+ignorehitpause = 1 ; 0: hitpauseÍ“È‚, 1: 
+removeongethit = 1 ; 0: Uó‚¯‚ÄÈ‚, 1: 
+;shadow = -1 ; eXe[WË‘()
+ownpal = 1 ; Æpbg
 supermovetime = 9999
 pausemovetime = 9999
 
-[State 3201, ‰¹‚ğ–Â‚ç‚·]
+[State 3201, Â‚ç‚·]
 type = PlaySnd
 trigger1 = AnimElemtime(5) = 1
 trigger2 = AnimElemtime(6) = 1
@@ -6114,7 +6154,7 @@ trigger18 = AnimElemtime(22) = 1
 trigger19 = AnimElemtime(23) = 1
 trigger20 = AnimElemtime(24) = 1
 trigger21 = AnimElemtime(25) = 1
-trigger22 = AnimElemtime(26) = 1 ;ã•û”ò‚Î‚µ‚ÌˆêŒ‚
+trigger22 = AnimElemtime(26) = 1 ;Î‚ÌˆêŒ‚
 value = 1, 5
 
 [State 3101, TargetState]
@@ -6122,57 +6162,57 @@ type = TargetState
 trigger1 = animelem = 2
 value = 3211
 ;--------------------------------
-;‚¿ã‚°‚é
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u0];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+;ã‚°
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u0];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 0
 pos = 75, 0
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u1];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u1];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 41
 pos = 75+10, -65
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u2];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u2];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 43
 pos = 65, -105
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u3];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u3];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 45
 pos = 55, -115
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u4];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u4];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 47
 pos = 45, -125
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u5];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u5];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 50
 pos = 30, -135
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u6];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u6];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 53
 pos = 20, -145
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u7];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u7];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 55
 pos = 10, -150
 
-[State 3101, ’Í‚ñ‚¾‘Šè‚ÌˆÊ’u8];TargetBind‚Å‘Šè‚ğˆê“I‚ÉS‘©
+[State 3101, Í‚ñ‚¾‘ÌˆÊ’u8];TargetBindÅ‘êIÉS
 type = TargetBind
 trigger1 = time = 57
 pos = 0, -155
 
 ;--------------------------------
-[State 3101, •¨—“I‚ÈƒLƒƒƒ‰‚Ì•]
+[State 3101, IÈƒLÌ•]
 type = Width
 trigger1 = time = 0
-edge = 70,0 ;‰æ–Ê’[‚ğ‰Ÿ‚·•‚ğ•Ï‚¦‚éiƒIƒŒƒ“ƒW‚Ìüj
+edge = 70,0 ;Ê’[Ï‚iIWÌj
 
 ;--------------------------------
 [State 3101, Hit Spark]
@@ -6223,7 +6263,7 @@ pauseMoveTime = 65535
 superMoveTime = 65535
 ignoreHitPause = 1
 
-[State 3101, Hit];Hit”
+[State 3101, Hit];Hit
 type = HitAdd
 trigger1 = AnimElemtime(5) = 1
 trigger2 = AnimElemtime(6) = 1
@@ -6246,10 +6286,10 @@ trigger18 = AnimElemtime(22) = 1
 trigger19 = AnimElemtime(23) = 1
 trigger20 = AnimElemtime(24) = 1
 trigger21 = AnimElemtime(25) = 1
-trigger22 = AnimElemtime(26) = 1 ;ã•û”ò‚Î‚µ‚ÌˆêŒ‚
+trigger22 = AnimElemtime(26) = 1 ;Î‚ÌˆêŒ‚
 Value = 1
 
-[State 3201, damage];ƒ_ƒ[ƒW
+[State 3201, damage];_[W
 type = TargetLifeAdd
 trigger1 = AnimElemtime(5) = 1
 trigger2 = AnimElemtime(6) = 1
@@ -6265,9 +6305,9 @@ trigger11 = AnimElemtime(15) = 1
 trigger12 = AnimElemtime(16) = 1
 trigger13 = AnimElemtime(17) = 1
 value = floor(-25*fvar(3))
-kill = 0 ;ÅŒã‚ÌˆêŒ‚‚Ü‚ÅKO‚µ‚È‚¢
+kill = 0 ;ÅŒÌˆêŒ‚Ü‚KOÈ‚
 
-[State 3201, damage];ƒ_ƒ[ƒW
+[State 3201, damage];_[W
 type = TargetLifeAdd
 trigger1 = AnimElemtime(18) = 1
 trigger2 = AnimElemtime(19) = 1
@@ -6277,11 +6317,11 @@ trigger5 = AnimElemtime(22) = 1
 trigger6 = AnimElemtime(23) = 1
 trigger7 = AnimElemtime(24) = 1
 trigger8 = AnimElemtime(25) = 1
-trigger9 = AnimElemtime(26) = 1 ;ã•û”ò‚Î‚µ‚ÌˆêŒ‚
+trigger9 = AnimElemtime(26) = 1 ;Î‚ÌˆêŒ‚
 value = floor(-17*fvar(3))
-kill = 0 ;ÅŒã‚ÌˆêŒ‚‚Ü‚ÅKO‚µ‚È‚¢
+kill = 0 ;ÅŒÌˆêŒ‚Ü‚KOÈ‚
 
-[State 3201, ƒqƒbƒg’è‹`];ƒtƒB[ƒo[I
+[State 3201, qbg`];tB[o[I
 type = HitDef
 trigger1 = animelem = 32
 attr = S, HA
@@ -6301,13 +6341,14 @@ guardsound = s121,0
 ground.type = low
 ground.slidetime = 15
 ground.hittime = 45
+guard.hittime = (45) - 5
 ground.velocity = -1.5,-17
 guard.velocity = -10
 guard.ctrltime = 15
 air.velocity = -2,-17
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
-p2stateno = 3120 ;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“‚â‚ç‚ê—¬—p
+p2stateno = 3120 ;hVbg^Ct[ê—¬p
 yaccel = .75
 fall = 1
 fall.recover = 0
@@ -6324,7 +6365,7 @@ phase = 95
 persistent = 0
 ignorehitpause = 1
 
-[State 3000, EnvColor];ƒtƒ‰ƒbƒVƒ…
+[State 3000, EnvColor];tbV
 type = EnvColor
 trigger1 = movehit
 time = 2
@@ -6360,14 +6401,14 @@ sound = s8500,0
 darken = 0
 ;-------------------------------------
 
-[State 3201, I—¹]
+[State 3201, I]
 type = Changestate
 trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-;ƒ‰ƒCƒWƒ“ƒO‘Šè‚â‚ç‚ê
+;CWO
 [Statedef 3210]
 type = A
 movetype= H
@@ -6376,7 +6417,7 @@ velset = 0,0
 ctrl = 0
 
 ;---------------------------------------------
-[state 1050, SelfState];Helper‚Í•Ô‹p
+[state 1050, SelfState];HelperÍ•Ô‹p
 type = SelfState
 trigger1 = ishelper
 value = PrevStateNo
@@ -6399,7 +6440,7 @@ trigger1 = animtime = 0
 value = 3211
 
 ;---------------------------------------------------------------------------
-;ƒ‰ƒCƒWƒ“ƒO‘Šè‚â‚ç‚ê
+;CWO
 [Statedef 3211]
 type = A
 movetype= H
@@ -6424,7 +6465,7 @@ trigger1 = time>89
 value = 3212
 
 ;---------------------------------------------------------------------------
-;ƒ‰ƒCƒWƒ“ƒO‘Šè‚â‚ç‚êiã¸j
+;CWOiã¸j
 [Statedef 3212]
 type = A
 movetype= H
@@ -6644,7 +6685,7 @@ value = 0
 ctrl = 1
 
 ;
-; íŠÄ‹ƒXƒe[ƒgi]‚Qj
+; íÄXe[gi]Qj
 ;
 ;---------------------------------------------------------------------------
 [Statedef -2]
@@ -6845,21 +6886,21 @@ value = 0
 MoveCamera = 0,0
 IgnoreHitPause = 1
 ;
-[State -2, ƒfƒoƒbƒN(•Ï”Šm”F)]
+[State -2, fobN(ÏmF)]
 Type = DisplayToClipBoard
 Trigger1 = 1
-Text = "AI=%d,fvar(39)=%.2f,var(6)=%d,jvar(10)=%d,fvar(3)=%.3f,"
+Text = "AI=%d,fvar(39)=%.2f,var(6)=%d,jvar(10)=%d,fvar(3)=%.3f,"
 Params = var(59),fvar(39),var(6),var(10),fvar(3)
 IgnoreHitPause = 1
 
-[State -2, •Ï”Šm”FƒfƒoƒbƒN];‰¡
+[State -2, ÏmFfobN];
 type = AppendToClipboard
 trigger1 = 1
 text = "hittime=%d\n"
 params = enemynear,gethitvar(fall)
 IgnoreHitPause = 1
 
-[State -2, ‹——£Šm”FƒfƒoƒbƒN]
+[State -2, mFfobN]
 type = AppendToClipboard
 trigger1 = 1
 text = "P2X:%.2f,P2Y:%.2f,Vx%.2f,Vy%.2f,Py%.2f\n"
@@ -6868,9 +6909,9 @@ IgnoreHitPause = 1
 ;
 
 ;-----------------------------------
-;ƒCƒ“ƒgƒŠÖŒW
+;CgÖŒW
 ;-----------------------------------
-[State -2, 2l–Ú‚ÌƒCƒ“ƒgƒ]
+[State -2, 2lÚ‚ÌƒCg]
 type = ChangeState
 value = 190
 triggerall = RoundsExisted = 0
@@ -6878,9 +6919,9 @@ triggerall = TeamMode = Turns
 trigger1 = stateno = 5900
 
 ;-----------------------------------
-;ƒ_ƒ[ƒWƒ{ƒCƒX
+;_[W{CX
 ;-----------------------------------
-[State -2, ƒ_ƒ[ƒWƒ{ƒCƒX]
+[State -2, _[W{CX]
 type = PlaySnd
 triggerall = Time = 1
 triggerall = Alive
@@ -6892,7 +6933,7 @@ value = 4218,21 + (Random%4)
 channel = 0
 volume = 200
  
-[State -2, ’@‚«‚Â‚¯‚ç‚êƒ{ƒCƒX]
+[State -2, @Â‚{CX]
 type = PlaySnd
 triggerall = Time = 1
 triggerall = Alive
@@ -6903,61 +6944,61 @@ channel = 0
 volume = 180
 
 ;-----------------------------------
-;ƒXƒpƒLƒƒƒ““_–Å
+;XpL_
 ;-----------------------------------
-;DC“_–Å—p•Ï”ƒŠƒZƒbƒg
+;DC_Å—pÏZbg
 [State -2, varset]
 type = varset
-trigger1 = stateno != 3200 ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA
-trigger1 = stateno != 3201 ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA¬Œ÷
+trigger1 = stateno != 3200 ;CWOXsA
+trigger1 = stateno != 3201 ;CWOXsA
 trigger2 = MoveType = H
 var(7) = 0
 
-;DC“_–Å—p
+;DC_Å—p
 [State -2, varset]
 type = varset
 triggerall = MoveType != H
 triggerall = time <= 20
-trigger1 = stateno = [3200,3201] ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA
+trigger1 = stateno = [3200,3201] ;CWOXsA
 var(7) = 1
 
-;“Š‚°‹ZDC“_–Å—p•Ï”ƒŠƒZƒbƒg
+;ZDC_Å—pÏZbg
 [State -2, varset]
 type = varset
-trigger1 = stateno != [3200,3201] ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA
+trigger1 = stateno != [3200,3201] ;CWOXsA
 trigger2 = stateno = 3200
 trigger2 = animelemtime(3)>=0
 var(9) = 0
 
-;SC“_–Å—p•Ï”ƒŠƒZƒbƒg
+;SC_Å—pÏZbg
 [State -2, varset]
 type = varset
-trigger1 = stateno != 3000 ;ƒuƒ‰ƒXƒ^[ƒEƒFƒCƒu
-trigger1 = stateno != 3100 ;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“
-trigger1 = stateno != 3200 ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA
-trigger1 = stateno != 3201 ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA¬Œ÷
+trigger1 = stateno != 3000 ;uX^[EFCu
+trigger1 = stateno != 3100 ;hVbg^Ct[
+trigger1 = stateno != 3200 ;CWOXsA
+trigger1 = stateno != 3201 ;CWOXsA
 trigger2 = MoveType = H
 var(6) = 0
 
-;SC“_–Å—p
+;SC_Å—p
 [State -2, varset]
 type = varset
 triggerall = MoveType != H
 triggerall = time <= 20
-trigger1 = stateno = 3000 ;ƒuƒ‰ƒXƒ^[ƒEƒFƒCƒu
-trigger2 = stateno = 3100 ;ƒhƒ‰ƒ€ƒVƒ‡ƒbƒgƒ^ƒCƒt[ƒ“
-trigger3 = stateno = [3200,3201] ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA
+trigger1 = stateno = 3000 ;uX^[EFCu
+trigger2 = stateno = 3100 ;hVbg^Ct[
+trigger3 = stateno = [3200,3201] ;CWOXsA
 var(6) = 1
 
-;“Š‚°‹ZSC“_–Å—p•Ï”ƒŠƒZƒbƒg
+;ZSC_Å—pÏZbg
 [State -2, varset]
 type = varset
-trigger1 = stateno != [3200,3201] ;ƒ‰ƒCƒWƒ“ƒOƒXƒsƒA
+trigger1 = stateno != [3200,3201] ;CWOXsA
 trigger2 = stateno = 3200 || stateno = 3201
 trigger2 = animelemtime(3)>=0
 var(8) = 0
 
-[State -2, palfx];SC“_–Å
+[State -2, palfx];SC_
 type = palfx
 triggerall = time <= 20
 triggerall = time % 2 = 0
@@ -6972,7 +7013,7 @@ add = 256,256,256
 color = 1
 ignorehitpause = 1
 
-[State -2, palfx];DC“_–Å
+[State -2, palfx];DC_
 type = palfx
 triggerall = time <= 20
 triggerall = time % 2 = 0
@@ -6986,9 +7027,9 @@ color = 1
 ignorehitpause = 1
 
 ;-----------------------------------
-;ƒXƒpƒLƒƒƒ“‰‰o
+;XpLo
 ;-----------------------------------
-[State 3000, ƒX[ƒp[ƒLƒƒƒ“ƒZƒ‹];SC—p‰‰o
+[State 3000, X[p[LZ];SCpo
 type = Explod
 triggerall = time = 1
 triggerall = var(6) = 1
@@ -7010,7 +7051,7 @@ pausemovetime = 99999999
 removeongethit = 1
 
 
-[State 3009, ƒhƒŠ[ƒ€ƒLƒƒƒ“ƒZƒ‹];DC—p‰‰o
+[State 3009, h[LZ];DCpo
 type = Explod
 triggerall = time = 1
 triggerall = var(7) = 1
@@ -7030,7 +7071,7 @@ pausemovetime = 99999999
 removeongethit = 1
 
 ;-----------------------------------
-;ƒJƒEƒ“ƒ^[ŠÖŒW
+;JE^[ÖŒW
 ;-----------------------------------
 [state -2]
 type = varset
@@ -7043,13 +7084,13 @@ trigger1 = enemynear,movetype = A
 var(1) = 1
 
 ;-----------------------------------
-;ƒRƒ“ƒ{•â³
-;fvar(0): Šî–{•â³
-;fvar(1): ƒJƒEƒ“ƒ^[•â³
-;;fvar(2): ‘¼•â³
-;fvar(3): ‘Š‡
+;R{â³
+;fvar(0): {â³
+;fvar(1): JE^[â³
+;;fvar(2): â³
+;fvar(3): 
 ;-----------------------------------
-[state -2, varset];ƒŠƒZƒbƒg
+[state -2, varset];Zbg
 type = varset
 trigger1 = 1
 Trigger1 = RoundState = 0
@@ -7057,13 +7098,13 @@ trigger2 = p2MoveType != H
 trigger3 = enemynear,stateno = [120,155]
 fvar(0) = 1.0
 
-[state -2, varset];’l‚ª•‰”‚È‚ç0‚É‚·‚é
+[state -2, varset];lÈ‚0É‚
 type = VarSet
 trigger1 = p2MoveType = H
 trigger1 = enemynear,gethitvar(hitcount) >= 30
 fvar(0) = 0.01
 
-[state -2, varset];•â³
+[state -2, varset];â³
 type = varset
 trigger1 = enemynear,MoveType = H
 trigger1 = enemynear,gethitvar(hitcount) > 1
@@ -7071,40 +7112,40 @@ trigger1 = enemynear,gethitvar(hitcount) < 30
 fvar(0) = ((100.0-(25.0+(enemynear,gethitvar(hitcount)/2.0)*5.0))/100.0)
 IgnoreHitPause = 1
 
-[state -2, varset];ƒŠƒZƒbƒg
+[state -2, varset];Zbg
 type = varset
 trigger1 = enemynear,movetype != A
 fvar(1) = 0
 
-[state -2, varset];ƒJƒEƒ“ƒ^[
+[state -2, varset];JE^[
 type = varset
 trigger1 = enemynear,movetype = A
 fvar(1) = 0.05
 
-[state -2, varset];‘Š‡
+[state -2, varset];
 type = varset
 trigger1 = 1
 fvar(3) = fvar(0)+fvar(1)
 
-[state -2, attackmulset];UŒ‚—Í‚Ì”{”w’è
+[state -2, attackmulset];UÍ‚Ì”{w
 type = attackmulset
 trigger1 = 1
 value = fvar(3)
 
 ;-----------------------------------
-;c‘œÁ‹
+;c
 ;-----------------------------------
 [State -2, AfterImageTime]
 type = AfterImageTime
-trigger1 = stateno = 52 ;’…’n
+trigger1 = stateno = 52 ;n
 trigger1 = Time = 1
-trigger2 = movetype = H ;‚â‚ç‚ê
+trigger2 = movetype = H ;
 time = 0
 
 ;-----------------------------------
-;ƒNƒŒƒCƒW[ƒhƒ‰ƒ€‘Šè‚â‚ç‚êƒuƒŒ[ƒL‰¹
+;NCW[hu[L
 ;-----------------------------------
-[State 801, ‰¹‚ğ–Â‚ç‚·];½Şº°
+[State 801, Â‚ç‚·];Şº
 type = PlaySnd
 trigger1 = numtarget(1102)
 trigger1 = target(1102),stateno = 1150
@@ -7113,14 +7154,14 @@ trigger1 = target(1102),animelemtime(1)=1
 value = 40, 3
 
 ;-----------------------------------
-;‚»‚Ì‘¼
+;Ì‘
 ;-----------------------------------
-[State -2, StopSnd];ƒ_ƒbƒVƒ…‚Ì‰¹~‚ß
+[State -2, StopSnd];_bVÌ‰~
 type = StopSnd
 trigger1 = stateno != 100 && stateno != 99
 channel = 1
 
-[State -2, VarAdd];ƒnƒCƒWƒƒƒ“ƒv”»’è
+[State -2, VarAdd];nCWv
 type = varadd
 trigger1 = 1
 trigger1 = var(3)>-100
@@ -7128,7 +7169,7 @@ v = 3
 value = -1
 
 ;-----------------------------------
-;AI•à‚«§Œä—p
+;AIp
 ;-----------------------------------
 [State -2, Ctrl]
 type = ChangeState
@@ -7138,9 +7179,9 @@ value = 0
 ctrl = 1
 
 ;-----------------------------------
-;‡ŠJn‘O‚Ü‚Å–³“G
+;JnOÜ‚Å–G
 ;-----------------------------------
-[State -2, NotHitBy];–³“G
+[State -2, NotHitBy];G
 type = NotHitBy
 trigger1 = roundstate = 0
 trigger2 = roundstate = 1
@@ -7263,7 +7304,7 @@ persistent = 0
 ignorehitpause = 1
 postype = right
 ;--------------------------------------------------------------
-;1aD˜3oE?I?OA
+;1aD3oE?I?OA
 ;--------------------------------------------------------------
 [Statedef 23680]
 type = S
@@ -7307,7 +7348,7 @@ time = -1
 facing = 1
 pos = (1+ifelse(Parent,fvar(36) = 1,-1,0)+ifelse(Parent,fvar(36) = 2,-2,0))*ifelse(Facing = -1,-1,1),0
 ;--------------------------------------------------------------
-;1aD˜~o
+;1aD~o
 ;--------------------------------------------------------------
 [Statedef 23681]
 type = S
@@ -7332,7 +7373,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 ;--------------------------------------------------------------
-;1aD˜OO
+;1aDOO
 ;--------------------------------------------------------------
 [Statedef 23682]
 type = S
@@ -7357,23 +7398,23 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 ;
-; €íŠÄ‹ƒXƒe[ƒgi]‚Rj
+; íÄXe[gi]Rj
 ;
 ;---------------------------------------------------------------------------
 [Statedef -3]
 ;-----------------------------------
-;‚±‚±‚ÍuƒWƒƒƒ“ƒvv‚©uƒoƒbƒNƒXƒeƒbƒvv‚ğ‚µ‚½Œã‚É
-;’…’n‚·‚é‰¹‚ğ–Â‚ç‚·İ’è‚ğ‚µ‚Ä‚¢‚Ü‚·B
+;ÍuWvvuobNXebvv
+;né‰¹Â‚ç‚·İ’Ä‚Ü‚B
 ;-----------------------------------
-[State -3, ’…’n]
+[State -3, n]
 type = PlaySnd
 triggerall = Time = 1
-trigger1 = Stateno = 52 ;’…’nƒXƒe[ƒg
-trigger2 = Stateno = 106 ;ƒoƒbƒNƒXƒeƒbƒvŒã‚Ì’…’nƒXƒe[ƒg
-trigger3 = Stateno = 1301 ;ƒJƒ‹ƒtƒHƒ‹ƒjƒAƒƒ}ƒ“ƒX
+trigger1 = Stateno = 52 ;nXe[g
+trigger2 = Stateno = 106 ;obNXebvÌ’nXe[g
+trigger3 = Stateno = 1301 ;JtHjA}X
 value = 40, 2
 
-[State -3, jump];ƒWƒƒƒ“ƒv‰¹
+[State -3, jump];Wv
 type = PlaySnd
 triggerall = time = 1
 trigger1 = Stateno = 40 || Stateno = 41
@@ -7381,7 +7422,7 @@ trigger1 = var(3) <= 0
 value = 40, 0
 channel = 3
 
-[State -3, 2];ƒWƒƒƒ“ƒv‰¹
+[State -3, 2];Wv
 type = PlaySnd
 triggerall = time = 1
 trigger1 = Stateno = 40 || Stateno = 41
@@ -7389,7 +7430,7 @@ trigger1 = var(3) > 1
 value = 40, 1
 channel = 3
 
-[State -3, ƒoƒbƒNƒ_ƒbƒVƒ…]
+[State -3, obN_bV]
 type = PlaySnd
 triggerall = Time = 1
 ;trigger1 = Stateno = 100 
@@ -7397,16 +7438,16 @@ trigger1 = Stateno = 105
 value = 105, 0
 
 ;-----------------------------------
-;ƒnƒCƒWƒƒƒ“ƒvˆ—
+;nCWv
 ;-----------------------------------
-[State -3, VarSet];ƒnƒCƒWƒƒƒ“ƒvÁ‹
+[State -3, VarSet];nCWv
 type = VarSet
 trigger1 = stateno = 52
 trigger1 = time = 0
 v = 3
 value = 0
 
-[State -3, VarSet];ƒnƒCƒWƒƒƒ“ƒv”»’è
+[State -3, VarSet];nCWv
 type = VarSet
 trigger1 = stateno = 10
 trigger1 = time = 0
@@ -7417,7 +7458,7 @@ trigger4 = var(59)>0 && fvar(39)=3.0 && random<450
 v = 3
 value = 20
 
-[State -3, VelSet];ƒnƒCƒWƒƒƒ“ƒv‘O•û
+[State -3, VelSet];nCWvO
 type = VelSet
 trigger1 = stateno = 50
 trigger1 = anim = 42
@@ -7425,7 +7466,7 @@ trigger1 = time = 1
 trigger1 = var(3) >= 1
 x = 5.5
 
-[State -3, VelSet];ƒnƒCƒWƒƒƒ“ƒvŒã•û
+[State -3, VelSet];nCWv
 type = VelSet
 trigger1 = stateno = 50
 trigger1 = anim = 43
@@ -7434,9 +7475,9 @@ trigger1 = var(3) >= 1
 x = -6
 
 ;-----------------------------------
-;¬ƒWƒƒƒ“ƒvˆ—
+;Wv
 ;-----------------------------------
-[State -3, VarSet];¬ƒWƒƒƒ“ƒv”»’è
+[State -3, VarSet];Wv
 type = VarSet
 triggerall = stateno = 40 || stateno = 41
 trigger1 = var(59)=0
@@ -7451,7 +7492,7 @@ trigger4 = random<250 || (var(59)>7 && random<350)
 v = 4
 value = 1
 
-[State -3, VarSet];¬ƒWƒƒƒ“ƒvÁ‹
+[State -3, VarSet];Wv
 type = VarSet
 triggerall = stateno = 40 || stateno = 41
 trigger1 = var(59)=0
@@ -7461,7 +7502,7 @@ trigger2 = p2bodydist x > 130-(fvar(39)=3.0)*30 || (enemynear(var(58)),statetype
 v = 4
 value = 0
 
-[State -3, VelAdd];¬ƒWƒƒƒ“ƒv
+[State -3, VelAdd];Wv
 type = VelAdd
 triggerall = stateno = 50
 trigger1 = time = 1
@@ -7469,9 +7510,9 @@ trigger1 = var(4) = 1
 y = 4;3
 
 ;-----------------------------------
-;c‘œˆ—
+;c
 ;-----------------------------------
-[State -3, AfterImage];c‘œ
+[State -3, AfterImage];c
 type = AfterImage
 trigger1 = stateno = 50
 trigger1 = time = 1
@@ -7487,9 +7528,9 @@ palmul = 1,1,1
 trans = add1
 
 ;-----------------------------------
-;‚»‚Ì‘¼
+;Ì‘
 ;-----------------------------------
-[State -3, ”ò‚Ñ‰z‚¦–h~]
+[State -3, Ñ‰zh~]
 type = Width
 triggerall = Stateno != 801 && Stateno != 3201
 trigger1 = FrontEdgeDist < 8 && MoveType != H
@@ -7576,10 +7617,10 @@ pausemovetime = 255
 supermovetime = 255
 ignorehitpause = 1
 ;---------------------------------------------------------------------------
-;AIƒwƒ‹ƒp[
+;AIwp[
 ;---------------------------------------------------------------------------
 [Statedef 10000]
-anim=10000;‚È‚É‚à•\¦‚µ‚È‚¢±ÆÒ‚Å‚à‚¢‚¢‚¯‚Ç“ü‚ê‚È‚­‚Ä‚à‘S‘R–â‘è‚È‚¢
+anim=10000;È‚É‚\È‚Ò‚Å‚Ç“È‚Ä‚SRÈ‚
 ctrl=0
 
 [State 10000]
@@ -7592,12 +7633,12 @@ type = NotHitBy
 value = SCA
 trigger1 = 1
 
-[State 10000,ŠÔˆá‚¢‚Å–{‘Ì‚ª—ˆ‚½‚ç—§‚¿‚ÖˆÚs]
+[State 10000,Ôˆá‚¢Å–{Ì‚ç—§ÖˆÚs]
 type=selfState
 trigger1=!ishelper
 value=0
 
-[State 10000,ƒvƒŒƒCƒ„[”»’è]
+[State 10000,vC[]
 type=varset
 trigger1=command="up"&&root,command="up"
 trigger2=command="down"&&root,command="down"
@@ -7612,7 +7653,7 @@ trigger10=command="z"&&root,command="z"
 trigger11=command="start"&&root,command="start"
 var(59)=-1
 
-[State 10000,—§‚Á‚½‚çÁ¸]
+[State 10000,]
 Type = DestroySelf
 triggerAll = isHelper
 Trigger1 = root,var(59)||var(59)=-1
@@ -7628,7 +7669,7 @@ trigger10=command="y"&&root,command="y"
 trigger11=command="z"&&root,command="z"
 trigger12=command="start"&&root,command="start"
 
-[State 10000,Ì×¸ŞON]
+[State 10000,×¸ON]
 type=varset
 triggerall=var(59)!=-1
 trigger1=root,command="up"

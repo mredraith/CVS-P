@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Demitri by varo_hades                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES
 ;
@@ -215,7 +215,7 @@ type = PlaySnd
 trigger1 = AnimElem = 10
 value = 1000, 1
 
-[State 1050, Vel];¼Óµµ¸¦ ¼³Á¤
+[State 1050, Vel];Óµ 
 type = VelSet
 trigger1 = Animelem = 11
 x = -2 - Var(10)
@@ -333,7 +333,7 @@ type = PlaySnd
 trigger1 = AnimElem = 10
 value = 1000, 1
 
-[State 1080, Vel];¼Óµµ¸¦ ¼³Á¤
+[State 1080, Vel];Óµ 
 type = VelSet
 trigger1 = Animelem = 11
 x = -2 - Var(10)
@@ -421,7 +421,7 @@ trigger1 = PrevStateNo = [150, 153]
 trigger1 = Time = 0
 value = 1100,2
 
-[State 1100, 1];¹«Àû
+[State 1100, 1];
 type = NotHitBy
 trigger1 = Animelem = 21, <= 0
 value = SCA
@@ -458,8 +458,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -3.1, -10.2
 ground.cornerPush.velOff = 0
@@ -485,18 +485,18 @@ envShake.time = 14
 envShake.ampl = 4
 envShake.freq = 120
 
-[State 1100, 3];¼Ó¼º º¯°æ
+[State 1100, 3];Ó¼ 
 type = StatetypeSet
 trigger1 = Animelem = 7
 value = A
 
-[State 1100, 4];¼Óµµ¸¦ ÁØ´Ù
+[State 1100, 4];Óµ Ø´
 type = VelSet
 trigger1 = Animelem = 6
 x = 0
 y = -6.8 + ifelse(Var(10) = 0, 0, ifelse(Var(10) = 1, -0.8, -1.6) )
 
-[State 1100, 5];Áß·Â
+[State 1100, 5];ß·
 type = Gravity
 trigger1 = Animelem = 6, >= 0
 
@@ -558,7 +558,7 @@ trigger1 = PrevStateNo = [150, 153]
 trigger1 = Time = 0
 value = 1100,2
 
-[State 1130, 1];¹«Àû
+[State 1130, 1];
 type = NotHitBy
 trigger1 = Animelem = 8, <= 0
 value = SCA
@@ -613,8 +613,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -2.3, -11.7
 ground.cornerPush.velOff = 0
@@ -640,18 +640,18 @@ envShake.time = 14
 envShake.ampl = 4
 envShake.freq = 120
 
-[State 1130, 3];¼Ó¼º º¯°æ
+[State 1130, 3];Ó¼ 
 type = StatetypeSet
 trigger1 = Animelem = 7
 value = A
 
-[State 1130, 4];¼Óµµ¸¦ ÁØ´Ù
+[State 1130, 4];Óµ Ø´
 type = VelSet
 trigger1 = Animelem = 6
 x = 0
 y = -8.1
 
-[State 1130, 5];Áß·Â
+[State 1130, 5];ß·
 type = Gravity
 trigger1 = Animelem = 6, >= 0
 
@@ -692,7 +692,7 @@ name = "Dust"
 postype = p1
 ownpal = 1
 
-[State 1150, 1];¹«Àû
+[State 1150, 1];
 type = NotHitBy
 trigger1 = Animelem = 21, <= 0
 value = SCA
@@ -729,8 +729,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -3.1, -10.2
 ground.cornerPush.velOff = 0
@@ -756,18 +756,18 @@ envShake.time = 14
 envShake.ampl = 4
 envShake.freq = 120
 
-[State 1150, 3];¼Ó¼º º¯°æ
+[State 1150, 3];Ó¼ 
 type = StatetypeSet
 trigger1 = Animelem = 6
 value = A
 
-[State 1150, 4];¼Óµµ¸¦ ÁØ´Ù
+[State 1150, 4];Óµ Ø´
 type = VelSet
 trigger1 = Animelem = 6
 x = 3.5
 y = -6.6 + ifelse(Var(10) = 0, 0, ifelse(Var(10) = 1, -0.9, -1.7) )
 
-[State 1150, 5];Áß·Â
+[State 1150, 5];ß·
 type = Gravity
 trigger1 = Animelem = 6, >= 0
 
@@ -828,7 +828,7 @@ trigger1 = !Time
 value = 0,1000
 channel = 1
 
-[State 1180, 1];¹«Àû
+[State 1180, 1];
 type = NotHitBy
 trigger1 = Animelem = 9, <= 0
 value = SCA
@@ -883,8 +883,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.3, -11.2
 ground.cornerPush.velOff = 0
@@ -910,18 +910,18 @@ envShake.time = 14
 envShake.ampl = 4
 envShake.freq = 120
 
-[State 1180, 3];¼Ó¼º º¯°æ
+[State 1180, 3];Ó¼ 
 type = StatetypeSet
 trigger1 = Animelem = 6
 value = A
 
-[State 1180, 4];¼Óµµ¸¦ ÁØ´Ù
+[State 1180, 4];Óµ Ø´
 type = VelSet
 trigger1 = Animelem = 6
 x = 3.5
 y = -7.6
 
-[State 1180, 5];Áß·Â
+[State 1180, 5];ß·
 type = Gravity
 trigger1 = Animelem = 6, >= 0
 
@@ -1048,8 +1048,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.6, 0
 ground.cornerPush.velOff = 0
@@ -1101,8 +1101,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.6, 0
 ground.cornerPush.velOff = 0
@@ -1311,8 +1311,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.9, 0
 ground.cornerPush.velOff = 0
@@ -1363,8 +1363,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.9, 0
 ground.cornerPush.velOff = 0
@@ -2271,7 +2271,7 @@ trigger1 = !Time
 value = 0,1000
 channel = 1
 
-[State 1430, 1];¼Ó¼º º¯°æ
+[State 1430, 1];Ó¼ 
 type = StatetypeSet
 trigger1 = Animelem = 8
 value = A
@@ -2573,12 +2573,12 @@ type = PlaySnd
 trigger1 = AnimElem = 15
 value = 1000, 1
 
-[State 1550, Vel];¼Óµµ¸¦ ¼³Á¤
+[State 1550, Vel];Óµ 
 type = VelSet
 trigger1 = AnimelemTime(15) < 0
 y = .6
 
-[State 1550, Vel];¼Óµµ¸¦ ¼³Á¤
+[State 1550, Vel];Óµ 
 type = VelSet
 trigger1 = AnimelemTime(15) = 1
 x = -2 - Var(10)
@@ -2682,12 +2682,12 @@ type = PlaySnd
 trigger1 = AnimElem = 15
 value = 1000, 1
 
-[State 1580, Vel];¼Óµµ¸¦ ¼³Á¤
+[State 1580, Vel];Óµ 
 type = VelSet
 trigger1 = AnimelemTime(15) < 0
 y = .6
 
-[State 1580, Vel];¼Óµµ¸¦ ¼³Á¤
+[State 1580, Vel];Óµ 
 type = VelSet
 trigger1 = AnimelemTime(15) = 1
 x = -2 - Var(10)
@@ -2772,8 +2772,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.54, -5.25
 ground.cornerPush.velOff = 0
@@ -2859,8 +2859,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.54, -5.25
 ground.cornerPush.velOff = 0

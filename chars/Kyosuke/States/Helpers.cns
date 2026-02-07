@@ -191,7 +191,6 @@ sparkxy = 0,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = 11
 ground.velocity = -8.125*IfElse((var(20)),.5,1)
 air.velocity = -4.5,-7
 yaccel = .5
@@ -239,7 +238,6 @@ sparkxy = 0,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = 11
 ground.velocity = -8.125*IfElse((var(20)),.5,1)
 air.velocity = -4.5,-7
 yaccel = .5
@@ -287,7 +285,6 @@ sparkxy = 0,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = 11
 ground.velocity = -8.125*IfElse((var(20)),.5,1)
 air.velocity = -4.5,-7
 yaccel = .5
@@ -335,7 +332,6 @@ sparkxy = 0,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = 11
 ground.velocity = -8.125*IfElse((var(20)),.5,1)
 air.velocity = -4.5,-7
 yaccel = .5
@@ -1132,7 +1128,7 @@ trigger1 = Time = 0
 trigger1 = IsHelper(3016)
 var(40) = 3016
 
-;------------------------ ?≠
+;------------------------ ?
 [State 0, var]
 type = varset
 trigger1 = Time = 0
@@ -1396,7 +1392,7 @@ envshake.time = 10
 envshake.ampl = 2
 forcestand = 1
 
-[State -2,çU???Ì?ﬁ?ª? ]
+[State -2,U??????]
 type = null;ParentVarSet
 trigger1 = root,projhittime(var(40)) = 1
 fvar(11) = 2
@@ -1734,7 +1730,6 @@ sparkxy = 0,-60
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
-guard.hittime = 16
 ground.velocity = -.5,-9.5
 air.velocity = -.5,-9.5
 guard.velocity = -10
@@ -1783,7 +1778,6 @@ sparkxy = 0,-60
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
-guard.hittime = 16
 ground.velocity = -.5,-9.5
 air.velocity = -.5,-9.5
 guard.velocity = -10

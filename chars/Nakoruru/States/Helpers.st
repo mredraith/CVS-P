@@ -1,6 +1,6 @@
 ; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; HELPER STATES =
 ;
@@ -360,8 +360,8 @@ fall.animtype = Hard
 ground.type = High
 air.type = High
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -10.52, 0
 guard.velocity = -10.52

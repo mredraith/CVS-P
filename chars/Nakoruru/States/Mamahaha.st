@@ -1,6 +1,6 @@
 ; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; MAMAHAHA STATES 
 ;
@@ -1299,8 +1299,8 @@ fall.animtype = Hard
 ground.type = High
 air.type = High
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -4.31, -7.27
 guard.velocity = -10.52
@@ -1550,8 +1550,8 @@ fall.animtype = Hard
 ground.type = High
 air.type = High
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -4.31, -7.27
 guard.velocity = -10.52
@@ -2044,8 +2044,8 @@ fall.animtype = Hard
 ground.type = High
 air.type = High
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -5.32, -7.33
 guard.velocity = -10.52
@@ -2090,8 +2090,8 @@ fall.animtype = Hard
 ground.type = Low
 air.type = Low
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -5.32, -7.33
 guard.velocity = -10.52
@@ -2565,8 +2565,8 @@ fall.animtype = Hard
 ground.type = High
 air.type = High
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.velocity = -10.52, 0
 guard.velocity = -10.52
@@ -2786,8 +2786,8 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 down.hittime = 60
 ground.velocity = 0, -13.66

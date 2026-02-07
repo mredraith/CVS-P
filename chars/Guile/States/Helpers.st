@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Guile by Jmorphman                      |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -205,8 +205,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -255,8 +255,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -552,8 +552,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -683,8 +683,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = ifElse(var(13) % 2 = 0, -10.52, 10.52), 0
@@ -732,8 +732,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = High
 ground.hitTime = 15
+guard.hittime = (15) - 5
 ground.slideTime = 15
-guard.hitTime = 15
 air.hitTime = 60
 ground.velocity = -4.32, -7.49
 ground.cornerPush.velOff = 0

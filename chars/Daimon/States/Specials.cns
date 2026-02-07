@@ -3,7 +3,7 @@
 ; CVS Goro Daimon POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -147,6 +147,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
 yaccel = 0.46
@@ -177,6 +178,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
 yaccel = 0.46
@@ -207,6 +209,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
 yaccel = 0.46
@@ -238,6 +241,7 @@ guardsound = s130,0
 ground.type = trip
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
 yaccel = 0.46

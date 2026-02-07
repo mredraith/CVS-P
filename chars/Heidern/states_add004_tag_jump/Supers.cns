@@ -3,7 +3,7 @@
 ; CVS Heidern POTS/Infinite by Falcondurap
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -214,7 +214,7 @@ pausetime = 0,0
 guard.pausetime = 12,11
 ground.slidetime = 17
 ground.hittime = 17
-guard.hittime = 17
+guard.hittime = (17) - 5
 guard.slidetime = 17
 guard.ctrltime = 17
 ground.velocity = -21.1796875
@@ -370,6 +370,7 @@ guard.sparkno = -1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 Palfx.time = 56
 Palfx.add = 40,-70,-200
 Palfx.sinadd = 40,30,0,10
@@ -710,7 +711,7 @@ pausetime = 0,0
 guard.pausetime = 12,11
 ground.slidetime = 17
 ground.hittime = 17
-guard.hittime = 17
+guard.hittime = (17) - 5
 guard.slidetime = 17
 guard.ctrltime = 17
 ground.velocity = -21.1796875
@@ -865,6 +866,7 @@ guard.sparkno = -1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 Palfx.time = 56
 Palfx.add = 40,-70,-200
 Palfx.sinadd = 40,30,0,10
@@ -1321,7 +1323,7 @@ yaccel = .5
 guard.pausetime = 12,11
 ground.slidetime = 17
 ground.hittime = 17
-guard.hittime = 17
+guard.hittime = (17) - 5
 guard.slidetime = 17
 guard.ctrltime = 17
 guard.velocity = 0
@@ -1712,6 +1714,7 @@ guardsound=s130,1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -4.027801513671875,-6.5
 guard.velocity = -14.90625
 guard.ctrltime = 21
@@ -2025,7 +2028,7 @@ yaccel = .5
 guard.pausetime = 12,11
 ground.slidetime = 17
 ground.hittime = 17
-guard.hittime = 17
+guard.hittime = (17) - 5
 guard.slidetime = 17
 guard.ctrltime = 17
 guard.velocity = 0
@@ -2440,6 +2443,7 @@ guard.sparkno = s7001;1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -4.027801513671875,-8.5
 guard.velocity = -14.90625
 guard.ctrltime = 21
@@ -2772,7 +2776,7 @@ yaccel = .5
 guard.pausetime = 12,11
 ground.slidetime = 17
 ground.hittime = 17
-guard.hittime = 17
+guard.hittime = (17) - 5
 guard.slidetime = 17
 guard.ctrltime = 17
 guard.velocity = 0
@@ -3205,6 +3209,7 @@ guard.sparkno = s7001;1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -4.027801513671875,-6.5
 guard.velocity = -14.90625
 guard.ctrltime = 21
@@ -3554,7 +3559,7 @@ yaccel = .5
 guard.pausetime = 12,11
 ground.slidetime = 17
 ground.hittime = 17
-guard.hittime = 17
+guard.hittime = (17) - 5
 guard.slidetime = 17
 guard.ctrltime = 17
 guard.velocity = 0
@@ -4021,6 +4026,7 @@ guard.sparkno = s7001;1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -4.027801513671875,-8.5
 guard.velocity = -14.90625
 guard.ctrltime = 21
@@ -5345,7 +5351,7 @@ type = RemoveExplod
 trigger1 = time = 0
 id = 1105
 
-;---------------------[UŒ‚]
+;---------------------[U]
 [State 240, 2]
 type = HitDef
 trigger1 = animelem = 7
@@ -5364,6 +5370,7 @@ guard.sparkno = s7001;
 ground.type = low
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -2,-9
 air.velocity = -2,-9
 guard.velocity = -12
@@ -5379,8 +5386,8 @@ ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 guard.cornerpush.veloff = -12
 
-;---------------------[Œø‰Ê‰¹]
-[State a];U‚è
+;---------------------[Ê‰]
+[State a];U
 type = PlaySnd
 trigger1 = animelem = 9
 value = 1101,0
@@ -5423,14 +5430,14 @@ trigger1= 1
 trans=addalpha
 alpha=256,256
 ignorehitpause=1
-;---------------------[Œø‰Ê‰¹]
-[State a];U‚è
+;---------------------[Ê‰]
+[State a];U
 type = null;PlaySnd
 trigger1 = time = 1
 value = S1,2
 
-;---------------------[ƒwƒ‹ƒp[]
-[state a];UŒ‚
+;---------------------[wp[]
+[state a];U
 type = Helper
 trigger1 = animelem = 1
 id = 3510
@@ -5444,7 +5451,7 @@ pausemovetime = 0
 keyctrl = 0
 ownpal = 1
 
-[state a];UŒ‚
+[state a];U
 type = Helper
 trigger1 = animelem = 3
 id = 3510
@@ -5458,7 +5465,7 @@ pausemovetime = 0
 keyctrl = 0
 ownpal = 1
 
-[state a];UŒ‚
+[state a];U
 type = Helper
 trigger1 = animelem = 5
 id = 3510
@@ -5472,7 +5479,7 @@ pausemovetime = 0
 keyctrl = 0
 ownpal = 1
 
-[state a];UŒ‚
+[state a];U
 type = Helper
 trigger1 = animelem = 7
 id = 3510
@@ -5486,7 +5493,7 @@ pausemovetime = 0
 keyctrl = 0
 ownpal = 1
 
-[state a];UŒ‚
+[state a];U
 type = Helper
 trigger1 = animelem = 9
 id = 3500
@@ -5524,7 +5531,7 @@ sprpriority = 2
 type = Trans
 trigger1 = 1
 trans = add
-;---------------------[ƒGƒtƒFƒNƒg]
+;---------------------[GtFNg]
 [State a]
 type = EnvColor
 trigger1 = movehit = 1
@@ -5534,7 +5541,7 @@ time = 1
 value = 255,0,0
 under = 2
 
-;---------------------[UŒ‚]
+;---------------------[U]
 [State 210, 2]
 type = HitDef
 trigger1 = hitcount <= 2
@@ -5555,6 +5562,7 @@ guard.sparkno = s7001;
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -4,-7.2
 air.velocity = -4.5,-7.2
 yaccel = 0.47
@@ -5597,14 +5605,14 @@ juggle = 8
 velset = 0,0
 sprpriority = 2
 
-;---------------------[‰‰o]
-[State 1];ƒJƒƒ‰ŒÅ’è
+;---------------------[o]
+[State 1];JÅ’
 type = screenbound
 trigger1 = 1
 value = 1
 movecamera = 1
 
-;---------------------[ƒGƒtƒFƒNƒg]
+;---------------------[GtFNg]
 [state a]
 type = removeexplod
 trigger1 = animelem = 1
@@ -5616,7 +5624,7 @@ type=playsnd
 trigger1=time=0
 value = 3,0
 
-[State explod];ŒŒ
+[State explod];
 type = Explod
 trigger1 = animelemtime(5) = 27
 anim = 17008
@@ -5646,7 +5654,7 @@ trans = add
 alpha = 256,256
 ownpal = 1
 
-[State explod];ŒŒ
+[State explod];
 type = Explod
 trigger1 = animelem = 13
 anim = 17008
@@ -5678,7 +5686,7 @@ time = 1
 value = 255,0,0
 under = 0
 
-;---------------------[ƒwƒ‹ƒp[]
+;---------------------[wp[]
 [state a];
 type = Helper
 trigger1 = time = 0
@@ -5692,7 +5700,7 @@ persistent = 0
 ignorehitpause = 1
 keyctrl = 0
 ownpal = 1
-;---------------------[ƒTƒEƒ“ƒh]
+;---------------------[TEh]
 [State 810, Grab Sound];
 type = PlaySnd
 trigger1 = animelemtime(5) = 27
@@ -5709,15 +5717,15 @@ value = 2, 11
 type = PlaySnd
 trigger1 = animelem = 13
 value = 1,5
-;---------------------[ˆÚ“®]
+;---------------------[Ú“]
 
-;---------------------[‰‰o]
-[State 210, Width];‰æ–Ê’[‚Ì‰Ÿ‚µ–ß‚µ”»’è
+;---------------------[o]
+[State 210, Width];Ê’[Ì‰ß‚
 type = Width
 trigger1 = time = 0
 edge = 60,0
 
-;---------------------[‘Šè§Œä]
+;---------------------[è§]
 [state a]
 type = targetbind
 trigger1 = time = 1
@@ -5743,6 +5751,7 @@ guard.sparkno = -1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 p2stateno = 3531
 
 [State 0, HitAdd]
@@ -5758,7 +5767,7 @@ value = -35
 kill = 0
 numhits = 0
 
-;---------------------[—§‚¿ƒXƒe[ƒg‚É–ß‚é]
+;---------------------[Xe[gÉ–ß‚]
 [state a]
 type = changestate
 trigger1 = animtime = 0
@@ -5794,7 +5803,7 @@ trigger1 = time = 0
 v = 2
 value = 0
 
-;---------------------[“§‰ß]
+;---------------------[]
 [state a]
 type = angledraw
 trigger1 = animelem = 2,<0
@@ -5833,12 +5842,12 @@ triggerall = enemy,authorname!="Falcon Rapper"&&enemy,name!="Heidern"
 triggerall = enemy, stateno!=3600
 trigger1 = 1
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-;---------------------[‰‰o]
+;---------------------[o]
 [State 820, 1]
 type = ChangeAnim2
 Trigger1 = Time = 0
 value = 3530
-;---------------------[ˆÚ“®]
+;---------------------[Ú“]
 
 [State a]
 type = selfstate
@@ -5861,13 +5870,13 @@ type = posset
 trigger1 = time = 0
 y = 0
 
-;---------------------[‰‰o]
+;---------------------[o]
 [State 820, 1]
 type = ChangeAnim2
 Trigger1 = Time = 0
 value = 3530
 
-;---------------------[ˆÚ“®]
+;---------------------[Ú“]
 
 [State a]
 type = selfstate
@@ -5885,8 +5894,8 @@ physics = N
 velset = 0,0
 sprpriority = -1
 
-;---------------------[‰‰o]
-[State 700, 2];–³“G‚Ìó‘Ô‚ğì‚é
+;---------------------[o]
+[State 700, 2];GÌÔ‚
 type = NotHitBy
 trigger1 = 1
 value = SCA
@@ -5896,7 +5905,7 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 3531
 
-;---------------------[‘¬“x]
+;---------------------[x]
 [state a];28
 type = velset
 trigger1 = time = 1
@@ -5914,14 +5923,14 @@ type = VelAdd
 Trigger1 = time >= 1
 y = .48
 
-;---------------------[‰‰o]
-[State 1];ƒJƒƒ‰ŒÅ’è
+;---------------------[o]
+[State 1];JÅ’
 type = screenbound
 trigger1 = 1
 value = 1
 movecamera = 1
 
-;---------------------[ƒXƒe[ƒgˆÚs]
+;---------------------[Xe[gÚs]
 [State 821, 3]
 type = SelfState
 triggerall = Vel Y > 0
@@ -6908,6 +6917,7 @@ guard.sparkno = -1
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 p2stateno = 3531
 
 [State 0, Explod]

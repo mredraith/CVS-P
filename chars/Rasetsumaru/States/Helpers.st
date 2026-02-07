@@ -1,6 +1,6 @@
 ; ________________________
 ;| Haohmaru by Chazzanova |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -232,8 +232,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -1.315, -10.52
@@ -280,8 +280,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -1.315, -10.52
@@ -330,8 +330,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -1, -10.52
@@ -380,8 +380,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -5.40, -5.25
@@ -871,8 +871,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -1.315, -10.52
@@ -918,8 +918,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -1.315, -10.52
@@ -1192,8 +1192,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -8

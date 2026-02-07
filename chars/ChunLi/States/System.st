@@ -7,7 +7,7 @@
 
 ; _________________________________________
 ;| Chun-Li by Jmorphman                    |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SYSTEM STATES=
 ;
@@ -2510,7 +2510,7 @@ trigger31 = Enemy, Name = "Clone Kyo"
 trigger32 = Enemy, Name = "Demitri" || Enemy, Name = "Demitri Maximoff" || Enemy, Name = "Demitri Maximov" || Enemy, Name = "Demitri(DS)"
 trigger33 = Enemy, Name = "Devo"
 trigger34 = Enemy, Name = "Devil Gundam"
-trigger35 = Enemy, Name = "Dio Brando" || Enemy, Name = "Dio"  || Enemy, Name = "Shadow Dio" || Enemy, Name = "Final Dio" || Enemy, Name = "DIO-ShadowFace" || Enemy, Name = "?·????"
+trigger35 = Enemy, Name = "Dio Brando" || Enemy, Name = "Dio"  || Enemy, Name = "Shadow Dio" || Enemy, Name = "Final Dio" || Enemy, Name = "DIO-ShadowFace" || Enemy, Name = "?????"
 trigger36 = Enemy, Name = "Dr. Doom By {_Carnificina_}" || Enemy, Name = "Dr. Doom" || Enemy, Name = "Dr.Doom" || Enemy, Name = "Doctor Doom" || Enemy, Name = "DoctorDoom" || Enemy, Name = "MvC2 Doom by Kamekaze" || Enemy, Name = "Dr. Doom by WhiteMagic2002"
 trigger37 = Enemy, Name = "Venom"
 trigger38 = Enemy, Name = "Foxy"
@@ -3552,8 +3552,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 12 + 2 * var(9)
+guard.hittime = (12 + 2 * var(9)) - 5
 ground.slideTime = 12 + 2 * var(9)
-guard.hitTime = 12
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -2.41, -4.49), 0
 ground.cornerPush.velOff = 0

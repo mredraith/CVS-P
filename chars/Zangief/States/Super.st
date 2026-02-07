@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Zangief by varo_hades                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SUPER STATES=
 ;
@@ -5555,8 +5555,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 2,-8.5
 ground.cornerPush.velOff = 0
@@ -5605,8 +5605,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -3,-8.5
 ground.cornerPush.velOff = 0
@@ -5848,8 +5848,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 6,-14.5
 ground.cornerPush.velOff = 0
@@ -5901,8 +5901,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -3,-14.5
 ground.cornerPush.velOff = 0

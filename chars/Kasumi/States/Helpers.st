@@ -3362,8 +3362,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -4,-5.5
@@ -3701,8 +3701,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -4,-5
@@ -4002,8 +4002,8 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.cornerpush.veloff = 0
 ground.velocity = -7.5,-2
@@ -4247,8 +4247,8 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.cornerpush.veloff = 0
 ground.velocity = -7.5,-2
@@ -4467,8 +4467,8 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.cornerpush.veloff = 0
 ground.velocity = -7.5,-2
@@ -4686,8 +4686,8 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.slidetime = 18
-guard.hittime = 18
 air.hittime = 60
 ground.cornerpush.veloff = 0
 ground.velocity = -7.5,-2
@@ -4979,7 +4979,7 @@ type = DestroySelf
 trigger1 = ScreenPos Y <= 0
 
 ;---------------------------------------------------------------------
-; やられ（ヒットストップ）
+; iqbgXgbvj
 [Statedef 3580]
 type = S
 movetype = H
@@ -4994,7 +4994,7 @@ trigger1 = HitShakeOver = 1
 value = 3585
 
 ;---------------------------------------------------------------------
-; やられ（空中）
+; i�）
 [Statedef 3585]
 type = A
 movetype = H
@@ -5012,7 +5012,7 @@ trigger1 = Time > 0 && Vel Y > 0 && Pos Y >= 0
 value = 3590
 
 ;---------------------------------------------------------------------
-; やられ（バウンド）
+; ioEhj
 [Statedef 3590]
 type = A
 movetype = H
@@ -5057,7 +5057,7 @@ trigger1 = AnimElem = 2, > 0 && Vel Y > 0 && Pos Y >= 0
 value = 3595
 
 ;---------------------------------------------------------------------
-; 起き・がり
+; NE
 [Statedef 3595]
 type = S
 movetype = I

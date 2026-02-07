@@ -1539,6 +1539,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 10+(Var(21)*2)
 ground.hittime = 10+(Var(21)*2)
+guard.hittime = (10+(Var(21)*2)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2;-6*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2;-5*(2-(Var(30)>0))/2
 guard.ctrltime = 11
@@ -1618,6 +1619,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -1661,6 +1663,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -1742,6 +1745,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -1785,6 +1789,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -1866,6 +1871,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -8.125*(2-(Var(30)>0))/2
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 guard.ctrltime = 17
@@ -1946,6 +1952,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -8.125*(2-(Var(30)>0))/2
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 guard.ctrltime = 17
@@ -1990,6 +1997,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -8,-5
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 air.velocity = -8,-5
@@ -2066,6 +2074,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 10+(Var(21)*2)
 ground.hittime = 10+(Var(21)*2)
+guard.hittime = (10+(Var(21)*2)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 11
@@ -2146,6 +2155,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -2188,6 +2198,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -2267,6 +2278,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -8.125*(2-(Var(30)>0))/2
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 guard.ctrltime = 17
@@ -2346,6 +2358,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -8.125*(2-(Var(30)>0))/2
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 guard.ctrltime = 17
@@ -2425,6 +2438,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 10+(Var(21)*2)
 ground.hittime = 10+(Var(21)*2)
+guard.hittime = (10+(Var(21)*2)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 11
@@ -2504,6 +2518,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -2583,6 +2598,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -8.125*(2-(Var(30)>0))/2
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 guard.ctrltime = 17
@@ -2626,6 +2642,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -8.125*(2-(Var(30)>0))/2
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 guard.ctrltime = 17
@@ -2707,6 +2724,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 10+(Var(21)*2)
 ground.hittime = 10+(Var(21)*2)
+guard.hittime = (10+(Var(21)*2)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 11
@@ -2786,6 +2804,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 14+(Var(21)*3)
 ground.hittime = 14+(Var(21)*3)
+guard.hittime = (14+(Var(21)*3)) - 5
 ground.velocity = -7.66*(2-(Var(30)>0))/2
 guard.velocity = -7.66*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -2865,6 +2884,7 @@ guardsound = S5,0
 ground.type = Trip
 ground.slidetime = 17+(Var(21)*4)
 ground.hittime = 17+(Var(21)*4)
+guard.hittime = (17+(Var(21)*4)) - 5
 ground.velocity = -1,-7.3671875
 guard.velocity = -8.125*(2-(Var(30)>0))/2
 guard.ctrltime = 17
@@ -2946,6 +2966,7 @@ guard.ctrltime = 12
 ground.type = High
 ground.slidetime = 9+(Var(21)*2)
 ground.hittime = 9+(Var(21)*2)
+guard.hittime = (9+(Var(21)*2)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 air.type = High
@@ -2988,6 +3009,7 @@ guard.ctrltime = 12
 ground.type = High
 ground.slidetime = 9+(Var(21)*2)
 ground.hittime = 9+(Var(21)*2)
+guard.hittime = (9+(Var(21)*2)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 air.type = High
@@ -3071,6 +3093,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 12+(Var(21)*3)
 ground.hittime = 12+(Var(21)*3)
+guard.hittime = (12+(Var(21)*3)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -3112,6 +3135,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 12+(Var(21)*3)
 ground.hittime = 12+(Var(21)*3)
+guard.hittime = (12+(Var(21)*3)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -3192,6 +3216,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 12+(Var(21)*4)
 ground.hittime = 12+(Var(21)*4)
+guard.hittime = (12+(Var(21)*4)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 20
@@ -3233,6 +3258,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 12+(Var(21)*4)
 ground.hittime = 12+(Var(21)*4)
+guard.hittime = (12+(Var(21)*4)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 20
@@ -3325,6 +3351,7 @@ guard.ctrltime = 12
 ground.type = High
 ground.slidetime = 9+(Var(21)*2)
 ground.hittime = 9+(Var(21)*2)
+guard.hittime = (9+(Var(21)*2)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 air.type = High
@@ -3405,6 +3432,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 12+(Var(21)*3)
 ground.hittime = 12+(Var(21)*3)
+guard.hittime = (12+(Var(21)*3)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 15
@@ -3485,6 +3513,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 12+(Var(21)*4)
 ground.hittime = 12+(Var(21)*4)
+guard.hittime = (12+(Var(21)*4)) - 5
 ground.velocity = -5.77*(2-(Var(30)>0))/2
 guard.velocity = -5.77*(2-(Var(30)>0))/2
 guard.ctrltime = 20
@@ -4438,7 +4467,7 @@ type = ChangeAnim
 trigger1 = Anim = 840 && AnimTime = 0
 value = 841
 
-; ‚Ç‚¤‚à‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·Aˆ«ç‚³‚ñ!
+; Ç‚è‚ªÆ‚Ü‚Aç‚³!
 [State 820, ChangeAnim]
 type = ChangeAnim
 triggerall = Anim = 841
@@ -4599,7 +4628,7 @@ type = Width
 trigger1 = 1
 edge = 60,0 ; look closer
 
-; ‚Ç‚¤‚à‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·Aˆ«ç‚³‚ñ!
+; Ç‚è‚ªÆ‚Ü‚Aç‚³!
 [State 820, ChangeAnim]
 type = ChangeAnim
 triggerall = Anim = 841
@@ -6253,6 +6282,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 15
@@ -6384,6 +6414,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 15
@@ -6515,6 +6546,7 @@ guardsound = S5,0
 ground.type = Trip
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -1,-7.3671875
 guard.velocity = -8.125
 guard.ctrltime = 15
@@ -6649,6 +6681,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6.5,-4.5
 guard.velocity = -8.125
 guard.ctrltime = 15
@@ -6766,6 +6799,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -6,-5.671875
 guard.velocity = -8.125
 guard.ctrltime = 15
@@ -6982,6 +7016,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 15
 ground.hittime = 15
+guard.hittime = (15) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 15
@@ -7315,6 +7350,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7358,6 +7394,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7401,6 +7438,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7444,6 +7482,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7486,6 +7525,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7528,6 +7568,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7571,6 +7612,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -6,-5.671875
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7615,6 +7657,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -6,-5.671875
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7659,6 +7702,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -6,-5.671875
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7938,6 +7982,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -7980,6 +8025,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -8022,6 +8068,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -8064,6 +8111,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -8106,6 +8154,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -8148,6 +8197,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -2,-8.046875;-5.77,-8.125
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -8191,6 +8241,7 @@ guardsound = S5,0
 ground.type = Low
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 ground.velocity = -8,-5.625
 guard.velocity = -8.125
 guard.ctrltime = 20
@@ -9148,6 +9199,7 @@ guardsound = S5,0
 ground.type = High
 ground.slidetime = 20
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.ctrltime = 20
 ground.velocity = -3.5,-8.5
 guard.velocity = -8.125
@@ -9643,7 +9695,7 @@ trigger1 = numpartner
 trigger1 = ID>partner,ID
 trigger1 = !partner,authorname="warusaki3"
 trigger1 = !(partner,authorname = "mouser" && partner,name = "Hibiki Takane")
-trigger1 = !partner,authorname = "Hh"
+trigger1 = !partner,authorname = "Hh"
 trigger1 = !partner,authorname="Jesuszilla"
 trigger1 = !partner,authorname=".\/."
 trigger1 = !(partner,authorname="N64Mario" && partner,name = "Zero")
@@ -9671,7 +9723,7 @@ trigger1 = numpartner
 trigger1 = ID>partner,ID
 trigger1 = !partner,authorname="warusaki3"
 trigger1 = !(partner,authorname = "mouser" && partner,name = "Hibiki Takane")
-trigger1 = !partner,authorname = "Hh"
+trigger1 = !partner,authorname = "Hh"
 trigger1 = !partner,authorname="Jesuszilla"
 trigger1 = !partner,authorname=".\/."
 trigger1 = !(partner,authorname="N64Mario" && partner,name = "Zero")
@@ -9701,7 +9753,7 @@ trigger1 = numpartner
 trigger1 = ID>partner,ID
 trigger1 = !partner,authorname="warusaki3"
 trigger1 = !(partner,authorname = "mouser" && partner,name = "Hibiki Takane")
-trigger1 = !partner,authorname = "Hh"
+trigger1 = !partner,authorname = "Hh"
 trigger1 = !partner,authorname="Jesuszilla"
 trigger1 = !partner,authorname=".\/."
 trigger1 = !(partner,authorname="N64Mario" && partner,name = "Zero")
@@ -9732,7 +9784,7 @@ trigger1 = numpartner
 trigger1 = ID>partner,ID
 trigger1 = !partner,authorname="warusaki3"
 trigger1 = !(partner,authorname = "mouser" && partner,name = "Hibiki Takane")
-trigger1 = !partner,authorname = "Hh"
+trigger1 = !partner,authorname = "Hh"
 trigger1 = !partner,authorname="Jesuszilla"
 trigger1 = !partner,authorname=".\/."
 trigger1 = !(partner,authorname="N64Mario" && partner,name = "Zero")
@@ -9891,7 +9943,7 @@ trigger1 = numpartner
 trigger1 = ID>partner,ID
 trigger1 = !partner,authorname="warusaki3"
 trigger1 = !(partner,authorname = "mouser" && partner,name = "Hibiki Takane")
-trigger1 = !partner,authorname = "Hh"
+trigger1 = !partner,authorname = "Hh"
 trigger1 = !partner,authorname="Jesuszilla"
 trigger1 = !partner,authorname=".\/."
 trigger1 = !partner,authorname="N64Mario"
@@ -12218,7 +12270,7 @@ trigger2 = enemy,authorname = "mouser" && (P2Name = "Hibiki Takane" || P4Name = 
 trigger3 = enemy,authorname = "Jesuszilla" && enemy,fvar(17) = 1
 trigger4 = enemy,authorname = "N64Mario" && enemy, Name = "Zero" && enemy,fvar(17) = 1
 trigger5 = enemy,authorname = ".\/." && enemy,fvar(17) = 1
-trigger6 = enemy,authorname = "Hh" && enemy,fvar(39) = 1
+trigger6 = enemy,authorname = "Hh" && enemy,fvar(39) = 1
 var(35) = 1
 
 [State -2, 1]

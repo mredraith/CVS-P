@@ -7,7 +7,7 @@
 
 ; _________________________________________
 ;| Ken by Phantom.of.the.Server & Jmorphman|
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SYSTEM STATES=
 ;
@@ -4519,8 +4519,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 12 + 2 * var(9)
+guard.hittime = (12 + 2 * var(9)) - 5
 ground.slideTime = 12 + 2 * var(9)
-guard.hitTime = 12
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -2.41, -4.49), 0
 ground.cornerPush.velOff = 0

@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Saisyu Kusanagi by Lurker               |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -211,8 +211,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -507,8 +507,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -5.85, 0
@@ -557,8 +557,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 22
+guard.hittime = (22) - 5
 ground.slideTime = 22
-guard.hitTime = 15
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -7.2, 0
@@ -937,8 +937,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 15
+guard.hittime = (15) - 5
 ground.slideTime = 15
-guard.hitTime = 15
 air.hitTime = 60
 ground.velocity = -4.16, -6.81
 ground.cornerPush.velOff = 0
@@ -983,8 +983,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 15
+guard.hittime = (15) - 5
 ground.slideTime = 15
-guard.hitTime = 15
 air.hitTime = 60
 ground.velocity = -4.16, -6.81
 ground.cornerPush.velOff = 0
@@ -1353,8 +1353,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 15
+guard.hittime = (15) - 5
 ground.slideTime = 15
-guard.hitTime = 15
 air.hitTime = 60
 ground.velocity = 0, 0
 ground.cornerPush.velOff = 0
@@ -1931,8 +1931,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0

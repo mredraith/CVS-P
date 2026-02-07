@@ -177,8 +177,8 @@ sparkXY = -10 + 0 * (var(35) := 157), var(36) := -65
 ground.type = low
 ground.slidetime = 17
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -8.52
 ground.cornerpush.veloff = 0
@@ -221,8 +221,8 @@ sparkXY = -10 + 0 * (var(35) := 157), var(36) := -60
 ground.type = low
 ground.slidetime = 17
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -8.52
 ground.cornerpush.veloff = 0
@@ -355,7 +355,7 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -40
 ground.Type = Low
 ground.SlideTime = 17
 ground.HitTime = 20
-guard.hitTime = 18
+guard.hittime = (20) - 5
 ground.Velocity = -4
 Air.Velocity = -4
 Ground.cornerpush.veloff = 0
@@ -389,7 +389,7 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -75
 ground.Type = High
 ground.SlideTime = 17
 ground.HitTime = 20
-guard.hitTime = 18
+guard.hittime = (20) - 5
 ground.Velocity = -4
 Air.Velocity = -4
 Ground.cornerpush.veloff = 0
@@ -826,8 +826,8 @@ sparkXY = -10 + 0 * (var(35) := 157), var(36) := -65
 ground.type = low
 ground.slidetime = 17
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -8.52
 ground.cornerpush.veloff = 0
@@ -870,8 +870,8 @@ sparkXY = -10 + 0 * (var(35) := 157), var(36) := -60
 ground.type = low
 ground.slidetime = 17
 ground.hittime = 20
+guard.hittime = (20) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -8.52
 ground.cornerpush.veloff = 0
@@ -2266,8 +2266,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -60
 ground.type = low
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -6.52
 ground.cornerpush.veloff = 0
@@ -2382,8 +2382,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -40
 ground.Type = Low
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -6.52
 ground.cornerpush.veloff = 0
@@ -2423,8 +2423,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -50
 ground.Type = High
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = 0, -11
 ground.cornerpush.veloff = 0
@@ -2484,8 +2484,8 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -105
 ground.Type = High
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = 0, -11
 ground.cornerpush.veloff = 0
@@ -2710,8 +2710,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -60
 ground.type = low
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -6.52
 ground.cornerpush.veloff = 0
@@ -2826,8 +2826,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -40
 ground.Type = Low
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -6.52
 ground.cornerpush.veloff = 0
@@ -2867,8 +2867,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -50
 ground.Type = High
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -6.52
 ground.cornerpush.veloff = 0
@@ -2908,8 +2908,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -40
 ground.Type = Low
 ground.slidetime = 17
 ground.hittime = 25
+guard.hittime = (25) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = -6.52
 ground.cornerpush.veloff = 0
@@ -2949,8 +2949,8 @@ sparkXY = -10 + 0 * (var(35) := 143), var(36) := -50
 ground.Type = High
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = 0, -11
 ground.cornerpush.veloff = 0
@@ -3010,8 +3010,8 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -105
 ground.Type = High
 ground.slidetime = 17
 ground.hittime = 18
+guard.hittime = (18) - 5
 guard.slidetime = 17
-guard.hittime = 17
 guard.ctrltime = 17
 ground.velocity = 0, -11
 ground.cornerpush.veloff = 0

@@ -187,9 +187,9 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16 + 3 * var(29)
 ground.hittime = 16 + 3 * var(29)
+guard.hittime = (16 + 3 * var(29)) - 5
 ground.velocity = ifelse(var(20), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0;ifelse(var(20), -5.78, -10.47)
-guard.hittime = 13
 air.type = Low
 air.hittime = 120
 air.velocity = ifelse(var(20), -2.5, -5), -7

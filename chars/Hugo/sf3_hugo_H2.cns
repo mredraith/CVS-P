@@ -1,4 +1,4 @@
-;メガトンプレス
+;KgvX
 [Statedef 3100]
 type = S
 movetype = A
@@ -181,8 +181,8 @@ trigger1 = vel Y > 0
 trigger1 = pos Y >= 0
 value = 54
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; メガトンプレス(投げた側)1
+;
+; KgvX()1
 [Statedef 3150]
 type = A
 movetype= A
@@ -375,7 +375,7 @@ trigger2 = AnimElem = 24
 trigger3 = AnimElem = 35
 pos = ceil(10*const(size.xscale)), ceil(-105*const(size.yscale))
 
-[State 820, 画像表示優先度]
+[State 820, 鞫彌Dx]
 type = SprPriority
 trigger1 = AnimElem = 9
 trigger2 = AnimElem = 14
@@ -386,7 +386,7 @@ trigger6 = AnimElem = 36
 trigger7 = AnimElem = 42
 value = 0
 
-[State 820, 画像表示優先度]
+[State 820, 鞫彌Dx]
 type = SprPriority
 trigger1 = AnimElem = 6
 trigger2 = AnimElem = 11
@@ -515,8 +515,8 @@ trigger1 = vel Y > 0
 trigger1 = pos Y >= 60
 value = 3140
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; メガトンプレス(投げられた側)1
+;
+; KgvX(黷ｽ)1
 [Statedef 3160]
 type = A
 movetype= H
@@ -567,8 +567,8 @@ trigger1 = vel Y > 0
 trigger1 = pos Y >= -30
 value = 3170
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; メガトンプレス(投げられた側)1
+;
+; KgvX(黷ｽ)1
 [Statedef 3170]
 type = L
 movetype= H
@@ -601,8 +601,8 @@ Trigger1 = 1
 value = 5110
 
 
-;☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
-;ハンマーマウンテン(始動)
+;
+;n}[}Ee(n)
 [Statedef 3200]
 type = S
 movetype = A
@@ -740,7 +740,7 @@ type = velmul
 trigger1 = animelemtime(21) >= 0
 x = .90
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 6
 trigger2 = AnimElem = 10
@@ -748,7 +748,7 @@ trigger3 = AnimElem = 14
 trigger4 = AnimElem = 18
 value = 5100, 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 20
 value = 3100, 1
@@ -819,8 +819,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;ハンマーマウンテン(攻撃)
+;
+;n}[}Ee(U)
 [Statedef 3210]
 type = S
 movetype = A
@@ -846,7 +846,7 @@ type = velset
 trigger1 = animelemtime(23) = 0
 x = 0
 
-[State 220, ヒット定義]
+[State 220, qbg`]
 type = HitDef
 triggerall = !var(24) && !var(5)
 triggerall = var(23) != 3200
@@ -869,7 +869,7 @@ guardsound = S3,1
 ground.type = High
 ground.slidetime = 16
 ground.hittime = Ifelse(p2statetype = C, 20, 18)
-guard.hittime = 16
+guard.hittime = (Ifelse(p2statetype = C, 20, 18)) - 5
 guard.slidetime = 16
 guard.ctrltime = 16
 ground.velocity = -6.5*const(size.xscale) 
@@ -912,7 +912,7 @@ value = anim
 elem = 6
 persistent = 1
 
-[State 220, ヒット定義]
+[State 220, qbg`]
 type = HitDef
 triggerall = !var(24) && !var(5)
 triggerall = var(23) != 3201
@@ -935,7 +935,7 @@ guardsound = S3,1
 ground.type = High
 ground.slidetime = 16
 ground.hittime = Ifelse(p2statetype = C, 20, 18)
-guard.hittime = 16
+guard.hittime = (Ifelse(p2statetype = C, 20, 18)) - 5
 guard.slidetime = 16
 guard.ctrltime = 16
 ground.velocity = -6.5*const(size.xscale) 
@@ -969,7 +969,7 @@ value = anim
 elem = 15
 persistent = 1
 
-[State 220, ヒット定義]
+[State 220, qbg`]
 type = HitDef 
 triggerall = !var(24) && !var(5) 
 triggerall = var(23) != 3202
@@ -992,7 +992,7 @@ guardsound = S3,1
 ground.type = High 
 ground.slidetime = 16
 ground.hittime = Ifelse(p2statetype = C, 20, 18)
-guard.hittime = 16
+guard.hittime = (Ifelse(p2statetype = C, 20, 18)) - 5
 guard.slidetime = 16
 guard.ctrltime = 16
 ground.velocity = -6.5*const(size.xscale) 
@@ -1026,7 +1026,7 @@ value = anim
 elem = 27
 persistent = 1
 
-[State 220, ヒット定義]
+[State 220, qbg`]
 type = HitDef 
 triggerall = !var(24) && !var(5) 
 triggerall = var(23) != 3203
@@ -1049,7 +1049,7 @@ guardsound = S3,1
 ground.type = Low 
 ground.slidetime = 16
 ground.hittime = Ifelse(p2statetype = C, 20, 18)
-guard.hittime = 16
+guard.hittime = (Ifelse(p2statetype = C, 20, 18)) - 5
 guard.slidetime = 16
 guard.ctrltime = 16
 ground.velocity = -6.5*const(size.xscale) 
@@ -1092,7 +1092,7 @@ stateno = 1440
 ID = 1446
 helpertype = normal
 keyctrl = 0
-name = "飛び道具破壊ヘルパー"
+name = "ﾑ屠wp["
 ignorehitpause = 1
 persistent = 0
 size.xscale = const(size.xscale)
@@ -1122,7 +1122,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 18
 ground.hittime = Ifelse(p2statetype = C, 22, 20)
-guard.hittime = 18
+guard.hittime = (Ifelse(p2statetype = C, 22, 20)) - 5
 guard.slidetime = 18
 guard.ctrltime = 18
 ground.velocity = -3.5*const(size.xscale),-11.0*const(size.yscale)
@@ -1193,13 +1193,13 @@ trigger1 = animelemtime(12) = 0
 trigger2 = animelemtime(35) = 0
 x = 16*const(size.xscale)
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 12
 value = 3100, 0
 channel = 0
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 3
 trigger2 = AnimElem = 13
@@ -1207,7 +1207,7 @@ trigger3 = AnimElem = 24
 trigger4 = AnimElem = 29
 value = 1, 2
 
-[State 350, 音を鳴らす]
+[State 350, ﾂらす]
 type = PlaySnd
 trigger1 = AnimElem = 25
 trigger2 = AnimElem = 41
@@ -1368,8 +1368,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;ギガスブリーカー(投げた側)4
+;
+;MKXu[J[()4
 [Statedef 3140]
 type = C
 movetype= A

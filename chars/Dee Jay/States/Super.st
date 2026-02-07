@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Dee Jay by varo_hades                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;===============================================================================
 ;==============================<SUPER STATES>===================================
 ;===============================================================================
@@ -166,8 +166,8 @@ fall.animType = Up
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = 0, -20
 ground.cornerPush.velOff = 0
@@ -228,8 +228,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = 0, -7
 ground.cornerPush.velOff = 0
@@ -277,8 +277,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4, -6
 ground.cornerPush.velOff = 0
@@ -325,8 +325,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -3, -8
 ground.cornerPush.velOff = 0
@@ -697,8 +697,8 @@ fall.animType = Up
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = 0, -20
 ground.cornerPush.velOff = 0
@@ -759,8 +759,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = 0, -7
 ground.cornerPush.velOff = 0
@@ -808,8 +808,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4, -6
 ground.cornerPush.velOff = 0
@@ -856,8 +856,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -3, -8
 ground.cornerPush.velOff = 0
@@ -1112,8 +1112,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -1217,8 +1217,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -1321,8 +1321,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -1426,8 +1426,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4, -8
 ground.cornerPush.velOff = 0
@@ -1652,8 +1652,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -1757,8 +1757,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -1861,8 +1861,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -1965,8 +1965,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -2069,8 +2069,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.52, 0
 ground.cornerPush.velOff = 0
@@ -2174,8 +2174,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4, -8
 ground.cornerPush.velOff = 0
@@ -2367,8 +2367,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = 0, 0
 ground.cornerPush.velOff = 0
@@ -2981,17 +2981,17 @@ type = A
 movetype = H
 physics = N
 
-[State 5600, ƒ^[ƒ“]
+[State 5600, ^[]
 type = Turn
 triggerAll = RoundState = 2
 trigger1   = P2BodyDist X != [0,360]
 
-[State 1];–³“G‚Ìó‘Ô‚ğì‚é
+[State 1];GÌÔ‚
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-[State 1994, ƒXƒe[ƒg•ÏX]
+[State 1994, Xe[gÏX]
 type = ChangeState
 triggerAll = PrevStateno = [3261,3262]
 trigger1 = Time = 0
@@ -3002,29 +3002,29 @@ type = PlayerPush
 trigger1 = 1
 value = 0
 
-[State 820, §Œä‚µ‚½‘Šè‚ÌƒAƒjƒ•ÏX]
+[State 820, ä‚µÌƒAjÏX]
 type = ChangeAnim
 Trigger1 = Time = 0
 value = ifelse(SelfAnimExist(5052) = 1,5052,5030)
 
-[State 821, ‘¬“x‰ÁZ]
+[State 821, xZ]
 type = VelAdd
 trigger1 = BackEdgeBodyDist >= 10
 trigger2 = FrontEdgeBodyDist >= 10
 x = -2
 
-[State 821, ‘¬“x‰ÁZ]
+[State 821, xZ]
 type = Velset
 trigger1 = Time = 0
 y = 0
 
-[State 1993, ƒXƒe[ƒg•ÏX] ;•Ç‚É“–‚½‚é‚ÌƒXƒe[ƒg‚És‚­
+[State 1993, Xe[gÏX] ;Ç‚É“éÌƒXe[gÉs
 type = ChangeState
 trigger1 = BackEdgeBodyDist <= 10
 trigger2 = FrontEdgeBodyDist <= 10
 value = 3261
 
-[State 821, §Œä‰ğœ‚µ‚Ä‘Šè‚ÌƒXƒe[ƒg‚É–ß‚·]
+[State 821, Ä‘ÌƒXe[gÉ–ß‚]
 type = SelfState
 trigger1 = Time = 100
 value = 5100
@@ -3035,45 +3035,45 @@ type = A
 movetype = H
 physics = N
 
-[State 1];–³“G‚Ìó‘Ô‚ğì‚é
+[State 1];GÌÔ‚
 type = NotHitBy
 trigger1 = 1
 value = SCA
 
-[State 1995, ˆÚ“®‘¬“x]
+[State 1995, Ú“x]
 type = VelSet
 trigger1 = Time = 0
 x = 0
 y = 0
 
-[State 1995, ˆÚ“®‘¬“x]
+[State 1995, Ú“x]
 type = Veladd
 trigger1 = Time = 0
 x = 0
 y = 0
 
-[State 820, §Œä‚µ‚½‘Šè‚ÌƒAƒjƒ•ÏX]
+[State 820, ä‚µÌƒAjÏX]
 type = ChangeAnim
 Trigger1 = Time = 0
 value = 5000
 
-[State 1994, U‚è•Ô‚é]
+[State 1994, UÔ‚]
 type = Turn
 trigger1 = (Time = 0) && (FrontEdgeBodyDist <= 20)
 
-[State 1994, ²ˆÊ’uˆÚ“®]
+[State 1994, Ê’uÚ“]
 type = PosAdd
 trigger1 = Time = 0
 x = 15 - BackEdgeBodyDist
 y = -10
 
-[State 1994, ˆÚ“®‚ğ~‚ß‚é]
+[State 1994, Ú“~ß‚]
 type = PosFreeze
 trigger1 = 1
 x = 0
 y = 0
 
-[State 1994, ƒJƒƒ‰ƒXƒNƒ[ƒ‹‚Ì—L–³]
+[State 1994, JXN[Ì—L]
 type = ScreenBound
 trigger1 = 1
 value = 1
@@ -3087,7 +3087,7 @@ freq = 60
 ampl = -4
 phase = 120
 
-[State 1994, ƒXƒe[ƒg•ÏX]
+[State 1994, Xe[gÏX]
 type = ChangeState
 trigger1 = Time = 5
 value = 3262
@@ -3103,23 +3103,23 @@ type = PlayerPush
 trigger1 = 1
 value = 0
 
-[State 1995, ˆÚ“®‘¬“x]
+[State 1995, Ú“x]
 type = VelSet
 trigger1 = Time = 0
 x = 1
 y = -4
 
-[State 1995, d—Í‘ã‚í‚è]
+[State 1995, dÍ‘]
 type = VelAdd
 trigger1 = 1
 y = .33
 
-[State 1995, ƒAƒjƒ•ÏX]
+[State 1995, AjÏX]
 type = ChangeAnim
 trigger1 = Time = 0
 value = ifelse(SelfAnimExist(5052) = 1,5052,5050)
 
-[State 1995, ‘ŠèƒXƒe[ƒg‚É–ß‚·]
+[State 1995, Xe[gÉ–ß‚]
 type = SelfState
 trigger1 = (Vel Y > 0) && (Pos Y >= 0)
 value = 5100
@@ -3318,8 +3318,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 10
 ground.velocity = -3, -8
 ground.cornerPush.velOff = 0
@@ -3550,8 +3550,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 10
 ground.velocity = -3, -10
 ground.cornerPush.velOff = 0
@@ -3838,8 +3838,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -1.52, 0
 ground.cornerPush.velOff = 0
@@ -3883,8 +3883,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -1.52, 0
 ground.cornerPush.velOff = 0
@@ -3928,8 +3928,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -1.52, 0
 ground.cornerPush.velOff = 0
@@ -3973,8 +3973,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -1.52, 0
 ground.cornerPush.velOff = 0
@@ -4018,8 +4018,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -1.52, 0
 ground.cornerPush.velOff = 0
@@ -4063,8 +4063,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4, -12
 ground.cornerPush.velOff = 0

@@ -1,6 +1,6 @@
 ; _______________________________________
 ;| Raiden by Knuckles8864                |
-; ｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯ
+; 
 ;
 ;SUPER STATES=
 ;
@@ -151,8 +151,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -3.66,0
 ground.cornerPush.velOff = 0
@@ -197,8 +197,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -4.86,0
 ground.cornerPush.velOff = 0
@@ -293,8 +293,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.32, -8.5
 ground.cornerPush.velOff = 0
@@ -518,8 +518,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -3.66,0
 ground.cornerPush.velOff = 0
@@ -565,8 +565,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -3.12,0
 ground.cornerPush.velOff = 0
@@ -612,8 +612,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -2.41,0
 ground.cornerPush.velOff = 0
@@ -659,8 +659,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -4.86,0
 ground.cornerPush.velOff = 0
@@ -706,8 +706,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -4.86,0
 ground.cornerPush.velOff = 0
@@ -753,8 +753,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -4.86,0
 ground.cornerPush.velOff = 0
@@ -2539,8 +2539,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -3.66,0
 ground.cornerPush.velOff = 0
@@ -2773,7 +2773,7 @@ type = AngleAdd
 trigger1 = animelem = 2,>= 0
 value = 30
 
-[State 3316, 相手ステートに戻す]
+[State 3316, Xe[gﾉ戻�]
 type = SelfState
 trigger1 = (Vel Y > 0) && (Pos Y >= 0)
 value = 5100

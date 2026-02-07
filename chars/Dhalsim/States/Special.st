@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Dhalsim by Knuckles8864                 |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SPECIAL MOVES
 ;
@@ -967,8 +967,8 @@ fall.animType = Hard
 ground.type = Low
 air.type = Low
 ground.hitTime = 18 + 4 * var(10)
+guard.hittime = (18 + 4 * var(10)) - 5
 ground.slideTime = 18 + 4 * var(10)
-guard.hitTime = ifElse(var(10) = 2, 12, ifElse(var(10), 9, 15))
 air.hitTime = 120
 ground.velocity = -10.52,0
 ground.cornerPush.velOff = 0
@@ -1013,8 +1013,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(10)
+guard.hittime = (18 + 4 * var(10)) - 5
 ground.slideTime = 18 + 4 * var(10)
-guard.hitTime = ifElse(var(10) = 2, 12, ifElse(var(10), 9, 15))
 air.hitTime = 120
 ground.velocity = -10.52,0
 ground.cornerPush.velOff = 0
@@ -1059,8 +1059,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 18 + 4 * var(10)
+guard.hittime = (18 + 4 * var(10)) - 5
 ground.slideTime = 18 + 4 * var(10)
-guard.hitTime = ifElse(var(10) = 2, 12, ifElse(var(10), 9, 15))
 air.hitTime = 120
 ground.velocity = -10.52,0
 ground.cornerPush.velOff = 0
@@ -1273,8 +1273,8 @@ fall.animType = Hard
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.40, -5.25
 ground.cornerPush.velOff = 0
@@ -1319,8 +1319,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.40, -5.25
 ground.cornerPush.velOff = 0
@@ -1365,8 +1365,8 @@ fall.animType = Hard
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.40, -5.25
 ground.cornerPush.velOff = 0
@@ -2690,8 +2690,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.54, -5.25
 ground.cornerPush.velOff = 0
@@ -2814,8 +2814,8 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -5.54, -5.25
 ground.cornerPush.velOff = 0

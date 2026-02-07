@@ -3,7 +3,7 @@
 ; CVS Chang Koehan POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -128,8 +128,8 @@ guardsound = S130, 0
 ground.type = Low
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 guard.slidetime = 18
-guard.hittime = 18
 ground.velocity = 0
 guard.velocity = -11.0
 air.velocity = 0,0
@@ -389,6 +389,7 @@ guardsound = S0, 0
 ground.type = Low
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -424,6 +425,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -459,6 +461,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -495,6 +498,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -530,6 +534,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -565,6 +570,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -631,6 +637,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -4,-6
 guard.velocity = -9.5
 air.velocity = -4,-6
@@ -723,6 +730,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -4,-6
 guard.velocity = -9.5
 air.velocity = -4,-6
@@ -819,6 +827,7 @@ guardsound = S0, 0
 ground.type = Trip
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -4,-6
 guard.velocity = -9.5
 air.velocity = -4,-6
@@ -913,6 +922,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 air.hittime = 13
 ground.velocity = -2,-8
 guard.velocity = -9.5
@@ -1138,8 +1148,8 @@ guardsound = S130, 0
 ground.type = Low
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 guard.slidetime = 18
-guard.hittime = 18
 ground.velocity = 0
 guard.velocity = -11.0
 air.velocity = 0,0
@@ -1353,6 +1363,7 @@ guardsound = S0, 0
 ground.type = Low
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -1385,6 +1396,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -1417,6 +1429,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -1449,6 +1462,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -1481,6 +1495,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -1513,6 +1528,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -1699,7 +1715,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime=12
+guard.hittime = (18) - 5
 ground.velocity = -2,-8
 guard.velocity = -9.5
 air.velocity = -2,-8
@@ -1766,8 +1782,8 @@ ground.type = High
 air.type = High
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 guard.slidetime = 17
-guard.hittime = 17
 ground.velocity = -3,-10
 guard.velocity = -12
 ground.cornerpush.veloff = -6
@@ -1797,7 +1813,7 @@ value = 60 + (sysvar(1) > 5) + (sysvar(1) > 14)
 pos = 0, 0
 under = sysvar(1) <= 14
 
-[State explod];”š”j0
+[State explod];j0
 type = Explod
 trigger1 = AnimElem=2
 anim = 3555
@@ -1813,7 +1829,7 @@ under = 0
 ownpal = 1
 scale = .25,.15
 
-[State explod];”š”j1
+[State explod];j1
 type = Explod
 trigger1 = AnimElem=2
 anim = 3556
@@ -2038,7 +2054,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime=12
+guard.hittime = (18) - 5
 ground.velocity = -2,-8
 guard.velocity = -9.5
 air.velocity = -2,-8
@@ -2121,7 +2137,7 @@ value = 60 + (sysvar(1) > 5) + (sysvar(1) > 14)
 pos = 0, 0
 under = sysvar(1) <= 14
 
-[State explod];”š”j0
+[State explod];j0
 type = Explod
 trigger1 = AnimElem=1
 anim = 3555
@@ -2137,7 +2153,7 @@ under = 0
 ownpal = 1
 scale = .25,.15
 
-[State explod];”š”j1
+[State explod];j1
 type = Explod
 trigger1 = AnimElem=1
 anim = 3556
@@ -2183,8 +2199,8 @@ ground.type = High
 air.type = High
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 guard.slidetime = 17
-guard.hittime = 17
 ground.velocity = -3,-10
 guard.velocity = -12
 ground.cornerpush.veloff = -6
@@ -2332,8 +2348,8 @@ ground.type = High
 air.type = High
 ground.slidetime = 22
 ground.hittime = 22
+guard.hittime = (22) - 5
 guard.slidetime = 17
-guard.hittime = 17
 ground.velocity = -3,-10
 guard.velocity = -12
 ground.cornerpush.veloff = -6
@@ -2518,8 +2534,8 @@ guardsound = S130, 0
 ground.type = Low
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 guard.slidetime = 18
-guard.hittime = 18
 ground.velocity = 0
 guard.velocity = -11.0
 air.velocity = 0,0
@@ -2712,6 +2728,7 @@ guardsound = S0, 0
 ground.type = Low
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -2747,6 +2764,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -2782,6 +2800,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -2817,6 +2836,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -2852,6 +2872,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -2887,6 +2908,7 @@ guardsound = S0, 0
 ground.type = High
 ground.slidetime = 40
 ground.hittime = 40
+guard.hittime = (40) - 5
 ground.velocity = 0
 guard.velocity = 0
 air.velocity = 0
@@ -3181,7 +3203,7 @@ ground.type = High
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
-guard.hittime = 18
+guard.hittime = (18 + 4*var(9)) - 5
 air.hittime = Ifelse(var(55)=2,30,120)
 ground.velocity = -2,-30
 guard.velocity = Ifelse(var(20),-4,-8)
@@ -3280,7 +3302,7 @@ trigger1 = Time > 8
 x = -32
 y = -47
 
-[State 1];ƒJƒƒ‰ŒÅ’è
+[State 1];JÅ’
 type = screenbound
 trigger1 = 1
 value = 1
@@ -3335,7 +3357,7 @@ triggerall = enemy, facing = -1
 trigger1 = !time
 x = (120 - BackEdgeDist)
 
-[State 1];ƒJƒƒ‰ŒÅ’è
+[State 1];JÅ’
 type = screenbound
 trigger1 = 1
 value = 1

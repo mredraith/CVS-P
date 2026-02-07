@@ -718,6 +718,7 @@ sparkXY=-10 + 0 * (var(35) :=80), var(36) :=-3
 ground.type=Low
 ground.slidetime=20
 ground.hittime =20
+guard.hittime = (20) - 5
 ground.velocity=Ifelse(var(20),-2,-4)
 air.velocity=Ifelse(var(20),-2,-4),-2
 guard.velocity=Ifelse(var(20),-3,-6)

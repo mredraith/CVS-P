@@ -3,7 +3,7 @@
 ; CVS Heidern POTS/Infinite by Falcondurap
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -187,6 +187,7 @@ guard.sparkNo=-1
 ground.type=low
 ground.slidetime=16
 ground.hittime=16
+guard.hittime = (16) - 5
 ground.velocity=-4, ifelse((root,var(20)),-6.5,-4.2)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=-4, ifelse((root,var(20)),-6.5,-4.2)
@@ -609,6 +610,7 @@ guardsound=s130,1
 ground.type=High
 ground.slidetime=6
 ground.hittime=12
+guard.hittime = (12) - 5
 ground.velocity=Ifelse(root,var(20),-2,-4.027801513671875),-6.5
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=Ifelse(root,var(20),-2,-4.027801513671875),-4.5
@@ -712,7 +714,7 @@ ignorehitpause=1
 type=destroyself
 trigger1= pos x!=[-200,200]
 
-;Cross Cutter EX Helper (transição ou fim)
+;Cross Cutter EX Helper (transio ou fim)
 [Statedef 1056]
 physics=N
 ctrl=0
@@ -1110,6 +1112,7 @@ guardsound=s130,1
 ground.type=High
 ground.slidetime=6
 ground.hittime=12
+guard.hittime = (12) - 5
 ground.velocity=Ifelse(root,var(20),-2,-4.027801513671875),-6.5
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=Ifelse(root,var(20),-2,-4.027801513671875),-4.5
@@ -1404,7 +1407,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=12
 ground.hittime =10
-guard.hittime=10
+guard.hittime = (10) - 5
 ground.velocity=Ifelse(var(20),-2,-4),Ifelse(var(20),-7.5,-7)
 air.velocity=Ifelse(var(20),-2,-4),-5
 guard.velocity=Ifelse(var(20),-4,-8)
@@ -1595,7 +1598,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=12
 ground.hittime =10
-guard.hittime=10
+guard.hittime = (10) - 5
 ground.velocity=-4, -8
 air.velocity=-4,-6
 guard.velocity=-6
@@ -1638,7 +1641,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=12
 ground.hittime =10
-guard.hittime=10
+guard.hittime = (10) - 5
 ground.velocity=-4, -8
 air.velocity=-4,-6
 guard.velocity=-6
@@ -4125,6 +4128,7 @@ guard.sparkno = s7001;555
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = 4.027801513671875,-4.5
 air.type = High
 air.velocity = 4.027801513671875,-4.5
@@ -4536,6 +4540,7 @@ guard.sparkno = s7001;555
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = 4.027801513671875,-4.5
 air.type = High
 air.velocity = 4.027801513671875,-4.5
@@ -4810,6 +4815,7 @@ guard.sparkno = s7001;555
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = 4.027801513671875,-4.5
 air.type = High
 air.velocity = 4.027801513671875,-4.5
@@ -5120,6 +5126,7 @@ guard.sparkno = s7001;555
 ground.type = High
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = 4.027801513671875,-4.5
 air.type = High
 air.velocity = 4.027801513671875,-4.5

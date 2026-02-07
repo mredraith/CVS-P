@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Todoh by varo_hades                      |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -230,7 +230,6 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = ifelse(var(20), -4.36, -8.52), 0
 ground.cornerPush.velOff = -10
@@ -423,7 +422,6 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -8.52
 guard,velocity = -8.52
@@ -571,7 +569,6 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 120
 airGuard.ctrlTime = 16
 ground.velocity = ifelse(var(20), -4.36, -8.52), 0
@@ -744,7 +741,6 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -8.52
 guard,velocity = -8.52
@@ -894,7 +890,6 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 120
 airGuard.ctrlTime = 16
 ground.velocity = ifelse(var(20), -4.36, -8.52), 0
@@ -1074,7 +1069,6 @@ ground.type = High
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -8.52
 guard,velocity = -8.52
@@ -1221,7 +1215,6 @@ ground.type = Low
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 12
 ground.velocity = -6, -6
 guard,velocity = -10.52
@@ -1404,7 +1397,6 @@ ground.type = Low
 air.type = Low
 ground.hitTime = 18 + 4 * var(9)
 ground.slideTime = 17 + 4 * var(9)
-guard.hitTime = 18
 air.hitTime = 12
 ground.velocity = -6, -6
 guard,velocity = -10.52

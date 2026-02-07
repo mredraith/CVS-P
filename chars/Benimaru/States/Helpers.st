@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Benimaru by Jmorphman                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -261,8 +261,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 16
+guard.hittime = (16) - 5
 ground.slideTime = 16
-guard.hitTime = 16
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -312,8 +312,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 16
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -3.75, -7.34375
@@ -362,8 +362,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 16
+guard.hittime = (16) - 5
 ground.slideTime = 16
-guard.hitTime = 16
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -413,8 +413,8 @@ fall.animType = Up
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -0.195, -12.81
 ground.cornerPush.velOff = 0
@@ -912,8 +912,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 12
+guard.hittime = (12) - 5
 ground.slideTime = 12
-guard.hitTime = 12
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -1234,8 +1234,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 8
+guard.hittime = (8) - 5
 ground.slideTime = 8
-guard.hitTime = 8
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -3.75, -7.34375
@@ -1611,8 +1611,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 28
+guard.hittime = (28) - 5
 ground.slideTime = 28
-guard.hitTime = 28
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -3.75, -7.34375

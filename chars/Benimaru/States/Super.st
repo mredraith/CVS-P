@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Benimaru by Jmorphman                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SUPER STATES=
 ;
@@ -577,8 +577,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 18
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -1100,8 +1100,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 18
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0

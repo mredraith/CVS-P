@@ -3,7 +3,7 @@
 ; CVS Goro Daimon POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -229,7 +229,7 @@ trigger4 = animelem = 36
 trigger5 = animelem = 43
 value = 1,2
 
-[State 810, Grab Sound];’@‚«‚Â‚¯
+[State 810, Grab Sound];@Â‚
 type = PlaySnd
 trigger1 = animelem = 15
 trigger2 = animelem = 23
@@ -889,7 +889,7 @@ trigger8 = animelem = 64
 trigger9 = animelem = 71
 value = 1,2
 
-[State 810, Grab Sound];’@‚«‚Â‚¯
+[State 810, Grab Sound];@Â‚
 type = PlaySnd
 trigger1 = animelem = 15
 trigger2 = animelem = 23
@@ -1590,7 +1590,7 @@ sound=s8500,0
 darken=0
 poweradd=0
 
-[State 1700, 0];“–‚Äg
+[State 1700, 0];Äg
 type = ReversalDef
 trigger1 = animelem = 7
 attr = S, ST
@@ -2063,6 +2063,7 @@ guard.sparkno = s7012
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -12
 air.velocity = -5.5,-3.5
 air.fall = 1
@@ -2146,7 +2147,7 @@ pauseMoveTime=65535
 superMoveTime=65535
 ignoreHitPause=1
 
-[State 810, Grab Sound];’Í‚İ
+[State 810, Grab Sound];Í‚
 type = PlaySnd
 trigger1 = animelem = 1
 value = 800, 0
@@ -2197,7 +2198,7 @@ x = -8
 type = turn
 trigger1 = animelem = 7
 
-;---------------------[‘Šè§Œä]
+;---------------------[è§]
 [State 801, 2]
 type = TargetBind
 trigger1 = animelem = 1
@@ -2372,6 +2373,7 @@ guard.sparkno = s7012
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -12
 air.velocity = -5.5,-3.5
 air.fall = 1
@@ -2784,7 +2786,7 @@ sound=s8500,1
 darken=0
 poweradd=0
 
-[State 1700, 0];“–‚Äg
+[State 1700, 0];Äg
 type = ReversalDef
 trigger1 = animelem = 7
 attr = S, ST
@@ -3133,6 +3135,7 @@ guard.sparkno = s7012
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -12
 air.velocity = -5.5,-3.5
 air.fall = 1
@@ -3204,7 +3207,7 @@ pauseMoveTime=65535
 superMoveTime=65535
 ignoreHitPause=1
 
-[State 810, Grab Sound];’Í‚İ
+[State 810, Grab Sound];Í‚
 type = PlaySnd
 trigger1 = animelem = 1
 value = 800, 0
@@ -3253,7 +3256,7 @@ x = -8
 type = turn
 trigger1 = animelem = 7
 
-;---------------------[‘Šè§Œä]
+;---------------------[è§]
 [State 801, 2]
 type = TargetBind
 trigger1 = animelem = 1
@@ -3380,6 +3383,7 @@ guard.sparkno = s7012
 ground.type = high
 ground.slidetime = 18
 ground.hittime = 18
+guard.hittime = (18) - 5
 ground.velocity = -12
 air.velocity = -5.5,-3.5
 air.fall = 1
@@ -3507,7 +3511,7 @@ pauseMoveTime=65535
 superMoveTime=65535
 ignoreHitPause=1
 
-[State 810, Grab Sound];’Í‚İ
+[State 810, Grab Sound];Í‚
 type = PlaySnd
 trigger1 = animelem = 1
 trigger2 = animelem = 39
@@ -4014,13 +4018,13 @@ type = removeexplod
 trigger1 = !time
 id = 3005
 
-;---------------------[ˆÚ“®]
+;---------------------[Ú“]
 [State FDR]
 type = velset
 trigger1 = animelem = 2
 x = 13
 
-;---------------------[—§‚¿ƒXƒe[ƒg‚É–ß‚é]
+;---------------------[Xe[gÉ–ß‚]
 [State FDR]
 type = changestate
 trigger1 = animelem = 2,>=0
@@ -4044,7 +4048,7 @@ anim = 3502
 sprpriority = -2
 poweradd = 0
 
-;---------------------[ˆÚ“®]
+;---------------------[Ú“]
 [State FDR]
 type = velset
 trigger1 = animelem = 4
@@ -4109,7 +4113,7 @@ type = sprpriority
 trigger1 = animelem = 10
 value = -2
 
-[State 810, Grab Sound];’Í‚İ
+[State 810, Grab Sound];Í‚
 type = PlaySnd
 trigger1 = animelem = 1
 value = 800, 0
@@ -4391,7 +4395,7 @@ pausemovetime = 0
 keyctrl = 0 
 ownpal = 1
 
-[State 810, Grab Sound];’Í‚İ
+[State 810, Grab Sound];Í‚
 type = PlaySnd
 trigger1 = animelem = 1
 value = 800, 0
@@ -4709,7 +4713,7 @@ pausemovetime = 0
 keyctrl = 0 
 ownpal = 1
 
-[State 810, Grab Sound];’Í‚İ
+[State 810, Grab Sound];Í‚
 type = PlaySnd
 trigger1 = animelem = 1
 value = 800, 0
@@ -4763,7 +4767,7 @@ x = -8
 type = turn
 trigger1 = animelem = 6
 
-;---------------------[‘Šè§Œä]
+;---------------------[è§]
 [State 801, 2]
 type = Targetstate
 trigger1 = animelem = 1
@@ -4899,7 +4903,7 @@ pausemovetime = 0
 keyctrl = 0 
 ownpal = 1
 
-[State 810, Grab Sound];’Í‚İ
+[State 810, Grab Sound];Í‚
 type = PlaySnd
 trigger1 = animelem = 7
 value = 3000, 1

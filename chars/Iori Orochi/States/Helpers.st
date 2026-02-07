@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Iori Yagami by Knuckles8864             |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -217,8 +217,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -267,8 +267,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -5.40, -5.25
@@ -317,8 +317,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = -10.52, 0
@@ -764,12 +764,12 @@ guardsound = s3,0
 ground.type = High
 ground.slidetime = 0
 ground.hittime = 0
+guard.hittime = (0) - 5
 ground.velocity = 0
 ground.cornerpush.veloff = 0
 air.velocity = 0,0
 guard.velocity = -12.4
 guard.slidetime = 20
-guard.hittime = 20
 fall = 0
 air.fall = 0
 getpower = 0,0
@@ -1086,12 +1086,12 @@ guardsound = s3,0
 ground.type = High
 ground.slidetime = 0
 ground.hittime = 0
+guard.hittime = (0) - 5
 ground.velocity = 0
 ground.cornerpush.veloff = 0
 air.velocity = 0,0
 guard.velocity = -12.4
 guard.slidetime = 20
-guard.hittime = 20
 fall = 0
 air.fall = 0
 getpower = 0,0
@@ -1274,8 +1274,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = High
 ground.hitTime = 17
+guard.hittime = (17) - 5
 ground.slideTime = 17
-guard.hitTime = 17
 air.hitTime = 13
 ground.velocity = -3, -12
 ground.cornerPush.velOff = 0

@@ -112,7 +112,7 @@ type = StateTypeSet
 trigger1 = AnimelemTime(5) >= 0
 movetype = I 
 
-[State 1000, ステート変更]
+[State 1000, Xe[gﾏ更]
 type = ChangeState
 Trigger1 = AnimTime = 0
 value = 0
@@ -263,7 +263,7 @@ type = StateTypeSet
 trigger1 = AnimelemTime(5) >= 0
 movetype = I 
 
-[State 1000, ステート変更]
+[State 1000, Xe[gﾏ更]
 type = ChangeState
 Trigger1 = AnimTime = 0
 value = 0
@@ -1289,6 +1289,7 @@ guardsound = s130, 0
 ground.type = high
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity =Ifelse(var(20),-2,-5),-2
@@ -1500,6 +1501,7 @@ guardsound = s130, 0
 ground.type = high
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity =Ifelse(var(20),-2,-2),-2
@@ -1588,6 +1590,7 @@ guardsound = s130, 0
 ground.type = high
 ground.slidetime = 45 + 2 * var(9)
 ground.hittime = 45 + 2 * var(9)
+guard.hittime = (45 + 2 * var(9)) - 5
 guard.ctrltime = 45
 down.hittime = 45
 air.hittime = 24+ 2 * var(9)
@@ -1688,6 +1691,7 @@ guardsound = s130, 0
 ground.type = high
 ground.slidetime = 45 + 2 * var(9)
 ground.hittime = 45 + 2 * var(9)
+guard.hittime = (45 + 2 * var(9)) - 5
 guard.ctrltime = 45
 down.hittime = 45
 air.hittime = 24+ 2 * var(9)
@@ -1990,6 +1994,7 @@ hitsound=S2+10*var(44), 2
 guardsound = s130, 0
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity = Ifelse(var(20),-3,-6.5),-5.5
@@ -2223,6 +2228,7 @@ hitsound=S2+10*var(44), 2
 guardsound = s130, 0
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity = Ifelse(var(20),-3,-6.5),-5.5
@@ -4168,6 +4174,7 @@ hitsound=S2+10*var(44), 5
 guardsound = s130, 0
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity = Ifelse(var(20),-4,-7.5),-5.5
@@ -4361,6 +4368,7 @@ hitsound=S2+10*var(44), 5
 guardsound = s130, 0
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity = Ifelse(var(20),-5,-7),-8.5
@@ -4560,6 +4568,7 @@ hitsound=S2+10*var(44), 2
 guardsound = s130, 0
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity = Ifelse(var(20),-4,-7.5),-5.5
@@ -4739,6 +4748,7 @@ hitsound=S2+10*var(44), 2
 guardsound = s130, 0
 ground.slidetime = 22 + 2 * var(9)
 ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 5
 guard.ctrltime = 24
 air.hittime = 24+ 2 * var(9)
 ground.velocity = Ifelse(var(20),-4,-7.5),-5.5

@@ -1,6 +1,6 @@
 ; ________________________________
 ;| Karin by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ; HELPER STATES =
 ;
@@ -127,8 +127,8 @@ fall.animtype = Hard
 ground.type = High
 air.type = High
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.slidetime = 17
-guard.hittime = 17
 air.hittime = 60
 ground.velocity = -9, -6
 guard.velocity = -12.65

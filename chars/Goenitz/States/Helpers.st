@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Goenitz by varo_hades                   |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -192,8 +192,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 60
 airGuard.ctrlTime = 16
 ground.velocity = ifelse(var(20), -2.36, -4), -8
@@ -444,8 +444,8 @@ fall.animType = Diagup
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 60
 ground.velocity = -4, -8
 ground.cornerPush.velOff = 0
@@ -490,8 +490,8 @@ fall.animType = Diagup
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 60
 ground.velocity = -4, -8
 ground.cornerPush.velOff = 0
@@ -668,8 +668,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 60
 ground.velocity = 0, -14.0
 ground.cornerPush.velOff = 0
@@ -905,8 +905,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 17
-guard.hitTime = 18
 air.hitTime = 60
 ground.velocity = -5, 9
 ground.cornerPush.velOff = 0

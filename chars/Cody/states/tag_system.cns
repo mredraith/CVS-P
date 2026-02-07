@@ -58,6 +58,7 @@ guardsound = S6, 0
 ground.type = Low
 ground.slidetime = 17
 ground.hittime = 17
+guard.hittime = (17) - 5
 ground.velocity = -1, ifelse(frontedgebodydist <= 25, -15,-12)
 air.type = High
 fall = 1

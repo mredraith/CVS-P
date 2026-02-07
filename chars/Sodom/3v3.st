@@ -7,7 +7,7 @@
 
 ; _________________________________________
 ;| Sodom by varo_hades                     |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;SYSTEM STATES=
 ;
@@ -3004,7 +3004,7 @@ pausetime = 10,12
 pauseTime = ifElse(var(20), 5, 10), ifElse(var(20), 6, 12)
 ground.slidetime = 12
 ground.hittime = 10
-guard.hittime = 10
+guard.hittime = (10) - 5
 guard.ctrltime = 10
 ground.velocity = ifElse(var(20), -3.5, -7), 0
 yaccel = 0.55

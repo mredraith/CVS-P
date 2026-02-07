@@ -1,5 +1,5 @@
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; 投げ掴みモーション
+;
+; ﾍみゼV
 [Statedef 800]
 type = S
 movetype= A
@@ -16,7 +16,7 @@ type = VarSet
 trigger1 = time = 0
 var(17) = ifelse(Command = "holdback",1,0)
 
-[State 800, 音を鳴らす]
+[State 800, ﾂらす]
 type = playsnd
 trigger1 = AnimElemtime(1) = 0 
 value = 1,0
@@ -79,14 +79,14 @@ type = StateTypeSet
 trigger1 = AnimelemTime(3) >= 0
 movetype = I 
 
-[State 800, ステート変更]
+[State 800, Xe[gﾏ更]
 type = ChangeState
 Trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; 投げ掴みモーション
+;
+; ﾍみゼV
 [Statedef 801]
 type = S
 movetype= A
@@ -103,7 +103,7 @@ type = VarSet
 trigger1 = time = 0
 var(17) = ifelse(Command = "holdback",1,0)
 
-[State 801, 音を鳴らす]
+[State 801, ﾂらす]
 type = playsnd
 trigger1 = AnimElemtime(1) = 0 
 value = 1,0
@@ -166,13 +166,13 @@ type = StateTypeSet
 trigger1 = AnimelemTime(3) >= 0
 movetype = I 
 
-[State 801, ステート変更]
+[State 801, Xe[gﾏ更]
 type = ChangeState
 Trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ボディスラム(投げた側)
+;
+; {fBX()
 [Statedef 810]
 type = S
 movetype= A
@@ -283,7 +283,7 @@ trigger1 = animelem = 12
 value = 0,3
 channel = 0
 
-[State 810, 音を鳴らす]
+[State 810, ﾂらす]
 type = playsnd
 trigger1 = animelem = 14
 value = 1,2
@@ -607,8 +607,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ボディスラム(投げられた側)
+;
+; {fBX(黷ｽ)
 [Statedef 811]
 type = A
 movetype= H
@@ -656,8 +656,8 @@ type = changestate
 trigger1 = Pos Y >= -30 && Vel Y > 0 && animelemtime(16) > 0
 value = 815
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ボディスラム(投げられた側)3rd専用anim1
+;
+; {fBX(黷ｽ)3rdpanim1
 [Statedef 812]
 type = A
 movetype= H
@@ -694,8 +694,8 @@ type = changestate
 trigger1 = Pos Y >= 30 && Vel Y > 0 && animelemtime(16) > 0
 value = 815
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ボディスラム(投げられた側)地面バウンド
+;
+; {fBX(黷ｽ)nﾊバEh
 [Statedef 815]
 type = L
 movetype= H
@@ -766,8 +766,8 @@ type = SelfState
 trigger1 = AnimTime = 0
 value = 5101
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ボディスラム(投げられた側)
+;
+; {fBX(黷ｽ)
 [Statedef 821]
 type = A
 movetype= H
@@ -811,8 +811,8 @@ type = changestate
 trigger1 = Pos Y >= -30 && Vel Y > 0 && animelemtime(16) > 0
 value = 815
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ボディスラム(投げられた側)3rd専用anim1
+;
+; {fBX(黷ｽ)3rdpanim1
 [Statedef 822]
 type = A
 movetype= H
@@ -854,8 +854,8 @@ trigger1 = Pos Y >= 30 && Vel Y > 0 && animelemtime(16) > 0
 value = 815
 
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;投げ失敗(投げた側)
+;
+;s()
 [Statedef 830]
 type = S
 movetype= I
@@ -893,7 +893,7 @@ ignorehitpause = 1
 ownpal = 1
 scale = const(size.xscale),const(size.yscale)
 
-[State 830, 音を鳴らす]
+[State 830, ﾂらす]
 type = PlaySnd
 trigger1 = time = 0
 value = 4000, 0
@@ -942,8 +942,8 @@ trigger1 = Animtime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;投げ失敗(投げられた側)
+;
+;s(黷ｽ)
 [Statedef 840]
 type = S
 movetype= H
@@ -966,11 +966,11 @@ trigger1 = name = "Ryu" || name = "Ken" || name = "Gouki" || name = "Sean" || na
 trigger2 = name = "Gill"
 value = 850
 
-[State 840,ChangeAnim];クリエーターズジャパン指定anim
+[State 840,ChangeAnim];NG[^[YWpwanim
 type = ChangeAnim
 triggerall = Time = 20
 triggerall = SelfAnimExist(5940)
-trigger1 = authorname = "H”" || authorname = "Warusaki3" || authorname = "M.M.R."
+trigger1 = authorname = "Hh" || authorname = "Warusaki3" || authorname = "M.M.R."
 trigger2 = authorname = "Mouser" || authorname = "Nyankoro" || authorname = "ryokucha"
 trigger3 = authorname = "Bad Darkness" || authorname = "Third" || authorname = "adamskie"
 value = 5940
@@ -991,8 +991,8 @@ trigger1 = time = 37
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;ヒューゴー専用anim(その１)
+;
+;q[S[panim(ﾌ１)
 [Statedef 850]
 type = S
 movetype= H
@@ -1038,8 +1038,8 @@ triggerall = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemtime(3) > 0
 value = 851
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-;ヒューゴー専用anim(その２)
+;
+;q[S[panim(ﾌ２)
 [Statedef 851]
 type = S
 movetype= I
@@ -1048,7 +1048,7 @@ ctrl = 0
 velset = 0,0
 sprpriority = 0
 
-[State 820, 音を鳴らす]
+[State 820, ﾂらす]
 type = PlaySnd
 trigger1 = time = 0
 value = s52, 0
@@ -1086,8 +1086,8 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げた側)1
+;
+; lbNnMO()1
 [Statedef 860]
 type = S
 movetype= A
@@ -1107,7 +1107,7 @@ trigger1 = target,authorname = "GM"
 trigger1 = target,name = "Hugo"
 value = 880
 
-[State 820, 画像表示優先度]
+[State 820, 鞫彌Dx]
 type = SprPriority
 trigger1 = AnimElem = 2,>0
 value = 0
@@ -1265,8 +1265,8 @@ type = ChangeState
 trigger1 = animtime = 0
 value = 861
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げた側)2
+;
+; lbNnMO()2
 [Statedef 861]
 type = S
 movetype= A
@@ -1294,7 +1294,7 @@ var(19) = 1
 [State -2, Varadd]
 type = Varadd
 trigger1 = var(50) = 0
-trigger1 = command = "レバガチャ"
+trigger1 = command = "oK`"
 trigger2 = var(50) = 1
 trigger2 = random < 300
 var(19) = 1
@@ -1302,7 +1302,7 @@ ignorehitpause = 1
 
 [State -2, Varadd]
 type = Varadd
-trigger1 = target,Command = "レバガチャ"
+trigger1 = target,Command = "oK`"
 var(19) = -1
 ignorehitpause = 1
 
@@ -1467,8 +1467,8 @@ trigger1 = var(20) < 8
 trigger2 = var(20) = 8
 value = 863
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げた側)3
+;
+; lbNnMO()3
 [Statedef 862]
 type = S
 movetype= A
@@ -1497,7 +1497,7 @@ ignorehitpause = 1
 [State -2, Varadd]
 type = Varadd
 trigger1 = var(50) = 0
-trigger1 = command = "レバガチャ"
+trigger1 = command = "oK`"
 trigger2 = var(50) = 1
 trigger2 = random < 300
 var(19) = 1
@@ -1505,7 +1505,7 @@ ignorehitpause = 1
 
 [State -2, Varadd]
 type = Varadd
-trigger1 = target,Command = "レバガチャ"
+trigger1 = target,Command = "oK`"
 var(19) = -1
 ignorehitpause = 1
 
@@ -1670,8 +1670,8 @@ trigger1 = var(20) < 8
 trigger2 = var(20) = 8
 value = 863
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(終了)
+;
+; lbNnMO(I)
 [Statedef 863]
 type = S
 movetype= I
@@ -1691,7 +1691,7 @@ trigger1 = target,authorname = "GM"
 trigger1 = target,name = "Hugo"
 value = 883
 
-[State 820, 画像表示優先度]
+[State 820, 鞫彌Dx]
 type = SprPriority
 trigger1 = AnimElem = 2,>0
 value = 2
@@ -1741,8 +1741,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)1
+;
+; lbNnMO(黷ｽ)1
 [Statedef 870]
 type = S
 movetype= H
@@ -1762,8 +1762,8 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 870
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)2
+;
+; lbNnMO(黷ｽ)2
 [Statedef 871]
 type = A
 movetype= H
@@ -1792,8 +1792,8 @@ trigger2 = name = "Alex" || name = "Gill"
 fvar(2) = 3
 persistent = 0
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)3
+;
+; lbNnMO(黷ｽ)3
 [Statedef 872]
 type = A
 movetype= H
@@ -1822,8 +1822,8 @@ trigger2 = name = "Alex" || name = "Gill"
 fvar(2) = 3
 persistent = 0
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)4
+;
+; lbNnMO(黷ｽ)4
 [Statedef 873]
 type = A
 movetype= H
@@ -1848,8 +1848,8 @@ type = ChangeState
 trigger1 = animtime = 0
 value = 874
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)5
+;
+; lbNnMO(黷ｽ)5
 [Statedef 874]
 type = A
 movetype= H
@@ -1928,8 +1928,8 @@ trigger1 = Pos Y >= 25
 value = 5100
 
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)1
+;
+; lbNnMO(黷ｽ)1
 [Statedef 880]
 type = S
 movetype= H
@@ -1949,8 +1949,8 @@ type = ChangeAnim2
 Trigger1 = Time = 0
 value = 880
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)2
+;
+; lbNnMO(黷ｽ)2
 [Statedef 881]
 type = A
 movetype= H
@@ -1976,8 +1976,8 @@ trigger1 = animelemtime(2) = 0
 fvar(2) = 3
 persistent = 0
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)3
+;
+; lbNnMO(黷ｽ)3
 [Statedef 882]
 type = A
 movetype= H
@@ -2003,8 +2003,8 @@ trigger1 = animelemtime(2) = 0
 fvar(2) = 3
 persistent = 0
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)4
+;
+; lbNnMO(黷ｽ)4
 [Statedef 883]
 type = A
 movetype= H
@@ -2029,8 +2029,8 @@ type = ChangeState
 trigger1 = animtime = 0
 value = 884
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ネックハンギング(投げられた側)5
+;
+; lbNnMO(黷ｽ)5
 [Statedef 884]
 type = A
 movetype= H
@@ -2104,8 +2104,8 @@ trigger1 = Pos Y >= 25
 value = 5100
 
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ラリアット
+;
+; Abg
 [Statedef 900]
 type = S 
 movetype = A 
@@ -2123,7 +2123,7 @@ type = PowerAdd
 trigger1 = AnimElemtime(6) = -1
 value = 30
 
-[State 220, ヒット定義]
+[State 220, qbg`]
 type = HitDef 
 triggerall = !var(24) && (!var(5)||(var(5)&&fvar(4))) 
 triggerall = var(23) != 900
@@ -2146,7 +2146,7 @@ guardsound = S3,0
 ground.type = High 
 ground.slidetime = 16 
 ground.hittime = Ifelse(p2statetype = C, 35, 33) 
-guard.hittime = 17
+guard.hittime = (Ifelse(p2statetype = C, 35, 33)) - 5
 guard.slidetime = 16
 guard.ctrltime = 17
 ground.velocity = -26.0*const(size.xscale) 
@@ -2221,13 +2221,13 @@ type = VarSet
 trigger1 = time = 0
 var(38) = 0
 
-[State 220, 音を鳴らす]
+[State 220, ﾂらす]
 type = PlaySnd
 trigger1 = animelem = 4
 value = 0,3
 channel = 0
 
-[State 220, 音を鳴らす]
+[State 220, ﾂらす]
 type = PlaySnd
 trigger1 = animelem = 6
 value = 1,2
@@ -2251,8 +2251,8 @@ trigger2 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; リープアタック
+;
+; [vA^bN
 [Statedef 910]
 type = S
 movetype= A
@@ -2291,12 +2291,12 @@ type = StateTypeSet
 trigger1 = AnimElemTime(2) >= 0
 StateType = A
 
-[State 920, 音を鳴らす]
+[State 920, ﾂらす]
 type = PlaySnd
 trigger1 = animelem = 5
 value = 1,0
 
-[State 615, ヒット定義]
+[State 615, qbg`]
 type = HitDef
 triggerall = !var(24) && (!var(5)||(var(5)&&fvar(4)))
 triggerall = var(23) != 910
@@ -2318,7 +2318,7 @@ guardsound = S3,0
 ground.type = High
 ground.slidetime = 6
 ground.hittime = Ifelse(p2statetype = C, 14, 13)
-guard.hittime = 12
+guard.hittime = (Ifelse(p2statetype = C, 14, 13)) - 5
 guard.slidetime = 6
 guard.ctrltime = 12
 air.hittime = 13
@@ -2352,8 +2352,8 @@ trigger1 = !var(13)
 trigger1 = AnimElemTime(2) > 0
 value = 915
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; リープアタック(着地)
+;
+; [vA^bN(n)
 [Statedef 915]
 type = S
 physics = S
@@ -2401,8 +2401,8 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△△
-; ボディプレス
+;
+; {fBvX
 [Statedef 920]
 type = A
 movetype= A
@@ -2413,13 +2413,13 @@ anim = 920
 ;poweradd = 30
 sprpriority = 2
 
-[State 220, 音を鳴らす]
+[State 220, ﾂらす]
 type = PlaySnd
 trigger1 = animelem = 2
 value = 0,3
 channel = 0
 
-[State 620, 音を鳴らす]
+[State 620, ﾂらす]
 type = PlaySnd
 trigger1 = animelem = 3
 value = 1,2
@@ -2429,7 +2429,7 @@ type = PowerAdd
 trigger1 = AnimElemtime(3) = -1
 value = 30
 
-[State 620, ヒット定義]
+[State 620, qbg`]
 type = HitDef
 triggerall = !var(24) && (!var(5)||(var(5)&&fvar(4))) 
 triggerall = var(23) != 920
@@ -2452,7 +2452,7 @@ guardsound = S3,0
 ground.type = High
 ground.slidetime = 6
 ground.hittime = Ifelse(p2statetype=C,18,16)
-guard.hittime = 15
+guard.hittime = (Ifelse(p2statetype=C,18,16)) - 5
 guard.slidetime = 6
 guard.ctrltime = 15
 ground.velocity = -6.5*const(size.xscale)
