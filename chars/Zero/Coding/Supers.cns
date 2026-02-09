@@ -3979,7 +3979,7 @@ guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 fall=1
 air.recover=0
-fall.recover=0
+fall.recover = 0
 getpower=0,0
 givepower=18,18
 envshake.time=12
@@ -4105,7 +4105,7 @@ guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 yaccel=.5
 air.fall=1
-fall.recover=0
+fall.recover = 0
 forcestand=1
 kill = 0
 
@@ -4143,7 +4143,7 @@ air.velocity = -2.6,-7
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 kill = 0
 
@@ -4188,7 +4188,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 kill = 0
 
@@ -4228,7 +4228,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 kill = 0
 
@@ -4266,7 +4266,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 kill = 0
 

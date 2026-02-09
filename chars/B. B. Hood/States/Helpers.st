@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| B. B. Hood by varo_hades                |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;
 ;HELPER STATES=
 ;
@@ -2130,7 +2130,7 @@ air.hittime = 13
 air.juggle = 0
 fall = 1
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 getpower = 0,0
 givepower = 0,0
@@ -2357,7 +2357,7 @@ air.hittime = 13
 air.juggle = 0
 fall = 1
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 getpower = 0,0
 givepower = 0,0
@@ -2409,7 +2409,7 @@ air.hittime = 13
 air.juggle = 0
 fall = 1
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 getpower = 0,0
 givepower = 0,0

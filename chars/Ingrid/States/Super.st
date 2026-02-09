@@ -446,7 +446,7 @@ air.cornerPush.velOff = 0
 yaccel = .5
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 forcestand = 1
 hitsound = -1 + 0*(var(31):=5)
@@ -562,7 +562,7 @@ air.velocity = -5, -7
 air.cornerPush.velOff = 0
 yAccel = 0.5
 fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 hitsound = -1 + 0*(var(31):=5)
 guardsound = -1 + 0*(var(32):=0)
@@ -758,7 +758,7 @@ air.cornerPush.velOff = 0
 yaccel = .5
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 forcestand = 1
 hitsound = -1 + 0*(var(31):=5)
@@ -874,7 +874,7 @@ air.velocity = -2.5, -9.5
 air.cornerPush.velOff = 0
 yAccel = 0.5
 fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 hitsound = -1 + 0*(var(31):=5)
 guardsound = -1 + 0*(var(32):=0)
@@ -1028,7 +1028,7 @@ air.cornerPush.velOff = 0
 yaccel = .5
 fall = 1
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 forcestand = 1
 hitsound = -1 + 0*(var(31):=5)

@@ -851,7 +851,7 @@ air.velocity=ifelse(var(2)<6, -6, -15),-2
 guard.velocity= -10.52
 fall=(var(2)>=6)
 air.fall=1
-fall.recover=0
+fall.recover = 0
 air.juggle = 0
 getpower=0
 givepower=20,20
@@ -1125,7 +1125,7 @@ air.velocity=ifelse(var(2)<10, -6, -15),-2
 guard.velocity= -10.52
 fall=(var(2)>=10)
 air.fall=1
-fall.recover=0
+fall.recover = 0
 getpower=0
 givepower=20,20
 envshake.time=12

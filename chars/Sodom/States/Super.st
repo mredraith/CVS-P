@@ -1439,7 +1439,7 @@ p2facing = 1
 p1stateno = 3120
 p2stateno = 3125
 fall = 1
-fall.recover = 1
+fall.recover = 0
 
 [State 0, PlaySnd]
 type = PlaySnd

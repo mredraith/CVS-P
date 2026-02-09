@@ -2965,7 +2965,7 @@ air.velocity = -1, -7
 air.hittime = 120
 guard.ctrltime = 11
 fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 getpower = 0
 givepower = 35, 35
@@ -3010,7 +3010,7 @@ guard.cornerpush.veloff = 0
 air.velocity = -2, -7;ifelse(!var(19), -5.5, ifelse(var(19) = 1, -6, -6.5))
 air.hittime = 120
 fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 air.recover = 0
 envshake.time = 14

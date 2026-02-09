@@ -1010,7 +1010,7 @@ p2facing = 1          ;Force p2 to face player
 p1stateno = 3210
 p2stateno = 3215
 fall = 1
-fall.recover = 1
+fall.recover = 0
 
 [State 1001,1]
 type = ChangeState
@@ -3448,7 +3448,7 @@ guard.sparkno = -1 + 0 * (var(13) := 8001)
 ;
 fall=0
 air.fall=0
-fall.recover=0
+fall.recover = 0
 ;
 envshake.time = 5
 envshake.freq = 100
@@ -3495,7 +3495,7 @@ guard.sparkno = -1 + 0 * (var(13) := 8001)
 ;
 fall=0
 air.fall=0
-fall.recover=0
+fall.recover = 0
 ;
 envshake.time = 5
 envshake.freq = 100
@@ -3542,7 +3542,7 @@ guard.sparkno = -1 + 0 * (var(13) := 8001)
 ;
 fall=0
 air.fall=0
-fall.recover=0
+fall.recover = 0
 ;
 envshake.time = 5
 envshake.freq = 100
@@ -3588,7 +3588,7 @@ guard.sparkno = -1 + 0 * (var(13) := 8001)
 ;
 fall=0
 air.fall=0
-fall.recover=0
+fall.recover = 0
 ;
 envshake.time = 5
 envshake.freq = 100
@@ -3722,7 +3722,7 @@ guard.sparkno = -1 + 0 * (var(13) := 8001)
 ;
 fall=0
 air.fall=0
-fall.recover=0
+fall.recover = 0
 ;
 envshake.time = 5
 envshake.freq = 100
@@ -3767,7 +3767,7 @@ guard.sparkno = -1 + 0 * (var(13) := 8001)
 ;
 fall=0
 air.fall=0
-fall.recover=0
+fall.recover = 0
 ;
 envshake.time = 5
 envshake.freq = 100

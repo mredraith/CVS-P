@@ -1632,7 +1632,7 @@ p2facing = 1
 ID = 3600
 fall = 0
 air.fall = 0
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 
 [State 0, ChangeAnim]

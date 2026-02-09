@@ -1144,7 +1144,7 @@ airguard.cornerpush.veloff=0
 yaccel=.5
 fall=0
 air.fall=1
-fall.recover=0
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -1368,7 +1368,7 @@ airguard.cornerpush.veloff=0
 yaccel=.5
 fall=0
 air.fall=1
-fall.recover=0
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -1592,7 +1592,7 @@ airguard.cornerpush.veloff=0
 yaccel=.5
 fall=0
 air.fall=1
-fall.recover=0
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -1816,7 +1816,7 @@ airguard.cornerpush.veloff=0
 yaccel=.5
 fall=0
 air.fall=1
-fall.recover=0
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -2040,7 +2040,7 @@ airguard.cornerpush.veloff=0
 yaccel=.5
 fall=0
 air.fall=1
-fall.recover=0
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -2264,7 +2264,7 @@ airguard.cornerpush.veloff=0
 yaccel=.5
 fall=0
 air.fall=1
-fall.recover=0
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -2488,7 +2488,7 @@ airguard.cornerpush.veloff=0
 yaccel=.5
 fall=0
 air.fall=1
-fall.recover=0
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -2719,7 +2719,7 @@ airguard.cornerpush.veloff=0
 yaccel=.55
 fall=1
 air.fall=1
-fall.recover=1
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -2949,7 +2949,7 @@ airguard.cornerpush.veloff=0
 yaccel=.55
 fall=1
 air.fall=1
-fall.recover=1
+fall.recover = 0
 fall.recovertime=13
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)

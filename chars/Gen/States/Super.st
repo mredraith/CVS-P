@@ -151,7 +151,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -418,7 +418,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -678,7 +678,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -768,7 +768,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -932,7 +932,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -1098,7 +1098,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -1263,7 +1263,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -1428,7 +1428,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -1593,7 +1593,7 @@ yAccel = 0.58
 fall = 0
 air.fall = 1
 kill = 0
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)

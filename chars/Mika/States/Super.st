@@ -756,7 +756,7 @@ sparkxy = -10 + 0*(var(35):=40), var(36):=-50
 hitsound = -1 +0*(var(31):=800)
 guardsound = -1 +0*(var(32):=0)
 fall=1
-fall.recover=1
+fall.recover = 0
 numhits=0
 p1stateno=3101
 
@@ -1329,7 +1329,7 @@ sparkxy = -10 + 0*(var(35):=40), var(36):=-50
 hitsound = -1 +0*(var(31):=800)
 guardsound = -1 +0*(var(32):=0)
 fall=1
-fall.recover=1
+fall.recover = 0
 numhits=0
 p1stateno=3151
 
@@ -3574,7 +3574,7 @@ sparkxy = -10 + 0*(var(35):=40), var(36):=-50
 hitsound = -1 +0*(var(31):=800)
 guardsound = -1 +0*(var(32):=0)
 fall=1
-fall.recover=1
+fall.recover = 0
 numhits=0
 p1stateno=3501
 
