@@ -616,9 +616,9 @@ givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 13), ifElse(var(20), 7, 13)
 guard.pauseTime = ifElse(var(20), 6, 13), ifElse(var(20), 7, 13)
 animtype = Heavy
-air.animType = Back
-fall.animType = Back
-ground.type = Low
+air.animtype = back
+fall.animtype = back
+ground.type = Trip
 air.type = High
 ground.hitTime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 5
@@ -632,8 +632,8 @@ air.velocity = -4, -5.25
 airguard.velocity = -6.67,-1
 air.cornerPush.velOff = 0
 yAccel = 0.5
-fall = 0
-fall.recover = 1
+fall = 1
+fall.recover = 0
 fall.recoverTime = 120
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
