@@ -1158,7 +1158,7 @@ air.velocity = -1, -8.24
 air.cornerpush.veloff = 0
 yaccel = 0.677
 fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120;33
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)

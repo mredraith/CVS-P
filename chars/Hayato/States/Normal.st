@@ -2091,7 +2091,7 @@ air.velocity = -1.5, -6
 air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 1
-fall.recover = 1
+fall.recover = 0
 hitSound = -1 + 0 * (var(31) := 9)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8015)

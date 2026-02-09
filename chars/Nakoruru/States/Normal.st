@@ -2067,7 +2067,7 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0;ifelse(var(20), -10.47, -20.01)
 yaccel = 0.65
 fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120;33
 sparkno = -1 + (var(30) := 8012) * 0
 guard.sparkno = -1 + (var(31) := 8000) * 0

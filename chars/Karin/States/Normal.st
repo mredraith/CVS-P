@@ -1024,7 +1024,7 @@ air.cornerpush.veloff = 0
 yaccel = 0.677
 fall = 1
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recovertime = 120
 sparkno = -1 + 0 * (var(33) := 8010)
 guard.sparkno = -1 + 0 * (var(34) := 8000)
