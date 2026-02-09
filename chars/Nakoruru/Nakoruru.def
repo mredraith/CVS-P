@@ -26,18 +26,6 @@ sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
 ;ai = ai.ai
-pal1 = Palettes/Red.act
-pal2 = Palettes/Green.act
-pal3 = Palettes/Whatever.act
-pal4 = Palettes/Default.act
-pal5 = Palettes/SS4d.act
-pal6 = Palettes/Nature.act
-pal7 = Palettes/Pink.act
-pal8 = Palettes/Lum.act
-pal9 = Palettes/NightElf.act
-pal10 = Palettes/CvS2Bust.act
-pal11 = Palettes/Rera.act
-pal12 = Palettes/CvS2Yellow.act
 
 ;Palettes/CvS2Green.act
 ;Palettes/CvS2Blue.act
