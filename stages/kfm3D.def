@@ -61,13 +61,14 @@ portraitscale = 1
 
 ;--------------------------------------------------------
 [Shadow]
-intensity=0
-yscale=0.25
-fade.range=-100,0
+intensity = 72
+color = 0,0,0
+yscale = .5
+fade.range = 0,0
 
 ;--------------------------------------------------------
 [Reflection]
-intensity = 75
+intensity = 25
 yscale=1
 fade.range=-100,0
 ;--------------------------------------------------------
