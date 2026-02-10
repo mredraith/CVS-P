@@ -36,8 +36,8 @@ localcoord = 1280,720 ;Local coordinate space width and height (new in MUGEN 1.0
 [Files]
 spr = system.sff ;Filename of sprite data
 snd = system.snd ;Filename of sound data
-;logo.storyboard = ilxintro.def ;Logo storyboard definition (optional)
-;intro.storyboard = title.def ;Intro storyboard definition (optional)
+;logo.storyboard = ;Logo storyboard definition (optional)
+;intro.storyboard = 
 select = select.def ;Character and stage selection list
 fight = fight/fight.def ;Fight definition filename
 ;System fonts

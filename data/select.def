@@ -203,7 +203,7 @@ Dan, random, includestage=0, order=1
 Honda, random, includestage=0, order=1
 Guile, random, includestage=0, order=1
 Ryu, random, includestage=0, order=1
-randomselect
+kfm, random
 kyo, random, includestage=0, order=1
 K', random, includestage=0, order=1
 terry, random, includestage=0, order=1
@@ -417,10 +417,8 @@ nesmegaman, random, includestage=0, order=5
  ;
  ;Insert your stages below.
 
-stages/kfm.def
-stages/stage3d_outline.def
-stages/stage1.def
 stages/kfm3D.def
+stages/stage3d_outline.def
 stages/Stage0_3D.def
 
 ;-------------------------------------------------------------------------------

@@ -7,8 +7,8 @@ author = "xcheatdeath"
 [Camera]
 startx = 0
 starty = 0
-boundleft = -500
-boundright = 500
+boundleft = -300
+boundright = 300
 boundhigh = -75
 boundlow = 0
 
@@ -28,12 +28,12 @@ yshift = -.10
 ;--------------------------------------------------------
 [PlayerInfo]
 ;--- Player 1 ---
-p1startx = -140
+p1startx = -120
 p1starty = 0
 p1facing = 1
 
 ;--- Player 2 ---
-p2startx = 140
+p2startx = 120
 p2starty = 0
 p2facing = -1
 
@@ -95,10 +95,10 @@ spr = kfm3D.sff
 [Model]
 
 ; X, Y, and Z coordinates of the model
-offset = 0,-0.2,-0.47
+offset = 0,-0.2,-0.5
 
 ; Scale of the model
-scale = 0.08, 0.08, 0.08
+scale = 0.06, 0.06, 0.06
 ;-------------------------------------
 ; Stage portrait data
 [Begin Action 9000]

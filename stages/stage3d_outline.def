@@ -11,33 +11,33 @@ author = "SuperFromND"; modifed by Eiton
 [Camera]
 startx = 0
 starty = 0
-boundleft = -700
-boundright = 700
+boundleft = -300
+boundright = 300
 boundhigh = -450
-boundlow = 0
+boundlow = 20
 
-verticalfollow = .85
-floortension = 200
-tension = 200
+verticalfollow = 1
+floortension = 250
+tension = 100
 
 overdrawhigh = 120
 overdrawlow = 120
 cuthigh = 0
 cutlow = 0
-
-zoomout = .8
-
+zoomin=1
+zoomout=0.75
 ;Field of view. 30 is good for photorealistic scenes, but feel free to tweak this to your preference.
 fov = 30
+yshift = -.10
 ;--------------------------------------------------------
 [PlayerInfo]
 ;--- Player 1 ---
-p1startx = -280
+p1startx = -240
 p1starty = 0
 p1facing = 1
 
 ;--- Player 2 ---
-p2startx = 280
+p2startx = 240
 p2starty = 0
 p2facing = -1
 
@@ -47,8 +47,8 @@ rightbound = 4000
 
 ;--------------------------------------------------------
 [Bound]
-screenleft = 60
-screenright = 60
+screenleft = 75
+screenright = 75
 
 ;--------------------------------------------------------
 [StageInfo]
@@ -101,7 +101,7 @@ spr = stage3d_outline.sff
 offset = 0,-0.2,-0.9
 
 ; Scale of the model
-scale = 0.05, 0.05, 0.05
+scale = 0.045, 0.045, 0.045
 
 ;-------------------------------------
 ; Stage portrait data
