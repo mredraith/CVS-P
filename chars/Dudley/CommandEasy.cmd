@@ -887,15 +887,15 @@ time=1
 
 [Command]
 name = "Counter_P"
-command = F, x+y
+command = /$F, x+y
 time = 8
 [Command]
 name = "Counter_P"
-command = F, x+z
+command = /$F, x+z
 time = 8
 [Command]
 name = "Counter_P"
-command = F, y+z
+command = /$F, y+z
 time = 8
 
 [Command]

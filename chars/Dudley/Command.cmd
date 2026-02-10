@@ -907,15 +907,15 @@ time = 16
 
 [Command]
 name = "Counter_K"
-command = F, a+b
+command = /$F, a+b
 time = 8
 [Command]
 name = "Counter_K"
-command = F, a+c
+command = /$F, a+c
 time = 8
 [Command]
 name = "Counter_K"
-command = F, b+c
+command = /$F, b+c
 time = 8
 
 

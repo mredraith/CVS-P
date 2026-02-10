@@ -325,32 +325,32 @@ time=1
 ;Zero counter
 [Command]
 name="bdx"
-command = F, x+y
+command = /$F, x+y
 time = 8
 
 [Command]
 name="bdy"
-command = F, x+z
+command = /$F, x+z
 time = 8
 
 [Command]
 name="bdz"
-command = F, y+z
+command = /$F, y+z
 time = 8
 
 [Command]
 name="bda"
-command = F, a+b
+command = /$F, a+b
 time = 8
 
 [Command]
 name="bdb"
-command = F, a+c
+command = /$F, a+c
 time = 8
 
 [Command]
 name="bdc"
-command = F, b+c
+command = /$F, b+c
 time = 8
 
 ;-| Dir + Button |---------------------------------------------------------

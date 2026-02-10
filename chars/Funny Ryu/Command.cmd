@@ -787,28 +787,28 @@ time = 20
 
 [Command]
 name = "Counter_P"
-command = F, x+y
+command = /$F, x+y
 time = 8
 [Command]
 name = "Counter_P"
-command = F, x+z
+command = /$F, x+z
 time = 8
 [Command]
 name = "Counter_P"
-command = F, y+z
+command = /$F, y+z
 time = 8
 
 [Command]
 name = "Counter_K"
-command = F, a+b
+command = /$F, a+b
 time = 8
 [Command]
 name = "Counter_K"
-command = F, a+c
+command = /$F, a+c
 time = 8
 [Command]
 name = "Counter_K"
-command = F, b+c
+command = /$F, b+c
 time = 8
 
 

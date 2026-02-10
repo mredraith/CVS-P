@@ -581,28 +581,28 @@ time = 16
 
 [Command]
 name = "412p"
-command = F, x+y
+command = /$F, x+y
 time = 8
 [Command]
 name = "412p"
-command = F, x+z
+command = /$F, x+z
 time = 8
 [Command]
 name = "412p"
-command = F, y+z
+command = /$F, y+z
 time = 8
 
 [Command]
 name = "412k"
-command = F, a+b
+command = /$F, a+b
 time = 8
 [Command]
 name = "412k"
-command = F, a+c
+command = /$F, a+c
 time = 8
 [Command]
 name = "412k"
-command = F, b+c
+command = /$F, b+c
 time = 8
 
 ;====================<OTHER>====================

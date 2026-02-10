@@ -224,7 +224,7 @@ time = 10
 
 [Command]
 name = "ljumpf"
-command = F, a+b+c
+command = /$F, a+b+c
 time = 10
 
 [Command]
