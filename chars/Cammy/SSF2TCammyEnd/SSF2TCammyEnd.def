@@ -1,0 +1,78 @@
+;SSF2T Cammy Ending
+;Created by Tiger-Boy
+
+[SceneDef]
+spr = SSF2TCammyEnd.sff
+startscene = 0 ; Scene Start
+
+[Scene 0];Bison defeated!
+fadein.time = 40
+fadeout.time = 30   
+layerall.pos = 0,0
+layer0.anim =  0
+end.time = 2500
+bgm = 28-cammy_ending.mp3       
+bgm.loop = 0;1 
+
+[Scene 1];With Delta Red
+fadein.time = 30 
+fadeout.time = 30
+layerall.pos = 0,0
+layer0.anim =  1
+end.time = 2050
+
+[Scene 2];Helicopter
+fadein.time = 30 
+fadeout.time = 30
+layerall.pos = 0,0
+layer0.anim =  2
+end.time = 500
+
+[Scene 3];Capcom/Cammy Logo
+fadein.time = 30 
+fadeout.time = 30
+layerall.pos = 0,0
+layer0.anim =  3
+end.time = 600
+
+[Begin Action 0]
+100,0, -30,0, 150
+100,1, -30,0, 150
+100,2, -30,0, 150
+100,3, -30,0, 150
+100,4, -30,0, 150
+100,5, -30,0, 150
+100,6, -30,0, 150
+100,7, -30,0, 150
+100,8, -30,0, 150
+100,9, -30,0, 150
+100,10, -30,0, 150
+100,11, -30,0, 150
+100,12, -30,0, 150
+100,13, -30,0, 150
+100,14, -30,0, 150
+100,15, -30,0, 150
+100,0, -30,0, 150
+
+[Begin Action 1]
+110,0, -30,0, 150
+110,1, -30,0, 150
+110,2, -30,0, 150
+110,0, -30,0, 150
+110,3, -30,0, 150
+110,4, -30,0, 150
+110,5, -30,0, 150
+110,6, -30,0, 200
+110,7, -30,0, 150
+110,8, -30,0, 150
+110,9, -30,0, 150
+110,10, -30,0,300
+110,11, -30,0,150 
+
+[Begin Action 2]
+120,0, -30,0, 150
+120,1, -30,0, 200
+120,0, -30,0, 150
+
+[Begin Action 3]
+130,0, -30,0, 600

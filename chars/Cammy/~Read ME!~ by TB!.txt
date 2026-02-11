@@ -1,0 +1,121 @@
+ ___________________
+| Cammy - Delta Red |
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+~Edited by Tiger-Boy!~
+
+This is an edit version of the Cammy Delta Red char by chuchoryu and Varo_Hades, using the char base from POTS (phantom of the server), so all credit goes to them.
+
+How can you help?:
+I know many of you are 'details-freaks' like myself. And even if I edited this Cammy pcx by pcx, I might have overlooked something.
+If you find any image out of place, edited wrongly, or even have an advice, let me know.
+
+This has been quite the great experience. 
+All I wanted to do was to make a SSF2 ending for this Cammy. 
+Ended up editing the char itself to a level I never thought I could.
+I've learned a lot along the way, and I'm still learning.
+
+Any feedback (good or bad), advices, and even ideas, will be appreciated.
+
+
+-----------------------------------------------------:
+
+01/19/2014:
+
+-Re-Edited her SF4 stand animation:
+	-smoothed her arms animations.
+	-Make her left arm be more 'outward'.
+	-Worked on some 'shadow' details.
+-Re-Edited her SF2 stand animation:
+	-smoothed her arms animations.
+	-Worked on some 'shadow'/muscle-tone details.
+-Added and edited her 'salute' intro when facing Guile, Nash(Charlie), and Leona.
+ Edited animations to fit both stances.
+ (You may want to edit your Guile/Nash/Leona Char to salute her back.)
+-Edited her SF2 Ending (more updated sprites of Cammy).
+-Now you can choose Cammy's 'Age' (Size)! Check her DEF file:
+ 
+ ;************************************
+ ;Choose Cammy's Age!
+ ;Remove ";" from the desired one.
+ ;Add ";" in front of the other 2.
+
+ ;cns     =Constants/Constants-SF2.cns;SF2 Age
+ cns     =Constants/Constants-SF4.cns;SF4 Age
+
+ ;************************************
+
+"To Do" List:
+-Fix her 'leg throw' attacks (Frankensteiner).
+-Add Military Boots. (ChuchoRyu mention he was working on this. Thanks!)
+-Add more Intros and Win animations.
+-Make a Color Separation patch.
+-Add Cammy's Psycho effect colors into the palette scheme. (Probable.)
+-New 'Super Combo'(Gyro Drive Smasher?).
+
+-----------------------------------------------------:
+
+01/07/2015:
+
+-Due to popular demand, I am releasing her as a full char, instead of a patch. (Aproved by Varo Hades)
+-Edited 'Electro-Shock' animation.
+-Edited a few sprites (small details).
+-Changed all Sprites that were not edited by ChuchoRyu. Now she is FULLY Delta Red!
+-Fixed her vertical spinning heel images (Up and down). 
+-New 'Hyper' portrait. (Thanks again, Hades!)
+
+
+"To Do" List:
+-Fix her 'leg throw' attacks (Frankensteiner).
+-Add Military Boots. (Long term. Don't expect it any time soon...)
+-Add Intro when facing Guile/Charlie/Nash.
+-Add Intros and Win animations.
+-Add Cammy's Psycho effect colors into the palette scheme. (Probable.)
+-Make a Color Separation patch.
+-New 'Super Combo'(Gyro Drive Smasher?).
+
+-----------------------------------------------------:
+
+12/31/2014:
+
+-Edited her Victory Quotes. Now not only she has several General Quotes, she also has specific quotes when defeating certain chars (Mostly Street Fighter).
+-Changed her small Portrait (Thanks to Hades).
+-Added Victory Portrait (9000,2 - 320x125).
+-Fixed the issue with the colors on her glove/boots. 
+-Edited some palettes to go along with her 'Gloves/Boots' edit (only 7).
+-Edited many of her PCXs (added abs, fix colors, etc....)
+-Edited the new stand animation (chest more proportionate to the rest of the sff images).
+-I have made the Patch more easily to add. 
+	1-Get Cammy from ChuchoRyu (make sure it's the one called 'CAmmy2014chuchoryu')
+	2-Add the 'Tiger-Cammy' def file and the 'Tiger-Cammy' folder into the char.
+	3-Make sure that on your Select file you have the following:
+		Cammy/Tiger-Cammy.def
+	4-Turn on MUGEN and Enjoy!
+-BONUS!:
+While editing her, I managed to create a new stand for her.
+This was basically already in the sff, but seems Chuchoryu never got around to finish it. 
+It needed a lot of work, but had a lot of potential. 
+New Right Arm, edited her left arm, new sideways head, some special touches, and now I have a stand similar to her SF2 stand.
+And YOU CHOOSE IT! On her DEF file you choose her stand animation:
+
+;************************************
+;Choose Your Stand!
+;Remove ";" from the desired one.
+;Add ";" in front of the other one.
+;Only one must be active!
+
+;anim    =Tiger-Cammy/Anims/AnimSF2.air;SF2 StAnce
+anim    =Tiger-Cammy/Anims/AnimSF4.air;SF4 Stance
+
+;************************************
+
+
+-----------------------------------------------------:
+
+12/19/2014:
+
+-Edited the new stand animation, now it includes eyes 'blinking' and abs details. Head was edited using other sprites from the same char. 
+-Edited the crouch animation, now also includes eyes blinking.
+-Edited some intro and 'win' animations (Added 'abs').
+-Fixed some intro and 'win' animations, including the ones when defeating Dhalsim, and facing Vega(Claw) and Bison(Dictator).
+-Added some Victory Quotes.
+-Added a SF2 Ending made by me, using sprites from this char(for Arcade Mode).

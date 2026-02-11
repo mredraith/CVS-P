@@ -1,0 +1,732 @@
+;---------------------------------------------------------------------------
+;Win Pose
+[Statedef 189]
+type=S
+physics=N
+ctrl=0
+velset=0,0
+
+[State 189]
+type=ChangeAnim
+trigger1=!time
+value=9741
+
+;NOW LOADING...
+[statedef 8750]
+type=A
+anim=9741
+ctrl=0
+
+[state 8750]
+type=StopSND
+trigger1=1
+channel=-1
+ignorehitpause=1
+
+[state 8750]
+type=VarAdd
+trigger1=roundstate>3
+var(1)=1
+ignorehitpause=1
+
+[state 8750]
+type=ChangeState
+trigger1=var(1) && win && matchover
+trigger2=var(1) && lose && ((P2Stateno%10000=[180,189])||var(1)>300)
+value=8751+(win&&matchover)*10
+ignorehitpause=1
+
+[state 8750,carpet]
+type=Explod
+trigger1=time=1 && root,life
+id=8757
+anim=8757
+pos=0,0
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=99999
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750,carpet]
+type=Explod
+trigger1=time=1 && root,life
+id=8757
+anim=8757
+pos=0,120
+postype=Right
+facing= -1
+scale=320.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=99999
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750,loading...]
+type=Explod
+trigger1=time=1
+id=8758
+anim=8758
+pos=0,0
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=99999
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750,flash_black]
+type=EnvColor
+trigger1=1
+value=255*(time<2),255*(!time),255*(!time)
+time=1
+ignorehitpause =1
+
+[state 8750]
+type=AssertSpecial
+trigger1=1
+flag=nobardisplay
+flag2=noBG
+flag3=noFG
+ignorehitpause=1
+
+[state 8750,nobgm]
+type=AssertSpecial
+trigger1=1
+flag=nomusic
+flag2=nokoslow
+flag3=roundnotover
+ignorehitpause=1
+
+;~~~~~~~~~
+;GAME OVER
+[statedef 8751]
+
+[state 8750,carpet_remove]
+type=RemoveExplod
+trigger1=!time
+id=8757
+
+[state 8750,loading_remove]
+type=RemoveExplod
+trigger1=!time
+id=8758
+
+[state 8750,flash_black]
+type=EnvColor
+trigger1=1
+value=0,0,0
+time=1
+ignorehitpause =1
+
+[state 8750,BG]
+type=Explod
+trigger1=time=1
+id=8750
+anim=8750
+pos=0,240
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=-5
+ontop=1
+ignorehitpause=1
+
+[state 8750]
+type=StopSND
+trigger1=time<20
+channel=-1
+ignorehitpause=1
+
+[state 8750,Music]
+type=PlaySND
+trigger1=time=20
+value=8750,0
+ignorehitpause=1
+
+[state 8750,GAMEOVER]
+type=Explod
+trigger1=time=2
+id=8751
+anim=8751
+pos=0,240
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=10
+ontop=1
+ignorehitpause=1
+
+[state 8750,Cards1]
+type=Explod
+trigger1=time=2
+id=8752
+anim=8752
+pos=160-floor(32*3*(320.0/384.0)),120
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+
+[state 8750,Cards2]
+type=Explod
+trigger1=time=2
+id=8752
+anim=8753
+pos=160-floor(32*2*(320.0/384.0)),120
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+
+[state 8750,Cards3]
+type=Explod
+trigger1=time=4
+id=8752
+anim=8753
+pos=160-floor(32*(320.0/384.0)),120
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+
+[state 8750,Cards4]
+type=Explod
+trigger1=time=4
+id=8752
+anim=8754
+pos=160,120
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=999999999
+ontop=1
+ignorehitpause=1
+
+[state 8750,Cards5]
+type=Explod
+trigger1=time=4
+id=8752
+anim=8753
+pos=160+ceil(32*(320.0/384.0)),120
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+
+[state 8750,Cards6]
+type=Explod
+trigger1=time=2
+id=8752
+anim=8753
+pos=160+floor(32*2*(320.0/384.0)),120
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+
+[state 8750,Cards7]
+type=Explod
+trigger1=time=2
+id=8752
+anim=8752
+pos=160+floor(32*3*(320.0/384.0)),120
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+
+[state 8750]
+type=AssertSpecial
+trigger1=1
+flag=nobardisplay
+flag2=noBG
+flag3=noFG
+ignorehitpause=1
+
+[state 8750,nobgm]
+type=AssertSpecial
+trigger1=1
+flag=nomusic
+flag2=nokoslow
+ignorehitpause=1
+
+[state 8750,notover]
+type=AssertSpecial
+trigger1=time<(20+234)
+flag=roundnotover
+ignorehitpause=1
+
+;Pre-Winning Demo
+[statedef 8760]
+type=A
+anim=9741
+ctrl=0
+
+[state 8750,match_end]
+type=Explod
+trigger1=time=1
+id=8755
+anim=8756
+pos=0,0
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=-10
+ontop=1
+ownpal=1
+ignorehitpause=1
+persistent=0
+
+[state 8750,match-end]
+type=Explod
+trigger1=time=1
+id=8755
+anim=8756
+pos=0,120
+postype=Right
+scale=320.0/384.0,240.0/224.0
+facing= -1
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=-10
+ontop=1
+ownpal=1
+ignorehitpause=1
+persistent=0
+
+[state 8750,fadeout]
+type=Explod
+trigger1=time=3
+id=8799
+anim=8799
+pos=0,0
+postype=Left
+scale=500,400
+facing= 1
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=9999999
+ownpal=1
+ignorehitpause=1
+
+[state 8750,flash]
+type=EnvColor
+trigger1=time>10
+value=255*(time>16),255*(time=17),255*(time=17)
+time=1
+ignorehitpause=1
+
+[state 8760]
+type=StopSND
+trigger1=time>16
+channel=-1
+ignorehitpause=1
+
+[state 8760]
+type=AssertSpecial
+trigger1=time>16
+flag=nobg
+flag2=nofg
+ignorehitpause=1
+
+[state 8750]
+type=AssertSpecial
+trigger1=1
+flag=nobardisplay
+flag2=globalnoshadow
+ignorehitpause=1
+
+[state 8750]
+type=AssertSpecial
+trigger1=time>16 && matchover
+flag=nomusic
+ignorehitpause=1
+
+[state 8750]
+type=ChangeState
+trigger1=time=19 && matchover
+value=8761
+ignorehitpause=1
+
+[state 8750]
+type=AssertSpecial
+trigger1=time<19
+flag=roundnotover
+ignorehitpause=1
+
+;Winning Demo
+[statedef 8761]
+
+[state 8700]
+type=varrandom
+trigger1=!time
+trigger1=1||(var(50):= ceil(286.08*(2)));BGM
+v=0
+range=0,999
+
+[state 8750,MessageTable]
+type=Null
+triggerall=!time
+trigger1=var(1):=var(0)%16 && 0
+trigger2=name="Ken Masters"
+trigger2=(var(1):=(var(0)%15+1)) && 0
+trigger3=name="Ken Masters" && (P2name="Ken Masters"||P4name="Ken Masters"||enemy,name="Ken Masters")
+trigger3=var(1):=ifelse(var(0)%16<8,0,var(0)%16)
+
+[state 8750,carpet_remove]
+type=RemoveExplod
+trigger1=!time
+id=8757
+
+[state 8750,loading_remove]
+type=RemoveExplod
+trigger1=!time
+id=8758
+
+[state 8750,flash_black]
+type=null;EnvColor
+trigger1=1
+value=255*(!time),255*(!time),255*(!time)
+time=1
+ignorehitpause=1
+
+[state 8750,red_fadein]
+type=PalFX
+trigger1=time<10
+add=255-(time)*25,0,0
+time=1
+ignorehitpause=1
+
+[state 8750,BG]
+type=Explod
+trigger1=time=1
+id=8750
+anim=8749
+pos=80,10
+postype=Left
+facing=1
+scale=1.2,1.2
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=-10
+ontop=1
+ignorehitpause=1
+
+[state 8750,BG]
+type=Explod
+trigger1=time=1
+id=8750
+anim=8750
+pos=0,60
+postype=Left
+facing= 1
+scale=1.1,1.1
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=-10
+ontop=1
+ignorehitpause=1
+
+[state 8750,BG]
+type=null;Explod
+trigger1 =time=(var(50)+17)
+id=8751
+anim=8751
+pos=0,240
+postype=Left
+facing= 1
+scale=520.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=-10
+ontop=1
+ignorehitpause=1
+
+[state 8750,Portrait]
+type=Explod
+trigger1=time=1
+id=8776
+anim=8776
+pos=0,0
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+persistent=0
+
+[state 8750,Frame]
+type=Explod
+trigger1=time=1
+id=8759
+anim=8759
+pos=0,240
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+persistent=0
+
+[state 8750,Message]
+type=Explod
+trigger1=time=1
+id=8760
+anim=8760+var(1)
+pos=0,175
+postype=Left
+facing= 1
+scale=.45,.45
+removetime=-1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=9999999
+ontop=1
+ignorehitpause=1
+persistent=0
+
+[state 8750,into-demo]
+type=Explod
+trigger1=time=1||time=(var(50)+17)
+id=8756
+anim=8755
+pos=0,0
+postype=Right
+facing= -1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=-10
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750,into-demo]
+type=Explod
+trigger1=time=1||time=(var(50)+17)
+id=8756
+anim=8755
+pos=0,120
+postype=Left
+scale=320.0/384.0,240.0/224.0
+facing= 1
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=-10
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750]
+type=StopSND
+trigger1=time<5
+channel=-1
+ignorehitpause=1
+
+[state 8760,theme]
+type=PlaySND
+trigger1=time=4
+value=f10200,7
+loop=1
+ignorehitpause=1
+
+[state 8750]
+type=null;AssertSpecial
+trigger1=1
+flag=nobardisplay
+flag2=noBG
+flag3=noFG
+ignorehitpause=1
+
+[state 8750,nobgm]
+type=AssertSpecial
+trigger1=1
+flag=nomusic
+flag2=nokoslow
+ignorehitpause=1
+
+[state 8750,match_end]
+type=Explod
+trigger1=time=var(50)
+id=8755
+anim=8756
+pos=0,0
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=-10
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750,match-end]
+type=Explod
+trigger1=time=var(50)
+id=8755
+anim=8756
+pos=0,120
+postype=Right
+scale=320.0/384.0,240.0/224.0
+facing= -1
+bindtime=-1
+pausemovetime=99
+supermovetime=99
+sprpriority=-10
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750,fadeout]
+type=PalFX
+trigger1=time=[var(50)+2,var(50)+11]
+add=-(time-var(50)-2)*25,-(time-var(50)-2)*25,-(time-var(50)-2)*25
+time=1
+ignorehitpause=1
+
+[state 8750,match-end]
+type=RemoveExplod
+trigger1=time=(var(50)+12)
+id=8759
+
+[state 8750,match-end]
+type=RemoveExplod
+trigger1=time=(var(50)+12)
+id=8760
+
+[state 8750,match-end]
+type=RemoveExplod
+trigger1=time=(var(50)+12)
+id=8776
+
+[state 8750,bg]
+type=RemoveExplod
+trigger1=time=(var(50)+12)
+id=8750
+
+[state 8750,carpet]
+type=Explod
+trigger1=time=(var(50)+16)
+id=8757
+anim=8757
+pos=0,0
+postype=Left
+facing= 1
+scale=320.0/384.0,240.0/224.0
+removetime=1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=99999
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750,carpet]
+type=Explod
+trigger1=time=(var(50)+16)
+id=8757
+anim=8757
+pos=0,120
+postype=Right
+facing= -1
+scale=320.0/384.0,240.0/224.0
+removetime=1
+bindtime=-1
+pausemovetime=99999
+supermovetime=99999
+sprpriority=99999
+ontop=1
+ownpal=1
+ignorehitpause=1
+
+[state 8750]
+type=AssertSpecial
+trigger1=time<(var(50)+30)
+flag=roundnotover
+ignorehitpause=1
+
+;~~~~~~~~~

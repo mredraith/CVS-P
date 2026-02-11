@@ -1,0 +1,2805 @@
+;------------------------------------------------------------------
+; Boomerang Raid
+[Statedef 3000]
+type=S
+movetype=A
+physics=N
+anim=3000
+poweradd=-1000
+ctrl=0
+velset=0,0
+sprpriority=1
+facep2=1
+
+[State 3000, No Corner Push]
+type=VarSet
+trigger1=!time
+fvar(5)=0
+
+[State 3000, Super Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(21) = ((PrevStateNo = [1000, 2999]) && var(6)) || var(20)
+
+[State 3000, Hyper Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(22)=(PrevStateNo=[3000,4999]) && var(7)
+
+[State 3000, Super Cancel Juggle Reset]
+type=VarSet
+trigger1=!Time
+trigger1=var(21) || var(22)
+var(15)=0
+ignoreHitPause=1
+
+[State 3000, Super Cancel Flash]
+type = PalFX
+trigger1 = var(21) || var(22)
+trigger1 = !(Time % 2) && Time <= 12
+time = 1
+add = 255,255,255
+ignoreHitPause = 1
+
+[State 3000, Super Cancel Juggle Reset]
+type = VarSet
+trigger1 = !Time
+trigger1 = var(21) || var(22)
+var(15) = 0
+ignoreHitPause = 1
+
+[State 3000, SuperPause FX]
+type = Helper
+trigger1 =  Time=3
+helperType = Normal
+stateNo = 8500
+ID = 8500
+name = "Superpause FX"
+posType = P1
+pos=floor(0*const(size.xscale)),floor(-80*const(size.yscale))
+superMoveTime = 255
+size.xScale = 1
+size.yScale = 1
+ownPal = 1
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 =  Time=3
+time = 43
+moveTime = 43
+p2DefMul = 1
+unHittable = 1
+anim = -1
+sound = s8500,0
+darken = 0
+poweradd = 0
+
+[State 3000, NotHitBy]
+type=NotHitBy
+trigger1=!Time
+time=46
+value=SCA
+
+[State 3000, Voice]
+type=PlaySnd
+trigger1 =!time
+value=3000,0
+channel=0
+
+[State 3000]
+type=PlaySnd
+trigger1=animelem=7
+trigger2=animelem=13
+trigger3=animelem=22
+trigger4=animelem=28
+value=1,2
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(4)=0
+trigger2=animelemtime(19)=0
+x=16
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(20)=0
+x=8
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(7)=0
+trigger2=animelemtime(22)=0
+x=6
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(13)=0
+trigger2=animelemtime(28)=0
+x=10
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(14)=0
+trigger2=animelemtime(15)=0
+trigger3=animelemtime(16)=0
+trigger4=animelemtime(29)=0
+trigger5=animelemtime(30)=0
+trigger6=animelemtime(31)=0
+x=4
+
+[State 3000, Hit]
+type=HitDef
+triggerAll = !var(16) && (var(15) < (1 + HitCount) || var(20))
+trigger1=(animelem=7||animelem=13||animelem=22)
+attr=S,HA
+damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 7
+priority=4, hit
+animtype=Hard
+getpower=0,0
+givepower=20,20
+guardflag=MA
+hitflag=MAF
+pauseTime=7, 7
+guard.pauseTime=12,12
+sparkNo = -1 + 0 * (var(33) := 8014)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 80), var(36) := -80
+hitsound=s2,2
+guardsound=s130,0
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+air.type=Low
+ground.slidetime=12
+ground.hittime=32
+guard.hittime=18
+ground.velocity=-3.5
+air.velocity=-2,-3
+guard.velocity=-5.77
+airguard.velocity=-2, -2
+airguard.ctrlTime=10
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=.5
+fall=0
+air.fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd=-255,-255,-255,48
+envShake.time=18
+envShake.ampl=6
+envShake.freq=120
+[State 3000, Hit]
+type=HitDef
+triggerAll = !var(16) && (var(15) < (1 + HitCount) || var(20))
+trigger1=animelem=28
+attr=S,HA
+damage = ceil(ifElse(fvar(11) * 63 < 7, 7, fvar(11) * 63)), 7
+priority=4, hit
+animtype=Hard
+getpower=0,0
+givepower=20,20
+guardflag=MA
+hitflag=MAF
+pauseTime=7, 7
+guard.pauseTime=12,12
+sparkNo = -1 + 0 * (var(33) := 8014)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 80), var(36) := -80
+hitsound=s2,2
+guardsound=s130,0
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+air.type=Low
+ground.slidetime=12
+ground.hittime=32
+guard.hittime=18
+ground.velocity=-5,-5
+air.velocity=-5,-5
+guard.velocity=-5.77
+airguard.velocity=-2, -2
+airguard.ctrlTime=10
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=.5
+fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd=-255,-255,-255,48
+envShake.time=18
+envShake.ampl=6
+envShake.freq=120
+
+
+[State 3000, Ctrlset]
+type=Ctrlset
+trigger1=AnimelemTime(37)>=1
+value=1
+
+[State 3000]
+type=StateTypeSet
+trigger1=AnimelemTime(30)>=0
+movetype=I
+
+[State 3000, ChangeState]
+type=ChangeState
+trigger1=!AnimTime 
+value=0
+ctrl=1
+;------------------------------------------------------------------
+; Boomerang Raid
+[Statedef 3001]
+type=S
+movetype=A
+physics=N
+anim=3001
+sprPriority=2
+
+[State 3000, Voice]
+type=PlaySnd
+trigger1=animelem=7
+value=0,4
+channel=0
+
+[State 3000, TargetState]
+type=TargetState
+Trigger1=!Time 
+value=3002
+
+[State 3000, Position]
+type=PosSet
+trigger1=!Time 
+y=0
+
+[State 3000, VelSet]
+type=VelSet
+trigger1=!Time 
+x=0
+y=0
+
+[State 3000, PlaySnd]
+type=PlaySnd
+trigger1=animelemtime(6)=0
+value=s1,2
+[State 3000]
+type=Width
+trigger1=animelemtime(10)<0
+edge=ceil(30*const(size.xscale)),ceil(40*const(size.xscale))
+
+[State 3000]
+type=Width
+trigger1=animelemtime(10)>=0
+edge=ceil(30*const(size.xscale)),ceil(80*const(size.xscale))
+
+[State 3000, Playerpush]
+type=Playerpush
+trigger1=1
+value=0
+
+[State 3000, posadd]
+type=Posadd
+trigger1=!Time 
+x=-3*const(size.xscale)
+
+[State 3000, posadd]
+type=Posadd
+trigger1=animelemtime(5)=0
+x=-20
+
+[State 3000, posadd]
+type=Posadd
+trigger1=animelemtime(6)=0
+x=-20
+
+[State 3000, posadd]
+type=Posadd
+trigger1=animelemtime(8)=0
+x=-20
+
+[State 3000, posadd]
+type=Posadd
+trigger1=animelemtime(11)=0
+x=-28
+
+[State 3000, posadd]
+type=Posadd
+trigger1=animelemtime(16)=0
+x=-35
+
+[State 3000, posadd]
+type=Posadd
+trigger1=animelemtime(17)=0
+x=-48
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1&&P2StateNo=3002
+pos=ceil(100*const(size.xscale)),0
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=2 && P2StateNo=3002
+pos=ceil(100*const(size.xscale)),0
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=3 && P2StateNo=3002
+pos=ceil(100*const(size.xscale)), 0
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=4 && P2StateNo=3002
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=5 && P2StateNo=3002
+pos=ceil(30*const(size.xscale)), ceil(-60*const(size.yscale))
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=6 && P2StateNo=3002
+pos=ceil(35*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=7 && P2StateNo=3002
+pos=ceil(30*const(size.xscale)), ceil(-65*const(size.yscale))
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=8 && P2StateNo=3002
+pos=ceil(40*const(size.xscale)), ceil(-70*const(size.yscale))
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=9 && P2StateNo=3002
+pos=ceil(25*const(size.xscale)), ceil(-75*const(size.yscale))
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=10 && P2StateNo=3002
+pos=ceil(5*const(size.xscale)), ceil(-95*const(size.yscale))
+
+[State 3000, TargetBind]
+type=TargetBind
+trigger1=AnimElem=11 && P2StateNo=3002
+pos=ceil(-40*const(size.xscale)), ceil(-90*const(size.yscale))
+
+[State 1400, Envshake]
+type=Envshake
+trigger1=P2stateno=3003
+time=16
+freq=120
+ampl=-8
+persistent=0
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = P2stateno=3003
+value = 2,7
+channel = 1
+persistent=0
+
+[State 0, Dust]
+type = Helper
+trigger1 = P2stateno=3003
+helperType = Normal
+stateNo = 8110
+ID = 8110
+name = "Impact Dust"
+postype = p1
+pos=floor(-75*const(size.xscale)),0
+facing = -1
+ownPal = 1
+
+[State 3000, HitAdd]
+type=HitAdd
+trigger1=P2stateno=3003
+value=1
+persistent=0
+
+[State 3000, TargetLifeadd]
+type=TargetLifeadd
+trigger1=P2stateno=3003
+value=floor(-126*fvar(10))
+persistent=0
+
+[State 3000, State End]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+
+;------------------------------------------------------------------
+;Boomerang Raid
+[Statedef 3002]
+type=A
+movetype=H
+physics=N
+ctrl=0
+sprpriority=1
+
+[State 3000, ChangeAnim2]
+type=ChangeAnim2
+Trigger1=!time 
+value=3002
+
+[State 3000]
+type=ScreenBound
+trigger1=1
+value=ifelse(animelemtime(11)<0,0,1)
+movecamera=1,0
+
+[State 3000, velset]
+type=Velset
+trigger1=animelemtime(11)=4
+x=-8.0
+y=3.0
+
+[State 3000, velset]
+type=Veladd
+trigger1=animelemtime(11)>=4
+y=.60
+
+[State 3000]
+type=VelSet
+trigger1=animelemtime(11)>4
+trigger1=vel Y>0
+trigger1=pos Y>=-15
+x=-2.0
+
+[State 3000, Changestate]
+type=Changestate
+trigger1=animelemtime(11)>5
+trigger1=vel Y>0
+trigger1=pos Y>=-15
+value=3003
+;-------------------------
+;Boomerang Raid
+[Statedef 3003]
+type=L
+movetype=H
+physics=N
+
+[State 3000] 
+type=VarSet
+trigger1=!Time
+sysvar(1)=floor(vel y)
+
+[State 3000]
+type=ChangeAnim
+trigger1=!time
+value=5100
+
+[State 3000]
+type=PosSet
+trigger1=!Time
+y=0
+
+[State 3000]
+type=VelSet
+trigger1= !Time
+y=0
+
+[State 3000] 
+type=VelMul
+trigger1=!Time
+x=0.75
+
+[State 3000, Envshake]
+type=Envshake
+trigger1=Time=3
+time=16
+freq=120
+ampl=-8
+
+[State 3000]
+type=PosFreeze
+trigger1=1
+
+[State 3000]
+type=SelfState
+trigger1=!AnimTime
+value=5101
+
+;------------------------------------------------------------------
+; MAX Boomerang Raid
+[Statedef 3050]
+type=S
+movetype=A
+physics=N
+anim=3050
+poweradd=-2000
+ctrl=0
+velset=0,0
+sprpriority=1
+facep2=1
+
+[State 3000, No Corner Push]
+type=VarSet
+trigger1=!time
+fvar(5)=0
+
+[State 3000, Super Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(21) = ((PrevStateNo = [1000, 2999]) && var(6)) || var(20)
+
+[State 3000, Hyper Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(22)=(PrevStateNo=[3000,4999]) && var(7)
+
+[State 3000, Super Cancel Juggle Reset]
+type=VarSet
+trigger1=!Time
+trigger1=var(21) || var(22)
+var(15)=0
+ignoreHitPause=1
+
+[State 3000, Super Cancel Flash]
+type = PalFX
+trigger1 = var(21) || var(22)
+trigger1 = !(Time % 2) && Time <= 12
+time = 1
+add = 255,255,255
+ignoreHitPause = 1
+
+[State 3000, Super Cancel Juggle Reset]
+type = VarSet
+trigger1 = !Time
+trigger1 = var(21) || var(22)
+var(15) = 0
+ignoreHitPause = 1
+
+[State 3000, SuperPause FX]
+type = Helper
+trigger1 =  Time=3
+helperType = Normal
+stateNo = 8510
+ID = 8500
+name = "Superpause FX"
+posType = P1
+pos=floor(0*const(size.xscale)),floor(-80*const(size.yscale))
+superMoveTime = 255
+size.xScale = 1
+size.yScale = 1
+ownPal = 1
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 =  Time=3
+time = 43
+moveTime = 43
+p2DefMul = 1
+unHittable = 1
+anim = -1
+sound = s8500,0
+darken = 0
+poweradd = 0
+
+[State 3000, NotHitBy]
+type=NotHitBy
+trigger1=!Time
+time=46
+value=SCA
+
+[State 3000, Voice]
+type=PlaySnd
+trigger1 =!time
+value=3000,0
+channel=0
+
+[State 3000, Voice]
+type=PlaySnd
+trigger1 =animelem=36
+value=0,1
+channel=0
+
+[State 3000]
+type=PlaySnd
+trigger1=animelem=7
+trigger2=animelem=13
+trigger3=animelem=22
+trigger4=animelem=28
+trigger5=animelem=36
+value=1,2
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(4)=0
+trigger2=animelemtime(19)=0
+x=16
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(20)=0
+x=8
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(7)=0
+trigger2=animelemtime(22)=0
+x=6
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(13)=0
+trigger2=animelemtime(28)=0
+x=10
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(14)=0
+trigger2=animelemtime(15)=0
+trigger3=animelemtime(16)=0
+trigger4=animelemtime(29)=0
+trigger5=animelemtime(30)=0
+trigger6=animelemtime(31)=0
+x=4
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(36)=0
+x=6
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(38)=0
+x=14
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(39)=0
+x=1
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(40)=0
+trigger2=animelemtime(41)=0
+x=-8
+
+[State 3000, posadd]
+type=posadd
+trigger1=animelemtime(42)=0
+x=-5
+
+[State 3000, Hit]
+type=HitDef
+triggerAll = !var(16) && (var(15) < (1 + HitCount) || var(20))
+trigger1=(animelem=7||animelem=13||animelem=22||animelem=28) && animelemtime(37) != 0
+attr=S,HA
+damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 7
+priority=4, hit
+animtype=Hard
+getpower=0,0
+givepower=20,20
+guardflag=MA
+hitflag=MAF
+pauseTime=7, 7
+guard.pauseTime=6,6
+sparkNo = -1 + 0 * (var(33) := 8014)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 80), var(36) := -80
+hitsound=s2,2
+guardsound=s130,0
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+air.type=Low
+ground.slidetime=8
+ground.hittime=38
+guard.hittime=8
+ground.velocity=-3.5
+air.velocity=-2,-3
+guard.velocity=-5.77
+airguard.velocity=-2, -2
+airguard.ctrlTime=10
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=.5
+fall=0
+air.fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd=-255,-255,-255,48
+envShake.time=18
+envShake.ampl=6
+envShake.freq=120
+
+[State 0, Miss]
+type = HitDef
+trigger1=Animelem=36
+
+
+[State 3000, HitDef]
+type=HitDef
+;triggerall=P2BodyDist X=[ceil(-20*const(size.xscale)),ceil(68*const(size.xscale))]
+;triggerall=NumTarget
+trigger1=Animelem=37
+attr=S,HT
+hitflag=M
+priority=7, Miss
+sparkNo = -1 +0 * (var(33) := 0)
+p1facing=1
+p2facing=ifelse(var(39)=0,-1,1)
+p1stateno=3001;ifelse(var(39)=0,3001,1301)
+p2stateno=3002;ifelse(var(39)=0,3002,1305)
+hitsound=S800,0
+numhits=0
+guard.dist=0
+ID=3000
+
+[State 3000, Ctrlset]
+type=Ctrlset
+trigger1=AnimelemTime(43)>=1
+value=1
+
+[State 3000]
+type=StateTypeSet
+trigger1=AnimelemTime(38)>=0
+movetype=I
+
+[State 3000, ChangeState]
+type=ChangeState
+trigger1=!AnimTime 
+value=0
+ctrl=1
+
+;------------------------------------------------------------------
+; Stungun Headbutt
+[Statedef 3100]
+type=S
+movetype=A
+physics=S
+anim=3100
+poweradd=-2000
+ctrl=0
+velset=0,0
+sprpriority=1
+facep2=1
+
+[State 3100, No Corner Push]
+type=VarSet
+trigger1 = Time=2
+fvar(5)=0
+
+[State 3000, Unguardable]
+type = VarSet
+trigger1 = Time = 2 && NumEnemy
+trigger1 = (EnemyNear, StateNo != [120,155])
+var(17) = 43
+
+[State 3100, Super Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(21) = ((PrevStateNo = [1000, 2999]) && var(6)) || var(20)
+
+[State 3100, Hyper Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(22)=(PrevStateNo=[3000,4999]) && var(7)
+ 
+[State 3000, Super Cancel Flash]
+type = PalFX
+trigger1 = var(21) || var(22)
+trigger1 = !(Time % 2) && Time <= 12
+time = 1
+add = 255,255,255
+ignoreHitPause = 1
+
+[State 3000, Super Cancel Juggle Reset]
+type = VarSet
+trigger1 = !Time
+trigger1 = var(21) || var(22)
+var(15) = 0
+ignoreHitPause = 1
+
+[State 3000, SuperPause FX]
+type = Helper
+trigger1 = Time = 3
+helperType = Normal
+stateNo = 8510
+ID = 8500
+name = "Superpause FX"
+posType = P1
+pos=floor(-35*const(size.xscale)),floor(-45*const(size.yscale))
+superMoveTime = 255
+size.xScale = 1
+size.yScale = 1
+ownPal = 1
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = Time = 3
+time = 43
+moveTime = 43
+p2DefMul = 1
+unHittable = 1
+anim = -1
+sound = s8500,0
+darken = 0
+poweradd = 0
+
+[State 3000, NotHitBy]
+type=NotHitBy
+trigger1=1
+time=47
+value=SCA
+;
+;[State 3100]
+;type=explod
+;trigger1=!time
+;anim=f6000
+;sprpriority=-9999
+;postype=p1
+;pos=floor(-35*const(size.xscale)),floor(-45*const(size.yscale))
+;bindtime=1
+;under=0
+;ownpal=1
+;pausemovetime=999
+;supermovetime=999
+;scale=0.5,0.5
+;
+;[State 3100]
+;type=explod
+;trigger1=time=4
+;anim=f6001
+;sprpriority=9999
+;postype=p1
+;pos=floor(-35*const(size.xscale)),floor(-45*const(size.yscale))
+;bindtime=1
+;under=0
+;ownpal=1
+;pausemovetime=999
+;supermovetime=999
+;scale=0.5,0.5
+;
+;[State 3100]
+;type=Helper
+;trigger1=!time
+;stateno=9742
+;id=9742
+;name="bg"
+;pos=0,0
+;postype= p1
+;helpertype= normal
+;supermovetime=999999
+;ownpal=1
+;
+;[State 3100]
+;type=superpause
+;trigger1=!time
+;time=32
+;movetime=32
+;anim=-1
+;darken=0
+;sound=f20,0
+;p2defmul=1
+
+[State 3100, NotHitBy]
+type=NotHitBy
+trigger1=AnimElemTime(23)<0
+time=1
+value=SCA
+
+[State 3100, Voice]
+type=PlaySnd
+trigger1=!time
+value=3000,0
+channel=0
+
+[State 3100, VelSet]
+type=VelSet
+trigger1=animelemtime(7)>=0
+trigger1=vel y<0
+x=floor((p2dist X)/15)
+
+[State 3100, VelSet]
+type=VelSet
+trigger1=animelemtime(7)=0
+y=-12.5
+
+[State 3100, veladd]
+type=Veladd
+trigger1=animelemtime(7)>=0
+y=1.0
+
+[State 3100, StateType]
+type=StateTypeSet
+trigger1=animelemtime(7)>=0
+stateType=A
+physics=N
+
+[State 3100, PlaySnd]
+type=PlaySnd
+trigger1=animelemtime(7)=0
+value=40,0
+
+[State 3100]
+type=HitDef
+triggerall=!var(16) && (var(15) < 1 || var(20))
+;trigger1=!var(38)
+trigger1=animelem=22
+attr=S,ST
+hitflag=M
+priority=7, Miss
+sparkno = -1
+p1facing=1
+p2facing=1
+p1stateno=3101
+p2stateno=3160
+hitsound=S800,0
+persistent=0
+numhits=0
+guard.dist=0
+getpower=0
+givepower=0
+ID=3100
+
+[State 3100, ChangeState]
+type=ChangeState
+trigger1=animelemtime(7)>0
+trigger1=vel Y>0
+trigger1=pos Y>=-15
+value=3102
+;------------------------------------------------------------------
+; Stungun Headbutt
+[Statedef 3102]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=3102
+
+;[State 52] 
+;type=helper
+;trigger1=!time
+;id=152000
+;stateno=152000
+[State 302, Landing Dust Explod]
+type = Explod
+trigger1=!time
+anim = 8102
+sprpriority = -3
+postype = P1
+scale = 0.5,0.5
+pauseMoveTime = -1
+superMoveTime = -1
+ownPal = 1
+[State 52, Landing Sound]
+type = PlaySnd
+trigger1 = !Time
+value = 52,0
+
+[State 52, 2]
+type=PosSet
+trigger1=!Time
+y=0
+
+[State 52]
+type=VelSet
+trigger1=!Time 
+x=0
+y=0
+
+[State 1500, CtrlSet]
+type=CtrlSet
+trigger1=animelemtime(5)=1
+value=1
+
+[State 52, 4]
+type=ChangeState
+trigger1=P2dist X<0
+trigger1=AnimElemTime(5)=1
+value=0
+ctrl=1
+
+[State 52, 4]
+type=ChangeState
+trigger1=!AnimTime 
+value=0
+ctrl=1
+;------------------------------------------------------------------
+; Stungun Headbutt
+[Statedef 3101]
+type=S
+movetype=A
+physics=N
+anim=3101
+sprpriority=0
+
+[State 3100, posadd]
+type=Posadd
+trigger1=!time
+x=ceil(20*const(size.xscale))
+
+[State 3100, Position]
+type=PosSet
+trigger1=!time 
+y=0
+
+[State 3100, VelSet]
+type=VelSet
+trigger1=!time 
+x=0
+y=0
+
+[State 3100 PlaySnd]
+type=PlaySnd
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(10)=0
+trigger3=animelemtime(15)=0
+value=S0,0
+channel=0
+
+[State 3100, PlaySnd]
+type=PlaySnd
+trigger1=animelemtime(21)=0
+value=S0,0
+channel=0
+
+[State 3100]
+type=Width
+trigger1=1
+edge=ceil(60*const(size.xscale)),0
+
+[State 3100, Playerpush]
+type=Playerpush
+trigger1=1
+value=0
+
+[State 3100, TargetState]
+type=TargetState
+Trigger1=!time 
+value=3160
+
+[State -2, VarSet]
+type=VarSet
+trigger1=!time 
+var(12)=ifelse(var(12)=0,1,0)
+ignorehitpause=1
+
+[State 3100, Posadd]
+type=Posadd
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(6)=0
+trigger3=animelemtime(10)=0
+trigger4=animelemtime(11)=0
+trigger5=animelemtime(15)=0
+trigger6=animelemtime(16)=0
+x=ceil(5*const(size.xscale))
+
+[State 3100, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1&&((P2StateNo=3160)||(P2StateNo=3180))
+pos=ceil(80*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3160||P2StateNo=3180
+trigger1=AnimElem=2
+trigger2=AnimElem=7
+trigger3=AnimElem=12
+trigger4=AnimElem=17
+pos=ceil(50*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3160||P2StateNo=3180
+trigger1=AnimElem=3
+trigger2=AnimElem=8
+trigger3=AnimElem=13
+trigger4=AnimElem=18
+trigger5=AnimElem=19
+pos=ceil(20*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3160||P2StateNo=3180
+trigger1=AnimElem=4
+trigger2=AnimElem=9
+trigger3=AnimElem=14
+trigger4=AnimElem=20
+pos=ceil(30*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3160||P2StateNo=3180
+trigger1=AnimElem=5
+trigger2=AnimElem=6
+trigger3=AnimElem=10
+trigger4=AnimElem=11
+trigger5=AnimElem=15
+trigger6=AnimElem=16
+trigger7=AnimElem=21
+pos=ceil(65*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1&&((P2StateNo=3161)||(P2StateNo=3181))
+pos=ceil(80*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3161||P2StateNo=3181
+trigger1=AnimElem=2
+trigger2=AnimElem=7
+trigger3=AnimElem=12
+trigger4=AnimElem=17
+pos=ceil(40*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3161||P2StateNo=3181
+trigger1=AnimElem=3
+trigger2=AnimElem=8
+trigger3=AnimElem=13
+trigger4=AnimElem=18
+trigger5=AnimElem=19
+pos=ceil(30*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3161||P2StateNo=3181
+trigger1=AnimElem=4
+trigger2=AnimElem=9
+trigger3=AnimElem=14
+trigger4=AnimElem=20
+pos=ceil(40*const(size.xscale)),0
+
+[State 3100, TargetBind]
+type=TargetBind
+triggerall=P2StateNo=3161||P2StateNo=3181
+trigger1=AnimElem=5
+trigger2=AnimElem=6
+trigger3=AnimElem=10
+trigger4=AnimElem=11
+trigger5=AnimElem=15
+trigger6=AnimElem=16
+trigger7=AnimElem=21
+pos=ceil(77*const(size.xscale)),0
+
+[State 3100, TargetLifeAdd]
+type=TargetLifeAdd
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(10)=0
+trigger3=animelemtime(15)=0
+value=-42
+kill=0
+
+[State 3100, TargetLifeAdd]
+type=TargetLifeAdd
+trigger1=animelemtime(21)=0
+value=-63
+
+[State 3100, HitAdd]
+type=HitAdd
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(10)=0
+trigger3=animelemtime(15)=0
+trigger4=animelemtime(21)=0
+value=1
+
+[State 3100]
+type=PlaySnd
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(10)=0
+trigger3=animelemtime(15)=0
+trigger4=animelemtime(21)=0
+value=s2,2
+[State 3100]
+type=PlaySnd
+trigger1=animelemtime(21)=0
+value=s2,3200
+
+[State 830, Hit Spark]
+type = Helper
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(10)=0
+trigger3=animelemtime(15)=0
+trigger4=animelemtime(21)=0
+helperType = Normal
+stateNo = 8014
+ID = 8001
+name = "Spark"
+posType = P1
+pos=floor(45*const(size.xscale)),floor(-70*const(size.yscale))
+ownPal = 1
+pauseMoveTime = 65535
+superMoveTime = 65535
+ignoreHitPause = 1
+
+;[State 3100] 
+;type=Helper
+;trigger1=animelemtime(5)=0
+;trigger2=animelemtime(10)=0
+;trigger3=animelemtime(15)=0
+;trigger4=animelemtime(21)=0
+;id=152100
+;stateno=152100
+;helpertype=normal
+;ownpal=0
+;keyctrl=0
+;postype=p1
+;pos=floor(45*const(size.xscale)),floor(-70*const(size.yscale))
+;size.height=4 
+;facing=-1
+
+[State 3100, Envshake]
+type=Envshake
+trigger1=animelemtime(5)=0
+trigger2=animelemtime(10)=0
+trigger3=animelemtime(15)=0
+trigger4=animelemtime(21)=0
+time=6
+freq=80
+ampl=-4
+
+[State 3100, Velocity]
+type=VelSet
+triggerall=animelemtime(22)>=0
+triggerall=P2Dist X>0
+trigger1=numtarget(3100)
+trigger1=target(3100),movetype=H
+trigger1=target(3100),stateno=[3160,3181]
+trigger1=target(3100),BackEdgeBodyDist=0
+x=floor(ifelse((-12+(p2dist X)/10)>-4,-4,-12+(p2dist X)/10))
+persistent=0
+
+[State 3100, Velocity]
+type=VelSet
+triggerall=vel X<0
+trigger1=!AnimTime 
+trigger2=abs(enemynear,Pos X-Pos X)>=ceil(133*const(size.xscale))
+x=0
+
+;[State 3100, State End]
+;type=ChangeState
+;trigger1=AnimTime=0
+;trigger1=p2life > 0
+;value=110
+
+[State 3100, State End]
+type=ChangeState
+trigger1=!AnimTime 
+value=0
+ctrl=1
+
+;------------------------------------------------------------------
+; Stungun Headbutt
+[Statedef 3160]
+type=S
+movetype=H
+physics=N
+ctrl=0
+sprpriority=1
+
+[State 3100, ChangeAnim2]
+type=ChangeAnim2
+Trigger1=!time
+value=3160
+
+[State 3100, Position]
+type=PosSet
+trigger1=!time 
+y=0
+
+[State 3100, VelSet]
+type=VelSet
+trigger1=animelemtime(18)=0
+x=-12.0
+
+[State 3100, VelSet]
+type=VelMul
+trigger1=1
+x=.85
+
+[State 3100, VelSet]
+type=VelSet
+trigger1=animelemtime(19)=0
+x=0
+
+[State 3100, 0]
+type=ScreenBound
+trigger1=1
+value=1
+movecamera=1,0
+
+[State 3100, SelfState]
+type=Changestate
+trigger1=!alive
+value=7600
+
+[State 3100, ChangeState]
+type=Changestate
+trigger1=alive
+trigger1=!animtime 
+value=7500
+;------------------------------------------------------------------
+; Stungun Headbutt
+[Statedef 3180]
+type=S
+movetype=H
+physics=N
+ctrl=0
+sprpriority=1
+
+[State 3180, ChangeAnim2]
+type=ChangeAnim2
+Trigger1=!time
+value=3160
+
+[State 3100, Position]
+type=PosSet
+trigger1=!time
+y=0
+
+[State 3180, VelSet]
+type=VelSet
+trigger1=animelemtime(18)=0
+x=-12.0
+
+[State 3180, VelSet]
+type=VelMul
+trigger1=1
+x=.85
+
+[State 3180, VelSet]
+type=VelSet
+trigger1=animelemtime(19)=0
+x=0
+
+[State 3180, 0]
+type=ScreenBound
+trigger1=1
+value=1
+movecamera=1,0
+
+[State 3180, SelfState]
+type=Changestate
+trigger1=!alive
+value=7600
+
+[State 3180, ChangeState]
+type=Selfstate
+trigger1=alive
+trigger1=!animtime 
+value=0
+ctrl=1
+;------------------------------------------------------------------
+; Stungun Headbutt Dizzy
+[Statedef 7500]
+type=S
+movetype=H
+physics=N
+ctrl=0
+sprpriority=0
+velset=0,0
+
+[State 3280, ChangeAnim]
+type=ChangeAnim
+trigger1=!time 
+value=5300
+
+
+[State 3280, SelfState]
+type=SelfState
+trigger1=Time=120
+value=0
+ctrl=1
+;------------------------------------------------------------------
+; Stungun Headbutt
+[Statedef 7600]
+type=S
+movetype=H
+physics=N
+velset=0,0
+
+[State 5190, 1]
+type=posset
+trigger1=!time 
+y=0
+
+[State 5190, 1]
+type=VelSet
+trigger1=time=15
+x=-1.5
+persistent=0
+
+[State 5190, 1]
+type=VelSet
+trigger1=time=35
+x=0
+
+[State 5000, 1] 
+type=ChangeAnim2
+trigger1=anim!=5950
+trigger1=Time<35
+value=7600
+
+[State 5030, SelfState]
+type=SelfState
+trigger1=Anim=5950
+trigger1=AnimElemTime(AnimElemNo(0)+1)=0
+value=5150
+
+[State 5050, SelfState]
+type=SelfState
+trigger1=anim!=5950
+trigger1=!animtime
+value=5110
+;------------------------------------------------------------------
+; Hyper Bomb
+[Statedef 3300]
+type=S
+movetype=A
+physics=N
+anim=3300
+poweradd=-3000
+ctrl=0
+velset=0,0
+sprpriority=1
+facep2=1
+
+[State 3300, No Corner Push]
+type=VarSet
+trigger1=!time
+fvar(5)=0
+
+[State 3300, Super Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(21) = ((PrevStateNo = [1000, 2999]) && var(6)) || var(20)
+
+[State 3300, Hyper Cancel Flag]
+type=VarSet
+trigger1=!Time
+var(22)=(PrevStateNo=[3000,4999]) && var(7)
+
+[State 3300, Super Cancel Juggle Reset]
+type=VarSet
+trigger1=!Time
+trigger1=var(21) || var(22)
+var(15)=0
+ignoreHitPause=1
+
+[State 3300, NotHitBy]
+type=NotHitBy
+trigger1=AnimElemTime(8)<0
+time=1
+value=SCA
+
+[State 3300, Voice]
+type=PlaySnd
+trigger1=!time
+value=3000,0
+channel=0
+ 
+[State 3000, Superpause FX]
+type = helper
+trigger1 = Time = 3
+helpertype = normal
+stateno = 8520
+ID = 8500
+name = "Superpause FX"
+postype = p1
+pos=floor(4*const(size.xscale)),floor(-55*const(size.yscale))
+supermovetime = 255
+size.xscale = 1
+size.yscale = 1
+ownpal = 1
+
+[State 3000, Superpause]
+type = superpause
+trigger1 = Time = 3
+time = 43
+movetime = 43
+p2defmul = 1
+unhittable = 1
+anim = -1
+sound = s8500,0
+darken = 0
+;[State 3300]
+;type=explod
+;trigger1=time=1
+;anim=f6020
+;sprpriority=-9999
+;postype=p1
+;pos=floor(4*const(size.xscale)),floor(-55*const(size.yscale))
+;bindtime=1
+;under=0
+;ownpal=1
+;pausemovetime=999
+;supermovetime=999
+;scale=2,2
+;
+;[State 3300]
+;type=explod
+;trigger1=time=4
+;anim=f6021
+;sprpriority=9999
+;postype=p1
+;pos=floor(4*const(size.xscale)),floor(-55*const(size.yscale))
+;bindtime=1
+;under=0
+;ownpal=1
+;pausemovetime=999
+;supermovetime=999
+;scale=2,2
+;
+;[State 3300]
+;type=Helper
+;trigger1=!time
+;stateno=9745
+;id=9742
+;name="bg"
+;pos=0,0
+;postype= p1
+;helpertype= normal
+;supermovetime=999999
+;ownpal=1
+;
+;[State 3300]
+;type=superpause
+;trigger1=!time
+;time=32
+;movetime=32
+;anim=-1
+;darken=0
+;sound=f20,2
+;p2defmul=1
+
+[State 3300, PlaySnd]
+type=PlaySnd
+trigger1=animelemtime(4)=0
+value=S0,2
+
+[State 3300, Posadd]
+type=Posadd
+trigger1=animelemtime(2)=0
+x=6*const(size.xscale)
+
+[State 3300, Posadd]
+type=Posadd
+trigger1=animelemtime(4)=0
+x=14*const(size.xscale)
+
+[State 3300, Posadd]
+type=Posadd
+trigger1=animelemtime(5)=0
+x=1*const(size.xscale)
+
+[State 3300, Posadd]
+type=Posadd
+trigger1=animelemtime(6)=0
+trigger2=animelemtime(7)=0
+x=-8*const(size.xscale)
+
+[State 3300, Posadd]
+type=Posadd
+trigger1=animelemtime(8)=0
+x=-5*const(size.xscale)
+
+[State 3300]
+type=Hitdef
+trigger1 = !var(16) && var(15) < 1
+trigger1 = AnimElem = 3 && !var(37)
+attr=S,HT
+priority=7,Miss
+getpower=0
+givepower=0
+hitflag=M
+numhits=0
+sparkNo = -1 +0 * (var(33) := 0)
+p1stateno=3301
+p1facing=1
+p2facing=1
+hitsound=s800,0
+ID=3300
+
+[State 3300, Ctrlset]
+type=Ctrlset
+trigger1=AnimelemTime(9)>=2
+value=1
+
+[State 3300, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=AnimElemTime(4)=0
+movetype=I
+
+[State 3300, ChangeState]
+type=ChangeState
+trigger1=!AnimTime 
+value=0
+ctrl=1
+;------------------------------------------------------------------
+; Hyper Bomb
+[Statedef 3301]
+type=S
+movetype=A
+physics=N
+anim=3301
+sprpriority=2
+
+[State 3300, Voice]
+type=PlaySnd
+trigger1=animelem=7
+value=0,4
+channel=0
+[State 3300, Voice]
+type=PlaySnd
+trigger1=animelem=22
+value=0,3
+channel=0
+
+[State 1400, Envshake]
+type=Envshake
+trigger1=animelem=12
+trigger2=animelem=26
+time=16
+freq=120
+ampl=-8
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1=animelem=12
+trigger2=animelem=26
+value = 2,7
+channel = 1
+
+[State 0, Dust]
+type = Helper
+trigger1=animelem=12
+trigger2=animelem=26
+helperType = Normal
+stateNo = 8110
+ID = 8110
+name = "Impact Dust"
+postype = p1
+pos=floor(-85*const(size.xscale)),0
+facing = -1
+ownPal = 1
+
+[State 3300, Voice]
+type=PlaySnd
+trigger1=animelem=6
+trigger2=animelem=20
+value=1,2
+channel=3
+
+[State 3300, TargetState]
+type=TargetState
+Trigger1=!time 
+value=3320
+
+[State 3300, Position]
+type=PosSet
+trigger1=!Time 
+y=0
+
+[State 1200, VelSet]
+type=VelSet
+trigger1=!Time
+x=0
+y=0
+
+[State 3300]
+type=Width
+trigger1=animelemtime(10)<0
+trigger2=animelemtime(15)>=0
+trigger2=animelemtime(24)<0
+trigger3=animelemtime(29)>=0
+trigger3=animelemtime(33)<0
+edge=ceil(30*const(size.xscale)),ceil(40*const(size.xscale))
+
+[State 3300]
+type=Width
+trigger1=animelemtime(10)>=0
+trigger1=animelemtime(15)<0
+trigger2=animelemtime(24)>=0
+trigger2=animelemtime(29)<0
+edge=ceil(30*const(size.xscale)),ceil(80*const(size.xscale))
+
+[State 3300]
+type=Width
+trigger1=animelemtime(33)>=0
+edge=ceil(100*const(size.xscale)),0
+
+[State 3300, Playerpush]
+type=Playerpush
+trigger1=1
+value=0
+
+[State 3300, posadd]
+type=Posadd
+trigger1=!time
+x=-3*const(size.xscale)
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(5)=0
+x=ceil(-20*const(size.xscale))
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(6)=0
+x=ceil(-20*const(size.xscale))
+
+[State 3300, posadd]
+type=posadd
+trigger1=animelemtime(8)=0
+x=ceil(-20*const(size.xscale))
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(11)=0
+x=ceil(-28*const(size.xscale))
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(15)=0
+x=ceil(-35*const(size.xscale))
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(16)=0
+x=ceil(-48*const(size.xscale))
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(20)=0
+x=ceil(-30*const(size.xscale))
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(22)=0
+x=ceil(-20*const(size.xscale))
+
+[State 3300, posadd]
+type=Posadd
+trigger1=animelemtime(25)=0
+x=ceil(-28*const(size.xscale))
+
+[State 3300, posadd]
+type =Posadd
+trigger1=animelemtime(29)=0
+x=ceil(-35*const(size.xscale))
+
+[State 3300, posadd]
+type =Posadd
+trigger1=animelemtime(30)=0
+x=ceil(-48*const(size.xscale))
+
+[State 3300, posadd]
+type =Posadd
+trigger1=animelemtime(34)=0
+x=ceil(-30*const(size.xscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1 && P2StateNo=3320
+pos=ceil(100*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=2 && P2StateNo=3320
+pos=ceil(100*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=3 && P2StateNo=3320
+pos=ceil(100*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=4 && P2StateNo=3320
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=5 && P2StateNo=3320
+pos=ceil(30*const(size.xscale)), ceil(-60*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=6 && P2StateNo=3320
+pos=ceil(35*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=7 && P2StateNo=3320
+pos=ceil(30*const(size.xscale)), ceil(-65*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=8 && P2StateNo=3320
+pos=ceil(40*const(size.xscale)), ceil(-70*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=9 && P2StateNo=3320
+pos=ceil(25*const(size.xscale)), ceil(-75*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=10 && P2StateNo=3320
+pos=ceil(5*const(size.xscale)), ceil(-95*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=11 && P2StateNo=3320
+pos=ceil(-40*const(size.xscale)), ceil(-90*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=12 && P2StateNo=3320
+pos=ceil(-80*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=13 && P2StateNo=3320
+pos=ceil(-80*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=14 && P2StateNo=3320
+pos=ceil(-80*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=15 && P2StateNo=3320
+pos=ceil(-20*const(size.xscale)), ceil(-50*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=16 && P2StateNo=3320
+pos=ceil(15*const(size.xscale)), ceil(-45*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=17 && P2StateNo=3320
+pos=ceil(10*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=18 && P2StateNo=3320
+pos=ceil(30*const(size.xscale)), ceil(-50*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=19 && P2StateNo=3320
+pos=ceil(30*const(size.xscale)), ceil(-60*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=20 && P2StateNo=3320
+pos=ceil(35*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=21 && P2StateNo=3320
+pos=ceil(30*const(size.xscale)), ceil(-65*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=22 && P2StateNo=3320
+pos=ceil(40*const(size.xscale)), ceil(-70*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=23 && P2StateNo=3320
+pos=ceil(25*const(size.xscale)), ceil(-75*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=24 && P2StateNo=3320
+pos=ceil(5*const(size.xscale)), ceil(-95*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=25 && P2StateNo=3320
+pos=ceil(-40*const(size.xscale)), ceil(-90*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=26 && P2StateNo=3320
+pos=ceil(-80*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=27 && P2StateNo=3320
+pos=ceil(-80*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=28 && P2StateNo=3320
+pos=ceil(-80*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=29 && P2StateNo=3320
+pos=ceil(-40*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=30 && P2StateNo=3320
+pos=ceil(10*const(size.xscale)), ceil(-30*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=31 && P2StateNo=3320
+pos=ceil(15*const(size.xscale)), ceil(-45*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=32 && P2StateNo=3320
+pos=ceil(15*const(size.xscale)), ceil(-50*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=33 && P2StateNo=3320
+pos=ceil(15*const(size.xscale)), ceil(-65*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=34 && P2StateNo=3320
+pos=ceil(45*const(size.xscale)), ceil(-70*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=35 && P2StateNo=3320
+pos=ceil(31*const(size.xscale)), ceil(-140*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=36 && P2StateNo=3320
+pos=ceil(13*const(size.xscale)), ceil(-148*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=37 && P2StateNo=3320
+pos=ceil(5*const(size.xscale)), ceil(-155*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelemtime(38) >= 0  && P2StateNo=3320
+pos=0, ceil(-142*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1 && P2StateNo=3321
+pos=ceil(70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=2 && P2StateNo=3321
+pos=ceil(70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=3 && P2StateNo=3321
+pos=ceil(70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=4 && P2StateNo=3321
+pos=ceil(85*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=5 && P2StateNo=3321
+pos=ceil(51*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=6 && P2StateNo=3321
+pos=ceil(85*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=7 && P2StateNo=3321
+pos=ceil(50*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=8 && P2StateNo=3321
+pos=ceil(55*const(size.xscale)), ceil(-2*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=9 && P2StateNo=3321
+pos=ceil(26*const(size.xscale)), ceil(-3*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=10 && P2StateNo=3321
+pos=ceil(3*const(size.xscale)), ceil(-21*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=11 && P2StateNo=3321
+pos=ceil(-22*const(size.xscale)), ceil(-53*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=12 && P2StateNo=3321
+pos=ceil(-80*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=13 && P2StateNo=3321
+pos=ceil(-80*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=14 && P2StateNo=3321
+pos=ceil(-80*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=15 && P2StateNo=3321
+pos=ceil(26*const(size.xscale)), ceil(-123*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=16 && P2StateNo=3321
+pos=ceil(26*const(size.xscale)), ceil(-128*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=17 && P2StateNo=3321
+pos=ceil(1*const(size.xscale)), ceil(-113*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=18 && P2StateNo=3321
+pos=ceil(23*const(size.xscale)), ceil(-100*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=19 && P2StateNo=3321
+pos=ceil(51*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=20 && P2StateNo=3321
+pos=ceil(85*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=21 && P2StateNo=3321
+pos=ceil(50*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=22 && P2StateNo=3321
+pos=ceil(55*const(size.xscale)), ceil(-2*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=23 && P2StateNo=3321
+pos=ceil(26*const(size.xscale)), ceil(-3*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=24 && P2StateNo=3321
+pos=ceil(3*const(size.xscale)), ceil(-21*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=25 && P2StateNo=3321
+pos=ceil(-22*const(size.xscale)), ceil(-53*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=26 && P2StateNo=3321
+pos=ceil(-80*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=27 && P2StateNo=3321
+pos=ceil(-80*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=28 && P2StateNo=3321
+pos=ceil(-80*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=29 && P2StateNo=3321
+pos=ceil(-63*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=30 && P2StateNo=3321
+pos=ceil(33*const(size.xscale)), ceil(-53*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=31 && P2StateNo=3321
+pos=ceil(25*const(size.xscale)), ceil(-100*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=32 && P2StateNo=3321
+pos=ceil(24*const(size.xscale)), ceil(-105*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=33 && P2StateNo=3321
+pos=ceil(51*const(size.xscale)), ceil(-71*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=34 && P2StateNo=3321
+pos=ceil(60*const(size.xscale)), ceil(-30*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=35 && P2StateNo=3321
+pos=ceil(40*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=36 && P2StateNo=3321
+pos=ceil(14*const(size.xscale)), ceil(-150*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=37 && P2StateNo=3321
+pos=ceil(-6*const(size.xscale)), ceil(-157*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelemtime(38) >= 0  && P2StateNo=3321
+pos=ceil(-4*const(size.xscale)), ceil(-70*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1 && P2StateNo=3322
+pos=ceil(95*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=2 && P2StateNo=3322
+pos=ceil(95*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=3 && P2StateNo=3322
+pos=ceil(80*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=4 && P2StateNo=3322
+pos=ceil(32*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=5 && P2StateNo=3322
+pos=ceil(10*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=6 && P2StateNo=3322
+pos=ceil(26*const(size.xscale)), ceil(-8*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=7 && P2StateNo=3322
+pos=ceil(38*const(size.xscale)), ceil(-1*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=8 && P2StateNo=3322
+pos=ceil(46*const(size.xscale)), ceil(-14*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=9 && P2StateNo=3322
+pos=ceil(42*const(size.xscale)), ceil(-23*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=10 && P2StateNo=3322
+pos=ceil(16*const(size.xscale)), ceil(-36*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=11 && P2StateNo=3322
+pos=ceil(-26*const(size.xscale)), ceil(-128*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=12 && P2StateNo=3322
+pos=ceil(-70*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=13 && P2StateNo=3322
+pos=ceil(-70*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=14 && P2StateNo=3322
+pos=ceil(-70*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=15 && P2StateNo=3322
+pos=ceil(-35*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=16 && P2StateNo=3322
+pos=ceil(12*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=17 && P2StateNo=3322
+pos=ceil(9*const(size.xscale)), ceil(-110*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=18 && P2StateNo=3322
+pos=ceil(37*const(size.xscale)), ceil(-28*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=19 && P2StateNo=3322
+pos=ceil(10*const(size.xscale)), ceil(-5*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=20 && P2StateNo=3322
+pos=ceil(26*const(size.xscale)), ceil(-8*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=21 && P2StateNo=3322
+pos=ceil(38*const(size.xscale)), ceil(-1*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=22 && P2StateNo=3322
+pos=ceil(46*const(size.xscale)), ceil(-14*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=23 && P2StateNo=3322
+pos=ceil(42*const(size.xscale)), ceil(-23*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=24 && P2StateNo=3322
+pos=ceil(16*const(size.xscale)), ceil(-36*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=25 && P2StateNo=3322
+pos=ceil(-26*const(size.xscale)), ceil(-128*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=26 && P2StateNo=3322
+pos=ceil(-70*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=27 && P2StateNo=3322
+pos=ceil(-70*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=28 && P2StateNo=3322
+pos=ceil(-70*const(size.xscale)), ceil(-118*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=29 && P2StateNo=3322
+pos=ceil(-20*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=30 && P2StateNo=3322
+pos=ceil(35*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=31 && P2StateNo=3322
+pos=ceil(30*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=32 && P2StateNo=3322
+pos=ceil(30*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=33 && P2StateNo=3322
+pos=ceil(11*const(size.xscale)), ceil(2*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=34 && P2StateNo=3322
+pos=ceil(47*const(size.xscale)), ceil(-15*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=35 && P2StateNo=3322
+pos=ceil(-8*const(size.xscale)), ceil(-227*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=36 && P2StateNo=3322
+pos=ceil(-9*const(size.xscale)), ceil(-66*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=37 && P2StateNo=3322
+pos=ceil(-12*const(size.xscale)), ceil(-75*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelemtime(38) >= 0  && P2StateNo=3322
+pos=ceil(-9*const(size.xscale)), ceil(-237*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=2 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=3 && P2StateNo=[3323,3324]
+pos=ceil(50*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=4 && P2StateNo=[3323,3324]
+pos=ceil(80*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=5 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=6 && P2StateNo=[3323,3324]
+pos=ceil(40*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=7 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=8 && P2StateNo=[3323,3324]
+pos=ceil(65*const(size.xscale)), ceil(-15*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=9 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), ceil(-20*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=10 && P2StateNo=[3323,3324]
+pos=ceil(40*const(size.xscale)), ceil(-40*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=11 && P2StateNo=[3323,3324]
+pos=ceil(-30*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=12 && P2StateNo=[3323,3324]
+pos=ceil(-70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=13 && P2StateNo=[3323,3324]
+pos=ceil(-70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=14 && P2StateNo=[3323,3324]
+pos=ceil(-70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=15 && P2StateNo=[3323,3324]
+pos=ceil(-50*const(size.xscale)), ceil(-100*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=16 && P2StateNo=[3323,3324]
+pos=ceil(5*const(size.xscale)), ceil(-90*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=17 && P2StateNo=[3323,3324]
+pos=ceil(20*const(size.xscale)), ceil(-85*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=18 && P2StateNo=[3323,3324]
+pos=ceil(25*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=19 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=20 && P2StateNo=[3323,3324]
+pos=ceil(40*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=21 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=22 && P2StateNo=[3323,3324]
+pos=ceil(65*const(size.xscale)), ceil(-15*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=23 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), ceil(-20*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=24 && P2StateNo=[3323,3324]
+pos=ceil(40*const(size.xscale)), ceil(-40*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=25 && P2StateNo=[3323,3324]
+pos=ceil(-30*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=26 && P2StateNo=[3323,3324]
+pos=ceil(-70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=27 && P2StateNo=[3323,3324]
+pos=ceil(-70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=28 && P2StateNo=[3323,3324]
+pos=ceil(-70*const(size.xscale)), 0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=29 && P2StateNo=[3323,3324]
+pos=ceil(-15*const(size.xscale)), ceil(-10*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=30 && P2StateNo=[3323,3324]
+pos=ceil(35*const(size.xscale)), ceil(-85*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=31 && P2StateNo=[3323,3324]
+pos=ceil(20*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=32 && P2StateNo=[3323,3324]
+pos=ceil(20*const(size.xscale)), ceil(-55*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=33 && P2StateNo=[3323,3324]
+pos=ceil(40*const(size.xscale)), ceil(-85*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=34 && P2StateNo=[3323,3324]
+pos=ceil(60*const(size.xscale)), ceil(-105*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=35 && P2StateNo=[3323,3324]
+pos=ceil(55*const(size.xscale)), ceil(-195*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=36 && P2StateNo=[3323,3324]
+pos=ceil(20*const(size.xscale)), ceil(-140*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelem=37 && P2StateNo=[3323,3324]
+pos=ceil(-5*const(size.xscale)), ceil(-160*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=animelemtime(38) >= 0  && P2StateNo=[3323,3324]
+pos=0,ceil(-100*const(size.yscale))
+
+[State 3300, HitAdd]
+type=HitAdd
+trigger1=animelemtime(12)=0
+trigger2=animelemtime(26)=0
+value=1
+
+[State 3300, TargetLifeAdd]
+type=TargetLifeAdd
+trigger1=animelemtime(12)=0
+trigger2=animelemtime(26)=0
+value=floor(-133*fvar(10))
+kill=0
+
+[State 3300]
+type=PlaySnd
+trigger1=animelemtime(12)=0
+trigger2=animelemtime(26)=0
+value=S5100,1
+
+[State 3300, Envshake]
+type=Envshake
+trigger1=animelemtime(12)=0
+trigger2=animelemtime(26)=0
+time=16
+freq=120
+ampl=-8
+
+[State 3300, Velocity]
+type=VelSet
+trigger1=AnimElemtime(36)=0
+x=3.0
+y=-18.0
+
+[State 3300, Voice]
+type=PlaySnd
+trigger1=AnimElemtime(37)=0
+value=3300,0
+channel=0
+
+[State 3300, veladd]
+type=veladd
+trigger1=animelemtime(36)>=0
+y=.8
+[State 40, Dust]
+type = helper
+trigger1=Animelem=36
+helpertype = normal
+stateno = 8100
+ID = 8100
+name = "Jump Dust"
+postype = p1
+ownpal = 1
+;
+;[State 3300]
+;type=Helper
+;trigger1=animelem=36
+;id=152040
+;stateno=152040
+;pos=floor(-9*const(size.xscale)),0
+;size.xscale=.5
+;size.yscale=.5
+
+[State 3300, StateType]
+type=StateTypeSet
+trigger1=AnimElem=36
+StateType=A
+physics=N
+
+[State -2, State End]
+type=ChangeState
+triggerall=animelemtime(36)>0
+trigger1=pos y>-vel y
+value=3302
+;------------------------------------------------------------------
+; Hyper Bomb
+[Statedef 3320]
+type=A
+movetype=H
+physics=N
+ctrl=0
+SprPriority=1
+
+[State 3300, ChangeAnim2]
+type=ChangeAnim2
+Trigger1=!time 
+value=3320
+
+[State 836, ScreenBound]
+type = ScreenBound
+trigger1 = 1
+value = 1
+moveCamera = 1,0
+ignoreHitPause = 1
+;------------------------------------------------------------------
+; Hyper Bomb
+[Statedef 3321]
+type=A
+movetype=H
+physics=N
+ctrl=0
+SprPriority=1
+
+[State 3300, ChangeAnim2]
+type=ChangeAnim2
+trigger1=!time
+value=3321
+
+[State 3300]
+type=ScreenBound
+trigger1=1
+value=ifelse(animelemtime(11)<0,0,1)
+movecamera=1,0
+;------------------------------------------------------------------
+; Hyper Bomb
+[Statedef 3302]
+type=S
+movetype=A
+physics=N
+anim=3302
+
+[State 3300, Explod]
+type=Explod
+triggerall=prevstateno=3301
+trigger1=animelem=3
+anim=7000
+ID=7000
+pos=94,0
+postype=p1
+facing=1
+vfacing=1
+bindtime=1
+removetime=-2
+scale=1,1
+sprpriority=4
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = animelem = 3
+value = S5,10
+
+[State 3300, TargetState]
+type=TargetState
+Trigger1=!time 
+value=1306
+
+[State 3300]
+type=Width
+trigger1=1
+edge=ceil(100*const(size.xscale)),0
+
+[State 3300, VelSet]
+type=VelSet
+trigger1=!Time
+x=0
+y=0
+
+[State 3300, Position]
+type=PosSet
+trigger1=!Time
+y=0
+
+[State 3300, Playerpush]
+type=Playerpush
+trigger1=1
+value=0
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=1 && P2StateNo=1306
+pos=ceil(80*const(size.xscale)), ceil(-125*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=2 && P2StateNo=1306
+pos=ceil(80*const(size.xscale)), ceil(-50*const(size.yscale))
+
+[State 3300, TargetBind]
+type=TargetBind
+trigger1=AnimElem=3 && P2StateNo=1306
+pos=ceil(80*const(size.xscale)), ceil(-25*const(size.yscale))
+
+[State 3300, HitAdd]
+type=HitAdd
+trigger1=animelemtime(3)=0
+value=1
+
+[State 3300, TargetLifeAdd]
+type=TargetLifeAdd
+trigger1=animelemtime(3)=0
+value=floor(-174*fvar(10))
+
+[State 3300, TargetPoweradd]
+type=TargetPoweradd
+trigger1=animelemtime(3)=0
+value=40
+
+[State 1400, Envshake]
+type=Envshake
+trigger1=AnimElemTime(3)=0
+time=48
+freq=120
+ampl=-10
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1=AnimElemTime(3)=0
+value = 2,7
+channel = 1
+
+[State -2, Ground Impact Dust]
+type = Helper
+;triggerall = !NumHelper(8110) && NumEnemy
+trigger1=AnimElemTime(3)=0 && P2StateNo=1306
+;trigger1 = P2MoveType=H && P2StateNo=1306 
+helperType = Normal
+stateNo = 8110
+ID = 8110
+name = "Ground Impact Dust"
+posType = P1
+facing = -1
+pos=floor(85*const(size.xscale)),0
+ownPal = 1
+
+[State 3300, State End]
+type=ChangeState
+trigger1=!animtime
+value=3303
+
+; PowerBomb (Land)
+[Statedef 3303]
+type=A
+movetype=A
+physics=N
+anim=42
+
+[State 1300, Velocity]
+type=VelSet
+trigger1=var(10)=[0,2]
+trigger1=!time 
+x=-3.0
+y=-8.8
+
+[State 1300, Velocity]
+type=VelSet
+trigger1=var(10)=3
+trigger1=time=0
+x=-3.0
+y=-8.8
+
+[State 1300, veladd]
+type=Veladd
+trigger1=1
+y=.50
+
+[State 1300, State End]
+type=ChangeState
+trigger1=pos y>-vel y
+value=52

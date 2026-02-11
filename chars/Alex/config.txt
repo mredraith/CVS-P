@@ -1,0 +1,52 @@
+;===============< INITIALIZE >===================
+;Initialize Start Round
+[Statedef 5900]
+type=S
+
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+[state 5900, Reset Variables]
+type=varrangeset
+trigger1=!roundsexisted && matchno=1
+value=0
+
+[state 5900, Reset Variables]
+type=varrangeset
+trigger1=!roundsexisted && matchno=1
+fvalue=0
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+
+[state 5900, No Palette selector]
+type = remappal
+trigger1 = 1
+source = 1, 1
+dest = 1, palno
+ignorehitpause = 1
+
+[State 5900, Intro VS]
+type=changestate
+triggerall=numenemy
+triggerall=roundno=1 || (!(enemy, roundsexisted) && !(teammode=simul) && !(enemy, teammode=simul))
+trigger1=enemy, name="Hugo Andore" 
+trigger2=Enemy, AuthorName = "GM" && enemy, name="Hugo" 
+value=197
+
+
+[State 5900, Turns Intro]
+type=ChangeState
+trigger1=TeamMode=Turns
+trigger1=!RoundsExisted && RoundNo >= 2
+value=6900
+
+[State 5900, Intro Decider]
+type=ChangeState
+trigger1=RoundNo=1
+value=190+random%2
+
+[State 5900, End]
+type=ChangeState
+trigger1=1
+value=0

@@ -5,7 +5,7 @@
 ; NORMAL MOVES =
 ;
 
-; Standing Far Light Punch >==
+; Standing Far Light Punch
 [Statedef 200]
 type = S
 physics = S
@@ -81,7 +81,7 @@ value = 0
 ctrl = 1
 
 
-; Standing Close Light Punch >==
+; Standing Close Light Punch
 [Statedef 201]
 type = S
 physics = S

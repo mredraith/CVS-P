@@ -1,0 +1,23 @@
+;========================<EX VIOLENCE KNEE DROP SELECTION>=============================
+[StateDef 7000]
+physics = N
+velSet = 0,0
+anim = 1
+
+;==============================================================================================
+;ONLY MODIFY STUFF BELOW THIS LINE
+;==============================================================================================
+;0 = EX Violence Knee Drop (2 Hits, P2 Doesn't Fall) 
+;1 = EX Violence Knee Drop (2 Hits, Makes P2 Fall)
+[State 7000, EX Violence Knee Drop Priorities]
+type = ParentVarSet
+trigger1 = 1
+var(40) = 0 ;CHANGE THIS LINE
+
+;==============================================================================================
+;ONLY MODIFY STUFF ABOVE THIS LINE
+;==============================================================================================
+
+[State 7000, End]
+type = DestroySelf
+trigger1 = RoundState = 2

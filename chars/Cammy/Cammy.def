@@ -1,58 +1,68 @@
-; ________________________________
-;| Cammy by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====<DEFINITION>====
+; ________________________
+;| Cammy by Varo_Hades |
+; 
+;Sprites by chuchoryu
+;
+;Edits by Tiger-Boy
+;
+;====================<DEFINITION>====================
 [Info]
 name = "Cammy"
 displayname = "Cammy"
-versiondate = 01,12,2010
-mugenversion= 1.0
-author = "Phantom.of.the.Server"
-pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
-localcoord = 427,240
+versiondate =12,14,2011
+mugenversion=1.0;06,14,2003
+author      ="chuchoryu & Varo_Hades"
+pal.defaults=1,2,3,4,5,6,7
 
 [Files]
 movelist = movelist.dat
-cmd = Command.cmd
-cns = Constants.cns
-st = States/System.st
-st1 = States/Normal.st
-st2 = States/Special.st
-st3 = States/Super.st
-st4 = States/Helpers.st
-stcommon= common1.cns
-sprite = Sprite.sff
-anim = Anim.air
-sound = Sound.snd
-;ai = ai.ai
-pal1 = Palettes/Default.act
-pal2 = Palettes/Orange.act
-pal3 = Palettes/Blue.act
-pal4 = Palettes/Grey.act
-pal5 = Palettes/Green.act
-pal6 = Palettes/Pink.act
-pal7 = Palettes/DollPurple.act
-pal8 = Palettes/DollGreen.act
-pal9 = Palettes/Morrigan.act
-pal10 = Palettes/Doll.act
-pal11 = Palettes/DollRed.act
-pal12 = Palettes/Chun-Li.act
+cmd     =Command.cmd
+st      =States/System.st
+stcommon=common1.cns
+sprite  =Sprite.sff
 
-[Palette Keymap]
-a = 1
-b = 2
-c = 3
-x = 4
-y = 5
-z = 6
-a2 = 7
-b2 = 8
-c2 = 9
-x2 = 10
-y2 = 11
-z2 = 12
+;************************************
+;Choose Cammy's Age!
+;Remove ";" from the desired one.
+;Add ";" in front of the other 2.
+
+;cns     =Constants/Constants-SF2.cns;SF2 Age
+cns     =Constants/Constants-SF4.cns;SF4 Age
+
+;************************************
+
+;************************************
+;Choose Cammy's Stand!
+
+;anim	=Anims/AnimSF2.air;SF2 StAnce
+anim    =Anims/AnimSF4.air;SF4 Stance
+
+;************************************
+
+;************************************
+;Choose Cammy's Sound!
+
+;sound   =Sounds/CAMMYSFA.snd
+sound   =Sounds/CAMMYSF4.snd
+
+;************************************
+
+pal1=Palettes/SF2P.act
+pal2=Palettes/Bison.act
+pal3=Palettes/White.act
+pal4=Palettes/Cammmychuchoryu.act
+pal5=Palettes/SF2HF.act
+pal6=palettes/SF2Turbo.act
+pal7=Palettes/SFZ.act
+
+st1=States/Normal.st
+st2=States/Special.st
+st3=States/Super.st
+st4=States/Helpers.st
+st5=interaction.cns
+
 
 ; Arcade mode
 [Arcade]
-intro.storyboard =
-ending.storyboard =
+;intro.storyboard = .def
+ending.storyboard = SSF2TCammyEnd\SSF2TCammyEnd.def 

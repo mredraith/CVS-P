@@ -1,0 +1,211 @@
+; ________________________________
+;| Cammy by Phantom.of.the.Server |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<CONSTANTS>==================== 
+[Data]
+life = 1000
+power = 3000
+attack= 100
+defence= 100
+fall.defence_up= 50
+liedown.time =15
+airjuggle = 15
+sparkno= s8010
+guard.sparkno= s8000
+KO.echo = 1
+volume= 128
+IntPersistIndex= 0
+FloatPersistIndex= 0
+
+powermax = 5000
+[Size]
+;SF4
+;******************
+xscale= 0.699
+yscale= 0.799
+;******************
+ground.back= 16
+ground.front= 16
+air.back= 16
+air.front= 16
+height= 60
+attack.dist= 160
+proj.attack.dist= 90
+proj.doscale= 0
+head.pos= -6, -77
+mid.pos= -6, -50
+shadowoffset= 0
+draw.offset= 0, 0
+
+[Velocity]
+walk.fwd = 4.175
+walk.back = -3.097
+run.fwd = 6.6188, 0
+run.back = -5.0132, 0
+jump.neu = 0, -10.46
+jump.fwd = 3.2917
+jump.back = -3.9583
+runjump.fwd = 4.9376, -11.974
+runjump.back = -5.9375, -11.974
+
+[Movement]
+airjump.num = 0
+airjump.height = 0
+yaccel = 0.5528
+stand.friction = 0.85
+crouch.friction = 0.85
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundlevel = 25
+air.gethit.groundrecover.ground.threshold = -20
+air.gethit.groundrecover.groundlevel = 10
+air.gethit.airrecover.threshold = -1
+air.gethit.airrecover.yaccel = 0.35
+air.gethit.trip.groundlevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yaccel = 0.4
+down.bounce.groundlevel = 12
+down.friction.threshold = 0.5
+
+[Quotes];(1-18)
+victory0 = "You won't get anywhere until you learn a thing or two about fighting."
+victory1 = "Did you take me for an amateur? I guess you paid for that mistake."
+victory2 = "If all the fights are this easy, I'm going to get bored real quick... "
+victory3 = "Your missing teeth will remind you of my victory."
+victory4 = "Sorry about that, but I don't have time to indulge you with this fight!"
+victory5 = "How does it feel getting beaten up by a pretty little girl like me? "
+victory6 = "I didn't even break a sweat."
+victory7 = "I've no time to waste teaching amateurs to fight."
+victory8 = "How dreadfully dull!"
+victory9 = "Nothing personal. It was just a mission."
+victory10 = "This is Cammy. Target's neutralized. Moving on to next mission."
+victory11 = "You're far too slow to take me on."
+victory12 = "You must enjoy being beat. Let me remodel your face one more time!"
+victory13 = "You can't escape my sting!"
+victory14 = "A rematch? Maybe some other time when I don't have a mission to worry about."
+victory15 = "Fighting amateurs like you is a waste of my precious time."
+victory16 = "Mission accomplished!"
+victory17 = "Off to find my next target!"
+
+;Vs Bison (Dictator):;(19-21)
+victory18 = "You and Shadaloo are Finished!"
+victory19 = "I'm not your doll any longer! I'll make you pay for what you've done!"
+victory20 = "I'm no longer under your influence! Today you will pay for your crimes!"
+
+;Vs. Adon:
+victory21 = "I deal with big-mouthed amateurs like you all the time. I'm not impressed."
+
+;Vs. Akuma:
+victory22 = "You're not even human anymore, are you?"
+
+;Vs. Balrog (Boxer):
+victory23 = "I know we shouldn't judge a book by its cover... But you really are a case of "what you see is what you get."
+
+;Vs. Blanka:
+victory24 = "Are you always that loud? Don't people complain?"
+
+;Vs. Chun Li:
+victory25 = "I presume you'll be leaving the fighting in this mission up to me, then?"
+
+;Vs. Cody:
+victory26 = "Cooled off then? Time for you to go back behind bars."
+
+;Vs. Crimson Viper:
+victory27 = "I don't know what organization sent you, but I won't let you get in my way."
+
+;Vs Cammy/Decapre:
+victory28 = "Oh no! Are you another clone?"
+
+;Vs. Dan:
+victory29 = "So weak! Are you really Sakura's teacher?"
+
+;Vs Deadpool:
+victory30 = "So that's what it takes to shut you up..." 
+
+;Vs. Dee Jay:
+victory31 = "One of my mates is a fan of yours. Do you have time for an autograph?"
+
+;Vs. Dhalsim:
+victory32 = "Faith isn't enough to secure victory. You have to have your feet grounded in reality."
+
+;Vs. Dudley:
+victory33 = "There's no such thing as rules in a fight. The only thing that matters is victory or defeat."
+
+;Vs. Elena:
+victory34 = "Friends... That's a nice, warm feeling."
+
+;Vs. Evil Ryu:
+victory35 = "Is this what you meant by becoming a true martial artist!?"
+;victory35 = "Ryu! What have you done to yourself?!?"
+
+;Vs. Fei Long:
+victory36 = "I sugest you continue with your acting career. You are not a real fighter."
+;victory36 = "To hear you boast, I would have thought you would have been more of a challenge."
+
+;Vs. Gen:
+victory37 = "I can't let a dangerous man like you just walk away. You're under arrest!"
+
+;Vs. Gouken:
+victory38 = "Even though our fight just finished, my heart feels calm and at peace..."
+
+;Vs. Guile:
+victory39 = "You can't expect to surprise a Delta Red agent with the Army's two-bit fighting techniques."
+
+;Vs. Guy:
+victory40 = "Your intentions are none of my concern. My mission fakes priority!"
+
+;Vs. Honda:
+victory41 = "That was a close one... You're a lot faster than you look!"
+
+;Vs. Hugo:
+victory42 = "No matter how much confidence you have in your strength, you'll never land one at that speed."
+
+;Vs. Ibuki"
+victory43 = "You're not ready to tangle with pros. Go back to school and hit the books!"
+
+;Vs. Juri:
+victory44 = "Now you'll pay for every sin you've ever committed!"
+
+;Vs. Ken:
+victory45 = "You may be America's top fighter, but you're not ready to take on the world!"
+
+;Vs. Makoto:
+victory46 = "How did an amateur like you manage to get into the tournament? Are you lost?"
+
+;Vs. Poison
+victory47 = "Those heels... I can't believe you'd get into a fight with those."
+
+;Vs. Rolento:
+victory48 = "If this is the best you've got, your army must be pretty pathetic as well."
+
+;Vs. Rose:
+victory49 = "I won't allow my destiny to be decided for me!"
+
+;Vs. Ryu:
+;victory50 = "What incredible power! What they say about you is true, Ryu."
+victory50 = "You may hit harder than me, but I win in the speed department."
+
+;Vs. Sagat:
+victory51 = "Phew... I had to use all my strength to beat you!"
+
+;Vs. Sakura:
+victory52 = "Ha! Looks like I won this time, Sakura!"
+;victory52 = "Always happy to accept a challenge from you, Sakura. Shall we fight again someday?"
+
+;Vs. Seth:
+victory53 = "Using people as weapons? Shadaloo has gone too far this time!"
+
+;Vs. T. Hawk:
+victory54 = "Your goal is admirable, but you'll need to be stronger if you want to succeed."
+
+;Vs Vega (Claw):
+victory55 = "Your narcissism nauseates me."
+
+;Vs Wolverine:
+victory56 = "You're the best there is at what you do? Not from where I'm standing."
+
+;Vs. Zangief:
+victory57 = "Stay away from me! I can't stand being covered in sweat!"
+;victory57 = "Destructive, but slow. Have you ever seen a bee get caught by a cyclone?"
+
+

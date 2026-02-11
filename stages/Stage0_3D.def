@@ -9,10 +9,10 @@ startx = 0
 starty = 0
 boundleft = -300
 boundright = 300
-boundhigh = -75
+boundhigh = -50
 boundlow = -5
 
-verticalfollow = 1
+verticalfollow = 0
 floortension = 250
 tension = 100
 
