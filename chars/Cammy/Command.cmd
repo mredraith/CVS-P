@@ -516,78 +516,78 @@ time=32
 
 [Command]
 name="63214pp"
-command=~F,DF,D,DB,B,x+y
+command=~D,DF,F,x+y
 time=32
 [Command]
 name="63214pp"
-command=~F,DF,D,DB,B,x+z
+command=~D,DF,F,x+z
 time=32
 [Command]
 name="63214pp"
-command=~F,DF,D,DB,B,y+z
+command=~D,DF,F,y+z
 time=32
 
 [Command]
 name="63214p"
-command=~F,DF,D,DB,B,x
+command=~D,DF,F,x
 time=32
 [Command]
 name="63214p"
-command=~F,DF,D,DB,B,y
+command=~D,DF,F,y
 time=32
 [Command]
 name="63214p"
-command=~F,DF,D,DB,B,z
+command=~D,DF,F,z
 time=32
 [Command]
 name="63214p"
-command=~F,DF,D,DB,B,~x
+command=~D,DF,F,~x
 time=32
 [Command]
 name="63214p"
-command=~F,DF,D,DB,B,~y
+command=~D,DF,F,~y
 time=32
 [Command]
 name="63214p"
-command=~F,DF,D,DB,B,~z
+command=~D,DF,F,~z
 time=32
 
 [Command]
 name="63214kk"
-command=~F,DF,D,DB,B,a+b
+command=~D,DF,F,a+b
 time=32
 [Command]
 name="63214kk"
-command=~F,DF,D,DB,B,a+c
+command=~D,DF,F,a+c
 time=32
 [Command]
 name="63214kk"
-command=~F,DF,D,DB,B,b+c
+command=~D,DF,F,b+c
 time=32
 
 [Command]
 name="63214k"
-command=~F,DF,D,DB,B,a
+command=~D,DF,F,a
 time=32
 [Command]
 name="63214k"
-command=~F,DF,D,DB,B,b
+command=~D,DF,F,b
 time=32
 [Command]
 name="63214k"
-command=~F,DF,D,DB,B,c
+command=~D,DF,F,c
 time=32
 [Command]
 name="63214k"
-command=~F,DF,D,DB,B,~a
+command=~D,DF,F,~a
 time=32
 [Command]
 name="63214k"
-command=~F,DF,D,DB,B,~b
+command=~D,DF,F,~b
 time=32
 [Command]
 name="63214k"
-command=~F,DF,D,DB,B,~c
+command=~D,DF,F,~c
 time=32
 
 [Command]
@@ -768,54 +768,30 @@ command=~D,DB,B,~c
 time=16
 
 [Command]
-name="412p"
-command=~B,DB,D,x
-time=16
+name = "412p"
+command = /$F, x+y
+time = 8
 [Command]
-name="412p"
-command=~B,DB,D,y
-time=16
+name = "412p"
+command = /$F, x+z
+time = 8
 [Command]
-name="412p"
-command=~B,DB,D,z
-time=16
-[Command]
-name="412p"
-command=~B,DB,D,~x
-time=16
-[Command]
-name="412p"
-command=~B,DB,D,~y
-time=16
-[Command]
-name="412p"
-command=~B,DB,D,~z
-time=16
+name = "412p"
+command = /$F, y+z
+time = 8
 
 [Command]
-name="412k"
-command=~B,DB,D,a
-time=16
+name = "412k"
+command = /$F, a+b
+time = 8
 [Command]
-name="412k"
-command=~B,DB,D,b
-time=16
+name = "412k"
+command = /$F, a+c
+time = 8
 [Command]
-name="412k"
-command=~B,DB,D,c
-time=16
-[Command]
-name="412k"
-command=~B,DB,D,~a
-time=16
-[Command]
-name="412k"
-command=~B,DB,D,~b
-time=16
-[Command]
-name="412k"
-command=~B,DB,D,~c
-time=16
+name = "412k"
+command = /$F, b+c
+time = 8
 
 
 ;====================<OTHER>====================
