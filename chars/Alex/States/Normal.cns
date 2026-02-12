@@ -12,7 +12,7 @@ facep2=1
 
 [State 205]
 type=ChangeAnim
-triggerall=p2bodydist x<30
+triggerall=p2bodydist x<15
 trigger1=!Time
 value=205
 

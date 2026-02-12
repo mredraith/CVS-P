@@ -10,7 +10,7 @@ s=s
 ;-| Default Values |-------------------------------------------------------
 [Defaults]
 command.time=16
-command.buffer.time=4
+command.buffer.time = 1
 
 ;-| Super Motions |--------------------------------------------------------
 [Command]

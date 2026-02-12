@@ -17,7 +17,7 @@ s = s
 
 [Defaults]
 command.time = 15
-command.buffer.time = 4
+command.buffer.time = 1
 
 ;====================<SINGLE BUTTON>====================
 
