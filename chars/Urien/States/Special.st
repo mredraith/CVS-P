@@ -1,8 +1,8 @@
-;==============================================================================================
-;========================================<SPECIAL MOVES>=======================================
-;==============================================================================================
+;
+;SPECIAL MOVES===
+;
 
-;=====================<METALLIC SPHERE>==========================
+;METALLIC SPHERE
 [Statedef 1000]
 type = S
 physics = S
@@ -55,7 +55,7 @@ type = Changestate
 trigger1 = !AnimTime
 value = 1001
 
-;=====================<METALLIC SPHERE (CHARGE)>==========================
+;METALLIC SPHERE (CHARGE)
 [Statedef 1001]
 type = S
 physics = S
@@ -156,7 +156,7 @@ trigger1 = (InGuardDist || P2BodyDist x <= 120)
 trigger2 = Time = 42
 value = 1003
 
-;=====================<METALLIC SPHERE (SHOOT)>==========================
+;METALLIC SPHERE (SHOOT)
 [Statedef 1003]
 type = S
 physics = S
@@ -181,7 +181,7 @@ trigger1 = AnimElem = 2
 value = 1000, 1
 channel = 2
 
-[State 1000, Metallic Sphere 0°]
+[State 1000, Metallic Sphere 0]
 type = Helper
 Triggerall = !var(10)
 trigger1 = AnimElem = 2
@@ -198,7 +198,7 @@ persistent = 0
 size.xScale = 0.9
 size.yScale = 0.9
 
-[State 1000, Metallic Sphere 30°]
+[State 1000, Metallic Sphere 30]
 type = Helper
 Triggerall = var(10) = 1
 trigger1 = AnimElem = 2
@@ -215,7 +215,7 @@ persistent = 0
 size.xScale = 0.9
 size.yScale = 0.9
 
-[State 1000, Metallic Sphere 60°]
+[State 1000, Metallic Sphere 60]
 type = Helper
 Triggerall = var(10) = 2
 trigger1 = AnimElem = 2
@@ -238,7 +238,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX METALLIC SPHERE>=============================
+;===EX METALLIC SPHERE===
 [StateDef 1050]
 type = S
 physics = N
@@ -326,7 +326,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<CHARIOT TACKLE>=============================
+;===CHARIOT TACKLE===
 [StateDef 1100]
 type = S
 physics = N
@@ -429,8 +429,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 28
+guard.hittime = (28) - 5
 ground.slideTime = 28
-guard.hitTime = 28
 air.hitTime = 120
 ground.velocity = -11.23, 0
 ground.cornerPush.velOff = 0
@@ -467,7 +467,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX CHARIOT TACKLE>=============================
+;===EX CHARIOT TACKLE===
 [StateDef 1150]
 type = S
 physics = N
@@ -622,8 +622,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 18
+guard.hittime = (18) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -4.32, 0
 ground.cornerPush.velOff = 0
@@ -670,8 +670,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 25
+guard.hittime = (25) - 5
 ground.slideTime = 25
-guard.hitTime = 25
 air.hitTime = 120
 ground.velocity = -2.16, 0
 ground.cornerPush.velOff = 0
@@ -708,7 +708,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<DANGEROUS HEADBUTT>=============================
+;===DANGEROUS HEADBUTT===
 [Statedef 1200]
 type = S
 physics = N
@@ -797,8 +797,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 20
+guard.hittime = (20) - 5
 ground.slideTime = 20
-guard.hitTime = 20
 air.hitTime = 120
 ground.velocity = -4, -7.5
 ground.cornerPush.velOff = 0
@@ -835,7 +835,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1205
 
-;========================<DANGEROUS HEADBUTT LANDING>=============================
+;===DANGEROUS HEADBUTT LANDING===
 [Statedef 1205]
 type = S
 physics = S
@@ -873,7 +873,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;========================<EX DANGEROUS HEADBUTT>=============================
+;===EX DANGEROUS HEADBUTT===
 [Statedef 1250]
 type = S
 physics = N
@@ -991,8 +991,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 20
+guard.hittime = (20) - 5
 ground.slideTime = 20
-guard.hitTime = 20
 air.hitTime = 120
 ground.velocity = -3, -6.56
 ground.cornerPush.velOff = 0
@@ -1039,8 +1039,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 20
+guard.hittime = (20) - 5
 ground.slideTime = 20
-guard.hitTime = 20
 air.hitTime = 120
 ground.velocity = -4, -8.56
 ground.cornerPush.velOff = 0
@@ -1100,7 +1100,7 @@ type = ChangeState
 trigger1 = Pos Y > -Vel Y
 value = 1205
 
-;========================<VIOLENCE KNEE DROP>=============================
+;===VIOLENCE KNEE DROP===
 [Statedef 1300]
 type = A
 physics = N
@@ -1194,8 +1194,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 20
+guard.hittime = (20) - 5
 ground.slideTime = 20
-guard.hitTime = 20
 air.hitTime = 120
 ground.velocity = 0, 0
 ground.cornerPush.velOff = 0
@@ -1233,7 +1233,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;========================<VIOLENCE KNEE DROP HIT>=============================
+;===VIOLENCE KNEE DROP HIT===
 [Statedef 1301]
 type = A
 physics = N
@@ -1264,7 +1264,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;========================<VIOLENCE KNEE DROP LANDING>=============================
+;===VIOLENCE KNEE DROP LANDING===
 [Statedef 1305]
 type = S
 physics = S
@@ -1302,7 +1302,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;========================<EX VIOLENCE KNEE DROP>=============================
+;===EX VIOLENCE KNEE DROP===
 [Statedef 1350]
 type = A
 physics = N
@@ -1417,6 +1417,7 @@ air.animtype = Back
 ground.type = Low
 ground.slidetime = 20
 ground.hittime  = 20
+guard.hittime = (20) - 5
 guard.ctrltime = 20
 ground.velocity = -1
 guard.velocity = -8
@@ -1451,7 +1452,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;========================<EX VIOLENCE KNEE DROP HIT>=============================
+;===EX VIOLENCE KNEE DROP HIT===
 [Statedef 1351]
 type = A
 physics = N
@@ -1482,6 +1483,7 @@ air.animtype = Back
 ground.type = Low
 ground.slidetime = 20
 ground.hittime  = 20
+guard.hittime = (20) - 5
 guard.ctrltime = 20
 ground.velocity = -1
 guard.velocity = -8
@@ -1515,7 +1517,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;========================<PUNCH ZERO COUNTER>=============================
+;===PUNCH ZERO COUNTER===
 [Statedef 2900]
 type = S
 physics = N
@@ -1578,8 +1580,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 20
+guard.hittime = (20) - 5
 ground.slideTime = 20
-guard.hitTime = 20
 air.hitTime = 120
 ground.velocity = -4, -7.5
 ground.cornerPush.velOff = 0
@@ -1616,7 +1618,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1205
 
-;========================<KICK ZERO COUNTER>=============================
+;===KICK ZERO COUNTER===
 [StateDef 2910]
 type = S
 physics = N
@@ -1705,8 +1707,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 21
+guard.hittime = (21) - 5
 ground.slideTime = 18
-guard.hitTime = 18
 air.hitTime = 120
 ground.velocity = -6.32, -6.34
 ground.cornerPush.velOff = 0

@@ -1,4 +1,4 @@
-;========================<TEMPORAL THUNDER>=============================
+;TEMPORAL THUNDER
 [StateDef 3000]
 type = S
 physics = S
@@ -130,7 +130,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<(MAX) TEMPORAL THUNDER>=============================
+;(MAX) TEMPORAL THUNDER
 [StateDef 3050]
 type = S
 physics = S
@@ -262,7 +262,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<TYRANT SLAUGHTER>=============================
+;TYRANT SLAUGHTER
 [StateDef 3100]
 type = S
 physics = S
@@ -427,8 +427,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -439,7 +439,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -473,8 +473,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -485,7 +485,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -519,8 +519,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -531,7 +531,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -565,8 +565,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = -6.25,-6.5625
 ground.cornerPush.velOff = 0
@@ -711,7 +711,7 @@ type = SelfState
 trigger1 = Pos Y >= 25 && Vel Y > 0 && Time > 0
 value = 5100
 
-;========================<(MAX) TYRANT SLAUGHTER>=============================
+;(MAX) TYRANT SLAUGHTER
 [StateDef 3150]
 type = S
 physics = S
@@ -882,8 +882,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -894,7 +894,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -928,8 +928,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -940,7 +940,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -974,8 +974,8 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -986,7 +986,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -1020,8 +1020,8 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 0,0
 ground.cornerPush.velOff = 0
@@ -1032,7 +1032,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 0
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -1066,8 +1066,8 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.hitTime = 30
+guard.hittime = (30) - 5
 ground.slideTime = 30
-guard.hitTime = 30
 air.hitTime = 120
 ground.velocity = 1,0
 ground.cornerPush.velOff = 0
@@ -1078,7 +1078,7 @@ air.cornerPush.velOff = 0
 yAccel = 0.58
 fall = 1
 air.fall = 1
-fall.recover = 1
+fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -1107,7 +1107,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<AEGIS REFLECTOR>=============================
+;AEGIS REFLECTOR
 [StateDef 3200]
 type = S
 physics = S
@@ -1274,7 +1274,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<(MAX) AEGIS REFLECTOR>=============================
+;(MAX) AEGIS REFLECTOR
 [StateDef 3250]
 type = S
 physics = S
@@ -1441,7 +1441,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<DOMINANT CRUSH>=============================
+;DOMINANT CRUSH
 [StateDef 3300]
 type = S
 physics = S
