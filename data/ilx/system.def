@@ -259,7 +259,6 @@ start = -1783,90
 type = anim
 actionno = 111
 start = -1783,90
-layerno = 1
 
 [TitleBG Banner T]
 type = anim
@@ -410,84 +409,84 @@ Interpolate Offset
 Interpolate Offset
 101,1, 1913,0, 10 ;+50
 Interpolate Offset
-101,1, 2513,0, 50 ;+600
+101,1, 2513,0, 0 ;+600
 102,1, 0,0, 20
 Interpolate Offset
 102,1, 1787,0, 300
 Interpolate Offset
 102,1, 1837,0, 10 ;+50
 Interpolate Offset
-102,1, 2437,0, 50 ;+600
+102,1, 2437,0, 0 ;+600
 103,1, 0,0, 20
 Interpolate Offset
 103,1, 1798,0, 300
 Interpolate Offset
 103,1, 1848,0, 10 ;+50
 Interpolate Offset
-103,1, 2448,0, 50 ;+600
+103,1, 2448,0, 0 ;+600
 104,1, 0,0, 20
 Interpolate Offset
 104,1, 1766,0, 300
 Interpolate Offset
 104,1, 1816,0, 10 ;+50
 Interpolate Offset
-104,1, 2416,0, 50 ;+600
+104,1, 2416,0, 0 ;+600
 105,1, 0,0, 20
 Interpolate Offset
 105,1, 1774,0, 300
 Interpolate Offset
 105,1, 1824,0, 10 ;+50
 Interpolate Offset
-105,1, 2424,0, 50 ;+600
+105,1, 2424,0, 0 ;+600
 106,1, 0,0, 20
 Interpolate Offset
 106,1, 1681,0, 300
 Interpolate Offset
 106,1, 1731,0, 10 ;+50
 Interpolate Offset
-106,1, 2431,0, 50 ;Magneto, +700 ;+600
+106,1, 2431,0, 0 ;Magneto, +700 ;+600
 107,1, 0,0, 20
 Interpolate Offset
 107,1, 1825,0, 300
 Interpolate Offset
 107,1, 1875,0, 10 ;+50
 Interpolate Offset
-107,1, 2475,0, 50 ;+600
+107,1, 2475,0, 0 ;+600
 108,1, 0,0, 20
 Interpolate Offset
 108,1, 1748,0, 300
 Interpolate Offset
 108,1, 1798,0, 10 ;+50
 Interpolate Offset
-108,1, 2398,0, 50 ;+600
+108,1, 2398,0, 0 ;+600
 109,1, 0,0, 20
 Interpolate Offset
 109,1, 1844,0, 300
 Interpolate Offset
 109,1, 1894,0, 10 ;+50
 Interpolate Offset
-109,1, 2494,0, 50 ;+600
+109,1, 2494,0, 0 ;+600
 110,1, 0,0, 20
 Interpolate Offset
 110,1, 1764,0, 300
 Interpolate Offset
 110,1, 1814,0, 10 ;+50
 Interpolate Offset
-110,1, 2414,0, 50 ;+600
+110,1, 2414,0, 0 ;+600
 111,1, 0,0, 20
 Interpolate Offset
 111,1, 1745,0, 300
 Interpolate Offset
 111,1, 1795,0, 10 ;+50
 Interpolate Offset
-111,1, 2395,0, 50 ;+600
+111,1, 2395,0, 0 ;+600
 112,1, 0,0, 20
 Interpolate Offset
 112,1, 1802,0, 300
 Interpolate Offset
 112,1, 1852,0, 10 ;+50
 Interpolate Offset
-112,1, 2452,0, 50 ;+600
+112,1, 2452,0, 0 ;+600
 113,1, 0,0, 20
 Interpolate Offset
 113,1, 1863,0, 300
