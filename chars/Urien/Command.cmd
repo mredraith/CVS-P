@@ -415,32 +415,32 @@ time = 16
 
 [Command]
 name = "ChariotTackle"
-command = ~35$B, F, a
+command = ~45$B, F, a
 time = 16
 
 [Command]
 name = "ChariotTackle"
-command = ~35$B, F, b
+command = ~45$B, F, b
 time = 16
 
 [Command]
 name = "ChariotTackle"
-command = ~35$B, F, c
+command = ~45$B, F, c
 time = 16
 
 [Command]
 name = "ChariotTackle"
-command = ~35$B, F, ~a
+command = ~45$B, F, ~a
 time = 16
 
 [Command]
 name = "ChariotTackle"
-command = ~35$B, F, ~b
+command = ~45$B, F, ~b
 time = 16
 
 [Command]
 name = "ChariotTackle"
-command = ~35$B, F, ~c
+command = ~45$B, F, ~c
 time = 16
 
 
@@ -477,17 +477,17 @@ time = 16
 
 [Command]
 name = "EXChariotTackle"
-command = ~35$B, F, a+b
+command = ~45$B, F, a+b
 time = 16
 
 [Command]
 name = "EXChariotTackle"
-command = ~35$B, F, b+c
+command = ~45$B, F, b+c
 time = 16
 
 [Command]
 name = "EXChariotTackle"
-command = ~35$B, F, c+a
+command = ~45$B, F, c+a
 time = 16
 
 
@@ -1027,7 +1027,6 @@ triggerAll = !AILevel
 triggerAll = command != "holddown" && command = "x"
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
-trigger2 = StateNo = 200 && MoveContact
 trigger3 = var(4)
 
 [State -1, Standing Medium Punch]

@@ -968,7 +968,6 @@ value=200
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command != "holddown"&& command="x"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3 = (StateNo = 200 || StateNo = 400) && Time >= 3
 ;---------------------------------------------------------------------------
 [State -1, Standing Medium Punch]
 type=ChangeState
@@ -1015,7 +1014,6 @@ value=400
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="x"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3 = (StateNo = 200 || StateNo = 400) && Time >= 3
 ;---------------------------------------------------------------------------
 [State -1, Crouching Medium Punch]
 type=ChangeState
