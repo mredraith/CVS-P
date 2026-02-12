@@ -90,7 +90,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 17
 ground.hittime = Ifelse(p2statetype = C, 21, 19)
-guard.hittime = (Ifelse(p2statetype = C, 21, 19)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 21, 19)) - 6
 guard.slidetime = 17
 guard.ctrltime = 17
 ground.velocity = -9.0*const(size.xscale)
@@ -340,7 +340,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 17
 ground.hittime = Ifelse(p2statetype = C, 25, 23)
-guard.hittime = (Ifelse(p2statetype = C, 25, 23)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 25, 23)) - 6
 guard.slidetime = 17
 guard.ctrltime = 21
 ground.velocity = -9.0*const(size.xscale)
@@ -590,7 +590,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 18
 ground.hittime = Ifelse(p2statetype = C, 27, 25)
-guard.hittime = (Ifelse(p2statetype = C, 27, 25)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 27, 25)) - 6
 guard.slidetime = 18
 guard.ctrltime = 23
 ground.velocity = -9.0*const(size.xscale)
@@ -872,7 +872,7 @@ guardsound = S3,1
 ground.type = low
 ground.slidetime = 15
 ground.hittime = Ifelse(p2statetype = C, 19, 17)
-guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 6
 guard.slidetime = 15
 guard.ctrltime = 15
 ground.velocity = -9.0*const(size.xscale)
@@ -936,7 +936,7 @@ guardsound = S3,1
 ground.type = low
 ground.slidetime = 15
 ground.hittime = Ifelse(p2statetype = C, 19, 17)
-guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 6
 guard.slidetime = 15
 guard.ctrltime = 15
 ground.velocity = -9.0*const(size.xscale)
@@ -1000,7 +1000,7 @@ guardsound = S3,1
 ground.type = low
 ground.slidetime = 15
 ground.hittime = Ifelse(p2statetype = C, 19, 17)
-guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 19, 17)) - 6
 guard.slidetime = 15
 guard.ctrltime = 15
 ground.velocity = -4.0*const(size.xscale),-11.0*const(size.yscale)
@@ -1315,7 +1315,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 14
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,5.0*const(size.yscale)
@@ -1511,7 +1511,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 14
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,5.0*const(size.yscale)
@@ -1709,7 +1709,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 14
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,5.0*const(size.yscale)
@@ -1961,7 +1961,7 @@ guardsound = S3,1
 ground.type = high
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 guard.slidetime = 14
 guard.ctrltime = 14
 ground.velocity = 0,-14.0*const(size.yscale)

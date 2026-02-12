@@ -198,7 +198,7 @@ guardsound=s130,1
 ground.type=High
 ground.slidetime=6
 ground.hittime=12
-guard.hittime = (12) - 5
+guard.hittime = (12) - 6
 ground.velocity=Ifelse(root,var(20),-5,-10),Ifelse(var(10)=3,-4,0)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=Ifelse(root,var(20),-2,-4), -4
@@ -241,7 +241,7 @@ guardsound=s130,1
 ground.type=High
 ground.slidetime=6
 ground.hittime=12
-guard.hittime = (12) - 5
+guard.hittime = (12) - 6
 ground.velocity=Ifelse(root,var(20),-5,-10),Ifelse(var(10)=3,-4,0)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=Ifelse(root,var(20),-2,-4), -4
@@ -610,7 +610,7 @@ guardsound=s130,1
 ground.type = high
 ground.slidetime = 60
 ground.hittime = 60
-guard.hittime = (60) - 5
+guard.hittime = (60) - 6
 ground.velocity = -8,0
 air.velocity = -5,-4.5
 fall = 0

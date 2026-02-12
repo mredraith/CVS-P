@@ -424,7 +424,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 ground.velocity = 0, 0;-8
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -470,7 +470,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 ground.velocity = 0, -10
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -513,7 +513,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 ground.velocity = -5, -13
 ground.cornerpush.veloff = 0
 air.type = Low
@@ -694,7 +694,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = 1
 ground.velocity = 8, 0;ifelse(p2dist x > 30, 12, 11), 0;ifelse(p2dist y < (enemy, const(size.mid.pos.y)) + 60, 0, -3) + vel y
 air.type = Low
@@ -745,7 +745,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = -1
 ground.velocity = -8, 0;ifelse(p2dist x > 30, -12, -11), 0
 air.type = Low
@@ -799,7 +799,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = 1
 ground.velocity = ifelse(p2dist x < 30, -5.54, 6.45), -6.45;-5.54, -6.45
 air.type = Low
@@ -849,7 +849,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = 1
 ground.velocity = ifelse(p2dist x < -30, -5.54, 6.45), -6.45;5.54, -6.45
 air.type = Low
@@ -972,7 +972,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = 1
 ground.velocity = ifelse(p2dist x > 30, 9, 8) -vel x, ifelse(p2dist y < (enemy, const(size.mid.pos.y)) + 60, 0, -3)
 air.type = Low
@@ -1023,7 +1023,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = -1
 ground.velocity = ifelse(p2dist x > 30, -9, -8) -vel x, ifelse(p2dist y < (enemy, const(size.mid.pos.y)) + 60, 0, -3)
 air.type = Low
@@ -1071,7 +1071,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = 1
 ground.velocity = -8, -4
 air.type = Low
@@ -1122,7 +1122,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 p2facing = 1
 ground.velocity = 8, -4
 air.type = Low

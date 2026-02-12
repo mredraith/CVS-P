@@ -135,7 +135,7 @@ guard.pausetime=5,5
 ground.slidetime=9
 guard.slidetime=12
 ground.hittime=9
-guard.hittime = (9) - 5
+guard.hittime = (9) - 6
 air.hittime=12
 ground.type=Low
 ground.velocity=-4,-6
@@ -341,7 +341,7 @@ guard.pausetime=5,5
 ground.slidetime=9
 guard.slidetime=12
 ground.hittime=9
-guard.hittime = (9) - 5
+guard.hittime = (9) - 6
 air.hittime=12
 ground.type=Low
 ground.velocity=-1.5,-6
@@ -475,7 +475,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11
 air.velocity = -4,-9
 yaccel = .45
@@ -653,7 +653,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -685,7 +685,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -717,7 +717,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -749,7 +749,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -781,7 +781,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -813,7 +813,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -845,7 +845,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -877,7 +877,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1070,7 +1070,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -4,-9
 air.velocity = -4,-9
 yaccel = .45
@@ -1243,7 +1243,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1275,7 +1275,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1307,7 +1307,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1339,7 +1339,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1371,7 +1371,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1403,7 +1403,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1435,7 +1435,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -1467,7 +1467,7 @@ guard.pausetime = 11,11
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 5
+guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
 yaccel = .45
@@ -2005,7 +2005,7 @@ pausetime = 2,4
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
 yaccel = .45
@@ -2070,7 +2070,7 @@ pausetime = 2,1
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -2
 air.velocity = -3.5,-6
 yaccel = .45
@@ -2102,7 +2102,7 @@ pausetime = 2,1
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
 yaccel = .45
@@ -2217,7 +2217,7 @@ guard.pausetime = 11,11
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -2.7,-6
 guard.velocity = -6
 air.velocity = -2.7,-6
@@ -2359,7 +2359,7 @@ pausetime = 2,4
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
 yaccel = .45
@@ -2433,7 +2433,7 @@ pausetime = 2,1
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -2
 air.velocity = -3.5,-6
 yaccel = .45
@@ -2465,7 +2465,7 @@ pausetime = 2,1
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
 yaccel = .45
@@ -2545,7 +2545,7 @@ pausetime = 4,4
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -4 - (var(10) * 2)
 air.velocity = -3,-6
 yaccel = .45
@@ -2651,7 +2651,7 @@ pausetime = 4,4
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -4 - (var(10) * 2)
 air.velocity = -3,-6
 yaccel = .45
@@ -2750,7 +2750,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=12
 ground.hittime =12
-guard.hittime = (12) - 5
+guard.hittime = (12) - 6
 ground.velocity=Ifelse(var(20),-1,-3),-10
 air.velocity=Ifelse(var(20),-1,-3),-8
 guard.velocity=Ifelse(var(20),-2.5,-5)
@@ -2792,7 +2792,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity=Ifelse(var(20),-1,-3),-5
 air.velocity=Ifelse(var(20),-1,-3),-3
 guard.velocity=Ifelse(var(20),-2.5,-5)
@@ -2836,7 +2836,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=12
 ground.hittime =12
-guard.hittime = (12) - 5
+guard.hittime = (12) - 6
 ground.velocity=Ifelse(var(20),-1,-3),-10
 air.velocity=Ifelse(var(20),-1,-3),-8
 guard.velocity=Ifelse(var(20),-2.5,-5)
@@ -3000,7 +3000,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity=Ifelse(var(20),-1,-3)
 air.velocity=Ifelse(var(20),-1,-3),-3
 guard.velocity=Ifelse(var(20),-2.5,-5)
@@ -3043,7 +3043,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=12
 ground.hittime =12
-guard.hittime = (12) - 5
+guard.hittime = (12) - 6
 ground.velocity=Ifelse(var(20),-1,-3),-10
 air.velocity=Ifelse(var(20),-1,-3),-8
 guard.velocity=Ifelse(var(20),-2.5,-5)
@@ -3205,7 +3205,7 @@ pausetime = 2,2
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -4.3,-7
 guard.velocity = -6
 air.velocity = -4.3,-7
@@ -3397,7 +3397,7 @@ guard.pausetime = 6,6
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -4.3,-7
 guard.velocity = -6
 air.velocity = -4.3,-7

@@ -2146,7 +2146,7 @@ guardsound = S3,0
 ground.type = High 
 ground.slidetime = 16 
 ground.hittime = Ifelse(p2statetype = C, 35, 33) 
-guard.hittime = (Ifelse(p2statetype = C, 35, 33)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 35, 33)) - 6
 guard.slidetime = 16
 guard.ctrltime = 17
 ground.velocity = -26.0*const(size.xscale) 
@@ -2318,7 +2318,7 @@ guardsound = S3,0
 ground.type = High
 ground.slidetime = 6
 ground.hittime = Ifelse(p2statetype = C, 14, 13)
-guard.hittime = (Ifelse(p2statetype = C, 14, 13)) - 5
+guard.hittime = (Ifelse(p2statetype = C, 14, 13)) - 6
 guard.slidetime = 6
 guard.ctrltime = 12
 air.hittime = 13
@@ -2452,7 +2452,7 @@ guardsound = S3,0
 ground.type = High
 ground.slidetime = 6
 ground.hittime = Ifelse(p2statetype=C,18,16)
-guard.hittime = (Ifelse(p2statetype=C,18,16)) - 5
+guard.hittime = (Ifelse(p2statetype=C,18,16)) - 6
 guard.slidetime = 6
 guard.ctrltime = 15
 ground.velocity = -6.5*const(size.xscale)

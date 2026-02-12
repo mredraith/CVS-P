@@ -134,7 +134,7 @@ hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.hitTime = 10 + 3 * var(10)
-guard.hittime = (10 + 3 * var(10)) - 5
+guard.hittime = (10 + 3 * var(10)) - 6
 ground.slideTime = 15 + 3 * var(10)
 ground.velocity = -3,-6
 air.velocity = -2,-1.2
@@ -171,7 +171,7 @@ hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.hitTime = 10 + 3 * var(10)
-guard.hittime = (10 + 3 * var(10)) - 5
+guard.hittime = (10 + 3 * var(10)) - 6
 ground.slideTime = 15 + 3 * var(10)
 ground.velocity = -3,-6
 air.velocity = -2,-1.2
@@ -208,7 +208,7 @@ hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.hitTime = 10 + 3 * var(10)
-guard.hittime = (10 + 3 * var(10)) - 5
+guard.hittime = (10 + 3 * var(10)) - 6
 ground.slideTime = 15 + 3 * var(10)
 ground.velocity = -3,-6
 air.velocity = -2,-1.2
@@ -434,7 +434,7 @@ hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = H
 ground.hitTime = 10 + 3 * var(10)
-guard.hittime = (10 + 3 * var(10)) - 5
+guard.hittime = (10 + 3 * var(10)) - 6
 ground.slideTime = 15 + 3 * var(10)
 ground.velocity = -3,-6
 air.velocity = -2,-1.2
@@ -542,7 +542,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -11.0
 guard.velocity = -8.5
 air.velocity = -5.0,-6.0
@@ -582,7 +582,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -11.0
 guard.velocity = -8.5
 air.velocity = -5.0,-6.0
@@ -622,7 +622,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -11.0
 guard.velocity = -8.5
 air.velocity = -5.0,-6.0
@@ -925,7 +925,7 @@ sparkXY = -10 + 0 * (var(35) := 20), var(36) := -45
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -7,-3
 air.type = High
 air.velocity = -12,10
@@ -1025,7 +1025,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -3.0,-6.0
 guard.velocity = -8.5
 air.velocity = -3.0,-6.0
@@ -1065,7 +1065,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -3.0,-6.0
 guard.velocity = -8.5
 air.velocity = -3.0,-6.0
@@ -1105,7 +1105,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -3.0,-6.0
 guard.velocity = -8.5
 air.velocity = -3.0,-6.0
@@ -1482,7 +1482,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -3.0,-6.0
 guard.velocity = -8.5
 air.velocity = -3.0,-6.0
@@ -1629,7 +1629,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -9.5
 guard.velocity = -9.5
 ground.cornerpush.veloff = -22.0
@@ -1668,7 +1668,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -9.5
 guard.velocity = -9.5
 ground.cornerpush.veloff = -22.0
@@ -1707,7 +1707,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -9.5
 guard.velocity = -9.5
 ground.cornerpush.veloff = -22.0
@@ -2096,7 +2096,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -9.5
 guard.velocity = -9.5
 air.velocity = -3.0,-7.0
@@ -2541,7 +2541,7 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.slideTime = 18
 air.hitTime = 120
 ground.velocity = -5.54, -5.25
@@ -2628,7 +2628,7 @@ fall.animType = DiagUp
 ground.type = Low
 air.type = Low
 ground.hitTime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.slideTime = 18
 air.hitTime = 120
 ground.velocity = -5.54, -5.25

@@ -178,7 +178,7 @@ sparkxy = -10 + 0*(var(35):=50), var(36):=-50
 ground.type = High
 ground.velocity = -6 - 3*(var(0)%3)
 ground.hittime = 20
-guard.hittime = (20) - 5
+guard.hittime = (20) - 6
 ground.slidetime = 20
 ground.cornerpush.veloff = -6 - 3*(var(0)%3)
 air.hittime = 999
@@ -208,7 +208,7 @@ sparkxy = -10 + 0*(var(35):=170), var(36):=-60
 ground.type = high
 ground.velocity = -5.58 - 3*(var(0)%3)
 ground.hittime = 20
-guard.hittime = (20) - 5
+guard.hittime = (20) - 6
 ground.slidetime = 20
 ground.cornerpush.veloff = -6 - 3*(var(0)%3)
 air.hittime = 999
@@ -409,7 +409,7 @@ sparkxy = -10 + 0*(var(35):=50), var(36):=-50
 ground.type = High
 ground.velocity = -6 - 3*(var(0)%3)
 ground.hittime = 20
-guard.hittime = (20) - 5
+guard.hittime = (20) - 6
 ground.slidetime = 20
 ground.cornerpush.veloff = -6 - 3*(var(0)%3)
 air.hittime = 999
@@ -438,7 +438,7 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-70
 ground.type = High
 ground.velocity = -6 - 3*(var(0)%3)
 ground.hittime = 20
-guard.hittime = (20) - 5
+guard.hittime = (20) - 6
 ground.slidetime = 20
 ground.cornerpush.veloff = -6 - 3*(var(0)%3)
 air.hittime = 999
@@ -572,7 +572,7 @@ guardsound = s6,0 + 2*(numenemy = 1 && var(8) - var(6) < 1)
 ground.type = High
 ground.velocity = -6 *(var(0)%3)
 ground.hittime = 20
-guard.hittime = (20) - 5
+guard.hittime = (20) - 6
 ground.slidetime = 2
 ground.cornerpush.veloff = -4.5 *(var(0)%3)
 guard.kill = 0
@@ -607,7 +607,7 @@ guardsound = s6,0 + 2*(numenemy = 1 && var(8) - var(6) < 1)
 ground.type = Low
 ground.velocity = 0 *(var(0)%3)
 ground.hittime = 20
-guard.hittime = (20) - 5
+guard.hittime = (20) - 6
 ground.slidetime = 20
 ground.cornerpush.veloff = 0 *(var(0)%3)
 guard.kill = 0
@@ -642,7 +642,7 @@ guardsound = s6,0 + 2*(numenemy = 1 && var(8) - var(6) < 1)
 ground.type = Low
 ground.velocity = 0 *(var(0)%3)
 ground.hittime = 11
-guard.hittime = (11) - 5
+guard.hittime = (11) - 6
 ground.slidetime = 2
 ground.cornerpush.veloff = 0 *(var(0)%3)
 guard.kill = 0
@@ -758,7 +758,7 @@ guardsound = s6,0 + 2*(numenemy = 1 && var(8) - var(6) < 1)
 ground.type = Low
 ground.velocity = -0.83, -15 *(var(0)%3)
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 ground.slidetime = 16
 ground.cornerpush.veloff = 0 *(var(0)%3)
 guard.velocity = -10
@@ -800,7 +800,7 @@ guardsound = s6,0 + 2*(numenemy = 1 && var(8) - var(6) < 1)
 ground.type = High
 ground.velocity = 0, 7.5
 ground.hittime = 24
-guard.hittime = (24) - 5
+guard.hittime = (24) - 6
 ground.slidetime = 24
 ground.cornerpush.veloff = 0
 guard.velocity = -12.5

@@ -147,7 +147,7 @@ sparkXY = -10 + 0 * (var(35) := 43), var(36) := -45
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -3.5,-7.5
 guard.velocity = -9.5
 air.velocity = -4.0,-3.5
@@ -433,7 +433,7 @@ sparkXY = -10 + 0 * (var(35) := 43), var(36) := -45
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -3.5,-7.5
 guard.velocity = -9.5
 air.velocity = -4.0,-3.5
@@ -660,7 +660,7 @@ sparkXY = -10 + 0 * (var(35) := 83), var(36) := -45
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -2.0,-7.5
 guard.velocity = -11.0
 ground.cornerpush.veloff = 0
@@ -829,7 +829,7 @@ sparkXY = -10 + 0 * (var(35) := 83), var(36) := -45
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 23
-guard.hittime = (23) - 5
+guard.hittime = (23) - 6
 ground.velocity = -8,0
 air.velocity = -5,-4
 envshake.time = 20
@@ -1089,7 +1089,7 @@ sparkXY = -10 + 0 * (var(35) := 83), var(36) := -45
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -2.0,-7.5
 guard.velocity = -11.0
 ground.cornerpush.veloff = 0
@@ -1259,7 +1259,7 @@ sparkXY = -10 + 0 * (var(35) := 83), var(36) := -45
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 23
-guard.hittime = (23) - 5
+guard.hittime = (23) - 6
 ground.velocity = -8,0
 air.velocity = -5,-4
 envshake.time = 20
@@ -1677,7 +1677,7 @@ sparkXY = -1
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 23
-guard.hittime = (23) - 5
+guard.hittime = (23) - 6
 ground.velocity = 0
 air.velocity = 0
 envshake.time = 20
@@ -1945,7 +1945,7 @@ sparkxy = -1
 ground.type = H
 ground.slidetime = 10
 ground.hittime = 23
-guard.hittime = (23) - 5
+guard.hittime = (23) - 6
 ground.velocity = -8,-10
 air.velocity = -4,-10
 envshake.time = 20
@@ -2161,7 +2161,7 @@ sparkxy = -10 + 0 * (var(35) := 146), var(36) := -80
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = 1,-8
 guard.velocity = -8.25
 air.velocity = 1,-8
@@ -2202,7 +2202,7 @@ sparkxy = -10 + 0 * (var(35) := 146), var(36) := -80
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -2,-10
 guard.velocity = -8.25
 air.velocity = -2,-10
@@ -2434,7 +2434,7 @@ sparkxy = -10 + 0 * (var(35) := 146), var(36) := -80
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = 1,-8
 guard.velocity = -8.25
 air.velocity = 1,-8
@@ -2475,7 +2475,7 @@ sparkxy = -10 + 0 * (var(35) := 146), var(36) := -80
 ground.type = High
 ground.slidetime = 15
 ground.hittime = 15
-guard.hittime = (15) - 5
+guard.hittime = (15) - 6
 ground.velocity = -2,-10
 guard.velocity = -8.25
 air.velocity = -2,-10
@@ -2783,7 +2783,7 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -3,-7
 guard.velocity = -7
 air.velocity = -3,-7
@@ -3197,7 +3197,7 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 ground.type = Low
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 ground.velocity = -3,-7
 guard.velocity = -7
 air.velocity = -3,-7

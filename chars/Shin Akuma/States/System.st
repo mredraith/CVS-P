@@ -1933,7 +1933,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 ground.type = High
 ground.slidetime = 18
 ground.hittime = 18
-guard.hittime = (18) - 5
+guard.hittime = (18) - 6
 air.hittime = 18
 down.hittime = 18
 ground.velocity = -6, -12
@@ -3041,7 +3041,7 @@ hitsound = s2, 3
 ground.type = High
 ground.slidetime = 12
 ground.hittime = 16
-guard.hittime = (16) - 5
+guard.hittime = (16) - 6
 ground.velocity = -1, -6
 air.type = High
 air.velocity = -1, -6
