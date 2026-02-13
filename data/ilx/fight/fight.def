@@ -1276,7 +1276,7 @@ team1.counter.time = 7 ;Ikemen feature: length of the counter shake
 team1.counter.mult = 0.05 ;Ikemen feature: counter shake intensity multiplier
 team1.text.layerno = 2
 ; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
-team1.text.text = "%p Damage !" ;You can use %i to show count in the text, eg "%i Hit!"
+team1.text.text = "%p Damage" ;You can use %i to show count in the text, eg "%i Hit!"
 team1.text.font = 5,0,1;1,4,1
 team1.text.scale = 1.25,1.25;1,1
 team1.text.offset = 0,0;Offset of text
@@ -1294,7 +1294,7 @@ team2.counter.time = 7 ;Ikemen feature: length of the counter shake
 team2.counter.mult = 0.05 ;Ikemen feature: counter shake intensity multiplier
 team2.text.layerno = 2
 ; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
-team2.text.text = "%p Damage !";"COMBO" ;You can use %i to show count in the text, eg "%i Hit!"
+team2.text.text = "%p Damage";"COMBO" ;You can use %i to show count in the text, eg "%i Hit!"
 team2.text.font = 5,0,1;1,4,1
 team2.text.scale =1.25,1.25;1,1;
 team2.text.offset = -210,0;-20,-100 ;Offset of text
@@ -1309,7 +1309,7 @@ format.decimal.separator = .
 ;-----------------------------------------------------------
 ; Ikemen feature
 [Action]
-team1.pos = 30,420 ;Coords to show
+team1.pos = 30,500 ;Coords to show
 team1.spacing = 0,50 ;Spacing
 team1.start.x = -240 ;Starting x-coords
 team1.bg.layerno = 2
@@ -1328,7 +1328,7 @@ team1.displaytime = 60 ;Time to show message
 team1.showspeed = 2 ;Message showing up speed (1 = instant)
 team1.hidespeed = 8 ;Message hiding speed (the larger value, the faster speed)
 
-team2.pos = 1250,420 ;Coords to show
+team2.pos = 1250,500 ;Coords to show
 team2.spacing = 0,50 ;Spacing
 team2.start.x = 1520 ;Starting x-coords
 team2.bg.layerno = 2
@@ -2067,7 +2067,7 @@ p2.enabled.watch = 1
 demo.pos = 640,320
 ;demo.bg.spr = 
 demo.text.font = 3,0, 0
-demo.text.text = Demo Mode
+demo.text.text = Demo
 
 ;-----------------------------------------------------------
 ; Ikemen feature

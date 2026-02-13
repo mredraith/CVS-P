@@ -121,12 +121,12 @@ hiscore.bgm.loopend =
 [Title Info]
 fadein.time = 6
 fadeout.time = 6
-menu.pos = 30,180;640,300;1250,450;640,380
+menu.pos = 120,180;640,300;1250,450;640,380
 menu.item.font = 4,2,1
 menu.item.active.font = 4,1,1, 255,221,160
 menu.item.scale = 2,2
 menu.item.active.scale = 2.5,2.5
-menu.item.spacing = 60, 50;54
+menu.item.spacing = 0, 60;54
 
 connecting.offset = 640, 393 ;Ikemen feature
 connecting.font = 7,0,0 ;Ikemen feature
@@ -160,15 +160,15 @@ cancel.snd = 100,2
 ;Full documentation of this feature is available on Ikemen GO features wiki
 
 ; Submenu: Versus
-menu.itemname.menuversus = "VS MODE"
-menu.itemname.menuversus.versus = "1V1 VERSUS"
+menu.itemname.menuversus = "VERSUS"
+menu.itemname.menuversus.versus = "SOLO VERSUS"
 menu.itemname.menuversus.teamversus = "TEAM VERSUS"
-menu.itemname.menuversus.versuscoop = "VERSUS CO-OP" ;Ikemen feature
-menu.itemname.menuversus.freebattle = "FREE BATTLE" ;Ikemen feature
+menu.itemname.menuversus.freebattle = "P1 VS CPU" ;Ikemen feature
+menu.itemname.menuversus.versuscoop = "CO-OP VS CPU" ;Ikemen feature
 menu.itemname.menuversus.back = "BACK" ;Ikemen feature
 
 ; Submenu: Network
-menu.itemname.menunetwork = "NETWORK PLAY" ;Ikemen feature
+menu.itemname.menunetwork = "ONLINE" ;Ikemen feature
 menu.itemname.menunetwork.serverhost = "HOST GAME" ;Ikemen feature
 menu.itemname.menunetwork.serverjoin = "JOIN GAME" ;Ikemen feature
 menu.itemname.menunetwork.back = "BACK" ;Ikemen feature
@@ -194,10 +194,10 @@ menu.itemname.menupractice.back = "BACK" ;Ikemen feature
 menu.itemname.options = "OPTIONS"
 
 ; Submenu: Arcade
-menu.itemname.menuarcade = "CLASSIC MODE" ;Ikemen feature
-menu.itemname.menuarcade.arcade = "SINGLE MODE"
+menu.itemname.menuarcade = "ARCADE" ;Ikemen feature
+menu.itemname.menuarcade.arcade = "SOLO ARCADE"
 menu.itemname.menuarcade.teamarcade = "TEAM ARCADE"
-menu.itemname.menuarcade.teamcoop = "TEAM CO-OP"
+menu.itemname.menuarcade.teamcoop = "CO-OP ARCADE"
 menu.itemname.menuarcade.back = "BACK" ;Ikemen feature
 
 ; Submenu: Story Mode
@@ -206,7 +206,7 @@ menu.itemname.storymode = "STORY MODE" ;Ikemen feature
 menu.itemname.storymode.back = "BACK" ;Ikemen feature
 
 ; Submenu: Mission
-menu.itemname.menumission = "MISSION MODE" ;Ikemen feature
+menu.itemname.menumission = "MISSIONS" ;Ikemen feature
 menu.itemname.menumission.survival = "SURVIVAL MODE"
 menu.itemname.menumission.survivalcoop = "SURVIVAL CO-OP"
 menu.itemname.menumission.timeattack = "TIME ATTACK" ;Ikemen feature
@@ -220,14 +220,14 @@ menu.itemname.menumission.back = "BACK" ;Ikemen feature
 menu.itemname.menumission.bonusgames.back = "BACK" ;Ikemen feature
 
 ; Submenu: Watch Mode
-menu.itemname.menuwatch = "WATCH MODE" ;Ikemen feature
-menu.itemname.menuwatch.watch = "CPU MATCH"
+menu.itemname.menuwatch = "WATCH" ;Ikemen feature
+menu.itemname.menuwatch.watch = "CPU VS CPU"
 menu.itemname.menuwatch.randomtest = "RANDOMTEST" ;Ikemen feature
 menu.itemname.menuwatch.replay = "REPLAY" ;Ikemen feature
 menu.itemname.menuwatch.back = "BACK" ;Ikemen feature
 
 ; Exit Game
-menu.itemname.exit = "EXIT"
+menu.itemname.exit = "CLOSE GAME"
 
 ;----------------------------
 ;Title background definition
@@ -238,22 +238,8 @@ bgclearcolor = 0,0,0
 type = normal
 spriteno = 100,0
 start = -640,720
-velocity = -1.78, 1
 tile = 1,1
-
-[TitleBG Dots]
-type = normal
-spriteno = 100,1
-start = -640,0
-velocity = -1.78, 1
-tile = 1,1
-mask=1 
-
-
-[TitleBG Characters B]
-type = anim
-actionno = 112
-start = -1783,90
+velocity = -0.5, 0
 
 [TitleBG Characters A]
 type = anim
@@ -268,138 +254,30 @@ start = -640,-82
 [TitleBG Menu Title]
 type = anim
 actionno = 106
-start = -1046,13;7,13
+start = -1250, 13;7,13
 
 [TitleBG Banner B]
 type = anim
 actionno = 103
 start = -640, 720
 
-[TitleBG Names]
-type = anim
-actionno = 110
-start = 1280,647
-
-[TitleBG Banner UR]
-type = anim
-actionno = 104
-start = 810,-170
-
-[TitleBG Banner LL]
-type = anim
-actionno = 105
-start = -810,890
-
 [Begin Action 102]
-100,2, 0,0, 20
+100,2, 0,0, 10
 100,2, 0,0, 10
 Interpolate Offset
 100,2, 0,82, -1
 
 [Begin Action 103]
-100,3, 0,0, 20
+100,3, 0,0, 10
 100,3, 0,0, 10
 Interpolate Offset
 100,3, 0,-82, -1
-
-[Begin Action 104]
-100,4, 0,0, 40
-100,4, 0,0, 10
-Interpolate Offset
-100,4, -170,170, -1
-
-[Begin Action 105]
-100,5, 0,0, 40
-100,5, 0,0, 10
-Interpolate Offset
-100,5, 170,-170, -1
 
 [Begin Action 106]
 100,6, 0,0, 50
 100,6, 0,0, 10
 Interpolate Offset
-100,6, 413,0, -1
-
-[Begin Action 110] ;NAMES
-101,0, 0,0, 50
-101,0, 0,0, 20
-Interpolate Offset
-101,0, -650,0, 590
-101,0, -650,0, 20
-Interpolate Offset
-101,0, 0,0, 50
-102,0, 0,0, 20
-Interpolate Offset
-102,0, -650,0, 590
-102,0, -650,0, 20
-Interpolate Offset
-102,0, 0,0, 50
-102,0, 0,0, 20
-Interpolate Offset
-103,0, -650,0, 590
-103,0, -650,0, 20
-Interpolate Offset
-103,0, 0,0, 50
-104,0, 0,0, 20
-Interpolate Offset
-104,0, -650,0, 590
-104,0, -650,0, 20
-Interpolate Offset
-104,0, 0,0, 50
-105,0, 0,0, 20
-Interpolate Offset
-105,0, -650,0, 590
-105,0, -650,0, 20
-Interpolate Offset
-105,0, 0,0, 50
-106,0, 0,0, 20
-Interpolate Offset
-106,0, -650,0, 590
-106,0, -650,0, 20
-Interpolate Offset
-106,0, 0,0, 50
-107,0, 0,0, 20
-Interpolate Offset
-107,0, -650,0, 590
-107,0, -650,0, 20
-Interpolate Offset
-107,0, 0,0, 50
-108,0, 0,0, 20
-Interpolate Offset
-108,0, -650,0, 590
-108,0, -650,0, 20
-Interpolate Offset
-108,0, 0,0, 50
-109,0, 0,0, 20
-Interpolate Offset
-109,0, -650,0, 590
-109,0, -650,0, 20
-Interpolate Offset
-109,0, 0,0, 50
-110,0, 0,0, 20
-Interpolate Offset
-110,0, -650,0, 590
-110,0, -650,0, 20
-Interpolate Offset
-110,0, 0,0, 50
-111,0, 0,0, 20
-Interpolate Offset
-111,0, -650,0, 590
-111,0, -650,0, 20
-Interpolate Offset
-111,0, 0,0, 50
-112,0, 0,0, 20
-Interpolate Offset
-112,0, -650,0, 590
-112,0, -650,0, 20
-Interpolate Offset
-112,0, 0,0, 50
-113,0, 0,0, 20
-Interpolate Offset
-113,0, -650,0, 590
-113,0, -650,0, 20
-Interpolate Offset
-113,0, 0,0, 0
+100,6, 640,0, -1
 
 [Begin Action 111] ;ART
 101,1, 0,0, 50
@@ -959,15 +837,6 @@ type = anim
 actionno = 205
 layerno = 1
 start = -640,0
-
-[Begin Action 205]
-205,0, 0,0, 2, , , 2,2
-205,1, 0,0, 2, , , 2,2
-205,2, 0,0, 2, , , 2,2
-205,3, 0,0, 2, , , 2,2
-205,4, 0,0, 2, , , 2,2
-205,5, 0,0, 2, , , 2,2
-0,0, 0,0, -1
 
 ;-------------------------------------------------------------------
 [VS Screen]
@@ -2119,7 +1988,7 @@ type = normal
 spriteno = 401,0
 start = -640,0
 scalestart = 0.5,0.5
-velocity = 1, 1.2
+velocity = 0, 1
 tile = 1,1
 
 [OptionBG Transition]
