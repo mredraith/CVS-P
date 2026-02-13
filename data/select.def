@@ -457,9 +457,7 @@ empty
  ;
  ;Insert your stages below.
 
-stages/kfm3D.def
-stages/stage3d_outline.def
-stages/Stage0_3D.def
+stages/stage01.def
 
 ;-------------------------------------------------------------------------------
 [Options]

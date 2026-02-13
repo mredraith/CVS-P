@@ -137,8 +137,8 @@ options.t_itemname = {
 			modifyGameOption('Options.Life', 100)
 			modifyGameOption('Options.Time', 99)
 			modifyGameOption('Options.GameSpeed', 0)
-			modifyGameOption('Options.Match.Wins', 2)
 			--modifyGameOption('Options.GameSpeedStep', 5)
+			modifyGameOption('Options.Match.Wins', 2)
 			modifyGameOption('Options.Match.MaxDrawGames', -2) -- -2: match.maxdrawgames
 			modifyGameOption('Options.Credits', 10)
 			modifyGameOption('Options.QuickContinue', false)
@@ -175,14 +175,14 @@ options.t_itemname = {
 			modifyGameOption('Options.Ratio.Level4.Life', 1.40)
 			--modifyGameOption('Config.Motif', "data/system.def")
 			modifyGameOption('Config.Players', 4)
-			--modifyGameOption('Config.Framerate', 60)
 			modifyGameOption('Config.Language', "en")
 			modifyGameOption('Config.AfterImageMax', 128)
 			modifyGameOption('Config.ExplodMax', 512)
 			modifyGameOption('Config.HelperMax', 56)
 			modifyGameOption('Config.ProjectileMax', 256)
 			modifyGameOption('Config.PaletteMax', 100)
-			modifyGameOption('Config.TextMax', 256)
+			modifyGameOption('Config.TextMax', 128)
+			--modifyGameOption('Config.TickInterpolation', true)
 			--modifyGameOption('Config.ZoomActive', true)
 			--modifyGameOption('Config.EscOpensMenu', true)
 			--modifyGameOption('Config.BackgroundLoading', false) --TODO: not implemented
@@ -222,6 +222,7 @@ options.t_itemname = {
 			modifyGameOption('Video.Fullscreen', false)
 			--modifyGameOption('Video.Borderless', false)
 			--modifyGameOption('Video.RGBSpriteBilinearFilter', true)
+			--modifyGameOption('Video.Framerate', 60)
 			modifyGameOption('Video.VSync', 1)
 			modifyGameOption('Video.MSAA', 0)
 			--modifyGameOption('Video.WindowCentered', true)
@@ -1934,6 +1935,15 @@ function options.f_start()
 			lastNum = j
 		end
 	end
+	-- Runtime platform filtering
+	local runtimeOS = getRuntimeOS()
+	local excluded = {gles32 = true}
+	if runtimeOS == 'android' then
+		excluded = {keyboard = true, gl32 = true, gl21 = true, vk13 = true}
+	end
+	main.f_pruneMenu(options.menu, excluded)
+	main.f_prunePointers(options.t_vardisplayPointers, excluded)
+	-- Menu windows
 	textImgSetWindow(motif.option_info.menu.item.selected.active.TextSpriteData, w[1], w[2], w[3], w[4])
 	textImgSetWindow(motif.option_info.menu.item.active.TextSpriteData, w[1], w[2], w[3], w[4])
 	textImgSetWindow(motif.option_info.menu.item.value.active.TextSpriteData, w[1], w[2], w[3], w[4])
