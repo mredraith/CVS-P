@@ -293,9 +293,9 @@ todoh, random, includestage=0, order=1
 yuki, random, includestage=0, order=1
 ; break
 empty
-Violent Ken, random, includestage=0, order=3
 Evil Ryu, random, includestage=0, order=3
-akuma, random, includestage=0, order=2
+bison, random, includestage=0, order=2
+sagat, random, includestage=0, order=1
 adon, random, includestage=0, order=1
 leo, random, includestage=0, order=1
 jill, random, includestage=0, order=1
@@ -305,14 +305,14 @@ saisyu, random, includestage=0, order=2
 geese, random, includestage=0, order=2
 rugal, random, includestage=0, order=2
 Iori Orochi, random, includestage=0, order=3
-Kusanagi, random, includestage=0, order=3
+empty
 empty
 ; break
 empty
-Final Bison, random, includestage=0, order=5
-Shadow Lady, random, includestage=0, order=3
-bison, random, includestage=0, order=2
-sagat, random, includestage=0, order=1
+Violent Ken, random, includestage=0, order=3
+Vega, random, includestage=0, order=2
+akuma, random, includestage=0, order=2
+Alex, random, includestage=0, order=bison, random, includestage=0, order=2
 kenji, random, includestage=0, order=1
 hiryu, random, includestage=0, order=1
 randomselect
@@ -320,15 +320,15 @@ nakoruru, random, includestage=0, order=1
 laurence, random, includestage=0, order=1
 krauser, random, includestage=0, order=2
 grant, random, includestage=0, order=2
-Rasetsumaru, random, includestage=0, order=3
-Mr.karate, random, includestage=0, order=3
+Kusanagi, random, includestage=0, order=3
+empty
 empty
 ; break
 empty
-Funny Ryu, random, includestage=0, order=5
-Shin Akuma, random, includestage=0, order=5
 seth, random, includestage=0, order=2
 balrog, random, includestage=0, order=2
+Urien, random, includestage=0, order=2
+Dee Jay, random, includestage=0, order=1
 hayato, random, includestage=0, order=1
 zero, random, includestage=0, order=1
 randomselect
@@ -336,17 +336,57 @@ earthquake, random, includestage=0, order=1
 amakusa, random, includestage=0, order=2
 mr.big, random, includestage=0, order=2
 goenitz, random, includestage=0, order=2
-God Rugal, random, includestage=0, order=5
+Mr.karate, random, includestage=0, order=3
 empty
 empty
 ; break
 empty
-Alex, random, includestage=0, order=1
-Urien, random, includestage=0, order=2
-Dee Jay, random, includestage=0, order=1
-Vega, random, includestage=0, order=2
+Shadow Lady, random, includestage=0, order=3
+empty
+empty
+empty
 empty
 nesmegaman, random, includestage=0, order=5
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+;break
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+;break
+empty
+Funny Ryu, random, includestage=0, order=5
+Shin Akuma, random, includestage=0, order=5
+Final Bison, random, includestage=0, order=5
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+Rasetsumaru, random, includestage=0, order=3
+God Rugal, random, includestage=0, order=5
+empty
 
 ;-------------------------------------------------------------------------------
 [ExtraStages]
