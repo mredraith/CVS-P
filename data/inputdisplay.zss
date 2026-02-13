@@ -1,0 +1,257 @@
+#===============================================================================
+# Input Display Helper state
+#===============================================================================
+[StateDef 11290900; anim:-2;]
+
+notHitBy{value: SCA}
+
+	# scales the explods according to localcoord 
+let f = 1/const240p(1);
+
+let screen1 = screenwidth/320.0;
+let screen2 = ceil(screenwidth);
+
+#;==========================
+#;==========================
+#;;>>@Config.Display_Input>>
+#;; (v.180728) display input v47 ; (操作入力表示)
+#;; (* the result seems NOT always corect. especially when the player has been placed in a custom state)
+#;; (* 結果がいつも正しいとは限りません、特にステートが奪われたとき)
+
+##---
+	##;sys::ki_arrow_key_pressed
+if root,command="holdfwd"   && !(map(_iksys_trainingInputDisplay1)&16384) || root,command="holdback" && !(map(_iksys_trainingInputDisplay1)&32768) || root,command="holdup" && !(map(_iksys_trainingInputDisplay1)&65536) || root,command="holddown" && !(map(_iksys_trainingInputDisplay1)&131072)
+	#;---
+|| (map(_iksys_trainingInputDisplay1)&16384) && ((root,command!="holddown" && map(_iksys_trainingInputDisplay1)&131072) || (root,command!="holdup" && map(_iksys_trainingInputDisplay1)&65536) || (root,command!="holdback" && map(_iksys_trainingInputDisplay1)&32768))
+	#;---
+|| (map(_iksys_trainingInputDisplay1)&32768) && ((root,command!="holddown" && map(_iksys_trainingInputDisplay1)&131072) || (root,command!="holdup" && map(_iksys_trainingInputDisplay1)&65536) || (root,command!="holdfwd" && map(_iksys_trainingInputDisplay1)&16384))
+	#;---
+|| (map(_iksys_trainingInputDisplay1)&65536) && ((root,command!="holddown" && map(_iksys_trainingInputDisplay1)&131072) || (root,command!="holdfwd" && map(_iksys_trainingInputDisplay1)&16384) || (root,command!="holdback" && map(_iksys_trainingInputDisplay1)&32768))
+	#;---
+|| (map(_iksys_trainingInputDisplay1)&131072) && ((root,command!="holdup" && map(_iksys_trainingInputDisplay1)&65536) || (root,command!="holdfwd" && map(_iksys_trainingInputDisplay1)&16384) || (root,command!="holdback" && map(_iksys_trainingInputDisplay1)&32768)) {
+	explod{
+	id:112230100 +( (map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+30101) %100); ##;v47 {AABBCC: AA:Timer / BB:Pos_X++ / CC:Pos_Y++}
+	anim:IND 230150 +((root,command="holdfwd")-(root,command="holdback"&&root,command!="holdfwd"))*20*(root,facing) +((root,command="holddown"&&root,command!="holdup")-(root,command="holdup"))*5;
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.25*$screen1,$f*0.25*$screen1;
+	pos:$screen2*(teamside=2)+floor(13*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	ownpal:1
+		}
+	}
+
+	#;;sys::ki_arrow_key_hold
+if (root,command="holdfwd")||(root,command="holdback")||(root,command="holdup")||(root,command="holddown") {
+	explod{
+	id:112230199;
+	anim:IND 230150 +((root,command="holdfwd")-(root,command="holdback"))*20*(root,facing) +((root,command="holddown")-(root,command="holdup"))*5;
+	ontop:1;
+	postype:left;
+	ownpal:1;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.25*$screen1,$f*0.25*$screen1;
+	pos:$screen2*(teamside=2)+floor(5*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	removetime:1;
+	trans:addalpha;
+	alpha:128,128
+		}
+	}
+	
+	#;--- button_all
+	#;sys::ki_key_simultaneously ;同時押し判定
+if (root,command="x") && !(map(_iksys_trainingInputDisplay1)&262144) || (root,command="y") && !(map(_iksys_trainingInputDisplay1)&524288) || (root,command="z") && !(map(_iksys_trainingInputDisplay1)&1048576) || (root,command="a") && !(map(_iksys_trainingInputDisplay1)&2097152) || (root,command="b") && !(map(_iksys_trainingInputDisplay1)&4194304) || (root,command="c") && !(map(_iksys_trainingInputDisplay1)&8388608) {
+	map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+ ifelse(ceil(map(_iksys_trainingInputDisplay2))>99,100,1) + 10000; ## ;;30000  ;;(tickspersecond%60)*500 ;; 
+	}
+	#;--- button
+	#;sys::ki_key_x
+if (root,command="x") && !(map(_iksys_trainingInputDisplay1)&262144) {
+	explod{
+	id:112230100 +(ceil(map(_iksys_trainingInputDisplay2))%100);
+	anim:IND 230203;
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.28*$screen1,$f*0.28*$screen1;
+	pos:$screen2*(teamside=2)+floor((5+(map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+100)/100%100*8)*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	ownpal:1
+		}
+	}
+	#;sys::ki_key_y
+if (root,command="y") && !(map(_iksys_trainingInputDisplay1)&524288) {
+	explod{
+	id:112230100 +(ceil(map(_iksys_trainingInputDisplay2))%100);
+	anim:IND 230204;
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.28*$screen1,$f*0.28*$screen1;
+	pos:$screen2*(teamside=2)+floor((5+(map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+100)/100%100*8)*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	ownpal:1
+		}
+	}
+	#;sys::ki_key_z
+if (root,command="z") && !(map(_iksys_trainingInputDisplay1)&1048576) {
+	explod{
+	id:112230100 +(ceil(map(_iksys_trainingInputDisplay2))%100);
+	anim:IND 230205;
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.28*$screen1,$f*0.28*$screen1;
+	pos:$screen2*(teamside=2)+floor((5+(map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+100)/100%100*8)*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	ownpal:1
+		}
+	}
+	#;sys::ki_key_a
+if (root,command="a") && !(map(_iksys_trainingInputDisplay1)&2097152) {
+	explod{
+	id:112230100 +(ceil(map(_iksys_trainingInputDisplay2))%100);
+	anim:IND 230200;
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.28*$screen1,$f*0.28*$screen1;
+	pos:$screen2*(teamside=2)+floor((5+(map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+100)/100%100*8)*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	ownpal:1
+		}
+	}
+	#;sys::ki_key_b
+if (root,command="b") && !(map(_iksys_trainingInputDisplay1)&4194304) {
+	explod{
+	id:112230100 +(ceil(map(_iksys_trainingInputDisplay2))%100);
+	anim:IND 230201;
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.28*$screen1,$f*0.28*$screen1;
+	pos:$screen2*(teamside=2)+floor((5+(map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+100)/100%100*8)*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	ownpal:1
+		}
+	}
+	#;sys::ki_key_c
+if (root,command="c") && !(map(_iksys_trainingInputDisplay1)&8388608) {
+	explod{
+	id:112230100 +(ceil(map(_iksys_trainingInputDisplay2))%100);
+	anim:IND 230202;
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	scale:$f*0.28*$screen1,$f*0.28*$screen1;
+	pos:$screen2*(teamside=2)+floor((5+(map(_iksys_trainingInputDisplay2):=ceil(map(_iksys_trainingInputDisplay2))+100)/100%100*8)*$screen1)*ifelse(teamside=1,1,-1) , floor((50+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	ownpal:1
+		}
+	}
+	#;--- Curent_Pos_Y_UnderLine
+if numexplod(112230100+(ceil(map(_iksys_trainingInputDisplay2))%100)) && ceil(map(_iksys_trainingInputDisplay2))>9999 {
+	explod{
+	id:112230000+(ceil(map(_iksys_trainingInputDisplay2))%100);
+	anim:IND 200111+(teamside);
+	ontop:1;
+	postype:left;
+	bindtime:-1;
+	ignorehitpause:1;
+	supermovetime:-1;
+	pausemovetime:-1;
+	pos:$screen2*(teamside=2), floor((56+(ceil(map(_iksys_trainingInputDisplay2))%100)*8)*$screen1);
+	scale:ifelse(teamside=1,3,-3)*$f*$screen1,1*$f*$screen1;
+	sprpriority:-1;
+	removetime:1;
+	ownpal:1
+		}
+	}
+##---
+
+##;;--- ---
+#;sys::ki_icon_index/pos_reset
+##; Pos_Y_ReSet
+if (ceil(map(_iksys_trainingInputDisplay2))%100>12) || (ceil(map(_iksys_trainingInputDisplay2)) && !(numexplod(112230100)||numexplod(112230101)||numexplod(112230102))) { map(_iksys_trainingInputDisplay2):=0;}
+##; Pos_X_ReSet / Timer_Count_Down
+if (ceil(map(_iksys_trainingInputDisplay2))>99) { map(_iksys_trainingInputDisplay2):= (ceil(map(_iksys_trainingInputDisplay2))%100) +ceil(map(_iksys_trainingInputDisplay2))/10000*10000 -(ceil(map(_iksys_trainingInputDisplay2))>9999)*10000;}
+#;sys::ki_icon_index_cls
+if numexplod(112230101 +(ceil(map(_iksys_trainingInputDisplay2))%100)) {removeexplod{id:112230101 +(ceil(map(_iksys_trainingInputDisplay2))%100)}}
+
+#;==========================
+#;==========================
+#;; Key Pressed Switch / ボタン開閉
+#;; v08: bit flag (15th-24th,26th)
+#;;---
+#;sys::ki_switch00
+#;;---
+if (map(_iksys_trainingInputDisplay1)&16384) && (root,command!="holdfwd") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^16384); }
+if (root,command="holdfwd") && !(map(_iksys_trainingInputDisplay1)&16384) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|16384); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&32768) && (root,command!="holdback") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^32768); }
+if (root,command="holdback") && !(map(_iksys_trainingInputDisplay1)&32768) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|32768); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&65536) && (root,command!="holdup") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^65536); }
+if (root,command="holdup") && !(map(_iksys_trainingInputDisplay1)&65536) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|65536); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&131072) && (root,command!="holddown") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^131072); }
+if (root,command="holddown") && !(map(_iksys_trainingInputDisplay1)&131072) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|131072); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&262144) && (root,command!="x") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^262144); }
+if (root,command="x") && !(map(_iksys_trainingInputDisplay1)&262144) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|262144); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&524288) && (root,command!="y") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^524288); }
+if (root,command="y") && !(map(_iksys_trainingInputDisplay1)&524288) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|524288); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&1048576) && (root,command!="z") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^1048576); }
+if (root,command="z") && !(map(_iksys_trainingInputDisplay1)&1048576) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|1048576); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&2097152) && (root,command!="a") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^2097152); }
+if (root,command="a") && !(map(_iksys_trainingInputDisplay1)&2097152) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|2097152); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&4194304) && (root,command!="b") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^4194304); }
+if (root,command="b") && !(map(_iksys_trainingInputDisplay1)&4194304) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|4194304); }
+#;;---
+if (map(_iksys_trainingInputDisplay1)&8388608) && (root,command!="c") {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^8388608); }
+if (root,command="c") && !(map(_iksys_trainingInputDisplay1)&8388608) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)|8388608); }
+##;;---
+##;;--- display flag
+if (map(_iksys_trainingInputDisplay1)&33554432) {map(_iksys_trainingInputDisplay1):=(map(_iksys_trainingInputDisplay1)^33554432); }
+
+#===============================================================================
+# Global states (not halted by Pause/SuperPause, no helper limitations)
+#===============================================================================
+[StateDef -4]
+
+	# Spawns the input display helper 
+ignorehitpause if gamemode = "training" && !ishelper && !numhelper(11290900) && teamleader {
+	helper{
+		id:11290900;
+		name:"Input Display Helper";
+		stateno:11290900;
+		helpertype:normal;
+		size.air.front:1911115; ##; <<-version
+		size.height:0; ## 1;; <<-powerbar off mode
+		supermovetime:88888;
+		pausemovetime:88888;
+		pos:0,88888;
+		ownpal:1 
+		}
+	}

@@ -1,0 +1,10 @@
+﻿; This is a CommonFx file for ikemen. 
+; It's meant to handle some system fx and sfx (dizzy, guardbreak) outside of the default fightfx and common.snd to ensure backwards compatibility with preexisting mugen hitsparks.
+; You can disable this file from fight.def
+[Info]
+prefix = IND; This prefix is to used instead of "F" when calling animations or sounds from this file.
+localcoord = 200,150 ;240,180
+
+[Files]
+sff = inputdisplay.sff; Complementary to fightfx.sff
+air = inputdisplay.air; Complementary to fighfx.air
