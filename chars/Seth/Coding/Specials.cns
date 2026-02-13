@@ -752,7 +752,7 @@ trigger1 = anim = 1101
 movetype = I
 
 
-;Spin Kicks=
+;Spin Kicks
 [Statedef 1200]
 type = S
 movetype = A
