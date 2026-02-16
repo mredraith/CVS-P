@@ -74,8 +74,8 @@ FloatPersistIndex = 40 ;reset to 0 between rounds or matches. There are 60 int v
 
 
 [Size]
-xscale = 1 ;Horizontal scaling factor.
-yscale = 1 ;Vertical scaling factor.
+xscale = 1.1 ;Horizontal scaling factor.
+yscale = 1.1 ;Vertical scaling factor.
 ground.back = 24 ;Player width (back, ground)
 ground.front = 24 ;Player width (front, ground)
 air.back = 15 ;Player width (back, air)

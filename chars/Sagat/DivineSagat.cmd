@@ -1356,3 +1356,458 @@ triggerall = StateNo != [200,699]
 trigger1 = ctrl || (StateNo = [100,101])
 trigger2 = var(5)
 
+;===============================================================================
+;===========================<SAGAT A.I NORMAL ATTACKS>==========================
+;===============================================================================
+
+[State -1, Standing Light Punch]
+type = ChangeState
+value = 200
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,63]) && (P2Dist y = [-87,0]) && P2StateType != C && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 3) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Standing Light Kick]
+type = ChangeState
+value = 230
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,72]) && (P2Dist y = [-23,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 2) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Crouching Light Punch]
+type = ChangeState
+value = 400
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,61]) && (P2Dist y = [-54,0]) && P2StateType != A && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 2) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Crouching Light Kick]
+type = ChangeState
+value = 430
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,90]) && (P2Dist y = [-27,0]) && P2StateType != A && P2StateType != L
+trigger1 = (ctrl || (StateNo = [100, 101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200, 499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 3) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Jumping Light Punch]
+type = ChangeState
+value = 600
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,41]) && (P2Dist y = [-56,28]) && P2StateType = S
+trigger1 = ctrl
+trigger1 = vel y > 0 && Random < (100 * (AIlevel ** 2 / 64.0))
+
+[State -1, Jumping Light Kick]
+type = ChangeState
+value = 630
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,32]) && (P2Dist y = [-117,40]) && P2StateType != L
+trigger1 = ctrl
+trigger1 = vel y > 0 && Random < (ifElse(P2Dist x < 0, 250, 50) * (AILevel ** 2 / 64.0))
+
+[State -1, Standing Medium Punch]
+type = ChangeState
+value = 210
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,80]) && (P2Dist y = [-129,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 3) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Standing Medium Kick]
+type = ChangeState
+value = 240
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,60]) && (P2Dist y = [-115,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 3) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Crouching Medium Punch]
+type = ChangeState
+value = 410
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,70]) && (P2Dist y = [-52,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 3) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Crouching Medium Kick]
+type = ChangeState
+value = 440
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,111]) && (P2Dist y = [-33,0]) && P2StateType != A && P2StateType != L
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 3) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Jumping Medium Punch]
+type = ChangeState
+value = 610
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,42]) && (P2Dist y = [-80,50]) && P2StateType = S
+trigger1 = ctrl
+trigger1 = vel y > 0 && Random < (100 * (AILevel ** 2 / 64.0))
+
+[State -1, Jumping Medium Kick]
+type = ChangeState
+value = 640
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,79]) && (P2Dist y = [-60,40]) && P2StateType = A
+trigger1 = ctrl
+trigger1 = vel y <= 0 && Random < (100 * (AILevel ** 2 / 64.0))
+
+[State -1, Standing Far/Close Heavy Punch]
+type = ChangeState
+value = 220 + (Abs(P2BodyDist x) <= 25) * 5
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,101]) && (P2Dist y = [-111,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 3) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Standing Heavy Kick]
+type = ChangeState
+value = 250
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,146]) && (P2Dist y = [-111,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 4) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Crouching Heavy Punch]
+type = ChangeState
+value = 420
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && Statetype != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,50]) && (P2Dist y = [-132,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 4) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Tiger Thrust (Canceled)]
+type = ChangeState
+value = 249
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,125]) && (P2Dist y = [-80,0]) && P2StateType != C && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = var(5) && Random < (50 * (AILevel ** 2 / 64.0))
+trigger1 = (EnemyNear, GetHitVar(HitTime) >= 8)
+
+[State -1, Tiger Thrust]
+type = ChangeState
+value = 248
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,125]) && (P2Dist y = [-80,0]) && P2StateType != L
+triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+
+[State -1, Crouching Heavy Kick]
+type = ChangeState
+value = 450
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,97]) && (P2Dist y = [-33,0]) && P2StateType != A && P2StateType != L
+triggerAll = (P2StateType = S || (P2StateType = C && P2MoveType = H))
+trigger1 = (ctrl || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (StateNo = [200,499]) && !AnimTime && ctrl
+trigger2 = MoveHit && (EnemyNear, GetHitVar(HitTime) >= 6) && Random < (250 * (AILevel ** 2 / 64.0))
+
+[State -1, Jumping Heavy Punch]
+type = ChangeState
+value = 620
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,45]) && (P2Dist y = [-64,50]) && P2StateType = S
+trigger1 = ctrl
+trigger1 = vel y > 0 && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(4) && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, Jumping Heavy Kick]
+type = ChangeState
+value = 650
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = (P2BodyDist x = [0,92]) && (P2Dist y = [-116,50]) && P2StateType = S
+trigger1 = ctrl && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(4) && Random < (50 * (AILevel ** 2 / 64.0))
+
+;===============================================================================
+;===========================<SAGAT A.I SPECIAL MOVES>===========================
+;===============================================================================
+
+[State -1, Tiger Knee]
+type = ChangeState
+value = ifElse(Power >= 500 && var(20) <= 60 && Random < 133, 1330, 1300)
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2StateType != L && (P2Dist y = [-80,32])
+triggerAll = ((P2BodyDist x = [-70,70]) && P2StateType != A) || ((P2BodyDist x = [-80,80]) && P2StateType = A)
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = var(6) && MoveContact && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+
+[State -1, Tiger Uppercut]
+type = ChangeState
+value = ifElse(Power >= 500 && var(20) <= 60 && Random < 133, 1230, 1200)
+triggerAll = AILevel && NumEnemy 
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2StateType != L && (P2Dist y = [-80,32])
+triggerAll = ((P2BodyDist x = [-70,70]) && P2StateType != A) || ((P2BodyDist x = [-80,80]) && P2StateType = A)
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = var(6) && MoveHit && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, Low Tiger Shot]
+type = ChangeState
+value = ifElse(Power >= 500 && var(20) <= 60 && Random < 133, 1130, 1100)
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(39)
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2BodyDist x >= 25 && P2Dist y >= -120 && EnemyNear, vel y >= 0
+triggerAll = P2StateType != A || EnemyNear, vel x < 0
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (ctrl || StateNo = 52 || (StateNo = [100,101]))
+trigger2 = EnemyNear, StateNo = 195 && Random < (50 * (AILevel ** 2 / 64.0))
+trigger3 = var(6) && MoveContact && Random < (100 * (AILevel ** 2 / 64.0))
+trigger3 = EnemyNear, GetHitVar(HitTime) >= 4
+
+[State -1, High Tiger Shot]
+type = ChangeState
+value = ifElse(Power >= 500 && var(20) <= 60 && Random < 133, 1030, 1000)
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(39)
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2BodyDist x >= 25 && P2Dist y >= -120 && EnemyNear, vel y >= 0
+triggerAll = P2StateType != A || EnemyNear, vel x < 0
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (25 * (AILevel ** 2 / 64.0))
+trigger2 = (ctrl || StateNo = 52 || (StateNo = [100,101]))
+trigger2 = EnemyNear, StateNo = 195 && Random < (50 * (AILevel ** 2 / 64.0))
+trigger3 = var(6) && MoveContact && Random < (100 * (AILevel ** 2 / 64.0))
+trigger3 = EnemyNear, GetHitVar(HitTime) >= 4
+
+[State -1, Low Tiger Bluff]
+type = ChangeState
+value = 199
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(39)
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2BodyDist x >= 25 && P2Dist y >= -120 && EnemyNear, vel y >= 0
+triggerAll = P2StateType != A || EnemyNear, vel x < 0
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (15 * (AILevel ** 2 / 64.0))
+trigger2 = (ctrl || StateNo = 52 || (StateNo = [100,101]))
+trigger2 = EnemyNear, StateNo = 195 && Random < (50 * (AILevel ** 2 / 64.0))
+trigger3 = var(6) && MoveContact && Random < (100 * (AILevel ** 2 / 64.0))
+trigger3 = EnemyNear, GetHitVar(HitTime) >= 4
+
+[State -1, High Tiger Bluff]
+type = ChangeState
+value = 198
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = !var(39)
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2BodyDist x >= 25 && P2Dist y >= -120 && EnemyNear, vel y >= 0
+triggerAll = P2StateType != A || EnemyNear, vel x < 0
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (15 * (AILevel ** 2 / 64.0))
+trigger2 = (ctrl || StateNo = 52 || (StateNo = [100,101]))
+trigger2 = EnemyNear, StateNo = 195 && Random < (50 * (AILevel ** 2 / 64.0))
+trigger3 = var(6) && MoveContact && Random < (100 * (AILevel ** 2 / 64.0))
+trigger3 = EnemyNear, GetHitVar(HitTime) >= 4
+
+;===============================================================================
+;===========================<SAGAT A.I SUPER MOVES>=============================
+;===============================================================================
+
+[State -1, Tiger Strom]
+type = ChangeState
+value = 3400
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 3000 && !var(20)
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = (Enemynear, StateNo != [120,155]) || EnemyNear, StateType = A
+triggerAll = EnemyNear, StateType != L
+triggerAll = (P2BodyDist x = [0,144]) && (P2Dist y = [-58,0])
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) && MoveHit && Random < (50 * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, MAX Tiger Raid]
+type = ChangeState
+value = 3350
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 2000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
+triggerAll = P2StateType != A && P2StateType != L
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) || var(8) && MoveContact && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, MAX Tiger Genocide]
+type = ChangeState
+value = 3250
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 2000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
+triggerAll = P2StateType != A && P2StateType != L
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) || var(8) && MoveHit && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, MAX Low Tiger Cannon]
+type = ChangeState
+value = 3150
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 2000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
+triggerAll = P2StateType != A && P2StateType != L
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) || var(8) && MoveContact && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, MAX High Tiger Cannon]
+type = ChangeState
+value = 3050
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 2000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [0,85]) && (P2Dist y = [-32,95])
+triggerAll = P2StateType != A && P2StateType != L
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) || var(8) && MoveContact && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, Tiger Raid]
+type = ChangeState
+value = 3300
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 1000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
+triggerAll = P2StateType != A && P2StateType != L && P2MoveType != A
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) && MoveContact && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, Tiger Genocide]
+type = ChangeState
+value = 3200
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 1000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
+triggerAll = P2StateType != A && P2StateType != L && P2MoveType != A
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) && MoveHit && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, Low Tiger Cannon]
+type = ChangeState
+value = 3100
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 1000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
+triggerAll = P2StateType != A && P2StateType != L && P2MoveType != A
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) && MoveContact && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, High Tiger Cannon]
+type = ChangeState
+value = 3000
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = Power >= 1000 && var(20) <= 60
+triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
+triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
+triggerAll = (P2BodyDist x = [0,85]) && (P2Dist y = [-32,95])
+triggerAll = P2StateType != A && P2StateType != L && P2MoveType != A
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(7) && MoveContact && Random < (ifElse((var(20) = [1,30]), 200, 50) * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, GetHitVar(HitTime) >= 4
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
