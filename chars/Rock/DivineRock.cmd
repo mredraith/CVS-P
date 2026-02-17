@@ -1,4 +1,3 @@
-;#ADD004BASIC PIEs#
 ;-| Button Remapping |-----------------------------------------------------
 [Remap]
 x = x
@@ -17,6 +16,133 @@ command.time = 15
 ; maximum 30.
 command.buffer.time = 1
  
+;-| Single Button |---------------------------------------------------------
+[Command]
+name = "a"
+command = a
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "b"
+command = b
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "c"
+command = c
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "x"
+command = x
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "y"
+command = y
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "z"
+command = z
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "start"
+command = s
+time = 1
+buffer.time = 1
+
+;-| Hold Dir |--------------------------------------------------------------
+[Command]
+name = "holdfwd";Required (do not remove)
+command = /$F
+time = 1
+
+[Command]
+name = "holdback";Required (do not remove)
+command = /$B
+time = 1
+
+[Command]
+name = "holdup" ;Required (do not remove)
+command = /$U
+time = 1
+
+[Command]
+name = "holddown";Required (do not remove)
+command = /$D
+time = 1
+
+[Command]
+name = "holddownfwd"
+command = /$DF
+time = 1
+
+[Command]
+name = "holddownback"
+command = /$DB
+time = 1
+
+[Command]
+name = "holdupback"
+command = /$UB
+time = 1
+
+[Command]
+name = "holdupfwd"
+command = /$UF
+time = 1
+ 
+;-| Hold Button |-----------------------------------------------------------
+[Command]
+name = "hold_a"
+command = /a
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "hold_b"
+command = /b
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "hold_c"
+command = /c
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "hold_x"
+command = /x
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "hold_y"
+command = /y
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "hold_z"
+command = /z
+time = 1
+buffer.time = 1
+ 
+[Command]
+name = "hold_start"
+command = /s
+time = 1
+buffer.time = 1
+
 ;-| Super Motions |--------------------------------------------------------
 [Command]
 name = "HCBF"
@@ -31,52 +157,52 @@ time = 24;32
 [Command]
 name = "QCFx2"
 command = ~D, DF, F, D, DF
-time = 24
+time = 21;24
 
 [Command]
 name = "QCBx2"
 command = ~D, DB, B, D, DB
-time = 24
+time = 21;24
 ;-| Special Motions |--------------------------------------------------------
 [Command]
 name = "360"
 command = ~$B, $D, $F, $U
-time = 32
+time = 28
 
 [Command]
 name = "360"
 command = ~$D, $F, $U, $B
-time = 32
+time = 28
 
 [Command]
 name = "360"
 command = ~$F, $U, $B, $D
-time = 32
+time = 28
 
 [Command]
 name = "360"
 command = ~$U, $B, $D, $F
-time = 32
+time = 28
 
 [Command]
 name = "360"
 command = ~$F, $D, $B, $U
-time = 32
+time = 28
 
 [Command]
 name = "360"
 command = ~$D, $B, $U, $F
-time = 32
+time = 28
 
 [Command]
 name = "360"
 command = ~$B, $U, $F, $D
-time = 32
+time = 28
 
 [Command]
 name = "360"
 command = ~$U, $F, $D, $B
-time = 32
+time = 28
 
 [Command]
 name = "CDU"
@@ -86,17 +212,17 @@ time = 15
 [Command]
 name = "QCF"
 command = ~D, DF, F
-time = 15
+time = 15;12
 
 [Command]
 name = "QCB"
 command = ~D, DB, B
-time = 15
+time = 15;12
 
 [Command]
 name = "QCBD"
-command = F
-time = 8
+command = ~B, DB, D
+time = 15
 
 [Command]
 name = "QCFD"
@@ -241,49 +367,6 @@ name = "up_c"
 command = /$U,c
 time = 1
  
-;-| Single Button |---------------------------------------------------------
-[Command]
-name = "a"
-command = a
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "b"
-command = b
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "c"
-command = c
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "x"
-command = x
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "y"
-command = y
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "z"
-command = z
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "start"
-command = s
-time = 1
-buffer.time = 1
- 
 ;-| Single Dir |------------------------------------------------------------
 [Command]
 name = "fwd" ;Required (do not remove)
@@ -324,110 +407,6 @@ time = 1
 name = "upfwd"
 command = $UF
 time = 1
-
-;-| Hold Dir |--------------------------------------------------------------
-[Command]
-name = "holdfwd";Required (do not remove)
-command = /$F
-time = 1
-
-[Command]
-name = "holdback";Required (do not remove)
-command = /$B
-time = 1
-
-[Command]
-name = "holdup" ;Required (do not remove)
-command = /$U
-time = 1
-
-[Command]
-name = "holddown";Required (do not remove)
-command = /$D
-time = 1
-
-[Command]
-name = "holdfwd" ;Required (do not remove)
-command = /$F
-time = 1
-
-[Command]
-name = "holddownfwd"
-command = /$DF
-time = 1
-
-[Command]
-name = "holddown" ;Required (do not remove)
-command = /$D
-time = 1
-
-[Command]
-name = "holddownback"
-command = /$DB
-time = 1
-
-[Command]
-name = "holdback" ;Required (do not remove)
-command = /$B
-time = 1
-
-[Command]
-name = "holdupback"
-command = /$UB
-time = 1
-
-[Command]
-name = "holdup" ;Required (do not remove)
-command = /$U
-time = 1
-
-[Command]
-name = "holdupfwd"
-command = /$UF
-time = 1
- 
-;-| Hold Button |-----------------------------------------------------------
-[Command]
-name = "hold_a"
-command = /a
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "hold_b"
-command = /b
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "hold_c"
-command = /c
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "hold_x"
-command = /x
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "hold_y"
-command = /y
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "hold_z"
-command = /z
-time = 1
-buffer.time = 1
- 
-[Command]
-name = "hold_start"
-command = /s
-time = 1
-buffer.time = 1
 
 ;---------------------------------------------------------------------------
 ;Release Direction
@@ -514,37 +493,144 @@ time = 15
 ;To EVERY Changestate that uses the buffer. You know why!
 ;Also be sure to adjust the "Tick Fix" on a char by char basis.
 [Statedef -1]
+;---AI stuff-------
+[State -1, Tick Fix]
+type = assertspecial
+trigger1 = AILevel && !ishelper
+flag = nowalk
+[State 0, CtrlSet]
+type = CtrlSet 
+triggerall = AILevel>0 ; && prevstateno = 5120
+trigger1 = roundstate = 2 && !ctrl && ((stateno=[300,301])||stateno=[0,19]) && (enemynear,ctrl||enemynear,movetype!=I||life!=lifemax)
+value = 1
+[State -1, Power Charge]
+type = ChangeState
+value = 730
+triggerall = AIlevel>0&&!ishelper
+Triggerall =   random <= (349* (AIlevel ** 2 / 64.0))
+trigger1 = (p2statetype=L) && p2bodydist x >100 ||enemy,hitfall && (enemynear,stateno!=[5101,5120]) && (var(15)>0&&power<1000 || var(16))
+trigger1 =  !ishelper&&!helper(10004),var(30) && !helper(10004),var(18)
+trigger1 = RoundState = 2 && StateType != A
+trigger1 =  power < PowerMax && !var(20)
+trigger1 = ctrl || (StateNo = [100,101])||(stateno=[12,20])
+[state -1, AI_gdF]
+type = ChangeState
 
-;//==========================
-;// add004-1-sctrls-start
-;//==========================
-;--- partner_standby
-[state 0]
-	type=selfstate
-	value=190190
-	ctrl=0
-	trigger1=ctrl && numpartner && !ishelper && roundstate=2 && pos y=0
-	trigger1=(sysfvar(4)>0) && (sysfvar(0)>0) && playeridexist(floor(sysfvar(0)))
-	trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(22)=4)
-	ignorehitpause=1
-;##Add.List01##
-;//==========================
-;// add004-1-sctrls-end
-;//==========================
+value = 750
+triggerall = P2Life > 0&&!ishelper
+triggerall = random <= (cond(life<ceil(lifemax*.45),399,199)*(AILevel**2/64.0)) 
+triggerall = p2bodydist x <60
+triggerall = roundstate = 2
+triggerall = !IsHelper && p2bodydist y >-60
+triggerall = AIlevel >0
+triggerall = statetype != A
+trigger1 = StateNo = 150 || StateNo = 152
+trigger1 = RoundState = 2 && StateType != A
+trigger1 = power >= 1000 && !var(20)
+;-----------------------------------------------------------------------
+[State 0, ChangeState]
+type = ChangeState
+triggerall = (helper(10004),var(20)) && helper(10004),var(18)
+trigger1 = AILevel && roundstate=2&&!ishelper && statetype!=A 
+trigger1 =(anim=5120 && animtime=0||(ctrl || stateno=20 || (stateno=[100,101])||stateno=140|| gethitvar(guarded)=1&& gethitvar(hittime)=0))
+value =helper(10004),var(18)
+ctrl = 0 
 
 
 
 
+
+;blocking
+[State 0, ChangeState]
+type = ChangeState
+triggerall = AILevel && roundstate=2&&!ishelper
+triggerall = (enemynear,MoveType = A&& enemynear,hitdefattr=SCA,AA) && InGuardDist && Random <= (600 * (AILevel ** 2 / 64.0)) && p2bodydist  x <160 || enemynear,NumProj > 0 && Random < (440 * (AILevel ** 2 / 64.0))
+triggerall =p2bodydist x > -20 && enemynear,StateType != L
+trigger1= (Ctrl || StateNo = 20|| time>10&& StateNo = [100,101]) 
+value =120
+ctrl = 0
+
+[State 0, ChangeState]
+type = ChangeState
+triggerall = helper(10004),var(18)>0 
+trigger1 = AILevel && roundstate=2&&!ishelper && statetype!=A 
+trigger1 =(Ctrl ||stateno=5120&&animtime=0|| StateNo = 20||stateno=242&& animelemtime(1)>0 && animelemtime(7)<0 && (helper(10004),var(18)=1200||helper(10004),var(18)=[1500,1530]) || StateNo = [100,101])||(stateno=700 && Time = [15,18]) || (movecontact && AILevel<6 || movehit) && (!enemynear,gethitvar(isbound)||helper(10004),var(5))&& (helper(10004),var(10)||helper(10004),var(11)||helper(10004),var(12)||var(6) )
+value =helper(10004),var(18)
+ctrl = 0 
+
+
+
+[State 0, ChangeState]
+type = ChangeState
+triggerall = helper(10004),var(19)>0
+
+trigger1 = AILevel && roundstate=2&&!ishelper && statetype=A 
+trigger1 =(Ctrl||var(6)||var(2) ) 
+value =helper(10004),var(19)
+ctrl = 0 
+
+
+[State 0, ChangeState]
+type = ChangeState
+
+trigger1 = AILevel && roundstate=2&&!ishelper && Random <= (999 * (AILevel ** 2 / 64.0))&& statetype!=A 
+trigger1 = (ctrl || stateno=20|| stateno=100&&cond(AIlevel>6,1,p2bodydist x >160))&& helper(10004),var(30)
+value =40
+ctrl = 0
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = stateno=40 &&time=2 && AIlevel
+sysvar(1)=helper(10004),var(31)
+
+[State 0, ChangeState]
+type = ChangeState
+triggerall =  AILevel && roundstate=2&&!ishelper
+triggerall = statetype!=A && (ctrl||stateno=20) && stateno!=100 && random <= (496 * (AIlevel ** 2 / 64.0))
+trigger1 = (enemynear,movetype!=A||backedgebodydist <40)  && (p2bodydist x>=cond(enemynear,hitfall&&p2bodydist y <-50,80,160))
+trigger2 = enemynear,stateno=5040 && p2bodydist x >-20 && p2bodydist y <-5 && facing!=enemynear,facing
+value =100
+ctrl = 0
+
+
+
+[State 0, ChangeState]
+type = ChangeState
+trigger1 = AILevel && roundstate=2&&!ishelper && (stateno!=[20,105])
+trigger1 =statetype=S && ctrl && stateno!=100 && random < 249 &&  (enemynear,movetype!=A||backedgebodydist <40)  && (helper(10004),fvar(1)=[0,140]) && helper(10004),var(24)!=0
+value =20
+ctrl = 1
+
+[State 0, ChangeState]
+type = ChangeState
+triggerall= AILevel && !ishelper
+trigger1 = stateno=20 && helper(10004),var(24)=0
+value =0
+ctrl = 1
+
+[State 0, ChangeState]
+type = ChangeState
+triggerall= AILevel && !ishelper && time>10 && stateno=100
+trigger1 =  (p2bodydist x <70-30*(!helper(10004),var(14)) && enemynear,stateno!=5040||p2bodydist x <-65 ) 
+value =101
+ctrl = 1
+
+[State 0, ChangeState]
+type = ChangeState
+triggerall= AILevel && !ishelper && statetype!=A && (ctrl||stateno=20||stateno=101) && random <= (496 * (AIlevel ** 2 / 64.0))&&  backedgebodydist >40 
+trigger1 = (enemynear,movetype = A && p2bodydist x<55 || (p2bodydist x<40 && enemynear,anim=[5100,5120]) && enemynear,backedgebodydist >60)
+value =105
+;----------------------------------
 [State -1, Tick Fix]
 type = CtrlSet
+triggerall = RoundState = 2 && !AIlevel
 triggerall = !ctrl
-trigger1 = (StateNo = 52 || StateNo = 101 || StateNo = 5120) && !AnimTime
-trigger2 = (StateNo = [200,299]) && !AnimTime
-trigger3 = (StateNo = [400,499]) && !AnimTime
-trigger4 = (StateNo = [760,762]) && !AnimTime
-trigger5 = StateNo = 810 && !AnimTime
-trigger6 = (StateNo = 5001 || StateNo = 5011 || StateNo = 151 || StateNo = 153) && HitOver
-trigger7 = (StateNo = [700,715]) && !AnimTime
+triggerall = movetype!=H
+trigger1 = (stateno = 52 || stateno = 101 || stateno = 5120) && !AnimTime
+trigger2 = (stateno = [200,299]) && !AnimTime
+trigger3 = (stateno = [400,499]) && !AnimTime
+trigger4 = (stateno = [700,715]) && !AnimTime
+trigger5 = (stateno = [760,762]) && !AnimTime
 value = 1
 
 [State -1, CtrlSet For Helpers];special thanks to 20S
@@ -583,7 +669,7 @@ var(18) = 1
 [State -1, Neo Deadly Rave]
 type = ChangeState
 value = 3200 
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(41)
 triggerall = (helper(10371), var(3)) && (helper(10371), var(4)) || (helper(10371), var(4)) && (helper(10371), var(5)) || (helper(10371), var(3)) && (helper(10371), var(5))
@@ -595,7 +681,7 @@ trigger2 = var(6)
 [State -1, MAX Shine Knuckle]
 type = ChangeState
 value = 3150
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(40)
 triggerall = (helper(10371), var(3)) && (helper(10371), var(4)) || (helper(10371), var(4)) && (helper(10371), var(5)) || (helper(10371), var(3)) && (helper(10371), var(5))
@@ -607,7 +693,7 @@ trigger2 = var(6) || var(7)
 [State -1, MAX Raising Storm]
 type = ChangeState
 value = 3050
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(40)
 triggerall = (helper(10371), var(0)) && (helper(10371), var(1)) || (helper(10371), var(1)) && (helper(10371), var(2)) || (helper(10371), var(0)) && (helper(10371), var(2))
@@ -621,7 +707,7 @@ trigger2 = Helper(3055),StateNo = 3057 || Helper(3055),StateNo = 3008
 [State -1, Shine Knuckle]
 type = ChangeState
 value = 3100
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(40)
 triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
@@ -633,7 +719,7 @@ trigger2 = var(6)
 [State -1, Raising Storm]
 type = ChangeState
 value = 3000
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(40)
 triggerall = (helper(10371), var(0)) || (helper(10371), var(1)) || (helper(10371), var(2)) || (helper(10371), var(7)) || (helper(10371), var(8)) || (helper(10371), var(9))
@@ -647,7 +733,7 @@ trigger2 = Helper(3005),StateNo = [3007,3008]
 [State -1, EX Shinku Nage]
 type = ChangeState
 value = 1530
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(24)
 triggerall = (helper(10371), var(0)) && (helper(10371), var(1)) || (helper(10371), var(1)) && (helper(10371), var(2)) || (helper(10371), var(0)) && (helper(10371), var(2))
@@ -659,7 +745,7 @@ trigger2 = var(5)
 [State -1, Shinku Nage]
 type = ChangeState
 value = 1500
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(24)
 triggerall = (helper(10371), var(0)) || (helper(10371), var(1)) || (helper(10371), var(2)) || (helper(10371), var(7)) || (helper(10371), var(8)) || (helper(10371), var(9))
@@ -670,7 +756,7 @@ trigger2 = var(5)
 [State -1, EX Rising Tackle]
 type = ChangeState
 value = 1430
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(23)
 triggerall = (helper(10371), var(0)) && (helper(10371), var(1)) || (helper(10371), var(1)) && (helper(10371), var(2)) || (helper(10371), var(0)) && (helper(10371), var(2))
@@ -682,7 +768,7 @@ trigger2 = var(5)
 [State -1, EX Hard Edge]
 type = ChangeState
 value = 1130
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(22)
 triggerall = (helper(10371), var(0)) && (helper(10371), var(1)) || (helper(10371), var(1)) && (helper(10371), var(2)) || (helper(10371), var(0)) && (helper(10371), var(2))
@@ -691,22 +777,10 @@ triggerall = ifelse(var(20) <= 0, power >= 500, power >= 0)
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(5)
 
-[State -1, EX Rage Run]
-type = ChangeState
-value = 1330
-triggerall = !IsHelper(10371) ;Always add this as well!
-triggerall = numhelper(10371)
-triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3)) && (helper(10371), var(4)) || (helper(10371), var(4)) && (helper(10371), var(5)) || (helper(10371), var(3)) && (helper(10371), var(5))
-triggerall = RoundState = 2 && StateType != A
-triggerall = ifelse(var(20) <= 0, power >= 500, power >= 0)
-trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(5)
-
 [State -1, EX Reppuken]
 type = ChangeState
 value = 1030
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(21)
 triggerall = (helper(10371), var(0)) && (helper(10371), var(1)) || (helper(10371), var(1)) && (helper(10371), var(2)) || (helper(10371), var(0)) && (helper(10371), var(2)) 
@@ -720,9 +794,21 @@ trigger2 = Helper(1010),StateNo = [1012,1013]
 [State -1, EX Crack Counter]
 type = ChangeState
 value = 1230
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(21)
+triggerall = (helper(10371), var(3)) && (helper(10371), var(4)) || (helper(10371), var(4)) && (helper(10371), var(5)) || (helper(10371), var(3)) && (helper(10371), var(5))
+triggerall = RoundState = 2 && StateType != A
+triggerall = ifelse(var(20) <= 0, power >= 500, power >= 0)
+trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
+trigger2 = var(5)
+
+[State -1, EX Rage Run]
+type = ChangeState
+value = 1330
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
+triggerall = numhelper(10371)
+triggerall = helper(10371), var(22)
 triggerall = (helper(10371), var(3)) && (helper(10371), var(4)) || (helper(10371), var(4)) && (helper(10371), var(5)) || (helper(10371), var(3)) && (helper(10371), var(5))
 triggerall = RoundState = 2 && StateType != A
 triggerall = ifelse(var(20) <= 0, power >= 500, power >= 0)
@@ -732,7 +818,7 @@ trigger2 = var(5)
 [State -1, Strong Rising Tackle]
 type = ChangeState
 value = 1420
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(23)
 triggerall = (helper(10371), var(2)) || (helper(10371), var(9))
@@ -743,7 +829,7 @@ trigger2 = var(5)
 [State -1, Medium Rising Tackle]
 type = ChangeState
 value = 1410
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(23)
 triggerall = (helper(10371), var(1)) || (helper(10371), var(8))
@@ -754,7 +840,7 @@ trigger2 = var(5)
 [State -1, Rising Tackle]
 type = ChangeState
 value = 1400
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(23)
 triggerall = (helper(10371), var(0)) || (helper(10371), var(7))
@@ -762,10 +848,32 @@ triggerall = RoundState = 2 && StateType != A
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(5)
 
+[State -1, Alpha Counter(Kick)]
+type = ChangeState
+value = 750
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
+triggerall = numhelper(10371)
+triggerall = helper(10371), var(20)
+triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
+trigger1 = StateNo = 150 || StateNo = 152
+trigger1 = RoundState = 2 && StateType != A
+trigger1 = power >= 1000 && !var(20)
+
+[State -1, Alpha Counter(Punch)]
+type = ChangeState
+value = 750
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
+triggerall = numhelper(10371)
+triggerall = helper(10371), var(20)
+triggerall = (helper(10371), var(0)) || (helper(10371), var(1)) || (helper(10371), var(2)) || (helper(10371), var(7)) || (helper(10371), var(8)) || (helper(10371), var(9))
+trigger1 = StateNo = 150 || StateNo = 152
+trigger1 = RoundState = 2 && StateType != A
+trigger1 = power >= 1000 && !var(20)
+
 [State -1, Strong Hard Edge]
 type = ChangeState
 value = 1120
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(22)
 triggerall = (helper(10371), var(2)) || (helper(10371), var(9))
@@ -776,7 +884,7 @@ trigger2 = var(5)
 [State -1, Medium Hard Edge]
 type = ChangeState
 value = 1110
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(22)
 triggerall = (helper(10371), var(1)) || (helper(10371), var(8))
@@ -787,7 +895,7 @@ trigger2 = var(5)
 [State -1, Light Hard Edge]
 type = ChangeState
 value = 1100
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(22)
 triggerall = (helper(10371), var(0)) || (helper(10371), var(7))
@@ -795,21 +903,10 @@ triggerall = RoundState = 2 && StateType != A
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(5)
 
-[State -1, Rage Run]
-type = ChangeState
-value = 1300
-triggerall = !IsHelper(10371) ;Always add this!
-triggerall = numhelper(10371)
-triggerall = helper(10371), var(22)
-triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
-triggerall = RoundState = 2 && StateType != A
-trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(5)
-
 [State -1, Double Reppuken]
 type = ChangeState
 value = 1002
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(21)
 triggerall = (helper(10371), var(2)) || (helper(10371), var(9)) 
@@ -822,7 +919,7 @@ trigger2 = Helper(1010),StateNo = [1012,1013]
 [State -1, Medium Reppuken]
 type = ChangeState
 value = 1001
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(21)
 triggerall = (helper(10371), var(1)) || (helper(10371), var(8)) 
@@ -835,7 +932,7 @@ trigger2 = Helper(1010),StateNo = [1012,1013]
 [State -1, Reppuken]
 type = ChangeState
 value = 1000
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(21)
 triggerall = (helper(10371), var(0)) || (helper(10371), var(7)) 
@@ -848,7 +945,7 @@ trigger2 = Helper(1010),StateNo = [1012,1013]
 [State -1, Crack Counter]
 type = ChangeState
 value = 1200
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(21)
 triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
@@ -856,32 +953,21 @@ triggerall = RoundState = 2 && StateType != A
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(5)
 
-[State -1, Alpha Counter(Kick)]
+[State -1, Rage Run]
 type = ChangeState
-value = 750
-triggerall = !IsHelper(10371) ;Always add this!
+value = 1300
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
-triggerall = helper(10371), var(20)
+triggerall = helper(10371), var(22)
 triggerall = (helper(10371), var(3)) || (helper(10371), var(4)) || (helper(10371), var(5)) || (helper(10371), var(10)) || (helper(10371), var(11)) || (helper(10371), var(12))
-trigger1 = StateNo = 150 || StateNo = 152
-trigger1 = RoundState = 2 && StateType != A
-trigger1 = power >= 1000 && !var(20)
-
-[State -1, Alpha Counter(Punch)]
-type = ChangeState
-value = 750
-triggerall = !IsHelper(10371) ;Always add this!
-triggerall = numhelper(10371)
-triggerall = helper(10371), var(20)
-triggerall = (helper(10371), var(0)) || (helper(10371), var(1)) || (helper(10371), var(2)) || (helper(10371), var(7)) || (helper(10371), var(8)) || (helper(10371), var(9))
-trigger1 = StateNo = 150 || StateNo = 152
-trigger1 = RoundState = 2 && StateType != A
-trigger1 = power >= 1000 && !var(20)
+triggerall = RoundState = 2 && StateType != A
+trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
+trigger2 = var(5)
 
 [State -1, Counter Movement]
 type = ChangeState
 value = 740
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(14);LP+LK detection
 triggerall = (helper(10371),command = "holdfwd") || (helper(10371),command = "holdback")
@@ -892,7 +978,7 @@ trigger1 = power >= 1000 && !var(20)
 [State -1, Throw(Kick)]
 type = ChangeState
 value = 800
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = (helper(10371), var(3) && helper(10371), var(4)) || (helper(10371), var(4) && helper(10371), var(5)) || (helper(10371), var(3) && helper(10371), var(5))
 trigger1 = (helper(10371),command = "holdfwd")|| (helper(10371),command = "holdback")
@@ -902,7 +988,7 @@ trigger1 = ctrl
 [State -1, Throw(Punch)]
 type = ChangeState
 value = 800
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = (helper(10371), var(0) && helper(10371), var(1)) || (helper(10371), var(1) && helper(10371), var(2)) || (helper(10371), var(0) && helper(10371), var(2))
 trigger1 = (helper(10371),command = "holdfwd")|| (helper(10371),command = "holdback")
@@ -912,7 +998,7 @@ trigger1 = ctrl
 [State -1, Roll Forward]
 type = ChangeState
 value = 710
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(14) ;LP+LK detection
 triggerall = RoundState = 2 && StateType != A
@@ -921,7 +1007,7 @@ trigger1 = (ctrl || (StateNo = [100,101])) && command = "holdfwd"
 [State -1, Roll Back]
 type = ChangeState
 value = 715
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(14) ;LP+LK detection
 triggerall = RoundState = 2 && StateType != A
@@ -931,7 +1017,7 @@ trigger1 = (ctrl || (StateNo = [100,101])) && command = "holdback"
 type = ChangeState
 value = 730
 trigger1 = command = "hold_b" && command = "hold_y"
-trigger1 = RoundState = 2 && StateType != A
+trigger1 = RoundState = 2 && StateType != A&& !AIlevel
 trigger1 = power < const(data.power) && power < PowerMax && !var(20)
 trigger1 = ctrl || (StateNo = [100,101])
 ;^I'm gonna have to adapt this to the buffering system(maybe?) 
@@ -940,7 +1026,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, MAX Mode]
 type = ChangeState
 value = 770
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(16) ;HP+HK detection
 triggerall = RoundState = 2 && StateType != A
@@ -950,7 +1036,7 @@ trigger1 = ctrl || (Stateno = [100,101])
 [State -1, Dodge]
 type = ChangeState
 value = 700
-triggerall = !IsHelper(10371) ;Always add this!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(14) ;LP+LK detection
 triggerall = RoundState = 2 && StateType != A
@@ -959,7 +1045,7 @@ trigger1 = (ctrl || (StateNo = [100,101]))
 [State -1, Ark Kick]
 type = Changestate
 value = 242
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(4) ; The buffered version of MK
 triggerall = command = "holdfwd"
@@ -986,7 +1072,7 @@ trigger1 = ctrl
 [State -1, Stand Light Punch]
 type = ChangeState
 value = 200 + (Abs(P2BodyDist X) <= 15) * 1
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(0) ; The buffered version of LP
 triggerall = (helper(10371),command != "holddown")
@@ -998,7 +1084,7 @@ trigger2= (StateNo = 200 || StateNo = 201 || StateNo = 400 || StateNo = 430) && 
 [State -1, Stand Medium Punch]
 type = ChangeState
 value = 210 + (Abs(P2BodyDist X) <= 15) * 1
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(1) ; The buffered version of MP
 triggerall = (helper(10371),command != "holddown")  
@@ -1008,7 +1094,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, Stand Strong Punch]
 type = ChangeState
 value = 220 + (Abs(P2BodyDist X) <= 18) * 1
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(2) ; The buffered version of HP
 triggerall = (helper(10371),command != "holddown") 
@@ -1018,7 +1104,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, Stand Light Kick]
 type = ChangeState
 value = 230 + (Abs(P2BodyDist X) <= 18) * 1
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(3) ; The buffered version of LK
 triggerall = (helper(10371),command != "holddown")
@@ -1028,7 +1114,7 @@ trigger1= ctrl || (stateno=[100,101])
 [State -1, Stand Medium Kick]
 type = ChangeState
 value = 240 + (Abs(P2BodyDist X) <= 18) * 1
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(4) ; The buffered version of MK
 triggerall = (helper(10371),command != "holddown")
@@ -1039,7 +1125,7 @@ trigger1= ctrl || (stateno=[100,101])
 [State -1, Standing Strong Kick]
 type = ChangeState
 value = 250 + (Abs(P2BodyDist X) <= 18) * 1
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(5) ; The buffered version of HK
 triggerall = (helper(10371),command != "holddown")
@@ -1049,7 +1135,7 @@ trigger1= ctrl || (stateno=[100,101])
 [State -1, Crouching Light Punch]
 type = ChangeState
 value = 400
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(0) ; The buffered version of LP
 triggerall = (helper(10371),command = "holddown")
@@ -1060,7 +1146,7 @@ trigger2= (StateNo = 200 || StateNo = 201 || StateNo = 400 || StateNo = 430) && 
 [State -1, Crouching Medium Punch]
 type = ChangeState
 value = 410
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(1) ; The buffered version of MP
 triggerall = (helper(10371),command = "holddown")
@@ -1070,7 +1156,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, Crouching Strong Punch]
 type = ChangeState
 value = 420
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(2) ; The buffered version of HP
 triggerall = (helper(10371),command = "holddown")
@@ -1080,7 +1166,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, Crouching Light Kick]
 type = ChangeState
 value = 430
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(3) ; The buffered version of LK
 triggerall = (helper(10371),command = "holddown")
@@ -1091,7 +1177,7 @@ trigger2= (StateNo = 200 || StateNo = 201 || StateNo = 400 || StateNo = 430) && 
 [State -1, Crouching Medium Kick]
 type = ChangeState
 value = 440
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(4) ; The buffered version of MK
 triggerall = (helper(10371),command = "holddown")
@@ -1101,7 +1187,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, Crouching Strong Kick]
 type = ChangeState
 value = 450
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(5) ; The buffered version of HK
 triggerall = (helper(10371),command = "holddown")
@@ -1111,7 +1197,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, Jump Light Punch]
 type = ChangeState
 value = 600
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(0) ; The buffered version of LP
 trigger1 = statetype = A
@@ -1120,7 +1206,7 @@ trigger1 = ctrl
 [State -1, Jump Med Punch]
 type = ChangeState
 value = 610
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(1) ; The buffered version of MP
 trigger1 = statetype = A
@@ -1129,7 +1215,7 @@ trigger1 = ctrl
 [State -1, Jump Strong Punch]
 type = ChangeState
 value = 620
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(2) ; The buffered version of HP
 trigger1 = statetype = A
@@ -1138,7 +1224,7 @@ trigger1 = ctrl
 [State -1, Jump Light Kick]
 type = ChangeState
 value = 630
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(3) ; The buffered version of LK
 trigger1 = statetype = A
@@ -1147,7 +1233,7 @@ trigger1 = ctrl
 [State -1, Jump Med Kick]
 type = ChangeState
 value = 640
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(4) ; The buffered version of MK
 trigger1 = statetype = A
@@ -1156,7 +1242,7 @@ trigger1 = ctrl
 [State -1, Jump Strong Kick]
 type = ChangeState
 value = 650
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(5) ; The buffered version of HK
 trigger1 = statetype = A
@@ -1165,11 +1251,10 @@ trigger1 = ctrl
 [State -1, Taunt]
 type = ChangeState
 value = 195
-triggerall = !IsHelper(10371) ;Always add this as well!
+triggerall = !IsHelper(10371) && !AIlevel ;Always add this as well!
 triggerall = numhelper(10371) ;Prevent debug flood.
 triggerall = helper(10371), var(6) ; The buffered version of Start
 triggerall = StateType != A
 triggerall = StateNo != [200,699]
 trigger1 = ctrl || (StateNo = [100,101])
 trigger2 = var(5)
-

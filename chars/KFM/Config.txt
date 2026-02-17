@@ -1,0 +1,104 @@
+;==============================================================================================
+;==================================<CONFIGURATION SETUP>=======================================
+;==============================================================================================
+;DO NOT MESS WITH ANYTHING IN THIS SECTION!!!
+;INITIALIZE
+[Statedef 5900];Don't touch!
+type = S;Don't touch!
+
+[State 5900, Varreset];Don't touch!
+type = varrangeset;Don't touch!
+trigger1 = !roundsexisted;Don't touch!
+value = 0;Don't touch!
+
+[State 5900, Varreset];Don't touch!
+type = varrangeset;Don't touch!
+trigger1 = !roundsexisted;Don't touch!
+fvalue = 0;Don't touch!
+
+
+
+
+
+;================================================================================================
+;================================================================================================
+;THIS IS THE SECTION YOU WANT!!
+;**CUSTOMIZABLE STUFF**
+
+;Power Aura Option
+[State 5900, Power Aura Style];(0 = Phantom Style, 1 = Divine Style)
+type = VarSet;Don't touch!
+trigger1 = 1;Don't touch!
+fvar(30) = 0;<---Change this value!!!
+
+;EX Special FX Option
+[State 5900, EX Special FX Style];(0 = Phantom Style, 1 = Divine Style)
+type = VarSet;Don't touch!
+trigger1 = 1;Don't touch!
+fvar(31) = 0;<---Change this value!!!
+
+;================================================================================================
+;================================================================================================
+
+
+
+
+
+;DO NOT MESS WITH ANYTHING IN THIS SECTION!!!
+;INTROS
+[State 5900, Intro vs Kung Fu Girl]
+type = ChangeState
+triggerAll = NumEnemy
+triggerAll = RoundNo = 1 || (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
+trigger1 = Enemy, Name = "Kung Fu Girl" && enemy,authorname = "DivineWolf" || Enemy, Name = "Another Kung Fu Girl"
+value = 193
+
+[State 5900, Ladies' Man Intro]
+type = ChangeState
+triggerAll = NumEnemy
+triggerAll = RoundNo = 1 || (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
+trigger1 = Enemy, Name = "Chun-Li" && enemy,authorname = "Jmorphman" || Enemy, Name = "cvschunli" || Enemy, Name = "Chun Li" || Enemy, Name = "Chun-Li"
+trigger2 = Enemy, Name = "Mai Shiranui" && enemy,authorname = "DivineWolf" || Enemy, Name = "cvsmai" || Enemy, Name = "Mai" || Enemy, Name = "Mai Shiranui"
+trigger3 = Enemy, Name = "Cammy" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvscammy" || Enemy, Name = "Cammy" || Enemy, Name = "Cammy White"
+trigger4 = Enemy, Name = "Nakoruru" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsnakoruru" || Enemy, Name = "Nakoruru"
+trigger5 = Enemy, Name = "Yuri Sakazaki" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsyuri" || Enemy, Name = "Yuri" || Enemy, Name = "Yuri Sakazaki"
+trigger6 = Enemy, Name = "Genryusai Maki" && enemy,authorname = "Hh" || Enemy, Name = "Maki" || Enemy, Name = "cvsmaki"
+trigger7 = Enemy, Name = "Sakura Kasugano" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvssakura" || Enemy, Name = "cvssakura_normal" || Enemy, Name = "Sakura" || Enemy, Name = "Sakura Kasugano"
+trigger8 = Enemy, Name = "Morrigan Aensland" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsmorrigan" || Enemy, Name = "Morrigan"  || Enemy, Name = "Morrigan Aensland"
+trigger9 = Enemy, Name = "cvsathena" || Enemy, Name = "Athena"
+trigger10 = Enemy, Name = "cvsjill" || Enemy, Name = "Jill" || Enemy, Name = "Jill Valentine"
+trigger11 = Enemy, Name = "cvsyoko" || Enemy, Name = "Yoko"
+trigger12 = Enemy, Name = "cvsmika" || Enemy, Name = "R.Mika"
+trigger13 = Enemy, Name = "cvsjuni" || Enemy, Name = "Juni"
+trigger14 = Enemy, Name = "cvsjuli" || Enemy, Name = "Juli" || Enemy, Name = "Juli+"
+trigger15 = Enemy, Name = "Karin Kanzuki" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvskarin" || Enemy, Name = "Karin" || Enemy, Name = "Karin Kanzuki"
+trigger16 = Enemy, Name = "cvshotaru" || Enemy, Name = "Hotaru"
+trigger17 = Enemy, Name = "cvsking" || Enemy, Name = "King"
+trigger18 = Enemy, Name = "cvsvice" || Enemy, Name = "Vice"
+trigger19 = Enemy, Name = "cvshibiki" || Enemy, Name = "Hibiki" || Enemy, Name = "Hibiki Takane"
+trigger20 = Enemy, Name = "RajaaLilith" && enemy,authorname = "RajaaBoy" || Enemy, Name = "cvslilith" || Enemy, Name = "Lilith" 
+trigger21 = Enemy, Name = "Ingrid" && enemy,authorname = "CrazyKoopa" || Enemy, Name = "cvsingrid" || Enemy, Name = "Ingrid"
+trigger22 = Enemy, Name = "Angel"
+trigger23 = Enemy, Name = "Makoto"
+trigger24 = Enemy, Name = "cvsfelicia" && enemy,authorname = "Jesuszilla" || Enemy, Name = "Felicia"
+trigger25 = Enemy, Name = "Kasumi Todo" || Enemy, Name = "Kasumi"
+trigger26 = Enemy,SelfAnimExist(8055002) && Enemy,SelfAnimExist(8055012) || Enemy,SelfAnimExist(8055002) && Enemy,SelfAnimExist(8055013) || Enemy,SelfAnimExist(8055002) && Enemy,SelfAnimExist(8055014)
+trigger27 = Enemy,SelfAnimExist(8055002) && Enemy,SelfAnimExist(8055064) && Enemy,SelfAnimExist(8055017)
+trigger28 = Enemy,SelfAnimExist(8055002) && Enemy,SelfAnimExist(8055063) && Enemy,SelfAnimExist(8055017)
+value = 194
+
+[State 5900, Turns Intro]
+type = ChangeState
+trigger1 = TeamMode = Turns
+trigger1 = !RoundsExisted && RoundNo >= 2
+value = 6900
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1
+value = 191 
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 0

@@ -379,7 +379,7 @@ Final Bison, random, includestage=0, order=5
 empty
 empty
 empty
-empty
+KFM, random, includestage=0, order=6
 empty
 empty
 empty
@@ -482,10 +482,10 @@ stages/stage12.def
  ;'maxmatches' parameter in [Characters] section)
 
  ;Maximum number of matches to fight before game ends in Arcade single mode.
-arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0
+arcade.maxmatches = 6,1,1,0,0,1,0,0,0,0
 
  ;Like arcade.maxmatches, but applies to Arcade team modes (sans 'Ratio').
-team.maxmatches = 4,1,1,0,0,0,0,0,0,0
+team.maxmatches = 4,1,1,0,0,1,0,0,0,0
 
  ;Maximum number of matches to fight before game ends in Time Attack mode.
 timeattack.maxmatches = 6,1,1,0,0,0,0,0,0,0
