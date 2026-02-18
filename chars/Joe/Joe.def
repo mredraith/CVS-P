@@ -8,7 +8,7 @@ displayName = "Joe"
 versionDate = 09,22,2017
 mugenVersion= 1.0
 author = "Jmorphman"
-pal.defaults= 4,2,3,1,5,6,7,8,9,10,11,12
+pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
 localCoord = 427,240
 
 [Files]
@@ -24,18 +24,6 @@ stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
-pal1 = Palettes/Default.act
-pal2 = Palettes/TotalDramaXtremist_XtremistTraining.act
-pal3 = Palettes/Kirishima_BruceIrvin.act
-pal4 = Palettes/Cyclysm_RBS.act
-pal5 = Palettes/Hades_KOFXII.act
-pal6 = Palettes/FF3.act
-pal7 = Palettes/MalaDingDong_KOF.act
-pal8 = Palettes/MC2+Hades_Adon.act
-pal9 = Palettes/NDSilva_CyborgJoe.act
-pal10 = Palettes/Knuckles8864_LittleMac.act
-pal11 = Palettes/Flowrelik_SuperSeriousKungFuMan.act
-pal12 = Palettes/Gogngos_BartSimpson.act ;toe to tip, this is a Bart!
 
 [Palette Keymap]
 a = 4

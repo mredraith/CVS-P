@@ -1953,9 +1953,9 @@ sparkXY=-10 + 0 * (var(35) := 56), var(36) := -75
 hitsound=S3,2
 guardsound=s130, 0
 ground.type = High
-ground.slidetime = 11;18
-ground.hittime  = 11;18
-guard.hittime = (11;18) - 6
+ground.slidetime = 11
+ground.hittime  = 11
+guard.hittime = (11) - 6
 ground.velocity = -8.25
 guard.velocity = -8.25
 ground.cornerpush.veloff = 0
@@ -2347,9 +2347,9 @@ sparkXY=-10 + 0 * (var(35) := 56), var(36) := -75
 hitsound=S3,2
 guardsound=s130, 0
 ground.type = High
-ground.slidetime = 11;18
-ground.hittime  = 11;18
-guard.hittime = (11;18) - 6
+ground.slidetime = 11
+ground.hittime  = 11
+guard.hittime = (11) - 6
 ground.velocity = -8.25,-4.5
 guard.velocity = -8.25
 ground.cornerpush.veloff = 0

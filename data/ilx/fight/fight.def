@@ -1266,38 +1266,38 @@ framespercount = 60
 
 ;-----------------------------------------------------------
 [Combo]
-team1.pos = 80,420 ;30,260 ;Coords to show
-team1.start.x = -140;-240 ;Starting x-coords
-team1.counter.layerno = 2
-team1.counter.font = 2,0,1;2,3,1
-team1.counter.scale = 3,3
+team1.pos = 320,420 ;30,260 ;Coords to show
+team1.start.x = -320;-240 ;Starting x-coords
+team1.counter.layerno = 0
+team1.counter.font = 2,0,0;2,3,1
+team1.counter.scale = 6,6
 team1.counter.shake = 0 ;Set to 1 to shake count on hit
 team1.counter.time = 7 ;Ikemen feature: length of the counter shake
 team1.counter.mult = 0.05 ;Ikemen feature: counter shake intensity multiplier
-team1.text.layerno = 2
+team1.text.layerno = 0
 ; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
-team1.text.text = "%p Damage" ;You can use %i to show count in the text, eg "%i Hit!"
-team1.text.font = 5,0,1;1,4,1
-team1.text.scale = 1.25,1.25;1,1
-team1.text.offset = 0,0;Offset of text
+team1.text.text = "%p" ;You can use %i to show count in the text, eg "%i Hit!"
+team1.text.font = 5,0,0;1,4,1
+team1.text.scale = 2,2;1,1
+team1.text.offset = -105,60;Offset of text
 team1.displaytime = 90 ;Time to show text
 team1.showspeed = 8 ;Ikemen feature: text showing up speed (1 = instant)
 team1.hidespeed = 4 ;Ikemen feature: text hiding speed (the larger value, the faster speed)
 
-team2.pos = 1200,420 ;Coords to show
-team2.start.x = 1420;-240 ;Starting x-coords
-team2.counter.layerno = 2
-team2.counter.font = 2,0,-1;2,3,1
-team2.counter.scale = 3,3
+team2.pos = 960,420 ;Coords to show
+team2.start.x = 1580;-240 ;Starting x-coords
+team2.counter.layerno = 0
+team2.counter.font = 2,0,0;2,3,1
+team2.counter.scale = 6,6
 team2.counter.shake = 0 ;Set to 1 to shake count on hit
 team2.counter.time = 7 ;Ikemen feature: length of the counter shake
 team2.counter.mult = 0.05 ;Ikemen feature: counter shake intensity multiplier
-team2.text.layerno = 2
+team2.text.layerno = 0
 ; Ikemen feature (text format %i = combo count, %d = combo damage, %p = combo damage percentage)
-team2.text.text = "%p Damage";"COMBO" ;You can use %i to show count in the text, eg "%i Hit!"
-team2.text.font = 5,0,1;1,4,1
-team2.text.scale =1.25,1.25;1,1;
-team2.text.offset = -180,0;-20,-100 ;Offset of text
+team2.text.text = "%p";"COMBO" ;You can use %i to show count in the text, eg "%i Hit!"
+team2.text.font = 5,0,0;1,4,1
+team2.text.scale =2,2;1,1;
+team2.text.offset = -78,60;-20,-100 ;Offset of text
 team2.displaytime = 90 ;Time to show text
 team2.showspeed = 8 ;Ikemen feature: text showing up speed (1 = instant)
 team2.hidespeed = 4 ;Ikemen feature: text hiding speed (the larger value, the faster speed)
@@ -1317,10 +1317,10 @@ team1.bg.offset = 75,0
 team1.bg.anim = 
 team1.bg.scale = 1.0,1.0
 team1.bg.spr = 
-team1.front.layerno = 2
+team1.front.layerno = 0
 team1.front.offset = 75,0
-team1.front.scale = 1.0,1.0
-team1.text.layerno = 2
+team1.front.scale = 2,2
+team1.text.layerno = 0
 team1.text.font = 2,0,1
 team1.text.offset = 9,0;9,0 ;Offset of text
 team1.text.scale = 1,1
@@ -1336,10 +1336,10 @@ team2.bg.offset = -75,0
 team2.bg.anim = 
 team2.bg.scale = 1.0,1.0
 team2.bg.spr = 
-team2.front.layerno = 2
+team2.front.layerno = 0
 team2.front.offset = -75,0
-team2.front.scale = 1.0,1.0
-team2.text.layerno = 2
+team2.front.scale = 2,2
+team2.text.layerno = 0
 team2.text.font = 2,0,-1
 team2.text.offset = 9,0 ;Offset of text
 team2.text.scale = 1,1
@@ -1450,9 +1450,9 @@ slow.time = 60 ;Total KO slowdown length (in ticks)
 slow.fadetime = 45 ;Ikemen feature: KO slowdown fade length (default: 75% of slow.time)
 slow.speed = 0.25 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
 
-over.waittime = 45 ;Time to wait after KO before player control is stopped
-over.hittime = 10 ;Time after KO that players can still damage each other (for double KO)
-over.wintime = 45 ;Time to wait before players change to win states
+over.waittime = 0 ;Time to wait after KO before player control is stopped
+over.hittime = 0 ;Time after KO that players can still damage each other (for double KO)
+over.wintime = 60 ;Time to wait before players change to win states
 over.time = 180;270 ;Time to wait before round ends
 
 ; Win text
