@@ -26,7 +26,7 @@ fvalue = 0
 [State 5900, Mode Detection]
 type = VarSet
 trigger1 = 1
-var(40) = ifElse(PalNo <= 3, 0, ifElse(PalNo <= 6, 3, ifElse(PalNo <= 9, 1, 2)))
+var(40) = ifElse(PalNo <= 3, 0, ifElse(PalNo <= 6, 0, ifElse(PalNo <= 9, 0, 0)))
 ignoreHitPause = 1
 
 [State 5900, End]

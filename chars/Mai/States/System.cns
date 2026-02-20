@@ -263,6 +263,12 @@ flag = roundnotover
 [Statedef 5900]
 type = S
 
+[State 5900, Palette]
+type = remappal
+trigger1 = 1
+source = 1, 1
+dest = 1, palno
+
 [State 5900, Varreset]
 type = varrangeset
 trigger1 = !roundsexisted

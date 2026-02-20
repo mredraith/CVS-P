@@ -19,6 +19,12 @@ type = VarRangeSet
 trigger1 = !RoundsExisted
 fvalue = 0
 
+[State 5900, Palette]
+type = remappal
+trigger1 = 1
+source = 1, 1
+dest = 1, palno
+
 [State 5900, End]
 type = ChangeState
 trigger1 = 1

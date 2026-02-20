@@ -511,29 +511,63 @@ command = ~D, DF, F, s
 
 [Command]
 name = "412p"
-command = /$F, x+y
-time = 8
+command = ~B, DB, D, x
+time = 16
+
 [Command]
 name = "412p"
-command = /$F, x+z
-time = 8
+command = ~B, DB, D, y
+time = 16
+
 [Command]
 name = "412p"
-command = /$F, y+z
-time = 8
+command = ~B, DB, D, z
+time = 16
+
+[Command]
+name = "412p"
+command = ~B, DB, D, ~x
+time = 16
+
+[Command]
+name = "412p"
+command = ~B, DB, D, ~y
+time = 16
+
+[Command]
+name = "412p"
+command = ~B, DB, D, ~z
+time = 16
 
 [Command]
 name = "412k"
-command = /$F, a+b
-time = 8
+command = ~B, DB, D, a
+time = 16
+
 [Command]
 name = "412k"
-command = /$F, a+c
-time = 8
+command = ~B, DB, D, b
+time = 16
+
+[Command]
+name=  "412k"
+command = ~B, DB, D, c
+time = 16
+
 [Command]
 name = "412k"
-command = /$F, b+c
-time = 8
+command = ~B, DB, D, ~a
+time = 16
+
+[Command]
+name = "412k"
+command = ~B, DB, D, ~b
+time = 16
+
+[Command]
+name = "412k"
+command = ~B, DB, D, ~c
+time = 16
 
 ;====================<OTHER>====================
 
