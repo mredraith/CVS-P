@@ -1555,52 +1555,6 @@ trigger1 = Time >= 15
 
 
 
-;========================<COUNTER FX>=============================
-[StateDef 8290]
-type = A
-physics = N
-velSet = 0,0
-anim = 1
-
-[State 8290, "Counter!" Text Explod]
-type = Explod
-trigger1 = !NumExplod(8290)
-anim = 8290
-ID = 8290
-sprPriority = 64
-posType = P1
-facing = Facing
-removeTime = 32
-pauseMoveTime = -1
-superMoveTime = -1
-ownPal = 1
-
-[State 8290, Scale]
-type = ModifyExplod
-trigger1 = Time < 8
-ID = 8290
-scale = 0.5, .5
-trans = AddAlpha
-alpha = 256,0
-
-[State 8290, Scale]
-type = ModifyExplod
-trigger1 = Time >= 8
-ID = 8290
-scale = 0.5 + 0.0625 * (Time - 8), 0.5 + 0.0625 * (Time - 8)
-trans = AddAlpha
-alpha = 256 - 32 * (Time - 8), 32 * (Time - 8)
-
-[State 8290, Safety]
-type = RemoveExplod
-trigger1 = Time >= 16
-
-[State 8290, End]
-type = DestroySelf
-trigger1 = Time >= 16
-
-
-
 ;==================<POWER CHARGE FX>==================
 ;Aura and Dust
 [StateDef 8330]

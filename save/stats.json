@@ -1,5 +1,5 @@
 {
-  "playtime": 8890.83,
+  "playtime": 9250.5,
   "modes": {
     "training": {
       "playtime": 0,
@@ -10,12 +10,12 @@
       }
     },
     "freebattle": {
-      "playtime": 4550.68,
-      "clear": 15,
+      "playtime": 4674.2,
+      "clear": 17,
       "clearcount": {
         "sagat": 1,
         "nesmegaman": 1,
-        "ryu": 7,
+        "ryu": 9,
         "rasetsumaru": 3,
         "feilong": 1,
         "shin akuma": 2
@@ -151,14 +151,16 @@
       }
     },
     "watch": {
-      "playtime": 1055.79,
-      "clear": 6,
+      "playtime": 1291.94,
+      "clear": 8,
       "clearcount": {
         "shin akuma": 2,
         "ken": 1,
         "chunli": 1,
         "batsu": 1,
-        "hugo": 1
+        "hugo": 1,
+        "todoh": 1,
+        "hiryu": 1
       }
     },
     "versus": {

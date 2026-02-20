@@ -9,7 +9,7 @@ displayname = "Ryu"
 versiondate = 01,31,2013
 mugenversion = 1.0
 author = "Phantom.of.the.Server"
-pal.defaults = 1,2,3,4,5,6
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
 localcoord = 427,240
 
 [Files]
@@ -28,18 +28,6 @@ st4 = States\Supers.st
 st5 = States\Helpers.st
 st6 = States\Custom.st
 st7 = States\Ryu.st
-pal1 = RyuPalettes\SF2.act
-pal2 = RyuPalettes\SF2Turbo.act
-pal3 = RyuPalettes\SF2Grey.act
-pal4 = RyuPalettes\SF2LightBlue.act
-pal5 = RyuPalettes\PFRed.act
-pal6 = RyuPalettes\SF2Orange.act
-pal7 = EvilPalettes\grey.act
-pal8 = EvilPalettes\dirty.act
-pal9 = MasterPalettes\SF1.act
-pal10 = EvilPalettes\CvS.act
-pal11 = EvilPalettes\green.act
-pal12 = EvilPalettes\pink.act
 
 [Arcade]
 intro.storyboard = 

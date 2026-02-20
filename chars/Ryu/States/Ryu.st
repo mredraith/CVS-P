@@ -23,10 +23,12 @@ trigger1 = 1
 source = 1, 1
 dest = 1, palno
 
-[State 5900, modevar]
-type = varset
-trigger1 = 1
-var(1) = ifelse(palno = 9, 3, ifelse(palno >= 7, 2, 1))
+[State 5900]
+type = VarSet
+trigger1 = !time
+value = 1
+v = 1
+
 [State 5900, turnsintro]
 type = changestate
 trigger1 = time >= 1 && teammode = turns

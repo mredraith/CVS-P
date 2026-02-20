@@ -1,0 +1,306 @@
+===============<04,12,2022>===============
+
+ - Bumped health up from 890 to 920
+ - Updated hitboxes for 52 animations
+ - Edited sprites for standing far HP
+ - Added Kunst Zwei
+ - Reduced blockstun for standing LP MP and HP
+ - Grosse Drucken is now unblockable (except for EX)
+   ↘ - Ranged was reduced and recovery animation was extended to avoid tick throws
+     ↘ - Added extra sound cues for faster reaction and dust trails
+       ↘ - Removed running sfx
+ - Reworked MAX Grosse Kreis
+ - Grosse Kronprinz can now be charged (from a slow) to a faster Wave that hits twice and deals more damage
+ - Omega-Zerstorung was removed and replaced by Grosse Sklaven
+ - Fixed janky throw
+ - Added escape-from throw animation
+ - Fixed Supermove afterimages
+ - Removed some bits of leftover/useless code
+
+===============<04,13,2022>===============
+
+ - CS on gloves and boots is finally done
+ - Rermoval of unused or extra sprites
+ - Values for "fall.defence_up" and "lieDown.time" were set to their standard default value
+ - Super pause sounds were corrected
+ - Sound for Rising Kicken's projectile was added
+ - Made EX Drucken have faster start-up, reduced a bit of its range, but remains blockable
+ - Added a level 1 Sliding Kreis (see readme for inputs)
+   ↘ - Added hit sound and guard sound for Sliding and MAX Kreis' kick animation
+ - Edited and swapped charge animation on G.Kronprinz's charge animation (for both hands)
+ - Light Kicken can be cancelled into after Kunst Vier and Kunst Zwei [Command Normals]
+ - Kunst Vier is now faster, and its first kick must be blocked low
+   ↘ - Third hit now comes out on a frame earlier, so as to avoid having the same frame hit the opponent twice 
+     ↘ - Sound fx for Kunst Vier were added
+ - Added EnvShake on all Kreis supers
+ - Edited G.Zerstorung to better reach and attack oppoents from further distance
+   ↘ - Made third slash come out much faster for better juggles
+ - Fixed running sound fx for running animation
+ - Added width sctrl on crouching HP
+
+===============<04,19,2022>===============
+
+ - Adjusted damage on M and H Rising Kicken
+   ↘ - Kick now (almost) always hits first
+     ↘ - Kicken now launches opponent if cancelled after Cl.LK or Kunst Vier's second kick
+       ↘ - Fixed issue with kick using hit sound of previous attack
+         ↘ - Fixed issue with Kunst Vier triggering a Super Finish screen after landing
+           ↘ - Fixed lack of audio when opponent lands after the last hit
+ - Animation for Kunst Vier was improved and made a bit faster
+ - G.Kronprinz's delay was reduced, making it easier to combo into
+ - Sliding Kreis can now combo into MAX Sliding Kreis
+ - Super Moves now display their proper Super Finish screen
+ - EX Grosse Drucken has shorter start-up animation, is much faster, and it turn was made blockable
+ - EX Grosse Zerstorung's third kick now hits much earlier/faster
+ - Crouching LK and Crouching MK can now cancel into Rising Kicken (First Kick of Rising Kicken can whiff with C.MK depending on distance)
+ - Added Rose taunt (See movelist for details)
+ - More hitboxes have been reworked
+ - Revamped color palettes
+ - Shifted and polished some more lines of code
+ - Added movelist.dat file for IKEMEN (It's buggy, but it's there)
+
+===============<04,23,2022>===============
+	    (Last one for now)
+
+ - ALL hitboxes have finally been reworked
+ - Fixed rapidfire issue with all light attacks
+ - Grosse Wand animation now dissipates
+ - Added guard crush animations for standing, crouching, and jumping variations
+ - Kunst Vier and Kunst Zwei are MUCH faster and more fluid to fit in with CVS' game speed
+   ↘ - Sound for Kunst Vier's landing animation has been added
+ - Fixed own misaligned sprites
+ - Width ctrl tweaked to avoid corner throws to look off
+ - Attack boosted from 90 to 95
+ - Cl.HP can now canel into Grosse Kreis and Grosse Sklaven
+ - Dash dust added to Grosse Sklaven
+ - Reduced throw damage
+ - Removed unused animations
+ - Removed/Cleaned leftover lines of code
+ - Rose cancels now only work for heavy attacks and Kunst Vier/Kunst Zwei
+   ↘ - Changed cancel input windows near the end of the moves' animation to avoid being too safe
+ - Made G.Wand's reflect projectile a bit faster
+ - Miscellaneous code rework
+ - Included some ports for CVS2, SF IV, En-Eins, and KOF XI lifebars
+   ↘ - As well as an HD edit of Adel for you guys to use freely
+
+===============<04,24,2022>===============
+
+ - Tweaked damage dampener
+ - Lowered damage from 95 to 90
+ - Reworked damage for Kunst Vier, Kunst Zwei, and all Supers
+ - Increased input window time for Grosse Drucken from 16 to 20
+
+===============<04,28,2022>===============
+
+ - Removed bar-gain from Grosse Kronpinz
+ - Made third kick for Grosse Zerstorung faster
+ - Added proper Super Finish text
+ - "Removed" combos after landing Grosse Kronprinz
+
+===============<05,13,2022>===============
+
+ - Kicken can now be used while Rose is on screen
+ - Added Light Rising Kicken
+ - Added EX Rising Kicken
+ - G.Wand can now be used while Kicken projectile or Rose are on screen
+ - Rose Taunt now allows any attack to be used after cancel
+ - Added damage dampener to Grosse Sklaven
+ - Grosse Kreis was given further vertical and horizontal reach
+ - Addition of invincibility frames for all supers
+ - Overall damage reworked
+ - G.Zerstorung -> G.Kronprinz loop no longer works for most characters
+ - Adjusted damage for all 3 Rising Kicken attacks, EX Kicken, and EX Rising Kicken
+ - Code cleanup
+
+===============<06,09,2022>===============
+
+ - Made AI a bit more aggressive
+ - Corrected juggle values on some moves
+ - Grosse Kreis now hits after double G.Zerstorung
+ - Added a seperate G.Kreis Super for Medium Kick
+   ↘ - Reworked Light G.Kreis
+     ↘ - Fixed cutter FX for all Kreis Supers
+ - Extended active grab frames for Grosse Sklaven
+ - Code cleanup
+ - Additional palette "act018" created for Adelheid
+ - Increased input window for dashing
+ - Fixed animation for G.Wand FX
+
+===============<06,17,2022>===============
+
+ - Gave Medium, Heavy, and EX G.Drucken longer range, but increased start up animation
+ - Improved A.I.
+ - Removed corner pushback for Slide/Max Kreiss
+ - Up'd damage from 90 to 95
+ - Increased speed for G.Wand's projectile (Normal and EX versions)
+ - Code cleanup
+
+===============<06,21,2022>===============
+
+ - Fixed juggle properties for Kunst Zwei and Kunst Vier
+   ↘ - Kunst Zwei and Kunst Vier no longer interfere with Cl.HP and Cl.HK
+ - Fixed P2 position for G.Drucken and G.Sklaven
+   ↘ - Realigned G.Sklaven's sfx to match with Adel's hand
+ - Readjusted distances for G.Zerstorung
+ - Color separated and readjusted palette placement for Rose
+ - Created "EX" mode for Adelheid, giving him access to new moves
+ - Code cleanup
+
+===============<06,23,2022>===============
+
+ - Fixed bug where Adel would get hit standing up while in mid-air
+ - Fixed Fwd and Bwd rolls lacking I-frames
+ - Bumped attack from 95 to 100
+ - Damage on Rising Kicken readjusted
+ - Projectile speed for G.Kicken readjusted (Normal and EX modes)
+   ↘ - Gave EX Adel different animations for G.Kicken
+     ↘ - Kicken's special FX scale was fixed
+       ↘ - Rising Kicken now cancels from both of Cl.HK's hits
+ - Made c.HP's hitboxes bigger
+ - Adjustment on normals' frame data
+ - G.Zerstorung is now an EX Adel exclusive move
+ - G.Drucken is now a Adelheid exclusive move
+ - Changed Punch reversal's animation
+ - Fixed HP's hurtboxes (Previously being weirdly shaped)
+ - Increased Cl.HK's corner pushback during Custom Combo
+ - Bumped G.Sklaven's damage from 350 to 360
+ - Used Rodem's sprites as a replacement for Gwan to match its KOF XIII appearance
+
+===============<06,27,2022>===============
+
+ - Fixed various audio issues for Normal and EX modes
+ - Updated "movelist.dat" file for IKEMEN
+ - Replaced some of the echo-ey sounds for hit sounds
+ - Made Kronprinz projectile (Special and Super) have different speeds
+   ↘ - Added sfx for releasing Kronprinz, much like '03/XI appearance
+     ↘ - (EX Adelheid) When Charged, EX Kronprinz becomes unblockable
+ - Added EnvShake to Lv1 and Lv2 Slide, along with the first kick for MAX G.Kreis
+ - Readjusted frame data for HP, MK, L.Rise Kicken, G.Zerstorung, and G.Sklaven
+ - Fixed Himel Kreis displaying G.Kreis' super finisher screen
+ - Reworked EX Kreis for EX Adel
+ - Reworked EX Zerstorung for EX Adel
+ - Made a Light variation for Himel Kreis
+ - Edited palettes for EX Adelheid
+ - Polishing Omega Adel for his release sometime next week
+
+===============<06,29,2022>===============
+
+ - Reduced corner pushback from Kunst Zwei
+ - Reduced Cl.HP's ground pushback
+ - Kreis is now easier to combo into
+   ↘ - Readjusted velocities and hurtboxes for Kreis and EX Kreis
+ - Rising Kicken can be canceled into by all standing/crouching normals
+ - Fixed damage dealt with Himel Kreis (M)
+ - Fixed Rose stopping earlier than intended when jumping
+ - Fixed Custom Combo using Rising Kicken instead of regular Kicken
+ - Himel Kreis can now be combo'd into MAX Slide Kreis
+ - Improved AI (Now a bit more harder)
+
+===============<07,20,2022>===============
+
+ - Reduced longitude on super jump
+ - New close medium kick was added
+ - Improved hitpark coords for normals
+ - Close light kick can now be cancelled into itself and into far light kick
+ - Close heavy kick can now juggle thrice (corner)
+ - Altered far heavy kick's animation
+ - Crouching Light buttons can now cancel into Kunst Vier and Kunst Zwei
+ - Custom Combo mode was mildly buffed
+ - Fixed damage scaling for Grosse Wand in CC mode
+ - Rising Kicken (Light and Medium) can now cancel into any Super
+ - Rising Kicken (Heavy) is no longer techable after first hit
+ - [EX Adel] Readjusted velocities and rising frames to Kreis
+ - Fixed Superpause settings for Himel Kreis
+ - Reworked MAX Grosse Kreis, and made it more punishable
+ - Remade EX Adelheid's color palettes (Old ones were trash)
+ - Touched up palettes for Rose
+ - Color for special moves' fx are now linked to the pelettes, and can be customized
+ - New special intro against Omega Adelheid
+ - Fixed CHeap K.O.
+   ↘ - All hurt, falling, landing, and dead animations were reworked
+
+===============<07,31,2022>===============
+
+ - All special moves now have different damage values based on strength
+ - Altered grabs
+ - Fixed bugs regarding cheap K.O. and front face fall
+ - Altered EX Grosse Zerstorung's velocities and animation
+   ↘ - Removed NotHitBy state
+ - Minor bugs removal
+ - Fixed hitspark for rising Kicken
+
+===============<08,17,2022>===============
+
+  |[𝐍𝐨𝐫𝐦𝐚𝐥 𝐀𝐝𝐞𝐥𝐡𝐞𝐢𝐝]|
+ - Altered G.Kicken's animations
+ - Changed velocities for medium and heavy G.Drucken
+   ↘ - Shortened startup animation for medium, heavy, and EX G.Drucken
+     ↘ - Drucken no longer grabs opponents mid-air (with the exception of launchers)
+       ↘ - Drucken will whiff if opponent is in hitstun
+         ↘ - Reduced size of the active hitbox
+   	   ↘ - Pumped damage up a bit for regular and EX drucken
+   	     ↘ - Whiff state now makes Adelheid slide a bit
+ - Most moves can now combo into MAX G.Kreis
+   ↘ - MAX G.Kreis will now go immediately into its DP state if opponent is airborne
+     ↘ - Animation was slighly altered, and its second hit can now hit grounded opponents
+ - G.Kronprinz's hand fx error has been fixed
+   ↘ - Damage was pumped up to match the rest of his Level 1 Supers
+     ↘ - Damage for a fully charged G.Kronprinz was increased, but no longer hits twice
+       ↘ - Release animation is now much faster
+  |[𝐄𝐗 𝐀𝐝𝐞𝐥𝐡𝐞𝐢𝐝]|
+ - Altered G.Kicken's hitboxes
+ - Added a follow-up move for Kreis, called Kreis Slash (Can only be performed on hit from frames 6 through 9)
+ - Kreis can no longer juggle into itself
+   ↘ - Increased recovery frames, making it much more unsafe on block
+     ↘ - Now launches opponent at different trajectories depending on button used
+ - EX Kreis' second kick no longer whiffs on block
+   ↘ - EX Kreis' animation was slighly edited
+ - Damage for Kronprinz was modified (regular and charged)
+ - EX Kronprinz has faster start-up animation
+   ↘ - EX Kronprinz's charged projectile was modidifed
+ - G.Zerstorung now has different launching heights depending on the button used
+   ↘ - Second kick now launches lower, but the speed at which the opponent falls is much slower
+  |[𝐌𝐢𝐬𝐜𝐞𝐥𝐥𝐚𝐧𝐞𝐨𝐮𝐬]|
+ - Added A.Kunst Ein (Acts similar to Cl.HK || Different hitboxes from Cl.HK || Can cancel)
+ - Changed duration of hitstun and blockstun for Close HP
+   ↘ - Lowered ground hit velocity from -5.52 to -4.52
+ - Rising Kicken's projectile no longer launches opponent
+ - Increased hitstun for A.Kunst Vier's third hit
+   ↘ - Kunst Vier can now cancel into G.Wand and Kronprinz
+ - G.Kronprinz's projectile damage no longer interferes with Kronprinz's code
+ - Normal and EX G.Wand's contact damage has been reduced
+ - EX G.Wand now has corner pushback to avoid infinites
+   ↘ - Increased hitstun which can lead to combo extensions
+ - G.Prinzessin (Rose taunt) now costs meter whenever its cancelled into
+ - Changed damage values for Rising Kicken
+ - Fixed AI cancelling any button into Rising Kicken
+ - Added new animation for kick grab
+
+===============<08,24,2022>===============
+
+ - Added in the rest of Rose's sprites
+   ↘ - CS'ed the new sprites and fixed her eye color
+ - "New" Level 3 Super
+ - Old Sklaven now only has upper body invincibility from frames 4 through 8
+ - Included missing hurt sprites for Adelheid
+ - New intro
+   ↘ - Diferent Gwan (Panther) animations for intro
+ - Edited hitboxes for a lot of hurt animations
+ - AI Improvement
+ - Balancing
+
+===============<09,20,2022>===============
+
+ - Touched up and fixed errors on all sprites
+ - Fixed ALL normal's pausetime codes
+ - Streamlined a lot of moves' hit/hurtboxes
+ - Special moves overhauled
+ - Super moves overhauled
+ - Major AI improvement
+ - Edited and fixed coloring on some palettes
+
+
+===============< To do list >===============
+
+ - PotS/CvS3 King Lion & King Leo
+ - Possible Lien Neville conversion
