@@ -157,13 +157,11 @@ function main.f_restoreInput()
 		return
 	end
 	resetRemapInput()
-	local remaps = {}
+	-- Restore to the base mapping captured at the mode start.
 	for i = 1, gameOption('Config.Players') do
-		table.insert(remaps, getRemapInput(i))
-	end
-	for k, v in ipairs(remaps) do
-		if k ~= v then
-			remapInput(k, v)
+		local v = main.t_baseRemapInput[i] or i
+		if i ~= v then
+			remapInput(i, v)
 		end
 	end
 end
@@ -1749,6 +1747,7 @@ main.t_itemname = {
 		end
 		main.f_setCredits()
 		remapInput(1, getLastInputController())
+		remapInput(getLastInputController(), 1)
 		setCommandInputSource(2, 1)
 		setGameMode('arcade')
 		hook.run("main.t_itemname")

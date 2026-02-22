@@ -102,7 +102,7 @@ options.t_itemname = {
 	end,
 	--Port Change
 	['portchange'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key, motif.option_info.menu.subtract.key, motif.option_info.menu.done.key) then
+		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
 			local port = main.f_drawInput(
 				motif.option_info.textinput.TextSpriteData,
@@ -124,7 +124,7 @@ options.t_itemname = {
 	end,
 	--Default Values
 	['default'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key, motif.option_info.menu.subtract.key, motif.option_info.menu.done.key) then
+		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cursor.done.snd[1], motif.option_info.cursor.done.snd[2])
 			--modifyGameOption('Common.Air', {"data/common.air"})
 			--modifyGameOption('Common.Cmd', {"data/common.cmd"})
@@ -1390,7 +1390,7 @@ options.t_itemname = {
 	end,
 	--Save and Return
 	['savereturn'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key, motif.option_info.menu.subtract.key, motif.option_info.menu.done.key) then
+		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cancel.snd[1], motif.option_info.cancel.snd[2])
 			if options.modified then
 				options.f_saveCfg(options.needReload)
@@ -1403,7 +1403,7 @@ options.t_itemname = {
 	end,
 	--Return Without Saving
 	['return'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key, motif.option_info.menu.subtract.key, motif.option_info.menu.done.key) then
+		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cancel.snd[1], motif.option_info.cancel.snd[2])
 			if options.needReload then
 				main.f_warning(motif.warning_info.text.text.noreload, motif.option_info, motif.optionbgdef)
@@ -1416,7 +1416,7 @@ options.t_itemname = {
 	end,
 	--Save Settings
 	['savesettings'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key, motif.option_info.menu.subtract.key, motif.option_info.menu.done.key) then
+		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cursor.done.snd[1], motif.option_info.cursor.done.snd[2])
 			if options.modified then
 				options.f_saveCfg(options.needReload)

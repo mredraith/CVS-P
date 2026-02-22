@@ -841,7 +841,7 @@ local function drawPortraitLayer(t_portraits, side, t, subname, last, dataField)
 	end
 	table.sort(order, function(a, b)
 		if a.o == b.o then
-			return a.m < b.m -- stable legacy tie-break (invertorder=0 behavior)
+			return a.m > b.m
 		end
 		return a.o < b.o
 	end)
@@ -1714,6 +1714,11 @@ function start.f_selectMode()
 		end
 		--first match
 		if start.reset then
+			-- Save current remap state. main.f_restoreInput() should restore to this.
+			main.t_baseRemapInput = {}
+			for i = 1, gameOption('Config.Players') do
+				main.t_baseRemapInput[i] = getRemapInput(i)
+			end
 			main.t_availableChars = main.f_tableCopy(main.t_orderChars)
 			--generate default roster
 			if main.makeRoster then
@@ -1882,25 +1887,49 @@ end
 
 function start.f_selectChallenger()
 	esc(false)
-	--save values
+	-- Save values
 	local t_p_sav = main.f_tableCopy(start.p)
 	local t_c_sav = main.f_tableCopy(start.c)
 	local matchNo_sav = matchno()
 	local p1ConsecutiveWins = getConsecutiveWins(1)
 	local p2ConsecutiveWins = getConsecutiveWins(2)
+
+	-- Capture current arcade input mapping before main.f_default() resets it.
+	local arcadeP1Controller = getRemapInput(1)
+	-- Resolve which controller slot should control P2 in the challenger match.
+	local challengerController = getRemapInput(start.challenger)
+
 	--start challenger match
 	main.f_default()
-	remapInput(2, getRemapInput(start.challenger))
+
+	-- Tell versus mode which controller slot is the challenger.
+	start.challenger = challengerController
+
+	-- Ensure P1 remains the arcade player's controller, and P2 is the challenger controller.
+	remapInput(1, arcadeP1Controller)
+	remapInput(2, challengerController)
+
+	-- Ensure the select screen reads inputs from the intended controller slots.
+	setCommandInputSource(1, arcadeP1Controller)
+	setCommandInputSource(2, challengerController)
+
 	main.t_itemname.versus()
+
+	-- versus() may touch P2 input source; keep P1 source consistent.
+	setCommandInputSource(1, arcadeP1Controller)
+
 	start.f_selectReset(false)
 	if not start.f_selectScreen() then
 		start.exit = true
 		return false
 	end
 	local ok = launchFight{challenger = true}
-	--restore values
+
+	-- Restore back to arcade.
+	start.challenger = 0
 	main.f_default()
-	setLastInputController(getRemapInput(1))
+	-- Force arcade() to rebuild the original P1 swap correctly.
+	setLastInputController(arcadeP1Controller)
 	main.t_itemname.arcade()
 	if not ok then
 		return false
@@ -2424,8 +2453,14 @@ function start.f_selectScreen()
 					end
 					local cursorState = 'active'
 					if v.selectState > 0 and motif.select_info.paletteselect > 0 then
+					local cursorData = motif.select_info['p' .. side].cursor
+						if cursorData.preview and cursorData.preview.default and 
+						(cursorData.preview.default.anim ~= -1 or cursorData.preview.default.spr[1] ~= -1) then
 						--cursorState when palmenu is active
-						cursorState = 'done'
+							cursorState = 'preview'
+						else
+							cursorState = 'done'
+						end
 					end
 					if v.selectState < 4 and start.f_selGrid(start.c[v.player].cell + 1).hidden ~= 1 and not start.c[v.player].blink then
 						start.f_drawCursor(v.player, start.c[v.player].selX, start.c[v.player].selY, cursorState, false)
@@ -2570,7 +2605,7 @@ function start.f_teamMenu(side, t)
 		-- Team menu has no renderable entries (e.g. itemname_order hides them).
 		-- Still allow character selection for this side if enabled.
 		if not start.p[side].selEnd and #start.p[side].t_selCmd == 0 then
-			table.insert(start.p[side].t_selCmd, {cmd = side, player = side, selectState = 0})
+			table.insert(start.p[side].t_selCmd, {cmd = getRemapInput(side), player = side, selectState = 0})
 		end
 		return
 	end
@@ -2819,16 +2854,16 @@ function start.f_teamMenu(side, t)
 			for i = 1, start.p[side].numChars do
 				if gamemode('versuscoop') then
 					if side == 1 then
-						table.insert(start.p[side].t_selCmd, {cmd = i * 2 - 1, player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
+						table.insert(start.p[side].t_selCmd, {cmd = getRemapInput(i * 2 - 1), player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
 					else
-						table.insert(start.p[side].t_selCmd, {cmd = i * 2, player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
+						table.insert(start.p[side].t_selCmd, {cmd = getRemapInput(i * 2), player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
 					end
 				else
-					table.insert(start.p[1].t_selCmd, {cmd = i, player = start.f_getPlayerNo(side, #start.p[1].t_selCmd + 1), selectState = 0})
+					table.insert(start.p[1].t_selCmd, {cmd = getRemapInput(i), player = start.f_getPlayerNo(side, #start.p[1].t_selCmd + 1), selectState = 0})
 				end
 			end
 		else
-			table.insert(start.p[side].t_selCmd, {cmd = side, player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
+			table.insert(start.p[side].t_selCmd, {cmd = getRemapInput(side), player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
 		end
 	end
 end
