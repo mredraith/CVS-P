@@ -2787,20 +2787,6 @@ value = 5050
 ;===========================================================================
 [StateDef -2]
 
-[State -2]
-type = AssertSpecial
-trigger1 = RoundState = 3
-flag = nobardisplay
-
-[State -2, Special]
-type = AssertSpecial
-trigger1 = roundstate = [0,1]
-trigger2 = Ctrl = 0 && Anim = 0 && MoveType != H
-trigger3 = Ctrl = 0 && Anim = 5 && MoveType != H
-trigger4 = Ctrl = 0 && Anim = 12 && MoveType != H
-flag = NoBarDisplay
-ignorehitpause = 1
-
 [State -2, AssertSpecial]
 type = AssertSpecial
 triggerall = roundno = 1

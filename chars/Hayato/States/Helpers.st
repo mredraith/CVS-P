@@ -2433,13 +2433,6 @@ trigger1 = 1
 flag = NoShadow
 ignoreHitPause = 1
 
-[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
-type = AssertSpecial
-trigger1 = Time < 40
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
-
 [State 8520, Rotate]
 type = AngleSet
 trigger1 = !Time
@@ -2630,11 +2623,6 @@ trigger1 = !Time
 time = 40
 movetime = 40
 
-[State 8600, LifeBar]
-type = AssertSpecial
-trigger1 = RoundState = 3
-flag = NoBarDisplay
-
 [State 8600, Normal Finish Sound]
 type = PlaySnd
 trigger1 = !Time
@@ -2657,11 +2645,6 @@ type = Pause
 trigger1 = !Time
 time = 40
 movetime = 40
-
-[State 8600, LifeBar]
-type = AssertSpecial
-trigger1 = RoundState = 3
-flag = NoBarDisplay
 
 [State 8601, Special Moves Finish Sound]
 type = PlaySnd
@@ -2860,11 +2843,6 @@ type = AssertSpecial
 trigger1 = Time < 40
 flag = NoMusic
 
-[State 8600, LifeBar]
-type = AssertSpecial
-trigger1 = RoundState = 3
-flag = NoBarDisplay
-
 [State 8600, RemoveExplod]
 type = RemoveExplod
 trigger1 = Time >= 24
@@ -2987,11 +2965,6 @@ alpha = ifelse(time < 10, 256, ceil(256 -(time -10) * 25.6)), 256
 type = AssertSpecial
 trigger1 = Time < 40
 flag = NoMusic
-
-[State 8600, LifeBar]
-type = AssertSpecial
-trigger1 = RoundState = 3
-flag = NoBarDisplay
 
 [State 8650, RemoveExplod]
 type = RemoveExplod
