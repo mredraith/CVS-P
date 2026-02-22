@@ -1402,7 +1402,7 @@ damage = ceil(ifElse(fvar(12) * 28 < 7, 7, fvar(12) * 28)), 7
 ;damage = 28, 7
 animtype = Up
 guardflag = M
-hitflag = MAF
+hitflag = HAF
 priority = 4, Hit
 pausetime = 6, 6
 ;sparkno = s7030 + (random % 8)
@@ -1447,7 +1447,7 @@ damage = ceil(ifElse(fvar(12) * 75 < 7, 7, fvar(12) * 75)), 9
 ;damage = 74, 9
 animtype = Up
 guardflag = M
-hitflag = MAF
+hitflag = HAF
 priority = 4, Hit
 pausetime = ifelse((animelem = 5), 36, 12), ifelse((animelem = 5), 36, 12)
 ;sparkno = s7030 + (random % 8)
