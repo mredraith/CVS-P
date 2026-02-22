@@ -1916,12 +1916,12 @@ menu.valuename.yes = "Yes" ;Ikemen feature
 menu.valuename.no = "No" ;Ikemen feature
 menu.valuename.enabled = "Enabled" ;Ikemen feature
 menu.valuename.disabled = "Disabled" ;Ikemen feature
-keymenu.p1.menuoffset = 276, 99 ;Ikemen feature
-keymenu.p2.menuoffset = 693, 99 ;Ikemen feature
-keymenu.p1.playerno.offset = 156, 0 ;Ikemen feature
+keymenu.p1.menuoffset = -250, 0 ;Ikemen feature
+keymenu.p2.menuoffset = 250, 0 ;Ikemen feature
+keymenu.p1.playerno.offset = 50, 0 ;Ikemen feature
 keymenu.p1.playerno.font = 7,0,0, 0,247,247 ;Ikemen feature
 keymenu.p1.playerno.scale = 1.0, 1.0 ;Ikemen feature
-keymenu.p2.playerno.offset = 156, 0 ;Ikemen feature
+keymenu.p2.playerno.offset = 50, 0 ;Ikemen feature
 keymenu.p2.playerno.font = 7,0,0, 247,0,0 ;Ikemen feature
 keymenu.p2.playerno.scale = 1.0, 1.0 ;Ikemen feature
 
