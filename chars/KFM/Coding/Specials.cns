@@ -1,4 +1,4 @@
-;========================<KUNG FU PALM>=======================
+;KUNG FU PALM
 [Statedef 1000]
 type = S
 movetype = A
@@ -78,7 +78,7 @@ ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
-fall = 1
+fall = 0
 fall.recover = 0
 forcestand = 1
 palFX.time = 12 * var(9)
@@ -178,7 +178,7 @@ x = 20
 type = PosAdd
 trigger1 = AnimElem = 3
 trigger2 = AnimElem = 13
-x = 10
+x = 12
 
 [State 1010, PosAdd Elem 5]
 type = PosAdd
@@ -227,7 +227,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 0
+fall.recover = 1
 forcestand = 1
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
@@ -326,7 +326,7 @@ x = 20
 type = PosAdd
 trigger1 = AnimElem = 3
 trigger2 = AnimElem = 13
-x = 10
+x = 14
 
 [State 1020, PosAdd Elem 5]
 type = PosAdd
@@ -442,7 +442,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<EX KUNG FU PALM>===========================
+;EX KUNG FU PALM
 [Statedef 1030]
 type = S
 movetype = A
@@ -646,7 +646,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<HIT BY EX KUNG FU PALM>===========================
+;==<HIT BY EX KUNG FU PALM
 ;Being Launched
 [StateDef 1031]
 type = A
@@ -808,7 +808,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;========================<KUNG FU UPPER>=======================
+;KUNG FU UPPER
 [Statedef 1100]
 type = S
 movetype = A
@@ -1096,7 +1096,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<EX KUNG FU UPPER>===========================
+;EX KUNG FU UPPER
 [Statedef 1120]
 type = S
 movetype = A
@@ -1303,7 +1303,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<KUNG FU BLOW>=======================
+;KUNG FU BLOW
 [Statedef 1200]
 type = S
 movetype = A
@@ -1549,7 +1549,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX KUNG FU BLOW>=======================
+;EX KUNG FU BLOW
 [Statedef 1220]
 type = S
 movetype = A
@@ -1791,7 +1791,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==================<Collapsed TargetState>=====================
+;==<Collapsed TargetState>=
 ;Collapsed
 [Statedef 1290]
 type    = S
@@ -1850,7 +1850,7 @@ trigger1 = !AnimTime
 trigger1 = Anim = 1290
 value = IfElse(Alive,5120,5150)
 
-;========================<KUNG FU KNEE>=======================
+;KUNG FU KNEE
 [Statedef 1300]
 type = S
 movetype = A
@@ -2391,7 +2391,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1301
 
-;========================<EX KUNG FU KNEE>=======================
+;EX KUNG FU KNEE
 [Statedef 1330]
 type = S
 movetype = A
@@ -2686,7 +2686,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;========================<KUNG FU ZANKOU>=======================
+;KUNG FU ZANKOU
 [Statedef 1400]
 type = S
 movetype = A
@@ -2986,7 +2986,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX KUNG FU ZANKOU>=======================
+;EX KUNG FU ZANKOU
 [Statedef 1430]
 type = S
 movetype = A

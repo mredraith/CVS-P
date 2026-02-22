@@ -110,7 +110,7 @@ air.gethit.airrecover.down = 1.5      ;Extra y-velocity for holding down during 
 [Movement]
 airjump.num = 0      ;Number of air jumps allowed (opt)
 airjump.height = 35  ;Minimum distance from ground before you can air jump (opt)
-yaccel = .58         ;Vertical acceleration
+yaccel = .5         ;Vertical acceleration
 stand.friction = .85  ;Friction coefficient when standing
 crouch.friction = .82 ;Friction coefficient when crouching
 stand.friction.threshold = 2          ;If player's speed drops below this threshold while standing, stop his movement **MUGEN 1.0**
