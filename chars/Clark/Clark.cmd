@@ -1245,3 +1245,246 @@ triggerall = StateType != A
 triggerall = StateNo != [200,699]
 trigger1 = ctrl || (StateNo = [100,101])
 trigger2 = var(5)
+
+
+[State -1, Standing Low Punch AI]
+type = ChangeState
+value = 200
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy&&roundstate=2&&StateType != A
+triggerall = p2bodydist x <=50&&(p2bodydist y = [-80,5])&&P2statetype != A&&P2statetype != C&&P2statetype != L&& random < (150 * (AIlevel ** 2 / 64.0))
+trigger1 = ctrl
+trigger2 = StateNo = 200 && Time >= 5 && p2bodydist x <=30 && random < (650 * (AIlevel ** 2 / 64.0))
+[State -1, Standing Medium Punch AI]
+type = ChangeState
+value = 210
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A && P2statetype != C
+triggerall = (p2bodydist x = [0, 50])&&(p2bodydist y = [-60,5]) && p2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (125 * (AIlevel ** 2 / 64.0))
+[State -1, Standing High Punch AI]
+type = ChangeState
+value = 220
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A
+triggerall = (p2bodydist x = [0, 84]) && (p2bodydist y = [ -40, 5]) && p2statetype != C && P2StateType != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (150 * (AIlevel ** 2 / 64.0))
+
+[State -1, Standing Low Kick AI]
+type = ChangeState
+value = 230 + (Abs(P2BodyDist X) <= 15) * 1
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A && P2statetype != A
+triggerall = (p2bodydist x = [0, 33]) && p2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (100 * (AIlevel ** 2 / 64.0))
+[State -1, Stomping]
+type = ChangeState
+value = 235 + 1*var(4)
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A && P2statetype != A
+triggerall = (p2bodydist x = [0, 58]) && p2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (100 * (AIlevel ** 2 / 64.0))
+trigger2 = (ctrl || (StateNo = [100,101])) && Random < (500 * (AILevel ** 2 / 64.0))
+trigger2 = EnemyNear, StateType = C
+trigger3 = var(4) && (p2bodydist x = [0, 35]) && MoveHit && Random < (300 * (AILevel ** 2 / 64.0))
+[State -1, Standing Medium Kick AI]
+type = ChangeState
+value = 240
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A && P2statetype != A && P2statetype != C
+triggerall = (p2bodydist x = [0, 68]) && p2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (100 * (AIlevel ** 2 / 64.0))
+[State -1, Standing High Kick AI]
+type = ChangeState
+value = 250 + (Abs(P2BodyDist X) <= 17) * 1
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A && P2statetype != C
+triggerall = (p2bodydist x = [0, 50]) && (p2bodydist y = [ -87, 5]) && p2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (150 * (AIlevel ** 2 / 64.0))
+
+[State -1, Crouching Low Punch]
+type = ChangeState
+value = 400
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A
+triggerall = (p2bodydist x = [0, 40]) &&(p2bodydist y = [-10,5]) && P2statetype != A && P2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (175 * (AIlevel ** 2 / 64.0))
+trigger2 = StateNo = 400 && Time >= 5 && p2bodydist x <=20 && random < (650 * (AIlevel ** 2 / 64.0))
+[State -1, Crouching Medium Punch]
+type = ChangeState
+value = 410
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A
+triggerall = (p2bodydist x = [0, 70]) &&(p2bodydist y = [-10,5]) && P2statetype != A && P2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (150 * (AIlevel ** 2 / 64.0))
+[State -1, Crouching High Punch]
+type = ChangeState
+value = 420
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A
+triggerall = (p2bodydist x = [0, 40]) &&(p2bodydist y = [-145,5]) && P2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (200 * (AIlevel ** 2 / 64.0))
+
+[State -1, Crouching Low Kick]
+type = ChangeState
+value = 430
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A
+triggerall = (p2bodydist x = [0, 52]) &&(p2bodydist y = [-50,25]) && P2statetype != A && P2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (50 * (AIlevel ** 2 / 64.0))
+trigger2 = StateNo = 430 && Time >= 7 && p2bodydist x <=22 && random < (650 * (AIlevel ** 2 / 64.0))
+[State -1, Crouching Medium Kick]
+type = ChangeState
+value = 440
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A
+triggerall = (p2bodydist x = [0, 58]) &&(p2bodydist y = [-50,25]) && P2statetype != A && P2statetype != L && !(enemynear, hitfall)
+trigger1 = ctrl && random < (125 * (AIlevel ** 2 / 64.0))
+[State -1, Crouching High Kick]
+type = ChangeState
+value = 450
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerall = AILevel && numenemy && roundstate=2 && StateType != A && P2statetype != A
+triggerall = (p2bodydist x = [0, 62]) && (p2bodydist y = [ -50, 50]) && p2statetype != L && p2statetype = S && !(enemynear, hitfall)
+trigger1 = ctrl && random < (175 * (AIlevel ** 2 / 64.0))
+
+[State -1, Jumping Low Punch]
+type = ChangeState
+value = 600
+triggerall = AILevel && numenemy&&roundstate=2&&statetype = A && (p2bodydist x = [0,48]) && (p2bodydist y = [ -56, 60]) && p2statetype != L
+trigger1 = ctrl && random < (75 * (AIlevel ** 2 / 64.0))
+[State -1, Jumping Medium Punch]
+type = ChangeState
+value = 610
+triggerall = AILevel && numenemy&&roundstate=2&&statetype = A && (p2bodydist x = [0, 56]) && (p2bodydist y = [ -60, 42]) && p2statetype != L 
+trigger1 = ctrl && random < (ifelse((vel x > 0 && p2statetype = A), 100, 75) * (AIlevel ** 2 / 64.0)) 
+[State -1, Jumping High Punch]
+type = ChangeState
+value = 620
+triggerall = AILevel && numenemy&&roundstate=2&&statetype = A && (p2bodydist x = [0, 52]) && (p2bodydist y = [ -104, 40]) && p2statetype != L 
+trigger1 = ctrl && random < (175 * (AIlevel ** 2 / 64.0)) && !(enemynear, hitfall)
+
+[State -1, Jumping Low Kick]
+type = ChangeState
+value = 630
+triggerall = AILevel && numenemy&&roundstate=2&&statetype = A && (p2bodydist x = [0, 58]) && (p2bodydist y = [ -68, 50]) && p2statetype != L 
+trigger1 = ctrl && random < (75 * (AIlevel ** 2 / 64.0))
+[State -1, Jumping Medium Kick]
+type = ChangeState
+value = 640
+triggerall = AILevel && numenemy&&roundstate=2&&statetype = A && (p2bodydist x = [0, 58]) && (p2bodydist y = [ -108, 48]) && p2statetype != L 
+trigger1 = ctrl && random < (100 * (AIlevel ** 2 / 64.0)) && !(enemynear, hitfall)
+[State -1, Jumping High Kick]
+type = ChangeState
+value = 650
+triggerall = AILevel && numenemy &&roundstate=2&&statetype = A && (p2bodydist x = [0, 67]) && (p2bodydist y = [ -35, 54]) && p2statetype != L 
+trigger1 = ctrl && random < (200 * (AIlevel ** 2 / 64.0)) && !(enemynear, hitfall) 
+
+[State -1, Gatling Attack]
+type = ChangeState
+value = ifElse(Power >= 500 && Random < 25, 1030, 1000)
+triggerAll = AIlevel && RoundState=2 && numenemy && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2StateType != A && P2StateType != C && P2StateType != L && P2MoveType != H
+triggerAll = (P2BodyDist x = [5,100]) && (p2dist y = [ -10, 5])
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100, 101])) && Random < (150 * (AILevel ** 2 / 64.0))
+trigger2 = var(5) && Random < (250 * (AILevel ** 2 / 64.0))
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+
+[State -1, Super Argentine Backbreaker]
+type = ChangeState
+value = ifElse(Random < 333, 1120, 1110)
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = S
+triggerAll = P2StateType != A && P2StateType != L
+triggerAll = (P2BodyDist x = [-20,50]) && P2BodyDist y = 0
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100, 101])) && Random < (150 * (AILevel ** 2 / 64.0))
+trigger2 = ctrl && (P2StateNo = [120,140]) && Random < (200 * (AILevel ** 2 / 64.0))
+trigger3 = var(5) && (P2BodyDist x = [0,25]) && random < (250 * (AIlevel ** 2 / 64.0))
+
+[State -1, Napalm Stretch]
+type = ChangeState
+value = ifElse(Power >= 500 && Random < 50, 1230, 1200)
+triggerAll=AIlevel && RoundState=2 && numenemy && StateType != A
+triggerall = !var(16) && (var(15) < 1 || var(20)) && enemynear, statetype = A
+triggerall = (p2bodydist x = [0, 60]) && (p2dist y = [ -115, -40]) && (p2statetype != L) && (enemynear, vel y >= 0)
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && random < (250 * (AIlevel ** 2 / 64.0))
+trigger2 = var(5) && random < (100 * (AIlevel ** 2 / 64.0))
+
+[State -1, Frankensteiner]
+type = ChangeState
+value = ifElse(Power >= 500 && Random < 150, 1330, 1310)
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerAll = AILevel && NumEnemy
+triggerAll = RoundState = 2 && StateType = S
+triggerAll = P2StateType != A && P2StateType != L
+triggerAll = (P2BodyDist x = [-20,40]) && P2BodyDist y = 0
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100, 101])) && Random < (200 * (AILevel ** 2 / 64.0))
+trigger2 = ctrl && (P2StateNo = [120,140]) && Random < (200 * (AILevel ** 2 / 64.0))
+trigger3 = var(5) && (P2BodyDist x = [0,30]) && random < (250 * (AIlevel ** 2 / 64.0))
+
+[State -1, Mount Tackle]
+type = ChangeState
+value = ifElse(Power >= 500 && Random < 150, 1430, 1400)
+triggerAll = AIlevel && RoundState=2 && numenemy && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2StateType != A && P2StateType != C && P2StateType != L
+triggerAll = (P2BodyDist x = [5,70]) && (p2dist y = [ -10, 5])
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100, 101])) && Random < (50 * (AILevel ** 2 / 64.0))
+trigger2 = var(5) && Random < (250 * (AILevel ** 2 / 64.0))
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (25 * (AILevel ** 2 / 64.0))
+
+[State -1, Shining Wizard]
+type = ChangeState
+value = ifElse(Power >= 500 && Random < 133, 1530, 1500)
+triggerAll = AIlevel && RoundState=2 && numenemy && StateType != A
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2StateType != A && P2StateType = C && P2StateType != L
+triggerAll = (P2BodyDist x = [5,100]) && (p2dist y = [ -10, 5])
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100, 101])) && Random < (150 * (AILevel ** 2 / 64.0))
+trigger2 = var(5) && Random < (350 * (AILevel ** 2 / 64.0))
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (25 * (AILevel ** 2 / 64.0))
+
+[State -1, Ultra Argentine Backbreaker]
+type = ChangeState
+value = ifElse(Power >= 2000 && Random < 333, 3050, 3000)
+triggerall = !var(16) && (var(15) < 1 || var(20))
+triggerAll = AILevel && NumEnemy && Power >= 1000
+triggerAll = RoundState = 2 && StateType = S
+triggerAll = P2StateType != A && P2StateType != L && P2MoveType != H
+triggerAll = (P2BodyDist x = [-20,45]) && P2BodyDist y = 0
+trigger1 = ctrl && Random < (175 * (AIlevel ** 2 / 64.0))
+trigger2 = ctrl && (P2StateNo = [120,140]) && Random < (200 * (AILevel ** 2 / 64.0))
+trigger3 = var(6) && random < (350 * (AIlevel ** 2 / 64.0))
+
+[State -1, Napalm Strike]
+type = ChangeState
+value = 3100
+triggerAll=AIlevel && RoundState=2 && numenemy && StateType != A && Power >= 1000
+triggerall = !var(16) && (var(15) < 1 || var(20)) && enemynear, statetype = A
+triggerall = (p2bodydist x = [0, 57]) && (p2dist y = [ -110, -40]) && (p2statetype != L)
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && random < (250 * (AIlevel ** 2 / 64.0))
+trigger2 = var(6) && random < (100 * (AIlevel ** 2 / 64.0))
+
+[State -1, Running Three]
+type = ChangeState
+value = ifElse(Power >= 2000 && Random < 2000, 3250, 3200)
+triggerAll = AIlevel && RoundState=2 && numenemy && StateType != A && Power >= 1000
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2StateType != A && P2StateType != C && P2StateType != L
+triggerAll = (P2BodyDist x = [0,50]) && (p2dist y = [ -10, 5])
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100, 101])) && Random < (50 * (AILevel ** 2 / 64.0))
+trigger2 = var(6) && Random < (250 * (AILevel ** 2 / 64.0))
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (25 * (AILevel ** 2 / 64.0))
+
+[State -1, Rolling Sphere]
+type = ChangeState
+value = 3300
+triggerAll = AIlevel && RoundState=2 && numenemy && StateType != A && Power >= 3000
+triggerAll = !var(16) && (var(15) < 1 || var(20))
+triggerAll = P2StateType != A && P2StateType != L
+triggerAll = (P2BodyDist x = [0,60]) && (p2dist y = [ 0, 5])
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100, 101])) && Random < (100 * (AILevel ** 2 / 64.0))
+trigger2 = var(6) && Random < (500 * (AILevel ** 2 / 64.0))
+trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (25 * (AILevel ** 2 / 64.0))
