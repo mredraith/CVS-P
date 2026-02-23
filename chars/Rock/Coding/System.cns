@@ -56,12 +56,12 @@ life = 1000			;Amount of life to start with
 attack = 100		;attack power (more is stronger)
 defence = 100		;defensive power (more is stronger)
 fall.defence_up = 50	;Percentage to increase defense everytime player is knocked down
-liedown.time = 50		;Time which player lies down for, before getting up
-airjuggle = 0		;Number of points for juggling
+liedown.time = 15		;Time which player lies down for, before getting up
+airjuggle = 15		;Number of points for juggling
 sparkno = s8010			;Default hit spark number for HitDefs
 guard.sparkno = s8000	;Default guard spark number
 KO.echo = 0			;1 to enable echo on KO
-volume = 200			;Volume offset (negative for softer)
+volume = 100			;Volume offset (negative for softer)
 IntPersistIndex = 58	;Variables with this index and above will not have their values
 FloatPersistIndex = 40  ;reset to 0 between rounds or matches. There are 60 int variables,
   				;indexed from 0 to 59, and 40 float variables, indexed from 0 to 39.
