@@ -13,13 +13,13 @@ localcoord = 427,240
 
 ; Files for the player
 [Files]
-cmd     =Command.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =Command.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =Sprite.sff
-anim    =Anim.air
-sound   =Sound.snd
+sprite =Sprite.sff
+anim =Anim.air
+sound =Sound.snd
 pal1=Colors/Sabockee_1.act
 pal2=Colors/Sabockee_2.act
 pal3=Colors/Sabockee_3.act

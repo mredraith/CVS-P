@@ -11,23 +11,23 @@ name = "Cammy"
 displayname = "Cammy"
 versiondate =12,14,2011
 mugenversion=1.0;06,14,2003
-author      ="chuchoryu & Varo_Hades"
+author ="chuchoryu & Varo_Hades"
 pal.defaults=1,2,3,4,5,6,7
 
 [Files]
 movelist = movelist.dat
-cmd     =Command.cmd
-st      =States/System.st
+cmd =Command.cmd
+st =States/System.st
 stcommon=common1.cns
-sprite  =Sprite.sff
+sprite =Sprite.sff
 
 ;************************************
 ;Choose Cammy's Age!
 ;Remove ";" from the desired one.
 ;Add ";" in front of the other 2.
 
-;cns     =Constants/Constants-SF2.cns;SF2 Age
-cns     =Constants/Constants-SF4.cns;SF4 Age
+;cns =Constants/Constants-SF2.cns;SF2 Age
+cns =Constants/Constants-SF4.cns;SF4 Age
 
 ;************************************
 
@@ -35,15 +35,15 @@ cns     =Constants/Constants-SF4.cns;SF4 Age
 ;Choose Cammy's Stand!
 
 ;anim	=Anims/AnimSF2.air;SF2 StAnce
-anim    =Anims/AnimSF4.air;SF4 Stance
+anim =Anims/AnimSF4.air;SF4 Stance
 
 ;************************************
 
 ;************************************
 ;Choose Cammy's Sound!
 
-;sound   =Sounds/CAMMYSFA.snd
-sound   =Sounds/CAMMYSF4.snd
+;sound =Sounds/CAMMYSFA.snd
+sound =Sounds/CAMMYSF4.snd
 
 ;************************************
 

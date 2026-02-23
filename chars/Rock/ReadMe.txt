@@ -1,14 +1,14 @@
              
-======================| Rock Howard by DivineWolf|=========================== [12/XX/2018]            
+======================| Rock Howard by DivineWolf|=========================== [9/XX/2023]            
 
  - Email: kaiba_klone@yahoo.com
  - www.trinitymugen.net
- - Customized version of SNKP's Rock Howard character, for Linux/Win/1.0 Mugen
+ - Customized version of SNKP's Rock Howard character for Mugen 1.0
 
 ------------------<Features>---------------------
 
  - All essential stuff
- - Gameplay mixed from several games, including CvS2, KOF, SFZ3, and SF3
+ - Gameplay mixed from several games, including CvS2, KOF, SFA3, and SF3
  - Special intro versus Terry, Geese, Kain, and Infinite's B. Jenet
  - Special winpose if p2 is KO'd with Raising Storm/Neo Deadly Rave
  - Special winpose if p2 is KO'd with Shine Knuckle
@@ -17,6 +17,8 @@
  - Color Separation(thanks Froz, Sky79, Sage, and jtp!)
  - Vans' "Tiny Buffering" System
  - Vans' Chizuru "Skill Lock" compatibility
+ - AI by Kamekaze
+ - Configuration file that gives options for certain FX 
    
 ---------------<Character Info>------------------
 
@@ -73,7 +75,7 @@ What do you expect of a character with a fused moveset? =P It's all at your disp
  Rage Run - "Save"			D, DB, B, + MK
  Rage Run - "Shift"			D, DB, B, + HK
  Crack Counter(EX)			D, DF, F, + any kick
- Shinku Nage(EX)			360º + any punch
+ Shinku Nage(EX)			360  + any punch
   -Brake				Press any 2 punches during Shinku Nage
   -Rasetsu 				HOLD any 2 punches during Shinku Nage
 
@@ -131,7 +133,7 @@ What do you expect of a character with a fused moveset? =P It's all at your disp
 - Ark Kick and (EX)Rage Run "Dunk" are overheads
 - The starting frames of Ark Kick can be special/super cancelled
 - The start up hit of (EX)Rising Tackle can not be air guarded
-- EX Hard Edge bounces opponents off walls and resets the juggle points
+- EX Hard Edge re-stands and collapses p2, allowing for extensions
 - EX Rage Run "Dunk" ground bounces opponents and resets the juggle points
 - Rage Run "Shift" allows Rock to quickly slip behind foes
 - Crack Counter has 3 different variants, depedant on which strength level kick used to perform it
@@ -139,7 +141,7 @@ What do you expect of a character with a fused moveset? =P It's all at your disp
    *MK counters high/mid normal physical attacks
    *HK counters low normal physical attacks
 - EX Crack Counter can counter any type of physical attack and functions like Geese's "Chuudan Atemi Nage" technique
-- Rock will actually send out 2 Reppukens for EX Reppuken. It also otgs.
+- Rock will actually send out 2 Reppukens for EX Reppuken. It also OTGs.
 - (EX)Shinku Nage is a grab
 - (EX)Shinku Nage/Rasetsu does not add to the juggle limit allowing Rock to follow up with any attack
 - EX Shinku Nage can combo and auto breaks
@@ -224,6 +226,7 @@ MAX MODE:
  - Ness
  - Sean Altly
  - li_kun
+ - Kamekaze
    
 --------------------<Shoutouts>----------------------
 
@@ -253,7 +256,6 @@ MAX MODE:
  - Sabaki 
  - Choujin 
  - Club Syn
- - Kamekaze 
  - ArielAlexCo 
  - ScruffyDragon
  - Reu(RIP)

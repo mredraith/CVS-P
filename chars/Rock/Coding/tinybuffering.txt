@@ -223,6 +223,12 @@ triggerall = root, HitPauseTime = 0 ;^^ root, HitPausetime = 1
 trigger1 = var(23)
 var(23) = -1
 
+[State 10371, QCBD Dec]
+type = VarAdd
+triggerall = root, HitPauseTime = 0 ;^^ root, HitPausetime = 1
+trigger1 = var(20)
+var(20) = -1
+
 [State 10371, QCB Dec]
 type = VarAdd
 triggerall = root, HitPauseTime = 0 ;^^ root, HitPausetime = 1
@@ -234,12 +240,6 @@ type = VarAdd
 triggerall = root, HitPauseTime = 0 ;^^ root, HitPausetime = 1
 trigger1 = var(21)
 var(21) = -1
-
-[State 10371, QCBD Dec]
-type = VarAdd
-triggerall = root, HitPauseTime = 0 ;^^ root, HitPausetime = 1
-trigger1 = var(20)
-var(20) = -1
 
 ;--------------------------[BUFFER DEFINITION]---------------------------------;
 ;----------------------------[BUTTON BUFFER]-----------------------------------;
@@ -269,37 +269,37 @@ var(20) = -1
 [State 10371, LP Init]
 type = VarSet
 trigger1 = command = "x"
-var(0) = 2 ;(3)This defines how long the buffering should be for this button.
+var(0) = 3 ;(3)This defines how long the buffering should be for this button.
 
 [State 10371, MP Init]
 type = VarSet
 trigger1 = command = "y"
-var(1) = 2
+var(1) = 3
 
 [State 10371, HP Init]
 type = VarSet
 trigger1 = command = "z"
-var(2) = 2
+var(2) = 3
 
 [State 10371, LK Init]
 type = VarSet
 trigger1 = command = "a"
-var(3) = 2
+var(3) = 3
 
 [State 10371, MK Init]
 type = VarSet
 trigger1 = command = "b"
-var(4) = 2
+var(4) = 3
 
 [State 10371, HK Init]
 type = VarSet
 trigger1 = command = "c"
-var(5) = 2
+var(5) = 3
 
 [State 10371, START Init]
 type = VarSet
 trigger1 = command = "start"
-var(6) = 2
+var(6) = 3
 
 [State 10371, Neg LP Init]
 type = VarSet
@@ -353,15 +353,15 @@ var(13) = 1
 
 [State 10371, DOUBLE BUTTON init(LP+LK)]
 type = null
-trigger1 = var(14) := (((var(0) = [1,2]) && (var(3) = [1,2]))) ;var(0) is LP and var(3) is LK.
+trigger1 = var(14) := (((var(0) = [1,3]) && (var(3) = [1,3]))) ;var(0) is LP and var(3) is LK.
 
 [State 10371, DOUBLE BUTTON init(MP+MK)]
 type = null
-trigger1 = var(15) := (((var(1) = [1,2]) && (var(4) = [1,2])))
+trigger1 = var(15) := (((var(1) = [1,3]) && (var(4) = [1,3])))
 
 [State 10371, DOUBLE BUTTON init(HP+HK)]
 type = null
-trigger1 = var(16) := (((var(2) = [1,2]) && (var(5) = [1,2])))
+trigger1 = var(16) := (((var(2) = [1,3]) && (var(5) = [1,3])))
 
 ;----------------------------[COMMAND BUFFER]----------------------------------;
 ;This is where we shall define the joystick commands that will be buffered.
@@ -396,44 +396,44 @@ trigger1 = var(16) := (((var(2) = [1,2]) && (var(5) = [1,2])))
 type = VarSet
 trigger1 = p2dist X >= 0 && command = "HCBF" 
 trigger2 = p2dist X < 0 && command = "HCFB" 
-var(41) = 9
+var(41) = 13;8
 
 [State 10371, QCFx2 Init]
 type = VarSet
 trigger1 = p2dist X >= 0 && command = "QCFx2" 
 trigger2 = p2dist X < 0 && command = "QCBx2" 
-var(40) = 9
+var(40) = 18;8
 
 [State 10371, 360 Init]
 type = VarSet
 trigger1 = p2dist X >= 0 && command = "360" 
 trigger2 = p2dist X < 0 && command = "360" 
-var(24) = 13
+var(24) = 10;8-12
 
 [State 10371, CDU Init]
 type = VarSet
 triggerall = (var(29) = [1,8])
 trigger1 = p2dist X >= 0 && command = "CDU" 
 trigger2 = p2dist X < 0 && command = "CDU" 
-var(23) = 8
-
-[State 10371, QCB Init]
-type = VarSet
-trigger1 = p2dist X >= 0 && command = "QCB" 
-trigger2 = p2dist X < 0 && command = "QCF" 
-var(22) = 7
-
-[State 10371, QCF Init]
-type = VarSet
-trigger1 = p2dist X >= 0 && command = "QCF" 
-trigger2 = p2dist X < 0 && command = "QCB" 
-var(21) = 7
+var(23) = 11;6
 
 [State 10371, QCBD Init]
 type = VarSet
 trigger1 = p2dist X >= 0 && command = "QCBD" 
 trigger2 = p2dist X < 0 && command = "QCFD" 
-var(20) = 7
+var(20) = 13;6
+
+[State 10371, QCB Init]
+type = VarSet
+trigger1 = p2dist X >= 0 && command = "QCB" 
+trigger2 = p2dist X < 0 && command = "QCF" 
+var(22) = 13;5
+
+[State 10371, QCF Init]
+type = VarSet
+trigger1 = p2dist X >= 0 && command = "QCF" 
+trigger2 = p2dist X < 0 && command = "QCB" 
+var(21) = 13;5
 ;---------------------------------
 ;Charge Commands Buffers
 ;[State 10371, Charge Back]

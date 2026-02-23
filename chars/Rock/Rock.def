@@ -13,32 +13,32 @@ localcoord = 427,240
 
 ; Files for the player
 [Files]
-movelist = movelist.dat
-cmd =DivineRock.cmd
+cmd =Rock.cmd
 cns =Coding/System.cns
 st =Coding/System.cns
 stcommon =common1.cns
-sprite =DivineRock.sff
-anim =DivineRock.air
-sound =DivineRock.snd
+sprite =Rock.sff
+anim =Rock.air
+sound =Rock.snd
 pal1=Colors/QF_Default.act
-pal2=Colors/sabockee_Custom6.act
-pal3=Colors/CGU_SF4-6.act
-pal4=Colors/CT87_YoungGeese.act
-pal5=Colors/sabockee_Custom2.act
-pal6=Colors/QF_Custom2.act
+pal2=Colors/QF_Custom1.act
+pal3=Colors/QF_Custom2.act
+pal4=Colors/QF_Custom3.act
+pal5=Colors/QF_Custom4.act
+pal6=Colors/QF_Custom5.act
 pal7=Colors/QF_Custom6.act
-pal8=Colors/CGU_SF4-9.act
-pal9=Colors/sabockee_Custom7.act
-pal10=Colors/CT87_StuntinLikeMyDaddy.act
-pal11=Colors/CGU_SF4LeeChaolan.act
-pal12=Colors/QF_Custom8.act
+pal8=Colors/QF_Custom7.act
+pal9=Colors/QF_Custom8.act
+pal10=Colors/QF_Custom9.act
+pal11=Colors/QF_Custom10.act
+pal12=Colors/QF_Custom11.act
 st1=Coding/Normal.cns
 st2=Coding/Specials.cns
 st3=Coding/Helpers.cns
 st4=Coding/Supers.cns
 st5=Coding/tinybuffering.txt
-
+st6=Coding/AI.st
+st7=Config.txt
 ; Arcade mode
 [Arcade]
 intro.storyboard =

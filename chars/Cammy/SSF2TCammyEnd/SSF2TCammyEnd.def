@@ -7,32 +7,32 @@ startscene = 0 ; Scene Start
 
 [Scene 0];Bison defeated!
 fadein.time = 40
-fadeout.time = 30   
+fadeout.time = 30 
 layerall.pos = 0,0
-layer0.anim =  0
+layer0.anim = 0
 end.time = 2500
-bgm = 28-cammy_ending.mp3       
+bgm = 28-cammy_ending.mp3 
 bgm.loop = 0;1 
 
 [Scene 1];With Delta Red
 fadein.time = 30 
 fadeout.time = 30
 layerall.pos = 0,0
-layer0.anim =  1
+layer0.anim = 1
 end.time = 2050
 
 [Scene 2];Helicopter
 fadein.time = 30 
 fadeout.time = 30
 layerall.pos = 0,0
-layer0.anim =  2
+layer0.anim = 2
 end.time = 500
 
 [Scene 3];Capcom/Cammy Logo
 fadein.time = 30 
 fadeout.time = 30
 layerall.pos = 0,0
-layer0.anim =  3
+layer0.anim = 3
 end.time = 600
 
 [Begin Action 0]

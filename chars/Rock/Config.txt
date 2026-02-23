@@ -1,0 +1,95 @@
+;==============================================================================================
+;==================================<CONFIGURATION SETUP>=======================================
+;==============================================================================================
+;DO NOT MESS WITH ANYTHING IN THIS SECTION!!!
+;INITIALIZE
+[Statedef 5900];Don't touch!
+type = S;Don't touch!
+
+[State 5900, Varreset];Don't touch!
+type = varrangeset;Don't touch!
+trigger1 = !roundsexisted;Don't touch!
+value = 0;Don't touch!
+
+[State 5900, Varreset];Don't touch!
+type = varrangeset;Don't touch!
+trigger1 = !roundsexisted;Don't touch!
+fvalue = 0;Don't touch!
+
+
+
+
+
+;================================================================================================
+;================================================================================================
+;THIS IS THE SECTION YOU WANT!!
+;**CUSTOMIZABLE STUFF**
+
+;Power Aura Option
+[State 5900, Power Aura Style];(0 = Phantom Style, 1 = Divine Style)
+type = VarSet;Don't touch!
+trigger1 = 1;Don't touch!
+fvar(30) = 0;<---Change this value!!!
+
+;EX Special FX Option
+[State 5900, EX Special FX Style];(0 = Phantom Style, 1 = Divine Style)
+type = VarSet;Don't touch!
+trigger1 = 1;Don't touch!
+fvar(31) = 0;<---Change this value!!!
+
+;================================================================================================
+;================================================================================================
+
+
+
+
+
+;DO NOT MESS WITH ANYTHING IN THIS SECTION!!!
+;INTROS
+[State 5900, Intro vs Terry]
+type = ChangeState
+trigger1 = NumEnemy
+trigger1 = !RoundsExisted && !(Enemy,RoundsExisted)
+trigger1 = !(TeamMode = Simul) && !(Enemy,TeamMode = Simul)
+trigger1 = Enemy, Name = "Terry Bogard" && enemy,authorname = "Jmorphman" || Enemy, Name = "Terry Bogard" || Enemy, Name = "cvsterry" || Enemy, Name = "Terry"
+value = 192
+
+[State 5900, Intro vs Geese]
+type = ChangeState
+trigger1 = NumEnemy
+trigger1 = !RoundsExisted && !(Enemy,RoundsExisted)
+trigger1 = !(TeamMode = Simul) && !(Enemy,TeamMode = Simul)
+trigger1 = Enemy, Name = "Geese Howard" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsgeese_normal" || Enemy, Name = "cvsgeese_ex" || Enemy, Name = "cvsgeese"
+value = 193
+
+[State 5900, Intro vs Kain]
+type = ChangeState
+trigger1 = NumEnemy
+trigger1 = !RoundsExisted && !(Enemy,RoundsExisted)
+trigger1 = !(TeamMode = Simul) && !(Enemy,TeamMode = Simul)
+trigger1 = Enemy, Name = "Kain R.Heinlein" && enemy,authorname = "Infinite" || Enemy, Name = "Kain R.Heinlein" || Enemy, Name = "Kain R. Heinlein" || Enemy, Name = "Kain Heinlein"
+value = 194
+
+[State 5900, Intro vs Infinite's B.Jenet]
+type = ChangeState
+trigger1 = NumEnemy
+trigger1 = !RoundsExisted && !(Enemy,RoundsExisted)
+trigger1 = !(TeamMode = Simul) && !(Enemy,TeamMode = Simul)
+trigger1 = Enemy, Name = "Bonne Jenet" && enemy,authorname = "Infinite"
+value = 196
+
+[State 5900, Turns Intro]
+type = ChangeState
+trigger1 = TeamMode = Turns
+trigger1 = !RoundsExisted && RoundNo >= 2
+value = 6900
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1
+value = 191 
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 0
