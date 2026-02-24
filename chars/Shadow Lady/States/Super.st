@@ -770,7 +770,7 @@ channel = 0
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 3
-x = 50
+x = 10
 
 [State 3100, Dash sound]
 type = PlaySnd
@@ -793,27 +793,27 @@ ownPal = 1
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 4
-x = 50
+x = 10
 
 [State 3100, VelSet]
 type = VelSet
 trigger1 = AnimElem = 4
-x = 50
+x = 10
 
 [State 3100, VelSet]
 type = VelSet
 trigger1 = AnimElem = 5
-x = 50
+x = 10
 
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 6
-x = 50
+x = 10
 
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 7
-x = 50
+x = 10
 
 [State 3100, Woosh Sound]
 type = PlaySnd
@@ -830,7 +830,7 @@ value = 1,5
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 20
-x = 50
+x = 10
 
 [State 3100, Voice 3]
 type = PlaySnd
@@ -846,7 +846,7 @@ player = 12,12
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 36
-x = 50
+x = 10
 
 [State 3100, Woosh Sound]
 type = PlaySnd
@@ -862,7 +862,7 @@ player = 24,24
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 37
-x = 50
+x = 10
 
 [State 3100, Width]
 type = Width
@@ -872,7 +872,7 @@ player = 32,32
 [State 3100, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 38
-x = 50
+x = 10
 
 [State 3100, Spark XY]
 type = Null
