@@ -26,18 +26,6 @@ sprite = Sprite.sff
 anim = Anim.air
 sound = Sound.snd
 ;ai = ai.ai
-pal1 = Palettes/Default.act
-pal2 = Palettes/CVSzc.act
-pal3 = Palettes/SFA3z.act
-pal4 = Palettes/CVS2kkk.act
-pal5 = Palettes/CVSc.act
-pal6 = Palettes/CVS2c.act
-pal7 = Palettes/3.act
-pal8 = Palettes/ESFAndy011.act
-pal9 = Palettes/Garuda.act
-pal10 = Palettes/kiri-Bobby.act
-pal11 = Palettes/kiri-Custom.act
-pal12 = Palettes/kiri-Mech.act
 
 [Palette Keymap]
 a = 1

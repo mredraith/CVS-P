@@ -59,7 +59,7 @@ trigger1 = !animtime
 value = 1010
 
 
-;--- Looping ---
+;Looping
 [Statedef 1010]
 type = S
 physics = N
@@ -162,8 +162,8 @@ priority = 4, Hit
 damage = ceil(ifelse(fvar(11) * ifelse(anim = 1010, 35, 28) < 7, 7, fvar(11) * ifelse(anim = 1010, 35, 28))), 7
 getpower = ifelse(!var(13), 144, 72) * !var(20), 36 * !var(20)
 givepower = 36, 36
-pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
-guard.pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
+pausetime = 2
+guard.pausetime = 2
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -208,8 +208,8 @@ priority = 4, Hit
 damage = ceil(ifelse(fvar(11) * ifelse(anim = 1010, 35, 28) < 7, 7, fvar(11) * ifelse(anim = 1010, 35, 28))), 7
 getpower = ifelse(!var(13), 144, 72) * !var(20), 36 * !var(20)
 givepower = 36, 36
-pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
-guard.pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
+pausetime = 2
+guard.pausetime = 2
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -252,7 +252,7 @@ trigger3 = anim = 1011 && animelem = 6
 value = 1020
 
 
-;--- Recover ---
+;Recover
 [Statedef 1020]
 type = S
 physics = N
@@ -348,7 +348,7 @@ trigger1 = !animtime
 value = 1031
 
 
-;--- Looping ---
+;Looping
 [Statedef 1031]
 type = S
 physics = N
@@ -405,8 +405,8 @@ priority = 4, Hit
 damage = ceil(ifelse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
 getpower = 0, 0
 givepower = 36, 36
-pausetime = 8, 8
-guard.pausetime = 8, 8
+pausetime = 3
+guard.pausetime = 3
 animtype = Hard
 air.animtype = Hard
 fall.animtype = Hard
@@ -445,7 +445,7 @@ trigger1 = !animtime
 value = 1032
 
 
-;--- Recover ---
+;Recover
 [Statedef 1032]
 type = S
 physics = N
@@ -740,7 +740,7 @@ trigger3 = frontedgebodydist <= 0
 value = 1110
 
 
-;--- Recover ---
+;Recover
 [Statedef 1110]
 type = A
 physics = N
@@ -1006,7 +1006,7 @@ trigger3 = frontedgebodydist <= 0
 value = 1131
 
 
-;--- Recover ---
+;Recover
 [Statedef 1131]
 type = A
 physics = N
@@ -1285,7 +1285,7 @@ trigger1 = pos y > -vel y
 value = 1210
 
 
-;--- Recover ---
+;Recover
 [Statedef 1210]
 type = S
 physics = S
@@ -1323,7 +1323,7 @@ value = 0
 ctrl = 1
 
 
-;--- Target Slammed Against Ground ---
+;Target Slammed Against Ground
 [Statedef 5980]
 type = A
 movetype = H
@@ -1639,7 +1639,7 @@ trigger1 = pos y > -vel y
 value = 1231
 
 
-;--- Recover ---
+;Recover
 [Statedef 1231]
 type = S
 physics = S
@@ -1748,7 +1748,7 @@ value = 0
 ctrl = 1
 
 
-;--- Throw ---
+;Throw
 [Statedef 1310]
 type = A
 physics = N
@@ -1922,7 +1922,7 @@ trigger1 = vel y > 0 && pos y > (24 - vel y)
 value = 1311
 
 
-;--- Slam ---
+;Slam
 [Statedef 1311]
 type = A
 physics = N
@@ -2038,7 +2038,7 @@ trigger1 = pos y > -vel y
 value = 1312
 
 
-;--- Land ---
+;Land
 [Statedef 1312]
 type = S
 physics = N
@@ -2075,7 +2075,7 @@ value = 0
 ctrl = 1
 
 
-;--- Target ---
+;Target
 [Statedef 1315]
 type = A
 movetype = H
@@ -2344,7 +2344,7 @@ value = 0
 ctrl = 1
 
 
-;--- Throw ---
+;Throw
 [Statedef 1340]
 type = A
 physics = N
@@ -2525,7 +2525,7 @@ trigger1 = vel y > 0 && pos y > (24 - vel y)
 value = 1341
 
 
-;--- Slam ---
+;Slam
 [Statedef 1341]
 type = A
 physics = N
@@ -2641,7 +2641,7 @@ trigger1 = pos y > -vel y
 value = 1342
 
 
-;--- Land ---
+;Land
 [Statedef 1342]
 type = S
 physics = N

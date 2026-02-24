@@ -681,7 +681,7 @@ trigger2 = var(6)
 type = changestate
 value = 1030
 triggerall = !AIlevel
-triggerall = (command = "pp" && var(45) >= 5) || (command = "236pp")
+triggerall = (command = "236pp")
 triggerall = roundstate = 2 && statetype != A
 triggerall = power >= 500 && var(20) <= 60
 trigger1 = ctrl || stateno = 40 || stateno = 52 || (stateno = [100, 101])
@@ -719,7 +719,7 @@ trigger2 = var(6)
 type = changestate
 value = 1000
 triggerall = !AIlevel
-triggerall = ((command = "x" || command = "y" || command = "z") && var(45) >= 5) || (command = "236x" || command = "236y" || command = "236z")
+triggerall = (command = "236x" || command = "236y" || command = "236z")
 triggerall = roundstate = 2 && statetype != A
 trigger1 = ctrl || stateno = 40 || stateno = 52 || (stateno = [100, 101])
 trigger2 = var(6)
