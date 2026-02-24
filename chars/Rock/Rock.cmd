@@ -221,8 +221,8 @@ time = 15;12
 
 [Command]
 name = "QCBD"
-command = ~B, DB, D
-time = 15
+command = $F
+time = 8
 
 [Command]
 name = "QCFD"
