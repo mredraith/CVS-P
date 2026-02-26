@@ -54,7 +54,7 @@ life = 1000
 attack = 100
 defence = 100
 power = 3000
-liedown.time = 15
+lieDown.time = 15
 airjuggle = 15
 KO.echo = 1
 poweradd = 100
@@ -68,8 +68,8 @@ IntPersistIndex = 0
 FloatPersistIndex = 0
 
 [Size]
-xScale = 0.633
-yScale = 0.735
+xScale = 0.83
+yScale = 0.96
 ground.back = 15
 ground.front = 15
 air.back = 15

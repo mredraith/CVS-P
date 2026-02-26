@@ -57,7 +57,7 @@ life = 1000			;Amount of life to start with
 attack = 100		;attack power (more is stronger)
 defence = 100		;defensive power (more is stronger)
 fall.defence_up = 50	;Percentage to increase defense everytime player is knocked down
-liedown.time = 15		;Time which player lies down for, before getting up
+lieDown.time = 15
 airjuggle = 15		;Number of points for juggling
 sparkno = s8010			;Default hit spark number for HitDefs
 guard.sparkno = s8000	;Default guard spark number
@@ -71,8 +71,8 @@ FloatPersistIndex = 40  ;reset to 0 between rounds or matches. There are 60 int 
   				;you need to override state 5900 from common1.cns.
 
 [Size]
-xscale = 0.8           ;Horizontal scaling factor.
-yscale = 0.8           ;Vertical scaling factor.
+xscale = 1           ;Horizontal scaling factor.
+yscale = 1           ;Vertical scaling factor.
 ground.back = 15     ;Player width (back, ground)
 ground.front = 16    ;Player width (front, ground)
 air.back = 12        ;Player width (back, air)

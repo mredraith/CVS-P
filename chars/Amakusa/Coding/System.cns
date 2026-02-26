@@ -49,7 +49,7 @@ life = 1000 ;Amount of life to start with
 attack = 100 ;attack power (more is stronger)
 defence = 100 ;defensive power (more is stronger)
 fall.defence_up = 50 ;Percentage to increase defense everytime player is knocked down
-lieDown.time = 15 ;Time which player lies down for, before getting up
+lieDown.time = 15
 airjuggle = 0 ;Number of points for juggling
 sparkno = s8010 ;Default hit spark number for HitDefs
 guard.sparkno = s8000 ;Default guard spark number
@@ -277,7 +277,7 @@ trigger2 = Enemy, Name = "Mai Shiranui" && enemy,authorname = "DivineWolf" || En
 trigger3 = Enemy, Name = "Cammy" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvscammy" || Enemy, Name = "Cammy" || Enemy, Name = "Cammy White"
 trigger4 = Enemy, Name = "Nakoruru" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsnakoruru" || Enemy, Name = "Nakoruru"
 trigger5 = Enemy, Name = "Millia Rage" && enemy,authorname = "muteki" || Enemy, Name = "Millia Rage" || Enemy, Name = "Millia" 
-trigger6 = Enemy, Name = "Genryusai Maki" && enemy,authorname = "HÅh" || Enemy, Name = "Maki" || Enemy, Name = "cvsmaki"
+trigger6 = Enemy, Name = "Genryusai Maki" && enemy,authorname = "Hh" || Enemy, Name = "Maki" || Enemy, Name = "cvsmaki"
 trigger7 = Enemy, Name = "Tifa" && enemy,authorname = "Shin Mako" || Enemy, Name = "Tifa" || Enemy, Name = "Tifa Lockhart " 
 trigger8 = Enemy, Name = "Morrigan Aensland" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsmorrigan" || Enemy, Name = "Morrigan" || Enemy, Name = "Morrigan Aensland"
 trigger9 = Enemy, Name = "cvsathena" || Enemy, Name = "Athena"

@@ -759,32 +759,6 @@ name = "db3k"
 command = ~B, D, DB, s
 time = 20
 
-;[Command]
-;name = "Counter_P"
-;command = F, D, DF, x
-;time = 16
-;[Command]
-;name = "Counter_P"
-;command = F, D, DF, y
-;time = 16
-;[Command]
-;name = "Counter_P"
-;command = F, D, DF, z
-;time = 16
-
-;[Command]
-;name = "Counter_K"
-;command = F, D, DF, a
-;time = 16
-;[Command]
-;name = "Counter_K"
-;command = F, D, DF, b
-;time = 16
-;[Command]
-;name = "Counter_K"
-;command = F, D, DF, c
-;time = 16
-
 [Command]
 name = "Counter_P"
 command = /$F, x+y

@@ -1,0 +1,2630 @@
+;------------------------------------------------------------------
+;Southtown Variation
+[Statedef 1000]
+type=S
+movetype=A
+physics=N
+anim=1000
+ctrl=0
+velset=0,0
+poweradd=72 * !var(20)
+sprpriority=1
+facep2=1
+
+[State 1000, VarSet]
+type=VarSet
+trigger1 =!AILevel&& !time
+var(10)=Ifelse(command="x"||command="rlsx",0,Ifelse(command="y"||command="rlsy",1,2))
+ignorehitpause=1
+[State 1000, VarSet]
+type=VarSet
+trigger1 =AILevel&& !time
+var(10)=Ifelse(p2bodydist x<40,0,Ifelse(p2bodydist x>=70,2,1))
+ignorehitpause=1
+
+[State 1000, reset]
+type=VarSet
+trigger1=animelemtime(3)<0
+var(11)=0
+ignorehitpause=1
+
+[State 1000, anim]
+type=ChangeAnim
+Trigger1=!time
+value=Ifelse(var(20),1003,1000+var(10))
+
+[State 1000, PosSet]
+type=PosSet
+trigger1=!time
+y=0
+
+[State 1000, Voice]
+type=PlaySnd
+trigger1=animelem=3
+value=s1000,0
+volumescale=255
+channel=0
+[State 1000, Move Snd]
+type=PlaySnd
+trigger1=animelem=4
+value=s1001,0
+volumescale=50
+channel=2
+
+[State 1000, Dust Helper]
+type=Helper
+trigger1=animelem=4
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-10,0
+pauseMoveTime=255
+superMoveTime=255
+ownPal=1
+
+[State 1000, SouthTown Var FX]
+type=Helper
+trigger1=animelemtime(4)>=0 && animelemtime(5)<0
+trigger1=time%2
+helperType=Normal
+stateNo=1005
+ID=1005
+name="SouthTownVarFX"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=const(size.xScale)
+size.yscale=const(size.yScale)
+ownPal=1
+ignorehitpause=1
+
+[State 1000, Skid Dust]
+type=Explod
+trigger1=animelem=5
+anim=8104
+sprPriority=3
+posType=P1
+pos=18,0
+scale=0.5,0.5
+ownpal=1
+[State 1000, Skid Snd]
+type=PlaySnd
+trigger1=animelem=5
+value=101,0
+channel=5
+
+[State 1000, Vel]
+type=Velset
+trigger1=animelem=4
+x=8+var(10)
+[State 1000, VelMul]
+type=VelMul
+trigger1=animelemtime(4)>=8+4*var(10)
+x=0.8725
+[State 1000, Vel]
+type=Velset
+trigger1=animelem=6
+x=0
+
+[State 1000, VarSet]
+type=VarSet
+triggerall=movecontact=1 && !var(11)
+trigger1=!AILevel && (animelemtime(4)>=1 && animelemtime(9)<0) 
+trigger1=(command="x"||command="y"||command="z") && (command="holdfwd")
+trigger2=AILevel && (animelemtime(4)>=1 && animelemtime(9)<0) 
+trigger2=random<500
+var(11)=1
+ignorehitpause=1
+[State 1000, VarSet]
+type=VarSet
+triggerall=movecontact=1 && !var(11)
+trigger1=!AILevel && (animelemtime(4)>=1 && animelemtime(9)<0) 
+trigger1=(command="a"||command="b"||command="c") && (command="holdfwd")
+trigger2=AILevel && (animelemtime(4)>=1 && animelemtime(9)<0) 
+trigger2=random<500
+var(11)=2
+ignorehitpause=1
+
+[State 1000, Hit]
+type=HitDef
+trigger1=!var(16) && (var(15)<2 || var(20))
+trigger1=!time
+attr=S, SA
+damage=42+7*var(10), 7
+priority=4, hit
+animtype=Hard
+getpower=ifelse(!var(13),144,72) * !var(20), 36 * !var(20)
+givepower=36,36
+guardflag=MA
+hitflag=MAF
+hitsound=S2,2
+guardsound=S130,0
+pauseTime=ifElse(var(20), 4, 12), ifElse(var(20), 8, 16)
+guard.pauseTime=ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
+sparkNo=-1 + 0 * (var(33) :=8013)
+guard.sparkNo=-1 + 0 * (var(34) :=8001)
+sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-71
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+ground.slidetime=16
+ground.hittime =16
+guard.hittime = (16) - 6
+ground.velocity=Ifelse(var(20),-2,-4),0
+air.velocity=Ifelse(var(20),-2,-4),-6
+guard.velocity=Ifelse(var(20),-5,-10)
+airguard.velocity =Ifelse(var(20),-4,-8), -3
+airguard.ctrlTime=16
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=Ifelse(var(20),.4,.5)
+fall=0
+air.fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd=-255,-255,-255,48
+envshake.time=14
+envshake.ampl=4
+envShake.freq=120
+
+[State 1000, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1000, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=AnimElemTime(5) =0
+movetype=I
+
+[State 1000, Change]
+type=ChangeState
+triggerall=var(11)
+trigger1=animelemtime(4)>2 && animelemtime(9)<0
+value=1000+(10*var(11))
+[State 1000, End]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;---------------------------------------------------------------------------
+;Charge
+[Statedef 1010]
+type=S
+movetype=A
+physics=N
+velset=0,0
+anim=1010
+poweradd=Ifelse(var(13),36,72) * !var(20)
+ctrl=0
+
+[State 1010, VelSet]
+type=VelSet
+trigger1=animelem=2
+x=8
+[State 1010, VelMul]
+type=VelMul
+trigger1 =animelemtime(2)>2 && animelemtime(3)<0
+x=.9725
+[State 1010, VelSet]
+type=VelSet
+trigger1=animelem=3
+x=0
+
+[State 1010, Swing Snd]
+type=Playsnd
+trigger1=animelem=2
+value=s1,2
+channel=1
+[State 1010, Voice]
+type=PlaySnd
+trigger1=AnimElem=2
+value=s0,5
+volumescale=255
+channel=0
+
+[State 1010, Dust Helper]
+type=Helper
+trigger1=animelem=2
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pauseMoveTime=255
+superMoveTime=255
+ownPal=1
+
+[State 1010, Snd]
+type=Playsnd
+trigger1=animelem=3
+value=s101,0
+channel=2
+[State 1010, Skid Dust]
+type=Explod
+trigger1=animelem=3
+anim=8104
+sprPriority=3
+posType=P1
+pos=20,0
+scale=0.5,0.5
+ownpal=1
+ignorehitpause=1
+
+[State 1010, Hit]
+type=HitDef
+trigger1=!var(16) && (var(15)<3 || var(20))
+trigger1=!time
+attr=S,SA        
+hitflag=MAF       
+guardflag=M       
+priority=4 ,Hit   
+damage=49,7
+getpower=ifelse(!var(13),144,72) * !var(20), 36 * !var(20)
+givepower=36,36
+hitsound=S2,2
+guardsound=s130, 0
+pausetime =Ifelse(var(20), 6, 12), 12
+guard.pausetime=12, 12
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 120), var(36) := -60
+animType=Hard
+air.animType=Back
+fall.animType=Back
+ground.type=Low
+ground.slidetime=14 + 8*var(9)
+ground.hittime=22 + 8*var(9)
+guard.hittime = (22 + 8*var(9)) - 6
+air.hittime=120
+ground.velocity=ceil(-5.51*(Ifelse(!var(20),1,.5)))
+guard.velocity=ceil(-5.51*(Ifelse(!var(20),1,.5)))
+air.velocity=-3.24, -7.73
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=.52
+fall=0
+air.fall=1
+fall.recover=0
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=Ifelse(random<=500,-3,3)
+
+[State 1010, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1010, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=AnimElemTime(3)>=0
+moveType=I
+
+[State 1010, End]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;---------------------------------------------------------------------------
+;Spin
+[Statedef 1020]
+type=S
+movetype=A
+physics=N
+velset=0,0
+anim=1020
+poweradd=Ifelse(var(13),36,72) * !var(20)
+ctrl=0
+
+[State 1020, Dust Helper]
+type=Helper
+trigger1=animelem=1
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pauseMoveTime=255
+superMoveTime=255
+ownPal=1
+
+[State 1020, VelSet]
+type=VelSet
+trigger1=animelem=3
+x=8
+y=-2
+[State 1020, VelMul]
+type=VelMul
+trigger1 =animelemtime(7)>0
+x=.9725
+[State 1020, VelSet]
+type=VelSet
+trigger1=animelem=13
+x=0
+
+[State 1020, Snd]
+type=playsnd
+trigger1=animelem=2
+value=s40, 0
+channel=3
+[State 1020, Dust]
+type=helper
+trigger1=animelem=2
+helpertype=normal
+stateno=8100
+ID=8100
+name="Jump Dust"
+postype=p1
+ownpal=1
+
+[State 1020, Swing Snd]
+type=Playsnd
+trigger1=animelem=3
+value=s1,5
+channel=1
+[State 1020, Voice]
+type=PlaySnd
+trigger1=AnimElem=2
+value=s0,6
+volumescale=255
+channel=0
+
+[State 1020, Snd]
+type=Playsnd
+trigger1=animelem=13
+value=s101,0
+channel=2
+[State 1020, Skid Dust]
+type=Explod
+trigger1=animelem=13
+anim=8104
+sprPriority=3
+posType=P1
+pos=20,0
+scale=0.5,0.5
+ownpal=1
+ignorehitpause=1
+
+[State 1020, StateTypeSet]
+type=StateTypeSet
+trigger1=animelem=2
+statetype=A
+
+[State 1020, Hit]
+type=HitDef
+trigger1=!var(16) && (var(15)<3 || var(20))
+trigger1=!time
+attr=A,SA        
+hitflag=MAF       
+guardflag=M       
+priority=4 ,Hit   
+damage=42,7
+getpower=ifelse(!var(13),144,72) * !var(20), 36 * !var(20)
+givepower=36,36
+hitsound=S2,5
+guardsound=s130, 0
+pausetime =Ifelse(var(20), 6, 12), 12
+guard.pausetime=12, 12
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 120), var(36) := -60
+animType=Hard
+air.animType=Back
+fall.animType=Back
+ground.type=High
+ground.slidetime=14 + 8*var(9)
+ground.hittime=22 + 8*var(9)
+guard.hittime = (22 + 8*var(9)) - 6
+air.hittime=120
+ground.velocity=ceil(Ifelse(var(55),-3,-5.51)*(Ifelse(!var(20),1,.5))),-9
+guard.velocity=ceil(Ifelse(var(55),-3,-5.51)*(Ifelse(!var(20),1,.5)))
+air.velocity=-3.24, -7.73
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=.48
+fall=1
+fall.recover=0
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=Ifelse(random<=500,-3,3)
+
+[State 1020, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1020, End]
+type=ChangeState
+trigger1=movecontact=1
+trigger2=!AnimTime
+value=1025
+;---------------------------------------------------------------------------
+;Spin Contact
+[Statedef 1025]
+type=A
+movetype=I
+physics=N
+anim=1025
+velset=0,0
+ctrl=0
+movehitpersist=1
+
+[State 1025, VelSet]
+type=VelSet
+trigger1=!time
+x=-4
+y=-9
+[State 1025, VelAdd]
+type=VelAdd
+trigger1=time>1
+y=0.52
+[State 1025, VelMul]
+type=VelMul
+trigger1 =animelemtime(4)>0
+x=.9725
+
+[State 1025, End]
+type=ChangeState
+trigger1=time>1
+trigger1=pos y > -vel y
+value=1030
+;-------------------------------------------------------------------------
+;Spin Contact Land
+[Statedef 1030]
+type=S
+movetype=I
+physics=S
+anim=1030
+velset=0, 0
+movehitpersist=1
+
+[State 1030, Voice]
+type=PlaySnd
+trigger1=AnimElem=1
+value=s5950,0
+channel=0
+
+[State 1030, PosSet]
+type=PosSet
+trigger1=1
+y=0
+
+[State 1030, Landing Sound]
+type=PlaySnd
+trigger1=!time
+value=s52,0
+channel=3
+[State 1030, Landing Dust Explod]
+type=Explod
+trigger1=!time
+anim=8102
+sprpriority=-3
+postype=P1
+pos=0,0
+scale=0.5,0.5
+sprpriority=-3
+pauseMovetime=-1
+superMovetime=-1
+ownPal=1
+
+[State 1030, End]
+type=ChangeState
+trigger1=!animtime
+value=0
+ctrl=1
+;------------------------------------------------------------------
+;EX Southtown Variation
+[Statedef 1050]
+type=S
+movetype=A
+physics=N
+anim=1050
+ctrl=0
+velset=0,0
+poweradd=-500
+sprpriority=1
+facep2=1
+
+[State 1050, VarSet]
+type=VarSet
+trigger1 =!time
+var(10)=3
+ignorehitpause=1
+[State 1050, MAX Timer Drain]
+type=VarAdd
+trigger1=!Time
+trigger1=var(20) > 0
+var(20)=-250
+[State 1050, EX Flash]
+type=VarSet
+trigger1=!Time
+var(25)=45
+[State 1050, EX FX]
+type=Explod
+trigger1=!Time
+anim=8210
+sprPriority=3
+posType=p1
+pos=ceil(10*const(size.xscale)), ceil(-65*const(size.yscale))
+scale=0.5, 0.5
+pauseMoveTime=-1
+superMoveTime=-1
+ownPal=1
+[State 1050, EX-SND]
+type=PlaySnd
+trigger1 =!time
+value=s0,1000
+channel=3
+
+[State 1050, PosSet]
+type=PosSet
+trigger1=!time
+y=0
+
+[State 1050, Voice]
+type=PlaySnd
+trigger1=animelem=3
+value=s1000,0
+volumescale=255
+channel=0
+[State 1050, Move Snd]
+type=PlaySnd
+trigger1=animelem=4
+value=s1001,0
+volumescale=50
+channel=1
+
+[State 1050, Dust Helper]
+type=Helper
+trigger1=animelem=4
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-10,0
+pauseMoveTime=255
+superMoveTime=255
+ownPal=1
+
+[State 1050, SouthTown Var FX]
+type=Helper
+trigger1=animelemtime(4)>=0 && animelemtime(5)<0
+trigger1=time%2
+helperType=Normal
+stateNo=1005
+ID=1005
+name="SouthTownVarFX"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=const(size.xScale)
+size.yscale=const(size.yScale)
+ownPal=1
+ignorehitpause=1
+
+[State 1050, Vel]
+type=Velset
+trigger1=animelem=4
+x=10
+[State 1050, VelMul]
+type=VelMul
+trigger1=animelemtime(4)>=18
+x=0.8725
+[State 1050, Vel]
+type=Velset
+trigger1=animelem=6
+x=0
+
+[State 1050, Skid Dust]
+type=Explod
+trigger1=animelem=5
+anim=8104
+sprPriority=3
+posType=P1
+pos=18,0
+scale=0.5,0.5
+ownpal=1
+[State 1050, Skid Snd]
+type=PlaySnd
+trigger1=animelem=5
+value=101,0
+channel=5
+
+[State 1050, Hit]
+type=HitDef
+trigger1=!time
+attr=S, SA
+damage=42, 7
+priority=4, hit
+animtype=Hard
+getpower=0,0
+givepower=35, 35
+guardflag=MA
+hitflag=MAF
+hitsound=S2,2
+guardsound=S130,0
+pauseTime=7, 7
+guard.pauseTime=12,16
+sparkNo=-1 + 0 * (var(33) :=8013)
+guard.sparkNo=-1 + 0 * (var(34) :=8001)
+sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-71
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+ground.slidetime=16
+ground.hittime =16
+guard.hittime = (16) - 6
+ground.velocity=-3,0
+air.velocity=-4,-6
+guard.velocity=-5
+airguard.velocity=-4,-3
+airguard.ctrlTime=16
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=0.42
+fall=0
+air.fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd=-255,-255,-255,48
+envshake.time=14
+envshake.ampl=4
+envShake.freq=120
+
+[State 1050, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1050, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=AnimElemTime(5) =0
+movetype=I
+
+[State 1050, Change]
+type=ChangeState
+triggerall=movecontact
+trigger1=animelemtime(4)>2 && animelemtime(9)<0
+value=1060
+[State 1050, End]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;---------------------------------------------------------------------------
+;EX Charge
+[Statedef 1060]
+type=S
+movetype=A
+physics=N
+velset=0,0
+anim=1010
+ctrl=0
+
+[State 1060, EX Flash]
+type=VarSet
+trigger1=!Time
+var(25)=30
+
+[State 1060, VelSet]
+type=VelSet
+trigger1=animelem=2
+x=8
+[State 1060, VelMul]
+type=VelMul
+trigger1 =animelemtime(2)>2 && animelemtime(3)<0
+x=.9725
+[State 1060, VelSet]
+type=VelSet
+trigger1=animelem=3
+x=0
+
+[State 1060, Swing Snd]
+type=Playsnd
+trigger1=animelem=2
+value=s1,2
+channel=1
+[State 1060, Voice]
+type=PlaySnd
+trigger1=AnimElem=2
+value=s1010,0
+volumescale=255
+channel=0
+
+[State 1060, Dust Helper]
+type=Helper
+trigger1=animelem=2
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pauseMoveTime=255
+superMoveTime=255
+ownPal=1
+
+[State 1060, Snd]
+type=Playsnd
+trigger1=animelem=3
+value=s101,0
+channel=2
+[State 1060, Skid Dust]
+type=Explod
+trigger1=animelem=3
+anim=8104
+sprPriority=3
+posType=P1
+pos=20,0
+scale=0.5,0.5
+ownpal=1
+ignorehitpause=1
+
+[State 1060, Hit]
+type=HitDef
+trigger1=!time
+attr=S,SA        
+hitflag=MAF       
+guardflag=M       
+priority=4 ,Hit   
+damage=35,7
+getpower=0,0
+givepower=18, 18
+hitsound=S2,2
+guardsound=s130, 0
+pausetime=7, 7
+guard.pausetime=12,12
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 120), var(36) := -60
+animType=Hard
+air.animType=Back
+fall.animType=Back
+ground.type=Low
+ground.slidetime=14 + 8*var(9)
+ground.hittime=22 + 8*var(9)
+guard.hittime = (22 + 8*var(9)) - 6
+air.hittime=120
+ground.velocity=-5.51,0
+guard.velocity=-5.51
+air.velocity=-3.24, -7.73
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=.52
+fall=0
+air.fall=1
+fall.recover=0
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=Ifelse(random<=500,-3,3)
+
+[State 1060, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1060, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=AnimElemTime(3)>=0
+moveType=I
+[State 1060, End]
+type=ChangeState
+trigger1=movecontact=1
+value=1070
+
+[State 1060, End]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;---------------------------------------------------------------------------
+;EX Spin
+[Statedef 1070]
+type=S
+movetype=A
+physics=N
+velset=0,0
+anim=1020
+ctrl=0
+
+[State 1070, EX Flash]
+type=VarSet
+trigger1=!Time
+var(25)=90
+[State 1070, Dust Helper]
+type=Helper
+trigger1=animelem=1
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pauseMoveTime=255
+superMoveTime=255
+ownPal=1
+
+[State 1070, VelSet]
+type=VelSet
+trigger1=animelem=3
+x=8
+y=-2
+[State 1070, VelMul]
+type=VelMul
+trigger1 =animelemtime(7)>0
+x=.9725
+[State 1070, VelSet]
+type=VelSet
+trigger1=animelem=13
+x=0
+
+[State 1070, Snd]
+type=playsnd
+trigger1=animelem=2
+value=s40,0
+channel=3
+[State 1070, Dust]
+type=helper
+trigger1=animelem=2
+helpertype=normal
+stateno=8100
+ID=8100
+name="Jump Dust"
+postype=p1
+ownpal=1
+
+[State 1070, Swing Snd]
+type=Playsnd
+trigger1=animelem=3
+value=s1,5
+channel=1
+[State 1070, Voice]
+type=PlaySnd
+trigger1=AnimElem=2
+value=s0,6
+volumescale=255
+channel=0
+
+[State 1070, Snd]
+type=Playsnd
+trigger1=animelem=13
+value=s101,0
+channel=2
+[State 1070, Skid Dust]
+type=Explod
+trigger1=animelem=13
+anim=8104
+sprPriority=3
+posType=P1
+pos=20,0
+scale=0.5,0.5
+ownpal=1
+ignorehitpause=1
+
+[State 1070, StateTypeSet]
+type=StateTypeSet
+trigger1=animelem=2
+statetype=A
+
+[State 1070, Hit]
+type=HitDef
+trigger1=!time
+attr=A,SA        
+hitflag=MAF       
+guardflag=M       
+priority=4 ,Hit   
+damage=42,7
+getpower=0,0
+givepower=18,18
+hitsound=S2,5
+guardsound=s130, 0
+pausetime=7, 7
+guard.pausetime=12,12
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 120), var(36) := -60
+animType=Hard
+air.animType=Back
+fall.animType=Back
+ground.type=High
+ground.slidetime=14 + 8*var(9)
+ground.hittime=22 + 8*var(9)
+guard.hittime = (22 + 8*var(9)) - 6
+air.hittime=120
+ground.velocity=-5.51,-9
+guard.velocity=-5.51
+air.velocity=-3.24, -7.73
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=.48
+fall=1
+fall.recover=0
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=Ifelse(random<=500,-3,3)
+
+[State 1070, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1070, End]
+type=ChangeState
+trigger1=movecontact=1
+trigger2=!AnimTime
+value=1025
+;-----------------------------------------------------------------------------
+;Tiger Crack
+[Statedef 1100]
+type=S
+movetype=A
+physics=N
+anim=1100
+ctrl=0
+velset=0,0
+poweradd=72 * !var(20)
+sprpriority=1
+facep2=1
+
+[State 1100, VarSet]
+type=VarSet
+trigger1 =!AILevel&& !time
+var(10)=Ifelse(command="a"||command="rlsa",0,Ifelse(command="b"||command="rlsb",1,2))
+ignorehitpause=1
+[State 1100, VarSet]
+type=VarSet
+trigger1 =AILevel&& !time
+var(10)=Ifelse(p2bodydist x<25||var(13),0,Ifelse(p2bodydist x>=40,2,1))
+ignorehitpause=1
+
+[State 1100, anim]
+type=ChangeAnim
+Trigger1=!time
+value=Ifelse(var(20),1103,1100+var(10))
+
+[State 1100, Voice]
+type=PlaySnd
+trigger1=animelem=3
+value=s1100,0
+volumescale=255
+channel=0
+[State 1100, Jump Snd]
+type=PlaySnd
+trigger1=animelem=4
+value=s41,0
+channel=1
+[State 1100, Woosh Snd]
+type=PlaySnd
+trigger1=animelem=3 || animelem=8
+value=s1,5
+channel=2
+
+[State 1100, StateTypeSet]
+type=StateTypeSet
+trigger1=animelem=4
+stateType=A
+[State 1100, Dust Helper]
+type=Helper
+trigger1=animelem=4
+helperType=Normal
+stateNo=8100
+ID=8100
+name="Jump Dust"
+posType=P1
+ownPal=1
+
+[State 1100, NHB]
+type=Nothitby
+trigger1=!var(10) && animelemtime(3)<0
+trigger2=var(10)=1 && animelemtime(4)<0
+trigger3=var(10)=2 && animelemtime(4)<3
+value=SCA
+
+[State 1100, PosSet]
+type=PosSet
+trigger1 =!time
+y=0
+
+[State 1100, VelSet]
+type=VelSet
+trigger1=animelem=4
+x=3+var(10)
+y=-3
+[State 1100, VelSet]
+type=VelSet
+trigger1=animelem=7
+x=0
+y=0
+[State 1100, Velmul]
+type=VelMul
+trigger1=animelemtime(5)>3
+x=0.9725
+
+[State 1100, Tiger crackFX]
+type=Helper
+trigger1=animelem=3
+helperType=Normal
+stateNo=1105
+ID=1105
+name="TigercrackFX"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=0.5
+size.yscale=0.5
+ownPal=1
+
+[State 1100, Tiger crackFX]
+type=Helper
+trigger1=animelem=9
+helperType=Normal
+stateNo=1110
+ID=1110
+name="TigercrackFX2"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=1.2
+size.yscale=1.2
+ownPal=1
+
+[State 1100, Gravity]
+type=VelAdd
+trigger1=animelemtime(9)>=1
+y=0.725
+
+[State 1100, Hit]
+type=HitDef
+trigger1=!var(16) && (var(15)<1 || var(20))
+trigger1=animelem=3
+id=1100
+attr=S, SA
+damage=35+7*var(10), 7
+priority=4, hit
+animtype=Hard
+getpower=ifelse(!var(13),144,72) * !var(20), 36 * !var(20)
+givepower=36,36
+guardflag=M
+hitflag=MAF
+hitsound=S2,5
+guardsound=S130,0
+pauseTime=Ifelse(var(20), 6, 12), Ifelse(var(20), 6, 12)
+guard.pausetime=Ifelse(var(20), 6, 12), Ifelse(var(20), 6, 12)
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 91), var(36) := -55
+air.animtype=Up
+fall.animtype=Back
+ground.type=Low
+ground.slidetime=12
+ground.hittime=24
+guard.hittime = (24) - 6
+ground.velocity=-2, -9
+air.velocity=-2,-8
+guard.velocity=-3
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=0.48
+fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=4
+envShake.freq=120
+
+[State 1100, Hit]
+type=HitDef
+trigger1=!var(16) && (var(15)<1 || var(20))
+trigger1=!Numtarget(1100) && animelem=4
+id=1100
+attr=A, SA
+damage=35+7*var(10), 7
+priority=4, hit
+animtype=Hard
+getpower=ifelse(!var(13),144,72) * !var(20), 36 * !var(20)
+givepower=36,36
+guardflag=MA
+hitflag=MAF
+hitsound=S2,5
+guardsound=S130,0
+pauseTime=Ifelse(var(20), 6, 12), Ifelse(var(20), 6, 12)
+guard.pausetime=Ifelse(var(20), 6, 12), Ifelse(var(20), 6, 12)
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 91), var(36) := -55
+air.animtype=Up
+fall.animtype=Back
+ground.type=Low
+ground.slidetime=12
+ground.hittime=24
+guard.hittime = (24) - 6
+ground.velocity=-2, -9
+air.velocity=-2,-8
+guard.velocity=-3
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=0.48
+fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=4
+envShake.freq=120
+
+[State 1100, Hit]
+type=HitDef
+trigger1=!var(16) && (var(15)<2 || var(20))
+trigger1=animelem=9
+id=1101
+attr=A, SA
+damage=28, 7
+priority=4, hit
+animtype=Hard
+getpower=36* !var(20),0
+givepower=36, 36
+guardflag=MA
+hitflag=MAF
+hitsound=S2,5
+guardsound=S130,0
+pausetime=7, 7
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 80), var(36) := -55
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+ground.slidetime=12
+ground.hittime =12
+guard.hittime = (12) - 6
+ground.velocity=-7, 12
+air.velocity=-3,12
+guard.velocity=-4
+airguard.velocity=-3, 2
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=4
+envShake.freq=120
+
+[State 1100, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-50
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1100, StateTypeSet]
+type=StateTypeSet
+trigger1=animelemtime(10)>=0
+moveType=I
+
+[State 1100, End]
+type=ChangeState
+trigger1=pos y > -vel y
+value=Ifelse(movecontact,1120,1310)
+;-------------------------------------------------------------------------
+;Tiger Crack Land
+[Statedef 1120]
+type=S
+movetype=I
+physics=S
+anim=1120
+velset=0, 0
+movehitpersist=1
+
+[State 1020, Voice]
+type=PlaySnd
+trigger1=AnimElem=1
+value=s1120,0
+volumescale=255
+channel=0
+
+[State 1120, PosSet]
+type=PosSet
+trigger1=1
+y=0
+
+[State 1120, Landing Sound]
+type=PlaySnd
+trigger1=!time
+value=s52,0
+channel=2
+[State 1120, Landing Dust Explod]
+type=Explod
+trigger1=!time
+anim=8102
+sprpriority=-3
+postype=P1
+pos=0,0
+scale=0.5,0.5
+sprpriority=-3
+pauseMovetime=-1
+superMovetime=-1
+ownPal=1
+
+[State 1120, End]
+type=ChangeState
+trigger1=!animtime
+value=0
+ctrl=1
+;-----------------------------------------------------------------------------
+;EX Tiger Crack
+[Statedef 1150]
+type=S
+movetype=A
+physics=N
+anim=1150
+ctrl=0
+velset=0,0
+poweradd=-500
+sprpriority=1
+facep2=1
+
+[State 1150, MAX Timer Drain]
+type=VarAdd
+trigger1=!Time
+trigger1=var(20) > 0
+var(20)=-250
+[State 1150, EX Flash]
+type=VarSet
+trigger1=!Time
+var(25)=45
+[State 1150, EX FX]
+type=Explod
+trigger1=!Time
+anim=8210
+sprPriority=3
+posType=p1
+pos=ceil(-5*const(size.xscale)), ceil(-60*const(size.yscale))
+scale=0.5, 0.5
+pauseMoveTime=-1
+superMoveTime=-1
+ownPal=1
+[State 1150, EX-SND]
+type=PlaySnd
+trigger1 =!time
+value=s0,1000
+channel=3
+
+[State 1150, Voice]
+type=PlaySnd
+trigger1=animelem=3
+value=s1100,0
+volumescale=255
+channel=0
+[State 1150, Jump Snd]
+type=PlaySnd
+trigger1=animelem=4
+value=s41,0
+channel=1
+[State 1150, Woosh Snd]
+type=PlaySnd
+trigger1=animelem=3 || animelem=8
+value=s1,5
+channel=2
+
+[State 1150, StateTypeSet]
+type=StateTypeSet
+trigger1=animelem=4
+stateType=A
+[State 1150, Dust Helper]
+type=Helper
+trigger1=animelem=4
+helperType=Normal
+stateNo=8100
+ID=8100
+name="Jump Dust"
+posType=P1
+ownPal=1
+
+[State 1150, NHB]
+type=Nothitby
+trigger1=animelemtime(5)<0
+value=SCA
+
+[State 1150, PosSet]
+type=PosSet
+trigger1 =!time
+y=0
+
+[State 1150, VelSet]
+type=VelSet
+trigger1=animelem=4
+x=4
+y=-6
+[State 1150, VelSet]
+type=VelSet
+trigger1=animelem=7
+x=0
+y=0
+[State 1150, Velmul]
+type=VelMul
+trigger1=animelemtime(5)>3
+x=0.9725
+
+[State 1150, Tiger crackFX]
+type=Helper
+trigger1=animelem=3
+helperType=Normal
+stateNo=1105
+ID=1105
+name="TigercrackFX"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=0.5
+size.yscale=0.5
+ownPal=1
+
+[State 1150, Tiger crackFX]
+type=Helper
+trigger1=animelem=9
+helperType=Normal
+stateNo=1110
+ID=1110
+name="TigercrackFX2"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=1.2
+size.yscale=1.2
+ownPal=1
+
+[State 1150, Gravity]
+type=VelAdd
+trigger1=animelemtime(9)>=1
+y=0.725
+
+[State 1150, Hit]
+type=HitDef
+trigger1=animelem=3
+id=1150
+attr=S, SA
+damage=35, 7
+priority=4, hit
+animtype=Hard
+getpower=0,0
+givepower=18,18
+guardflag=M
+hitflag=MAF
+hitsound=S2,5
+guardsound=S130,0
+pauseTime=7, 7
+guard.pausetime=12,12
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 91), var(36) := -55
+air.animtype=Up
+fall.animtype=Back
+ground.type=Low
+ground.slidetime=12
+ground.hittime=24
+guard.hittime = (24) - 6
+ground.velocity=-2, -10
+air.velocity=-2,-9
+guard.velocity=-3
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=0.48
+fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=4
+envShake.freq=120
+
+[State 1150, Hit]
+type=HitDef
+trigger1=animelem=4
+attr=A, SA
+damage=28,7
+priority=4, hit
+animtype=Hard
+getpower=0,0
+givepower=18,18
+guardflag=MA
+hitflag=MAF
+hitsound=S2,5
+guardsound=S130,0
+pauseTime=7, 7
+guard.pausetime=8,8
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 91), var(36) := -55
+air.animtype=Up
+fall.animtype=Back
+ground.type=High
+ground.slidetime=12
+ground.hittime=24
+guard.hittime = (24) - 6
+ground.velocity=-2, -9
+air.velocity=-2,-8
+guard.velocity=-3
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+yaccel=0.48
+fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=4
+envShake.freq=120
+
+[State 1150, Hit]
+type=HitDef
+trigger1=animelem=9
+id=1151
+attr=A, SA
+damage=28,7
+priority=4, hit
+animtype=Hard
+getpower=0,0
+givepower=36,36
+guardflag=MA
+hitflag=MAF
+hitsound=S2,5
+guardsound=S130,0
+pausetime=7, 7
+sparkNo=-1 + 0 * (var(33) := 8013)
+guard.sparkNo=-1 + 0 * (var(34) := 8001)
+sparkXY=-10 + 0 * (var(35) := 80), var(36) := -55
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+ground.slidetime=12
+ground.hittime =12
+guard.hittime = (12) - 6
+ground.velocity=-7, 12
+air.velocity=-3,12
+guard.velocity=-4
+airguard.velocity=-3, 2
+ground.cornerPush.velOff=0
+guard.cornerPush.velOff=0
+air.cornerPush.velOff=0
+fall=1
+fall.recover=0
+forcestand=1
+palFX.time=12 * var(9)
+palFX.add=255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time=12
+envshake.ampl=4
+envShake.freq=120
+
+[State 1150, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])||(enemynear,stateno=[1045,1048])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=10,Ifelse((animelemtime(8)>=0),0,-70)
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1150, Target]
+type=targetstate
+trigger1= movehit && numtarget(1151)
+trigger1= target(1151),Movetype=H
+trigger1= !(target, IsHelper)
+value=1045
+ignorehitpause=1
+persistent=0
+
+[State 1150, Dust]
+type=helper
+trigger1=numtarget && !numhelper(8110)
+trigger1=(target, movetype=H)
+trigger1=(target,stateno=1046)
+helpertype=normal
+stateno=8110
+ID=8110
+name="Impact Dust"
+postype=p2
+pos=0,0
+ownpal=1
+
+[State 1150, Snd]
+type=PlaySnd
+trigger1=numtarget
+trigger1=(target, movetype=H)
+trigger1=(target,stateno=1046)
+value=s5000,11
+channel=11
+persistent=0
+
+[State 1150, StateTypeSet]
+type=StateTypeSet
+trigger1=animelemtime(10)>=0
+moveType=I
+
+[State 1150, End]
+type=ChangeState
+trigger1=pos y > -vel y
+value=1310
+;--------------------------------------------------------------------------
+;Wolf Combination - One
+[StateDef 1200]
+type=S
+physics=N
+moveType=A
+anim=1200
+ctrl=0
+velSet=0,0
+sprPriority=1
+powerAdd=72 * !var(20)
+faceP2=1
+
+[State 1200, VarSet]
+type=VarSet
+trigger1 =!AILevel && !time
+var(10)=ifelse(command="x"||command="rlsx",0,ifelse(command="y"||command="rlsy",1,2))
+ignorehitpause=1
+[State 1200, VarSet]
+type=VarSet
+trigger1 =AILevel &&!time && numenemy
+var(10)=Ifelse(var(13),0,Ifelse(p2bodydist x<35,1,2))
+ignorehitpause=1
+
+[State 1200, Anim]
+type=ChangeAnim
+trigger1 =!time
+value=1200+var(10)
+
+[State 1200, Voice]
+type=PlaySnd
+trigger1=animelem=3
+value=s1200,0
+volumescale=255
+channel=0
+[State 1200, Snd]
+type=PlaySnd
+trigger1=animelem=3
+value=s1,2
+channel=1
+[State 1200, Snd]
+type=PlaySnd
+trigger1=animelem=4
+value=s1205,0
+volumescale=50
+channel=2
+
+[State 1200, Width]
+type=Width
+trigger1=animelemtime(3)>0 && animelemtime(5)<0
+player=20,0
+
+[State 1200, VelSet]
+type=VelSet
+trigger1=animelem=3 
+x=2+2*var(10)
+[State 1200, VelMul]
+type=VelMul
+trigger1=animelemtime(3)>1
+x=0.9275
+[State 1200, VelSet]
+type=VelSet
+trigger1=animelem=5 
+x=0
+
+[State 1200, Dust Helper]
+type=Helper
+trigger1= animelem=4
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-30,0
+ownPal=1
+
+[State 1200, Wolf Combination One FX]
+type=Helper
+trigger1=animelem=4
+helperType=Normal
+stateNo=1205
+ID=1205
+name="WolfCombinationOne"
+posType=P1
+pos=ceil(84 * const(size.xScale)),ceil(-72 * const(size.yScale))
+size.xscale=0.25
+size.yscale=0.25
+ownPal=1
+
+[State 1200, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=animelemTime(8)>=0
+moveType=I
+
+[State 1200, ChangeState]
+type=ChangeState
+triggerall=animelemtime(4)>1 && animelemtime(7)<0
+triggerall=Numhelper(1205)
+triggerall=Helper(1205),var(18)||Helper(1205),stateno=1206
+trigger1=!AILevel && (command="WolfCombination1"||command="WolfCombination2"||command="WolfCombination3")
+trigger2=AILevel && random<750
+value=1210
+
+[State 1200, ChangeState]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;--------------------------------------------------------------------------
+;Wolf Combination - Two
+[StateDef 1210]
+type=S
+physics=N
+moveType=A
+anim=1210
+ctrl=0
+velSet=0,0
+sprPriority=1
+powerAdd=36 * !var(20)
+
+[State 1210, VarSet]
+type=VarSet
+trigger1 =!AILevel && !time
+var(10)=ifelse(command="x"||command="rlsx"||command="WolfCombination1",0,ifelse(command="y"||command="rlsy"||command="WolfCombination2",1,2))
+ignorehitpause=1
+[State 1210, VarSet]
+type=VarSet
+trigger1 =AILevel &&!time && numenemy
+var(10)=Ifelse(var(13),0,Ifelse(p2bodydist x<35,1,2))
+ignorehitpause=1
+
+[State 1210, Anim]
+type=ChangeAnim
+trigger1 =!time
+value=Ifelse(var(20),1213,1210+var(10))
+ignorehitpause=1
+
+[State 1210, Width]
+type=Width
+trigger1=animelemtime(1)>0 && animelemtime(3)<0
+player=20,0
+
+[State 1210, Voice]
+type=PlaySnd
+trigger1=animelem=2
+value=s1210,0
+volumescale=255
+channel=0
+[State 1210, Snd]
+type=PlaySnd
+trigger1=animelem=1
+value=s1,2
+channel=1
+[State 1210, Snd]
+type=PlaySnd
+trigger1=animelem=2
+value=s1215,0
+volumescale=50
+channel=2
+
+[State 1210, VelSet]
+type=VelSet
+trigger1=animelem=2 
+x=2+2*var(10)
+[State 1210, VelMul]
+type=VelMul
+trigger1=animelemtime(2)>1
+x=0.9275
+[State 1210, VelSet]
+type=VelSet
+trigger1=animelem=4
+x=0
+
+[State 1210, Dust Helper]
+type=Helper
+trigger1= animelem=2
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-22,0
+ownPal=1
+
+[State 1210, Wolf Combination Two]
+type=Helper
+trigger1=animelem=2
+helperType=Normal
+stateNo=1215
+ID=1215
+name="WolfCombinationTwo"
+posType=P1
+pos=ceil(84 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=0.5
+size.yscale=0.5
+ownPal=1
+
+[State 1210, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=animelemTime(5)>=0
+moveType=I
+
+[State 1210, ChangeState]
+type=ChangeState
+triggerall=animelemtime(3)>0 && animelemtime(5)<0
+triggerall=Numhelper(1215)
+triggerall=Helper(1215),var(18)||Helper(1215),stateno=1216
+trigger1=!AILevel && (command="WolfCombination1"||command="WolfCombination2"||command="WolfCombination3")
+trigger2=AILevel && random<750
+value=1220
+
+[State 1210, ChangeState]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;--------------------------------------------------------------------------
+;Wolf Combination - Three
+[StateDef 1220]
+type=S
+physics=N
+moveType=A
+anim=1220
+ctrl=0
+velSet=0,0
+sprPriority=1
+powerAdd=36 * !var(20)
+
+[State 1220, VarSet]
+type=VarSet
+trigger1 =!AILevel && !time
+var(10)=ifelse(command="x"||command="rlsx"||command="WolfCombination1",0,ifelse(command="y"||command="rlsy"||command="WolfCombination2",1,2))
+ignorehitpause=1
+[State 1220, VarSet]
+type=VarSet
+trigger1 =AILevel &&!time && numenemy
+var(10)=Ifelse(var(13),0,Ifelse(p2bodydist x<35,1,2))
+ignorehitpause=1
+
+[State 1220, Width]
+type=Width
+trigger1=animelemtime(2)>0 && animelemtime(3)<1
+player=20,0
+
+[State 1220, Anim]
+type=ChangeAnim
+trigger1 =!time
+value=Ifelse(var(20),1223,1220+var(10))
+ignorehitpause=1
+
+[State 1220, Voice]
+type=PlaySnd
+trigger1=animelem=2
+value=s1220,0
+volumescale=255
+channel=0
+[State 1220, Snd]
+type=PlaySnd
+trigger1=animelem=2
+value=s1,2
+channel=1
+[State 1220, Snd]
+type=PlaySnd
+trigger1=animelem=3
+value=s1225,0
+volumescale=50
+channel=2
+
+[State 1220, VelSet]
+type=VelSet
+trigger1=animelem=2 
+x=1+2*var(10)
+[State 1220, VelMul]
+type=VelMul
+trigger1=animelemtime(2)>1
+x=0.9275
+[State 1220, VelSet]
+type=VelSet
+trigger1=animelem=4
+x=0
+
+[State 1220, Dust Helper]
+type=Helper
+trigger1= animelem=2
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-22,0
+ownPal=1
+
+[State 1220, Wolf Combination Three]
+type=Helper
+trigger1=animelem=3
+helperType=Normal
+stateNo=1225
+ID=1225
+name="WolfCombinationThree"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=0.5
+size.yscale=0.5
+ownPal=1
+
+[State 1220, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=animelemTime(6)>=0
+moveType=I
+
+[State 1220, ChangeState]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;--------------------------------------------------------------------------
+;EX Wolf - One
+[StateDef 1250]
+type=S
+physics=N
+moveType=A
+anim=1201
+ctrl=0
+velSet=0,0
+sprPriority=1
+powerAdd=-500
+faceP2=1
+
+[State 1250, VarSet]
+type=VarSet
+trigger1=!time
+var(10)=3
+ignorehitpause=1
+[State 1250, MAX Timer Drain]
+type=VarAdd
+trigger1=!Time
+trigger1=var(20) > 0
+var(20)=-250
+[State 1250, EX Flash]
+type=VarSet
+trigger1=!Time
+var(25)=75
+[State 1250, EX FX]
+type=Explod
+trigger1=!Time
+anim=8210
+sprPriority=3
+posType=p1
+pos=ceil(-5*const(size.xscale)), ceil(-75*const(size.yscale))
+scale=0.5, 0.5
+pauseMoveTime=-1
+superMoveTime=-1
+ownPal=1
+[State 1250, EX-SND]
+type=PlaySnd
+trigger1 =!time
+value=s0,1000
+channel=3
+
+[State 1250, Voice]
+type=PlaySnd
+trigger1=animelem=3
+value=s1200,0
+volumescale=255
+channel=0
+[State 1250, Snd]
+type=PlaySnd
+trigger1=animelem=3
+value=s1,2
+channel=1
+[State 1250, Snd]
+type=PlaySnd
+trigger1=animelem=4
+value=s1205,0
+channel=2
+
+[State 1250, Width]
+type=Width
+trigger1=animelemtime(3)>0 && animelemtime(5)<0
+player=20,0
+
+[State 1250, VelSet]
+type=VelSet
+trigger1=animelem=3 
+x=6
+[State 1250, VelMul]
+type=VelMul
+trigger1=animelemtime(3)>1
+x=0.9275
+[State 1250, VelSet]
+type=VelSet
+trigger1=animelem=5 
+x=0
+
+[State 1250, Dust Helper]
+type=Helper
+trigger1= animelem=4
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-30,0
+ownPal=1
+
+[State 1250, Wolf Combination One FX]
+type=Helper
+trigger1=animelem=4
+helperType=Normal
+stateNo=1205
+ID=1205
+name="WolfCombinationOne"
+posType=P1
+pos=ceil(84 * const(size.xScale)),ceil(-72 * const(size.yScale))
+size.xscale=0.25
+size.yscale=0.25
+ownPal=1
+
+[State 1200, StateTypeSet: Idle]
+type=StateTypeSet
+trigger1=animelemTime(8)>=0
+moveType=I
+
+[State 1250, ChangeState]
+type=ChangeState
+trigger1=animelem=6
+value=1260
+;--------------------------------------------------------------------------
+;EX - Two
+[StateDef 1260]
+type=S
+physics=N
+moveType=A
+anim=1210
+ctrl=0
+velSet=0,0
+sprPriority=1
+
+[State 1260, Width]
+type=Width
+trigger1=animelemtime(1)>0 && animelemtime(3)<0
+player=20,0
+
+[State 1260, Voice]
+type=PlaySnd
+trigger1=animelem=2
+value=s1210,0
+volumescale=255
+channel=0
+[State 1260, Snd]
+type=PlaySnd
+trigger1=animelem=1
+value=s1,2
+channel=1
+[State 1260, Snd]
+type=PlaySnd
+trigger1=animelem=2
+value=s1215,0
+volumescale=50
+channel=2
+
+[State 1260, VelSet]
+type=VelSet
+trigger1=animelem=2 
+x=6
+[State 1260, VelMul]
+type=VelMul
+trigger1=animelemtime(2)>1
+x=0.9275
+[State 1260, VelSet]
+type=VelSet
+trigger1=animelem=4
+x=0
+
+[State 1260, Dust Helper]
+type=Helper
+trigger1= animelem=2
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-22,0
+ownPal=1
+
+[State 1260, Wolf Combination Two]
+type=Helper
+trigger1=animelem=2
+helperType=Normal
+stateNo=1215
+ID=1215
+name="WolfCombinationTwo"
+posType=P1
+pos=ceil(84 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=0.5
+size.yscale=0.5
+ownPal=1
+
+[State 1260, ChangeState]
+type=ChangeState
+trigger1=animelem=4
+value=1270
+;--------------------------------------------------------------------------
+;EX - Three
+[StateDef 1270]
+type=S
+physics=N
+moveType=A
+anim=1270
+ctrl=0
+velSet=0,0
+sprPriority=1
+
+[State 1270, Voice]
+type=PlaySnd
+trigger1=animelem=2
+value=s1220,0
+volumescale=255
+channel=0
+[State 1270, Snd]
+type=PlaySnd
+trigger1=animelem=2
+value=s1,2
+channel=1
+[State 1270, Snd]
+type=PlaySnd
+trigger1=animelem=3
+value=s1225,0
+volumescale=50
+channel=2
+
+[State 1270, Width]
+type=Width
+trigger1=animelemtime(2)>0 && animelemtime(3)<1
+player=20,0
+
+[State 1270, VelSet]
+type=VelSet
+trigger1=animelem=2 
+x=4
+[State 1270, VelMul]
+type=VelMul
+trigger1=animelemtime(2)>1
+x=0.9275
+[State 1270, VelSet]
+type=VelSet
+trigger1=animelem=4
+x=0
+
+[State 1270, Dust Helper]
+type=Helper
+trigger1= animelem=2
+helperType=Normal
+stateNo=8103
+ID=8100
+name="Dash Dust"
+posType=P1
+pos=-22,0
+ownPal=1
+
+[State 1270, Wolf Combination Three]
+type=Helper
+trigger1=animelem=3
+helperType=Normal
+stateNo=1225
+ID=1225
+name="WolfCombinationThree"
+posType=P1
+pos=ceil(0 * const(size.xScale)),ceil(0 * const(size.yScale))
+size.xscale=0.5
+size.yscale=0.5
+ownPal=1
+
+[State 1270, ChangeState]
+type=ChangeState
+trigger1=!AnimTime
+value=0
+ctrl=1
+;-----------------------------------------------------------------------------------------------
+;Diving Tackle
+[Statedef 1300]
+type=A
+physics=N
+movetype=A
+anim=1300
+ctrl=0
+velset=0, 0
+sprpriority=1
+poweradd=72 * !var(20)
+
+[State 1300, Button]
+type=varset
+trigger1=!time && !AIlevel
+var(10)=Ifelse(command="a"||command="rlsa",0,Ifelse(command="b"||command="rlsb",1,2))
+[State 1300, Button AI]
+type=varset
+trigger1=!time && AIlevel
+var(10)=Ifelse(p2bodydist x<40,0,Ifelse(p2bodydist x>=60,2,1))
+
+[State 1300, Anim]
+type=ChangeAnim
+trigger1=!time
+value=Ifelse(var(20),1303,1300+var(10))
+
+[State 1300, Varset]
+type=Varset
+trigger1 =!time
+var(11)=0
+[State 1300, Varadd]
+type=Varadd
+trigger1=movecontact
+var(11)=1
+
+[State 1300, Accel]
+type=veladd
+trigger1=animelemtime(3) >= 0
+y=0.6633375
+
+[State 1300, VelSet]
+type=VelSet
+trigger1 =animelem=3
+x=6+3*var(10)
+y=12-3*var(10)
+
+[State 1300, Vel]
+type=velset
+trigger1=animelem=4
+x=4+(1.5*var(10))
+y=4
+
+[State 1300, Voice]
+type=playsnd
+trigger1=animelem=2
+value=s1300,0
+volumescale=255
+channel=0
+[State 1300, Snd]
+type=playsnd
+trigger1=animelem=2
+value=s1,5
+channel=1
+
+[State 1300, Hit]
+type=hitdef
+trigger1=var(10)=0 && (!movecontact && !movereversed) || var(11)<var(10)
+attr=A, SA
+hitflag=MAF
+guardflag=HA
+priority=4, Hit
+damage=Ifelse((var(10)=[0,1]) && !var(13),70+7*var(10),Ifelse((var(10)=[0,1]),42+7*var(10),42)),7
+getpower=ifelse(!var(13),144,72) * !var(20), 36 * !var(20)
+givepower=36, 36
+pausetime=ifelse(var(20), 6, 12), ifelse(var(20), 8, 16)
+guard.pausetime=ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
+animtype=Back
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+air.type=Low
+ground.hittime=18
+guard.hittime = (18) - 6
+ground.slidetime=12
+air.hittime=120
+airguard.ctrltime=16
+down.hittime=20
+ground.velocity=-5.41, 0
+ground.cornerpush.veloff=0
+guard.velocity=-5.41
+guard.cornerpush.veloff=0
+air.velocity=-4.32, -7.25
+air.cornerpush.veloff=0
+airguard.velocity=-8, -1
+airguard.cornerpush.veloff=0
+down.velocity=0, 0
+down.cornerpush.veloff=0
+yaccel=Ifelse(var(20),0.42,0.58)
+air.fall=1
+fall.recover=0
+forcestand=1
+hitsound=s2,5
+guardsound=s130,0
+sparkno=-1 + 0 * (var(33) := 8013)
+guard.sparkno=-1 + 0 * (var(34) := 8001)
+sparkxy=-10 + 0 * (var(35) := 90), var(36) := -10
+palfx.time=12 * var(9)
+palfx.add=255, 255, 255
+palfx.sinadd=-255, -255, -255, 48
+envshake.time=14
+envshake.ampl=4
+envshake.freq=120
+
+[State 1300, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1300, End]
+type=changestate
+trigger1=pos y > -vel y
+value=Ifelse(movecontact,1310,1305)
+;-------------------------------------------------------------------------
+;Diving Tackle Miss
+[Statedef 1305]
+type=S
+movetype=I
+physics=S
+anim=1305
+velset=0, 0
+
+[State 1305, Voice]
+type=PlaySnd
+trigger1=AnimElem=1
+value=s1120,0
+volumescale=255
+channel=0
+
+[State 1305, PosSet]
+type=PosSet
+trigger1=1
+y=0
+
+[State 1305, EnvShake]
+type=EnvShake
+trigger1=!time
+time=12
+ampl=Ifelse(random<500,2,-2)
+
+[State 1305, Landing Sound]
+type=PlaySnd
+trigger1=!time
+value=s52,0
+channel=1
+[State 1305, Crash Sound]
+type=PlaySnd
+trigger1=!time
+value=s5000,11
+channel=2
+[State 1305, Landing Dust Explod]
+type=Explod
+trigger1=!time
+anim=8102
+sprpriority=-3
+postype=P1
+pos=0,0
+scale=0.5,0.5
+sprpriority=-3
+pauseMovetime=-1
+superMovetime=-1
+ownPal=1
+
+[State 1305, End]
+type=ChangeState
+trigger1=!animtime
+value=0
+ctrl=1
+;-------------------------------------------------------------------------
+;Special Land
+[Statedef 1310]
+type=S
+movetype=I
+physics=S
+anim=1310
+velset=0, 0
+movehitpersist=1
+
+[State 1310, PosSet]
+type=PosSet
+trigger1=1
+y=0
+
+[State 1310, Dust]
+type=helper
+trigger1=numtarget && !numhelper(8110)
+trigger1=(target, movetype=H)
+trigger1=(target,stateno=1046)
+helpertype=normal
+stateno=8110
+ID=8110
+name="Impact Dust"
+postype=p2
+pos=0,0
+ownpal=1
+
+[State 1310, Snd]
+type=PlaySnd
+trigger1=numtarget
+trigger1=(target, movetype=H)
+trigger1=(target,stateno=1046)
+value=s5000,11
+channel=11
+persistent=0
+
+[State 1310, Landing Sound]
+type=PlaySnd
+trigger1=!time
+value=s52,0
+channel=1
+[State 1310, Landing Dust Explod]
+type=Explod
+trigger1=!time
+anim=8102
+sprpriority=-3
+postype=P1
+pos=0,0
+scale=0.5,0.5
+sprpriority=-3
+pauseMovetime=-1
+superMovetime=-1
+ownPal=1
+
+[State 1310, End]
+type=ChangeState
+trigger1=!animtime
+value=0
+ctrl=1
+;-----------------------------------------------------------------------------------------------
+;EX Diving Tackle
+[Statedef 1350]
+type=A
+physics=N
+movetype=A
+anim=1301
+ctrl=0
+velset=0, 0
+sprpriority=1
+poweradd=-500
+
+[State 1350, VarSet]
+type=VarSet
+trigger1=!time
+var(10)=3
+ignorehitpause=1
+[State 1350, MAX Timer Drain]
+type=VarAdd
+trigger1=!Time
+trigger1=var(20) > 0
+var(20)=-250
+[State 1350, EX Flash]
+type=VarSet
+trigger1=!Time
+var(25)=75
+[State 1350, EX FX]
+type=Explod
+trigger1=!Time
+anim=8210
+sprPriority=3
+posType=p1
+pos=ceil(-5*const(size.xscale)), ceil(-75*const(size.yscale))
+scale=0.5, 0.5
+pauseMoveTime=-1
+superMoveTime=-1
+ownPal=1
+[State 1350, EX-SND]
+type=PlaySnd
+trigger1 =!time
+value=s0,1000
+channel=3
+
+[State 1350, Varset]
+type=Varset
+trigger1 =!time
+var(11)=0
+[State 1350, Varadd]
+type=Varadd
+trigger1=movecontact
+var(11)=1
+
+[State 1350, Accel]
+type=veladd
+trigger1=animelemtime(3) >= 0
+y=0.6633375
+
+[State 1350, VelSet]
+type=VelSet
+trigger1 =animelem=3
+x=12
+y=8
+
+[State 1350, Voice]
+type=playsnd
+trigger1=animelem=2
+value=s1300,0
+volumescale=255
+channel=0
+[State 1350, Snd]
+type=playsnd
+trigger1=animelem=2
+value=s1,5
+channel=1
+
+[State 1350, Hit]
+type=hitdef
+trigger1=var(11)<var(10)
+attr=A,SA
+hitflag=MAFD
+guardflag=HA
+priority=4, Hit
+damage=28+7*var(11),7
+getpower=0,0
+givepower=18,18
+pausetime=7, 7
+guard.pausetime=8,12
+animtype=Back
+air.animtype=Back
+fall.animtype=Back
+ground.type=High
+air.type=Low
+ground.hittime=18
+guard.hittime = (18) - 6
+ground.slidetime=12
+air.hittime=120
+airguard.ctrltime=16
+down.hittime=20
+ground.velocity=-5.41, 0
+ground.cornerpush.veloff=0
+guard.velocity=-5.41
+guard.cornerpush.veloff=0
+air.velocity=-4.32, -7.25
+air.cornerpush.veloff=0
+airguard.velocity=-8, -1
+airguard.cornerpush.veloff=0
+down.velocity=0, 0
+down.cornerpush.veloff=0
+yaccel=0.58
+fall=1
+fall.recover=0
+forcestand=1
+hitsound=s2,5
+guardsound=s130,0
+sparkno=-1 + 0 * (var(33) := 8013)
+guard.sparkno=-1 + 0 * (var(34) := 8001)
+sparkxy=-10 + 0 * (var(35) := 90), var(36) := -10
+palfx.time=12 * var(9)
+palfx.add=255, 255, 255
+palfx.sinadd=-255, -255, -255, 48
+envshake.time=14
+envshake.ampl=4
+envshake.freq=120
+
+[State 1350, Sparkles]
+type=helper
+trigger1=movehit && numtarget && !numhelper(1006)
+trigger1=!(target, time) && (target, movetype=H)
+trigger1=(enemynear,stateno=[5000,5050])
+helpertype=normal
+stateno=1006
+ID=1006
+name="Sparkles"
+postype=p2
+pos=0,-70
+size.xscale=0.25
+size.yscale=0.25
+ownpal=1
+ignorehitpause=1
+
+[State 1350, End]
+type=changestate
+trigger1=pos y > 5
+value=1310

@@ -1,0 +1,459 @@
+
+; Movelists made by ShadenXa.
+; _________________________________________
+;| Game/Universal Mechanics |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+[Legend]
+text = "Directional Inputs:"
+text = "→: Forward"
+text = "←: Back"
+text = "↑: Up / Jump"
+text = "↓: Down / Crouch"
+text = " "
+text = "Button Abbreviations:"
+text = "LP (x), MP (y), HP (z): Light, Medium, Heavy Punch"
+text = "LK (a), MK (b), HK (c): Light, Medium, Heavy Kick"
+text = "W: Echo / Tag Shift Fwd"
+text = "D: Tag Shift Back"
+
+;====================<MOVEMENT & DEFENSE>====================
+[Command]
+name = "ROLL / SPOT DODGE"
+command =
+time = 0
+text = "Roll (move): → or ← + LP + LK"
+text = "Spot Dodge (in place): LP + LK (Neutral)"
+text = "Invincible movement options to evade attacks."
+
+[Command]
+name = "SUPER JUMP"
+command =
+time = 0
+text = "Input: Tap ↓ then ↑ quickly"
+text = "A high jump that travels further than normal."
+
+[Command]
+name = "FLOAT"
+command =
+time = 0
+text = "Input: Tap ↓ then ↑ quickly then hold up to"
+text = "Float and Down to fast fall. This can also"
+text = "Be Done While Attacking"
+text = "A jump that allows for mix ups".
+
+[Command]
+name = "AIRDASH"
+command =
+time = 0
+text = "Input: →→ or ←← in the air"
+text = "Standard speed normally."
+text = "Becomes fast TELEPORT speed in Awakening Mode."
+
+[Command]
+name = "PARRY"
+command =
+time = 0
+text = "Input: Tap → (High/Mid) or ↓ (Low) just before impact."
+text = "Deflects an attack without taking chip damage."
+
+[Command]
+name = "GUARD CANCEL / ALPHA COUNTER"
+command =
+time = 0
+text = "Input: → + LP + LK (While Blocking)"
+text = "Cost: 1 Bar."
+text = "Counter attack directly out of blockstun."
+
+;====================<OFFENSIVE MECHANICS>====================
+[Command]
+name = "RUSH DASH"
+command =
+time = 0
+text = "Input: Press any Attack button while Dashing (→→)"
+text = "Performs a sliding attack from a run."
+
+[Command]
+name = "DASH CANCEL"
+command =
+time = 0
+text = "Input: Tap →→ after a grounded normal hits/blocks."
+text = "Cancels the recovery of the move to extend pressure."
+
+[Command]
+name = "ECHOES"
+command =
+time = 0
+text = "Input: Hold 'W' while performing a Special Move."
+text = "Creates a clone that performs the move, consuming Echo Meter."
+
+[Command]
+name = "NEUTRAL CANCEL"
+command =
+time = 0
+text = "Input: HP + LK (z + a)"
+text = "Cost: 1000 Power (1 Bar)"
+text = "Cancels any attack on hit/block. Resets you to neutral state"
+text = "and briefly vacuums/binds the opponent for extended combos."
+
+[Command]
+name = "PERFECT BREAKER"
+command =
+time = 0
+text = "Input: HP + MK (z + b)"
+text = "Condition: While getting hit (Hitstun)"
+text = "Invincible shockwave that blows the opponent away."
+text = "Uses a COOLDOWN system, not Meter."
+
+[Command]
+name = "CUSTOM COMBO / POWER UP"
+command =
+time = 0
+text = "Input: HP + HK (z + c)"
+text = "Cost: 1 Bar"
+text = "Enters a powered-up state or begins a Custom Combo."
+
+[Command]
+name = "AWAKENING"
+command =
+time = 0
+text = "Condition: Health drops below 20%"
+text = "Automatic Activation. Grants the following buffs:"
+text = "1. 100% Damage Increase."
+text = "2. 50% Defense Increase."
+text = "3. Immunity to Chip Damage."
+text = "4. Airdashes become incredibly fast."
+
+;====================<OTHER>====================
+[Command]
+name = "METER CHARGE"
+command =
+time = 0
+text = "Input: Hold MP + MK (y + b)"
+text = "Manually build Super Meter."
+
+[Command]
+name = "FIRST CLASH"
+command =
+time = 0
+text = "Chance to attack before the round starts."
+
+[Command]
+name = "TAG SHIFT"
+command =
+time = 0
+text = "Input: 'W' (Forward) or 'D' (Back)"
+text = "Switches between characters in Team Mode."
+
+; _________________________________________
+;|         Common Fighting Game Inputs      |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+[Command]
+name = "Quarter Circle Forward (QCF)"
+command =
+time = 0
+text = "Input: ↓↘→ + Attack"
+
+[Command]
+name = "Dragon Punch (DP)"
+command =
+time = 0
+text = "Input: →↓↘ + Attack"
+
+[Command]
+name = "Half Circle Back (HCB)"
+command =
+time = 0
+text = "Input: →↘↓↙← + Attack"
+
+
+; _________________________________________
+;|              Character Moves             |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<SPECIAL MOVES>====================
+[Command]
+name = "2k"
+command = 
+time = 0
+text = "2k: 2K"
+
+[Command]
+name = "2p"
+command = 
+time = 0
+text = "2p: 2P"
+
+[Command]
+name = "412k"
+command = 
+time = 0
+text = "412k: ↙↓ + 2K"
+
+[Command]
+name = "412p"
+command = 
+time = 0
+text = "412p: ↙↓ + MK+HP / MK+LP / MK+MP"
+
+[Command]
+name = "EX Fukiage"
+command = 
+time = 0
+text = "EX Fukiage: →↓↘ + 2P"
+
+[Command]
+name = "EX Hayate"
+command = 
+time = 0
+text = "EX Hayate: ↓↘→ + 2P"
+
+[Command]
+name = "EX Karakusa"
+command = 
+time = 0
+text = "EX Karakusa: →↘↓↙ + MK+HK+LK / MK+HK+MK / MK+LK+MK"
+
+[Command]
+name = "EX Oroshi"
+command = 
+time = 0
+text = "EX Oroshi: ↓↙ + MK+HP+LP / MK+HP+MP / MK+LP+MP"
+
+[Command]
+name = "EX Tsurugi"
+command = 
+time = 0
+text = "EX Tsurugi: ↓↙ + MK+HK+LK / MK+HK+MK / MK+LK+MK"
+
+[Command]
+name = "Light Fukiage"
+command = 
+time = 0
+text = "Light Fukiage: →↓↘ + LP"
+
+[Command]
+name = "Light Hayate"
+command = 
+time = 0
+text = "Light Hayate: ↓↘→ + LP"
+
+[Command]
+name = "Light Karakusa"
+command = 
+time = 0
+text = "Light Karakusa: →↘↓↙ + MK+LK"
+
+[Command]
+name = "Light Oroshi"
+command = 
+time = 0
+text = "Light Oroshi: ↓↙ + MK+LP"
+
+[Command]
+name = "Light Tsurugi"
+command = 
+time = 0
+text = "Light Tsurugi: ↓↙ + MK+LK"
+
+[Command]
+name = "Medium Fukiage"
+command = 
+time = 0
+text = "Medium Fukiage: →↓↘ + MP"
+
+[Command]
+name = "Medium Hayate"
+command = 
+time = 0
+text = "Medium Hayate: ↓↘→ + MP"
+
+[Command]
+name = "Medium Karakusa"
+command = 
+time = 0
+text = "Medium Karakusa: →↘↓↙ + MK+MK"
+
+[Command]
+name = "Medium Oroshi"
+command = 
+time = 0
+text = "Medium Oroshi: ↓↙ + MK+MP"
+
+[Command]
+name = "Medium Tsurugi"
+command = 
+time = 0
+text = "Medium Tsurugi: ↓↙ + MK+MK"
+
+[Command]
+name = "Rikujou Gekiha Ken"
+command = 
+time = 0
+text = "Rikujou Gekiha Ken: ↓↓↓ + P (L/M/H)"
+
+[Command]
+name = "Strong Fukiage"
+command = 
+time = 0
+text = "Strong Fukiage: →↓↘ + HP"
+
+[Command]
+name = "Strong Hayate"
+command = 
+time = 0
+text = "Strong Hayate: ↓↘→ + HP"
+
+[Command]
+name = "Strong Karakusa"
+command = 
+time = 0
+text = "Strong Karakusa: →↘↓↙ + 2K"
+
+[Command]
+name = "Strong Oroshi"
+command = 
+time = 0
+text = "Strong Oroshi: ↓↙ + MK+HP"
+
+[Command]
+name = "Strong Tsurugi"
+command = 
+time = 0
+text = "Strong Tsurugi: ↓↙ + 2K"
+
+[Command]
+name = "a"
+command = 
+time = 0
+text = "a: LK"
+
+[Command]
+name = "a2"
+command = 
+time = 0
+text = "a2: LK"
+
+[Command]
+name = "b"
+command = 
+time = 0
+text = "b: MK"
+
+[Command]
+name = "b2"
+command = 
+time = 0
+text = "b2: MK"
+
+[Command]
+name = "c"
+command = 
+time = 0
+text = "c: HK"
+
+[Command]
+name = "c2"
+command = 
+time = 0
+text = "c2: HK"
+
+[Command]
+name = "chargeb"
+command = 
+time = 0
+text = "chargeb: MK"
+
+[Command]
+name = "chargey"
+command = 
+time = 0
+text = "chargey: MP"
+
+[Command]
+name = "recoverb"     ;Required (do not remove)"
+command = 
+time = 0
+text = "recoverb"     ;Required (do not remove): MK+MK"
+
+[Command]
+name = "x"
+command = 
+time = 0
+text = "x: LP"
+
+[Command]
+name = "x2"
+command = 
+time = 0
+text = "x2: LP"
+
+[Command]
+name = "y"
+command = 
+time = 0
+text = "y: MP"
+
+[Command]
+name = "y2"
+command = 
+time = 0
+text = "y2: MP"
+
+[Command]
+name = "z"
+command = 
+time = 0
+text = "z: HP"
+
+[Command]
+name = "z2"
+command = 
+time = 0
+text = "z2: HP"
+;====================<SUPER MOVES>====================
+[Command]
+name = "Abare Tosanami"
+command = 
+time = 0
+text = "Abare Tosanami: ↓↘→ x 2 + K (L/M/H)"
+
+[Command]
+name = "Hayate no Red Hawk"
+command = 
+time = 0
+text = "Hayate no Red Hawk: ↓↙↓↘→ + MK+HP+LP / MK+HP+MP / MK+LP+MP"
+
+[Command]
+name = "MAX Abare Tosanami"
+command = 
+time = 0
+text = "MAX Abare Tosanami: ↓↘→ x 2 + 2K"
+
+[Command]
+name = "MAX Seichuzen Godanzuki"
+command = 
+time = 0
+text = "MAX Seichuzen Godanzuki: ↓↘→ x 2 + 2P"
+
+[Command]
+name = "MAX Tanden Renki"
+command = 
+time = 0
+text = "MAX Tanden Renki: ↓↙↓↙ + MK+MK+HP+LP / MK+MK+HP+MP / MK+MK+LP+MP"
+
+[Command]
+name = "MAXRikujou Gekiha Ken"
+command = 
+time = 0
+text = "MAXRikujou Gekiha Ken: ↓↓↓ + 2P"
+
+[Command]
+name = "Seichuzen Godanzuki"
+command = 
+time = 0
+text = "Seichuzen Godanzuki: ↓↘→ x 2 + P (L/M/H)"
+
+[Command]
+name = "Tanden Renki"
+command = 
+time = 0
+text = "Tanden Renki: ↓↙↓↙ + MK+MK+HP / MK+MK+LP / MK+MK+MP"

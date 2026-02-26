@@ -1,0 +1,240 @@
+;**********************************
+; super-fundo
+[Statedef 8500]
+physics = N
+anim = 8500
+sprpriority = -3
+
+[State 8500, 5] 
+type = VarSet 
+trigger1 = Time = 0 
+var(2) = root, ID 
+
+[State 8500, 9] ;Sem fundo e frente
+type        = AssertSpecial 
+trigger1 = 1
+flag = noBG 
+flag2 = noFG 
+ignorehitpause = 1
+
+[State 8500, 9] ;Efeito de fundo azul (com partner)
+type     = PalFx
+triggerall = numpartner != 0
+trigger1 = partner, stateno!=[4400,4499]
+trigger1 = (time%30)=0
+time = 30
+sinadd = ceil(random/16),ceil(random/16),ceil(random/16),50
+add = 0,0,0
+
+[State 8500, 9] ;Efeito de fundo azul (sem partner)
+type     = PalFx
+triggerall = numpartner != 0
+trigger1 = partner, stateno=[4400,4499]
+trigger2 = partner, life=0
+triggerall = (time%30)=0
+time = 30
+add = 0,0,0
+sinadd = 0,0,100,50
+
+[State 8500, 9] ;Efeito de fundo azul (sem partner)
+type     = PalFx
+triggerall = numpartner = 0
+trigger1 = (time%30)=0
+time = 30
+add = 0,0,0
+sinadd = 0,0,100,50
+
+[State 8500, 9] ;animação de fundo
+type        = Explod 
+trigger1 = numexplod(8510)=0
+anim = f400;8510 
+postype = left
+ID = 8510 
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;12 
+pos = 1,0;1,120 
+scale= const(size.xscale),const(size.yscale)*1.5;2
+bindtime = -1
+
+[State 8500, 9] ;animação de fundo
+type        = Explod 
+trigger1 = numexplod(8511)=0
+anim = f401;8511
+postype = right
+ID = 8511 
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;12 
+pos = 0,0 
+scale= const(size.xscale),const(size.yscale)*1.5;/2;*2.01
+bindtime = -1
+facing=-1
+
+[State 8500, 9] ;animação de fundo
+type        = Explod 
+trigger1 = numexplod(8500)=0
+anim = f401;8511 
+postype = left
+ID = 8500
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;12 
+pos = 1,239;120 
+scale= const(size.xscale),const(size.yscale)/2
+bindtime = -1
+vfacing=-1
+
+[State 8500, 9] ;animação de fundo
+type        = Explod 
+trigger1 = numexplod(8513)=0
+anim = f400;8510
+postype = right
+ID = 8513 
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;200;12
+pos = 0,239;120 
+scale= const(size.xscale),const(size.yscale)/2;*2.01
+bindtime = -1
+facing=-1
+vfacing=-1
+
+[State 8500, 7] 
+Type = RemoveExplod 
+triggerall = root, var(9)<=0
+trigger1 = root, stateno!=[3000,3010]
+trigger1 = root, stateno!=4000
+trigger1 = root, stateno!=3500
+trigger1 = root, stateno!=4500
+trigger1 = root, stateno!=4550
+trigger2 = root, Numhelper(8550)!=0
+
+[State 8500, 7] 
+Type = destroyself 
+triggerall = root, var(9)<=0
+trigger1 = root, stateno!=[3000,3010]
+trigger1 = root, stateno!=4000
+trigger1 = root, stateno!=3500
+trigger1 = root, stateno!=4500
+trigger1 = root, stateno!=4550
+
+;---------------------------------------------------------
+; Super KO FX
+; (THANKS TO: Splode´s Rogue)
+[Statedef 8550]
+type = A
+movetype = I
+physics = N
+anim = 8550
+
+[State 8500, 9] ;Efeito de fundo
+type     = allPalFx
+trigger1 = time=0;(time%20)=0
+time = 45;70
+add = 0,0,0
+sinadd = 100,100,100,75;150
+persistent=1;0;
+ignorehitpause=1
+
+[State 8550, 1]
+type = AssertSpecial
+trigger1 = 1;(time%2)=0;roundstate=3;1
+flag = NoBG
+flag2 = nobardisplay
+flag3 = NoFG;nokoslow;nomusic;nokosnd;
+persistent=1;0;
+ignorehitpause=1
+
+[State 8550, hiper combo finish!]; c/ mvsc sp
+type = PlaySnd
+triggerall = root,var(17) >= 10
+trigger1 = time = 4
+trigger2 = time = 3
+trigger3 = time = 2
+value = F8550,0
+channel=2
+volume=255
+
+[State 8550, hiper combo finish!]; s/ mvsc sp
+type = PlaySnd
+triggerall = root,var(17) < 10
+trigger1 = time = 4
+trigger2 = time = 3
+trigger3 = time = 2
+value = 8550,0
+channel=2
+volume=255
+
+[State 8550, 2]
+type = Explod
+triggerall = root,var(17) < 10
+trigger1 = time =[0,80]
+ID = 222
+anim = 8555
+postype = left
+pos = 160,120;1, 0
+bindtime = -1
+removetime = 1;-2;6
+;ownpal = 1
+sprpriority = -2
+scale= (80-time)*0.25,(80-time)*0.25
+ignorehitpause=1
+ontop=((time%2)=0)
+
+[State 8550, 2]
+type = Explod
+triggerall = root,var(17) < 10
+trigger1 = time =[0,80]
+ID = 222
+anim = 8555
+postype = left
+pos = 160,120;1, 0
+bindtime = -1
+removetime = 1;-2;6
+;ownpal = 1
+sprpriority = -2
+scale= (82-time)*0.25,(82-time)*0.25
+ignorehitpause=1
+;ontop=((time%2)=0)
+
+[State 8550, 2]
+type = Explod
+triggerall = root,var(17) < 10
+trigger1 = time =[0,80]
+ID = 222
+anim = 8555
+postype = left
+pos = 160,120;1, 0
+bindtime = -1
+removetime = 1;-2;6
+;ownpal = 1
+sprpriority = -2
+scale= (84-time)*0.25,(84-time)*0.25
+ignorehitpause=1
+ontop=((time%2)=0)
+
+[State 8550, 2]
+type = Explod
+triggerall = root,var(17) < 10
+trigger1 = time > 80
+ID = 222
+anim = 8555
+postype = left
+pos = 160,120;1, 0
+bindtime = -1
+removetime = 1;-2;6
+ownpal = 1
+sprpriority = -2
+scale= 1,1;(84-time)*0.25,(84-time)*0.25
+ignorehitpause=1
+
+[State 8550, 7] 
+Type = destroyself 
+trigger1 = numexplod(222)=0;roundstate!=3 && 
+triggerall = root,var(17) >= 10
+
+[State 8550, 7] 
+Type = destroyself 
+triggerall = root,var(17) < 10
+trigger1 = time>80 && roundstate!=3;= 20;25

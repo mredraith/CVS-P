@@ -1,0 +1,224 @@
+;---------------------------------------------------------------------------
+; States that are always checked (use -3) :
+;---------------------------------------------------------------------------
+
+[Statedef -3]
+
+;This controller plays a sound everytime KFM lands from a jump, or
+;from his back-dash.
+[State -3, Landing Sound]
+type = PlaySnd
+triggerall = Time = 1
+trigger1 = stateno = 52 ;Jump land
+trigger2 = stateno = 106 ;Run-back land
+value = 40, 0
+channel = 1
+
+[State -3, Landing Sound]
+type = PlaySnd
+triggerall = Time = 1 && var(17)>=10
+trigger1 = stateno = 52 ;Jump land
+trigger2 = stateno = 106 ;Run-back land
+value = f52, 0
+channel = 1
+
+; AUTO AI
+
+[State -3, Activate AI] 
+type = VarSet 
+triggerall = var(20) != 1
+trigger1 = command = "CPU1"
+trigger2 = command = "CPU2"
+trigger3 = command = "CPU3"
+;trigger4 = var(20) != 1;   <<<  teste
+v = 20
+value = 1 
+
+
+; Põe um símbolo no P2 (O)-próprio
+[State -3]
+type = Explod
+triggerall = alive = 1 && var(17) < 10
+trigger1 = enemynear, screenpos y <0
+trigger2 = enemynear, screenpos y > 220 - (const(size.head.pos.y))
+trigger3 = P2bodyDist y > 200
+anim = 8612 - ((enemy,id)<id)
+id = 8611
+pos = ceil((enemynear,screenpos x)),20+(enemynear, screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+;facing = (facing)
+removetime = 1 
+scale= const(size.xscale),const(size.yscale)
+
+; Põe um símbolo no P2 (>)-próprio
+[State -3]
+type = Explod
+triggerall = alive = 1 && var(17) < 10
+trigger1 = enemynear, screenpos y <0 
+trigger2 = enemynear, screenpos y > 220 - (const(size.head.pos.y))
+trigger3 = P2bodyDist y > 200
+anim = 8614 - ((enemy,id)<id)
+id = 8613
+pos = ceil((enemynear,screenpos x)),20+(enemynear, screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+facing = (enemy,facing);-1
+removetime = 1 
+scale= const(size.xscale),const(size.yscale)
+
+;Põe um símbolo em você
+; Põe um símbolo no P1 (O)-próprio
+[State -3]
+type = Explod
+trigger1 = screenpos y <0 
+triggerall = var(39)=var(37) && alive = 1 && var(17) < 10
+trigger2 = screenpos y > 220 - (const(size.head.pos.y))
+trigger1 = var(39)=var(37)
+trigger3 = P2bodyDist y < -200
+anim = 8611 + ((enemy,id)<id)
+id = 8611
+pos = ceil(screenpos x),20+(screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+;facing = (facing)
+removetime = 1
+scale= const(size.xscale),const(size.yscale)
+
+;Põe um símbolo em você
+; Põe um símbolo no P1 (>)-próprio
+[State -3]
+type = Explod
+trigger1 = screenpos y <0 
+triggerall = var(39)=var(37) && alive = 1 && var(17) < 10
+trigger2 = screenpos y > 220 - (const(size.head.pos.y))
+trigger3 = P2bodyDist y < -200
+anim = 8613 + ((enemy,id)<id)
+id = 8613
+pos = ceil(screenpos x),20+(screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+facing = facing;1
+removetime = 1
+scale= const(size.xscale),const(size.yscale)
+
+;=======================================================
+; Põe um símbolo no P2 (O)- mvsc2 screenpack
+[State -3]
+type = Explod
+triggerall = alive = 1 && var(17) >= 10
+trigger1 = enemynear, screenpos y <0
+trigger2 = enemynear, screenpos y > 220 - (const(size.head.pos.y))
+trigger3 = P2bodyDist y > 200
+anim = f (301 - ((enemy,id)<id))
+id = 8611
+pos = ceil((enemynear,screenpos x)),20+(enemynear, screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+;facing = (facing)
+removetime = 1 
+scale= const(size.xscale),const(size.yscale)
+
+; Põe um símbolo no P2 (>)- mvsc2 screenpack
+[State -3]
+type = Explod
+triggerall = alive = 1 && var(17) >= 10
+trigger1 = enemynear, screenpos y <0 
+trigger2 = enemynear, screenpos y > 220 - (const(size.head.pos.y))
+trigger3 = P2bodyDist y > 200
+anim = f(303 - ((enemy,id)<id))
+id = 8613
+pos = ceil((enemynear,screenpos x)),20+(enemynear, screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+facing = (enemynear,facing);-1
+removetime = 1 
+scale= const(size.xscale),const(size.yscale)
+
+;Põe um símbolo em você
+; Põe um símbolo no P1 (O)- mvsc2 screenpack
+[State -3]
+type = Explod
+trigger1 = screenpos y <0 
+triggerall = var(39)=var(37) && alive = 1 && var(17) >= 10
+trigger2 = screenpos y > 220 - (const(size.head.pos.y))
+trigger1 = var(39)=var(37)
+trigger3 = P2bodyDist y < -200
+anim = f(300 + ((enemy,id)<id))
+id = 8611
+pos = ceil(screenpos x),20+(screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+;facing = (facing)
+removetime = 1
+scale= const(size.xscale),const(size.yscale)
+
+;Põe um símbolo em você
+; Põe um símbolo no P1 (>)- mvsc2 screenpack
+[State -3]
+type = Explod
+trigger1 = screenpos y <0 
+triggerall = var(39)=var(37) && alive = 1 && var(17) >= 10
+trigger2 = screenpos y > 220 - (const(size.head.pos.y))
+trigger3 = P2bodyDist y < -200
+anim = f(302 + ((enemy,id)<id))
+id = 8613
+pos = ceil(screenpos x),20+(screenpos y>0)*200
+postype = left;back
+sprpriority = 4
+ignorehitpause = 1
+ontop = 1
+bindtime = -1
+persistent = 1
+facing = facing;1
+removetime = 1
+scale= const(size.xscale),const(size.yscale)
+
+;=======================================================
+;contador de projéteis ou helpers inimigos
+;=======================================================
+[State -3]
+type = Varset
+trigger1 = roundstate = 1
+v = 5
+value = 0
+
+[State -3]
+type = Varset
+trigger1 = roundstate = 1 && var(5)=0
+v = 5
+value = (enemy, numhelper)
+
+[State -3]
+type = Varset
+trigger1 = 1
+v = 6
+value = (enemy, numproj) + ((enemy, numhelper) - var(5)*(var(5)!=0))

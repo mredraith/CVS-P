@@ -1,0 +1,891 @@
+
+;---------------------------------------------------------------------------
+;Ground Fall
+[Statedef 1180]
+type=A
+movetype=H
+physics=N
+velset=-1,8
+facep2=1
+
+[State 1180, Width]
+type=Width
+trigger1=1
+edge=25,-25
+player=50,0
+[State 1180, Anim]
+type=ChangeAnim
+trigger1=!Time
+value=5050
+
+[State 1180, Change]
+type=ChangeState
+trigger1=pos y > -vel y
+value=1181
+;---------------------------------------------------------------------------
+;Ground Bounce
+[Statedef 1181]
+type=A
+movetype=H
+physics=N
+velset=0,0
+
+[State 1181, HitGround]
+type=PosSet
+trigger1=!time
+y=0
+[State 1181, Snd]
+type=PlaySnd
+trigger1=Time=1
+value=F7, (sysvar(1) > 5) + (sysvar(1) > 14)
+
+[State 1181, Anim]
+type=GameMakeAnim
+trigger1=Time=0
+trigger1=!SysVar(0)
+value=60 + (sysvar(1) > 5) + (sysvar(1) > 14)
+pos=0, 0
+under=sysvar(1) <= 14
+[State 1181, EnvShake]
+type=EnvShake
+trigger1=!time
+time=14
+ampl=5
+
+[State 1181, Anim]
+type=ChangeAnim2
+trigger1=!Time
+value=1181
+[State 1181, Velset]
+type=VelSet
+trigger1=animelemtime(2)=0
+x=-2
+y=-12
+[State 1181, Veladd]
+type=VelAdd
+trigger1=animelemtime(2)>=0
+y=.4
+persistent=1
+
+[State 1181, Land]
+type=SelfState
+trigger1=Vel Y > 0 && Pos Y >= 0
+value=5100
+;========================<HIT WALL>=============================
+;Wall Bounce-Hit Pause
+[Statedef 1325]
+type=A
+movetype=H
+physics=N
+velset=0,0
+[State 1325, anim]
+type=changeanim
+trigger1= 1
+value=5012
+[State 1325, end]
+type=changestate
+trigger1= hitshakeover
+value=1326
+
+;---------------------------------------------------------------
+;Wall Bounce-Falling
+[Statedef 1326]
+type=A
+movetype=H
+physics=N
+
+[State 1326, vel]
+type=hitvelset
+trigger1= !time
+x=1
+y=1
+[State 1326, grav]
+type=veladd
+trigger1= 1
+y=gethitvar(yaccel)
+
+[State 1326, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 1326, push]
+type=playerpush
+trigger1= 1
+value=0
+
+[State 1326, anim]
+type=changeanim
+trigger1= !time
+value=5030
+
+[State 1326, bounce]
+type=changestate
+trigger1= backedgebodydist<=10 || frontedgebodydist<=10
+value=1327
+[State 1326, end]
+type=selfstate
+trigger1= vel y>0 && pos y>=0
+value=5100
+
+;------------------------------------------------------------------------
+;Wall Bounce-Hitting Wall
+[Statedef 1327]
+type=A
+movetype=H
+physics=N
+
+[State 1327, turn]
+type=turn
+trigger1= !time
+trigger1= frontedgedist<backedgedist
+
+
+[State 1327, pos]
+type=posset
+trigger1= 1
+x=-160*facing
+[State 1327, pos]
+type=posfreeze
+trigger1= 1
+x=1
+y=1
+
+[State 1327, EnvShake]
+type=EnvShake
+trigger1=!time
+time =14
+ampl=6
+ignorehitpause =1
+
+[State 1327, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 1327, push]
+type=playerpush
+trigger1= 1
+value=1
+
+[State 1327, anim]
+type=changeanim
+trigger1= 1
+value=5000
+
+[State 1327, end]
+type=changestate
+trigger1= time>=4
+value=1328
+
+;---------------------------------------------------------------------------
+;Wall Bounce-Falling
+[Statedef 1328]
+type=A
+movetype=H
+physics=N
+
+[State 1328, turn]
+type=turn
+trigger1= !time
+
+[State 1328, grav]
+type=veladd
+trigger1= 1
+y=.5
+[State 1328, vel]
+type=velset
+trigger1= !time
+x=-2.5
+y=-9
+
+[State 1328, anim]
+type=changeanim
+trigger1= !time
+value=ifelse(selfanimexist(5051),5051,5030)
+[State 1328, anim]
+type=changeanim
+trigger1= anim=5030 && !animtime
+value=5050
+[State 1328, Anim]
+type=changeanim
+trigger1= vel y>-3 && anim=5051 &&selfanimexist(5061)
+value=5061
+[State 1328, Anim]
+type=changeanim
+trigger1= vel y>-3 && anim=5051 &&!selfanimexist(5061)&&selfanimexist(5060)
+value=5060
+[State 1328, Anim]
+type=changeanim
+trigger1= vel y>-3 && anim=5051&&!selfanimexist(5060) &&!selfanimexist(5061)&&selfanimexist(5062)
+value=5062
+[State 1328, Anim]
+type=changeanim2
+trigger1= vel y>-3 && anim=5051&&!selfanimexist(5060) &&!selfanimexist(5061)&&!selfanimexist(5062)
+value=5061
+
+[State 1328, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,0
+[State 1328, push]
+type=playerpush
+trigger1= 1
+value=0
+
+[State 1328, end]
+type=selfstate
+trigger1= vel y>0 && pos y>=0
+value=5100
+;---------------------------------------------------------------------------
+[Statedef 3025]
+type    = S
+movetype= H
+physics = S
+ctrl = 0
+velset = 0,0
+sprpriority = 0
+
+[State 3025, AssertSpecial]
+type = AssertSpecial
+trigger1 =1
+flag = noautoturn
+ignorehitpause =1
+[State 3025, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+
+[State 3025, PosSet]
+type = PosSet
+trigger1 = !time
+y=0
+[State 3025, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3025  ;<=======custom animation
+
+[State 3025, SelfState]
+type = SelfState
+trigger1 = animtime=0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[Statedef 3026]
+type    = S
+movetype= H
+physics = S
+ctrl = 0
+velset = 0,0
+sprpriority = 0
+
+[State 3026, AssertSpecial]
+type = AssertSpecial
+trigger1 =1
+flag = noautoturn
+ignorehitpause =1
+[State 3026, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+
+[State 3026, PosSet]
+type = PosSet
+trigger1 = !time
+y=0
+[State 3026, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3026  ;<=======custom animation
+
+[State 3026, SelfState]
+type = SelfState
+trigger1 = animtime=0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[Statedef 3027]
+type    = A
+movetype= H
+physics = N
+juggle = 1
+ctrl = 0
+velset = 0,0
+sprpriority = 1
+facep2=1
+
+[State 3027, PosSet]
+type = PosSet
+trigger1 = !time
+y=0
+[State 3027, VelSet]
+type = VelSet
+trigger1 = animelem=2
+x = -2
+y = -8
+
+[State 3027, PalFX]
+type = PalFX
+trigger1 =!time 
+time = 64
+mul = 128, 128, 128
+sinadd = 96, 96, 96, 96
+[State 3027, ScreenBound]
+type = ScreenBound
+trigger1 = 1
+value = 1
+movecamera = 1,0
+ignorehitpause = 1
+
+[State 3027, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3027  ;<=======custom animation
+[State 3027, VelAdd]
+type = VelAdd
+trigger1 =animelemtime(3)>=0
+y = .4
+
+[State 3027, hit ground] 
+type = SelfState
+trigger1 =animelemtime(3)>=0
+trigger1 = Vel Y > 0 && Pos Y >= 0
+value = 5100
+;---------------------------------------------------------------------------
+[Statedef 3125]
+type    = A
+movetype= H
+physics = N
+ctrl = 0
+velset = 0,0
+sprpriority = 0
+facep2=1
+
+[State 3125, AssertSpecial]
+type = AssertSpecial
+trigger1 =1
+flag = noautoturn
+ignorehitpause =1
+[State 3125, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+[State 3125, ScreenBound]
+type = ScreenBound
+trigger1 =1 
+value = 1
+movecamera = 1,0
+ignorehitpause = 1
+
+[State 3125, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3125  ;<=======custom animation
+
+[State 3125, SelfState]
+type = SelfState
+trigger1 = animtime=0
+value = 5050
+;---------------------------------------------------------------------------
+[Statedef 3126]
+type    = A
+movetype= H
+physics = N
+juggle = 1
+ctrl = 0
+velset = -3,-9
+sprpriority = 1
+
+[State 3125, ScreenBound]
+type = ScreenBound
+trigger1 =1 
+value = 1
+movecamera = 1,0
+ignorehitpause = 1
+[State 3126, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3126  ;<=======custom animation
+[State 3126, VelAdd]
+type = VelAdd
+trigger1 =animelemtime(3)>=0
+y = .4
+
+[State 3126, hit ground] 
+type = SelfState
+trigger1 =animelemtime(3)>=0
+trigger1 = Vel Y > 0 && Pos Y >= 0
+value = 5100 
+;---------------------------------------------------------------------------
+[Statedef 3127]
+type    = A
+movetype= H
+physics = N
+ctrl = 0
+velset = 0,0
+sprpriority = 0
+
+[State 3127, NotHitBy]
+type = NotHitBy
+trigger1 =1
+value = ,NA,SA,NP,SP,HP,NT,ST,HT
+time = 1
+ignorehitpause = 1
+
+[State 3127, AssertSpecial]
+type = AssertSpecial
+trigger1 =1
+flag = noautoturn
+ignorehitpause =1
+[State 3127, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+[State 3127, ScreenBound]
+type = ScreenBound
+trigger1 =1 
+value = 1
+movecamera = 1,0
+ignorehitpause = 1
+
+[State 3127, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3127  ;<=======custom animation
+
+[State 3127, SelfState]
+type = SelfState
+trigger1 = animtime=0
+value = 5050
+;---------------------------------------------------------------------------
+[Statedef 3225]
+type    = S
+movetype= H
+physics = N
+ctrl = 0
+velset = 0,0
+sprpriority = 0
+facep2=1
+
+[State 3225, AssertSpecial]
+type = AssertSpecial
+trigger1 =1
+flag = noautoturn
+ignorehitpause =1
+[State 3225, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+
+[State 3225, PosSet]
+type = PosSet
+trigger1 = !time
+y=0
+[State 3225, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3025  ;<=======custom animation
+
+[State 3225, SelfState]
+type = SelfState
+trigger1 = animtime=0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[Statedef 3226]
+type    = A
+movetype= H
+physics = N
+ctrl = 0
+velset = -4,-14
+sprpriority = 1
+
+[State 3225, ScreenBound]
+type = ScreenBound
+trigger1 =1 
+value = 1
+movecamera = 1,0
+ignorehitpause = 1
+
+[State 3226, ChangeAnim]
+type = ChangeAnim
+trigger1 = !time && selfanimexist(5052)
+value = 5052 
+[State 3226, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time && !selfanimexist(5052)
+value = 3027  ;<=======custom animation
+
+[State 3226, VelAdd]
+type = VelAdd
+trigger1 =1
+y = .45
+
+[State 3126, hit ground] 
+type = SelfState
+trigger1 =animelemtime(1)>1
+trigger1 = Vel Y > 0 && Pos Y >= 0
+value = 5100 
+;---------------------------------------------------------------------------
+;Off screen Knockback
+[Statedef 4020]
+type   =A
+movetype= H
+physics=N
+juggle=1
+ctrl=0
+velset=-15,-3
+poweradd=0
+sprpriority=1
+facep2=1
+
+[State 0, VA]
+type=VelAdd
+trigger1 =animelemtime(2)>=0
+y =.45
+
+[State 0, ChangeAnim2]
+type=ChangeAnim2
+trigger1=!time
+value=4020  ;<=======custom animation
+
+[State 0, ChangeState]
+type=changeState
+trigger1=Pos Y >= 0 && Vel Y > 0
+value=4021
+ctrl=0
+;---------------------------------------------------------------------------
+;Off screen Knockback Fall
+[Statedef 4021]
+type   =L
+movetype= H
+physics=N
+velset=0,0
+facep2=1
+
+[State 4021, HitGround]
+type=PosSet
+trigger1=1
+y=0
+[State 4021, 2]
+type=GameMakeAnim
+trigger1=Time=0
+trigger1=!SysVar(0)
+value=60 + (sysvar(1) > 5) + (sysvar(1) > 14)
+pos=0, 0
+under=sysvar(1) <= 14
+[State 4021, EnvShake]
+type=EnvShake
+trigger1 =time=0
+time=18
+ampl=6
+[State 4021, BounceGround]
+type=ChangeAnim2
+trigger1=!Time
+value=4021
+
+[State 4021, finish]
+type=SelfState
+trigger1=time>=100
+value=Ifelse(Alive,5120,5150)
+;---------------------------------------------------------------------------
+[Statedef 4058]
+type   =S
+movetype= H
+physics=S
+juggle=1
+ctrl=0
+velset=0,0
+sprpriority=0
+facep2=1
+
+[State 0, HitFallSet]
+type=HitFallSet
+trigger1=1
+value=0
+
+[State 0, PosSet]
+type=PosSet
+trigger1=!time
+y=0
+[State 0, HitBy]
+type=HitBy
+trigger1 =1
+value=SCA,HA,HP,HT
+time=1
+ignorehitpause =1
+
+[State 0, ChangeAnim2]
+type=ChangeAnim2
+trigger1=!time
+value=4058  ;<=======custom animation
+
+[State 0, SelfState]
+type=SelfState
+trigger1=!animtime
+value=0
+ctrl=1
+;---------------------------------------------------------------------------
+[Statedef 4059]
+type   =S
+movetype= H
+physics=S
+juggle=1
+ctrl=0
+velset=0,0
+sprpriority=0
+facep2=1
+
+[State 0, HitFallSet]
+type=HitFallSet
+trigger1=1
+value=0
+[State 0, PosSet]
+type=PosSet
+trigger1=!time
+y=0
+[State 0, HitBy]
+type=HitBy
+trigger1 =1
+value=SCA,HA,HP,HT
+time=1
+ignorehitpause =1
+
+[State 0, ChangeAnim2]
+type=ChangeAnim2
+trigger1=!time
+value=4059  ;<=======custom animation
+[State 0, SelfState]
+type=SelfState
+trigger1=!animtime
+value=0
+ctrl=1
+;---------------------------------------------------------------------------
+;Wall-knockdown
+[Statedef 4060]
+type   =A
+movetype= H
+physics=N
+velset=0,0
+sprpriority=1
+
+[State 4061, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 4060, anim]
+type=changeanim
+trigger1= !time&&selfanimexist(5035)
+value=5035
+[State 4060, anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5035)&&selfanimexist(5030)
+value=5030
+[State 4060, anim]
+type=changeanim2
+trigger1= !time&&!selfanimexist(5035)&&!selfanimexist(5030)
+value=4020
+[State 4060, Turn]
+type=Turn
+trigger1=Time=0
+trigger1=P2Dist X < 0
+
+[State 4060, VelSet]
+type=VelSet
+trigger1=!time
+x=-8
+y=Ifelse(BackEdgeBodyDist<=35,-8,-4)
+
+[State 4060, ChangeState]
+type=ChangeState
+triggerall=AnimElem=1, > 0
+trigger1=BackEdgeBodyDist <= 5
+trigger2=Time >= 60
+value=4061
+;---------------------------------------------------------------------------
+;Wall-knockdown Hit Wall
+[Statedef 4061]
+type   =A
+movetype= H
+physics=N
+velset=0,0
+sprpriority=1
+
+[State 4061, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 4061, push]
+type=playerpush
+trigger1= 1
+value=1
+[State 4061, pos]
+type=posset
+trigger1= 1
+x=-160*facing
+[State 4061, pos]
+type=posfreeze
+trigger1= 1
+x=1
+y=1
+
+[State 4061, Anim]
+type=changeanim
+trigger1= !time&&selfanimexist(5051)
+value=5051
+[State 4061, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5051)&&selfanimexist(5050)
+value=5050
+[State 4060, anim]
+type=changeanim2
+trigger1= !time&&!selfanimexist(5051)&&!selfanimexist(5050)
+value=4020
+elem=3
+[State 4061, EnvShake]
+type=EnvShake
+trigger1=!Time
+time=14
+ampl=6
+
+[State 4061, ChangeState]
+type=ChangeState
+trigger1=time=10
+value=4062
+;---------------------------------------------------------------------------
+;Wall-knockdown Fall
+[Statedef 4062]
+type   =A
+movetype= H
+physics=N
+velset=0,0
+sprpriority=1
+
+[State 0, Turn]
+type=Turn
+trigger1 =!time
+[State 4062, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&selfanimexist(5061)
+value=5061
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5061)&&selfanimexist(5062)
+value=5062
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5061)&&!selfanimexist(5062)&&selfanimexist(5070)
+value=5070
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5061)&&!selfanimexist(5062)&&!selfanimexist(5070)&&selfanimexist(5050)
+value=5050
+[State 4060, anim]
+type=changeanim2
+trigger1= !time&&!selfanimexist(5061)&&!selfanimexist(5062)&&!selfanimexist(5070)&&!selfanimexist(5050)
+value=4020
+elem=4
+[State 4062, VelSet]
+type=VelSet
+trigger1=AnimElem=1
+x=-2
+y=-2
+
+[State 4062, VelAdd]
+type=VelAdd
+Trigger1=1
+y=.45
+
+[State 4062, SelfState]
+type=SelfState
+trigger1=Pos Y >= 0&&Vel Y > 0
+value=5100
+;---------------------------------------------------------------------------
+;Custom-ceiling bounce
+[Statedef 4065]
+type   =A
+movetype= H
+physics=N
+velset=0,0
+sprpriority=1
+facep2=1
+
+[State 4065, anim2]
+type=changeanim2
+trigger1= !time
+value=4065
+[State 4065, VelSet]
+type=VelSet
+trigger1 =!time
+x=-6
+y=-10
+
+[State 4065, ScreenBound]
+type=ScreenBound
+trigger1 =1
+value=1
+movecamera=1,0
+
+[State 4060, ChangeState]
+type=ChangeState
+trigger1=ceil(pos y<=-145)
+trigger2=Time=50
+value=4066
+
+;---------------------- Integer variable list ----------------------
+
+; var(0):= 8605
+; var(1):= 8015
+; var(3):= 40, 1005, 3005, 3205, 3305
+; var(4):= -3
+; var(5):= -3
+; var(6):= -3
+; var(7):= -3
+; var(8):= 1005, 1205, 3005, 3205, 3305
+; var(9):= -2
+;var(10):= 750, 800, 1000, 1050, 1100, 1110, 1120, 1200, 1250, 1300, 1400, 1450, 1500, 256, 1005, 1205
+;var(12):= 1300, 1350, 1400, 1450, 3150, 3151, 3005, 3205, 3305
+;var(13):= -2, 810, 820, 1410, 3101, 3151, 3510, 1005, 1205, 3005, 3205, 3305, 3405, 3410
+;var(15):= -2, 810, 820, 1050, 1150, 1250, 1350, 1410, 1450, 1550, 3000, 3050, 3100, 3101, 3150, 3151, 3200, 3250, 3300, 3350, 3400, 3500, 3510, 1005, 1205, 3005, 3205, 3305, 3405, 3410
+;var(16):= -2, 810, 820, 3101, 3151, 3510
+;var(17):= 900, 905, -2, 3000, 3050, 3100, 3150, 3200, 3250, 3300, 3350, 3400, 3500
+;var(18):= 1005, 1205, 3005, 3205, 3305, 3405, 3410
+;var(19):= 800, 805, 810, 820
+;var(20):= 900, 905, -2, 1050, 1150, 1250, 1350, 1450, 1550
+;var(21):= -3, 3000, 3050, 3100, 3150, 3200, 3250, 3300, 3350, 3400, 3500
+;var(22):= -3, 3000, 3050, 3100, 3150, 3200, 3250, 3300, 3350, 3400, 3500
+;var(23):= -3
+;var(25):= -3, 1050, 1150, 1250, 1350, 1450, 1550
+;var(26):= -2, 256
+;var(27):= 5900
+;var(29):= 256
+;var(30):= -2
+;var(33):= 200, 210, 220, 221, 230, 240, 250, 400, 410, 420, 430, 440, 450, 600, 610, 620, 630, 640, 650, 800, 1100, 1110, 1120, 1150, 1160, 1170, 1300, 1350, 1400, 1450, 1500, 1550, 3050, 3100, 3101, 3150, 3151, 3500
+;var(34):= 200, 210, 220, 221, 230, 240, 250, 400, 410, 420, 430, 440, 450, 600, 610, 620, 630, 640, 650, 1100, 1110, 1120, 1150, 1160, 1170, 1300, 1350, 1400, 1450, 1500, 1550, 3050, 3100, 3101, 3150, 3151, 3500
+;var(35):= 200, 210, 220, 221, 230, 240, 250, 400, 410, 420, 430, 440, 450, 600, 610, 620, 630, 640, 650, 1100, 1110, 1120, 1150, 1160, 1170, 1300, 1350, 1400, 1450, 1500, 1550, 3050, 3100, 3101, 3150, 3151, 3500
+;var(36):= 200, 210, 220, 221, 230, 240, 250, 400, 410, 420, 430, 440, 450, 600, 610, 620, 630, 640, 650, 1100, 1110, 1120, 1150, 1160, 1170, 1300, 1350, 1400, 1450, 1500, 1550, 3050, 3100, 3101, 3150, 3151, 3500
+;var(38):= -2
+;var(43):= 5900
+;var(44):= 5900
+;var(55):= 5900
+
+;---------------------- Float variable list ----------------------
+
+; fvar(1):= 8006, 8015
+; fvar(2):= 8006, 8015
+; fvar(5):= 900, 905, -3, 3000, 3050, 3100, 3150, 3200, 3250, 3300, 3350, 3400, 3500
+; fvar(8):= -2
+; fvar(9):= -2
+;fvar(10):= -2
+;fvar(11):= -2
+;fvar(12):= -2
+;fvar(13):= -2
+

@@ -10,7 +10,7 @@ versiondate = 06,21,2014
 mugenversion = 1.0
 author = "Victorys" 
 pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
-localcoord = 320,240
+localCoord  = 428,240
 
 [Files]
 movelist = MrKarate_unotag\movelist.dat

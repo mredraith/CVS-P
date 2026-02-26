@@ -1,6 +1,6 @@
 ; ____________________________
 ;| Sean Matsuda by Victorys|
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;====<DEFINITION>====
 [Info]
 name = "Sean Matsuda"
@@ -9,7 +9,7 @@ versiondate = 01,09,2014
 mugenversion = 1.0
 author = "Victorys" 
 pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
-localcoord = 427,240
+localCoord  = 428,240
 
 [Files]
 movelist = movelist.dat

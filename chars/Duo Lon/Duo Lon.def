@@ -1,0 +1,46 @@
+
+[Info]
+name ="Duo Lon"
+displayname ="Duo Lon"
+versiondate =04,14,2013
+mugenversion =1.0
+author ="Chazzanova"
+pal.defaults =1,2,3,4,5,6
+localCoord  = 428,240
+
+[Files]
+movelist = movelist.dat
+sprite =Duo Lon.sff
+anim =Duo Lon.air
+sound =Duo Lon.snd
+cmd =Duo Lon.cmd
+cns =Constants.cns
+stcommon =common1.cns
+st =States\System.cns
+st1=States\Normal.cns
+st2=States\Specials.cns
+st3=States\Supers.cns
+st4=States\Helpers.cns
+st5=States\Customs.cns
+st6=config.txt
+
+[Palette Keymap]
+a  = 1
+b  = 2
+c  = 3
+x  = 4
+y  = 5
+z  = 6
+a2 = 7
+b2 = 8
+c2 = 9
+x2 = 10
+y2 = 11
+z2 = 12
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 
+
+
+; FEINT CANCEL PATCHED

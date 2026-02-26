@@ -9,7 +9,7 @@ versiondate =04,14,2002
 mugenversion =1.0
 author ="DivineWolf"
 pal.defaults = 1,2,3,4,5,6
-localcoord = 427,240
+localCoord  = 428,240
 
 ; Files for the player
 [Files]

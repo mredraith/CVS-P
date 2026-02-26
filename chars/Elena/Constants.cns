@@ -1,0 +1,168 @@
+;====================<VARIABLE LIST>====================
+
+;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4)  : Chain Combo (0 = Off; 1 = On)
+
+;var(6)  : Cancel Flag
+;var(7)  : Able to Super Cancel
+;var(8)  : Able to Hyper Cancel
+;var(9)  : Counter Flag
+;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Heavy)
+
+;var(13) : Hit Count
+
+;var(15) : Juggle Points
+;var(16) : Juggle Flag
+;var(17) : Ticks UnGuardable
+;var(18) : ProjContact (0 = No; 1 = Yes)
+;var(19) : Throw Escape
+;var(20) : Custom Combo Time
+;var(21) : Super Cancel Flag
+;var(22) : Hyper Cancel Flag
+
+;var(23) : Super Finish Type (900 = Custom Combo; 3000 = Somersault Strike; 3100 = Total Wipeout; 3200 = Sonic Hurricane)
+
+;var(25) : Ticks to Apply EX FX
+;var(26) : Ticks Unable to Walk
+;var(30) : Hit Detection
+;var(31) : Hit Sound (0 = Light Punch; 1 = Medium Punch; 2 = Heavy Punch; 3 = Light Kick; 4 = Medium Kick; 5 = Heavy Kick; 6 = Projectile Hit; 800 = Grab)
+;var(32) : Guard Sound
+;var(33) : Hit Spark (8010 = Light; 8011 = Medium; 8012 = Heavy; 8013 = Special; 8014 = Super)
+;var(34) : Guard Spark (8000 = Normal; 8001 = Special)
+;var(35) : Spark xPos
+;var(36) : Spark yPos
+;var(38) : Throw (0 = Allowed; 1 = Not Allowed)
+;var(39) : Projectile Flag (0 = Off; 1 = On)
+
+;var(47) : Ticks Back is held down
+;var(48) : Back Charge Buffer
+;var(49) : Ticks Down is held down
+;var(50) : Down Charge Buffer
+
+;var(58) : Game Time
+
+;fvar(5) : Amount of Corner Push
+;fvar(10): Damage Dampener
+;fvar(11): Damage Dampener with Counter Multiplier Added
+
+
+
+; _________________________________________
+;| Elena by varo_hades                     |
+; 
+;====================<CONSTANTS>====================
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 15
+airJuggle = 15
+sparkNo = s8010
+guard.sparkNo = s8000
+KO.echo = 0
+volume = 0
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xScale = 1
+yScale = 1
+ground.back = 15
+ground.front = 15
+air.back = 15
+air.front = 15
+height = 60
+attack.dist = 160
+proj.attack.dist = 90
+proj.doScale = 0
+head.pos = -5, -90
+mid.pos = -5, -60
+shadowOffset = 0
+draw.offset = 0,0
+
+[Velocity]
+walk.fwd  = 3.5
+walk.back = -3.125
+run.fwd  = 7.1,0
+run.back = -8.3,-3
+jump.neu = 0, -8.6875
+jump.fwd = 4.875
+jump.back = -3.625
+runJump.fwd = 5.875, -9.5
+runJump.back = -4.625, -9.5
+airjump.neu = 0,-6.5
+airjump.back = -2.55
+airjump.fwd = 2.5
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yAccel = 0.46875
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundLevel = 25
+air.gethit.groundRecover.ground.threshold = -20
+air.gethit.groundRecover.groundLevel = 10
+air.gethit.airRecover.threshold = -1
+air.gethit.airRecover.yAccel = 0.35
+air.gethit.trip.groundLevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yAccel = 0.4
+down.bounce.groundLevel = 12
+down.friction.threshold = 0.5
+
+[Quotes]
+victory0 = "Maybe you should take up another skill! Why not try mountain biking?"
+victory1 = "I think we can be friends. You think so too, right?"
+victory2 = "I'm so pleased to have fought with you!"
+victory3 = "Did you let me win? No one can be THAT bad!"
+victory4 = "I thank the earth of Africa which gave me these flexible, powerful legs!"
+victory5 = "It was a great fight! I wanted it to last forever!"
+victory6 = "I'll never forget about today's fight!"
+victory7 = "I express my gratitude for the honor of fighting you. That's the meaning of the Brave Dance!"
+victory8 = "The Brave Dance was born from the nature of Africa. Will you celebrate with me?"
+victory9 = "Kicking gracefully as if I'm dancing. That's the essence of the Spinning Beat!"
+victory10 = "I won by the Spinning Beat! It was a great fight!"
+victory11 = "That was my best dance, performed especially for you!"
+victory12 = "Get addicted to the beat! Rhythm can be your friend too!"
+victory13 = "Forget about your troubles and realize the harmony around us!"
+victory14 = "My accent? I must have picked it up during my travels!"
+victory15 = "You could teach me some new moves! Let's dance together again!"
+victory16 = "I hope this moment of friendship will bring you many happy memories!"
+victory17 = "When you feel the wind, you can feel many elements of nature at work."
+victory18 = "You need to be more flexible. Let me help you to stretch your body!"
+victory19 = "I'll show you my dance, you ready?"
+victory20 = "Think you can keep up?"
+victory21 = "Jambo!"
+victory22 = "Listen carefully. You can hear it!"
+victory23 = "Your dance is strange. It's not really my style."
+victory24 = "Watch my dance. Watch!"
+victory25 = "Don't worry, we'll fight again!"
+victory26 = "Would you like to meet my father?"
+victory27 = "I came a very long way to meet you!"
+victory28 = "Don't think about it. Just feel!"
+victory29 = "If you train your lower body you will improve."
+victory30 = "Why don't we lie down for a while? The weather's nice."
+victory31 = "I didn't hurt you, did I?"
+victory32 = "Thank you. Let's dance again soon."
+victory33 = "It was a beautiful dance."
+victory34 = "You need to improve your rhythm."
+victory35 = "This... is not..."
+victory36 = "Phew! Did you like my rhythm?"
+victory37 = "I want to feel the rhythm! Let's go again!"
+victory38 = "Your rhythm was great!"
+victory39 = "Tired? You lost your rhythm during that fight."
+victory40 = "If you want to improve your rhythm, try practicing while listening to music!"
+victory41 = "What a shame the fight is over. I was really enjoying that!"
+victory42 = "Nature itself forged my kicks."
+victory43 = "Would you like to practice dancing with me?"
+victory44 = "I wonder what father and the others are up to right now..."
+victory45 = "Looks like we're friends now!"
+victory46 = "Let's dance!"
+victory47 = "You need to learn rhythm... You can do it!"
+victory48 = "You are too old to stand a chance against me!"
+victory49 = "Don't think so seriously! Relax in the sun and clear your mind."

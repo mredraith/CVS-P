@@ -49,7 +49,7 @@
 
 ; _________________________________________
 ;| Zangief by varo_hades |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;CONSTANTS=
 [Data]
 life = 1000
@@ -171,13 +171,13 @@ victory49 = "Nothing wrong with being aggressive, but you should block once in a
 victory50 = "You may be fast, but your moves are weak! You are not yet the king, comrade."
 
 ;Akuma
-victory51 = "That´s one scary mug you have there! Have you considered a wrestling career?"
+victory51 = "Thats one scary mug you have there! Have you considered a wrestling career?"
 
 ;Balrog
 victory52 = "You showed great bravery in attempting to counter my throws with mere punches!."
 
 ;Blanka
-victory53 = "Go ahead and bite me! I´ll return the favor with a throw!"
+victory53 = "Go ahead and bite me! Ill return the favor with a throw!"
 
 ;Cammy
 victory54 = "Your blows cannot harm the Red Cyclone! They tickle like feathers!."
@@ -213,13 +213,13 @@ victory63 = "I wrestle bears, but your weak punches could not fell even a measly
 victory64 = "Your fighting resembles those two, but there is something different about it."
 
 ;Guy
-victory65 = "You bounce around like a rabbit, but it´s all over once I grab you!"
+victory65 = "You bounce around like a rabbit, but its all over once I grab you!"
 
 ;Hugo
 victory66 = "Nice muscles! Next time let's fight in a ring!"
 
 ;Ibuki
-victory67 = "It´s best to train in your youth! Easy to build muscles then."
+victory67 = "Its best to train in your youth! Easy to build muscles then."
 
 ;Ken
 victory68 = "With muscles like this, not even your Hadoken can hurt me!"
@@ -234,13 +234,13 @@ victory70 = "Your pitiful sideshow hocus pocus was no match for my glorious musc
 victory71 = "I already have a motherland I love! I cannot swear allegiance to you!"
 
 ;Rose
-victory72 = "Why carry a scarf if you´re not going to wear it properly?"
+victory72 = "Why carry a scarf if youre not going to wear it properly?"
 
 ;Ryu
-victory73 = "I´m ready for a rematch any time! Throw all the Hadokens you want!"
+victory73 = "Im ready for a rematch any time! Throw all the Hadokens you want!"
 
 ;Sagat
-victory74 = "If I´d let your fireballs get to me, I never would have won! Mind over matter!"
+victory74 = "If Id let your fireballs get to me, I never would have won! Mind over matter!"
 
 ;Sakura
 victory75 = "Ha ha! I bet you thought your Hadokens would work on me! Think again, child!"

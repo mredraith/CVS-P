@@ -3,7 +3,7 @@
 ; CVS Chang Koehan POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -15,7 +15,7 @@ life = 1000
 attack = 100 
 defence = 100 
 fall.defence_up = 50 
-lieDown.time = 15 
+lieDown.time = 15
 airjuggle = 0 
 sparkno = s8010 
 guard.sparkno = s8000 

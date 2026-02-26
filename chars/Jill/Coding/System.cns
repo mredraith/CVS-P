@@ -57,7 +57,7 @@ life = 940 ;Amount of life to start with
 attack = 100 ;attack power (more is stronger)
 defence = 100 ;defensive power (more is stronger)
 fall.defence_up = 50 ;Percentage to increase defense everytime player is knocked down
-lieDown.time = 15 ;Time which player lies down for, before getting up
+lieDown.time = 15
 airjuggle = 0 ;Number of points for juggling
 sparkno = s8010 ;Default hit spark number for HitDefs
 guard.sparkno = s8000 ;Default guard spark number
@@ -113,7 +113,7 @@ victory0 = "I'm glad I brought along that extra ammo."
 victory1 = "As long as guns work, I can handle anything."
 victory2 = "The only way forward is straight through."
 victory3 = "Sorry, but you're finished."
-victory4 = "Phew…mission complete, for now."
+victory4 = "Phewmission complete, for now."
 ;---------------------------------------------------------------------------
 ; Lose by Time Over
 [Statedef 170]

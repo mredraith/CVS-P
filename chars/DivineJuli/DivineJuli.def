@@ -1,0 +1,48 @@
+; Definition file for Juli
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Juli"
+displayname ="Juli"
+versiondate =06,13,2013
+mugenversion =04,14,2002
+author ="DivineWolf"
+pal.defaults = 4,5,6,1,2,3,10,11,12,7,8,9
+
+; Files for the player
+localCoord  = 428,240
+[Files]
+movelist = movelist.dat
+novelist =movelist.dat
+cmd     =DivineJuli.cmd
+cns     =Coding/System.cns
+st      =Coding/System.cns
+stcommon =common1.cns
+sprite  =DivineJuli.sff
+anim    =DivineJuli.air
+sound   =DivineJuli.snd
+pal1=Colors/DataDrain_Custom.act
+pal2=Colors/Custom_1.act
+pal3=Colors/Custom_2.act
+pal4=Colors/NeoJuli.act
+pal5=Colors/JoltingWasp.act
+pal6=Colors/PAVGN_FHDS.act
+pal7=Colors/MDII_Custom.act
+pal8=Colors/QF_K'.act
+pal9=Colors/SecretAgent.act
+pal10=Colors/Alt_Stockings.act
+pal11=Colors/Girard_GrayTsunami.act
+pal12=Colors/SF_3.act
+st1=Coding/Normal.cns
+st2=Coding/Specials.cns
+st3=Coding/Helpers.cns
+st4=Coding/Supers.cns
+
+; Arcade mode
+[Arcade]
+intro.storyboard =
+ending.storyboard =
+
+
+; FEINT CANCEL PATCHED

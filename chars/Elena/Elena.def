@@ -1,0 +1,44 @@
+; _______________________________________________
+;| Elena by varo_hades				 |
+; 
+;====================<DEFINITION>====================
+[Info]
+name        ="Elena"
+displayName ="Elena"
+versionDate =05,02,2012
+mugenVersion=1.0
+author      ="varo_hades"
+pal.defaults=4,5,6,1,2,3,10,11,12,7,8,9
+localCoord  = 428,240
+
+[Files]
+cmd     =Command.cmd
+cns     =ConstantsCvS.cns
+st      =States/System.st
+stCommon=common1.cns
+sprite  =Sprite.sff
+anim    =Anim.air
+sound   =Sound.snd
+pal1=Palettes/elena01.act
+pal2=Palettes/elena02.act
+pal3=Palettes/elena03.act
+pal4=Palettes/elena04.act
+pal5=Palettes/elena05.act
+pal6=Palettes/elena06.act
+pal7=Palettes/elena07.act
+pal8=Palettes/elena08.act
+pal9=Palettes/elena09.act
+pal10=Palettes/elena10.act
+pal11=Palettes/elena11.act
+pal12=Palettes/elena12.act
+st1=States/Normal.st
+st2=States/Special.st
+st3=States/Super.st
+st4=States/Helpers.st
+	
+;[Arcade]
+;intro.storyBoard = 
+;ending.storyBoard = 
+[Arcade]
+intro.storyboard=
+ending.storyboard=

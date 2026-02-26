@@ -1,0 +1,523 @@
+---------{ English version in the end of file }----------
+
+
+	Acrescente o arquivo "TagBattle5.cns" no diretório de seu personagem e faça as modificações abaixo:
+
+MODIFICAÇÕES NO ARQUIVO CMD:
+
+	Acrescente no "Super Motions":
+
+[Command]
+name = "DoubleDragon"
+command = ~D, DF, F, c+z
+time = 15
+
+[Command]
+name = "DoubleDragonCounter"
+command = ~B, DB, D, c+z
+time = 15
+
+[Command]
+name = "DoubleDragonCross"
+command = ~D, DB, B, c+z
+time = 15
+
+
+	Acrescente logo após o "Hold Dir":
+
+[Command]
+name = "hold_z"
+command = /$z
+time = 1
+
+	Acrescente logo após o "2/3 Button Combination":
+
+;-| PartnerChange |-----------------------------------------------
+[Command]
+name = "troca"
+command = z+c
+time = 1
+
+[Command] 
+name = "Assist"
+command = y+b
+time = 1
+
+	Acrescente logo após o "[Statedef -1]":
+
+;---------------------------------------------------------------------------
+;Double Hyper Combo
+[State -1]
+type = ChangeState
+value = 4460
+triggerall = Numpartner = 1 && var(38)!=0 && var(38)!=5
+triggerall = power >= 2000
+triggerall = command = "DoubleDragon"
+triggerall = Roundstate = 2
+trigger1 = (partner, stateno = 4404) && statetype != A && ctrl
+trigger2 = (partner, stateno = 4404) && stateno = [3000,4400]
+trigger3 = (partner, stateno = 4404) && stateno = [4500,4999]
+trigger4 = (partner, stateno = 4404) && statetype !=A && stateno = [200,1200]
+trigger5 = (partner, alive=1) && statetype !=A && stateno = [1600,2000]
+ignorehitpause=1
+
+;Double Dragon Counter
+[State -1]
+type = ChangeState
+value = 4420
+triggerall = Numpartner = 1 && var(37)!=0
+triggerall = command = "DoubleDragonCounter"
+triggerall = Roundstate = 2 && statetype !=A && power >= 1000 
+trigger1 = (partner, stateno = 4404) && StateNo = [150,151]
+ignorehitpause=1
+
+; Double Dragon Cross
+[State -1]
+type = ChangeState
+value = 4490
+triggerall = Numpartner = 1 && var(38)!=0 && var(38)!=5
+triggerall = power >= 2000
+triggerall = command = "DoubleDragonCross"
+triggerall = Roundstate = 2
+trigger1 = (partner, stateno = 4404) && statetype != A && ctrl
+trigger2 = (partner, stateno = 4404) && stateno = [3000,4400]
+trigger3 = (partner, stateno = 4404) && stateno = [4500,4999]
+trigger4 = (partner, stateno = 4404) && statetype !=A && stateno = [200,1200]
+trigger5 = (partner, alive=1) && statetype !=A && stateno = [1600,2000]
+ignorehitpause=1
+
+;partner Change
+[State -1]
+type = ChangeState
+value = 4410
+triggerall = Numpartner = 1 && var(37)!=0
+triggerall = command = "troca"
+triggerall = Roundstate = 2 && statetype !=A
+trigger1 = statetype != A
+trigger1 = (partner, stateno = 4404) && ctrl
+
+;partner Assist
+[State -1]
+type = ChangeState
+value = 4480
+triggerall = Numpartner = 1 && var(37)!=0
+triggerall = command = "Assist"
+triggerall = Roundstate = 2 && statetype !=A
+trigger1 = (partner, stateno = 4404) && ctrl
+
+
+
+
+
+
+
+
+
+MODIFICAÇÕES NO ARQUIVO DEF:
+
+	Acrescente no "[Files]":
+
+st9 = TagBattle5.cns   ;Tag mode
+
+MODIFICAÇÕES NO ARQUIVO AIR:
+
+	Acrescente isso no arquivo. As "animações próprias" são opcionais:
+
+; Animações obrigatórias
+;====================================
+;Detectar P3
+[Begin Action 4400]
+Clsn1: 1
+ Clsn1[0] = -39, -54, 39, 0
+-1, 0, 0, 0, 1, , 
+
+[Begin Action 4460]
+Clsn1Default: 1
+ Clsn1[0] = -999,  0,999,240
+Clsn2Default: 3
+ Clsn2[0] =   0,-87, 15,-75
+ Clsn2[1] = -30,-27,-17,  0
+ Clsn2[2] = -17,-74, 26,  0
+0, 0, 0, 0, 1
+0, 0, 0, 0, 1
+
+;Face1
+[Begin Action 4465]
+9000,1, 0,0, -1, ,A
+
+;Face2
+[Begin Action 4466]
+-1,1, 0,0, 12, ,A
+9000,1, 0,0, -1, ,A
+
+;Face3
+[Begin Action 4467]
+-1,1, 0,0, 24, ,A
+9000,1, 0,0, -1, ,A
+
+; assist icon 1
+[Begin Action 4485]
+9000, 0, -12, 12, 5
+
+; assist icon 2
+[Begin Action 4486]
+-1, 0, -12, 12, 45
+9000, 0, -12, 12, -1
+
+; Double Dragon Cross - line
+[Begin Action 4487]
+9000, 0, 0, 0, 1
+9000, 0, 0, 0, 1,,a
+9000, 0, 0, 0, 1,,a1
+9000, 0, 0, 0, 1,,a2
+
+
+
+;Custom animations (optional)
+;Animações próprias (opcionais)
+;======================================
+; Detect P3 (change) - tag out pose
+; Detectar P3 (troca) - pose de tag out 
+; tempo: 55
+[Begin Action 4410]; optional
+Clsn2Default: 3
+ Clsn2[0] = 0, -87, 15, -75
+ Clsn2[1] = -30, -27, -17, 0
+ Clsn2[2] = -17, -74, 26, 0
+4400, 0, 0, 0, 5, , 
+5, 0, 0, 0, 5, , 
+4400, 1, 0, 0, 5, , 
+4400, 2, 0, 0, 5, , 
+4400, 3, 0, 0, 5, , 
+4400, 4, 0, 0, 30, , 
+
+; Partner jump strike kick
+; Voadora de troca do parceiro
+; tempo: -1
+[Begin Action 4440]
+Clsn1: 2
+ Clsn1[0] =  61,-24, 22,-57
+ Clsn1[1] =  78, -5, 47,-37
+Clsn2: 5
+ Clsn2[0] =  26,-114,-11,-102
+ Clsn2[1] = -39,-98, 18,-89
+ Clsn2[2] =  -9,-87, 15,-60
+ Clsn2[3] =  17,-64, 36,-35
+ Clsn2[4] =  38,-51, 59,-20
+650,1, 0,0, -1
+
+; Taunt for change - tag in pose
+; Provocação para a troca - pose de tag in
+; tempo: 58
+[Begin Action 4445]
+Clsn2Default: 2
+ Clsn2[0] = -29,-114, 14,  1
+ Clsn2[1] =  18,-80, 40,  0
+180,8, 0,0, 8
+180,9, 0,0, 5
+180,12, 0,0, 5
+180,12, 0,1, 5
+180,12, 0,0, 5
+180,12, 0,1, 5
+180,12, 0,0, 5
+180,12, 0,1, 5
+180,9, 0,0, 5
+180,8, 0,0, 5
+Clsn2: 2
+ Clsn2[0] = -29,-114, 14,  1
+ Clsn2[2] =  15,-80, 25,  0
+180,10, 0,0, 5
+
+; Call Assist
+; Chamar assistente
+; tempo: 45
+[Begin Action 4480]
+Clsn2Default: 3
+ Clsn2[0] = 0, -87, 15, -75
+ Clsn2[1] = -30, -27, -17, 0
+ Clsn2[2] = -17, -74, 26, 0
+4480, 2, 0, 0, 5, , 
+4480, 0, 0, 0, 5, , 
+4480, 1, 0, 0, 5, , 
+4480, 0, 0, 0, 5, , 
+4480, 1, 0, 0, 5, , 
+4480, 0, 0, 0, 5, , 
+4480, 1, 0, 0, 5, , 
+4480, 2, 0, 0, 5, , 
+4480, 3, 0, 0, 5, , 
+
+
+
+MODIFICAÇÕES NO ARQUIVO CNS:
+
+	Se seu personagem usa o [Statedef -3], copie os comandos do arquivo TAGBATTLE4.CNS entre as linhas:
+
+;******** TAG-TEAM (START):
+
+;******** TAG-TEAM (END):
+
+	E cole-os após o "[Statedef -3]" do arquivo CNS de seu personagem.
+	Isso é necessário porque o MUGEN não consegue ler essas instruções duas vezes.
+	Se eu personagem não usa [Statedef -3], não precisa modificar nada.
+
+DÚVIDAS NAS MODIFICAÇÕES:
+
+	Entre em contato com: ryouwin@ig.com.br
+
+------------------------------ {English} ------------------
+
+	Add the file "TagBattle5.cns" in your character's directory and make the modifications below: 
+
+MODIFICATIONS IN THE FILE CMD: 
+
+	Increase in the "Super Motions":
+
+[Command]
+name = "DoubleDragon"
+command = ~D, DF, F, c+z
+time = 15
+
+[Command]
+name = "DoubleDragonCounter"
+command = ~B, DB, D, c+z
+time = 15
+
+[Command]
+name = "DoubleDragonCross"
+command = ~D, DB, B, c+z
+time = 15
+
+
+	Increase soon after "Hold Dir":
+
+[Command]
+name = "hold_z"
+command = /$z
+time = 1
+
+	Increase soon after "2/3 Button Combination": 
+
+; - | PartnerChange |----------------------------------------------- 
+[Command]
+name = "troca"
+command = z+c
+time = 1
+
+[Command] 
+name = "Assist"
+command = y+b
+time = 1
+
+	Increase soon after the "[Statedef -1]": 
+
+;---------------------------------------------------------------------------
+;Double Hyper Combo
+[State -1]
+type = ChangeState
+value = 4460
+triggerall = Numpartner = 1 && var(38)!=0 && var(38)!=5
+triggerall = power >= 2000
+triggerall = command = "DoubleDragon"
+triggerall = Roundstate = 2
+trigger1 = (partner, stateno = 4404) && statetype != A && ctrl
+trigger2 = (partner, stateno = 4404) && stateno = [3000,4400]
+trigger3 = (partner, stateno = 4404) && stateno = [4500,4999]
+trigger4 = (partner, stateno = 4404) && statetype !=A && stateno = [200,1200]
+trigger5 = (partner, alive=1) && statetype !=A && stateno = [1600,2000]
+ignorehitpause=1
+
+;Double Dragon Counter
+[State -1]
+type = ChangeState
+value = 4420
+triggerall = Numpartner = 1 && var(37)!=0
+triggerall = command = "DoubleDragonCounter"
+triggerall = Roundstate = 2 && statetype !=A && power >= 1000 
+trigger1 = (partner, stateno = 4404) && StateNo = [150,151]
+ignorehitpause=1
+
+; Double Dragon Cross
+[State -1]
+type = ChangeState
+value = 4490
+triggerall = Numpartner = 1 && var(38)!=0 && var(38)!=5
+triggerall = power >= 2000
+triggerall = command = "DoubleDragonCross"
+triggerall = Roundstate = 2
+trigger1 = (partner, stateno = 4404) && statetype != A && ctrl
+trigger2 = (partner, stateno = 4404) && stateno = [3000,4400]
+trigger3 = (partner, stateno = 4404) && stateno = [4500,4999]
+trigger4 = (partner, stateno = 4404) && statetype !=A && stateno = [200,1200]
+trigger5 = (partner, alive=1) && statetype !=A && stateno = [1600,2000]
+ignorehitpause=1
+
+;partner Change
+[State -1]
+type = ChangeState
+value = 4410
+triggerall = Numpartner = 1 && var(37)!=0
+triggerall = command = "troca"
+triggerall = Roundstate = 2 && statetype !=A
+trigger1 = statetype != A
+trigger1 = (partner, stateno = 4404) && ctrl
+
+;partner Assist
+[State -1]
+type = ChangeState
+value = 4480
+triggerall = Numpartner = 1 && var(37)!=0
+triggerall = command = "Assist"
+triggerall = Roundstate = 2 && statetype !=A
+trigger1 = (partner, stateno = 4404) && ctrl
+
+
+
+
+
+
+
+
+
+MODIFICATIONS IN THE FILE DEF: 
+
+	Add in the "[Files]":
+
+st9 = TagBattle5.cns   ;Tag mode
+
+MODIFICATIONS IN THE FILE AIR: 
+
+	Increase that in the file. The custom animations are optional:
+
+; Obligatory animations
+;====================================
+;Detect P3
+[Begin Action 4400]
+Clsn1: 1
+ Clsn1[0] = -39, -54, 39, 0
+-1, 0, 0, 0, 1, , 
+
+[Begin Action 4460]
+Clsn1Default: 1
+ Clsn1[0] = -999,  0,999,240
+Clsn2Default: 3
+ Clsn2[0] =   0,-87, 15,-75
+ Clsn2[1] = -30,-27,-17,  0
+ Clsn2[2] = -17,-74, 26,  0
+0, 0, 0, 0, 1
+0, 0, 0, 0, 1
+
+;Face1
+[Begin Action 4465]
+9000,1, 0,0, -1, ,A
+
+;Face2
+[Begin Action 4466]
+-1,1, 0,0, 12, ,A
+9000,1, 0,0, -1, ,A
+
+;Face3
+[Begin Action 4467]
+-1,1, 0,0, 24, ,A
+9000,1, 0,0, -1, ,A
+
+; assist icon 1
+[Begin Action 4485]
+9000, 0, -12, 12, 5
+
+; assist icon 2
+[Begin Action 4486]
+-1, 0, -12, 12, 45
+9000, 0, -12, 12, -1
+
+; Double Dragon Cross - line
+[Begin Action 4487]
+9000, 0, 0, 0, 1
+9000, 0, 0, 0, 1,,a
+9000, 0, 0, 0, 1,,a1
+9000, 0, 0, 0, 1,,a2
+
+
+
+;Custom animations (optional)
+;======================================
+;Detect P3 (change) - tag out pose
+;Detectar P3 (troca) - pose de tag out 
+[Begin Action 4410]; optional
+Clsn2Default: 3
+ Clsn2[0] = 0, -87, 15, -75
+ Clsn2[1] = -30, -27, -17, 0
+ Clsn2[2] = -17, -74, 26, 0
+4400, 0, 0, 0, 5, , 
+5, 0, 0, 0, 5, , 
+4400, 1, 0, 0, 5, , 
+4400, 2, 0, 0, 5, , 
+4400, 3, 0, 0, 5, , 
+4400, 4, 0, 0, 30, , 
+
+; Partner jump strike kick
+[Begin Action 4440]
+Clsn1: 2
+ Clsn1[0] =  61,-24, 22,-57
+ Clsn1[1] =  78, -5, 47,-37
+Clsn2: 5
+ Clsn2[0] =  26,-114,-11,-102
+ Clsn2[1] = -39,-98, 18,-89
+ Clsn2[2] =  -9,-87, 15,-60
+ Clsn2[3] =  17,-64, 36,-35
+ Clsn2[4] =  38,-51, 59,-20
+650,1, 0,0, -1
+
+; Taunt for change - tag in pose
+; Provocação para a troca - pose de tag in
+[Begin Action 4445]
+Clsn2Default: 2
+ Clsn2[0] = -29,-114, 14,  1
+ Clsn2[1] =  18,-80, 40,  0
+180,8, 0,0, 8
+180,9, 0,0, 5
+180,12, 0,0, 5
+180,12, 0,1, 5
+180,12, 0,0, 5
+180,12, 0,1, 5
+180,12, 0,0, 5
+180,12, 0,1, 5
+180,9, 0,0, 5
+180,8, 0,0, 5
+Clsn2: 2
+ Clsn2[0] = -29,-114, 14,  1
+ Clsn2[2] =  15,-80, 25,  0
+180,10, 0,0, 5
+
+; Call Assist
+[Begin Action 4480]
+Clsn2Default: 3
+ Clsn2[0] = 0, -87, 15, -75
+ Clsn2[1] = -30, -27, -17, 0
+ Clsn2[2] = -17, -74, 26, 0
+4480, 2, 0, 0, 5, , 
+4480, 0, 0, 0, 5, , 
+4480, 1, 0, 0, 5, , 
+4480, 0, 0, 0, 5, , 
+4480, 1, 0, 0, 5, , 
+4480, 0, 0, 0, 5, , 
+4480, 1, 0, 0, 5, , 
+4480, 2, 0, 0, 5, , 
+4480, 3, 0, 0, 5, , 
+
+
+
+MODIFICATIONS IN THE FILE CNS: 
+
+	IF your character uses the [Statedef -3], copy the commands of the TAGBATTLE4.CNS between the lines:
+
+;******** TAG-TEAM (START):
+
+;******** TAG-TEAM (END):
+
+	And paste it after the "[Statedef -3]"  of the CNS file of your character.
+	That is necessary because MUGEN doesn't get to read those instructions twice. 
+	If your character doesn't uses [Statedef -3], it doesn't need to modify anything. 
+
+DOUBTS IN THE MODIFICATIONS: 
+
+	Enter in contact with: ryouwin@ig.com.br 

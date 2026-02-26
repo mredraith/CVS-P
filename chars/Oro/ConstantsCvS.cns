@@ -1,0 +1,207 @@
+;====================<VARIABLE LIST>====================
+
+;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4)  : Chain Combo (0 = Off; 1 = On)
+
+;var(6)  : Cancel Flag
+;var(7)  : Able to Super Cancel
+;var(8)  : Able to Hyper Cancel
+;var(9)  : Counter Flag
+;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Heavy)
+
+;var(13) : Hit Count
+
+;var(15) : Juggle Points
+;var(16) : Juggle Flag
+;var(17) : Ticks UnGuardable
+;var(18) : ProjContact (0 = No; 1 = Yes)
+;var(19) : Throw Escape
+;var(20) : Custom Combo Time
+;var(21) : Super Cancel Flag
+;var(22) : Hyper Cancel Flag
+
+;var(23) : Super Finish Type (900 = Custom Combo; 3000 = Somersault Strike; 3100 = Total Wipeout; 3200 = Sonic Hurricane)
+
+;var(25) : Ticks to Apply EX FX
+;var(26) : Ticks Unable to Walk
+;var(30) : Hit Detection
+;var(31) : Hit Sound (0 = Light Punch; 1 = Medium Punch; 2 = Heavy Punch; 3 = Light Kick; 4 = Medium Kick; 5 = Heavy Kick; 6 = Projectile Hit; 800 = Grab)
+;var(32) : Guard Sound
+;var(33) : Hit Spark (8010 = Light; 8011 = Medium; 8012 = Heavy; 8013 = Special; 8014 = Super)
+;var(34) : Guard Spark (8000 = Normal; 8001 = Special)
+;var(35) : Spark xPos
+;var(36) : Spark yPos
+;var(38) : Throw (0 = Allowed; 1 = Not Allowed)
+;var(39) : Projectile Flag (0 = Off; 1 = On)
+
+;var(47) : Ticks Back is held down
+;var(48) : Back Charge Buffer
+;var(49) : Ticks Down is held down
+;var(50) : Down Charge Buffer
+
+;var(58) : Game Time
+
+;fvar(5) : Amount of Corner Push
+;fvar(10): Damage Dampener
+;fvar(11): Damage Dampener with Counter Multiplier Added
+
+
+
+; _________________________________________
+;| Oro by varo_hades                       |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<CONSTANTS>====================
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 60
+airJuggle = 15
+sparkNo = s8010
+guard.sparkNo = s8000
+KO.echo = 0
+volume = 0
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xscale = 0.85	          	
+yscale = 0.95
+ground.back = 15
+ground.front = 15
+air.back = 15
+air.front = 15
+height = 60
+attack.dist = 160
+proj.attack.dist = 90
+proj.doScale = 0
+head.pos = -5, -70
+mid.pos = -5, -35
+shadowOffset = 0
+draw.offset = 0,0
+
+[Velocity]
+walk.fwd  = 2.7
+walk.back = -2.6
+run.fwd  = 5,0
+run.back = -4.5,-3.8
+jump.neu = 0, -10
+jump.fwd = 3.6
+jump.back = -2.6
+runJump.fwd = 4.6, -11.1
+runJump.back = -3.6, -11.1
+airjump.neu = 0,-6.5
+airjump.back = -2.8
+airjump.fwd = 2.8
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yAccel = 0.48
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundLevel = 25
+air.gethit.groundRecover.ground.threshold = -20
+air.gethit.groundRecover.groundLevel = 10
+air.gethit.airRecover.threshold = -1
+air.gethit.airRecover.yAccel = 0.35
+air.gethit.trip.groundLevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yAccel = 0.4
+down.bounce.groundLevel = 12
+down.friction.threshold = 0.5
+
+[Quotes]
+victory0 = "Some call it unearthly abilities. I call it Senjitsu."
+victory1 = "Such a lack of challenge. I thought you had burning passion, but you are devoid of talent."
+victory2 = "It was over before I knew it. Too bad you never trained with me!"
+victory3 = "I have no time to deal with cretins like you."
+victory4 = "You have to start by learning how to communicate with heaven and earth!"
+victory5 = "I used the minimum energy to insure my victory."
+victory6 = "You strain yourself too much! Fight without restraint and you will stand a chance."
+victory7 = "You have the power, you just don't know how to use it."
+victory8 = "Your aptitude is great. Train yourself for 80 years and you'll be a respected Sennin."
+victory9 = "For once I felt pressed. First time in ten years I've broken a sweat."
+victory10 = "Well, you were almost worthy of the lies you told about your ability."
+victory11 = "Show some respect for your elders, whippersnapper!"
+victory12 = "You strain yourself too much! Fight without restraint and you will stand a chance."
+victory13 = "I used the minimum energy to insure my victory."
+victory14 = "Some call it unearthly abilities. I call it Senjitsu."
+victory15 = "It was over before I knew it. Too bad you never trained with me!"
+victory16 = "For once I felt pressed. First time in ten years I've broken a sweat."
+victory17 = "Such a lack of challenge. I thought you had burning passion, but you are devoid of talent."
+victory18 = "If you train for another 81 years you might become a good Sennin... Ho, ho, ho!"
+victory19 = "Hmm? I think I met you somewhere before... Is it just me? Will you tell me?"
+victory20 = "Ease up, or you won't be able to put forth your enormous strength!"
+victory21 = "I was once as proud as you... Since then I've become better."
+victory22 = "Your land has given you superb instincts. Now sharpen them by fighting!"
+victory23 = "You might be what I've been looking for... Let me look at you some more... Hmmm..."
+victory24 = "You are defeated now, big man. Get out of my way!"
+victory25 = "I can sense your movements easily, lady! Learn to be more unpredictable!"
+victory26 = "I could train you to be better but... Who is that friend of yours?"
+victory27 = "You're talented, but maybe you are a little too old. Perhaps much older than me?"
+victory28 = "Huh? You have even less hair than I do! What is your secret?"
+victory29 = "You show potential in your fist... Were you holding something back?"
+victory30 = "You are young. I admit that I envy you, but your path as a fighter may be a troubled one."
+victory31 = "You are far too proud of your body! I must punish you!"
+victory32 = "Hm, you're not so bad. Your moves are great but... Something is missing..."
+victory33 = "I am not used to babysitting. I wonder how old I will be when you reach my fighting level?"
+victory34 = "Let's get this over with."
+victory35 = "Nice to meet you!"
+victory36 = "I have some free time to kill."
+victory37 = "Hmm... Peculiar..."
+victory38 = "Hmm, weak! You're weak"
+victory39 = "Your moves are deadly... They could kill me by boring me to death!"
+victory40 = "Keep it up and you'll suffer the horror of pain!"
+victory41 = "If we went home right now, would anyone really care? Probably not."
+victory42 = "Would you like to meet my pets? Or are you too injured?"
+victory43 = "If I kept fighting against you, I might actually get worse!"
+victory44 = "If you are angry, how can you hope to strike accurately?"
+victory45 = "Have you no sense of defense? Or do you just like to feel pain?"
+victory46 = "I'm so bored! I feel so limited! Huh? You feel the same way?"
+victory47 = "You have to start your training over."
+victory48 = "Train in 20 years and come again."
+victory49 = "It's nice to use my special moves."
+
+;Alex
+victory50 = "Don't judge your opponent by their appearance. You're such a cocky youth!"
+
+;Dudley
+victory51 = "Your uppercut you're so proud of moves in slow motion in my eyes!"
+
+;Elena
+victory52 = "I see promise in you girl. Come on, come closer!"
+
+;Ibuki
+victory53 = "You're vicious, but too vicious. You can't even touch me!"
+
+;Ken
+victory54 = "Your fighting spirit is strong. If I could train you like a dog, you might become good someday!"
+
+;Necro
+victory55 = "Your screwed up face is only entertainment."
+
+;Oro
+victory56 = "Your aptitude is great. Train yourself for 80 years and you'll be a respected Sennin."
+
+;Ryu
+victory57 = "You resemble me in my younger days! I must train you if you are to realize your potential"
+
+;Sean
+victory58 = "You're so young! I envy your youth, but not your lack of skill."
+
+;Yang
+victory59 = "I'm tired of dealing with you, immature brat!"
+
+;Yun
+victory60 = "You're not seasoned enough! A 4000-year Chinese legacy just isn't enough."
+
+;Akuma
+victory61 = "You claim to be the master of fists... This disturbs me... The road to true mastery is much harder. Let us travel it now..."
+
+;Gill
+victory62 = "You look as strong as that boy with the headband. We shall see!"

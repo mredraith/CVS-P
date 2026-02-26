@@ -1,0 +1,149 @@
+;-------------------------------------------------------------
+;INITIALIZE
+[Statedef 5900]
+type = S
+
+[State 5900, Varreset]
+type = varrangeset
+trigger1 = !roundsexisted && matchno = 1
+value = 0
+
+[State 5900, Varreset]
+type = varrangeset
+trigger1 = !roundsexisted && matchno = 1
+fvalue = 0
+
+;==================================================================================================
+; Palette Selector
+[State 5900, Palette Selector]
+type = VarSet
+trigger1 = 1
+v = 57
+value =0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Palette Selector on Intro
+;Change the value number to 1 if you do want Palette Selector on Intro
+;Default value is 1.
+;==================================================================================================
+; MAX Mode/Custom Combo
+[State 5900, MAX Mode/Custom Combo]
+type = VarSet
+trigger1 = 1
+v = 56
+value =1
+;___________________________________________________________________________
+;Change the value number to 0 if you do want MAX Mode
+;Change the value number to 1 if you want Custom Combo
+;Default value is 1.
+;==================================================================================================
+; Special K.O FX
+[State 5900, Special K.O FX]
+type = VarSet
+trigger1 = 1
+v = 55
+value =1
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Special K.O FX
+;Change the value number to 1 if you do want Special K.O FX
+;Default value is 1.
+
+[State 5900, Pal Selector on]
+type=helper
+triggerall=roundno = 1
+triggerall=var(57)&&!numhelper(256)&&!AILevel&&numenemy 
+trigger1= roundno = 1 && matchno=1 && !(teammode = simul) && !(enemy, teammode = simul)
+trigger2= !var(26) 
+trigger3=(teammode = turns)
+trigger3=!roundsexisted && (enemy,roundsexisted)
+id=256
+stateno=256
+facing=facing
+ownpal=1
+size.xScale=0.5
+size.yScale=0.5
+
+[state 5900, No Palette selector]
+type = remappal
+trigger1 = !var(57)
+trigger2 = AILevel && !var(26)
+source = 1, 1
+dest = 1, palno
+ignorehitpause = 1
+
+[State 5900, Ladies' Man Intro]
+type = ChangeState
+triggerAll = NumEnemy
+triggerAll = RoundNo = 1 || (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
+trigger1 = (Enemy, Name = "Fuuma" || Enemy, Name = "Fuuma")
+trigger2 = (Enemy, Name = "Nbc-Fuuma" || Enemy, Name ="Nbc-Fuuma")
+trigger3 = (Enemy, Name = "Hanzo" || Enemy, Name = "Hanzo")
+trigger4 = (Enemy, Name = "Hanzou" || Enemy, Name = "Hanzou")
+trigger5 = (Enemy, Name = "Nbc-Hanzou" || Enemy, Name = "Nbc-Hanzou")
+trigger6 = (Enemy, Name = "NBC Hanzo" || Enemy, Name = "NBC Hanzo")
+trigger7 = (Enemy, Name = "Ryoko" || Enemy, Name = "Ryoko")
+trigger8 = (Enemy, Name = "Izumo Ryoko" || Enemy, Name = "Izumo Ryoko")
+trigger9 = (Enemy, Name = "Janne" || Enemy, Name = "Janne")
+trigger10 = (Enemy, Name = "Janne Dulk" || Enemy, Name = "Janne Dulk")
+trigger11 = (Enemy, Name = "Ryofu" || Enemy, Name = "Ryofu")
+trigger12 = (Enemy, Name = "Jack" || Enemy, Name ="Jack")
+trigger13 = (Enemy, Name = "Zeus" || Enemy, Name = "Zeus")
+trigger14 = (Enemy, Name = "Neo Geegus" || Enemy, Name = "Neo Geegus")
+trigger15 = (Enemy, Name = "Geegus" || Enemy, Name = "Geegus")
+trigger16 = (Enemy, Name = "NeoGeegus" || Enemy, Name = "NeoGeegus")
+trigger17 = (Enemy, Name = "Giga" || Enemy, Name = "Giga")
+trigger18 = (Enemy, Name = "Shura" || Enemy, Name = "Shura")
+trigger19 = (Enemy, Name = "Erick" || Enemy, Name = "Erick")
+trigger20 = (Enemy, Name = "Muscle Power" || Enemy, Name = "Muscle Power")
+trigger21 = (Enemy, Name = "Dragon" || Enemy, Name = "Dragon")
+trigger22 = (Enemy, Name = "Kim Dragon" || Enemy, Name ="Kim Dragon")
+trigger23 = (Enemy, Name = "Brocken" || Enemy, Name = "Brocken")
+trigger24 = (Enemy, Name = "Rasputin" || Enemy, Name = "Rasputin")
+trigger25 = (Enemy, Name = "J.Carn" || Enemy, Name = "J.Carn")
+trigger26 = (Enemy, Name = "J_Carn" || Enemy, Name = "J_Carn")
+trigger27 = (Enemy, Name = "Son Gokuu" || Enemy, Name = "Son Gokuu")
+trigger28 = (Enemy, Name = "Gokuu" || Enemy, Name = "Gokuu")
+trigger29 = (Enemy, Name = "Johnny" || Enemy, Name = "Johnny")
+trigger30 = (Enemy, Name = "Johnny Max" || Enemy, Name = "Johnny Max")
+trigger31 = (Enemy, Name = "John Max" || Enemy, Name = "John Max")
+trigger32 = (Enemy, Name = "J.Max" || Enemy, Name ="J.Max")
+trigger33 = (Enemy, Name = "C.Kidd" || Enemy, Name = "C.Kidd")
+trigger34 = (Enemy, Name = "Capitan Kidd" || Enemy, Name = "Capitan Kidd")
+trigger35 = (Enemy, Name = "Mudman" || Enemy, Name = "Mudman")
+trigger36 = (Enemy, Name = "NBC Mudman" || Enemy, Name = "NBC Mudman")
+trigger37 = (Enemy, Name = "Madman" || Enemy, Name = "Madman")
+trigger38 = (Enemy, Name = "Izumo Ryoko Nude" || Enemy, Name = "Izumo Ryoko Nude")
+trigger39 = (Enemy, Name = "Ryoko Nude" || Enemy, Name = "Ryoko Nude")
+trigger40 = (Enemy, Name = "Nbc Neodio" || Enemy, Name = "Nbc Neodio")
+trigger41 = (Enemy, Name = "Neodio" || Enemy, Name = "Neodio")
+trigger42 = (Enemy, Name = "Neo-Dio" || Enemy, Name = "Neo-Dio")
+trigger43 = (Enemy, Name = "Neo_dio" || Enemy, Name = "Neo_dio")
+trigger44 = (Enemy, Name = "SHURA WH2" || Enemy, Name = "SHURA WH2")
+trigger45 = (Enemy, Name = "Ryoko Kano" || Enemy, Name = "Ryoko Kano")
+trigger46 = (Enemy, Name = "Ryoko_Kano" || Enemy, Name = "Ryoko_Kano")
+trigger47 = (Enemy, Name = "Ryoko.Kano" || Enemy, Name = "Ryoko.Kano")
+trigger48 = (Enemy, Name = "Ryoko-Kano" || Enemy, Name = "Ryoko-Kano")
+trigger49 = (Enemy, Name = "Ryoko K." || Enemy, Name = "Ryoko K.")
+trigger50 = (Enemy, Name = "ngbc_fuuma" || Enemy, Name = "ngbc_fuuma")
+trigger51 = (Enemy, Name = "Kotaro Fuuma" || Enemy, Name = "Kotaro Fuuma")
+trigger52 = (Enemy, Name = "Dio" || Enemy, Name = "Dio")
+trigger53 = (Enemy, Name = "Ryoko Izumo" || Enemy, Name = "Ryoko Izumo")
+trigger54 = (Enemy, Name = "Ryoko Izumo Nude" || Enemy, Name = "Ryoko Izumo Nude")
+trigger55 = (Enemy, Name = "ngbc_Hanzo" || Enemy, Name = "ngbc_Hanzo")
+trigger56 = (Enemy, Name = "ngbc-Hanzo" || Enemy, Name = "ngbc-Hanzo")
+value = 193
+
+[State 5900, Turns Intro]
+type = ChangeState
+trigger1 = TeamMode = Turns
+trigger1 = !RoundsExisted && RoundNo >= 2
+value = 6900
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1
+value = 191 + random%2
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 0

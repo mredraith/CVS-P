@@ -1,0 +1,374 @@
+; Quem_sou_eu [Var(39)]: 0-Morto, 1-Primeiro, 2-Segundo
+; Colaboração [Var(38)]: 1-Lutar só, 2-Duplo Especial, 3-Um Ataque, 4-Counter
+; Vez na luta [Var(37)]: 1-Primeiro, 2-Segundo
+; Verificação [Var(36)]: Meu ID
+;             [Var(35)]: 0-Proíbe sair de tela, 1-Permite sair de tela
+; P3 life     [Var(34)]: Memoriza a vida
+; Recuperação [Var(33)]: Memoriza a vida
+
+
+;---------------------------------------------------------------------------
+; States that are always executed (use statedef -2)
+;---------------------------------------------------------------------------
+[Statedef -2]
+
+[State -2, 1] ; debug
+type = DisplayToClipboard
+trigger1 = roundstate > 0
+;text="eu39 %d, vez37 %d, Colab38 %d, sair? %d";bake %d";
+;params = Var(39), var(37),var(38),Var(35);floor(backedgedist);
+;text = "Var(9) %d, Var(11) %d, var(12) %d, var(17) %d"
+;params= Var(9), Var(11), var(12), var(17);floor(var(11)/10**(var(12)+1))
+;text="39=37? %d, Colab %d, p3life %d, sair? %d";bake %d";
+;params = (Var(39)=Var(37)), var(38),var(34),Var(35);floor(backedgedist);
+;text="p2bodydist x %d, p2bodydist y %d, var(17) %d, var(20) %d"
+;params = floor(p2bodydist x), floor(p2bodydist y), (var(17)),var(20)
+text = "p1 X %d, p2 x %d, var(12) %d, var(17) %d"
+params= ceil(screenpos x), ceil((enemy,screenpos x)), var(12), var(17);floor(var(11)/10**(var(12)+1))
+
+;---------------------------------------------------------------------------
+[State -2, pressstart]; - próprio
+type = Explod
+triggerall = var(20) != 0 && roundstate < 3 && var(17)<10
+trigger1 = (gametime%60)= id && life != 0
+id = 8620
+anim = 8620
+pos = ((enemy, id)<id)*160, (id - 32)*2
+postype = Left
+removetime = 30;-2
+bindtime = -1
+sprpriority = -1
+ownpal = 1
+ontop = 1
+scale = 0.5,0.5
+;---------------------------------------------------------------------------
+[State -2, pressstart]; - mvsc2 screen pack
+type = Explod
+triggerall = var(20) != 0 && roundstate < 3 && var(17)>=10
+trigger1 = (gametime%60)= id && life != 0
+id = 8620
+anim = f220
+pos = ((enemy, id)<id)*160, (id - 32)*2
+postype = Left
+removetime = 30;-2
+bindtime = -1
+sprpriority = -1
+ownpal = 1
+ontop = 1
+
+[State -2, acertou a parede - som]
+type = playsnd
+triggerall = numtarget!=0
+trigger1 = target, statetype = A && target, movetype= H;
+trigger1 = target, backedgedist < 2
+trigger1 = target, anim= 5030 || target, anim= 5035
+trigger1 = numexplod(8250)=0
+trigger1 = target, vel x < 0;movehit && 
+persistent = 0;1
+value = f7+(var(17)>=10),(target,vel x > 7)+(target,vel y > 7)
+volume=255
+ignorehitpause = 1
+
+[State -2, acertou a parede]
+type = Explod
+triggerall = numtarget!=0
+trigger1 = target, statetype = A && target, movetype= H;
+trigger1 = target, backedgedist < 2
+trigger1 = target, anim= 5030 || target, anim= 5035
+trigger1 = numexplod(8250)=0
+trigger1 = target, vel x < 0;movehit && 
+id = 8250
+anim = f70;8250
+pos = -(target,const(size.air.back)),(target,const(size.mid.pos.y))
+postype = P2
+removetime = -2
+bindtime = 1
+;sprpriority = 1
+ownpal = 1
+ontop = 1
+persistent = 0
+ignorehitpause=1
+
+[State -2, acertou a parede]; - freio]
+type = targetvelset
+triggerall = numtarget!=0
+trigger1 = numexplod(8250)!=0
+trigger1 = target, vel x < 0
+x=0
+
+[State -2]
+type = Varset
+trigger1 = var(9)=1000
+var(7) = power
+
+[State -2]
+type = Varadd
+triggerall = stateno!=4500
+trigger1 = var(9)>0
+v=9
+value = -2
+
+[State -2]
+type = Varset
+trigger1 = life = 0 || roundstate!=2
+trigger2 = stateno= 3000 || stateno= 4000 || stateno= 3500
+var(9) = 0
+
+[State -2]
+type = powerset
+triggerall = stateno!=4500
+trigger1 = var(9)>0
+value = floor(var(7))
+
+[State -2]
+type = removeexplod
+trigger1 = var(9)>=0 && numexplod(8520)=1
+id = 8520
+
+[State -2]
+type = removeexplod
+trigger1 = var(9)>=0 && numexplod(8521)=1
+id = 8521
+
+[State -2]; com MvsC2 SP
+type = explod
+trigger1 = var(9)>0 && var(17)>=10
+pos = 36+141*(id>(enemy, id)),227
+postype = left 
+bindtime = -1
+sprpriority = 1
+anim = f210;8521
+removetime = -1
+ownpal = 1
+id = 8521
+ontop = 1
+
+[State -2]; com MvsC2 SP
+type = explod
+trigger1 = var(9)>0 && var(17)>=10
+pos = 37+141*(id>(enemy, id)),234  
+postype = left 
+bindtime = -1
+sprpriority = 2
+anim = f211;8520
+removetime = -1
+scale = var(9)/10,1
+ownpal = 1
+id = 8520
+ontop = 1
+
+[State -2]; sem MvsC2 SP - excel
+type = explod
+trigger1 = var(9)>0 && var(17)<10
+pos = -31+383*(id>(enemy, id))+(var(9)/10)-(var(9)/10)*2*(id>(enemy, id)),234  
+postype = left 
+bindtime = -1
+sprpriority = 2
+anim = 8521
+removetime = 1
+scale = 0.5,0.5
+ownpal = 1
+id = 8520
+ontop = 1
+
+[State -2];sou DOS ou Win?
+type = Varadd
+trigger1 = (var(17)%2=0) && (movecontact) > (movecontact=1)
+v=17
+value = 1
+
+[State -2];screenpack mvsc2?
+type = Varadd
+trigger1 = var(17)<10 && roundstate<2 && numexplod(8522)!=0
+v=17
+value = 10
+
+;---------------------------------------------------------------------------
+[State -2, detectar]; - mvsc2 screen pack
+type = Explod
+trigger1 = var(17)<10 && roundstate<2 && numexplod(8522)=0
+id = 8522
+anim = f220
+pos = 0,240
+postype = p1;Left
+removetime = 1;0;-2
+bindtime = -1
+sprpriority = -1
+ownpal = 1
+;ontop = 1
+
+;=======================================================
+;Combo_Telop
+;=======================================================
+
+[State -2, VS_Combo]
+type = VarSet
+trigger1 = var(13) >= 3
+trigger2 = var(13)=-1 && (movehit || p2stateno = 8000 || p2stateno = [5000,5899])
+var(1) = 1+(var(13)>4)+(var(13)>5)+(var(13)>7)+(var(13)>9)+(var(13)>29)+(var(13)>49)+(var(13)>69)-(var(13)=-1)
+ignorehitpause = 1
+
+[State -2, Danger]
+type = VarSet
+trigger1 = var(18) !=1 && roundstate=2 && life = [1,250]
+var(1) = 9; * (var(13)=-1)
+ignorehitpause = 1
+
+; sound First attack
+[State -2, sound2]
+type = PlaySnd
+triggerall = var(13)=-1; && (movehit||p2stateno = [5000,5899]);
+triggerall = NumExplod(8701) =0; && var(1)=0
+trigger2 = var(13)=-1 && (movehit || p2stateno = 8000 || p2stateno = [5000,5899])
+trigger1 = var(1)=9 && var(18)=0 && life > 0; && roundstate=2
+persistent = 0;1
+value = f230,0;Var(1)(Var(1)!=0))
+volume=255
+ignorehitpause = 1
+
+; Telop sound
+[State -2, sound]
+type = PlaySnd
+trigger1 = NumExplod(8701) =0; && var(1)!=0
+trigger1 = var(13)=0 && var(1)!=0
+persistent = 0;1
+value = f230,Var(1);(Var(1)!=0))
+volume=255
+ignorehitpause = 1
+
+[State -2, esquerda]
+type = explod
+trigger1 = var(13)=0 && var(1)!=0
+trigger2 = var(13)=-1 && (movehit || p2stateno = 8000 || p2stateno = [5000,5899])
+trigger3 = var(1)=9 && var(18)=0 && life > 0; && roundstate=2
+triggerall = TeamSide = 1 && NumExplod(8701) = 0
+anim = f(230 + var(1))
+;anim = f(231+(var(1)>4)+(var(1)>5)+(var(1)>7)+(var(1)>9)+(var(1)>29)+(var(1)>49)+(var(1)>69))
+ID = 8701
+postype =left
+pos = 0,80;130;82
+ontop = 1
+bindtime = -1
+removetime = 60;90
+supermovetime = 60;90
+pausemovetime = 60;90
+scale = 0.5,0.5
+persistent = 0;1
+ignorehitpause = 1
+
+[State -2, direita]
+type = explod
+trigger1 = var(13)=0 && var(1)!=0
+trigger2 = var(13)=-1 && (movehit || p2stateno = 8000 || p2stateno = [5000,5899])
+trigger3 = var(1)=9 && var(18)=0 && life > 0; && roundstate=2
+triggerall = TeamSide = 2 && NumExplod(8701) = 0
+anim = f(240+ var(1));8011;8720;
+ID = 8701
+postype =right
+pos = -1,80;130;82
+ontop = 1
+bindtime = -1
+removetime = 60;90
+supermovetime = 60;90
+pausemovetime = 60;90
+scale = 0.5,0.5
+persistent = 0;1
+ignorehitpause = 1
+
+[State -2, VS_Combo]
+type = VarAdd
+trigger1 = enemynear, time=0;animelemtime(1)=0;-1
+trigger1 = enemynear, Hitshakeover=0;PauseTime = 1
+trigger1 = p2stateno = 8000 || p2stateno = [5000,5899]
+trigger2 = var(13)=-1 && (movehit || p2stateno = 8000 || p2stateno = [5000,5899])
+;trigger1 = p2movetype=H && p2stateno != [120,170]
+var(13) = 1 + (var(13)=-1)
+ignorehitpause = 1
+
+[State -2, VS_Combo]
+type = VarSet
+;triggerall = numexplod(8701)=0
+trigger1 = var(13)!=-1 && (p2movetype!=H || enemynear, ctrl)
+trigger2 = var(13)=-1 && stateno = [5000,5899]
+var(13) = 0 - (roundstate<2)
+ignorehitpause = 1
+
+[State -2, VS_Combo]
+type = VarSet
+triggerall = numexplod(8701)!=0
+trigger1 = var(13)=0
+var(1) = 0
+ignorehitpause = 1
+
+[State -2, score]
+type = Varadd
+trigger1 = enemynear, time=0;animelemtime(1)=0;-1
+trigger1 = enemynear, Hitshakeover=0;PauseTime = 1
+trigger1 = moveguarded || p2stateno = 8000 || p2stateno = [5000,5899]
+trigger2 = var(13)=-1 && (movehit || p2stateno = 8000 || p2stateno = [5000,5899])
+trigger3 = roundstate=4 && time=0 && stateno = [180,189]
+;triggerall = var(20)=0
+var(19) = ceil(stateno/50)*var(13) + (life)*(roundstate=4) + (moveguarded)
+ignorehitpause = 1
+
+[State -2, normaliza score]
+type = Varset
+triggerall = numpartner=1
+trigger1 = var(19)< partner, var(19)
+var(19) = partner, var(19)
+
+[State -2, zera Danger]
+type = VarSet
+trigger2 = var(18) = 0 && life <= 250
+trigger1 = var(18) = 1 && roundstate!=2
+var(18) = (roundstate>1)
+ignorehitpause = 1
+
+[State -2, zera first attack p3]
+type = VarSet
+triggerall = numpartner=1
+trigger1 = partner, movehit;var(13) = -1 && 
+trigger1 = partner, var(13) != -1; && partner, movehit
+var(13) = 0
+ignorehitpause = 1
+
+[State -2, score helper]
+type = helper 
+stateno = 8600; helper 
+trigger1 = var(20)=0 && (gametime%10)=0;
+pos = 0,0
+postype = left
+bindtime = -1
+ID=8600
+ownpal = 1 
+name = "Score"
+ignorehitpause=1
+
+
+[State -2, corações do hiper]; som
+triggerall = numexplod(3030)=0 && numTarget!=0
+trigger1 = Target, stateno=3030
+type = PlaySnd
+persistent = 0;1
+value = 3000,3
+;volume=255
+ignorehitpause = 1
+
+[State -2, corações do hiper]
+type = EXPLOD
+triggerall = numexplod(3030)=0 && numTarget!=0
+trigger1 = Target, stateno=3030
+pos = 0, (target,Const(size.head.pos.y))
+postype = p2
+bindtime = -1 
+sprpriority = 3 
+supermovetime = 66
+anim = 3030
+ownpal = 1
+ID = 3030
+
+[State -2, corações do hiper]; remover
+type = removeEXPLOD
+trigger1 = numexplod(3030)!=0 && numTarget=0
+ID = 3030
+

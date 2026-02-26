@@ -47,7 +47,7 @@
 
 ; ________________________
 ;| Haohmaru by Chazzanova |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;CONSTANTS=
 [Data]
 life = 1000
@@ -146,29 +146,29 @@ victory25 = "Nothing like a post-combat shot!"
 victory26 = "Stop moping! You're alive!"
 victory27 = "I just love a good battle!"
 victory28 = "Haohmaru the invincible wins!"
-victory29 = "I am the peerless hero Haohmaru! Hear me from afar; see me near. …Even I don’t get what I said."
-victory30 = "How many victims do you make? The way of the samurai is harsh; you don’t get many karma points."
-victory31 = "You’ve seen my swordplay. True, I did win. But I feel so cheap."
-victory32 = "No weapon? Tough luck! That’s the samurai way!"
+victory29 = "I am the peerless hero Haohmaru! Hear me from afar; see me near. Even I dont get what I said."
+victory30 = "How many victims do you make? The way of the samurai is harsh; you dont get many karma points."
+victory31 = "Youve seen my swordplay. True, I did win. But I feel so cheap."
+victory32 = "No weapon? Tough luck! Thats the samurai way!"
 
 ;Mr. Karate
-victory33 = "Tradition’s a heavy load. One I’ll never bear."
+victory33 = "Traditions a heavy load. One Ill never bear."
 
 ;Yuki
-victory34 = "So you’re from Hiroshima? Your accent gave you away."
+victory34 = "So youre from Hiroshima? Your accent gave you away."
 
 ;Genjuro Kibagami
-victory35 = "Wait for me in hell, Genjuro. But you’re not fit to be Charon’s rudder boy!"
+victory35 = "Wait for me in hell, Genjuro. But youre not fit to be Charons rudder boy!"
 
 ;Hanzo Hattori
-victory36 = "Did you say, Hanzo? The one and only Hanzo? You don’t live up to your spin!"
+victory36 = "Did you say, Hanzo? The one and only Hanzo? You dont live up to your spin!"
 
 ;RASETSUMARU WINQUOTES=
 
 victory37 = "Beg for mercy."
 victory38 = "Suffer more, for my entertainment."
 victory39 = "Don't die yet it's boring!"
-victory40 = "OK, I came to get down, I came to get down, so get on your feet…"
+victory40 = "OK, I came to get down, I came to get down, so get on your feet"
 
 ;Perfect
 victory41 = "You got guts!"

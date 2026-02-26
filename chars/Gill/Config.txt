@@ -1,0 +1,127 @@
+;==============================================================================================
+;=======================================<INITIALIZE>===========================================
+;==============================================================================================
+[StateDef 5900]
+type = S
+
+[State 5900, Int VarReset]
+type = VarRangeSet
+trigger1 = !RoundsExisted
+value = 0
+
+[State 5900, Float VarReset]
+type = VarRangeSet
+trigger1 = !RoundsExisted
+fvalue = 0
+
+[State 5900, Life]
+type = VarSet
+trigger1 = !RoundsExisted
+trigger1 = !Time
+var(46) = Life
+
+[State 5900, lifeset]
+type = LifeSet
+trigger1 = !Time
+trigger1 = Life > var(46)
+value = var(46)
+
+;==============================================================================================
+;ONLY MODIFY STUFF BELOW THIS LINE
+;==============================================================================================
+;To Enable The Stage Interaction, Set The Line of "Var(2)" to 1. To Disable it, Change to 0.
+;To Add More Stages for The Special Chant Interaction, Simply Copy and Paste Either Triggers
+;And Change The Trigger Number To a Number After it. 
+;Then, You Would Change The Content within the Quotes with The Name Of the Stage, Found in its [Info] Section.
+;(NOT to be confused with the name of the .DEF File)
+;Example : trigger3 = StageVar(info.name) = "Name Of Stage"
+
+[State 5900, Stage Interaction : Special Chant]
+type = VarSet
+trigger1 = StageVar(info.name) = "Hidden Shrine"
+trigger2 = StageVar(info.name) = "Gill-Eclipse"
+var(2) = 0 ;CHANGE THIS LINE
+
+[State 5900, Allow PowerAdd Upon Resurrecting]
+type = VarSet
+trigger1 = 1
+var(47) = 0 ;CHANGE THIS LINE
+
+[State 5900, Resurrect More Than Once];Of Course, this is a variable HIGHLY dependent on the one above.
+type = VarSet                         ;If var(47) is equal to 0, then this option is nullified.
+trigger1 = var(47)
+var(48) = 0 ;CHANGE THIS LINE
+
+[State 5900, Glimmer]
+type = VarSet
+trigger1 = 1
+var(1) = 0 ;CHANGE THIS LINE
+
+[State 5900, Palette 1]
+type = VarSet
+trigger1 = PalNo = 1
+var(0) = 1;CHANGE THIS LINE
+
+[State 5900, Palette 2]
+type = VarSet
+trigger1 = PalNo = 2
+var(0) = 2 ;CHANGE THIS LINE
+
+[State 5900, Palette 3]
+type = VarSet
+trigger1 = PalNo = 3
+var(0) = 3 ;CHANGE THIS LINE
+
+[State 5900, Palette 4]
+type = VarSet
+trigger1 = PalNo = 4
+var(0) = 4 ;CHANGE THIS LINE
+
+[State 5900, Palette 5]
+type = VarSet
+trigger1 = PalNo = 5
+var(0) = 5 ;CHANGE THIS LINE
+
+[State 5900, Palette 6]
+type = VarSet
+trigger1 = PalNo = 6
+var(0) = 6 ;CHANGE THIS LINE
+
+[State 5900, Palette 7]
+type = VarSet
+trigger1 = PalNo = 7
+var(0) = 7 ;CHANGE THIS LINE
+
+[State 5900, Palette 8]
+type = VarSet
+trigger1 = PalNo = 8
+var(0) = 8 ;CHANGE THIS LINE
+
+[State 5900, Palette 9]
+type = VarSet
+trigger1 = PalNo = 9
+var(0) = 9 ;CHANGE THIS LINE
+
+[State 5900, Palette 10]
+type = VarSet
+trigger1 = PalNo = 10
+var(0) = 10 ;CHANGE THIS LINE
+
+[State 5900, Palette 11]
+type = VarSet
+trigger1 = PalNo = 11
+var(0) = 11 ;CHANGE THIS LINE
+
+[State 5900, Palette 12]
+type = VarSet
+trigger1 = PalNo = 12
+var(0) = 12 ;CHANGE THIS LINE
+
+;==============================================================================================
+;ONLY MODIFY STUFF ABOVE THIS LINE
+;==============================================================================================
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 5901

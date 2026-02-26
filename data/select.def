@@ -292,7 +292,7 @@ xiangfei, random, includestage=0, order=1
 todoh, random, includestage=0, order=1
 yuki, random, includestage=0, order=1
 ; break
-empty
+poison, random, includestage=0, order=1
 Evil Ryu, random, includestage=0, order=3
 bison, random, includestage=0, order=2
 sagat, random, includestage=0, order=1
@@ -306,9 +306,9 @@ geese, random, includestage=0, order=2
 rugal, random, includestage=0, order=2
 Iori Orochi, random, includestage=0, order=3
 Adelheid, random, includestage=0, order=1
-empty
+Yashiro, random, includestage=0, order=1
 ; break
-empty
+Twelve, random, includestage=0, order=1
 Violent Ken, random, includestage=0, order=3
 Vega, random, includestage=0, order=2
 akuma, random, includestage=0, order=2
@@ -321,10 +321,10 @@ laurence, random, includestage=0, order=1
 krauser, random, includestage=0, order=2
 grant, random, includestage=0, order=2
 Kusanagi, random, includestage=0, order=3
-empty
-empty
+Alice, random, includestage=0, order=1
+Angel, random, includestage=0, order=1
 ; break
-empty
+Remy, random, includestage=0, order=1
 seth, random, includestage=0, order=2
 balrog, random, includestage=0, order=2
 Urien, random, includestage=0, order=2
@@ -337,17 +337,33 @@ amakusa, random, includestage=0, order=2
 mr.big, random, includestage=0, order=2
 goenitz, random, includestage=0, order=2
 Mr.karate, random, includestage=0, order=3
-empty
-empty
+Jimmy-POTS, random, includestage=0, order=1
+Hinako, random, includestage=0, order=1
 ; break
+Juni, random, includestage=0, order=1
+DivineEliza, random, includestage=0, order=1
+DivineJuli, random, includestage=0, order=1
+Elena, random, includestage=0, order=1
+Decapre, random, includestage=0, order=1
+Yang, random, includestage=0, order=1
+Q, random, includestage=0, order=1
+randomselect
+Duo Lon, random, includestage=0, order=1
+Ash, random, includestage=0, order=1
+NeoGeegus, random, includestage=0, order=1
+Maxima, random, includestage=0, order=1
+Leona, random, includestage=0, order=1
+TungCVS, random, includestage=0, order=1
+Shingo, random, includestage=0, order=1
+;break
 empty
-Shadow Lady, random, includestage=0, order=3
-empty
-empty
-empty
-empty
-nesmegaman, random, includestage=0, order=5
-empty
+ZeroCVS, random, includestage=0, order=2
+Makoto, random, includestage=0, order=1
+Necro, random, includestage=0, order=1
+Oro, random, includestage=0, order=1
+Juri, random, includestage=0, order=1
+Gill, random, includestage=0, order=3
+randomselect
 empty
 empty
 empty
@@ -357,12 +373,12 @@ empty
 empty
 ;break
 empty
+Shadow Lady, random, includestage=0, order=3
 empty
 empty
 empty
 empty
-empty
-empty
+nesmegaman, random, includestage=0, order=5
 empty
 empty
 empty

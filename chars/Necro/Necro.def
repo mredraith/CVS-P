@@ -1,0 +1,38 @@
+; ADD004 BASIC PIEs ReBuilded DEF (5/30/2015)
+;==============================================
+; This file is Made by PIE.
+; there is a backup of this file in the same folder, named "<samename>.a4bk".
+; use assist tool, or delete this file, then remove ".a4bk" from the neme of backup to Restore.
+;==============================================
+
+;Player information
+[Info]
+name ="DR_Necro"
+displayname ="Necro"
+versiondate =04,14,2002
+mugenversion =1.0
+author ="fido"
+edited by = "GigaHertz"
+pal.defaults =4,5,1,2
+; Files for the player
+localcoord = 428,240
+[Files]
+cmd     =necro_mx_CMD.cmd
+cns=add004basic.reb1
+st=add004basic.reb1
+st1=helpers.cns
+st2=interaction.cns
+stcommon=common1.cns
+sprite  =necro_mx_SFF14.sff
+anim    =necro_mx_AIR03.air
+sound   =necro_mx_SND02.snd
+pal1=001.act
+pal2=002.act
+pal3=003.act
+pal4=004.act
+pal5=005.act
+pal6=006.act
+;Arcade mode
+[Arcade]
+intro.storyboard  =intro.def
+ending.storyboard =ending.def

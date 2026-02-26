@@ -10,6 +10,7 @@ mugenversion = 1.0
 author = "DickBuckus&Mr.Ansatsuken"
 pal.defaults = 1,12
 
+localCoord  = 428,240
 [Files]
 movelist = Dudley_unotag\movelist.dat
 cmd = Dudley_unotag\CommandEasy (Custom).cmd

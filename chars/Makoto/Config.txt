@@ -1,0 +1,98 @@
+;---------------------------------------------------------------------------
+; Initialize (at the start of the round)
+[Statedef 5900]
+type = S
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+value = 0
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+fvalue = 0
+
+;--------------------------------
+; ENG/JAP Voice Changer
+;--------------------------------
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 39
+;#####################################################################################################################
+;## Choose between her SF4 English and SF4 Japanese.
+;## Set the value to 0 for English, 1 for Japanese.
+;## Default value is 0.
+value = 1
+
+;--------------------------------
+; Tenden Renki EX Control
+;--------------------------------
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 43
+;#####################################################################################################################
+;## Choose between her Tenden Renki SF3/SF4 EX Special functionalities.
+;## Set the value to 0 for SF3 System (Disables EX Specials), 1 for SF4 System (No EX Power Reduction).
+;## Default value is 0.
+value = 1
+
+;--------------------------------
+; Hit Spark Changer
+;--------------------------------
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 45
+;#####################################################################################################################
+;## Choose which Hit Sparks will be present. You can choose between the high res CVS Sparks, or the Custom CFG Sparks
+;## Set the value to 1 for the Custom CFG FX, and to 0 for High Res CVS FX.
+;## Default value is 0.
+value = 1
+
+;--------------------------------
+; Tanden Renki Time Bar Enabler
+;--------------------------------
+[State 3200, 3]
+type = VarSet
+trigger1 = 1
+v = 47
+;#####################################################################################################################
+;## Choose whether or not you would like to have the Time bar enabled for the Tanden Renki Super.
+;## Set the value to 1 for the Time Bar, and 0 to disable them.
+;## Default value is 0.
+value = 1
+
+;--------------------------------
+; Tanden Renki Visual Changer
+;--------------------------------
+[State 3200, 3]
+type = VarSet
+trigger1 = 1
+v = 49
+;#####################################################################################################################
+;## Pick which Tanden Renki style you desire. SF3's flashing red or the red skin color from SF4. 
+;## Set the value to 1 for the SF4 Skin (1.0+ Only), and 0 for SF3's flashing red.
+;## Default value is 1.
+value = 1
+
+;--------------------------------
+; Hayate no Red Hawk Visual Changer
+;--------------------------------
+[State 5900, 3]
+type = VarSet
+trigger1 = 1
+v = 27
+;#####################################################################################################################
+;## Pick which Hayate no Red Hawk style you desire. SF3's flashing red or the red skin color from SF4. 
+;## Set the value to 1 for the SF4 Skin (1.0+ Only), and 0 for SF3's flashing red. (This should match
+;## Tanden Ranki Visual changer for obvious reasons! :))
+;## Default value is 1.
+value = 1
+
+[State 5900, End]
+type = changestate
+trigger1 = !time
+value = ifelse(roundno = 1, 190, 0)

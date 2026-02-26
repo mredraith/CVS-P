@@ -1,0 +1,58 @@
+; _________________________________________________
+;| Yang by KarmaCharmeleon			 |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<DEFINITION>====================
+[Info]
+name        = "Yang"
+displayName = "Yang Lee"
+versionDate = 23,09,2020
+mugenVersion= 1.0
+author      = "KarmaCharmeleon"
+pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
+localCoord  = 428,240
+
+[Files]
+movelist = movelist.dat
+cmd     = Command.cmd
+cns     = Constants.cns
+st      = States/System.st
+st1     = States/Normal.st
+st2     = States/Special.st
+st3     = States/Super.st
+st4     = States/Helpers.st
+stCommon= common1.cns
+sprite  = Sprite.sff
+anim    = Anim.air
+sound   = Sound.snd
+pal1	= Palettes/Default.act
+pal2	= Palettes/Froz_Custom1.act
+pal3	= Palettes/JtheSaltyy_Custom3.act
+pal4	= Palettes/Froz_DannyPhantom.act
+pal5	= Palettes/JtheSaltyy_Custom.act
+pal6	= Palettes/Knuckles8864_SFIV-6.act
+pal7	= Palettes/JtheSaltyy_CvS2.act
+pal8	= Palettes/Rurouni_Trowa.act
+pal9	= Palettes/Knuckles8864_SFIV-9.act
+pal10	= Palettes/Knuckles8864_SFIV-10.act
+pal11	= Palettes/JtheSaltyy_Iori.act
+pal12	= Palettes/sabockee_Kakyoin.act
+
+[Palette Keymap]
+a = 4
+b = 5
+c = 6
+x = 1
+y = 2
+z = 3
+a2 = 10
+b2 = 11
+c2 = 12
+x2 = 7
+y2 = 8
+z2 = 9	
+
+;[Arcade]
+;intro.storyBoard = intro.def
+;ending.storyBoard = ending.def
+
+; FEINT CANCEL PATCHED

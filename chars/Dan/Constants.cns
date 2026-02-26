@@ -1,6 +1,6 @@
 ; ________________________________________________
 ;| Dan by Phantom.of.the.Server and Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;CONSTANTS=
 
 [Data]
@@ -130,7 +130,7 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;victory61 = "Yahoo!"
 
 ; Abel
-;"Hm? I don´t know anybody that looks like you! Honest!"
+;"Hm? I dont know anybody that looks like you! Honest!"
 ;"A family is more of a hassle than you think. \nYou'll need a job an' stuff."
 
 ; Adon
@@ -145,19 +145,19 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;"Chicks don't dig the whole greed thing, bro. \nYou might wanna think about that."
 
 ; Blanka
-;"Long time no see, Jimmy! \nLet´s go grab us some food! \nLoser pays, OK?"
+;"Long time no see, Jimmy! \nLets go grab us some food! \nLoser pays, OK?"
 ;"Hey, Jimmy! \nI'm not getting many applicants lately. \nI wonder why..."
 
 ; C. Viper
-;"A business woman, huh? \nThis is my job, too! \nIt´s how I put food on the table!"
+;"A business woman, huh? \nThis is my job, too! \nIts how I put food on the table!"
 ;"I'm pretty sure hiding devices up your sleeves and in your boots is cheating."
 
 ; Cammy
-;"Don´t remember your past? \nIn that case, you were my apprentice! \nJoin me again!"
+;"Dont remember your past? \nIn that case, you were my apprentice! \nJoin me again!"
 ;"You're a friend of Sakura's? \nThat gets you a 50% discount at my dojo!"
 
 ; Chun-Li
-;"That´s what you get for making fun of Dan the man!"
+;"Thats what you get for making fun of Dan the man!"
 ;"Interfering with an investigation? \nDon't arrest me! \nI'm too pretty for jail!"
 
 ; Cody
@@ -184,7 +184,7 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;"What was that all about? \nI've seen sumo before, and that move was not sumo!"
 
 ; El Fuerte
-;"Whip me up a meal next time! \nI´ll judge you with my taste buds!"
+;"Whip me up a meal next time! \nIll judge you with my taste buds!"
 ;"Gah! What is this crap?! \nSomebody bring me a glass of water!"
 
 ; Elena
@@ -194,11 +194,11 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;"W-w-w-wait! Take it easy, man! \nYou're gonna give yourself an aneurysm!" ; 
 
 ; Fei Long
-;"Take that! \nWho´s the greatest now mister big shot movie star?"
+;"Take that! \nWhos the greatest now mister big shot movie star?"
 ;"Remember the Saikyo arts! \nIt blows your style away!"
 
 ; Gen
-;"I didn´t think an old man like you could dish it out like that!"
+;"I didnt think an old man like you could dish it out like that!"
 ;"Don't even think of suing me for damages, gramps!"
 
 ; Gouken
@@ -225,11 +225,11 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;"You were tryin' to kill me for real, weren't ya? \nYou're lucky I'm a nice guy."
 
 ; Ken
-;"I won ´cuz I don´t have a girl holding me back like you do!"
+;"I won cuz I dont have a girl holding me back like you do!"
 ;"You think you're a real winner, but you didn't win this time, didja, big shot?"
 
 ; M. Bison
-;"You´re evil and you laugh like a pervert!"
+;"Youre evil and you laugh like a pervert!"
 ;"Anyone with a secret base or a private army or a house must be pure evil!"
 
 ; Makoto
@@ -248,7 +248,7 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;"This perfect country of yours... Is it tax exempt? \nFree utilities, maybe?"
 
 ; Rose
-;"Just because you´re beautiful doesn´t mean I´ll let you walk all over me!"
+;"Just because youre beautiful doesnt mean Ill let you walk all over me!"
 ;"Does sleight of hand magic really count as a fighting style? Seriously?"
 
 ; Rufus
@@ -259,11 +259,11 @@ victory49 = "Underestimating me is a surefire way to get hurt!"
 ;"Pack in that kyokugen stuff! \nI told you, this is the age of the saikyo style!"
 
 ; Ryu
-;"You try to dress and act like me... \nBut you´re just a freakin´ poseur!" ; vs Ansatsuken / Kyokugen dudes
+;"You try to dress and act like me... \nBut youre just a freakin poseur!" ; vs Ansatsuken / Kyokugen dudes
 ;"Your moves are a convincing imitation. \nBut I'm still stronger!"
 
 ; Sagat
-victory50 = "Now I can finally visit my father´s grave without being ashamed..."
+victory50 = "Now I can finally visit my fathers grave without being ashamed..."
 victory51 = "Father! Did you see that? \nI finally did it!"
 ;"I did it, daddy-o!"
 
@@ -272,7 +272,7 @@ victory51 = "Father! Did you see that? \nI finally did it!"
 ;"Ready to give up? Huh? \nNo, it's cool. We should stop now."
 
 ; Seth
-;"Your moves just aren´t good enough! \nYou oughtta copy Saikyo moves instead!"
+;"Your moves just arent good enough! \nYou oughtta copy Saikyo moves instead!"
 ;"That's it! I won! Where's my prize money? \nDoes it come on a giant check?"
 
 ; Shin Akuma/Mr. Karate
@@ -292,5 +292,5 @@ victory51 = "Father! Did you see that? \nI finally did it!"
 ;"You wear that cap to cover up your bald spot, right? \nHa ha, I'm onto you!"
 
 ; Zangief
-;"Size isn´t everything! \nAnd I´m not just talking about muscles!"
+;"Size isnt everything! \nAnd Im not just talking about muscles!"
 ;"All your fans are snot nosed kids! \nI-I'm not jealous or anything..."

@@ -49,7 +49,7 @@ life = 1000 ;Amount of life to start with
 attack = 100 ;attack power (more is stronger)
 defence = 100 ;defensive power (more is stronger)
 fall.defence_up = 50 ;Percentage to increase defense everytime player is knocked down
-lieDown.time = 15 ;Time which player lies down for, before getting up
+lieDown.time = 15
 airjuggle = 15 ;Number of points for juggling
 sparkno = s8010 ;Default hit spark number for HitDefs
 guard.sparkno = s8000 ;Default guard spark number
@@ -4679,7 +4679,7 @@ persistent = 0
 ignorehitpause = 1
 postype = right
 ;--------------------------------------------------------------
-;光效初始位置
+;效始位
 ;--------------------------------------------------------------
 [Statedef 23680]
 type = S
@@ -4723,7 +4723,7 @@ time = -1
 facing = 1
 pos = (1+ifelse(Parent,fvar(36) = 1,-1,0)+ifelse(Parent,fvar(36) = 2,-2,0))*ifelse(Facing = -1,-1,1),0
 ;--------------------------------------------------------------
-;光效左
+;效
 ;--------------------------------------------------------------
 [Statedef 23681]
 type = S
@@ -4748,7 +4748,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 ;--------------------------------------------------------------
-;光效右
+;效
 ;--------------------------------------------------------------
 [Statedef 23682]
 type = S
@@ -4773,7 +4773,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 ;--------------------------------------------------------------
-;光效代码结束
+;效
 ;--------------------------------------------------------------
 ;---------------------------------------------------------------------------
 ; States that are executed when in self's state file (use statedef -3)

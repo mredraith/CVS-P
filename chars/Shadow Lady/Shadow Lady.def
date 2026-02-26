@@ -9,7 +9,7 @@ versionDate = 11,19,2018
 mugenVersion= 1.0
 author = "Jmorphman"
 pal.defaults= 7,8,9,10,11,12
-localCoord = 427,240
+localCoord  = 428,240
 
 [Files]
 movelist = movelist.dat

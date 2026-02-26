@@ -1,0 +1,55 @@
+[Info]
+name = "Remy"
+displayname = "Remy"
+versiondate = 12,09,2022 
+mugenversion = 1.0
+author = "Rabanazo" 
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+localCoord  = 428,240
+
+[Files]
+movelist = movelist.dat
+sprite = Sff.sff
+anim = Anim.air
+sound = Sound.snd
+cmd = Cmd.cmd
+cns = Constants.cns
+stcommon = common1.cns
+st = States\System.st
+st1 = States\Normal.st
+st2 = States\Special.st
+st3 = States\Super.st
+st4 = States\Helpers.st
+st5 = Custom.txt
+
+pal1	= Palettes/DEFAULT.act
+pal2	= Palettes/BLUE & BLONDE.act
+pal3	= Palettes/BLUE & PURPLE.act
+pal4	= Palettes/BROWN.act
+pal5	= Palettes/WHITE & MAGENTA.act
+pal6	= Palettes/GREY & BLUE.act
+pal7	= Palettes/YELLOW.act
+pal8	= Palettes/IORI.act
+pal9	= Palettes/ASH.act
+pal10	= Palettes/BLACK.act
+pal11	= Palettes/GREEN.act
+pal12	= Palettes/NASH.act
+
+[Palette Keymap]
+a = 1
+b = 2
+c = 3
+x = 4
+y = 5
+z = 6
+a2 = 7
+b2 = 8
+c2 = 9
+x2 = 10
+y2 = 11
+z2 = 12
+[Arcade]
+intro.storyboard =
+ending.storyboard =
+
+; FEINT CANCEL PATCHED

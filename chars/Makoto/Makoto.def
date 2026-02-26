@@ -1,0 +1,48 @@
+;***************************************************************************;
+;************************* Makoto by KojiroBADNESS *************************;
+;***************************************************************************;
+;***************************************************************************;
+
+[Info]
+name = "Makoto"
+displayname = "Makoto"
+versiondate = 04/07/2012
+mugenversion = 1.0
+author = "KojiroBADNESS edited by varo_hades"
+pal.defaults = 1,2,3,4,5,6
+
+localCoord  = 428,240
+[Files]
+movelist = movelist.dat
+sprite = Makoto.sff
+anim = Makoto.air
+sound = Makoto.snd
+cmd = Makoto.cmd
+cns = MakotoConstants.cns
+stcommon = Common1.cns
+st = MakotoCommon.cns
+st1 = States\Specials.st
+st2 = States\EX-Specials.st
+st3 = States\Supers.st
+st4 = States\Helpers.st
+st5 = States\System.st
+st6 = Config.txt
+pal1 = Acts\Makoto1.act
+pal2 = Acts\Makoto2.act
+pal3 = Acts\Makoto3.act
+pal4 = Acts\MakotoRedF.act
+pal5 = Acts\Black&Blue.act
+pal6 = Acts\Kasumi.act
+pal7 = Acts\Makoto7.act
+pal8 = Acts\Mr.X.act
+pal9 = Acts\GreatSaiyaman.act
+pal10 = Acts\SF1Ryu.act
+pal11 = Acts\MakotoMakoto.act
+pal12 = Acts\KFM.act
+
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard = ending.def
+
+
+; FEINT CANCEL PATCHED

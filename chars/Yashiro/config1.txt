@@ -1,0 +1,242 @@
+;***************************************************************************;
+;***************************************************************************;
+; CVS Yashiro Nanakase POTS/Infinite by Falcon Rapper
+;***************************************************************************;
+;***************************************************************************;
+; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+;***************************************************************************;
+;***************************************************************************;
+;Customizable Configuartion
+;var(11):= Normal/Orochi Mode
+;var(27):= Palette Selector
+;var(40):= Voice Selector (98/2k2)
+;var(43):= POT's Style Hitsparks
+;var(44):= POT's Style Hit Sounds
+;var(45):= FDR SUPER PORTRAIT LV2
+;var(55):= Chain Combos/Air Combos
+
+;-------------------------------------------------------------
+;INITIALIZE
+[Statedef 5900]
+type = S
+
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !roundsexisted && matchno = 1
+value = 0
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !roundsexisted && matchno = 1
+fvalue = 0
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+;==========================================================================
+;Customizable Configuartion 
+;==========================================================================
+; Yashiro Version 
+[State 5900, Andy Version]
+type = VarSet
+trigger1 = !var(39)
+v = 11
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you want Regular Yashiro
+;Change the value number to 1 if you want Orochi Yashiro
+;Default value is 0.
+;===========================================================================
+; Palette Selector
+[State 5900, Palette Selector]
+type = VarSet
+trigger1 = !var(39)
+v = 27
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Palette Selector on Intro
+;Change the value number to 1 if you do want Palette Selector on Intro
+;Default value is 1.
+;===========================================================================
+; Voice Selector
+[State 5900, Voice Select]
+type = VarSet
+trigger1 = 1
+v = 40
+value =0
+;___________________________________________________________________________
+;Change the value number to 0 if you want his KOF 98 Voice
+;Change the value number to 1 if you want his KOF 2k2 Voice
+;Default value is 0.
+;===========================================================================
+; POT's Style Hitsparks
+[State 5900, POT's Style Hitsparks]
+type = VarSet
+trigger1 = 1
+v = 43
+value = 2
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want POT's style hitsparks
+;Change the value number to 1 if you want the POT's style hitsparks
+;Change the value number to 2 if you want multi-colored POT's style hitsparks-Only 1.0 or higher
+;Default value is 0.
+;===========================================================================
+; POT's Style Hit Sounds
+[State 5900, POT's Style Hit Sounds]
+type = VarSet
+trigger1 = 1
+v = 44
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want POT's style hitsounds
+;Change the value number to 1 if you want the POT's style hitsounds
+;Default value is 0.
+;===========================================================================
+; FDR SUPER PORTRAIT LV2
+[State 5900, Palette Selector]
+type = VarSet
+trigger1 = 1
+v = 45
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want FDR SUPER PORTRAIT LV2
+;Change the value number to 1 if you do want FDR SUPER PORTRAIT LV2
+;Default value is 0.
+;===========================================================================
+; Chain Combos/Air Combos
+[State 5900, Chain Combos/Air Combos]
+type = VarSet
+trigger1 = 1
+v = 55
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want chain comboing
+;Change the value number to 1 if you want chain comboing
+;Change the value number to 2 if you want chain comboing and Air Comboing
+;Default value is 1.
+;===========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+[State 5900, Pal Selector on]
+type=helper
+triggerall=var(27)&&!numhelper(256)&&!AILevel&&numenemy 
+trigger1= roundno = 1 && matchno=1 && !(teammode = simul) && !(enemy, teammode = simul)
+trigger2= !var(26) 
+trigger3=(teammode = turns)
+trigger3=!roundsexisted && (enemy,roundsexisted)
+id=256
+stateno=256
+facing=facing
+ownpal=1
+size.xScale=0.5
+size.yScale=0.5
+[state 5900, No Palette selector]
+type = remappal
+trigger1 = !var(27)
+trigger2 = AILevel && !var(26)
+source = 1, 1
+dest = ifElse(var(11), 2, 1), palno
+ignorehitpause = 1
+
+[State 5900, VarSet]
+type = VarSet
+trigger1 = !time&&!var(39)&&!var(11)
+var(11)=Ifelse(palno>=7,1,0)
+ignorehitpause =1
+
+[state 5900, Adjust with selected by start]
+type = remappal
+triggerall = palno>=7&&!var(27)
+trigger1 = !var(39)&&var(11)
+source = 1, 1
+dest = 2, palno-6
+ignorehitpause = 1
+
+[state 5900, Adjust with selected by start]
+type = remappal
+triggerall = palno>=7&&!var(27)
+trigger1 = var(39)&&var(11)
+source = 1, 1
+dest = 2, palno-6
+ignorehitpause = 1
+
+[state 5900, Adjust with selected by start]
+type = remappal
+triggerall = palno>=7&&!var(27)
+trigger1 = var(39)&&!var(11)
+source = 1, 1
+dest = 1, palno-6
+ignorehitpause = 1
+
+
+
+[State 5900, Intro Vs Shermie, Chris & Goenitz]
+type = changestate
+triggerall = numenemy
+triggerall = roundno = 1 || (!(enemy, roundsexisted) && !(teammode = simul) && !(enemy, teammode = simul))
+trigger1=Enemy, Name="Shermie" || Enemy, Name="Chris"
+trigger2=Enemy, Name = "Goenitz" || Enemy, Name = "Leopold Goenitz"
+value = 193
+[State 5900, Intro Vs Iori]
+type = changestate
+triggerall = numenemy
+triggerall = roundno = 1 || (!(enemy, roundsexisted) && !(teammode = simul) && !(enemy, teammode = simul))
+trigger1 = Enemy, Name = "Iori Yagami" && Enemy, AuthorName = "Knuckles8864" && Enemy, var(40) != 1
+trigger2 = Enemy, Name = "Iori Yagami" && Enemy, AuthorName = "Falcon Rapper" && Enemy, var(11) != 1
+trigger3 = Enemy, Name = "Iori Yagami" && Enemy, AuthorName = "Quickfist" && Enemy, var(11) != 1
+value = 194
+[State 5900, Intro Vs Orochi]
+type = Changestate
+triggerall = numenemy
+triggerall = roundno = 1 || (!(enemy, roundsexisted) && !(teammode = simul) && !(enemy, teammode = simul))
+trigger1 = Enemy, Name = "Orochi" || Enemy, Name = "Mizuchi"
+value = 196
+[State 5900, Intro Vs Brian Battler]
+type = Changestate
+triggerall = numenemy
+triggerall = roundno = 1 || (!(enemy, roundsexisted) && !(teammode = simul) && !(enemy, teammode = simul))
+trigger1 = Enemy, Name = "Brian Battler" && Enemy, AuthorName = "Falcon Rapper, Dampir & CVSX Neo Team"
+value = 198
+
+[State 5900, Turns Intro]
+type = ChangeState
+trigger1 = TeamMode = Turns
+trigger1 = !RoundsExisted && RoundNo >= 2
+value = 6900
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1&&!var(11)
+value = 190+1*var(40)
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1&&var(11)
+value = 192
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 0

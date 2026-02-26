@@ -1,0 +1,224 @@
+;**********************************
+; super-fundo
+[Statedef 8500]
+physics = N
+anim = 8500
+sprpriority = -3
+
+[State 8500, 5] 
+type = Varadd 
+trigger1 = roundstate=3
+v=1
+value=1 
+
+[State 8500, 5] 
+type = VarSet 
+trigger1 = Time = 0 
+var(2) = root, ID 
+
+[State 8500, 5] 
+type = VarSet 
+trigger1 = Time = 0 
+var(17) = root, var(17) 
+
+[State 8500, 9] ;Sem fundo e frente
+type        = AssertSpecial 
+trigger1 = anim=8500;1
+flag = noBG 
+flag2 = noFG 
+ignorehitpause = 1
+
+[State 8500, 9] ;Efeito de fundo azul (com partner)
+type     = PalFx
+triggerall = numpartner != 0 && roundstate=2
+trigger1 = partner, stateno!=[4400,4499]
+trigger1 = (time%30)=0
+time = 30
+sinadd = ceil(random/16),ceil(random/16),ceil(random/16),50
+add = 0,0,0
+
+[State 8500, 9] ;Efeito de fundo azul (sem partner)
+type     = PalFx
+triggerall = numpartner != 0 && roundstate=2
+trigger1 = partner, stateno=[4400,4499]
+trigger2 = partner, life=0
+triggerall = (time%30)=0
+time = 30
+add = 0,0,0
+sinadd = 0,0,100,50
+
+[State 8500, 9] ;Efeito de fundo azul (sem partner)
+type     = PalFx
+triggerall = numpartner = 0 && roundstate=2
+trigger1 = (time%30)=0
+time = 30
+add = 0,0,0
+sinadd = 0,0,100,50
+
+[State 8500, 9] ;animação de fundo (com MvsC2SP)
+type        = Explod 
+trigger1 = numexplod(8510)=0 && var(17)>=10 && roundstate=2
+anim = f400
+postype = left
+ID = 8510 
+sprpriority = -3
+supermovetime = 1 
+removetime = -2 
+pos = 0,0;1,120 
+;scale= const(size.xscale),const(size.yscale)*1.5;2
+bindtime = -1
+
+[State 8500, 9] ;animação de fundo (sem MvsC2SP)
+type        = Explod 
+trigger1 = numexplod(8510)=0 && var(17)<10 && roundstate=2
+anim = 8510 ;f400;
+postype = left
+ID = 8510 
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;12 
+pos = 1,0;1,120 
+scale= const(size.xscale),const(size.yscale)*1.5;2
+bindtime = -1
+
+[State 8500, 9] ;animação de fundo (sem MvsC2SP)
+type        = Explod 
+trigger1 = numexplod(8511)=0 && var(17)<10 && roundstate=2
+anim = 8511;f401;
+postype = right
+ID = 8511 
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;12 
+pos = 0,0 
+scale= const(size.xscale),const(size.yscale)*1.5;/2;*2.01
+bindtime = -1
+facing=-1
+
+[State 8500, 9] ;animação de fundo (sem MvsC2SP)
+type        = Explod 
+trigger1 = numexplod(8500)=0 && var(17)<10 && roundstate=2
+anim = 8511; f401;
+postype = left
+ID = 8500
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;12 
+pos = 1,239;120 
+scale= const(size.xscale),const(size.yscale)/2
+bindtime = -1
+vfacing=-1
+
+[State 8500, 9]  ;animação de fundo (sem MvsC2SP)
+type        = Explod 
+trigger1 = numexplod(8513)=0 && var(17)<10 && roundstate=2
+anim = 8510;f400;
+postype = right
+ID = 8513 
+sprpriority = -3
+supermovetime = 1 
+removetime = -2;200;12
+pos = 0,239;120 
+scale= const(size.xscale),const(size.yscale)/2;*2.01
+bindtime = -1
+facing=-1
+vfacing=-1
+
+[State 8550, hiper combo finish!]
+type = PlaySnd
+triggerall = roundstate=3 && var(17)>=10 && p2life=0
+trigger1 = var(1)=2
+trigger2 = var(1)=3
+trigger3 = var(1)=4
+trigger4 = var(1)=1
+value = F8550,0
+;persistent=0
+;channel=0
+volume=255
+
+[State 8500, 7] 
+Type = RemoveExplod 
+triggerall = root, var(9)<=0
+triggerall = anim=8500
+trigger1 = root, stateno!=[3000,3010]
+trigger1 = root, stateno!=4000
+trigger1 = root, stateno!=3500
+trigger1 = root, stateno!=4500
+trigger1 = root, stateno!=4550
+trigger2 = anim=8500 && roundstate=3
+
+[State 8500, 9] ;Efeito de fundo
+type     = bgPalFx
+trigger1 = anim=8500 && roundstate=3 && var(17)<10 && p2life=0
+time = 120;70;45;
+add = 192,192,192;0,0,0;
+sinadd = 190,190,190,150;150;75;
+persistent=1;0;
+ignorehitpause=1
+
+[State 8000, 1] ;Anim for Super KO FX
+type = ChangeAnim
+trigger1 = anim=8500 && roundstate=3 && p2life=0
+value = 8550
+
+[State 8500, 7] 
+Type = destroyself 
+triggerall = root, var(9)<=0
+triggerall = anim=8500 && roundstate!=3
+trigger1 = root, stateno!=[3000,3010]
+trigger1 = root, stateno!=4000
+trigger1 = root, stateno!=3500
+trigger1 = root, stateno!=4500
+trigger1 = root, stateno!=4550
+;trigger2 = root, Numhelper(8550)!=0
+
+;;---------------------------------------------------------
+;; Super KO FX
+;;[Statedef 8550]
+;type = A
+;movetype = I
+;physics = N
+;anim = 8550
+
+[State 8550, 1]
+type = null;AssertSpecial
+trigger1 = 1;(time%2)=0;roundstate=3;1
+flag = NoBG
+flag2 = nobardisplay
+flag3 = NoFG;nokoslow;nomusic;nokosnd;
+persistent=1;0;
+ignorehitpause=1
+
+[State 8550, 2] ;Hiper fundo finish (com MvsC2SP)
+type = Explod
+trigger1 = anim=8550 && animelemtime(1)=0 && var(17)>=10
+ID = 222
+anim = f500;8555
+postype = left
+pos = 0, 0
+bindtime = -1
+removetime = -2;6
+;ownpal = 1
+sprpriority = -2
+ignorehitpause=1
+
+[State 8550, 7] 
+Type = destroyself 
+trigger1 = animelemtime(1)=120 && anim=8550
+trigger2 = roundstate=4
+
+
+;;---------------------------------------------------------
+; Super KO FX
+[Statedef 8550]
+type = A
+movetype = I
+physics = N
+anim = 8550
+
+
+[State 8500, 7] 
+Type = destroyself 
+trigger1 = 1
+
+

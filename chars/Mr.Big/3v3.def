@@ -1,24 +1,25 @@
 ;-----------------------------------------------------------------------------
 [Info]
-Name = "Mr.Big" ;ƒLƒƒƒ‰ƒNƒ^[‚Ì–¼‘Oi•K—v‚È€–Ú‚È‚Ì‚ÅÈ—ª•s‰Âj
-DisplayName = "Mr.Big" ;M.U.G.E.N‚ÅÀÛ‚É•\¦‚³‚ê‚é–¼‘OiÈ—ª‰Â”\j
-VersionDate = 04,14,2002 ;ƒLƒƒƒ‰ƒNƒ^[‚ÌÅIXV“úi•Ï‚¦‚È‚­‚Ä‚à‚n‚jj
-MugenVersion = 1.0 ;ƒLƒƒƒ‰ƒNƒ^[‚ª“®ìo—ˆ‚éM.U.G.E.N‚Ì‰ü’ù”Å
-Author = "Aomura" ;ƒLƒƒƒ‰ƒNƒ^[‚Ìì¬Òi•K—v‚È€–Ú‚È‚Ì‚ÅÈ—ª•s‰Âj
+Name = "Mr.Big" ;LN^[Ì–OiKvÈÚ‚È‚Ì‚ÅÈ—sÂj
+DisplayName = "Mr.Big" ;M.U.G.E.NÅÛ‚É•\é–¼OiÈ—Â”\j
+VersionDate = 04,14,2002 ;LN^[ÌÅIXViÏ‚È‚Ä‚njj
+MugenVersion = 1.0 ;LN^[oM.U.G.E.NÌ‰
+Author = "Aomura" ;LN^[Ìì¬ÒiKvÈÚ‚È‚Ì‚ÅÈ—sÂj
 Edited by ShinRei
-Pal.Defaults = 1,2,3,4,5,6,7,8 ;‚b‚o‚t‚Åo‚Ä‚«‚½‚ÌƒJƒ‰[ƒpƒŒƒbƒg‚Ì‡”Ô
+Pal.Defaults = 1,2,3,4,5,6,7,8 ;botÅoÄ‚ÌƒJ[pbgÌ
 
 ;-----------------------------------------------------------------------------
+localCoord  = 428,240
 [Files]
 movelist = movelist.dat
-Cmd = Big.cmd ;ƒRƒ}ƒ“ƒhƒtƒ@ƒCƒ‹‚Ì“o˜^
-Cns = 3v3.cns ;ƒRƒ“ƒXƒ^ƒ“ƒcƒtƒ@ƒCƒ‹‚Ì“o˜^
-St = 3v3.cns ;ƒXƒe[ƒgƒtƒ@ƒCƒ‹‚Ì“o˜^EÅ‘å‚P‚PŒÂ‚Ü‚Å‘‚â‚¹‚Ü‚·
-St1 = helpers.cns ;iSt,St0,St1,St2,St3,St4,St5,St6,St7,St8,St9j ;uStv‚Ì‚İ•K—v‚È€–Ú‚È‚Ì‚ÅÈ—ªo—ˆ‚Ü‚¹‚ñ
-StCommon = common1.cns ;ƒRƒ‚ƒ“ƒXƒe[ƒgƒtƒ@ƒCƒ‹‚Ì“o˜^
-Sprite = Big.sff ;•¡”‚Ì‚o‚b‚w‰æ‘œ‚ğ‚Ü‚Æ‚ß‚½ƒXƒvƒ‰ƒCƒgƒtƒ@ƒCƒ‹‚Ì“o˜^
-Anim = 3v3.air ;ƒAƒjƒ[ƒVƒ‡ƒ“ƒtƒ@ƒCƒ‹‚Ì“o˜^
-Sound = Big.snd ;•¡”‚Ì‚v‚`‚u‚d‰¹º‚ğ‚Ü‚Æ‚ß‚½ƒTƒEƒ“ƒhƒtƒ@ƒCƒ‹‚Ì“o˜^
+Cmd = Big.cmd ;R}ht@CÌ“o^
+Cns = 3v3.cns ;RX^ct@CÌ“o^
+St = 3v3.cns ;Xe[gt@CÌ“o^EÅ‘PPÂ‚Ü‚Å‘â‚¹Ü‚
+St1 = helpers.cns ;iSt,St0,St1,St2,St3,St4,St5,St6,St7,St8,St9j ;uStvÌ‚İ•KvÈÚ‚È‚Ì‚ÅÈ—oÜ‚
+StCommon = common1.cns ;RXe[gt@CÌ“o^
+Sprite = Big.sff ;Ì‚obwæ‘œÜ‚Æ‚ß‚XvCgt@CÌ“o^
+Anim = 3v3.air ;Aj[Vt@CÌ“o^
+Sound = Big.snd ;Ì‚v`udÜ‚Æ‚ß‚TEht@CÌ“o^
 
 ;-----------------------------------------------------------------------------
 pal1=b01_re.act

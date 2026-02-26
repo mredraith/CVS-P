@@ -108,7 +108,7 @@ power = 3000 ;パワーゲージ最大値（デフォルトは 3000 = Lv.3 に�
 attack = 87 ;攻撃力パーセンテージ（デフォルトは 100% になります）
 defence = 100 ;防御力パーセンテージ（デフォルトは 100% になります）
 fall.defence_up = 50 ;一時的に上昇するダウン時の防御力パーセンテージ
-lieDown.time = 15 ;倒れてから起き上がるまでの時間
+lieDown.time = 15
 airjuggle = 15 ;ジャグルポイント限界値　★１
 sparkno = 2 ;デフォルトのヒットスパーク番号（fightfx.airか、キャラのairから呼び出す）
 guard.sparkno = 40 ;デフォルトのガードスパーク番号（fightfx.airか、キャラのairから呼び出す）

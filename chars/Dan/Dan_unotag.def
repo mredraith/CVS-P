@@ -9,7 +9,7 @@ versiondate = 18,11,2016
 mugenVersion= 1.1
 author = "Phantom.of.the.Server"; EDITED by Mr.Ansatsuken
 pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
-localcoord = 320,240
+localCoord  = 428,240
 
 [Files]
 movelist = Dan_unotag\movelist.dat

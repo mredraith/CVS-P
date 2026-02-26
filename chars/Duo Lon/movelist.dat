@@ -1,0 +1,435 @@
+
+; Movelists made by ShadenXa.
+; _________________________________________
+;| Game/Universal Mechanics |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+[Legend]
+text = "Directional Inputs:"
+text = "→: Forward"
+text = "←: Back"
+text = "↑: Up / Jump"
+text = "↓: Down / Crouch"
+text = " "
+text = "Button Abbreviations:"
+text = "LP (x), MP (y), HP (z): Light, Medium, Heavy Punch"
+text = "LK (a), MK (b), HK (c): Light, Medium, Heavy Kick"
+text = "W: Echo / Tag Shift Fwd"
+text = "D: Tag Shift Back"
+
+;====================<MOVEMENT & DEFENSE>====================
+[Command]
+name = "ROLL / SPOT DODGE"
+command =
+time = 0
+text = "Roll (move): → or ← + LP + LK"
+text = "Spot Dodge (in place): LP + LK (Neutral)"
+text = "Invincible movement options to evade attacks."
+
+[Command]
+name = "SUPER JUMP"
+command =
+time = 0
+text = "Input: Tap ↓ then ↑ quickly"
+text = "A high jump that travels further than normal."
+
+[Command]
+name = "FLOAT"
+command =
+time = 0
+text = "Input: Tap ↓ then ↑ quickly then hold up to"
+text = "Float and Down to fast fall. This can also"
+text = "Be Done While Attacking"
+text = "A jump that allows for mix ups".
+
+[Command]
+name = "AIRDASH"
+command =
+time = 0
+text = "Input: →→ or ←← in the air"
+text = "Standard speed normally."
+text = "Becomes fast TELEPORT speed in Awakening Mode."
+
+[Command]
+name = "PARRY"
+command =
+time = 0
+text = "Input: Tap → (High/Mid) or ↓ (Low) just before impact."
+text = "Deflects an attack without taking chip damage."
+
+[Command]
+name = "GUARD CANCEL / ALPHA COUNTER"
+command =
+time = 0
+text = "Input: → + LP + LK (While Blocking)"
+text = "Cost: 1 Bar."
+text = "Counter attack directly out of blockstun."
+
+;====================<OFFENSIVE MECHANICS>====================
+[Command]
+name = "RUSH DASH"
+command =
+time = 0
+text = "Input: Press any Attack button while Dashing (→→)"
+text = "Performs a sliding attack from a run."
+
+[Command]
+name = "DASH CANCEL"
+command =
+time = 0
+text = "Input: Tap →→ after a grounded normal hits/blocks."
+text = "Cancels the recovery of the move to extend pressure."
+
+[Command]
+name = "ECHOES"
+command =
+time = 0
+text = "Input: Hold 'W' while performing a Special Move."
+text = "Creates a clone that performs the move, consuming Echo Meter."
+
+[Command]
+name = "NEUTRAL CANCEL"
+command =
+time = 0
+text = "Input: HP + LK (z + a)"
+text = "Cost: 1000 Power (1 Bar)"
+text = "Cancels any attack on hit/block. Resets you to neutral state"
+text = "and briefly vacuums/binds the opponent for extended combos."
+
+[Command]
+name = "PERFECT BREAKER"
+command =
+time = 0
+text = "Input: HP + MK (z + b)"
+text = "Condition: While getting hit (Hitstun)"
+text = "Invincible shockwave that blows the opponent away."
+text = "Uses a COOLDOWN system, not Meter."
+
+[Command]
+name = "CUSTOM COMBO / POWER UP"
+command =
+time = 0
+text = "Input: HP + HK (z + c)"
+text = "Cost: 1 Bar"
+text = "Enters a powered-up state or begins a Custom Combo."
+
+[Command]
+name = "AWAKENING"
+command =
+time = 0
+text = "Condition: Health drops below 20%"
+text = "Automatic Activation. Grants the following buffs:"
+text = "1. 100% Damage Increase."
+text = "2. 50% Defense Increase."
+text = "3. Immunity to Chip Damage."
+text = "4. Airdashes become incredibly fast."
+
+;====================<OTHER>====================
+[Command]
+name = "METER CHARGE"
+command =
+time = 0
+text = "Input: Hold MP + MK (y + b)"
+text = "Manually build Super Meter."
+
+[Command]
+name = "FIRST CLASH"
+command =
+time = 0
+text = "Chance to attack before the round starts."
+
+[Command]
+name = "TAG SHIFT"
+command =
+time = 0
+text = "Input: 'W' (Forward) or 'D' (Back)"
+text = "Switches between characters in Team Mode."
+
+; _________________________________________
+;|         Common Fighting Game Inputs      |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+[Command]
+name = "Quarter Circle Forward (QCF)"
+command =
+time = 0
+text = "Input: ↓↘→ + Attack"
+
+[Command]
+name = "Dragon Punch (DP)"
+command =
+time = 0
+text = "Input: →↓↘ + Attack"
+
+[Command]
+name = "Half Circle Back (HCB)"
+command =
+time = 0
+text = "Input: →↘↓↙← + Attack"
+
+
+; _________________________________________
+;|              Character Moves             |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<SPECIAL MOVES>====================
+[Command]
+name = "412k" ;Zero Counter"
+command = 
+time = 0
+text = "412k" ;Zero Counter: ↙↓ + 2K"
+
+[Command]
+name = "412p" ;Zero Counter"
+command = 
+time = 0
+text = "412p" ;Zero Counter: ↙↓ + MK+HP / MK+LP / MK+MP"
+
+[Command]
+name = "Genma Hishou Keikou1"
+command = 
+time = 0
+text = "Genma Hishou Keikou1: ↓↙ + MK+LK"
+
+[Command]
+name = "Genma Hishou Keikou2"
+command = 
+time = 0
+text = "Genma Hishou Keikou2: ↓↙ + MK+MK"
+
+[Command]
+name = "Genma Hishou Keikou3"
+command = 
+time = 0
+text = "Genma Hishou Keikou3: ↓↙ + 2K"
+
+[Command]
+name = "Genma Hishou KeikouEX"
+command = 
+time = 0
+text = "Genma Hishou KeikouEX: ↓↙ + MK+HK+LK / MK+HK+MK / MK+LK+MK"
+
+[Command]
+name = "Genmu Kyaku Uchikiba1"
+command = 
+time = 0
+text = "Genmu Kyaku Uchikiba1: →↓↘ + LK"
+
+[Command]
+name = "Genmu Kyaku Uchikiba2"
+command = 
+time = 0
+text = "Genmu Kyaku Uchikiba2: →↓↘ + MK"
+
+[Command]
+name = "Genmu Kyaku Uchikiba3"
+command = 
+time = 0
+text = "Genmu Kyaku Uchikiba3: →↓↘ + HK"
+
+[Command]
+name = "Genmu Kyaku UchikibaEX"
+command = 
+time = 0
+text = "Genmu Kyaku UchikibaEX: →↓↘ + 2K"
+
+[Command]
+name = "Himou Kyaku Mae1"
+command = 
+time = 0
+text = "Himou Kyaku Mae1: ↓↘→ + LK"
+
+[Command]
+name = "Himou Kyaku Mae2"
+command = 
+time = 0
+text = "Himou Kyaku Mae2: ↓↘→ + MK"
+
+[Command]
+name = "Himou Kyaku Mae3"
+command = 
+time = 0
+text = "Himou Kyaku Mae3: ↓↘→ + HK"
+
+[Command]
+name = "Himou Kyaku MaeEX"
+command = 
+time = 0
+text = "Himou Kyaku MaeEX: ↓↘→ + 2K"
+
+[Command]
+name = "Himou Kyaku Ushiro1"
+command = 
+time = 0
+text = "Himou Kyaku Ushiro1: ↓↙ + MK+LK"
+
+[Command]
+name = "Himou Kyaku Ushiro2"
+command = 
+time = 0
+text = "Himou Kyaku Ushiro2: ↓↙ + MK+MK"
+
+[Command]
+name = "Himou Kyaku Ushiro3"
+command = 
+time = 0
+text = "Himou Kyaku Ushiro3: ↓↙ + 2K"
+
+[Command]
+name = "Himou Kyaku UshiroEX"
+command = 
+time = 0
+text = "Himou Kyaku UshiroEX: ↓↙ + MK+HK+LK / MK+HK+MK / MK+LK+MK"
+
+[Command]
+name = "Ougi Tajuu Genmu: Ankei"
+command = 
+time = 0
+text = "Ougi Tajuu Genmu: Ankei: LP+LK+MP+MK / LP+MP+LK+MK"
+
+[Command]
+name = "Shaki Juuryuu1"
+command = 
+time = 0
+text = "Shaki Juuryuu1: ↓↘→ + LP"
+
+[Command]
+name = "Shaki Juuryuu2"
+command = 
+time = 0
+text = "Shaki Juuryuu2: ↓↘→ + MP"
+
+[Command]
+name = "Shaki Juuryuu3"
+command = 
+time = 0
+text = "Shaki Juuryuu3: ↓↘→ + HP"
+
+[Command]
+name = "Shaki JuuryuuEX"
+command = 
+time = 0
+text = "Shaki JuuryuuEX: ↓↘→ + 2P"
+
+[Command]
+name = "Shiryou Hatsu Seikin"
+command = 
+time = 0
+text = "Shiryou Hatsu Seikin: ↓↙ + MK+MP"
+
+[Command]
+name = "Shiryou Hatsu Seikin1"
+command = 
+time = 0
+text = "Shiryou Hatsu Seikin1: ↓↙ + MK+LP"
+
+[Command]
+name = "Shiryou Hatsu Seikin2"
+command = 
+time = 0
+text = "Shiryou Hatsu Seikin2: ↓↙ + MK+MP"
+
+[Command]
+name = "Shiryou Hatsu Seikin3"
+command = 
+time = 0
+text = "Shiryou Hatsu Seikin3: ↓↙ + MK+HP"
+
+[Command]
+name = "a"
+command = 
+time = 0
+text = "a: LK"
+
+[Command]
+name = "a+x"
+command = 
+time = 0
+text = "a+x: LK+LP"
+
+[Command]
+name = "b"
+command = 
+time = 0
+text = "b: MK"
+
+[Command]
+name = "b+y"
+command = 
+time = 0
+text = "b+y: MK+MP"
+
+[Command]
+name = "c"
+command = 
+time = 0
+text = "c: HK"
+
+[Command]
+name = "c+z"
+command = 
+time = 0
+text = "c+z: HK+HP"
+
+[Command]
+name = "s"
+command = 
+time = 0
+text = "s: Start"
+
+[Command]
+name = "x"
+command = 
+time = 0
+text = "x: LP"
+
+[Command]
+name = "y"
+command = 
+time = 0
+text = "y: MP"
+
+[Command]
+name = "z"
+command = 
+time = 0
+text = "z: HP"
+;====================<SUPER MOVES>====================
+[Command]
+name = "Hiden Genmu Bakuto Shikon"
+command = 
+time = 0
+text = "Hiden Genmu Bakuto Shikon: ↓↙↓↙ + MK+MK+HK / MK+MK+LK / MK+MK+MK"
+
+[Command]
+name = "Hiden Genmu Juon Shikon"
+command = 
+time = 0
+text = "Hiden Genmu Juon Shikon: ↓↘→ x 2 + P (L/M/H)"
+
+[Command]
+name = "Hiden Genmu Juon Shikonsou"
+command = 
+time = 0
+text = "Hiden Genmu Juon Shikonsou: ↓↘→ x 2 + HK+HP / LK+LP / MK+MP"
+
+[Command]
+name = "Hiden Genmu Kyaku"
+command = 
+time = 0
+text = "Hiden Genmu Kyaku: ↓↘→ x 2 + K (L/M/H)"
+
+[Command]
+name = "Hiden Genmu Onryou Heki"
+command = 
+time = 0
+text = "Hiden Genmu Onryou Heki: ↓↙↓↙ + MK+MK+HP / MK+MK+LP / MK+MK+MP"
+
+[Command]
+name = "MAX Bakuto Shikon"
+command = 
+time = 0
+text = "MAX Bakuto Shikon: ↓↙↓↙ + MK+MK+HK+LK / MK+MK+HK+MK / MK+MK+LK+MK"
+
+[Command]
+name = "Suishu Makyakuho"
+command = 
+time = 0
+text = "Suishu Makyakuho: →↘↓↙→ + MK+HP / MK+LP / MK+MP"

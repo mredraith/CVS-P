@@ -1,6 +1,6 @@
 ; ________________________________
 ;| Cammy by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;====================<CONSTANTS>==================== 
 [Data]
 life = 1150
@@ -8,7 +8,7 @@ power = 5000
 attack= 100
 defence= 100
 fall.defence_up= 50
-liedown.time = 30
+lieDown.time = 15
 airjuggle = 999
 sparkno= s8010
 guard.sparkno= s8000

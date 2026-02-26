@@ -1,0 +1,47 @@
+; Definition file for Eliza Masters
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Eliza Masters"
+displayname ="Eliza"
+versiondate =12,21,2013
+mugenversion =04,14,2002
+author ="SilentRipper&DivineWolf"
+pal.defaults = 4,5,6,1,2,3,10,11,12,7,8,9
+
+; Files for the player
+localCoord  = 428,240
+[Files]
+movelist = movelist.dat
+cmd     =DivineEliza.cmd
+cns     =Coding/System.cns
+st      =Coding/System.cns
+stcommon =common1.cns
+sprite  =DivineEliza.sff
+anim    =DivineEliza.air
+sound   =DivineEliza.snd
+pal1 = Colors\TDX_CrystalGeyser.act
+pal2 = Colors\Girard_Custom5.act
+pal3 = Colors\Girard_Custom6.act
+pal4 = Colors\Default_SilentRipper.act
+pal5 = Colors\Girard_Custom1.act
+pal6 = Colors\PAVGN_SexualChocolate.act
+pal7 = Colors\Girard_Custom4.act
+pal8 = Colors\sabockee5.act
+pal9 = Colors\sabockee3.act
+pal10 = Colors\PAVGN_Rouge.act
+pal11 = Colors\Latina_PsychoKrusher.act
+pal12 = Colors\Girard_Custom9.act
+st1=Coding/Normal.cns
+st2=Coding/Specials.cns
+st3=Coding/Helpers.cns
+st4=Coding/Supers.cns
+
+; Arcade mode
+[Arcade]
+intro.storyboard =
+ending.storyboard =
+
+
+; FEINT CANCEL PATCHED

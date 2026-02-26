@@ -49,7 +49,7 @@
 
 ; _________________________________________
 ;| Ibuki by varo_hades |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;CONSTANTS=
 [Data]
 life = 1000
@@ -160,7 +160,7 @@ victory40 = "Does that oil have some kind of magical properties or something?"
 victory41 = "I can't lose to an out-of-control, crazy chick like you! No way!"
 victory42 = "You're pretty hot, but you're apparently also pretty weak, so never mind..."
 victory43 = "Training is fun, but dontcha have any other hobbies?"
-victory44 = "You should take those shoulder things off. They make you look über-lame."
+victory44 = "You should take those shoulder things off. They make you look ber-lame."
 victory45 = "Don't you get tired from being so tense all the time? Chill out!"
 victory46 = "A fortune teller? Awesome! Do you see a cute boy in my future!?"
 victory47 = "I guess if you're gonna let yourself go, you may as well go all the way, right?"

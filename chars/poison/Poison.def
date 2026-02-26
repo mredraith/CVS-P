@@ -1,0 +1,60 @@
+; Definition file for Poison
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Poison"
+displayname ="Poison"
+versiondate= 12,14,2014
+mugenversion= 1.0
+author="DivineWolf","Gatorison"
+editor="Renaws"
+Pal.Defaults= 1,2,3,4,5,6,7,8,9,10,11,12
+
+localCoord  = 428,240
+[Files]
+movelist = movelist.dat
+cmd=DivinePoison.cmd
+cns=Coding/System.cns
+st=Coding/System.cns
+stcommon=common1.cns
+sprite=DivinePoison.sff
+anim=DivinePoison.air
+sound=DivinePoison.snd
+st1=Coding/Normal.cns
+st2=Coding/Helpers.cns
+st3=Coding/Special.cns
+st4=Coding/Super.cns
+st5=Coding/Custom.cns
+
+pal1=Colors/SFV6.act
+pal2=Colors/SFV2.act
+pal3=Colors/SFV3.act
+pal4=Colors/SFV4.act
+pal5=Colors/SFV5.act
+pal6=Colors/SFV.act
+pal7=Colors/SFV7.act
+pal8=Colors/SFV8.act
+pal9=Colors/SFV9.act
+
+[Palette Keymap]
+a = 4
+b = 5
+c = 6
+x = 1
+y = 2
+z = 3
+a2 = 7
+b2 = 8
+c2 = 9
+x2 = 10
+y2 = 11
+z2 = 12
+
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+; FEINT CANCEL PATCHED

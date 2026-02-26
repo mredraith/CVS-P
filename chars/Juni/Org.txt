@@ -1,0 +1,284 @@
+             
+======================| Juli by DivineWolf|=========================== [9/XX/2018]            
+
+ - Email: kaiba_klone@yahoo.com
+ - www.trinitymugen.net
+ - Customized version of Capcom's Juli character, for Linux/Win/1.0 Mugen
+
+------------------<Features>---------------------
+
+ - All essential stuff
+ - Gameplay mixed from several games, including CvS2, KOF, SFZ3, and SF3
+ - Special intro versus Cammy, Chun-Li, Guile, Charlie(Nash), all Shadaloo Dolls, and M.Bison(Vega)
+ - Special winpose "Target Destroyed" vs Cammy, Chun-Li, Guile, and Charlie(Nash)
+ - Color Separation(thanks Froz/Girard/ATP/Sage!)
+ - Various palettes to choose from
+ - Midnight Bliss special animation(thanks Antagonist!) 
+ - Vans' "Tiny Buffering" System
+ - Vans' Chizuru "Skill Lock" compatibility 
+
+---------------<Character Info>------------------
+
+(**Note: 1-10 Ranking System: 1 = Lowest, 10 = Best)
+
+ - Intelligence: 7
+ - Strength: 5
+ - Speed: 8
+ - Stamina: 5
+ - Energy Projection: 2
+ - Fighting Ability: 7
+
+One of 12 lovely, yet deadly, "dolls" genetically enhanced(created...?) by M.Bison(Vega), Juli.
+Essentially just like Cammy, however she has some extra unique traits that sets her apart from Cammy.
+Overall though, you'd handle Juli the same as you would Cammy. Her high speed is key. 
+
+-----------------<Movelist>----------------------
+
+ U = Up
+ D = Down
+ F = Forward
+ B = Back
+ UF = Up Forward
+ UB = Up Back
+ DF = Down Forward
+ DB = Down Back
+ LP = Light Punch
+ MP = Medium Punch
+ HP = Heavy Punch
+ LK = Light Kick
+ MK = Medium Kick
+ HK = Heavy Kick
+ S = Start
+
+ (Air) - Move must be performed in the air.
+ (EX)  - Move has an EX version, performed by pressing two punch/kick buttons.
+ (MAX) - Use two punch/kick buttons when performing a Super move to power it up.
+
+
+<NORMAL>
+
+ German Suplex				F(or B) + any 2 punches (grab)
+ Frankensteiner				F(or B) + any 2 kicks (grab/in air OK!)
+ Flying Neck Hunt(Air)			F(or B) + any 2 punches (grab)
+ Falling Arc				F + MK
+ Taunt					S					
+
+<SPECIALS>
+
+ Sniping Arrow(EX) 			D, DF, F, + any kick (Juli)
+ Spin Knuckle(EX)			F, DF, D, DB, B, + any punch (Juli)
+
+Juni:
+
+ Cannon Spike(EX)			F, D, DF, + any kick (Juni and Juli)
+.Hooligan Combination:             F, D, DF, p   (Air)
+	.Razor Edge Slicer:                         (do nothing)
+    .Fatal Leg Twister:            F/B + p       (near opponent)
+    .Cross Scissor Pressure:       F/B + p       (near opponent's midsection)
+ Cannon Strike(Air/EX)			D, DB, B, + any kick (Juni)
+ Earth Direct(EX)			360º + any punch (Juni)
+ Mach Slide				F, D, DF, + any punch (Juni)
+.Spiral Arrow (EX) (air also)		(charge) B, F, K
+. Psycho Shield  3p      (while guarding)
+
+<SUPERS>
+
+ Spin Drive Smasher		D, DF, F(x2), + any kick (Juni and Juli)
+ Psycho Streak			(hold)B, F, B, F, + any punch (Juni)
+
+<LV2 SUPERS>
+
+ Spin Drive Smasher		D, DF, F(x2), + any kick 
+ Psycho Streak			(hold)B, F, B, F, + any punch 
+ Psycho Whirl				D, DB, B(x2), + 2p
+  
+<LV3 SUPERS>
+
+ Death Cross Dancing			LP, LP, F, LK, HP (Juni and Juli)
+
+<SYSTEM BUILD>
+
+ -GROOVE GAUGE-
+
+ (*)N + C + S Groove
+  *Allows: MAX Mode			HP + HK (Requires 1 power bar)
+           Max Cancelling
+           Special Cancelling
+           Super Cancelling
+           EX Specials
+	   Power Charge			Hold MK + MP
+
+ -SYSTEM MECHANICS-
+
+ Parry = O 				Tap F(or D), timed with incoming High/Air/Low attacks respectively.
+ Just Defense = X
+ Chain Combo = X
+ Air Chain Combo = X
+ Super Combo Cancel = O
+ Cancel Any Move = X
+
+ -SUB SYSTEM MECHANICS-
+
+ Dash = X
+ Run = O 				Tap F, F, then hold F
+ Dodge = O 				LP + LK (While stationary, vulnerable to grabs)
+ Dodge Attack = O 			Any punch or kick during Dodge
+ Rolling = O 				F(or B) + LP + LK (Vulnerable to grabs)
+ Small Jump = O 			Tap U
+ Long Small Jump = O 	  		Tap D then U quickly
+ Long Jump = O	        		D, then U
+ Alpha Counter(Attack) = O		B, DB, D + any punch or kick while guarding an attack. (Requires 1 power bar)
+ Safe Fall = O		    		Any 2 punches or LP + LK (While falling and allowed)
+ Counter Movement = O			Tap F(or B) + LP + LK while guarding an attack. (Requires 1 power bar)
+ Tactical Recovery = X
+ Air Guard = O
+
+----------------<Move Details>-------------------
+
+ - Falling Arc is a overhead
+ - Flying Neck Hunt and Air Frankensteiner can catch foes in their hit states and isn't affected by the juggle system
+ - (EX)Cannon Spike has invulnerability on start up
+ - (EX)Cannon Strike can only be performed at the top of a jump during high/normal jumps, it also OTGs
+ - (EX)Spin Knuckle resists normal/special projectiles and has mid body invulnerability
+ - EX Spin Knuckle bounces foes off walls, allowing Juli to follow up with attacks
+ - (EX)Earth Direct is a grab and has high priority
+ - Mach Slide distance covered depends on what strength punch used to perform it
+ - Mach Slide has upper body invulnerability on start up and complete invulnerability as Juli dashes
+ - Mash buttons during Reverse Shaft Breaker(MAX) to add more hits/damage
+ - Psycho Whirl is a overhead
+ - The first hit of Death Cross Dancing MUST hit in order for the rest of the move to ensue 
+   
+---------------<Gameplay Notes>------------------
+
+COMBO SYSTEM:
+ - Most Normal standing/crouching attacks can be canceled into Special and Super moves
+ - Some Special moves can be canceled into Super moves
+ - Performing a Super/MAX Cancel resets the juggle points but also reduces damage dealt
+   
+MAX MODE:
+ - Your attack and defense is increased while in MAX Mode
+ - EX moves can be performed at no power cost, though take away from time sustained in MAX mode
+ - All Lv1 supers can be performed at no power cost, though immediately uses up all time in MAX mode
+ - All Lv2 and higher supers will cost 1 power bar, along with using up all time in MAX mode
+ - Even without a power bar, as long as you have time left in MAX mode, you can perform Lv1 supers/EX moves
+ - You can not Power Charge/gain power while in MAX mode
+ - You can not perform a Alpha Counter/Counter Movement while in MAX Mode
+ 
+--------------------<Q&A>------------------------
+
+ Q: Why Juli?
+ A: Sexy back. >_> Plus, she was LONG overdue from me.
+
+ Q: Can I use something from this char?
+ A: Yup, use w/e you need.
+
+ Q: What can we expect from you next?
+ A: One may never know...
+
+ Q: What stage/music do you use for Juli? 
+ A: Secret Point whatever... Her stage from SFA3 and Doll's Theme for the music. Both can be found at
+    P.O.T.S' site at MFG.  
+
+ Q: Can I make a patch/AI for Juli?
+ A: Sure. 
+
+ Q: Blah, blah, blah Ikemen/1.1?!
+ A: I DO NOT make stuff for either one of those. 
+    Do NOT tell me anything about them.
+
+-------------<Special Thanks>---------------
+
+ - 2OS
+ - Zzyzzyxx
+ - P.O.T.S
+ - Jmorphman
+ - Fighter Factory
+ - Elecbyte
+ - Jesuszilla/TrinityMUGEN
+ - Vans
+ - Sander 71113
+ - Froz
+ - Mr. Infinite
+ - Antagonist
+ - Hades
+ - PAVGN
+ - Syn
+ - Warusaki3
+ - murasakinobaranohito
+ - Pneophen
+ - RikuMasta132
+ - ATP/jtp
+ - Hungry Wolf
+ - senorfro
+ - Calhoun Tubbs
+ - Quickfist
+ - Sage
+ - Magma Dragoon MK.II
+ - Flowrellik
+ - Data_Drain
+ - Koldskool
+  
+--------------------<Shoutouts>----------------------
+
+ - Nestor
+ - Tamez(RIP)
+ - Killer Kong
+ - Rolento
+ - Gritsmaster
+ - Girard
+ - Cyanide
+ - Jin
+ - Ned
+ - Dampir
+ - KojiroBadness
+ - Amanojaku
+ - KoopaKoot
+ - Splode
+ - Lost Avenger
+ - Dcat
+ - Buckus
+ - Sean Altly
+ - Cybaster
+ - MFG
+ - IMT
+ - XCB/Big Eli King 
+ - Sabaki 
+ - Choujin 
+ - Ex Shadow
+ - Club Syn
+ - Kamekaze 
+ - ArielAlexCo 
+ - ScruffyDragon
+ - Reu(RIP)
+ - chrono_strife 
+ - two4teezee 
+ - Rednavi
+ - Beximus 
+ - OneWingedAngel 
+ - RedHot 
+ - Vyn 
+ - Kong
+ - DG 
+ - Stig87 
+ - LimitedMoon
+ - Macho Man Randy Savage(RIP)
+ - H"
+ - Juke Kisaragi
+ - Ace
+ - BigMonsta74
+ - Infinite2020
+ - Doomsday17
+ - Mercy King
+ - DJ-Van
+ - ZGizzle
+ - You
+
+-----------------<Possible Extras/Things To Do>---------------------
+
+ - Fix any issues based on feedback  
+
+-------------------<Disclaimer>----------------------
+
+ - The Juli character is property of Capcom
+ - Capcom vs SNK is property of Capcom
+ - This Mugen character is a non-profit fan work, it cannot be used for any commercial purposes

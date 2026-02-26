@@ -53,7 +53,7 @@
 
 ; _________________________________________
 ;| Kyo Kusanagi by Jmorphman |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;CONSTANTS=
 [Data]
 life = 1000
@@ -264,7 +264,7 @@ victory68 = "You challenge me with fire!? Might as well teach your grandma to mi
 victory69 = "You should've given up from the start. I was worried you might explode."
 
 ;Nakoruru
-victory70 = "I’m exhausted from trying to avoid completely roasting you."
+victory70 = "Im exhausted from trying to avoid completely roasting you."
 
 ;Oswald
 victory71 = "Aww, I'm sorry! I turned all your cards to ash!"
@@ -277,7 +277,7 @@ victory73 = "Good thing you got a ton of flab, Raiden! I'm sure it helped absorb
 victory74 = "You say we're just 'playing fighter'? Then you must be 'playing soldier'!"
 
 ;Ramon
-victory75 = "This still isn’t intense enough. You agree, don't you, Mr. Mightiest Human?"
+victory75 = "This still isnt intense enough. You agree, don't you, Mr. Mightiest Human?"
 
 ;Robert Garcia
 victory76 = "Sorry 'bout that, Mr Fancy-Pants Italian! With those bruises, looks like you won't be having dates any time soon!"

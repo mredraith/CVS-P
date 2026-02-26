@@ -52,7 +52,7 @@
 
 ; _____________________________________
 ;| K' by Chazzanova & Dampir |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;CONSTANTS=
 [Data]
 life = 1000
@@ -164,7 +164,7 @@ victory27 = "Team Japan!? Talk about dredging up the past!"
 victory28 = "Are you kidding me? Did you actually think you stood a chance against me with your puny flames!?"
 
 ;Chin Gentsai
-victory29 = "I don’t want to hear from you anymore. Get out of here before you get hurt."
+victory29 = "I dont want to hear from you anymore. Get out of here before you get hurt."
 
 ;Goro Daimon
 victory30 = "Nothing's more boring than a fight where everyone knows who's going to win."
