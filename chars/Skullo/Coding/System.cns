@@ -48,12 +48,12 @@
 
 
 [Data]
-life = 1000 ;Amount of life to start with
-attack = 100 ;attack power (more is stronger)
-defence = 100 ;defensive power (more is stronger)
-fall.defence_up = 50 ;Percentage to increase defense everytime player is knocked down
+life = 1000
+attack = 100
+defence = 100
+fall.defence_up = 50
 lieDown.time = 15
-airjuggle = 0 ;Number of points for juggling
+airjuggle = 15
 sparkno = s8010 ;Default hit spark number for HitDefs
 guard.sparkno = s8000 ;Default guard spark number
 KO.echo = 0 ;1 to enable echo on KO

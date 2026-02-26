@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;
-;<NORMAL MOVES>==
-;
+;==============================================================================================
+;========================================<NORMAL MOVES>========================================
+;==============================================================================================
 
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
@@ -41,7 +41,7 @@ forcenofall = !var(20)
 attr = S, NA
 hitflag = MAF
 guardflag = M
-damage = ceil(ifelse(fvar(11) * 26 < 7, 7, fvar(11) * 26)), 0
+damage = 35,15;ceil(ifelse(fvar(11) * 26 < 7, 7, fvar(11) * 26)), 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
@@ -55,7 +55,7 @@ ground.hittime = 12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
 ground.slidetime = 12 + 2 * var(9)
 air.hittime = 120
-ground.velocity = ifelse(var(20), -3.48, -6.35)
+ground.velocity = -3;ifelse(var(20), -3.48, -6.35)
 ground.cornerpush.veloff = 0
 guard.velocity = ifelse(var(20), -3.48, -6.35)
 guard.cornerpush.veloff = 0
@@ -127,7 +127,7 @@ forcenofall = !var(20)
 attr = S,NA
 hitflag = MAF
 guardflag = M
-damage = ceil(ifElse(fvar(11) * 61 < 7, 7, fvar(11) * 61)), 0
+damage = 35,15;ceil(ifElse(fvar(11) * 61 < 7, 7, fvar(11) * 61)), 0
 getpower = ifelse(!var(13),144,72)*!var(20), 36*!var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 5, 10), ifelse(var(20), 5, 10)
@@ -141,7 +141,7 @@ ground.hittime = 15 + 3*var(9)
 guard.hittime = (15 + 3*var(9)) - 6
 ground.slidetime = 15 + 3*var(9)
 air.hittime = 120
-ground.velocity = ifElse(var(20), -3.05, -6.27), 0
+ground.velocity = -3;ifElse(var(20), -3.05, -6.27), 0
 ground.cornerPush.velOff = 0
 guard.velocity = ifElse(var(20), -3.05, -6.27)
 guard.cornerPush.velOff = 0
@@ -345,7 +345,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
-guardflags = 
 [Statedef 230]
 type    = S
 physics = S
@@ -380,7 +379,7 @@ forcenofall = !var(20)
 attr = S,NA
 hitflag = MAF
 guardflag = M
-damage = ceil(ifelse(fvar(11)*30<7, 7, fvar(11)*30)), 0
+damage = 35,15;ceil(ifelse(fvar(11)*30<7, 7, fvar(11)*30)), 0
 getpower = 72*!var(20), 36*!var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
@@ -394,7 +393,7 @@ ground.hittime = 12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 ground.slidetime = 12 + 2*var(9)
 air.hittime = 120
-ground.velocity = ifElse(var(20), -2.59, -4.83), 0
+ground.velocity = -3;ifElse(var(20), -2.59, -4.83), 0
 ground.cornerPush.velOff = 0
 guard.velocity = ifElse(var(20), -2.59, -4.83)
 guard.cornerPush.velOff = 0
@@ -606,15 +605,15 @@ hitsound = -1 + 0*(var(31):=4)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0*(var(34):=8000)
-sparkxy = -10 + 0*(var(35):=30), var(36):=-85
+sparkxy = -1 + 0*(var(35):=90), var(36):=-60
 palfx.time = 12*var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd= -255, -255, -255, 48
 
-[State 245, Type]
-type=statetypeset
-trigger1= animelemtime(6)>=0
-movetype=I
+;[State 245, Type]
+;type=statetypeset
+;trigger1= animelemtime(6)>=0
+;movetype=I
 
 [State 245, 5]
 type = ChangeState
@@ -968,7 +967,7 @@ forceStand = 1
 [State 420, 5]
 type = ChangeState
 trigger1 = !AnimTime
-value = 421
+value = 423;421
 ctrl = 1
 
 ;---------------------------------------------------------------------------
@@ -1033,6 +1032,7 @@ palfx.sinadd= -255,-255,-255,48
 type = ChangeState
 trigger1 = !AnimTime
 value = 422
+
 
 ;---------------------------------------------------------------------------
 ; Crouching Strong Punch
@@ -1114,6 +1114,7 @@ powerAdd = 0
 type = ChangeState
 trigger1 = !AnimTime
 value = 11
+ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Kick
@@ -1295,15 +1296,15 @@ powerAdd = 18 * !var(20)
 faceP2 = 1
 Anim = 450
 
-[State 450, StateTypeSet]
-type = StateTypeSet
-trigger1 = animElem = 6
-physics = N
+;[State 450, StateTypeSet]
+;type = StateTypeSet
+;trigger1 = animElem = 6
+;physics = N
 
 [State 450]
 type = VelSet
 trigger1 = animElemTime(6) = 1
-x = 6
+x = 12
 
 [State 450,Posset]
 type=posset
@@ -1330,7 +1331,7 @@ ID = 450
 attr = C,NA
 hitflag = MAF
 guardflag = L
-damage = ceil(ifelse(fvar(11)*91<7, 7, fvar(11)*91)), 0
+damage = 65,30;ceil(ifelse(fvar(11)*91<7, 7, fvar(11)*91)), 0
 getpower = ifelse(!var(13), 216, 72)*!var(20), 36*!var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
@@ -1344,7 +1345,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.slidetime = 18 + 4*var(9)
 air.hittime = 120
-ground.velocity = -1.14, -4.7
+ground.velocity = -6,-5;-1.14, -4.7
 ground.cornerPush.velOff = 0
 guard.velocity = ifElse(var(20), -3.87, -8.36)
 guard.cornerPush.velOff = 0
@@ -1366,7 +1367,7 @@ palfx.sinadd= -255,-255,-255,48
 [State 450, 5]
 type = ChangeState
 trigger1 = !AnimTime
-value = 451
+value = 453;451
 
 ;---------------------------------------------------------------------------
 [Statedef 451]
@@ -1378,6 +1379,11 @@ velSet = 0,0
 sprPriority = 1
 powerAdd = 18 * !var(20)
 Anim = 451
+
+[State 450]
+type = VelSet
+trigger1 = time = 0
+x = 12
 
 [State 451, Hit]
 type=hitdef
@@ -1435,6 +1441,11 @@ velSet = 0,0
 sprPriority = 1
 powerAdd = 18 * !var(20)
 Anim = 452
+
+[State 450]
+type = VelSet
+trigger1 = time = 0
+x = 12
 
 [State 452, Hit]
 type=hitdef
@@ -1509,6 +1520,7 @@ x = 20 * const(size.xscale)
 type = ChangeState
 trigger1 = !AnimTime
 value = 11
+ctrl=1
 
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
@@ -2000,7 +2012,7 @@ type=changestate
 trigger1= pos y>-vel y
 value=52
 
-;<Throw Attempt>==
+;===========<Throw Attempt>==========
 [Statedef 800]
 type=S
 physics=S
@@ -2109,7 +2121,7 @@ trigger1= !animtime
 value=0
 ctrl=1
 
-;<KUNG FU THRUST>=
+;===========<KUNG FU THRUST>================
 [Statedef 810]
 type = S
 movetype = A
@@ -2365,7 +2377,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<>=
+;===========<>================
 [Statedef 820]
 type = A
 movetype = H
@@ -2389,7 +2401,7 @@ type = ChangeAnim2
 Trigger1 = !Time
 value = 820
 
-;<>=
+;===========<>================
 [Statedef 821]
 type    = A
 movetype= H
@@ -2441,7 +2453,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;<KUNG FU THRUST>=
+;===========<KUNG FU THRUST>================
 [Statedef 830]
 type = S
 movetype = A
@@ -2621,7 +2633,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<>=
+;===========<>================
 [Statedef 840]
 type = A
 movetype = H
@@ -2645,7 +2657,7 @@ Trigger1 = 1
 value = 1
 movecamera = 0,0
 
-;<>=
+;===========<>================
 [Statedef 841]
 type    = A
 movetype= H
@@ -2693,7 +2705,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;<KUNG FU THRUST>=
+;===========<KUNG FU THRUST>================
 [Statedef 850]
 type = S
 movetype = A
@@ -2983,7 +2995,7 @@ type = changestate
 trigger1 = pos y > -vel y
 value = 52
 
-;<>=
+;===========<>================
 [Statedef 860]
 type = A
 movetype = H
@@ -3007,7 +3019,7 @@ type = ChangeAnim2
 Trigger1 = !Time
 value = 860
 
-;<>=
+;===========<>================
 [Statedef 861]
 type = A
 movetype = H
@@ -3026,7 +3038,7 @@ type = ChangeAnim2
 Trigger1 = !Time
 value = 861
 
-;<>=
+;===========<>================
 [Statedef 862]
 type = A
 movetype = I
@@ -3068,7 +3080,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;<>=
+;===========<>================
 [Statedef 863]
 type = A
 movetype = I
@@ -3110,7 +3122,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;<THROW ESC'D>==
+;===========<THROW ESC'D>==========
 [StateDef 890]
 type = S
 physics = N

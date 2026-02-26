@@ -1,8 +1,8 @@
-;
-;<NORMAL MOVES>==
-;
+;==============================================================================================
+;========================================<NORMAL MOVES>========================================
+;==============================================================================================
 
-;<STANDING LIGHT PUNCH>==
+;===========<STANDING LIGHT PUNCH>==========
 [StateDef 200]
 type = S
 physics = S
@@ -29,7 +29,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
+damage = ceil(ifElse(fvar(11) * 18 < 7, 7, fvar(11) * 18)), 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -85,7 +85,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<STANDING MEDIUM PUNCH>==
+;===========<STANDING MEDIUM PUNCH>==========
 [StateDef 210]
 type = S
 physics = S
@@ -112,7 +112,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
+damage = ceil(ifElse(fvar(11) * 45 < 7, 7, fvar(11) * 45)), 0
 getPower = ifElse(!var(13), 144, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 5, 10), ifElse(var(20), 5, 10)
@@ -161,7 +161,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<PALM UPPER>==
+;===========<PALM UPPER>==========
 [StateDef 215]
 type = S
 physics = S
@@ -194,7 +194,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
+damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 0
 getPower = ifElse(!var(13), 144, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -240,7 +240,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<STANDING HEAVY PUNCH>==
+;===========<STANDING HEAVY PUNCH>==========
 [StateDef 220]
 type = S
 physics = S
@@ -322,7 +322,7 @@ ignorehitpause = 0
 [State 220, HitDef : Ice]
 type = HitDef
 TriggerAll = Facing = 1
-trigger1 = !var(16) && (var(15) < 1 || var(20))
+trigger1 = !var(16) && (var(15) < 5 || var(20))
 trigger1 = Time = 10
 forceNoFall = !var(20)
 ID = 220
@@ -330,7 +330,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
+damage = ceil(ifElse(fvar(11) * 87 < 7, 7, fvar(11) * 87)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -355,16 +355,16 @@ air.fall = 1
 fall = 0
 fall.recover = 1
 fall.recoverTime = 120
-hitSound = -1 + 0 * (var(31) := 2)
+hitSound = -1 + 0 * (var(31) := 1)
 guardSound = -1 + 0 * (var(32) := 0)
-sparkNo = -1 + 0 * (var(33) := 8012)
+sparkNo = -1 + 0 * (var(33) := 8011)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 91), var(36) := -67
 
 [State 220, HitDef : Flame]
 type = HitDef
 TriggerAll = Facing = -1
-trigger1 = !var(16) && (var(15) < 1 || var(20))
+trigger1 = !var(16) && (var(15) < 5 || var(20))
 trigger1 = Time = 10
 forceNoFall = !var(20)
 ID = 10220
@@ -372,7 +372,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
+damage = ceil(ifElse(fvar(11) * 87 < 7, 7, fvar(11) * 87)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -397,9 +397,9 @@ air.fall = 1
 fall = 0
 fall.recover = 1
 fall.recoverTime = 120
-hitSound = -1 + 0 * (var(31) := 2)
+hitSound = -1 + 0 * (var(31) := 1)
 guardSound = -1 + 0 * (var(32) := 0)
-sparkNo = -1 + 0 * (var(33) := 8012)
+sparkNo = -1 + 0 * (var(33) := 8011)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 91), var(36) := -67
 palFX.time = 35
@@ -450,8 +450,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<STANDING LIGHT KICK>==
-guardflags = 
+;===========<STANDING LIGHT KICK>==========
 [StateDef 230]
 type = S
 physics = S
@@ -478,7 +477,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
+damage = ceil(ifElse(fvar(11) * 24 < 7, 7, fvar(11) * 24)), 0
 getPower = 72 * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -527,7 +526,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<STANDING MEDIUM KICK>==
+;===========<STANDING MEDIUM KICK>==========
 [StateDef 240]
 type = S
 physics = S
@@ -603,7 +602,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<STANDING FWD MEDIUM KICK>==
+;===========<STANDING FWD MEDIUM KICK>==========
 [StateDef 245]
 type = S
 physics = S
@@ -699,7 +698,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<STANDING HEAVY KICK>==
+;===========<STANDING HEAVY KICK>==========
 [StateDef 250]
 type = S
 physics = N
@@ -791,7 +790,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = H
 priority = 4,Hit
-damage = ceil(ifElse(fvar(11) * 91 < 7, 7, fvar(11) * 91)), 0
+damage = ceil(ifElse(fvar(11) * 76 < 7, 7, fvar(11) * 76)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -832,7 +831,7 @@ attr = S, NA
 hitFlag = MAF
 guardFlag = H
 priority = 4,Hit
-damage = ceil(ifElse(fvar(11) * 91 < 7, 7, fvar(11) * 91)), 0
+damage = ceil(ifElse(fvar(11) * 76 < 7, 7, fvar(11) * 76)), 0
 getPower = ifElse(!var(13), 216, 72) * (!var(14) || !var(20)), 36 * (!var(14) || !var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -904,7 +903,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<CROUCHING LIGHT PUNCH>==
+;===========<CROUCHING LIGHT PUNCH>==========
 [StateDef 400]
 type = C
 physics = C
@@ -931,7 +930,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
+damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 0
 getPower = 72 * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -980,7 +979,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<CROUCHING MEDIUM PUNCH>==
+;===========<CROUCHING MEDIUM PUNCH>==========
 [StateDef 410]
 type = C
 physics = C
@@ -1014,7 +1013,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
+damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 0
 getPower = ifElse(!var(13), 144, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 5, 10), ifElse(var(20), 5, 10)
@@ -1058,7 +1057,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<CROUCHING HEAVY PUNCH>==
+;===========<CROUCHING HEAVY PUNCH>==========
 [StateDef 420]
 type = C
 physics = C
@@ -1147,7 +1146,7 @@ var(54) = 1
 [State 420, HitDef : Flame]
 type = HitDef
 TriggerAll = Facing = 1
-trigger1 = !var(16) && (var(15) < 1 || var(20))
+trigger1 = !var(16) && (var(15) < 3 || var(20))
 trigger1 = AnimElem = 3
 ID = 420
 forceNoFall = !var(20)
@@ -1155,7 +1154,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 0
+damage = ceil(ifElse(fvar(11) * 44 < 7, 7, fvar(11) * 44)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -1193,7 +1192,7 @@ forceStand = 1
 [State 420, HitDef : Flame]
 type = HitDef
 TriggerAll = Facing = 1
-trigger1 = !var(16) && (var(15) < 1 || var(20))
+trigger1 = !var(16) && (var(15) < 4 || var(20))
 trigger1 = AnimElem = 4
 ID = 420
 forceNoFall = !var(20)
@@ -1201,7 +1200,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
+damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 8, 16), ifElse(var(20), 8, 16)
@@ -1238,7 +1237,7 @@ palFX.sinAdd = 96, 96, 96, 4
 [State 420, HitDef : Ice]
 type = HitDef
 TriggerAll = Facing = -1
-trigger1 = !var(16) && (var(15) < 1 || var(20))
+trigger1 = !var(16) && (var(15) < 3 || var(20))
 trigger1 = AnimElem = 3
 ID = 10420
 forceNoFall = !var(20)
@@ -1246,7 +1245,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 0
+damage = ceil(ifElse(fvar(11) * 44 < 7, 7, fvar(11) * 44)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -1280,7 +1279,7 @@ forceStand = 1
 [State 420, HitDef : Ice]
 type = HitDef
 TriggerAll = Facing = -1
-trigger1 = !var(16) && (var(15) < 1 || var(20))
+trigger1 = !var(16) && (var(15) < 4 || var(20))
 trigger1 = AnimElem = 4
 ID = 10420
 forceNoFall = !var(20)
@@ -1288,7 +1287,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
+damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 8, 16), ifElse(var(20), 8, 16)
@@ -1362,7 +1361,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<CROUCHING LIGHT KICK>==
+;===========<CROUCHING LIGHT KICK>==========
 [StateDef 430]
 type = C
 physics = C
@@ -1389,7 +1388,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = L
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
+damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
 getPower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -1433,7 +1432,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<CROUCHING MEDIUM KICK>==
+;===========<CROUCHING MEDIUM KICK>==========
 [StateDef 440]
 type = C
 physics = C
@@ -1460,7 +1459,7 @@ attr = C, NA
 hitFlag = MAF
 guardFlag = L
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
+damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 0
 getPower = ifElse(!var(13), 144, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 5, 10), ifElse(var(20), 5, 10)
@@ -1504,7 +1503,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<CROUCHING HEAVY KICK>==
+;===========<CROUCHING HEAVY KICK>==========
 [StateDef 450]
 type = C
 physics = C
@@ -1704,7 +1703,7 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;<JUMPING LIGHT PUNCH>==
+;===========<JUMPING LIGHT PUNCH>==========
 [StateDef 600]
 type = A
 physics = N
@@ -1735,7 +1734,7 @@ attr = A, NA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
+damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 0
 getPower = 72 * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 3, 8), ifElse(var(20), 4, 8)
@@ -1785,7 +1784,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<NEUTRAL JUMPING MEDIUM PUNCH>==
+;===========<NEUTRAL JUMPING MEDIUM PUNCH>==========
 [StateDef 610]
 type = A
 physics  = N
@@ -1816,7 +1815,7 @@ attr = A, NA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
+damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 0
 getPower = ifElse(!var(13), 144, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 10), ifElse(var(20), 5, 10)
@@ -1843,7 +1842,7 @@ yAccel = 0.58
 fall = 0
 fall.recover = 1
 fall.recoverTime = 120
-hitSound = -1 + 0 * (var(31) := 1)
+hitSound = -1 + 0 * (var(31) := 4)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8011)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
@@ -1866,7 +1865,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<JUMPING HEAVY PUNCH>==
+;===========<JUMPING HEAVY PUNCH>==========
 [StateDef 620]
 type = A
 physics = N
@@ -2075,7 +2074,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<JUMPING LIGHT KICK>==
+;===========<JUMPING LIGHT KICK>==========
 [StateDef 630]
 type = A
 physics = N
@@ -2106,7 +2105,7 @@ attr = A, NA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
+damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 0
 getPower = 72 * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 3, 8), ifElse(var(20), 4, 8)
@@ -2156,7 +2155,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<JUMPING MEDIUM KICK>==
+;===========<JUMPING MEDIUM KICK>==========
 [StateDef 640]
 type = A
 physics = N
@@ -2237,7 +2236,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<JUMPING HEAVY KICK>==
+;===========<JUMPING HEAVY KICK>==========
 [StateDef 650]
 type = A
 physics = N
@@ -2323,7 +2322,7 @@ attr = A, NA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
+damage = ceil(ifElse(fvar(11) * 77 < 7, 7, fvar(11) * 77)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 5, 12), ifElse(var(20), 6, 12)
@@ -2370,7 +2369,7 @@ attr = A, NA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
+damage = ceil(ifElse(fvar(11) * 77 < 7, 7, fvar(11) * 77)), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 5, 12), ifElse(var(20), 6, 12)
@@ -2446,7 +2445,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;<THROW ATTEMPT>==
+;===========<THROW ATTEMPT>==========
 [StateDef 800]
 type = S
 physics = S
@@ -2556,7 +2555,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<THROW SWITCHING SIDES>==
+;===========<THROW SWITCHING SIDES>==========
 [StateDef 805]
 type = S
 moveType = A
@@ -2653,7 +2652,7 @@ type = ChangeState
 trigger1 = AnimElemTime(5) >= 0
 value = ifElse(var(10), 820, 810)
 
-;<THROW SWITCHING SIDES (TARGET)>==
+;===========<THROW SWITCHING SIDES (TARGET)>==========
 [StateDef 806]
 type = A
 moveType = H
@@ -2685,7 +2684,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;<IMPACT CLAW>==
+;===========<IMPACT CLAW>==========
 [StateDef 810]
 type = S
 physics = N
@@ -3012,7 +3011,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<DESTROY CLAW (ARM)>==
+;===========<DESTROY CLAW (ARM)>==========
 [Statedef 814]
 type = S
 anim = 814
@@ -3036,9 +3035,8 @@ type = DestroySelf
 trigger1 = Root, AnimElemTime(5) = 0
 trigger2 = !Root, StateNo = 810
 trigger3 = var(19)
-Trigger4 = Root,StateNo = 890
 
-;<DESTROY CLAW (TARGET)>==
+;===========<DESTROY CLAW (TARGET)>==========
 [StateDef 815]
 type = A
 physics = N
@@ -3161,7 +3159,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100
 
-;<GUILTY BOMB>==
+;===========<GUILTY BOMB>==========
 [Statedef 820]
 type = S
 physics = N
@@ -3543,7 +3541,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<SPARTAN BOMB (ARM)>==
+;===========<SPARTAN BOMB (ARM)>==========
 [Statedef 821]
 type = S
 anim = 821
@@ -3567,9 +3565,8 @@ type = DestroySelf
 trigger1 = Root, AnimElemTime(21) = 0
 trigger2 = !Root, StateNo = 820
 trigger3 = var(19)
-Trigger4 = Root,StateNo = 890
 
-;<SPARTAN BOMB (TARGET)>==
+;===========<SPARTAN BOMB (TARGET)>==========
 [StateDef 825]
 type = A
 physics = N
@@ -3601,7 +3598,7 @@ type = SelfState
 trigger1 = !AnimTime
 value = 5100
 
-;<THROW ESCAPED>==
+;===========<THROW ESCAPED>==========
 [StateDef 890]
 type = S
 physics = N

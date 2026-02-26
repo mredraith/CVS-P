@@ -1,8 +1,8 @@
-;
-;<SPECIAL MOVES>===
-;
+;=
+;=<SPECIAL MOVES=
+;=
 
-;<KINESIS>=
+;KINESIS
 [Statedef 1000]
 type = S
 physics = S
@@ -26,7 +26,7 @@ var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" |
 
 [State 1000, Button Detect (AI)]
 type = VarSet
-trigger1 = !Time && AILevel
+trigger1 =AILevel &&!time&&numenemy
 var(10) = Ifelse(enemynear,statetype=A&&(p2bodydist x=[70,160])&&(p2bodydist y=[-180,-70]),1+random%2,0)
 
 [State 1000, ChangeAnim]
@@ -109,7 +109,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<CYBER LARIAT>=
+;CYBER LARIAT
 [StateDef 1100]
 type = S
 physics = N
@@ -130,17 +130,12 @@ time = 2
 [State 1100, Button Detect]
 type = VarSet
 trigger1 = !Time && !AILevel
-var(10) = ifElse((command = "c" || command = "rlsc"), 2, ifElse((command = "b" || command = "rlsb"), 1, 0))
+var(10) = ifElse((command = "z" || command = "rlsz"), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
 
 [State 1100, Button Detect (AI)]
 type = VarSet
 trigger1 = !Time && AILevel
 var(10) = ifElse(P2Dist x > 100, 2, ifElse(P2Dist x > 88, 1, 0))
-
-[State 1000, ChangeAnim]
-type = ChangeAnim
-trigger1 = !Time
-value = ifElse(var(10) = 0, 1100, ifElse(var(10) = 1, 1110, 1120))
 
 [State 1100, Voice]
 type = PlaySnd
@@ -250,17 +245,62 @@ ownpal = 1
 removeongethit = 1
 ignorehitpause = 0
 
+[State 1100, HitDef]
+type = HitDef
+trigger1 = !var(16) && (var(15) < 4 || !var(20))
+trigger1 = AnimElem = 4
+ID = 1100
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 3, Hit
+damage = ceil(ifElse(fvar(11) * 67 < 7, 7, fvar(11) * 67)), 0
+getPower = ifElse(!var(13), 216, 72) * (!var(20)), 36 * (!var(20))
+givePower = 36, 36
+pauseTime = 16, 16
+guard.pauseTime = 24, 24
+animType = Hard
+air.animType = Back
+ground.type = High
+ground.hitTime = 18
+guard.hittime = (18) - 6
+ground.slideTime = 18
+air.hitTime = 120
+ground.velocity = -11.23, 0
+ground.cornerPush.velOff = 0
+guard.velocity = -10.52
+guard.cornerPush.velOff = 0
+air.velocity = -4.32, -7.49
+air.cornerPush.velOff = 0
+yAccel = 0.65
+fall = 0
+air.fall = 1
+fall.recover = 0
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 78), var(36) := -90
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
 [State 1100, HitDef : Flame]
 type = HitDef
 TriggerAll = Facing = -1
-trigger1 = !var(16) && (var(15) < 2 || var(20))
+trigger1 = !var(16) && (var(15) < 5 || var(20))
 trigger1 = AnimElem = 7
 ID = 1101
 attr = S, SA
 hitFlag = MAF
 guardFlag = M
-priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 7
+priority = 3, Hit
+damage = ceil(ifElse(fvar(11) * 52 < 7, 7, fvar(11) * 52)), 0
 getPower = ifElse(!var(13), 216, 72) * (!var(20)), 36 * (!var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -272,14 +312,15 @@ ground.hitTime = 24
 guard.hittime = (24) - 6
 ground.slideTime = 18
 air.hitTime = 120
-ground.velocity = -4.32, -7.49
+ground.velocity = -11.23, 0
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
 air.velocity = -4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.53
-fall = 1
+yAccel = 0.65
+fall = 0
+air.fall = 1
 fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
@@ -298,14 +339,14 @@ envShake.freq = 120
 [State 1100, HitDef : Ice]
 type = HitDef
 TriggerAll = Facing = 1
-trigger1 = !var(16) && (var(15) < 2 || var(20))
+trigger1 = !var(16) && (var(15) < 5 || var(20))
 trigger1 = AnimElem = 7
 ID = 11101
 attr = S, SA
 hitFlag = MAF
 guardFlag = M
-priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 7
+priority = 3, Hit
+damage = ceil(ifElse(fvar(11) * 52 < 7, 7, fvar(11) * 52)), 0
 getPower = ifElse(!var(13), 216, 72) * (!var(20)), 36 * (!var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -317,14 +358,15 @@ ground.hitTime = 24
 guard.hittime = (24) - 6
 ground.slideTime = 18
 air.hitTime = 120
-ground.velocity = -4.32, -7.49
+ground.velocity = -11.23, 0
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
 air.velocity = -4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.53
-fall = 1
+yAccel = 0.65
+fall = 0
+air.fall = 1
 fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
@@ -499,19 +541,19 @@ y = -Const(Size.Head.Pos.Y)
 type = VelSet
 trigger1 = !Time
 x = -2.0
-y = -1
+y = 10.0
 
 [State 1106, VelAdd]
 type = VelAdd
 trigger1 = 1
-y = .53
+y = .60
 
 [State 1106, SelfState]
 type = SelfState
 trigger1 = Pos Y >= 25 && Vel Y > 0 && Time > 0
 value = 5100
 
-;<PSYCHO HEADBUTT>=
+;PSYCHO HEADBUTT
 [Statedef 1200]
 type = S
 physics = N
@@ -578,12 +620,12 @@ trigger1 = AnimElemTime(3) >= 0
 
 [State 1200, HitDef]
 type = HitDef
-trigger1 = !var(16) && (var(15) < 2 || var(20))
+trigger1 = !var(16) && (var(15) < 3 || var(20))
 trigger1 = AnimElem = 3
 attr = A, SA
 hitFlag = MAF
 guardFlag = HA
-priority = 4, Hit
+priority = 7, Hit
 damage = ceil(ifElse(fvar(11) * 87 < 7, 7, fvar(11) * 87)), 8
 getPower = ifElse(!var(13), 216, 72) * (!var(20)), 36 * (!var(20))
 givePower = 36, 36
@@ -605,7 +647,7 @@ guard.cornerPush.velOff = 32
 air.velocity = -2.67, -8.7
 airguard.velocity = -6.67, -1.12
 air.cornerPush.velOff = 32
-yAccel = 0.53
+yAccel = 0.55
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -633,7 +675,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1205
 
-;<PSYCHO HEADBUTT LANDING>=
+;PSYCHO HEADBUTT LANDING
 [Statedef 1205]
 type = S
 physics = S
@@ -642,7 +684,7 @@ ctrl = 0
 velSet = 0,0
 sprPriority = 1
 powerAdd = 0
-;faceP2 = 1
+faceP2 = 1
 
 [State 1205, Landing Dust Explod]
 type = Explod
@@ -676,7 +718,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<MOONSAULT KNEE DROP>=
+;MOONSAULT KNEE DROP
 [Statedef 1300]
 type = S
 physics = N
@@ -732,7 +774,7 @@ ownPal = 1
 [State 1100, Jump Sound]
 type = PlaySnd
 trigger1 = AnimElem = 2
-value = 41,0
+value = 40,0
 channel = 3
 
 [State 1300, VelSet]
@@ -746,10 +788,9 @@ type = VelSet
 trigger1 = AnimElemTime(2) = 0
 y = -11.0
 
-[State 105, VelAdd]
-type = VelAdd
-trigger1 = AnimElemTime(2) > 0
-y = 0.65
+[State 1300, Gravity]
+type = Gravity
+trigger1 = AnimElemTime(16) >= 0
 
 [State 1300, Voice]
 type = PlaySnd
@@ -764,7 +805,7 @@ trigger1 = !Time
 attr = A, SA
 hitflag = MAF
 guardflag = HA
-priority = 4, Hit
+priority = 7, Hit
 damage = ceil(ifElse(fvar(11) * 67 < 7, 7, fvar(11) * 67)), 7
 pauseTime = ifElse(var(20), 11, 8), ifElse(var(20), 11, 8)
 getPower = 0,0
@@ -808,7 +849,7 @@ type = ChangeState
 trigger1 = AnimElemTime(2) >= 0 && Pos Y + Vel Y >= 0
 value = 1305
 
-;<MOONSAULT KNEE DROP (2ND HIT)>=
+;MOONSAULT KNEE DROP (2ND HIT)
 [Statedef 1301]
 type = A
 physics = N
@@ -831,7 +872,7 @@ trigger1 = !Time
 attr = A, SA
 hitflag = MAF
 guardflag = HA
-priority = 4, Hit
+priority = 7, Hit
 damage = ceil(ifElse(fvar(11) * 67 < 7, 7, fvar(11) * 67)), 7
 pauseTime = ifElse(var(20), 11, 8), ifElse(var(20), 11, 8)
 getPower = ifElse(!var(13), 216, 72) * (!var(20)), 36 * (!var(20))
@@ -874,11 +915,11 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;<MOONSAULT KNEE DROP LANDING>=
+;MOONSAULT KNEE DROP LANDING
 [Statedef 1305]
 type = S
 physics = S
-anim = 1305
+anim = 1205
 ctrl = 0
 velSet = 0,0
 sprPriority = 1
@@ -912,7 +953,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER
 [Statedef 2900]
 type = S
 physics = N
@@ -996,7 +1037,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER
 [StateDef 2910]
 type = S
 physics = N

@@ -3,10 +3,10 @@
 ;| Elena by varo_hades                     |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==============================================================================================
-;=======================================<SYSTEM STATES>========================================
+;=======================================<SYSTEM STATES====================
 ;==============================================================================================
 
-;====================<STANDING>====================
+;STANDING
 [StateDef 0]
 type = S
 physics = S
@@ -46,7 +46,7 @@ value = 50
 
 
 
-;====================<CROUCHING>====================
+;CROUCHING
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -116,7 +116,7 @@ value = 0
 
 
 
-;====================<WALKING>====================
+;WALKING
 [StateDef 20]
 type = S
 physics = S
@@ -149,7 +149,7 @@ value = 21
 
 
 
-;====================<JUMPING>====================
+;JUMPING
 ;Jumping
 [StateDef 40]
 type = S
@@ -366,7 +366,7 @@ ctrl = 1
 
 
 
-;======================<RUN>===========================
+;======================<RUN=======
 [StateDef 100]
 type = S
 physics = N
@@ -443,7 +443,7 @@ ctrl = 1
 
 
 
-;========================<DASH BACKWARDS>==========================
+;========================<DASH BACKWARDS======
 [StateDef 105]
 type = A
 physics = N
@@ -709,7 +709,7 @@ ctrl = 1
 
 
 
-;====================<DODGE>====================
+;DODGE
 [StateDef 700]
 type = S
 physics = S
@@ -957,7 +957,7 @@ ctrl = 1
 
 
 
-;====================<ZERO COUNTER>====================
+;ZERO COUNTER
 [StateDef 750]
 type = S
 physics = S
@@ -1027,7 +1027,7 @@ value = ifElse(var(10) = 1, 2910, 2900)
 
 
 
-;====================<PARRY>====================
+;PARRY
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1287,7 +1287,7 @@ value = 52
 
 
 
-;====================<CUSTOM COMBO>====================
+;CUSTOM COMBO
 ;Ground Version
 [StateDef 900]
 type = S
@@ -2147,7 +2147,7 @@ value = 52
 
 
 
-;====================<LOSE>====================
+;LOSE
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2161,7 +2161,7 @@ flag = RoundNotOver
 
 
 
-;====================<DRAW GAME>====================
+;DRAW GAME
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2174,7 +2174,7 @@ value = 170
 
 
 
-;====================<CONTINUE?>====================
+;CONTINUE?
 [StateDef 5500]
 type = S
 anim = 5500
@@ -2188,7 +2188,7 @@ value = 5500
 
 
 
-;====================<INITIALIZE>====================
+;INITIALIZE
 [StateDef 5900]
 type = S
 
@@ -2208,7 +2208,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;====================<INTRO 1>====================
+;INTRO 1
 [StateDef 190]
 type = S
 physics = S
@@ -2229,7 +2229,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====================<INTRO 2>====================
+;INTRO 2
 [Statedef 191]
 type = S
 movetype = I
@@ -2264,7 +2264,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 192
 
-;====================<INTRO 2>====================
+;INTRO 2
 [Statedef 192]
 type = A
 movetype = I
@@ -2312,7 +2312,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 193
 
-;====================<INTRO 2>====================
+;INTRO 2
 [Statedef 193]
 type = S
 movetype = I
@@ -2356,7 +2356,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 
-;====================<TURNS INTRO>====================
+;TURNS INTRO
 [StateDef 6900]
 type = A
 anim = 42
@@ -2450,7 +2450,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====================<WIN POSE DECIDER>====================
+;WIN POSE DECIDER
 [StateDef 180]
 type = S
 
@@ -2474,7 +2474,7 @@ type = ChangeState
 trigger1 = 1
 value = 181 + (Random % 2)
 
-;====================<WIN 1>====================
+;WIN 1
 [StateDef 181]
 type = S
 physics = S
@@ -2491,7 +2491,7 @@ type = PlaySnd
 trigger1 = animelem = 25
 value = 195,0
 
-;====================<WIN 2>====================
+;WIN 2
 [StateDef 182]
 type = S
 physics = S
@@ -2535,7 +2535,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<CHEAP K.O.>====================
+;CHEAP K.O.
 [StateDef 5950]
 type = S
 moveType = H
@@ -2589,7 +2589,7 @@ value = ifElse(Alive, 5110, 5150)
 
 
 
-;====================<AIR HIT TRANSITION>====================
+;AIR HIT TRANSITION
 [Statedef 5035]
 type = A
 movetype = H
@@ -2630,7 +2630,7 @@ value = 5050
 
 
 ;===========================================================================
-;===============================<-2 STATES>=================================
+;===============================<-2 STATES=============
 ;===========================================================================
 [StateDef -2]
 
@@ -2963,7 +2963,7 @@ text = "\nBy Jmorphman"
 ignoreHitPause = 1
 
 ;===========================================================================
-;===============================<-3 STATES>=================================
+;===============================<-3 STATES=============
 ;===========================================================================
 [StateDef -3]
 

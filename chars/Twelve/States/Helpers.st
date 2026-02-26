@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;
-;< HELPER STATES >==
-;
+;==============================================================================================
+;=======================================< HELPER STATES >========================================
+;==============================================================================================
 
-;<SPARKS>=
+;========================<SPARKS>=============================
 ;Invisible Timer
 [StateDef 197]
 type = A
@@ -25,7 +25,7 @@ trigger5 = time >= 215
 ignorehitpause = 1
 persistent = 1
 
-;<FRONT ARM FOR THROW>=
+;===========<FRONT ARM FOR THROW>================
 [Statedef 811]
 type    = S
 movetype= I
@@ -74,7 +74,7 @@ type = DestroySelf
 trigger1 = !animtime && anim != [855, 856]
 trigger2 = parent, stateno != [810, 855]
 
-;<N.D.L. Helper>=
+;========================<N.D.L. Helper>=============================
 [StateDef 1050]
 type = S
 physics = S
@@ -83,7 +83,7 @@ anim = 1050
 velset = 0,0
 sprPriority = 2
 
-[State 1050, AssertSpecial]
+[State 1060, AssertSpecial]
 type = AssertSpecial
 triggerall = numhelper(197) > 0
 trigger1 = helper(197), time <= 185
@@ -93,24 +93,35 @@ flag = invisible
 ignorehitpause = 1
 persistent = 1
 
-[State 1050]
+[State 1060, ChangeAnim]
+type = ChangeAnim
+trigger1 = !time
+trigger1 = prevstateno != 1060
+value = 1050
+
+[State 1060]
 type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 
-[State 1050, HitBy]
+[State 1060, HitBy]
 type = HitBy
 trigger1 = 1
 value = SCA,NP, SP, HP
 time = 1
 ignorehitpause = 1
 
-[State 1050, HitOverride]
+[State 1060, HitOverride]
 type = HitOverride
 trigger1 = 1
 attr = SCA, AA, AP
-stateno = 1070
+stateno = ifelse(var(2) < 2, 1060, 1070)
 time = -1
+
+[State 1060, hitvar]
+type = varadd
+trigger1 = !time
+var(2) = 1
 
 [State 1050, Hit]
 type=hitdef
@@ -144,48 +155,37 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 fall.recovertime = 120
-hitsound = S2,2
-guardsound = S3,0
-sparkno = -1
-guard.sparkno = -1
-sparkxy = -10, 0
+hitsound = -1 + 0*(var(31):=5)
+guardsound = -1 + 0*(var(32):=0)
+sparkno = -1 + 0*(var(33):=8012)
+guard.sparkno = -1 + 0*(var(34):=8000)
+sparkxy = -10 + 0*(var(35):=211), var(36):=-65
 palfx.time = 12*parent, var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
 
-[State 0, Helper]
-type = Helper
-trigger1 = movehit && numtarget
-trigger1 = (target, movetype = H) && !(target, time)
-helpertype = normal ;player
-name = "hitsparks"
-ID = 8013
-stateno = 8013
-pos = ifelse((Abs(P2bodydist X)-10)<20,10,0), -40
-postype = p1    ;p2,front,back,left,right
-facing = 1
-keyctrl = 0
-ownpal = 1
-supermovetime = 0
-pausemovetime = 0
-
-[State 0, Helper]
-type = Helper
-trigger1 = moveguarded && numtarget
-trigger1 = (target, movetype = H) && !(target, time)
-helpertype = normal ;player
-name = "hitsparks"
+[State -2, Sparks]
+type = helper
+triggerall = StateNo != 1301 && StateNo != 1331
+triggerall = movecontact = 1 && var(30) = hitpausetime
+trigger1 = movehit = 1 && numenemy
+trigger1 = var(33) = 8010 || var(33) = 8011 || var(33) = 8012 || var(33) = 8013 || var(33) = 8014 || var(33) = 8001
+trigger2 = moveguarded = 1 && numenemy
+trigger2 = var(34) = 8000 || var(34) = 8001
+trigger3 = MoveHit = 1 && NumEnemy
+trigger3 = var(33) = 8015 || var(33) = 8016 || var(33) = 8017
+stateno = ifelse(moveguarded, var(34), var(33))
 ID = 8000
-stateno = 8000
-pos = ifelse((Abs(P2bodydist X)-10)<20,10,0), -40
-postype = p1    ;p2,front,back,left,right
-facing = 1
-keyctrl = 0
+name = "Spark"
+postype = p1
+pos = ifElse(P2Dist x < 0, 0, ifElse(P2Dist x < var(35), ceil(P2Dist x), var(35))), var(36)
+facing = -1
 ownpal = 1
-supermovetime = 0
-pausemovetime = 0
+pausemovetime = 65535
+supermovetime = 65535
+ignorehitpause = 1
 
-[State 0, StateTypeSet]
+[State 1060, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 13
 statetype = S
@@ -193,13 +193,18 @@ movetype = I
 physics = S
 ignorehitpause = 1
 
-[State 0, DestroySelf]
+;[State 1060, End]
+;type = changestate
+;trigger1 = movecontact
+;value = ifelse(var(2) < 2, 1060, 1070)
+
+[State 1060, DestroySelf]
 type = DestroySelf
 trigger1 = !animtime
 trigger2 = parent, animelemtime(6) < 0
 trigger3 = parent, movetype = H
 
-;<EX N.D.L. Helper>=
+;========================<EX N.D.L. Helper>=============================
 [StateDef 1060]
 type = S
 physics = S
@@ -374,7 +379,7 @@ trigger2 = parent, animelemtime(6) < 0
 trigger3 = parent, movetype = H
 
 
-;<X.N.D.L. Helper>=
+;========================<X.N.D.L. Helper>=============================
 [StateDef 3005]
 type = S
 physics = N
@@ -622,7 +627,7 @@ trigger1 = time >= 34
 trigger2 = var(2) >= var(3)
 
 
-;<SPARKS>=
+;========================<SPARKS>=============================
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -2003,7 +2008,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;< SUPERPAUSE FX >=
+;========================< SUPERPAUSE FX >=============================
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A

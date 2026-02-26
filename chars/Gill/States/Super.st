@@ -1,4 +1,4 @@
-;<METEOR STRIKE>=
+;========================<METEOR STRIKE>=============================
 [StateDef 3000]
 type = S
 physics = S
@@ -149,10 +149,10 @@ size.yscale = const(size.yscale)
 
 [State 3000, PyroMeteor : Far Range]
 type = Helper
-trigger1 = Time=50
-trigger2 = Time=70
-trigger3 = Time=90
-trigger4 = Time=110
+trigger1 = AnimElem = 23
+trigger2 = AnimElem = 31
+trigger3 = AnimElem = 39
+trigger4 = AnimElem = 47
 helperType = Normal
 stateNo = 3005
 ID = 3005
@@ -165,10 +165,10 @@ ownPal = 1
 
 [State 3000, CryoMeteor : Far Range]
 type = Helper
-trigger1 = Time=55
-trigger2 = Time=75
-trigger3 = Time=95
-trigger4 = Time=115
+trigger1 = AnimElem = 25
+trigger2 = AnimElem = 33
+trigger3 = AnimElem = 41
+trigger4 = AnimElem = 49
 helperType = Normal
 stateNo = 3015
 ID = 3015
@@ -181,10 +181,10 @@ ownPal = 1
 
 [State 3000, PyroMeteor : Close Range]
 type = Helper
-trigger1 = Time=60
-trigger2 = Time=80
-trigger3 = Time=100
-trigger4 = Time=120
+trigger1 = AnimElem = 27
+trigger2 = AnimElem = 35
+trigger3 = AnimElem = 43
+trigger4 = AnimElem = 51
 helperType = Normal
 stateNo = 3005
 ID = 3005
@@ -197,10 +197,10 @@ ownPal = 1
 
 [State 3000, CryoMeteor : Close Range]
 type = Helper
-trigger1 = Time=65
-trigger2 = Time=85
-trigger3 = Time=105
-trigger4 = Time=125
+trigger1 = AnimElem = 29
+trigger2 = AnimElem = 37
+trigger3 = AnimElem = 45
+trigger4 = AnimElem = 53
 helperType = Normal
 stateNo = 3015
 ID = 3015
@@ -222,7 +222,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<(MAX) METEOR STRIKE>=
+;========================<(MAX) METEOR STRIKE>=============================
 [StateDef 3050]
 type = S
 physics = S
@@ -383,11 +383,11 @@ size.yscale = const(size.yscale)
 
 [State 3050, PyroMeteor : Far Range]
 type = Helper
-trigger1 = Time=50
-trigger2 = Time=66
-trigger3 = Time=82
-trigger4 = Time=98
-trigger5 = Time=114
+trigger1 = AnimElem = 21
+trigger2 = AnimElem = 27
+trigger3 = AnimElem = 33
+trigger4 = AnimElem = 39
+trigger5 = AnimElem = 45
 ;trigger1 = AnimElem = 21
 ;trigger2 = AnimElem = 25
 ;trigger3 = AnimElem = 29
@@ -410,11 +410,11 @@ ownPal = 1
 
 [State 3050, CryoMeteor : Far Range]
 type = Helper
-trigger1 = Time=54
-trigger2 = Time=70
-trigger3 = Time=86
-trigger4 = Time=102
-trigger5 = Time=118
+trigger1 = AnimElem = 22
+trigger2 = AnimElem = 28
+trigger3 = AnimElem = 34
+trigger4 = AnimElem = 40
+trigger5 = AnimElem = 46
 ;trigger1 = AnimElem = 22
 ;trigger2 = AnimElem = 26
 ;trigger3 = AnimElem = 30
@@ -437,11 +437,11 @@ ownPal = 1
 
 [State 3050, PyroMeteor : Close Range]
 type = Helper
-trigger1 = Time=58
-trigger2 = Time=74
-trigger3 = Time=90
-trigger4 = Time=106
-trigger5 = Time=122
+trigger1 = AnimElem = 23
+trigger2 = AnimElem = 29
+trigger3 = AnimElem = 35
+trigger4 = AnimElem = 41
+trigger5 = AnimElem = 47
 ;trigger1 = AnimElem = 23
 ;trigger2 = AnimElem = 27
 ;trigger3 = AnimElem = 31
@@ -464,11 +464,11 @@ ownPal = 1
 
 [State 3050, CryoMeteor : Close Range]
 type = Helper
-trigger1 = Time=62
-trigger2 = Time=78
-trigger3 = Time=94
-trigger4 = Time=110
-trigger5 = Time=126
+trigger1 = AnimElem = 24
+trigger2 = AnimElem = 30
+trigger3 = AnimElem = 36
+trigger4 = AnimElem = 42
+trigger5 = AnimElem = 48
 ;trigger1 = AnimElem = 24
 ;trigger2 = AnimElem = 28
 ;trigger3 = AnimElem = 32
@@ -500,7 +500,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<JUPITER'S DEAL>=
+;========================<JUPITER'S DEAL>=============================
 [StateDef 3100]
 type = S
 physics = S
@@ -602,32 +602,11 @@ value = 0
 
 [State 3100, HitDef: Grapple]
 type = HitDef
-triggerall = !var(21) || !var(22)
 trigger1 = AnimElem = 2
 trigger1 = !var(38)
 ID = 3100
 attr = S, NT
-hitFlag = M
-priority = 1, Miss
-getPower = 0,0
-givePower = 0,0
-sparkNo = -1 +0 * (var(33) := 0)
-guard.sparkNo = -1 +0 * (var(34) := 8000)
-sparkXY = -10 + 0 * (var(35) := 40), var(36) := -50
-hitSound = -1 +0 * (var(31) := 800)
-guardSound = -1 +0 * (var(32) := 0)
-fall = 1
-fall.recover = 0
-numHits = 0
-p1StateNo = 3101
-[State 3100, HitDef: Grapple]
-type = HitDef
-triggerall = var(21) || var(22)
-trigger1 = AnimElem = 2
-trigger1 = !var(38)
-ID = 3100
-attr = S, NT
-hitFlag = MAF
+hitFlag = M-
 priority = 1, Miss
 getPower = 0,0
 givePower = 0,0
@@ -824,7 +803,7 @@ pos = ceil(58*const(size.xscale)), ceil(-134*const(size.yscale))
 [State 3102, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && AnimElem = 3
-value = floor(ifElse(28 * fvar(11) < 7, -7, -28 * fvar(11)))
+value = floor(ifElse(24 * fvar(11) < 7, -7, -24 * fvar(11)))
 kill = 0
 
 [State 3102, EnvShake]
@@ -875,15 +854,8 @@ channel = 0
 [State 3102, PlaySnd]
 type = PlaySnd
 trigger1 = AnimElem = 3
-value = 2,6
+value = 2,4
 channel = 1
-
-[State 820, EnvShake]
-type = EnvShake
-trigger1 = NumTarget && AnimElemTime(3) = 0
-time = 14
-freq = 120
-ampl = 4
 
 [State 3102, Hit Spark]
 type = Helper
@@ -1010,7 +982,7 @@ ignoreHitPause = 1
 [State 3103, PlaySnd]
 type = PlaySnd
 trigger1 = AnimElem = 5
-value = 2,2
+value = 2,5
 channel = 1
 
 [State 3103, HitAdd]
@@ -1038,7 +1010,7 @@ ignoreHitPause = 1
 [State 3102, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && AnimElem = 5
-value = floor(ifElse(42 * fvar(11) < 7, -7, -42 * fvar(11)))
+value = floor(ifElse(35 * fvar(11) < 7, -7, -35 * fvar(11)))
 kill = 1
 
 [State 3103, TargetPowerAdd]
@@ -1080,7 +1052,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<DESTROY CLAW (ARM)>==
+;===========<DESTROY CLAW (ARM)>==========
 [Statedef 3104]
 type = S
 anim = 814
@@ -1097,7 +1069,7 @@ type = DestroySelf
 trigger1 = Root, AnimElemTime(5) = 0
 trigger2 = !Root, StateNo = 3101
 
-;<DESTROY CLAW (TARGET)>==
+;===========<DESTROY CLAW (TARGET)>==========
 [StateDef 3105]
 type = A
 physics = N
@@ -1191,13 +1163,13 @@ x = 0
 [State 3107, VelSet]
 type = VelSet
 trigger1 = Time = 8
-x = 4
-y = -6
+x = 2
+y = -11
 
 [State 3107, VelMul]
 type = VelAdd
 trigger1 = AnimElemTime (1) >= 8
-y = .43
+y = .5
 
 [State 3107, ScreenBound]
 type = ScreenBound
@@ -1222,7 +1194,7 @@ ctrl = 0
 [State 3108, VelAdd]
 type = VelAdd
 trigger1 = 1
-y = .43
+y = .50
 
 [State 3108, ChangeAnim2]
 type = ChangeAnim2
@@ -1263,7 +1235,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100
 
-;<JUPITER'S DEAL>=
+;========================<JUPITER'S DEAL>=============================
 [StateDef 3150]
 type = S
 physics = S
@@ -1355,32 +1327,11 @@ value = 0
 
 [State 3100, HitDef: Grapple]
 type = HitDef
-triggerall = !var(21) || !var(22)
 trigger1 = AnimElem = 2
 trigger1 = !var(38)
 ID = 3150
 attr = S, NT
-hitFlag = M
-priority = 1, Miss
-getPower = 0,0
-givePower = 0,0
-sparkNo = -1 +0 * (var(33) := 0)
-guard.sparkNo = -1 +0 * (var(34) := 8000)
-sparkXY = -10 + 0 * (var(35) := 40), var(36) := -50
-hitSound = -1 +0 * (var(31) := 800)
-guardSound = -1 +0 * (var(32) := 0)
-fall = 1
-fall.recover = 0
-numHits = 0
-p1StateNo = 3151
-[State 3100, HitDef: Grapple]
-type = HitDef
-triggerall = var(21) || var(22)
-trigger1 = AnimElem = 2
-trigger1 = !var(38)
-ID = 3150
-attr = S, NT
-hitFlag = MAF
+hitFlag = M-
 priority = 1, Miss
 getPower = 0,0
 givePower = 0,0
@@ -1624,7 +1575,7 @@ pos = ceil(58*const(size.xscale)), ceil(-134*const(size.yscale))
 [State 3152, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && AnimElem = 3
-value = floor(ifElse(21 * fvar(11) < 7, -7, -21 * fvar(11)))
+value = floor(ifElse(18 * fvar(11) < 7, -7, -18 * fvar(11)))
 kill = 0
 
 [State 3152, TargetPowerAdd]
@@ -1668,15 +1619,8 @@ channel = 0
 [State 3152, PlaySnd]
 type = PlaySnd
 trigger1 = AnimElem = 3
-value = 2,6
+value = 2,4
 channel = 1
-
-[State 820, EnvShake]
-type = EnvShake
-trigger1 = NumTarget && AnimElemTime(3) = 0
-time = 14
-freq = 120
-ampl = 4
 
 [State 3152, Hit Spark]
 type = Helper
@@ -1803,7 +1747,7 @@ ignoreHitPause = 1
 [State 3153, PlaySnd]
 type = PlaySnd
 trigger1 = AnimElem = 5
-value = 2,2
+value = 2,5
 channel = 1
 
 [State 3153, HitAdd]
@@ -1831,7 +1775,7 @@ ignoreHitPause = 1
 [State 3153, Damage]
 type = TargetLifeAdd
 trigger1 = NumTarget && AnimElem = 5
-value = floor(ifElse(42 * fvar(11) < 7, -7, -42 * fvar(11)))
+value = floor(ifElse(35 * fvar(11) < 7, -7, -35 * fvar(11)))
 kill = 1
 
 [State 3153, TargetPowerAdd]
@@ -1873,7 +1817,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<SERAPHIC WING>=
+;========================<SERAPHIC WING>=============================
 [StateDef 3300]
 type = S
 physics = S
@@ -1920,7 +1864,7 @@ value = 0
 
 [State 3300, PowerAdd]
 type = PowerAdd
-trigger1 = AnimElem = 10
+trigger1 = AnimElem = 14
 value = -3000
 
 [State 3300, Super Pause FX]
@@ -2136,7 +2080,7 @@ trigger1 = AnimElemTime(39) >= 0 && WinKo
 value = 185
 Ctrl = 1 - Win
 
-;<SERAPHIC WING LANDING>=
+;========================<SERAPHIC WING LANDING>=============================
 [Statedef 3305]
 type = S
 physics = S
@@ -2174,7 +2118,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<RESURRECTION>=
+;========================<RESURRECTION>=============================
 [StateDef 3400]
 type = S
 physics = S
@@ -2399,7 +2343,7 @@ trigger1 = !AnimTime
 value = 1205
 ctrl = 1
 
-;<HADES ORBIT>=
+;========================<HADES ORBIT>=============================
 [StateDef 3500]
 type = S
 physics = S
@@ -2570,7 +2514,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<HADES COMET>=
+;========================<HADES COMET>=============================
 [StateDef 3550]
 type = S
 physics = S
@@ -2654,17 +2598,6 @@ unHittable = 1
 anim = -1
 sound = s8500,0
 darken = 0
-
-[State 3555, Kinises Startup Sound]
-type = PlaySnd
-TriggerAll = NumHelper(3505)
-trigger1 = AnimElem = 4
-value = 1000, 10
-[State 3565, Kinises Startup Sound]
-type = PlaySnd
-TriggerAll = NumHelper(3515)
-trigger1 = AnimElem = 4
-value = 1000, 11
 
 [State 3550, Hades Orbit: Flame Orb]
 type = Helper

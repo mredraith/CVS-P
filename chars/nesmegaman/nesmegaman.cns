@@ -4,13 +4,13 @@
 ; constname = value 
 
 [Data]
-life = 250 ;Amount of life to start with
+life = 1000
 power = 3000
-attack = 100 ;100% attack power (more is stronger)
-defence = 100 ;100% defensive power (more is stronger)
-fall.defence_up = 50 ;Def goes up by 50% everytime player is hit on ground
+attack = 100
+defence = 100
+fall.defence_up = 50
 lieDown.time = 15
-airjuggle = 15 ;Can do 15 points of juggling
+airjuggle = 15
 ;sparkno = 1 ;Default spark number
 guard.sparkno = 0,20 ;Default guard spark number
 KO.echo = 1 ;1 to enable echo on KO

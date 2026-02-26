@@ -40,12 +40,12 @@ value = var(46)
 type = VarSet
 trigger1 = StageVar(info.name) = "Hidden Shrine"
 trigger2 = StageVar(info.name) = "Gill-Eclipse"
-var(2) = 0 ;CHANGE THIS LINE
+var(2) = 1 ;CHANGE THIS LINE
 
 [State 5900, Allow PowerAdd Upon Resurrecting]
 type = VarSet
 trigger1 = 1
-var(47) = 0 ;CHANGE THIS LINE
+var(47) = 1 ;CHANGE THIS LINE
 
 [State 5900, Resurrect More Than Once];Of Course, this is a variable HIGHLY dependent on the one above.
 type = VarSet                         ;If var(47) is equal to 0, then this option is nullified.

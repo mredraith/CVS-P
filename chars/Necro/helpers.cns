@@ -244,116 +244,102 @@ trigger1 = time >= 40
 
 
 ;--- --Level 3 -----
-[Statedef 8520]
+[StateDef 8520]
 type = A
-velset = 0, 0
+velset = 0,0
 anim = 8520
-sprpriority = 5
+sprPriority = 5
 
-[State 0, EnvColor]
-type = BGPalFX
-trigger1 = time <= 45
-mul=226,60,60
-time = 2
-invertall = 0
-ignorehitpause = 1
-color=0
-
-[State -2,AssertSpecial]
+[State 8520, Assert: NoShadow]
 type = AssertSpecial
 trigger1 = 1
 flag = NoShadow
-;flag2=nobg
-flag2=nobardisplay
+ignoreHitPause = 1
 
-[State 5035, 1]
-type = Trans
-trigger1 = 1
-trans = add
-
-[State -2, 1]
-type = PalFX
-trigger1 = time = 0
-time = 1
-add = 0,0,0
+[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
+type = AssertSpecial
+trigger1 = Time < 40
+flag = NoBarDisplay
+flag2 = NoBG
+flag3 = NoFG
 
 [State 8520, Rotate]
-type = angleset
-trigger1 = !time
-value = 6 * (random % 60)
+type = AngleSet
+trigger1 = !Time
+value = 6 * (Random % 60)
 
 [State 8520, Rotate]
-type = angleadd
+type = AngleAdd
 trigger1 = 1
 value = -6
 
 [State 8520, Scale]
-type = angledraw
-trigger1 = time < 16
-scale = (0.03125 * time), (0.03125 * time)
+type = AngleDraw
+trigger1 = Time < 16
+scale = (0.03125 * Time), (0.03125 * Time)
 ignoreHitPause = 1
 
 [State 8520, Scale]
-type = angledraw
-trigger1 = time >= 16
+type = AngleDraw
+trigger1 = Time >= 16
 scale = 0.5, 0.5
 ignoreHitPause = 1
 
-[State 8520, Trans]
-type = trans
+[State 8520, Transparency]
+type = Trans
 trigger1 = 1
-trans = addalpha
-alpha = 256, 256
+trans = AddAlpha
+alpha = 256,256
 ignoreHitPause = 1
 
-[State 8520, Portrait]
-type = explod
-trigger1 = !time
+[State 8520, Portrait 1]
+type = Explod
+trigger1 = !Time
 anim = 8525
 ID = 20
-sprpriority = -16
-postype = back
-removetime = 40
-supermovetime = -1
+sprPriority = -16
+posType = Back
+removeTime = 40
+superMoveTime = -1
 
-[State 8520, Portrait]
-type = explod
-trigger1 = !time
+[State 8520, Portrait 2]
+type = Explod
+trigger1 = !Time
 anim = 8525
 ID = 21
-sprpriority = -16
-postype = back
-removetime = 40
-supermovetime = -1
+sprPriority = -16
+posType = Back
+removeTime = 40
+superMoveTime = -1
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(20) && time < 16
+[State 8520, Scale Portrait 1a]
+type = ModifyExplod
+trigger1 = NumExplod(20) && Time < 16
 ID = 20
-postype = back
-pos = 160, floor((1.3333333 * gameheight / gamewidth) * 121)
-scale = 1 - (0.03125 * time), 1 - (0.03125 * time)
-trans = addalpha
-alpha = (8 * time), 256
+posType = Back
+pos = 160, floor((1.3333333 * GameHeight / GameWidth) * 121)
+scale = 1 - (0.03125 * Time), 1 - (0.03125 * Time)
+trans = AddAlpha
+alpha = (8 * Time), 256
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(21) && time < 16
+[State 8520, Scale Portrait 2a]
+type = ModifyExplod
+trigger1 = NumExplod(21) && Time < 16
 ID = 21
-postype = back
-pos = 160, floor((1.3333333 * gameheight / gamewidth) * 121)
-scale = 2 - (0.09375 * time), 2 - (0.09375 * time)
-trans = addalpha
-alpha = (8 * time), 256
+posType = Back
+pos = 160, floor((1.3333333 * GameHeight / GameWidth) * 121)
+scale = 2 - (0.09375 * Time), 2 - (0.09375 * Time)
+trans = AddAlpha
+alpha = (8 * Time), 256
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(20) && (time = [16, 32])
+[State 8520, Scale Portrait 1b]
+type = ModifyExplod
+trigger1 = NumExplod(20) && (Time = [16,32])
 ID = 20
-postype = back
-pos = 160, floor((1.3333333 * gameheight / gamewidth) * 121)
+posType = Back
+pos = 160, floor((1.3333333 * GameHeight / GameWidth) * 121)
 scale = 0.5, 0.5
-trans = addalpha
+trans = AddAlpha
 alpha = 256, 256
 
 [State 8520, Scale Portrait 2b]
@@ -382,77 +368,77 @@ scale = 0.5, 0.5
 trans = AddAlpha
 alpha = 128 - 16 * (Time - 32), 256
 
-[State 8520, Lines]
+[State 8520, Lines Explod]
 type = explod
-trigger1 = time = 0 || time = 8 || time = 16 || time = 24
+trigger1 = Time = 0 || Time = 8 || Time = 16 || Time = 24
 anim = 8521
-ID = ifelse(time = 24, 4, ifelse(time = 16, 3, ifelse(time = 8, 2, 1)))
-sprpriority = 5
-postype = p1
-facing = ifelse(random < 500, -1, 1)
-vfacing = ifelse(random < 500, -1, 1)
-removetime = 16
-supermovetime = -1
+ID = ifElse(Time = 24, 4, ifElse(Time = 16, 3, ifElse(Time = 8, 2, 1)))
+sprPriority = 5
+posType = P1
+facing = ifElse(Random < 500, -1, 1)
+vFacing = ifElse(Random < 500, -1, 1)
+removeTime = 16
+superMoveTime = -1
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(1)
+[State 8520, Scale Lines Explod 1]
+type = ModifyExplod
+trigger1 = NumExplod(1)
 ID = 1
-scale = 1 -(0.0625 * time), 1 -(0.0625 * time)
-trans = addalpha
-alpha = ifelse(time < 4, 64 * time, 256), 256
+scale = 1 - (0.0625 * Time), 1 - (0.0625 * Time)
+trans = AddAlpha
+alpha = ifElse(Time < 4, 64 * Time, 256), 256
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(2)
+[State 8520, Scale Lines Explod 2]
+type = ModifyExplod
+trigger1 = NumExplod(2)
 ID = 2
-scale = 1 -(0.0625 * (time -8)), 1 -(0.0625 * (time -8))
-trans = addalpha
-alpha = ifelse((time -8) < 4, 64 * (time -8), 256), 256
+scale = 1-(0.0625 * (Time - 8)), 1 - (0.0625 * (Time - 8))
+trans = AddAlpha
+alpha = ifElse((Time - 8) < 4, 64 * (Time - 8), 256), 256
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(3)
+[State 8520, Scale Lines Explod 3]
+type = ModifyExplod
+trigger1 = NumExplod(3)
 ID = 3
-scale = 1 -(0.0625 * (time -16)), 1 -(0.0625 * (time -16))
-trans = addalpha
-alpha = ifelse((time -16) < 4, 64 * (time -16), 256), 256
+scale = 1 - (0.0625 * (Time - 16)), 1 - (0.0625 * (Time - 16))
+trans = AddAlpha
+alpha = ifElse((Time - 16) < 4, 64 * (Time - 16), 256), 256
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(4)
+[State 8520, Scale Lines Explod 4]
+type = ModifyExplod
+trigger1 = NumExplod(4)
 ID = 4
-scale = 1 -(0.0625 * (time -24)), 1 -(0.0625 * (time -24))
-trans = addalpha
-alpha = ifelse((time -24) < 4, 64 * (time -24), 256), 256
+scale = 1 - (0.0625 * (Time - 24)), 1 - (0.0625 * (Time - 24))
+trans = AddAlpha
+alpha = ifElse((Time - 24) < 4, 64 * (Time - 24), 256), 256
 
-[State 8520, Circle]
-type = explod
-trigger1 = time = 24
+[State 8520, Circle Explod]
+type = Explod
+trigger1 = Time = 24
 anim = 8522
 ID = 10
-sprpriority = 5
-postype = p1
-facing = ifelse(random < 500, -1, 1)
-vfacing = ifelse(random < 500, -1, 1)
-removetime = 32
-supermovetime = -1
+sprPriority = 5
+posType = P1
+facing = ifElse(Random < 500, -1 ,1)
+vFacing = ifElse(Random < 500, -1, 1)
+removeTime = 32
+superMoveTime = -1
 
-[State 8520, Scale]
-type = modifyexplod
-trigger1 = numexplod(10)
+[State 8520, Scale Circle Explod]
+type = ModifyExplod
+trigger1 = NumExplod(10)
 ID = 10
-scale = 2 -(0.125 * (time -24)), 2 -(0.125 * (time -24))
-trans = addalpha
-alpha = ifelse((time -24) < 4, 64 * (time -24), 256), 256
+scale = 2 - (0.125 * (Time - 24)), 2 - (0.125 * (Time - 24))
+trans = AddAlpha
+alpha = ifElse((Time - 24) < 4, 64 * (Time - 24), 256), 256
 
-[State 8520, Safety]
-type = removeexplod
-trigger1 = time >= 40
+[State 8520, Remove Explods]
+type = RemoveExplod
+trigger1 = Time >= 40
 
 [State 8520, End]
-type = destroyself
-trigger1 = time >= 40
+type = DestroySelf
+trigger1 = Time >= 40
 
 
 ;========================<SUPER FINISH>=============================

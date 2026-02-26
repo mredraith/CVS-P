@@ -5,9 +5,9 @@
 [Data]
 life = 1000
 power = 3000
-attack= 100
-defence= 100
-fall.defence_up= 50
+attack = 100
+defence = 100
+fall.defence_up = 50
 lieDown.time = 15
 airjuggle = 15
 sparkno= s8010
@@ -21,8 +21,8 @@ powermax = 5000
 [Size]
 ;SF4
 ;******************
-xscale= 0.699
-yscale= 0.799
+xscale= 0.9
+yscale= 1
 ;******************
 ground.back= 16
 ground.front= 16

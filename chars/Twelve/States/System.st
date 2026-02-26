@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;
-;<SYSTEM STATES>==
-;
+;==============================================================================================
+;=======================================<SYSTEM STATES>========================================
+;==============================================================================================
 
 ;---------------------------------------------------------------------------
 ;STANDING
@@ -46,7 +46,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;<CROUCHING>=
+;====================<CROUCHING>====================
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -373,13 +373,91 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
+; RUN_FWD
+[Statedef 100]
+type    = S
+physics = S
+anim = 100
+sprpriority = 1
+ctrl= 1
+
+[State 100,1]
+type = PlaySnd
+trigger1 = AnimElem = 4
+trigger2 = animelem = 8
+value =100,0
+channel = 12
+
+[State 105, Starting Step snd]
+type = PlaySnd
+trigger1 = !Time
+value = 102, 0
+channel = 5
+
+;[State 100,2]
+;type = Explod
+;trigger1 = Time = 0
+;anim = 6014	;F26
+;sprpriority = 4
+;postype = p1
+;pos = -5,0
+;bindtime = 1
+;pausemovetime = 16
+;removetime = -2
+;ignorehitpause = 1
+;scale = 0.3, 0.3
+;ownpal = 1
+
+[State 110, Dust Helper]
+type = Helper
+trigger1 = AnimElem = 1
+helperType = Normal
+stateNo = 8103
+ID = 8100
+name = "Dash Dust"
+posType = P1
+pauseMoveTime = 255
+superMoveTime = 255
+ownPal = 1
+
+[State 100,3]
+type = VelSet
+trigger1 = time > 0
+x = const(velocity.run.fwd.x)
+
+[State 100, 4] ;Prevent run from canceling into walk
+type = AssertSpecial
+trigger1 = 1
+flag = NoWalk
+
+[State 100, 5] ;Prevent from turning
+type = AssertSpecial
+trigger1 = 1
+flag = NoAutoTurn
+
+[State 100, 6]
+type = ChangeState
+trigger1 = command != "holdfwd"
+value = 101
+
+[State 100,7]				;when running press jump then jump
+type = ChangeState
+trigger1 = command = "holdup"
+value = 40
+
+[State 100,8]				;when running press down, then 102. if normal stand to crouch, no 102.
+type = ChangeState
+trigger1 = command =  "holddown"
+value = 101
+ctrl = 0
+
 
 ;DASH
-[Statedef 100]
+[Statedef 199]
 type = S
 physics = N
 movetype = I
-anim = 100
+anim = 199
 ctrl = 0
 sprpriority = 1
 
@@ -2433,173 +2511,6 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 
-;Intro(VS Necro)
-[Statedef 193]
-type =     S
-movetype = I
-physics =  S
-ctrl = 0
-velset = 0,0
-anim = 0
-
-[State 200]
-type = AssertSpecial
-trigger1 = 1
-flag = Intro
-
-[state -3]
-type = Helper
-trigger1 = !time&&!IsHelper
-id = 50000
-stateno = 192
-pos = -floor(72*const(size.xscale)),-floor(3*const(size.yscale))
-postype = p2
-ignorehitpause=1
-
-[state -3]
-type = Helper
-trigger1 = !time&&!IsHelper
-id = 50001
-stateno = 192
-pos = -floor(54*const(size.xscale)),floor(10*const(size.yscale))
-postype = p2
-ignorehitpause=1
-
-[state -3]
-type = Helper
-trigger1 = !time&&!IsHelper
-id = 50002
-stateno = 192
-pos = floor(38*const(size.xscale)),floor(10*const(size.yscale))
-postype = p2
-ignorehitpause=1
-
-[state -3]
-type = Helper
-trigger1 = !time&&!IsHelper
-id = 50003
-stateno = 192
-pos = floor(68*const(size.xscale)),-floor(3*const(size.yscale))
-postype = p2
-ignorehitpause=1
-
-[state -3]
-type = Helper
-trigger1 = !time&&!IsHelper
-id = 50004
-stateno = 192
-pos = floor(120*const(size.xscale)),floor(10*const(size.yscale))
-postype = p2
-ignorehitpause=1
-
-[state -3]
-type = Helper
-trigger1 = !time&&!IsHelper && name!="twelves"
-id = 50005
-stateno = 192
-pos = -floor(50*const(size.xscale)),-floor(2*const(size.yscale))
-postype = p1
-ignorehitpause=1
-
-[State 200]
-type = VarSet
-trigger1 = Time=0
-var(2) = 0
-
-[State 200]
-type = VarAdd
-trigger1 = Animtime=0
-var(2) = 1
-
-;before Round start(ƒ‰ƒEƒ“ƒhŠJŽn‘O‚Ì‰¹Šyíœ)
-[State -2]
-type = AssertSpecial
-trigger1 = roundsexisted<=0 && var(1)!=100
-flag = nobardisplay
-
-[State 200]
-type = ChangeState
-trigger1 = Animtime=0
-trigger2 = time=1 && teamside=1 && (P2name="twelve"||P4name="twelve")
-value = 0
-
-;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-;Intro(VS Necro Helper)
-[Statedef 193]
-type =     S
-movetype = I
-physics =  S
-ctrl = 0
-velset = 0,0
-anim = 0
-sprpriority = ifelse(IsHelper(50001)||IsHelper(50002)||IsHelper(50004),2,1)
-
-[State 200]
-type = AssertSpecial
-trigger1 = 1
-flag = Intro
-
-[State 200]
-type = ScreenBound
-trigger1 = 1
-value = 0
-movecamera = 0,0
-
-[State 200]
-type = NotHitBy
-trigger1 = 1
-value = SCA
-
-[State 200]
-type = Turn
-trigger1 = !time && P2dist X<0
-
-[State 200]
-type = ChangeAnim
-trigger1 = !time
-value = anim
-elem = ifelse(IsHelper(50000),5,ifelse(IsHelper(50001),4,ifelse(IsHelper(50002),3,ifelse(IsHelper(50003),2,ifelse(IsHelper(50004),1,0)))))
-
-[State 200]
-type = ChangeAnim
-trigger1 = Anim=0 && AnimElem=11 && time>60
-value = 192
-
-[State 105]
-type = StatetypeSet
-trigger1 = Anim=192 && AnimElem=4
-type = A
-physics = N
-
-[State 105]
-type = VelSet
-trigger1 = Anim=192 && AnimElem=4
-y = const(velocity.jump.y)
-
-[State 105]
-type = Gravity
-trigger1 = Anim=192 && AnimElemTime(4)>=1 && AnimElemTime(9)<0
-
-[State 105]
-type = VelSet
-trigger1 = Anim=192 && AnimElem=9
-y = 0
-
-[state 200]
-type = VelSet
-trigger1 = Anim=192 && AnimElem=11
-x = const(velocity.airjump.fwd.x)
-y = 2.0
-
-[State 105]
-type = VelAdd
-trigger1 = Anim=192 && AnimElemTime(11)>=1
-y = -.25
-
-[State 105]
-type = DestroySelf
-trigger1 = ISHelper && ScreenPos Y<-240
-
 ;---------------------------------------------------------------------------
 ; Taunt
 [Statedef 195]
@@ -2945,7 +2856,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;<OFF SCREEN STAND BY>==
+;============<OFF SCREEN STAND BY>=========
 ;Stand by
 [Statedef 7827]
 type=S
@@ -2975,7 +2886,7 @@ type=ChangeState
 trigger1=NumEnemy=2
 trigger1=Enemy(1),statetype=L || Enemy(1),movetype != H
 value=7828
-;<OFF SCREEN RUN IN>==
+;============<OFF SCREEN RUN IN>=========
 ;Off Screen Run In
 [Statedef 7828]
 type   =S
@@ -3020,7 +2931,7 @@ type=ChangeState
 trigger1= time>=20
 value=7829
 ctrl=0
-;<OFF SCREEN RUN STOP>==
+;============<OFF SCREEN RUN STOP>=========
 ;Off Screen Run Stop
 [Statedef 7829]
 type   =S
@@ -4207,9 +4118,9 @@ trigger1 = Pos Y >= 0
 value = 52 ;Jump land
 ctrl = 1
 
-;
-;Syn=
-;
+;==============================================================
+;========================================================Syn===
+;==============================================================
 ;DRAMATIC KO PAUSE
 [Statedef 9944]
 type = s
@@ -4242,9 +4153,9 @@ supermovetime = 9999999999
 pausemovetime = 9999999999
 persistent = 0
 ignorehitpause = 1
-;
-;Syn=
-;
+;==============================================================
+;=======================================================Syn====
+;==============================================================
 ;DRAMATIC KO PAUSE HELPER
 [Statedef 9955]
 type = s
@@ -4276,10 +4187,100 @@ persistent = 0
 type = DestroySelf
 trigger1 = time >= 28;<---make the time match the time in the pause code above
 
-;
-;< -2 STATES >=
-;
+;===========================================================================
+;===============================< -2 STATES >=================================
+;===========================================================================
 [Statedef -2]
+
+; ADICIONEI ====================================================================
+
+;For twelve ONLY ##21#
+[State -2, Var15 set]
+;set var(15) is 0 when the round is start
+type = VarSet
+trigger1 = RoundState < 2         	;<--�аѦ�data\triggers.txt��������
+v = 15
+value = 0
+
+[State -2, set var]
+type = VarSet
+trigger1 = var(15) < 0
+v = 15
+ignorehitpause = 0
+value = 0
+
+[State -2, set var]
+type = VarAdd
+trigger1 = var(15) > 0
+v = 15
+ignorehitpause = 0
+value = -1
+
+[State 0, Trans]
+type = Trans
+trigger1 = var(15) > 0
+trans = add
+alpha = 70,111
+ignorehitpause = 1
+
+[State -2, 0]
+type = AssertSpecial
+trigger1 = Var(15) > 80
+flag = Invisible
+ignorehitpause = 1
+[State -2, 0]
+type = AssertSpecial
+trigger1 = Var(15) = 75
+trigger2 = Var(15) = 70
+trigger3 = Var(15) = 65
+trigger4 = Var(15) = 60
+trigger5 = Var(15) = 55
+trigger6 = Var(15) = 50
+trigger7 = Var(15) = 46
+trigger8 = Var(15) = 42
+trigger9 = Var(15) = 38
+trigger10 = Var(15) = 34
+trigger11 = Var(15) = 30
+trigger12 = Var(15) = 27
+trigger13 = Var(15) = 24
+trigger14 = Var(15) = 21
+trigger15 = Var(15) = 18
+trigger16 = Var(15) = 15
+trigger17 = Var(15) = 13
+trigger18 = Var(15) = 11
+trigger19 = Var(15) = 9
+trigger20 = Var(15) = 7
+trigger21 = Var(15) = 5
+trigger22 = Var(15) = 3
+trigger23 = Var(15) = 1
+flag = Invisible
+ignorehitpause = 1
+
+[State -2, Var set2]
+type = VarAdd
+triggerall = stateno != 7779
+triggerall = p2stateno != [960,969]
+triggerall = var(44) > 0
+triggerall =p2stateno=[200,799]
+trigger1 = stateno = [5000,5099]
+trigger1 = prevstateno = [5000,5099]
+trigger1 = HitShakeOver = 0
+v = 44
+ignorehitpause = 0
+value = -15                 ;##21#
+
+[State -2, Var set]
+type = VarAdd
+triggerall = p2stateno = [1000, 1999]
+triggerall = stateno != 7779
+triggerall = p2stateno != [960,969]
+triggerall = var(44) > 0
+trigger1 = stateno = [5000,5099]
+trigger1 = prevstateno != [5000,5099]
+trigger1 = HitShakeOver = 0
+v = 44
+ignorehitpause = 0
+value = -15
 
 ;---------------------------------------------------------------------------
 ;Taunt
@@ -4808,9 +4809,9 @@ stateno = 9944
 supermovetime = 9999999999
 pausemovetime = 9999999999
 
-;
-;< -3 STATES >=
-;
+;===========================================================================
+;===============================< -3 STATES >=================================
+;===========================================================================
 [Statedef -3]
 
 [State -3, Gametime Var]
@@ -5226,12 +5227,26 @@ triggerall = winKO
 triggerall = roundstate = 3 && !numhelper(8600)
 trigger1 = MoveHit = 1 && (StateNo = [3000,4999])
 trigger1 = var(23) := stateno
-trigger2 = StateNo = 3000
+;trigger2 = StateNo = 3000
+;trigger2 = var(23) := 3000
+;trigger3 = StateNo = 3050
+;trigger3 = var(23) := 3050
+;trigger4 = StateNo = 3050
+;trigger4 = var(23) := 3050
+;trigger5 = StateNo = 3100
+;trigger5 = var(23) := 3100
+trigger2 = (StateNo = [3000,3099])
 trigger2 = var(23) := 3000
-trigger3 = StateNo = 3050
-trigger3 = var(23) := 3050
-trigger4 = StateNo = 3050
-trigger4 = var(23) := 3050
+trigger3 = (StateNo = [3100,3199])
+trigger3 = var(23) := 3100
+trigger4 = (StateNo = [3200,3299])
+trigger4 = var(23) := 3200
+trigger5 = (StateNo = [3300,3399])
+trigger5 = var(23) := 3300
+trigger6 = StateNo = [3400,3499]
+trigger6 = var(23) := 3400
+trigger7 = (StateNo = [3500,3599])
+trigger7 = var(23) := 3500
 stateno = 8600
 ID = 8600
 name = "Super Finish"
@@ -5241,3 +5256,34 @@ ownpal = 1
 pausemovetime = 255
 supermovetime = 255
 ignorehitpause = 1
+
+;[State -3, Super Finish]
+;type = Helper
+;triggerAll = WinKO
+;triggerAll = RoundState = 3 && !NumHelper(8600)
+;trigger1 = MoveHit = 1 && (StateNo = [3000,4999])
+;trigger1 = var(23) := StateNo
+;trigger2 = (StateNo = [3000,3099])
+;trigger2 = var(23) := 3000
+;trigger3 = (StateNo = [3100,3199])
+;trigger3 = var(23) := 3100
+;trigger4 = (StateNo = [3200,3299])
+;trigger4 = var(23) := 3200
+;trigger5 = (StateNo = [3300,3399])
+;trigger5 = var(23) := 3300
+;trigger6 = StateNo = [3400,3499]
+;trigger6 = var(23) := 3400
+;trigger7 = (StateNo = [3500,3599])
+;trigger7 = var(23) := 3500
+;helperType = Normal
+;stateNo = 8605
+;ID = 8600
+;name = "Super Finish"
+;posType = left
+;pos = 160,-120
+;ownPal = 1
+;size.xscale =1.0
+;size.yscale =1.0
+;pauseMoveTime = 255
+;superMoveTime = 255
+;ignoreHitPause = 1

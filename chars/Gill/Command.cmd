@@ -17,7 +17,7 @@ s = s
 
 [Defaults]
 command.time = 15
-command.buffer.time = 4
+command.buffer.time = 1
 
 ;====================<SINGLE BUTTON>====================
 
@@ -414,32 +414,32 @@ time = 16
 
 [Command]
 name = "CyberLariat"
-command = ~D, DF, F, a
+command = ~F, D, DF, x
 time = 16
 
 [Command]
 name = "CyberLariat"
-command = ~D, DF, F, b
+command = ~F, D, DF, y
 time = 16
 
 [Command]
 name = "CyberLariat"
-command = ~D, DF, F, c
+command = ~F, D, DF, z
 time = 16
 
 [Command]
 name = "CyberLariat"
-command = ~D, DF, F, ~a
+command = ~F, D, DF, ~x
 time = 16
 
 [Command]
 name = "CyberLariat"
-command = ~D, DF, F, ~b
+command = ~F, D, DF, ~y
 time = 16
 
 [Command]
 name = "CyberLariat"
-command = ~D, DF, F, ~c
+command = ~F, D, DF, ~z
 time = 16
 
 
@@ -625,7 +625,6 @@ time = 1
 ;==============================================================================================
 [StateDef -1]
 
-
 [State -1, Tick Fix]
 type = CtrlSet
 triggerAll = !ctrl
@@ -655,7 +654,7 @@ triggerAll = command = "HadesOrbit"
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = power >= 1000 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(7)
+trigger2 = var(7) || var(8)
 
 [State -1, Hades Orbit]
 type = ChangeState
@@ -666,7 +665,7 @@ triggerAll = command = "HadesOrbit"
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = power >= 1000 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(7)
+trigger2 = var(7) || var(8)
 
 [State -1, MAX Jupiter's Deal]
 type = ChangeState
@@ -676,7 +675,7 @@ triggerAll = command = "MAXJupiter'sDeal"
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = power >= 2000 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(7) || var(8)
+trigger2 = var(7)
 
 [State -1, Jupiter's Deal]
 type = ChangeState
@@ -801,7 +800,6 @@ type = ChangeState
 value = 730
 triggerAll = !AILevel
 TriggerAll = !NumHelper(3505) || !NumHelper(3515)
-triggerall = ifelse(var(47), 1, !var(45))
 trigger1 = command = "holdb" && command = "holdy"
 trigger1 = RoundState = 2 && StateType != A
 trigger1 = power < const(data.power) && power < PowerMax && !var(20)
@@ -1007,7 +1005,7 @@ trigger1 = ctrl
 [State -1, Fall Recovery (Air)]
 type = ChangeState
 value = 5210
-TriggerAll = var(45) != 1
+TriggerAll = !var(45)
 trigger1 = AILevel && NumEnemy
 trigger1 = RoundState = 2 && Alive
 trigger1 = StateNo = 5050 && CanRecover
@@ -1017,7 +1015,7 @@ trigger1 = Random < (25 * (AILevel ** 2 / 64.0))
 [State -1, Fall Recovery (Ground)]
 type = ChangeState
 value = 5200
-TriggerAll = var(45) != 1
+TriggerAll = !var(45)
 trigger1 = AILevel && NumEnemy
 trigger1 = RoundState = 2 && Alive
 trigger1 = StateNo = 5050 && GetHitVar(fall.recover)
@@ -1094,7 +1092,7 @@ trigger1 = (P2BodyDist x = [0,50]) && (Life < 0.5 * LifeMax)
 type = ChangeState
 value = 730
 triggerAll = AILevel && NumEnemy
-triggerAll = var(45) != 2
+triggerAll = !var(45)
 trigger1 = RoundState = 2 && StateType != A
 trigger1 = Power < const(data.power) && !var(20)
 trigger1 = ctrl && Power < const(data.power) && Power < PowerMax && !var(20)
@@ -1373,13 +1371,12 @@ triggerAll = AILevel && NumEnemy
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = !var(39)
 triggerAll = !var(16) && (var(15) < 1 || var(20))
-triggerAll = P2BodyDist x >= 55 && P2Dist y >= -120 && EnemyNear, vel y >= 0
+triggerAll = !Numhelper(1005)
+triggerAll = (p2bodydist x >=50)&&(p2bodydist y=[-80,5]) && EnemyNear, vel y >= 0
 triggerAll = P2StateType != A || EnemyNear, vel x < 0
-trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (150 * (AILevel ** 2 / 64.0))
+trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (50 * (AILevel ** 2 / 64.0))
 trigger2 = (ctrl || StateNo = 52 || (StateNo = [100,101]))
 trigger2 = EnemyNear, StateNo = 195 && Random < (50 * (AILevel ** 2 / 64.0))
-trigger3 = var(6) && MoveHit && Random < (100 * (AILevel ** 2 / 64.0))
-trigger3 = EnemyNear, GetHitVar(HitTime) >= 6
 
 [State -1, Cyber Lariat]
 type = ChangeState
@@ -1389,12 +1386,7 @@ triggerAll = RoundState = 2 && StateType != A
 triggerAll = !var(16) && (var(15) < 1 || var(20))
 triggerAll = (P2BodyDist x = [0,115]) && P2StateType != L
 triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
-trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101]))
-trigger1 = P2BodyDist x >= 25 && Random < (50 * (AILevel ** 2 / 64.0))
-trigger2 = var(6) && MoveHit && Random < (100 * (AILevel ** 2 / 64.0))
-trigger2 = EnemyNear, GetHitVar(HitTime) >= 6
-trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
-trigger4 = StateNo = 1205 && !AnimTime && Random < (250 * (AIlevel ** 2 / 64.0))
+trigger1 = StateNo = 1205 && AnimElemTime(1)>= 0 && Random < (250 * (AIlevel ** 2 / 64.0))
 
 [State -1, Psycho HeadButt]
 type = ChangeState
@@ -1405,62 +1397,35 @@ triggerAll = !var(16) && (var(15) < 1 || var(20))
 triggerAll = (P2BodyDist x = [0,70]) && P2StateType != L
 triggerAll = (EnemyNear, const(size.head.pos.y) <= -40) || (EnemyNear, StateType = A)
 trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (150 * (AILevel ** 2 / 64.0))
-trigger2 = var(6) && MoveHit && Random < (100 * (AILevel ** 2 / 64.0))
-trigger2 = EnemyNear, GetHitVar(HitTime) >= 6
-trigger3 = (StateNo = 5120 || StateNo = 5201) && !AnimTime && Random < (50 * (AILevel ** 2 / 64.0))
+trigger3 = StateNo = 420 && AnimElemTime(4)>= 1 && MoveContact && Random < (200 * (AIlevel ** 2 / 64.0))
+trigger4 = StateNo = 1205 && PrevStateNo = 1250 && AnimElemTime(1)>= 0 && Random < (333 * (AIlevel ** 2 / 64.0))
+trigger5 = StateNo = 2900 && AnimElemTime(4)>= 1 && MoveContact && Random < (333 * (AIlevel ** 2 / 64.0))
 
-[State -1, Moonsault Knee Drop]
+[State -1, Hades Orbit]
 type = ChangeState
-value = 1300
-triggerAll = AILevel && NumEnemy
-triggerAll = RoundState = 2 && StateType != A
-triggerAll = !var(16) && (var(15) < 1 || var(20))
-triggerAll = P2BodyDist x >= 65 && P2Dist y >= -120 && EnemyNear, vel y >= 0
-triggerAll = P2StateType != A || EnemyNear, vel x < 0
-trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (50 * (AILevel ** 2 / 64.0))
-trigger2 = (ctrl || StateNo = 52 || (StateNo = [100,101]))
-trigger2 = EnemyNear, StateNo = 195 && Random < (150 * (AILevel ** 2 / 64.0))
+value = 3500
+triggerall=AILevel && numenemy && RoundState=2 && StateType != A && !Numhelper(3505) && !Numhelper(3515) &&var(20)<=60 && power >= 1000 && random < (250 * (AIlevel ** 2 / 64.0))
+triggerall=(enemynear,statetype != L)&&(enemynear,stateno!=[5100,5220])&&(enemynear,stateno!=[120,155])
+triggerall=(p2bodydist x =[70,120])&&(p2bodydist y=[-110,5])&&(enemynear,statetype!=C)
+triggerall=p2movetype != A && life > 500
+trigger1=ctrl || StateNo=40 || StateNo=52 || (StateNo=[100,101])
+trigger2=var(6)&&movehit&&random<100
 
-[State -1, (MAX) Meteor Strike]
-type = ChangeState
-value = 3000 + 50 * (Power >= 2000)
-triggerAll = AILevel && NumEnemy
-triggerAll = RoundState = 2 && StateType != A
-triggerAll = Power >= 1000 && var(20) <= 60
-triggerAll = !var(39)
-triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
-triggerAll = (Enemynear, StateNo != [120, 155]) || EnemyNear, StateType = A
-triggerAll = EnemyNear, StateType != L
-triggerAll = P2BodyDist x >= 155
-triggerall = (life >= 500) || var(45)=2
-trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
-trigger2 = var(7) && MoveHit && Random < (50 * (AIlevel ** 2 / 64.0))
-
-[State -1, (MAX) Jupiter's Deal]
-type = ChangeState
-value = 3100 + 50 * (Power >= 2000)
-triggerAll = AILevel && NumEnemy
-triggerAll = RoundState = 2 && StateType != A && !NumProjID(131035)
-triggerAll = Power >= 1000 && var(20) <= 60
-triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
-triggerAll = P2Dist x >= 0 && P2Dist x <= 80
-triggerAll = EnemyNear, Anim != 5040
-triggerAll = !(EnemyNear, StateNo = 40 && EnemyNear, Time >= 1) && (EnemyNear, PrevStateNo = [5020,5040])
-triggerAll = P2StateType != A && P2StateType != L && (P2Dist y = 0)
-triggerall = (life >= 500) || var(45)=2
-trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
-trigger2 = var(7) && MoveHit && Random < (150 * (AIlevel ** 2 / 64.0))
+[State -1, Jupiter's Deal]
+type=ChangeState
+value=Ifelse(power>=2000&&random<=350,3150,3100)
+triggerall=AILevel && numenemy && RoundState=2 && StateType != A && var(20)<=0 && power >= 1000 && random < (250 * (AIlevel ** 2 / 64.0))
+triggerall=(enemynear,statetype != L) && (enemynear,statetype != C)&&(enemynear,stateno!=[5100,5220])&&(enemynear,stateno!=[120,155])
+triggerall=(p2bodydist x =[0,50])&&(p2bodydist y=[-50,5])
+triggerall=life > 500
+trigger1=ctrl || StateNo=40 || StateNo=52 || (StateNo=[100,101])
+trigger2=var(6)&&movehit&&random<200
 
 [State -1, Seraphic Wing]
-type = ChangeState
-value = 3300
-triggerAll = AILevel && NumEnemy
-triggerAll = RoundState = 2 && StateType != A
-triggerAll = Power >= 3000 && !var(20)
-triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
-triggerAll = (Enemynear, StateNo != [120, 155]) || EnemyNear, StateType = A
-triggerAll = EnemyNear, StateType != L
-triggerAll = P2BodyDist x >= 105
-triggerall = (life >= 500) || var(45)=2
-trigger1 = (ctrl || StateNo = 52 || (StateNo = [100,101])) && Random < (100 * (AILevel ** 2 / 64.0))
-trigger2 = var(7) && MoveHit && Random < (50 * (AIlevel ** 2 / 64.0))
+type=ChangeState
+value=Ifelse(power>=3000&&random<=400,3300,3300)
+triggerall=AILevel && numenemy && RoundState=2 && StateType != A && var(20)<=0 && power >= 3000 && random < (350 * (AIlevel ** 2 / 64.0))
+triggerall=(enemynear,statetype != L) &&(enemynear,stateno!=[5100,5220])&&(enemynear,stateno!=[120,155])&&(p2bodydist x =[70,400])&&(p2bodydist y=[-50,5])
+triggerall=life > 500
+trigger1=ctrl || StateNo=40 || StateNo=52 || (StateNo=[100,101])
+trigger2=var(6)&&movehit&&random<250

@@ -12,13 +12,13 @@
 ; {f[^
 ;---------------------------------------------------------------------------
 [Data]
-life = 1000 ;Cti̗̓Q[Wjől
-power = 3000 ;p[Q[WőliIvVEftHg3000=Lv.3j
-attack = 100 ;ÚiftHg͂POOj
-defence = 100 ;h́iftHg͂POOj
-fall.defence_up = 50 ;ɓ|Ă鎞ɈꎞIɉh́ij
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
 lieDown.time = 15
-airjuggle = 15 ;WO|CgEliul^.txtvQƁj
+airjuggle = 15
 sparkno = 2 ;ftHg̃qbgXp[Nifightfxj
 guard.sparkno = 40 ;ftHg̃K[hXp[Nifightfxj
 KO.echo = 0 ;jn̉i11,0jɃGR[|邩ۂi0=|Ȃ,1=|j

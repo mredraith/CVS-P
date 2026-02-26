@@ -54,12 +54,12 @@
 ;Constants
 ;
 [Data]
-life = 1000 
-attack = 100 
-defence = 100 
-fall.defence_up = 50 
+life = 1000
+attack = 100
+defence = 100
+fall.defence_up = 50
 lieDown.time = 15
-airjuggle = 15 
+airjuggle = 15
 sparkno = s8010 
 guard.sparkno = s8000 
 KO.echo = 0 

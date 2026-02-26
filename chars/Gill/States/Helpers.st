@@ -1,7 +1,7 @@
-;
-;<HELPER STATES>==
-;
-;<WIN POSE (HAIR)>=
+;==============================================================================================
+;=======================================<HELPER STATES>========================================
+;==============================================================================================
+;========================<WIN POSE (HAIR)>=============================
 [Statedef 100183]
 type = S
 ctrl = 0
@@ -18,7 +18,7 @@ pos = 0,0
 type = DestroySelf
 trigger1 = Root, StateNo != 183
 
-;<WIN POSE (MOUTH)>=
+;========================<WIN POSE (MOUTH)>=============================
 [Statedef 100184]
 type = S
 ctrl = 0
@@ -35,7 +35,7 @@ pos = 0,0
 type = DestroySelf
 trigger1 = Root, StateNo != 184
 
-;<WIN POSE (POSITION)>=
+;========================<WIN POSE (POSITION)>=============================
 [Statedef 100185]
 type = A
 physics = N
@@ -91,7 +91,7 @@ value = SCA
 type = DestroySelf
 trigger1 = Root, StateNo != 185
 
-;<SIMUL INTRO (MOUTH)>=
+;========================<SIMUL INTRO (MOUTH)>=============================
 [Statedef 6910]
 type = S
 ctrl = 0
@@ -115,7 +115,7 @@ type = DestroySelf
 trigger1 = Root, StateNo != 6901
 trigger2 = !AnimTime
 
-;<KINESIS PROJECTILE>==
+;=====================<KINESIS PROJECTILE>=========================
 [StateDef 1005]
 type = S
 physics = N
@@ -175,11 +175,6 @@ type = VarSet
 trigger1 = 1
 fvar(11) = (Root, fvar(10)) * ifElse(var(9), 1.2, 1)
 
-[State 1005, Projectile Flag On]
-type = ParentVarAdd
-trigger1 = !Time
-var(39) = 1
-
 [State 1005, Transparency]
 type = Trans
 trigger1 = Root, var(0) = 90
@@ -218,8 +213,8 @@ priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
 getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
 givePower = 36, 36
-pauseTime = 0, ifElse((Root, var(20)), 6, 12)
-guard.pauseTime = 0, ifElse((Root, var(20)), 6, 12)
+pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
+guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 animType = Hard
 air.animType = Back
 fall.animType = Back
@@ -238,7 +233,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -270,8 +265,8 @@ priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
 getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
 givePower = 36, 36
-pauseTime = 0, ifElse((Root, var(20)), 6, 12)
-guard.pauseTime = 0, ifElse((Root, var(20)), 6, 12)
+pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
+guard.pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
 animType = Hard
 air.animType = Back
 fall.animType = Back
@@ -290,7 +285,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -322,8 +317,8 @@ priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
 getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
 givePower = 36, 36
-pauseTime = 0, ifElse((Root, var(20)), 6, 12)
-guard.pauseTime = 0, ifElse((Root, var(20)), 6, 12)
+pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
+guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 animType = Hard
 air.animType = Back
 fall.animType = Back
@@ -342,7 +337,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -374,8 +369,8 @@ priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
 getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
 givePower = 36, 36
-pauseTime = 0, ifElse((Root, var(20)), 6, 12)
-guard.pauseTime = 0, ifElse((Root, var(20)), 6, 12)
+pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
+guard.pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
 animType = Hard
 air.animType = Back
 fall.animType = Back
@@ -394,7 +389,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -668,7 +663,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;<METEOR STRIKE (HAIR)>=
+;========================<METEOR STRIKE (HAIR)>=============================
 [Statedef 3001]
 type = S
 ctrl = 0
@@ -693,7 +688,7 @@ trigger3 = Root, AnimElemTime(60) = 0
 trigger4 = Root, StateNo = 3500
 trigger4 = Root, AnimElemTime(17) = 0
 
-;<METEOR STRIKE (PYROKINESIS)>==
+;=====================<METEOR STRIKE (PYROKINESIS)>=========================
 [StateDef 3005]
 type = A
 physics = N
@@ -732,8 +727,8 @@ x = 2; + (Random % 3 * 2)
 [State 3005, VelSet]
 type = VelSet
 trigger1 = Root, StateNo = 3050
-y = 8; + (Random % 2 * 3)
-x = 4; + (Random % 3 * 3)
+y = 7; + (Random % 2 * 3)
+x = 2; + (Random % 3 * 3)
 
 [State 3005, AngleSet]
 type = AngleSet
@@ -788,10 +783,10 @@ TriggerAll = Root, StateNo = 3000
 trigger1= !(Root, var(16)) && (Root, var(15) < 20 )
 ID = 3005
 attr = S,SP
-hitFlag = MAFD
+hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 7
+damage = ceil(ifElse(fvar(11) * 17 < 7, 7, fvar(11) * 17)), 7
 getPower = 0,0
 givePower = 36, 36
 pauseTime = 0, 2;ifElse(Root, StateNo = 3050, 5, 10)
@@ -814,7 +809,7 @@ air.velocity = 0.45, -12.85
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -839,10 +834,10 @@ TriggerAll = Root, StateNo = 3050
 trigger1= !(Root, var(16)) && (Root, var(15) < 20 )
 ID = 3005
 attr = S,SP
-hitFlag = MAFD
+hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
+damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 getPower = 0,0
 givePower = 36, 36
 pauseTime = 0, 2;ifElse(Root, StateNo = 3050, 5, 10)
@@ -865,7 +860,7 @@ air.velocity = 0.45, -12.85
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1028,8 +1023,9 @@ value = 0
 [State 3007, PlaySnd]
 type = PlaySnd
 trigger1 = !Time
-value = 1050, 0
+value = 3000, 10
 channel = 3
+volume = -128
 lowPriority = 1
 
 [State 3007, Transparency]
@@ -1057,7 +1053,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1008
 
-;<METEOR STRIKE (PYROKINESIS)>==
+;=====================<METEOR STRIKE (PYROKINESIS)>=========================
 [StateDef 3015]
 type = A
 physics = N
@@ -1152,7 +1148,7 @@ TriggerAll = Root, StateNo = 3000
 trigger1= !(Root, var(16)) && (Root, var(15) < 20)
 ID = 3015
 attr = S,SP
-hitFlag = MAFD
+hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 17 < 7, 7, fvar(11) * 17)), 7
@@ -1178,7 +1174,7 @@ air.velocity = 0.45, -12.85
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1203,7 +1199,7 @@ TriggerAll = Root, StateNo = 3050
 trigger1= !(Root, var(16)) && (Root, var(15) < 20)
 ID = 3015
 attr = S,SP
-hitFlag = MAFD
+hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
@@ -1229,7 +1225,7 @@ air.velocity = 0.45, -12.85
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1314,11 +1310,12 @@ type = AngleSet
 trigger1 = Anim = 3017
 value = 0
 
-[State 3007, PlaySnd]
+[State 3017, PlaySnd]
 type = PlaySnd
 trigger1 = !Time
-value = 1050, 0
+value = 3000, 10
 channel = 3
+volume = -128
 lowPriority = 1
 
 [State 3017, Transparency]
@@ -1346,7 +1343,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1008
 
-;<SERAPHIC WING>==
+;=====================<SERAPHIC WING>=========================
 [StateDef 3301]
 type = A
 physics = N
@@ -1391,9 +1388,9 @@ fvar(11) = (Root, fvar(10)) * ifElse(var(9), 1.2, 1)
 type = HitDef
 trigger1 = ((Time = 2 && PrevStateNo = 3302) || (Time = 0 && !var(14))) && var(14) < 20
 trigger1 = 1
-priority = 4, Hit
+priority = 7, Hit
 attr = A, HA
-damage = ceil(ifElse(fvar(11) * 32 < 7, 7, fvar(11) * 32)), 7
+damage = 32, 4
 animType = Hard
 air.animType = Hard
 fall.animType = DiagUp
@@ -1461,12 +1458,13 @@ type = VarAdd
 trigger1 = 1
 var(14) = 1
 
-[State 1006, HitSound]
+[State 3006, HitSound]
 type = PlaySnd
 trigger1 = MoveContact = 1 && NumTarget
 trigger1 = !(Target, HitShakeOver)
-value = ifElse(MoveGuarded, 3, 2), ifElse(MoveGuarded, 0, 6)
+value = ifElse(MoveGuarded, 3, 2), ifElse(MoveGuarded, 0, IfElse(var(14) >= 20, 5, IfElse(Random < 500, 4, 3)))
 channel = 3
+volumescale = 50
 ignorehitPause = 1
 
 [State 3302, Hit Spark]
@@ -1536,7 +1534,7 @@ type = ChangeState
 trigger1 = Time >= 0
 value = 3301
 
-;<METEOR STRIKE (POSITION)>=
+;========================<METEOR STRIKE (POSITION)>=============================
 [Statedef 3310]
 type = A
 physics = N
@@ -1640,7 +1638,7 @@ trigger1 = Root, StateNo != 3300
 trigger2 = Root, StateNo = 3300
 trigger2 = Root, AnimElemTime(39) >= 0
 
-;<RESURRECTION (WIND)>=
+;====================<RESURRECTION (WIND)>====================
 [Statedef 3401]
 type = S
 physics = N
@@ -1677,7 +1675,7 @@ trigger3 = Root, StateNo != 3400
 trigger4 = Root, StateNo = 3400
 trigger4 = Root, AnimElemTime(12) >= 48
 
-;<RESURRECTION (GLOW)>=
+;====================<RESURRECTION (GLOW)>====================
 [StateDef 3405]
 anim = 3405
 sprpriority = 4
@@ -1706,7 +1704,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;<RESURRECTION (RAYS)>=
+;====================<RESURRECTION (RAYS)>====================
 [StateDef 3407]
 anim = 3407
 sprpriority = 5
@@ -1757,7 +1755,7 @@ trigger1 = Time >= 60
 type = DestroySelf
 trigger1 = Time >= 60
 
-;<HADES ORBIT (FLARE ORB)>=
+;====================<HADES ORBIT (FLARE ORB)>====================
 ;Credit Goes to Mr. Infinite
 [Statedef 3505]
 type = A
@@ -1881,7 +1879,6 @@ ignorehitpause = 1
 type = HitDef
 trigger1 = !(Root, var(16)) && (Root, var(15) < 5)
 trigger1 = var(14) < 4
-trigger1= Root, StateNo != 3550
 ID = 3506
 attr = S,SP
 hitFlag = MAF
@@ -1910,7 +1907,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -1933,7 +1930,6 @@ sprPriority = 3
 type = HitDef
 trigger1 = !(Root, var(16)) && (Root, var(15) < 5)
 trigger1 = var(14) >= 4
-trigger1= Root, StateNo != 3550
 ID = 3506
 attr = S,SP
 hitFlag = MAF
@@ -1962,7 +1958,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -2148,7 +2144,7 @@ ignoreHitPause = 1
 type=destroyself
 trigger1=!animtime
 
-;<HADES ORBIT (ICE ORB)>=
+;====================<HADES ORBIT (ICE ORB)>====================
 ;Credit Goes to Mr. Infinite
 [Statedef 3515]
 type = A
@@ -2279,7 +2275,6 @@ ignorehitpause = 1
 type = HitDef
 trigger1 = !(Root, var(16)) && (Root, var(15) < 5)
 trigger1 = var(14) < 4
-trigger1= Root, StateNo != 3550
 ID = 3515
 attr = S,SP
 hitFlag = MAF
@@ -2308,7 +2303,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -2331,7 +2326,6 @@ sprPriority = 3
 type = HitDef
 trigger1 = !(Root, var(16)) && (Root, var(15) < 5)
 trigger1 = var(14) >= 4
-trigger1= Root, StateNo != 3550
 ID = 3516
 attr = S,SP
 hitFlag = MAF
@@ -2360,7 +2354,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -2475,6 +2469,14 @@ velSet = 0,0
 sprPriority = 3
 moveHitPersist = 1
 
+[State 3517, PlaySnd]
+type = PlaySnd
+trigger1 = !Time
+value = 3000, 10
+channel = 3
+volume = -128
+lowPriority = 1
+
 [State 3707, Assert]
 type=trans
 TriggerAll = NumHelper(3565)
@@ -2496,7 +2498,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1008
 
-;<HADES COMET (FLARE ORB)>=
+;====================<HADES COMET (FLARE ORB)>====================
 ;Credit Goes to Mr. Infinite
 [Statedef 3555]
 type = A
@@ -2541,6 +2543,12 @@ var(9) = (EnemyNear, MoveType = A)
 type = VarSet
 trigger1 = 1
 fvar(11) = (Root, fvar(10)) * ifElse(var(9), 1.2, 1)
+
+[State 3555, Kinises Startup Sound]
+type = PlaySnd
+trigger1 = !Time
+value = 1000, 10
+volumescale = 75
 
 [State 3555, VelSet]
 type = VelSet
@@ -2599,7 +2607,7 @@ air.velocity = -4.31, -4.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -2650,7 +2658,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -2791,7 +2799,7 @@ value = 3507
 ctrl = 0
 ignorehitpause = 1
 
-;<HADES COMET (ICE ORBIT)>=
+;====================<HADES COMET (ICE ORBIT)>====================
 ;Credit Goes to Mr. Infinite
 [Statedef 3565]
 type=A
@@ -2836,6 +2844,12 @@ fvar(11) = (Root, fvar(10)) * ifElse(var(9), 1.2, 1)
 type = ChangeAnim
 trigger1 = !Time && !PrevStateNo
 value = 3615
+
+[State 3565, Kinises Startup Sound]
+type = PlaySnd
+trigger1 = !Time
+value = 1000, 11
+volumescale = 75
 
 [State 3565, VelMul]
 type = VelMul
@@ -2894,7 +2908,7 @@ air.velocity = -4.31, -4.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -2945,7 +2959,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.53
+yAccel = 0.58
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -3051,7 +3065,7 @@ value = 3517
 ctrl = 0
 ignorehitpause = 1
 
-;<ROBE>=
+;====================<ROBE>====================
 [StateDef 7000]
 anim = 7000
 sprpriority = 1
@@ -3068,7 +3082,7 @@ channel = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;<KOLLIN>=
+;====================<KOLLIN>====================
 [StateDef 7001]
 anim = 7001
 sprpriority = 1
@@ -3104,7 +3118,7 @@ x = -1.8 * Const(Size.Xscale)
 type = DestroySelf
 trigger1 = Pos X != [-240,240]
 
-;<MONKS>=
+;====================<MONKS>====================
 ;Center
 [StateDef 7002]
 anim = 7002
@@ -3150,7 +3164,7 @@ x = -1.5 * Const(Size.Xscale)
 type = DestroySelf
 trigger1 = BackEdgeDist <= -110
 
-;<ROBE>=
+;====================<ROBE>====================
 [StateDef 7010]
 anim = 7010
 sprpriority = 1
@@ -3160,7 +3174,7 @@ ctrl = 0
 type = DestroySelf
 trigger1 = !AnimTime
 
-;<ROBE>=
+;====================<ROBE>====================
 [StateDef 10190]
 anim = 10190
 sprpriority = 5
@@ -3184,7 +3198,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;<PARRY HELPER>==
+;====================<PARRY HELPER>=========================
 [StateDef 765]
 type = A
 physics = N
@@ -3294,7 +3308,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;<SPARKS>=
+;========================<SPARKS>=============================
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -3375,7 +3389,7 @@ type = DestroySelf
 trigger1 = Time >= 8
 
 
-;Weak Hit Spark
+;Light Hit Spark
 [StateDef 8010]
 type = A
 physics = N
@@ -3388,13 +3402,12 @@ sprPriority = 5
 type = AssertSpecial
 trigger1 = 1
 flag = NoShadow
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8010, AngleSet]
 type = AngleSet
 trigger1 = !Time
 value = 30 * (Random % 12)
-ignorehitpause = 1
 
 [State 8010, AngleAdd]
 type = AngleAdd
@@ -3404,21 +3417,21 @@ value = 30
 [State 8010, Scale]
 type = AngleDraw
 trigger1 = Time < 10
-scale = (0.3 - (Time * 0.03)) * 0.8, (0.3 - (Time * 0.03)) * 0.8
-ignorehitpause = 1
+scale = 0.3 - (Time * 0.03), 0.3 - (Time * 0.03)
+ignoreHitPause = 1
 
 [State 8010, Scale]
 type = AngleDraw
 trigger1 = Time >= 10
 scale = 0,0
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8010, Transparency]
 type = Trans
 trigger1 = 1
 trans = AddAlpha
 alpha = 256,256
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8010, Center Explod]
 type = Explod
@@ -3437,7 +3450,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(1)
 ID = 1
-scale = (0.15 + (0.009375 * Time)) * 0.8, (0.15 + (0.009375 * Time)) * 0.8
+scale = 0.15 + (0.009375 * Time), 0.15 + (0.009375 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time),256
 
@@ -3458,7 +3471,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(2)
 ID = 2
-scale = (0.15 + (0.009375 * Time)) * 0.8, (0.15 + (0.009375 * Time)) * 0.8
+scale = 0.15 + (0.009375 * Time), 0.15 + (0.009375 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
@@ -3479,7 +3492,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(4)
 ID = 4
-scale = (0.3 - (0.0375 * Time)) * 0.8, (0.3 - (0.0375 * Time)) * 0.8
+scale = 0.3 - (0.0375 * Time), 0.3 - (0.0375 * Time)
 trans = AddAlpha
 alpha = 128 - (16 * Time), 256
 
@@ -3505,7 +3518,7 @@ sprPriority = 5
 type = AssertSpecial
 trigger1 = 1
 flag = NoShadow
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8011, AngleSet]
 type = AngleSet
@@ -3520,20 +3533,21 @@ value = 30
 [State 8011, Scale]
 type = AngleDraw
 trigger1 = Time < 10
-scale = (0.35 - (Time * 0.035)) * 0.8, (0.35 - (Time * 0.035)) * 0.8
-ignorehitpause = 1
+scale = 0.35 - (Time * 0.035), 0.35 - (Time * 0.035)
+ignoreHitPause = 1
 
 [State 8011, Scale]
 type = AngleDraw
 trigger1 = Time >= 10
 scale = 0,0
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8011, Transparency]
 type = Trans
 trigger1 = 1
 trans = AddAlpha
 alpha = 256,256
+ignoreHitPause = 1
 
 [State 8011, Center]
 type = Explod
@@ -3552,7 +3566,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(1)
 ID = 1
-scale = (0.175 + (0.0109375 * Time)) * 0.8, (0.175 + (0.0109375 * Time)) * 0.8
+scale = 0.175 + (0.0109375 * Time), 0.175 + (0.0109375 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
@@ -3573,7 +3587,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(2)
 ID = 2
-scale = (0.175 + (0.0109375 * Time)) * 0.8, (0.175 + (0.0109375 * Time)) * 0.8
+scale = 0.175 + (0.0109375 * Time), 0.175 + (0.0109375 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
@@ -3594,7 +3608,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(4)
 ID = 4
-scale = (0.35 - (0.04375 * Time)) * 0.8, (0.35 - (0.04375 * Time)) * 0.8
+scale = 0.35 - (0.04375 * Time), 0.35 - (0.04375 * Time)
 trans = AddAlpha
 alpha = 128 - (16 * Time), 256
 
@@ -3607,7 +3621,7 @@ type = DestroySelf
 trigger1 = Time >= 16
 
 
-;Strong Hit Spark
+;Heavy Hit Spark
 [StateDef 8012]
 type = A
 physics = N
@@ -3620,7 +3634,7 @@ sprPriority = 5
 type = AssertSpecial
 trigger1 = 1
 flag = NoShadow
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8012, AngleSet]
 type = AngleSet
@@ -3635,21 +3649,21 @@ value = 30
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = Time < 10
-scale = (0.4 - (Time * 0.04)) * 0.8, (0.4 - (Time * 0.04)) * 0.8
-ignorehitpause = 1
+scale = 0.4 - (Time * 0.04), 0.4 - (Time * 0.04)
+ignoreHitPause = 1
 
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = Time >= 10
 scale = 0,0
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8012, Transparency]
 type = Trans
 trigger1 = 1
 trans = AddAlpha
 alpha = 256,256
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8012, Center Explod]
 type = Explod
@@ -3668,7 +3682,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(1)
 ID = 1
-scale = (0.2 + (0.0125 * Time)) * 0.8, (0.2 + (0.0125 * Time)) * 0.8
+scale = 0.2 + (0.0125 * Time), 0.2 + (0.0125 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
@@ -3689,7 +3703,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(2)
 ID = 2
-scale = (0.2 + (0.0125 * Time)) * 0.8, (0.2 + (0.0125 * Time)) * 0.8
+scale = 0.2 + (0.0125 * Time), 0.2 + (0.0125 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
@@ -3710,7 +3724,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(4)
 ID = 4
-scale = (0.4 - (0.05 * Time)) * 0.8, (0.4 - (0.05 * Time)) * 0.8
+scale = 0.4 - (0.05 * Time), 0.4 - (0.05 * Time)
 trans = AddAlpha
 alpha = 128 - (16 * Time), 256
 
@@ -3728,7 +3742,7 @@ trigger1 = Time >= 16
 type = A
 physics = N
 moveType = I
-anim = 8050
+anim = 8010
 velSet = 0,0
 sprPriority = 5
 
@@ -3736,7 +3750,7 @@ sprPriority = 5
 type = AssertSpecial
 trigger1 = 1
 flag = NoShadow
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8013, AngleSet]
 type = AngleSet
@@ -3751,26 +3765,26 @@ value = 30
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = Time < 10
-scale = (0.45 - (Time * 0.045)) * 0.8, (0.45 - (Time * 0.045)) * 0.8
-ignorehitpause = 1
+scale = 0.45 - (Time * 0.045), 0.45 - (Time * 0.045)
+ignoreHitPause = 1
 
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = Time >= 10
 scale = 0,0
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8013, Transparency]
 type = Trans
 trigger1 = 1
 trans = AddAlpha
 alpha = 256,256
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8013, Center Explod]
 type = Explod
 trigger1 = !Time
-anim = 8051
+anim = 8011
 ID = 1
 posType = P1
 facing = ifElse(Random < 500, -1, 1)
@@ -3784,14 +3798,14 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(1)
 ID = 1
-scale = (0.225 + (0.0140625 * Time)) * 0.8, (0.225 + (0.0140625 * Time)) * 0.8
+scale = 0.225 + (0.0140625 * Time), 0.225 + (0.0140625 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
 [State 8013, Streaks Explod]
 type = Explod
 trigger1 = !Time
-anim = 8052
+anim = 8012
 ID = 2
 posType = P1
 facing = ifElse(Random < 500, -1, 1)
@@ -3805,14 +3819,14 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(2)
 ID = 2
-scale = (0.225 + (0.0140625 * Time)) * 0.8, (0.225 + (0.0140625 * Time)) * 0.8
+scale = 0.225 + (0.0140625 * Time), 0.225 + (0.0140625 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
 [State 8013, P2 Back Explod]
 type = Explod
 trigger1 = !Time
-anim = 8053
+anim = 8013
 ID = 3
 posType = P1
 facing = -1
@@ -3826,7 +3840,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1= NumExplod(3)
 ID = 3
-scale = (0.4) * 0.8, (0.4) * 0.8
+scale = 0.4, 0.4
 trans = AddAlpha
 alpha = 256 - (32 * Time), 256
 
@@ -3847,7 +3861,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(4)
 ID = 4
-scale = (0.45 - (0.05625 * Time)) * 0.8, (0.45 - (0.05625 * Time)) * 0.8
+scale = 0.45 - (0.05625 * Time), 0.45 - (0.05625 * Time)
 trans = AddAlpha
 alpha = 192 - (24 * Time), 256
 
@@ -3865,7 +3879,7 @@ trigger1 = Time >= 16
 type = A
 physics = N
 moveType = I
-anim = 8060
+anim = 8010
 velSet = 0,0
 sprPriority = 5
 
@@ -3873,7 +3887,7 @@ sprPriority = 5
 type = AssertSpecial
 trigger1 = 1
 flag = NoShadow
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8014, AngleSet]
 type = AngleSet
@@ -3888,26 +3902,26 @@ value = 30
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = Time < 10
-scale = (0.5 - (Time * 0.05)) * 0.8, (0.5 - (Time * 0.05)) * 0.8
-ignorehitpause = 1
+scale = 0.5 - (Time * 0.05), 0.5 - (Time * 0.05)
+ignoreHitPause = 1
 
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = Time >= 10
 scale = 0,0
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8014, Transparency]
 type = Trans
 trigger1 = 1
 trans = AddAlpha
 alpha = 256,256
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State 8014, Center Explod]
 type = Explod
 trigger1 = !Time
-anim = 8061
+anim = 8011
 ID = 1
 posType = P1
 facing = ifElse(Random < 500, -1, 1)
@@ -3921,14 +3935,14 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(1)
 ID = 1
-scale = (0.25 + (0.015625 * Time)) * 0.8, (0.25 + (0.015625 * Time)) * 0.8
+scale = 0.25 + (0.015625 * Time), 0.25 + (0.015625 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
 [State 8014, Streaks Explod]
 type = Explod
 trigger1 = !Time
-anim = 8062
+anim = 8012
 ID = 2
 posType = P1
 facing = ifElse(Random < 500, -1, 1)
@@ -3942,17 +3956,17 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(2)
 ID = 2
-scale = (0.25 + (0.015625 * Time)) * 0.8, (0.25 + (0.015625 * Time)) * 0.8
+scale = 0.25 + (0.015625 * Time), 0.25 + (0.015625 * Time)
 trans = AddAlpha
 alpha = 256 - (16 * Time), 256
 
 [State 8014, P2 Back Explod]
 type = Explod
 trigger1 = !Time
-anim = 8063
+anim = 8013
 ID = 3
 posType = P1
-facing = -1;ifElse((Parent, StateNo = [3100,3150]), -1, 1)
+facing = ifElse((Parent, StateNo = [3000,3999]), -1, 1)
 vFacing = ifElse(Random < 500, -1, 1)
 sprPriority = -3
 removeTime = 8
@@ -3963,7 +3977,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(3)
 ID = 3
-scale = (0.5) * 0.8, (0.5) * 0.8
+scale = 0.5,0.5
 trans = AddAlpha
 alpha = 256 - (32 * Time), 256
 
@@ -3984,7 +3998,7 @@ superMoveTime = -1
 type = ModifyExplod
 trigger1 = NumExplod(4)
 ID = 4
-scale = (0.5 - (0.0625 * Time)) * 0.8, (0.5 - (0.0625 * Time)) * 0.8
+scale = 0.5 - (0.0625 * Time), 0.5 - (0.0625 * Time)
 trans = AddAlpha
 alpha = 256 - (32 * Time),256
 
@@ -4035,7 +4049,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;<JUMP DUST>==
+;======================<JUMP DUST>===========================
 [StateDef 8100]
 type = S
 anim = 1
@@ -4072,7 +4086,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>==
+;======================<DASH DUST>===========================
 [StateDef 8103]
 type = A
 anim = 1
@@ -4132,7 +4146,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>==
+;======================<IMPACT DUST>===========================
 [StateDef 8110]
 type = A
 anim = 1
@@ -4176,7 +4190,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>==
+;======================<WALL IMPACT DUST>===========================
 [StateDef 8111]
 type = A
 anim = 1
@@ -4220,7 +4234,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<FLAMES>=
+;========================<FLAMES>=============================
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -4243,14 +4257,6 @@ trigger1 = PlayerIDexist(var(0))
 trigger1 = PlayerID(var(0)), StateType = L
 x = ceil(PlayerID(var(0)), pos x)
 y = ceil(PlayerID(var(0)), pos y) - 20
-
-[State 8155, PosSet (Benimaru Collider/Elec-Trigger, axis at head)]
-type = PosSet
-triggerAll = PlayerIDexist(var(0))
-trigger1 = PlayerID(var(0)), StateNo = 3105 || PlayerID(var(0)), StateNo = 3106 || PlayerID(var(0)), StateNo = 3107 || PlayerID(var(0)), StateNo = 3108
-;trigger1 = (PlayerID(var(0)), AnimElemTime(2) >= 0 && PlayerID(var(0)), AnimElemTime(3) < 0) || PlayerID(var(0)), AnimElemTime(6) >= 0
-x = ceil(PlayerID(var(0)), pos x)
-y = ceil(PlayerID(var(0)), pos y) + 20
 
 [State 8150, Facing]
 type = Turn
@@ -4316,7 +4322,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;<ICE SHARDS>=
+;========================<ICE SHARDS>=============================
 [StateDef 18150]
 type = S
 velSet = 0,0
@@ -4478,7 +4484,7 @@ type = DestroySelf
 trigger1 = Enemy, Stateno != [5800,5899]
 trigger2 = Enemy, Statetype = L
 
-;<RECOVER FX>=
+;========================<RECOVER FX>=============================
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -4508,7 +4514,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<COUNTER FX>=
+;========================<COUNTER FX>=============================
 [StateDef 8290]
 type = A
 physics = N
@@ -4552,7 +4558,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<POWER CHARGE FX>=
+;==================<POWER CHARGE FX>==================
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -4659,7 +4665,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<ZERO COUNTER FX>=
+;==================<ZERO COUNTER FX>==================
 [StateDef 8350]
 type = A
 physics = N
@@ -4709,7 +4715,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<CUSTOM COMBO>=
+;========================<CUSTOM COMBO>=============================
 [StateDef 8400]
 type = A
 physics = N
@@ -4813,7 +4819,7 @@ trigger1 = Time >= 26
 type = DestroySelf
 trigger1 = Time >= 26
 
-;<SUPER PAUSE FX>=
+;========================<SUPER PAUSE FX>=============================
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -5260,7 +5266,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;<SUPER FINISH>=
+;========================<SUPER FINISH>=============================
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -5424,7 +5430,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;<CAMERA CONTROL>=
+;========================<CAMERA CONTROL>=============================
 [StateDef 8999]
 type = S
 velSet = 0,0

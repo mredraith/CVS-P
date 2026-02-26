@@ -1,6 +1,6 @@
 ; _________________________________________
 ;| Oro by varo_hades                       |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;==============================================================================================
 ;========================================<SUPER STATES>========================================
 ;==============================================================================================
@@ -1305,7 +1305,7 @@ p2facing = 1
 p1stateno = 3220
 p2stateno = 3225
 fall = 1
-fall.recover = 1
+fall.recover = 0
 
 [State 3210, VelSet]
 type = VelSet
@@ -1965,7 +1965,7 @@ p2facing = 1
 p1stateno = 3330
 p2stateno = 3335
 fall = 1
-fall.recover = 1
+fall.recover = 0
 
 [State 3320, ChangeState]
 type = ChangeState
@@ -2232,7 +2232,7 @@ p2facing = 1
 p1stateno = 3360
 p2stateno = 3365
 fall = 1
-fall.recover = 1
+fall.recover = 0
 
 [State 3340, ChangeState]
 type = null;ChangeState
