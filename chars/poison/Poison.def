@@ -7,7 +7,7 @@ name ="Poison"
 displayname ="Poison"
 versiondate= 12,14,2014
 mugenversion= 1.0
-author="DivineWolf","Gatorison"
+author="DivineWolf, Gatorison"
 editor="Renaws"
 Pal.Defaults= 1,2,3,4,5,6,7,8,9,10,11,12
 
@@ -26,16 +26,6 @@ st2=Coding/Helpers.cns
 st3=Coding/Special.cns
 st4=Coding/Super.cns
 st5=Coding/Custom.cns
-
-pal1=Colors/SFV6.act
-pal2=Colors/SFV2.act
-pal3=Colors/SFV3.act
-pal4=Colors/SFV4.act
-pal5=Colors/SFV5.act
-pal6=Colors/SFV.act
-pal7=Colors/SFV7.act
-pal8=Colors/SFV8.act
-pal9=Colors/SFV9.act
 
 [Palette Keymap]
 a = 4

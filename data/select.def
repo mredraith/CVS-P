@@ -340,8 +340,8 @@ Mr.karate, random, includestage=0, order=3
 Jimmy-POTS, random, includestage=0, order=1
 Hinako, random, includestage=0, order=1
 ; break
+empty
 Juni, random, includestage=0, order=1
-DivineEliza, random, includestage=0, order=1
 DivineJuli, random, includestage=0, order=1
 Elena, random, includestage=0, order=1
 Decapre, random, includestage=0, order=1
@@ -364,7 +364,7 @@ Oro, random, includestage=0, order=1
 Juri, random, includestage=0, order=1
 Gill, random, includestage=0, order=3
 randomselect
-empty
+DivineEliza, random, includestage=0, order=1
 empty
 empty
 empty

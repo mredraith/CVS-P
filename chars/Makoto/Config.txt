@@ -14,7 +14,7 @@ trigger1 = !roundsexisted
 fvalue = 0
 
 ;--------------------------------
-; ENG/JAP Voice Changer
+; ENG/JPN Voice Changer
 ;--------------------------------
 [State 5900, 3]
 type = VarSet
@@ -50,7 +50,7 @@ v = 45
 ;## Choose which Hit Sparks will be present. You can choose between the high res CVS Sparks, or the Custom CFG Sparks
 ;## Set the value to 1 for the Custom CFG FX, and to 0 for High Res CVS FX.
 ;## Default value is 0.
-value = 1
+value = 0
 
 ;--------------------------------
 ; Tanden Renki Time Bar Enabler
