@@ -24,18 +24,6 @@ stCommon= common1.cns
 sprite  = Sprite.sff
 anim    = Anim.air
 sound   = Sound.snd
-pal1	= Palettes/Default.act
-pal2	= Palettes/SkyDragonSliferEX_Diabla.act
-pal3	= Palettes/KamuiKanjai_YoruichiShihoin.act
-pal4	= Palettes/Project13_Raven.act
-pal5	= Palettes/Lurker_KoFXIVPink.act
-pal6	= Palettes/KoFHERO77_Blair.act
-pal7	= Palettes/ShiroTori_Custom4.act
-pal8	= Palettes/Nedflandeurse_Custom1.act
-pal9	= Palettes/KoFHERO77_EddyGordo.act
-pal10	= Palettes/masterkof_Custom2.act
-pal11	= Palettes/Vocalnoid_Autumn.act
-pal12	= Palettes/MCX_KDash.act
 
 [Palette Keymap]
 a = 4

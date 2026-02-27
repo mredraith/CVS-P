@@ -35,7 +35,7 @@ fvalue = 0
 type = VarSet
 trigger1 = 1
 v = 27
-value = 1
+value = 0
 ;___________________________________________________________________________
 ;Change the value number to 0 if you do not want Palette Selector on Intro
 ;Change the value number to 1 if you do want Palette Selector on Intro
@@ -57,7 +57,7 @@ value = 1
 type = VarSet
 trigger1 = 1
 v = 42
-value = 1
+value = 0
 ;___________________________________________________________________________
 ;Change the value number to 0 if you do not want Evil Ash Mode Aura
 ;Change the value number to 1 if you do want Evil Ash Mode Aura

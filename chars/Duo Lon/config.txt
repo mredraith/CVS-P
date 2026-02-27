@@ -35,7 +35,7 @@ fvalue = 0
 type = VarSet
 trigger1 = 1
 v = 27
-value = 1
+value = 0
 
 ;Change the value number to 0 if you do not want Palette Selector on Intro
 ;Change the value number to 1 if you do want Palette Selector on Intro
@@ -46,7 +46,7 @@ value = 1
 type = VarSet
 trigger1 = 1
 v = 43
-value = 0
+value = 1
 
 ;Change the value number to 0 if you do not want POT's style hitsparks
 ;Change the value number to 1 if you want the POT's style hitsparks
@@ -57,7 +57,7 @@ value = 0
 type = VarSet
 trigger1 = 1
 v = 44
-value = 0
+value = 1
 
 ;Change the value number to 0 if you do not want POT's style hitsounds
 ;Change the value number to 1 if you want the POT's style hitsounds

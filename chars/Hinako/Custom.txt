@@ -28,7 +28,7 @@ fvalue = 0
 type = VarSet
 trigger1 = 1
 var(54) = 0
-ignoreHitPause = 1
+ignoreHitPause = 0
 ;0 = custom combo
 ;1 = max mode
 ;___________________________________________________________________________
