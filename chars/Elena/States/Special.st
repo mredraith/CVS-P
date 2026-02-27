@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Elena by varo_hades                     |
 ; 
-;==============================================================================================
-;========================================<SPECIAL MOVES>=======================================
-;==============================================================================================
+;=
+;=<SPECIAL MOVES=
+;=
 
-;=====================<LYNX TAIL>==========================
+;LYNX TAIL
 [StateDef 1000]
 type = S
 physics = N
@@ -330,7 +330,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<EX LYNX TAIL>=============================
+;EX LYNX TAIL
 [StateDef 1030]
 type = S
 physics = N
@@ -637,7 +637,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<MALLET SMASH>=============================
+;MALLET SMASH
 [StateDef 1100]
 type = A
 physics = N
@@ -929,7 +929,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 62, ifElse(var(10), 57, 52)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 62, ifElse(var(10), 57, 52)))), 7
+damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 50, ifElse(var(10), 50, 40)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 50, ifElse(var(10), 50, 40)))), 7
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -974,7 +974,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 62, ifElse(var(10), 57, 52)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 62, ifElse(var(10), 57, 52)))), 7
+damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 50, ifElse(var(10), 50, 40)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 50, ifElse(var(10), 50, 40)))), 7
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
@@ -1063,7 +1063,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<EX MALLET SMASH>=============================
+;EX MALLET SMASH
 [StateDef 1130]
 type = A
 physics = N
@@ -1388,7 +1388,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;=====================<SPIN SCYTHE>==========================
+;SPIN SCYTHE
 [StateDef 1200]
 type = S
 physics = S
@@ -1729,7 +1729,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<EX SPIN SCYTHE>=============================
+;EX SPIN SCYTHE
 [StateDef 1230]
 type = S
 physics = S
@@ -2091,7 +2091,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;=====================<RHINO HORN>==========================
+;RHINO HORN
 [StateDef 1300]
 type = S
 physics = N
@@ -2743,7 +2743,7 @@ trigger1 = time = 18
 value = 0
 ctrl = 1
 
-;========================<EX RHINO HORN>=============================
+;EX RHINO HORN
 [StateDef 1330]
 type = S
 physics = N
@@ -3162,7 +3162,7 @@ trigger1 = Vel Y > 0
 value = 1310
 ctrl = 0
 
-;=====================<SCRATCH WHEEL>==========================
+;SCRATCH WHEEL
 [StateDef 1400]
 type = A
 physics = N
@@ -3852,7 +3852,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<EX SCRATCH WHEEL>=============================
+;EX SCRATCH WHEEL
 [StateDef 1430]
 type = S
 physics = S
@@ -4211,7 +4211,7 @@ trigger1 = Vel Y > 0
 value = 1410
 ctrl = 0
 
-;========================<PUNCH ZERO COUNTER>=============================
+;PUNCH ZERO COUNTER
 [StateDef 2900]
 type = S
 physics = N
@@ -4308,7 +4308,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<KICK ZERO COUNTER>=============================
+;KICK ZERO COUNTER
 [StateDef 2910]
 type = S
 physics = N

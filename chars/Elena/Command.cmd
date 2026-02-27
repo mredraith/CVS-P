@@ -351,222 +351,222 @@ time = 32
 
 [Command]
 name = "ScratchWheel"
-command = ~F, D, DF, a
+command = ~F, D, DF, x
 time = 16
 
 [Command]
 name = "ScratchWheel"
-command = ~F, D, DF, b
+command = ~F, D, DF, y
 time = 16
 
 [Command]
 name = "ScratchWheel"
-command = ~F, D, DF, c
+command = ~F, D, DF, z
 time = 16
 
 [Command]
 name = "ScratchWheel"
-command = ~F, D, DF, ~a
+command = ~F, D, DF, ~x
 time = 16
 
 [Command]
 name = "ScratchWheel"
-command = ~F, D, DF, ~b
+command = ~F, D, DF, ~y
 time = 16
 
 [Command]
 name = "ScratchWheel"
-command = ~F, D, DF, ~c
+command = ~F, D, DF, ~z
 time = 16
 
 [Command]
 name = "EXScratchWheel"
-command = ~F, D, DF, a+b
+command = ~F, D, DF, x+y
 time = 16
 
 [Command]
 name = "EXScratchWheel"
-command = ~F, D, DF, b+c
+command = ~F, D, DF, y+z
 time = 16
 
 [Command]
 name = "EXScratchWheel"
-command = ~F, D, DF, a+c
+command = ~F, D, DF, x+z
 time = 16
 
 [Command]
 name = "RhinoHorn"
-command = ~B, D, F, a
+command = ~D, DB, B, x
 time = 16
 
 [Command]
 name = "RhinoHorn"
-command = ~B, D, F, b
+command = ~D, DB, B, y
 time = 16
 
 [Command]
 name = "RhinoHorn"
-command = ~B, D, F, c
+command = ~D, DB, B, z
 time = 16
 
 [Command]
 name = "RhinoHorn"
-command = ~B, D, F, ~a
+command = ~D, DB, B, ~x
 time = 16
 
 [Command]
 name = "RhinoHorn"
-command = ~B, D, F, ~b
+command = ~D, DB, B, ~y
 time = 16
 
 [Command]
 name = "RhinoHorn"
-command = ~B, D, F, ~c
+command = ~D, DB, B, ~z
 time = 16
 
 [Command]
 name = "EXRhinoHorn"
-command = ~B, D, F, a+b
+command = ~D, DB, B, x+y
 time = 16
 
 [Command]
 name = "EXRhinoHorn"
-command = ~B, D, F, b+c
+command = ~D, DB, B, y+z
 time = 16
 
 [Command]
 name = "EXRhinoHorn"
-command = ~B, D, F, a+c
+command = ~D, DB, B, x+z
 time = 16
 
 [Command]
 name = "SpinScythe"
+command = ~D, DF, F, x
+time = 16
+
+[Command]
+name = "SpinScythe"
+command = ~D, DF, F, y
+time = 16
+
+[Command]
+name = "SpinScythe"
+command = ~D, DF, F, z
+time = 16
+
+[Command]
+name = "SpinScythe"
+command = ~D, DF, F, ~x
+time = 16
+
+[Command]
+name = "SpinScythe"
+command = ~D, DF, F, ~y
+time = 16
+
+[Command]
+name = "SpinScythe"
+command = ~D, DF, F, ~z
+time = 16
+
+[Command]
+name = "EXSpinScythe"
+command = ~D, DF, F, x+y
+time = 16
+
+[Command]
+name = "EXSpinScythe"
+command = ~D, DF, F, y+z
+time = 16
+
+[Command]
+name = "EXSpinScythe"
+command = ~D, DF, F, x+z
+time = 16
+
+[Command]
+name = "MalletSmash"
 command = ~D, DB, B, a
 time = 16
 
 [Command]
-name = "SpinScythe"
+name = "MalletSmash"
 command = ~D, DB, B, b
 time = 16
 
 [Command]
-name = "SpinScythe"
+name = "MalletSmash"
 command = ~D, DB, B, c
 time = 16
 
 [Command]
-name = "SpinScythe"
+name = "MalletSmash"
 command = ~D, DB, B, ~a
 time = 16
 
 [Command]
-name = "SpinScythe"
+name = "MalletSmash"
 command = ~D, DB, B, ~b
 time = 16
 
 [Command]
-name = "SpinScythe"
+name = "MalletSmash"
 command = ~D, DB, B, ~c
 time = 16
 
 [Command]
-name = "EXSpinScythe"
+name = "EXMalletSmash"
 command = ~D, DB, B, a+b
 time = 16
 
 [Command]
-name = "EXSpinScythe"
+name = "EXMalletSmash"
 command = ~D, DB, B, b+c
 time = 16
 
 [Command]
-name = "EXSpinScythe"
+name = "EXMalletSmash"
 command = ~D, DB, B, a+c
 time = 16
 
 [Command]
-name = "MalletSmash"
-command = ~F, D, B, x
-time = 16
-
-[Command]
-name = "MalletSmash"
-command = ~F, D, B, y
-time = 16
-
-[Command]
-name = "MalletSmash"
-command = ~F, D, B, z
-time = 16
-
-[Command]
-name = "MalletSmash"
-command = ~F, D, B, ~x
-time = 16
-
-[Command]
-name = "MalletSmash"
-command = ~F, D, B, ~y
-time = 16
-
-[Command]
-name = "MalletSmash"
-command = ~F, D, B, ~z
-time = 16
-
-[Command]
-name = "EXMalletSmash"
-command = ~F, D, B, x+y
-time = 16
-
-[Command]
-name = "EXMalletSmash"
-command = ~F, D, B, y+z
-time = 16
-
-[Command]
-name = "EXMalletSmash"
-command = ~F, D, B, x+z
+name = "LynxTail"
+command = ~D, DF, F, a
 time = 16
 
 [Command]
 name = "LynxTail"
-command = ~B, D, DB, a
+command = ~D, DF, F, b
 time = 16
 
 [Command]
 name = "LynxTail"
-command = ~B, D, DB, b
+command = ~D, DF, F, c
 time = 16
 
 [Command]
 name = "LynxTail"
-command = ~B, D, DB, c
+command = ~D, DF, F, ~a
 time = 16
 
 [Command]
 name = "LynxTail"
-command = ~B, D, DB, ~a
+command = ~D, DF, F, ~b
 time = 16
 
 [Command]
 name = "LynxTail"
-command = ~B, D, DB, ~b
-time = 16
-
-[Command]
-name = "LynxTail"
-command = ~B, D, DB, ~c
+command = ~D, DF, F, ~c
 time = 16
 
 [Command]
 name = "EXLynxTail"
-command = ~B, D, DB, a+b
+command = ~D, DF, F, +b
 time = 16
 
 [Command]
 name = "EXLynxTail"
-command = ~B, D, DB, b+c
+command = ~D, DF, F, b+c
 time = 16
 
 [Command]
