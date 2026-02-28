@@ -567,95 +567,95 @@ time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, D, B, a
+command = ~D, DB, B, a
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, D, B, b
+command = ~D, DB, B, b
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, D, B, c
+command = ~D, DB, B, c
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, D, B, ~a
+command = ~D, DB, B, ~a
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, D, B, ~b
+command = ~D, DB, B, ~b
 time = 16
 
 [Command]
 name = "YogaBlast"
-command = ~F, D, B, ~c
+command = ~D, DB, B, ~c
 time = 16
 
 
 [Command]
 name = "EXYogaBlast"
-command = ~F, D, B, a+b
+command = ~D, DB, B, a+b
 time = 16
 
 [Command]
 name = "EXYogaBlast"
-command = ~F, D, B, b+c
+command = ~D, DB, B, b+c
 time = 16
 
 [Command]
 name = "EXYogaBlast"
-command = ~F, D, B, a+c
+command = ~D, DB, B, a+c
 time = 16
 
 
 [Command]
 name = "YogaFlame"
-command = ~F, D, B, x
+command = ~D, DB, B, x
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, D, B, y
+command = ~D, DB, B, y
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, D, B, z
+command = ~D, DB, B, z
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, D, B, ~x
+command = ~D, DB, B, ~x
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, D, B, ~y
+command = ~D, DB, B, ~y
 time = 16
 
 [Command]
 name = "YogaFlame"
-command = ~F, D, B, ~z
+command = ~D, DB, B, ~z
 time = 16
 
 
 [Command]
 name = "EXYogaFlame"
-command = ~F, D, B, x+y
+command = ~D, DB, B, x+y
 time = 16
 
 [Command]
 name = "EXYogaFlame"
-command = ~F, D, B, y+z
+command = ~D, DB, B, y+z
 time = 16
 
 [Command]
 name = "EXYogaFlame"
-command = ~F, D, B, x+z
+command = ~D, DB, B, x+z
 time = 16
 
 
@@ -1209,6 +1209,42 @@ type = ChangeState
 value = 629
 triggerAll = !AILevel
 triggerAll = command = "holddown" && command = "z"
+triggerAll = StateType = A
+trigger1 = ctrl
+trigger2 = var(4)
+
+[state -1, Drill Kick Heavy Back]
+type = ChangeState
+value = 6591
+triggerAll = !AILevel
+triggerAll = command = "holdback" && command = "c"
+triggerAll = StateType = A
+trigger1 = ctrl
+trigger2 = var(4)
+
+[state -1, Drill Kick Medium Back]
+type = ChangeState
+value = 6491
+triggerAll = !AILevel
+triggerAll = command = "holdback" && command = "b"
+triggerAll = StateType = A
+trigger1 = ctrl
+trigger2 = var(4)
+
+[state -1, Drill Kick Light Back]
+type = ChangeState
+value = 6391
+triggerAll = !AILevel
+triggerAll = command = "holdback" && command = "a"
+triggerAll = StateType = A
+trigger1 = ctrl
+trigger2 = var(4)
+
+[state -1, Drill Zutsuki Back]
+type = ChangeState
+value = 6291
+triggerAll = !AILevel
+triggerAll = command = "holdback" && command = "z"
 triggerAll = StateType = A
 trigger1 = ctrl
 trigger2 = var(4)
