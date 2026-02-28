@@ -1511,16 +1511,6 @@ triggerall = command = "y"
 trigger1 = statetype = A
 trigger1 = ctrl
 
-
-[State -1, Jump Strong Punch]
-type = ChangeState
-value = 620
-triggerall = var(59) = 0
-triggerall = command = "z"
-triggerall = !Vel X
-trigger1 = statetype = A
-trigger1 = ctrl
-
 [State -1, Jump Strong Punch]
 type = ChangeState
 value = 621
