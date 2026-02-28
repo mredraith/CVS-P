@@ -1,0 +1,30 @@
+-98% of hitboxes remade to ssfiv ae
+-All Frame data accurate from ssfiv ae
+-realigned some sprites
+-Fixed Size of Fuhaijin Helper
+-fixed poweradd on HK Fuhaijin
+-realigned hitsparks
+-Ex Fuhaijin Does knockdown
+-resized hitsparks to match updated ones
+-added HK animation for senpushu so it doesnt share with MK version
+-Fixed Senpushu hits not connecting and MK,HK,EX versions do knockdown now
+-recoded shikusen to more resemble ssfiv ae
+-added landing animations for all versions of shijusen
+-recoded kasatushi, added direction change to ex version
+-added new lvl 1 super
+-fixed gethit hitboxes
+-fixed recovery hitboxes
+-made a lvl 3 portrait
+-fixed animations and timings for lvl3
+
+cr.lk, st cl.mp, any fuhaijin
+f.mk, st.lp,cr.mk, senpusha
+Fwd jump mp, any shikusen
+Fwd jump mp, ex shikusen, ex senpusha
+Fuhaijin hold, close mp, Fuhaijin Release, mp,(lk, mk or ex senpusha)
+Fuhaijin hold, close mk(1st Hit), Fuhaijin Release, mp,(lk, mk or ex senpusha)
+Fuhaijin hold, close mp, Fuhaijin Release, cr.mk,(lk, mk or ex senpusha)
+Corner: Fuhaijin Store, close mp, Fuhaijin Release, cr.lk, Fuhaijin
+Corner: Fuhaijin Store, Any normal, Fuhaijin Release, Any normal, Senpusha
+Corner: Fuhaijin Store x2, Far s.hp, release 1, s.mp, release 2,s.mp, senpusha
+Corner: Fuhaijin Store x2, Cr.HP , release 1, s.mp, release 2,s.mp, senpusha

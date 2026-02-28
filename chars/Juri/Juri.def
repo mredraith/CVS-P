@@ -5,44 +5,41 @@
 [Info]
 name ="Juri Han"
 displayname ="Juri"
-versiondate =02,17,2021
+versiondate =06,06,2014
 mugenversion =1.0
-author ="chucho & Prime";Edited by Proud of Ragequittin
-pal.defaults =1,5,4,1,2,3
+author ="chucho & Prime"
+pal.defaults =4,5,6,1,2,3
 
 ; Files for the player
 localCoord  = 428,240
 [Files]
-movelist = movelist.dat
 cmd     =Juri.cmd
 cns     =Coding/System.cns
 st      =Coding/System.cns
 stcommon =common1.cns
 sprite  =JuriHan.sff
 anim    =Juri.air
-sound   =JuriJAP.snd
-pal1=Pals/JuriHan01.act
-pal2=Pals/Juri05.act
-pal3=Pals/Juri06.act
+sound   =JuriENG.snd
 pal4=Pals/Juri04.act
-pal5=Pals/Juri02.act
-pal6=Pals/Juri03.act
+pal5=Pals/Juri05.act
+pal6=Pals/Juri06.act
+pal1=Pals/JuriHan01CVS.act
+pal2=Pals/Juri02.act
+pal3=Pals/Juri03.act
 pal7=Pals/Juri07.act
 pal8=Pals/Juri08.act
 pal9=Pals/Juri09.act
-pal10=Pals/Juri10.act
+pal10=Pals/Juri09.act
 pal11=Pals/JuriHanRYU.act
 pal12=Pals/JuriHanKEN.act
 st1=Coding/Normal.cns
 st2=Coding/Specials.cns
 st3=Coding/Helpers.cns
-st4=custom.cns
+st4=Coding/Supers.cns
+st5=custom.cns
 
 
 ; Arcade mode
 [Arcade]
 intro.storyboard =
 ending.storyboard =
-
-
-; FEINT CANCEL PATCHED
