@@ -9,6 +9,7 @@ displayname = "Mega Man"
 ; Files for the player
 localCoord  = 428,240
 [Files]
+movelist = movelist.dat
 cmd = nesmegaman.cmd ;Command set
 cns = nesmegaman.cns ;Constants
 st = nesmegaman.cns ;States

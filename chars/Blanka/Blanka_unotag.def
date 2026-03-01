@@ -13,7 +13,7 @@ pal.defaults=1,2,3,4,5,6,7,8,9,10,11,12
 localCoord  = 428,240
 
 [Files]
-movelist = Blanka_unotag\movelist.dat
+movelist = movelist.dat
 cmd =Blanka_unotag\Command.cmd
 cns =ConstantsCvS.cns
 st =Blanka_unotag\System.st

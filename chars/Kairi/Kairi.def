@@ -19,7 +19,7 @@ pal.defaults = 1
 localCoord  = 428,240
 
 [Files]
-movelist = states\movelist.dat
+movelist = movelist.dat
 sprite = states\kairi.sff
 anim = states\kairi.air
 sound = states\kairi.snd

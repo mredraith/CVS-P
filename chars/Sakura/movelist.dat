@@ -1,28 +1,42 @@
-<#f0f000>:Special Moves:</>
-roll / dodge			[~F]
-nekketsuhadouken			_QCF_QCF^X/^Y_+^Y/^Z
-sakurasenkuu			_DSF^X/^Y_+^Y/^Z
-shungokusatsu			^X^X_F_+^A_+^Z
-haruissen			_D_F_D_B^X/^Y/^Z_+^Y/^Z/^X
-MVCharuichiban			_D_F_D_B^A/^B_+^B/^C
-midarezakura			_QCF_D_DF^A/^B/^C
-haruichiban			_QCB_QCB^A/^B/^C
-shinkuuhadouken			_QCF_QCF^X/^Y/^Z
-shinkuutengyouhadouken			_QCB_QCB^X/^Y/^Z
-EXshou'ouken			_DSF^X/^Y_+^Y/^Z
-EXkuuchuushunpuukyaku			_QCB^A/^B_+^B/^C
-EXshunpuukyaku			_QCB^A/^B_+^B/^C
-EXoukakyaku			_QCF^A/^B_+^B/^C
-EXhadoushou			_QCF^X/^Y_+^Y/^Z
-EXtengyouhadoushou			_QCB^X/^Y_+^Y/^Z
-shou'ouken			_DSF^X
-sakuraotoshi			_DSF^A
-kuuchuushunpukyaku			_QCB^A
-shunpukyaku			_QCB^A
-oukakyaku			_QCF^A
-hadouken			_QCF^X
-tengyouhadouken			_QCB^X
-modechange			_D_D_D^A
-Zero Counter			_DSF^X/^Y/^Z
-powercharge			[^B]
-extaunt			_D_D^S
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

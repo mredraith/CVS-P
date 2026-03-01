@@ -1,43 +1,42 @@
-<#f0f000>:Special Moves:</>
-Roll Forward			[~F]
-Roll Backward			[~B]
-Yoga Catastrophe			_QCF/_F_QCF/_B^X/_D_+/_F^Y/^X_+^Z/^Y
-MAX Yoga Legend			_QCB_QCB^X/^Y_+^Y/^Z
-MAX Yoga Strike			_QCB_QCB^A/^B_+^B/^C
-MAX Yoga Stream			_QCF_QCF^A/^B_+^B/^C
-MAX Yoga Inferno			_QCF_QCF^X/^Y_+^Y/^Z
-Yoga Legend			_QCB_QCB^X/^Y/^Z
-Yoga Strike			_QCB_QCB^A/^B/^C
-Yoga Stream			_QCF_QCF^A/^B/^C
-Yoga Inferno			_QCF_QCF^X/^Y/^Z
-Yoga Recover			_DSF^X_+^Y_+^Z
-Aerial Yoga Teleport			_DSF^X_+^Y_+^Z
-Yoga Teleport			_DSF^X_+^Y_+^Z
-EX Yoga Grasp			_QCF^A/^B_+^B/^C
-EX Yoga Blast			_F_D_B^A/^B_+^B/^C
-EX Yoga Flame			_F_D_B^X/^Y_+^Y/^Z
-EX Yoga Fire			_QCF^X/^Y_+^Y/^Z
-Yoga Grasp			_QCF^A/^B/^C
-Yoga Blast			_F_D_B^A/^B/^C
-Yoga Flame			_F_D_B^X/^Y/^Z
-Yoga Fire			_QCF^X/^Y/^Z
-Zero Counter			_QBD^X/^Y/^Z
-Power Charge			[^B]
-Throw			[~F]
-Air Throw			[~F]
-Drill Kick Heavy			[~D]
-Drill Kick Medium			[~D]
-Drill Kick Light			[~D]
-Drill Zutsuki			[~D]
-Standing Far/Close Heavy Punch			[~B]
-Standing Far/Close Heavy Kick			[~B]
-Standing Far/Close Medium Punch			[~B]
-Standing Far/Close Medium Kick			[~B]
-Standing Light Punch			[~B]
-Standing Light Kick			[~B]
-Crouching Heavy Punch			[~B ~D]
-Crouching Heavy Kick			[~B ~D]
-Crouching Medium Punch			[~B ~D]
-Crouching Medium Kick			[~B ~D]
-Crouching Light Punch			[~B ~D]
-Crouching Light Kick			[~B ~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

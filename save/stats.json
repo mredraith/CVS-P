@@ -1,5 +1,5 @@
 {
-  "playtime": 9492.25,
+  "playtime": 9534.47,
   "modes": {
     "training": {
       "playtime": 0,
@@ -164,10 +164,11 @@
       }
     },
     "versus": {
-      "playtime": 45.65,
-      "clear": 1,
+      "playtime": 87.87,
+      "clear": 2,
       "clearcount": {
-        "ryu": 1
+        "ryu": 1,
+        "guile": 1
       }
     }
   }

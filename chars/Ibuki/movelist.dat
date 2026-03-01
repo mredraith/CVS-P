@@ -1,26 +1,42 @@
-<#f0f000>:Special Moves:</>
-Roll Forward			[~F]
-Roll Backward			[~B]
-Hashinsho			_QCB_QCB^X/^Y_+^Y/^Z
-EX Raida			_F_D_DB^X/^Y_+^Y/^Z
-EX Hien			_DSB^A/^B_+^B/^C
-EX Tsumuji			_QCB^A/^B_+^B/^C
-EX Kazekiri			_DSF^A/^B_+^B/^C
-EX Kunai			_QCF^X/^Y_+^Y/^Z
-Raida			_F_D_DB^X/^Y/^Z
-Hien			_DSB^A/^B/^C
-Tsumuji			_QCB^A/^B/^C
-Kazekiri			_DSF^A/^B/^C
-Kunai			_QCF^X/^Y/^Z
-Zero Counter			_QBD^X/^Y/^Z
-Power Charge			[^B]
-Throw			[~F]
-Air Throw			[~F ~F]
-Sazan			[~D]
-You men			[~B]
-Crouching Heavy Punch			[~D]
-Crouching Heavy Kick			[~D]
-Crouching Medium Punch			[~D]
-Crouching Medium Kick			[~D]
-Crouching Light Punch			[~D]
-Crouching Light Kick			[~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

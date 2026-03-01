@@ -1,393 +1,42 @@
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
 
-; Movelists made by ShadenXa.
-; _________________________________________
-;| Game/Universal Mechanics |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-[Legend]
-text = "Directional Inputs:"
-text = "→: Forward"
-text = "←: Back"
-text = "↑: Up / Jump"
-text = "↓: Down / Crouch"
-text = " "
-text = "Button Abbreviations:"
-text = "LP (x), MP (y), HP (z): Light, Medium, Heavy Punch"
-text = "LK (a), MK (b), HK (c): Light, Medium, Heavy Kick"
-text = "W: Echo / Tag Shift Fwd"
-text = "D: Tag Shift Back"
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
 
-;====================<MOVEMENT & DEFENSE>====================
-[Command]
-name = "ROLL / SPOT DODGE"
-command =
-time = 0
-text = "Roll (move): → or ← + LP + LK"
-text = "Spot Dodge (in place): LP + LK (Neutral)"
-text = "Invincible movement options to evade attacks."
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
 
-[Command]
-name = "SUPER JUMP"
-command =
-time = 0
-text = "Input: Tap ↓ then ↑ quickly"
-text = "A high jump that travels further than normal."
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
 
-[Command]
-name = "FLOAT"
-command =
-time = 0
-text = "Input: Tap ↓ then ↑ quickly then hold up to"
-text = "Float and Down to fast fall. This can also"
-text = "Be Done While Attacking"
-text = "A jump that allows for mix ups".
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
 
-[Command]
-name = "AIRDASH"
-command =
-time = 0
-text = "Input: →→ or ←← in the air"
-text = "Standard speed normally."
-text = "Becomes fast TELEPORT speed in Awakening Mode."
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
 
-[Command]
-name = "PARRY"
-command =
-time = 0
-text = "Input: Tap → (High/Mid) or ↓ (Low) just before impact."
-text = "Deflects an attack without taking chip damage."
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
 
-[Command]
-name = "GUARD CANCEL / ALPHA COUNTER"
-command =
-time = 0
-text = "Input: → + LP + LK (While Blocking)"
-text = "Cost: 1 Bar."
-text = "Counter attack directly out of blockstun."
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
 
-;====================<OFFENSIVE MECHANICS>====================
-[Command]
-name = "RUSH DASH"
-command =
-time = 0
-text = "Input: Press any Attack button while Dashing (→→)"
-text = "Performs a sliding attack from a run."
-
-[Command]
-name = "DASH CANCEL"
-command =
-time = 0
-text = "Input: Tap →→ after a grounded normal hits/blocks."
-text = "Cancels the recovery of the move to extend pressure."
-
-[Command]
-name = "ECHOES"
-command =
-time = 0
-text = "Input: Hold 'W' while performing a Special Move."
-text = "Creates a clone that performs the move, consuming Echo Meter."
-
-[Command]
-name = "NEUTRAL CANCEL"
-command =
-time = 0
-text = "Input: HP + LK (z + a)"
-text = "Cost: 1000 Power (1 Bar)"
-text = "Cancels any attack on hit/block. Resets you to neutral state"
-text = "and briefly vacuums/binds the opponent for extended combos."
-
-[Command]
-name = "PERFECT BREAKER"
-command =
-time = 0
-text = "Input: HP + MK (z + b)"
-text = "Condition: While getting hit (Hitstun)"
-text = "Invincible shockwave that blows the opponent away."
-text = "Uses a COOLDOWN system, not Meter."
-
-[Command]
-name = "CUSTOM COMBO / POWER UP"
-command =
-time = 0
-text = "Input: HP + HK (z + c)"
-text = "Cost: 1 Bar"
-text = "Enters a powered-up state or begins a Custom Combo."
-
-[Command]
-name = "AWAKENING"
-command =
-time = 0
-text = "Condition: Health drops below 20%"
-text = "Automatic Activation. Grants the following buffs:"
-text = "1. 100% Damage Increase."
-text = "2. 50% Defense Increase."
-text = "3. Immunity to Chip Damage."
-text = "4. Airdashes become incredibly fast."
-
-;====================<OTHER>====================
-[Command]
-name = "METER CHARGE"
-command =
-time = 0
-text = "Input: Hold MP + MK (y + b)"
-text = "Manually build Super Meter."
-
-[Command]
-name = "FIRST CLASH"
-command =
-time = 0
-text = "Chance to attack before the round starts."
-
-[Command]
-name = "TAG SHIFT"
-command =
-time = 0
-text = "Input: 'W' (Forward) or 'D' (Back)"
-text = "Switches between characters in Team Mode."
-
-; _________________________________________
-;|         Common Fighting Game Inputs      |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-[Command]
-name = "Quarter Circle Forward (QCF)"
-command =
-time = 0
-text = "Input: ↓↘→ + Attack"
-
-[Command]
-name = "Dragon Punch (DP)"
-command =
-time = 0
-text = "Input: →↓↘ + Attack"
-
-[Command]
-name = "Half Circle Back (HCB)"
-command =
-time = 0
-text = "Input: →↘↓↙← + Attack"
-
-
-; _________________________________________
-;|              Character Moves             |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;====================<SPECIAL MOVES>====================
-[Command]
-name = "412k"
-command = 
-time = 0
-text = "412k: ↙↓ + 2K"
-
-[Command]
-name = "412p"
-command = 
-time = 0
-text = "412p: ↙↓ + MK+HP / MK+LP / MK+MP"
-
-[Command]
-name = "M-11 Type: Dangerous Arch1"
-command = 
-time = 0
-text = "M-11 Type: Dangerous Arch1: ↓↘→ + LK"
-
-[Command]
-name = "M-11 Type: Dangerous Arch2"
-command = 
-time = 0
-text = "M-11 Type: Dangerous Arch2: ↓↘→ + MK"
-
-[Command]
-name = "M-11 Type: Dangerous Arch3"
-command = 
-time = 0
-text = "M-11 Type: Dangerous Arch3: ↓↘→ + HK"
-
-[Command]
-name = "M-11 Type: Dangerous ArchEX"
-command = 
-time = 0
-text = "M-11 Type: Dangerous ArchEX: ↓↘→ + 2K"
-
-[Command]
-name = "M-19 Type: Blitz Cannon1"
-command = 
-time = 0
-text = "M-19 Type: Blitz Cannon1: →↓↘ + LK"
-
-[Command]
-name = "M-19 Type: Blitz Cannon2"
-command = 
-time = 0
-text = "M-19 Type: Blitz Cannon2: →↓↘ + MK"
-
-[Command]
-name = "M-19 Type: Blitz Cannon3"
-command = 
-time = 0
-text = "M-19 Type: Blitz Cannon3: →↓↘ + HK"
-
-[Command]
-name = "M-19 Type: Blitz CannonEX"
-command = 
-time = 0
-text = "M-19 Type: Blitz CannonEX: →↓↘ + 2K"
-
-[Command]
-name = "M-4 Type: Vapour Cannon1"
-command = 
-time = 0
-text = "M-4 Type: Vapour Cannon1: ↓↙ + MK+LP"
-
-[Command]
-name = "M-4 Type: Vapour Cannon2"
-command = 
-time = 0
-text = "M-4 Type: Vapour Cannon2: ↓↙ + MK+MP"
-
-[Command]
-name = "M-4 Type: Vapour Cannon3"
-command = 
-time = 0
-text = "M-4 Type: Vapour Cannon3: ↓↙ + MK+HP"
-
-[Command]
-name = "M-4 Type: Vapour CannonEX"
-command = 
-time = 0
-text = "M-4 Type: Vapour CannonEX: ↓↙ + MK+HP+LP / MK+HP+MP / MK+LP+MP"
-
-[Command]
-name = "a"
-command = 
-time = 0
-text = "a: LK"
-
-[Command]
-name = "a+x"
-command = 
-time = 0
-text = "a+x: LK+LP"
-
-[Command]
-name = "b"
-command = 
-time = 0
-text = "b: MK"
-
-[Command]
-name = "b+y"
-command = 
-time = 0
-text = "b+y: MK+MP"
-
-[Command]
-name = "c"
-command = 
-time = 0
-text = "c: HK"
-
-[Command]
-name = "c+z"
-command = 
-time = 0
-text = "c+z: HK+HP"
-
-[Command]
-name = "s"
-command = 
-time = 0
-text = "s: Start"
-
-[Command]
-name = "x"
-command = 
-time = 0
-text = "x: LP"
-
-[Command]
-name = "y"
-command = 
-time = 0
-text = "y: MP"
-
-[Command]
-name = "z"
-command = 
-time = 0
-text = "z: HP"
-;====================<SUPER MOVES>====================
-[Command]
-name = "BunkerBuster"
-command = 
-time = 0
-text = "BunkerBuster: ↓↘→↓↙ + MK+HP / MK+LP / MK+MP"
-
-[Command]
-name = "BunkerBusterMAX"
-command = 
-time = 0
-text = "BunkerBusterMAX: ↓↘→↓↙ + MK+HP+LP / MK+HP+MP / MK+LP+MP"
-
-[Command]
-name = "Maxima Laser"
-command = 
-time = 0
-text = "Maxima Laser: ↓↙↓↙ + MK+MK+HP+LP / MK+MK+HP+MP / MK+MK+LP+MP"
-
-[Command]
-name = "Maxima Lift1"
-command = 
-time = 0
-text = "Maxima Lift1: ↓↙ + MK+LK"
-
-[Command]
-name = "Maxima Lift2"
-command = 
-time = 0
-text = "Maxima Lift2: ↓↙ + MK+MK"
-
-[Command]
-name = "Maxima Lift3"
-command = 
-time = 0
-text = "Maxima Lift3: ↓↙ + 2K"
-
-[Command]
-name = "Maxima LiftEX"
-command = 
-time = 0
-text = "Maxima LiftEX: ↓↙ + MK+HK+LK / MK+HK+MK / MK+LK+MK"
-
-[Command]
-name = "Maxima Revenger"
-command = 
-time = 0
-text = "Maxima Revenger: ↓↙↓↙ + MK+MK+HK / MK+MK+LK / MK+MK+MK"
-
-[Command]
-name = "Maxima RevengerMAX"
-command = 
-time = 0
-text = "Maxima RevengerMAX: ↓↙↓↙ + MK+MK+HK+LK / MK+MK+HK+MK / MK+MK+LK+MK"
-
-[Command]
-name = "System 1: Maxima Scramble1"
-command = 
-time = 0
-text = "System 1: Maxima Scramble1: ↓↘→ + LP"
-
-[Command]
-name = "System 1: Maxima Scramble2"
-command = 
-time = 0
-text = "System 1: Maxima Scramble2: ↓↘→ + MP"
-
-[Command]
-name = "System 1: Maxima Scramble3"
-command = 
-time = 0
-text = "System 1: Maxima Scramble3: ↓↘→ + HP"
-
-[Command]
-name = "System 1: Maxima ScrambleEX"
-command = 
-time = 0
-text = "System 1: Maxima ScrambleEX: ↓↘→ + 2P"
+More commands will be added later

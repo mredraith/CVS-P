@@ -1,34 +1,42 @@
-<#f0f000>:Special Moves:</>
-EX Ducking			_QCF^A/^B/^C_+^B/^C/^A
-Light Ducking			_QCF^A
-Strong Ducking			_QCF^B
-Fierce Ducking			_QCF^C
-EX Jet Upper			_DSF^X/^Y/^Z_+^Y/^Z/^X
-Light Jet Upper			_DSF^X
-Strong Jet Upper			_DSF^Y
-Fierce Jet Upper			_DSF^Z
-EX Machine Gun Blow			_QCF^Y/^X_+^Z/^X
-Light Machine Gun Blow			_QCF^X
-Strong Machine Gun Blow			_QCF^Y
-Fierce Machine Gun Blow			_QCF^Z
-EX Cross-Counter			_QCB^X/^Y/^Z_+^Y/^Z/^X
-Cross-Counter			_QCB^X
-EX Back Swing Blow			_QCB^A/^B/^C_+^B/^C/^A
-Light Back Swing Blow			_F_D_F_QCB^A
-Strong Back Swing Blow			_QCB^B
-Fierce Back Swing Blow			_QCB^C
-Zero Counter			_QBD^X/^Y/^Z
-Roll Backward			[~B]
-powercharge			[^B]
-Roll Forward			[~F]
-Roll Backward			[~B]
-Throw			[~F ~B]
-Throw			[~F ~B]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
 
-<#f0f000>:Hyper Moves:</>
-MAX Rolling Thunder <#bebebe>(3000)</>			_QCF_QCF^A/^B/^C_+^B/^C/^A
-Rolling Thunder <#bebebe>(2000)</>			_QCF_QCF^A/^B/^C
-MAX Rocket Uppercut <#bebebe>(2000)</>			_QCF_QCF^X/^Y/^Z_+^Y/^Z/^X
-Rocket Uppercut <#bebebe>(1000)</>			_QCF_QCF^X/^Y/^Z
-Cork Screw Cross <#bebebe>(3000)</>			_QCB_D_DB^X/^Y_+^Y/^Z
-Cork Screw Blow <#bebebe>(1000)</>			_QCB_QCB^X/^Y/^Z
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

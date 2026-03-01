@@ -1,16 +1,42 @@
-<#f0f000>:Special Moves:</>
-Counter Movement			[~F ~F]
-Throw(Kick)			[~F ~F]
-Throw(Punch)			[~F ~F]
-Air Throw			[~F ~F]
-Roll Forward			[~F ~F]
-Roll Back			[~B ~B]
-Power Charge			[^B]
-Step Kick			[~F ~F]
-Step Kick			[~F ~F]
-Crouching Light Punch			[~D ~D]
-Crouching Medium Punch			[~D ~D]
-Crouching Strong Punch			[~D ~D]
-Crouching Light Kick			[~D ~D]
-Crouching Medium Kick			[~D ~D]
-Crouching Strong Kick			[~D ~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

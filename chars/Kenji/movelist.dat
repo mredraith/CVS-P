@@ -1,30 +1,42 @@
-<#f0f000>:Special Moves:</>
-Roll Forward			[~F]
-Roll Backward			[~B]
-Super 3			_QCF_QCF^A/^B_+^B/^C
-super 2			_QCF_QCF^X/^Y_+^Y/^Z
-super 1			_QCF_QCF^X/^Y/^Z
-super 2			_QCB_QCB^X/^Y_+^Y/^Z
-super 1			_QCB_QCB^X/^Y/^Z
-EX Special 7			_DSF^A/^B_+^B/^C
-EX Special 5			_QCB^A/^B_+^B/^C
-EX Special 4			_B_D_F^A/^B_+^B/^C
-EX Special 3			_DSB^X/^Y_+^Y/^Z
-EX Special 2			_DSF^X/^Y_+^Y/^Z
-EX Special 1			_QCF^X/^Y_+^Y/^Z
-Special 7			_DSF^A/^B/^C
-Special 5			_QCB^A/^B/^C
-Special 4			_B_D_F^A/^B/^C
-Special 3			_DSB/_DSF^X/^Y/^Z/^A
-Special 2			_DSF^X/^Y/^Z
-Special 1			_QCF^X/^Y/^Z
-Zero Counter			_QBD^X/^Y/^Z
-Power Charging			[^B]
-Throw			[~F]
-Crouching Heavy Punch			[~D]
-Crouching Heavy Punch			[~D]
-Crouching Heavy Kick			[~D]
-Crouching Medium Punch			[~D]
-Crouching Medium Kick			[~D]
-Crouching Light Punch			[~D]
-Crouching Light Kick			[~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

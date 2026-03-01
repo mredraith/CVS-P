@@ -13,6 +13,7 @@ pal.defaults =4,5,6,1,2,3
 ; Files for the player
 localCoord  = 428,240
 [Files]
+movelist = movelist.dat
 cmd     =Juri.cmd
 cns     =Coding/System.cns
 st      =Coding/System.cns

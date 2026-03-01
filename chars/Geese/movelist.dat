@@ -1,33 +1,42 @@
-<#f0f000>:Special Moves:</>
-Roll Forward			[~F]
-Roll Backward			[~B]
-Deadly Rave			_F_D_B_F^A/^B_+^B/^C
-Raising Dead End			_QCB_QCB^X/^Y_+^Y/^Z
-MAX Kyokuu Reppuu Zan			_QCF_D_DF^X/^Y_+^Y/^Z
-MAX Raising Storm			_F_D_B_D^X/^Y_+^Y/^Z
-MAX Rashoumon			_FDB/_FUB/_FUF/_FDF^A/^B_+^B/^C
-Kyokuu Reppuu Zan			_QCF_D_DF^X/^Y/^Z
-Raising Storm			_F_D_B_D^X/^Y/^Z
-Rashoumon			_FDB/_FUB/_FUF/_FDF^A/^B/^C
-EX Atemi Nage			_F_D_B^X/^Y_+^Y/^Z
-EX Jaeiken			_F_D_B^A/^B_+^B/^C
-EX Hishou Nichirin Zan			_DSF^A/^B_+^B/^C
-EX Shippuken			_QCB^X/^Y_+^Y/^Z
-EX Reppuken			_QCF^X/^Y_+^Y/^Z
-Atemi Nage			_F_D_B^X/^Y/^Z
-Jaeiken			_F_D_B^A/^B/^C
-Hishou Nichirin Zan			_DSF^A/^B/^C
-Shippuken			_QCB^X/^Y/^Z
-Double Reppuken			_QCF^X/^Y/^Z
-Reppuken			_QCF^X/^Y/^Z
-Fake Reppuken			_QCF^S
-Zero Counter			_QBD^X/^Y/^Z
-Power Charge			[^B]
-Throw			[~F]
-Floor Throw			[~D]
-CHP			[~D]
-CHK			[~D]
-CMP			[~D]
-CMK			[~D]
-CLP			[~D]
-CLK			[~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

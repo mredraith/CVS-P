@@ -1,33 +1,42 @@
-<#f0f000>:Special Moves:</>
-Roll / Dodge			[~F]
-Otoko Michi			^Z^A/_+_+/^A_B/_+_+/_B^X^X
-Jun Koku Satsu			^X^X_F^A^Z
-Chouhatsu Shinwa			_QCB_QCB^S
-Haoh Gadouken			_F_B_D_F^X/^Y_+^Y/^Z
-Shissou Buraiken			_QCF_QCF^A/^B/^C_+^B/^C/^A
-MAX Hisshou Buraiken			_QCB_QCB^A/^B/^C_+^B/^C/^A
-Hishou Buraiken			_QCB_QCB^A/^B/^C
-Oyaji Blast			_QCB_QCB^X/^Y/^Z_+^Y/^Z/^X
-MAX Shinkuu Gadouken			_QCF_QCF^X/^Y_+^Y/^Z
-Kouryuu Rekka			_QCF_QCF^A/^B/^C
-Metsu Gadouken			_QCF_QCF^X/^Y_+^Y/^Z
-Shinkuu Gadouken			_QCF_QCF^X/^Y/^Z
-Chouhatsu Densetsu			_QCF_QCF^S
-Danshura Senkuu			_DSF^X/^Y_+^Y/^Z
-EX Kouryuuken			_DSF^X/^Y_+^Y/^Z
-EX Dankuu Kyaku (2)			_F_D_B^A/^B_+^B/^C
-EX Kuuchuu Dankuu Kyaku			_QCB^A/^B_+^B/^C
-EX Dankuu Kyaku			_QCB^A/^B_+^B/^C
-EX Gadouken			_QCF^X/^Y_+^Y/^Z
-Zuki			_QCB_QCB^X/^Y/^Z
-Gadou Shoukouken			_F_B_D_F^X
-Shakunetsu Gadouken			_B_D_F^X
-Kouryuuken			_DSF^X
-Rooringu Attaku			_DSF^A
-Kuuchuu Dankuu Kyaku			_QCB^A
-Dankuu Kyaku			_QCB^A
-Gadouken			_QCF^X
-Premium Sign			_QCF^A
-Zero Counter			_DSF^X/^Y/^Z
-Power Charge			[^B]
-Rolling Taunt			_QCB^S
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

@@ -10,6 +10,7 @@ localCoord  = 428,240
 
 ; Files for the player
 [Files]
+movelist = movelist.dat
 cmd     =necro_mx_CMD.cmd
 stcommon=SVF_common1.cns
 cns     =necro_mx_BASIC_NOMX.cns

@@ -1,32 +1,42 @@
-<#f0f000>:Special Moves:</>
-double shinkuu hadouken			_QCF_QCF^X/^Y/^Z_+^A/^B/^C
-Roll Forward			[~F]
-Roll Back			[~B]
-shinshoryuuken			_QCF_D_DF^A/^B_+^B/^C
-shungokusatsu			^X^X_F_+^A_+^Z
-shinshoryuuken			_QCF_D_DF^A/^B_+^B/^C
-denjinhadouken			_QCB_QCB^X/^Y/^Z
-messatsugoushoryuu			_QCF_D_DF^A/^B/^C
-nidanshoryuutsuki			_QCF_D_DF^A/^B/^C
-shinkuutatsumakisenpuukyakku			_QCB_QCB^A/^B/^C
-shinkuuhadouken			_QCF_QCF^X/^Y/^Z
-reppujinraishou			_D_F_D_B^X/^Y/^Z
-EXshoryuken			_DSF^X/^Y_+^Y/^Z
-EXkuchuutatsumaki combo			_QCB^A/^B_+^B/^C
-EXkuchuutatsumaki			_QCB^A/^B_+^B/^C
-EXtatsumaki			_QCB^A/^B_+^B/^C
-EXryusokyaku			_QCF^A/^B_+^B/^C
-EXjoudan			_QCF^A/^B_+^B/^C
-EXhadouken			_QCF^X/^Y_+^Y/^Z
-EXshakunetsuhadouken			_F_D_B^X/^Y_+^Y/^Z
-shoryuken			_DSF^X
-classickuchuutatsumaki combo			_QCB^A
-classickuchuutatsumaki			_F_D_B^A
-kuchuutatsumaki			_QCB^A
-tatsumaki			_QCB^A
-ryusokyaku			_QCF^A
-joudansokutougeri			_QCF^A
-shakunetsuhadouken			_F_D_B^X
-hadouken			_QCF^X
-Zero Counter			_QBD^X/^Y/^Z
-powercharge			[^B]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

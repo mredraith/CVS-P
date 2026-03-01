@@ -1,49 +1,42 @@
-<#f0f000>:Special Moves:</>
-Haoh Shikoken			_F_B_D_F^X/^Y/^Z
-Kosatsu Jin			_B_DSF^X_+^Y/^Z
-Suburu Ou Shikouken			_F_B_D_F^A/^B_+^B/^C
-Built Upper			_QCF_D_DF^A/^B_+^B/^C
-Kishin Geki Max			_QCF_D_DF^X/^Y_+^Y/^Z
-Ryuko Ranbu Max			_QCF_D_B^X/^Y_+^Y/^Z
-Kishin Geki 02			_QCF_D_DF^X/^Y/^Z
-Kishin Geki			_QCF_D_DF^X/^Y/^Z
-Kyokugen Kohou			_QCF_D_DF^A/^B/^C
-Ryuko Ranbu			_QCF_D_B^X/^Y/^Z
-Light 2002 Shikouken			_F_B_D_F^X
-Medium 2002 Shikouken			_F_B_D_F^Y
-Strong 2002 Shikouken			_F_B_D_F^Z
-Strong Kohou			_DSF^Z
-Medium Kohou			_DSF^Y
-Light Kohou			_DSF^X
-Strong HienShippuKyaku			_DB_F^C
-Medium HienShippuKyaku			_DB_F^B
-Light HienShippuKyaku			_DB_F^A
-Strong HienShippuKyaku			_DB_F^C
-Medium HienShippuKyaku			_DB_F^B
-Light HienShippuKyaku			_DB_F^A
-Strong MoukoBuraiGan			_QCB^Z
-Medium MoukoBuraiGan			_QCB^Y
-Light MoukoBuraiGan			_QCB^X
-Sanchin No Kata			_D_D^X/^Y/^Z
-2002 Hien Shippu Kykau			_F_QCB^A
-2002 Medium Hien Shippu Kykau			_F_QCB^B
-2002 Strong Hien Shippu Kykau			_F_QCB^C
-ShouranKyaku			_F_QCB^A/^B/^C
-All KoohKen			_QCF^X/^Y/^Z
-Light 2002 Koohken			_QCF^X
-Medium 2002 Koohken			_QCF^Y
-Strong 2002 Koohken			_QCF^Z
-Strong Zanretsuken			_F_B_F^Z
-Medium Zanretsuken			_F_B_F^Y
-Light Zanretsuken			_F_B_F^X
-Zero Counter			_QBD^X/^Y/^Z
-Throw			[~F ~F]
-Roll Forward			[~F ~F]
-Roll Back			[~B ~B]
-Power Charge			[^B]
-Crouching Light Punch			[~D ~D]
-Crouching Medium Punch			[~D ~D]
-Crouching Strong Punch			[~D ~D]
-Crouching Light Kick			[~D ~D]
-Crouching Medium Kick			[~D ~D]
-Crouching Strong Kick			[~D ~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

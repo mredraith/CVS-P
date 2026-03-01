@@ -1,24 +1,42 @@
-<#f0f000>:Special Moves:</>
-Roll Forward			[~F]
-Roll Backward			[~B]
-Saishu Kessen Ougi: "Homura No Ken"			_F_D_DB_F_D_DB^X/^Y_+^Y/^Z
-EX 427 Shiki: Kamukakari			_F_D_B^A/^B_+^B/^C
-EX 100+ Shiki: Nataguruma			_DSF^A/^B_+^B/^C
-114 Shiki: Aragami			_QCB^X/^Y_+^Y/^Z
-EX 100 Shiki: Oniyaki			_DSF^X/^Y_+^Y/^Z
-EX Yami Barai			_QCF^X/^Y_+^Y/^Z
-427 Shiki: Kamukakari			_F_D_B^A/^B/^C
-100+ Shiki: Nataguruma			_DSF^A/^B/^C
-100 Shiki: Oniyaki			_DSF^X/^Y/^Z
-Homuragasane			_QCB^X/^Y/^Z
-Yami Barai			_QCF^X/^Y/^Z
-Zero Counter			_QBD^X/^Y/^Z
-Power Charge			[^B]
-Throw			[~F]
-Crouching Heavy Punch			[~D]
-Crouching Heavy Kick			[~D]
-Crouching Medium Punch			[~D]
-Crouching Medium Kick			[~D]
-Crouching Light Punch			[~D]
-Crouching Light Kick			[~D]
-Knockdown Heavy Punch			[~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

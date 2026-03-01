@@ -18,7 +18,7 @@ author = "Mr.Karate and Gustavo C. Moraes"
 pal.defaults = 1
 localCoord  = 428,240
 [Files]
-movelist = states\movelist.dat
+movelist = movelist.dat
 sprite = states\kairi.sff
 anim = 3v3.air
 sound = states\kairi.snd

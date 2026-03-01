@@ -12,7 +12,7 @@ pal.defaults = 1,12
 
 localCoord  = 428,240
 [Files]
-movelist = Dudley_unotag\movelist.dat
+movelist = movelist.dat
 cmd = Dudley_unotag\CommandEasy (Custom).cmd
 cns = Constants.cns
 st = Dudley_unotag\System (Custom).st

@@ -1,39 +1,42 @@
-<#f0f000>:Special Moves:</>
-Psycho Explosion			_F_B_F_B^X/^Y_+^Y/^Z
-Final Psycho Break Smasher			_B_F_B_F^X/^Y/^Z_+^Y/^Z/^X
-Final Psycho Break Smasher			_B_F_B_F^X/^Y/^Z
-MAX Psycho Cannon			_QCB_QCB^X/^Y_+^Y/^Z
-Psycho Cannon			_QCB_QCB^X/^Y/^Z
-Psycho Punisher			_F_B_F_B^X/^Y_+^Y/^Z
-MAX Heartbreak Despair			_QCF_QCF^X/^Y_+^Y/^Z
-Heartbreak Despair			_QCF_QCF^X/^Y/^Z
-MAX Knee Press Nightmare			_B_F_B_F^A/^B/^C_+^B/^C/^A
-Knee Press Nightmare			_B_F_B_F^A/^B/^C
-Super Psycho Break Smasher			_B_F_B_F^X/^Y/^Z_+^Y/^Z/^X
-Psycho Break Smasher			_B_F_B_F^X/^Y/^Z
-Psycho Shot			_B_F^X/^Y/^Z
-Vega Warp			_DSF^X_+^Y_+^Z
-EX Psycho Impact			_B_D_F^X/^Y/^Z_+^Z/^X/^Y
-Psycho Impact			_B_D_F^X/^Y/^Z
-EX Psycho Field			_F_D_B^X/^Y/^Z_+^Y/^Z/^X
-Psycho Field			_F_D_B^X/^Y/^Z
-Psycho Banisher			_DSF^X/^Y/^Z
-EX Devil Reverse			_D_U^X/^Y/^Z_+^Y/^Z/^X
-Devil Reverse			_D_U^X/^Y/^Z
-EX Head Press			_D_U^A/^B/^C_+^B/^C/^A
-Head Press			_D_U^A/^B/^C
-EX Double Knee Press			_B_F^A/^B/^C_+^B/^C/^A
-Double Knee Press			_B_F^A/^B/^C
-EX Psycho Crusher			_B_F^X/^Y/^Z_+^Y/^Z/^X
-Psycho Crusher			_B_F^X/^Y/^Z
-Throw			[~F]
-Zero Counter			_QBD^X/^Y/^Z
-Power Charge			[^B]
-Roll Backward			[~B]
-Roll Forward			[~F]
-Crouching Heavy Kick			[~D]
-Crouching Medium Kick			[~D]
-Crouching Light Kick			[~D]
-Crouching Heavy Punch			[~D]
-Crouching Medium Punch			[~D]
-Crouching Light Punch			[~D]
+== How to play ==
+^X, ^Y, ^Z: Punches
+^A, ^B, ^C: Kicks
+
+^X, ^A: Light Attacks
+^Y, ^B: Medium Attacks
+^Z, ^C: Heavy Attacks
+
+Hold away from the opponent to block attacks
+"Away" can change at any time, so watch out!
+
+_F/_B_+^P_+^P/^K_+^K = Grab
+^X_+^A: Roll
+^Y_+^B: Power Charge
+^Z_+^C: Max Mode or Custom Combo (varies by character)
+
+Use light attacks to get the enemy out of your space
+Use medium attacks to poke the enemy at a distance
+Use heavy attacks in combos and
+to punish the enemy's mistakes
+
+Gain Power naturally by attacking or getting hit
+Power is used for EX moves, Super Combos,
+and Max Mode/Custom Combo
+
+Common motion inputs:
+_QDF
+_DSF
+_QDB
+_HCF
+_HCB
+~B... _F
+~D... _U
+
+Common Super Combo motions:
+_QDF_QDF
+_QDB_QDB
+_HCF_HCF
+_HCB_HCB
+~B... _F_B_F
+
+More commands will be added later

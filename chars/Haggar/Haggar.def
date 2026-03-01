@@ -13,6 +13,7 @@ localCoord  = 428,240
 
 ; Files for the player
 [Files]
+movelist = movelist.dat
 cmd =Command.cmd
 cns =Coding/System.cns
 st =Coding/System.cns
