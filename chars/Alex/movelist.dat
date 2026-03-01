@@ -23,20 +23,22 @@ Gain Power naturally by attacking or getting hit
 Power is used for EX moves, Super Combos,
 and Max Mode/Custom Combo
 
+Combine motion inputs with button presses after
+to perform special moves
+
 Common motion inputs:
-_QDF
+_QDF, _QDB
 _DSF
-_QDB
-_HCF
-_HCB
+_HCF, _HCB
 ~B... _F
 ~D... _U
 
 Common Super Combo motions:
-_QDF_QDF
-_QDB_QDB
-_HCF_HCF
-_HCB_HCB
+_QDF_QDF, _QDB_QDB
+_HCF_HCF, _HCB_HCB
 ~B... _F_B_F
+
+Inputting two buttons simultaneously could
+perform an EX move or an Ultra Combo!
 
 More commands will be added later

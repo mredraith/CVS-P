@@ -186,7 +186,7 @@
  ;word "randomselect" on a line of its own, with no extra parameters.
  ;
  ;Examples:
- ; kfm, stages/mybg.def, includestage=0
+ ; kfm, stages/mybg.def
  ; kfm, stages/mybg.def, arcadepath=data/arcade.lua
  ; kfm, stages/mybg.def, music=sound/song.mp3, order=3, ai=8, hidden=2
  ; slot = {
@@ -196,191 +196,175 @@
  ;
  ;Insert your characters below.
 
-Mika, random, includestage=0, order=1
-Sean, random, includestage=0, order=1
-Feilong, random, includestage=0, order=1
-Dan, random, includestage=0, order=1
-Honda, random, includestage=0, order=1
-Guile, random, includestage=0, order=1
-Ryu, random, includestage=0, order=1
+Mika, random, order=1
+Sean, random, order=1
+Feilong, random, order=1
+Dan, random, order=1
+Honda, random, order=1
+Guile, random, order=1
+Ryu, random, order=1
 randomselect
-kyo, random, includestage=0, order=1
-K', random, includestage=0, order=1
-terry, random, includestage=0, order=1
-ryo, random, includestage=0, order=1
-kim, random, includestage=0, order=1
-mai, random, includestage=0, order=1
-Mary, random, includestage=0, order=1
+kyo, random, order=1
+K', random, order=1
+terry, random, order=1
+ryo, random, order=1
+kim, random, order=1
+mai, random, order=1
+Mary, random, order=1
 ; break
-Karin, random, includestage=0, order=1
-Ibuki, random, includestage=0, order=1
-T.hawk, random, includestage=0, order=1
-Blanka, random, includestage=0, order=1
-Zangief, random, includestage=0, order=1
-Charlie, random, includestage=0, order=1
-Ken, random, includestage=0, order=1
+Karin, random, order=1
+Ibuki, random, order=1
+T.hawk, random, order=1
+Blanka, random, order=1
+Zangief, random, order=1
+Charlie, random, order=1
+Ken, random, order=1
 randomselect
-Benimaru, random, includestage=0, order=1
-Kula, random, includestage=0, order=1
-Andy, random, includestage=0, order=1
-Robert, random, includestage=0, order=1
-Chang, random, includestage=0, order=1
-king, random, includestage=0, order=1
-Billy, random, includestage=0, order=1
+Benimaru, random, order=1
+Kula, random, order=1
+Andy, random, order=1
+Robert, random, order=1
+Chang, random, order=1
+king, random, order=1
+Billy, random, order=1
 ; break
-eagle, random, includestage=0, order=1
-Dudley, random, includestage=0, order=1
-yun, random, includestage=0, order=1
-Sakura, random, includestage=0, order=1
-Dhalsim, random, includestage=0, order=1
-Cammy, random, includestage=0, order=1
-Chunli, random, includestage=0, order=1
+eagle, random, order=1
+Dudley, random, order=1
+yun, random, order=1
+Sakura, random, order=1
+Dhalsim, random, order=1
+Cammy, random, order=1
+Chunli, random, order=1
 randomselect
-Daimon, random, includestage=0, order=1
-Athena, random, includestage=0, order=1
-Joe, random, includestage=0, order=1
-Takuma, random, includestage=0, order=1
-Choi, random, includestage=0, order=1
-yuri, random, includestage=0, order=1
-Yamazaki, random, includestage=0, order=1
+Daimon, random, order=1
+Athena, random, order=1
+Joe, random, order=1
+Takuma, random, order=1
+Choi, random, order=1
+yuri, random, order=1
+Yamazaki, random, order=1
 ; break
-kairi, random, includestage=0, order=1
-batsu, random, includestage=0, order=1
-demitri, random, includestage=0, order=1
-sodom, random, includestage=0, order=1
-haggar, random, includestage=0, order=1
-guy, random, includestage=0, order=1
-rose, random, includestage=0, order=1
+kairi, random, order=1
+batsu, random, order=1
+demitri, random, order=1
+sodom, random, order=1
+haggar, random, order=1
+guy, random, order=1
+rose, random, order=1
 randomselect
-iori, random, includestage=0, order=1
-rock, random, includestage=0, order=1
-tizoc, random, includestage=0, order=1
-heidern, random, includestage=0, order=1
-rick, random, includestage=0, order=1
-vanessa, random, includestage=0, order=1
-shermie, random, includestage=0, order=1
+iori, random, order=1
+rock, random, order=1
+tizoc, random, order=1
+heidern, random, order=1
+rick, random, order=1
+vanessa, random, order=1
+shermie, random, order=1
 ; break
-blair, random, includestage=0, order=1
-kyosuke, random, includestage=0, order=1
-morrigan, random, includestage=0, order=1
-rolento, random, includestage=0, order=1
-hugo, random, includestage=0, order=1
-cody, random, includestage=0, order=1
-gen, random, includestage=0, order=1
+blair, random, order=1
+kyosuke, random, order=1
+morrigan, random, order=1
+rolento, random, order=1
+hugo, random, order=1
+cody, random, order=1
+gen, random, order=1
 randomselect
-mature, random, includestage=0, order=1
-kain, random, includestage=0, order=1
-jae, random, includestage=0, order=1
-clark, random, includestage=0, order=1
-raiden, random, includestage=0, order=1
-kasumi, random, includestage=0, order=1
-hibiki, random, includestage=0, order=1
+mature, random, order=1
+kain, random, order=1
+jae, random, order=1
+clark, random, order=1
+raiden, random, order=1
+kasumi, random, order=1
+hibiki, random, order=1
 ; break
-skullo, random, includestage=0, order=1
-tiffany, random, includestage=0, order=1
-lilith, random, includestage=0, order=1
-B. B. Hood, random, includestage=0, order=1
-gouken, random, includestage=0, order=1
-maki, random, includestage=0, order=1
-ingrid, random, includestage=0, order=1
+skullo, random, order=1
+tiffany, random, order=1
+lilith, random, order=1
+B. B. Hood, random, order=1
+gouken, random, order=1
+maki, random, order=1
+ingrid, random, order=1
 randomselect
-vice, random, includestage=0, order=1
-b.jenet, random, includestage=0, order=1
-marco, random, includestage=0, order=1
-ralf, random, includestage=0, order=1
-xiangfei, random, includestage=0, order=1
-todoh, random, includestage=0, order=1
-yuki, random, includestage=0, order=1
+vice, random, order=1
+b.jenet, random, order=1
+marco, random, order=1
+ralf, random, order=1
+xiangfei, random, order=1
+todoh, random, order=1
+yuki, random, order=1
 ; break
-poison, random, includestage=0, order=1
-Evil Ryu, random, includestage=0, order=3
-bison, random, includestage=0, order=2
-sagat, random, includestage=0, order=1
-adon, random, includestage=0, order=1
-leo, random, includestage=0, order=1
-jill, random, includestage=0, order=1
+poison, random, order=1
+Evil Ryu, random, order=3
+bison, random, order=2
+sagat, random, order=1
+adon, random, order=1
+leo, random, order=1
+jill, random, order=1
 randomselect
-haohmaru, random, includestage=0, order=1
-saisyu, random, includestage=0, order=2
-geese, random, includestage=0, order=2
-rugal, random, includestage=0, order=2
-Iori Orochi, random, includestage=0, order=3
-Adelheid, random, includestage=0, order=1
-Yashiro, random, includestage=0, order=1
+haohmaru, random, order=1
+saisyu, random, order=2
+geese, random, order=2
+rugal, random, order=2
+Iori Orochi, random, order=3
+Adelheid, random, order=1
+Yashiro, random, order=1
 ; break
-Twelve, random, includestage=0, order=1
-Violent Ken, random, includestage=0, order=3
-Vega, random, includestage=0, order=2
-akuma, random, includestage=0, order=2
-Alex, random, includestage=0, order=bison, random, includestage=0, order=2
-kenji, random, includestage=0, order=1
-hiryu, random, includestage=0, order=1
+Twelve, random, order=1
+Violent Ken, random, order=3
+Vega, random, order=2
+akuma, random, order=2
+Alex, random, order=bison, random, order=2
+kenji, random, order=1
+hiryu, random, order=1
 randomselect
-nakoruru, random, includestage=0, order=1
-laurence, random, includestage=0, order=1
-krauser, random, includestage=0, order=2
-grant, random, includestage=0, order=2
-Kusanagi, random, includestage=0, order=3
-Alice, random, includestage=0, order=1
-Angel, random, includestage=0, order=1
+nakoruru, random, order=1
+laurence, random, order=1
+krauser, random, order=2
+grant, random, order=2
+Kusanagi, random, order=3
+Alice, random, order=1
+Angel, random, order=1
 ; break
-Remy, random, includestage=0, order=1
-seth, random, includestage=0, order=2
-balrog, random, includestage=0, order=2
-Urien, random, includestage=0, order=2
-Dee Jay, random, includestage=0, order=1
-hayato, random, includestage=0, order=1
-zero, random, includestage=0, order=1
+Remy, random, order=1
+seth, random, order=2
+balrog, random, order=2
+Urien, random, order=2
+Dee Jay, random, order=1
+hayato, random, order=1
+zero, random, order=1
 randomselect
-earthquake, random, includestage=0, order=1
-amakusa, random, includestage=0, order=2
-mr.big, random, includestage=0, order=2
-goenitz, random, includestage=0, order=2
-Mr.karate, random, includestage=0, order=3
-Jimmy-POTS, random, includestage=0, order=1
-Hinako, random, includestage=0, order=1
+earthquake, random, order=1
+amakusa, random, order=2
+mr.big, random, order=2
+goenitz, random, order=2
+Mr.karate, random, order=3
+Jimmy-POTS, random, order=1
+Hinako, random, order=1
 ; break
 empty
-Juni, random, includestage=0, order=1
-DivineJuli, random, includestage=0, order=1
-Elena, random, includestage=0, order=1
-Decapre, random, includestage=0, order=1
-Yang, random, includestage=0, order=1
-Q, random, includestage=0, order=1
+Juni, random, order=1
+DivineJuli, random, order=1
+Elena, random, order=1
+Decapre, random, order=1
+Yang, random, order=1
+Q, random, order=1
 randomselect
-Duo Lon, random, includestage=0, order=1
-Ash, random, includestage=0, order=1
-NeoGeegus, random, includestage=0, order=3
-Maxima, random, includestage=0, order=1
-Leona, random, includestage=0, order=1
-TungCVS, random, includestage=0, order=1
-Shingo, random, includestage=0, order=1
+Duo Lon, random, order=1
+Ash, random, order=1
+NeoGeegus, random, order=3
+Maxima, random, order=1
+Leona, random, order=1
+TungCVS, random, order=1
+Shingo, random, order=1
 ;break
 empty
-ZeroCVS, random, includestage=0, order=2
-Makoto, random, includestage=0, order=1
-Necro, random, includestage=0, order=1
-Oro, random, includestage=0, order=1
-Juri, random, includestage=0, order=1
-Gill, random, includestage=0, order=3
+ZeroCVS, random, order=2
+Makoto, random, order=1
+Necro, random, order=1
+Oro, random, order=1
+Juri, random, order=1
+Gill, random, order=3
 randomselect
-DivineEliza, random, includestage=0, order=1
-empty
-empty
-empty
-empty
-empty
-empty
-;break
-empty
-Shadow Lady, random, includestage=0, order=3
-empty
-empty
-empty
-empty
-nesmegaman, random, includestage=0, order=5
-empty
-empty
+DivineEliza, random, order=1
 empty
 empty
 empty
@@ -389,19 +373,35 @@ empty
 empty
 ;break
 empty
-Funny Ryu, random, includestage=0, order=5
-Shin Akuma, random, includestage=0, order=5
-Final Bison, random, includestage=0, order=5
-empty
-empty
-empty
-KFM, random, includestage=0, order=6
+Shadow Lady, random, order=3
 empty
 empty
 empty
 empty
-Rasetsumaru, random, includestage=0, order=3
-God Rugal, random, includestage=0, order=5
+nesmegaman, random, order=5
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+;break
+empty
+Funny Ryu, random, order=5
+Shin Akuma, random, order=5
+Final Bison, random, order=5
+empty
+empty
+empty
+KFM, random, order=6
+empty
+empty
+empty
+empty
+Rasetsumaru, random, order=3
+God Rugal, random, order=5
 empty
 ;break
 empty

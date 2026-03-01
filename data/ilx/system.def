@@ -161,8 +161,8 @@ cancel.snd = 100,2
 
 ; Submenu: Versus
 menu.itemname.menuversus = "VERSUS"
-menu.itemname.menuversus.versus = "SOLO VERSUS"
-menu.itemname.menuversus.teamversus = "TEAM VERSUS"
+menu.itemname.menuversus.versus = "SOLO P1 VS P2"
+menu.itemname.menuversus.teamversus = "TEAM P1 VS P2"
 menu.itemname.menuversus.freebattle = "P1 VS CPU" ;Ikemen feature
 menu.itemname.menuversus.versuscoop = "CO-OP VS CPU" ;Ikemen feature
 menu.itemname.menuversus.back = "BACK" ;Ikemen feature
