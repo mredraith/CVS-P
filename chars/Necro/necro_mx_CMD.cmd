@@ -1769,6 +1769,14 @@ trigger1 = ctrl
 ;
 trigger2 = movecontact && var(20) > 0 && (stateno=400||stateno=420||stateno=440||stateno=460)
 
+[State -1, powercharge]
+type = changestate
+value = 740
+trigger1 = !AIlevel
+trigger1 = command = "hold_b" && command = "hold_y"
+trigger1 = roundstate = 2 && statetype != A && ctrl
+trigger1 = power < const(data.power) && power < powermax && !var(20)
+
 ;---------------------------------------------------------------------------
 [State -1, ]
 type = ChangeState

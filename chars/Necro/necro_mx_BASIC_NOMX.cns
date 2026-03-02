@@ -583,6 +583,89 @@ trigger1 = time > 60
 v = 19
 value = 1000
 
+;POWER CHARGE 
+[Statedef 740]
+type = S
+physics = S
+movetype = I
+anim = 740
+ctrl = 0
+velset = 0, 0
+
+[State 740, Power]
+type = poweradd
+triggerall = anim = 740 && power < powermax
+trigger1 = !AIlevel && (command = "hold_b" && command = "hold_y")
+trigger2 = AIlevel
+value = 2 + ifelse(time < 60, 0, (time -60) / 10)
+
+[State 740, Snd]
+type = playsnd
+trigger1 = anim = 740 && time = 8
+value = 3 + (var(1) = 2) * 10, 5 + (var(1) = 2)
+channel = 0
+
+[State 740, Flash]
+type = palfx
+trigger1 = 1
+time = 1
+add = 75 + ceil(sin(time / 6.0 * pi) * 75), 25 + ceil(sin(time / 6.0 * pi) * 25), 0
+
+[State 740, FX]
+type = helper
+trigger1 = anim = 740 && animelemtime(2) >= 0
+trigger1 = !numhelper(7240)
+helpertype = normal
+stateno = 7240
+ID = 7240
+name = "Power Charge"
+postype = p1
+pausemovetime = 65535
+supermovetime = 65535
+ownpal = 1
+[State 740, FX]
+type = helper
+trigger1 = anim = 740 && animelemtime(2) >= 0
+trigger1 = !numhelper(7243)
+helpertype = normal
+stateno = 7243
+ID = 7243
+name = "Particles"
+postype = p1
+pausemovetime = 65535
+supermovetime = 65535
+ownpal = 1
+
+[State 740, Anim]
+type = changeanim
+triggerall = anim != 741
+trigger1 = !AIlevel && (command != "hold_b" || command != "hold_y")
+trigger2 = power >= const(data.power) || power >= powermax || roundstate != 2
+trigger3 = AIlevel && (inguarddist || p2movetype = A || p2dist x < 160)
+value = 741
+
+[State 740, Ctrl]
+type = ctrlset
+trigger1 = anim = 741
+value = 1
+
+[State 740, Snd]
+type = stopsnd
+trigger1 = anim = 741
+channel = 0
+persistent = 0
+[State 740, Snd]
+type = playsnd
+trigger1 = anim = 741 && power >= powermax
+value = 4 + (var(1) = 2) * 10, 10 -(var(1) = 2)
+channel = 0
+persistent = 0
+[State 740, End]
+type = changestate
+trigger1 = anim = 741 && !animtime
+value = 0
+ctrl = 1
+
 ;========================================================================
 ;------------------------------------------------------------------------
 ; Stand
