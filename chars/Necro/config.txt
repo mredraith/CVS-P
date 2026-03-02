@@ -9,7 +9,7 @@ Anim = 10000
 type = VarSet
 trigger1 = 1
 persistent = 1
-var(4) = 5
+var(4) = 4
 ;PUT IN var(4)= THE NUMBER OF THE OPTION YOU CHOOSE
 ;0...D-GROOVE
 ;1...R-GROOVE
