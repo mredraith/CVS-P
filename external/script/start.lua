@@ -250,14 +250,14 @@ function start.f_remapAI(ai)
 			end
 		end
 		if start.p[side].teamMode == 0 or start.p[side].teamMode == 2 then --Single or Turns
-			if (getCommandInputSource(side) == side and not main.cpuSide[side] and not main.coop) or start.challenger > 0 or gamemode('training') then
+			if (not main.cpuSide[side] and not main.coop) or start.challenger > 0 or gamemode('training') then
 				setCom(side, 0)
 			else
 				setCom(side, ai or start.f_difficulty(side, offset))
 			end
 		elseif start.p[side].teamMode == 1 then --Simul
 			if not t_ex[side] then
-				if (getCommandInputSource(side) == side and not main.cpuSide[side] and not main.coop) or start.challenger > 0 then
+				if (not main.cpuSide[side] and not main.coop) or start.challenger > 0 then
 					setCom(side, 0)
 				else
 					setCom(side, ai or start.f_difficulty(side, offset))
@@ -272,7 +272,7 @@ function start.f_remapAI(ai)
 		else --Tag
 			for i = side, #start.p[side].t_selected * 2 do
 				if not t_ex[i] and (i - 1) % 2 + 1 == side then
-					if (getCommandInputSource(side) == side and not main.cpuSide[side] and not main.coop) or start.challenger > 0 then
+					if (not main.cpuSide[side] and not main.coop) or start.challenger > 0 then
 						remapInput(i, getRemapInput(side)) --P1/3/5/7 => P1 controls, P2/4/6/8 => P2 controls
 						setCom(i, 0)
 					else
@@ -1580,10 +1580,9 @@ function start.f_matchPersistence()
 				end
 			end
 		end
-
-		-- if defeated members should be removed from team, or if life should be maintained
+		-- if defeated members should be skipped from next match, or if life should be maintained
 		if main.dropDefeated or main.persistLife then
-			local t_removeMembers = {}
+			local turnsOffset = start.p[1].turnsOffset or 0
 			-- Turns
 			if start.p[1].teamMode == 2 then
 				--for each round in the last match
@@ -1595,9 +1594,13 @@ function start.f_matchPersistence()
 							local memberIdx = (f1.MemberNo or 0) + 1
 							-- if defeated
 							if f1.KO and (f1.Life or 0) <= 0 then
-								-- remove character from team
+								-- Keep full roster for lifebar faces + hiscore, but advance turnsOffset
+								-- so defeated members are skipped in the next match.
 								if main.dropDefeated then
-									t_removeMembers[memberIdx] = true
+									turnsOffset = math.max(turnsOffset, memberIdx)
+									if start.p[1].t_selected[memberIdx] ~= nil then
+										start.p[1].t_selected[memberIdx].life = 0
+									end
 								-- or resurrect and recover character's life
 								elseif main.persistLife then
 									start.p[1].t_selected[memberIdx].life = math.max(1, f_lifeRecovery(f1.LifeMax or 0, f1.RatioLevel or 0))
@@ -1608,6 +1611,11 @@ function start.f_matchPersistence()
 							end
 						end
 					end
+				end
+				if main.dropDefeated then
+					start.p[1].turnsOffset = turnsOffset
+					local total = #start.p[1].t_selected
+					start.p[1].numChars = math.max(0, total - turnsOffset)
 				end
 			-- Single / Simul / Tag
 			else
@@ -1622,11 +1630,7 @@ function start.f_matchPersistence()
 								local memberIdx = (f.MemberNo or 0) + 1
 								-- if defeated
 								if f.KO and (f.Life or 0) <= 0 then
-									-- remove character from team
-									if main.dropDefeated then
-										t_removeMembers[memberIdx] = true
-									-- or resurrect and recover character's life
-									elseif main.persistLife then
+									if main.persistLife then
 										start.p[1].t_selected[memberIdx].life = math.max(1, f_lifeRecovery(f.LifeMax or 0, f.RatioLevel or 0))
 									end
 								-- otherwise maintain character's life
@@ -1638,14 +1642,6 @@ function start.f_matchPersistence()
 					end
 				end
 			end
-			-- drop defeated characters
-			for i = #start.p[1].t_selected, 1, -1 do
-				if t_removeMembers[i] then
-					table.remove(start.p[1].t_selected, i)
-					table.remove(start.p[1].t_selTemp, i)
-					start.p[1].numChars = start.p[1].numChars - 1
-				end
-			end
 		end
 	end
 	return start.p[1].numChars
@@ -1655,8 +1651,6 @@ end
 function start.f_game(lua)
 	clearColor(0, 0, 0)
 	if gameOption('Debug.DumpLuaTables') and start ~= nil then main.f_printTable(start.p, 'debug/t_p.txt') end
-	local p2In = getCommandInputSource(2)
-	setCommandInputSource(2, 2)
 	if lua ~= '' then
 		local t = gameOption('Common.Lua')
 		local ok = false
@@ -1694,7 +1688,6 @@ function start.f_game(lua)
 		clearColor(0, 0, 0)
 		os.exit()
 	end
-	setCommandInputSource(2, p2In)
 	return winner, tbl
 end
 
@@ -1799,7 +1792,6 @@ end
 --resets various data
 function start.f_selectReset(hardReset)
 	esc(false)
-	main.f_cmdBufReset()
 	resetGameStats()
 	setMatchNo(1)
 	setConsecutiveWins(1, 0)
@@ -1868,6 +1860,9 @@ function start.f_selectReset(hardReset)
 		start.p[side].t_selected = {}
 		start.p[side].t_selTemp = {}
 		start.p[side].t_selCmd = {}
+		-- Tracks how many leading Turns members are already defeated across matches.
+		-- Used by Survival Turns to skip them without removing from roster.
+		start.p[side].turnsOffset = 0
 	end
 	for _, v in ipairs(start.c) do
 		v.cell = -1
@@ -1885,6 +1880,14 @@ function start.f_selectReset(hardReset)
 	hook.run("start.f_selectReset")
 end
 
+-- Which command list should drive menu navigation for a given side.
+function start.f_menuCmd(side)
+	if not main.coop and side == 2 and main.cpuSide[2] then
+		return 1
+	end
+	return side
+end
+
 function start.f_selectChallenger()
 	esc(false)
 	-- Save values
@@ -1893,30 +1896,40 @@ function start.f_selectChallenger()
 	local matchNo_sav = matchno()
 	local p1ConsecutiveWins = getConsecutiveWins(1)
 	local p2ConsecutiveWins = getConsecutiveWins(2)
-
-	-- Capture current arcade input mapping before main.f_default() resets it.
+	local challengerCmd = start.challenger
+	-- Capture which physical controller slots are currently driving arcade P1 and the challenger.
 	local arcadeP1Controller = getRemapInput(1)
-	-- Resolve which controller slot should control P2 in the challenger match.
-	local challengerController = getRemapInput(start.challenger)
+	local challengerController = getRemapInput(challengerCmd)
 
-	--start challenger match
+	-- Start challenger match from a clean state.
 	main.f_default()
 
-	-- Tell versus mode which controller slot is the challenger.
-	start.challenger = challengerController
-
-	-- Ensure P1 remains the arcade player's controller, and P2 is the challenger controller.
-	remapInput(1, arcadeP1Controller)
-	remapInput(2, challengerController)
-
-	-- Ensure the select screen reads inputs from the intended controller slots.
-	setCommandInputSource(1, arcadeP1Controller)
-	setCommandInputSource(2, challengerController)
+	-- Build a clean, non-chained input mapping:
+	--   cmd list 1 -> arcade P1 physical controller
+	--   cmd list 2 -> challenger physical controller
+	-- Keep the rest as a swap-based permutation (no dual-feeding / chaining).
+	local function swapCmd(a, b)
+		if a == b then return end
+		local ra = getRemapInput(a)
+		local rb = getRemapInput(b)
+		remapInput(a, rb)
+		remapInput(b, ra)
+	end
+	-- Put arcade P1 controller on cmd 1.
+	swapCmd(1, arcadeP1Controller)
+	-- Find which cmd currently owns challengerController and swap it onto cmd 2.
+	local holder = 2
+	for i = 1, gameOption('Config.Players') do
+		if getRemapInput(i) == challengerController then
+			holder = i
+			break
+		end
+	end
+	swapCmd(2, holder)
+	-- Keep challenger flag (>0) so versus() enters challenger mode
+	start.challenger = challengerCmd
 
 	main.t_itemname.versus()
-
-	-- versus() may touch P2 input source; keep P1 source consistent.
-	setCommandInputSource(1, arcadeP1Controller)
 
 	start.f_selectReset(false)
 	if not start.f_selectScreen() then
@@ -2354,7 +2367,6 @@ function start.f_selectScreen()
 	textImgSetText(motif.select_info.record.TextSpriteData, start.f_getRecordText())
 
 	local staticDrawList = start.updateDrawList()
-	local stageResetInput = false
 	start.needUpdateDrawList = false
 
 	while not selScreenEnd do
@@ -2431,10 +2443,6 @@ function start.f_selectScreen()
 					if start.needUpdateDrawList == false then
 						start.needUpdateDrawList = DrawUpdateflag
 					end
-					--not in palmenu
-					if v.selectState == 0 and not getInput(-1, motif.select_info.cancel.key) then
-						start.p[side].inPalMenu = false
-					end
 					--draw active cursor
 					if side == 2 and motif.select_info.p2.cursor.blink then
 						local sameCell = false
@@ -2483,6 +2491,20 @@ function start.f_selectScreen()
 					start.escFlag = true
 				end
 			end
+			if start.p[side].inPalMenu then
+				local palActive = false
+				if motif.select_info.paletteselect and motif.select_info.paletteselect > 0 then
+					for _, sv in ipairs(start.p[side].t_selCmd) do
+						if sv.selectState == 1 then
+							palActive = true
+							break
+						end
+					end
+				end
+				if not palActive then
+					start.p[side].inPalMenu = false
+				end
+			end
 		end
 		--draw names
 		for side = 1, 2 do
@@ -2511,10 +2533,6 @@ function start.f_selectScreen()
 		if start.p[1].selEnd and start.p[2].selEnd and start.p[1].teamEnd and start.p[2].teamEnd then
 			restoreCursor = true
 			if main.stageMenu and not stageEnd then --Stage select
-				if not stageResetInput then
-					main.f_cmdBufReset()
-					stageResetInput = true
-				end
 				start.f_stageMenu()
 				if not timerReset then
 					timerSelect = motif.select_info.timer.displaytime
@@ -2581,10 +2599,7 @@ function start.f_selectScreen()
 		--draw fadein / fadeout
 		main.f_fadeAnim(motif.select_info)
 		--frame transition
-		if main.fadeActive or main.fadeCnt > 0 then
-			main.f_cmdBufReset()
-		elseif fadeOutStarted or start.escFlag then
-			main.f_cmdBufReset()
+		if (not main.fadeActive and main.fadeCnt <= 0) and (fadeOutStarted or start.escFlag) then
 			selScreenEnd = true
 			break --skip last frame rendering
 		end
@@ -2605,7 +2620,7 @@ function start.f_teamMenu(side, t)
 		-- Team menu has no renderable entries (e.g. itemname_order hides them).
 		-- Still allow character selection for this side if enabled.
 		if not start.p[side].selEnd and #start.p[side].t_selCmd == 0 then
-			table.insert(start.p[side].t_selCmd, {cmd = getRemapInput(side), player = side, selectState = 0})
+			table.insert(start.p[side].t_selCmd, {cmd = start.f_menuCmd(side), player = side, selectState = 0})
 		end
 		return
 	end
@@ -2633,7 +2648,7 @@ function start.f_teamMenu(side, t)
 				end
 			end
 		else
-			t_cmd = {side}
+			t_cmd = {start.f_menuCmd(side)}
 		end
 		--Calculate team cursor position
 		if start.p[side].teamMenu > #t then
@@ -2845,7 +2860,6 @@ function start.f_teamMenu(side, t)
 				start.p[side].ratio = true
 			end
 			start.p[side].teamEnd = true
-			main.f_cmdBufReset(side)
 		end
 	end
 	--t_selCmd table appending once team mode selection is finished
@@ -2863,7 +2877,7 @@ function start.f_teamMenu(side, t)
 				end
 			end
 		else
-			table.insert(start.p[side].t_selCmd, {cmd = getRemapInput(side), player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
+			table.insert(start.p[side].t_selCmd, {cmd = start.f_menuCmd(side), player = start.f_getPlayerNo(side, #start.p[side].t_selCmd + 1), selectState = 0})
 		end
 	end
 end
@@ -3305,7 +3319,6 @@ function start.f_selectMenu(side, cmd, player, member, selectState)
 							animUpdate(start.p[side].t_selTemp[member].face2_data)
 						end
 					end
-					main.f_cmdBufReset(cmd)
 					selectState = 1
 				end
 			end
@@ -3447,6 +3460,11 @@ function start.f_selectVersus(active, t_orderSelect)
 		-- prevent order select if not enabled in screenpack or if team size = 1
 		if t_orderSelect[side] then
 			t_orderSelect[side] = motif.vs_screen.orderselect.enabled and #start.p[side].t_selected > 1
+			-- In Turns Survival after any defeats, order selection would break the invariant that
+			-- defeated members are a prefix of the roster, so should be disabled.
+			if start.p[side].teamMode == 2 and (start.p[side].turnsOffset or 0) > 0 then
+				t_orderSelect[side] = false
+			end
 		end
 		-- reset loading flags
 		for _, v in ipairs(start.p[side].t_selected) do
@@ -3529,8 +3547,6 @@ function start.f_selectVersus(active, t_orderSelect)
 							sndPlay(motif.Snd, motif.vs_screen['p' .. side].value.snd[1], motif.vs_screen['p' .. side].value.snd[2])
 							snd = true
 						end
-						-- reset pressed button to prevent remapped P2 from registering P1 input
-						main.f_cmdBufReset(side)
 					end
 				end
 			end
@@ -3663,10 +3679,7 @@ function start.f_selectVersus(active, t_orderSelect)
 			fadeOutStarted = true
 			escFlag = true
 		end
-		if main.fadeActive or main.fadeCnt > 0 then
-			main.f_cmdBufReset()
-		elseif fadeOutStarted or start.escFlag then
-			main.f_cmdBufReset()
+		if (not main.fadeActive and main.fadeCnt <= 0) and (fadeOutStarted or start.escFlag) then
 			clearColor(motif.versusbgdef.bgclearcolor[1], motif.versusbgdef.bgclearcolor[2], motif.versusbgdef.bgclearcolor[3])
 			break --skip last frame rendering
 		end
@@ -3694,6 +3707,10 @@ function start.f_selectLoading(musicParams)
 	addParam("charparam.single", main.charparam.single)
 	addParam("charparam.stage", main.charparam.stage)
 	addParam("charparam.time", main.charparam.time)
+	-- Tell the engine how many leading Turns members are already defeated.
+	-- This keeps full roster for lifebar/hiscore while skipping defeated members in gameplay.
+	addParam("p1.turnsoffset", start.p[1].turnsOffset or 0)
+	addParam("p2.turnsoffset", start.p[2].turnsOffset or 0)
 	for side = 1, 2 do
 		for member, v in ipairs(start.p[side].t_selected) do
 			if not v.loading then

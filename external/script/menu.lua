@@ -554,7 +554,6 @@ end
 
 menu.movelistChar = 1
 function menu.f_init()
-	main.f_cmdBufReset()
 	esc(false)
 	togglePause(true)
 	main.pauseMenu = true
