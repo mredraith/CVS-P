@@ -611,31 +611,6 @@ trigger1 = 1
 time = 1
 add = 75 + ceil(sin(time / 6.0 * pi) * 75), 25 + ceil(sin(time / 6.0 * pi) * 25), 0
 
-[State 740, FX]
-type = helper
-trigger1 = anim = 740 && animelemtime(2) >= 0
-trigger1 = !numhelper(7240)
-helpertype = normal
-stateno = 7240
-ID = 7240
-name = "Power Charge"
-postype = p1
-pausemovetime = 65535
-supermovetime = 65535
-ownpal = 1
-[State 740, FX]
-type = helper
-trigger1 = anim = 740 && animelemtime(2) >= 0
-trigger1 = !numhelper(7243)
-helpertype = normal
-stateno = 7243
-ID = 7243
-name = "Particles"
-postype = p1
-pausemovetime = 65535
-supermovetime = 65535
-ownpal = 1
-
 [State 740, Anim]
 type = changeanim
 triggerall = anim != 741

@@ -119,8 +119,8 @@ hiscore.bgm.loopend =
 ;-------------------------------------------------------------------
 ;Title screen definition
 [Title Info]
-fadein.time = 0
-fadeout.time = 0
+fadein.time = 6
+fadeout.time = 6
 menu.pos = 120,180;640,300;1250,450;640,380
 menu.item.font = 4,2,1
 menu.item.active.font = 4,1,1, 255,221,160
@@ -399,13 +399,13 @@ welcome to my BULLLLLLSHITTTTT!!!!!!
 ;-------------------------------------------------------------------
 ;Character select definition
 [Select Info]
-fadein.time = 0
-fadeout.time = 0
+fadein.time = 6
+fadeout.time = 6
 rows = 15
 columns = 15
 wrapping = 1 ;1 to let cursor wrap around
 pos = 338,86;319,86 ;Position to draw to
-showemptyboxes = 1 ;1 to show empty boxes
+showemptyboxes = 0 ;1 to show empty boxes
 moveoveremptyboxes = 0 ;1 to allow cursor to move over empty boxes
 cell.size = 40,40;100,100 ;x,y size of each cell (in pixels)
 cell.spacing = 0,0 ;Space between each cell
@@ -841,8 +841,8 @@ start = -640,0
 ;-------------------------------------------------------------------
 [VS Screen]
 time = 420;360;200 ;Time to show screen
-fadein.time = 0
-fadeout.time = 0
+fadein.time = 10
+fadeout.time = 10
 
 ;Match text in arcade modes
 match.text = "Match %i" ;%i can be used for the match number
@@ -1196,9 +1196,9 @@ scalestart = 1.5,1.5
 enabled = 1 ;Set to 1 to enable demo mode, 0 to disable
 select.enabled = 1 ;Set to 1 to display select screen, 0 to disable
 vsscreen.enabled = 1 ;Set to 1 to display versus screen, 0 to disable
-fadein.time = 0 ;Ikemen feature
+fadein.time = 20 ;Ikemen feature
 fadein.col = 0, 0, 0 ;Ikemen feature
-fadeout.time = 0 ;Ikemen feature
+fadeout.time = 20 ;Ikemen feature
 fadeout.col = 0, 0, 0 ;Ikemen feature
 title.waittime = 3000 ;Time to wait at title before starting demo mode
 fight.endtime = 1500 ;Time to display the fight before returning to title
@@ -1242,9 +1242,9 @@ done.snd = 100, 1 ;Ikemen feature
 cancel.snd = 100, 2 ;Ikemen feature
 
 ;parameters used by both legacy and extended continue
-fadein.time = 0 ;Ikemen feature
+fadein.time = 20 ;Ikemen feature
 fadein.col = 0, 0, 0 ;Ikemen feature
-fadeout.time = 0 ;Ikemen feature
+fadeout.time = 20 ;Ikemen feature
 fadeout.col = 0, 0, 0 ;Ikemen feature
 ;overlay.window = 0, 0, 1280, 720 ;Ikemen feature
 overlay.col = 0, 0, 0 ;Ikemen feature
@@ -1739,8 +1739,8 @@ storyboard = ;Game over storyboard filename
 enabled = 1
 sounds.enabled = 0 ;Ikemen feature
 time = 460;300 ;Time to show screen
-fadein.time = 0
-fadeout.time = 0
+fadein.time = 10
+fadeout.time = 10
 ;Winner's portrait and name
 p1.offset = 0, 0
 p1.spr = 9000,1
@@ -1775,8 +1775,8 @@ mask=1
 ;It will not be displayed if the winning character has an ending.
 [Win Screen]
 enabled = 1 ;Set to 1 to show win screen, 0 to disable
-fadein.time = 0
-fadeout.time = 0
+fadein.time = 20
+fadeout.time = 30
 pose.time = 300
 wintext.text = "Congratulations!"
 wintext.font = 4,1,0
@@ -1811,8 +1811,8 @@ storyboard = ;Credits storyboard filename
 ;It will not be displayed if the winning character has an ending.
 [Survival Results Screen]
 enabled = 1
-fadein.time = 0
-fadeout.time = 0
+fadein.time = 20
+fadeout.time = 20
 show.time = 300
 winstext.text = "Rounds survived: %i" ;Use %i for win counter
 winstext.font = 4,1,0
@@ -1829,8 +1829,8 @@ roundstowin = 5 ;Number of rounds to get win pose (lose pose otherwise)
 ;-------------------------------------------------------------------
 [Time Attack Results Screen] ;Ikemen feature
 enabled = 1
-fadein.time = 0
-fadeout.time = 0
+fadein.time = 20
+fadeout.time = 20
 show.time = 300
 winstext.text = "Clear Time: %m:%s.%x"
 winstext.font = 4,1,0
@@ -1846,10 +1846,10 @@ winstext.layerno = 2
 ;-------------------------------------------------------------------
 ;Options screen definition
 [Option Info]
-fadein.time = 0
+fadein.time = 6
 fadein.col = 0, 0, 0 ;Ikemen feature
 ;fadein.anim = ;Ikemen feature
-fadeout.time = 0
+fadeout.time = 6
 fadeout.col = 0, 0, 0 ;Ikemen feature
 ;fadeout.anim = ;Ikemen feature
 title.offset = 640,60
@@ -2000,9 +2000,9 @@ start = -640,0
 ;-------------------------------------------------------------------
 ;Replay select screen definition
 [Replay Info] ;Ikemen feature
-fadein.time = 0
+fadein.time = 6
 fadein.col = 0, 0, 0
-fadeout.time = 0
+fadeout.time = 6
 fadeout.col = 0, 0, 0
 title.offset = 640,38
 title.font = 4,0,0
@@ -2063,6 +2063,7 @@ start = -640,0
 ;-------------------------------------------------------------------
 ;Pause menu screen definition
 [Menu Info] ;Ikemen feature
+enabled = 1
 fadein.time = 0
 fadein.col = 0, 0, 0
 fadeout.time = 0
@@ -2148,6 +2149,17 @@ movelist.arrow.up.scale = 1.0, 1.0
 movelist.arrow.down.offset = 0, 0
 movelist.arrow.down.facing = 1
 movelist.arrow.down.scale = 1.0, 1.0
+
+menu.itemname.back = Continue
+menu.itemname.menuinput = Button Config
+menu.itemname.menuinput.keyboard = Key Config
+menu.itemname.menuinput.gamepad = Joystick Config
+menu.itemname.menuinput.spacer = -
+menu.itemname.menuinput.inputdefault = Default
+menu.itemname.menuinput.back = Back
+menu.itemname.commandlist = How To Play
+menu.itemname.characterchange = Character Change
+menu.itemname.exit = Exit
 
 ; If custom menus are not declared, default menu screen layout is loaded.
 ; Refer to system.base.def for an example how to modify pause screen menus.
