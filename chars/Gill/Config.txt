@@ -118,6 +118,11 @@ type = VarSet
 trigger1 = PalNo = 12
 var(0) = 12 ;CHANGE THIS LINE
 
+[State 5900, Palette 93]
+type = VarSet
+trigger1 = PalNo = 93
+var(0) = 93 ;CHANGE THIS LINE
+
 ;==============================================================================================
 ;ONLY MODIFY STUFF ABOVE THIS LINE
 ;==============================================================================================
