@@ -3838,7 +3838,7 @@ pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
 guard.pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
 sparkNo = -1 + 0 * (var(33) := 8011)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
-sparkXY = 500, 500
+sparkXY = -10 + 0 * (var(35) := 120), var(36):=-1
 hitsound = s2,4
 guardsound = s130, 0
 animtype = Back
@@ -3929,10 +3929,10 @@ getpower = ifelse(!var(17), 144, 72)*!var(20), 36*!var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
 guard.pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
-sparkNo = -1 + 0 * (var(33) := 8012)
+sparkNo = -1 + 0 * (var(33) := 8011)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
-sparkXY = 500, 500
-hitsound = S2, 5
+sparkXY = -10 + 0 * (var(35) := 43), var(36) := -39
+hitsound = S2, 1
 guardsound = s130, 0
 animtype = Hard
 air.animtype = Hard
