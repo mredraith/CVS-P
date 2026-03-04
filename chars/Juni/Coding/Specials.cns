@@ -1,4 +1,4 @@
-;========================<CANNON DRILL>=============================
+;CANNON DRILL
 [Statedef 1000]
 type=S
 physics=N
@@ -276,7 +276,7 @@ value=0
 ctrl=1
 
 
-;========================<CANNON DRILL>=============================
+;CANNON DRILL
 [Statedef 1020]
 type=S
 physics=N
@@ -546,7 +546,7 @@ value=0
 ctrl=1
 
 
-;========================<AIR CANNON DRILL>=============================
+;AIR CANNON DRILL
 [Statedef 1050]
 type=A
 physics=N
@@ -779,7 +779,7 @@ value=0
 ctrl=1
 
 
-;========================<EX AIR CANNON DRILL>=============================
+;EX AIR CANNON DRILL
 [Statedef 1060]
 type=A
 physics=N
@@ -989,7 +989,7 @@ trigger1= animelemtime(3)>=0
 trigger1= pos y>-vel y
 value=1052
 
-;========================<CANNON STRIKE>=======================
+;CANNON STRIKE
 [Statedef 1100]
 type = A
 movetype = A
@@ -1138,7 +1138,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX CANNON STRIKE>=======================
+;EX CANNON STRIKE
 [Statedef 1130]
 type = A
 movetype = A
@@ -1330,7 +1330,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<MACH SLIDE>=======================
+;MACH SLIDE
 [Statedef 1200]
 type = S
 movetype = I
@@ -1402,7 +1402,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<CANNON SPIKE>=======================
+;CANNON SPIKE
 [Statedef 1300]
 type = S
 movetype = A
@@ -1871,7 +1871,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX CANNON SPIKE>=======================
+;EX CANNON SPIKE
 [Statedef 1330]
 type = S
 movetype = A
@@ -2201,7 +2201,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<SPIN KNUCKLE>=======================
+;SPIN KNUCKLE
 [Statedef 1400]
 type = S
 movetype = A
@@ -2434,7 +2434,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX SPIN KNUCKLE>=======================
+;EX SPIN KNUCKLE
 [Statedef 1430]
 type = S
 movetype = A
@@ -2693,7 +2693,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<HIT BY EX SPIN KNUCKLE>===========================
+;======================<HIT BY EX SPIN KNUCKLE====
 ;Being Launched
 [StateDef 1440]
 type = A
@@ -2857,7 +2857,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;========================<EARTH DIRECT>=======================
+;EARTH DIRECT
 [Statedef 1500]
 type    = S
 movetype= A
@@ -3318,7 +3318,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;========================<EX EARTH DIRECT>=======================
+;EX EARTH DIRECT
 [Statedef 1530]
 type    = S
 movetype= A
@@ -3681,7 +3681,7 @@ trigger1 = !Time
 y = 0
 
 
-;========================<HOOLIGAN COMBINATION>=============================
+;HOOLIGAN COMBINATION
 [Statedef 1700]
 type=S
 physics=N
@@ -3836,6 +3836,11 @@ getpower = ifelse(!var(17), 144, 72)*!var(20), 36*!var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
 guard.pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
+sparkNo = -1 + 0 * (var(33) := 8011)
+guard.sparkNo = -1 + 0 * (var(34) := 8000)
+sparkXY = 500, 500
+hitsound = s2,4
+guardsound = s130, 0
 animtype = Back
 air.animtype = Back
 fall.animtype = Back
@@ -3924,6 +3929,11 @@ getpower = ifelse(!var(17), 144, 72)*!var(20), 36*!var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
 guard.pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)
+sparkNo = -1 + 0 * (var(33) := 8012)
+guard.sparkNo = -1 + 0 * (var(34) := 8000)
+sparkXY = 500, 500
+hitsound = S2, 5
+guardsound = s130, 0
 animtype = Hard
 air.animtype = Hard
 fall.animtype = Hard
@@ -4135,7 +4145,7 @@ value=0
 ctrl=1
 
 
-;========================<FATAL LEG TWISTER>=============================
+;FATAL LEG TWISTER
 [Statedef 1730]
 type=A
 physics=N
@@ -4506,7 +4516,7 @@ trigger1= pos y>-vel y
 value=5100
 
 
-;========================<CROSS SCISSOR PRESSURE>=============================
+;CROSS SCISSOR PRESSURE
 [Statedef 1740]
 type=A
 physics=N
@@ -4865,7 +4875,7 @@ trigger1= vel y>0
 trigger1= pos y>-vel y
 value=5100
 
-;========================<AIR SPIRAL ARROW>=============================
+;AIR SPIRAL ARROW
 [StateDef 1800]
 type = A
 physics = N
@@ -5080,7 +5090,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;========================<EX AIR SPIRAL ARROW>=============================
+;EX AIR SPIRAL ARROW
 [StateDef 1830]
 type = A
 physics = N
