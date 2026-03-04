@@ -51,7 +51,11 @@
 
 ;var(58) : Game Time
 
-;fvar(0) : Hades' Orbit Projectile Priorities
+;fvar(0)[state 5900, 3] ;Change palette
+type = RemapPal
+trigger1 = 1
+source = 1,1
+dest = 1,palno : Hades' Orbit Projectile Priorities
 ;fvar(1) : Hades' Orbit Projectile Priorities
 ;fvar(5) : Amount of Corner Push
 ;fvar(10): Damage Dampener

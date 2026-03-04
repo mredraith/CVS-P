@@ -6,7 +6,7 @@ displayName = "Gill"
 versionDate = 11,29,2013
 mugenVersion = 1.0
 author = "Froz"
-pal.defaults = 4,5,6,1,2,3,10,11,12,7,8,9
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
 localCoord  = 428,240
 
 [Files]
@@ -23,17 +23,3 @@ stCommon = common1.cns
 sprite = Sprite.sff
 anim = Animation.air
 sound = Sound.snd
-
-[Palette Keymap]
-a = 1
-b = 2
-c = 3
-x = 4
-y = 5
-z = 6
-a2 = 7
-b2 = 8
-c2 = 9
-x2 = 10
-y2 = 11
-z2 = 12

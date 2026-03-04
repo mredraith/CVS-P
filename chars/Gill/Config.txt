@@ -40,6 +40,7 @@ value = var(46)
 type = VarSet
 trigger1 = StageVar(info.name) = "Hidden Shrine"
 trigger2 = StageVar(info.name) = "Gill-Eclipse"
+trigger3 = StageVar(info.name) = "Restaurant"
 var(2) = 1 ;CHANGE THIS LINE
 
 [State 5900, Allow PowerAdd Upon Resurrecting]
