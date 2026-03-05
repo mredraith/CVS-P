@@ -4,8 +4,8 @@
 ;====================<DEFINITION>====================
 [Info]
 name          = "Ryu"
-displayname   = "Ryu"
-lifebarname   = "Ryu"
+displayname   = "Evil Ryu"
+lifebarname   = "Evil Ryu"
 versiondate   = 2025
 mugenversion  = 1.1; deprecated
 ikemenversion = 1.0
@@ -17,7 +17,7 @@ portraitscale = 1.0
 [Files]
 cmd     = ryucmd.cns
 cns     = ryucns.cns
-st1     = normalryu.def
+st1     = evilryu.def
 st2     = states/ryuzss.zss
 st3     = states/ryusystem.st
 st4     = states/ryunormal.st
@@ -31,18 +31,18 @@ sprite  = ryusprite.sff
 anim    = ryuanim.air
 sound   = ryusound.snd
 movelist = movelist.dat
-pal1    = ryupalettes/default.act
-pal2    = ryupalettes/turboish.act
-pal3    = ryupalettes/sf3purple.act
-pal4    = ryupalettes/mvcblue.act
-pal5    = ryupalettes/pocketred.act
-pal6    = ryupalettes/sf5blue.act
-pal7    = ryupalettes/sf2green.act
-pal8    = ryupalettes/sf2orange.act
-pal9    = ryupalettes/sf3teal.act
-pal10   = ryupalettes/sf3grey.act
-pal11   = ryupalettes/sfa2white.act
-pal12   = ryupalettes/sf5purple.act
+pal1    = evilpalettes/sf4default.act
+pal2    = evilpalettes/cvsartwork.act
+pal3    = evilpalettes/mvcpurple.act
+pal4    = evilpalettes/sfa2brown.act
+pal5    = evilpalettes/sfa2red.act
+pal6    = evilpalettes/sfa2black.act
+pal7    = evilpalettes/dirty.act
+pal8    = evilpalettes/green.act
+pal9    = evilpalettes/nxc.act
+pal10   = evilpalettes/paleyellow.act
+pal11   = evilpalettes/anakaris.act
+pal12   = evilpalettes/shumaorange.act
 
 [Palette Keymap]
 x = 1
@@ -63,7 +63,7 @@ c2 = 12
 ;ending.storyboard = ending.def
 
 
-;==========<NORMAL RYU>==========
+;==========<EVIL RYU>==========
 [Statedef 5900]
 type = S
 anim = 9999
@@ -84,16 +84,29 @@ trigger1 = 1
 source = 1, 1
 dest = 1, palno
 
-[State 5900, Ryu Mode]
+[State 5900, Evil Ryu Mode]
 type = varset
 trigger1 = 1
-var(1) = 1
+var(1) = 2
+
+[State 5900, Change Small Portrait]
+type = remapsprite
+trigger1 = !time
+source = 9000, 0
+dest = 9000, 10
+
+;[State 5900, Maximum Health]
+;type = modifyplayer
+;trigger1 = !time
+;trigger1 = !roundsexisted
+;lifemax = 0.90 * lifemax
+;dizzypointsmax = 0.90 * dizzypointsmax
 
 [State 5900, Set PalFX 1 Colors]
 type = null
-;Blue (Default)
+;Purple (Default)
 trigger1 = 1
-trigger1 = 1 || map(palfx1_r) := 0 || map(palfx1_g) := 128 || map(palfx1_b) := 256
+trigger1 = 1 || map(palfx1_r) := 128 || map(palfx1_g) := 0 || map(palfx1_b) := 256
 
 [State 5900, Set PalFX 2 Colors]
 type = null

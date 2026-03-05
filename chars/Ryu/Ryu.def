@@ -1,34 +1,151 @@
-;***************************************************************************;
-;******************* Created in Fighter Factory Ultimate *******************;
-;******************* http://www.virtualltek.com *******************;
-;***************************************************************************;
-
+; ______________________________
+;| Ryu by Phantom.of.the.Server |
+; 
+;====================<DEFINITION>====================
 [Info]
-name = "Ryu"
-displayname = "Ryu"
-versiondate = 01,31,2013
-mugenversion = 1.0
-author = "Phantom.of.the.Server"
-pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+name          = "Ryu"
+displayname   = "Ryu"
+lifebarname   = "Ryu"
+versiondate   = 2025
+mugenversion  = 1.1; deprecated
+ikemenversion = 1.0
+author        = "Phantom.of.the.Server"
+pal.defaults  = 1, 7, 2, 8, 3, 9, 4, 10, 5, 11, 6, 12
 localCoord  = 428,240
 
 [Files]
+cmd     = ryucmd.cns
+cns     = ryucns.cns
+st1     = ryu.def
+st2     = states/ryuzss.zss
+st3     = states/ryusystem.st
+st4     = states/ryunormal.st
+st5     = states/ryuspecial.st
+st6     = states/ryusuper.st
+st7     = states/ryuhelper.st
+st8     = states/inputs.zss
+st9     = CONFIG.txt
+stcommon= common1.cns
+sprite  = ryusprite.sff
+anim    = ryuanim.air
+sound   = ryusound.snd
 movelist = movelist.dat
-sprite = Sprite.sff
-anim = Anim.air
-sound = Sound.snd
-cmd = Command.cmd
-cns = Constants.cns
-stcommon = common1.cns
-st = States\System.st
-st1 = States\Normal.st
-st2 = States\Specials.st
-st3 = States\EX-Specials.st
-st4 = States\Supers.st
-st5 = States\Helpers.st
-st6 = States\Custom.st
-st7 = States\Ryu.st
+pal1    = ryupalettes/default.act
+pal2    = ryupalettes/turboish.act
+pal3    = ryupalettes/sf3purple.act
+pal4    = ryupalettes/mvcblue.act
+pal5    = ryupalettes/pocketred.act
+pal6    = ryupalettes/sf5blue.act
+pal7    = evilpalettes/sf4default.act
+pal8    = evilpalettes/cvsartwork.act
+pal9    = evilpalettes/mvcpurple.act
+pal10   = evilpalettes/sfa2brown.act
+pal11   = evilpalettes/sfa2red.act
+pal12   = masterpalettes/sf1white.act
 
-[Arcade]
-intro.storyboard = 
-ending.storyboard = 
+[Palette Keymap]
+x = 1
+y = 2
+z = 3
+a = 4
+b = 5
+c = 6
+x2 = 7
+y2 = 8
+z2 = 9
+a2 = 10
+b2 = 11
+c2 = 12
+
+;[Arcade]
+;intro.storyboard = intro.def
+;ending.storyboard = ending.def
+
+
+;==========<PALETTE MODE SELECTION>==========
+[Statedef 5900]
+type = S
+anim = 9999
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+value = 0
+
+[State 5900, varreset]
+type = varrangeset
+trigger1 = !roundsexisted
+fvalue = 0
+
+[State 5900, Palette]
+type = remappal
+trigger1 = 1
+source = 1, 1
+dest = 1, palno
+
+[State 5900, Mode Selection]
+type = varset
+trigger1 = 1
+var(1) = ifelse(palno = 12, 3, ifelse(palno = 11, 2, 1))
+
+[State 5900, Change Name]
+type = modifyplayer
+trigger1 = !time
+trigger1 = var(1) = 1
+displayname = "Ryu"
+lifebarname = "Ryu"
+
+[State 5900, Change Name]
+type = modifyplayer
+trigger1 = !time
+trigger1 = var(1) = 2
+displayname = "Evil Ryu"
+lifebarname = "Evil Ryu"
+
+[State 5900, Change Name]
+type = modifyplayer
+trigger1 = !time
+trigger1 = var(1) = 3
+displayname = "Master Ryu"
+lifebarname = "Master Ryu"
+
+[State 5900, Change Small Portrait]
+type = remapsprite
+trigger1 = !time
+trigger1 = var(1) = 2 || var(1) = 3
+source = 9000, 0
+dest = 9000, ifelse(var(1) = 3, 11, 10)
+
+;[State 5900, Maximum Health]
+;type = modifyplayer
+;trigger1 = !time
+;trigger1 = !roundsexisted
+;trigger1 = var(1) = 2 || var(1) = 3
+;lifemax = ifelse(var(1) = 3, 0.80, ifelse(var(1) = 2, 0.90, 1.00)) * lifemax
+;dizzypointsmax = ifelse(var(1) = 3, 0.80, ifelse(var(1) = 2, 0.90, 1.00)) * dizzypointsmax
+
+[State 5900, Set PalFX 1 Colors]
+type = null
+;Blue
+trigger1 = palno = [1, 6]
+trigger1 = 1 || map(palfx1_r) := 0 || map(palfx1_g) := 128 || map(palfx1_b) := 256
+;Yellow
+trigger2 = palno = 12
+trigger2 = 1 || map(palfx1_r) := 192 || map(palfx1_g) := 128 || map(palfx1_b) := 0
+;Purple (Default)
+trigger3 = 1
+trigger3 = 1 || map(palfx1_r) := 128 || map(palfx1_g) := 0 || map(palfx1_b) := 256
+
+[State 5900, Set PalFX 2 Colors]
+type = null
+;Purple
+trigger1 = palno = 12
+trigger1 = 1 || map(palfx2_r) := 128 || map(palfx2_g) := 0 || map(palfx2_b) := 256
+;Fire (Default)
+trigger2 = 1
+trigger2 = 1 || map(palfx2_r) := 256 || map(palfx2_g) := 96 || map(palfx2_b) := 0
+
+[State 5900, End]
+type = changestate
+trigger1 = time > 0; Wait for enemy to be loaded
+value = 5901; Config

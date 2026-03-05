@@ -1,0 +1,54 @@
+<#f0f000>THROWS</>
+
+Seoi Nage							[_B/_F]_+^2P
+Tomoe Nage							[_B/_F]_+^2K
+
+<#f0f000>UNIQUE ATTACKS</>
+
+Sakotsu Wari						_F_+^Y
+Senpukyaku							_F_+^B
+Kyubi Kudaki						_F_+^Z
+Jodan Nirengeki						_CLOSE^Y, ^C
+
+<#f0f000>SPECIAL MOVES</>
+
+Hadoken_EX							_D_DF_F^P
+Shoryuken_EX						_F_D_DF^P
+Tatsumaki Senpukyaku_EX				_AIROK_D_DB_B^K
+Jodan Sokuto Geri_EX				_D_DF_F^K
+Denjin Renki						_D_D^P
+Hado no Kamae						_D_DF_F^S
+
+<#f0f000>LEVEL 1 SUPER COMBOS</>
+
+Shinku Hadoken						_D_DF_F_D_DF_F^P
+Shinku Tatsumaki Senpukyaku			_D_DB_B_D_DB_B^K
+Denjin Hadoken						_D_DB_B_D_DB_B^P
+Denjin Rengeki						_D_DF_F_D_DF_F^K
+
+<#f0f000>LEVEL 2 SUPER COMBOS</>
+
+Kaze no Ken							_D_D_D^2P
+
+<#f0f000>LEVEL 3 SUPER COMBOS</>
+
+Shin Shoryuken						_D_DF_F_D_DF_F^2K
+
+<#f0f000>SYSTEM</>
+
+Forward Dash						_F_F
+_!Run								_HOLD_F
+Back Dash							_B_B
+High Jump							_TAP_D,_U
+Hop									_TAP_U
+Hyper Hop							_TAP_D, _TAP_U
+Parry								_TAP_F / _TAP_D
+Roll								[_B/_F]_+^A_+^X
+Sidestep							^A_+^X
+_!Sidestep Attack					^P/^K
+Power Charge						^B_+^Y
+Custom Combo						_AIROK^C_+^Z
+Guard Cancel High					(during guard) _F_+^2P
+Guard Cancel Low					(during guard) _F_+^2K
+Fall Recovery						(when allowed)^P/^K
+Taunt								^S

@@ -1,0 +1,56 @@
+<#f0f000>THROWS</>
+
+Seoi Nage							[_B/_F]_+^2P
+Tomoe Nage							[_B/_F]_+^2K
+
+<#f0f000>UNIQUE ATTACKS</>
+
+Sakotsu Wari						_F_+^Y
+Senpukyaku							_F_+^B
+Tenma Kujinkyaku					(forward jump apex) _D_+^B
+Seichu Nidantsuki					_F_+^Z
+Kikokuretsuzan						^Y, ^Z, ^C
+
+<#f0f000>SPECIAL MOVES</>
+
+Hadoken_EX							_D_DF_F^P
+Shakunetsu Hadoken_EX				_F_DF_D_DB_B^P
+Shoryuken_EX						_F_D_DF^P
+Tatsumaki Senpukyaku_EX				_AIROK_D_DB_B^K
+Ryusokyaku_EX						_D_DF_F^K
+Ashura Senku						[_F_D_DF/_B_D_DB][^3P/^3K]
+
+<#f0f000>LEVEL 1 SUPER COMBOS</>
+
+Shinku Hadoken						_D_DF_F_D_DF_F^P
+Shinku Tatsumaki Senpukyaku			_D_DB_B_D_DB_B^K
+Messatsu Goshoryu					_D_DF_F_D_DF_F^K
+
+<#f0f000>LEVEL 2 SUPER COMBOS</>
+
+Metsu Shoryuken						_D_DF_F_D_DF_F^2K
+
+<#f0f000>LEVEL 3 SUPER COMBOS</>
+
+Shun Goku Satsu						^X,^X,_F,^A,^Z
+Metsu Hadoken						_D_DB_B_D_DB_B^2P
+_!Ryukoku Hadoken					_CHARGE
+
+<#f0f000>SYSTEM</>
+
+Forward Dash						_F_F
+_!Run								_HOLD_F
+Back Dash							_B_B
+High Jump							_TAP_D,_U
+Hop									_TAP_U
+Hyper Hop							_TAP_D, _TAP_U
+Parry								_TAP_F / _TAP_D
+Roll								[_B/_F]_+^A_+^X
+Sidestep							^A_+^X
+_!Sidestep Attack					^P/^K
+Power Charge						^B_+^Y
+Custom Combo						_AIROK^C_+^Z
+Guard Cancel High					(during guard) _F_+^2P
+Guard Cancel Low					(during guard) _F_+^2K
+Fall Recovery						(when allowed)^P/^K
+Taunt								^S

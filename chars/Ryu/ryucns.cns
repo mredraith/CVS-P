@@ -1,0 +1,129 @@
+; ______________________________
+;| Ryu by Phantom.of.the.Server |
+; 
+;===================<CONSTANTS>================
+
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+dizzypoints = 1000
+guardpoints = 1000
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
+sparkno = 2
+guard.sparkno = 40
+hitsound.channel = 2
+guardsound.channel = 2
+KO.echo = 0
+volumescale = 100
+intpersistindex = 0
+floatpersistindex = 0
+
+[Size]
+xscale = 1
+yscale = 1
+ground.back = 18
+ground.front = 18
+air.back = 18
+air.front = 18
+height = 60
+height.crouch = 60
+height.air = 60, 0
+height.down = 60
+attack.dist = 160
+proj.attack.dist = 80
+proj.doscale = 0
+head.pos = -1, -92
+mid.pos = -3, -58
+shadowoffset = 0
+draw.offset = 0, 0
+
+[Velocity]
+walk.fwd = 4.08
+walk.back = -3.05
+run.fwd = 5.75, 0
+run.back = -5.047, 0
+jump.neu = 0, -10.090
+jump.fwd = 3.171
+jump.back = -3.829
+runjump.fwd = 4.757, -11.604
+runjump.back = -5.744, -11.604
+air.gethit.groundrecover = -8.0, 0
+air.gethit.airrecover.mul = 0, 0
+air.gethit.airrecover.add = 0, -7.55
+air.gethit.airrecover.back = -3.50
+air.gethit.airrecover.fwd = 3.50
+air.gethit.airrecover.up = 0
+air.gethit.airrecover.down = 0
+
+[Movement]
+airjump.num = 0
+airjump.height = 0
+yaccel = 0.530
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundlevel = 0
+air.gethit.groundrecover.ground.threshold = -32
+air.gethit.groundrecover.groundlevel = 0
+air.gethit.airrecover.threshold = -1
+air.gethit.airrecover.yaccel = 0.6275
+air.gethit.trip.groundlevel = 0
+down.bounce.offset = 0, 0
+down.bounce.yaccel = 0.5
+down.bounce.groundlevel = 0
+down.friction.threshold = 2.0
+
+[Constants]
+default.ignoredefeatedenemies = 0
+super.targetdefencemul = 1.0
+default.lifetodizzypointsmul = 0
+super.lifetodizzypointsmul = 0
+;input.pauseonhitpause = 0; not necessary with current input code
+animtagenteringscreen = 5600
+animtagleavingscreen = 5610
+
+[Quotes]
+;Ryu
+victory1 = "You must defeat my Shoryuken to stand a chance."
+victory2 = "Whether we win or lose, all of our battles make us stronger."
+victory3 = "A defeat learned from is more important than an empty victory."
+victory4 = "You still have a fighting spirit in your eyes. I look forward to our next battle."
+victory5 = "Strengths... Weaknesses... Know and master all your attacks."
+victory6 = "Trying something new is to explore your true potential."
+victory7 = "I felt the spirit of a true warrior within your fists."
+victory8 = "I must leave you now. The world is waiting."
+victory9 = "In order to win, you must believe in your own potential."
+victory10 = "Train yourself well, then challenge me again."
+victory11 = "I hope you learned from our battle."
+victory12 = "Stand up and face me again. I have yet to see your best."
+victory13 = "Every defeat is a stepping stone. Keep honing your skills."
+victory14 = "Victory is also about understanding your opponent. Learn from every encounter."
+
+victory30 = "Each time I fight you, I feel something new and different..."; Ken
+victory31 = "May that scar be a reminder to both of us..."; Sagat
+victory32 = "True mastery of the Satsui no Hadou lies in restraint."; Akuma
+victory33 = "I still have much to learn before I can teach you."; Sakura
+victory34 = "A new body won't save your corrupted soul."; Dictator
+victory35 = "Ken...! What happened to you?"; Violent Ken
+
+;Evil Ryu
+victory50 = "There is no place for the weak to exist!"
+victory51 = "To lose is to prove that you are worthy to perish!"
+victory52 = "Your life is not the only thing that you are risking in battle!"
+victory53 = "To be the strongest means to be the last one standing."
+victory54 = "There's nothing to lose, when there's nothing to gain."
+victory55 = "Weakness crumbles in the face of true power."
+victory56 = "In the abyss of battle, only the strongest endure."
+victory57 = "Victory is the ultimate testament to one's strength."
+victory58 = "The path to power is paved with the defeated."
+victory59 = "The weak fall so the strong may rise."
+victory60 = "Survival is for those who deserve it."
+
+victory80 = "Embrace the darkness within or be consumed by it!"; Ryu
+victory81 = "I am the true master of the fist!"; Akuma
+victory82 = "This time I will finish you!"; Sagat
