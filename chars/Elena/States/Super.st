@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Elena by varo_hades                     |
 ; 
-;==============================================================================================
-;========================================<SUPER STATES>========================================
-;==============================================================================================
+;
+;SUPER STATES==
+;
 
-;========================<BRAVE DANCE>=============================
+;BRAVE DANCE
 [StateDef 3000]
 type = S
 physics = N
@@ -688,7 +688,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<MAX BRAVE DANCE>=============================
+;MAX BRAVE DANCE
 [StateDef 3050]
 type = S
 physics = N
@@ -1627,7 +1627,7 @@ ownpal = 1
 supermove = 0
  persistent = 0
 
-;========================<HEALING>=============================
+;HEALING
 [StateDef 3100]
 type = S
 physics = N
@@ -1636,7 +1636,7 @@ anim = 3100
 ctrl = 0
 velSet = 0,0
 sprPriority = 1
-powerAdd = -1000
+powerAdd = -2000
 faceP2 = 1
 
 [State 3100, Super Cancel Flag]
@@ -1796,7 +1796,7 @@ trigger1 = command = "EXMalletSmash"
 value = 1130
 ctrl = 0
 
-;========================<HEALING>=============================
+;MAX HEALING
 [StateDef 3150]
 type = S
 physics = N
@@ -1805,7 +1805,7 @@ anim = 3100
 ctrl = 0
 velSet = 0,0
 sprPriority = 1
-powerAdd = -2000
+powerAdd = -3000
 faceP2 = 1
 
 [State 3150, Super Cancel Flag]
@@ -1934,7 +1934,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<ULTRA BRAVE DANCE>=============================
+;ULTRA BRAVE DANCE
 [StateDef 3200]
 type = S
 physics = N
@@ -3054,7 +3054,7 @@ trigger1 = Vel Y > 0
 value = 52
 ctrl = 0
 
-;========================<SPINNING BEAT>=============================
+;SPINNING BEAT
 [StateDef 3300]
 type = S
 physics = N
@@ -3674,7 +3674,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= -60
 value = 5100 ;Hit ground
 
-;========================<MAX SPINNING BEAT>=============================
+;MAX SPINNING BEAT
 [StateDef 3350]
 type = S
 physics = N

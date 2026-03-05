@@ -764,7 +764,7 @@ value = 3150
 triggerAll = !AILevel
 triggerAll = command = "MAXHealing"
 triggerAll = RoundState = 2 && StateType != A
-triggerAll = power >= 2000 && var(20) <= 60
+triggerAll = power >= 3000 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(7) || var(8)
 
@@ -794,7 +794,7 @@ value = 3100
 triggerAll = !AILevel
 triggerAll = command = "Healing"
 triggerAll = RoundState = 2 && StateType != A
-triggerAll = power >= 1000 && var(20) <= 60
+triggerAll = power >= 2000 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(7)
 
@@ -1602,7 +1602,7 @@ type = ChangeState
 value = 3150
 triggerAll = AILevel && NumEnemy
 triggerAll = RoundState = 2 && StateType != A
-triggerAll = Power >= 2000 && var(20) <= 60
+triggerAll = Power >= 3000 && var(20) <= 60
 triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
 triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
 triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
@@ -1644,7 +1644,7 @@ type = ChangeState
 value = 3100
 triggerAll = AILevel && NumEnemy
 triggerAll = RoundState = 2 && StateType != A
-triggerAll = Power >= 1000 && var(20) <= 60
+triggerAll = Power >= 2000 && var(20) <= 60
 triggerAll = !var(16) && (var(15) < 1 || var(20) || (StateNo = [1000,4999]))
 triggerAll = !(EnemyNear, ctrl) && ((EnemyNear, StateNo != [120,155]) || EnemyNear, StateType = A)
 triggerAll = (P2BodyDist x = [-80,80]) && (P2Dist y = [-80,32])
