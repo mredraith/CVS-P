@@ -1,107 +1,46 @@
-; ______________________________
-;| Ryu by Phantom.of.the.Server |
-; 
-;====================<DEFINITION>====================
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;******************* http://www.virtualltek.com *******************;
+;***************************************************************************;
+
 [Info]
-name          = "Ryu"
-displayname   = "Ryu"
-lifebarname   = "Ryu"
-versiondate   = 2025
-mugenversion  = 1.1; deprecated
-ikemenversion = 1.0
-author        = "Phantom.of.the.Server"
-pal.defaults  = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+name = "Ryu"
+displayname = "Ryu"
+versiondate = 12,30,2012
+mugenversion = 1.0
+author = "Phantom.of.the.Server"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
 localCoord  = 428,240
-portraitscale = 1.0
-
 [Files]
-cmd     = ryucmd.cns
-cns     = ryucns.cns
-st1     = normalryu.def
-st2     = states/ryuzss.zss
-st3     = states/ryusystem.st
-st4     = states/ryunormal.st
-st5     = states/ryuspecial.st
-st6     = states/ryusuper.st
-st7     = states/ryuhelper.st
-st8     = states/inputs.zss
-st9     = CONFIG.txt
-stcommon= common1.cns
-sprite  = ryusprite.sff
-anim    = ryuanim.air
-sound   = ryusound.snd
 movelist = movelist.dat
-pal1    = ryupalettes/default.act
-pal2    = ryupalettes/turboish.act
-pal3    = ryupalettes/sf3purple.act
-pal4    = ryupalettes/mvcblue.act
-pal5    = ryupalettes/pocketred.act
-pal6    = ryupalettes/sf5blue.act
-pal7    = ryupalettes/sf2green.act
-pal8    = ryupalettes/sf2orange.act
-pal9    = ryupalettes/sf3teal.act
-pal10   = ryupalettes/sf3grey.act
-pal11   = ryupalettes/sfa2white.act
-pal12   = ryupalettes/sf5purple.act
+sprite = Sprite.sff
+anim = Anim.air
+sound = Sound.snd;RyuEnglish2.snd;
+cmd = Command.cmd
+cns = Constants.cns
+stcommon = common1.cns
+st = States\System.st
+st1 = States\Normal.st
+st2 = States\Specials.st
+st3 = States\EX-Specials.st
+st4 = States\Supers.st
+st5 = States\Helpers.st
+st6 = States\Custom.st
+st7 = States\NormalRyu.st
+pal1 = RyuPalettes\SF2LightBlue.act
+pal2 = RyuPalettes\PFRed.act
+pal3 = RyuPalettes\SF2Orange.act
+pal4 = RyuPalettes\Udon.act
+pal5 = RyuPalettes\SF4black.act
+pal6 = RyuPalettes\SF4purple.act
+pal7 = RyuPalettes\RyuInk.act
+pal8 = RyuPalettes\SFZBlue.act
+pal9 = RyuPalettes\SF2Green.act
+pal10 = RyuPalettes\PFGrey.act
+pal11 = RyuPalettes\SF4white.act
+pal12 = RyuPalettes\SF4dwhite.act
 
-[Palette Keymap]
-x = 1
-y = 2
-z = 3
-a = 4
-b = 5
-c = 6
-x2 = 7
-y2 = 8
-z2 = 9
-a2 = 10
-b2 = 11
-c2 = 12
-
-;[Arcade]
-;intro.storyboard = intro.def
-;ending.storyboard = ending.def
-
-
-;==========<NORMAL RYU>==========
-[Statedef 5900]
-type = S
-anim = 9999
-
-[State 5900, varreset]
-type = varrangeset
-trigger1 = !roundsexisted
-value = 0
-
-[State 5900, varreset]
-type = varrangeset
-trigger1 = !roundsexisted
-fvalue = 0
-
-[State 5900, Palette]
-type = remappal
-trigger1 = 1
-source = 1, 1
-dest = 1, palno
-
-[State 5900, Ryu Mode]
-type = varset
-trigger1 = 1
-var(1) = 1
-
-[State 5900, Set PalFX 1 Colors]
-type = null
-;Blue (Default)
-trigger1 = 1
-trigger1 = 1 || map(palfx1_r) := 0 || map(palfx1_g) := 128 || map(palfx1_b) := 256
-
-[State 5900, Set PalFX 2 Colors]
-type = null
-;Fire (Default)
-trigger1 = 1
-trigger1 = 1 || map(palfx2_r) := 256 || map(palfx2_g) := 96 || map(palfx2_b) := 0
-
-[State 5900, End]
-type = changestate
-trigger1 = time > 0; Wait for enemy to be loaded
-value = 5901; Config
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 
