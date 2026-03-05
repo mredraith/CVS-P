@@ -4728,18 +4728,16 @@ ignoreHitPause = 1
 [State -3, Cancel Restriction]
 type = VarSet
 triggerall = !var(20)
-trigger1 = stateno = 210
-trigger2 = stateno = 212
-trigger3 = stateno = 213
-trigger4 = (stateno = 220 && anim = 220)
-trigger5 = (stateno = 225 && (anim = 225 || (anim = 226 && animelemtime(5)>= 0)))
-trigger6 = (stateno = [260,286])
-trigger7 = (stateno = 1500 && anim = 1501) && var(1)!= 1
-trigger8 = stateno = 210 && ((anim = 211 || anim = 2110) && animelemtime(4)>= 0)
-trigger9 = stateno = 240 && ((anim = [240,241]) && animelemtime(5)>= 0)
-trigger10 = (stateno = 205 && anim = 205) && var(1) = 2
-trigger11 = stateno = 1310
-trigger12 = stateno = 1300 && var(1) = 3
+trigger1 = stateno = 212
+trigger2 = stateno = 213
+trigger3 = (stateno = 220 && anim = 220)
+trigger4 = (stateno = 225 && (anim = 225 || (anim = 226 && animelemtime(5)>= 0)))
+trigger5 = (stateno = [260,286])
+trigger6 = (stateno = 1500 && anim = 1501) && var(1)!= 1
+trigger7 = stateno = 240 && ((anim = [240,241]) && animelemtime(5)>= 0)
+trigger8 = (stateno = 205 && anim = 205) && var(1) = 2
+trigger9 = stateno = 1310
+trigger10 = stateno = 1300 && var(1) = 3
 var(6) = 1
 ignoreHitPause = 1
 
