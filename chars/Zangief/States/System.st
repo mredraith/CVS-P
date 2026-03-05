@@ -702,6 +702,11 @@ value = 100
 
 [State 110, VelSet]
 type = VelSet
+trigger1 = AnimElem = 1
+x = -1
+
+[State 110, VelSet]
+type = VelSet
 trigger1 = AnimElem = 2
 x = 6
 y = -3

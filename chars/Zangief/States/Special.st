@@ -1055,6 +1055,11 @@ channel = 1
 
 [State 220, Position]
 type = PosAdd
+trigger1 = AnimElem = 1
+x = 8
+
+[State 220, Position]
+type = PosAdd
 trigger1 = AnimElem = 2
 trigger2 = AnimElem = 3
 x = 24
@@ -1068,6 +1073,16 @@ x = 24
 type = PosAdd
 trigger1 = AnimElem = 6
 x = 10
+
+[State 220, Position]
+type = PosAdd
+trigger1 = AnimElem = 7
+x = 5
+
+[State 220, Position]
+type = PosAdd
+trigger1 = AnimElem = 8
+x = 5
 
 [State 3001, Width]
 type = Width
@@ -1543,7 +1558,7 @@ physics = N
 type = VelSet
 trigger1 = AnimElem = 4
 x = -4.5
-y = -4.5
+y = -3.5
 
 [State 903, Vel]
 type = VelAdd
