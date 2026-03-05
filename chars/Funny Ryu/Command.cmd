@@ -811,6 +811,19 @@ name = "Counter_K"
 command = /$F, b+c
 time = 8
 
+[Command]
+name = "joudana"
+command = ~F, D, DF, a
+time = 20
+[Command]
+name = "joudanb"
+command = ~F, D, DF, b
+time = 20
+[Command]
+name = "joudanc"
+command = ~F, D, DF, c
+time = 20
+
 
 ;===================< OTHER >===================
 
@@ -1323,29 +1336,6 @@ trigger4 = var(20) && ((stateno = [1000, 2999]) || stateno = 52 && (prevstateno 
 trigger5 = var(20) && (stateno = [1000, 2999]) && numhelper(stateno + 5)
 trigger5 = helper(stateno + 5), var(3)
 
-[State -1, classickuchuutatsumaki combo]
-type = changestate
-value = 1270
-triggerall = !AIlevel
-triggerall = var(1) != 1
-triggerall = statetype = A
-triggerall = command = "qcba" || command = "qcbb" || command = "qcbc"
-trigger1 = !var(20) && (movecontact = [1, 24]) && stateno = 222
-
-[State -1, classickuchuutatsumaki]
-type = changestate
-value = 1270
-triggerall = !AIlevel
-triggerall = command = "hcba" || command = "hcbb" || command = "hcbc"
-triggerall = roundstate = 2 && statetype = A && var(9) != 2
-trigger1 = ctrl || (stateno = [100,101]) || ((stateno = [200, 299]) && time <= 2) || (stateno = 200 || stateno = 230 || stateno = 245)
-trigger2 = !var(6) && (stateno = [260, 285]) && (movecontact = [1, 8])
-trigger3 = var(20) && (stateno = [200, 289])
-trigger4 = var(20) && ((stateno = [1000, 2999]) || stateno = 52 && (prevstateno = [1000, 2999])) && movecontact
-trigger5 = var(20) && (stateno = [1000, 2999]) && numhelper(stateno + 5)
-trigger5 = helper(stateno + 5), var(3)
-trigger6 = (movecontact = [1, 8]) && (stateno = 265 && anim = 265)
-
 [State -1, kuchuutatsumaki]
 type = changestate
 value = 1250
@@ -1391,8 +1381,8 @@ trigger5 = helper(stateno + 5), var(3)
 type = changestate
 value = 1300
 triggerall = !AIlevel
-triggerall = command = "qcfa" || command = "qcfb" || command = "qcfc"
-triggerall = var(1) != 2 && roundstate = 2 && statetype != A
+triggerall = command = "joudana" || command = "joudanb" || command = "joudanc"
+triggerall = roundstate = 2 && statetype != A
 trigger1 = ctrl || (stateno = [100,101]) || ((stateno = [200, 299]) && time <= 2) || (stateno = 200 || stateno = 230 || stateno = 245)
 trigger2 = !var(6) && (stateno = [200, 255]) && stateno != 225 && stateno != 207 && (movecontact = [1, 8])
 trigger3 = var(20) && (stateno = [200, 289])

@@ -1,0 +1,36 @@
+Version: nightly
+Build Time: 2026.03.01
+Platform: windows (amd64)
+Vulkan 1.3.239
+RAM in Use: 91 MB / OS Reserved: 247 MB
+Active Goroutines: 2
+Timestamp: 2026-03-05 16:11:14
+
+Engine error
+
+Error: .\external\script\start.lua:1672: chars/Funny Ryu/Command.cmd:1393:
+Missing ')' before 
+stack traceback:
+	[G]: in function 'game'
+	.\external\script\start.lua:1672: in function 'f_game'
+	.\external\script\start.lua:2159: in function 'launchFight'
+	external/script/default.lua:2: in function <external/script/default.lua:0>
+	.\external\script\start.lua:1742: in function 'f'
+	external/script/main.lua:2442: in function 'loop'
+	external/script/main.lua:3664: in main chunk
+	[G]: ?
+
+Go stack traceback:
+goroutine 1 [running, locked to thread]:
+runtime/debug.Stack()
+	runtime/debug/stack.go:24 +0x65
+main.handlePanic({0x7ff74046efc0?, 0xc001b5a000})
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:363 +0x3e5
+main.realMain.func1()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:66 +0x2a
+panic({0x7ff74046efc0, 0xc001b5a000})
+	runtime/panic.go:884 +0x213
+main.realMain()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:206 +0x585
+main.main()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:59 +0x17
