@@ -402,13 +402,8 @@ type = S
 physics = S
 movetype = I
 anim = 101
-ctrl = 1
+ctrl = 0
 sprpriority = 1
-
-[State 101, Vel]
-type = velset
-trigger1 = 1
-x = 0
 
 [State 101, Snd]
 type = playsnd
