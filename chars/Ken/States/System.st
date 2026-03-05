@@ -479,7 +479,7 @@ type = S
 physics = S
 moveType = I
 anim = 101
-ctrl = 0
+ctrl = 1
 sprPriority = 1
 
 [State 101, Stopping Sound]
@@ -504,6 +504,11 @@ ownpal = 1
 type = ChangeState
 trigger1 = !AILevel && command = "holdup"
 value = 40
+
+[State 101, VelSet]
+type = VelSet
+trigger1 = 1
+x = 0
 
 [State 101, End]
 type = ChangeState
@@ -638,13 +643,12 @@ sysvar(1) = 1
 
 [State 110, VarSet -> Not Running]
 type = VarSet
-triggerAll = Time <= 10
 trigger1 = !AILevel && command != "holdfwd"
 sysvar(1) = 0
 
 [State 110, ChangeState to Running]
 type = ChangeState
-trigger1 = Time = 10 && sysvar(1)
+trigger1 = Time >= 1 && sysvar(1)
 value = 100
 
 [State 110, End]

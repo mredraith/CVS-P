@@ -689,18 +689,10 @@ value = 100
 type = VelSet
 trigger1 = AnimElem = 2
 x = 6.875
-y = -2.5
-
-[State 110, VelAdd]
-type = VelAdd
-trigger1 = AnimElemTime(2) > 0
-x = -0.09765625
-y = 0.29296875
 
 [State 110, End]
 type = ChangeState
-trigger1 = AnimElemTime(2) >= 0
-trigger1 = pos y > -vel y
+trigger1 = 1
 value = 111
 
 

@@ -76,11 +76,6 @@ sparkxy = -10 + 0 * (var(35) := 76), var(36) := -84
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 200, ChangeAnimElem]
 type = ChangeAnim
@@ -188,11 +183,6 @@ sparkxy = -10 + 0 * (var(35) := 45), var(36) := -80
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 201, ChangeAnimElem]
 type = ChangeAnim
@@ -741,11 +731,6 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-70
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 230, ChangeAnimElem]
 type = ChangeAnim
@@ -839,11 +824,6 @@ sparkxy = -10 + 0*(var(35):=58), var(36):=-68
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 231, ChangeAnimElem]
 type = null;ChangeAnim
@@ -1417,11 +1397,6 @@ sparkxy = -10 + 0*(var(35):=72), var(36):=-58
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 400, Idle]
 type = StateTypeSet
@@ -1812,11 +1787,6 @@ sparkxy = -10 + 0*(var(35):=68), var(36):=-2
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 430, ChangeAnimElem]
 type = ChangeAnim
@@ -2185,11 +2155,6 @@ sparkxy = -10 + 0*(var(35):=55), var(36):=-66
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 600, ChangeAnimElem]
 type = ChangeAnim
@@ -2488,11 +2453,6 @@ sparkxy = -10 + 0*(var(35):=55), var(36):=-108
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
-fall.envshake.time = 1
-fall.envshake.freq = 0.0
-fall.envshake.ampl = 0
-fall.envshake.phase = 0.0
 
 [State 630, ChangeAnimElem]
 type = ChangeAnim
