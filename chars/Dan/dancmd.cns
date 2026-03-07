@@ -1,0 +1,2236 @@
+; ______________________________
+;| Dan by Phantom.of.the.Server |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;==============================================================================================
+;=======================================< COMMAND FILE >=======================================
+;==============================================================================================
+
+;=======================< BUTTON REMAPPING >========================
+
+[Remap]
+x = x
+y = y
+z = z
+a = a
+b = b
+c = c
+s = s
+
+
+;=======================< DEFAULT VALUES >========================
+
+[Defaults]
+command.time = 16
+command.buffer.time = 1
+
+
+;=======================< COMMANDS >========================
+
+[Command]
+name = "D"
+command = D
+time = 1
+
+[Command]
+name = "DF"
+command = DF
+time = 1
+
+[Command]
+name = "F"
+command = F
+time = 1
+
+[Command]
+name = "UF"
+command = UF
+time = 1
+
+[Command]
+name = "U"
+command = U
+time = 1
+
+[Command]
+name = "UB"
+command = UB
+time = 1
+
+[Command]
+name = "B"
+command = B
+time = 1
+
+[Command]
+name = "DB"
+command = DB
+time = 1
+
+[Command]
+name = "$D"
+command = $D
+time = 1
+
+[Command]
+name = "$F"
+command = $F
+time = 1
+
+[Command]
+name = "$U"
+command = $U
+time = 1
+
+[Command]
+name = "$B"
+command = $B
+time = 1
+
+[Command]
+name = "/D"
+command = /D
+time = 1
+
+[Command]
+name = "/DF"
+command = /DF
+time = 1
+
+[Command]
+name = "/F"
+command = /F
+time = 1
+
+[Command]
+name = "/UF"
+command = /UF
+time = 1
+
+[Command]
+name = "/U"
+command = /U
+time = 1
+
+[Command]
+name = "/UB"
+command = /UB
+time = 1
+
+[Command]
+name = "/B"
+command = /B
+time = 1
+
+[Command]
+name = "/DB"
+command = /DB
+time = 1
+
+[Command]
+name = "/$D"
+command = /$D
+time = 1
+
+[Command]
+name = "/$F"
+command = /$F
+time = 1
+
+[Command]
+name = "/$U"
+command = /$U
+time = 1
+
+[Command]
+name = "/$B"
+command = /$B
+time = 1
+
+[Command]
+name = "~D"
+command = ~D
+time = 1
+
+[Command]
+name = "~DF"
+command = ~DF
+time = 1
+
+[Command]
+name = "~F"
+command = ~F
+time = 1
+
+[Command]
+name = "~UF"
+command = ~UF
+time = 1
+
+[Command]
+name = "~U"
+command = ~U
+time = 1
+
+[Command]
+name = "~UB"
+command = ~UB
+time = 1
+
+[Command]
+name = "~B"
+command = ~B
+time = 1
+
+[Command]
+name = "~DB"
+command = ~DB
+time = 1
+
+[Command]
+name = "~$D"
+command = ~$D
+time = 1
+
+[Command]
+name = "~$F"
+command = ~$F
+time = 1
+
+[Command]
+name = "~$U"
+command = ~$U
+time = 1
+
+[Command]
+name = "~$B"
+command = ~$B
+time = 1
+
+[Command]
+name = "a"
+command = a
+time = 1
+
+[Command]
+name = "b"
+command = b
+time = 1
+
+[Command]
+name = "c"
+command = c
+time = 1
+
+[Command]
+name = "x"
+command = x
+time = 1
+
+[Command]
+name = "y"
+command = y
+time = 1
+
+[Command]
+name = "z"
+command = z
+time = 1
+
+[Command]
+name = "s"
+command = s
+time = 1
+
+[Command]
+name = "/a"
+command = /a
+time = 1
+
+[Command]
+name = "/b"
+command = /b
+time = 1
+
+[Command]
+name = "/c"
+command = /c
+time = 1
+
+[Command]
+name = "/x"
+command = /x
+time = 1
+
+[Command]
+name = "/y"
+command = /y
+time = 1
+
+[Command]
+name = "/z"
+command = /z
+time = 1
+
+[Command]
+name = "/s"
+command = /s
+time = 1
+
+[Command]
+name = "~a"
+command = ~a
+time = 1
+
+[Command]
+name = "~b"
+command = ~b
+time = 1
+
+[Command]
+name = "~c"
+command = ~c
+time = 1
+
+[Command]
+name = "~x"
+command = ~x
+time = 1
+
+[Command]
+name = "~y"
+command = ~y
+time = 1
+
+[Command]
+name = "~z"
+command = ~z
+time = 1
+
+[Command]
+name = "~s"
+command = ~s
+time = 1
+
+
+;=======================< REQUIRED >========================
+
+[Command]
+name = "holdfwd"
+command = /$F
+time = 1
+
+[Command]
+name = "holdback"
+command = /$B
+time = 1
+
+[Command]
+name = "holdup"
+command = /$U
+time = 1
+
+[Command]
+name = "holddown"
+command = /$D
+time = 1
+
+[Command]
+name = "FF"
+command = F, F
+time = 10
+
+[Command]
+name = "BB"
+command = B, B
+time = 10
+
+[Command]
+name = "recovery"
+command = x
+time = 1
+
+[Command]
+name = "recovery"
+command = y
+time = 1
+
+[Command]
+name = "recovery"
+command = z
+time = 1
+
+
+;=======================< CHECKS >========================
+
+[Command]
+name = "rlsdir"
+command = ~$F
+time = 1
+
+[Command]
+name = "rlsdir"
+command = ~$B
+time = 1
+
+[Command]
+name = "rlsdir"
+command = ~$U
+time = 1
+
+[Command]
+name = "rlsdir"
+command = ~$D
+time = 1
+
+
+;=======================< OTHER >========================
+
+[Command]
+name = "counter_F"
+command = $F
+time = 1
+buffer.time = 5
+
+[Command]
+name = "counter_a"
+command = a
+time = 1
+buffer.time = 2
+
+[Command]
+name = "counter_b"
+command = b
+time = 1
+buffer.time = 2
+
+[Command]
+name = "counter_c"
+command = c
+time = 1
+buffer.time = 2
+
+[Command]
+name = "counter_x"
+command = x
+time = 1
+buffer.time = 2
+
+[Command]
+name = "counter_y"
+command = y
+time = 1
+buffer.time = 2
+
+[Command]
+name = "counter_z"
+command = z
+time = 1
+buffer.time = 2
+
+
+;==================================================================================================
+;==========================================< STATE -1 >============================================
+;==================================================================================================
+
+[Statedef -1]
+
+[State -1, Guard Cancel]
+type = changestate
+value = 750
+triggerall = !AIlevel
+triggerall = command = "counter_F"
+triggerall = (command = "counter_a" + command = "counter_b" + command = "counter_c") >= 2 || (command = "counter_x" + command = "counter_y" + command = "counter_z") >= 2
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && !map(customcombo)
+trigger1 = stateno = [150, 153]
+trigger1 = gethitvar(ctrltime) > 5
+
+[State -1, Roll Recovery]
+type = changestate
+value = 5220
+triggerall = !AIlevel
+triggerall = command = "a" || command = "b" || command = "c"
+triggerall = roundstate = 2 && alive
+triggerall = !hitfall || gethitvar(fall.recover)
+trigger1 = !ctrl
+trigger1 = stateno = 5040 || stateno = 5050
+trigger1 = vel y > 0
+trigger1 = pos y >= const(movement.air.gethit.groundrecover.ground.threshold)
+
+[State -1, Chouhatsu Shinwa End]
+type = changestate
+value = 4101
+trigger1 = map(shinwa) < 0
+trigger1 = !ishelper
+trigger1 = statetype != A && movetype != H
+
+[State -1, Forward Roll]
+type = changestate
+value = 720
+triggerall = !AIlevel
+triggerall = map(cmd_ax)
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ifelse(map(cmd_reverse), command = "/$B", command = "/$F")
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(customcombo) && map(normalcancel)
+
+[State -1, Back Roll]
+type = changestate
+value = 725
+triggerall = !AIlevel
+triggerall = map(cmd_ax)
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ifelse(map(cmd_reverse), command = "/$F", command = "/$B")
+trigger1 = ctrl || stateno = [100, 101]
+
+[State -1, Dodge]
+type = changestate
+value = 710
+triggerall = !AIlevel
+triggerall = map(cmd_ax)
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+
+[State -1, Otoko Michi]
+type = changestate
+value = 4000
+triggerall = !AIlevel
+triggerall = map(cmd_otoko)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 3000 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != 4000)
+trigger3 = stateno = [200, 499]
+
+[State -1, Hishou Buraiken]
+type = changestate
+value = 3200
+triggerall = !AIlevel
+triggerall = map(cmd_214214k)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 2000 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != [3200, 3299])
+
+[State -1, Gadou Shoukouken]
+type = changestate
+value = 3400
+triggerall = !AIlevel
+triggerall = map(cmd_236236pp)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 2000 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != 3400)
+
+[State -1, Zuki]
+type = changestate
+value = 3500
+triggerall = !AIlevel
+triggerall = map(cmd_214214p)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != 3500)
+
+[State -1, Kouryuu Rekka]
+type = changestate
+value = 3100
+triggerall = !AIlevel
+triggerall = map(cmd_236236k)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != 3100)
+
+[State -1, Shinkuu Gadouken]
+type = changestate
+value = 3000
+triggerall = !AIlevel
+triggerall = map(cmd_236236p)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != 3000)
+
+[State -1, Chouhatsu Shinwa]
+type = changestate
+value = 4100
+triggerall = !AIlevel
+triggerall = map(cmd_214214s)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 3000 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != 4100)
+
+[State -1, Chouhatsu Densetsu]
+type = changestate
+value = 3300
+triggerall = !AIlevel
+triggerall = map(cmd_236236s)
+triggerall = roundstate = 2 && statetype != A
+triggerall = (power >= 1000 || map(shinwa) > 0) && map(customcombo) <= 60
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(supercancel) || (map(hypercancel) && stateno != 3300)
+
+[State -1, EX Kouryuuken]
+type = changestate
+value = 1130
+triggerall = !AIlevel
+triggerall = map(cmd_623pp)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, EX Air Dankuukyaku]
+type = changestate
+value = 1270
+triggerall = !AIlevel
+triggerall = map(cmd_root214kk)
+triggerall = roundstate = 2 && statetype = A
+triggerall = (map(jumptype) != [1, 2]) && pos y <= -24
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, EX Dankuukyaku]
+type = changestate
+value = 1220
+triggerall = !AIlevel
+triggerall = map(cmd_214kk)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, EX Danretsuken]
+type = changestate
+value = 1430
+triggerall = !AIlevel
+triggerall = map(cmd_214pp)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, EX Gadouken]
+type = changestate
+value = 1010
+triggerall = !AIlevel
+triggerall = map(cmd_236pp)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, EX Premium Sign]
+type = changestate
+value = 1320
+triggerall = !AIlevel
+triggerall = map(cmd_236kk)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, EX Saikyouryuu Bougyo]
+type = changestate
+value = ifelse(statetype = S, 1510, ifelse(statetype = C, 1511, 1512))
+triggerall = !AIlevel
+triggerall = map(cmd_mashpp)
+triggerall = roundstate = 2
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+trigger1 = stateno = [150, 155]
+
+[State -1, EX Taunt]
+type = changestate
+value = 2820
+triggerall = !AIlevel
+triggerall = map(cmd_22s)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Kouryuuken]
+type = changestate
+value = 1100
+triggerall = !AIlevel
+triggerall = map(cmd_623p)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Air Dankuukyaku]
+type = changestate
+value = 1250
+triggerall = !AIlevel
+triggerall = map(cmd_root214k)
+triggerall = roundstate = 2 && statetype = A
+triggerall = (map(jumptype) != [1, 2]) && pos y <= -24
+triggerall = !map(shinwa)
+trigger1 = ctrl
+trigger2 = map(specialcancel)
+
+[State -1, Dankuu Kyaku]
+type = changestate
+value = 1200
+triggerall = !AIlevel
+triggerall = map(cmd_214k)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Danretsuken]
+type = changestate
+value = 1400
+triggerall = !AIlevel
+triggerall = map(cmd_214p)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Gadouken]
+type = changestate
+value = 1000
+triggerall = !AIlevel
+triggerall = map(cmd_236p)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Premium Sign]
+type = changestate
+value = 1300
+triggerall = !AIlevel
+triggerall = map(cmd_236k)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Rolling Taunt Forward]
+type = changestate
+value = 2810
+triggerall = !AIlevel
+triggerall = map(cmd_236s)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Rolling Taunt Back]
+type = changestate
+value = 2811
+triggerall = !AIlevel
+triggerall = map(cmd_214s)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+
+[State -1, Saikyouryuu Bougyo]
+type = changestate
+value = ifelse(statetype = S, 1500, ifelse(statetype = C, 1501, 1502))
+triggerall = !AIlevel
+triggerall = map(cmd_mashp)
+triggerall = roundstate = 2
+triggerall = !map(shinwa)
+trigger1 = stateno = [150, 155]
+
+[State -1, Throw]
+type = changestate
+value = 800
+triggerall = !AIlevel
+triggerall = command = "holdfwd" || command = "holdback"
+triggerall = map(cmd_pp) || map(cmd_kk)
+triggerall = roundstate = 2 && statetype = S
+triggerall = !map(shinwa)
+trigger1 = ctrl
+
+[State -1, Custom Combo]
+type = changestate
+value = ifelse(statetype = A, 765, 760)
+triggerall = !AIlevel
+triggerall = map(cmd_cz)
+triggerall = roundstate = 2
+triggerall = power >= 2000
+triggerall = !map(customcombo)
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+
+[State -1, Power Charge]
+type = changestate
+value = 740
+triggerall = !AIlevel
+triggerall = command = "/b" && command = "/y"
+triggerall = roundstate = 2 && statetype != A
+triggerall = power < const(data.power) && power < powermax
+triggerall = !map(customcombo)
+trigger1 = ctrl || stateno = [100, 101]
+
+[State -1, Saikyo Jawbreaker]
+type = changestate
+value = 255
+triggerall = !AIlevel
+triggerall = map(cmd_c)
+triggerall = command = "holdback"
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, Saikyo Chop]
+type = changestate
+value = 225
+triggerall = !AIlevel
+triggerall = map(cmd_z)
+triggerall = command = "holdfwd"
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, CHK]
+type = changestate
+value = 450
+triggerall = !AIlevel
+triggerall = map(cmd_c)
+triggerall = statetype != A && command = "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, CHP]
+type = changestate
+value = 420
+triggerall = !AIlevel
+triggerall = map(cmd_z)
+triggerall = statetype != A && command = "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, SHK]
+type = changestate
+value = 250
+triggerall = !AIlevel
+triggerall = map(cmd_c)
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, SHP]
+type = changestate
+value = ifelse(abs(map(truebodydistx)) <= (const(size.xscale) * 30), 221, 220);37 (* 2) in CvS2
+triggerall = !AIlevel
+triggerall = map(cmd_z)
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, CMK]
+type = changestate
+value = 440
+triggerall = !AIlevel
+triggerall = map(cmd_b)
+triggerall = statetype != A && command = "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, CMP]
+type = changestate
+value = 410
+triggerall = !AIlevel
+triggerall = map(cmd_y)
+triggerall = statetype != A && command = "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, SMK]
+type = changestate
+value = 240
+triggerall = !AIlevel
+triggerall = map(cmd_b)
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, SMP]
+type = changestate
+value = 210
+triggerall = !AIlevel
+triggerall = map(cmd_y)
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = map(normalcancel)
+trigger3 = stateno = 195 || stateno = 2801
+trigger3 = prevstateno = [200, 699]
+trigger3 = time = [1, 5]
+
+[State -1, CLK]
+type = changestate
+value = 430
+triggerall = !AIlevel
+triggerall = map(cmd_a)
+triggerall = statetype != A && command = "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = (stateno = 200 || stateno = 400 || stateno = 430) && time >= 5
+trigger3 = map(normalcancel)
+trigger4 = stateno = 195 || stateno = 2801
+trigger4 = prevstateno = [200, 699]
+trigger4 = time = [1, 5]
+
+[State -1, CLP]
+type = changestate
+value = 400
+triggerall = !AIlevel
+triggerall = map(cmd_x)
+triggerall = statetype != A && command = "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = (stateno = 200 || stateno = 400 || stateno = 430) && time >= 5
+trigger3 = map(normalcancel)
+trigger4 = stateno = 195 || stateno = 2801
+trigger4 = prevstateno = [200, 699]
+trigger4 = time = [1, 5]
+
+[State -1, SLK]
+type = changestate
+value = 230
+triggerall = !AIlevel
+triggerall = map(cmd_a)
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = (stateno = 200 || stateno = 400 || stateno = 430) && time >= 5
+trigger3 = map(normalcancel)
+trigger4 = stateno = 195 || stateno = 2801
+trigger4 = prevstateno = [200, 699]
+trigger4 = time = [1, 5]
+
+[State -1, SLP]
+type = changestate
+value = 200
+triggerall = !AIlevel
+triggerall = map(cmd_x)
+triggerall = statetype != A && command != "holddown"
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = (stateno = 200 || stateno = 400 || stateno = 430) && time >= 5
+trigger3 = map(normalcancel)
+trigger4 = stateno = 195 || stateno = 2801
+trigger4 = prevstateno = [200, 699]
+trigger4 = time = [1, 5]
+
+[State -1, AHK]
+type = changestate
+value = 650
+triggerall = !AIlevel
+triggerall = map(cmd_c)
+triggerall = !map(shinwa) && statetype = A
+trigger1 = ctrl
+trigger2 = map(normalcancel)
+
+[State -1, AHP]
+type = changestate
+value = 620
+triggerall = !AIlevel
+triggerall = map(cmd_z)
+triggerall = !map(shinwa) && statetype = A
+trigger1 = ctrl
+trigger2 = map(normalcancel)
+
+[State -1, AMK]
+type = changestate
+value = 640
+triggerall = !AIlevel
+triggerall = map(cmd_b)
+triggerall = !map(shinwa) && statetype = A
+trigger1 = ctrl
+trigger2 = map(normalcancel)
+
+[State -1, AMP]
+type = changestate
+value = 610
+triggerall = !AIlevel
+triggerall = map(cmd_y)
+triggerall = !map(shinwa) && statetype = A
+trigger1 = ctrl
+trigger2 = map(normalcancel)
+
+[State -1, ALK]
+type = changestate
+value = 630
+triggerall = !AIlevel
+triggerall = map(cmd_a)
+triggerall = !map(shinwa) && statetype = A
+trigger1 = ctrl
+trigger2 = map(normalcancel)
+
+[State -1, ALP]
+type = changestate
+value = 600
+triggerall = !AIlevel
+triggerall = map(cmd_x)
+triggerall = !map(shinwa) && statetype = A
+trigger1 = ctrl
+trigger2 = map(normalcancel)
+
+[State -1, Forward Dash]
+type = changestate
+value = 102
+triggerall = !AIlevel
+triggerall = map(cmd_66)
+triggerall = roundstate = 2 && statetype = S
+trigger1 = ctrl
+
+[State -1, Back Dash]
+type = changestate
+value = 105
+triggerall = !AIlevel
+triggerall = map(cmd_44)
+triggerall = roundstate = 2 && statetype = S
+trigger1 = ctrl || stateno = 101
+
+[State -1, Air Taunt]
+type = changestate
+value = 2802
+triggerall = !AIlevel
+triggerall = map(cmd_s)
+triggerall = roundstate = 2 && statetype = A
+triggerall = !map(shinwa)
+trigger1 = ctrl
+trigger2 = map(specialcancel)
+
+[State -1, Crouching Taunt]
+type = changestate
+value = 2801
+triggerall = !AIlevel
+triggerall = map(cmd_s)
+triggerall = command = "holddown"
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel)
+trigger2 = prevstateno != 195 && prevstateno != 2801
+
+[State -1, Standing Taunt]
+type = changestate
+value = 195
+triggerall = !AIlevel
+triggerall = map(cmd_s)
+triggerall = command != "holddown"
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
+trigger2 = map(specialcancel) && p2movetype = H
+trigger2 = prevstateno != 195 && prevstateno != 2801
+
+[State -1, Chouhatsu Shinwa Special Taunt]
+type = changestate
+value = 4140
+triggerall = map(shinwa)
+triggerall = map(cmd_s)
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = stateno = [4120, 4121]
+trigger3 = stateno = [4130, 4131] && animelemtime(16) >= 0
+
+[State -1, Chouhatsu Shinwa Forward Rolling Taunt]
+type = changestate
+value = 4130
+triggerall = map(shinwa)
+triggerall = command = "x" || command = "y" || command = "z" || command = "a" || command = "b" || command = "c"
+triggerall = command = "holddown" && command = "holdfwd"
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = stateno = [4120, 4121]
+trigger3 = stateno = 4131 || stateno = 4130 && animelemtime(16) >= 0
+trigger3 = (map(strength_alt) != 1 && command = "x") || (map(strength_alt) != 2 && command = "y") || (map(strength_alt) != 3 && command = "z")
+trigger4 = stateno = 4131 || stateno = 4130 && animelemtime(16) >= 0
+trigger4 = (map(strength_alt) != 4 && command = "a") || (map(strength_alt) != 5 && command = "b") || (map(strength_alt) != 6 && command = "c")
+trigger5 = stateno = 4140
+
+[State -1, Chouhatsu Back Rolling Taunt]
+type = changestate
+value = 4131
+triggerall = map(shinwa)
+triggerall = command = "x" || command = "y" || command = "z" || command = "a" || command = "b" || command = "c"
+triggerall = command = "holddown" && command = "holdback"
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = stateno = [4120, 4121]
+trigger3 = stateno = 4130 || stateno = 4131 && animelemtime(16) >= 0
+trigger3 = (map(strength_alt) != 1 && command = "x") || (map(strength_alt) != 2 && command = "y") || (map(strength_alt) != 3 && command = "z")
+trigger4 = stateno = 4130 || stateno = 4131 && animelemtime(16) >= 0
+trigger4 = (map(strength_alt) != 4 && command = "a") || (map(strength_alt) != 5 && command = "b") || (map(strength_alt) != 6 && command = "c")
+trigger5 = stateno = 4140
+
+[State -1, Chouhatsu Shinwa Crouching Taunt]
+type = changestate
+value = 4121
+triggerall = map(shinwa)
+triggerall = command = "x" || command = "y" || command = "z" || command = "a" || command = "b" || command = "c"
+triggerall = command = "holddown"
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = stateno = 4120
+trigger3 = stateno = [4130, 4131] && animelemtime(16) >= 0
+trigger4 = stateno = 4121
+trigger4 = (map(strength_alt) != 1 && command = "x") || (map(strength_alt) != 2 && command = "y") || (map(strength_alt) != 3 && command = "z")
+trigger5 = stateno = 4121
+trigger5 = (map(strength_alt) != 4 && command = "a") || (map(strength_alt) != 5 && command = "b") || (map(strength_alt) != 6 && command = "c")
+trigger6 = stateno = 4140
+
+[State -1, Chouhatsu Shinwa Standing Taunt]
+type = changestate
+value = 4120
+triggerall = map(shinwa)
+triggerall = command = "x" || command = "y" || command = "z" || command = "a" || command = "b" || command = "c"
+triggerall = command != "holddown"
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+trigger2 = stateno = 4121
+trigger3 = stateno = [4130, 4131] && animelemtime(16) >= 0
+trigger4 = stateno = 4120
+trigger4 = (map(strength_alt) != 1 && command = "x") || (map(strength_alt) != 2 && command = "y") || (map(strength_alt) != 3 && command = "z")
+trigger5 = stateno = 4120
+trigger5 = (map(strength_alt) != 4 && command = "a") || (map(strength_alt) != 5 && command = "b") || (map(strength_alt) != 6 && command = "c")
+trigger6 = stateno = 4140
+
+[State -1, Chouhatsu Shinwa Air Taunt]
+type = changestate
+value = 4822
+triggerall = map(shinwa)
+triggerall = command = "x" || command = "y" || command = "z" || command = "a" || command = "b" || command = "c" || command = "s"
+triggerall = roundstate = 2 && statetype = A
+trigger1 = ctrl
+trigger2 = stateno = [100, 106] && pos y < 0
+
+[State -1, Chouhatsu Shinwa Jump]
+type = changestate
+value = 40
+triggerall = map(shinwa)
+triggerall = command = "holdup"
+triggerall = roundstate = 2 && statetype != A
+trigger1 = stateno = [4120, 4140]
+
+
+;==================================================================================================
+;============================================< A.I. >==============================================
+;==================================================================================================
+
+;=========================================< A.I. SYSTEM >==========================================
+
+[State -1, AI Combo Window - Reset]
+type = mapset
+map = "ai_combowindow"
+trigger1 = 1
+value = 0
+ignorehitpause = 1
+
+[State -1, AI Combo Window - Ground]
+type = mapset
+map = "ai_combowindow"
+trigger1 = AIlevel
+trigger1 = numenemy
+trigger1 = p2movetype = H
+trigger1 = p2statetype = S || p2statetype = C
+trigger1 = p2, gethitvar(hitshaketime) > 0 || p2, gethitvar(hittime) > 0
+value = p2, gethitvar(hitshaketime) + p2, gethitvar(hittime) + 1
+ignorehitpause = 1
+
+[State -1, AI Combo Window - Air]
+type = mapset
+map = "ai_combowindow"
+trigger1 = AIlevel
+trigger1 = numenemy
+trigger1 = p2, hitshakeover = 1
+trigger1 = p2movetype = H
+trigger1 = p2statetype = A
+trigger1 = p2stateno != [5200, 5219]
+trigger1 = p2, hitfall
+trigger1 = p2, dizzy = 0
+value = (-(p2, vel y) + (((p2, vel y) ** 2 - 2 * 0.4850 * (p2, pos y)) ** 0.5)) / 0.4850
+ignorehitpause = 1
+
+[State -1, AI Combo Window - Air]
+type = mapset
+map = "ai_combowindow"
+trigger1 = AIlevel
+trigger1 = numenemy
+trigger1 = p2, hitshakeover = 0
+trigger1 = p2movetype = H
+trigger1 = p2statetype = A
+trigger1 = p2, hitfall
+trigger1 = p2, dizzy = 0
+trigger1 = p2, gethitvar(yaccel) != 0
+value = (p2, gethitvar(hitshaketime)) + ((-(p2, gethitvar(yvel)) ** 2 + (((p2, gethitvar(yvel)) - 2 * (p2, gethitvar(yaccel)) * (p2, pos y)) ** 0.5)) / (p2, gethitvar(yaccel)))
+ignorehitpause = 1
+
+[State -1, AI Combo Window - Down]
+type = mapset
+map = "ai_combowindow"
+trigger1 = AIlevel
+trigger1 = numenemy
+trigger1 = p2movetype = H
+trigger1 = p2statetype = L
+trigger1 = p2stateno != 5120
+trigger1 = p2, time < 30
+value = 60
+ignorehitpause = 1
+
+[State -1, AI Combo Window - Dizzy]
+type = mapset
+map = "ai_combowindow"
+triggerall = AIlevel
+triggerall = numenemy
+trigger1 = p2, anim = 5300
+trigger2 = p2stateno = p2, const(statedizzy)
+trigger3 = p2stateno = p2, const(stateguardbreakhit) || p2stateno = p2, const(stateguardbreakrecover)
+value = 60
+ignorehitpause = 1
+
+[State -1, AI Combo Window - Dizzy]
+type = mapset
+map = "ai_combowindow"
+trigger1 = AIlevel
+trigger1 = numenemy
+trigger1 = p2, dizzy || p2, dizzypoints <= 0
+trigger1 = p2stateno != p2, const(statedizzy)
+value = -1
+ignorehitpause = 1
+
+[State -1, AI Punish Window]
+type = null
+triggerall = AIlevel
+triggerall = numenemy
+triggerall = 1 || map(ai_p2accely) := (p2, vel y - map(ai_p2vely))
+triggerall = 1 || map(ai_p2vely) := p2, vel y
+trigger1 = p2, ctrl || p2movetype = H; || (p2movetype = A && p2, movecontact = 0 && p2, movereversed = 0)
+trigger1 = 1 || map(ai_punishwindow) := 0
+trigger2 = p2, vel y = 0
+trigger2 = 1 || map(ai_punishwindow) := -(p2, animtime)
+trigger3 = p2, vel y != 0
+trigger3 = map(ai_p2accely) != 0
+trigger3 = 1 || map(ai_punishwindow) := (-(p2, vel y) + (((p2, vel y) ** 2 - 2 * map(ai_p2accely) * (p2, pos y)) ** 0.5)) / map(ai_p2accely)
+ignorehitpause = 1
+
+[State -1, AI Attack Window]
+type = mapset
+map = "ai_attackwindow"
+trigger1 = AIlevel
+value = floor(max(map(ai_combowindow), map(ai_punishwindow)) + ((random % 9) / AIlevelF))
+ignorehitpause = 1
+
+
+;========================================< A.I. ROUTINES >=========================================
+
+[State -1, Otoko Michi]
+type = changestate
+value = 4000
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 3000 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = map(ai_canthrow)
+triggerall = map(ai_p2cannotmove)
+triggerall = p2stateno != [150, 155]
+triggerall = life < (p2, life / 4) && p2life >= 200
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 8
+trigger1 = ctrl || stateno = 200 || stateno = 220 || stateno = 221 || stateno = 230
+trigger1 = (p2bodydist x = [-5, 80]) && (p2, vel y >= 0) && (p2dist y = [-64, 8])
+trigger1 = random < map(ai_confirm) * 250
+
+[State -1, Back Dash]
+type = changestate
+value = 105
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype = S
+triggerall = ctrl && (stateno != [100, 106])
+triggerall = map(customcombo) <= 150 && !map(parry_nowalk)
+triggerall = backedgedist >= 80
+trigger1 = p2movetype = A && (p2bodydist x = [80, 120]) && (p2, vel x = [-12, 2])
+trigger1 = random < ifelse((p2, hitdefattr = SC, AT), 150, 50)
+trigger2 = p2stateno = 5120 && p2, animtime = -8
+trigger2 = (p2bodydist x = [40, 80]) && backedgedist >= 80
+trigger2 = random < 500
+
+[State -1, Forward Roll]
+type = changestate
+value = 720
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = map(customcombo) <= 270 && !map(parry_nowalk)
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = p2movetype = A
+trigger1 = p2, vel y <= 0 && p2bodydist x = [-5, 40]
+trigger1 = p2, stagefrontedgedist < p2, stagebackedgedist
+trigger1 = !(p2, hitdefattr = SC, AT || p2stateno = map(ai_p2throw))
+trigger1 = random < 75
+
+[State -1, Dodge]
+type = changestate
+value = 710
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = map(customcombo) <= 270 && !map(parry_nowalk)
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = p2movetype = A
+trigger1 = p2, vel y <= 0 && (p2bodydist x = [30, 75])
+trigger1 = !(p2, hitdefattr = SC, AT || p2stateno = map(ai_p2throw))
+trigger1 = random < 50
+
+[State -1, Jump]
+type = changestate
+value = 40
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = p2movetype = A
+trigger1 = p2, hitdefattr = SC, AT || (p2stateno = map(ai_p2throw) && p2statetype != A)
+
+[State -1, Roll Fireballs]; incorporate into roll/dodge code blocks later
+type = changestate
+value = ifelse(random < 500 && map(ai_punishwindow) >= 20, 720, 710)
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = inguarddist
+trigger1 = numenemy = 1
+trigger1 = map(ai_p2cannotmove) || p2bodydist x >= 150
+trigger1 = map(ai_p2fireball_eta) = [1, 16]
+trigger1 = !(p2, hitdefattr = SCA, AT)
+trigger1 = random < 100
+
+[State -1, Guard]
+type = changestate
+value = 120
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2
+triggerall = inguarddist
+trigger1 = ctrl
+trigger1 = stateno != [120, 155]
+trigger1 = statetype != A || p2statetype = A || p2movetype != A
+trigger1 = p2, hitdefattr != SCA, AT && p2stateno != map(ai_p2throw)
+trigger1 = life > 10 || p2stateno = [200, 799]
+trigger1 = p2, time < 90 || random < 30
+trigger1 = isasserted(nostandguard) = 0 || statetype != S
+trigger1 = isasserted(nocrouchguard) = 0 || statetype != C
+trigger1 = isasserted(noairguard) = 0 || statetype != A
+
+[State -1, Guard Cancel]
+type = changestate
+value = 750
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && !map(customcombo)
+trigger1 = random < 25
+trigger1 = stateno = 150 || stateno = 152
+trigger1 = (p2bodydist x = [-5, 50]) && life < 250
+
+[State -1, Roll Recovery]
+type = changestate
+value = 5220
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && alive
+triggerall = !hitfall || gethitvar(fall.recover)
+trigger1 = !ctrl
+trigger1 = stateno = 5040 || stateno = 5050
+trigger1 = vel y > 0
+trigger1 = pos y >= const(movement.air.gethit.groundrecover.ground.threshold)
+trigger1 = p2bodydist x = [-10, 10]
+trigger1 = random < 50
+
+[State -1, Ground Fall Recovery]
+type = changestate
+value = 5200
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && alive
+trigger1 = stateno = 5050
+trigger1 = gethitvar(fall.recover)
+trigger1 = vel y > 0
+trigger1 = pos y >= const(movement.air.gethit.groundrecover.ground.threshold)
+trigger1 = random < 200
+
+[State -1, Air Fall Recovery]
+type = changestate
+value = 5210
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && alive
+trigger1 = stateno = 5050
+trigger1 = canrecover
+trigger1 = vel y > const(movement.air.gethit.airrecover.threshold)
+trigger1 = random < 100
+
+[State -1, Throw]
+type = changestate
+value = 800
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype = S
+triggerall = map(ai_canthrow)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = abs(map(truebodydistx)) <= ceil(47 * const(size.xscale)) && p2dist y = 0
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 3
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+trigger2 = ctrl
+trigger2 = p2stateno = [120, 140]
+trigger2 = random < map(ai_confirm) * 100
+
+[State -1, Saikyo Chop]
+type = changestate
+value = 225
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = C
+triggerall = p2movetype = I
+triggerall = p2bodydist x = [30, 55] && p2dist y = [-50, 60]
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 100
+
+[State -1, CHK]
+type = changestate
+value = 450
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [40, 60]) && (p2dist y = [-50, 60])
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 6
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, CHP]
+type = changestate
+value = 420
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = p2bodydist x <= 30 && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 5
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, SHK]
+type = changestate
+value = 250
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = A
+triggerall = p2bodydist x = [50, 70] && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 11
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, SHP]
+type = changestate
+value = ifelse(abs(map(truebodydistx)) <= (const(size.xscale) * 30), 221, 220)
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [-5, 55]) && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 6
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, CMK]
+type = changestate
+value = 440
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = p2bodydist x = [35, 55] && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 6
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, CMP]
+type = changestate
+value = 410
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [-5, 35]) && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 5
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, SMK]
+type = changestate
+value = 240
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [-5, 75]) && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 6
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, SMP]
+type = changestate
+value = 210
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [-5, 35]) && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 4
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, CLK]
+type = changestate
+value = 430
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [-5, 45]) && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 5
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, CLP]
+type = changestate
+value = 400
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [-5, 30]) && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 4
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, SLK]
+type = changestate
+value = 230
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = (p2bodydist x = [-5, 50]) && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 5
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, SLP]
+type = changestate
+value = 200
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype != A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = A
+triggerall = p2bodydist x <= 30 && p2dist y = [-50, 60] && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 4
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, AHK]
+type = changestate
+value = 650
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype = A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = vel y > 0 || p2statetype = A
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = (p2bodydist x = [-5, 50]) && p2dist y = [-50, 60] && !(p2, hitfall)
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, AHP]
+type = changestate
+value = 620
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype = A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = vel y > 0 || p2statetype = A
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = (p2bodydist x = [-5, 40]) && p2dist y = [-50, 60] && !(p2, hitfall)
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, AMK]
+type = changestate
+value = 640
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype = A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = vel y > 0 || p2statetype = A
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = (p2bodydist x = [-45, 45]) && p2dist y = [-50, 60] && !(p2, hitfall)
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, AMP]
+type = changestate
+value = 610
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype = A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = vel y > 0 || p2statetype = A
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = (p2bodydist x = [-5, 40]) && p2dist y = [-50, 60] && !(p2, hitfall)
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, ALK]
+type = changestate
+value = 630
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype = A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = vel y > 0 || p2statetype = A
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = (p2bodydist x = [-5, 40]) && p2dist y = [-50, 60] && !(p2, hitfall)
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, ALP]
+type = changestate
+value = 600
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = statetype = A && roundstate = 2
+triggerall = !map(shinwa)
+triggerall = vel y > 0 || p2statetype = A
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = (p2bodydist x = [-5, 30]) && p2dist y = [-50, 60] && !(p2, hitfall)
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, Gadouken]
+type = changestate
+value = 1000
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+triggerall = !inguarddist
+triggerall = p2statetype = S || p2statetype = C || p2stateno = 5120
+triggerall = p2bodydist x < 90
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 13
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl
+trigger1 = p2bodydist x = [60, 90]
+trigger1 = random < map(ai_confirm) * 50
+trigger2 = stateno = [200, 499]
+trigger2 = map(specialcancel) && p2movetype = H
+trigger2 = random < map(ai_confirm) * 100
+
+[State -1, Kouryuuken]
+type = changestate
+value = 1100
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+triggerall = map(juggle_count) < 1 || map(customcombo)
+triggerall = p2movetype = H || p2movetype = A
+triggerall = p2statetype = A
+triggerall = p2stateno != [120, 155] || p2statetype = A
+triggerall = p2bodydist x = [-5, 40] && p2dist y = [-80, 0]
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, Air Dankuukyaku]
+type = changestate
+value = 1250
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype = A
+triggerall = (map(jumptype) != [1, 2]) && pos y <= -24
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = (p2bodydist x = [-5, 80]) && (p2, vel y > -1) && (p2, vel x > -2) && !(p2, hitfall)
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+trigger2 = stateno = [600, 699] && map(specialcancel)
+trigger2 = random < map(ai_confirm) * 50
+
+[State -1, Dankuukyaku]
+type = changestate
+value = 1200
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+triggerall = p2statetype = S
+triggerall = p2bodydist x < 80
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 13
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = p2bodydist x > 40
+trigger1 = random < map(ai_confirm) * 50
+trigger2 = stateno = [200, 499]
+trigger2 = map(specialcancel) && p2movetype = H
+trigger2 = random < map(ai_confirm) * 50
+
+[State -1, Danretsuken]
+type = changestate
+value = 1400
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+triggerall = map(juggle_count) < 1
+triggerall = p2statetype = S || p2statetype = C
+triggerall = p2bodydist x < 70
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = stateno = [200, 499]
+trigger1 = map(specialcancel) && p2movetype = H
+trigger1 = random < map(ai_confirm) * ifelse(power >= 1000, 100, 25)
+
+[State -1, EX Kouryuuken]
+type = changestate
+value = 1130
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = power != [3000, 3499] && (power > 1500 || random < 500)
+triggerall = map(juggle_count) < 2
+triggerall = map(ai_p2cannotmove)
+triggerall = p2movetype = A || p2statetype = A
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = p2stateno != [120, 155]
+triggerall = p2bodydist x = [-5, 50] && p2dist y = [-80, 0]
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 4
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, EX Air Dankuukyaku]
+type = changestate
+value = 1270
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype = A
+triggerall = (map(jumptype) != [1, 2]) && pos y <= -24
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = power != [3000, 3499] && (power > 1500 || random < 500)
+triggerall = map(ai_p2cannotmove)
+triggerall = p2statetype = A
+triggerall = p2stateno != [120, 155]
+triggerall = p2bodydist x = [-5, 80] && (p2, vel y > -1) && (p2, vel x > -2)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 8
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, EX Danretsuken]
+type = changestate
+value = 1430
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = power != [3000, 3499] && (power > 1500 || random < 500)
+triggerall = map(juggle_count) < 1
+triggerall = map(ai_p2cannotmove)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = p2stateno != [120, 155]
+triggerall = frontedgedist < 80
+triggerall = p2bodydist x = [-5, 20]
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 12
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = stateno = [200, 499]
+trigger1 = map(specialcancel) && p2movetype = H
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, EX Dankuukyaku]
+type = changestate
+value = 1220
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = vel y > 0 || p2statetype = A
+triggerall = power != [3000, 3499] && (power > 1500 || random < 500)
+triggerall = map(ai_p2cannotmove)
+triggerall = p2statetype = S
+triggerall = p2stateno != [120, 155]
+triggerall = p2bodydist x < 80
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 12
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = stateno = [200, 499]
+trigger1 = map(specialcancel) && p2movetype = H
+trigger1 = random < map(ai_confirm) * 50
+
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+triggerall = p2statetype = S || p2statetype = C
+triggerall = p2bodydist x < 70
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = stateno = [200, 499]
+trigger1 = map(specialcancel) && p2movetype = H
+trigger1 = random < map(ai_confirm) * ifelse(power >= 1000, 100, 25)
+
+
+[State -1, EX Gadouken]
+type = changestate
+value = 1010
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+triggerall = power != [3000, 3499] && (power > 1500 || random < 500)
+triggerall = map(ai_p2cannotmove)
+triggerall = !inguarddist
+triggerall = p2statetype = S || p2statetype = C || p2stateno = 5120
+triggerall = p2stateno != [120, 155]
+triggerall = p2bodydist x < 90
+triggerall = p2, stagebackedgedist <= 20
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 10
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+trigger1 = stateno = [200, 499]
+trigger1 = map(specialcancel) && movehit
+trigger1 = random < map(ai_confirm) * 100
+
+[State -1, Premium Sign]
+type = changestate
+value = 1300
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = !map(shinwa)
+triggerall = !inguarddist
+triggerall = p2statetype = L
+triggerall = p2bodydist x > 180
+triggerall = life >= 0.5 * lifemax
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, EX Premium Sign]
+type = changestate
+value = 1320
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 500 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = power != [3000, 3499] && (power > 1500 || random < 500)
+triggerall = map(ai_p2cannotmove)
+triggerall = !inguarddist
+triggerall = p2statetype = L
+triggerall = p2bodydist x = [60, 100]
+triggerall = life >= 0.5 * lifemax
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+trigger1 = p2stateno = 5100 || (p2stateno = 5110 && p2, time <= 1)
+
+[State -1, Chouhatsu Shinwa]
+type = changestate
+value = 4100
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = !map(shinwa)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 3000 && map(customcombo) <= 60
+triggerall = p2bodydist x >= 120 && p2movetype != A
+triggerall = life >= 900 && p2life <= 100
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, Chouhatsu Densetsu]
+type = changestate
+value = 3300
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = !map(shinwa)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && map(customcombo) <= 60
+triggerall = p2bodydist x >= 120 && p2movetype != A
+triggerall = life >= 750 && p2life <= 250
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+
+[State -1, Hishou Buraiken]
+type = changestate
+value = 3200
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = !map(shinwa)
+triggerall = map(juggle_count) < 1 || stateno = [1000, 4999]
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 2000 && map(customcombo) <= 60
+triggerall = p2statetype = S || p2statetype = C
+triggerall = map(ai_p2cannotmove)
+triggerall = p2stateno != [120, 155] || p2statetype = A
+triggerall = (p2bodydist x = [-5, 40]) && (p2, vel x > -2) && !(p2, hitfall)
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 5
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * 100
+trigger2 = stateno = 210 || stateno = 220 || stateno = 240 || stateno = 250 || stateno = 410 || stateno = 420 || stateno = 440
+trigger2 = map(supercancel)
+trigger2 = random < map(ai_confirm) * 100
+trigger3 = stateno = 1400
+trigger3 = map(supercancel)
+trigger3 = random < map(ai_confirm) * 100
+trigger4 = stateno = 3100 && animelemtime(6) >= 0
+trigger4 = map(hypercancel)
+trigger4 = random < map(ai_confirm) * 75
+
+[State -1, Kouryu Rekka]
+type = changestate
+value = 3100
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = !inguarddist
+triggerall = map(juggle_count) < 2 || stateno = [1000, 4999]
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = map(ai_p2cannotmove)
+triggerall = p2stateno != [120, 155] || p2statetype = A || p2life <= 40
+triggerall = p2bodydist x = [-5, 60] && p2dist y >= -30 && (p2, vel y > -1) && (p2, vel x > -2)
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 6
+trigger1 = ctrl || stateno = [100, 101]
+trigger1 = random < map(ai_confirm) * ifelse((p2, hitfall), 200, 50)
+trigger2 = stateno = [200, 499]
+trigger2 = map(specialcancel) && p2movetype = H
+trigger2 = random < map(ai_confirm) * 50
+trigger3 = stateno = [1100, 1199] || stateno = 1300 || stateno = 1400
+trigger3 = map(supercancel)
+trigger3 = random < map(ai_confirm) * 50
+trigger4 = stateno = 3000 || (stateno = 3210 && map(buraiken) >= 8)
+trigger4 = map(hypercancel)
+trigger4 = random < map(ai_confirm) * 50
+
+[State -1, Zuki]
+type = changestate
+value = 3500
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && map(customcombo) <= 60
+triggerall = !map(shinwa)
+triggerall = !inguarddist
+triggerall = map(juggle_count) < 1 || stateno = [1000, 4999]
+triggerall = p2statetype = S || p2statetype = A
+triggerall = stagefrontedgedist < 200
+triggerall = map(ai_p2cannotmove)
+triggerall = p2stateno != [120, 155] || p2statetype = A || p2life <= 20
+triggerall = p2bodydist x = [-5, 85] && p2dist y >= -30
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 15
+trigger1 = stateno = [1100, 1199] || stateno = 1300 || stateno = 1400
+trigger1 = map(supercancel)
+trigger1 = random < map(ai_confirm) * 50
+trigger2 = stateno = 3000 || stateno = 3100 || (stateno = 3210 && map(buraiken) >= 8)
+trigger2 = map(hypercancel)
+trigger2 = random < map(ai_confirm) * 50
+
+[State -1, Gadou Shoukouken]
+type = changestate
+value = 3400
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 2000
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+triggerall = map(juggle_count) < 1 || stateno = [1000, 4999]
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = map(ai_p2cannotmove)
+triggerall = p2stateno != [120, 155] || p2statetype = A
+triggerall = (p2bodydist x = [-5, 60]) && (p2, vel y > -1)
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 7
+trigger1 = stateno = [1100, 1199] || stateno = 1300 || stateno = 1400
+trigger1 = map(supercancel)
+trigger1 = random < map(ai_confirm) * 50
+trigger2 = stateno = 3000 || stateno = 3100 || (stateno = 3210 && map(buraiken) >= 8)
+trigger2 = map(hypercancel)
+trigger2 = random < map(ai_confirm) * 50
+
+[State -1, Shinkuu Gadouken]
+type = changestate
+value = 3000
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power >= 1000 && map(customcombo) <= 60
+triggerall = !map(projflag)
+triggerall = !map(shinwa)
+triggerall = !inguarddist
+triggerall = map(juggle_count) < 1 || stateno = [1000, 4999]
+triggerall = p2statetype = S || p2statetype = C || p2statetype = A
+triggerall = map(ai_p2cannotmove)
+triggerall = p2stateno != [120, 155] || p2statetype = A || p2life <= 30
+triggerall = p2bodydist x = [-5, 90] && p2dist y >= -40
+triggerall = p2, const(size.head.pos.y) <= -60 || p2statetype = A
+triggerall = map(ai_neutral) || map(ai_attackwindow) >= 7
+trigger1 = ctrl
+trigger1 = random < map(ai_confirm) * 50
+trigger2 = stateno = 1000
+trigger2 = map(supercancel)
+trigger2 = p2bodydist x <= 45
+trigger2 = random < map(ai_confirm) * 50
+trigger3 = (stateno = 3100 && animelemtime(10) > 0) || (stateno = 3210 && map(buraiken) >= 8)
+trigger3 = map(hypercancel)
+trigger3 = random < map(ai_confirm) * 50
+
+[State -1, Forward Dash]
+type = changestate
+value = 102
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype = S
+triggerall = p2movetype != A && !inguarddist && p2bodydist x >= 160
+trigger1 = ctrl
+trigger1 = random < 25
+trigger2 = ctrl
+trigger2 = p2stateno = p2, const(statedizzy) || p2stateno = p2, const(stateguardbreakhit) || p2stateno = p2, const(stateguardbreakrecover)
+trigger2 = random < map(ai_confirm) * 100
+
+[State -1, Power Charge]
+type = changestate
+value = 740
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = roundstate = 2 && statetype != A
+triggerall = power < const(data.power) && power < powermax
+triggerall = !map(customcombo)
+triggerall = !map(shinwa)
+trigger1 = ctrl
+trigger1 = !inguarddist
+trigger1 = p2movetype != A && p2bodydist x >= 200
+trigger1 = random < ifelse(power < 1000, 150, ifelse(power < 2000, 100, 50))
+
+[State -1, Rolling taunt]
+type = changestate
+value = ifelse(random < 750, 2811, 2810)
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = !map(ai_p2unhittable)
+triggerall = !map(shinwa)
+triggerall = p2movetype != A
+triggerall = roundstate = 2 && statetype != A
+triggerall = ctrl
+triggerall = life >= (p2life + 250)
+triggerall = prevstateno != [500, 599]
+trigger1 = ctrl
+trigger1 = random < 10
+
+[State -1, Taunt]
+type = changestate
+value = ifelse(statetype = A, 2802, ifelse(statetype = C, 2801, 195))
+triggerall = AIlevel
+triggerall = map(ai_randompass)
+triggerall = numenemy && !isasserted(noinput)
+triggerall = statetype != A
+triggerall = life >= 0.5 * lifemax
+trigger1 = ctrl
+trigger1 = p2bodydist x >= 140
+trigger1 = !(p2, ctrl)
+trigger1 = p2movetype = H && p2, hitfall
+trigger1 = random < 100

@@ -1,0 +1,62 @@
+<#f0f000>THROWS</>
+
+Otoko Zuki						[_B/_F]_+^2P
+Seoi Nage						[_B/_F]_+^2K
+
+<#f0f000>UNIQUE ATTACKS</>
+
+Saikyo Chop						_F_+^Z
+Saikyo Jawbreaker				_B_+^C
+
+<#f0f000>SPECIAL MOVES</>
+
+Gadoken_EX						_D_DF_F^P
+Koryuken_EX						_F_D_DF^P
+Dankukyaku_EX					_AIROK_D_DB_B^K
+Danretsuken_EX					_D_DB_B^P
+Premium Sign_EX					_D_DF_F^K
+Saikyo-ryu Bougyo_EX			(during guard)^P, ^P, ^P, ^P
+
+<#f0f000>LEVEL 1 SUPER COMBOS</>
+
+Shinku Gadoken					_D_DF_F_D_DF_F^P
+Koryu Rekka						_D_DF_F_D_DF_F^K
+Kyukyoku Tenchi Gadozuki		_D_DB_B_D_DB_B^P
+Chohatsu Densetsu				_D_DF_F_D_DF_F^S
+
+<#f0f000>LEVEL 2 SUPER COMBOS</>
+
+Hissho Buraiken					_D_DB_B_D_DB_B^K
+Gado Shokoken					_D_DF_F_D_DF_F^2P _CHARGE
+
+<#f0f000>LEVEL 3 SUPER COMBOS</>
+
+Otoko Michi						^Z,^A,_B,^X,^X
+Chohatsu Shinwa					_D_DB_B_D_DB_B^S
+
+<#f0f000>TAUNTS</>
+
+Tachi Chohatsu					^S
+Shagami Chohatsu				_D_+^S
+Kuchu Chohatsu					_AIR^S
+Zenten Chohatsu					_D_DF_F^S
+Koten Chohatsu					_D_DB_B^S
+
+<#f0f000>SYSTEM</>
+
+Forward Dash					_F_F
+_!Run							_HOLD_F
+Back Dash						_B_B
+High Jump						_TAP_D,_U
+Hop								_TAP_U
+Hyper Hop						_TAP_D, _TAP_U
+Parry							_TAP_F / _TAP_D
+Roll							[_B/_F]_+^A_+^X
+Sidestep						^A_+^X
+_!Sidestep Attack				^P/^K
+Power Charge					^B_+^Y
+Custom Combo					_AIROK^C_+^Z
+Guard Cancel High				(during guard) _F_+^2P
+Guard Cancel Low				(during guard) _F_+^2K
+Fall Recovery					(when allowed)^P
+Roll Recovery					(while falling from a hit)^K

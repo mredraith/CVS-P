@@ -1,103 +1,50 @@
-; ________________________________________________
-;| Dan by Phantom.of.the.Server and Mr.Ansatsuken |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-[Statedef 5902];==================================================================
-type = S;==========================DON'T CHANGE ANYTHING HERE=====================
-[State 5900, Palette-Selector];===================================================
-type = varset;====================================================================
-trigger1 = 1;========================JUST SCROLL==================================
-v = 57;===========================================================================
+; ______________________________
+;| Dan by Phantom.of.the.Server |
+; Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯
+;==============================================================================================
+;==================================< CONFIGURATION FILE >======================================
+;==============================================================================================
 
+;==============================================================================================
+[Statedef 5901];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
+type = S;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+[State 5901, Var];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+type = null;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
 
 
 
+;---------------------------------------- HIT SPARKS ------------------------------------------
+;Adjust the number below to select which set of hit sparks to use
+;0 - Screenpack sparks
+;1 - Custom sparks type Geese
+;2 - Custom sparks type Nakoruru
 
+trigger1 = pi || map(cfg_sparks) := 2
 
 
-; SET THE VALUE TO "0" IF DON'T WANT THE CHARACTER TO HAVE CAMERA-ZOOM IN ANY MOVE
-; OR, SET IT TO "1" IF YOU JUST DON'T WANT THE ZOOM DURING THE SUPER-CHARGES.
-; You can, too, keep it as "2" if you want him to have the Camera-Zoom
-;    in all the moves that make use of this mechanic.
 
+;--------------------------------------- SUPER PAUSES -----------------------------------------
+;Set the number below to 1 for custom effects, or 0 to use your screenpack's effects
 
+trigger1 = pi || map(cfg_superfx) := 1
 
 
-Value = 2   ;<=========================================< THERE! 
 
+;-------------------------------------- VICTORY CAMERA ----------------------------------------
+;Set the number below to 1 to zoom in on the character during win poses
 
+trigger1 = pi || map(cfg_winzoom) := 0
 
 
 
+;-------------------------------------- VICTORY MUSIC -----------------------------------------
+;Set the number below to 1 to play a character-specific music during the victory screen
 
+trigger1 = pi || map(cfg_victorybgm) := 0
 
 
 
-
-
-
-[State 5900, Varset];=======================================================
-type=Varset;================================================================
-trigger1=1;============================NOT HERE=============================
-V=27;===========================NOR HERE====================================
-
-
-
-
-
-
-
-
-
-
-;=========================< PALETTE SELECTOR >===============================
-
-
-
-
-
-; SET THE VALUE TO "0" IF DON'T WANT THE PALETTE SELECTOR AT THE START OF THE ROUND
-; OR, SET IT TO "1" IF YOU DO WANT THE PALETTE SELECTOR.
-
-
-
-
-
-
-
-Value = 0   ;<=========================================< THERE! 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[State 5900, Pal Selector on];=================================================================
-type=helper;===================================================================================
-triggerall=var(27)&&!numhelper(256)&&!AILevel&&numenemy;=======================================
-trigger1=roundno=1&&matchno=1&&!(teammode=simul)&&!(enemy,teammode=simul);=====================
-trigger2=!fvar(0);=============================================================================
-trigger3=(teammode=turns);=====================================================================
-trigger3=!roundsexisted&&(enemy,roundsexisted);================================================
-id=256;========================================================================================
-stateno=256;===================================================================================
-size.xScale=0.5;===============================================================================
-size.yScale=0.5;===============================================================================
-facing=facing;=================================================================================
-ownpal=1;======================================================================================
-[State 5902, End];=============================================================================
-type = changestate;==========================NOTHING TO DO HERE================================
-trigger1 = !time;==============================================================================
-value = ifelse(roundno = 1, 190, 0);===========================================================
+[State 5901, End];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+type = changestate;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
+trigger1 = 1;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
+value = 5902;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
