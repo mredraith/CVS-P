@@ -36,7 +36,7 @@ anim = 1
 [State 7651, 0 = San Shingi no Ni, 1 = Chi No Bousou, 2 = Both]
 type = ParentVarSet
 trigger1 = 1
-var(43) = 0 ;CHANGE THIS LINE
+var(43) = 2 ;CHANGE THIS LINE
 
 ;==============================================================================================
 ;ONLY MODIFY STUFF ABOVE THIS LINE
