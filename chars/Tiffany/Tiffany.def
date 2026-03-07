@@ -41,6 +41,6 @@ y2 = 11
 z2 = 12
 
 ; Arcade mode
-;[Arcade]
-;intro.storyboard =
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyboard =

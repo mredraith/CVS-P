@@ -65,5 +65,5 @@ st5=interaction.cns
 
 ; Arcade mode
 [Arcade]
-;intro.storyboard = .def
+intro.storyboard = intro.def
 ending.storyboard = SSF2TCammyEnd\SSF2TCammyEnd.def 

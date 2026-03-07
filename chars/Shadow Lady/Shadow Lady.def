@@ -39,6 +39,6 @@ c = 6
 ;b2 = 11
 ;c2 = 12
  
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def

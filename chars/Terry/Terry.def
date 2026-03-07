@@ -42,6 +42,6 @@ x2 = 10
 y2 = 11
 z2 = 12
 
-;[Arcade]
-;intro.storyboard = 
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyboard = 

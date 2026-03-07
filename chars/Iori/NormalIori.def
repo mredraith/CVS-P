@@ -39,6 +39,6 @@ pal10 = Palettes/sabockee_KainR.Heinlein.act
 pal11 = Palettes/sabockee_DemitriSNK.act
 pal12 = Palettes/Quickfist_AshCrimson.act
 
-;[Arcade]
-;intro.storyBoard = intro.def
-;ending.storyBoard = ending.def
+[Arcade]
+intro.storyboard = intro.def
+ending.storyBoard = ending.def

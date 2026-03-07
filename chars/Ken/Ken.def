@@ -28,6 +28,6 @@ sound = Sound.snd
  
 [Palette Keymap]
 
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def

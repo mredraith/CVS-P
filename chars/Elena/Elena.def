@@ -37,8 +37,8 @@ st2=States/Special.st
 st3=States/Super.st
 st4=States/Helpers.st
 	
-;[Arcade]
-;intro.storyBoard = 
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = 
 [Arcade]
 intro.storyboard = intro.def

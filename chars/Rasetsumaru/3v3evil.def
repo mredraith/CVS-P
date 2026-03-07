@@ -38,6 +38,6 @@ pal10 = Palettes/Knuckles8864_RSamShoVIColor5.act
 pal11 = Palettes/CalhounTubbs87_C.R.E.A.M.act
 pal12 = Palettes/sabockee_Custom3.act
  
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def

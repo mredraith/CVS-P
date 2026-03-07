@@ -42,5 +42,5 @@ pal11 = RyuPalettes\SF4white.act
 pal12 = RyuPalettes\SF4dwhite.act
 
 [Arcade]
-;intro.storyboard = 
+intro.storyboard = intro.def
 ;ending.storyboard = 

@@ -46,6 +46,6 @@ z = 3
 ;y2 = 8
 ;z2 = 9
 
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def

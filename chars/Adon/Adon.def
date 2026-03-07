@@ -52,6 +52,6 @@ a2 = 7
 b2 = 8
 c2 = 9
  
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def

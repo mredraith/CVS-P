@@ -42,5 +42,5 @@ pal11 = Palettes\Gouki\GoukiSFZCream.act
 pal12 = Palettes\Gouki\BlackHatter_Akuma'sWrath.act
 
 [Arcade]
-;intro.storyboard = 
+intro.storyboard = intro.def
 ;ending.storyboard = 

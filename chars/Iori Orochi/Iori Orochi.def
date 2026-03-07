@@ -39,6 +39,6 @@ pal10 = Palettes/Lurker_CvS2CapcomArtwork.act
 pal11 = Palettes/sabockee_Custom15.act
 pal12 = Palettes/Knuckles8864_Zombie.act
  
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def

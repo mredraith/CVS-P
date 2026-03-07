@@ -40,6 +40,6 @@ pal11 = Palettes/Knuckles8864_CvS2-GrayRed.act
 pal12 = Palettes/sabockee_Custom7.act
 
  
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def

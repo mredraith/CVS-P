@@ -38,6 +38,6 @@ pal10 = Palettes/Flowrellik_Classic.act
 pal11 = Palettes/Azul.act
 pal12 = Palettes/sabockee_Custom8.act
 
-;[Arcade]
-;intro.storyBoard = intro.def
+[Arcade]
+intro.storyboard = intro.def
 ;ending.storyBoard = ending.def
