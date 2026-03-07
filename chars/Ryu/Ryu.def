@@ -30,5 +30,5 @@ st6 = States\Custom.st
 st7 = States\Ryu.st
 
 [Arcade]
-intro.storyboard = 
+intro.storyboard = intro.def
 ending.storyboard = 

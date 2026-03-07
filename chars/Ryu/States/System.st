@@ -1939,8 +1939,7 @@ type=changestate
 triggerALL= numenemy
 triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1= var(1)!=2 && numenemy
-trigger1=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Masters" && enemy,var(40) != 1
-trigger1=enemy,stateno=193
+trigger1=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Masters"
 value=192
 
 [State 190, intro Ryu vs Ken]
@@ -1948,7 +1947,7 @@ type=changestate
 triggerALL= numenemy
 triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1= var(1)!=2 && numenemy
-trigger1=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Masters" && enemy,var(40) != 1
+trigger1=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Masters"
 value=192+random%2
 
 [State 190, intro Evil Ryu vs Violent Ken]
@@ -1956,7 +1955,7 @@ type=changestate
 triggerALL= numenemy
 triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1= var(1)=2 && numenemy
-trigger1=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Masters" && enemy,var(40) = 1
+trigger1=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Masters"
 value=5982
 
 [State 190, intro Ryu vs Sagat]
@@ -1990,13 +1989,6 @@ value = ifelse(random < 500, 354, 356)
 type=S
 anim=192
 sprpriority=-1
-[State 190, intro vs Ken]
-type=changestate
-trigger1= numenemy
-trigger1= var(1)!=2 && numenemy
-trigger1= !(teammode=simul) && !(enemy,teammode=simul)
-trigger1=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Masters" && enemy,var(40) = 1
-value=375;ifelse(random<333,355,ifelse(random<500,352,353))
 [State 355, intro]
 type=assertspecial
 trigger1= 1
