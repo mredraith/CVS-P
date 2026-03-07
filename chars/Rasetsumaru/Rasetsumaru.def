@@ -28,6 +28,6 @@ sound = Sound.snd
  
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =
 

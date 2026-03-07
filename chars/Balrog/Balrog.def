@@ -34,5 +34,5 @@ pal10 = Palettes/act004.act
 pal11 = Palettes/act011.act
 pal12 = Palettes/act006.act
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =

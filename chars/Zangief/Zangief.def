@@ -34,5 +34,5 @@ st5=States/Zangief.st
  
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =

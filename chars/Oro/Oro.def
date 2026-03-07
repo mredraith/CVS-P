@@ -41,5 +41,5 @@ st4=States/Helpers.st
 ;intro.storyBoard = intro.def
 ;ending.storyBoard = ending.def
 [Arcade]
-intro.storyboard=
+intro.storyboard = intro.def
 ending.storyboard=sound/guileending.def

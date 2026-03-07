@@ -39,5 +39,5 @@ pal11 = Colors\Purple_Knuckles8864.act
 pal12 = Colors\DarkEnd_Knuckles8864.act
 
 [Arcade]
-intro.storyboard = Extra\intro.def
+intro.storyboard = intro.def
 ending.storyboard = Extra\ending.def

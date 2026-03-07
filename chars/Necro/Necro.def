@@ -32,5 +32,5 @@ st3=config.txt
 
 ;Arcade mode
 [Arcade]
-intro.storyboard  =intro.def
+intro.storyboard = intro.def
 ending.storyboard =ending.def

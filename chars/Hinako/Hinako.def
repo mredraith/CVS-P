@@ -28,7 +28,7 @@ pal5	= Palettes/5.act
 pal6	= Palettes/6.act
 
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =
 
 ; FEINT CANCEL PATCHED

@@ -35,5 +35,5 @@ pal12 = pals/mentiroso.act
 
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =

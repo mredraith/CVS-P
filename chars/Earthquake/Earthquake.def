@@ -40,7 +40,7 @@ z2 = 12
 
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =
 
 

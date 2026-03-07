@@ -49,5 +49,5 @@ b2 = 11
 c2 = 12
 
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =

@@ -39,5 +39,5 @@ st4=States/Helpers.st
 st5=States/FinalFightSodom.st 
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =

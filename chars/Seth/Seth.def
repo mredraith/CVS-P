@@ -40,6 +40,6 @@ pal12 = Colors\DarkEnd_Knuckles8864.act
 
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =
 

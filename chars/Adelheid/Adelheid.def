@@ -43,7 +43,7 @@ st4=States/Helpers.st
 st5=States/Adelheid.st
 	
 [Arcade]
-intro.storyBoard= 
+intro.storyboard = intro.def
 ending.storyBoard=
 
 

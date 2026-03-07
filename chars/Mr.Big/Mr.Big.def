@@ -26,7 +26,7 @@ Sound = Big.snd ;̂v`ud܂Ƃ߂TEht@C̓o^
 ;-----------------------------------------------------------------------------
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =
 
 ;-----------------------------------------------------------------------------

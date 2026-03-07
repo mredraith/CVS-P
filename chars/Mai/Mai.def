@@ -33,5 +33,5 @@ st3=States/Helpers.cns
 st4=States/Supers.cns
 
 [Arcade]
-intro.storyboard=
+intro.storyboard = intro.def
 ending.storyboard=

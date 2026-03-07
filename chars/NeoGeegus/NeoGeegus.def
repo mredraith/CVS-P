@@ -23,7 +23,7 @@ st4=Coding/Supers.cns
 st5=config.txt
 
 [Arcade]
-intro.storyboard =Extra/intro.def
+intro.storyboard = intro.def
 ending.storyboard =Extra/ending.def
 
 [Palette Keymap]

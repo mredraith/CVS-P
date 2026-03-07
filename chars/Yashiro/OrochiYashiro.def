@@ -47,5 +47,5 @@ pal11	= palettes/11.act
 pal12	= palettes/12.act
 
 [Arcade]
-intro.storyboard = 
+intro.storyboard = intro.def
 ending.storyboard = 

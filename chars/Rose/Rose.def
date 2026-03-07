@@ -41,5 +41,5 @@ st5=States/Rose.st
  
 ; Arcade mode
 [Arcade]
-intro.storyboard =
+intro.storyboard = intro.def
 ending.storyboard =

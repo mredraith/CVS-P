@@ -42,5 +42,5 @@ st6=Config.txt
 
 ; Arcade mode
 [Arcade]
-intro.storyboard =Extra/intro.def
+intro.storyboard = intro.def
 ending.storyboard =Extra/ending.def
