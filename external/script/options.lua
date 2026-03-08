@@ -253,13 +253,11 @@ options.t_itemname = {
 			--modifyGameOption('Input.SOCDResolution', 4)
 			--modifyGameOption('Input.ControllerStickSensitivity', 0.4)
 			--modifyGameOption('Input.XinputTriggerSensitivity', 0.5)
-			modifyGameOption('Input.UiRepeatDelay', 15)
+			--modifyGameOption('Input.UiRepeatDelay', 30)
 			--modifyGameOption('Input.UiRepeatRate', 4)
 
 			loadLifebar(motif.files.fight)
-			main.timeFramesPerCount = fightscreenvar("time.framespercount")
-			main.f_updateRoundsNum()
-			main.f_setPlayers()
+			setPlayers()
 			for _, v in ipairs(options.t_vardisplayPointers) do
 				v.vardisplay = options.f_vardisplay(v.itemname)
 			end
@@ -359,16 +357,14 @@ options.t_itemname = {
 	end,
 	--Rounds to Win (Single)
 	['roundsnumsingle'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key) and main.roundsNumSingle[1] < 10 then
+		if getInput(-1, motif.option_info.menu.add.key) and gameOption('Options.Match.Wins') < 10 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Match.Wins', main.roundsNumSingle[1] + 1)
-			main.roundsNumSingle = {gameOption('Options.Match.Wins'), gameOption('Options.Match.Wins')}
+			modifyGameOption('Options.Match.Wins', gameOption('Options.Match.Wins') + 1)
 			t.items[item].vardisplay = gameOption('Options.Match.Wins')
 			options.modified = true
-		elseif getInput(-1, motif.option_info.menu.subtract.key) and main.roundsNumSingle[1] > 1 then
+		elseif getInput(-1, motif.option_info.menu.subtract.key) and gameOption('Options.Match.Wins') > 1 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Match.Wins', main.roundsNumSingle[1] - 1)
-			main.roundsNumSingle = {gameOption('Options.Match.Wins'), gameOption('Options.Match.Wins')}
+			modifyGameOption('Options.Match.Wins', gameOption('Options.Match.Wins') - 1)
 			t.items[item].vardisplay = gameOption('Options.Match.Wins')
 			options.modified = true
 		end
@@ -376,16 +372,14 @@ options.t_itemname = {
 	end,
 	--Max Draw Games
 	['maxdrawgames'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key) and main.maxDrawGames[1] < 10 then
+		if getInput(-1, motif.option_info.menu.add.key) and gameOption('Options.Match.MaxDrawGames') < 10 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Match.MaxDrawGames', main.maxDrawGames[1] + 1)
-			main.maxDrawGames = {gameOption('Options.Match.MaxDrawGames'), gameOption('Options.Match.MaxDrawGames')}
+			modifyGameOption('Options.Match.MaxDrawGames', gameOption('Options.Match.MaxDrawGames') + 1)
 			t.items[item].vardisplay = gameOption('Options.Match.MaxDrawGames')
 			options.modified = true
-		elseif getInput(-1, motif.option_info.menu.subtract.key) and main.maxDrawGames[1] > 0 then
+		elseif getInput(-1, motif.option_info.menu.subtract.key) and gameOption('Options.Match.MaxDrawGames') > 0 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Match.MaxDrawGames', main.maxDrawGames[1] - 1)
-			main.maxDrawGames = {gameOption('Options.Match.MaxDrawGames'), gameOption('Options.Match.MaxDrawGames')}
+			modifyGameOption('Options.Match.MaxDrawGames', gameOption('Options.Match.MaxDrawGames') - 1)
 			t.items[item].vardisplay = gameOption('Options.Match.MaxDrawGames')
 			options.modified = true
 		end
@@ -562,16 +556,14 @@ options.t_itemname = {
 	end,
 	--Rounds to Win (Tag)
 	['roundsnumtag'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key) and main.roundsNumTag[1] < 10 then
+		if getInput(-1, motif.option_info.menu.add.key) and gameOption('Options.Tag.Match.Wins') < 10 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Tag.Match.Wins', main.roundsNumTag[1] + 1)
-			main.roundsNumTag = {gameOption('Options.Tag.Match.Wins'), gameOption('Options.Tag.Match.Wins')}
+			modifyGameOption('Options.Tag.Match.Wins', gameOption('Options.Tag.Match.Wins') + 1)
 			t.items[item].vardisplay = gameOption('Options.Tag.Match.Wins')
 			options.modified = true
-		elseif getInput(-1, motif.option_info.menu.subtract.key) and main.roundsNumTag[1] > 1 then
+		elseif getInput(-1, motif.option_info.menu.subtract.key) and gameOption('Options.Tag.Match.Wins') > 1 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Tag.Match.Wins', main.roundsNumTag[1] - 1)
-			main.roundsNumTag = {gameOption('Options.Tag.Match.Wins'), gameOption('Options.Tag.Match.Wins')}
+			modifyGameOption('Options.Tag.Match.Wins', gameOption('Options.Tag.Match.Wins') - 1)
 			t.items[item].vardisplay = gameOption('Options.Tag.Match.Wins')
 			options.modified = true
 		end
@@ -623,16 +615,14 @@ options.t_itemname = {
 	end,
 	--Rounds to Win (Simul)
 	['roundsnumsimul'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.add.key) and main.roundsNumSimul[1] < 10 then
+		if getInput(-1, motif.option_info.menu.add.key) and gameOption('Options.Simul.Match.Wins') < 10 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Simul.Match.Wins', main.roundsNumSimul[1] + 1)
-			main.roundsNumSimul = {gameOption('Options.Simul.Match.Wins'), gameOption('Options.Simul.Match.Wins')}
+			modifyGameOption('Options.Simul.Match.Wins', gameOption('Options.Simul.Match.Wins') + 1)
 			t.items[item].vardisplay = gameOption('Options.Simul.Match.Wins')
 			options.modified = true
-		elseif getInput(-1, motif.option_info.menu.subtract.key) and main.roundsNumSimul[1] > 1 then
+		elseif getInput(-1, motif.option_info.menu.subtract.key) and gameOption('Options.Simul.Match.Wins') > 1 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			modifyGameOption('Options.Simul.Match.Wins', main.roundsNumSimul[1] - 1)
-			main.roundsNumSimul = {gameOption('Options.Simul.Match.Wins'), gameOption('Options.Simul.Match.Wins')}
+			modifyGameOption('Options.Simul.Match.Wins', gameOption('Options.Simul.Match.Wins') - 1)
 			t.items[item].vardisplay = gameOption('Options.Simul.Match.Wins')
 			options.modified = true
 		end
@@ -801,8 +791,8 @@ options.t_itemname = {
 		end
 		return true
 	end,
-	--gl32
-	['gl32'] = function(t, item, cursorPosY, moveTxt)
+	--gl33
+	['gl33'] = function(t, item, cursorPosY, moveTxt)
 		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
 			modifyGameOption('Video.RenderMode', "OpenGL 3.3")
@@ -1235,13 +1225,13 @@ options.t_itemname = {
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
 			modifyGameOption('Config.Players', math.min(8, gameOption('Config.Players') + 2))
 			t.items[item].vardisplay = gameOption('Config.Players')
-			main.f_setPlayers()
+			setPlayers()
 			options.modified = true
 		elseif getInput(-1, motif.option_info.menu.subtract.key) and gameOption('Config.Players') > 2 then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
 			modifyGameOption('Config.Players', math.max(2, gameOption('Config.Players') - 2))
 			t.items[item].vardisplay = gameOption('Config.Players')
-			main.f_setPlayers()
+			setPlayers()
 			options.modified = true
 		end
 		return true
@@ -1588,7 +1578,7 @@ options.t_vardisplay = {
 		return gameOption('Sound.MasterVolume') .. '%'
 	end,
 	['maxdrawgames'] = function()
-		return main.maxDrawGames[1]
+		return gameOption('Options.Match.MaxDrawGames')
 	end,
 	['maxsimul'] = function()
 		return gameOption('Options.Simul.Max')
@@ -1669,13 +1659,13 @@ options.t_vardisplay = {
 		return gameOption('Video.GameWidth') .. 'x' .. gameOption('Video.GameHeight')
 	end,
 	['roundsnumsimul'] = function()
-		return main.roundsNumSimul[1]
+		return gameOption('Options.Simul.Match.Wins')
 	end,
 	['roundsnumsingle'] = function()
-		return main.roundsNumSingle[1]
+		return gameOption('Options.Match.Wins')
 	end,
 	['roundsnumtag'] = function()
-		return main.roundsNumTag[1]
+		return gameOption('Options.Tag.Match.Wins')
 	end,
 	['roundtime'] = function()
 		return options.f_definedDisplay(gameOption('Options.Time'), {[-1] = motif.option_info.menu.valuename.none}, gameOption('Options.Time'))
@@ -1935,7 +1925,7 @@ function options.f_start()
 	local runtimeOS = getRuntimeOS()
 	local excluded = {gles32 = true}
 	if runtimeOS == 'android' then
-		excluded = {keyboard = true, gl32 = true, vk13 = true}
+		excluded = {keyboard = true, gl33 = true, vk13 = true}
 	end
 	main.f_pruneMenu(options.menu, excluded)
 	main.f_prunePointers(options.t_vardisplayPointers, excluded)
@@ -1989,7 +1979,7 @@ end
 local t_keyCfg = {}
 table.insert(t_keyCfg, {itemname = 'spacer', displayname = '-', paramname = 'spacer'})
 for _, v in ipairs(motif.option_info.keymenu.itemname_order or {}) do
-	if main.t_defaultKeysMapping[v] ~= nil or v == "configall" then
+	if isUIKeyAction(v) or v == "configall" then
 		table.insert(t_keyCfg, {itemname = v, displayname = motif.option_info.keymenu.itemname[v] or '', paramname = v, infodisplay = ''})
 	end
 end
@@ -2028,7 +2018,7 @@ local t_keyCfgFields = {
 
 local t_btnEnabled = {}
 for _, row in ipairs(t_keyCfg) do
-	if main.t_defaultKeysMapping[row.itemname] then
+	if isUIKeyAction(row.itemname) then
 		t_btnEnabled[row.itemname] = true
 	end
 end
@@ -2049,56 +2039,8 @@ end
 
 function options.f_keyDefault()
 	for i = 1, gameOption('Config.Players') do
-		local defaultKeys = main.t_defaultKeysMapping
-		if i == 1 then
-			defaultKeys = {
-				up = 'UP',
-				down = 'DOWN',
-				left = 'LEFT',
-				right = 'RIGHT',
-				a = 'z',
-				b = 'x',
-				c = 'c',
-				x = 'a',
-				y = 's',
-				z = 'd',
-				start = 'RETURN',
-				d = 'q',
-				w = 'w',
-				menu = 'Not used',
-			}
-		elseif i == 2 then
-			defaultKeys = {
-				up = 'i',
-				down = 'k',
-				left = 'j',
-				right = 'l',
-				a = 'f',
-				b = 'g',
-				c = 'h',
-				x = 'r',
-				y = 't',
-				z = 'y',
-				start = 'RSHIFT',
-				d = 'LEFTBRACKET',
-				w = 'RIGHTBRACKET',
-				menu = 'Not used',
-			}
-		end
-		for action, button in pairs(defaultKeys) do
-			if not t_btnEnabled[action] then
-				modifyGameOption('Keys_P' .. i .. '.' .. action, tostring(motif.option_info.menu.valuename.nokey))
-			else
-				modifyGameOption('Keys_P' .. i .. '.' .. action, button)
-			end
-		end
-		for action, button in pairs(main.t_defaultJoystickMapping) do
-			if not t_btnEnabled[action] then
-				modifyGameOption('Joystick_P' .. i .. '.' .. action, tostring(motif.option_info.menu.valuename.nokey))
-			else
-				modifyGameOption('Joystick_P' .. i .. '.' .. action, button)
-			end
-		end
+		setDefaultConfig('Keys', i, t_btnEnabled)
+		setDefaultConfig('Joystick', i, t_btnEnabled)
 	end
 	resetRemapInput()
 end
