@@ -22,7 +22,7 @@ fvalue = 0
 type = VarSet
 trigger1 = 1
 fv = 37
-value = 1
+value = 0
 
 ; If value = 1 Palette Selector is ON
 ; If value = 0 Palette Selector is OFF 
