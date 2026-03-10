@@ -805,7 +805,7 @@ p1.bg0.spr = 12,0
 p1.face.spr = 9000,0
 p1.face.facing = 1
 p1.face.offset = 3,3
-p1.face.scale = 0.5,0.5
+p1.face.scale = 0.525,0.525
 p1.bg0.layerno = 2
 p1.face.layerno = 2
 ;Player 2
@@ -817,7 +817,7 @@ p2.bg0.facing = -1
 p2.face.spr = 9000,0
 p2.face.facing = -1
 p2.face.offset = -3,3
-p2.face.scale = 0.5,0.5
+p2.face.scale = 0.525,0.525
 p2.bg0.layerno = 2
 p2.face.layerno = 2
 
@@ -829,7 +829,7 @@ p1.bg0.spr = 12,0
 p1.face.spr = 9000,0
 p1.face.facing = 1
 p1.face.offset = 3,3
-p1.face.scale = 0.5,0.5
+p1.face.scale = 0.525,0.525
 p1.bg0.layerno = 2
 p1.face.layerno = 2
 ;Player 2
@@ -841,7 +841,7 @@ p2.bg0.facing = -1
 p2.face.spr = 9000,0
 p2.face.facing = -1
 p2.face.offset = -3,3
-p2.face.scale = 0.5,0.5
+p2.face.scale = 0.525,0.525
 p2.bg0.layerno = 2
 p2.face.layerno = 2
 ;Player 3
@@ -903,7 +903,7 @@ p1.bg0.spr = 12,0
 p1.face.spr = 9000,0
 p1.face.facing = 1
 p1.face.offset = 3,3
-p1.face.scale = 0.5,0.5
+p1.face.scale = 0.525,0.525
 p1.bg0.layerno = 2
 p1.face.layerno = 2
 ;Player 2
@@ -915,7 +915,7 @@ p2.bg0.facing = -1
 p2.face.spr = 9000,0
 p2.face.facing = -1
 p2.face.offset = -3,3
-p2.face.scale = 0.5,0.5
+p2.face.scale = 0.525,0.525
 p2.bg0.layerno = 2
 p2.face.layerno = 2
 ;Player 3
@@ -983,7 +983,7 @@ p1.bg0.spr = 12,0
 p1.face.spr = 9000,0
 p1.face.facing = 1
 p1.face.offset = 3,3
-p1.face.scale = 0.5,0.5
+p1.face.scale = 0.525,0.525
 p1.bg0.layerno = 2
 p1.face.layerno = 2
 
@@ -1008,7 +1008,7 @@ p2.bg0.facing = -1
 p2.face.spr = 9000,0
 p2.face.facing = -1
 p2.face.offset = -3,3
-p2.face.scale = 0.5,0.5
+p2.face.scale = 0.525,0.525
 p2.bg0.layerno = 2
 p2.face.layerno = 2
 
