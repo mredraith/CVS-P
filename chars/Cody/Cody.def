@@ -1,50 +1,44 @@
-; ADD004 BASIC PIEs ReBuilded DEF (8/2/2015)
-;==
-; This file is Made by PIE.
-; there is a backup of this file in the same folder, named "<samename>.a4bk".
-; use assist tool, or delete this file, then remove ".a4bk" from the neme of backup to Restore.
-;==
-
+; _______________________________________________
+;|            Cody Travers by Trololo            |
+; 
+;====================<DEFINITION>====================
 [Info]
-name ="Cody"
-displayname ="Cody"
-versiondate =2012,07,21
-mugenversion =1.0
-author ="Lost_Avenger & Rtrindade"
-pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+name        = "Cody Travers"
+displayName = "Cody"
+versionDate = 17,09,2017
+mugenVersion= 1.0
+author      = "Trololo"
+pal.defaults= 4,5,6,1,2,3,10,11,12,7,8,9
 localCoord  = 428,240
-
 
 [Files]
 movelist = movelist.dat
-sprite =Cody.sff
-anim =Cody.air
-cmd =command.cmd
-sound=Cody.snd
-pal1 = Pal/Cvs_Cody01.act
-pal2 = Pal/Cvs_Cody02.act
-pal3 = Pal/Cvs_Cody03.act
-pal4 = Pal/Cvs_Cody04.act
-pal5 = Pal/Cvs_Cody05.act
-pal6 = Pal/Cvs_Cody06.act
-pal7 = Pal/Cvs_Cody07.act
-pal8 = Pal/Cvs_Cody08.act
-pal9 = Pal/Cvs_Cody09.act
-pal10 = Pal/Cvs_Cody10.act
-pal11 = Pal/Cvs_Cody11.act
-pal12 = Pal/Cvs_Cody12.act
-;-------------state files-------------------------
-cns=add004basic.reb1
-st=add004basic.reb1
-st1=interaction.cns
-st2=custom.cns
-stcommon=common1.cns
-;st5=states/tag_system.cns
+cmd     = Command.cmd
+cns     = Constants.cns
+st      = States/System.st
+st1     = States/Normal.st
+st2     = States/Special.st
+st3     = States/Super.st
+st4     = States/Helpers.st
+stCommon= common1.cns
+sprite  = CasualSuitSprite.sff
+anim    = Anim.air
+sound   = SoundSFA.snd
 
-
-
-
-
-[Arcade]
-intro.storyboard = intro.def
-ending.storyboard = 
+[Palette Keymap]
+x = 4
+y = 5
+z = 6
+a = 1
+b = 2
+c = 3
+x2 = 10 
+y2 = 11
+z2 = 12
+a2 = 7
+b2 = 8
+c2 = 9
+	
+;[Arcade]
+;intro.storyBoard = intro.def
+;ending.storyBoard = ending.def

@@ -1,0 +1,272 @@
+;====================<VARIABLE LIST>====================
+;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4)  : Custom Combo (0 = Off; 1 = On)
+
+;var(6)  : Cancel Flag
+;var(7)  : Able to Super Cancel
+;var(8)  : Able to Hyper Cancel
+;var(9)  : Counter Flag
+;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Hard)
+;var(11) : Bad Stone Carge Controller
+
+;var(13) : Hit Count
+;var(15) : Juggle Points
+;var(16) : Juggle Flag
+;var(17) : Ticks UnGuardable
+;var(18) : ProjContact (0 = No; 1 = Yes)
+;var(19) : Throw Escape
+;var(20) : Custom Combo Time
+;var(21) : Super Cancel Flag
+;var(22) : Hyper Cancel Flag
+;var(23) : Super Finish Type (900 = Custom Combo; 3000 = Jaguar Revolver; 3100 = Jaguar Varied Assault; 3200 = Jaguar Avalanche)
+;var(25) : Ticks to Apply EX FX
+;var(26) : Ticks Unable to Walk
+;var(30) : Hit Detection
+;var(31) : Hit Sound
+;var(32) : Guard Sound
+;var(33) : Hit Spark (8010 = Light; 8011 = Medium; 8012 = Hard; 8013 = Special; 8014 = Super; 8015 = Normal Slash; 8016 = Special Slash; 8017 = Super Slash)
+;var(34) : Guard Spark (8000 = Normal; 8001 = Special)
+;var(35) : Spark xPos
+;var(36) : Spark yPos
+;var(38) : Throw (0 = Allowed; 1 = Not Allowed)
+;var(39) : Projectile Flag (0 = Off; 1 = On)
+;var(40) : Knife's Setting (0 = No Knife; 1 = Knife)
+
+;var(43) : Player ID to apply flames to
+
+;var(58) : Game Time
+
+;fvar(5): Amount of Corner Push
+;fvar(10): Damage Dampener
+;fvar(11): Damage Dampener with Counter Multiplier Added
+
+
+
+; _______________________________________________
+;|            Cody Travers by Trololo            |
+; 
+
+;====================<CONSTANTS>====================
+[Data]
+life = 1000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
+sparkno =
+guard.sparkno =
+KO.echo = 0
+volume = 200
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xscale = 0.9				;Horizontal scaling factor.
+yscale = 1.1				;Vertical scaling factor.
+ground.back = 20				;Player width (back, ground)
+ground.front = 20				;Player width (front, ground)
+air.back = 19				;Player width (back, air)
+air.front = 19				;Player width (front, air)
+height = 60				;Height of player (for opponent to jump over)
+attack.dist = 160				;Default attack distance
+proj.attack.dist = 90			;Default attack distance for projectiles
+proj.doscale = 0				;Set to 1 to scale projectiles too
+head.pos = 10, -90				;Approximate position of head
+mid.pos = 0, -57				;Approximate position of midsection
+shadowoffset = 0				;Number of pixels to vertically offset the shadow
+draw.offset = 0,0				;Player drawing offset in pixels (x, y)
+
+[Velocity]
+walk.fwd  = 3.08				;Walk forward
+walk.back = -2.58				;Walk backward
+run.fwd  = 5, 0				;Run forward (x, y)
+run.back = -5,-3.5			;Hop backward (x, y)
+jump.neu = 0,-8.5				;Neutral jumping velocity (x, y)
+jump.back = -4				;Jump back Speed (x, y)
+jump.fwd = 3.485                     		;Jump forward Speed (x, y)
+runjump.back = -4.3,-9.5                     	;Running jump speeds (opt)
+runjump.fwd = 3.785,-9.5
+airjump.neu = 0, -8.1
+airjump.back = 0
+airjump.fwd = 0
+air.gethit.groundrecover = -0.15, -3.5
+air.gethit.airrecover.mul = 0.5, 0.2
+air.gethit.airrecover.add = 0, -4.5
+air.gethit.airrecover.back = -1
+air.gethit.airrecover.fwd = 0
+air.gethit.airrecover.up = -2
+air.gethit.airrecover.down = 1.5
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yaccel = .475
+stand.friction = .828125			;Friction coefficient when standing
+crouch.friction = .828125			;Friction coefficient when crouching
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundLevel = 25
+air.gethit.groundRecover.ground.threshold = -20
+air.gethit.groundRecover.groundLevel = 10
+air.gethit.airRecover.threshold = -1
+air.gethit.airRecover.yAccel = 0.35
+air.gethit.trip.groundLevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yAccel = 0.4
+down.bounce.groundLevel = 12
+down.friction.threshold = 0.5
+
+[Quotes]
+victory0 = "I've saved the city, saved the girl, but couldn't save myself..."
+victory1 = "After waiting so long, it feels good to do more than two moves!"
+victory2 = "The world is full of bad guys! I have so much work ahead of me!"
+victory3 = "I don't care if you're human, beast or car! I'll take you on!"
+victory4 = "I've got a lot of time on my hands. How about a rematch?"
+victory5 = "C'mon! Stand up! Don't let me down!"
+victory6 = "With so much riding on my fists, this will not be my final fight!"
+victory7 = "Just remember! This could happen to you again! And again!!"
+victory8 = "You sure you wanna be goin' around startin' fights with guys like me?"
+victory9 = "The only thing that doesn't change is the excitement of the fight."
+victory10 = "I prefer my fights quick an' easy."
+victory11 = "This is gettin' boring. Maybe I oughta head home."
+victory12 = "A fighter that goes down that easy ain't worth a thing. Beat it!"
+victory13 = "Fighting like this brings back lots of memories."
+victory14 = "*sigh*"
+
+;Adon
+victory15 = "How do you have time to train between all those bouts of braggin' yourself up?"
+
+;Akuma/Gouki
+victory16 = "I thought you were s'posed to be way stronger than that. What happened?"
+victory17 = "I don't need to follow some path or anything. I got my fists to get me through."
+
+;Alex
+victory18 = "You hit like a truck, but youve still got a lot to learn."
+
+;Balrog/Bison/Boxer
+victory19 = "I ain't about to get beat by a classless chump like you! No way, no how!"
+victory20 = "You may be a pro boxer, but I fought thugs on the street that packed more of a punch than you."
+
+;Birdie
+victory21 = "Chains, huh? I'm no stranger to restraints myself."
+
+;Blanka
+victory22 = "I ain't here to fight animals. Just buzz off an' I'll leave ya alone."
+victory23 = "Jeez, you're pretty wild, huh? Not that I'm complainin'--I'm all for fightin' crazy too."
+
+;C. Viper
+victory24 = "Calm down, lady. I ain't your target."
+
+;Cammy
+victory25 = "I thought you'd be a pushover, but you pulled off some impressive moves."
+
+;Chun-Li
+victory26 = "I did my time and paid my dues, so you're gonna get off my back, right?"
+
+;Cody
+victory27 = "That was a pretty good scrap. If you're gonna fight, you gotta be serious about it."
+victory28 = "So this is what I was like back then, huh?"
+
+;Dan
+victory29 = "You're all talk, man! Anyone ever tell you that before?"
+
+;DeeJay
+victory30 = "If you fight this bad, I'd hate to hear your music!"
+
+;Dhalsim
+victory31 = "If your god is real, couldn't he just make it rain on your village?"
+victory32 = "Yeah, yeah, I know you're enlightened and all, but that's not for me--I'm a brawler through and through."
+ 
+;Dudley
+victory33 = "If you put half as much energy into the fight as you do moustache grooming..."
+ 
+;E.Honda
+victory34 = "Not interested in whatever it is you're sellin', fat boy. Beat it."
+victory35 = "Japan was built on fighting, huh? I kinda like the sound of that."
+
+;Elena
+victory36 = "Dancing? Friends? Not my style, kid. Happy to fight again any time, though."
+
+;Evil Ryu/Kage
+victory37 = "I'd hate to get on your bad side."
+victory38 = "You wanna kill me? Fine. Next time try a bit harder, though."
+
+;Fei-Long
+victory39 = "Nice moves, but too flashy. You'd get eaten alive in Metro City, man."
+
+;Gen
+victory40 = "Watch out for karma, man. Things have a funny way of workin' themselves out..."
+ 
+;Gouken
+victory41 = "Sorry pal, but I'm sick of takin' advice from my elders. Beat it."
+ 
+;Guile/Charlie Nash (SFA)
+victory42 = "Scrappin' with a soldier isn't gonna look good in my records, but whatever. Totally worth it."
+ 
+;Guy
+victory43 = "Look, man. People change. I've changed. You've changed. That's the way it is."
+victory44 = "What happened, man? You got pretty weak. What've you been doin' all this time?"
+
+;Hugo
+victory45 = "Hitting you reminds me of old times... Bah! Can't let myself get nostalgic."
+ 
+;Ibuki
+victory46 = "If you wanna fight, come at me for real. I ain't interested in kids' games."
+victory47 = "A ninja schoolgirl, huh? I'd stick to school if I were you. You'll end up like me if you don't."
+ 
+;Karin
+victory48 = "So a spoiled brat like you's fightin' for fun, huh? Guess me and you got more in common than I thought."
+ 
+;Ken Masters
+victory49 = "Take it down a notch, man. It's just a fight."
+ 
+;M.Bison/Vega/Dictator
+victory50 = "I don't consider myself a good guy anymore, but I had to take you down!"
+victory51 = "There's no point messin' up that mug of yours. I'll just come off lookin' like some sort of hero."
+ 
+;Makoto
+victory52 = "Not bad, but you need to deviate from the textbook if you really wanna win."
+ 
+;Shin Akuma/Oni
+victory53 = "Haha, getting into a scrap with a dude like you makes this world worth living in!"
+ 
+;Rose
+victory54 = "If you can change the future, what's the point of seein' it?"
+
+;R.Mika
+victory55 = "Sorry, but I'm more at home on the streets than on some flashy stage." 
+
+;Ryu
+victory56 = "I enjoy a serious fight now and then. That was fun!"
+victory57 = "I see you haven't changed at all. You're still a real straight-laced fighter."
+ 
+;Sagat
+victory58 = "I didn't expect much, but you turned out to be one heckuva fighter."
+victory59 = "Hmph, be serious. Who needs 'paths' when a fight will do?"
+ 
+;Sakura
+victory60 = "Not bad for a wannabe. In a few more years, you'll be a real contender."
+ 
+;T.Hawk
+victory61 = "Don't let me stand in your way if you got stuff to do. Good luck!"
+
+;Vega/Balrog/Claw
+victory62 = "I'm sick of your mouth, man. Get away from me before I start punchin' again!"
+victory63 = "You keep runnin' your mouth about beauty this and beauty that, but there's nothin' beautiful about losin', right?"
+
+;Yang
+victory64 = "I don't need a reason to fight, pal. I just do it because I love it."
+
+;Yun
+victory65 = "I ain't looking to scrap with some punk kid. Get outta my face."
+
+;Zangief
+victory66 = "I'm used to beatin' up big guys like you. You leave yourself wide open!"
+victory67 = "I used to know a real bruiser like you. He was a pretty good pro wrestler for an old man."
+
+;Joe (Street Fighter 1)
+victory68 = "Gee. I never though I'd have a copycat..."
+
+;Charlie Nash (SFV)
+victory69 = "Man, you're all gloom 'n' doom, aren't ya? I mean, I'm no ray of sunshine myself, but damn..."

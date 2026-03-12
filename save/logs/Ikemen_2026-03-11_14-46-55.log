@@ -1,0 +1,35 @@
+Version: nightly
+Build Time: 2026.03.08
+Platform: windows (amd64)
+Vulkan 1.3.239
+RAM in Use: 501 MB / OS Reserved: 976 MB
+Active Goroutines: 2
+Timestamp: 2026-03-11 14:46:55
+
+Engine error
+
+Error: .\external\mods\coloredit\coloredit.lua:316: 
+Invalid argument: holdup
+
+stack traceback:
+	[G]: in function 'getInputTime'
+	.\external\mods\coloredit\coloredit.lua:316: in function 'f'
+	external/script/main.lua:2308: in function 'loop'
+	external/script/main.lua:2393: in function 'loop'
+	external/script/main.lua:3616: in main chunk
+	[G]: ?
+
+Go stack traceback:
+goroutine 1 [running, locked to thread]:
+runtime/debug.Stack()
+	runtime/debug/stack.go:24 +0x65
+main.handlePanic({0x7ff6332e03e0?, 0xc004d39500})
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:363 +0x3e5
+main.realMain.func1()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:66 +0x2a
+panic({0x7ff6332e03e0, 0xc004d39500})
+	runtime/panic.go:884 +0x213
+main.realMain()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:206 +0x56d
+main.main()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:59 +0x17

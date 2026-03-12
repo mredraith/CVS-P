@@ -1,0 +1,57 @@
+; Glyphs
+
+; LK
+[Begin Action 1]
+1,4, 0,0, 1
+; MK
+[Begin Action 2]
+1,5, 0,0, 1
+; HK
+[Begin Action 3]
+1,6, 0,0, 10
+; LP
+[Begin Action 24]
+1,1, 0,0, 1
+; MP
+[Begin Action 25]
+1,2, 0,0, 1
+; HP
+[Begin Action 26]
+1,3, 0,0, 10
+; D
+[Begin Action 4]
+1,7, 0,0, 1
+; W
+[Begin Action 23]
+1,8, 0,0, 1
+; Start
+[Begin Action 51]
+1,9, 0,0, 10
+
+; 1
+[Begin Action 41]
+0,1, 0,0, 1, H
+; 2
+[Begin Action 42]
+0,0, 0,0, 1
+; 3
+[Begin Action 43]
+0,1, 0,0, 1
+; 4
+[Begin Action 44]
+0,2, 0,0, 1, H
+; 5
+[Begin Action 45]
+1,0, 0,0, 10
+; 6
+[Begin Action 46]
+0,2, 0,0, 1
+; 7
+[Begin Action 47]
+0,1, 0,0, 1, HV
+; 8
+[Begin Action 48]
+0,0, 0,0, 1, V
+; 9
+[Begin Action 49]
+0,1, 0,0, 1, V

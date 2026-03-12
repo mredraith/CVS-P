@@ -46,7 +46,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 200 && animelem = 2
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 20 < 7, 7, fvar(12) * 20)), 0
+damage = 20
 animtype = Light
 air.animtype = Back
 fall.animtype = Back
@@ -88,7 +88,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 201 && animelem = 2
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 23 < 7, 7, fvar(12) * 23)), 0
+damage = 20
 animtype = Light
 air.animtype = Back
 fall.animtype = Back
@@ -171,7 +171,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 205
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
+damage = 40
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -213,7 +213,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 206
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 43 < 7, 7, fvar(12) * 43)), 0
+damage = 40
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -333,7 +333,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 25 < 7, 7, fvar(12) * 25)), 0
+damage = 25
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -375,7 +375,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 5
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 25 < 7, 7, fvar(12) * 25)), 0
+damage = 25
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -459,7 +459,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4 && anim = 210
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 67 < 7, 7, fvar(12) * 67)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -501,7 +501,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)); && p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && (anim = 211 || anim = 2110)
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -545,7 +545,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 trigger1 = animelem = 4 && (anim = 211 || anim = 2110)
 trigger1 = !movecontact && !movereversed
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -587,7 +587,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4 && anim = 213
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 65 < 7, 7, fvar(12) * 65)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -631,7 +631,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 trigger1 = prevstateno = 710
 trigger1 = animelem = 4 && anim = 210
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 66 < 7, 7, fvar(12) * 66)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -676,7 +676,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 trigger1 = prevstateno = 710
 trigger1 = animelem = 4 && anim = 213
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 65 < 7, 7, fvar(12) * 65)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -761,7 +761,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = (animelem = 6 || animelem = 7) && anim = 212
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 33 < 7, 7, fvar(12) * 33)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -844,7 +844,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 65 < 7, 7, fvar(12) * 65)), 0
+damage = 60
 animtype = Hard
 air.animtype = Hard;Back
 fall.animtype = Hard;Back
@@ -952,7 +952,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 20 < 7, 7, fvar(12) * 20)), 0
+damage = 30
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -994,7 +994,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 50 < 7, 7, fvar(12) * 50)), 0
+damage = 30
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -1078,7 +1078,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 20 < 7, 7, fvar(12) * 20)), 0
+damage = 15
 animtype = Light
 air.animtype = Back
 fall.animtype = Back
@@ -1161,7 +1161,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 220
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
+damage = 40
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -1203,7 +1203,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 221
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
+damage = 40
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -1318,7 +1318,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 7
 attr = A, NA
-damage = ceil(ifelse(fvar(12) * 50 < 7, 7, fvar(12) * 50)), 0
+damage = 50
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -1402,7 +1402,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 5 && anim = 225
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 62 < 7, 7, fvar(12) * 62)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -1444,7 +1444,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 226
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 46 < 7, 7, fvar(12) * 46)), 0
+damage = 35
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -1486,7 +1486,7 @@ type = hitdef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = animelem = 5 && anim = 226
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 20 < 7, 7, fvar(12) * 20)), 0
+damage = 35
 animtype = Hard
 air.animtype = Hard
 fall.animtype = Hard
@@ -1570,7 +1570,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = C, NA 
-damage = ceil(ifelse(fvar(12) * 20 < 7, 7, fvar(12) * 20)), 0
+damage = 20
 animtype = Light
 air.animtype = Back
 fall.animtype = Back
@@ -1653,7 +1653,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = C, NA 
-damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
+damage = 40
 animtype = Medium 
 air.animtype = Back
 fall.animtype = Back
@@ -1736,7 +1736,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4
 attr = C, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -1780,7 +1780,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = animelem = 5
 trigger1 = !movecontact && !movereversed
 attr = S, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 40
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -1864,7 +1864,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = C, NA 
-damage = ceil(ifelse(fvar(12) * 20 < 7, 7, fvar(12) * 20)), 0
+damage = 15
 animtype = Light
 air.animtype = Back
 fall.animtype = Back
@@ -1949,7 +1949,7 @@ triggerall = !var(16) && (var(15) < 1 || var(20))
 trigger1 = animelem = 3 && var(1)!= 2
 trigger2 = animelem = 4 && var(1) = 2
 attr = C, NA 
-damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
+damage = 40
 animtype = Medium
 air.animtype = Back
 fall.animtype = Back
@@ -2040,7 +2040,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4 && prevstateno!= 750
 attr = C, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 65
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -2084,7 +2084,7 @@ type = hitdef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = animelem = 4 && prevstateno = 750
 attr = C, SA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 65
 animtype = Back
 air.animtype = Back
 fall.animtype = Back
@@ -2168,7 +2168,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = A, NA 
-damage = ceil(ifelse(fvar(12) * 25 < 7, 7, fvar(12) * 25)), 0
+damage = 20
 animtype = Light
 air.animtype = Back
 fall.animtype = Back
@@ -2248,7 +2248,7 @@ type = hitdef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = anim = 265 && animelem = 2
 attr = A, NA 
-damage = ceil(ifelse(fvar(12) * 35 < 7, 7, fvar(12) * 35)), 0
+damage = 20
 animtype = Medium 
 air.animtype = Back
 fall.animtype = Back
@@ -2295,7 +2295,7 @@ trigger1 = p2stateno != 5040
 trigger1 = !var(16) && (var(15) < 3 || var(20))
 trigger1 = anim = 265 && animelem = 3
 attr = A, NA 
-damage = ceil(ifelse(fvar(12) * 15 < 7, 7, fvar(12) * 15)), 0
+damage = 25
 animtype = Medium 
 air.animtype = Back
 fall.animtype = Back
@@ -2422,7 +2422,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = A, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 60
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -2503,7 +2503,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2 && anim = 275
 attr = A, NA 
-damage = ceil(ifelse(fvar(12) * 25 < 7, 7, fvar(12) * 25)), 0
+damage = 15
 animtype = Light
 air.animtype = Back
 fall.animtype = Back
@@ -2631,7 +2631,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 280 && animelem = 3
 attr = A, NA 
-damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
+damage = 40
 animtype = Medium 
 air.animtype = Back
 fall.animtype = Back
@@ -2761,7 +2761,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = !movecontact && !movereversed
 attr = A, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 65
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back
@@ -2845,7 +2845,7 @@ trigger1 = !var(16) && (var(15) < 1 || var(20))
 ;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 285 && animelem = 3
 attr = A, NA
-damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
+damage = 65
 animtype = Hard
 air.animtype = Back
 fall.animtype = Back

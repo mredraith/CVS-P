@@ -1,0 +1,443 @@
+#===============================================================================
+# ADVANCED INPUT DISPLAY by jay_ts & m14
+#===============================================================================
+
+#============
+# FUNCTIONS
+#============
+
+# Unused but could be useful for fullgame specific functionality
+[Function jayInput_ClearInputStack()]
+ignorehitpause{
+	# dumb array logic to clear the stack
+	mapset{map: "_jayinput_keydisplay_item0"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item1"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item2"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item3"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item4"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item5"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item6"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item7"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item8"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item9"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item10"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item11"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item12"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item13"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item14"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item15"; value: 0; redirectid: player(teamside),id}
+}
+
+[Function jayInput_ClearTimerStack()]
+ignorehitpause{
+	# dumb array logic to clear the stack
+	mapset{map: "_jayinput_timedisplay_item0"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item1"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item2"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item3"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item4"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item5"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item6"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item7"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item8"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item9"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item10"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item11"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item12"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item13"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item14"; value: 0; redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item15"; value: 0; redirectid: player(teamside),id}
+}
+
+[Function jayInput_PushInputStack(value)]
+ignorehitpause{
+	# dumb array logic to push a new value to the stack
+	mapset{map: "_jayinput_keydisplay_item15"; value: player(teamside),map(_jayinput_keydisplay_item14); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item14"; value: player(teamside),map(_jayinput_keydisplay_item13); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item13"; value: player(teamside),map(_jayinput_keydisplay_item12); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item12"; value: player(teamside),map(_jayinput_keydisplay_item11); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item11"; value: player(teamside),map(_jayinput_keydisplay_item10); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item10"; value: player(teamside),map(_jayinput_keydisplay_item9); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item9"; value: player(teamside),map(_jayinput_keydisplay_item8); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item8"; value: player(teamside),map(_jayinput_keydisplay_item7); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item7"; value: player(teamside),map(_jayinput_keydisplay_item6); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item6"; value: player(teamside),map(_jayinput_keydisplay_item5); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item5"; value: player(teamside),map(_jayinput_keydisplay_item4); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item4"; value: player(teamside),map(_jayinput_keydisplay_item3); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item3"; value: player(teamside),map(_jayinput_keydisplay_item2); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item2"; value: player(teamside),map(_jayinput_keydisplay_item1); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item1"; value: player(teamside),map(_jayinput_keydisplay_item0); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_keydisplay_item0"; value: $value;                                       redirectid: player(teamside),id}
+}
+
+[Function jayInput_PushTimerStack(value)]
+ignorehitpause{
+	# dumb array logic to push a new value to the stack
+	mapset{map: "_jayinput_timedisplay_item15"; value: player(teamside),map(_jayinput_timedisplay_item14); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item14"; value: player(teamside),map(_jayinput_timedisplay_item13); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item13"; value: player(teamside),map(_jayinput_timedisplay_item12); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item12"; value: player(teamside),map(_jayinput_timedisplay_item11); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item11"; value: player(teamside),map(_jayinput_timedisplay_item10); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item10"; value: player(teamside),map(_jayinput_timedisplay_item9); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item9"; value: player(teamside),map(_jayinput_timedisplay_item8); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item8"; value: player(teamside),map(_jayinput_timedisplay_item7); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item7"; value: player(teamside),map(_jayinput_timedisplay_item6); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item6"; value: player(teamside),map(_jayinput_timedisplay_item5); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item5"; value: player(teamside),map(_jayinput_timedisplay_item4); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item4"; value: player(teamside),map(_jayinput_timedisplay_item3); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item3"; value: player(teamside),map(_jayinput_timedisplay_item2); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item2"; value: player(teamside),map(_jayinput_timedisplay_item1); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item1"; value: player(teamside),map(_jayinput_timedisplay_item0); redirectid: player(teamside),id}
+	mapset{map: "_jayinput_timedisplay_item0"; value: $value;                                       redirectid: player(teamside),id}
+}
+
+[Function jayInput_InputStateChanged() ret]
+ignorehitpause{
+	let ret = 0;
+	# detect changes if the directions were pressed or released
+	let ret = $ret || (InputTime(U) = 1 || InputTime(U) = -1);
+	let ret = $ret || (InputTime(D) = 1 || InputTime(D) = -1);
+	let ret = $ret || (InputTime(L) = 1 || InputTime(L) = -1);
+	let ret = $ret || (InputTime(R) = 1 || InputTime(R) = -1);
+	# detect changes if the buttons were pressed or released
+	let ret = $ret || ( (InputTime(a) = 1 || InputTime(a) = -1) ) && map(jayinput_enableLK);
+	let ret = $ret || ( (InputTime(b) = 1 || InputTime(b) = -1) ) && map(jayinput_enableMK);
+	let ret = $ret || ( (InputTime(c) = 1 || InputTime(c) = -1) ) && map(jayinput_enableHK);
+	let ret = $ret || ( (InputTime(x) = 1 || InputTime(x) = -1) ) && map(jayinput_enableLP);
+	let ret = $ret || ( (InputTime(y) = 1 || InputTime(y) = -1) ) && map(jayinput_enableMP);
+	let ret = $ret || ( (InputTime(z) = 1 || InputTime(z) = -1) ) && map(jayinput_enableHP);
+	let ret = $ret || ( (InputTime(d) = 1 || InputTime(d) = -1) ) && map(jayinput_enableD);
+	let ret = $ret || ( (InputTime(w) = 1 || InputTime(w) = -1) ) && map(jayinput_enableW);
+	let ret = $ret || ( (InputTime(s) = 1 || InputTime(s) = -1) ) && map(jayinput_enableS);
+}
+
+[Function jayInput_GetInputState() ret]
+ignorehitpause{
+	let ret = 0;
+	# get the current state of the controller to a bitflag
+	let ret = $ret | ( (InputTime(U) > 0) * (2**0) );
+	let ret = $ret | ( (InputTime(D) > 0) * (2**1) );
+	let ret = $ret | ( (InputTime(L) > 0) * (2**2) );
+	let ret = $ret | ( (InputTime(R) > 0) * (2**3) );
+	if (map(jayinput_enableLK)) { let ret = $ret | ( (InputTime(a) > 0) * (2**4) ); }
+	if (map(jayinput_enableMK)) { let ret = $ret | ( (InputTime(b) > 0) * (2**5) ); }
+	if (map(jayinput_enableHK)) { let ret = $ret | ( (InputTime(c) > 0) * (2**6) ); }
+	if (map(jayinput_enableLP)) { let ret = $ret | ( (InputTime(x) > 0) * (2**7) ); }
+	if (map(jayinput_enableMP)) { let ret = $ret | ( (InputTime(y) > 0) * (2**8) ); }
+	if (map(jayinput_enableHP)) { let ret = $ret | ( (InputTime(z) > 0) * (2**9) ); }
+	if (map(jayinput_enableD))  { let ret = $ret | ( (InputTime(d) > 0) * (2**10) ); }
+	if (map(jayinput_enableW))  { let ret = $ret | ( (InputTime(w) > 0) * (2**11) ); }
+	if (map(jayinput_enableS))  { let ret = $ret | ( (InputTime(s) > 0) * (2**12) ); }
+}
+
+[Function jayInput_RenderInputButton(value, bit, anim, explodId, xPos, index) ret]
+ignorehitpause{
+	let ret = 0;
+	let isNormal = (screenwidth / screenheight = 1.33333333);
+	
+	# easy shorthand for bit checking
+	# setting it to -1 makes a simple check to value
+	if($bit != -1){
+		let input = ( $value & (2**$bit) ) != 0;
+	} else {
+		let input = 1;
+	}
+
+	# the return value determines if we should shift the x value or not
+	if ($input) {
+		let wide = (screenheight/240);
+		if (numexplod($explodId)) {
+			RemoveExplod{
+				ID: $explodId;
+				redirectid: player(teamside),id;
+			}
+		}
+			
+		explod{
+			anim: JBTN $anim;
+			id: $explodId;
+			postype: left;
+			pos: const240p($xPos) * $wide, const240p(cond($isNormal, map(jayinput_yPos), map(jayinput_yPos_169)) + ($index * cond($isNormal, map(jayinput_rowSpacing), map(jayinput_rowSpacing_169)))) * $wide;
+			scale: cond($isNormal, map(jayinput_btnScale), map(jayinput_btnScale_169)) * $wide, cond($isNormal, map(jayinput_btnScale), map(jayinput_btnScale_169)) * $wide;
+			bindTime: -1;
+			superMoveTime: -1;
+			pauseMoveTime: -1;
+			ownPal: 1;
+			sprpriority: map(jayinput_sprPriority);
+			ontop: map(jayinput_onTop);
+			ignoreHitPause: 1;
+			facing: 1;
+			space: screen;
+			layerno: map(jayinput_layer);
+			redirectid: player(teamside),id;
+		}
+		
+		if ($value != 45) {
+			let ret = 1;
+		}
+	}
+}
+
+[Function jayInput_RenderInputLine(index, value, side)]
+# render order:
+# directions, then punches, then kicks, then start, then tag btns
+ignorehitpause{
+	# reserve 16 explods for our input lines
+	# 957054678 is our base explod number
+
+	let wide = screenheight / 240;
+	let isNormal = (screenwidth / screenheight = 1.33333333);
+	let explodId = 957054678 + ($index*16);
+	let xPos = cond($side=1, cond($isNormal,map(jayinput_xPos),map(jayinput_xPos_169)), (cond($isNormal, map(jayinput_btnMirrorConst), map(jayinput_btnMirrorConst_169)) / $wide) - cond($isNormal,map(jayinput_xPos),map(jayinput_xPos_169)));
+	let xOff = cond($side=1, cond($isNormal,map(jayinput_columnSpacing),map(jayinput_columnSpacing_169)), -cond($isNormal,map(jayinput_columnSpacing),map(jayinput_columnSpacing_169)));
+
+	# destroy any leftover explod
+	for i=1; 16; 1 {
+		if(numExplod($explodId+($i-1))){
+			removeExplod{
+				id: $explodId+($i-1);
+				redirectid: player(teamside),id;
+			}
+		}
+	}
+
+	# directions have special handling, figure out the anim for it
+
+	let uInput = ( $value & (2**0) ) != 0;
+	let dInput = ( $value & (2**1) ) != 0;
+	let lInput = ( $value & (2**2) ) != 0;
+	let rInput = ( $value & (2**3) ) != 0;
+	
+	let direction = 45;
+	let vertical = 0;
+
+	if($uInput){
+		let direction = 48;
+		let vertical = 1;
+	}
+
+	if($dInput){
+		let direction = 42;
+		let vertical = 1;
+	}
+
+	if($vertical){
+		if($rInput){
+			let direction = $direction + 1;
+		} else if($lInput){
+			let direction = $direction - 1;
+		}
+	} else {
+		if($rInput){
+			let direction = 46;
+		} else if($lInput){
+			let direction = 44;
+		}
+	}
+
+	# now render all the buttons
+
+	let ok = call jayInput_RenderInputButton($direction, -1, $direction, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 7, 24, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 8, 25, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 9, 26, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 4, 1, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 5, 2, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 6, 3, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 10, 51, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 11, 4, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+	let ok = call jayInput_RenderInputButton($value, 12, 23, $explodId, $xPos, $index);
+	if($ok = 1){ let xPos = $xPos + $xOff; }
+	let explodId = $explodId+1;
+}
+
+[Function jayInput_RenderTimerLine(index, value, side)]
+ignorehitpause{
+	let wide = screenheight / 240;
+	let isNormal = (screenwidth / screenheight = 1.33333333);
+	let explodId = 957054678 + ($index*16);
+	let xPos = cond($side=1, cond($isNormal, map(jayinput_textXPos), map(jayinput_textXPos_169)), (cond($isNormal, map(jayinput_textMirrorConst), map(jayinput_textMirrorConst_169)) / $wide) - cond($isNormal, map(jayinput_textXPos), map(jayinput_textXPos_169)));
+	
+	let dir = cond($side=1, -1, 1);
+
+	if (map(jayinput_textEnable) = 1) {
+		text{
+			text: "%0.0f";
+			params: clamp($value, 0, map(jayinput_textCap));
+			pos: const240p($xPos) * $wide, (cond($isNormal, map(jayinput_textYPos), map(jayinput_textYPos_169)) + ($index * cond($isNormal, map(jayinput_textSpacing), map(jayinput_textSpacing_169)))) * $wide;
+			font: f (map(jayinput_textFont));
+			bank: map(jayinput_textBank);
+			align: $dir;
+			scale: cond($isNormal, map(jayinput_textScale), map(jayinput_textScale_169)) * $wide, cond($isNormal, map(jayinput_textScale), map(jayinput_textScale_169)) * $wide;
+			layerno: map(jayinput_textLayer);
+		}
+	}
+}
+
+[StateDef -4]
+
+#===========================================================================
+
+#===============
+# CONFIG (4:3)
+#===============
+
+map(jayinput_xPos)				:= 20;			# X pos for the input display to start on
+map(jayinput_yPos)				:= 85;			# Y pos for the input display to start on
+map(jayinput_rowSpacing) 		:= 12;			# Spacing between input lines
+map(jayinput_columnSpacing) 	:= 12;			# Spacing between input combinations
+map(jayinput_btnScale) 			:= 0.5;			# Scale for buttons
+map(jayinput_btnMirrorConst) 	:= 320;			# Constant used for mirroring on P2 side.
+
+map(jayinput_textFont) 			:= 3;			# Font used for the timer text (Uses fight.def fonts by default)
+map(jayinput_textBank) 			:= 0;			# Color bank used for the timer text
+map(jayinput_textLayer)			:= 2;			# Layer used for the timer text
+map(jayinput_textXPos)			:= 200;			# X pos for timer text
+map(jayinput_textYPos)			:= 260;			# Y pos for timer text
+map(jayinput_textSpacing)		:= 36;			# Line spacing for timer text
+map(jayinput_textScale) 		:= 0.75;		# Scale used for the timer text
+map(jayinput_textMirrorConst) 	:= 1275;		# Constant used for mirroring on P2 side.
+
+#===============
+# CONFIG (16:9)
+#===============
+
+map(jayinput_xPos_169)			:= 20;			# X pos for the input display to start on
+map(jayinput_yPos_169)			:= 50;			# Y pos for the input display to start on
+map(jayinput_rowSpacing_169) 	:= 12;			# Spacing between input lines
+map(jayinput_columnSpacing_169) := 12;			# Spacing between input combinations
+map(jayinput_btnScale_169) 		:= 0.5;			# Scale for buttons
+map(jayinput_btnMirrorConst_169):= 320;			# Constant used for mirroring on P2 side.
+
+map(jayinput_textXPos_169)		:= 45;			# X pos for timer text
+map(jayinput_textYPos_169)		:= 220;			# Y pos for timer text
+map(jayinput_textSpacing_169)	:= 48;			# Line spacing for timer text
+map(jayinput_textScale_169) 	:= 1.00;		# Scale used for the timer text
+map(jayinput_textMirrorConst_169):= 1275;		# Constant used for mirroring on P2 side.
+
+#====================
+# CONFIG (BEHAVIOR)
+#====================
+
+map(jayinput_enabled) 			:= 1;			# Enable input display (0 = off, 1 = on)
+map(jayinput_btnCount)			:= 11;			# Amount of rows to display (up to 16 items)
+map(jayinput_sprPriority)		:= 512;			# SprPriority parameter value for the buttons
+map(jayinput_onTop)				:= 1;			# Ontop parameter value for the buttons
+map(jayinput_layer)				:= 1;			# Layer parameter value for the buttons
+map(jayinput_textEnable)		:= 1;			# Enable timer text (0 = off, 1 = on)
+map(jayinput_textCap)			:= 999;			# Max time displayed for a held input
+
+map(jayinput_enableLP)			:= 1;			# Allow detection of LP/X (0 = no, 1 = yes)
+map(jayinput_enableMP)			:= 1;			# Allow detection of MP/Y (0 = no, 1 = yes)
+map(jayinput_enableHP)			:= 1;			# Allow detection of HP/Z (0 = no, 1 = yes)
+map(jayinput_enableLK)			:= 1;			# Allow detection of LK/A (0 = no, 1 = yes)
+map(jayinput_enableMK)			:= 1;			# Allow detection of MK/B (0 = no, 1 = yes)
+map(jayinput_enableHK)			:= 1;			# Allow detection of HK/C (0 = no, 1 = yes)
+map(jayinput_enableD)			:= 1;			# Allow detection of D (0 = no, 1 = yes)
+map(jayinput_enableW)			:= 1;			# Allow detection of W (0 = no, 1 = yes)
+map(jayinput_enableS)			:= 1;			# Allow detection of Start (0 = no, 1 = yes)
+
+#===========================================================================
+
+#============
+# UPDATE
+#============
+
+ignoreHitPause if (gameMode = "training" && roundState = 2 && !isHelper) {
+	if (map(jayinput_enabled) = 1) {
+		# Key display
+		# Map flag format:
+		# 16 maps from _jayinput_keydisplay_item0 to _jayinput_keydisplay_item15
+		# Each is a bitflag (read LSB)
+		# UDLFXYABS
+		if (map(_jayinput_timedisplay_item0) < 2 ** 30) { 
+			mapadd{map: "_jayinput_timedisplay_item0"; value: 1;} 
+		}
+		if (playerno = teamleader) {
+			let state = call jayInput_GetInputState();
+			let ok = call jayInput_InputStateChanged();
+			if ($ok != 0) {
+				# state was changed, push to stack
+				call jayInput_PushInputStack($state);
+				call jayInput_PushTimerStack(min(map(_jayinput_timedisplay_item0), map(jayinput_textCap)));
+				map(_jayinput_timedisplay_item0) := 0;
+			}
+		}
+		if (playerno = teamside) {
+			if (map(jayinput_btnCount) >=  1) { 
+				call jayInput_RenderInputLine(0, map(_jayinput_keydisplay_item0), teamside); 
+				call jayInput_RenderTimerLine(0, map(_jayinput_timedisplay_item0), teamside); }
+			if (map(jayinput_btnCount) >=  2) { 
+				call jayInput_RenderInputLine(1, map(_jayinput_keydisplay_item1), teamside); 
+				call jayInput_RenderTimerLine(1, map(_jayinput_timedisplay_item1), teamside); }
+			if (map(jayinput_btnCount) >=  3) { 
+				call jayInput_RenderInputLine(2, map(_jayinput_keydisplay_item2), teamside); 
+				call jayInput_RenderTimerLine(2, map(_jayinput_timedisplay_item2), teamside); }
+			if (map(jayinput_btnCount) >=  4) { 
+				call jayInput_RenderInputLine(3, map(_jayinput_keydisplay_item3), teamside); 
+				call jayInput_RenderTimerLine(3, map(_jayinput_timedisplay_item3), teamside); }
+			if (map(jayinput_btnCount) >=  5) { 
+				call jayInput_RenderInputLine(4, map(_jayinput_keydisplay_item4), teamside); 
+				call jayInput_RenderTimerLine(4, map(_jayinput_timedisplay_item4), teamside); }
+			if (map(jayinput_btnCount) >=  6) { 
+				call jayInput_RenderInputLine(5, map(_jayinput_keydisplay_item5), teamside); 
+				call jayInput_RenderTimerLine(5, map(_jayinput_timedisplay_item5), teamside); }
+			if (map(jayinput_btnCount) >=  7) { 
+				call jayInput_RenderInputLine(6, map(_jayinput_keydisplay_item6), teamside); 
+				call jayInput_RenderTimerLine(6, map(_jayinput_timedisplay_item6), teamside); }
+			if (map(jayinput_btnCount) >=  8) { 
+				call jayInput_RenderInputLine(7, map(_jayinput_keydisplay_item7), teamside); 
+				call jayInput_RenderTimerLine(7, map(_jayinput_timedisplay_item7), teamside); }
+			if (map(jayinput_btnCount) >=  9) { 
+				call jayInput_RenderInputLine(8, map(_jayinput_keydisplay_item8), teamside); 
+				call jayInput_RenderTimerLine(8, map(_jayinput_timedisplay_item8), teamside); }
+			if (map(jayinput_btnCount) >= 10) { 
+				call jayInput_RenderInputLine(9, map(_jayinput_keydisplay_item9), teamside); 
+				call jayInput_RenderTimerLine(9, map(_jayinput_timedisplay_item9), teamside); }
+			if (map(jayinput_btnCount) >= 11) { 
+				call jayInput_RenderInputLine(10, map(_jayinput_keydisplay_item10), teamside); 
+				call jayInput_RenderTimerLine(10, map(_jayinput_timedisplay_item10), teamside); }
+			if (map(jayinput_btnCount) >= 12) { 
+				call jayInput_RenderInputLine(11, map(_jayinput_keydisplay_item11), teamside); 
+				call jayInput_RenderTimerLine(11, map(_jayinput_timedisplay_item11), teamside); }
+			if (map(jayinput_btnCount) >= 13) { 
+				call jayInput_RenderInputLine(12, map(_jayinput_keydisplay_item12), teamside); 
+				call jayInput_RenderTimerLine(12, map(_jayinput_timedisplay_item12), teamside); }
+			if (map(jayinput_btnCount) >= 14) { 
+				call jayInput_RenderInputLine(13, map(_jayinput_keydisplay_item13), teamside); 
+				call jayInput_RenderTimerLine(13, map(_jayinput_timedisplay_item13), teamside); }
+			if (map(jayinput_btnCount) >= 15) { 
+				call jayInput_RenderInputLine(14, map(_jayinput_keydisplay_item14), teamside); 
+				call jayInput_RenderTimerLine(14, map(_jayinput_timedisplay_item14), teamside); }
+			if (map(jayinput_btnCount) >= 16) { 
+				call jayInput_RenderInputLine(15, map(_jayinput_keydisplay_item15), teamside); 
+				call jayInput_RenderTimerLine(15, map(_jayinput_timedisplay_item15), teamside); }
+		}
+	} else {
+		for i=0; 16*16; 1 {
+			if(NumExplod(957054678+$i)){
+				RemoveExplod{
+					ID: 957054678+$i;
+				}
+			}
+		}
+	}
+}
