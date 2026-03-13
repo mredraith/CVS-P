@@ -1797,7 +1797,7 @@ ctrl = 1
 type = S
 physics = S
 movetype = I
-anim = 1000
+anim = 10005
 ctrl = 0
 velset = 0, 0
 
