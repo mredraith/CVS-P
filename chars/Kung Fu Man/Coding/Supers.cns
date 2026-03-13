@@ -1,4 +1,4 @@
-;======================<KUNG FU BARRAGE>===================
+;KUNG FU BARRAGE=
 [Statedef 3000]
 type    = S
 movetype= A
@@ -123,9 +123,9 @@ trigger1 = AnimElem = 3
 x = 20
 
 [State 3000, Velocity]
-type = VelSet
-trigger1 = AnimElemTime(3) > 0 && AnimElemTime(26) < 0
-x = 6
+type = VelAdd
+trigger1 = AnimElem = 3 || AnimElem = 12 || AnimElem = 20
+x = 12
 
 [State 3000, Friction]
 type = VelMul
@@ -239,7 +239,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<KUNG FU BARRAGE MAX>===================
+;KUNG FU BARRAGE MAX=
 [Statedef 3050]
 type    = S
 movetype= A
@@ -342,7 +342,7 @@ channel = 0
 
 [State 3050, Voice 1-3]
 type = PlaySnd
-trigger1 = AnimElem = 3 || AnimElem = 11 || AnimElem = 19
+trigger1 = AnimElem = 3 || AnimElem = 11 || AnimElem = 19 || AnimElem = 28
 value = 0, 0
 channel = 0
 
@@ -369,10 +369,10 @@ type = PosAdd
 trigger1 = AnimElem = 3
 x = 20
 
-[State 3050, Velocity]
-type = VelSet
-trigger1 = AnimElemTime(3) > 0 && AnimElemTime(31) < 0
-x = 6.75
+[State 3000, Velocity]
+type = VelAdd
+trigger1 = AnimElem = 3 || AnimElem = 12 || AnimElem = 20
+x = 12
 
 [State 3050, Friction]
 type = VelMul
@@ -532,7 +532,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<GRAND KUNG FU UPPER>===================
+;GRAND KUNG FU UPPER=
 [Statedef 3100]
 type = S
 movetype = A
@@ -649,8 +649,8 @@ guardflag = M
 hitflag = MAF
 hitsound = S1000,0;S2,2
 guardsound = S130,0
-pausetime = 12,12
-guard.pausetime = 12,12
+pausetime = 60,60
+guard.pausetime = 30,30
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 90), var(36) := -110
@@ -661,8 +661,8 @@ air.type = High
 ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
-ground.velocity = -2, -29
-air.velocity = -2, -29
+ground.velocity = -2, -20
+air.velocity = -2, -20
 guard.velocity = -11
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
@@ -676,7 +676,7 @@ palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
 envshake.time = 25
-envshake.ampl = 7
+envshake.ampl = 15
 envShake.freq = 176
 fall.envshake.ampl = 6       ;Parameters for shaking the screen when your foe hits the ground from their fall
 fall.envshake.freq = 178
