@@ -705,7 +705,50 @@ name = "EXYogaFire"
 command = ~D, DF, F, x+z
 time = 16
 
+[Command]
+name = "YogaBarrage"
+command = ~F, D, DF, x
+time = 16
 
+[Command]
+name = "YogaBarrage"
+command = ~F, D, DF, y
+time = 16
+
+[Command]
+name = "YogaBarrage"
+command = ~F, D, DF, z
+time = 16
+
+[Command]
+name = "YogaBarrage"
+command = ~F, D, DF, ~x
+time = 16
+
+[Command]
+name = "YogaBarrage"
+command = ~F, D, DF, ~y
+time = 16
+
+[Command]
+name = "YogaBarrage"
+command = ~F, D, DF, ~z
+time = 16
+
+[Command]
+name = "EXYogaBarrage"
+command = ~F, D, DF, x+y
+time = 16
+
+[Command]
+name = "EXYogaBarrage"
+command = ~F, D, DF, x+z
+time = 16
+
+[Command]
+name = "EXYogaBarrage"
+command = ~F, D, DF, y+z
+time = 16
 
 [Command]
 name = "412p"
@@ -1030,7 +1073,7 @@ trigger2 = var(6)
 type = ChangeState
 value = 1430
 triggerAll = !AILevel
-triggerAll = command = "pp" && var(45) >= 5
+triggerAll = command = "EXYogaBarrage"
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = Power >= 500 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || stateNo = 52 || (StateNo = [100,101])
@@ -1082,7 +1125,7 @@ trigger2 = var(6)
 type = ChangeState
 value = 1400
 triggerAll = !AILevel
-triggerAll = (command = "x" || command = "y" || command = "z") && var(45) >= 5
+triggerAll = command = "YogaBarrage"
 triggerAll = RoundState = 2 && StateType != A
 trigger1 = ctrl || StateNo = 40 || StateNo= 52 || (StateNo = [100,101])
 trigger2 = var(6)
