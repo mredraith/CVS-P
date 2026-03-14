@@ -1055,6 +1055,7 @@ trigger2 = var(4)
 trigger3 = !var(40) && (stateno = 200 || stateno = 205) && animelemtime(3)>=2 && movecontact
 trigger4 = !var(40) && stateno = 400 && animelemtime(3)>=1 && movecontact
 trigger5 = var(40) && (stateno = 200 || stateno = 400) && ifelse(movecontact, animelemtime(3)>=-1, animelemtime(3)>=0)
+trigger6 = (stateno = 200 || stateno = 205) && time >= 6
 
 [State -1, Standing Light Kick]
 type = ChangeState
@@ -1114,6 +1115,7 @@ trigger2 = var(4)
 trigger3 = !var(40) && (stateno = 200 || stateno = 205) && animelemtime(3)>=2 && movecontact
 trigger4 = !var(40) && stateno = 400 && animelemtime(3)>=1 && movecontact
 trigger5 = var(40) && (stateno = 200 || stateno = 400) && ifelse(movecontact, animelemtime(3)>=-1, animelemtime(3)>=0)
+trigger5 = stateno = 400 && time >= 6
 
 [State -1, Crouching Light Kick]
 type = ChangeState
@@ -1125,6 +1127,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 trigger2 = var(4)
 trigger3 = (stateno = 200 || stateno = 205) && animelemtime(3)>=2 && movecontact
 trigger4 = stateno = 400 && animelemtime(3)>=1 && movecontact
+trigger5 = stateno = 430 && time >= 6
 
 [State -1, Jumping Heavy Punch]
 type = ChangeState
