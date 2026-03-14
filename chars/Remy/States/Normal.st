@@ -2,7 +2,7 @@
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;<NORMAL MOVES>==
+;NORMAL MOVES=
 ;
 
 ;---------------------------------------------------------------------------
@@ -2277,7 +2277,7 @@ type=changestate
 trigger1= pos y>-vel y
 value=52
 
-;<Throw Attempt>==
+;Throw Attempt=
 [Statedef 800]
 type=S
 physics=S
@@ -3041,7 +3041,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 0
 value = 5100
 
-;<THROW ESC'D>==
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

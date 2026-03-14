@@ -71,7 +71,7 @@ persistent=1
 type=SelfState
 trigger1=Vel Y > 0 && Pos Y >= 0
 value=5100
-;========================<HIT WALL>=============================
+;HIT WALL=
 ;Wall Bounce-Hit Pause
 [Statedef 1325]
 type=A
@@ -264,7 +264,7 @@ y=0
 [State 3025, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3025  ;<=======custom animation
+value = 3025  ;custom animation
 
 [State 3025, SelfState]
 type = SelfState
@@ -297,7 +297,7 @@ y=0
 [State 3026, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3026  ;<=======custom animation
+value = 3026  ;custom animation
 
 [State 3026, SelfState]
 type = SelfState
@@ -341,7 +341,7 @@ ignorehitpause = 1
 [State 3027, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3027  ;<=======custom animation
+value = 3027  ;custom animation
 [State 3027, VelAdd]
 type = VelAdd
 trigger1 =animelemtime(3)>=0
@@ -381,7 +381,7 @@ ignorehitpause = 1
 [State 3125, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3125  ;<=======custom animation
+value = 3125  ;custom animation
 
 [State 3125, SelfState]
 type = SelfState
@@ -406,7 +406,7 @@ ignorehitpause = 1
 [State 3126, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3126  ;<=======custom animation
+value = 3126  ;custom animation
 [State 3126, VelAdd]
 type = VelAdd
 trigger1 =animelemtime(3)>=0
@@ -452,7 +452,7 @@ ignorehitpause = 1
 [State 3127, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3127  ;<=======custom animation
+value = 3127  ;custom animation
 
 [State 3127, SelfState]
 type = SelfState
@@ -485,7 +485,7 @@ y=0
 [State 3225, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 3025  ;<=======custom animation
+value = 3025  ;custom animation
 
 [State 3225, SelfState]
 type = SelfState
@@ -515,7 +515,7 @@ value = 5052
 [State 3226, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time && !selfanimexist(5052)
-value = 3027  ;<=======custom animation
+value = 3027  ;custom animation
 
 [State 3226, VelAdd]
 type = VelAdd
@@ -548,7 +548,7 @@ y =.45
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4020  ;<=======custom animation
+value=4020  ;custom animation
 
 [State 0, ChangeState]
 type=changeState
@@ -619,7 +619,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4058  ;<=======custom animation
+value=4058  ;custom animation
 
 [State 0, SelfState]
 type=SelfState
@@ -655,7 +655,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4059  ;<=======custom animation
+value=4059  ;custom animation
 [State 0, SelfState]
 type=SelfState
 trigger1=!animtime

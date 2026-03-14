@@ -2,7 +2,7 @@
 ;| Sakura by Phantom.of.the.Server |
 ; 
 ;
-; EX SPECIAL STATES >==
+; EX SPECIAL STATES =
 ;
 
 ; HADOU SHOU >=
@@ -960,7 +960,7 @@ trigger1 = vel y > 0 && pos y >= 0
 value = ifelse(var(30) = -1, 1252, ifelse(var(30) = 2, 1230, ifelse(var(30) = 1, 1220, 52)))
 
 
-; TAUNT >==
+; TAUNT =
 [Statedef 1195]
 type = S
 movetype = A

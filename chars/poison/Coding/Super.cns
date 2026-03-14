@@ -1,4 +1,4 @@
-;===================<Crescent Stiletto Strike>=====================
+;Crescent Stiletto Strike=
 [Statedef 3000]
 type    = S
 movetype= A
@@ -350,7 +350,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===================<Crescent Stiletto Strike MAX>=====================
+;Crescent Stiletto Strike MAX=
 [Statedef 3050]
 type    = S
 movetype= A
@@ -708,7 +708,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========================<Poison's Kiss>==========================
+;Poison's Kiss=
 [StateDef 3100]
 type = S
 physics = S
@@ -828,7 +828,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========================<High Heel Assault>==========================
+;High Heel Assault=
 [Statedef 3200]
 type = S
 physics = S

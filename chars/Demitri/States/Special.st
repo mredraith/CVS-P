@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;CHAOS FLARE>==
+;CHAOS FLARE=
 [StateDef 1000]
 type = S
 physics = S
@@ -177,7 +177,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;AIR CHAOS FLARE>==
+;AIR CHAOS FLARE=
 [StateDef 1050]
 type = S
 physics = N
@@ -1397,7 +1397,7 @@ trigger1 = Pos Y >= 0
 value = 52
 ctrl = 1
 
-;NEGATIVE STOLEN>==
+;NEGATIVE STOLEN=
 [StateDef 1300]
 type = S
 physics = S
@@ -1723,7 +1723,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 812
 
-;NEGATIVE STOLEN (TARGET)>==
+;NEGATIVE STOLEN (TARGET)=
 ;Being Thrown
 [StateDef 1315]
 type = A
@@ -2391,7 +2391,7 @@ type = ChangeState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 52
 
-;CHAOS FLARE 2>==
+;CHAOS FLARE 2=
 [StateDef 1500]
 type = S
 physics = N
@@ -2535,7 +2535,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;AIR CHAOS FLARE 2>==
+;AIR CHAOS FLARE 2=
 [StateDef 1550]
 type = S
 physics = N

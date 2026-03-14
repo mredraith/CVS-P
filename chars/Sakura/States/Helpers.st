@@ -2914,7 +2914,7 @@ trans = AddAlpha
 alpha = 256 - (32 * Time), 32 * Time
 
 
-; KEI INTRO >==
+; KEI INTRO =
 [Statedef 6000]
 type = S
 physics = N
@@ -2973,7 +2973,7 @@ trigger1 = anim = 6001
 trigger1 = frontedgedist < -50
 
 
-; KEI WIN POSE 1 >==
+; KEI WIN POSE 1 =
 [Statedef 6002]
 type = S
 physics = N
@@ -3029,7 +3029,7 @@ statetype = L
 physics = C
 
 
-; KEI WIN POSE 2 >==
+; KEI WIN POSE 2 =
 [Statedef 6004]
 type = S
 physics = N
@@ -3063,7 +3063,7 @@ trigger1 = anim = 6004
 physics = S
 
 
-; KEI SHUN GOKU SATSU >==
+; KEI SHUN GOKU SATSU =
 [Statedef 6010]
 type = S
 physics = N

@@ -2373,7 +2373,7 @@ ignoreHitPause = 1
 type = destroyself
 trigger1 = roundstate = 2
 
-;HYPER CHAIN DRIVE (PROJECTILE)>==
+;HYPER CHAIN DRIVE (PROJECTILE)=
 ;Source code: Urien by Froz. Yeah, I'm lazy.
 [Statedef 3305]
 type = S

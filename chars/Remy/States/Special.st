@@ -2,10 +2,10 @@
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;<SPECIAL MOVES>==
+;SPECIAL MOVES=
 ;
 
-;<LIGHT OF VIRTUE HIGH>=
+;LIGHT OF VIRTUE HIGH>=
 [StateDef 1000]
 type = S
 physics = S
@@ -74,7 +74,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<LIGHT OF VIRTUE LOW>=
+;LIGHT OF VIRTUE LOW>=
 [StateDef 1100]
 type = S
 physics = S
@@ -862,7 +862,7 @@ type = ChangeState
 trigger1 = Pos Y >= 37 && Vel Y > 0
 value = 1205
 
-;<SOMERSAULT KICK>=
+;SOMERSAULT KICK>=
 [StateDef 1300]
 type = S
 physics = N

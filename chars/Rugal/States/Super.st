@@ -6690,7 +6690,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;G End Connect>==
+;G End Connect=
 [Statedef 3610]
 type = S
 movetype = A
@@ -7019,7 +7019,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;G Emd P2 State 1>==
+;G Emd P2 State 1=
 [Statedef 3620]
 type = S
 movetype = H
@@ -7105,7 +7105,7 @@ trigger1 = AnimElemTime(5) >= 0
 scale = 1,1
 ignorehitpause = 1
 
-;G Emd P2 State 1>==
+;G Emd P2 State 1=
 [Statedef 3630]
 type = A
 movetype = H

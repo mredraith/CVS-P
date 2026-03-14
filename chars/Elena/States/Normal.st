@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Elena by varo_hades                     |
 ; 
-;=======
+;
 ;NORMAL MOVES=
-;=======
+;
 
 ;STANDING LIGHT PUNCH
 [StateDef 200]

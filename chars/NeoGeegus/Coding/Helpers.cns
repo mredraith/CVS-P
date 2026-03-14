@@ -1,4 +1,4 @@
-;========================< HADOU KEN >=============================
+; HADOU KEN =
 [Statedef 1005]
 type = S
 physics = N
@@ -2000,7 +2000,7 @@ trigger1 = animelemtime(14) >= 0
 trigger2 = animelemtime(6) < 0
 trigger2 = root, movetype = H || (root, stateno != [1250, 1250]) || (root, anim != [1250, 1250])
 
-;=====================<CRIMINAL UPPER PROJECTILE>=========================
+;CRIMINAL UPPER PROJECTILE=
 [StateDef 1305]
 type = S
 physics = N
@@ -3022,7 +3022,7 @@ flag = noshadow
 type = DestroySelf
 trigger1 = root,anim != 1500
 
-;====================<KAISER WAVE PROJECTILE>=========================
+;KAISER WAVE PROJECTILE=
 [StateDef 1515]
 type = A
 physics = N
@@ -3765,7 +3765,7 @@ ignorehitpause =1
 type=destroyself
 trigger1=!animtime
 
-;=========<Kaiser Wave no Shock>==========
+;Kaiser Wave no Shock=
 [Statedef 1550]
 type=A
 physics=N
@@ -3943,7 +3943,7 @@ value=Ifelse(var(8)<3,1551,Ifelse(var(8)<2,1551,1560))
 type=destroyself
 trigger1 = FrontEdgeDist < -100 || BackEdgeDist < -100
 
-;=========<Kaiser Wave no Shock>==========
+;Kaiser Wave no Shock=
 [Statedef 1551]
 type=A
 physics=N
@@ -4112,7 +4112,7 @@ value=1560
 [State 3005, End]
 type=destroyself
 trigger1 = FrontEdgeDist < -100 || BackEdgeDist < -100
-;=========<Kaiser Wave no Shock>==========
+;Kaiser Wave no Shock=
 [Statedef 1555]
 type=A
 physics=N
@@ -4297,7 +4297,7 @@ type=destroyself
 trigger1 = FrontEdgeDist < -100 || BackEdgeDist < -100
 
 
-;=========<Kaiser Wave no Shock>==========
+;Kaiser Wave no Shock=
 [Statedef 1556]
 type=A
 physics=N
@@ -4474,7 +4474,7 @@ type=destroyself
 trigger1 = FrontEdgeDist < -100 || BackEdgeDist < -100
 
 
-;=========<Kaiser Wave End>==========
+;Kaiser Wave End=
 [Statedef 1560]
 type=A
 physics=N
@@ -4605,7 +4605,7 @@ trigger1 = !AnimTime
 value = 1608
 
 
-;=========<Kaiser Wave End>==========
+;Kaiser Wave End=
 [Statedef 1561]
 type=A
 physics=N
@@ -4749,7 +4749,7 @@ type = DestroySelf
 trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
-;=========<Kaiser Wave no Shock>==========
+;Kaiser Wave no Shock=
 [Statedef 1570]
 type=A
 physics=N
@@ -4947,7 +4947,7 @@ value=Ifelse(var(8)<3,1571,Ifelse(var(8)<2,1571,1561))
 type=destroyself
 trigger1 = FrontEdgeDist < -100 || BackEdgeDist < -100
 
-;=========<Kaiser Wave no Shock>==========
+;Kaiser Wave no Shock=
 [Statedef 1571]
 type=A
 physics=N
@@ -5118,7 +5118,7 @@ type=destroyself
 trigger1 = FrontEdgeDist < -100 || BackEdgeDist < -100
 
 
-;=========<Dark Smash FX>==========
+;Dark Smash FX=
 [Statedef 1572]
 type=A
 physics=N
@@ -5183,7 +5183,7 @@ type=destroyself
 trigger1 = root, Stateno != 1500 && root, StateNo != 3400|| Root, MoveType = H
 ignorehitpause = 1
 
-;=========<Kaiser Wave Shock>==========
+;Kaiser Wave Shock=
 [Statedef 1575]
 type=A
 physics=N
@@ -5404,7 +5404,7 @@ value=1560
 type=destroyself
 trigger1 = FrontEdgeDist < -100 || BackEdgeDist < -100
 
-;=====================<YAMI BARAI PROJECTILE>=========================
+;YAMI BARAI PROJECTILE=
 [StateDef 1605]
 type = S
 physics = N
@@ -6328,7 +6328,7 @@ ignorehitpause =1
 type=destroyself
 trigger1=time>=14
 
-;=====================<EX REPPUKEN PROJECTILES>=========================
+;EX REPPUKEN PROJECTILES=
 [StateDef 1635]
 type = S
 physics = N
@@ -6600,7 +6600,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
 
-;=====================<SONIC BOOM PROJECTILE>=========================
+;SONIC BOOM PROJECTILE=
 [StateDef 1805]
 type = S
 physics = N
@@ -7570,7 +7570,7 @@ ignorehitpause=1
 type=destroyself
 trigger1= !AnimTime
 
-;========================<PSYCHO SHOT>=============================
+;PSYCHO SHOT=
 ;Create
 [StateDef 1834]
 type = A
@@ -7617,7 +7617,7 @@ trigger1 = Root, StateNo = 1830 && Root, AnimElem = 11
 trigger2 = Root, StateNo != 1830
 trigger3 = Root, MoveType = H
 
-;========================<PSYCHO SHOT>=============================
+;PSYCHO SHOT=
 [StateDef 1835]
 type = S
 physics = N
@@ -7892,7 +7892,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;========================<SHINKUU HADOUKEN CHARGE>=============================
+;SHINKUU HADOUKEN CHARGE=
 [Statedef 3004]
 physics = N
 velset = 0,0
@@ -7941,7 +7941,7 @@ type = destroyself
 trigger1 = root, stateno != 3000 || (root, anim != [3000, 3001])
 trigger2 = !animtime
 
-;=====================<SHINKUU HADOU KEN PROJECTILE>=========================
+;SHINKUU HADOU KEN PROJECTILE=
 [StateDef 3005]
 type = S
 physics = N
@@ -8278,7 +8278,7 @@ ignorehitpause = 1
 type = destroyself
 trigger1 = time >= 10
 
-;========================< SHINKUU HADOU KEN >=============================
+; SHINKUU HADOU KEN =
 [Statedef 3055]
 type = S
 physics = N
@@ -8546,7 +8546,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================< SHINKUU SHIELD >=============================
+; SHINKUU SHIELD =
 [Statedef 3058]
 type = A
 physics = N
@@ -8580,7 +8580,7 @@ trigger1 = !playerIDexist(var(0))
 trigger2 = playerIDexist(var(0))
 trigger2 = parent, stateno != 3055 && parent, stateno != 3057
 
-;========================< SHINKUU HADOU KEN >=============================
+; SHINKUU HADOU KEN =
 [Statedef 3057]
 type = S
 physics = N
@@ -9044,7 +9044,7 @@ ignorehitpause =1
 type=destroyself
 trigger1=!animtime
 
-;========================< B&W DUST >=============================
+; B&W DUST =
 [Statedef 3256]
 physics = N
 anim = 1
@@ -9078,7 +9078,7 @@ type = destroyself
 trigger1 = time >= 17
 
 
-;========================< METSU SHORYUU KEN >=============================
+; METSU SHORYUU KEN =
 [Statedef 3255]
 physics = N
 velset = 0, 0
@@ -9107,7 +9107,7 @@ trans = add
 type = destroyself
 trigger1 = !animtime
 
-;====================<OROCHINAGI PROJECTILE>=========================
+;OROCHINAGI PROJECTILE=
 [StateDef 3315]
 type = A
 physics = N
@@ -9510,7 +9510,7 @@ value = 1608
 
 
 
-;====================<OROCHINAGI PROJECTILE SHIELD>=========================
+;OROCHINAGI PROJECTILE SHIELD=
 [StateDef 3356]
 type = A
 physics = N
@@ -10261,7 +10261,7 @@ type = ChangeAnim
 trigger1 = Time = 80
 value = 6181
 
-;==================<PHOENIX (FANG) ARROW HELPERS>=======================
+;PHOENIX (FANG) ARROW HELPERS=
 ;FX1
 [Statedef 6150]
 type = A
@@ -10290,7 +10290,7 @@ type = DestroySelf
 trigger1 = Root,MoveType=H
 trigger2 = Root,StateNo!=1380
 
-;========================<ICE BLAST PROJECTILE>=============================
+;ICE BLAST PROJECTILE=
 ;Iceshot
 [StateDef 7050]
 type = S
@@ -12571,7 +12571,7 @@ trigger1=root,command="a"||root,command="b"||root,command="c"||root,command="x"|
 trigger2=var(46)<=0
 trigger3=root,AILevel
 
-;====================<PARRY HELPER>=========================
+;PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -12678,7 +12678,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;=====================<MAX MODE BAR HELPER>============================
+;MAX MODE BAR HELPER=
 [Statedef 780]
 type = S
 movetype = I
@@ -12769,7 +12769,7 @@ type = DestroySelf
 trigger1 = root, Var(20) <= 0
 ignorehitpause = 1
 
-;========================<PROJECTILE SHIELDS>=============================
+;PROJECTILE SHIELDS=
 ;Light/Med
 [Statedef 1250]
 type = A
@@ -12867,7 +12867,7 @@ trigger1 = root,movetype=H
 trigger2 = root,stateno!=1210
 trigger3 = root,stateno=1210 && root,animelemtime(7)>=0
 
-;========================<SPARKS>=============================
+;SPARKS=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -14042,7 +14042,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;======================<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -14079,7 +14079,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;======================<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -14139,7 +14139,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -14183,7 +14183,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -14363,7 +14363,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;========================<RECOVER FX>=============================
+;RECOVER FX=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -14390,7 +14390,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;========================<COUNTER FX>=============================
+;COUNTER FX=
 [StateDef 8290]
 type = A
 physics = N
@@ -14434,7 +14434,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<MAX MODE TEXT FX>=============================
+;MAX MODE TEXT FX=
 [StateDef 8291]
 type = A
 physics = N
@@ -14478,7 +14478,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;==================<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -14586,7 +14586,7 @@ type = DestroySelf
 trigger1 = Root, StateNo != 730
 
 
-;==================<ALPHA COUNTER FX>==================
+;ALPHA COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -14636,7 +14636,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<CUSTOM COMBO>=============================
+;CUSTOM COMBO=
 [StateDef 8400]
 type = A
 physics = N
@@ -14740,7 +14740,7 @@ trigger1 = Time >= 26
 type = DestroySelf
 trigger1 = Time >= 26
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -15170,7 +15170,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -15352,7 +15352,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;========================= SPECIAL FINISH =================
+; SPECIAL FINISH =
 [Statedef 8605]
 ctrl = 0
 anim = 1
@@ -15414,7 +15414,7 @@ trigger2= roundstate<3
 [State 8600, End]
 type=destroyself
 trigger1= roundstate!=3
-;========================<KO CAMERA FOCUS>=============================
+;KO CAMERA FOCUS=
 [Statedef 8998]
 type = S
 physics  = N;S
@@ -15478,7 +15478,7 @@ trigger1 = Time >= 50
 trigger1 = Enemy,Life >= 1
 trigger2 = NumHelper(8998)>1
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL=
 [StateDef 8999]
 type = S
 velSet = 0,0

@@ -2567,7 +2567,7 @@ type = PlaySnd
 trigger1 = AnimElem = 4
 value = 184,0
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

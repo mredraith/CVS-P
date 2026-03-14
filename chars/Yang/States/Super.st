@@ -2,10 +2,10 @@
 ;| Yang by KarmaCharmeleon			 |
 ; 
 ;
-;<SUPER STATES>==
+;SUPER STATES=
 ;
 
-;<RAISHIN MAHHAKEN>=
+;RAISHIN MAHHAKEN>=
 [StateDef 3000]
 type = S
 physics = N
@@ -323,7 +323,7 @@ ctrl = 1
 
 
 
-;<MAX SORAI RENGEKI>=
+;MAX SORAI RENGEKI>=
 [StateDef 3050]
 type = S
 physics = S
@@ -703,7 +703,7 @@ ctrl = 1
 
 
 
-;<TENSHIN SENKYUTAI>=
+;TENSHIN SENKYUTAI>=
 [StateDef 3100]
 type = S
 physics = N
@@ -1136,7 +1136,7 @@ ctrl = 1
 
 
 
-;<MAX TENSHIN SENKYUTAI>=
+;MAX TENSHIN SENKYUTAI>=
 [StateDef 3150]
 type = S
 physics = N
@@ -1535,7 +1535,7 @@ value = 3101
 
 
 
-;<SEIEI ENBU>=
+;SEIEI ENBU>=
 [StateDef 3200]
 type = S
 physics = N
@@ -1667,7 +1667,7 @@ ctrl = 1
 
 
 
-;<CHOU RAISHIN MAHHAKEN>=
+;CHOU RAISHIN MAHHAKEN>=
 [StateDef 3300]
 type = S
 physics = N
@@ -2503,7 +2503,7 @@ ctrl = 1
 
 
 
-;<CHOU RAISHIN MAHHAKEN (TARGET)>==
+;CHOU RAISHIN MAHHAKEN (TARGET)=
 ;Target
 [StateDef 3315]
 type = S

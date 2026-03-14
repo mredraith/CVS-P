@@ -6345,7 +6345,7 @@ movecamera=1,0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 1917  ;=custom animation
+value = 1917  ;custom animation
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = vel y>=0

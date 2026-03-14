@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;Soul Spark>==
+;Soul Spark=
 [StateDef 1000]
 type = S
 physics = S
@@ -1650,7 +1650,7 @@ trigger1 = Vel Y > 0
 value = 5100
 ctrl = 0
 
-;Soul Spiral>==
+;Soul Spiral=
 [StateDef 1200]
 type = S
 physics = S
@@ -3106,7 +3106,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;Soul Reflect>==
+;Soul Reflect=
 [StateDef 1300]
 type = S
 physics = S
@@ -4381,7 +4381,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;Soul Teleport>==
+;Soul Teleport=
 [StateDef 1400]
 type = S
 movetype = I
@@ -4480,7 +4480,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;Soul Drill>==
+;Soul Drill=
 [StateDef 1500]
 type = S
 physics = S

@@ -2,10 +2,10 @@
 ;| Yang by KarmaCharmeleon			 |
 ; 
 ;
-;<NORMAL MOVES>==
+;NORMAL MOVES=
 ;
 
-;<STANDING FAR LIGHT PUNCH>==
+;STANDING FAR LIGHT PUNCH=
 [StateDef 200]
 type = S
 physics = S
@@ -127,7 +127,7 @@ ctrl = 1
 
 
 
-;<STANDING FAR MEDIUM PUNCH>==
+;STANDING FAR MEDIUM PUNCH=
 [StateDef 210]
 type = S
 physics = S
@@ -250,7 +250,7 @@ ctrl = 1
 
 
 
-;<STANDING CLOSE MEDIUM PUNCH>==
+;STANDING CLOSE MEDIUM PUNCH=
 [StateDef 215]
 type = S
 physics = S
@@ -394,7 +394,7 @@ ctrl = 1
 
 
 
-;<STANDING FAR HEAVY PUNCH>==
+;STANDING FAR HEAVY PUNCH=
 [StateDef 220]
 type = S
 physics = S
@@ -522,7 +522,7 @@ ctrl = 1
 
 
 
-;<TARGET COMBO 2 (PART 1)>==
+;TARGET COMBO 2 (PART 1)=
 guardflags = 
 [StateDef 221]
 type = S
@@ -668,7 +668,7 @@ ctrl = 1
 
 
 
-;<TARGET COMBO 2 (PART 2)>==
+;TARGET COMBO 2 (PART 2)=
 [StateDef 222]
 type = S
 physics = S
@@ -813,7 +813,7 @@ ctrl = 1
 
 
 
-;<STANDING CLOSE HEAVY PUNCH>==
+;STANDING CLOSE HEAVY PUNCH=
 [StateDef 225]
 type = S
 physics = S
@@ -971,7 +971,7 @@ ctrl = 1
 
 
 
-;<STANDING LIGHT KICK>==
+;STANDING LIGHT KICK=
 [StateDef 230]
 type = S
 physics = S
@@ -1093,7 +1093,7 @@ ctrl = 1
 
 
 
-;<STANDING FAR MEDIUM KICK>==
+;STANDING FAR MEDIUM KICK=
 [StateDef 240]
 type = S
 physics = S
@@ -1194,7 +1194,7 @@ ctrl = 1
 
 
 
-;<STANDING CLOSE MEDIUM KICK>==
+;STANDING CLOSE MEDIUM KICK=
 [StateDef 245]
 type = S
 physics = S
@@ -1429,7 +1429,7 @@ ctrl = 1
 
 
 
-;<SENPUU KYAKU>==
+;SENPUU KYAKU=
 [StateDef 248]
 type = S
 physics = N
@@ -1601,7 +1601,7 @@ ctrl = 1
 
 
 
-;<STANDING FAR HEAVY KICK>==
+;STANDING FAR HEAVY KICK=
 [StateDef 250]
 type = S
 physics = N
@@ -1720,7 +1720,7 @@ ctrl = 1
 
 
 
-;<STANDING FAR HEAVY KICK (TARGET COMBO)>==
+;STANDING FAR HEAVY KICK (TARGET COMBO)=
 [StateDef 251]
 type = S
 physics = N
@@ -1834,7 +1834,7 @@ ctrl = 1
 
 
 
-;<STANDING HEAVY KICK (DODGE)>==
+;STANDING HEAVY KICK (DODGE)=
 [StateDef 252]
 type = S
 physics = N
@@ -1948,7 +1948,7 @@ ctrl = 1
 
 
 
-;<CROUCHING LIGHT PUNCH>==
+;CROUCHING LIGHT PUNCH=
 [StateDef 400]
 type = C
 physics = C
@@ -2058,7 +2058,7 @@ ctrl = 1
 
 
 
-;<CROUCHING MEDIUM PUNCH>==
+;CROUCHING MEDIUM PUNCH=
 [StateDef 410]
 type = C
 physics = C
@@ -2168,7 +2168,7 @@ ctrl = 1
 
 
 
-;<CROUCHING HEAVY PUNCH>==
+;CROUCHING HEAVY PUNCH=
 [StateDef 420]
 type = C
 physics = C
@@ -2320,7 +2320,7 @@ ctrl = 1
 
 
 
-;<CROUCHING LIGHT KICK>==
+;CROUCHING LIGHT KICK=
 [StateDef 430]
 type = C
 physics = C
@@ -2430,7 +2430,7 @@ ctrl = 1
 
 
 
-;<CROUCHING MEDIUM KICK>==
+;CROUCHING MEDIUM KICK=
 [StateDef 440]
 type = C
 physics = C
@@ -2540,7 +2540,7 @@ ctrl = 1
 
 
 
-;<CROUCHING HEAVY KICK>==
+;CROUCHING HEAVY KICK=
 [StateDef 450]
 type = C
 physics = C
@@ -2652,7 +2652,7 @@ ctrl = 1
 
 
 
-;<JUMPING LIGHT PUNCH>==
+;JUMPING LIGHT PUNCH=
 [StateDef 600]
 type = A
 physics = N
@@ -2771,7 +2771,7 @@ value = 52
 
 
 
-;<JUMPING MEDIUM PUNCH>==
+;JUMPING MEDIUM PUNCH=
 [StateDef 610]
 type = A
 physics  = N
@@ -2881,7 +2881,7 @@ value = 52
 
 
 
-;<JUMPING HEAVY PUNCH>==
+;JUMPING HEAVY PUNCH=
 [StateDef 620]
 type = A
 physics = N
@@ -2991,7 +2991,7 @@ value = 52
 
 
 
-;<JUMPING LIGHT KICK>==
+;JUMPING LIGHT KICK=
 [StateDef 630]
 type = A
 physics = N
@@ -3110,7 +3110,7 @@ value = 52
 
 
 
-;<JUMPING MEDIUM KICK>==
+;JUMPING MEDIUM KICK=
 [StateDef 640]
 type = A
 physics = N
@@ -3242,7 +3242,7 @@ value = 52
 
 
 
-;<JUMPING HEAVY KICK>==
+;JUMPING HEAVY KICK=
 [StateDef 650]
 type = A
 physics = N
@@ -3352,7 +3352,7 @@ value = 52
 
 
 
-;<RAIGEKI SHUU>==
+;RAIGEKI SHUU=
 [StateDef 658]
 type = A
 physics = N
@@ -3519,7 +3519,7 @@ value = 0
 ctrl = 1
 
 
-;<THROW ATTEMPT>==
+;THROW ATTEMPT=
 [StateDef 800]
 type = S
 physics = S
@@ -3623,7 +3623,7 @@ ctrl = 1
 
 
 
-;<THROW SWITCHING SIDES>==
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -3708,7 +3708,7 @@ value = ifElse(var(10), 810, 820)
 
 
 
-;<THROW SWITCHING SIDES (TARGET)>==
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = S
 moveType = H
@@ -3749,7 +3749,7 @@ ctrl = 1
 
 
 
-;<ELBOW THROW>==
+;ELBOW THROW=
 [Statedef 810]
 type = S
 physics = N
@@ -3935,7 +3935,7 @@ ctrl = 1
 
 
 
-;<ELBOW THROW (TARGET)>==
+;ELBOW THROW (TARGET)=
 ;Being Thrown
 [StateDef 815]
 type = A
@@ -4010,7 +4010,7 @@ value = 5100
 
 
 
-;<MONKEY TOSS>==
+;MONKEY TOSS=
 [Statedef 820]
 type = S
 physics = N
@@ -4146,7 +4146,7 @@ ctrl = 1
 
 
 
-;<MONKEY TOSS (TARGET)>==
+;MONKEY TOSS (TARGET)=
 ;Being Thrown
 [StateDef 825]
 type = A
@@ -4233,7 +4233,7 @@ value = 5100
 
 
 
-;<THROW ESCAPED>==
+;THROW ESCAPED=
 [StateDef 890]
 type = S
 physics = N

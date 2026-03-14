@@ -2763,7 +2763,7 @@ flag = RoundNotOver
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I
@@ -2788,7 +2788,7 @@ ctrl = 1
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 197]
 type = S
 moveType = I

@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;GIANT BOMB>==
+;GIANT BOMB=
 [StateDef 1000]
 type = S
 physics = S
@@ -1624,7 +1624,7 @@ ctrl = 1
 
 
 
-;COMBINATION BODYBLOW>==
+;COMBINATION BODYBLOW=
 [StateDef 1400]
 type = S
 physics = S
@@ -2165,7 +2165,7 @@ value = 5100
 
 
 
-;EX COMBINATION BODYBLOW>==
+;EX COMBINATION BODYBLOW=
 [StateDef 1430]
 type = S
 physics = S

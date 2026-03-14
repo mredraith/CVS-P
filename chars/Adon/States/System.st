@@ -2990,7 +2990,7 @@ type = AssertSpecial
 trigger1 = Time < 200
 flag = RoundNotOver
 
-;TAUNT 1>==
+;TAUNT 1=
 [StateDef 195]
 type = S
 moveType = I

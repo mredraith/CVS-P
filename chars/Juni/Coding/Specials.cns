@@ -2693,7 +2693,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<HIT BY EX SPIN KNUCKLE====
+;HIT BY EX SPIN KNUCKLE==
 ;Being Launched
 [StateDef 1440]
 type = A

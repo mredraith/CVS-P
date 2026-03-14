@@ -543,7 +543,7 @@ triggerall = !ailevel
 triggerall = !IsHelper(10371) ;Always add this as well!
 triggerall = numhelper(10371)
 triggerall = helper(10371), var(41)
-triggerall = (helper(10371), var(0)) && (helper(10371), var(1)) || (helper(10371), var(1)) && (helper(10371), var(2)) || (helper(10371), var(0)) && (helper(10371), var(2))
+triggerall = (helper(10371), var(0)) || (helper(10371), var(1)) || (helper(10371), var(2))
 triggerall = roundstate = 2 && statetype != A
 triggerall = ifelse(var(20) <= 0, power >= 3000, power >= 1000)
 trigger1 = ctrl || stateno = 40 || stateno = 52 || (stateno = [100,101])

@@ -722,7 +722,7 @@ value = 1201
 
 
 
-;TIGER KICK>==
+;TIGER KICK=
 [StateDef 1200]
 type = S
 physics = N
@@ -1401,7 +1401,7 @@ value = 1201
 
 
 
-;GOLDEN HEEL>==
+;GOLDEN HEEL=
 [StateDef 1300]
 type = S
 physics = N
@@ -1844,7 +1844,7 @@ value = 5421
 
 
 
-;EX GOLDEN HEEL>==
+;EX GOLDEN HEEL=
 [StateDef 1330]
 type = S
 physics = N
@@ -2951,7 +2951,7 @@ ctrl = 1
 
 
 
-;PUNCH ZERO COUNTER>==
+;PUNCH ZERO COUNTER=
 [StateDef 2900]
 type = S
 physics = N

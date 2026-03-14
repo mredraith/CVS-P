@@ -2,10 +2,10 @@
 ;| Yang by KarmaCharmeleon			 |
 ; 
 ;
-;<SPECIAL MOVES>===
+;SPECIAL MOVES==
 ;
 
-;<TOUROU ZAN>=
+;TOUROU ZAN>=
 [StateDef 1000]
 type = S
 physics = N
@@ -635,7 +635,7 @@ ctrl = 1
 
 
 
-;<EX TOUROU ZAN>=
+;EX TOUROU ZAN>=
 [StateDef 1030]
 type = S
 physics = N
@@ -1572,7 +1572,7 @@ ctrl = 1
 
 
 
-;<KAIHOU>=
+;KAIHOU>=
 [StateDef 1100]
 type = S
 physics = N
@@ -1654,7 +1654,7 @@ ctrl = 1
 
 
 
-;<SENKYUUTAI>=
+;SENKYUUTAI>=
 [StateDef 1200]
 type = S
 physics = N
@@ -1961,7 +1961,7 @@ ctrl = 1
 
 
 
-;<EX SENKYUUTAI>=
+;EX SENKYUUTAI>=
 [StateDef 1230]
 type = S
 physics = N
@@ -2202,7 +2202,7 @@ value = 1201
 
 
 
-;<BYAKKO SOUSHOUDA>=
+;BYAKKO SOUSHOUDA>=
 [StateDef 1300]
 type = S
 physics = N
@@ -2387,7 +2387,7 @@ ctrl = 1
 
 
 
-;<EX KOBOKUSHI>=
+;EX KOBOKUSHI>=
 [StateDef 1330]
 type = S
 physics = N
@@ -2601,7 +2601,7 @@ ctrl = 1
 
 
 
-;<HIT BY EX KOBOKUSHI>=
+;HIT BY EX KOBOKUSHI>=
 ;Being Launched
 [StateDef 1335]
 type = A
@@ -2803,7 +2803,7 @@ value = 5100
 
 
 
-;<ZENPOU TENSHIN>=
+;ZENPOU TENSHIN>=
 ;Attempt
 [StateDef 1400]
 type = S
@@ -2995,7 +2995,7 @@ ctrl = 1
 
 
 
-;<ZENPOU TENSHIN (TARGET)>==
+;ZENPOU TENSHIN (TARGET)=
 ;Being Thrown
 [StateDef 1415]
 type = S
@@ -3044,7 +3044,7 @@ ctrl = 1
 
 
 
-;<EX ZENPOU TENSHIN>=
+;EX ZENPOU TENSHIN>=
 ;Attempt
 [StateDef 1430]
 type = S
@@ -3132,7 +3132,7 @@ ctrl = 1
 
 
 
-;<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -3229,7 +3229,7 @@ ctrl = 1
 
 
 
-;<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

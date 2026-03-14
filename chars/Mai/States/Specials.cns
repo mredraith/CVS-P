@@ -1,4 +1,4 @@
-;=====================<KACHO SEN>==========================
+;KACHO SEN=
 [StateDef 1000]
 type = S
 physics = S
@@ -58,7 +58,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<DEADLY NINJA BEES>=====================
+;DEADLY NINJA BEES=
 [Statedef 1100]
 type    = S
 movetype= A
@@ -263,7 +263,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<Hishou Ryuu'en Jin>====================
+;Hishou Ryuu'en Jin=
 [Statedef 1200]
 type    = S
 movetype= A
@@ -456,7 +456,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1150 ;same landing anim used for Deadly Ninja Bees
 
-;======================<RYU EN BU>=====================
+;RYU EN BU=
 [Statedef 1300]
 type = S
 movetype = A
@@ -1045,7 +1045,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<BURNING MAI>==========================
+;BURNING MAI=
 [Statedef 1400]
 type = S
 movetype = A
@@ -1483,7 +1483,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<WALL FLYING SQUIRREL>===================
+;WALL FLYING SQUIRREL==
 ;Jumping Toward Wall
 [Statedef 1500]
 type = A
@@ -1710,7 +1710,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<FLYING SQUIRREL>=================
+;FLYING SQUIRREL==
 ;Start up
 [Statedef 1550]
 type = A
@@ -2020,7 +2020,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;============================<EX KACHO SEN>========================
+;EX KACHO SEN=
 [StateDef 1600]
 type = S
 physics = S
@@ -2121,7 +2121,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========================<EX DEADLY NINJA BEES>========================
+;EX DEADLY NINJA BEES=
 [Statedef 1700]
 type = S
 physics = N
@@ -2406,7 +2406,7 @@ trigger1 = !Animtime
 value = 0
 ctrl = 1
 
-;========================<EX Hishou Ryuu'en Jin>========================
+;EX Hishou Ryuu'en Jin=
 [Statedef 1800]
 type    = S
 movetype= A
@@ -2629,7 +2629,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1150
 
-;======================<EX RYU EN BU>=====================
+;EX RYU EN BU=
 [Statedef 1900]
 type = S
 movetype = A
@@ -2806,7 +2806,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<HIT BY EX RYU EN BU>===========================
+;HIT BY EX RYU EN BU=
 ;Being Launched
 [StateDef 1910]
 type = A
@@ -2970,7 +2970,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;=====================<EX BURNING MAI>==========================
+;EX BURNING MAI=
 [Statedef 2000]
 type = S
 movetype = A
@@ -3133,7 +3133,7 @@ type = ChangeState
 trigger1 = Time >= 40
 value = 1401
 
-;=======================<EX WALL FLYING SQUIRREL>===================
+;EX WALL FLYING SQUIRREL==
 ;Start Up
 [Statedef 2100]
 type = A
@@ -3226,7 +3226,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 2201
 
-;=====================<EX FLYING SQUIRREL>=================
+;EX FLYING SQUIRREL==
 ;Start up
 [Statedef 2200]
 type = A
@@ -3348,7 +3348,7 @@ type = ChangeState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1590
 
-;=========================<HAKURO NO MAI>==========================
+;HAKURO NO MAI=
 [Statedef 2300]
 type = S
 movetype = A
@@ -3488,7 +3488,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========================<EX HAKURO NO MAI>==========================
+;EX HAKURO NO MAI=
 [Statedef 2350]
 type = S
 movetype = A
@@ -3658,7 +3658,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========================<SAIYO CHIDORI>===================
+;SAIYO CHIDORI==
 [Statedef 2400]
 type = S
 movetype = A
@@ -3998,7 +3998,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========================<EX SAIYO CHIDORI>===================
+;EX SAIYO CHIDORI==
 [Statedef 2450]
 type = S
 movetype = A

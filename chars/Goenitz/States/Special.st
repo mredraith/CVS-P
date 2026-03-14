@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;YONOKAZE>==
+;YONOKAZE=
 [StateDef 1000]
 type = S
 physics = S
@@ -686,7 +686,7 @@ type = ChangeState
 Trigger1 = Time > 80
 value = 1110
 
-;HYOUGA>==
+;HYOUGA=
 [StateDef 1200]
 type = S
 physics = N
@@ -844,7 +844,7 @@ Trigger1 = !AnimTime
 value = 0
 Ctrl = 1
 
-;SHIN AOI HANA: SEIRAN>==
+;SHIN AOI HANA: SEIRAN=
 [StateDef 1300]
 type = S
 physics = N

@@ -3150,7 +3150,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -3227,7 +3227,7 @@ trigger1 = AnimElemTime(4) >= 0
 value = ifElse(var(10), 860, 810)
 
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -3792,7 +3792,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;===========<Throw Escaped>==========
+;Throw Escaped=
 [StateDef 890]
 type = S
 physics = N
@@ -3944,7 +3944,7 @@ trigger1 = Time >= 27
 value = 0
 ctrl = 1
 
-;===========<AIR THROW ATTEMPT>==========
+;AIR THROW ATTEMPT=
 [StateDef 900]
 type = A
 physics = N
@@ -4291,7 +4291,7 @@ type = SelfState
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 5100
 
-;================<TOKI TSUBUTE>==============
+;TOKI TSUBUTE=
 [Statedef 930]
 type = A
 movetype = A
@@ -4437,7 +4437,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;================<TOKI TSUBUTE (TARGET)>==============
+;TOKI TSUBUTE (TARGET)=
 [Statedef 940]
 type = A
 movetype = H

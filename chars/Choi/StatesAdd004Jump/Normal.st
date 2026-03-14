@@ -1988,7 +1988,7 @@ type=changestate
 trigger1= pos y>-vel y
 value=52
 
-;Throw Attempt>==
+;Throw Attempt=
 [Statedef 800]
 type=S
 physics=S

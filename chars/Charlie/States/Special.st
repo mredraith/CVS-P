@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;SONIC BOOM>==
+;SONIC BOOM=
 [StateDef 1000]
 type = S
 physics = S

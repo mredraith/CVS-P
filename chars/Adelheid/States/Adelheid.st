@@ -1,4 +1,4 @@
-;<INITIALIZE>=
+;INITIALIZE>=
 
 [StateDef 5900]
 type = S

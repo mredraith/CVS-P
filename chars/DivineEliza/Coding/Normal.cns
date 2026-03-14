@@ -2485,7 +2485,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==================<THROW ATTEMPT>==================
+;THROW ATTEMPT=
 [Statedef 800]
 type    = S
 movetype= A
@@ -2572,7 +2572,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -2648,7 +2648,7 @@ type = ChangeState
 trigger1 = AnimElemTime(4) > 0
 value = ifElse(var(10), 830, 810)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -2679,7 +2679,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;===========<SHINKUU NAGE>================
+;SHINKUU NAGE=
 [Statedef 810]
 type = S
 movetype = A
@@ -2845,7 +2845,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<SHINKUU NAGE(TARGET)>================
+;SHINKUU NAGE(TARGET)=
 [Statedef 820]
 type = A
 movetype = H
@@ -2883,7 +2883,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<SHINKUU NAGE(TOSSED AWAY)>================
+;SHINKUU NAGE(TOSSED AWAY)=
 [Statedef 821]
 type    = A
 movetype= H
@@ -2936,7 +2936,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;===========<DEATH TOWER>================
+;DEATH TOWER=
 [Statedef 830]
 type = S
 movetype = A
@@ -3152,7 +3152,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<DEATH TOWER(TARGET)>================
+;DEATH TOWER(TARGET)=
 [Statedef 840]
 type = A
 movetype = H
@@ -3190,7 +3190,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<DEATH TOWER(TOSSED AWAY)>================
+;DEATH TOWER(TOSSED AWAY)=
 [Statedef 841]
 type    = A
 movetype= H
@@ -3243,7 +3243,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N
@@ -3395,7 +3395,7 @@ trigger1 = Time >= 27
 value = 0
 ctrl = 1
 
-;===========<AIR THROW ATTEMPT>==========
+;AIR THROW ATTEMPT=
 [StateDef 900]
 type = A
 physics = N
@@ -3455,7 +3455,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;========<JIGOKU HUSHA>==========
+;JIGOKU HUSHA=
 [Statedef 910]
 type    = A
 movetype = A
@@ -3664,7 +3664,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========<JIGOKU HUSHA(TARGET)>==========
+;JIGOKU HUSHA(TARGET)=
 [Statedef 920]
 type    = A
 movetype = H

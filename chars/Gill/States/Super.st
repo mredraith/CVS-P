@@ -1,4 +1,4 @@
-;========================<METEOR STRIKE>=============================
+;METEOR STRIKE=
 [StateDef 3000]
 type = S
 physics = S
@@ -222,7 +222,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<(MAX) METEOR STRIKE>=============================
+;(MAX) METEOR STRIKE=
 [StateDef 3050]
 type = S
 physics = S
@@ -500,7 +500,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<JUPITER'S DEAL>=============================
+;JUPITER'S DEAL=
 [StateDef 3100]
 type = S
 physics = S
@@ -1052,7 +1052,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<DESTROY CLAW (ARM)>==========
+;DESTROY CLAW (ARM)=
 [Statedef 3104]
 type = S
 anim = 814
@@ -1069,7 +1069,7 @@ type = DestroySelf
 trigger1 = Root, AnimElemTime(5) = 0
 trigger2 = !Root, StateNo = 3101
 
-;===========<DESTROY CLAW (TARGET)>==========
+;DESTROY CLAW (TARGET)=
 [StateDef 3105]
 type = A
 physics = N
@@ -1235,7 +1235,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100
 
-;========================<JUPITER'S DEAL>=============================
+;JUPITER'S DEAL=
 [StateDef 3150]
 type = S
 physics = S
@@ -1817,7 +1817,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<SERAPHIC WING>=============================
+;SERAPHIC WING=
 [StateDef 3300]
 type = S
 physics = S
@@ -2080,7 +2080,7 @@ trigger1 = AnimElemTime(39) >= 0 && WinKo
 value = 185
 Ctrl = 1 - Win
 
-;========================<SERAPHIC WING LANDING>=============================
+;SERAPHIC WING LANDING=
 [Statedef 3305]
 type = S
 physics = S
@@ -2118,7 +2118,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<RESURRECTION>=============================
+;RESURRECTION=
 [StateDef 3400]
 type = S
 physics = S
@@ -2343,7 +2343,7 @@ trigger1 = !AnimTime
 value = 1205
 ctrl = 1
 
-;========================<HADES ORBIT>=============================
+;HADES ORBIT=
 [StateDef 3500]
 type = S
 physics = S
@@ -2514,7 +2514,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<HADES COMET>=============================
+;HADES COMET=
 [StateDef 3550]
 type = S
 physics = S

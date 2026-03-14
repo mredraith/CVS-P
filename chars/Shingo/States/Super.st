@@ -2,10 +2,10 @@
 ;| Shingo Yabuki by Jmorphman              |
 ; 
 ;
-;<SUPER STATES>==
+;SUPER STATES=
 ;
 
-;<GESHIKI: KAKE HORIN>=
+;GESHIKI: KAKE HORIN>=
 ;Startup
 [StateDef 3000]
 type = S
@@ -302,7 +302,7 @@ ctrl = 1
 
 
 
-;<GUARD CRUSH>==
+;GUARD CRUSH=
 ;pre-crush state
 [StateDef 5905]
 type = U
@@ -519,7 +519,7 @@ ctrl = 1
 
 
 
-;<MAX GESHIKI: KAKE HORIN>=
+;MAX GESHIKI: KAKE HORIN>=
 ;Startup
 [StateDef 3050]
 type = S
@@ -649,7 +649,7 @@ value = 3010
 
 
 
-;<BURNING SHINGO>=
+;BURNING SHINGO>=
 [StateDef 3100]
 type = S
 physics = N
@@ -1028,7 +1028,7 @@ ctrl = 1
 
 
 
-;<MAX BURNING SHINGO>=
+;MAX BURNING SHINGO>=
 [StateDef 3150]
 type = S
 physics = N
@@ -1511,7 +1511,7 @@ ctrl = 1
 
 
 
-;<SHINGO KINSEI ORE SHIKI: KAMUKURA>=
+;SHINGO KINSEI ORE SHIKI: KAMUKURA>=
 [StateDef 3200]
 type = S
 physics = N
@@ -2338,7 +2338,7 @@ value = 1201
 
 
 
-;<KAMUKURA (TARGET)>==
+;KAMUKURA (TARGET)=
 ;Grabbed
 [StateDef 3215]
 type = A

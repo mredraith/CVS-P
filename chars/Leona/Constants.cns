@@ -51,9 +51,9 @@
 ;Channel=5 := Movement Sound FX's
 ;Channel=22 := Wall Hit Sound FX
 
-;======================================================================================
+;
 ;Constants
-;======================================================================================
+;
 [Data]
 life = 1000
 attack = 100
@@ -155,9 +155,9 @@ victory22 = "Had enough? Good. You lose."
 victory23 = "Resistance... is just dumb."
 victory24 = "Whew. That was refreshing."
 victory25 = "Worry about the future, and you lose big today."
-;==
+;
 victory30 = "A bloodless battle on my side. That suits me fine."
-;==
+;
 victory40 = "I know how to overcome myself. This removes all doubt."
 victory41 = "British special forces, huh. You weren't too bad. But I'm better."
 victory42 = "That hairstyle and that attitude...you're not fit for military. Go home and be a family man."

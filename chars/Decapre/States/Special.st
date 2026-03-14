@@ -2,10 +2,10 @@
 ;| Decapre by varo_hades                   |
 ; 
 ;
-;<SPECIAL MOVES>===
+;SPECIAL MOVES==
 ;
 
-;<PSYCHO STING>=
+;PSYCHO STING>=
 [StateDef 1000]
 type = S
 physics = S
@@ -246,7 +246,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<EX PSYCHO STING>=
+;EX PSYCHO STING>=
 [StateDef 1030]
 type = S
 physics = S
@@ -500,7 +500,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<SPIRAL ARROW>=
+;SPIRAL ARROW>=
 [StateDef 1100]
 type = A
 physics = N
@@ -715,7 +715,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<EX SPIRAL ARROW>=
+;EX SPIRAL ARROW>=
 [StateDef 1130]
 type = A
 physics = N
@@ -943,7 +943,7 @@ trigger1 = AnimElemTime(3) > 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 1105
 
-;<RAPID DAGGER>=
+;RAPID DAGGER>=
 [StateDef 1200]
 type = S
 physics = N
@@ -1322,7 +1322,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;<EX RAPID DAGGER>=
+;EX RAPID DAGGER>=
 [StateDef 1230]
 type = S
 physics = N
@@ -1696,7 +1696,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;<SCRAMBLE>=
+;SCRAMBLE>=
 [StateDef 1300]
 type = S
 physics = S
@@ -1952,7 +1952,7 @@ trigger1 = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(2) > 0
 value = 1305
 
-;<EX SCRAMBLE>=
+;EX SCRAMBLE>=
 [StateDef 1301]
 type = S
 physics = S
@@ -2248,7 +2248,7 @@ trigger1 = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(2) > 0
 value = 1305
 
-;<SCRAMBLE>=
+;SCRAMBLE>=
 [StateDef 1310]
 type = S
 physics = S
@@ -2504,7 +2504,7 @@ trigger1 = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(2) > 0
 value = 1305
 
-;<EX SCRAMBLE>=
+;EX SCRAMBLE>=
 [StateDef 1311]
 type = S
 physics = S
@@ -3683,7 +3683,7 @@ trigger1 = AnimTime = 0
 value = 11
 ctrl = 1
 
-;<CANNON STRIKE>=
+;CANNON STRIKE>=
 [StateDef 1400]
 type = A
 physics = N
@@ -3820,7 +3820,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<EX CANNON STRIKE>=
+;EX CANNON STRIKE>=
 [StateDef 1430]
 type = A
 physics = N
@@ -3953,7 +3953,7 @@ trigger1 = AnimElemTime(4) > 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 1405
 
-;<INVISIBLE RAY>=
+;INVISIBLE RAY>=
 [StateDef 1500]
 type = S
 physics = S
@@ -4039,7 +4039,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<EX INVISIBLE RAY>=
+;EX INVISIBLE RAY>=
 [StateDef 1530]
 type = S
 physics = S
@@ -4150,7 +4150,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<SCRAMBLE>=
+;SCRAMBLE>=
 [StateDef 1600]
 type = S
 physics = N
@@ -4328,7 +4328,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<EX SCRAMBLE>=
+;EX SCRAMBLE>=
 [StateDef 1601]
 type = S
 physics = N
@@ -5207,7 +5207,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -5321,7 +5321,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7551]
 type = S
 movetype = I
@@ -5356,7 +5356,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 2900
 trigger3 = root,stateno = 2900 && root,animelemtime(6) = 0
 
-;<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

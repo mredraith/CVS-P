@@ -683,7 +683,7 @@ trigger1 = animtime = 0
 trigger2 = parent,stateno != 1180
 trigger3 = parent,stateno = 1180 && parent,time = 1
 
-;KAISER WAVE>==
+;KAISER WAVE=
 [Statedef 1305]
 type = S
 movetype = A
@@ -1192,7 +1192,7 @@ type = DestroySelf
 trigger1 = parent,anim != 1300
 trigger2 = parent,animelem = 29
 
-;EX KAISER WAVE>==
+;EX KAISER WAVE=
 [Statedef 1335]
 type = S
 movetype = A
@@ -2828,7 +2828,7 @@ type = DestroySelf
 trigger1 = parent,anim !=[1650,1680]
 trigger2 = parent,vel x !=0
 
-;GIGANTIC PRESSURE FX>==
+;GIGANTIC PRESSURE FX=
 [Statedef 3090]
 type = S
 movetype = I
@@ -4354,7 +4354,7 @@ value = 3270
 type = destroyself
 trigger1 = pos x != [-300,300]
 
-;ReppuKen End>==
+;ReppuKen End=
 [Statedef 3270]
 type = A
 physics = N
@@ -6062,7 +6062,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;POWER CHARGE FX>==
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -6168,7 +6168,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;VIOLENT WIN VS VEGA PARTICLES>==
+;VIOLENT WIN VS VEGA PARTICLES=
 [StateDef 8332]
 type = A
 physics = N
@@ -6203,7 +6203,7 @@ trigger1 = Root, StateNo != 187 || Root, AnimElemTime(60) >= 0
 type = DestroySelf
 trigger1 = Root, StateNo != 187 || Root, AnimElemTime(60) >= 0
 
-;ZERO COUNTER FX>==
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N

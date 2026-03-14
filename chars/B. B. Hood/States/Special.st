@@ -2806,7 +2806,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;LAW OF THE BULLET>==
+;LAW OF THE BULLET=
 [StateDef 1600]
 type = S
 physics = N
@@ -3129,7 +3129,7 @@ type = SelfState
 Trigger1 = Time = 0
 value = 5080
 
-;EX LAW OF THE BULLET>==
+;EX LAW OF THE BULLET=
 [StateDef 1630]
 type = S
 physics = N

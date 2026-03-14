@@ -2,7 +2,7 @@
 ;| Gouki by Phantom.of.the.Server and Mwryly |
 ; 
 ;
-; EX SPECIAL STATES >==
+; EX SPECIAL STATES =
 ;
 
 ; EX HADOU KEN >=

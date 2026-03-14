@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;Electric Thunder>==
+;Electric Thunder=
 [StateDef 1000]
 type = S
 physics = S

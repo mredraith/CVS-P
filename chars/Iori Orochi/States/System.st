@@ -3352,7 +3352,7 @@ channel = 0
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I
@@ -3391,7 +3391,7 @@ value = 0
 ctrl = 1
 
 
-;TAUNT VS KYO>==
+;TAUNT VS KYO=
 [Statedef 196]
 type = S
 moveType = I

@@ -2749,7 +2749,7 @@ type=ChangeState
 trigger1=!AnimTime
 value=0
 ctrl=1
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [Statedef 805]
 type=S
 movetype=A
@@ -2849,7 +2849,7 @@ ctrl=1
 type=changestate
 trigger1= animelemtime(4)>=0
 value=ifelse(var(10),810,830)
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = S
 moveType = H
@@ -3384,7 +3384,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

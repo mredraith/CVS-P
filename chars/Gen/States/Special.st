@@ -1939,7 +1939,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;OUGA>==
+;OUGA=
 ;Startup Auto
 [StateDef 11100]
 type = S
@@ -3199,7 +3199,7 @@ value = 0
 ctrl = 1
 
 
-;EX OUGA>==
+;EX OUGA=
 ;Startup Auto
 [StateDef 11200]
 type = S

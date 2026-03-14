@@ -2934,7 +2934,7 @@ ctrl = 1
 
 
 
-;212 SHIKI: KOTOTSUKI IN (TARGET)>==
+;212 SHIKI: KOTOTSUKI IN (TARGET)=
 ;Being Thrown
 [Statedef 1330]
 type = S
@@ -2975,7 +2975,7 @@ trigger1 = 1
 value = 0
 
 
-;Kototsuki In - P2 State>==
+;Kototsuki In - P2 State=
 [Statedef 1331]
 type = S
 movetype = H
@@ -3012,7 +3012,7 @@ trigger1 = 1
 value = 0
 
 
-;Kototsuki In - P2 State>==
+;Kototsuki In - P2 State=
 [Statedef 1332]
 type = A
 movetype = H

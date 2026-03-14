@@ -1009,7 +1009,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-; STANDING LIGHT KICK (CRANE) >==
+; STANDING LIGHT KICK (CRANE) =
 [StateDef 10230]
 type = S
 physics = S
@@ -3440,7 +3440,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;THROW ATTEMPT>==
+;THROW ATTEMPT=
 [StateDef 800]
 type = S
 physics = S
@@ -3542,7 +3542,7 @@ ctrl = 1
 
 
 
-;THROW SWITCHING SIDES>==
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -3655,7 +3655,7 @@ ctrl = 1
 
 
 
-;JUDO THROW>==
+;JUDO THROW=
 [Statedef 810]
 type = A
 physics = N
@@ -3857,7 +3857,7 @@ type = SelfState
 trigger1 = pos y > -vel y
 value = 5100
 
-;DRAGON SUPLEX>==
+;DRAGON SUPLEX=
 [StateDef 820]
 type = S
 physics = N
@@ -4060,7 +4060,7 @@ type = SelfState
 trigger1 = pos y > -vel y
 value = 5100
 
-;AIR THROW ATTEMPT>==
+;AIR THROW ATTEMPT=
 [StateDef 850]
 type = A
 physics = N
@@ -4168,7 +4168,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;FLYING MARE>==
+;FLYING MARE=
 [StateDef 860]
 type = A
 physics = N
@@ -4399,7 +4399,7 @@ type = selfstate
 Trigger1 = time = 5
 value = 5050
 
-;FLYING BUSTER DROP>==
+;FLYING BUSTER DROP=
 [StateDef 870]
 type = A
 physics = N
@@ -4709,7 +4709,7 @@ value = 5100
 
 
 
-;THROW ESCAPED>==
+;THROW ESCAPED=
 [StateDef 890]
 type = S
 physics = N
@@ -4866,7 +4866,7 @@ ctrl = 1
 
 
 
-;THROW ESCAPE MIDAIR>==
+;THROW ESCAPE MIDAIR=
 [StateDef 892]
 type = A
 physics = N

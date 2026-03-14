@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;KASANE ATE>==
+;KASANE ATE=
 [StateDef 1000]
 type = S
 physics = S
@@ -158,7 +158,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;TAIKUU>==
+;TAIKUU=
 [StateDef 1050]
 type = S
 physics = S
@@ -297,7 +297,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;AIR KASANE ATE>==
+;AIR KASANE ATE=
 [StateDef 1100]
 type = A
 physics = N
@@ -490,7 +490,7 @@ trigger1 = animelemtime(9) > 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 1101
 
-;STUNNING GRAB>==
+;STUNNING GRAB=
 [StateDef 1200]
 type = S
 physics = S
@@ -792,7 +792,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;EX STUNNING GRAB>==
+;EX STUNNING GRAB=
 [StateDef 1230]
 type = S
 physics = S

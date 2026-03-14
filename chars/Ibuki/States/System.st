@@ -3254,7 +3254,7 @@ value = -1
 type = DestroySelf
 trigger1 = root,stateno != 183
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = A
@@ -3385,7 +3385,7 @@ trigger1 = Vel Y > 0
 value = 196
 ctrl = 0
 
-;TAUNT LANDING>==
+;TAUNT LANDING=
 [Statedef 196]
 type = S
 movetype = I
@@ -3428,7 +3428,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;TAUNT CONTINUE>==
+;TAUNT CONTINUE=
 [Statedef 197]
 type = A
 movetype = I
@@ -3558,7 +3558,7 @@ trigger1 = Vel Y > 0
 value = 196
 ctrl = 0
 
-;TAUNT PLAYER 2>==
+;TAUNT PLAYER 2=
 [Statedef 198]
 type = S
 movetype = H

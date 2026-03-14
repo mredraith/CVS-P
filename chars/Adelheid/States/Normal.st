@@ -1,4 +1,4 @@
-;<NORMALS>=
+;NORMALS>=
 
 ; LP
 [StateDef 200]

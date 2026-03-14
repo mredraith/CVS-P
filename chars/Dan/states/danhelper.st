@@ -1,11 +1,11 @@
 ; ______________________________
 ;| Dan by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;
+;HELPER STATES=
+;
 
-;========================<GADOU KEN>=============================
+;GADOU KEN=
 [Statedef 1005]
 type = S
 physics = N
@@ -193,7 +193,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<EX GADOU KEN>=============================
+;EX GADOU KEN=
 [Statedef 1015]
 type = S
 physics = N
@@ -369,7 +369,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<PREMIUM SIGN>=============================
+;PREMIUM SIGN=
 [Statedef 1305]
 type = S
 physics = N
@@ -632,7 +632,7 @@ type = destroyself
 trigger1 = time >= 20
 
 
-;========================<EX PREMIUM SIGN>=============================
+;EX PREMIUM SIGN=
 [Statedef 1325]
 type = S
 physics = N
@@ -751,7 +751,7 @@ type = destroyself
 trigger1 = frontedgedist < -320 || backedgedist < -320
 
 
-;========================<SHINKUU GADOU KEN>=============================
+;SHINKUU GADOU KEN=
 [Statedef 3005]
 type = S
 physics = N
@@ -944,7 +944,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<GADOU SHOUKOUKEN>=============================
+;GADOU SHOUKOUKEN=
 [Statedef 3405]
 type = S
 physics = N
@@ -1219,7 +1219,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<TAUNT HIT>=============================
+;TAUNT HIT=
 [Statedef 4190]
 type = S
 physics = N
@@ -1293,7 +1293,7 @@ trigger3 = root, stateno = 3300
 trigger3 = time >= 1
 
 
-;========================<SAIKYORYU BOGYO>=============================
+;SAIKYORYU BOGYO=
 [Statedef 1505]
 type = A
 physics = N
@@ -1369,7 +1369,7 @@ type = destroyself
 trigger1 = abs(map(velocity)) < 1
 
 
-;========================<OTOKO CHARGE>=============================
+;OTOKO CHARGE=
 [Statedef 4006]
 physics = N
 velset = 0, 0
@@ -1443,7 +1443,7 @@ trigger2 = root, stateno != 4010
 trigger3 = root, movetype = H
 
 
-;========================<RED FLAMES>=============================
+;RED FLAMES=
 [Statedef 8150]
 type = A
 velset = 0, 0
@@ -1529,7 +1529,7 @@ trigger2 = time >= 120
 trigger3 = time >= 180
 
 
-;========================<DUST>=============================
+;DUST=
 ;----- Jump -----
 [Statedef 7100]
 physics = N
@@ -1636,7 +1636,7 @@ type = destroyself
 trigger1 = !numexplod
 
 
-;====================<POWER CHARGE>====================
+;POWER CHARGE=
 ;----- MAIN FX -----
 [Statedef 7240]
 type = A
@@ -1771,7 +1771,7 @@ type = destroyself
 trigger1 = root, stateno != 740
 
 
-;====================<ZERO COUNTER PAUSE>====================
+;ZERO COUNTER PAUSE=
 [Statedef 7250]
 type = A
 physics = N
@@ -1822,7 +1822,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================<CUSTOM COMBO PAUSE=============================
+;CUSTOM COMBO PAUSE=
 [Statedef 7260]
 type = A
 physics = N
@@ -1923,7 +1923,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;========================<SUPERPAUSE FX>=============================
+;SUPERPAUSE FX=
 ;----- Level 1 -----
 [Statedef 8500]
 type = A
@@ -2398,7 +2398,7 @@ type = destroyself
 trigger1 = time >= 40
 
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH=
 [Statedef 8600]
 type = A
 velset = 0, 0
@@ -2581,7 +2581,7 @@ trigger1 = time >= 24
 trigger1 = roundstate != 3
 
 
-;========================<SANDALS>=============================
+;SANDALS=
 [Statedef 6005]
 type = A
 physics = N
@@ -2663,7 +2663,7 @@ type = destroyself
 trigger1 = time >= 92
 
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL=
 [Statedef 8999]
 physics = N
 velset = 0, 0

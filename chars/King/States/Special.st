@@ -1275,7 +1275,7 @@ value = 1102
 
 
 
-;TRAP SHOT>==
+;TRAP SHOT=
 [StateDef 1200]
 type = S
 physics = N
@@ -2088,7 +2088,7 @@ ctrl = 1
 
 
 
-;TORNADO KICK>==
+;TORNADO KICK=
 [StateDef 1300]
 type = S
 physics = N

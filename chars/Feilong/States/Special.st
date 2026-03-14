@@ -546,7 +546,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX REKKAKEN SECOND IMPACT>==
+;EX REKKAKEN SECOND IMPACT=
 [StateDef 1031]
 type = S
 physics = S
@@ -691,7 +691,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX REKKAKEN THIRD IMPACT>==
+;EX REKKAKEN THIRD IMPACT=
 [StateDef 1032]
 type = S
 physics = S

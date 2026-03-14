@@ -1,4 +1,4 @@
-;====================<VARIABLE LIST>====================
+;VARIABLE LIST=
 
 ;var(0)  : Palettes Configuration
 ;var(1)  : Glimmer Configuration
@@ -61,7 +61,7 @@ dest = 1,palno : Hades' Orbit Projectile Priorities
 ;fvar(10): Damage Dampener
 ;fvar(11): Damage Dampener with Counter Multiplier Added
 
-;====================<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 1000
 power = 3000

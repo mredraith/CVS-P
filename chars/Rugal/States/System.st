@@ -2925,7 +2925,7 @@ ID = 6210
 type = destroyself
 trigger1 = time = 17
 
-;FLOOR FX>==
+;FLOOR FX=
 [Statedef 7060]
 type = S
 physics = S
@@ -2962,7 +2962,7 @@ alpha = 256-(time*10),256
 type = destroyself
 trigger1 = time = 17
 
-;Floor FX>==
+;Floor FX=
 [Statedef 7061]
 type = S
 physics = S
@@ -3296,7 +3296,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;WIN 3 GOD RUGAL>==
+;WIN 3 GOD RUGAL=
 [Statedef 186]
 type = S
 physics = S
@@ -3394,7 +3394,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;WIN BY LAST JUDGEMENT>==
+;WIN BY LAST JUDGEMENT=
 [Statedef 187]
 type = S
 velset = 0,0
@@ -3415,7 +3415,7 @@ trigger1 = PrevStateNo = 3501 && Time >= 120
 value = 180
 ctrl = 1
 
-;WIN BY GOD END>==
+;WIN BY GOD END=
 [Statedef 188]
 type = S
 sprpriority = 1
@@ -3520,7 +3520,7 @@ trigger1 = prevstateno = 3610 && time > 150
 value = 180
 ctrl = 1
 
-;G End P2 State 1>==
+;G End P2 State 1=
 [Statedef 111185]
 type = A
 movetype = H

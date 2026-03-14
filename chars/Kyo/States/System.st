@@ -3916,7 +3916,7 @@ elem = 11
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

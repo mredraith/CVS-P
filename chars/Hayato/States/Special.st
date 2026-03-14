@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;Flash Sword>==
+;Flash Sword=
 [StateDef 1000]
 type = S
 physics = S
@@ -1379,7 +1379,7 @@ triggerall = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(6) > 0
 value = 1105
 
-;Grab Launcher>==
+;Grab Launcher=
 [StateDef 1200]
 type = S
 physics = S
@@ -1822,7 +1822,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;EX Grab Launcher>==
+;EX Grab Launcher=
 [StateDef 1230]
 type = S
 physics = S

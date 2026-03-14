@@ -2988,7 +2988,7 @@ ctrl = 1
 
 
 
-;212 SHIKI: KOTOTSUKI IN (TARGET)>==
+;212 SHIKI: KOTOTSUKI IN (TARGET)=
 ;Being Thrown
 [Statedef 1330]
 type = S

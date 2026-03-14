@@ -1,11 +1,11 @@
 ; _______________________________________________
 ;|            Cody Travers by Trololo            |
 ; 
-;==============================================================================================
-;========================================<SPECIAL MOVES>=======================================
-;==============================================================================================
+;
+;SPECIAL MOVES==
+;
 
-;========================<BAD STONE>=============================
+;BAD STONE=
 [StateDef 1000]
 type = S
 physics = S
@@ -167,7 +167,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX BAD STONE>=============================
+;EX BAD STONE=
 [StateDef 1030]
 type = S
 physics = N
@@ -262,7 +262,7 @@ value = 0
 ctrl = 1
 
 
-;========================<CRIMINAL UPPER>=============================
+;CRIMINAL UPPER=
 [StateDef 1100]
 type = S
 physics = S
@@ -376,7 +376,7 @@ value = 0
 ctrl = 1
 
 
-;========================<EX CRIMINAL UPPER>=============================
+;EX CRIMINAL UPPER=
 [StateDef 1130]
 type = S
 physics = S
@@ -510,7 +510,7 @@ value = 0
 ctrl = 1
 
 
-;========================<RUFFIAN KICK>=============================
+;RUFFIAN KICK=
 [StateDef 1200]
 type = S
 physics = S
@@ -730,7 +730,7 @@ value = 0
 ctrl = 1
 
 
-;========================<EX RUFFIAN KICK>=============================
+;EX RUFFIAN KICK=
 [StateDef 1230]
 type = S
 physics = S
@@ -873,7 +873,7 @@ value = 0
 ctrl = 1
 
 
-;========================<BAD SPRAY>=============================
+;BAD SPRAY=
 ;Falling
 [StateDef 1300]
 type = A
@@ -1035,7 +1035,7 @@ value = 11
 ctrl = 1
 
 
-;========================<KNIFE PICK-UP>=============================
+;KNIFE PICK-UP=
 [StateDef 1400]
 type = S
 physics = S
@@ -1086,7 +1086,7 @@ value = 0
 ctrl = 1
 
 
-;========================<BAD KNIFE>=============================
+;BAD KNIFE=
 [StateDef 1500]
 type = S
 physics = S
@@ -1151,7 +1151,7 @@ value = 0
 ctrl = 1
 
 
-;========================<PUNCH ZERO COUNTER>=============================
+;PUNCH ZERO COUNTER=
 [StateDef 2900]
 type = S
 physics = S
@@ -1373,7 +1373,7 @@ trigger1 = pos y > -vel y
 value = 5100
 
 
-;========================<KICK ZERO COUNTER>=============================
+;KICK ZERO COUNTER=
 [StateDef 2910]
 type = S
 physics = N

@@ -2,10 +2,10 @@
 ;| Shingo Yabuki by Jmorphman              |
 ; 
 ;
-;<SPECIAL MOVES>===
+;SPECIAL MOVES==
 ;
 
-;<114 SHIKI: ARAGAMI MIKANSEI>=
+;114 SHIKI: ARAGAMI MIKANSEI>=
 [StateDef 1000]
 type = S
 physics = N
@@ -133,7 +133,7 @@ ctrl = 1
 
 
 
-;<115 SHIKI: DOKUGAMI MIKANSEI>=
+;115 SHIKI: DOKUGAMI MIKANSEI>=
 [StateDef 1100]
 type = S
 physics = N
@@ -405,7 +405,7 @@ ctrl = 1
 
 
 
-;<SHINGO KINSEI ORE MU-SHIKI>=
+;SHINGO KINSEI ORE MU-SHIKI>=
 [StateDef 1150]
 type = S
 physics = N
@@ -900,7 +900,7 @@ ctrl = 1
 
 
 
-;<100 SHIKI: ONIYAKI MIKANSEI>=
+;100 SHIKI: ONIYAKI MIKANSEI>=
 [StateDef 1200]
 type = S
 physics = N
@@ -1134,7 +1134,7 @@ ctrl = 1
 
 
 
-;<100 SHIKI: ONIYAKI MIKANSEI (EX)>=
+;100 SHIKI: ONIYAKI MIKANSEI (EX)>=
 [StateDef 1230]
 type = S
 physics = N
@@ -1367,7 +1367,7 @@ value = 1201
 
 
 
-;<SHINGO KICK>=
+;SHINGO KICK>=
 [StateDef 1300]
 type = S
 physics = N
@@ -1557,7 +1557,7 @@ ctrl = 1
 
 
 
-;<SHINGO KICK (EX)>=
+;SHINGO KICK (EX)>=
 [StateDef 1330]
 type = S
 physics = N
@@ -1734,7 +1734,7 @@ value = 1301
 
 
 
-;<101 SHIKI: OBORO GURUMA MIKANSEI>=
+;101 SHIKI: OBORO GURUMA MIKANSEI>=
 ;First Kick
 [StateDef 1400]
 type = S
@@ -2411,7 +2411,7 @@ ctrl = 1
 
 
 
-;<HIT BY OBORO GURUMA MIKANSEI>=
+;HIT BY OBORO GURUMA MIKANSEI>=
 ;Hit shake
 [StateDef 55000]
 type = A
@@ -2523,7 +2523,7 @@ value = 5100
 
 
 
-;<SLAMMED AGAINST THE GROUND>=
+;SLAMMED AGAINST THE GROUND>=
 ;Being Slammed (Standing)
 [StateDef 5420]
 type = U
@@ -2719,7 +2719,7 @@ value = 5421
 
 
 
-;<101 SHIKI: OBORO GURUMA MIKANSEI (EX)>=
+;101 SHIKI: OBORO GURUMA MIKANSEI (EX)>=
 [StateDef 1430]
 type = S
 physics = N
@@ -3067,7 +3067,7 @@ value = 1401
 
 
 
-;<SHINGO KINSEI ORE SHIKI: NIE TOGI>=
+;SHINGO KINSEI ORE SHIKI: NIE TOGI>=
 ;Startup
 [StateDef 1500]
 type = S
@@ -3436,7 +3436,7 @@ value = 1201
 
 
 
-;<SHINGO KINSEI ORE SHIKI: NIE TOGI (EX)>=
+;SHINGO KINSEI ORE SHIKI: NIE TOGI (EX)>=
 [StateDef 1530]
 type = S
 physics = N
@@ -3582,7 +3582,7 @@ ctrl = 1
 
 
 
-;<212 SHIKI: KOTOTSUKI YO MIKANSEI>=
+;212 SHIKI: KOTOTSUKI YO MIKANSEI>=
 ;Startup
 [StateDef 1600]
 type = S
@@ -3959,7 +3959,7 @@ ctrl = 1
 
 
 
-;<HIT WHILE LYING DOWN BY KOTOTSUKI MIKANSEI>=
+;HIT WHILE LYING DOWN BY KOTOTSUKI MIKANSEI>=
 [StateDef 1625]
 type = L
 moveType = H
@@ -4156,7 +4156,7 @@ value = 5120
 
 
 
-;<212 SHIKI: KOTOTSUKI YO MIKANSEI (EX)>=
+;212 SHIKI: KOTOTSUKI YO MIKANSEI (EX)>=
 ;Startup
 [StateDef 1650]
 type = S
@@ -4567,7 +4567,7 @@ ctrl = 1
 
 
 
-;<SHINGO KINSEI ORE SHIKI: GETCHU>=
+;SHINGO KINSEI ORE SHIKI: GETCHU>=
 [StateDef 1700]
 type = S
 physics = N
@@ -4853,7 +4853,7 @@ ctrl = 1
 
 
 
-;<HIT BY (COUNTERED) SHINGO KINSEI ORE SHIKI: GETCHU>=
+;HIT BY (COUNTERED) SHINGO KINSEI ORE SHIKI: GETCHU>=
 ;Being Launched
 [StateDef 1715]
 type = A
@@ -5066,7 +5066,7 @@ value = 5100
 
 
 
-;<SHINGO KINSEI ORE SHIKI: GETCHU (EX)>=
+;SHINGO KINSEI ORE SHIKI: GETCHU (EX)>=
 [StateDef 1730]
 type = S
 physics = N
@@ -5247,7 +5247,7 @@ ctrl = 1
 
 
 
-;<HIT BY EX SHINGO KINSEI ORE SHIKI: GETCHU>=
+;HIT BY EX SHINGO KINSEI ORE SHIKI: GETCHU>=
 ;Hit shake
 [StateDef 1735]
 type = S
@@ -5343,7 +5343,7 @@ value = 5110
 
 
 
-;<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -5440,7 +5440,7 @@ ctrl = 1
 
 
 
-;<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

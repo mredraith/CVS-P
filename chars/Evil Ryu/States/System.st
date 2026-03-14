@@ -2960,7 +2960,7 @@ type = changestate
 trigger1 = !animtime
 value = 0
 
-;TURNS INTRO>==
+;TURNS INTRO=
 [StateDef 6900]
 type = A
 anim = 42
@@ -3255,7 +3255,7 @@ trigger1 = !time && var(1) = 2
 value = ifelse(random < 500, 364, 365)
 
 
-;WIN VS KEN>==
+;WIN VS KEN=
 [StateDef 184]
 type = S
 physics = S
@@ -3714,7 +3714,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;K.O.>==
+;K.O.=
 [StateDef 5150]
 type = L
 movetype = H
@@ -3756,7 +3756,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;AIR HIT TRANSITION>==
+;AIR HIT TRANSITION=
 [Statedef 5035]
 type = A
 movetype = H

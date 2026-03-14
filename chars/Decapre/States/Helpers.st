@@ -2,10 +2,10 @@
 ;| Decapre by varo_hades                   |
 ; 
 ;
-;<HELPER STATES>==
+;HELPER STATES=
 ;
 
-;<PARRY HELPER>==
+;PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -115,7 +115,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;<PSYCHO STING PROJECTILE>==
+;PSYCHO STING PROJECTILE=
 [Statedef 1025]
 type = S
 movetype = I
@@ -150,7 +150,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 1000
 trigger3 = root,stateno = 1000 && root,animelemtime(7) = 0
 
-;<PSYCHO STING PROJECTILE>==
+;PSYCHO STING PROJECTILE=
 [Statedef 1026]
 type = S
 movetype = I
@@ -185,7 +185,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 1030
 trigger3 = root,stateno = 1030 && root,animelemtime(7) = 0
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7000]
 type = S
 movetype = I
@@ -234,7 +234,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7001]
 type = S
 movetype = I
@@ -283,7 +283,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7002]
 type = S
 movetype = I
@@ -332,7 +332,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7003]
 type = S
 movetype = I
@@ -381,7 +381,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7004]
 type = S
 movetype = I
@@ -430,7 +430,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7005]
 type = S
 movetype = I
@@ -479,7 +479,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7006]
 type = S
 movetype = I
@@ -528,7 +528,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7007]
 type = S
 movetype = I
@@ -577,7 +577,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 1230 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7010]
 type = S
 movetype = I
@@ -642,7 +642,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7011]
 type = S
 movetype = I
@@ -707,7 +707,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7012]
 type = S
 movetype = I
@@ -772,7 +772,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7013]
 type = S
 movetype = I
@@ -837,7 +837,7 @@ trigger3 = root,stateno = 1230 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7100]
 type = S
 movetype = I
@@ -902,7 +902,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7101]
 type = S
 movetype = I
@@ -967,7 +967,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7102]
 type = S
 movetype = I
@@ -1032,7 +1032,7 @@ trigger3 = root,stateno = 1200 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<RAPID DAGGER PROJECTILE>==
+;RAPID DAGGER PROJECTILE=
 [Statedef 7103]
 type = S
 movetype = I
@@ -1097,7 +1097,7 @@ trigger3 = root,stateno = 1230 && root,time = 1
 trigger4 = root,stateno = 2800 && root,time = 1
 ;trigger5 = root, stateno = 1200 && !root,var(5) && root,animelem = 8
 
-;<INVISIBLE RAY PROJECTILE>==
+;INVISIBLE RAY PROJECTILE=
 [Statedef 1501]
 type = A
 movetype = I
@@ -1132,7 +1132,7 @@ trigger1 = anim = 7901 && animtime = 0
 trigger2 = parent,stateno != 1500
 trigger3 = parent,stateno = 1500 && parent,time = 1
 
-;<EX INVISIBLE RAY PROJECTILE>==
+;EX INVISIBLE RAY PROJECTILE=
 [Statedef 1531]
 type = A
 movetype = I
@@ -1167,7 +1167,7 @@ trigger1 = anim = 7901 && animtime = 0
 trigger2 = parent,stateno != 1530
 trigger3 = parent,stateno = 1530 && parent,time = 1
 
-;<INVISIBLE RAY PROJECTILE>==
+;INVISIBLE RAY PROJECTILE=
 [StateDef 1505]
 type = S
 physics = N
@@ -1481,7 +1481,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;<EX INVISIBLE RAY PROJECTILE>==
+;EX INVISIBLE RAY PROJECTILE=
 [StateDef 1535]
 type = S
 physics = N
@@ -2348,7 +2348,7 @@ triggerall = time > 1
 trigger1 = FrontEdgeDist <= -40
 
 
-;<SONIC HURRICANE PROJECTILE>=
+;SONIC HURRICANE PROJECTILE>=
 [StateDef 3205]
 type = S
 moveType = A
@@ -2645,7 +2645,7 @@ type = ChangeState
 trigger1 = Time = 8
 value = 1008
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7200]
 type = S
 movetype = I
@@ -2680,7 +2680,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 620
 trigger3 = root,stateno = 620 && root,animelemtime(4) = 0
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7201]
 type = S
 movetype = I
@@ -2715,7 +2715,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 621
 trigger3 = root,stateno = 621 && root,animelemtime(4) = 0
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7205]
 type = S
 movetype = I
@@ -2750,7 +2750,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 625
 trigger3 = root,stateno = 625 && root,animelemtime(4) = 0
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7250]
 type = S
 movetype = I
@@ -2785,7 +2785,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 420
 trigger3 = root,stateno = 420 && root,animelemtime(5) = 0
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7550]
 type = S
 movetype = I
@@ -2820,7 +2820,7 @@ trigger1 = animtime = 0
 trigger2 = root,stateno != 220
 trigger3 = root,stateno = 220 && root,animelemtime(6) = 0
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7450]
 type = S
 movetype = I
@@ -2868,7 +2868,7 @@ trigger2 = root,stateno != 225 && root,stateno != 225
 trigger3 = root,stateno = 225 && root,time = 1
 trigger4 = root,stateno = 225 && root,time = 1
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7451]
 type = S
 movetype = I
@@ -2916,7 +2916,7 @@ trigger2 = root,stateno != 225 && root,stateno != 225
 trigger3 = root,stateno = 225 && root,time = 1
 trigger4 = root,stateno = 225 && root,time = 1
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7452]
 type = S
 movetype = I
@@ -2964,7 +2964,7 @@ trigger2 = root,stateno != 225 && root,stateno != 225
 trigger3 = root,stateno = 225 && root,time = 1
 trigger4 = root,stateno = 225 && root,time = 1
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7453]
 type = S
 movetype = I
@@ -3012,7 +3012,7 @@ trigger2 = root,stateno != 225 && root,stateno != 225
 trigger3 = root,stateno = 225 && root,time = 1
 trigger4 = root,stateno = 225 && root,time = 1
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7454]
 type = S
 movetype = I
@@ -3060,7 +3060,7 @@ trigger2 = root,stateno != 225 && root,stateno != 225
 trigger3 = root,stateno = 225 && root,time = 1
 trigger4 = root,stateno = 225 && root,time = 1
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7900]
 type = A
 movetype = I
@@ -3097,7 +3097,7 @@ trigger2 = parent,stateno != 3000
 trigger3 = parent,stateno = 3000 && parent,time = 1
 trigger4 = root,movetype = H
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7901]
 type = A
 movetype = I
@@ -3125,7 +3125,7 @@ type = DestroySelf
 trigger1 = animtime = 0
 trigger2 = root,movetype = H
 
-;<FX PROJECTILE>==
+;FX PROJECTILE=
 [Statedef 7910]
 type = A
 movetype = I
@@ -3162,7 +3162,7 @@ trigger2 = parent,stateno != 3050
 trigger3 = parent,stateno = 3050 && parent,time = 1
 trigger4 = root,movetype = H
 
-;<SPARKS>=
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -3906,7 +3906,7 @@ trigger1 = Time >= 8
 
 
 
-;<JUMP DUST>==
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -3945,7 +3945,7 @@ trigger1 = Time >= 7
 
 
 
-;<DASH DUST>==
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -4006,7 +4006,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;<IMPACT DUST>==
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -4051,7 +4051,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;<WALL IMPACT DUST>==
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -4095,7 +4095,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<FLAMES>=
+;FLAMES>=
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -4165,7 +4165,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;<RECOVER FX>=
+;RECOVER FX>=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -4197,7 +4197,7 @@ trigger1 = Time >= 15
 
 
 
-;<COUNTER FX>=
+;COUNTER FX>=
 [StateDef 8290]
 type = A
 physics = N
@@ -4243,7 +4243,7 @@ trigger1 = Time >= 16
 
 
 
-;<POWER CHARGE FX>=
+;POWER CHARGE FX>=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -4351,7 +4351,7 @@ type = DestroySelf
 trigger1 = Root, StateNo != 730
 
 
-;<VIOLENT WIN VS VEGA PARTICLES>=
+;VIOLENT WIN VS VEGA PARTICLES>=
 [StateDef 8332]
 type = A
 physics = N
@@ -4388,7 +4388,7 @@ trigger1 = Root, StateNo != 187 || Root, AnimElemTime(60) >= 0
 
 
 
-;<ZERO COUNTER FX>=
+;ZERO COUNTER FX>=
 [StateDef 8350]
 type = A
 physics = N
@@ -4440,7 +4440,7 @@ trigger1 = Time >= 16
 
 
 
-;<CUSTOM COMBO>=
+;CUSTOM COMBO>=
 [StateDef 8400]
 type = A
 physics = N
@@ -4546,7 +4546,7 @@ trigger1 = Time >= 26
 
 
 
-;<SUPER PAUSE FX>=
+;SUPER PAUSE FX>=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -4990,7 +4990,7 @@ trigger1 = Time >= 40
 
 
 
-;<SUPER FINISH>=
+;SUPER FINISH>=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -5151,7 +5151,7 @@ trigger1 = RoundState < 3
 
 
 
-;<CAMERA CONTROL>=
+;CAMERA CONTROL>=
 [StateDef 8999]
 type = S
 velSet = 0,0

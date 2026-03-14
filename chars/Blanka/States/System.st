@@ -3690,7 +3690,7 @@ var(51)= 1
 type = DestroySelf
 trigger1 = Pos Y>=ifelse((root,var(51)=[4,5]),-30,-20)
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

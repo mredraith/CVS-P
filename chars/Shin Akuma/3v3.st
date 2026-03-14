@@ -12,7 +12,7 @@
 ; COMMON STATES =
 ;
 
-; PARRY >==
+; PARRY =
 ;--- STANDING ---
 [Statedef 700]
 type = S
@@ -249,7 +249,7 @@ trigger1 = time > 10
 value = 1
 
 
-; DODGE >==
+; DODGE =
 [Statedef 710]
 type = S
 physics = S
@@ -288,7 +288,7 @@ value = 0
 ctrl = 1
 
 
-; FORWARD ROLL >==
+; FORWARD ROLL =
 [Statedef 720]
 type = C
 physics = C
@@ -322,7 +322,7 @@ value = 0
 ctrl = 1
 
 
-; POWER CHARGE >==
+; POWER CHARGE =
 [Statedef 740]
 type = S
 physics = S
@@ -415,7 +415,7 @@ value = 0
 ctrl = 1
 
 
-; ZERO COUNTER >==
+; ZERO COUNTER =
 [Statedef 750]
 type = S
 physics = S
@@ -667,7 +667,7 @@ trigger1 = !animtime
 value = 0
 
 
-; WALKING >==
+; WALKING =
 [Statedef 20]
 type = S
 physics = S
@@ -963,7 +963,7 @@ value = 0
 ctrl = 1
 
 
-; FORWARD DASH >==
+; FORWARD DASH =
 [Statedef 102]
 type = S
 movetype = I
@@ -1006,7 +1006,7 @@ value = 0
 ctrl = 1
 
 
-; BACK DASH >==
+; BACK DASH =
 [Statedef 105]
 type = A
 movetype = I
@@ -1047,7 +1047,7 @@ value = 0
 ctrl = 1
 
 
-; GUARD >==
+; GUARD =
 ;--- START ---
 [Statedef 120]
 type = U
@@ -1762,7 +1762,7 @@ type = ChangeState
 trigger1 = sysvar(0)
 value = 130
 
-; CHEAP K.O. >==
+; CHEAP K.O. =
 [Statedef 5130]
 type = S
 movetype = H
@@ -1833,7 +1833,7 @@ value = ifelse(alive, 5110, 5150)
 
 
 
-; TAUNT >==
+; TAUNT =
 [Statedef 195]
 type = S
 movetype = A
@@ -2004,7 +2004,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-; LOSE (Time over) >==
+; LOSE (Time over) =
 [Statedef 170]
 type = S
 ctrl = 0
@@ -2031,7 +2031,7 @@ trigger1 = animelem = 2
 value = 0, 52
 
 
-; DRAWGAME (Time over) >==
+; DRAWGAME (Time over) =
 [Statedef 175]
 type = S
 ctrl = 0
@@ -2156,7 +2156,7 @@ trigger1 = var(1) = 1
 trigger1 = ifelse(var(0) = 2, time >= 1, 1)
 value = ifelse(random < 500, 187, 181)
 
-; INTRO 1 >==
+; INTRO 1 =
 [Statedef 182]
 type = S
 anim = 182
@@ -2232,7 +2232,7 @@ trigger1 = !animtime
 value = 0
 
 
-; INTRO SHIN GOUKI >==
+; INTRO SHIN GOUKI =
 [Statedef 187]
 type = S
 anim = 187
@@ -2371,7 +2371,7 @@ trigger1 = !animtime
 value = 0
 
 
-; INTRO 3 >==
+; INTRO 3 =
 [Statedef 181]
 type = S
 anim = 181
@@ -2705,7 +2705,7 @@ trigger1 = !animtime
 value = 0
 
 
-; INTRO vs EVIL RYU >==
+; INTRO vs EVIL RYU =
 [Statedef 192]
 type = S
 physics = N
@@ -2862,7 +2862,7 @@ trigger1 = !animtime
 value = 0
 
 
-; INTRO vs HAOHMARU >==
+; INTRO vs HAOHMARU =
 [Statedef 191]
 type = S
 anim = 191
@@ -2898,7 +2898,7 @@ trigger1 = !animtime
 value = 0
 
 
-; INTRO vs ADON by Sepp >==
+; INTRO vs ADON by Sepp =
 [Statedef 193]
 type = S
 anim = 193
@@ -3139,7 +3139,7 @@ trigger1 = !animtime
 value = 0
 
 
-; WIN POSE DECIDER >==
+; WIN POSE DECIDER =
 [Statedef 180]
 type = S
 
@@ -3179,7 +3179,7 @@ trigger1 = !time
 value = ifelse(random < 333, 185, ifelse(random < 500, 186, 189))
 
 
-; WIN 1 >==
+; WIN 1 =
 [Statedef 185]
 type = S
 anim = 185
@@ -3220,7 +3220,7 @@ bindtime = -1
 removeongethit = 1
 ownpal = 1
 
-; WIN 2 >==
+; WIN 2 =
 [Statedef 186]
 type = S
 anim = 186
@@ -3233,7 +3233,7 @@ channel = 0
 persistent = 0
 
 
-; WIN 3 >==
+; WIN 3 =
 [Statedef 189]
 type = S
 anim = 189
@@ -3329,7 +3329,7 @@ loop = 1
 persistent = 0
 
 
-; WIN by MISOGI >==
+; WIN by MISOGI =
 [Statedef 184]
 type = S
 sprpriority = -5
@@ -3364,7 +3364,7 @@ trigger1 = time >= 30 && roundstate = 3
 value = ifelse(roundstate = 3, 180, 0)
 ctrl = 1
 
-; WIN by S.G.S. >==
+; WIN by S.G.S. =
 [Statedef 362]
 type = S
 sprpriority = -1
@@ -3598,7 +3598,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-; CONTINUE? >==
+; CONTINUE? =
 [Statedef 5500]
 type = S
 ctrl = 0
@@ -3609,7 +3609,7 @@ trigger1 = !time
 value = 5500
 
 
-; FALL RECOVERY >==
+; FALL RECOVERY =
 [Statedef 5200]
 type = A
 movetype = H
@@ -3744,7 +3744,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-; TARGET SAFE FALL >==
+; TARGET SAFE FALL =
 [Statedef 5205]
 type = A
 physics = N

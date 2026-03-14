@@ -2,10 +2,10 @@
 ;| Angel by KarmaCharmeleon			|
 ; 
 ;
-;<SUPER STATES>==
+;SUPER STATES=
 ;
 
-;<LOYALTY TEST FOR LIBERALISTS>=
+;LOYALTY TEST FOR LIBERALISTS>=
 [StateDef 3000]
 type = S
 physics = N
@@ -505,7 +505,7 @@ value = Anim
 
 
 
-;<MAX LOYALTY TEST FOR LIBERALISTS>=
+;MAX LOYALTY TEST FOR LIBERALISTS>=
 [StateDef 3050]
 type = S
 physics = N
@@ -1215,7 +1215,7 @@ value = 5300
 
 
 
-;<WIND FAIRGROUND/BLUE MONDAY PARADE>=
+;WIND FAIRGROUND/BLUE MONDAY PARADE>=
 [Statedef 3100]
 type = S
 physics = S
@@ -1802,7 +1802,7 @@ ctrl = 1
 
 
 
-;<ISSETSU SEGI NAGE (TARGET)>==
+;ISSETSU SEGI NAGE (TARGET)=
 ;Being Thrown
 [StateDef 3125]
 type = A
@@ -1869,7 +1869,7 @@ value = 5100
 
 
 
-;<SURVIVOR'S BANQUET>=
+;SURVIVOR'S BANQUET>=
 [StateDef 3200]
 type = S
 physics = N

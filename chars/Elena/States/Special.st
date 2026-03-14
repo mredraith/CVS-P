@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Elena by varo_hades                     |
 ; 
-;=
-;=<SPECIAL MOVES=
-;=
+;
+;<SPECIAL MOVES=
+;
 
 ;LYNX TAIL
 [StateDef 1000]

@@ -1676,7 +1676,7 @@ value = 1102
 
 
 
-;MEKONG DELTA ATTACK>==
+;MEKONG DELTA ATTACK=
 ;Jump
 [StateDef 1200]
 type = S
@@ -2331,7 +2331,7 @@ ctrl = 1
 
 
 
-;MEKONG DELTA AIR RAID>==
+;MEKONG DELTA AIR RAID=
 ;Rolling
 [StateDef 1300]
 type = S
@@ -3151,7 +3151,7 @@ value = 1402
 
 
 
-;SCOUTER JUMP>==
+;SCOUTER JUMP=
 [StateDef 1500]
 type = S
 physics = N

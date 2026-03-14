@@ -1,4 +1,4 @@
-;========================< SUPERPAUSE FX >=============================
+; SUPERPAUSE FX =
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A
@@ -441,7 +441,7 @@ type = DestroySelf
 trigger1 = Time >= 40
 
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -602,7 +602,7 @@ trigger1 = RoundState < 3
 
 
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL=
 [StateDef 8999]
 type = S
 velSet = 0,0

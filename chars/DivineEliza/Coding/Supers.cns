@@ -1,4 +1,4 @@
-;======================<RAISING STORM>==========================
+;RAISING STORM=
 [Statedef 3000]
 type = S
 movetype = A
@@ -196,7 +196,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<MAX RAISING STORM>==========================
+;MAX RAISING STORM=
 [Statedef 3050]
 type = S
 movetype = A
@@ -450,7 +450,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<TOTAL ANNIHILATION>===================
+;TOTAL ANNIHILATION==
 [Statedef 3100]
 type    = S
 movetype= A
@@ -869,7 +869,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1105
 
-;======================<MAX TOTAL ANNIHILATION>===================
+;MAX TOTAL ANNIHILATION==
 [Statedef 3150]
 type    = S
 movetype= A
@@ -1475,7 +1475,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1105
 
-;======================<RASHOUMON>==========================
+;RASHOUMON=
 [Statedef 3200]
 type = S
 movetype = A
@@ -2004,7 +2004,7 @@ trigger1 = vel y > 0
 trigger1 = pos y>=ifelse((anim=[5051,5059]) || (anim=[5061,5069]), 0, 25)
 value = 5100
 
-;======================<MAX RASHOUMON>==========================
+;MAX RASHOUMON=
 [Statedef 3250]
 type = S
 movetype = A
@@ -2849,7 +2849,7 @@ trigger1 = vel y>0
 trigger1 = pos y>=ifelse((anim=[5051,5059]) || (anim=[5061,5069]), 0, 25)
 value = 5100
 
-;======================<KAPPURU SHOURYUKEN>===================
+;KAPPURU SHOURYUKEN==
 [Statedef 3300]
 type = S
 movetype = A
@@ -3510,7 +3510,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<HIT by KS CUSTOM STATES>========================
+;HIT by KS CUSTOM STATES=
 ;Initial hit state
 [Statedef 3320]
 type    = S

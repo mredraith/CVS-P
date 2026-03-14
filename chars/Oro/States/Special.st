@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Oro by varo_hades                       |
 ; 
-;==============================================================================================
-;========================================<SPECIAL MOVES>=======================================
-;==============================================================================================
+;
+;SPECIAL MOVES==
+;
 
-;=====================<NICHIRIN SHOU>==========================
+;NICHIRIN SHOU=
 [StateDef 1000]
 type = S
 physics = S
@@ -97,7 +97,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX NICHIRIN SHOU>=============================
+;EX NICHIRIN SHOU=
 [StateDef 1030]
 type = S
 physics = N
@@ -185,7 +185,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<ONI YANMA>=============================
+;ONI YANMA=
 [StateDef 1100]
 type = S
 physics = N
@@ -905,7 +905,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX ONI YANMA>=============================
+;EX ONI YANMA=
 [StateDef 1130]
 type = S
 physics = N
@@ -1246,7 +1246,7 @@ trigger1 = animtime = 0
 value = 1101
 ctrl = 0
 
-;========================<JINCHUU WATARI>=============================
+;JINCHUU WATARI=
 [StateDef 1200]
 type = S
 physics = S
@@ -1906,7 +1906,7 @@ trigger1 = animtime = 0
 value = 11
 ctrl = 1
 
-;========================<EX JINCHUU WATARI>=============================
+;EX JINCHUU WATARI=
 [StateDef 1230]
 type = S
 physics = S
@@ -2198,7 +2198,7 @@ trigger1 = Vel Y > 0
 value = 1290
 ctrl = 0
 
-;========================<NIOU RIKI>=============================
+;NIOU RIKI=
 [StateDef 1300]
 type = S
 physics = S
@@ -2393,7 +2393,7 @@ type = selfstate
 trigger1 = time = 49
 value = 5100
 
-;========================<EX NIOU RIKI>=============================
+;EX NIOU RIKI=
 [StateDef 1330]
 type = S
 physics = S
@@ -2598,7 +2598,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<HITOBASHIRA NOBORI>=============================
+;HITOBASHIRA NOBORI=
 [StateDef 1400]
 type = A
 physics = A
@@ -2946,7 +2946,7 @@ envShake.ampl = 4
 envShake.freq = 120
 p1stateno = 1280
 
-;========================<EX NIOU RIKI>=============================
+;EX NIOU RIKI=
 [StateDef 1430]
 type = A
 physics = A
@@ -3225,7 +3225,7 @@ envShake.ampl = 4
 envShake.freq = 120
 p1stateno = 1280
 
-;========================<PUNCH ZERO COUNTER>=============================
+;PUNCH ZERO COUNTER=
 [StateDef 2900]
 type = S
 physics = N
@@ -3332,7 +3332,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<KICK ZERO COUNTER>=============================
+;KICK ZERO COUNTER=
 [StateDef 2910]
 type = S
 physics = N

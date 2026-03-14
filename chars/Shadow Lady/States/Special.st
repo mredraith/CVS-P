@@ -594,7 +594,7 @@ ctrl = 1
 
 
 
-;SPINNING BIRD KICK>==
+;SPINNING BIRD KICK=
 [StateDef 1200]
 type = S
 physics = N
@@ -1194,7 +1194,7 @@ ctrl = 1
 
 
 
-;HAZANSHU>==
+;HAZANSHU=
 [StateDef 1300]
 type = S
 physics = N
@@ -1728,7 +1728,7 @@ value = 1301
 
 
 
-;TENSHOKYAKU>==
+;TENSHOKYAKU=
 [StateDef 1400]
 type = S
 physics = N
@@ -2495,7 +2495,7 @@ value = 1401
 
 
 
-;SEN'ENSHU>==
+;SEN'ENSHU=
 [StateDef 1500]
 type = S
 physics = N
@@ -2667,7 +2667,7 @@ ctrl = 1
 
 
 
-;EX SEN'ENSHU>==
+;EX SEN'ENSHU=
 [StateDef 1530]
 type = S
 physics = N

@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;KUNAI>==
+;KUNAI=
 [StateDef 1000]
 type = A
 physics = N

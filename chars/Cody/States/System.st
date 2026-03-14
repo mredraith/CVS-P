@@ -1,11 +1,11 @@
 ; _______________________________________________
 ;|            Cody Travers by Trololo            |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;=======================================<SYSTEM STATES>========================================
-;==============================================================================================
+;
+;SYSTEM STATES=
+;
 
-;====================<STANDING>====================
+;STANDING=
 [StateDef 0]
 type = S
 physics = S
@@ -45,7 +45,7 @@ value = 50
 
 
 
-;====================<CROUCHING>====================
+;CROUCHING=
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -117,7 +117,7 @@ value = 0
 
 
 
-;====================<WALKING>====================
+;WALKING=
 [StateDef 20]
 type = S
 physics = S
@@ -150,7 +150,7 @@ value = ifelse(var(40), 10021, 21)
 
 
 
-;====================<JUMPING>====================
+;JUMPING=
 ;Jumping
 [StateDef 40]
 type = S
@@ -367,7 +367,7 @@ ctrl = 1
 
 
 
-;======================<RUN>===========================
+;RUN=
 [StateDef 100]
 type = S
 physics = N
@@ -444,7 +444,7 @@ ctrl = 1
 
 
 
-;========================<DASH BACKWARDS>==========================
+;DASH BACKWARDS=
 [StateDef 105]
 type = A
 physics = N
@@ -532,7 +532,7 @@ ctrl = 1
 
 
 
-;=================<DASH FORWARD>=================
+;DASH FORWARD==
 [StateDef 110]
 type = S
 physics = N
@@ -629,7 +629,7 @@ value = 0
 ctrl = 1
 
 
-;====================<DODGE>====================
+;DODGE=
 [StateDef 700]
 type = S
 physics = S
@@ -681,7 +681,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;================<ROLL FORWARD>================
+;ROLL FORWARD=
 [StateDef 710]
 type = S
 physics = N
@@ -731,7 +731,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===============<ROLL BACKWARDS>===============
+;ROLL BACKWARDS==
 [StateDef 715]
 type = S
 physics = N
@@ -781,7 +781,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==========<POWER CHARGE>==========
+;POWER CHARGE=
 [StateDef 730]
 type = S
 physics = S
@@ -873,7 +873,7 @@ ctrl = 1
 
 
 
-;====================<ZERO COUNTER>====================
+;ZERO COUNTER=
 [StateDef 750]
 type = S
 physics = S
@@ -943,7 +943,7 @@ value = ifElse(var(10) = 1, 2910, 2900)
 
 
 
-;====================<PARRY>====================
+;PARRY=
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1200,7 +1200,7 @@ value=52
 
 
 
-;====================<CUSTOM COMBO>====================
+;CUSTOM COMBO=
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1396,7 +1396,7 @@ value = 52
 
 
 
-;==========<TARGET SAFE FALL>==========
+;TARGET SAFE FALL=
 [StateDef 5205]
 type = A
 physics = N
@@ -1426,7 +1426,7 @@ value = 5210
 
 
 
-;==========<FALL RECOVERY>==========
+;FALL RECOVERY=
 [StateDef 5200]
 type = A
 moveType = H
@@ -1583,7 +1583,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;===================<GUARD>================
+;GUARD=
 ;Guard Start
 [StateDef 120]
 type = U
@@ -2054,7 +2054,7 @@ value = 52
 
 
 
-;====================<LOSE>====================
+;LOSE=
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2088,7 +2088,7 @@ flag = RoundNotOver
 
 
 
-;====================<DRAW GAME>====================
+;DRAW GAME=
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2127,7 +2127,7 @@ flag = RoundNotOver
 
 
 
-;====================<CONTINUE?>====================
+;CONTINUE?=
 [StateDef 5500]
 type = S
 anim = 5300
@@ -2141,7 +2141,7 @@ value = 5500
 
 
 
-;====================<INITIALIZE>====================
+;INITIALIZE=
 [StateDef 5900]
 type = S
 
@@ -2248,7 +2248,7 @@ trigger1 = 1
 value = 0
 
 
-;====================<INTRO>====================
+;INTRO=
 [StateDef 190]
 type = S
 physics = S
@@ -2307,7 +2307,7 @@ trigger1 = !AnimTime
 value = 0
 
 
-;====================<INTRO VS GUY/HAGGAR>====================
+;INTRO VS GUY/HAGGAR=
 [StateDef 191]
 type = S
 physics = N
@@ -2530,7 +2530,7 @@ trigger1 = !AnimTime
 value = 0
 
 
-;====================<TURNS INTRO>====================
+;TURNS INTRO=
 [StateDef 6900]
 type = A
 anim = 41
@@ -2654,7 +2654,7 @@ value = 0
 ctrl = 1
 
 
-;====================<WIN POSE DECIDER>====================
+;WIN POSE DECIDER=
 [StateDef 180]
 type = S
  
@@ -2887,7 +2887,7 @@ trigger1 = !time
 value = 181
 
 
-;====================<WIN 1>====================
+;WIN 1=
 [StateDef 181]
 type = S
 physics = S
@@ -2905,7 +2905,7 @@ trigger1 = AnimElem = 2
 value = 181,0
 channel = 0
 
-;====================<WIN 2>====================
+;WIN 2=
 [StateDef 182]
 type = S
 physics = N
@@ -2985,7 +2985,7 @@ triggerall = AnimElemTime(10)>=0
 trigger1 = !Numhelper(7400)
 value = 183
 
-;====================<WIN 2.5>====================
+;WIN 2.5=
 [Statedef 183]
 type = S
 physics = N
@@ -3075,7 +3075,7 @@ value = 183, 0
 channel = 0
 
 
-;==========<TAUNT 1>==========
+;TAUNT 1=
 [StateDef 195]
 type = S
 moveType = I
@@ -3117,7 +3117,7 @@ value = 0
 ctrl = 1
 
 
-;==========<TAUNT 2>==========
+;TAUNT 2=
 [StateDef 196]
 type = S
 moveType = I
@@ -3160,7 +3160,7 @@ value = 0
 ctrl = 1
 
 
-;==========<TAUNT 3>==========
+;TAUNT 3=
 [StateDef 197]
 type = S
 moveType = I
@@ -3206,7 +3206,7 @@ value = 0
 ctrl = 1
 
 
-;====================<CHEAP K.O.>====================
+;CHEAP K.O.=
 [StateDef 5950]
 type = S
 moveType = H
@@ -3260,7 +3260,7 @@ value = ifElse(Alive, 5110, 5150)
 
 
 
-;====================<AIR HIT TRANSITION>====================
+;AIR HIT TRANSITION=
 [Statedef 5035]
 type = A
 movetype = H
@@ -3298,9 +3298,9 @@ trigger4 = !Time
 trigger4 = Anim != 5035
 value = 5050
 
-;===========================================================================
-;===============================<-2 STATES>=================================
-;===========================================================================
+;
+;-2 STATES=
+;
 [StateDef -2]
 
 [State -2, Knife Reset]
@@ -3641,9 +3641,9 @@ ignoreHitPause = 1
 
 
 
-;===========================================================================
-;===============================<-3 STATES>=================================
-;===========================================================================
+;
+;-3 STATES=
+;
 [StateDef -3]
 
 [State -3, GameTime]
@@ -4070,7 +4070,7 @@ pauseMoveTime = 255
 superMoveTime = 255
 ignoreHitPause = 1
 
-;========================================
+;
 [State -3, ChangeAnim: Turning]
 type = ChangeAnim
 trigger1 = anim = 5 && var(40)

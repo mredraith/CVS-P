@@ -2683,7 +2683,7 @@ trigger1 = AnimElem = 1
 value = 182, 0
 volume = -50
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

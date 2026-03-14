@@ -1,4 +1,4 @@
-;<SPECIALS>=
+;SPECIALS>=
 
 ;Grosse Kicken
 [StateDef 1000]

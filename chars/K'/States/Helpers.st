@@ -116,7 +116,7 @@ trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
 
-;EIN TRIGGER (PROJECTILE)>==
+;EIN TRIGGER (PROJECTILE)=
 [StateDef 1005]
 type = S
 physics = N
@@ -568,7 +568,7 @@ trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
 
 
 
-;SECOND SHOOT (PROJECTILE)>==
+;SECOND SHOOT (PROJECTILE)=
 [StateDef 1015]
 type = S
 physics = N
@@ -846,7 +846,7 @@ value = 1008
 
 
 
-;EX SECOND SHOOT (PROJECTILE)>==
+;EX SECOND SHOOT (PROJECTILE)=
 [StateDef 1045]
 type = S
 physics = N
@@ -1137,7 +1137,7 @@ value = 1008
 
 
 
-;AIR TRIGGER (PROJECTILE)>==
+;AIR TRIGGER (PROJECTILE)=
 [StateDef 1505]
 type = A
 physics = N
@@ -1423,7 +1423,7 @@ value = 1008
 
 
 
-;EX AIR TRIGGER (PROJECTILE)>==
+;EX AIR TRIGGER (PROJECTILE)=
 [StateDef 1535]
 type = A
 physics = N
@@ -1718,7 +1718,7 @@ value = 1008
 
 
 
-;CHAIN DRIVE (GLASS PROJECTILE)>==
+;CHAIN DRIVE (GLASS PROJECTILE)=
 [StateDef 3102]
 type = S
 physics = N
@@ -2041,7 +2041,7 @@ trigger2 = Root, StateNo != [3100, 3199]
 value = 1008
 
 
-;CRIMSON STAR ROAD (PROJECTILE)>==
+;CRIMSON STAR ROAD (PROJECTILE)=
 [Statedef 3205]
 type = S
 physics = N
@@ -2360,7 +2360,7 @@ value = 1008
 
 
 
-;HYPER CHAIN DRIVE (PROJECTILE)>==
+;HYPER CHAIN DRIVE (PROJECTILE)=
 ;Source code: Urien by Froz. Yeah, I'm lazy.
 [Statedef 3305]
 type = S
@@ -3977,7 +3977,7 @@ trigger1 = Time >= 16
 
 
 
-;POWER CHARGE FX>==
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -4086,7 +4086,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;ZERO COUNTER FX>==
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N

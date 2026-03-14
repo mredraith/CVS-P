@@ -5,7 +5,7 @@
 ; MODE STATES 
 ;
 
-; EVIL RYU >==
+; EVIL RYU =
 [Statedef 5900]
 type = S
 [State 5900, varreset]

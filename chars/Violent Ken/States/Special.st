@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;HADOKEN>==
+;HADOKEN=
 [StateDef 1000]
 type = S
 physics = S
@@ -4228,7 +4228,7 @@ value = 1301
 
 
 
-;NATAOTOSI GERI>==
+;NATAOTOSI GERI=
 [StateDef 1400]
 type = S
 physics = S
@@ -4356,7 +4356,7 @@ ctrl = 1
 
 
 
-;INAZUMA KAKATO WARI>==
+;INAZUMA KAKATO WARI=
 [StateDef 1405]
 type = S
 physics = S
@@ -4438,7 +4438,7 @@ ctrl = 1
 
 
 
-;KAMABARAI GERI>==
+;KAMABARAI GERI=
 [StateDef 1410]
 type = S
 physics = S
@@ -4571,7 +4571,7 @@ ctrl = 1
 
 
 
-;OOSOTOMAWASHI GERI>==
+;OOSOTOMAWASHI GERI=
 [StateDef 1420]
 type = S
 physics = S
@@ -5092,7 +5092,7 @@ value = 5100
 
 
 
-;ZENPOU TENSHIN>==
+;ZENPOU TENSHIN=
 [StateDef 1500]
 type = S
 physics = N
@@ -5182,7 +5182,7 @@ ctrl = 1
 
 
 
-;ZENTOU>==
+;ZENTOU=
 [StateDef 1530]
 type = S
 physics = N
@@ -5269,7 +5269,7 @@ value = 52
 
 
 
-;RASETSU KYAKU>==
+;RASETSU KYAKU=
 [StateDef 1600]
 type = S
 physics = N

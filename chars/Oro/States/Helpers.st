@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Oro by varo_hades                       |
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;
+;HELPER STATES=
+;
 
-;====================<PARRY HELPER>=========================
+;PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -115,7 +115,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;=====================<NICHIRIN SHOU PROJECTILE>=========================
+;NICHIRIN SHOU PROJECTILE=
 [StateDef 1005]
 type = S
 physics = N
@@ -427,7 +427,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;=====================<EX NICHIRIN SHOU PROJECTILE>=========================
+;EX NICHIRIN SHOU PROJECTILE=
 [StateDef 1035]
 type = S
 physics = N
@@ -689,7 +689,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = pos x != [-200,200]
 
-;========================<YAGYOU OODAMA HELPER>=============================
+;YAGYOU OODAMA HELPER=
 [Statedef 3105]
 type = S
 physics = N
@@ -941,7 +941,7 @@ ignorehitpause = 1
 type = destroyself
 trigger1 = !animtime
 
-;========================<MAX YAGYOU OODAMA HELPER>=============================
+;MAX YAGYOU OODAMA HELPER=
 [Statedef 3155]
 type = S
 physics = N
@@ -1167,7 +1167,7 @@ ignorehitpause = 1
 type = destroyself
 trigger1 = !animtime
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 3405]
 type = A
 physics = N
@@ -1633,7 +1633,7 @@ ignorehitpause = 1
 type = DestroySelf
 trigger1 = numhelper(3410) = 0 || numhelper(3415) = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34550]
 type = A
 physics = N
@@ -1814,7 +1814,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34240]
 type = A
 physics = N
@@ -1995,7 +1995,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34510]
 type = A
 physics = N
@@ -2181,7 +2181,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34250]
 type = A
 physics = N
@@ -2362,7 +2362,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34260]
 type = A
 physics = N
@@ -2548,7 +2548,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34530]
 type = A
 physics = N
@@ -2729,7 +2729,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34300]
 type = A
 physics = N
@@ -2910,7 +2910,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34200]
 type = A
 physics = N
@@ -3091,7 +3091,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34630]
 type = A
 physics = N
@@ -3272,7 +3272,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34330]
 type = A
 physics = N
@@ -3453,7 +3453,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34320]
 type = A
 physics = N
@@ -3634,7 +3634,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 3410]
 type = A
 physics = N
@@ -4090,7 +4090,7 @@ type = DestroySelf
 trigger1 = numhelper(3410) = 0 || numhelper(3415) = 0
 ignorehitpause = 1
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34551]
 type = A
 physics = N
@@ -4271,7 +4271,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34241]
 type = A
 physics = N
@@ -4452,7 +4452,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34511]
 type = A
 physics = N
@@ -4633,7 +4633,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34251]
 type = A
 physics = N
@@ -4814,7 +4814,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34261]
 type = A
 physics = N
@@ -5000,7 +5000,7 @@ type = PlayerPush
 trigger1 = 1
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34531]
 type = A
 physics = N
@@ -5181,7 +5181,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34301]
 type = A
 physics = N
@@ -5362,7 +5362,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34201]
 type = A
 physics = N
@@ -5543,7 +5543,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34631]
 type = A
 physics = N
@@ -5724,7 +5724,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34331]
 type = A
 physics = N
@@ -5905,7 +5905,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34321]
 type = A
 physics = N
@@ -6086,7 +6086,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 3415]
 type = A
 physics = N
@@ -6543,7 +6543,7 @@ type = DestroySelf
 trigger1 = numhelper(3410) = 0 || numhelper(3415) = 0
 ignorehitpause = 1
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34552]
 type = A
 physics = N
@@ -6724,7 +6724,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34242]
 type = A
 physics = N
@@ -6905,7 +6905,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34512]
 type = A
 physics = N
@@ -7086,7 +7086,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34252]
 type = A
 physics = N
@@ -7267,7 +7267,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34262]
 type = A
 physics = N
@@ -7454,7 +7454,7 @@ type = PlayerPush
 trigger1 = 1
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34532]
 type = A
 physics = N
@@ -7635,7 +7635,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34302]
 type = A
 physics = N
@@ -7816,7 +7816,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34202]
 type = A
 physics = N
@@ -7997,7 +7997,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34632]
 type = A
 physics = N
@@ -8178,7 +8178,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34332]
 type = A
 physics = N
@@ -8359,7 +8359,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34322]
 type = A
 physics = N
@@ -8540,7 +8540,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34055]
 type = A
 physics = N
@@ -8570,7 +8570,7 @@ y = -8
 type = DestroySelf
 trigger1 = time >= 35
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34105]
 type = A
 physics = N
@@ -8600,7 +8600,7 @@ y = -8
 type = DestroySelf
 trigger1 = time >= 35
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34155]
 type = A
 physics = N
@@ -8630,7 +8630,7 @@ y = -8
 type = DestroySelf
 trigger1 = time >= 35
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34411]
 type = A
 physics = N
@@ -8810,7 +8810,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34412]
 type = A
 physics = N
@@ -8990,7 +8990,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34413]
 type = A
 physics = N
@@ -9171,7 +9171,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<MAX TENGU ISHI HELPER>=============================
+;MAX TENGU ISHI HELPER=
 [Statedef 34414]
 type = A
 physics = N
@@ -9352,7 +9352,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<MAX TENGU ISHI HELPER>=============================
+;MAX TENGU ISHI HELPER=
 [Statedef 34415]
 type = A
 physics = N
@@ -9533,7 +9533,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34401]
 type = A
 physics = N
@@ -9714,7 +9714,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34402]
 type = A
 physics = N
@@ -9895,7 +9895,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34403]
 type = A
 physics = N
@@ -10076,7 +10076,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<MAX TENGU ISHI HELPER>=============================
+;MAX TENGU ISHI HELPER=
 [Statedef 34404]
 type = A
 physics = N
@@ -10257,7 +10257,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<MAX TENGU ISHI HELPER>=============================
+;MAX TENGU ISHI HELPER=
 [Statedef 34405]
 type = A
 physics = N
@@ -10438,7 +10438,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34400]
 type = A
 physics = N
@@ -10555,7 +10555,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<MAX TENGU ISHI HELPER>=============================
+;MAX TENGU ISHI HELPER=
 [Statedef 3420]
 type = A
 physics = N
@@ -11008,7 +11008,7 @@ ignorehitpause = 1
 type = DestroySelf
 trigger1 = numhelper(3410) = 0 || numhelper(3415) = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34553]
 type = A
 physics = N
@@ -11189,7 +11189,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34243]
 type = A
 physics = N
@@ -11370,7 +11370,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34513]
 type = A
 physics = N
@@ -11556,7 +11556,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34253]
 type = A
 physics = N
@@ -11737,7 +11737,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34263]
 type = A
 physics = N
@@ -11923,7 +11923,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34533]
 type = A
 physics = N
@@ -12104,7 +12104,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34303]
 type = A
 physics = N
@@ -12285,7 +12285,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34203]
 type = A
 physics = N
@@ -12466,7 +12466,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34633]
 type = A
 physics = N
@@ -12647,7 +12647,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34333]
 type = A
 physics = N
@@ -12828,7 +12828,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34323]
 type = A
 physics = N
@@ -13009,7 +13009,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<MAX TENGU ISHI HELPER>============================
+;MAX TENGU ISHI HELPER=
 [Statedef 34165]
 type = A
 physics = N
@@ -13039,7 +13039,7 @@ y = -8
 type = DestroySelf
 trigger1 = time >= 35
 
-;========================<MAX TENGU ISHI HELPER>============================
+;MAX TENGU ISHI HELPER=
 [Statedef 34175]
 type = A
 physics = N
@@ -13069,7 +13069,7 @@ y = -8
 type = DestroySelf
 trigger1 = time >= 35
 
-;========================<MAX TENGU ISHI HELPER>=============================
+;MAX TENGU ISHI HELPER=
 [Statedef 3425]
 type = A
 physics = N
@@ -13526,7 +13526,7 @@ type = DestroySelf
 trigger1 = numhelper(3410) = 0 || numhelper(3415) = 0
 ignorehitpause = 1
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34554]
 type = A
 physics = N
@@ -13707,7 +13707,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34244]
 type = A
 physics = N
@@ -13888,7 +13888,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34514]
 type = A
 physics = N
@@ -14069,7 +14069,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34254]
 type = A
 physics = N
@@ -14250,7 +14250,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34264]
 type = A
 physics = N
@@ -14437,7 +14437,7 @@ type = PlayerPush
 trigger1 = 1
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34534]
 type = A
 physics = N
@@ -14618,7 +14618,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34304]
 type = A
 physics = N
@@ -14799,7 +14799,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34204]
 type = A
 physics = N
@@ -14980,7 +14980,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34634]
 type = A
 physics = N
@@ -15161,7 +15161,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34334]
 type = A
 physics = N
@@ -15342,7 +15342,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<TENGU ISHI HELPER>=============================
+;TENGU ISHI HELPER=
 [Statedef 34324]
 type = A
 physics = N
@@ -15523,7 +15523,7 @@ type = PlayerPush
 trigger1 = time>=0
 value = 0
 
-;========================<SPARKS>=============================
+;SPARKS=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -16267,7 +16267,7 @@ trigger1 = Time >= 8
 
 
 
-;======================<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -16306,7 +16306,7 @@ trigger1 = Time >= 7
 
 
 
-;======================<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -16367,7 +16367,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;======================<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -16412,7 +16412,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;======================<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -16458,7 +16458,7 @@ trigger1 = !NumExplod
 
 
 
-;========================<RECOVER FX>=============================
+;RECOVER FX=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -16490,7 +16490,7 @@ trigger1 = Time >= 15
 
 
 
-;========================<COUNTER FX>=============================
+;COUNTER FX=
 [StateDef 8290]
 type = A
 physics = N
@@ -16536,7 +16536,7 @@ trigger1 = Time >= 16
 
 
 
-;==================<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -16644,7 +16644,7 @@ type = DestroySelf
 trigger1 = Root, StateNo != 730
 
 
-;==================<VIOLENT WIN VS VEGA PARTICLES>==================
+;VIOLENT WIN VS VEGA PARTICLES=
 [StateDef 8332]
 type = A
 physics = N
@@ -16681,7 +16681,7 @@ trigger1 = Root, StateNo != 187 || Root, AnimElemTime(60) >= 0
 
 
 
-;==================<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -16733,7 +16733,7 @@ trigger1 = Time >= 16
 
 
 
-;========================<CUSTOM COMBO>=============================
+;CUSTOM COMBO=
 [StateDef 8400]
 type = A
 physics = N
@@ -16839,7 +16839,7 @@ trigger1 = Time >= 26
 
 
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -17283,7 +17283,7 @@ trigger1 = Time >= 40
 
 
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -17449,7 +17449,7 @@ trigger1 = RoundState < 3
 
 
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL=
 [StateDef 8999]
 type = S
 velSet = 0,0

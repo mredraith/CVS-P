@@ -1,11 +1,11 @@
 ; ______________________________
 ;| Dan by Phantom.of.the.Server |
 ; 
-;============================================================================================
-;=====================================<SPECIAL STATES>=======================================
-;============================================================================================
+;
+;SPECIAL STATES==
+;
 
-;======================<GADOU KEN>=============================
+;GADOU KEN=
 [Statedef 1000]
 type = S
 physics = S
@@ -90,7 +90,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX GADOU KEN>=============================
+;EX GADOU KEN=
 [Statedef 1010]
 type = S
 physics = S
@@ -181,7 +181,7 @@ value = 0
 ctrl = 1
 
 
-;======================<KOURYUU KEN>=============================
+;KOURYUU KEN=
 [Statedef 1100]
 type = S
 physics = S
@@ -495,7 +495,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX KOURYUU KEN>=============================
+;EX KOURYUU KEN=
 [Statedef 1130]
 type = S
 physics = S
@@ -740,7 +740,7 @@ trigger1 = pos y > -vel y
 value = 1109
 
 
-;======================<EX TAUNT>=============================
+;EX TAUNT=
 [Statedef 2820]
 type = S
 physics = S
@@ -966,7 +966,7 @@ trigger1 = 1
 y = const(size.mid.pos.y)
 
 
-;======================<DANKUU KYAKU>=============================
+;DANKUU KYAKU=
 [Statedef 1200]
 type = S
 physics = S
@@ -1257,7 +1257,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX DANKUU KYAKU>=============================
+;EX DANKUU KYAKU=
 [Statedef 1220]
 type = S
 physics = S
@@ -1503,7 +1503,7 @@ trigger1 = pos y > -vel y
 value = 1203
 
 
-;======================<AIR DANKUU KYAKU>=============================
+;AIR DANKUU KYAKU=
 [Statedef 1250]
 type = A
 physics = N
@@ -1813,7 +1813,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX AIR DANKUU KYAKU>=============================
+;EX AIR DANKUU KYAKU=
 [Statedef 1270]
 type = A
 physics = N
@@ -1990,7 +1990,7 @@ trigger1 = pos y > -vel y
 value = 1203
 
 
-;======================<PREMIUM SIGN>=============================
+;PREMIUM SIGN=
 [Statedef 1300]
 type = S
 physics = S
@@ -2217,7 +2217,7 @@ trigger1 = !animtime || time >= 120
 value = ifelse(alive, 5120, 5150)
 
 
-;======================<EX PREMIUM SIGN>=============================
+;EX PREMIUM SIGN=
 [Statedef 1320]
 type = S
 physics = S
@@ -2363,7 +2363,7 @@ value = 0
 ctrl = 1
 
 
-;========================<DANRETSUKEN>=============================
+;DANRETSUKEN=
 [Statedef 1400]
 type = S
 physics = N
@@ -2580,7 +2580,7 @@ value = 0
 ctrl = 1
 
 
-;========================<EX DANRETSUKEN>=============================
+;EX DANRETSUKEN=
 [Statedef 1430]
 type = S
 physics = N
@@ -2844,7 +2844,7 @@ value = 0
 ctrl = 1
 
 
-;======================<SAIKYOU-RYUU BOUGYO>=============================
+;SAIKYOU-RYUU BOUGYO=
 ;----- STANDING -----
 [Statedef 1500]
 type = S
@@ -3024,7 +3024,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;======================<EX SAIKYOU-RYUU BOUGYO>=============================
+;EX SAIKYOU-RYUU BOUGYO=
 ;----- STANDING -----
 [Statedef 1510]
 type = S
@@ -3264,7 +3264,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;===========<CROUCHING TAUNT>==========
+;CROUCHING TAUNT=
 [Statedef 2801]
 type = C
 movetype = I
@@ -3301,7 +3301,7 @@ value = 11
 ctrl = 1
 
 
-;===========<AIR TAUNT>==========
+;AIR TAUNT=
 [Statedef 2802]
 type = A
 physics = N
@@ -3335,7 +3335,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;===========<ROLLING TAUNT>==========
+;ROLLING TAUNT=
 ;--- Forward ---
 [Statedef 2810]
 type = A
@@ -3508,7 +3508,7 @@ value = 0
 ctrl = 1
 
 
-;========================<PUNCH ZERO COUNTER>=============================
+;PUNCH ZERO COUNTER=
 [Statedef 2900]
 type = S
 physics = N
@@ -3598,7 +3598,7 @@ value = 0
 ctrl = 1
 
 
-;========================<KICK ZERO COUNTER>=============================
+;KICK ZERO COUNTER=
 [Statedef 2910]
 type = C
 physics = N

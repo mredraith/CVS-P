@@ -2,7 +2,7 @@
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;< HELPER STATES >==
+; HELPER STATES =
 ;
 ;CAMERA FOCUS
 [Statedef 6001]
@@ -62,7 +62,7 @@ type = destroyself
 trigger1 = Time = 50
 trigger1 = enemy, Life >= 1
 trigger2=numhelper(6001)>=2
-;<SPARKS>=
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -1442,7 +1442,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;< SUPERPAUSE FX >=
+; SUPERPAUSE FX >=
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A

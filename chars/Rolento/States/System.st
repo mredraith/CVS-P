@@ -3131,7 +3131,7 @@ ignoreHitPause = 1
 
 
 
-;WIN 1 (TARGET)>==
+;WIN 1 (TARGET)=
 [StateDef 10180]
 type = L
 moveType = H
@@ -3308,7 +3308,7 @@ var(10) = 10
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

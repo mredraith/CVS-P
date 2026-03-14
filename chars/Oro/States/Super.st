@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Oro by varo_hades                       |
 ; 
-;==============================================================================================
-;========================================<SUPER STATES>========================================
-;==============================================================================================
+;
+;SUPER STATES=
+;
 
-;========================<YAGYOU DAMA>=============================
+;YAGYOU DAMA=
 [StateDef 3000]
 type = S
 physics = N
@@ -305,7 +305,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<MAX YAGYOU DAMA>=============================
+;MAX YAGYOU DAMA=
 [StateDef 3050]
 type = S
 physics = N
@@ -605,7 +605,7 @@ trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
-;========================<YAGYOU OODAMA>=============================
+;YAGYOU OODAMA=
 [StateDef 3100]
 type = S
 physics = N
@@ -888,7 +888,7 @@ trigger1 = Vel Y > 0
 value = 1102
 ctrl = 0
 
-;========================<MAX YAGYOU OODAMA>=============================
+;MAX YAGYOU OODAMA=
 [StateDef 3150]
 type = S
 physics = N
@@ -1171,7 +1171,7 @@ trigger1 = Vel Y > 0
 value = 1102
 ctrl = 0
 
-;========================<KISHIN TSUI>=============================
+;KISHIN TSUI=
 [StateDef 3200]
 type = S
 physics = S
@@ -1807,7 +1807,7 @@ trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 ctrl = 1
 
-;========================<KISHIN RIKI>=============================
+;KISHIN RIKI=
 [StateDef 3300]
 type = S
 physics = N
@@ -2817,7 +2817,7 @@ trigger1 = animelem = 2
 value = -100
 kill = 1
 
-;========================<MAX KISHIN RIKI>=============================
+;MAX KISHIN RIKI=
 [StateDef 3350]
 type = S
 physics = N
@@ -2941,7 +2941,7 @@ trigger1 = time = 1
 value = 0
 ctrl = 1
 
-;========================<TENGU ISHI>=============================
+;TENGU ISHI=
 [StateDef 3400]
 type = A
 physics = N
@@ -3182,7 +3182,7 @@ trigger1 = time = 1
 value = 0
 ctrl = 1
 
-;========================<MAX TENGU ISHI>=============================
+;MAX TENGU ISHI=
 [StateDef 3450]
 type = A
 physics = N

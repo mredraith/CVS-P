@@ -2,10 +2,10 @@
 ;| Angel by KarmaCharmeleon			|
 ; 
 ;
-;<SPECIAL MOVES>===
+;SPECIAL MOVES==
 ;
 
-;<RED SKY OF YAPONESIA>=
+;RED SKY OF YAPONESIA>=
 [StateDef 1000]
 type = S
 physics = N
@@ -323,7 +323,7 @@ ctrl = 1
 
 
 
-;<RED SKY OF YAPONESIA (TARGET)>==
+;RED SKY OF YAPONESIA (TARGET)=
 ;Being Thrown
 [StateDef 1015]
 type = A
@@ -417,7 +417,7 @@ value = 5100
 
 
 
-;<EX RED SKY OF YAPONESIA>=
+;EX RED SKY OF YAPONESIA>=
 [StateDef 1030]
 type = S
 physics = N
@@ -759,7 +759,7 @@ ctrl = 1
 
 
 
-;<RED SKY OF YAPONESIA (TARGET)>==
+;RED SKY OF YAPONESIA (TARGET)=
 ;After Throw
 [StateDef 1046]
 type = A
@@ -812,7 +812,7 @@ value = 5100
 
 
  
-;<MAD MURDER ROULETTE>=
+;MAD MURDER ROULETTE>=
 ;Attempt
 [StateDef 1100]
 type = S
@@ -1069,7 +1069,7 @@ ctrl = 1
 
 
 
-;<MAD MURDER ROULETTE (TARGET)>==
+;MAD MURDER ROULETTE (TARGET)=
 ;Being Thrown
 [StateDef 1115]
 type = A
@@ -1152,7 +1152,7 @@ value = 5100
 
 
  
-;<EX MAD MURDER ROULETTE>=
+;EX MAD MURDER ROULETTE>=
 ;Attempt
 [StateDef 1130]
 type = S
@@ -1444,7 +1444,7 @@ ctrl = 1
 
 
 
-;<MAD MURDER ROULETTE (TARGET)>==
+;MAD MURDER ROULETTE (TARGET)=
 ;Being Thrown
 [StateDef 1145]
 type = A
@@ -1527,7 +1527,7 @@ value = 5100
 
 
 
-;<FORMALIST'S BLUE>=
+;FORMALIST'S BLUE>=
 [StateDef 2000]
 type = S
 physics = N
@@ -1736,7 +1736,7 @@ ctrl = 1
 
 
 
-;<CITIZENS OF THE WORLD>=
+;CITIZENS OF THE WORLD>=
 [StateDef 2010]
 type = S
 physics = N
@@ -1932,7 +1932,7 @@ ctrl = 1
 
 
 
-;<SENSELESS FISTS>=
+;SENSELESS FISTS>=
 [StateDef 2020]
 type = S
 physics = N
@@ -2229,7 +2229,7 @@ ctrl = 1
 
 
 
-;<REPPUN KAMUI>=
+;REPPUN KAMUI>=
 [StateDef 2030]
 type = S
 physics = N
@@ -2480,7 +2480,7 @@ ctrl = 1
 
 
 
-;<BEYOND FRAMES>=
+;BEYOND FRAMES>=
 [StateDef 2040]
 type = S
 physics = N
@@ -2905,7 +2905,7 @@ ctrl = 1
 
 
 
-;<BYE BYE ROUGE>=
+;BYE BYE ROUGE>=
 [StateDef 2100]
 type = S
 physics = N
@@ -3247,7 +3247,7 @@ ctrl = 1
 
 
 
-;<IMPOTENT SYMPTOM>=
+;IMPOTENT SYMPTOM>=
 [StateDef 2110]
 type = S
 physics = N
@@ -3712,7 +3712,7 @@ ctrl = 1
 
 
 
-;<BUGGY AND COFFIN>=
+;BUGGY AND COFFIN>=
 [StateDef 2120]
 type = S
 physics = N
@@ -4032,7 +4032,7 @@ ctrl = 1
 
 
 
-;<SHELTER FROM STORM>=
+;SHELTER FROM STORM>=
 [StateDef 2130]
 type = S
 physics = N
@@ -4326,7 +4326,7 @@ ctrl = 1
 
 
 
-;<TRAIN TO SEE CHERRY BLOSSOMS>=
+;TRAIN TO SEE CHERRY BLOSSOMS>=
 [StateDef 2140]
 type = C
 physics = N
@@ -4606,7 +4606,7 @@ ctrl = 1
 
 
 
-;<WITH A LAMP FOR PATHWAY>=
+;WITH A LAMP FOR PATHWAY>=
 [StateDef 2150]
 type = S
 physics = N
@@ -5054,7 +5054,7 @@ ctrl = 1
 
 
 
-;<CROWN UNDER SKY>=
+;CROWN UNDER SKY>=
 [StateDef 2200]
 type = S
 physics = N
@@ -5174,7 +5174,7 @@ ctrl = 1
 
 
 
-;<FULLMOON EVENING>=
+;FULLMOON EVENING>=
 [StateDef 2210]
 type = S
 physics = N
@@ -5285,7 +5285,7 @@ ctrl = 1
 
 
 
-;<STATE OF HEAT HAZE>=
+;STATE OF HEAT HAZE>=
 [StateDef 2220]
 type = S
 physics = N
@@ -5490,7 +5490,7 @@ ctrl = 1
 
 
 
-;<SLAMMED AGAINST THE GROUND>=
+;SLAMMED AGAINST THE GROUND>=
 ;Being Slammed (Standing)
 [StateDef 5420]
 type = U
@@ -5676,7 +5676,7 @@ value = 5421
 
 
 
-;<COSMIC FUTEN SWING>=
+;COSMIC FUTEN SWING>=
 [StateDef 2230]
 type = S
 physics = N
@@ -6025,7 +6025,7 @@ value = 5100
 
 
 
-;<LOST HOMELAND>=
+;LOST HOMELAND>=
 [StateDef 2250]
 type = S
 physics = N
@@ -6367,7 +6367,7 @@ value = 5100
 
 
 
-;<OMOGATOKI (NEUTRAL, UNUSED ATM)>=
+;OMOGATOKI (NEUTRAL, UNUSED ATM)>=
 [StateDef 2300]
 type = S
 physics = N
@@ -6508,7 +6508,7 @@ ctrl = 1
 
 
 
-;<OMOGATOKI (FORWARDS)>=
+;OMOGATOKI (FORWARDS)>=
 [StateDef 2310]
 type = S
 physics = N
@@ -6742,7 +6742,7 @@ ctrl = 1
 
 
 
-;<OMOGATOKI (BACKWARDS)>=
+;OMOGATOKI (BACKWARDS)>=
 [StateDef 2320]
 type = S
 physics = N
@@ -6933,7 +6933,7 @@ value = 2311
 
 
 
-;<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -7100,7 +7100,7 @@ ctrl = 1
 
 
 
-;<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

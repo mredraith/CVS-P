@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;REPPUKEN>==
+;REPPUKEN=
 [StateDef 1000]
 type = S
 physics = S
@@ -2026,7 +2026,7 @@ triggerall = Pos Y >= 0 && Vel Y > 0
 trigger1 = AnimElemTime(3) >= 2
 value = 1105
 
-;GOD PRESS>==
+;GOD PRESS=
 [StateDef 1200]
 type = S
 physics = N
@@ -3016,7 +3016,7 @@ Trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;KAISER WAVE>==
+;KAISER WAVE=
 [StateDef 1300]
 type = S
 physics = S
@@ -4047,7 +4047,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;DARK BARRIER>==
+;DARK BARRIER=
 [StateDef 1500]
 type = S
 physics = S
@@ -4668,7 +4668,7 @@ type = ChangeState
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 1601
 
-;RUGAL EXECUTION>==
+;RUGAL EXECUTION=
 [StateDef 1700]
 type = S
 movetype = I
@@ -4727,7 +4727,7 @@ trigger3 = var(10) = 2 && Time = 19
 value = 1701
 ctrl = 0
 
-;RUGAL EXECUTION>==
+;RUGAL EXECUTION=
 [Statedef 1701]
 type = S
 movetype = A
@@ -4813,7 +4813,7 @@ trigger4 = MoveGuarded
 value = 1711
 ctrl = 0
 
-;RUGAL EXECUTION>==
+;RUGAL EXECUTION=
 [Statedef 1711]
 type = S
 movetype = A
@@ -4843,7 +4843,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;RUGAL EXECUTION>==
+;RUGAL EXECUTION=
 [Statedef 1702]
 type = S
 movetype = A
@@ -4940,7 +4940,7 @@ trigger4 = var(10) = 3 && Time = 120
 value = 1703
 ctrl = 0
 
-;RUGAL EXECUTION>==
+;RUGAL EXECUTION=
 [Statedef 1703]
 type = S
 movetype = A
@@ -5034,7 +5034,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;RUGAL EXECUTION>==
+;RUGAL EXECUTION=
 [Statedef 1704]
 type = A
 movetype = H
@@ -5084,7 +5084,7 @@ type = CtrlSet
 trigger1 = 1
 value = 0
 
-;RUGAL EXECUTION>==
+;RUGAL EXECUTION=
 [Statedef 1705]
 type = A
 movetype = H
@@ -5129,7 +5129,7 @@ trigger1= vel y > 0
 trigger1= pos y > -vel y
 value = 5100
 
-;EX RUGAL EXECUTION>==
+;EX RUGAL EXECUTION=
 [StateDef 1730]
 type = S
 movetype = I
@@ -5209,7 +5209,7 @@ trigger1 = Time = 22
 value = 1701
 ctrl = 0
 
-;GOD LANE>==
+;GOD LANE=
 [Statedef 1800]
 type = S
 physics = N

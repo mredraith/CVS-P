@@ -2416,7 +2416,7 @@ trigger1 = pos y > -vel y
 value = 1101
 ctrl = 0
 
-;JAGUAR AVALANCHE>==
+;JAGUAR AVALANCHE=
 [Statedef 3200]
 type = S
 movetype = A

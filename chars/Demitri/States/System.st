@@ -2471,7 +2471,7 @@ type = PlayerPush
 trigger1 = Time >= 0
 value = 0
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I
@@ -2507,7 +2507,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;TAUNT 2>==
+;TAUNT 2=
 [Statedef 196]
 type = S
 ctrl = 0
@@ -2528,7 +2528,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;TAUNT 3>==
+;TAUNT 3=
 [Statedef 197]
 type = S
 ctrl = 0
@@ -2549,7 +2549,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;TAUNT 4>==
+;TAUNT 4=
 [Statedef 198]
 type = S
 ctrl = 0

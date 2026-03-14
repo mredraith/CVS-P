@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Dee Jay by varo_hades                   |
 ; 
-;===============================================================================
-;==============================<SUPER STATES>===================================
-;===============================================================================
+;
+;SUPER STATES=
+;
 
-;========================<CLIMAX BREAK>=============================
+;CLIMAX BREAK=
 [StateDef 3000]
 type = S
 physics = N
@@ -536,7 +536,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y > 10
 value = 5100 ;Hit ground
 
-;========================<MAX CLIMAX BREAK>=============================
+;MAX CLIMAX BREAK=
 [StateDef 3050]
 type = S
 physics = N
@@ -918,7 +918,7 @@ trigger4 = MoveGuarded
 value = 0
 ctrl = 1
 
-;========================<SOBAT CARNIVAL>=============================
+;SOBAT CARNIVAL=
 [StateDef 3100]
 type = S
 physics = N
@@ -1458,7 +1458,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;========================<MAX SOBAT CARNIVAL>=============================
+;MAX SOBAT CARNIVAL=
 [StateDef 3150]
 type = S
 physics = N
@@ -2206,7 +2206,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;========================<CLIMAX BEAT>=============================
+;CLIMAX BEAT=
 [StateDef 3200]
 type = S
 physics = S
@@ -3124,7 +3124,7 @@ type = SelfState
 trigger1 = (Vel Y > 0) && (Pos Y >= 0)
 value = 5100
 
-;========================<THEME OF SUNRISE>=============================
+;THEME OF SUNRISE=
 [StateDef 3300]
 type = S
 physics = N
@@ -3356,7 +3356,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y > 0
 value = 1302
 
-;========================<MAX THEME OF SUNRISE>=============================
+;MAX THEME OF SUNRISE=
 [StateDef 3350]
 type = S
 physics = N
@@ -3588,7 +3588,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y > 0
 value = 1302
 
-;========================<SOBAT FESTIVAL>=============================
+;SOBAT FESTIVAL=
 [StateDef 3400]
 type = S
 physics = N

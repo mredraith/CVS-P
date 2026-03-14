@@ -1,4 +1,4 @@
-;=====================<REPPUKEN>==========================
+;REPPUKEN=
 [StateDef 1000]
 type = S
 physics = S
@@ -188,7 +188,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX REPPUKEN>==========================
+;EX REPPUKEN=
 [StateDef 1030]
 type = S
 physics = N
@@ -338,7 +338,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<SHIPPUKEN>==========================
+;SHIPPUKEN=
 [StateDef 1100]
 type = A
 physics = N
@@ -469,7 +469,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX SHIPPUKEN>==========================
+;EX SHIPPUKEN=
 [StateDef 1130]
 type = A
 physics = N
@@ -576,7 +576,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1105
 
-;========================<GENOCIDE CUTTER>=======================
+;GENOCIDE CUTTER=
 [Statedef 1200]
 type = S
 movetype = A
@@ -1081,7 +1081,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1105
 
-;===================<EX GENOCIDE CUTTER>==================
+;EX GENOCIDE CUTTER=
 [Statedef 1230]
 type = S
 movetype = A
@@ -1381,7 +1381,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1105
 
-;========================<JOUDAN YASHA GAESHI>=======================
+;JOUDAN YASHA GAESHI=
 [Statedef 1300]
 type = S
 movetype = I
@@ -1532,7 +1532,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<SHORYUKEN COUNTER>=======================
+;SHORYUKEN COUNTER=
 [Statedef 1330]
 type = S
 movetype = I
@@ -1858,7 +1858,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<JAEIKEN>=======================
+;JAEIKEN=
 [Statedef 1400]
 type = S
 movetype = A
@@ -2311,7 +2311,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX JAEIKEN>=======================
+;EX JAEIKEN=
 [Statedef 1430]
 type = S
 movetype = A
@@ -2756,7 +2756,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<ELIZA KICK>=======================
+;ELIZA KICK=
 [Statedef 1500]
 type = S
 movetype = A
@@ -2990,7 +2990,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX ELIZA KICK>=======================
+;EX ELIZA KICK=
 [Statedef 1530]
 type = S
 movetype = A
@@ -3200,7 +3200,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1501
 
-;========================<CUSTOM STATES>=============================
+;CUSTOM STATES=
 ;Being Slammed
 [StateDef 1555]
 type = A
@@ -3314,7 +3314,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
 
-;========================<AIR ELIZA KICK>=======================
+;AIR ELIZA KICK=
 [Statedef 1600]
 type = A
 movetype = A
@@ -3514,7 +3514,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX AIR ELIZA KICK>=======================
+;EX AIR ELIZA KICK=
 [Statedef 1630]
 type = A
 movetype = A

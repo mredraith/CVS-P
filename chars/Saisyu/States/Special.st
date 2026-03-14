@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;108 SHIKI: YAMI BARAI>==
+;108 SHIKI: YAMI BARAI=
 [StateDef 1000]
 type = S
 physics = S
@@ -2209,7 +2209,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1301
 
-;427 SHIKI: KAMUKAKARI>==
+;427 SHIKI: KAMUKAKARI=
 [StateDef 1400]
 type = S
 physics = N
@@ -2448,7 +2448,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX 427 SHIKI: KAMUKAKARI>==
+;EX 427 SHIKI: KAMUKAKARI=
 [StateDef 1450]
 type = S
 physics = N

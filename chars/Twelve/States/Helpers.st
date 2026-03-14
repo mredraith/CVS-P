@@ -1,11 +1,11 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;=======================================< HELPER STATES >========================================
-;==============================================================================================
+;
+; HELPER STATES =
+;
 
-;========================<SPARKS>=============================
+;SPARKS=
 ;Invisible Timer
 [StateDef 197]
 type = A
@@ -25,7 +25,7 @@ trigger5 = time >= 215
 ignorehitpause = 1
 persistent = 1
 
-;===========<FRONT ARM FOR THROW>================
+;FRONT ARM FOR THROW=
 [Statedef 811]
 type    = S
 movetype= I
@@ -74,7 +74,7 @@ type = DestroySelf
 trigger1 = !animtime && anim != [855, 856]
 trigger2 = parent, stateno != [810, 855]
 
-;========================<N.D.L. Helper>=============================
+;N.D.L. Helper=
 [StateDef 1050]
 type = S
 physics = S
@@ -204,7 +204,7 @@ trigger1 = !animtime
 trigger2 = parent, animelemtime(6) < 0
 trigger3 = parent, movetype = H
 
-;========================<EX N.D.L. Helper>=============================
+;EX N.D.L. Helper=
 [StateDef 1060]
 type = S
 physics = S
@@ -379,7 +379,7 @@ trigger2 = parent, animelemtime(6) < 0
 trigger3 = parent, movetype = H
 
 
-;========================<X.N.D.L. Helper>=============================
+;X.N.D.L. Helper=
 [StateDef 3005]
 type = S
 physics = N
@@ -627,7 +627,7 @@ trigger1 = time >= 34
 trigger2 = var(2) >= var(3)
 
 
-;========================<SPARKS>=============================
+;SPARKS=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -2008,7 +2008,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;========================< SUPERPAUSE FX >=============================
+; SUPERPAUSE FX =
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A

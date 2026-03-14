@@ -223,7 +223,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<ZERO COUNTER>=
+;ZERO COUNTER>=
 [StateDef 710]
 type = S
 physics = S

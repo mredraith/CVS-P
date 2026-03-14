@@ -2657,7 +2657,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<ZERO COUNTER FX>=
+;ZERO COUNTER FX>=
 [StateDef 8350]
 type = A
 physics = N

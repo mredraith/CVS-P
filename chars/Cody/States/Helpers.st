@@ -1,11 +1,11 @@
 ; _______________________________________________
 ;|            Cody Travers by Trololo            |
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;
+;HELPER STATES=
+;
 
-;====================<PARRY HELPER>=========================
+;PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -117,7 +117,7 @@ trigger2 = Time >= 2
 
 
 
-;=====================<BAD STONE PROJECTILE>=========================
+;BAD STONE PROJECTILE=
 [StateDef 1005]
 type = S
 physics = N
@@ -626,7 +626,7 @@ trigger1 = pos y > -vel y
 value = 1014
 
 
-;=====================<EX BAD STONE PROJECTILE>=========================
+;EX BAD STONE PROJECTILE=
 [StateDef 1035]
 type = S
 physics = N
@@ -909,7 +909,7 @@ value = ifelse(var(3) < 2, 1035, 1007)
 
 
 
-;=====================<CRIMINAL UPPER PROJECTILE>=========================
+;CRIMINAL UPPER PROJECTILE=
 [StateDef 1105]
 type = S
 physics = N
@@ -1203,7 +1203,7 @@ trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
 
 
-;=====================<EX CRIMINAL UPPER PROJECTILE>=========================
+;EX CRIMINAL UPPER PROJECTILE=
 [StateDef 1135]
 type = S
 physics = N
@@ -1472,7 +1472,7 @@ trigger1 = Time >= 3
 value = ifElse(var(3) < 1, 1135, 1107)
 
 
-;=====================<BAD KNIFE PROJECTILE>=========================
+;BAD KNIFE PROJECTILE=
 [StateDef 1505]
 type = S
 physics = N
@@ -1707,7 +1707,7 @@ trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 15000
 
 
-;=====================<LAST DREAD DUST PROJECTILE>=========================
+;LAST DREAD DUST PROJECTILE=
 [StateDef 3205]
 type = S
 physics = N
@@ -1951,7 +1951,7 @@ trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
 
-;=====================<BARRELS>==========================
+;BARRELS=
 [Statedef 7300]
 ctrl = 0
 anim = 7300
@@ -2099,7 +2099,7 @@ type = DestroySelf
 trigger1 = time >= 32
 
 
-;========================<EDDIE.E>============================
+;EDDIE.E=
 [Statedef 7400]
 type = S
 movetype = I
@@ -2182,7 +2182,7 @@ triggerall = time > 0
 trigger1 = FrontEdgeDist <= -200
 
 
-;=====================<KNIFE PICKUP>==========================
+;KNIFE PICKUP=
 ;Knife is on the ground
 [Statedef 15000]
 type = L
@@ -2308,7 +2308,7 @@ trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 15000
 
 
-;========================<SPARKS>=============================
+;SPARKS=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -3296,7 +3296,7 @@ type = DestroySelf
 trigger1 = Time >= 8
 
 
-;======================<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -3334,7 +3334,7 @@ type = DestroySelf
 trigger1 = Time >= 7
 
 
-;======================<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -3395,7 +3395,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;======================<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -3440,7 +3440,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;======================<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -3485,7 +3485,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;========================<RECOVER FX>=============================
+;RECOVER FX=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -3516,7 +3516,7 @@ type = DestroySelf
 trigger1 = Time >= 15
 
 
-;========================<COUNTER FX>=============================
+;COUNTER FX=
 [StateDef 8290]
 type = A
 physics = N
@@ -3561,7 +3561,7 @@ type = DestroySelf
 trigger1 = Time >= 16
 
 
-;==================<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -3669,7 +3669,7 @@ type = DestroySelf
 trigger1 = Root, StateNo != 730
 
 
-;==================<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -3720,7 +3720,7 @@ type = DestroySelf
 trigger1 = Time >= 16
 
 
-;========================<CUSTOM COMBO>=============================
+;CUSTOM COMBO=
 [StateDef 8400]
 type = A
 physics = N
@@ -3825,7 +3825,7 @@ type = DestroySelf
 trigger1 = Time >= 26
 
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -4268,7 +4268,7 @@ type = DestroySelf
 trigger1 = Time >= 40
 
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -4423,7 +4423,7 @@ type = DestroySelf
 trigger1 = RoundState < 3
 
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL=
 [StateDef 8999]
 type = S
 velSet = 0,0

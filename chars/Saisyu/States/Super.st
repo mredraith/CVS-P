@@ -2329,7 +2329,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;HATSUGANE>==
+;HATSUGANE=
 [StateDef 3303]
 type = A
 physics = N
@@ -2659,7 +2659,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;HATSUGANE (TARGET)>==
+;HATSUGANE (TARGET)=
 ;Being Hit
 [StateDef 3304]
 type = A

@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;========================================<NORMAL MOVES>========================================
-;==============================================================================================
+;
+;NORMAL MOVES=
+;
 
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
@@ -2012,7 +2012,7 @@ type=changestate
 trigger1= pos y>-vel y
 value=52
 
-;===========<Throw Attempt>==========
+;Throw Attempt=
 [Statedef 800]
 type=S
 physics=S
@@ -2121,7 +2121,7 @@ trigger1= !animtime
 value=0
 ctrl=1
 
-;===========<KUNG FU THRUST>================
+;KUNG FU THRUST=
 [Statedef 810]
 type = S
 movetype = A
@@ -2377,7 +2377,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<>================
+;
 [Statedef 820]
 type = A
 movetype = H
@@ -2401,7 +2401,7 @@ type = ChangeAnim2
 Trigger1 = !Time
 value = 820
 
-;===========<>================
+;
 [Statedef 821]
 type    = A
 movetype= H
@@ -2453,7 +2453,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;===========<KUNG FU THRUST>================
+;KUNG FU THRUST=
 [Statedef 830]
 type = S
 movetype = A
@@ -2633,7 +2633,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<>================
+;
 [Statedef 840]
 type = A
 movetype = H
@@ -2657,7 +2657,7 @@ Trigger1 = 1
 value = 1
 movecamera = 0,0
 
-;===========<>================
+;
 [Statedef 841]
 type    = A
 movetype= H
@@ -2705,7 +2705,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;===========<KUNG FU THRUST>================
+;KUNG FU THRUST=
 [Statedef 850]
 type = S
 movetype = A
@@ -2995,7 +2995,7 @@ type = changestate
 trigger1 = pos y > -vel y
 value = 52
 
-;===========<>================
+;
 [Statedef 860]
 type = A
 movetype = H
@@ -3019,7 +3019,7 @@ type = ChangeAnim2
 Trigger1 = !Time
 value = 860
 
-;===========<>================
+;
 [Statedef 861]
 type = A
 movetype = H
@@ -3038,7 +3038,7 @@ type = ChangeAnim2
 Trigger1 = !Time
 value = 861
 
-;===========<>================
+;
 [Statedef 862]
 type = A
 movetype = I
@@ -3080,7 +3080,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;===========<>================
+;
 [Statedef 863]
 type = A
 movetype = I
@@ -3122,7 +3122,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 5100
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

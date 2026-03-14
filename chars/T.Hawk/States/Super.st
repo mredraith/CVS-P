@@ -1990,7 +1990,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 3105
 
-;RAGING SLASH>==
+;RAGING SLASH=
 [StateDef 3200]
 type = S
 physics = N

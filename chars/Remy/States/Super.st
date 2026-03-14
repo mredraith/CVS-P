@@ -2,7 +2,7 @@
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;<SUPER MOVES>==
+;SUPER MOVES=
 ;
 
 ;---------------------------------------------------------------------------
@@ -1628,7 +1628,7 @@ trigger1 = !animtime
 value = 3203
 
 
-;<SOMERSAULT KICK>=
+;SOMERSAULT KICK>=
 [StateDef 3203]
 type = S
 physics = N

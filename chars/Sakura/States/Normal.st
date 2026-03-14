@@ -5,7 +5,7 @@
 ; NORMAL STATES =
 ;
 
-; Stand Light Punch >==
+; Stand Light Punch =
 [Statedef 200]
 type = S
 movetype = A
@@ -77,7 +77,7 @@ value = 0
 ctrl = 1
 
 
-; Stand Medium Punch >==
+; Stand Medium Punch =
 [Statedef 205]
 type = S
 movetype = A
@@ -184,7 +184,7 @@ value = 0
 ctrl = 1
 
 
-; Stand Hard Punch >==
+; Stand Hard Punch =
 [Statedef 210]
 type = S
 movetype = A
@@ -327,7 +327,7 @@ value = 0
 ctrl = 1
 
 
-; Stand Light Kick >==
+; Stand Light Kick =
 [Statedef 215]
 type = S
 movetype = A
@@ -398,7 +398,7 @@ value = 0
 ctrl = 1
 
 
-; Stand Medium Kick >==
+; Stand Medium Kick =
 [Statedef 220]
 type = S
 movetype = A
@@ -505,7 +505,7 @@ value = 0
 ctrl = 1
 
 
-; Flower Kick >==
+; Flower Kick =
 [Statedef 222]
 type = S
 movetype = A
@@ -616,7 +616,7 @@ value = 0
 ctrl = 1
 
 
-; Stand Hard Kick >==
+; Stand Hard Kick =
 [Statedef 225]
 type = S
 movetype = A
@@ -724,7 +724,7 @@ value = 0
 ctrl = 1
 
 
-; Crouch Light Punch >==
+; Crouch Light Punch =
 [Statedef 230]
 type = C
 movetype = A
@@ -795,7 +795,7 @@ value = 11
 ctrl = 1
 
 
-; Crouch Medium Punch >==
+; Crouch Medium Punch =
 [Statedef 235]
 type = C
 movetype = A
@@ -902,7 +902,7 @@ value = 11
 ctrl = 1
 
 
-; Crouch Hard Punch >==
+; Crouch Hard Punch =
 [Statedef 240]
 type = C
 movetype = A
@@ -1009,7 +1009,7 @@ value = 11
 ctrl = 1
 
 
-; Crouch Light Kick >==
+; Crouch Light Kick =
 [Statedef 245]
 type = C
 movetype = A
@@ -1081,7 +1081,7 @@ value = 11
 ctrl = 1
 
 
-; Crouch Medium Kick >==
+; Crouch Medium Kick =
 [Statedef 250]
 type = C
 movetype = A
@@ -1152,7 +1152,7 @@ value = 11
 ctrl = 1
 
 
-; Crouch Hard Kick >==
+; Crouch Hard Kick =
 [Statedef 255]
 type = C
 movetype = A
@@ -1266,7 +1266,7 @@ value = 11
 ctrl = 1
 
 
-; Air Light Punch >==
+; Air Light Punch =
 [Statedef 260]
 type = A
 movetype = A
@@ -1334,7 +1334,7 @@ trigger1 = animelemtime(5) >= 0
 movetype = I
 
 
-; Air Medium Punch >==
+; Air Medium Punch =
 [Statedef 265]
 type = A
 movetype = A
@@ -1402,7 +1402,7 @@ trigger1 = animelemtime(3) >= 0
 movetype = I
 
 
-; Air Hard Punch >==
+; Air Hard Punch =
 [Statedef 270]
 type = A
 movetype = A
@@ -1510,7 +1510,7 @@ trigger1 = animelemtime(6) >= 0
 movetype = I
 
 
-; Air Light Kick >==
+; Air Light Kick =
 [Statedef 275]
 type = A
 movetype = A
@@ -1578,7 +1578,7 @@ trigger1 = animelemtime(5) >= 0
 movetype = I
 
 
-; Air Medium Kick >==
+; Air Medium Kick =
 [Statedef 280]
 type = A
 movetype = A
@@ -1646,7 +1646,7 @@ trigger1 = animelemtime(4) >= 0
 movetype = I
 
 
-; Air Hard Kick >==
+; Air Hard Kick =
 [Statedef 285]
 type = A
 movetype = A
@@ -1714,9 +1714,9 @@ movetype = I
 
 
 ;
-; THROWS >==
+; THROWS =
 ;
-; GROUND THROW CONTROLLER >==
+; GROUND THROW CONTROLLER =
 [Statedef 800]
 type = S
 movetype = A
@@ -1940,7 +1940,7 @@ value = ifelse(pos y < 0, 5040, 0)
 ctrl = 1
 
 
-; SAILOR SHOOT >==
+; SAILOR SHOOT =
 ;--- PLAYER ---
 [Statedef 810]
 type = A
@@ -2100,7 +2100,7 @@ trigger1 = 1
 value = 5020
 
 
-; SAKURA JIME >==
+; SAKURA JIME =
 ;--- PLAYER ---
 [Statedef 820]
 type = A
@@ -2756,7 +2756,7 @@ trigger1 = vel y > 0 && pos y >= 25
 value = 5100
 
 
-; RIVAL SCHOOLS THROW >==
+; RIVAL SCHOOLS THROW =
 ;--- PLAYER ---
 [Statedef 830]
 type = S
@@ -2945,7 +2945,7 @@ trigger1 = pos y >= 0
 value = 5100
 
 
-; SAILOR FLY >==
+; SAILOR FLY =
 ;--- ATTEMPT ---
 [Statedef 850]
 type = A
@@ -3136,7 +3136,7 @@ trigger1 = 1
 value = 5020
 
 
-; Target Escaped >==
+; Target Escaped =
 [Statedef 890]
 type = S
 physics = N

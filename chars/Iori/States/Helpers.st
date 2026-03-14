@@ -2859,7 +2859,7 @@ trigger1 = Time >= 16
 
 
 
-;POWER CHARGE FX>==
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -3002,7 +3002,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;ZERO COUNTER FX>==
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N

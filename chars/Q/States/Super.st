@@ -2,10 +2,10 @@
 ;| Q by KarmaCharmeleon			|
 ; 
 ;
-;<SUPER STATES>==
+;SUPER STATES=
 ;
 
-;<CRITICAL COMBO ATTACK>=
+;CRITICAL COMBO ATTACK>=
 [StateDef 3000]
 type = S
 physics = N
@@ -358,7 +358,7 @@ ctrl = 1
 
 
 
-;<HIT BY EX DASHING STRAIGHT>=
+;HIT BY EX DASHING STRAIGHT>=
 ;Being Launched
 [StateDef 3015]
 type = A
@@ -560,7 +560,7 @@ value = 5100
 
 
 
-;<MAX CRITICAL COMBO ATTACK>=
+;MAX CRITICAL COMBO ATTACK>=
 [StateDef 3050]
 type = S
 physics = N
@@ -931,7 +931,7 @@ ctrl = 1
 
 
 
-;<DEADLY DOUBLE COMBINATION>=
+;DEADLY DOUBLE COMBINATION>=
 [StateDef 3100]
 type = S
 physics = N
@@ -1364,7 +1364,7 @@ ctrl = 1
 
 
 
-;<HIT BY DEADLY DOUBLE COMBINATION>=
+;HIT BY DEADLY DOUBLE COMBINATION>=
 ;Target
 [StateDef 3115]
 type = S
@@ -1488,7 +1488,7 @@ value = 5100
 
 
 
-;<MAX DEADLY DOUBLE COMBINATION>=
+;MAX DEADLY DOUBLE COMBINATION>=
 [StateDef 3150]
 type = S
 physics = N
@@ -1938,7 +1938,7 @@ value = 0
 ctrl = 1
 
 
-;<TOTAL DESTRUCTION>=
+;TOTAL DESTRUCTION>=
 [StateDef 3200]
 type = S
 physics = N
@@ -2047,7 +2047,7 @@ ctrl = 1
 
 
 
-;<TOTAL DESTRUCTION: ACTIVATE>=
+;TOTAL DESTRUCTION: ACTIVATE>=
 [StateDef 3250]
 type = S
 physics = N
@@ -2335,7 +2335,7 @@ trigger1 = pos y > -vel y
 value = 5100
 
 
-;<TOTAL DESTRUCTION: ACTIVATE (TARGET)>==
+;TOTAL DESTRUCTION: ACTIVATE (TARGET)=
 ;Target
 [StateDef 3265]
 type = S
@@ -2409,7 +2409,7 @@ value = 5100
 
 
 
-;<TOTAL DESTRUCTION: DANGER>=
+;TOTAL DESTRUCTION: DANGER>=
 ;Attempt
 [StateDef 3270]
 type = S
@@ -2770,7 +2770,7 @@ trigger1 = pos y > -vel y
 value = 5100
 
 
-;<TOTAL DESTRUCTION: DANGER (TARGET)>==
+;TOTAL DESTRUCTION: DANGER (TARGET)=
 ;Target
 [StateDef 3285]
 type = S
@@ -2883,7 +2883,7 @@ value = 52
 
 
 
-;<AUTOMATED MAULING>=
+;AUTOMATED MAULING>=
 [Statedef 3300]
 type = S
 physics = S
@@ -3325,7 +3325,7 @@ ctrl = 1
 
 
 
-;<HIT BY AUTOMATED MAULING>=
+;HIT BY AUTOMATED MAULING>=
 ;Target
 [StateDef 3315]
 type = S

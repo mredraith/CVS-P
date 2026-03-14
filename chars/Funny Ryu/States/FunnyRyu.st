@@ -5,7 +5,7 @@
 ; MODE STATES 
 ;
 
-; Funny Ryu >==
+; Funny Ryu =
 [Statedef 5900]
 type = S
 [State 5900, varreset]

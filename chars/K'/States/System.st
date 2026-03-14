@@ -2698,7 +2698,7 @@ value = 181,0 + (Random % 2)
 channel = 0
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

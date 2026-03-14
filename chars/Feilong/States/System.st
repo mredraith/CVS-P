@@ -2731,7 +2731,7 @@ trigger1 = AnimElem = 7
 value = 1,10
 channel = 2
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I
@@ -2759,7 +2759,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;TAUNT 3>==
+;TAUNT 3=
 [StateDef 196]
 type = S
 moveType = I

@@ -4472,7 +4472,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-; Target Escaped >==
+; Target Escaped =
 [Statedef 890]
 type = S
 physics = N

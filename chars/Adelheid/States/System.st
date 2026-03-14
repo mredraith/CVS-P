@@ -1,4 +1,4 @@
-;<SYSTEM>=
+;SYSTEM>=
 
 ; STANDING
 [StateDef 0]
@@ -38,7 +38,7 @@ trigger3 = (Enemy(0), Name = "M -NES Game 1" + Enemy(0), Name = "M -NES Game 2" 
 trigger3 = (Enemy(1), Name = "M -NES Game 1" + Enemy(1), Name = "M -NES Game 2" + Enemy(1), Name = "M -GB Game 1" + Enemy(1), AuthorName = "Bane84") < 2
 value = 50
 
-;<CROUCHING>=
+;CROUCHING>=
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -137,7 +137,7 @@ trigger1 = Anim != 21 && Anim != 5
 trigger2 = Anim = 5 && AnimElemTime(1) >= 1
 value = 21
 
-;<JUMPING>=
+;JUMPING>=
 ;Jumping
 [StateDef 40]
 type = S
@@ -983,7 +983,7 @@ trigger1 = var(40) = 1
 trigger1 = Time >= 15
 value = 1100
 
-;<PARRY>=
+;PARRY>=
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1617,7 +1617,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 52
 
-;<GUARD>=
+;GUARD>=
 ;Guard Start
 [StateDef 120]
 type = U
@@ -2077,7 +2077,7 @@ type = ChangeState
 trigger1 = sysvar(0)
 value = 52
 
-;<LOSE>=
+;LOSE>=
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2089,7 +2089,7 @@ type = AssertSpecial
 trigger1 = Time < 400
 flag = RoundNotOver
 
-;<DRAW GAME>=
+;DRAW GAME>=
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2100,7 +2100,7 @@ type = ChangeState
 trigger1 = !Time
 value = 170
 
-;<CONTINUE?>=
+;CONTINUE?>=
 [StateDef 5500]
 type = S
 anim = 5300
@@ -2112,7 +2112,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = 5300
 
-;<INITIALIZE>=
+;INITIALIZE>=
 [StateDef 5901]
 type = S
 
@@ -2132,7 +2132,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;<INTRO 1>=
+;INTRO 1>=
 [StateDef 190]
 type = S
 physics = S
@@ -2370,7 +2370,7 @@ type = DestroySelf
 triggerall = time > 1
 trigger1 = pos x != [-300,300]
 
-;<OROCHI SKULL & PILLAR>=
+;OROCHI SKULL & PILLAR>=
 [Statedef 6191]
 type = S
 physics = S
@@ -2497,7 +2497,7 @@ ID = 6210
 type = destroyself
 trigger1 = time = 17
 
-;<FLOOR FX>==
+;FLOOR FX=
 [Statedef 7060]
 type = S
 physics = S
@@ -2534,7 +2534,7 @@ alpha = 256-(time*10),256
 type = destroyself
 trigger1 = time = 17
 
-;<Floor FX>==
+;Floor FX=
 [Statedef 7061]
 type = S
 physics = S
@@ -2580,7 +2580,7 @@ trigger1 = !Time
 value = 1700,2
 persistent = 0
 
-;<TURNS INTRO>=
+;TURNS INTRO>=
 [StateDef 6900]
 type = A
 anim = 42
@@ -2669,7 +2669,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;<WIN POSE DECIDER>=
+;WIN POSE DECIDER>=
 [StateDef 180]
 type = S
 
@@ -2693,7 +2693,7 @@ type = ChangeState
 trigger1 = !Time
 value = 184 + (Random%3)
 
-;<WIN 1>=
+;WIN 1>=
 [StateDef 181]
 type = S
 physics = S
@@ -2722,7 +2722,7 @@ type = PlaySnd
 trigger1 = AnimElem = 4
 value = 0,0
 
-;<WIN 2>=
+;WIN 2>=
 [StateDef 182]
 type = S
 physics = S
@@ -2751,7 +2751,7 @@ type = PlaySnd
 trigger1 = AnimElem = 4
 value = 0,0
 
-;<WIN 3>=
+;WIN 3>=
 [StateDef 183]
 type = S
 physics = S
@@ -2780,7 +2780,7 @@ type = PlaySnd
 trigger1 = AnimElem = 4
 value = 0,0
 
-;<G End P2 State 1>==
+;G End P2 State 1=
 [Statedef 111185]
 type = A
 movetype = H
@@ -2900,7 +2900,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;<CHEAP K.O.>= (Shiva code)
+;CHEAP K.O.>= (Shiva code)
 ;[StateDef 5950]
 ;type = A
 ;movetype = H
@@ -2938,7 +2938,7 @@ value = ifElse(Alive, 5110, 5150)
 ;trigger4 = Anim != 5035
 ;value = 5050
 
-;<AIR HIT TRANSITION>=
+;AIR HIT TRANSITION>=
 [Statedef 5035]
 type = A
 movetype = H
@@ -2977,7 +2977,7 @@ trigger4 = Anim != 5035
 value = 5050
 
 ;
-;<-2 STATES>=
+;-2 STATES>=
 ;
 [StateDef -2]
 
@@ -3360,7 +3360,7 @@ ownPal = 1
 ignorehitpause = 1
 
 ;
-;<-3 STATES>=
+;-3 STATES>=
 ;
 [StateDef -3]
 

@@ -1,11 +1,11 @@
 ; ______________________________
 ;| Dan by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;========================================<SUPER STATES>========================================
-;==============================================================================================
+;
+;SUPER STATES=
+;
 
-;======================<SHINKUU GADOU KEN>=============================
+;SHINKUU GADOU KEN=
 [Statedef 3000]
 type = S
 physics = S
@@ -139,7 +139,7 @@ value = 0
 ctrl = 1
 
 
-;======================<KOURYUU REKKA>=============================
+;KOURYUU REKKA=
 [Statedef 3100]
 type = S
 physics = N
@@ -612,7 +612,7 @@ value = 0
 ctrl = 1
 
 
-;======================<HISHOU BURAIKEN>=============================
+;HISHOU BURAIKEN=
 [Statedef 3200]
 type = S
 physics = N
@@ -1192,7 +1192,7 @@ value = 0
 ctrl = 1
 
 
-;======================<CHOUHATSU DENSETSU>=============================
+;CHOUHATSU DENSETSU=
 [Statedef 3300]
 type = S
 physics = S
@@ -1932,7 +1932,7 @@ value = 0
 ctrl = 1
 
 
-;======================<GADOU SHOUKOU KEN>=============================
+;GADOU SHOUKOU KEN=
 [Statedef 3400]
 type = S
 physics = S
@@ -2145,7 +2145,7 @@ value = 0
 ctrl = 1
 
 
-;========================<ZUKI>=============================
+;ZUKI=
 [Statedef 3500]
 type = S
 physics = N
@@ -2728,7 +2728,7 @@ trigger1 = !animtime
 value = 5110
 
 
-;======================<OTOKO MICHI>=============================
+;OTOKO MICHI=
 [Statedef 4000]
 type = S
 physics = N
@@ -3392,7 +3392,7 @@ trigger1 = 1
 value = 5020
 
 
-;=================<CHOUHATSU SHINWA>===================
+;CHOUHATSU SHINWA==
 [Statedef 4100]
 type = S
 physics = S

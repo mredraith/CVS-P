@@ -1,8 +1,8 @@
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;
+;HELPER STATES=
+;
 
-;====================<FLAME PILLAR>====================
+;FLAME PILLAR=
 [StateDef 10186]
 anim = 10186
 sprpriority = 5
@@ -15,7 +15,7 @@ trans = AddAlpha
 alpha = 256, 256
 ignorehitpause = 1
 
-;====================<TRANSFORM>====================
+;TRANSFORM=
 [StateDef 10190]
 anim = 10190
 sprpriority = 3
@@ -37,7 +37,7 @@ ignorehitpause = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;====================<SUIT>====================
+;SUIT=
 [StateDef 10191]
 anim = 10191
 ctrl = 0
@@ -52,7 +52,7 @@ channel = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;====================<PARRY HELPER>=========================
+;PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -162,7 +162,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;=====================<METALLIC SPHERE PROJECTILE>=========================
+;METALLIC SPHERE PROJECTILE=
 [StateDef 1005]
 type = S
 physics = N
@@ -553,7 +553,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;=====================<STATIC CHARGE>=========================
+;STATIC CHARGE=
 [StateDef 1010]
 type = A
 physics = N
@@ -587,7 +587,7 @@ lowPriority = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;=====================<EX METALLIC SPHERE PROJECTILE>=========================
+;EX METALLIC SPHERE PROJECTILE=
 [StateDef 1055]
 type = S
 physics = N
@@ -844,7 +844,7 @@ trigger1 = Time >= 3 && var(14) > 1
 trigger2 = Time >= 0 && var(14) <= 1
 value = ifElse(var(14) <= 1, 1007, 1055)
 
-;========================<TEMPORAL THUNDER PROJECTILE>=============================
+;TEMPORAL THUNDER PROJECTILE=
 [Statedef 3005]
 type = S
 physics = N
@@ -1140,7 +1140,7 @@ ignorehitpause = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;========================<TEMPORAL THUNDER PROJECTILE>=============================
+;TEMPORAL THUNDER PROJECTILE=
 [Statedef 3055]
 type = S
 physics = N
@@ -1289,7 +1289,7 @@ ignorehitpause = 1
 type = DestroySelf
 trigger1 = Pos X != [-240,240]
 
-;========================<AEGIS REFLECTOR PROJECTILE>=============================
+;AEGIS REFLECTOR PROJECTILE=
 ;Fade Out
 [Statedef 3207]
 type = A
@@ -3009,7 +3009,7 @@ type = ChangeState
 trigger1 = Time >= 0
 value = 3232
 
-;========================<VESUVIAN BURNOUT (FLAME PILLAR)>=============================
+;VESUVIAN BURNOUT (FLAME PILLAR)=
 [Statedef 3305]
 type = S
 physics = N
@@ -3395,7 +3395,7 @@ trigger1 = root, movetype = H
 trigger2 = root, stateno != 3300
 trigger3 = root, stateno = 3300 && root, animelemtime(16) >= 0
 
-;========================<SPARKS>=============================
+;SPARKS=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -4136,7 +4136,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;======================<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -4173,7 +4173,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;======================<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -4233,7 +4233,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -4277,7 +4277,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -4321,7 +4321,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;========================<FLAMES>=============================
+;FLAMES=
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -4389,7 +4389,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;========================<STATIC>=============================
+;STATIC=
 [Statedef 8155]
 type = A
 velset = 0, 0
@@ -4450,7 +4450,7 @@ trigger1 = playerID(var(0)), ctrl
 trigger2 = playerID(var(0)), movetype != H || playerID(var(0)), stateno = 5300
 trigger3 = playerID(var(0)), statetype = L && (playerID(var(0)), stateno != [5080, 5081])
 
-;========================<STATIC (PALETTE APPLIED)>=============================
+;STATIC (PALETTE APPLIED)=
 [Statedef 8156]
 type = A
 velset = 0, 0
@@ -4512,7 +4512,7 @@ trigger1 = playerID(var(0)), ctrl
 trigger2 = playerID(var(0)), movetype != H || playerID(var(0)), stateno = 5300
 trigger3 = playerID(var(0)), statetype = L && (playerID(var(0)), stateno != [5080, 5081])
 
-;========================<STATIC (AEGIS REFLECTOR)>=============================
+;STATIC (AEGIS REFLECTOR)=
 [Statedef 8157]
 type = A
 velset = 0, 0
@@ -4574,7 +4574,7 @@ trigger1 = playerID(var(0)), ctrl
 trigger2 = playerID(var(0)), movetype != H || playerID(var(0)), stateno = 5300
 trigger3 = playerID(var(0)), statetype = L && (playerID(var(0)), stateno != [5080, 5081])
 
-;========================<RECOVER FX>=============================
+;RECOVER FX=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -4604,7 +4604,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 15
 
-;========================<COUNTER FX>=============================
+;COUNTER FX=
 [StateDef 8290]
 type = A
 physics = N
@@ -4648,7 +4648,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;==================<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -4755,7 +4755,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;==================<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -4805,7 +4805,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<CUSTOM COMBO>=============================
+;CUSTOM COMBO=
 [StateDef 8400]
 type = A
 physics = N
@@ -4909,7 +4909,7 @@ trigger1 = Time >= 26
 type = DestroySelf
 trigger1 = Time >= 26
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -5325,7 +5325,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -5484,7 +5484,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL=
 [StateDef 8999]
 type = S
 velSet = 0,0

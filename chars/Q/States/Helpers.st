@@ -2,10 +2,10 @@
 ;| Q by KarmaCharmeleon			|
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;<HELPER STATES>==
+;HELPER STATES=
 ;
 
-;<PARRY HELPER>==
+;PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -141,7 +141,7 @@ trigger2 = Time >= 2
 
 
 
-;<SPARKS>=
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -1131,7 +1131,7 @@ trigger1 = Time >= 8
 
 
 
-;<JUMP DUST>==
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -1170,7 +1170,7 @@ trigger1 = Time >= 7
 
 
 
-;<DASH DUST>==
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -1232,7 +1232,7 @@ trigger1 = !NumExplod
 
 
 
-;<IMPACT DUST>==
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -1278,7 +1278,7 @@ trigger1 = !NumExplod
 
 
 
-;<FLAMES>=
+;FLAMES>=
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -1365,7 +1365,7 @@ ownpal = 1
 
 
 
-;<FLAMES (SELF INFLICTED)>=
+;FLAMES (SELF INFLICTED)>=
 [StateDef 8155]
 type = A
 velSet = 0,0
@@ -1451,7 +1451,7 @@ scale = 0.5,0.5
 ownpal = 1
 
 
-;<RECOVER FX>=
+;RECOVER FX>=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -1483,7 +1483,7 @@ trigger1 = Time >= 15
 
 
 
-;<COUNTER FX>=
+;COUNTER FX>=
 [StateDef 8290]
 type = A
 physics = N
@@ -1529,7 +1529,7 @@ trigger1 = Time >= 16
 
 
 
-;<POWER CHARGE FX>=
+;POWER CHARGE FX>=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -1638,7 +1638,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;<ZERO COUNTER FX>=
+;ZERO COUNTER FX>=
 [StateDef 8350]
 type = A
 physics = N
@@ -1690,7 +1690,7 @@ trigger1 = Time >= 16
 
 
 
-;<CUSTOM COMBO>=
+;CUSTOM COMBO>=
 [StateDef 8400]
 type = A
 physics = N
@@ -1796,7 +1796,7 @@ trigger1 = Time >= 26
 
 
 
-;<SUPER PAUSE FX>=
+;SUPER PAUSE FX>=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -2240,7 +2240,7 @@ trigger1 = Time >= 40
 
 
 
-;<SUPER FINISH>=
+;SUPER FINISH>=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -2411,7 +2411,7 @@ trigger1 = RoundState < 3
 
 
 
-;<CAMERA CONTROL>=
+;CAMERA CONTROL>=
 [StateDef 8999]
 type = S
 velSet = 0,0
@@ -2430,7 +2430,7 @@ trigger1 = RoundState = 2
 
 
 
-;<LEG HELPER HELPER (WIN 2)>==
+;LEG HELPER HELPER (WIN 2)=
 [Statedef 10184]
 type = S
 physics = N
@@ -2445,7 +2445,7 @@ trigger1 = Root, StateNo != 184
 
 
 
-;<VICTIM 1 HELPER (INTRO)>==
+;VICTIM 1 HELPER (INTRO)=
 [Statedef 10190]
 type = S
 physics = N
@@ -2476,7 +2476,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;<VICTIM 2 HELPER (INTRO)>==
+;VICTIM 2 HELPER (INTRO)=
 [Statedef 11190]
 type = S
 physics = N
@@ -2507,7 +2507,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;<VICTIM 3 HELPER (INTRO)>==
+;VICTIM 3 HELPER (INTRO)=
 [Statedef 12190]
 type = S
 physics = N
@@ -2538,7 +2538,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;<VICTIM 4 HELPER (INTRO)>==
+;VICTIM 4 HELPER (INTRO)=
 [Statedef 13190]
 type = S
 physics = N
@@ -2569,7 +2569,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;<SUPER ARMOR>==
+;SUPER ARMOR=
 [StateDef 13200]
 type = S
 physics = N
@@ -2678,7 +2678,7 @@ trigger2 = var(0) < 0
 
 
 
-;<EXPLODSIVE BUFFERING HELPER>=
+;EXPLODSIVE BUFFERING HELPER>=
 [StateDef 90000005]
 type = A
 physics = N

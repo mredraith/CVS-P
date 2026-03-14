@@ -2428,7 +2428,7 @@ trigger4 = !time
 trigger4 = anim != 5035
 value = 5050
 
-;FORCED P2 RECOVERY>==
+;FORCED P2 RECOVERY=
 [StateDef 5025]
 type = A
 moveType = H

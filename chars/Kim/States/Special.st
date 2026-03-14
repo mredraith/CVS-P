@@ -1489,7 +1489,7 @@ ctrl = 1
 
 
 
-;HIENZAN>==
+;HIENZAN=
 [StateDef 1200]
 type = S
 physics = N
@@ -2206,7 +2206,7 @@ value = 1201
 
 
 
-;KUSAJIN>==
+;KUSAJIN=
 [StateDef 1300]
 type = S
 physics = N
@@ -3446,7 +3446,7 @@ value = 1401
 
 
 
-;HAKIKYAKU>==
+;HAKIKYAKU=
 [StateDef 1500]
 type = S
 physics = N

@@ -1,4 +1,4 @@
-;====================<VARIABLE LIST>====================
+;VARIABLE LIST=
 ;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
 ;var(4)  : Custom Combo (0 = Off; 1 = On)
 
@@ -46,7 +46,7 @@
 ;|            Cody Travers by Trololo            |
 ; 
 
-;====================<CONSTANTS>====================
+;CONSTANTS=
 [Data]
 life = 1000
 attack = 100

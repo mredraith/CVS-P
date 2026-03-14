@@ -117,7 +117,7 @@ trigger2 = Time >= 2
 
 
 
-;OUGI: SENPUU RETSU ZAN (PROJECTILE)>==
+;OUGI: SENPUU RETSU ZAN (PROJECTILE)=
 [StateDef 1005]
 type = S
 physics = N
@@ -664,7 +664,7 @@ trigger1 = Time >= 12
 
 
 
-;SAKE KOGEKI (PROJECTILE BARRIER)>==
+;SAKE KOGEKI (PROJECTILE BARRIER)=
 ;LK, MK, HK
 [StateDef 1305]
 type = A
@@ -765,7 +765,7 @@ trigger3 = root, StateNo = 1330 && root, AnimElemTime(8)>=0
 
 
 
-;AERIAL OUGI: SENPUU RETSU ZAN (PROJECTILE)>==
+;AERIAL OUGI: SENPUU RETSU ZAN (PROJECTILE)=
 [StateDef 1505]
 type = A
 physics = N
@@ -1066,7 +1066,7 @@ trigger1 = Time >= 0
 value = 1007
 
 
-;SENPUU HA (PROJECTILE)>==
+;SENPUU HA (PROJECTILE)=
 [StateDef 1805]
 type = S
 moveType = A
@@ -2733,7 +2733,7 @@ trigger1 = Time >= 16
 
 
 
-;POWER CHARGE FX>==
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -2842,7 +2842,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;ZERO COUNTER FX>==
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N

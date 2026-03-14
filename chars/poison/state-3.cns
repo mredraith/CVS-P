@@ -118,7 +118,7 @@ facing = facing;1
 removetime = 1
 scale= const(size.xscale),const(size.yscale)
 
-;=======================================================
+;
 ; Põe um símbolo no P2 (O)- mvsc2 screenpack
 [State -3]
 type = Explod
@@ -202,9 +202,9 @@ facing = facing;1
 removetime = 1
 scale= const(size.xscale),const(size.yscale)
 
-;=======================================================
+;
 ;contador de projéteis ou helpers inimigos
-;=======================================================
+;
 [State -3]
 type = Varset
 trigger1 = roundstate = 1

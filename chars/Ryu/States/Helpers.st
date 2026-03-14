@@ -938,7 +938,7 @@ persistent = 0
 type = destroyself
 trigger1 = !animtime
 
-;EX SHAKUNETSU HADOUKEN>==
+;EX SHAKUNETSU HADOUKEN=
 [Statedef 1035]
 type = S
 physics = N

@@ -2,10 +2,10 @@
 ;| Decapre by varo_hades                   |
 ; 
 ;
-;<SUPER STATES>==
+;SUPER STATES=
 ;
 
-;<STRAFE DAGGER>=
+;STRAFE DAGGER>=
 [StateDef 3000]
 type = S
 physics = N
@@ -315,7 +315,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<MAX STRAFE DAGGER>=
+;MAX STRAFE DAGGER>=
 [StateDef 3050]
 type = S
 physics = N
@@ -566,7 +566,7 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 3005
 
-;<PSYCHO STREAM>=
+;PSYCHO STREAM>=
 [StateDef 3100]
 type = S
 physics = S
@@ -695,7 +695,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<MAX PSYCHO STREAM>=
+;MAX PSYCHO STREAM>=
 [StateDef 3150]
 type = S
 physics = S
@@ -824,7 +824,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;<DCM>=
+;DCM>=
 [StateDef 3200]
 type = S
 physics = N
@@ -2237,7 +2237,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100
 
-;<DCM>=
+;DCM>=
 [StateDef 3300]
 type = S
 physics = N

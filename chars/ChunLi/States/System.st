@@ -3511,7 +3511,7 @@ ownPal = 1
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

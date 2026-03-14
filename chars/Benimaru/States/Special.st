@@ -728,7 +728,7 @@ ctrl = 1
 
 
 
-;IAIGERI>==
+;IAIGERI=
 [StateDef 1200]
 type = S
 physics = N
@@ -869,7 +869,7 @@ ctrl = 1
 
 
 
-;HANDO SANDANGERI>==
+;HANDO SANDANGERI=
 [StateDef 1201]
 type = S
 physics = N
@@ -1317,7 +1317,7 @@ ctrl = 1
 
 
 
-;EX HANDO SANDANGERI>==
+;EX HANDO SANDANGERI=
 [StateDef 1231]
 type = S
 physics = N
@@ -1668,7 +1668,7 @@ value = 1301
 
 
 
-;SUPER INAZUMA KICK>==
+;SUPER INAZUMA KICK=
 [StateDef 1300]
 type = S
 physics = N
@@ -3100,7 +3100,7 @@ ctrl = 1
 
 
 
-;BENIMARU COLLIDER (TARGET)>==
+;BENIMARU COLLIDER (TARGET)=
 ;Being Thrown
 [StateDef 1515]
 type = A
@@ -3482,7 +3482,7 @@ ctrl = 1
 
 
 
-;EX BENIMARU COLLIDER (TARGET)>==
+;EX BENIMARU COLLIDER (TARGET)=
 ;Being Thrown
 [StateDef 1545]
 type = A

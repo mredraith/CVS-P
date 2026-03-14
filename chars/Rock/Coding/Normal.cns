@@ -2335,7 +2335,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==================<THROW ATTEMPT>==================
+;THROW ATTEMPT=
 [Statedef 800]
 type    = S
 movetype= A
@@ -2422,7 +2422,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -2493,7 +2493,7 @@ type = ChangeState
 trigger1 = AnimElemTime(4) > 0
 value = ifElse(var(10), 830, 810)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -2524,7 +2524,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;===========<KOKUSEN>================
+;KOKUSEN=
 [Statedef 810]
 type = S
 movetype = A
@@ -2708,7 +2708,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<KOKUSEN (TARGET)>================
+;KOKUSEN (TARGET)=
 [Statedef 820]
 type = A
 movetype = H
@@ -2750,7 +2750,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<KOKUSEN (SLAMMED AWAY)>================
+;KOKUSEN (SLAMMED AWAY)=
 [Statedef 821]
 type = A
 physics = N
@@ -2802,7 +2802,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;===========<GLOVING UPPER>================
+;GLOVING UPPER=
 [Statedef 830]
 type = S
 movetype = A
@@ -2972,7 +2972,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<GLOVING UPPER (TARGET)>================
+;GLOVING UPPER (TARGET)=
 [Statedef 840]
 type = A
 movetype = H
@@ -3010,7 +3010,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;===========<GLOVING UPPER (HIT AWAY)>================
+;GLOVING UPPER (HIT AWAY)=
 [Statedef 841]
 type = A
 physics = N
@@ -3065,7 +3065,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

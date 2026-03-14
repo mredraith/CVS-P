@@ -1,5 +1,5 @@
 ;
-;SPECIAL MOVES===
+;SPECIAL MOVES=
 ;
 
 ;METALLIC SPHERE
@@ -238,7 +238,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===EX METALLIC SPHERE===
+;EX METALLIC SPHERE=
 [StateDef 1050]
 type = S
 physics = N
@@ -326,7 +326,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===CHARIOT TACKLE===
+;CHARIOT TACKLE=
 [StateDef 1100]
 type = S
 physics = N
@@ -467,7 +467,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===EX CHARIOT TACKLE===
+;EX CHARIOT TACKLE=
 [StateDef 1150]
 type = S
 physics = N
@@ -708,7 +708,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===DANGEROUS HEADBUTT===
+;DANGEROUS HEADBUTT=
 [Statedef 1200]
 type = S
 physics = N
@@ -835,7 +835,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1205
 
-;===DANGEROUS HEADBUTT LANDING===
+;DANGEROUS HEADBUTT LANDING=
 [Statedef 1205]
 type = S
 physics = S
@@ -873,7 +873,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;===EX DANGEROUS HEADBUTT===
+;EX DANGEROUS HEADBUTT=
 [Statedef 1250]
 type = S
 physics = N
@@ -1100,7 +1100,7 @@ type = ChangeState
 trigger1 = Pos Y > -Vel Y
 value = 1205
 
-;===VIOLENCE KNEE DROP===
+;VIOLENCE KNEE DROP=
 [Statedef 1300]
 type = A
 physics = N
@@ -1233,7 +1233,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;===VIOLENCE KNEE DROP HIT===
+;VIOLENCE KNEE DROP HIT=
 [Statedef 1301]
 type = A
 physics = N
@@ -1264,7 +1264,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;===VIOLENCE KNEE DROP LANDING===
+;VIOLENCE KNEE DROP LANDING=
 [Statedef 1305]
 type = S
 physics = S
@@ -1302,7 +1302,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;===EX VIOLENCE KNEE DROP===
+;EX VIOLENCE KNEE DROP=
 [Statedef 1350]
 type = A
 physics = N
@@ -1452,7 +1452,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;===EX VIOLENCE KNEE DROP HIT===
+;EX VIOLENCE KNEE DROP HIT=
 [Statedef 1351]
 type = A
 physics = N
@@ -1517,7 +1517,7 @@ type = ChangeState
 trigger1 = Pos Y + Vel Y >= 0
 value = 1305
 
-;===PUNCH ZERO COUNTER===
+;PUNCH ZERO COUNTER=
 [Statedef 2900]
 type = S
 physics = N
@@ -1618,7 +1618,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1205
 
-;===KICK ZERO COUNTER===
+;KICK ZERO COUNTER=
 [StateDef 2910]
 type = S
 physics = N

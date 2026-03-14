@@ -487,7 +487,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==============<Headbutt>===================
+;Headbutt==
 [Statedef 223]
 type    = S
 movetype= A
@@ -1069,7 +1069,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;================<Stiletto Edge Rush>===================
+;Stiletto Edge Rush==
 ;2nd hit
 [Statedef 260]
 type    = S
@@ -2840,7 +2840,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -2911,7 +2911,7 @@ type = ChangeState
 trigger1 = AnimElemTime(4) >= 0
 value = ifElse(var(10), 820, 810)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -3251,7 +3251,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;===========<Migraine>==========
+;Migraine=
 [StateDef 820]
 type = S
 physics = N
@@ -3563,7 +3563,7 @@ value = 0
 ctrl = 1
 
 
-;===========<Migraine(TARGET)>==========
+;Migraine(TARGET)=
 [StateDef 825]
 type = A
 moveType = H
@@ -3679,7 +3679,7 @@ trigger1 = vel y > 0
 trigger1 = pos y >= 25
 value = 5100
 
-;===========<AIR THROW ATTEMPT>==========
+;AIR THROW ATTEMPT=
 [StateDef 850]
 type = A
 physics = N
@@ -3763,7 +3763,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;========<Izuna Drop>==========
+;Izuna Drop=
 [Statedef 860]
 type    = A
 movetype = A
@@ -4006,7 +4006,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========<Izuna Drop(target)>==========
+;Izuna Drop(target)=
 [Statedef 865]
 type    = A
 movetype = H
@@ -4084,7 +4084,7 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 
-;===========<Atomic Buster>============
+;Atomic Buster=
 [Statedef 870]
 type    = A
 movetype = A
@@ -4246,7 +4246,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========<Atomic Buster(target)>===========
+;Atomic Buster(target)==
 [Statedef 875]
 type    = A
 movetype = H
@@ -4310,7 +4310,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100
 
-;===========<Throw Escaped>==========
+;Throw Escaped=
 [StateDef 890]
 type = S
 physics = N

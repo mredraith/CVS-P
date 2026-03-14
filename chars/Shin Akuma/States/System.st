@@ -3501,7 +3501,7 @@ trigger1 = time >= 120 && roundstate = 3
 value = ifelse(roundstate = 3, 180, 0)
 ctrl = 1
 
-;TURNS INTRO>==
+;TURNS INTRO=
 [StateDef 6900]
 type = A
 anim = 42
@@ -3836,7 +3836,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;K.O.>==
+;K.O.=
 [StateDef 5150]
 type = L
 movetype = H
@@ -3878,7 +3878,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;AIR HIT TRANSITION>==
+;AIR HIT TRANSITION=
 [Statedef 5035]
 type = A
 movetype = H

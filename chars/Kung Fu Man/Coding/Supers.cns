@@ -640,7 +640,7 @@ trigger1 = !var(16) && var(15) < 2
 trigger1 = AnimElem = 7
 attr = S, HA
 ID = 3100
-damage = ceil(ifElse(fvar(11) * 315 < 7, 7, fvar(11) * 315)), 7
+damage = 450
 priority = 4, hit
 animtype = Up
 getpower = 0, 0
@@ -675,7 +675,7 @@ forcestand = 1
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 25
+envshake.time = 45
 envshake.ampl = 15
 envShake.freq = 176
 fall.envshake.ampl = 6       ;Parameters for shaking the screen when your foe hits the ground from their fall

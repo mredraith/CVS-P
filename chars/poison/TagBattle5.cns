@@ -2942,7 +2942,7 @@ facing = facing;1
 removetime = 1
 scale= const(size.xscale),const(size.yscale)
 
-;=======================================================
+;
 ; Pe um smbolo no P2 (O)- mvsc2 screenpack
 [State -3]
 type = Explod
@@ -3026,9 +3026,9 @@ facing = facing;1
 removetime = 1
 scale= const(size.xscale),const(size.yscale)
 
-;=======================================================
+;
 ;Combo_Telop
-;=======================================================
+;
 ;[State -3, VS_Combo]
 ;type = VarAdd
 ;trigger1 = MoveHit && HitPauseTime = 1
@@ -3051,9 +3051,9 @@ scale= const(size.xscale),const(size.yscale)
 ;value = 0
 
 
-;=======================================================
+;
 ;Push Count
-;=======================================================
+;
 
 [State -3]
 type = varadd
@@ -3067,9 +3067,9 @@ triggerall = time = 0
 trigger1 = StateNo = [130,142]
 var(14) = 0
 
-;=======================================================
+;
 ;contador de projteis ou helpers inimigos
-;=======================================================
+;
 [State -3]
 type = Varset
 trigger1 = roundstate = 1

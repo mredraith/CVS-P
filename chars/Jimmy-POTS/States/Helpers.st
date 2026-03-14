@@ -2,7 +2,7 @@
 ;| Character by ZMugens               |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;< HELPER STATES >==
+; HELPER STATES =
 [Statedef 241]
 type   =A
 movetype=H
@@ -672,7 +672,7 @@ type = DestroySelf
 trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
-;<SPARKS>=
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -2052,7 +2052,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;< SUPERPAUSE FX >=
+; SUPERPAUSE FX >=
 ;--- --Level 1 -----
 [Statedef 8500]
 type = A

@@ -1,6 +1,6 @@
-;==
-;=<NORMAL MOVES==
-;==
+;
+;<NORMAL MOVES==
+;
 
 ;STANDING LIGHT PUNCH
 [StateDef 200]

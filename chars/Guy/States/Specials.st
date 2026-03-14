@@ -5,7 +5,7 @@
 ; SPECIAL STATES 
 ;
 
-; HOUZANTOU >==
+; HOUZANTOU =
 [Statedef 1000]
 type = S
 movetype = A
@@ -460,7 +460,7 @@ value = 0
 ctrl = 1
 
 
-; KAGE SUKUI >==
+; KAGE SUKUI =
 [Statedef 1110]
 type = S
 movetype = A
@@ -548,7 +548,7 @@ value = 0
 ctrl = 1
 
 
-; KUBIKARI >==
+; KUBIKARI =
 [Statedef 1115]
 type = S
 movetype = A
@@ -678,7 +678,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-; SEICHUUKARI >==
+; SEICHUUKARI =
 [Statedef 1120]
 type = S
 movetype = A
@@ -781,7 +781,7 @@ trigger1 = animelemtime(6) >= 0
 movetype = I
 
 
-; WARP >==
+; WARP =
 [Statedef 1150]
 type = S
 physics = S
@@ -1101,7 +1101,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-; IZUNA NO HIJI OTOSHI >==
+; IZUNA NO HIJI OTOSHI =
 [Statedef 1305]
 type = A
 movetype = A
@@ -1426,7 +1426,7 @@ trigger1 = animelemtime(2) > 0 && vel y > 0 && pos y >= -5
 value = 5100
 
 
-; HASSOU KYAKU >==
+; HASSOU KYAKU =
 [Statedef 1400]
 type = A
 movetype = A

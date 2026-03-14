@@ -1,4 +1,4 @@
-;========================<Ground Bounce>=================================
+;Ground Bounce=
 
 [Statedef 244]
 type    = A
@@ -64,7 +64,7 @@ trigger1 = time >= 15
 trigger1 = pos y >= 0
 value = 5110
 
-;========================<HIT WALL>======================================
+;HIT WALL=
 ;---Hit Pause---
 [Statedef 1125]
 type=A
@@ -321,7 +321,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;<=======custom animation
+value = 4020  ;custom animation
 
 [State 0, ChangeState]
 type = changeState

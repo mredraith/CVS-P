@@ -283,7 +283,7 @@ type = StateTypeSet
 trigger1 = AnimElemTime(11) >= 0 && !Var(10)
 moveType = I
 
-;============================================
+;
 ;Medium
 [State 1004, StateTypeSet: Air, No Phys]
 type = StateTypeSet
@@ -345,7 +345,7 @@ facing = 1
 persistent = 0
 ignorehitpause = 1
 
-;=============================================
+;
 ;Strong
 [State 0, VelSet]
 type = VelSet
@@ -641,7 +641,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = Anim + 10*Var(10)
 
-;=====================================================
+;
 ;Weak
 [State 1100, NotHitBy]
 type = NotHitBy
@@ -724,7 +724,7 @@ trigger1 = !AnimTime
 value = 1101
 ctrl = 0
 
-;=====================================================
+;
 ;Medium
 [State 1300, Muteki]
 type = Nothitby
@@ -838,7 +838,7 @@ triggerall = Var(10) = 1
 trigger1 = pos y > -vel y
 value = 1105
 
-;=====================================================
+;
 ;Strong
 [State 40, Dust Helper]
 type = Helper
@@ -1808,7 +1808,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = Anim + Var(10)
 
-;========================================================================
+;
 ;Weak
 [State 1200, PosAdd]
 type = PosAdd
@@ -1974,7 +1974,7 @@ trigger1 = !AnimTime  && Var(10) != 1
 value = 0
 ctrl = 1
 
-;========================================================================
+;
 ;Medium
 [State 1250, Tasumaki]
 type=Helper
@@ -2186,7 +2186,7 @@ type=StateTypeSet
 trigger1=AnimElemTime(26)=0 && Var(10) = 1
 movetype=I
 
-;========================================================================
+;
 ;Strong
 [State 1300, Voice]
 type = PlaySnd
@@ -2741,7 +2741,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = Anim + Var(10)
 
-;===========================================
+;
 ;Weak
 [State 1200, Vel]
 type = velset
@@ -2850,7 +2850,7 @@ trigger1 = !(target, time) && (target(1200), stateno = [5000, 5010])
 value = 7070
 ignorehitpause = 1
 
-;=================================
+;
 ;Medium
 [State 0, StateTypeSet]
 type = StateTypeSet
@@ -2919,7 +2919,7 @@ trigger1 = !AnimElemTime(10) && Var(10) = 1
 x = 9
 y = 6.5
 
-;==================================
+;
 ;Hard
 [State 1201, 2]
 type = VelSet
@@ -3060,7 +3060,7 @@ type = changestate
 trigger1 = vel y > 0 && pos y >= 0
 value = 1255
 
-;========================<EX SENTSUIZAN>=======================
+;EX SENTSUIZAN=
 ;EX Sentsuizan (Enkoukyaku)
 [Statedef 1280]
 type = A
@@ -3317,7 +3317,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = Anim + Var(10)
 
-;===========================================
+;
 ;Weak
 [State 0, Voice]
 type = PlaySnd
@@ -3417,7 +3417,7 @@ triggerall = Var(10) = 0
 trigger1 = AnimElemTime(9) >= 0
 movetype = I
 
-;===========================================
+;
 ;Medium
 [State 0, Neutral Physics]
 type = StateTypeSet
@@ -3616,7 +3616,7 @@ posType = P2
 ownPal = 1
 ignoreHitPause = 1
 
-;===========================================
+;
 ;Strong
 [State 0, StateTypeSet]
 type = StateTypeSet
@@ -3929,7 +3929,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = Anim + Var(10)
 
-;===========================================
+;
 ;Weak
 [State 1500, Woosh Sound]
 type = PlaySnd
@@ -4021,7 +4021,7 @@ value = ifElse(Target(1500), StateType = A, 5425, 5420)
 ID = 1500
 ignoreHitPause = 1
 
-;==================================
+;
 ;Medium
 [State 1200, Voice]
 type = PlaySnd
@@ -4154,7 +4154,7 @@ envshake.time = 14
 envshake.ampl = 4
 envShake.freq = 120
 
-;===========================================
+;
 ;Strong
 [State 1040, Jaguar Kick FX]
 type = Explod
@@ -4347,7 +4347,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<EX PHOENIX ARROW>==========================
+;EX PHOENIX ARROW=
 [StateDef 1380]
 type = A
 physics = N
@@ -4646,7 +4646,7 @@ type = ChangeAnim
 Trigger1 = Time = 0
 value = 1400 + var(10)
 
-;==========================================================================================
+;
 ;Weak
 [State 1300, velset]
 type = velset
@@ -4761,7 +4761,7 @@ triggerall = var(10) = 0
 trigger1 = AnimElemTime(10) >= 0
 movetype = I
 
-;==========================================================================================
+;
 ;Medium
 [State 1900, 1]
 type = statetypeset
@@ -4926,7 +4926,7 @@ envShake.freq = 120
 fall.envshake.time = 15
 fall.envshake.ampl = 5
 
-;==========================================================================================
+;
 ;Strong
 [State 1200, Width]
 type = Width
@@ -5529,7 +5529,7 @@ triggerall = NumExplod(1593) > 0 && !var(10)
 trigger1 = AnimElem = 3
 ID = 1593
 
-;===================================================================
+;
 ;Medium
 [State 1300, Voice 1]
 type = PlaySnd
@@ -5609,7 +5609,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;========================================================================================
+;
 ;Strong
 [State 3000, Wave Reset]
 type=VarSet
@@ -7134,7 +7134,7 @@ type = Width
 trigger1 = AnimElemTime(10) = 0
 value = 30,0
 
-;======================================================
+;
 ;Strong
 [State 1000, width]
 type=width
@@ -7240,7 +7240,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<PSYCHO SHOT>=======================
+;PSYCHO SHOT=
 [Statedef 1830]
 type = S
 movetype = A
@@ -7361,7 +7361,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<DANKUUKYAKU>==========================
+;DANKUUKYAKU=
 [StateDef 1900]
 type = S
 physics = N
@@ -7394,7 +7394,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = Anim + Var(10)
 
-;===============================================
+;
 ;Weak
 [State 1200, Voice]
 type = PlaySnd
@@ -7496,7 +7496,7 @@ trigger1 = pos y > -vel y
 trigger1 = AnimElemTime(9) > 0 && !Var(10)
 value = 1905
 
-;=========================
+;
 ;Medium
 [State 1300, Voice]
 type = PlaySnd
@@ -7711,7 +7711,7 @@ type = ChangeState
 trigger1 = pos y > -vel y && Var(10) = 1
 value = 1905
 
-;=============================
+;
 ;Strong
 [State 0, PlaySnd]
 type = PlaySnd
@@ -7893,7 +7893,7 @@ ctrl = 1
 
 
 
-;========================<EX SOMERSAULT KICK>=============================
+;EX SOMERSAULT KICK=
 [StateDef 1930]
 type = S
 physics = N
@@ -8143,7 +8143,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1935
 
-;======================<HIT BY EX KUNG FU PALM>===========================
+;HIT BY EX KUNG FU PALM=
 ;Being Launched
 [StateDef 1031]
 type = A
@@ -8305,7 +8305,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;==================<Collapsed TargetState>=====================
+;Collapsed TargetState=
 ;Collapsed
 [Statedef 1290]
 type    = S
@@ -8458,7 +8458,7 @@ type = selfstate
 trigger1 = vel y > 0
 trigger1 = pos y >= 12
 value = 5110
-;========================<SLAMMED AGAINST THE GROUND>=============================
+;SLAMMED AGAINST THE GROUND=
 ;Being Slammed (Standing)
 [StateDef 5420]
 type = U

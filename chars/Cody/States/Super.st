@@ -1,11 +1,11 @@
 ; _______________________________________________
 ;|            Cody Travers by Trololo            |
 ; 
-;==============================================================================================
-;========================================<SUPER STATES>========================================
-;==============================================================================================
+;
+;SUPER STATES=
+;
 
-;========================<FINAL DESTRUCTION>=============================
+;FINAL DESTRUCTION=
 [StateDef 3000]
 type = S
 physics = S
@@ -505,7 +505,7 @@ trigger1 = HitOver
 value = 0
 ctrl = 1
 
-;========================<FINAL DESTRUCTION MAX>=============================
+;FINAL DESTRUCTION MAX=
 [StateDef 3050]
 type = S
 physics = S
@@ -1079,7 +1079,7 @@ value = 0
 ctrl = 1
 
 
-;========================<DEAD END IRONY>=============================
+;DEAD END IRONY=
 [StateDef 3100]
 type = S
 physics = N
@@ -1499,7 +1499,7 @@ value = 0
 ctrl = 1
 
 
-;========================<DEAD END IRONY MAX>=============================
+;DEAD END IRONY MAX=
 [StateDef 3150]
 type = S
 physics = S
@@ -1951,7 +1951,7 @@ value = 3105
 
 
 
-;========================<LAST DREAD DUST>==============================
+;LAST DREAD DUST=
 [Statedef 3200]
 type = S
 movetype = A

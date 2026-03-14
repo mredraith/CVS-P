@@ -1,4 +1,4 @@
-;=====================<Handcuff Toss>==========================
+;Handcuff Toss=
 [StateDef 1000]
 type = S
 physics = S
@@ -58,7 +58,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<Crescent Stilleto>====================
+;Crescent Stilleto=
 [Statedef 1100]
 type    = S
 movetype= A
@@ -379,7 +379,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==================<High Heel Pounce>===============
+;High Heel Pounce==
 [Statedef 1200]
 type    = S
 movetype= A
@@ -586,7 +586,7 @@ trigger1 = Anim = 1205 && !Animtime
 value = 0
 ctrl = 1
 
-;==========================<Whiplash>=============================
+;Whiplash=
 [Statedef 1300]
 type    = S
 movetype= A
@@ -1046,7 +1046,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<Air Whiplash>============================
+;Air Whiplash=
 [Statedef 1400]
 type    = A
 movetype= A
@@ -1132,7 +1132,7 @@ trigger1 = AnimElemTime(7) >= 0
 trigger1 = pos y > -vel y
 value = 52
 
-;=========================<Ex Handcuff>==========================
+;Ex Handcuff=
 [StateDef 1500]
 type = S
 physics = S
@@ -1212,7 +1212,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<EX Crescent Stilleto>====================
+;EX Crescent Stilleto=
 [Statedef 1600]
 type    = S
 movetype= A
@@ -1419,7 +1419,7 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1105
 
-;==================<EX High Heel Pounce>===============
+;EX High Heel Pounce==
 [Statedef 1700]
 type    = S
 movetype= A
@@ -1735,7 +1735,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==========================<EX Whiplash>=============================
+;EX Whiplash=
 [Statedef 1800]
 type    = S
 movetype= A
@@ -1898,7 +1898,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX Air Whiplash>============================
+;EX Air Whiplash=
 [Statedef 1900]
 type    = A
 movetype= A

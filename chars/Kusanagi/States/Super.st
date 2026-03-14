@@ -3936,7 +3936,7 @@ ctrl = 1
 
 
 
-;KAMUKURA (TARGET)>==
+;KAMUKURA (TARGET)=
 ;Normal Kyo
 [StateDef 3215]
 type = A

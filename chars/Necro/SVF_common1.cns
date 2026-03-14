@@ -5,7 +5,7 @@ physics = S
 sprpriority = 0
 
 ;UNDER STAND def0
-;=============================================
+;
 ;##21# only for no MX lifebar
 [State 191, 3]
 type = Explod
@@ -38,7 +38,7 @@ removetime = -1
 ownpal = 1
 bindtime = -1
 scale = 0.5 ,0.5
-;=============================================
+;
 
 [State 0, 3] ;Stop moving if low velocity or 4 ticks pass
 type = VelSet
@@ -2026,4 +2026,4 @@ trigger1 = roundstate = 0
 trigger1 = roundsexisted <= 0
 value = 190
 
-;=================================================
+;

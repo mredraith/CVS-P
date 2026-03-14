@@ -1,4 +1,4 @@
-;========================<SNIPING ARROW>=======================
+;SNIPING ARROW=
 [Statedef 1000]
 type = S
 movetype = A
@@ -366,7 +366,7 @@ trigger1 = AnimElemTime(6) >= 1
 trigger1 = (pos y-8)>-vel y
 value = 1005
 
-;====================<EX SNIPING ARROW>=======================
+;EX SNIPING ARROW=
 [Statedef 1030]
 type = S
 movetype = A
@@ -583,7 +583,7 @@ trigger1 = AnimElemTime(6) >= 1
 trigger1 = (pos y-8)>-vel y
 value = 1005
 
-;========================<CANNON STRIKE>=======================
+;CANNON STRIKE=
 [Statedef 1100]
 type = A
 movetype = A
@@ -727,7 +727,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX CANNON STRIKE>=======================
+;EX CANNON STRIKE=
 [Statedef 1130]
 type = A
 movetype = A
@@ -919,7 +919,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<MACH SLIDE>=======================
+;MACH SLIDE=
 [Statedef 1200]
 type = S
 movetype = I
@@ -986,7 +986,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<CANNON SPIKE>=======================
+;CANNON SPIKE=
 [Statedef 1300]
 type = S
 movetype = A
@@ -1450,7 +1450,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX CANNON SPIKE>=======================
+;EX CANNON SPIKE=
 [Statedef 1330]
 type = S
 movetype = A
@@ -1780,7 +1780,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<SPIN KNUCKLE>=======================
+;SPIN KNUCKLE=
 [Statedef 1400]
 type = S
 movetype = A
@@ -2009,7 +2009,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX SPIN KNUCKLE>=======================
+;EX SPIN KNUCKLE=
 [Statedef 1430]
 type = S
 movetype = A
@@ -2268,7 +2268,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<HIT BY EX SPIN KNUCKLE>===========================
+;HIT BY EX SPIN KNUCKLE=
 ;Being Launched
 [StateDef 1440]
 type = A
@@ -2432,7 +2432,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;========================<EARTH DIRECT>=======================
+;EARTH DIRECT=
 [Statedef 1500]
 type    = S
 movetype= A
@@ -2889,7 +2889,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;========================<EX EARTH DIRECT>=======================
+;EX EARTH DIRECT=
 [Statedef 1530]
 type    = S
 movetype= A

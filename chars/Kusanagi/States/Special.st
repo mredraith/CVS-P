@@ -224,7 +224,7 @@ ctrl = 1
 
 
 
-;128 SHIKI: KONOKIZU>==
+;128 SHIKI: KONOKIZU=
 [StateDef 1010]
 type = S
 physics = N
@@ -422,7 +422,7 @@ ctrl = 1
 
 
 
-;127 SHIKI: YANOSABI>==
+;127 SHIKI: YANOSABI=
 [StateDef 1020]
 type = S
 physics = N
@@ -588,7 +588,7 @@ ctrl = 1
 
 
 
-;125 SHIKI: NANASE>==
+;125 SHIKI: NANASE=
 [StateDef 1030]
 type = S
 physics = N
@@ -711,7 +711,7 @@ ctrl = 1
 
 
 
-;127 SHIKI: YANOSABI (FROM ARAGAMI)>==
+;127 SHIKI: YANOSABI (FROM ARAGAMI)=
 [StateDef 1040]
 type = S
 physics = N
@@ -941,7 +941,7 @@ ctrl = 1
 
 
 
-;GESHIKI: MIGIRI UGACHI>==
+;GESHIKI: MIGIRI UGACHI=
 [StateDef 1050]
 type = S
 physics = N
@@ -1280,7 +1280,7 @@ value = 5120
 
 
 
-;212 SHIKI: KOTOTSUKI YOU (FROM YANOSABI)>==
+;212 SHIKI: KOTOTSUKI YOU (FROM YANOSABI)=
 ;Grab attempt
 [StateDef 1060]
 type = S
@@ -1579,7 +1579,7 @@ ctrl = 1
 
 
 
-;212 SHIKI: KOTOTSUKI YOU (TARGET, FROM YANOSABI)>==
+;212 SHIKI: KOTOTSUKI YOU (TARGET, FROM YANOSABI)=
 ;Being Thrown
 [StateDef 1080]
 type = A
@@ -1866,7 +1866,7 @@ ctrl = 1
 
 
 
-;401 SHIKI: TSUMI YOMI>==
+;401 SHIKI: TSUMI YOMI=
 [StateDef 1110]
 type = S
 physics = N
@@ -2036,7 +2036,7 @@ ctrl = 1
 
 
 
-;402 SHIKI: BATSU YOMI>==
+;402 SHIKI: BATSU YOMI=
 [StateDef 1120]
 type = S
 physics = N
@@ -2264,7 +2264,7 @@ ctrl = 1
 
 
 
-;100 SHIKI: ONIYAKI>==
+;100 SHIKI: ONIYAKI=
 [StateDef 1130]
 type = A
 physics = N
@@ -2832,7 +2832,7 @@ ctrl = 1
 
 
 
-;128 SHIKI: KONOKIZU (EX DOKUGAMI CHAIN)>==
+;128 SHIKI: KONOKIZU (EX DOKUGAMI CHAIN)=
 [StateDef 1170]
 type = S
 physics = N
@@ -3031,7 +3031,7 @@ ctrl = 1
 
 
 
-;125 SHIKI: NANASE KAI>==
+;125 SHIKI: NANASE KAI=
 [StateDef 1180]
 type = S
 physics = N
@@ -3201,7 +3201,7 @@ ctrl = 1
 
 
 
-;412 SHIKI: HIKIGANE>==
+;412 SHIKI: HIKIGANE=
 [StateDef 1190]
 type = S
 physics = N
@@ -3388,7 +3388,7 @@ ctrl = 1
 
 
 
-;100 SHIKI: ONIYAKI>==
+;100 SHIKI: ONIYAKI=
 [StateDef 1200]
 type = S
 physics = N
@@ -3982,7 +3982,7 @@ value = 1201
 
 
 
-;75 SHIKI: KAI>==
+;75 SHIKI: KAI=
 [StateDef 1300]
 type = S
 physics = N
@@ -4220,7 +4220,7 @@ ctrl = 1
 
 
 
-;75 SHIKI: KAI (SECOND KICK)>==
+;75 SHIKI: KAI (SECOND KICK)=
 [StateDef 1305]
 type = A
 physics = N
@@ -5132,7 +5132,7 @@ value = 1401
 
 
 
-;212 SHIKI: KOTOTSUKI YOU>==
+;212 SHIKI: KOTOTSUKI YOU=
 ;Startup
 [StateDef 1500]
 type = S
@@ -5747,7 +5747,7 @@ ctrl = 1
 
 
 
-;212 SHIKI: KOTOTSUKI YOU (TARGET)>==
+;212 SHIKI: KOTOTSUKI YOU (TARGET)=
 ;Being Thrown
 [StateDef 1530]
 type = A
@@ -5849,7 +5849,7 @@ value = 5100
 
 
 
-;212 SHIKI: KOTOTSUKI YOU (EX)>==
+;212 SHIKI: KOTOTSUKI YOU (EX)=
 ;Startup
 [StateDef 1550]
 type = S
@@ -6318,7 +6318,7 @@ ctrl = 1
 
 
 
-;212 SHIKI: KOTOTSUKI YOU (EX, KUSANAGI)>==
+;212 SHIKI: KOTOTSUKI YOU (EX, KUSANAGI)=
 ;Startup
 [StateDef 1570]
 type = S
@@ -6839,7 +6839,7 @@ ctrl = 1
 
 
 
-;101 SHIKI: OBORO GURUMA>==
+;101 SHIKI: OBORO GURUMA=
 [StateDef 1700]
 type = S
 physics = N
@@ -7193,7 +7193,7 @@ ctrl = 1
 
 
 
-;101 SHIKI: OBORO GURUMA (EX)>==
+;101 SHIKI: OBORO GURUMA (EX)=
 [StateDef 1730]
 type = S
 physics = N
@@ -7523,7 +7523,7 @@ value = 1701
 
 
 
-;AOKI>==
+;AOKI=
 [StateDef 1800]
 type = S
 physics = N
@@ -7912,7 +7912,7 @@ value = 1121
 
 
 
-;AOKI (EX)>==
+;AOKI (EX)=
 [StateDef 1830]
 type = S
 physics = N

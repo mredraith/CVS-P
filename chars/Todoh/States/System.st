@@ -2606,7 +2606,7 @@ type = BindToRoot
 trigger1 = time = 0
 pos = -72*facing*root,facing,0
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

@@ -1744,7 +1744,7 @@ ctrl = 1
 
 
 
-;DEICIDE SLAYER>==
+;DEICIDE SLAYER=
 ;Attempt
 [StateDef 1200]
 type = S
@@ -3536,7 +3536,7 @@ ctrl = 1
 
 
 
-;OUTRAGE>==
+;OUTRAGE=
 ;Startup
 [StateDef 1500]
 type = S
@@ -4174,7 +4174,7 @@ ctrl = 1
 
 
 
-;RAVENOUS>==
+;RAVENOUS=
 [StateDef 1600]
 type = A
 physics = N

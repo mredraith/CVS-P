@@ -2369,7 +2369,7 @@ trigger1 = Time >= 16
 
 
 
-;POWER CHARGE FX>==
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -2478,7 +2478,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;VIOLENT WIN VS VEGA PARTICLES>==
+;VIOLENT WIN VS VEGA PARTICLES=
 [StateDef 8332]
 type = A
 physics = N
@@ -2515,7 +2515,7 @@ trigger1 = Root, StateNo != 187 || Root, AnimElemTime(60) >= 0
 
 
 
-;ZERO COUNTER FX>==
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N

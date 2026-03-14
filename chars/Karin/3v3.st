@@ -598,7 +598,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-; BACK DASH >==
+; BACK DASH =
 [Statedef 105]
 type = A
 physics = N
@@ -679,7 +679,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-; OFF SCREEN >==
+; OFF SCREEN =
 [Statedef 110]
 type = S
 physics = S
@@ -889,7 +889,7 @@ value = 0
 ctrl = 1
 
 
-; POWER CHARGE >==
+; POWER CHARGE =
 [Statedef 730]
 type = S
 physics = S
@@ -973,7 +973,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-; POWER CHARGE >==
+; POWER CHARGE =
 [Statedef 732]
 type = S
 physics = S
@@ -1622,7 +1622,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-; TARGET SAFE FALL >==
+; TARGET SAFE FALL =
 [Statedef 5205]
 type = A
 physics = N
@@ -1651,7 +1651,7 @@ trigger1 = time >= 60
 value = 5210
 
 
-; FALL RECOVERY >==
+; FALL RECOVERY =
 [Statedef 5200]
 type = A
 movetype = H
@@ -1806,7 +1806,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-; RECOVERY ROLL >==
+; RECOVERY ROLL =
 [Statedef 5220]
 type = A
 movetype = H
@@ -3039,7 +3039,7 @@ postype = back
 pos = -30, 0
 ownpal = 1
 
-; WIN by PERFECT >==
+; WIN by PERFECT =
 [Statedef 187]
 type = S
 anim = 187
@@ -3190,7 +3190,7 @@ value = 0
 ctrl = 1
 
 
-; CHEAP K.O. >==
+; CHEAP K.O. =
 [Statedef 5950]
 type = S
 movetype = H

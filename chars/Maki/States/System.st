@@ -3057,7 +3057,7 @@ channel = 0
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

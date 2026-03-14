@@ -1,4 +1,4 @@
-;========================<DIZZY>=============================
+;DIZZY=
 [Statedef 5300]
 type=S
 movetype=I
@@ -57,7 +57,7 @@ trigger1= sysfvar(4)<=0 || time>=300 || roundstate!=2
 value=0
 ctrl=1
 
-;========================<HIT BACK, then dizzy>=============================
+;HIT BACK, then dizzy=
 [Statedef 1115020]
 type=A
 movetype=H

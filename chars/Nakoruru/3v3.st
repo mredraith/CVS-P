@@ -611,7 +611,7 @@ value = 0
 ctrl = 1
 
 
-; BACK DASH >==
+; BACK DASH =
 [Statedef 105]
 type = A
 physics = N
@@ -834,7 +834,7 @@ value = 0
 ctrl = 1
 
 
-; POWER CHARGE >==
+; POWER CHARGE =
 [Statedef 730]
 type = S
 physics = S
@@ -1509,7 +1509,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-; TARGET SAFE FALL >==
+; TARGET SAFE FALL =
 [Statedef 5205]
 type = A
 physics = N
@@ -1538,7 +1538,7 @@ trigger1 = time >= 60
 value = 5210
 
 
-; FALL RECOVERY >==
+; FALL RECOVERY =
 [Statedef 5200]
 type = A
 movetype = H
@@ -2783,7 +2783,7 @@ value = 0
 ctrl = 1
 
 
-; CHEAP K.O. >==
+; CHEAP K.O. =
 [Statedef 5950]
 type = S
 movetype = H

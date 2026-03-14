@@ -2,10 +2,10 @@
 ;| Q by KarmaCharmeleon			|
 ; 
 ;
-;<SPECIAL MOVES>===
+;SPECIAL MOVES==
 ;
 
-;<DASHING STRAIGHT>=
+;DASHING STRAIGHT>=
 [StateDef 1000]
 type = S
 physics = N
@@ -178,7 +178,7 @@ ctrl = 1
 
 
 
-;<EX DASHING STRAIGHT>=
+;EX DASHING STRAIGHT>=
 [StateDef 1030]
 type = S
 physics = N
@@ -385,7 +385,7 @@ ctrl = 1
 
 
 
-;<HIT BY EX DASHING STRAIGHT>=
+;HIT BY EX DASHING STRAIGHT>=
 ;Being Launched
 [StateDef 1045]
 type = A
@@ -587,7 +587,7 @@ value = 5100
 
 
 
-;<DASHING HEAD ATTACK>=
+;DASHING HEAD ATTACK>=
 [StateDef 1050]
 type = S
 physics = N
@@ -720,7 +720,7 @@ ctrl = 1
 
 
 
-;<SLAMMED AGAINST THE GROUND>=
+;SLAMMED AGAINST THE GROUND>=
 ;Being Slammed (Standing)
 [StateDef 5420]
 type = U
@@ -1033,7 +1033,7 @@ value = 5120
 
 
 
-;<DASHING LEG ATTACK>=
+;DASHING LEG ATTACK>=
 [StateDef 1100]
 type = S
 physics = N
@@ -1178,7 +1178,7 @@ ctrl = 1
 
 
 
-;<EX DASHING LEG ATTACK>=
+;EX DASHING LEG ATTACK>=
 [StateDef 1130]
 type = S
 physics = N
@@ -1386,7 +1386,7 @@ ctrl = 1
 
 
 
-;<HIGH SPEED BARRAGE>=
+;HIGH SPEED BARRAGE>=
 [StateDef 1200]
 type = S
 physics = N
@@ -1735,7 +1735,7 @@ ctrl = 1
 
 
 
-;<EX HIGH SPEED BARRAGE>=
+;EX HIGH SPEED BARRAGE>=
 [StateDef 1230]
 type = S
 physics = N
@@ -1988,7 +1988,7 @@ ctrl = 1
 
 
 
-;<CAPTURE & DEADLY BLOW>=
+;CAPTURE & DEADLY BLOW>=
 ;Attempt
 [StateDef 1300]
 type = S
@@ -2241,7 +2241,7 @@ ctrl = 1
 
 
 
-;<CAPTURE & DEADLY BLOW (TARGET)>==
+;CAPTURE & DEADLY BLOW (TARGET)=
 ;Being Thrown
 [StateDef 1315]
 type = A
@@ -2331,7 +2331,7 @@ value = 5100
 
 
 
-;<EX CAPTURE & DEADLY BLOW>=
+;EX CAPTURE & DEADLY BLOW>=
 ;Attempt
 [StateDef 1330]
 type = S
@@ -2608,7 +2608,7 @@ ctrl = 1
 
 
 
-;<EX CAPTURE & DEADLY BLOW (TARGET)>==
+;EX CAPTURE & DEADLY BLOW (TARGET)=
 ;Being Thrown
 [StateDef 1345]
 type = A
@@ -2698,7 +2698,7 @@ value = 5100
 
 
 
-;<PUNCH ZERO COUNTER>=
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -2858,7 +2858,7 @@ ctrl = 1
 
 
 
-;<KICK ZERO COUNTER>=
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

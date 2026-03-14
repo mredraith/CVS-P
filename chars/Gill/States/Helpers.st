@@ -1,7 +1,7 @@
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
-;========================<WIN POSE (HAIR)>=============================
+;
+;HELPER STATES=
+;
+;WIN POSE (HAIR)=
 [Statedef 100183]
 type = S
 ctrl = 0
@@ -18,7 +18,7 @@ pos = 0,0
 type = DestroySelf
 trigger1 = Root, StateNo != 183
 
-;========================<WIN POSE (MOUTH)>=============================
+;WIN POSE (MOUTH)=
 [Statedef 100184]
 type = S
 ctrl = 0
@@ -35,7 +35,7 @@ pos = 0,0
 type = DestroySelf
 trigger1 = Root, StateNo != 184
 
-;========================<WIN POSE (POSITION)>=============================
+;WIN POSE (POSITION)=
 [Statedef 100185]
 type = A
 physics = N
@@ -91,7 +91,7 @@ value = SCA
 type = DestroySelf
 trigger1 = Root, StateNo != 185
 
-;========================<SIMUL INTRO (MOUTH)>=============================
+;SIMUL INTRO (MOUTH)=
 [Statedef 6910]
 type = S
 ctrl = 0
@@ -115,7 +115,7 @@ type = DestroySelf
 trigger1 = Root, StateNo != 6901
 trigger2 = !AnimTime
 
-;=====================<KINESIS PROJECTILE>=========================
+;KINESIS PROJECTILE=
 [StateDef 1005]
 type = S
 physics = N
@@ -663,7 +663,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;========================<METEOR STRIKE (HAIR)>=============================
+;METEOR STRIKE (HAIR)=
 [Statedef 3001]
 type = S
 ctrl = 0
@@ -688,7 +688,7 @@ trigger3 = Root, AnimElemTime(60) = 0
 trigger4 = Root, StateNo = 3500
 trigger4 = Root, AnimElemTime(17) = 0
 
-;=====================<METEOR STRIKE (PYROKINESIS)>=========================
+;METEOR STRIKE (PYROKINESIS)=
 [StateDef 3005]
 type = A
 physics = N
@@ -1053,7 +1053,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1008
 
-;=====================<METEOR STRIKE (PYROKINESIS)>=========================
+;METEOR STRIKE (PYROKINESIS)=
 [StateDef 3015]
 type = A
 physics = N
@@ -1343,7 +1343,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1008
 
-;=====================<SERAPHIC WING>=========================
+;SERAPHIC WING=
 [StateDef 3301]
 type = A
 physics = N
@@ -1534,7 +1534,7 @@ type = ChangeState
 trigger1 = Time >= 0
 value = 3301
 
-;========================<METEOR STRIKE (POSITION)>=============================
+;METEOR STRIKE (POSITION)=
 [Statedef 3310]
 type = A
 physics = N
@@ -1638,7 +1638,7 @@ trigger1 = Root, StateNo != 3300
 trigger2 = Root, StateNo = 3300
 trigger2 = Root, AnimElemTime(39) >= 0
 
-;====================<RESURRECTION (WIND)>====================
+;RESURRECTION (WIND)=
 [Statedef 3401]
 type = S
 physics = N
@@ -1675,7 +1675,7 @@ trigger3 = Root, StateNo != 3400
 trigger4 = Root, StateNo = 3400
 trigger4 = Root, AnimElemTime(12) >= 48
 
-;====================<RESURRECTION (GLOW)>====================
+;RESURRECTION (GLOW)=
 [StateDef 3405]
 anim = 3405
 sprpriority = 4
@@ -1704,7 +1704,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;====================<RESURRECTION (RAYS)>====================
+;RESURRECTION (RAYS)=
 [StateDef 3407]
 anim = 3407
 sprpriority = 5
@@ -1755,7 +1755,7 @@ trigger1 = Time >= 60
 type = DestroySelf
 trigger1 = Time >= 60
 
-;====================<HADES ORBIT (FLARE ORB)>====================
+;HADES ORBIT (FLARE ORB)=
 ;Credit Goes to Mr. Infinite
 [Statedef 3505]
 type = A
@@ -2144,7 +2144,7 @@ ignoreHitPause = 1
 type=destroyself
 trigger1=!animtime
 
-;====================<HADES ORBIT (ICE ORB)>====================
+;HADES ORBIT (ICE ORB)=
 ;Credit Goes to Mr. Infinite
 [Statedef 3515]
 type = A
@@ -2498,7 +2498,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 1008
 
-;====================<HADES COMET (FLARE ORB)>====================
+;HADES COMET (FLARE ORB)=
 ;Credit Goes to Mr. Infinite
 [Statedef 3555]
 type = A
@@ -2799,7 +2799,7 @@ value = 3507
 ctrl = 0
 ignorehitpause = 1
 
-;====================<HADES COMET (ICE ORBIT)>====================
+;HADES COMET (ICE ORBIT)=
 ;Credit Goes to Mr. Infinite
 [Statedef 3565]
 type=A
@@ -3065,7 +3065,7 @@ value = 3517
 ctrl = 0
 ignorehitpause = 1
 
-;====================<ROBE>====================
+;ROBE=
 [StateDef 7000]
 anim = 7000
 sprpriority = 1
@@ -3082,7 +3082,7 @@ channel = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;====================<KOLLIN>====================
+;KOLLIN=
 [StateDef 7001]
 anim = 7001
 sprpriority = 1
@@ -3118,7 +3118,7 @@ x = -1.8 * Const(Size.Xscale)
 type = DestroySelf
 trigger1 = Pos X != [-240,240]
 
-;====================<MONKS>====================
+;MONKS=
 ;Center
 [StateDef 7002]
 anim = 7002
@@ -3164,7 +3164,7 @@ x = -1.5 * Const(Size.Xscale)
 type = DestroySelf
 trigger1 = BackEdgeDist <= -110
 
-;====================<ROBE>====================
+;ROBE=
 [StateDef 7010]
 anim = 7010
 sprpriority = 1
@@ -3174,7 +3174,7 @@ ctrl = 0
 type = DestroySelf
 trigger1 = !AnimTime
 
-;====================<ROBE>====================
+;ROBE=
 [StateDef 10190]
 anim = 10190
 sprpriority = 5
@@ -3198,7 +3198,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = !AnimTime
 
-;====================<PARRY HELPER>=========================
+;PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -3308,7 +3308,7 @@ type = DestroySelf
 trigger1 = Root, StateNo = [760,762]
 trigger2 = Time >= 2
 
-;========================<SPARKS>=============================
+;SPARKS=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -4049,7 +4049,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 8
 
-;======================<JUMP DUST>===========================
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -4086,7 +4086,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;======================<DASH DUST>===========================
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -4146,7 +4146,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<IMPACT DUST>===========================
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -4190,7 +4190,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -4234,7 +4234,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;========================<FLAMES>=============================
+;FLAMES=
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -4322,7 +4322,7 @@ trigger1 = PlayerID(var(0)), ctrl
 trigger2 = PlayerID(var(0)), Movetype != H || PlayerID(var(0)), StateNo = 5300
 trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [5080,5081])
 
-;========================<ICE SHARDS>=============================
+;ICE SHARDS=
 [StateDef 18150]
 type = S
 velSet = 0,0
@@ -4484,7 +4484,7 @@ type = DestroySelf
 trigger1 = Enemy, Stateno != [5800,5899]
 trigger2 = Enemy, Statetype = L
 
-;========================<RECOVER FX>=============================
+;RECOVER FX=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -4514,7 +4514,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 15
 
-;========================<COUNTER FX>=============================
+;COUNTER FX=
 [StateDef 8290]
 type = A
 physics = N
@@ -4558,7 +4558,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;==================<POWER CHARGE FX>==================
+;POWER CHARGE FX=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -4665,7 +4665,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;==================<ZERO COUNTER FX>==================
+;ZERO COUNTER FX=
 [StateDef 8350]
 type = A
 physics = N
@@ -4715,7 +4715,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<CUSTOM COMBO>=============================
+;CUSTOM COMBO=
 [StateDef 8400]
 type = A
 physics = N
@@ -4819,7 +4819,7 @@ trigger1 = Time >= 26
 type = DestroySelf
 trigger1 = Time >= 26
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -5266,7 +5266,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -5430,7 +5430,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL=
 [StateDef 8999]
 type = S
 velSet = 0,0

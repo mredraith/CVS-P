@@ -1,6 +1,6 @@
-;=
-;=<SPECIAL MOVES=
-;=
+;
+;<SPECIAL MOVES=
+;
 
 ;KINESIS
 [Statedef 1000]

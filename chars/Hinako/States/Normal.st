@@ -2,7 +2,7 @@
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;<NORMAL MOVES>==
+;NORMAL MOVES=
 ;
 
 ;---------------------------------------------------------------------------
@@ -1898,7 +1898,7 @@ type=changestate
 trigger1= pos y>-vel y
 value=52
 
-;<Throw Attempt>==
+;Throw Attempt=
 [Statedef 800]
 type = S
 movetype = A

@@ -4221,7 +4221,7 @@ color = 256
 
 
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I
@@ -4341,7 +4341,7 @@ ctrl = 1
 
 
 
-;VIOLENT TAUNT>==
+;VIOLENT TAUNT=
 [StateDef 198]
 type = S
 moveType = I

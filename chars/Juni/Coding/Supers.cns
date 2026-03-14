@@ -1,4 +1,4 @@
-;======================<SPIN DRIVE SMASHER>===================
+;SPIN DRIVE SMASHER==
 [Statedef 3000]
 type    = S
 movetype= A
@@ -559,7 +559,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<SPIN DRIVE SMASHER MAX>===================
+;SPIN DRIVE SMASHER MAX==
 [Statedef 3050]
 type    = S
 movetype= A
@@ -1172,7 +1172,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<REVERSE SHAFT BREAKER>===================
+;REVERSE SHAFT BREAKER==
 [Statedef 3100]
 type    = S
 movetype= A
@@ -1630,7 +1630,7 @@ trigger1 = !Animtime
 value = 0
 ctrl = 1
 
-;======================<MAX REVERSE SHAFT BREAKER>===================
+;MAX REVERSE SHAFT BREAKER==
 [Statedef 3150]
 type    = S
 movetype= A
@@ -2114,7 +2114,7 @@ trigger1 = !Animtime
 value = 0
 ctrl = 1
 
-;===================<PSYCHO STREAK>====================
+;PSYCHO STREAK=
 [StateDef 3200]
 type = S
 physics = S
@@ -2243,7 +2243,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===================<MAX PSYCHO STREAK>====================
+;MAX PSYCHO STREAK=
 [StateDef 3250]
 type = S
 physics = S
@@ -2373,7 +2373,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===================<PSYCHO WHIRL>====================
+;PSYCHO WHIRL=
 [StateDef 3300]
 type = S
 physics = S
@@ -2692,7 +2692,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<DEATH CROSS DANCING>===================
+;DEATH CROSS DANCING==
 [Statedef 3400]
 type = S
 movetype = A
@@ -3364,7 +3364,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<HIT by DCD CUSTOM STATES>========================
+;HIT by DCD CUSTOM STATES=
 ;Initial hit state
 [Statedef 3420]
 type    = S

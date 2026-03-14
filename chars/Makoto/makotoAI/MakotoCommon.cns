@@ -5767,7 +5767,7 @@ value = 1
 type = ChangeState
 trigger1 = 1
 value = 42
-;==========< GUARD >==========
+; GUARD =
 ;--- START ---
 [Statedef 120]
 type = U

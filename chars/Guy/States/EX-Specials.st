@@ -2,10 +2,10 @@
 ;| Guy by Phantom.of.the.Server |
 ; 
 ;
-; EX SPECIAL STATES >==
+; EX SPECIAL STATES =
 ;
 
-; HOUZANTOU >==
+; HOUZANTOU =
 [Statedef 1010]
 type = S
 movetype = A
@@ -288,7 +288,7 @@ value = 0
 ctrl = 1
 
 
-; KAGE SUKUI >==
+; KAGE SUKUI =
 [Statedef 1135]
 type = S
 movetype = A
@@ -376,7 +376,7 @@ value = 0
 ctrl = 1
 
 
-; KUBIKARI >==
+; KUBIKARI =
 [Statedef 1140]
 type = S
 movetype = A
@@ -506,7 +506,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-; SEICHUUKARI >==
+; SEICHUUKARI =
 [Statedef 1145]
 type = S
 movetype = A
@@ -609,7 +609,7 @@ trigger1 = animelemtime(6) >= 0
 movetype = I
 
 
-; WARP >==
+; WARP =
 [Statedef 1150]
 type = S
 physics = S

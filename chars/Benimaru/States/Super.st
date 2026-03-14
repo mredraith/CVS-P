@@ -1771,7 +1771,7 @@ ctrl = 1
 
 
 
-;ELEC-TRIGGER (TARGET)>==
+;ELEC-TRIGGER (TARGET)=
 ;Being Thrown
 [StateDef 3215]
 type = A
@@ -2295,7 +2295,7 @@ ctrl = 1
 
 
 
-;MAX ELEC-TRIGGER (TARGET)>==
+;MAX ELEC-TRIGGER (TARGET)=
 ;Being Thrown
 [StateDef 3265]
 type = A

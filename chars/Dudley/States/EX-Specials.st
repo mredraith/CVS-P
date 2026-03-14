@@ -2,7 +2,7 @@
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
 ; 
 ;
-; EX SPECIAL STATES >==
+; EX SPECIAL STATES =
 ;
 
 ; EX Machine Gun Blow

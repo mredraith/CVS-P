@@ -1,4 +1,4 @@
-;<HELPERS>=
+;HELPERS>=
 
 ; Parry Helper
 [StateDef 765]
@@ -4562,7 +4562,7 @@ trigger1 = animtime = 0
 trigger2 = parent,stateno != 3150
 trigger3 = parent,stateno = 3150 && parent,time = 1
 
-;<MAX GENOCIDE HEAVEN EFFECTS>=
+;MAX GENOCIDE HEAVEN EFFECTS>=
 [Statedef 3191]
 type = A
 movetype = I
@@ -4621,7 +4621,7 @@ trigger1 = animtime = 0
 trigger2 = parent,stateno != 3150
 trigger3 = parent,stateno = 3150 && parent,time = 1
 
-;<MAX GENOCIDE HEAVEN EFFECTS>=
+;MAX GENOCIDE HEAVEN EFFECTS>=
 [Statedef 3193]
 type = A
 movetype = I
@@ -4689,7 +4689,7 @@ trigger2 = parent,stateno != 3150
 trigger3 = parent,stateno = 3150 && parent,animelem = 35
 trigger4 = parent,stateno = 3150 && parent,time = 1
 
-;<MAX GENOCIDE HEAVEN EFFECTS>=
+;MAX GENOCIDE HEAVEN EFFECTS>=
 [Statedef 3194]
 type = A
 movetype = I
@@ -4746,7 +4746,7 @@ trigger1 = anim = 3196 && animtime = 0
 trigger2 = parent,stateno != 3150
 trigger3 = parent,stateno = 3150 && parent,time = 1
 
-;<MAX GENOCIDE HEAVEN EFFECTS>=
+;MAX GENOCIDE HEAVEN EFFECTS>=
 [Statedef 3195]
 type = A
 movetype = I
@@ -4805,7 +4805,7 @@ trigger1 = animtime = 0
 trigger2 = parent,stateno != 3150
 trigger3 = parent,stateno = 3150 && parent,time = 1
 
-;<SHOCK>=
+;SHOCK>=
 [Statedef 3240]
 type = A
 velset = 0,0
@@ -4849,7 +4849,7 @@ type = DestroySelf
 trigger1 = time >= 60
 trigger2 = enemynear,ctrl ||(enemynear,movetype != H) || (enemynear,statetype = L)
 
-;<KAISER PHOENIX PROJECTILE>=
+;KAISER PHOENIX PROJECTILE>=
 [Statedef 3241]
 type = S
 physics = N
@@ -6306,7 +6306,7 @@ value = 3270
 type = destroyself
 trigger1 = pos x != [-300,300]
 
-;<ReppuKen End>==
+;ReppuKen End=
 [Statedef 3270]
 type = A
 physics = N
@@ -6336,7 +6336,7 @@ trigger1 = !NumTarget
 trigger2 = NumTarget
 trigger2 = Target, Time <= 1 && !(Target,HitShakeOver)
 
-;<RASHOUMON AURA>=
+;RASHOUMON AURA>=
 ;--- Looping ---
 [Statedef 3555]
 type = A
@@ -6418,7 +6418,7 @@ trigger3 = enemynear, statetype = L && (enemynear, stateno != [5080, 5081])
 type = destroyself
 trigger1 = !numenemy || time >= 120
 
-;<ELECTRIFIED FX>==
+;ELECTRIFIED FX=
 [Statedef 7300]
 type = A
 movetype = A
@@ -6498,7 +6498,7 @@ trigger2 = enemynear,ctrl || (enemynear,movetype!=H) || (enemynear,statetype=L)
 trigger3 = (root,stateno = [200,999]) && (root,movecontact)
 trigger4 = (root,stateno = [3000,3999]) && (root,movecontact)
 
-;<KANJI>=
+;KANJI>=
 [Statedef 7070]
 physics = N
 velset = 0, 0
@@ -6561,7 +6561,7 @@ y = -0.25
 type = destroyself
 trigger1 = !animtime
 
-;<BLACK KANJI>=
+;BLACK KANJI>=
 [Statedef 7075]
 physics = N
 velset = 0, 0
@@ -6583,7 +6583,7 @@ elem = 3
 type = destroyself
 trigger1 = root, stateno = 3501 && time = 73
 
-;<SPARKS>=
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -7696,7 +7696,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<JUMP DUST>==
+;JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -7733,7 +7733,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;<DASH DUST>==
+;DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -7793,7 +7793,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<IMPACT DUST>==
+;IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -7843,7 +7843,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<WALL IMPACT DUST>==
+;WALL IMPACT DUST=
 [StateDef 8111]
 type = A
 anim = 1
@@ -7893,7 +7893,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;<BURN FX>=
+;BURN FX>=
 [Statedef 8180]
 physics=N
 velset=0,0
@@ -7940,7 +7940,7 @@ trigger2= enemynear,ctrl || (enemynear,movetype!=H) || (enemynear,statetype=L)
 trigger3 = (root,stateno = [200,999]) && (root,movecontact)
 trigger4 = (root,stateno = [3000,3999]) && (root,movecontact)
 
-;<RECOVER FX>=
+;RECOVER FX>=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -7970,7 +7970,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 15
 
-;<COUNTER FX>=
+;COUNTER FX>=
 [StateDef 8290]
 type = A
 physics = N
@@ -8014,7 +8014,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;<POWER CHARGE FX>=
+;POWER CHARGE FX>=
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -8120,7 +8120,7 @@ trigger1 = Root, StateNo != 730
 type = DestroySelf
 trigger1 = Root, StateNo != 730
 
-;<VIOLENT WIN VS VEGA PARTICLES>=
+;VIOLENT WIN VS VEGA PARTICLES>=
 [StateDef 8332]
 type = A
 physics = N
@@ -8155,7 +8155,7 @@ trigger1 = Root, StateNo != 187 || Root, AnimElemTime(60) >= 0
 type = DestroySelf
 trigger1 = Root, StateNo != 187 || Root, AnimElemTime(60) >= 0
 
-;<ZERO COUNTER FX>=
+;ZERO COUNTER FX>=
 [StateDef 8350]
 type = A
 physics = N
@@ -8309,7 +8309,7 @@ trigger1 = Time >= 26
 type = DestroySelf
 trigger1 = Time >= 26
 
-;<SUPER PAUSE FX>=
+;SUPER PAUSE FX>=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -8946,7 +8946,7 @@ trigger1 = Time >= 40
 type = DestroySelf
 trigger1 = Time >= 40
 
-;<SUPER FINISH>=
+;SUPER FINISH>=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -9105,7 +9105,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;<CAMERA CONTROL>=
+;CAMERA CONTROL>=
 [StateDef 8999]
 type = S
 velSet = 0,0

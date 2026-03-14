@@ -5,7 +5,7 @@
 ; MODE STATES 
 ;
 
-; NORMAL GOUKI >==
+; NORMAL GOUKI =
 [Statedef 5900]
 type = S
 [State 5900, varreset]

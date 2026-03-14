@@ -2208,7 +2208,7 @@ type=ChangeState
 trigger1=!AnimTime
 value=0
 ctrl=1
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [Statedef 805]
 type=S
 movetype=A
@@ -2276,7 +2276,7 @@ ctrl=1
 type=changestate
 trigger1= animelemtime(3)>=0
 value=ifelse(var(10),820,810)
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -2501,7 +2501,7 @@ type = ChangeState
 trigger1 = Animtime=0
 value = 816
 
-;=========================================================
+;
 [Statedef 816]
 type = A
 movetype = H
@@ -2906,7 +2906,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;===========<RYUSEIRAKU>==========
+;RYUSEIRAKU=
 ; Ryuseiraku - In Air
 [StateDef 860]
 type = A
@@ -2995,7 +2995,7 @@ triggerall = Anim=860
 trigger1 = AnimElem = 3
 pos = 45, -65
 
-;===========<RYUSEIRAKU (TARGET)>==========
+;RYUSEIRAKU (TARGET)=
 ;In Air
 [StateDef 865]
 type = A
@@ -3316,7 +3316,7 @@ x = 2.0
 type = SelfState
 trigger1 = AnimElem = 3, > 0 && Vel Y>0 && Pos Y>=0
 value = 5100
-;===========<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N
@@ -3468,7 +3468,7 @@ trigger1 = Time >= 27
 value = 0
 ctrl = 1
 
-;===========<THROW ESCAPE MIDAIR>==========
+;THROW ESCAPE MIDAIR=
 [StateDef 892]
 type = A
 physics = N

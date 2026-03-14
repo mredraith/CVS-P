@@ -3262,7 +3262,7 @@ y = -60
 type = DestroySelf
 trigger1 = time = 98
 
-;TAUNT>==
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = I

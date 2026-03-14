@@ -237,4 +237,4 @@ triggerall = root,var(17) >= 10
 [State 8550, 7] 
 Type = destroyself 
 triggerall = root,var(17) < 10
-trigger1 = time>80 && roundstate!=3;= 20;25
+trigger1 = time>80 && roundstate!=3; 20;25

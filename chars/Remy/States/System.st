@@ -2,7 +2,7 @@
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
-;<SYSTEM STATES>==
+;SYSTEM STATES=
 ;
 
 ;---------------------------------------------------------------------------
@@ -33,7 +33,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;<CROUCHING>=
+;CROUCHING>=
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -2580,7 +2580,7 @@ type = selfstate
 trigger1 = time >= 60
 value = 5210
 
-;<OFF SCREEN STAND BY>==
+;OFF SCREEN STAND BY=
 ;Stand by
 [Statedef 7827]
 type=S
@@ -2610,7 +2610,7 @@ type=ChangeState
 trigger1=NumEnemy=2
 trigger1=Enemy(1),statetype=L || Enemy(1),movetype != H
 value=7828
-;<OFF SCREEN RUN IN>==
+;OFF SCREEN RUN IN=
 ;Off Screen Run In
 [Statedef 7828]
 type   =S
@@ -2655,7 +2655,7 @@ type=ChangeState
 trigger1= time>=20
 value=7829
 ctrl=0
-;<OFF SCREEN RUN STOP>==
+;OFF SCREEN RUN STOP=
 ;Off Screen Run Stop
 [Statedef 7829]
 type   =S
@@ -3876,7 +3876,7 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = invisible
-flag3 = nokoslow;<------------optional
+flag3 = nokoslow;------------optional
 ignorehitpause = 1
 
 [State 9955,NHB]
@@ -3887,16 +3887,16 @@ value = SCA
 [State 9955, pause]
 type = Pause
 trigger1 = 1
-time = 28;<---adjust to your likings
+time = 28;---adjust to your likings
 ignorehitpause = 1
 persistent = 0
 
 [State 9955, DestroySelf]
 type = DestroySelf
-trigger1 = time >= 28;<---make the time match the time in the pause code above
+trigger1 = time >= 28;---make the time match the time in the pause code above
 
 ;
-;< -2 STATES >=
+; -2 STATES >=
 ;
 [Statedef -2]
 
@@ -4387,7 +4387,7 @@ supermovetime = 9999999999
 pausemovetime = 9999999999
 
 ;
-;< -3 STATES >=
+; -3 STATES >=
 ;
 [Statedef -3]
 

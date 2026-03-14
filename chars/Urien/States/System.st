@@ -1,8 +1,8 @@
-;==============================================================================================
-;=======================================<SYSTEM STATES>========================================
-;==============================================================================================
+;
+;SYSTEM STATES=
+;
 
-;====================<STANDING>====================
+;STANDING=
 [StateDef 0]
 type = S
 physics = S
@@ -29,7 +29,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;====================<CROUCHING>====================
+;CROUCHING=
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -97,7 +97,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====================<WALKING>====================
+;WALKING=
 [StateDef 20]
 type = S
 physics = S
@@ -128,7 +128,7 @@ trigger1 = Anim != 21 && Anim != 5
 trigger2 = Anim = 5 && AnimElemTime(1) >= 1
 value = 21
 
-;====================<JUMPING>====================
+;JUMPING=
 ;Jumping
 [StateDef 40]
 type = S
@@ -340,7 +340,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<RUN>===========================
+;RUN=
 [StateDef 100]
 type = S
 physics = N
@@ -414,7 +414,7 @@ trigger1 = !AnimTime
 value = ifElse(command = "holddown", 10, 0)
 ctrl = 1
 
-;========================<DASH BACKWARDS>==========================
+;DASH BACKWARDS=
 [StateDef 105]
 type = A
 physics = N
@@ -510,7 +510,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=================<DASH FORWARD>=================
+;DASH FORWARD==
 [StateDef 110]
 type = S
 physics = N
@@ -615,7 +615,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<DODGE>====================
+;DODGE=
 [StateDef 700]
 type = S
 physics = S
@@ -667,7 +667,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;================<ROLL FORWARD>================
+;ROLL FORWARD=
 [StateDef 710]
 type = S
 physics = N
@@ -717,7 +717,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===============<ROLL BACKWARDS>===============
+;ROLL BACKWARDS==
 [StateDef 715]
 type = S
 physics = N
@@ -767,7 +767,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==========<POWER CHARGE>==========
+;POWER CHARGE=
 [StateDef 730]
 type = S
 physics = S
@@ -855,7 +855,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<ZERO COUNTER>====================
+;ZERO COUNTER=
 [StateDef 750]
 type = S
 physics = S
@@ -923,7 +923,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 2910, 2900)
 
-;====================<PARRY>====================
+;PARRY=
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1178,7 +1178,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;====================<CUSTOM COMBO>====================
+;CUSTOM COMBO=
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1371,7 +1371,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==========<TARGET SAFE FALL>==========
+;TARGET SAFE FALL=
 [StateDef 5205]
 type = A
 physics = N
@@ -1399,7 +1399,7 @@ type = SelfState
 trigger1 = Time >= 60
 value = 5210
 
-;==========<FALL RECOVERY>==========
+;FALL RECOVERY=
 [StateDef 5200]
 type = A
 moveType = H
@@ -1557,7 +1557,7 @@ trigger1 = vel y > 0
 trigger1 = pos y > -vel y
 value = 52
 
-;===================<SHOCKED STATE>================
+;SHOCKED STATE=
 ;Credit goes to Rajaa
 [Statedef 5800]
 type = U
@@ -1621,7 +1621,7 @@ trigger1 = !gethitvar(hitshaketime)
 trigger2 = time > 128
 value = 5000 * statetype = S + 5010 * statetype = C + 5030 * statetype = A
 
-;===================<GUARD>================
+;GUARD=
 ;Guard Start
 [StateDef 120]
 type = U
@@ -2081,7 +2081,7 @@ type = ChangeState
 trigger1 = sysvar(0)
 value = 52
 
-;====================<LOSE>====================
+;LOSE=
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2110,7 +2110,7 @@ type = AssertSpecial
 trigger1 = Time < 240
 flag = RoundNotOver
 
-;====================<DRAW GAME>====================
+;DRAW GAME=
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2139,7 +2139,7 @@ type = AssertSpecial
 trigger1 = Time < 240
 flag = RoundNotOver
 
-;==========<TAUNT>==========
+;TAUNT=
 [StateDef 195]
 type = S
 moveType = A
@@ -2248,7 +2248,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<INITIALIZE>====================
+;INITIALIZE=
 [StateDef 5900]
 type = S
 
@@ -2277,7 +2277,7 @@ type = ChangeState
 trigger1 = 1
 value = 0
 
-;====================<INTRO>====================
+;INTRO=
 [StateDef 190]
 type = S
 physics = S
@@ -2317,7 +2317,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====================<TURNS INTRO>====================
+;TURNS INTRO=
 [StateDef 6900]
 type = A
 anim = 42
@@ -2432,7 +2432,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====================<WIN POSE DECIDER>====================
+;WIN POSE DECIDER=
 [StateDef 180]
 type = S
 
@@ -2598,7 +2598,7 @@ type = ChangeState
 trigger1 = 1
 value = 181 + random%3
 
-;====================<WIN 1>====================
+;WIN 1=
 [StateDef 181]
 type = S
 physics = S
@@ -2628,7 +2628,7 @@ TriggerAll = Anim = 187
 trigger1 = AnimElem = 1
 value = 190, 1
 
-;=================<WIN POSE : DASH>=================
+;WIN POSE : DASH==
 [StateDef 182]
 type = S
 physics = S
@@ -2676,7 +2676,7 @@ trigger1 = AnimElemTime(2) >= 0
 trigger1 = pos y > -vel y
 value = 188
 
-;====================<WIN 2 : PUNCH>====================
+;WIN 2 : PUNCH=
 [StateDef 183]
 type = S
 physics = S
@@ -2722,7 +2722,7 @@ type = ChangeState
 trigger1 = Time = 112
 value = 184
 
-;====================<WIN 2 : (SERIOUS)>====================
+;WIN 2 : (SERIOUS)=
 [StateDef 184]
 type = S
 physics = S
@@ -2745,7 +2745,7 @@ type = ChangeState
 trigger1 = Time = 4 && IfElse(Random < 500, 1, 0) 
 value = 185
 
-;====================<WIN 2 : (SMILE)>====================
+;WIN 2 : (SMILE)=
 [StateDef 185]
 type = S
 physics = S
@@ -2768,7 +2768,7 @@ type = ChangeState
 trigger1 = Time = 4 && IfElse(Random < 500, 1, 0) 
 value = 186
 
-;====================<WIN 2 : (GRIN)>====================
+;WIN 2 : (GRIN)=
 [StateDef 186]
 type = S
 physics = S
@@ -2786,7 +2786,7 @@ type = PlaySnd
 trigger1 = AnimElem = 3
 value = 183,0
 
-;====================<WIN 3>====================
+;WIN 3=
 [StateDef 187]
 type = S
 physics = S
@@ -2878,7 +2878,7 @@ trigger1 = !AnimTime
 value = 183
 ctrl = 1
 
-;====================<CHEAP K.O.>====================
+;CHEAP K.O.=
 [StateDef 5950]
 type = S
 moveType = H
@@ -2929,7 +2929,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;====================<AIR HIT TRANSITION>====================
+;AIR HIT TRANSITION=
 [Statedef 5035]
 type = A
 movetype = H
@@ -2967,9 +2967,9 @@ trigger4 = !Time
 trigger4 = Anim != 5035
 value = 5050
 
-;===========================================================================
-;===============================<-2 STATES>=================================
-;===========================================================================
+;
+;-2 STATES=
+;
 [StateDef -2]
 
 [State -2, Lv3 Super Finish Detection]
@@ -3340,9 +3340,9 @@ trigger1 = 1
 text = "\nBy Froz"
 ignoreHitPause = 1
 
-;===========================================================================
-;===============================<-3 STATES>=================================
-;===========================================================================
+;
+;-3 STATES=
+;
 [StateDef -3]
 
 [State -3, GameTime]

@@ -2050,7 +2050,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -2121,7 +2121,7 @@ type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = ifelse(PrevStateNo = 850, 860,810)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -2244,7 +2244,7 @@ trigger1 = NumTarget && AnimElem = 9 , = 4
 var(16) = 1
 ignoreHitPause = 1
 
-;============================================
+;
 ;Etc
 
 [State 810, 1]
@@ -2518,7 +2518,7 @@ type = AssertSpecial
 trigger1 = 1
 flag = NoAutoTurn
 
-;============================================
+;
 ;Etc
 
 [State 860, 1]
@@ -2631,7 +2631,7 @@ trigger1 = NumTarget && AnimElem = 2 , = 0
 var(16) = 1
 ignoreHitPause = 1
 
-;============================================
+;
 ;Etc
 
 [State 860, 1]
@@ -2719,7 +2719,7 @@ trigger1 = Pos Y >= 0
 trigger1 = Vel Y > 0
 value = 5100
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N

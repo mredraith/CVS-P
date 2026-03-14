@@ -2476,7 +2476,7 @@ value = 1111
 
 
 
-;SAKA HAYAGAKE>==
+;SAKA HAYAGAKE=
 [StateDef 1200]
 type = S
 physics = S
@@ -2808,7 +2808,7 @@ ctrl = 0
 
 
 
-;REPPUKYAKU>==
+;REPPUKYAKU=
 [StateDef 1300]
 type = S
 physics = S
@@ -5139,7 +5139,7 @@ value = 1111
 
 
 
-;PUNCH ZERO COUNTER>==
+;PUNCH ZERO COUNTER=
 [StateDef 2900]
 type = S
 physics = N

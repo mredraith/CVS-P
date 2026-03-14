@@ -1691,7 +1691,7 @@ trigger1 = pos y >= 0
 value = 52
 
 
-; HYAKKI GOU DAN >==
+; HYAKKI GOU DAN =
 [Statedef 1303]
 type = A
 movetype = A
@@ -1882,7 +1882,7 @@ value = 0
 ctrl = 1
 
 
-; HYAKKI GOU ZAN >==
+; HYAKKI GOU ZAN =
 [Statedef 1305]
 type = A
 movetype = A

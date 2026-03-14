@@ -2144,7 +2144,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;==================<THROW ATTEMPT>==================
+;THROW ATTEMPT=
 [Statedef 800]
 type    = S
 movetype= A
@@ -2235,7 +2235,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES=
 [StateDef 805]
 type = S
 moveType = A
@@ -2301,7 +2301,7 @@ type = ChangeState
 trigger1 = AnimElemTime(4) >= 0
 value = ifElse(var(10),820,810)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)=
 [StateDef 806]
 type = A
 moveType = H
@@ -2332,7 +2332,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;===========<GERMAN SUPLEX>==========
+;GERMAN SUPLEX=
 [Statedef 810]
 type = S
 movetype = A
@@ -2553,7 +2553,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<GERMAN SUPLEX(TARGET)>==========
+;GERMAN SUPLEX(TARGET)=
 [Statedef 815]
 type = A
 movetype = H
@@ -2636,7 +2636,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;===========<FRANKENSTEINER>==========
+;FRANKENSTEINER=
 [Statedef 820]
 type = A
 movetype = A
@@ -2924,7 +2924,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;================<FRANKENSTEINER (TARGET)>===============
+;FRANKENSTEINER (TARGET)==
 [Statedef 825]
 type = A
 movetype = H
@@ -3031,7 +3031,7 @@ trigger1 = vel y>0
 trigger1 = pos y>-vel y
 value = 5100
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D=
 [StateDef 890]
 type = S
 physics = N
@@ -3183,7 +3183,7 @@ trigger1 = Time >= 27
 value = 0
 ctrl = 1
 
-;===========<AIR THROW ATTEMPT>==========
+;AIR THROW ATTEMPT=
 [StateDef 900]
 type = A
 physics = N
@@ -3546,7 +3546,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;========<FLYING NECK HUNT>==========
+;FLYING NECK HUNT=
 [Statedef 910]
 type    = A
 movetype = A
@@ -3653,7 +3653,7 @@ trigger1 = AnimElemTime(4) >= 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 52
 
-;==============<FLYING NECK HUNT (TARGET)>====================
+;FLYING NECK HUNT (TARGET)=
 [Statedef 920]
 type = A
 movetype = H
@@ -3723,7 +3723,7 @@ type = SelfState
 trigger1 = vel y>0 && pos y>=25
 value = 5100
 
-;================<AIR FRANKENSTEINER>==============
+;AIR FRANKENSTEINER=
 [Statedef 930]
 type = A
 movetype = A
@@ -3958,7 +3958,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;================<AIR FRANKENSTEINER (TARGET)>==============
+;AIR FRANKENSTEINER (TARGET)=
 [Statedef 940]
 type = A
 movetype = H

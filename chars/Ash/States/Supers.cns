@@ -1991,10 +1991,10 @@ type= ChangeAnim2
 trigger1 = Time = 50
 value = IfElse(random>200,5001,5011)
 
-;=======================================;
+;;
 ;CHIZURU COMPATIBILITY	          ;
 ;by Vans                                ;
-;=======================================;
+;;
 [State 1000, CHIZURU COMPATIBILITY] 	;
 type = Projectile 			;
 trigger1 = Time = 100
@@ -2010,7 +2010,7 @@ postype = p1			;
 offset = 0,300			;
 persistent = 0			;
 ignorehitpause = 1			;
-;=======================================;
+;;
 
 [State 3330, ChangeAnim]
 type = ChangeAnim

@@ -1,4 +1,4 @@
-;<SUPERS>=
+;SUPERS>=
 
 ;G.Kronprinz (L) LVL1
 [StateDef 3000]
