@@ -918,7 +918,7 @@ function start.f_cellMovement(selX, selY, cmd, side, snd, dir)
 	local tmpX = selX
 	local tmpY = selY
 	local found = false
-	if getInput({cmd}, motif.select_info.cell.up.key) or dir == 'U' then
+	if getInput(cmd, motif.select_info.cell.up.key) or dir == 'U' then
 		for i = 1, motif.select_info.rows do
 			selY = selY - 1
 			if selY < 0 then
@@ -939,7 +939,7 @@ function start.f_cellMovement(selX, selY, cmd, side, snd, dir)
 				break
 			end
 		end
-	elseif getInput({cmd}, motif.select_info.cell.down.key) or dir == 'D' then
+	elseif getInput(cmd, motif.select_info.cell.down.key) or dir == 'D' then
 		for i = 1, motif.select_info.rows do
 			selY = selY + 1
 			if selY >= motif.select_info.rows then
@@ -960,7 +960,7 @@ function start.f_cellMovement(selX, selY, cmd, side, snd, dir)
 				break
 			end
 		end
-	elseif getInput({cmd}, motif.select_info.cell.left.key) or dir == 'B' then
+	elseif getInput(cmd, motif.select_info.cell.left.key) or dir == 'B' then
 		if dir ~= nil then
 			found, selX = start.f_searchEmptyBoxes(selX, selY, side, -1)
 		else
@@ -978,7 +978,7 @@ function start.f_cellMovement(selX, selY, cmd, side, snd, dir)
 				end
 			end
 		end
-	elseif getInput({cmd}, motif.select_info.cell.right.key) or dir == 'F' then
+	elseif getInput(cmd, motif.select_info.cell.right.key) or dir == 'F' then
 		if dir ~= nil then
 			found, selX = start.f_searchEmptyBoxes(selX, selY, side, 1)
 		else
@@ -2598,7 +2598,7 @@ function start.f_selectScreen()
 			end
 			--exit select screen
 			for _, v in ipairs(start.p[side].t_selCmd) do
-				if not start.escFlag and (esc() or (getInput({v.cmd}, motif.select_info.cancel.key) and not start.p[side].inPalMenu)) then
+				if not start.escFlag and (esc() or (getInput(v.cmd, motif.select_info.cancel.key) and not start.p[side].inPalMenu)) then
 					main.f_fadeReset('fadeout', motif.select_info)
 					fadeOutStarted = true
 					start.escFlag = true
@@ -3142,7 +3142,7 @@ function start.f_palMenu(side, cmd, player, member, selectState)
 	start.p[side].inPalMenu = true
 
 	-- accept selection
-	if getInput({cmd}, motif.select_info['p' .. side].palmenu.done.key) or timerSelect == -1 then
+	if getInput(cmd, motif.select_info['p' .. side].palmenu.done.key) or timerSelect == -1 then
 		pal = (curIdx == maxIdx) and (start.c[player].randPalPreview or start.f_randomPal(charRef, validPals)) or validPals[curIdx]
 		st.pal, st.currentIdx = pal, curIdx
 
@@ -3174,7 +3174,7 @@ function start.f_palMenu(side, cmd, player, member, selectState)
 		start.f_playWave(start.c[player].selRef, 'cursor', motif.select_info['p' .. side].select.snd[1], motif.select_info['p' .. side].select.snd[2])
 		sndPlay(motif.Snd, motif.select_info['p' .. side].palmenu.done.snd[1], motif.select_info['p' .. side].palmenu.done.snd[2])
 	 -- next palette
-	elseif getInput({cmd}, motif.select_info['p' .. side].palmenu.next.key) then
+	elseif getInput(cmd, motif.select_info['p' .. side].palmenu.next.key) then
 		curIdx = (curIdx == maxIdx) and 1 or curIdx + 1
 		st.currentIdx = curIdx
 		if curIdx < maxIdx then
@@ -3182,7 +3182,7 @@ function start.f_palMenu(side, cmd, player, member, selectState)
 		end
 		sndPlay(motif.Snd, motif.select_info['p' .. side].palmenu.value.snd[1], motif.select_info['p' .. side].palmenu.value.snd[2])
 	-- previous palette
-	elseif getInput({cmd}, motif.select_info['p' .. side].palmenu.previous.key) then
+	elseif getInput(cmd, motif.select_info['p' .. side].palmenu.previous.key) then
 		curIdx = (curIdx == 1) and maxIdx or curIdx - 1
 		st.currentIdx = curIdx
 		if curIdx < maxIdx then
@@ -3190,7 +3190,7 @@ function start.f_palMenu(side, cmd, player, member, selectState)
 		end
 		sndPlay(motif.Snd, motif.select_info['p' .. side].palmenu.value.snd[1], motif.select_info['p' .. side].palmenu.value.snd[2])
 	-- cancel
-	elseif getInput({cmd}, motif.select_info['p' .. side].palmenu.cancel.key) then
+	elseif getInput(cmd, motif.select_info['p' .. side].palmenu.cancel.key) then
 		st.face_data = start.f_animGet(start.c[player].selRef, side, member, motif.select_info['p' .. pn].face, nil, true, st.face_data)
 		st.face2_data = start.f_animGet(start.c[player].selRef, side, member, motif.select_info['p' .. pn].face2, nil, true, st.face2_data)
 		selectState = 0
@@ -3199,7 +3199,7 @@ function start.f_palMenu(side, cmd, player, member, selectState)
 		sndPlay(motif.Snd, motif.select_info['p' .. side].palmenu.cancel.snd[1], motif.select_info['p' .. side].palmenu.cancel.snd[2])
 	end
 	-- random hotkey
-	if getInput({cmd}, motif.select_info['p' .. side].palmenu.random.key) then
+	if getInput(cmd, motif.select_info['p' .. side].palmenu.random.key) then
 		curIdx, st.currentIdx = maxIdx, maxIdx
 	end
 	-- random preview update
@@ -3563,6 +3563,16 @@ end
 --;===========================================================
 --; VERSUS SCREEN / ORDER SELECTION
 --;===========================================================
+local function orderSkipPressed(done, t_orderSelect)
+	local p1Skip = not main.cpuSide[1] and getInput(1, motif.vs_screen.skip.key)
+	local p2Skip = not main.cpuSide[2] and getInput(2, motif.vs_screen.skip.key)
+	-- While order selection is still active, require both human sides to skip.
+	if not done and (t_orderSelect[1] or t_orderSelect[2]) and not main.cpuSide[1] and not main.cpuSide[2] then
+		return p1Skip and p2Skip
+	end
+	return p1Skip or p2Skip
+end
+
 function start.f_selectVersus(active, t_orderSelect)
 	start.t_orderRemap = {{}, {}}
 	for side = 1, 2 do
@@ -3646,7 +3656,7 @@ function start.f_selectVersus(active, t_orderSelect)
 								snd = true
 							end
 						end
-					elseif getInput({side}, pCfg.key) or (#start.p[side].t_selected == #t_order[side] + 1) then
+					elseif getInput(side, pCfg.key) or (#start.p[side].t_selected == #t_order[side] + 1) then
 						table.insert(t_order[side], k)
 						-- confirm char selection (starts loading immediately if gameOption('Config.BackgroundLoading') is true)
 						selectChar(side, v.ref, v.pal)
@@ -3776,8 +3786,8 @@ function start.f_selectVersus(active, t_orderSelect)
 			if not fadeOutStarted and (
 				-- Wait for order select to finish before vs_screen.time can end the screen.
 				(counter >= motif.vs_screen.time and (not (t_orderSelect[1] or t_orderSelect[2]) or done))
-				or (not main.cpuSide[side] and getInput({side}, motif.vs_screen.skip.key))
-				or (done and getInput({side}, motif.vs_screen.done.key))
+				or orderSkipPressed(done, t_orderSelect)
+				or (done and getInput(side, motif.vs_screen.done.key))
 				) then
 				main.f_fadeReset('fadeout', motif.vs_screen)
 				fadeOutStarted = true

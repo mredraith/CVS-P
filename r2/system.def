@@ -2151,13 +2151,15 @@ movelist.arrow.down.facing = 1
 movelist.arrow.down.scale = 1.0, 1.0
 
 menu.itemname.back = Continue
+menu.itemname.reset = Round Reset
+menu.itemname.reload = Rematch
+menu.itemname.commandlist = How To Play
 menu.itemname.menuinput = Button Config
 menu.itemname.menuinput.keyboard = Key Config
 menu.itemname.menuinput.gamepad = Joystick Config
 menu.itemname.menuinput.spacer = -
 menu.itemname.menuinput.inputdefault = Default
 menu.itemname.menuinput.back = Back
-menu.itemname.commandlist = How To Play
 menu.itemname.characterchange = Character Change
 menu.itemname.exit = Exit
 
