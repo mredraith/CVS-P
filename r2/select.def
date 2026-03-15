@@ -340,7 +340,7 @@ Mr.karate, random, order=3
 Jimmy-POTS, random, order=1
 Hinako, random, order=1
 ; break
-empty
+ZeroCVS, random, order=2
 Decapre, random, order=1
 Juni, random, order=1
 DivineJuli, random, order=1
@@ -357,7 +357,7 @@ TungCVS, random, order=1
 Shingo, random, order=1
 ;break
 empty
-ZeroCVS, random, order=2
+empty
 Makoto, random, order=1
 Necro, random, order=1
 Oro, random, order=1
@@ -365,7 +365,7 @@ Juri, random, order=1
 Gill, random, order=3
 randomselect
 DivineEliza, random, order=1
-empty
+Rumble, random, order=2
 empty
 empty
 empty

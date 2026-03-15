@@ -1,0 +1,243 @@
+;===============< INITIALIZE >=================== ;DON'T TOUCH THIS
+;Initialize Start Round
+[Statedef 5900]
+type = S
+
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+[State 5900, First Battle]
+type = VarSet
+trigger1 = !roundsexisted && matchno = 1
+fvar(38) = 0
+
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !fvar(38)
+first = 0
+last = 59
+value = 0
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !fvar(38)
+first = 0
+last = 39
+fvalue = 0
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+
+
+
+
+
+; Shun Goku Satsu Mode
+[State 5900, Shun Goku Satsu]
+type = VarSet
+trigger1 = 1
+v = 24
+value = 0
+;
+; 0 = Gravity Falls
+; 1 = PotS
+
+
+
+
+;==========================================================================
+;Customizable Configuration
+;==========================================================================
+; Palette Selector
+[State 5900, Palette Selector]
+type = VarSet
+trigger1 = 1
+v = 27
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Palette Selector on Intro
+;Change the value number to 1 if you do want Palette Selector on Intro
+;Default value is 1.
+;===========================================================================
+; PotS Style Hitsparks
+[State 5900, PotS Style Hitsparks]
+type = VarSet
+trigger1 = 1
+v = 43
+value = 2
+;___________________________________________________________________________
+;Change the value number to 0 if you want the Phantom Of The Server hitsparks
+;Change the value number to 1-4 if you want the PotS style hitsparks
+; [1: PotS 2022]
+; [2: PotS Classic]
+; [3: Sennou-Room Multi-Color]
+;  Normal: Golden	Special: Blue	Super: Purple(Front) & Blue(Back)
+; [4: Infinite Multi-Color]
+;  Normal: Golden	Special: Blue	Super: Purple
+;
+;Default value is 4.
+;===========================================================================
+; PotS Style Hit Sounds
+[State 5900, PotS Style Hit Sounds]
+type = VarSet
+trigger1 = 1
+v = 44
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you want the original CVS2 hitsounds
+;Change the value number to 1 if you want the PotS style hitsounds
+;Change the value number to 2 if you want the KamenRiderGOUKI style hitsounds and slashsounds
+;Default value is 1.
+;===========================================================================
+; LV2 & LV3 Super Pause Sound
+[State 5900, LV2 & LV3 Super Pause Sound]
+type = VarSet
+trigger1 = 1
+v = 50
+value = 1
+;___________________________________________________________________________
+;Change the value to from 1 to 4 for the next options:
+; 1 = PotS Classic LV2 and LV3 Super Pause Sounds
+; 2 = Infinite LV2 and LV3 Super Pause Sounds
+; 3 = Infinite LV2 and Buckus/Mr. Ansatsuken LV3 Super Pause Sounds
+; 4 = PotS 2022 LV2 and LV3 Super Pause Sounds
+; 5 = KamenRiderGOUKI LV2 and LV3 Super Pause Sounds
+;============================================================================
+; Chain Combos/Air Combos
+[State 5900, Chain Combos/Air Combos]
+type = VarSet
+trigger1 = 1
+v = 55
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want chain comboing
+;Change the value number to 1 if you want chain comboing
+;Change the value number to 2 if you want chain comboing and Air Comboing
+;Default value is 1.
+;===========================================================================
+; Special Finish
+[State 5900, Special Finish]
+type = VarSet
+trigger1 = 1
+v = 56
+value = 2
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Special Finish
+;Change the value number to 1 if you do want Special Finish
+;Change the value number to 2 if you do want Special Finish (NoMusic)
+;Change the value number to 3 if you do want Special Finish (NoMusic + NoBarDisplay)
+;Change the value number to 4 if you do want Special Finish (NoMusic + NoBarDisplay + NoFG)
+;Default value is 1.
+;===========================================================================
+; Super Finish
+[State 5900, Super Finish]
+type = VarSet
+trigger1 = 1
+v = 57
+value = 2
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Super Finish
+;Change the value number to 1 if you do want Super Finish
+;Change the value number to 2 if you do want Super Finish (NoMusic)
+;Default value is 1.
+;===========================================================================
+; Auto Config Change (ONLY FOR ADD004)
+[State 5900, Auto Config Change for Add004]
+type = VarSet
+trigger1 = 1
+v = 58
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Auto Config Change for Add004
+;Change the value number to 1 if you do want Auto Config Change for Add004
+;Default value is 0.
+;===========================================================================
+; AILevel for Simul with Player
+[State 5900, AILevel for Simul with Player]
+type = VarSet
+trigger1 = 1
+v = 59
+value = 9
+;___________________________________________________________________________
+;Change the value number to 1-2 if you want Easy
+;Change the value number to 3-4 if you want Medium
+;Change the value number to 5-6 if you want Hard
+;Change the value number to 7-8 if you want Very Hard
+;Change the value number to 9-? if you want AILevel in Option Mode
+;Default value is 8.
+;===========================================================================
+
+
+
+
+
+
+
+;=============================================================================
+;Do Not Edit Below This Line
+;=============================================================================
+
+;-----------------------------------------------------------------------------
+;Auto Config Change (ONLY FOR ADD004)
+[State 5900, Palette Selector]
+type = VarSet
+triggerall = var(58)
+trigger1 = 1
+v = 27
+value = 0
+
+[State 5900, EX Mode Selector]
+type = VarSet
+triggerall = var(58)
+trigger1 = 1
+v = 39
+value = 0
+
+[State 5900, Tag Assist StateNo]
+type = VarSet
+triggerall = var(58)
+trigger1 = 1
+sysvar(0) = 1000
+;-----------------------------------------------------------------------------
+
+
+[State 5900, Pal Selector on]
+type=helper
+triggerall=var(27)&&!numhelper(256)&&!AILevel&&numenemy
+trigger1= !roundsexisted && !fvar(38)
+trigger2= !var(26) 
+id=256
+stateno=256
+facing=facing
+ownpal=1
+size.xScale=0.5
+size.yScale=0.5
+
+[state 5900, No Palette selector]
+type = remappal
+trigger1 = !var(27)
+trigger2 = AILevel && !var(26)
+source = 1, 1
+dest = 1, palno
+ignorehitpause = 1
+
+
+[State 5900, Turns Intro]
+type = ChangeState
+trigger1 = TeamMode = Turns
+trigger1 = !RoundsExisted && RoundNo >= 2
+value = 191
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1 && AILevel
+value = ifelse(random%2, 6900, ifelse(random%2, 191, 190))
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1
+value = 190 + random%2
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 0

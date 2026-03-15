@@ -1,0 +1,1642 @@
+;========================<Fire Ball>=======================
+; Fire Ball
+[Statedef 1000]
+type = S
+movetype = A
+physics = N
+anim = 1000
+ctrl = 0
+velset = 0,0
+poweradd = 70 * !var(20)
+sprpriority = 2
+facep2 = 1
+
+[State 4101, AngleDraw]
+type = AngleDraw
+trigger1 = AnimElemTime(3) >= 0 && AnimElemTime(3) <= 18
+value = 1
+scale = 0.94, 0.94
+
+[State 1000, Strength]
+type = varset
+trigger1 = !time && !AIlevel
+var(10) = ifelse(command = "z", 3, ifelse(command = "y", 2, 1))
+[State 1000, Strength AI]
+type = varset
+trigger1 = !time && AIlevel
+var(10) = ifelse((p2movetype = H || random < 500), 3, ifelse(random < 500, 2, 1))
+
+[State 1000, width]
+type = width
+trigger1 = animelemtime(5) = 0
+value = 30, 0
+
+[State 1000, Hadouken]
+type = helper
+trigger1 = animelemtime(3) = 3
+helpertype = normal
+stateno = 1005
+ID = 1005
+name = "Hadouken"
+postype = p1
+pos = 70, -73
+size.xscale = 0.45
+size.yscale = 0.45
+ownpal = 1
+
+[State 1000, Snd]
+type = playsnd
+trigger1 = animelem = 1
+value = 4, 1000
+channel = 0
+[State 1000, Snd]
+type = playsnd
+trigger1 = animelemtime(3) = 3
+value = 5, 1000
+
+[State 1000, CC]
+type = changestate
+triggerall = var(20)
+trigger1 = var(18) && animelemtime(3) >= 0
+trigger1 = command = "236p" 
+value = 1000
+
+[State 1000, End]
+type = changestate
+trigger1 = !animtime
+value = 0
+ctrl = 1
+
+
+;=======================<EX>===========================
+; EX Fire Ball
+[Statedef 1050]
+type = S
+movetype = A
+physics = S
+anim = 1050
+ctrl = 0
+velset = 0,0
+poweradd = -500
+sprpriority = 2
+facep2 = 1
+
+[State 1030, Extra Stock Subtract]
+type = VarAdd
+triggerall = var(42) > 0
+trigger1 = MoveHit=1 && NumTarget
+var(42) = -1
+
+[State 1030, MAX Timer Drain]
+type = VarAdd
+trigger1 = !Time
+trigger1 = var(20) > 0
+var(20) = -335;-500
+
+
+[State 1030, EX Sound]
+type = PlaySnd
+trigger1 = !Time
+value = 0, 1000
+channel = 3
+
+[State 1030, EX Flash]
+type = VarSet
+trigger1 = !Time
+var(25) = 30
+
+[State 1030, EX FX]
+type = Explod
+trigger1 = !Time
+anim = 8210
+sprPriority = 3
+posType = p1
+pos = 4, -67
+scale = 0.5, 0.5
+pauseMoveTime = -1
+superMoveTime = -1
+ownPal = 1
+
+[State 4101, AngleDraw]
+type = AngleDraw
+trigger1 = AnimElemTime(9) >= 0 && AnimElemTime(9) <= 18
+value = 1
+scale = 0.94, 0.94
+
+[State 1000, Strength]
+type = varset
+trigger1 = !time && !AIlevel
+var(10) = ifelse(command = "z", 3, ifelse(command = "y", 2, 1))
+[State 1000, Strength AI]
+type = varset
+trigger1 = !time && AIlevel
+var(10) = ifelse((p2movetype = H || random < 500), 3, ifelse(random < 500, 2, 1))
+
+[State 1000, width]
+type = width
+trigger1 = animelemtime(5) = 0
+value = 30, 0
+
+[State 1000, Hadouken]
+type = helper
+trigger1 = animelemtime(9) = 3
+helpertype = normal
+stateno = 1015
+ID = 1015
+name = "Hadouken"
+postype = p1
+pos = 70, -73
+size.xscale = 0.45
+size.yscale = 0.45
+ownpal = 1
+
+[State 1000, Snd]
+type = playsnd
+trigger1 = animelem = 7
+value = 4, 1000
+channel = 0
+[State 1000, Snd]
+type = playsnd
+trigger1 = animelemtime(9) = 3
+value = 5, 1000
+
+[State 1000, End]
+type = changestate
+trigger1 = !animtime
+value = 0
+ctrl = 1
+
+
+
+;========================<Uppercut>=======================
+; Uppercut
+[Statedef 1100]
+type = S
+movetype = A
+physics = S
+anim = 1100
+ctrl = 0
+velset = 0,0
+poweradd = 70 * !var(20)
+sprpriority = 2
+facep2 = 1
+
+[State 1000, Strength]
+type = varset
+trigger1 = !time && !AIlevel
+var(10) = ifelse(command = "z", 2, ifelse(command = "y", 1, 0))
+
+
+[State 1100, Vel]
+type = velset
+trigger1 = anim = 1100 && animelem = 4
+x = ifelse(var(10) = 3, 13, ifelse(var(10) = 2, 9, 6))
+y = ifelse(var(10) = 3, -11, ifelse(var(10) = 2, -8.5, -6))
+[State 1100, Vel]
+type = velmul
+trigger1 = 1
+x = 0.88
+[State 1100, Vel]
+type = velmul
+trigger1 = vel y > 0
+x = 0
+
+[State 1100, Snd]
+type = playsnd
+trigger1 = anim = 1100 && animelem = 4
+value = 41, 0
+[State 1100, Dust]
+type = helper
+trigger1 = anim = 1100 && animelem = 4
+helpertype = normal
+stateno = 8100
+ID = 8100
+name = "Dust"
+postype = p1
+ownpal = 1
+
+[State 1100, Snd]
+type = playsnd
+trigger1 = anim = 1100 && animelem = 2
+value = 4 , 1100
+channel = 0
+ignorehitpause = 1
+persistent = 0
+
+
+[State 1000, Hit Light] 
+type = HitDef
+trigger1 = !var(16) && (var(15) < ifElse(1 + HitCount < 4, 1 + HitCount, 1) || var(20))
+trigger1 = AnimElem = 2 && var(10) = 0
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = ifelse(var(20),35,74), 7
+getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
+givePower = 36, 36
+pauseTime = ifElse(var(20), 3, 12), ifElse(var(20), 3, 12)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+ground.slidetime = 16
+ground.hittime = 16
+guard.hittime = (16) - 6
+ground.velocity = -2, -8
+ground.cornerpush.veloff = 0
+air.type = Low
+air.velocity = -2, -8
+guard.cornerpush.veloff = 0
+guard.velocity = -10.52
+yaccel = 0.5
+fall = 1
+air.fall = 1
+fall.recover = 0
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -65
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
+[State 1000, Hit Mid] 
+type = HitDef
+triggerall =  var(10) = 1
+trigger1 = !var(16) && (var(15) < ifElse(1 + HitCount < 4, 1 + HitCount, 1) || var(20))
+trigger1 = AnimElem = 2 || AnimElem = 3
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = ifelse(var(20),35,54), 7
+getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
+givePower = 36, 36
+pauseTime = ifElse(var(20), 3, 12), ifElse(var(20), 3, 12)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+ground.slidetime = 16
+ground.hittime = 16
+guard.hittime = (16) - 6
+ground.velocity = -2, -8
+ground.cornerpush.veloff = 0
+air.type = Low
+air.velocity = -2, -10
+guard.cornerpush.veloff = 0
+guard.velocity = -10.52
+yaccel = 0.5
+fall = 1
+air.fall = 1
+fall.recover = 0
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -80
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
+[State 1000, Hit Strong] 
+type = HitDef
+triggerall =  var(10) = 2
+trigger1 = !var(16) && (var(15) < ifElse(1 + HitCount < 4, 1 + HitCount, 1) || var(20))
+trigger1 = AnimElem = 2 || AnimElem = 3 || AnimElem = 4
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = ifelse(var(20),25,44), 7
+getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
+givePower = 36, 36
+pauseTime = ifElse(var(20), 3, 12), ifElse(var(20), 3, 12)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+ground.slidetime = 16
+ground.hittime = 16
+guard.hittime = (16) - 6
+ground.velocity = -2, -8
+ground.cornerpush.veloff = 0
+air.type = Low
+air.velocity = -2, -12
+guard.cornerpush.veloff = 0
+guard.velocity = -10.52
+yaccel = 0.5
+fall = 1
+air.fall = 1
+fall.recover = 0
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -90
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
+[State 1100, statetype]
+type = statetypeset
+trigger1 = anim = 1100 && animelemtime(4) >= 0
+trigger2 = anim = 1101
+trigger3 = anim = 1110 && animelemtime(4) >= 0
+statetype = A
+physics = A
+[State 1100, Anim]
+type = changeanim
+trigger1 = anim = 1100 && animelemtime(5) > 0 && vel y > (ifelse(var(10) = 3, -5.3, ifelse(var(10) = 2, -4, -2.7)))
+trigger2 = anim = 1110 && animelemtime(5) > 0 && vel y > (ifelse(var(10) = 3, -5.3, ifelse(var(10) = 2, -4, -2.7)))
+value = 1101
+persistent = 0
+
+[State 1200, VarSet]
+type = VarAdd
+trigger1 = var(1) = 1
+trigger1 = var(10) > 1
+trigger1 = numtarget(110000)
+var(15) = 2
+persistent = 0
+ignorehitpause = 1
+
+[State Idle]
+type = statetypeset
+trigger1 = anim = 1101
+movetype = I
+
+
+;=======================<EX UPPERCUT>===========================
+; EX Uppercut
+[Statedef 1150]
+type = S
+movetype = A
+physics = S
+anim = 1150
+ctrl = 0
+velset = 0,0
+poweradd = -500
+sprpriority = 2
+facep2 = 1
+
+[State 1030, Extra Stock Subtract]
+type = VarAdd
+triggerall = var(42) > 0
+trigger1 = MoveHit=1 && NumTarget
+var(42) = -1
+
+[State 1030, MAX Timer Drain]
+type = VarAdd
+trigger1 = !Time
+trigger1 = var(20) > 0
+var(20) = -335;-500
+
+
+[State 1030, EX Sound]
+type = PlaySnd
+trigger1 = !Time
+value = 0, 1000
+channel = 3
+
+[State 1030, EX Flash]
+type = VarSet
+trigger1 = !Time
+var(25) = 30
+
+[State 1030, EX FX]
+type = Explod
+trigger1 = !Time
+anim = 8210
+sprPriority = 3
+posType = p1
+pos = 4, -67
+scale = 0.5, 0.5
+pauseMoveTime = -1
+superMoveTime = -1
+ownPal = 1
+
+
+[State 1150, Vel]
+type = VelSet
+trigger1 = anim = 1150 &&  AnimElem = 2 || AnimElem = 3 || AnimElem = 5 || AnimElem = 6
+x = 6
+
+[State 1100, Vel]
+type = velset
+trigger1 = anim = 1150 && animelem = 8
+x = 13
+y = -11
+[State 1100, Vel]
+type = velmul
+trigger1 = 1
+x = 0.88
+[State 1100, Vel]
+type = velmul
+trigger1 = vel y > 0
+x = 0
+
+[State 1030, Fly Snd]
+type = PlaySnd
+trigger1 = AnimElem = 7
+value = 41,0
+
+[State 1150, Voice]
+type = PlaySnd
+trigger1 = Time=0
+value = 4,1150
+[State 1150, Voice]
+type = PlaySnd
+trigger1 = AnimElem = 8
+value = 4,1100
+
+[State 1030, Dust Helper]
+type = Helper
+trigger1 = AnimElem = 8
+stateno = 8100
+ID = 8100
+name = "Jump Dust"
+postype = p1
+pausemovetime = 255
+supermovetime = 255
+ownpal = 1
+
+[State 1000, Hit Light] 
+type = HitDef
+trigger1 = !var(16) && var(15) < 1
+trigger1 = AnimElem = 4 || AnimElem = 7
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = 50, 7
+getPower = 0,0
+givePower = 36, 36
+pauseTime = 10,10
+guard.pauseTime = 6,6
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+air.type = Low
+ground.hitTime = 15
+guard.hittime = (15) - 6
+ground.slideTime = 15
+air.hitTime = 120
+ground.velocity = -2.56, 0
+ground.cornerPush.velOff = 0
+guard.velocity = -2.56
+guard.cornerPush.velOff = 0
+air.velocity = -7.5, -5
+air.cornerPush.velOff = 0
+yAccel = 0.5126953125
+fall = 0
+air.fall = 1
+fall.recover = 1
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 140), var(36) := -67
+envShake.time = 14
+envShake.ampl = 6
+envShake.freq = 120
+
+[State 1150, Hit Light] 
+type = HitDef
+trigger1 = !var(16) && var(15) < 1
+trigger1 = AnimElem = 8
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = 60, 7
+getPower = 0,0
+givePower = 36, 36
+pauseTime = 12,12
+guard.pauseTime = 6,6
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+ground.slidetime = 16
+ground.hittime = 16
+guard.hittime = (16) - 6
+ground.velocity = -4, -12
+ground.cornerpush.veloff = 0
+air.type = Low
+air.velocity = -4, -12
+guard.cornerpush.veloff = 0
+guard.velocity = -10.52
+yaccel = 0.5
+fall = 1
+air.fall = 1
+fall.recover = 0
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -90
+envShake.time = 14
+envShake.ampl = 6
+envShake.freq = 120
+
+
+[State 1100, statetype]
+type = statetypeset
+trigger1 = anim = 1150 && animelemtime(8) >= 0
+trigger2 = anim = 1151
+statetype = A
+physics = A
+[State 1100, Anim]
+type = changeanim
+trigger1 = anim = 1150 && animelemtime(8) > 0 && vel y > -5.3
+value = 1151
+persistent = 0
+
+[State 1200, VarSet]
+type = VarAdd
+trigger1 = var(1) = 1
+trigger1 = var(10) > 1
+trigger1 = numtarget(110000)
+var(15) = 2
+persistent = 0
+ignorehitpause = 1
+
+[State Idle]
+type = statetypeset
+trigger1 = anim = 1151
+movetype = I
+
+
+
+;========================<1000 Hands>=======================
+; 1000 Hands
+[Statedef 1200]
+type = S
+movetype = A
+physics = N
+anim = 1200
+ctrl = 0
+velset = 0,0
+poweradd = 70 * !var(20)
+sprpriority = 2
+facep2 = 1
+
+[State 1000, VarSet]
+type = VarSet
+trigger1 =!AILevel&& time =0
+var(10) = ifelse(command = "c", 3, ifelse(command = "b", 2, 1))
+ignorehitpause = 1
+
+ignorehitpause=1
+[State 1000, Anim]
+type = ChangeAnim
+Trigger1 = Time = 0
+value = ifelse(var(10) = 3 ,1202,ifelse(var(10)=2,1201,1200))
+ignorehitpause = 1
+
+[State 1000, Voice]
+type = PlaySnd
+Trigger1 = AnimElem = 2
+value = 4,1200
+channel = 0
+
+;Light
+[State 1000, Swing Snd]
+type = PlaySnd
+triggerall = Anim = 1200
+trigger1 = Animelem = 2 || AnimElem = 4 || AnimElem = 6
+value = 1, 2
+
+[State 1200, PosAdd]
+type = PosAdd
+triggerall = Anim = 1200
+trigger1 = AnimElemTime(1) >= 0 && AnimElemTime(3) <= 0
+x = 6
+
+[State 1000, Hit Light] 
+type = HitDef
+trigger1 = !var(16) && (var(15) < ifElse(1 + HitCount < 4, 1 + HitCount, 1) || var(20))
+trigger1 = AnimElem = 3 || AnimElem = 5 || AnimElem = 7
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = ifelse(var(20),15,25), 7
+getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
+givePower = 36, 36
+pauseTime = ifElse(var(20), 3, 3), ifElse(var(20), 3, 3)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+air.type = Low
+ground.hitTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+guard.hittime = (ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))) - 6
+ground.slideTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+air.hitTime = 120
+ground.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06)), 0
+ground.cornerPush.velOff = 0
+guard.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06))
+guard.cornerPush.velOff = 0
+air.velocity = -1.5, -1.5
+air.cornerPush.velOff = 0
+yAccel = 0.5126953125
+fall = 0
+air.fall = 1
+fall.recover = 1
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -61
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
+;Mid
+[State 1000, Swing Snd]
+type = PlaySnd
+triggerall = Anim = 1201
+trigger1 = Animelem = 2 || AnimElem = 4 || AnimElem = 6 || AnimElem = 8
+value = 1, 2
+
+[State 1200, PosAdd]
+type = PosAdd
+triggerall = Anim = 1201
+trigger1 = AnimElemTime(1) >= 0 && AnimElemTime(3) <= 0
+x = 8
+
+[State 1000, Hit Mid] 
+type = HitDef
+trigger1 = !var(16) && (var(15) < ifElse(1 + HitCount < 4, 1 + HitCount, 1) || var(20))
+trigger1 = Anim = 1201 && (AnimElem = 3 || AnimElem = 5 || AnimElem = 7 || AnimElem = 9)
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = ifelse(var(20),10,20), 7
+getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
+givePower = 36, 36
+pauseTime = ifElse(var(20), 3, 3), ifElse(var(20), 3, 3)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+air.type = Low
+ground.hitTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+guard.hittime = (ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))) - 6
+ground.slideTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+air.hitTime = 120
+ground.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06)), 0
+ground.cornerPush.velOff = 0
+guard.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06))
+guard.cornerPush.velOff = 0
+air.velocity = -1.5, -1.5
+air.cornerPush.velOff = 0
+yAccel = 0.5126953125
+fall = 0
+air.fall = 1
+fall.recover = 1
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -61
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
+;Hard
+[State 1000, Swing Snd]
+type = PlaySnd
+triggerall = Anim = 1202
+trigger1 = Animelem = 2 || AnimElem = 4 || AnimElem = 6 || AnimElem = 8 || AnimElem = 10
+value = 1, 2
+
+[State 1200, PosAdd]
+type = PosAdd
+triggerall = Anim = 1202
+trigger1 = AnimElemTime(1) >= 0 && AnimElemTime(3) <= 0
+x = 10
+
+[State 1000, Hit Hard] 
+type = HitDef
+trigger1 = !var(16) && (var(15) < ifElse(1 + HitCount < 4, 1 + HitCount, 1) || var(20))
+trigger1 = AnimElem = 3 || AnimElem = 5 || AnimElem = 7 || AnimElem = 9 || AnimElem = 11
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = ifelse(var(20),10,20), 7
+getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
+givePower = 36, 36
+pauseTime = ifElse(var(20), 3, 3), ifElse(var(20), 3, 3)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+air.type = Low
+ground.hitTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+guard.hittime = (ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))) - 6
+ground.slideTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+air.hitTime = 120
+ground.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06)), 0
+ground.cornerPush.velOff = 0
+guard.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06))
+guard.cornerPush.velOff = 0
+air.velocity = -1.5, -1.5
+air.cornerPush.velOff = 0
+yAccel = 0.5126953125
+fall = 0
+air.fall = 1
+fall.recover = 1
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -61
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
+[State 1000, StateTypeSet: Idle]
+type = StateTypeSet
+trigger1 = Anim = 1200 && AnimElemTime(9) >= 0
+movetype = I
+[State 1000, StateTypeSet: Idle]
+type = StateTypeSet
+trigger1 = Anim = 1201 && AnimElemTime(10) >= 0
+movetype = I
+[State 1000, StateTypeSet: Idle]
+type = StateTypeSet
+trigger1 = Anim = 1202 && AnimElemTime(12) >= 0
+movetype = I
+
+[State 1000, End]
+type = ChangeState
+trigger1 = !AnimTime
+value = 0
+ctrl = 1
+
+
+;=======================<EX 1000 Hands>===========================
+; EX 1000 Hands
+[Statedef 1250]
+type = S
+movetype = A
+physics = S
+anim = 1250
+ctrl = 0
+velset = 0,0
+poweradd = -500
+sprpriority = 2
+facep2 = 1
+
+[State 1030, Extra Stock Subtract]
+type = VarAdd
+triggerall = var(42) > 0
+trigger1 = MoveHit=1 && NumTarget
+var(42) = -1
+
+[State 1030, MAX Timer Drain]
+type = VarAdd
+trigger1 = !Time
+trigger1 = var(20) > 0
+var(20) = -335;-500
+
+
+[State 1030, EX Sound]
+type = PlaySnd
+trigger1 = !Time
+value = 0, 1000
+channel = 3
+
+[State 1030, EX Flash]
+type = VarSet
+trigger1 = !Time
+var(25) = 30
+
+[State 1030, EX FX]
+type = Explod
+trigger1 = !Time
+anim = 8210
+sprPriority = 3
+posType = p1
+pos = 4, -67
+scale = 0.5, 0.5
+pauseMoveTime = -1
+superMoveTime = -1
+ownPal = 1
+
+[State 1250, Vel]
+type = PosAdd
+trigger1 = AnimElemTime(1)>=0 && AnimElemTime(3)<=0
+x = 4
+
+[State 1250, Vel]
+type = VelSet
+trigger1 = AnimElemTime(3)>=0 && AnimElemTime(17)<=0
+x = 0.7
+
+[State 1250, Wosh]
+type = PlaySnd
+triggerall = AnimElemTime(2)>=0 && AnimElemTime(16)<=0
+trigger1 = !(time %4)
+value = 1, 2
+
+[State 1250, Voice]
+type = PlaySnd
+trigger1 = time = 0
+value = 4, 1250
+
+[State 1250, Voice]
+type = PlaySnd
+trigger1 = AnimElem = 15
+value = 4, 1251
+
+
+[State 1000, Hit Light] 
+type = HitDef
+trigger1 = !var(16) && (var(15) < ifElse(1 + HitCount < 7, 1 + HitCount, 1) || var(20))
+trigger1 = AnimElem = 3 || AnimElem = 5 || AnimElem = 7 || AnimElem = 9 || AnimElem = 11 || AnimElem = 13 || AnimElem = 15
+attr = S, SA
+hitFlag = MAF
+guardFlag = M
+priority = 4, Hit
+damage = ifelse(var(20),10,20), 7
+getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
+givePower = 36, 36
+pauseTime = ifElse(var(20), 3, 3), ifElse(var(20), 3, 3)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animType = Hard
+air.animType = Low
+fall.animType = Low
+ground.type = Low
+air.type = Low
+ground.hitTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+guard.hittime = (ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))) - 6
+ground.slideTime = ifElse(var(10) = 2, 20, ifElse(var(10), 17, 15))
+air.hitTime = 120
+ground.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06)), 0
+ground.cornerPush.velOff = 0
+guard.velocity = ifElse(var(10) = 2, -2.56, ifElse(var(10), -2.76, -3.06))
+guard.cornerPush.velOff = 0
+air.velocity = -1.5, -1.5
+air.cornerPush.velOff = 0
+yAccel = 0.5126953125
+fall = 0
+air.fall = 1
+fall.recover = 1
+fall.recoverTime = 120
+forceStand = 1
+hitSound = -1 + 0 * (var(31) := 2)
+guardSound = -1 + 0 * (var(32) := 0)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 120), var(36) := -61
+palFX.time = 12 * var(9)
+palFX.add = 255, 255, 255
+palFX.sinAdd = -255, -255, -255, 48
+envShake.time = 14
+envShake.ampl = 4
+envShake.freq = 120
+
+[State 1000, Hit Near] 
+type = HitDef
+trigger1 = !var(16) && var(15) < 7
+trigger1 = AnimElem = 17
+attr = S, SA
+damage = 50, 7
+priority = 4, hit
+animtype = Hard
+getpower = 0,0
+givepower = 35, 35
+guardflag = MA
+hitflag = MAF
+hitsound = s5, 1250 
+guardsound = s-1, (var(32) := 0)
+pausetime = Ifelse(var(20), 25, 25), Ifelse(var(20), 25, 25)
+guard.pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 68), var(36) := -70
+air.animtype = Back
+fall.animtype = Back
+ground.type = Low
+air.type = Low
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = (18) - 6
+ground.velocity = -7, -6
+air.velocity = -7,-5
+guard.velocity = -10
+airguard.velocity = -8, -3
+airguard.ctrlTime = 16
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+yaccel = .58
+fall = 1
+fall.recover = 0
+forcestand = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time = 25
+envshake.ampl = 4
+envShake.freq = 120
+
+[State 1030, StateTypeSet: Idle]
+type = StateTypeSet
+trigger1 = AnimElemTime(18) >= 0
+movetype = I
+
+[State 1030, End]
+type = ChangeState
+trigger1 = !AnimTime 
+value = 0
+ctrl = 1
+
+
+;========================<360 KICK>=======================
+; 360 Kick
+[Statedef 1300]
+type = S
+movetype = A
+physics = N
+anim = 3000
+ctrl = 0
+velset = 0,0
+poweradd = 70 * !var(20)
+sprpriority = 2
+facep2 = 1
+
+[State 1000, VarSet]
+type = VarSet
+trigger1 =!AILevel&& time =0
+var(10) = ifelse(command = "c", 3, ifelse(command = "b", 2, 1))
+ignorehitpause = 1
+
+[State 1000, Anim]
+type = ChangeAnim
+Trigger1 = Time = 0
+value = ifelse(var(10) = 3 ,1330,ifelse(var(10)=2,1320,1300))
+ignorehitpause = 1
+
+[State 1300, Unguardable]
+type = VarSet
+trigger1 = Time = 0 && NumEnemy
+trigger1 = (EnemyNear, StateNo = [11,12])
+var(17) = 54
+
+[State 1000, Voice]
+type = PlaySnd
+trigger1 = AnimElem = 1
+value = 0,0
+channel = 0
+
+[State 1000, Swing Snd]
+type = PlaySnd
+trigger1 = Animelem = 5
+value = 1, 5
+channel = 2
+[State 1000, Swing Snd]
+type = PlaySnd
+triggerall = Anim = 1330
+trigger1 = Animelem = 5 || AnimElem = 9
+value = 1, 5
+channel = 2
+
+[State 1000, PosAdd]
+type = posAdd
+triggerall = anim = 1300
+trigger1 = animelem = 4 || animelem = 5 || animelem = 6 || animelem = 7
+x= 15
+[State 1000, PosAdd]
+type = posAdd
+triggerall = anim = 1320
+trigger1 = animelem = 4 || animelem = 5 || animelem = 6 || animelem = 7
+x= 17
+[State 1000, PosAdd]
+type = posAdd
+triggerall = anim = 1330
+trigger1 = animelem = 4 || animelem = 5 || animelem = 6 || animelem = 7
+trigger2 = animelem = 8 || animelem = 9 || animelem = 10 || animelem = 11
+x= 15
+
+[State 1300, Voice]
+type = playSnd
+trigger1 = anim = 1300 && animelem = 2
+trigger2 = anim = 1320 && animelem = 2
+value = 4,1300
+channel = 0
+[State 1300, Voice]
+type = playSnd
+trigger1 = anim = 1330 && animelem = 2
+value = 4,1330
+channel = 0
+
+[State 1300, Ground]
+type = explod
+anim = 8102
+triggerall = anim = 1300 || anim = 1320
+trigger1 = animelem = 7
+postype = p1
+pos = 50,0
+pausemovetime = 9999
+sprpriority = -5
+[State 1300, Dust]
+type = explod
+anim = 8104
+triggerall = anim = 1300 || anim = 1320
+trigger1 = animelem = 7
+postype = p1
+pos = 50,0
+pausemovetime = 9999
+sprpriority = 5
+[State 1300, Ground]
+type = explod
+anim = 8102
+triggerall = anim = 1330
+trigger1 = animelem = 11
+postype = p1
+pos = 50,0
+pausemovetime = 9999
+sprpriority = -5
+[State 1300, Dust]
+type = explod
+anim = 8104
+triggerall = anim = 1330
+trigger1 = animelem = 11
+postype = p1
+pos = 50,0
+pausemovetime = 9999
+sprpriority = 5
+[State 1300, Ground Snd]
+type = playSnd
+trigger1 = anim = 1300 && animelem = 7
+trigger2 = anim = 1320 && animelem = 7
+trigger3 = anim = 1330 && animelem = 11
+value = 192,2
+
+[State 1300, EnvShake]
+type = EnvShake
+trigger1 = anim = 1300 && animelem = 7
+trigger2 = anim = 1320 && animelem = 7
+trigger3 = anim = 1330 && animelem = 11
+time = 10
+freq = 120
+ampl = -4
+
+[State 1000, Hit Light] 
+type = HitDef
+triggerall = anim = 1300
+trigger1 = !var(16) && (var(15)<2 || var(20))
+trigger1 = p2bodydist X < 40 ;this trigger changes the hit defs based on p2's distance
+trigger1 = AnimElem = 7
+attr = S, SA
+damage = ifelse(var(20),40,84), 7
+priority = 4, hit
+animtype = Hard
+getpower = 70 * !var(20), 30 * !var(20)
+givepower = 35, 35
+guardflag = MA
+hitflag = MAFD
+hitsound = s-1, (var(31) := 5)
+guardsound = s-1, (var(32) := 0)
+pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+guard.pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 68), var(36) := -61
+air.animtype = Back
+fall.animtype = Back
+ground.type = Low
+air.type = Low
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = (18) - 6
+ground.velocity = -4, -4
+air.velocity = -4,-5
+guard.velocity = -10
+airguard.velocity = -8, -3
+airguard.ctrlTime = 16
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+yaccel = .58
+fall = 1
+fall.recover = 0
+forcestand = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time = 14
+envshake.ampl = 4
+envShake.freq = 120
+[State 1000, Hit Mid1] 
+type = HitDef
+triggerall = anim = 1320 || anim = 1330
+trigger1 = !var(16) && (var(15)<2 || var(20))
+trigger1 = p2bodydist X < 40 ;this trigger changes the hit defs based on p2's distance
+trigger1 = AnimElem = 4
+attr = S, SA
+damage = ifelse(var(20),40,84), 7
+priority = 4, hit
+animtype = Hard
+getpower = 70 * !var(20), 30 * !var(20)
+givepower = 35, 35
+guardflag = MA
+hitflag = MAF
+hitsound = s-1, (var(31) := 5)
+guardsound = s-1, (var(32) := 0)
+pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+guard.pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 68), var(36) := -61
+air.animtype = Back
+fall.animtype = Back
+ground.type = Low
+air.type = Low
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = (18) - 6
+ground.velocity = -4, 0
+air.velocity = -4,-5
+guard.velocity = -10
+airguard.velocity = -8, -3
+airguard.ctrlTime = 16
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+yaccel = .58
+fall = 0
+fall.recover = 0
+forcestand = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time = 14
+envshake.ampl = 4
+envShake.freq = 120
+[State 1000, Hit Mid 2] 
+type = HitDef
+triggerall = anim = 1320
+trigger1 = !var(16) && (var(15)<2 || var(20))
+trigger1 = p2bodydist X < 40 ;this trigger changes the hit defs based on p2's distance
+trigger1 = AnimElem = 7
+attr = S, SA
+damage = ifelse(var(20),40,84), 7
+priority = 4, hit
+animtype = Hard
+getpower = 70 * !var(20), 30 * !var(20)
+givepower = 35, 35
+guardflag = MA
+hitflag = MAFD
+hitsound = s-1, (var(31) := 5)
+guardsound = s-1, (var(32) := 0)
+pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+guard.pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 68), var(36) := -61
+air.animtype = Back
+fall.animtype = Back
+ground.type = Low
+air.type = Low
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = (18) - 6
+ground.velocity = -5, -6
+air.velocity = -5,-5
+guard.velocity = -10
+airguard.velocity = -8, -3
+airguard.ctrlTime = 16
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+yaccel = .58
+fall = 1
+fall.recover = 0
+forcestand = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time = 14
+envshake.ampl = 4
+envShake.freq = 120
+[State 1000, Hit High2] 
+type = HitDef
+triggerall = anim = 1330
+trigger1 = !var(16) && (var(15)<2 || var(20))
+trigger1 = p2bodydist X < 40 ;this trigger changes the hit defs based on p2's distance
+trigger1 = AnimElem = 8
+attr = S, SA
+damage = ifelse(var(20),40,84), 7
+priority = 4, hit
+animtype = Hard
+getpower = 70 * !var(20), 30 * !var(20)
+givepower = 35, 35
+guardflag = MA
+hitflag = MAF
+hitsound = s-1, (var(31) := 5)
+guardsound = s-1, (var(32) := 0)
+pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+guard.pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 68), var(36) := -61
+air.animtype = Back
+fall.animtype = Back
+ground.type = Low
+air.type = Low
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = (18) - 6
+ground.velocity = -4, 0
+air.velocity = -4,-5
+guard.velocity = -10
+airguard.velocity = -8, -3
+airguard.ctrlTime = 16
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+yaccel = .58
+fall = 0
+fall.recover = 0
+forcestand = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time = 14
+envshake.ampl = 4
+envShake.freq = 120
+[State 1000, Hit High3] 
+type = HitDef
+triggerall = anim = 1330
+trigger1 = !var(16) && (var(15)<2 || var(20))
+trigger1 = p2bodydist X < 40 ;this trigger changes the hit defs based on p2's distance
+trigger1 = AnimElem = 11
+attr = S, SA
+damage = ifelse(var(20),40,84), 7
+priority = 4, hit
+animtype = Hard
+getpower = 70 * !var(20), 30 * !var(20)
+givepower = 35, 35
+guardflag = MA
+hitflag = MAFD
+hitsound = s-1, (var(31) := 5)
+guardsound = s-1, (var(32) := 0)
+pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+guard.pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 68), var(36) := -61
+air.animtype = Back
+fall.animtype = Back
+ground.type = Low
+air.type = Low
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = (18) - 6
+ground.velocity = -5, -6
+air.velocity = -5,-5
+guard.velocity = -10
+airguard.velocity = -8, -3
+airguard.ctrlTime = 16
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+yaccel = .58
+fall = 1
+fall.recover = 0
+forcestand = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time = 14
+envshake.ampl = 4
+envShake.freq = 120
+
+[State 1000, StateTypeSet: Idle]
+type = StateTypeSet
+triggerall = anim = 1300
+trigger1 = AnimElemTime(9) >= 0
+movetype = I
+[State 1000, StateTypeSet: Idle]
+type = StateTypeSet
+triggerall = anim = 1320
+trigger1 = AnimElemTime(9) >= 0
+movetype = I
+[State 1000, StateTypeSet: Idle]
+type = StateTypeSet
+triggerall = anim = 1330
+trigger1 = AnimElemTime(13) >= 0
+movetype = I
+
+[State 1000, End]
+type = ChangeState
+trigger1 = !AnimTime
+value = 0
+ctrl = 1
+
+;=======================<EX 360 KICK>===========================
+; EX 360 Kick
+[Statedef 1350]
+type = S
+movetype = A
+physics = S
+anim = 1350
+ctrl = 0
+velset = 0,0
+poweradd = -500
+sprpriority = 2
+facep2 = 1
+
+[State 1030, Extra Stock Subtract]
+type = VarAdd
+triggerall = var(42) > 0
+trigger1 = MoveHit=1 && NumTarget
+var(42) = -1
+
+[State 1030, MAX Timer Drain]
+type = VarAdd
+trigger1 = !Time
+trigger1 = var(20) > 0
+var(20) = -335;-500
+
+[State 1300, Unguardable]
+type = VarSet
+trigger1 = Time = 0 && NumEnemy
+trigger1 = (EnemyNear, StateNo = [11,12])
+var(17) = 54
+
+
+[State 1030, EX Sound]
+type = PlaySnd
+trigger1 = !Time
+value = 0, 1000
+channel = 3
+
+[State 1030, EX Flash]
+type = VarSet
+trigger1 = !Time
+var(25) = 30
+
+[State 1030, EX FX]
+type = Explod
+trigger1 = !Time
+anim = 8210
+sprPriority = 3
+posType = p1
+pos = 4, -67
+scale = 0.5, 0.5
+pauseMoveTime = -1
+superMoveTime = -1
+ownPal = 1
+
+[State 1000, Swing Snd]
+type = PlaySnd
+trigger1 = Animelem = 5
+value = 1, 5
+channel = 2
+
+[State 1000, PosAdd]
+type = posAdd
+triggerall = anim = 1350
+trigger1 = animelem = 4 || animelem = 5 || animelem = 6 || animelem = 7
+x= 15
+
+[State 1300, Voice]
+type = playSnd
+trigger1 = anim = 1350 && animelem = 1
+value = 4,1350
+channel = 0
+
+[State 1300, Ground]
+type = explod
+anim = 8102
+triggerall = anim = 1350
+trigger1 = animelem = 7
+postype = p1
+pos = 50,0
+pausemovetime = 9999
+sprpriority = -5
+ownpal = 1
+[State 1300, Dust]
+type = explod
+anim = 8104
+triggerall = anim = 1350
+trigger1 = animelem = 7
+postype = p1
+pos = 50,0
+pausemovetime = 9999
+sprpriority = 5
+ownpal = 1
+
+[State 1300, Ground Snd]
+type = playSnd
+trigger1 = anim = 1350 && animelem = 7
+value = 192,2
+
+[State 1300, EnvShake]
+type = EnvShake
+trigger1 = anim = 1350 && animelem = 7
+time = 10
+freq = 120
+ampl = -4
+
+
+[State 1000, Hit High3] 
+type = HitDef
+triggerall = anim = 1350
+trigger1 = !var(16) && (var(15)<2 || var(20))
+trigger1 = p2bodydist X < 40 ;this trigger changes the hit defs based on p2's distance
+trigger1 = AnimElem = 7
+attr = S, SA
+damage = ifelse(var(20),45,110), 7
+priority = 4, hit
+animtype = Hard
+getpower = 70 * !var(20), 30 * !var(20)
+givepower = 35, 35
+guardflag = MA
+hitflag = MAFD
+hitsound = s-1, (var(31) := 5)
+guardsound = s-1, (var(32) := 0)
+pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+guard.pausetime = Ifelse(var(20), 5, 10), Ifelse(var(20), 5, 10)
+sparkNo = -1 + 0 * (var(33) := 8013)
+guard.sparkNo = -1 + 0 * (var(34) := 8001)
+sparkXY = -10 + 0 * (var(35) := 68), var(36) := -61
+air.animtype = Back
+fall.animtype = Back
+ground.type = high
+air.type = high
+ground.slidetime = 18
+ground.hittime  = 18
+guard.hittime = (18) - 6
+ground.velocity = -2, 20
+air.velocity = -2, 20
+guard.velocity = -10
+airguard.velocity = -8, -3
+airguard.ctrlTime = 16
+ground.cornerPush.velOff = 0
+guard.cornerPush.velOff = 0
+air.cornerPush.velOff = 0
+yaccel = .48
+fall = 1
+air.fall = 1
+fall.recover = 0
+fall.recoverTime = 120
+forcestand = 1
+palFX.time = 12 * var(9)
+palFX.add = 255,255,255
+palFX.sinAdd= -255,-255,-255,48
+envshake.time = 14
+envshake.ampl = 4
+envShake.freq = 120
+p2stateno = 1351
+
+[State 1000, CTRL]
+type = ctrlSet
+trigger1 = movehit && animelemtime(9) = 5
+value = 1
+
+[State 1000, StateTypeSet: Idle]
+type = StateTypeSet
+triggerall = anim = 1350
+trigger1 = AnimElemTime(9) >= 0
+movetype = I
+
+
+[State 1000, End]
+type = ChangeState
+trigger1 = !AnimTime
+value = 0
+ctrl = 1
+
+
+; EX Target
+[Statedef 1351]
+type = S
+physics = N
+movetype = H
+velset = 0, 0
+anim = 1351
+faceP2 = 1
+
+[State 812, ChangeAnim]
+type = ChangeAnim2
+trigger1 = !Time
+value = 1351
+
+[State 1351, Posadd]
+type = posAdd
+trigger1 = !time
+y = -40
+
+[State 1351, Vel]
+type = velSet
+trigger1 = time <= 20
+x = -2
+y = 10
+
+
+[State 1351, 1]
+type = hitby
+trigger1 = 1
+value = SCA,HA, HP, HT
+ignorehitpause = 1
+
+
+[State 1351, End]
+type = ChangeState
+trigger1 = Pos Y > -vel Y
+value = 1352
+
+; EX Target 2
+[Statedef 1352]
+type = S
+physics = N
+movetype = H
+velset = 0, 0
+anim = 1352
+faceP2 = 1
+
+[State 812, ChangeAnim]
+type = ChangeAnim2
+trigger1 = !Time
+value = 1352
+
+
+[State 1351, Impact]
+type = Explod
+trigger1 = !Time
+anim = F62
+pos = 0, 10
+scale = 1, 1
+posType = P1
+sprPriority = 3
+
+[State 1352, Vel]
+type = velSet
+trigger1 = time <= 10
+y = -6
+x = -2
+
+[State 4011, 1]
+type = hitby
+trigger1 = 1
+value = SCA,HA, HP, HT
+ignorehitpause = 1
+
+[State 1352, end]
+type = selfState
+trigger1 = time = 10
+value = 5050
+
