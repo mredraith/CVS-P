@@ -1446,9 +1446,9 @@ TO.snd = 2,12
 
 KO.sndtime = 5;0 ;Time to play sound for KO, DKO and TO.
 
-slow.time = 0 ;Total KO slowdown length (in ticks)
-slow.fadetime = 45 ;Ikemen feature: KO slowdown fade length (default: 75% of slow.time)
-slow.speed = 1 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
+slow.time = 30 ;Total KO slowdown length (in ticks)
+slow.fadetime = 0 ;Ikemen feature: KO slowdown fade length (default: 75% of slow.time)
+slow.speed = 0.5 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
 
 over.waittime = 0 ;Time to wait after KO before player control is stopped
 over.hittime = 0 ;Time after KO that players can still damage each other (for double KO)
@@ -1553,68 +1553,21 @@ shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 
 ;"K.O." Animation
 [Begin Action 200]
-210,0, -576,0, 1
-210,0, -504,0, 1
-210,0, -432,0, 1
-210,0, -360,0, 1
-210,0, -288,0, 1
-210,0, -216,0, 1
-210,0, -144,0, 1
-210,0, -72,0, 1
-210,0, 0,0, 1
-210,1, 0,0, 1
-210,2, 0,0, 1
-210,3, 0,0, 1
-210,4, 0,0, 1
-210,5, 0,0, 1
-210,6, 0,0, 1
-210,7, 0,0, 1
-210,8, 0,0, 1
-210,9, 0,0, 1
-
-210,10, 0,0, 1
-210,10, 9,0, 1
-210,10, 0,0, 1
-210,11, 0,0, 1
-210,11, 9,0, 1
-210,11, 0,0, 1
-210,12, 0,0, 1
-210,12, 9,0, 1
-210,12, 0,0, 1
-210,13, 0,0, 1
-210,13, 9,0, 1
-210,13, 0,0, 1
-210,14, 0,0, 1
-210,14, 9,0, 1
-210,14, 0,0, 1
-210,15, 0,0, 1
-210,15, 9,0, 1
-210,15, 0,0, 1
-210,10, 0,0, 1
-210,10, 9,0, 1
-210,10, 0,0, 1
-210,10, 0,0, 1
-210,10, 9,0, 1
-210,10, 0,0, 1
-
-210,16, 0,0, 2
-210,17, 0,0, 2
-210,18, 0,0, 2
-210,19, 0,0, 2
-210,20, 0,0, 2
-210,21, 0,0, 2
-210,22, 0,0, 2
-210,23, 0,0, 2
-210,10, 0,0, 4
-210,16, 0,0, 2
-210,17, 0,0, 2
-210,18, 0,0, 2
-210,19, 0,0, 2
-210,20, 0,0, 2
-210,21, 0,0, 2
-210,22, 0,0, 2
-210,23, 0,0, 2
-210,10, 0,0, 4
+210,0, 0, 0, 2
+210,1, 0, 0, 2
+210,2, 0, 0, 2
+210,3, 0, 0, 2
+210,4, 0, 0, 2
+210,5, 0, 0, 2
+210,6, 0, 0, 2
+210,7, 0, 0, 2
+210,8, 0, 0, 2
+210,9, 0, 0, 2
+210,10, 0, 0, 2
+210,11, 0, 0, 2
+210,12, 0, 0, 10
+210,13, 0, 0, 10
+210,14, 0, 0, 60
 
 ;"Double K.O."
 [Begin Action 201]

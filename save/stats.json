@@ -1,12 +1,19 @@
 {
-  "playtime": 149.25,
+  "playtime": 213,
   "modes": {
     "training": {
       "playtime": 0,
       "clear": 0
     },
     "freebattle": {
-      "playtime": 149.25,
+      "playtime": 213,
+      "clear": 1,
+      "clearcount": {
+        "ryu": 1
+      }
+    },
+    "versus": {
+      "playtime": 0,
       "clear": 0
     }
   }
