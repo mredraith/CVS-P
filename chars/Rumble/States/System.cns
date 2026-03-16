@@ -314,12 +314,6 @@ sprpriority = 9999
 removetime = 5
 pausemovetime = 5
 
-[State 191, Intro Assert]
-type = AssertSpecial
-trigger1 = 1
-flag = Intro
-flag2 = nobardisplay
-
 [State 191, Snd Blast]
 type = playSnd
 trigger1 = time = 10
@@ -374,13 +368,6 @@ type = S
 physics = N
 anim = 6900
 ctrl = 0
-
-
-[State 191, Assert: Intro]
-type = AssertSpecial
-trigger1 = 1
-flag = Intro
-flag2 = nobardisplay
 
 [State 191, Assert: Intro]
 type = AssertSpecial
@@ -452,8 +439,7 @@ time = 2
 [State 191, AssertSpecial]
 type = AssertSpecial
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 
 [State 191, HitSnd]
 type = PlaySnd

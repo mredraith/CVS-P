@@ -1446,9 +1446,9 @@ TO.snd = 2,12
 
 KO.sndtime = 5;0 ;Time to play sound for KO, DKO and TO.
 
-slow.time = 60 ;Total KO slowdown length (in ticks)
+slow.time = 0 ;Total KO slowdown length (in ticks)
 slow.fadetime = 45 ;Ikemen feature: KO slowdown fade length (default: 75% of slow.time)
-slow.speed = 0.25 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
+slow.speed = 1 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
 
 over.waittime = 0 ;Time to wait after KO before player control is stopped
 over.hittime = 0 ;Time after KO that players can still damage each other (for double KO)
@@ -1459,33 +1459,33 @@ over.time = 180;270 ;Time to wait before round ends
 win.time = 70 ;Time to wait before showing win/draw message
 win.offset = 640, 360;420
 win.font = 5,0
-win.text = "%s\nWins"
+win.text = "%s\n\nWins"
 ;win.anim = 210
-win.scale = 2,2
+win.scale = 3,3
 win.displaytime = 540
 ; 2-player win text
 win2.offset = 640,420;640, 320
 win2.font = 5,0
-win2.text = "Team %s\nWins";"%s and %s Win"
+win2.text = "Team %s\n\nWins";"%s and %s Win"
 ;win2.anim = 210
-win2.scale = 2,2
+win2.scale = 3,3
 win2.displaytime = 540
 ; Ikemen feature: 3-player win text
 win3.offset = 640, 420
 win3.font = 5,0
-win3.text = "Team %s\nWins"
-win3.scale = 2,2
+win3.text = "Team %s\n\nWins"
+win3.scale = 3,3
 win3.displaytime = 540
 ; Ikemen feature: 4-player win text
 win4.offset = 640, 420
 win4.font = 5,0
-win4.text = "Team %s\nWins"
-win4.scale = 2,2
+win4.text = "Team %s\n\nWins"
+win4.scale = 3,3
 win4.displaytime = 540
 ; Draw text
 draw.offset = 640, 320
 draw.spr = 203,0
-draw.scale = 2,2
+draw.scale = 3,3
 draw.displaytime = 540
 
 ; Fade
@@ -1493,37 +1493,30 @@ fadein.time = 30 ;Ikemen feature: round start fade time (default: 30)
 fadein.col = 0, 0, 0 ;Ikemen feature: round start fade color (default: 0,0,0)
 fadeout.time = 30 ;Ikemen feature: round end fade time (default: 30, extends over.time if fadeout.time is longer)
 fadeout.col = 0, 0, 0 ;Ikemen feature: round end fade color (default: 0,0,0)
-shutter.time = 15 ;Ikemen feature: skip intro fade time (default: 15, whole anim is twice as long)
+shutter.time = 10 ;Ikemen feature: skip intro fade time (default: 15, whole anim is twice as long)
 shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 
 
 ;"Ready..."
 [Begin Action 80]
-81,0, 0,0, 1
-81,1, 0,0, 1
-81,2, 0,0, 1
-81,3, 0,0, 1
-81,4, 0,0, 1
-81,5, 0,0, 1
-81,6, 0,0, 1
-81,7, 0,0, 1
-81,8, 0,0, 1
-81,9, 0,0, 1
-81,10, 0,0, 1
-81,11, 0,0, 1
-81,12, 0,0, 1
+81,0, 0,0, 2
+81,1, 0,0, 2
+81,2, 0,0, 2
+81,3, 0,0, 2
+81,4, 0,0, 2
+81,5, 0,0, 2
+81,6, 0,0, 2
+81,7, 0,0, 2
+81,8, 0,0, 2
+81,9, 0,0, 2
+81,10, 0,0, 2
+81,11, 0,0, 10
+81,12, 0,0, 4
 81,13, 0,0, 4
-81,14, 0,0, 19
-81,15, 0,0, 1
-81,16, 0,0, 2
-81,17, 0,0, 2
-81,18, 0,0, 1
-81,19, 0,0, 3
-81,20, 0,0, 4
-81,21, 0,0, 3
-81,22, 0,0, 3
-81,23, 0,0, 3
-81,230, 0,0, -1
+81,14, 0,0, 4
+81,15, 0,0, 4
+81,16, 0,0, 4
+81,17, 0,0, 8
 
 ;"Fight!"
 [Begin Action 81]
@@ -1542,15 +1535,15 @@ shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 81,36, 0,0, 1
 81,37, 0,0, 1
 81,38, 0,0, 1
-81,39, 0,0, 3
-81,40, 0,0, 3
+81,39, 0,0, 1
+81,40, 0,0, 1
 81,41, 0,0, 1
-81,42, 0,0, 2
-81,43, 0,0, 1
-81,44, 0,0, 1
+81,42, 0,0, 1
+81,43, 0,0, 2
+81,44, 0,0, 2
 81,45, 0,0, 3
-81,46, 0,0, 1
-81,47, 0,0, 2
+81,46, 0,0, 3
+81,47, 0,0, 3
 -1,0, 0,0, 2
 81,47, 0,0, 2
 -1,0, 0,0, 2

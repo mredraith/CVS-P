@@ -105,7 +105,7 @@ trigger1 = !(Root, var(27))
 priority = 4, Hit
 attr = S, SP
 ;damage = ceil(52 * root, fvar(12)), 7
-damage = 50
+damage = 50, 7
 animtype = Hard
 hitflag = MAF
 guardflag = MA
@@ -325,7 +325,7 @@ trigger2 = var(2) = 2
 ID = 1015
 priority = 4, Hit
 attr = S, SP
-damage = 50
+damage = 50, 7
 ;damage = ceil(62 * root, fvar(12)), 7
 animtype = Back
 hitflag = MAF
