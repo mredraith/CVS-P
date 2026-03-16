@@ -188,7 +188,7 @@ attr = S,SP
 hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 63, ifElse(var(10), 56, 49)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 63, ifElse(var(10), 56, 49)))), ifElse(var(10) >= 2, 8, 7)
+damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 50, ifElse(var(10), 45, 40)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 63, ifElse(var(10), 56, 49)))), ifElse(var(10) >= 2, 8, 7)
 getPower = ifElse(Root, var(10) = 3, 0, ifElse(!(Root, var(13)), 144, 72) * !(Root, var(20))), ifElse(Root, var(10) = 3, 0, 36 * !(Root, var(20)))
 givePower = 36, 36
 pauseTime = 0, ifElse((Root, var(20)), 6, 12)
