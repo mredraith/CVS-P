@@ -3325,7 +3325,7 @@ trigger1 = ctrl && pos y <= -48
 
 [State -1, Standing Far/Close Heavy Punch]
 type = ChangeState
-value = 220 + (Abs(P2BodyDist X) <= 25) * 5
+value = 220 + (command = "holdback") * 5
 triggerAll = !AILevel
 ;command != "holddown" && command = "z"
 triggerAll = (!NumExplod(90000002) && !NumExplod(90000003) && !NumExplod(90000001)) && (NumExplod(90000220) || command = "z")
@@ -3347,7 +3347,7 @@ trigger2 = var(4)
 
 [State -1, Standing Heavy Kick]
 type = ChangeState
-value = 250 + (Abs(P2BodyDist X) <= ifElse(var(40), 20, 25)) * ifElse(var(40), 6, 5)
+value = 250 + (command = "holdback") * ifElse(var(40), 6, 5)
 triggerAll = !AILevel
 ;command != "holddown" && command = "c"
 triggerAll = (!NumExplod(90000002) && !NumExplod(90000003) && !NumExplod(90000001)) && (NumExplod(90000250) || command = "c")
@@ -3357,7 +3357,7 @@ trigger2 = var(4)
 
 [State -1, Standing Medium Punch]
 type = ChangeState
-value = 210 + (Abs(P2BodyDist X) <= 20) * 5
+value = 210 + (command = "holdback") * 5
 triggerAll = !AILevel
 ;command != "holddown" && command = "y"
 triggerAll = (!NumExplod(90000002) && !NumExplod(90000003) && !NumExplod(90000001)) && (NumExplod(90000210) || command = "y")
@@ -3411,7 +3411,7 @@ trigger2 = var(4)
 
 [State -1, Standing Medium Kick]
 type = ChangeState
-value = 240 + (Abs(P2BodyDist X) <= 25) * 5
+value = 240 + (command = "holdback") * 5
 triggerAll = !AILevel
 ;command != "holddown" && command = "b"
 triggerAll = (!NumExplod(90000002) && !NumExplod(90000003) && !NumExplod(90000001)) && (NumExplod(90000240) || command = "b")
@@ -3452,7 +3452,7 @@ trigger2 = var(4)
 
 [State -1, Standing Light Kick]
 type = ChangeState
-value = 230 + (Abs(P2BodyDist X) <= 25) * 5
+value = 230 + (command = "holdback") * 5
 triggerAll = !AILevel
 ;command != "holddown" && command = "a"
 triggerAll = (!NumExplod(90000002) && !NumExplod(90000003) && !NumExplod(90000001)) && (NumExplod(90000230) || command = "a")
