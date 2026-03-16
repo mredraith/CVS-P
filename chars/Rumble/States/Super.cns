@@ -689,7 +689,7 @@ hitFlag = M
 guardFlag = M
 priority = 4, Miss
 numhits = 0
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 10
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 3, 3), ifElse(var(20), 3, 3)
@@ -769,11 +769,6 @@ time = 1
 id = -1
 pos = 100,0
 
-[State 4001, ASS]
-type = AssertSpecial
-trigger1 = time >= 100
-flag = NoBarDisplay
-
 [State 4001, Finish Him]
 type = Explod
 trigger1 = time = 100
@@ -847,12 +842,6 @@ anim = 4011
 facep2 = 1
 sprpriority = 2
 
-[State 4001, ASS]
-type = AssertSpecial
-trigger1 = 1
-flag = NoBarDisplay
-ignorehitpause = 1
-
 [State 4001, Target]
 type = TargetState
 trigger1 = !time
@@ -916,7 +905,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 46
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 3, 2), ifElse(var(20), 2, 2)
@@ -962,7 +951,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 46
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 2, 2), ifElse(var(20), 2, 2)
@@ -1008,7 +997,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 46
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 2, 2), ifElse(var(20), 2, 2)
@@ -1054,7 +1043,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 47
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 2, 2), ifElse(var(20), 2, 2)
@@ -1124,7 +1113,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 46
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 1, 1), ifElse(var(20), 1, 1)
@@ -1170,7 +1159,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 46
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 1, 1), ifElse(var(20), 1, 1)
@@ -1216,7 +1205,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 46
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 1, 1), ifElse(var(20), 1, 1)
@@ -1269,7 +1258,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 47
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 3, 3), ifElse(var(20), 3, 3)
@@ -1348,7 +1337,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 14 < 7, 7, fvar(11) * 14)), 7
+damage = 50
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 3, 40), ifElse(var(20), 3, 40)
@@ -1439,7 +1428,7 @@ attr = S, SA
 hitFlag = MAF
 guardFlag = M
 priority = 4, Hit
-damage = 400, 7
+damage = 40
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 50, 50), ifElse(var(20), 50, 50)
@@ -1861,7 +1850,6 @@ type = AssertSpecial
 trigger1 = time < 440
 flag =NoBG
 flag2 = NoFG
-flag3 = NoBarDisplay
 
 [State 4101, Snd]
 type = PlaySnd
@@ -2200,7 +2188,6 @@ time = 2
 type = assertspecial
 trigger1 = animelemtime(2) >= 0 && animelemtime(17) < 0
 flag = noFG
-flag2 = nobardisplay
 [State 4001, spr]
 type = sprpriority
 trigger1 = animelemtime(17) >= 0

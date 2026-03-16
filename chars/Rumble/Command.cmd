@@ -18,6 +18,14 @@ name = "UCombo"
 command = x, x, D, a, z
 time = 32
 [Command]
+name = "UCombo"
+command = x, x, D, a+z
+time = 32
+[Command]
+name = "UCombo"
+command = x, x, D+a+z
+time = 32
+[Command]
 name = "SRCombo"
 command = ~D, DB, B, D, DF, F, z+c
 time = 32

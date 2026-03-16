@@ -1452,7 +1452,7 @@ slow.speed = 1 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25
 
 over.waittime = 0 ;Time to wait after KO before player control is stopped
 over.hittime = 0 ;Time after KO that players can still damage each other (for double KO)
-over.wintime = 60 ;Time to wait before players change to win states
+over.wintime = 90 ;Time to wait before players change to win states
 over.time = 180;270 ;Time to wait before round ends
 
 ; Win text
