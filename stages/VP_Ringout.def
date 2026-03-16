@@ -1,0 +1,20 @@
+[Info]
+name = "VP RingOut"
+author = "V-Nix"
+ikemenversion = 1.0        
+
+[Files]
+anim	= VP_Ringout.def
+st	= VP_Ringout.zss
+sound	= VP_Ringout.snd
+sprite	= VP_Ringout.sff
+
+[Begin Action 0]
+-1,-1,0,0,-1
+
+[Begin Action 1]
+3,0, 0,0, 152, ,AS256D0,1,1
+3,0, 0,0, 10, ,AS256D0,1,1
+Interpolate Blend
+Interpolate Scale
+3,0,0,0,-1,,AS0D256,2,.1

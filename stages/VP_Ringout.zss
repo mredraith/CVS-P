@@ -1,0 +1,191 @@
+
+
+[Statedef 0; anim:-2;]
+
+# Ring Out Helper - Ring Out
+persistent(0) if numHelper(55) = 0 && stagevar(info.name) = "Ring Out" {
+	helper{id: 55; stateno: 55;}
+	modifyStageVar{
+		camera.boundright: 2000;
+		camera.boundleft: -2000;
+	}
+}
+
+# Meta World Helper
+persistent(0) if numHelper(100) = 0 && stagevar(info.name) = "spider's web" {
+	helper{id: 100; stateno: 100;}
+}
+
+# ========================================================================================================================================
+# Ring Out Helper - Ring Out
+[StateDef 55; anim: -2;]
+		
+for i = 1; 8; 1 {
+	if playerIDExist(player($i), ID) {
+		if ((player($i), Pos X + player($i), cameraPos X) > 560 || (player($i), Pos X + player($i), cameraPos X) < -560) && player($i), standBy = 0
+		&& player($i), stateno != const(StateTagEnteringScreen) && player($i), stateno != const(StateTagLeavingScreen) && player($i), stateno != const(StateTagJumpingIn)
+		&& player($i), stateno != 4209090 && player($i), stateno != 4209110 && player($i), stateno != 4209130 && roundState > 1
+		{
+			assertspecial{flag: noshadow; redirectID: player($i), ID;}
+			assertspecial{flag: skipKODisplay;}
+			groundLevelOffset{value: 200; redirectID: player($i), ID;}
+			stateTypeSet{physics: A; redirectID: player($i), ID;}
+			
+			if player($i), moveType != H && player($i), pos Y >= -100 {
+				changeAnim{value: 41; redirectID: player($i), ID;}
+			}
+			
+			if player($i), pos Y >= 0 || ((player($i), Pos X + player($i), cameraPos X) > 950 || (player($i), Pos X + player($i), cameraPos X) < -950) {
+				if player($i), map(_vnix_smash_snd) = 0 && roundState = 2 {
+
+					explod{
+						anim: 1;
+						postype: left;
+						pos: const240p(160),const240p(120);
+						scale: .5,.25;
+						angle: 0;
+						facing: 1;
+						ontop: 1;
+						#trans: addalpha;
+						#alpha: 0,256;
+						sprpriority: 5;
+						pausemovetime: -1;
+						supermovetime: -1;
+						ownpal: 1;
+						palfx.time: -1;
+						palfx.add: 255,255,255;
+						interpolation.time: 4;
+						interpolation.palfx.add: 0,0,0;
+						interpolation.scale: .5,.5;
+						#interpolation.alpha: 256,0;
+					}
+					
+					# Ring Out Text
+					if player($i), teamSide = 1 {
+						lifebaraction{text: "Ring Out"; top: 1; time: 180; redirectID: player(2), ID;}
+					} else {
+						lifebaraction{text: "Ring Out"; top: 1; time: 180; redirectID: player(1), ID;}
+					}
+					
+					player($i), map(_vnix_smash_snd) := 1;
+				}
+				lifeadd{value: -9999; absolute: 1; kill: 1; redirectID: player($i), ID;}
+				if player($i), pos Y >= 0 {
+					selfstate{value: 5150; redirectID: player($i), ID;}
+					posFreeze{redirectID: player($i), ID;}
+				}
+			}	
+		}
+	}
+}
+
+# ========================================================================================================================================
+# Meta World Helper - Disabled
+[StateDef 100; anim: -2;]
+
+if time = 0 {
+
+	# Meta World Activate
+	if player(1), map(_vnix_meta_invert) = 1 || player(2), map(_vnix_meta_invert) = 1 {
+		modifyBGCtrl {
+			id: 1;
+			time: 0,0;
+			value: 0;
+		}
+		modifyBGCtrl {
+			id: 50;
+			time: 0,0;
+			value: 0;
+		}
+		modifyBGCtrl {
+			id: 100;
+			time: 0,0;
+			value: 1;
+		}
+	}
+	
+	# Meta World Deactivate
+	if player(1), map(_vnix_meta_invert) = 0 && player(2), map(_vnix_meta_invert) = 0 {
+		modifyBGCtrl {
+			id: 50;
+			time: 0,0;
+			value: 1;
+		}
+		modifyBGCtrl {
+			id: 100;
+			time: 0,0;
+			value: 0;
+		}
+	}
+}
+
+if time = 1 {
+	changestate{value: 100}
+}
+
+# ========================================================================================================================================
+
+[Statedef 175; anim:-2;]
+
+[Statedef 5900; anim:-2;]
+changestate{value:0;}
+
+[Statedef -4]
+
+if roundState = 0 && time = 0 {
+	for i = 1; 8; 1 {
+		if playerIDexist(player($i), ID) {
+			player($i), map(_vnix_smash_snd) := 0;
+		}
+	}
+}
+
+ignorehitpause {
+	screenBound{value: 0; movecamera: 0,0}
+	assertSpecial{flag: invisible; flag2: noturntarget; flag3: noinput}
+	notHitBy{value: SCA}
+	width{value: 0,0}
+	
+}
+
+# Intro Delay by foobs
+if stageconst(intro_startup) >= fighttime && stagevar(info.name) = "" {
+	assertspecial{flag:roundnotskip; flag2:nobardisplay; flag3:intro;}
+}
+
+for i = 56; 121; 1 {
+	if playeridexist($i) && !fighttime && stagevar(info.name) = "" {
+		pause{time:stageconst(intro_startup); pausebg:0; redirectid: $i}
+	}
+}
+
+for i = 1; 8; 1 {
+	if playerIDexist(player($i), ID) {
+		text{
+			font: F 7;
+			text: "%v";
+			params: player($i), Pos X + player($i), CameraPos X;
+			removetime: 1;
+			layerno: 0;
+			velocity: 0,0;
+			align: cond(player($i), teamside = 1, 1, -1);
+			localcoord: 320, 240;
+			pos: cond(player($i), teamside = 1, 30, 290),1150;
+			scale: 1,1;
+			color: 255,255,255;
+		}
+		text{
+			font: F 7;
+			text: "%v";
+			params: player($i), Pos Y;
+			removetime: 1;
+			layerno: 0;
+			velocity: 0,0;
+			align: cond(player($i), teamside = 1, 1, -1);
+			localcoord: 320, 240;
+			pos: cond(player($i), teamside = 1, 30, 290),1160;
+			scale: 1,1;
+			color: 255,255,255;
+		}
+	}
+}
