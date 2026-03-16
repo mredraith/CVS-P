@@ -1430,23 +1430,23 @@ value = 1200,0
 type = VelSet
 trigger1 = var(10) = 0
 trigger1 = time >= 0
-x = 2
-
-[State 1200, VelSet]
-type = VelSet
-trigger1 = var(10) = 0
-trigger1 = time >= 10
 x = 1
 
 [State 1200, VelSet]
 type = VelSet
 trigger1 = var(10) = 0
-trigger1 = time >= 20
+trigger1 = time >= 10
 x = 0.5
 
 [State 1200, VelSet]
 type = VelSet
 trigger1 = var(10) = 0
+trigger1 = time >= 20
+x = 0.25
+
+[State 1200, VelSet]
+type = VelSet
+trigger1 = var(10) = 0
 trigger1 = time >= 30
 x = 0
 
@@ -1454,19 +1454,19 @@ x = 0
 type = VelSet
 trigger1 = var(10) = 1
 trigger1 = time >= 0
-x = 3
+x = 1.5
 
 [State 1200, VelSet]
 type = VelSet
 trigger1 = var(10) = 1
 trigger1 = time >= 10
-x = 2
+x = 1
 
 [State 1200, VelSet]
 type = VelSet
 trigger1 = var(10) = 1
 trigger1 = time >= 20
-x = 1
+x = 0.5
 
 [State 1200, VelSet]
 type = VelSet
@@ -1478,19 +1478,19 @@ x = 0
 type = VelSet
 trigger1 = var(10) = 2
 trigger1 = time >= 0
-x = 4
-
-[State 1200, VelSet]
-type = VelSet
-trigger1 = var(10) = 2
-trigger1 = time >= 10
 x = 2
 
 [State 1200, VelSet]
 type = VelSet
 trigger1 = var(10) = 2
-trigger1 = time >= 20
+trigger1 = time >= 10
 x = 1
+
+[State 1200, VelSet]
+type = VelSet
+trigger1 = var(10) = 2
+trigger1 = time >= 20
+x = 0.5
 
 [State 1200, VelSet]
 type = VelSet
