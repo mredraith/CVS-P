@@ -1312,7 +1312,7 @@ format.decimal.separator = .
 team1.pos = 30,500 ;Coords to show
 team1.spacing = 0,50 ;Spacing
 team1.start.x = -240 ;Starting x-coords
-team1.bg.layerno = 2
+team1.bg.layerno = 0
 team1.bg.offset = 75,0
 team1.bg.anim = 
 team1.bg.scale = 1.0,1.0
@@ -1331,7 +1331,7 @@ team1.hidespeed = 8 ;Message hiding speed (the larger value, the faster speed)
 team2.pos = 1250,500 ;Coords to show
 team2.spacing = 0,50 ;Spacing
 team2.start.x = 1520 ;Starting x-coords
-team2.bg.layerno = 2
+team2.bg.layerno = 0
 team2.bg.offset = -75,0
 team2.bg.anim = 
 team2.bg.scale = 1.0,1.0
@@ -1892,15 +1892,15 @@ p1.pos = 5,715
 ;p1.bg.spr = 
 p1.text.font = 3,0, 1
 p1.text.scale = 0.5,0.5
-p1.text.text = Wins: %s
-p1.text.layerno = 2
+p1.text.text = %s Wins
+p1.text.layerno = 0
 
 p2.pos = 1275,715;696,35
 ;p2.bg.spr = 
 p2.text.font = 3,0, -1
 p2.text.scale = 0.5,0.5
-p2.text.text = Wins: %s
-p2.text.layerno = 2
+p2.text.text = %s Wins
+p2.text.layerno = 0
 
 p1.enabled.netplayversus = 1
 p1.enabled.versus = 1
@@ -1919,7 +1919,7 @@ text.font = 3,0, 1
 text.scale = 0.5,0.5
 ; Time format: %m = minutes, %s = seconds, %x = milliseconds
 text.text = TIME:%m:%s.%x
-text.layerno = 2
+text.layerno = 0
 
 enabled.timeattack = 1
 enabled.timechallenge = 1
@@ -1932,14 +1932,14 @@ p1.pos = 5,715;586,35
 p1.text.font = 3,0, 1
 p1.text.scale = 0.5,0.5
 p1.text.text = Score: %s
-p1.text.layerno = 2
+p1.text.layerno = 0
 
 p2.pos = 1275,715;696,35
 ;p2.bg.spr = 
 p2.text.font = 3,0, -1
 p2.text.scale = 0.5,0.5
 p2.text.text = Score: %s
-p2.text.layerno = 2
+p2.text.layerno = 0
 
 score.min = 0
 score.max = 9999999
