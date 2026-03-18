@@ -4214,12 +4214,12 @@ var(47) = 0
 
 [State -2, Back Charge Buffer Activation]
 type = VarSet
-trigger1 = var(47) >= 35
+trigger1 = var(47) >= 45
 var(48) = 32
 
 [State -2, Back Charge Buffer Decrement]
 type = VarAdd
-trigger1 = var(47) < 35 && var(48) > 0
+trigger1 = var(47) < 45 && var(48) > 0
 var(48) = -1
 
 [State -2, Down Charge Increment]
@@ -4234,12 +4234,12 @@ var(49) = 0
 
 [State -2, Down Charge Buffer Activation]
 type = VarSet
-trigger1 = var(49) >= 30
+trigger1 = var(49) >= 45
 var(50) = 32
 
 [State -2, Down Charge Buffer Decrement]
 type = VarAdd
-trigger1 = var(49) < 30 && var(50) > 0
+trigger1 = var(49) < 45 && var(50) > 0
 var(50) = -1
 
 [State -2, MAX Mode End]

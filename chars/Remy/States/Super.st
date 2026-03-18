@@ -1515,7 +1515,7 @@ darken = 0
  
 [State 3200, Reversal]
 type = ReversalDef
-trigger1 = !Movehit 
+trigger1 = !Movehit
 trigger1 = Animelemtime(4) >= 0 && animelemtime(8) < 0
 attr = S, HT
 reversal.attr = SCA, NA, SA, HA
@@ -1525,6 +1525,11 @@ sparkxy = 0, 0
 hitsound = s3, 0
 p1stateno = 3202
 numhits = 0
+
+[State 3200, Stun]
+type = TargetState
+trigger1 = !MoveHit
+value = 5300
 
 [State 3200, End]
 type = ChangeState
@@ -1587,7 +1592,7 @@ ID = 3202
 attr = S,HP
 hitflag = HAF
 guardflag = M
-damage =20,6
+damage =90,1
 getpower = 5
 givepower = 36, 36
 pausetime = 4,4
@@ -1730,7 +1735,7 @@ attr = A, HP
 hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 126, ifElse(var(10), 119, 225)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 126, ifElse(var(10), 119, 225)))), 7
+damage = 1000
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
