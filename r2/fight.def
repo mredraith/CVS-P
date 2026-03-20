@@ -1368,6 +1368,7 @@ round.time = 10 ;Time to show round display
 ;round.default.text = "Round %i"
 ;round.default.scale = 2,2
 round.default.anim = 80
+round.default.layerno = -1
 round.default.displaytime = 58;90
 round.default.offset = 640, 360
 ;round.default.scale = 1,1
@@ -1421,6 +1422,7 @@ fight.offset = 640,360 ;Component for FIGHT display
 fight.anim = 81 ;.
 fight.snd = 1,1 ;Sound to play
 fight.sndtime = 20;0 ;Time to play sound
+fight.layerno = -1
 
 callfight.time = 60 ;Ikemen feature: Time to wait before starting fight
 ctrl.time = 30 ;Time players get control after starting fight
