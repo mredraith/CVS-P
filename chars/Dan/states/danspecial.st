@@ -1089,7 +1089,7 @@ stopongethit = 1
 
 [State 1200, Hit]
 type = hitdef
-trigger1 = anim = [1201, 1202] && animelem = 4
+trigger1 = anim = [1200, 1202] && animelem = 4
 trigger2 = anim = 1202 && animelem = 7
 air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := (map(strength) + 1))
 attr = A, SA
@@ -1108,8 +1108,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18
-guard.hittime = (1 + 18) - 6
+ground.hittime = 1 + 20
+guard.hittime = (1 + 20) - 6
 ground.slidetime = 18
 ground.velocity = -10.52, 0
 air.type = Low
@@ -1120,7 +1120,8 @@ envshake.time = 12; special
 envshake.freq = 180
 envshake.ampl = ifelse((gametime % 2), -2, 2)
 envshake.mul = 0.667
-air.fall = 1
+fall = 0
+air.fall = 0
 fall.recover = 1
 fall.recovertime = 120
 p1sprpriority = sprpriority
@@ -1132,9 +1133,8 @@ airguard.cornerpush.veloff = 0
 
 [State 1200, Hit Knockdown]
 type = hitdef
-trigger1 = anim = 1200 && animelem = 4
-trigger2 = anim = 1201 && animelem = 7
-trigger3 = anim = 1202 && animelem = 11
+trigger1 = anim = 1201 && animelem = 7
+trigger2 = anim = 1202 && animelem = 11
 air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := (map(strength) + 1))
 attr = A, SA
 damage = ifelse(map(strength) = 0, 90, 50), ifelse(map(strength) = 0, 23, 13)

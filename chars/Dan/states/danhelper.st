@@ -130,7 +130,7 @@ ignorehitpause = 1
 
 [State 1005, End]
 type = changestate
-trigger1 = var(1) >= ifelse(map(strength) = 2, 12, ifelse(map(strength) = 1, 18, 24))
+trigger1 = var(1) >= 300
 value = 1006
 ignorehitpause = 1
 
@@ -307,7 +307,7 @@ ignorehitpause = 1
 
 [State 1015, End]
 type = changestate
-trigger1 = var(1) >= 12
+trigger1 = var(1) >= 180
 value = 1016
 
 [State 1015, End]
@@ -881,7 +881,7 @@ var(1) = 1
 
 [State 3005, End]
 type = changestate
-trigger1 = var(1) >= 24
+trigger1 = var(1) >= 300
 value = 3006
 ignorehitpause = 1
 

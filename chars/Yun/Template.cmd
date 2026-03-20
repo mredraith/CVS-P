@@ -830,6 +830,7 @@ value=200
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command != "holddown"&& command="x"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
+trigger4=stateno=200&&time>6
 ;---------------------------------------------------------------------------
 [State -1, Standing Medium Punch]
 type=ChangeState
@@ -878,6 +879,7 @@ value=400
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="x"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
+trigger4=stateno=400&&time>6
 ;---------------------------------------------------------------------------
 [State -1, Crouching Medium Punch]
 type=ChangeState
@@ -902,6 +904,7 @@ triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command=
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
 trigger3=((stateno=[200,209])||(stateno=[400,409]))&&movecontact&&var(55)
+trigger4=stateno=430&&time>6
 ;---------------------------------------------------------------------------
 [State -1, Crouching Medium Kick]
 type=ChangeState

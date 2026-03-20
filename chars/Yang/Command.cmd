@@ -3272,8 +3272,7 @@ triggerAll = !AILevel
 triggerAll = (!NumExplod(90000002) && !NumExplod(90000003) && !NumExplod(90000001)) && (NumExplod(90000200) || command = "x")
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
-trigger2 = (StateNo = 200 || StateNo = 400 || StateNo = 430) && Time >= 6
-trigger3 = var(4)
+trigger2 = var(4)
 
 [State -1, Standing Light Kick]
 type = ChangeState
