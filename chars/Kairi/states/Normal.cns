@@ -330,8 +330,6 @@ air.velocity = -2.5,-4
 palfx.time = ifelse(var(59)<=1 && power>=1000,20,0)
 palfx.sinadd=64,64,64,4
 palfx.mul=128,128,128
-envshake.time = ifelse(var(59),0,12)
-envshake.ampl = 3
 forcenofall = !var(20)
 
 [State 210, flames]
@@ -448,8 +446,6 @@ air.velocity = -2.5,-4
 palfx.time = ifelse(var(59)<=1 && power>=1000,30,0)
 palfx.sinadd=64,64,64,4
 palfx.mul=128,128,128
-envshake.time = ifelse(var(59),0,12)
-envshake.ampl = 3
 forcenofall = !var(20)
 
 [State 211, 2]
@@ -476,8 +472,6 @@ air.velocity = -2.5,-4
 palfx.time = ifelse(var(59)<=1 && power>1000,30,0)
 palfx.sinadd=64,64,64,4
 palfx.mul=128,128,128
-envshake.time = ifelse(var(59),0,12)
-envshake.ampl = 3
 
 [State 211 ]
 type = explod
@@ -790,8 +784,6 @@ ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = ifelse(var(20), -4, -5.5)
 air.velocity = -2.2,-3.2
-envshake.time = ifelse(var(59),0,12)
-envshake.ampl = 3
 forcenofall = !var(20)
 
 [State 225, 4]
@@ -986,8 +978,6 @@ guard.hittime = (17) - 6
 ground.velocity = -6
 air.velocity = -2.2,-3.2
 air.animtype = Back
-envshake.time = 12
-envshake.ampl = 3
 forcenofall = !var(20)
 
 [State 231, 8]

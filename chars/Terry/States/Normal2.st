@@ -76,7 +76,6 @@ sparkxy = -10 + 0 * (var(35) := 76), var(36) := -84
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -188,7 +187,6 @@ sparkxy = -10 + 0 * (var(35) := 45), var(36) := -80
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -299,7 +297,6 @@ sparkxy = -10 + 0 * (var(35) := 80), var(36) := -79
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -394,7 +391,6 @@ sparkxy = -10 + 0 * (var(35) := 80), var(36) := -79
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -488,7 +484,6 @@ sparkxy = -10 + 0*(var(35):=83), var(36):=-78
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -591,7 +586,6 @@ palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
 forceStand = 1
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -637,7 +631,6 @@ palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
 forceStand = 1
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -741,7 +734,6 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-70
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -839,7 +831,6 @@ sparkxy = -10 + 0*(var(35):=58), var(36):=-68
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -957,7 +948,6 @@ sparkxy = -10 + 0*(var(35):=95), var(36):=-75
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1054,7 +1044,6 @@ sparkxy = -10 + 0*(var(35):=58), var(36):=-68
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1184,7 +1173,6 @@ sparkxy = -10 + 0*(var(35):=85), var(36):=-66
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1282,7 +1270,6 @@ sparkxy = -10 + 0*(var(35):=64), var(36):=-82
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1417,7 +1404,6 @@ sparkxy = -10 + 0*(var(35):=72), var(36):=-58
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1520,7 +1506,6 @@ sparkxy = -10 + 0*(var(35):=94), var(36):=-56
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1618,7 +1603,6 @@ palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
 forceStand = 1
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1715,7 +1699,6 @@ sparkxy = -10 + 0*(var(35):=55), var(36):=-82
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd= -255, -255, -255, 48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1812,7 +1795,6 @@ sparkxy = -10 + 0*(var(35):=68), var(36):=-2
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -1924,7 +1906,6 @@ sparkxy = -10 + 0*(var(35):=78), var(36):=-11
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2028,7 +2009,6 @@ sparkxy = -10 + 0*(var(35):=98), var(36):=-54
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2185,7 +2165,6 @@ sparkxy = -10 + 0*(var(35):=55), var(36):=-66
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2286,7 +2265,6 @@ sparkxy = -10 + 0*(var(35):=58), var(36):=-42
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2387,7 +2365,6 @@ sparkxy = -10 + 0*(var(35):=58), var(36):=-42
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2488,7 +2465,6 @@ sparkxy = -10 + 0*(var(35):=55), var(36):=-108
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 3
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2590,7 +2566,6 @@ sparkxy = -10 + 0*(var(35):=84), var(36):=-56
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 6
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2691,7 +2666,6 @@ sparkxy = -10 + 0*(var(35):=78), var(36):=-34
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -2792,7 +2766,6 @@ sparkxy = -10 + 0*(var(35):=78), var(36):=-34
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
 fall.envshake.time = 1
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0

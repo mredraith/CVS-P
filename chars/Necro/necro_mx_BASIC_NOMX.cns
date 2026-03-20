@@ -2458,9 +2458,6 @@ guard.velocity = -12
 ground.cornerpush.veloff = -20
 guard.cornerpush.veloff = -20
 ;
-envshake.time = 15
-envshake.freq = 40
-envshake.ampl = 10
 ;
 fall = 1
 air.fall = 1
@@ -3109,9 +3106,6 @@ sparkxy = -30,-60
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 120
-envshake.ampl = 11
 ;
 fall = 0
 air.fall = 1
@@ -3156,9 +3150,6 @@ sparkxy = -30,-60
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 8
 ;
 fall = 0
 air.fall = 1
@@ -3434,9 +3425,6 @@ sparkxy = -30,-70
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 8
 ;
 fall = 0
 air.fall = 1
@@ -3481,9 +3469,6 @@ sparkxy = -30,-70
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 8
 ;
 fall = 0
 air.fall = 1
@@ -3766,9 +3751,6 @@ sparkxy = -30,-70
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 14
-envshake.freq = 100
-envshake.ampl = 8
 ;
 fall = 0
 air.fall = 1
@@ -3813,9 +3795,6 @@ sparkxy = -30,-70
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 14
-envshake.freq = 100
-envshake.ampl = 8
 ;
 fall = 0
 air.fall = 1
@@ -5168,9 +5147,6 @@ sparkxy = -20,-75
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 0
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -5234,9 +5210,6 @@ sparkxy = -40,-70
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 0
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -5315,9 +5288,6 @@ sparkxy = -15,-30
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 0
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -5379,9 +5349,6 @@ sparkxy = -15,-60
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 0
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -5443,9 +5410,6 @@ sparkxy = -30,-70
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -5508,9 +5472,6 @@ sparkxy = -30,-70
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -5573,9 +5534,6 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -5638,9 +5596,6 @@ sparkxy = -40,-90
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -5702,9 +5657,6 @@ sparkxy = -40,-95
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -5759,9 +5711,6 @@ sparkxy = -10,-105
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -6069,9 +6018,6 @@ guard.sparkno = s17000
 hitsound = S5,0
 guardsound = S6,0
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 0
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -6239,9 +6185,6 @@ sparkxy = -15,-30
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -6299,9 +6242,6 @@ sparkxy = -20,-90
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 0
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -6357,9 +6297,6 @@ sparkxy = -20,-40
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -6422,9 +6359,6 @@ sparkxy = -20,-40
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 6
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 111
 fall.envshake.ampl = 11
@@ -6481,9 +6415,6 @@ guard.sparkno = s17000
 fall = 1
 fall.recover = 1
 ;
-envshake.time = 6
-envshake.freq = 110
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 100
 fall.envshake.ampl = 11
@@ -6542,9 +6473,6 @@ guard.sparkno = s17000
 fall = 1
 fall.recover = 1
 ;
-envshake.time = 6
-envshake.freq = 110
-envshake.ampl = 6
 fall.envshake.time = 11
 fall.envshake.freq = 100
 fall.envshake.ampl = 11
@@ -6602,9 +6530,6 @@ sparkxy = 0,-55
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -6656,9 +6581,6 @@ sparkxy = 0,-55
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -6710,9 +6632,6 @@ sparkxy = 0,-55
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -6945,9 +6864,6 @@ sparkxy = 0,-55
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -6996,9 +6912,6 @@ sparkxy = 0,-55
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -7048,9 +6961,6 @@ sparkxy = 0,-55
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -7100,9 +7010,6 @@ sparkxy = 0,-55
 sparkno = s17100+(Random%8)
 guard.sparkno = s17000
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6

@@ -326,9 +326,6 @@ ground.hittime  = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -352,9 +349,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -378,9 +372,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -406,9 +397,6 @@ ground.velocity = -5,-35
 air.velocity = -5,-30
 ground.cornerpush.veloff = -20
 air.cornerpush.veloff = -5
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 p2stateno = 3040
 fall = 1
 fall.recover = 0
@@ -759,9 +747,6 @@ ground.hittime  = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -785,9 +770,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -811,9 +793,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -839,9 +818,6 @@ ground.velocity = -5,-35
 air.velocity = -5,-30
 ground.cornerpush.veloff = -20
 air.cornerpush.veloff = -5
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 p2stateno = 3040
 fall = 1
 fall.recover = 0
@@ -1241,9 +1217,6 @@ ground.hittime  = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1267,9 +1240,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1293,9 +1263,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1319,9 +1286,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1345,9 +1309,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1371,9 +1332,6 @@ ground.hittime  = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1397,9 +1355,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1423,9 +1378,6 @@ ground.hittime  = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 kill = 0
 
 [State 250, 2]
@@ -1451,9 +1403,6 @@ ground.velocity = -5,-39
 air.velocity = -5,-30
 ground.cornerpush.veloff = -20
 air.cornerpush.veloff = -5
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 p2stateno = 3040
 fall = 1
 fall.recover = 0

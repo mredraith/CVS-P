@@ -1680,9 +1680,6 @@ forcestand = 1
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envShake.freq = 120
 
 [State 102, StateTypeSet: Idle]
 type = StateTypeSet

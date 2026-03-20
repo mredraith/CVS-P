@@ -48,9 +48,6 @@ air.type = Low
 air.hittime = 9
 air.velocity = -3.0*const(size.xscale),-6.5*const(size.yscale)
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 200 
 
@@ -98,9 +95,6 @@ air.type = Low
 air.hittime = 9
 air.velocity = -3.0*const(size.xscale),-6.5*const(size.yscale)
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 200 
 
@@ -211,9 +205,6 @@ air.type = Low
 air.hittime = 14
 air.velocity = -4.5*const(size.xscale),-6.5*const(size.yscale) 
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 210 
 
@@ -359,9 +350,6 @@ down.bounce = 1
 air.fall = 1
 air.recover = 0
 P2facing = 1
-envshake.time = 15
-envshake.freq = 80
-envshake.ampl = -4
 yaccel = .50*const(size.yscale) 
 id = 220 
 
@@ -565,9 +553,6 @@ air.type = Low
 air.hittime = 8
 air.velocity = -3.0*const(size.xscale),-6.5*const(size.yscale) 
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 230 
 
@@ -681,9 +666,6 @@ air.type = Low
 air.hittime = 17
 air.velocity = -4.5*const(size.xscale),-6.5*const(size.yscale) 
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 240 
 
@@ -730,9 +712,6 @@ air.type = Low
 air.hittime = 17
 air.velocity = -4.5*const(size.xscale),-6.5*const(size.yscale) 
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 241
 
@@ -1075,9 +1054,6 @@ down.bounce = 1
 air.fall = 0
 air.recover = 1
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 250 
 
@@ -1312,9 +1288,6 @@ air.type = Low
 air.hittime = 9
 air.velocity = -3.0*const(size.xscale),-6.5*const(size.yscale) 
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 400
 
@@ -1413,9 +1386,6 @@ air.type = Low
 air.hittime = 13
 air.velocity = -4.5*const(size.xscale),-6.5*const(size.yscale) 
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 410 
 
@@ -1542,9 +1512,6 @@ down.bounce = 1
 air.fall = 1
 air.recover = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .60*const(size.yscale) 
 id = 420 
 
@@ -1817,9 +1784,6 @@ guard.velocity = -10.0*const(size.xscale)
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 430
 
@@ -1933,9 +1897,6 @@ air.fall = 1
 down.bounce = 0
 fall.xvelocity = -2.0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = 1.0*const(size.yscale)
 id = 440 
 
@@ -2100,9 +2061,6 @@ down.bounce = 1
 air.fall = 1
 air.recover = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 450
 
@@ -2149,9 +2107,6 @@ down.bounce = 1
 air.fall = 1
 air.recover = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 450
 
@@ -2412,9 +2367,6 @@ air.hittime = 8
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 600
 
@@ -2510,9 +2462,6 @@ air.hittime = 12
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 610
 
@@ -2619,9 +2568,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
 yaccel = .50*const(size.yscale)
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 id = 620
 
 [State -2, VarSet]
@@ -2730,9 +2676,6 @@ air.hittime = 8
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 630
 
@@ -2828,9 +2771,6 @@ air.hittime = 12
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 640
 
@@ -2945,9 +2885,6 @@ air.hittime = 15
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 650
 

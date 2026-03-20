@@ -252,8 +252,6 @@ sparkXY = -15 + 0 * (var(35) := 100), var(36) := -88
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 200, Type]
 type=statetypeset
@@ -341,8 +339,6 @@ sparkxy = -10 + 0*(var(35):=160), var(36):=-70
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 200, Type]
 type=statetypeset
@@ -421,8 +417,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 221, HitDef Z-Counter]
 type=HitDef
@@ -465,8 +459,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 p2stateno = 4060
 
 [State 221, StateTypeSet: Idle]
@@ -565,8 +557,6 @@ sparkxy = -15 + 0*(var(35):=160), var(36):=-55
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 id = 200
 
 [State 220, Hit]
@@ -609,8 +599,6 @@ sparkxy = -15 + 0*(var(35):=160), var(36):=-55
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 200, Type]
 type=statetypeset
@@ -783,8 +771,6 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-77
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 200, Type]
 type=statetypeset
@@ -879,8 +865,6 @@ sparkxy = -10 + 0*(var(35):=160), var(36):=-62
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 250, Hit]
 type=hitdef
@@ -922,8 +906,6 @@ sparkxy = -10 + 0*(var(35):=160), var(36):=-74
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 200, Type]
 type=statetypeset
@@ -1097,8 +1079,6 @@ sparkXY = -15 + 0 * (var(35) := 100), var(36) := -46
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 410, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1186,8 +1166,6 @@ fall.recovertime = Ifelse(var(55)=2,20,120)
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 
 [State 420, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1360,8 +1338,6 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-5
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 440, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1448,8 +1424,6 @@ sparkxy = -10 + 0*(var(35):=160), var(36):=-5
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 450, StateTypeSet: Idle]
 type = StateTypeset
@@ -1668,8 +1642,6 @@ sparkXY = -15 + 0 * (var(35) := 100), var(36) := -88
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 610, Hit]
 type=hitdef
@@ -1714,8 +1686,6 @@ sparkXY = -15 + 0 * (var(35) := 100), var(36) := -88
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 610, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1801,8 +1771,6 @@ sparkxy = -10 + 0*(var(35):=160), var(36):=-70
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 620, StateTypeSet: Idle]
 type = StateTypeSet
@@ -2016,8 +1984,6 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-74
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 640, StateTypeSet: Idle]
 type = StateTypeSet
@@ -2102,8 +2068,6 @@ sparkxy = -10 + 0*(var(35):=160), var(36):=-35
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 650, StateTypeSet: Idle]
 type = StateTypeSet
@@ -2313,8 +2277,6 @@ guard.hittime = (15) - 6
 ground.velocity = -4.0,-3.0
 fall = 1
 fall.recover = 0
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 52, Dust]
 type = explod
@@ -2388,8 +2350,6 @@ guard.hittime = (15) - 6
 ground.velocity = -4.0,-3.0
 fall = 1
 fall.recover = 0
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 52, Dust]
 type = explod

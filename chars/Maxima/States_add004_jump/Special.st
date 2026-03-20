@@ -3129,8 +3129,6 @@ p1stateno = 1510
 p2stateno = 1136
 p2getp1state=1
 hitonce=1
-envshake.time=10
-envshake.ampl=5
 numhits = 0
 
 [State 800]

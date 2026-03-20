@@ -131,8 +131,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -241,8 +239,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -329,8 +325,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 ;---------------------[Xe[gɖ߂]
 [state a]
@@ -427,8 +421,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 410, 4]
 type = ChangeState
@@ -578,8 +570,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -707,8 +697,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -844,8 +832,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 ID = 1100
 
 
@@ -880,8 +866,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -1024,8 +1008,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 ID = 1100
 
 
@@ -1058,8 +1040,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 ;---------------------[Xe[gɖ߂]
 [state a]
@@ -1157,8 +1137,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 210, 2]
 type = HitDef
@@ -1190,8 +1168,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -1296,8 +1272,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 240, 2]
 type = HitDef
@@ -1333,8 +1307,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type=ChangeState
@@ -1462,8 +1434,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -1565,8 +1535,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 240, 2]
 type = HitDef
@@ -1600,8 +1568,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type=ChangeState
@@ -1706,8 +1672,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [state a]
 type = changestate
@@ -1887,8 +1851,6 @@ ground.cornerPush.velOff = 0
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 id = 1300
 
 [state a]

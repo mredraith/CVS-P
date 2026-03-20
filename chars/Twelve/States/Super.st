@@ -1380,9 +1380,6 @@ guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0*(var(34):=8000)
 sparkxy = -10 + 0*(var(35):=25), var(36):=-83
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 10
 
 [State 0,ChangeState]
 type = ChangeState
@@ -3854,9 +3851,6 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 ;
-envshake.time = 2
-envshake.freq = 110
-envshake.ampl = 6
 ;
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
@@ -3900,9 +3894,6 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 ;
-envshake.time = 2
-envshake.freq = 110
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4560,9 +4551,6 @@ fall.recover = 0
 ;projhits = 2
 ;projpriority = 3
 ;ownpal = 1;
-envshake.time = 3
-envshake.freq = 110
-envshake.ampl = 7
 ;
 fall.envshake.time = 10
 fall.envshake.freq = 110 ;speed
@@ -4622,9 +4610,6 @@ fall.recover = 0
 ;projhits = 2
 ;projpriority = 3
 ;ownpal = 1
-envshake.time = 3
-envshake.freq = 110
-envshake.ampl = 7
 fall.envshake.time = 10
 fall.envshake.freq = 110 ;speed
 fall.envshake.ampl = 7	;strong weak
@@ -4683,9 +4668,6 @@ fall.recover = 0
 ;projhits = 2
 ;projpriority = 3
 ;ownpal = 1
-envshake.time = 3
-envshake.freq = 110
-envshake.ampl = 7
 fall.envshake.time = 10
 fall.envshake.freq = 110 ;speed
 fall.envshake.ampl = 7	;strong weak
@@ -5015,9 +4997,6 @@ fall.recover = 0
 ;projhits = 2
 ;projpriority = 3
 ;ownpal = 1;
-envshake.time = 3
-envshake.freq = 110
-envshake.ampl = 7
 ;
 fall.envshake.time = 10
 fall.envshake.freq = 110 ;speed
@@ -5077,9 +5056,6 @@ fall.recover = 0
 ;projhits = 2
 ;projpriority = 3
 ;ownpal = 1
-envshake.time = 3
-envshake.freq = 110
-envshake.ampl = 7
 fall.envshake.time = 10
 fall.envshake.freq = 110 ;speed
 fall.envshake.ampl = 7	;strong weak
@@ -5138,9 +5114,6 @@ fall.recover = 0
 ;projhits = 2
 ;projpriority = 3
 ;ownpal = 1
-envshake.time = 3
-envshake.freq = 110
-envshake.ampl = 7
 fall.envshake.time = 10
 fall.envshake.freq = 110 ;speed
 fall.envshake.ampl = 7	;strong weak

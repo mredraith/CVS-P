@@ -426,9 +426,6 @@ p1stateno = 1110
 p2stateno = 1115
 fall = 1
 fall.recover = 1
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 10
 
 [State 110, Dust Helper]
 type = Helper
@@ -850,9 +847,6 @@ p2facing = 1
 p1stateno = 1140
 fall = 1
 fall.recover = 1
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 10
 
 [State 110, Dust Helper]
 type = Helper
@@ -1722,9 +1716,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 1
 air.fall = 1
 fall.recover = 1
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -1774,9 +1765,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 1
 air.fall = 1
 fall.recover = 1
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -1903,9 +1891,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -1955,9 +1940,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -2084,9 +2066,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -2127,9 +2106,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -2178,9 +2154,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -2606,9 +2579,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -50
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -2648,9 +2618,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -70
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -2690,9 +2657,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -80
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -2732,9 +2696,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -80
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3266,9 +3227,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3309,9 +3267,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3352,9 +3307,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3395,9 +3347,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3438,9 +3387,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3481,9 +3427,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3524,9 +3467,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3567,9 +3507,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3989,9 +3926,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4031,9 +3965,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4073,9 +4004,6 @@ sparkXY = -10 + 0 * (var(35) := 110), var(36) := -60
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4181,9 +4109,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 110), var(36) := -10
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4666,9 +4591,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -40
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4709,9 +4631,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -40
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4753,9 +4672,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -40
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4897,9 +4813,6 @@ sparkXY = -10 + 0 * (var(35) := 113), var(36) := -40
 fall = 0
 air.fall = 1
 fall.recover = 1
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -5104,9 +5017,6 @@ sparkXY = -10 + 0 * (var(35) := 120), var(36) := -40
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -5248,9 +5158,6 @@ sparkXY = -10 + 0 * (var(35) := 113), var(36) := -40
 fall = 0
 air.fall = 1
 fall.recover = 1
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -5316,9 +5223,6 @@ p1stateno = 1510
 p2stateno = 1515
 fall = 1
 fall.recover = 1
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 10
 
 [State 0, VelSet]
 type = VelSet
@@ -5792,9 +5696,6 @@ p1stateno = 1510
 p2stateno = 1515
 fall = 1
 fall.recover = 1
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 10
 
 [State 0, VelSet]
 type = VelSet

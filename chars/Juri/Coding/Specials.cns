@@ -1518,9 +1518,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 950, 4]
 type = ChangeState
@@ -1643,9 +1640,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 950, 4]
 type = ChangeState
@@ -1768,9 +1762,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 950, 4]
 type = ChangeState
@@ -2094,9 +2085,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 950, 4]
 type = ChangeState
@@ -3193,9 +3181,6 @@ givepower = 30,30
 fall.recover = 0
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 ;EX-SpecialMove
 [State 0, Explod]
@@ -3505,9 +3490,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 1030, TargetState];hits foe into wall
 type = TargetState

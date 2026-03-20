@@ -2157,9 +2157,6 @@ air.type = Low
 air.hittime = 33 
 air.velocity = -5.0*const(size.xscale),-8.5*const(size.yscale) 
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale) 
 id = 900 
 
@@ -2329,9 +2326,6 @@ air.type = Low
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 yaccel = .50*const(size.yscale)
 id = 910 
 
@@ -2463,9 +2457,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 P2facing = 1
 yaccel = .50*const(size.xscale)
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 id = 920
 
 [State -2, VarSet]

@@ -1416,9 +1416,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 220, 2]
 type = HitDef
@@ -1447,9 +1444,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 220, 3]
 type = ChangeState
@@ -1514,9 +1508,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 220, 2]
 type = HitDef
@@ -1545,9 +1536,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 220, 3]
 type = ChangeState

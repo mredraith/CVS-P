@@ -1943,9 +1943,6 @@ air.velocity = -6, -12
 down.velocity = -6, -12
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-envshake.time = 9
-envshake.freq = 60
-envshake.ampl = 2
 palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
@@ -3047,8 +3044,6 @@ air.type = High
 air.velocity = -1, -6
 getpower = 0
 givepower = 0
-envshake.time = 16
-envshake.ampl = 4
 sprpriority = 1
 
 [State 193, Aura]

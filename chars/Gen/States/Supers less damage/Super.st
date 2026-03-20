@@ -2400,10 +2400,6 @@ ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0,0
 air.velocity = 0,0
-envshake.time = 10
-envshake.freq = 60
-envshake.ampl = -4
-envshake.phase = 60
 getpower = 0
 givepower = 20
 p1facing = 1
@@ -2431,10 +2427,6 @@ ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -15
 air.velocity = -5,-4
-envshake.time = 20
-envshake.freq = 120
-envshake.ampl = -4
-envshake.phase = 160
 getpower = 0
 givepower = 20
 air.fall = 1
@@ -2593,10 +2585,6 @@ ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0,0
 air.velocity = 0,0
-envshake.time = 10
-envshake.freq = 60
-envshake.ampl = -4
-envshake.phase = 60
 getpower = 0
 givepower = 20
 p1facing = 1
@@ -2626,10 +2614,6 @@ ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -15
 air.velocity = -5,-4
-envshake.time = 20
-envshake.freq = 120
-envshake.ampl = -4
-envshake.phase = 160
 getpower = 0
 givepower = 20
 air.fall = 1
@@ -2986,9 +2970,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -10 + 0 * (var(35) := 57), var(36) := -70
 sparkNo = -1
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4183,9 +4164,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -0 + 0 * (var(35) := 57), var(36) := -10
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4230,9 +4208,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -0 + 0 * (var(35) := 57), var(36) := -10
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 5
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4271,9 +4246,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -40 + 0 * (var(35) := 57), var(36) := -80
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 5
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4481,9 +4453,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -0 + 0 * (var(35) := 57), var(36) := -10
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4528,9 +4497,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -0 + 0 * (var(35) := 57), var(36) := -10
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 5
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4569,9 +4535,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -40 + 0 * (var(35) := 57), var(36) := -80
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 5
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4772,9 +4735,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -40 + 0 * (var(35) := 57), var(36) := -80
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 5
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4812,9 +4772,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -40 + 0 * (var(35) := 57), var(36) := -80
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 5
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -4850,9 +4807,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -40 + 0 * (var(35) := 57), var(36) := -80
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 20
-envshake.freq = 100
-envshake.ampl = 10
 fall.envshake.time = 5
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak
@@ -6831,9 +6785,6 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 5	;strong weak
@@ -7074,9 +7025,6 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 5	;strong weak
@@ -7318,9 +7266,6 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 5	;strong weak
@@ -7594,9 +7539,6 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 5	;strong weak
@@ -7837,9 +7779,6 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 5	;strong weak
@@ -8081,9 +8020,6 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 5	;strong weak
@@ -8324,9 +8260,6 @@ guard.sparkNo = -1 + 0*(var(34) := 8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 5	;strong weak
@@ -8578,9 +8511,6 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -10 + 0 * (var(35) := 57), var(36) := -70
 sparkNo = -1
 guard.sparkNo = -1 + 0*(var(34) := 8001)
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 6
 fall.envshake.time = 10
 fall.envshake.freq = 100 ;speed
 fall.envshake.ampl = 10	;strong weak

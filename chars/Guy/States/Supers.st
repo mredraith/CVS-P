@@ -3450,9 +3450,6 @@ fall=0
 air.fall=0
 fall.recover = 0
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -3497,9 +3494,6 @@ fall=0
 air.fall=0
 fall.recover = 0
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -3544,9 +3538,6 @@ fall=0
 air.fall=0
 fall.recover = 0
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -3590,9 +3581,6 @@ fall=0
 air.fall=0
 fall.recover = 0
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -3724,9 +3712,6 @@ fall=0
 air.fall=0
 fall.recover = 0
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6
@@ -3769,9 +3754,6 @@ fall=0
 air.fall=0
 fall.recover = 0
 ;
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 6

@@ -565,9 +565,6 @@ sparkxy = -10 + 0*(var(35):=19), var(36):=-89
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1200, HitDef 2]
 type = HitDef
@@ -809,9 +806,6 @@ sparkxy = -10 + 0*(var(35):=19), var(36):=-89
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 forcestand = 1
 
 [State 1200, HitDef 2]
@@ -979,9 +973,6 @@ sparkxy = -10 + 0*(var(35):=60), var(36):=-59
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
@@ -1119,9 +1110,6 @@ sparkxy = -10 + 0*(var(35):=64), var(36):=-80
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1221, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1268,9 +1256,6 @@ sparkxy = -10 + 0*(var(35):=60), var(36):=-59
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
@@ -1358,9 +1343,6 @@ sparkxy = -10 + 0*(var(35):=64), var(36):=-80
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1430, Juggle Reset]
 type = VarSet
@@ -1867,9 +1849,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, ChangeAnimElem]
 type = ChangeAnim
@@ -1921,9 +1900,6 @@ sparkxy = -10 + 0*(var(35):=32), var(36):=-124
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 3010, StateTypeSet: Idle]
 type = StateTypeSet
@@ -2462,9 +2438,6 @@ sparkxy = -10 + 0*(var(35):=30), var(36):=-115
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 220, Finish]
@@ -2507,9 +2480,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, ChangeAnimElem]
 type = ChangeAnim
@@ -2627,9 +2597,6 @@ sparkxy = -10 + 0*(var(35):=54), var(36):=-72
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1330, ChangeState]
 type = ChangeState
@@ -2727,9 +2694,6 @@ sparkXY = -10 + 0*(var(35):=40), var(36):=-72
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 220, Hit]
 type=hitdef
@@ -2773,9 +2737,6 @@ sparkxy = -10 + 0*(var(35):=23), var(36):=-63
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 220, Hit]
 type=hitdef
@@ -2819,9 +2780,6 @@ sparkxy = -10 + 0*(var(35):=30), var(36):=-115
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1401, StateTypeSet: Idle]
 type = StateTypeSet
@@ -3026,9 +2984,6 @@ sparkxy = -10 + 0*(var(35):=54), var(36):=-72
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1330, ChangeState]
 type = ChangeState
@@ -3121,9 +3076,6 @@ sparkXY = -10 + 0*(var(35):=40), var(36):=-72
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 220, Hit]
 type=hitdef
@@ -3167,9 +3119,6 @@ sparkxy = -10 + 0*(var(35):=23), var(36):=-63
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 220, Hit]
 type=hitdef
@@ -3213,9 +3162,6 @@ sparkxy = -10 + 0*(var(35):=30), var(36):=-115
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1401, StateTypeSet: Idle]
 type = StateTypeSet
@@ -3374,9 +3320,6 @@ sparkxy = -10 + 0*(var(35):=49), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1500, TargetDrop]
 type = TargetDrop
@@ -3770,9 +3713,6 @@ sparkxy = -10 + 0*(var(35):=49), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1530, TargetDrop]
 type = TargetDrop
@@ -3893,9 +3833,6 @@ sparkXY = -10 + 0 * (var(35) := 53), var(36) := -12
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd= -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1600, TargetDrop]
 type = TargetDrop

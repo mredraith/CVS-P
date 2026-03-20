@@ -3276,9 +3276,6 @@ sparkxy = -10 + 0*(var(35):=83), var(36):=-78
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 3201, Hit]

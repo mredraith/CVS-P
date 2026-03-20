@@ -4001,9 +4001,6 @@ sparkxy = -10 + 0*(var(35):=49), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1500, TargetDrop]
 type = TargetDrop
@@ -7481,9 +7478,6 @@ sparkxy = -10 + 0*(var(35):=38), var(36):=-62
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 1200, StateTypeSet: Idle]
 type = StateTypeSet

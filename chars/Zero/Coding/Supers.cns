@@ -5817,8 +5817,6 @@ airguard.velocity = -2,-1
 air.type = High
 air.velocity = 0,-12
 air.hittime = 25
-envshake.time = 12
-envshake.ampl = 3
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -6446,8 +6444,6 @@ air.fall = 1
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
 
 [State 640, 3]
 type = HitDef
@@ -6482,8 +6478,6 @@ air.fall = 1
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
 
 [State 0, Explod]
 type = Explod

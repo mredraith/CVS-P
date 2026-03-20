@@ -63,8 +63,6 @@ fall.recoverTime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=8
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 200, StateTypeSet: Idle]
 type=StateTypeSet
@@ -152,8 +150,6 @@ fall.recoverTime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-4,4)
 
 [State 210, Hit]
 type=HitDef
@@ -196,8 +192,6 @@ fall.recoverTime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-4,4)
 
 
 [State 210, StateTypeSet: Idle]
@@ -288,8 +282,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 
 [State 225, HitDef]
 type=HitDef
@@ -332,8 +324,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 
 [State 220, StateTypeSet: Idle]
 type=StateTypeSet
@@ -418,8 +408,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 
 [State 221, HitDef Z-Counter]
 type=HitDef
@@ -462,8 +450,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 
 [State 221, StateTypeSet: Idle]
 type=StateTypeSet
@@ -551,8 +537,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=8
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 230, StateTypeSet: Idle]
 type=StateTypeSet
@@ -640,8 +624,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-4,4)
 
 [State 240, StateTypeSet: Idle]
 type=StateTypeSet
@@ -727,8 +709,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 
 [State 250, HitDef]
 type=HitDef
@@ -771,8 +751,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 
 [State 250, StateTypeSet: Idle]
 type=StateTypeSet
@@ -852,8 +830,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=8
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 400, StateTypeSet: Idle]
 type=StateTypeSet
@@ -932,8 +908,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-4,4)
 
 [State 410, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1030,8 +1004,6 @@ fall.recovertime = Ifelse(var(55)=2,20,120)
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 
 [State 420, HitDef]
 type = HitDef
@@ -1076,8 +1048,6 @@ fall.recovertime = Ifelse(var(20),20,120)
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 
 [State 420, ChangeState]
 type = ChangeState
@@ -1163,8 +1133,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=8
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 430, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1242,8 +1210,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-4,4)
 
 [State 440, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1326,8 +1292,6 @@ air.cornerPush.velOff=0
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 fall.envshake.time=16
 fall.envshake.ampl=Ifelse(random<=500,-6,6)
 
@@ -1370,8 +1334,6 @@ air.cornerPush.velOff=0
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-5,5)
 fall.envshake.time=16
 fall.envshake.ampl=Ifelse(random<=500,-6,6)
 
@@ -1450,8 +1412,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 8
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 600, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1532,8 +1492,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 610, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1614,8 +1572,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 
@@ -1698,8 +1654,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 8
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 630, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1780,8 +1734,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 640, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1861,8 +1813,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 
@@ -1913,8 +1863,6 @@ p1stateno = 810 ;On success, KFM changes to state 810
 fall = 1 ;Force p2 into falling down
 getpower = 0
 givepower = 0
-envshake.time = 10
-envshake.ampl = 5
 
 
 [State 800, Miss Voice]
@@ -2792,8 +2740,6 @@ p1stateno = 860 ;On success, KFM changes to state 810
 fall = 1 ;Force p2 into falling down
 getpower = 0
 givepower = 0
-envshake.time = 10
-envshake.ampl = 5
 
 
 [State 850, Miss Voice]

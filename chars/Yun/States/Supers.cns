@@ -2899,9 +2899,6 @@ guard.sparkno=-1 + 0*(var(34):=8001)
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 6
-envshake.freq = 110
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 110 
 fall.envshake.ampl = 5 
@@ -2945,9 +2942,6 @@ guard.sparkno=-1 + 0*(var(34):=8001)
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 6
-envshake.freq = 110
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 110 
 fall.envshake.ampl = 5 
@@ -2991,9 +2985,6 @@ guard.sparkno=-1 + 0*(var(34):=8001)
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 15
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -3040,9 +3031,6 @@ guard.sparkno=-1 + 0*(var(34):=8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 6
-envshake.freq = 110
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 110 
 fall.envshake.ampl = 5 
@@ -3085,9 +3073,6 @@ guard.sparkno=-1 + 0*(var(34):=8001)
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 6
-envshake.freq = 110
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 110 
 fall.envshake.ampl = 5 

@@ -146,9 +146,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -188,9 +185,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -230,9 +224,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -273,9 +264,6 @@ fall = 0
 air.fall = 0
 fall.recover = 1
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 8
-envShake.freq = 110
 
 [State 1010, 11]
 type = ChangeState
@@ -430,9 +418,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -472,9 +457,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -514,9 +496,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -555,9 +534,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 
@@ -598,9 +574,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 8
-envShake.freq = 110
 
 [State 1010, 11]
 type = ChangeState
@@ -755,9 +728,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -797,9 +767,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -839,9 +806,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -880,9 +844,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -921,9 +882,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 
@@ -964,9 +922,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 8
-envShake.freq = 110
 
 
 
@@ -1183,9 +1138,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -1225,9 +1177,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -1267,9 +1216,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1308,9 +1254,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1350,9 +1293,6 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1391,9 +1331,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 12
-envshake.ampl = 6
-envShake.freq = 120
 
 
 [State 200, Hit]
@@ -1433,9 +1370,6 @@ yaccel = .58
 fall = 1
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 12
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hit]
 type = HitDef
@@ -1474,9 +1408,6 @@ yaccel = .58
 fall = 1
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 12
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hit]
 type = HitDef
@@ -1515,9 +1446,6 @@ yaccel = .58
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 12
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 40, Dust Helper]
 type = Helper
@@ -4078,9 +4006,6 @@ yaccel = .58
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 16
-envshake.ampl = 10
-envShake.freq = 120
 
 
 [State 200, Hit]
@@ -4119,9 +4044,6 @@ yaccel = .58
 fall = 1
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 16
-envshake.ampl = 10
-envShake.freq = 120
 
 
 [State 1100, End]

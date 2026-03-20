@@ -3657,15 +3657,11 @@ air.velocity = 0,0
 getpower = 0,0
 givepower = 5,5
 forcestand = 1
-envshake.time = 15;,8
-envshake.ampl = 4
 kill = 0
 priority  = 7, Hit
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 3500,ChangeAnim]
 type = ChangeAnim
@@ -3839,8 +3835,6 @@ fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 1100,varset]
 type = ScreenBound

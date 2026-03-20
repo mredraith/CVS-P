@@ -3023,9 +3023,6 @@ sparkNo = -1 + 0 * (var(33) := 8010)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
 hitSound = -1 + 0 * (var(31) := 0)
 guardSound = -1 + 0 * (var(32) := 0)
-envshake.time = 0
-envshake.freq = 110
-envshake.ampl = 4
 fall.envshake.time = 10
 fall.envshake.freq = 110
 fall.envshake.ampl = 6

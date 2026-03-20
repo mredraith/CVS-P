@@ -1135,9 +1135,6 @@ sparkXY = -10 + 0 * (var(35) := 82), var(36) := -9
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 14
-envShake.ampl = 4
-envShake.freq = 120
 
 [State 229,StateTypeSet]
 type = StateTypeSet

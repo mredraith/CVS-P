@@ -470,9 +470,6 @@ sparkxy = -10 + 0 * (var(35) := 30), var(36) := -51
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 p2Facing = 1
 
 [State 3100, TargetState]
@@ -1130,9 +1127,6 @@ sparkxy = -10 + 0 * (var(35) := 30), var(36) := -51
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 p2Facing = 1
 
 [State 3100, TargetState]
@@ -2013,9 +2007,6 @@ sparkxy = -10 + 0*(var(35):=70), var(36):=-74
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 
 [State 3200, VarSet]
 type = VarSet

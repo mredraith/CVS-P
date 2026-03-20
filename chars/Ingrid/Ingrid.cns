@@ -4107,9 +4107,6 @@ fall = 1
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120;37
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, StateTypeSet]
 type = StateTypeSet
@@ -4279,9 +4276,6 @@ air.hittime = 120
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -4441,9 +4435,6 @@ fall = 1
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120;37
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 
 [State 200, 1]
@@ -4482,9 +4473,6 @@ air.cornerpush.veloff = 0
 fall = 1
 fall.recover = 0
 air.fall = 1
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, StateTypeSet]
 type = StateTypeSet
@@ -4618,9 +4606,6 @@ air.cornerpush.veloff = 0
 fall = 1
 fall.recover = 0
 air.fall = 1
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -4779,9 +4764,6 @@ air.hittime = 120
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -4897,9 +4879,6 @@ air.cornerpush.veloff = 0
 fall = 1
 fall.recover = 0
 air.fall = 1
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -5471,9 +5450,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 fall.recover = 0
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, 1]
 type = HitDef
@@ -5515,9 +5491,6 @@ air.cornerpush.veloff = 0
 fall.recover = 0
 fall = 1
 air.fall = 1
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
@@ -6265,9 +6238,6 @@ air.cornerpush.veloff = 0
 fall = 0
 fall.recover = 0
 fall.recovertime = 120;33
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 
 [State 200, 1]
 type = HitDef
@@ -6305,9 +6275,6 @@ guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 fall.recover = 0
 fall.recovertime = 120;33
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 
 
 

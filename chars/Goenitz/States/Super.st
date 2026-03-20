@@ -365,9 +365,6 @@ Snap = 35,0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, End Combo]
 Type = HitDef
@@ -399,9 +396,6 @@ Snap = 35,0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, ALOA set 2]
 Type = EnvColor
@@ -472,9 +466,6 @@ numhits = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 1000, 9]
 type = ChangeState
@@ -967,9 +958,6 @@ Snap = 35,0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, End Combo]
 Type = HitDef
@@ -1001,9 +989,6 @@ Snap = 35,0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, ALOA set 2]
 Type = EnvColor
@@ -1085,9 +1070,6 @@ numhits = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 1000, 9]
 type = ChangeState
@@ -2398,9 +2380,6 @@ Kill = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hitdef]
 Type = HitDef
@@ -2439,9 +2418,6 @@ Kill = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hitdef]
 Type = Velset
@@ -2498,13 +2474,9 @@ Fall = 1
 fall.recover = 0
 Kill = 0
 ID = 3200
-EnvShake.Time = 20
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, ALOA set 2]
 Type = ChangeState
@@ -2842,9 +2814,6 @@ Kill = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hitdef]
 Type = HitDef
@@ -2883,9 +2852,6 @@ Kill = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hitdef]
 Type = HitDef
@@ -2924,9 +2890,6 @@ Kill = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hitdef]
 Type = HitDef
@@ -2965,9 +2928,6 @@ Kill = 0
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, Hitdef]
 Type = Velset
@@ -3024,13 +2984,9 @@ Fall = 1
 fall.recover = 0
 Kill = 0
 ID = 3200
-EnvShake.Time = 20
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 18
-envShake.ampl = 6
-envShake.freq = 120
 
 [State 200, ALOA set 2]
 Type = ChangeState

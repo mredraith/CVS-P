@@ -464,8 +464,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=14
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 1100, HitSpark]
 type=Helper
@@ -656,8 +654,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=14
-envshake.ampl=Ifelse(random<=500,-3,3)
 p2stateno=4060
 
 [State 1100, HitSpark]
@@ -1829,9 +1825,6 @@ yaccel = .5
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=4
-envShake.freq=120
 
 [State 0, HitDef]
 type = HitDef
@@ -1865,9 +1858,6 @@ yaccel = .5
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=4
-envShake.freq=120
 p2stateno = 4060
 
 [State 0, StateTypeSet]

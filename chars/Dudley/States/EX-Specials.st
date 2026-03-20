@@ -817,9 +817,6 @@ ground.hittime = 19
 guard.hittime = (19) - 6
 ground.velocity = 0, 0
 air.velocity = -6, -6
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State AttackDone]
 type=statetypeset
@@ -898,9 +895,6 @@ ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -1
 air.velocity = -1,-2
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 420, 2]
 type = HitDef
@@ -926,9 +920,6 @@ ground.velocity = 0,-7.5
 air.velocity = 0,-7.5
 fall = 1
 fall.recover = 0
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State AttackDone]
 type=statetypeset
@@ -1094,9 +1085,6 @@ ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -0
 air.velocity = -0,-3
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 420, 2]
 type = HitDef
@@ -1120,9 +1108,6 @@ ground.hittime = 23
 guard.hittime = (23) - 6
 ground.velocity = 1,0
 air.velocity = 0,-3
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 220, 2]
 type = HitDef

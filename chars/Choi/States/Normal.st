@@ -165,8 +165,6 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-51
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 200, Type]
 type=statetypeset
@@ -258,8 +256,6 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-32
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 225, Hit]
 type=hitdef
@@ -301,8 +297,6 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-48
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 200, Type]
 type=statetypeset
@@ -382,8 +376,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 221, HitDef Z-Counter]
 type=HitDef
@@ -426,8 +418,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 221, StateTypeSet: Idle]
 type=StateTypeSet
@@ -641,8 +631,6 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-30
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 200, Type]
 type=statetypeset
@@ -815,8 +803,6 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-45
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 200, Type]
 type=statetypeset
@@ -989,8 +975,6 @@ sparkxy = -10 + 0 * (var(35) := 100), var(36) := -34
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 410, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1077,8 +1061,6 @@ sparkxy = -10 + 0 * (var(35) := 100), var(36) := -75
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 420, ChangeState]
 type = ChangeState
@@ -1260,8 +1242,6 @@ sparkxy = -10 + 0*(var(35):=100), var(36):=-7
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 440, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1348,8 +1328,6 @@ sparkxy = -10 + 0*(var(35):=120), var(36):=-7
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 450, TargetState]
 type = TargetState
@@ -1576,8 +1554,6 @@ sparkxy = -10 + 0 * (var(35) := 90), var(36) := -40
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 610, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1662,8 +1638,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 
@@ -1709,8 +1683,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 
@@ -1884,8 +1856,6 @@ sparkxy = -10 + 0*(var(35):=90), var(36):=-32
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 640, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1969,8 +1939,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 

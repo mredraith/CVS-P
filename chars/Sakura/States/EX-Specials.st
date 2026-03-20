@@ -883,7 +883,6 @@ air.recover = 0
 Id = 2201
 getpower = 0
 givepower = 35, 35
-envshake.time = 12
 fall.envshake.time = 5
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0

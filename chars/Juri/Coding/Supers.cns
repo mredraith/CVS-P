@@ -921,9 +921,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -963,9 +960,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -1006,9 +1000,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1048,9 +1039,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1091,9 +1079,6 @@ kill = 0
 air.fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -1135,9 +1120,6 @@ kill = 0
 air.fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 3000, End]
 type = ChangeState
@@ -1245,9 +1227,6 @@ fall.recover = 0
 fall = 1
 kill = 1
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1287,9 +1266,6 @@ fall = 1
 fall.recover = 0
 kill = 1
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -1330,9 +1306,6 @@ fall = 1
 kill = 1
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, 2]
@@ -1369,9 +1342,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 950, 4]
 type = ChangeState
@@ -1805,9 +1775,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1847,9 +1814,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -1890,9 +1854,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1932,9 +1893,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -1975,9 +1933,6 @@ kill = 0
 air.fall = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2017,9 +1972,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2059,9 +2011,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2101,9 +2050,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2143,9 +2089,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2185,9 +2128,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2227,9 +2167,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2269,9 +2206,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2311,9 +2245,6 @@ fall = 0
 kill = 0
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 3000, End]
@@ -2451,9 +2382,6 @@ air.fall = 1
 fall = 1
 kill = 1
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 [State 200, Hit]
 type = HitDef
@@ -2494,9 +2422,6 @@ fall = 1
 fall.recover = 0
 kill = 1
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, Hit]
@@ -2538,9 +2463,6 @@ fall = 1
 kill = 1
 fall.recover = 0
 fall.recoverTime = 120
-envshake.time = 10
-envshake.ampl = 4
-envShake.freq = 100
 
 
 [State 200, 2]
@@ -2578,9 +2500,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 
 [State 200, 2]
@@ -2619,9 +2538,6 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 getpower = 30 * !var(20), 0
 givepower = 30, 30
-envshake.time=16
-envshake.freq=30
-envshake.ampl=4
 
 [State 950, 4]
 type = ChangeState

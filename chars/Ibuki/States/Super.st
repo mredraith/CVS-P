@@ -201,9 +201,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -247,9 +244,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -290,9 +284,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -332,9 +323,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -940,9 +928,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -989,9 +974,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -1032,9 +1014,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -1074,9 +1053,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -50
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 15
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 15
@@ -3184,9 +3160,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -60
 fall = 0
 air.fall = 0
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 10
 fall.envshake.ampl = 5
@@ -3329,9 +3302,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -80
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 10
 fall.envshake.ampl = 5
@@ -3372,9 +3342,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -90
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 10
 fall.envshake.ampl = 5
@@ -3529,9 +3496,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -40
 fall = 0
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 5
 fall.envshake.freq = 10
 fall.envshake.ampl = 5
@@ -3647,9 +3611,6 @@ sparkXY = -10 + 0 * (var(35) := 117), var(36) := -40
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 5
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 15
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -4070,9 +4031,6 @@ sparkXY = -10 + 0 * (var(35) := 57), var(36) := -60
 fall = 1
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.freq = 100
-envshake.ampl = 5
 fall.envshake.time = 10
 fall.envshake.freq = 100
 fall.envshake.ampl = 5
@@ -5195,9 +5153,6 @@ p1stateno = 3320
 p2stateno = 3325
 fall = 1
 fall.recover = 0
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 10
 
 ;Part 1
 [Statedef 3320]
@@ -5940,9 +5895,6 @@ p1stateno = 3370
 p2stateno = 3375
 fall = 1
 fall.recover = 0
-envshake.time = 0
-envshake.freq = 100
-envshake.ampl = 10
 
 ;Part 1
 [Statedef 3370]

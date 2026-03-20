@@ -2291,8 +2291,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 air.type = High
 air.velocity = -1.4,-3
 air.hittime = 12
@@ -2386,8 +2384,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 215, 7]
 type = Changeanim
@@ -2466,8 +2462,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 ID = 220
 
 [State 210, 3]
@@ -2609,8 +2603,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 225, 7]
 type = Changeanim
@@ -2701,8 +2693,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 220, 5]
 type = varadd
@@ -2794,8 +2784,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 225, 7]
 type = Changeanim
@@ -3081,15 +3069,11 @@ ground.slidetime = 12
 ground.hittime  = 15
 guard.hittime = (15) - 6
 ground.velocity = -10
-envshake.time = 5
-envshake.ampl = 3
 air.velocity = -2.2,-3.2
 yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 ID = 240
 
 [State 240, 4]
@@ -3196,8 +3180,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 air.velocity = -2.2,-3.2
 
 [State 225, 7]
@@ -3290,8 +3272,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 250, 4]
 type = ChangeState
@@ -3406,8 +3386,6 @@ yaccel = .58
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 255, 4]
 type = ChangeState
@@ -3574,8 +3552,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 ID = 410
 
 [State 410, 4]
@@ -3643,8 +3619,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 fall = 1
 
 [State 410, 4]
@@ -3777,8 +3751,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 down.velocity = -5,0
 
 [State 440, 3]
@@ -3845,8 +3817,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 450, 5]
 type = ChangeState
@@ -4037,8 +4007,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 ;---------------------------------------------------------------------------
 ; Forward/Back Jumping Medium Punch
@@ -4109,8 +4077,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 225, 7]
 type = Changeanim
@@ -4182,8 +4148,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 ;---------------------------------------------------------------------------
 ; Forward/Back Jumping Strong Punch
@@ -4248,8 +4212,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 ;---------------------------------------------------------------------------
 ; Jumping Light Kick
@@ -4374,8 +4336,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 ;---------------------------------------------------------------------------
 ; Jumping Strong Kick
@@ -4443,8 +4403,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 ;---------------------------------------------------------------------------
 ; Headbutt Attempt

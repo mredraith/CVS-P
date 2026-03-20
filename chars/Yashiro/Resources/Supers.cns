@@ -242,9 +242,6 @@ fall.recover = 0
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=14
-envshake.ampl=4
-envShake.freq=120
 
 [State 210, 2]
 type = HitDef
@@ -274,9 +271,6 @@ fall.recover = 0
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=14
-envshake.ampl=4
-envShake.freq=120
 
 [state a]
 type = targetstate
@@ -6070,10 +6064,6 @@ fall.recover = 0
 ID = 3500
 nochainID = 9999
 kill = 0
-envshake.time = 12
-envshake.ampl = -8
-envshake.freq = 92
-envshake.phase = 92
 
 [State 210, 2]
 type = HitDef
@@ -6101,10 +6091,6 @@ fall.recover = 0
 ID = 200
 nochainID = 9999
 kill = 0
-envshake.time = 12
-envshake.ampl = -8
-envshake.freq = 92
-envshake.phase = 92
 
 [State 240, 2]
 type = HitDef
@@ -6134,10 +6120,6 @@ fall.recover = 0
 yaccel = 0.45
 id = 9999
 nochainID = 9999
-envshake.time = 12
-envshake.ampl = -8
-envshake.freq = 92
-envshake.phase = 92
 
 [state a]
 type = changestate
@@ -6409,9 +6391,6 @@ ID = 3600
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=16
-envshake.ampl=6
-envShake.freq=120
 
 [State 3800, movetype]
 type = StateTypeSet

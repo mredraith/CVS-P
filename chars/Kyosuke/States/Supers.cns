@@ -494,7 +494,6 @@ fall.recovertime = 120
 air.recover = 0
 yaccel = .55
 ID = 3200
-envshake.time = 12
 fall.envshake.time = 0
 fall.envshake.freq = 0.0
 fall.envshake.ampl = 0
@@ -587,8 +586,6 @@ guard.cornerpush.veloff = -18
 air.cornerpush.veloff = 0
 id = 3250
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -734,8 +731,6 @@ fall.recover = 0
 air.recover = 0
 id = 3255
 sprpriority = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -916,8 +911,6 @@ air.fall = 0
 fall.recover = 0
 id = 3200
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -958,8 +951,6 @@ guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 id = 3250
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1003,8 +994,6 @@ air.recover = 0
 fall.envshake.time = 10
 id = 3255
 sprpriority = 2
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1199,8 +1188,6 @@ air.fall = 0
 fall.recover = 0
 id = 3200
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1232,8 +1219,6 @@ air.fall = 0
 fall.recover = 0
 id = 3200
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1265,8 +1250,6 @@ air.fall = 0
 fall.recover = 0
 id = 3200
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1298,8 +1281,6 @@ air.fall = 0
 fall.recover = 0
 id = 3200
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1331,8 +1312,6 @@ air.fall = 0
 fall.recover = 0
 id = 3200
 kill = 0
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1368,8 +1347,6 @@ fall.recover = 0
 air.recover = 0
 fall.envshake.time = 10
 id = 3255
-envshake.time = 10
-envshake.ampl = 2
 forcestand = 1
 sparkno = S-1 + 0 * (var(33) := 8014)
 guard.sparkno = S-1 + 0 * (var(34) := 8001)
@@ -1869,7 +1846,6 @@ fall.recover = 0
 air.recover = 0
 fall.recovertime = 120
 yaccel = .5
-envshake.time = 10
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 guard.cornerpush.veloff = -18
@@ -2030,7 +2006,6 @@ fall.recover = 0
 air.recover = 0
 fall.recovertime = 120
 yaccel = .5
-envshake.time = 10
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 guard.cornerpush.veloff = -18
@@ -2280,7 +2255,6 @@ fall.recover = 0
 air.recover = 0
 fall.recovertime = 120
 yaccel = .5
-envshake.time = 10
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 guard.cornerpush.veloff = -18

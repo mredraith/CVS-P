@@ -2210,9 +2210,6 @@ sparkXY = -10 + 0 * (var(35) := 56), var(36) := -6
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd = -255, -255, -255, 48
-envShake.time = 20
-envShake.ampl = 7
-envShake.freq = 120
 
 [State 429, TargetDrop]
 type = TargetDrop

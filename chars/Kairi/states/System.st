@@ -1089,8 +1089,6 @@ guard.hittime = (15) - 6
 ground.velocity = -3, -2
 air.velocity = -2.2,-3.2
 fall = 1
-envshake.time = 12
-envshake.ampl = 3
 
 [State 303, 4]
 type = ChangeState
@@ -1769,14 +1767,9 @@ guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 fall=1
 air.fall=1
-envshake.ampl = 4
-envshake.freq = 120
-envshake.time = 5
 fall.recover = 0
 getpower = 20,20
 givepower =25,25
-envshake.time = 10
-envshake.ampl = 3
 p2stateno = 354
 
 [State 353,explod]

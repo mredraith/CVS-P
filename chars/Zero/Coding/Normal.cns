@@ -1167,8 +1167,6 @@ airguard.velocity = -2,-1
 air.type = High
 air.velocity = 0,0
 air.hittime = 0
-envshake.time = 12
-envshake.ampl = 3
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1566,9 +1564,6 @@ palfx.color=32
 palfx.sinadd=80,25,0,8
 palfx.mul=512,256,128
 palfx.time=62
-envshake.time = 14
-envshake.ampl = 4
-envShake.freq = 120
 
 [State 1025, flames]
 type=helper
@@ -2459,8 +2454,6 @@ air.fall = 1
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
 
 [State 0, Explod Low Jump]
 type = HitDef
@@ -2495,8 +2488,6 @@ air.fall = 1
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
 
 [State 0, ScreenBound]
 type = ScreenBound
@@ -2752,8 +2743,6 @@ ground.velocity =0,0
 air.type = Low
 air.hittime = 18
 air.velocity = 0,0
-envshake.time = 2
-envshake.ampl = 2
 persistent = 1
 
 [State 810, TargetBind]

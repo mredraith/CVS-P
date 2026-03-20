@@ -620,8 +620,6 @@ fall=1
 fall.recover=0
 getpower=Ifelse(var(10)=3,0,ifelse(p2movetype=H,72,144)*!(root,var(20))),Ifelse(var(10)=3,0,36*!(root,var(20)))
 givepower=36, 36
-envshake.time=12
-envshake.ampl=5
 sprpriority=4
 yaccel=.5
 airguard.ctrltime=12
@@ -1122,8 +1120,6 @@ fall=1
 fall.recover=0
 getpower=Ifelse(var(10)=3,0,ifelse(p2movetype=H,72,144)*!(root,var(20))),Ifelse(var(10)=3,0,36*!(root,var(20)))
 givepower=36, 36
-envshake.time=12
-envshake.ampl=5
 sprpriority=4
 yaccel=.5
 airguard.ctrltime=12
@@ -1424,9 +1420,6 @@ forcestand=1
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=8
-envshake.ampl=3
-envShake.freq=120
 
 [State 1055, HitSpark]
 type=Helper
@@ -1614,9 +1607,6 @@ forcestand=1
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=8
-envshake.ampl=4
-envShake.freq=120
 
 [State 210, 1]
 type = HitDef
@@ -1657,9 +1647,6 @@ forcestand=1
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=8
-envshake.ampl=4
-envShake.freq=120
 p2stateno = 4060
 
 [State 1100, StateTypeSet: Idle]

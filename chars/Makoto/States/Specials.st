@@ -2486,8 +2486,6 @@ yaccel = .58
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 225, 7]
 type = Changeanim
@@ -2575,8 +2573,6 @@ yaccel = .58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-envshake.time = 13
-envshake.ampl = Ifelse(random<=500,-3,3)
 fall = 1
 
 [State 410, 4]

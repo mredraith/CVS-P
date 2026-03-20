@@ -2114,8 +2114,6 @@ air.cornerpush.veloff = 0
 down.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
-envshake.time = 9
-envshake.ampl = 5
 fall = 1
 
 [State 1005, HitSpark]

@@ -6301,8 +6301,6 @@ palfx.mul = 128,128,128
 yaccel = .5
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.ampl = 3
 
 [State 100, Explod]
 type = Explod
@@ -6433,8 +6431,6 @@ palfx.mul = 128,128,128
 yaccel = .5
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.ampl = 3
 
 [State 100, Explod]
 type = Explod
@@ -6702,8 +6698,6 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-envshake.time = 10
-envshake.ampl = 3
 forcestand = 1
 
 [State 100, Explod]
@@ -6820,8 +6814,6 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-envshake.time = 10
-envshake.ampl = 3
 forcestand = 1
 
 [State 1300, Helper]
@@ -7035,8 +7027,6 @@ palfx.mul = 128,128,128
 yaccel = .5
 air.fall = 1
 fall.recover = 0
-envshake.time = 10
-envshake.ampl = 3
 persistent = 0
 
 [State 1000, PlaySnd]
@@ -9207,8 +9197,6 @@ air.velocity = -3.5,-8.5
 air.hittime = 20;12+(Var(21)*2)
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
-envshake.time = 10
-envshake.ampl = 3
 fall = 1
 fall.recover = 0
 air.fall = 1
@@ -9286,8 +9274,6 @@ air.velocity = -2,-7.5
 air.hittime = 12+(Var(21)*2)
 ground.cornerpush.veloff = -8.4*(2-(Var(30)>0))/2
 guard.cornerpush.veloff = -12.6
-envshake.time = 10
-envshake.ampl = 3
 fall = 1
 fall.recover = 0
 air.fall = 1

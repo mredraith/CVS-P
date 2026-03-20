@@ -196,9 +196,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -243,9 +240,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -290,9 +284,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -335,9 +326,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, RemoveExplod]
 type = RemoveExplod
@@ -577,9 +565,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -626,9 +611,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -675,9 +657,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 
 [State 200, Hit]
@@ -721,9 +700,6 @@ sparkxy = -10 + 0 * (var(35) := 40), var(36) := -91
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 p1stateno = 3051
 
 [State 0, RemoveExplod]
@@ -839,9 +815,6 @@ sparkxy = -10 + 0 * (var(35) := 7), var(36) := -179
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
@@ -1166,9 +1139,6 @@ sparkxy = -10 + 0 * (var(35) := 101), var(36) := -56
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -1211,9 +1181,6 @@ sparkxy = -10 + 0 * (var(35) := 112), var(36) := -56
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -1256,9 +1223,6 @@ sparkxy = -10 + 0 * (var(35) := 112), var(36) := -39
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -1301,9 +1265,6 @@ sparkxy = -10 + 0 * (var(35) := 110), var(36) := -71
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -1346,9 +1307,6 @@ sparkxy = -10 + 0 * (var(35) := 109), var(36) := -23
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 200, Hit]
 type = hitdef
@@ -1390,9 +1348,6 @@ sparkxy = -10 + 0 * (var(35) := 96), var(36) := -49
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
@@ -1578,9 +1533,6 @@ sparkxy = -10 + 0 * (var(35) := 72), var(36) := -53
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1623,9 +1575,6 @@ sparkxy = -10 + 0 * (var(35) := 72), var(36) := -48
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1668,9 +1617,6 @@ sparkxy = -10 + 0 * (var(35) := 107), var(36) := -76
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1713,9 +1659,6 @@ sparkxy = -10 + 0 * (var(35) := 102), var(36) := -34
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1758,9 +1701,6 @@ sparkxy = -10 + 0 * (var(35) := 107), var(36) := -76
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1803,9 +1743,6 @@ sparkxy = -10 + 0 * (var(35) := 101), var(36) := -56
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1850,9 +1787,6 @@ sparkxy = -10 + 0 * (var(35) := 112), var(36) := -56
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1896,9 +1830,6 @@ sparkxy = -10 + 0 * (var(35) := 112), var(36) := -39
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1942,9 +1873,6 @@ sparkxy = -10 + 0 * (var(35) := 110), var(36) := -71
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -1989,9 +1917,6 @@ sparkxy = -10 + 0 * (var(35) := 109), var(36) := -23
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 kill = 0
 
 [State 200, Hit]
@@ -2034,9 +1959,6 @@ sparkxy = -10 + 0 * (var(35) := 96), var(36) := -49
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
@@ -2351,9 +2273,6 @@ sparkxy = -10 + 0 * (var(35) := 63), var(36) := -27
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 0, TargetState]
 type = TargetState

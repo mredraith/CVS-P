@@ -3163,9 +3163,6 @@ palfx.color=32
 palfx.sinadd=80,25,0,8
 palfx.mul=512,256,128
 palfx.time=62
-envshake.time = 14
-envshake.ampl = 4
-envShake.freq = 120
 
 [State 1006, HitSpark]
 type = Helper

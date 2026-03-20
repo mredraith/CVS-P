@@ -1585,8 +1585,6 @@ air.type = low
 air.hittime = 18
 air.velocity = -6,-3
 air.animtype = low
-envshake.time = 2
-envshake.ampl = 2
 
 [State 1006, HitSpark]
 type = Helper
@@ -1963,8 +1961,6 @@ air.type = low
 air.hittime = 18
 air.velocity = -6,-3
 air.animtype = low
-envshake.time = 2
-envshake.ampl = 2
 FALL = 1
 
 [State 1201, hitoverride]
@@ -2224,8 +2220,6 @@ air.type = low
 air.hittime = 18
 air.velocity = -6,-3
 air.animtype = low
-envshake.time = 2
-envshake.ampl = 2
 
 [State 1006, HitSpark]
 type = Helper

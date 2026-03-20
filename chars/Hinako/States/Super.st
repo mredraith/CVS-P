@@ -139,9 +139,6 @@ ground.velocity = -12
 air.velocity = -4,-6
 air.juggle = 10
 yaccel = .5
-envshake.time = 22
-envshake.ampl = 4
-envshake.freq = 70
 getpower = 0,0
 givepower = 15,15
 kill = 0
@@ -153,9 +150,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 200, 3]
 type = ChangeState
@@ -335,9 +329,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 
 [State 220, 2]
@@ -362,9 +353,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 220, 2]
 type = HitDef
@@ -389,9 +377,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 220, 2]
 type = HitDef
@@ -420,9 +405,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 220, 2]
 type = HitDef
@@ -451,9 +433,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 200, 3]
 type = ChangeState
@@ -860,9 +839,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 200, 3]
 type = ChangeState
@@ -1231,9 +1207,6 @@ ground.slidetime = 17
 ground.velocity = -12
 air.velocity = -4,-6
 yaccel = .5
-envshake.time = 33
-envshake.ampl = 4
-envshake.freq = 70
 getpower = 0,0
 givepower = 15,15
 snap = 70,0,0
@@ -1245,9 +1218,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-35
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 200, 3]
 type = ChangeState
@@ -1357,9 +1327,6 @@ ground.slidetime = 17
 ground.velocity = -2,-13
 air.velocity = -2,-13
 yaccel = .5
-envshake.time = 13
-envshake.ampl = 4
-envshake.freq = 70
 getpower = 0,0
 givepower = 15,15
 fall = 1
@@ -1373,9 +1340,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 200, 3]
 type = ChangeState
@@ -1472,9 +1436,6 @@ ground.slidetime = 17
 ground.velocity = -6,20
 air.velocity = -6,20
 yaccel = .5
-envshake.time = 23
-envshake.ampl = 4
-envshake.freq = 70
 getpower = 0,0
 givepower = 15,15
 hitsound = -1 + 0*(var(31):=1)
@@ -1485,9 +1446,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 200, 3]
 type = ChangeState
@@ -1728,9 +1686,6 @@ p2stateno = 2460 + ((p2statetype=C)*10)
 ground.cornerpush.veloff = 0
 getpower = 0,0
 givepower = 16,16
-EnvShake.time = 20
-EnvShake.freq = 100
-EnvShake.ampl = -4
 kill = 0
 hitsound = -1 + 0*(var(31):=2)
 guardsound = -1 + 0*(var(32):=0)
@@ -1740,9 +1695,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 [State 200, ƒqƒbƒg’è‹`]
 type = HitDef
@@ -1768,9 +1720,6 @@ p2stateno = 2470
 getpower = 0,0
 givepower = 16,16
 yaccel = .5
-EnvShake.time = 30
-EnvShake.freq = 100
-EnvShake.ampl = -5
 hitsound = -1 + 0*(var(31):=1)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8011)
@@ -1779,9 +1728,6 @@ sparkxy = -10 + 0*(var(35):=66), var(36):=-5
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = 2
-envshake.freq = 180
 
 
 [State 5100, 12]

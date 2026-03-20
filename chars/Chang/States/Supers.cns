@@ -404,9 +404,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -440,9 +437,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -476,9 +470,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -513,9 +504,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -549,9 +537,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -585,9 +570,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 200,Exit]
 type = ChangeState
@@ -654,9 +636,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 
 [State 200,StateTypeSet]
@@ -747,9 +726,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 900,4]
 type = VelSet
@@ -843,9 +819,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 420,PlaySnd]
 type = VelSet
@@ -940,9 +913,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 900,3]
 type = VelSet
@@ -1796,9 +1766,6 @@ Fall = 1
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 id = 3100
 
 [State 420, StateTypeSet: Idle]
@@ -2213,9 +2180,6 @@ Fall = 1
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 id = 3101
 
 [State 0, ChangeState]
@@ -2362,9 +2326,6 @@ Fall = 1
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 id = 3101
 
 [State 420, StateTypeSet: Idle]
@@ -2743,9 +2704,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -2779,9 +2737,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -2815,9 +2770,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -2851,9 +2803,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -2887,9 +2836,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 220,Hitdef]
 type = HitDef
@@ -2923,9 +2869,6 @@ priority = 7,Hit
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-envshake.time=12
-envshake.ampl=3
-envShake.freq=120
 
 [State 800, 1]
 type = HitDef
@@ -3217,8 +3160,6 @@ fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-3,3)
 p2stateno = 3580
 
 [State 1000,ChangeAnim]

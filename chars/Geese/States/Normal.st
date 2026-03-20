@@ -495,9 +495,6 @@ sparkxy = -10 + 0 * (var(35) := 58), var(36) := -70
 palfx.time = 12 * var(9)
 palfx.add = 255, 255, 255
 palfx.sinadd = -255, -255, -255, 48
-envshake.time = 14
-envshake.ampl = 4
-envshake.freq = 120
 
 [State 225, Anim]
 type = changeanim

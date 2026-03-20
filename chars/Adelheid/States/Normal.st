@@ -3040,9 +3040,6 @@ fall = 1
 fall.recover = 0
 p2stateno = 335
 p2facing = 1
-envshake.time = 10
-envshake.ampl = 4
-envshake.freq = 50
 
 [State 820, TargetPowerAdd]
 type = TargetPowerAdd

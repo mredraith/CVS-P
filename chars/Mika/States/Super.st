@@ -2654,9 +2654,6 @@ guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0*(var(34):=8001)
 sparkxy = -10 + 0*(var(35):=63), var(36):=-75
-envshake.time = 18
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 0, TargetState]
 type = TargetState
@@ -2750,9 +2747,6 @@ guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0*(var(34):=8001)
 sparkxy = -10 + 0*(var(35):=83), var(36):=-10
-envshake.time = 18
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 0, TargetState]
 type = TargetState
@@ -2841,9 +2835,6 @@ guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0*(var(34):=8001)
 sparkxy = -10 + 0*(var(35):=63), var(36):=-75
-envshake.time = 18
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 0, TargetState]
 type = TargetState
@@ -3028,9 +3019,6 @@ guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0*(var(34):=8001)
 sparkxy = -10 + 0*(var(35):=0), var(36):=0
-envshake.time = 18
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
@@ -3097,9 +3085,6 @@ guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8014)
 guard.sparkno = -1 + 0*(var(34):=8001)
 sparkxy = -10 + 0*(var(35):=160), var(36):=-20
-envshake.time = 18
-envshake.ampl = 6
-envShake.freq = 120
 
 [State 0, ChangeState]
 type = ChangeState
