@@ -1976,6 +1976,14 @@ trigger2=enemy,authorname="Phantom.of.the.Server&Jmorphman"&&enemy,name="Ken Mas
 trigger3 = Enemy, Name = "Kyo Kusanagi" && Enemy, Authorname = "Jmorphman" && Enemy, var(40) != 1
 value=375
 
+[State 190, intro vs KFM]
+type=changestate
+triggerALL= numenemy
+triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
+trigger1= var(1)!=2 && numenemy
+trigger1=enemy,authorname="Elecbyte&DivineWolf"&&enemy,name="Kung Fu Man"
+value=19990
+
 [State 190, intro]
 type = changestate
 trigger1 = time && var(1) != 2
@@ -2918,6 +2926,47 @@ channel = 0
 type = changestate
 trigger1 = !animtime
 value = 0
+
+[Statedef 19990]
+type=S
+anim=19990
+sprpriority=-1
+[State 19990] ;Freeze animation until PreIntro is over
+type = ChangeAnim
+trigger1 = RoundState = 0
+value = 19990
+[State 19990, Wood 1]
+type = Explod
+trigger1 = RoundState != 0
+persistent = 0
+anim = 19991
+postype = p1
+pos = 245, -120
+velocity = -4.2, -7
+accel = 0, .32
+removetime = 48
+[State 19990, Wood 2]
+type = Explod
+trigger1 = AnimElem = 10
+anim = 19992
+postype = p1
+pos = 45, -100
+velocity = 2, -4
+accel = 0, .32
+removetime = 35
+[State 19990, intro]
+type=assertspecial
+trigger1= 1
+flag=intro
+[State 19990, Snd]
+type=playsnd
+trigger1=animelem=10
+value=2,2
+channel=0
+[State 19990, End]
+type=changestate
+trigger1=!animtime
+value=0
 
 ;TURNS INTRO==
 [StateDef 6900]

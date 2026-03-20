@@ -136,7 +136,6 @@ victory5 = "What strength! But don't forget there are guys like you all over the
 victory6 = "You must defeat my Kung Fu Palm to stand a chance."
 ;---------------------------------------------------------------------------
 ; Lose by Time Over
-; CNS difficulty: basic
 [Statedef 170]
 type = S
 ctrl = 0
@@ -151,7 +150,6 @@ time = 1
 
 ;---------------------------------------------------------------------------
 ; Win state decider
-; CNS difficulty: basic
 [Statedef 180]
 type = S
 
@@ -169,7 +167,6 @@ value = 181 + (random%2)
 
 ;---------------------------------------------------------------------------
 ; Win pose 1 - Bow
-; CNS difficulty: basic
 [Statedef 181]
 type = S
 ctrl = 0
@@ -198,7 +195,6 @@ trigger1 = time = [0, 200]
 flag = roundnotover
 
 ; Win pose 2 - Epic Pose
-; CNS difficulty: basic
 [Statedef 182]
 type = S
 ctrl = 0
@@ -227,7 +223,6 @@ trigger1 = time = [0, 200]
 flag = roundnotover
 
 ; Win pose vs Kung Fu Girl
-; CNS difficulty: basic
 [Statedef 183]
 type = S
 ctrl = 0
@@ -257,7 +252,6 @@ flag = roundnotover
 
 ;---------------------------------------------------------------------------
 ; Introduction
-; CNS difficulty: basic
 [Statedef 191]
 type = S
 ctrl = 0
@@ -317,8 +311,7 @@ trigger1 = AnimElemTime(7) = 3
 value = 191,0;F5,3
 
 ;---------------------------
-;Intro vs Kung Fu Girl
-;Had to swap the statedef #'s because of the Messatsu trait stuff
+;Intro vs Kung Fu Girl. Had to swap the statedef #'s because of the Messatsu trait stuff
 [Statedef 193]
 type = S
 ctrl = 0
@@ -342,8 +335,7 @@ trigger1 = !AnimTime
 value = 0
 
 ;---------------------------
-;Ladies' Man Intro
-;Had to swap the statedef #'s because of the Messatsu trait stuff
+;Ladies' Man Intro. Had to swap the statedef #'s because of the Messatsu trait stuff
 [Statedef 194]
 type = S
 ctrl = 0
@@ -414,7 +406,7 @@ trigger1 = time
 trigger1 = pos y > -vel y
 value = 6901
 
-;---Land---
+;Land
 [Statedef 6901]
 type = S
 physics = S
