@@ -1286,7 +1286,7 @@ type = A
 movetype = A
 physics = N
 velset = 0,0
-juggle = 0
+juggle = 1
 velset = 0,0
 ctrl = 0
 anim = 1205
@@ -1498,7 +1498,7 @@ movetype = A
 physics = N
 ctrl = 0
 anim = ifElse(var(10) = 2, 1220, ifElse(var(10) = 1, 1215, 1210))
-juggle = 0
+juggle = 1
 poweradd = 0
 
 [State 1210, PlaySnd]
@@ -1730,7 +1730,7 @@ ground.velocity = 0
 ground.cornerPush.velOff = 0
 guard.velocity = -12
 guard.cornerPush.velOff = 0
-air.velocity = -1,-8
+air.velocity = -1,-10
 air.cornerPush.velOff = 0
 yAccel = 0.55
 fall = 0
@@ -1776,7 +1776,7 @@ ground.velocity = -1,-8
 ground.cornerPush.velOff = 0
 guard.velocity = -12
 guard.cornerPush.velOff = 0
-air.velocity = -1,-8
+air.velocity = -1,-10
 air.cornerPush.velOff = 0
 yAccel = 0.6
 fall = 1
@@ -1812,7 +1812,7 @@ physics = N
 velset = 0, 0
 ctrl = 0
 anim = 1280
-juggle = 0
+juggle = 1
 poweradd = 0
 
 [State 1280, VelSet2]
@@ -1876,7 +1876,7 @@ physics = N
 velset = 0, 0
 ctrl = 0
 anim = 1290
-juggle = 0
+juggle = 1
 poweradd = 0
 
 [State 1290, PosSet]
@@ -1976,7 +1976,7 @@ type = A
 movetype = A
 physics = N
 velset = 0,0
-juggle = 0
+juggle = 1
 ctrl = 0
 anim = 1205
 
@@ -2023,7 +2023,7 @@ movetype = A
 physics = N
 ctrl = 0
 anim = 1230
-juggle = 3
+juggle = 1
 poweradd = 0
 
 [State 1250, PlayerPush]

@@ -3544,7 +3544,7 @@ ignoreHitPause = 1
 
 [State -2, Free Juggling]
 type = VarSet
-trigger1 = RoundState != 2
+trigger1 = RoundState != 2	
 var(15) = 0
 ignoreHitPause = 1
 

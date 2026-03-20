@@ -244,7 +244,7 @@ movetype = A
 ctrl = 0
 velset = 0
 anim = 211
-juggle = 0
+juggle = 1
 poweradd = 0
 
 [State 211,3]
@@ -337,7 +337,7 @@ physics = S
 movetype = A
 ctrl = 0
 anim = 216
-juggle = 3
+juggle = 1
 
 [State 216, HitDef]
 type = HitDef

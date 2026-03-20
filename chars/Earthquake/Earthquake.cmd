@@ -1139,18 +1139,18 @@ trigger3=((stateno=[200,209])||(stateno=[400,409]))&&movecontact&&var(55)
 [State -1, Crouching Medium Kick]
 type=ChangeState
 value=440
-triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="b"
-trigger1=ctrl||stateno=[100,101]
-trigger2=var(4)
-trigger3=((stateno=[200,219])||(stateno=[230,239])||(stateno=[400,419])||(stateno=[430,439]))&&movecontact&&var(55)
-;---------------------------------------------------------------------------
-[State -1, Crouching High Kick]
-type=ChangeState
-value=450
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="c"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
 trigger3=((stateno=[200,249])||(stateno=[400,449]))&&movecontact&&var(55)
+;---------------------------------------------------------------------------
+[State -1, Crouching High Kick]
+type=ChangeState
+value=450
+triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="b"
+trigger1=ctrl||stateno=[100,101]
+trigger2=var(4)
+trigger3=((stateno=[200,219])||(stateno=[230,239])||(stateno=[400,419])||(stateno=[430,439]))&&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Jumping Low Punch]
 type=ChangeState
