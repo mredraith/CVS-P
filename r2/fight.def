@@ -1368,7 +1368,7 @@ round.time = 10 ;Time to show round display
 ;round.default.text = "Round %i"
 ;round.default.scale = 2,2
 round.default.anim = 80
-round.default.displaytime = 59;90
+round.default.displaytime = 58;90
 round.default.offset = 640, 360
 ;round.default.scale = 1,1
 ; Sounds to play for each round (optional, specify up to round 9)
@@ -1423,7 +1423,7 @@ fight.snd = 1,1 ;Sound to play
 fight.sndtime = 20;0 ;Time to play sound
 
 callfight.time = 60 ;Ikemen feature: Time to wait before starting fight
-ctrl.time = 62 ;Time players get control after starting fight
+ctrl.time = 30 ;Time players get control after starting fight
 
 ; KO
 KO.time = 0 ;Time to show KO component
@@ -1453,33 +1453,33 @@ slow.speed = 0.5 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.
 over.waittime = 0 ;Time to wait after KO before player control is stopped
 over.hittime = 0 ;Time after KO that players can still damage each other (for double KO)
 over.wintime = 90 ;Time to wait before players change to win states
-over.time = 180;270 ;Time to wait before round ends
+over.time = 240;270 ;Time to wait before round ends
 
 ; Win text
-win.time = 70 ;Time to wait before showing win/draw message
+win.time = 180 ;Time to wait before showing win/draw message
 win.offset = 640, 360;420
 win.font = 5,0
-win.text = "%s\n\nWins"
+win.text = "%s Wins"
 ;win.anim = 210
 win.scale = 3,3
 win.displaytime = 540
 ; 2-player win text
 win2.offset = 640,420;640, 320
 win2.font = 5,0
-win2.text = "Team %s\n\nWins";"%s and %s Win"
+win2.text = "Team %s Wins";"%s and %s Win"
 ;win2.anim = 210
 win2.scale = 3,3
 win2.displaytime = 540
 ; Ikemen feature: 3-player win text
 win3.offset = 640, 420
 win3.font = 5,0
-win3.text = "Team %s\n\nWins"
+win3.text = "Team %s Wins"
 win3.scale = 3,3
 win3.displaytime = 540
 ; Ikemen feature: 4-player win text
 win4.offset = 640, 420
 win4.font = 5,0
-win4.text = "Team %s\n\nWins"
+win4.text = "Team %s Wins"
 win4.scale = 3,3
 win4.displaytime = 540
 ; Draw text
@@ -1493,7 +1493,7 @@ fadein.time = 30 ;Ikemen feature: round start fade time (default: 30)
 fadein.col = 0, 0, 0 ;Ikemen feature: round start fade color (default: 0,0,0)
 fadeout.time = 30 ;Ikemen feature: round end fade time (default: 30, extends over.time if fadeout.time is longer)
 fadeout.col = 0, 0, 0 ;Ikemen feature: round end fade color (default: 0,0,0)
-shutter.time = 10 ;Ikemen feature: skip intro fade time (default: 15, whole anim is twice as long)
+shutter.time = 15 ;Ikemen feature: skip intro fade time (default: 15, whole anim is twice as long)
 shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 
 

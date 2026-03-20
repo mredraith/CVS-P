@@ -232,7 +232,10 @@ eagle, random, order=1
 Dudley, random, order=1
 yun, random, order=1
 Sakura, random, order=1
-Dhalsim, random, order=1
+slot = {
+Dhalsim, random, order=1, previous=d, next=w
+Divesim, random, order=1, previous=d, next=w, select=/s+a
+}
 Cammy, random, order=1
 Chunli, random, order=1
 randomselect

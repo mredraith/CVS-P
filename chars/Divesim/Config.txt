@@ -11,7 +11,7 @@ anim = 1
 [State 7650, 0 = No Sally, 1 = Yes Sally]
 type = ParentVarSet
 trigger1 = 1
-var(40) = 1 ;CHANGE THIS LINE
+var(40) = 0 ;CHANGE THIS LINE
 
 ;==============================================================================================
 ;ONLY MODIFY STUFF ABOVE THIS LINE
