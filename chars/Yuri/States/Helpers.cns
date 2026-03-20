@@ -2080,9 +2080,6 @@ sparkno = -1
 guard.sparkno = -1
 sparkxy = -1
 sprpriority = 3
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 ID = 3005
 
 [State 1005, HitSpark]
@@ -2276,9 +2273,6 @@ sparkno = -1
 guard.sparkno = -1
 sparkxy = -1
 sprpriority = 3
-envshake.time = 18
-envshake.ampl = 6
-envshake.freq = 120
 
 [State 1005, HitSpark]
 type=Helper
