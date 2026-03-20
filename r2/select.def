@@ -237,7 +237,10 @@ Dhalsim, random, order=1, previous=d, next=w
 Divesim, random, order=1, previous=d, next=w, select=/s+a
 }
 Cammy, random, order=1
-Chunli, random, order=1
+slot = {
+Chunli, random, order=1, previous=d, next=w
+Shadow Lady, random, order=3, previous=d, next=w, select=/s+a
+}
 randomselect
 Daimon, random, order=1
 Athena, random, order=1
@@ -296,17 +299,29 @@ todoh, random, order=1
 yuki, random, order=1
 ; break
 poison, random, order=1
-Evil Ryu, random, order=3
-bison, random, order=2
+slot = {
+Evil Ryu, random, order=3, previous=d, next=w
+Funny Ryu, random, order=5, previous=d, next=w, select=/s+a
+}
+slot = {
+bison, random, order=2, previous=d, next=w
+Final Bison, random, order=5, previous=d, next=w, select=/s+a
+}
 sagat, random, order=1
 adon, random, order=1
 leo, random, order=1
 jill, random, order=1
 randomselect
-haohmaru, random, order=1
+slot = {
+haohmaru, random, order=1, previous=d, next=w
+Rasetsumaru, random, order=3, previous=d, next=w, select=/s+a
+}
 saisyu, random, order=2
 geese, random, order=2
-rugal, random, order=2
+slot = {
+rugal, random, order=2, previous=d, next=w
+God Rugal, random, order=5, previous=d, next=w, select=/s+a
+}
 Iori Orochi, random, order=3
 Adelheid, random, order=1
 Yashiro, random, order=1
@@ -314,8 +329,11 @@ Yashiro, random, order=1
 Twelve, random, order=1
 Violent Ken, random, order=3
 Vega, random, order=2
-akuma, random, order=2
-Alex, random, order=bison, random, order=2
+slot = {
+akuma, random, order=3, previous=d, next=w
+Shin Akuma, random, order=5, previous=d, next=w, select=/s+a
+}
+Alex, random, order=2
 kenji, random, order=1
 hiryu, random, order=1
 randomselect
@@ -333,20 +351,23 @@ balrog, random, order=2
 Dee Jay, random, order=1
 Urien, random, order=2
 hayato, random, order=1
-zero, random, order=1
+slot = {
+zero, random, order=1, previous=d, next=w
+nesmegaman, random, order=5, previous=d, next=w, select=/s+a
+}
 randomselect
 earthquake, random, order=1
 amakusa, random, order=2
 mr.big, random, order=2
 goenitz, random, order=2
 Mr.karate, random, order=3
-Jimmy-POTS, random, order=1
+Jimmy, random, order=1
 Hinako, random, order=1
 ; break
 ZeroCVS, random, order=2
 Decapre, random, order=1
 Juni, random, order=1
-DivineJuli, random, order=1
+Juli, random, order=1
 Elena, random, order=1
 Yang, random, order=1
 Q, random, order=1
@@ -367,7 +388,7 @@ Oro, random, order=1
 Juri, random, order=1
 Gill, random, order=3
 randomselect
-DivineEliza, random, order=1
+Eliza, random, order=1
 Rumble, random, order=2
 empty
 empty
@@ -376,12 +397,12 @@ empty
 empty
 ;break
 empty
-Shadow Lady, random, order=3
 empty
 empty
 empty
 empty
-nesmegaman, random, order=5
+empty
+empty
 empty
 empty
 empty
@@ -392,9 +413,9 @@ empty
 empty
 ;break
 empty
-Funny Ryu, random, order=5
-Shin Akuma, random, order=5
-Final Bison, random, order=5
+empty
+empty
+empty
 empty
 empty
 empty
@@ -403,8 +424,8 @@ empty
 empty
 empty
 empty
-Rasetsumaru, random, order=3
-God Rugal, random, order=5
+empty
+empty
 empty
 ;break
 empty

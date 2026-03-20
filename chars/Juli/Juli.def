@@ -15,13 +15,13 @@ localCoord  = 428,240
 [Files]
 movelist = movelist.dat
 novelist =movelist.dat
-cmd     =DivineJuli.cmd
+cmd     =Juli.cmd
 cns     =Coding/System.cns
 st      =Coding/System.cns
 stcommon =common1.cns
-sprite  =DivineJuli.sff
-anim    =DivineJuli.air
-sound   =DivineJuli.snd
+sprite  =Juli.sff
+anim    =Juli.air
+sound   =Juli.snd
 st1=Coding/Normal.cns
 st2=Coding/Specials.cns
 st3=Coding/Helpers.cns
