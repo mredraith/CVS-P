@@ -261,24 +261,28 @@ type = anim
 actionno = 103
 start = -640, 720
 
+; Main menu top border
 [Begin Action 102]
 100,2, 0,0, 10
 100,2, 0,0, 10
 Interpolate Offset
 100,2, 0,82, -1
 
+; Main menu bottom border
 [Begin Action 103]
 100,3, 0,0, 10
 100,3, 0,0, 10
 Interpolate Offset
 100,3, 0,-82, -1
 
+; Main menu title
 [Begin Action 106]
 100,6, 0,0, 50
 100,6, 0,0, 10
 Interpolate Offset
 100,6, 640,0, -1
 
+; Main menu characters
 [Begin Action 111] ;ART
 101,1, 0,0, 50
 101,1, 0,0, 20
@@ -758,18 +762,22 @@ p2.palmenu.value.snd = 100, 0
 p2.palmenu.done.snd = 100, 1
 p2.palmenu.cancel.snd = 100, 2
 
+; 1p select
 [Begin Action 201] ;P1 active cursor
 202,0, 0,0, 6
 202,1, 0,0, 6
 
+; 2p select
 [Begin Action 202] ;P2 active cursor
 202,3, 0,0, 6
 202,4, 0,0, 6
 
+; 12p select
 [Begin Action 203] ;Overlap active cursor
 202,6, 0,0, 6
 202,7, 0,0, 6
 
+; Choose team size
 [Begin Action 204] ;Overlap active cursor
 201,2, 0,0, 2
 201,3, 0,0, 2
@@ -1291,6 +1299,7 @@ counter.0.snd = 900, 0 ;Ikemen feature
 counter.end.skiptime = 1366 ;Ikemen feature
 counter.end.snd = 900, 10 ;Ikemen feature
 
+; Versus
 [Begin Action 900]
 909,0, 0,0, 1 ;1 (count 9 start initial animation)
 909,1, 0,0, 1 ;2

@@ -2918,23 +2918,6 @@ pauseMoveTime = 65535
 superMoveTime = 65535
 ignoreHitPause = 1
 
-[State -2, Counter FX]
-type = Helper
-triggerAll = MoveHit = 1 && var(30) = HitPauseTime
-triggerAll = NumEnemy && var(9)
-trigger1 = !(HitDefAttr = SCA, AT) && (EnemyNear, MoveReversed != 1)
-helperType = Normal
-stateNo = 8290
-ID = 8290
-name = "Counter FX"
-posType = P1
-pos = ceil(ifElse(P2Dist x < 0, 0, ifElse(P2Dist x < var(35), ceil(P2Dist x), var(35))) * const(size.xScale)), ceil(var(36) * const(size.yScale))
-facing = -1
-ownPal = 1
-pauseMoveTime = 255
-superMoveTime = 255
-ignoreHitPause = 1
-
 [State -2, Counter Flag]
 type = VarSet
 trigger1 = NumEnemy

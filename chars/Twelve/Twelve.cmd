@@ -633,6 +633,7 @@ triggerall = command !="SUPER 08"
 triggerall = command !="EX SUPER 01"
 triggerall = statetype = S
 trigger1 = ctrl
+trigger2 = stateno = 200 && time > 6
 
 [State -1, stand y attacks]
 type = ChangeState
@@ -667,6 +668,7 @@ triggerall = statetype != S
 triggerall = statetype != A
 triggerall = statetype = C
 trigger1 = ctrl
+trigger2 = (stateno = 400 || stateno = 430) && time > 6
 
 [State -1, crouch y attack]
 type = ChangeState

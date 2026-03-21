@@ -1,20 +1,26 @@
 {
-  "playtime": 426.34,
+  "playtime": 1271.97,
   "modes": {
     "training": {
       "playtime": 0,
       "clear": 0
     },
     "freebattle": {
-      "playtime": 426.34,
-      "clear": 2,
+      "playtime": 770.34,
+      "clear": 3,
       "clearcount": {
-        "ryu": 2
+        "ryu": 2,
+        "akuma": 1
       }
     },
     "versus": {
-      "playtime": 0,
-      "clear": 0
+      "playtime": 501.63,
+      "clear": 3,
+      "clearcount": {
+        "ryu": 1,
+        "yuri": 1,
+        "rock": 1
+      }
     }
   }
 }

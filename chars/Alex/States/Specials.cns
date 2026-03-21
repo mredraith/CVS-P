@@ -598,21 +598,15 @@ type=Posadd
 trigger1=animelemtime(3)=0
 x=ceil(20)
 
-[State 1100, VelSet]
-type=VelSet
+[State 1100, Velset]
+type=veladd
 trigger1=animelemtime(3)=0
-x=2.75+(var(10)*2)
-y=-10.0+(var(10)*0.75)
-
-[State 1100, VelSet]
-type=VelSet
-trigger1=animelemtime(5)=0
-x=0
-y=0
+x=1.75+(var(10)*0.5)
+y=-8.0-var(10)
 
 [State 1100, veladd]
 type=Veladd
-trigger1=animelemtime(5)>=0
+trigger1=animelemtime(3)>=0
 y=.52
 
 [State 1100, StateType]

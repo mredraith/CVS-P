@@ -205,47 +205,47 @@ time=16
 
 [command]
 name="PowerBombEX"
-command=~F,$D,B,x+y
+command=~D,DB,B,x+y
 time=24
 
 [command]
 name="PowerBombEX"
-command=~F,$D,B,y+z
+command=~D,DB,B,y+z
 time=24
 
 [command]
 name="PowerBombEX"
-command=~F,$D,B,x+z
+command=~D,DB,B,x+z
 time=24
 
 [command]
 name="PowerBomb3"
-command=~F,$D,B,~z
+command=~D,DB,B,~z
 time=24
 
 [command]
 name="PowerBomb2"
-command=~F,$D,B,~y
+command=~D,DB,B,~y
 time=24
 
 [command]
 name="PowerBomb1"
-command=~F,$D,B,~x
+command=~D,DB,B,~x
 time=24
 
 [command]
 name="PowerBomb3"
-command=~F,$D,B,z
+command=~D,DB,B,z
 time=24
 
 [command]
 name="PowerBomb2"
-command=~F,$D,B,y
+command=~D,DB,B,y
 time=24
 
 [command]
 name="PowerBomb1"
-command=~F,$D,B,x
+command=~D,DB,B,x
 time=24
 
 [command]
@@ -385,47 +385,47 @@ time=16
 
 [command]
 name="SpiralDDTEX"
-command=~F,$D,B,a+b
+command=~D,DB,B,a+b
 time=24
 
 [command]
 name="SpiralDDTEX"
-command=~F,$D,B,b+c
+command=~D,DB,B,b+c
 time=24
 
 [command]
 name="SpiralDDTEX"
-command=~F,$D,B,a+c
+command=~D,DB,B,a+c
 time=24
 
 [command]
 name="SpiralDDT1"
-command=~F,$D,B,~a
+command=~D,DB,B,~a
 time=24
 
 [command]
 name="SpiralDDT2"
-command=~F,$D,B,~b
+command=~D,DB,B,~b
 time=24
 
 [command]
 name="SpiralDDT3"
-command=~F,$D,B,~c
+command=~D,DB,B,~c
 time=24
 
 [command]
 name="SpiralDDT1"
-command=~F,$D,B,a
+command=~D,DB,B,a
 time=24
 
 [command]
 name="SpiralDDT2"
-command=~F,$D,B,b
+command=~D,DB,B,b
 time=24
 
 [command]
 name="SpiralDDT3"
-command=~F,$D,B,c
+command=~D,DB,B,c
 time=24
 
 [Command]
@@ -968,6 +968,7 @@ value=200
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command != "holddown"&& command="x"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
+trigger3=(stateno=200||stateno=400)&time>6
 ;---------------------------------------------------------------------------
 [State -1, Standing Medium Punch]
 type=ChangeState
@@ -1014,6 +1015,7 @@ value=400
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="x"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
+trigger3=(stateno=200||stateno=400)&time>6
 ;---------------------------------------------------------------------------
 [State -1, Crouching Medium Punch]
 type=ChangeState
