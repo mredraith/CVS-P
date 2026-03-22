@@ -14,6 +14,19 @@ command.buffer.time = 1
 
 ;-| Super Motions |--------------------------------------------------------
 [Command]
+name="Heavy Hammer"
+command=~D, DF, F, D, DF, F, a+x
+time=32
+[Command]
+name="Heavy Hammer"
+command=~D, DF, F, D, DF, F, b+y
+time=32
+[Command]
+name="Heavy Hammer"
+command=~D, DF, F, D, DF, F, c+z
+time=32
+
+[Command]
 name="BoomerangRaid"
 command=~D, DF, F, D, DF, F, x
 time=32
@@ -53,114 +66,16 @@ command=~D, DB, B, D, DB, B, x+z
 time=32
 
 [Command]
-name = "HyperBomb"
-command = ~$B, $D, $F, $U, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$D, $F, $U, $B, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$F, $U, $B, $D, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$U, $B, $D, $F, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$F, $D, $B, $U, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$D, $B, $U, $F, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$B, $U, $F, $D, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$U, $F, $D, $B, x+y
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$B, $D, $F, $U, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$D, $F, $U, $B, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$F, $U, $B, $D, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$U, $B, $D, $F, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$F, $D, $B, $U, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$D, $B, $U, $F, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$B, $U, $F, $D, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$U, $F, $D, $B, y+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$B, $D, $F, $U, x+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$D, $F, $U, $B, x+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$F, $U, $B, $D, x+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$U, $B, $D, $F, x+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$F, $D, $B, $U, x+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$D, $B, $U, $F, x+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$B, $U, $F, $D, x+z
-time = 32
-[Command]
-name = "HyperBomb"
-command = ~$U, $F, $D, $B, x+z
-time = 32
-
-
-[Command]
-name="Heavy Hammer"
-command=~D, DF, F, D, DF, F, a+x
+name="HyperBomb"
+command=~D, DF, F, D, DF, F, a
 time=32
 [Command]
-name="Heavy Hammer"
-command=~D, DF, F, D, DF, F, b+y
+name="HyperBomb"
+command=~D, DF, F, D, DF, F, b
 time=32
 [Command]
-name="Heavy Hammer"
-command=~D, DF, F, D, DF, F, c+z
+name="HyperBomb"
+command=~D, DF, F, D, DF, F, c
 time=32
 
 ;-| Special Motions |------------------------------------------------------

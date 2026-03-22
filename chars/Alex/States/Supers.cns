@@ -898,7 +898,7 @@ value=SCA
 [State 3100, Voice]
 type=PlaySnd
 trigger1=!time
-value=3000,0
+value=0,5
 channel=0
 
 [State 3100, VelSet]
@@ -1485,9 +1485,9 @@ value=SCA
 [State 3300, Voice]
 type=PlaySnd
 trigger1=!time
-value=3000,0
+value=1801,1801
 channel=0
- 
+
 [State 3000, Superpause FX]
 type = helper
 trigger1 = Time = 3

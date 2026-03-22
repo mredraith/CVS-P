@@ -3655,12 +3655,13 @@ type=VarSet
 trigger1 = var(20) && (StateNo = [200,699])
 trigger2 = var(20) && (StateNo = [1000,2999]) && (MoveContact || var(18)) && StateNo != 1060 && StateNo != 1510
 trigger3 = (StateNo = [200,699]) && Time <= 2
-trigger4 = StateNo = 200 && MoveContact && anim=205
+trigger4 = StateNo = 200 && MoveContact
 trigger5 = StateNo = 210 && MoveContact
 trigger6 = StateNo = 230 && MoveContact
 trigger7 = StateNo = 240 && MoveContact && anim=245
 trigger8 = StateNo = 400 && MoveContact
 trigger9 = StateNo = 430 && MoveContact
+trigger10 = StateNo = 440 && MoveContact
 var(5)=1
 ignoreHitPause=1
 
