@@ -320,16 +320,16 @@ map(jayinput_textMirrorConst) 	:= 1275;		# Constant used for mirroring on P2 sid
 # CONFIG (16:9)
 #===============
 
-map(jayinput_xPos_169)			:= 20;			# X pos for the input display to start on
+map(jayinput_xPos_169)			:= 30;			# X pos for the input display to start on
 map(jayinput_yPos_169)			:= 50;			# Y pos for the input display to start on
 map(jayinput_rowSpacing_169) 	:= 12;			# Spacing between input lines
 map(jayinput_columnSpacing_169) := 12;			# Spacing between input combinations
 map(jayinput_btnScale_169) 		:= 0.5;			# Scale for buttons
 map(jayinput_btnMirrorConst_169):= 320;			# Constant used for mirroring on P2 side.
 
-map(jayinput_textXPos_169)		:= 45;			# X pos for timer text
-map(jayinput_textYPos_169)		:= 220;			# Y pos for timer text
-map(jayinput_textSpacing_169)	:= 48;			# Line spacing for timer text
+map(jayinput_textXPos_169)		:= 15;			# X pos for timer text
+map(jayinput_textYPos_169)		:= 70;			# Y pos for timer text
+map(jayinput_textSpacing_169)	:= 16;			# Line spacing for timer text
 map(jayinput_textScale_169) 	:= 1.00;		# Scale used for the timer text
 map(jayinput_textMirrorConst_169):= 1275;		# Constant used for mirroring on P2 side.
 

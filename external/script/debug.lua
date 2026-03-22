@@ -3,8 +3,9 @@
 --;===========================================================
 --key, ctrl, alt, shift, pause, debug key, function
 addHotkey('c', true, false, false, true, false, 'toggleClsnDisplay()')
-addHotkey('d', true, false, false, true, false, 'toggleDebugDisplay()')
-addHotkey('d', false, false, true, true, false, 'toggleDebugDisplay(true)')
+addHotkey('d', true, false, false, true, false, 'toggleDebugDisplay(nil, false)')
+addHotkey('d', true, false, true, true, false, 'toggleDebugDisplay(nil, true)')
+addHotkey('d', false, false, true, true, false, 'toggleDebugDisplay(true, nil)')
 addHotkey('w', true, false, false, true, false, 'toggleWireframeDisplay()')
 addHotkey('s', true, false, false, true, true, 'changeSpeed()')
 addHotkey('KP_PLUS', true, false, false, true, true, 'changeSpeed(0.01)')
@@ -35,7 +36,7 @@ addHotkey('F2', true, false, false, false, true, 'kill(1,1); kill(3,1); kill(5,1
 addHotkey('F2', false, false, true, false, true, 'kill(2,1); kill(4,1); kill(6,1); kill(8,1)')
 addHotkey('F3', false, false, false, false, true, 'powMax(1); powMax(2)')
 addHotkey('F3', true, false, true, false, true, 'toggleMaxPowerMode()')
-addHotkey('F4', false, false, false, false, true, 'roundReset(); closeMenu(); trainingReset()')
+addHotkey('F4', false, false, false, false, true, 'resetRound(); closeMenu(); trainingReset()')
 addHotkey('F4', false, false, true, false, true, 'reload(); closeMenu(); trainingReset()')
 addHotkey('F5', false, false, false, false, true, 'setTime(0)')
 addHotkey('F9', false, false, false, true, false, 'loadState()')
@@ -46,7 +47,7 @@ addHotkey('PAUSE', false, false, false, true, false, 'togglePause(); closeMenu()
 addHotkey('SCROLLLOCK', false, false, false, true, false, 'frameStep()')
 
 function changeSpeed(add)
-	local accel = debugmode("accel")
+	local accel = debugMode("accel")
 	if add ~= nil then
 		setAccel(math.max(0.01, accel + add))
 	elseif accel >= 4 then
@@ -59,12 +60,12 @@ end
 function toggleAI(p)
 	local oldid = id()
 	if player(p) then
-		if ailevel() > 0 then
+		if aiLevel() > 0 then
 			setAILevel(0)
 		else
 			setAILevel(gameOption('Options.Difficulty'))
 		end
-		playerid(oldid)
+		playerId(oldid)
 	end
 end
 
@@ -75,30 +76,30 @@ function kill(p, ...)
 		if not n then n = 0 end
 		setLife(n)
 		setRedLife(0)
-		playerid(oldid)
+		playerId(oldid)
 	end
 end
 
 function powMax(p)
 	local oldid = id()
 	if player(p) then
-		setPower(powermax())
-		setGuardPoints(guardpointsmax())
-		setDizzyPoints(dizzypointsmax())
-		playerid(oldid)
+		setPower(powerMax())
+		setGuardPoints(guardPointsMax())
+		setDizzyPoints(dizzyPointsMax())
+		playerId(oldid)
 	end
 end
 
 function full(p)
 	local oldid = id()
 	if player(p) then
-		setLife(lifemax())
-		setPower(powermax())
-		setGuardPoints(guardpointsmax())
-		setDizzyPoints(dizzypointsmax())
-		setRedLife(lifemax())
+		setLife(lifeMax())
+		setPower(powerMax())
+		setGuardPoints(guardPointsMax())
+		setDizzyPoints(dizzyPointsMax())
+		setRedLife(lifeMax())
 		removeDizzy()
-		playerid(oldid)
+		playerId(oldid)
 	end
 end
 
@@ -106,7 +107,7 @@ function stand(p)
 	local oldid = id()
 	if player(p) then
 		selfState(0)
-		playerid(oldid)
+		playerId(oldid)
 	end
 end
 
@@ -115,7 +116,7 @@ function closeMenu()
 end
 
 function trainingReset()
-	if gamemode() == 'training' then
+	if gameMode() == 'training' then
 		menu.f_trainingReset()
 	end
 end
@@ -142,8 +143,8 @@ function powMaxAll()
 	powMax(2)
 end
 
-function roundResetNow()
-	roundReset()
+function resetRoundNow()
+	resetRound()
 	closeMenu()
 end
 
@@ -179,9 +180,9 @@ function statusInfo(p)
 	if not player(p) then return false end
 	local ret = string.format(
 		'P%d: %d; LIF:%4d; POW:%4d; ATK:%4d; DEF:%4d; RED:%4d; GRD:%4d; STN:%4d',
-		playerno(), id(), life(), power(), attack(), defence(), redlife(), guardpoints(), dizzypoints()
+		playerNo(), id(), life(), power(), attack(), defence(), redLife(), guardPoints(), dizzyPoints()
 	)
-	playerid(oldid)
+	playerId(oldid)
 	return ret
 end
 
@@ -191,8 +192,8 @@ loadDebugStatus('statusInfo')
 --; DEBUG PLAYER/HELPER INFO
 --;===========================================================
 function customState()
-	if not incustomstate() then return "" end
-	return " (in " .. stateownername() .. ", Player " .. stateownerplayerno() .. "'s state)"
+	if not inCustomState() then return "" end
+	return " (in " .. getStateOwnerName() .. ", Player " .. getStateOwnerPlayerNo() .. "'s state)"
 end
 
 function boolToInt(bool)
@@ -201,24 +202,24 @@ function boolToInt(bool)
 end
 
 function engineInfo()
-	return string.format('Frames: %d, VSync: %d; Speed: %d/%d%%; FPS: %.1f', roundtime(), gameOption('Video.VSync'), tickspersecond(), gamespeed(), gamefps())
+	return string.format('Frames: %d, VSync: %d; Speed: %d/%d%%; FPS: %.1f', roundTime(), gameOption('Video.VSync'), ticksPerSecond(), getGameSpeed(), getGameFPS())
 end
 
 function playerInfo()
-	return string.format('%s, Player %d, ID %d%s', name(), playerno(), id(), customState())
+	return string.format('%s, Player %d, ID %d%s', name(), playerNo(), id(), customState())
 end
 
 function actionInfo()
 	return string.format(
 		'ActionID: %d (P%d); SPR: %d,%d; ElemNo: %d/%d; Time: %d/%d (%d/%d)',
-		anim(), animplayerno(), spritevar("group"), spritevar("image"), animelemno(0), animelemcount(), animelemtime(animelemno(0)), animelemvar("time"), animtimesum(), animlength()
+		anim(), animPlayerNo(), spriteVar("group"), spriteVar("image"), animElemNo(0), getAnimElemCount(), animElemTime(animElemNo(0)), animElemVar("time"), getAnimTimeSum(), animLength()
 	)
 end
 
 function stateInfo()
 	return string.format(
 		'State No: %d (P%d); CTRL: %s; Type: %s; MoveType: %s; Physics: %s; Time: %d',
-		stateno(), stateownerplayerno(), boolToInt(ctrl()), statetype(), movetype(), physics(), time()-1
+		stateNo(), getStateOwnerPlayerNo(), boolToInt(ctrl()), stateType(), moveType(), physics(), time()-1
 	)
 end
 
@@ -226,5 +227,5 @@ loadDebugInfo({'engineInfo', 'playerInfo', 'actionInfo', 'stateInfo'})
 
 function loop()
 	hook.run("loop")
-	hook.run("loop#" .. gamemode())
+	hook.run("loop#" .. gameMode())
 end

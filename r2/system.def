@@ -51,6 +51,7 @@ font6 = Jam 16x25.def
 font7 = Jam 16x25.def;Open_Sans.def
 font8 = Jam 16x25.def;num48.def
 module = ;Ikemen feature: External Lua code
+glyphs = glyphs.sff
 
 ;----------------------------
 [Music]

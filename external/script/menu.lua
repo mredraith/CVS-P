@@ -214,7 +214,7 @@ menu.t_itemname = {
 		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
-			roundReset()
+			resetRound()
 			main.pauseMenu = false
 			return false
 		end
@@ -558,7 +558,7 @@ function menu.f_init()
 	togglePause(true)
 	main.pauseMenu = true
 	bgReset(motif.optionbgdef.BGDef)
-	local id = f_pauseMenuIdFromKey(f_pauseMenuKey(gamemode()))
+	local id = f_pauseMenuIdFromKey(f_pauseMenuKey(gameMode()))
 	if id == '' or menu.t_menuIndex == nil or menu.t_menuIndex[id] == nil then
 		id = 'menu'
 	end
@@ -589,7 +589,7 @@ function menu.f_run()
 		if menu.currentMenuId ~= nil and menu.t_menuIndex[menu.currentMenuId] ~= nil then
 			entry = menu.t_menuIndex[menu.currentMenuId]
 		else
-			local id = f_pauseMenuIdFromKey(f_pauseMenuKey(gamemode()))
+			local id = f_pauseMenuIdFromKey(f_pauseMenuKey(gameMode()))
 			if id ~= '' and menu.t_menuIndex[id] ~= nil then
 				entry = menu.t_menuIndex[id]
 			elseif menu.t_menuIndex['menu'] ~= nil then
@@ -745,8 +745,8 @@ function menu.f_commandlistParse()
 			if member > 1 then
 				pn = pn + (member - 1) * 2
 			end
-			if player(pn) and ailevel() == 0 then
-				local ref = selectno()
+			if player(pn) and aiLevel() == 0 then
+				local ref = getSelectNo()
 				if start.f_getCharData(ref).commandlist == nil then
 					local movelist = getCharMovelist(ref)
 					if movelist ~= '' then
