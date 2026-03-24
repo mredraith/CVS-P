@@ -219,6 +219,11 @@ pauseMoveTime = -1
 superMoveTime = -1
 ownPal = 1
 
+[State 210, PosAdd]
+type = posadd
+trigger1 = AnimElem = 6
+x = 20
+
 [State 210, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
