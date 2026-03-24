@@ -1,24 +1,23 @@
 [Info]
-name = "Ring Out"
-displayname = "Ring Out"
+name = "Pier"
+displayname = "Pier"
 author = "MichaHil"
-attachedchar = VP_Ringout.def
 
 ;--------------------------------------------------------
 [Camera]
 startx = 0
-starty = 0
-boundleft = -2000
-boundright = 2000
+starty = 200
+boundleft = -400
+boundright = 400
 boundhigh = -50
-boundlow = 0
+boundlow = 200
 
 verticalfollow = 0
 floortension = 250
 tension = 100
 
 overdrawhigh = 0
-overdrawlow = 120
+overdrawlow = 240
 cuthigh = 0
 cutlow = 0
 zoomin=1
@@ -39,8 +38,8 @@ p2starty = 0
 p2facing = -1
 
 ;--- Common ---
-leftbound  = -10000
-rightbound =  10000
+leftbound  = -4000
+rightbound =  4000
 
 ;--------------------------------------------------------
 [Bound]
@@ -77,108 +76,30 @@ fade.range=-100,0
 bgmusic =kfm3D.mp3
 bgmvolume = 100
 
-[Constants]
-vnix_outofbounds = 1
-vnix_no_wallhit = 1
+;========================================================
+[BGdef]
 
+;Filename of 3D model file
+;Supported file types are gltf and glb; supported by most modern 3D model programs.
+;It is recommended to use PNG/JPEG/embedded image format for textures. Compressed DDS textures are not supported.
+;Make sure the world origin of the model is at the camera's starting point.
+model = stage13.glb
 
+;Filename of .sff file, required by spec (and for stage portraits)
+spr = stage01.sff
 
+;debugbg = 0
 
 ;-------------------------------------
-; Model definition
+; Model element definition
 [Model]
-; Move the model away from the camera
-offset = 0,-0.62,-2
+
+; X, Y, and Z coordinates of the model
+offset = 0,-0.2,-0.5
+
 ; Scale of the model
-scale = 4.5, 4.5, 4.5
+scale = 0.06, 0.06, 0.06
 ;-------------------------------------
-; IKEMEN GO ONLY, preview animation used in the Select screen
+; Stage portrait data
 [Begin Action 9000]
 9000,1, 0,0,-1
-;-------------------------------------
-
-
-
-;========================================================
-;--------------------------------------------------------
-; Background definition
-
-;-------------------------------------
-; Main background definition
-[BGdef]
- ;Filename of sprite data
-spr		= stage01.sff
- ;Filename of 3d model data
- ;Supported file types are gltf and glb
- ;Note that compressed dds texture is not supported. It is recommended to use png/jpeg/embedded image format.
- ;Make sure the world origin of the model is at the camera starting point.
-model	= stage13.glb
-
- ;Set to 1 if you want to clear the screen to magenta before
- ;drawing layer 0 (the default background). Good for spotting "holes"
- ;in your background.
- ;Remember to turn this off when you are done debugging the background,
- ;because it slows down performance.
-debugbg = 0
-
-
-;============= Debug BGs =============
-[BG Ruller X]
-type			= Anim
-actionno		= 20
-start		= 0, 680; 680 is my 2D base
-layerno		= 1
-tile			= 1, 0
-tilespacing	= 2000, 0
-delta		= 1, 1
-mask			= 1
-scalestart	= 1, 1
-
-[BG Ruller y]
-type			= Anim
-actionno		= 21
-start		= -1000, 0
-layerno		= 1
-tile			= 1, 0
-tilespacing	= 1000, 0
-delta		= 1, 1
-mask			= 1
-scalestart	= 1, 1
-
-[BG Pointer]
-type			= Anim
-ActionNo		= 30
-start		= 0, 0
-layerno		= 1
-tile			= 0, 0
-tilespacing	= 0, 0
-delta		= 0, 0
-mask			= 1
-scalestart	= 1, 2
-
-
-
-; Ruller-X
-[Begin Action 20]
-Interpolate Blend
-2,0, 0,0, 60, , AS256D0
-Interpolate Blend
-2,0, 0,0, 60, , AS128D128
-
-[Begin Action 21]
-Interpolate Blend
-2,1, 0,0, 60, , AS128D128
-Interpolate Blend
-2,1, 0,0, 60, , AS256D0
-
-[Begin Action 30]
-3,0, 0,0, 16, H, AS256D0
-3,0, 0,0, 8, H , AS240D40
-3,0, 0,0, 8, H , AS200D60
-3,0, 0,0, 8, H , AS150D120
-3,0, 0,0, 8, H , AS128D128
-3,0, 0,0, 64, H , AS64D200
-3,0, 0,0, 8, H , AS128D128
-3,0, 0,0, 8, H , AS150D120
-3,0, 0,0, 8, H , AS200D60
-3,0, 0,0, 8, H , AS240D40
