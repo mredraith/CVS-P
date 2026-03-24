@@ -1,0 +1,261 @@
+# ==================================
+# RECORD/REPLAY by jay_ts
+# ==================================
+
+[StateDef -4]
+
+# ==================================
+# CONFIG
+# ==================================
+
+map(jayrecordreplay_enable) := 1;			# Enable record/replay (0 = off, 1 = on)
+map(jayrecordreplay_slotsMax) := 3;			# Amount of recording slots available (max: 50)
+map(jayrecordreplay_absolute) := 0;			# Replayed left/right inputs won't flip based on facing if enabled
+
+map(jayrecordreplay_textPosX) := 160;		# Pos X for the info text
+map(jayrecordreplay_textPosY) := 50;		# Pos Y for the info text
+map(jayrecordreplay_textOff169X) := 120;		# Pos X offset for widescreen
+map(jayrecordreplay_textOff169Y) := 25;		# Pos Y offset for widescreen
+map(jayrecordreplay_textFont) := -1;		# Font for the info text
+map(jayrecordreplay_textBank) := -1;		# Bank for the info textt
+map(jayrecordreplay_textScale) := 0.66;		# Scale for the info text
+map(jayrecordreplay_textLayer) := 1;		# Layer for the info text
+map(jayrecordreplay_textR) := 256;			# Red color for text
+map(jayrecordreplay_textG) := 0;			# Blue color for text
+map(jayrecordreplay_textB) := 0;			# Green color for text
+
+# ==================================
+
+ignoreHitPause {
+	# Initialize
+	if (roundState = 0) {
+		map(jayrecordreplay_recCd) := 0;
+		map(jayrecordreplay_recSt) := 0;
+		map(jayrecordreplay_recSl) := 1;
+	}
+
+	let wide = (screenHeight/240);
+	let isWide = (screenWidth / screenHeight != 1.33333333);
+	
+	# Main logic
+	if (roundState = 2 && map(jayrecordreplay_enable) = 1 && gameMode = "training") {
+		# Neutral logic
+		if (playerNo = 1 && !isHelper && map(jayrecordreplay_recSt) = 0) {
+			text{
+				text: "Record Slot: %v"; 
+				pos: const240p(map(jayrecordreplay_textPosX) + (map(jayrecordreplay_textOff169X) * $isWide)) * $wide, const240p(map(jayrecordreplay_textPosY) + (map(jayrecordreplay_textOff169Y) * $isWide)) * $wide; 
+				params: map(jayrecordreplay_recSl);
+				font: map(jayrecordreplay_textFont);
+				bank: map(jayrecordreplay_textBank);
+				layerno: map(jayrecordreplay_textLayer);
+				scale: map(jayrecordreplay_textScale), map(jayrecordreplay_textScale);
+				color: map(jayrecordreplay_textR),map(jayrecordreplay_textG),map(jayrecordreplay_textB);
+				align: 0;
+			}
+		}
+		
+		# Inputs
+		if (playerNo = 1 && teamMode != Tag) {
+			if (command = "TagShiftBack" && command != "TagShiftFwd" && !map(jayrecordreplay_recCd)) {
+				map(jayrecordreplay_recCd) := 3;
+				if (map(jayrecordreplay_recSt) != 1) {
+					map(jayrecordreplay_recSt) := 1;
+				} else if (map(jayrecordreplay_recSt) != 0) {
+					map(jayrecordreplay_recSt) := 0;
+				}
+			} else if (command = "TagShiftFwd" && command != "TagShiftBack" && !map(jayrecordreplay_recCd)) {
+				map(jayrecordreplay_recCd) := 3;
+				if (map(jayrecordreplay_recSt) = 0) {
+					map(jayrecordreplay_recSt) := 2;
+				} else if (map(jayrecordreplay_recSt) = 2) {
+					map(jayrecordreplay_recSt) := 0;
+				}
+			}
+		}
+		
+		if map(jayrecordreplay_recCd) > 0 { map(jayrecordreplay_recCd) := map(jayrecordreplay_recCd) - 1; }
+		
+		# Helper
+		map(jayrecordreplay_slots) := clamp(map(jayrecordreplay_slotsMax),1,50);
+		for i = 0; map(jayrecordreplay_slots) - 1 {
+			if (playerNo = 1 && !numHelper(1324300 + $i)) {
+				helper{
+					name: "Recorder";
+					id: 1324300 + $i;
+					stateno: 1324300;
+					pos: 32767,32767;
+					postype: P1;
+					facing: facing;
+					extendsMap: 1;
+					superMoveTime: -1;
+					pauseMoveTime: -1;
+					keyCtrl: 1;
+				}
+			}
+		}
+		
+		if (map(jayrecordreplay_timer) < 2500) {
+			# Record inputs (both)
+			if (playerNo = 1 && map(jayrecordreplay_recSt) = 1) {
+				assertSpecial{
+					flag:  NoStandGuard;
+					flag2: NoCrouchGuard;
+					flag3: NoAirGuard;
+					flag4: NoJump;
+					flag5: NoAirJump;
+					flag6: NoCrouch;
+					flag7: NoWalk;
+				}
+				if (!isHelper) {
+					text{
+						text: "Recording... %v"; 
+						pos: const240p(map(jayrecordreplay_textPosX) + (map(jayrecordreplay_textOff169X) * $isWide)) * $wide,const240p(map(jayrecordreplay_textPosY) + (map(jayrecordreplay_textOff169Y) * $isWide)) * $wide;  
+						font: map(jayrecordreplay_textFont);
+						params: floor((2500 - map(jayrecordreplay_timer)) * 0.01) + 1;
+						bank: map(jayrecordreplay_textBank);
+						layerno: map(jayrecordreplay_textLayer);
+						scale: map(jayrecordreplay_textScale), map(jayrecordreplay_textScale);
+						color: map(jayrecordreplay_textR),map(jayrecordreplay_textG),map(jayrecordreplay_textB);
+						align: 0;
+					}
+				}
+				if (ctrl && stateType != A) { ctrlSet{value: 0;} }
+				
+				# Manual turning
+				if (stateNo = 0) {
+					if (anim != 5 && facing = enemyNear, facing) {
+						changeAnim{value: 5;}
+					}
+					if (anim = 5 && animElemTime(1) = 0) {
+						turn{}
+					}
+				}
+			} else if (playerNo = 1 && map(jayrecordreplay_recSt) != 1) {
+				if (stateNo = 0) { ctrlSet{value: 1;} }
+			}
+			# Record inputs (enemy)
+			if (playerNo = 2 && enemyNear, map(jayrecordreplay_recSt) = 1) {
+				# Store facing
+				if (enemy, map(jayrecordreplay_recCd) = 2) { map(jayrecordreplay_OgFace) := cond(isHelper, root, facing, facing); }
+				
+				# Control directionals
+				#if (cond((enemyNear, facing = -1), (enemyNear, inputTime(F) > 0),(enemyNear, inputTime(B) > 0)) { assertInput{flag: F;} }
+				if (enemyNear, inputTime(R) > 0) { assertInput{flag: R;} }
+				if (enemyNear, inputTime(L) > 0) { assertInput{flag: L;} }
+				if (enemyNear, inputTime(U) > 0) { assertInput{flag: U;} }
+				if (enemyNear, inputTime(D) > 0) { assertInput{flag: D;} }
+				if (enemyNear, inputTime(x) > 0) { assertInput{flag: x;} }
+				if (enemyNear, inputTime(y) > 0) { assertInput{flag: y;} }
+				if (enemyNear, inputTime(z) > 0) { assertInput{flag: z;} }
+				if (enemyNear, inputTime(a) > 0) { assertInput{flag: a;} }
+				if (enemyNear, inputTime(b) > 0) { assertInput{flag: b;} }
+				if (enemyNear, inputTime(c) > 0) { assertInput{flag: c;} }
+				if (enemyNear, inputTime(s) > 0) { assertInput{flag: s;} }
+			}
+		} else {
+			map(jayrecordreplay_recSt) := 0;
+		}
+
+		# Replay inputs (player)
+		if (map(jayrecordreplay_recSt) = 2) {
+			if (map(jayrecordreplay_recCd) = 2) {
+				map(jayrecordreplay_iter) := 0;
+			} else if (map(jayrecordreplay_iter) < map(jayrecordreplay_timer)) {
+				let helperSlot = 1324300 + (map(jayrecordreplay_recSl)-1);
+				#printToConsole{ text: "value: %d (%v)"; params: helper($helperSlot), var(map(jayrecordreplay_iter)), $helperSlot * 0.01; }
+				
+				# Replay directions
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**0) { map(jayframedisplay_R) := 2; } else if (map(jayframedisplay_R) > 0) { map(jayframedisplay_R) := map(jayframedisplay_R) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**1) { map(jayframedisplay_L) := 2; } else if (map(jayframedisplay_L) > 0) { map(jayframedisplay_L) := map(jayframedisplay_L) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**2) { map(jayframedisplay_U) := 2; } else if (map(jayframedisplay_U) > 0) { map(jayframedisplay_U) := map(jayframedisplay_U) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**3) { map(jayframedisplay_D) := 2; } else if (map(jayframedisplay_D) > 0) { map(jayframedisplay_D) := map(jayframedisplay_D) - 1; }
+				# Replay buttons
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**4) { map(jayframedisplay_x) := 2; } else if (map(jayframedisplay_x) > 0) { map(jayframedisplay_x) := map(jayframedisplay_x) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**5) { map(jayframedisplay_y) := 2; } else if (map(jayframedisplay_y) > 0) { map(jayframedisplay_y) := map(jayframedisplay_y) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**6) { map(jayframedisplay_z) := 2; } else if (map(jayframedisplay_z) > 0) { map(jayframedisplay_z) := map(jayframedisplay_z) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**7) { map(jayframedisplay_a) := 2; } else if (map(jayframedisplay_a) > 0) { map(jayframedisplay_a) := map(jayframedisplay_a) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**8) { map(jayframedisplay_b) := 2; } else if (map(jayframedisplay_b) > 0) { map(jayframedisplay_b) := map(jayframedisplay_b) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**9) { map(jayframedisplay_c) := 2; } else if (map(jayframedisplay_c) > 0) { map(jayframedisplay_c) := map(jayframedisplay_c) - 1; }
+				if (numHelper($helperSlot) && helper($helperSlot), var(map(jayrecordreplay_iter)) & 2**10){ map(jayframedisplay_s) := 2; } else if (map(jayframedisplay_s) > 0) { map(jayframedisplay_s) := map(jayframedisplay_s) - 1; }
+				
+				map(jayrecordreplay_iter) := map(jayrecordreplay_iter) + 1;
+				
+				if (!isHelper) {
+					text{
+						text: "Replaying"; 
+						pos: const240p(map(jayrecordreplay_textPosX) + (map(jayrecordreplay_textOff169X) * $isWide)) * $wide,const240p(map(jayrecordreplay_textPosY) + (map(jayrecordreplay_textOff169Y) * $isWide)) * $wide;  
+						font: map(jayrecordreplay_textFont);
+						bank: map(jayrecordreplay_textBank);
+						layerno: map(jayrecordreplay_textLayer);
+						scale: map(jayrecordreplay_textScale), map(jayrecordreplay_textScale);
+						color: map(jayrecordreplay_textR),map(jayrecordreplay_textG),map(jayrecordreplay_textB);
+						align: 0;
+					}
+				}
+			} else {
+				map(jayrecordreplay_recSt) := 0;
+			}
+		} else {
+			map(jayframedisplay_input) := 0;
+		}
+		# Replay inputs (enemy)
+		if (enemyNear, map(jayrecordreplay_recSt) = 2) {
+			if (enemyNear, map(jayframedisplay_R)) { if (cond(isHelper, root, facing = map(jayrecordreplay_OgFace), facing = map(jayrecordreplay_OgFace)) || map(jayframedisplay_absolute)) { assertInput{flag: R;} } else { assertInput{flag: L;} } }
+			if (enemyNear, map(jayframedisplay_L)) { if (cond(isHelper, root, facing = map(jayrecordreplay_OgFace), facing = map(jayrecordreplay_OgFace)) || map(jayframedisplay_absolute)) { assertInput{flag: L;} } else { assertInput{flag: R;} } }
+			if (enemyNear, map(jayframedisplay_U)) { assertInput{flag: U;} }
+			if (enemyNear, map(jayframedisplay_D)) { assertInput{flag: D;} }
+			if (enemyNear, map(jayframedisplay_x)) { assertInput{flag: x;} }
+			if (enemyNear, map(jayframedisplay_y)) { assertInput{flag: y;} }
+			if (enemyNear, map(jayframedisplay_z)) { assertInput{flag: z;} }
+			if (enemyNear, map(jayframedisplay_a)) { assertInput{flag: a;} }
+			if (enemyNear, map(jayframedisplay_b)) { assertInput{flag: b;} }
+			if (enemyNear, map(jayframedisplay_c)) { assertInput{flag: c;} }
+			if (enemyNear, map(jayframedisplay_s)) { assertInput{flag: s;} }
+		}
+	}
+	
+	# Debug
+	if (!isHelper) {
+		displayToClipboard{text: "State: %v / Replay timer: %v(%v)"; params: map(jayrecordreplay_recSt), map(jayrecordreplay_iter),map(jayrecordreplay_timer);}
+	}
+}
+
+# ==================================
+		
+# Main state
+[StateDef 1324300; anim: -2; ctrl: 0;]
+
+ignoreHitPause {
+	let slotId = 1324300 + (parent, map(jayrecordreplay_recSl) - 1);
+	# Store values
+	if ((parent, map(jayrecordreplay_recSt) = 1) && ($slotId = helperVar(ID))) {
+		if (parent, map(jayrecordreplay_recCd) = 2) {
+			map(timer) := 0;
+			for i = 1; 2500 {
+				var($i-1) := 0;
+			}
+		} else if (map(timer) < 2500) {
+			map(timer) := map(timer) + 1;
+			parent, map(jayrecordreplay_timer) := map(timer);
+			
+			# Check directionals
+			if (inputTime(R) > 0 && !(var(map(timer)) & 2**0)) { var(map(timer)) := var(map(timer)) + 2**0 ; } else if (inputTime(R) <= 0 && (var(map(timer)) & 2**0)) { var(map(timer)) := var(map(timer)) - 2**0 ; }
+			if (inputTime(L) > 0 && !(var(map(timer)) & 2**1)) { var(map(timer)) := var(map(timer)) + 2**1 ; } else if (inputTime(L) <= 0 && (var(map(timer)) & 2**1)) { var(map(timer)) := var(map(timer)) - 2**1 ; }
+			if (inputTime(U) > 0 && !(var(map(timer)) & 2**2)) { var(map(timer)) := var(map(timer)) + 2**2 ; } else if (inputTime(U) <= 0 && (var(map(timer)) & 2**2)) { var(map(timer)) := var(map(timer)) - 2**2 ; }
+			if (inputTime(D) > 0 && !(var(map(timer)) & 2**3)) { var(map(timer)) := var(map(timer)) + 2**3 ; } else if (inputTime(D) <= 0 && (var(map(timer)) & 2**3)) { var(map(timer)) := var(map(timer)) - 2**3 ; }
+			# Check buttons
+			if (inputTime(x) > 0 && !(var(map(timer)) & 2**4)) { var(map(timer)) := var(map(timer)) + 2**4 ; } else if (inputTime(x) <= 0 && (var(map(timer)) & 2**4)) { var(map(timer)) := var(map(timer)) - 2**4 ; }
+			if (inputTime(y) > 0 && !(var(map(timer)) & 2**5)) { var(map(timer)) := var(map(timer)) + 2**5 ; } else if (inputTime(y) <= 0 && (var(map(timer)) & 2**5)) { var(map(timer)) := var(map(timer)) - 2**5 ; }
+			if (inputTime(z) > 0 && !(var(map(timer)) & 2**6)) { var(map(timer)) := var(map(timer)) + 2**6 ; } else if (inputTime(z) <= 0 && (var(map(timer)) & 2**6)) { var(map(timer)) := var(map(timer)) - 2**6 ; }
+			if (inputTime(a) > 0 && !(var(map(timer)) & 2**7)) { var(map(timer)) := var(map(timer)) + 2**7 ; } else if (inputTime(a) <= 0 && (var(map(timer)) & 2**7)) { var(map(timer)) := var(map(timer)) - 2**7 ; }
+			if (inputTime(b) > 0 && !(var(map(timer)) & 2**8)) { var(map(timer)) := var(map(timer)) + 2**8 ; } else if (inputTime(b) <= 0 && (var(map(timer)) & 2**8)) { var(map(timer)) := var(map(timer)) - 2**8 ; }
+			if (inputTime(c) > 0 && !(var(map(timer)) & 2**9)) { var(map(timer)) := var(map(timer)) + 2**9 ; } else if (inputTime(c) <= 0 && (var(map(timer)) & 2**9)) { var(map(timer)) := var(map(timer)) - 2**9 ; }
+			if (inputTime(s) > 0 && !(var(map(timer)) & 2**10)){ var(map(timer)) := var(map(timer)) + 2**10; } else if (inputTime(s) <= 0 && (var(map(timer)) & 2**10)){ var(map(timer)) := var(map(timer)) - 2**10; }
+			
+			#printToConsole{ text: "value: %d (%v)"; params: var(map(timer) - 1), $slotId * 0.01; }
+		}
+	}
+
+	# Debug
+	displayToClipboard{text: "ID: %d"; params: helperVar(ID);}
+}

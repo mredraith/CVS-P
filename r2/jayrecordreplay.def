@@ -1,0 +1,72 @@
+; Record Replay Module by jay_ts
+; .def file override
+
+; This will override the training menu to include the recording options in the right places.
+; If you wish to instead keep this info in your actual system.def, delete this file and add
+; the recording menu options over there under the same submenu.
+[Training Pause Menu]
+;---------------------------------------------
+; recording options
+menu.valuename.recordstate_off = Off
+menu.valuename.recordstate_rec = Record
+menu.valuename.recordstate_rep = Replay
+;---------------------------------------------
+menu.valuename.dummycontrol_cooperative = Cooperative
+menu.valuename.dummycontrol_ai = AI
+menu.valuename.dummycontrol_manual = Manual
+menu.valuename.ailevel_1 = 1
+menu.valuename.ailevel_2 = 2
+menu.valuename.ailevel_3 = 3
+menu.valuename.ailevel_4 = 4
+menu.valuename.ailevel_5 = 5
+menu.valuename.ailevel_6 = 6
+menu.valuename.ailevel_7 = 7
+menu.valuename.ailevel_8 = 8
+menu.valuename.dummymode_stand = Stand
+menu.valuename.dummymode_crouch = Crouch
+menu.valuename.dummymode_jump = Jump
+menu.valuename.dummymode_wjump = W Jump
+menu.valuename.guardmode_none = None
+menu.valuename.guardmode_auto = Auto
+menu.valuename.guardmode_all = All
+menu.valuename.guardmode_random = Random
+menu.valuename.fallrecovery_none = None
+menu.valuename.fallrecovery_ground = Ground
+menu.valuename.fallrecovery_air = Air
+menu.valuename.fallrecovery_random = Random
+menu.valuename.distance_any = Any
+menu.valuename.distance_close = Close
+menu.valuename.distance_medium = Medium
+menu.valuename.distance_far = Far
+menu.valuename.buttonjam_none = None
+menu.valuename.buttonjam_a = A
+menu.valuename.buttonjam_b = B
+menu.valuename.buttonjam_c = C
+menu.valuename.buttonjam_x = X
+menu.valuename.buttonjam_y = Y
+menu.valuename.buttonjam_z = Z
+menu.valuename.buttonjam_s = Start
+menu.valuename.buttonjam_d = D
+menu.valuename.buttonjam_w = W
+
+menu.itemname.back = Continue
+menu.itemname.menutraining = Training Menu
+menu.itemname.menutraining.dummycontrol = Dummy Control
+menu.itemname.menutraining.ailevel = AI Level
+menu.itemname.menutraining.dummymode = Dummy Mode
+menu.itemname.menutraining.guardmode = Guard Mode
+menu.itemname.menutraining.fallrecovery = Fall Recovery
+menu.itemname.menutraining.distance = Distance
+menu.itemname.menutraining.buttonjam = Button Jam
+menu.itemname.menutraining.recordstate = Recording State
+menu.itemname.menutraining.recordslot = Recording Slot
+menu.itemname.menutraining.back = Back
+menu.itemname.menuinput = Button Config
+menu.itemname.menuinput.keyboard = Key Config
+menu.itemname.menuinput.gamepad = Joystick Config
+menu.itemname.menuinput.spacer = -
+menu.itemname.menuinput.inputdefault = Default
+menu.itemname.menuinput.back = Back
+menu.itemname.commandlist = Command List
+menu.itemname.characterchange = Character Change
+menu.itemname.exit = Exit
