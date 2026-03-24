@@ -1154,6 +1154,7 @@ triggerall = statetype != A
 trigger1= ctrl || (stateno=[100,101])
 trigger2= (StateNo = 400 || StateNo = 430) && Time >=5
 trigger3 = var(4)
+trigger4= StateNo = 200 && Time >=5
 
 ;---------------------------------------------------------------------------
 [State -1, Stand Medium Punch]
