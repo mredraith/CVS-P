@@ -851,11 +851,6 @@ trigger1 = AnimElemTime(2)>=30 && AnimElemTime(3)<0
 time = 2
 value = 0,0,0
 
-[State 301, Assert]
-type = AssertSpecial
-trigger1 = AnimElemTime(2)>=30 && AnimElemTime(3)<0
-flag = nobardisplay
-
 [State 301, HitSnds]
 type = PlaySnd
 trigger1 = AnimElemTime(2)>=30 && AnimElemTime(3)<0

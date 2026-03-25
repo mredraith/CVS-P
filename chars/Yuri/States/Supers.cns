@@ -2120,10 +2120,6 @@ trigger1 = animelemtime(2) >= 0 && animtime < 0
 time = 2
 value = 0, 0, 0
 
-[State 3301, Assert]
-type = assertspecial
-trigger1 = animelemtime(2) >= 0
-flag = nobardisplay
 [State 3301, Bind]
 type = targetbind
 trigger1 = numtarget
@@ -2329,8 +2325,7 @@ add = -ceil(time * 8.53), -ceil(time * 8.53), -ceil(time * 8.53)
 [State 3311, Assert]
 type = assertspecial
 trigger1 = animelemtime(2) >= 0
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 [State 3311, white]
 type = bgpalfx
 trigger1 = animelemtime(2) >= -1 && animelemtime(3) < -1

@@ -3333,11 +3333,6 @@ keyctrl = 0
 ownpal = 1
 supermovetime = 1
 
-[State 901:Assertspecial]
-type = assertspecial
-trigger1 = time >=30
-flag = nobardisplay
-
 [State 0, HitAdd]
 type = HitAdd
 trigger1 = animelem = 2

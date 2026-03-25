@@ -1828,7 +1828,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noBG
 flag2 = noFG
-flag3 = nobardisplay
 
 [State 0, Explod]
 type = Explod
@@ -1954,7 +1953,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noBG
 flag2 = noFG
-flag3 = nobardisplay
 
 [State 1500]
 type = ChangeState
@@ -2010,7 +2008,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noBG
 flag2 = noFG
-flag3 = nobardisplay
 
 [State 810, Throw 11]
 type = VelAdd

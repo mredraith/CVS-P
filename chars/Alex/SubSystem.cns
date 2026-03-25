@@ -100,9 +100,8 @@ ignorehitpause =1
 [state 8750]
 type=AssertSpecial
 trigger1=1
-flag=nobardisplay
-flag2=noBG
-flag3=noFG
+flag=noBG
+flag2=noFG
 ignorehitpause=1
 
 [state 8750,nobgm]
@@ -295,9 +294,8 @@ ignorehitpause=1
 [state 8750]
 type=AssertSpecial
 trigger1=1
-flag=nobardisplay
-flag2=noBG
-flag3=noFG
+flag=noBG
+flag2=noFG
 ignorehitpause=1
 
 [state 8750,nobgm]
@@ -394,8 +392,7 @@ ignorehitpause=1
 [state 8750]
 type=AssertSpecial
 trigger1=1
-flag=nobardisplay
-flag2=globalnoshadow
+flag=globalnoshadow
 ignorehitpause=1
 
 [state 8750]
@@ -614,9 +611,8 @@ ignorehitpause=1
 [state 8750]
 type=null;AssertSpecial
 trigger1=1
-flag=nobardisplay
-flag2=noBG
-flag3=noFG
+flag=noBG
+flag2=noFG
 ignorehitpause=1
 
 [state 8750,nobgm]

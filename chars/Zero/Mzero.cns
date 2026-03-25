@@ -461,7 +461,6 @@ velset = 0,0
 type = AssertSpecial
 trigger1 = 1
 flag = intro
-flag2 = nobardisplay
 ignorehitpause = 1
 
 [State 195, 1]

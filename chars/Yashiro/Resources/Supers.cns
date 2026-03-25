@@ -6546,12 +6546,11 @@ flag = NoShadow
 flag2 = NoMusic
 ignoreHitPause = 1
 
-[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
+[State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = 1
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 ignoreHitPause = 1
 
 [State 4400, Explod]
@@ -6799,12 +6798,11 @@ flag = NoShadow
 flag2 = NoMusic
 ignoreHitPause = 1
 
-[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
+[State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = 1
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 ignoreHitPause = 1
 
 [State 4400, Explod]

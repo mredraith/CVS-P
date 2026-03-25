@@ -684,11 +684,6 @@ time = 2
 [State 901:Assertspecial]
 type = assertspecial
 trigger1 = 1
-flag = nobardisplay
-
-[State 901:Assertspecial]
-type = assertspecial
-trigger1 = 1
 flag = noshadow
 
 [State 901:playerpush]
@@ -782,11 +777,6 @@ time = 2
 ;pos = 0,0
 ;ignorehitpause =
 ;persistent =
-
-[State 901:Assertspecial]
-type = assertspecial
-trigger1 = 1
-flag = nobardisplay
 
 [State 901:Assertspecial]
 type = assertspecial
@@ -885,11 +875,6 @@ time = 2
 ;pos = 0,0
 ;ignorehitpause =
 ;persistent =
-
-[State 901:Assertspecial]
-type = assertspecial
-trigger1 = 1
-flag = nobardisplay
 
 [State 901:Assertspecial]
 type = assertspecial
@@ -1111,8 +1096,7 @@ anim = 99998
 [State 99999, AssertSpecial]
 type = AssertSpecial
 trigger1 = 1
-flag = nobardisplay
-flag2 = nokoslow
+flag = nokoslow
 persistent = 1
 
 [State 99999, PlaySnd]
