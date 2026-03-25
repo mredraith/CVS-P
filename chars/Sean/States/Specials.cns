@@ -4153,6 +4153,7 @@ type = ChangeState
 trigger1 = Time = 21 && !Var(10)
 trigger2 = Time = 30 && Var(10) = 1
 trigger3 = Time = 33 && Var(10) = 2
+trigger4 = time >= 60
 value = 1401
 ctrl = 0
 
