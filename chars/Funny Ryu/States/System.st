@@ -13,7 +13,7 @@
 ;
 
 ;PARRY
-;STANDING ---
+;STANDING
 [Statedef 700]
 type = S
 physics = S

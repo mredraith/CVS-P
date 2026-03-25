@@ -292,10 +292,10 @@ ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
+ground.velocity = -1, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = ifelse(p2dist x <= 0, ifelse(var(10) = 3, 2, ifelse(var(10) = 2, 1.5, 1)), ifelse(var(10) = 3, -4,  ifelse(var(10) = 2, -3.5, -3))), ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
+air.velocity = -1, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
 guard.velocity = -10.52
 guard.cornerpush.veloff = 0;-12.74
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -339,10 +339,10 @@ ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -12.5, ifelse(var(10) = 2, -10, -8))
+ground.velocity = -1, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = ifelse(p2dist x <= 0, ifelse(var(10) = 3, 2, ifelse(var(10) = 2, 1.5, 1)), ifelse(var(10) = 3, -4,  ifelse(var(10) = 2, -3.5, -3))), ifelse(var(10) = 3, -12.5, ifelse(var(10) = 2, -10, -9))
+air.velocity = -1, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
 guard.velocity = -10.52
 guard.cornerpush.veloff = 0;-12.74
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -386,10 +386,10 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3)), ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
+ground.velocity = -1, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = ifelse(p2dist x < 5, ifelse(var(10) = 3, 2, ifelse(var(10) = 2, 1.5, 1)), ifelse(var(10) = 3, -4, ifelse(var(10) = 2, -3.5, -3))), ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
+air.velocity = -1, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
 guard.cornerpush.veloff = 0
 guard.velocity = -10.52
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -437,10 +437,10 @@ ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = -4, -7.95
+ground.velocity = -0.5, -7.95
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = ifelse(p2dist x < 5, 4, -4), -9
+air.velocity = -0.5, -9
 guard.cornerpush.veloff = 0
 guard.velocity = -10.52
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -488,10 +488,10 @@ ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = -1, -8
+ground.velocity = -0.5, -8
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = ifelse(p2dist x < 4, 1.5, -1.5), -7.5  - (var(10)-1)
+air.velocity = -0.5, -7.5  - (var(10)-1)
 guard.cornerpush.veloff = 0
 guard.velocity = -10.52
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -540,10 +540,10 @@ ground.type = Low
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = ifelse(var(10) = 3, -5, ifelse(var(10) = 2, -4, -3)), -10 - (var(10)-1)
+ground.velocity = -0.5, -10 - (var(10)-1)
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = ifelse(p2dist x < 4, ifelse(var(10) = 3, 2, ifelse(var(10) = 2, 1.5, 1)), ifelse(var(10) = 3, -5, ifelse(var(10) = 2, -4, -3))), -10 - (var(10)-1)
+air.velocity = -0.5, -10 - (var(10)-1)
 guard.cornerpush.veloff = 0
 guard.velocity = -10.52
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -588,10 +588,10 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = ifelse(var(10) = 3, -5, ifelse(var(10) = 2, -4, -3)), ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -7.75))
+ground.velocity = -0.5, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -7.75))
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = ifelse(p2dist x < 6, ifelse(var(10) = 3, 2, ifelse(var(10) = 2, 1.5, 1)), ifelse(var(10) = 3, -5, ifelse(var(10) = 2, -4, -3))), ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
+air.velocity = -0.5, ifelse(var(10) = 3, -12, ifelse(var(10) = 2, -10, -8))
 guard.cornerpush.veloff = 0
 guard.velocity = -10.52
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -1042,8 +1042,8 @@ var(10) = 3
 [State 1250, veladd]
 type = veladd
 trigger1 = animelem = 1
-x = ifElse(vel x >= 0, 8, -8)
-y = ifElse(vel y <= 0, (-2 - var(10)) * 0.225, (2 + var(10))* 0.2)
+x = ifElse(var(10) = 1, (ifElse(vel x >= 0, 2, -2)), ifElse(var(10) = 2, ifElse(vel x >= 0, 4, -4), ifElse(vel x >= 0, 8, -8)))
+y = -4
 
 [State 1250, Snd]
 type = playsnd
@@ -1090,7 +1090,7 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity = ifelse(var(1)!=2, ifelse(var(10)=3, -7.45, ifelse(var(10)=2, -6.3, -3.75)), -5.25), ifelse(var(1)!=2, -6.75+(var(10)*0.65), -4.75)
+ground.velocity = ifelse(var(1)!=2, ifelse(var(10)=3, -7.45, ifelse(var(10)=2, -6.3, -3.75)), -5.25), ifelse(var(10)=1, 0, -4.75)
 air.type = Low
 air.velocity = ifelse(var(1)!=2, ifelse(var(10)=3, -7.45, ifelse(var(10)=2, -6.3, -3.75)), -5.25), ifelse(var(1)!=2, -4.75+(var(10)*0.65), -4.75)
 air.cornerpush.veloff = 0
@@ -1102,8 +1102,8 @@ givepower = 36, 36
 envshake.time = 16
 envshake.freq = 120
 envshake.ampl = 4
-fall = 1
-fall.recover = 1
+fall = ifElse(var(10) = 1, 0, 1)
+fall.recover = ifElse(var(10) = 3, 0, 1)
 fall.recovertime = 120
 yaccel = 0.5
 airguard.ctrltime = 16
@@ -1694,6 +1694,11 @@ x = 30
 type = velset
 trigger1 = (anim = [1500, 1502]) && animelem = 5
 x = 0
+
+[State 1500, Pos]
+type = posset
+trigger1 = (anim = [1500, 1502]) && animelemtime(5) < 0
+x = ifelse(facing = 1, (EnemyNear, Pos X) - 30, (EnemyNear, Pos X) + 30)
 
 [State 1300, Snd]
 type = playsnd

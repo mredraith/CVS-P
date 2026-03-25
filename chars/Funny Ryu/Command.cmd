@@ -1442,6 +1442,7 @@ value = ifelse(command = "FF", 102, 105)
 trigger1 = !AIlevel
 trigger1 = command = "FF" || command = "BB"
 trigger1 = roundstate = 2 && (stateno != [100, 106]) && statetype = S && ctrl
+trigger2 = (Command = "FF" || Command = "BB") && stateno = [1000, 2999] && (MoveContact || EnemyNear,MoveType = H)
 
 [State -1, throw]
 type = changestate

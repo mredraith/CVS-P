@@ -1667,10 +1667,10 @@ pausetime = ifelse(var(20), 5, 10), ifelse(var(20), 5, 10)
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
-ground.slidetime = 5 + 3 * var(29)
+ground.slidetime = 17 + 3 * var(29)
 ground.hittime = 17 + 3 * var(29)
 guard.hittime = (17 + 3 * var(29)) - 6
-ground.velocity = -1
+ground.velocity = -3
 ground.cornerpush.veloff = 0;ifelse(var(20), -5.78, -10.47)
 air.type = Low
 air.hittime = 120
