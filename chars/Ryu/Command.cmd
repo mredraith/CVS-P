@@ -169,18 +169,6 @@ time = 40
 name = "qcfhcbk"
 command = ~D, F, D, B, c
 time = 40
-[Command]
-name = "qcfhcbk"
-command = ~D, F, D, B, ~a
-time = 40
-[Command]
-name = "qcfhcbk"
-command = ~D, F, D, B, ~b
-time = 40
-[Command]
-name = "qcfhcbk"
-command = ~D, F, D, B, ~c
-time = 40
 
 [Command]
 name = "qcbhcfk"

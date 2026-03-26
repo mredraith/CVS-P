@@ -444,11 +444,10 @@ trigger1 = AnimElemTime(7) = -1
 time = 72
 add = -256,-256,-256
 
-[State 3020, AssertSpecial: NoBarDisplay]
+[State 3020, AssertSpecial: NoFG]
 type = AssertSpecial
 trigger1 = AnimElemTime(7) >= 0 && AnimTime
-flag = NoBarDisplay
-flag2 = NoFG
+flag = NoFG
 
 [State 3020, TargetState: invisible]
 type = TargetState

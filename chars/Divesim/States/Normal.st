@@ -2728,7 +2728,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 629, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;DRILL ZUTSUKI BACK
@@ -2817,7 +2817,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 6291, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;JUMPING FAR LIGHT KICK
@@ -3069,7 +3069,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 639, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;DRILL KICK LIGHT BACK
@@ -3158,7 +3158,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 6391, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;JUMPING FAR MEDIUM KICK
@@ -3410,7 +3410,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 649, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;DRILL KICK MEDIUM BACK
@@ -3499,7 +3499,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 6491, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;JUMPING FAR HEAVY KICK
@@ -3751,7 +3751,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 659, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;DRILL KICK HEAVY BACK
@@ -3840,7 +3840,7 @@ palFX.sinAdd= -255, -255, -255, 48
 
 [State 6591, End]
 type = ChangeState
-trigger1 = Pos Y + Vel Y > 0
+trigger1 = Pos Y + Vel Y > 10
 value = 52
 
 ;THROW ATTEMPT
