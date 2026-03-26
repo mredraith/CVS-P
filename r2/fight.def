@@ -1359,7 +1359,7 @@ start.waittime = 30 ;Time to wait before starting intro
 ; Default position for all components
 pos = 0,0
 
-; ROUND X
+; Ready...
 round.time = 10 ;Time to show round display
 ; Default component to show for each round. Text can include a %i to
 ; the round number. Use "round.default.anim" for animation instead of
@@ -1369,7 +1369,7 @@ round.time = 10 ;Time to show round display
 ;round.default.scale = 2,2
 round.default.anim = 80
 round.default.layerno = -1
-round.default.displaytime = 58;90
+round.default.displaytime = 54;90
 round.default.offset = 640, 360
 ;round.default.scale = 1,1
 ; Sounds to play for each round (optional, specify up to round 9)
@@ -1414,7 +1414,7 @@ round.sndtime = 0 ;Time to play the sounds
 ;round9.offset = 640,320
 ;round9.scale = 2,2
 
-; FIGHT
+; Fight!
 fight.time = 0 ;Time to show FIGHT component
 ;fight.displaytime = 50
 fight.offset = 640,360 ;Component for FIGHT display
@@ -1542,9 +1542,9 @@ shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 81,41, 0,0, 1
 81,42, 0,0, 1
 81,43, 0,0, 13
-81,44, 0,0, 5
-81,43, 0,0, 5
-81,44, 0,0, 5
+81,44, 0,0, 2
+81,45, 0,0, 2
+81,46, 0,0, 2
 
 ;"K.O." Animation
 [Begin Action 200]
