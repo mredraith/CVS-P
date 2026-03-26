@@ -2403,12 +2403,11 @@ type = AssertSpecial
 trigger1 = Time < 12
 flag = NoShadow
 ignoreHitPause = 1
-[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
+[State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 12
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 
 [State 3000, SuperPause FX]
 type=Helper

@@ -2394,7 +2394,7 @@ trigger1=1
 flag=NoShadow
 ignoreHitPause=1
 
-[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
+[State 8520, Assert: NoBG, NoFG]
 type=null;AssertSpecial
 trigger1=Time < 40
 flag=NoBarDisplay

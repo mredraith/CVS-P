@@ -1067,11 +1067,10 @@ type = assertspecial
 trigger1 = 1
 flag = noshadow
 flag2 = invisible
-[State 7500, No bars]
+[State 7500, Nofg]
 type = assertspecial
 trigger1 = root, var(10) = 7
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 
 [State 7500, Safety]
 type = removeexplod
@@ -1478,12 +1477,11 @@ alpha = ceil(256 -12.8 * time), 256
 type = removeexplod
 trigger1 = time > 20 && numexplod
 trigger2 = roundstate < 3
-[State 7600, nobars]
+[State 7600, nofg]
 type = assertspecial
 trigger1 = time <= 20
-flag = nobardisplay
-flag2 = noFG
-flag3 = globalnoshadow
+flag = noFG
+flag2 = globalnoshadow
 
 [State 7600, End]
 type = destroyself

@@ -3950,7 +3950,7 @@ physics=N
 velset=0,0
 anim=9741
 
-[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
+[State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 50
 flag = NoBarDisplay
@@ -5944,7 +5944,7 @@ trigger1 = 1
 flag = NoShadow
 ignoreHitPause = 1
 
-[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
+[State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 40
 flag = NoBarDisplay

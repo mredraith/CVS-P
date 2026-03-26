@@ -43828,7 +43828,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = intro
 flag2 = noFG
-flag3 = nobardisplay
 
 [State 889775, blackness Background]
 type = explod
@@ -44082,7 +44081,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = intro
 flag2 = noFG
-flag3 = nobardisplay
 
 [State 889776, blackness background]
 type = explod
@@ -44346,7 +44344,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = intro
 flag2 = noFG
-flag3 = nobardisplay
 
 [State 889777, Walk enter]
 type = Explod

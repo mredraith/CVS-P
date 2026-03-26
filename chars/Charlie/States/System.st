@@ -2234,7 +2234,6 @@ ctrl = 0
 type = assertspecial
 trigger1 = 1
 flag = intro
-flag2 = nobardisplay
 
 [State 6913, bound]
 type = screenbound

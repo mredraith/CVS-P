@@ -2728,8 +2728,7 @@ Sprpriority=9999
 [State 3552, Assert]
 type = AssertSpecial
 trigger1=1
-flag=nobardisplay
-Flag2=NoFG 
+Flag=NoFG 
 ignorehitpause = 1
 
 [State 3552, Assert]
