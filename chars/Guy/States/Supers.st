@@ -772,11 +772,6 @@ sinadd = 0, 0, 0, 1
 color = 256
 time = 1
 
-[State 4001, Assert]
-type = assertspecial
-trigger1 = animelemtime(11) < 0
-flag = nobardisplay
-
 [State 4001, fix]
 type = posset
 triggerall = animelem = 2

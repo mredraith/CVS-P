@@ -911,9 +911,8 @@ value=0,0,0
 [State 4001, Assert]
 type=assertspecial
 trigger1= animelemtime(2)>=0 && animelemtime(14)<0
-flag=nobardisplay
-flag2=noFG
-flag3=NOBG
+flag=noFG
+flag2=NOBG
 
 [State 4001, spr]
 type=sprpriority

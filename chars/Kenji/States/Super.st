@@ -1988,8 +1988,7 @@ value = 0, 0, 0
 [State 4001, Assert]
 type = assertspecial
 trigger1 = animelemtime(2) >= 0 && animelemtime(35) < 0
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 [State 4001, spr]
 type = sprpriority
 trigger1 = animelemtime(35) >= 0

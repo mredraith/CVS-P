@@ -1758,7 +1758,6 @@ anim = 10090
 type = AssertSpecial
 trigger1 = 1
 flag = Intro
-flag2 = nobardisplay
 
 [State 0, PosSet]
 type = PosAdd

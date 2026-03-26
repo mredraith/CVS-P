@@ -43828,7 +43828,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = intro
 flag2 = noFG
-flag3 = nobardisplay
 
 [State 889775, blackness Background]
 type = explod

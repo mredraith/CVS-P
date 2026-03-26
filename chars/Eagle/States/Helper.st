@@ -2420,9 +2420,8 @@ flag = noshadow
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 40
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 8520, Rotate]
 type = angleset
@@ -2714,10 +2713,6 @@ alpha= 256 - (16*time), 256
 type=assertspecial
 trigger1= time<16
 flag=noFG
-[State 8600, Assert]
-type=assertspecial
-trigger1= time<24
-flag=nobardisplay
 
 [State 8600, End]
 type=removeexplod

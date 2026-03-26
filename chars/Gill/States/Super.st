@@ -2021,7 +2021,6 @@ trigger1 = AnimElemTime(15) >= 0
 trigger1 = AnimElemTime(39) < 0
 flag = NoFG
 flag2 = NoBG
-flag3 = NoBarDisplay
 
 [State 3300, Seraphic Wing BackGround Explod]
 type = Explod

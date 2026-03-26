@@ -784,7 +784,6 @@ velset = 0,0
 type = AssertSpecial
 trigger1 = 1
 flag = Intro
-flag2 = nobardisplay
 
 [State 194, Camera]
 type = Helper

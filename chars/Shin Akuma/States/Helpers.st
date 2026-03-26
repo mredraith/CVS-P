@@ -3985,9 +3985,8 @@ anim=9741
 [State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 50
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = noBG
+flag2 = noFG
 
 [State 8520, Portrait (Ken)]
 type = Explod
@@ -5660,9 +5659,8 @@ ignoreHitPause = 1
 [State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 40
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 
 [State 8520, Rotate]
 type = AngleSet

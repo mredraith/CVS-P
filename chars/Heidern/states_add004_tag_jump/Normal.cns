@@ -3821,8 +3821,7 @@ sprpriority = -10
 type = AssertSpecial
 trigger1 = 1
 flag = NoMusic
-flag2 = nobardisplay
-flag3 = nofg
+flag2 = nofg
 ignorehitpause=1
 
 [State 0, Pause]
@@ -3854,8 +3853,7 @@ sprpriority = -10
 type = AssertSpecial
 trigger1 = 1
 flag = NoMusic
-flag2 = nobardisplay
-flag3 = nofg
+flag2 = nofg
 ignorehitpause=1
 
 [State 0, PlaySnd]
@@ -3978,8 +3976,7 @@ alpha= 256 - (16*time), 256
 type = AssertSpecial
 trigger1 = 1
 flag = NoMusic
-flag2 = nobardisplay
-flag3 = nofg
+flag2 = nofg
 ignorehitpause=1
 
 [State 8600, End]

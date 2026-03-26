@@ -5489,9 +5489,9 @@ time=1
 add=-5*AnimElemTime(36),-5*AnimElemTime(40),-5*AnimElemTime(40)
 
 [state 3710, EnvColor]
-type=assertspecial;envcolor
+type=envcolor
 trigger1=AnimElemTime(36)=[51,151]
-flag = nobardisplay;value=0,0,0
+value=0,0,0
 
 [state 3710, 5]
 type=allpalfx

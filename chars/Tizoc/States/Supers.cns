@@ -7130,9 +7130,8 @@ ignorehitpause = 1
 [State 3600, AssertSpecial]
 type = AssertSpecial
 trigger1 = 1
-flag = NoBarDisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 ignorehitpause = 1
 persistent = 1
 

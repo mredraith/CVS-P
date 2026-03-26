@@ -762,8 +762,7 @@ trigger2 = roundstate < 3
 [State 8650, nobars]
 type = assertspecial
 trigger1 = time <= 20
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 [State 8650, End]
 type = destroyself
 trigger1 = roundstate < 3

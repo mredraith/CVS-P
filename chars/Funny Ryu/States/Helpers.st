@@ -3882,11 +3882,10 @@ type = assertspecial
 trigger1 = 1
 flag = noshadow
 flag2 = invisible
-[State 7500, No bars]
+[State 7500, No FG]
 type = assertspecial
 trigger1 = root, var(10) = 7
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 
 [State 7500, Safety]
 type = removeexplod
@@ -3953,9 +3952,8 @@ anim=9741
 [State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 50
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 
 [State 8520, Portrait (Ken)]
 type = Explod
@@ -4307,19 +4305,13 @@ alpha = 256 - (16 * Time), 256
 ;[State 7600, nobars]
 ;type = assertspecial
 ;trigger1 = time < 24
-;flag = nobardisplay
-;flag2 = noFG
-;flag3 = globalnoshadow
+;flag = noFG
+;flag2 = globalnoshadow
 
 [State 8600, Assert: NoFG]
 type = AssertSpecial
 trigger1 = Time < 16
 flag = NoFG
-
-[State 8600, Assert: NoBarDisplay]
-type = AssertSpecial
-trigger1 = Time < 24
-flag = NoBarDisplay
 
 [State 8600, RemoveExplod]
 type = RemoveExplod
@@ -4449,7 +4441,6 @@ alpha = 256 - (32 * Time), 32 * Time
 type = assertspecial
 trigger1 = 1
 flag = invisible
-flag2 = nobardisplay
 ignorehitpause = 1
 
 [State 7610, Assert]
@@ -5947,9 +5938,8 @@ ignoreHitPause = 1
 [State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 40
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 
 [State 8520, Rotate]
 type = AngleSet

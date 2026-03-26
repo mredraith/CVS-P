@@ -8600,7 +8600,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -8710,7 +8709,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -8828,7 +8826,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -8946,7 +8943,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9065,7 +9061,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9168,7 +9163,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9287,7 +9281,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9390,7 +9383,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9516,7 +9508,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9634,7 +9625,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9741,7 +9731,6 @@ type = AssertSpecial
 trigger1 = 1
 flag = noshadow
 flag2 = globalnoshadow
-;flag3 = nobardisplay
 ;ignorehitpause =
 ;persistent =
 
@@ -9876,7 +9865,6 @@ flag = noshadow
 ;ignorehitpause =
 ;persistent =
 ;-----------------------
-;flag = nobardisplay
 ;flag = noBG
 ;flag = noFG
 ;flag = nostandguard

@@ -2626,7 +2626,6 @@ movecamera = 1,0
 type = assertspecial
 trigger1 = 1
 flag = intro
-flag2 = nobardisplay
 
 [State 6910, chopper]
 type = helper
@@ -2681,7 +2680,6 @@ sprpriority = -1
 type = assertspecial
 trigger1 = 1
 flag = intro
-flag2 = nobardisplay
 [State 6911, bound]
 type = screenbound
 trigger1 = 1

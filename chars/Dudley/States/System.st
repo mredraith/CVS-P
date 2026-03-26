@@ -515,12 +515,6 @@ type = S
 physics = S
 sprpriority = 0
 
-[State 191, intro]
-type = assertspecial
-triggerall = (roundstate = 1) && roundno = 1
-trigger1 = ifelse(teammode=simul,(enemy(1), stateno != 0) && (enemy(2), stateno != 0),enemy, stateno!=0)
-flag = nobardisplay
-
 [State 0, Anim]
 type = ChangeAnim
 trigger1 = (Anim != [0,5]) || ((Anim = [0,5]) && AnimTime = 0)
@@ -2234,8 +2228,7 @@ y = 0
 [State 191, 2] ;Assert this until you want "round 1, fight" to begin
 type = AssertSpecial
 trigger1 = 1
-flag = Intro
-flag2 = nobardisplay
+flag = Intro 
 
 [State 191, Cloth]
 type = Explod

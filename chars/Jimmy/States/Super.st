@@ -1722,9 +1722,8 @@ ctrl=0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 150
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 
 [State 4001]
@@ -1749,9 +1748,8 @@ movecamera = 320,0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 150
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4002]
 type=Playerpush
@@ -1934,9 +1932,8 @@ ctrl=0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4003]
 type=turn
@@ -2019,9 +2016,8 @@ velset=0,0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 3500, Super Pause FX]
 type = Helper
@@ -2292,9 +2288,8 @@ ignorehitpause=1
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 150
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4005]
 type=Playerpush
@@ -2558,9 +2553,8 @@ ctrl=0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 150
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4050]
 type=nothitby
@@ -2589,9 +2583,8 @@ ctrl=0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 150
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4050]
 type=nothitby
@@ -3546,9 +3539,8 @@ ctrl=0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 150
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4001]
 type=ChangeState
@@ -3566,9 +3558,8 @@ ctrl=0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4002]
 type=Playerpush
@@ -3756,9 +3747,8 @@ ctrl=0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4003]
 type=turn
@@ -3849,9 +3839,8 @@ velset=0,0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 3500, Super Pause FX]
 type = Helper
@@ -4108,9 +4097,8 @@ velset=0,0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 4005]
 type=Playerpush
@@ -4302,9 +4290,8 @@ velset=0,0
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 2110, Helper]
 type=Helper
@@ -4623,9 +4610,8 @@ anim = 4507
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 999
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 
 [State 1100]

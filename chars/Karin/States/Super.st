@@ -4113,11 +4113,10 @@ trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(17) < 0
 Time = 4
 value = 0, 0, 0
 
-[State 4501, No Bars]
+[State 4501, No FG]
 type = AssertSpecial
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(17) < 0
-flag = NoBarDisplay
-flag2 = noFG
+flag = noFG
 
 [State 4501, Sprite Priority]
 type = SprPriority

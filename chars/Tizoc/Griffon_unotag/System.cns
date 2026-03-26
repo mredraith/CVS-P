@@ -3191,36 +3191,32 @@ IgnoreHitPause = 1
 [State -2, assert]
 type = assertspecial
 trigger1=(stateno=[3030,3034])&&Movetype!=H
-flag = NoBarDisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 ignorehitpause = 1
 persistent = 1
 
 [State -2, assert]
 type = assertspecial
 trigger1=(stateno=[3050,3057])&&Movetype!=H
-flag = NoBarDisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 ignorehitpause = 1
 persistent = 1
 
 [State -2, assert]
 type = assertspecial
 trigger1= stateno=3509 && Movetype!=H
-flag = NoBarDisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 ignorehitpause = 1
 persistent = 1
 
 [State -2, assert]
 type = assertspecial
 trigger1=(stateno=[2210,2218])&&Movetype!=H
-flag = NoBarDisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 ignorehitpause = 1
 persistent = 1
 

@@ -5850,7 +5850,7 @@ trigger2 = Time < (var(1) - 10)
 flag = NoBG
 flag2 = NoFG
 
-[State 8520, Assert: NoBarDisplay]
+[State 8520, Assert]
 type = AssertSpecial
 triggerall = root,var(58)=0
 trigger1 = !var(2)
@@ -6364,10 +6364,7 @@ type = AssertSpecial
 trigger1 = Time < 16
 flag = NoFG
 
-[State 8605, Assert: NoBarDisplay]
-type = AssertSpecial
-trigger1 = Time < 24
-flag = NoBarDisplay
+
 
 [State 8605, Assert: NoMusic]
 type = AssertSpecial

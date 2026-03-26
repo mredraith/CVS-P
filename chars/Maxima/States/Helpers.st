@@ -2200,9 +2200,8 @@ ignoreHitPause = 1
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 40
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 8520, Rotate]
 type = angleset
@@ -2526,8 +2525,7 @@ sprpriority = -10
 type = AssertSpecial
 trigger1 = 1
 flag = NoMusic
-flag2 = nobardisplay
-flag3 = nofg
+flag2 = nofg
 ignorehitpause=1
 
 [State 8600, PlaySnd]
@@ -2720,10 +2718,7 @@ type = AssertSpecial
 trigger1 = Time < 16
 flag = NoFG
 
-[State 8600, Assert: NoBarDisplay]
-type = AssertSpecial
-trigger1 = Time < 24
-flag = NoBarDisplay
+
 
 [State 8600, RemoveExplod]
 type = RemoveExplod

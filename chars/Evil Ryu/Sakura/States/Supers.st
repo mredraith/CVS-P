@@ -969,8 +969,7 @@ time = 0
 [State 4001, Assert]
 type = assertspecial
 trigger1 = animelemtime(8) >= 0 && animelemtime(23) < 0
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 
 [State 4001, spr]
 type = sprpriority

@@ -1651,10 +1651,7 @@ type = AssertSpecial
 trigger1 = Time < 16
 flag = NoFG
 
-[State 8600, Assert: NoBarDisplay]
-type = AssertSpecial
-trigger1 = Time < 24
-flag = NoBarDisplay
+
 
 [State 8600, RemoveExplod]
 type = RemoveExplod
@@ -1727,8 +1724,7 @@ var(5) = 1
 type = AssertSpecial
 trigger1 = 1
 flag = nobg
-flag2 = nobardisplay
-flag3 = nofg
+flag2 = nofg
 
 [State 4005, assert]
 type=assertspecial
@@ -2394,7 +2390,6 @@ supermovetime = 300
 type=assertspecial
 trigger1=1
 flag=invisible
-flag2=nobardisplay
 ignorehitpause=1
 
 [State 7610, assert]
@@ -4631,9 +4626,8 @@ flag = noshadow
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 40
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 8520, Rotate]
 type = angleset
@@ -4817,7 +4811,6 @@ anim=9741
 type=assertspecial
 trigger1= 1
 flag=invisible
-flag2=nobardisplay
 ignorehitpause=1
 
 [State 7510, portrait]

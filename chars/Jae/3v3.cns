@@ -596,7 +596,6 @@ ignorehitpause = 1
 type=assertspecial
 trigger1=1
 flag=intro
-flag2 = nobardisplay
 
 [State 191, 1]
 type = PlaySnd

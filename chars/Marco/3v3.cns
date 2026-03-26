@@ -3470,9 +3470,8 @@ IgnoreHitPause = 1
 [State 3500, assert]
 type = assertspecial
 trigger1=(stateno=[3501,3504])&&Movetype!=H
-flag = NoBarDisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 ignorehitpause = 1
 persistent = 1
 

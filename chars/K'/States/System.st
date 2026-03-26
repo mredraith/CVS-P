@@ -2243,7 +2243,6 @@ ignorehitpause = 1
 type=assertspecial
 trigger1=1
 flag=intro
-flag2 = nobardisplay
 
 [State 190, Assert: Intro]
 type = AssertSpecial
@@ -2277,7 +2276,6 @@ flag = Intro
 type=assertspecial
 trigger1=1
 flag=intro
-flag2 = nobardisplay
 
 
 [State 190, Voice]

@@ -3509,9 +3509,8 @@ ignoreHitPause = 1
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 40
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 8520, Rotate]
 type = angleset
@@ -3948,8 +3947,7 @@ trigger2 = roundstate < 3
 [State 8650, nobars]
 type = assertspecial
 trigger1 = time <= 20
-flag = nobardisplay
-flag2 = noFG
+flag = noFG
 [State 8650, End]
 type = destroyself
 trigger1 = roundstate < 3

@@ -2196,7 +2196,7 @@ ignoreHitPause = 1
 type = assertspecial
 trigger1 = time < 40
 flag = noBG
-flag2 = noFG
+flag2= noFG
 
 [State 8520, Rotate]
 type = angleset

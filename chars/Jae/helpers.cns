@@ -2419,10 +2419,7 @@ type = assertspecial
 trigger1 = time < 16
 flag = noFG
 
-[State 8600, Assert]
-type = assertspecial
-trigger1 = time < 24
-flag = nobardisplay
+
 
 [State 8600, End]
 type = removeexplod

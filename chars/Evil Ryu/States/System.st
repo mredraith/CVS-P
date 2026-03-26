@@ -2708,10 +2708,6 @@ type = envcolor
 trigger1 = animelemtime(2) >= 30 && animelemtime(3) < 0
 time = 2
 value = 0, 0, 0
-[State 368, Assert]
-type = assertspecial
-trigger1 = animelemtime(2) >= 30 && animelemtime(3) < 0
-flag = nobardisplay
 
 [State 368, HitSound]
 type = playsnd

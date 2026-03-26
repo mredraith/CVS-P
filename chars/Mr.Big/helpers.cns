@@ -1646,9 +1646,8 @@ ignoreHitPause = 1
 [State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 40
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 
 [State 8520, Rotate]
 type = AngleSet
@@ -2013,10 +2012,7 @@ type = assertspecial
 trigger1 = time < 16
 flag = noFG
 
-[State 8600, Assert]
-type = assertspecial
-trigger1 = time < 24
-flag = nobardisplay
+
 
 [State 8600, End]
 type = removeexplod
@@ -2052,8 +2048,7 @@ Sprpriority=-9999
 [State 9550, Assert]
 type = AssertSpecial
 trigger1=1
-flag=nobardisplay
-Flag2=NoFG 
+Flag=NoFG
 ignorehitpause = 1
 
 [State 3055, bgpal]
@@ -2106,8 +2101,7 @@ Sprpriority=-9999
 [State 9552, Assert]
 type = AssertSpecial
 trigger1=1
-flag=nobardisplay
-Flag2=NoFG 
+Flag=NoFG 
 ignorehitpause = 1
 
 [State 9552, Assert]
@@ -2150,8 +2144,7 @@ Sprpriority=-9999
 [State 9550, Assert]
 type = AssertSpecial
 trigger1=1
-flag=nobardisplay
-Flag2=NoFG 
+Flag=NoFG 
 ignorehitpause = 1
 
 [State 3055, bgpal]

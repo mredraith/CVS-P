@@ -5405,9 +5405,8 @@ ignoreHitPause = 1
 [State 8520, Assert: NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 40
-flag = NoBarDisplay
-flag2 = NoBG
-flag3 = NoFG
+flag = NoBG
+flag2 = NoFG
 
 [State 8520, Rotate]
 type = AngleSet
@@ -5746,10 +5745,7 @@ type = AssertSpecial
 trigger1 = Time < 16
 flag = NoFG
 
-[State 8600, Assert: NoBarDisplay]
-type = AssertSpecial
-trigger1 = Time < 24
-flag = NoBarDisplay
+
 
 [State 8600, RemoveExplod]
 type = RemoveExplod

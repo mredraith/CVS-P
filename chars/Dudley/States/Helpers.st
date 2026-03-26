@@ -16,7 +16,6 @@ sprpriority=99999
 type = AssertSpecial
 trigger1 = 1
 flag = Intro
-flag2 = nobardisplay
 
 [State 0, Vs. Gill]
 type = VarSet
@@ -67,7 +66,6 @@ type=assertspecial
 trigger1=1
 flag=intro
 flag2=noshadow
-flag3 = nobardisplay
 
 [State 7610, BLACK LINES]
 type = explod
@@ -1713,9 +1711,8 @@ flag = noshadow
 [State 8520, Assert]
 type = assertspecial
 trigger1 = time < 40
-flag = nobardisplay
-flag2 = noBG
-flag3 = noFG
+flag = noBG
+flag2 = noFG
 
 [State 8520, Rotate]
 type = angleset
@@ -2083,10 +2080,6 @@ alpha = 256 - (16 * time), 256
 type = assertspecial
 trigger1 = time < 16
 flag = noFG
-[State 8600, Assert]
-type = assertspecial
-trigger1 = time < 24
-flag = nobardisplay
 
 [State 8600, End]
 type = removeexplod
