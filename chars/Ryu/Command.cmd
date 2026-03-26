@@ -146,27 +146,15 @@ time = 32
 
 [Command]
 name = "qcfhcbp"
-command = ~D, F, D, B, x
+command = ~D, F, D, B, x+a
 time = 40
 [Command]
 name = "qcfhcbp"
-command = ~D, F, D, B, y
+command = ~D, F, D, B, y+b
 time = 40
 [Command]
 name = "qcfhcbp"
-command = ~D, F, D, B, z
-time = 40
-[Command]
-name = "qcfhcbp"
-command = ~D, F, D, B, ~x
-time = 40
-[Command]
-name = "qcfhcbp"
-command = ~D, F, D, B, ~y
-time = 40
-[Command]
-name = "qcfhcbp"
-command = ~D, F, D, B, ~z
+command = ~D, F, D, B, z+c
 time = 40
 
 [Command]
