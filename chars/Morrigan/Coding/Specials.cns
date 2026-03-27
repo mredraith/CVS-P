@@ -1,4 +1,4 @@
-;SOUL FIST(NORMAL)=
+;=====================<SOUL FIST(NORMAL)>==========================
 [StateDef 1000]
 type = S
 physics = S
@@ -13,7 +13,7 @@ faceP2 = 1
 [State 1000, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((helper(10371), var(0)) || (helper(10371), var(7)), 0, ifElse((helper(10371), var(1)) || (helper(10371), var(8)), 1, 2))
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
 [State 1000, ChangeAnim]
 type = ChangeAnim
@@ -65,7 +65,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;SOUL FIST(ARRANGED)=
+;=====================<SOUL FIST(ARRANGED)>==========================
 [StateDef 1001]
 type = S
 physics = S
@@ -80,7 +80,7 @@ faceP2 = 1
 [State 1001, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((helper(10371), var(0)) || (helper(10371), var(7)), 0, ifElse((helper(10371), var(1)) || (helper(10371), var(8)), 1, 2))
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
 [State 1001, ChangeAnim]
 type = ChangeAnim
@@ -151,7 +151,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX SOUL FIST=
+;=====================<EX SOUL FIST>==========================
 [StateDef 1030]
 type = S
 physics = S
@@ -167,7 +167,7 @@ faceP2 = 1
 type = VarAdd
 trigger1 = !Time
 trigger1 = var(20) > 0
-var(20) = -335
+var(20) = -500
 
 [State 1030, EX Sound]
 type = PlaySnd
@@ -236,7 +236,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;AIR SOUL FIST(NORMAL)=
+;=====================<AIR SOUL FIST(NORMAL)>==========================
 [StateDef 1100]
 type = A
 physics = N
@@ -251,7 +251,7 @@ faceP2 = PrevStateNo=100 && p2dist x<0
 [State 1100, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((helper(10371), var(0)) || (helper(10371), var(7)), 0, ifElse((helper(10371), var(1)) || (helper(10371), var(8)), 1, 2))
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
 [State 1100, Voice]
 type = PlaySnd
@@ -309,7 +309,7 @@ trigger1 = AnimElemTime(6) > 0;StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1135
 
-;AIR SOUL FIST(ARRANGED)=
+;=====================<AIR SOUL FIST(ARRANGED)>==========================
 [StateDef 1101]
 type = A
 physics = N
@@ -324,7 +324,7 @@ faceP2 = PrevStateNo=100 && p2dist x<0
 [State 1101, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((helper(10371), var(0)) || (helper(10371), var(7)), 0, ifElse((helper(10371), var(1)) || (helper(10371), var(8)), 1, 2))
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
 [State 1101, ChangeAnim]
 type = ChangeAnim
@@ -406,7 +406,7 @@ trigger1 = AnimElemTime(6) > 0;StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1135
 
-;EX AIR SOUL FIST=
+;=====================<EX AIR SOUL FIST>==========================
 [StateDef 1130]
 type = A
 physics = N
@@ -422,7 +422,7 @@ faceP2 = PrevStateNo=100 && p2dist x<0
 type = VarAdd
 trigger1 = !Time
 trigger1 = var(20) > 0
-var(20) = -335
+var(20) = -500
 
 [State 1130, EX Sound]
 type = PlaySnd
@@ -538,7 +538,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;SHADOW BLADE=
+;========================<SHADOW BLADE>=======================
 [Statedef 1200]
 type = S
 movetype = A
@@ -553,7 +553,7 @@ facep2 = 1
 [State 1200, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((helper(10371), var(0)) || (helper(10371), var(7)), 0, ifElse((helper(10371), var(1)) || (helper(10371), var(8)), 1, 2))
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
 [State 1200, ChangeAnim]
 type = ChangeAnim
@@ -637,7 +637,7 @@ y = .5
 [State 1200, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 2 
+trigger1 = AnimElem = 2   
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 119, ifElse(var(10), 112, 105)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 119, ifElse(var(10), 112, 105)))), 7
 priority = 4, hit
@@ -658,7 +658,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -9.5
 air.velocity = -2,-9.5
@@ -683,7 +683,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 3 
+trigger1 = AnimElem = 3   
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 119, ifElse(var(10), 112, 105)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 119, ifElse(var(10), 112, 105)))), 7
 priority = 4, hit
@@ -704,7 +704,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -9.5
 air.velocity = -2,-9.5
@@ -750,7 +750,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -9.5
 air.velocity = -2,-9.5
@@ -866,7 +866,7 @@ y = .5
 [State 1201, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 = AnimElem = 2 
+trigger1 = AnimElem = 2   
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 105 < 7, 7, fvar(11) * 105)), 7
 priority = 6, hit
@@ -887,7 +887,7 @@ fall.animtype = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -8
 air.velocity = -6,-8
@@ -912,7 +912,7 @@ envShake.freq = 120
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = !MoveContact && !MoveReversed
-trigger1 = AnimElem = 3 
+trigger1 = AnimElem = 3   
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 105 < 7, 7, fvar(11) * 105)), 7
 priority = 6, hit
@@ -933,7 +933,7 @@ fall.animtype = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -8
 air.velocity = -6,-8
@@ -979,7 +979,7 @@ fall.animtype = Diagup
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -7.5
 air.velocity = -6,-7.5
@@ -1047,7 +1047,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;EX SHADOW BLADE=
+;=====================<EX SHADOW BLADE>========================
 [Statedef 1230]
 type = S
 movetype = A
@@ -1063,7 +1063,7 @@ facep2 = 1
 type = VarAdd
 trigger1 = !Time
 trigger1 = var(20) > 0
-var(20) = -335
+var(20) = -500
 
 [State 1230, EX Sound]
 type = PlaySnd
@@ -1157,7 +1157,7 @@ y = .5
 [State 1230, Hit]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 = AnimElem = 2 
+trigger1 = AnimElem = 2   
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 7
 priority = 4, hit
@@ -1178,7 +1178,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -10.5
 air.velocity = -2,-10.5
@@ -1202,7 +1202,7 @@ envShake.freq = 120
 [State 1230, Hit 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 = AnimElem = 3 
+trigger1 = AnimElem = 3   
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 7
 priority = 4, hit
@@ -1223,7 +1223,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -10.5
 air.velocity = -2,-10.5
@@ -1268,7 +1268,7 @@ fall.animtype = Up
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
+ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -10.5
 air.velocity = -2,-10.5
@@ -1300,12 +1300,12 @@ trigger1 = StateType = A
 trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 1205
 
-;VECTOR DRAIN=
+;==================<VECTOR DRAIN>==================
 [Statedef 1300]
-type = S
+type    = S
 movetype= A
 physics = S
-juggle = 0
+juggle  = 0
 velset = 0,0
 ctrl = 0
 poweradd = 70 * !var(20)
@@ -1315,7 +1315,7 @@ facep2 = 1
 [State 1300, Button Detect]
 type = VarSet
 trigger1 = !Time
-var(10) = ifElse((helper(10371), var(0)) || (helper(10371), var(7)), 0, ifElse((helper(10371), var(1)) || (helper(10371), var(8)), 1, 2))
+var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" || command = "rlsy"), 1, 2))
 
 [State 1300, AttackDist]
 type = AttackDist
@@ -1791,12 +1791,12 @@ type = SelfState
 trigger1 = AnimElemTime(2)>=0 && vel y>0 && pos y>=-10
 value = 5100
 
-;EX VECTOR DRAIN=
+;==================<EX VECTOR DRAIN>==================
 [Statedef 1330]
-type = S
+type    = S
 movetype= A
 physics = S
-juggle = 0
+juggle  = 0
 velset = 0,0
 ctrl = 0
 poweradd = ifelse(var(20) > 0, 0, -500)
@@ -1807,7 +1807,7 @@ facep2 = 1
 type = VarAdd
 trigger1 = !Time
 trigger1 = var(20) > 0
-var(20) = -335
+var(20) = -500
 
 [State 1330, EX Sound]
 type = PlaySnd

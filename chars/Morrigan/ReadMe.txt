@@ -1,9 +1,9 @@
              
-======================| Morrigan Aensland by Li Kun & DivineWolf|=========================== [10/XX/2018]            
+======================| Morrigan Aensland by Li Kun & DivineWolf|=========================== [7/9/2014]            
 
  - Email: kaiba_klone@yahoo.com
  - www.trinitymugen.net
- - Customized version of Capcom's Morrigan Aensland character, for Linux/Win/1.0 Mugen
+ - Customized version of Capcom's Morrigan Aensland character, for Linux and Windows Mugen
 
 ------------------<Features>---------------------
 
@@ -13,10 +13,7 @@
  - Various palettes to choose from
  - 2 Midnight Bliss and Burned special animations
  - Alternate TvC sound file located in the "Extra" folder
- - Special intro vs PotS' Nakoruru and KojiroBadness' Demitri
- - Color Separation(special thanks to Duke of Corvus for the assist!)
- - Vans' "Tiny Buffering" System
- - Vans' Chizuru "Skill Lock" compatibility
+ - Special intro vs PotS' Nakoruru
  
 ---------------<Mode Overview>------------------
 
@@ -113,42 +110,30 @@ in a world of hurt fast.
  Darkness Illusion			LP, LP, F, LK, HP(in air OK!)			
 
  
-<SYSTEM BUILD>
+<SYSTEM ABILITIES>
 
- -GROOVE GAUGE-
-
-(*)N + C + S Groove
-  *Allows: MAX Mode			HP + HK (Requires 1 power bar)
-           Max Cancelling
-           Special Cancelling
-           Super Cancelling
-           EX Specials
-	   Power Charge			Hold MK + MP
-
- -SYSTEM MECHANICS-
-
- Parry = O 				Tap F(or D), timed with incoming High/Air/Low attacks respectively.
- Just Defense = X
- Chain Combo = O			6-Chain(Light->Med->Heavy)
- Air Chain Combo = X
- Super Combo Cancel = O
- Cancel Any Move = X
-
- -SUB SYSTEM MECHANICS-
-
- Dash = X
- Run = O 				Tap F, F, then hold F
- Dodge = O 				LP + LK (While stationary, vulnerable to grabs)
- Dodge Attack = O 			Any punch or kick during Dodge
- Rolling = O 				F(or B) + LP + LK (Vulnerable to grabs)
- Small Jump = O 			Tap U
- Long Small Jump = O 	  		Tap D then U quickly
- Long Jump = O	        		D, then U
- Alpha Counter(Attack) = O		B, DB, D + any punch or kick while guarding an attack. (Requires 1 power bar)
- Safe Fall = O		    		Any 2 punches or LP + LK (While falling and allowed)
- Counter Movement = O			Tap F(or B) + LP + LK while guarding an attack. (Requires 1 power bar)
- Tactical Recovery = X
- Air Guard = O
+ Run = OK! 				Tap F, F, then hold F
+ Dodge = OK! 				LP + LK (While stationary, vulnerable to grabs)
+ Dodge Attack = OK! 			Any punch or kick during Dodge
+ Roll Forward = OK! 			F + LP + LK (Vulnerable to grabs)
+ Roll Back = OK! 			B + LP + LK (Vulnerable to grabs)
+ Small Jump = OK! 			Tap U
+ Long Small Jump = OK!  		Tap D then U quickly
+ Long Jump = OK!        		D, then U
+ Power Charge = OK!     		Hold MK + MP
+ Zero Counter = OK! 			B, DB, D + any punch or kick while guarding an attack. (Requires 1 power bar)
+ Parry = OK! 				Tap F, timed with incoming High/Air attacks.
+ Low Parry = OK! 			Tap D, timed with incoming Low attacks.
+ Air Parry = OK!			Tap F, timed with incoming High/Air attacks while airbourne
+ Fall Recovery = OK!    		Any 2 punches or LP + LK (While falling and allowed)
+ MAX Mode = OK!			        HP + HK (Requires 1 power bar)
+ EX Moves = OK!
+ Just Defense = No			
+ Low Just Defense = No		
+ Air Just Defense = No
+ Excel Combo = No
+ Dash = No
+ Counter Movement = No
 
 ----------------<Move Details>-------------------
 
@@ -180,15 +165,15 @@ MAX MODE:
  - All Lv2 and higher supers will cost 1 power bar, along with using up all time in MAX mode
  - Even without a power bar, as long as you have time left in MAX mode, you can perform Lv1 supers/EX moves
  - You can not Power Charge/gain power while in MAX mode
- - You can not perform a Alpha Counter/Counter Movement while in MAX Mode
+ - You can not perform a Zero Counter while in MAX Mode
  
 --------------------<Q&A>------------------------
 
  Q: Why Morrigan?
- A: She's a char I was always fond of. Though mainly because li_kun's sprites are amazing!
+ A: She's a char I was always fond of. Though mainly because Li Kun's sprites are amazing!
 
  Q: Can I use something from this char?
- A: Yup, use w/e you need.
+ A: Indeed you may sir or madam. Use w/e you like.
 
  Q: What can we expect from you next?
  A: One may never know...
@@ -201,20 +186,15 @@ MAX MODE:
  
  Q: Will you add blood FX to Morrigan?
  A: No.
- 
- Q: Blah, blah, blah Ikemen/1.1?!
- A: I DO NOT make stuff for either one of those. 
-    Do NOT tell me anything about them.
- 
+
 -------------<Special Thanks>---------------
 
- - li_kun
+ - Li Kun
  - Lost_Avenger
  - P.O.T.S
- - 2OS
+ - 20S
  - Zzyzzyxx
  - Jesuszilla/TrinityMUGEN
- - Vans
  - Jmorphman
  - hsiehtm
  - Fighter Factory
@@ -244,16 +224,13 @@ MAX MODE:
  - sabockee
  - Calhoun Tubbs87
  - PersonDude
- - KojiroBadness
- - Duke of Corvus
- - L.E.O.N
  
 --------------------<Shoutouts>----------------------
 
  - Xenomic
  - Antagonist
  - Nestor
- - Tamez(RIP)
+ - Tamez
  - smoke072
  - Sky79
  - Victorys
@@ -262,6 +239,7 @@ MAX MODE:
  - Cyanide
  - Jin
  - Ned
+ - KojiroBadness
  - Amanojaku
  - KoopaKoot
  - Vans
@@ -280,7 +258,7 @@ MAX MODE:
  - Kamekaze 
  - ArielAlexCo 
  - ScruffyDragon
- - Reu(RIP)
+ - Reu (RIP)
  - chrono_strife 
  - two4teezee 
  - Rednavi
@@ -292,7 +270,7 @@ MAX MODE:
  - DG 
  - Stig87 
  - LimitedMoon
- - Macho Man Randy Savage(RIP)
+ - Macho Man Randy Savage (RIP)
  - H"
  - Warusaki3
  - Juke Kisaragi
@@ -308,7 +286,11 @@ MAX MODE:
 -----------------<Possible Extras/Things To Do>---------------------
 
  - Fix any issues based on feedback
- - Maybe add custom intro against my Lilith
+ - Hopefully add Drex's CS'd sprites
+ - Add some more custom intros against some chars
+ - Sometimes when KO'ing p2 with Finishing Shower, the super name text doesn't display.
+   I haven't been able to figure it out, though I am aware of it. Seeing as how it's not game breaking-
+   or anything, I've decided to release her anyway, and hopefully fix the problem later.  
 
 -------------------<Disclaimer>----------------------
 
