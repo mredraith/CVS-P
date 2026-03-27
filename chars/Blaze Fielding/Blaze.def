@@ -1,0 +1,47 @@
+; Definition file for Blaze Fielding
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Blaze Fielding"
+displayname ="Blaze"
+versiondate =04,14,2002
+mugenversion =04,14,2002
+author ="Rythmical&Cap-Rock"
+pal.defaults = 1,2,3,4,5,6,10,11,12,7,8,9
+
+; Files for the player
+localCoord  = 428,240
+[Files]
+movelist = movelist.dat
+cmd     =Blaze.cmd
+cns     =Coding/System.cns
+st      =Coding/System.cns
+stcommon =common1.cns
+sprite  =Blaze.sff
+anim    =Blaze.air
+sound   =Blaze.snd
+st1=Coding/Normal.cns
+st2=Coding/Specials.cns
+st3=Coding/Helpers.cns
+st4=Coding/Supers.cns
+st5=Coding/tinybuffering.txt
+
+[Palette Keymap]
+a = 4 ;Press button X to select palette 1, etc.
+b = 5
+c = 6
+x = 1
+y = 2
+z = 3
+a2 = 10 ;Hold Start and press button X for palette 7, etc.
+b2 = 11
+c2 = 12
+x2 = 7
+y2 = 8
+z2 = 9
+
+; Arcade mode
+;[Arcade]
+;intro.storyboard =Extra/intro.def
+;ending.storyboard =Extra/ending.def

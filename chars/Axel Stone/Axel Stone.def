@@ -8,7 +8,7 @@ displayName = "Axel Stone"
 versionDate = 09,05,2010
 mugenVersion= 1.0
 author      = "Testament & Rtrindade"
-pal.defaults= 4,5,6,1,2,3,10,11,12,7,8,9
+pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
 localCoord  = 428,240
 
 [Files]
@@ -24,18 +24,6 @@ stCommon= common1.cns
 sprite  = Sprite.sff
 anim    = Anim.air
 sound   = Sound.snd
-pal1	= Palettes/Yellow.act
-pal2	= Palettes/blue.act
-pal3	= Palettes/lime.act
-pal4	= Palettes/Default.act
-pal5	= Palettes/Default2.act
-pal6	= Palettes/DefaultLongShirt.act
-pal7	= Palettes/police.act
-pal8	= Palettes/maroon.act
-pal9	= Palettes/Rocky.act
-pal10	= Palettes/soldier.act
-pal11	= Palettes/xmen.act
-pal12	= Palettes/black.act
 
 	
 ;[Arcade]
