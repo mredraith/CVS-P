@@ -1626,6 +1626,11 @@ sparkxy = -10 + 0*(var(35):=92), var(36):=-77
 palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
+
+[State 3200, Remy]
+trigger1 = Animelem=13 || Animelem=18 || Animelem=24 || Animelem=31 || Animelem=40 || Animelem=48 || Animelem=60 || Animelem=72 || Animelem=74 || Animelem=78
+type = Explod
+anim = 42069
  
 [State 3000, ChangeState]
 type = ChangeState
@@ -1771,6 +1776,16 @@ palFX.sinAdd = -255, -255, -255, 48
 envShake.time = 14
 envShake.ampl = 4
 envShake.freq = 120
+
+[State 3200, Remy]
+trigger1 = Animelem=5
+type = Explod
+anim = 42069
+
+[State 1300, Remy]
+type = PlaySnd
+trigger1 = animelem = 5
+value = 42069,0
 
 [State 1300, ChangeState]
 type = ChangeState
