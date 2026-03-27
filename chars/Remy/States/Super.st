@@ -1590,8 +1590,7 @@ trigger1= !var(16) && var(15)<1
 trigger1= Animelem=13 || Animelem=18 || Animelem=24 || Animelem=31 || Animelem=40 || Animelem=48 || Animelem=60 || Animelem=72 || Animelem=74 || Animelem=78
 ID = 3202
 attr = S,HP
-hitflag = HAF
-guardflag = M
+hitflag = MAF
 damage =90,1
 getpower = 5
 givepower = 36, 36
@@ -1606,7 +1605,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.slidetime = 18
 air.hittime = 120
-ground.velocity = -0,-0
+ground.velocity = 5,-0
 ground.cornerpush.veloff = 0
 guard.velocity = -6
 guard.cornerpush.veloff = 0
@@ -1627,10 +1626,20 @@ palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
 
-[State 3200, Remy]
+[State 3201, Remy]
 trigger1 = Animelem=13 || Animelem=18 || Animelem=24 || Animelem=31 || Animelem=40 || Animelem=48 || Animelem=60 || Animelem=72 || Animelem=74 || Animelem=78
 type = Explod
 anim = 42069
+
+[State 3201]
+trigger1 = stateno = 3201
+type = AssertSpecial
+flag = NoKO
+
+[State 1300, Remy]
+type = PlaySnd
+trigger1 = animelem = 2
+value = 42069,0
  
 [State 3000, ChangeState]
 type = ChangeState
@@ -1781,11 +1790,6 @@ envShake.freq = 120
 trigger1 = Animelem=5
 type = Explod
 anim = 42069
-
-[State 1300, Remy]
-type = PlaySnd
-trigger1 = animelem = 5
-value = 42069,0
 
 [State 1300, ChangeState]
 type = ChangeState
