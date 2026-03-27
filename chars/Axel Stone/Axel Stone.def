@@ -1,0 +1,43 @@
+; _______________________________________
+;| Axel Stone by Testament			 |
+; 
+;====================<DEFINITION>====================
+[Info]
+name        = "Axel Stone"
+displayName = "Axel Stone"
+versionDate = 09,05,2010
+mugenVersion= 1.0
+author      = "Testament & Rtrindade"
+pal.defaults= 4,5,6,1,2,3,10,11,12,7,8,9
+localCoord  = 428,240
+
+[Files]
+movelist = movelist.dat
+cmd     = Command.cmd
+cns     = Constants.cns
+st      = States/System.st
+st1     = States/Normal.st
+st2     = States/Special.st
+st3     = States/Super.st
+st4     = States/Helpers.st
+stCommon= common1.cns
+sprite  = Sprite.sff
+anim    = Anim.air
+sound   = Sound.snd
+pal1	= Palettes/Yellow.act
+pal2	= Palettes/blue.act
+pal3	= Palettes/lime.act
+pal4	= Palettes/Default.act
+pal5	= Palettes/Default2.act
+pal6	= Palettes/DefaultLongShirt.act
+pal7	= Palettes/police.act
+pal8	= Palettes/maroon.act
+pal9	= Palettes/Rocky.act
+pal10	= Palettes/soldier.act
+pal11	= Palettes/xmen.act
+pal12	= Palettes/black.act
+
+	
+;[Arcade]
+;intro.storyBoard = intro.def
+;ending.storyBoard = ending.def

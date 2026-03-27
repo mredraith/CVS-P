@@ -1516,7 +1516,7 @@ darken = 0
 [State 3200, Reversal]
 type = ReversalDef
 trigger1 = !Movehit
-trigger1 = Animelemtime(4) >= 0 && animelemtime(8) < 0
+trigger1 = Animelemtime(3) >= 0 && animelemtime(18) < 0
 attr = S, HT
 reversal.attr = SCA, NA, SA, HA
 pausetime = 0, 30

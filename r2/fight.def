@@ -1432,6 +1432,7 @@ KO.time = 0 ;Time to show KO component
 KO.offset = 640, 360 ;Component for KO display
 KO.anim = 200 ;.
 KO.snd = 2,11 ;Sound to play for KO announcement
+KO.layerno = -1
 ; Double KO
 DKO.offset = 640, 320
 ;DKO.font = 1,5
@@ -1439,18 +1440,20 @@ DKO.offset = 640, 320
 DKO.anim = 201 ;.
 DKO.displaytime = 60
 DKO.snd = 2,3
+DKO.layerno = -1
 ; Time Over
 TO.offset = 640,320
 TO.spr = 202,0
 TO.scale = 2,2
 TO.displaytime = 60;60
 TO.snd = 2,12
+TO.layerno = -1
 
 KO.sndtime = 5;0 ;Time to play sound for KO, DKO and TO.
 
-slow.time = 30 ;Total KO slowdown length (in ticks)
+slow.time = 0 ;Total KO slowdown length (in ticks)
 slow.fadetime = 0 ;Ikemen feature: KO slowdown fade length (default: 75% of slow.time)
-slow.speed = 0.5 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
+slow.speed = 1 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
 
 over.waittime = 0 ;Time to wait after KO before player control is stopped
 over.hittime = 0 ;Time after KO that players can still damage each other (for double KO)
@@ -1548,21 +1551,22 @@ shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 
 ;"K.O." Animation
 [Begin Action 200]
-210,0, 0, 0, 2
-210,1, 0, 0, 2
-210,2, 0, 0, 2
-210,3, 0, 0, 2
-210,4, 0, 0, 2
-210,5, 0, 0, 2
-210,6, 0, 0, 2
-210,7, 0, 0, 2
-210,8, 0, 0, 2
-210,9, 0, 0, 2
-210,10, 0, 0, 2
-210,11, 0, 0, 2
-210,12, 0, 0, 12
+210,0, 0, 0, 8
+210,1, 0, 0, 4
+210,2, 0, 0, 4
+210,3, 0, 0, 4
+210,4, 0, 0, 4
+210,5, 0, 0, 4
+210,6, 0, 0, 4
+210,7, 0, 0, 4
+210,8, 0, 0, 4
+210,9, 0, 0, 4
+210,10, 0, 0, 4
+210,11, 0, 0, 4
+210,12, 0, 0, 4
 210,13, 0, 0, 12
-210,14, 0, 0, 60
+210,14, 0, 0, 12
+210,15, 0, 0, 60
 
 ;"Double K.O."
 [Begin Action 201]

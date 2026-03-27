@@ -1,0 +1,210 @@
+;====================<VARIABLE LIST>====================
+
+;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4)  : Chain Combo (0 = Off; 1 = On)
+;var(5)  : Determines what AnimElem Golden Heel FX should be in
+;var(6)  : Cancel Flag
+;var(7)  : Able to Super Cancel
+;var(8)  : Able to Hyper Cancel
+;var(9)  : Counter Flag
+;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Hard)
+;var(11) : Button Detect for TNT Punch
+;var(12) : Mashing Buttons during Knees of Hades
+;var(13) : Hit Count
+;var(15) : Juggle Points
+;var(16) : Juggle Flag
+;var(17) : Ticks UnGuardable
+;var(18) : ProjContact (0 = No; 1 = Yes)
+;var(19) : Throw Escape
+;var(20) : Custom Combo Time
+;var(21) : Super Cancel Flag
+;var(22) : Hyper Cancel Flag
+;var(23) : Super Finish Type (900 = Custom Combo; 3000 = Screw Upper; 3100 = Exploding Hurricane Tiger Heel; 3200 = Golden Tiger Kick; 3300 = Double Cyclone)
+;var(25) : Ticks to Apply EX FX
+;var(26) : Ticks Unable to Walk
+;var(30) : Hit Detection
+;var(31) : Hit Sound
+;var(32) : Guard Sound
+;var(33) : Hit Spark (8010 = Light; 8011 = Medium; 8012 = Hard; 8013 = Special; 8014 = Super)
+;var(34) : Guard Spark (8000 = Normal; 8001 = Special)
+;var(35) : Spark xPos
+;var(36) : Spark yPos
+;var(38) : Throw (0 = Allowed; 1 = Not Allowed)
+;var(39) : Projectile Flag (0 = Off; 1 = On)
+;var(40) : EX Golden Heel Flag (0 = can be performed; 1 = can't)
+;var(41) : EX Golden Heel Guarded Flag (0 = can be performed; 1 = move guarded
+;var(42) : Mashing Buttons during Knees of Hades Flag
+;var(43) : Player ID to apply flames to
+;var(44) : Knees of Hades Timer
+;var(45) : Number of times pushed punch in succession
+;var(46) : Punch Timer
+;var(47) : EX Dragon Smash Hit Count
+;var(58) : Game Time
+
+;fvar(5): Amount of Corner Push
+;fvar(10): Damage Dampener
+;fvar(11): Damage Dampener with Counter Multiplier Added
+
+
+
+; _______________________________________
+;|Axel Stone by Testament             |
+; 
+;====================<CONSTANTS>====================
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
+sparkNo = s8010
+guard.sparkNo = s8000
+KO.echo = 0
+volume =255
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xScale = 1
+yScale = 1
+ground.back = 18
+ground.front = 18
+air.back = 15
+air.front = 15
+height = 55
+attack.dist = 160
+proj.attack.dist = 90
+proj.doScale = 0
+head.pos = 3, -90
+mid.pos = -5, -50
+shadowOffset = 0
+draw.offset = 0,0
+
+[Velocity]
+walk.fwd  = 3.2 
+walk.back = -2.031
+run.fwd = 6.4, 0
+run.back = -3.99, 0
+jump.neu = 0, -9.609375
+jump.fwd = 3.3
+jump.back = -3.3
+runJump.fwd = 4.444, -10.99
+runJump.back = -5.363, -10.99
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yAccel = 0.4725
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundlevel = 25
+air.gethit.groundrecover.ground.threshold = -20
+air.gethit.groundrecover.groundlevel = 10
+air.gethit.airrecover.threshold = -1
+air.gethit.airrecover.yaccel = 0.35
+air.gethit.trip.groundlevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yaccel = 0.4
+down.bounce.groundlevel = 12
+down.friction.threshold = 0.5
+
+[Quotes]
+victory0 = "My fists can shatter any obstacle in my path!"
+victory1 = "My blood is boiling! I'm gonna paint the streets with my rage!"
+victory2 = "Seriously is that all there is to it? I'm up for another round of some bare knuckle action!"
+victory3 = "Yeah! Thatfs how itfs done!"
+victory4 = "How about my Dragon Smash?"
+victory5 = "You looking for a fight? Well you just found one!"
+victory6 = "Youfve just found me in a really bad mood pal!"
+victory7 = "Ok then, letfs take this to the streets!"
+victory8 = "Is that all you got?"
+victory9 = "You caught me at a bad time, now let me show you what these punchs can do!"
+victory10 = "I donft know whatfs going on around here, but I canft let you just get in my way!"
+victory11 = "Get out of my way! I have not time to play around with you right now!"
+victory12 = "Youfve just found me in a really bad mood pal!"
+victory13 = "I bet you didn't count on me Burning Crusher, huh?"
+victory14 = "The job of a cop is never done."
+victory15 = "Bare Knuckle!"
+victory16 = "Remember that pain, next time it would be worse!"
+victory17 = "Better luck next time."
+victory18 = "You have better learned this time"
+victory19 = "That was actually pretty good, well my fun has ended, see you later!"
+victory20 = "Yeah! Fists are all you need!"
+victory21 = "I'll smash anyone, no questions asked!"
+victory22 = "Leave me alone and go bother someone else!"
+victory23 = "Tell me, how does it feel to live in a constant haze of stupidity?"
+victory24 = "I will make you understand the true potential of Rage"
+victory25 = "Now beat it! I have some mess to clean upc"
+victory26 = "I warned you, now look where you are, so why don't you stay down?"
+victory27 = "You cannot defeat me!"
+victory28 = "That's the best you got? No wonder I blew you away!"
+victory29 = "Oh don't worry, that wasn't police brutality."
+victory30 = "How laughable, you have completely lost your touch weakling!"
+victory31 = "OK! Now itfs off traveling the whole street yet again!"
+victory32 = "It doesn't matter how strong you are if none of your attacks connect!"
+victory33 = "Go Max! We must save Adam"
+
+;Ryu Hoshi
+victory34 = "This match actually felt pretty intense, youfre not bad."
+victory35 = "If the timing is right for me then maybe we can spar again."
+victory36 = "Give me a rematch some time and we'll see who's the best."
+
+;Mike Haggar
+victory37 = "So you are the Metro City guy everyone has been talking about."
+victory38 = "Huh, I guess your years as mayor made your wrestling skills rusty!"
+victory39 = "I guess you and I can fight alongside each other, but I canft shake this feeling that my team has a bit of a rivalry towards Metro City."
+
+;Chun-Li
+victory40 = "So youfre not bought out by Mr. X, thatfs good. Itfs good to see good honest cops still exist around here."
+victory41 = "Youfre a cop? Whofs side are you on?"
+
+;Cody Travers
+victory42 = "I donft expect ya to Dualize with me just because we are similar. You seem capable of being useful in the air yourself."
+victory43 = "If I happen to be on your street and there are thugs around; Ifll gladly help out."
+
+;Blaze Fielding
+victory44 = "With that outfit, I can hardly believe we're in the same line of work"
+victory45 = "Don't relax just yet. We've got to move on to the next target."
+
+;Captain Commando
+victory46 = "I love your Energy Gloves, Captain."
+victory47 = "Ifll admit your armor was tougher than the junk Mr. X brings out; but I still knocked you down in the end!"
+
+;Cyborgs
+victory48 = "Nothing but a X's mere toy."
+victory49 = "Mr. X sending more robots after me huh? Greatc"
+victory50 = "I canft help but feel pity to machines that are mindless like this one."
+
+;Justice
+victory51 = "That was pretty rough; hope Mr. X doesnft make more of these things."
+
+;Guile
+victory52 = "A member of the US Air Force? Maybe you should stick to flying."
+
+;Karin Kanzuki
+victory53 = "Its young girls like YOU that are perfect targets for gangs that I beat up, show some damn respect!"
+victory54 = "Rich spoiled bratc Hope that teaches you to stop acting like you're above it all!"
+
+;Duck Kick
+victory55 = "I think itfs time you shut up punk!"
+
+;Guy
+victory56 = "Mission complete. Let's keep moving."
+
+;Frank West
+victory57 = "Holy crap. If you can do all that to zombies and yet here I am still struggling against the syndicatefs goons."
+victory58 = "It doesnft matter if you covered wars; that doesnft mean you have been in one."
+victory59 = "You must be a spy! There is no way a normal photographer would know how to fight like that!"
+victory60 = "You serious? There is no way they can be real zombies."
+
+;Criminal Girls
+victory61 = "Respect women simulator."
+victory62 = "Real women don't hit men."
+victory63 = "You want chivalry? Go back to 1930."
+
+;Ryuji Yamazaki
+victory64 = "You're insanec Guess it's a good thing I stopped you."
