@@ -1483,8 +1483,7 @@ ignorehitpause = 1
 
 [State 3000, Super Cancel Juggle]
 type = varset
-trigger1 = !time
-trigger1 = var(21) || var(22)
+trigger1 = 1
 var(15) = 0
 ignorehitpause = 1
 
@@ -1504,7 +1503,7 @@ ownpal = 1
 
 [State 3000, Superpause]
 type = superpause
-trigger1 = Time = 3
+trigger1 = animelem = 1
 time = 40
 movetime = 40
 p2defmul = 1
@@ -1516,7 +1515,7 @@ darken = 0
 [State 3200, Reversal]
 type = ReversalDef
 trigger1 = !Movehit
-trigger1 = Animelemtime(3) >= 0 && animelemtime(18) < 0
+trigger1 = Animelemtime(1) >= 0 && animelemtime(6) < 0
 attr = S, HT
 reversal.attr = SCA, NA, SA, HA
 pausetime = 0, 30
@@ -1530,6 +1529,11 @@ numhits = 0
 type = TargetState
 trigger1 = !MoveHit
 value = 5300
+
+[State 3200, Crazy Damage]
+type = DefenceMulSet
+trigger1 = Animelemtime(6) >= 0 && animelemtime(9) < 0
+value = 500
 
 [State 3200, End]
 type = ChangeState
@@ -1626,6 +1630,11 @@ palfx.time = 12*var(9)
 palfx.add = 255,255,255
 palfx.sinadd= -255,-255,-255,48
 
+[State 220, VelAdd]
+type = VelAdd
+trigger1 = Animelem=13 || Animelem=18 || Animelem=24 || Animelem=31 || Animelem=40 || Animelem=48 || Animelem=60 || Animelem=72 || Animelem=74 || Animelem=78
+x = 10
+
 [State 3201, Remy]
 trigger1 = Animelem=13 || Animelem=18 || Animelem=24 || Animelem=31 || Animelem=40 || Animelem=48 || Animelem=60 || Animelem=72 || Animelem=74 || Animelem=78
 type = Explod
@@ -1640,6 +1649,11 @@ flag = NoKO
 type = PlaySnd
 trigger1 = animelem = 2
 value = 42069,0
+
+[State 3000, Super Cancel Juggle]
+type = AssertSpecial
+trigger1 = 1
+flag = nojugglecheck
  
 [State 3000, ChangeState]
 type = ChangeState
