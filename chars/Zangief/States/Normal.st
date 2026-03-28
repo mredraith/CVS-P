@@ -20,7 +20,7 @@ facep2 = 1
 
 [State 200, Voice]
 type = PlaySnd
-trigger1 = !Time && var(40) != 1
+trigger1 = !Time && var(40) != 1 && Random < 200
 value = 4, ifElse(Random < 500, 2, 3)
 channel = 0
 
@@ -154,7 +154,7 @@ faceP2 = 1
 
 [State 210, Voice]
 type = PlaySnd
-trigger1 = !Time && var(40) != 1
+trigger1 = !Time && var(40) != 1 && Random < 350
 value = 4, ifElse(Random < 500, 3, 4)
 channel = 0
 
@@ -245,7 +245,7 @@ facep2 = 1
 
 [State 220, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 2 && var(40) != 1
+trigger1 = AnimElem = 2 && var(40) != 1 && Random < 500
 value = 4, ifElse(Random < 500, 3, 4)
 channel = 0
 
@@ -346,7 +346,7 @@ facep2 = 1
 
 [State 230, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 3 && var(40) != 1
+trigger1 = AnimElem = 3 && var(40) != 1 && Random < 200
 value = 4, ifElse(Random < 500, 2, 3)
 channel = 0
 
@@ -437,7 +437,7 @@ faceP2 = 1
 
 [State 240, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 3 && var(40) != 1
+trigger1 = AnimElem = 3 && var(40) != 1 && Random < 350
 value = 4, ifElse(Random < 500, 3, 4)
 channel = 0
 
@@ -528,7 +528,7 @@ faceP2 = 1
 
 [State 250, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 3 && var(40) != 1
+trigger1 = AnimElem = 3 && var(40) != 1 && Random < 500
 value = 4, ifElse(Random < 500, 3, 4)
 channel = 0
 
@@ -687,7 +687,7 @@ channel = 1
 
 [State 210, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 6
+trigger1 = AnimElem = 6 && Random < 500
 value = 5, 1+(random%2)
 channel = 0
 
@@ -796,7 +796,7 @@ faceP2 = 1
 
 [State 400, Voice]
 type = PlaySnd
-trigger1 = !Time && var(40) != 1
+trigger1 = !Time && var(40) != 1 && Random < 200
 value = 4, ifElse(Random < 500, 2, 3)
 channel = 0
 
@@ -887,7 +887,7 @@ faceP2 = 1
 
 [State 410, Voice]
 type = PlaySnd
-trigger1 = !Time && var(40) != 1
+trigger1 = !Time && var(40) != 1 && Random < 350
 value = 4, ifElse(Random < 500, 3, 4)
 channel = 0
 
@@ -978,7 +978,7 @@ faceP2 = 1
 
 [State 420, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 2 && var(40) != 1
+trigger1 = AnimElem = 2 && var(40) != 1 && Random < 500
 value = 4, ifElse(Random < 500, 3, 4)
 channel = 0
 
@@ -1070,7 +1070,7 @@ faceP2 = 1
 
 [State 430, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 2 && var(40) != 1
+trigger1 = AnimElem = 2 && var(40) != 1 && Random < 200
 value = 4, ifElse(Random < 500, 2, 3)
 channel = 0
 
@@ -1161,7 +1161,7 @@ faceP2 = 1
 
 [State 440, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 2 && var(40) != 1
+trigger1 = AnimElem = 2 && var(40) != 1 && Random < 350
 value = 4, ifElse(Random < 500, 3, 4)
 channel = 0
 
@@ -1252,7 +1252,7 @@ faceP2 = 1
 
 [State 450, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 2 && var(40) != 1
+trigger1 = AnimElem = 2 && var(40) != 1 && Random < 500
 value = 4, 4
 channel = 0
 
