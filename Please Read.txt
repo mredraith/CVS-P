@@ -1,0 +1,68 @@
+[Capcom vs SNK Revo 2]
+by MichaHil
+
+[0x0] Foreword
+[0x1] Overview
+[0x2] QnA
+[0x3] Why?
+
+[0x0] Foreword
+
+First of all, before anything else, I want to say thank you for taking the time out of your day to try my project, let alone read this readme. It means a lot to me that something this small made by someone this sloppy even gets a single pair of eyes. For that, I extend my love to you.
+
+Okay, now onto the other stuff.
+
+[0x1] Overview
+
+Capcom vs SNK Revo 2 is a CvS/PotS style compilation where the main focus of the game is the polish in the characters itself. Right now, every character has at least something changed about them, whether it be frame data, hitboxes, move properties, or even entirely new attacks and animations. My main goal for the project is to tweak and tune up every character until all of them are individually strong, but not overpowered.
+
+I want to do this via centering every character around my specific design philosophies:
+
+1. Everything should be snappy. Buttons, movement, specials, supers, everything. Whatever you do should have the feel of a flick of the wrist.
+
+2. Attacks should be strong, but punishable. My idea is to have most attacks hovering around the 20-40 frame mark, where lights are closer to 20 and heavies are closer to 40. I'm okay with a little bit of plus frames on block for light attacks, but mediums should be punishable if not done at a distance, and heavies should be punishable in general.
+
+3. Nothing should be inherently invalidated compared to one another. While this is a little bit more difficult, especially with characters who don't have many unique attacks/animations, I want to make sure that the options you pick each have their own strengths and weaknesses, so responding to a scenario isn't as easy as "pressing the good button".
+
+4. Characters can be a little bit silly. Take Dhalsim as an example; if he holds back while divekicking, he can travel in the opposite direction. This isn't over-the-top or game-breaking - it's just a little extra to make him more fun to play.
+
+5. In the same vein, characters should at least have a little bit of juice. Maybe one character can combo out of their heavies. Maybe another has strong movement but bad range. Whatever the case is, you should be able to pick any character and pinpoint something unique that makes them stand out from the rest, besides their aesthetics of course.
+
+[0x2] QnA
+
+Q: What's different between this and other Mugen/Ikemen games?
+
+The only thing any different is the level of polish and care I'm willing to give this game. I know it's not going to be as big or as sweeping as other already established Mugen/Ikemen games, but it's kind of like enjoying a fan-made balance patch over the original game (New Legacy, 4rd Strike, Guilty Gear Xrd Rev0, etc).
+
+Q: Why the title?
+
+Capcom vs SNK Revo 2 is based off of an existing Mugen game that I take a particular fascination to called Capcom vs SNK Evolution Rev 2. I didn't want to stray too far from its silly roots; henceforth, I truncated "Evolution Rev" to just "Revo" and kept the 2 for branding. If it's too much, you're free to drop the 2 and just call it "Capcom vs SNK Revo" or "CvS Revolution" or the like.
+
+Q: What's changed?
+
+The most important change is that, by default, every character has normalized values;
+* All guard.hitTime values are the same as ground.hitTime values, but 6 frames less
+* All sweeps and supers grant hard knockdowns
+* Everyone's localcoord is 428,240
+* lieDown.time is 15f across the board
+* Everyone's health is 1000, everyone's maximum power is 3000, everyone's attack and defense is 100
+* No more envShake on normals (before statedefs 1000 and up)
+* I've also been working on:
+  * Giving everyone 3f normals as their fastest attack
+  * Changing hitboxes to be cleaner and more reasonable
+
+Q: Where's the music?
+
+I don't like having music in video games. There's nothing wrong with it, just not a fan. You're free to add yours yourself, though, if you know how to do it.
+
+Q: Can I change stuff inside of this? Can I take your character edits and add them to my own build?
+
+Absolutely! I encourage you to, as well. It's always nice to have the people balance a game.
+
+[0x3] Why?
+
+For every Mugen collection I've come across, I've noticed a very distinct lack of "polish", for lack of better words. Character functionality is missing, some characters are just better or worse than others, and it feels like there's not much care put into the game besides the superficial. I've always dreamed of working on a game of my very own where the game design and balancing decisions derive from both my own and others' experiences.
+
+I've also been exceptionally interested in just... making stuff for the world to try. Ever since I was a kid, I've loved putting effort in to do things, seeing my work out there with the rest of the world. It doesn't really matter if it gets attention, just the fact that I'm making it and it's out there is enough to make me happy. As well as the act of modding stuff, especially modding mods themselves.
+
+Again, I don't doubt I won't really get many views or interactions with this, but I just love making stuff for myself and the world. I hope you can enjoy my work, too.
