@@ -3280,7 +3280,7 @@ type = VelSet
 triggerall = IsHelper(11040)
 triggerall = PrevStateNo!=11040
 trigger1 = Time = 0
-x = 7
+x = 8
 y = .5
 
 [State 11040, VelSet]
@@ -3288,7 +3288,7 @@ type = VelSet
 triggerall = IsHelper(11041)
 triggerall = PrevStateNo!=11040
 trigger1 = Time = 0
-x = 8
+x = 9
 y = .75
 persistent = 0
 
@@ -3297,7 +3297,7 @@ type = VelSet
 triggerall = IsHelper(11042)
 triggerall = PrevStateNo!=11040
 trigger1 = Time = 0
-x = 9
+x = 10
 y = 1.2
 persistent = 0
 
@@ -3305,14 +3305,14 @@ persistent = 0
 type = VelSet
 triggerall = IsHelper(11043)
 trigger1 = Time = 0
-x = 11.5
+x = 11
 persistent = 0
 
 [State 11040, VelAdd]
 type = VelAdd
 triggerall = IsHelper(11040)
 trigger1 = 1
-x = -.2
+x = -.5
 
 [State 11040, VelAdd]
 type = VelAdd

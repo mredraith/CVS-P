@@ -2089,7 +2089,7 @@ velset = 0,0
 
 [State 1040, Helper]
 type = Helper
-trigger1 = AnimElem = 15,=0
+trigger1 = AnimElem = 7,=0
 ID = 11040
 pos = 45,-65
 postype = p1
@@ -2104,16 +2104,10 @@ size.yscale = 0.5
 
 [State 1040, end]
 type = ChangeState
-triggerall = AnimElem = 15,>0
+triggerall = AnimElem = 7,>0
 trigger1 = NumHelper(11040) = 0
 value = 1041
 ctrl = 0
-
-[State 1040, PosAdd]
-type = PosAdd
-trigger1 = AnimElem = 1,>=0
-trigger1 = AnimElem = 8,<0
-x = -2.5
 ;---------------------------------------------------------------------------
 ;I-Slasher Catch
 [StateDef 1041]
@@ -2127,7 +2121,7 @@ velset = 0,0
 
 [State 1041, PlaySnd]
 type = PlaySnd
-trigger1 = Time = 0
+trigger1 = AnimElem = 8
 value = S1040,1
 volume = 0
 channel = 3
@@ -2155,7 +2149,7 @@ velset = 0,0
 
 [State 1042, Helper]
 type = Helper
-trigger1 = AnimElem = 15,=0
+trigger1 = AnimElem = 7,=0
 ID = 11041
 pos = 45,-65
 postype = p1
@@ -2168,15 +2162,9 @@ supermovetime = 1
 size.xscale = 0.5
 size.yscale = 0.5
 
-[State 1042, PosAdd]
-type = PosAdd
-trigger1 = AnimElem = 1,>=0
-trigger1 = AnimElem = 8,<0
-x = -3.5
-
 [State 1042, end]
 type = ChangeState
-triggerall = AnimElem = 15,>0
+triggerall = AnimElem = 7,>0
 trigger1 = NumHelper(11041) = 0
 value = 1041
 ctrl = 0
@@ -2195,7 +2183,7 @@ velset = 0,0
 
 [State 1043, Helper]
 type = Helper
-trigger1 = AnimElem = 15,=0
+trigger1 = AnimElem = 7,=0
 ID = 11042
 pos = 45,-65
 postype = p1
@@ -2208,15 +2196,9 @@ supermovetime = 1
 size.xscale = 0.5
 size.yscale = 0.5
 
-[State 1043, PosAdd]
-type = PosAdd
-trigger1 = AnimElem = 1,>=0
-trigger1 = AnimElem = 8,<0
-x = -4.5
-
 [State 1043, end]
 type = ChangeState
-triggerall = AnimElem = 15,>0
+triggerall = AnimElem = 7,>0
 trigger1 = NumHelper(11042) = 0
 value = 1041
 ctrl = 0
@@ -2286,7 +2268,7 @@ channel = 1
 
 [State 1044, Helper]
 type = Helper
-trigger1 = AnimElem = 15,=0
+trigger1 = AnimElem = 7,=0
 ID = 11043
 pos = 45,-65
 postype = p1
@@ -2301,16 +2283,10 @@ size.yscale = 0.5
 
 [State 1044, end]
 type = ChangeState
-triggerall = AnimElem = 15,>0
+trigger1 = AnimElem = 7,>0
 trigger1 = NumHelper(11043) = 0
 value = 1041
 ctrl = 0
-
-[State 1044, PosAdd]
-type = PosAdd
-trigger1 = AnimElem = 1,>=0
-trigger1 = AnimElem = 8,<0
-x = -6.5
 ;---------------------------------------------------------------------------
 ;LK Earring Bomb
 [StateDef 1050]

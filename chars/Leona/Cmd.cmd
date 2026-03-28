@@ -333,33 +333,33 @@ time = 15
 
 [Command]
 name = "BalticLauncherEX"
-command = ~30$B, F, x+y
-time = 30
+command = ~45$B, F, x+y
+time = 10
 
 [Command]
 name = "BalticLauncherEX"
-command = ~30$B, F, y+z
-time = 30
+command = ~45$B, F, y+z
+time = 10
 
 [Command]
 name = "BalticLauncherEX"
-command = ~30$B, F, x+z
-time = 30
+command = ~45$B, F, x+z
+time = 10
 
 [Command]
 name = "GrandSaberEX"
-command = ~30$B, F, a+b
-time = 30
+command = ~45$B, F, a+b
+time = 10
 
 [Command]
 name = "GrandSaberEX"
-command = ~30$B, F, b+c
-time = 30
+command = ~45$B, F, b+c
+time = 10
 
 [Command]
 name = "GrandSaberEX"
-command = ~30$B, F, a+c
-time = 30
+command = ~45$B, F, a+c
+time = 10
 
 [Command]
 name = "ISlasherEX"
@@ -424,33 +424,33 @@ time = 15
 
 [Command]
 name = "BalticLauncherx"
-command = ~30$B, F, x
-time = 30
+command = ~45$B, F, x
+time = 10
 
 [Command]
 name = "BalticLaunchery"
-command = ~30$B, F, y
-time = 30
+command = ~45$B, F, y
+time = 10
 
 [Command]
 name = "BalticLauncherz"
-command = ~30$B, F, z
-time = 30
+command = ~45$B, F, z
+time = 10
 
 [Command]
 name = "GrandSabera"
-command = ~30$B, F, a
-time = 30
+command = ~45$B, F, a
+time = 10
 
 [Command]
 name = "GrandSaberb"
-command = ~30$B, F, b
-time = 30
+command = ~45$B, F, b
+time = 10
 
 [Command]
 name = "GrandSaberc"
-command = ~30$B, F, c
-time = 30
+command = ~45$B, F, c
+time = 10
 
 [Command]
 name = "XCaliburx"
