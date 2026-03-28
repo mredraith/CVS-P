@@ -1,46 +1,37 @@
-
 [Info]
-name ="Leona Heidern"
-displayname ="Leona"
-versiondate =05,09,2019
-mugenversion =1.0
-author ="Infinite"
-pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
-localCoord  = 428,240
+name = "Leona"
+displayname = "Leona"
+versiondate = 12,06,2014 
+mugenversion = 1.0
+author = "Zero-Sennin,Yaret,BDS" 
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
 
+localCoord  = 428,240
 [Files]
 movelist = movelist.dat
-sprite =Leona.sff
-anim =Leona.air
-sound =Leona.snd
-cmd =Leona.cmd
-cns =Constants.cns
-stcommon =common1.cns
-st =States\System.cns
-st1=States\Normal.cns
-st2=States\Specials.cns
-st3=States\Supers.cns
-st4=States\Helpers.cns
-st5=States\Customs.cns
-st6=config.txt
-
-[Palette Keymap]
-a  = 1
-b  = 2
-c  = 3
-x  = 4
-y  = 5
-z  = 6
-a2 = 7
-b2 = 8
-c2 = 9
-x2 = 10
-y2 = 11
-z2 = 12
-
+sprite = Sff.sff
+anim = Anim.air
+sound = Sound.snd
+cmd = Cmd.cmd
+cns = Constants.cns
+stcommon = common1.cns
+st = States\System.st
+st1 = States\Normal.st
+st2 = States\Special.st
+st3 = States\Super.st
+st4 = States\Helpers.st
+pal1	= Palettes/Reix&Damp.act
+pal2	= Palettes/2.act
+pal3	= Palettes/3.act
+pal4	= Palettes/4.act
+pal5	= Palettes/5.act
+pal6	= Palettes/6.act
+pal7	= Palettes/7.act
+pal8	= Palettes/8.act
+pal9	= Palettes/9.act
+pal10	= Palettes/10.act
+pal11	= Palettes/11.act
+pal12	= Palettes/12.act
 [Arcade]
 intro.storyboard = intro.def
-ending.storyboard = 
-
-
-; FEINT CANCEL PATCHED
+ending.storyboard =
