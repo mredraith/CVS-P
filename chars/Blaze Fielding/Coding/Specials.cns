@@ -1,4 +1,4 @@
-;========================<KIKOSHO>=======================
+;KIKOSHO>=
 [Statedef 1000]
 type = S
 movetype = A
@@ -126,7 +126,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<EX KIKOSHO>===========================
+;EX KIKOSHO>=
 [Statedef 1030]
 type = S
 movetype = A
@@ -279,7 +279,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<UPPERCUT>=======================
+;UPPERCUT>=
 [Statedef 1100]
 type = S
 movetype = A
@@ -1083,7 +1083,7 @@ trigger1 = AnimElemTime(10)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0;pos y > -vel y
 value = 1105
 
-;========================<EX UPPERCUT>=======================
+;EX UPPERCUT>=
 [Statedef 1130]
 type = S
 movetype = A
@@ -1314,7 +1314,7 @@ trigger1 = AnimElemTime(11)>0
 trigger1 = Pos Y >= 0 && Vel Y > 0;pos y > -vel y
 value = 1105
 
-;========================<BLAZE STRIKE>=======================
+;BLAZE STRIKE>=
 [Statedef 1200]
 type = S
 movetype = I
@@ -2019,7 +2019,7 @@ triggerall = Animelemtime(10) > 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value= 1105
 
-;========================<EX BLAZE STRIKE>=======================
+;EX BLAZE STRIKE>=
 [Statedef 1250]
 type = S
 movetype = I
@@ -2813,7 +2813,7 @@ triggerall = Animelemtime(10) > 0
 trigger1 = Pos Y >= 0 && Vel Y > 0
 value= 1105
 
-;========================<EMBUKYAKU>=======================
+;EMBUKYAKU>=
 [Statedef 1300]
 type = S
 movetype = A
@@ -2995,7 +2995,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<EX EMBUKYAKU>=======================
+;EX EMBUKYAKU>=
 [Statedef 1330]
 type = S
 movetype = A
@@ -3192,7 +3192,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==================<Collapsed TargetState>=====================
+;Collapsed TargetState>=
 ;Collapsed
 [Statedef 1390]
 type    = S

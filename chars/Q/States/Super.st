@@ -1,9 +1,9 @@
 ; ________________________________________________
 ;| Q by KarmaCharmeleon			|
 ; 
-;
-;SUPER STATES=
-;
+;==
+;SUPER STATES
+;==
 
 ;CRITICAL COMBO ATTACK>=
 [StateDef 3000]
@@ -2335,7 +2335,7 @@ trigger1 = pos y > -vel y
 value = 5100
 
 
-;TOTAL DESTRUCTION: ACTIVATE (TARGET)=
+;TOTAL DESTRUCTION: ACTIVATE (TARGET)
 ;Target
 [StateDef 3265]
 type = S
@@ -2770,7 +2770,7 @@ trigger1 = pos y > -vel y
 value = 5100
 
 
-;TOTAL DESTRUCTION: DANGER (TARGET)=
+;TOTAL DESTRUCTION: DANGER (TARGET)
 ;Target
 [StateDef 3285]
 type = S

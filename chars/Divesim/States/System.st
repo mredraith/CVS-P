@@ -2881,7 +2881,7 @@ channel = 0
 
 
 
-;TAUNT>==
+;TAUNT
 [StateDef 195]
 type = S
 moveType = I
@@ -2911,7 +2911,7 @@ ctrl = 1
 
 
 
-;KUUCHUU CHOUHATSU>==
+;KUUCHUU CHOUHATSU
 [Statedef 196]
 type = A
 moveType = I

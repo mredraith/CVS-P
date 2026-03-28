@@ -1,6 +1,6 @@
 ;| Axel Stone by Testament             |
 
-;========================<SCREW UPPER>=============================
+;SCREW UPPER>=
 [StateDef 3000]
 type = S
 physics = S
@@ -488,7 +488,7 @@ ctrl = 1
 
 
 
-;========================<MAX SCREW UPPER>=============================
+;MAX SCREW UPPER>=
 [StateDef 3050]
 type = S
 physics = S
@@ -1143,7 +1143,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1401
 
-;========================<DRAGON SMASH>=============================
+;DRAGON SMASH>=
 ;DRAGON SMASH
 [StateDef 3100]
 type = S
@@ -1542,7 +1542,7 @@ type = ChangeState
 trigger1 = (Pos Y >= 0) && (Vel Y > 0)
 value = 1401
 
-;========================<MAX EXPLODING HURRICANE TIGER HEEL>=============================
+;MAX EXPLODING HURRICANE TIGER HEEL>=
 [StateDef 3150]
 type = S
 physics = S
@@ -2107,7 +2107,7 @@ type = ChangeState
 trigger1 = (Pos Y >= 0) && (Vel Y > 0)
 value = 1401
 
-; ======================== 
+; == 
 [Statedef 3120]
 type = S
 movetype = H
@@ -2131,7 +2131,7 @@ value = 0
 ctrl = 1
 ;---------
 
-;========================<DOUBLE CYCLONE>=============================
+;DOUBLE CYCLONE>=
 [StateDef 3300]
 type = S
 physics = S

@@ -583,7 +583,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;==============<Slap>===================
+;Slap>=
 [Statedef 223]
 type    = S
 movetype= A
@@ -2676,7 +2676,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES
 [StateDef 805]
 type = S
 moveType = A
@@ -2747,7 +2747,7 @@ type = ChangeState
 trigger1 = AnimElemTime(3) > 0
 value = ifElse(var(10), 810, 850)
 
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)
 [StateDef 806]
 type = A
 moveType = H
@@ -2778,7 +2778,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;===========<JUDO-LIFT-THROW>================
+;JUDO-LIFT-THROW
 [Statedef 810]
 type = S
 movetype= A
@@ -2993,7 +2993,7 @@ trigger1 = Vel Y > 0
 trigger1 = Pos Y >= 0
 value = 5100 ;Hit ground
 
-;===========<BACK-OFF>================
+;BACK-OFF
 [Statedef 850]
 type = S
 movetype = H
@@ -3179,7 +3179,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<BACK-OFF! (HIT AWAY)>================
+;BACK-OFF! (HIT AWAY)
 [Statedef 851]
 type = A
 physics = N
@@ -3252,7 +3252,7 @@ trigger1 = Time >= 90
 value = 0
 ctrl = 1
 
-;===========<THROW ESC'D>==========
+;THROW ESC'D
 [StateDef 890]
 type = S
 physics = N

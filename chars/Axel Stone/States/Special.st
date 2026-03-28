@@ -1,9 +1,9 @@
 ; _______________________________________
 ;| Axel Stone by Testament             |
 ; 
-;==============================================================================================
-;========================================<SPECIAL MOVES>=======================================
-;==============================================================================================
+;==
+;SPECIAL MOVES>=
+;==
 
 ;BARE KNUCKLE
 [StateDef 1000]
@@ -454,7 +454,7 @@ ctrl = 1
 
 
 ;GRAND UPPER
-;==================================================
+;==
 [StateDef 1100]
 type = S
 physics = N
@@ -684,7 +684,7 @@ value = 0
 ctrl = 1
 
 ;GRAND UPPER 2
-;==================================================
+;==
 [StateDef 1110]
 type = S
 physics = N
@@ -920,7 +920,7 @@ value = 0
 ctrl = 1
 
 ;GRAND UPPER 3
-;==================================================
+;==
 [StateDef 1120]
 type = S
 physics = N
@@ -1165,7 +1165,7 @@ value = 0
 ctrl = 1
 
 ; EX GRAND UPPER
-;==================================================
+;==
 [StateDef 1130]
 type = S
 physics = N
@@ -1558,7 +1558,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================================================
+;==
 ;EX BURNING CRUSHER 
 [StateDef 1230]
 type = S
@@ -1953,7 +1953,7 @@ type = SelfState
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
-;========================<GOLDEN HEEL>=============================
+;GOLDEN HEEL>=
 [StateDef 1300]
 type = S
 physics =C
@@ -2162,7 +2162,7 @@ ctrl = 1
 
 
 
-;========================<EX GOLDEN HEEL>=============================
+;EX GOLDEN HEEL>=
 [StateDef 1330]
 type = S
 physics = N
@@ -2588,7 +2588,7 @@ value = 52
 
 
 
-;========================<TNT PUNCH>=============================
+;TNT PUNCH>=
 ;Slash Kick
 [StateDef 1400]
 type = S
@@ -2745,7 +2745,7 @@ ctrl = 1
 
 
 
-;========================<EX SLASH KICK>=============================
+;EX SLASH KICK>=
 [StateDef 1430]
 type = S
 physics = N
@@ -3113,7 +3113,7 @@ ctrl = 1
 
 
 
-;========================<HIT BY EX SLASH KICK>=============================
+;HIT BY EX SLASH KICK>=
 ;Being Launched
 [StateDef 1145]
 type = A
@@ -3294,7 +3294,7 @@ value = 5100
 
 
 
-;========================<PUNCH ZERO COUNTER>=============================
+;PUNCH ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -3434,7 +3434,7 @@ value = 1401
 
 
 
-;========================<KICK ZERO COUNTER>=============================
+;KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

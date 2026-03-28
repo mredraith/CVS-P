@@ -1,6 +1,6 @@
 ; ________________________________________________
 ;| Q by KarmaCharmeleon			|
-; 
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==============================================================================================
 ;=======================================<COMMAND FILE>=========================================
 ;==============================================================================================
@@ -21,7 +21,7 @@ s = s
 
 [Defaults]
 command.time = 15
-command.buffer.time = 4
+command.buffer.time = 1
 
 
 
@@ -324,7 +324,6 @@ time = 1
 ;========================================<-1 STATES>===========================================
 ;==============================================================================================
 [StateDef -1]
-
 
 ;==============================================================================================
 ;==============================================================================================
@@ -3127,7 +3126,7 @@ triggerAll = StateNo = 150 || StateNo = 152
 triggerAll = RoundState = 2 && StateType != A
 triggerAll = power >= 1000 && !var(20) && !var(40)
 ;command = "412p" || command = "412k"
-triggerAll = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
+triggerAll = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90007552)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90007502))
 ;x / y / z
 trigger1 = NumExplod(90000200) || NumExplod(90000205) || NumExplod(90000210) || NumExplod(90000215) || NumExplod(90000220) || NumExplod(90000225)
 ;a / b / c
@@ -3776,14 +3775,4 @@ trigger1 = ctrl
 trigger1 = P2Dist x >= 160 && !(EnemyNear, ctrl)
 trigger1 = (EnemyNear, MoveType = H) && (EnemyNear, HitFall) && Random < (750 * (AILevel ** 2 / 64.0))
 trigger2 = (StateNo = 3000 || StateNo = 3050 || StateNo = 3110) && !AnimTime
-trigger3 = StateNo = 1000 && !AnimTime && P2StateType = A
-
-; --- UNIVERSAL GUARD CANCEL (Added by Script) ---
-[State -1, Universal Guard Cancel]
-type = ChangeState
-value = 1100
-triggerall = !AILevel
-triggerall = StateNo = [150, 155] ; Trigger only when in block stun (standing, crouching, or air)
-triggerall = power >= 1000 ; Must have at least 1 bar of power
-trigger1 = command = "x" && command = "a" ; Light Punch + Light Kick
-trigger1 = command = "holdfwd"
+trigger3 = StateNo = 1000 && !AnimTime && P2StateType = A 

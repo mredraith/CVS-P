@@ -1,11 +1,11 @@
 ; _______________________________________
 ;| Axel Stone by Testament             |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;=======================================<SYSTEM STATES>========================================
-;==============================================================================================
+;==
+;SYSTEM STATES
+;==
 
-;====================<STANDING>====================
+;STANDING
 [StateDef 0]
 type = S
 physics = S
@@ -45,7 +45,7 @@ value = 50
 
 
 
-;====================<CROUCHING>====================
+;CROUCHING
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -117,7 +117,7 @@ value = 0
 
 
 
-;====================<WALKING>====================
+;WALKING
 [StateDef 20]
 type = S
 physics = S
@@ -150,7 +150,7 @@ value = 21
 
 
 
-;====================<JUMPING>====================
+;JUMPING
 ;Jumping
 [StateDef 40]
 type = S
@@ -367,7 +367,7 @@ ctrl = 1
 
 
 
-;======================<RUN>===========================
+;RUN>=
 [StateDef 100]
 type = S
 physics = N
@@ -444,7 +444,7 @@ ctrl = 1
 
 
 
-;========================<DASH BACKWARDS>==========================
+;DASH BACKWARDS
 [StateDef 105]
 type = A
 physics = N
@@ -526,7 +526,7 @@ ctrl = 1
 
 
 
-;=================<DASH FORWARD>=================
+;DASH FORWARD>=
 [StateDef 110]
 type = S
 physics = N
@@ -611,7 +611,7 @@ ctrl = 1
 
 
 
-;====================<DODGE>====================
+;DODGE
 [StateDef 700]
 type = S
 physics = S
@@ -665,7 +665,7 @@ ctrl = 1
 
 
 
-;================<ROLL FORWARD>================
+;ROLL FORWARD
 [StateDef 710]
 type = S
 physics = N
@@ -717,7 +717,7 @@ ctrl = 1
 
 
 
-;===============<ROLL BACKWARDS>===============
+;ROLL BACKWARDS>=
 [StateDef 715]
 type = S
 physics = N
@@ -769,7 +769,7 @@ ctrl = 1
 
 
 
-;===========<POWER CHARGE>==================
+;POWER CHARGE
 [StateDef 730]
 type = S
 physics = S
@@ -858,7 +858,7 @@ ctrl = 1
 
 
 
-;====================<ZERO COUNTER>====================
+;ZERO COUNTER
 [StateDef 750]
 type = S
 physics = S
@@ -928,7 +928,7 @@ value = ifElse(var(10) = 1, 2910, 2900)
 
 
 
-;====================<PARRY>====================
+;PARRY
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1185,7 +1185,7 @@ value=52
 
 
 
-;====================<CUSTOM COMBO>====================
+;CUSTOM COMBO
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1381,7 +1381,7 @@ value = 52
 
 
 
-;==========<TARGET SAFE FALL>==========
+;TARGET SAFE FALL
 [StateDef 5205]
 type = A
 physics = N
@@ -1411,7 +1411,7 @@ value = 5210
 
 
 
-;==========<FALL RECOVERY>==========
+;FALL RECOVERY
 [StateDef 5200]
 type = A
 moveType = H
@@ -1568,7 +1568,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;===================<GUARD>================
+;GUARD
 ;Guard Start
 [StateDef 120]
 type = U
@@ -2039,7 +2039,7 @@ value = 52
 
 
 
-;====================<LOSE>====================
+;LOSE
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2053,7 +2053,7 @@ flag = RoundNotOver
 
 
 
-;====================<DRAW GAME>====================
+;DRAW GAME
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2066,7 +2066,7 @@ value = 170
 
 
 
-;====================<CONTINUE?>====================
+;CONTINUE?
 [StateDef 5500]
 type = S
 anim = 5300
@@ -2080,7 +2080,7 @@ value = 5500
 
 
 
-;====================<INITIALIZE>====================
+;INITIALIZE
 [StateDef 5900]
 type = S
 
@@ -2137,7 +2137,7 @@ value = 0
 
 
 
-;====================<INTRO 1>====================
+;INTRO 1
 ;Stomping GALSIA Intro 
 [Statedef 190]  ;was 730
 type = S
@@ -2624,7 +2624,7 @@ value=0
 
 
 
-;====================<INTRO WALKING>====================
+;INTRO WALKING
 ;Walking Intro 
 [StateDef 192]
 type = S
@@ -2684,7 +2684,7 @@ trigger1 = time=155
 value = 0
 
 
-;====================<INTRO VS MUAY THAI FIGHTERS>====================
+;INTRO VS MUAY THAI FIGHTERS
 [StateDef 193]
 type = S
 physics = S
@@ -2708,7 +2708,7 @@ trigger1 = !AnimTime
 value = 0
 
 
-;====================<INTRO VS VILLAINS>====================
+;INTRO VS VILLAINS
 [StateDef 194]
 type = S
 physics = S
@@ -2731,7 +2731,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====================<TURNS INTRO>====================
+;TURNS INTRO
 [StateDef 6900]
 type = A
 anim = 41
@@ -2843,7 +2843,7 @@ value = 0
 
 
 
-;====================<WIN POSE DECIDER>====================
+;WIN POSE DECIDER
 [StateDef 180]
 type = S
 
@@ -2954,7 +2954,7 @@ value = 181+ (Random % 2)
 
 
 
-;====================<WIN 1>====================
+;WIN 1
 [StateDef 181]
 type = S
 physics = S
@@ -2974,7 +2974,7 @@ channel = 0
 
 
 
-;====================<WIN 2>====================
+;WIN 2
 [StateDef 182]
 type = S
 physics = S
@@ -2992,7 +2992,7 @@ trigger1 = AnimElem = 5
 value = 182,0
 channel = 0
 
-;====================<WIN 3 - With MAX >====================
+;WIN 3 - With MAX 
 [Statedef 183]
 type = S
 physics = S
@@ -3075,7 +3075,7 @@ facing=1
 ;size.xscale=.5
 ;size.yscale=.5
 
-;==========================Win 4 ==========================
+;==Win 4 ==
 [Statedef 184]
 type = S
 ctrl = 0
@@ -3135,7 +3135,7 @@ facing=1
 ;size.xscale=.5
 ;size.yscale=.5
 
-;==========================Win 4 ==========================
+;==Win 4 ==
 [Statedef 185]
 type=S
 [State 185, Assert]
@@ -3195,7 +3195,7 @@ facing=1
 ;size.xscale=.5
 ;size.yscale=.5
 
-;==========================Win 4 ==========================
+;==Win 4 ==
 ; Win pose
 [Statedef 186]
 type=S
@@ -3331,7 +3331,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;==========<TAUNT 1>==========
+;TAUNT 1
 [StateDef 195]
 type = S
 moveType = I
@@ -3354,7 +3354,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<INTRO 2>====================
+;INTRO 2
 [StateDef 196]
 type = S
 moveType = I
@@ -3389,7 +3389,7 @@ value = 0
 
 
 
-;====================<CHEAP K.O.>====================
+;CHEAP K.O.
 [StateDef 5950]
 type = S
 moveType = H
@@ -3461,7 +3461,7 @@ trigger1 = !time&& Anim = 5950
 value = 5951
 
 
-;====================<AIR HIT TRANSITION>====================
+;AIR HIT TRANSITION
 [Statedef 5035]
 type = A
 movetype = H
@@ -3501,9 +3501,9 @@ value = 5050
 
 
 
-;===========================================================================
-;===============================<-2 STATES>=================================
-;===========================================================================
+;=
+;-2 STATES>=
+;=
 [StateDef -2]
 
 [State -2, Hit Detection]
@@ -3842,9 +3842,9 @@ ignoreHitPause = 1
 
 
 
-;===========================================================================
-;===============================<-3 STATES>=================================
-;===========================================================================
+;=
+;-3 STATES>=
+;=
 [StateDef -3]
 
 [State -3, GameTime]

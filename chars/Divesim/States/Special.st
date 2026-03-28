@@ -5,7 +5,7 @@
 ;SPECIAL MOVES
 ;
 
-;YOGA FIRE>==
+;YOGA FIRE
 [StateDef 1000]
 type = S
 physics = S
@@ -160,7 +160,7 @@ ctrl = 1
 
 
 
-;YOGA FLAME>==
+;YOGA FLAME
 [StateDef 1100]
 type = S
 physics = S
@@ -336,7 +336,7 @@ value = 1101
 
 
 
-;YOGA BLAST>==
+;YOGA BLAST
 [StateDef 1200]
 type = S
 physics = S
@@ -1743,7 +1743,7 @@ value = 5100
 
 
 
-;YOGA GRASP (BODY SLAM)>==
+;YOGA GRASP (BODY SLAM)
 [Statedef 1502]
 type = S
 physics = S
@@ -1905,7 +1905,7 @@ ctrl = 1
 
 
 
-;YOGA GRASP (BODY SLAM)(TARGET)>==
+;YOGA GRASP (BODY SLAM)(TARGET)
 ;Being Thrown
 [StateDef 1513]
 type = A

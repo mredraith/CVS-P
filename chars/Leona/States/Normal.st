@@ -1,9 +1,9 @@
 ; _________________________________________
 ;| Character by Author Name                |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;========================================<NORMAL MOVES>========================================
-;==============================================================================================
+;==
+;NORMAL MOVES
+;==
 
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
@@ -1791,7 +1791,7 @@ value=0
 ctrl=1
 
 
-;===========<THROW SWITCHING SIDES>==========
+;THROW SWITCHING SIDES
 ;Throw - Switching Sides
 [Statedef 805]
 type=S
@@ -1857,7 +1857,7 @@ ctrl=1
 type=changestate
 trigger1= animelemtime(4)>=0
 value=ifelse(var(10),820,810)
-;===========<THROW SWITCHING SIDES (TARGET)>==========
+;THROW SWITCHING SIDES (TARGET)
 ;Throw - Target Switching Sides
 [StateDef 806]
 type = A

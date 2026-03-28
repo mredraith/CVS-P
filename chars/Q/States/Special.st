@@ -1,9 +1,9 @@
 ; ________________________________________________
 ;| Q by KarmaCharmeleon			|
 ; 
-;
-;SPECIAL MOVES==
-;
+;==
+;SPECIAL MOVES>=
+;==
 
 ;DASHING STRAIGHT>=
 [StateDef 1000]
@@ -2241,7 +2241,7 @@ ctrl = 1
 
 
 
-;CAPTURE & DEADLY BLOW (TARGET)=
+;CAPTURE & DEADLY BLOW (TARGET)
 ;Being Thrown
 [StateDef 1315]
 type = A
@@ -2608,7 +2608,7 @@ ctrl = 1
 
 
 
-;EX CAPTURE & DEADLY BLOW (TARGET)=
+;EX CAPTURE & DEADLY BLOW (TARGET)
 ;Being Thrown
 [StateDef 1345]
 type = A

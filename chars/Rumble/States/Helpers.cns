@@ -269,7 +269,7 @@ id = 258
 type=destroyself
 trigger1=Time>0
 
-;========================< Fire Ball >=============================
+; Fire Ball >=
 ; //Fire Ball//
 [Statedef 1005]
 type = S
@@ -540,7 +540,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================< EX Fire Ball >=============================
+; EX Fire Ball >=
 ; //EX Fire Ball//
 [Statedef 1015]
 type = S
@@ -803,7 +803,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<PROJECTILE SHIELDS>=============================
+;PROJECTILE SHIELDS>=
 ;Light/Med
 [Statedef 1250]
 type = A
@@ -903,7 +903,7 @@ trigger3 = root,stateno=1200 && (root,animelemtime(2)<0 || root,animelemtime(7)>
 trigger4 = (root,stateno=3200 || root,stateno=3250) && (root,animelemtime(2)<0 || root,animelemtime(7)>=0)
 
 
-;========================< Fire Ball Lighting Ball Fire >=============================
+; Fire Ball Lighting Ball Fire >=
 ; //Fire Ball Lighting Ball Fire//
 [Statedef 3005]
 type = S
@@ -1207,7 +1207,7 @@ value = ifelse(var(2) < 5, 3005, 3006)
 type = destroyself
 trigger1 = pos x != [ -280, 280] 
 
-;========================< Fire Ball Lighting Ball Fire >=============================
+; Fire Ball Lighting Ball Fire >=
 ; //Fire Ball Lighting Ball Fire EX//
 [Statedef 3055]
 type = S
@@ -1556,7 +1556,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================< SHINKUU SHIELD >=============================
+; SHINKUU SHIELD >=
 [Statedef 3008]
 type = A
 physics = N
@@ -1591,7 +1591,7 @@ trigger2 = playerIDexist(var(0))
 trigger2 = parent, stateno != 3005 && parent, stateno != 3015
 
 
-;========================< FIST PUNCH RAIN >=============================
+; FIST PUNCH RAIN >=
 ;= PUNCHES =
 [Statedef 3085]
 type = A
@@ -1831,7 +1831,7 @@ sprpriority = 4
 type = destroyself
 trigger1 = !animtime
 
-;========================< GRAND KUNG FU UPPER DUST >=============================
+; GRAND KUNG FU UPPER DUST >=
 ;Grand Kung Fu Upper Dust
 [Statedef 3105]
 physics = N
@@ -1875,7 +1875,7 @@ ID = -1
 type = destroyself
 trigger1 = time >= 16
 
-;========================< GRAND KUNG FU UPPER SHOCKWAVE >=============================
+; GRAND KUNG FU UPPER SHOCKWAVE >=
 ;Grand Kung Fu Upper Shockwave
 [Statedef 3106]
 physics = N
@@ -2078,7 +2078,7 @@ trigger1 = !numenemy || time >= 300
 
 
 
-;========================<SPARKS>=============================
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -2161,9 +2161,9 @@ type = DestroySelf
 trigger1 = Time >= 8
 
 
-;=========================================================================
+;=
 ;HI Res Hitspark Coding 1.0
-;=========================================================================
+;=
 ;Hit Spark for Helpers and Throws
 [StateDef 8005]
 physics = N
@@ -3550,7 +3550,7 @@ alpha = 256 - 64 * (time -4), 256
 type = destroyself
 trigger1 = time >= 8
 
-;========================< BLOOD >=============================
+; BLOOD >=
 ;--- Small ---
 [Statedef 8050]
 type = A
@@ -3782,9 +3782,9 @@ ownpal = 1
 type = destroyself
 trigger1 = 1
 
-;=========================================================================
+;=
 ;CvS Style Hitsparks
-;=========================================================================
+;=
 
 ;--- Guard Normal ---
 [Statedef 8060]
@@ -4556,7 +4556,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;======================<JUMP DUST>===========================
+;JUMP DUST>=
 ;Jump Dust 
 [StateDef 8100]
 type = S
@@ -4594,7 +4594,7 @@ ownpal = 1
 type = DestroySelf
 trigger1 = Time >= 7
 
-;======================<DASH DUST>===========================
+;DASH DUST>=
 ;Dash Dust
 [StateDef 8103]
 type = A
@@ -4655,7 +4655,7 @@ trigger1 = Time >= 22
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<LIGHT IMPACT DUST>===========================
+;LIGHT IMPACT DUST>=
 ;Light Impact Dust 
 [StateDef 8108]
 type = A
@@ -4694,7 +4694,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<LIGHT WALL IMPACT DUST>===========================
+;LIGHT WALL IMPACT DUST>=
 ;Light Wall Impact Dust 
 [StateDef 8109]
 type = A
@@ -4738,7 +4738,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<IMPACT DUST>===========================
+;IMPACT DUST>=
 ;Impact Dust 
 [StateDef 8110]
 type = A
@@ -4788,7 +4788,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;======================<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST>=
 ;Wall Impact Dust
 [StateDef 8111]
 type = A
@@ -4843,7 +4843,7 @@ trigger1 = Time >= 8
 type = DestroySelf
 trigger1 = !NumExplod
 
-;========================<RECOVER FX>=============================
+;RECOVER FX>=
 ;Recover FX
 [StateDef 8200]
 type = A
@@ -4871,7 +4871,7 @@ alpha = ceil(256 - 17.1 * Time), 256
 type = DestroySelf
 trigger1 = Time >= 15
 
-;========================<COUNTER TEXT FX>=============================
+;COUNTER TEXT FX>=
 ;Counter Text FX
 [StateDef 8290]
 type = A
@@ -4935,7 +4935,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<MAX MODE TEXT FX>=============================
+;MAX MODE TEXT FX>=
 ;MAX Mode Text FX
 [StateDef 8291]
 type = A
@@ -4980,7 +4980,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<SUPPORT TEXT FX>=============================
+;SUPPORT TEXT FX>=
 ;Support Text FX
 [StateDef 8292]
 type = A
@@ -5025,7 +5025,7 @@ trigger1 = Time >= 16
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<COUNTER CIRCLE FX>=============================
+;COUNTER CIRCLE FX>=
 ;Counter Circle FX
 [Statedef 8295]
 type = A
@@ -5060,7 +5060,7 @@ trigger1 = time >= 16
 type = destroyself
 trigger1 = !numexplod
 
-;==================<POWER CHARGE FX>==================
+;POWER CHARGE FX
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -5198,7 +5198,7 @@ type = DestroySelf
 trigger1 = Root, StateNo != 730
 trigger2 = Root, MoveType = H
 
-;==================<ZERO COUNTER FX>==================
+;ZERO COUNTER FX
 ;Zero Counter FX
 [StateDef 8350]
 type = A
@@ -5249,7 +5249,7 @@ ownPal = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;========================<CUSTOM COMBO>=============================
+;CUSTOM COMBO>=
 ;Custom Combo 
 [StateDef 8400]
 type = A
@@ -5360,7 +5360,7 @@ trigger1 = Time >= 26
 type = DestroySelf
 trigger1 = Time >= 26
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX>=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -6156,7 +6156,7 @@ type = DestroySelf
 trigger1 = Time >= 40
 trigger2 = Root,MoveType = H
 
-;=========================< SPECIAL FINISH >=================
+; SPECIAL FINISH >=
 ;Special Finish FX
 [Statedef 8600]
 ctrl = 0
@@ -6228,7 +6228,7 @@ trigger2= roundstate<3
 [State 8600, End]
 type=destroyself
 trigger1= roundstate!=3
-;========================<SUPER FINISH>=============================
+;SUPER FINISH>=
 ;Super Finish FX 
 [StateDef 8605]
 type = A
@@ -6379,7 +6379,7 @@ trigger2= roundstate<3
 type=destroyself
 trigger1= roundstate!=3
 
-;===========================<STAND AURA>===============================
+;STAND AURA>=
 ;STAND AURA
 [Statedef 8800]
 type = S
@@ -6457,8 +6457,8 @@ trigger1 = time >= 30
 trigger2 = Parent,MoveType = H && (Parent,StateNo != [120,159]) && (Parent,StateNo != [5000,5999])
 trigger3 = !alive
 
-;========================< KANJI B.G. >=============================
-;=<Kanji BG>=
+; KANJI B.G. >=
+;Kanji BG>=
 [Statedef 7610]
 physics = N
 velset = 0, 0
@@ -6672,8 +6672,8 @@ type = destroyself
 trigger1 = time >= 180
 
 
-;========================< KANJI B.G. >=============================
-;=<Kanji BG>=
+; KANJI B.G. >=
+;Kanji BG>=
 [Statedef 7611]
 physics = N
 velset = 0, 0
@@ -6823,7 +6823,7 @@ trigger1 = time >= 180
 type = destroyself
 trigger1 = time >= 180
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL>=
 ;Camera Control
 [StateDef 8999]
 type = S
@@ -6840,9 +6840,9 @@ moveCamera = 1,1
 type = DestroySelf
 trigger1 = RoundState = 2
 
-;==========================
+;==
 ; Mode_Select_Screen [helper] ; モード選択画面
-;==========================
+;==
 [statedef 180030]
 type=s
 movetype=i

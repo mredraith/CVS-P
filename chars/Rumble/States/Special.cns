@@ -1,4 +1,4 @@
-;========================<Fire Ball>=======================
+;Fire Ball>=
 ; Fire Ball
 [Statedef 1000]
 type = S
@@ -68,7 +68,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<EX>===========================
+;EX>=
 ; EX Fire Ball
 [Statedef 1050]
 type = S
@@ -168,7 +168,7 @@ ctrl = 1
 
 
 
-;========================<Uppercut>=======================
+;Uppercut>=
 ; Uppercut
 [Statedef 1100]
 type = S
@@ -387,7 +387,7 @@ trigger1 = anim = 1101
 movetype = I
 
 
-;=======================<EX UPPERCUT>===========================
+;EX UPPERCUT>=
 ; EX Uppercut
 [Statedef 1150]
 type = S
@@ -594,7 +594,7 @@ movetype = I
 
 
 
-;========================<1000 Hands>=======================
+;1000 Hands>=
 ; 1000 Hands
 [Statedef 1200]
 type = S
@@ -823,7 +823,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<EX 1000 Hands>===========================
+;EX 1000 Hands>=
 ; EX 1000 Hands
 [Statedef 1250]
 type = S
@@ -1002,7 +1002,7 @@ value = 0
 ctrl = 1
 
 
-;========================<360 KICK>=======================
+;360 KICK>=
 ; 360 Kick
 [Statedef 1300]
 type = S
@@ -1385,7 +1385,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<EX 360 KICK>===========================
+;EX 360 KICK>=
 ; EX 360 Kick
 [Statedef 1350]
 type = S

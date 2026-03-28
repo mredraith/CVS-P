@@ -1,11 +1,11 @@
 ; _______________________________________
 ;| Axel Stone by Testament             |          |
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;==
+;HELPER STATES
+;==
 
-;====================<PARRY HELPER>=========================
+;PARRY HELPER>=
 [StateDef 765]
 type = A
 physics = N
@@ -117,7 +117,7 @@ trigger2 = Time >= 2
 
 
 
-;=====================<HURRICANE UPPER PROJECTILE>=========================
+;HURRICANE UPPER PROJECTILE>=
 [StateDef 1005]
 type = S
 physics = N
@@ -547,7 +547,7 @@ type = DestroySelf
 trigger1 = (pos x != [-200,200]) || (!Root, NumHelper(1005) && !Root, NumHelper(3002))
 
 
-;========================<Projectile Blocker>=============================
+;Projectile Blocker>=
 [Statedef 1055]
 type=A
 physics=N
@@ -932,7 +932,7 @@ type = DestroySelf
 trigger1 = time>=190
 
 
-;========================<SMALL SCREW UPPER PROJECTILE>=============================
+;SMALL SCREW UPPER PROJECTILE>=
 [StateDef 3002]
 type = S
 physics = N
@@ -1176,7 +1176,7 @@ value = 1008
 
 
 
-;=====================================================
+;=
 [StateDef 3005]
 type = S
 moveType = A
@@ -1427,7 +1427,7 @@ value = 1008
 
 
 
-;==============================================
+;==
 [StateDef 3105]
 type = S
 physics = N
@@ -1577,7 +1577,7 @@ trigger2 = Anim = 1006 && !AnimTime
 
 
 
-;==============================================
+;==
 [StateDef 3205]
 type = A
 physics = N
@@ -1680,7 +1680,7 @@ trigger2 = Root, MoveType = H
 
 
 
-;=====================================================
+;=
 [StateDef 3305]
 type = S
 moveType = A
@@ -1897,7 +1897,7 @@ value = 3305
 
 
 
-;========================<LEFT DOUBLE CYCLONE PROJECTILE>=============================
+;LEFT DOUBLE CYCLONE PROJECTILE>=
 [StateDef 3307]
 type = S
 moveType = A
@@ -1930,7 +1930,7 @@ ignoreHitPause = 1
 
 
 
-;======================================================================
+;==
 ;GALSIA Helper
 [Statedef 73000]
 type    = S
@@ -2072,7 +2072,7 @@ value = 0
 type = destroyself
 trigger1 = time = 20
 
-;========================<GO!>=============================
+;GO!>=
 [Statedef 6005]
 physics=N
 velset=0,0
@@ -2100,7 +2100,7 @@ flag=invisible
 type=destroyself
 trigger1= roundstate<3
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL>=
 [Statedef 7650]
 physics=N
 velset=0,0
@@ -2115,7 +2115,7 @@ type=destroyself
 trigger1= roundstate=2
 
 
-;========================<SPARKS>=============================
+;SPARKS>=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -2872,7 +2872,7 @@ trigger1 = Time >= 8
 
 
 
-;======================<JUMP DUST>===========================
+;JUMP DUST>=
 [StateDef 8100]
 type = S
 anim = 1
@@ -2911,7 +2911,7 @@ trigger1 = Time >= 7
 
 
 
-;======================<DASH DUST>===========================
+;DASH DUST>=
 [StateDef 8103]
 type = A
 anim = 1
@@ -2972,7 +2972,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;======================<IMPACT DUST>===========================
+;IMPACT DUST>=
 [StateDef 8110]
 type = A
 anim = 1
@@ -3017,7 +3017,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;======================<WALL IMPACT DUST>===========================
+;WALL IMPACT DUST>=
 [StateDef 8111]
 type = A
 anim = 1
@@ -3062,7 +3062,7 @@ type = DestroySelf
 trigger1 = !NumExplod
 
 
-;========================<FLAMES>=============================
+;FLAMES>=
 [StateDef 8150]
 type = A
 velSet = 0,0
@@ -3131,7 +3131,7 @@ trigger3 = PlayerID(var(0)), StateType = L && (PlayerID(var(0)), StateNo != [508
 
 
 
-;========================<RECOVER FX>=============================
+;RECOVER FX>=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -3163,7 +3163,7 @@ trigger1 = Time >= 15
 
 
 
-;========================<COUNTER FX>=============================
+;COUNTER FX>=
 [StateDef 8290]
 type = A
 physics = N
@@ -3209,7 +3209,7 @@ trigger1 = Time >= 16
 
 
 
-;==================<POWER CHARGE FX>==================
+;POWER CHARGE FX
 [StateDef 8330]
 type = A
 physics = N
@@ -3317,7 +3317,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;==================<ZERO COUNTER FX>==================
+;ZERO COUNTER FX
 [StateDef 8350]
 type = A
 physics = N
@@ -3369,7 +3369,7 @@ trigger1 = Time >= 16
 
 
 
-;========================<CUSTOM COMBO>=============================
+;CUSTOM COMBO>=
 [StateDef 8400]
 type = A
 physics = N
@@ -3475,7 +3475,7 @@ trigger1 = Time >= 26
 
 
 
-;========================<SUPER PAUSE FX>=============================
+;SUPER PAUSE FX>=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -3919,7 +3919,7 @@ trigger1 = Time >= 40
 
 
 
-;========================<SUPER FINISH>=============================
+;SUPER FINISH>=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -4080,7 +4080,7 @@ trigger1 = RoundState < 3
 
 
 
-;========================<CAMERA CONTROL>=============================
+;CAMERA CONTROL>=
 [StateDef 8999]
 type = S
 velSet = 0,0

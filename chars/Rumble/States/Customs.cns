@@ -1,4 +1,4 @@
-;========================<HIT WALL>=============================
+;HIT WALL>=
 ;Wall Bounce-Hit Pause
 [Statedef 1125]
 type=A
@@ -164,7 +164,7 @@ value=0
 type=selfstate
 trigger1= vel y>0 && pos y>=0
 value=5100
-;========================<HIT GROUND>=============================
+;HIT GROUND>=
 ;Ground Bounce-Hit Pause
 [StateDef 1225]
 type = A
@@ -299,7 +299,7 @@ persistent = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !HitShakeOver
-value = 3220  ;<=======custom animation
+value = 3220  ;<=custom animation
 
 [State 0, SelfState]
 type = SelfState
@@ -335,7 +335,7 @@ persistent = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !HitShakeOver
-value = 3221  ;<=======custom animation
+value = 3221  ;<=custom animation
 
 [State 0, SelfState]
 type = SelfState
@@ -363,7 +363,7 @@ y =.45
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020  ;<=======custom animation
+value = 4020  ;<=custom animation
 
 [State 0, ChangeState]
 type = changeState

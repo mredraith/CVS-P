@@ -1,4 +1,4 @@
-;======================<Fire Ball Lithting Ball Fire>=============================
+;Fire Ball Lithting Ball Fire>=
 ; FireBall Throw LithtingBall throw Fire
 [Statedef 3000]
 type = S
@@ -130,7 +130,7 @@ trigger1 = !animtime
 value = 0
 ctrl = 1
 
-;======================<Fire Ball Lithting Ball Fire MAX>===================
+;Fire Ball Lithting Ball Fire MAX>=
 ; FireBall Throw LithtingBall throw Fire Max
 [Statedef 3050]
 type    = S
@@ -276,7 +276,7 @@ value = 0
 ctrl = 1
 
 
-;======================<Fist Punch Rain>===================
+;Fist Punch Rain>=
 ; Fist Punch Rain
 [Statedef 3100]
 type    = S
@@ -399,7 +399,7 @@ value = 0
 ctrl = 1
 
 
-;======================<Fist Punch Rain Max>===================
+;Fist Punch Rain Max>=
 ; Fist Punch Rain Max
 [Statedef 3150]
 type    = S
@@ -535,7 +535,7 @@ value = 0
 ctrl = 1
 
 
-;======================< Super Rumble Combo >===================
+; Super Rumble Combo >=
 ; Super Rumble Combo
 [Statedef 4000]
 type = S
@@ -1556,7 +1556,7 @@ trigger1 = time = 30
 value = 5300
 
 
-;======================<Ultimate Combo>===================
+;Ultimate Combo>=
 ; Ultimate Combo
 [Statedef 4100]
 type = S

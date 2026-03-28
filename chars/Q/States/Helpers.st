@@ -1,11 +1,11 @@
 ; ________________________________________________
 ;| Q by KarmaCharmeleon			|
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;
-;HELPER STATES=
-;
+;==
+;HELPER STATES
+;==
 
-;PARRY HELPER=
+;PARRY HELPER>=
 [StateDef 765]
 type = A
 physics = N
@@ -1131,7 +1131,7 @@ trigger1 = Time >= 8
 
 
 
-;JUMP DUST=
+;JUMP DUST>=
 [StateDef 8100]
 type = S
 anim = 1
@@ -1170,7 +1170,7 @@ trigger1 = Time >= 7
 
 
 
-;DASH DUST=
+;DASH DUST>=
 [StateDef 8103]
 type = A
 anim = 1
@@ -1232,7 +1232,7 @@ trigger1 = !NumExplod
 
 
 
-;IMPACT DUST=
+;IMPACT DUST>=
 [StateDef 8110]
 type = A
 anim = 1
@@ -1529,7 +1529,7 @@ trigger1 = Time >= 16
 
 
 
-;POWER CHARGE FX>=
+;POWER CHARGE FX
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -1638,7 +1638,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;ZERO COUNTER FX>=
+;ZERO COUNTER FX
 [StateDef 8350]
 type = A
 physics = N
@@ -2054,11 +2054,12 @@ trigger1 = 1
 flag = NoShadow
 ignoreHitPause = 1
 
-[State 8520, Assert: NoBG, NoFG]
+[State 8520, Assert: NoBarDisplay, NoBG, NoFG]
 type = AssertSpecial
 trigger1 = Time < 40
-flag = NoBG
-flag2 = NoFG
+flag = NoBarDisplay
+flag2 = NoBG
+flag3 = NoFG
 
 [State 8520, Rotate]
 type = AngleSet
@@ -2394,7 +2395,10 @@ type = AssertSpecial
 trigger1 = Time < 16
 flag = NoFG
 
-
+[State 8600, Assert: NoBarDisplay]
+type = AssertSpecial
+trigger1 = Time < 24
+flag = NoBarDisplay
 
 [State 8600, RemoveExplod]
 type = RemoveExplod
@@ -2426,7 +2430,7 @@ trigger1 = RoundState = 2
 
 
 
-;LEG HELPER HELPER (WIN 2)=
+;LEG HELPER HELPER (WIN 2)>=
 [Statedef 10184]
 type = S
 physics = N
@@ -2441,7 +2445,7 @@ trigger1 = Root, StateNo != 184
 
 
 
-;VICTIM 1 HELPER (INTRO)=
+;VICTIM 1 HELPER (INTRO)>=
 [Statedef 10190]
 type = S
 physics = N
@@ -2472,7 +2476,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;VICTIM 2 HELPER (INTRO)=
+;VICTIM 2 HELPER (INTRO)>=
 [Statedef 11190]
 type = S
 physics = N
@@ -2503,7 +2507,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;VICTIM 3 HELPER (INTRO)=
+;VICTIM 3 HELPER (INTRO)>=
 [Statedef 12190]
 type = S
 physics = N
@@ -2534,7 +2538,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;VICTIM 4 HELPER (INTRO)=
+;VICTIM 4 HELPER (INTRO)>=
 [Statedef 13190]
 type = S
 physics = N
@@ -2565,7 +2569,7 @@ trigger1 = FrontEdgeDist < -100
 
 
 
-;SUPER ARMOR=
+;SUPER ARMOR>=
 [StateDef 13200]
 type = S
 physics = N
