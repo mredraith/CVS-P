@@ -3088,8 +3088,7 @@ add = -256,-256,-256
 [State 3310, AssertSpecial]
 type = AssertSpecial
 trigger1 = AnimElemTime(15) >= 0 && AnimElemTime(25) < 0
-flag = NoBarDisplay
-flag2 = NoFG
+flag = NoFG
 
 [State 3310, AssertSpecial]
 type = AssertSpecial

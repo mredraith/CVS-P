@@ -318,6 +318,32 @@ name = "b+c"
 command = b+c
 time = 1
 
+[Command]
+name = "412p"
+command = /$F, x+y
+time = 8
+[Command]
+name = "412p"
+command = /$F, x+z
+time = 8
+[Command]
+name = "412p"
+command = /$F, y+z
+time = 8
+
+[Command]
+name = "412k"
+command = /$F, a+b
+time = 8
+[Command]
+name = "412k"
+command = /$F, a+c
+time = 8
+[Command]
+name = "412k"
+command = /$F, b+c
+time = 8
+
 
 
 ;==============================================================================================
@@ -3513,12 +3539,11 @@ trigger1 = Random < (ifElse((P2StateNo = [200, 699]), 100, ifElse((P2StateNo = [
 [State -1, Zero Counter]
 type = ChangeState
 value = 750
-trigger1 = AILevel && NumEnemy
-trigger1 = StateNo = 150 || StateNo = 152
-trigger1 = RoundState = 2 && StateType != A
-trigger1 = Power >= 1000 && var(20) <= 60 && !var(40)
-trigger1 = Random < (25 * (AILevel ** 2 / 64.0))
-trigger1 = (P2BodyDist x = [0,50]) && (Life < 0.5 * LifeMax)
+triggerAll = !AILevel
+triggerAll = StateNo = 150 || StateNo = 152
+triggerAll = RoundState = 2 && StateType != A
+triggerAll = power >= 1000 && !var(20)
+trigger1 = command = "412p" || command = "412k"
 
 [State -1, Power Charge]
 type = ChangeState

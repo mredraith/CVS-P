@@ -2808,6 +2808,11 @@ trigger1 = AnimElem = 7
 value = 1, 5
 channel = 1
 
+[State 650, Boost]
+type = VelAdd
+trigger1 = AnimElem = 7
+x = 2
+
 [State 650, HitDef]
 type = HitDef
 triggerAll = !var(16) && (var(15) < 1 || var(20))
