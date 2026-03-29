@@ -1583,7 +1583,7 @@ channel = 1
 [State 450, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem >= 5
+trigger1 = AnimElem = 7
 ID = 450
 attr = C, NA
 hitFlag = MAF
