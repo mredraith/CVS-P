@@ -1,5 +1,5 @@
 ; _______________________________________________
-;|            Cody Travers by Trololo            |
+;| Cody Travers by Trololo |
 ; 
 ;
 ;NORMAL MOVES=
@@ -1906,7 +1906,7 @@ value = 52
 ;JUMPING MEDIUM PUNCH=
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 anim = ifelse(var(40), 10610, 610)
 ctrl = 0
@@ -2811,7 +2811,7 @@ pos = ceil(-16 * const(size.xScale)), ceil(-98 * const(size.yScale))
 [State 810, TargetBind 4]
 type = TargetBind
 trigger1 = NumTarget
-trigger1 = AnimElemTime(5) >= 0  && AnimElemTime(6) < 0
+trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(6) < 0
 pos = ceil(-76 * const(size.xScale)), ceil(-23 * const(size.yScale))
 
 [State 810, Damage]

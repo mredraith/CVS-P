@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Ibuki by varo_hades                     |
+;| Ibuki by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -4121,7 +4121,7 @@ y = 10
 
 [State 0, CtrlSet]
 type = CtrlSet
-trigger1 =  time >= 34
+trigger1 = time >= 34
 value = 1
 
 [State 806,2]
@@ -4405,7 +4405,7 @@ y = 10
 
 [State 0, CtrlSet]
 type = CtrlSet
-trigger1 =  time >= 34
+trigger1 = time >= 34
 value = 1
 
 [State 806,2]

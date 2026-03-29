@@ -2870,7 +2870,7 @@ trigger1= !numexplod
 ;KEN HELPER=
 ;---Entrance---
 [Statedef 6200]
-type    = A
+type = A
 movetype = I
 physics = N
 ctrl = 0
@@ -2919,7 +2919,7 @@ value = 6201
 
 ;Shouryuken Combo
 [Statedef 6201]
-type    = S
+type = S
 movetype = A
 physics = N
 ctrl = 0
@@ -3061,7 +3061,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3111,7 +3111,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3161,7 +3161,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3211,7 +3211,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3260,7 +3260,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0, -20.5
 air.velocity = 0, -20.5
@@ -3308,7 +3308,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0, -20.5
 air.velocity = 0, -20.5
@@ -3401,7 +3401,7 @@ value = 6203
 
 ;---Back Dash Away---
 [Statedef 6203]
-type    = A
+type = A
 physics = N
 movetype = I
 ctrl = 0
@@ -3436,7 +3436,7 @@ trigger1 = Pos x != [-250,250]
 
 ;Standing state
 [Statedef 6210]
-type    = S
+type = S
 physics = N
 anim = 6210
 

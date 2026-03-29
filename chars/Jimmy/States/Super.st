@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by ZMugens               |
+;| Character by ZMugens |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SUPER MOVES=
@@ -150,12 +150,12 @@ animtype = Diagup
 damage = ceil(ifElse(fvar(11) * 150 < 7, 7, fvar(11) * 150)), 7
 guardflag = M
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 30, 30
 ground.type = High
 guard.slidetime = 13
-ground.hittime  = 21
+ground.hittime = 21
 guard.hittime = (21) - 6
 ground.velocity = -10,-2
 guard.velocity=-12
@@ -327,12 +327,12 @@ animtype = Hard
 damage = 100+((prevstateno=[100,101])||prevstateno=250)*30, 6
 guardflag = M
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 32, 32
 ground.type = High
 guard.slidetime = 13
-ground.hittime  = 21
+ground.hittime = 21
 guard.hittime = (21) - 6
 ground.velocity = 0
 guard.velocity=-12
@@ -374,7 +374,7 @@ value = 0
 ctrl = 1
 
 [Statedef 2060]
-type    = S
+type = S
 movetype = A
 physics = N
 poweradd = 60
@@ -457,12 +457,12 @@ animtype = Up
 damage = ceil(ifElse(fvar(11) * 150 < 7, 7, fvar(11) * 150)), 7
 guardflag = MA
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 32, 32
 ground.type = High
 guard.slidetime = 6
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -1.5, -9.5
 air.velocity = -1.5, -9.5
@@ -628,14 +628,14 @@ animtype = Hard
 damage = ceil(ifElse(fvar(11) * 50 < 7, 7, fvar(11) * 50)), 7
 guardflag = M
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 32, 32
 ground.type = High
 guard.slidetime = 13
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
-air.hittime  = 30
+air.hittime = 30
 ground.velocity = 0
 guard.velocity=-12
 air.velocity = -3.2,-1.5
@@ -676,7 +676,7 @@ value = 0
 ctrl = 1
 
 [Statedef 2110]
-type    = S
+type = S
 movetype = A
 physics = N
 poweradd = 60
@@ -798,12 +798,12 @@ animtype = Up
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 7
 guardflag = MA
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 32, 32
 ground.type = High
 guard.slidetime = 6
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -.5, -8.5
 air.velocity = 0, -8.5
@@ -834,12 +834,12 @@ animtype = DiagUp
 damage = ceil(ifElse(fvar(11) * 170 < 7, 7, fvar(11) * 170)), 7
 guardflag = MA
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 20, 20
 ground.type = High
 guard.slidetime = 6
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6.5, -6.5
 air.velocity = -6.5, -6.5
@@ -1302,14 +1302,14 @@ animtype = Up
 damage = 70+((prevstateno=[100,101])||prevstateno=250)*30, 6
 guardflag = M
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 32, 32
 ground.type = High
 guard.slidetime = 13
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
-air.hittime  = 30
+air.hittime = 30
 ground.velocity = 0
 guard.velocity=-12
 air.velocity = -3.2,-1.5
@@ -1350,7 +1350,7 @@ value = 0
 ctrl = 1
 
 [Statedef 3507]
-type    = S
+type = S
 movetype = A
 physics = N
 poweradd = 60
@@ -1474,12 +1474,12 @@ animtype = Up
 damage = 65, 6
 guardflag = MA
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 32, 32
 ground.type = High
 guard.slidetime = 6
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -.5, -8.5
 air.velocity = 0, -8.5
@@ -1510,12 +1510,12 @@ animtype = DiagUp
 damage = 143, 6
 guardflag = MA
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 20, 20
 ground.type = High
 guard.slidetime = 6
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6.5, -9.5
 air.velocity = -6.5, -9.5
@@ -1664,12 +1664,12 @@ animtype = Hard
 damage = 10, 0
 guardflag = M
 hitflag = MAF
-getpower  = 10,5
+getpower = 10,5
 givepower = 10,5
 pausetime = 10, 10
 ground.type = High
 guard.slidetime = 6
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -1756,7 +1756,7 @@ type=Playerpush
 trigger1=1
 value=0
 
-[State 3010,  AfterImage]
+[State 3010, AfterImage]
 type = AfterImage
 trigger1 = !time
 time = 111
@@ -2692,7 +2692,7 @@ value=5100
 
 
 [Statedef 4054];‚Ó‚Á‚Æ‚Î‚µ
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2726,7 +2726,7 @@ value = 242
 
 
 [Statedef 4058];—‹‚Ó‚Á‚Æ‚Î‚µ
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3566,7 +3566,7 @@ type=Playerpush
 trigger1=1
 value=0
 
-[State 3010,  AfterImage]
+[State 3010, AfterImage]
 type=AfterImage
 trigger1=!time
 time=111
@@ -4600,7 +4600,7 @@ ctrl=1
 
 
 [Statedef 4507]
-type    = S
+type = S
 movetype = A
 physics = N
 velset = 0,0
@@ -4870,7 +4870,7 @@ value=5100
 
 
 [Statedef 4553];ƒ‰ƒCƒgƒjƒ“ƒOƒeƒCƒ‹
-type   =A
+type =A
 movetype=H
 physics=N
 velset=0,0
@@ -4924,7 +4924,7 @@ value=5050
 
 
 [Statedef 4554];‚Ó‚Á‚Æ‚Î‚µ
-type   =A
+type =A
 movetype=H
 physics=N
 velset=0,0

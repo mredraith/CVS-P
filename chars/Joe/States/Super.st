@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Joe Higashi by Jmorphman              |
+;| Joe Higashi by Jmorphman |
 ; 
 ;
 ;SUPER STATES=

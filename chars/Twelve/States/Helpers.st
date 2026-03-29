@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ; HELPER STATES =
@@ -27,7 +27,7 @@ persistent = 1
 
 ;FRONT ARM FOR THROW=
 [Statedef 811]
-type    = S
+type = S
 movetype= I
 physics = N
 anim = 811 + ifelse(parent, stateno = 850, 44, ifelse(parent, stateno = 830, 20, 0))
@@ -301,7 +301,7 @@ name = "hitsparks"
 ID = 8013
 stateno = 8013
 pos = ifelse((Abs(P2bodydist X)-10)<20,20,10), -40
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -317,7 +317,7 @@ name = "hitsparks"
 ID = 8000
 stateno = 8000
 pos = ifelse((Abs(P2bodydist X)-10)<20,10,0), -40
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -436,7 +436,7 @@ trigger3 = time = 20
 anim = 3006
 ID = time
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 0
@@ -461,7 +461,7 @@ trigger3 = time = 22
 anim = 3007
 ID = time
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -485,7 +485,7 @@ trigger3 = time = 24
 anim = 3008
 ID = time
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -510,7 +510,7 @@ trigger3 = time = 26
 anim = 3009
 ID = time
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -535,7 +535,7 @@ trigger3 = time = 28
 anim = 3010
 ID = time
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -598,7 +598,7 @@ name = "hitsparks"
 ID = 8013
 stateno = 8013
 pos = ifelse((Abs(P2bodydist X)-10)<20,20,10), -10
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -614,7 +614,7 @@ name = "hitsparks"
 ID = 8000
 stateno = 8000
 pos = ifelse((Abs(P2bodydist X)-10)<20,10,0), -10
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1

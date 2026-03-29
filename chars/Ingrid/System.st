@@ -2426,11 +2426,11 @@ var(51) = 1
 
 [State 0, Explod]
 type = Explod
-trigger1 =  numexplod(10010) < 1
+trigger1 = numexplod(10010) < 1
 anim = 10010 + (root,var(59)%10)
 ID = 10010
 pos = 18,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2451,7 +2451,7 @@ trigger1 = numexplod(10020) < 1
 anim = 10010 + (((root,var(59) % 100) - (root,var(59) % 10))/10)
 ID = 10020
 pos = -18,20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

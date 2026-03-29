@@ -1,8 +1,8 @@
 ;------------------------------------------------------------------
 ;Flash Chop
 [Statedef 1000]
-type    = S
-movetype= A                      
+type = S
+movetype= A 
 physics = S 
 ctrl=0
 velset=0,0
@@ -254,7 +254,7 @@ name="shield"
 ID=1004
 stateno=1004
 pos=0,0
-postype=p1   
+postype=p1 
 facing=1
 keyctrl=0
 ownpal=1
@@ -286,8 +286,8 @@ ctrl=1
 ;------------------------------------------------------------------
 ;EX-FlashChop
 [Statedef 1030]
-type    = S
-movetype= A                      
+type = S
+movetype= A 
 physics = S 
 anim=1030
 ctrl=0
@@ -366,7 +366,7 @@ name="shield"
 ID=1004
 stateno=1004
 pos=0,0
-postype=p1   
+postype=p1 
 facing=1
 keyctrl=0
 ownpal=1
@@ -381,7 +381,7 @@ name="shield"
 ID =1004
 stateno=1004
 pos=0,0
-postype=p1   
+postype=p1 
 facing=1
 keyctrl=0
 ownpal=1
@@ -535,7 +535,7 @@ name="shield"
 ID=1004
 stateno=1004
 pos=0,0
-postype=p1   
+postype=p1 
 facing=1
 keyctrl=0
 ownpal=1

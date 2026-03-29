@@ -1237,7 +1237,7 @@ ctrl=1
 ;Running=
 ;Running
 [Statedef 100]
-type   =S
+type =S
 movetype=I
 physics=S
 ctrl=0
@@ -1471,7 +1471,7 @@ ctrl=1
 ;HIT GROUND(BOUNCE)==
 ;Hit Ground
 [Statedef 5100]
-type   =L
+type =L
 movetype= H
 physics=N
 
@@ -1561,7 +1561,7 @@ time=20
 ;HIT LIEDOWN=
 ;Hit Liedown
 [Statedef 5110]
-type   =L
+type =L
 movetype= H
 physics=N
 
@@ -1680,7 +1680,7 @@ waveform=sine
 ;---------------------------------------------------------------------------
 ; Downed get-hit (lying defeated)
 [Statedef 5150]
-type    = L
+type = L
 movetype= H
 physics = N
 sprpriority = -3
@@ -2750,7 +2750,7 @@ value=7828
 ;OFF SCREEN RUN IN==
 ;Off Screen Run In
 [Statedef 7828]
-type   =S
+type =S
 physics=S
 anim=100
 ctrl=0
@@ -2806,7 +2806,7 @@ ctrl=0
 ;OFF SCREEN RUN STOP==
 ;Off Screen Run Stop
 [Statedef 7829]
-type   =S
+type =S
 physics=S
 anim=101
 ctrl=0
@@ -3318,7 +3318,7 @@ ignorehitpause=1
 trigger1=1
 type=DisplayToClipboard
 ignorehitpause=1
-text="Damp=%d Limit=%d juggle=%d hit=%d  Front =%d Back=%d"
+text="Damp=%d Limit=%d juggle=%d hit=%d Front =%d Back=%d"
 params=fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]
@@ -3420,7 +3420,7 @@ ignoreHitPause=1
 [State -3, Custom Combo Check]
 type=VarSet
 trigger1=var(20) && (StateNo=[200,699]) && MoveContact
-trigger2=var(20) && (stateno=[200, 650]) && movecontact && stateno!=221 && stateno!=450  
+trigger2=var(20) && (stateno=[200, 650]) && movecontact && stateno!=221 && stateno!=450 
 trigger3=var(20) && stateno=1000 && movecontact && animelemtime(4)>1 && animelemtime(9)<0
 trigger4=var(20) && stateno=1010 && movecontact && animelemtime(4)<0
 trigger5=var(20) && (stateno=1020||stateno=1025) && movecontact
@@ -3430,7 +3430,7 @@ trigger7=Numhelper(1205)
 trigger7=Helper(1205),var(18)
 trigger8=var(20) && stateno=1210 && animelemtime(2)>1 && animelemtime(6)<0
 trigger8=Numhelper(1215)
-trigger8=Helper(1215),var(18)  
+trigger8=Helper(1215),var(18) 
 trigger9=var(20) && stateno=1220 && animelemtime(4)>1 && animelemtime(8)<0
 trigger9=Numhelper(1225)
 trigger9=Helper(1225),var(18)
@@ -3456,7 +3456,7 @@ trigger7=Numhelper(1205)
 trigger7=Helper(1205),var(18)
 trigger8=var(20) && stateno=1210 && animelemtime(2)>1 && animelemtime(6)<0
 trigger8=Numhelper(1215)
-trigger8=Helper(1215),var(18)  
+trigger8=Helper(1215),var(18) 
 trigger9=var(20) && stateno=1220 && animelemtime(4)>1 && animelemtime(8)<0
 trigger9=Numhelper(1225)
 trigger9=Helper(1225),var(18)
@@ -3482,7 +3482,7 @@ trigger7=Numhelper(1205)
 trigger7=Helper(1205),var(18)
 trigger8=(stateno=1210||stateno=1260) && animelemtime(2)>1 && animelemtime(6)<0
 trigger8=Numhelper(1215)
-trigger8=Helper(1215),var(18)  
+trigger8=Helper(1215),var(18) 
 trigger9=(stateno=1220||stateno=1270) && animelemtime(4)>1 && animelemtime(8)<0
 trigger9=Numhelper(1225)
 trigger9=Helper(1225),var(18)

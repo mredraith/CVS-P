@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Oro by varo_hades                       |
+;| Oro by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES==

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SUPER MOVES=
@@ -400,11 +400,11 @@ envShake.freq = 120
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 8
-physics = S         ;A,C,S,N
+physics = S ;A,C,S,N
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 9
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 3000, End]
 type = ChangeState
@@ -1015,9 +1015,9 @@ value = 3102
 type = StateTypeSet
 triggerall = anim = 3102
 trigger1 = animelem = 1
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = S ;A,C,S,N
 
 [State 0, ChangeState]
 type = ChangeState

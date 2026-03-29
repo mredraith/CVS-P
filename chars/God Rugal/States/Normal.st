@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rugal by varo_hades                     |
+;| Rugal by varo_hades |
 ; 
 ;
 ;NORMAL MOVES

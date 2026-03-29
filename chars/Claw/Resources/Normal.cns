@@ -10,7 +10,7 @@
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
 [Statedef 200]
-type   =S
+type =S
 movetype= A
 physics=S
 velset=0,0
@@ -103,7 +103,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
 [Statedef 210]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 20 * !var(20)
@@ -128,10 +128,10 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=anim=210&&!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-priority=4 ,Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+priority=4 ,Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 48 < 7, 7, fvar(10) * 48)),ceil(ifElse(fvar(10) * 68 < 7, 7, fvar(10) * 68))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=20 * !var(20), 0
@@ -196,7 +196,7 @@ ctrl=1
 ;------------------------------------------
 ; Standing Strong Punch
 [Statedef 220]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 30 * !var(20)
@@ -222,11 +222,11 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=anim=220&&!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 80 < 7, 7, fvar(10) * 80)),ceil(ifElse(fvar(10) * 98 < 7, 7, fvar(10) * 98))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=30 * !var(20), 0
@@ -240,7 +240,7 @@ hitsound=S3,2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low   
+ground.type=Low 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -264,11 +264,11 @@ palFX.sinAdd= -255,-255,-255,48
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=anim=225&&!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 80 < 7, 7, fvar(10) * 80)),ceil(ifElse(fvar(10) * 98 < 7, 7, fvar(10) * 98))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=30 * !var(20), 0
@@ -282,7 +282,7 @@ hitsound=S3,2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High  
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -341,7 +341,7 @@ ctrl=1
 ; Dodge Strong Punch/Z-Counter Punch
 guardflags = 
 [Statedef 221]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= ifElse(PrevStateNo=750, 0, 30 * !var(20))
@@ -372,11 +372,11 @@ value=SCA
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo != 750
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = Ifelse(var(55),75,96), 0
 ;ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=30 * !var(20), 0
@@ -390,7 +390,7 @@ hitsound=S3,2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High      
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -414,11 +414,11 @@ palFX.sinAdd= -255,-255,-255,48
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo=750
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=6, Hit   ;Higher priority for counters
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=6, Hit ;Higher priority for counters
 damage=105, 0
 ;ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=0, 0
@@ -432,7 +432,7 @@ hitsound=S3,2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -483,7 +483,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
 [Statedef 230]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 10 * !var(20)
@@ -508,10 +508,10 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Light         
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Light 
 priority=4,Hit 
 damage = 21,0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
@@ -526,7 +526,7 @@ hitsound=S2+10*var(44),3
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High    
+ground.type=High 
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
@@ -561,7 +561,7 @@ ctrl=1
 ;------------------------------------------------------
 ; Standing Medium Kick
 [Statedef 240]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 20 * !var(20)
@@ -586,11 +586,11 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Medium         
-priority=4,Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Medium 
+priority=4,Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 52 < 7, 7, fvar(10) * 52)),ceil(ifElse(fvar(10) * 63 < 7, 7, fvar(10) * 63))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=20 * !var(20), 0
@@ -638,7 +638,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Standing Strong Kick
 [Statedef 250]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 30 * !var(20)
@@ -663,11 +663,11 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1 = !time
-attr = S,NA        
-hitflag = MAF       
-guardflag = M         
-animtype = Hard         
-priority = 4, Hit   
+attr = S,NA 
+hitflag = MAF 
+guardflag = M 
+animtype = Hard 
+priority = 4, Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 75 < 7, 7, fvar(10) * 75)),ceil(ifElse(fvar(10) * 96 < 7, 7, fvar(10) * 96))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower = 30 * !var(20), 0
@@ -693,7 +693,7 @@ air.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-2.5,-5)),Ifelse(var(55)=2,-5,
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel =  Ifelse(var(55)=2,.4,.65)
+yaccel = Ifelse(var(55)=2,.4,.65)
 fall = 0
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -732,7 +732,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Piece of Mercury
 [Statedef 260]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 30 * !var(20)
@@ -858,7 +858,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Cosmic Hell
 [Statedef 270]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 30 * !var(20)
@@ -988,7 +988,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
 [Statedef 400]
-type   =C
+type =C
 movetype= A
 physics=C
 poweradd= 10 * !var(20)
@@ -1013,14 +1013,14 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time
-attr=C,NA        
-hitflag=MAF       
-guardflag=M         
+attr=C,NA 
+hitflag=MAF 
+guardflag=M 
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=10 * !var(20), 0
 givepower=30,30
-animtype=Light         
-priority=4,Hit   
+animtype=Light 
+priority=4,Hit 
 damage = 25, 0
 pausetime =Ifelse(var(20), 4, 8), Ifelse(var(20), 4, 8)
 guard.pausetime = Ifelse(var(20), 4, 8), Ifelse(var(20), 4, 8)
@@ -1031,7 +1031,7 @@ hitsound=S3,0
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
@@ -1081,7 +1081,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
 [Statedef 410]
-type   =C
+type =C
 movetype= A
 physics=C
 poweradd= 20 * !var(20)
@@ -1106,11 +1106,11 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!time
-attr=C,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Medium         
-priority=4 ,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Medium 
+priority=4 ,Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 48 < 7, 7, fvar(10) * 48)),ceil(ifElse(fvar(10) * 68 < 7, 7, fvar(10) * 68))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=20 * !var(20), 0
@@ -1124,7 +1124,7 @@ guard.sparkNo=-1 + 0 * (var(34) := 8000)
 sparkXY=-10 + 0 * (var(35) := 130), var(36) := -43
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=15 + 3*var(9)
 ground.hittime=15 + 3*var(9)
@@ -1173,7 +1173,7 @@ ctrl=1
 ;--------------------------------------------------------------------------
 ; Crouching Strong Punch
 [Statedef 420]
-type   =C
+type =C
 movetype= A
 physics=C
 poweradd= 30 * !var(20)
@@ -1198,11 +1198,11 @@ channel = 0
 type = HitDef
 trigger1= !var(16) && (var(15)<1 || var(20)) 
 trigger1 = !time
-attr = C,NA        
-hitflag = MAF       
-guardflag = M         
-animtype = Hard         
-priority = 4, Hit   
+attr = C,NA 
+hitflag = MAF 
+guardflag = M 
+animtype = Hard 
+priority = 4, Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 80 < 7, 7, fvar(10) * 80)),ceil(ifElse(fvar(10) * 98 < 7, 7, fvar(10) * 98))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower = 30 * !var(20), 0
@@ -1275,7 +1275,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Crouching Light Kick
 [Statedef 430]
-type   =C
+type =C
 movetype= A
 physics=C
 poweradd= 10 * !var(20)
@@ -1300,11 +1300,11 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time
-attr=C,NA        
-hitflag=MAF       
-guardflag=L         
-animtype=Light         
-priority=4,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=L 
+animtype=Light 
+priority=4,Hit 
 damage =21, 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=10 * !var(20), 0
@@ -1318,7 +1318,7 @@ hitsound=S2+10*var(44),3
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
@@ -1351,7 +1351,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Crouch Medium Kick
 [Statedef 440]
-type   =C
+type =C
 movetype= A
 physics=C
 poweradd= 10 * !var(20)
@@ -1376,11 +1376,11 @@ channel = 0
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time
-attr=C,NA        
-hitflag=MAF       
-guardflag=L         
-animtype=Medium         
-priority=4,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=L 
+animtype=Medium 
+priority=4,Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 45 < 7, 7, fvar(10) * 45)),ceil(ifElse(fvar(10) * 65 < 7, 7, fvar(10) * 65))), 0
 ID = ifElse(numtarget(1130), 201, 200*!var(20))
 getpower=10 * !var(20), 0
@@ -1394,7 +1394,7 @@ hitsound=S2+10*var(44),4
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=15 + 2*var(9)
 ground.hittime=15 + 2*var(9)
@@ -1427,7 +1427,7 @@ ctrl=1
 ;--------------------------------------------------------------------------
 ; Crouch Strong Kick
 [Statedef 450]
-type   =C
+type =C
 movetype= A
 physics=C
 poweradd=ifElse(PrevStateNo=750, 0, 30 * !var(20));no power gain for z-counter
@@ -1479,11 +1479,11 @@ ownPal = 1
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo != 750
-attr=C,NA        
-hitflag=MAF       
-guardflag=L         
-animtype=Hard         
-priority=4,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=L 
+animtype=Hard 
+priority=4,Hit 
 damage = Ifelse(var(55),ceil(ifElse(fvar(10) * 78 < 7, 7, fvar(10) * 78)),ceil(ifElse(fvar(10) * 102 < 7, 7, fvar(10) * 102))), 0
 getpower=30 * !var(20), 0
 givepower=30, 30
@@ -1496,7 +1496,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Trip     
+ground.type=Trip 
 air.type=Trip
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -1522,11 +1522,11 @@ fall.envshake.ampl=Ifelse(random<=500,-4,4)
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo=750
-attr=C,NA        
-hitflag=MAF       
-guardflag=L         
-animtype=Diagup         
-priority=6,Hit   ;Higher value due to it being a counter
+attr=C,NA 
+hitflag=MAF 
+guardflag=L 
+animtype=Diagup 
+priority=6,Hit ;Higher value due to it being a counter
 damage=80, 0
 getpower=0, 0
 givepower=30, 30
@@ -1539,7 +1539,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Diagup
 fall.animType=Diagup
-ground.type=Low     
+ground.type=Low 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -1573,7 +1573,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
 [Statedef 600]
-type   =A
+type =A
 movetype= A
 physics=N
 poweradd= 10 * !var(20)
@@ -1652,7 +1652,7 @@ value=52
 ;---------------------------------------------------------------------------
 ; Jump Medium Punch
 [Statedef 610]
-type   =A
+type =A
 movetype= A
 physics=N
 poweradd= 20 * !var(20)
@@ -1747,7 +1747,7 @@ value=52
 ;---------------------------------------------------------------------------
 ; Jump Strong Punch
 [Statedef 620]
-type   =A
+type =A
 movetype= A
 physics=N
 poweradd= 30 * !var(20)
@@ -1844,7 +1844,7 @@ value=52
 ;---------------------------------------------------------------------------
 ; Jump Light Kick
 [Statedef 630]
-type   =A
+type =A
 movetype= A
 physics=N
 poweradd= 10 * !var(20)
@@ -1924,7 +1924,7 @@ value=52
 ;---------------------------------------------------------------------------
 ; Jump Medium Kick
 [Statedef 640]
-type   =A
+type =A
 movetype= A
 physics=N
 poweradd= 20 * !var(20)
@@ -2003,7 +2003,7 @@ value=52
 ;---------------------------------------------------------------------------
 ; Jump Strong Kick
 [Statedef 650]
-type   =A
+type =A
 movetype= A
 physics=N
 poweradd= 30 * !var(20)
@@ -2082,7 +2082,7 @@ value=52
 ;---------------------------------------------------------------------------
 ;Throw - Attempt
 [Statedef 800]
-type   =S
+type =S
 movetype= A
 physics=S
 juggle =0

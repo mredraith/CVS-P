@@ -1976,7 +1976,7 @@ value=14
 
 [State 180, Victory Quote]
 type=VictoryQuote
-trigger1 =  Enemy, Name = "Kula" || Enemy, Name = "Kula Diamond"
+trigger1 = Enemy, Name = "Kula" || Enemy, Name = "Kula Diamond"
 trigger2 = Enemy, Name = "Angel"
 trigger3 = Enemy, Name = "K9999"
 trigger4 = Enemy, Name = "Foxy"
@@ -1984,7 +1984,7 @@ value=15
 
 [State 180, Victory Quote]
 type=VictoryQuote
-trigger1 =  Enemy, Name = "Vanessa"
+trigger1 = Enemy, Name = "Vanessa"
 trigger2 = Enemy, Name = "Seth"
 trigger3 = Enemy, Name = "Ramon"
 value=16
@@ -2807,7 +2807,7 @@ value=7828
 ;OFF SCREEN RUN IN=
 ;Off Screen Run In
 [Statedef 7828]
-type   =S
+type =S
 physics=S
 anim=100
 ctrl=0
@@ -2852,7 +2852,7 @@ ctrl=0
 ;OFF SCREEN RUN STOP=
 ;Off Screen Run Stop
 [Statedef 7829]
-type   =S
+type =S
 physics=S
 anim=101
 ctrl=0
@@ -2880,7 +2880,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Stand get-hit (shaking)
 [Statedef 5000]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -2956,7 +2956,7 @@ value = 5030
 ;---------------------------------------------------------------------------
 ; Stand get-hit (knocked back)
 [Statedef 5001]
-type    = S
+type = S
 movetype= H
 physics = S
 
@@ -2994,7 +2994,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouch get-hit (shaking)
 [Statedef 5010]
-type    = C
+type = C
 movetype= H
 physics = N
 velset = 0,0
@@ -3066,7 +3066,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Crouch get-hit (knocked back)
 [Statedef 5011]
-type    = C
+type = C
 movetype= H
 physics = C
 
@@ -3104,7 +3104,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Air get-hit (shaking)
 [Statedef 5020]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3168,7 +3168,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Air get-hit (knocked away)
 [Statedef 5030]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -3194,7 +3194,7 @@ y = 1
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5040 ;HITA_RECOV
 
@@ -3202,7 +3202,7 @@ value = 5040 ;HITA_RECOV
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5050 ;HITA_FALL
 
@@ -3214,7 +3214,7 @@ value = 5035 ;Air get-hit (transition)
 ;---------------------------------------------------------------------------
 ; Air get-hit (transition)
 [Statedef 5035]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3234,29 +3234,29 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;Air get-hit (recovering in air, not falling)
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5050 ;Air get-hit (falling)
 
 ;---------------------------------------------------------------------------
 ; Air get-hit (recovering in air, not falling)
 [Statedef 5040]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3298,7 +3298,7 @@ value = 52 ;Jump land
 ;---------------------------------------------------------------------------
 ; Air get-hit (falling)
 [Statedef 5050]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3306,7 +3306,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -3351,7 +3351,7 @@ value = 5100 ;Downed get-hit (hit ground from fall)
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (shaking)
 [Statedef 5070]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3376,7 +3376,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (knocked away)
 [Statedef 5071]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3400,7 +3400,7 @@ value = 5110
 ;---------------------------------------------------------------------------
 ; Downed get-hit (shaking)
 [Statedef 5080]
-type    = L
+type = L
 movetype= H
 physics = N
 velset = 0,0
@@ -3444,7 +3444,7 @@ value = 5030 ;Air get-hit (knocked away)
 ;---------------------------------------------------------------------------
 ; Downed get-hit (knocked back)
 [Statedef 5081]
-type    = L
+type = L
 movetype= H
 physics = C
 
@@ -3471,7 +3471,7 @@ value = 5110 ;Downed get-hit (lying down)
 ;---------------------------------------------------------------------------
 ; Downed get-hit (hit ground from fall)
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3561,7 +3561,7 @@ time = 20
 ;---------------------------------------------------------------------------
 ; Downed get-hit (bounce off ground)
 [Statedef 5101]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3607,7 +3607,7 @@ value = 5110
 ;---------------------------------------------------------------------------
 ; Downed get-hit (lying down)
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3733,7 +3733,7 @@ waveform = sine
 ;---------------------------------------------------------------------------
 ; Downed get-hit (getting up)
 [Statedef 5120]
-type    = L
+type = L
 movetype= I
 physics = N
 
@@ -3815,7 +3815,7 @@ time = 1
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery on ground; still falling)
 [Statedef 5200]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3839,7 +3839,7 @@ value = 5201
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery on ground)
 [Statedef 5201]
-type    = A
+type = A
 movetype= H
 physics = A
 anim = 5200
@@ -3882,7 +3882,7 @@ sprpriority = -10
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery in air)
 [Statedef 5210]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 5210
@@ -4596,7 +4596,7 @@ ignorehitpause=1
 trigger1 = 1
 type = DisplayToClipboard
 ignorehitpause = 1
-text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
 params = fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]

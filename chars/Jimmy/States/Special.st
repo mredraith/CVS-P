@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by ZMugens               |
+;| Character by ZMugens |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SPECIAL MOVES=
@@ -212,7 +212,7 @@ ctrl = 1
 
 ;Shouryuu Da
 [Statedef 1100]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30
@@ -389,7 +389,7 @@ ctrl = 1
 
 ;Ex Shouryuu Da
 [Statedef 1150]
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl=0
@@ -534,7 +534,7 @@ hitflag = MAF
 pausetime = 12, 12
 ground.type = High
 guard.slidetime = 18
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5, -6.5
 air.velocity = -5, -6.5
@@ -563,7 +563,7 @@ hitflag = MAF
 pausetime = 12, 12
 ground.type = High
 guard.slidetime = 18
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5, -8.5
 air.velocity = -5, -8.5
@@ -610,7 +610,7 @@ value = 1110
 
 ;Heat Hurricane X
 [Statedef 1200]
-type    = S
+type = S
 movetype = A
 physics = N
 poweradd = 80
@@ -701,13 +701,13 @@ trigger1 = AnimElem = 5
 trigger2 = AnimElem = 6
 trigger2 = MoveContact = 0
 attr = S, SA
-animtype  = Medium
-damage    = 22,(palno=12)*5
+animtype = Medium
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = Low
 ground.slidetime = 14
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -725,13 +725,13 @@ palfx.sinadd= -255,-255,-255,48
 type = HitDef
 trigger1 = AnimElem = 9
 attr = S, SA
-animtype  = Medium
-damage    = 22,(palno=12)*5
+animtype = Medium
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = High
 ground.slidetime = 17
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -750,13 +750,13 @@ palfx.sinadd= -255,-255,-255,48
 type = HitDef
 trigger1 = AnimElem = 13
 attr = S, SA
-animtype  = Up
-damage    = 75,15+(palno=12)*5
+animtype = Up
+damage = 75,15+(palno=12)*5
 guardflag = M
 pausetime = 16,16
 ground.type = High
 ground.slidetime = 20
-ground.hittime  = 22
+ground.hittime = 22
 guard.hittime = (22) - 6
 ground.velocity = -5,-5.7
 air.velocity = -3.2,-4.2
@@ -787,7 +787,7 @@ ctrl = 1
 
 ;Heat Hurricane Y
 [Statedef 1210]
-type    = S
+type = S
 movetype = A
 physics = N
 poweradd = 80
@@ -878,13 +878,13 @@ trigger1 = AnimElem = 5
 trigger2 = AnimElem = 6
 trigger2 = MoveContact = 0
 attr = S, SA
-animtype  = Medium
-damage    = 22,(palno=12)*5
+animtype = Medium
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = Low
 ground.slidetime = 14
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -902,13 +902,13 @@ palfx.sinadd= -255,-255,-255,48
 type = HitDef
 trigger1 = AnimElem = 9
 attr = S, SA
-animtype  = Medium
-damage    = 22,(palno=12)*5
+animtype = Medium
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = High
 ground.slidetime = 17
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -933,15 +933,15 @@ guardflag = HA
 hitflag = MAF
 pausetime = 12, 12
 guard.pausetime=20,20
-ground.type = Hight            
-ground.slidetime = 20            
-ground.hittime  = 20             
+ground.type = Hight 
+ground.slidetime = 20 
+ground.hittime = 20 
 guard.hittime = (20) - 6
 ground.velocity = -1, 4
 guard.velocity=-5
-air.type = High                  
-air.velocity = -2.5, 8         
-air.hittime = 12           
+air.type = High 
+air.velocity = -2.5, 8 
+air.hittime = 12 
 fall = 1
 fall.recover = 0
 fall.envshake.time = 14
@@ -972,7 +972,7 @@ ctrl = 1
 
 ;Heat Hurricane Z
 [Statedef 1220]
-type    = S
+type = S
 movetype = A
 physics = N
 poweradd = 80
@@ -1068,13 +1068,13 @@ trigger1 = AnimElem = 5
 trigger2 = AnimElem = 6
 trigger2 = MoveContact = 0
 attr = S, SA
-animtype  = Medium
-damage    = 22,(palno=12)*5
+animtype = Medium
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = Low
 ground.slidetime = 14
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -1092,13 +1092,13 @@ palfx.sinadd= -255,-255,-255,48
 type = HitDef
 trigger1 = AnimElem = 9
 attr = S, SA
-animtype  = Medium
-damage    = 22,(palno=12)*5
+animtype = Medium
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = High
 ground.slidetime = 17
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -1117,13 +1117,13 @@ palfx.sinadd= -255,-255,-255,48
 type = HitDef
 trigger1 = AnimElem = 15
 attr = S, SA
-animtype  = Medium
-damage    = 22,5+(palno=12)*5
+animtype = Medium
+damage = 22,5+(palno=12)*5
 guardflag = L
 pausetime = 8,8
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-5
@@ -1149,7 +1149,7 @@ hitflag = MAF
 pausetime = 12, 12
 ground.type = High
 guard.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2, -7.8
 air.velocity = -2, -7.8
@@ -1182,7 +1182,7 @@ ctrl = 1
 
 ;Heat Hurricane EX
 [Statedef 1230]
-type    = S
+type = S
 movetype = A
 physics = N
 poweradd = -500
@@ -1354,13 +1354,13 @@ trigger1 = AnimElem = 5
 trigger2 = AnimElem = 6
 trigger2 = MoveContact = 0
 attr = S, SA
-animtype  = Medium
-damage    = 22,(palno=12)*5
+animtype = Medium
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = Low
 ground.slidetime = 14
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -2.5
 air.velocity = -2.5,-4
@@ -1380,13 +1380,13 @@ palfx.sinadd= -255,-255,-255,48
 type = HitDef
 trigger1 = AnimElem = 9
 attr = S, SA
-animtype  = Up
-damage    = 22,(palno=12)*5
+animtype = Up
+damage = 22,(palno=12)*5
 guardflag = MA
 pausetime = 12,12
 ground.type = High
 ground.slidetime = 17
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0,-11
 guard.velocity = -5.5
@@ -1405,14 +1405,14 @@ palfx.sinadd= -255,-255,-255,48
 type = HitDef
 trigger1 = AnimElem = 20
 attr = S, SA
-animtype  = Up
-damage    = 22,(palno=12)*5
+animtype = Up
+damage = 22,(palno=12)*5
 guardflag = MA
 hitflag = MAFD
 pausetime = 12,12
 ground.type = High
 ground.slidetime = 17
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0,2
 guard.velocity = -5.5
@@ -1444,7 +1444,7 @@ ctrl = 1
 ;-| ƒq[ƒgƒhƒ‰ƒSƒ“EŽã@Œã‚ë”h¶‚Ì‰Š |-------------------------------------------------------
 ;------------------------------------------------------------------------------
 [Statedef 1237]
-type    = A
+type = A
 movetype = A
 physics = N
 velset = 0,0
@@ -1486,7 +1486,7 @@ guardflag = MA
 pausetime = 1,10
 ground.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 guard.ctrltime = 10
 ground.velocity = 0,0
@@ -1533,7 +1533,7 @@ trigger1=!Animtime
 ;---------------------------------------------------
 ;
 [Statedef 21255]
-type    = S
+type = S
 movetype = A
 physics = N
 ctrl = 0
@@ -1569,7 +1569,7 @@ hitsound = S4, 5
 guardsound = S2,0
 ground.type = Low
 ground.slidetime = 20
-ground.hittime  = 26
+ground.hittime = 26
 ground.velocity = -8.5,0
 guard.velocity = -7.5
 air.velocity = -4, -5.5
@@ -1597,7 +1597,7 @@ value = 20502
 
 ;Cannon Kick A e B
 [Statedef 1300]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30
@@ -1639,13 +1639,13 @@ y = .42
 type = HitDef
 trigger1 = !movecontact&&!movereversed
 attr = A, SA
-animtype  = Hard
-damage    = 50,5
+animtype = Hard
+damage = 50,5
 guardflag = HA
 pausetime = 12,12
 ground.type = High
 ground.slidetime = 9
-ground.hittime  = 11+(P2Statetype=C)*3
+ground.hittime = 11+(P2Statetype=C)*3
 guard.hittime = (11+(P2Statetype=C)*3) - 6
 ground.velocity = -5.5
 air.velocity = -6.5,-1
@@ -1667,7 +1667,7 @@ value = 1310
 
 ;Cannon Kick C
 [Statedef 1302]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30
@@ -1709,13 +1709,13 @@ y = .42
 type = HitDef
 trigger1 = !movecontact&&!movereversed
 attr = A, SA
-animtype  = Hard
-damage    = 85,5
+animtype = Hard
+damage = 85,5
 guardflag = HA
 pausetime = 12,12
 ground.type = High
 ground.slidetime = 9
-ground.hittime  = 11+(P2Statetype=C)*3
+ground.hittime = 11+(P2Statetype=C)*3
 guard.hittime = (11+(P2Statetype=C)*3) - 6
 ground.velocity = -2,-5
 air.velocity = -2,-5
@@ -1768,7 +1768,7 @@ ctrl = 1
 
 ;Cannon Kick EX
 [Statedef 1350]
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl=0
@@ -1889,7 +1889,7 @@ hitflag = MAF
 pausetime = 12, 12
 ground.type = High
 guard.slidetime = 16
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5, 2
 air.velocity = -5, 4.5

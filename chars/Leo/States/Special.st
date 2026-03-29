@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Leo by K6666orochi                      |
+;| Leo by K6666orochi |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SPECIAL MOVES=
@@ -1646,20 +1646,20 @@ triggerall = var(11) = 0
 trigger1 = time= 0
 trigger1 = p2bodydist x < const(size.xscale)*(75 + 10*var(0) - const(size.ground.front))
 id = 0*(var(14) := stateno + (var(18)%1000)*10000 + id%10) + var(14)
-attr = S, ST      
-hitflag = M-        
+attr = S, ST 
+hitflag = M- 
 ;getpower = 70 + var(0)*10 + ceil(0.7*(192.0 + 16*var(0))*const(data.attack)/100.0)
 ;givepower = ceil(0.6*(192.0 + 16*var(0))*const(data.attack)/100.0)
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
 hitsound = s8, 0
-sprpriority = 2     
-p2facing = 1          
-p1stateno = 1301      
-p2stateno = 1305      
-guard.dist = 0        
+sprpriority = 2 
+p2facing = 1 
+p1stateno = 1301 
+p2stateno = 1305 
+guard.dist = 0 
 ground.velocity = 0
-fall = 1              
+fall = 1 
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
@@ -1671,20 +1671,20 @@ triggerall = var(11) = 1
 trigger1 = time= 0
 trigger1 = p2bodydist x < const(size.xscale)*(75 + 10*var(0) - const(size.ground.front))
 id = 1*(var(14) := stateno + (var(18)%1000)*10000 + id%10) + var(14)
-attr = S, ST      
-hitflag = M-        
+attr = S, ST 
+hitflag = M- 
 ;getpower = 70 + var(0)*10 + ceil(0.7*(192.0 + 16*var(0))*const(data.attack)/100.0)
 ;givepower = ceil(0.6*(192.0 + 16*var(0))*const(data.attack)/100.0)
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
 hitsound = s8, 0
-sprpriority = 2     
-p2facing = 1          
-p1stateno = 1301      
-p2stateno = 1305      
-guard.dist = 0        
+sprpriority = 2 
+p2facing = 1 
+p1stateno = 1301 
+p2stateno = 1305 
+guard.dist = 0 
 ground.velocity = 0
-fall = 1              
+fall = 1 
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
@@ -1696,20 +1696,20 @@ triggerall = var(11) = 2
 trigger1 = time= 0
 trigger1 = p2bodydist x < const(size.xscale)*(75 + 10*var(0) - const(size.ground.front))
 id = 2*(var(14) := stateno + (var(18)%1000)*10000 + id%10) + var(14)
-attr = S, ST      
-hitflag = M-        
+attr = S, ST 
+hitflag = M- 
 ;getpower = 70 + var(0)*10 + ceil(0.7*(192.0 + 16*var(0))*const(data.attack)/100.0)
 ;givepower = ceil(0.6*(192.0 + 16*var(0))*const(data.attack)/100.0)
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
 hitsound = s8, 0
-sprpriority = 2     
-p2facing = 1          
-p1stateno = 1301      
-p2stateno = 1305      
-guard.dist = 0        
+sprpriority = 2 
+p2facing = 1 
+p1stateno = 1301 
+p2stateno = 1305 
+guard.dist = 0 
 ground.velocity = 0
-fall = 1              
+fall = 1 
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
@@ -2237,20 +2237,20 @@ type = HitDef
 trigger1 = time= 0
 trigger1 = p2bodydist x < const(size.xscale)*(75 + 10*var(0) - const(size.ground.front))
 id = 0*(var(14) := stateno + (var(18)%1000)*10000 + id%10) + var(14)
-attr = S, ST      
-hitflag = M-        
+attr = S, ST 
+hitflag = M- 
 ;getpower = 70 + var(0)*10 + ceil(0.7*(192.0 + 16*var(0))*const(data.attack)/100.0)
 ;givepower = ceil(0.6*(192.0 + 16*var(0))*const(data.attack)/100.0)
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
 hitsound = s8, 0
-sprpriority = 2     
-p2facing = 1          
-p1stateno = 1351      
-p2stateno = 1305      
-guard.dist = 0        
+sprpriority = 2 
+p2facing = 1 
+p1stateno = 1351 
+p2stateno = 1305 
+guard.dist = 0 
 ground.velocity = 0
-fall = 1              
+fall = 1 
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5

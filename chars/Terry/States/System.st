@@ -5,9 +5,9 @@
 ; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
 ;
 
-;                          ____________________
+; ____________________
 ;|Terry Bogard by Memo|=
-;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
 ;
@@ -1978,62 +1978,62 @@ value = 47
 
 [State 180, Victory Quote vs. Billy Kane]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Billy Kane"  
+trigger1 = Enemy, Name = "Billy Kane" 
 value = 48 + (Random % 2)
 
 [State 180, Victory Quote vs. Blue Mary]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Blue Mary"  
+trigger1 = Enemy, Name = "Blue Mary" 
 value = 50 + (Random % 3)
 
 [State 180, Victory Quote vs. Bob Wilson]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Bob Wilson"  
+trigger1 = Enemy, Name = "Bob Wilson" 
 value = 53 + (Random % 2)
 
 [State 180, Victory Quote vs. Cheng Sinzan]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Cheng Sinzan"  
+trigger1 = Enemy, Name = "Cheng Sinzan" 
 value = 55 
 
 [State 180, Victory Quote vs. Duck King]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Duck King"  
+trigger1 = Enemy, Name = "Duck King" 
 value = 56 
 
 [State 180, Victory Quote vs. Franco Bash]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Franco Bash"  
+trigger1 = Enemy, Name = "Franco Bash" 
 value = 57
 
 [State 180, Victory Quote vs. Freeman]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Freeman"  
+trigger1 = Enemy, Name = "Freeman" 
 value = 58
 
 [State 180, Victory Quote vs. Gato]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Gato"  
+trigger1 = Enemy, Name = "Gato" 
 value = 59
 
 [State 180, Victory Quote vs. Grant]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Grant"  
+trigger1 = Enemy, Name = "Grant" 
 value = 60 
 
 [State 180, Victory Quote vs. Hokutomaru]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Hokutomaru"  
+trigger1 = Enemy, Name = "Hokutomaru" 
 value = 61
 
 [State 180, Victory Quote vs. Hon Fu]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Hon Fu"  
+trigger1 = Enemy, Name = "Hon Fu" 
 value = 62 + (Random % 2)
 
 [State 180, Victory Quote vs. Hotaru Futaba]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Hotaru Futaba"  
+trigger1 = Enemy, Name = "Hotaru Futaba" 
 value = 64
 
 [State 180, Victory Quote vs. Jin Chonrei/Jin Chonshu]
@@ -2048,27 +2048,27 @@ value = 66
 
 [State 180, Victory Quote vs. Kevin Ryan]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Kevin Ryan"  
+trigger1 = Enemy, Name = "Kevin Ryan" 
 value = 67
 
 [State 180, Victory Quote vs. Kim Dong Hwan]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Kim Dong Hwan"  
+trigger1 = Enemy, Name = "Kim Dong Hwan" 
 value = 68
 
 [State 180, Victory Quote vs. Kim Jaw Hoon]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Kim Jaw Hoon"  
+trigger1 = Enemy, Name = "Kim Jaw Hoon" 
 value = 69
 
 [State 180, Victory Quote vs. Kim Kaphwan]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Kim Kaphwan"  
+trigger1 = Enemy, Name = "Kim Kaphwan" 
 value = 70 + (Random % 2)
 
 [State 180, Victory Quote vs. Laurence Blood]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Laurence Blood"  
+trigger1 = Enemy, Name = "Laurence Blood" 
 value = 72
 
 [State 180, Victory Quote vs. Mai Shiranui]
@@ -2088,12 +2088,12 @@ value = 77
 
 [State 180, Victory Quote vs. Ryuji Yamazaki]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Ryuji Yamazaki" || Enemy, Name = "Yamazaki"  
+trigger1 = Enemy, Name = "Ryuji Yamazaki" || Enemy, Name = "Yamazaki" 
 value = 78 + (Random % 2)
 
 [State 180, Victory Quote vs. Sokaku Mochizuki]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Sokaku Mochizuki"  
+trigger1 = Enemy, Name = "Sokaku Mochizuki" 
 value = 80 + (Random % 2)
 
 [State 180, Victory Quote vs. Tizoc/The Griffon]
@@ -2103,17 +2103,17 @@ value = 82
 
 [State 180, Victory Quote vs. Tung Fu Rue]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Tung Fu Rue"  
+trigger1 = Enemy, Name = "Tung Fu Rue" 
 value = 83
 
 [State 180, Victory Quote vs. Wolfgang Krauser]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Wolfgang Krauser" || Enemy, Name = "Krauser"  
+trigger1 = Enemy, Name = "Wolfgang Krauser" || Enemy, Name = "Krauser" 
 value = 84
 
 [State 180, Victory Quote vs. Ash Crimson]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Ash Crimson"  
+trigger1 = Enemy, Name = "Ash Crimson" 
 value = 85
 
 [State 180, Victory Quote vs. Athena Asamiya]
@@ -2123,12 +2123,12 @@ value = 86
 
 [State 180, Victory Quote vs. Duo Lon]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Duo Lon"  
+trigger1 = Enemy, Name = "Duo Lon" 
 value = 87
 
 [State 180, Victory Quote vs. Hwa Jai]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Hwa Jai"  
+trigger1 = Enemy, Name = "Hwa Jai" 
 value = 88
 
 [State 180, Victory Quote vs. Iori Yagami]
@@ -2153,32 +2153,32 @@ value = 92
 
 [State 180, Victory Quote vs. Mature]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Mature"  
+trigger1 = Enemy, Name = "Mature" 
 value = 93
 
 [State 180, Victory Quote vs. Raiden]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Raiden"  
+trigger1 = Enemy, Name = "Raiden" 
 value = 94
 
 [State 180, Victory Quote vs. Ryo Sakazaki]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Ryo Sakazaki" || Enemy, Name = "Ryo"  
+trigger1 = Enemy, Name = "Ryo Sakazaki" || Enemy, Name = "Ryo" 
 value = 95
 
 [State 180, Victory Quote vs. Takuma Sakazaki]
 type = VictoryQuote
 trigger1 = Enemy, Name = "Takuma Sakazaki" || Enemy, Name = "Takuma" 
 value = 96
-  
+ 
 [State 180, Victory Quote vs. Vice]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Vice"  
+trigger1 = Enemy, Name = "Vice" 
 value = 97
 
 [State 180, Victory Quote vs. Whip]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Whip"  
+trigger1 = Enemy, Name = "Whip" 
 value = 98
 
 [State 180, Victory Quote vs. Yuri Sakazaki]
@@ -2833,7 +2833,7 @@ value=7828
 ;OFF SCREEN RUN IN>=
 ;Off Screen Run In
 [Statedef 7828]
-type   =S
+type =S
 physics=S
 anim=100
 ctrl=0
@@ -2878,7 +2878,7 @@ ctrl=0
 ;OFF SCREEN RUN STOP>=
 ;Off Screen Run Stop
 [Statedef 7829]
-type   =S
+type =S
 physics=S
 anim=101
 ctrl=0
@@ -3038,7 +3038,7 @@ y = 0.625
 type = SelfState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= 10;Const(movement.air.gethit.groundlevel)
 value = 5040 ;HITA_RECOV
 
@@ -3046,7 +3046,7 @@ value = 5040 ;HITA_RECOV
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= 10;Const(movement.air.gethit.groundlevel)
 value = 10050 ;HITA_FALL
 
@@ -3088,22 +3088,22 @@ y = 0.625
 [State 5035, 3]
 type = SelfState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;Air get-hit (recovering in air, not falling)
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = stateno+5 ;Air get-hit (falling)
 
@@ -3118,7 +3118,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -3352,7 +3352,7 @@ value = 5200 ;HITFALL_RECOVER
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -3982,7 +3982,7 @@ trigger10 = StateNo = 430
 trigger11 = StateNo = 600
 trigger12 = StateNo = 630
 trigger13 = StateNo = 221 && MoveContact && AnimElemTime(6) < 0
-trigger14 = StateNo = 241 && MoveContact ;&& AnimElemTime(5) < 0  
+trigger14 = StateNo = 241 && MoveContact ;&& AnimElemTime(5) < 0 
 trigger15 = StateNo = 251 && MoveContact && AnimElemTime(6) < 0
 trigger16 = StateNo = 440 && MoveContact && AnimElemTime(5) < 0
 var(6) = 1

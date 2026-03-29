@@ -1,6 +1,6 @@
-;                          ____________________
+; ____________________
 ;|Terry Bogard by Memo|=
-;                          
+; 
 ;
 ;SUPER MOVES=
 ;
@@ -1773,7 +1773,7 @@ kill = 0
 type = HitDef
 triggerAll = !var(16) && var(15) < 1
 trigger1 = AnimElem = 2 || AnimElem = 7 || AnimElem = 17 || AnimElem = 26
-trigger2 = AnimElem = 41 || AnimElem = 50  || AnimElem = 57 || AnimElem = 81
+trigger2 = AnimElem = 41 || AnimElem = 50 || AnimElem = 57 || AnimElem = 81
 trigger3 = AnimElem = 89 || AnimElem = 112 || AnimElem = 121 || AnimElem = 137
 attr = S, HA
 hitFlag = MAF
@@ -2667,7 +2667,7 @@ value = s1100,1
 type = PlaySnd
 trigger1 = AnimElem = 1
 value = 3000, 2
-  
+ 
 [State 3201, Fire1]
 type = Explod
 trigger1 = AnimElem = 2
@@ -2889,7 +2889,7 @@ ignorehitpause = 1
 Type = VelAdd
 Trigger1 = !AnimelemTime(4)
 X = 32.5582046508789
-  
+ 
 [State 3250, VelAdd]
 Type = VelAdd
 Trigger1 = !MoveHit
@@ -3019,7 +3019,7 @@ Trigger1 = !AnimelemTime(1)
 Trigger2 = !AnimelemTime(3)
 Trigger3 = !AnimelemTime(6)
 X = 3.5582046508789
-  
+ 
 [State 3250, VelAdd]
 Type = Velset
 Trigger1 = !AnimelemTime(2)
@@ -4395,7 +4395,7 @@ darken = 0
 ;--------------
 [State 3400, Super Zoom]
 type = Helper
-trigger1 = !time  && NumHelper(259) = 0
+trigger1 = !time && NumHelper(259) = 0
 name = "P1ZOOM"
 ID = 259
 pos = 0,0
@@ -4827,7 +4827,7 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 fall.recovertime = 120
-envshake.ampl = 7       
+envshake.ampl = 7 
 envshake.freq = 50
 envshake.time = 20 
 hitsound = -1 + 0 * (var(31) := 2)
@@ -5019,7 +5019,7 @@ ontop = 0
 shadow = 0,0,0
 ownpal = 1
 removeongethit = 1
-  
+ 
 [State 3502, Explod]
 type = Explod
 trigger1 = animelem = 9
@@ -5113,7 +5113,7 @@ yaccel = 0.5
 fall = 0
 air.fall = 0
 ForceStand = 1
-envshake.ampl = 7       
+envshake.ampl = 7 
 envshake.freq = 50
 envshake.time = 20 
 hitsound = -1 + 0 * (var(31) := 2)
@@ -5164,7 +5164,7 @@ air.fall = 1
 fall.recover = 0
 fall.recovertime = 120
 ForceStand = 1
-envshake.ampl = 7       
+envshake.ampl = 7 
 envshake.freq = 50
 envshake.time = 20 
 hitsound = -1 + 0 * (var(31) := 2)
@@ -5219,7 +5219,7 @@ yaccel = 0.5
 air.fall = 1
 fall.recover = 0
 fall.recovertime = 120
-envshake.ampl = 7       
+envshake.ampl = 7 
 envshake.freq = 50
 envshake.time = 20 
 hitsound = -1 + 0 * (var(31) := 2)
@@ -5248,7 +5248,7 @@ VelSet = 0, 0
 Anim = 3504
 sprpriority = 2 
 ctrl=0
-  
+ 
 [State 3503, Dust]
 type = explod
 trigger1 = !time
@@ -5263,7 +5263,7 @@ ownpal = 1
 [State 3503, Play Snd]
 type = PlaySnd
 trigger1 = !time
-value =  52,0
+value = 52,0
 
 [State 3503, Pos Set]
 type = PosSet

@@ -3081,7 +3081,7 @@ attr = S, SP
 hitflag = MAF
 guardflag = M
 damage = ceil(ifElse(fvar(11) * 55 < 7, 7, fvar(11) * 55)), 7
-priority  = 7, Hit
+priority = 7, Hit
 pauseTime = 0, ifElse((Root, var(20)), 6, 12)
 guard.pauseTime = 0, ifElse((Root, var(20)), 6, 8)
 hitSound = -1 + 0 * (var(31) := 6)
@@ -3603,7 +3603,7 @@ attr = S, SP
 hitflag = MAF
 guardflag = M
 damage = ceil(ifElse(fvar(11) * 67 < 7, 7, fvar(11) * 67)), 7
-priority  = 7, Hit
+priority = 7, Hit
 pauseTime = 0, ifElse((Root, var(20)), 6, 12)
 guard.pauseTime = 0, ifElse((Root, var(20)), 6, 6)
 hitSound = -1 + 0 * (var(31) := 6)
@@ -4244,7 +4244,7 @@ scale = .5,.5
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time >44
-ID =  3090
+ID = 3090
 scale = .75-((time-44)*.125),1
 
 [State 0, AssertSpecial]

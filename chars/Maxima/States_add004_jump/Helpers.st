@@ -98,7 +98,7 @@ trigger3=root,AILevel
 ;CAMERA FOCUS
 [Statedef 6001]
 type = S
-physics  = S
+physics = S
 anim = 0
 ctrl = 0
 
@@ -489,7 +489,7 @@ value = 90 * (Random % 4)
 [State 8011, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8011, Transparency]
 type = Trans
@@ -534,7 +534,7 @@ value = 90 * (Random % 4)
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8012, Transparency]
 type = Trans
@@ -586,11 +586,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 
 [State 8013, Transparency]
 type = Trans
@@ -653,11 +653,11 @@ value = 30 * (Random % 12)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8005||parent,stateno=8010)
-scale =  fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8015||parent,stateno=8020)
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8014, Transparency]
 type = Trans
@@ -991,7 +991,7 @@ value = 90 * (Random % 4)
 [State 8022, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
+scale = fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
 
 [State 8022, Transparency]
 type = Trans
@@ -1035,11 +1035,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8023, Transparency]
 type = Trans
@@ -2800,7 +2800,7 @@ trigger1= !numenemy || time>=60
 ;---------------------------------------------------------------------------
 ;Wall-knockdown
 [Statedef 4060]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2842,7 +2842,7 @@ trigger2 = Time >= 60
 value = 4061
 ;---------------------------------------------------------------------------
 [Statedef 4061]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2892,7 +2892,7 @@ trigger1=time=10
 value = 4062
 ;---------------------------------------------------------------------------
 [Statedef 4062]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2945,7 +2945,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;Custom-ceiling bounce
 [Statedef 4065]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3151,8 +3151,8 @@ triggerall = enemynear,stateno != [5040,5049]
 trigger1 = animelem = 2
 attr = S, HP
 hitflag = MAFD
-animtype  = hard
-damage    = 40,7
+animtype = hard
+damage = 40,7
 priority = 5, Hit
 getpower = 0,0
 guardflag = M
@@ -3160,16 +3160,16 @@ pausetime = 2,2
 guard.pausetime = 0,12
 sparkno = s-1
 sparkxy = -12,-90
-hitsound   = S2,6
+hitsound = S2,6
 guardsound = s3,1
 guard.sparkno = s-1
 ground.type = high
 ground.slidetime = 24
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -2.1,-11.5
 air.velocity = -2.1,-11.5
-air.hittime  = 120
+air.hittime = 120
 guard.velocity = -9
 yaccel = 0.45
 fall = 1
@@ -3317,8 +3317,8 @@ triggerall = root,var(7) = 0
 triggerall = enemynear,stateno != [5040,5049]
 trigger1 = animelem = 1
 attr = S, HP
-animtype  = hard
-damage    = 140,7
+animtype = hard
+damage = 140,7
 priority = 5, Hit
 getpower = 0,0
 hitflag = MAFD
@@ -3327,16 +3327,16 @@ pausetime = 2,2
 guard.pausetime = 0,12
 sparkno = s-1
 sparkxy = -12,-90
-hitsound   = S2,6
+hitsound = S2,6
 guardsound = s3,1
 guard.sparkno = s-1
 ground.type = high
 ground.slidetime = 24
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -3.2,-6.5
 air.velocity = -3.2,-6.5
-air.hittime  = 120
+air.hittime = 120
 guard.velocity = -9
 yaccel = 0.32
 fall = 1
@@ -3486,8 +3486,8 @@ triggerall = enemynear,stateno != [5040,5049]
 trigger1 = animelem = 2
 attr = S, HP
 hitflag = MAFD
-animtype  = hard
-damage    = 40,7
+animtype = hard
+damage = 40,7
 priority = 5, Hit
 getpower = 0,0
 guardflag = M
@@ -3495,16 +3495,16 @@ pausetime = 2,2
 guard.pausetime = 0,12
 sparkno = s-1
 sparkxy = -12,-90
-hitsound   = S2,6
+hitsound = S2,6
 guardsound = s3,1
 guard.sparkno = s-1
 ground.type = high
 ground.slidetime = 24
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -2.1,-11.5
 air.velocity = -2.1,-11.5
-air.hittime  = 120
+air.hittime = 120
 guard.velocity = -9
 yaccel = 0.45
 fall = 1

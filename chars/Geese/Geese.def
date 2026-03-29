@@ -3,45 +3,45 @@
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====================<DEFINITION>====================
 [Info]
-name          = "Geese Howard"
-displayname   = "Geese"
-lifebarname   = "Geese"
-versiondate   = 2025
-mugenversion  = 1.1; deprecated
+name = "Geese Howard"
+displayname = "Geese"
+lifebarname = "Geese"
+versiondate = 2025
+mugenversion = 1.1; deprecated
 ikemenversion = 1.0
-author        = "Phantom.of.the.Server"
-pal.defaults  = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-localcoord    = 320, 240
+author = "Phantom.of.the.Server"
+pal.defaults = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+localcoord = 320, 240
 portraitscale = 1.0
 
 [Files]
-cmd     = geecmd.cns
-cns     = geecns.cns
-st1     = states/geezss.zss
-st2     = states/geesystem.st
-st3     = states/geenormal.st
-st4     = states/geespecial.st
-st5     = states/geesuper.st
-st6     = states/geehelper.st
-st7     = states/inputs.zss
-st8     = CONFIG.txt
+cmd = geecmd.cns
+cns = geecns.cns
+st1 = states/geezss.zss
+st2 = states/geesystem.st
+st3 = states/geenormal.st
+st4 = states/geespecial.st
+st5 = states/geesuper.st
+st6 = states/geehelper.st
+st7 = states/inputs.zss
+st8 = CONFIG.txt
 stcommon= common1.cns
-sprite  = geesprite.sff
-anim    = geeanim.air
-sound   = geesound.snd
+sprite = geesprite.sff
+anim = geeanim.air
+sound = geesound.snd
 movelist= geemovelist.dat
-pal1    = palettes/Default.act
-pal2    = palettes/FF3.act
-pal3    = palettes/FFS.act
-pal4    = palettes/SvC.act
-pal5    = palettes/RB2.act
-pal6    = palettes/RBS.act
-pal7    = palettes/Ink.act
-pal8    = palettes/Psycho1.act
-pal9    = palettes/DM.act
-pal10   = palettes/Akira1.act
-pal11   = palettes/Green.act
-pal12   = palettes/Psycho2.act
+pal1 = palettes/Default.act
+pal2 = palettes/FF3.act
+pal3 = palettes/FFS.act
+pal4 = palettes/SvC.act
+pal5 = palettes/RB2.act
+pal6 = palettes/RBS.act
+pal7 = palettes/Ink.act
+pal8 = palettes/Psycho1.act
+pal9 = palettes/DM.act
+pal10 = palettes/Akira1.act
+pal11 = palettes/Green.act
+pal12 = palettes/Psycho2.act
 
 [Palette Keymap]
 x = 1

@@ -11,16 +11,16 @@ author ="DivineWolf"
 pal.defaults = 4,5,6,1,2,3,10,11,12,7,8,9
 
 ; Files for the player
-localCoord  = 428,240
+localCoord = 428,240
 [Files]
 movelist = movelist.dat
-cmd     =DivineJuli.cmd
-cns     =Coding/SystemCvS.cns
-st      =Coding/SystemCvS.cns
+cmd =DivineJuli.cmd
+cns =Coding/SystemCvS.cns
+st =Coding/SystemCvS.cns
 stcommon =common1.cns
-sprite  =DivineJuli.sff
-anim    =DivineJuli.air
-sound   =DivineJuli.snd
+sprite =DivineJuli.sff
+anim =DivineJuli.air
+sound =DivineJuli.snd
 st1=Coding/Normal.cns
 st2=Coding/Specials.cns
 st3=Coding/Helpers.cns

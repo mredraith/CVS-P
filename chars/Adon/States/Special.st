@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Adon by Trololo                       |
+;| Adon by Trololo |
 ; 
 ;
 ;SPECIAL MOVES
@@ -1928,7 +1928,7 @@ trigger4 = var(35) := 81 || var(36) := -81
 [State 1301, HitDef High]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 1 ||  AnimElem = 10
+trigger1 = AnimElem = 1 || AnimElem = 10
 attr = S, SA
 hitFlag = MAF
 guardFlag = M
@@ -2386,7 +2386,7 @@ trigger4 = var(35) := 80 || var(36) := -81
 
 [State 2900, HitDef High]
 type = HitDef
-trigger1 = AnimElem = 3 ||  AnimElem = 12
+trigger1 = AnimElem = 3 || AnimElem = 12
 attr = S, SA
 hitFlag = MAF
 guardFlag = M

@@ -7,7 +7,7 @@
 
 
 ; _________________________________________
-;| Sodom by varo_hades                     |
+;| Sodom by varo_hades |
 ; 
 ;
 ;SYSTEM STATES=
@@ -3015,7 +3015,7 @@ ground.velocity = ifElse(var(20), -3.5, -7), 0
 yaccel = 0.55
 guard.velocity = -7
 air.velocity = ifelse ( p2stateno=5050, -3 , -2.5 ) , ifelse ( p2stateno=5050, -7 , -7)
-ground.cornerpush.veloff =  -11
+ground.cornerpush.veloff = -11
 guard.cornerpush.veloff = -11
 air.cornerpush.veloff = -11
 getpower = 0,0
@@ -3338,7 +3338,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -4199,37 +4199,37 @@ velset=0,0
 ctrl=0
 ;---
 [state 0]
-   type=nothitby
-   trigger1=1
-   value=sca
-   time=8 ;;-options
+ type=nothitby
+ trigger1=1
+ value=sca
+ time=8 ;;-options
 [state 0]
-   type=screenbound
-   trigger1=1
-   value=0
+ type=screenbound
+ trigger1=1
+ value=0
 [state 0]
-   type=playerpush
-   trigger1=1
-   value=0
+ type=playerpush
+ trigger1=1
+ value=0
 [state 0]
-   type=posset
-   trigger1=!time
-   y=0
+ type=posset
+ trigger1=!time
+ y=0
 ;---
 [state 0]
-   type=changestate
-   trigger1=(animtime=0) && (roundstate=2) && (sysfvar(4)>0) && (sysfvar(0)>0) && playeridexist(floor(sysfvar(0)))
-   trigger1=(playerid(floor(sysfvar(0))),var(0)=90900)
-   value=1400 ;;Change this to set support move
-   anim=150 ;; guarding anim for stateno-checking
-   ctrl=0
+ type=changestate
+ trigger1=(animtime=0) && (roundstate=2) && (sysfvar(4)>0) && (sysfvar(0)>0) && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900)
+ value=1400 ;;Change this to set support move
+ anim=150 ;; guarding anim for stateno-checking
+ ctrl=0
 
 ; ex-change (for safety)
 ; ???
 [state 0]
-   type=changestate
-   trigger1=animtime=0
-   value=0
-   ctrl=1
+ type=changestate
+ trigger1=animtime=0
+ value=0
+ ctrl=1
 
 -------------------

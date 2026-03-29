@@ -1,5 +1,5 @@
 ; ________________________________________________
-;| Urban Champion by NovaMagnolia  			|
+;| Urban Champion by NovaMagnolia 			|
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==============================================================================================
 ;=======================================<COMMAND FILE>=========================================
@@ -63,7 +63,7 @@ command = s
 time = 1
 
 [Command]
-name = "ss"     
+name = "ss" 
 command = s, s
 time = 10
 
@@ -3404,7 +3404,7 @@ type = ChangeState
 value = 1630
 triggerAll = !AILevel
 ;command = "charge B, F"
-triggerAll = ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010606), NumExplod(90010704)) || ((var(20) > 0 || var(50) > 0  || (StateNo = [1000,4999])) && ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010616), NumExplod(90010714)))
+triggerAll = ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010606), NumExplod(90010704)) || ((var(20) > 0 || var(50) > 0 || (StateNo = [1000,4999])) && ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010616), NumExplod(90010714)))
 ;a + b / a + c / b + c
 triggerAll = (ifElse(NumExplod(90000230), 1, 0) + ifElse(NumExplod(90000240), 1, 0) + ifElse(NumExplod(90000250), 1, 0) >= 2) || (ifElse(NumExplod(90000235), 1, 0) + ifElse(NumExplod(90000245), 1, 0) + ifElse(NumExplod(90000255), 1, 0) >= 2)
 triggerAll = RoundState = 2 && StateType != A && !NumProjID(131035) && var(40) > 0
@@ -3487,7 +3487,7 @@ type = ChangeState
 value = 1600
 triggerAll = !AILevel
 ;command = "charge B, F"
-triggerAll = ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010606), NumExplod(90010704)) || ((var(20) > 0 || var(50) > 0  || (StateNo = [1000,4999])) && ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010616), NumExplod(90010714)))
+triggerAll = ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010606), NumExplod(90010704)) || ((var(20) > 0 || var(50) > 0 || (StateNo = [1000,4999])) && ifElse((P2Dist x >= 0 && Facing = 1) || (P2Dist x < 0 && Facing = -1), NumExplod(90010616), NumExplod(90010714)))
 ;a / b / c
 triggerAll = NumExplod(90000230) || NumExplod(90000235) || NumExplod(90000240) || NumExplod(90000245) || NumExplod(90000250) || NumExplod(90000255)
 triggerAll = RoundState = 2 && StateType != A && !NumProjID(131035) && var(40) > 0
@@ -3669,7 +3669,7 @@ trigger2 = var(4)
 type = ChangeState
 value = 410
 triggerAll = !AILevel
-;command  ="holddown" && command = "y"
+;command ="holddown" && command = "y"
 triggerAll = (NumExplod(90000002) || NumExplod(90000003) || NumExplod(90000001)) && (NumExplod(90000210) || command = "y")
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])

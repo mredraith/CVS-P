@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Leo by K6666orochi                      |
+;| Leo by K6666orochi |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;NORMAL MOVES=
@@ -1059,7 +1059,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF
@@ -2398,8 +2398,8 @@ fall=1
 fall.recover=1
 numhits=0
 p1stateno=810
-p2facing = 1          ;Force p2 to face player
-;p1stateno = 810      ;On success, player changes to state 810
+p2facing = 1 ;Force p2 to face player
+;p1stateno = 810 ;On success, player changes to state 810
 p2stateno = 811 
 
 
@@ -2493,8 +2493,8 @@ fall=1
 fall.recover=1
 numhits=0
 p1stateno=820
-p2facing = 1          ;Force p2 to face player
-;p1stateno = 810      ;On success, player changes to state 810
+p2facing = 1 ;Force p2 to face player
+;p1stateno = 810 ;On success, player changes to state 810
 p2stateno = 825 
 
 
@@ -2590,8 +2590,8 @@ fall.recover=1
 numhits=0
 p1stateno=810
 p1facing = -1 
-p2facing = 1          ;Force p2 to face player
-;p1stateno = 810      ;On success, player changes to state 810
+p2facing = 1 ;Force p2 to face player
+;p1stateno = 810 ;On success, player changes to state 810
 p2stateno = 811 
 
 
@@ -2686,8 +2686,8 @@ fall.recover=1
 numhits=0
 p1stateno=820
 p1facing = -1 
-p2facing = 1          ;Force p2 to face player
-;p1stateno = 810      ;On success, player changes to state 810
+p2facing = 1 ;Force p2 to face player
+;p1stateno = 810 ;On success, player changes to state 810
 p2stateno = 825 
 
 
@@ -2983,7 +2983,7 @@ value = 820, 1
 type = Explod
 trigger1 = AnimElem = 11
 postype = p1
-anim =  3120
+anim = 3120
 scale= 0.25,0.25
 pos = floor(20*const(size.xscale)), 0
 sprpriority = -5
@@ -3159,7 +3159,7 @@ value = 820, 1
 type = Explod
 trigger1 = AnimElem = 11
 postype = p1
-anim =  3120
+anim = 3120
 scale= 0.25,0.25
 pos = floor(20*const(size.xscale)), 0
 sprpriority = -5

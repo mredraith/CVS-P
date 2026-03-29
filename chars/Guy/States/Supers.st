@@ -957,7 +957,7 @@ type = SuperPause
 trigger1 = Time = 0
 time = 40
 anim = -1
-sound =  s8500,0
+sound = s8500,0
 pos = 0,0
 movetime = 40
 darken = 0
@@ -995,13 +995,13 @@ Triggerall = time=0
 trigger1 = p2statetype != A
 trigger1 = p2stateno != [150,152]
 Trigger2 = p2stateno=52 || p2stateno = 0|| p2stateno = [10,12]
-attr = S, HT          ;Attributes: Standing, Normal Throw
-hitflag = M           ;Affect only ground people who are not being hit
+attr = S, HT ;Attributes: Standing, Normal Throw
+hitflag = M ;Affect only ground people who are not being hit
 guardflag = -1
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player
 p1stateno = 3210
 p2stateno = 3215
 fall = 1
@@ -1092,7 +1092,7 @@ ignoreHitPause = 1
 type = TargetBind
 trigger1 = time = 0
 time = 1
-pos = 60,0  ;x - more then more near P1
+pos = 60,0 ;x - more then more near P1
 
 [State 0, PosSet]
 type = null; Posset
@@ -1147,13 +1147,13 @@ channel = 6
 
 [State 0, AssertSpecial]
 type = AssertSpecial
-trigger1 =  time >= 0
+trigger1 = time >= 0
 flag = invisible
 flag2 = noshadow
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = 10
 
 [State 0, ChangeState]
@@ -1184,7 +1184,7 @@ name = "3212"
 ID = 3212
 stateno = 32120
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1197,7 +1197,7 @@ name = "3212"
 ID = 3212
 stateno = 32121
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1210,7 +1210,7 @@ name = "3212"
 ID = 3212
 stateno = 32122
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1222,13 +1222,13 @@ x = -140
 
 [State 0, AssertSpecial]
 type = null;AssertSpecial
-trigger1 =  time <= 4
+trigger1 = time <= 4
 flag = invisible
 flag2 = noshadow
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = 40
 y = 0
 
@@ -1256,7 +1256,7 @@ flag = noshadow
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  1
+trigger1 = 1
 time = 22
 add = 99,99,99
 mul = 99,99,99
@@ -1275,7 +1275,7 @@ x = -145
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = 40
 
 [State 0, DestroySelf]
@@ -1298,7 +1298,7 @@ flag = noshadow
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  1
+trigger1 = 1
 time = 22
 add = 66,66,66
 mul = 66,66,66
@@ -1317,7 +1317,7 @@ x = -152
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = 40
 
 [State 0, DestroySelf]
@@ -1340,7 +1340,7 @@ flag = noshadow
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  1
+trigger1 = 1
 time = 22
 add = 33,33,33
 mul = 33,33,33
@@ -1359,7 +1359,7 @@ x = -162
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = 40
 
 [State 0, DestroySelf]
@@ -1904,13 +1904,13 @@ channel = 6
 
 [State 0, AssertSpecial]
 type =AssertSpecial
-trigger1 =  time >= 0
+trigger1 = time >= 0
 flag = invisible
 flag2 = noshadow
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = -10
 
 [State 0, ChangeState]
@@ -1945,7 +1945,7 @@ x = 120
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = -30
 y = 0
 
@@ -1965,7 +1965,7 @@ name = "3290"
 ID = 3290
 stateno = 3290
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1978,7 +1978,7 @@ name = "3291"
 ID = 3291
 stateno = 3291
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1991,7 +1991,7 @@ name = "3292"
 ID = 3292
 stateno = 3292
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2021,7 +2021,7 @@ flag = noshadow
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  1
+trigger1 = 1
 time = 22
 add = 99,99,99
 mul = 99,99,99
@@ -2040,7 +2040,7 @@ x = 5
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = -30
 
 [State 0, DestroySelf]
@@ -2068,7 +2068,7 @@ flag = noshadow
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  1
+trigger1 = 1
 time = 22
 add = 66,66,66
 mul = 66,66,66
@@ -2087,7 +2087,7 @@ x = 10
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = -30
 
 [State 0, DestroySelf]
@@ -2115,7 +2115,7 @@ flag = noshadow
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  1
+trigger1 = 1
 time = 22
 add = 33,33,33
 mul = 33,33,33
@@ -2134,7 +2134,7 @@ x = 15
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = -30
 
 [State 0, DestroySelf]
@@ -2887,7 +2887,7 @@ value = 3215
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 20
+trigger1 = time>= 20
 x = -10
 y = 0
 
@@ -3049,7 +3049,7 @@ value = 32444
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>=0
+trigger1 = time>=0
 x = 10
 y = 0
 
@@ -3070,13 +3070,13 @@ juggle = 0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>=0
+trigger1 = time>=0
 x = 5
 y = 0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>=4
+trigger1 = time>=4
 x = 0
 y = 0
 
@@ -3303,7 +3303,7 @@ type = SuperPause
 trigger1 = Time = 0
 time = 40
 anim = -1
-sound =  s8500,0
+sound = s8500,0
 pos = 0,0
 movetime = 40
 darken = 0
@@ -3415,7 +3415,7 @@ priority = 5, Hit		;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hyp
 attr = S,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard		; = medium		;2p ANIM
 ground.type = high
 damage = 50,5
@@ -3459,7 +3459,7 @@ priority = 5, Hit		;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hyp
 attr = S,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard		; = medium		;2p ANIM
 ground.type = low
 damage = 50,5
@@ -3503,7 +3503,7 @@ priority = 5, Hit		;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hyp
 attr = S,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard		; = medium		;2p ANIM
 ground.type = high
 damage = 50,5
@@ -3546,7 +3546,7 @@ priority = 5, Hit		;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hyp
 attr = S,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard		; = medium		;2p ANIM
 ground.type = low
 damage = 50,5
@@ -3666,9 +3666,9 @@ y = 7
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 7
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N        ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0,HitDef]
 type = HitDef
@@ -3677,7 +3677,7 @@ priority = 5, Hit		;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hyp
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard		; = medium		;2p ANIM
 ground.type = low
 damage = 50,5
@@ -3719,7 +3719,7 @@ priority = 5, Hit		;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hyp
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard		; = medium		;2p ANIM
 ground.type = high
 damage = 50,5
@@ -4351,9 +4351,9 @@ juggle = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 0
-statetype = S       ;S,A,C,L
-movetype = H        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = H ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, ChangeAnim2]
 type = ChangeAnim2
@@ -4559,7 +4559,7 @@ value = -100
 kill = 1
 
 [State 0, SelfState]
-type =  VelSet
+type = VelSet
 trigger1 = time=0
 x = -10
 [State 0, SelfState]

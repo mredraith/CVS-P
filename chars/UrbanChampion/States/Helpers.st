@@ -1,5 +1,5 @@
 ; ________________________________________________
-;| Urban Champion by NovaMagnolia  			|
+;| Urban Champion by NovaMagnolia 			|
 ; 
 ;==============================================================================================
 ;=======================================<HELPER STATES>========================================
@@ -142,7 +142,7 @@ trigger2 = Time >= 2
 ;---------------------------------------------------------------------------
 ;Scapegoat (Police Car)
 [Statedef 3105]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 16*const(size.xscale),0
@@ -425,7 +425,7 @@ trigger2 = Root, MoveType = H
 ;---------------------------------------------------------------------------
 ;Manhole
 [Statedef 3305]
-type    = S
+type = S
 movetype= I
 physics = S
 anim = 3305
@@ -478,7 +478,7 @@ value = 3306
 ;---------------------------------------------------------------------------
 ;Manhole Leave
 [Statedef 3306]
-type    = S
+type = S
 movetype= I
 physics = S
 ctrl = 0

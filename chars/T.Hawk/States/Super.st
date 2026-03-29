@@ -1,5 +1,5 @@
 ; _________________________________________
-;| T.Hawk by varo_hades                    |
+;| T.Hawk by varo_hades |
 ; 
 ;
 ;SUPER STATES>=
@@ -1085,7 +1085,7 @@ y = .5
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 =  AnimElem = 4
+trigger1 = AnimElem = 4
 attr = A, HA
 hitFlag = MAF
 guardFlag = H
@@ -1130,7 +1130,7 @@ envShake.freq = 120
 [State 3100, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = A, HA
 hitFlag = MAF
 guardFlag = H
@@ -1635,7 +1635,7 @@ y = .5
 [State 3150, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 =  AnimElem = 4
+trigger1 = AnimElem = 4
 attr = A, HA
 hitFlag = MAF
 guardFlag = H
@@ -1680,7 +1680,7 @@ envShake.freq = 120
 [State 3100, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = A, HA
 hitFlag = MAF
 guardFlag = H
@@ -2226,8 +2226,8 @@ y = 8
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  AnimElemTime(6) >= 1
-trigger1 =  Pos Y >= 0 && Vel Y > 0
+trigger1 = AnimElemTime(6) >= 1
+trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3205
 ctrl = 0
 
@@ -2324,7 +2324,7 @@ pos = 0,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  AnimTime = 0
+trigger1 = AnimTime = 0
 value = 3220
 ctrl = 0
 
@@ -2347,7 +2347,7 @@ value = 3215
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  AnimTime = 0
+trigger1 = AnimTime = 0
 value = 3225
 ctrl = 0
 
@@ -5338,7 +5338,7 @@ x = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  Time = 85
+trigger1 = Time = 85
 value = 3432
 ctrl = 0
 
@@ -5398,7 +5398,7 @@ movecamera = 0,0
 
 [State 0, AssertSpecial]
 type = AssertSpecial
-trigger1 =  Pos Y < 0
+trigger1 = Pos Y < 0
 flag = NoShadow
 
 [State 0, SprPriority]
@@ -5466,7 +5466,7 @@ velset = 0,0
 
 [State 0, ScreenBound]
 type = ScreenBound
-trigger1 =  1
+trigger1 = 1
 value = 1
 movecamera = 0,200
 
@@ -5495,7 +5495,7 @@ y = 0
 
 [State 0, AssertSpecial]
 type = AssertSpecial
-trigger1 =  1
+trigger1 = 1
 flag = noshadow
 
 [State 0, ChangeState]
@@ -5513,7 +5513,7 @@ velset = 0,0
 
 [State 0, ScreenBound]
 type = ScreenBound
-trigger1 =  1
+trigger1 = 1
 value = 1
 movecamera = 0,0
 
@@ -5614,7 +5614,7 @@ y = 10
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = Time >= 5
-trigger1 =  Pos Y >= 0 && Vel Y > 0
+trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 3444
 ctrl = 0
 
@@ -5627,7 +5627,7 @@ velset = 0,0
 
 [State 0, ScreenBound]
 type = ScreenBound
-trigger1 =  1
+trigger1 = 1
 value = 1
 movecamera = 0,1
 
@@ -5660,7 +5660,7 @@ x = -10
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  P2StateNo = 3411
+trigger1 = P2StateNo = 3411
 value = 3420
 ctrl = 0
 

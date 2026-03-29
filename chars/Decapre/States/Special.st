@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Decapre by varo_hades                   |
+;| Decapre by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES==
@@ -663,7 +663,7 @@ value = 1105
 
 ;Land
 [Statedef 1105]
-type  = S
+type = S
 physics = S
 ctrl = 0
 anim = 1155
@@ -3108,7 +3108,7 @@ ctrl = 1
 [State 259, End]
 type = ChangeState
 trigger1= movehit = 1
-trigger1= command  = "holdup" 
+trigger1= command = "holdup" 
 value = 40
 ctrl = 1
 
@@ -5342,7 +5342,7 @@ trigger1 = 1
 pos = ceil(185*const(size.xscale)),ceil(-208*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 9000, Assert]
 type = AssertSpecial

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| CVS Choi Bounge by Falcon Rapper        |
+;| CVS Choi Bounge by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;NORMAL MOVES=
@@ -313,7 +313,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Dodge Strong Punch/Z-Counter Punch
 [Statedef 221]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= ifElse(PrevStateNo=750, 0, 30 * !var(20))
@@ -339,11 +339,11 @@ value=SCA
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo != 750
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = Ifelse(var(55),75,96), 0
 ;ID = 200*!var(20)
 getpower=30 * !var(20), 0
@@ -357,7 +357,7 @@ hitsound=S2,9
 guardsound=s3,0
 air.animType=Back
 fall.animType=Back
-ground.type=High      
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -381,11 +381,11 @@ palFX.sinAdd= -255,-255,-255,48
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo=750
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=6, Hit   ;Higher priority for counters
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=6, Hit ;Higher priority for counters
 damage=75, 0
 ;ID = 200*!var(20)
 getpower=0, 0
@@ -399,7 +399,7 @@ guard.sparkno = -1 + 0*(var(34):=8000)
 sparkxy = -10 + 0*(var(35):=120), var(36):=-45
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -1118,7 +1118,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF

@@ -821,10 +821,10 @@ value = ifelse((command="holdfwd"),751,752)
 ;------------------------------------------------------------------
 ; Roll Recovery Back
 [Statedef 751]
-type    = A
+type = A
 movetype= I
 physics = N
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 901
@@ -908,10 +908,10 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; Roll Recovery Forward
 [Statedef 752]
-type    = A
+type = A
 movetype= I
 physics = N
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 900

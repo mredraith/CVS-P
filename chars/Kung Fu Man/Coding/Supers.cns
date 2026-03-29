@@ -1,6 +1,6 @@
 ;KUNG FU BARRAGE=
 [Statedef 3000]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -161,7 +161,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
 air.velocity = -4, -3
@@ -207,7 +207,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7, -7.5
 air.velocity = -7,-7
@@ -241,7 +241,7 @@ ctrl = 1
 
 ;KUNG FU BARRAGE MAX=
 [Statedef 3050]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -408,7 +408,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7.5, 0
 air.velocity = -4, -3
@@ -454,7 +454,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7.5, 0
 air.velocity = -4, -3
@@ -500,7 +500,7 @@ fall.animtype = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7, -10
 air.velocity = -7,-9.5
@@ -659,7 +659,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -20
 air.velocity = -2, -20
@@ -678,11 +678,11 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 45
 envshake.ampl = 15
 envShake.freq = 176
-fall.envshake.ampl = 6       ;Parameters for shaking the screen when your foe hits the ground from their fall
+fall.envshake.ampl = 6 ;Parameters for shaking the screen when your foe hits the ground from their fall
 fall.envshake.freq = 178
 fall.envshake.time = 15
-mindist = 50,-100            ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 100 pixels up
-maxdist = 100,-10	         ;Keep p2 a maximum of 100 pixels away from p1, and no lower than 10 pixels below
+mindist = 50,-100 ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 100 pixels up
+maxdist = 100,-10	 ;Keep p2 a maximum of 100 pixels away from p1, and no lower than 10 pixels below
 
 ;This controller below makes Kung Fu Man change to a success state if he
 ;successfully hits the Smash Kung Fu Upper.
@@ -704,7 +704,7 @@ ctrl = 1
 
 ; Grand KF Upper Success Pose
 [Statedef 3101]
-type    = S
+type = S
 movetype= A
 physics = S
 anim = 3101

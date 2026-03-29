@@ -1,5 +1,5 @@
 ; _________________________________________
-;| CVS Choi Bounge by Falcon Rapper        |
+;| CVS Choi Bounge by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SPECIAL MOVES=
@@ -2024,7 +2024,7 @@ envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 1100,ChangeState]
 type = ChangeState
-trigger1 = Command = "x" || Command = "y"  || Command = "z" && !MoveContact
+trigger1 = Command = "x" || Command = "y" || Command = "z" && !MoveContact
 value = 1310
 
 [State 1100,ChangeState]
@@ -2378,7 +2378,7 @@ envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 1100,ChangeState]
 type = ChangeState
-trigger1 = Command = "x" || Command = "y"  || Command = "z" && !MoveContact
+trigger1 = Command = "x" || Command = "y" || Command = "z" && !MoveContact
 value = 1310
 
 [State 1100,ChangeState]

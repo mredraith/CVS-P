@@ -2043,7 +2043,7 @@ trigger1 = animelem = 2 || animelem = 3 || animelem = 4 || animelem = 5 || anime
 trigger2 = animelem = 10 || animelem = 11 || animelem = 12 || animelem = 13 || animelem = 14 || animelem = 15
 trigger3 = animelem = 16 || animelem = 17 || animelem = 18 || animelem = 19 || animelem = 20 || animelem = 21 || animelem = 22 || animelem = 23 || animelem = 24 || animelem = 25
 trigger4 = animelem = 26 || animelem = 27 || animelem = 28 || animelem = 29 || animelem = 30 || animelem = 31 || animelem = 32 || animelem = 33 || animelem = 34
-stateNo =  8015
+stateNo = 8015
 helperType = Normal
 ID = 7000
 sprpriority = 20

@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| Leo by K6666orochi                      |
+;| Leo by K6666orochi |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -1582,7 +1582,7 @@ y = 0;-36*const(size.yscale)
 [State 701, VelSet]
 type = VelSet
 trigger1 = vel y >= 0
-trigger1 = pos y + vel y  >= 0;-36*const(size.yscale)
+trigger1 = pos y + vel y >= 0;-36*const(size.yscale)
 y = 0
 
 [State 701, ChangeAnim]
@@ -1642,7 +1642,7 @@ postype = p1
 anim = 17002
 bindtime = 1
 postype = p2
-pos = floor(23*const(size.xscale)), floor(ifelse(pos y + vel y  < -64*const(size.yscale), 64*const(size.yscale) - 12,-pos y - vel y - 12))
+pos = floor(23*const(size.xscale)), floor(ifelse(pos y + vel y < -64*const(size.yscale), 64*const(size.yscale) - 12,-pos y - vel y - 12))
 sprpriority = 5
 pausemovetime = 99999
 supermovetime = 99999
@@ -1658,7 +1658,7 @@ postype = p1
 anim = F2
 bindtime = 1
 postype = p2
-pos = floor(23*const(size.xscale)), floor(ifelse(pos y + vel y  < -64*const(size.yscale), 64*const(size.yscale) - 12,-pos y - vel y - 12))
+pos = floor(23*const(size.xscale)), floor(ifelse(pos y + vel y < -64*const(size.yscale), 64*const(size.yscale) - 12,-pos y - vel y - 12))
 sprpriority = 5
 pausemovetime = 99999
 supermovetime = 99999
@@ -2939,7 +2939,7 @@ value=7828
 ;OFF SCREEN RUN IN>=
 ;Off Screen Run In
 [Statedef 7828]
-type   =S
+type =S
 physics=S
 anim=100
 ctrl=0
@@ -2984,7 +2984,7 @@ ctrl=0
 ;OFF SCREEN RUN STOP>=
 ;Off Screen Run Stop
 [Statedef 7829]
-type   =S
+type =S
 physics=S
 anim=101
 ctrl=0
@@ -3326,7 +3326,7 @@ y = 1
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5040 ;HITA_RECOV
 
@@ -3334,7 +3334,7 @@ value = 5040 ;HITA_RECOV
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5050 ;HITA_FALL
 
@@ -3366,22 +3366,22 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;Air get-hit (recovering in air, not falling)
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5050 ;Air get-hit (falling)
 
@@ -3438,7 +3438,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -4405,7 +4405,7 @@ trigger1 = time >= 28;---make the time match the time in the pause code above
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -5053,7 +5053,7 @@ trigger10 = StateNo = 430
 trigger11 = StateNo = 600
 trigger12 = StateNo = 630
 trigger13 = StateNo = 221 && MoveContact && AnimElemTime(6) < 0
-trigger14 = StateNo = 241 && MoveContact ;&& AnimElemTime(5) < 0  
+trigger14 = StateNo = 241 && MoveContact ;&& AnimElemTime(5) < 0 
 trigger15 = StateNo = 251 && MoveContact && AnimElemTime(6) < 0
 trigger16 = StateNo = 440 && MoveContact && AnimElemTime(5) < 0
 var(6) = 1

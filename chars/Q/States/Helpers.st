@@ -2598,7 +2598,7 @@ ignoreHitPause = 1
 [State 13200, AssertSpecial]
 type = AssertSpecial
 trigger1 = 1
-flag =  Invisible
+flag = Invisible
 flag2 = NoShadow
 ignoreHitPause = 1
 

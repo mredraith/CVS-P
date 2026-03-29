@@ -789,7 +789,7 @@ value = ifElse((NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220
 type = ChangeState
 trigger1 = AILevel && (Time = [15, 25]) && NumEnemy
 trigger1 = (EnemyNear, MoveType != A) && (P2BodyDist x = [-60,60]) && (P2Dist y >= -60)
-trigger1 =  Random < (25 * (AILevel ** 2 / 64.0))
+trigger1 = Random < (25 * (AILevel ** 2 / 64.0))
 value = 245
 
 [State 700, End]

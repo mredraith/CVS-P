@@ -1518,7 +1518,7 @@ value=25
 ignorehitpause=1
 [State 3310, AngleDraw]
 type=AngleDraw
-trigger1=root,animelemtime(10)>=0  && root,animelemtime(11)<0 
+trigger1=root,animelemtime(10)>=0 && root,animelemtime(11)<0 
 value=-25
 ignorehitpause=1
 
@@ -1541,7 +1541,7 @@ pos=ceil(-38 * root,const(size.xScale)), ceil(0 * root,const(size.yScale))
 ignorehitpause=1
 [State 3310, BindToRoot]
 type=BindToRoot
-trigger1=root,animelemtime(10)>=0  
+trigger1=root,animelemtime(10)>=0 
 pos=ceil(-22 * root,const(size.xScale)), ceil(50 * root,const(size.yScale))
 ignorehitpause=1
 

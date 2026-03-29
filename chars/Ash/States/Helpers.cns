@@ -242,7 +242,7 @@ ignorehitpause=1
 
 [State 1005, VelSet]
 type = VelSet
-trigger1 =  1
+trigger1 = 1
 x = 3 + (var(10) * 1.5)
  
 [State 1005, Vel]
@@ -543,7 +543,7 @@ ignorehitpause = 1
 
 [State 1005, VelSet]
 type = VelSet
-trigger1 =  1
+trigger1 = 1
 x = 4 + (var(10) * 1.125)
  
 [State 1005, Vel]
@@ -884,7 +884,7 @@ ignorehitpause = 1
 
 [State 1005, VelSet]
 type = VelSet
-trigger1 =  1
+trigger1 = 1
 x = 4 + (var(10) * 1.125)
  
 [State 1005, Vel]
@@ -1137,7 +1137,7 @@ ignorehitpause = 1
 
 [State 1005, VelSet]
 type = VelSet
-trigger1 =  1
+trigger1 = 1
 x = 4 + (var(10) * 1.125)
  
 [State 1005, Vel]
@@ -1436,7 +1436,7 @@ ignorehitpause=1
 
 [State 1005, VelSet]
 type = VelSet
-trigger1 =  1
+trigger1 = 1
 x = 6
  
 [State 1005, Vel]
@@ -3352,54 +3352,54 @@ ignorehitpause = 1
 
 [State 3105, Vel]
 type = velset
-trigger1 = Time >= 1 &&  prevstateno!=30005
+trigger1 = Time >= 1 && prevstateno!=30005
 x = 6
 y = 0
 
 [State 3105, Vel]
 type = velset
-trigger1 = Time >= 4 &&  prevstateno!=30005
+trigger1 = Time >= 4 && prevstateno!=30005
 x = 5.5
 y = 0
 
 [State 3105, Vel]
 type = velset
-trigger1 = Time >= 7 &&  prevstateno!=30005
+trigger1 = Time >= 7 && prevstateno!=30005
 x = 5
 y = 0
 
 [State 3105, Vel]
 type = velset
-trigger1 = Time >= 10 &&  prevstateno!=30005
+trigger1 = Time >= 10 && prevstateno!=30005
 x = 4
 y = 0
 
 [State 3105, Vel]
 type = velset
-trigger1 = Time >= 13 &&  prevstateno!=30005
+trigger1 = Time >= 13 && prevstateno!=30005
 x = 3
 y = 0
 
 [State 3105, Vel]
 type = velset
-trigger1 = Time >= 16 &&  prevstateno!=30005
+trigger1 = Time >= 16 && prevstateno!=30005
 x = 2
 y = 0
 
 [State 3105, Vel]
 type = velset
-trigger1 = Time >= 19 &&  prevstateno!=30005
+trigger1 = Time >= 19 && prevstateno!=30005
 x = 1
 y = 0
 
 [State 3210, VelSet]
 type = VelSet
-trigger1 = Time >= 22 &&  prevstateno!=30005
+trigger1 = Time >= 22 && prevstateno!=30005
 x = 0.5
 
 [State 3210, VelSet]
 type = VelSet
-trigger1 = Time >= 25 &&  prevstateno!=30005
+trigger1 = Time >= 25 && prevstateno!=30005
 x = 0
 
 [State 3105, HitSound]
@@ -3557,7 +3557,7 @@ ignorehitpause = 1
 [State 0, Trans]
 type = Trans
 trigger1 = 1
-trans =  sub
+trans = sub
 ;alpha = 256,256
 ;ignorehitpause = 
 ;persistent = 
@@ -4367,7 +4367,7 @@ trigger1 = time >1
 trigger1 = var(54) <= 0
 ;---------------------------------------------------------------------------
 [Statedef 3508]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -4391,7 +4391,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 [Statedef 3509]
-type    = A
+type = A
 movetype= H
 physics = A
 ctrl = 0
@@ -4467,7 +4467,7 @@ trigger1 = time = 100
 ;CAMERA FOCUS
 [Statedef 6001]
 type = S
-physics  = S
+physics = S
 anim = 0
 ctrl = 0
 

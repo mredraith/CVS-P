@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==
 ;SYSTEM STATES
@@ -2335,7 +2335,7 @@ trigger1 = Time = 34
 anim = 10185
 ID = 10185
 pos = -1,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 50
@@ -2555,7 +2555,7 @@ trigger1 = Time = 82
 anim = 10192
 ID = 10192
 pos = 15,-55
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2576,7 +2576,7 @@ trigger1 = Time = 82
 anim = 10193
 ID = 10193
 pos = 15,-55
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3060,7 +3060,7 @@ value=7828
 ;OFF SCREEN RUN IN>=
 ;Off Screen Run In
 [Statedef 7828]
-type   =S
+type =S
 physics=S
 anim=100
 ctrl=0
@@ -3105,7 +3105,7 @@ ctrl=0
 ;OFF SCREEN RUN STOP>=
 ;Off Screen Run Stop
 [Statedef 7829]
-type   =S
+type =S
 physics=S
 anim=101
 ctrl=0
@@ -3133,7 +3133,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Stand get-hit (shaking)
 [Statedef 5000]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -3209,7 +3209,7 @@ value = 5030
 ;---------------------------------------------------------------------------
 ; Stand get-hit (knocked back)
 [Statedef 5001]
-type    = S
+type = S
 movetype= H
 physics = S
 
@@ -3247,7 +3247,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouch get-hit (shaking)
 [Statedef 5010]
-type    = C
+type = C
 movetype= H
 physics = N
 velset = 0,0
@@ -3319,7 +3319,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Crouch get-hit (knocked back)
 [Statedef 5011]
-type    = C
+type = C
 movetype= H
 physics = C
 
@@ -3357,7 +3357,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Air get-hit (shaking)
 [Statedef 5020]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3421,7 +3421,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Air get-hit (knocked away)
 [Statedef 5030]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -3447,7 +3447,7 @@ y = 1
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5040 ;HITA_RECOV
 
@@ -3455,7 +3455,7 @@ value = 5040 ;HITA_RECOV
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5050 ;HITA_FALL
 
@@ -3467,7 +3467,7 @@ value = 5035 ;Air get-hit (transition)
 ;---------------------------------------------------------------------------
 ; Air get-hit (transition)
 [Statedef 5035]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3487,29 +3487,29 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;Air get-hit (recovering in air, not falling)
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5050 ;Air get-hit (falling)
 
 ;---------------------------------------------------------------------------
 ; Air get-hit (recovering in air, not falling)
 [Statedef 5040]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3551,7 +3551,7 @@ value = 52 ;Jump land
 ;---------------------------------------------------------------------------
 ; Air get-hit (falling)
 [Statedef 5050]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3559,7 +3559,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -3604,7 +3604,7 @@ value = 5100 ;Downed get-hit (hit ground from fall)
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (shaking)
 [Statedef 5070]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3629,7 +3629,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (knocked away)
 [Statedef 5071]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3653,7 +3653,7 @@ value = 5110
 ;---------------------------------------------------------------------------
 ; Downed get-hit (shaking)
 [Statedef 5080]
-type    = L
+type = L
 movetype= H
 physics = N
 velset = 0,0
@@ -3697,7 +3697,7 @@ value = 5030 ;Air get-hit (knocked away)
 ;---------------------------------------------------------------------------
 ; Downed get-hit (knocked back)
 [Statedef 5081]
-type    = L
+type = L
 movetype= H
 physics = C
 
@@ -3724,7 +3724,7 @@ value = 5110 ;Downed get-hit (lying down)
 ;---------------------------------------------------------------------------
 ; Downed get-hit (hit ground from fall)
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3814,7 +3814,7 @@ time = 20
 ;---------------------------------------------------------------------------
 ; Downed get-hit (bounce off ground)
 [Statedef 5101]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3860,7 +3860,7 @@ value = 5110
 ;---------------------------------------------------------------------------
 ; Downed get-hit (lying down)
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3986,7 +3986,7 @@ waveform = sine
 ;---------------------------------------------------------------------------
 ; Downed get-hit (getting up)
 [Statedef 5120]
-type    = L
+type = L
 movetype= I
 physics = N
 
@@ -4041,7 +4041,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Downed get-hit (lying defeated)
 [Statedef 5150]
-type    = L
+type = L
 movetype= H
 physics = N
 sprpriority = -3
@@ -4098,7 +4098,7 @@ time = 1
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery on ground; still falling)
 [Statedef 5200]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -4122,7 +4122,7 @@ value = 5201
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery on ground)
 [Statedef 5201]
-type    = A
+type = A
 movetype= H
 physics = A
 anim = 5200
@@ -4165,7 +4165,7 @@ sprpriority = -10
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery in air)
 [Statedef 5210]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 5210
@@ -4293,7 +4293,7 @@ value = 51054
 ;---------------------------------------------------------------------------
 ;P2 Lv. 1 V-Slasher 1
 [Statedef 53002]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -4313,7 +4313,7 @@ value = 53002
 ;---------------------------------------------------------------------------
 ;P2 Lv. 1 V-Slasher 2
 [Statedef 53003]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = -1,-10.5
@@ -4342,7 +4342,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;P2 Lv. 2 V-Slasher 1
 [Statedef 53007]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -4361,7 +4361,7 @@ value = 53007
 ;---------------------------------------------------------------------------
 ;P2 Lv. 2 V-Slasher 2
 [Statedef 53008]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = -1,-10.5
@@ -4390,7 +4390,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;P2 Lv. 1 Rebel Spark
 [Statedef 53012]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -4408,7 +4408,7 @@ value = 53012
 ;---------------------------------------------------------------------------
 ;P2 Lv. 2 Rebel Spark
 [Statedef 53017]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -4558,7 +4558,7 @@ value = 53032
 ;---------------------------------------------------------------------------
 ;P2 V-Slasher LDM
 [Statedef 53042]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -5234,7 +5234,7 @@ trigger10 = StateNo = 430
 trigger11 = StateNo = 600
 trigger12 = StateNo = 630
 trigger13 = StateNo = 221 && MoveContact && AnimElemTime(6) < 0
-trigger14 = StateNo = 241 && MoveContact ;&& AnimElemTime(5) < 0  
+trigger14 = StateNo = 241 && MoveContact ;&& AnimElemTime(5) < 0 
 trigger15 = StateNo = 251 && MoveContact && AnimElemTime(6) < 0
 trigger16 = StateNo = 440 && MoveContact && AnimElemTime(5) < 0
 var(6) = 1

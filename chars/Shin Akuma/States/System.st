@@ -2636,7 +2636,7 @@ ampl = -3
 [State 4001, Snd]
 type = playsnd
 trigger1 = animelemtime(3) = 20
-value =  4, 9
+value = 4, 9
 channel = 0
 
 [State 4001, Kanji]
@@ -4088,7 +4088,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -4588,7 +4588,7 @@ ignorehitpause = 1
 [State -2, VelMul]
 type = VelMul
 trigger1 = prevstateno = 1310
-trigger1 = (stateno = 1060  || stateno = 1301)
+trigger1 = (stateno = 1060 || stateno = 1301)
 trigger1 = time = 1
 x = ifelse(var(42) && stateno = 1060, 0.40, 0.80)
 
@@ -4605,8 +4605,8 @@ trigger1 = 1
 text = "AI = %d Mode = %d Damage = %f Hits = %d Juggle = %d Juggle = %d"
 params = AIlevel, var(1), fvar(12), var(13), var(15), var(42)
 ignorehitpause = 1
-        ; SC = %d HC = %d LC = %d
-        ;, var(21), var(22), var(23)
+ ; SC = %d HC = %d LC = %d
+ ;, var(21), var(22), var(23)
 [State -2, Debug]
 type = appendtoclipboard
 trigger1 = 1
@@ -4839,7 +4839,7 @@ ignoreHitPause = 1
 type = VarSet
 triggerall = !var(20)
 trigger1 = (stateno = 210 && anim = 210)
-trigger2 =  stateno = 210 && (anim = 212 && animelemtime(4)>= 0)
+trigger2 = stateno = 210 && (anim = 212 && animelemtime(4)>= 0)
 trigger3 = (stateno = 220 && (anim = 220 || anim = 223))
 trigger4 = stateno = 225 && ((anim = 225 && animelemtime(9)>= 0) || (anim = 226 && animelemtime(5)>= 0) || anim = 227)
 trigger5 = stateno = 240 && (anim = 240 && animelemtime(5)>= 0)

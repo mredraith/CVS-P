@@ -551,10 +551,10 @@ ctrl = 1
 ;DODGE>=
 ;Dodge
 [Statedef 700]
-type    = S
+type = S
 movetype= I
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 700
@@ -1916,7 +1916,7 @@ flag2 = NoCrouchGuard
 ;Running
 ;Running
 [Statedef 100]
-type    = S
+type = S
 movetype = I
 physics = S
 ctrl = 0
@@ -2153,7 +2153,7 @@ ctrl = 1
 ;AIR GET-HIT(FALLING)>=
 ; Air get-hit (falling)
 [Statedef 5050]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -2161,7 +2161,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -2211,7 +2211,7 @@ value = 5100 ;Downed get-hit (hit ground from fall)
 ;HIT GROUND(BOUNCE)>=
 ;Hit Ground
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2326,7 +2326,7 @@ time = 20
 ;HIT LIEDOWN
 ;Hit Liedown
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2734,9 +2734,9 @@ physics = S
 [state 0] ;[.07p2]
 	type=varset
 	triggerall=var(58)
-	trigger1=!time &&  gethitvar(ctrltime)>0 && playeridexist(gethitvar(ctrltime))
-	trigger1= playerid(gethitvar(ctrltime)),const(data.sparkno)=[8800,8859]       ;;<-var(#1)
-	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.sparkno)-8800)>=0      ;;<-spark_no
+	trigger1=!time && gethitvar(ctrltime)>0 && playeridexist(gethitvar(ctrltime))
+	trigger1= playerid(gethitvar(ctrltime)),const(data.sparkno)=[8800,8859] ;;<-var(#1)
+	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.sparkno)-8800)>=0 ;;<-spark_no
 	trigger1= playerid(gethitvar(ctrltime)),const(data.guard.sparkno)=[8800,8859] ;;<-var(#2)
 	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.guard.sparkno)-8800)>0 ;;<-spark_xy
 	sysvar(0)=playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.guard.sparkno)-8800)
@@ -2858,9 +2858,9 @@ physics = S
 [state 0] ;[.07p2]
 	type=varset
 	triggerall=var(58)
-	trigger1=!time &&  gethitvar(ctrltime)>0 && playeridexist(gethitvar(ctrltime))
-	trigger1= playerid(gethitvar(ctrltime)),const(data.sparkno)=[8800,8859]       ;;<-var(#1)
-	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.sparkno)-8800)>=0      ;;<-spark_no
+	trigger1=!time && gethitvar(ctrltime)>0 && playeridexist(gethitvar(ctrltime))
+	trigger1= playerid(gethitvar(ctrltime)),const(data.sparkno)=[8800,8859] ;;<-var(#1)
+	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.sparkno)-8800)>=0 ;;<-spark_no
 	trigger1= playerid(gethitvar(ctrltime)),const(data.guard.sparkno)=[8800,8859] ;;<-var(#2)
 	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.guard.sparkno)-8800)>0 ;;<-spark_xy
 	sysvar(0)=playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.guard.sparkno)-8800)
@@ -2968,9 +2968,9 @@ value = 155
 [state 0] ;[.07p2]
 	type=varset
 	triggerall=var(58)
-	trigger1=!time &&  gethitvar(ctrltime)>0 && playeridexist(gethitvar(ctrltime))
-	trigger1= playerid(gethitvar(ctrltime)),const(data.sparkno)=[8800,8859]       ;;<-var(#1)
-	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.sparkno)-8800)>=0      ;;<-spark_no
+	trigger1=!time && gethitvar(ctrltime)>0 && playeridexist(gethitvar(ctrltime))
+	trigger1= playerid(gethitvar(ctrltime)),const(data.sparkno)=[8800,8859] ;;<-var(#1)
+	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.sparkno)-8800)>=0 ;;<-spark_no
 	trigger1= playerid(gethitvar(ctrltime)),const(data.guard.sparkno)=[8800,8859] ;;<-var(#2)
 	trigger1= playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.guard.sparkno)-8800)>0 ;;<-spark_xy
 	sysvar(0)=playerid(gethitvar(ctrltime)),var(playerid(gethitvar(ctrltime)),const(data.guard.sparkno)-8800)
@@ -3191,7 +3191,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -3900,7 +3900,7 @@ value = 7828
 ;OFF SCREEN RUN IN>=
 ;Off Screen Run In
 [Statedef 7828]
-type    = S
+type = S
 physics = S
 ctrl = 0
 facep2=1
@@ -3963,7 +3963,7 @@ ctrl = 0
 ;OFF SCREEN RUN STOP>=
 ;Off Screen Run Stop
 [Statedef 7829]
-type    = S
+type = S
 physics = S
 anim = 101
 ctrl = 0
@@ -4043,7 +4043,7 @@ value = vel y
 type = ChangeAnim
 trigger1 = 1
 value = Anim
-elem  = var(45)
+elem = var(45)
 
 [State 9000, VelAdd]
 type = VelAdd
@@ -4084,7 +4084,7 @@ y = 0
 [State 9000, VarSet]
 type = VarSet
 trigger1 = !Time
-fv = 22    
+fv = 22 
 value = hitvel x*0.75
 
 [State 9000, End]
@@ -4799,7 +4799,7 @@ value = 9
 [State -2, Debug]
 trigger1 = 1
 type = DisplayToClipboard
-text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
 params = fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause = 1
 [State -2, Debug 2]

@@ -32,7 +32,7 @@ var(10) = ifElse((command = "x" || command = "rlsx"), 0, ifElse((command = "y" |
 [State 1000, Button Detect (AI)]
 type = VarSet
 trigger1 = !Time && AILevel
-var(10) =  1;ifElse(P2BodyDist X >= 30 && P2BodyDist Y >= -60, 2, ifElse(P2BodyDist X >= 60 && P2BodyDist Y >= -60, 1, 0))
+var(10) = 1;ifElse(P2BodyDist X >= 30 && P2BodyDist Y >= -60, 2, ifElse(P2BodyDist X >= 60 && P2BodyDist Y >= -60, 1, 0))
 
 [State 1000, Changestate: Button Release]
 type = Changestate
@@ -1416,7 +1416,7 @@ animtype = Heavy
 air.animtype = Back
 ground.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 guard.ctrltime = 20
 ground.velocity = -1
@@ -1482,7 +1482,7 @@ animtype = Heavy
 air.animtype = Back
 ground.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 guard.ctrltime = 20
 ground.velocity = -1

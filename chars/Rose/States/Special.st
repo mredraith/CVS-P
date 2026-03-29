@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rose by varo_hades                      |
+;| Rose by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -680,7 +680,7 @@ physics = N
 movetype = A
 ctrl = 0
 velset = 0,0
-anim =  1101
+anim = 1101
 juggle = 0
 
 [State 0, TargetBind]
@@ -691,7 +691,7 @@ pos = 0,0
 
 [State 0, SprPriority]
 type = SprPriority
-trigger1 =  1
+trigger1 = 1
 value = 1
 
 [State 0, PlaySnd]
@@ -812,12 +812,12 @@ juggle = 0
 
 [State 0, SprPriority]
 type = SprPriority
-trigger1 =  1
+trigger1 = 1
 value = 2
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  time = 0
+trigger1 = time = 0
 time = 30
 add = 222,0,222
 mul = 255,255,255
@@ -960,12 +960,12 @@ juggle = 0
 
 [State 0, SprPriority]
 type = SprPriority
-trigger1 =  1
+trigger1 = 1
 value = 2
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  time = 0
+trigger1 = time = 0
 time = 30
 add = 222,0,222
 mul = 255,255,255
@@ -1108,12 +1108,12 @@ juggle = 0
 
 [State 0, SprPriority]
 type = SprPriority
-trigger1 =  1
+trigger1 = 1
 value = 2
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  time = 0
+trigger1 = time = 0
 time = 30
 add = 222,0,222
 mul = 255,255,255
@@ -1313,9 +1313,9 @@ channel = 2
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 7
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 0, VelSet]
 type = VelSet
@@ -1510,17 +1510,17 @@ physics = N
 movetype = H
 ctrl = 0
 velset = 0,0
-anim =  1101
+anim = 1101
 juggle = 0
 
 [State 0, SprPriority]
 type = SprPriority
-trigger1 =  1
+trigger1 = 1
 value = 2
 
 [State 0, PalFX]
 type = PalFX
-trigger1 =  time = 0
+trigger1 = time = 0
 time = 30
 add = 222,0,222
 mul = 255,255,255
@@ -3148,7 +3148,7 @@ channel = 1
 [State 0, PosAdd]
 type = PosAdd
 trigger1 = var(10) = 1
-trigger1 =  time=0
+trigger1 = time=0
 x = 5
 y = 0
 

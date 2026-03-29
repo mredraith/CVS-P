@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rugal by varo_hades                     |
+;| Rugal by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -391,12 +391,12 @@ anim = 3004
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  3092
+id = 3092
 
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  8104
+id = 8104
 
 [State 1206, Effect]
 type = PlaySnd
@@ -932,12 +932,12 @@ anim = 3054
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  3092
+id = 3092
 
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  8104
+id = 8104
 
 [State 1206, Effect]
 type = PlaySnd
@@ -1168,12 +1168,12 @@ anim = 3004
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  3092
+id = 3092
 
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  8104
+id = 8104
 
 [State 1206, Effect]
 type = PlaySnd
@@ -1557,7 +1557,7 @@ ignorehitpause = 1
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1603,7 +1603,7 @@ envShake.freq = 120
 [State 3100, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1649,7 +1649,7 @@ envShake.freq = 120
 [State 3100, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 13
+trigger1 = AnimElem = 13
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1695,7 +1695,7 @@ envShake.freq = 120
 [State 3100, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 15
+trigger1 = AnimElem = 15
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1741,7 +1741,7 @@ envShake.freq = 120
 [State 3100, HitDef 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  AnimElem = 22
+trigger1 = AnimElem = 22
 attr = A, HA
 hitFlag = MAF
 guardFlag = M
@@ -2081,7 +2081,7 @@ ignorehitpause = 1
 [State 3150, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2127,7 +2127,7 @@ envShake.freq = 120
 [State 3150, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2173,7 +2173,7 @@ envShake.freq = 120
 [State 3150, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 13
+trigger1 = AnimElem = 13
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2219,7 +2219,7 @@ envShake.freq = 120
 [State 3150, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 15
+trigger1 = AnimElem = 15
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2265,7 +2265,7 @@ envShake.freq = 120
 [State 3150, HitDef 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  AnimElem = 22
+trigger1 = AnimElem = 22
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2311,7 +2311,7 @@ envShake.freq = 120
 [State 3150, HitDef 6]
 type = HitDef
 trigger1 = !var(16) && var(15) < 7
-trigger1 =  AnimElem = 23
+trigger1 = AnimElem = 23
 attr = A, HA
 hitFlag = MAF
 guardFlag = M
@@ -2357,7 +2357,7 @@ envShake.freq = 120
 [State 3150, HitDef 7]
 type = HitDef
 trigger1 = !var(16) && var(15) < 8
-trigger1 =  AnimElem = 36
+trigger1 = AnimElem = 36
 attr = A, HA
 hitFlag = MAF
 guardFlag = M
@@ -2699,7 +2699,7 @@ ignorehitpause = 1
 [State 3160, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2745,7 +2745,7 @@ envShake.freq = 120
 [State 3160, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2791,7 +2791,7 @@ envShake.freq = 120
 [State 3160, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 13
+trigger1 = AnimElem = 13
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2837,7 +2837,7 @@ envShake.freq = 120
 [State 3160, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 15
+trigger1 = AnimElem = 15
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2883,7 +2883,7 @@ envShake.freq = 120
 [State 3160, HitDef 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  AnimElem = 22
+trigger1 = AnimElem = 22
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2929,7 +2929,7 @@ envShake.freq = 120
 [State 3160, HitDef 6]
 type = HitDef
 trigger1 = !var(16) && var(15) < 7
-trigger1 =  AnimElem = 24
+trigger1 = AnimElem = 24
 attr = A, HA
 hitFlag = MAF
 guardFlag = M
@@ -2975,7 +2975,7 @@ envShake.freq = 120
 [State 3160, HitDef 7]
 type = HitDef
 trigger1 = !var(16) && var(15) < 8
-trigger1 =  AnimElem = 36
+trigger1 = AnimElem = 36
 attr = A, HA
 hitFlag = MAF
 guardFlag = M
@@ -3021,7 +3021,7 @@ envShake.freq = 120
 [State 3160, HitDef 8]
 type = HitDef
 trigger1 = !var(16) && var(15) < 9
-trigger1 =  AnimElem = 51
+trigger1 = AnimElem = 51
 attr = A, HA
 hitFlag = MAF
 guardFlag = M
@@ -3959,7 +3959,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -2, -11
 guard.velocity = -8.52
-air.velocity =  -2, -11
+air.velocity = -2, -11
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -3998,7 +3998,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -3,-11
 guard.velocity = -8.52
-air.velocity =  -3,-11
+air.velocity = -3,-11
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -4821,7 +4821,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -2, -9
 guard.velocity = -8.52
-air.velocity =  -2, -9
+air.velocity = -2, -9
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -4861,7 +4861,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -2, -9
 guard.velocity = -8.52
-air.velocity =  -2, -9
+air.velocity = -2, -9
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -5069,7 +5069,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -2, -9
 guard.velocity = -8.52
-air.velocity =  -2, -9
+air.velocity = -2, -9
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -5109,7 +5109,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -2, -9
 guard.velocity = -8.52
-air.velocity =  -2, -9
+air.velocity = -2, -9
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -5150,7 +5150,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -2, -10
 guard.velocity = -8.52
-air.velocity =  -2, -10
+air.velocity = -2, -10
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
@@ -5190,7 +5190,7 @@ guard.hittime = (18) - 6
 guard.ctrltime = 18
 ground.velocity = -3, -11
 guard.velocity = -8.52
-air.velocity =  -3, -11
+air.velocity = -3, -11
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0

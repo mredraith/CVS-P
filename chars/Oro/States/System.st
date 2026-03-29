@@ -1,6 +1,6 @@
 
 ; _________________________________________
-;| Oro by varo_hades                       |
+;| Oro by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -264,13 +264,13 @@ ignoreHitPause = 1
 
 [State 0, VarSet]
 type = VarSet
-trigger1 =  time = 0
+trigger1 = time = 0
 v = 24
 value = 1
 
 [State 0, VarSet]
 type = VarSet
-trigger1 =  time >= 8
+trigger1 = time >= 8
 v = 24
 value = 2
 
@@ -2117,7 +2117,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 
 [State 5210, Flash]
 type = PalFX
@@ -2723,7 +2723,7 @@ trigger1 = time = 10
 value = 182,0
 
 [State 190, 1] ;Freeze animation until PreIntro is over
-type = ChangeAnim                 ;##21# oro
+type = ChangeAnim ;##21# oro
 trigger1 = time = 85
 value = 812
 
@@ -2749,7 +2749,7 @@ superMoveTime = -1
 ownPal = 1
 
 [State 190, 3] ;Change to stand state when done
-type = ChangeState                  ;##21# oro
+type = ChangeState ;##21# oro
 trigger1 = time = 110
 value = 0
 

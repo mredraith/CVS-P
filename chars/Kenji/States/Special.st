@@ -1806,7 +1806,7 @@ ignorehitpause = 1
 
 [State 3200, Hit]
 type = hitdef
-trigger1 = anim = 1430 &&  (animelem = 5 || animelem = 9 || animelem = 13 || animelem = 17 || animelem = 21 || animelem = 25 || animelem = 29)
+trigger1 = anim = 1430 && (animelem = 5 || animelem = 9 || animelem = 13 || animelem = 17 || animelem = 21 || animelem = 25 || animelem = 29)
 attr = S, HA
 damage = ceil(30.0*(2 - fvar(11))/(1.0 + 0.4*hitcount)), ceil(7.0*(2 - fvar(11))/(1.0 + 0.4*hitcount))
 animtype = Hard
@@ -1878,7 +1878,7 @@ forcestand = 1
 
 [State 3200, hitfinal]
 type = hitdef
-trigger1 = anim = 1430 &&  animelem = 31
+trigger1 = anim = 1430 && animelem = 31
 attr = S, HA
 damage = ceil(47.0*(2 - fvar(11))/(1.0 + 0.4*hitcount)), ceil(7.0*(2 - fvar(11))/(1.0 + 0.4*hitcount))
 animtype = Diagup
@@ -2676,14 +2676,14 @@ persistent = 1
 
 [state 1000,exit]
 type = PosSet
-triggerall = prevstateno = 1630  && facing = 1
+triggerall = prevstateno = 1630 && facing = 1
 trigger1 = Time=0 ;&& var(1)>2
 x =50+enemynear,pos X
 y = -80
 
 [state 1000,exit]
 type = PosSet
-triggerall = prevstateno = 1630  && facing = -1
+triggerall = prevstateno = 1630 && facing = -1
 trigger1 = Time=0 ;&& var(1)>2
 x =-50+enemynear,pos X
 y = -80

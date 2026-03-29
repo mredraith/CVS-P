@@ -11,7 +11,7 @@ author ="Elecbyte&DivineWolf"
 pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
 
 ; Files for the player
-localCoord  = 428,240
+localCoord = 428,240
 [Files]
 movelist = movelist.dat
 cmd =Kung Fu Man.cmd

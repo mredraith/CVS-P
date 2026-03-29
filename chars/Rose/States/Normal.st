@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rose by varo_hades                      |
+;| Rose by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -2600,7 +2600,7 @@ ignoreHitPause = 1
 
 [State 0, PosSet]
 type = PosSet
-trigger1 =  1
+trigger1 = 1
 y = 0
 
 [State 0, SprPriority]
@@ -3275,7 +3275,7 @@ y = 10
 type = Turn
 trigger1 = Pos Y >= 0
 trigger1 = Vel Y > 0
-persistent =  0
+persistent = 0
 
 [State 0,ChangeState]
 type = ChangeState

@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Raiden by Knuckles8864                |
+;| Raiden by Knuckles8864 |
 ; 
 ;
 ;SPECIAL MOVES
@@ -1433,7 +1433,7 @@ y = 0.8
 [State 1330, Air Hit]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 4  && !var(45)
+trigger1 = AnimElem = 4 && !var(45)
 trigger1 = P2MoveType != H
 trigger1 = P2StateNo != [150,155]
 attr = A, ST
@@ -1922,7 +1922,7 @@ x = 0
 [State 1450, Grab Attempt]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 4  && !var(45)
+trigger1 = AnimElem = 4 && !var(45)
 trigger1 = P2StateNo != [150,155]
 attr = S, ST
 hitFlag = M
@@ -2481,7 +2481,7 @@ x = 0
 [State 1432, Grab Attempt]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 4  && !var(45)
+trigger1 = AnimElem = 4 && !var(45)
 trigger1 = P2StateNo != [150,155]
 attr = S, ST
 hitFlag = M
@@ -3216,7 +3216,7 @@ channel = 2
 [State 1530, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 2  && !var(45)
+trigger1 = AnimElem = 2 && !var(45)
 trigger1 = P2MoveType != H
 trigger1 = P2StateNo != [150,155]
 attr = S, ST

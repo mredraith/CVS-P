@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Adon by Trololo                       |
+;| Adon by Trololo |
 ; 
 ;
 ;NORMAL MOVES=
@@ -2453,7 +2453,7 @@ pos = ceil(9 * const(size.xScale)), ceil(-31 * const(size.yScale))
 [State 810, TargetBind 4]
 type = TargetBind
 trigger1 = NumTarget
-trigger1 = AnimElemTime(5) >= 0  && AnimElemTime(6) < 0
+trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(6) < 0
 pos = ceil(-66 * const(size.xScale)), ceil(-34 * const(size.yScale))
 
 [State 0, TargetVelAdd]
@@ -2764,9 +2764,9 @@ y = -5
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 6
-statetype = A       ;S,A,C,L
-movetype = I        ;I,A,H
-physics = A         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = I ;I,A,H
+physics = A ;A,C,S,N
 
 [State 820, End]
 type = ChangeState
@@ -3394,9 +3394,9 @@ y = -5
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 6
-statetype = A       ;S,A,C,L
-movetype = I        ;I,A,H
-physics = A         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = I ;I,A,H
+physics = A ;A,C,S,N
 
 [State 820, End]
 type = ChangeState

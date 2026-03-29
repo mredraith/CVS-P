@@ -6,7 +6,7 @@
 ;
 
 ; _______________________________________
-;| Adon by Trololo                       |
+;| Adon by Trololo |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -488,8 +488,8 @@ y = const(velocity.run.back.y)
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 3
-movetype = I        ;I,A,H
-physics = A         ;A,C,S,N
+movetype = I ;I,A,H
+physics = A ;A,C,S,N
 
 [State 105, End]
 type = ChangeState
@@ -591,8 +591,8 @@ y = const(velocity.run.back.y)
 [State 110, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 3
-movetype = I        ;I,A,H
-physics = A         ;A,C,S,N
+movetype = I ;I,A,H
+physics = A ;A,C,S,N
 
 [State 110, End]
 type = ChangeState
@@ -3284,7 +3284,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l

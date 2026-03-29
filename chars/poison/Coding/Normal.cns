@@ -1,7 +1,7 @@
 ; Standing Light Punch
 ; CNS difficulty: easy
 [Statedef 200]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -53,7 +53,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 12 + 2 * var(9)
-ground.hittime  = 12 + 2 * var(9)
+ground.hittime = 12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
 ground.velocity = -5.5
 guard.velocity = -5.5
@@ -85,7 +85,7 @@ ctrl = 1
 ; Standing Medium Punch
 ; CNS difficulty: easy
 [Statedef 210]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -132,7 +132,7 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.slidetime = 15 + 3 * var(9)
-ground.hittime  = 15 + 3 * var(9)
+ground.hittime = 15 + 3 * var(9)
 guard.hittime = (15 + 3 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -7
@@ -162,7 +162,7 @@ ctrl = 1
 
 ;Stand mp close
 [Statedef 211]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -209,7 +209,7 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.slidetime = 15 + 3 * var(9)
-ground.hittime  = 15 + 3 * var(9)
+ground.hittime = 15 + 3 * var(9)
 guard.hittime = (15 + 3 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -7
@@ -249,7 +249,7 @@ ctrl = 1
 ; Standing Strong Punch
 ; CNS difficulty: easy
 [Statedef 220]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -296,7 +296,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -9
 guard.velocity = -9
@@ -327,7 +327,7 @@ ctrl = 1
 ;HP close
 guardflags = 
 [Statedef 221]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -374,7 +374,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -9
@@ -413,7 +413,7 @@ ctrl = 1
 
 ;HP during dodge
 [Statedef 222]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -460,7 +460,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -8.75, -1.5
 guard.velocity = -9
@@ -489,7 +489,7 @@ ctrl = 1
 
 ;Headbutt==
 [Statedef 223]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -542,7 +542,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -9
 guard.velocity = -9
@@ -572,7 +572,7 @@ ctrl = 1
 
 ;Headbutt Command Chain
 [Statedef 224]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -625,7 +625,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -7
@@ -656,7 +656,7 @@ ctrl = 1
 ; Standing Light Kick
 ; CNS difficulty: easy
 [Statedef 230]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -703,7 +703,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 12 + 2 * var(9)
-ground.hittime  = 12 + 2 * var(9)
+ground.hittime = 12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
 ground.velocity = -4
 guard.velocity = -4
@@ -741,7 +741,7 @@ ctrl = 1
 ; Standing Medium Kick
 ; CNS difficulty: easy
 [Statedef 240]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -788,7 +788,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 15 + 3 * var(9)
-ground.hittime  = 15 + 3 * var(9)
+ground.hittime = 15 + 3 * var(9)
 guard.hittime = (15 + 3 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -7
@@ -818,7 +818,7 @@ ctrl = 1
 
 ;MK close
 [Statedef 241]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -865,7 +865,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 15 + 3 * var(9)
-ground.hittime  = 15 + 3 * var(9)
+ground.hittime = 15 + 3 * var(9)
 guard.hittime = (15 + 3 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -7
@@ -896,7 +896,7 @@ ctrl = 1
 ; Standing Strong Kick
 ; CNS difficulty: easy
 [Statedef 250]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -949,7 +949,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -11
 guard.velocity = -11
@@ -988,7 +988,7 @@ ctrl = 1
 
 ;HK close
 [Statedef 251]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1041,7 +1041,7 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -9
 guard.velocity = -9
@@ -1072,7 +1072,7 @@ ctrl = 1
 ;Stiletto Edge Rush==
 ;2nd hit
 [Statedef 260]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1124,7 +1124,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 12 + 4 * var(9)
-ground.hittime  = 12 + 4 * var(9)
+ground.hittime = 12 + 4 * var(9)
 guard.hittime = (12 + 4 * var(9)) - 6
 ground.velocity = -8
 guard.velocity = -8
@@ -1160,7 +1160,7 @@ ctrl = 1
 
 ;3rd hit
 [Statedef 261]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1224,7 +1224,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 15 + 4 * var(9)
-ground.hittime  = 15 + 4 * var(9)
+ground.hittime = 15 + 4 * var(9)
 guard.hittime = (15 + 4 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -9
@@ -1260,7 +1260,7 @@ ctrl = 1
 
 ;4th hit
 [Statedef 262]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1319,7 +1319,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 15 + 4 * var(9)
-ground.hittime  = 15 + 4 * var(9)
+ground.hittime = 15 + 4 * var(9)
 guard.hittime = (15 + 4 * var(9)) - 6
 ground.velocity = -4, -7.5
 guard.velocity = -9
@@ -1350,7 +1350,7 @@ ctrl = 1
 ; Crouching Light Punch
 ; CNS difficulty: easy
 [Statedef 400]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd= 10 * !var(20)
@@ -1397,7 +1397,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 12 + 2 * var(9)
-ground.hittime  = 12 + 2 * var(9)
+ground.hittime = 12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
 ground.velocity = -5.45
 guard.velocity = -5.45
@@ -1429,7 +1429,7 @@ ctrl = 1
 ; Crouching Medium Punch
 ; CNS difficulty: easy
 [Statedef 410]
-type    = C
+type = C
 movetype= A
 physics = C
 ctrl = 0
@@ -1476,7 +1476,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 15 + 3 * var(9)
-ground.hittime  = 15 + 3 * var(9)
+ground.hittime = 15 + 3 * var(9)
 guard.hittime = (15 + 3 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -7
@@ -1508,7 +1508,7 @@ ctrl = 1
 ; Crouching Strong Punch
 ; CNS difficulty: easy
 [Statedef 420]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd= 30 * !var(20)
@@ -1551,11 +1551,11 @@ removeongethit = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 77 < 7, 7, fvar(11) * 77)), 0
 ID = 200
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
@@ -1569,7 +1569,7 @@ hitsound = s2,6
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = High
 ground.slidetime = 18 + 3*var(9)
 ground.hittime = 18 + 3*var(9)
@@ -1604,7 +1604,7 @@ ctrl = 1
 ; Crouching Light Kick
 ; CNS difficulty: easy
 [Statedef 430]
-type    = C
+type = C
 movetype= A
 physics = C
 ctrl = 0
@@ -1651,7 +1651,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 12 + 2 * var(9)
-ground.hittime  = 12 + 2 * var(9)
+ground.hittime = 12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
 ground.velocity = -5.5
 guard.velocity = -5.5
@@ -1683,7 +1683,7 @@ ctrl = 1
 ; Crouching Medium Kick
 ; CNS difficulty: easy
 [Statedef 440]
-type    = C
+type = C
 movetype= A
 physics = C
 ctrl = 0
@@ -1730,7 +1730,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 15 + 3 * var(9)
-ground.hittime  = 15 + 3 * var(9)
+ground.hittime = 15 + 3 * var(9)
 guard.hittime = (15 + 3 * var(9)) - 6
 ground.velocity = -7
 guard.velocity = -7
@@ -1771,7 +1771,7 @@ ctrl = 1
 ; Crouch Strong Kick
 ; CNS difficulty: easy
 [Statedef 450]
-type    = C
+type = C
 movetype= A
 physics = N;C
 ctrl = 0
@@ -1858,7 +1858,7 @@ fall.animType = Back
 ground.type = Trip
 air.type = Trip
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -0.85, -8
 guard.velocity = -9
@@ -1889,7 +1889,7 @@ ctrl = 1
 ; Z-Counter Trip
 ; CNS difficulty: easy
 [Statedef 451]
-type    = C
+type = C
 movetype= A
 physics = C
 ctrl = 0
@@ -1941,7 +1941,7 @@ fall.animType = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18 + 4 * var(9)
-ground.hittime  = 18 + 4 * var(9)
+ground.hittime = 18 + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.velocity = -5.5, -6
 guard.velocity = -9
@@ -1981,7 +1981,7 @@ ctrl = 1
 ; Jump Light Punch
 ; CNS difficulty: easy
 [Statedef 600]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 10 * !var(20)
@@ -2023,7 +2023,7 @@ hitsound = S2, 0
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 2*var(9)
-ground.hittime  = 12 + 2*var(9)
+ground.hittime = 12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 ground.velocity = -4
 guard.velocity = -4
@@ -2063,7 +2063,7 @@ value = 52
 ; Jump Medium Punch
 ; CNS difficulty: easy
 [Statedef 610]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 20 * !var(20)
@@ -2105,7 +2105,7 @@ hitsound = S2, 1
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 3*var(9)
-ground.hittime  = 12 + 3*var(9)
+ground.hittime = 12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
 ground.velocity = -5
 guard.velocity = -5
@@ -2143,7 +2143,7 @@ value = 52
 
 ;Avalanche
 [Statedef 611]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 20 * !var(20)
@@ -2185,7 +2185,7 @@ hitsound = S2, 1
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 3*var(9)
-ground.hittime  = 12 + 3*var(9)
+ground.hittime = 12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
 ground.velocity = -5
 guard.velocity = -5
@@ -2229,7 +2229,7 @@ value = 52
 
 ;rebound on contact
 [Statedef 612]
-type    = A
+type = A
 movetype = I
 physics = N
 ctrl = 0
@@ -2262,7 +2262,7 @@ value = 52
 ; Jump Strong Punch
 ; CNS difficulty: easy
 [Statedef 620]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30 * !var(20)
@@ -2304,7 +2304,7 @@ hitsound = S2, 2
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = -5.25
 guard.velocity = -5.25
@@ -2344,7 +2344,7 @@ value = 52
 ; Jump Light Kick
 ; CNS difficulty: easy
 [Statedef 630]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 10 * !var(20)
@@ -2386,7 +2386,7 @@ hitsound = S2, 3
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 2*var(9)
-ground.hittime  = 12 + 2*var(9)
+ground.hittime = 12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 ground.velocity = -4
 guard.velocity = -4
@@ -2424,7 +2424,7 @@ value = 52
 
 ;Neutral
 [Statedef 631]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 10 * !var(20)
@@ -2466,7 +2466,7 @@ hitsound = S2, 3
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 2*var(9)
-ground.hittime  = 12 + 2*var(9)
+ground.hittime = 12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 ground.velocity = -4
 guard.velocity = -4
@@ -2506,7 +2506,7 @@ value = 52
 ; Jump Medium Kick
 ; CNS difficulty: easy
 [Statedef 640]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 10 * !var(20)
@@ -2548,7 +2548,7 @@ hitsound = S2, 4
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 3*var(9)
-ground.hittime  = 12 + 3*var(9)
+ground.hittime = 12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
 ground.velocity = -5
 guard.velocity = -5
@@ -2588,7 +2588,7 @@ value = 52
 ; Jump Strong Kick
 ; CNS difficulty: easy
 [Statedef 650]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30 * !var(20)
@@ -2630,7 +2630,7 @@ hitsound = S2, 5
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = -5.5
 guard.velocity = -5.5
@@ -2668,7 +2668,7 @@ value = 52
 
 ;Neutral
 [Statedef 651]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30 * !var(20)
@@ -2710,7 +2710,7 @@ hitsound = S2, 5
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = -5.5
 guard.velocity = -5.5
@@ -2750,10 +2750,10 @@ value = 52
 ; Throw - Attempt
 ; CNS difficulty: medium-advanced
 [Statedef 800]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 800
@@ -2945,19 +2945,19 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Throwing the opponent
 ; Description: In this state, the player throws the opponent by binding him to
-;     various offsets based on his current frame of animation. For
-;     example, [State 810, Bind 1] binds the opponent to an offset of
-;     28 pixels in front of the player. That puts him around where the hand
-;     is at. Is is important to keep the opponent bound using a
-;     TargetBind controller at all times, until you let him go. This
-;     is especially important if your player has a Clsn2 box that
-;     allows him to get hit while throwing someone. Each time a player
-;     gets hit, all his bound targets will be set to a fall state. If
-;     the opponent is not bound, then he might get stuck in his thrown
-;     state when his attacker is knocked out of the throw halfway.
+; various offsets based on his current frame of animation. For
+; example, [State 810, Bind 1] binds the opponent to an offset of
+; 28 pixels in front of the player. That puts him around where the hand
+; is at. Is is important to keep the opponent bound using a
+; TargetBind controller at all times, until you let him go. This
+; is especially important if your player has a Clsn2 box that
+; allows him to get hit while throwing someone. Each time a player
+; gets hit, all his bound targets will be set to a fall state. If
+; the opponent is not bound, then he might get stuck in his thrown
+; state when his attacker is knocked out of the throw halfway.
 ; Notes: There is a TargetLifeAdd controller to decrease the opponent's
-;     life, and a TargetState controller to change his state to a
-;     falling state when KFM lets go of him.
+; life, and a TargetState controller to change his state to a
+; falling state when KFM lets go of him.
 [Statedef 810]
 type = S
 movetype = A
@@ -3142,13 +3142,13 @@ ctrl = 1
 ; Opponent Thrown
 ; (a custom gethit state)
 ; Description: This is the state that the opponent changes to after being
-;     hit by the throw HitDef. The important thing here is to use a
-;     ChangeAnim2 controller. The difference between ChangeAnim2 and
-;     ChangeAnim is that ChangeAnim2 changes the player's animation to
-;     an action in the AIR file of the attacker (in this case, kfm.air),
-;     whereas ChangeAnim always changes the player to an action in his
-;     own AIR file. Look at Action 820 in kfm.air for some extra
-;     comments.
+; hit by the throw HitDef. The important thing here is to use a
+; ChangeAnim2 controller. The difference between ChangeAnim2 and
+; ChangeAnim is that ChangeAnim2 changes the player's animation to
+; an action in the AIR file of the attacker (in this case, kfm.air),
+; whereas ChangeAnim always changes the player to an action in his
+; own AIR file. Look at Action 820 in kfm.air for some extra
+; comments.
 [Statedef 815]
 type = A
 movetype = H
@@ -3201,12 +3201,12 @@ value = 5050
 ; Opponent thrown into the air
 ; (a custom gethit state)
 ; Description: This state has the opponent flying through the air and
-;     falling down onto the ground. The SelfState controller sets the
-;     opponent back using to his own state file when he his the ground.
-;     Controllers 821,2 and 821,3 allow the opponent to recover by
-;     hitting his recovery command when he is falling.
+; falling down onto the ground. The SelfState controller sets the
+; opponent back using to his own state file when he his the ground.
+; Controllers 821,2 and 821,3 allow the opponent to recover by
+; hitting his recovery command when he is falling.
 [Statedef 816]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3341,7 +3341,7 @@ trigger3 = AILevel && Random < 800
 var(42) = 2
 
 [State 820, Mashing Increment]
-type  = VarAdd
+type = VarAdd
 trigger1 = var(42) = 2
 var(12) = 1
 
@@ -3765,7 +3765,7 @@ value = 52
 
 ;Izuna Drop=
 [Statedef 860]
-type    = A
+type = A
 movetype = A
 physics = N
 velset = 0,0
@@ -3846,7 +3846,7 @@ value = 861
 
 ;Impact
 [Statedef 861]
-type    = S
+type = S
 movetype = A
 physics = N
 velset = 0,0
@@ -3973,7 +3973,7 @@ value = 862
 
 ;Landing
 [Statedef 862]
-type    = S
+type = S
 physics = S
 ctrl = 0
 anim = 862
@@ -4008,7 +4008,7 @@ ctrl = 1
 
 ;Izuna Drop(target)=
 [Statedef 865]
-type    = A
+type = A
 movetype = H
 physics = N
 velset = 0,0
@@ -4026,7 +4026,7 @@ value = 865
 
 ;Impact
 [Statedef 866]
-type    = A
+type = A
 movetype = H
 physics = N
 velset = 0,0
@@ -4068,7 +4068,7 @@ value = 5100
 
 ;After impact
 [Statedef 867]
-type    = A
+type = A
 movetype = H
 physics = N
 velset = 0,0
@@ -4086,7 +4086,7 @@ value = SCA
 
 ;Atomic Buster=
 [Statedef 870]
-type    = A
+type = A
 movetype = A
 physics = N
 velset = 0,0
@@ -4133,7 +4133,7 @@ value = 871
 
 ;Landing
 [Statedef 871]
-type    = S
+type = S
 movetype = A
 physics = N
 velset = 0,0
@@ -4248,7 +4248,7 @@ ctrl = 1
 
 ;Atomic Buster(target)==
 [Statedef 875]
-type    = A
+type = A
 movetype = H
 physics = N
 velset = 0,0
@@ -4265,7 +4265,7 @@ value = 1
 
 ;Impact
 [Statedef 876]
-type    = A
+type = A
 movetype = H
 physics = N
 velset = 0,0

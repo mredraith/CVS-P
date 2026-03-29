@@ -1,5 +1,5 @@
 ; ________________________________________________
-;| Urban Champion by NovaMagnolia  			|
+;| Urban Champion by NovaMagnolia 			|
 ; 
 ;==============================================================================================
 ;========================================<NORMAL MOVES>========================================
@@ -11,7 +11,7 @@
 type = S
 physics = S
 moveType = A
-anim = 200  
+anim = 200 
 ctrl = 0
 velset = 0, 0
 sprPriority = 1
@@ -77,7 +77,7 @@ type = Null;ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 2, 6)
-value = 200  
+value = 200 
 elem = 3
 ignoreHitPause = 1
 
@@ -129,7 +129,7 @@ ctrl = 1
 type = S
 physics = S
 moveType = A
-anim = 210  
+anim = 210 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -213,7 +213,7 @@ ctrl = 1
 type = S
 physics = S
 moveType = A
-anim = 210  
+anim = 210 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -550,7 +550,7 @@ ctrl = 1
 type = S
 physics = S
 moveType = A
-anim = 230  
+anim = 230 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -659,7 +659,7 @@ ctrl = 1
 type = S
 physics = S
 moveType = A
-anim = 240  
+anim = 240 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -983,7 +983,7 @@ ctrl = 1
 type = S
 physics = S
 moveType = A
-anim = 255  
+anim = 255 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -1062,7 +1062,7 @@ ctrl = 1
 type = C
 physics = C
 moveType = A
-anim = 400  
+anim = 400 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -1171,7 +1171,7 @@ ctrl = 1
 type = C
 physics = C
 moveType = A
-anim = 410  
+anim = 410 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -1237,7 +1237,7 @@ type = ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
 trigger1 = AnimElemTime(3) >= 0 && AnimElemTime(4) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 3, 8)
-value = 410  
+value = 410 
 elem = 4
 ignoreHitPause = 1
 
@@ -1264,7 +1264,7 @@ ctrl = 1
 type = C
 physics = C
 moveType = A
-anim = 420  
+anim = 420 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -1373,7 +1373,7 @@ type = Null;ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
 trigger1 = AnimElemTime(4) >= 0 && AnimElemTime(5) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 4, 10)
-value = 420  
+value = 420 
 elem = 5
 ignoreHitPause = 1
 
@@ -1394,7 +1394,7 @@ ctrl = 1
 type = C
 physics = C
 moveType = A
-anim = 430  
+anim = 430 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -1478,7 +1478,7 @@ ctrl = 1
 type = C
 physics = C
 moveType = A
-anim = 440  
+anim = 440 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -1655,7 +1655,7 @@ ctrl = 1
 type = A
 physics = N
 moveType = A
-anim = 600  
+anim = 600 
 ctrl = 0
 sprPriority = 1
 powerAdd = 0
@@ -1741,9 +1741,9 @@ value = 52
 ; Jump Medium Punch
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
-anim = 610  
+anim = 610 
 ctrl = 0
 sprPriority = 1
 powerAdd = 18 * !var(20) * !var(50)
@@ -1831,7 +1831,7 @@ value = 52
 type = A
 physics = N
 moveType = A
-anim = 620  
+anim = 620 
 ctrl = 0
 sprPriority = 1
 powerAdd = 18 * !var(20) * !var(50)
@@ -1903,7 +1903,7 @@ type = ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
 trigger1 = AnimElemTime(4) >= 0 && AnimElemTime(5) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 4, 10)
-value = 620  
+value = 620 
 elem = 5
 ignoreHitPause = 1
 
@@ -1933,7 +1933,7 @@ value = 52
 type = A
 physics = N
 moveType = A
-anim = 630  
+anim = 630 
 ctrl = 0
 sprPriority = 1
 powerAdd = 0
@@ -2000,7 +2000,7 @@ type = ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 2, 6)
-value = 630  
+value = 630 
 elem = 3
 ignoreHitPause = 1
 
@@ -2030,7 +2030,7 @@ value = 52
 type = A
 physics = N
 moveType = A
-anim = 640  
+anim = 640 
 ctrl = 0
 sprPriority = 1
 powerAdd = 18 * !var(20) * !var(50)
@@ -2097,7 +2097,7 @@ type = ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 3, 8)
-value = 640  
+value = 640 
 elem = 3
 ignoreHitPause = 1
 
@@ -2127,7 +2127,7 @@ value = 52
 type = A
 physics = N
 moveType = A
-anim = 650  
+anim = 650 
 ctrl = 0
 sprPriority = 1
 powerAdd = 18 * !var(20) * !var(50)
@@ -2215,7 +2215,7 @@ value = 52
 type = S
 physics = S
 movetype = A
-anim = 800  
+anim = 800 
 ctrl = 0
 velSet = 0, 0
 sprPriority = 1
@@ -2235,7 +2235,7 @@ var(10) = ifElse(Random < 500, 1, 2) * Facing
 [State 800, ChangeAnim]
 type = ChangeAnim
 trigger1 = !Time
-value = ifElse(abs(var(10)) = 2, 801, 800)  
+value = ifElse(abs(var(10)) = 2, 801, 800) 
 
 [State 1400, Debug p2Bodydist Testing]
 type = Null;PosAdd
@@ -2332,7 +2332,7 @@ ctrl = 1
 type = S
 moveType = A
 physics = S
-anim = 805  
+anim = 805 
 ctrl = 0
 sprPriority = 0
 
@@ -2456,7 +2456,7 @@ ctrl = 1
 type = S
 physics = N
 moveType = A
-anim = 810  
+anim = 810 
 ctrl = 0
 velSet = 0, 0
 sprPriority = -1
@@ -2656,7 +2656,7 @@ value = 5035
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -2715,7 +2715,7 @@ value = 5100
 type = S
 physics = N
 moveType = A
-anim = 820  
+anim = 820 
 ctrl = 0
 velSet = 0, 0
 sprPriority = -1
@@ -2902,7 +2902,7 @@ value = 5035
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim

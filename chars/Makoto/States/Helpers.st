@@ -1006,7 +1006,7 @@ velset=0,0
 sprpriority=5
 
 ;--------
-;  CVS  ;
+; CVS ;
 ;--------
 
 [State 0, ChangeAnim]
@@ -1093,7 +1093,7 @@ trigger1= time>=16
 
 
 ;--------
-;  CFJ  ;
+; CFJ ;
 ;--------
 
 [State 0, ChangeAnim]
@@ -1341,7 +1341,7 @@ type = Explod
 trigger1 = !time
 anim = 7750+(random%2)
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = 30
 scale = .5,.5
 sprpriority = 0
@@ -1771,7 +1771,7 @@ trigger1 = !animtime
 ;-----------------------------------------------------------------------
 ; Hayate no Red Hawk Start Skin
 [Statedef 7470]
-physics  = N
+physics = N
 anim = 3401
 ctrl = 0
 velset=0,0
@@ -1798,7 +1798,7 @@ ignorehitpause =1
 ;-----------------------------------------------------------------------
 ; Hayate no Red Hawk Success Skin
 [Statedef 7471]
-physics  = N
+physics = N
 anim = 3421
 ctrl = 0
 velset=0,0
@@ -1825,7 +1825,7 @@ ignorehitpause =1
 ;-----------------------------------------------------------------------
 ; Hayate no Red Hawk Stop Skin
 [Statedef 7472]
-physics  = N
+physics = N
 anim = 3431
 ctrl = 0
 velset=0,0
@@ -1852,7 +1852,7 @@ ignorehitpause =1
 ;-----------------------------------------------------------------------
 ; Hayate no Red Hawk Steam
 [Statedef 7480]
-physics  = N
+physics = N
 anim = 7470
 ctrl = 0
 velset=0,0
@@ -2081,7 +2081,7 @@ guardsound = s6,1
 animtype = heavy
 ground.type = High
 ground.slidetime = 19
-ground.hittime  = 25
+ground.hittime = 25
 guard.hittime = (25) - 6
 guard.ctrltime = 15
 ground.velocity = -7,-2
@@ -2413,7 +2413,7 @@ trigger1 = Time >= 30
 ;-------------------------------------------------------------------
 ; Pow Hitspark Effect 1
 [Statedef 7800]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 7315
@@ -2477,7 +2477,7 @@ trigger1 = Time > 7
 ;-------------------------------------------------------------------
 ; Pow Hitspark Effect 2
 [Statedef 7805]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 7320
@@ -2626,7 +2626,7 @@ trigger1 = (root,var(8)<=0)
 [State 8405, End]
 type = destroyself
 trigger1 = (root,var(46)<=0)
-persistent = 1			     
+persistent = 1			 
 ignorehitpause = 1
 
 ;-------------------------------------------------------------------

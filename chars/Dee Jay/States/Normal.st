@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Dee Jay by varo_hades                   |
+;| Dee Jay by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -435,7 +435,7 @@ channel = 1
 
 [State 225, HitDef]
 type = HitDef
-guardflags =         ; MODIFIED BY SCRIPT: Unblockable
+guardflags = ; MODIFIED BY SCRIPT: Unblockable
 trigger1 = !var(16) && (var(15) < 2 || var(20))
 trigger1 = AnimElem = 3
 forceNoFall = !var(20)
@@ -935,7 +935,7 @@ guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -2.36, -4), -7.5
 air.cornerPush.velOff = 0
 yaccel = 0.58
-fall =  0
+fall = 0
 fall.recover = 1
 fall.recoverTime = 120
 hitSound = -1 + 0 * (var(31) := 5)
@@ -1012,7 +1012,7 @@ guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -2.36, -4), -8
 air.cornerPush.velOff = 0
 yaccel = ifelse(var(20),.5,.6)
-fall =  1
+fall = 1
 fall.recover = 1
 fall.recoverTime = 120
 hitSound = -1 + 0 * (var(31) := 5)
@@ -1810,7 +1810,7 @@ value = 52
 ;NEUTRAL JUMPING MEDIUM PUNCH
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 anim = 610
 ctrl = 0

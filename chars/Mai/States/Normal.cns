@@ -1,7 +1,7 @@
 ; Standing Light Punch
 ; CNS difficulty: easy
 [Statedef 200]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -48,7 +48,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 12 + 2 * var(9)
-ground.hittime  = 12 + 2 * var(9)
+ground.hittime = 12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
 ground.velocity = ifElse(var(20), -2, -4), 0
 guard.velocity = ifElse(var(20), -2, -4)
@@ -88,7 +88,7 @@ ctrl = 1
 ; Standing Light Punch (close)
 ; CNS difficulty: easy
 [Statedef 201]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -135,7 +135,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 12 + 2* var(9)
-ground.hittime  = 12 + 2* var(9)
+ground.hittime = 12 + 2* var(9)
 guard.hittime = (12 + 2* var(9)) - 6
 ground.velocity = ifElse(var(20), -2, -4), 0
 guard.velocity = ifElse(var(20), -2, -4)
@@ -175,7 +175,7 @@ ctrl = 1
 ; Standing Medium Punch
 ; CNS difficulty: easy
 [Statedef 210]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 20 * !var(20)
@@ -201,10 +201,10 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 4
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-priority = 4 ,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+priority = 4 ,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 0
 ID = 200
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
@@ -263,7 +263,7 @@ ctrl = 1
 ; Standing Strong Punch
 ; CNS difficulty: easy
 [Statedef 220]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 30 * !var(20)
@@ -289,11 +289,11 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 77 < 7, 7, fvar(11) * 77)), 0
 ID = 200
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
@@ -307,7 +307,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = High
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -341,7 +341,7 @@ ctrl = 1
 ; Standing Strong Punch (close)
 ; CNS difficulty: easy
 [Statedef 221]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 30 * !var(20)
@@ -367,11 +367,11 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 4
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 0
 ID = 200
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
@@ -385,7 +385,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -427,7 +427,7 @@ ctrl = 1
 ; Standing Light Kick
 ; CNS difficulty: easy
 [Statedef 230]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 10 * !var(20)
@@ -453,11 +453,11 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
 ID = 200
 getpower = 50 * !var(20), 30 * !var(20)
@@ -471,7 +471,7 @@ hitsound = s2,3
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -514,7 +514,7 @@ ctrl = 1
 ; Standing Light Kick (close)
 ; CNS difficulty: easy
 [Statedef 231]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 10 * !var(20)
@@ -540,11 +540,11 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
 ID = 200
 getpower = 50 * !var(20), 30 * !var(20)
@@ -558,7 +558,7 @@ hitsound = s2,3
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -599,7 +599,7 @@ ctrl = 1
 
 ;Benitsuru no Mai
 [Statedef 232]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 10 * !var(20)
@@ -647,11 +647,11 @@ x = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 8
-attr = A,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = HA         ;HLA
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = A,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = HA ;HLA
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 0
 ID = 200
 getpower = 50 * !var(20), 30 * !var(20)
@@ -665,7 +665,7 @@ hitsound = s2,3
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -735,7 +735,7 @@ ctrl = 1
 
 ;Benitsuru no Mai(command link)
 [Statedef 234]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 10 * !var(20)
@@ -783,11 +783,11 @@ x = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 8
-attr = A,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = HA         ;HLA
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = A,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = HA ;HLA
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
 ID = 200
 getpower = 30 * !var(20), 30 * !var(20)
@@ -801,7 +801,7 @@ hitsound = s2,3
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -837,7 +837,7 @@ value = 233
 ; Standing Medium Kick
 ; CNS difficulty: easy
 [Statedef 240]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 20 * !var(20)
@@ -863,11 +863,11 @@ channel = 1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 6
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
 ID = 200
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
@@ -881,7 +881,7 @@ hitsound = s2,4
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -916,7 +916,7 @@ ctrl = 1
 ;Dancing of Tensui
 ;Unique Attack
 [Statedef 241]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 20 * !var(20)
@@ -942,11 +942,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 6
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
 ID = 200
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
@@ -960,7 +960,7 @@ hitsound = s2,4
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -1011,7 +1011,7 @@ ctrl = 1
 ; Standing Medium Kick (close)
 ; CNS difficulty: easy
 [Statedef 242]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 20 * !var(20)
@@ -1037,11 +1037,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 0
 ID = 200
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
@@ -1055,7 +1055,7 @@ hitsound = s2,4
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = High
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -1098,7 +1098,7 @@ ctrl = 1
 ; Standing Strong Kick
 ; CNS difficulty: easy
 [Statedef 250]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 30 * !var(20)
@@ -1124,11 +1124,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 4
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 77 < 7, 7, fvar(11) * 77)), 0
 ID = 200
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
@@ -1142,7 +1142,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = High
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -1177,7 +1177,7 @@ ctrl = 1
 ;Fierce Blossom (norm)
 ;Unique Attack
 [Statedef 251]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 30 * !var(20)
@@ -1203,11 +1203,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 5
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
 givepower = 30, 30
@@ -1220,7 +1220,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -1273,7 +1273,7 @@ ctrl = 1
 ;Fierce Blossom (during dodge)
 ;Unique Attack
 [Statedef 252]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 30 * !var(20)
@@ -1299,11 +1299,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 5
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
 givepower = 30, 30
@@ -1316,7 +1316,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -1368,7 +1368,7 @@ ctrl = 1
 ;Fierce Blossom (comboed)
 ;Unique Attack
 [Statedef 253]
-type    = S
+type = S
 movetype= A
 physics = S
 poweradd= 30 * !var(20)
@@ -1394,11 +1394,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
 trigger1 = AnimElem = 5
-attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = S,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
 givepower = 30, 30
@@ -1411,7 +1411,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -1463,7 +1463,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
 [Statedef 400]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd= 10 * !var(20)
@@ -1489,14 +1489,14 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
 ID = 200
 getpower = 50 * !var(20), 30 * !var(20)
 givepower = 30,30
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
 guard.pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -1507,7 +1507,7 @@ hitsound = s2,0
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -1541,7 +1541,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
 [Statedef 410]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd= 20 * !var(20)
@@ -1567,11 +1567,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4 ,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4 ,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 49 < 7, 7, fvar(11) * 49)), 0
 ID = 200
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
@@ -1585,7 +1585,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 90), var(36) := -35
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -1619,7 +1619,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Strong Punch
 [Statedef 420]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd= 30 * !var(20)
@@ -1645,11 +1645,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4, Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4, Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 77 < 7, 7, fvar(11) * 77)), 0
 ID = 200
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
@@ -1663,7 +1663,7 @@ hitsound = s2,2
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -1698,7 +1698,7 @@ ctrl = 1
 ; Crouching Light Kick
 ; CNS difficulty: easy
 [Statedef 430]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd= 10 * !var(20)
@@ -1724,11 +1724,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 2
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = L         ;HLA
-animtype = Light          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = L ;HLA
+animtype = Light ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
 ID = 200
 getpower = 50 * !var(20), 30 * !var(20)
@@ -1742,7 +1742,7 @@ hitsound = s2,3
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 12 + 2*var(9)
 ground.hittime = 12 + 2*var(9)
@@ -1777,7 +1777,7 @@ ctrl = 1
 ; Crouching Medium Kick
 ; CNS difficulty: easy
 [Statedef 440]
-type    = C
+type = C
 movetype= A
 physics = N;C
 poweradd= 20 * !var(20)
@@ -1838,11 +1838,11 @@ x = 0
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = L         ;HLA
-animtype = Medium          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = L ;HLA
+animtype = Medium ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
 ID = 200
 getpower = ifElse(!var(13), 100, 75)*!var(20), 30 * !var(20)
@@ -1856,7 +1856,7 @@ hitsound = s2,4
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Low      ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 15 + 3*var(9)
 ground.hittime = 15 + 3*var(9)
@@ -1892,7 +1892,7 @@ ctrl = 1
 ; Crouch Strong Kick
 ; CNS difficulty: easy
 [Statedef 450]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd = 30 * !var(20)
@@ -1918,11 +1918,11 @@ channel=1
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = L         ;HLA
-animtype = Hard          ;light,medium,hard,back,up,diagup
-priority = 4,Hit   ;Hit,Miss,Dodge
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = L ;HLA
+animtype = Hard ;light,medium,hard,back,up,diagup
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
 getpower = ifElse(!var(13), 150, 75)*!var(20), 30 * !var(20)
 givepower = 30, 30
@@ -1935,7 +1935,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Back
 fall.animType = Back
-ground.type = Trip     ;Low,Trip,None
+ground.type = Trip ;Low,Trip,None
 air.type = Trip
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -1969,7 +1969,7 @@ ctrl = 1
 ; Z-Counter Trip
 ; CNS difficulty: easy
 [Statedef 451]
-type    = C
+type = C
 movetype= A
 physics = C
 poweradd = 0
@@ -2001,11 +2001,11 @@ value = SCA
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 3 
-attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = L         ;HLA
-animtype = Diagup          ;light,medium,hard,back,up,diagup
-priority = 6,Hit   ;Higher value due to it being a counter
+attr = C,NA ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = L ;HLA
+animtype = Diagup ;light,medium,hard,back,up,diagup
+priority = 6,Hit ;Higher value due to it being a counter
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
 getpower = 0, 0
 givepower = 30, 30
@@ -2018,7 +2018,7 @@ hitsound = s2,5
 guardsound = s130, 0
 air.animType = Diagup
 fall.animType = Diagup
-ground.type = Low     ;Low,Trip,None
+ground.type = Low ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -2051,7 +2051,7 @@ ctrl = 1
 ; Jump Light Punch
 ; CNS difficulty: easy
 [Statedef 600]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 10 * !var(20)
@@ -2093,7 +2093,7 @@ hitsound = S2, 0
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 2*var(9)
-ground.hittime  = 12 + 2*var(9)
+ground.hittime = 12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 ground.velocity = ifElse(var(20), -2, -4), 0
 guard.velocity = ifElse(var(20), -2, -4)
@@ -2133,7 +2133,7 @@ value = 52
 ; Jump Medium Punch
 ; CNS difficulty: easy
 [Statedef 610]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 20 * !var(20)
@@ -2175,7 +2175,7 @@ hitsound = S2, 1
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 3*var(9)
-ground.hittime  = 12 + 3*var(9)
+ground.hittime = 12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
 ground.velocity = ifElse(var(20), -2, -4), 0
 guard.velocity = ifElse(var(20), -2, -4)
@@ -2215,7 +2215,7 @@ value = 52
 ; Jump Strong Punch
 ; CNS difficulty: easy
 [Statedef 620]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30 * !var(20)
@@ -2257,7 +2257,7 @@ hitsound = S2, 2
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = ifElse(var(20), -2.5, -5), 0
 guard.velocity = ifElse(var(20), -2.5, -5)
@@ -2296,7 +2296,7 @@ value = 52
 ; Dairin Fuusha Otoshi
 ; CNS difficulty: easy
 [Statedef 621]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30 * !var(20)
@@ -2338,7 +2338,7 @@ hitsound = S2, 2
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = ifElse(var(20), -2.5, -5), 0
 guard.velocity = ifElse(var(20), -2.5, -5)
@@ -2378,7 +2378,7 @@ value = 52
 ; Jump Light Kick
 ; CNS difficulty: easy
 [Statedef 630]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 10 * !var(20)
@@ -2422,7 +2422,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = High
 ground.slidetime = 12 + 2*var(9)
-ground.hittime  = 12 + 2*var(9)
+ground.hittime = 12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 ground.velocity = ifElse(var(20), -2, -4), 0
 guard.velocity = ifElse(var(20), -2, -4)
@@ -2459,7 +2459,7 @@ value = 52
 ;-----------------------------------
 ;Ukihane
 [Statedef 631]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 10 * !var(20)
@@ -2519,7 +2519,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = ifElse(var(20), -2.7, -5.4), 0
 guard.velocity = ifElse(var(20), -4, -8)
@@ -2688,7 +2688,7 @@ value = 5110
 ; Jump Medium Kick
 ; CNS difficulty: easy
 [Statedef 640]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 20 * !var(20)
@@ -2730,7 +2730,7 @@ hitsound = S2, 4
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 3*var(9)
-ground.hittime  = 12 + 3*var(9)
+ground.hittime = 12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
 ground.velocity = ifElse(var(20), -2.5, -5), 0
 guard.velocity = ifElse(var(20), -2.5, -5)
@@ -2769,7 +2769,7 @@ value = 52
 ;------------------------------------------------
 ; Yusura Ume
 [Statedef 641]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 20 * !var(20)
@@ -2831,7 +2831,7 @@ hitsound = S2, 5
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = -5, -6
 guard.velocity = -6
@@ -2869,13 +2869,13 @@ value = 52
 
 ;Rebound on Guard
 [Statedef 642]
-type    = A                      
-movetype= I                    
-physics = N                     
-velset = -2,-2.75                  
-ctrl = 0                       
+type = A 
+movetype= I 
+physics = N 
+velset = -2,-2.75 
+ctrl = 0 
 anim = 642 
-poweradd= 0                               
+poweradd= 0 
 sprpriority = 2
 facep2 = 1
 
@@ -2898,7 +2898,7 @@ value = 52
 ; Jump Strong Kick
 ; CNS difficulty: easy
 [Statedef 650]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30 * !var(20)
@@ -2940,7 +2940,7 @@ hitsound = S2, 5
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = ifElse(var(20), -2.5, -5), 0
 guard.velocity = ifElse(var(20), -2.5, -5)
@@ -2986,7 +2986,7 @@ value = 52
 ; Jump Strong Kick (No Vel X)
 ; CNS difficulty: easy
 [Statedef 651]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 30 * !var(20)
@@ -3028,7 +3028,7 @@ hitsound = S2, 5
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 12 + 4*var(9)
-ground.hittime  = 12 + 4*var(9)
+ground.hittime = 12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = ifElse(var(20), -2.5, -5), 0
 guard.velocity = ifElse(var(20), -2.5, -5)
@@ -3065,10 +3065,10 @@ value = 52
 ;---------------------
 ; Throw Attempt
 [Statedef 800]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 800

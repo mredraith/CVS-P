@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Axel Stone by Testament             |
+;| Axel Stone by Testament |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==
 ;SYSTEM STATES
@@ -1528,7 +1528,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 
 [State 5210, Flash]
 type = PalFX
@@ -2139,7 +2139,7 @@ value = 0
 
 ;INTRO 1
 ;Stomping GALSIA Intro 
-[Statedef 190]  ;was 730
+[Statedef 190] ;was 730
 type = S
 ctrl = 0
 anim = 1900001
@@ -2246,7 +2246,7 @@ freq = 60
 ampl = 1
 
 ;spark stomping
-[State 1006, Hit Spark]  
+[State 1006, Hit Spark] 
 type = Helper
 trigger1 = anim = 190 & animelemtime(4) = 0
 trigger2 = anim = 190 & animelemtime(8) = 0
@@ -2285,7 +2285,7 @@ ctrl = 0
 
 
 [Statedef 7121] ;was 732
-type    = A
+type = A
 physics = N
 velset = 1.38,-6
 ctrl = 0
@@ -2496,7 +2496,7 @@ value = 5,2
 channel = 10
 
 
-[State 1006, Hit Spark]  
+[State 1006, Hit Spark] 
 type = Helper
 trigger1 = time = 22
 helperType = Normal
@@ -3337,7 +3337,7 @@ type = S
 moveType = I
 physics = S
 anim = 195
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -3360,7 +3360,7 @@ type = S
 moveType = I
 physics = S
 anim = 191
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -3443,7 +3443,7 @@ value = ifElse(Alive, 5110, 5150)
 
 
 [Statedef 5150]
-type    = L
+type = L
 movetype= H
 physics = N
 sprpriority = -3

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rose by varo_hades                      |
+;| Rose by varo_hades |
 ; 
 ;
 ;HELPER STATES=
@@ -154,7 +154,7 @@ var(10) = Root, var(10)
 [State 1005, VelSet]
 type = VelSet
 trigger1 = 1
-x = ifElse(Root, StateNo =  193, 5.25, 3.25 + var(10))
+x = ifElse(Root, StateNo = 193, 5.25, 3.25 + var(10))
 
 [State 1005, Counter Flag]
 type = VarSet
@@ -2098,7 +2098,7 @@ ignorehitpause = 1
 [State 3155]
 type = SprPriority
 trigger1 = Time >= 0
-value =  0
+value = 0
 
 [State 3155]
 type = DestroySelf
@@ -2142,7 +2142,7 @@ time = 2
 [State 3156]
 type = SprPriority
 trigger1 = Time >= 0
-value =  -1
+value = -1
 
 [State 3156]
 type = StateTypeSet
@@ -2184,7 +2184,7 @@ time = 2
 [State 3157]
 type = SprPriority
 trigger1 = Time >= 0
-value =  -1
+value = -1
 
 [State 3157]
 type = StateTypeSet

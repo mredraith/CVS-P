@@ -1421,7 +1421,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF

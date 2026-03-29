@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Shingo Yabuki by Jmorphman              |
+;| Shingo Yabuki by Jmorphman |
 ; 
 ;
 ;SPECIAL MOVES==

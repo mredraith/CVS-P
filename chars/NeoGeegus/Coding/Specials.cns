@@ -83,7 +83,7 @@ triggerall = Var(10) >= 2
 trigger1 = animelem = 8
 anim = 1014
 scale = const(size.xscale),const(size.yscale)
-sprpriority  = 4
+sprpriority = 4
 bindtime = -1
 pos = 17,-92
 ownpal = 1
@@ -168,7 +168,7 @@ name = "iceshot"
 ID = 7050
 stateno = 7050
 pos = 52,-68
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -183,7 +183,7 @@ name = "iceshot"
 ID = 7050
 stateno = 70500
 pos = 52,-68
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -805,7 +805,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -12
 air.velocity = -6, -12
@@ -882,7 +882,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0, -3
 air.velocity = 0, -3
@@ -1097,7 +1097,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4,-7.5
 guard.velocity = -7
@@ -1936,29 +1936,29 @@ envShake.freq = 120
 
 [State 1200, StateTypeSet: Idle]
 type = StateTypeSet
-trigger1 = AnimElemTime(19) >= 0  && Var(10) = 0
+trigger1 = AnimElemTime(19) >= 0 && Var(10) = 0
 moveType = I
 
 [State 1200, VelSet]
 type = VelSet
-trigger1 = AnimElemTime(22) = 1  && Var(10) = 0
+trigger1 = AnimElemTime(22) = 1 && Var(10) = 0
 x = 2.5
 
 [State 1200, StateTypeSet: Standing, Physics: None]
 type = StateTypeSet
-trigger1 = AnimElem = 27  && Var(10) = 0
+trigger1 = AnimElem = 27 && Var(10) = 0
 stateType = S
 physics = N
 
 [State 1200, Landing Sound]
 type = PlaySnd
-trigger1 = AnimElem = 27  && Var(10) = 0
+trigger1 = AnimElem = 27 && Var(10) = 0
 value = 52,0
 channel = 3
 
 [State 1200, Landing Dust Explod]
 type = Explod
-trigger1 = AnimElem = 27  && Var(10) = 0
+trigger1 = AnimElem = 27 && Var(10) = 0
 anim = 8102
 sprPriority = -3
 posType = P1
@@ -1970,7 +1970,7 @@ ownPal = 1
 
 [State 1200, End]
 type = ChangeState
-trigger1 = !AnimTime  && Var(10) != 1
+trigger1 = !AnimTime && Var(10) != 1
 value = 0
 ctrl = 1
 
@@ -2067,7 +2067,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -3, 0
 air.velocity = -2, -3
@@ -2114,7 +2114,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 8
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -3, -5
 air.velocity = -3,-3
@@ -2160,7 +2160,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 8
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -2, -9
 air.velocity = -2,-7
@@ -2232,7 +2232,7 @@ fall.animtype = Back
 ground.type = low
 air.type = low
 ground.slidetime = 18
-ground.hittime  = 28
+ground.hittime = 28
 guard.hittime = (28) - 6
 ground.velocity = -4.5
 air.velocity = -4.5,-6.5
@@ -2292,7 +2292,7 @@ fall.animtype = Back
 ground.type = trip
 air.type = trip
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3.5, -6
 guard.velocity = -6.5
@@ -2425,7 +2425,7 @@ value = 1, 5
 
 [State 1230, Width]
 type = Width
-trigger1 = MoveHit  
+trigger1 = MoveHit 
 edge = 50,35
 
 [State 1230, No Push]
@@ -2490,7 +2490,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifelse(P2Dist x > 30, 20, 15), 0
 air.velocity = ifelse((p2dist x!=[-30,30]),10,8), ifelse(p2dist y<(enemy,const(size.mid.pos.y))+45,-1,-4)
@@ -2537,7 +2537,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifelse(P2Dist x > 30, 20, 15), 0
 air.velocity = ifelse((p2dist x!=[-30,30]),10,8), ifelse(p2dist y<(enemy,const(size.mid.pos.y))+45,-1,-4)
@@ -2584,7 +2584,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifelse(P2Dist x > 30, -20, -15), 0
 air.velocity = ifelse((p2dist x!=[-30,30]),-10,-8), ifelse(p2dist y<(enemy,const(size.mid.pos.y))+45,-1,-4)
@@ -2631,7 +2631,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifelse(P2Dist x > 30, -20, -15), 0
 air.velocity = ifelse((p2dist x!=[-30,30]),-10,-8), ifelse(p2dist y<(enemy,const(size.mid.pos.y))+45,-1,-4)
@@ -2678,7 +2678,7 @@ fall.animtype = Diagup
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifelse(P2Dist x < 0, 7, -7), -5
 air.velocity = ifelse(P2Dist x < 0, 7, -7), -5
@@ -2892,7 +2892,7 @@ air.animType = Back
 fall.animType = Back
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 airguard.ctrlTime = 16
 ground.velocity = -4.5,-7
@@ -3128,9 +3128,9 @@ channel = 0
 type = Explod
 trigger1 = AnimElem = 5
 anim = 3052
-ID =  600
+ID = 600
 pos = -5,16
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3162,7 +3162,7 @@ hitsound = s2,5
 guardsound = s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -6
 airguard.velocity = -1.9,-.8
@@ -3287,10 +3287,10 @@ ctrl = 1
 ;-----------------------------------------------------------------------------
 ;Advance
 [Statedef 1300]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 4
+juggle = 4
 anim = 1300
 poweradd = 70 * !var(20)
 velset = 0,0
@@ -3387,7 +3387,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -13
 air.velocity = -13, -5
@@ -3450,7 +3450,7 @@ trigger1 = animelem = 8
 anim = 1315
 ID = 7000
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 scale = 1,1
 sprpriority = 3
@@ -3466,7 +3466,7 @@ trigger1 = animelem = 10
 anim = 1316
 ID = 7001
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 scale = 1,1
 sprpriority = 3
@@ -3481,7 +3481,7 @@ trigger1 = animelem = 10
 anim = 1317
 ID = 7002
 pos = 36,-25
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 scale = .5,.5
 sprpriority = 3
@@ -3530,7 +3530,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3.32
 air.velocity = -1.4,-3
@@ -3577,7 +3577,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4.32, -7.49
 guard.velocity = -10.52
@@ -3677,9 +3677,9 @@ fall.animtype = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
-ground.velocity =  -2, -7.5
+ground.velocity = -2, -7.5
 guard.velocity = -12.64
 air.velocity = -1, -7.5
 airguard.ctrlTime = 16
@@ -4074,7 +4074,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 12
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ;down.hittime = 18
 ground.velocity = -4.5, -6
@@ -4125,7 +4125,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 12
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ;down.hittime = 18
 ground.velocity = -4.5, -6
@@ -4463,7 +4463,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 24
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -7.85
 air.velocity = -4, -6.5
@@ -4583,7 +4583,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -4.5
 air.velocity = -6, -4.5
@@ -4731,7 +4731,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 21
-ground.hittime  = 21
+ground.hittime = 21
 guard.hittime = (21) - 6
 ground.velocity = -7, -7
 air.velocity = -4,-2.5
@@ -4900,7 +4900,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 21
-ground.hittime  = 21
+ground.hittime = 21
 guard.hittime = (21) - 6
 ground.velocity = -6, -2.5
 air.velocity = -6,-2.5
@@ -5002,7 +5002,7 @@ superMoveTime = 999
 [State 1201, Spark]
 type = Explod
 triggerall = var(10) = 2
-trigger1 =  AnimElem = 11
+trigger1 = AnimElem = 11
 Anim = 7322
 ID = 7998
 pos = 150, 0
@@ -5017,7 +5017,7 @@ superMoveTime = 999
 [State 1201, Spark]
 type = Explod
 triggerall = var(10) = 2
-trigger1 =  AnimElem = 11
+trigger1 = AnimElem = 11
 Anim = 7323
 ID = 7998
 pos = 150, 0
@@ -5089,7 +5089,7 @@ fall.animtype = Back
 ground.type = Trip
 air.type = Low
 ground.slidetime = 21
-ground.hittime  = 21
+ground.hittime = 21
 guard.hittime = (21) - 6
 ground.velocity = -1.5, 0
 air.velocity = -1.5,10
@@ -5346,7 +5346,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -10,-8
 air.velocity = -10,-8
@@ -6119,7 +6119,7 @@ ctrl = 1
 type = S
 movetype= A
 physics = N
-juggle  = 4
+juggle = 4
 velset = 0,0
 anim = 1710
 ctrl = 0
@@ -6293,7 +6293,7 @@ ctrl = 1
 type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6310,7 +6310,7 @@ value = 1730
 type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6340,7 +6340,7 @@ value = 1731
 type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6410,7 +6410,7 @@ value = 1733
 type = A
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6452,10 +6452,10 @@ value = 1724
 ;---------------------------------------------------------------------------
 ;P2 Hit By Darkness Grab
 [Statedef 1724]
-type  = S
+type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6632,7 +6632,7 @@ ctrl = 1
 type = S
 movetype= A
 physics = N
-juggle  = 4
+juggle = 4
 velset = 0,0
 anim = 1710
 ctrl = 0
@@ -6786,7 +6786,7 @@ ctrl = 1
 type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6803,7 +6803,7 @@ value = 1730
 type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6833,7 +6833,7 @@ value = 1731
 type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6903,7 +6903,7 @@ value = 1733
 type = A
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -6945,10 +6945,10 @@ value = 1764
 ;---------------------------------------------------------------------------
 ;P2 Hit By Darkness Grab
 [Statedef 1764]
-type  = S
+type = S
 movetype= H
 physics = N
-juggle  = 4
+juggle = 4
 poweradd = 0
 velset = 0,0
 ctrl = 0
@@ -7571,7 +7571,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -0.5
 air.velocity = -5.5,-6
@@ -7623,7 +7623,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7, -4.85
 air.velocity = -5,-6
@@ -7669,7 +7669,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7, -4.85
 air.velocity = -5,-6
@@ -7780,7 +7780,7 @@ hitsound = s2,5
 guardsound = s130,0
 ground.type = low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5,-5
 airguard.velocity = -4.9,-.8
@@ -8302,7 +8302,7 @@ value = 5100
 ;Collapsed TargetState=
 ;Collapsed
 [Statedef 1290]
-type    = S
+type = S
 movetype= H
 physics = S
 ctrl = 0

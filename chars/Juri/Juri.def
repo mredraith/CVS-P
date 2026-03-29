@@ -11,16 +11,16 @@ author ="chucho & Prime"
 pal.defaults =4,5,6,1,2,3
 
 ; Files for the player
-localCoord  = 428,240
+localCoord = 428,240
 [Files]
 movelist = movelist.dat
-cmd     =Juri.cmd
-cns     =Coding/System.cns
-st      =Coding/System.cns
+cmd =Juri.cmd
+cns =Coding/System.cns
+st =Coding/System.cns
 stcommon =common1.cns
-sprite  =JuriHan.sff
-anim    =Juri.air
-sound   =JuriENG.snd
+sprite =JuriHan.sff
+anim =Juri.air
+sound =JuriENG.snd
 pal4=Pals/Juri04.act
 pal5=Pals/Juri05.act
 pal6=Pals/Juri06.act

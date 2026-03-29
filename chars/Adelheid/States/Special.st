@@ -1658,9 +1658,9 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Kreis Slash
 [Statedef 1140]
-type     = A
+type = A
 movetype = A
-physics  = N
+physics = N
 anim = 1140
 ctrl = 0
 velSet = 0,0
@@ -1748,7 +1748,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 75), var(36) := -65
 ground.type = High
 ground.slidetime = 20
-ground.hittime  = 21
+ground.hittime = 21
 guard.hittime = (21) - 6
 ground.velocity = -3,20
 air.type = High
@@ -2107,7 +2107,7 @@ facep2 = 0
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 1215, Dust Helper]
 type = Helper
@@ -2277,7 +2277,7 @@ anim = 1204
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 1206, Position]
 type = PosSet
@@ -2851,7 +2851,7 @@ anim = 1204
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 1236, Position]
 type = PosSet

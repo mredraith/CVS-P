@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Feilong by varo_hades                  |
+;| Feilong by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;HELPER STATES=

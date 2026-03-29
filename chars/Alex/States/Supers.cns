@@ -50,7 +50,7 @@ ignoreHitPause = 1
 
 [State 3000, SuperPause FX]
 type = Helper
-trigger1 =  Time=3
+trigger1 = Time=3
 helperType = Normal
 stateNo = 8500
 ID = 8500
@@ -64,7 +64,7 @@ ownPal = 1
 
 [State 3000, SuperPause]
 type = SuperPause
-trigger1 =  Time=3
+trigger1 = Time=3
 time = 43
 moveTime = 43
 p2DefMul = 1
@@ -562,7 +562,7 @@ ignoreHitPause = 1
 
 [State 3000, SuperPause FX]
 type = Helper
-trigger1 =  Time=3
+trigger1 = Time=3
 helperType = Normal
 stateNo = 8510
 ID = 8500
@@ -576,7 +576,7 @@ ownPal = 1
 
 [State 3000, SuperPause]
 type = SuperPause
-trigger1 =  Time=3
+trigger1 = Time=3
 time = 43
 moveTime = 43
 p2DefMul = 1
@@ -1974,7 +1974,7 @@ pos=ceil(5*const(size.xscale)), ceil(-155*const(size.yscale))
 
 [State 3300, TargetBind]
 type=TargetBind
-trigger1=animelemtime(38) >= 0  && P2StateNo=3320
+trigger1=animelemtime(38) >= 0 && P2StateNo=3320
 pos=0, ceil(-142*const(size.yscale))
 
 [State 3300, TargetBind]
@@ -2164,7 +2164,7 @@ pos=ceil(-6*const(size.xscale)), ceil(-157*const(size.yscale))
 
 [State 3300, TargetBind]
 type=TargetBind
-trigger1=animelemtime(38) >= 0  && P2StateNo=3321
+trigger1=animelemtime(38) >= 0 && P2StateNo=3321
 pos=ceil(-4*const(size.xscale)), ceil(-70*const(size.yscale))
 
 [State 3300, TargetBind]
@@ -2354,7 +2354,7 @@ pos=ceil(-12*const(size.xscale)), ceil(-75*const(size.yscale))
 
 [State 3300, TargetBind]
 type=TargetBind
-trigger1=animelemtime(38) >= 0  && P2StateNo=3322
+trigger1=animelemtime(38) >= 0 && P2StateNo=3322
 pos=ceil(-9*const(size.xscale)), ceil(-237*const(size.yscale))
 
 [State 3300, TargetBind]
@@ -2544,7 +2544,7 @@ pos=ceil(-5*const(size.xscale)), ceil(-160*const(size.yscale))
 
 [State 3300, TargetBind]
 type=TargetBind
-trigger1=animelemtime(38) >= 0  && P2StateNo=[3323,3324]
+trigger1=animelemtime(38) >= 0 && P2StateNo=[3323,3324]
 pos=0,ceil(-100*const(size.yscale))
 
 [State 3300, HitAdd]

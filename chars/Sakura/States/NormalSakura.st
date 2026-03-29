@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Sakura by Phantom.of.the.Server         |
+;| Sakura by Phantom.of.the.Server |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;INITIALIZE

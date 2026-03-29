@@ -1170,7 +1170,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = 35,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 3103, Voice]
@@ -1769,7 +1769,7 @@ helpertype = normal ;player
 name = "Ring"
 ID = 3170
 stateno = 3170 
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 3153, ScreenBound]
@@ -1868,7 +1868,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = 50,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 3154, ChangeState]

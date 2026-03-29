@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Axel Stone by Testament             |
+;| Axel Stone by Testament |
 ; 
 ;==
 ;NORMAL MOVES
@@ -1242,7 +1242,7 @@ palFX.add = 255, 255, 255
 palFX.sinadd= -255, -255, -255, 48
 
 [State 430, ChangeAnimElem]
-type  = ChangeAnim
+type = ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 2, 6)
@@ -1538,7 +1538,7 @@ value = 52
 ;JUMPING MEDIUM PUNCH
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 anim = 610
 ctrl = 0
@@ -1971,7 +1971,7 @@ physics = N
 anim = 660
 velset = 0,0
 powerAdd = 18 * !var(20)
-juggle  = 12
+juggle = 12
 ctrl = 0
 
 [State -2, 1]
@@ -2604,7 +2604,7 @@ trigger3 = AILevel && Random < 800
 var(42) = 2
 
 [State 820, Mashing Increment]
-type  = VarAdd
+type = VarAdd
 trigger1 = var(42) = 2
 var(12) = 1
 
@@ -3430,7 +3430,7 @@ ctrl = 1
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 260
@@ -3477,7 +3477,7 @@ trigger1 = time = 3
 anim = 275
 ID = 275
 pos = -10,-64
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3514,7 +3514,7 @@ ctrl = 0
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 261
@@ -3552,7 +3552,7 @@ trigger1 = time = 0
 anim = 275
 ID = 275
 pos = -10,-64
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3591,7 +3591,7 @@ ctrl = 0
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 261
@@ -3627,7 +3627,7 @@ trigger1 = time = 0
 anim = 276
 ID = 276
 pos = -10,-64
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3666,7 +3666,7 @@ ctrl = 0
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 261
@@ -3702,7 +3702,7 @@ trigger1 = time = 0
 anim = 277
 ID = 277
 pos = -10,-64
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3741,7 +3741,7 @@ ctrl = 0
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 261
@@ -3778,7 +3778,7 @@ trigger1 = time = 0
 anim = 277
 ID = 277
 pos = -10,-64
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3809,7 +3809,7 @@ ctrl = 0
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 262
@@ -3877,7 +3877,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 86), var(36) := -78
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -10
 airguard.velocity = -1.9,-.8
@@ -3905,7 +3905,7 @@ ctrl = 1
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 262
@@ -3980,7 +3980,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 86), var(36) := -78
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5,-2
 airguard.velocity = -1.9,-.8
@@ -4002,7 +4002,7 @@ ctrl = 1
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 262
@@ -4034,7 +4034,7 @@ scale=.8,.6
 ontop = 1
 ownpal = 1
 bindtime = 1
-supermove  = -1
+supermove = -1
 sprpriority = 3
 vfacing = 1
 removeongethit = 1
@@ -4094,7 +4094,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 86), var(36) := -78
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -6.5,-3
 airguard.velocity = -1.9,-.8
@@ -4117,7 +4117,7 @@ ctrl = 1
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 262
@@ -4181,7 +4181,7 @@ scale=.9,.7
 ontop = 1
 ownpal = 1
 bindtime = 1
-supermove  = -1
+supermove = -1
 sprpriority = 3
 vfacing = 1
 removeongethit = 1
@@ -4207,7 +4207,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 86), var(36) := -78
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -8,-3
 airguard.velocity = -1.9,-.8
@@ -4230,7 +4230,7 @@ ctrl = 1
 type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 velset = 0,0
 ctrl = 0
 anim = 269
@@ -4300,7 +4300,7 @@ scale=.9,.7
 ontop = 1
 ownpal = 1
 bindtime = 1
-supermove  = -1
+supermove = -1
 sprpriority = 3
 vfacing = 1
 removeongethit = 1
@@ -4324,7 +4324,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8000)
 sparkXY = -10 + 0 * (var(35) := 86), var(36) := -78
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -10,-3
 airguard.velocity = -1.9,-.8

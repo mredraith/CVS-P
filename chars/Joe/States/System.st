@@ -6,7 +6,7 @@
 ;
 
 ; _______________________________________
-;| Joe Higashi by Jmorphman              |
+;| Joe Higashi by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -2820,7 +2820,7 @@ value = 56 + (Random % 2)
 
 [State 180, Victory Quote vs. Geese Howard]
 type = VictoryQuote
-trigger1 = Enemy, Name = "cvsgeese" || Enemy, Name = "Geese" || Enemy, Name = "Geese Howard" || Enemy, Name = "cvsgeese_normal" || Enemy, Name = "cvsgeese_ex" || Enemy, Name = "Nightmare Geese" || Enemy, Name = "Geese_WLS" ||  Enemy, Name = "Geese B Howard"
+trigger1 = Enemy, Name = "cvsgeese" || Enemy, Name = "Geese" || Enemy, Name = "Geese Howard" || Enemy, Name = "cvsgeese_normal" || Enemy, Name = "cvsgeese_ex" || Enemy, Name = "Nightmare Geese" || Enemy, Name = "Geese_WLS" || Enemy, Name = "Geese B Howard"
 value = 58 + (Random % 4)
 
 [State 180, Victory Quote vs. Hon Fu]
@@ -3329,7 +3329,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -3802,7 +3802,7 @@ trigger1 = !NumHelper(1005)
 trigger1 = !NumHelper(1035)
 trigger1 = !NumHelper(3002)
 trigger1 = !NumHelper(3005)
-trigger1 = !NumHelper(3105) && StateNo != 3100  && StateNo != 3150
+trigger1 = !NumHelper(3105) && StateNo != 3100 && StateNo != 3150
 trigger1 = !NumHelper(3155)
 var(41) = 0
 ignoreHitPause = 1

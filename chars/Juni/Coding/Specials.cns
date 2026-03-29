@@ -17,7 +17,7 @@ var(10)= ifelse((command="c" || command="rlsc"), 2, ifelse((command="b" || comma
 [State 1000, Button AI]
 type=varset
 trigger1= !time && AILevel
-var(10)= ifelse((p2bodydist x>180 || p2movetype=H || var(20)), 2,  ifelse(p2bodydist x>160, 1, 0))
+var(10)= ifelse((p2bodydist x>180 || p2movetype=H || var(20)), 2, ifelse(p2bodydist x>160, 1, 0))
 
 [State 1000, Anim]
 type=changeanim
@@ -564,7 +564,7 @@ var(10)= ifelse((command="c" || command="rlsc"), 2, ifelse((command="b" || comma
 [State 1050, Button AI]
 type=varset
 trigger1= !time && AILevel
-var(10)= ifelse((p2bodydist x>180 || p2movetype=H || var(20)), 2,  ifelse(p2bodydist x>150, 1, 0))
+var(10)= ifelse((p2bodydist x>180 || p2movetype=H || var(20)), 2, ifelse(p2bodydist x>150, 1, 0))
 
 [State 1050, Pos]
 type=posadd
@@ -1068,7 +1068,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 12
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 down.hittime = 18
 ground.velocity = -5.5, 0
@@ -1247,7 +1247,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 12
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 down.hittime = 18
 ground.velocity = -4.5, -7.25
@@ -1510,7 +1510,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.15, -8.8
 air.velocity = -2.15, -8.8
@@ -1555,7 +1555,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.15, -8.8
 air.velocity = -2.15, -8.8
@@ -1694,7 +1694,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.15, -8.8
 air.velocity = -2.15, -8.8
@@ -1739,7 +1739,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.15, -8.8
 air.velocity = -2.15, -8.8
@@ -2009,7 +2009,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.15, -8.8
 air.velocity = -2.15, -8.8
@@ -2054,7 +2054,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.15, -8.8
 air.velocity = -2.15, -8.8
@@ -2348,7 +2348,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -12.5, 0
 air.velocity = -5.25, -7.25
@@ -2394,7 +2394,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5.25, -7.25
 air.velocity = -5.25, -7.25
@@ -2601,7 +2601,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -12.5, 0
 air.velocity = -5.25, -7.25
@@ -2648,7 +2648,7 @@ fall.animtype = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -12, -4
 air.velocity = -12, -4
@@ -2859,10 +2859,10 @@ value = 5100
 
 ;EARTH DIRECT
 [Statedef 1500]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 1500
@@ -2926,7 +2926,7 @@ ctrl = 1
 
 ;Success
 [Statedef 1510]
-type  = A
+type = A
 physics = N
 movetype = A
 anim = 1510
@@ -3320,10 +3320,10 @@ value = 5100
 
 ;EX EARTH DIRECT
 [Statedef 1530]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 1530
@@ -3407,7 +3407,7 @@ ctrl = 1
 
 ;Success
 [Statedef 1540]
-type  = A
+type = A
 physics = N
 movetype = A
 anim = 1540
@@ -3701,7 +3701,7 @@ var(10)= ifelse((command="z" || command="rlsz"), 2, ifelse((command="y" || comma
 [State 1700, Button AI]
 type=varset
 trigger1= !time && AILevel
-var(10)= ifelse(p2bodydist x<40, 0,  ifelse(p2bodydist x<72, 1, 2))
+var(10)= ifelse(p2bodydist x<40, 0, ifelse(p2bodydist x<72, 1, 2))
 
 [State 1700, Snd]
 type=playsnd
@@ -5038,7 +5038,7 @@ value = 1805
 
 ;Land
 [Statedef 1805]
-type  = S
+type = S
 physics = S
 ctrl = 0
 anim = 1855

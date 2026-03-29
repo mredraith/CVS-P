@@ -1,5 +1,5 @@
 ; _______________________________________________
-;|            Cody Travers by Trololo            |
+;| Cody Travers by Trololo |
 ; 
 ;
 ;SPECIAL MOVES==
@@ -1325,7 +1325,7 @@ ctrl = 1
 
 ;Target
 [Statedef 2905]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -1340,7 +1340,7 @@ trigger1 = 1
 value = SCA
 
 [Statedef 2906]
-type    = A
+type = A
 movetype= H
 physics = N
 

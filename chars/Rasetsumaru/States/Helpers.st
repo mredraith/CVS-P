@@ -1167,7 +1167,7 @@ var(12) = 1
 [State 0, DisplayToClipboard]
 type = DisplayToClipboard
 trigger1 = 1
-text = "var(0) = %d  var(12) = %d"
+text = "var(0) = %d var(12) = %d"
 params = var(0),var(12)
 ignorehitpause = 1
  

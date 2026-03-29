@@ -67,7 +67,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -6
 air.velocity = -6,-5
@@ -113,7 +113,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
 air.velocity = -6, -5
@@ -215,7 +215,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -6
 air.velocity = -6,-5
@@ -261,7 +261,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
 air.velocity = -6, -5
@@ -363,7 +363,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -6, -6
 air.velocity = -6,-5
@@ -409,7 +409,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
 air.velocity = -6, -5
@@ -600,7 +600,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -10,-8
 air.velocity = -10,-8
@@ -866,7 +866,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.85, 0
 air.velocity = -3,-3
@@ -920,7 +920,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.5, -11
 air.velocity = -2.5, -11
@@ -1010,7 +1010,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3, 0
 air.velocity = -3.5,-3
@@ -1064,7 +1064,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2.5, -11
 air.velocity = -2.5, -11
@@ -1216,7 +1216,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3, 0
 air.velocity = -3,-2
@@ -1270,7 +1270,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3.5, -13
 air.velocity = -3.5, -13
@@ -1289,8 +1289,8 @@ palFX.sinAdd= -255,-255,-255,48
 envshake.time = 16
 envshake.ampl = 4
 envShake.freq = 120
-mindist = 50,-100            ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 100 pixels up
-maxdist = 100,-10	         ;Keep p2 a maximum of 100 pixels away from p1, and no lower than 10 pixels below
+mindist = 50,-100 ;Keep p2 a minimum of 50 pixels away from p1, and no higher than 100 pixels up
+maxdist = 100,-10	 ;Keep p2 a maximum of 100 pixels away from p1, and no lower than 10 pixels below
 
 [State 1120, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1344,9 +1344,9 @@ value = 20,0
 [State 1200, Shake Screen]
 type = EnvShake
 trigger1 = AnimElem = 6
-time = 16     ;Time to shake screen
-ampl = 6     ;Amount to shake
-freq = 150   ;A frequency of 150 shakes the screen a little less rapidly than 180
+time = 16 ;Time to shake screen
+ampl = 6 ;Amount to shake
+freq = 150 ;A frequency of 150 shakes the screen a little less rapidly than 180
 
 [State 1200, Power Dust FX]
 type= Explod
@@ -1393,7 +1393,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifElse(P2Dist x < 0,9,-9), 0
 air.velocity = ifElse(P2Dist x < 0,5,-5),-3.5
@@ -1467,9 +1467,9 @@ value = 20,0
 [State 1210, Shake Screen]
 type = EnvShake
 trigger1 = AnimElem = 6
-time = 16     ;Time to shake screen
-ampl = 6     ;Amount to shake
-freq = 150   ;A frequency of 150 shakes the screen a little less rapidly than 180
+time = 16 ;Time to shake screen
+ampl = 6 ;Amount to shake
+freq = 150 ;A frequency of 150 shakes the screen a little less rapidly than 180
 
 [State 1210, Power Dust FX]
 type= Explod
@@ -1516,7 +1516,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = ifElse(P2Dist x < 0,10,-10), 0
 air.velocity = ifElse(P2Dist x < 0,5.25,-5.25),-3.5
@@ -1695,9 +1695,9 @@ value = 20,0
 type = EnvShake
 trigger1 = AnimElem = 6
 ;trigger1 = PrevStateNo != 9000
-time = 16     ;Time to shake screen
-ampl = 6     ;Amount to shake
-freq = 150   ;A frequency of 150 shakes the screen a little less rapidly than 180
+time = 16 ;Time to shake screen
+ampl = 6 ;Amount to shake
+freq = 150 ;A frequency of 150 shakes the screen a little less rapidly than 180
 
 [State 1220, Power Dust FX]
 type= Explod
@@ -1740,7 +1740,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifElse(P2Dist x < 0,7,-7)
 air.velocity = ifElse(P2Dist x < 0,7,-7), 0
@@ -1794,7 +1794,7 @@ ctrl = 1
 ;Collapsed TargetState>=
 ;Collapsed
 [Statedef 1290]
-type    = S
+type = S
 movetype= H
 physics = S
 ctrl = 0
@@ -1934,7 +1934,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4.5, -6.5
 air.velocity = -4.5,-6.5
@@ -1968,7 +1968,7 @@ trigger1 = Command = "a" || Command = "b" || Command = "c"
 trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(9) < 0 ;Vel y < -1
 ;
 ;Clsn1: 1
-;  Clsn1[0] = 3, -81, 34, -44
+; Clsn1[0] = 3, -81, 34, -44
 trigger2 = ailevel
 trigger2 = AnimElemTime(5) > 0 && AnimElemTime(9) < 0 ;Vel y < -1
 trigger2 = p2bodydist x = [-8, (54 + (enemynear, vel x)) - const(size.ground.front)]
@@ -2087,7 +2087,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5, -6
 air.velocity = -5,-6
@@ -2197,7 +2197,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4.5, -7
 air.velocity = -4.5,-7
@@ -2231,7 +2231,7 @@ trigger1 = Command = "a" || Command = "b" || Command = "c"
 trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(9) < 0 ;Vel y < -1
 ;
 ;Clsn1: 1
-;  Clsn1[0] = 3, -81, 34, -44
+; Clsn1[0] = 3, -81, 34, -44
 trigger2 = ailevel
 trigger2 = AnimElemTime(5) > 0 && AnimElemTime(9) < 0 ;Vel y < -1
 trigger2 = p2bodydist x = [-8, (54 + (enemynear, vel x)) - const(size.ground.front)]
@@ -2336,7 +2336,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4.5, -7.5
 air.velocity = -4.5,-7
@@ -2370,7 +2370,7 @@ trigger1 = Command = "a" || Command = "b" || Command = "c"
 trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(9) < 0 ;Vel y < -1
 ;
 ;Clsn1: 1
-;  Clsn1[0] = 3, -81, 34, -44
+; Clsn1[0] = 3, -81, 34, -44
 trigger2 = ailevel
 trigger2 = AnimElemTime(5) > 0 && AnimElemTime(9) < 0 ;Vel y < -1
 trigger2 = p2bodydist x = [-8, (54 + (enemynear, vel x)) - const(size.ground.front)]
@@ -2542,7 +2542,7 @@ fall.animtype = Back
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5, -8.5
 air.velocity = -5,-8
@@ -2576,7 +2576,7 @@ trigger1 = Command = "a" || Command = "b" || Command = "c"
 trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(10) < 0 ;Vel y < -1
 ;
 ;Clsn1: 1
-;  Clsn1[0] = 3, -81, 34, -44
+; Clsn1[0] = 3, -81, 34, -44
 trigger2 = ailevel
 trigger2 = AnimElemTime(5) > 0 && AnimElemTime(10) < 0 ;Vel y < -1
 trigger2 = p2bodydist x = [-8, (54 + (enemynear, vel x)) - const(size.ground.front)]
@@ -2660,7 +2660,7 @@ fall.animtype = Diagup
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7, -9
 air.velocity = -7,-9
@@ -2753,7 +2753,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
 air.velocity = -5,-5
@@ -2853,7 +2853,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
 air.velocity = -5,-5
@@ -2953,7 +2953,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
 air.velocity = -5,-5
@@ -3119,7 +3119,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5, 0
 air.velocity = -5,-3.5
@@ -3165,7 +3165,7 @@ fall.animtype = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7, -8
 air.velocity = -7, -7.5

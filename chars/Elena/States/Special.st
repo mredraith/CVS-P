@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Elena by varo_hades                     |
+;| Elena by varo_hades |
 ; 
 ;
 ;<SPECIAL MOVES=
@@ -890,7 +890,7 @@ value = 1120
 ctrl = 0
 
 ;Finish
-[Statedef 1120]   ;att middle
+[Statedef 1120] ;att middle
 type = S
 movetype = A
 physics = S
@@ -1215,7 +1215,7 @@ value = 1150
 ctrl = 0
 
 ;Finish
-[Statedef 1150]   ;att middle
+[Statedef 1150] ;att middle
 type = S
 movetype = A
 physics = S
@@ -2116,9 +2116,9 @@ var(10) = ifElse((P2MoveType = H || Random < 500), 2, ifElse(Random < 500, 1, 0)
 [State 1300, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 20
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 ;ignorehitpause =
 ;persistent =
 
@@ -2798,9 +2798,9 @@ channel = 1
 [State 1330, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 20
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 ;ignorehitpause =
 ;persistent =
 

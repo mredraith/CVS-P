@@ -1,5 +1,5 @@
 ; ________________________________________________
-;| Urban Champion by NovaMagnolia  			|
+;| Urban Champion by NovaMagnolia 			|
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==============================================================================================
 ;=======================================<SYSTEM STATES>========================================
@@ -2568,7 +2568,7 @@ trigger35 = Enemy, Name = "Shermie" || Enemy, Name = "cvsshermie"
 trigger36 = Enemy, Name = "Leona" || Enemy, Name = "Leona Heidern" || Enemy, Name = "Tin's Leona"
 trigger37 = Enemy, Name = "Wonder Woman" || Enemy, Name = "Wonder Woman Reloaded"
 trigger38 = Enemy, Name = "Marrow" || Enemy, Name = "Angel"
-trigger39 = Enemy, Name = "Jill"  || Enemy, Name = "Jill Valentine" || Enemy, Name = "cvsjill"
+trigger39 = Enemy, Name = "Jill" || Enemy, Name = "Jill Valentine" || Enemy, Name = "cvsjill"
 trigger40 = Enemy, Name = "Tessa" || Enemy, Name = "Tabasa" || Enemy, Name = "MVCTabasa by ryokucha"
 trigger41 = enemy,SelfAnimExist(8055002) && (enemy,SelfAnimExist(8055013) || enemy,SelfAnimExist(8055014)) && (enemy,SelfAnimExist(8055062) || enemy,SelfAnimExist(8055063) || enemy,SelfAnimExist(8055064))
 ;Most of these triggers were borrowed from Jmorphman's Benimaru. hooooooly shit that's so many girls
@@ -2755,7 +2755,7 @@ ID = 192
 anim = 19200
 pos = 0,-370
 postype = p1
-sprpriority = 5   
+sprpriority = 5 
 facing = 1
 ownpal = 1
 scale = const(size.xscale),const(size.yscale)
@@ -2769,7 +2769,7 @@ ID = 192
 anim = 19201
 pos = 0,ceil(-58*const(size.yscale))
 postype = p1
-sprpriority = 5   
+sprpriority = 5 
 facing = 1
 ownpal = 1
 scale = const(size.xscale),const(size.yscale)
@@ -4144,7 +4144,7 @@ value = 5431
 
 ;Hitting the ground from rebound (Ground bounce)
 [StateDef 5431]
-type  = L
+type = L
 moveType = H
 physics = N
 
@@ -4351,7 +4351,7 @@ value = 5110
 [StateDef 5905]
 type = U
 moveType = H
-physics  = N
+physics = N
 velSet = 0,0
 
 [State 5905, ChangeAnim (Stand)]
@@ -5366,7 +5366,7 @@ triggerAll = ((StateNo != [1200, 1299]) && (StateNo != [1750, 1799]) && (StateNo
 trigger1 = MoveHit = 1 && NumEnemy
 trigger1 = var(33) = 8010 || var(33) = 8011 || var(33) = 8012 || var(33) = 8013 || var(33) = 8014 || var(33) = 8015 || var(33) = 8016 || var(33) = 8020 || var(33) = 8001
 trigger2 = MoveGuarded = 1 && NumEnemy
-trigger2 = var(34) = 8000 || var(34) = 8001 || var(34) = 8005  || var(34) = 8006
+trigger2 = var(34) = 8000 || var(34) = 8001 || var(34) = 8005 || var(34) = 8006
 helperType = Normal
 stateNo = ifElse(MoveGuarded, var(34), var(33))
 ID = 8000
@@ -5389,7 +5389,7 @@ triggerAll = var(35) < 0
 trigger1 = MoveHit = 1 && NumEnemy
 trigger1 = var(33) = 8010 || var(33) = 8011 || var(33) = 8012 || var(33) = 8013 || var(33) = 8014 || var(33) = 8015 || var(33) = 8016 || var(33) = 8020 || var(33) = 8001
 trigger2 = MoveGuarded = 1 && NumEnemy
-trigger2 = var(34) = 8000 || var(34) = 8001 || var(34) = 8005  || var(34) = 8006
+trigger2 = var(34) = 8000 || var(34) = 8001 || var(34) = 8005 || var(34) = 8006
 helperType = Normal
 stateNo = ifElse(MoveGuarded, var(34), var(33))
 ID = 8000
@@ -6487,5 +6487,5 @@ ignoreHitPause = 1
 [State -3, LIFE FIX] ;Skipped the special intro against Mega Man, did we?
 type = LifeSet
 trigger1 = (prevstateno = 19870 || prevstateno = 190) && stateno = 0
-trigger1 = life != lifemax  && roundsexisted = 0
+trigger1 = life != lifemax && roundsexisted = 0
 value = lifemax

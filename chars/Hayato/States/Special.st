@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Hayato by varo_hades                    |
+;| Hayato by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -1685,7 +1685,7 @@ value = 5050
 
 [State 5050, 1] ;Change anim when done with transition
 type = ChangeAnim
-trigger1 = Time = 0     ;If no transition anim
+trigger1 = Time = 0 ;If no transition anim
 trigger1 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger1 = Anim != 5090 ;Not if hit off ground anim
 value = 5050
@@ -1751,7 +1751,7 @@ value = 5061
 
 [State 5050, 1] ;Change anim when done with transition
 type = ChangeAnim
-trigger1 = Time = 0     ;If no transition anim
+trigger1 = Time = 0 ;If no transition anim
 trigger1 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger1 = Anim != 5090 ;Not if hit off ground anim
 value = 5050

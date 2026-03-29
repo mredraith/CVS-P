@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Vice by Jmorphman                       |
+;| Vice by Jmorphman |
 ; 
 ;
 ;SUPER STATES=
@@ -810,7 +810,7 @@ type = ChangeAnim2
 trigger1 = !Time
 value = 3015
 
-[State 3015,  ScreenBound]
+[State 3015, ScreenBound]
 type = ScreenBound
 trigger1 = 1
 value = 0
@@ -857,7 +857,7 @@ type = ChangeAnim2
 trigger1 = !Time
 value = 3017
 
-[State 3017,  ScreenBound]
+[State 3017, ScreenBound]
 type = ScreenBound
 trigger1 = 1
 value = 0
@@ -878,7 +878,7 @@ type = ChangeAnim2
 trigger1 = !Time
 value = 3018
 
-[State 3018,  ScreenBound]
+[State 3018, ScreenBound]
 type = ScreenBound
 trigger1 = 1
 value = 0
@@ -1377,7 +1377,7 @@ type = ChangeAnim2
 trigger1 = !Time
 value = 3065
 
-[State 3065,  ScreenBound]
+[State 3065, ScreenBound]
 type = ScreenBound
 trigger1 = 1
 value = 0

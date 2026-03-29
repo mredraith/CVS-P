@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Gen by mwryly & varo_hades              |
+;| Gen by mwryly & varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -121,7 +121,7 @@ ignorehitpause = 1
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 ID = 3000
 attr = S, HA
 hitFlag = MAF
@@ -388,7 +388,7 @@ ignorehitpause = 1
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 ID = 3050
 attr = S, HA
 hitFlag = MAF
@@ -648,7 +648,7 @@ value = 0
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 2
+trigger1 = AnimElem = 2
 ID = 3100
 attr = S, HA
 hitFlag = MAF
@@ -726,9 +726,9 @@ x = 20
 
 ;-----------------------------------------------------------------------
 [Statedef 3120]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3020
@@ -738,7 +738,7 @@ juggle = 0
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 ID = 3100
 attr = S, HA
 hitFlag = MAF
@@ -841,7 +841,7 @@ mul = 0,0,0
 
 [State 0, TargetBind]
 type = TargetBind
-trigger1 =  time = 0
+trigger1 = time = 0
 time = 2
 pos = 10,0
 
@@ -890,9 +890,9 @@ ampl = -6
 persistent = 0
 ;-----------------------------------------------------------------------
 [Statedef 3121]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3020
@@ -902,7 +902,7 @@ juggle = 0
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 ID = 3100
 attr = S, HA
 hitFlag = MAF
@@ -1056,9 +1056,9 @@ ampl = -6
 persistent = 0
 ;-----------------------------------------------------------------------
 [Statedef 3122]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3020
@@ -1068,7 +1068,7 @@ juggle = 0
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 ID = 3100
 attr = S, HA
 hitFlag = MAF
@@ -1221,9 +1221,9 @@ ampl = -6
 persistent = 0
 ;-----------------------------------------------------------------------
 [Statedef 3123]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3020
@@ -1233,7 +1233,7 @@ juggle = 0
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 ID = 3100
 attr = S, HA
 hitFlag = MAF
@@ -1386,9 +1386,9 @@ ampl = -6
 persistent = 0
 ;-----------------------------------------------------------------------
 [Statedef 3124]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3020
@@ -1398,7 +1398,7 @@ juggle = 0
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 ID = 3100
 attr = S, HA
 hitFlag = MAF
@@ -1551,9 +1551,9 @@ ampl = -6
 persistent = 0
 ;-----------------------------------------------------------------------
 [Statedef 3125]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3020
@@ -1563,7 +1563,7 @@ juggle = 0
 type = HitDef
 trigger1 = !NumTarget(3004)
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 ID = 3100
 attr = S, HA
 hitFlag = MAF
@@ -1716,9 +1716,9 @@ ampl = -6
 persistent = 0
 ;-----------------------------------------------------------------------
 [Statedef 3126]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3040
@@ -1888,9 +1888,9 @@ ownpal = 1
 
 ;-----------------------------------------------------------------------
 [Statedef 3130]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -1931,9 +1931,9 @@ value = 3131
 ctrl = 0
 
 [Statedef 3131]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -1979,9 +1979,9 @@ value = 3132
 ctrl = 0
 
 [Statedef 3132]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -2027,9 +2027,9 @@ value = 3133
 ctrl = 0
 
 [Statedef 3133]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -2075,9 +2075,9 @@ value = 3134
 ctrl = 0
 
 [Statedef 3134]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -2123,9 +2123,9 @@ value = 3135
 ctrl = 0
 
 [Statedef 3135]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -2171,9 +2171,9 @@ value = 3136
 ctrl = 0
 
 [Statedef 3136]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -2219,9 +2219,9 @@ value = 3137
 ctrl = 0
 
 [Statedef 3137]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -2254,7 +2254,7 @@ ampl = -6
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time>=0
+trigger1 = time>=0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 ;value2 = S,NA
 time = 1
@@ -2854,7 +2854,7 @@ value = SCA
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time>=0
+trigger1 = time>=0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 ;value2 = S,NA
 time = 10
@@ -2898,9 +2898,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3310]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3301
@@ -2946,7 +2946,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,HA				;STAND / NORMAL ATTACK
 hitflag = MAF				;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 30
@@ -2996,9 +2996,9 @@ ctrl = 1
 
 ;-----------------------------------------------------------------------
 [Statedef 3302]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3302
@@ -3099,9 +3099,9 @@ supermove = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3305]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -3123,9 +3123,9 @@ value = 3325
 ctrl = 0
 ;-----------------------------------------------------------------------
 [Statedef 3320]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3320
@@ -3437,9 +3437,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3330]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3330
@@ -3635,9 +3635,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3340]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 3340
@@ -3756,9 +3756,9 @@ x = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3325]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -3790,9 +3790,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3335]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -3820,9 +3820,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3345]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -3858,9 +3858,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 3346]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -3904,52 +3904,52 @@ value = 11,0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 4
+trigger1 = time>= 4
 x = -6
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 8
+trigger1 = time>= 8
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 12
+trigger1 = time>= 12
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 16
+trigger1 = time>= 16
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 20
+trigger1 = time>= 20
 y = -4
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 24
+trigger1 = time>= 24
 y = -2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 28
+trigger1 = time>= 28
 y = 0
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 32
+trigger1 = time>= 32
 y = 2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 36
+trigger1 = time>= 36
 y = 2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 40
+trigger1 = time>= 40
 y = 4
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 44
+trigger1 = time>= 44
 y = 6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 48
+trigger1 = time>= 48
 y = 8
 
 [State 0, EnvShake]
@@ -3961,7 +3961,7 @@ ampl = -6
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time>=0
+trigger1 = time>=0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 ;value2 = S,NA
 time = 1
@@ -4137,9 +4137,9 @@ priority = 6, Hit	;2 for ??, 3 for L, 4 for M/H, 5 for special, 6 fot hyper
 attr = C,HA		;STAND / NORMAL ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
 hitflag = MAF
-animtype = hard         ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
+animtype = hard ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
 air.animtype = hard	;2p ANIM
-ground.type = low	;  high,middle,low,trip
+ground.type = low	; high,middle,low,trip
 damage = 10,2
 pausetime = 4,4
 guard.pausetime = 4,4
@@ -4152,8 +4152,8 @@ ground.velocity = -2
 air.velocity = -1,-1
 yaccel = 0.6
 guard.velocity = -7
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -5
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -5
 getpower = 0
 GivePower = 10
 fall = 0
@@ -4181,9 +4181,9 @@ priority = 6, Hit	;2 for ??, 3 for L, 4 for M/H, 5 for special, 6 fot hyper
 attr = C,HA		;STAND / NORMAL ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
 hitflag = MAF
-animtype = hard         ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
+animtype = hard ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
 air.animtype = hard	;2p ANIM
-ground.type = high	;  high,middle,low,trip
+ground.type = high	; high,middle,low,trip
 damage = 10,2
 pausetime = 4,4
 guard.pausetime = 4,4
@@ -4196,8 +4196,8 @@ ground.velocity = -2
 air.velocity = -1,-1
 yaccel = 0.6
 guard.velocity = -7
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -5
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -5
 getpower = 0
 GivePower = 10
 fall = 0
@@ -4219,7 +4219,7 @@ priority = 5, Hit
 attr = S,HA		;STAND / NORMAL ATTACK
 hitflag = MAF		;MIDDLE ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
-animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard	; = medium		;2p ANIM
 ground.type = high
 damage = 30,6
@@ -4236,8 +4236,8 @@ ground.velocity = -2,-8
 air.velocity = -2,-8
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -20
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -20
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -4426,9 +4426,9 @@ priority = 6, Hit	;2 for ??, 3 for L, 4 for M/H, 5 for special, 6 fot hyper
 attr = C,HA		;STAND / NORMAL ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
 hitflag = MAF
-animtype = hard         ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
+animtype = hard ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
 air.animtype = hard	;2p ANIM
-ground.type = low	;  high,middle,low,trip
+ground.type = low	; high,middle,low,trip
 damage = 10,2
 pausetime = 4,4
 guard.pausetime = 4,4
@@ -4441,8 +4441,8 @@ ground.velocity = -2
 air.velocity = -1,-1
 yaccel = 0.6
 guard.velocity = -7
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -5
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -5
 getpower = 0
 GivePower = 10
 fall = 0
@@ -4470,9 +4470,9 @@ priority = 6, Hit	;2 for ??, 3 for L, 4 for M/H, 5 for special, 6 fot hyper
 attr = C,HA		;STAND / NORMAL ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
 hitflag = MAF
-animtype = hard         ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
+animtype = hard ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
 air.animtype = hard	;2p ANIM
-ground.type = high	;  high,middle,low,trip
+ground.type = high	; high,middle,low,trip
 damage = 10,2
 pausetime = 4,4
 guard.pausetime = 4,4
@@ -4485,8 +4485,8 @@ ground.velocity = -2
 air.velocity = -1,-1
 yaccel = 0.6
 guard.velocity = -7
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -5
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -5
 getpower = 0
 GivePower = 10
 fall = 0
@@ -4508,7 +4508,7 @@ priority = 5, Hit
 attr = S,HA		;STAND / NORMAL ATTACK
 hitflag = MAF		;MIDDLE ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
-animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard	; = medium		;2p ANIM
 ground.type = high
 damage = 30,6
@@ -4525,8 +4525,8 @@ ground.velocity = -2,-8
 air.velocity = -2,-8
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -20
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -20
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -4673,9 +4673,9 @@ priority = 6, Hit	;2 for ??, 3 for L, 4 for M/H, 5 for special, 6 fot hyper
 attr = A,HA		;STAND / NORMAL ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
 hitflag = MAF
-animtype = hard         ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
+animtype = hard ;2p ANIM, light", "medium", "hard", "back", "up",or "diagup".
 air.animtype = hard	;2p ANIM
-ground.type = low	;  high,middle,low,trip
+ground.type = low	; high,middle,low,trip
 damage = 10,2
 pausetime = 12,12
 guard.pausetime = 12,12
@@ -4688,8 +4688,8 @@ ground.velocity = -1,-10
 air.velocity = -1,-10
 yaccel = 0.5
 guard.velocity = -7
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -5
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -5
 getpower = 0
 GivePower = 10
 fall = 1
@@ -4711,7 +4711,7 @@ priority = 5, Hit
 attr = S,HA		;STAND / NORMAL ATTACK
 hitflag = MAF		;MIDDLE ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
-animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard	; = medium		;2p ANIM
 ground.type = high
 damage = 10,2
@@ -4728,8 +4728,8 @@ ground.velocity = -2,-8
 air.velocity = -1,-3
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -5
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -5
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -40 + 0 * (var(35) := 57), var(36) := -80
@@ -4748,7 +4748,7 @@ priority = 5, Hit
 attr = S,HA		;STAND / NORMAL ATTACK
 hitflag = MAF		;MIDDLE ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
-animtype = medium 	;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = medium 	;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = medium	; = medium		;2p ANIM
 ground.type = high
 damage = 10,2
@@ -4765,8 +4765,8 @@ ground.velocity = -2,-8
 air.velocity = -1,-3
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  -5
-guard.cornerpush.veloff =  -5
+ground.cornerpush.veloff = -5
+guard.cornerpush.veloff = -5
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkXY = -40 + 0 * (var(35) := 57), var(36) := -80
@@ -4783,7 +4783,7 @@ priority = 6, Hit
 attr = S,HA		;STAND / NORMAL ATTACK
 hitflag = MAF		;MIDDLE ATTACK
 guardflag = M		;GUARD is MIDDLE /L is LOW
-animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 	;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard	; = medium		;2p ANIM
 ground.type = high
 damage = 30,10
@@ -5894,9 +5894,9 @@ value = 1105
 
 ;-----------------------------------------------------------------------
 [Statedef 13120]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13120
@@ -6011,9 +6011,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13130]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13130
@@ -6086,9 +6086,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13140]
-type = S              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = S ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 0
@@ -6131,7 +6131,7 @@ value = 4,2
 
 [State 0, PosSet]
 type = PosSet
-trigger1 =  1
+trigger1 = 1
 x = 0
 
 [State 0, PlayerPush]
@@ -6182,9 +6182,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13150]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = I          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = I ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13150
@@ -6253,9 +6253,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13125]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -6273,9 +6273,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13135]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -6303,9 +6303,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13145]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 ;velset = 0,0
 juggle = 0
@@ -6389,76 +6389,76 @@ trigger1 = time>= 36
 y = -2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 40
+trigger1 = time>= 40
 y = -2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 44
+trigger1 = time>= 44
 y = -2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 48
+trigger1 = time>= 48
 y = -0.5
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time >= 0
+trigger1 = time >= 0
 x = 0
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time >= 4
+trigger1 = time >= 4
 x = -11
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time >= 8
+trigger1 = time >= 8
 x = 22
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time >= 12
+trigger1 = time >= 12
 x = -11
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time >= 16
+trigger1 = time >= 16
 x = 11
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 20
+trigger1 = time>= 20
 x = -11
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 24
+trigger1 = time>= 24
 x = 11
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 28
+trigger1 = time>= 28
 x = -22
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 32
+trigger1 = time>= 32
 x = 22
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 36
+trigger1 = time>= 36
 x = -22
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 40
+trigger1 = time>= 40
 x = 22
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 44
+trigger1 = time>= 44
 x = -33
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 48
+trigger1 = time>= 48
 x = 33
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 52
+trigger1 = time>= 52
 x = -33
 [State 0, VelSet]
 type = null;VelSet
-trigger1 =  time>= 56
+trigger1 = time>= 56
 x = 33
 
 [State 0, ChangeState]
@@ -6469,7 +6469,7 @@ ctrl = 0
 
 [State 0, SelfState]
 type = null;SelfState
-trigger1 = pos  Y>=-60&&vel Y>0
+trigger1 = pos Y>=-60&&vel Y>0
 value =5110
 
 [State 0, ScreenBound]
@@ -6485,9 +6485,9 @@ movecamera = 0,1
 
 ;-----------------------------------------------------------------------
 [Statedef 13146]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -6542,51 +6542,51 @@ movecamera = 0,1
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 0
+trigger1 = time>= 0
 x = 2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 4
+trigger1 = time>= 4
 y = -10
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 8
+trigger1 = time>= 8
 y = -8
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 12
+trigger1 = time>= 12
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 16
+trigger1 = time>= 16
 y = -4
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 20
+trigger1 = time>= 20
 y = -2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 24
+trigger1 = time>= 24
 y = 0
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 28
+trigger1 = time>= 28
 y = 2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 32
+trigger1 = time>= 32
 y = 4
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 36
+trigger1 = time>= 36
 y = 6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 40
+trigger1 = time>= 40
 y = 8
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 44
+trigger1 = time>= 44
 y = 10
 
 [State 0, EnvShake]
@@ -6598,7 +6598,7 @@ ampl = -6
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time>=0
+trigger1 = time>=0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 ;value2 = S,NA
 time = 1
@@ -6758,7 +6758,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 50,10
@@ -6923,7 +6923,7 @@ trigger2 = time >= 12
 value = 13204
 
 ;------------------------------------------------------------------------
-;FRONT WALL  time12
+;FRONT WALL time12
 [Statedef 13204]
 type = A
 physics = N
@@ -6961,7 +6961,7 @@ value = 13205
 ctrl = 0
 
 ;-----------------------------------------------------------------------
-[Statedef 13205]  ; FAST kick to LEFT
+[Statedef 13205] ; FAST kick to LEFT
 type = A
 physics = N
 movetype = A
@@ -6998,7 +6998,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 50,10
@@ -7164,7 +7164,7 @@ trigger2 = time >= 12
 value = 13207
 
 ;------------------------------------------------------------------------
-;BACK WALL  time12
+;BACK WALL time12
 [Statedef 13207]
 type = A
 physics = N
@@ -7202,7 +7202,7 @@ value = 13208
 ctrl = 0
 
 ;-----------------------------------------------------------------------
-[Statedef 13208]  ; FAST kick to RIGHT
+[Statedef 13208] ; FAST kick to RIGHT
 type = A
 physics = N
 movetype = A
@@ -7239,7 +7239,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 50,10
@@ -7512,7 +7512,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 65,10
@@ -7677,7 +7677,7 @@ trigger2 = time >= 12
 value = 13254
 
 ;------------------------------------------------------------------------
-;FRONT WALL  time12
+;FRONT WALL time12
 [Statedef 13254]
 type = A
 physics = N
@@ -7715,7 +7715,7 @@ value = 13255
 ctrl = 0
 
 ;-----------------------------------------------------------------------
-[Statedef 13255]  ; FAST kick to LEFT
+[Statedef 13255] ; FAST kick to LEFT
 type = A
 physics = N
 movetype = A
@@ -7752,7 +7752,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 65,10
@@ -7918,7 +7918,7 @@ trigger2 = time >= 12
 value = 13258
 
 ;------------------------------------------------------------------------
-;BACK WALL  time12
+;BACK WALL time12
 [Statedef 13258]
 type = A
 physics = N
@@ -7956,7 +7956,7 @@ value = 13259
 ctrl = 0
 
 ;-----------------------------------------------------------------------
-[Statedef 13259]  ; FAST kick to RIGHT
+[Statedef 13259] ; FAST kick to RIGHT
 type = A
 physics = N
 movetype = A
@@ -7993,7 +7993,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 65,10
@@ -8158,7 +8158,7 @@ trigger2 = time >= 12
 value = 13262
 
 ;------------------------------------------------------------------------
-;FRONT WALL  time12
+;FRONT WALL time12
 [Statedef 13262]
 type = A
 physics = N
@@ -8196,7 +8196,7 @@ value = 13263
 ctrl = 0
 
 ;-----------------------------------------------------------------------
-[Statedef 13263]  ; FAST kick to LEFT
+[Statedef 13263] ; FAST kick to LEFT
 type = A
 physics = N
 movetype = A
@@ -8233,7 +8233,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 65,10
@@ -8466,9 +8466,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13301]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13301
@@ -8487,7 +8487,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA				;STAND / NORMAL ATTACK
 hitflag = MAF				;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			; = medium		;2p ANIM
 ground.type = high
 damage = 30
@@ -8504,7 +8504,7 @@ ground.velocity = -12
 air.velocity = -3,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  -10
+ground.cornerpush.veloff = -10
 guard.cornerpush.veloff = -10
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -8551,9 +8551,9 @@ y = 10
 
 ;-----------------------------------------------------------------------
 [Statedef 13311]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13311
@@ -8676,9 +8676,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13312]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13312
@@ -8777,9 +8777,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13313]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13313
@@ -8894,9 +8894,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13314]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13314
@@ -8981,8 +8981,8 @@ supermove = 0
 [State 0, AngleDraw]
 type = AngleDraw
 trigger1 = time>=0
-value = 30;  (winmugen only)
-;scale =  (winmugen only)
+value = 30; (winmugen only)
+;scale = (winmugen only)
 ;ignorehitpause =
 ;persistent =
 
@@ -9020,9 +9020,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13315]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13315
@@ -9051,8 +9051,8 @@ ampl = 11
 [State 0, AngleDraw]
 type = AngleDraw
 trigger1 = time>=0
-value = -15;  (winmugen only)
-;scale =  (winmugen only)
+value = -15; (winmugen only)
+;scale = (winmugen only)
 ;ignorehitpause =
 ;persistent =
 
@@ -9130,9 +9130,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13316]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13316
@@ -9232,9 +9232,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13317]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13317
@@ -9350,9 +9350,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13318]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13318
@@ -9451,9 +9451,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13319]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13319
@@ -9498,8 +9498,8 @@ ampl = 11
 [State 0, AngleDraw]
 type = AngleDraw
 trigger1 = time>=0
-value = -30;  (winmugen only)
-;scale =  (winmugen only)
+value = -30; (winmugen only)
+;scale = (winmugen only)
 ;ignorehitpause =
 ;persistent =
 
@@ -9576,9 +9576,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13320]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13320
@@ -9693,9 +9693,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13350]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13316
@@ -9792,13 +9792,13 @@ type = PosSet
 trigger1=var(44)=1
 trigger1 = time = 0
 y = -200
-x =  260
+x = 260
 [State 0, PosSet]
 type = PosSet
 trigger1=var(44)=2
 trigger1 = time = 0
 y = -200
-x =  -260
+x = -260
 
 [State 0, VelSet]
 type = VelSet
@@ -9814,9 +9814,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13360]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = A          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = A ;A,H,I
 ctrl = 0
 velset = 0,0
 anim = 13316
@@ -9849,9 +9849,9 @@ ctrl = 1
 
 ;-----------------------------------------------------------------------
 [Statedef 13321]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -10065,9 +10065,9 @@ ctrl = 0
 
 ;-----------------------------------------------------------------------
 [Statedef 13365]
-type = A              ;S,C,A
-physics = N           ;S,C,A,N
-movetype = H          ;A,H,I
+type = A ;S,C,A
+physics = N ;S,C,A,N
+movetype = H ;A,H,I
 ctrl = 0
 velset = 0,0
 juggle = 0
@@ -10094,7 +10094,7 @@ persistent = 0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time= 15
+trigger1 = time= 15
 x = 10
 pausetime = 20
 
@@ -10129,57 +10129,57 @@ y = -60
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 20
+trigger1 = time>= 20
 x = 1
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 24
+trigger1 = time>= 24
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 28
+trigger1 = time>= 28
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 32
+trigger1 = time>= 32
 y = -6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 36
+trigger1 = time>= 36
 y = -4
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 40
+trigger1 = time>= 40
 y = -2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 44
+trigger1 = time>= 44
 y = 0
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 48
+trigger1 = time>= 48
 y = 2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 52
+trigger1 = time>= 52
 y = 2
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 56
+trigger1 = time>= 56
 y = 4
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 60
+trigger1 = time>= 60
 y = 6
 [State 0, VelSet]
 type = VelSet
-trigger1 =  time>= 64
+trigger1 = time>= 64
 y = 8
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time>=0
+trigger1 = time>=0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 ;value2 = S,NA
 time = 1

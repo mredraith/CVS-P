@@ -3,45 +3,45 @@
 ; 
 ;====================<DEFINITION>====================
 [Info]
-name          = "Dan Hibiki"
-displayname   = "Dan"
-lifebarname   = "Dan"
-versiondate   = 2025
-mugenversion  = 1.1; deprecated
+name = "Dan Hibiki"
+displayname = "Dan"
+lifebarname = "Dan"
+versiondate = 2025
+mugenversion = 1.1; deprecated
 ikemenversion = 1.0
-author        = "Phantom.of.the.Server"
-pal.defaults  = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-localCoord  = 428,240
+author = "Phantom.of.the.Server"
+pal.defaults = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+localCoord = 428,240
 portraitscale = 1.0
 
 [Files]
-cmd     = dancmd.cns
-cns     = dancns.cns
-st1     = states/danzss.zss
-st2     = states/dansystem.st
-st3     = states/dannormal.st
-st4     = states/danspecial.st
-st5     = states/dansuper.st
-st6     = states/danhelper.st
-st7     = states/inputs.zss
-st8     = CONFIG.txt
+cmd = dancmd.cns
+cns = dancns.cns
+st1 = states/danzss.zss
+st2 = states/dansystem.st
+st3 = states/dannormal.st
+st4 = states/danspecial.st
+st5 = states/dansuper.st
+st6 = states/danhelper.st
+st7 = states/inputs.zss
+st8 = CONFIG.txt
 stcommon= common1.cns
-sprite  = dansprite.sff
-anim    = dananim.air
-sound   = dansound.snd
+sprite = dansprite.sff
+anim = dananim.air
+sound = dansound.snd
 movelist = movelist.dat
-pal1    = palettes/default.act
-pal2    = palettes/sfa2orange.act
-pal3    = palettes/sfa2magenta.act
-pal4    = palettes/mshgreen.act
-pal5    = palettes/sfa2yellow.act
-pal6    = palettes/sfa2blue.act
-pal7    = palettes/red.act
-pal8    = palettes/orange.act
-pal9    = palettes/black.act
-pal10   = palettes/ryu.act
-pal11   = palettes/ryo.act
-pal12   = palettes/oyaji.act
+pal1 = palettes/default.act
+pal2 = palettes/sfa2orange.act
+pal3 = palettes/sfa2magenta.act
+pal4 = palettes/mshgreen.act
+pal5 = palettes/sfa2yellow.act
+pal6 = palettes/sfa2blue.act
+pal7 = palettes/red.act
+pal8 = palettes/orange.act
+pal9 = palettes/black.act
+pal10 = palettes/ryu.act
+pal11 = palettes/ryo.act
+pal12 = palettes/oyaji.act
 
 [Palette Keymap]
 x = 1

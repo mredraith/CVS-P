@@ -1517,7 +1517,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -2145,7 +2145,7 @@ type = S
 moveType = A
 physics = S
 anim = 195
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -2296,7 +2296,7 @@ name = "Transform"
 ID = 10190
 stateno = 10190
 pos = 0,0
-postype = p1   
+postype = p1 
 facing = 1
 keyctrl = 0
 
@@ -2308,7 +2308,7 @@ name = "Suit"
 ID = 10191
 stateno = 10191
 pos = 0,0
-postype = p1   
+postype = p1 
 facing = 1
 keyctrl = 0
 

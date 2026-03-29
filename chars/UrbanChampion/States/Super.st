@@ -1,5 +1,5 @@
 ; ________________________________________________
-;| Urban Champion by NovaMagnolia  			|
+;| Urban Champion by NovaMagnolia 			|
 ; 
 ;==============================================================================================
 ;========================================<SUPER STATES>========================================
@@ -461,7 +461,7 @@ ctrl = 1
 [StateDef 3015]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3015, PosSet]
@@ -1154,7 +1154,7 @@ ctrl = 1
 [StateDef 3115]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3115, PosSet]
@@ -2317,7 +2317,7 @@ stateNo = 8014
 ID = 8000
 name = "Spark"
 posType = P2
-pos = ((Random % 25) * ifElse(Random < 500, 1, -1)),  - ((Random % 25) * ifElse(Random < 500, 1, -1))
+pos = ((Random % 25) * ifElse(Random < 500, 1, -1)), - ((Random % 25) * ifElse(Random < 500, 1, -1))
 facing = ifElse(Random % 2, -1, 1)
 ownPal = 1
 onTop = 1
@@ -2494,7 +2494,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; TARGET HITSTOP
 [Statedef 3315]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -2568,7 +2568,7 @@ value = 3316
 ;---------------------------------------------------------------------------
 ; TARGET HIT
 [Statedef 3316]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -2618,7 +2618,7 @@ persistent = 0
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -2641,7 +2641,7 @@ value = 3317 ;Downed get-hit (hit ground from fall)
 ;---------------------------------------------------------------------------
 ; TARGET INVISIBLE
 [Statedef 3317]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -2665,7 +2665,7 @@ flag = invisible
 ;---------------------------------------------------------------------------
 ;TARGET LAUNCHED
 [Statedef 3318]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -4892,7 +4892,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Raging Champion (Command Grab)
 [Statedef 3710]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -5289,7 +5289,7 @@ value = 3312
 ;---------------------------------------------------------------------------
 ;Raging Champion (Target)
 [Statedef 3715]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0

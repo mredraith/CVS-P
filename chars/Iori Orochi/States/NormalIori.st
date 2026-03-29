@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Iori Yagami by Knuckles8864             |
+;| Iori Yagami by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;INITIALIZE

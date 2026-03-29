@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Adon by Trololo                       |
+;| Adon by Trololo |
 ; 
 ;
 ;SUPER STATES=

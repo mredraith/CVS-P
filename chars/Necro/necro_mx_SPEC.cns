@@ -7,7 +7,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1000
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -119,7 +119,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 45,5
@@ -136,13 +136,13 @@ ground.velocity = -3,0
 air.velocity = -1,-4
 ;yaccel = 0.6
 guard.velocity = -4
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -10)	
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-5, -10)	
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-5, -10)	
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-5, -10)	
 ;
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = 20,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -156,7 +156,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 60,8
@@ -173,13 +173,13 @@ ground.velocity = -4,-8
 air.velocity = -4,-8
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-20, -20)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-5, -20)	
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-20, -20)
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-5, -20)	
 ;
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = 30,-74
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -326,7 +326,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 45,5
@@ -343,13 +343,13 @@ ground.velocity = -3,0
 air.velocity = -1,-4
 ;yaccel = 0.6
 guard.velocity = -4
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -10)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-5, -10)
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-5, -10)
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-5, -10)
 ;
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = -10,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -373,7 +373,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 60,8
@@ -390,13 +390,13 @@ ground.velocity = -12
 air.velocity = -4,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-20, -20)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-5, -20)
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-20, -20)
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-5, -20)
 ;
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = -10,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -432,7 +432,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1050
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -549,7 +549,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 45,5
@@ -572,7 +572,7 @@ guard.cornerpush.veloff = -5
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = 20,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -586,7 +586,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 60,8
@@ -609,7 +609,7 @@ guard.cornerpush.veloff = -5
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = 30,-74
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0			; 1
@@ -720,7 +720,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1100
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -855,7 +855,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 100,8
@@ -873,12 +873,12 @@ air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -12
 ground.cornerpush.veloff = -10
-guard.cornerpush.veloff =  -10
+guard.cornerpush.veloff = -10
 ;
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = 0,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 ;p1stateno = 1160
@@ -922,7 +922,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1160
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1100, explod]
@@ -962,7 +962,7 @@ priority = 3, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 30,5
@@ -980,12 +980,12 @@ air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -12
 ground.cornerpush.veloff = -10
-guard.cornerpush.veloff =  -10
+guard.cornerpush.veloff = -10
 ;
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = -10,-90
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -1037,7 +1037,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1150
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -1103,7 +1103,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 60,8
@@ -1120,13 +1120,13 @@ ground.velocity = -1,-10
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-8, -10)	
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-8, -10)	
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-8, -10)	
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-8, -10)	
 ;
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = 0,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 p1stateno = 1165
@@ -1234,7 +1234,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1160
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 
 ;land smnoke
 [State 0, jump up explode]
@@ -1350,7 +1350,7 @@ priority = 3, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 30,5
@@ -1367,13 +1367,13 @@ ground.velocity = -1,-8
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  -10
+ground.cornerpush.veloff = -10
 guard.cornerpush.veloff = -10
 ;
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = -10,-90
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -1393,7 +1393,7 @@ priority = 3, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 30,5
@@ -1411,12 +1411,12 @@ air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -12
 ground.cornerpush.veloff = -10
-guard.cornerpush.veloff =  -10
+guard.cornerpush.veloff = -10
 ;
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = -10,-90
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -1468,7 +1468,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1180
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -1534,7 +1534,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 60,6
@@ -1557,7 +1557,7 @@ guard.cornerpush.veloff = -5
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = 0,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 p1stateno = 1185
@@ -1665,7 +1665,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1185
-juggle =  ifelse ( var(20) > 0,2, 3)
+juggle = ifelse ( var(20) > 0,2, 3)
 
 ;land smnoke
 [State 0, jump up explode]
@@ -1773,7 +1773,7 @@ priority = 3, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 30,5
@@ -1794,7 +1794,7 @@ guard.cornerpush.veloff = -5
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = -10,-90
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -1814,7 +1814,7 @@ priority = 3, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 60,6
@@ -1837,7 +1837,7 @@ guard.cornerpush.veloff = -5
 hitsound = S1100,0
 guardsound = S6,1
 sparkxy = -10,-90
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -1874,7 +1874,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1200
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -1984,7 +1984,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = H			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 80,8
@@ -2001,13 +2001,13 @@ ground.velocity = -1,4
 air.velocity = -1,-4
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-20, -20)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-5, -20)	
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-20, -20)
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-5, -20)	
 ;
 hitsound = S5,3
 guardsound = S6,1
 sparkxy = 20,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -2037,7 +2037,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1270
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -2145,7 +2145,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = H			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 90,9
@@ -2162,13 +2162,13 @@ ground.velocity = -1,4
 air.velocity = -1,-4
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-20, -20)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-5, -20)	
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-20, -20)
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-5, -20)	
 ;
 hitsound = S5,3
 guardsound = S6,1
 sparkxy = 20,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -2198,7 +2198,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1250
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -2306,7 +2306,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = H			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 100,10
@@ -2323,13 +2323,13 @@ ground.velocity = -1,4
 air.velocity = -1,-4
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-20, -20)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0 ,-5, -20)
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-20, -20)
+guard.cornerpush.veloff = ifelse ( var(20) > 0 ,-5, -20)
 ;
 hitsound = S5,3
 guardsound = S6,1
 sparkxy = 20,-70
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -2360,7 +2360,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1300
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -2500,7 +2500,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = H			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = back			;2p ANIM
 ground.type = high
 damage = 80,8
@@ -2523,7 +2523,7 @@ guard.cornerpush.veloff = -10
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = -10,-10
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -2555,7 +2555,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1370
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -2694,7 +2694,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = H			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = back			;2p ANIM
 ground.type = high
 damage = 80,8
@@ -2717,7 +2717,7 @@ guard.cornerpush.veloff = -10
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = -10,-10
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -2748,7 +2748,7 @@ movetype = A
 ctrl = 0
 velset = 0,0
 anim = 1350
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -2896,7 +2896,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = H			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = back			;2p ANIM
 ground.type = high
 damage = 80,8
@@ -2919,7 +2919,7 @@ guard.cornerpush.veloff = 0
 hitsound = S5,1
 guardsound = S6,1
 sparkxy = -10,-20
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -2933,7 +2933,7 @@ priority = 4, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = H			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = back			;2p ANIM
 ground.type = high
 damage = 80,8
@@ -2956,7 +2956,7 @@ guard.cornerpush.veloff = -10
 hitsound = S5,3
 guardsound = S6,1
 sparkxy = -20,-20
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 1
@@ -2992,7 +2992,7 @@ movetype = A
 ctrl = 0
 velset = 0
 anim = 1400
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -3073,7 +3073,7 @@ attr = A,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
 hitflag = MAF
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = back			;2p ANIM
 ground.type = high
 damage = 40,8
@@ -3095,7 +3095,7 @@ guard.cornerpush.veloff = -25
 sparkxy = 10,-65
 hitsound = S5,3
 guardsound = 6,0
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -3127,7 +3127,7 @@ movetype = A
 ctrl = 0
 velset = 0
 anim = 1410
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -3207,7 +3207,7 @@ priority = 3, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = back			;2p ANIM
 ground.type = high
 numhits = 1
@@ -3230,7 +3230,7 @@ guard.cornerpush.veloff = -20
 sparkxy = 20,-25
 hitsound = S5,3
 guardsound = S6,0
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -3267,7 +3267,7 @@ movetype = A
 ctrl = 0
 velset = 0
 anim = 1420
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -3347,7 +3347,7 @@ priority = 3, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = S,SA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = back			;2p ANIM
 ground.type = high
 damage = 40,8
@@ -3369,7 +3369,7 @@ guard.cornerpush.veloff = -20
 sparkxy = 20,-25
 hitsound = S5,3
 guardsound = S6,0
-sparkno =  s17200+(Random%8)
+sparkno = s17200+(Random%8)
 guard.sparkno = s17010
 ;
 fall = 0
@@ -3402,13 +3402,13 @@ ctrl = 1
 ;;-----------------------------------------------------------------------------------------------------------------------------
 ;THROW 1500
 [Statedef 1500]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
 ctrl = 0
 anim = 1500
-juggle =  ifelse ( var(20) > 0,3, 5)
+juggle = ifelse ( var(20) > 0,3, 5)
 poweradd = ifelse ( var(20) > 0, 25, 50)
 
 [State 1200, palfx]
@@ -3453,13 +3453,13 @@ value = -200
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 200,1
 
 [State 1500, 1]
 type = HitDef
 
-Triggerall = Time = 0  && var(20)= 0
+Triggerall = Time = 0 && var(20)= 0
 
 trigger1 = p2statetype != A
 trigger1 = p2stateno != [150,152]
@@ -3469,10 +3469,10 @@ Trigger2 = p2stateno=52 || p2stateno = 0|| p2stateno = [10,12]
 attr = S, NT		;Attributes: Standing, Normal Throw
 hitflag = M-;AFD		;Affect only ground people who are not being hit
 priority = 4, Miss		;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
+p2facing = 1 ;Force p2 to face player
 p1stateno = 1501
 p2stateno = 1505
 fall = 1
@@ -3490,10 +3490,10 @@ trigger1 = p2stateno != [150,152]
 attr = S, NT		;Attributes: Standing, Normal Throw
 hitflag = MAF		;Affect only ground people who are not being hit
 priority = 4, Miss		;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
+p2facing = 1 ;Force p2 to face player
 p1stateno = 1510
 p2stateno = 1520
 fall = 1
@@ -3510,10 +3510,10 @@ trigger1 = stateno = 1050
 attr = S, NT		;Attributes: Standing, Normal Throw
 hitflag = M		;Affect only ground people who are not being hit
 priority = 4, Miss		;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-sprpriority = 1       ;Draw in front of p2
+sparkno = -1 ;No spark
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
-p2facing = 1          ;Force p2 to face player
+p2facing = 1 ;Force p2 to face player
 p1stateno = 1550
 p2stateno = 1560
 fall = 1
@@ -3530,7 +3530,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;P1 throw 01
 [Statedef 1501]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 1510
@@ -3570,7 +3570,7 @@ ctrl = 0
 ;---------------------------------------------------------------------------
 ; P2 throw 01
 [Statedef 1505]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3578,20 +3578,20 @@ velset = 0,0
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = time >= 0
-trigger1 =  p2bodydist X >= 0
+trigger1 = p2bodydist X >= 0
 value = 1520
 ctrl = 0
 [State 0, ChangeState]
 type = ChangeState
 trigger1 = time >= 0
-trigger1 =  p2bodydist X < 0
+trigger1 = p2bodydist X < 0
 value = 1560
 ctrl = 0
 
 ;---------------------------------------------------------------------------
 ;P1 throw 01
 [Statedef 1510]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 1510
@@ -3617,7 +3617,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; P2 throw 01
 [Statedef 1520]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3716,7 +3716,7 @@ value = 5100 ;Hit ground
 ;---------------------------------------------------------------------------
 ;P1 throw 01
 [Statedef 1550]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 1550
@@ -3773,7 +3773,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; P2 throw 01
 [Statedef 1560]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0

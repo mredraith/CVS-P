@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Kyo Kusanagi by Jmorphman               |
+;| Kyo Kusanagi by Jmorphman |
 ; 
 ;
 ;NORMAL MOVES=

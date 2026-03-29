@@ -2,8 +2,8 @@
 ; Colaboração [Var(38)]: 1-Lutar só, 2-Duplo Especial, 3-Um Ataque, 4-Counter
 ; Vez na luta [Var(37)]: 1-Primeiro, 2-Segundo
 ; Verificação [Var(36)]: Meu ID
-;             [Var(35)]: 0-Proíbe sair de tela, 1-Permite sair de tela
-; P3 life     [Var(34)]: Memoriza a vida
+; [Var(35)]: 0-Proíbe sair de tela, 1-Permite sair de tela
+; P3 life [Var(34)]: Memoriza a vida
 ; Recuperação [Var(33)]: Memoriza a vida
 
 
@@ -146,7 +146,7 @@ ontop = 1
 [State -2]; com MvsC2 SP
 type = explod
 trigger1 = var(9)>0 && var(17)>=10
-pos = 37+141*(id>(enemy, id)),234  
+pos = 37+141*(id>(enemy, id)),234 
 postype = left 
 bindtime = -1
 sprpriority = 2
@@ -160,7 +160,7 @@ ontop = 1
 [State -2]; sem MvsC2 SP - excel
 type = explod
 trigger1 = var(9)>0 && var(17)<10
-pos = -31+383*(id>(enemy, id))+(var(9)/10)-(var(9)/10)*2*(id>(enemy, id)),234  
+pos = -31+383*(id>(enemy, id))+(var(9)/10)-(var(9)/10)*2*(id>(enemy, id)),234 
 postype = left 
 bindtime = -1
 sprpriority = 2

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Sodom by varo_hades                     |
+;| Sodom by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -77,7 +77,7 @@ trigger1 = animelem=2
 anim = 201
 ID = 201
 pos = 42,-38
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -359,7 +359,7 @@ trigger1 = animelem=4
 anim = 221
 ID = 221
 pos = 0,-14
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -833,7 +833,7 @@ type = Explod
 trigger1 = animelem=2
 anim = 401
 pos = -54,-9
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -943,7 +943,7 @@ type = Explod
 trigger1 = animelem=2,4
 anim = 401
 pos = -135,-20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1054,7 +1054,7 @@ type = Explod
 trigger1 = animelem=3,3
 anim = 421
 pos = 70,30
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1426,7 +1426,7 @@ trigger1 = animelem=2
 anim = 601
 ID = 601
 pos = -25,-16
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1539,7 +1539,7 @@ type = Explod
 trigger1 = animelem=4
 anim = 401
 pos = -70,-72
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1654,7 +1654,7 @@ trigger1 = animelem=2
 anim = 621
 ID = 621
 pos = -5,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

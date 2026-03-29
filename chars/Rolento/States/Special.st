@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rolento by Jmorphman                    |
+;| Rolento by Jmorphman |
 ; 
 ;
 ;SPECIAL MOVES

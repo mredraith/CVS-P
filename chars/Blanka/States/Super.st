@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Blanka by varo_hades                    |
+;| Blanka by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -3612,7 +3612,7 @@ ampl = -9
 
 [State 3502, State End1]
 type = ChangeState
-trigger1 =  time = 260
+trigger1 = time = 260
 value = 3503
 
 [Statedef 3503]
@@ -4087,7 +4087,7 @@ ampl = -9
 
 [State 3552, State End1]
 type = ChangeState
-trigger1 =  time = 260
+trigger1 = time = 260
 value = 3553
 
 [Statedef 3553]

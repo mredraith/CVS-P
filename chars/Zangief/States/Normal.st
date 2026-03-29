@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Zangief by varo_hades                   |
+;| Zangief by varo_hades |
 ; 
 ;
 ;NORMAL MOVES==
@@ -4105,7 +4105,7 @@ channel = 0
 
 [State 901, Effect]
 type = PlaySnd
-trigger1 = AnimElem = 1  && var(40) != 0
+trigger1 = AnimElem = 1 && var(40) != 0
 value = 5, 0
 channel = 0
 

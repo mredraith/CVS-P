@@ -1013,7 +1013,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = 50,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 1210, PlaySnd]
@@ -1560,7 +1560,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = 35,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 1304, ChangeState]
@@ -1949,7 +1949,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = -50,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 1402, ChangeState]
@@ -2296,7 +2296,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = -50,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 1452, ChangeState]

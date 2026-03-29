@@ -511,8 +511,8 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
-fall.recover = 0      ;40 ticks before p2 can recover from fall
+fall = 1 ;Make p2 fall down
+fall.recover = 0 ;40 ticks before p2 can recover from fall
 
 [State 1051, 3]
 type = HitDef
@@ -543,7 +543,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 0, ChangeAnim]
@@ -692,8 +692,8 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
-fall.recover = 0      ;40 ticks before p2 can recover from fall
+fall = 1 ;Make p2 fall down
+fall.recover = 0 ;40 ticks before p2 can recover from fall
 
 [State 1051, 3]
 type = HitDef
@@ -724,7 +724,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 0, ChangeAnim]
@@ -875,8 +875,8 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
-fall.recover = 0      ;40 ticks before p2 can recover from fall
+fall = 1 ;Make p2 fall down
+fall.recover = 0 ;40 ticks before p2 can recover from fall
 
 [State 0, ChangeAnim]
 type = ChangeAnim
@@ -978,12 +978,12 @@ value = 0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  animelem = 6
+trigger1 = animelem = 6
 x = ifelse(anim=1105,25, ifelse(anim=1125, 40, 30))
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  animelem = 9
+trigger1 = animelem = 9
 x = 0
 
 [State 0, PlaySnd]
@@ -1898,7 +1898,7 @@ velset = 0,0
 type = ChangeState
 triggerall = time = 0
 triggerall = authorname = "GM"
-trigger1 = name = "Ryu" || name = "Ken"  || name = "Gouki" || name = "Alex" || name = "Hugo"
+trigger1 = name = "Ryu" || name = "Ken" || name = "Gouki" || name = "Alex" || name = "Hugo"
 trigger2 = name = "Ibuki" || name = "Gill"
 value = 5600
 

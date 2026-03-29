@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;NORMAL MOVES=
@@ -1167,7 +1167,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  animelem = 2
+trigger1= animelem = 2
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF
@@ -2448,10 +2448,10 @@ value = 5050
 ;Thrown by Kung Fu Throw - thrown into the air
 ; (a custom gethit state)
 ; Description: This state has the opponent flying through the air and
-;     falling down onto the ground. The SelfState controller sets the
-;     opponent back using to his own state file when he his the ground.
-;     Controllers 821,2 and 821,3 allow the opponent to recover by
-;     hitting his recovery command when he is falling.
+; falling down onto the ground. The SelfState controller sets the
+; opponent back using to his own state file when he his the ground.
+; Controllers 821,2 and 821,3 allow the opponent to recover by
+; hitting his recovery command when he is falling.
 [Statedef 812]
 ;type = A
 movetype= H

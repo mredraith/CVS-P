@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Decapre by varo_hades                   |
+;| Decapre by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -169,17 +169,17 @@ size.yscale = 0.6
 [State 3000, Flames]
 type = explod
 trigger1 = animelemtime(4) >= 0 && Time%3 = 0
-anim        = 8150
-ID          = 8150
+anim = 8150
+ID = 8150
 sprpriority = 3
-postype     = p1
-pos         = -20,-55
-random      = 48,48
-vel         = -(random/250.0), (random/250.0)
-facing      = ifelse(random<500, -1, 1)
-vfacing     = ifelse(random<500, -1, 1)
-scale       =.5,.5
-ownpal      = 1
+postype = p1
+pos = -20,-55
+random = 48,48
+vel = -(random/250.0), (random/250.0)
+facing = ifelse(random<500, -1, 1)
+vfacing = ifelse(random<500, -1, 1)
+scale =.5,.5
+ownpal = 1
 
 [State 3000, HitDef 1]
 type = HitDef
@@ -479,17 +479,17 @@ size.yscale = 0.6
 [State 3050, Flames]
 type = explod
 trigger1 = animelemtime(4) >= 0 && Time%3 = 0
-anim        = 8150
-ID          = 8150
+anim = 8150
+ID = 8150
 sprpriority = 3
-postype     = p1
-pos         = -20,-55
-random      = 48,48
-vel         = -(random/250.0), (random/250.0)
-facing      = ifelse(random<500, -1, 1)
-vfacing     = ifelse(random<500, -1, 1)
-scale       =.5,.5
-ownpal      = 1
+postype = p1
+pos = -20,-55
+random = 48,48
+vel = -(random/250.0), (random/250.0)
+facing = ifelse(random<500, -1, 1)
+vfacing = ifelse(random<500, -1, 1)
+scale =.5,.5
+ownpal = 1
 
 [State 3050, HitDef 1]
 type = HitDef
@@ -1646,17 +1646,17 @@ size.yscale = 0.4
 [State 3202, Flames]
 type = explod
 trigger1 = animelemtime(1) >= 0 && Time%3 = 0
-anim        = 8150
-ID          = 8150
+anim = 8150
+ID = 8150
 sprpriority = 3
-postype     = p1
-pos         = 15,-20
-random      = 48,48
-vel         = -(random/250.0), (random/250.0)
-facing      = ifelse(random<500, -1, 1)
-vfacing     = ifelse(random<500, -1, 1)
-scale       =.5,.5
-ownpal      = 1
+postype = p1
+pos = 15,-20
+random = 48,48
+vel = -(random/250.0), (random/250.0)
+facing = ifelse(random<500, -1, 1)
+vfacing = ifelse(random<500, -1, 1)
+scale =.5,.5
+ownpal = 1
 
 ;FX
 [Statedef 7560]
@@ -1670,8 +1670,8 @@ sprpriority = 5
 [State 7560, Trans]
 type = Trans
 trigger1 = 1
-trans    = Addalpha
-alpha    = 256,256
+trans = Addalpha
+alpha = 256,256
 
 [State 7560, Bind]
 type=BindToParent
@@ -1679,7 +1679,7 @@ trigger1 = 1
 pos = ceil(40*const(size.xscale)),ceil(-60*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 7560, Assert]
 type = AssertSpecial
@@ -1751,17 +1751,17 @@ size.yscale = 0.4
 [State 3203, Flames]
 type = explod
 trigger1 = animelemtime(1) >= 0 && Time%3 = 0
-anim        = 8150
-ID          = 8150
+anim = 8150
+ID = 8150
 sprpriority = 3
-postype     = p1
-pos         = 15,-20
-random      = 48,48
-vel         = -(random/250.0), (random/250.0)
-facing      = ifelse(random<500, -1, 1)
-vfacing     = ifelse(random<500, -1, 1)
-scale       =.5,.5
-ownpal      = 1
+postype = p1
+pos = 15,-20
+random = 48,48
+vel = -(random/250.0), (random/250.0)
+facing = ifelse(random<500, -1, 1)
+vfacing = ifelse(random<500, -1, 1)
+scale =.5,.5
+ownpal = 1
 
 [State 3203, Fire1]
 type = Explod
@@ -1798,8 +1798,8 @@ sprpriority = 5
 [State 7570, Trans]
 type = Trans
 trigger1 = 1
-trans    = Addalpha
-alpha    = 256,256
+trans = Addalpha
+alpha = 256,256
 
 [State 7570, Bind]
 type=BindToParent
@@ -1807,7 +1807,7 @@ trigger1 = 1
 pos = ceil(40*const(size.xscale)),ceil(-60*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 7570, Assert]
 type = AssertSpecial
@@ -1960,17 +1960,17 @@ size.yscale = 0.4
 [State 3204, Flames]
 type = explod
 trigger1 = animelemtime(1) >= 0 && Time%3 = 0 && animelemtime(5) < 0
-anim        = 8150
-ID          = 8150
+anim = 8150
+ID = 8150
 sprpriority = 3
-postype     = p1
-pos         = 15,-20
-random      = 48,48
-vel         = -(random/250.0), (random/250.0)
-facing      = ifelse(random<500, -1, 1)
-vfacing     = ifelse(random<500, -1, 1)
-scale       =.5,.5
-ownpal      = 1
+postype = p1
+pos = 15,-20
+random = 48,48
+vel = -(random/250.0), (random/250.0)
+facing = ifelse(random<500, -1, 1)
+vfacing = ifelse(random<500, -1, 1)
+scale =.5,.5
+ownpal = 1
 
 [State 3204, Spark]
 type = Explod
@@ -2036,8 +2036,8 @@ sprpriority = 5
 [State 7580, Trans]
 type = Trans
 trigger1 = 1
-trans    = Addalpha
-alpha    = 256,256
+trans = Addalpha
+alpha = 256,256
 
 [State 7580, Bind]
 type=BindToParent
@@ -2045,7 +2045,7 @@ trigger1 = 1
 pos = ceil(40*const(size.xscale)),ceil(-60*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 7580, Assert]
 type = AssertSpecial
@@ -2177,7 +2177,7 @@ value = 5051
 
 [State 3207, 1] ;Change anim when done with transition
 type = ChangeAnim
-trigger1 = Time = 0     ;If no transition anim
+trigger1 = Time = 0 ;If no transition anim
 trigger1 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger1 = Anim != 5090 ;Not if hit off ground anim
 value = 5050

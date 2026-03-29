@@ -215,7 +215,7 @@ type = S
 movetype = A
 ctrl = 0
 sprpriority = 4
-juggle  = 2
+juggle = 2
 
 ;Projectile dont can be repeat
 [State 1005, Projectile Flag On]
@@ -297,7 +297,7 @@ ignorehitpause = 1
 [State 1005, Vel]
 type = velset
 trigger1 = !time && !prevstateno
-x = ifelse(var(10) = 2, 5, ifelse(var(10) = 1, 4.3, 4.3))  
+x = ifelse(var(10) = 2, 5, ifelse(var(10) = 1, 4.3, 4.3)) 
 y = -2.5
 
 [State 1005, High]
@@ -465,10 +465,10 @@ trigger1= FrontEdgeDist <= -60
 
 ;---------------------------------------------------------------------------------------
 [Statedef 1016]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 2
+juggle = 2
 velset = 0,0
 anim = 1016
 ctrl = 0
@@ -1216,7 +1216,7 @@ trigger2 = Target, Time <= 1 && !(Target, HitShakeOver)
 ;--------------------------------------------------------------------------------------
 ;Energy Wave (Diag-Up)
 [Statedef 1076]
-type    = S
+type = S
 movetype = A
 physics = N
 ctrl = 0
@@ -1301,7 +1301,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = ifelse(var(56)&&var(20),1.5,0)+-7, 0
 guard.velocity = ifelse(var(56)&&var(20),1.5,0)+-8
@@ -1390,7 +1390,7 @@ ignoreHitPause = 1
 ;--------------------------------------------------------------------------------------
 ;Energy Wave End
 [Statedef 1078]
-type    = S
+type = S
 movetype = I
 physics = N
 ctrl = 0
@@ -6637,7 +6637,7 @@ var(10) = Root, var(10)
 [State 1805, VelSet]
 type = VelSet
 trigger1 = 1
-x = ifElse(Root, StateNo =  193, 5.25, 3.25 + var(10))
+x = ifElse(Root, StateNo = 193, 5.25, 3.25 + var(10))
 
 [State 1805, Counter Flag]
 type = VarSet
@@ -7004,7 +7004,7 @@ ignorehitpause=1
 
 [State 1825, VelSet]
 type = VelSet
-trigger1 =  1
+trigger1 = 1
 x = 4 + (var(10) * 1.125)
  
 [State 1825, Vel]
@@ -7297,7 +7297,7 @@ ignorehitpause = 1
 
 [State 1825, VelSet]
 type = VelSet
-trigger1 =  1
+trigger1 = 1
 x = 4 + (var(10) * 1.125)
  
 [State 1825, Vel]
@@ -8860,7 +8860,7 @@ type = BindToRoot
 trigger1 = 1
 time = 1
 pos = 0,0
-ignorehitpause =  1
+ignorehitpause = 1
 
 [State 3105, ChangeAnim]
 type=ChangeAnim
@@ -10057,7 +10057,7 @@ fall.animtype = Up
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5,-8
 air.velocity = -5,-8
@@ -10182,7 +10182,7 @@ fall.animtype = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -1, -0.7
 air.velocity = -1.4,-0.4
@@ -10228,7 +10228,7 @@ fall.animtype = Diagup
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -1, -0.7
 air.velocity = -1.4,-0.4
@@ -10306,7 +10306,7 @@ sprpriority = 4
 [State 7050, ParentVarAdd]
 type = ParentVarAdd
 trigger1 = movehit
-v = 51    ;fv =
+v = 51 ;fv =
 value = 7050
 
 [State 7050, BindToParent]
@@ -10318,7 +10318,7 @@ pos = ifelse(parent,stateno=1103,42,52), ifelse(parent,stateno=1103,-95,-68)
 [State 7050, ParentVarSet]
 type = ParentVarSet
 trigger1 = movehit = 1
-v = 28    ;fv =
+v = 28 ;fv =
 value = 1
 
 [State 7050, AssertSpecial]
@@ -10328,8 +10328,8 @@ flag = noshadow
 
 [State 7050, StateTypeSet]
 type = StateTypeSet
-trigger1 =  parent,var(51) != 11
-movetype = I        ;I,A,H
+trigger1 = parent,var(51) != 11
+movetype = I ;I,A,H
 
 [State 7050, 1]
 type = HitDef
@@ -10351,7 +10351,7 @@ guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
 guard.sparkno = 7052
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -10383,7 +10383,7 @@ guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
 guard.sparkno = 7052
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -10415,7 +10415,7 @@ guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
 guard.sparkno = 7052
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -10451,7 +10451,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10484,7 +10484,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10517,7 +10517,7 @@ hitsound = s45,11 ;2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10550,7 +10550,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10583,7 +10583,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10616,7 +10616,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10644,7 +10644,7 @@ time = 1
 [State 7050, HitOverride]
 type = HitOverride
 trigger1 = 1
-attr = SCA,NP,SP,HP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SCA,NP,SP,HP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 slot = 0
 stateno = 7052
 time = 1
@@ -10670,8 +10670,8 @@ sprpriority = 4
 
 [State 70500, StateTypeSet]
 type = StateTypeSet
-trigger1 =  parent,var(51) != 11
-movetype = I        ;I,A,H
+trigger1 = parent,var(51) != 11
+movetype = I ;I,A,H
 
 [State 70500, BindToParent]
 type = BindToParent
@@ -10682,7 +10682,7 @@ pos = 52,-68
 [State 70500, ParentVarSet]
 type = ParentVarSet
 trigger1 = movehit = 1
-v = 28    ;fv =
+v = 28 ;fv =
 value = 1
 
 [State 70500, AssertSpecial]
@@ -10709,7 +10709,7 @@ guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
 guard.sparkno = 7052
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -10740,7 +10740,7 @@ guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
 guard.sparkno = 7052
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -10771,7 +10771,7 @@ guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
 guard.sparkno = 7052
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -10807,7 +10807,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10840,7 +10840,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10873,7 +10873,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10906,7 +10906,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10939,7 +10939,7 @@ guardsound = S45,15+random%2;s6,0
 guard.sparkno = 7052
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -10972,7 +10972,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11000,7 +11000,7 @@ time = 1
 [State 70500, HitOverride]
 type = HitOverride
 trigger1 = 1
-attr = SCA,NP,SP,HP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SCA,NP,SP,HP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 slot = 0
 stateno = 7052
 time = 1
@@ -11026,7 +11026,7 @@ sprpriority = 3
 [State 7051, ParentVarSet]
 type = ParentVarSet
 trigger1 = movehit
-v = 51    ;fv =
+v = 51 ;fv =
 value = 7051
 
 [State 7051, 1]
@@ -11048,7 +11048,7 @@ guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
 guard.sparkno = 7052
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -11067,7 +11067,7 @@ ctrl = 0
 [State 7051, ParentVarSet]
 type = ParentVarSet
 trigger1 = movehit = 1
-v = 28    ;fv =
+v = 28 ;fv =
 value = 1
 
 [State 7051, AssertSpecial]
@@ -11084,7 +11084,7 @@ time = 1
 [State 7051, HitOverride]
 type = HitOverride
 trigger1 = 1
-attr = SCA,NP,SP,HP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SCA,NP,SP,HP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 slot = 0
 stateno = 7052
 time = 1
@@ -11121,7 +11121,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11153,7 +11153,7 @@ hitsound = s45,11; 2
 guardsound = s6, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11185,7 +11185,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11217,7 +11217,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11249,7 +11249,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11281,7 +11281,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11313,7 +11313,7 @@ hitsound = s45,2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -11348,7 +11348,7 @@ hitsound = s45, 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -11379,7 +11379,7 @@ hitsound = s45, 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -11415,13 +11415,13 @@ ctrl = 0
 [State 70511, ParentVarSet]
 type = ParentVarSet
 trigger1 = movehit
-v = 51    ;fv =
+v = 51 ;fv =
 value = 70511
 
 [State 70511, ParentVarSet]
 type = ParentVarSet
 trigger1 = movehit = 1
-v = 28    ;fv =
+v = 28 ;fv =
 value = 1
 
 [State 70511, AssertSpecial]
@@ -11438,7 +11438,7 @@ time = 1
 [State 70511, HitOverride]
 type = HitOverride
 trigger1 = 1
-attr = SCA,NP,SP,HP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SCA,NP,SP,HP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 slot = 0
 stateno = 7052
 time = 1
@@ -11474,7 +11474,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11505,7 +11505,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11536,7 +11536,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11567,7 +11567,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11598,7 +11598,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11629,7 +11629,7 @@ hitsound = s45,11; 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11660,7 +11660,7 @@ hitsound = s45,2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -11694,7 +11694,7 @@ hitsound = s45, 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -11724,7 +11724,7 @@ hitsound = s45, 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 airguard.velocity = -1.9,-.8
@@ -11760,7 +11760,7 @@ ctrl = 0
 [State 70510, ParentVarSet]
 type = ParentVarSet
 trigger1 = movehit = 1
-v = 28    ;fv =
+v = 28 ;fv =
 value = 1
 
 [State 70510, AssertSpecial]
@@ -11777,7 +11777,7 @@ time = 1
 [State 70510, HitOverride]
 type = HitOverride
 trigger1 = 1
-attr = SCA,NP,SP,HP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+attr = SCA,NP,SP,HP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 slot = 0
 stateno = 7052
 time = 1
@@ -11811,7 +11811,7 @@ hitsound = s45, 2
 guardsound = S45,15+random%2;s6,0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -11926,7 +11926,7 @@ trigger1 = time = 0
 anim = 705222
 ID = 705222
 pos = 20,-68
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -11992,7 +11992,7 @@ trigger1 = AnimTime = 0
 type = S
 movetype = H
 physics = N
-juggle  = 1
+juggle = 1
 velset = 0,0
 ctrl = 0
 poweradd = 0
@@ -12069,7 +12069,7 @@ trigger1 = time = 0
 anim = 705222
 ID = 7052
 pos = 20,-68
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -12124,10 +12124,10 @@ value = 7055
 [State 7055, Explod]
 type = null ;Explod
 trigger1 = time = 0
-anim = 705222   ;;;Problem with Ermac ;Odb718
+anim = 705222 ;;;Problem with Ermac ;Odb718
 ID = 7052
 pos = 20,-68
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -12186,7 +12186,7 @@ trigger1 = time = 0
 anim = 705222
 ID = 7052
 pos = 20,-68
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -12240,7 +12240,7 @@ trigger1 = time = 0
 anim = 705222
 ID = 7052
 pos = 20,-68
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -12299,7 +12299,7 @@ trigger1 = time = 0
 anim = 705222
 ID = 7052
 pos = 20,-68
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -15412,7 +15412,7 @@ trigger1= roundstate!=3
 ;KO CAMERA FOCUS=
 [Statedef 8998]
 type = S
-physics  = N;S
+physics = N;S
 anim = 0
 ctrl = 0
 

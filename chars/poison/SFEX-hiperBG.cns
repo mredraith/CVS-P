@@ -11,14 +11,14 @@ trigger1 = Time = 0
 var(2) = root, ID 
 
 [State 8500, 9] ;Sem fundo e frente
-type        = AssertSpecial 
+type = AssertSpecial 
 trigger1 = 1
 flag = noBG 
 flag2 = noFG 
 ignorehitpause = 1
 
 [State 8500, 9] ;Efeito de fundo azul (com partner)
-type     = PalFx
+type = PalFx
 triggerall = numpartner != 0
 trigger1 = partner, stateno!=[4400,4499]
 trigger1 = (time%30)=0
@@ -27,7 +27,7 @@ sinadd = ceil(random/16),ceil(random/16),ceil(random/16),50
 add = 0,0,0
 
 [State 8500, 9] ;Efeito de fundo azul (sem partner)
-type     = PalFx
+type = PalFx
 triggerall = numpartner != 0
 trigger1 = partner, stateno=[4400,4499]
 trigger2 = partner, life=0
@@ -37,7 +37,7 @@ add = 0,0,0
 sinadd = 0,0,100,50
 
 [State 8500, 9] ;Efeito de fundo azul (sem partner)
-type     = PalFx
+type = PalFx
 triggerall = numpartner = 0
 trigger1 = (time%30)=0
 time = 30
@@ -45,7 +45,7 @@ add = 0,0,0
 sinadd = 0,0,100,50
 
 [State 8500, 9] ;animação de fundo
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8510)=0
 anim = f400;8510 
 postype = left
@@ -58,7 +58,7 @@ scale= const(size.xscale),const(size.yscale)*1.5;2
 bindtime = -1
 
 [State 8500, 9] ;animação de fundo
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8511)=0
 anim = f401;8511
 postype = right
@@ -72,7 +72,7 @@ bindtime = -1
 facing=-1
 
 [State 8500, 9] ;animação de fundo
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8500)=0
 anim = f401;8511 
 postype = left
@@ -86,7 +86,7 @@ bindtime = -1
 vfacing=-1
 
 [State 8500, 9] ;animação de fundo
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8513)=0
 anim = f400;8510
 postype = right
@@ -129,7 +129,7 @@ physics = N
 anim = 8550
 
 [State 8500, 9] ;Efeito de fundo
-type     = allPalFx
+type = allPalFx
 trigger1 = time=0;(time%20)=0
 time = 45;70
 add = 0,0,0

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -133,7 +133,7 @@ value = 20
 [State 20, Anim]
 type = changeanim
 triggerall = command = "holdback"
-trigger1 =  anim != 21 && anim != 5
+trigger1 = anim != 21 && anim != 5
 trigger2 = anim = 5 && animelemtime(1) >= 1
 value = 21
 
@@ -375,7 +375,7 @@ ctrl = 1
 
 ; RUN_FWD
 [Statedef 100]
-type    = S
+type = S
 physics = S
 anim = 100
 sprpriority = 1
@@ -447,7 +447,7 @@ value = 40
 
 [State 100,8]				;when running press down, then 102. if normal stand to crouch, no 102.
 type = ChangeState
-trigger1 = command =  "holddown"
+trigger1 = command = "holddown"
 value = 101
 ctrl = 0
 
@@ -2543,7 +2543,7 @@ name = "Invisible Timer"
 ID = 197
 stateno = 197
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -2889,7 +2889,7 @@ value=7828
 ;OFF SCREEN RUN IN==
 ;Off Screen Run In
 [Statedef 7828]
-type   =S
+type =S
 physics=S
 anim=100
 ctrl=0
@@ -2934,7 +2934,7 @@ ctrl=0
 ;OFF SCREEN RUN STOP==
 ;Off Screen Run Stop
 [Statedef 7829]
-type   =S
+type =S
 physics=S
 anim=101
 ctrl=0
@@ -2962,7 +2962,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ; Stand get-hit (shaking)
 [Statedef 5000]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -3038,7 +3038,7 @@ value = 5030
 ;---------------------------------------------------------------------------
 ; Stand get-hit (knocked back)
 [Statedef 5001]
-type    = S
+type = S
 movetype= H
 physics = S
 
@@ -3076,7 +3076,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouch get-hit (shaking)
 [Statedef 5010]
-type    = C
+type = C
 movetype= H
 physics = N
 velset = 0,0
@@ -3148,7 +3148,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Crouch get-hit (knocked back)
 [Statedef 5011]
-type    = C
+type = C
 movetype= H
 physics = C
 
@@ -3186,7 +3186,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Air get-hit (shaking)
 [Statedef 5020]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3250,7 +3250,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Air get-hit (knocked away)
 [Statedef 5030]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -3276,7 +3276,7 @@ y = 1
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5040 ;HITA_RECOV
 
@@ -3284,7 +3284,7 @@ value = 5040 ;HITA_RECOV
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5050 ;HITA_FALL
 
@@ -3296,7 +3296,7 @@ value = 5035 ;Air get-hit (transition)
 ;---------------------------------------------------------------------------
 ; Air get-hit (transition)
 [Statedef 5035]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3316,29 +3316,29 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;Air get-hit (recovering in air, not falling)
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5050 ;Air get-hit (falling)
 
 ;---------------------------------------------------------------------------
 ; Air get-hit (recovering in air, not falling)
 [Statedef 5040]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3380,7 +3380,7 @@ value = 52 ;Jump land
 ;---------------------------------------------------------------------------
 ; Air get-hit (falling)
 [Statedef 5050]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3388,7 +3388,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -3433,7 +3433,7 @@ value = 5100 ;Downed get-hit (hit ground from fall)
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (shaking)
 [Statedef 5070]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3458,7 +3458,7 @@ ampl = 140
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (knocked away)
 [Statedef 5071]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3482,7 +3482,7 @@ value = 5110
 ;---------------------------------------------------------------------------
 ; Downed get-hit (shaking)
 [Statedef 5080]
-type    = L
+type = L
 movetype= H
 physics = N
 velset = 0,0
@@ -3526,7 +3526,7 @@ value = 5030 ;Air get-hit (knocked away)
 ;---------------------------------------------------------------------------
 ; Downed get-hit (knocked back)
 [Statedef 5081]
-type    = L
+type = L
 movetype= H
 physics = C
 
@@ -3553,7 +3553,7 @@ value = 5110 ;Downed get-hit (lying down)
 ;---------------------------------------------------------------------------
 ; Downed get-hit (hit ground from fall)
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3644,7 +3644,7 @@ time = 20
 ;---------------------------------------------------------------------------
 ; Downed get-hit (bounce off ground)
 [Statedef 5101]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3690,7 +3690,7 @@ value = 5110
 ;---------------------------------------------------------------------------
 ; Downed get-hit (lying down)
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3817,7 +3817,7 @@ waveform = sine
 ;---------------------------------------------------------------------------
 ; Downed get-hit (getting up)
 [Statedef 5120]
-type    = L
+type = L
 movetype= I
 physics = N
 
@@ -3872,7 +3872,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Downed get-hit (lying defeated)
 [Statedef 5150]
-type    = L
+type = L
 movetype= H
 physics = N
 sprpriority = -3
@@ -3941,7 +3941,7 @@ time = 1
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery on ground; still falling)
 [Statedef 5200]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3965,7 +3965,7 @@ value = 5201
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery on ground)
 [Statedef 5201]
-type    = A
+type = A
 movetype= H
 physics = A
 anim = 5200
@@ -4008,7 +4008,7 @@ sprpriority = -10
 ;---------------------------------------------------------------------------
 ; Air get-hit (fall recovery in air)
 [Statedef 5210]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 5210
@@ -4198,7 +4198,7 @@ trigger1 = time >= 28;---make the time match the time in the pause code above
 [State -2, Var15 set]
 ;set var(15) is 0 when the round is start
 type = VarSet
-trigger1 = RoundState < 2         	;--�аѦ�data\triggers.txt��������
+trigger1 = RoundState < 2 	;--�аѦ�data\triggers.txt��������
 v = 15
 value = 0
 
@@ -4267,7 +4267,7 @@ trigger1 = prevstateno = [5000,5099]
 trigger1 = HitShakeOver = 0
 v = 44
 ignorehitpause = 0
-value = -15                 ;##21#
+value = -15 ;##21#
 
 [State -2, Var set]
 type = VarAdd

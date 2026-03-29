@@ -1,6 +1,6 @@
-;                          ____________________
+; ____________________
 ;|Terry Bogard by Memo|=
-;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;NORMAL MOVES=
 ;
@@ -1194,7 +1194,7 @@ trigger1 = Pos Y >= 0 && Vel Y > 0
 value=252
 
 ;---------------------------------------------------------------------------
-; Standing Close Strong  Kick
+; Standing Close Strong Kick
 [Statedef 251]
 type = S
 physics = S
@@ -2650,7 +2650,7 @@ ground.velocity = ifElse(var(20), -2.41, -5.49), 0
 ground.cornerPush.velOff = 0
 guard.velocity = ifElse(var(20), -4.86, -10.52)
 guard.cornerPush.velOff = 0
-air.velocity =  -6.4, -4.8
+air.velocity = -6.4, -4.8
 air.cornerPush.velOff = 0
 airguard.velocity = -5, 0
 airguard.cornerPush.velOff = 0
@@ -2750,7 +2750,7 @@ ground.velocity = ifElse(var(20), -2.41, -5.49), 0
 ground.cornerPush.velOff = 0
 guard.velocity = ifElse(var(20), -4.86, -10.52)
 guard.cornerPush.velOff = 0
-air.velocity =  -6.4, -4.8
+air.velocity = -6.4, -4.8
 air.cornerPush.velOff = 0
 airguard.velocity = -5, 0
 airguard.cornerPush.velOff = 0

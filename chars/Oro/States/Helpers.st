@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Oro by varo_hades                       |
+;| Oro by varo_hades |
 ; 
 ;
 ;HELPER STATES=
@@ -1190,7 +1190,7 @@ name = "34411"
 ID = 34300
 stateno = 34411
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1211,7 +1211,7 @@ name = "34401"
 ID = 34300
 stateno = 34401
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1231,7 +1231,7 @@ name = "34300"
 ID = 34300
 stateno = 34300
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1286,7 +1286,7 @@ name = "34630"
 ID = 34630
 stateno = 34630
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1305,7 +1305,7 @@ name = "34330"
 ID = 34330
 stateno = 34330
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1324,7 +1324,7 @@ name = "34320"
 ID = 34320
 stateno = 34320
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1345,7 +1345,7 @@ name = "34300"
 ID = 34300
 stateno = 34300
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1363,7 +1363,7 @@ name = "34550"
 ID = 34550
 stateno = 34550
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1382,7 +1382,7 @@ name = "34240"
 ID = 34240
 stateno = 34240
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1401,7 +1401,7 @@ name = "34510"
 ID = 34510
 stateno = 34510
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1419,7 +1419,7 @@ name = "34250"
 ID = 34250
 stateno = 34250
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1437,7 +1437,7 @@ name = "34260"
 ID = 34260
 stateno = 34260
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1455,7 +1455,7 @@ name = "34530"
 ID = 34530
 stateno = 34530
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1475,7 +1475,7 @@ name = "34200"
 ID = 34200
 stateno = 34200
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1499,7 +1499,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1670,7 +1670,7 @@ y = -1
 [State 34550, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -3
 
 [State 34550, VelSet]
@@ -1713,7 +1713,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -1851,7 +1851,7 @@ y = -1
 [State 34240, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -5
 
 [State 34240, VelSet]
@@ -2032,7 +2032,7 @@ y = -1
 [State 34510, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -5
 
 [State 34510, VelSet]
@@ -2075,7 +2075,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -2218,7 +2218,7 @@ y = -1
 [State 34250, VelSet]
 type = VelSet
 trigger1 = time >= 27
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -8
 
 [State 34250, VelSet]
@@ -2261,7 +2261,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -2448,7 +2448,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -2585,7 +2585,7 @@ y = -1
 [State 34530, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -3
 
 [State 34530, VelSet]
@@ -2628,7 +2628,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -2766,7 +2766,7 @@ y = -1
 [State 34300, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -5
 
 [State 34300, VelSet]
@@ -2809,7 +2809,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -2947,7 +2947,7 @@ y = -1
 [State 34200, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -5
 
 [State 34200, VelSet]
@@ -2990,7 +2990,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3128,7 +3128,7 @@ y = -2
 [State 34630, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -6                ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -6
 
 [State 34630, VelSet]
@@ -3171,7 +3171,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3309,7 +3309,7 @@ y = -1
 [State 34330, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -6                ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -10
 
 [State 34330, VelSet]
@@ -3352,7 +3352,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3490,7 +3490,7 @@ y = -1
 [State 34320, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -6                ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -10
 
 [State 34320, VelSet]
@@ -3533,7 +3533,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3656,7 +3656,7 @@ name = "34412"
 ID = 34301
 stateno = 34412
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3675,7 +3675,7 @@ name = "34402"
 ID = 34301
 stateno = 34402
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3694,7 +3694,7 @@ name = "34301"
 ID = 34301
 stateno = 34301
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3748,7 +3748,7 @@ name = "34631"
 ID = 34631
 stateno = 34631
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3766,7 +3766,7 @@ name = "34331"
 ID = 34331
 stateno = 34331
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3784,7 +3784,7 @@ name = "34321"
 ID = 34321
 stateno = 34321
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3804,7 +3804,7 @@ name = "34301"
 ID = 34301
 stateno = 34301
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3822,7 +3822,7 @@ name = "34551"
 ID = 34551
 stateno = 34551
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3841,7 +3841,7 @@ name = "34241"
 ID = 34241
 stateno = 34241
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3860,7 +3860,7 @@ name = "34511"
 ID = 34511
 stateno = 34511
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3878,7 +3878,7 @@ name = "34251"
 ID = 34251
 stateno = 34251
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3896,7 +3896,7 @@ name = "34261"
 ID = 34261
 stateno = 34261
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3914,7 +3914,7 @@ name = "34531"
 ID = 34531
 stateno = 34531
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3958,7 +3958,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4127,7 +4127,7 @@ y = -1
 [State 34551, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -6                  ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -3
 
 [State 34551, VelSet]
@@ -4170,7 +4170,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4308,7 +4308,7 @@ y = -1
 [State 34241, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -8                  ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -3
 
 [State 34241, VelSet]
@@ -4351,7 +4351,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4489,7 +4489,7 @@ y = -1
 [State 34511, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -14                  ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -3
 
 [State 34511, VelSet]
@@ -4532,7 +4532,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4670,7 +4670,7 @@ y = -1
 [State 34251, VelSet]
 type = VelSet
 trigger1 = time >= 27
-x = -6                ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -8
 
 [State 34251, VelSet]
@@ -4713,7 +4713,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -4857,7 +4857,7 @@ y = -2
 [State 34261, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -8                ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -8
 
 [State 34261, VelSet]
@@ -4900,7 +4900,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5037,7 +5037,7 @@ y = -1
 [State 34531, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -8                  ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -2
 
 [State 34531, VelSet]
@@ -5080,7 +5080,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5218,7 +5218,7 @@ y = -1
 [State 34301, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -8                  ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -3
 
 [State 34301, VelSet]
@@ -5261,7 +5261,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5399,7 +5399,7 @@ y = -1
 [State 34201, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -8                  ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -3
 
 [State 34201, VelSet]
@@ -5442,7 +5442,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5580,7 +5580,7 @@ y = -2
 [State 34631, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -6                ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -6
 
 [State 34631, VelSet]
@@ -5623,7 +5623,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5761,7 +5761,7 @@ y = -1
 [State 34331, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -6                ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -10
 
 [State 34331, VelSet]
@@ -5804,7 +5804,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -5942,7 +5942,7 @@ y = -1
 [State 34321, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -8                ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -10
 
 [State 34321, VelSet]
@@ -5985,7 +5985,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6108,7 +6108,7 @@ name = "34413"
 ID = 34302
 stateno = 34413
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6127,7 +6127,7 @@ name = "34403"
 ID = 34302
 stateno = 34403
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6146,7 +6146,7 @@ name = "34302"
 ID = 34302
 stateno = 34302
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6200,7 +6200,7 @@ name = "34632"
 ID = 34632
 stateno = 34632
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6218,7 +6218,7 @@ name = "34332"
 ID = 34332
 stateno = 34332
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6236,7 +6236,7 @@ name = "34322"
 ID = 34322
 stateno = 34322
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6256,7 +6256,7 @@ name = "34302"
 ID = 34302
 stateno = 34302
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6274,7 +6274,7 @@ name = "34552"
 ID = 34552
 stateno = 34552
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6410,7 +6410,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6580,7 +6580,7 @@ y = -1
 [State 34552, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -8             ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -5
 
 [State 34552, VelSet]
@@ -6623,7 +6623,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6761,7 +6761,7 @@ y = -1
 [State 34242, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14             ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -5
 
 [State 34242, VelSet]
@@ -6804,7 +6804,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -6942,7 +6942,7 @@ y = -1
 [State 34512, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14             ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -3
 
 [State 34512, VelSet]
@@ -6985,7 +6985,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -7123,7 +7123,7 @@ y = -1
 [State 34252, VelSet]
 type = VelSet
 trigger1 = time >= 27
-x = -20                ;(- 2 for front fast)
+x = -20 ;(- 2 for front fast)
 y = -8
 
 [State 34252, VelSet]
@@ -7166,7 +7166,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -7310,7 +7310,7 @@ y = -4
 [State 34262, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -18               ;(- 2 for front fast)
+x = -18 ;(- 2 for front fast)
 y = -10
 
 [State 34262, VelSet]
@@ -7353,7 +7353,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -7491,7 +7491,7 @@ y = -1
 [State 34532, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14             ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -3
 
 [State 34532, VelSet]
@@ -7534,7 +7534,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -7672,7 +7672,7 @@ y = -1
 [State 34302, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14           ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -5
 
 [State 34302, VelSet]
@@ -7715,7 +7715,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -7853,7 +7853,7 @@ y = -1
 [State 34202, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14           ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -5
 
 [State 34202, VelSet]
@@ -7896,7 +7896,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -8034,7 +8034,7 @@ y = -2
 [State 34632, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -6                ;(- 2 for front fast)
+x = -6 ;(- 2 for front fast)
 y = -6
 
 [State 34632, VelSet]
@@ -8077,7 +8077,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -8215,7 +8215,7 @@ y = -1
 [State 34332, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -12                ;(- 2 for front fast)
+x = -12 ;(- 2 for front fast)
 y = -10
 
 [State 34332, VelSet]
@@ -8258,7 +8258,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -8396,7 +8396,7 @@ y = -1
 [State 34322, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -14                ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -10
 
 [State 34322, VelSet]
@@ -8439,7 +8439,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -8667,7 +8667,7 @@ y = -1
 [State 34411, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -2                ;(- 2 for front fast)
+x = -2 ;(- 2 for front fast)
 y = -5
 
 [State 34411, VelSet]
@@ -8709,7 +8709,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -8847,7 +8847,7 @@ y = -1
 [State 34412, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -2                  ;(- 2 for front fast)
+x = -2 ;(- 2 for front fast)
 y = -3
 
 [State 34412, VelSet]
@@ -8889,7 +8889,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -9027,7 +9027,7 @@ y = -1
 [State 34413, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -2          ;(- 2 for front fast)
+x = -2 ;(- 2 for front fast)
 y = -5
 
 [State 34413, VelSet]
@@ -9081,7 +9081,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -9208,7 +9208,7 @@ y = -1
 [State 34414, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -2          ;(- 2 for front fast)
+x = -2 ;(- 2 for front fast)
 y = -5
 
 [State 34414, VelSet]
@@ -9262,7 +9262,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -9389,7 +9389,7 @@ y = -1
 [State 34415, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -2          ;(- 2 for front fast)
+x = -2 ;(- 2 for front fast)
 y = -5
 
 [State 34415, VelSet]
@@ -9443,7 +9443,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -9570,7 +9570,7 @@ y = -1
 [State 34401, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -3                ;(- 2 for front fast)
+x = -3 ;(- 2 for front fast)
 y = -5
 
 [State 34401, VelSet]
@@ -9613,7 +9613,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -9751,7 +9751,7 @@ y = -1
 [State 34402, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -8                  ;(- 2 for front fast)
+x = -8 ;(- 2 for front fast)
 y = -3
 
 [State 34402, VelSet]
@@ -9794,7 +9794,7 @@ name = "34105"
 ID = 34105
 stateno = 34105
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -9932,7 +9932,7 @@ y = -1
 [State 34403, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14           ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -5
 
 [State 34403, VelSet]
@@ -9986,7 +9986,7 @@ name = "34155"
 ID = 34155
 stateno = 34155
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10113,7 +10113,7 @@ y = -1
 [State 34404, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14           ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -5
 
 [State 34404, VelSet]
@@ -10167,7 +10167,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10294,7 +10294,7 @@ y = -1
 [State 34405, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -14           ;(- 2 for front fast)
+x = -14 ;(- 2 for front fast)
 y = -5
 
 [State 34405, VelSet]
@@ -10348,7 +10348,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10458,7 +10458,7 @@ name = "34055"
 ID = 34055
 stateno = 34055
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10578,7 +10578,7 @@ name = "34414"
 ID = 34303
 stateno = 34414
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10599,7 +10599,7 @@ name = "34404"
 ID = 34303
 stateno = 34404
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10619,7 +10619,7 @@ name = "34303"
 ID = 34303
 stateno = 34303
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10674,7 +10674,7 @@ name = "34633"
 ID = 34633
 stateno = 34633
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10693,7 +10693,7 @@ name = "34333"
 ID = 34333
 stateno = 34333
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10712,7 +10712,7 @@ name = "34323"
 ID = 34323
 stateno = 34323
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10733,7 +10733,7 @@ name = "34303"
 ID = 34303
 stateno = 34303
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10751,7 +10751,7 @@ name = "34553"
 ID = 34553
 stateno = 34553
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10770,7 +10770,7 @@ name = "34243"
 ID = 34243
 stateno = 34243
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10789,7 +10789,7 @@ name = "34513"
 ID = 34513
 stateno = 34513
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10807,7 +10807,7 @@ name = "34253"
 ID = 34253
 stateno = 34253
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10825,7 +10825,7 @@ name = "34263"
 ID = 34263
 stateno = 34263
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10843,7 +10843,7 @@ name = "34533"
 ID = 34533
 stateno = 34533
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10863,7 +10863,7 @@ name = "34203"
 ID = 34203
 stateno = 34203
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -10887,7 +10887,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -11045,7 +11045,7 @@ y = -2
 [State 34553, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -4                ;(- 2 for front fast)
+x = -4 ;(- 2 for front fast)
 y = -4
 
 [State 34553, VelSet]
@@ -11088,7 +11088,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -11226,7 +11226,7 @@ y = -2
 [State 34243, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -4                ;(- 2 for front fast)
+x = -4 ;(- 2 for front fast)
 y = -6
 
 [State 34243, VelSet]
@@ -11407,7 +11407,7 @@ y = -2
 [State 34513, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -4                ;(- 2 for front fast)
+x = -4 ;(- 2 for front fast)
 y = -6
 
 [State 34513, VelSet]
@@ -11450,7 +11450,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -11593,7 +11593,7 @@ y = -2
 [State 34253, VelSet]
 type = VelSet
 trigger1 = time >= 27
-x = -4                ;(- 2 for front fast)
+x = -4 ;(- 2 for front fast)
 y = -9
 
 [State 34253, VelSet]
@@ -11636,7 +11636,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -11823,7 +11823,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -11960,7 +11960,7 @@ y = -2
 [State 34533, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -4                ;(- 2 for front fast)
+x = -4 ;(- 2 for front fast)
 y = -4
 
 [State 34533, VelSet]
@@ -12003,7 +12003,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -12141,7 +12141,7 @@ y = -2
 [State 34303, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -4                ;(- 2 for front fast)
+x = -4 ;(- 2 for front fast)
 y = -6
 
 [State 34303, VelSet]
@@ -12184,7 +12184,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -12322,7 +12322,7 @@ y = -2
 [State 34203, VelSet]
 type = VelSet
 trigger1 = time >= 14
-x = -4                ;(- 2 for front fast)
+x = -4 ;(- 2 for front fast)
 y = -6
 
 [State 34203, VelSet]
@@ -12365,7 +12365,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -12503,7 +12503,7 @@ y = -3
 [State 34633, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -7                ;(- 2 for front fast)
+x = -7 ;(- 2 for front fast)
 y = -7
 
 [State 34633, VelSet]
@@ -12546,7 +12546,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -12684,7 +12684,7 @@ y = -2
 [State 34333, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -7                ;(- 2 for front fast)
+x = -7 ;(- 2 for front fast)
 y = -11
 
 [State 34333, VelSet]
@@ -12727,7 +12727,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -12865,7 +12865,7 @@ y = -2
 [State 34323, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -7                ;(- 2 for front fast)
+x = -7 ;(- 2 for front fast)
 y = -11
 
 [State 34323, VelSet]
@@ -12908,7 +12908,7 @@ name = "34165"
 ID = 34165
 stateno = 34165
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13091,7 +13091,7 @@ name = "34415"
 ID = 34304
 stateno = 34415
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13110,7 +13110,7 @@ name = "34405"
 ID = 34304
 stateno = 34405
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13129,7 +13129,7 @@ name = "34304"
 ID = 34304
 stateno = 34304
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13183,7 +13183,7 @@ name = "34634"
 ID = 34634
 stateno = 34634
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13201,7 +13201,7 @@ name = "34334"
 ID = 34334
 stateno = 34334
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13219,7 +13219,7 @@ name = "34324"
 ID = 34324
 stateno = 34324
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13239,7 +13239,7 @@ name = "34304"
 ID = 34304
 stateno = 34304
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13257,7 +13257,7 @@ name = "34554"
 ID = 34554
 stateno = 34554
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13393,7 +13393,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13563,7 +13563,7 @@ y = -2
 [State 34554, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -9             ;(- 2 for front fast)
+x = -9 ;(- 2 for front fast)
 y = -6
 
 [State 34554, VelSet]
@@ -13606,7 +13606,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13744,7 +13744,7 @@ y = -2
 [State 34244, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -15             ;(- 2 for front fast)
+x = -15 ;(- 2 for front fast)
 y = -6
 
 [State 34244, VelSet]
@@ -13787,7 +13787,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -13925,7 +13925,7 @@ y = -2
 [State 34514, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -15             ;(- 2 for front fast)
+x = -15 ;(- 2 for front fast)
 y = -4
 
 [State 34514, VelSet]
@@ -13968,7 +13968,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -14106,7 +14106,7 @@ y = -2
 [State 34254, VelSet]
 type = VelSet
 trigger1 = time >= 27
-x = -21                ;(- 2 for front fast)
+x = -21 ;(- 2 for front fast)
 y = -9
 
 [State 34254, VelSet]
@@ -14149,7 +14149,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -14293,7 +14293,7 @@ y = -5
 [State 34264, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -19               ;(- 2 for front fast)
+x = -19 ;(- 2 for front fast)
 y = -11
 
 [State 34264, VelSet]
@@ -14336,7 +14336,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -14474,7 +14474,7 @@ y = -2
 [State 34534, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -15             ;(- 2 for front fast)
+x = -15 ;(- 2 for front fast)
 y = -4
 
 [State 34534, VelSet]
@@ -14517,7 +14517,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -14655,7 +14655,7 @@ y = -2
 [State 34304, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -15           ;(- 2 for front fast)
+x = -15 ;(- 2 for front fast)
 y = -6
 
 [State 34304, VelSet]
@@ -14698,7 +14698,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -14836,7 +14836,7 @@ y = -2
 [State 34204, VelSet]
 type = VelSet
 trigger1 = time >= 11
-x = -15           ;(- 2 for front fast)
+x = -15 ;(- 2 for front fast)
 y = -6
 
 [State 34204, VelSet]
@@ -14879,7 +14879,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -15017,7 +15017,7 @@ y = -3
 [State 34634, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -7                ;(- 2 for front fast)
+x = -7 ;(- 2 for front fast)
 y = -7
 
 [State 34634, VelSet]
@@ -15060,7 +15060,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -15198,7 +15198,7 @@ y = -2
 [State 34334, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -13                ;(- 2 for front fast)
+x = -13 ;(- 2 for front fast)
 y = -11
 
 [State 34334, VelSet]
@@ -15241,7 +15241,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -15379,7 +15379,7 @@ y = -2
 [State 34324, VelSet]
 type = VelSet
 trigger1 = time >= 10
-x = -15                ;(- 2 for front fast)
+x = -15 ;(- 2 for front fast)
 y = -11
 
 [State 34324, VelSet]
@@ -15422,7 +15422,7 @@ name = "34175"
 ID = 34175
 stateno = 34175
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0

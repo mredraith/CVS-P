@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Axel Stone by Testament             |          |
+;| Axel Stone by Testament | |
 ; 
 ;==
 ;HELPER STATES
@@ -1933,7 +1933,7 @@ ignoreHitPause = 1
 ;==
 ;GALSIA Helper
 [Statedef 73000]
-type    = S
+type = S
 movetype= I
 physics = N
 anim = 73000
@@ -1994,7 +1994,7 @@ value = 73004
 ;--------------------------
 ;GALSIA bounce
 [Statedef 73004]
-type    = S
+type = S
 movetype= I
 physics = N
 anim = 73004
@@ -2024,7 +2024,7 @@ value = 73006
 ;--------------------------
 ;GALSIA on ground and rebounce
 [Statedef 73005]
-type    = S
+type = S
 movetype= I
 physics = N
 anim = 73000
@@ -2054,7 +2054,7 @@ value = 73006
 ;--------------------------
 ; sent out
 [Statedef 73006]
-type    = S
+type = S
 movetype= I
 physics = N
 anim = 73006

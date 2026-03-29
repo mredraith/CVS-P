@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Shingo Yabuki by Jmorphman              |
+;| Shingo Yabuki by Jmorphman |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -3421,7 +3421,7 @@ triggerAll = MoveContact = 1 && var(30) = HitPauseTime
 trigger1 = MoveHit = 1 && NumEnemy
 trigger1 = var(33) = 8010 || var(33) = 8011 || var(33) = 8012 || var(33) = 8013 || var(33) = 8014 || var(33) = 8020 || var(33) = 8001
 trigger2 = MoveGuarded = 1 && NumEnemy
-trigger2 = var(34) = 8000 || var(34) = 8001 || var(34) = 8005  || var(34) = 8006
+trigger2 = var(34) = 8000 || var(34) = 8001 || var(34) = 8005 || var(34) = 8006
 helperType = Normal
 stateNo = ifElse(MoveGuarded, var(34), var(33))
 ID = 8000

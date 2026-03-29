@@ -411,7 +411,7 @@ x = 0
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < HitCount + 5
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, SA
 hitFlag = MAF
 guardFlag = M
@@ -503,7 +503,7 @@ envShake.freq = 120
 [State 3100, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < HitCount + 5
-trigger1 =  AnimElem = 18
+trigger1 = AnimElem = 18
 attr = S, SA
 hitFlag = MAF
 guardFlag = M
@@ -866,7 +866,7 @@ x = 0
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < HitCount + 5
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, SA
 hitFlag = MAF
 guardFlag = M
@@ -958,7 +958,7 @@ envShake.freq = 120
 [State 3100, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < HitCount + 5
-trigger1 =  AnimElem = 18
+trigger1 = AnimElem = 18
 attr = S, SA
 hitFlag = MAF
 guardFlag = M

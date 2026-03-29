@@ -1,5 +1,5 @@
 ; _________________________________________
-;| B. B. Hood by varo_hades                |
+;| B. B. Hood by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -251,7 +251,7 @@ physics = N
 [State -2, EXFlash]
 type = palfx
 trigger1 = 1
-time =  30
+time = 30
 add = 220,100,90
 mul = 150,120,100
 SinAdd = 130,100,90,8
@@ -553,7 +553,7 @@ physics = N
 [State -2, EXFlash]
 type = palfx
 trigger1 = 1
-time =  30
+time = 30
 add = 220,100,90
 mul = 150,120,100
 SinAdd = 130,100,90,8

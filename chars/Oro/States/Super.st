@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Oro by varo_hades                       |
+;| Oro by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -158,7 +158,7 @@ guard.sparkno = -1
 hitsound = S2,6
 guardsound = S3,0
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 ground.velocity = -6
 air.velocity = -3.5,-8.5
 yaccel = 0.65
@@ -170,7 +170,7 @@ air.fall = 1
 fall.recover = 0
 projremove = 1
 projremovetime = 170
-velocity = 1.6, -1    ; 1.2,-1.2         ;1.6,-1
+velocity = 1.6, -1 ; 1.2,-1.2 ;1.6,-1
 accel = 0,0.015
 offset = 60,-40
 postype = p1
@@ -212,7 +212,7 @@ guard.sparkno = -1
 hitsound = S2,6
 guardsound = S3,0
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 ground.velocity = -6
 air.velocity = -3.5,-8.5
 yaccel = 0.65
@@ -266,7 +266,7 @@ guard.sparkno = -1
 hitsound = S2,6
 guardsound = S3,0
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 ground.velocity = -6
 air.velocity = -3.5,-8.5
 yaccel = 0.65
@@ -458,7 +458,7 @@ guard.sparkno = -1
 hitsound = S2,6
 guardsound = S3,0
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 ground.velocity = -6
 air.velocity = -3.5,-8.5
 yaccel = 0.65
@@ -470,7 +470,7 @@ air.fall = 1
 fall.recover = 0
 projremove = 1
 projremovetime = 170
-velocity = 1.6, -1    ; 1.2,-1.2         ;1.6,-1
+velocity = 1.6, -1 ; 1.2,-1.2 ;1.6,-1
 accel = 0,0.015
 offset = 60,-40
 postype = p1
@@ -512,7 +512,7 @@ guard.sparkno = -1
 hitsound = S2,6
 guardsound = S3,0
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 ground.velocity = -6
 air.velocity = -3.5,-8.5
 yaccel = 0.65
@@ -566,7 +566,7 @@ guard.sparkno = -1
 hitsound = S2,6
 guardsound = S3,0
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 ground.velocity = -6
 air.velocity = -3.5,-8.5
 yaccel = 0.65
@@ -875,7 +875,7 @@ name = "Yagyou Oodama Projectile"
 ID = 3105
 stateno = 3105
 pos = 75,-32
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1158,7 +1158,7 @@ name = "Yagyou Oodama Projectile"
 ID = 3105
 stateno = 3155
 pos = 75,-32
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1766,7 +1766,7 @@ ctrl = 0
 type = A
 movetype = H
 physics = N
-juggle  = 0
+juggle = 0
 ctrl = 0
 
 [State 3235, LifeAdd]
@@ -1943,12 +1943,12 @@ juggle = 0
 
 [State 3320, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 1,0
 
 [State 3320, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 4,1
 
 [State 3320, 1]
@@ -2209,12 +2209,12 @@ poweradd = 0
 
 [State 3340, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 1,0
 
 [State 3340, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 4,1
 
 [State 3340, 1]
@@ -2253,7 +2253,7 @@ juggle = 0
 [State 3360, VarSet]
 type = null;VarSet
 trigger1 = 1
-v = 46    ;fv = 10
+v = 46 ;fv = 10
 value = 0
 
 [State 3360, TargetBind]
@@ -3100,7 +3100,7 @@ name = "3415"
 ID = 3415
 stateno = 3415
 pos = -60,-105
-postype = back;p1    ;p2,front,back,left,right
+postype = back;p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -3341,7 +3341,7 @@ name = "3415"
 ID = 3415
 stateno = 3415
 pos = -60,-105
-postype = back;p1    ;p2,front,back,left,right
+postype = back;p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0

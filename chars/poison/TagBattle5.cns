@@ -1,9 +1,9 @@
 ; Quem_sou_eu [Var(39)]: 0-Morto, 1-Primeiro, 2-Segundo
 ; Colaborao [Var(38)]: 1-Lutar s, 2-Duplo Especial, 3-Um Ataque, 4-Counter, 5-Cross
 ; Vez na luta [Var(37)]: 1-Primeiro, 2-Segundo
-; Temporrio  [Var(36)]: Tipo de ajuda ou durao do Double Dragon Cross
-;             [Var(35)]: 0-Probe sair de tela, 1-Permite sair de tela
-; P3 life     [Var(34)]: Memoriza a vida ou durao do Double Dragon Cross
+; Temporrio [Var(36)]: Tipo de ajuda ou durao do Double Dragon Cross
+; [Var(35)]: 0-Probe sair de tela, 1-Permite sair de tela
+; P3 life [Var(34)]: Memoriza a vida ou durao do Double Dragon Cross
 ; Recuperao [Var(33)]: Memoriza a vida ou durao do Double Dragon Cross
 
 
@@ -76,7 +76,7 @@ ctrl= ctrl
 ;----------------------------------------------------
 
 [Statedef 4402]; partner pula fora
-type    = A
+type = A
 movetype= I
 physics = N
 
@@ -85,7 +85,7 @@ type = Changeanim
 trigger1 = partner, var(37)!=var(39)
 trigger1 = partner, var(38)=3 
 triggerall = SelfAnimExist(195)
-value = 195    ; Tentativa de provocao padro
+value = 195 ; Tentativa de provocao padro
 
 [State 4402, 3] ; spark
 type = Explod 
@@ -146,7 +146,7 @@ ctrl = 0
 
 
 [Statedef 4404]; partner Espera fora da tela (agarrado)
-type    = S
+type = S
 physics = N
 ctrl = 0
 VelSet = 0,0
@@ -301,7 +301,7 @@ value = 4412
 
 ;***********
 [Statedef 4412]; Player pula fora
-type    = A
+type = A
 movetype= I
 physics = N
 
@@ -363,7 +363,7 @@ value = 4414
 ctrl = 0
 
 [Statedef 4414]; Player Espera fora da tela (agarrado)
-type    = S
+type = S
 physics = N
 ctrl = 0
 VelSet = 0,0
@@ -543,8 +543,8 @@ sound = 20, 0
 darken = 1
 
 [State 4423, 4] ;Zoom Portrait
-type        = Explod 
-trigger1    = Time = [0,10] 
+type = Explod 
+trigger1 = Time = [0,10] 
 anim = 4465
 postype = back 
 ID = 4465
@@ -555,8 +555,8 @@ scale = 3 - (time * 0.15), 3 - (time * 0.15)
 pos = 0,60-time * 5 
 
 [State 4423, 5] ;Portrait
-type        = Explod 
-trigger1    = Time = 11 
+type = Explod 
+trigger1 = Time = 11 
 anim = 4465
 postype = back 
 ID = 10000 
@@ -709,24 +709,24 @@ ctrl=1
 [State 4426,5]
 type = SelfState
 trigger1 = SelfAnimExist(1000); default attempt of "alpha" attack 
-value = 1000    ; Tentativa de ataque "alfa" padro
+value = 1000 ; Tentativa de ataque "alfa" padro
 ctrl=1
 
 [State 4426,6]
 type = SelfState
 trigger1 = SelfAnimExist(195); default attempt of taunt
-value = 195    ; Tentativa de provocao padro
+value = 195 ; Tentativa de provocao padro
 ctrl=1
 
 [State 4426,7]
 type = SelfState
 trigger1 = 1; default attempt of return, if all fail
-value = 0    ; Se tudo mais falhar, retorne
+value = 0 ; Se tudo mais falhar, retorne
 ctrl=1
 
 
 [Statedef 4430]; entra na tela com pulo (P3)
-type    = A
+type = A
 movetype= I
 physics = N
 ctrl = 0
@@ -774,7 +774,7 @@ value = 50
 ctrl = 1
 
 [Statedef 4440]; Voadora de Entrada
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 10,4
@@ -833,16 +833,16 @@ time = 20
 type = HitDef
 trigger1 = !movecontact
 attr = S, ST
-damage   = 23
+damage = 23
 animtype = Up
 guardflag = MA
 pausetime = 7, 7
-sparkxy =  -10,-50
-hitsound   = 5,2
+sparkxy = -10,-50
+hitsound = 5,2
 guardsound = 6,0
 ground.type = High
 ground.slidetime = 13
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -2,-14
 air.type = Low
@@ -924,7 +924,7 @@ ctrl = 1
 
 
 [Statedef 4450]; Afastamento
-type    = A
+type = A
 movetype= I
 physics = A
 facep2 = 1
@@ -946,13 +946,13 @@ flag = noshadow
 [State 4450, 3]
 type = ChangeState
 triggerall = var(35) >= 0;passando do fim de uma possvel tela, v pra espera
-trigger1 = P2dist x > 320;  mas s se deixar, pra no repetir
+trigger1 = P2dist x > 320; mas s se deixar, pra no repetir
 value = 4452
 ctrl = 0
 
 
 [Statedef 4452];Aguardar a vez
-type    = S
+type = S
 physics = S
 ctrl = 0
 anim = 11
@@ -972,7 +972,7 @@ x = 0
 [State 4452, 3]
 type = PosSet
 trigger1 = roundstate = 2; Se ainda for necessrio esperar pela vez
-y = 240                    ; nmero pra teste. o correto  240
+y = 240 ; nmero pra teste. o correto 240
 
 [State 4452, 4]
 type = Lifeadd
@@ -986,8 +986,8 @@ var(38) = 1
 
 [State 4452, 6]
 type = ChangeState
-trigger1 = Pos y = 239; 239  umas das indicaes que o outro
-value = 0             ; Player consegue ler
+trigger1 = Pos y = 239; 239 umas das indicaes que o outro
+value = 0 ; Player consegue ler
 ctrl = 0
 
 [State 4452, 7]
@@ -1202,7 +1202,7 @@ trigger1 = time = 1
 value = 4463
 
 [Statedef 4463]; Super pausa do partner
-type    = S
+type = S
 movetype= I
 physics = N
 anim=0
@@ -1356,7 +1356,7 @@ value = 4440
 ;----------------------------------------------------
 
 [Statedef 4471]; Tag-Helper
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl = 0
@@ -1385,7 +1385,7 @@ trigger2 = time=1
 ;----------------------------------------------------
 
 [Statedef 4472]; provocao de sada
-type    = A
+type = A
 movetype= I
 physics = S
 ctrl = 0
@@ -1471,8 +1471,8 @@ v = 37
 value=3-var(37)
 
 [State 4475, 4] ;Portrait
-type        = Explod 
-trigger1    = Time = 0 
+type = Explod 
+trigger1 = Time = 0 
 anim = 4465
 postype = back 
 ID = 10000 
@@ -1491,7 +1491,7 @@ value = 4461
 ;----------------------------------------------------
 ; Helper
 [Statedef 4476]
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl = 0
@@ -1548,8 +1548,8 @@ sound = 20, 0
 darken = 1
 
 [State 4477, 4] ;Zoom Portrait
-type        = Explod 
-trigger1    = Time = [0,10] 
+type = Explod 
+trigger1 = Time = [0,10] 
 anim = 4465
 postype = back 
 ID = 10000 
@@ -1560,8 +1560,8 @@ scale = 3 - (time * 0.15), 3 - (time * 0.15)
 pos = 0,60-time * 5 
 
 [State 4477, 5] ;Portrait
-type        = Explod 
-trigger1    = Time = 11 
+type = Explod 
+trigger1 = Time = 11 
 anim = 4465
 postype = back 
 ID = 10000 
@@ -1733,7 +1733,7 @@ ctrl = 1
 ;----------------------------------------------------
 ; Helper
 [Statedef 4481]
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl = 0
@@ -2022,7 +2022,7 @@ trigger1 = numexplod(4482)=0 && time > 0
 value = 4426
 
 [Statedef 4486]; animacao de chamada (p3)
-type    = A
+type = A
 movetype= I
 physics = N
 anim=0
@@ -2074,8 +2074,8 @@ trigger1 = time = 0
 y = 0
 
 [State 4423, 4] ;Zoom Portrait
-type        = Explod 
-trigger1    = Time = 0
+type = Explod 
+trigger1 = Time = 0
 anim = 4465
 postype = left
 ID = 4465
@@ -2355,8 +2355,8 @@ velocity=40
 accel = 20, 0
 
 [State 4423, 4] ;Zoom Portrait
-type        = Explod 
-trigger1    = Time = 0
+type = Explod 
+trigger1 = Time = 0
 anim = 4465
 postype = left
 ID = 4465
@@ -2427,8 +2427,8 @@ channel=0
 volume=255
 
 [State 4423, 4] ;Zoom Portrait
-type        = Explod 
-trigger1    = Time = 0
+type = Explod 
+trigger1 = Time = 0
 anim = 4465
 postype = right
 ID = 4465
@@ -2576,8 +2576,8 @@ movetype= U
 ctrl = 0
 
 [State 4423, 4] ;Zoom Portrait
-type        = Explod 
-trigger1    = Time = 0
+type = Explod 
+trigger1 = Time = 0
 anim = 4465
 postype = Right
 ID = 4465
@@ -2795,7 +2795,7 @@ var(38) = 1
 [State -3]
 type = explod
 trigger1 = var(38)=5 && id<(enemy, id)
-pos = 0,234  
+pos = 0,234 
 postype = left 
 bindtime = -1
 sprpriority = 2
@@ -2809,7 +2809,7 @@ ontop = 1
 [State -3]
 type = explod
 trigger1 = var(38)=5 && id>(enemy, id)
-pos = 0,234  
+pos = 0,234 
 postype = right
 bindtime = -1
 sprpriority = 2
@@ -2854,7 +2854,7 @@ triggerall = var(20) != 1
 trigger1 = command = "CPU1"
 trigger2 = command = "CPU2"
 trigger3 = command = "CPU3"
-;trigger4 = var(20) != 1;   <<<  teste
+;trigger4 = var(20) != 1; <<< teste
 v = 20
 value = 1 
 

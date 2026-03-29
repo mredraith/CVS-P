@@ -22,14 +22,14 @@ trigger1 = Time = 0
 var(17) = root, var(17) 
 
 [State 8500, 9] ;Sem fundo e frente
-type        = AssertSpecial 
+type = AssertSpecial 
 trigger1 = anim=8500;1
 flag = noBG 
 flag2 = noFG 
 ignorehitpause = 1
 
 [State 8500, 9] ;Efeito de fundo azul (com partner)
-type     = PalFx
+type = PalFx
 triggerall = numpartner != 0 && roundstate=2
 trigger1 = partner, stateno!=[4400,4499]
 trigger1 = (time%30)=0
@@ -38,7 +38,7 @@ sinadd = ceil(random/16),ceil(random/16),ceil(random/16),50
 add = 0,0,0
 
 [State 8500, 9] ;Efeito de fundo azul (sem partner)
-type     = PalFx
+type = PalFx
 triggerall = numpartner != 0 && roundstate=2
 trigger1 = partner, stateno=[4400,4499]
 trigger2 = partner, life=0
@@ -48,7 +48,7 @@ add = 0,0,0
 sinadd = 0,0,100,50
 
 [State 8500, 9] ;Efeito de fundo azul (sem partner)
-type     = PalFx
+type = PalFx
 triggerall = numpartner = 0 && roundstate=2
 trigger1 = (time%30)=0
 time = 30
@@ -56,7 +56,7 @@ add = 0,0,0
 sinadd = 0,0,100,50
 
 [State 8500, 9] ;animação de fundo (com MvsC2SP)
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8510)=0 && var(17)>=10 && roundstate=2
 anim = f400
 postype = left
@@ -69,7 +69,7 @@ pos = 0,0;1,120
 bindtime = -1
 
 [State 8500, 9] ;animação de fundo (sem MvsC2SP)
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8510)=0 && var(17)<10 && roundstate=2
 anim = 8510 ;f400;
 postype = left
@@ -82,7 +82,7 @@ scale= const(size.xscale),const(size.yscale)*1.5;2
 bindtime = -1
 
 [State 8500, 9] ;animação de fundo (sem MvsC2SP)
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8511)=0 && var(17)<10 && roundstate=2
 anim = 8511;f401;
 postype = right
@@ -96,7 +96,7 @@ bindtime = -1
 facing=-1
 
 [State 8500, 9] ;animação de fundo (sem MvsC2SP)
-type        = Explod 
+type = Explod 
 trigger1 = numexplod(8500)=0 && var(17)<10 && roundstate=2
 anim = 8511; f401;
 postype = left
@@ -109,8 +109,8 @@ scale= const(size.xscale),const(size.yscale)/2
 bindtime = -1
 vfacing=-1
 
-[State 8500, 9]  ;animação de fundo (sem MvsC2SP)
-type        = Explod 
+[State 8500, 9] ;animação de fundo (sem MvsC2SP)
+type = Explod 
 trigger1 = numexplod(8513)=0 && var(17)<10 && roundstate=2
 anim = 8510;f400;
 postype = right
@@ -148,7 +148,7 @@ trigger1 = root, stateno!=4550
 trigger2 = anim=8500 && roundstate=3
 
 [State 8500, 9] ;Efeito de fundo
-type     = bgPalFx
+type = bgPalFx
 trigger1 = anim=8500 && roundstate=3 && var(17)<10 && p2life=0
 time = 120;70;45;
 add = 192,192,192;0,0,0;

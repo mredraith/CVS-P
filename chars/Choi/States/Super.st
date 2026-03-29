@@ -1,5 +1,5 @@
 ; _________________________________________
-;| CVS Choi Bounge by Falcon Rapper        |
+;| CVS Choi Bounge by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SUPER MOVES=
@@ -784,14 +784,14 @@ pos = 30+(Target,const(Size.ground.front)), 0
 
 [State 3030,HitAdd]
 type = HitAdd
-trigger1 = AnimElem =  2,=1 || AnimElem =  4,=1 || AnimElem =  7,=1 || AnimElem = 10,=1 || AnimElem = 14,=1
+trigger1 = AnimElem = 2,=1 || AnimElem = 4,=1 || AnimElem = 7,=1 || AnimElem = 10,=1 || AnimElem = 14,=1
 trigger2 = AnimElem = 19,=1 || AnimElem = 22,=1 || AnimElem = 27,=1 || AnimElem = 31,=1 || AnimElem = 34,=1 || AnimElem = 38,=1
 trigger3 = AnimElem = 42,=1 || AnimElem = 44,=1
 value = 1
 
 [State 0, EnvShake]
 type = EnvShake
-trigger1 = AnimElem =  1,=0 || AnimElem =  2,=2 || AnimElem =  4,=2 || AnimElem =  7,=2 || AnimElem = 10,=2 || AnimElem = 14,=2
+trigger1 = AnimElem = 1,=0 || AnimElem = 2,=2 || AnimElem = 4,=2 || AnimElem = 7,=2 || AnimElem = 10,=2 || AnimElem = 14,=2
 trigger2 = AnimElem = 19,=2 || AnimElem = 22,=2 || AnimElem = 27,=2 || AnimElem = 31,=2 || AnimElem = 34,=2 || AnimElem = 38,=2
 trigger3 = AnimElem = 42,=2 || AnimElem = 44,=2
 time=5
@@ -799,29 +799,29 @@ ampl=4
 
 [State 100,1]
 type = PlaySnd
-trigger1 = AnimElem =  2,=2 || AnimElem =  4,=2
+trigger1 = AnimElem = 2,=2 || AnimElem = 4,=2
 value = S2+10*var(44), 3
 
 [State 100,1]
 type = PlaySnd
-trigger1 = AnimElem =  7,=2 || AnimElem = 10,=2 || AnimElem = 14,=2
+trigger1 = AnimElem = 7,=2 || AnimElem = 10,=2 || AnimElem = 14,=2
 trigger2 = AnimElem = 19,=2 || AnimElem = 22,=2 || AnimElem = 27,=2 || AnimElem = 31,=2 || AnimElem = 34,=2 || AnimElem = 38,=2
 trigger3 = AnimElem = 42,=2 || AnimElem = 44,=2
 value = S2+10*var(44), 8-(AnimElem = 42,=2 || AnimElem = 44,=2)*3
 
 [State 1000, TargetState]
 type = TargetState
-trigger1 = AnimElem =  1,=0 || AnimElem =  4,=2 || AnimElem = 10,=2 || AnimElem = 19,=2 || AnimElem = 27,=2 || AnimElem = 34,=2
+trigger1 = AnimElem = 1,=0 || AnimElem = 4,=2 || AnimElem = 10,=2 || AnimElem = 19,=2 || AnimElem = 27,=2 || AnimElem = 34,=2
 value = 3120
 
 [State 1000, TargetState]
 type = TargetState
-trigger1 = AnimElem =  2,=2 || AnimElem =  7,=2 || AnimElem = 14,=2 || AnimElem = 22,=2 || AnimElem = 31,=2 || AnimElem = 38,=2
+trigger1 = AnimElem = 2,=2 || AnimElem = 7,=2 || AnimElem = 14,=2 || AnimElem = 22,=2 || AnimElem = 31,=2 || AnimElem = 38,=2
 value = 3121 
 
 [State 3030,TargetLifeAdd]
 type = TargetLifeAdd
-trigger1 = AnimElem =  2,=2 || AnimElem =  4,=2 || AnimElem =  7,=2 || AnimElem = 10,=2 || AnimElem = 14,=2
+trigger1 = AnimElem = 2,=2 || AnimElem = 4,=2 || AnimElem = 7,=2 || AnimElem = 10,=2 || AnimElem = 14,=2
 trigger2 = AnimElem = 19,=2 || AnimElem = 22,=2 || AnimElem = 27,=2 || AnimElem = 31,=2 || AnimElem = 34,=2 || AnimElem = 38,=2
 value = -12
 kill = 0
@@ -1465,7 +1465,7 @@ pos = 20+(Target,const(Size.ground.front)), 0
 
 [State 3030,HitAdd]
 type = HitAdd
-trigger1 = AnimElem = 2 || AnimElem =  5 || AnimElem = 9|| AnimElem = 15 || AnimElem = 17
+trigger1 = AnimElem = 2 || AnimElem = 5 || AnimElem = 9|| AnimElem = 15 || AnimElem = 17
 trigger2 = AnimElem = 22 || AnimElem = 25 || AnimElem = 32 || AnimElem = 35 || AnimElem = 39
 trigger3 = AnimElem = 44 || AnimElem = 47 || AnimElem = 49|| AnimElem = 51 || AnimElem = 53
 trigger4 = AnimElem = 55|| AnimElem = 57 || AnimElem = 59 || AnimElem = 61 || AnimElem = 63
@@ -1474,7 +1474,7 @@ value = 1
 
 [State 0, EnvShake]
 type = EnvShake
-trigger1 = AnimElem = 2 || AnimElem =  5 || AnimElem = 9|| AnimElem = 15 || AnimElem = 17
+trigger1 = AnimElem = 2 || AnimElem = 5 || AnimElem = 9|| AnimElem = 15 || AnimElem = 17
 trigger2 = AnimElem = 22 || AnimElem = 25|| AnimElem = 32 || AnimElem = 35 || AnimElem = 39
 trigger3 = AnimElem = 44 || AnimElem = 47 || AnimElem = 49|| AnimElem = 51 || AnimElem = 53
 trigger4 = AnimElem = 55|| AnimElem = 57 || AnimElem = 59 || AnimElem = 61 || AnimElem = 63
@@ -1484,7 +1484,7 @@ ampl=4
 
 [State 100,1]
 type = PlaySnd
-trigger1 = AnimElem = 2 || AnimElem =  5
+trigger1 = AnimElem = 2 || AnimElem = 5
 trigger2 = AnimElem = 22 || AnimElem = 25|| AnimElem = 32 || AnimElem = 35 || AnimElem = 39
 trigger3 = AnimElem = 44
 value = S2,7
@@ -1503,7 +1503,7 @@ value = S2+10*var(44),1
 
 [State 1000, TargetState]
 type = TargetState
-trigger1 = AnimElem =  5,=2 || AnimElem =  5,=2 || AnimElem = 15,=0 || AnimElem = 17,=2 || AnimElem = 22,=2 
+trigger1 = AnimElem = 5,=2 || AnimElem = 5,=2 || AnimElem = 15,=0 || AnimElem = 17,=2 || AnimElem = 22,=2 
 trigger2 = AnimElem = 25,=2 || AnimElem = 32,=2 || AnimElem = 44,=0 || AnimElem = 51,=0 || AnimElem = 53,=0
 trigger3 = AnimElem = 55,=0 || AnimElem = 57,=0 || AnimElem = 59,=0 || AnimElem = 61,=0 || AnimElem = 63,=0
 trigger4 = AnimElem = 65,=0 || AnimElem = 67,=0 || AnimElem = 68,=0 || AnimElem = 69,=0
@@ -1511,12 +1511,12 @@ value = 3120
 
 [State 1000, TargetState]
 type = TargetState
-trigger1 = AnimElem =  2,=2 || AnimElem =  9,=0 || AnimElem = 25,=2 || AnimElem = 35,=2 || AnimElem = 39,=0
+trigger1 = AnimElem = 2,=2 || AnimElem = 9,=0 || AnimElem = 25,=2 || AnimElem = 35,=2 || AnimElem = 39,=0
 value = 3121
 
 [State 3030,TargetLifeAdd]
 type = TargetLifeAdd
-trigger1 = AnimElem = 2 || AnimElem =  5 || AnimElem = 9|| AnimElem = 15 || AnimElem = 17
+trigger1 = AnimElem = 2 || AnimElem = 5 || AnimElem = 9|| AnimElem = 15 || AnimElem = 17
 trigger2 = AnimElem = 22 || AnimElem = 25|| AnimElem = 32 || AnimElem = 35 || AnimElem = 39
 trigger3 = AnimElem = 44 || AnimElem = 47 || AnimElem = 49|| AnimElem = 51 || AnimElem = 53
 trigger4 = AnimElem = 55|| AnimElem = 57 || AnimElem = 59 || AnimElem = 61 || AnimElem = 63
@@ -2217,7 +2217,7 @@ ignorehitpause = 1
 
 [State 3051, 5]
 type = HitDef
-trigger1 = AnimElemTime(1) = 0 || AnimElemTime(9) = 0 || AnimElemTime(17) = 0 || AnimElemTime(25) = 0  || AnimElemTime(33) = 0 || AnimElemTime(41) = 0
+trigger1 = AnimElemTime(1) = 0 || AnimElemTime(9) = 0 || AnimElemTime(17) = 0 || AnimElemTime(25) = 0 || AnimElemTime(33) = 0 || AnimElemTime(41) = 0
 trigger2 = AnimElemTime(49) = 0 || AnimElemTime(57) = 0 || AnimElemTime(65) = 0 || AnimElemTime(73) = 0 || AnimElemTime(81) = 0
 attr = A, HA
 hitflag = MAFD

@@ -153,7 +153,7 @@ trigger1 = !time && prevstateno = 1050
 anim = 3006
 ID = 3006
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -225,7 +225,7 @@ trigger1 = !time
 anim = 3005
 ID = 3005
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1728,7 +1728,7 @@ channel = 0
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 3
-anim =  1405
+anim = 1405
 bindTime = -1
 sprpriority = 3
 postype = p1
@@ -1878,7 +1878,7 @@ channel = 0
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 3
-anim =  1405
+anim = 1405
 bindTime = -1
 sprpriority = 3
 postype = p1

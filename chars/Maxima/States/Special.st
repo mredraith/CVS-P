@@ -87,7 +87,7 @@ name ="Vapor"
 ID =1005
 stateno =1005
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal =1
@@ -303,7 +303,7 @@ name ="Vapor"
 ID =1005
 stateno =1005
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal =1
@@ -721,7 +721,7 @@ type=HitDef
 trigger1=AnimElem=5
 attr=S, SA
 animtype =Heavy
-damage   =50+6*var(10), 8
+damage =50+6*var(10), 8
 getpower=10
 givepower=20
 guardflag=MA
@@ -871,7 +871,7 @@ type=HitDef
 trigger1=Animelem=8
 attr=S, SA
 animtype =Heavy
-damage   =20+2*var(10),4
+damage =20+2*var(10),4
 getpower=10
 givepower=5
 guardflag=MA
@@ -898,7 +898,7 @@ type=HitDef
 trigger1=AnimElem=11
 attr=S, SA
 animtype =Heavy
-damage   =Ifelse(var(2),20,40)+2*var(10), 4
+damage =Ifelse(var(2),20,40)+2*var(10), 4
 getpower=10
 givepower=5
 guardflag=MA
@@ -972,7 +972,7 @@ type=HitDef
 trigger1=Time=0
 attr=S, SA
 animtype =Heavy
-damage   =0
+damage =0
 getpower=10
 givepower=5
 guardflag=MA
@@ -1460,7 +1460,7 @@ type=HitDef
 trigger1=Time=0
 attr=A, SA
 animtype =Heavy
-damage   =30,10
+damage =30,10
 getpower=ifElse(var(10)=3, 0, 30 * !var(20))
 givepower=10
 guardflag=HA
@@ -1671,7 +1671,7 @@ type=HitDef
 trigger1=AnimElem=5
 attr=S, SA
 animtype =Heavy
-damage   =50+5*var(10), 8
+damage =50+5*var(10), 8
 getpower=0
 givepower=20
 guardflag=MA
@@ -1839,7 +1839,7 @@ type=HitDef
 trigger1=Animelem=8
 attr=S, SA
 animtype =Heavy
-damage   =Ifelse(var(2),20,40)+2*var(10), 4
+damage =Ifelse(var(2),20,40)+2*var(10), 4
 getpower=0
 givepower=5
 guardflag=MA
@@ -1865,7 +1865,7 @@ type=HitDef
 trigger1=AnimElem=11
 attr=S, SA
 animtype =Heavy
-damage   =Ifelse(var(2),20,40)+2*var(10), 4
+damage =Ifelse(var(2),20,40)+2*var(10), 4
 getpower=0
 givepower=5
 guardflag=MA
@@ -2008,7 +2008,7 @@ type=HitDef
 trigger1=Time=0
 attr=S, SA
 animtype =Heavy
-damage   =0
+damage =0
 getpower=0
 givepower=5
 guardflag=MA
@@ -2533,7 +2533,7 @@ ctrl=1
 ;---------------------------------------------------------------------
 ;M-19 Type: Blitz Cannon
 [Statedef 1300]
-type   =S
+type =S
 movetype= A
 physics=N
 velset=0,0
@@ -2628,7 +2628,7 @@ value=52
 ;---------------------------------------------------------------------------
 ;P1 States
 [Statedef 1310]
-type   =A
+type =A
 movetype= A
 ctrl=0
 anim=1310
@@ -2747,7 +2747,7 @@ name ="Vapor"
 ID =1305
 stateno =1305
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal =1
@@ -2768,7 +2768,7 @@ value=52
 ;---------------------------------------------------------------------------
 ;P2 States
 [Statedef 1320]
-type   =A
+type =A
 movetype= H
 ctrl=0
 velset=0,0
@@ -2819,7 +2819,7 @@ value=5100
 ;---------------------------------------------------------------------
 ;M-19 Type: Blitz Cannon EX
 [Statedef 1350]
-type   =S
+type =S
 movetype= A
 physics=N
 velset=0,0
@@ -2985,10 +2985,10 @@ value=52
 ;---------------------------------------------------------------------------
 ;Maxima Lift
 [Statedef 1500]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 poweradd= 121
 velset = 0,0
 ctrl = 0
@@ -3081,10 +3081,10 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;SYSTEM3
 [Statedef 1501]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 8
+juggle = 8
 poweradd= 0
 velset = 0,0
 ctrl = 0
@@ -3107,7 +3107,7 @@ trigger1 = Time = 0
 trigger1 = P2StateNo != [150,155]
 attr=S, SA
 animtype =Heavy
-damage   =0
+damage =0
 getpower=0
 givepower=5
 hitflag=MAF
@@ -3300,10 +3300,10 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Maxima Lift EX
 [Statedef 1550]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 8
+juggle = 8
 poweradd= -500
 velset = 0,0
 ctrl = 0

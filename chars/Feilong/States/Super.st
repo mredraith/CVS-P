@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Feilong by varo_hades                  |
+;| Feilong by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -163,7 +163,7 @@ x = 0
 [State 3000, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -207,7 +207,7 @@ envShake.freq = 120
 [State 3000, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -462,7 +462,7 @@ x = 0
 [State 3000, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -506,7 +506,7 @@ envShake.freq = 120
 [State 3000, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -725,7 +725,7 @@ ownPal = 1
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 =  Time = 0
+trigger1 = Time = 0
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1214,7 +1214,7 @@ ownPal = 1
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 2
-trigger1 =  Time = 0
+trigger1 = Time = 0
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1705,7 +1705,7 @@ value = 3215
 
 [State 810, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 pos = ceil(60*const(size.xscale)),ceil(0*const(size.yscale))
 postype = P1
 time = -1
@@ -1799,7 +1799,7 @@ value = 3216
 
 [State 810, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 pos = ceil(60*const(size.xscale)),ceil(0*const(size.yscale))
 postype = P1
 time = -1
@@ -1918,17 +1918,17 @@ value = 3217
 
 [State 810,***]
 type = Targetvelset
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 x = -5
 
 [State 810,***]
 type = TargetState
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 value = 3230
 
 [State 810, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 pos = ceil(80*const(size.xscale)),ceil(0*const(size.yscale))
 postype = P1
 time = 1
@@ -2381,7 +2381,7 @@ persistent = 0
 [State 3350, HitDef 1]
 type = HitDef
 triggerAll = !var(16) && var(15) < 2
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2892,7 +2892,7 @@ persistent = 0
 [State 3350, HitDef 1]
 type = HitDef
 triggerAll = !var(16) && var(15) < 2
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -3720,13 +3720,13 @@ kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 40
+trigger1 = time = 40
 value = 3410
 ctrl = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 40
+trigger1 = time = 40
 value = 3403
 ctrl = 0
 
@@ -3811,7 +3811,7 @@ kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
@@ -3880,7 +3880,7 @@ kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3411
 ctrl = 0
 
@@ -3897,7 +3897,7 @@ poweradd = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
@@ -3919,7 +3919,7 @@ value = 1200,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3430
 ctrl = 0
 
@@ -4067,7 +4067,7 @@ kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 40
+trigger1 = time = 40
 value = 3430
 ctrl = 0
 
@@ -4301,7 +4301,7 @@ y = 10
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  pos Y >=0 && vel Y > 0
+trigger1 = pos Y >=0 && vel Y > 0
 value = 52
 ctrl = 1
 
@@ -4597,13 +4597,13 @@ Kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 30
+trigger1 = time = 30
 value = 3460
 ctrl = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 30
+trigger1 = time = 30
 value = 3453
 ctrl = 0
 
@@ -4689,7 +4689,7 @@ Kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
@@ -4760,7 +4760,7 @@ Kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3461
 ctrl = 0
 
@@ -4777,7 +4777,7 @@ poweradd = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
@@ -4799,7 +4799,7 @@ value = 1200,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3470
 ctrl = 0
 
@@ -4951,7 +4951,7 @@ Kill = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 40
+trigger1 = time = 40
 value = 3480
 ctrl = 0
 
@@ -5187,7 +5187,7 @@ y = 10
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  pos Y >=0 && vel Y > 0
+trigger1 = pos Y >=0 && vel Y > 0
 value = 52
 ctrl = 1
 

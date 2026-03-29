@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| Blanka by varo_hades                    |
+;| Blanka by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -2425,7 +2425,7 @@ y = 0
 
 [State 4520,VelAdd]
 type = Veladd
-trigger1 =  ParentDist X > 0
+trigger1 = ParentDist X > 0
 x = .25
 
 [State 4520,VelAdd]
@@ -2460,7 +2460,7 @@ y = 0
 
 [State 4530,DestroySelf]
 type = DestroySelf
-trigger1 =  ParentDist X <= 0
+trigger1 = ParentDist X <= 0
 
 ;INTRO Watermelons 4=
 [Statedef 7650]
@@ -4842,37 +4842,37 @@ velset=0,0
 ctrl=0
 ;---
 [state 0]
-   type=nothitby
-   trigger1=1
-   value=sca
-   time=8 ;;-options
+ type=nothitby
+ trigger1=1
+ value=sca
+ time=8 ;;-options
 [state 0]
-   type=screenbound
-   trigger1=1
-   value=0
+ type=screenbound
+ trigger1=1
+ value=0
 [state 0]
-   type=playerpush
-   trigger1=1
-   value=0
+ type=playerpush
+ trigger1=1
+ value=0
 [state 0]
-   type=posset
-   trigger1=!time
-   y=0
+ type=posset
+ trigger1=!time
+ y=0
 ;---
 [state 0]
-   type=changestate
-   trigger1=(animtime=0) && (roundstate=2) && (sysfvar(4)>0) && (sysfvar(0)>0) && playeridexist(floor(sysfvar(0)))
-   trigger1=(playerid(floor(sysfvar(0))),var(0)=90900)
-   value=1100 ;;Change this to set support move
-   anim=150 ;; guarding anim for stateno-checking
-   ctrl=0
+ type=changestate
+ trigger1=(animtime=0) && (roundstate=2) && (sysfvar(4)>0) && (sysfvar(0)>0) && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900)
+ value=1100 ;;Change this to set support move
+ anim=150 ;; guarding anim for stateno-checking
+ ctrl=0
 
 ; ex-change (for safety)
 ; ???
 [state 0]
-   type=changestate
-   trigger1=animtime=0
-   value=0
-   ctrl=1
+ type=changestate
+ trigger1=animtime=0
+ value=0
+ ctrl=1
 
 -------------------

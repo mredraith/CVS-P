@@ -10,7 +10,7 @@
 ;---------------------------------------------------------------------------
 ;Final Impact
 [Statedef 3000]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -121,7 +121,7 @@ ownPal = 1
 [State 821, 3] 
 type = changeState
 triggerall = AILEVEL
-trigger1 =  animelem = 6
+trigger1 = animelem = 6
 value = 3010
 
 [State 821, 3] 
@@ -132,7 +132,7 @@ trigger2 = animtime = 0
 value = 3010
 
 [Statedef 3010]
-type    = S
+type = S
 movetype= A
 physics = N
 poweradd= 0
@@ -218,8 +218,8 @@ type = HitDef
 triggerall = var(10)!=2
 trigger1 = !time
 attr = S, HA
-animtype  = up
-damage    = ifElse(prevstateno=3050, 260 + (var(10) * 10), 170 + (var(10) * 10)),20
+animtype = up
+damage = ifElse(prevstateno=3050, 260 + (var(10) * 10), 170 + (var(10) * 10)),20
 priority = 10, Hit
 getpower = 0,0
 guardflag = M
@@ -227,12 +227,12 @@ pausetime = 7, 7
 sparkNo=-1 + 0 * (var(33) :=8014)
 guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
-hitsound   = s2,6
+hitsound = s2,6
 guardsound=S130,0
 guard.sparkno = s7012
 ground.type = high
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5,-7;28
 air.velocity = -5.5,-7
@@ -248,20 +248,20 @@ type = HitDef
 triggerall = var(10)=2
 trigger1 = !time
 attr = S, HA
-animtype  = up
-damage    = ifElse(prevstateno=3050, 260 + (var(10) * 10), 170 + (var(10) * 10)),20
+animtype = up
+damage = ifElse(prevstateno=3050, 260 + (var(10) * 10), 170 + (var(10) * 10)),20
 priority = 10, Hit
 getpower = 0,0
 pausetime = 7, 7
 sparkNo=-1 + 0 * (var(33) :=8014)
 guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=100), var(36) :=-75
-hitsound   = s2,6
+hitsound = s2,6
 guardsound=S130,0
 guard.sparkno = s7012
 ground.type = high
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -5,-7;28
 air.velocity = -5.5,-7
@@ -289,7 +289,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;Final Impact MAX
 [Statedef 3050]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -420,13 +420,13 @@ value = 3010
 ;------------------------------------------------------------------
 ;Million Bash Stream
 [Statedef 3100]
-type     = S
+type = S
 movetype = A
-physics  = N
+physics = N
 poweradd = -1000
-velset   = 0,0
-anim     = 3100
-ctrl     = 0
+velset = 0,0
+anim = 3100
+ctrl = 0
 sprpriority = 2
 facep2 = 1
 
@@ -528,14 +528,14 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(6) >= 0 && AnimElemTime(7) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),8,80), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),8,80), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 8,8
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -570,14 +570,14 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(11) >= 0 && AnimElemTime(12) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),8,80), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),8,80), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 8,8
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -613,13 +613,13 @@ trigger1 = !animtime
 value = 3101
 
 [Statedef 3101]
-type     = S
+type = S
 movetype = A
-physics  = N
+physics = N
 poweradd = 0
-velset   = 3,0
-anim     = 3101
-ctrl     = 0
+velset = 3,0
+anim = 3101
+ctrl = 0
 sprpriority = 2
 
 [State 3051, ?????]
@@ -636,14 +636,14 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(3) >= 0 && AnimElemTime(4) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),8,80), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),8,80), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 8,8
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -678,14 +678,14 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(8) >= 0 && AnimElemTime(9) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),8,80), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),8,80), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 8,8
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -735,13 +735,13 @@ value = 3102
 ; ??????
 
 [Statedef 3102]
-type     = S
+type = S
 movetype = A
-physics  = N
+physics = N
 poweradd = 0
-velset   = 0,0
-anim     = 3102
-ctrl     = 0
+velset = 0,0
+anim = 3102
+ctrl = 0
 sprpriority = 2
 
 [State 3052, ????]
@@ -782,14 +782,14 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),21,80), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),21,80), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 27,27
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -825,13 +825,13 @@ triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(11) >= 0 && AnimElemTime(12) < 0
 trigger1 = var(28) := 1
 attr = S, HA
-damage    = ifelse(numtarget(3100),21,80), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),21,80), 5
+getpower = 0
 givepower = 4,4
-animtype  = Up
+animtype = Up
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 27,27
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -873,13 +873,13 @@ ctrl = 1
 
 ; Million Bash Stream MAX
 [Statedef 3150]
-type     = S
+type = S
 movetype = A
-physics  = N
+physics = N
 poweradd = -2000
-velset   = 0,0
-anim     = 3150
-ctrl     = 0
+velset = 0,0
+anim = 3150
+ctrl = 0
 sprpriority = 2
 facep2 = 1
 
@@ -998,14 +998,14 @@ triggerall = var(12) = 0
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(6) >= 0 && AnimElemTime(7) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),9,82), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),9,82), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 3,3
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1041,14 +1041,14 @@ triggerall = var(12) = 0
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(11) >= 0 && AnimElemTime(12) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),9,82), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),9,82), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 3,3
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1084,14 +1084,14 @@ trigger1 = !animtime
 value = 3151
 
 [Statedef 3151]
-type     = S
+type = S
 movetype = A
-physics  = N
-juggle   = 0
+physics = N
+juggle = 0
 poweradd = 0
-velset   = 3,0
-anim     = 3151
-ctrl     = 0
+velset = 3,0
+anim = 3151
+ctrl = 0
 sprpriority = 2
 
 [State 3151, ?????]
@@ -1109,14 +1109,14 @@ triggerall = var(12) = 0
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),9,82), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),9,82), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 3,3
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1152,14 +1152,14 @@ triggerall = var(12) = 0
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(7) >= 0 && AnimElemTime(8) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),9,82), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),9,82), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 3,3
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1209,14 +1209,14 @@ value = 3152
 ; ??????
 
 [Statedef 3152]
-type     = S
+type = S
 movetype = A
-physics  = N
-juggle   = 0
+physics = N
+juggle = 0
 poweradd = 0
-velset   = 0,0
-anim     = 3152
-ctrl     = 0
+velset = 0,0
+anim = 3152
+ctrl = 0
 sprpriority = 2
 
 [State -2, Dampener Reset]
@@ -1239,14 +1239,14 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 attr = S, HA
-damage    = ifelse(numtarget(3100),9,82), 5
-getpower  = 0
+damage = ifelse(numtarget(3100),9,82), 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 27,27
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1282,14 +1282,14 @@ triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(11) >= 0
 trigger1 = var(28) := 1
 attr = S, HA
-damage    = 20, 5
-getpower  = 0
+damage = 20, 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 27,27
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1325,14 +1325,14 @@ trigger1 = !animtime
 value = 3153
 
 [Statedef 3153]
-type     = S
+type = S
 movetype = A
-physics  = N
-juggle   = 0
+physics = N
+juggle = 0
 poweradd = 0
-velset   = 0,0
-anim     = 3153
-ctrl     = 0
+velset = 0,0
+anim = 3153
+ctrl = 0
 sprpriority = 2
 
 [State -2, Dampener Reset]
@@ -1393,14 +1393,14 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(3) >= 0 && AnimElemTime(4) < 0
 attr = S, SA
-damage    = 20, 5
-getpower  = 0
+damage = 20, 5
+getpower = 0
 givepower = 4,4
-animtype  = Hard
+animtype = Hard
 air.animtype = back
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 11,11
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1436,13 +1436,13 @@ type = HitDef
 triggerall =!movecontact && !movereversed
 trigger1 = AnimElemTime(4) >= 0 && AnimElemTime(5) < 0
 attr = A, SA
-damage    = 20, 5
-getpower  = 0
+damage = 20, 5
+getpower = 0
 givepower = 4,4
-animtype  = Up
+animtype = Up
 guardflag = M
 hitflag = MAF
-priority  = 4, Hit
+priority = 4, Hit
 pausetime = 7, 7
 guard.pausetime = 27,27
 sparkNo=-1 + 0 * (var(33) :=8014)
@@ -1484,12 +1484,12 @@ trigger1=pos y > -vel y
 value = 3154
 
 [Statedef 3154]
-type     = S
+type = S
 movetype = I
-physics  = N
-velset   = 0,0
-anim     = 3154
-ctrl     = 0
+physics = N
+velset = 0,0
+anim = 3154
+ctrl = 0
 sprpriority = 2
 
 [State 1000, Button Detect]
@@ -1527,7 +1527,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;Hoeru Daichi
 [Statedef 3200]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -1647,7 +1647,7 @@ value = 3210
 ;---------------------------------------------------------------------------
 ;Hoeru Daichi (Reverse)
 [Statedef 3201]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3200
@@ -1665,7 +1665,7 @@ value = 3200
 
 ;---------------------------------------------------------------------------
 [Statedef 3210]
-type    = S
+type = S
 movetype= A
 physics = N
 poweradd= 0
@@ -1728,7 +1728,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ; Hoeru Daichi Max
 [Statedef 3250]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -1861,7 +1861,7 @@ value = 3210
 ;---------------------------------------------------------------------------
 ;Hoeru Daichi (Reverse)
 [Statedef 3251]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3200
@@ -1880,10 +1880,10 @@ value = 3250
 
 ;Araburu Daichi
 [Statedef 3300]
-type    = S
+type = S
 movetype= A
 physics = N
-poweradd  = -1000
+poweradd = -1000
 velset = 0,0
 ctrl = 0
 anim = 3300
@@ -2032,7 +2032,7 @@ value = 1505
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Reverse)
 [Statedef 3301]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3300
@@ -2050,7 +2050,7 @@ value = 3300
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Connect)
 [Statedef 3310]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3310
@@ -2198,7 +2198,7 @@ value = 3311
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Continuous)
 [Statedef 3311]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3311
@@ -2304,7 +2304,7 @@ value = 3312
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Sequence)
 [Statedef 3312]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3312
@@ -2519,7 +2519,7 @@ value = 3313
 ;---------------------------------------------------------------------------
 ; Araburu Daichi (End)
 [Statedef 3313]
-type    = S
+type = S
 movetype= A
 physics = N
 poweradd= 0
@@ -2605,7 +2605,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Gethit State 1)
 [Statedef 3320]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2633,7 +2633,7 @@ movecamera = 1
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Gethit State 2)
 [Statedef 3321]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2659,7 +2659,7 @@ movecamera = 1
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Gethit State 3)
 [Statedef 3322]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2708,7 +2708,7 @@ value = 3323
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Gethit State 4)
 [Statedef 3323]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2763,7 +2763,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Gethit State 5)
 [Statedef 3324]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2805,10 +2805,10 @@ value = 5100
 
 ;Araburu Daichi
 [Statedef 3350]
-type    = S
+type = S
 movetype= A
 physics = N
-poweradd  = -2000
+poweradd = -2000
 velset = 0,0
 ctrl = 0
 anim = 3300
@@ -2964,7 +2964,7 @@ value = 1505
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Reverse)
 [Statedef 3351]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3300
@@ -2982,7 +2982,7 @@ value = 3350
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Connect)
 [Statedef 3360]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3310
@@ -3130,7 +3130,7 @@ value = 3361
 ;---------------------------------------------------------------------------
 ;Araburu Daichi (Continuous)
 [Statedef 3361]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3350
@@ -3415,7 +3415,7 @@ value = 3312
 
 ;Araburu Daichi (Gethit State 4)
 [Statedef 3371]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3441,7 +3441,7 @@ movecamera = 1
 ;---------------------------------------------------------------------------
 ;Ankoku Jigoku Gokuraku Otoshi
 [Statedef 3400]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -3543,7 +3543,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Ankoku Jigoku Gokuraku Otoshi (Reverse)
 [Statedef 3401]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -3646,7 +3646,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Ankoku Jigoku Gokuraku Otoshi (Connect)
 [Statedef 3410]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3410
@@ -4054,7 +4054,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Ankoku Jigoku Gokuraku Otoshi (Connect)
 [Statedef 3411]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3410
@@ -4475,7 +4475,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;(ENEMY)Ankoku Jigoku Gokuraku Otoshi???
 [Statedef 3420]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -4574,7 +4574,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;(ENEMY)Ankoku Jigoku Gokuraku Otoshi???
 [Statedef 3421]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -4677,7 +4677,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;MAX Ankoku Jigoku Gokuraku Otoshi
 [Statedef 3450]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -4791,7 +4791,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;MAX Ankoku Jigoku Gokuraku Otoshi
 [Statedef 3451]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -4908,7 +4908,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;MAX Ankoku Jigoku Gokuraku Otoshi
 [Statedef 3460]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3450
@@ -5386,7 +5386,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;(ENEMY)MAX?????? ?????? ???????? ????????
 [Statedef 3470]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -5482,7 +5482,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;(ENEMY)MAX?????? ?????? ???????? ????????
 [Statedef 3471]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -5583,7 +5583,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;(ENEMY)MAX?????? ?????? ???????? ?????????
 [Statedef 3475]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -5626,7 +5626,7 @@ value = 5100
 
 ; Error... Code "2002"
 [Statedef 3500]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -5716,8 +5716,8 @@ y = 0.2
 type = HitDef
 trigger1 = animelem = 6
 attr = A, HA
-animtype  = hard
-damage    = 0,0
+animtype = hard
+damage = 0,0
 getpower = 0,0
 guardflag = M
 guard.pausetime = 13,15
@@ -5729,7 +5729,7 @@ hitsound=S2+10*var(44),2
 guardsound=S130,0
 ground.type = high
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0,0
 guard.velocity = -10
@@ -5753,7 +5753,7 @@ value = 3501
 ;---------------------------------------------------------------------------
 ; Error... Code "2002"
 [Statedef 3501]
-type    = S
+type = S
 movetype= A
 physics = N
 poweradd= 0
@@ -5795,7 +5795,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Error... Code "2002"
 [Statedef 3510]
-type    = S
+type = S
 movetype= A
 physics = N
 poweradd= 0
@@ -6042,8 +6042,8 @@ value = 1
 type = HitDef
 trigger1 = animelem = 113
 attr = S, HA
-animtype  = hard
-damage    = 20, 8
+animtype = hard
+damage = 20, 8
 priority = 15, Hit
 getpower = 0,0
 guardflag = N
@@ -6055,7 +6055,7 @@ hitsound=S2+10*var(44),2
 guardsound=S130,0
 ground.type = low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -7
 air.velocity = -5.5,-3.5
@@ -6069,8 +6069,8 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 116
 attr = S, HA
-animtype  = hard
-damage    = 20, 8
+animtype = hard
+damage = 20, 8
 priority = 15, Hit
 getpower = 0,0
 guardflag = N
@@ -6082,7 +6082,7 @@ hitsound=S2+10*var(44),2
 guardsound=S130,0
 ground.type = low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-8
@@ -6096,8 +6096,8 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 117
 attr = A, HA
-animtype  = up
-damage    = 76,9
+animtype = up
+damage = 76,9
 priority = 15, Hit
 getpower = 0,0
 guardflag = N
@@ -6109,7 +6109,7 @@ hitsound=S2+10*var(44),2
 guardsound=S130,0
 ground.type = low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2,-11
 air.velocity = -2,-11
@@ -6129,7 +6129,7 @@ value = 52
 ;---------------------------------------------------------------------------
 ;(ENEMY)??????
 [Statedef 3520]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -6159,7 +6159,7 @@ value = 5000
 ;---------------------------------------------------------------------------
 ;(ENEMY)??????
 [Statedef 3521]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -6185,7 +6185,7 @@ value = 5000
 ;---------------------------------------------------------------------------
 ;(ENEMY)??????
 [Statedef 3522]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -6209,7 +6209,7 @@ value = 5000
 
 ; Armageddon
 [Statedef 3600]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -6277,7 +6277,7 @@ poweradd=0
 [State 0, AssertSpecial]
 type = null;AssertSpecial
 trigger1 = animelemtime(15) < 0
-flag =  noBG
+flag = noBG
 
 [State 2000, 6]
 type = PlaySnd
@@ -6368,19 +6368,19 @@ superMoveTime=255
 type = HitDef
 trigger1 = animelem = 11
 attr = S, HA
-animtype  = diagup
-damage    = 420+80*var(12)
+animtype = diagup
+damage = 420+80*var(12)
 priority = 15, Hit
 getpower = 0,0
 pausetime = 7, 7
 sparkNo=-1 + 0 * (var(33) :=8014)
 guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=120), var(36) :=-55
-hitsound   = s2,6
+hitsound = s2,6
 guardsound=S130,0
 ground.type = high
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -9,-11
 air.velocity = -9.5,-11
@@ -6405,7 +6405,7 @@ ctrl = 1
 
 ; Armageddon (Reverse)
 [Statedef 3601]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 3600

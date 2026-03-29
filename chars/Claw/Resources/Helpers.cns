@@ -228,7 +228,7 @@ trigger1 =roundstate<2
 ;CAMERA FOCUS
 [Statedef 6001]
 type = S
-physics  = S
+physics = S
 anim = 0
 ctrl = 0
 
@@ -666,7 +666,7 @@ value = 90 * (Random % 4)
 [State 8011, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8011, Transparency]
 type = Trans
@@ -711,7 +711,7 @@ value = 90 * (Random % 4)
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8012, Transparency]
 type = Trans
@@ -763,11 +763,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 
 [State 8013, Transparency]
 type = Trans
@@ -830,11 +830,11 @@ value = 30 * (Random % 12)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8005||parent,stateno=8010)
-scale =  fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8015||parent,stateno=8020)
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8014, Transparency]
 type = Trans
@@ -1168,7 +1168,7 @@ value = 90 * (Random % 4)
 [State 8022, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
+scale = fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
 
 [State 8022, Transparency]
 type = Trans
@@ -1212,11 +1212,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8023, Transparency]
 type = Trans
@@ -2807,7 +2807,7 @@ trigger1 = time>=1
 ;----------------------------------------------------------------------------------
 ; Light Blood Spark
 [Statedef 8050]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -2867,7 +2867,7 @@ value = 8059
 ;----------------------------------------------------------------------------------
 ; Medium Blood Spark
 [Statedef 8051]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -2927,7 +2927,7 @@ value = 8059
 ;----------------------------------------------------------------------------------
 ; Angle Blood Spark
 [Statedef 8052]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -2986,7 +2986,7 @@ value = 8059
 ;----------------------------------------------------------------------------------
 ; Ground Slash Blood
 [Statedef 8059]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 8059
@@ -3028,7 +3028,7 @@ trigger1 = !AnimTime
 ;----------------------------------------------------------------------------------
 ; Light Blood Spark (Subtractive)
 [Statedef 8060]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -3088,7 +3088,7 @@ value = 8069
 ;----------------------------------------------------------------------------------
 ; Medium Blood Spark (Subtractive)
 [Statedef 8061]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -3147,7 +3147,7 @@ value = 8069
 ;----------------------------------------------------------------------------------
 ; Angle Blood Spark (Subtractive)
 [Statedef 8062]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -3206,7 +3206,7 @@ value = 8069
 ;----------------------------------------------------------------------------------
 ; Ground Slash Blood (Subtractive)
 [Statedef 8069]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 8069

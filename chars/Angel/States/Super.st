@@ -480,7 +480,7 @@ ctrl = 1
 [StateDef 3015]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3015, PosSet]
@@ -1168,7 +1168,7 @@ ctrl = 1
 [StateDef 3066]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 sprPriority = 0
 
@@ -1194,7 +1194,7 @@ value = 3067
 [Statedef 3067]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3067, PosSet]
@@ -1591,7 +1591,7 @@ ctrl = 1
 [StateDef 3115]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3115, PosSet]
@@ -2271,7 +2271,7 @@ ctrl = 1
 [StateDef 3215]
 type = L
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3215, PosSet]

@@ -1425,7 +1425,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; Standing Close Heavy  Kick
+; Standing Close Heavy Kick
 [Statedef 251]
 type = S
 physics = S
@@ -4025,18 +4025,18 @@ sprpriority = 2
 type = HitDef
 trigger1 = Anim = 800
 trigger1 = Animelem = 2
-attr = S, NT          ;Attributes: Standing, Normal Throw
-hitflag = M-          ;Affect only ground people who are not being hit
-priority = 3, Miss    ;Throw has low priority, must be miss or dodge type.
-sparkno = -1          ;No spark
-p1sprpriority = 1     ;Draw p1's sprite in front of p2
-                      ;p2's sprite priority is set to 0 by default
+attr = S, NT ;Attributes: Standing, Normal Throw
+hitflag = M- ;Affect only ground people who are not being hit
+priority = 3, Miss ;Throw has low priority, must be miss or dodge type.
+sparkno = -1 ;No spark
+p1sprpriority = 1 ;Draw p1's sprite in front of p2
+ ;p2's sprite priority is set to 0 by default
 p1facing = ifelse(command = "holdfwd", 1, -1)
-p2facing = 1          ;Force p2 to face KFM
-p1stateno = 801       ;On success, KFM changes to state 810
-p2stateno = 802       ;If hit, p2 changes to state 820 in KFM's cns
-guard.dist = 0        ;This prevents p2 from going into a guard state if close
-fall = 1              ;Force p2 into falling down
+p2facing = 1 ;Force p2 to face KFM
+p1stateno = 801 ;On success, KFM changes to state 810
+p2stateno = 802 ;If hit, p2 changes to state 820 in KFM's cns
+guard.dist = 0 ;This prevents p2 from going into a guard state if close
+fall = 1 ;Force p2 into falling down
 numhits = 0
 hitsound = S2,800
 

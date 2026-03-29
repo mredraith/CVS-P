@@ -15,7 +15,7 @@ faceP2 = 1
 [State 3000, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3000, Super Cancel Flag]
 type = VarSet
@@ -250,7 +250,7 @@ faceP2 = 1
 [State 3000, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3000, Super Cancel Flag]
 type = VarSet
@@ -485,7 +485,7 @@ faceP2 = 1
 [State 3000, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3000, Super Cancel Flag]
 type = VarSet
@@ -728,7 +728,7 @@ faceP2 = 1
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3100, Super Cancel Flag]
 type = VarSet
@@ -908,7 +908,7 @@ ignorehitpause = 1
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  animelem = 7 || animelem = 9
+trigger1 = animelem = 7 || animelem = 9
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -978,7 +978,7 @@ faceP2 = 1
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3101, Super Cancel Flag]
 type = VarSet
@@ -1158,7 +1158,7 @@ ignorehitpause = 1
 [State 3101, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  animelem = 7 || animelem = 9
+trigger1 = animelem = 7 || animelem = 9
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1403,7 +1403,7 @@ ignorehitpause = 1
 [State 3102, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 8
+trigger1 = AnimElem = 8
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1449,7 +1449,7 @@ envShake.freq = 120
 [State 3102, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  animelem = 15
+trigger1 = animelem = 15
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1734,7 +1734,7 @@ ignorehitpause = 1
 [State 3103, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 8
+trigger1 = AnimElem = 8
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1780,7 +1780,7 @@ envShake.freq = 120
 [State 3103, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 17
+trigger1 = AnimElem = 17
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1826,7 +1826,7 @@ envShake.freq = 120
 [State 3103, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  animelem = 25
+trigger1 = animelem = 25
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1927,7 +1927,7 @@ facep2 = 1
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3000, Super Cancel Flag]
 type = VarSet
@@ -2270,7 +2270,7 @@ facep2 = 1
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3120, Super Cancel Flag]
 type = VarSet
@@ -2586,7 +2586,7 @@ ignorehitpause = 1
 [State 3125, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2677,7 +2677,7 @@ envShake.freq = 120
 [State 3125, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  AnimElem = 13
+trigger1 = AnimElem = 13
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2720,7 +2720,7 @@ envShake.freq = 120
 [State 3125, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 7
-trigger1 =  AnimElem = 14
+trigger1 = AnimElem = 14
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -3143,17 +3143,17 @@ anim = 3004
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  3092
+id = 3092
 
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  8104
+id = 8104
 
 [State 1206, Effect]
 type = PlaySnd
@@ -3707,17 +3707,17 @@ anim = 3005
 [State 3313, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  6100
+id = 6100
 
 [State 3313, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  3092
+id = 3092
 
 [State 3313, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 0
-id =  8104
+id = 8104
 
 [State 3313, Effect]
 type = PlaySnd

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Decapre by varo_hades                   |
+;| Decapre by varo_hades |
 ; 
 ;
 ;HELPER STATES=
@@ -136,7 +136,7 @@ trigger1 = 1
 ;pos = ceil(-10*const(size.xscale)),ceil(20*const(size.yscale))
 pos = ceil(-5*const(size.xscale)),ceil(-45*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 1025, Assert]
 type = AssertSpecial
@@ -171,7 +171,7 @@ trigger1 = 1
 ;pos = ceil(-10*const(size.xscale)),ceil(20*const(size.yscale))
 pos = ceil(-5*const(size.xscale)),ceil(-45*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 1026, Assert]
 type = AssertSpecial
@@ -1841,7 +1841,7 @@ var(2) = 1
 [State 1117, HitDef]
 type = HitDef
 
-trigger1 =  root,var(15)<6
+trigger1 = root,var(15)<6
 trigger1 = 1
 attr = S,HP
 hitFlag = MAF
@@ -2235,7 +2235,7 @@ var(2) = 1
 
 [State 1117, HitDef]
 type = HitDef
-trigger1 =  root,var(15)<10
+trigger1 = root,var(15)<10
 trigger1 = 1
 attr = S,HP
 hitFlag = MAF
@@ -2666,7 +2666,7 @@ trigger1 = 1
 pos = ceil(90*const(size.xscale)),ceil(-190*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 9000, Assert]
 type = AssertSpecial
@@ -2701,7 +2701,7 @@ trigger1 = 1
 pos = ceil(90*const(size.xscale)),ceil(-190*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 9000, Assert]
 type = AssertSpecial
@@ -2736,7 +2736,7 @@ trigger1 = 1
 pos = ceil(90*const(size.xscale)),ceil(-190*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 9000, Assert]
 type = AssertSpecial
@@ -2771,7 +2771,7 @@ trigger1 = 1
 pos = ceil(300*const(size.xscale)),ceil(-308*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 9000, Assert]
 type = AssertSpecial
@@ -2806,7 +2806,7 @@ trigger1 = 1
 pos = ceil(185*const(size.xscale)),ceil(-208*const(size.yscale))
 ;pos = ceil(90*const(size.xscale)),ceil(-200*const(size.yscale))
 postype = p1
-;facing   = 1
+;facing = 1
 
 [State 9000, Assert]
 type = AssertSpecial
@@ -3080,8 +3080,8 @@ postype = p1
 [State 1025, Trans]
 type = Trans
 trigger1 = 1
-trans    = Addalpha
-alpha    = 256,256
+trans = Addalpha
+alpha = 256,256
 ignorehitpause = 1
 
 [State 9000, Assert]
@@ -3145,8 +3145,8 @@ postype = p1
 [State 1025, Trans]
 type = Trans
 trigger1 = 1
-trans    = Addalpha
-alpha    = 256,256
+trans = Addalpha
+alpha = 256,256
 ignorehitpause = 1
 
 [State 9000, Assert]

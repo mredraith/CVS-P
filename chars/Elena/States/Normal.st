@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Elena by varo_hades                     |
+;| Elena by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -1448,7 +1448,7 @@ value = 52
 ;JUMPING MEDIUM PUNCH
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 anim = 610
 ctrl = 0
@@ -2246,14 +2246,14 @@ type = SprPriority
 trigger1 = 1
 value = 1
 
-[State 815, Break Fall Air]                    ; ##21#
+[State 815, Break Fall Air] ; ##21#
 Type = SelfState
 triggerall = time > 20
 Trigger1 = Pos Y < -20 && Alive && CanRecover
 Trigger1 = Command = "recovery"
 Value = 5210 ;HITFALL_AIR RECOVER
 
-[State 815, Break Fall Ground]                  ; ##21#
+[State 815, Break Fall Ground] ; ##21#
 Type = SelfState
 triggerall = time > 20
 Trigger1 = Pos Y >= -20 && Alive && CanRecover
@@ -2309,7 +2309,7 @@ trigger1 = Vel Y > 0
 value = -50
 kill = 1
 
-[State 815, Break Fall Ground]                  ; ##21#
+[State 815, Break Fall Ground] ; ##21#
 Type = SelfState
 triggerall = time >= 30
 TriggerAll = Pos Y >= -30 && Alive && CanRecover

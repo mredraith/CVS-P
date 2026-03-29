@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Hayato by varo_hades                    |
+;| Hayato by varo_hades |
 ; 
 ;
 ;HELPER STATES=

@@ -1,5 +1,5 @@
 ; _______________________________________________
-;|            Cody Travers by Trololo            |
+;| Cody Travers by Trololo |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -481,8 +481,8 @@ y = const(velocity.run.back.y)
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 2
-movetype = I        ;I,A,H
-physics = A         ;A,C,S,N
+movetype = I ;I,A,H
+physics = A ;A,C,S,N
 
 [State 105, End]
 type = ChangeState
@@ -1543,7 +1543,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 
 [State 5210, Flash]
 type = PalFX
@@ -2632,7 +2632,7 @@ type = S
 moveType = I
 physics = S
 anim = 6902
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -3081,7 +3081,7 @@ type = S
 moveType = I
 physics = S
 anim = 195
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -3123,7 +3123,7 @@ type = S
 moveType = I
 physics = S
 anim = ifelse(var(40), 10196, 196)
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -3166,7 +3166,7 @@ type = S
 moveType = I
 physics = S
 anim = ifelse(var(40), 10197, 197)
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 

@@ -1964,7 +1964,7 @@ palFX.sinAdd= -255,-255,-255,48
 [State 3140, hithigh]
 type = hitdef
 trigger1 = !var(16) && var(15) < 4
-trigger1 = animelem = 4  && anim = 3140
+trigger1 = animelem = 4 && anim = 3140
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) * 22)), 6
 animtype = Hard 
@@ -2003,7 +2003,7 @@ palFX.sinAdd= -255,-255,-255,48
 [State 3140, hithigh 2]
 type = hitdef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  animelem = 16 && anim = 3140
+trigger1 = animelem = 16 && anim = 3140
 attr = S, HA
 damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) * 22)), 6
 animtype = Hard
@@ -3934,7 +3934,7 @@ trigger1 = animelem = 2 && anim = 102
 value = 0, 105
 [State 102, Dust]
 type = explod
-trigger1 = animelem = 2  && (anim = 102 || anim = 105)
+trigger1 = animelem = 2 && (anim = 102 || anim = 105)
 anim = 7103
 ID = 7103
 sprpriority = 3

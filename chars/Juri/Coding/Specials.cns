@@ -447,11 +447,11 @@ ctrl = 1
 ;---------------------------------------------------
 ; LP Kasatushi Activate
 [Statedef 1105]
-type     = S
+type = S
 movetype = I
-physics  = S
-ctrl     = 0
-velset   = 0,0
+physics = S
+ctrl = 0
+velset = 0,0
 anim = 1105
 poweradd = 5
 
@@ -539,7 +539,7 @@ facep2=1
 [State 1100, Reversal]
 type = ReversalDef
 trigger1 = time = 0
-reversal.attr =  SCA,NA,SA,HA,NP,SP
+reversal.attr = SCA,NA,SA,HA,NP,SP
 sparkNo = -1
 hitsound = S2,1
 pausetime = 10,10
@@ -563,7 +563,7 @@ ctrl = 1
 type = S
 movetype = I
 physics= N
-ctrl  = 0
+ctrl = 0
 velset = 0,0
 anim = 1106
 
@@ -655,7 +655,7 @@ facep2=1
 [State 1100, Reversal]
 type = ReversalDef
 trigger1 = time = 0
-reversal.attr =  SCA,NA,SA,HA,NP,SP
+reversal.attr = SCA,NA,SA,HA,NP,SP
 sparkNo = -1
 hitsound = S2,1
 pausetime = 10,10
@@ -677,11 +677,11 @@ ctrl = 1
 ;---------------------------------------------------
 ;HK Kasatushi Activate
 [Statedef 1107]
-type     = S
+type = S
 movetype = I
-physics  = S
-ctrl     = 0
-velset   = 0,0
+physics = S
+ctrl = 0
+velset = 0,0
 anim = 1107
 poweradd = 5
 
@@ -749,10 +749,10 @@ ctrl = 1
 
 ;Kasatushi Land
 [Statedef 1108]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1108
@@ -1526,10 +1526,10 @@ value = 1302
 
 ;LK Shikusen Land
 [Statedef 1302]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1302
@@ -1648,10 +1648,10 @@ value = 1303
 
 ;MK Shikusen Land
 [Statedef 1303]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1303
@@ -1770,10 +1770,10 @@ value = 1304
 
 ;HK Shikusen Land
 [Statedef 1304]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1304
@@ -1815,7 +1815,7 @@ ctrl = 1
 
 ;Second Impact
 [Statedef 1350]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 0
@@ -1949,10 +1949,10 @@ value = 1306
 
 ;Second Impact Land
 [Statedef 1306]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1301
@@ -2385,7 +2385,7 @@ value = SCA
 [State 1100, Reversal]
 type = ReversalDef
 trigger1 = animelemtime(1) >= 0 && animelemtime(32) <= 0
-reversal.attr =  SCA,NA,SA,HA,NP,SP
+reversal.attr = SCA,NA,SA,HA,NP,SP
 sparkNo = -1
 hitsound = S2,1
 pausetime = 10,10
@@ -2437,11 +2437,11 @@ ctrl = 1
 ;---------------------------------------------------
 ; EX Kasatushi Back
 [Statedef 1115]
-type     = S
+type = S
 movetype = I
-physics  = S
-ctrl     = 0
-velset   = 0,0
+physics = S
+ctrl = 0
+velset = 0,0
 anim = 1105
 poweradd = 0
 
@@ -2537,11 +2537,11 @@ ctrl = 1
 
 ; EX Kasatushi FWD
 [Statedef 1116]
-type     = S
+type = S
 movetype = I
-physics  = S
-ctrl     = 0
-velset   = 0,0
+physics = S
+ctrl = 0
+velset = 0,0
 anim = 1107
 poweradd = 0
 
@@ -2635,7 +2635,7 @@ ctrl = 1
 type = S
 movetype = I
 physics= N
-ctrl  = 0
+ctrl = 0
 velset = 0,0
 anim = 1106
 
@@ -3214,10 +3214,10 @@ value = 1305
 
 ;EX Shikusen Land
 [Statedef 1305]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1305
@@ -3259,7 +3259,7 @@ ctrl = 1
 
 ;EX Second Impact
 [Statedef 1380]
-type    = A
+type = A
 movetype= A
 physics = N
 poweradd= 0
@@ -3607,8 +3607,8 @@ value = 5010
 [State 1200, Shake Screen]
 type = EnvShake
 trigger1 = time = 0
-time = 16     
-ampl = 6     
+time = 16 
+ampl = 6 
 freq = 150
 
 [State 1033, Impact Sound]
@@ -3676,10 +3676,10 @@ trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 ;EX Second Strike Land
 [Statedef 1307]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1306

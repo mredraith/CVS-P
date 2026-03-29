@@ -23,7 +23,7 @@ trigger1 = animelemtime(13) = 0 || animelemtime(13) = 5 || animelemtime(13) = 10
 anim = 6028
 ID = 6028
 pos = 20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = -2
 scale = 0.125,0.125
 sprpriority = 5
@@ -101,7 +101,7 @@ trigger1 = animelem = 13
 anim = 3001
 ID = 3001
 pos = -20*const(size.xscale),1*const(size.yscale)
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 0.5*const(size.xscale),0.5*const(size.yscale)
@@ -115,7 +115,7 @@ removeongethit = 0
 ;anim = 3002
 ;ID = 3002
 ;pos = -20,1
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;bindtime = -1
 ;removetime = -2
 ;scale = 0.5*const(size.xscale),0.5*const(size.yscale)
@@ -345,7 +345,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 1051, 3]
@@ -377,7 +377,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 3100, Anim]
@@ -557,7 +557,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 1051, 3]
@@ -589,7 +589,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 1051, 3]
@@ -621,7 +621,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 yaccel = .5
 
@@ -933,7 +933,7 @@ yaccel = .5
 
 [State 0, PlaySnd]
 type = PlaySnd
-triggerall = animelem = 6  || animelem = 16
+triggerall = animelem = 6 || animelem = 16
 trigger1 = anim = 3051
 trigger2 = anim = 3052
 trigger3 = anim = 3053
@@ -946,7 +946,7 @@ value = S1,3
 ;value = S1,3
 [State 105, Dust]
 type = helper
-triggerall = animelem = 6  || animelem = 16
+triggerall = animelem = 6 || animelem = 16
 trigger1 = anim = 3051
 trigger2 = anim = 3052
 trigger3 = anim = 3053
@@ -1217,7 +1217,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 1051, 3]
@@ -1249,7 +1249,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 3100, Anim]
@@ -1483,7 +1483,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 1051, 3]
@@ -1515,7 +1515,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 
 [State 1051, 3]
@@ -1547,7 +1547,7 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
+fall = 1 ;Make p2 fall down
 fall.recover = 0
 yaccel = .5
 
@@ -1962,7 +1962,7 @@ value = S1,3
 ;value = S1,3
 [State 105, Dust]
 type = helper
-triggerall = animelem = 6  || animelem = 16
+triggerall = animelem = 6 || animelem = 16
 trigger1 = anim = 3201
 trigger2 = anim = 3202
 trigger3 = anim = 3203
@@ -2225,7 +2225,7 @@ ampl = 110,-1,-.3
 
 [State 5000, FFB Hard]
 type = ForceFeedback
-trigger1 = Anim =  5012
+trigger1 = Anim = 5012
 trigger2 = Anim = 5002
 trigger3 = Anim = 5030
 persistent = 0
@@ -2266,7 +2266,7 @@ trigger1 = animelemtime(13) = 0 || animelemtime(13) = 5 || animelemtime(13) = 10
 anim = 6028
 ID = 6028
 pos = 20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = -2
 scale = 0.125,0.125
 sprpriority = 5
@@ -2370,7 +2370,7 @@ trigger1 = animelem = 13
 anim = 3001
 ID = 3001
 pos = -20*const(size.xscale),1*const(size.yscale)
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 0.5*const(size.xscale),0.5*const(size.yscale)
@@ -2384,7 +2384,7 @@ removeongethit = 0
 ;anim = 3002
 ;ID = 3002
 ;pos = -20,1
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;bindtime = -1
 ;removetime = -2
 ;scale = 0.5*const(size.xscale),0.5*const(size.yscale)
@@ -2489,7 +2489,7 @@ trigger1 = animelemtime(13) = 0 || animelemtime(13) = 5 || animelemtime(13) = 10
 anim = 6028
 ID = 6028
 pos = 20,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 removetime = -2
 scale = 0.125,0.125
 sprpriority = 5
@@ -2832,7 +2832,7 @@ trigger1 = animelem = 57
 anim = 4150
 ID = 4150
 pos = 80*const(size.xscale),-72*const(size.yscale)
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = -1
 removetime = -2
 scale = 0.375*const(size.xscale),0.5*const(size.yscale)
@@ -2845,7 +2845,7 @@ removeongethit = 0
 ;anim = 4151
 ;ID = 4150
 ;pos = 80*const(size.xscale),-72*const(size.yscale)
-;postype = p1  ;p2,front,back,left,right
+;postype = p1 ;p2,front,back,left,right
 ;bindtime = -1
 ;removetime = -2
 ;scale = 0.375*const(size.xscale),0.5*const(size.yscale)

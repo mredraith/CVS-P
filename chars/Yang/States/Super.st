@@ -2508,7 +2508,7 @@ ctrl = 1
 [StateDef 3315]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0,0
 
 [State 3315, Width]

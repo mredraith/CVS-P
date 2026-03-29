@@ -32,8 +32,8 @@ scale = .5,.5
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 1000
-trigger1 =  power <3000
+trigger1 = power >= 1000
+trigger1 = power <3000
 anim = 71001
 postype = p1
 pos = 19,-72
@@ -49,8 +49,8 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 4,3)
-trigger1 =  power >= 1000
-trigger1 =  power <3000
+trigger1 = power >= 1000
+trigger1 = power <3000
 anim = 71001
 postype = p1
 pos = 19,-72
@@ -66,7 +66,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 5,3)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = -19,-72
@@ -82,7 +82,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = 19,-72
@@ -143,8 +143,8 @@ ctrl = 0
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 1000
-trigger1 =  power <3000
+trigger1 = power >= 1000
+trigger1 = power <3000
 anim = 71001
 postype = p1
 pos = 19,-72
@@ -160,8 +160,8 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 4,3)
-trigger1 =  power >= 1000
-trigger1 =  power <3000
+trigger1 = power >= 1000
+trigger1 = power <3000
 anim = 71001
 postype = p1
 pos = 19,-72
@@ -177,7 +177,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 5,3)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = -19,-72
@@ -193,7 +193,7 @@ ID = 1113
 type = Explod
 triggerall = var(59) = 0
 trigger1 = (timemod = 3,2)
-trigger1 =  power >= 3000
+trigger1 = power >= 3000
 anim = 71001
 postype = p1
 pos = 19,-72
@@ -307,10 +307,10 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Dash Back
 [Statedef 105]
-type = A   
-physics = N   
-anim = 105    
-ctrl = 0  
+type = A 
+physics = N 
+anim = 105 
+ctrl = 0 
 velset = 0,0
 sprpriority = 1
 
@@ -423,7 +423,7 @@ time = 1
 [Statedef 180]
 type = S
 
-[State 180,  winKR]
+[State 180, winKR]
 type=changestate
 trigger1=prevstateno=183
 value=prevstateno
@@ -1780,7 +1780,7 @@ trigger1 = MoveHit = 1
 persistent = 0
 anim = 8420
 id = 8420
-pos =  10,-55
+pos = 10,-55
 postype = P2
 sprpriority = 1
 scale = .5,.5
@@ -2368,7 +2368,7 @@ trigger1 = animelem = 6
 anim = 581
 ID = 581
 pos = -135, 28
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Decapre by varo_hades                   |
+;| Decapre by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -514,7 +514,7 @@ value = 1000, 1
 
 [State 225, HitDef]
 type = HitDef
-guardflags =         ; MODIFIED BY SCRIPT: Unblockable
+guardflags = ; MODIFIED BY SCRIPT: Unblockable
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 4
 forceNoFall = !var(20)
@@ -1391,7 +1391,7 @@ ctrl = 1
 [State 259, End]
 type = ChangeState
 trigger1= movehit = 1
-trigger1= command  = "holdup" 
+trigger1= command = "holdup" 
 value = 40
 ctrl = 1
 

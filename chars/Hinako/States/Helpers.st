@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ; HELPER STATES =
@@ -7,7 +7,7 @@
 ;CAMERA FOCUS
 [Statedef 6001]
 type = S
-physics  = S
+physics = S
 anim = 0
 ctrl = 0
 

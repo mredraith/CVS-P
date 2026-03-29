@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Charlie by varo_hades                   |
+;| Charlie by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -491,7 +491,7 @@ ownpal = 1
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  animelem = 4
+trigger1 = animelem = 4
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -581,7 +581,7 @@ envShake.freq = 120
 [State 3100, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 16
+trigger1 = AnimElem = 16
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -625,7 +625,7 @@ envShake.freq = 120
 [State 3100, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  animelem = 17
+trigger1 = animelem = 17
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -669,7 +669,7 @@ envShake.freq = 120
 [State 3100, HitDef 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 19
+trigger1 = AnimElem = 19
 attr = A, HA
 hitFlag = MAF
 guardFlag = M
@@ -923,7 +923,7 @@ ownpal = 1
 [State 3100, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  animelem = 4 || animelem = 5 || animelem = 16 || animelem = 17
+trigger1 = animelem = 4 || animelem = 5 || animelem = 16 || animelem = 17
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1013,7 +1013,7 @@ envShake.freq = 120
 [State 3100, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 28
+trigger1 = AnimElem = 28
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1058,7 +1058,7 @@ envShake.freq = 120
 [State 3100, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  animelem = 29 || animelem = 30
+trigger1 = animelem = 29 || animelem = 30
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1102,7 +1102,7 @@ envShake.freq = 120
 [State 3100, HitDef 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 31
+trigger1 = AnimElem = 31
 attr = A, HA
 hitFlag = MAF
 guardFlag = M

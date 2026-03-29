@@ -2022,13 +2022,13 @@ value = 106
 ; Opponent Thrown
 ; (a custom gethit state)
 ; Description: This is the state that the opponent changes to after being
-;     hit by the throw HitDef. The important thing here is to use a
-;     ChangeAnim2 controller. The difference between ChangeAnim2 and
-;     ChangeAnim is that ChangeAnim2 changes the player's animation to
-;     an action in the AIR file of the attacker (in this case, kfm.air),
-;     whereas ChangeAnim always changes the player to an action in his
-;     own AIR file. Look at Action 820 in kfm.air for some extra
-;     comments.
+; hit by the throw HitDef. The important thing here is to use a
+; ChangeAnim2 controller. The difference between ChangeAnim2 and
+; ChangeAnim is that ChangeAnim2 changes the player's animation to
+; an action in the AIR file of the attacker (in this case, kfm.air),
+; whereas ChangeAnim always changes the player to an action in his
+; own AIR file. Look at Action 820 in kfm.air for some extra
+; comments.
 [Statedef 815]
 type = A
 movetype= H

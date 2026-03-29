@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Hayato by varo_hades                    |
+;| Hayato by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -2763,7 +2763,7 @@ air.velocity = ifelse(var(20), -2.36, -4), -8
 air.cornerPush.velOff = 0
 airguard.velocity = -5, -1.5
 airguard.cornerPush.velOff = 0
-yAccel =  ifelse(var(20),.5,.6)
+yAccel = ifelse(var(20),.5,.6)
 air.fall = 1
 fall.recover = 1
 down.juggle = 0
@@ -3057,7 +3057,7 @@ ctrl = 1
 ;JUDO THROW=
 [Statedef 810]
 type = S
-movetype =  A
+movetype = A
 physics = N
 anim = 810
 ctrl = 0
@@ -3349,7 +3349,7 @@ value = 5050
 
 [State 5050, 1] ;Change anim when done with transition
 type = ChangeAnim
-trigger1 = Time = 0     ;If no transition anim
+trigger1 = Time = 0 ;If no transition anim
 trigger1 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger1 = Anim != 5090 ;Not if hit off ground anim
 value = 5050
@@ -3578,7 +3578,7 @@ ctrl = 1
 ;Being Hit
 [StateDef 825]
 type = S
-movetype =  H
+movetype = H
 physics = N
 velset = 0,0
 sprpriority = -1
@@ -3602,7 +3602,7 @@ ignoreHitPause = 1
 ;Being Hit, Backwards
 [StateDef 826]
 type = S
-movetype =  H
+movetype = H
 physics = N
 velset = 0,0
 ctrl = 0

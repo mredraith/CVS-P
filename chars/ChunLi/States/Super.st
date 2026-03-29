@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Chun-Li by Jmorphman                    |
+;| Chun-Li by Jmorphman |
 ; 
 ;
 ;SUPER STATES=
@@ -230,7 +230,7 @@ envShake.freq = 120
 [State 3000, Hits 4-5]
 type = HitDef
 triggerAll = !var(16) && var(15) < (1 + HitCount)
-trigger1 =  AnimElem = 18 || AnimElem = 20
+trigger1 = AnimElem = 18 || AnimElem = 20
 attr = S, HP
 hitFlag = MAF
 guardFlag = M

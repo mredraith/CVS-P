@@ -1,5 +1,5 @@
 ; _________________________________________
-;| B. B. Hood by varo_hades                |
+;| B. B. Hood by varo_hades |
 ; 
 ;
 ;HELPER STATES=

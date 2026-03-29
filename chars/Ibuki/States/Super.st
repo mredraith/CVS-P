@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Ibuki by varo_hades                     |
+;| Ibuki by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -191,8 +191,8 @@ ground.velocity = -2
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -2
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -234,8 +234,8 @@ ground.velocity = -2
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -2
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -274,8 +274,8 @@ ground.velocity = -2
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -2
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -313,8 +313,8 @@ ground.velocity = -12
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -918,8 +918,8 @@ ground.velocity = -2
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -2
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -964,8 +964,8 @@ ground.velocity = -2
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -2
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -1004,8 +1004,8 @@ ground.velocity = -2
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -2
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -1043,8 +1043,8 @@ ground.velocity = -12
 air.velocity = -2,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 6)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -3134,7 +3134,7 @@ attr = A, HA
 hitflag = MAF
 guardflag = M
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 20 < 7, 7, fvar(11) * 20)), 7
 pausetime = 12,12
@@ -3276,7 +3276,7 @@ attr = A, HA
 hitflag = MAF
 guardflag = M
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 20 < 7, 7, fvar(11) * 20)), 7
 pausetime = 4,4
@@ -3316,7 +3316,7 @@ attr = A, HA
 hitflag = MAF
 guardflag = M
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 20 < 7, 7, fvar(11) * 20)), 7
 pausetime = 4,4
@@ -3368,7 +3368,7 @@ value = 5000
 
 [State 0, PosSet]
 type = PosSet
-trigger1 =  time = 0
+trigger1 = time = 0
 y = 0
 
 [State 0, ChangeState]
@@ -3416,7 +3416,7 @@ juggle = 0
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 1,5
 
 [State 000, snd]
@@ -3470,7 +3470,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 20 < 7, 7, fvar(11) * 20)), 7
 pausetime = 6,18
@@ -3584,7 +3584,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 20 < 7, 7, fvar(11) * 20)), 7
 pausetime = 6,60
@@ -3599,7 +3599,7 @@ air.velocity = 0,-8
 yaccel = 0.55
 guard.velocity = -8
 airguard.velocity = -2, -8
-ground.cornerpush.veloff =  -20
+ground.cornerpush.veloff = -20
 guard.cornerpush.veloff = -20
 getPower = 0,0
 givePower = 36, 36
@@ -4054,7 +4054,7 @@ juggle = 0
 
 [State 0, PosSet]
 type = null;PosSet
-trigger1 =  time = 0
+trigger1 = time = 0
 x = 0
 
 [State 0, VelSet]
@@ -4271,7 +4271,7 @@ value = 3275
 
 [State 0, PosSet]
 type = null;PosSet
-trigger1 =  time = 0
+trigger1 = time = 0
 x = 0
 
 [State 0, VelSet]
@@ -4679,7 +4679,7 @@ ctrl = 0
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time = 0
+trigger1 = time = 0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 20
 
@@ -5421,7 +5421,7 @@ ctrl = 0
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time = 0
+trigger1 = time = 0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 20
 
@@ -6252,7 +6252,7 @@ ctrl = 0
 
 [State 0, NotHitBy]
 type = NotHitBy
-trigger1 =  time = 0
+trigger1 = time = 0
 value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 20
 

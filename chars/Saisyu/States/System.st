@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| Saisyu Kusanagi by Lurker               |
+;| Saisyu Kusanagi by Lurker |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -2170,7 +2170,7 @@ value = 191
 type = ChangeState
 triggerAll = NumEnemy
 triggerAll = RoundNo = 1 || (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
-trigger1 =  Enemy, Name = "Rugal Bernstein" || Enemy, Name = "Rugal" || Enemy, Name = "God Rugal" || Enemy, Name = "Ultimate Rugal" || Enemy, Name = "Omega Rugal"
+trigger1 = Enemy, Name = "Rugal Bernstein" || Enemy, Name = "Rugal" || Enemy, Name = "God Rugal" || Enemy, Name = "Ultimate Rugal" || Enemy, Name = "Omega Rugal"
 value = 192
 
 [State 5900, Intro Decider]
@@ -2461,7 +2461,7 @@ value = (Random % 4)
 
 [State 180, Victory Quote vs. Kyo Kusanagi]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Kyo_WLS" || Enemy, Name = "Kyo Kusanagi"  || (Enemy, Name = "cvskyo" && Enemy, PalNo <= 6) || Enemy, Name = "cvskyo_normal"
+trigger1 = Enemy, Name = "Kyo_WLS" || Enemy, Name = "Kyo Kusanagi" || (Enemy, Name = "cvskyo" && Enemy, PalNo <= 6) || Enemy, Name = "cvskyo_normal"
 trigger2 = Enemy, Name = "Kyo" || Enemy, Name = "Ex Kyo"
 value = 4
 
@@ -2863,7 +2863,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -3083,7 +3083,7 @@ Add.Basic[Start]
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l

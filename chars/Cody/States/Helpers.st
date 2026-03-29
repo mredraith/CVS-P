@@ -1,5 +1,5 @@
 ; _______________________________________________
-;|            Cody Travers by Trololo            |
+;| Cody Travers by Trololo |
 ; 
 ;
 ;HELPER STATES=
@@ -158,11 +158,11 @@ var(11) = Root, var(11)
 
 [State 1005, Damage Varificator]
 type = Null
-trigger1  = Var(11) = 0 && Var(12) := 56
-trigger2  = Var(11) = 1 && Var(12) := 73
-trigger3  = Var(11) = 2 && Var(12) := 78
-trigger4  = Var(11) = 3 && Var(12) := 90
-trigger5  = Var(11) = 4 && Var(12) := 95
+trigger1 = Var(11) = 0 && Var(12) := 56
+trigger2 = Var(11) = 1 && Var(12) := 73
+trigger3 = Var(11) = 2 && Var(12) := 78
+trigger4 = Var(11) = 3 && Var(12) := 90
+trigger5 = Var(11) = 4 && Var(12) := 95
 
 [State 1005, Projectile Flag Increment]
 type = ParentVarAdd

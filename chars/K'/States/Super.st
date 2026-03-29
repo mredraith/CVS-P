@@ -1,5 +1,5 @@
 ; _____________________________________
-;| K' by Chazzanova & Dampir           |
+;| K' by Chazzanova & Dampir |
 ; 
 ;
 ;SUPER STATES=

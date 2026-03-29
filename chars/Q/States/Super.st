@@ -1369,7 +1369,7 @@ ctrl = 1
 [StateDef 3115]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 sprPriority = 0
 faceP2 = 1
@@ -2340,7 +2340,7 @@ value = 5100
 [StateDef 3265]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 sprPriority = 0
 faceP2 = 1
@@ -2775,7 +2775,7 @@ value = 5100
 [StateDef 3285]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 sprPriority = 0
 faceP2 = 1
@@ -3329,7 +3329,7 @@ ctrl = 1
 [StateDef 3315]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3315, HitFallSet]
@@ -3353,7 +3353,7 @@ elem = AnimElemNo(0)
 [StateDef 3316]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0, 0
 
 [State 3316, PosSet]

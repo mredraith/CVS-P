@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Shingo Yabuki by Jmorphman              |
+;| Shingo Yabuki by Jmorphman |
 ; 
 ;
 ;SUPER STATES=
@@ -307,7 +307,7 @@ ctrl = 1
 [StateDef 5905]
 type = U
 moveType = H
-physics  = N
+physics = N
 velSet = 0,0
 
 [State 5905, ChangeAnim (Stand)]

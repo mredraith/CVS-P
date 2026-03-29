@@ -990,7 +990,7 @@ palFX.sinAdd= -255,-255,-255,48
 [State 3100, hithigh 2]
 type = hitdef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  animelem = 16 && anim = 3100
+trigger1 = animelem = 16 && anim = 3100
 attr = S, HA
 damage = ceil(ifelse(fvar(12) * 32 < 7, 7, fvar(12) * 32)), 7
 animtype = Hard
@@ -2386,7 +2386,7 @@ scale = 0.75,0.8
 [State 4001, Snd]
 type = playsnd
 trigger1 = animelemtime(16) = 10
-value =  4, 9
+value = 4, 9
 channel = 0
 
 [State 4001, throw]

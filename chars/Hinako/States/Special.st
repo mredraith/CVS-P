@@ -586,7 +586,7 @@ trigger1 = AnimTime = 0
 value = 1108
 
 [Statedef 1108]
-type    = A
+type = A
 physics = N
 ctrl = 0
 anim = 105
@@ -1039,7 +1039,7 @@ guardflag = HA
 pausetime = 12,12
 ground.type = low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5
 guard.velocity = -11
@@ -1870,14 +1870,14 @@ value = 1603
 ;-------------------------------------------------------------------------------
 ;Earthquake 2
 [Statedef 1615]
-type     = S
+type = S
 movetype = A
-physics  = S
-juggle   = 0
+physics = S
+juggle = 0
 poweradd = 100
-velset   = 0,0
-anim     = 1615
-ctrl     = 0
+velset = 0,0
+anim = 1615
+ctrl = 0
 sprpriority = 5
 
 [State 1000, NotHitBy]

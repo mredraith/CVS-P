@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Chun-Li by Jmorphman                    |
+;| Chun-Li by Jmorphman |
 ; 
 ;
 ;HELPER STATES=

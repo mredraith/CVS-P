@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Gen by mwryly & varo_hades              |
+;| Gen by mwryly & varo_hades |
 ; 
 ;NORMAL MOVES
 
@@ -281,7 +281,7 @@ palFX.sinAdd= -255, -255, -255, 48
 [State 220, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 =  AnimElem = 4 && PrevStateNo!= 700
+trigger1 = AnimElem = 4 && PrevStateNo!= 700
 trigger1 = !numtarget(220)
 forceNoFall = !var(20)
 attr = S, NA
@@ -4193,7 +4193,7 @@ value = 892
 [State 801, VarSet]
 type = VarSet
 triggerall = (NumTarget)
-triggerall = (var(11) = 0) && (Time  < 5)
+triggerall = (var(11) = 0) && (Time < 5)
 trigger1 = (Target,command = "a")||(Target,command = "b")||(Target,command = "c")
 trigger2 = (Target,command = "x")||(Target,command = "y")||(Target,command = "z")
 v = 11

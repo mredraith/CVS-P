@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Iori Yagami by Knuckles8864             |
+;| Iori Yagami by Knuckles8864 |
 ; 
 ;
 ;SPECIAL MOVES
@@ -292,7 +292,7 @@ ownPal = 1
 
 [State 1100, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(2)  >= 0 && AnimElemTime(3) < 0
+trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -1917,7 +1917,7 @@ physics = N
 [State 1220, VelSet]
 type = VelSet
 trigger1 = AnimElem = 3
-y = IfElse(var(10) = 0, -5, IfElse(var(10) = 1, -5, -6))                ;14
+y = IfElse(var(10) = 0, -5, IfElse(var(10) = 1, -5, -6)) ;14
 x = 5.5
 
 [State 1220, pos]
@@ -2108,7 +2108,7 @@ x = 0
 
 [State 1230, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(4)  >= 0 && AnimElemTime(5) < 0
+trigger1 = AnimElemTime(4) >= 0 && AnimElemTime(5) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -2362,7 +2362,7 @@ physics = N
 [State 1250, VelSet]
 type = VelSet
 trigger1 = AnimElem = 3
-y = -7               
+y = -7 
 x = 5.5
 
 [State 1250, pos]
@@ -2743,7 +2743,7 @@ value = 1332
 type = TargetBind
 trigger1 = NumTarget
 trigger1 = AnimElemTime(1) >= 0 && AnimElemTime(2) < 0
-pos =  75,-97
+pos = 75,-97
 
 [State 1320, TargetBind]
 type = TargetBind
@@ -3839,10 +3839,10 @@ size.yscale = .5
 type = HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1 = !Time
-attr = S, NA        
-hitFlag = MAF       
-guardFlag = M         
-priority = 4, Hit   
+attr = S, NA 
+hitFlag = MAF 
+guardFlag = M 
+priority = 4, Hit 
 damage = ceil(ifElse(fvar(11) * ifElse(var(10) = 2, 70, ifElse(var(10), 63, 56)) < 7, 7, fvar(11) * ifElse(var(10) = 2, 69, ifElse(var(10), 63, 56)))), 7
 ID = 200*!var(20)
 getPower = 20 * !var(20), 0
@@ -3869,7 +3869,7 @@ fall = 0
 fall.recover = 1
 fall.recoverTime = 120
 hitSound = -1 + 0 * (var(31) := 2)
-guardSound=  -1 + 0 * (var(32) := 0)
+guardSound= -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 100), var(36) := -78
@@ -4234,10 +4234,10 @@ size.yscale = .5
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1 = !Time
-attr = S,NA        
-hitflag = MAF       
-guardflag = M         
-priority = 4 ,Hit   
+attr = S,NA 
+hitflag = MAF 
+guardflag = M 
+priority = 4 ,Hit 
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 7
 ID = 200 * !var(20)
 getpower = 0,0

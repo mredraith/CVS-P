@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| B. B. Hood by varo_hades                |
+;| B. B. Hood by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -2996,7 +2996,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -3610,7 +3610,7 @@ name = "Butterfly 1"
 ID = 40000
 stateno = 40000
 pos = -20,-80
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -3627,7 +3627,7 @@ name = "Butterfly 2"
 ID = 40010
 stateno = 40010
 pos = 30,-50
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -3644,7 +3644,7 @@ name = "Butterfly 3"
 ID = 40020
 stateno = 40020
 pos = -10,-70
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -3661,7 +3661,7 @@ trigger1 = P2Stateno = 3003 && P2MoveType = H
 trigger2 = P2Stateno = 3053 && P2MoveType = H
 anim = 255
 pos = 10,-54
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 sprpriority = 2
 ownpal = 1
 persistent = 0

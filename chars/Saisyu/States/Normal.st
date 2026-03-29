@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Saisyu Kusanagi by Lurker               |
+;| Saisyu Kusanagi by Lurker |
 ; 
 ;
 ;NORMAL MOVES=
@@ -1298,7 +1298,7 @@ y = 0.5
 type = StateTypeSet
 trigger1 = AnimElem = 4
 stateType = A
-physics = N      
+physics = N 
 
 [State 248, HitDef]
 type = HitDef

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SPECIAL MOVES=
@@ -71,9 +71,9 @@ value = 1001
 type = StateTypeSet
 triggerall = anim = 1001
 trigger1 = animelem = 1
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = S ;A,C,S,N
 
 [State 1000, PlaySnd]
 type = PlaySnd
@@ -210,9 +210,9 @@ value = Ifelse((command = "holddown" && command = "holdfwd" && (command = "holdx
 type = StateTypeSet
 triggerall = anim = 1002 || anim = 1003
 trigger1 = animelem = 1
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = S ;A,C,S,N
 
 [State 1000, PlaySnd]
 type = PlaySnd
@@ -459,9 +459,9 @@ value = 1001
 type = StateTypeSet
 triggerall = anim = 1001
 trigger1 = animelem = 1
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = S ;A,C,S,N
 
 [State 1200, PlaySnd]
 type = PlaySnd
@@ -598,9 +598,9 @@ value = 1101
 type = StateTypeSet
 triggerall = anim = 1101
 trigger1 = animelem = 1
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = S ;A,C,S,N
 
 [State 1000, PlaySnd]
 type = PlaySnd
@@ -781,9 +781,9 @@ value = 1102
 type = StateTypeSet
 triggerall = anim = 1102
 trigger1 = animelem = 1
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = S ;A,C,S,N
 
 [State 1000, PlaySnd]
 type = PlaySnd
@@ -1004,9 +1004,9 @@ value = 1101
 type = StateTypeSet
 triggerall = anim = 1101
 trigger1 = animelem = 1
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = S         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = S ;A,C,S,N
 
 [State 1000, PlaySnd]
 type = PlaySnd
@@ -1183,8 +1183,8 @@ y = -12;*(5.0/4.0)
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 3
-statetype = A       ;S,A,C,L
-;physics = A         ;A,C,S,N
+statetype = A ;S,A,C,L
+;physics = A ;A,C,S,N
 
 [State 1200, Head]
 type=hitdef
@@ -1238,7 +1238,7 @@ y = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 4
-physics = A         ;A,C,S,N
+physics = A ;A,C,S,N
 
 [State 1300, StateTypeSet: Idle]
 type = StateTypeSet
@@ -1346,8 +1346,8 @@ y = -12;*(5.0/4.0)
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 3
-statetype = A       ;S,A,C,L
-;physics = A         ;A,C,S,N
+statetype = A ;S,A,C,L
+;physics = A ;A,C,S,N
 
 [State 1200, Head]
 type=hitdef
@@ -1444,7 +1444,7 @@ y = 0
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelem = 4
-physics = A         ;A,C,S,N
+physics = A ;A,C,S,N
 
 [State 1300, StateTypeSet: Idle]
 type = StateTypeSet

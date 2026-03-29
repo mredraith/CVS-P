@@ -30,7 +30,7 @@ triggerall = var(20) != 1
 trigger1 = command = "CPU1"
 trigger2 = command = "CPU2"
 trigger3 = command = "CPU3"
-;trigger4 = var(20) != 1;   <<<  teste
+;trigger4 = var(20) != 1; <<< teste
 v = 20
 value = 1 
 

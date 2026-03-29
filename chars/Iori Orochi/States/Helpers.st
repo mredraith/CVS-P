@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Iori Yagami by Knuckles8864             |
+;| Iori Yagami by Knuckles8864 |
 ; 
 ;
 ;HELPER STATES=
@@ -1263,7 +1263,7 @@ attr = S, HA
 hitFlag = MAFD
 guardFlag = MA
 priority = 4, Hit
-damage =  ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 7
+damage = ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 7
 getPower = 0, 0
 givePower = 36, 36
 pauseTime = 0, 4

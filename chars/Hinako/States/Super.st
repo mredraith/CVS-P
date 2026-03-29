@@ -1574,7 +1574,7 @@ pausetime = 12,14
 animtype = hard
 p1facing = 1
 p2facing = 1
-sparkno =  -1 + 0*(var(33):=8001)
+sparkno = -1 + 0*(var(33):=8001)
 hitsound = S760,0
 sparkxy = -10 + 0*(var(35):=63), var(36):=-69
 p1stateno = 2410
@@ -1675,7 +1675,7 @@ priority = 3, Hit
 pausetime = 10,12
 ground.type = low
 ground.slidetime = 21
-ground.hittime  = 21
+ground.hittime = 21
 guard.hittime = (21) - 6
 ground.velocity = -5
 air.velocity = -4,15
@@ -1743,7 +1743,7 @@ value = 0
 ctrl = 1
 ;---------------------------------------------------------------------------
 [Statedef 2450]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -1770,7 +1770,7 @@ trigger1 = time = 200
 value = 5000
 ;---------------------------------------------------------------------------
 [Statedef 2460]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -1844,7 +1844,7 @@ waveform = sinesquare
 ampl = 140
 ;-------------------------------------------------------------------------------
 [Statedef 2465]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -1933,7 +1933,7 @@ trigger1 = time = 8
 value = 2466
 ;-------------------------------------------------------------------------------
 [Statedef 2466]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2012,7 +2012,7 @@ trigger1 = time = 8
 value = 2467
 ;-------------------------------------------------------------------------------
 [Statedef 2467]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2060,7 +2060,7 @@ trigger1 = time = 7
 value = 2468
 ;-------------------------------------------------------------------------------
 [Statedef 2468]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2123,7 +2123,7 @@ trigger1 = time = 200
 value = 5150
 ;-------------------------------------------------------------------------------
 [Statedef 2470]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -2182,7 +2182,7 @@ trigger1 = HitShakeOver
 value = 2475
 ;---------------------------------------------------------------------------
 [Statedef 2475]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0

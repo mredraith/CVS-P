@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Guile by Jmorphman                      |
+;| Guile by Jmorphman |
 ; 
 ;
 ;HELPER STATES=
@@ -154,7 +154,7 @@ var(10) = Root, var(10)
 [State 1005, VelSet]
 type = VelSet
 trigger1 = 1
-x = ifElse(Root, StateNo =  193, 5.25, 3.25 + var(10))
+x = ifElse(Root, StateNo = 193, 5.25, 3.25 + var(10))
 
 [State 1005, Counter Flag]
 type = VarSet

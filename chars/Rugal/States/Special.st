@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rugal by varo_hades                     |
+;| Rugal by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -5025,7 +5025,7 @@ time = 25
 [State 1703, TargetBind1]
 type = TargetBind
 trigger1 = AnimElem = 1
-pos =  68,-66
+pos = 68,-66
 time = 1
 
 [State 1703, ChangeState]
@@ -5250,7 +5250,7 @@ trigger1 = 1
 time = 2
 
 [State 1800, Vel]
-type =  velset
+type = velset
 trigger1 = animelemtime(2) > 0 && animelemtime(6) < 0
 x = ifelse(var(10) = 2, -7, ifelse(var(10) = 1, -4, ifelse(var(10) = -2, 7, 4))) *sin ((time -2) / 2)
 

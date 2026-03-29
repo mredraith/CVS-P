@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Gen by mwryly & varo_hades              |
+;| Gen by mwryly & varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -148,7 +148,7 @@ palFX.sinAdd= -255, -255, -255, 48
 [State 1101, HitDef High]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 3 ||  AnimElem = 7
+trigger1 = AnimElem = 3 || AnimElem = 7
 trigger1 = p2BodyDist x <= 50
 ID = 1000
 attr = S, SA
@@ -238,7 +238,7 @@ palFX.sinAdd= -255, -255, -255, 48
 [State 1101, HitDef High]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 3 ||  AnimElem = 7
+trigger1 = AnimElem = 3 || AnimElem = 7
 trigger1 = p2BodyDist x > 50
 ID = 1000
 attr = S, SA
@@ -462,7 +462,7 @@ palFX.sinAdd= -255, -255, -255, 48
 [State 1101, HitDef High]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 3 || var(20))
-trigger1 = AnimElem = 3 ||  AnimElem = 7
+trigger1 = AnimElem = 3 || AnimElem = 7
 trigger1 = p2BodyDist x <= 50
 ID = 1000
 attr = S, SA
@@ -552,7 +552,7 @@ palFX.sinAdd= -255, -255, -255, 48
 [State 1101, HitDef High]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 3 || var(20))
-trigger1 = AnimElem = 3 ||  AnimElem = 7
+trigger1 = AnimElem = 3 || AnimElem = 7
 trigger1 = p2BodyDist x > 50
 ID = 1000
 attr = S, SA
@@ -2277,13 +2277,13 @@ sprPriority = 1
 [State 11130, VelSet]
 type = VelSet
 trigger1 = !Time && p2BodyDist x > 3
-x =  0.165 * p2bodydist x / 2.5
+x = 0.165 * p2bodydist x / 2.5
 y = -5
 
 [State 11130, VelSet]
 type = VelSet
 trigger1 = !Time && p2BodyDist x <= 3
-x =  2
+x = 2
 y = -5
 
 [State 11130, VelSet]

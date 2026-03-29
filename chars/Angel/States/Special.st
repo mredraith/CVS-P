@@ -3124,7 +3124,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -3138,7 +3138,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 
@@ -3343,7 +3343,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -3357,7 +3357,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 
@@ -3594,7 +3594,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -3608,7 +3608,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 
@@ -3916,7 +3916,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -3930,7 +3930,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 
@@ -4198,7 +4198,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -4212,7 +4212,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 
@@ -4476,7 +4476,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -4490,7 +4490,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 
@@ -4769,7 +4769,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -4783,7 +4783,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 
@@ -4938,7 +4938,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdfwd"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000006)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000004))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2310
 
@@ -4952,7 +4952,7 @@ trigger1 = (!NumExplod(90000007) || !NumExplod(90000008) || !NumExplod(90000009)
 trigger1 = (!NumExplod(90000001) || !NumExplod(90000002) || !NumExplod(90000003))
 ;command = "holdback"
 trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90000004)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90000006))
-;(command = "x" || command = "y" || command = "z")  && (command = "a" || command = "b" || command = "c")
+;(command = "x" || command = "y" || command = "z") && (command = "a" || command = "b" || command = "c")
 trigger1 = (NumExplod(90000200) || NumExplod(90000210) || NumExplod(90000220)) && (NumExplod(90000230) || NumExplod(90000240) || NumExplod(90000250))
 var(14) = 2320
 

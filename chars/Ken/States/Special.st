@@ -176,7 +176,7 @@ faceP2 = 1
 [State 1100, Button Detect]
 type = VarSet
 trigger1 = !Time && !AILevel
-var(10) = ifElse((command = "z" || command = "rlsz"  || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
+var(10) = ifElse((command = "z" || command = "rlsz" || PrevStateNo = 750), 2, ifElse((command = "y" || command = "rlsy"), 1, 0))
 
 [State 1100, Button Detect (AI)]
 type = VarSet
@@ -3110,7 +3110,7 @@ envShake.freq = 120
 [State 1245, Hit 4]
 type = HitDef
 triggerAll = !var(16) && (var(15) < 4 || var(20))
-trigger1 = var(10) = 2  && AnimElem = 22
+trigger1 = var(10) = 2 && AnimElem = 22
 attr = A, SA
 hitFlag = MAF
 guardFlag = MA
@@ -3389,7 +3389,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -3528,7 +3528,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -3574,7 +3574,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -3620,7 +3620,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -3666,7 +3666,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -3712,7 +3712,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -3758,7 +3758,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -3804,7 +3804,7 @@ guard.hittime = (18) - 6
 ground.slideTime = 18
 guard.ctrlTime = 20
 air.hitTime = 120
-ground.velocity = -4.32,  -8.81
+ground.velocity = -4.32, -8.81
 ground.cornerPush.velOff = 0
 guard.velocity = -10.52
 guard.cornerPush.velOff = 0
@@ -4988,7 +4988,7 @@ type = Explod
 trigger1= !Time
 anim = F72
 pos = 0, floor(ScreenPos y) - 50
-posType =  Back
+posType = Back
 sprPriority = 3
 
 [State 1437, PosFreeze]

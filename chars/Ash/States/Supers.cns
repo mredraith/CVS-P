@@ -1794,7 +1794,7 @@ hitsound=-1 + 0*(var(31):=2)
 guardsound=S130,1
 ground.type = High
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5
 guard.velocity=-10
@@ -1833,7 +1833,7 @@ name = "Max Germinal Explods"
 ID = 3255
 stateno = 3255
 pos = -80,-50
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -1920,7 +1920,7 @@ ctrl = 1
 
 ; Max Germinal Guarded
 [Statedef 3252]
-type   =S
+type =S
 movetype= A
 physics=S
 velset=0,0
@@ -1938,7 +1938,7 @@ ctrl = 1
 
 ; Max Germinal Dodged
 [Statedef 3253]
-type   =S
+type =S
 movetype= A
 physics=S
 velset=0,0
@@ -1960,7 +1960,7 @@ ctrl = 1
 ;------------------------------------------------------------------
 ;MAX Germinal-P2
 [Statedef 3251]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -1992,8 +1992,8 @@ trigger1 = Time = 50
 value = IfElse(random>200,5001,5011)
 
 ;;
-;CHIZURU COMPATIBILITY	          ;
-;by Vans                                ;
+;CHIZURU COMPATIBILITY	 ;
+;by Vans ;
 ;;
 [State 1000, CHIZURU COMPATIBILITY] 	;
 type = Projectile 			;
@@ -2929,7 +2929,7 @@ persistent=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Time = 180
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 0, ChangeState]
 type = ChangeState

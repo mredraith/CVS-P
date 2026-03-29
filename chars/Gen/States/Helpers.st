@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Gen by mwryly & varo_hades              |
+;| Gen by mwryly & varo_hades |
 ; 
 ;HELPER STATES
 

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Kasumi Todoh by Falcon Rapper              |
+;| Kasumi Todoh by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SPECIAL MOVES=

@@ -1,6 +1,6 @@
 ;Fuharenjin
 [Statedef 3000]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -552,10 +552,10 @@ value = 3131
 
 ;Kaisen Land
 [Statedef 3131]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 velset = 0,0
 anim = 1305
@@ -597,7 +597,7 @@ ctrl = 1
 
 ;Toriga Kogeki Start
 [Statedef 3550]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -690,7 +690,7 @@ ctrl = 1
 
 ;Toriga Kogeki Go
 [Statedef 3551]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -732,9 +732,9 @@ sprpriority = 5
 type = HitDef
 trigger1 = time = 0
 attr = S, HA
-animtype  = hard
+animtype = hard
 damage=ceil(ifElse(fvar(11) * 10 < 7, 7, fvar(11) * 10)), 7
-priority  = 2, Hit
+priority = 2, Hit
 hitflag = MAF
 guardflag = M
 hitsound = s2,2
@@ -745,13 +745,13 @@ sparkXY=-10 + 0 * (var(35) := 80), var(36):=-45
 guardsound=s130, 0
 ground.type = high
 ground.slidetime = 6
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = 0
 air.velocity = 0
 air.hittime = 12
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 forcestand=1
 getpower = 0
 numhits=0
@@ -779,7 +779,7 @@ ctrl = 1
 
 ;Toriga Kogeki Blocked
 [Statedef 3552]
-type    = S
+type = S
 movetype= A
 physics = N
 poweradd= 0
@@ -802,7 +802,7 @@ ctrl = 1
 
 ;Toriga Kogeki Connect
 [Statedef 3553]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -907,7 +907,7 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.slidetime = 15 + 2 * var(9)
-ground.hittime  = 15+ 2 * var(9)
+ground.hittime = 15+ 2 * var(9)
 guard.hittime = (15+ 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -1
@@ -946,7 +946,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 16 + 2 * var(9)
-ground.hittime  = 16 + 2 * var(9)
+ground.hittime = 16 + 2 * var(9)
 guard.hittime = (16 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -1
@@ -986,7 +986,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -1025,7 +1025,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -1064,7 +1064,7 @@ fall.animType = back
 ground.type = high
 air.type = high
 ground.slidetime = 29 + 2 * var(9)
-ground.hittime  = 29 + 2 * var(9)
+ground.hittime = 29 + 2 * var(9)
 guard.hittime = (29 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -1105,7 +1105,7 @@ fall.animType = back
 ground.type = trip
 air.type = trip
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = 2,-7
 guard.velocity = -2
@@ -1129,7 +1129,7 @@ ctrl = 1
 
 ;Toriga Kogeki Connect2
 [Statedef 3554]
-type    = A
+type = A
 movetype= A
 physics = S
 velset = 0,0
@@ -1213,7 +1213,7 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.slidetime = 15 + 2 * var(9)
-ground.hittime  = 15+ 2 * var(9)
+ground.hittime = 15+ 2 * var(9)
 guard.hittime = (15+ 2 * var(9)) - 6
 ground.velocity = -8,-4
 guard.velocity = -1
@@ -1252,7 +1252,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 16 + 2 * var(9)
-ground.hittime  = 16 + 2 * var(9)
+ground.hittime = 16 + 2 * var(9)
 guard.hittime = (16 + 2 * var(9)) - 6
 ground.velocity = 8,-4
 guard.velocity = -1
@@ -1292,7 +1292,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = -8,-4
 guard.velocity = -2
@@ -1334,7 +1334,7 @@ ground.velocity = -6, -8
 guard.velocity = -6
 air.velocity = -6, -8
 yaccel = .35
-fall = 1  
+fall = 1 
 kill = 1
 p2facing = 1
 fall.recover = 0
@@ -1350,10 +1350,10 @@ value = 3555
 
 ;Toriga Kogeki Land
 [Statedef 3555]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 7
+juggle = 7
 poweradd= 0
 facep2 = 1
 velset = 0,0
@@ -1405,7 +1405,7 @@ ctrl = 1
 [StateDef 3556]
 type = S
 moveType = H
-physics  = N
+physics = N
 velSet = 0,0
 
 [State 3115, PosSet]
@@ -1436,7 +1436,7 @@ ctrl = 1
 
 ;Max Toriga Kogeki Start
 [Statedef 3650]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1523,7 +1523,7 @@ ctrl = 1
 
 ;Max Toriga Kogeki Go
 [Statedef 3651]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1565,9 +1565,9 @@ sprpriority = 5
 type = HitDef
 trigger1 = time = 0
 attr = S, HA
-animtype  = hard
+animtype = hard
 damage=ceil(ifElse(fvar(11) * 10 < 7, 7, fvar(11) * 10)), 7
-priority  = 2, Hit
+priority = 2, Hit
 hitflag = MAF
 guardflag = M
 hitsound = s2,2
@@ -1578,13 +1578,13 @@ sparkXY=-10 + 0 * (var(35) := 80), var(36):=-45
 guardsound=s130, 0
 ground.type = high
 ground.slidetime = 6
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = 0
 air.velocity = 0
 air.hittime = 12
-ground.cornerpush.veloff =  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0
 forcestand=1
 getpower = 0
 numhits=0
@@ -1612,7 +1612,7 @@ ctrl = 1
 
 ;Max Toriga Kogeki Blocked
 [Statedef 3652]
-type    = S
+type = S
 movetype= A
 physics = N
 poweradd= 0
@@ -1636,7 +1636,7 @@ ctrl = 1
 
 ;Max Toriga Kogeki Connect
 [Statedef 3653]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1761,7 +1761,7 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20+ 2 * var(9)
+ground.hittime = 20+ 2 * var(9)
 guard.hittime = (20+ 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -1
@@ -1800,7 +1800,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 16 + 2 * var(9)
-ground.hittime  = 16 + 2 * var(9)
+ground.hittime = 16 + 2 * var(9)
 guard.hittime = (16 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -1
@@ -1840,7 +1840,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -1879,7 +1879,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -1918,7 +1918,7 @@ fall.animType = back
 ground.type = high
 air.type = high
 ground.slidetime = 29 + 2 * var(9)
-ground.hittime  = 29 + 2 * var(9)
+ground.hittime = 29 + 2 * var(9)
 guard.hittime = (29 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -1958,7 +1958,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -1997,7 +1997,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -2036,7 +2036,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -2075,7 +2075,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -2114,7 +2114,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -2153,7 +2153,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = -1
 guard.velocity = -2
@@ -2192,7 +2192,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = 0
 guard.velocity = -2
@@ -2231,7 +2231,7 @@ fall.animType = Back
 ground.type = Low
 air.type = High
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = -1
 guard.velocity = -2
@@ -2255,7 +2255,7 @@ ctrl = 1
 
 ;Max Toriga Kogeki Connect2
 [Statedef 3654]
-type    = A
+type = A
 movetype= A
 physics = S
 velset = 0,0
@@ -2367,7 +2367,7 @@ fall.animType = Back
 ground.type = High
 air.type = High
 ground.slidetime = 15 + 2 * var(9)
-ground.hittime  = 15+ 2 * var(9)
+ground.hittime = 15+ 2 * var(9)
 guard.hittime = (15+ 2 * var(9)) - 6
 ground.velocity = -1,-7
 guard.velocity = -1
@@ -2407,7 +2407,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 16 + 2 * var(9)
-ground.hittime  = 16 + 2 * var(9)
+ground.hittime = 16 + 2 * var(9)
 guard.hittime = (16 + 2 * var(9)) - 6
 ground.velocity = -2,-5
 guard.velocity = -1
@@ -2449,7 +2449,7 @@ ground.type = Low
 air.type = High
 air.fall = 1
 ground.slidetime = 20 + 2 * var(9)
-ground.hittime  = 20 + 2 * var(9)
+ground.hittime = 20 + 2 * var(9)
 guard.hittime = (20 + 2 * var(9)) - 6
 ground.velocity = -1,-3
 guard.velocity = -2
@@ -2492,7 +2492,7 @@ guard.velocity = -6
 air.velocity = -1, -2
 yaccel = .35
 air.fall = 1
-fall = 1  
+fall = 1 
 kill = 1
 p2facing = 1
 fall.recover = 0
@@ -2530,7 +2530,7 @@ guard.velocity = -6
 air.velocity = -7, 15
 yaccel = .35
 air.fall = 1
-fall = 1  
+fall = 1 
 kill = 1
 p2facing = 1
 fall.recover = 0
@@ -2956,7 +2956,7 @@ ctrl = 1
 ;-------------------------------------------------
 ;p2 just hit state
 [Statedef 3126]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -2979,7 +2979,7 @@ value = 3127
 ;-------------------------------------------------
 ;p2 just hit state
 [Statedef 3127]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -3020,7 +3020,7 @@ value = 3128
 ;-------------------------------------------------
 ;p2 just hit state
 [Statedef 3128]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -3059,7 +3059,7 @@ value = 3129
 ;-------------------------------------------------
 ;p2 falling
 [Statedef 3129]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -3104,7 +3104,7 @@ value = 3130
 ;-------------------------------------------------
 ;p2 hit
 [Statedef 3130]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -3134,7 +3134,7 @@ value = 3132
 ;-------------------------------------------------
 ;p2 hit
 [Statedef 3132]
-type    = L
+type = L
 movetype= H
 physics = N
 ctrl = 0
@@ -3165,7 +3165,7 @@ value = 3133
 ;-------------------------------------------------
 ;p2 hit
 [Statedef 3133]
-type    = L
+type = L
 movetype= H
 physics = N
 ctrl = 0

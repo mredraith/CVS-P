@@ -299,7 +299,7 @@ size.yscale = 0.6
 
 [State 1050, Hadouken]
 type = helper
-trigger1 =  var(1) && !var(43)
+trigger1 = var(1) && !var(43)
 trigger1 = animelem = 1 || animelem = 3
 helpertype = normal
 stateno = 1065
@@ -313,7 +313,7 @@ size.yscale = 0.6
 
 [State 1050, Hadouken]
 type = helper
-trigger1 =  var(1) && !var(43)
+trigger1 = var(1) && !var(43)
 trigger1 = animelem = 1 || animelem = 3
 helpertype = normal
 stateno = 1055
@@ -1506,7 +1506,7 @@ trigger2 = var(1) && (movehit && numtarget(1310))
 trigger2 = (target, movetype = H) && !(target, time)
 anim = 7104
 ID = 7104
-sprpriority = -2         ;
+sprpriority = -2 ;
 postype = p1
 pos = ((target, const(size.mid.pos.x)) + ceil(p2dist x)), floor(-pos y)
 vel = 0, 0
@@ -1608,7 +1608,7 @@ ground.hittime = 16
 guard.hittime = (16) - 6
 ground.velocity = -4
 air.type = Low
-air.velocity =  -4, -4
+air.velocity = -4, -4
 down.hittime = 30
 down.velocity = 0, 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
@@ -1654,7 +1654,7 @@ ground.hittime = 16
 guard.hittime = (16) - 6
 ground.velocity = -4
 air.type = Low
-air.velocity =  -4, -4
+air.velocity = -4, -4
 down.hittime = 30
 down.velocity = 0, 0
 getpower = 0,36 * !var(20);ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
@@ -2611,17 +2611,17 @@ value = 1370
 
 [State 1350, hurt]
 type = targetlifeadd
-trigger1 =  AnimElemTime(8) = 0;target,stateno = 5100
+trigger1 = AnimElemTime(8) = 0;target,stateno = 5100
 value = -ceil(137 * fvar(12))
 
 [State 1350, hurt]
 type = targetpoweradd
-trigger1 =  AnimElemTime(8) = 0;target,stateno = 5100
+trigger1 = AnimElemTime(8) = 0;target,stateno = 5100
 value = 36
 
 [State 1350, hurt]
 type = poweradd
-trigger1 =  AnimElemTime(8) = 0 && !var(20)
+trigger1 = AnimElemTime(8) = 0 && !var(20)
 value = 72
 
 [State 1350, State End]

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Kim Kaphwan by Jmorphman                |
+;| Kim Kaphwan by Jmorphman |
 ; 
 ;
 ;SPECIAL MOVES

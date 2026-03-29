@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| Iori Yagami by Knuckles8864             |
+;| Iori Yagami by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -2383,7 +2383,7 @@ value = 197
 
 [State 5901, Intro Decider]
 type = ChangeState
-trigger1 = RoundNo = 1  && var(40) != 1
+trigger1 = RoundNo = 1 && var(40) != 1
 value = 190 + (Random % 2)
 
 [State 5901, Orochi Intro]
@@ -3687,7 +3687,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l

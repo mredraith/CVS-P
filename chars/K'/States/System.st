@@ -6,7 +6,7 @@
 ;
 
 ; _____________________________________
-;| K' by Chazzanova & Dampir           |
+;| K' by Chazzanova & Dampir |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -2989,7 +2989,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -3616,7 +3616,7 @@ invertall = 0
 color = 0
 
 ;---------------------------------------
-;Electric react   (Remove this code if you have custom Electric animations)
+;Electric react (Remove this code if you have custom Electric animations)
 [State -2,FX]
 type = PalFX
 trigger1 = time =1
@@ -3702,7 +3702,7 @@ invertall = 0
 color = 0
 
 ;---------------------------------------
-;Electric react   (Remove this code if you have custom Electric animations)
+;Electric react (Remove this code if you have custom Electric animations)
 [State -2,FX]
 type = PalFX
 trigger1 = time =1
@@ -3719,11 +3719,11 @@ color = 0
 [State -2, deathmatchfire]
 type = Helper
 trigger1 = stagevar(info.name) = "Death Match"
-trigger1 = Numhelper(88910) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(88910) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Death Match"
-trigger2 = Numhelper(88910) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(88910) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -3732,18 +3732,18 @@ name = "Firerope"
 stateno = 88910
 helpertype = normal
 ownpal = 1
-ID = 88910   ;Numhelper and ID have to be the same
+ID = 88910 ;Numhelper and ID have to be the same
 
 ;---------------------------------
 ;Electric Ropes for Hanzo's World heroes Death Match 2 stage
 [State -2, deathmatchfire]
 type = Helper
 trigger1 = stagevar(info.name) = "Death Match 2"
-trigger1 = Numhelper(88920) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(88920) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Death Match 2"
-trigger2 = Numhelper(88920) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(88920) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -3752,18 +3752,18 @@ name = "Electricrope"
 stateno = 88920
 helpertype = normal
 ownpal = 1
-ID = 88920    ;Numhelper and ID have to be the same
+ID = 88920 ;Numhelper and ID have to be the same
 
 ;------------------------------------------
 ;Spiked Wall for Fumma's World Heroes Death Match 3 stage
 [State -2, deathmatchspikes]
 type = Helper
 trigger1 = stagevar(info.name) = "Death Match 3"
-trigger1 = Numhelper(88926) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(88926) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Death Match 3"
-trigger2 = Numhelper(88926) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(88926) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -3772,7 +3772,7 @@ name = "SpikedWall"
 stateno = 88926
 helpertype = normal
 ownpal = 1
-ID = 88926   ;Numhelper and ID have to be the same
+ID = 88926 ;Numhelper and ID have to be the same
 
 ;----------------------------------------
 ; Water Splash KoF Garou stage
@@ -3784,7 +3784,7 @@ trigger1 = stateno = 5100 || stateno = 5110
 anim = F89059
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -3805,7 +3805,7 @@ trigger1 = stateno = 40 || stateno = 52
 anim = F89056
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3826,7 +3826,7 @@ trigger1 = stagevar(info.name) = "KoF95_Garou"
 anim = F89228
 ID = 77446
 pos = 0,-8
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3858,7 +3858,7 @@ trigger2 = stateno = 5100 || stateno = 5110
 anim = F89104
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3882,7 +3882,7 @@ trigger2 = stateno = 40 || stateno = 52
 anim = F89103
 ID = 7448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3906,7 +3906,7 @@ trigger2 = stagevar(info.name) = "Northern Country Canyon Spring"
 anim = F89102
 ID = 77446
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -3920,15 +3920,15 @@ ownpal = 1
 removeongethit = 0
 
 ;------------------------------------
-;  Totem for "Green Hell" Stage Behind/Lower
+; Totem for "Green Hell" Stage Behind/Lower
 [State -2, Totem]
 type = Helper
 trigger1 = stagevar(info.name) = "Green Hell"
-trigger1 = Numhelper(889360) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889360) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Green Hell"
-trigger2 = Numhelper(889360) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889360) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -3937,17 +3937,17 @@ name = "Totem"
 stateno = 889360
 helpertype = normal
 ownpal = 1
-ID = 889360   ;Numhelper and ID have to be the same
+ID = 889360 ;Numhelper and ID have to be the same
 
-;  Totem for "Green Hell" Stage Front/Higher
+; Totem for "Green Hell" Stage Front/Higher
 [State -2, Totem]
 type = Helper
 trigger1 = stagevar(info.name) = "Green Hell"
-trigger1 = Numhelper(889365) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889365) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Green Hell"
-trigger2 = Numhelper(889365) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889365) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -3956,7 +3956,7 @@ name = "Totem"
 stateno = 889365
 helpertype = normal
 ownpal = 1
-ID = 889365   ;Numhelper and ID have to be the same
+ID = 889365 ;Numhelper and ID have to be the same
 
 ;--------------------------------
 ;Howard Arena stuff
@@ -4016,7 +4016,7 @@ trigger8 = numpartner = 1 && id<partner,id
 trigger8 = Pos Y = 0
 helpertype = normal ;player
 name = "ff3stagefinisher"
-ID = 889323       ;Numhelper and ID have to be the same
+ID = 889323 ;Numhelper and ID have to be the same
 stateno = 889323
 pos = 0,0
 postype = left
@@ -4030,11 +4030,11 @@ pausemove = 999999999
 [State -2, barrel subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Train"
-trigger1 = Numhelper(889120) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889120) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Train"
-trigger2 = Numhelper(889120) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889120) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -4043,7 +4043,7 @@ name = "Barrel 2"
 stateno = 889120
 helpertype = normal
 ownpal = 1
-ID = 889120   ;Numhelper and ID have to be the same
+ID = 889120 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4051,11 +4051,11 @@ size.yscale = 1.0
 [State -2, barrel subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Train"
-trigger1 = Numhelper(889140) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889140) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Train"
-trigger2 = Numhelper(889140) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889140) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -4064,7 +4064,7 @@ name = "Barrel 2"
 stateno = 889140
 helpertype = normal
 ownpal = 1
-ID = 889140   ;Numhelper and ID have to be the same
+ID = 889140 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4072,11 +4072,11 @@ size.yscale = 1.0
 [State -2, barrel subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Train"
-trigger1 = Numhelper(889150) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889150) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Train"
-trigger2 = Numhelper(889150) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889150) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -4085,7 +4085,7 @@ name = "Barrel 2"
 stateno = 889150
 helpertype = normal
 ownpal = 1
-ID = 889150   ;Numhelper and ID have to be the same
+ID = 889150 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4094,13 +4094,13 @@ size.yscale = 1.0
 [State -2, barrel rolling SBA ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889475) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889475) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamSide = 1
 trigger1 = RoundNo = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889475) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889475) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamSide = 1
 trigger2 = RoundNo = 1
 trigger2 = TeamMode = Simul
@@ -4111,7 +4111,7 @@ name = "BarrelRoll"
 stateno = 889475
 helpertype = normal
 ownpal = 1
-ID = 889475   ;Numhelper and ID have to be the same
+ID = 889475 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4120,12 +4120,12 @@ size.yscale = 1.0
 [State -2, barrel SBA ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889440) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889440) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889440) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889440) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4135,7 +4135,7 @@ name = "Barrel6"
 stateno = 889440
 helpertype = normal
 ownpal = 1
-ID = 889440   ;Numhelper and ID have to be the same
+ID = 889440 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4144,12 +4144,12 @@ size.yscale = 1.0
 [State -2, trashcan#1 SBA ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889458) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889458) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889458) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889458) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4159,7 +4159,7 @@ name = "SBAtrashcan1"
 stateno = 889458
 helpertype = normal
 ownpal = 1
-ID = 889458   ;Numhelper and ID have to be the same
+ID = 889458 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4168,12 +4168,12 @@ size.yscale = 1.0
 [State -2, trashcan#1 subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Sodom's Back Alley"
-trigger1 = Numhelper(889467) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889467) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Sodom's Back Alley"
-trigger2 = Numhelper(889467) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889467) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4183,7 +4183,7 @@ name = "SBAtrashcan1"
 stateno = 889467
 helpertype = normal
 ownpal = 1
-ID = 889467   ;Numhelper and ID have to be the same
+ID = 889467 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4192,12 +4192,12 @@ size.yscale = 1.0
 [State -2, GalfordBarrel1]
 type = Helper
 trigger1 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger1 = Numhelper(889109) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889109) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger2 = Numhelper(889109) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889109) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4207,17 +4207,17 @@ name = "GalfordBarrel1"
 stateno = 889109
 helpertype = normal
 ownpal = 1
-ID = 889109   ;Numhelper and ID have to be the same
+ID = 889109 ;Numhelper and ID have to be the same
 
 [State -2, GalfordBarrel2]
 type = Helper
 trigger1 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger1 = Numhelper(889113) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889113) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "SS2_GALFORD_STAGE"
-trigger2 = Numhelper(889113) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889113) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4227,7 +4227,7 @@ name = "GalfordBarrel2"
 stateno = 889113
 helpertype = normal
 ownpal = 1
-ID = 889113   ;Numhelper and ID have to be the same
+ID = 889113 ;Numhelper and ID have to be the same
 
 ;-----------------------------------------------
 ;Samurai Monger Life & Bomb toss for player 1
@@ -4252,7 +4252,7 @@ Pos = -385,-5
 name = "LifeMonger"
 stateno = 889160
 helpertype = normal
-postype = back;p1    ;p2,front,back,left,right
+postype = back;p1 ;p2,front,back,left,right
 ownpal = 1
 ID = 889160
 
@@ -4278,7 +4278,7 @@ Pos = -400,-5
 name = "LifeMonger"
 stateno = 889170
 helpertype = normal
-postype = back;p1    ;p2,front,back,left,right
+postype = back;p1 ;p2,front,back,left,right
 ownpal = 1
 ID = 889170
 
@@ -4287,11 +4287,11 @@ ID = 889170
 [State -2, telephonebooth subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Station - FF"
-trigger1 = Numhelper(889180) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889180) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Station - FF"
-trigger2 = Numhelper(889180) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889180) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -4300,7 +4300,7 @@ name = "telephone1"
 stateno = 889180
 helpertype = normal
 ownpal = 1
-ID = 889180   ;Numhelper and ID have to be the same
+ID = 889180 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4309,11 +4309,11 @@ size.yscale = 1.0
 [State -2, trashcan#1 subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Station - FF"
-trigger1 = Numhelper(889195) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889195) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Station - FF"
-trigger2 = Numhelper(889195) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889195) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -4322,7 +4322,7 @@ name = "telephone1"
 stateno = 889195
 helpertype = normal
 ownpal = 1
-ID = 889195   ;Numhelper and ID have to be the same
+ID = 889195 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4331,11 +4331,11 @@ size.yscale = 1.0
 [State -2, trashcan#1 subway ff]
 type = Helper
 trigger1 = stagevar(info.name) = "Subway Station - FF"
-trigger1 = Numhelper(889205) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889205) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Subway Station - FF"
-trigger2 = Numhelper(889205) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889205) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -4344,7 +4344,7 @@ name = "telephone1"
 stateno = 889205
 helpertype = normal
 ownpal = 1
-ID = 889205   ;Numhelper and ID have to be the same
+ID = 889205 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4353,12 +4353,12 @@ size.yscale = 1.0
 [State -2, Ryu Sign]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Ryu"
-trigger1 = Numhelper(889211) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889211) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Ryu"
-trigger2 = Numhelper(889211) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889211) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4368,19 +4368,19 @@ name = "Ryusign"
 stateno = 889211
 helpertype = normal
 ownpal = 1
-ID = 889211   ;Numhelper and ID have to be the same
+ID = 889211 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Ryu Sign2]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Ryu"
-trigger1 = Numhelper(889221) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889221) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Ryu"
-trigger2 = Numhelper(889221) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889221) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4390,7 +4390,7 @@ name = "Ryusign2"
 stateno = 889221
 helpertype = normal
 ownpal = 1
-ID = 889221   ;Numhelper and ID have to be the same
+ID = 889221 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4399,11 +4399,11 @@ size.yscale = 1.0
 [State -2, Guile Crate]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Guile" 
-trigger1 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Guile" 
-trigger2 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -4412,7 +4412,7 @@ name = "GuileCrate"
 stateno = 889240
 helpertype = normal
 ownpal = 1
-ID = 889240   ;Numhelper and ID have to be the same
+ID = 889240 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4421,12 +4421,12 @@ size.yscale = 1.0
 [State -2, Ken Barrels/Crates]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) Ken"
-trigger1 = Numhelper(889248) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889248) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) Ken"
-trigger2 = Numhelper(889248) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889248) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4436,7 +4436,7 @@ name = "KenBarrelsCrates"
 stateno = 889248
 helpertype = normal
 ownpal = 1
-ID = 889248   ;Numhelper and ID have to be the same
+ID = 889248 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4445,12 +4445,12 @@ size.yscale = 1.0
 [State -2, M.Bison Statue]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) M.Bison"
-trigger1 = Numhelper(889400) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889400) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) M.Bison"
-trigger2 = Numhelper(889400) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889400) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4460,19 +4460,19 @@ name = "MBisonStatue1"
 stateno = 889400
 helpertype = normal
 ownpal = 1
-ID = 889400   ;Numhelper and ID have to be the same
+ID = 889400 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, M.Bison Statue2]
 type = Helper
 trigger1 = stagevar(info.name) = "(SF2) M.Bison"
-trigger1 = Numhelper(889430) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889430) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "(SF2) M.Bison"
-trigger2 = Numhelper(889430) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889430) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4482,7 +4482,7 @@ name = "MBisonStatue2"
 stateno = 889430
 helpertype = normal
 ownpal = 1
-ID = 889430   ;Numhelper and ID have to be the same
+ID = 889430 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4499,12 +4499,12 @@ size.yscale = 1.0
 [State -2, Death Chamber]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889480) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889480) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889480) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889480) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4514,19 +4514,19 @@ name = "DeathChamber1"
 stateno = 889480
 helpertype = normal
 ownpal = 1
-ID = 889480   ;Numhelper and ID have to be the same
+ID = 889480 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Death Chamber2]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889481) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889481) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889481) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889481) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4536,19 +4536,19 @@ name = "DeathChamber2"
 stateno = 889481
 helpertype = normal
 ownpal = 1
-ID = 889481   ;Numhelper and ID have to be the same
+ID = 889481 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889482) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889482) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889482) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889482) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4558,19 +4558,19 @@ name = "VaporChamber1"
 stateno = 889482
 helpertype = normal
 ownpal = 1
-ID = 889482   ;Numhelper and ID have to be the same
+ID = 889482 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber2]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889483) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889483) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889483) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889483) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4580,19 +4580,19 @@ name = "VaporChamber2"
 stateno = 889483
 helpertype = normal
 ownpal = 1
-ID = 889483   ;Numhelper and ID have to be the same
+ID = 889483 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber Camera Marker]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889478) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889478) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889478) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889478) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4602,19 +4602,19 @@ name = "VaporChamber3"
 stateno = 889478
 helpertype = normal
 ownpal = 1
-ID = 889478   ;Numhelper and ID have to be the same
+ID = 889478 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Vapor Chamber Camera Marker2]
 type = Helper
 trigger1 = stagevar(info.name) = "Belgrave Square Labs"
-trigger1 = Numhelper(889479) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889479) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Belgrave Square Labs"
-trigger2 = Numhelper(889479) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889479) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4624,7 +4624,7 @@ name = "VaporChamber4"
 stateno = 889479
 helpertype = normal
 ownpal = 1
-ID = 889479   ;Numhelper and ID have to be the same
+ID = 889479 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4720,7 +4720,7 @@ trigger1 = facing = 1
 anim = F89156
 ID = 77447
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4742,7 +4742,7 @@ trigger1 = facing = -1
 anim = F89156
 ID = 77447
 pos = 0,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -4770,7 +4770,7 @@ trigger1 = facing = 1
 anim = F89157
 ID = 77448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -4792,7 +4792,7 @@ trigger1 = facing = -1
 anim = F89157
 ID = 77448
 pos = 0,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = -1
@@ -4821,7 +4821,7 @@ trigger1 = facing = 1
 anim = F89158
 ID = 77449
 pos = -16,21
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -4843,7 +4843,7 @@ trigger1 = facing = -1
 anim = F89158
 ID = 77449
 pos = 16,21
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = -1
 vfacing = 1
 bindtime = 1
@@ -4859,12 +4859,12 @@ removeongethit = 0
 [State -2, AiroJetSpawner]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Distruction_Surfing"
-trigger1 = Numhelper(889500) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889500) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Distruction_Surfing"
-trigger2 = Numhelper(889500) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889500) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4874,7 +4874,7 @@ name = "FarAiroJetSpawn"
 stateno = 889500
 helpertype = normal
 ownpal = 1
-ID = 889500   ;Numhelper and ID have to be the same
+ID = 889500 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -4883,12 +4883,12 @@ size.yscale = 1.0
 [State -2, Shin TimeBox]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889520) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889520) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889520) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889520) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4898,19 +4898,19 @@ name = "ShinTimebox1"
 stateno = 889520
 helpertype = normal
 ownpal = 1
-ID = 889520   ;Numhelper and ID have to be the same
+ID = 889520 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin TimeBox2]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889525) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889525) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889525) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889525) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4920,19 +4920,19 @@ name = "ShinTimebox2"
 stateno = 889525
 helpertype = normal
 ownpal = 1
-ID = 889525   ;Numhelper and ID have to be the same
+ID = 889525 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin TimeBox3]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889530) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889530) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889530) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889530) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4942,19 +4942,19 @@ name = "ShinTimebox3"
 stateno = 889530
 helpertype = normal
 ownpal = 1
-ID = 889530   ;Numhelper and ID have to be the same
+ID = 889530 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Knife]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889535) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889535) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889535) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889535) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4964,19 +4964,19 @@ name = "ShinKnife1"
 stateno = 889535
 helpertype = normal
 ownpal = 1
-ID = 889535   ;Numhelper and ID have to be the same
+ID = 889535 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Knife2]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889546) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889546) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889546) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889546) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -4986,19 +4986,19 @@ name = "ShinKnife2"
 stateno = 889546
 helpertype = normal
 ownpal = 1
-ID = 889546   ;Numhelper and ID have to be the same
+ID = 889546 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Pow1]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889556) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889556) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889556) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889556) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5008,19 +5008,19 @@ name = "ShinPow1"
 stateno = 889556
 helpertype = normal
 ownpal = 1
-ID = 889556   ;Numhelper and ID have to be the same
+ID = 889556 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Shin Pow2]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889563) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889563) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889563) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889563) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5030,7 +5030,7 @@ name = "ShinPow2"
 stateno = 889563
 helpertype = normal
 ownpal = 1
-ID = 889563   ;Numhelper and ID have to be the same
+ID = 889563 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -5057,7 +5057,7 @@ name = "shinknifeToss1"
 ID = 889545
 stateno = 889545
 pos = -5,-75
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5088,7 +5088,7 @@ name = "shinknifeToss1Low"
 ID = 889555
 stateno = 889555
 pos = -5,-40
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -5143,12 +5143,12 @@ ID = 889582
 [State -2, ShinNinjaSpawner]
 type = Helper
 trigger1 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger1 = Numhelper(889600) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889600) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Shinobi_Zeed_Ressurection_Forest"
-trigger2 = Numhelper(889600) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889600) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5158,7 +5158,7 @@ name = "ShinNinjaSpawner"
 stateno = 889600
 helpertype = normal
 ownpal = 1
-ID = 889600   ;Numhelper and ID have to be the same
+ID = 889600 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -5167,7 +5167,7 @@ size.yscale = 1.0
 [State -2, Sheep]
 type = Helper
 trigger1 = stagevar(info.name) = "Mareep"
-trigger1 = Numhelper(889632) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889632) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = Pos Y = 0
 ;trigger1 = TeamMode != simul
@@ -5176,7 +5176,7 @@ name = "sheep"
 stateno = 889632
 helpertype = normal
 ownpal = 1
-ID = 889632   ;Numhelper and ID have to be the same
+ID = 889632 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -5240,12 +5240,12 @@ flag2 = nokosnd
 [State -2, RBFFTrain1]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger1 = Numhelper(889665) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889665) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger2 = Numhelper(889665) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889665) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5255,19 +5255,19 @@ name = "RBFFTrain1"
 stateno = 889665
 helpertype = normal
 ownpal = 1
-ID = 889665   ;Numhelper and ID have to be the same
+ID = 889665 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, RBFFTrain2] ;Position marker player 1
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger1 = Numhelper(889671) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889671) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger2 = Numhelper(889671) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889671) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5277,19 +5277,19 @@ name = "RBFFTrainMarker1"
 stateno = 889671
 helpertype = normal
 ownpal = 1
-ID = 889671   ;Numhelper and ID have to be the same
+ID = 889671 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, RBFFTrain2] ;Position marker player 2
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger1 = Numhelper(889676) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889676) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_RBFF_Subway_3"
-trigger2 = Numhelper(889676) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889676) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5299,7 +5299,7 @@ name = "RBFFTrainMarker2"
 stateno = 889676
 helpertype = normal
 ownpal = 1
-ID = 889676   ;Numhelper and ID have to be the same
+ID = 889676 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -5344,12 +5344,12 @@ ignorehitpause = 1
 [State -2, barrel1 WestSide Health]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889440) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889440) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5359,19 +5359,19 @@ name = "Barrel1"
 stateno = 889440
 helpertype = normal
 ownpal = 1
-ID = 889440   ;Numhelper and ID have to be the same
+ID = 889440 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, barrel2 WestSide Energy]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889680) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889680) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5381,19 +5381,19 @@ name = "Barrel2"
 stateno = 889680
 helpertype = normal
 ownpal = 1
-ID = 889680   ;Numhelper and ID have to be the same
+ID = 889680 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Trashcan WestSide Energy]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889690) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889690) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5403,19 +5403,19 @@ name = "trashcanWSEnergy"
 stateno = 889690
 helpertype = normal
 ownpal = 1
-ID = 889690   ;Numhelper and ID have to be the same
+ID = 889690 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Trashcan WestSide Empty]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889700) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889700) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5425,19 +5425,19 @@ name = "trashcanWSEmpty"
 stateno = 889700
 helpertype = normal
 ownpal = 1
-ID = 889700   ;Numhelper and ID have to be the same
+ID = 889700 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Trashcan2 WestSide Empty]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889706) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889706) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5447,19 +5447,19 @@ name = "trashcan2WSEmpty"
 stateno = 889706
 helpertype = normal
 ownpal = 1
-ID = 889706   ;Numhelper and ID have to be the same
+ID = 889706 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Wall 1 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889712) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889712) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5469,19 +5469,19 @@ name = "Wall1"
 stateno = 889712
 helpertype = normal
 ownpal = 1
-ID = 889712  ;Numhelper and ID have to be the same
+ID = 889712 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Wall 2 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889713) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889713) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5491,19 +5491,19 @@ name = "Wall2"
 stateno = 889713
 helpertype = normal
 ownpal = 1
-ID = 889713  ;Numhelper and ID have to be the same
+ID = 889713 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Wall 3 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889714) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889714) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5513,19 +5513,19 @@ name = "Wall3"
 stateno = 889714
 helpertype = normal
 ownpal = 1
-ID = 889714  ;Numhelper and ID have to be the same
+ID = 889714 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Door 1 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889715) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889715) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889715) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889715) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5535,19 +5535,19 @@ name = "WSDoor1"
 stateno = 889715
 helpertype = normal
 ownpal = 1
-ID = 889715  ;Numhelper and ID have to be the same
+ID = 889715 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Door 2 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889717) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889717) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889717) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889717) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id 
@@ -5557,19 +5557,19 @@ name = "WSDoor2"
 stateno = 889717
 helpertype = normal
 ownpal = 1
-ID = 889717  ;Numhelper and ID have to be the same
+ID = 889717 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Door 3 WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5579,19 +5579,19 @@ name = "WSDoor3"
 stateno = 889719
 helpertype = normal
 ownpal = 1
-ID = 889719  ;Numhelper and ID have to be the same
+ID = 889719 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Edi E WestSide]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889724) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889724) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5601,19 +5601,19 @@ name = "WSEdiE"
 stateno = 889724
 helpertype = normal
 ownpal = 1
-ID = 889724  ;Numhelper and ID have to be the same
+ID = 889724 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Surf Sign1]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889743) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889743) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5623,19 +5623,19 @@ name = "Surfsign1"
 stateno = 889743
 helpertype = normal
 ownpal = 1
-ID = 889743   ;Numhelper and ID have to be the same
+ID = 889743 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, Surf Sign2]
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger1 = Numhelper(889749) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889749) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_FF_Westside"
-trigger2 = Numhelper(889719) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889719) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5645,7 +5645,7 @@ name = "Surfsign2"
 stateno = 889749
 helpertype = normal
 ownpal = 1
-ID = 889749   ;Numhelper and ID have to be the same
+ID = 889749 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -5659,7 +5659,7 @@ trigger1 = stateno = 5100 || stateno = 5110
 anim = F89226
 ID = 7448
 pos = 0,-12
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5680,7 +5680,7 @@ trigger1 = stateno = 40 || stateno = 52
 anim = F89225
 ID = 7448
 pos = 0,-12
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -5701,7 +5701,7 @@ trigger1 = stagevar(info.name) = "YDA_Forest-of_Desolation"
 anim = F89224
 ID = 77446
 pos = 0,-12
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -5731,7 +5731,7 @@ trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
 helpertype = normal ;player
 name = "Vagnadstagefinisher"
-ID = 889315       ;Numhelper and ID have to be the same
+ID = 889315 ;Numhelper and ID have to be the same
 stateno = 889315
 pos = 0,0
 postype = left
@@ -5759,7 +5759,7 @@ trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
 helpertype = normal ;player
 name = "CBRailstagefinisher"
-ID = 889758       ;Numhelper and ID have to be the same
+ID = 889758 ;Numhelper and ID have to be the same
 stateno = 889758
 pos = 0,0
 postype = left
@@ -5774,11 +5774,11 @@ pausemove = 999999999
 [State -2, deathmatchspikes]
 type = Helper
 trigger1 = stagevar(info.name) = "DEATH MATCH NEEDLE"
-trigger1 = Numhelper(889759) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889759) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "DEATH MATCH NEEDLE"
-trigger2 = Numhelper(889759) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889759) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -5787,19 +5787,19 @@ name = "SpikedWall"
 stateno = 889759
 helpertype = normal
 ownpal = 1
-ID = 889759   ;Numhelper and ID have to be the same
+ID = 889759 ;Numhelper and ID have to be the same
 
 ;--------------------------------------------------
 ;USSR stage finisher stuff
 [State -2, USSRstagefinisher] ;Position marker player 1
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_USSR" 
-trigger1 = Numhelper(889761) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889761) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 1
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_USSR" 
-trigger2 = Numhelper(889761) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889761) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 1
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5809,19 +5809,19 @@ name = "USSRMarker1"
 stateno = 889761
 helpertype = normal
 ownpal = 1
-ID = 889761   ;Numhelper and ID have to be the same
+ID = 889761 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
 [State -2, USSRstagefinisher] ;Position marker player 2
 type = Helper
 trigger1 = stagevar(info.name) = "Ultimate_USSR" 
-trigger1 = Numhelper(889762) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889762) = 0 ;Numhelper and ID have to be the same
 trigger1 = teamside = 2
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Ultimate_USSR" 
-trigger2 = Numhelper(889762) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889762) = 0 ;Numhelper and ID have to be the same
 trigger2 = teamside = 2
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
@@ -5831,7 +5831,7 @@ name = "USSRMarker2"
 stateno = 889762
 helpertype = normal
 ownpal = 1
-ID = 889762   ;Numhelper and ID have to be the same
+ID = 889762 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -5876,11 +5876,11 @@ ignorehitpause = 1
 [State -2, ElectricRing]
 type = Helper
 trigger1 = stagevar(info.name) = "Axel Hawk FFS Night"
-trigger1 = Numhelper(889770) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889770) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Axel Hawk FFS Night"
-trigger2 = Numhelper(889770) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889770) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -5889,18 +5889,18 @@ name = "Electricrope2"
 stateno = 889770
 helpertype = normal
 ownpal = 1
-ID = 889770    ;Numhelper and ID have to be the same
+ID = 889770 ;Numhelper and ID have to be the same
 
 ;---------------------------------
 ;Explode Ropes for Neo Deo World Heroes Death Match stage
 [State -2, deathmatchfire]
 type = Helper
 trigger1 = stagevar(info.name) = "DIO DEATH MATCH"
-trigger1 = Numhelper(889772) = 0  ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889772) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "DIO DEATH MATCH"
-trigger2 = Numhelper(889772) = 0  ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889772) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -5909,18 +5909,18 @@ name = "Firerope"
 stateno = 889772
 helpertype = normal
 ownpal = 1
-ID = 889772  ;Numhelper and ID have to be the same
+ID = 889772 ;Numhelper and ID have to be the same
 
 ;------------------------
 ;Andy Barrel
 [State -2, Andy Barrel]
 type = Helper
 trigger1 = stagevar(info.name) = "Andy's FFS stage(day)"
-trigger1 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger1 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger1 = TeamMode != Simul
 trigger1 = Pos Y = 0
 trigger2 = stagevar(info.name) = "Andy's FFS stage(day)"
-trigger2 = Numhelper(889240) = 0   ;Numhelper and ID have to be the same
+trigger2 = Numhelper(889240) = 0 ;Numhelper and ID have to be the same
 trigger2 = TeamMode = Simul
 trigger2 = numpartner = 1 && id<partner,id
 trigger2 = Pos Y = 0
@@ -5929,7 +5929,7 @@ name = "AndyBarrel"
 stateno = 889240
 helpertype = normal
 ownpal = 1
-ID = 889240   ;Numhelper and ID have to be the same
+ID = 889240 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 
@@ -5951,7 +5951,7 @@ name = "FireFlair"
 stateno = 889780
 helpertype = normal
 ownpal = 1
-ID = 889780   ;Numhelper and ID have to be the same
+ID = 889780 ;Numhelper and ID have to be the same
 size.xscale = 1.0
 size.yscale = 1.0
 

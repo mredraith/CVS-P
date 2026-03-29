@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SUPER MOVES=
@@ -595,7 +595,7 @@ supermovetime = 32
 pausemovetime = 32
 under = 0
 ownpal = 1
-scale =  Ifelse(var(10),0.5,0.15), Ifelse(var(10),0.5,0.45)
+scale = Ifelse(var(10),0.5,0.15), Ifelse(var(10),0.5,0.45)
 
 [State explod];”š”j1
 type = Explod
@@ -611,7 +611,7 @@ supermovetime = 32
 pausemovetime = 32
 under = 0
 ownpal = 1
-scale =  Ifelse(var(10),0.5,0.15), Ifelse(var(10),0.5,0.45)
+scale = Ifelse(var(10),0.5,0.15), Ifelse(var(10),0.5,0.45)
 
 [State 3110,Shake]
 type = EnvShake

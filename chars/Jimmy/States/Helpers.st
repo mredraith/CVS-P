@@ -1,10 +1,10 @@
 ; _________________________________________
-;| Character by ZMugens               |
+;| Character by ZMugens |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ; HELPER STATES =
 [Statedef 241]
-type   =A
+type =A
 movetype=H
 physics=N
 velset=0,0
@@ -33,7 +33,7 @@ value=242
 
 ;---------------------------------------------------------------------------
 [Statedef 242]
-type   =A
+type =A
 movetype=H
 physics=N
 velset=0,0
@@ -2658,7 +2658,7 @@ trigger1 = roundstate < 3
 ;CAMERA CONTROL
 [StateDef 6001]
 type = S
-physics  = S
+physics = S
 anim = 0
 ctrl = 0
 
@@ -4555,7 +4555,7 @@ value = 0
 ctrl = 1
 
 [Statedef 5679]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -4610,7 +4610,7 @@ trigger1 = Vel Y > 0
 value = 5100
 
 [Statedef 5680]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0

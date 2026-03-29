@@ -395,7 +395,7 @@ ignorehitpause = 1
 
 [State 3005, HitDef]
 type = Hitdef
-trigger1 = Root,Time =56  ||  Root,Time  = 64 ||  Root,Time  = 72 ||  Root,Time  = 80
+trigger1 = Root,Time =56 || Root,Time = 64 || Root,Time = 72 || Root,Time = 80
 trigger1 = Root,StateNo = 3000
 attr = S,HP
 hitflag = MAFP
@@ -820,13 +820,13 @@ ignorehitpause = 1
 
 [State 3035, HitDef]
 type = Hitdef
-trigger1 = Root,Time =70 ||  Root,Time =78 || Root,Time  = 86 || Root,Time =94 || Root,Time  = 102 || Root,Time  = 110
+trigger1 = Root,Time =70 || Root,Time =78 || Root,Time = 86 || Root,Time =94 || Root,Time = 102 || Root,Time = 110
 trigger1 = Root,StateNo = 3050
 attr = S,HP
 hitflag = MAFP
 guardflag = M
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) *  35)), 7
+damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
 getpower = 0, 0
 givepower = 35, 35
 pausetime = 0, 12
@@ -2924,7 +2924,7 @@ trigger1 = RoundState < 3
 ;KO CAMERA FOCUS>=
 [Statedef 8998]
 type = S
-physics  = N;S
+physics = N;S
 anim = 0
 ctrl = 0
 

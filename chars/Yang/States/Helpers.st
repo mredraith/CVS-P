@@ -2710,7 +2710,7 @@ triggerAll = Anim = [1200, 1220]
 trigger1 = AnimElem = 5 && !var(10)
 trigger2 = AnimElem = 10 && var(10) = 1
 trigger3 = AnimElem = 16 && var(10) = 2
-x =  IfElse(var(10) = 2, 2.5, ifElse(var(10) = 1, 1.25, 0))
+x = IfElse(var(10) = 2, 2.5, ifElse(var(10) = 1, 1.25, 0))
 y = IfElse(var(10) = 2, -11.25, ifElse(var(10) = 1, -8.75, -6.25))
 
 [State 103201, VelAdd]

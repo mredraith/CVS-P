@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;NORMAL MOVES=
@@ -8,7 +8,7 @@
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
 [Statedef 200]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -88,7 +88,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Far Medium Punch
 [Statedef 210]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -174,7 +174,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Close Medium Punch
 [Statedef 215]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -346,7 +346,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
 [Statedef 230]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -426,7 +426,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Kick
 [Statedef 240]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -532,7 +532,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; B.M.K.
 [Statedef 245]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -883,7 +883,7 @@ anim = 420
 ctrl = 0
 velSet = 0,0
 sprPriority = 1
-powerAdd =  18 * !var(20)
+powerAdd = 18 * !var(20)
 
 [State 420, Width]
 type = Width
@@ -1147,7 +1147,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF
@@ -1604,7 +1604,7 @@ value=52
 ; Jump Medium Punch
 [Statedef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 ctrl = 0
 sprPriority = 1
@@ -2403,7 +2403,7 @@ value = 820
 
 ;
 [Statedef 821]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2659,7 +2659,7 @@ movecamera = 0,0
 
 ;
 [Statedef 841]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2829,7 +2829,7 @@ trigger3 = AILevel && Random < 800
 var(42) = 2
 
 [State 820, Mashing Increment]
-type  = VarAdd
+type = VarAdd
 triggerAll = anim = 851
 trigger1 = var(42) = 2
 var(12) = 2
@@ -2986,8 +2986,8 @@ value = ifelse(var(14), 863, 862)
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(2) > 0
-statetype = A       ;S,A,C,L
-movetype = I        ;I,A,H
+statetype = A ;S,A,C,L
+movetype = I ;I,A,H
 physics = A
 
 [State 620, End]

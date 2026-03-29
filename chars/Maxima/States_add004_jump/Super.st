@@ -14,7 +14,7 @@
 ;---------------------------------------------------------------------------
 ;Bunker Buster
 [Statedef 3000]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -168,7 +168,7 @@ value = 3010
 ;---------------------------------------------------------------------------
 ;Bunker-Takeoff
 [Statedef 3010]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 0,0
@@ -221,7 +221,7 @@ value = 3011
 ;---------------------------------------------------------------------------
 ;Bunker-Land
 [Statedef 3011]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 0,32
@@ -271,9 +271,9 @@ triggerall = var(7) = 0
 triggerall = enemynear,stateno != [5040,5049]
 trigger1 = time = 0
 attr = A, HA
-animtype  = hard
+animtype = hard
 hitflag = MAFD
-damage    = 180,18
+damage = 180,18
 priority = 7, Hit
 getpower = 0,0
 guardflag = M
@@ -281,16 +281,16 @@ pausetime = 4,4
 guard.pausetime = 0,12
 sparkno = s-1
 sparkxy = -12,-90
-hitsound   = S2,6
+hitsound = S2,6
 guardsound = s3,1
 guard.sparkno = s-1
 ground.type = high
 ground.slidetime = 24
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = 0,30
 air.velocity = 0,30
-air.hittime  = 120
+air.hittime = 120
 guard.velocity = -9
 yaccel = 0.45
 fall = 1
@@ -314,7 +314,7 @@ value = 3020
 ;---------------------------------------------------------------------------
 ;Bunker-Land
 [Statedef 3020]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -434,7 +434,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Bunker Buster MAX
 [Statedef 3050]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -602,7 +602,7 @@ value = 3060
 ;---------------------------------------------------------------------------
 ;Bunker-Takeoff
 [Statedef 3060]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 0,0
@@ -656,7 +656,7 @@ value = 3061
 ;---------------------------------------------------------------------------
 ;Bunker-Land
 [Statedef 3061]
-type    = A
+type = A
 movetype= A
 physics = N
 velset = 0,32
@@ -708,9 +708,9 @@ triggerall = var(7) = 0
 triggerall = enemynear,stateno != [5040,5049]
 trigger1 = time = 0
 attr = A, HA
-animtype  = hard
+animtype = hard
 hitflag = MAFD
-damage    = 180,18
+damage = 180,18
 priority = 7, Hit
 getpower = 0,0
 guardflag = M
@@ -718,16 +718,16 @@ pausetime = 4,4
 guard.pausetime = 0,12
 sparkno = s-1
 sparkxy = -12,-90
-hitsound   = S2,6
+hitsound = S2,6
 guardsound = s3,1
 guard.sparkno = s-1
 ground.type = high
 ground.slidetime = 24
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = 0,30
 air.velocity = 0,30
-air.hittime  = 120
+air.hittime = 120
 guard.velocity = -9
 yaccel = 0.45
 fall = 1
@@ -753,10 +753,10 @@ value = 3070
 ;---------------------------------------------------------------------------
 ;Bunker-Land
 [Statedef 3070]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 3020
@@ -892,7 +892,7 @@ ctrl = 1
 ;--------------------------------------------------
 ;Maxima Revenger
 [Statedef 3100]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0, 0
@@ -1805,7 +1805,7 @@ value = 5100
 ;--------------------------------------------------
 ;Maxima Revenger MAX
 [Statedef 3150]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0, 0
@@ -2846,7 +2846,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ; Maxima Laser
 [Statedef 3500]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -2993,10 +2993,10 @@ value = 3501
 ;---------------------------------------------------------------------------
 ; Maxima Laser (End)
 [Statedef 3501]
-type    = S
+type = S
 movetype= A
 physics = N
-juggle  = 0
+juggle = 0
 ctrl = 0
 anim = 3501
 poweradd = 0
@@ -3016,7 +3016,7 @@ value = 0
 ctrl = 1
 
 [Statedef 3520]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = -1,-1.5
@@ -3054,7 +3054,7 @@ trigger1 = Vel Y > 0 && Pos Y >= 0
 value = 5100
 
 [Statedef 3525]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = -17,-3

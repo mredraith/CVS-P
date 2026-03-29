@@ -452,7 +452,7 @@ ctrl = 1
 
 ;TOTAL ANNIHILATION==
 [Statedef 3100]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -596,8 +596,8 @@ x = 0.9
 [State 3100, StateTypeSet: Air, no physics]
 type = StateTypeSet
 trigger1 = AnimElem = 22 
-statetype = A       
-physics = N         
+statetype = A 
+physics = N 
 
 [State 3100, Rising Velocity]
 type = Velset
@@ -700,7 +700,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 22
-ground.hittime  = 22
+ground.hittime = 22
 guard.hittime = (22) - 6
 ground.velocity = 0
 air.velocity = -4, -8
@@ -746,7 +746,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 22
-ground.hittime  = 22
+ground.hittime = 22
 guard.hittime = (22) - 6
 ground.velocity = 2.85
 air.velocity = -4, -8
@@ -792,7 +792,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -9.85
 air.velocity = -2, -9.85
@@ -837,7 +837,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -9.85
 air.velocity = -2, -9.85
@@ -871,7 +871,7 @@ value = 1105
 
 ;MAX TOTAL ANNIHILATION==
 [Statedef 3150]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1040,8 +1040,8 @@ x = 0.9
 [State 3150, StateTypeSet: Air, no physics]
 type = StateTypeSet
 trigger1 = AnimElem = 39 
-statetype = A       
-physics = N         
+statetype = A 
+physics = N 
 
 [State 3150, Rising Velocity]
 type = Velset
@@ -1214,7 +1214,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 22
-ground.hittime  = 22
+ground.hittime = 22
 guard.hittime = (22) - 6
 ground.velocity = 0
 air.velocity = -4, -8
@@ -1260,7 +1260,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 36
-ground.hittime  = 36
+ground.hittime = 36
 guard.hittime = (36) - 6
 ground.velocity = -6
 air.velocity = -4, -8
@@ -1306,7 +1306,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 22
-ground.hittime  = 22
+ground.hittime = 22
 guard.hittime = (22) - 6
 ground.velocity = 3
 air.velocity = -4, -8
@@ -1352,7 +1352,7 @@ fall.animtype = Up
 ground.type = High
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -1, -7.5
 air.velocity = -1, -7.5
@@ -1398,7 +1398,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -10
 air.velocity = -2,-8
@@ -1443,7 +1443,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 18
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2, -10
 air.velocity = -2, -8
@@ -2986,7 +2986,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0,0
@@ -3183,7 +3183,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3232,7 +3232,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3281,7 +3281,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3330,7 +3330,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -3378,7 +3378,7 @@ fall.animtype = Up
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0, -20.5
 air.velocity = 0, -20.5
@@ -3425,7 +3425,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0, -20.5
 air.velocity = 0, -20.5
@@ -3513,7 +3513,7 @@ ctrl = 1
 ;HIT by KS CUSTOM STATES=
 ;Initial hit state
 [Statedef 3320]
-type    = S
+type = S
 movetype= H
 physics = S
 ctrl = 0
@@ -3556,7 +3556,7 @@ ctrl = 1
 
 ;Hit high state
 [Statedef 3321]
-type    = S
+type = S
 movetype= H
 physics = S
 ctrl = 0
@@ -3599,7 +3599,7 @@ ctrl = 1
 
 ;Hit low state
 [Statedef 3322]
-type    = S
+type = S
 movetype= H
 physics = S
 ctrl = 0

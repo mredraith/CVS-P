@@ -491,7 +491,7 @@ guard.hittime = (16) - 6
 ground.velocity = -0.5, -8
 ground.cornerpush.veloff = 0
 air.type = Low
-air.velocity = -0.5, -7.5  - (var(10)-1)
+air.velocity = -0.5, -7.5 - (var(10)-1)
 guard.cornerpush.veloff = 0
 guard.velocity = -10.52
 getpower = ifelse(p2movetype = H, 72, 144) * (!var(20) && prevstateno != 750), 36 * (!var(20) && prevstateno != 750)
@@ -1430,7 +1430,7 @@ channel = 0
 [State 1300, Snd]
 type = playsnd
 trigger1 = (anim = [1301, 1302]) && animelem = 6
-trigger2 = anim = 1300  && animelem = 4
+trigger2 = anim = 1300 && animelem = 4
 trigger3 = anim = 1304 && animelem = 4
 value = 1, 6
 channel = 1

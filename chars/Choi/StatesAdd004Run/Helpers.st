@@ -1,5 +1,5 @@
 ; _________________________________________
-;| CVS Choi Bounge by Falcon Rapper        |
+;| CVS Choi Bounge by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ; HELPER STATES =
@@ -484,7 +484,7 @@ value = 90 * (Random % 4)
 [State 8011, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8011, Transparency]
 type = Trans
@@ -529,7 +529,7 @@ value = 90 * (Random % 4)
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8012, Transparency]
 type = Trans
@@ -581,11 +581,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 
 [State 8013, Transparency]
 type = Trans
@@ -648,11 +648,11 @@ value = 30 * (Random % 12)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8005||parent,stateno=8010)
-scale =  fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8015||parent,stateno=8020)
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8014, Transparency]
 type = Trans
@@ -986,7 +986,7 @@ value = 90 * (Random % 4)
 [State 8022, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
+scale = fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
 
 [State 8022, Transparency]
 type = Trans
@@ -1030,11 +1030,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8023, Transparency]
 type = Trans
@@ -2888,7 +2888,7 @@ type = HitDef
 trigger1 = time = 0
 attr = A, HA
 animtype = Hard
-damage    =180,10
+damage =180,10
 getpower = 0,0
 guardflag = M
 hitflag = MAF

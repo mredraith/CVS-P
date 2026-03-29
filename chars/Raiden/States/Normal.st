@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Raiden by Knuckles8864                |
+;| Raiden by Knuckles8864 |
 ; 
 ;
 ;NORMAL MOVES=

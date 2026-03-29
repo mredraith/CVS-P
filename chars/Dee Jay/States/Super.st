@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Dee Jay by varo_hades                   |
+;| Dee Jay by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -1096,7 +1096,7 @@ channel = 0
 [State 3101, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1201,7 +1201,7 @@ value = 1,2
 [State 3102, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 7
-trigger1 =  AnimElem = 8
+trigger1 = AnimElem = 8
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1305,7 +1305,7 @@ value = 1,2
 [State 3103, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 8
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1410,7 +1410,7 @@ value = 1,2
 [State 3104, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 8
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1636,7 +1636,7 @@ channel = 0
 [State 3150, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1741,7 +1741,7 @@ value = 1,2
 [State 3150, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 7
-trigger1 =  AnimElem = 8
+trigger1 = AnimElem = 8
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1845,7 +1845,7 @@ value = 1,2
 [State 3150, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 8
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1949,7 +1949,7 @@ value = 1,2
 [State 3150, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 9
-trigger1 =  AnimElem = 8
+trigger1 = AnimElem = 8
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2053,7 +2053,7 @@ value = 1,2
 [State 3150, HitDef]
 type = HitDef
 trigger1 = !var(16) && var(15) < 10
-trigger1 =  AnimElem = 3
+trigger1 = AnimElem = 3
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2449,7 +2449,7 @@ type = S
 movetype = A
 physics = N
 anim = 3211
-sprpriority =  1
+sprpriority = 1
 
 [State 3, ]
 type = PlaySnd
@@ -2573,7 +2573,7 @@ type = S
 movetype = A
 physics = N
 anim = 3212
-sprpriority =  1
+sprpriority = 1
 velset = 0,0
 
 [State 3, ???]
@@ -2709,7 +2709,7 @@ type = S
 movetype = A
 physics = N
 anim = 3221
-sprpriority =  1
+sprpriority = 1
 
 [State 3010, ??]
 type = Width
@@ -2840,7 +2840,7 @@ type = S
 movetype = A
 physics = N
 anim = 3222
-sprpriority =  1
+sprpriority = 1
 velset = 0,0
 
 [State 800,***]
@@ -2855,7 +2855,7 @@ trigger1 = AnimTime = 0
 
 [State 810,***]
 type = TargetState
-trigger1 =  Time = 0
+trigger1 = Time = 0
 value = 3226
 
 [State 3, ???]
@@ -2928,12 +2928,12 @@ value = 1
 
 [State 810,***]
 type = Targetvelset
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 x = -5
 
 [State 810,***]
 type = TargetState
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 value = 3260
 
 [State 2010, ??????]
@@ -2984,7 +2984,7 @@ physics = N
 [State 5600, ^[]
 type = Turn
 triggerAll = RoundState = 2
-trigger1   = P2BodyDist X != [0,360]
+trigger1 = P2BodyDist X != [0,360]
 
 [State 1];G̏Ԃ
 type = NotHitBy

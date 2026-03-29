@@ -1691,7 +1691,7 @@ value = 52
 ;JUMPING MEDIUM PUNCH=
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 anim = 610
 ctrl = 0

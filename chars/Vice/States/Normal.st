@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Vice by Jmorphman                       |
+;| Vice by Jmorphman |
 ; 
 ;
 ;NORMAL MOVES=

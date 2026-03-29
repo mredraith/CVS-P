@@ -41,7 +41,7 @@ value = ifelse(power<2000,3001,3020)
 type = S
 movetype = A
 physics = S
-juggle  = 7
+juggle = 7
 velset = 0,0
 ctrl = 0
 anim = 3000
@@ -72,9 +72,9 @@ var(10) = 7
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(43) = 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3000, Superpause]
 type = SuperPause
@@ -207,8 +207,8 @@ volume = 255
 type = HitDef
 trigger1 = Time = 1
 attr = S, HA
-animtype  = hard
-damage    = 70,5
+animtype = hard
+damage = 70,5
 guardflag = M
 hitflag = MA
 pausetime = 12,45
@@ -221,7 +221,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 3
 air.velocity = 3,-3.2
@@ -245,7 +245,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Light Seichuzen Godanzuki
 [Statedef 3005]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -309,20 +309,20 @@ ignorehitpause = 1
 type = HitDef
 trigger1 = animelem = 11
 attr = S, HA
-animtype  = Medium
-damage    = 32,5
+animtype = Medium
+damage = 32,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-40
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -332,20 +332,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 15
 attr = S, HA
-animtype  = Medium
-damage    = 32,5
+animtype = Medium
+damage = 32,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-50
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -355,20 +355,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 19
 attr = S, HA
-animtype  = Medium
-damage    = 32,5
+animtype = Medium
+damage = 32,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-65
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -378,20 +378,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 26
 attr = S, HA
-animtype  = back
-damage    = 100,10
+animtype = back
+damage = 100,10
 guardflag = M
 hitflag = MA
 pausetime = 30,30
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-90
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -5,-35
 air.velocity = -5,-30
@@ -484,7 +484,7 @@ ctrl = 1
 type = S
 movetype = A
 physics = S
-juggle  = 7
+juggle = 7
 velset = 0,0
 ctrl = 0
 anim = 3000
@@ -515,9 +515,9 @@ var(10) = 7
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(43) = 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3000, Superpause]
 type = SuperPause
@@ -634,8 +634,8 @@ volume = 255
 type = HitDef
 trigger1 = Time = 1
 attr = S, HA
-animtype  = hard
-damage    = 70,5
+animtype = hard
+damage = 70,5
 guardflag = M
 hitflag = MA
 pausetime = 12,45
@@ -648,7 +648,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 3
 air.velocity = 3,-3.2
@@ -672,7 +672,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Medium Seichuzen Godanzuki
 [Statedef 3015]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -730,20 +730,20 @@ ignorehitpause = 1
 type = HitDef
 trigger1 = animelem = 11
 attr = S, HA
-animtype  = Medium
-damage    = 42,5
+animtype = Medium
+damage = 42,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-40
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -753,20 +753,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 15
 attr = S, HA
-animtype  = Medium
-damage    = 42,5
+animtype = Medium
+damage = 42,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-50
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -776,20 +776,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 19
 attr = S, HA
-animtype  = Medium
-damage    = 42,5
+animtype = Medium
+damage = 42,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-65
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -799,20 +799,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 26
 attr = S, HA
-animtype  = back
-damage    = 150,10
+animtype = back
+damage = 150,10
 guardflag = M
 hitflag = MA
 pausetime = 30,30
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-90
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -5,-35
 air.velocity = -5,-30
@@ -905,7 +905,7 @@ ctrl = 1
 type = S
 movetype = A
 physics = S
-juggle  = 7
+juggle = 7
 velset = 0,0
 ctrl = 0
 anim = 3000
@@ -931,9 +931,9 @@ var(10) = 7
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = animelemtime(43) = 0
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3000, Superpause]
 type = SuperPause
@@ -1050,8 +1050,8 @@ volume = 255
 type = HitDef
 trigger1 = Time = 1
 attr = S, HA
-animtype  = hard
-damage    = 70,5
+animtype = hard
+damage = 70,5
 guardflag = M
 hitflag = MA
 pausetime = 12,45
@@ -1064,7 +1064,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 3
 air.velocity = 3,-3.2
@@ -1106,7 +1106,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Strong Seichuzen Judanzuki
 [Statedef 3025]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1200,20 +1200,20 @@ ignorehitpause = 1
 type = HitDef
 trigger1 = animelem = 11
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-40
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1223,20 +1223,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 15
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-50
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1246,20 +1246,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 19
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-65
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1269,20 +1269,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 22
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-50
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1292,20 +1292,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 26
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-65
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1315,20 +1315,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 29
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-40
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1338,20 +1338,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 33
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-50
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = Low
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1361,20 +1361,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 37
 attr = S, HA
-animtype  = Medium
-damage    = 22,5
+animtype = Medium
+damage = 22,5
 guardflag = M
 hitflag = MA
 pausetime = 5,16
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-65
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = 0
 air.velocity = -2.2,-3.2
@@ -1384,20 +1384,20 @@ kill = 0
 type = HitDef
 trigger1 = animelem = 44
 attr = S, HA
-animtype  = back
-damage    = 100
+animtype = back
+damage = 100
 guardflag = M
 hitflag = MA
 pausetime = 50,30
 sparkno = -1 * (var(30):=7030)**0
 guard.sparkno = -1 * (var(31):=7305)**0
 sparkxy = -10 + 0*(var(32):=40), var(33):=-90
-hitsound   = -1
+hitsound = -1
 guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -5,-39
 air.velocity = -5,-30
@@ -1487,7 +1487,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Seichuzen Godanzuki P2 Final Hit State
 [Statedef 3040]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -1513,7 +1513,7 @@ value = 3041
 ;---------------------------------------------------------------------------
 ; Seichuzen Godanzuki P2 (initial going up)
 [Statedef 3041]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -1538,8 +1538,8 @@ y = 1
 [State 5030, 4]
 type = ChangeState
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 3044 ;HITA_FALL
 
 [State 5030, 5]
@@ -1550,7 +1550,7 @@ value = 3042 ;HITA_UP (transition)
 ;---------------------------------------------------------------------------
 ; Seichuzen Godanzuki P2 (initial going up)
 [Statedef 3042]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -1575,8 +1575,8 @@ y = 1
 [State 5030, 4]
 type = ChangeState
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 3044 ;HITA_FALL
 
 [State 5030, 5]
@@ -1587,7 +1587,7 @@ value = 3043 ;HITA_UP (transition)
 ;---------------------------------------------------------------------------
 ; Seichuzen Godanzuki P2 (transition)
 [Statedef 3043]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -1612,18 +1612,18 @@ y = GetHitVar(yaccel)
 
 [State 5035, 4]
 type = ChangeState
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 3044 ;HITA_FALL
 
 ;---------------------------------------------------------------------------
 ; Seichuzen Godanzuki P2 (knocked up, falling)
 [Statedef 3044]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -1637,7 +1637,7 @@ movecamera = 1,0
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -1697,7 +1697,7 @@ value = ifelse(power<2000,3101,3120)
 ;---------------------------------------------------------------------------
 ; Start Light Abare Tosanami
 [Statedef 3101]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -1765,7 +1765,7 @@ value = 3103
 ;---------------------------------------------------------------------------
 ; Light Abare Tosanami
 [Statedef 3103]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -1878,7 +1878,7 @@ ctrl = 0
 ;---------------------------------------------------------------------------
 ; Light Abare Tosanami (Short-Long Range)
 [Statedef 3104]
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl = 0
@@ -1962,7 +1962,7 @@ animtype = hard
 getpower = 0,0
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -7
 air.velocity = -3,-4
@@ -2043,7 +2043,7 @@ value = 3105
 ;---------------------------------------------------------------------------
 ; Light Abare Tosanami Fury
 [Statedef 3105]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -2144,9 +2144,9 @@ type = HitDef
 triggerall = anim = 3140
 trigger1 = time = 0
 attr = S, HA
-animtype  = back
+animtype = back
 air.animtype = back
-damage    = 45,1
+damage = 45,1
 guardflag = M
 hitflag = MA
 pausetime = 12,12
@@ -2158,7 +2158,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-5
 air.velocity = -1,-3
@@ -2253,7 +2253,7 @@ type = HitDef
 triggerall = anim = 3150
 trigger1 = animelem = 5
 attr = S, HA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = 48,1
 guardflag = M
@@ -2267,7 +2267,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-8
@@ -2287,7 +2287,7 @@ value = 3106
 ;---------------------------------------------------------------------------
 ; Light Abare Tosanami Finale
 [Statedef 3106]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -2335,9 +2335,9 @@ channel = 0
 type = HitDef
 trigger1 = animelem = 6
 attr = S, HA
-animtype  = hard
+animtype = hard
 air.animtype = back
-damage    = 50,6
+damage = 50,6
 guardflag = M
 hitflag = MAF
 pausetime = 12,12
@@ -2349,7 +2349,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -2,-12
 air.velocity = -2,-12
@@ -2403,7 +2403,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Start Medium Abare Tosanami
 [Statedef 3110]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -2471,7 +2471,7 @@ value = 3112
 ;---------------------------------------------------------------------------
 ; Medium Abare Tosanami
 [Statedef 3112]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -2584,7 +2584,7 @@ ctrl = 0
 ;---------------------------------------------------------------------------
 ; Medium Abare Tosanami (Short-Long Range)
 [Statedef 3113]
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl = 0
@@ -2668,7 +2668,7 @@ animtype = hard
 getpower = 0,0
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -5
 air.velocity = -3,-4
@@ -2729,7 +2729,7 @@ value = 3114
 ;---------------------------------------------------------------------------
 ; Medium Abare Tosanami Fury
 [Statedef 3114]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -2830,9 +2830,9 @@ type = HitDef
 triggerall = anim = 3140
 trigger1 = time = 0
 attr = S, HA
-animtype  = back
+animtype = back
 air.animtype = back
-damage    = 45,1
+damage = 45,1
 guardflag = M
 hitflag = MA
 pausetime = 12,12
@@ -2844,7 +2844,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-5
 air.velocity = -1,-3
@@ -2939,7 +2939,7 @@ type = HitDef
 triggerall = anim = 3150
 trigger1 = animelem = 5
 attr = S, HA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = 98,1
 guardflag = M
@@ -2953,7 +2953,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-8
@@ -2973,7 +2973,7 @@ value = 3115
 ;---------------------------------------------------------------------------
 ; Medium Abare Tosanami Finale
 [Statedef 3115]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -3021,9 +3021,9 @@ channel = 0
 type = HitDef
 trigger1 = animelem = 6
 attr = S, HA
-animtype  = hard
+animtype = hard
 air.animtype = back
-damage    = 80,6
+damage = 80,6
 guardflag = M
 hitflag = MAF
 pausetime = 12,12
@@ -3035,7 +3035,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -2,-12
 air.velocity = -2,-12
@@ -3089,7 +3089,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Start Strong Abare Tosanami
 [Statedef 3120]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -3157,7 +3157,7 @@ value = 3122
 ;---------------------------------------------------------------------------
 ; Strong Abare Tosanami
 [Statedef 3122]
-type    = A
+type = A
 movetype= I
 physics = N
 velset = 0,0
@@ -3270,7 +3270,7 @@ ctrl = 0
 ;---------------------------------------------------------------------------
 ; Strong Abare Tosanami (Short-Long Range)
 [Statedef 3123]
-type    = A
+type = A
 movetype= A
 physics = N
 ctrl = 0
@@ -3359,7 +3359,7 @@ animtype = hard
 getpower = 0,0
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -5
 air.velocity = -3,-4
@@ -3435,7 +3435,7 @@ value = 3124
 ;---------------------------------------------------------------------------
 ; Strong Abare Tosanami Fury
 [Statedef 3124]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -3560,9 +3560,9 @@ type = HitDef
 triggerall = anim = 3140
 trigger1 = time = 0
 attr = S, HA
-animtype  = back
+animtype = back
 air.animtype = back
-damage    = 45,1
+damage = 45,1
 guardflag = M
 hitflag = MA
 pausetime = 12,12
@@ -3574,7 +3574,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-5
 air.velocity = -1,-3
@@ -3675,7 +3675,7 @@ type = HitDef
 triggerall = anim = 3150
 trigger1 = animelem = 5
 attr = S, HA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = 98,1
 guardflag = M
@@ -3689,7 +3689,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-8
@@ -3709,7 +3709,7 @@ value = 3125
 ;---------------------------------------------------------------------------
 ; Strong Abare Tosanami Finale
 [Statedef 3125]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -3765,9 +3765,9 @@ channel = 0
 type = HitDef
 trigger1 = animelem = 6
 attr = S, HA
-animtype  = hard
+animtype = hard
 air.animtype = back
-damage    = 80,6
+damage = 80,6
 guardflag = M
 hitflag = MAF
 pausetime = 12,12
@@ -3779,7 +3779,7 @@ guardsound = -1
 getpower = 0,0
 ground.type = high
 ground.slidetime = 12
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -2,-16
 air.velocity = -2,-16
@@ -3871,7 +3871,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Abare Tosanami Land
 [Statedef 3130]
-type    = C
+type = C
 movetype= I
 physics = C
 velset = 3,0
@@ -3916,7 +3916,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Abare Tosanami Custom State 1
 [Statedef 3150]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -4010,7 +4010,7 @@ movecamera = 1,0
 ;---------------------------------------------------------------------------
 ; Abare Tosanami Custom State 2 (initial going up)
 [Statedef 3151]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -4030,16 +4030,16 @@ y = 1
 type = null;ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 8040 ;HITA_RECOV
 
 [State 5030, 4]
 type = ChangeState
 ;triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 3153 ;HITA_FALL
 
 [State 5030, 5]
@@ -4057,7 +4057,7 @@ movecamera = 1,0
 ;---------------------------------------------------------------------------
 ; Abare Tosanami Custom State 3 (transition)
 [Statedef 3152]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -4077,22 +4077,22 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = null;ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 8040 ;HITA_RECOV
 
 [State 5035, 4]
 type = ChangeState
 ;triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 3153 ;HITA_FALL
 
@@ -4106,7 +4106,7 @@ movecamera = 1,0
 ;---------------------------------------------------------------------------
 ; Abare Tosanami Custom State 4 (knocked up, falling)
 [Statedef 3153]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -4114,7 +4114,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -4187,7 +4187,7 @@ value = ifelse(power<2000,3201,3210)
 ;---------------------------------------------------------------------------
 ; Light Tanden Renki
 [Statedef 3201]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -4316,7 +4316,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Medium Tanden Renki
 [Statedef 3210]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -4444,7 +4444,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Strong Tanden Renki
 [Statedef 3220]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -4572,7 +4572,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; MAX Start Rikujou Gekiha Ken
 [Statedef 3300]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -4640,7 +4640,7 @@ type = PlaySnd
 triggerall = var(39) = 1
 trigger1 = animelem = 3
 value = 790,0
-channel = 2                  
+channel = 2 
 
 [State 161, 0]
 type = NotHitBy
@@ -4771,7 +4771,7 @@ value = 3302
 ;---------------------------------------------------------------------------
 ; Rikujou Gekiha Ken
 [Statedef 3302]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -4810,7 +4810,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .5
@@ -4825,7 +4825,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,43
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .35
@@ -4839,7 +4839,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,43
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .35
@@ -4856,7 +4856,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .56
@@ -4871,7 +4871,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,49
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .41
@@ -4885,7 +4885,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,49
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .41
@@ -4902,7 +4902,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .63
@@ -4917,7 +4917,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,55
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .45
@@ -4931,7 +4931,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,55
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .45
@@ -4948,7 +4948,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .7
@@ -4963,7 +4963,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,63
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .5
@@ -4977,7 +4977,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,63
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .5
@@ -5015,22 +5015,22 @@ channel = 2
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,1   
+value = 3300,1 
 
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,2   
+value = 3300,2 
 
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,3  
+value = 3300,3 
 
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,5          
+value = 3300,5 
 
 [State 3400, 7]
 type = ChangeState
@@ -5041,7 +5041,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Start Rikujou Gekiha Ken
 [Statedef 3350]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -5109,7 +5109,7 @@ type = PlaySnd
 triggerall = var(39) = 1
 trigger1 = animelem = 3
 value = 790,0
-channel = 2                  
+channel = 2 
 
 [State 161, 0]
 type = NotHitBy
@@ -5240,7 +5240,7 @@ value = 3352
 ;---------------------------------------------------------------------------
 ; Rikujou Gekiha Ken
 [Statedef 3352]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -5279,7 +5279,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .5
@@ -5294,7 +5294,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,43
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .35
@@ -5308,7 +5308,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,43
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .35
@@ -5325,7 +5325,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .56
@@ -5340,7 +5340,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,49
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .41
@@ -5354,7 +5354,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,49
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .41
@@ -5371,7 +5371,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,4
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .63
@@ -5386,7 +5386,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,55
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .45
@@ -5400,7 +5400,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,55
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .45
@@ -5417,7 +5417,7 @@ helpertype = normal ;player
 name = "Ground Smash Dust"
 stateno = 7450
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .7
@@ -5432,7 +5432,7 @@ helpertype = normal ;player
 name = "Ground Crack 1"
 stateno = 7460
 pos = 0,63
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .5
@@ -5446,7 +5446,7 @@ helpertype = normal ;player
 name = "Ground Crack 2"
 stateno = 7465
 pos = 0,63
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 ownpal = 1
 size.xscale = .5
@@ -5484,22 +5484,22 @@ channel = 2
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,1   
+value = 3300,1 
 
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,2   
+value = 3300,2 
 
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,3  
+value = 3300,3 
 
 [State 210, 1]
 type = PlaySnd
 trigger1 = animelem = 6
-value = 3300,5          
+value = 3300,5 
 
 [State 3400, 7]
 type = ChangeState
@@ -5510,7 +5510,7 @@ ctrl = 1
 ;----------------------------------------------------------------------
 ; Hayate no Red Hawk Start
 [Statedef 3400]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -5613,14 +5613,14 @@ type = PlaySnd
 triggerall = var(39) = 1
 trigger1 = animelem = 3
 value = 790,0
-channel = 2   
+channel = 2 
 
 [State 210, 1]
 type = PlaySnd
 triggerall = var(39) = 1
 trigger1 = animelem = 26
 value = 3400,20
-channel = 2           
+channel = 2 
 
 [State 161, 0]
 type = NotHitBy
@@ -5766,7 +5766,7 @@ physics = S
 type = HitDef
 trigger1 = time = 0
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = 80,4
 guardflag = M
@@ -5779,7 +5779,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 14
+ground.hittime = 14
 guard.hittime = (14) - 6
 ground.velocity = -20,0
 air.velocity = -6,6
@@ -5972,7 +5972,7 @@ value = 1
 type = HitDef
 trigger1 = time = 0
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = 50,4
 guardflag = M
@@ -5986,7 +5986,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 19
+ground.hittime = 19
 guard.hittime = (19) - 6
 ground.velocity = -7,0
 air.velocity = -6,6
@@ -6125,7 +6125,7 @@ value = 1
 type = HitDef
 trigger1 = time = 0
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = 85,4
 guardflag = M
@@ -6139,7 +6139,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 19
+ground.hittime = 19
 guard.hittime = (19) - 6
 ground.velocity = 0,0
 air.velocity = -6,6
@@ -6279,13 +6279,13 @@ channel = 3
 
 [State 1000, 7]
 type = ChangeState
-trigger1 = time >= 80   
+trigger1 = time >= 80 
 value = 3420
 
 ;---------------------------------------------------------------------------
 ; Hayate no Red Hawk Success
 [Statedef 3420]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -6357,7 +6357,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Hayate no Red Hawk End
 [Statedef 3430]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -6415,7 +6415,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Custom State 1 (Stunned)
 [Statedef 3440]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0

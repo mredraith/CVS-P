@@ -448,10 +448,10 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 1110, hit 3]
 type = hitdef
-trigger1 = !var(16) &&  (var(15) < 4 || var(20))
+trigger1 = !var(16) && (var(15) < 4 || var(20))
 trigger1 = animelem = 4 && anim = 1110
 trigger1 = (!numtarget(1112) && var(1) = 1)
-trigger2 = !var(16) &&  (var(15) < 4 || var(20))
+trigger2 = !var(16) && (var(15) < 4 || var(20))
 trigger2 = animelem = 4 && anim = 1110
 trigger2 = var(1)!= 1
 attr = A, SA
@@ -724,7 +724,7 @@ trigger2 = var(1) != 1 && anim = 1210 && (animelem = 2 || animelem = 8)
 attr = A, SA
 ID = 12101
 ;damage = ceil(ifElse(fvar(12) * ifelse(var(1) = 1, 17, 22) < 7, 7, fvar(12) * ifelse(var(1) = 1, 17, 22))), 7
-damage = ceil(ifElse(fvar(12) *  22 < 7, 7, fvar(12) *  22)), 7
+damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) * 22)), 7
 animtype = Hard
 air.animtype = Hard
 fall.animtype = Hard
@@ -777,7 +777,7 @@ trigger1 = anim = 1210 && (animelem = 5 || animelem = 11)
 attr = A, SA
 ID = 12102
 ;damage = ceil(ifElse(fvar(12) * ifelse(var(1) = 1, 17, 22) < 7, 7, fvar(12) * ifelse(var(1) = 1, 17, 22))), 7
-damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) *  22)), 7
+damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) * 22)), 7
 animtype = Hard
 air.animtype = Hard
 fall.animtype = Hard
@@ -1224,7 +1224,7 @@ palFX.sinAdd= -255,-255,-255,48
 [State 1260, hit]
 type = hitdef
 trigger1 = !var(16) && (var(15) < 6 || var(20))
-trigger1 =  animelem = 17
+trigger1 = animelem = 17
 attr = A, SA
 damage = ceil(ifElse(fvar(12) * 32 < 7, 7, fvar(12) * 32)), 7
 animtype = Diagup
@@ -1275,7 +1275,7 @@ palFX.sinAdd= -255,-255,-255,48
 [State 1260, hit]
 type = hitdef
 trigger1 = !var(16) && (var(15) < 6 || var(20))
-trigger1 =  animelem = 20
+trigger1 = animelem = 20
 attr = A, SA
 damage = ceil(ifElse(fvar(12) * 32 < 7, 7, fvar(12) * 32)), 7
 animtype = Diagup

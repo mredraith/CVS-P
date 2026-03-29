@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Hayato by varo_hades                    |
+;| Hayato by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -201,7 +201,7 @@ ownPal = 1
 [State 3000, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -245,7 +245,7 @@ envShake.freq = 120
 [State 3000, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 15
+trigger1 = AnimElem = 15
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -289,7 +289,7 @@ envShake.freq = 120
 [State 3000, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 21
+trigger1 = AnimElem = 21
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -333,7 +333,7 @@ envShake.freq = 120
 [State 3000, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 29
+trigger1 = AnimElem = 29
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -377,7 +377,7 @@ envShake.freq = 120
 [State 3000, HitDef 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 36
+trigger1 = AnimElem = 36
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -421,7 +421,7 @@ envShake.freq = 120
 [State 3000, HitDef 6]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 43
+trigger1 = AnimElem = 43
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -465,7 +465,7 @@ envShake.freq = 120
 [State 3000, HitDef 7]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 50
+trigger1 = AnimElem = 50
 attr = S, HA
 animtype = diagup
 air.animtype = diagup
@@ -829,7 +829,7 @@ pos = 0,-60
 [State 3000, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 7
+trigger1 = AnimElem = 7
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -873,7 +873,7 @@ envShake.freq = 120
 [State 3000, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 15
+trigger1 = AnimElem = 15
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -917,7 +917,7 @@ envShake.freq = 120
 [State 3000, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 21
+trigger1 = AnimElem = 21
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -961,7 +961,7 @@ envShake.freq = 120
 [State 3000, HitDef 4]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 29
+trigger1 = AnimElem = 29
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1005,7 +1005,7 @@ envShake.freq = 120
 [State 3000, HitDef 5]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 36
+trigger1 = AnimElem = 36
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -1049,7 +1049,7 @@ envShake.freq = 120
 [State 3000, HitDef 6]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 43
+trigger1 = AnimElem = 43
 attr = S, HA
 animtype = Hard
 air.animtype = Back
@@ -1093,7 +1093,7 @@ envShake.freq = 120
 [State 3000, HitDef 7]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 50
+trigger1 = AnimElem = 50
 attr = S, HA
 animtype = Hard
 air.animtype = Back
@@ -1137,7 +1137,7 @@ envShake.freq = 120
 [State 3000, HitDef 8]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 58
+trigger1 = AnimElem = 58
 attr = S, HA
 animtype = Up
 air.animtype = Up
@@ -1182,7 +1182,7 @@ envShake.freq = 120
 [State 3000, HitDef 9]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 61
+trigger1 = AnimElem = 61
 attr = A, HA
 animtype = Up
 air.animtype = Up
@@ -1227,7 +1227,7 @@ envShake.freq = 120
 [State 3000, HitDef 10]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 62
+trigger1 = AnimElem = 62
 attr = A, HA
 animtype = Up
 air.animtype = Up
@@ -1272,7 +1272,7 @@ envShake.freq = 120
 [State 3000, HitDef 11]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 63
+trigger1 = AnimElem = 63
 attr = A, HA
 animtype = Up
 air.animtype = Up
@@ -1317,7 +1317,7 @@ envShake.freq = 120
 [State 3000, HitDef 12]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 64
+trigger1 = AnimElem = 64
 attr = A, HA
 animtype = Up
 air.animtype = Up
@@ -1966,7 +1966,7 @@ helperType = Normal
 stateNo = ifElse(MoveGuarded, 8001, 8014)
 ID = 8000
 name = "Spark"
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = 1
 pos = ceil(-10 * const(size.xScale)), ceil(-42 * const(size.yScale))
 ownPal = 1
@@ -2065,7 +2065,7 @@ helperType = Normal
 stateNo = 8017
 ID = 8000
 name = "Spark"
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = 1
 pos = ceil(0 * const(size.xScale)), ceil(-50 * const(size.yScale))
 random = 20,40
@@ -2174,7 +2174,7 @@ value = 5052
 
 [State 5050, 1] ;Change anim when done with transition
 type = ChangeAnim
-trigger1 = Time = 0     ;If no transition anim
+trigger1 = Time = 0 ;If no transition anim
 trigger1 = (Anim != [5051,5059]) && (Anim != [5061,5069])
 trigger1 = Anim != 5090 ;Not if hit off ground anim
 value = 5050
@@ -2354,7 +2354,7 @@ freq = 127 ; Frecuencia
 [State 3000, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2634,7 +2634,7 @@ freq = 127 ; Frecuencia
 [State 3000, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M

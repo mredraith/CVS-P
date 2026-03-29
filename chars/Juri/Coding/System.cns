@@ -197,7 +197,7 @@ trigger4 = Enemy, Name = "Nakoruru" && enemy,authorname = "Phantom.of.the.Server
 trigger5 = Enemy, Name = "Yuri Sakazaki" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsyuri" || Enemy, Name = "Yuri" || Enemy, Name = "Yuri Sakazaki"
 trigger6 = Enemy, Name = "Genryusai Maki" && enemy,authorname = "Hh" || Enemy, Name = "Maki" || Enemy, Name = "cvsmaki"
 trigger7 = Enemy, Name = "Sakura Kasugano" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvssakura" || Enemy, Name = "cvssakura_normal" || Enemy, Name = "Sakura" || Enemy, Name = "Sakura Kasugano"
-trigger8 = Enemy, Name = "Morrigan Aensland" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsmorrigan" || Enemy, Name = "Morrigan"  || Enemy, Name = "Morrigan Aensland"
+trigger8 = Enemy, Name = "Morrigan Aensland" && enemy,authorname = "Phantom.of.the.Server" || Enemy, Name = "cvsmorrigan" || Enemy, Name = "Morrigan" || Enemy, Name = "Morrigan Aensland"
 trigger9 = Enemy, Name = "cvsathena" || Enemy, Name = "Athena"
 trigger10 = Enemy, Name = "cvsjill" || Enemy, Name = "Jill" || Enemy, Name = "Jill Valentine"
 trigger11 = Enemy, Name = "cvsyoko" || Enemy, Name = "Yoko"
@@ -433,10 +433,10 @@ ctrl = 1
 
 ;DODGE==
 [Statedef 700]
-type    = S
+type = S
 movetype= I
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 700
@@ -1671,7 +1671,7 @@ ctrl=1
 
 ;<HIT GROUND(BOUNCE)
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -1760,7 +1760,7 @@ time = 20
 
 ;<HIT LIEDOWN
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2441,7 +2441,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -2937,7 +2937,7 @@ ownPal = 1
 ;1aD3oE?I?OA
 ;--------------------------------------------------------------
 [Statedef 23680]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -2981,7 +2981,7 @@ pos = (1+ifelse(Parent,fvar(36) = 1,-1,0)+ifelse(Parent,fvar(36) = 2,-2,0))*ifel
 ;1aDo
 ;--------------------------------------------------------------
 [Statedef 23681]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -3006,7 +3006,7 @@ value = SCA
 ;1aDOO
 ;--------------------------------------------------------------
 [Statedef 23682]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -3196,10 +3196,10 @@ ignoreHitPause = 1
 type = VarSet
 triggerAll = !var(20)
 trigger1 = StateNo = 200 && MoveContact
-trigger2=  stateno = 211 && movecontact
-trigger3=  stateno = 230 && movecontact
-trigger4=  stateno = 231 && movecontact
-trigger5=  stateno = 241 && movecontact
+trigger2= stateno = 211 && movecontact
+trigger3= stateno = 230 && movecontact
+trigger4= stateno = 231 && movecontact
+trigger5= stateno = 241 && movecontact
 trigger6= (stateno=[400,440]) && movecontact
 var(5) = 1
 ignoreHitPause = 1

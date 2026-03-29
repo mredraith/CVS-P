@@ -1,5 +1,5 @@
 ; _________________________________________
-;| T.Hawk by varo_hades                    |
+;| T.Hawk by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -459,17 +459,17 @@ channel = 1
 
 [State 228, VelSet]
 type = VelSet
-trigger1 =  Time >= 14
+trigger1 = Time >= 14
 x = 8
 
 [State 228, VelSet]
 type = VelSet
-trigger1 =  Time >= 16
+trigger1 = Time >= 16
 x = 4
 
 [State 228, VelSet]
 type = VelSet
-trigger1 =  Time >= 18
+trigger1 = Time >= 18
 x = 0
 
 [State 228, Hit]
@@ -552,17 +552,17 @@ channel = 1
 
 [State 229, VelSet]
 type = VelSet
-trigger1 =  Time >= 10
+trigger1 = Time >= 10
 x = 8
 
 [State 229, VelSet]
 type = VelSet
-trigger1 =  Time >= 12
+trigger1 = Time >= 12
 x = 4
 
 [State 229, VelSet]
 type = VelSet
-trigger1 =  Time >= 14
+trigger1 = Time >= 14
 x = 0
 
 [State 229, Hit]

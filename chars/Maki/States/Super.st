@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Maki Genryusai by Knuckles8864        |
+;| Maki Genryusai by Knuckles8864 |
 ; 
 ;
 ;SUPER STATES=

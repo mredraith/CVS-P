@@ -2555,7 +2555,7 @@ y = 0
 type = VelAdd
 trigger1 = AnimElemTime(1) > 0
 trigger2 = AnimElemtime(12) > 0
-x = ifElse(Vel X <= 0, 0, -.125)  ;-.208337
+x = ifElse(Vel X <= 0, 0, -.125) ;-.208337
 
 [State 0, hit]
 type = HitDef
@@ -2842,7 +2842,7 @@ time = -1
 [State 0, Bind]
 type = TargetBind
 trigger1 = AnimElem = 3
-pos = ceil(33*const(size.xscale)), ceil(-67*const(size.yscale))  ;18
+pos = ceil(33*const(size.xscale)), ceil(-67*const(size.yscale)) ;18
 postype = P1
 time = -1
 
@@ -2995,14 +2995,14 @@ poweradd = 0
 [State 800, 1]
 type = HitDef
 Trigger1 = time=0
-attr = S, HT          ;Attributes: Standing, Normal Throw
-hitflag = MAF          ;Affect only ground people who are not being hit
+attr = S, HT ;Attributes: Standing, Normal Throw
+hitflag = MAF ;Affect only ground people who are not being hit
 guardflag = -1
-priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
+priority = 1, Miss ;Throw has low priority, must be miss or dodge type.
 sparkno = -1
-hitsound = s0, 800          ;No spark
-sprpriority = 1       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player
+hitsound = s0, 800 ;No spark
+sprpriority = 1 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player
 p1stateno = 3511
 p2stateno = 3515
 fall = 1
@@ -3041,7 +3041,7 @@ ctrl = 1
 
 [State 0, PlayerPush]
 type = PlayerPush
-trigger1 =  1
+trigger1 = 1
 value = 0
 
 ;---------------------------------------------------------------------------
@@ -3055,7 +3055,7 @@ ctrl = 0
 
 [State 0, PlayerPush]
 type = PlayerPush
-trigger1 =  1
+trigger1 = 1
 value = 0
 
 [State 0, ChangeAnim2]
@@ -3082,7 +3082,7 @@ poweradd = 0
 
 [State 0, PlayerPush]
 type = PlayerPush
-trigger1 =  1
+trigger1 = 1
 value = 0
 
 [State 0, Turn]
@@ -3156,7 +3156,7 @@ ampl = -8
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = animelem = 6 || animelem = 14 || animelem = 19  
+trigger1 = animelem = 6 || animelem = 14 || animelem = 19 
 value = 1,1
 
 [State 0, PlaySnd]
@@ -3221,7 +3221,7 @@ x = 0
 
 [State 0, PlayerPush]
 type = PlayerPush
-trigger1 =  1
+trigger1 = 1
 value = 0
 
 [State 0, ChangeAnim2]
@@ -3350,7 +3350,7 @@ x = -30
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 102
+trigger1 = time = 102
 value = 3540
 ctrl = 0
 
@@ -3496,7 +3496,7 @@ channel = 4
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3407
 ctrl = 1
 
@@ -4045,7 +4045,7 @@ priority = 7,Miss
 getPower = 0,0
 givePower = 0,0
 numhits = 0
-sparkno =  -1 + 0 * (var(33) := 0)
+sparkno = -1 + 0 * (var(33) := 0)
 p1facing = 1
 p2facing = 1
 p1Stateno = 4501

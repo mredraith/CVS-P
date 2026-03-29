@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Zangief by varo_hades                   |
+;| Zangief by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES=
@@ -2973,7 +2973,7 @@ type = EnvShake
 triggerall=var(40)!=0
 trigger1 = vel x > 0 && animelem = 4 || animelem = 10
 time = 8
-ampl =  -5
+ampl = -5
 ignorehitpause = 1
 
 [State 900, 1]
@@ -3576,7 +3576,7 @@ type = EnvShake
 triggerall=var(40)!=0
 trigger1 = vel x > 0 && animelem = 4 || animelem = 10
 time = 8
-ampl =  -5
+ampl = -5
 ignorehitpause = 1
 
 [State 1030, EX Startup Sound]
@@ -4039,7 +4039,7 @@ type = EnvShake
 triggerall=var(40)!=0
 trigger1 = vel x > 0 && animelem = 4 || animelem = 10
 time = 8
-ampl =  -5
+ampl = -5
 ignorehitpause = 1
 
 [State 900, 1]
@@ -4602,7 +4602,7 @@ type = EnvShake
 triggerall=var(40)!=0
 trigger1 = vel x > 0 && animelem = 4 || animelem = 10
 time = 8
-ampl =  -5
+ampl = -5
 ignorehitpause = 1
 
 [State 900, 1]
@@ -6065,7 +6065,7 @@ value = 1812
 [StateDef 1900]
 type = S
 movetype = A
-physics =  N
+physics = N
 juggle = 8
 anim = Ifelse(p2bodydist x>=50,1900,1901)
 ctrl = 0
@@ -6176,7 +6176,7 @@ ctrl = 1
 [statedef 1901]
 type = S
 movetype = A
-physics =  N
+physics = N
 velset = 0,0
 sprpriority = 2
 anim = 1910
@@ -6345,7 +6345,7 @@ movecamera=1,0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 1917  ;custom animation
+value = 1917 ;custom animation
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = vel y>=0
@@ -6392,7 +6392,7 @@ ctrl = 0
 [StateDef 1930]
 type = S
 movetype = A
-physics =  N
+physics = N
 juggle = 8
 anim = Ifelse(p2bodydist x>=50,1900,1901)
 ctrl = 0
@@ -6533,7 +6533,7 @@ ctrl = 1
 [statedef 1931]
 type = S
 movetype = A
-physics =  N
+physics = N
 velset = 0,0
 sprpriority = 2
 anim = 1910

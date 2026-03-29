@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Chun-Li by Jmorphman                    |
+;| Chun-Li by Jmorphman |
 ; 
 ;
 ;NORMAL MOVES
@@ -3189,7 +3189,7 @@ attr = A, NA
 hitFlag = MAF
 guardFlag = HA
 priority = 4, Hit
-damage = ceil(ifElse(fvar(11) * ifElse(vel x && !var(40), 56, 84) < 7, 7, fvar(11) * ifElse(vel x  && !var(40), 56, 84))), 0
+damage = ceil(ifElse(fvar(11) * ifElse(vel x && !var(40), 56, 84) < 7, 7, fvar(11) * ifElse(vel x && !var(40), 56, 84))), 0
 getPower = ifElse(!var(13), 216, 72) * !var(20), 36 * !var(20)
 givePower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Benimaru by Jmorphman                   |
+;| Benimaru by Jmorphman |
 ; 
 ;
 ;HELPER STATES=
@@ -4135,7 +4135,7 @@ mul = 192,0,256
 
 [State 17000, Hide during level 3 super spark]
 type = AssertSpecial
-trigger1 = Root, StateNo = 3300 && Root, Time >= 4 &&  Root, AnimElemTime(6) < 0
+trigger1 = Root, StateNo = 3300 && Root, Time >= 4 && Root, AnimElemTime(6) < 0
 trigger2 = Enemy, StateNo = 3200 && Enemy, Time >= 4 && Enemy, AnimElemTime(4) < 0
 flag = Invisible
 ignoreHitPause = 1
@@ -4157,7 +4157,7 @@ trigger7 = Root, StateNo = 3250 && Root, Time >= 4 && Root, AnimElemTime(4) < -1
 trigger8 = (Enemy, StateNo = 3000 || Enemy, StateNo = 3050) && Enemy, Time >= 4 && Enemy, Time < 43
 trigger9 = (Enemy, StateNo = 3100 || Enemy, StateNo = 3150) && Enemy, Time >= 4 && Enemy, AnimElemTime(8) < -1
 trigger10 = (Enemy, StateNo = 3500 || Enemy, StateNo = 3550) && Enemy, Time >= 4 && Enemy, Time < 43
-trigger11 = Root, StateNo = 3300 && Root, Time >= 4 &&  Root, AnimElemTime(6) < 0
+trigger11 = Root, StateNo = 3300 && Root, Time >= 4 && Root, AnimElemTime(6) < 0
 trigger12 = Enemy, StateNo = 3200 && Enemy, Time >= 4 && Enemy, AnimElemTime(4) < 0
 var(10) = 1
 

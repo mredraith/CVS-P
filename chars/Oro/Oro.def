@@ -3,23 +3,23 @@
 ; 
 ;====================<DEFINITION>====================
 [Info]
-name        ="Oro"
+name ="Oro"
 displayName ="Oro"
 versionDate =05,02,2012
 mugenVersion=1.0
-author      ="varo_hades"
+author ="varo_hades"
 pal.defaults=4,5,6,1,2,3,10,11,12,7,8,9
-localCoord  = 428,240
+localCoord = 428,240
 
 [Files]
 movelist = movelist.dat
-cmd     =Command.cmd
-cns     =ConstantsCvS.cns
-st      =States/System.st
+cmd =Command.cmd
+cns =ConstantsCvS.cns
+st =States/System.st
 stCommon=common1.cns
-sprite  =Sprite.sff
-anim    =Anim.air
-sound   =Sound.snd
+sprite =Sprite.sff
+anim =Anim.air
+sound =Sound.snd
 pal1=Palettes/oro01.act
 pal2=Palettes/oro02.act
 pal3=Palettes/oro03.act

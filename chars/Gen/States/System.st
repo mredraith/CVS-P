@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| Gen by mwryly & varo_hades              |
+;| Gen by mwryly & varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;SYSTEM STATES
 
@@ -3054,7 +3054,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -3575,10 +3575,10 @@ size.shadowoffset = -4
 [State -2, Stance Swap – Mantis]
 type = ChangeState
 value = 1
-triggerall = var(6) = 1           ; must be in cancel window
-triggerall = movetype = A         ; must be attacking
+triggerall = var(6) = 1 ; must be in cancel window
+triggerall = movetype = A ; must be attacking
 triggerall = statetype != L
-triggerall = var(1) != 0      ; not already Mantis
+triggerall = var(1) != 0 ; not already Mantis
 trigger1 = command = "ppp"
 
 [State -2, Stance Swap – Crane]
@@ -3587,7 +3587,7 @@ value = 10001
 triggerall = var(6) = 1
 triggerall = movetype = A
 triggerall = statetype != L
-triggerall = var(1) != 1      ; not already Crane
+triggerall = var(1) != 1 ; not already Crane
 trigger1 = command = "kkk"
 
 

@@ -3,45 +3,45 @@
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;====================<DEFINITION>====================
 [Info]
-name          = "The Dictator"
-displayname   = "The Dictator"
-lifebarname   = "The Dictator"
-versiondate   = 2025
-mugenversion  = 1.1; deprecated
+name = "The Dictator"
+displayname = "The Dictator"
+lifebarname = "The Dictator"
+versiondate = 2025
+mugenversion = 1.1; deprecated
 ikemenversion = 1.0
-author        = "Phantom.of.the.Server"
-pal.defaults  = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-localcoord    = 320, 240
+author = "Phantom.of.the.Server"
+pal.defaults = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+localcoord = 428, 240
 portraitscale = 1.0
 
 [Files]
-cmd     = dictcmd.cns
-cns     = dictcns.cns
-st1     = states/dictzss.zss
-st2     = states/dictsystem.st
-st3     = states/dictnormal.st
-st4     = states/dictspecial.st
-st5     = states/dictsuper.st
-st6     = states/dicthelper.st
-st7     = states/inputs.zss
-st8     = CONFIG.txt
+cmd = dictcmd.cns
+cns = dictcns.cns
+st1 = states/dictzss.zss
+st2 = states/dictsystem.st
+st3 = states/dictnormal.st
+st4 = states/dictspecial.st
+st5 = states/dictsuper.st
+st6 = states/dicthelper.st
+st7 = states/inputs.zss
+st8 = CONFIG.txt
 stcommon= common1.cns
-sprite  = dictsprite.sff
-anim    = dictanim.air
-sound   = dictsound.snd
+sprite = dictsprite.sff
+anim = dictanim.air
+sound = dictsound.snd
 movelist= dictmovelist.dat
-pal1    = palettes/default.act
-pal2    = palettes/blackgold.act
-pal3    = palettes/whiteblue.act
-pal4    = palettes/redgold.act
-pal5    = palettes/greenbrown.act
-pal6    = palettes/orange.act
-pal7    = palettes/blueblack.act
-pal8    = palettes/purplegreen.act
-pal9    = palettes/tealmagenta.act
-pal10   = palettes/greenlantern.act
-pal11   = palettes/magneto.act
-pal12   = palettes/cell.act
+pal1 = palettes/default.act
+pal2 = palettes/blackgold.act
+pal3 = palettes/whiteblue.act
+pal4 = palettes/redgold.act
+pal5 = palettes/greenbrown.act
+pal6 = palettes/orange.act
+pal7 = palettes/blueblack.act
+pal8 = palettes/purplegreen.act
+pal9 = palettes/tealmagenta.act
+pal10 = palettes/greenlantern.act
+pal11 = palettes/magneto.act
+pal12 = palettes/cell.act
 
 [Palette Keymap]
 x = 1

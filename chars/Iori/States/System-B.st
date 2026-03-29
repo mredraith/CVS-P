@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| Iori Yagami by Knuckles8864             |
+;| Iori Yagami by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -1897,7 +1897,7 @@ value = 130
 
 [State 130, ChangeAnim]
 type = ChangeAnim
-trigger1 =  var(40) = 1 && Anim != 10130 
+trigger1 = var(40) = 1 && Anim != 10130 
 value = 10130
 
 [State 130, AI Fix]
@@ -2457,7 +2457,7 @@ value = 197
 
 [State 5901, Intro Decider]
 type = ChangeState
-trigger1 = RoundNo = 1  && var(40) != 1
+trigger1 = RoundNo = 1 && var(40) != 1
 value = 190 + (Random % 2)
 
 [State 5901, Orochi Intro]
@@ -3900,7 +3900,7 @@ y = 1
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5040 ;HITA_RECOV
 
@@ -3908,7 +3908,7 @@ value = 5040 ;HITA_RECOV
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 5050 ;HITA_FALL
 
@@ -3929,7 +3929,7 @@ type = ChangeAnim
 triggerAll = var(40) != 1
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -3940,7 +3940,7 @@ type = ChangeAnim
 triggerAll = var(40) = 1
 trigger1 = AnimTime = 0
 trigger1 = Anim = 15035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 15035
 trigger2 = (Anim != [15051, 15059]) && (Anim != [15061, 15069])
 trigger2 = Anim != 15090 ;Not if hit off ground anim
@@ -5109,7 +5109,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l

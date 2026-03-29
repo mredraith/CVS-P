@@ -1394,7 +1394,7 @@ value = 52
 ;NEUTRAL JUMPING MEDIUM PUNCH
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 anim = 610
 ctrl = 0
@@ -2070,7 +2070,7 @@ HelperType = Normal
 Name = "Arm"
 StateNo = 814
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -2187,7 +2187,7 @@ trigger3 = AILevel && Random < 800
 var(52) = IfElse(AILevel, 3, 2)
 
 [State 811, Mashing Increment]
-type  = VarAdd
+type = VarAdd
 trigger1 = var(52) = 2
 var(51) = 1
 
@@ -2322,7 +2322,7 @@ value = 813
 ctrl = 0
 
 [Statedef 813]
-type    = S
+type = S
 physics = N
 movetype= I
 anim = 813
@@ -2534,7 +2534,7 @@ HelperType = Normal
 Name = "Arm"
 StateNo = 821
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0

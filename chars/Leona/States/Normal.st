@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==
 ;NORMAL MOVES
@@ -8,7 +8,7 @@
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
 [Statedef 200]
-type    = S
+type = S
 movetype = A
 physics = S
 juggle = 0				
@@ -56,7 +56,7 @@ hitsound=S2,7
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -6
 airguard.velocity = -3.9,-.8
@@ -88,7 +88,7 @@ hitsound=S2,7
 guardsound=s130, 0
 ground.type = High		
 ground.slidetime = 5		
-ground.hittime  = 12		
+ground.hittime = 12		
 guard.hittime = (12) - 6
 ground.velocity = -4		
 airguard.velocity = -1.9,-.8	
@@ -116,7 +116,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
 [Statedef 210]
-type    = S
+type = S
 movetype= A
 physics = S
 juggle = 0
@@ -169,7 +169,7 @@ hitsound=S2,1
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -8
 airguard.velocity = -3.9,-.8
@@ -201,7 +201,7 @@ hitsound=S2,8
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 2
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3
 airguard.velocity = -2.9,-.8
@@ -233,7 +233,7 @@ hitsound=S2,8
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -6
 airguard.velocity = -3.9,-.8
@@ -261,7 +261,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Strong Punch
 [Statedef 220]
-type    = S
+type = S
 movetype= A
 physics = S
 juggle = 0
@@ -306,7 +306,7 @@ hitsound=S2,2
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 24
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -8
 airguard.velocity = -5.9,-.8
@@ -334,7 +334,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
 [Statedef 230]
-type    = S
+type = S
 movetype= A
 physics = S
 juggle = 0
@@ -381,7 +381,7 @@ hitsound=S2,3
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -6
 airguard.velocity = -3.9,-.8
@@ -413,7 +413,7 @@ hitsound=S2,3
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -2
 airguard.velocity = -1.9,-.8
@@ -441,7 +441,7 @@ ctrl = 1
 ; Standing Medium Kick
 ; CNS difficulty: easy
 [Statedef 240]
-type    = S
+type = S
 movetype= A
 physics = S
 juggle = 0
@@ -507,7 +507,7 @@ hitsound=S2,4
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 8
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -6
 airguard.velocity = -3.9,-.8
@@ -539,7 +539,7 @@ hitsound=S2,4
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 2
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -571,7 +571,7 @@ hitsound=S2,4
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 8
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -599,7 +599,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Strong Kick
 [Statedef 250]
-type    = S
+type = S
 movetype= A
 physics = S
 juggle = 0
@@ -645,7 +645,7 @@ hitsound=S2,5
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 18
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -8
 airguard.velocity = -3.9,-.8
@@ -726,7 +726,7 @@ hitsound=S2,5
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 30
+ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -8
 airguard.velocity = -1.9,-.8
@@ -761,7 +761,7 @@ hitsound=S2,5
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 25
+ground.hittime = 25
 guard.hittime = (25) - 6
 ground.velocity = -4,12
 airguard.velocity = -1.9,-.8
@@ -807,7 +807,7 @@ ignorehitpause = 1
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
 [Statedef 400]
-type    = C
+type = C
 movetype= A
 physics = C
 juggle = 0
@@ -846,7 +846,7 @@ hitsound=S2,7
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -873,7 +873,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
 [Statedef 410]
-type    = C
+type = C
 movetype= A
 physics = C
 juggle = 0
@@ -912,7 +912,7 @@ hitsound=S2,8
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 5
-ground.hittime  = 14
+ground.hittime = 14
 guard.hittime = (14) - 6
 ground.velocity = -7
 airguard.velocity = -4.9,-.8
@@ -939,7 +939,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Strong Punch
 [Statedef 420]
-type    = C
+type = C
 movetype= A
 physics = C
 juggle = 0
@@ -990,7 +990,7 @@ air.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-2.5,-5)),Ifelse(var(55)=2,-10
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel =  Ifelse(var(55)=2,.4,.65)
+yaccel = Ifelse(var(55)=2,.4,.65)
 fall = 0
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -1009,7 +1009,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Light Kick
 [Statedef 430]
-type    = C
+type = C
 movetype= A
 physics = C
 juggle = 0
@@ -1048,7 +1048,7 @@ hitsound=S2,3
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 5
-ground.hittime  = 13
+ground.hittime = 13
 guard.hittime = (13) - 6
 ground.velocity = -4
 airguard.velocity = -1.9,-.8
@@ -1081,7 +1081,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouching Medium Kick
 [Statedef 440]
-type    = C
+type = C
 movetype= A
 physics = C
 juggle = 0
@@ -1127,7 +1127,7 @@ hitsound=S2,4
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 8
-ground.hittime  = 16
+ground.hittime = 16
 guard.hittime = (16) - 6
 ground.velocity = -2
 airguard.velocity = -2.39,-.8
@@ -1159,7 +1159,7 @@ hitsound=S2,4
 guardsound=s130, 0
 ground.type = Low
 ground.slidetime = 10
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -6
 airguard.velocity = -2.39,-.8
@@ -1187,7 +1187,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Crouch Strong Kick
 [Statedef 450]
-type    = C
+type = C
 movetype= A
 physics = C
 juggle = 0
@@ -1232,7 +1232,7 @@ hitsound=S2,5
 guardsound=s130, 0
 ground.type = Trip
 ground.slidetime = 5
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2,-8
 airguard.velocity = -2.39,-.8
@@ -1261,7 +1261,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
 [Statedef 600]
-type    = A
+type = A
 movetype= A
 physics = A
 juggle = 0
@@ -1300,7 +1300,7 @@ hitsound=S2,0
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -4
 air.animtype = back
@@ -1321,7 +1321,7 @@ movetype = I
 ;---------------------------------------------------------------------------
 ; Jump Medium Punch
 [Statedef 610]
-type    = A
+type = A
 movetype= A
 physics = A
 juggle = 0
@@ -1368,7 +1368,7 @@ hitsound=S2,1
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -4
 guard.velocity = -6
@@ -1390,7 +1390,7 @@ movetype = I
 ;---------------------------------------------------------------------------
 ; Jump Strong Punch
 [Statedef 620]
-type    = A
+type = A
 movetype= A
 physics = A
 juggle = 0
@@ -1430,7 +1430,7 @@ hitsound=S2,2
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 guard.velocity = -9
@@ -1452,7 +1452,7 @@ movetype = I
 ;---------------------------------------------------------------------------
 ; Jump Light Kick
 [Statedef 630]
-type    = A
+type = A
 movetype= A
 physics = A
 juggle = 0
@@ -1491,7 +1491,7 @@ hitsound=S2,3
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -4
 air.animtype = back
@@ -1512,7 +1512,7 @@ movetype = I
 ;---------------------------------------------------------------------------
 ; Jump Medium Kick
 [Statedef 640]
-type    = A
+type = A
 movetype= A
 physics = A
 juggle = 0
@@ -1552,7 +1552,7 @@ hitsound=S2,4
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -4
 guard.velocity = -6
@@ -1574,7 +1574,7 @@ movetype = I
 ;---------------------------------------------------------------------------
 ; Jump Strong Kick
 [Statedef 650]
-type    = A
+type = A
 movetype= A
 physics = A
 juggle = 0
@@ -1614,7 +1614,7 @@ hitsound=S2,5
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4
 guard.velocity = -9
@@ -1675,7 +1675,7 @@ hitsound=S2,5
 guardsound=s130, 0
 ground.type = High
 ground.slidetime = 5
-ground.hittime  = 12
+ground.hittime = 12
 guard.hittime = (12) - 6
 ground.velocity = -4,6
 airguard.velocity = -1.9,-.8
@@ -1699,7 +1699,7 @@ movetype = I
 ;---------------------------------------------------------------------------
 ;Throw - Attempt
 [Statedef 800]
-type   =S
+type =S
 movetype= A
 physics=S
 juggle =0
@@ -1891,7 +1891,7 @@ ctrl = 1
 ;----------------------------------------------------------------------------
 ; Order Buckler, P1
 [Statedef 810]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 810
@@ -1965,7 +1965,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Order Buckler, P2
 [Statedef 820]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -1983,7 +1983,7 @@ movecamera = 0,0
 ;---------------------------------------------------------------------------
 ; Throw Air State
 [Statedef 821]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = -2.8,-7

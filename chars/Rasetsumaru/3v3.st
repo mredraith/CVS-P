@@ -2737,7 +2737,7 @@ value = 186,1
 channel = 1
 
 
-;WIN BY ZOUBU EGURI  (RASETSUMARU MODE)=
+;WIN BY ZOUBU EGURI (RASETSUMARU MODE)=
 [StateDef 188]
 type = S
 movetype = I

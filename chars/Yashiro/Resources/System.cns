@@ -46,7 +46,7 @@ trigger2 = Enemy, Name = "Iori Yagami" || Enemy, Name = "Iori" || Enemy, Name = 
 value=8
 [State 180, Victory Quote vs. Kula]
 type=VictoryQuote
-trigger1=Enemy, Name="Kula"  || Enemy, Name="Kula Diamond"
+trigger1=Enemy, Name="Kula" || Enemy, Name="Kula Diamond"
 value=9
 [State 180, Victory Quote vs. Art of Fighting Team]
 type=VictoryQuote
@@ -248,9 +248,9 @@ flag = roundnotover
 ;----------------------------------------------------------------------------
 ;Bottle 1
 [Statedef 1840]
-type     = A
+type = A
 movetype = I
-physics  = N
+physics = N
 ctrl = 0
 anim = 1840
 velset = 4,-.5
@@ -278,9 +278,9 @@ value = 1841
 
 ;Bottle 2
 [Statedef 1841]
-type     = S
+type = S
 movetype = I
-physics  = N
+physics = N
 ctrl = 0
 anim = 1841
 velset = 0,0
@@ -298,9 +298,9 @@ y = 0
 ;----------------------------------------------------------------------------
 ;Bottle 3
 [Statedef 1842]
-type     = A
+type = A
 movetype = I
-physics  = N
+physics = N
 ctrl = 0
 anim = 1842
 velset = 4,-.5
@@ -328,9 +328,9 @@ value = 1843
 
 ;Bottle 4
 [Statedef 1843]
-type     = S
+type = S
 movetype = I
-physics  = N
+physics = N
 ctrl = 0
 anim = 1843
 ;velset = 0,0
@@ -1126,10 +1126,10 @@ ctrl = 1
 ;DODGE==
 ;Dodge
 [Statedef 700]
-type    = S
+type = S
 movetype= I
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 700
@@ -1949,7 +1949,7 @@ ctrl = 1
 ;Running=
 ;Running
 [Statedef 100]
-type    = S
+type = S
 movetype = I
 physics = S
 ctrl = 0
@@ -2283,7 +2283,7 @@ ctrl = 1
 ;HIT GROUND(BOUNCE)==
 ;Hit ground
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2373,7 +2373,7 @@ time = 20
 ;HIT LIEDOWN=
 ;Hit Liedown
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -3040,7 +3040,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -3484,7 +3484,7 @@ trigger1 = Enemy(1),statetype = L || Enemy(1),movetype != H
 value = 7828
 ;-------------------------------------------------------------------------------
 [Statedef 7828]
-type    = S
+type = S
 physics = S
 anim = 100
 ctrl = 0
@@ -3548,7 +3548,7 @@ value = 7829
 ctrl = 0
 ;-------------------------------------------------------------------------------
 [Statedef 7829]
-type    = S
+type = S
 physics = S
 anim = 101
 ctrl = 0
@@ -4119,7 +4119,7 @@ ignorehitpause=1
 trigger1 = 1
 type = DisplayToClipboard
 ignorehitpause = 1
-text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
 params = fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]
@@ -4240,13 +4240,13 @@ trigger6 = stateno = 280 && movecontact
 trigger7 = var(20) && stateno = 450 && movecontact
 trigger8 = var(20) && stateno = 1000 
 trigger8 = NumHelper(1005)
-trigger8 = Helper(1005),  var(18)
+trigger8 = Helper(1005), var(18)
 trigger9 = var(20) && (stateno = [1100,1110]) && movecontact
 trigger10 = stateno = 1105 && anim = 1105
 trigger10 = numtarget(1100)
 trigger11 = var(20) && ((stateno = 1200)||(stateno = 1250)) && movecontact
 trigger12 = NumHelper(1305)
-trigger12 = Helper(1305),  var(18)
+trigger12 = Helper(1305), var(18)
 var(5)=1
 ignoreHitPause=1
 
@@ -4259,7 +4259,7 @@ ignoreHitPause=1
 type=VarSet
 trigger1 = (stateno = [200,699]) && Time <= 2
 trigger2 = (stateno = [200,450]) && movecontact
-trigger3 = stateno = 251 && movecontact  && animelemtime(9) >= 1
+trigger3 = stateno = 251 && movecontact && animelemtime(9) >= 1
 trigger4 = (stateno = [1000,1051]) && movecontact
 trigger5 = (stateno = [1100,1150]) && movecontact
 trigger6 = ((stateno = 1200)||(stateno = 1250)) && movecontact
@@ -4276,7 +4276,7 @@ type=VarSet
 trigger1 = stateno = 3010 && movecontact 
 trigger2 = stateno = 3102 && movecontact && animelemtime(11) > 0 
 trigger3 = stateno = 3201 && movecontact
-trigger4 = stateno = 3202 && animelemtime(9) < 1   
+trigger4 = stateno = 3202 && animelemtime(9) < 1 
 trigger5 = (stateno = [3410,3411]) && animelemtime(60) >= 0
 var(7)=1
 ignoreHitPause=1

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Ibuki by varo_hades                     |
+;| Ibuki by varo_hades |
 ; 
 ;
 ;HELPER STATES=

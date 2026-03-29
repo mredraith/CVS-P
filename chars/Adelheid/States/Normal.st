@@ -345,7 +345,7 @@ x = 4
 
 [State 225, HitDef]
 type = HitDef
-guardflags =         ; MODIFIED BY SCRIPT: Unblockable
+guardflags = ; MODIFIED BY SCRIPT: Unblockable
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 3
 forceNoFall = !var(20)
@@ -1375,7 +1375,7 @@ damage = ceil(ifElse(fvar(11) * 37 < 7, 7, fvar(11) * 37)), 0
 guard.pausetime = 12, 12
 sparkNo = -1 + 0 * (var(33) := 8012)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
-sparkxy =  -10 + 0 * (var(35) := 72), var(36) := -90
+sparkxy = -10 + 0 * (var(35) := 72), var(36) := -90
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 ground.type = Low
@@ -1417,7 +1417,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Vier throw
 [Statedef 335]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -1452,7 +1452,7 @@ value = 336
 ;---------------------------------------------------------------------------
 ; Vier Land
 [Statedef 336]
-type    = L
+type = L
 movetype= H
 physics = N
 velset = -4,0
@@ -2096,7 +2096,7 @@ value = 52
 ; j.MP
 [StateDef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 anim = 610
 ctrl = 0
@@ -3031,7 +3031,7 @@ sparkxy = 70,-92
 hitsound = -1 + 0 * (var(31) := 5)
 ground.type = High
 ground.slidetime = 23
-ground.hittime  = 24
+ground.hittime = 24
 guard.hittime = (24) - 6
 ground.velocity = -7,-5
 air.velocity = -5,-5

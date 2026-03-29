@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Iori Yagami by Knuckles8864             |
+;| Iori Yagami by Knuckles8864 |
 ; 
 ;
 ;SUPER STATES=
@@ -766,7 +766,7 @@ ID = 1300 * !var(20)
 attr = A, HA
 hitFlag = MAF
 guardFlag = HA
-priority = 4 ,Hit   
+priority = 4 ,Hit 
 damage = 0, 7
 getPower = 0, 0
 givePower = 36, 36
@@ -1113,7 +1113,7 @@ y = -5.5
 
 [State 3106, VelAdd]
 type = Veladd
-trigger1 =  AnimElemTime(20) >= 0
+trigger1 = AnimElemTime(20) >= 0
 y = .45
 
 [State 3106, Helper]
@@ -1610,7 +1610,7 @@ ID = 1300 * !var(20)
 attr = A, HA
 hitFlag = MAF
 guardFlag = HA
-priority = 4 ,Hit   
+priority = 4 ,Hit 
 damage = 0, 7
 getPower = 0, 0
 givePower = 36, 36
@@ -1992,7 +1992,7 @@ y = -5.5
 
 [State 3156, VelAdd]
 type = Veladd
-trigger1 =  AnimElemTime(20) >= 0
+trigger1 = AnimElemTime(20) >= 0
 y = .45
 
 [State 3156, Helper]
@@ -2212,7 +2212,7 @@ ID = 3200
 attr = A, HA
 hitFlag = MAF
 guardFlag = MA
-priority = 4, Hit   
+priority = 4, Hit 
 damage = 0, 7
 getPower = 0, 0
 givePower = 36, 36
@@ -2239,7 +2239,7 @@ air.fall = 1
 fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
-hitSound = -1 + 0  * (var(31) := 2)
+hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -2345,7 +2345,7 @@ edge = 63,0
 
 [State 3210, Hit Sound]
 type = Null
-trigger1 =  AnimElem = 4 || AnimElem = 8 || AnimElem = 37
+trigger1 = AnimElem = 4 || AnimElem = 8 || AnimElem = 37
 trigger1 = var(31) := 2
 trigger2 = AnimElem = 25 || AnimElem = 33
 trigger2 = var(31) := 10
@@ -2935,7 +2935,7 @@ type= ChangeAnim2
 trigger1 = !Time
 value = 3235
 
-[State 3236,  ScreenBound]
+[State 3236, ScreenBound]
 type = ScreenBound
 trigger1 = 1
 value = 0
@@ -3029,7 +3029,7 @@ time = 20
 mul = 128, 128, 128
 sinAdd = 96, 96, 96, 4
 
-[State 3238,  ScreenBound]
+[State 3238, ScreenBound]
 type = ScreenBound
 trigger1 = 1
 value = 0
@@ -3189,7 +3189,7 @@ ID = 3250
 attr = A, HA
 hitFlag = MAF
 guardFlag = MA
-priority = 4, Hit   
+priority = 4, Hit 
 damage = 0, 7
 getPower = 0, 0
 givePower = 36, 36
@@ -3216,7 +3216,7 @@ air.fall = 1
 fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
-hitSound = -1 + 0  * (var(31) := 2)
+hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3325,7 +3325,7 @@ sprpriority = 7
 
 [State 3251, Hit Sound]
 type = Null
-trigger1 =  AnimElem = 4 || AnimElem = 8 || AnimElem = 37
+trigger1 = AnimElem = 4 || AnimElem = 8 || AnimElem = 37
 trigger1 = var(31) := 2
 trigger2 = AnimElem = 25 || AnimElem = 33
 trigger2 = var(31) := 10
@@ -3802,7 +3802,7 @@ trigger1 = !Time
 attr = S, HA
 hitFlag = MAFD
 guardFlag = MA
-priority = 4, Hit   
+priority = 4, Hit 
 damage = 0, 0
 getPower = 0, 0
 givePower = 16, 16
@@ -4388,7 +4388,7 @@ trigger1 = AnimElem = 3
 anim = 3005
 ID = 3005
 pos = -27,-38
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -4411,7 +4411,7 @@ trigger1 = AnimElem = 3
 anim = 3005
 ID = 3005
 pos = 36,-50
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -4957,7 +4957,7 @@ type = NotHitBy
 trigger1 = Time >= 2 
 value = SCA
 time = 1
-ignorehitpause =  1
+ignorehitpause = 1
 
 [State 3416, SprPriority]
 type = SprPriority
@@ -6242,7 +6242,7 @@ ID = 3600
 attr = A, HA
 hitFlag = MAF
 guardFlag = MA
-priority = 4, Hit   
+priority = 4, Hit 
 damage = 0, 7
 getPower = 0, 0
 givePower = 36, 36
@@ -6269,7 +6269,7 @@ air.fall = 1
 fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
-hitSound = -1 + 0  * (var(31) := 2)
+hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -6375,7 +6375,7 @@ edge = 63,0
 
 [State 3610, Hit Sound]
 type = Null
-trigger1 =  AnimElem = 4 || AnimElem = 8 || AnimElem = 37
+trigger1 = AnimElem = 4 || AnimElem = 8 || AnimElem = 37
 trigger1 = var(31) := 2
 trigger2 = AnimElem = 25 || AnimElem = 33
 trigger2 = var(31) := 10
@@ -6888,7 +6888,7 @@ ID = 3650
 attr = A, HA
 hitFlag = MAF
 guardFlag = MA
-priority = 4, Hit   
+priority = 4, Hit 
 damage = 0, 7
 getPower = 0, 0
 givePower = 36, 36
@@ -6915,7 +6915,7 @@ air.fall = 1
 fall.recover = 0
 fall.recoverTime = 120
 forceStand = 1
-hitSound = -1 + 0  * (var(31) := 2)
+hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -7024,7 +7024,7 @@ sprpriority = 7
 
 [State 3651, Hit Sound]
 type = Null
-trigger1 =  AnimElem = 4 || AnimElem = 8 || AnimElem = 37
+trigger1 = AnimElem = 4 || AnimElem = 8 || AnimElem = 37
 trigger1 = var(31) := 2
 trigger2 = AnimElem = 25 || AnimElem = 33
 trigger2 = var(31) := 10

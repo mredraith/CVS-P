@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rugal by varo_hades                     |
+;| Rugal by varo_hades |
 ; 
 ;
 ;HELPER STATES=
@@ -2868,7 +2868,7 @@ scale = .5,.5
 [State 0, ModifyExplod]
 type = ModifyExplod
 trigger1 = time >44
-ID =  3090
+ID = 3090
 scale = .75-((time-44)*.125),1
 
 [State 0, AssertSpecial]

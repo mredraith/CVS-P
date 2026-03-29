@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Feilong by varo_hades                  |
+;| Feilong by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -3330,11 +3330,11 @@ x = 40
 [State 0, Turn]
 type = Turn
 trigger1 = time= 11
-persistent =  0
+persistent = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
@@ -3621,11 +3621,11 @@ x = 40
 [State 0, Turn]
 type = Turn
 trigger1 = time= 11
-persistent =  0
+persistent = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 0
 ctrl = 1
 

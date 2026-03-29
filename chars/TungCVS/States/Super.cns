@@ -115,7 +115,7 @@ persistent	= 0
 
 [State , NotHitBy]
 type		= NotHitBy
-trigger1	= time = 0  ;AnimElemTime(5) < 0
+trigger1	= time = 0 ;AnimElemTime(5) < 0
 value		= SCA
 time		= 40
 
@@ -233,7 +233,7 @@ supermovetime	= 0
 pausemovetime	= 0
 ; HitDef part of projectile info
 attr		= A, HA
-damage		= 7,5  ;10,5
+damage		= 7,5 ;10,5
 animtype	= Hard
 air.animtype	= Back
 ground.type	= High
@@ -315,7 +315,7 @@ trigger14	= AnimElem = 60
 trigger15	= AnimElem = 64
 trigger16	= AnimElem = 68
 attr		= A, HA
-damage		= 3,1  ;10,1
+damage		= 3,1 ;10,1
 animtype	= Hard
 air.animtype	= Back
 ground.type	= High
@@ -656,7 +656,7 @@ trigger2	= AnimElem = 7
 trigger3	= AnimElem = 9
 trigger4	= AnimElem = 11
 attr		= S, HA
-damage		= 60,7  ;75,10
+damage		= 60,7 ;75,10
 animtype	= Hard
 air.animtype	= Back
 ground.type	= High
@@ -698,7 +698,7 @@ envShake.freq = 120
 type		= HitDef
 trigger1	= AnimElem = 13
 attr		= S, HA
-damage		= 80,7  ;80,15
+damage		= 80,7 ;80,15
 animtype	= Hard
 air.animtype	= Back
 ground.type	= High
@@ -805,7 +805,7 @@ elem		= Parent,AnimElemNo(0)
 ignorehitpause	= 1
 
 [State , Trans]
-type		=  Trans
+type		= Trans
 trigger1	= AnimElemTime(15) >= 0
 trans		= addalpha
 alpha		= var(31)*5,256-var(31)*5

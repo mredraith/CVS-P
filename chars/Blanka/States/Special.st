@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Blanka by varo_hades                    |
+;| Blanka by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -2121,8 +2121,8 @@ palfx.add = ifelse(fvar(1),0,255),ifelse(fvar(1),0,255),ifelse(fvar(1),0,255)
 type = VelSet
 trigger1 = Anim = 1300
 trigger1 = Animelem = 2
-x =  11
-y =  -8
+x = 11
+y = -8
 
 [state 1330]
 type = StatetypeSet
@@ -2137,8 +2137,8 @@ trigger1 = Anim = 1301
 trigger1 = Animelem = 3
 trigger2 = Anim = 1300
 trigger2 = time = 25
-x =  0
-y =  0
+x = 0
+y = 0
 
 [State 1330]
 type = gravity

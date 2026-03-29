@@ -1031,7 +1031,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF
@@ -2503,7 +2503,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = 50,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 810, PlaySnd]
@@ -2662,7 +2662,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = -70,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 820, PlaySnd]
@@ -2906,7 +2906,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = -10,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 832, ChangeState]
@@ -3089,7 +3089,7 @@ name = "Ground Impact"
 ID = 8110
 stateno = 8110
 pos = 0,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 ownpal = 1
 
 [State 842, ChangeState]

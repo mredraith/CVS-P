@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Ibuki by varo_hades                     |
+;| Ibuki by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -4545,7 +4545,7 @@ y = 14
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 1,5
 channel = 0
 
@@ -4565,7 +4565,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 45 < 7, 7, fvar(11) * 45)), 7
 pausetime = 6,18
@@ -4605,7 +4605,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 55 < 7, 7, fvar(11) * 55)), 7
 pausetime = 6,18
@@ -4645,7 +4645,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 65 < 7, 7, fvar(11) * 65)), 7
 pausetime = 6,18
@@ -4786,7 +4786,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
 pausetime = 6,16
@@ -4971,7 +4971,7 @@ y = 14
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 1,5
 channel = 1
 
@@ -4990,7 +4990,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 75 < 7, 7, fvar(11) * 75)), 7
 pausetime = 6,18
@@ -5131,7 +5131,7 @@ attr = A, SA
 hitflag = MAF
 guardflag = HA
 animtype = hard
-air.animtype =  hard
+air.animtype = hard
 ground.type = low
 damage = ceil(ifElse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
 pausetime = 6,16
@@ -5779,7 +5779,7 @@ persistent = 0
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = 41,0
 
 [State 000, snd]

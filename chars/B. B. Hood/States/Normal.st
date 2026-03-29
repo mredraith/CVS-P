@@ -1,5 +1,5 @@
 ; _________________________________________
-;| B. B. Hood by varo_hades                |
+;| B. B. Hood by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -3014,7 +3014,7 @@ ctrl = 1
 ;Being Thrown
 [StateDef 815]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 Ctrl = 0
 
@@ -3040,7 +3040,7 @@ value = 816
 ;After Throw
 [StateDef 816]
 Type = A
-MoveType =  H
+MoveType = H
 Ctrl = 0
 
 [State 1505, Anim 5050]
@@ -3375,7 +3375,7 @@ ctrl = 1
 ;Being Thrown
 [StateDef 865]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 Ctrl = 0
 
@@ -3401,7 +3401,7 @@ value = 816
 ;After Throw
 [StateDef 866]
 Type = A
-MoveType =  H
+MoveType = H
 Ctrl = 0
 
 [State 1505, Anim 5050]

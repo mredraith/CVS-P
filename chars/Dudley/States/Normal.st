@@ -7,16 +7,16 @@
 
 ; Stand Light Punch
 [Statedef 200]
-type = S                      ;State-type: S-stand, C-crouch, A-air, L-liedown
-movetype= A                      ;Move-type: A-attack, I-idle, H-gethit
-physics = S                      ;Physics: S-stand, C-crouch, A-air
-juggle = 1                      ;Number of air juggle points move takes
-velset = 0,0                     ;Set velocity (x,y) (Def: no change)
+type = S ;State-type: S-stand, C-crouch, A-air, L-liedown
+movetype= A ;Move-type: A-attack, I-idle, H-gethit
+physics = S ;Physics: S-stand, C-crouch, A-air
+juggle = 1 ;Number of air juggle points move takes
+velset = 0,0 ;Set velocity (x,y) (Def: no change)
 ctrl = 0
-facep2 = 1                         ;Set ctrl (Def: no change)
-anim = 200                       ;Change animation (Def: no change)
-poweradd = 0                    ;Power to add (Def: 0)
-sprpriority = 2                  ;Set p1's sprite layering priority to 2 (in front)
+facep2 = 1 ;Set ctrl (Def: no change)
+anim = 200 ;Change animation (Def: no change)
+poweradd = 0 ;Power to add (Def: 0)
+sprpriority = 2 ;Set p1's sprite layering priority to 2 (in front)
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -27,28 +27,28 @@ channel = 0
 [State 200, 1]
 type = HitDef
 trigger1 = time = 0
-attr = S, NA                     ;Attribute: Standing, Normal Attack
+attr = S, NA ;Attribute: Standing, Normal Attack
 damage = 23, 0
-getpower = 50,50                  ;Damage that move inflicts, guard damage
-animtype = Light                 ;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = MA                   ;Flags on how move is to be guarded against
-hitflag = MAF                    ;Flags of conditions that move can hit
-priority=4,Hit                 ;Attack priority: 0 (least) to 7 (most), 4 default
-pausetime = 5, 8                 ;Time attacker pauses, time opponent shakes
+getpower = 50,50 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = MA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority=4,Hit ;Attack priority: 0 (least) to 7 (most), 4 default
+pausetime = 5, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 * (var(10):=8010)**0
 guard.sparkno= -1 * (var(17):=8000)**0
-sparkxy = -10 + 0*(var(12):=77), var(13):=-84               ;X-offset for the "hit spark" rel. to p2,
-hitsound = s2, 1                  ;Sound to play on hit
-guardsound = s6, 0                ;Sound to play on guard
-ground.type = High               ;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5             ;Time that the opponent slides back
+sparkxy = -10 + 0*(var(12):=77), var(13):=-84 ;X-offset for the "hit spark" rel. to p2,
+hitsound = s2, 1 ;Sound to play on hit
+guardsound = s6, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
 ground.hittime = 10
 guard.hittime = (10) - 6
-ground.velocity = -4             ;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8     ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High                  ;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3           ;X-velocity at which opponent is pushed,
-air.hittime = 12                 ;Time before opponent regains control in air
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,
+air.hittime = 12 ;Time before opponent regains control in air
 
 [State 200, 1]
 type = PlaySnd
@@ -75,16 +75,16 @@ ctrl = 0
 ;---------------------------------------------------------------------------
 ; Stand Light Punch
 [Statedef 201]
-type = S                      ;State-type: S-stand, C-crouch, A-air, L-liedown
-movetype= A                      ;Move-type: A-attack, I-idle, H-gethit
-physics = S                      ;Physics: S-stand, C-crouch, A-air
-juggle = 1                      ;Number of air juggle points move takes
-velset = 0,0                     ;Set velocity (x,y) (Def: no change)
+type = S ;State-type: S-stand, C-crouch, A-air, L-liedown
+movetype= A ;Move-type: A-attack, I-idle, H-gethit
+physics = S ;Physics: S-stand, C-crouch, A-air
+juggle = 1 ;Number of air juggle points move takes
+velset = 0,0 ;Set velocity (x,y) (Def: no change)
 ctrl = 0
-facep2 = 1                         ;Set ctrl (Def: no change)
-anim = 201                       ;Change animation (Def: no change)
-poweradd = 0                    ;Power to add (Def: 0)
-sprpriority = 2                  ;Set p1's sprite layering priority to 2 (in front)
+facep2 = 1 ;Set ctrl (Def: no change)
+anim = 201 ;Change animation (Def: no change)
+poweradd = 0 ;Power to add (Def: 0)
+sprpriority = 2 ;Set p1's sprite layering priority to 2 (in front)
 
 [State 300, Position]
 type = PosAdd
@@ -94,31 +94,31 @@ x = Ifelse(Time = 0, 11, Ifelse (AnimElemTime(6) = 0, -6, -5))
 [State 200, 1]
 type = HitDef
 trigger1 = time = 0
-attr = S, NA                     ;Attribute: Standing, Normal Attack
+attr = S, NA ;Attribute: Standing, Normal Attack
 damage = 23, 0
-getpower = 50,50                  ;Damage that move inflicts, guard damage
-animtype = Light                 ;Animation type: Light, Medium, Heavy, Back (def: Light)
-guardflag = MA                   ;Flags on how move is to be guarded against
-hitflag = MAF                    ;Flags of conditions that move can hit
-priority=4,Hit                 ;Attack priority: 0 (least) to 7 (most), 4 default
+getpower = 50,50 ;Damage that move inflicts, guard damage
+animtype = Light ;Animation type: Light, Medium, Heavy, Back (def: Light)
+guardflag = MA ;Flags on how move is to be guarded against
+hitflag = MAF ;Flags of conditions that move can hit
+priority=4,Hit ;Attack priority: 0 (least) to 7 (most), 4 default
 ;Hit/Miss/Dodge type (Def: Hit)
-pausetime = 5, 8                 ;Time attacker pauses, time opponent shakes
+pausetime = 5, 8 ;Time attacker pauses, time opponent shakes
 sparkno = -1 * (var(10):=8010)**0
 guard.sparkno= -1 * (var(17):=8000)**0
-sparkxy = -10 + 0*(var(12):=77), var(13):=-71               ;X-offset for the "hit spark" rel. to p2,
+sparkxy = -10 + 0*(var(12):=77), var(13):=-71 ;X-offset for the "hit spark" rel. to p2,
 ;Y-offset for the spark rel. to p1
-hitsound = s2, 1                  ;Sound to play on hit
-guardsound = s6, 0                ;Sound to play on guard
-ground.type = High               ;Type: High, Low, Trip (def: Normal)
-ground.slidetime = 5             ;Time that the opponent slides back
+hitsound = s2, 1 ;Sound to play on hit
+guardsound = s6, 0 ;Sound to play on guard
+ground.type = High ;Type: High, Low, Trip (def: Normal)
+ground.slidetime = 5 ;Time that the opponent slides back
 ground.hittime = 10
 guard.hittime = (10) - 6
-ground.velocity = -4             ;Velocity at which opponent is pushed
-airguard.velocity = -1.9,-.8     ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
-air.type = High                  ;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3           ;X-velocity at which opponent is pushed,
+ground.velocity = -4 ;Velocity at which opponent is pushed
+airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
+air.type = High ;Type: High, Low, Trip (def: same as ground.type)
+air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,
 ;Y-velocity at which opponent is pushed
-air.hittime = 12                 ;Time before opponent regains control in air
+air.hittime = 12 ;Time before opponent regains control in air
 
 [State 200, 1]
 type = PlaySnd
@@ -1519,7 +1519,7 @@ channel = 0
 
 [State 405, Position]
 type = PosAdd
-trigger1 = AnimElem = 3 || AnimElem = 6 || AnimElem = 7 || AnimElem = 8 || AnimElem = 11 || AnimElem = 12  || AnimElem = 13 || AnimElem = 14  || AnimElem = 19 || AnimTime = 0
+trigger1 = AnimElem = 3 || AnimElem = 6 || AnimElem = 7 || AnimElem = 8 || AnimElem = 11 || AnimElem = 12 || AnimElem = 13 || AnimElem = 14 || AnimElem = 19 || AnimTime = 0
 x = Ifelse ((AnimElem = 3), 9, Ifelse ((AnimElem = 6) || (AnimElem = 8), 6, Ifelse((AnimElem = 7), 12, Ifelse ((AnimElem = 11), -19, Ifelse ((AnimElem = 12) || (AnimElem = 13), -6, Ifelse (AnimTime = 0, 0, -1))))))
 
 [State 450, 3]
@@ -1869,10 +1869,10 @@ sparkno = -1
 sprpriority = 1
 p1facing = ifelse (command = "holdback", -1, 1)
 p2facing = 1
-guard.dist = 0         ;Force p2 to face KFM
-p1stateno = 810       ;On success, KFM changes to state 810
-;p2stateno = 820       ;If hit, p2 changes to state 820 in KFM's cns
-guard.dist = 0        ;This prevents p2 from going into a guard state if close
+guard.dist = 0 ;Force p2 to face KFM
+p1stateno = 810 ;On success, KFM changes to state 810
+;p2stateno = 820 ;If hit, p2 changes to state 820 in KFM's cns
+guard.dist = 0 ;This prevents p2 from going into a guard state if close
 fall = 1
 
 [State AttackDone]
@@ -1890,7 +1890,7 @@ ctrl = 1
 ;Kung Fu Throw - Throwing the opponent
 [Statedef 810]
 type = S
-movetype =  A
+movetype = A
 physics = S
 anim = 810
 sprpriority = -2
@@ -1985,7 +1985,7 @@ ctrl = 1
 ; (a custom gethit state)
 [Statedef 820]
 type = A
-movetype =  H
+movetype = H
 physics = N
 velset = 0,0
 sprpriority = -1
@@ -2071,11 +2071,11 @@ sparkno = -1
 sprpriority = 1
 p1facing = ifelse (command = "holdback", -1, 1)
 p2facing = 1
-guard.dist = 0         ;Force p2 to face KFM
-p1stateno = 910       ;On success, KFM changes to state 810
-;p2stateno = 920       ;If hit, p2 changes to state 820 in KFM's cns
-guard.dist = 0        ;This prevents p2 from going into a guard state if close
-fall = 1              ;Force p2 into falling down
+guard.dist = 0 ;Force p2 to face KFM
+p1stateno = 910 ;On success, KFM changes to state 810
+;p2stateno = 920 ;If hit, p2 changes to state 820 in KFM's cns
+guard.dist = 0 ;This prevents p2 from going into a guard state if close
+fall = 1 ;Force p2 into falling down
 
 [State AttackDone]
 type=statetypeset
@@ -2091,7 +2091,7 @@ ctrl = 1
 ;Kung Fu Throw - Throwing the opponent
 [Statedef 910]
 type = S
-movetype =  A
+movetype = A
 physics = S
 anim = 910
 sprpriority = -2

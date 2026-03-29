@@ -1286,7 +1286,7 @@ value = 0
 ;---------------------------------------------------------------------------
 ; GUARD (start)
 [Statedef 120]
-type = U    ;Leave state type unchanged
+type = U ;Leave state type unchanged
 physics = U ;Leave physics unchanged
 
 [State 120, 1]
@@ -1470,7 +1470,7 @@ value = 140
 ;---------------------------------------------------------------------------
 ; GUARD (end)
 [Statedef 140]
-type = U    ;Leave state type unchanged
+type = U ;Leave state type unchanged
 physics = U ;Leave physics unchanged
 ctrl = 1
 
@@ -1827,7 +1827,7 @@ trigger3 = (enemy, name = "Gouki" && enemy, authorname = "Phantom.of.the.Server"
 trigger4 = enemy, name = "AkumaTAG" || enemy, name = "CvSGoukiTAG" || enemy, name = "Gouki" && enemy, authorname != "Mr. Ansatsuken"
 trigger5 = (enemy, name = "GoukiTAG" && enemy, authorname = "Phantom.of.the.Server") && enemy, var(1) = 0
 trigger6 = enemy, name = "Shin Akuma" || enemy, name = "Shin Gouki" || enemy, name = "cvsgouki_ex"
-trigger7 = (enemy, name = "Gouki"  && enemy, authorname = "Phantom.of.the.Server") && enemy, var(1) = 1
+trigger7 = (enemy, name = "Gouki" && enemy, authorname = "Phantom.of.the.Server") && enemy, var(1) = 1
 trigger8 = enemy, name = "Shin AkumaTAG" || enemy, name = "Shin GoukiTAG"
 trigger9 = (enemy, name = "GoukiTAG" && enemy, authorname = "Phantom.of.the.Server") && enemy, var(1) = 1
 value = ceil(38+random%2)
@@ -1863,8 +1863,8 @@ type = VictoryQuote
 trigger1 = enemy, name = "Final Bison" || enemy, name = "Final Vega" || enemy, name = "Shin Bison" || enemy, name = "Bison 2"
 trigger2 = enemy, name = "Vega II" || enemy, name = "Bison2" || enemy, name = "VegaII" || enemy, name = "ShinBison"
 trigger3 = enemy, name = "Final M.Bison" || enemy, name = "Final M. Bison" || enemy, name = "ShinM.Bison"
-trigger4 = enemy, name = "FinalVega" || enemy, name = "FinalBison" ||  enemy, name = "cvsvega_ex"
-trigger5 = enemy, name = "ShinVega" || enemy, name = "Shin Vega" ||  enemy, name = "Shin M.Bison"
+trigger4 = enemy, name = "FinalVega" || enemy, name = "FinalBison" || enemy, name = "cvsvega_ex"
+trigger5 = enemy, name = "ShinVega" || enemy, name = "Shin Vega" || enemy, name = "Shin M.Bison"
 trigger6 = enemy, name = "Vega" && enemy, authorname = "Froz"
 trigger6 = enemy, var(40)=1
 trigger7 = enemy, name = "Shin M. Bison" || enemy, name = "Final M. Bison" || enemy, name = "M. Bison 2" || enemy, name = "M. Bison II"
@@ -2142,7 +2142,7 @@ velset = 0,0
 
 [State 0, AssertSpecial]
 type = AssertSpecial
-trigger1 =  time = [0,300]
+trigger1 = time = [0,300]
 flag = RoundNotOver
 persistent = 1
 
@@ -2151,7 +2151,7 @@ type = Explod
 trigger1 = animelem = 1
 anim = 183
 pos = -400,-100
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2643,16 +2643,16 @@ y = 1
 type = ChangeState
 triggerall = !HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 5040 ;HITA_RECOV
 
 [State 5030, 4]
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
-trigger2 = Pos Y >= 10  ;.
+trigger2 = Vel Y > 0 ;Hit ground
+trigger2 = Pos Y >= 10 ;.
 value = 5050 ;HITA_FALL
 
 [State 5030, 5]
@@ -2683,22 +2683,22 @@ y = GetHitVar(yaccel)
 [State 5035, 3]
 type = ChangeState
 triggerall = !HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Animation over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5040 ;HITA_RECOV
 
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
-trigger3 = Pos Y >= 10  ;.
-trigger4 = Time = 0     ;No transition anim
+trigger3 = Vel Y > 0 ;Hit ground
+trigger3 = Pos Y >= 10 ;.
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 5050 ;HITA_FALL
 
@@ -2754,7 +2754,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim
@@ -3720,7 +3720,7 @@ value = 190
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
@@ -3940,7 +3940,7 @@ Add.Basic[Start]
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l

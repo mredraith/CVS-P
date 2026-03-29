@@ -1,5 +1,5 @@
 ; _________________________________________
-;| King by Jmorphman                       |
+;| King by Jmorphman |
 ; 
 ;
 ;HELPER STATES=

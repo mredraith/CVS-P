@@ -1,5 +1,5 @@
 ; _______________________________________________
-;|            Cody Travers by Trololo            |
+;| Cody Travers by Trololo |
 ; 
 ;
 ;SUPER STATES=
@@ -470,7 +470,7 @@ trigger1 = HitShakeOver
 value = 5030
 
 [Statedef 3011]
-type    = S
+type = S
 movetype= H
 physics = S
 
@@ -1956,7 +1956,7 @@ value = 3105
 type = S
 movetype = A
 physics = N
-juggle   = 3
+juggle = 3
 ctrl = 0
 velset = 0,0
 sprpriority = 2
@@ -2576,7 +2576,7 @@ type = Explod
 trigger1= !Time
 anim = F72
 pos = 0, 0
-posType =  p1
+posType = p1
 sprPriority = 3
 
 [State 3217, PosFreeze]

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Saisyu Kusanagi by Lurker               |
+;| Saisyu Kusanagi by Lurker |
 ; 
 ;
 ;SUPER STATES=

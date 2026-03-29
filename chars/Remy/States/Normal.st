@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;NORMAL MOVES=
@@ -8,7 +8,7 @@
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
 [Statedef 200]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -94,7 +94,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Close Standing Light Punch
 [Statedef 205]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -180,7 +180,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
 [Statedef 210]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -266,7 +266,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
 [Statedef 215]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -510,7 +510,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
 [Statedef 230]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -591,7 +591,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Close Light Kick
 [Statedef 235]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -672,7 +672,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Kick
 [Statedef 240]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -753,7 +753,7 @@ ctrl = 1
 
 ; Standing Medium Kick
 [Statedef 245]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -1496,7 +1496,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF
@@ -1713,7 +1713,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (shaking)
 [Statedef 455]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -1738,7 +1738,7 @@ ampl = 140
 
 ; Tripped get-hit (knocked away)
 [Statedef 456]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -1853,7 +1853,7 @@ value=52
 ; Jump Medium Punch
 [Statedef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 ctrl = 0
 sprPriority = 1
@@ -2659,7 +2659,7 @@ trigger1 = animelem = 10
 anim = 6001
 sprpriority = 4
 postype = p1
-pos = 100,-30                       ;##21#
+pos = 100,-30 ;##21#
 bindtime = 1
 pausemovetime = 0
 removetime = -2
@@ -2747,14 +2747,14 @@ type = VelSet
 trigger1 = time >= 76
 y = 8
 
-[State 825, Break Fall Air]                    ; ##21#
+[State 825, Break Fall Air] ; ##21#
 Type = SelfState
 triggerall = time >= 55
 TriggerAll = Pos Y < -30 && Alive && CanRecover
 Trigger1 = Command = "recovery"
 Value = 5210 ;HITFALL_AIR RECOVER
 
-[State 825, Break Fall Ground]                  ; ##21#
+[State 825, Break Fall Ground] ; ##21#
 Type = SelfState
 triggerall = time >= 55
 TriggerAll = Pos Y >= -30 && Alive && CanRecover
@@ -2994,7 +2994,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Throw Back (Target - Start)
 [statedef 825]
-type    = a
+type = a
 movetype = h
 physics = n
 velset = 0,0

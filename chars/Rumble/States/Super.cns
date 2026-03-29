@@ -133,7 +133,7 @@ ctrl = 1
 ;Fire Ball Lithting Ball Fire MAX>=
 ; FireBall Throw LithtingBall throw Fire Max
 [Statedef 3050]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -279,7 +279,7 @@ ctrl = 1
 ;Fist Punch Rain>=
 ; Fist Punch Rain
 [Statedef 3100]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -402,7 +402,7 @@ ctrl = 1
 ;Fist Punch Rain Max>=
 ; Fist Punch Rain Max
 [Statedef 3150]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -764,7 +764,7 @@ trigger1 = !time
 value = 4011
 [State 4001, TargetBind]
 type = TargetBind
-trigger1 = !time  && NumTarget
+trigger1 = !time && NumTarget
 time = 1
 id = -1
 pos = 100,0
@@ -1394,7 +1394,7 @@ value = 5, 1100
 channel = 1
 ignorehitpause = 1
 [State 4010, Explod]
-type =  Explod
+type = Explod
 trigger1 = AnimElemTime(42) = 10
 anim = 4014
 postype = p1
@@ -2096,7 +2096,7 @@ value = 5120
 
 ; Succes (Classic)
 [Statedef 4104]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0

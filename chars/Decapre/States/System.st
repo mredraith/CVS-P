@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Decapre by varo_hades                   |
+;| Decapre by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -1553,7 +1553,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 
 [State 5210, Flash]
 type = PalFX
@@ -2336,17 +2336,17 @@ size.yscale = .3
 [State 191, Flames]
 type = explod
 trigger1 = animelemtime(1) >= 30 && Time%3 = 0 && animelemtime(3) < 1
-anim        = 8150
-ID          = 8150
+anim = 8150
+ID = 8150
 sprpriority = 3
-postype     = p1
-pos         = 0,-60
-random      = 10,48
-vel         = (random/250.0), (random/250.0)
-facing      = ifelse(random<500, -1, 1)
-vfacing     = ifelse(random<500, -1, 1)
-scale       =.5,.5
-ownpal      = 1
+postype = p1
+pos = 0,-60
+random = 10,48
+vel = (random/250.0), (random/250.0)
+facing = ifelse(random<500, -1, 1)
+vfacing = ifelse(random<500, -1, 1)
+scale =.5,.5
+ownpal = 1
 
 [State 191, End]
 type = ChangeState
@@ -2365,15 +2365,15 @@ sprpriority = 5
 [State 7600, Trans]
 type = Trans
 trigger1 = 1
-trans    = Addalpha
-alpha    = 256,256
+trans = Addalpha
+alpha = 256,256
 
 [State 7600, Bind]
 type=BindToParent
 trigger1 = 1
 pos = ceil(6*const(size.xscale)),ceil(-190*const(size.yscale))
 ;postype = p1
-;facing   = 1
+;facing = 1
 
 [State 7600, Assert]
 type = AssertSpecial
@@ -2430,28 +2430,28 @@ value = 193, 1
 type = Explod
 trigger1 = Anim = 193 && AnimElem = 7
 anim = 8100
-postype     = p1
-pos         = -6 ,-87
-bindtime    = 1
-removetime  = -2
+postype = p1
+pos = -6 ,-87
+bindtime = 1
+removetime = -2
 sprpriority = 2
-supermove   = 0
-ownpal      = 1
-Vel         = -2,-0.5
-Scale       = .8,.8
+supermove = 0
+ownpal = 1
+Vel = -2,-0.5
+Scale = .8,.8
 
 [State 192,------ Explod 2]
 type = Explod
 trigger1 = Anim = 193 && AnimElem = 15
 anim = 6400
-postype     = p1
-pos         = -5 ,-87
-bindtime    = 1
-removetime  = -2
+postype = p1
+pos = -5 ,-87
+bindtime = 1
+removetime = -2
 sprpriority = 2
-supermove   = 0
-ownpal      = 1
-Scale       = .125,.125
+supermove = 0
+ownpal = 1
+Scale = .125,.125
 
 [State 192, End]
 type = ChangeState
@@ -2504,13 +2504,13 @@ type = Explod
 trigger1 = Anim = 196
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 [State 193, Cloth]
 type = Helper
@@ -2519,10 +2519,10 @@ helpertype = normal
 name = "Enero"
 ID = 11700
 stateno = 11700
-pos     = ceil(-15*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(-15*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
+ownpal = 1
 supermovetime = 0
 
 [State 193,Cloth]
@@ -2530,130 +2530,130 @@ type = Helper
 trigger1 = time = 5
 helpertype = normal
 name = "Santamu"
-ID   = 11500
+ID = 11500
 stateno = 11500
-pos     = ceil(15*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(15*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 10
 helpertype = normal
 name = "Marz"
-ID   = 11000
+ID = 11000
 stateno = 11000
-pos     = ceil(-30*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(-30*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 15
 helpertype = normal
 name = "Juli"
-ID   = 11900
+ID = 11900
 stateno = 11900
-pos     = ceil(30*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(30*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 20
 helpertype = normal
 name = "Fevrier"
-ID   = 11300
+ID = 11300
 stateno = 11300
-pos     = ceil(-45*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(-45*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 25
 helpertype = normal
 name = "Xiayu"
-ID   = 11600
+ID = 11600
 stateno = 11600
-pos     = ceil(45*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(45*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 30
 helpertype = normal
 name = "Juni"
-ID   = 12000
+ID = 12000
 stateno = 12000
-pos     =  ceil(-60*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(-60*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 35
 helpertype = normal
 name = "Satsuki"
-ID   = 11100
+ID = 11100
 stateno = 11100
-pos     = ceil(60*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(60*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 40
 helpertype = normal
 name = "Aprile"
-ID   = 11400
+ID = 11400
 stateno = 11400
-pos     = ceil(-75*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(-75*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth]
 type = Helper
 trigger1 = Time = 45
 helpertype = normal
 name = "Noembelu"
-ID   = 11200
+ID = 11200
 stateno = 11200
-pos     =  ceil(75*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(75*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193,Cloth];
 type = Helper
 trigger1 = Time = 50
 helpertype = normal
 name = "Yanyu"
-ID   = 11800
+ID = 11800
 stateno = 11800
-pos     =  ceil(-90*const(size.xscale)),ceil(0*const(size.yscale))
+pos = ceil(-90*const(size.xscale)),ceil(0*const(size.yscale))
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 [State 193, screenbound]
 type = screenbound
@@ -2673,17 +2673,17 @@ flag = Intro
 
 [State 193,------ ChangeAnim]
 type = ChangeAnim
-Trigger1   = Anim = 194
-Trigger1   = Pos Y >= 0 && Vel Y > 0
+Trigger1 = Anim = 194
+Trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 196
-elem  = 1
+elem = 1
 
 [State 193,------ ChangeAnim]
 type = ChangeAnim
-Trigger1   = Anim = 196
-Trigger1   = AnimTime = 0
+Trigger1 = Anim = 196
+Trigger1 = AnimTime = 0
 value = 0
-elem  = 1
+elem = 1
 
 [State 193,------ Pos 2]
 type = PosSet
@@ -2696,7 +2696,7 @@ type = StateTypeSet
 trigger1 = Anim = 196
 trigger1 = AnimElemTime(1) = 0 || AnimElemTime(1) = 1
 StateType = S
-physics   = N
+physics = N
 
 [State 193,------ Vel 1]
 type = VelSet
@@ -2773,13 +2773,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;SANTAMU
 [Statedef 11500]
@@ -2839,13 +2839,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;MARZ
 [Statedef 11000]
@@ -2905,13 +2905,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;JULI
 [Statedef 11900]
@@ -2971,13 +2971,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;FEVRIER
 [Statedef 11300]
@@ -3037,13 +3037,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;XIAYU
 [Statedef 11600]
@@ -3103,13 +3103,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;JUNI
 [Statedef 12000]
@@ -3169,13 +3169,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;SATSUKI
 [Statedef 11100]
@@ -3235,13 +3235,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;APRILE
 [Statedef 11400]
@@ -3301,13 +3301,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;NOEMBELU
 [Statedef 11200]
@@ -3367,13 +3367,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;YANYU
 [Statedef 11800]
@@ -3433,13 +3433,13 @@ trigger2 = roundstate = 2
 type = Explod
 trigger1 = AnimElemTime(1) = 1
 anim = 8102
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
-supermove   = 0
-ownpal      = 1
-Scale       = 0.5,0.5
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
+supermove = 0
+ownpal = 1
+Scale = 0.5,0.5
 
 ;INTRO VS CAMMY>=
 [StateDef 197]
@@ -3481,7 +3481,7 @@ ownpal = 1
 sprpriority = -3
 ;pausemovetime = -1
 supermovetime = -1
-removetime  = -2
+removetime = -2
 scale = .5,.5
 
 [State 180,------ EnvShake]
@@ -4069,41 +4069,41 @@ value = 1600, 0
 type = Explod
 trigger1 = AnimElem = 19
 anim = 8100
-postype     = p1
-pos         = 0 ,ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
+postype = p1
+pos = 0 ,ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
 sprpriority = 3
-supermove   = 0
-ownpal      = 1
-Scale       = 1,1
+supermove = 0
+ownpal = 1
+Scale = 1,1
 
 [State 187, 1]
 type = Explod
 trigger1 = AnimElem = 9
 anim = 8100
-postype     = p1
-pos         = -6 ,-87
-bindtime    = 1
-removetime  = -2
+postype = p1
+pos = -6 ,-87
+bindtime = 1
+removetime = -2
 sprpriority = 3
-supermove   = 0
-ownpal      = 1
-Vel         = -2,-0.5
-Scale       = .8,.8
+supermove = 0
+ownpal = 1
+Vel = -2,-0.5
+Scale = .8,.8
 
 [State 187, 1]
 type = Helper
 trigger1 = AnimElemTime(13) = 0
 helpertype = normal
 stateno = 13000
-ID      = 13000
-name    = "Mask"
-pos     = 1, -68
+ID = 13000
+name = "Mask"
+pos = 1, -68
 postype = p1
 keyctrl = 0
-ownpal  = 1
-supermovetime    = 0
+ownpal = 1
+supermovetime = 0
 
 ;MASK>=
 [Statedef 13000]
@@ -4128,10 +4128,10 @@ y = -5
 
 [State 13000,------ ChangeAnim]
 type = ChangeAnim
-Trigger1   = Anim = 13000
-Trigger1   = Pos Y >= 0 && Vel Y > 0
+Trigger1 = Anim = 13000
+Trigger1 = Pos Y >= 0 && Vel Y > 0
 value = 13500
-elem  = 1
+elem = 1
 
 [State 13000,------ Pos 1]
 type = PosSet
@@ -4144,13 +4144,13 @@ type = StateTypeSet
 trigger1 = Anim = 13500
 trigger1 = AnimElemTime(1) = 0 || AnimElemTime(1) = 1
 StateType = S
-physics   = S
+physics = S
 
 [State 13000,------ Snd 1]
 type = PlaySnd
 trigger1 = Anim = 13500
 trigger1 = AnimElemTime(1) = 0
-value   = 100, 2
+value = 100, 2
 
 [State 13000,------ Vel 2]
 type = VelSet
@@ -4163,14 +4163,14 @@ type = Explod
 trigger1 = Anim = 13500
 trigger1 = AnimElemTime(1) = 0
 anim = 8100
-postype     = p1
-pos         = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
-bindtime    = 1
-removetime  = -2
+postype = p1
+pos = ceil(0*const(size.xscale)),ceil(2*const(size.yscale))
+bindtime = 1
+removetime = -2
 sprpriority = 4
-supermove   = 0
-ownpal      = 1
-Scale       = .3,.3
+supermove = 0
+ownpal = 1
+Scale = .3,.3
 
 [State 31183,------ DestroySelf]
 type = DestroySelf
@@ -4184,7 +4184,7 @@ type = S
 moveType = I
 physics = S
 anim = 195
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -4211,7 +4211,7 @@ type = S
 moveType = I
 physics = S
 anim = 197
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -5119,7 +5119,7 @@ trigger4 = (StateNo = [3200,3299])
 trigger4 = var(23) := 3200
 trigger5 = (StateNo = [3300,3399])
 trigger5 = var(23) := 3300
-trigger6 = NumHelper(3105)  
+trigger6 = NumHelper(3105) 
 trigger7 = NumHelper(3155)
 helperType = Normal
 stateNo = 8600

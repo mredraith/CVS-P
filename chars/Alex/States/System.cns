@@ -458,7 +458,7 @@ channel=1
 ;[State 195, VarSet]
 ;type=VarSet
 ;trigger1=!time
-;v=9   
+;v=9 
 ;value=1
 
 [State 195, Ctrlset]
@@ -475,7 +475,7 @@ ctrl=1
 ;DODGE==
 ;Dodge
 [Statedef 700]
-type   =S
+type =S
 movetype= I
 physics=S
 juggle =0
@@ -1628,7 +1628,7 @@ ctrl=1
 
 ;HIT GROUND(BOUNCE)==
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -1719,7 +1719,7 @@ time = 20
 ;HIT LIEDOWN=
 ;Hit Liedown
 [Statedef 5110]
-type   =L
+type =L
 movetype= H
 physics=N
 
@@ -2804,7 +2804,7 @@ value=7828
 ;OFF SCREEN RUN IN==
 ;Off Screen Run In
 [Statedef 7828]
-type   =S
+type =S
 physics=S
 anim=100
 ctrl=0
@@ -2849,7 +2849,7 @@ ctrl=0
 ;OFF SCREEN RUN STOP==
 ;Off Screen Run Stop
 [Statedef 7829]
-type   =S
+type =S
 physics=S
 anim=101
 ctrl=0
@@ -3526,7 +3526,7 @@ ignorehitpause = 1
 trigger1=1
 type=DisplayToClipboard
 ignorehitpause=1
-text="Damp=%d Limit=%d juggle=%d hit=%d  Front =%d Back=%d"
+text="Damp=%d Limit=%d juggle=%d hit=%d Front =%d Back=%d"
 params=fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]

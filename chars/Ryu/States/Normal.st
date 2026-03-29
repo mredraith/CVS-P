@@ -1986,7 +1986,7 @@ palFX.time = 12 * var(29)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
 
-[State Idle]              `
+[State Idle] `
 type = statetypeset
 trigger1 = animelemtime(4) >= 0 && var(1)!= 2
 trigger2 = animelemtime(5) >= 0 && var(1)!= 2

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Iori Yagami by Knuckles8864             |
+;| Iori Yagami by Knuckles8864 |
 ; 
 ;
 ;NORMAL MOVES=
@@ -600,7 +600,7 @@ forceStand = 1
 [State 225, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 3  && (!movecontact && !movereversed)
+trigger1 = AnimElem = 3 && (!movecontact && !movereversed)
 forceNoFall = !var(20)
 attr = S, NA
 hitFlag = MAF
@@ -655,7 +655,7 @@ ctrl = 1
 
 ;STANDING FAR LIGHT KICK=
 [StateDef 230]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= 10 * !var(20)
@@ -2428,7 +2428,7 @@ var(19) = -1
 [State 810, TargetBind1]
 type = TargetBind
 trigger1 = !Time
-pos =  50,0
+pos = 50,0
 time = 1
 
 [State 0, VelSet]
@@ -2553,27 +2553,27 @@ channel = 1
 [State 810, TargetBind1]
 type = TargetBind
 trigger1 = AnimElemTime(1)>=0 && AnimElemTime(2)<0
-pos =  28,0
+pos = 28,0
 time = 1
 [State 810, TargetBind1]
 type = TargetBind
 trigger1 = AnimElemTime(2)>=0 && AnimElemTime(3)<0
-pos =  26,0
+pos = 26,0
 time = 1
 [State 810, TargetBind1]
 type = TargetBind
 trigger1 = AnimElemTime(3)>=0 && AnimElemTime(4)<0
-pos =  20,0
+pos = 20,0
 time = 1
 [State 810, TargetBind1]
 type = TargetBind
 trigger1 = AnimElemTime(4)>=0 && AnimElemTime(5)<0
-pos =  17,0
+pos = 17,0
 time = 1
 [State 810, TargetBind1]
 type = TargetBind
 trigger1 = AnimElemTime(5)>=0 && AnimElemTime(6)<0
-pos =  10,0
+pos = 10,0
 time = 1
 
 [State 810, TargetLifeAdd]

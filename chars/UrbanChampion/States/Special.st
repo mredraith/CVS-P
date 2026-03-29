@@ -1,5 +1,5 @@
 ; ________________________________________________
-;| Urban Champion by NovaMagnolia  			|
+;| Urban Champion by NovaMagnolia 			|
 ; 
 ;==============================================================================================
 ;========================================<SPECIAL MOVES>=======================================
@@ -2214,7 +2214,7 @@ type = VarSet
 triggerAll = !var(14) && AnimElemTime(3) >= 0 && AnimElemTime(5) < 0
 trigger1 = !AILevel
 ; BB
-trigger1 =  (ifElse(P2Dist x < 0, Facing = -1, Facing = 1) && NumExplod(90001064)) || (ifElse(P2Dist x < 0, Facing = 1, Facing = -1) && NumExplod(90001016))
+trigger1 = (ifElse(P2Dist x < 0, Facing = -1, Facing = 1) && NumExplod(90001064)) || (ifElse(P2Dist x < 0, Facing = 1, Facing = -1) && NumExplod(90001016))
 trigger2 = AILevel >= 6 && AnimElemTime(4) = 1 && (enemynear,movetype = A || random > 500)
 var(14) = 1305
 
@@ -3512,7 +3512,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Downtown Beatdown (Success)
 [Statedef 1510]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -3649,7 +3649,7 @@ value = 1511
 ;---------------------------------------------------------------------------
 ;Downtown Beatdown (End)
 [Statedef 1511]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -3823,7 +3823,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Downtown Beatdown (Target)
 [Statedef 1515]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -3849,7 +3849,7 @@ value = 5080
 ;---------------------------------------------------------------------------
 ;Downtown Beatdown (After Throw)
 [Statedef 1516]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = -2.5,-3.4
@@ -3975,7 +3975,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;EX Downtown Beatdown (Success)
 [Statedef 1540]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -4111,7 +4111,7 @@ value = 1541
 ;---------------------------------------------------------------------------
 ;EX Downtown Beatdown (End)
 [Statedef 1541]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -4242,7 +4242,7 @@ value = 1512
 ;---------------------------------------------------------------------------
 ;EX Downtown Beatdown (Target)
 [Statedef 1545]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0

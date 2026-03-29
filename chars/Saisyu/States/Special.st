@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Saisyu Kusanagi by Lurker               |
+;| Saisyu Kusanagi by Lurker |
 ; 
 ;
 ;SPECIAL MOVES
@@ -1437,7 +1437,7 @@ ownpal = 1
 
 [State 1230, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(6)  >= 0 && AnimElemTime(7) < 0
+trigger1 = AnimElemTime(6) >= 0 && AnimElemTime(7) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)

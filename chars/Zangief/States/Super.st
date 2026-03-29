@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Zangief by varo_hades                   |
+;| Zangief by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -2641,7 +2641,7 @@ type = EnvShake
 triggerall=var(40)!=0
 trigger1 = vel x > 0 && animelem = 3 || animelem = 8
 time = 8
-ampl =  -5
+ampl = -5
 ignorehitpause = 1
 
 [State 3750,1]
@@ -3172,7 +3172,7 @@ channel = 1
 
 [State 901, Effect]
 type = PlaySnd
-trigger1 = AnimElem = 1  && var(40) != 1
+trigger1 = AnimElem = 1 && var(40) != 1
 value = 3200, 3
 channel = 2
 
@@ -3192,7 +3192,7 @@ channel = 1
 
 [State 901, Effect]
 type = PlaySnd
-trigger1 = AnimElem = 1  && var(40) != 0
+trigger1 = AnimElem = 1 && var(40) != 0
 value = 3050, 1
 channel = 2
 
@@ -3414,7 +3414,7 @@ trigger1 = time = 0
 anim = 998
 ID = 998
 pos = 27,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -6047,7 +6047,7 @@ priority = 4,Miss
 getPower = 0,0
 givePower = 0,0
 numhits = 0
-sparkno =  -1 + 0 * (var(33) := 0)
+sparkno = -1 + 0 * (var(33) := 0)
 p1facing = 1
 p2facing = 1
 p1stateno = 3501

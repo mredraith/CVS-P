@@ -1,6 +1,6 @@
-;                          ____________________
+; ____________________
 ;|Terry Bogard by Memo|=
-;                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SPECIAL MOVES=
 ;
@@ -2281,7 +2281,7 @@ x = 16
 [State 1330, VelSet]
 type = VelSet
 trigger1 = animelemtime(4) = 0
-x =  5.62493896484375
+x = 5.62493896484375
 y = -12.05
 
 [State 1330, VelAdd]
@@ -3782,12 +3782,12 @@ channel=1
 
 [State 1630, VelSet]
 type = VelSet
-trigger1 = animelem= 3  
+trigger1 = animelem= 3 
 x = 19.75
 
 [State 1630, VelSet]
 type = VelSet
-trigger1 = animelem= 13  
+trigger1 = animelem= 13 
 x = 15.75
 
 [State 1630, Velset]

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Kyo Kusanagi by Jmorphman               |
+;| Kyo Kusanagi by Jmorphman |
 ; 
 ;
 ;SPECIAL MOVES=
@@ -86,7 +86,7 @@ ignoreHitPause = 0
 
 [State 1000, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(3)  >= 0 && AnimElemTime(4) < 0
+trigger1 = AnimElemTime(3) >= 0 && AnimElemTime(4) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,14
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -2711,7 +2711,7 @@ ignoreHitPause = 0
 
 [State 1160, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(2)  >= 0 && AnimElemTime(5) < 0
+trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(5) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,18
 sparkNo = -1 + 0 * (var(33) := 8001)

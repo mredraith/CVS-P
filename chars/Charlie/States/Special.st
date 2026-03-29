@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Charlie by varo_hades                   |
+;| Charlie by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES

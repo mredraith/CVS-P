@@ -106,7 +106,7 @@ trigger1=root,command="a"||root,command="b"||root,command="c"||root,command="x"|
 trigger2=var(29)<=0
 trigger3=root,AILevel
 ;--------------------------------------------------------------------------------------
-;Mode Select (ADD004)   CUSTOM COMBO AND MAX MODE SPRITES BY MR. ANSATSUKEN
+;Mode Select (ADD004) CUSTOM COMBO AND MAX MODE SPRITES BY MR. ANSATSUKEN
 [Statedef 257]
 physics = N
 anim = 9999
@@ -1938,7 +1938,7 @@ trigger1 = time >= 15
 ;CAMERA FOCUS
 [Statedef 6001]
 type = S
-physics  = S
+physics = S
 anim = 0
 ctrl = 0
 

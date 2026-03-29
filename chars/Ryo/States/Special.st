@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Ryo Sakazaki by CrazyKoopa & Jmorphman  |
+;| Ryo Sakazaki by CrazyKoopa & Jmorphman |
 ; 
 ;
 ;SPECIAL MOVES=
@@ -1419,7 +1419,7 @@ value = 1,2
 
 [State 1300, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(2)  >= 0 && AnimElemTime(3) < 0
+trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -1681,7 +1681,7 @@ edge = 64,0
 
 [State 1310, PlaySnd]
 type = PlaySnd
-trigger1 = !Time || animelem =  4 || animelem = 7 || animelem = 10
+trigger1 = !Time || animelem = 4 || animelem = 7 || animelem = 10
 trigger2 = animelem = 13 || animelem = 16 || animelem = 19 || animelem = 22
 trigger3 = animelem = 25 || animelem = 28 || animelem = 31 || animelem = 34
 trigger4 = AnimElem = 39
@@ -2030,7 +2030,7 @@ value = 1,2
 
 [State 1300, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(2)  >= 0 && AnimElemTime(4) < 0
+trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(4) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)

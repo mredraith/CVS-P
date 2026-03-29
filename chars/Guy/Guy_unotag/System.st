@@ -2202,7 +2202,7 @@ value = 5210
 
 [Statedef -2]
 
-;  --- Uno Tag System v3.0 STATEDEF -2 ---
+; --- Uno Tag System v3.0 STATEDEF -2 ---
 
 [State -2, deactivate tag]
 type = VarSet
@@ -2360,7 +2360,7 @@ triggerall = NumTarget
 triggerall = Time = [0,1]
 trigger1 = !Life
 trigger2 = StateNo = [1251101,1251105]
-trigger3 = StateNo = [1251115,1251116]  
+trigger3 = StateNo = [1251115,1251116] 
 trigger4 = StateNo = 1251106 || StateNo = 1251123
 
 [State -2, Buwelo]
@@ -2391,8 +2391,8 @@ y = -1.2
 type = TargetState
 trigger1 = NumTarget
 trigger1 = StateNo = 1251102 || PrevStateNo = 1251102 || StateNo = 1251123 || PrevStateNo = 1251123 || StateNo = 1251126 || PrevStateNo = 1251126
-trigger1 = (Target, Pos Y < 0) && !(Target, StateNo = [120,152]) && (Target, StateNo != [1251109,1251119]) && MoveContact  && (Target, Anim = [5100,5170])  && (Target, Anim != [5110,5120])  && Target, PrevStateNo != 1251119 
-trigger1 = (Target, Statetype != A) ; && (Target, Statetype != S)  && (Target, Statetype != C)
+trigger1 = (Target, Pos Y < 0) && !(Target, StateNo = [120,152]) && (Target, StateNo != [1251109,1251119]) && MoveContact && (Target, Anim = [5100,5170]) && (Target, Anim != [5110,5120]) && Target, PrevStateNo != 1251119 
+trigger1 = (Target, Statetype != A) ; && (Target, Statetype != S) && (Target, Statetype != C)
 trigger1 = !Target, HitOver
 value = 1251119
 ignorehitpause = 1
@@ -2599,7 +2599,7 @@ ignorehitpause = 1
 
 [Statedef -3]
 
-;  --- Uno Tag System v3.0 STATEDEF -3 ---
+; --- Uno Tag System v3.0 STATEDEF -3 ---
 
 
 ; Tag active definer
@@ -3043,13 +3043,13 @@ Time=10
 type = AfterImage
 triggerall = RoundState <= 2
 triggerall = !Win && !Lose && !MatchOver && !DrawGame
-triggerall = sysvar(4) = 7  && MoveType = A
+triggerall = sysvar(4) = 7 && MoveType = A
 trigger1 = PrevStateNo = 5300 || PrevStateNo = 4600
 trigger2 = (gameTime%10) = 0
 Trans = add
 PalContrast = 256,0,0
 PalBright = 50,0,0
-Time =  -1
+Time = -1
 length = 17
 TimeGap = 1
 FrameGap = 1
@@ -3090,7 +3090,7 @@ trigger3 = StateNo = 1251125
 [State -3, T_T]
 type = SelfState
 triggerall = NumPartner && sysvar(4) > 0
-trigger1 = RoundState = 2  && Pos Y < 0
+trigger1 = RoundState = 2 && Pos Y < 0
 trigger1 = StateNo = 0 && (Partner, StateNo != [1251112,1251114])
 trigger1 = PrevStateNo = [1251112,1251114]
 value = 1251112
@@ -3103,9 +3103,9 @@ triggerall = Life && Partner, Life
 triggerall = StateNo != [1251110,1251114]
 trigger1 = sysvar(4) = 2				; performed team attack
 trigger1 = (PrevStateNo = [5000,5500]) || (StateNo != [200,1251199]) && (MoveType != H)
-trigger2 = sysvar(4) = 4         		; performed Delayed Cancel
+trigger2 = sysvar(4) = 4 		; performed Delayed Cancel
 trigger2 = MoveType = I || ((Partner, prevStateNo = 1251131 || Partner, StateNo != [1251101,1251135]) && Time > 1)
-trigger3 = sysvar(4) = 3          	; performed Cross Attack
+trigger3 = sysvar(4) = 3 	; performed Cross Attack
 trigger3 = (StateNo = 1251126 && Time > 1) && (Partner, StateNo = 1251102 && Partner, BackEdgeBodyDist > 15)
 trigger4 = (sysvar(4) = [2,4]) && MoveType = I && (StateNo != [1251101,1251133])
 trigger5 = NumHelper(1251125)
@@ -3116,7 +3116,7 @@ ignorehitpause = 1
 
 ; ---- Uno Tag System v3.0 END LINE ----
 
-;  ;]
+; ;]
 
 [State -3, Gametime Var]
 type = varset

@@ -572,7 +572,7 @@ value=ifelse(alive,5120,5150)
 ;---------------------------------------------------------------------------
 ;Off screen Knockback
 [Statedef 4020]
-type   =A
+type =A
 movetype= H
 physics=N
 juggle=1
@@ -590,7 +590,7 @@ y =.45
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4020  ;custom animation
+value=4020 ;custom animation
 
 [State 0, ChangeState]
 type=changeState
@@ -600,7 +600,7 @@ ctrl=0
 ;---------------------------------------------------------------------------
 ;Off screen Knockback Fall
 [Statedef 4021]
-type   =L
+type =L
 movetype= H
 physics=N
 velset=0,0
@@ -635,7 +635,7 @@ value=Ifelse(Alive,5120,5150)
 ;---------------------------------------------------------------------------
 ;Custom Low
 [Statedef 4058]
-type   =S
+type =S
 movetype= H
 physics=S
 juggle=1
@@ -664,7 +664,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type=ChangeAnim2
 trigger1=!time
-value=4058  ;custom animation
+value=4058 ;custom animation
 
 [State 0, SelfState]
 type=SelfState
@@ -674,7 +674,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Custom High
 [Statedef 4059]
-type   =S
+type =S
 movetype= H
 physics=S
 juggle=1
@@ -728,7 +728,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Wall-knockdown
 [Statedef 4060]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -771,7 +771,7 @@ value=4061
 ;---------------------------------------------------------------------------
 ;Wall-knockdown Hit Wall
 [Statedef 4061]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -822,7 +822,7 @@ value=4062
 ;---------------------------------------------------------------------------
 ;Wall-knockdown Fall
 [Statedef 4062]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -875,7 +875,7 @@ value=5100
 ;---------------------------------------------------------------------------
 ;Custom-ceiling bounce
 [Statedef 4065]
-type   =A
+type =A
 movetype= H
 physics=N
 velset=0,0
@@ -906,7 +906,7 @@ value=4066
 ;------------------------
 ;Chop State
 [Statedef 1050]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -915,7 +915,7 @@ velset = 0,0
 ;type = ChangeState
 ;triggerall = time = 0
 ;triggerall = authorname = "GM"
-;trigger1 = name = "Ryu" || name = "Ken"  || name = "Gouki" || name = "Alex" || name = "Hugo"
+;trigger1 = name = "Ryu" || name = "Ken" || name = "Gouki" || name = "Alex" || name = "Hugo"
 ;trigger2 = name = "Ibuki" || name = "Gill"
 ;value = 5600
 
@@ -972,7 +972,7 @@ waveform = sinesquare
 ampl = 140
 
 [Statedef 1060]
-type    = S
+type = S
 movetype= H
 physics = S
 
@@ -1013,7 +1013,7 @@ ctrl = 1
 ;????????????????????????????????????????
 ;????????2
 [Statedef 7650]
-type   =S
+type =S
 movetype= H
 physics=N
 velset=0,0

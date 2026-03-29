@@ -1873,7 +1873,7 @@ hitsound = s12,8
 guardsound = s2,1
 ground.type = High
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5
 fall = 1
@@ -1911,7 +1911,7 @@ name = "Max Germinal Explods"
 ID = 3255
 stateno = 3255
 pos = -80,-50
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2001,7 +2001,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;MAX Germinal-P2
 [Statedef 3251]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -2361,7 +2361,7 @@ flag = NoAutoTurn
 
 [State 3301, Bind 2]
 type = TargetBind
-trigger1 = AnimElemTime(4) >= 0 &&  AnimElemTime(5) < 0
+trigger1 = AnimElemTime(4) >= 0 && AnimElemTime(5) < 0
 trigger1 = NumTarget
 pos = ceil(40 * const(size.xScale)), ceil(0 * const(size.yScale))
 
@@ -2929,7 +2929,7 @@ persistent=1
 [State 0, StateTypeSet]
 type = StateTypeSet
 trigger1 = Time = 180
-movetype = I        ;I,A,H
+movetype = I ;I,A,H
 
 [State 0, ChangeState]
 type = ChangeState

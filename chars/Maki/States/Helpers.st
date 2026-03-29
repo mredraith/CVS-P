@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Maki Genryusai by Knuckles8864        |
+;| Maki Genryusai by Knuckles8864 |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;HELPER STATES=
@@ -181,8 +181,8 @@ elem = 3
 [State 1005, End]
 type = DestroySelf
 trigger1 = !AnimTime
-trigger2 = !(Parent, StateNo = 1030 || Parent,  StateNo = 3170)
-trigger3 = !(Parent, Anim = 1030 || Parent,  Anim = 3120)
+trigger2 = !(Parent, StateNo = 1030 || Parent, StateNo = 3170)
+trigger3 = !(Parent, Anim = 1030 || Parent, Anim = 3120)
 
 
 

@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Goenitz by varo_hades                   |
+;| Goenitz by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=

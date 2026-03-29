@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by ZMugens               |
+;| Character by ZMugens |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;NORMAL MOVES=
@@ -8,7 +8,7 @@
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
 [Statedef 200]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -99,7 +99,7 @@ ctrl = 1
 
 ; Standing Light Punch Closed
 [Statedef 205]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -185,7 +185,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
 [Statedef 210]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -405,7 +405,7 @@ ctrl = 1
 ; Standing Light Kick
 guardflags = 
 [Statedef 230]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -491,7 +491,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Kick
 [Statedef 240]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -583,7 +583,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Kick Closed
 [Statedef 245]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -1070,7 +1070,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF
@@ -1304,7 +1304,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (shaking)
 [Statedef 455]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -1329,7 +1329,7 @@ ampl = 140
 
 ; Tripped get-hit (knocked away)
 [Statedef 456]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -1449,7 +1449,7 @@ value=52
 ; Jump Medium Punch
 [Statedef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 ctrl = 0
 sprPriority = 1
@@ -1902,10 +1902,10 @@ value=52
 ;Kung Fu Throw - Attempt
 ; CNS difficulty: medium-advanced
 [Statedef 800]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 800
@@ -2304,12 +2304,12 @@ value = 5050
 ;Thrown by Kung Fu Throw - thrown into the air
 ; (a custom gethit state)
 ; Description: This state has the opponent flying through the air and
-;     falling down onto the ground. The SelfState controller sets the
-;     opponent back using to his own state file when he his the ground.
-;     Controllers 821,2 and 821,3 allow the opponent to recover by
-;     hitting his recovery command when he is falling.
+; falling down onto the ground. The SelfState controller sets the
+; opponent back using to his own state file when he his the ground.
+; Controllers 821,2 and 821,3 allow the opponent to recover by
+; hitting his recovery command when he is falling.
 [Statedef 821]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 5.25,-7.5

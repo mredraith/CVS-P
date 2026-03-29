@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Guile by Jmorphman                      |
+;| Guile by Jmorphman |
 ; 
 ;
 ;NORMAL MOVES=

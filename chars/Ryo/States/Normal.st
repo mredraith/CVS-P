@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Ryo Sakazaki by CrazyKoopa & Jmorphman  |
+;| Ryo Sakazaki by CrazyKoopa & Jmorphman |
 ; 
 ;
 ;NORMAL MOVES=
@@ -912,7 +912,7 @@ value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; Standing Close Heavy  Kick
+; Standing Close Heavy Kick
 [Statedef 251]
 type = S
 physics = S
@@ -2602,7 +2602,7 @@ value = 5030
 
 [State 5050, 1] ;Change anim when done with transition
 type = ChangeAnim
-triggerAll = Vel Y > 0    ;Hit ground
+triggerAll = Vel Y > 0 ;Hit ground
 trigger1 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger1 = Anim != 5090 ;Not if hit off ground anim
 value = 5050

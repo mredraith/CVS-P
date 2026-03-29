@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Axel Stone by Testament             |
+;| Axel Stone by Testament |
 ; 
 ;==
 ;SPECIAL MOVES>=
@@ -502,7 +502,7 @@ trigger1 = animelem = 3
 anim = 1101
 ID = 7000
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -530,7 +530,7 @@ trigger1 = animelem = 5
 anim = 1102
 ID = 7001
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -555,7 +555,7 @@ trigger1 = animelem = 5
 anim = 1103
 ID = 7002
 pos = 36,-25
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -592,7 +592,7 @@ channel = 1
 
 [State 1100, HitDef]
 type = HitDef
-trigger1 = animelem=3 && anim=1100  
+trigger1 = animelem=3 && anim=1100 
 trigger1 = !var(16) && (var(15) < 1 || var(20))
 attr = S, SA
 hitflag = MAF
@@ -634,7 +634,7 @@ envShake.freq = 120
 
 [State 1100, HitDef]
 type = HitDef
-trigger1 = animelem=5 && anim=1100  
+trigger1 = animelem=5 && anim=1100 
 trigger1 = !var(16) && (var(15) < (1 + HitCount) || var(20))
 attr = A, SA
 hitFlag = MAF
@@ -732,7 +732,7 @@ trigger1 = animelem = 3
 anim = 1101
 ID = 7000
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -760,7 +760,7 @@ trigger1 = animelem = 5
 anim = 1102
 ID = 7001
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -785,7 +785,7 @@ trigger1 = animelem = 5
 anim = 1103
 ID = 7002
 pos = 36,-25
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -827,9 +827,9 @@ channel = 3
 
 [State 1100, HitDef]
 type = HitDef
-trigger1 = animelem=3 && anim=1110  
+trigger1 = animelem=3 && anim=1110 
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger2 = animelem=4 && anim=1110  
+trigger2 = animelem=4 && anim=1110 
 attr = S, SA
 hitflag = MAF
 guardFlag = MA
@@ -870,7 +870,7 @@ envShake.freq = 120
 
 [State 1100, HitDef]
 type = HitDef
-trigger1 = animelem=5 && anim=1110  
+trigger1 = animelem=5 && anim=1110 
 trigger1 = !var(16) && (var(15) < (1 + HitCount) || var(20))
 attr = A, SA
 hitFlag = MAF
@@ -968,7 +968,7 @@ trigger1 = animelem = 3
 anim = 1101
 ID = 7000
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -996,7 +996,7 @@ trigger1 = animelem = 5
 anim = 1102
 ID = 7001
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1021,7 +1021,7 @@ trigger1 = animelem = 5
 anim = 1103
 ID = 7002
 pos = 36,-25
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1081,7 +1081,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 61), var(36) := -16
 ground.type = low
 ground.slidetime = 8
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3
 airguard.velocity = -1.9,-.8
@@ -1112,7 +1112,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 61), var(36) := -16
 ground.type = low
 ground.slidetime = 8
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2
 airguard.velocity = -1.9,-.8
@@ -1145,7 +1145,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 61), var(36) := -68
 ground.type = low
 ground.slidetime = 8
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -5,-5
 airguard.velocity = -4.9,-.8
@@ -1267,7 +1267,7 @@ trigger1 = animelem = 3
 anim = 1101
 ID = 7000
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1295,7 +1295,7 @@ trigger1 = animelem = 5
 anim = 1102
 ID = 7001
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1320,7 +1320,7 @@ trigger1 = animelem = 5
 anim = 1103
 ID = 7002
 pos = 28,-10
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -1360,7 +1360,7 @@ guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 61), var(36) := -16
 ground.type = low
 ground.slidetime = 8
-ground.hittime  = 18
+ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -3
 airguard.velocity = -1.9,-.8
@@ -1526,7 +1526,7 @@ ground.type = High
 air.type = Low
 air.hitTime = 120
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = -12,-4
 guard.velocity = -5.5
@@ -1714,7 +1714,7 @@ ground.type = High
 air.type = Low
 air.hitTime = 120
 ground.slidetime = 25 + 2 * var(9)
-ground.hittime  = 25 + 2 * var(9)
+ground.hittime = 25 + 2 * var(9)
 guard.hittime = (25 + 2 * var(9)) - 6
 ground.velocity = -12,-4
 guard.velocity = -5.5
@@ -1886,8 +1886,8 @@ value = 5010
 [State 1200, Shake Screen]
 type = EnvShake
 trigger1 = time = 0
-time = 16     
-ampl = 6     
+time = 16 
+ampl = 6 
 freq = 150
 
 [State 1033, Impact Sound]
@@ -2281,7 +2281,7 @@ trigger1 = animelem = 5&& anim=1330
 anim = 1101
 ID = 7000
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2308,7 +2308,7 @@ trigger1 = animelem = 6 && anim=1330
 anim = 1101
 ID = 7000
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2334,7 +2334,7 @@ trigger1 = animelem = 7 && anim=1330
 anim = 1102
 ID = 7001
 pos = 43,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -3199,7 +3199,7 @@ type = Explod
 trigger1= !Time
 anim = F72
 pos = 0, floor(ScreenPos y) - 50
-posType =  Back
+posType = Back
 sprPriority = 3
 
 [State 1147, PosFreeze]
@@ -3502,7 +3502,7 @@ hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8000)
-sparkXY =  -12 + 0 * (var(35) := 50), var(36) := -19
+sparkXY = -12 + 0 * (var(35) := 50), var(36) := -19
 palFX.time = 12 * var(9)
 palFX.add = 255, 255, 255
 palFX.sinAdd= -255, -255, -255, 48

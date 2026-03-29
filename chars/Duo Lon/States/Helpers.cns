@@ -947,7 +947,7 @@ trigger1 =time>=32
 ;CAMERA FOCUS
 [Statedef 6001]
 type = S
-physics  = S
+physics = S
 anim = 0
 ctrl = 0
 
@@ -1335,7 +1335,7 @@ value = 90 * (Random % 4)
 [State 8011, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8011, Transparency]
 type = Trans
@@ -1380,7 +1380,7 @@ value = 90 * (Random % 4)
 [State 8012, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8012, Transparency]
 type = Trans
@@ -1432,11 +1432,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8013, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 
 [State 8013, Transparency]
 type = Trans
@@ -1499,11 +1499,11 @@ value = 30 * (Random % 12)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8005||parent,stateno=8010)
-scale =  fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
+scale = fvar(17) - (fvar(18) * Time), fvar(17) - (fvar(18) * Time)
 [State 8014, Scale]
 type = AngleDraw
 trigger1 = (parent,stateno=8015||parent,stateno=8020)
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8014, Transparency]
 type = Trans
@@ -1837,7 +1837,7 @@ value = 90 * (Random % 4)
 [State 8022, Scale]
 type = AngleDraw
 trigger1 = 1
-scale =  fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
+scale = fvar(17) + (0.0125 * Time), fvar(17) + (0.0125 * Time)
 
 [State 8022, Transparency]
 type = Trans
@@ -1881,11 +1881,11 @@ value = Ifelse(random<=500,360,-360)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim=8016
-scale =  fvar(17), fvar(18)
+scale = fvar(17), fvar(18)
 [State 8023, Scale]
 type = AngleDraw
 trigger1 = anim!=8016
-scale =  fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
+scale = fvar(17) + (fvar(18) * Time), fvar(17) + (fvar(18) * Time)
 
 [State 8023, Transparency]
 type = Trans
@@ -3126,7 +3126,7 @@ trigger1 = Time = 0
 
 ; Ankei Standing Light Punch
 [Statedef 10200]
-type   =S
+type =S
 movetype= A
 physics=S
 velset=0,0
@@ -3236,7 +3236,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Ankei Standing Medium Punch
 [Statedef 10210]
-type   =S
+type =S
 movetype= A
 physics=S
 ctrl=0
@@ -3259,10 +3259,10 @@ time = -1
 [State 10210, Hit]
 type=HitDef
 trigger1=!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-priority=4 ,Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+priority=4 ,Hit 
 damage=floor(3*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -3345,7 +3345,7 @@ trigger2 = parent,movetype = H
 ;------------------------------------------
 ; Standing Strong Punch
 [Statedef 10220]
-type   =S
+type =S
 movetype= A
 physics=S
 ctrl=0
@@ -3368,11 +3368,11 @@ time = -1
 [State 10220, HitDef]
 type=HitDef
 trigger1=!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage=floor(4*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -3386,7 +3386,7 @@ hitsound=S2+10*var(44),2
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -3457,7 +3457,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
 [Statedef 10230]
-type   =S
+type =S
 movetype= A
 physics=S
 ctrl=0
@@ -3480,11 +3480,11 @@ time = -1
 [State 10230, HitDef]
 type=HitDef
 trigger1=!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Light         
-priority=4,Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Light 
+priority=4,Hit 
 damage=floor(2*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -3498,7 +3498,7 @@ hitsound=S2+10*var(44),3
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
@@ -3567,7 +3567,7 @@ trigger2 = parent,movetype = H
 ;------------------------------------------------------
 ; Standing Medium Kick
 [Statedef 10240]
-type   =S
+type =S
 movetype= A
 physics=S
 ctrl=0
@@ -3590,11 +3590,11 @@ time = -1
 [State 10240, HitDef]
 type=HitDef
 trigger1=!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Medium         
-priority=4,Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Medium 
+priority=4,Hit 
 damage=floor(3*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -3679,7 +3679,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Standing Strong Kick
 [Statedef 10250]
-type   =S
+type =S
 movetype= A
 physics=S
 ctrl=0
@@ -3702,11 +3702,11 @@ time = -1
 [State 10250, HitDef]
 type=HitDef
 trigger1=!Time
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4,Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4,Hit 
 damage=floor(5*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -3720,7 +3720,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -3791,7 +3791,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Ankei Genmuken
 [Statedef 10260]
-type   =S
+type =S
 movetype= A
 physics=S
 velset=0,0
@@ -3930,7 +3930,7 @@ player = 56,0
 type = HitDef
 trigger1=!Time
 attr=S,NA
-animtype=Hard   
+animtype=Hard 
 damage=floor(5*root,fvar(10)),0
 priority=4,Hit
 getpower=0, 0
@@ -4006,7 +4006,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
 [Statedef 10400]
-type   =C
+type =C
 movetype= A
 physics=C
 ctrl=0
@@ -4029,14 +4029,14 @@ time = -1
 [State 10400, HitDef]
 type=HitDef
 trigger1=!Time
-attr=C,NA        
-hitflag=MAF       
-guardflag=M         
+attr=C,NA 
+hitflag=MAF 
+guardflag=M 
 ID = 200*!var(20)
 getpower=0, 0
 givepower=30,30
-animtype=Light         
-priority=4,Hit   
+animtype=Light 
+priority=4,Hit 
 damage=floor(2*root,fvar(10)),0
 pausetime =Ifelse(var(20), 4, 8), Ifelse(var(20), 4, 8)
 guard.pausetime = Ifelse(var(20), 4, 8), Ifelse(var(20), 4, 8)
@@ -4047,7 +4047,7 @@ hitsound=S2+10*var(44),0
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
@@ -4116,7 +4116,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
 [Statedef 10410]
-type   =C
+type =C
 movetype= A
 physics=C
 ctrl=0
@@ -4139,11 +4139,11 @@ time = -1
 [State 10410, Hit 1]
 type=HitDef
 trigger1=AnimElem=2
-attr=C,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Medium         
-priority=4 ,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Medium 
+priority=4 ,Hit 
 damage=floor(3*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -4157,7 +4157,7 @@ guard.sparkNo=-1 + 0 * (var(34) := 8000)
 sparkXY=-10 + 0 * (var(35) := 90), var(36) := -50
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=15 + 3*var(9)
 ground.hittime=15 + 3*var(9)
@@ -4227,7 +4227,7 @@ trigger2 = parent,movetype = H
 ;--------------------------------------------------------------------------
 ; Crouching Strong Punch
 [Statedef 10420]
-type   =C
+type =C
 movetype= A
 physics=C
 ctrl=0
@@ -4250,11 +4250,11 @@ time = -1
 [State 10420, HitDef]
 type = HitDef
 trigger1 = !Time
-attr = C,NA        
-hitflag = MAF       
-guardflag = M         
-animtype = Hard         
-priority = 4, Hit   
+attr = C,NA 
+hitflag = MAF 
+guardflag = M 
+animtype = Hard 
+priority = 4, Hit 
 damage=floor(4*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -4338,7 +4338,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Crouching Light Kick
 [Statedef 10430]
-type   =C
+type =C
 movetype= A
 physics=C
 ctrl=0
@@ -4361,11 +4361,11 @@ time = -1
 [State 10430, HitDef]
 type=HitDef
 trigger1=!Time
-attr=C,NA        
-hitflag=MAF       
-guardflag=L         
-animtype=Light         
-priority=4,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=L 
+animtype=Light 
+priority=4,Hit 
 damage=floor(2*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -4379,7 +4379,7 @@ hitsound=S2+10*var(44),3
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
@@ -4447,7 +4447,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ;Crouch Medium Kick
 [Statedef 10440]
-type   =C
+type =C
 movetype= A
 physics=C
 ctrl=0
@@ -4470,11 +4470,11 @@ time = -1
 [State 10440, HitDef]
 type=HitDef
 trigger1=!Time
-attr=C,NA        
-hitflag=MAF       
-guardflag=L         
-animtype=Medium         
-priority=4,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=L 
+animtype=Medium 
+priority=4,Hit 
 damage=floor(3*root,fvar(10)),0
 ID = 200*!var(20)
 getpower=0, 0
@@ -4488,7 +4488,7 @@ hitsound=S2+10*var(44),4
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Low      
+ground.type=Low 
 air.type=Low
 ground.slidetime=15 + 2*var(9)
 ground.hittime=15 + 2*var(9)
@@ -4558,7 +4558,7 @@ trigger2 = parent,movetype = H
 ;--------------------------------------------------------------------------
 ; Crouch Strong Kick
 [Statedef 10450]
-type   =C
+type =C
 movetype= A
 physics=C
 ctrl=0
@@ -4581,11 +4581,11 @@ time = -1
 [State 10450, HitDef]
 type=HitDef
 trigger1=!Time
-attr=C,NA        
-hitflag=MAF       
-guardflag=L         
-animtype=Hard         
-priority=4,Hit   
+attr=C,NA 
+hitflag=MAF 
+guardflag=L 
+animtype=Hard 
+priority=4,Hit 
 damage=floor(4*root,fvar(10)),0
 getpower=0, 0
 givepower=30, 30
@@ -4598,7 +4598,7 @@ hitsound=S2+10*var(44),5
 guardsound=s130, 0
 air.animType=Back
 fall.animType=Back
-ground.type=Trip     
+ground.type=Trip 
 air.type=Trip
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -4672,7 +4672,7 @@ trigger2 = parent,movetype = H
 ;--------------------------------------------------------------------------
 ; Fuuka Tenshi
 [Statedef 10470]
-type   =C
+type =C
 movetype= A
 physics=C
 ctrl=0
@@ -4792,7 +4792,7 @@ trigger2 = parent,movetype = H
 ;--------------------------------------------------------------------------
 ; Raika Tenshi
 [Statedef 10471]
-type   =S
+type =S
 movetype= A
 physics=N
 ctrl=0
@@ -4940,7 +4940,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
 [Statedef 10600]
-type   =A
+type =A
 movetype= A
 physics=N
 ctrl=0
@@ -5051,7 +5051,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
 [Statedef 10605]
-type   =A
+type =A
 movetype= A
 physics=N
 ctrl=0
@@ -5164,7 +5164,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Jump Medium Punch
 [Statedef 10610]
-type   =A
+type =A
 movetype= A
 physics=N
 ctrl=0
@@ -5276,7 +5276,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Jump Strong Punch
 [Statedef 10620]
-type   =A
+type =A
 movetype= A
 physics=N
 ctrl=0
@@ -5389,7 +5389,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Jump Light Kick
 [Statedef 10630]
-type   =A
+type =A
 movetype= A
 physics=N
 ctrl=0
@@ -5501,7 +5501,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Jump Medium Kick
 [Statedef 10640]
-type   =A
+type =A
 movetype= A
 physics=N
 ctrl=0
@@ -5613,7 +5613,7 @@ trigger2 = parent,movetype = H
 ;---------------------------------------------------------------------------
 ; Jump Strong Kick
 [Statedef 10650]
-type   =A
+type =A
 movetype= A
 physics=N
 ctrl=0

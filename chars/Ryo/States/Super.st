@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Ryo Sakazaki by CrazyKoopa & Jmorphman  |
+;| Ryo Sakazaki by CrazyKoopa & Jmorphman |
 ; 
 ;
 ;SUPER MOVES=
@@ -1369,7 +1369,7 @@ p2Facing = 1
 type = HitDef
 triggerAll = !var(16) && var(15) < 1
 trigger1 = AnimElem = 2 || AnimElem = 7 || AnimElem = 17
-trigger2 = AnimElem = 41 || AnimElem = 50  || AnimElem = 57 || AnimElem = 81
+trigger2 = AnimElem = 41 || AnimElem = 50 || AnimElem = 57 || AnimElem = 81
 trigger3 = AnimElem = 89 || AnimElem = 112 || AnimElem = 121 || AnimElem = 137
 attr = S, HA
 hitFlag = MAF
@@ -2142,7 +2142,7 @@ value = SCA
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 3208 ;HITA_FALL
 
@@ -2179,11 +2179,11 @@ value = SCA
 [State 5035, 4]
 type = ChangeState
 triggerall = HitFall
-trigger1 = HitOver  ;Hit is over
+trigger1 = HitOver ;Hit is over
 trigger2 = AnimTime = 0 ;Anim is over
-trigger3 = Vel Y > 0    ;Hit ground
+trigger3 = Vel Y > 0 ;Hit ground
 trigger3 = Pos Y >= Const(movement.air.gethit.groundlevel)
-trigger4 = Time = 0     ;No transition anim
+trigger4 = Time = 0 ;No transition anim
 trigger4 = Anim != 5035 ;.
 value = 3208 ;Air get-hit (falling)
 
@@ -2198,7 +2198,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim

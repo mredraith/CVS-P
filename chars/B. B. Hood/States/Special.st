@@ -1,5 +1,5 @@
 ; _________________________________________
-;| B. B. Hood by varo_hades                |
+;| B. B. Hood by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES=
@@ -2239,7 +2239,7 @@ ctrl = 1
 
 [StateDef 1405]
 Type = A
-MoveType =  H
+MoveType = H
 VelSet = 0, 0
 Ctrl = 0
 
@@ -2256,7 +2256,7 @@ Value = 1420
 
 [StateDef 1406]
 Type = A
-MoveType =  H
+MoveType = H
 Ctrl = 0
 
 [State 1406]

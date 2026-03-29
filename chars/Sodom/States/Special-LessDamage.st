@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Sodom by varo_hades                     |
+;| Sodom by varo_hades |
 ; 
 ;
 ;SPECIAL MOVES
@@ -130,7 +130,7 @@ trigger1 = var(10) = 0
 anim = 1003
 ID = 1003
 pos = 25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -227,7 +227,7 @@ trigger1 = var(10) = 1
 anim = 1004
 ID = 1004
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -319,7 +319,7 @@ trigger1 = var(10) = 2
 anim = 1005
 ID = 1005
 pos = -25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -532,7 +532,7 @@ trigger1 = animelem=2
 anim = 1003
 ID = 1003
 pos = 25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -626,7 +626,7 @@ trigger1 = animelem=6
 anim = 1004
 ID = 1004
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -716,7 +716,7 @@ trigger1 = animelem=11
 anim = 1005
 ID = 1005
 pos = -25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -4603,7 +4603,7 @@ hitflag = M
 guardflag = M
 guard.pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff =  0
+guard.cornerpush.veloff = 0
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -4653,8 +4653,8 @@ ground.velocity = ifElse(var(20), -6, -12), 0
 air.velocity = -3,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
+guard.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 hitSound = -1 + 0 * (var(31) := 7)
@@ -4674,7 +4674,7 @@ hitflag = M
 guardflag = M
 guard.pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff =  0
+guard.cornerpush.veloff = 0
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -4724,8 +4724,8 @@ ground.velocity = ifElse(var(20), -6, -12), 0
 air.velocity = -3,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
+guard.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 hitSound = -1 + 0 * (var(31) := 7)
@@ -4745,7 +4745,7 @@ hitflag = M
 guardflag = M
 guard.pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff =  0
+guard.cornerpush.veloff = 0
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -4795,8 +4795,8 @@ ground.velocity = -12
 air.velocity = -3,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
+guard.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
 givePower = 36, 36
 hitSound = -1 + 0 * (var(31) := 7)
@@ -5036,7 +5036,7 @@ trigger3 = animelem = 13
 trigger4 = animelem = 16
 anim = 7005
 pos = -80,-40
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5057,7 +5057,7 @@ trigger2 = animelem = 11
 trigger3 = animelem = 17
 anim = 7005
 pos = -90,-20
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5076,7 +5076,7 @@ type = Explod
 trigger1 = animelem = 17
 anim = 7005
 pos = -70,-70
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5488,7 +5488,7 @@ trigger2 = animelem = 10
 trigger3 = animelem = 13
 anim = 7005
 pos = -80,-40
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5509,7 +5509,7 @@ trigger2 = animelem = 11
 trigger3 = animelem = 17
 anim = 7005
 pos = -90,-20
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5528,7 +5528,7 @@ type = Explod
 trigger1 = animelem = 17
 anim = 7005
 pos = -70,-70
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5837,7 +5837,7 @@ trigger5 = animelem = 19
 trigger6 = animelem = 22
 anim = 7005
 pos = -80,-40
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5861,7 +5861,7 @@ trigger5 = animelem = 20
 trigger6 = animelem = 23
 anim = 7005
 pos = -90,-20
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -5880,7 +5880,7 @@ type = Explod
 trigger1 = animelem = 19
 anim = 7005
 pos = -70,-70
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -6292,7 +6292,7 @@ hitflag = M
 guardflag = M
 guard.pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff =  0
+guard.cornerpush.veloff = 0
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -6342,8 +6342,8 @@ ground.velocity = -12
 air.velocity = -3,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
-guard.cornerpush.veloff =  ifelse ( var(20) > 0,-5, -15)
+ground.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
+guard.cornerpush.veloff = ifelse ( var(20) > 0,-5, -15)
 getPower = 0,0
 givePower = 36, 36
 hitSound = -1 + 0 * (var(31) := 7)
@@ -6699,7 +6699,7 @@ trigger6 = animelem = 22
 trigger7 = animelem = 25
 anim = 7005
 pos = -80,-40
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -6724,7 +6724,7 @@ trigger6 = animelem = 23
 trigger7 = animelem = 26
 anim = 7005
 pos = -90,-20
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -6743,7 +6743,7 @@ type = Explod
 trigger1 = animelem = 19
 anim = 7005
 pos = -70,-70
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -7153,7 +7153,7 @@ type = Explod
 trigger1 = animelem=1
 anim = 201
 pos = 30,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -7647,7 +7647,7 @@ persistent = 0
 
 [State 0, PosAdd]
 type = PosAdd
-trigger1 =  time = 0
+trigger1 = time = 0
 x = 20
 
 [State 0, Width]
@@ -7801,7 +7801,7 @@ y = 9
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  pos Y >= 0 && vel Y > 0
+trigger1 = pos Y >= 0 && vel Y > 0
 value = 1502
 ctrl = 0
 
@@ -7817,7 +7817,7 @@ poweradd = 0
 
 [State 0, PlaySnd]
 type = PlaySnd
-;trigger1 = time =  0
+;trigger1 = time = 0
 trigger1 = animelem = 1
 value = 52,0
 
@@ -8046,7 +8046,7 @@ type = Explod
 trigger1 = animelem=1
 anim = 201
 pos = 30,5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -8299,7 +8299,7 @@ persistent = 0
 
 [State 0, PosAdd]
 type = PosAdd
-trigger1 =  time = 0
+trigger1 = time = 0
 x = 20
 
 [State 0, Width]
@@ -8357,7 +8357,7 @@ y = 9
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  pos Y >= 0 && vel Y > 0
+trigger1 = pos Y >= 0 && vel Y > 0
 value = 1532
 ctrl = 0
 
@@ -8373,7 +8373,7 @@ poweradd = 0
 
 [State 0, PlaySnd]
 type = PlaySnd
-;trigger1 = time =  0
+;trigger1 = time = 0
 trigger1 = animelem = 1
 value = 52,0
 
@@ -8524,7 +8524,7 @@ trigger1 = animelem=2
 anim = 1004
 ID = 1004
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1

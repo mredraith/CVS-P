@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Rose by varo_hades                      |
+;| Rose by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -493,7 +493,7 @@ physics = N
 movetype = A
 ctrl = 0
 velset = 0,0
-anim =  1101
+anim = 1101
 juggle = 0
 
 [State 3001, TargetBind]
@@ -504,7 +504,7 @@ pos = 0,0
 
 [State 3001, SprPriority]
 type = SprPriority
-trigger1 =  1
+trigger1 = 1
 value = 1
 
 [State 3001, PlaySnd]
@@ -625,12 +625,12 @@ juggle = 0
 
 [State 3002, SprPriority]
 type = SprPriority
-trigger1 =  1
+trigger1 = 1
 value = 2
 
 [State 3002, PalFX]
 type = PalFX
-trigger1 =  time = 0
+trigger1 = time = 0
 time = 30
 add = 222,0,222
 mul = 255,255,255
@@ -959,8 +959,8 @@ ground.velocity = -2,-4
 air.velocity = -2,-4
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff=  ifelse ( p2statetype=A ,-10, -10)
-guard.cornerpush.veloff =  ifelse ( p2statetype=A ,-10, -10)
+ground.cornerpush.veloff= ifelse ( p2statetype=A ,-10, -10)
+guard.cornerpush.veloff = ifelse ( p2statetype=A ,-10, -10)
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -1047,8 +1047,8 @@ ground.velocity = -2,-8
 air.velocity = -2,-8
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff=  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff= 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -1092,8 +1092,8 @@ ground.velocity = -2,-10
 air.velocity = -2,-10
 yaccel = 0.6
 guard.velocity = -12
-ground.cornerpush.veloff=  0
-guard.cornerpush.veloff =  0
+ground.cornerpush.veloff= 0
+guard.cornerpush.veloff = 0
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8014)
@@ -1303,7 +1303,7 @@ physics = N
 movetype = A
 ctrl = 0
 velset = 0,0
-anim =  1101
+anim = 1101
 juggle = 0
 
 [State 3054, TargetBind]
@@ -1418,7 +1418,7 @@ physics = N
 movetype = A
 ctrl = 0
 velset = 0,0
-anim =  1101
+anim = 1101
 juggle = 0
 
 [State 3055, ChangeAnim2]
@@ -1987,8 +1987,8 @@ ground.velocity = -4
 air.velocity = -3,-8
 yaccel = 0.55
 guard.velocity = -12
-ground.cornerpush.veloff=  ifelse ( p2statetype=A ,-10, -20)
-guard.cornerpush.veloff =  ifelse ( p2statetype=A ,-10, -20)
+ground.cornerpush.veloff= ifelse ( p2statetype=A ,-10, -20)
+guard.cornerpush.veloff = ifelse ( p2statetype=A ,-10, -20)
 sparkXY = -10 + 0 * (var(35) := 57), var(36) := -40
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -2555,8 +2555,8 @@ ignoreHitPause = 1
 [State 3350, HitDef 1]
 type = HitDef
 triggerAll = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 3
-trigger2 =  AnimElem = 9
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 9
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2602,8 +2602,8 @@ envShake.freq = 120
 [State 3350, HitDef 2]
 type = HitDef
 triggerAll = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 6
-trigger2 =  AnimElem = 12
+trigger1 = AnimElem = 6
+trigger2 = AnimElem = 12
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -2658,7 +2658,7 @@ trigger3 = var(35) := 20 || var(36) := -107
 [State 3350, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 18
+trigger1 = AnimElem = 18
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -3112,7 +3112,7 @@ juggle = 0
 
 [State 3501, PosSet]
 type = PosSet
-trigger1 =  1
+trigger1 = 1
 y = 0
 [State 3501, PlayerPush]
 type = PlayerPush
@@ -3123,7 +3123,7 @@ type = DestroySelf
 trigger1 = animtime = 0
 [State 3501, AssertSpecial]
 type = AssertSpecial
-trigger1 =  1
+trigger1 = 1
 flag = invisible
 flag2 = noshadow
 
@@ -3183,7 +3183,7 @@ juggle = 0
 
 [State 3502, ScreenBound]
 type = ScreenBound
-trigger1 =  1
+trigger1 = 1
 value = 1
 movecamera = 0,0
 
@@ -3261,7 +3261,7 @@ ctrl = 0
 
 [State 0, RemoveExplod]
 type = RemoveExplod
-trigger1 =  p2stateno = 3515
+trigger1 = p2stateno = 3515
 id = 3502
 
 [State 800, 1]
@@ -3365,7 +3365,7 @@ removetime = 125
 
 [State 3502, ScreenBound]
 type = ScreenBound
-trigger1 =  1
+trigger1 = 1
 value = 1
 movecamera = 0,0
 
@@ -3501,7 +3501,7 @@ trigger1 = time = 20
 anim = 3531
 ID = 2350
 pos = 0, -70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = -2.4, -1.2
 removetime = -1
@@ -3514,7 +3514,7 @@ type = ModifyExplod
 trigger1 = time = 40
 ID = 2350
 pos = -50, -95
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0,0
 removetime = 80
@@ -3528,7 +3528,7 @@ trigger1 = time = 20
 anim = 3534
 ID = 2353
 pos = 0, -70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 2.4, -1.2
 removetime = -1
@@ -3541,7 +3541,7 @@ type = ModifyExplod
 trigger1 = time = 40
 ID = 2353
 pos = 50, -95
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0,0
 removetime = 80
@@ -3556,7 +3556,7 @@ trigger1 = time = 20
 anim = 3537
 ID = 2356
 pos = 0, -70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = -2.4, 1.2
 removetime = -1
@@ -3569,7 +3569,7 @@ type = ModifyExplod
 trigger1 = time = 40
 ID = 2356
 pos = -50, -45
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0,0
 removetime = 80
@@ -3584,7 +3584,7 @@ trigger1 = time = 20
 anim = 3540
 ID = 2359
 pos = 0, -70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 2.4, 1.2
 removetime = -1
@@ -3597,7 +3597,7 @@ type = ModifyExplod
 trigger1 = time = 40
 ID = 2359
 pos = 50, -45
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0,0
 removetime = 80
@@ -3612,7 +3612,7 @@ trigger1 = time = 20
 anim = 3543
 ID = 2362
 pos = 0, -70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0, -2.8
 removetime = -1
@@ -3625,7 +3625,7 @@ type = ModifyExplod
 trigger1 = time = 40
 ID = 2362
 pos = 0, -130
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0,0
 removetime = 80
@@ -3640,7 +3640,7 @@ trigger1 = time = 20
 anim = 3546
 ID = 2365
 pos = 0, -70
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0, 2.7
 removetime = -1
@@ -3653,7 +3653,7 @@ type = ModifyExplod
 trigger1 = time = 40
 ID = 2365
 pos = 0, -20
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 bindtime = 1
 vel = 0,0
 removetime = 80
@@ -3684,7 +3684,7 @@ value = SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 time = 2
 [State 0, PosSet]
 type = PosSet
-trigger1 =  1
+trigger1 = 1
 y = 0
 [State 0, PlayerPush]
 type = PlayerPush
@@ -3695,7 +3695,7 @@ type = DestroySelf
 trigger1 = animtime = 0
 [State 0, AssertSpecial]
 type = AssertSpecial
-trigger1 =  1
+trigger1 = 1
 flag = invisible
 flag2 = noshadow
 
@@ -3727,7 +3727,7 @@ guard.velocity = 12
 air.velocity = 5, -9
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
-air.cornerpush.veloff =  0
+air.cornerpush.veloff = 0
 sparkxy = 0, 0
 guardSound = -1 + 0 * (var(32) := 0)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3776,7 +3776,7 @@ guard.velocity = 12
 air.velocity = 5, -9
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
-air.cornerpush.veloff =  0
+air.cornerpush.veloff = 0
 sparkxy = 0, 0
 guardSound = -1 + 0 * (var(32) := 0)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3816,7 +3816,7 @@ trigger1 = 1
 value = 0
 [State 3511, AssertSpecial]
 type = AssertSpecial
-trigger1 =  1
+trigger1 = 1
 flag = invisible
 flag2 = noshadow
 
@@ -3902,7 +3902,7 @@ value = 3515
 
 [State 0, PosSet]
 type = PosSet
-trigger1 =  1
+trigger1 = 1
 y = 0
 
 [State 0, SprPriority]

@@ -149,7 +149,7 @@ physics = S
 type = HitDef
 trigger1 = time = 0
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = 150,4
 guardflag = M
@@ -163,7 +163,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -6,-6
 air.velocity = -6,-6
@@ -197,7 +197,7 @@ value = 1030
 ;---------------------------------------------------------------------------
 ; EX Fukiage
 [Statedef 2100]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -326,7 +326,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = High
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2,-9
 air.velocity = -2,-9
@@ -360,7 +360,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; EX Oroshi
 [Statedef 2200]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -430,7 +430,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1,5
 air.velocity = -2.5,-10
@@ -480,10 +480,10 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; EX Tsurugi
 [Statedef 2300]
-type    = A
+type = A
 movetype= A
 physics = A
-juggle  = 2
+juggle = 2
 ctrl = 0
 anim = 1330
 sprpriority = 2
@@ -574,7 +574,7 @@ animtype = hard
 air.animtype = back
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1,3
 air.velocity = -1,3
@@ -602,7 +602,7 @@ animtype = hard
 air.animtype = back
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1,3
 air.velocity = -1,3
@@ -614,10 +614,10 @@ envshake.ampl = 5
 ;---------------------------------------------------------------------------
 ; EX Karakusa
 [Statedef 2400]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 1415
@@ -682,7 +682,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; EX Karakusa Success
 [Statedef 2410]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 1420

@@ -239,7 +239,7 @@ value = 59
 
 [State 180, 1]
 type = ChangeState
-trigger1 = !Time && !var(28) && Life < 1000  && !var(14)
+trigger1 = !Time && !var(28) && Life < 1000 && !var(14)
 value = 181 + (random%2)
 
 [State 180, 1]
@@ -251,7 +251,7 @@ value = 183
 type = ChangeState
 triggerall=!var(28) && !var(14)
 triggerall = time = 1
-trigger1 = Enemy, Name = "Rugal" || Enemy, Name = "Rugal Bernstein" || Enemy, Name = "Omega Rugal" || Enemy, Name = "O-Rugal" || Enemy, Name = "God Rugal" || Enemy, Name = "G-Rugal" || Enemy, Name = "cvsrugal" || Enemy, Name = "cvsgrugal" ||  (Enemy, Name = "LotF's God Rugal" && Enemy, AuthorName = "The Lord of Flies")
+trigger1 = Enemy, Name = "Rugal" || Enemy, Name = "Rugal Bernstein" || Enemy, Name = "Omega Rugal" || Enemy, Name = "O-Rugal" || Enemy, Name = "God Rugal" || Enemy, Name = "G-Rugal" || Enemy, Name = "cvsrugal" || Enemy, Name = "cvsgrugal" || (Enemy, Name = "LotF's God Rugal" && Enemy, AuthorName = "The Lord of Flies")
 trigger2 = Enemy, Name = "Goenitz" || Enemy, Name = "Leopold Goenitz"
 trigger3 = Enemy, Name = "Wild Iori" || Enemy, Name = "Orochi Iori"
 trigger4 = Enemy, Name = "Wild Leona" || Enemy, Name = "Orochi Leona"
@@ -264,7 +264,7 @@ trigger10 = Enemy, Name = "Boss Saiki" || Enemy, Name = "Awakened Saiki"
 trigger11 = Enemy, Name = "Dark Ash" || Enemy, Name = "Evil Ash"
 trigger12 = Enemy, Name = "Geese Howard" || Enemy, Name = "Geese" || Enemy, Name = "cvsgeese"
 trigger13 = Enemy, Name = "Wolfgang Krauser" || Enemy, Name = "Krauser"
-trigger14 = (Enemy, Name = "Kain R.Heinlein" && Enemy, AuthorName = "Infinite") || Enemy, Name = "Kain" || Enemy, Name = "Kain R. Heinlein"  
+trigger14 = (Enemy, Name = "Kain R.Heinlein" && Enemy, AuthorName = "Infinite") || Enemy, Name = "Kain" || Enemy, Name = "Kain R. Heinlein" 
 trigger15 = Enemy, Name = "Honki ni Natta Mr. Karate" || Enemy, Name = "Shin Mr. Karate"
 trigger16 = Enemy, Name = "Shiro Tokisada Amakusa" || Enemy, Name = "Amakusa"
 trigger17 = Enemy, Name = "Kuroko" || (Enemy, Name = "cvskuroko" && Enemy, AuthorName = "Warusaki3")
@@ -492,7 +492,7 @@ value = 197
 [state 190, v/s Boss] 
 type = changestate
 triggerall = time = 1
-trigger1 = Enemy, Name = "Rugal" || Enemy, Name = "Rugal Bernstein" || Enemy, Name = "Omega Rugal" || Enemy, Name = "O-Rugal" || Enemy, Name = "God Rugal" || Enemy, Name = "G-Rugal" || Enemy, Name = "cvsrugal" || Enemy, Name = "cvsgrugal" ||  (Enemy, Name = "LotF's God Rugal" && Enemy, AuthorName = "The Lord of Flies")
+trigger1 = Enemy, Name = "Rugal" || Enemy, Name = "Rugal Bernstein" || Enemy, Name = "Omega Rugal" || Enemy, Name = "O-Rugal" || Enemy, Name = "God Rugal" || Enemy, Name = "G-Rugal" || Enemy, Name = "cvsrugal" || Enemy, Name = "cvsgrugal" || (Enemy, Name = "LotF's God Rugal" && Enemy, AuthorName = "The Lord of Flies")
 trigger2 = Enemy, Name = "Goenitz" || Enemy, Name = "Leopold Goenitz"
 trigger3 = Enemy, Name = "Wild Iori" || Enemy, Name = "Orochi Iori"
 trigger4 = Enemy, Name = "Wild Leona" || Enemy, Name = "Orochi Leona"
@@ -505,7 +505,7 @@ trigger10 = Enemy, Name = "Boss Saiki" || Enemy, Name = "Awakened Saiki"
 trigger11 = Enemy, Name = "Dark Ash" || Enemy, Name = "Evil Ash"
 trigger12 = Enemy, Name = "Geese Howard" || Enemy, Name = "Geese" || Enemy, Name = "cvsgeese" || (Enemy, Name = "NW-Geese 2k2 UM" && Enemy, AuthorName = ".\/.") || (Enemy, Name = "Geese_WLS" && Enemy, AuthorName = "Vans")
 trigger13 = Enemy, Name = "Wolfgang Krauser" || Enemy, Name = "Krauser"
-trigger14 = (Enemy, Name = "Kain R.Heinlein" && Enemy, AuthorName = "Infinite") || Enemy, Name = "Kain" || Enemy, Name = "Kain R. Heinlein"  
+trigger14 = (Enemy, Name = "Kain R.Heinlein" && Enemy, AuthorName = "Infinite") || Enemy, Name = "Kain" || Enemy, Name = "Kain R. Heinlein" 
 trigger15 = Enemy, Name = "Honki ni Natta Mr. Karate" || Enemy, Name = "Shin Mr. Karate" || (Enemy, Name = "Mr.Karate SSF'2 Plus" && Enemy, AuthorName = "Guille_N_Roll")
 trigger16 = Enemy, Name = "Shiro Tokisada Amakusa" || Enemy, Name = "Amakusa"
 trigger17 = Enemy, Name = "Shinnosuke Kagami" || Enemy, Name = "Kagami"
@@ -730,7 +730,7 @@ velset = 0, 0
 
 [State 197, VarSet]
 type = VarSet
-triggerall =  !Time
+triggerall = !Time
 trigger1 = Enemy, Name = "Chizuru" || Enemy, Name = "Chizuru Kagura"
 trigger2 = Enemy, Name = "Kyo" || (Enemy, Name = "Kyo Kusanagi" && Enemy, AuthorName != "Jmorphman") || Enemy, Name = "cvsKyo"
 trigger3 = Enemy, Name = "Iori" || Enemy, Name = "Iori Yagami" || Enemy, Name = "cvsIori"
@@ -994,10 +994,10 @@ value = 0
 ctrl = 1
 ;DODGE==
 [Statedef 700]
-type    = S
+type = S
 movetype= I
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 700
@@ -1212,7 +1212,7 @@ trigger1 = animelem = 10 && !Var(28)
 anim = 1205
 ID = 735
 pos = 7,-81
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1267,7 +1267,7 @@ trigger1 = animelem = 1 && !Var(28)
 anim = 1211
 ID = 735
 pos = 7,-81
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1895,7 +1895,7 @@ ctrl = 1
 
 ;Running=
 [Statedef 100]
-type    = S
+type = S
 movetype = I
 physics = S
 ctrl = 0
@@ -2086,7 +2086,7 @@ value = 0
 ctrl = 1
 ;HIT GROUND(BOUNCE)==
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2175,7 +2175,7 @@ time = 20
 
 ;HIT LIEDOWN=
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -2842,7 +2842,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -3287,7 +3287,7 @@ trigger1 = Enemy(1),statetype = L || Enemy(1),movetype != H
 value = 7828
 ;-------------------------------------------------------------------------------
 [Statedef 7828]
-type    = S
+type = S
 physics = S
 anim = 100
 ctrl = 0
@@ -3351,7 +3351,7 @@ value = 7829
 ctrl = 0
 ;-------------------------------------------------------------------------------
 [Statedef 7829]
-type    = S
+type = S
 physics = S
 anim = 101
 ctrl = 0
@@ -3907,7 +3907,7 @@ ignoreHitPause = 1
 trigger1 = 1
 type = DisplayToClipboard
 ignorehitpause = 1
-text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
 params = var(18) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]
@@ -4051,7 +4051,7 @@ trigger4 = var(20) && stateno = 1000 && animelemtime(12) > 1
 trigger5 = var(20) && stateno = 1010 && animelemtime(1) > 1
 trigger6 = var(20) && stateno = 1050 && animelemtime(6) > 1
 trigger7 = var(20) && stateno = 1100 && movecontact
-trigger8 = var(20) && (stateno =  [1200,1300]) && movecontact
+trigger8 = var(20) && (stateno = [1200,1300]) && movecontact
 trigger9 = var(20) && (stateno = 450) && movecontact
 trigger10 = (stateno = [200, 250]) && movecontact && stateno!=221
 trigger10 = anim!=220

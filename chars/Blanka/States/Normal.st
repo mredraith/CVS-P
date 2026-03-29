@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Blanka by varo_hades                    |
+;| Blanka by varo_hades |
 ; 
 ;
 ;NORMAL MOVES=
@@ -2702,35 +2702,35 @@ value = 826
 
 [State 820, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 1
+trigger1 = AnimElem = 1
 pos = ceil(40*const(size.xscale)),ceil(0*const(size.yscale))
 postype = P1
 time = -1
 
 [State 820, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 2||AnimElem = 6||AnimElem = 9
+trigger1 = AnimElem = 2||AnimElem = 6||AnimElem = 9
 pos = ceil(0*const(size.xscale)),ceil(-60*const(size.yscale))
 postype = P1
 time = -1
 
 [State 820, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 3||AnimElem = 7
+trigger1 = AnimElem = 3||AnimElem = 7
 pos = ceil(-20*const(size.xscale)),ceil(-30*const(size.yscale))
 postype = P1
 time = -1
 
 [State 820, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 4||AnimElem = 8
+trigger1 = AnimElem = 4||AnimElem = 8
 pos = ceil(20*const(size.xscale)),ceil(0*const(size.yscale))
 postype = P1
 time = -1
 
 [State 820, ????????]
 type = TargetBind
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 pos = ceil(20*const(size.xscale)),ceil(-30*const(size.yscale))
 postype = P1
 time = -1

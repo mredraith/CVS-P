@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Zangief by varo_hades                   |
+;| Zangief by varo_hades |
 ; 
 ;
 ;HELPER STATES=

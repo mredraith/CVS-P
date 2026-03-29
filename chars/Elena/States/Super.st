@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Elena by varo_hades                     |
+;| Elena by varo_hades |
 ; 
 ;
 ;SUPER STATES==
@@ -416,9 +416,9 @@ value = 40,0
 [State 3030, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >=5
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3030, PlaySnd]
 type = PlaySnd
@@ -600,7 +600,7 @@ damage = ceil(ifElse(fvar(11) * 40 < 7, 7, fvar(11) * 40)), 7
 getPower = 0,0
 givePower = 36, 36
 pausetime = 8,8
-guard.pausetime =  8,8
+guard.pausetime = 8,8
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -1393,9 +1393,9 @@ value = 40,0
 [State 3080, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >=5
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3080, PlaySnd]
 type = PlaySnd
@@ -1577,7 +1577,7 @@ damage = ceil(ifElse(fvar(11) * 40 < 7, 7, fvar(11) * 40)), 7
 getPower = 0,0
 givePower = 36, 36
 pausetime = 8,8
-guard.pausetime =  8,8
+guard.pausetime = 8,8
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -2131,16 +2131,16 @@ ownpal = 1
 [State 3210, StateTypeSet]
 type = StateTypeSet
 trigger1 = time = [8,26]
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3210, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 27
-statetype = S       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3210, Dust Helper]
 type = Helper
@@ -2519,58 +2519,58 @@ value = 40,0
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 8
-statetype = A       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 24
-statetype = S       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 39
-statetype = A       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 55
-statetype = S       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 66
-statetype = A       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 76
-statetype = S       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 85
-statetype = A       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 95
-statetype = S       ;S,A,C,L
-movetype = A       ;I,A,H
-physics = N         ;A,C,S,N
+statetype = S ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3230, VelSet]
 type = VelSet
@@ -2739,9 +2739,9 @@ poweradd = 0
 [State 3240, StateTypeSet]
 type = StateTypeSet
 trigger1 = time >= 5
-statetype = A       ;S,A,C,L
-movetype = A        ;I,A,H
-physics = N         ;A,C,S,N
+statetype = A ;S,A,C,L
+movetype = A ;I,A,H
+physics = N ;A,C,S,N
 
 [State 3240, 4]
 type = Explod
@@ -3546,7 +3546,7 @@ value = 3350
 
 [State 3340, ChangeState]
 type = ChangeState
-trigger1 =  time = 52
+trigger1 = time = 52
 trigger2 = p2stateno != 3310
 value = 3341
 ctrl = 0
@@ -4251,7 +4251,7 @@ value = 3350
 
 [State 3380, ChangeState]
 type = ChangeState
-trigger1 =  time = 106
+trigger1 = time = 106
 trigger2 = p2stateno != 3360
 value = 3381
 ctrl = 0

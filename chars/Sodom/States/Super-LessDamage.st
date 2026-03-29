@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Sodom by varo_hades                     |
+;| Sodom by varo_hades |
 ; 
 ;
 ;SUPER STATES=
@@ -207,7 +207,7 @@ trigger1 = animelem=3
 anim = 1003
 ID = 1003
 pos = 25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -267,7 +267,7 @@ trigger1 = animelem=4
 anim = 1003
 ID = 1003
 pos = 25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -327,7 +327,7 @@ trigger1 = animelem=7
 anim = 1004
 ID = 1004
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -387,7 +387,7 @@ trigger1 = animelem=8
 anim = 1004
 ID = 1004
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -447,7 +447,7 @@ trigger1 = animelem=12
 anim = 1005
 ID = 1005
 pos = -25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -513,7 +513,7 @@ trigger1 = animelem=13
 anim = 1005
 ID = 1005
 pos = -25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -755,7 +755,7 @@ trigger1 = animelem=3
 anim = 1003
 ID = 1003
 pos = 25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -815,7 +815,7 @@ trigger1 = animelem=4
 anim = 1003
 ID = 1003
 pos = 25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -875,7 +875,7 @@ trigger1 = animelem=7
 anim = 1004
 ID = 1004
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -935,7 +935,7 @@ trigger1 = animelem=8
 anim = 1004
 ID = 1004
 pos = -20,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -995,7 +995,7 @@ trigger1 = animelem=12
 anim = 1005
 ID = 1005
 pos = -25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1061,7 +1061,7 @@ trigger1 = animelem=13
 anim = 1005
 ID = 1005
 pos = -25,-5
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1187,7 +1187,7 @@ trigger1 = animelem=3
 anim = 621
 ID = 621
 pos = -5,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -1832,7 +1832,7 @@ trigger3 = animelem = 8
 trigger4 = animelem = 10
 anim = 7005
 pos = -80,-40
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -1853,7 +1853,7 @@ trigger2 = animelem = 11
 trigger3 = animelem = 4
 anim = 7005
 pos = -90,-20
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -1874,7 +1874,7 @@ trigger2 = time = 46
 trigger3 = time = 52
 anim = 7005
 pos = -70,-70
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -3055,7 +3055,7 @@ trigger3 = animelem = 8
 trigger4 = animelem = 10
 anim = 7005
 pos = -80,-40
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -3076,7 +3076,7 @@ trigger2 = animelem = 11
 trigger3 = animelem = 4
 anim = 7005
 pos = -90,-20
-postype = p2  ;p2,front,back,left,right
+postype = p2 ;p2,front,back,left,right
 facing = -1
 bindtime = 1
 vel = 0,0
@@ -3757,7 +3757,7 @@ guardflag = M
 pause.time = 14,14
 guard.pausetime = 14,14
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff =  0
+guard.cornerpush.veloff = 0
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -3894,17 +3894,17 @@ poweradd = 0
 
 [State 0, TargetLifeAdd]
 type = TargetLifeAdd
-trigger1 =  time = 0
-trigger2 =  time = 5
-trigger3 =  time = 20
+trigger1 = time = 0
+trigger2 = time = 5
+trigger3 = time = 20
 value = -20
 kill = 0
 
 [State 0, HitAdd]
 type = HitAdd
-trigger1 =  time = 0
-trigger2 =  time = 5
-trigger3 =  time = 20
+trigger1 = time = 0
+trigger2 = time = 5
+trigger3 = time = 20
 value = 1
 
 [State 0,Explod]
@@ -4012,7 +4012,7 @@ postype = p1
 pos = 80,-80
 bindtime = -1
 pausemovetime = 0
-removetime =  -2
+removetime = -2
 ignorehitpause = 1
 scale = 1,1
 ownpal = 1
@@ -4185,7 +4185,7 @@ y = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3250
 ctrl = 0
 
@@ -4363,7 +4363,7 @@ x = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3251
 ctrl = 0
 
@@ -4526,7 +4526,7 @@ movecamera = 0,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3259
 ctrl = 0
 
@@ -4689,7 +4689,7 @@ movecamera = 0,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3253
 ctrl = 0
 
@@ -4796,7 +4796,7 @@ y = 0
 
 [State 0, Width]
 type = Width
-trigger1 =  1
+trigger1 = 1
 edge = 100,0
 
 [State 0,Explod]
@@ -4874,7 +4874,7 @@ ampl = 5
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3255
 ctrl = 0
 
@@ -5117,7 +5117,7 @@ value = 730,1
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3257
 ctrl = 0
 
@@ -5212,7 +5212,7 @@ value = 1
 [State 0, RemoveExplod]
 type = RemoveExplod
 trigger1 = time = 30
-id =  3243
+id = 3243
 
 [State 0, EnvShake]
 type = EnvShake
@@ -5339,13 +5339,13 @@ x = 0
 
 [State 0, ChangeState]
 type = null;ChangeState
-trigger1 =  time = 50
+trigger1 = time = 50
 value = 3260
 ctrl = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 70
+trigger1 = time = 70
 value = 3270
 ctrl = 0
 
@@ -5571,7 +5571,7 @@ x = -130
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 474
+trigger1 = time = 474
 value = 3245
 ctrl = 0
 
@@ -7817,7 +7817,7 @@ guardflag = M
 pause.time = 14,14
 guard.pausetime = 14,14
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff =  0
+guard.cornerpush.veloff = 0
 ground.slidetime = 20
 ground.hittime = 20
 guard.hittime = (20) - 6
@@ -7906,17 +7906,17 @@ poweradd = 0
 
 [State 0, TargetLifeAdd]
 type = TargetLifeAdd
-trigger1 =  time = 0
-trigger2 =  time = 5
-trigger3 =  time = 20
+trigger1 = time = 0
+trigger2 = time = 5
+trigger3 = time = 20
 value = -20
 kill = 0
 
 [State 0, HitAdd]
 type = HitAdd
-trigger1 =  time = 0
-trigger2 =  time = 5
-trigger3 =  time = 20
+trigger1 = time = 0
+trigger2 = time = 5
+trigger3 = time = 20
 value = 1
 
 [State 0,Explod]
@@ -8024,7 +8024,7 @@ postype = p1
 pos = 80,-80
 bindtime = -1
 pausemovetime = 0
-removetime =  -2
+removetime = -2
 ignorehitpause = 1
 scale = 1,1
 ownpal = 1
@@ -8049,7 +8049,7 @@ pos = 0,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3550
 ctrl = 0
 
@@ -8094,7 +8094,7 @@ value = 3505
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 144
+trigger1 = time = 144
 trigger1 = Pos X >= -155
 value = 3557
 ctrl = 0
@@ -8273,7 +8273,7 @@ x = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3551
 ctrl = 0
 
@@ -8436,7 +8436,7 @@ movecamera = 0,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3559
 ctrl = 0
 
@@ -8599,7 +8599,7 @@ movecamera = 0,0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3553
 ctrl = 0
 
@@ -8815,16 +8815,16 @@ poweradd = 0
 
 [State 0, HitAdd]
 type = HitAdd
-trigger1 =  time = 0
-trigger2 =  time = 35
-trigger3 =  time = 65
+trigger1 = time = 0
+trigger2 = time = 35
+trigger3 = time = 65
 value = 1
 
 [State 0,Explod]
 type = Explod
-trigger1 =  time = 0
-trigger2 =  time = 35
-trigger3 =  time = 65
+trigger1 = time = 0
+trigger2 = time = 35
+trigger3 = time = 65
 anim = 7205+(random%3)
 sprpriority = 4
 postype = p1
@@ -8836,9 +8836,9 @@ ownpal = 1
 
 [State 871, Hit Spark]
 type = Helper
-trigger1 =  time = 0
-trigger2 =  time = 35
-trigger3 =  time = 65
+trigger1 = time = 0
+trigger2 = time = 35
+trigger3 = time = 65
 helperType = Normal
 stateNo = 8015
 ID = 8000
@@ -8854,9 +8854,9 @@ ignoreHitPause = 1
 
 [State 0,Explod]
 type = Explod
-trigger1 =  time = 0
-trigger2 =  time = 35
-trigger3 =  time = 65
+trigger1 = time = 0
+trigger2 = time = 35
+trigger3 = time = 65
 anim = 7231+(random%2)
 sprpriority = 4
 postype = p1
@@ -8868,16 +8868,16 @@ ownpal = 1
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 =  time = 0
-trigger2 =  time = 35
-trigger3 =  time = 65
+trigger1 = time = 0
+trigger2 = time = 35
+trigger3 = time = 65
 value = 2,8
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 =  time = 0
-trigger2 =  time = 35
-trigger3 =  time = 65
+trigger1 = time = 0
+trigger2 = time = 35
+trigger3 = time = 65
 value = 1,9
 
 [State 0, TargetBind]
@@ -9195,7 +9195,7 @@ y = 0
 
 [State 0, Width]
 type = Width
-trigger1 =  1
+trigger1 = 1
 edge = 100,0
 
 [State 0,Explod]
@@ -9273,7 +9273,7 @@ ampl = 5
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 3562
 ctrl = 0
 

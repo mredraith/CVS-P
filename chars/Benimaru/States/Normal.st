@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Benimaru by Jmorphman                   |
+;| Benimaru by Jmorphman |
 ; 
 ;
 ;NORMAL MOVES=

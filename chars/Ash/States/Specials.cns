@@ -237,7 +237,7 @@ palFX.sinAdd = 96, 96, 96, 4
 [State 1000, StateTypeSet: Idle]
 type=StateTypeSet
 trigger1=AnimElemTime(7) =0
-movetype=I     
+movetype=I 
 
 [State 1000, End]
 type = ChangeState
@@ -380,7 +380,7 @@ size.yscale=.5*const(size.yscale)
 [State 1000, StateTypeSet: Idle]
 type=StateTypeSet
 trigger1=AnimElemTime(7) =0
-movetype=I  
+movetype=I 
 
 [State 1025, End]
 type=ChangeState
@@ -1804,7 +1804,7 @@ size.yscale=.5*const(size.yscale)
 [State 10000, StateTypeSet: Idle]
 type=StateTypeSet
 trigger1=AnimElemTime(7) =0
-movetype=I     
+movetype=I 
 
 [State 10000, End]
 type = ChangeState

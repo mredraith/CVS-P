@@ -191,7 +191,7 @@ size.yscale=.5*const(size.yscale)
 
 [State 1000, Helper]
 type=Helper
-trigger1 = Var(10)=2 && animelem=11  
+trigger1 = Var(10)=2 && animelem=11 
 helpertype=normal ;player
 name ="Ventose"
 ID =1005
@@ -220,7 +220,7 @@ size.yscale=.6*const(size.yscale)
 [State 1000, StateTypeSet: Idle]
 type=StateTypeSet
 trigger1=AnimElemTime(7) =0
-movetype=I     
+movetype=I 
 
 [State 1000, Xe[gύX]
 type = ChangeState
@@ -366,7 +366,7 @@ size.yscale=.5*const(size.yscale)
 [State 1000, StateTypeSet: Idle]
 type=StateTypeSet
 trigger1=AnimElemTime(7) =0
-movetype=I  
+movetype=I 
 
 [State 1025, End]
 type=ChangeState
@@ -1811,7 +1811,7 @@ size.yscale=.5*const(size.yscale)
 [State 10000, StateTypeSet: Idle]
 type=StateTypeSet
 trigger1=AnimElemTime(7) =0
-movetype=I     
+movetype=I 
 
 [State 10000, End]
 type = ChangeState

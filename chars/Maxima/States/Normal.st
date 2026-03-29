@@ -14,7 +14,7 @@
 ;---------------------------------------------------------------------------
 ; Standing Light Punch
 [Statedef 200]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -140,7 +140,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Punch
 [Statedef 210]
-type    = S
+type = S
 physics = S
 movetype= A
 ctrl = 0
@@ -354,7 +354,7 @@ ctrl = 1
 ; Dodge Strong Punch/Z-Counter Punch
 guardflags = 
 [Statedef 221]
-type   =S
+type =S
 movetype= A
 physics=S
 poweradd= ifElse(PrevStateNo=750, 0, 30 * !var(20))
@@ -380,11 +380,11 @@ value=SCA
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo != 750
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=4, Hit   
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=4, Hit 
 damage = Ifelse(var(55),75,96), 0
 ;ID = 200*!var(20)
 getpower=30 * !var(20), 0
@@ -398,7 +398,7 @@ hitsound=S2+10*var(44),2
 guardsound=s3,0
 air.animType=Back
 fall.animType=Back
-ground.type=High      
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -422,11 +422,11 @@ palFX.sinAdd= -255,-255,-255,48
 type=HitDef
 trigger1 = !var(16) && (var(15)<1 || var(20))
 trigger1=!Time && PrevStateNo=750
-attr=S,NA        
-hitflag=MAF       
-guardflag=M         
-animtype=Hard         
-priority=6, Hit   ;Higher priority for counters
+attr=S,NA 
+hitflag=MAF 
+guardflag=M 
+animtype=Hard 
+priority=6, Hit ;Higher priority for counters
 damage=105, 0
 ;ID = 200*!var(20)
 getpower=0, 0
@@ -440,7 +440,7 @@ hitsound=S2+10*var(44),2
 guardsound=s3,0
 air.animType=Back
 fall.animType=Back
-ground.type=High     
+ground.type=High 
 air.type=Low
 ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
@@ -614,7 +614,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
 [Statedef 230]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -700,7 +700,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Standing Medium Kick
 [Statedef 240]
-type    = S
+type = S
 physics = S
 moveType = A
 ctrl = 0
@@ -1130,11 +1130,11 @@ type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
 trigger1= !Time
 id = 200
-attr = C,NA     
-hitflag = MAF      
-guardflag = MA    
-animtype = Hard       
-priority = 4,Hit  
+attr = C,NA 
+hitflag = MAF 
+guardflag = MA 
+animtype = Hard 
+priority = 4,Hit 
 damage = Ifelse(var(55),62,85), 0
 ID = 200*!var(20)
 getpower = 30 * !var(20), 0
@@ -1147,7 +1147,7 @@ hitsound = S2+10*var(44),2
 guardsound = s3, 0
 air.animType = Back
 fall.animType = Back
-ground.type =High     ;Low,Trip,None
+ground.type =High ;Low,Trip,None
 air.type = Low
 ground.slidetime = 18 + 4*var(9)
 ground.hittime = 18 + 4*var(9)
@@ -1159,7 +1159,7 @@ air.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-1.5,-5)),Ifelse(var(55)=2,-9,
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel =  Ifelse(var(55)=2,.4,.65)
+yaccel = Ifelse(var(55)=2,.4,.65)
 fall = 0
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -1214,7 +1214,7 @@ channel=1
 [State 430, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1=  !Time
+trigger1= !Time
 id = 200
 attr = C,NA
 hitflag = MAF
@@ -1440,7 +1440,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Tripped get-hit (shaking)
 [Statedef 455]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -1465,7 +1465,7 @@ ampl = 140
 
 ; Tripped get-hit (knocked away)
 [Statedef 456]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -1576,7 +1576,7 @@ value=52
 ; Jump Medium Punch
 [Statedef 610]
 type = A
-physics  = N
+physics = N
 moveType = A
 ctrl = 0
 sprPriority = 1
@@ -2260,8 +2260,8 @@ time = 34
 type = HitDef
 trigger1 = Time = 0
 attr = S, NA
-animtype  = Heavy
-damage    = 120
+animtype = Heavy
+damage = 120
 getpower = 48
 givepower = 10
 pausetime = 12,12
@@ -2272,7 +2272,7 @@ hitsound = S2+10*var(44),5
 guardsound = S0, 0
 ground.type = High
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -4.0,-3.0
 fall = 1
@@ -2333,8 +2333,8 @@ time = 34
 type = HitDef
 trigger1 = Time = 0
 attr = S, NA
-animtype  = Heavy
-damage    = 120
+animtype = Heavy
+damage = 120
 getpower = 48
 givepower = 10
 pausetime = 12,12
@@ -2345,7 +2345,7 @@ hitsound = S2+10*var(44),5
 guardsound = S0, 0
 ground.type = High
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -4.0,-3.0
 fall = 1

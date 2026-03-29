@@ -1,5 +1,5 @@
 ; _____________________________________
-;| K' by Chazzanova & Dampir           |
+;| K' by Chazzanova & Dampir |
 ; 
 ;
 ;SPECIAL MOVES
@@ -2112,7 +2112,7 @@ y = 0.38
 
 [State 1230, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(4)  >= 0 && AnimElemTime(6) < 0
+trigger1 = AnimElemTime(4) >= 0 && AnimElemTime(6) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -2617,7 +2617,7 @@ y = 0.66
 
 [State 1330, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(3)  >= 0 && AnimElemTime(5) < 0
+trigger1 = AnimElemTime(3) >= 0 && AnimElemTime(5) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)

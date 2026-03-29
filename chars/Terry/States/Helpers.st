@@ -1,6 +1,6 @@
-;                          ____________________
+; ____________________
 ;|Terry Bogard by Memo|=
-;                          
+; 
 ;
 ; HELPER STATES =
 ;
@@ -132,20 +132,20 @@ supermove = 1
 [State 259, VarSet]
 type = Varset
 trigger1 = !time
-v =  51
+v = 51
 value = 200
 
 [State 259, VarAdd]
 type = VarAdd
 triggerall = Var(51) > 100
 trigger1 = timemod = 1,0
-v =  51
+v = 51
 value = -5
 
 [State 259, VarSet]
 type = Varset
 trigger1 = Var(51) <= 100
-v =  51
+v = 51
 value = 100
 
 [State 259, Remove Explode]

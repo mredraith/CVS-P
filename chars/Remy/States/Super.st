@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SUPER MOVES=
@@ -155,7 +155,7 @@ ignoreHitPause = 0
 [State 3000, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 1
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -290,7 +290,7 @@ ignoreHitPause = 0
 [State 3001, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -335,7 +335,7 @@ envShake.freq = 120
 [State 3001, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 6
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -576,7 +576,7 @@ ignoreHitPause = 0
 [State 3050, HitDef 3]
 type = HitDef
 trigger1 = !var(16) && var(15) < 3
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -712,7 +712,7 @@ ignoreHitPause = 0
 [State 3051, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 4
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -758,7 +758,7 @@ envShake.freq = 120
 [State 3051, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 5
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -895,7 +895,7 @@ ignoreHitPause = 0
 [State 3052, HitDef 1]
 type = HitDef
 trigger1 = !var(16) && var(15) < 7
-trigger1 =  AnimElem = 5
+trigger1 = AnimElem = 5
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -940,7 +940,7 @@ envShake.freq = 120
 [State 3052, HitDef 2]
 type = HitDef
 trigger1 = !var(16) && var(15) < 8
-trigger1 =  AnimElem = 6
+trigger1 = AnimElem = 6
 attr = S, HA
 hitFlag = MAF
 guardFlag = M
@@ -996,7 +996,7 @@ value = 3002
 ;Super 2
 ; Light of Justice
 [Statedef 3100]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0
@@ -1186,7 +1186,7 @@ ctrl = 1
 
 ; Light of Justice (MAX)
 [Statedef 3150]
-type    = S
+type = S
 movetype= A
 physics = N
 velset = 0,0

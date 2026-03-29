@@ -1591,7 +1591,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -2137,7 +2137,7 @@ type = S
 moveType = I
 physics = S
 anim = 195
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 
@@ -2236,7 +2236,7 @@ name = "Robe"
 ID = 7000
 stateno = 7000
 pos = 0, 0
-postype = P1   
+postype = P1 
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2251,7 +2251,7 @@ name = "Kollin"
 ID = 7001
 stateno = 7001
 pos = ceil(-75 * Const(Size.Xscale)), 0
-postype = P1   
+postype = P1 
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2282,7 +2282,7 @@ name = "Monks"
 ID = 7003
 stateno = 7003
 pos = ceil(GameWidth/2)-240,0
-postype = P1   
+postype = P1 
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -2298,7 +2298,7 @@ name = "Monks"
 ID = 7004
 stateno = 7003
 pos = ceil(GameWidth/2)+60,0
-postype = P1   
+postype = P1 
 facing = -1
 keyctrl = 0
 ownpal = 1
@@ -2395,7 +2395,7 @@ name = "Robe"
 ID = 7010
 stateno = 7010
 pos = 0, 0
-postype = P1   
+postype = P1 
 facing = 1
 keyctrl = 0
 size.xscale = const(size.xscale)
@@ -2409,7 +2409,7 @@ name = "Flames"
 ID = 10190
 stateno = 10190
 pos = 0, 0
-postype = P1   
+postype = P1 
 facing = 1
 keyctrl = 0
 size.xscale = .5
@@ -2966,7 +2966,7 @@ flag = NoAutoTurn
 [State 185, VelSet]
 type = VelSet
 trigger1 = 1
-y =  (Sin (GameTime * 0.0875))
+y = (Sin (GameTime * 0.0875))
 
 [State 185, Power Charge Dust]
 type = Explod
@@ -3169,7 +3169,7 @@ value = 5050
 ;---------------------------------------------------------------------------
 ; Air get-hit (recovering in air, not falling)
 [Statedef 5040]
-type    = A
+type = A
 movetype= H
 physics = N
 
@@ -3216,7 +3216,7 @@ value = 52 ;Jump land
 
 ;Get up from lying down
 [Statedef 5120]
-type    = L
+type = L
 movetype= I
 physics = N
 
@@ -3278,7 +3278,7 @@ ctrl = 1
 ;FREEZE STATUS TRANSITION=
 ;Freeze : Standing Hit Shake
 [Statedef 5800]
-type    = U
+type = U
 movetype= H
 physics = N
 velset = 0,0
@@ -3332,7 +3332,7 @@ value = 5830
 
 ;Freeze : Standing Slide Shake
 [Statedef 5801]
-type    = S
+type = S
 movetype= H
 physics = S
 
@@ -3389,7 +3389,7 @@ ctrl = 1
 
 ;Freeze : Crouching Hit Shake
 [Statedef 5810]
-type    = C
+type = C
 movetype= H
 physics = N
 velset = 0,0
@@ -3432,7 +3432,7 @@ value = 5830
 
 ;Freeze : Crouching Hit Slide
 [Statedef 5811]
-type    = C
+type = C
 movetype= H
 physics = C
 
@@ -3489,7 +3489,7 @@ ctrl = 1
 
 ;Freeze : Jumping Hit Shake
 [Statedef 5820]
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3525,7 +3525,7 @@ value = 5830
 
 ;Freeze : Jumping Hit Lift
 [Statedef 5830]
-type    = A
+type = A
 movetype= H
 physics = N
 ctrl = 0
@@ -4033,7 +4033,7 @@ trigger1 = var(0) = [1,100]
 source = 4,1
 dest = 1, Var(0)
 
-[state -2, RemapPal:  Glowing Palette Effect]
+[state -2, RemapPal: Glowing Palette Effect]
 type = RemapPal
 trigger1 = var(1) = 1
 trigger1 = StateNo != 5900
@@ -4069,7 +4069,7 @@ trigger1 = var(0) = [1,100]
 source = 3, 1
 dest = 3, Var(0)
 
-[state -2, RemapPal:  Glowing Palette Effect]
+[state -2, RemapPal: Glowing Palette Effect]
 type = RemapPal
 trigger1 = var(1) = 1
 trigger1 = StateNo != 5900

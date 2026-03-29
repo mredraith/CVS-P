@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;CONSTANTS
 [Data]
@@ -27,7 +27,7 @@ air.front = 16
 height = 60			
 attack.dist = 160		
 proj.attack.dist = 90	
-proj.doscale = 0		   
+proj.doscale = 0		 
 head.pos = -4, -95	
 mid.pos = -7, -70		
 shadowoffset = 1		

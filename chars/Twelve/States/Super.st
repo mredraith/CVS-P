@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Character by Author Name                |
+;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SUPER MOVES=
@@ -126,7 +126,7 @@ name = "Needles"
 ID = 3000
 stateno = 3005
 pos = 90,0
-postype = p1    ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 keyctrl = 0
 ownpal = 0
@@ -440,7 +440,7 @@ offset = 150,0
 ;projhitanim = -1;
 ;projremanim = -1;
 ;attr = S, SP
-;damage   = 60,6
+;damage = 60,6
 ;animtype = high
 ;air.animtype = Back
 ;ground.type = High
@@ -456,7 +456,7 @@ offset = 150,0
 ;hitsound = S5,1
 ;guardsound = S6,1
 ;ground.slidetime = 15
-;ground.hittime  = 15
+;ground.hittime = 15
 ;ground.velocity = -12
 ;air.velocity = -3,-8
 ;yaccel = 0.55
@@ -467,9 +467,9 @@ offset = 150,0
 ;air.fall = 1
 ;fall.recover = 0
 ;projscale = 1,1
-;projremove = 1                    ;0 or 1
-;projremovetime = 34              ;-1 is no remove time.
-;velocity =  9, 0
+;projremove = 1 ;0 or 1
+;projremovetime = 34 ;-1 is no remove time.
+;velocity = 9, 0
 ;projmisstime = 0
 ;offset = 40,0
 ;postype = p1
@@ -497,7 +497,7 @@ offset = 150,0
 ;projhitanim = -1;
 ;projremanim = -1;
 ;attr = S, SP
-;damage   = 60,6
+;damage = 60,6
 
 ;animtype = high
 ;air.animtype = Back
@@ -517,7 +517,7 @@ offset = 150,0
 ;hitsound = S5,1
 ;guardsound = S6,1
 ;ground.slidetime = 15
-;ground.hittime  = 15
+;ground.hittime = 15
 ;ground.velocity = -12
 ;air.velocity = -3,-8
 ;yaccel = 0.55
@@ -530,9 +530,9 @@ offset = 150,0
 ;air.fall = 1
 ;fall.recover = 0
 ;projscale = 1,1
-;projremove = 1                    ;0 or 1
-;projremovetime = 34              ;-1 is no remove time.
-;velocity =  9 , 0
+;projremove = 1 ;0 or 1
+;projremovetime = 34 ;-1 is no remove time.
+;velocity = 9 , 0
 ;projmisstime = 0
 ;offset = 40,0
 ;postype = p1
@@ -559,7 +559,7 @@ offset = 150,0
 ;anim = 2080
 ;sprpriority = 4
 ;postype = p1
-;pos = 60,0                       ;##21#
+;pos = 60,0 ;##21#
 ;bindtime = 1
 ;pausemovetime = 0
 ;removetime = -2
@@ -577,7 +577,7 @@ ctrl = 1
 
 [State 0, CtrlSet]
 type = CtrlSet
-trigger1 =  time>=74
+trigger1 = time>=74
 value = 1
 
 ; ==
@@ -657,7 +657,7 @@ trigger1 = time = 0;hitcount < 1
 ;trigger1 = moveguarded < 1
 damage = 70,35
 animtype = Medium
-priority  = 5, Hit
+priority = 5, Hit
 guardflag = MA
 hitflag = MAFD
 pausetime = 13,2
@@ -668,7 +668,7 @@ guard.sparkno = -1 + 0*(var(34):=8000)
 sparkxy = -10 + 0*(var(35):=211), var(36):=-65
 ground.type = High
 ground.slidetime = 10
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -7,-3
 air.velocity = -7,-2
@@ -910,7 +910,7 @@ offset = 150,0
 ;projhitanim = -1;
 ;projremanim = -1;
 ;attr = S, SP
-;damage   = 60,6
+;damage = 60,6
 ;animtype = high
 ;air.animtype = Back
 ;ground.type = High
@@ -926,7 +926,7 @@ offset = 150,0
 ;hitsound = S5,1
 ;guardsound = S6,1
 ;ground.slidetime = 15
-;ground.hittime  = 15
+;ground.hittime = 15
 ;ground.velocity = -12
 ;air.velocity = -3,-8
 ;yaccel = 0.55
@@ -937,9 +937,9 @@ offset = 150,0
 ;air.fall = 1
 ;fall.recover = 0
 ;projscale = 1,1
-;projremove = 1                    ;0 or 1
-;projremovetime = 34              ;-1 is no remove time.
-;velocity =  9, 0
+;projremove = 1 ;0 or 1
+;projremovetime = 34 ;-1 is no remove time.
+;velocity = 9, 0
 ;projmisstime = 0
 ;offset = 40,0
 ;postype = p1
@@ -967,7 +967,7 @@ offset = 150,0
 ;projhitanim = -1;
 ;projremanim = -1;
 ;attr = S, SP
-;damage   = 60,6
+;damage = 60,6
 
 ;animtype = high
 ;air.animtype = Back
@@ -987,7 +987,7 @@ offset = 150,0
 ;hitsound = S5,1
 ;guardsound = S6,1
 ;ground.slidetime = 15
-;ground.hittime  = 15
+;ground.hittime = 15
 ;ground.velocity = -12
 ;air.velocity = -3,-8
 ;yaccel = 0.55
@@ -1000,9 +1000,9 @@ offset = 150,0
 ;air.fall = 1
 ;fall.recover = 0
 ;projscale = 1,1
-;projremove = 1                    ;0 or 1
-;projremovetime = 34              ;-1 is no remove time.
-;velocity =  9 , 0
+;projremove = 1 ;0 or 1
+;projremovetime = 34 ;-1 is no remove time.
+;velocity = 9 , 0
 ;projmisstime = 0
 ;offset = 40,0
 ;postype = p1
@@ -1029,7 +1029,7 @@ offset = 150,0
 ;anim = 2080
 ;sprpriority = 4
 ;postype = p1
-;pos = 60,0                       ;##21#
+;pos = 60,0 ;##21#
 ;bindtime = 1
 ;pausemovetime = 0
 ;removetime = -2
@@ -1047,7 +1047,7 @@ ctrl = 1
 
 [State 0, CtrlSet]
 type = CtrlSet
-trigger1 =  time>=74
+trigger1 = time>=74
 value = 1
 
 ; ==
@@ -1126,7 +1126,7 @@ trigger1 = hitcount < 1
 trigger1 = moveguarded < 1
 damage = 50,25
 animtype = Medium
-priority  = 5, Hit
+priority = 5, Hit
 guardflag = MA
 hitflag = MAFD
 pausetime = 13,2
@@ -1137,7 +1137,7 @@ guard.sparkno = -1 + 0*(var(34):=8000)
 sparkxy = -10 + 0*(var(35):=211), var(36):=-65
 ground.type = High
 ground.slidetime = 10
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = -7,-3
 air.velocity = -7,-2
@@ -1334,7 +1334,7 @@ value = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 40
+trigger1 = time = 40
 value = 3101
 ctrl = 0
 
@@ -1365,10 +1365,10 @@ y = 10
 [State 800, 1]
 type = HitDef
 Trigger1 = Time = 0
-attr = A, HT          ;Attributes: Standing, Normal Throw
-hitflag = MAF          ;MAFD M- Affect only ground people who are not being hit
-priority = 5, Miss    ;1-6
-sprpriority = 1       ;Draw in front of p2
+attr = A, HT ;Attributes: Standing, Normal Throw
+hitflag = MAF ;MAFD M- Affect only ground people who are not being hit
+priority = 5, Miss ;1-6
+sprpriority = 1 ;Draw in front of p2
 ;p1facing = ifelse (command = "holdfwd", -1, 1) ;Turn if holding forwards
 p2facing = 1
 p1stateno = 3102; ok
@@ -3044,12 +3044,12 @@ trigger1 = p2statetype != A
 ;trigger1 = p2stateno != [5000,5999]
 ;trigger1 = p2stateno != [150,152]
 
-attr = S, HT          ;Attributes: Standing, Normal Throw
-hitflag = M          ;M- ;Affect only ground people who are not being hit
-priority = 5, Miss    ;1-6
-sparkno = -1          ;No spark
-sprpriority = 2       ;Draw in front of p2
-p2facing = 1          ;Force p2 to face player
+attr = S, HT ;Attributes: Standing, Normal Throw
+hitflag = M ;M- ;Affect only ground people who are not being hit
+priority = 5, Miss ;1-6
+sparkno = -1 ;No spark
+sprpriority = 2 ;Draw in front of p2
+p2facing = 1 ;Force p2 to face player
 p1stateno = 3220;2320
 p2stateno = 3250;2350
 fall = 1
@@ -3108,12 +3108,12 @@ superMoveTime = 65535
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = s2,3
 
 [State 0, PlaySnd]
 type = PlaySnd
-trigger1 = time =  0
+trigger1 = time = 0
 value = s2,3
 
 
@@ -3505,21 +3505,21 @@ projhits = 1
 projmiss = 0
 projpriority = 3
 projsprpriority = 5
-postype = p1         ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 projshadow = 0,0,0
 supermovetime = 0
 pausemovetime = 0
 ; HitDef
-attr = S,HP        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
-hitflag = MAF        ;HLAFD+-
-guardflag = M         ;HLA
+attr = S,HP ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+hitflag = MAF ;HLAFD+-
+guardflag = M ;HLA
 getpower = 0,0
 givepower = 0,0
-;affectteam = E          ;B,E,F
-animtype = hard          ;light,medium,hard,back,up,diagup
+;affectteam = E ;B,E,F
+animtype = hard ;light,medium,hard,back,up,diagup
 air.animtype = hard
 ;fall.animtype = Back
-priority = 4,Hit   ;Hit,Miss,Dodge
+priority = 4,Hit ;Hit,Miss,Dodge
 damage = 120,10
 pausetime = 30,30
 guard.pausetime = 30,30
@@ -3528,14 +3528,14 @@ guard.pausetime = 30,30
 sparkno = -1 + 0*(var(33):=8012)
 guard.sparkno = -1 + 0*(var(34):=8000)
 sparkxy = -10 + 0*(var(35):=211), var(36):=-65
-ground.type = High      ;Low,Trip,None
+ground.type = High ;Low,Trip,None
 ;air.type = High
 ground.slide = 20
 guard.slide = 20
 ground.hit = 20
 guard.hit = 20
 air.hittime = 20
-guard.ctrl  = 17
+guard.ctrl = 17
 yaccel = 0.55
 ground.velocity = -6,-12
 guard.velocity = 0
@@ -3568,7 +3568,7 @@ GivePower = ifelse ( var(20) > 0,80, 80)
 [State 2310, ChangeState]
 type = ChangeState
 trigger1 = time = 192
-value =  3230;2330
+value = 3230;2330
 ctrl = 0
 
 ; ==
@@ -3589,13 +3589,13 @@ y = 0
 [State 2310, ChangeState]
 type = ChangeState
 trigger1 = animtime = 0
-value =  0
+value = 0
 ctrl = 1
 
 ; ==
 
 [Statedef 3250];2350
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3618,13 +3618,13 @@ value = 2355
 [State 2310, ChangeState]
 type = ChangeState
 trigger1 = time = 200
-value =  3260;2360
+value = 3260;2360
 ctrl = 0
 
 ; ==
 
 [Statedef 3260];2360
-type    = A
+type = A
 movetype= H
 physics = N
 velset = 0,0
@@ -3772,7 +3772,7 @@ y = -6
 type = null;AngleDraw
 trigger1 = time >= 0
 value = -20
-;scale =  (winmugen only)
+;scale = (winmugen only)
 ;ignorehitpause =
 ;persistent =
 
@@ -3821,7 +3821,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 30,15
@@ -3864,7 +3864,7 @@ priority = 5, Hit			;2 for ??, 3 for M/H att, 4 for L att, 5 for super, 6 fot hy
 attr = A,HA			;STAND / NORMAL ATTACK
 hitflag = MAF			;MIDDLE ATTACK
 guardflag = M			;GUARD is MIDDLE /L is LOW
-animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up",    or "diagup"
+animtype = hard	 		;2p ANIM, light", "medium", "hard", "back", "up", or "diagup"
 air.animtype = hard			;2p ANIM
 ground.type = high
 damage = 30,3
@@ -3900,7 +3900,7 @@ fall.envshake.ampl = 10	;strong weak
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 50;vel Y > 0 && pos Y >= 0
+trigger1 = time = 50;vel Y > 0 && pos Y >= 0
 value = 3320;2420; falta
 ctrl = 0
 
@@ -3972,7 +3972,7 @@ y = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  animtime = 0
+trigger1 = animtime = 0
 value = 0
 ctrl = 1
 
@@ -4032,7 +4032,7 @@ value = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 40
+trigger1 = time = 40
 value = 3402;3401;3301
 ctrl = 0
 
@@ -4142,7 +4142,7 @@ projanim = 3330
 projhitanim = -1;
 projremanim = -1;
 attr = S, HP
-damage   = 60,6
+damage = 60,6
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -4161,7 +4161,7 @@ GivePower = 20,10
 ;
 
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 ground.velocity = 6
 air.velocity = 0,-8
 yaccel = 0.55
@@ -4174,8 +4174,8 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 projremove = 1
-projremovetime = 9              ;-1 is no remove time.
-velocity =  0,0
+projremovetime = 9 ;-1 is no remove time.
+velocity = 0,0
 projmisstime = 0
 offset = 0,10
 postype = p1
@@ -4204,7 +4204,7 @@ projanim = 3331
 projhitanim = -1;
 projremanim = -1;
 attr = S, HP
-damage   = 60,6
+damage = 60,6
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -4223,7 +4223,7 @@ GivePower = 20,10
 ;
 
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 ground.velocity = -6
 air.velocity = -2,-8
 yaccel = 0.55
@@ -4236,8 +4236,8 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 projremove = 1
-projremovetime = 9              ;-1 is no remove time.
-velocity =  0,0
+projremovetime = 9 ;-1 is no remove time.
+velocity = 0,0
 projmisstime = 0
 offset = 0,10
 postype = p1
@@ -4266,7 +4266,7 @@ projanim = 3332
 projhitanim = -1;
 projremanim = -1;
 attr = S, HP
-damage   = 60,6
+damage = 60,6
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -4285,7 +4285,7 @@ getpower = 0,0
 GivePower = 20,10
 ;
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 ground.velocity = -12
 air.velocity = -3,-12
 yaccel = 0.6
@@ -4298,8 +4298,8 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 projremove = 1
-projremovetime = 9              ;-1 is no remove time.
-velocity =  0,0
+projremovetime = 9 ;-1 is no remove time.
+velocity = 0,0
 projmisstime = 0
 offset = 0,10
 postype = p1
@@ -4388,7 +4388,7 @@ ctrl = 1
 
 [State 0, CtrlSet]
 type = CtrlSet
-trigger1 =  time>=74
+trigger1 = time>=74
 value = 1
 
 ; ==
@@ -4513,7 +4513,7 @@ trigger1 = time = 4
 ;projhitanim = -1;
 ;projremanim = -1;
 attr = S, HP
-damage   = 60,30
+damage = 60,30
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -4529,7 +4529,7 @@ guard.pause = 6,8;
 getpower = 0,0
 GivePower = 20,10;
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = 6
 air.velocity = 0,-8
@@ -4541,8 +4541,8 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 ;projremove = 1
-;projremovetime = 9              ;-1 is no remove time.
-;velocity =  0,0
+;projremovetime = 9 ;-1 is no remove time.
+;velocity = 0,0
 ;projmisstime = 0
 ;offset = 0,10
 ;postype = p1
@@ -4572,7 +4572,7 @@ trigger1 = time = 14
 ;projhitanim = -1;
 ;projremanim = -1;
 attr = S, HP
-damage   = 60,30
+damage = 60,30
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -4588,7 +4588,7 @@ guard.pause = 6,8
 getpower = 0,0
 GivePower = 20,10;
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
 air.velocity = -2,-8
@@ -4600,8 +4600,8 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 ;projremove = 1
-;projremovetime = 9              ;-1 is no remove time.
-;velocity =  0,0
+;projremovetime = 9 ;-1 is no remove time.
+;velocity = 0,0
 ;projmisstime = 0
 ;offset = 0,10
 ;postype = p1
@@ -4630,7 +4630,7 @@ trigger1 = time = 24
 ;projhitanim = -1;
 ;projremanim = -1;
 attr = S, HP
-damage   = 60,30
+damage = 60,30
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -4646,7 +4646,7 @@ guard.pause = 6,8
 getpower = 0,0
 GivePower = 20,10
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -12
 air.velocity = -3,-12
@@ -4658,8 +4658,8 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 ;projremove = 1
-;projremovetime = 9              ;-1 is no remove time.
-;velocity =  0,0
+;projremovetime = 9 ;-1 is no remove time.
+;velocity = 0,0
 ;projmisstime = 0
 ;offset = 0,10
 ;postype = p1
@@ -4776,7 +4776,7 @@ value = 0
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 =  time = 40
+trigger1 = time = 40
 value = 3452;3401;3301
 ctrl = 0
 
@@ -4834,7 +4834,7 @@ ctrl = 1
 
 [State 0, CtrlSet]
 type = CtrlSet
-trigger1 =  time>=74
+trigger1 = time>=74
 value = 1
 
 ; ==
@@ -4959,7 +4959,7 @@ trigger1 = time = 4
 ;projhitanim = -1;
 ;projremanim = -1;
 attr = S, HP
-damage   = 50,25
+damage = 50,25
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -4975,7 +4975,7 @@ guard.pause = 6,8;
 getpower = 0,0
 GivePower = 20,10;
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = 6
 air.velocity = 0,-8
@@ -4987,8 +4987,8 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 ;projremove = 1
-;projremovetime = 9              ;-1 is no remove time.
-;velocity =  0,0
+;projremovetime = 9 ;-1 is no remove time.
+;velocity = 0,0
 ;projmisstime = 0
 ;offset = 0,10
 ;postype = p1
@@ -5018,7 +5018,7 @@ trigger1 = time = 14
 ;projhitanim = -1;
 ;projremanim = -1;
 attr = S, HP
-damage   = 50,25
+damage = 50,25
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -5034,7 +5034,7 @@ guard.pause = 6,8
 getpower = 0,0
 GivePower = 20,10;
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
 air.velocity = -2,-8
@@ -5046,8 +5046,8 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 ;projremove = 1
-;projremovetime = 9              ;-1 is no remove time.
-;velocity =  0,0
+;projremovetime = 9 ;-1 is no remove time.
+;velocity = 0,0
 ;projmisstime = 0
 ;offset = 0,10
 ;postype = p1
@@ -5076,7 +5076,7 @@ trigger1 = time = 24
 ;projhitanim = -1;
 ;projremanim = -1;
 attr = S, HP
-damage   = 50,25
+damage = 50,25
 animtype = high
 air.animtype = Back
 ground.type = High
@@ -5092,7 +5092,7 @@ guard.pause = 6,8
 getpower = 0,0
 GivePower = 20,10
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -12
 air.velocity = -3,-12
@@ -5104,8 +5104,8 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 ;projremove = 1
-;projremovetime = 9              ;-1 is no remove time.
-;velocity =  0,0
+;projremovetime = 9 ;-1 is no remove time.
+;velocity = 0,0
 ;projmisstime = 0
 ;offset = 0,10
 ;postype = p1

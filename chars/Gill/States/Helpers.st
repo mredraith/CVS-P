@@ -211,7 +211,7 @@ hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
-getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
+getPower = 72 * (var(45) = 2 && !var(20)), 36 * (var(45) = 2 && !var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
@@ -263,7 +263,7 @@ hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
-getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
+getPower = 72 * (var(45) = 2 && !var(20)), 36 * (var(45) = 2 && !var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
 guard.pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -315,7 +315,7 @@ hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
-getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
+getPower = 72 * (var(45) = 2 && !var(20)), 36 * (var(45) = 2 && !var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
 guard.pauseTime = ifElse(var(20), 2, 4), ifElse(var(20), 2, 4)
@@ -367,7 +367,7 @@ hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 54 < 7, 7, fvar(11) * 54)), 8
-getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
+getPower = 72 * (var(45) = 2 && !var(20)), 36 * (var(45) = 2 && !var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
 guard.pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -1936,7 +1936,7 @@ hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 7
-getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
+getPower = 72 * (var(45) = 2 && !var(20)), 36 * (var(45) = 2 && !var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
 guard.pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
@@ -2332,7 +2332,7 @@ hitFlag = MAF
 guardFlag = MA
 priority = 4, Hit
 damage = ceil(ifElse(fvar(11) * 42 < 7, 7, fvar(11) * 42)), 7
-getPower = 72 * (var(45) = 2 && !var(20)), 36  * (var(45) = 2 && !var(20))
+getPower = 72 * (var(45) = 2 && !var(20)), 36 * (var(45) = 2 && !var(20))
 givePower = 36, 36
 pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)
 guard.pauseTime = ifElse(var(20), 4, 8), ifElse(var(20), 4, 8)

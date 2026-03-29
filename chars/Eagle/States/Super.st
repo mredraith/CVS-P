@@ -106,7 +106,7 @@ trigger1 = animelem = 5
 anim = 3005
 ID = 3005
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -127,7 +127,7 @@ trigger1 = animelem = 5
 anim = 3007
 ID = 3007
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -341,7 +341,7 @@ trigger1 = animelem = 29
 anim = 3006
 ID = 3006
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -475,7 +475,7 @@ trigger1 = animelem = 5
 anim = 3005
 ID = 3005
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -496,7 +496,7 @@ trigger1 = animelem = 5
 anim = 3007
 ID = 3007
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -716,7 +716,7 @@ trigger1 = animelem = 46
 anim = 3006
 ID = 3006
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2217,7 +2217,7 @@ trigger1 = animelem = 3
 anim = 1405
 ID = 1405
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = 1
@@ -2241,7 +2241,7 @@ attr = S, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = ceil(ifelse(fvar(11) * (365 + (var(11)*4))   < 7, 7, fvar(11) * (365 + (var(11)*4)))), 7
+damage = ceil(ifelse(fvar(11) * (365 + (var(11)*4)) < 7, 7, fvar(11) * (365 + (var(11)*4)))), 7
 getpower = 0
 givepower = 36, 36
 pausetime = 24, 24
@@ -3145,7 +3145,7 @@ channel = 0
 [State 0, Explod]
 type = Explod
 trigger1 = animelem = 9
-anim =  1405
+anim = 1405
 bindTime = -1
 sprpriority = 3
 postype = p1
@@ -3545,7 +3545,7 @@ y = 1
 type = ChangeState
 triggerall = HitFall
 trigger1 = HitOver
-trigger2 = Vel Y > 0    ;Hit ground
+trigger2 = Vel Y > 0 ;Hit ground
 trigger2 = Pos Y >= Const(movement.air.gethit.groundlevel)
 value = 3219 ;HITA_FALL
 
@@ -3565,7 +3565,7 @@ physics = N
 type = ChangeAnim
 trigger1 = AnimTime = 0
 trigger1 = Anim = 5035
-trigger2 = Time = 0     ;If no transition anim
+trigger2 = Time = 0 ;If no transition anim
 trigger2 = Anim != 5035
 trigger2 = (Anim != [5051, 5059]) && (Anim != [5061, 5069])
 trigger2 = Anim != 5090 ;Not if hit off ground anim

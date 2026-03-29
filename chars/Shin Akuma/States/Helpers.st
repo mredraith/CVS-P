@@ -380,7 +380,7 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 16
 guard.hittime = (16) - 6
-ground.velocity =  -6, ifelse(var(2)>1,-4,0)
+ground.velocity = -6, ifelse(var(2)>1,-4,0)
 ground.cornerpush.veloff = 0
 air.velocity = -6, -4
 fall = var(2)>1
@@ -960,8 +960,8 @@ ignorehitpause = 1
 type = velset
 trigger1 = (!(root, var(1)) && !(root, var(42)) || (root, var(1)) && !(root, var(43)));!(root, var(1))
 trigger1 = var(10) != 4
-x = ifelse(var(10) = 3,  3.73, ifelse(var(10) = 2, 2.62, 1.29))
-y = ifelse(var(10) = 3,  3.73, ifelse(var(10) = 2, 4.84, 5.15))
+x = ifelse(var(10) = 3, 3.73, ifelse(var(10) = 2, 2.62, 1.29))
+y = ifelse(var(10) = 3, 3.73, ifelse(var(10) = 2, 4.84, 5.15))
 
 [State 1055, Vel]
 type = velset

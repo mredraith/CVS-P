@@ -830,7 +830,7 @@ type = hitdef
 triggerall = P2Dist x < 0
 triggerall = !numtarget(1210)
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = anim = 1210 &&  (animelem = 14 || animelem = 17)
+trigger1 = anim = 1210 && (animelem = 14 || animelem = 17)
 trigger2 = !var(16) && (var(15) < 6 || var(20))
 trigger2 = anim = 1210 && animelem = 17
 ID = 1210
@@ -1053,7 +1053,7 @@ palFX.sinAdd= -255,-255,-255,48
 [State 1260, hit]
 type = hitdef
 trigger1 = !var(16) && (var(15) < 6 || var(20))
-trigger1 =  animelem = 17
+trigger1 = animelem = 17
 attr = A, SA
 damage = ceil(ifelse(fvar(12) * 32 < 7, 7, fvar(12) * 32)), 7
 animtype = Diagup
@@ -1104,7 +1104,7 @@ palFX.sinAdd= -255,-255,-255,48
 [State 1260, hit]
 type = hitdef
 trigger1 = !var(16) && (var(15) < 6 || var(20))
-trigger1 =  animelem = 20
+trigger1 = animelem = 20
 attr = A, SA
 damage = ceil(ifelse(fvar(12) * 32 < 7, 7, fvar(12) * 32)), 7
 animtype = Diagup
@@ -1223,7 +1223,7 @@ ownpal = 1
 [State 1310, vel X]
 type = velset
 trigger1 = !time
-x =  0.076 * p2bodydist x / 2.5
+x = 0.076 * p2bodydist x / 2.5
 
 [State 1310, vel Y]
 type = velset

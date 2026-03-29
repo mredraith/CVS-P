@@ -375,8 +375,8 @@ p2facing = 1
 envshake.time=16
 envshake.freq=30
 envshake.ampl=4
-fall = 1                   ;Make p2 fall down
-fall.recover = 0      ;40 ticks before p2 can recover from fall
+fall = 1 ;Make p2 fall down
+fall.recover = 0 ;40 ticks before p2 can recover from fall
 
 [State 0, ChangeAnim]
 type = ChangeAnim
@@ -526,12 +526,12 @@ value = 0
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  animelem = 6
+trigger1 = animelem = 6
 x = 40
 
 [State 0, VelSet]
 type = VelSet
-trigger1 =  animelem = 9
+trigger1 = animelem = 9
 x = 0
 [State 0, PlayerPush]
 type = PlayerPush

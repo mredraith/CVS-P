@@ -930,7 +930,7 @@ ownPal = 1
 
 [State 1130, Auto Guard]
 type = ReversalDef
-trigger1 = AnimElemTime(3)  >= 0 && AnimElemTime(4) < 0
+trigger1 = AnimElemTime(3) >= 0 && AnimElemTime(4) < 0
 reversal.attr = SCA, NA, SA
 pauseTime = 12,12
 sparkNo = -1 + 0 * (var(33) := 8001)
@@ -2252,7 +2252,7 @@ x = .92
 
 [State 1600, HitDef]
 type = HitDef
-trigger1 = !var(16) &&  (var(15) < 1 || var(20))
+trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 4
 attr = S, SA
 hitFlag = MAF
@@ -2481,7 +2481,7 @@ channel = 1
 
 [State 1900, ReversalDef]
 type = ReversalDef
-trigger1 = AnimElemTime(2)  >= 0 && AnimElemTime(3) < 0
+trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(3) < 0
 attr = S, SA
 reversal.attr = SCA, NA, SA, HA
 pausetime = 0,36

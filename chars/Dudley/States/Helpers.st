@@ -2255,7 +2255,7 @@ trigger1 = !time && root, stateno = [1250,1270]
 anim = 3015
 ID = 3015
 pos = 0,-140
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = -1
 bindtime = -1
@@ -2277,7 +2277,7 @@ trigger1 = !time && root, stateno = 3010
 anim = 3015
 ID = 3015
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1
@@ -2299,7 +2299,7 @@ trigger1 = !time && root, stateno = 3100
 anim = 3015
 ID = 3015
 pos = 0,0
-postype = p1  ;p2,front,back,left,right
+postype = p1 ;p2,front,back,left,right
 facing = 1
 vfacing = 1
 bindtime = -1

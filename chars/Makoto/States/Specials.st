@@ -209,7 +209,7 @@ type = HitDef
 trigger1 = time = 0
 trigger1 = var(2) < 3
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = ceil(var(15)),1
 guardflag = M
@@ -223,7 +223,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -5.5
 air.velocity = -5.5,-4
@@ -240,7 +240,7 @@ type = HitDef
 trigger1 = time = 0
 trigger1 = var(2) >= 3
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = ceil(var(15)),4
 guardflag = M
@@ -254,7 +254,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -6,-6
 air.velocity = -6,-6
@@ -503,7 +503,7 @@ type = HitDef
 trigger1 = time = 0
 trigger1 = var(2) < 3
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = ceil(var(15)),1
 guardflag = M
@@ -517,7 +517,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -5.5
 air.velocity = -5.5,-4
@@ -534,7 +534,7 @@ type = HitDef
 trigger1 = time = 0
 trigger1 = var(2) >= 3
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = ceil(var(15)),4
 guardflag = M
@@ -548,7 +548,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -6,-6
 air.velocity = -6,-6
@@ -798,7 +798,7 @@ type = HitDef
 trigger1 = time = 0
 trigger1 = var(2) < 3
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = ceil(var(15)),1
 guardflag = M
@@ -812,7 +812,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -5.5
 air.velocity = -5.5,-4
@@ -829,7 +829,7 @@ type = HitDef
 trigger1 = time = 0
 trigger1 = var(2) >= 3
 attr = S, SA
-animtype  = hard
+animtype = hard
 air.animtype = back
 damage = ceil(var(15)),4
 guardflag = M
@@ -843,7 +843,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 12
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -6,-6
 air.velocity = -6,-6
@@ -889,7 +889,7 @@ value = 1030
 ;---------------------------------------------------------------------------
 ; Stop Hayate
 [Statedef 1030]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -911,7 +911,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Hayate Faint
 [Statedef 1035]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -933,7 +933,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Hayate Taunt
 [Statedef 1036]
-type    = S
+type = S
 movetype= I
 physics = S
 velset = 0,0
@@ -971,7 +971,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Light Fukiage
 [Statedef 1100]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1029,7 +1029,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = High
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2,-9
 air.velocity = -2,-9
@@ -1063,7 +1063,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Medium Fukiage
 [Statedef 1110]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1171,7 +1171,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = High
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2,-9
 air.velocity = -2,-9
@@ -1205,7 +1205,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Strong Fukiage
 [Statedef 1120]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1313,7 +1313,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = High
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2,-9
 air.velocity = -2,-9
@@ -1347,7 +1347,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Light Oroshi
 [Statedef 1200]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1397,7 +1397,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -6.5
 air.velocity = -2.5,10
@@ -1447,7 +1447,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Medium Oroshi
 [Statedef 1210]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1497,7 +1497,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -6.5
 air.velocity = -2.5,-10
@@ -1547,7 +1547,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Strong Oroshi
 [Statedef 1220]
-type    = S
+type = S
 movetype= A
 physics = S
 velset = 0,0
@@ -1597,7 +1597,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7305)**0
 ground.type = low
 ground.slidetime = 17
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1,5
 air.velocity = -2.5,-10
@@ -1647,10 +1647,10 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Light Tsurugi
 [Statedef 1300]
-type    = A
+type = A
 movetype= A
 physics = A
-juggle  = 2
+juggle = 2
 ctrl = 0
 anim = 1300
 sprpriority = 2
@@ -1721,7 +1721,7 @@ animtype = hard
 air.animtype = back
 ground.type = low
 ground.slidetime = 15
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -7
 air.velocity = -4,6
@@ -1746,10 +1746,10 @@ persistent = 0
 ;---------------------------------------------------------------------------
 ; Medium Tsurugi
 [Statedef 1310]
-type    = A
+type = A
 movetype= A
 physics = A
-juggle  = 2
+juggle = 2
 ctrl = 0
 anim = 1310
 sprpriority = 2
@@ -1820,7 +1820,7 @@ animtype = hard
 air.animtype = back
 ground.type = low
 ground.slidetime = 16
-ground.hittime  = 16
+ground.hittime = 16
 guard.hittime = (16) - 6
 ground.velocity = -7.5
 air.velocity = -4,6
@@ -1845,10 +1845,10 @@ persistent = 0
 ;---------------------------------------------------------------------------
 ; Strong Tsurugi
 [Statedef 1320]
-type    = A
+type = A
 movetype= A
 physics = A
-juggle  = 2
+juggle = 2
 ctrl = 0
 anim = 1320
 sprpriority = 2
@@ -1919,7 +1919,7 @@ animtype = hard
 air.animtype = back
 ground.type = low
 ground.slidetime = 16
-ground.hittime  = 16
+ground.hittime = 16
 guard.hittime = (16) - 6
 ground.velocity = -3,6
 air.velocity = -4,6
@@ -1944,10 +1944,10 @@ persistent = 0
 ;---------------------------------------------------------------------------
 ; Light Karakusa
 [Statedef 1400]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 1400
@@ -1991,10 +1991,10 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Medium Karakusa
 [Statedef 1405]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 1405
@@ -2038,10 +2038,10 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Strong Karakusa
 [Statedef 1410]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 1410
@@ -2085,7 +2085,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Karakusa Success
 [Statedef 1420]
-type    = S
+type = S
 movetype= A
 physics = N
 anim = 1420
@@ -2261,7 +2261,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; P2 Karakusa Custom State 1
 [Statedef 1430]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -2280,7 +2280,7 @@ value = 1430
 ;---------------------------------------------------------------------------
 ; P2 Karakusa Custom State 2
 [Statedef 1431]
-type    = S
+type = S
 movetype= H
 physics = N
 anim = 5011
@@ -2315,7 +2315,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; P2 Karakusa Custom State 3
 [Statedef 1432]
-type    = S
+type = S
 movetype= H
 physics = N
 velset = 0,0
@@ -2371,10 +2371,10 @@ ctrl = 0
 ;---------------------------------------------------------------------------
 ; Zero Counter
 [Statedef 1500]
-type    = S
+type = S
 movetype= A
 physics = S
-juggle  = 8
+juggle = 8
 poweradd= 0
 ctrl = 0
 velset = 0,0
@@ -2466,7 +2466,7 @@ type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
 animtype = Hard
-damage  = 57
+damage = 57
 guardflag = MA
 hitflag = MA
 pausetime = 12,12
@@ -2478,7 +2478,7 @@ guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7300)**0
 ground.type = Low
 ground.slidetime = 15
-ground.hittime  = 17
+ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -5.5
 air.velocity = -2.5,-4
@@ -2517,10 +2517,10 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ; Zero Counter
 [Statedef 1510]
-type    = C
+type = C
 movetype= A
 physics = C
-juggle  = 6
+juggle = 6
 poweradd= 0
 ctrl = 0
 anim = 420
@@ -2551,20 +2551,20 @@ volume = 255
 type = HitDef
 trigger1 = AnimElem = 4
 attr = C, NA
-damage    = 66
-animtype  = Hard
+damage = 66
+animtype = Hard
 hitflag = M
 guardflag = L
 pausetime = 12,12
 getpower = 36*!var(20)
 sparkno = -1 * (var(30):=7010)**0
 sparkxy = -10 + 0*(var(32):=90), var(33):=-15
-hitsound   = s2,2
+hitsound = s2,2
 guardsound = s6,0
 guard.sparkno = -1 * (var(31):=7300)**0
 ground.type = trip
 ground.slidetime = 12
-ground.hittime  = 15
+ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -2,-3
 air.velocity = -3,-4

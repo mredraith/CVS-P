@@ -1,6 +1,6 @@
 
 ; _________________________________________
-;| Elena by varo_hades                     |
+;| Elena by varo_hades |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
 ;SYSTEM STATES=
@@ -1634,7 +1634,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 
 [State 5210, Flash]
 type = PalFX
@@ -2515,7 +2515,7 @@ type = S
 moveType = I
 physics = S
 anim = 195
-velSet  = 0,0
+velSet = 0,0
 sprPriority = 1
 ctrl = 0
 

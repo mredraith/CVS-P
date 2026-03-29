@@ -1,5 +1,5 @@
 ; _________________________________________
-;| Saisyu Kusanagi by Lurker               |
+;| Saisyu Kusanagi by Lurker |
 ; 
 ;
 ;HELPER STATES=
@@ -3124,8 +3124,8 @@ trigger3 = Root, StateNo = 1470 && Root, AnimElem = 2
 
 [State 8150, End]
 type = DestroySelf
-trigger1 =  Root, StateNo = 3302 && Time >= 600 
-trigger2 =  Root, AnimElem = 2
+trigger1 = Root, StateNo = 3302 && Time >= 600 
+trigger2 = Root, AnimElem = 2
 
 [State 8150, End]
 type = DestroySelf

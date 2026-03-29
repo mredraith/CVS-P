@@ -1,5 +1,5 @@
 ; _______________________________________
-;| Maki Genryusai by Knuckles8864        |
+;| Maki Genryusai by Knuckles8864 |
 ; 
 ;
 ;SPECIAL MOVES
@@ -369,7 +369,7 @@ type = VarSet
 triggerAll = (!var(14) || AILevel)
 trigger1 = !AILevel && Time > 2 && p2Dist x >= 0 || p2Dist x <= 0
 ;command = "QCB"
-trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90010104)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) &&  NumExplod(90010006))
+trigger1 = (ifElse(P2dist x < 0, Facing = -1, Facing = 1) && NumExplod(90010104)) || (ifElse(P2dist x < 0, Facing = 1, Facing = -1) && NumExplod(90010006))
 ;a / b / c
 trigger1 = NumExplod(90000230) || NumExplod(90000235) || NumExplod(90000240) || NumExplod(90000245) || NumExplod(90000250) || NumExplod(90000255)
 trigger2 = AIlevel

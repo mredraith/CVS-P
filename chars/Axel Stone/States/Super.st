@@ -1,4 +1,4 @@
-;| Axel Stone by Testament             |
+;| Axel Stone by Testament |
 
 ;SCREW UPPER>=
 [StateDef 3000]
@@ -499,7 +499,7 @@ velSet = 0,0
 sprPriority = 1
 powerAdd = -2000
 faceP2 = 1
-juggle  = 4
+juggle = 4
 
 [State 1100, VelSet]
 type = VelSet
@@ -1459,10 +1459,10 @@ ctrl = 0
 
 ;--------------------------------------------------
 [Statedef 3102]
-type    = A
+type = A
 movetype= A
 physics = N
-juggle  = 0
+juggle = 0
 velset = 0,0
 anim = 3102
 ctrl = 0
@@ -1943,10 +1943,10 @@ ctrl = 0
 
 ;--------------------------------------------------
 [Statedef 3152]
-type    = A
+type = A
 movetype= A
 physics = N
-juggle  = 0
+juggle = 0
 velSet = 0,-9.5
 anim = 3152
 ctrl = 0

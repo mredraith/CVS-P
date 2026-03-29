@@ -1343,7 +1343,7 @@ trigger1 = Time >= 16
 ;JUNI FOR PSYCHO WHIRL=
 ;---Entrance---
 [Statedef 6200]
-type    = A
+type = A
 movetype = I
 physics = N
 ctrl = 0
@@ -1381,7 +1381,7 @@ value = 6201
 
 ;---Whirling---
 [Statedef 6201]
-type    = A
+type = A
 movetype = I
 physics = N
 ctrl = 0
@@ -1471,7 +1471,7 @@ value = 6203
 
 ;---Flip Back w/Juli---
 [Statedef 6202]
-type    = A
+type = A
 physics = N
 movetype = I
 anim = 6202
@@ -1501,7 +1501,7 @@ value = 6204
 
 ;---Flip Back w/o Juli---
 [Statedef 6203]
-type    = A
+type = A
 physics = N
 movetype = I
 anim = 6202
@@ -1531,7 +1531,7 @@ value = 6204
 
 ;---Land---
 [Statedef 6204]
-type    = S
+type = S
 physics = S
 movetype = I
 ctrl = 0
@@ -1572,7 +1572,7 @@ value = 6205
 
 ;---Dash Away---
 [Statedef 6205]
-type    = S
+type = S
 physics = S
 movetype = I
 ctrl = 0
@@ -1602,7 +1602,7 @@ trigger1 = !AnimTime
 ;WINPOSES/INTRO FOR JUNI=
 ;Standing state
 [Statedef 6250]
-type    = S
+type = S
 physics = N
 anim = 6250
 
@@ -1648,7 +1648,7 @@ anim = 6252
 [State 6252, Voice]
 type = PlaySnd
 trigger1 = AnimElemTime(1) = 2
-value  = 195,0
+value = 195,0
 channel = 1
 
 [State 6252, AssertSpecial]
@@ -1658,7 +1658,7 @@ flag = RoundNotOver
 
 ;Intro
 [Statedef 6291]
-type    = S
+type = S
 physics = S
 ctrl = 0
 anim = 6291
@@ -1680,7 +1680,7 @@ trigger1 = !AnimTime
 
 ;JUNI FOR DEATH CROSS DANCING=
 [Statedef 6300]
-type    = S
+type = S
 movetype = A
 physics = N
 ctrl = 0
@@ -1811,7 +1811,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -1861,7 +1861,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -1911,7 +1911,7 @@ fall.animtype = Back
 ground.type = High
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -1961,7 +1961,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -2011,7 +2011,7 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0
 air.velocity = 0, 0
@@ -2060,7 +2060,7 @@ fall.animtype = Up
 ground.type = High
 air.type = High
 ground.slidetime = 20
-ground.hittime  = 20
+ground.hittime = 20
 guard.hittime = (20) - 6
 ground.velocity = 0, - 10.5
 air.velocity = 0, -10.5
@@ -3940,7 +3940,7 @@ trigger1 = RoundState < 3
 ;CAMERA HELPER=
 ;Used for "Target Destroyed" winpose
 [Statedef 8998]
-type    = A
+type = A
 movetype= I
 physics = N
 anim = 1

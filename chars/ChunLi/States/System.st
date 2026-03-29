@@ -6,7 +6,7 @@
 ;
 
 ; _________________________________________
-;| Chun-Li by Jmorphman                    |
+;| Chun-Li by Jmorphman |
 ; 
 ;
 ;SYSTEM STATES=
@@ -2476,13 +2476,13 @@ value = 196
 type = ChangeState
 triggerAll = var(40) != 1
 triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
-trigger1 = Enemy, Name = "cvsgouki" || Enemy, Name = "Akuma" || Enemy, Name = "Gouki" || Enemy, Name = "Shin Akuma" || Enemy, Name = "Shin Gouki" || Enemy, Name = "Rare Akuma" || Enemy, Name = "cvsgouki_normal" || Enemy, Name = "cvsgouki_ex" || Enemy, Name = "Mech Gouki"  || Enemy, Name = "Mech Akuma" || Enemy, Name = "Gouki by M.M.R." || Enemy, Name = "SF3Gouki" || Enemy, Name = "svcgouki" || Enemy, Name = "Shin Gouki SF'2" || Enemy, Name = "Tin's S_Gouki" || Enemy, Name = "Pocket Shin Gouki" || Enemy, Name = "SF3Gouki" || Enemy, Name = "Gouki_Cota" || Enemy, Name = "Eternity of Heroes: Gouki" || Enemy, Name = "Gouki Lv2" ||  Enemy, Name = "MvC-EoH Gouki" || Enemy, Name = "SHINJIN GOUKI"
+trigger1 = Enemy, Name = "cvsgouki" || Enemy, Name = "Akuma" || Enemy, Name = "Gouki" || Enemy, Name = "Shin Akuma" || Enemy, Name = "Shin Gouki" || Enemy, Name = "Rare Akuma" || Enemy, Name = "cvsgouki_normal" || Enemy, Name = "cvsgouki_ex" || Enemy, Name = "Mech Gouki" || Enemy, Name = "Mech Akuma" || Enemy, Name = "Gouki by M.M.R." || Enemy, Name = "SF3Gouki" || Enemy, Name = "svcgouki" || Enemy, Name = "Shin Gouki SF'2" || Enemy, Name = "Tin's S_Gouki" || Enemy, Name = "Pocket Shin Gouki" || Enemy, Name = "SF3Gouki" || Enemy, Name = "Gouki_Cota" || Enemy, Name = "Eternity of Heroes: Gouki" || Enemy, Name = "Gouki Lv2" || Enemy, Name = "MvC-EoH Gouki" || Enemy, Name = "SHINJIN GOUKI"
 trigger2 = Enemy, Name = "cvsbalrog" || Enemy, Name = "Balrog"
 trigger3 = Enemy, Name = "cvsvega" || Enemy, Name = "Vega" || Enemy, Name = "SVCVEGA" || Enemy, Name = "cvsvega_normal" || Enemy, Name = "cvsvega_ex"
-trigger4 = Enemy, Name = "cvsbison" || Enemy, Name = "Bison" || Enemy, Name = "M Bison" || Enemy, Name = "M. Bison" || Enemy, Name = "M.Bison" || Enemy, Name = "Bison Bison" || Enemy, Name = "svc m.bison" || Enemy, Name = "M,bison" || Enemy, Name = "vega_mx" || Enemy, Name = "CvSBison" ||  Enemy, Name = "SSF2HD_Bison"
+trigger4 = Enemy, Name = "cvsbison" || Enemy, Name = "Bison" || Enemy, Name = "M Bison" || Enemy, Name = "M. Bison" || Enemy, Name = "M.Bison" || Enemy, Name = "Bison Bison" || Enemy, Name = "svc m.bison" || Enemy, Name = "M,bison" || Enemy, Name = "vega_mx" || Enemy, Name = "CvSBison" || Enemy, Name = "SSF2HD_Bison"
 trigger5 = Enemy, Name = "cvsrolento" || Enemy, Name = "Rolento" || Enemy, Name = "Rolento Schugerg"
 trigger6 = Enemy, Name = "cvsbalrog" || Enemy, Name = "cvsbison" || Enemy, Name = "Balrog" || Enemy, Name = "Balrog by M.M.R."
-trigger7 = Enemy, Name = "cvsgeese" || Enemy, Name = "Geese" || Enemy, Name = "Geese Howard" || Enemy, Name = "cvsgeese_normal" || Enemy, Name = "cvsgeese_ex" || Enemy, Name = "Nightmare Geese" || Enemy, Name = "Geese_WLS" ||  Enemy, Name = "Geese B Howard" || Enemy, Name = "DGeese" || Enemy, Name = "geese_mmx" || Enemy, Name = "Crazy Laughing Geese" || Enemy, Name = "Mini_Geese"
+trigger7 = Enemy, Name = "cvsgeese" || Enemy, Name = "Geese" || Enemy, Name = "Geese Howard" || Enemy, Name = "cvsgeese_normal" || Enemy, Name = "cvsgeese_ex" || Enemy, Name = "Nightmare Geese" || Enemy, Name = "Geese_WLS" || Enemy, Name = "Geese B Howard" || Enemy, Name = "DGeese" || Enemy, Name = "geese_mmx" || Enemy, Name = "Crazy Laughing Geese" || Enemy, Name = "Mini_Geese"
 trigger8 = Enemy, Name = "cvsiori" || Enemy, Name = "Iori" || Enemy, Name = "Iori Yagami" || Enemy, Name = "Orochi Iori" || Enemy, Name = "Iori_WLS" || Enemy, Name = "N.Iori_WLS" || Enemy, Name = "O.Iori_WLS" || Enemy, Name = "IoriMG" || Enemy, Name = "cvsiori_normal" || Enemy, Name = "iori_ex"
 trigger9 = Enemy, Name = "cvsraiden" || Enemy, Name = "Raiden"
 trigger10 = Enemy, Name = "cvsrugal" || Enemy, Name = "Rugal" || Enemy, Name = "Rugal Bernstein" || Enemy, Name = "cvsrugal_normal" || Enemy, Name = "cvsrugal_ex" || Enemy, Name = "God Rugal" || Enemy, Name = "Omega Rugal" || Enemy, Name = "Tin G_rugal" || Enemy, Name = "Tin 2002_rugal" || Enemy, Name = "cvsg_rugal" || Enemy, Name = "omega rugal98" || Enemy, Name = "Rugal_TLE" || Enemy, Name = "Rugal94(BOSS)" || Enemy, Name = "rugal94" || Enemy, Name = "Mech Rugal" || Enemy, Name = "rugal_B" || Enemy, Name = "Rugal_TLE" || Enemy, Name = "Omega Rugal Gb" || Enemy, Name = "D-Rugal" || Enemy, Name = "Rugal CvS" || Enemy, Name = "omega-rugal" || Enemy, Name = "Rugal.B" || Enemy, Name = "Rugal B." || Enemy, Name = "Rugal_E" || Enemy, Name = "Rugal Berstein"
@@ -2510,7 +2510,7 @@ trigger31 = Enemy, Name = "Clone Kyo"
 trigger32 = Enemy, Name = "Demitri" || Enemy, Name = "Demitri Maximoff" || Enemy, Name = "Demitri Maximov" || Enemy, Name = "Demitri(DS)"
 trigger33 = Enemy, Name = "Devo"
 trigger34 = Enemy, Name = "Devil Gundam"
-trigger35 = Enemy, Name = "Dio Brando" || Enemy, Name = "Dio"  || Enemy, Name = "Shadow Dio" || Enemy, Name = "Final Dio" || Enemy, Name = "DIO-ShadowFace" || Enemy, Name = "?????"
+trigger35 = Enemy, Name = "Dio Brando" || Enemy, Name = "Dio" || Enemy, Name = "Shadow Dio" || Enemy, Name = "Final Dio" || Enemy, Name = "DIO-ShadowFace" || Enemy, Name = "?????"
 trigger36 = Enemy, Name = "Dr. Doom By {_Carnificina_}" || Enemy, Name = "Dr. Doom" || Enemy, Name = "Dr.Doom" || Enemy, Name = "Doctor Doom" || Enemy, Name = "DoctorDoom" || Enemy, Name = "MvC2 Doom by Kamekaze" || Enemy, Name = "Dr. Doom by WhiteMagic2002"
 trigger37 = Enemy, Name = "Venom"
 trigger38 = Enemy, Name = "Foxy"
@@ -2560,7 +2560,7 @@ trigger81 = Enemy, Name = "Ogre"
 trigger82 = Enemy, Name = "Omega Red"
 trigger83 = Enemy, Name = "Oni Chizuru"
 trigger84 = Enemy, Name = "Onslaught"
-trigger85 = Enemy, Name = "Original Zero" || Enemy, Name = "O. Zero" || Enemy, Name = "O.Zero" || (Enemy, Name = "Zero" && Enemy, AuthorName != "N64Mario") || Enemy, Name = "Clone Zero" || Enemy, Name = "C. Zero"  || Enemy, Name = "C.Zero" || Enemy, Name = "Zero By Third"
+trigger85 = Enemy, Name = "Original Zero" || Enemy, Name = "O. Zero" || Enemy, Name = "O.Zero" || (Enemy, Name = "Zero" && Enemy, AuthorName != "N64Mario") || Enemy, Name = "Clone Zero" || Enemy, Name = "C. Zero" || Enemy, Name = "C.Zero" || Enemy, Name = "Zero By Third"
 trigger86 = Enemy, Name = "Orochi" || Enemy, Name = "Orochi Rebirth" || Enemy, Name = "God Orochi" || Enemy, Name = "Mithra" || enemy, name = "Mizuchi"
 trigger87 = Enemy, Name = "Pet Shop" || Enemy, Name = "PetShop"
 trigger88 = Enemy, Name = "Pyron"
@@ -2606,7 +2606,7 @@ trigger127 = Enemy, Name = "Shao Kahn" || Enemy, Name = "shaokahn"
 trigger128 = Enemy, Name = "Galactus"
 trigger129 = Enemy, Name = "Kishima_Kouma" || Enemy, Name = "Kouma Kishima"
 trigger130 = Enemy, Name = "Deadpool"
-trigger131 = Enemy, Name = "Saiki" ||  Enemy, Name = "KOF XIII Saiki" || Enemy, Name = "SAIKI" || Enemy, Name = "H-SaikiXIII" || Enemy, Name = "KOF XIII True Saiki"
+trigger131 = Enemy, Name = "Saiki" || Enemy, Name = "KOF XIII Saiki" || Enemy, Name = "SAIKI" || Enemy, Name = "H-SaikiXIII" || Enemy, Name = "KOF XIII True Saiki"
 trigger132 = Enemy, Name = "Nyx"
 trigger133 = Enemy, Name = "Hitoshura" || Enemy, Name = "Hiitoshura"
 trigger134 = Enemy, Name = "Mr. X"
@@ -2622,7 +2622,7 @@ trigger143 = Enemy, Name = "Piccolo Daimao"
 trigger144 = Enemy, Name = "Suave Dude"
 trigger145 = Enemy, Name = "Carnage"
 trigger146 = Enemy, Name = "Asura"
-trigger147 = Enemy, Name = "Captain Ginyu" || Enemy, Name = "Ginew by Kuririn" ||  Enemy, Name = "Ginew"
+trigger147 = Enemy, Name = "Captain Ginyu" || Enemy, Name = "Ginew by Kuririn" || Enemy, Name = "Ginew"
 trigger148 = Enemy, Name = "Raditz"
 trigger149 = Enemy, Name = "Bardock"
 trigger150 = Enemy, Name = "Turles"
@@ -2656,7 +2656,7 @@ trigger177 = Enemy, Name = "Lucifeller"
 trigger178 = Enemy, Name = "CROCOMIRE" || Enemy, Name = "INFINITY PHALANX" || Enemy, Name = "SOMULO"
 trigger179 = Enemy, Name = "Freddy Krugger" || Enemy, Name = "Freddy Krueger"
 trigger180 = Enemy, Name = "elque" || Enemy, Name = "elque_edit"
-trigger181 = Enemy, Name = "B-Flan"  ;Bloody Flandre
+trigger181 = Enemy, Name = "B-Flan" ;Bloody Flandre
 trigger182 = Enemy, Name = "Makai_stage"
 trigger183 = Enemy, Name = "Albiole"
 trigger184 = Enemy, Name = "Raziel"
@@ -3853,7 +3853,7 @@ value = 5050
 ;sys::-2::goto-dizzy_s/c
 [state 0] ;[.03-2d1]
 	type=selfstate
-	trigger1=(stateno=5001 || stateno=5011) && hitover     && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+	trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
 	trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
 	value=195201 ;; (goto-dizzy:190116)
 ;sys::-2::goto-dizzy_a/l
