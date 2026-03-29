@@ -108,7 +108,7 @@ Evil Ryu, random, order=3, previous=d, next=w
 Funny Ryu, random, order=5, previous=d, next=w, select=/s+a
 }
 slot = {
-bison, random, order=2, previous=d, next=w
+Dictator, random, order=2, previous=d, next=w
 Final Bison, random, order=5, previous=d, next=w, select=/s+a
 }
 sagat, random, order=1
@@ -132,7 +132,7 @@ Yashiro, random, order=1
 ; break
 Twelve, random, order=1
 Violent Ken, random, order=3
-Vega, random, order=2
+Claw, random, order=2
 slot = {
 akuma, random, order=3, previous=d, next=w
 Shin Akuma, random, order=5, previous=d, next=w, select=/s+a
@@ -151,7 +151,7 @@ Angel, random, order=1
 ; break
 Remy, random, order=1
 seth, random, order=2
-balrog, random, order=2
+Boxer, random, order=2
 Dee Jay, random, order=1
 Urien, random, order=2
 hayato, random, order=1

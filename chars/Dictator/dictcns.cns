@@ -1,0 +1,120 @@
+; _______________________________
+;| Vega by Phantom.of.the.Server |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;===================<CONSTANTS>================
+
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+dizzypoints = 950
+guardpoints = 1000
+fall.defence_up = 50
+liedown.time = 20
+airjuggle = 15
+sparkno = 2
+guard.sparkno = 40
+hitsound.channel = 2
+guardsound.channel = 2
+KO.echo = 0
+volumescale = 100
+intpersistindex = 0
+floatpersistindex = 0
+
+[Size]
+xscale = 1
+yscale = 1
+ground.back = 20
+ground.front = 20
+air.back = 20
+air.front = 20
+height = 58
+height.crouch = 58
+height.air = 58, 0
+height.down = 58
+attack.dist = 160
+proj.attack.dist = 80
+proj.doscale = 0
+head.pos = 6, -90
+mid.pos = -1, -57
+shadowoffset = 0
+draw.offset = 0, 0
+
+[Velocity]
+walk.fwd = 4.10
+walk.back = -3.07
+run.fwd = 6.45, 0
+run.back = -13.2, 0
+jump.neu = 0, -10.40
+jump.fwd = 4.12
+jump.back = -4.81
+runjump.fwd = 6.18, -11.96
+runjump.back = -7.22, -11.96
+air.gethit.groundrecover = -8.0, 0
+air.gethit.airrecover.mul = 0, 0
+air.gethit.airrecover.add = 0, -7.55
+air.gethit.airrecover.back = -3.50
+air.gethit.airrecover.fwd = 3.50
+air.gethit.airrecover.up = 0
+air.gethit.airrecover.down = 0
+
+[Movement]
+airjump.num = 0
+airjump.height = 0
+yaccel = 0.547
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundlevel = 0
+air.gethit.groundrecover.ground.threshold = -32
+air.gethit.groundrecover.groundlevel = 0
+air.gethit.airrecover.threshold = -1
+air.gethit.airrecover.yaccel = 0.6275
+air.gethit.trip.groundlevel = 0
+down.bounce.offset = 0, 0
+down.bounce.yaccel = 0.5
+down.bounce.groundlevel = 0
+down.friction.threshold = 2.0
+
+[Constants]
+default.ignoredefeatedenemies = 0
+super.targetdefencemul = 1.0
+default.lifetodizzypointsmul = 0
+super.lifetodizzypointsmul = 0
+;input.pauseonhitpause = 0; not necessary with current input code
+animtagenteringscreen = 5600
+animtagleavingscreen = 5610
+
+[Quotes]
+; The imported ones are not necessarily accurate
+; SFA1
+victory1 = "You were almost entertaining."
+; SFA3
+victory2 = "Fear and respect the supreme might of my Psycho Power!"
+victory3 = "I'm happy you survived... You're still capable of feeling pain!"
+victory4 = "If you wish to live, make your vow of servitude to me..."
+victory5 = "My every victory signifies the crumbling of justice!"
+victory6 = "The feelings of terror only prove your inferiority."
+victory7 = "What strikes horror into your heart... is simply humor to me."
+; SF4
+victory8 = "You failed to stave off my boredom."
+victory9 = "Don't try to stand. There is nothing more you can do."
+; SSF4
+victory10 = "Kneel before me or die beneath my heel!"
+victory11 = "Pledge your allegiance to Shadaloo and I will let you live."
+; SF5
+victory12 = "At the limits of despair, death is the only respite!"
+; CvS
+victory13 = "Foolish weakling! Know your limits!"
+; CFJ
+victory14 = "Go ahead. Beg for your life. Perhaps I will take pity on you."
+victory15 = "Ready to surrender? Pledge your allegiance to me or meet your destruction."
+victory16 = "Fighting you has brought me pleasure. As your reward, I'll let you live."
+; Original
+victory17 = "All hope fades in the face of true power."
+victory18 = "Your defeat was merely a demonstration of my superiority."
+victory19 = "Be grateful that you witnessed my Psycho Power firsthand!"
+victory20 = "I expected nothing more from someone so insignificant."
+victory21 = "You will learn that resistance only prolongs your suffering."

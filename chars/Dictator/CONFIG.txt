@@ -1,0 +1,50 @@
+; _______________________________
+;| Vega by Phantom.of.the.Server |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;==============================================================================================
+;==================================< CONFIGURATION FILE >======================================
+;==============================================================================================
+
+;==============================================================================================
+[Statedef 5901];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
+type = S;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+[State 5901, Var];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+type = null;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+
+
+
+;---------------------------------------- HIT SPARKS ------------------------------------------
+;Adjust the number below to select which set of hit sparks to use
+;0 - Screenpack sparks
+;1 - Custom sparks type Geese
+;2 - Custom sparks type Nakoruru
+
+trigger1 = pi || map(cfg_sparks) := 2
+
+
+
+;--------------------------------------- SUPER PAUSES -----------------------------------------
+;Set the number below to 1 for custom effects, or 0 to use your screenpack's effects
+
+trigger1 = pi || map(cfg_superfx) := 1
+
+
+
+;-------------------------------------- VICTORY CAMERA ----------------------------------------
+;Set the number below to 1 to zoom in on the character during win poses
+
+trigger1 = pi || map(cfg_winzoom) := 1
+
+
+
+;-------------------------------------- VICTORY MUSIC -----------------------------------------
+;Set the number below to 1 to play a character-specific music during the victory screen
+
+trigger1 = pi || map(cfg_victorybgm) := 1
+
+
+
+[State 5901, End];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+type = changestate;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
+trigger1 = 1;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
+value = 5902;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N

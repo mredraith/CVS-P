@@ -1,0 +1,99 @@
+; _______________________________________
+;| Geese Howard by Phantom.of.the.Server |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<CONSTANTS>====================
+
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+dizzypoints = 1050
+guardpoints = 1000
+fall.defence_up = 50
+liedown.time = 20
+airjuggle = 15
+sparkno = 2
+guard.sparkno = 40
+hitsound.channel = 2
+guardsound.channel = 2
+KO.echo = 0
+volumescale = 100
+intpersistindex = 0
+floatpersistindex = 0
+
+[Size]
+xscale = 1
+yscale = 1
+ground.back = 17
+ground.front = 17
+air.back = 17
+air.front = 17
+height = 65
+height.crouch = 65
+height.air = 65, 0
+height.down = 65
+attack.dist = 160
+proj.attack.dist = 80
+proj.doscale = 0
+head.pos = -6, -101
+mid.pos = -2, -65
+shadowoffset = 0
+draw.offset = 0, 0
+
+[Velocity]
+walk.fwd = 2.52
+walk.back = -2.10
+run.fwd = 5.05, 0
+run.back = -3.7165, 0
+jump.neu = 0, -10.566
+jump.fwd = 3.334
+jump.back = -4.026
+runjump.fwd = 5.000, -12.151
+runjump.back = -6.038, -12.151
+air.gethit.groundrecover = -8.0, 0
+air.gethit.airrecover.mul = 0, 0
+air.gethit.airrecover.add = 0, -7.55
+air.gethit.airrecover.back = -3.50
+air.gethit.airrecover.fwd = 3.50
+air.gethit.airrecover.up = 0
+air.gethit.airrecover.down = 0
+
+[Movement]
+airjump.num = 0
+airjump.height = 0
+yaccel = 0.528
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundlevel = 0
+air.gethit.groundrecover.ground.threshold = -32
+air.gethit.groundrecover.groundlevel = 0
+air.gethit.airrecover.threshold = -1
+air.gethit.airrecover.yaccel = 0.6275
+air.gethit.trip.groundlevel = 0
+down.bounce.offset = 0, 0
+down.bounce.yaccel = 0.5
+down.bounce.groundlevel = 0
+down.friction.threshold = 2.0
+
+[Constants]
+default.ignoredefeatedenemies = 0
+super.targetdefencemul = 1.0
+default.lifetodizzypointsmul = 0
+super.lifetodizzypointsmul = 0
+;input.pauseonhitpause = 0; not necessary with current input code
+animtagenteringscreen = 5600
+animtagleavingscreen = 5610
+
+[Quotes]
+victory1 = "Hmph. Predictable."
+victory2 = "Fighting like that won't take you anywhere."
+victory3 = "Scum like you should know its place."
+victory4 = "You should be honoured. I'll kill you myself!"
+victory5 = "Slavery or death... those are your options!"
+victory6 = "How does it feel like to be ruled by overwhelming power?"
+victory7 = "Your efforts were but a fleeting challenge."
+victory8 = "My fists speak the universal language of dominance."
+victory9 = "Learn your place in this world: beneath my heel."
