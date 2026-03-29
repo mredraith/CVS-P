@@ -1,11 +1,11 @@
 ; _______________________________________
 ;| Geese Howard by Phantom.of.the.Server |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;=======================================<SYSTEM STATES>========================================
-;==============================================================================================
+;==
+;=SYSTEM STATES==
+;==
 
-;====================<STANDING>====================
+;==STANDING==
 [Statedef 0]
 type = S
 physics = S
@@ -38,7 +38,7 @@ trigger1 = time > 0
 value = 5040
 
 
-;====================<CROUCHING>====================
+;==CROUCHING==
 [Statedef 10]
 type = C
 physics = C
@@ -111,7 +111,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====================<WALKING>====================
+;==WALKING==
 [Statedef 20]
 type = S
 physics = S
@@ -149,7 +149,7 @@ trigger3 = !animtime
 value = 21
 
 
-;====================<JUMPING>====================
+;==JUMPING==
 ;----- JUMP START -----
 [Statedef 40]
 type = S
@@ -420,7 +420,7 @@ value = 0
 ctrl = 1
 
 
-;======================<RUN>===========================
+;==RUN=
 [Statedef 100]
 type = S
 physics = N
@@ -516,7 +516,7 @@ value = ifelse(command = "holddown", 10, 0)
 ctrl = 1
 
 
-;======================<DASH>===========================
+;==DASH=
 [Statedef 102]
 type = S
 physics = N
@@ -610,7 +610,7 @@ value = 0
 ctrl = 1
 
 
-;========================<BACK DASH>==========================
+;==BACK DASH==
 [Statedef 105]
 type = A
 physics = N
@@ -691,7 +691,7 @@ value = 0
 ctrl = 1
 
 
-;====================<DODGE>====================
+;==DODGE==
 [Statedef 700]
 type = S
 physics = S
@@ -769,7 +769,7 @@ value = 0
 ctrl = 1
 
 
-;====================<ROLL>====================
+;==ROLL==
 ;----- Forward -----
 [Statedef 710]
 type = S
@@ -877,7 +877,7 @@ value = 0
 ctrl = 1
 
 
-;==========<POWER CHARGE>==========
+;==POWER CHARGE==
 [Statedef 730]
 type = S
 physics = S
@@ -978,7 +978,7 @@ value = 0
 ctrl = 1
 
 
-;====================<GUARD CANCEL>====================
+;==GUARD CANCEL==
 [Statedef 750]
 type = S
 physics = S
@@ -1062,7 +1062,7 @@ trigger1 = time >= 15
 value = ifelse(map(strength) = 1, 2910, 2900)
 
 
-;====================<PARRY>====================
+;==PARRY==
 ;----- STANDING -----
 [Statedef 760]
 type = S
@@ -1498,7 +1498,7 @@ trigger1 = root, stateno = [760, 762]
 trigger2 = time >= 2
 
 
-;====================<CUSTOM COMBO>====================
+;==CUSTOM COMBO==
 ;----- GROUND -----
 [Statedef 900]
 type = S
@@ -1674,7 +1674,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;==========<FALL RECOVERY>==========
+;==FALL RECOVERY==
 [Statedef 5200]
 type = A
 physics = N
@@ -1868,7 +1868,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;========================<GUARD>========================
+;==GUARD==
 ;----- START -----
 [Statedef 120]
 type = U
@@ -2502,7 +2502,7 @@ trigger1 = sysvar(0)
 value = 52
 
 
-;====================<LOSE>====================
+;==LOSE==
 [Statedef 170]
 type = S
 ctrl = 0
@@ -2522,7 +2522,7 @@ channel = 0
 volumescale = 75
 
 
-;====================<DRAW GAME>====================
+;==DRAW GAME==
 [Statedef 175]
 type = S
 ctrl = 0
@@ -2534,7 +2534,7 @@ trigger1 = 1
 value = 170
 
 
-;====================<CONTINUE?>====================
+;==CONTINUE?==
 [Statedef 5500]
 type = S
 anim = 5300
@@ -2547,7 +2547,7 @@ trigger1 = !time
 value = 5500
 
 
-;====================<INITIALIZE>====================
+;==INITIALIZE==
 ;----- Before Config -----
 [Statedef 5900]
 type = S
@@ -2647,7 +2647,7 @@ trigger1 = 1
 value = 0
 
 
-;====================<INTRO 1>====================
+;==INTRO 1==
 [Statedef 190]
 type = S
 physics = S
@@ -2675,7 +2675,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====================<INTRO 2>====================
+;==INTRO 2==
 [Statedef 191]
 type = S
 physics = S
@@ -2718,7 +2718,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====================<TURNS INTRO>====================
+;==TURNS INTRO==
 [Statedef 6900]
 type = A
 anim = 6900
@@ -2826,7 +2826,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====================<INTRO vs TERRY>====================
+;==INTRO vs TERRY==
 [Statedef 6910]
 type = S
 physics = S
@@ -2849,7 +2849,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====================<INTRO vs ROCK>====================
+;==INTRO vs ROCK==
 [Statedef 6911]
 type = S
 physics = S
@@ -2878,7 +2878,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====================<INTRO vs VEGA>====================
+;==INTRO vs VEGA==
 [Statedef 6912]
 type = S
 physics = S
@@ -2924,7 +2924,7 @@ trigger1 = !animtime
 value = 0
 
 
-;====================<WIN POSE DECIDER>====================
+;==WIN POSE DECIDER==
 [Statedef 180]
 type = S
 ctrl = 0
@@ -2968,7 +2968,7 @@ trigger1 = 1
 value = 181 + (random % 4)
 
 
-;====================<WIN 1>====================
+;==WIN 1==
 [Statedef 181]
 type = S
 physics = S
@@ -2988,7 +2988,7 @@ value = 6, 1
 channel = 0
 
 
-;====================<WIN 2>====================
+;==WIN 2==
 [Statedef 182]
 type = S
 physics = S
@@ -3015,7 +3015,7 @@ value = 6, ifelse(random < 333, 0, ifelse(random < 500, 20, 21))
 channel = 0
 
 
-;====================<WIN 3>====================
+;==WIN 3==
 [Statedef 183]
 type = S
 physics = S
@@ -3042,7 +3042,7 @@ value = 1, 2
 volumescale = 67
 
 
-;====================<WIN 4>====================
+;==WIN 4==
 [Statedef 184]
 type = S
 physics = S
@@ -3062,7 +3062,7 @@ value = 6, 9
 channel = 0
 
 
-;====================<WIN NIGHTMARE>====================
+;==WIN NIGHTMARE==
 [Statedef 6913]
 type = S
 physics = S
@@ -3082,7 +3082,7 @@ value = 6, 13
 channel = 0
 
 
-;====================<TAUNT>====================
+;==TAUNT==
 [Statedef 195]
 type = S
 physics = S
@@ -3119,7 +3119,7 @@ value = 0
 ctrl = 1
 
 
-;====================<K.O.>====================
+;==K.O.==
 [Statedef 5150]
 type = L
 physics = N
@@ -3171,7 +3171,7 @@ value = SCA
 time = 1
 
 
-;====================<CHEAP K.O.>====================
+;==CHEAP K.O.==
 [Statedef 5950]
 type = S
 movetype = H
@@ -3233,7 +3233,7 @@ trigger1 = !animtime
 value = ifelse(alive, 5110, 5150)
 
 
-;========================<TARGET OTG OVERRIDE>========================
+;==TARGET OTG OVERRIDE==
 [Statedef 1115080]
 type = L
 physics = N
@@ -3273,9 +3273,9 @@ trigger1 = time >= 18
 value = 5110
 
 
-;==================================================================================================
-;===========================================<STATE -2>=============================================
-;==================================================================================================
+;==
+;=STATE -2=
+;==
 [Statedef -2]
 
 [State -2, Juggle Increase]
@@ -3592,9 +3592,9 @@ channel = 0
 ;ignorehitpause = 1
 
 
-;==================================================================================================
-;===========================================<STATE -3>=============================================
-;==================================================================================================
+;==
+;=STATE -3=
+;==
 [Statedef -3]
 
 [State -3, ProjContact Reset]
@@ -4149,9 +4149,9 @@ trigger1 = p2, stateowner, playerno = playerno
 value = 5040
 
 
-;==================================================================================================
-;===========================================<STATE -4>=============================================
-;==================================================================================================
+;==
+;=STATE -4=
+;==
 [Statedef -4]
 
 [State -4, Helper Damage Scaling - Update Root]

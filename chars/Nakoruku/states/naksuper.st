@@ -1,11 +1,11 @@
 ; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;========================================<SUPER STATES>========================================
-;==============================================================================================
+;==
+;==SUPER STATES==
+;==
 
-;======================<ELERUSH KAMUI RIMSE>=============================
+;==ELERUSH KAMUI RIMSE=
 [Statedef 3000]
 type = A
 physics = N
@@ -669,7 +669,7 @@ value = 0
 ctrl = 1
 
 
-;======================<SHICHIKAPU KAMUI IRUSHIKA>=============================
+;==SHICHIKAPU KAMUI IRUSHIKA=
 [Statedef 3100]
 type = S
 physics = S
@@ -806,7 +806,7 @@ value = 0
 ctrl = 1
 
 
-;======================<SHIRIKORO KAMUI NOMI>=============================
+;==SHIRIKORO KAMUI NOMI=
 [Statedef 3200]
 type = S
 physics = S
@@ -983,7 +983,7 @@ value = 0
 ctrl = 1
 
 
-;======================<IRUSUKA YATORO LISE>=============================
+;==IRUSUKA YATORO LISE=
 [Statedef 3300]
 type = S
 physics = S
@@ -1118,7 +1118,7 @@ value = 0
 ctrl = 1
 
 
-;======================<GANSO LELA MUTSUBE>=============================
+;==GANSO LELA MUTSUBE=
 [Statedef 3400]
 type = S
 physics = N
@@ -1635,7 +1635,7 @@ trigger1 = pos y > -vel y
 value = 3401
 
 
-;======================<APEFUCHI KAMUI RIMSE>=============================
+;==APEFUCHI KAMUI RIMSE=
 [Statedef 3500]
 type = S
 physics = N
@@ -2008,7 +2008,7 @@ value = 0
 ctrl = 1
 
 
-;======================<SUICIDE>=============================
+;==SUICIDE=
 [Statedef 4000]
 type = S
 physics = S
@@ -2089,7 +2089,7 @@ trigger1 = time >= 90
 value = 5150
 
 
-;======================<ZETSUMEI OUGI>=============================
+;==ZETSUMEI OUGI=
 [Statedef 4100]
 type = S
 physics = N

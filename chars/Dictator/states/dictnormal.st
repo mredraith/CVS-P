@@ -1,11 +1,11 @@
 ; _______________________________
 ;| Vega by Phantom.of.the.Server |
 ; 
-;============================================================================================
-;=====================================<NORMAL STATES>========================================
-;============================================================================================
+;==
+;=NORMAL STATES==
+;==
 
-;=======================<Standing Far Light Punch>========================
+;=Standing Far Light Punch==
 [Statedef 200]
 type = S
 movetype = A
@@ -90,8 +90,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 12; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 12; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 12
+guard.hittime = (1 + 12) - 6
 ground.slidetime = 12
 ground.velocity = ifelse(map(customcombo), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0
@@ -132,7 +132,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Close Light Punch>========================
+;=Standing Close Light Punch==
 [Statedef 201]
 type = S
 movetype = A
@@ -217,8 +217,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 12; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 12; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 12
+guard.hittime = (1 + 12) - 6
 ground.slidetime = 12
 ground.velocity = ifelse(map(customcombo), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0
@@ -259,7 +259,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Far Medium Punch>========================
+;=Standing Far Medium Punch==
 [Statedef 210]
 type = S
 movetype = A
@@ -344,8 +344,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 15; + 3 * map(counterhit_buffer)
-guard.hittime = (1 + 15; + 3 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 15
+guard.hittime = (1 + 15) - 6
 ground.slidetime = 15
 ground.velocity = ifelse(map(customcombo), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0
@@ -386,7 +386,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Close Medium Punch>========================
+;=Standing Close Medium Punch==
 [Statedef 211]
 type = S
 movetype = A
@@ -471,8 +471,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 15; + 3 * map(counterhit_buffer)
-guard.hittime = (1 + 15; + 3 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 15
+guard.hittime = (1 + 15) - 6
 ground.slidetime = 15
 ground.velocity = ifelse(map(customcombo), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0
@@ -513,7 +513,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Far Hard Punch>========================
+;=Standing Far Hard Punch==
 [Statedef 220]
 type = S
 movetype = A
@@ -598,8 +598,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(map(customcombo), -5.77, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -640,7 +640,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Close Hard Punch>========================
+;=Standing Close Hard Punch==
 [Statedef 221]
 type = S
 movetype = A
@@ -725,8 +725,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(map(customcombo), -5.77, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -778,7 +778,7 @@ value = 0
 ctrl = 1
 
 
-;======================<Psycho Banish>=============================
+;==Psycho Banish=
 [Statedef 225]
 type = S
 physics = S
@@ -873,8 +873,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(map(customcombo), -5.77, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -916,7 +916,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Far Light Kick>========================
+;=Standing Far Light Kick==
 [Statedef 230]
 type = S
 movetype = A
@@ -981,8 +981,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 12; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 12; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 12
+guard.hittime = (1 + 12) - 6
 ground.slidetime = 12
 ground.velocity = ifelse(map(customcombo), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0
@@ -1013,7 +1013,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Close Light Kick>========================
+;=Standing Close Light Kick==
 [Statedef 231]
 type = S
 movetype = A
@@ -1078,8 +1078,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 12; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 12; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 12
+guard.hittime = (1 + 12) - 6
 ground.slidetime = 12
 ground.velocity = ifelse(map(customcombo), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0
@@ -1120,7 +1120,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Far Medium Kick>========================
+;=Standing Far Medium Kick==
 [Statedef 240]
 type = S
 movetype = A
@@ -1185,8 +1185,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 15; + 3 * map(counterhit_buffer)
-guard.hittime = (1 + 15; + 3 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 15
+guard.hittime = (1 + 15) - 6
 ground.slidetime = 15
 ground.velocity = ifelse(map(customcombo), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0
@@ -1227,7 +1227,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Close Medium Kick>========================
+;=Standing Close Medium Kick==
 [Statedef 241]
 type = S
 movetype = A
@@ -1292,8 +1292,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 15; + 3 * map(counterhit_buffer)
-guard.hittime = (1 + 15; + 3 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 15
+guard.hittime = (1 + 15) - 6
 ground.slidetime = 15
 ground.velocity = ifelse(map(customcombo), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0
@@ -1334,7 +1334,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Far Hard Kick>========================
+;=Standing Far Hard Kick==
 [Statedef 250]
 type = S
 movetype = A
@@ -1399,8 +1399,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(map(customcombo), -5.77, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -1441,8 +1441,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -5.30, -5.30
 air.type = Low
@@ -1485,7 +1485,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Standing Close Hard Kick>========================
+;=Standing Close Hard Kick==
 [Statedef 251]
 type = S
 movetype = A
@@ -1550,8 +1550,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(map(customcombo), -5.77, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -1592,7 +1592,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<Crouching Light Punch>========================
+;=Crouching Light Punch==
 [Statedef 400]
 type = C
 movetype = A
@@ -1677,8 +1677,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 12; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 12; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 12
+guard.hittime = (1 + 12) - 6
 ground.slidetime = 12
 ground.velocity = ifelse(map(customcombo), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0
@@ -1709,7 +1709,7 @@ value = 11
 ctrl = 1
 
 
-;=======================<Crouching Medium Punch>========================
+;=Crouching Medium Punch==
 [Statedef 410]
 type = C
 movetype = A
@@ -1794,8 +1794,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 15; + 3 * map(counterhit_buffer)
-guard.hittime = (1 + 15; + 3 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 15
+guard.hittime = (1 + 15) - 6
 ground.slidetime = 15
 ground.velocity = ifelse(map(customcombo), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0
@@ -1836,7 +1836,7 @@ value = 11
 ctrl = 1
 
 
-;=======================<Crouching Hard Punch>========================
+;=Crouching Hard Punch==
 [Statedef 420]
 type = C
 movetype = A
@@ -1921,8 +1921,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(map(customcombo), -5.77, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -1963,7 +1963,7 @@ value = 11
 ctrl = 1
 
 
-;=======================<Crouching Light Kick>========================
+;=Crouching Light Kick==
 [Statedef 430]
 type = C
 movetype = A
@@ -2028,8 +2028,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 12; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 12; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 12
+guard.hittime = (1 + 12) - 6
 ground.slidetime = 12
 ground.velocity = ifelse(map(customcombo), -2.66, -4.49), 0
 ground.cornerpush.veloff = 0
@@ -2071,7 +2071,7 @@ value = 11
 ctrl = 1
 
 
-;=======================<Crouching Medium Kick>========================
+;=Crouching Medium Kick==
 [Statedef 440]
 type = C
 movetype = A
@@ -2136,8 +2136,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 15; + 3 * map(counterhit_buffer)
-guard.hittime = (1 + 15; + 3 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 15
+guard.hittime = (1 + 15) - 6
 ground.slidetime = 15
 ground.velocity = ifelse(map(customcombo), -4.30, -7.51), 0
 ground.cornerpush.veloff = 0
@@ -2179,7 +2179,7 @@ value = 11
 ctrl = 1
 
 
-;=======================<Crouching Hard Kick>========================
+;=Crouching Hard Kick==
 [Statedef 450]
 type = C
 movetype = A
@@ -2257,8 +2257,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Trip
-ground.hittime = 1 + 18; + 4 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 4 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -1.0, -8.0
 air.type = Low
@@ -2290,7 +2290,7 @@ value = ifelse(command = "holddown", 10, 12)
 ctrl = 1
 
 
-;=======================<Neutral Jumping Light Punch>========================
+;=Neutral Jumping Light Punch==
 [Statedef 600]
 type = A
 physics = N
@@ -2422,7 +2422,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Diagonal Jumping Light Punch>========================
+;=Diagonal Jumping Light Punch==
 [Statedef 601]
 type = A
 physics = N
@@ -2554,7 +2554,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Jumping Medium Punch>========================
+;=Jumping Medium Punch==
 [Statedef 610]
 type = A
 physics = N
@@ -2696,7 +2696,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Hell Attack>========================
+;=Hell Attack==
 [Statedef 615]
 type = A
 physics = N
@@ -2827,7 +2827,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Neutral Jumping Hard Punch>========================
+;=Neutral Jumping Hard Punch==
 [Statedef 620]
 type = A
 physics = N
@@ -2959,7 +2959,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Diagonal Jumping Hard Punch>========================
+;=Diagonal Jumping Hard Punch==
 [Statedef 621]
 type = A
 physics = N
@@ -3091,7 +3091,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Neutral Jumping Light Kick>========================
+;=Neutral Jumping Light Kick==
 [Statedef 630]
 type = A
 physics = N
@@ -3203,7 +3203,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Diagonal Jumping Light Kick>========================
+;=Diagonal Jumping Light Kick==
 [Statedef 631]
 type = A
 physics = N
@@ -3315,7 +3315,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Neutral Jumping Medium Kick>========================
+;=Neutral Jumping Medium Kick==
 [Statedef 640]
 type = A
 physics = N
@@ -3427,7 +3427,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Diagonal Jumping Medium Kick>========================
+;=Diagonal Jumping Medium Kick==
 [Statedef 641]
 type = A
 physics = N
@@ -3539,7 +3539,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Neutral Jumping Hard Kick>========================
+;=Neutral Jumping Hard Kick==
 [Statedef 650]
 type = A
 physics = N
@@ -3651,7 +3651,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Diagonal Jumping Hard Kick>========================
+;=Diagonal Jumping Hard Kick==
 [Statedef 651]
 type = A
 physics = N
@@ -3763,7 +3763,7 @@ trigger1 = pos y > -vel y
 value = 52
 
 
-;=======================<Throw Attempt>========================
+;=Throw Attempt==
 [Statedef 800]
 type = S
 movetype = A
@@ -3906,7 +3906,7 @@ value = 0
 ctrl = 1
 
 
-;=======================<DEADLY THROW>========================
+;=DEADLY THROW==
 ;----- PLAYER TURNS -----
 [Statedef 805]
 type = S
@@ -4212,7 +4212,7 @@ trigger1 = 1
 value = 5050
 
 
-;=======================<DEATH TOWER>========================
+;=DEATH TOWER==
 ;----- PLAYER -----
 [Statedef 820]
 type = S
@@ -4455,7 +4455,7 @@ trigger1 = pos y >= 0
 value = 5100
 
 
-;=======================<Target Escaped>========================
+;=Target Escaped==
 [Statedef 890]
 type = S
 physics = N

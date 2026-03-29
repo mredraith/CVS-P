@@ -1,11 +1,11 @@
 ; ________________________________________________
 ;| Urban Champion by NovaMagnolia 			|
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;==
+;=HELPER STATES==
+;==
 
-;====================<PARRY HELPER>=========================
+;==PARRY HELPER=
 [StateDef 765]
 type = A
 physics = N
@@ -504,7 +504,7 @@ type = DestroySelf
 trigger1 = Time >= 16
 
 
-;========================<DARKEN>=============================
+;==DARKEN=
 [StateDef 13340]
 type = S
 velSet = 0, 0
@@ -543,7 +543,7 @@ type = ChangeState
 trigger1 = (Root, StateNo = 3340) && (Root, AnimElem = 8)
 value = 3614
 
-;========================<FADE OUT>=============================
+;==FADE OUT=
 [StateDef 3613]
 type = S
 velSet = 0, 0
@@ -589,7 +589,7 @@ type = DestroySelf
 trigger1 = !(Root, var(40) = 2)
 trigger2 = Time >= 16 && Root, var(40) = 2
 
-;========================<AFTER IMAGE>=============================
+;==AFTER IMAGE=
 [Statedef 3701]
 type = S
 velSet = 0, 0
@@ -620,7 +620,7 @@ trigger1 = Time = 16
 
 
 
-;========================<SPARKS>=============================
+;==SPARKS=
 ;Guard Spark (Normal)
 [StateDef 8000]
 type = A
@@ -1494,7 +1494,7 @@ ignoreHitPause = 1
 type = DestroySelf
 trigger1 = Time >= 16
 
-;======================<JUMP DUST>===========================
+;==JUMP DUST=
 [StateDef 8100]
 type = S
 anim = 1
@@ -1533,7 +1533,7 @@ trigger1 = Time >= 7
 
 
 
-;======================<DASH DUST>===========================
+;==DASH DUST=
 [StateDef 8103]
 type = A
 anim = 1
@@ -1595,7 +1595,7 @@ trigger1 = !NumExplod
 
 
 
-;======================<IMPACT DUST>===========================
+;==IMPACT DUST=
 [StateDef 8110]
 type = A
 anim = 1
@@ -1641,7 +1641,7 @@ trigger1 = !NumExplod
 
 
 
-;========================<FLAMES>=============================
+;==FLAMES=
 [StateDef 8150]
 type = A
 velSet = 0, 0
@@ -1719,7 +1719,7 @@ ownpal = 1
 
 
 
-;========================<SHOCK>=============================
+;==SHOCK=
 [StateDef 8155]
 type = A
 velSet = 0,0
@@ -1784,7 +1784,7 @@ ownPal = 1
 
 
 
-;========================<RECOVER FX>=============================
+;==RECOVER FX=
 [StateDef 8200]
 type = A
 velSet = 0,0
@@ -1816,7 +1816,7 @@ trigger1 = Time >= 15
 
 
 
-;========================<COUNTER FX>=============================
+;==COUNTER FX=
 [StateDef 8290]
 type = A
 physics = N
@@ -1862,7 +1862,7 @@ trigger1 = Time >= 16
 
 
 
-;==================<POWER CHARGE FX>==================
+;==POWER CHARGE FX==
 ;Aura and Dust
 [StateDef 8330]
 type = A
@@ -1971,7 +1971,7 @@ trigger1 = Root, StateNo != 730
 
 
 
-;==================<ZERO COUNTER FX>==================
+;==ZERO COUNTER FX==
 [StateDef 8350]
 type = A
 physics = N
@@ -2023,7 +2023,7 @@ trigger1 = Time >= 16
 
 
 
-;========================<CUSTOM COMBO>=============================
+;==CUSTOM COMBO=
 [StateDef 8400]
 type = A
 physics = N
@@ -2129,7 +2129,7 @@ trigger1 = Time >= 26
 
 
 
-;========================<SUPER PAUSE FX>=============================
+;==SUPER PAUSE FX=
 ;Level 1 Super FX
 [StateDef 8500]
 type = A
@@ -3160,7 +3160,7 @@ trigger1 = Time >= 40
 
 
 
-;========================<SUPER FINISH>=============================
+;==SUPER FINISH=
 [StateDef 8600]
 type = A
 velSet = 0,0
@@ -3334,7 +3334,7 @@ trigger2 = RoundState < 3
 type = DestroySelf
 trigger1 = RoundState < 3
 
-;========================<SUPER FINISH (KANJI)>=============================
+;==SUPER FINISH (KANJI)=
 [StateDef 8620]
 type = A
 velSet = 0, 0
@@ -3421,7 +3421,7 @@ trigger1 = Time >= 180
 
 
 
-;========================<DIZZY STARS>=============================
+;==DIZZY STARS=
 [Statedef 8970]
 type = A
 physics = N
@@ -3553,7 +3553,7 @@ trigger1 = !NumExplod
 
 
 
-;========================<CAMERA CONTROL>=============================
+;==CAMERA CONTROL=
 [StateDef 8999]
 type = S
 velSet = 0,0
@@ -3572,7 +3572,7 @@ trigger1 = RoundState = 2
 
 
 
-;========================<EXPLODSIVE BUFFERING HELPER>=============================
+;==EXPLODSIVE BUFFERING HELPER=
 [StateDef 90000005]
 type = A
 physics = N

@@ -1,9 +1,9 @@
 ; ________________________________________________
 ;| Urban Champion by NovaMagnolia 			|
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;=======================================<SYSTEM STATES>========================================
-;==============================================================================================
+;==
+;=SYSTEM STATES==
+;==
 
 ;---------------------------------------------------------------------------
 ; Idle
@@ -54,7 +54,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;====================<CROUCHING>====================
+;==CROUCHING==
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -158,7 +158,7 @@ value = 11
 
 
 
-;====================<WALKING>====================
+;==WALKING==
 [StateDef 20]
 type = S
 physics = S
@@ -204,7 +204,7 @@ value = 21
 
 
 
-;====================<JUMPING>====================
+;==JUMPING==
 ;Jumping
 [StateDef 40]
 type = S
@@ -536,7 +536,7 @@ trigger1 = !AnimTime
 value = 50
 ctrl = 1
 
-;======================<RUN>===========================
+;==RUN=
 [StateDef 100]
 type = S
 physics = N
@@ -640,7 +640,7 @@ ctrl = 1
 
 
 
-;========================<DASH BACKWARDS>==========================
+;==DASH BACKWARDS==
 [StateDef 105]
 type = A
 physics = N
@@ -728,7 +728,7 @@ ctrl = 1
 
 
 
-;=================<DASH FORWARD>=================
+;=DASH FORWARD=
 [StateDef 110]
 type = A
 physics = N
@@ -1250,7 +1250,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 2910, 2900 + 5*(var(40) = 1))
 
-;====================<PARRY>====================
+;==PARRY==
 ;Standing Parry
 [StateDef 760]
 type = S
@@ -1566,7 +1566,7 @@ value = 52
 
 
 
-;====================<CUSTOM COMBO>====================
+;==CUSTOM COMBO==
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1779,7 +1779,7 @@ value = 52
 
 
 
-;==========<TARGET SAFE FALL>==========
+;==TARGET SAFE FALL==
 [StateDef 5205]
 type = A
 physics = N
@@ -1809,7 +1809,7 @@ value = 5210
 
 
 
-;==========<FALL RECOVERY>==========
+;==FALL RECOVERY==
 [StateDef 5200]
 type = A
 moveType = H
@@ -1979,7 +1979,7 @@ value = 52
 
 
 
-;===================<GUARD>================
+;=GUARD==
 ;Guard Start
 [StateDef 120]
 type = U
@@ -2475,7 +2475,7 @@ value = 52
 
 
 
-;====================<LOSE>====================
+;==LOSE==
 [StateDef 170]
 type = S
 ctrl = 0
@@ -2489,7 +2489,7 @@ flag = RoundNotOver
 
 
 
-;====================<DRAW GAME>====================
+;==DRAW GAME==
 [StateDef 175]
 type = S
 ctrl = 0
@@ -2502,7 +2502,7 @@ value = 170
 
 
 
-;====================<CONTINUE?>====================
+;==CONTINUE?==
 [StateDef 5500]
 type = S
 anim = 5300
@@ -2516,7 +2516,7 @@ value = 5500
 
 
 
-;====================<INITIALIZE>====================
+;==INITIALIZE==
 [StateDef 5901]
 type = S
 
@@ -3098,7 +3098,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 
-;====================<TURNS INTRO>====================
+;==TURNS INTRO==
 [StateDef 6900]
 type = A
 anim = 42
@@ -3275,7 +3275,7 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 190
 
-;====================<WIN POSE DECIDER>====================
+;==WIN POSE DECIDER==
 [StateDef 180]
 type = S
 
@@ -3359,7 +3359,7 @@ type = ChangeState
 trigger1 = 1
 value = 181 + (Random % 2)
 
-;====================<WIN 1>====================
+;==WIN 1==
 [StateDef 181]
 type = S
 physics = S
@@ -3376,7 +3376,7 @@ type = AssertSpecial
 trigger1 = Time < 200
 flag = RoundNotOver
 
-;====================<WIN 2>====================
+;==WIN 2==
 [StateDef 182]
 type = S
 physics = S
@@ -3442,7 +3442,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<K.O.>====================
+;==K.O.==
 [StateDef 5150]
 type = L
 moveType = H
@@ -3526,7 +3526,7 @@ time = 1
 
 
 
-;====================<CHEAP K.O.>====================
+;==CHEAP K.O.==
 [StateDef 5950]
 type = S
 moveType = H
@@ -3577,7 +3577,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;====================<AIR HIT TRANSITION>====================
+;==AIR HIT TRANSITION==
 [Statedef 5035]
 type = A
 movetype = H
@@ -3617,7 +3617,7 @@ value = 5050
 
 
 
-;====================<GET UP FROM LIE DOWN>====================
+;==GET UP FROM LIE DOWN==
 [Statedef 5120]
 type = L
 movetype = I
@@ -3683,7 +3683,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;========================<HIT OTG>=============================
+;==HIT OTG=
 [StateDef 5410]
 type = L
 moveType = H
@@ -3878,7 +3878,7 @@ value = 5120
 
 
 
-;========================<SLAMMED AGAINST THE GROUND>=============================
+;==SLAMMED AGAINST THE GROUND=
 ;Being Slammed (Standing)
 [StateDef 5420]
 type = A
@@ -4206,7 +4206,7 @@ value = 5101
 
 
 
-;=====================<CRUMPLE>==========================
+;=CRUMPLE==
 ;Hit shake
 [StateDef 5450]
 type = S
@@ -4346,7 +4346,7 @@ value = 5110
 
 
 
-;===========<GUARD CRUSH>==========
+;=GUARD CRUSH==
 ;Pre-Crush State
 [StateDef 5905]
 type = U
@@ -4560,7 +4560,7 @@ ctrl = 1
 
 
 
-;====================<ELECTROCUTION>=========================
+;==ELECTROCUTION=
 ;Hit shake
 [StateDef 9010]
 type = S
@@ -4691,7 +4691,7 @@ trigger1 = Time <= 10
 x = 2 * ifElse(Time % 2 = 0, 1, -1)
 
 
-;========================<TRIPPED>=============================
+;==TRIPPED=
 [Statedef 50450]
 type = A
 moveType = H
@@ -4749,7 +4749,7 @@ value = 5110
 
 
 
-;====================<ELECTROCUTION (STUN)>=========================
+;==ELECTROCUTION (STUN)=
 ;Hit shake
 [StateDef 59010]
 type = S
@@ -4881,7 +4881,7 @@ x = 2 * ifElse(Time % 2 = 0, 1, -1)
 
 
 
-;========================<STUN>=============================
+;==STUN=
 ;Air get-hit (knocked away)
 [Statedef 55030]
 type = A
@@ -5331,9 +5331,9 @@ ctrl = 1
 
 
 
-;===========================================================================
-;===============================<-2 STATES>=================================
-;===========================================================================
+;=
+;=-2 STATES=
+;=
 
 [StateDef -2]
 
@@ -5953,9 +5953,9 @@ ignoreHitPause = 1
 
 
 
-;===========================================================================
-;===============================<-3 STATES>=================================
-;===========================================================================
+;=
+;=-3 STATES=
+;=
 
 [StateDef -3]
 

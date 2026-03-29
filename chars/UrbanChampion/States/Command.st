@@ -1,11 +1,11 @@
 ; ________________________________________________
 ;| Urban Champion by NovaMagnolia 			|
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;=======================================<COMMAND FILE>=========================================
-;==============================================================================================
+;==
+;=COMMAND FILE=
+;==
 
-;====================<BUTTON REMAPPING>====================
+;==BUTTON REMAPPING==
 
 [Remap]
 x = x
@@ -17,7 +17,7 @@ c = c
 s = s
 
 
-;====================<DEFAULT VALUES>====================
+;==DEFAULT VALUES==
 
 [Defaults]
 command.time = 15
@@ -25,7 +25,7 @@ command.buffer.time = 1
 
 
 
-;====================<SINGLE BUTTON>====================
+;==SINGLE BUTTON==
 
 [Command]
 name = "a"
@@ -67,7 +67,7 @@ name = "ss"
 command = s, s
 time = 10
 
-;==================<HOLD DIRECTION>==================
+;==HOLD DIRECTION==
 
 [Command]
 name = "holdfwd"
@@ -90,7 +90,7 @@ command = /$D
 time = 1
 
 
-;====================<HOLD BUTTON>====================
+;==HOLD BUTTON==
 
 [Command]
 name = "holda"
@@ -129,7 +129,7 @@ time = 1
 
 
 
-;====================<DIRECTION>====================
+;==DIRECTION==
 
 [Command]
 name = "fwd"
@@ -173,7 +173,7 @@ time = 1
 
 
 
-;====================<RELEASE DIR>====================
+;==RELEASE DIR==
 
 [Command]
 name = "rlsfwd"
@@ -197,7 +197,7 @@ time = 1
 
 
 
-;====================<RELEASE BUTTON>====================
+;==RELEASE BUTTON==
 
 [Command]
 name = "rlsx"
@@ -231,7 +231,7 @@ time = 1
 
 
 
-;====================<2/3 BUTTON COMBINATION>====================
+;==2/3 BUTTON COMBINATION==
 
 [Command]
 name = "recovery"
@@ -331,17 +331,17 @@ time = 1
 
 
 
-;==============================================================================================
-;========================================<-1 STATES>===========================================
-;==============================================================================================
+;==
+;==-1 STATES=
+;==
 [StateDef -1]
 
-;==============================================================================================
-;==============================================================================================
-;================================<EXPLODsive Buffering System>=================================
-;====================================<by JustMorphPointman>====================================
-;==============================================================================================
-;==============================================================================================
+;==
+;==
+;==EXPLODsive Buffering System=
+;==by JustMorphPointman==
+;==
+;==
 
 ;This is an explod-based buffering system, designed to overcome several different errors and bugs
 ;related to MUGEN's default method of processing commands, as well as offering creators more control
@@ -349,9 +349,9 @@ time = 1
 ;and install. For more information, including instructions on how to add this to a character, as
 ;well as how to customize it and add new commands, please visit http://mugenguild.com/forum/msg.2366951
 
-;==============================================================================================
-;========================<QUICK REFERENCE GUIDE TO THE EXPLOD ID #'s>==========================
-;==============================================================================================
+;==
+;==QUICK REFERENCE GUIDE TO THE EXPLOD ID #'s==
+;==
 
 ;BASIC DIRECTIONAL INPUTS (these are primarily used to detect directional releases, but also can
 ;be used outside of the Buffering system code block to detect when a specific direction is currently
@@ -481,17 +481,17 @@ time = 1
 
 
 
-;==============================================================================================
-;===================================<DIRECTIONAL COMMANDS>=====================================
-;==============================================================================================
+;==
+;=DIRECTIONAL COMMANDS=
+;==
 
-;==============================================================================================
+;==
 ;These are required for the system to function; they are active whenever the specified direction
 ;is currently being input, and disappear as soon as they are released (via a series of RemoveExplods
 ;at the bottom of the Buffering system code block). They are used by the system to detect directional
 ;releases, but can also be used outside of the Buffering system code block to detect when a specific
 ;direction is being input or held down.
-;==============================================================================================
+;==
 
 [State -1, Release Down Detector]
 type = Explod
@@ -643,9 +643,9 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;==========================================<BUTTONS>===========================================
-;==============================================================================================
+;==
+;==BUTTONS=
+;==
 
 [State -1, Press x]
 type = Explod
@@ -748,12 +748,12 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
+;==
 ;These explods are used to detect button releases, much in the same way that the directional
 ;detectors work. These are required for the system, but it's easier to use MUGEN's standard
 ;"holda" / "holdx" / etc. for situations where you need to detect a held button input, rather than
 ;making use of these like you would the release direction detectors.
-;==============================================================================================
+;==
 [State -1, Release x Detector]
 type = Explod
 triggerAll = !NumExplod(90000201)
@@ -840,9 +840,9 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
+;==
 ;Take note of the RemoveTimes on these: release button inputs don't persist through hitpause!
-;==============================================================================================
+;==
 
 [State -1, Release x]
 type = Explod
@@ -937,19 +937,19 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
+;==
 ;Reminder: because this system is based on absolute directions (left/right) instead of relative
 ;directions (forward/backward), all commands must have a mirrored command as well (unless they are
 ;performed solely with up and/or down!) In other words, two different versions of each individual
 ;command must be defined in this system: one assuming the character is facing the right, and one
 ;for the left.
-;==============================================================================================
+;==
 
-;==============================================================================================
-;================================<FORWARD, FORWARD/BACK, BACK>=================================
-;==============================================================================================
+;==
+;==FORWARD, FORWARD/BACK, BACK=
+;==
 
-;==============================================================================================
+;==
 ;Dash/run commands in SNK typically have release directions as their first inputs. In other words,
 ;in most SNK games, you can dash/run by holding forward or back for however long you like, and then
 ;quickly releasing the stick and returning to neutral, then quickly inputting forward/back again.
@@ -963,9 +963,9 @@ ignoreHitPause = 1
 ;window and the buffer time is 7 ticks. The default values in this system are 10 for the input window
 ;and 3 for the buffer time, to match up with the other commands (but feel free to change those values
 ;to suit your personal preference!)
-;==============================================================================================
+;==
 
-;=======================================<RIGHT, RIGHT>=========================================
+;=RIGHT, RIGHT=
 [State -1, R, R: 1st Right]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -1024,11 +1024,11 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
+;==
 ;Now for the reversed command:
-;==============================================================================================
+;==
 
-;=======================================<LEFT, LEFT>=========================================
+;=LEFT, LEFT=
 [State -1, L, L: 1st Left]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -1075,15 +1075,15 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;===================================<DOWN, UP (SUPER JUMP)>====================================
-;==============================================================================================
+;==
+;=DOWN, UP (SUPER JUMP)==
+;==
 
-;==============================================================================================
+;==
 ;Super jump commands can be done with any down directional input, followed by any up directional
-;==============================================================================================
+;==
 
-;=======================================<DOWN, UP>=========================================
+;=DOWN, UP=
 [State -1, D, U: Down]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -1119,19 +1119,19 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;=====================================<UP, UP/DOWN, DOWN>======================================
-;==============================================================================================
+;==
+;=UP, UP/DOWN, DOWN==
+;==
 
-;==============================================================================================
+;==
 ;Pretty similar to the Forward, Forward/Back, Back commands, only we don't need to worry about
 ;the player's facing or anything, since all the inputs are either down or up!
 
 ;Also of note is that any up/down direction may be used to activate this command (i.e., a UF, UF
 ;will still be considered a U, U command).
-;==============================================================================================
+;==
 
-;=======================================<UP, UP>=========================================
+;=UP, UP=
 [State -1, U, U: 1st Up]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -1188,7 +1188,7 @@ ignoreHitPause = 1
 
 
 
-;=========================================<DOWN,DOWN>==========================================
+;=DOWN,DOWN==
 [State -1, D, D: 1st Down]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -1245,16 +1245,16 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;==================================<(SPECIAL) DOWN, DOWN >=====================================
-;==============================================================================================
+;==
+;==(SPECIAL) DOWN, DOWN =
+;==
 
-;==============================================================================================
+;==
 ;This explod is for the special move variant of the D, D motion; the only difference between this
 ;and the one above is that this has a RemoveTime of 10, like every other special move, since it's
 ;designed to be used for special moves (as opposed to the earlier D, D command, which was for air
 ;dashing).
-;==============================================================================================
+;==
 
 [State -1, (special) D, D: 2nd Down]
 type = Explod
@@ -1275,9 +1275,9 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;+==================================<(SPECIAL) DOWN, UP >+=====================================
-;==============================================================================================
+;==
+;+==(SPECIAL) DOWN, UP >+=
+;==
 
 [State -1, D, U: Press Down]
 type = Explod
@@ -1331,14 +1331,14 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;====================================<DOWN, DOWN, DOWN>========================================
-;==============================================================================================
+;==
+;==DOWN, DOWN, DOWN==
+;==
 
-;==============================================================================================
+;==
 ;And this is just extending the principle futher, to a third down input! This is typically used
 ;as a super command.
-;==============================================================================================
+;==
 
 [State -1, D, D, D: 2nd Neutral]
 type = Explod
@@ -1379,20 +1379,20 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;===================================<QUARTER CIRCLE DOWN>======================================
-;==============================================================================================
+;==
+;=QUARTER CIRCLE DOWN==
+;==
 
-;==============================================================================================
+;==
 ;This is the SFA2 style Zero Counter command. This is the first command in the system that uses
 ;a release directional input. However, this command works somewhat differently from the way pretty
 ;much every other command in this system works, so we're gonna avoid getting deep into discussion
 ;about anything here. Please see the following command (quarter-circle forward/back) for a basic
 ;look at how most release inputs work in this system.
-;==============================================================================================
+;==
 
 
-;================================<RIGHT, DOWN-RIGHT, DOWN>=====================================
+;==RIGHT, DOWN-RIGHT, DOWN=
 [State -1, R, DR, D: Release Right]
 type = Explod
 ;check to see if the Release Right Detector explod exists. If it exists and down is no longer being
@@ -1445,7 +1445,7 @@ ignoreHitPause = 1
 
 
 
-;=================================<LEFT, DOWN-LEFT, DOWN>======================================
+;=LEFT, DOWN-LEFT, DOWN==
 [State -1, L, DL, D: Release Left]
 type = Explod
 triggerAll = NumExplod(90000004)
@@ -1492,11 +1492,11 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;===============================<QUARTER CIRCLE FORWARD/BACK>==================================
-;==============================================================================================
+;==
+;=QUARTER CIRCLE FORWARD/BACK==
+;==
 
-;==============================================================================================
+;==
 ;The vast majority of all commands in fighting games allow the first input of any command to be
 ;a release input, so that you're allowed to hold the direction that the command starts with for
 ;however long you want, then input the rest of the command, and still get the move. This is why
@@ -1524,9 +1524,9 @@ ignoreHitPause = 1
 ;is only 4! There's a whole bunch of variance here, sometimes in the same game, and so it's best to check
 ;the source game of the character you're making (if applicable) to try and get an idea of what RemoveTime
 ;will be best for each of your commands.
-;==============================================================================================
+;==
 
-;================================<DOWN, DOWN-RIGHT, RIGHT>=====================================
+;==DOWN, DOWN-RIGHT, RIGHT=
 
 ;Since this is the press directional input for the first input, it has a RemoveTime of 10
 [State -1, D, DR, R: Press Down]
@@ -1595,7 +1595,7 @@ ignoreHitPause = 1
 
 
 
-;=================================<DOWN, DOWN-LEFT, LEFT>======================================
+;=DOWN, DOWN-LEFT, LEFT==
 [State -1, D, DL, L: Press Down]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -1660,11 +1660,11 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;===========================<DOUBLE QUARTER CIRCLE FORWARD/BACK>===============================
-;==============================================================================================
+;==
+;=DOUBLE QUARTER CIRCLE FORWARD/BACK=
+;==
 
-;==============================================================================================
+;==
 ;This command is mostly identical to the QCF/QCB commands, but with different ID's; there are some
 ;important differences, however. Instead of repeating the entire first QCF/QCB command, we just
 ;(mostly) use the ones we already defined above!
@@ -1679,9 +1679,9 @@ ignoreHitPause = 1
 ;will work just as well as a D, DF, F, D, DF, F motion; if you want to replicate this behavior, all
 ;you have to do is check to see if either the repsective "DF/DB" or the "F/B" explods exist in the
 ;triggers for that move's ChangeState.
-;==============================================================================================
+;==
 
-;===========================<DOUBLE DOWN, DOWN-RIGHT, RIGHT>===============================
+;=DOUBLE DOWN, DOWN-RIGHT, RIGHT=
 ;this is almost identical to the D, DR, R: Right explod; the only difference is that it has a
 ;RemoveTime of 10 (with no additional ifElse statements), because it shouldn't persist through hitpause!
 [State -1, D, DR, R, D, DR, R: 1st Right]
@@ -1740,7 +1740,7 @@ ignoreHitPause = 1
 
 
 
-;===========================<DOUBLE DOWN, DOWN-LEFT, LEFT>===============================
+;=DOUBLE DOWN, DOWN-LEFT, LEFT=
 [State -1, D, DL, L, D, DL, L: 1st Left]
 type = Explod
 triggerAll = NumExplod(90010101)
@@ -1797,11 +1797,11 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;=====<QUARTER CIRCLE FORWARD, HALF CIRCLE BACK/QUARTER CIRCLE BACK, HALF CIRCLE FORWARD>======
-;==============================================================================================
+;==
+;=QUARTER CIRCLE FORWARD, HALF CIRCLE BACK/QUARTER CIRCLE BACK, HALF CIRCLE FORWARD==
+;==
 
-;==============================================================================================
+;==
 ;This is a command used mostly by SNK, and it has a few quirks compared to how Capcom approaches
 ;commands. For half-circle motions, SNK only checks for the cardinal inputs (i.e., the non-diagonal
 ;directions) to see if the user has successfully complated the move, and gives those cardinal inputs
@@ -1827,9 +1827,9 @@ ignoreHitPause = 1
 
 ;A final note: as with the QCFx2/QCBx2 commands, we use the parts of the earlier QCF/QCB command block
 ;instead of just repeating that code.
-;==============================================================================================
+;==
 
-;===============<DOWN, DOWN-RIGHT, RIGHT, DOWN-RIGHT, DOWN, DOWN-LEFT, LEFT>===================
+;=DOWN, DOWN-RIGHT, RIGHT, DOWN-RIGHT, DOWN, DOWN-LEFT, LEFT=
 [State -1, D, DR, R, DR, D, DL, L: Right]
 type = Explod
 triggerAll = NumExplod(90010003)
@@ -1901,7 +1901,7 @@ ignoreHitPause = 1
 
 
 
-;================<DOWN, DOWN-LEFT, LEFT, DOWN-LEFT, DOWN, DOWN-RIGHT, RIGHT>===================
+;==DOWN, DOWN-LEFT, LEFT, DOWN-LEFT, DOWN, DOWN-RIGHT, RIGHT=
 [State -1, D, DL, L, DL, D, DR, R: Left]
 type = Explod
 triggerAll = NumExplod(90010101)
@@ -1973,15 +1973,15 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;====================<FORWARD, DOWN, DOWN-FORWARD/BACK, DOWN, DOWN-BACK>=======================
-;==============================================================================================
+;==
+;==FORWARD, DOWN, DOWN-FORWARD/BACK, DOWN, DOWN-BACK=
+;==
 
-;==============================================================================================
+;==
 ;Nothing special here, just the standard dragon punch motion!
-;==============================================================================================
+;==
 
-;================================<RIGHT, DOWN, DOWN-RIGHT>=====================================
+;==RIGHT, DOWN, DOWN-RIGHT=
 [State -1, R, D, DR: Press Right]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -2125,7 +2125,7 @@ ignoreHitPause = 1
 
 
 
-;=================================<LEFT, DOWN, DOWN-LEFT>======================================
+;=LEFT, DOWN, DOWN-LEFT==
 [State -1, L, D, DL: Press Left]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -2269,18 +2269,18 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;=================================<HALF CIRCLE FORWARD/BACK>===================================
-;==============================================================================================
+;==
+;=HALF CIRCLE FORWARD/BACK=
+;==
 
-;==============================================================================================
+;==
 ;As mentioned earlier, SNK games have command shortcuts for half-circle moves, allowing the user
 ;to only input cardinal directions and still complete the command. We have opted to use Capcom's
 ;method for the standard half circle comands here, but these can very easily be modified to use
 ;the SNK method!
-;==============================================================================================
+;==
 
-;========================<LEFT, DOWN-LEFT, DOWN, DOWN-RIGHT, RIGHT>============================
+;==LEFT, DOWN-LEFT, DOWN, DOWN-RIGHT, RIGHT==
 [State -1, L, DL, D, DR, R: Press Left]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -2365,7 +2365,7 @@ ignoreHitPause = 1
 
 
 
-;========================<RIGHT, DOWN-RIGHT, DOWN, DOWN-LEFT, LEFT>============================
+;==RIGHT, DOWN-RIGHT, DOWN, DOWN-LEFT, LEFT==
 [State -1, R, DR, D, DL, L: Press Right]
 type = Explod
 triggerAll = NumHelper(90000005) && !IsHelper && !AILevel
@@ -2450,17 +2450,17 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;==============================<DOUBLE HALF CIRCLE FORWARD/BACK>===============================
-;==============================================================================================
+;==
+;==DOUBLE HALF CIRCLE FORWARD/BACK=
+;==
 
-;==============================================================================================
+;==
 ;The double half circle motions use the exact same principles that the double quarter circle motions
 ;used: they're dependent on the standard half circle motions to reduce clutter and unnecessary
 ;duplication of code.
-;==============================================================================================
+;==
 
-;=====================<DOUBLE LEFT, DOWN-LEFT, DOWN, DOWN-RIGHT, RIGHT>========================
+;=DOUBLE LEFT, DOWN-LEFT, DOWN, DOWN-RIGHT, RIGHT==
 [State -1, L, DL, D, DR, R, L, DL, D, DR, R: 1st Right]
 type = Explod
 triggerAll = NumExplod(90010403) || NumExplod(90010402)
@@ -2544,7 +2544,7 @@ ignoreHitPause = 1
 
 
 
-;========================<DOUBLE RIGHT, DOWN-RIGHT, DOWN, DOWN-LEFT, LEFT>============================
+;==DOUBLE RIGHT, DOWN-RIGHT, DOWN, DOWN-LEFT, LEFT==
 [State -1, R, DR, D, DL, L, R, DR, D, DL, L: Left]
 type = Explod
 triggerAll = NumExplod(90010501) || NumExplod(90010502)
@@ -2626,11 +2626,11 @@ pauseMoveTime = 10 + ifElse(HitPauseTime, HitPauseTime - 1, 0)
 superMoveTime = 10 + ifElse(HitPauseTime, HitPauseTime - 1, 0)
 ignoreHitPause = 1
 
-;==============================================================================================
-;=================================<CHARGE BACK, FORWARD>===================================
-;==============================================================================================
+;==
+;=CHARGE BACK, FORWARD=
+;==
 
-;==============================================================================================
+;==
 ;Capcom and SNK approach charge moves very differently; SNK bases its charge moves solely on the
 ;user's input, with no regard to character facing. Capcom games, however, "reset" their charge moves
 ;whenever the characters switch sides. Additionally, SNK style charge commands allow charging during
@@ -2639,12 +2639,12 @@ ignoreHitPause = 1
 ;The charge moves below are a hybrid of Capcom and SNK's styles of charge moves; please see
 ;http://mugenguild.com/forum/msg.2366956 for more information on either style, as well as further
 ;discussion about the nuances of Capcom and SNK's style of charge moves.
-;==============================================================================================
+;==
 
-;===============================<(CAPCOM-SNK HYBRID) CHARGE BACK, FORWARD>================================
+;=(CAPCOM-SNK HYBRID) CHARGE BACK, FORWARD==
 
 
-;==============================================================================================
+;==
 ;this is the standard method of coding charge moves in MUGEN (since MUGEN's in-built charge commands
 ;are completely broken), with two changes: the triggers are adjusted to ensure
 ;that the correct behavior occurs when switching sides, and the variable keeping track of how long
@@ -2657,7 +2657,7 @@ ignoreHitPause = 1
 ;greater than or equal to 45 (meaning left or right has been held for 45 or more ticks), then var(48)
 ;is set to 16. This is our charge buffer, and as long as it's non-zero, the character is able to perform
 ;a charge move. var(48) will slowly start counting down to 0, however, if the player stops hold left or right!
-;==============================================================================================
+;==
 [State -1, Left Charge Increment]
 type = VarAdd
 triggerAll = NumHelper(90000005) && !IsHelper && var(40) > 0
@@ -2724,13 +2724,13 @@ var(48) = 1
 
 
 
-;==============================================================================================
+;==
 ;With Capcom-style charge moves, the length of time the command is active behaves very differently;
 ;than with standard commands, instead of having the RemoveTime be a constant value, we use the
 ;current value of the charge buffer, var(48).
-;==============================================================================================
+;==
 
-;=====================================<CHARGE LEFT, RIGHT>=====================================
+;=CHARGE LEFT, RIGHT=
 ;we only need one command explod for this move, since we already know that the player has been
 ;inputting the opposite direction!
 [State -1, Charge Left, Right: Right]
@@ -2774,7 +2774,7 @@ ignoreHitPause = 1
 
 
 
-;=====================================<CHARGE RIGHT, LEFT>=====================================
+;=CHARGE RIGHT, LEFT=
 [State -1, Charge Right, Left: Left]
 type = Explod
 triggerAll = var(48) < 0
@@ -2814,16 +2814,16 @@ pauseMoveTime = 10 + ifElse(HitPauseTime, HitPauseTime - 1, 0)
 superMoveTime = 10 + ifElse(HitPauseTime, HitPauseTime - 1, 0)
 ignoreHitPause = 1
 
-;==============================================================================================
-;===============================<REMOVE DIRECTIONAL DETECTORS>=================================
-;==============================================================================================
+;==
+;=REMOVE DIRECTIONAL DETECTORS=
+;==
 
-;==============================================================================================
+;==
 ;This block of RemoveExplods gets rid of any active release detector explods; if the direction in
 ;question isn't currently being input, or if the direction is being input but other directions are
 ;also being input, then the detector explod is removed, having served its purpose as a detector.
 ;This must go at the very bottom of the entire EXPLODsive Buffering system code!
-;==============================================================================================
+;==
 
 [State -1, Remove Down Detector]
 type = RemoveExplod
@@ -2957,13 +2957,13 @@ ignoreHitPause = 1
 
 
 
-;==============================================================================================
-;==============================<REMOVE RELEASE BUTTON DETECTORS>===============================
-;==============================================================================================
+;==
+;==REMOVE RELEASE BUTTON DETECTORS=
+;==
 
-;==============================================================================================
+;==
 ;Same principle here as with the directional release detector explods.
-;==============================================================================================
+;==
 
 [State -1, Remove x Detector]
 type = RemoveExplod
@@ -3022,11 +3022,11 @@ ID = 90000194
 ignoreHitPause = 1
 
 
-;==============================================================================================
-;==========================================<GUARDING>==========================================
-;==============================================================================================
+;==
+;==GUARDING==
+;==
 
-;==============================================================================================
+;==
 ;Here, we override the MUGEN's default guard system when the character is airborne, and add our
 ;own triggers. This will ensure that the player can always block as long as they are holding a
 ;direction away from the opponent. This block of code also adds "chicken guarding", which is allowing
@@ -3035,7 +3035,7 @@ ignoreHitPause = 1
 ;It is also recommended that you also override the guard states (120, 130, 131, 132, 140, 150, 151,
 ;152, 154, 155) with an updated version that uses the EXPLODsive buffering system. A copy of those
 ;fixed states can be found here: http://network.mugenguild.com/jmorphman/resources/EXPLODsiveBuffering_GuardStates.txt
-;==============================================================================================
+;==
 
 [State -1, AssertSpecial: NoAirGuard]
 type = AssertSpecial
@@ -3100,11 +3100,11 @@ value = 120
 
 
 
-;==============================================================================================
-;==============================================================================================
-;=============================<End of EXPLODsive Buffering System>=============================
-;==============================================================================================
-;==============================================================================================
+;==
+;==
+;=End of EXPLODsive Buffering System=
+;==
+;==
 
 ;[State -1, Tick Fix]
 ;type = CtrlSet
@@ -3115,7 +3115,7 @@ value = 120
 ;trigger4 = (StateNo = 5001 || StateNo = 5011 || StateNo = 151 || StateNo = 153) && HitOver
 ;value = 1
 
-;===========================================================================
+;=
 ;Training Mode / Debug Stuff
 
 [State -1, MODE CHANGE]
@@ -3141,7 +3141,7 @@ color = 256
 persistent = 0
 ignorehitpause = 1
 
-;===========================================================================
+;=
 
 [State -1, Roll Forward]
 type = ChangeState
@@ -3778,9 +3778,9 @@ triggerAll = StateNo != [200,699]
 trigger1 = ctrl || (StateNo = [100,101])
 trigger2 = var(6)
 
-;==============================================================================================
-;===========================================< A.I >============================================
-;==============================================================================================
+;==
+;= A.I ==
+;==
 
 [State -1, AI CC START]
 type = Null

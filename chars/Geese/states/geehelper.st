@@ -1,11 +1,11 @@
 ; _______________________________________
 ;| Geese Howard by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;==
+;=HELPER STATES==
+;==
 
-;========================<REPPUKEN>=============================
+;==REPPUKEN=
 [Statedef 1005]
 type = S
 physics = N
@@ -85,8 +85,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -217,7 +217,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<DOUBLE REPPUKEN>=============================
+;==DOUBLE REPPUKEN=
 ;----- Stationary -----
 [Statedef 1015]
 type = S
@@ -275,8 +275,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -496,8 +496,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -617,7 +617,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<EX REPPUKEN>=============================
+;==EX REPPUKEN=
 [Statedef 1035]
 type = S
 physics = N
@@ -681,8 +681,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -814,7 +814,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<SHIPPUKEN>=============================
+;==SHIPPUKEN=
 [Statedef 1305]
 type = A
 physics = N
@@ -885,8 +885,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -1044,7 +1044,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<EX SHIPPUKEN>=============================
+;==EX SHIPPUKEN=
 [Statedef 1325]
 type = A
 physics = N
@@ -1108,8 +1108,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -1161,7 +1161,7 @@ type = destroyself
 trigger1 = frontedgedist < -80 || backedgedist < -80
 
 
-;========================<RAGING STORM>=============================
+;==RAGING STORM=
 [Statedef 3005]
 type = S
 physics = N
@@ -1331,7 +1331,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<THUNDER BREAK LARGE>=============================
+;==THUNDER BREAK LARGE=
 [Statedef 3055]
 type = S
 physics = N
@@ -1504,7 +1504,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<THUNDER BREAK SMALL>=============================
+;==THUNDER BREAK SMALL=
 [Statedef 3060]
 type = S
 physics = N
@@ -1684,7 +1684,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<KYOKUU REPPUU ZAN>=============================
+;==KYOKUU REPPUU ZAN=
 ;----- Front -----
 [Statedef 3305]
 type = S
@@ -2033,7 +2033,7 @@ trigger2 = root, movetype = H
 trigger3 = root, stateno != 3300
 
 
-;========================<ASHURA SHIPPUKEN>=============================
+;==ASHURA SHIPPUKEN=
 [Statedef 3355]
 type = A
 physics = N
@@ -2251,7 +2251,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<DEAD END FIREBALL>=============================
+;==DEAD END FIREBALL=
 [Statedef 3425]
 type = A
 physics = N
@@ -2519,7 +2519,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================<FLOOR THROW>=============================
+;==FLOOR THROW=
 [Statedef 841]
 type = A
 velset = 0, 0
@@ -2577,7 +2577,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================<REPPUKEN FX>=============================
+;==REPPUKEN FX=
 ;----- Front -----
 [Statedef 1003]
 type = A
@@ -2656,7 +2656,7 @@ trigger1 = !animtime || root, movetype = H
 trigger2 = root, stateno != 1300 && root, stateno != 1320 && root, stateno != 3351
 
 
-;========================<JAEIKEN FX>=============================
+;==JAEIKEN FX=
 ;----- Held -----
 [Statedef 1105]
 type = A
@@ -2791,7 +2791,7 @@ trigger1 = parent, movetype = H
 trigger2 = !animtime
 
 
-;========================<EX JAEIKEN FX>=============================
+;==EX JAEIKEN FX=
 ;----- Held -----
 [Statedef 1135]
 type = A
@@ -2938,7 +2938,7 @@ trigger1 = parent, movetype = H
 trigger2 = !animtime
 
 
-;========================<HISHOU NICHIRIN ZAN FX>=============================
+;==HISHOU NICHIRIN ZAN FX=
 [Statedef 1405]
 type = A
 physics = N
@@ -2968,7 +2968,7 @@ trigger4 = parent, stateno = 1400 && parent, animelemtime(7) < 0
 trigger5 = parent, stateno = 1420 && parent, animelemtime(8) < 0
 
 
-;========================<DEADLY RAVE FX>=============================
+;==DEADLY RAVE FX=
 ;----- Held -----
 [Statedef 3105]
 type = A
@@ -3074,7 +3074,7 @@ trigger1 = parent, movetype = H
 trigger2 = !animtime
 
 
-;========================<RASHOUMON AURA>=============================
+;==RASHOUMON AURA=
 ;----- Looping -----
 [Statedef 3255]
 type = A
@@ -3149,7 +3149,7 @@ type = destroyself
 trigger1 = !numexplod
 
 
-;========================<RASHOUMON FX>=============================
+;==RASHOUMON FX=
 [Statedef 3261]
 type = A
 physics = N
@@ -3463,7 +3463,7 @@ trigger1 = parent, movetype = H
 trigger2 = !animtime
 
 
-;========================<RASHOUMON KANJI>=============================
+;==RASHOUMON KANJI=
 [Statedef 3290]
 type = A
 physics = N
@@ -3521,7 +3521,7 @@ type = destroyself
 trigger1 = !numexplod
 
 
-;========================<DEAD END FX>=============================
+;==DEAD END FX=
 [Statedef 3423]
 type = A
 physics = N
@@ -3627,7 +3627,7 @@ type = destroyself
 trigger1 = !numexplod
 
 
-;========================<COAT>=============================
+;==COAT=
 [Statedef 6000]
 type = A
 physics = N
@@ -3647,7 +3647,7 @@ type = destroyself
 trigger1 = time >= 32
 
 
-;========================<VS VEGA FX>=============================
+;==VS VEGA FX=
 [Statedef 6010]
 type = A
 physics = N
@@ -3748,7 +3748,7 @@ trigger2 = parent, movetype = H
 trigger3 = parent, stateno != 6912
 
 
-;========================<DUSTS>=============================
+;==DUSTS=
 ;----- Jump -----
 [Statedef 8100]
 type = S
@@ -3913,7 +3913,7 @@ type = destroyself
 trigger1 = !numexplod
 
 
-;========================<FLAMES>=============================
+;==FLAMES=
 [Statedef 8150]
 type = A
 velset = 0, 0
@@ -4005,7 +4005,7 @@ scale = 0.5, 0.5
 ownpal = 1
 
 
-;========================<SHOCK>=============================
+;==SHOCK=
 [Statedef 8155]
 type = A
 velset = 0, 0
@@ -4076,7 +4076,7 @@ scale = 0.15, 0.15
 ownpal = 1
 
 
-;====================<POWER CHARGE>====================
+;==POWER CHARGE==
 ;----- MAIN FX -----
 [Statedef 8330]
 type = A
@@ -4210,7 +4210,7 @@ type = destroyself
 trigger1 = root, stateno != 730
 
 
-;====================<ZERO COUNTER PAUSE>====================
+;==ZERO COUNTER PAUSE==
 [Statedef 8350]
 type = A
 physics = N
@@ -4261,7 +4261,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================<CUSTOM COMBO>=============================
+;==CUSTOM COMBO=
 [Statedef 8400]
 type = A
 physics = N
@@ -4362,7 +4362,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;========================<SUPERPAUSE FX>=============================
+;==SUPERPAUSE FX=
 ;----- Level 1 -----
 [Statedef 8500]
 type = A
@@ -4837,7 +4837,7 @@ type = destroyself
 trigger1 = time >= 40
 
 
-;========================<SUPER FINISH>=============================
+;==SUPER FINISH=
 [Statedef 8600]
 type = A
 velset = 0, 0
@@ -5041,7 +5041,7 @@ trigger1 = time >= 24
 trigger1 = roundstate != 3
 
 
-;========================<CAMERA CONTROL>=============================
+;==CAMERA CONTROL=
 [Statedef 8999]
 type = S
 velset = 0, 0

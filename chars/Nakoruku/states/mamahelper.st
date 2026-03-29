@@ -1,11 +1,11 @@
 ; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;======================================<MAMAHAHA STATES>=======================================
-;==============================================================================================
+;==
+;==MAMAHAHA STATES=
+;==
 
-;====================<IDLE>====================
+;==IDLE==
 [Statedef 10000]
 type = A
 physics = N
@@ -292,7 +292,7 @@ trigger1 = root, stateno = 0 && root, anim = [0, 1]
 value = 10010
 
 
-;====================<FAST FLIGHT>====================
+;==FAST FLIGHT==
 [Statedef 10005]
 type = A
 physics = N
@@ -434,7 +434,7 @@ trigger2 = abs(rootdist x) <= abs(vel x)
 value = 10000
 
 
-;====================<RESTING ON NAKORURU>====================
+;==RESTING ON NAKORURU==
 [Statedef 10010]
 type = A
 physics = N
@@ -619,7 +619,7 @@ channel = 1
 freqmul = 0.95 + (random / 10000.0)
 
 
-;====================<TIME OVER>====================
+;==TIME OVER==
 [Statedef 10020]
 type = A
 physics = N
@@ -744,7 +744,7 @@ volumescale = 80
 channel = 0
 
 
-;====================<INTRO 1>====================
+;==INTRO 1==
 [Statedef 10030]
 type = A
 physics = N
@@ -776,7 +776,7 @@ pos = -6, -73
 facing = 1
 
 
-;====================<INTRO 3>====================
+;==INTRO 3==
 [Statedef 10035]
 type = A
 physics = N
@@ -808,7 +808,7 @@ pos = -6, -73
 facing = 1
 
 
-;====================<WIN 1>====================
+;==WIN 1==
 [Statedef 10040]
 type = A
 physics = N
@@ -940,7 +940,7 @@ channel = 1
 freqmul = 0.95 + (random / 10000.0)
 
 
-;====================<WIN 2>====================
+;==WIN 2==
 [Statedef 10050]
 type = A
 physics = N
@@ -1079,7 +1079,7 @@ channel = 1
 freqmul = 0.95 + (random / 10000.0)
 
 
-;====================<S.D. TAUNT>====================
+;==S.D. TAUNT==
 [Statedef 10060]
 type = A
 physics = N
@@ -1194,7 +1194,7 @@ pos = -3, -43
 facing = 1
 
 
-;====================<WIN 3>====================
+;==WIN 3==
 [Statedef 10070]
 type = A
 physics = N
@@ -1318,7 +1318,7 @@ volumescale = 80
 channel = 0
 
 
-;====================<KO>====================
+;==KO==
 [Statedef 10080]
 type = A
 physics = N
@@ -1452,7 +1452,7 @@ volumescale = 80
 channel = 0
 
 
-;========================<MAMAHAHA NI TSUKAMARU>=============================
+;==MAMAHAHA NI TSUKAMARU=
 [Statedef 10100]
 type = A
 physics = N
@@ -1542,7 +1542,7 @@ pos = 2, -94
 facing = 1
 
 
-;========================<AMUBE YATORO>=============================
+;==AMUBE YATORO=
 [Statedef 10200]
 type = A
 physics = N
@@ -1642,8 +1642,8 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = High
 air.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -1760,7 +1760,7 @@ trigger1 = time >= 0
 value = 10200
 
 
-;========================<EX AMUBE YATORO>=============================
+;==EX AMUBE YATORO=
 [Statedef 10250]
 type = A
 physics = N
@@ -1855,8 +1855,8 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = High
 air.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -2144,7 +2144,7 @@ trigger1 = pos y > -vel y
 value = 5100
 
 
-;========================<SHICHIKAPU KAMUI IRUSHIKA>=============================
+;==SHICHIKAPU KAMUI IRUSHIKA=
 [Statedef 10400]
 type = A
 physics = N
@@ -2544,7 +2544,7 @@ trigger2 = frontedgedist < -160 || backedgedist < -160
 value = 10005
 
 
-;========================<ELERUSH KAMUI RIMSE>=============================
+;==ELERUSH KAMUI RIMSE=
 [Statedef 10500]
 type = A
 physics = N
@@ -2628,7 +2628,7 @@ trigger2 = root, stateno != 3001
 value = 10000
 
 
-;========================<IRUSUKA YATORO LISE>=============================
+;==IRUSUKA YATORO LISE=
 [Statedef 10600]
 type = A
 physics = N

@@ -1,11 +1,11 @@
 ; _______________________________
 ;| Vega by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;==
+;=HELPER STATES==
+;==
 
-;========================<PROJECTILE BANISHER>=============================
+;==PROJECTILE BANISHER=
 [Statedef 227]
 type = A
 physics = N
@@ -65,7 +65,7 @@ type = destroyself
 trigger1 = time > 0
 
 
-;========================<PROJECTILE SHIELD>=============================
+;==PROJECTILE SHIELD=
 [Statedef 1007]
 type = A
 physics = N
@@ -150,7 +150,7 @@ flag = invisible
 flag2 = noshadow
 
 
-;========================<PSYCHO FIELD>=============================
+;==PSYCHO FIELD=
 ;----- ADVANCING -----
 [Statedef 1605]
 type = A
@@ -383,8 +383,8 @@ sparkxy = -10 + 0 * (map(sparkx.min) := -60) * (map(sparkx.max) := 60), map(spar
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(p2dist x < 0, 10.52, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -466,7 +466,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<EX PSYCHO FIELD>=============================
+;==EX PSYCHO FIELD=
 ;----- ADVANCING -----
 [Statedef 1635]
 type = A
@@ -710,8 +710,8 @@ sparkxy = -10 + 0 * (map(sparkx.min) := -60) * (map(sparkx.max) := 60), map(spar
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(p2dist x < 0, 10.52, -10.52), 0
 ground.cornerpush.veloff = 0
@@ -747,7 +747,7 @@ trigger1 = var(1) >= 30
 value = 1612
 
 
-;========================<PSYCHO MINE>=============================
+;==PSYCHO MINE=
 ;----- PLANTED -----
 [Statedef 1315]
 type = A
@@ -1041,8 +1041,8 @@ sparkxy = -10 + 0 * (map(sparkx.min) := -20) * (map(sparkx.max) := 20), map(spar
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -3.0, -8.0
 ground.cornerpush.veloff = 0
@@ -1089,7 +1089,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<PSYCHO CANNON>=============================
+;==PSYCHO CANNON=
 ;----- Charging -----
 [Statedef 3209]
 type = S
@@ -1464,7 +1464,7 @@ type = destroyself
 trigger1 = !animtime
 
 
-;========================<PSYCHO POWER>=============================
+;==PSYCHO POWER=
 [Statedef 6000]
 physics = N
 anim = 9999
@@ -1631,7 +1631,7 @@ trigger4 = root, movetype = H
 trigger5 = time >= 180
 
 
-;========================<PSYCHO CRUSHER>=============================
+;==PSYCHO CRUSHER=
 [Statedef 1005]
 physics = N
 anim = 1005
@@ -1691,7 +1691,7 @@ type = destroyself
 trigger1 = time >= 8
 
 
-;========================<PSYCHO BREAK SMASHER>=============================
+;==PSYCHO BREAK SMASHER=
 [Statedef 3310]
 physics = N
 anim = 3310
@@ -1729,7 +1729,7 @@ trigger1 = !animtime
 trigger1 = anim = 3311
 
 
-;========================<DUST>=============================
+;==DUST=
 ;----- Jump -----
 [Statedef 7100]
 physics = N
@@ -1836,7 +1836,7 @@ type = destroyself
 trigger1 = !numexplod
 
 
-;====================<POWER CHARGE>====================
+;==POWER CHARGE==
 ;----- MAIN FX -----
 [Statedef 7240]
 type = A
@@ -1971,7 +1971,7 @@ type = destroyself
 trigger1 = root, stateno != 740
 
 
-;====================<ZERO COUNTER PAUSE>====================
+;==ZERO COUNTER PAUSE==
 [Statedef 7250]
 type = A
 physics = N
@@ -2022,7 +2022,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================<CUSTOM COMBO PAUSE=============================
+;==CUSTOM COMBO PAUSE=
 [Statedef 7260]
 type = A
 physics = N
@@ -2123,7 +2123,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;========================<SUPERPAUSE FX>=============================
+;==SUPERPAUSE FX=
 ;----- Level 1 -----
 [Statedef 8500]
 type = A
@@ -2587,7 +2587,7 @@ type = destroyself
 trigger1 = time >= 40
 
 
-;========================<SUPER FINISH>=============================
+;==SUPER FINISH=
 [Statedef 8600]
 type = A
 velset = 0, 0
@@ -2765,7 +2765,7 @@ trigger1 = time >= 24
 trigger1 = roundstate != 3
 
 
-;========================<PURPLE FLAMES>=============================
+;==PURPLE FLAMES=
 [Statedef 8150]
 type = A
 velset = 0, 0
@@ -2849,7 +2849,7 @@ trigger3 = time > 0
 trigger3 = playerID(map(target)), palfxvar(time) = 0
 
 
-;========================<CAMERA CONTROL>=============================
+;==CAMERA CONTROL=
 [Statedef 8999]
 physics = N
 velset = 0, 0

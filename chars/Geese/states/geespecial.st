@@ -1,11 +1,11 @@
 ; _______________________________________
 ;| Geese Howard by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;========================================<SPECIAL MOVES>=======================================
-;==============================================================================================
+;==
+;==SPECIAL MOVES=
+;==
 
-;========================<REPPUKEN>=============================
+;==REPPUKEN=
 [Statedef 1000]
 type = S
 physics = S
@@ -268,7 +268,7 @@ value = 0
 ctrl = 1
 
 
-;========================<EX REPPUKEN>=============================
+;==EX REPPUKEN=
 [Statedef 1030]
 type = S
 physics = N
@@ -371,7 +371,7 @@ value = 0
 ctrl = 1
 
 
-;========================<JAEIKEN>=============================
+;==JAEIKEN=
 [Statedef 1100]
 type = S
 physics = N
@@ -572,8 +572,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -622,8 +622,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -671,8 +671,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -723,7 +723,7 @@ value = 0
 ctrl = 1
 
 
-;========================<EX JAEIKEN>=============================
+;==EX JAEIKEN=
 [Statedef 1130]
 type = S
 physics = N
@@ -841,8 +841,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -965,8 +965,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -1019,8 +1019,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -1077,7 +1077,7 @@ value = 0
 ctrl = 1
 
 
-;========================<BURNED>=============================
+;==BURNED=
 [Statedef 7697]
 type = U
 physics = N
@@ -1161,7 +1161,7 @@ trigger1 = pos y >= 25
 value = 5100
 
 
-;========================<JOUDAN ATEMI NAGE>=============================
+;==JOUDAN ATEMI NAGE=
 [Statedef 1200]
 type = S
 physics = S
@@ -1592,7 +1592,7 @@ trigger1 = pos y >= 25
 value = 5110
 
 
-;========================<CHUUDAN ATEMI NAGE>=============================
+;==CHUUDAN ATEMI NAGE=
 [Statedef 1220]
 type = S
 physics = S
@@ -1985,7 +1985,7 @@ trigger1 = pos y >= 25
 value = 5110
 
 
-;========================<GEDAN ATEMI NAGE>=============================
+;==GEDAN ATEMI NAGE=
 [Statedef 1240]
 type = S
 physics = S
@@ -2358,7 +2358,7 @@ trigger1 = pos y >= 25
 value = 5100
 
 
-;========================<EX ATEMI NAGE>=============================
+;==EX ATEMI NAGE=
 [Statedef 1260]
 type = S
 physics = S
@@ -2668,7 +2668,7 @@ value = 0
 ctrl = 1
 
 
-;========================<SHIPPUKEN>=============================
+;==SHIPPUKEN=
 [Statedef 1300]
 type = A
 physics = N
@@ -2820,7 +2820,7 @@ value = 0
 ctrl = 1
 
 
-;========================<EX SHIPPUKEN>=============================
+;==EX SHIPPUKEN=
 [Statedef 1320]
 type = A
 physics = N
@@ -2980,7 +2980,7 @@ value = 0
 ctrl = 1
 
 
-;========================<HISHOU NICHIRIN ZAN>=============================
+;==HISHOU NICHIRIN ZAN=
 [Statedef 1400]
 type = S
 physics = N
@@ -3141,8 +3141,8 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -3190,8 +3190,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -3276,7 +3276,7 @@ value = 0
 ctrl = 1
 
 
-;========================<EX HISHOU NICHIRIN ZAN>=============================
+;==EX HISHOU NICHIRIN ZAN=
 [Statedef 1420]
 type = S
 physics = N
@@ -3440,8 +3440,8 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -3490,8 +3490,8 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -3536,7 +3536,7 @@ trigger1 = pos y > -vel y
 value = 1403
 
 
-;========================<PUNCH ZERO COUNTER>=============================
+;==PUNCH ZERO COUNTER=
 [Statedef 2900]
 type = S
 physics = N
@@ -3586,8 +3586,8 @@ air.animtype = Diagup
 fall.animtype = Diagup
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -3629,7 +3629,7 @@ value = 0
 ctrl = 1
 
 
-;========================<KICK ZERO COUNTER>=============================
+;==KICK ZERO COUNTER=
 [Statedef 2910]
 type = S
 physics = N
@@ -3679,8 +3679,8 @@ air.animtype = Diagup
 fall.animtype = Diagup
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16

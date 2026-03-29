@@ -1,11 +1,11 @@
 ; _______________________________
 ;| Vega by Phantom.of.the.Server |
 ; 
-;============================================================================================
-;=====================================<SPECIAL STATES>=======================================
-;============================================================================================
+;==
+;=SPECIAL STATES=
+;==
 
-;======================<PSYCHO CRUSHER>=============================
+;==PSYCHO CRUSHER=
 [Statedef 1000]
 type = S
 physics = S
@@ -178,8 +178,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = ifelse(map(strength) = 2, -6.0, ifelse(map(strength) = 1, -5.0, -4.0)), ifelse(map(strength) = 2, -7.0, ifelse(map(strength) = 1, -6.0, -5.0))
 ground.cornerpush.veloff = 0
@@ -282,7 +282,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX PSYCHO CRUSHER>=============================
+;==EX PSYCHO CRUSHER=
 [Statedef 1030]
 type = S
 physics = S
@@ -451,8 +451,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -5.5, -5.5
 ground.cornerpush.veloff = 0
@@ -490,7 +490,7 @@ trigger2 = time >= 37
 value = 1001
 
 
-;========================<BURNED>=============================
+;==BURNED=
 [Statedef 7697]
 type = U
 physics = N
@@ -574,7 +574,7 @@ trigger1 = pos y >= 25
 value = 5100
 
 
-;======================<DOUBLE KNEE PRESS>=============================
+;==DOUBLE KNEE PRESS=
 [Statedef 1100]
 type = S
 physics = N
@@ -714,8 +714,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -10.52, 0
 ground.cornerpush.veloff = 0
@@ -761,8 +761,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -10.52, 0
 air.type = Low
@@ -838,7 +838,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX DOUBLE KNEE PRESS>=============================
+;==EX DOUBLE KNEE PRESS=
 [Statedef 1130]
 type = S
 physics = N
@@ -982,8 +982,8 @@ guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
 ground.slidetime = 15
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.velocity = -7.51, 0
 ground.cornerpush.veloff = 0
 guard.ctrltime = 1 + 16
@@ -1029,8 +1029,8 @@ guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
 ground.slidetime = 15
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.velocity = -7.51, 0
 air.type = Low
 air.velocity = -4.0, -6.0
@@ -1105,7 +1105,7 @@ value = 0
 ctrl = 1
 
 
-;======================<HEAD PRESS>=============================
+;==HEAD PRESS=
 [Statedef 1200]
 type = S
 physics = N
@@ -1234,8 +1234,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -10.52, 0
 ground.cornerpush.veloff = 0
@@ -1566,8 +1566,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -7, 0
 ground.cornerpush.veloff = 0
@@ -1605,7 +1605,7 @@ trigger1 = pos y > 0
 value = 1203
 
 
-;======================<DEVIL REVERSE>=============================
+;==DEVIL REVERSE=
 [Statedef 1250]
 type = S
 physics = N
@@ -1834,8 +1834,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -4, -7
 air.type = Low
@@ -1884,7 +1884,7 @@ trigger1 = pos y > -vel y
 value = 1203
 
 
-;======================<EX HEAD PRESS>=============================
+;==EX HEAD PRESS=
 [Statedef 1270]
 type = S
 physics = N
@@ -2038,8 +2038,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -10.52, 0
 ground.cornerpush.veloff = 0
@@ -2289,8 +2289,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -7.51, 0
 ground.cornerpush.veloff = 0
@@ -2443,8 +2443,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -4, -7
 air.type = Low
@@ -2598,7 +2598,7 @@ trigger1 = pos y >= const(movement.down.bounce.groundlevel)
 value = 5110
 
 
-;======================<PSYCHO IMPACT>=============================
+;==PSYCHO IMPACT=
 [Statedef 1300]
 type = S
 physics = S
@@ -2792,8 +2792,8 @@ guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
 ground.slidetime = 12
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.velocity = -4.49, 0
 ground.cornerpush.veloff = 0
 guard.ctrltime = 1 + 16
@@ -2835,8 +2835,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -6, -6
 air.type = Low
@@ -2897,7 +2897,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX PSYCHO IMPACT>=============================
+;==EX PSYCHO IMPACT=
 [Statedef 1330]
 type = S
 physics = S
@@ -3106,8 +3106,8 @@ guardsound = s2, 0
 guardsound.channel = 2
 ground.type = Low
 ground.slidetime = 12
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.velocity = -4.49, 0
 ground.cornerpush.veloff = 0
 guard.ctrltime = 1 + 16
@@ -3149,8 +3149,8 @@ hitsound.channel = 2
 guardsound = s2, 0
 guardsound.channel = 2
 ground.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 ground.velocity = -6.0, -6.0
 air.type = Low
@@ -3209,7 +3209,7 @@ value = 0
 ctrl = 1
 
 
-;======================<PSYCHO FIELD>=============================
+;==PSYCHO FIELD=
 [Statedef 1600]
 type = S
 physics = S
@@ -3286,7 +3286,7 @@ value = 0
 ctrl = 1
 
 
-;======================<EX PSYCHO FIELD>=============================
+;==EX PSYCHO FIELD=
 [Statedef 1630]
 type = S
 physics = S
@@ -3388,7 +3388,7 @@ value = 0
 ctrl = 1
 
 
-;======================<VEGA WARP>=============================
+;==VEGA WARP=
 [Statedef 1700]
 type = S
 physics = N
@@ -3583,7 +3583,7 @@ value = 0
 ctrl = 1
 
 
-;========================<PUNCH ZERO COUNTER>=============================
+;==PUNCH ZERO COUNTER=
 [Statedef 2900]
 type = S
 physics = N
@@ -3633,8 +3633,8 @@ air.animtype = Diagup
 fall.animtype = Diagup
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 air.hittime = 120
 ground.velocity = -5.54, -5.25
@@ -3685,7 +3685,7 @@ value = 0
 ctrl = 1
 
 
-;========================<KICK ZERO COUNTER>=============================
+;==KICK ZERO COUNTER=
 [Statedef 2910]
 type = S
 physics = N

@@ -1,11 +1,11 @@
 ; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;=======================================<HELPER STATES>========================================
-;==============================================================================================
+;==
+;=HELPER STATES==
+;==
 
-;========================<BLADE>=============================
+;==BLADE=
 [Statedef 6000]
 type = A
 physics = N
@@ -168,7 +168,7 @@ trigger1 = root, stateno != 185
 trigger2 = root, stateno = 185 && root, animelemtime(19) >= 0
 
 
-;========================<KAMUI RIMSE REFLECTION>=============================
+;==KAMUI RIMSE REFLECTION=
 [Statedef 1250]
 type = A
 physics = N
@@ -293,7 +293,7 @@ type = destroyself
 trigger1 = 1
 
 
-;========================<REFLECTED FIREBALL>=============================
+;==REFLECTED FIREBALL=
 [Statedef 1260]
 type = S
 physics = N
@@ -380,8 +380,8 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = High
 air.type = High
-ground.hittime = 1 + 18; + 2 * map(counterhit_buffer)
-guard.hittime = (1 + 18; + 2 * map(counterhit_buffer)) - 6
+ground.hittime = 1 + 18
+guard.hittime = (1 + 18) - 6
 ground.slidetime = 18
 guard.ctrltime = 1 + 16
 guard.slidetime = 16
@@ -512,7 +512,7 @@ type = destroyself
 trigger1 = time >= 22
 
 
-;========================<ANNU MUTSUBE>=============================
+;==ANNU MUTSUBE=
 ;----- Main -----
 [Statedef 1005]
 type = A
@@ -606,7 +606,7 @@ trigger1 = time >= 10
 trigger2 = root, movetype = H
 
 
-;========================<IRUSUKA YATORO LISE GLOW>=============================
+;==IRUSUKA YATORO LISE GLOW=
 [Statedef 3305]
 type = A
 physics = N
@@ -665,7 +665,7 @@ type = destroyself
 trigger1 = root, stateno != 3300 || root, movetype = H
 
 
-;========================<GANSO LELA MUTSUBE FX>=============================
+;==GANSO LELA MUTSUBE FX=
 [Statedef 3405]
 type = A
 physics = N
@@ -706,7 +706,7 @@ trigger2 = root, stateno = 3400
 trigger2 = root, animelemtime(10) < 0 || root, animelemtime(12) >= 0
 
 
-;====================<AMUBE YATORO FX>====================
+;==AMUBE YATORO FX==
 [Statedef 10205]
 type = A
 velset = 0, 0
@@ -759,7 +759,7 @@ trigger1 = parent, movetype = H
 trigger2 = parent, stateno != [10200, 10201]
 
 
-;========================<SHICHIKAPU KAMUI IRUSHIKA FX>=============================
+;==SHICHIKAPU KAMUI IRUSHIKA FX=
 [Statedef 10415]
 type = A
 physics = N
@@ -863,7 +863,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;====================<IRUSUKA YATORO LISE MAMAHAHA FX>====================
+;==IRUSUKA YATORO LISE MAMAHAHA FX==
 [Statedef 10615]
 type = A
 velset = 0, 0
@@ -1013,7 +1013,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================<HEALING FX>=============================
+;==HEALING FX=
 [Statedef 3210]
 type = A
 physics = N
@@ -1204,7 +1204,7 @@ trigger1 = time >= 20
 trigger2 = root, stateno != 3202 || root, movetype = H
 
 
-;========================<SOUL>=============================
+;==SOUL=
 [Statedef 4005]
 type = A
 physics = N
@@ -1236,7 +1236,7 @@ type = destroyself
 trigger1 = time >= 120
 
 
-;========================<STABBED BLADE>=============================
+;==STABBED BLADE=
 [Statedef 4121]
 type = A
 physics = N
@@ -1259,7 +1259,7 @@ trigger4 = root, stateno = 4130
 trigger4 = root, anim = 4130 && root, animelemtime(20) < 0
 
 
-;====================<MANARI>====================
+;==MANARI==
 ;----- Intro -----
 [Statedef 6100]
 type = S
@@ -1377,7 +1377,7 @@ scale = 0.5, 0.5
 ownpal = 1
 
 
-;========================<DUST>=============================
+;==DUST=
 ;----- Jump -----
 [Statedef 8100]
 type = S
@@ -1542,7 +1542,7 @@ type = destroyself
 trigger1 = !numexplod
 
 
-;========================<FLAMES>=============================
+;==FLAMES=
 [Statedef 8150]
 type = A
 velset = 0, 0
@@ -1617,7 +1617,7 @@ scale = 0.5, 0.5
 ownpal = 1
 
 
-;========================<SPARKLES>=============================
+;==SPARKLES=
 [Statedef 8160]
 type = A
 velset = 0, 0
@@ -1677,7 +1677,7 @@ scale = 0.5, 0.5
 ownpal = 1
 
 
-;====================<POWER CHARGE>====================
+;==POWER CHARGE==
 ;----- MAIN FX -----
 [Statedef 8330]
 type = S
@@ -1807,7 +1807,7 @@ type = destroyself
 trigger1 = root, stateno != 730
 
 
-;====================<GUARD CANCEL CHARGE>====================
+;==GUARD CANCEL CHARGE==
 [Statedef 8350]
 type = S
 anim = 9999
@@ -1861,7 +1861,7 @@ type = destroyself
 trigger1 = time >= 16
 
 
-;========================<CUSTOM COMBO>=============================
+;==CUSTOM COMBO=
 [Statedef 8400]
 type = A
 physics = N
@@ -1962,7 +1962,7 @@ type = destroyself
 trigger1 = time >= 26
 
 
-;========================<SUPERPAUSE FX>=============================
+;==SUPERPAUSE FX=
 ;----- Level 1 -----
 [Statedef 8500]
 type = A
@@ -2437,7 +2437,7 @@ type = destroyself
 trigger1 = time >= 40
 
 
-;========================<SUPER FINISH>=============================
+;==SUPER FINISH=
 [Statedef 8600]
 type = A
 velset = 0, 0
@@ -2601,7 +2601,7 @@ trigger1 = time > 20
 trigger1 = roundstate != 3
 
 
-;========================<EXCEL FINISH>=============================
+;==EXCEL FINISH=
 [Statedef 8650]
 type = A
 velset = 0, 0
@@ -2711,7 +2711,7 @@ trigger1 = time > 20
 trigger1 = roundstate != 3
 
 
-;========================<CAMERA CONTROL>=============================
+;==CAMERA CONTROL=
 [Statedef 8999]
 type = S
 velset = 0, 0

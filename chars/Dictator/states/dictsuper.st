@@ -1,11 +1,11 @@
 ; _______________________________
 ;| Vega by Phantom.of.the.Server |
 ; 
-;==============================================================================================
-;========================================<SUPER STATES>========================================
-;==============================================================================================
+;==
+;==SUPER STATES==
+;==
 
-;======================<NIGHTMARE BOOSTER>=============================
+;==NIGHTMARE BOOSTER=
 [Statedef 3000]
 type = S
 physics = S
@@ -897,7 +897,7 @@ trigger1 = time >= 60
 value = 5120
 
 
-;======================<PSYCHO BREAK SMASHER>=============================
+;==PSYCHO BREAK SMASHER=
 [Statedef 3300]
 type = S
 physics = S
@@ -1250,7 +1250,7 @@ value = 0
 ctrl = 1
 
 
-;======================<KNEE PRESS NIGHTMARE>=============================
+;==KNEE PRESS NIGHTMARE=
 [Statedef 3100]
 type = S
 physics = S
@@ -1820,7 +1820,7 @@ value = 0
 ctrl = 1
 
 
-;======================<PSYCHO CANNON>=============================
+;==PSYCHO CANNON=
 [Statedef 3200]
 type = S
 physics = S
@@ -2018,7 +2018,7 @@ value = 0
 ctrl = 1
 
 
-;======================<FINAL PSYCHO CRUSHER>=============================
+;==FINAL PSYCHO CRUSHER=
 [Statedef 4000]
 type = S
 physics = N
