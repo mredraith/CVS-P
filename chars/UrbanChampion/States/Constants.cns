@@ -103,13 +103,13 @@ draw.offset = 0, 0
 [Velocity]
 walk.fwd  = 2.59
 walk.back = -2.338
-run.fwd  = 4.32
-run.back = -4.48,-4.2
+run.fwd  = 5.32
+run.back = -5.48,-4.2
 jump.neu = 0,-8.52
 jump.back = -2.52
 jump.fwd = 2.8
-runJump.fwd = 4.1, -9.52
-runJump.back = -3.7, -9.52
+runJump.fwd = 5.48, -9.52
+runJump.back = -5.48, -9.52
 airjump.neu = 0,-6.5
 airjump.back = -2.8
 airjump.fwd = 2.8

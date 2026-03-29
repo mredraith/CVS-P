@@ -93,7 +93,7 @@ type = VarSet
 triggerAll = !var(14) && AnimElemTime(5 + 1*(var(10)>0)) >= 0 && AnimElemTime(6 + 1*(var(10)>0)) < 0
 trigger1 = !AILevel
 ;c
-trigger1 = NumExplod(90000250)
+trigger1 = NumExplod(90000220)
 var(14) = 1015
 
 [State 1000, Low Sweep]
@@ -101,7 +101,7 @@ type = VarSet
 triggerAll = !var(14) && AnimElemTime(5 + 1*(var(10)>0)) >= 0 && AnimElemTime(6 + 1*(var(10)>0)) < 0
 trigger1 = !AILevel
 ;b
-trigger1 = NumExplod(90000240)
+trigger1 = NumExplod(90000210)
 var(14) = 1010
 
 [State 1000, High Smash]
@@ -109,7 +109,7 @@ type = VarSet
 triggerAll = !var(14) && AnimElemTime(5 + 1*(var(10)>0)) >= 0 && AnimElemTime(6 + 1*(var(10)>0)) < 0
 trigger1 = !AILevel
 ;a
-trigger1 = NumExplod(90000230)
+trigger1 = NumExplod(90000200)
 var(14) = 1005
 
 [State 1000, Power Launcher]
@@ -117,7 +117,7 @@ type = Null;VarSet
 triggerAll = (!var(14) || AILevel) && AnimElemTime(5 + 1*(var(10)>0)) >= 0 && AnimElemTime(6 + 1*(var(10)>0)) < 0
 trigger1 = !AILevel
 ;c
-trigger1 = NumExplod(90000250)
+trigger1 = NumExplod(90000220)
 var(14) = 1020
 
 [State 1000, AI Followup]
@@ -206,7 +206,7 @@ air.fall = 1
 fall.recover = 1
 fall.recoverTime = 120
 forceStand = 1
-hitSound = -1 + 0 * (var(31) := 2)
+hitSound = -1 + 0 * (var(31) := 1)
 guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -536,7 +536,7 @@ type = VarSet
 triggerAll = (!var(14) || AILevel) && AnimElemTime(5) >= 0 && AnimElemTime(6) < 0
 trigger1 = !AILevel
 ;c
-trigger1 = NumExplod(90000250)
+trigger1 = NumExplod(90000220)
 var(14) = 1045
 
 [State 1000, Low Sweep]
@@ -544,7 +544,7 @@ type = VarSet
 triggerAll = (!var(14) || AILevel) && AnimElemTime(5) >= 0 && AnimElemTime(6) < 0
 trigger1 = !AILevel
 ;b
-trigger1 = NumExplod(90000240)
+trigger1 = NumExplod(90000210)
 var(14) = 1040
 
 [State 1000, High Smash]
@@ -552,7 +552,7 @@ type = VarSet
 triggerAll = (!var(14) || AILevel) && AnimElemTime(5) >= 0 && AnimElemTime(6) < 0
 trigger1 = !AILevel
 ;a
-trigger1 = NumExplod(90000230)
+trigger1 = NumExplod(90000200)
 var(14) = 1035
 
 [State 1000, AI Followup]

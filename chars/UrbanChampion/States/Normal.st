@@ -1583,7 +1583,7 @@ channel = 1
 [State 450, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 5
+trigger1 = AnimElem >= 5
 ID = 450
 attr = C, NA
 hitFlag = MAF
@@ -1847,6 +1847,11 @@ type = PlaySnd
 trigger1 = AnimElem = 3
 value = 1, 2
 channel = 1
+
+[State 620, Veladd]
+type = veladd
+trigger1 = animelem = 4
+x = 2
 
 [State 620, HitDef]
 type = HitDef
