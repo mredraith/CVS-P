@@ -1,0 +1,66 @@
+; ________________________________________________
+;| Urban Champion by NovaMagnolia			|
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<DEFINITION>====================
+[Info]
+name        = "Urban Champion"
+displayName = "Urban Champion"
+versionDate = 12,25,2025
+mugenVersion= 1.0
+author      = "NovaMagnolia"
+pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
+localCoord  = 428,240
+
+;SC;author = "NovaMagnolia"
+;SC;Idle = 20050127
+;SC;Preview = 7503,1
+
+[Files]
+cmd     = States/Command.st
+cns     = States/Constants.cns
+st      = States/System.st
+st1     = States/Normal.st
+st2     = States/Special.st
+st3     = States/Super.st
+st4     = States/Helpers.st
+st5     = _CONFIG.txt
+stCommon= common1.cns
+sprite  = States/Sprite.sff
+anim    = States/Anim.air
+sound   = States/Sound.snd
+
+;(IKEMEN GO ONLY)
+;For Urban Champions's Normal Mode & 2010 Mode, change to "States/movelist.dat".
+;For Urban Champion's Boss Mode, change to "States/movelist-boss.dat".
+movelist = movelist.dat
+
+pal1	= Palettes/NovaMagnolia_Default.act
+pal2	= Palettes/NovaMagnolia_Player2.act
+pal3	= Palettes/NovaMagnolia_AmericanBoxArt.act
+pal4	= Palettes/NovaMagnolia_IceClimbers.act
+pal5	= Palettes/NovaMagnolia_WeirdPurplePalette.act
+pal6	= Palettes/NovaMagnolia_DevilWorld.act
+pal7	= Palettes/NovaMagnolia_VsUrbanChampion.act
+pal8	= Palettes/NovaMagnolia_VsUrbanChampion-5thOpponent.act
+pal9	= Palettes/NovaMagnolia_JapaneseBoxArt.act
+pal10	= Palettes/NovaMagnolia_Balrog-Boxer.act
+pal11	= Palettes/NovaMagnolia_Cody-FinalFight.act
+pal12	= Palettes/NovaMagnolia_Sherm-BattleCraze.act
+
+[Palette Keymap]
+a = 4
+b = 5
+c = 6
+x = 1
+y = 2
+z = 3
+a2 = 10
+b2 = 11
+c2 = 12
+x2 = 7
+y2 = 8
+z2 = 9
+
+;[Arcade]
+;intro.storyBoard = intro.def
+;ending.storyBoard = ending.def

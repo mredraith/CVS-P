@@ -1,0 +1,174 @@
+;====================<VARIABLE LIST>====================
+
+;var(2)  : Air Gravity Timer
+;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4)  : Chain Combo (0 = Off; 1 = On)
+;var(5)  : Command Cancel Flag
+;var(6)  : Cancel Flag
+;var(7)  : Super Cancel Flag
+;var(8)  : Hyper Cancel Flag
+;var(9)  : Counter Flag
+;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Heavy)
+;var(11) : 
+;var(12) : 
+;var(13) : Hit Count
+;var(14) : Followup Detection (0 = Off; 105 = Dash Backward; 110 = Dash Forwards; 221 = Kikokuzuki; 251 = Kikokuretsuzan)
+;var(15) : Juggle Points
+;var(16) : Juggle Flag
+;var(17) : Ticks UnGuardable
+;var(18) : ProjContact (0 = No; 1 = Yes)
+;var(19) : Throw Escape
+;var(20) : Custom Combo Time
+;var(21) : Super Cancel Flag
+;var(22) : Hyper Cancel Flag
+;var(23) : Super Finish Type (900 = Custom Combo; 3000 = Shinku Hadoken; 3020 = Rakuyo Hadoken; 3100 = Denjin Hadoken; 3200 = Shinku Tatsumaki Senpukyaku; 3300 = Shin Shoryuken; 3400 = Messatsu Goshoryu; 3500 = Metsu Hadoken; 3600 = Shun Goku Satsu; 3700 = Misogi; 3800 = Messatsu Ryukosai; 3900 = Taigyaku Mudo; 4000 = ???)
+;var(24) : Power Check
+;var(25) : Ticks to Apply EX FX
+;var(26) : Ticks Unable to Walk
+;var(27) : Lv3 Super Finish Detection
+;var(28) :
+;var(29) :
+;var(30) : Hit Detection
+;var(31) : Hit Sound (0 = Light Punch; 1 = Medium Punch; 2 = Heavy Punch; 3 = Light Kick; 4 = Medium Kick; 5 = Heavy Kick; 6 = Projectile Hit; 800 = Grab)
+;var(32) : Guard Sound
+;var(33) : Hit Spark (8010 = Light; 8011 = Medium; 8012 = Heavy; 8013 = Special; 8014 = Super)
+;var(34) : Guard Spark (8000 = Normal; 8001 = Special; 8005 = Normal Guard Break; 8006 = Special Guard Break)
+;var(35) : Spark xPos
+;var(36) : Spark yPos
+;var(37) : Special/Super Throws (0 = Allowed; 1 = Not Allowed)
+;var(38) : Throw (0 = Allowed; 1 = Not Allowed)
+;var(39) : Projectile Flag (0 = Off; 1 = On)
+;var(40) : Mode (0 = Normal; 1 = 2010; 2 = MESSATSU)
+;var(41) : KO Sound
+;var(42) :
+;var(43) : Player ID to apply flames to
+;var(44) : Flame particles timer
+;var(45) : Player ID to apply electric sparks to
+;var(46) : Electric particles timer
+;var(47) : Ticks Back is held down
+;var(48) : Back Charge Buffer
+;var(49) :
+;var(50) : Playing with Power Time
+;var(51) : Power Launcher Juggle Flag (0 = Can't juggle; 1 = Can juggle)
+;var(52) : HP Fists of Fury (0 = Can't juggle; 1 = Can juggle)
+;var(53) : EX Street Upper Juggle Flag (0 = Can't juggle; 1 = Can juggle)
+;var(54) : EX Ultimate Haymaker (0 = Can't juggle; 1 = Can juggle)
+;var(55) : ??? Juggle Flag (0 = Can't juggle; 1 = Can juggle)
+;var(56) : EX Flowerpot Drop / Flowerpot Crash Crumple Flag (0 = Can't crumple; 1 = Can crumple)
+;var(57) : MAX Flowerpot Crash Stun Flag (0 = Can't stun; 1 = Can stun)
+;var(58) : Game Time
+
+
+;fvar(5) : Amount of Corner Push
+;fvar(10): Damage Dampener
+;fvar(11): Damage Dampener with Counter Multiplier Added
+
+
+
+; ________________________________________________
+;| Urban Champion by NovaMagnolia			|
+; 
+;====================<CONSTANTS>====================
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
+sparkNo = s8010
+guard.sparkNo = s8000
+KO.echo = 0
+volume = 128
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xScale = 1.55
+yScale = 1.55
+ground.back = 18
+ground.front = 18
+air.back = 18
+air.front = 18
+height = 78
+attack.dist = 160
+proj.attack.dist = 90
+proj.doScale = 0
+head.pos = 3, -88
+mid.pos = -2, -61
+shadowOffset = 0
+draw.offset = 0, 0
+
+[Velocity]
+walk.fwd  = 2.59
+walk.back = -2.338
+run.fwd  = 4.32
+run.back = -4.48,-4.2
+jump.neu = 0,-8.52
+jump.back = -2.52
+jump.fwd = 2.8
+runJump.fwd = 4.1, -9.52
+runJump.back = -3.7, -9.52
+airjump.neu = 0,-6.5
+airjump.back = -2.8
+airjump.fwd = 2.8
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yAccel = 0.48828125
+stand.friction = 0.85
+crouch.friction = 0.85
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundLevel = 25
+air.gethit.groundRecover.ground.threshold = -20
+air.gethit.groundRecover.groundLevel = 10
+air.gethit.airRecover.threshold = -1
+air.gethit.airRecover.yAccel = 0.35
+air.gethit.trip.groundLevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yAccel = 0.4
+down.bounce.groundLevel = 12
+down.friction.threshold = 0.5
+
+
+;====================<WINQUOTES>====================
+[Quotes]
+victory0 = "i urban championed the shit out of you roflmao"
+victory1 = "Your mixups ain't anything I haven't seen from the streets before!"
+victory2 = "I'm still the Champ, baby!"
+victory3 = "Gettin' tired already? And just as I was getting started..."
+victory4 = "Heh, don't even need any of those stupid magic moves to bust you up!"
+victory5 = "Don'tcha call my technique boring! It's a tried and true classic 'round these parts!"
+victory6 = "The Champ always gets up swingin' after getting knocked down!"
+
+;Street Fighters
+victory7 = "Callin' yourself a 'Street Fighter'? Now that gets a chuckle outta me, pal!"
+
+;Kung Fu Man
+victory8 = "A karate man that ain't using those cheap magic tricks? Now we're talkin'!"
+
+;Boxers
+victory9 = "These fists reign as the King in these streets, y'hear?!"
+
+;Kick Masters
+victory10 = "Masterin' your legs instead of your fists? Quite an odd style, but I like it."
+
+;Mario
+victory11 = "So you're that plumber I've been hearin' about around town. You're a darn sight to behold."
+
+;Mega Man
+victory12 = "This 'Super Fighting Robot' is a super load of garbage!"
+
+;Urban Champion
+victory13 = "Don't you dare take my title, bud! Being the Champ of the city ain't easy!"
+
+;Kevin Rian
+victory14 = "...Officer, no hard feelings......right?"
+
+;Donald/Colonel Sanders
+victory15 = "...This must be a sign to stop eatin' from the Snack Bar so much."
+
+

@@ -1533,7 +1533,7 @@ value = 5300
 [State 3200, Crazy Damage]
 type = DefenceMulSet
 trigger1 = Animelemtime(6) >= 0 && animelemtime(9) < 0
-value = 500
+value = 5
 
 [State 3200, End]
 type = ChangeState

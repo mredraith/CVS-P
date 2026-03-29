@@ -1,0 +1,143 @@
+Movelist for Boss Mode.
+For Normal Mode & 2010 Mode, look at "movelist.dat".
+
+<#FFD400>Unique Attacks</>
+<#FFFFFF>Head Crusher</>									   
+_F_+^Y
+
+<#FFFFFF>Punch Pak</>									   
+^X,^Y
+
+<#FFFFFF>Face Breaker</>									   
+^X,^Z
+
+<#FFFFFF>Clu Clu Clock</>									   
+^A,^B
+
+<#FFFFFF>Gut Smasher</>									   
+^A,^C
+
+<#FFFFFF>Balloon Buster</>									   
+_D^X,_D^Y
+
+<#FFFFFF>Balloon Brawler</>									   
+_D^X,_D^Z
+
+<#FFD400>Throws</>
+<#ffffff>Black Eye Bruiser</>									
+[_F/_B]_+^P^P
+
+<#ffffff>Stomach Blow</>									
+[_F/_B]_+^K^K
+
+<#FFD400>Special Moves</>
+<#FFFFFF>Quick Dash_EX</>	                    
+_D_DF_F_+^K
+_!<#FFFFFF>Face Breaker</>	
+    ^A
+_!<#FFFFFF>Ankle Sweeper</>	
+    ^B
+_!<#FFFFFF>Head Smasher</>	
+    ^C
+
+<#FFFFFF>Flowerpot Drop_EX</>	                    
+_D_DF_F_+^P
+
+<#FFFFFF>Rising Champion_EX</>	                    
+_F_D_DF_+^P
+
+<#FFFFFF>Street Smasher_EX</>	                    
+_D_DB_B_+^K
+_!<#FFFFFF>Street Upper</>	
+    _D_DB_B_+^K
+
+<#FFFFFF>Ultimate Haymaker_EX</>	                    
+~B_F_+^K
+	
+<#FFFFFF>Fists of Fury</>	                    
+_F_DF_D_DB_B_+^P
+
+<#FFFFFF>Downtown Beatdown </><#aaaaaa>(_EX ONLY)</>	                    
+_F_DF_D_DB_B_+^P^P
+
+<#FFFFFF>Counterattack</>	                    
+^K^K^K
+_!<#FFFFFF>Power Punch</>	
+    _F_F
+_!<#FFFFFF>Weave n' Swing</>	
+    _B_B
+	
+<#FFD400>Super Moves</>
+<#FFFFFF>Urban Beatdown_MAX</>
+_D_DF_F_D_DF_F_+^P
+
+<#FFFFFF>Street Fight_MAX</>
+_D_DB_B_D_DB_B_+^P
+
+<#FFFFFF>Alley Uppercut_MAX</>
+_D_DB_B_D_DB_B_+^K
+
+<#FFFFFF>Flowerpot Crash_MAX</>
+_D_DB_B_DB_D_DF_F_+^P
+
+<#FFFFFF>Scapegoat</>
+_F_D_B_F_D_B_+^K
+
+<#FFFFFF>Playing With Power </><#aaaaaa>(_MAX ONLY)</>
+_D_D_D_+^P^P
+
+<#FFFFFF>Sewer Brawl </></><#FF0000>(LEVEL 3)</>
+_D_DF_F_D_DF_F_+^K^K
+
+<#FFFFFF>Raging Champion </></><#FF0000>(LEVEL 3)</>
+_D_DF_F_DF_D_DB_B_+^P^P
+
+<#FFD400>System Mechanics</>
+<#FFFFFF>Forward Dash</>
+_F_F
+_!<#FFFFFF>Run</>	
+    <#aaaaaa>(Hold) _F</>
+	
+<#FFFFFF>Back Dash</>
+_B_B
+
+<#FFFFFF>Super Jump</>
+<#aaaaaa>_D, _UB/_U/_UF</>
+
+<#FFFFFF>Short Hop</>
+<#aaaaaa>(Tap)_UB/_U/_UF</>
+
+<#FFFFFF>Hyper Hop</>
+<#aaaaaa>_D, (Tap)_UB/_U/_UF</>
+
+<#FFFFFF>Roll</>
+[_F/_B]_+^X^A
+
+<#FFFFFF>Dodge</>
+^X^A
+_!<#FFFFFF>Dodge Attack</>	
+    ^P/^K
+
+<#FFFFFF>Parry</>
+_!<#FFFFFF>High</>
+    <#aaaaaa>(Tap)_F</>
+_!<#FFFFFF>Low</>
+    <#aaaaaa>(Tap)_D</>
+_!<#FFFFFF>Air</>
+    <#aaaaaa>(Tap)(in Air)_F</>
+
+<#FFFFFF>Power Charge</>
+<#aaaaaa>(Hold)^Y^B</>
+
+<#FFFFFF>Custom Combo</>
+<#aaaaaa>^Z^C(Air OK)</>
+
+<#FFFFFF>Zero Counter</>
+_B_DB_D_+[^P/^K]<#aaaaaa>(While guarding)</>
+
+<#FFFFFF>Safe Fall</>
+<#aaaaaa>(Before Hitting Ground) </><#FFFFFF>[^X^A/^2P]</>
+
+<#FFFFFF>Air Recover</>
+<#aaaaaa>(In Air) </><#FFFFFF>[^X^A/^2P]</>
+<#aaaaaa> Can hold _F/_B to influence direction</>

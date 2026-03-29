@@ -3900,6 +3900,11 @@ trigger1 = time >= 28;---make the time match the time in the pause code above
 ;
 [Statedef -2]
 
+[State 0, Defence]
+type = DefenceMulSet
+trigger1 = stateno <= 3000
+value = 1
+
 [State -2, Finish]
 type = ScreenBound
 triggerall = (Life <= 0) || (!Alive) || (Lose)

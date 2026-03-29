@@ -1,0 +1,71 @@
+; ________________________________________________
+;| Urban Champion by NovaMagnolia			|
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;==============================================================================================
+;=======================================<INITIALIZE>===========================================
+;==============================================================================================
+[StateDef 5900];DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+type = S;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+[State 5900, Int VarReset];DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+type = VarRangeSet;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+trigger1 = !RoundsExisted;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+value = 0;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+[State 5900, Float VarReset];DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+type = VarRangeSet;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+trigger1 = !RoundsExisted;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+fvalue = 0;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
+;--------------------------------------------------------------------------
+;Don't touch anything above this part. -_-;
+
+;=======================================
+;Mode Settings
+;=======================================
+
+;Choose which Mode Urban Champion plays on during a match.
+
+;0 - Normal Mode (Default)
+;1 - 2010 Mode (Default)
+;2 - Boss Mode
+
+[State 5900, Mode Settings]
+type = VarSet
+trigger1 = 1
+;---------------------------------------
+var(40) = ifElse((PalNo > 6), 1, 0) ;<- Edit this!
+;---------------------------------------
+ignoreHitPause = 1
+
+;=======================================
+; GUIDE TO CONFIGURATION VIA PALETTE
+;=======================================
+
+;Only want certain configurations to appear on certain palettes?
+;Here's how to do it:
+
+;Instead of "1", type "(palno = X)", X being whatever palette you want the
+;configuration to be active on.
+
+;For example, "var(40) = (palno = 9)" enables 2010 Mode, but only
+;on Urban Champion's 9th palette.
+
+;For higher numbers, type "(palno = X)*[number]", X being whatever palette 
+;you want the configuration to be active on.
+
+;For example, "var(40) = (palno = 9)*2" enables Boss Mode, but only
+;on Urban Champion's 9th palette.
+
+;To include multiple palettes, type "(palno = [X,Y])", with X being the 
+;lowest numbered palette, and Y being the highest numbered palette.
+
+;For example, "var(40) = (palno = [7,12])" will make 2010 Mode active
+;on palettes 7, 8, 9, 10, 11, and 12.
+
+;Don't touch anything below this part. -_-;
+;--------------------------------------------------------------------------
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 5901
