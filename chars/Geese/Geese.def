@@ -1,6 +1,6 @@
 ; _______________________________________
 ;| Geese Howard by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;====================<DEFINITION>====================
 [Info]
 name = "Geese Howard"
@@ -11,7 +11,7 @@ mugenversion = 1.1; deprecated
 ikemenversion = 1.0
 author = "Phantom.of.the.Server"
 pal.defaults = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-localcoord = 320, 240
+localCoord  = 428,240
 portraitscale = 1.0
 
 [Files]
@@ -29,7 +29,7 @@ stcommon= common1.cns
 sprite = geesprite.sff
 anim = geeanim.air
 sound = geesound.snd
-movelist= geemovelist.dat
+movelist = movelist.dat
 pal1 = palettes/Default.act
 pal2 = palettes/FF3.act
 pal3 = palettes/FFS.act

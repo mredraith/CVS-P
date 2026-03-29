@@ -4657,13 +4657,6 @@ trigger1 = !Time
 time = 157
 add = -256,-256,-256
 
-[State 3320, AssertSpecial: NoBarDisplay]
-type = AssertSpecial
-trigger1 = AnimElemTime(2) < 0
-flag = NoBarDisplay
-flag = NoFG
-flag = NoBG
-
 [State 3320, EnvColor]
 type = EnvColor
 triggerAll = NumTarget

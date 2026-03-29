@@ -5233,12 +5233,6 @@ trigger1 = !Time
 time = 59
 add = -256,-256,-256
 
-[State 3611, AssertSpecial: NoBarDisplay]
-type = AssertSpecial
-trigger1 = Time < 60
-flag = NoBarDisplay
-flag2 = NoFG
-
 [State 3611, HitAdd]
 type = HitAdd
 trigger1 = (Time = [0,52]) && !(Time % 4)

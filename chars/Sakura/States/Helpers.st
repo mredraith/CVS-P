@@ -2263,13 +2263,6 @@ invertall = 0
 ignorehitpause = 1
 color=0
 
-[State -2,AssertSpecial]
-type = AssertSpecial
-trigger1 = 1
-flag = NoShadow
-;flag2=nobg
-flag2=nobardisplay
-
 [State 5035, 1]
 type = Trans
 trigger1 = 1

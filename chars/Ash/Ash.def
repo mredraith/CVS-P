@@ -6,7 +6,7 @@ versiondate =04,14,2013
 mugenversion =1.0
 author ="Chazzanova & Quickfist"
 pal.defaults =1,2,3,4,5,6
-localCoord = 428,240
+localCoord  = 428,240
 
 [Files]
 movelist = movelist.dat

@@ -1,6 +1,6 @@
 ; _______________________________
 ;| Vega by Phantom.of.the.Server |
-; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+; 
 ;===================<CONSTANTS>================
 
 [Data]
@@ -11,7 +11,7 @@ defence = 100
 dizzypoints = 950
 guardpoints = 1000
 fall.defence_up = 50
-liedown.time = 20
+lieDown.time = 15
 airjuggle = 15
 sparkno = 2
 guard.sparkno = 40

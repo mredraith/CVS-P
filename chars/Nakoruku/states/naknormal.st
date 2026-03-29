@@ -2395,7 +2395,7 @@ ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 yaccel = 0.695
 fall = 1
-fall.recover = !map(counterhit_buffer)
+fall.recover = 0
 fall.recovertime = 120
 sparkno = -1 + 0 * (map(sparkno) := 8012)
 guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8000)

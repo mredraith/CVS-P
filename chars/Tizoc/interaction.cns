@@ -44076,13 +44076,6 @@ ctrl = 0
 anim = 9800 ; invisible
 velset = 0,0
 
-[State 889776, AssertSpecial]
-type = AssertSpecial
-trigger1 = 1
-flag = intro
-flag2 = noFG
-flag3 = nobardisplay
-
 [State 889776, blackness background]
 type = explod
 anim = F89155
@@ -44339,13 +44332,6 @@ type = s
 ctrl = 0
 anim = 9800 ; invisible
 velset = 0,0
-
-[State 889777, AssertSpecial]
-type = AssertSpecial
-trigger1 = 1
-flag = intro
-flag2 = noFG
-flag3 = nobardisplay
 
 [State 889777, Walk enter]
 type = Explod

@@ -2274,7 +2274,7 @@ getpower = ifelse(movehit, 25, 200) * map(meterscaling), ifelse(moveguarded, 25,
 givepower = 40, 40
 yaccel = 0.695
 fall = 1
-fall.recover = !map(counterhit_buffer)
+fall.recover = 0
 fall.recovertime = 120
 
 [State 450, Idle]

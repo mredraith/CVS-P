@@ -675,9 +675,6 @@ guardsound.channel = 2
 sparkno = -1 + 0 * (map(sparkno) := 8012)
 guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8000)
 sparkxy = -10 + 0 * (map(sparkx.min) := 20) * (map(sparkx.max) := 58), map(sparky) := -70
-envshake.time = 10
-envshake.ampl = ifelse((gametime % 2), -2, 2)
-envshake.freq = 180
 
 [State 225, Anim]
 type = changeanim
@@ -2433,7 +2430,7 @@ air.velocity = -1.0, -8.0
 air.cornerpush.veloff = 0
 yaccel = 0.695
 fall = 1
-fall.recover = !map(counterhit_buffer)
+fall.recover = 0
 fall.recovertime = 120
 hitsound = s2, 5
 hitsound.channel = 2

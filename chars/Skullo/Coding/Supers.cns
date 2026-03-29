@@ -2593,13 +2593,6 @@ time = 6
 freq = 120
 ampl = -4
 
-[State 3510, AssertSpecial]
-type = AssertSpecial
-trigger1 = 1
-flag = nobardisplay
-flag2 = nofg
-;flag3 = nobg
-
 [State 3510, Dynamic Hit FX]
 type = Explod
 trigger1 = !Time
@@ -2651,13 +2644,6 @@ type = PlaySnd
 trigger1 = AnimElem = 3
 value = 180,0
 channel = 0
-
-[State 3550, AssertSpecial]
-type = AssertSpecial
-trigger1 = Time = [0,92]
-flag = nobardisplay
-flag2 = nofg
-;flag3 = nobg
 
 [State 3550, AllPalFX]
 type = AllPalFX
@@ -3079,13 +3065,6 @@ time = 6
 freq = 120
 ampl = -4
 
-[State 3610, AssertSpecial]
-type = AssertSpecial
-trigger1 = 1
-flag = nobardisplay
-flag2 = nofg
-;flag3 = nobg
-
 [State 3610, State End]
 type = ChangeState
 trigger1 = !AnimTime
@@ -3117,13 +3096,6 @@ type = PlaySnd
 trigger1 = AnimElem = 3
 value = 180,0
 channel = 0
-
-[State 3650, AssertSpecial]
-type = AssertSpecial
-trigger1 = Time = [0,92]
-flag = nobardisplay
-flag2 = nofg
-;flag3 = nobg
 
 [State 3650, AllPalFX]
 type = AllPalFX

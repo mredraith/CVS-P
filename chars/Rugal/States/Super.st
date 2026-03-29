@@ -6379,12 +6379,6 @@ trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(17) < 0
 Time = 4
 value = 0, 0, 0
 
-[State 3501, AssertSpecial]
-type = AssertSpecial
-trigger1 = AnimElemTime(2) >= 0 && AnimElemTime(17) < 0
-flag = NoBarDisplay
-flag2 = noFG
-
 [State 3501, Bind]
 type = TargetBind
 trigger1 = AnimElemTime(17) < 0
