@@ -2755,6 +2755,7 @@ trigger276 = Enemy, Name = "Jazu" || Enemy, Name = "Jyazu"
 trigger277 = Enemy, Name = "Silver" || Enemy, Name = "Silber"
 trigger278 = Enemy, Name = "Shion"
 trigger279 = Enemy, Name = "Sandman"
+trigger280 = Enemy, Name = "The Boxer" || Enemy, Name = "The Claw" || Enemy, Name = "The Dictator"
 value = 197
 
 [State 5901, Turns Intro]
@@ -3174,7 +3175,7 @@ value = 55
 
 [State 180, Victory Quote vs. Balrog]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Balrog" || Enemy, Name = "cvsbison"
+trigger1 = Enemy, Name = "The Boxer"
 value = 56
 
 [State 180, Victory Quote vs. Blanka]
@@ -3289,7 +3290,7 @@ value = 83
 
 [State 180, Victory Quote vs. M. Bison]
 type = VictoryQuote
-trigger1 = Enemy, Name = "M. Bison" || Enemy, Name = "cvsvega" || (Enemy, Name = "Vega" && Enemy, AuthorName = "Phantom.of.the.Server") || Enemy, Name = "M.Bison" || Enemy, Name = "Bison" || Enemy, Name = "Bison Bison"
+trigger1 = Enemy, Name = "The Dictator" || Enemy, Name = "Bison Bison"
 value = 84 + (Random % 3)
 
 [State 180, Victory Quote vs. Morrigan Aensland]

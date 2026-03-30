@@ -2165,7 +2165,7 @@ anim = 190
 type = ChangeState
 triggerAll = NumEnemy
 triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
-trigger1 = Enemy, Name = "M.Bison" || Enemy, Name = "Akuma" || Enemy, Name = "Geese Howard"
+trigger1 = Enemy, Name = "The Dictator" || Enemy, Name = "Akuma" || Enemy, Name = "Geese Howard" || Enemy, Name = "The Boxer" || Enemy, Name = "The Claw"
 trigger2 = Enemy, Name = "Vega" && Enemy,AuthorName = "Froz"
 value = 191
 

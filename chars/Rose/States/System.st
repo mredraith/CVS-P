@@ -2672,7 +2672,7 @@ value = 41 + Random % 2
 [State 180, Victory Quote vs. Balrog]
 type = VictoryQuote
 trigger1 = Enemy, AuthorName != "Phantom.of.the.Server" && Enemy, AuthorName != "Froz"
-trigger1 = Enemy, Name = "Balrog" || Enemy, Name = "cvsbison" || Enemy, Name = "K-Mike Bison"
+trigger1 = Enemy, Name = "The Boxer" || Enemy, Name = "K-Mike Bison"
 value = 43 + Random % 2
 
 [State 180, Victory Quote vs. Blanka]
@@ -2796,7 +2796,7 @@ value = 80
 
 [State 180, Victory Quote vs. M. Bison]
 type = VictoryQuote
-trigger1 = Enemy, Name = "M. Bison" || Enemy, Name = "cvsvega" || Enemy, Name = "M.Bison" || Enemy, Name = "Bison"
+trigger1 = Enemy, Name = "The Dictator"
 trigger2 = (Enemy, Name = "Vega" && Enemy, AuthorName = "Phantom.of.the.Server")
 trigger3 = (Enemy, Name = "Vega" && Enemy, AuthorName = "Froz")
 value = 81 + Random % 2

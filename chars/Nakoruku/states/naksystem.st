@@ -2694,12 +2694,13 @@ trigger9 = enemy, name = "Jedah"
 trigger10 = enemy, name = "Justice"
 trigger11 = enemy, name = "Kouryu" || enemy, name = "Kouryu By Third"
 trigger12 = enemy, name = "Magneto" || enemy, name = "Magneto(MC2)"
-trigger13 = (enemy, name = "M.Bison" && enemy, authorname = "N-Mario") || enemy, name = "[Necromancer's] M. Bison" || (enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous")
+trigger13 = enemy, name = "The Dictator"
 trigger14 = enemy, name = "Onslaught"
 trigger15 = enemy, name = "Orochi"
 trigger16 = enemy, name = "Pyron"
 trigger17 = enemy, name = "Thanos"
-trigger18 = (enemy, name = "Vega" && enemy, authorname = "Phantom.of.the.Server") || enemy, name = "cvsvega" || enemy, name = "svcvega"
+trigger18 =(enemy, name = "The Claw"
+trigger19 =(enemy, name = "The Boxer"
 value = 6911
 
 [State 5902, Turns Intro]

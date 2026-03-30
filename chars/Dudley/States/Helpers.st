@@ -27,7 +27,7 @@ trigger1 = enemy, name = "Hugo" || enemy, name = "HugoTAG" || enemy, name = "Hug
 var(10) = 3
 [State 0, Vs. Balrog]
 type = VarSet
-trigger1 = enemy, name = "Balrog" || enemy, name = "Boxer" || enemy, name = "Balrog (Boxer)" || enemy, name = "Balrog(Boxer)"
+trigger1 = enemy, name = "Balrog" || enemy, name = "Boxer" || enemy, name = "Balrog (Boxer)" || enemy, name = "Balrog(Boxer)" || enemy, name = "The Boxer"
 trigger2 = enemy, name = "BalrogTAG" || enemy, name = "Bison (Boxer)" || enemy, name = "M. Bison (Boxer)"
 var(10) = 4
 [State 0, Vs. Ryu]

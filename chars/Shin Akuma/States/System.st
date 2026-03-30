@@ -2134,7 +2134,7 @@ type = changestate
 trigger1 = numenemy
 triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1 = name = "Shin Gouki"
-trigger1 = enemy, authorname = "Phantom.of.the.Server" && enemy, name = "Vega"
+trigger1 = Enemy, Name = "The Dictator"
 trigger2 = enemy, authorname = "Froz" && enemy, name = "Vega"
 trigger2 = enemy, var(40) != 1
 value = 350
@@ -2175,6 +2175,7 @@ trigger7 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry
 trigger8 = enemy, name = "Cammy" && enemy, authorname = "Phantom.of.the.Server"
 trigger9 = enemy, name = "Sky Chase" && enemy, authorname = "Phantom.of.the.Server"
 trigger10 = enemy, authorname = "Froz" && enemy, name = "Vega"
+trigger11 = Enemy, Name = "The Dictator"
 var(0) = 5
 
 [State 5900, Shin vs Nash]

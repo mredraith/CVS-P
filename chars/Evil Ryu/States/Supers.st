@@ -3536,7 +3536,7 @@ var(41) = 50
 type = varset
 triggerall = !time && numtarget
 trigger1 = target, name = "Demitri" || target, name = "Jedah"
-trigger2 = target, name = "Vega" && (target, authorname = "Phantom.of.the.Server" || target, authorname = "Messatsu")
+trigger2 = target, name = "The Boxer" || target, name = "The Claw" || target, name = "The Dictator"
 trigger3 = target, name = "cvsvega" && (target, authorname = "Warusaki3" || target, authorname = "Gargoyle")
 trigger4 = target, name = "M.Bison" && target, authorname = "N -Mario"
 trigger5 = target, name = "[Necromancer's] M. Bison"

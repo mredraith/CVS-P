@@ -1788,7 +1788,7 @@ value = 42
 [State 0, Vs. Balrog]
 type = VictoryQuote
 trigger1 = enemy, name = "Balrog" || enemy, name = "Boxer" || enemy, name = "Balrog (Boxer)" || enemy, name = "Balrog(Boxer)"
-trigger2 = enemy, name = "BalrogTAG" || enemy, name = "Bison (Boxer)" || enemy, name = "M. Bison (Boxer)"
+trigger2 = enemy, name = "BalrogTAG" || enemy, name = "Bison (Boxer)" || enemy, name = "M. Bison (Boxer)" || enemy, name = "The Boxer"
 value = ceil(43+random%3)
 [State 0, Vs. M. Bison]
 type = VictoryQuote
@@ -1802,6 +1802,7 @@ trigger5 = enemy, authorname = "Phantom.of.the.Server" || enemy, authorname = "F
 trigger6 = enemy, name = "True BisonTAG" || enemy, name = "Shin BisonTAG" || enemy, name = "Final BisonTAG" || enemy, name = "MBisonTAG"
 trigger7 = enemy, name = "True Vega" || enemy, name = "Shin Vega" || enemy, name = "Final Vega"
 trigger8 = enemy, name = "[Necromancer's] M. Bison" || enemy, name = "cvsvega" || enemy, name = "svcvega"
+trigger9 = enemy, name = "The Dictator"
 value = 46
 [State 0, Vs. M. Bison]
 type = VictoryQuote
@@ -1825,6 +1826,7 @@ trigger16 = enemy, name = "MBisonII" || enemy, name = "MBison II" || enemy, name
 trigger17 = enemy, name = "Final MBison" || enemy, name = "FinalMBison" || enemy, name = "TrueMBison" || enemy, name = "True MBison"
 trigger18 = enemy, name = "M BisonII" || enemy, name = "M Bison II" || enemy, name = "ShinM Bison" || enemy, name = "Shin M Bison" || enemy, name = "M Bison2"
 trigger19 = enemy, name = "Final M Bison" || enemy, name = "FinalM Bison" || enemy, name = "TrueM Bison" || enemy, name = "True M Bison" || enemy, name = "M Bison 2"
+trigger20 = enemy, name = "The Dictator"
 value = 46
 [State 0, Vs. Cammy]
 type = VictoryQuote
@@ -2017,6 +2019,7 @@ trigger1 = enemy, name = "Vega" || enemy, name = "Claw" || enemy, name = "Balrog
 trigger1 = enemy, authorname != "Phantom.of.the.Server" && enemy, authorname != "Froz"
 trigger2 = enemy, name = "VegaTAG" || enemy, name = "ClawTAG"
 trigger2 = enemy, authorname != "Phantom.of.the.Server" && enemy, authorname != "Froz"
+trigger3 = enemy, name = "The Claw"
 value = 96
 [State 0, Vs. Yang]
 type = VictoryQuote

@@ -2445,7 +2445,7 @@ triggerAll = !var(40)
 triggerAll = NumEnemy
 triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1 = !(TeamMode = Simul) && !(Enemy,TeamMode = Simul)
-trigger1 = Enemy,Name = "Vega" && Enemy,AuthorName = "Froz" && Enemy, var(40) != 1
+trigger1 = Enemy,Name = "The Dictator"
 value = 193
 
 [State 5901, Intro vs Orochi]

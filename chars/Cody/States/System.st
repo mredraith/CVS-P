@@ -2680,7 +2680,7 @@ value = 18
 
 [State 180, Victory Quote vs. Balrog]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Balrog" || Enemy, Name = "cvsbison"
+trigger1 = Enemy, Name = "The Boxer"
 value = 19 + (Random % 1)
 
 [State 180, Victory Quote vs. Birdie]
@@ -2799,7 +2799,7 @@ value = 49
 
 [State 180, Victory Quote vs. M. Bison]
 type = VictoryQuote
-trigger1 = Enemy, Name = "M. Bison" || Enemy, Name = "cvsvega" || (Enemy, Name = "Vega" && Enemy, AuthorName = "Phantom.of.the.Server") || Enemy, Name = "M.Bison" || Enemy, Name = "Bison"
+trigger1 = Enemy, Name = "The Dictator"
 value = 50 + (Random % 1)
 
 [State 180, Victory Quote vs. Makoto]

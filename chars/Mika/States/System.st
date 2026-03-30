@@ -2144,7 +2144,7 @@ value = 51
 
 [State 180, VictoryQuote]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Balrog"
+trigger1 = Enemy, Name = "The Boxer"
 trigger2 = Enemy, Name = "cvsbison" || Enemy, Name = "cvs_bison" || Enemy, Name = "cvs2_bison"
 value = 52
 
@@ -2210,7 +2210,7 @@ value = 63
 
 [State 180, VictoryQuote]
 type = VictoryQuote
-trigger1 = Enemy, Name = "M. Bison" || Enemy, Name = "Bison"
+trigger1 = Enemy, Name = "The Dictator"
 trigger2 = Enemy, Name = "cvsvega" || Enemy, Name = "cvs2_vega"
 trigger3 = Enemy, Name = "Vega" && Enemy, AuthorName = "Phantom.of.the.Server"
 trigger3 = Enemy, Name = "Vega" && Enemy, AuthorName = "Froz"
@@ -2246,7 +2246,7 @@ value = 69
 
 [State 180, VictoryQuote]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Vega" && Enemy, AuthorName != "Phantom.of.the.Server"
+trigger1 = Enemy, Name = "The Claw"
 trigger2 = Enemy, Name = "Vega" && Enemy, AuthorName != "Froz"
 trigger3 = Enemy, Name = "cvsbalrog" || Enemy, Name = "cvs2_balrog"
 value = 70

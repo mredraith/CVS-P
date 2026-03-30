@@ -1945,7 +1945,7 @@ trigger2 = enemy, name = "cvsvega" && (enemy, authorname = "Warusaki3" || enemy,
 trigger3 = enemy, name = "M.Bison" && enemy, authorname = "N -Mario"
 trigger4 = enemy, name = "[Necromancer's] M. Bison"
 trigger5 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
-trigger6 = enemy, name = "CvSBison" && enemy, authorname = "Team Kai (Saiai and Koga)"
+trigger6 = Enemy,Name = "The Dictator"
 value = 6910
 
 [State 5900, Turns Intro]

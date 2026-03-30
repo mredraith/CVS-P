@@ -2257,7 +2257,7 @@ triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(T
 trigger1 = Enemy, Name = "cvsgouki" || Enemy, Name = "Akuma" || Enemy, Name = "Gouki" || Enemy, Name = "Shin Akuma" || Enemy, Name = "Shin Gouki" || Enemy, Name = "Rare Akuma" || Enemy, Name = "cvsgouki_normal" || Enemy, Name = "cvsgouki_ex" || Enemy, Name = "Mech Gouki" || Enemy, Name = "Mech Akuma" || Enemy, Name = "Gouki by M.M.R." || Enemy, Name = "SF3Gouki" || Enemy, Name = "svcgouki" || Enemy, Name = "Shin Gouki SF'2" || Enemy, Name = "Tin's S_Gouki" || Enemy, Name = "Pocket Shin Gouki" || Enemy, Name = "SF3Gouki" || Enemy, Name = "Gouki_Cota" || Enemy, Name = "Eternity of Heroes: Gouki" || Enemy, Name = "Gouki Lv2" || Enemy, Name = "MvC-EoH Gouki" || Enemy, Name = "SHINJIN GOUKI"
 trigger2 = Enemy, Name = "cvsbalrog" || Enemy, Name = "Balrog"
 trigger3 = Enemy, Name = "cvsvega" || Enemy, Name = "Vega" || Enemy, Name = "SVCVEGA" || Enemy, Name = "cvsvega_normal" || Enemy, Name = "cvsvega_ex"
-trigger4 = Enemy, Name = "cvsbison" || Enemy, Name = "Bison" || Enemy, Name = "M Bison" || Enemy, Name = "M. Bison" || Enemy, Name = "M.Bison" || Enemy, Name = "Bison Bison" || Enemy, Name = "svc m.bison" || Enemy, Name = "M,bison" || Enemy, Name = "vega_mx" || Enemy, Name = "CvSBison" || Enemy, Name = "SSF2HD_Bison"
+trigger4 = Enemy, Name = "The Boxer" || Enemy, Name = "The Claw" || Enemy, Name = "The Dictator"
 trigger5 = Enemy, Name = "cvsrolento" || Enemy, Name = "Rolento" || Enemy, Name = "Rolento Schugerg"
 trigger6 = Enemy, Name = "cvsbalrog" || Enemy, Name = "cvsbison" || Enemy, Name = "Balrog" || Enemy, Name = "Balrog by M.M.R."
 trigger7 = Enemy, Name = "cvsgeese" || Enemy, Name = "Geese" || Enemy, Name = "Geese Howard" || Enemy, Name = "cvsgeese_normal" || Enemy, Name = "cvsgeese_ex" || Enemy, Name = "Nightmare Geese" || Enemy, Name = "Geese_WLS" || Enemy, Name = "Geese B Howard" || Enemy, Name = "DGeese" || Enemy, Name = "geese_mmx" || Enemy, Name = "Crazy Laughing Geese" || Enemy, Name = "Mini_Geese"
@@ -3341,9 +3341,9 @@ value = 80 + (Random % 2)
 [State 180, Victory Quote vs. Vega/Earthquake/Demitri Maximoff/M. Bison/Balrog]
 type = VictoryQuote
 trigger1 = Enemy, Name = "cvsbalrog" || Enemy, Name = "Balrog"
-trigger2 = Enemy, Name = "cvsvega" || Enemy, Name = "Vega" || Enemy, Name = "SVCVEGA" || Enemy, Name = "cvsvega_normal" || Enemy, Name = "cvsvega_ex"
-trigger3 = Enemy, Name = "cvsbison" || Enemy, Name = "Bison" || Enemy, Name = "M Bison" || Enemy, Name = "M. Bison" || Enemy, Name = "M.Bison" || Enemy, Name = "Bison Bison" || Enemy, Name = "svc m.bison" || Enemy, Name = "M,bison" || Enemy, Name = "vega_mx" || Enemy, Name = "CvSBison" || Enemy, Name = "SSF2HD_Bison"
-trigger4 = Enemy, Name = "cvsbalrog" || Enemy, Name = "cvsbison" || Enemy, Name = "Balrog" || Enemy, Name = "Balrog by M.M.R."
+trigger2 = Enemy, Name = "The Claw"
+trigger3 = Enemy, Name = "The Dictator"
+trigger4 = Enemy, Name = "The Boxer"
 trigger5 = Enemy, Name = "cvsrugal" || Enemy, Name = "Rugal" || Enemy, Name = "Rugal Bernstein" || Enemy, Name = "cvsrugal_normal" || Enemy, Name = "cvsrugal_ex" || Enemy, Name = "God Rugal" || Enemy, Name = "Omega Rugal" || Enemy, Name = "Tin G_rugal" || Enemy, Name = "Tin 2002_rugal" || Enemy, Name = "cvsg_rugal" || Enemy, Name = "omega rugal98" || Enemy, Name = "Rugal_TLE" || Enemy, Name = "Rugal94(BOSS)" || Enemy, Name = "rugal94" || Enemy, Name = "Mech Rugal" || Enemy, Name = "rugal_B" || Enemy, Name = "Rugal_TLE" || Enemy, Name = "Omega Rugal Gb" || Enemy, Name = "D-Rugal" || Enemy, Name = "Rugal CvS" || Enemy, Name = "omega-rugal" || Enemy, Name = "Rugal.B" || Enemy, Name = "Rugal B." || Enemy, Name = "Rugal_E" || Enemy, Name = "Rugal Berstein"
 trigger6 = Enemy, Name = "Earthquake"
 trigger7 = Enemy, Name = "Demitri" || Enemy, Name = "Demitri Maximoff" || Enemy, Name = "Demitri Maximov" || Enemy, Name = "Demitri(DS)"

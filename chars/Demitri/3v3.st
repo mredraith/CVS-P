@@ -2268,7 +2268,7 @@ value = 61
 
 [State 180, Victory Quote vs. M. Bison, Geese Howard, Shin Akuma, Serious Mr. Karate]
 type = VictoryQuote
-trigger1 = Enemy, Name = "M. Bison" || Enemy, Name = "cvsvega" || (Enemy, Name = "Vega" && Enemy, AuthorName = "Phantom.of.the.Server") || Enemy, Name = "M.Bison" || Enemy, Name = "Bison" || Enemy, Name = "Bison Bison"
+trigger1 = Enemy, Name = "The Dictator" || Enemy, Name = "Bison Bison"
 trigger2 = Enemy, Name = "cvsgeese" || Enemy, Name = "Geese" || Enemy, Name = "Geese Howard" || Enemy, Name = "cvsgeese_normal" || Enemy, Name = "cvsgeese_ex" || Enemy, Name = "Nightmare Geese" || Enemy, Name = "Geese_WLS" || Enemy, Name = "Geese B Howard"
 trigger3 = (Enemy, Name = "cvsgouki" && Enemy, PalNo = [7,12]) || Enemy, Name = "cvsgouki_ex" || Enemy, Name = "Shin Akuma" || Enemy, Name = "Shin Gouki" || Enemy, Name = "ShinAkuma" || Enemy, Name = "ShinGouki" || Enemy, Name = "Pocket Shin Gouki"
 trigger4 = (Enemy, Name = "svckarate" && Enemy, PalNo = [7,12]) || Enemy, Name = "Serious Mr. Karate" || Enemy, Name = "Honki ni Natta Mr. Karate"

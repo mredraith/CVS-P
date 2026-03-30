@@ -1843,11 +1843,11 @@ value = 42
 [State 0, Vs. Balrog]
 type = VictoryQuote
 trigger1 = enemy, name = "Balrog" || enemy, name = "Boxer" || enemy, name = "Balrog (Boxer)" || enemy, name = "Balrog(Boxer)"
-trigger2 = enemy, name = "BalrogTAG" || enemy, name = "Bison (Boxer)" || enemy, name = "M. Bison (Boxer)"
+trigger2 = enemy, name = "BalrogTAG" || enemy, name = "Bison (Boxer)" || enemy, name = "M. Bison (Boxer)" || enemy, name = "The Boxer"
 value = ceil(43+random%3)
 [State 0, Vs. M. Bison]
 type = VictoryQuote
-trigger1 = enemy, name = "M. Bison" || enemy, name = "M.Bison" || enemy, name = "Bison" || enemy, name = "Dictator" || enemy, name = "cvsvega" || enemy, name = "cvsvega_normal" || enemy, name = "cvsvega_ex"
+trigger1 = enemy, name = "M. Bison" || enemy, name = "M.Bison" || enemy, name = "Bison" || enemy, name = "Dictator" || enemy, name = "cvsvega" || enemy, name = "cvsvega_normal" || enemy, name = "cvsvega_ex" || enemy, name = "The Dictator"
 trigger2 = enemy, name = "Vega" 
 trigger2 = enemy, authorname = "Phantom.of.the.Server" || enemy, authorname = "Froz"
 trigger3 = enemy, name = "True Bison" || enemy, name = "Shin Bison" || enemy, name = "Final Bison" || enemy, name = "MBison"
@@ -1880,6 +1880,7 @@ trigger16 = enemy, name = "MBisonII" || enemy, name = "MBison II" || enemy, name
 trigger17 = enemy, name = "Final MBison" || enemy, name = "FinalMBison" || enemy, name = "TrueMBison" || enemy, name = "True MBison"
 trigger18 = enemy, name = "M BisonII" || enemy, name = "M Bison II" || enemy, name = "ShinM Bison" || enemy, name = "Shin M Bison" || enemy, name = "M Bison2"
 trigger19 = enemy, name = "Final M Bison" || enemy, name = "FinalM Bison" || enemy, name = "TrueM Bison" || enemy, name = "True M Bison" || enemy, name = "M Bison 2"
+trigger20 = enemy, name = "The Dictator" || enemy, name = "Final Dictator"
 value = 46
 [State 0, Vs. Cammy]
 type = VictoryQuote

@@ -2174,6 +2174,7 @@ trigger5 = target, name = "[Necromancer's] M. Bison"
 trigger6 = target, name = "M. Bison" && target, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger7 = target, name = "CvSBison" && target, authorname = "Team Kai (Saiai and Koga)"
 trigger8 = target, name = "Shadow DIO" || target, name = "Gill"
+trigger9 = target, name = "The Dictator"
 var(41) = 456
 
 [State 4001, vsSNKbadguys]
@@ -2497,6 +2498,7 @@ trigger5 = target, name = "[Necromancer's] M. Bison"
 trigger6 = target, name = "M. Bison" && target, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger7 = target, name = "CvSBison" && target, authorname = "Team Kai (Saiai and Koga)"
 trigger8 = target, name = "Shadow DIO" || target, name = "Gill"
+trigger9 = target, name = "The Dictator"
 var(41) = 456
 
 [State 4004, vsSNKbadguys]

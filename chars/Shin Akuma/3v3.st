@@ -2068,7 +2068,7 @@ var(0) = 0
 type = changestate
 triggerall = !(teammode = simul) && !(enemy, teammode = simul)
 trigger1 = name = "Shin Gouki"
-trigger1 = enemy, authorname = "Phantom.of.the.Server" && enemy, name = "Vega"
+trigger1 = Enemy, Name = "The Dictator"
 trigger2 = enemy, authorname = "Froz" && enemy, name = "Vega"
 trigger2 = enemy, var(40) != 1
 value = 350
@@ -2105,7 +2105,7 @@ trigger3 = enemy, name = "cvsvega" && (enemy, authorname = "Warusaki3" || enemy,
 trigger4 = enemy, name = "M.Bison" && enemy, authorname = "N -Mario"
 trigger5 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger6 = enemy, name = "CvSBison" && enemy, authorname = "Team Kai (Saiai and Koga)"
-trigger7 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
+trigger7 = enemy, name = "The Dictator"
 trigger8 = enemy, name = "Cammy" && enemy, authorname = "Phantom.of.the.Server"
 trigger9 = enemy, name = "Sky Chase" && enemy, authorname = "Phantom.of.the.Server"
 trigger10 = enemy, authorname = "Froz" && enemy, name = "Vega"

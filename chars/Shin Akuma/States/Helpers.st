@@ -3121,7 +3121,7 @@ trigger1 = enemy, name = "Shin Gouki" && enemy, authorname = "Phantom.of.the.Ser
 trigger2 = enemy, name = "Vega" && enemy, authorname = "Phantom.of.the.Server"
 trigger3 = enemy, name = "cvsvega" && (enemy, authorname = "Warusaki3" || enemy, authorname != "Gargoyle")
 trigger4 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
-trigger5 = enemy, name = "M.Bison" && enemy, authorname = "N -Mario"
+trigger5 = enemy, name = "The Dictator"
 trigger6 = enemy, name = "CvSBison" && enemy, authorname = "Team Kai (Saiai and Koga)"
 trigger7 = enemy, name = "[Necromancer's] M. Bison" || enemy, name = "Sevil Nahte"
 
@@ -3165,7 +3165,7 @@ trigger1 = enemy, name = "Shin Gouki" && enemy, authorname = "Phantom.of.the.Ser
 trigger2 = enemy, name = "Vega" && enemy, authorname = "Phantom.of.the.Server"
 trigger3 = enemy, name = "cvsvega" && (enemy, authorname = "Warusaki3" || enemy, authorname != "Gargoyle")
 trigger4 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
-trigger5 = enemy, name = "M.Bison" && enemy, authorname = "N -Mario"
+trigger5 = enemy, name = "The Dictator"
 trigger6 = enemy, name = "CvSBison" && enemy, authorname = "Team Kai (Saiai and Koga)"
 trigger7 = enemy, name = "[Necromancer's] M. Bison" || enemy, name = "Sevil Nahte"
 ;trigger8 = (root, stateno = 178) && (root, time = 260)
@@ -3194,7 +3194,7 @@ triggerall = numenemy
 trigger1 = enemy, name = "Shin Gouki" && enemy, authorname = "Phantom.of.the.Server" && enemy, numhelper(6100)
 trigger2 = enemy, name = "Vega" && enemy, authorname = "Phantom.of.the.Server"
 trigger3 = enemy, name = "cvsvega" && (enemy, authorname = "Warusaki3" || enemy, authorname != "Gargoyle")
-trigger4 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
+trigger4 = enemy, name = "The Dictator"
 trigger5 = enemy, name = "M.Bison" && enemy, authorname = "N -Mario"
 trigger6 = enemy, name = "CvSBison" && enemy, authorname = "Team Kai (Saiai and Koga)"
 trigger7 = enemy, name = "[Necromancer's] M. Bison" || enemy, name = "Sevil Nahte"

@@ -1885,13 +1885,7 @@ type = changestate
 triggerall = numenemy
 triggerall = !roundsexisted || !(enemy, roundsexisted)
 triggerall = !(teammode = simul) && !(enemy, teammode = simul)
-trigger1 = enemy, name = "Vega" && enemy, authorname = "Phantom.of.the.Server"
-trigger2 = enemy, name = "Bison Bison" && enemy, authorname = "Coelasquid and PotS"
-trigger3 = enemy, name = "cvsvega" && (enemy, authorname = "Warusaki3" || enemy, authorname = "Gargoyle")
-trigger4 = enemy, name = "M.Bison" && enemy, authorname = "N -Mario"
-trigger5 = enemy, name = "[Necromancer's] M. Bison"
-trigger6 = enemy, name = "M. Bison" && enemy, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
-trigger7 = enemy, name = "CvSBison" && enemy, authorname = "Team Kai (Saiai and Koga)"
+trigger1 = enemy, name = "The Claw"
 value = 6910
 
 [State 5900, Turns Intro]
@@ -3243,7 +3237,7 @@ trigger3 = enemynear, name = "Shin Gouki" && enemynear, authorname = "Phantom.of
 trigger4 = enemynear, name = "cvsgouki" && enemynear, authorname = "Warusaki3" && (enemynear, numhelper(7804) || enemynear, numhelper(7805))
 trigger5 = enemynear, name = "cvsjuni" && enemynear, authorname = "Warusaki3" && enemynear, numhelper(7500)
 trigger6 = enemynear, name = "cvsvega" && (enemynear, authorname = "Warusaki3" || enemynear, authorname = "Gargoyle")
-trigger7 = enemynear, name = "M.Bison" && enemynear, authorname = "N -Mario"
+trigger7 = enemynear, name = "The Dictator"
 trigger8 = enemynear, name = "M. Bison" && enemynear, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger9 = enemynear, name = "CvSBison" && enemynear, authorname = "Team Kai (Saiai and Koga)"
 var(44) = 1
@@ -3257,7 +3251,7 @@ trigger3 = enemynear(1), name = "Shin Gouki" && enemynear(1), authorname = "Phan
 trigger4 = enemynear(1), name = "cvsgouki" && enemynear(1), authorname = "Warusaki3" && (enemynear(1), numhelper(7804) || enemynear(1), numhelper(7805))
 trigger5 = enemynear(1), name = "cvsjuni" && enemynear(1), authorname = "Warusaki3" && enemynear(1), numhelper(7500)
 trigger6 = enemynear(1), name = "cvsvega" && (enemynear(1), authorname = "Warusaki3" || enemynear(1), authorname = "Gargoyle")
-trigger7 = enemynear(1), name = "M.Bison" && enemynear(1), authorname = "N -Mario"
+trigger7 = enemynear(1), name = "The Dictator"
 trigger8 = enemynear(1), name = "M. Bison" && enemynear(1), authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger9 = enemynear(1), name = "CvSBison" && enemynear(1), authorname = "Team Kai (Saiai and Koga)"
 var(44) = 1
@@ -3265,7 +3259,7 @@ ignorehitpause = 1
 [State -2, Vega Flag]
 type = varset
 triggerall = numpartner
-trigger1 = partner, name = "Vega" && partner, authorname = "Phantom.of.the.Server"
+trigger1 = partner, name = "The Dictator"
 trigger2 = partner, name = "Cammy" && partner, authorname = "Phantom.of.the.Server" && partner, numhelper(6100)
 trigger3 = partner, name = "Shin Gouki" && partner, authorname = "Phantom.of.the.Server" && partner, numhelper(6100)
 trigger4 = partner, name = "cvsgouki" && partner, authorname = "Warusaki3" && (partner, numhelper(7804) || partner, numhelper(7805))

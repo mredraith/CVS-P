@@ -3293,10 +3293,10 @@ trigger4 = enemy,name = "Dhalsim" || enemy,name = "cvsdhalsim" || enemy,name = "
 trigger5 = enemy,name = "Honda" || enemy,name = "E. Honda" || enemy,name = "cvshonda" || enemy,name = "E.Honda"
 trigger6 = enemy,name = "Guile" || enemy,name = "cvsguile"
 trigger7 = enemy,name = "Zangief" || enemy,name = "cvszangief"
-trigger8 = enemy,name = "M. Bison" || enemy,name = "Vega" || (enemy,name = "Dictator" && Enemy, AuthorName = "KarmaCharmeleon") || enemy,name = "M.Bison" || enemy,name = "Bison" || enemy,name = "Bison Bison"
+trigger8 = Enemy, Name = "The Dictator"
 trigger9 = enemy,name = "cvsvega" || enemy,name = "cvsvega_normal" || enemy,name = "cvsvega_ex"
 trigger10 = enemy,name = "Blanka" || enemy,name = "cvsblanka"
-trigger11 = enemy,name = "Balrog" || enemy,name = "cvsbison" || enemy,name = "cvsbalrog"
+trigger11 = enemy,name = "The Boxer" || enemy,name = "The Boxer" || enemy,name = "The Boxer"
 trigger12 = enemy,name = "Sagat" || enemy,name = "cvssagat" || enemy,name = "SagatMG"
 value = 7 ;Just the world warriors...
 

@@ -2269,7 +2269,7 @@ type = ChangeState
 trigger1 = var(40) = 1
 trigger1 = NumEnemy
 trigger1 = RoundNo = 1 && (!(Enemy, RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul))
-trigger1 = Enemy, AuthorName = "Phantom.of.the.Server" && Enemy, Name = "Vega"
+trigger1 = Enemy, Name = "The Dictator"
 value = 5982
 
 [State 5901, vs Intro vs Evil Ryu (Violent)]
@@ -3765,7 +3765,7 @@ value = 60
 [State 180, Victory Quote vs. Balrog]
 type = VictoryQuote
 triggerAll = var(40) != 1
-trigger1 = Enemy, Name = "Balrog" || Enemy, Name = "cvsbison"
+trigger1 = Enemy, Name = "The Boxer"
 value = 61
 
 [State 180, Victory Quote vs. Blanka]
@@ -3890,7 +3890,7 @@ value = 82
 [State 180, Victory Quote vs. M. Bison]
 type = VictoryQuote
 triggerAll = var(40) != 1
-trigger1 = Enemy, Name = "M. Bison" || Enemy, Name = "cvsvega" || (Enemy, Name = "Vega" && Enemy, AuthorName = "Phantom.of.the.Server") || Enemy, Name = "M.Bison" || Enemy, Name = "Bison"
+trigger1 = Enemy, Name = "The Dictator"
 value = 83 + (var(40) = 2)
 
 [State 180, Victory Quote vs. Necro]
@@ -3995,7 +3995,7 @@ type = ChangeState
 trigger1 = var(40) = 1
 trigger1 = (RoundState = 2 || MatchOver) && !(TeamMode = Turns)
 trigger1 = NumEnemy
-trigger1 = Enemy, AuthorName = "Phantom.of.the.Server" && Enemy, Name = "Vega"
+trigger1 = Enemy, Name = "The Dictator"
 value = 187
 
 [State 180, Win with Ryu (Simul)]

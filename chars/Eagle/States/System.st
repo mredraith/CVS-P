@@ -2198,7 +2198,7 @@ value = 15
 
 [State 180, Victory Quote vs. Balrog]
 type = VictoryQuote
-trigger1 = Enemy, Name = "Balrog" || Enemy, Name = "cvsbison"
+trigger1 = Enemy, Name = "The Boxer"
 value = 16
 
 [State 180, Victory Quote vs. Birdie]
@@ -2309,7 +2309,7 @@ value = 36
 
 [State 180, Victory Quote vs. M. Bison]
 type = VictoryQuote
-trigger1 = Enemy, Name = "M. Bison" || Enemy, Name = "cvsvega" || (Enemy, Name = "Vega" && Enemy, AuthorName = "Phantom.of.the.Server") || Enemy, Name = "M.Bison" || Enemy, Name = "Bison" || Enemy, Name = "Bison Bison"
+trigger1 = Enemy, Name = "The Dictator" || Enemy, Name = "Bison Bison"
 value = 37
 
 [State 180, Victory Quote vs. R. Mika]
@@ -3313,9 +3313,10 @@ trigger3 = enemynear, name = "Shin Gouki" && enemynear, authorname = "Phantom.of
 trigger4 = enemynear, name = "cvsgouki" && enemynear, authorname = "Warusaki3" && (enemynear, numhelper(7804) || enemynear, numhelper(7805))
 trigger5 = enemynear, name = "cvsjuni" && enemynear, authorname = "Warusaki3" && enemynear, numhelper(7500)
 trigger6 = enemynear, name = "cvsvega" && (enemynear, authorname = "Warusaki3" || enemynear, authorname = "Gargoyle")
-trigger7 = enemynear, name = "M.Bison" && enemynear, authorname = "N -Mario"
+trigger7 = enemynear, name = "The Dictator"
 trigger8 = enemynear, name = "M. Bison" && enemynear, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger9 = enemynear, name = "CvSBison" && enemynear, authorname = "Team Kai (Saiai and Koga)"
+trigger10 = enemynear, name = "The Dictator"
 var(44) = 1
 ignorehitpause = 1
 [State -2, Vega Flag]
@@ -3330,6 +3331,7 @@ trigger6 = enemynear(1), name = "cvsvega" && (enemynear(1), authorname = "Warusa
 trigger7 = enemynear(1), name = "M.Bison" && enemynear(1), authorname = "N -Mario"
 trigger8 = enemynear(1), name = "M. Bison" && enemynear(1), authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger9 = enemynear(1), name = "CvSBison" && enemynear(1), authorname = "Team Kai (Saiai and Koga)"
+trigger10 = enemynear(1), name = "The Dictator"
 var(44) = 1
 ignorehitpause = 1
 [State -2, Vega Flag]
@@ -3344,6 +3346,7 @@ trigger6 = partner, name = "cvsvega" && (partner, authorname = "Warusaki3" || pa
 trigger7 = partner, name = "M.Bison" && partner, authorname = "N -Mario"
 trigger8 = partner, name = "M. Bison" && partner, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger9 = partner, name = "CvSBison" && partner, authorname = "Team Kai (Saiai and Koga)"
+trigger10 = partner, name = "The Dictator"
 var(44) = 2
 ignorehitpause = 1
 

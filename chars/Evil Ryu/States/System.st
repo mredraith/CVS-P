@@ -3189,7 +3189,7 @@ type = victoryquote
 triggerall = numenemy && var(1) != 2
 trigger1 = enemynear, name = "Vega" && enemynear, authorname = "Phantom.of.the.Server"
 trigger2 = enemynear, name = "cvsvega" && (enemynear, authorname = "Warusaki3" || enemynear, authorname = "Gargoyle")
-trigger3 = enemynear, name = "M.Bison" && enemynear, authorname = "N -Mario"
+trigger3 = enemynear, name = "The Dictator"
 trigger4 = enemynear, name = "M. Bison" && enemynear, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger5 = enemynear, name = "CvSBison" && enemynear, authorname = "Team Kai (Saiai and Koga)"
 value = 34

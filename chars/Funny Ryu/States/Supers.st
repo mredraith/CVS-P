@@ -3539,7 +3539,7 @@ triggerall = !time && numtarget
 trigger1 = target, name = "Demitri" || target, name = "Jedah"
 trigger2 = target, name = "Vega" && (target, authorname = "Phantom.of.the.Server" || target, authorname = "Messatsu")
 trigger3 = target, name = "cvsvega" && (target, authorname = "Warusaki3" || target, authorname = "Gargoyle")
-trigger4 = target, name = "M.Bison" && target, authorname = "N -Mario"
+trigger4 = target, name = "The Dictator" || target, name = "The Boxer" || target, name = "The Claw"
 trigger5 = target, name = "[Necromancer's] M. Bison"
 trigger6 = target, name = "M. Bison" && target, authorname = "VK, Updated by Terry Kuo, adapted by Tenebrous"
 trigger7 = target, name = "CvSBison" && target, authorname = "Team Kai (Saiai and Koga)"
