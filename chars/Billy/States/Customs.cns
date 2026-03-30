@@ -22,7 +22,7 @@ value = 815
 elem=2
 ;---------------------------------------------------------------------------
 [Statedef 816]
-type = A
+type    = A
 movetype= H
 physics = N
 anim=5080
@@ -78,7 +78,7 @@ value = 825
 elem=2
 ;---------------------------------------------------------------------------
 [Statedef 826]
-type = A
+type    = A
 movetype= H
 physics = N
 anim=5080
@@ -137,7 +137,7 @@ type = selfstate
 trigger1 = time >= 24
 value = 0
 ctrl=1
-;HIT WALL==
+;========================<HIT WALL>=============================
 ;---Hit Pause---
 [Statedef 1125]
 type=A
@@ -306,7 +306,7 @@ trigger1= vel y>0 && pos y>=0
 value=5100
 ;---------------------------------------------------------------------------
 [Statedef 1215]
-type = A
+type    = A
 movetype= H
 physics = N
 ctrl = 0
@@ -332,7 +332,7 @@ ignorehitpause =1
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 1215 ;custom animation
+value = 1215  ;<=======custom animation
 ignorehitpause=1
 
 [State 0, ChangeState]
@@ -342,7 +342,7 @@ value = 1216
 ctrl = 0
 ;---------------------------------------------------------------------------
 [Statedef 1216]
-type = L
+type    = L
 movetype= H
 physics = N
 velset = 0,0
@@ -407,7 +407,7 @@ ctrl=1
 ;---------------------------------------------------------------------------
 ;Off screen Knockback
 [Statedef 4020]
-type = A
+type    = A
 movetype= H
 physics = N
 juggle = 1
@@ -428,7 +428,7 @@ value = SCA
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020 ;custom animation
+value = 4020  ;<=======custom animation
 
 [State 0, ChangeState]
 type = changeState
@@ -437,7 +437,7 @@ value = 4021
 ctrl = 0
 ;---------------------------------------------------------------------------
 [Statedef 4021]
-type = L
+type    = L
 movetype= H
 physics = N
 velset = 0,0
@@ -473,7 +473,7 @@ trigger1 = time>=100
 value = Ifelse(Alive,5120,5150)
 ;---------------------------------------------------------------------------
 [Statedef 4058]
-type = S
+type    = S
 movetype= H
 physics = S
 juggle = 1
@@ -500,7 +500,7 @@ y = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4058 ;custom animation
+value = 4058  ;<=======custom animation
 
 [State 0, SelfState]
 type = SelfState
@@ -509,7 +509,7 @@ value = 0
 ctrl = 1
 ;---------------------------------------------------------------------------
 [Statedef 4059]
-type = S
+type    = S
 movetype= H
 physics = S
 juggle = 1
@@ -534,7 +534,7 @@ x = 0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4059 ;custom animation
+value = 4059  ;<=======custom animation
 [State 0, SelfState]
 type = SelfState
 trigger1 = animtime=0
@@ -544,7 +544,7 @@ ctrl = 1
 ;---------------------------------------------------------------------------
 ;Wall-knockdown
 [Statedef 4060]
-type = A
+type    = A
 movetype= H
 physics = N
 velset = 0,0
@@ -583,7 +583,7 @@ value = 4061
 
 ;---------------------------------------------------------------------------
 [Statedef 4061]
-type = A
+type    = A
 movetype= H
 physics = N
 velset = 0,0
@@ -629,7 +629,7 @@ trigger1=time=20
 value = 4062
 ;---------------------------------------------------------------------------
 [Statedef 4062]
-type = A
+type    = A
 movetype= H
 physics = N
 velset = 0,0
@@ -675,7 +675,7 @@ value = 5100
 ;---------------------------------------------------------------------------
 ;Custom-ceiling bounce
 [Statedef 4065]
-type = A
+type    = A
 movetype= H
 physics = N
 velset = 0,0
@@ -706,7 +706,7 @@ value = 4066
 ;---------------------------------------------------------------------------
 ;Blow up
 [Statedef 4070]
-type = A
+type    = A
 movetype= H
 physics = N
 juggle = 1
@@ -728,7 +728,7 @@ movecamera = 1,0
 [State 0, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !time
-value = 4020 ;custom animation
+value = 4020  ;<=======custom animation
 
 [State 0, SelfState]
 type = SelfState

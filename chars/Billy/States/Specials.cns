@@ -167,7 +167,7 @@ value = 1000,1+5*var(42)
 channel = 0
 [State 1005, fx Snd]
 type = PlaySnd
-trigger1 = movehit=1
+trigger1 =  movehit=1
 value = 1005,0
 persistent=0
 [State 1005, Explod]
