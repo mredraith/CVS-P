@@ -1,0 +1,11 @@
+[Statedef +1]
+
+[State +1, Flash]
+type = palfx
+triggerall = roundstate = 2
+triggerall = !ishelper
+trigger1 = HitByAttr(SCA,AA,AP,AT) = 0
+trigger2 = AnimElemVar(NumClsn2) = 0
+time = 1
+add = 64, 64, 64
+ignorehitpause = 1
