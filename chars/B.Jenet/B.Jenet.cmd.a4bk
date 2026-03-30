@@ -1,4 +1,3 @@
-;#ADD004BASIC PIEs#
 ;-| Button Remapping |-----------------------------------------------------
 [Remap]
 x = x
@@ -383,30 +382,53 @@ command = ~D, DF, F, ~c
 time = 15
 
 [Command]
-name = "412p"
-command = /$F, x+y
-time = 8
+name="412p" ;Zero Counter
+command=~B, DB, D, x
+time=16
 [Command]
-name = "412p"
-command = /$F, x+z
-time = 8
+name="412p" ;Zero Counter
+command=~B, DB, D, y
+time=16
 [Command]
-name = "412p"
-command = /$F, y+z
-time = 8
-
+name="412p" ;Zero Counter
+command=~B, DB, D, z
+time=16
 [Command]
-name = "412k"
-command = /$F, a+b
-time = 8
+name="412p" ;Zero Counter
+command=~B, DB, D, ~x
+time=16
 [Command]
-name = "412k"
-command = /$F, a+c
-time = 8
+name="412p" ;Zero Counter
+command=~B, DB, D, ~y
+time=16
 [Command]
-name = "412k"
-command = /$F, b+c
-time = 8
+name="412p" ;Zero Counter
+command=~B, DB, D, ~z
+time=16
+[Command]
+name="412k" ;Zero Counter
+command=~B, DB, D, a
+time=16
+[Command]
+name="412k" ;Zero Counter
+command=~B, DB, D, b
+time=16
+[Command]
+name=  "412k" ;Zero Counter
+command=~B, DB, D, c
+time=16
+[Command]
+name="412k" ;Zero Counter
+command=~B, DB, D, ~a
+time=16
+[Command]
+name="412k" ;Zero Counter
+command=~B, DB, D, ~b
+time=16
+[Command]
+name="412k" ;Zero Counter
+command=~B, DB, D, ~c
+time=16
 ;-| Double Tap |-----------------------------------------------------------
 [Command]
 name = "FF"     ;Required (do not remove)
@@ -696,26 +718,6 @@ command = $D, UB
 time = 18
 ;---------------------------------------------------------------------------
 [Statedef -1]
-
-;//==========================
-;// add004-1-sctrls-start
-;//==========================
-;--- partner_standby
-[state 0]
-	type=selfstate
-	value=190190
-	ctrl=0
-	trigger1=ctrl && numpartner && !ishelper && roundstate=2 && pos y=0
-	trigger1=(sysfvar(4)>0) && (sysfvar(0)>0) && playeridexist(floor(sysfvar(0)))
-	trigger1=(playerid(floor(sysfvar(0))),var(0)=90900) && (playerid(floor(sysfvar(0))),var(22)=4)
-	ignorehitpause=1
-;##Add.List01##
-;//==========================
-;// add004-1-sctrls-end
-;//==========================
-
-
-
 
 [State -1, Tick Fix]
 type = CtrlSet
@@ -1500,4 +1502,3 @@ value=ifelse((pos y>=-20),5200,5210)
 triggerall= AILevel && numenemy
 triggerall= roundstate=2 && stateno=5050
 trigger1= vel y>-1 && alive && canrecover && random < (350 * (AIlevel ** 2 / 64.0))
-

@@ -1,3 +1,10 @@
+; ADD004 BASIC PIEs ReBuilded CNS (27/12/2018)
+;
+; This file is Made by PIE.
+; there is a backup of this file in the same folder, named "<samename>.a4bk".
+; to Restore, use assist tool, or delete this file, then remove ".a4bk" from the neme of backup.
+;
+
 
 ;---------------------------------------------------------------------------
 ; Lose by Time Over
@@ -498,12 +505,12 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;=========<DODGE>=============
+;DODGE
 [Statedef 700]
-type    = S
+type = S
 movetype= I
 physics = S
-juggle  = 0
+juggle = 0
 velset = 0,0
 ctrl = 0
 anim = 700
@@ -545,7 +552,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=========<ROLLING>===========
+;ROLLING
 [StateDef 710]
 type = S
 physics = N
@@ -643,7 +650,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;===========<POWER CHARGE>==================
+;POWER CHARGE
 [StateDef 730]
 type = S
 physics = S
@@ -730,7 +737,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;====================<ZERO COUNTER>====================
+;ZERO COUNTER=
 [StateDef 750]
 type = S
 physics = S
@@ -792,7 +799,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 450, 1115)
 
-;====================<CUSTOM COMBO>====================
+;CUSTOM COMBO=
 ;Ground Version
 [StateDef 900]
 type = S
@@ -1017,7 +1024,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;====================<CROUCHING>====================
+;CROUCHING
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -1119,7 +1126,7 @@ trigger1 = Anim != 21 && Anim != 5
 trigger2 = Anim = 5 && AnimElemTime(1) >= 1
 value = 21
 
-;====================<Jumping>====================
+;Jumping
 [StateDef 40]
 type = S
 physics = S
@@ -1323,9 +1330,9 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=============<Running>====================
+;Running
 [Statedef 100]
-type    = S
+type = S
 movetype = I
 physics = S
 ctrl = 0
@@ -1544,9 +1551,9 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<HIT GROUND(BOUNCE)>===================
+;HIT GROUND(BOUNCE)
 [Statedef 5100]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -1633,9 +1640,9 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;================<HIT LIEDOWN>====================
+;HIT LIEDOWN
 [Statedef 5110]
-type    = L
+type = L
 movetype= H
 physics = N
 
@@ -1805,7 +1812,7 @@ type = ChangeState
 trigger1 = !animtime
 value = 50
 ctrl = 1
-;==========< GUARD >==========
+; GUARD =
 ;--- START ---
 [Statedef 120]
 type = U
@@ -2207,7 +2214,7 @@ value = 130
 type = changestate
 trigger1 = sysvar(0)
 value = 52
-;==========<FORCED P2 RECOVERY>==========
+;FORCED P2 RECOVERY=
 [StateDef 5025]
 type = A
 moveType = H
@@ -2224,9 +2231,9 @@ value = 0
 type = SelfState
 trigger1 = 1
 value = ifElse(pos y, 5020, 5000)
-;==========<Lie Dead>==========
+;Lie Dead=
 [Statedef 5150]
-type    = L
+type = L
 movetype= H
 physics = N
 sprpriority = -3
@@ -2279,7 +2286,7 @@ trigger1 = 1
 value = SCA
 time = 1
 
-;==========<TARGET SAFE FALL>==========
+;TARGET SAFE FALL=
 [StateDef 5205]
 type = A
 physics = N
@@ -2290,7 +2297,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y < -20, 5210, 5200)
 
-;==========<FALL RECOVERY>==========
+;FALL RECOVERY=
 [StateDef 5200]
 type = A
 moveType = H
@@ -2409,7 +2416,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value  = 5200,0
+value = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -2448,7 +2455,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;============<CONTINUE?>==============
+;CONTINUE?=
 [Statedef 5500]
 type = S
 anim = 5300
@@ -2460,7 +2467,7 @@ type = ChangeAnim
 trigger1 = !Time
 value = 5500
 
-;=============<CHEAP K.O.>=============
+;CHEAP K.O.==
 [StateDef 5950]
 type = S
 moveType = H
@@ -2515,7 +2522,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;================<AIR HIT TRANSITION>=================
+;AIR HIT TRANSITION==
 [Statedef 5035]
 type = A
 movetype = H
@@ -2829,7 +2836,7 @@ trigger1 = Enemy(1),statetype = L || Enemy(1),movetype != H
 value = 7828
 ;-------------------------------------------------------------------------------
 [Statedef 7828]
-type    = S
+type = S
 physics = S
 anim = 100
 ctrl = 0
@@ -2893,7 +2900,7 @@ value = 7829
 ctrl = 0
 ;-------------------------------------------------------------------------------
 [Statedef 7829]
-type    = S
+type = S
 physics = S
 anim = 101
 ctrl = 0
@@ -2922,6 +2929,226 @@ ctrl = 1
 ; States that are always executed (use statedef -2)
 ;---------------------------------------------------------------------------
 [Statedef -2]
+
+;#ADD004BASIC PIEs#
+;//==
+;// add004-sctrls-start
+;//==
+;sys::-2::partners_standby ; ???????
+[state 0]
+ type=selfstate
+ value=190190
+ ctrl=0
+ ;;---
+ triggerall=!ishelper && numpartner && roundstate=2 && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
+ triggerall=(stateno!=[190190,190199]) && playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(22)=4
+ ;;---// switch / change ;(??)
+ trigger1=sysfvar(4)<1 && ( ctrl || (time<2 && stateno<600) ) && playerid(floor(sysfvar(0))),var(48)=11
+ trigger1=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
+ ;;---// assist ;(??)
+ trigger2=sysfvar(4)=1 && ( ctrl || (stateno-playerid(floor(sysfvar(0))),var(53+id-playerid(floor(sysfvar(0))),sysvar(0))!=[0,999]) )
+ trigger2=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
+ ;;---// switch-canceling ;(??????)
+ trigger3=sysfvar(4)=2 && ( ctrl || stateno<160 )
+ trigger3=(pos y>=0) && movetype!=h && gethitvar(isbound)=0 && (stateno!=5120) && (stateno!=[5200,5210])
+ ;;---// player-priority ;(??)
+ trigger4=sysfvar(4)<1 && playerid(floor(sysfvar(0))),var(15)!=id
+ ;;---
+ ignorehitpause=1
+
+;sys::-2::partners_change_interrupted ; ??????
+[state 0]
+ type=varset
+ trigger1=!ishelper && numpartner && roundstate=2 && alive && sysfvar(0)>0 && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(48)=21 && sysfvar(4)<1
+ sysfvar(4)=2 ;; (0:main / 1:assist / 2:switch-canceling)
+
+;sys::-2::helper::bar004 ; ?????
+[state 0]
+ type=helper
+ triggerall=!ishelper && !numhelper(90900)
+ trigger1=numpartner
+ trigger1=id<(partner,id) && partner,numhelper(90900)=0
+ trigger2=!numpartner
+ id=90900
+ stateno=90900
+ helpertype=normal
+ ownpal=1
+ size.air.front=1702252 ;; <<-version
+ size.height=0
+ ignorehitpause=1
+ supermovetime=88888
+ pausemovetime=88888
+ pos=0,88888
+
+;sys::-2::get_helper::bar004_id ; ID??
+[state 0]
+ type=varset
+ trigger1=!ishelper && numhelper(90900)
+ trigger1=(helper(90900),var(0)=90900) && (sysfvar(0)!=helper(90900),id)
+ sysfvar(0)=(helper(90900),id)
+;sys::-2::get_players_id2
+[state 0]
+ type=varset
+ trigger1=!ishelper && numpartner
+ trigger1=!numhelper(90900) && (partner,numhelper(90900)) && (sysfvar(0)!=(partner,sysfvar(0)))
+ sysfvar(0)=(partner,sysfvar(0))
+
+;sys::-2::bk/jd_system ; ?????/????D
+[state 0]
+ type=hitoverride
+ trigger1=(numprojid(195502)||numprojid(195503)) && !ishelper && roundstate=2 && alive && (ctrl || stateno=52)
+ attr=sca,na,sa,ha,np,sp,hp
+ stateno=195500
+ time=1
+ ignorehitpause=1
+
+;//==
+;;>>@Config.Face>>
+;sys::-2::face_d ; portrait (?)
+[state 0]
+ type=explod
+ trigger1=!ishelper && alive && !numexplod(490600) && selfanimexist(909002)
+ trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),numexplod(490600)
+ trigger1=movetype!=h || (stateno=[120,159]) || (stateno=[5000,5199]) || (stateno=[190190,190196])
+ id=490600
+ anim=909002
+ space=screen
+ postype=left
+ facing=ifelse(teamside=1,1,-1)
+ ownpal=1
+ bindtime=-1
+ removetime=-1
+ scale=playerid(floor(sysfvar(0))),fvar(32-(id=playerid(floor(sysfvar(0))),var(15))*10), playerid(floor(sysfvar(0))),fvar(33-(id=playerid(floor(sysfvar(0))),var(15))*10)
+ pos=floor(const240p(playerid(floor(sysfvar(0))),fvar(30-(id=playerid(floor(sysfvar(0))),var(15))*10))), floor(const240p(playerid(floor(sysfvar(0))),fvar(31-(id=playerid(floor(sysfvar(0))),var(15))*10)))
+ sprpriority=floor(playerid(floor(sysfvar(0))),fvar(36-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ trans=addalpha
+ alpha=floor(playerid(floor(sysfvar(0))),fvar(34-(id=playerid(floor(sysfvar(0))),var(15))*10)), floor(playerid(floor(sysfvar(0))),fvar(35-(id=playerid(floor(sysfvar(0))),var(15))*10))
+ ignorehitpause=1
+ supermovetime=-1
+ pausemovetime=-1
+;sys::-2::face_d_mod
+[state 0]
+ type=removeexplod
+ trigger1=sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=(playerid(floor(sysfvar(0))),var(0)=90900)
+ trigger1=(playerid(floor(sysfvar(0))),var(9)&262144) || !(playerid(floor(sysfvar(0))),var(9)&4)
+ trigger2=roundstate!=2 || (stateno=5150 && time=5 && !alive)
+ id=490600
+ ignorehitpause=1
+
+;//==
+;;>>@Config.Camera>>
+;sys::-2::camera_nc ; ????
+[state 0]
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ movecamera=0,0
+ ignorehitpause=1
+;sys::-2::camera_np
+[state 0]
+ type=playerpush
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && numpartner && (sysfvar(4)>0 || stateno=5150)
+ value=0
+ ignorehitpause=1
+;sys::-2::camera_nc2
+[state 0]
+ type=screenbound
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && (playerid(floor(sysfvar(0))),var(7)&65536) ;; system_switch
+ value= ((numpartner && sysfvar(4)<1) || !numpartner) ;; [def=0]
+ movecamera=0,0 ;; [x,y]
+ ignorehitpause=1
+
+;//==
+;sys::-2::add.option2-noko
+[state 0] ;; opt-noko
+ type=assertspecial
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ trigger1=id=playerid(floor(sysfvar(0))),var(15) && (playerid(floor(sysfvar(0))),var(9)&65536) ;; opt-noko
+ flag=noko
+ ignorehitpause=1
+;sys::-2::add.option3-life-mod
+[state 0] ;; opt-life-mod
+ type=lifeadd
+ trigger1=!ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900
+ trigger1=id=playerid(floor(sysfvar(0))),var(15) && playerid(floor(sysfvar(0))),var(23)!=0 ;; opt-mod-life
+ value=playerid(floor(sysfvar(0))),var(23)
+ kill=0
+ ignorehitpause=1
+
+;//==
+;// optional settings
+;sys::-2::guard_crush_fx ; ????????
+[state 0]
+ type=palfx
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && (gametime%5=0) && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(36)>=40
+ time=2
+ add=200,0,0
+;sys::-2::guard_crush_cs
+[state 0]
+ type=changestate
+ trigger1=(stateno=150 || stateno=152) && alive && !ishelper && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(36)>=50
+ value=190010
+ ignorehitpause=1
+;;--- dizzy
+;sys::-2::goto-dizzy_s/c
+[state 0] ;[.03-2d1]
+ type=selfstate
+ trigger1=(stateno=5001 || stateno=5011) && hitover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
+ value=195201 ;; (goto-dizzy:190116)
+;sys::-2::goto-dizzy_a/l
+[state 0] ;[.03-2d2]
+ type=selfstate
+ trigger1=(stateno=5030 || stateno=5071) && hitshakeover && alive && !ishelper && life>1 && roundstate=2 && sysfvar(0)>id && playeridexist(floor(sysfvar(0)))
+ trigger1=playerid(floor(sysfvar(0))),var(0)=90900 && playerid(floor(sysfvar(0))),var(50)>=1000
+ value=195050
+;;--- fadeout when KOed ; KO????
+;sys::-2::st5150-1
+[state 0]
+ type=varset
+ trigger1=stateno=5150 && time=1 && alive=0 && !ishelper && numpartner
+ sysvar(1)=(roundstate<=2)
+;sys::-2::st5150-2
+[state 0]
+ type=assertspecial
+ trigger1=stateno=5150 && alive=0 && !ishelper && numpartner && sysvar(1) && (((time=[80,150]) && time%10<5) || time>150)
+ flag=invisible
+ flag2=noshadow
+;;--- intro-pos-reset
+;sys::-2::st5900-p3
+[state 0]
+ type=turn
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && facing=ifelse(teamside=1,-1,1)
+;sys::-2::st5900-p4
+[state 0]
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>1 && playeridexist(id-2)
+ trigger1=playerid(id-2),ishelper=0 && playerid(id-2),teamside=teamside
+ x=const240p(120)*ifelse(teamside=1,-1,1)
+;sys::-2::st5900-p5
+[state 0]
+ type=posset
+ trigger1=stateno=5900 && time=0
+ trigger1=!ishelper && numpartner>2 && playeridexist(id-3)
+ trigger1=playerid(id-3),ishelper=0 && playerid(id-3),teamside=teamside
+ x=const240p(144)*ifelse(teamside=1,-1,1)
+
+;//==
+;// add004-sctrls-end
+;//==
+
 
 [State -2, Finish]
 type = ScreenBound
@@ -3282,9 +3509,9 @@ facing = -1
 pos = 0,0
 ownPal = 1
 ignorehitpause=1
-;=========================================================================
+;
 ;Dampener
-;=========================================================================
+;
 [State -2, Damage based on hits]
 type=varset
 triggerall= numenemy
@@ -3397,7 +3624,7 @@ ignorehitpause=1
 trigger1 = 1
 type = DisplayToClipboard
 ignorehitpause = 1
-text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
 params = fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]
@@ -3521,7 +3748,7 @@ trigger4= var(20) && stateno = 1000 && animelemtime(7)>1
 trigger5= var(20) && stateno = 1100 && movecontact && animelemtime(15)<0
 trigger6= var(20) && stateno = 1210 && animelemtime(1)>1
 trigger7= (stateno = [200, 440]) && movecontact && stateno!=221 && !var(55)
-trigger7= anim!=220 && anim!=230  && anim!=250
+trigger7= anim!=220 && anim!=230 && anim!=250
 trigger8= var(20) && stateno = 1310 && animelemtime(1)>1
 trigger9= var(20) && (stateno=[200,1520]) && movecontact
 var(5) = 1
@@ -3745,3 +3972,4 @@ ownPal = 1
 pauseMoveTime = 255
 superMoveTime = 255
 ignoreHitPause = 1
+

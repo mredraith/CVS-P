@@ -134,17 +134,20 @@ ignorehitpause = 1
 
 [State 191, Vs. Geese]
 type = ChangeState
-triggerall = !time && Roundno=1 && !(teammode = simul) && !(enemy, teammode = simul)
+triggerAll = numenemy
+triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1 = Enemy, Name= "Geese"||Enemy, Name="Geese Howard"||Enemy, Name= "DGeese"||Enemy, Name= "cvsgeese"
 value = 199
-[State 191, Vs. Geese]
+[State 191, Vs. Iori]
 type = ChangeState
-triggerall = !time && Roundno=1 && !(teammode = simul) && !(enemy, teammode = simul)
+triggerAll = numenemy
+triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1=Enemy, Name="Iori Yagami" || Enemy, Name="Iori" || Enemy, Name="cvsiori"
 value = 192
 [State 191, Vs. Fatal Fury]
 type = ChangeState
-triggerall = !time && Roundno=1 && !(teammode = simul) && !(enemy, teammode = simul)
+triggerAll = numenemy
+triggerAll = RoundNo = 1 || (((!(Enemy, RoundsExisted) || !RoundsExisted) && !(TeamMode = Simul) && !(Enemy, TeamMode = Simul)))
 trigger1=Enemy, Name="Terry Bogard" || Enemy, Name="Terry" || Enemy, Name="cvsTerry"
 trigger2=Enemy, Name="Wolfgang Krauser" 
 trigger3=Enemy, Name="Yamazaki" || Enemy, Name="Ryuji Yamazaki" || Enemy, Name="cvsyamazaki"

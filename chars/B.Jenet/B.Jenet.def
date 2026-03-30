@@ -27,8 +27,13 @@ st6=config.txt
 [Palette Keymap]
 a = 1
 b = 2
+<<<<<<< HEAD
 c = 3
 x = 4
+=======
+c = 4
+x = 3
+>>>>>>> parent of 9981a5d3 (Replaced B. Jenet and Billy)
 y = 5
 z = 6
 a2 = 7
