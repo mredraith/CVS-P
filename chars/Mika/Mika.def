@@ -5,7 +5,7 @@ versiondate = 08,20,2018
 mugenversion = 1.0
 author = "DeathScythe" 
 pal.defaults = 1,2,3,4
-localCoord  = 428,240
+localCoord = 428,240
 
 [Files]
 movelist = movelist.dat
