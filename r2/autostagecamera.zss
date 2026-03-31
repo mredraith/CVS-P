@@ -37,7 +37,7 @@ mapset{map: "_pots_stagecamera_cfg_camera_cutlow"; value: 16}			# Distance from 
 # Zoom limits
 # These options limit camera zoom to a certain range
 
-mapset{map: "_pots_stagecamera_cfg_toggle_zoom_limits"; value: 1}		# Enable to allow changing the parameters in this group
+mapset{map: "_pots_stagecamera_cfg_toggle_zoom_limits"; value: 0}		# Enable to allow changing the parameters in this group
 mapset{map: "_pots_stagecamera_cfg_camera_zoomin"; value: 1.0}			# Lock zoomin to this value
 mapset{map: "_pots_stagecamera_cfg_camera_min_zoomout"; value: 1.0}	# Adjust minimum zoomout
 
