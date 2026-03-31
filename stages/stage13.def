@@ -21,7 +21,7 @@ overdrawlow = 240
 cuthigh = 0
 cutlow = 0
 zoomin=1
-zoomout=0.75
+zoomout=1
 ;Field of view. 30 is good for photorealistic scenes, but feel free to tweak this to your preference.
 fov = 60
 yshift = -.10
