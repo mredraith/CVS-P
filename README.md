@@ -5,7 +5,7 @@ This is my patched/updated version of the Mugen game [Capcom vs SNK Evolution Re
 Featuring:
 
 * Like 150 characters, rebalanced
-* 12 3D stages made by me
+* 14 3D stages made by me
 * Complete port to Ikemen GO
   * Netplay via Ikemen GO's built-in connection system
 * Snappy and weighty pacing
