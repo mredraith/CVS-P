@@ -12,7 +12,7 @@ ikemenversion = 1.0
 author = "Phantom.of.the.Server"
 pal.defaults = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 localCoord = 428,240
-portraitscale = 1.0
+
 
 [Files]
 cmd = nakcmd.cns
