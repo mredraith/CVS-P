@@ -1,0 +1,314 @@
+;===============< INITIALIZE >===================
+;Initialize Start Round
+[Statedef 5901]
+type = S
+
+;===========================================================================
+;Customizable Configuartion 
+;===========================================================================
+; Assign Palettes
+[State 5900, Assign Palettes]
+type = Null
+triggerall = !var(26)
+; 01
+trigger1 = PalNo = 1
+trigger1 = 1 || var(26) := 1
+; 02
+trigger2 = PalNo = 2
+trigger2 = 1 || var(26) := 2
+; 03
+trigger3 = PalNo = 3
+trigger3 = 1 || var(26) := 3
+; 04
+trigger4 = PalNo = 4
+trigger4 = 1 || var(26) := 4
+; 05
+trigger5 = PalNo = 5
+trigger5 = 1 || var(26) := 5
+; 06
+trigger6 = PalNo = 6
+trigger6 = 1 || var(26) := 6
+; 07
+trigger7 = PalNo = 7
+trigger7 = 1 || var(26) := 17
+; 08
+trigger8 = PalNo = 8
+trigger8 = 1 || var(26) := 8
+; 09
+trigger9 = PalNo = 9
+trigger9 = 1 || var(26) := 9
+; 10
+trigger10 = PalNo = 10
+trigger10 = 1 || var(26) := 10
+; 11
+trigger11 = PalNo = 11
+trigger11 = 1 || var(26) := 11
+; 12
+trigger12 = PalNo = 12
+trigger12 = 1 || var(26) := 16
+;___________________________________________________________________________
+;You can assign any palette you like to each PalNo.
+;Please refer to the SFF file to determine which number is which palette.
+;===========================================================================
+; Palette Selector
+[State 5900, Palette Selector]
+type = VarSet
+trigger1 = 1
+v = 27
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Palette Selector on Intro
+;Change the value number to 1 if you do want Palette Selector on Intro
+;Default value is 0.
+;===========================================================================
+; EX Mode Selector
+[State 5900, EX Mode Selector]
+type = VarSet
+trigger1 = 1
+v = 39
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want EX Mode Selector
+; Palettes 01, 02, 03, 04, 05, 06  -> Normal Mode
+; Palettes 07, 08, 09, 10, 11, 12  -> EX Mode
+;
+;Change the value number to 1 if you do want EX Mode Selector
+;
+;Default value is 0.
+;===========================================================================
+; PotS Style Hitsparks
+[State 5900, PotS Style Hitsparks]
+type = VarSet
+trigger1 = 1
+v = 43
+value = 3
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want PotS style hitsparks
+;Change the value number to 1-4 if you want the PotS style hitsparks
+; [1: Only Orange]
+; [2: Only Red]
+; [3: Multi-Colored Type 1]
+;  Normal: Red	Special: Blue	Super: Purple(Front) & Blue(Back)
+; [4: Multi-Colored Type 2]
+;  Normal: Red	Special: Blue	Super: Purple
+;
+;Default value is 3.
+;===========================================================================
+; PotS Style Hit Sounds
+[State 5900, PotS Style Hit Sounds]
+type = VarSet
+trigger1 = 1
+v = 44
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want PotS style hitsounds
+;Change the value number to 1 if you want the PotS style hitsounds
+;Default value is 1.
+;===========================================================================
+; Ground/Wall Shockwaves
+[State 5900, Ground/Wall Shockwaves]
+type = VarSet
+trigger1 = 1
+fv = 21
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you want Common shockwaves
+;Change the value number to 1 if you want Custom shockwaves
+;Default value is 1.
+;===========================================================================
+; Character Name
+[State 5900, Character Name]
+type = VarSet
+trigger1 = 1
+v = 45
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you want Donald (JPN)
+;Change the value number to 1 if you want Ronald (ENG)
+;Default value is 0.
+;===========================================================================
+; Chain Combos/Air Combos
+[State 5900, Chain Combos/Air Combos]
+type = VarSet
+trigger1 = 1
+v = 55
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want chain comboing
+;Change the value number to 1 if you want chain comboing
+;Change the value number to 2 if you want chain comboing and Air Comboing
+;Default value is 1.
+;===========================================================================
+; Special Finish
+[State 5900, Special Finish]
+type = VarSet
+trigger1 = 1
+v = 56
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Special Finish
+;Change the value number to 1 if you do want Special Finish
+;Change the value number to 2 if you do want Special Finish (NoMusic)
+;Change the value number to 3 if you do want Special Finish (NoMusic + NoBarDisplay)
+;Change the value number to 4 if you do want Special Finish (NoMusic + NoBarDisplay + NoFG)
+;Default value is 0.
+;===========================================================================
+; Super Finish
+[State 5900, Super Finish]
+type = VarSet
+trigger1 = 1
+v = 57
+value = 1
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Super Finish
+;Change the value number to 1 if you do want Super Finish
+;Change the value number to 2 if you do want Super Finish (NoMusic)
+;Default value is 1.
+;===========================================================================
+; Auto Config Change for Add004
+[State 5900, Auto Config Change for Add004]
+type = VarSet
+trigger1 = 1
+v = 58
+value = 0
+;___________________________________________________________________________
+;Change the value number to 0 if you do not want Auto Config Change for Add004
+;Change the value number to 1 if you do want Auto Config Change for Add004
+;Default value is 0.
+;===========================================================================
+; AILevel for Simul with Player
+[State 5900, AILevel for Simul with Player]
+type = VarSet
+trigger1 = 1
+v = 59
+value = 9
+;___________________________________________________________________________
+;Change the value number to 1-2 if you want Easy
+;Change the value number to 3-4 if you want Medium
+;Change the value number to 5-6 if you want Hard
+;Change the value number to 7-8 if you want Very Hard
+;Change the value number to 9-? if you want AILevel in Option Mode
+;Default value is 8.
+;===========================================================================
+; Boss Mode in Arcade Mode
+[State 5900, Boss Mode in Arcade Mode]
+type = VarSet
+triggerall = IsHomeTeam && MatchNo >= 2
+v = 40
+value = 3
+
+trigger1 = 0
+; 0 = OFF
+; 1 = ON
+
+trigger1 = MatchNo >= 5
+; Choose how many stages later this character will be in Boss Mode.
+; The number you enter must be at least 2.
+;===========================================================================
+
+
+
+
+
+
+
+;=============================================================================
+;Do Not Edit Below This Line
+;=============================================================================
+
+;-----------------------------------------------------------------------------
+;Debug
+[State 5900, Debug: Boss Mode]
+type = VarSet
+trigger1 = 0
+v = 40
+value = 3
+;-----------------------------------------------------------------------------
+
+;-----------------------------------------------------------------------------
+[State 5900, No Palette Selector]
+type = VarSet
+triggerall = var(58) || AILevel
+trigger1 = 1
+v = 27
+value = 0
+
+[State 5900, No EX Mode Selector]
+type = VarSet
+triggerall = var(58) || AILevel
+trigger1 = 1
+v = 39
+value = 0
+
+[State 5900, No EX Mode Selector]
+type = VarSet
+triggerall = var(40) < 2
+triggerall = !var(39) || AILevel
+trigger1 =!roundsexisted && !fvar(38)
+v = 40
+value = ifelse(palno>6, ifelse(var(40),0,1), ifelse(var(40),1,0))
+
+[State 5900, Final Boss Mode]
+type = VarSet
+trigger1 = var(40) > 3
+v = 40
+value = 3
+
+[State 5900, Tag Assist StateNo]
+type = VarSet
+triggerall = var(58)
+trigger1 = 1
+sysvar(0) = IfElse(Var(40)>=1, 1000, 1000)
+;-----------------------------------------------------------------------------
+
+
+[State 5900, Safety]
+type = VarSet
+trigger1 = !var(26)
+v = 26
+value = palno
+
+[State 5900, RemapPal]
+type = RemapPal
+trigger1 = var(26)
+source = 1, 1
+dest = 1, var(26)
+ignorehitpause = 1
+
+[State 5900, Pal Selector on]
+type=helper
+triggerall=var(27)&&!numhelper(256)&&!AILevel&&numenemy 
+trigger1= !roundsexisted && !fvar(38)
+trigger2= !var(26) 
+id=256
+stateno=256
+postype=left
+facing=1
+ownpal=1
+size.xScale=0.5
+size.yScale=0.5
+
+
+[State 5900, Turns Intro]
+type = ChangeState
+trigger1 = TeamMode = Turns
+trigger1 = !RoundsExisted && RoundNo >= 2
+value = 6900
+
+[State 5900, intro VS Colonel Sanders]
+type=changestate
+trigger1= numenemy
+trigger1= !roundsexisted && !(enemy,roundsexisted)
+trigger1= !(teammode=simul) && !(enemy,teammode=simul)
+trigger1=enemy,authorname="peg"&&enemy,name="Colonel"
+value=6910
+
+[State 5900, Intro Decider]
+type = ChangeState
+trigger1 = RoundNo = 1
+value = 190+random%4
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 0

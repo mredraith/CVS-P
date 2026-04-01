@@ -223,7 +223,10 @@ empty
 empty
 empty
 empty
-Kung Fu Man, stages/stageRO.def, includestage=-1, order=6
+slot = {
+Kung Fu Man, stages/stageRO.def, includestage=-1, order=6, previous=d, next=w
+Ronald, random, order=6, previous=d, next=w, select=/s+a
+}
 empty
 empty
 empty

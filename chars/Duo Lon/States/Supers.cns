@@ -305,7 +305,7 @@ hitflag=MAF
 getpower=0,0
 givepower=30, 30
 priority=6, Hit
-pausetime =7, 7
+pausetime =11,11
 guard.pausetime = 11,11
 sparkNo=-1 + 0 * (var(33) := 8010)
 guard.sparkNo=-1 + 0 * (var(34) := 8000)
@@ -326,7 +326,7 @@ guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 yaccel=.50
 air.fall = 1
-fall.recover = 0
+fall.recover=0
 fall.recoverTime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
@@ -647,7 +647,7 @@ damage=205,10
 animtype=Up
 hitflag=MAFD
 guardflag=M
-pausetime =7, 7
+pausetime =0,0
 sparkNo=-1 + 0 * (var(33) := 8014)
 guard.sparkNo=-1 + 0 * (var(34) := 8001)
 sparkXY=-10 + 0 * (var(35) := 40), var(36):=-45
@@ -658,7 +658,7 @@ ground.slidetime=17
 ground.hittime=17
 guard.hittime = (17) - 6
 fall=1
-fall.recover = 0
+fall.recover=0
 getpower=0,0
 givepower=16, 16
 yaccel=.5
@@ -901,7 +901,7 @@ damage=22,10
 animtype=hard
 hitflag=MAF
 guardflag=M
-pausetime =7, 7
+pausetime =0,0
 guard.sparkNo=-1 + 0 * (var(34) := 8001)
 guardsound=s130, 0
 ground.type=low
@@ -911,7 +911,7 @@ guard.hittime = (20) - 6
 ground.velocity=0,0
 air.velocity=0,0
 fall=1
-fall.recover = 0
+fall.recover=0
 getpower=0,0
 givepower=16, 16
 yaccel=.5
@@ -1504,7 +1504,7 @@ sparkno=-1
 p2stateno=3502
 hitsound=s800, 0
 fall=1
-fall.recover = 0
+fall.recover=1
 ID = 3500
 
 [State 3500, Hit Variant]

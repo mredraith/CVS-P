@@ -1,0 +1,71 @@
+;===============< INITIALIZE >===================
+;Initialize Start Round
+[Statedef 5900]
+type = S
+
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+[State 5900, First Battle]
+type = VarSet
+trigger1 = !roundsexisted && matchno = 1
+fvar(38) = 0
+
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !fvar(38)
+first = 0
+last = 59
+value = 0
+[state 5900, Reset Variables]
+type = varrangeset
+trigger1 = !fvar(38)
+first = 0
+last = 39
+fvalue = 0
+;__________________________________________________________________________
+;==========================================================================
+;__________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+;==========================================================================
+;Mode Select
+;==========================================================================
+; Default Mode
+[State 5900, Mode Select]
+type = VarSet
+trigger1 = !fvar(38)
+v = 40
+value = 2
+;___________________________________________________________________________
+;Change the value number to 0 if you do want Normal Mode
+;Change the value number to 1 if you do want EX Mode
+;
+;BOSS MODE (Can use all moves) (EX Mode Selector is hidden)
+;Change the value number to 2 if you do want BOSS Mode
+;Change the value number to 3 if you do want FINAL BOSS Mode
+;
+;Default value is 0.
+;===========================================================================
+
+
+
+
+
+
+
+
+
+
+[State 5900, End]
+type = ChangeState
+trigger1 = 1
+value = 5901

@@ -10,7 +10,7 @@ s = s
 ;-| Default Values |-------------------------------------------------------
 [Defaults]
 command.time = 15
-command.buffer.time = 4
+command.buffer.time = 1
 
 ;-| Super Motions |--------------------------------------------------------
 [Command]
@@ -393,30 +393,53 @@ command = ~D, DF, F, c+a
 time = 15
 
 [Command]
-name = "412p"
-command = /$F, x+y
-time = 8
+name = "412p" ;Zero Counter
+command = ~B, DB, D, x
+time = 16
 [Command]
-name = "412p"
-command = /$F, x+z
-time = 8
+name = "412p" ;Zero Counter
+command = ~B, DB, D, y
+time = 16
 [Command]
-name = "412p"
-command = /$F, y+z
-time = 8
-
+name = "412p" ;Zero Counter
+command = ~B, DB, D, z
+time = 16
 [Command]
-name = "412k"
-command = /$F, a+b
-time = 8
+name = "412p" ;Zero Counter
+command = ~B, DB, D, ~x
+time = 16
 [Command]
-name = "412k"
-command = /$F, a+c
-time = 8
+name = "412p" ;Zero Counter
+command = ~B, DB, D, ~y
+time = 16
 [Command]
-name = "412k"
-command = /$F, b+c
-time = 8
+name = "412p" ;Zero Counter
+command = ~B, DB, D, ~z
+time = 16
+[Command]
+name = "412k" ;Zero Counter
+command = ~B, DB, D, a
+time = 16
+[Command]
+name = "412k" ;Zero Counter
+command = ~B, DB, D, b
+time = 16
+[Command]
+name=  "412k" ;Zero Counter
+command = ~B, DB, D, c
+time = 16
+[Command]
+name = "412k" ;Zero Counter
+command = ~B, DB, D, ~a
+time = 16
+[Command]
+name = "412k" ;Zero Counter
+command = ~B, DB, D, ~b
+time = 16
+[Command]
+name = "412k" ;Zero Counter
+command = ~B, DB, D, ~c
+time = 16
 ;-| Double Tap |-----------------------------------------------------------
 [Command]
 name = "FF"     ;Required (do not remove)
@@ -1498,13 +1521,3 @@ value=ifelse((pos y>=-20),5200,5210)
 triggerall= AILevel && numenemy
 triggerall= roundstate=2 && stateno=5050
 trigger1= vel y>-1 && alive && canrecover && random < (350 * (AIlevel ** 2 / 64.0))
-
-; --- UNIVERSAL GUARD CANCEL (Added by Script) ---
-[State -1, Universal Guard Cancel]
-type = ChangeState
-value = 220
-triggerall = !AILevel
-triggerall = StateNo = [150, 155] ; Trigger only when in block stun (standing, crouching, or air)
-triggerall = power >= 1000 ; Must have at least 1 bar of power
-trigger1 = command = "x" && command = "a" ; Light Punch + Light Kick
-trigger1 = command = "holdfwd"

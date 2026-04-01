@@ -453,12 +453,12 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;DODGE==
+;=========<DODGE>=============
 [Statedef 700]
-type = S
+type    = S
 movetype= I
 physics = S
-juggle = 0
+juggle  = 0
 velset = 0,0
 ctrl = 0
 anim = 700
@@ -499,7 +499,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;ROLLING==
+;=========<ROLLING>===========
 [StateDef 710]
 type = S
 physics = N
@@ -597,7 +597,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;POWER CHARGE=
+;===========<POWER CHARGE>==================
 [StateDef 730]
 type = S
 physics = S
@@ -684,7 +684,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;ZERO COUNTER=
+;====================<ZERO COUNTER>====================
 [StateDef 750]
 type = S
 physics = S
@@ -746,7 +746,7 @@ type = ChangeState
 trigger1 = Time >= 15
 value = ifElse(var(10) = 1, 450, 221)
 
-;CUSTOM COMBO=
+;====================<CUSTOM COMBO>====================
 ;Ground Version
 [StateDef 900]
 type = S
@@ -966,7 +966,7 @@ type = ChangeState
 trigger1 = !Alive
 value = 5050
 
-;CROUCHING=
+;====================<CROUCHING>====================
 ;Stand to Crouch
 [StateDef 10]
 type = C
@@ -1068,7 +1068,7 @@ trigger1 = Anim != 21 && Anim != 5
 trigger2 = Anim = 5 && AnimElemTime(1) >= 1
 value = 21
 
-;Jumping=
+;====================<Jumping>====================
 [StateDef 40]
 type = S
 physics = S
@@ -1271,9 +1271,9 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;Running=
+;=============<Running>====================
 [Statedef 100]
-type = S
+type    = S
 movetype = I
 physics = S
 ctrl = 0
@@ -1457,9 +1457,9 @@ type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
-;HIT GROUND(BOUNCE)==
+;=====================<HIT GROUND(BOUNCE)>===================
 [Statedef 5100]
-type = L
+type    = L
 movetype= H
 physics = N
 
@@ -1546,10 +1546,10 @@ waveform = sinesquare
 ampl = 128,-3,-.2,.005
 time = 20
 
-;HIT LIEDOWN=
+;================<HIT LIEDOWN>====================
 ;Hit Liedown
 [Statedef 5110]
-type = L
+type    = L
 movetype= H
 physics = N
 
@@ -1666,7 +1666,7 @@ ampl = 200, 7, -.467
 time = 30
 waveform = sine
 
-; GUARD =
+;==========< GUARD >==========
 ;--- START ---
 [Statedef 120]
 type = U
@@ -2068,7 +2068,7 @@ value = 130
 type = changestate
 trigger1 = sysvar(0)
 value = 52
-;FORCED P2 RECOVERY=
+;==========<FORCED P2 RECOVERY>==========
 [StateDef 5025]
 type = A
 moveType = H
@@ -2086,7 +2086,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y, 5020, 5000)
 
-;TARGET SAFE FALL=
+;==========<TARGET SAFE FALL>==========
 [StateDef 5205]
 type = A
 physics = N
@@ -2097,7 +2097,7 @@ type = SelfState
 trigger1 = 1
 value = ifElse(pos y < -20, 5210, 5200)
 
-;FALL RECOVERY=
+;==========<FALL RECOVERY>==========
 [StateDef 5200]
 type = A
 moveType = H
@@ -2216,7 +2216,7 @@ channel = 0
 [State 5210, Recover Sound]
 type = PlaySnd
 trigger1 = !Time
-value = 5200,0
+value  = 5200,0
 channel = 1
 
 [State 5210, Flash]
@@ -2255,7 +2255,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;CONTINUE?=
+;============<CONTINUE?>==============
 [Statedef 5500]
 type = S
 anim = 5300
@@ -2266,7 +2266,7 @@ ctrl = 0
 type = ChangeAnim
 trigger1 = !Time
 value = 5500
-; K.O. =
+;====================< K.O. >====================
 [Statedef 5150]
 type = L
 movetype = H
@@ -2292,7 +2292,7 @@ type = nothitby
 trigger1 = 1
 value = SCA
 time = 1
-;CHEAP K.O.==
+;=============<CHEAP K.O.>=============
 [StateDef 5950]
 type = S
 moveType = H
@@ -2347,7 +2347,7 @@ type = ChangeState
 trigger1= !AnimTime
 value = ifElse(Alive, 5110, 5150)
 
-;AIR HIT TRANSITION==
+;================<AIR HIT TRANSITION>=================
 [Statedef 5035]
 type = A
 movetype = H
@@ -2661,7 +2661,7 @@ trigger1 = Enemy(1),statetype = L || Enemy(1),movetype != H
 value = 7828
 ;-------------------------------------------------------------------------------
 [Statedef 7828]
-type = S
+type    = S
 physics = S
 anim = 100
 ctrl = 0
@@ -2725,7 +2725,7 @@ value = 7829
 ctrl = 0
 ;-------------------------------------------------------------------------------
 [Statedef 7829]
-type = S
+type    = S
 physics = S
 anim = 101
 ctrl = 0
@@ -3117,9 +3117,9 @@ facing = -1
 pos = 0,0
 ownPal = 1
 ignorehitpause=1
-;
+;=========================================================================
 ;Dampener
-;
+;=========================================================================
 [State -2, Damage based on hits]
 type=varset
 triggerall= numenemy
@@ -3226,7 +3226,7 @@ ignorehitpause=1
 trigger1 = 1
 type = DisplayToClipboard
 ignorehitpause = 1
-text = "Damp = %d Limit = %d juggle = %d hit = %d Front =%d Back = %d"
+text = "Damp = %d Limit = %d juggle = %d hit = %d  Front =%d Back = %d"
 params = fvar(10) , fvar(8), var(15) , var(13) , frontedgebodydist , backedgebodydist
 ignorehitpause=1
 [State -2, Debug 2]
@@ -3344,7 +3344,7 @@ trigger4 = var(20) && stateno = 1000 && animelemtime(12) > 1
 trigger5 = var(20) && stateno = 1010 && animelemtime(1) > 1
 trigger6 = var(20) && stateno = 1050 && animelemtime(6) > 1
 trigger7 = var(20) && stateno = 1100 && movecontact
-trigger8 = var(20) && (stateno = [1200,1300]) && movecontact
+trigger8 = var(20) && (stateno =  [1200,1300]) && movecontact
 trigger9 = var(20) && (stateno = 450) && movecontact
 trigger10 = (stateno = [200, 250]) && movecontact && stateno!=221
 trigger10 = anim!=220

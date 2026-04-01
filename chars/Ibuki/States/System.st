@@ -608,7 +608,7 @@ value = 111
 [StateDef 111]
 type = S
 physics = S
-ctrl = 1
+ctrl = 1	
 anim = 111
 velSet = 0,0
 

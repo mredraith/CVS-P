@@ -1,0 +1,185 @@
+
+;---------------------- Integer variable list ----------------------
+;var(0):= Hyper Finish Text Selector
+;var(3):= Jump
+;var(4):= Normal Cancel
+;var(5):= Special Cancel
+;var(6):= Super Cancel
+;var(7):= Max Cancel
+;var(8):= Helper Contact Target
+;var(9):= Counter Flag
+;var(10):= Move Var
+;var(11):= Helper Var
+;var(13):= Hit count
+;var(15):= Juggle Points
+;var(16):= Juggle Flag
+;var(17):= Unguardable
+;var(18):= Helper Projcontact
+;var(19):= Throw Escape
+;var(20):= Custom Combo Time
+;var(21):= Super Cancel Flag
+;var(22):= Hyper Cancel Flag
+;var(23):= Super Finish Type
+;var(25):= Ticks to Apply EX FX
+;var(26):= Palette Select
+;var(27):= Palette Selector (on/off)
+;var(28):= Tech Hit Facing
+;var(29):= Palette Selector Timer
+;var(30):= Hit Detection
+;var(31):= Hit Sound
+;var(32):= Guard Sound
+;var(33):= Hit SparkNo
+;var(34):= Guard SparkNo
+;var(35):= Spark X Axis
+;var(36):= Spark Y Axis
+;var(37):= Do Not Count Flag
+;var(38):= Throws (0 = Allowed / 1 = Not Allowed)
+;var(39):= Mode Selector (on/off)
+;var(40):= Mode Select
+;var(43):= Hit Sparks Selector
+;var(44):= Hit Sounds Selector
+;var(55):= Combo Style Selector
+;var(56):= Special Finish Selector
+;var(57):= Super Finish Selector
+;var(58):= Auto Config Change for Add004
+;var(59):= AILevel for Simul with Player
+
+;---------------------- Float variable list ----------------------
+;fvar(3):= Super Jump Flag
+;fvar(5):= Corner Push
+;fvar(8):= Down Juggle Points
+;fvar(9):= Ctrl Flag
+;fvar(10):= Damage Scale (Dampener)
+;fvar(11):= Damage Scale Backup
+;fvar(12):= Enemy In Hit State
+;fvar(13):= Attack Level
+;fvar(16):= NoWalk after Parry
+;fvar(20):= Super Move Level
+;fvar(21):= Ground/Wall Shockwaves Selector (0 = Common / 1 = Custom)
+;fvar(30):= Projectile Contact Flag (1 = Hit / 2 = Guard)
+;fvar(31):= Projectile Hit Sound
+;fvar(32):= Projectile Guard Sound
+;fvar(33):= Projectile Contact Sound AbsPan
+;fvar(34):= Projectile EX-Sound-1
+;fvar(35):= Projectile EX-Sound-1 AbsPan
+;fvar(36):= Projectile EX-Sound-2
+;fvar(37):= Projectile EX-Sound-2 AbsPan
+;fvar(38):= End of First Battle Flag
+;fvar(39):= End of Current Round Flag
+
+;---------------------- Sound Channel list ----------------------
+;Channel=0 := Voice
+;Channel=1 := Movement Sound
+;Channel=2 := Hit Sound
+;Channel=3 := EX Startup Sound
+;Channel=4 := Parry Sound
+;Channel=5 := Dust Sound
+;Channel=22 := Ground/Wall Hit Sound
+
+;======================================================================================
+;Constants
+;======================================================================================
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
+sparkno = s8010
+guard.sparkno = s8000
+KO.echo = 0
+volumescale = 100
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xscale = .5
+yscale = .5
+ground.back = 15
+ground.front = 15
+air.back = 15
+air.front = 15
+height = 65
+attack.dist = 160
+proj.attack.dist = 90
+proj.doscale = 0
+head.pos = 0, -120
+mid.pos = 0, -80
+shadowoffset = 0
+draw.offset = 0, 0
+
+[Velocity]
+walk.fwd  = 2.5625           ;Walk forward
+walk.back = -2.5625          ;Walk backward
+run.fwd  = 6           ;Run forward (x, y)  - if y<0, player will hop
+run.back = -5,-3           ;Run backward (x, y) - if y=0, player will run
+jump.neu = 0,-10           ;Neutral jumping velocity (x, y)
+jump.back = -3.5, -9.75     ;Jump back Speed (x, y)
+jump.fwd = 3.5,-9.75        ;Jump forward Speed (x, y)
+runjump.back = -4.5,-11    ;Running jump speeds (opt)
+runjump.fwd = 4.5,-11      
+airjump.neu = 0,-9.5      
+airjump.back = -4.5    ;Air jump speeds (opt)
+airjump.fwd = 2.5         
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yaccel = 0.46875
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundLevel = 25
+air.gethit.groundRecover.ground.threshold = -20
+air.gethit.groundRecover.groundLevel = 10
+air.gethit.airRecover.threshold = -1
+air.gethit.airRecover.yAccel = 0.35
+air.gethit.trip.groundLevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yAccel = 0.4
+down.bounce.groundLevel = 12
+down.friction.threshold = 0.5
+
+
+;English
+[Quotes]
+; Up to 100 victory quotes can be specified per language (victory0 - victory99)
+victory0 = "I'm sorry, my body just naturally moves."
+victory1 = "Let's go to bed early and have a good time tomorrow!"
+victory2 = "Would you like to have your birthday party at McDonald's?"
+victory3 = "Ran Ran Ruu!"
+victory4 = "I'm lovin'it!"
+victory5 = "I know you too, are you surprised?"
+victory6 = "I'm working on a song right now! I can't wait to sing it with everyone!"
+victory7 = "I love music and sports! And I can dance and ride a skateboard. What do you like to do?"
+
+;Special Quotes
+;Vs.Donald/Ronald
+victory8 = "You are whether the imitation of me?"
+;Vs.Colonel Sanders
+victory9 = "It's won all of McDonald's!"
+;Vs.Miku Hatsune
+victory10 = "I want to sing with you!"
+
+
+;日本語
+[ja.Quotes]
+victory0 = "ごめんね、自然に体が動いちゃうんだ。"
+victory1 = "早く寝て、明日も元気だよ！"
+victory2 = "君の誕生日、マクドナルドでやらないかい？"
+victory3 = "ランランルー！"
+victory4 = "Ｉ'ｍ　ｌｏｖｉｎ’ｉｔ！"
+victory5 = "ドナルドは君のことも知ってるよ。驚いた？"
+victory6 = "ドナルドは今ね～、歌を作っているんだ！\n早くみんなと一緒に歌いたいな！"
+victory7 = "ドナルドは音楽やスポーツが大好き！\nダンスも踊るし、スケボーにも乗れるんだよ。\n君はどんなことが好きなのかな？"
+
+;キャラ別勝利台詞
+;ドナルド
+victory8 = "君はドナルドの偽物なのかな～？"
+;カーネル・サンダース
+victory9 = "マクドナルドの大勝利だよ！"
+;初音ミク
+victory10 = "ドナルドも君と一緒に歌いたいな～！"

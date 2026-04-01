@@ -306,7 +306,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = 29 + 4 * var(9)
-guard.hittime = (20 + 4 * var(9)) - 6
+guard.hittime = (29 + 4 * var(9)) - 6
 ground.slideTime = 18 + 4 * var(9)
 air.hitTime = 120
 ground.velocity = ifElse(PrevStateNo = 700, -6.46, ifElse(var(20), -4.86, -10.52)), ifElse(PrevStateNo = 700, -5.25, 0)
@@ -385,7 +385,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = 24 + 4 * var(9)
-guard.hittime = (22 + 4 * var(9)) - 6
+guard.hittime = (24 + 4 * var(9)) - 6
 ground.slideTime = 18 + 4 * var(9)
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -5.77, -10.52), 0
