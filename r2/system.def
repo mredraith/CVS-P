@@ -255,7 +255,7 @@ start = -640,-82
 [TitleBG Menu Title]
 type = anim
 actionno = 106
-start = -1250, 13;7,13
+start = -1340, 13;7,13
 
 [TitleBG Banner B]
 type = anim
@@ -281,7 +281,7 @@ Interpolate Offset
 100,6, 0,0, 50
 100,6, 0,0, 10
 Interpolate Offset
-100,6, 640,0, -1
+100,6, 720,0, -1
 
 ; Main menu characters
 [Begin Action 111] ;ART
