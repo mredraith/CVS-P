@@ -18,4 +18,4 @@ Featuring:
 
 I'm just updating it to make it more balanced and to make it run on Ikemen instead of Mugen. Please don't take this too seriously.
 
-Capcom and SNK are their own separate entities and reserve all rights to the characters and media they encompass. I am not profiting off of Capcom vs SNK Revo 2.
+Capcom and SNK are their own separate entities and reserve all rights to the characters and media they encompass. I am not profiting off of Capcom vs SNK Prime.
