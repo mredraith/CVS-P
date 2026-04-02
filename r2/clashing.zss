@@ -10,9 +10,9 @@
 
 [Function F_PotS_Clashing_Config()]
 
-mapset{map: "_pots_clashing_cfg_prioritycheck"; value: 1}		# Clash only if both attacks have the same priority
+mapset{map: "_pots_clashing_cfg_prioritycheck"; value: 0}		# Clash only if both attacks have the same priority
 mapset{map: "_pots_clashing_cfg_attrcheck"; value: 1}			# Clash only if both attacks are of the same type (normal, special, super)
-mapset{map: "_pots_clashing_cfg_clsn2check"; value: 1}			# Clash only if the hurtboxes are not hit
+mapset{map: "_pots_clashing_cfg_clsn2check"; value: 0}			# Clash only if the hurtboxes are not hit
 mapset{map: "_pots_clashing_cfg_flagguard"; value: 1}			# Makes a clash count as if the attacks were guarded
 mapset{map: "_pots_clashing_cfg_pause"; value: 15}				# Duration of pause upon a clash
 mapset{map: "_pots_clashing_cfg_zoom"; value: 1.1}				# Amount to zoom during a clash
