@@ -955,6 +955,7 @@ triggerAll = !AILevel
 triggerAll = command != "holddown" && command = "x"
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
+trigger2 = (StateNo = 200 || StateNo = 230 || StateNo = 400 || StateNo = 430) && Time >= 6
 trigger3 = var(4)
 
 [State -1, Standing Light Kick]
@@ -964,7 +965,7 @@ triggerAll = !AILevel
 triggerAll = command != "holddown" && command = "a"
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
-trigger2 = (StateNo = 200 || StateNo = 400 || StateNo = 430) && Time >= 4
+trigger2 = (StateNo = 200 || StateNo = 230 || StateNo = 400 || StateNo = 430) && Time >= 6
 trigger3 = var(4)
 
 [State -1]
@@ -1020,7 +1021,7 @@ triggerAll = !AILevel
 triggerAll = command = "holddown" && command = "x"
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
-trigger2 = (StateNo = 200 || StateNo = 400 || StateNo = 430) && Time >= 4
+trigger2 = (StateNo = 200 || StateNo = 230 || StateNo = 400 || StateNo = 430) && Time >= 6
 trigger3 = var(4)
 
 [State -1, Crouching Light Kick]
@@ -1030,7 +1031,7 @@ triggerAll = !AILevel
 triggerAll = command = "holddown" && command = "a"
 triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
-trigger2 = (StateNo = 200 || StateNo = 400 || StateNo = 430) && Time >= 4
+trigger2 = (StateNo = 200 || StateNo = 230 || StateNo = 400 || StateNo = 430) && Time >= 6
 trigger3 = var(4)
 
 [State -1, Jumping Heavy Punch]

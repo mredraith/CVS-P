@@ -13,23 +13,16 @@ physics = S
 movetype= A
 ctrl = 0
 velset = 0,0
-sprpriority = 1
-poweradd = 0
-facep2 = 1
+sprPriority = 1
+powerAdd = 18 * !var(20)
+faceP2 = 1
+
 
 [State 200, 1]
 type = PlaySnd
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 3
 value = 400,0
 
-[State 240, pos]
-type = Posadd
-trigger1 = AnimElem = 3
-trigger2 = AnimElem = 4
-trigger3 = AnimElem = 5
-trigger4 = AnimElem = 6
-trigger5 = AnimElem = 10
-x = 9
 
 [State 200, Anim]
 type=changeanim
@@ -43,110 +36,17 @@ y=0
 
 [State 200, Snd]
 type=playsnd
-trigger1= !time && random<200
-value= 4, ifElse(Random < 500, 0, 1)
-channel=0
-
-[State 200, Snd]
-type=playsnd
-trigger1= !time
-value=1,0
-channel=1
-
-[State 200, Hit]
-type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = !Time
-forcenofall = !var(20)
-attr = S, NA
-hitflag = MAF
-guardflag = M
-damage = ceil(ifelse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
-getpower = 72 * !var(20), 36 * !var(20)
-givepower = 36, 36
-pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
-guard.pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
-animtype = Light
-air.animtype = Back
-fall.animtype = Back
-ground.type = Low
-air.type = Low
-ground.hittime = 12 + 2 * var(9)
-guard.hittime = (12 + 2 * var(9)) - 6
-ground.slidetime = 12 + 2 * var(9)
-air.hittime = 120
-ground.velocity = ifelse(var(20), -2.41, -4.49), 0
-ground.cornerpush.veloff = 0
-guard.velocity = ifelse(var(20), -2.41, -4.49)
-guard.cornerpush.veloff = 0
-air.velocity = -4.31, -7.36
-air.cornerPush.velOff = 0
-yAccel = 0.4
-fall = 0
-fall.recover = 1
-fall.recovertime = 120
-hitsound = -1 + 0 * (var(31) := 0)
-guardsound = -1 + 0 * (var(32) := 0)
-sparkno = -1 + 0 * (var(33) := 8010)
-guard.sparkno = -1 + 0 * (var(34) := 8000)
-sparkxy = -10 + 0 * (var(35) := 55), var(36) := -82
-palfx.time = 12 * var(9)
-palfx.add = 255, 255, 255
-palfx.sinadd = -255, -255, -255, 48
-
-[State 200, Type]
-type=statetypeset
-trigger1= animelemtime(11)>=0
-movetype=I
-
-[State 200, 5]
-type = ChangeState
-trigger1 = !AnimTime
-value = 0
-ctrl = 1
-
-;---------------------------------------------------------------------------
-; Standing Medium Punch
-[Statedef 210]
-type = S
-physics = S
-movetype= A
-ctrl = 0
-velset = 0,0
-sprPriority = 1
-powerAdd = 18 * !var(20)
-faceP2 = 1
-
-
-[State 200, 1]
-type = PlaySnd
-trigger1 = AnimElem = 3
-value = 400,0
-
-
-[State 210, Anim]
-type=changeanim
-trigger1=!time
-value=210
-
-[State 210,Posset]
-type=posset
-trigger1=!time
-y=0
-
-[State 210, Snd]
-type=playsnd
 trigger1= animelem=2 && random<350
 value= 4, ifelse(random<500, 1, 2)
 channel=0
 
-[State 210, Snd]
+[State 200, Snd]
 type=playsnd
 trigger1= animelem=2
 value=1,1
 channel=1
 
-[State 210, Hit]
+[State 200, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
 trigger1= !Time
@@ -168,9 +68,9 @@ ground.hittime = 15 + 3*var(9)
 guard.hittime = (15 + 3*var(9)) - 6
 ground.slidetime = 15 + 3*var(9)
 air.hittime = 120
-ground.velocity = ifElse(var(20), -3.66, -7.51), 0
+ground.velocity = ifelse(var(20), -2.41, -4.49), 0
 ground.cornerPush.velOff = 0
-guard.velocity = ifElse(var(20), -3.66, -7.51)
+guard.velocity = ifelse(var(20), -2.41, -4.49)
 guard.cornerPush.velOff = 0
 air.velocity = -3.24, -7.73
 air.cornerPush.velOff = 0
@@ -178,9 +78,9 @@ yAccel = 0.58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-hitsound = -1 + 0*(var(31):=1)
+hitsound = -1 + 0*(var(31):=0)
 guardsound = -1 + 0*(var(32):=0)
-sparkno = -1 + 0*(var(33):=8011)
+sparkno = -1 + 0*(var(33):=8010)
 guard.sparkno = -1 + 0*(var(34):=8000)
 sparkxy = -10 + 0*(var(35):=66), var(36):=-71
 palfx.time = 12*var(9)
@@ -192,15 +92,15 @@ type=statetypeset
 trigger1= animelemtime(7)>=0
 movetype=I
 
-[State 210, 5]
+[State 200, 5]
 type = ChangeState
 trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
 ;---------------------------------------------------------------------------
-; Standing Far Strong Punch
-[Statedef 220]
+; Standing Medium Punch
+[Statedef 210]
 type = S
 physics = S
 moveType = A
@@ -210,34 +110,34 @@ sprPriority = 1
 powerAdd = 18 * !var(20)
 facep2 = 1
 
-[State 220, Anim]
+[State 210, Anim]
 type=changeanim
 trigger1=!time
-value=220
+value=210
 
-[State 200, 1]
+[State 210, 1]
 type = PlaySnd
 trigger1 = AnimElem = 2
 value = 400,1
 
-[State 240, pos]
+[State 210, pos]
 type = Posadd
 trigger1 = AnimElem = 2
 x = 12
 
-[State 220, Snd]
+[State 210, Snd]
 type=playsnd
 trigger1= animelem=2 && random<500
 value= 4, ifelse(random<500, 1, 2)
 channel=0
 
-[State 220, Snd]
+[State 210, Snd]
 type=playsnd
 trigger1= animelem=2
 value=1,2
 channel=1
 
-[State 220, Hit]
+[State 210, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
 trigger1= !Time
@@ -269,9 +169,9 @@ yAccel = 0.58
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
-hitsound = -1 + 0*(var(31):=2)
+hitsound = -1 + 0*(var(31):=1)
 guardsound = -1 + 0*(var(32):=0)
-sparkno = -1 + 0*(var(33):=8012)
+sparkno = -1 + 0*(var(33):=8011)
 guard.sparkno = -1 + 0*(var(34):=8000)
 sparkxy = -10 + 0*(var(35):=63), var(36):=-69
 palfx.time = 12*var(9)
@@ -283,6 +183,106 @@ type=statetypeset
 trigger1= animelemtime(13)>=0
 movetype=I
 
+[State 210, 5]
+type = ChangeState
+trigger1 = !AnimTime
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Standing Far Strong Punch
+[Statedef 220]
+type = S
+physics = S
+movetype= A
+ctrl = 0
+velset = 0,0
+sprpriority = 1
+poweradd = 0
+facep2 = 1
+
+[State 220, 1]
+type = PlaySnd
+trigger1 = AnimElem = 5
+value = 400,0
+
+[State 220, pos]
+type = Posadd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 4
+trigger3 = AnimElem = 5
+trigger4 = AnimElem = 6
+trigger5 = AnimElem = 10
+x = 9
+
+[State 220, Anim]
+type=changeanim
+trigger1=!time
+value=220
+
+[State 220,Posset]
+type=posset
+trigger1=!time
+y=0
+
+[State 220, Snd]
+type=playsnd
+trigger1= !time && random<200
+value= 4, ifElse(Random < 500, 0, 1)
+channel=0
+
+[State 220, Snd]
+type=playsnd
+trigger1= !time
+value=1,0
+channel=1
+
+[State 220, Hit]
+type = hitdef
+trigger1 = !var(16) && (var(15) < 1 || var(20))
+trigger1 = !Time
+forcenofall = !var(20)
+attr = S, NA
+hitflag = MAF
+guardflag = M
+damage = ceil(ifelse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
+getpower = 72 * !var(20), 36 * !var(20)
+givepower = 36, 36
+pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
+guard.pausetime = ifelse(var(20), 4, 8), ifelse(var(20), 4, 8)
+animtype = Light
+air.animtype = Back
+fall.animtype = Back
+ground.type = Low
+air.type = Low
+ground.hittime = 24 + 2 * var(9)
+guard.hittime = (24 + 2 * var(9)) - 6
+ground.slidetime = 12 + 2 * var(9)
+air.hittime = 120
+ground.velocity = ifElse(var(20), -3.66, -7.51), 0
+ground.cornerpush.veloff = 0
+guard.velocity = ifElse(var(20), -3.66, -7.51)
+guard.cornerpush.veloff = 0
+air.velocity = -4.31, -7.36
+air.cornerPush.velOff = 0
+yAccel = 0.4
+fall = 0
+fall.recover = 1
+fall.recovertime = 120
+hitsound = -1 + 0 * (var(31) := 2)
+guardsound = -1 + 0 * (var(32) := 0)
+sparkno = -1 + 0 * (var(33) := 8012)
+guard.sparkno = -1 + 0 * (var(34) := 8000)
+sparkxy = -10 + 0 * (var(35) := 55), var(36) := -82
+palfx.time = 12 * var(9)
+palfx.add = 255, 255, 255
+palfx.sinadd = -255, -255, -255, 48
+
+[State 220, Type]
+type=statetypeset
+trigger1= animelemtime(11)>=0
+movetype=I
+
 [State 220, 5]
 type = ChangeState
 trigger1 = !AnimTime
@@ -291,7 +291,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
-guardflags = 
 [Statedef 230]
 type = S
 physics = S
