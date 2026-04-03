@@ -6021,7 +6021,7 @@ trigger1 = var(20) && (StateNo = [200, 699])
 trigger2 = var(20) && (StateNo = [1000, 2999]) && (MoveContact || var(18))
 trigger3 = (StateNo = [200, 699]) && Time <= 2 && (PrevStateNo != [200, 700])
 trigger4 = StateNo = 200
-trigger5 = (StateNo = 210 && var(50) || StateNo = 211) && MoveContact && AnimElemTime(7) < 0
+trigger5 = StateNo = 210 && MoveContact
 trigger6 = StateNo = 218 && var(50) && MoveContact && AnimElemTime(8) < 0
 trigger7 = StateNo = 220 && var(50) && MoveContact && AnimElemTime(9) < 0
 trigger8 = StateNo = 225 && MoveContact && AnimElemTime(5) < 0
