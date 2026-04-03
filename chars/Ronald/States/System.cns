@@ -62,7 +62,6 @@ trigger1 = time = [0, 250]
 flag = roundnotover
 
 ; Win pose 2 - Let's go with everyone together!
-; CNS difficulty: basic
 [Statedef 182]
 type = S
 ctrl = 0
@@ -81,7 +80,6 @@ trigger1 = time = [0, 250]
 flag = roundnotover
 
 ; Win pose 3 - Cool pose!
-; CNS difficulty: basic
 [Statedef 183]
 type = S
 ctrl = 0
@@ -156,13 +154,7 @@ range = 0,1
 [State 190, Voice]
 type = playsnd
 trigger1 = animelemtime(1) = 10
-value = ifelse(var(10)>=1,3700,190),0
-channel = 0
-
-[State 190, Voice]
-type = playsnd
-trigger1 = animelem = 2 && var(10)<1
-value = 190,1
+value = 8000, 25
 channel = 0
 
 [State 190, End]
@@ -198,7 +190,7 @@ flag = Intro
 [State 191, Voice]
 type = playsnd
 trigger1 = animelemtime(1) = 10
-value = 191,random%2
+value = 8000,26
 channel = 0
 
 [State 191, 3] 
@@ -346,7 +338,7 @@ ownPal = 1
 [State 193, Snd]
 type = playsnd
 trigger1 = animelem = 2
-value = 193,0
+value = 8000,28
 
 [State 193, End]
 type = changestate

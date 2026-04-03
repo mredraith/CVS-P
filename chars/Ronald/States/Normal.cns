@@ -18,7 +18,7 @@ channel=1
 [State 200, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 200
-value = 0,0
+value = 8000,14
 channel = 0
 
 [State 200, Hit]
@@ -95,7 +95,7 @@ channel=1
 [State 210, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 2 && Random < 500
-value = 0,1
+value = 8000,15
 channel = 0
 
 [State 210, Hit]
@@ -172,7 +172,7 @@ channel=1
 [State 220, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 300
-value = 0,2
+value = 8000,16
 channel = 0
 
 [State 220, PosAdd]
@@ -257,10 +257,10 @@ trigger1=animelem=2
 value=1,2
 channel=1
 
-[State 221, Voice]
+[State 220, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1
-value = 0,2
+value = 8000,16
 channel = 0
 
 [State 221, Muteki: Z-Counter]
@@ -390,7 +390,7 @@ channel=1
 [State 230, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 200
-value = 0,3
+value = 8000,15
 channel = 0
 
 [State 230, HitDef]
@@ -468,7 +468,7 @@ channel=1
 [State 240, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 500
-value = 0,4
+value = 8000,16
 channel = 0
 
 [State 240, PosAdd]
@@ -551,7 +551,7 @@ channel=1
 [State 250, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 300
-value = 0,5
+value = 8000,18
 channel = 0
 
 [State 250, 2]
@@ -632,10 +632,10 @@ type=playsnd
 trigger1= animelem=2
 value=1,0
 channel=1
-[State 400, Voice]
+[State 200, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 200
-value = 0,0
+value = 8000,14
 channel = 0
 
 [State 400, HitDef]
@@ -711,10 +711,10 @@ trigger1= animelem=3
 value=1,1
 channel=1
 
-[State 410, Voice]
+[State 210, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 2 && Random < 500
-value = 0,1
+value = 8000,15
 channel = 0
 
 [State 410, 2]
@@ -793,10 +793,10 @@ type=playsnd
 trigger1= animelem=2
 value=1,2
 channel=1
-[State 420, Voice]
+[State 220, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 300
-value = 0,2
+value = 8000,4
 channel = 0
 
 [State 440, 2]
@@ -948,7 +948,7 @@ channel=1
 [State 430, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 200
-value = 0,3
+value = 8000,15
 channel = 0
 
 [State 430, HitDef]
@@ -1026,7 +1026,7 @@ channel=1
 [State 440, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 500
-value = 0,4
+value = 8000,16
 channel = 0
 
 [State 440, HitDef]
@@ -1103,7 +1103,7 @@ channel=1
 [State 450, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 300
-value = 0,5
+value = 8000,8
 channel = 0
 
 [State 450, Muteki: Z-Counter]
@@ -1235,10 +1235,10 @@ type=playsnd
 trigger1= animelem=2
 value=1,0
 channel=1
-[State 600, Voice]
+[State 200, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 200
-value = 0,0
+value = 8000,15
 channel = 0
 
 [State 600, Hit]
@@ -1315,12 +1315,11 @@ type=playsnd
 trigger1= animelem=2
 value=1,1
 channel=1
-[State 610, Voice]
+[State 210, Voice]
 type = PlaySnd
-trigger1 = AnimElem = 1 && Random < 500
-value = 0,1
+trigger1 = AnimElem = 2 && Random < 500
+value = 8000,14
 channel = 0
-
 [State 610, Hit]
 type=HitDef
 triggerall = ((var(55)!=2)&& !var(16) && (var(15)<1 || var(20)))||((var(55)=2)&& (fvar(8)<3 && var(15)<15 || var(20)))
@@ -1395,10 +1394,10 @@ type=playsnd
 trigger1= animelem=2
 value=1,8
 channel=1
-[State 620, Voice]
+[State 220, Voice]
 type = PlaySnd
 trigger1 = AnimElem = 1 && Random < 300
-value = 0,2
+value = 8000,16
 channel = 0
 
 [State 620, Hit]

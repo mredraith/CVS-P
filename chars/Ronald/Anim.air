@@ -702,6 +702,7 @@ Clsn2Default: 1
 41,3, 0,35, 4
 41,4, 0,0, -1
 
+; Jumping Heavy Punch
 [Begin Action 620]
 Clsn2: 4
   Clsn2[0] = -22, -185, 29, -117
@@ -2282,6 +2283,19 @@ Clsn2: 1
 1406,13, 0,0, 2,, A
 1406,14, 0,0, 2,, A
 1406,15, 0,0, 2,, A
+
+; Shake
+[Begin Action 1414]
+1408,0, 0,0, -1
+
+
+; Shake
+[Begin Action 1415]
+Clsn1:1
+  Clsn1[0] = -18, -17, 18, 17
+Clsn2:1
+  Clsn2[0] = -19, -18, 19, 18
+1408,0, 0,0, -1
 
 
 ; EX Apple Bomb

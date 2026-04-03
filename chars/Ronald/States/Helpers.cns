@@ -359,8 +359,8 @@ var(12)=Ifelse(parent,stateno=1130,3,Ifelse(parent,stateno=1100,2,Ifelse(parent,
 [State 1005, Vel]
 type=velset
 trigger1=!var(12)&&!time
-x=Ifelse(var(10)=3,6,Ifelse(var(10)=2,1.5,Ifelse(var(10)=1,7,5)))
-y=Ifelse(var(10)=3,-4,Ifelse(var(10)=2,-5,Ifelse(var(10)=1,0,-4)))
+x=Ifelse(var(10)=3,6,Ifelse(var(10)=2,1.5,Ifelse(var(10)=1,5,5)))
+y=Ifelse(var(10)=3,-4,Ifelse(var(10)=2,-5,Ifelse(var(10)=1,-6,-4)))
 [State 1005, Vel(EX)]
 type=velset
 trigger1=var(12)=1&&!time
