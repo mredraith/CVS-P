@@ -146,15 +146,15 @@ time = 32
 
 [Command]
 name = "qcfhcbp"
-command = ~D, F, D, B, x+a
+command = ~D, F, D, B, x+y
 time = 40
 [Command]
 name = "qcfhcbp"
-command = ~D, F, D, B, y+b
+command = ~D, F, D, B, y+z
 time = 40
 [Command]
 name = "qcfhcbp"
-command = ~D, F, D, B, z+c
+command = ~D, F, D, B, x+z
 time = 40
 
 [Command]

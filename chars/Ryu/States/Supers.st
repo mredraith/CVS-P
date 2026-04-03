@@ -1492,7 +1492,7 @@ trigger1 = numtarget(3120) = 1
 trigger1 = (target, stateno != [120, 155]) && !(target(3120), hitshakeover)
 trigger1 = anim = 3120 && animelemtime(4) >= 0 && animelemtime(5) < 0
 ID = 3120
-pos = 38 + target(3120), const(size.mid.pos.x), -88 -target(3120), const(size.mid.pos.y)
+pos = 36 + target(3120), const(size.mid.pos.x), -88 -target(3120), const(size.mid.pos.y)
 ignorehitpause = 1
 [State 3120, fix]
 type = targetbind
@@ -1500,7 +1500,7 @@ trigger1 = numtarget(3120) = 1
 trigger1 = (target, stateno != [120, 155]) && !(target(3120), hitshakeover)
 trigger1 = anim = 3121 && animelemtime(3) >= 0 && animelemtime(4) < 0
 ID = 3120
-pos = 24 + target(3120), const(size.mid.pos.x), -98 -target(3120), const(size.mid.pos.y)
+pos = 28 + target(3120), const(size.mid.pos.x), -98 -target(3120), const(size.mid.pos.y)
 ignorehitpause = 1
 
 [State 3120, Sparks]
