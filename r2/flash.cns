@@ -30,8 +30,8 @@ type = zoom
 triggerall = !ishelper
 trigger1 = fvar(17) = 38
 camerabound = 0
-lag = 0.9
 pos = ((pos X + enemynear,pos X)/2), 0
+lag = 0.95
 scale = 1.1
 stagebound = 0
 time = 3
@@ -46,7 +46,7 @@ trigger2 = EnemyNear,HitByAttr(SCA,AA,AP,AT)
 trigger2 = EnemyNear,AnimElemVar(NumClsn2)
 trigger3 = roundstate != 2
 camerabound = 0
-lag = 0.9
+lag = 0.95
 pos = 0, 0
 scale = camerazoom
 stagebound = 0
