@@ -1177,7 +1177,7 @@ ignorehitpause=1
 [State 1330, Voice]
 type = PlaySnd
 trigger1 = animelem=2
-value =1300,0
+value =8000,30
 channel =0
 [State 1330, Throw Snd]
 type = PlaySnd
@@ -1778,7 +1778,7 @@ channel=1
 [State 1520, PlaySnd]
 type = PlaySnd
 trigger1 = AnimElem=2
-value = S0,5
+value = 8000,24
 channel = 0
 
 [State 1520, Hit]
@@ -1906,7 +1906,7 @@ channel=3
 [State 1530, PlaySnd]
 type = PlaySnd
 trigger1 = !Time
-value = S0,0
+value = 8000,16
 channel = 0
 
 [State 1530, Swing Snd]
@@ -2061,7 +2061,7 @@ channel=1
 [State 1540, PlaySnd]
 type = PlaySnd
 trigger1 = !Time
-value = S0,1
+value = 8000,18
 channel = 0
 
 [State 1540, Hit]
@@ -2171,7 +2171,7 @@ channel=1
 [State 1550, PlaySnd]
 type = PlaySnd
 trigger1 = AnimElem=2
-value = S0,5
+value = 8000,24
 channel = 0
 
 [State 1520, width]

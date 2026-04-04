@@ -17,7 +17,7 @@ ignorehitpause = 1
 [State 170, Voice]
 type = playsnd
 trigger1 = animelem = 3
-value = 5000,1
+value = 8000,29
 channel = 0
 
 [State 170, 1]
@@ -226,7 +226,7 @@ flag = Intro
 [State 192, Snd]
 type = playsnd
 trigger1 = animelemtime(1) = 10
-value = 192,0
+value = 8000,31
 channel = 0
 
 [State 192, End]
