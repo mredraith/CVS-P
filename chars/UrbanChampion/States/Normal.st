@@ -1582,9 +1582,7 @@ channel = 1
 
 [State 450, HitDef]
 type = HitDef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 7
-ID = 450
 attr = C, NA
 hitFlag = MAF
 guardFlag = L
@@ -1640,7 +1638,7 @@ ignoreHitPause = 1
 
 [State 450, StateTypeSet: Idle]
 type = StateTypeset
-trigger1 = AnimElemTime(6) >= 0
+trigger1 = AnimElemTime(9) >= 0
 moveType = I
 
 [State 450, End]
