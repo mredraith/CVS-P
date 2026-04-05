@@ -2699,8 +2699,8 @@ trigger14 = enemy, name = "Onslaught"
 trigger15 = enemy, name = "Orochi"
 trigger16 = enemy, name = "Pyron"
 trigger17 = enemy, name = "Thanos"
-trigger18 =(enemy, name = "The Claw"
-trigger19 =(enemy, name = "The Boxer"
+trigger18 = enemy, name = "The Claw"
+trigger19 = enemy, name = "The Boxer"
 value = 6911
 
 [State 5902, Turns Intro]

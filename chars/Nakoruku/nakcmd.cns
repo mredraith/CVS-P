@@ -667,7 +667,7 @@ trigger6 = stateno = 685 && (animelemtime(3) < 0 || (animelemtime(4) < 0 && move
 type = changestate
 value = 1200
 triggerall = !AIlevel
-triggerall = map(cmd_421p)
+triggerall = map(cmd_236k)
 triggerall = roundstate = 2 && statetype != A
 trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
 trigger2 = map(specialcancel)
@@ -687,7 +687,7 @@ trigger2 = map(specialcancel)
 type = changestate
 value = 1000
 triggerall = !AIlevel
-triggerall = map(cmd_412p)
+triggerall = map(cmd_214p)
 triggerall = roundstate = 2 && statetype != A
 trigger1 = ctrl || stateno = 40 || stateno = 52 || stateno = [100, 101]
 trigger2 = map(specialcancel)
