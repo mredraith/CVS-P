@@ -17,7 +17,7 @@ ignorehitpause = 1
 type = VarSet
 triggerall = roundstate = 2
 triggerall = !ishelper
-triggerall = teammode != simul
+triggerall = teammode = single
 trigger1 = HitByAttr(SCA,AA,AP,AT) = 0
 trigger1 = EnemyNear,HitByAttr(SCA,AA,AP,AT) = 0
 trigger2 = AnimElemVar(NumClsn2) = 0
@@ -55,7 +55,7 @@ time = 10
 [State +1, Fvar Resolve]
 type = VarSet
 triggerall = !ishelper
-triggerall = teammode != simul
+triggerall = teammode = single
 trigger1 = HitByAttr(SCA,AA,AP,AT)
 trigger1 = AnimElemVar(NumClsn2)
 trigger2 = EnemyNear,HitByAttr(SCA,AA,AP,AT)
