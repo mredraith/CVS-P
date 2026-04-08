@@ -18,10 +18,8 @@ type = VarSet
 triggerall = roundstate = 2
 triggerall = !ishelper
 triggerall = teammode = single
-trigger1 = HitByAttr(SCA,AA,AP,AT) = 0
-trigger1 = EnemyNear,HitByAttr(SCA,AA,AP,AT) = 0
-trigger2 = AnimElemVar(NumClsn2) = 0
-trigger2 = EnemyNear,AnimElemVar(NumClsn2) = 0
+trigger1 = AnimElemVar(NumClsn2) = 0
+trigger1 = EnemyNear,AnimElemVar(NumClsn2) = 0
 fv = 17
 value = 38
 
@@ -40,11 +38,9 @@ time = 3
 type = zoom
 triggerall = !ishelper
 triggerall = fvar(17) = 38
-trigger1 = HitByAttr(SCA,AA,AP,AT)
-trigger1 = AnimElemVar(NumClsn2)
-trigger2 = EnemyNear,HitByAttr(SCA,AA,AP,AT)
-trigger2 = EnemyNear,AnimElemVar(NumClsn2)
-trigger3 = roundstate != 2
+trigger1 = EnemyNear,HitByAttr(SCA,AA,AP,AT)
+trigger1 = EnemyNear,AnimElemVar(NumClsn2)
+trigger2 = roundstate != 2
 camerabound = 0
 lag = 0.95
 pos = 0, 0
@@ -56,10 +52,8 @@ time = 10
 type = VarSet
 triggerall = !ishelper
 triggerall = teammode = single
-trigger1 = HitByAttr(SCA,AA,AP,AT)
-trigger1 = AnimElemVar(NumClsn2)
-trigger2 = EnemyNear,HitByAttr(SCA,AA,AP,AT)
-trigger2 = EnemyNear,AnimElemVar(NumClsn2)
-trigger3 = roundstate != 2
+trigger1 = EnemyNear,HitByAttr(SCA,AA,AP,AT)
+trigger1 = EnemyNear,AnimElemVar(NumClsn2)
+trigger2 = roundstate != 2
 fv = 17
 value = 0
