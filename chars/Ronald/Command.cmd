@@ -1209,7 +1209,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command != "holddown"&& command="y"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,209])||(stateno=[230,239])||(stateno=[400,409])||(stateno=[430,439]))&&movecontact&&var(55)
+trigger3=(stateno = 200 || stateno = 230 || stateno = 400 || stateno = 430) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Standing High Punch]
 type=ChangeState
@@ -1218,7 +1218,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command != "holddown"&& command="z"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,219])||(stateno=[230,249])||(stateno=[400,419])||(stateno=[430,449]))&&movecontact&&var(55)
+trigger3=(stateno = 200 || stateno = 210 || stateno = 230 || stateno = 240 || stateno = 400 || stateno = 410 || stateno = 430 || stateno = 440) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Standing Low Kick]
 type=ChangeState
@@ -1239,7 +1239,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command != "holddown"&& command="b"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,219])||(stateno=[230,239])||(stateno=[400,419])||(stateno=[430,439]))&&movecontact&&var(55)
+trigger3=(stateno = 200 || stateno = 230 || stateno = 400 || stateno = 430) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Standing High Kick]
 type=ChangeState
@@ -1248,7 +1248,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command != "holddown"&& command="c"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,249])||(stateno=[400,449]))&&movecontact&&var(55)&&prevstateno!=750
+trigger3=(stateno = 200 || stateno = 210 || stateno = 230 || stateno = 240 || stateno = 400 || stateno = 410 || stateno = 430 || stateno = 440) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Crouching Low Punch]
 type=ChangeState
@@ -1267,7 +1267,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command= "holddown"&& command="y"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,209])||(stateno=[230,239])||(stateno=[400,409])||(stateno=[430,439]))&&movecontact&&var(55)
+trigger3=(stateno = 200 || stateno = 230 || stateno = 400 || stateno = 430) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Crouching High Punch]
 type=ChangeState
@@ -1276,7 +1276,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="z"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,219])||(stateno=[230,249])||(stateno=[400,419])||(stateno=[430,449]))&&movecontact&&var(55)
+trigger3=(stateno = 200 || stateno = 210 || stateno = 230 || stateno = 240 || stateno = 400 || stateno = 410 || stateno = 430 || stateno = 440) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Crouching Low Kick]
 type=ChangeState
@@ -1297,7 +1297,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="b"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,219])||(stateno=[230,239])||(stateno=[400,419])||(stateno=[430,439]))&&movecontact&&var(55)
+trigger3=(stateno = 200 || stateno = 230 || stateno = 400 || stateno = 430) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Crouching High Kick]
 type=ChangeState
@@ -1306,7 +1306,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype != A&&command="holddown"&& command="c"
 trigger1=ctrl||stateno=[100,101]
 trigger2=var(4)
-trigger3=((stateno=[200,249])||(stateno=[400,449]))&&movecontact&&var(55)&&prevstateno!=750
+trigger3=(stateno = 200 || stateno = 210 || stateno = 230 || stateno = 240 || stateno = 400 || stateno = 410 || stateno = 430 || stateno = 440) &&movecontact&&var(55)
 ;---------------------------------------------------------------------------
 [State -1, Jumping Low Punch]
 type=ChangeState
