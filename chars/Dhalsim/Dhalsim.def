@@ -22,6 +22,7 @@ st3 = States/Super.st
 st4 = States/Helpers.st
 st5 = States/Sally.st
 st6 = Config.txt
+st7 = States/Simnormal.st
 stCommon= common1.cns
 sprite = Sprite.sff
 anim = Anim.air
