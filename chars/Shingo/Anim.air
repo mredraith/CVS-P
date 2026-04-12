@@ -1,10 +1,8 @@
 
 ;Standing
 [Begin Action 0]
-Clsn2Default: 3
-  Clsn2[0] = -4, -96, 13, -80
-  Clsn2[1] = -25, -84, 18, -34
-  Clsn2[2] = -27, -34, 18, 0
+Clsn2Default: 1
+  Clsn2[1] = -27, -96, 18, 0
 0,0, 0,0, 5
 0,1, 0,0, 5
 0,2, 0,0, 5
@@ -35,10 +33,8 @@ Clsn2Default: 3
 
 ;Turning
 [Begin Action 5]
-Clsn2Default: 3
-  Clsn2[0] = -4, -96, 13, -80
-  Clsn2[1] = -25, -84, 18, -34
-  Clsn2[2] = -27, -34, 18, 0
+Clsn2Default: 1
+  Clsn2[3] = -27, -96, 18, 0
 5,0, 0,0, 2
 5,1, 0,0, 2
 5,2, 0,0, 2
@@ -46,34 +42,26 @@ Clsn2Default: 3
 
 ;Crouch Turning
 [Begin Action 6]
-Clsn2Default: 3
-  Clsn2[0] = -11, -68, 11, -52
-  Clsn2[1] = -25, -58, 21, -32
-  Clsn2[2] = -25, -32, 21, 0
+Clsn2Default: 1
+  Clsn2[3] = -25, -68, 21, 0
 6,0, 0,0, 3
 6,1, 0,0, 3
 
 
 ;Stand to Crouching
 [Begin Action 10]
-Clsn2: 3
-  Clsn2[0] = -4, -96, 13, -80
-  Clsn2[1] = -25, -84, 18, -34
-  Clsn2[2] = -27, -34, 18, 0
+Clsn2: 1
+  Clsn2[2] = -27, -96, 18, 0
 10,0, 0,0, 2
-Clsn2: 3
-  Clsn2[0] = -11, -68, 11, -52
-  Clsn2[1] = -25, -58, 21, -32
-  Clsn2[2] = -25, -32, 21, 0
+Clsn2: 1
+  Clsn2[2] = -25, -68, 21, 0
 10,1, 0,0, 1
 
 
 ;Crouching
 [Begin Action 11]
-Clsn2Default: 3
-  Clsn2[0] = -11, -68, 11, -52
-  Clsn2[1] = -25, -58, 21, -32
-  Clsn2[2] = -25, -32, 21, 0
+Clsn2Default: 1
+  Clsn2[2] = -25, -68, 21, 0
 11,0, 0,0, 48
 11,1, 0,0, 4
 11,0, 0,0, 96
@@ -81,20 +69,16 @@ Clsn2Default: 3
 
 ;Crouching to Stand
 [Begin Action 12]
-Clsn2Default: 3
-  Clsn2[0] = -4, -96, 13, -80
-  Clsn2[1] = -25, -84, 18, -34
-  Clsn2[2] = -27, -34, 18, 0
+Clsn2Default: 1
+  Clsn2[2] = -27, -96, 18, 0
 10,1, 0,0, 2
 12,0, 0,0, 2
 
 
 ;Walking Forward
 [Begin Action 20]
-Clsn2Default: 3
-  Clsn2[0] = -4, -96, 13, -80
-  Clsn2[1] = -25, -84, 18, -34
-  Clsn2[2] = -27, -34, 18, 0
+Clsn2Default: 1
+  Clsn2[0] = -27, -96, 18, 0
 20,0, 0,0, 4
 20,1, 0,0, 4
 20,2, 0,0, 4
@@ -107,10 +91,8 @@ Clsn2Default: 3
 
 ;Walking Backwards
 [Begin Action 21]
-Clsn2Default: 3
-  Clsn2[0] = -4, -96, 13, -80
-  Clsn2[1] = -25, -84, 18, -34
-  Clsn2[2] = -27, -34, 18, 0
+Clsn2Default: 1
+  Clsn2[0] = -27, -96, 18, 0
 21,0, 0,0, 4
 21,1, 0,0, 4
 21,2, 0,0, 4
@@ -123,10 +105,8 @@ Clsn2Default: 3
 
 ;Jump Start
 [Begin Action 40]
-Clsn2: 3
-  Clsn2[0] = -4, -96, 13, -80
-  Clsn2[1] = -25, -84, 18, -34
-  Clsn2[2] = -27, -34, 18, 0
+Clsn2: 1
+  Clsn2[2] = -27, -96, 18, 0
 40,0, 0,0, 5
 
 
