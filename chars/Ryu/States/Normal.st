@@ -2940,10 +2940,7 @@ trigger2 = anim = 286 && animelemtime(6) >= 0
 movetype = I
 
 
-;
-;THROWS=
-;
-;THROW CONTROLLER
+;THROWS, THROW CONTROLLER
 [Statedef 800]
 type = S
 movetype = A
@@ -3033,7 +3030,7 @@ value = 0
 ctrl = 1
 
 
-;--- PLAYER ---
+;PLAYER
 [Statedef 801]
 type = S
 movetype = A
@@ -3074,7 +3071,7 @@ trigger1 = !animtime
 value = ifelse(var(10) = 3, 810, 805)
 ctrl = 0
 
-;--- PLAYER TURNS ---
+;PLAYER TURNS
 [Statedef 803]
 type = S
 movetype = A
@@ -3136,7 +3133,7 @@ trigger1 = !animtime
 value = ifelse(var(10) = 3, 810, 805)
 ctrl = 0
 
-;--- TARGET ---
+;TARGET
 [Statedef 802]
 type = A
 movetype = H
@@ -3171,8 +3168,7 @@ value = ifelse(pos y < 0, 5040, 0)
 ctrl = 1
 
 
-;SEOI NAGE
-;--- PLAYER ---
+;SEOI NAGE PLAYER
 [Statedef 805]
 type = S
 movetype = A
@@ -3274,13 +3270,8 @@ persistent = 0
 
 [State 805, hurt]
 type = targetlifeadd
-trigger1 = animelem = 4 && var(10) = 1
+trigger1 = animelemtime(4) = 0
 value = -ceil(128 * fvar(12))
-[State 805, hurt]
-type = targetlifeadd
-trigger1 = var(10) = 2 && numtarget
-trigger1 = target, stateno = 5110 && target, time = 1
-value = -ceil(142 * fvar(12))
 
 [State 805, hurt]
 type = targetpoweradd
@@ -3310,7 +3301,7 @@ value = 0
 ctrl = 1
 
 
-;--- TARGET ---
+;TARGET
 [Statedef 806]
 type = A
 movetype = H
@@ -3381,8 +3372,7 @@ trigger1 = pos y >= -9
 value = 5110
 
 
-;TOMOE NAGE
-;--- PLAYER ---
+;TOMOE NAGE PLAYER
 [Statedef 810]
 type = S
 movetype = A
@@ -3478,7 +3468,7 @@ value = 0
 ctrl = 1
 
 
-;--- TARGET ---
+;TARGET
 [Statedef 811]
 type = A
 movetype = H
@@ -3612,7 +3602,7 @@ value = 0
 ctrl = 1
 
 
-;--- TARGET ---
+;TARGET
 [Statedef 895]
 type = S
 physics = N
