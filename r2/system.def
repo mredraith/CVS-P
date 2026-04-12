@@ -393,7 +393,7 @@ overlay.alpha = 20, 100 ;Ikemen feature
 
 ;----------------------------
 [Infobox Text]
-welcome to my BULLLLLLSHITTTTT!!!!!!
+welcome to my video game!
 
 * I did not make the original build or characters
 * Ikemen GO: https://ikemen-engine.github.io/
@@ -406,10 +406,10 @@ welcome to my BULLLLLLSHITTTTT!!!!!!
 [Select Info]
 fadein.time = 6
 fadeout.time = 6
-rows = 15
+rows = 16
 columns = 15
 wrapping = 1 ;1 to let cursor wrap around
-pos = 338,86;319,86 ;Position to draw to
+pos = 338,66;319,86 ;Position to draw to
 showemptyboxes = 0 ;1 to show empty boxes
 moveoveremptyboxes = 0 ;1 to allow cursor to move over empty boxes
 cell.size = 40,40;100,100 ;x,y size of each cell (in pixels)

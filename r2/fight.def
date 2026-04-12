@@ -1451,14 +1451,14 @@ TO.layerno = -1
 
 KO.sndtime = 5;0 ;Time to play sound for KO, DKO and TO.
 
-slow.time = 0 ;Total KO slowdown length (in ticks)
+slow.time = 1 ;Total KO slowdown length (in ticks)
 slow.fadetime = 0 ;Ikemen feature: KO slowdown fade length (default: 75% of slow.time)
-slow.speed = 1 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
+slow.speed = 0.06667 ;Ikemen feature: KO slowdown game speed adjustment (default: 0.25)
 
 over.waittime = 0 ;Time to wait after KO before player control is stopped
 over.hittime = 0 ;Time after KO that players can still damage each other (for double KO)
 over.wintime = 90 ;Time to wait before players change to win states
-over.time = 240;270 ;Time to wait before round ends
+over.time = 180;270 ;Time to wait before round ends
 
 ; Win text
 win.time = 180 ;Time to wait before showing win/draw message
