@@ -14,8 +14,6 @@ KO.echo = 1
 volumescale = 100
 IntPersistIndex = 0
 FloatPersistIndex = 0
-
-powermax = 5000
 [Size]
 xscale = 1
 yscale = 1 	;Vertical scaling factor.
