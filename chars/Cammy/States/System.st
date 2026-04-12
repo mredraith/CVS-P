@@ -1229,8 +1229,7 @@ trigger1 = root, stateno = [760, 762]
 trigger2 = time >= 2
 
 
-; CUSTOM COMBO =
-;--- GROUND ---
+; CUSTOM COMBO GROUND
 [Statedef 900]
 type = S
 physics = S
