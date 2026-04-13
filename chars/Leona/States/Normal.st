@@ -439,7 +439,7 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Medium Kick
-; CNS difficulty: easy
+
 [Statedef 240]
 type = S
 movetype= A

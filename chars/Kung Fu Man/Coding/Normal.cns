@@ -75,7 +75,6 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;---------------------------------------------------------------------------
 ; Standing Medium Punch
 [Statedef 210]
 type = S
@@ -189,7 +188,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Standing Strong Punch
-; CNS difficulty: easy
 [Statedef 220]
 type = S
 movetype= A
@@ -267,7 +265,6 @@ value = 0
 ctrl = 1
 
 ; Dodge Strong Punch
-; CNS difficulty: easy
 [Statedef 221]
 type = S
 movetype= A
@@ -344,7 +341,6 @@ value = 0
 ctrl = 1
 
 ; Alpha Counter Punch
-; CNS difficulty: easy
 [Statedef 222]
 type = S
 movetype= A
@@ -426,9 +422,8 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ; Standing Light Kick
-; CNS difficulty: easy
 [Statedef 230]
 type = S
 movetype= A
@@ -507,7 +502,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Standing Medium Kick
-; CNS difficulty: easy
 [Statedef 240]
 type = S
 movetype= A
@@ -584,9 +578,8 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ; Standing Strong Kick
-; CNS difficulty: easy
 [Statedef 250]
 type = S
 movetype= A
@@ -668,9 +661,8 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ; Crouching Light Punch
-; CNS difficulty: easy
 [Statedef 400]
 type = C
 movetype= A
@@ -747,9 +739,8 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ; Crouching Medium Punch
-; CNS difficulty: easy
 [Statedef 410]
 type = C
 movetype= A
@@ -869,7 +860,6 @@ value = 11
 ctrl = 1
 ;--------------------------------------------------------------------------
 ; Crouching Strong Punch
-;CNS difficulty: easy
 [Statedef 420]
 type = C
 movetype= A
@@ -946,9 +936,8 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ; Crouching Light Kick
-; CNS difficulty: easy
 [Statedef 430]
 type = C
 movetype= A
@@ -1025,9 +1014,8 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ;Crouch Medium Kick
-; CNS difficulty: easy
 [Statedef 440]
 type = C
 movetype= A
@@ -1106,7 +1094,6 @@ ctrl = 1
 
 ;--------------------------------------------------------------------------
 ; Crouch Strong Kick
-; CNS difficulty: easy
 [Statedef 450]
 type = C
 movetype= A
@@ -1183,7 +1170,6 @@ value = 11
 ctrl = 1
 
 ; Alpha Counter Version
-; CNS difficulty: easy
 [Statedef 451]
 type = C
 movetype= A
@@ -1264,9 +1250,8 @@ trigger1 = !AnimTime
 value = 11
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ; Jump Light Punch
-; CNS difficulty: easy
 [Statedef 600]
 type = A
 movetype= A
@@ -1346,9 +1331,8 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;---------------------------------------------------------------------------
+
 ; Jump Medium Punch
-; CNS difficulty: easy
 [Statedef 610]
 type = A
 movetype= A
@@ -1428,9 +1412,8 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;---------------------------------------------------------------------------
+
 ; Jump Strong Punch
-; CNS difficulty: easy
 [Statedef 620]
 type = A
 movetype= A
@@ -1510,9 +1493,8 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;---------------------------------------------------------------------------
+
 ; Jump Light Kick
-; CNS difficulty: easy
 [Statedef 630]
 type = A
 movetype= A
@@ -1592,9 +1574,8 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;---------------------------------------------------------------------------
+
 ; Jump Medium Kick
-; CNS difficulty: easy
 [Statedef 640]
 type = A
 movetype= A
@@ -1674,9 +1655,8 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;---------------------------------------------------------------------------
+
 ; Jump Strong Kick
-; CNS difficulty: easy
 [Statedef 650]
 type = A
 movetype= A
@@ -1754,7 +1734,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
 
-;---------------------------------------------------------------------------
+
 ;Kung Fu Throw - Attempt
 [Statedef 800]
 type = S
@@ -1923,7 +1903,7 @@ trigger1 = Time >= 60
 value = ifElse(pos y < 0, 5040, 0)
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ;Kung Fu Throw - Throwing the opponent
 [Statedef 810]
 type = S
@@ -2116,7 +2096,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;---------------------------------------------------------------------------
+
 ;Thrown by Kung Fu Throw
 [Statedef 820]
 type = A
@@ -2155,7 +2135,7 @@ type = SelfState
 trigger1 = !gethitvar(isbound)
 value = 5050
 
-;---------------------------------------------------------------------------
+
 ;Thrown by Kung Fu Throw - thrown into the air
 ; (a custom gethit state)
 ; Description: This state has the opponent flying through the air and
