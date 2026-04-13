@@ -8,7 +8,7 @@ displayName = "Cody"
 versionDate = 17,09,2017
 mugenVersion= 1.0
 author = "Trololo"
-pal.defaults= 4,5,6,1,2,3,10,11,12,7,8,9
+pal.defaults= 1,2,3,4,5,6
 localCoord = 428,240
 
 [Files]
@@ -24,21 +24,7 @@ stCommon= common1.cns
 sprite = CasualSuitSprite.sff
 anim = Anim.air
 sound = SoundSFA.snd
-
-[Palette Keymap]
-x = 4
-y = 5
-z = 6
-a = 1
-b = 2
-c = 3
-x2 = 10 
-y2 = 11
-z2 = 12
-a2 = 7
-b2 = 8
-c2 = 9
 	
-;[Arcade]
-;intro.storyBoard = intro.def
-;ending.storyBoard = ending.def
+[Arcade]
+intro.storyBoard = intro.def
+ending.storyBoard = ending.def
