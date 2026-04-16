@@ -9,7 +9,7 @@ displayName="Hayato"
 versionDate=05,02,2012
 mugenVersion=1.0
 author="varo_hades" ;Edited By BahamianKing100
-pal.defaults=4,2,3,1,5,6,7,8,9,10,11,12
+pal.defaults=1,2,3,4,5,6,7,8,9,10,11,12
 localCoord = 428,240
 
 [Files]
@@ -22,12 +22,12 @@ sprite=Sprite.sff
 anim=Anim.air
 sound=Sound.snd
 
-pal4=Palettes/default.act
-pal5=Palettes/Silva_Naruto.act
-pal6=Palettes/Silva_BlueMary.act
-pal1=Palettes/Calhoun_Sodom.act
-pal2=Palettes/Calhoun_Custom.act
-pal3=0Palettes/Silva_PlasmaSword2.act
+pal1=Palettes/default.act
+pal2=Palettes/Silva_Naruto.act
+pal3=Palettes/Silva_BlueMary.act
+pal4=Palettes/Calhoun_Sodom.act
+pal5=Palettes/Calhoun_Custom.act
+pal6=0Palettes/Silva_PlasmaSword2.act
 pal10=Palettes/Calhoun_Different.act
 pal11=Palettes/Silva_SolBadguy.act
 pal12=Palettes/Calhoun_Packers.act
