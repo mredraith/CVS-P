@@ -1019,13 +1019,13 @@ value = ifelse(map(strength) = 2, 1202, ifelse(map(strength) = 1, 1201, 1200))
 [State 1200, Accel]
 type = veladd
 trigger1 = animelemtime(3) >= 1
-y = ifelse(map(strength) = 2, 0.178, ifelse(map(strength) = 1, 0.461, 0.717))
+y = ifelse(map(strength) = 2, 0.178, ifelse(map(strength) = 1, 0.461, 1.1))
 
 [State 1200, Vel]
 type = velset
 trigger1 = animelemtime(3) = 1
 x = ifelse(map(strength) = 2, 4.90, ifelse(map(strength) = 1, 4.72, 4.132))
-y = ifelse(map(strength) = 2, -3.83, ifelse(map(strength) = 1, -6.00, -8.61))
+y = ifelse(map(strength) = 2, -3.83, ifelse(map(strength) = 1, -6.00, -8))
 
 [State 1200, Type]
 type = statetypeset
