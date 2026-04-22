@@ -2,14 +2,13 @@
 d
 ; Stand
 [Begin Action 0]
-Clsn2Default: 2
-  Clsn2[0] = -20, -93, 25, -4
-  Clsn2[1] = 7, -102, 22, -84
-0,0, 0,0, 4
-0,1, 0,0, 4
-0,2, 0,0, 4
-0,3, 0,0, 4
-0,1, 0,0, 4
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
+0,0, 0,0, 5
+0,1, 0,0, 5
+0,2, 0,0, 3
+0,3, 0,0, 5
+0,1, 0,0, 3
 
 ;Blank Animation
 [Begin Action 1]
@@ -20,18 +19,16 @@ Clsn2Default: 2
 
 ;Turning
 [Begin Action 5]
-Clsn2Default: 2
-  Clsn2[0] = -18, -83, 22, -4
-  Clsn2[1] = 5, -94, 20, -76
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 5,0, 0,0, 2
 5,1, 0,0, 2
 5,2, 0,0, 2
 
 ;Crouch Turning
 [Begin Action 6]
-Clsn2Default: 2
-  Clsn2[0] = -33, -54, 11, 2
-  Clsn2[1] = -10, -64, 7, -48
+Clsn2Default: 1
+  Clsn2[0] = -22, -68, 29, 0
 6,0, 0,0, 2
 6,1, 0,0, 2
 6,2, 0,0, 2
@@ -40,38 +37,32 @@ Clsn2Default: 2
 
 ;Stand to Crouching
 [Begin Action 10]
-Clsn2: 2
-  Clsn2[0] = -24, -79, 19, -5
-  Clsn2[1] = 1, -89, 16, -71
+Clsn2: 1
+  Clsn2[0] = -22, -102, 27, 0
 11,0, 0,0, 2
-Clsn2: 2
-  Clsn2[0] = -28, -70, 15, -7
-  Clsn2[1] = -3, -80, 15, -60
+Clsn2: 1
+  Clsn2[0] = -22, -69, 27, 0
 11,1, 0,0, 2
 
 ;Crouching
 [Begin Action 11]
-Clsn2Default: 2
-  Clsn2[0] = -32, -59, 12, -2
-  Clsn2[1] = -9, -68, 9, -50
+Clsn2Default: 1
+  Clsn2[0] = -22, -69, 27, 0
 11,2, 0,0, 1
 
 ;Crouching to Stand
 [Begin Action 12]
-Clsn2: 2
-  Clsn2[0] = -28, -70, 15, -7
-  Clsn2[1] = -5, -80, 13, -60
+Clsn2: 1
+  Clsn2[0] = -22, -69, 27, 0
 11,1, 0,0, 2
-Clsn2: 2
-  Clsn2[0] = -25, -81, 18, -7
-  Clsn2[1] = 1, -89, 16, -71
+Clsn2: 1
+  Clsn2[0] = -22, -102, 27, 0
 11,0, 0,0, 2
 
 ;Walking Forward
 [Begin Action 20]
-Clsn2Default: 2
-  Clsn2[0] = -22, -95, 19, -9
-  Clsn2[1] = 4, -105, 19, -88
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 20,0, 0,0, 5
 20,1, 0,0, 5
 20,2, 0,0, 5
@@ -80,9 +71,8 @@ Clsn2Default: 2
 
 ;Walking Backwards
 [Begin Action 21]
-Clsn2Default: 2
-  Clsn2[0] = -22, -94, 19, -8
-  Clsn2[1] = 3, -102, 18, -85
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 20,4, 0,0, 5
 20,3, 0,0, 5
 20,2, 0,0, 5
@@ -91,9 +81,8 @@ Clsn2Default: 2
 
 ;Jump Start
 [Begin Action 40]
-Clsn2Default: 2
-  Clsn2[0] = -2, -89, 16, -72
-  Clsn2[1] = -25, -78, 16, -10
+Clsn2: 1
+  Clsn2[0] = -22, -102, 27, 0
 11,0, 0,0, 4
 
 ;Jumping Up
@@ -137,9 +126,8 @@ Clsn2Default: 1
 
 ;Jump Landing
 [Begin Action 47]
-Clsn2Default: 2
-  Clsn2[0] = -1, -89, 17, -72
-  Clsn2[1] = -25, -78, 18, -9
+Clsn2: 1
+  Clsn2[0] = -22, -102, 27, 0
 11,0, 0,0, 3
 
 ;Jumping Up (Small)
@@ -180,70 +168,59 @@ Clsn2Default: 1
 
 ;Small Jump Landing (After Attack)
 [Begin Action 57]
-Clsn2Default: 2
-  Clsn2[0] = -1, -89, 17, -72
-  Clsn2[1] = -26, -79, 18, -11
+Clsn2: 1
+  Clsn2[0] = -22, -102, 27, 0
 11,0, 0,0, 4
 
 ;Running
 [Begin Action 100]
-Clsn2Default: 2
-  Clsn2[0] = -3, -85, 15, -68
-  Clsn2[1] = -25, -79, 17, -3
+Clsn2: 1
+  Clsn2[0] = -22, -102, 27, 0
 11,0, 0,0, 3
 LoopStart
-Clsn2Default: 2
-  Clsn2[0] = 6, -88, 55, -51
-  Clsn2[1] = -38, -55, 33, -8
-100,0, 0,0, 5
-100,1, 0,0, 5
+Clsn2Default: 1
+  Clsn2[0] = -38, -88, 55, -8
+100,0, 0,0, 4
+100,1, 0,0, 4
 100,2, 0,0, 4
-100,3, 0,0, 5
-100,4, 0,0, 5
+100,3, 0,0, 4
+100,4, 0,0, 4
 100,5, 0,0, 4
 
 ;Running (Stopping)
 [Begin Action 101]
-Clsn2Default: 2
-  Clsn2[0] = 4, -101, 22, -84
-  Clsn2[1] = -21, -92, 24, -9
+Clsn2Default: 1
+  Clsn2[2] = -22, -102, 27, 0
 11,0, 0,0, 5
 0,0, 0,0, 5
 
 ;Dash Backwards
 [Begin Action 105]
-Clsn2: 2
-  Clsn2[0] = -23, -101, -4, -83
-  Clsn2[1] = -29, -91, 16, -15
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 105,0, 0,0, 5
 
-Clsn2: 2
-  Clsn2[0] = -7, -107, 12, -89
-  Clsn2[1] = -28, -95, 19, -19
 105,1, 0,0, -1
 
 ;Dash Backwards (Stopping)
 [Begin Action 106]
-Clsn2Default: 2
-  Clsn2[0] = 0, -98, 18, -81
-  Clsn2[1] = -22, -86, 23, -11
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 105,2, 0,0, 6
 5,2, 0,0, 3
 
 ;Dash Forward
 [Begin Action 102]
-Clsn2Default: 2
-  Clsn2[0] = -18, -92, 25, -61
-  Clsn2[1] = -36, -61, 24, -3
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 41, 0
 102,0, 0,0, 5
 102,1, 0,0, 5
 102,2, 0,0, -1
 
 ;Dash Forward (Stopping)
 [Begin Action 103]
-Clsn2Default: 2
-  Clsn2[0] = 1, -94, 19, -77
-  Clsn2[1] = -19, -84, 24, -10
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 102,3, 0,0, 5
 Clsn2Default: 2
   Clsn2[0] = 6, -99, 20, -85
@@ -252,15 +229,14 @@ Clsn2Default: 2
 
 ;Standing Guard Start
 [Begin Action 120]
-Clsn2Default: 2
-  Clsn2[0] = -1, -94, 17, -77
-  Clsn2[1] = -26, -89, 20, -7
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 120,0, 0,0, 6
 
 ;Crouching Guard Start
 [Begin Action 121]
 Clsn2Default: 1
-  Clsn2[0] = -39, -60, 8, -3
+  Clsn2[0] = -40, -69, 17, 0
 121,0, 0,0, 6
 
 ;Jumping Guard Start
@@ -274,16 +250,14 @@ Clsn2Default: 1
 
 ;Standing Guard
 [Begin Action 130]
-Clsn2Default: 3
-  Clsn2[0] = -11, -94, 7, -77
-  Clsn2[1] = -35, -88, 2, -53
-  Clsn2[2] = -35, -53, 16, -6
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 120,1, 0,0, 1
 
 ;Crouching Guard
 [Begin Action 131]
 Clsn2Default: 1
-  Clsn2[0] = -44, -62, 0, -5
+  Clsn2[0] = -40, -69, 17, 0
 121,1, 0,0, 1
 
 ;Jumping Guard
@@ -297,16 +271,14 @@ Clsn2Default: 1
 
 ;Standing Guard End
 [Begin Action 140]
-Clsn2Default: 2
-  Clsn2[0] = 0, -93, 18, -76
-  Clsn2[1] = -27, -88, 17, -6
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 120,0, 0,0, 6
 
 ;Crouching Guard End
 [Begin Action 141]
-Clsn2Default: 2
-  Clsn2[0] = -40, -59, 8, -2
-  Clsn2[1] = -17, -65, 1, -47
+Clsn2Default: 1
+  Clsn2[0] = -40, -69, 17, 0
 121,0, 0,0, 6
 
 ;Jumping Guard End
@@ -321,15 +293,14 @@ Clsn2Default: 1
 
 ;Hit Back While Guarding (Standing)
 [Begin Action 150]
-Clsn2Default: 2
-  Clsn2[0] = -10, -95, 8, -78
-  Clsn2[1] = -36, -88, 14, -8
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 120,1, 0,0, 4
 
 ;Hit Back While Guarding (Crouching)
 [Begin Action 151]
 Clsn2Default: 1
-  Clsn2[0] = -43, -62, 1, -5
+  Clsn2[0] = -40, -69, 17, 0
 121,1, 0,0, 4
 
 ;Hit Back While Guarding (Jumping)
@@ -383,26 +354,26 @@ LoopStart
 [Begin Action 190]
 190,0, 0,0, 4
 190,1, 0,0, 4
-190,2, 0,0, 4
-190,3, 0,0, 6
+190,2, 0,0, 6
+190,3, 0,0, 8
 190,1, 0,0, 4
-190,2, 0,0, 4
-190,3, 0,0, 6
+190,2, 0,0, 6
+190,3, 0,0, 8
 190,0, 0,0, 4
 200,0, 0,0, 2
-200,1, 0,0, 4
+200,1, 0,0, 6
 200,0, 0,0, 2
-200,1, 0,0, 4
+200,1, 0,0, 6
 200,0, 0,0, 2
-220,1, 0,0, 2
-220,2, 0,0, 4
+220,1, 0,0, 3
+220,2, 0,0, 5
 220,3, 0,0, 2
 215,4, 0,0, 2
 215,1, 0,0, 3
 215,2, 0,0, 3
-215,3, 0,0, 8
-215,2, 0,0, 3
-215,4, 0,0, 3
+215,3, 0,0, 10
+215,2, 0,0, 5
+215,4, 0,0, 5
 
 ; Intro 2
 [Begin Action 191]
@@ -514,9 +485,8 @@ LoopStart
 ;--------------------------------------------------
 ; Taunt
 [Begin Action 195]
-Clsn2Default: 2
-  Clsn2[0] = 5, -98, 22, -79
-  Clsn2[1] = -22, -90, 23, 8
+Clsn2Default: 1
+  Clsn2[0] = -22, -102, 27, 0
 190,0, 0,0, 7
 190,1, 0,0, 5
 190,2, 0,0, 5
@@ -533,153 +503,94 @@ Clsn2Default: 2
 
 ; Standing Light Punch
 [Begin Action 200]
-Clsn2: 2
-  Clsn2[0] = -14, -89, 19, 5
-  Clsn2[1] = 5, -98, 24, -78
+Clsn2: 1
+  Clsn2[2] = -22, -102, 27, 0
 200,0, 0,0, 2
 Clsn1: 1
   Clsn1[0] = 23, -89, 86, -72
-Clsn2: 3
-  Clsn2[0] = 18, -88, 78, -70
-  Clsn2[1] = 5, -98, 24, -78
-  Clsn2[2] = -14, -89, 19, 5
-200,1, 0,0, 3
 Clsn2: 2
-  Clsn2[0] = -14, -89, 19, 5
-  Clsn2[1] = 5, -98, 24, -78
+  Clsn2[0] = 18, -88, 78, -70
+  Clsn2[1] = -22, -102, 27, 0
+200,1, 0,0, 3
+Clsn2: 1
+  Clsn2[0] = -22, -102, 27, 0
 200,0, 0,0, 3
 
 ; Standing Far Medium Punch
 [Begin Action 210]
-Clsn2: 2
-  Clsn2[0] = -10, -82, 37, 5
-  Clsn2[1] = 14, -92, 31, -71
-210,0, 0,0, 3
-Clsn2: 2
-  Clsn2[0] = -2, -78, 39, 5
-  Clsn2[1] = 21, -85, 39, -65
-210,1, 0,0, 2
+Clsn2: 1
+  Clsn2[0] = -10, -92, 37, 5
+210,0, 0,0, 2
+Clsn2: 1
+  Clsn2[0] = -2, -85, 39, 5
+210,1, 0,0, 3
 Clsn1: 1
   Clsn1[0] = 47, -70, 81, -38
-Clsn2: 3
-  Clsn2[0] = 6, -83, 47, 1
+Clsn2: 2
+  Clsn2[0] = 6, -96, 59, 1
   Clsn2[1] = 46, -68, 73, -39
-  Clsn2[2] = 41, -96, 59, -75
 210,2, 0,0, 3
 Clsn1: 1
   Clsn1[0] = 48, -125, 74, -61
 Clsn2: 2
   Clsn2[0] = 49, -116, 70, -64
   Clsn2[1] = 14, -83, 50, 1
-210,3, 0,0, 6
-Clsn2: 2
-  Clsn2[0] = 38, -94, 59, -76
-  Clsn2[1] = 5, -85, 59, -10
-210,2, 0,0, 4
-Clsn2: 3
-  Clsn2[0] = -23, -21, 7, 5
-  Clsn2[1] = 6, -84, 38, 4
-  Clsn2[2] = 20, -87, 39, -68
+210,3, 0,0, 4
+Clsn2: 1
+  Clsn2[1] = 5, -94, 59, -10
+210,2, 0,0, 3
+Clsn2: 1
+  Clsn2[0] = -2, -85, 39, 5
 210,4, 0,0, 3
-Clsn2: 2
-  Clsn2[0] = -5, -82, 37, 6
-  Clsn2[1] = 9, -92, 28, -73
+Clsn2: 1
+  Clsn2[0] = -5, -92, 37, 6
 210,5, 0,0, 3
 
 ; Standing Close Medium Punch
 [Begin Action 215]
-Clsn2: 3
-  Clsn2[0] = 6,-98,23,-78
-  Clsn2[1] = -21,-90,29,-34
-  Clsn2[2] = -28,-34,28,0
+Clsn2: 1
+  Clsn2[2] = -28, -98, 28, 0
 215,0, 0,0, 2
-Clsn2: 3
-  Clsn2[0] = 12,-96,42,-72
-  Clsn2[1] = -7,-90,43,-34
-  Clsn2[2] = -24,-34,51,0
+Clsn2: 1
+  Clsn2[1] = -7, -90, 47, 0
 215,1, 0,0, 2
-Clsn2: 3
-  Clsn2[0] = 21,-94,53,-74
-  Clsn2[1] = 6,-91,64,-33
-  Clsn2[2] = -14,-34,61,0
+Clsn2: 1
+  Clsn2[0] = 2, -91, 64, 0
 Clsn1: 1
   Clsn1[0] = 35, -82, 78, -48
 215,2, 0,0, 1
-Clsn2Default: 3
-  Clsn2[0] = 27,-116,63,-74
-  Clsn2[1] = 6,-91,64,-33
-  Clsn2[2] = -14,-34,61,0
+Clsn2Default: 1
+  Clsn2[0] = -3, -116, 63, 0
 Clsn1: 1
   Clsn1[0] = 37, -124, 70, -74
 215,3, 0,0, 3
 215,3, 0,0, 4
-Clsn2: 3
-  Clsn2[0] = 21,-94,53,-74
-  Clsn2[1] = 6,-91,64,-33
-  Clsn2[2] = -14,-34,61,0
+Clsn2: 1
+  Clsn2[0] = 2, -91, 64, 0
 215,2, 0,0, 4
-Clsn2: 3
-  Clsn2[0] = 12,-96,42,-72
-  Clsn2[1] = -7,-90,43,-34
-  Clsn2[2] = -24,-34,51,0
+Clsn2: 1
+  Clsn2[1] = -14, -96, 47, 0
 220,4, 0,0, 5
 
 ;Standing Far Heavy Punch
 [Begin Action 220]
-Clsn2: 2
-  Clsn2[0] = -3, -80, 37, 5
-  Clsn2[1] = 5, -92, 23, -72
-220,0, 0,0, 5
-Clsn2: 3
-  Clsn2[0] = -24, -21, 7, 4
-  Clsn2[1] = 6, -76, 39, 4
-  Clsn2[2] = 27, -88, 45, -68
-220,1, 0,0, 1
+Clsn2: 1
+  Clsn2[0] = -13, -92, 37, 5
+220,0, 0,0, 4
+Clsn2: 1
+  Clsn2[2] = -12, -88, 45, 4
+220,1, 0,0, 2
 Clsn1: 1
   Clsn1[0] = 56, -72, 129, -53
-Clsn2: 4
+Clsn2: 2
   Clsn2[0] = 56, -73, 121, -54
-  Clsn2[1] = 35, -80, 53, -71
-  Clsn2[2] = 19, -72, 57, 3
-  Clsn2[3] = -24, -21, 20, 4
+  Clsn2[2] = 6, -80, 57, 3
 220,2, 0,0, 7
-Clsn2: 3
-  Clsn2[0] = -30, -20, 7, 8
-  Clsn2[1] = 27, -88, 43, -73
-  Clsn2[2] = 6, -78, 40, 4
+Clsn2: 1
+  Clsn2[0] = -17, -88, 49, 4
 220,3, 0,0, 6
-Clsn2: 2
-  Clsn2[0] = -1, -81, 37, 5
-  Clsn2[1] = 15, -94, 35, -74
-220,4, 0,0, 5
-
-;Standing Far Heavy Punch
-[Begin Action 220]
-Clsn2: 2
-  Clsn2[0] = -3, -80, 37, 5
-  Clsn2[1] = 5, -92, 23, -72
-220,0, 0,0, 5
-Clsn2: 3
-  Clsn2[0] = -24, -21, 7, 4
-  Clsn2[1] = 6, -76, 39, 4
-  Clsn2[2] = 27, -88, 45, -68
-220,1, 0,0, 1
-Clsn1: 1
-  Clsn1[0] = 56, -72, 129, -53
-Clsn2: 4
-  Clsn2[0] = 56, -73, 121, -54
-  Clsn2[1] = 35, -80, 53, -71
-  Clsn2[2] = 19, -72, 57, 3
-  Clsn2[3] = -24, -21, 20, 4
-220,2, 0,0, 7
-Clsn2: 3
-  Clsn2[0] = -30, -20, 7, 8
-  Clsn2[1] = 27, -88, 43, -73
-  Clsn2[2] = 6, -78, 40, 4
-220,3, 0,0, 6
-Clsn2: 2
-  Clsn2[0] = -1, -81, 37, 5
-  Clsn2[1] = 15, -94, 35, -74
+Clsn2: 1
+  Clsn2[0] = -1, -94, 37, 5
 220,4, 0,0, 5
 
 ; Standing Close Hard Punch
@@ -687,7 +598,7 @@ Clsn2: 2
 Clsn2: 2
   Clsn2[0] = -17, -88, 23, 7
   Clsn2[1] = 6, -99, 24, -79
-200,0, 0,0, 1
+200,0, 0,0, 0
 Clsn2: 1
   Clsn2[0] = -4, -83, 36, 7
 225,0, 0,0, 2
