@@ -1,0 +1,41 @@
+; Definition file for Kazuya Mishima
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Kazuya Mishima"
+displayname ="Kazuya"
+versiondate =
+mugenversion = 1.0
+author ="RagingRowen";+ ReddBrink (Original Unfnished Beta)
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+; Files for the player
+localCoord  = 428,240
+[Files]
+movelist = movelist.dat
+cmd     =Cmd.cmd
+cns= Constants.cns
+st      =Coding/System.cns
+stcommon =common1.cns
+sprite  =Kazuya.sff
+anim    =Air.air
+sound   =Snd.snd
+pal1=Colors/KazuyaDefault.act
+pal2=Colors/Realra1.act
+pal3=Colors/Realra2.act
+pal4=Colors/Project13-Default.act
+pal5=Colors/Realra4.act
+pal6=Colors/Realra5.act
+pal7=Colors/CozySquirtle-Tekken1Kazuya.act
+pal8=Colors/Realra7.act
+pal9=Colors/Realra8.act
+pal10=Colors/Project13-TTT2Devil.act
+pal11=Colors/Contagious.act
+pal12=Colors/Project13-GodhandMishima.act
+st1=Coding/Normal.cns
+st2=Coding/Specials.cns
+st3=Coding/Helpers.cns
+st4=Coding/Supers.cns
+
+; REMOVE THIS LINE WHEN ALL FILES ARE NAMED AND PALETTES ARE UNCOMMENTED

@@ -1,0 +1,39 @@
+; Definition file for Nina Williams
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Nina Williams"
+displayname ="Nina"
+versiondate =
+mugenversion = 1.0
+author ="Diek Stiekem"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+; Files for the player
+localCoord  = 428,240
+[Files]
+movelist = movelist.dat
+cmd     =Cmd.cmd
+cns= Constants.cns
+st      =Coding/System.cns
+stcommon =common1.cns
+sprite  =Nina.sff
+anim    =Air.air
+sound   =Snd.snd
+pal1=Colors/01.act
+pal2=Colors/02.act
+pal3=Colors/03.act
+pal4=Colors/04.act
+pal5=Colors/05.act
+pal6=Colors/06.act
+pal7=Colors/07.act
+pal8=Colors/08.act
+pal9=Colors/09.act
+pal10=Colors/10.act
+st1=Coding/Normal.cns
+st2=Coding/Specials.cns
+st3=Coding/Helpers.cns
+st4=Coding/Supers.cns
+
+; REMOVE THIS LINE WHEN ALL FILES ARE NAMED AND PALETTES ARE UNCOMMENTED
