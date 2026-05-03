@@ -12,6 +12,26 @@ time = 1
 add = 64, 64, 64
 ignorehitpause = 1
 
+[State +1, Counter Flash]
+type = palfx
+triggerall = roundstate = 2
+triggerall = !ishelper
+trigger1 = (MoveCountered = 1) && (MoveCountered < 2)
+trigger2 = (EnemyNear,MoveCountered = 1) && (EnemyNear, MoveCountered < 2)
+time = 1
+mul = 0, 0, 0
+ignorehitpause = 1
+
+[State +1, Counter Flash]
+type = bgpalfx
+triggerall = roundstate = 2
+triggerall = !ishelper
+trigger1 = (MoveCountered = 1) && (MoveCountered < 2)
+trigger2 = EnemyNear,MoveCountered = 1 && (EnemyNear, MoveCountered < 2)
+time = 1
+add = 255, 255, 255
+ignorehitpause = 1
+
 ;Thank you Alceris for the programming assistance
 [State +1, Set Fvar]
 type = VarSet
