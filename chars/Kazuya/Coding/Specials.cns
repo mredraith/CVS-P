@@ -590,12 +590,12 @@ sprpriority=0
 
 [State 3000]
 type = NotHitBy
-trigger1 = AnimElemTime(1)>=0 && AnimElemTime(5)<2
+trigger1 = AnimElemTime(1)>=0 && AnimElemTime(3)<2
 value = ,AP
 
 [State 0, Width]
 type = Width
-trigger1 = AnimElemTime(1)>=0 && AnimElemTime(5)<2 
+trigger1 = AnimElemTime(1)>=0 && AnimElemTime(3)<2 
 player = 35,0
 
 [State 1100,VarInitialize]
@@ -605,7 +605,7 @@ var(2)=0
 
 [State 1100,VarSet]
 type=VarSet
-triggerall = AnimElemTime(4)>5
+triggerall = AnimElemTime(3)>5
 trigger1 = command = "MistStep (Var2)"
 var(2)=1
 
@@ -673,7 +673,7 @@ channel = 20
 
 [State 102, vel]
 type = velset
-trigger1 = Time = 3
+trigger1 = Time = 1
 x = 14
 
 [State 1100,ChangeState]

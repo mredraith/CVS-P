@@ -972,7 +972,7 @@ value = 1050
 triggerAll = !AILevel
 triggerall = command = "MistStep" && Command != "NotMistStep"
 triggerall = RoundState = 2 && StateType != A
-trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
+trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,106])
 trigger1 = StateNo != 20 || StateNo != 12
 trigger2 = var(5)
 
