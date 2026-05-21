@@ -6035,6 +6035,7 @@ trigger15 = StateNo = 410 && MoveContact && AnimElemTime(6) < 0
 trigger16 = StateNo = 420 && MoveContact && AnimElemTime(4) < 0
 trigger17 = StateNo = 430
 trigger18 = (StateNo = 440 || StateNo = 450) && var(50) && MoveContact && AnimElemTime(7) < 0 
+trigger19 = StateNo = 211 && MoveContact 
 ;trigger15 = StateNo = 440 && MoveContact && AnimElemTime(6) < 0 && var(40) = 1
 ;Thought about this since he loses a lot of low prescene w/o Quick Dash...
 ;...but he has Dash Punch, Rekkas, and a Command Grab! So nevermind! ~_~

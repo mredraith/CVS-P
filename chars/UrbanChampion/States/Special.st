@@ -2226,40 +2226,40 @@ value = var(14)
 
 [State 1300, Woosh Sound]
 type = PlaySnd
-trigger1 = AnimElem = 6
+trigger1 = AnimElem = 7
 value = 1, 2
 channel = 1
 
 [State 1100, NotHitBy]
 type = NotHitBy
-trigger1 = AnimElemTime(5) < 0 
+trigger1 = AnimElemTime(4) < 0 
 value = SCA
 time = 1
 
 [State 1100, 6]
 type = PosAdd
-trigger1 = AnimElem = 6
+trigger1 = AnimElem = 7
 x = 6*const(size.xscale)
 
 [State 1100, 7]
 type = Velset
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 6
 x = 5.5
 
 [State 1100, 7]
 type = VelAdd
-trigger1 = AnimElemTime(5) >= 0 && AnimElemTime(8) < 0
+trigger1 = AnimElemTime(6) >= 0 && AnimElemTime(9) < 0
 x = -.3
 
 [State 1100, 7]
 type = Velset
-trigger1 = AnimElem = 8
+trigger1 = AnimElem = 9
 x = 0
 
 [State 1300, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 6
+trigger1 = AnimElem = 7
 attr = S, SA
 hitFlag = MAF
 guardFlag = M
@@ -2304,7 +2304,7 @@ envShake.freq = 120
 [State 1300, ChangeAnimElem]
 type = ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
-trigger1 = AnimElemTime(6) >= 0 && AnimElemTime(7) <= 0
+trigger1 = AnimElemTime(7) >= 0 && AnimElemTime(8) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 4, 10)
 value = 1300
 elem = 7
@@ -2312,7 +2312,7 @@ ignoreHitPause = 1
 
 [State 1300, StateTypeSet: Idle]
 type = StateTypeSet
-trigger1 = AnimElemTime(7) >= 0
+trigger1 = AnimElemTime(8) >= 0
 moveType = I
 
 [State 1300, AI ChangeState] ;Surely they fall for it again

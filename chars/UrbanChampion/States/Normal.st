@@ -1921,6 +1921,11 @@ trigger1 = var(2) > 1
 x = ifElse((var(3) = [2,3]), -0.04091742318, -0.02727828212) * ifElse(vel x < 0, -1, 1)
 
 [State 620, End]
+type = CtrlSet
+trigger1 = animelem = 9
+value = 1
+
+[State 620, End]
 type = ChangeState
 trigger1 = pos y > -vel y
 value = 52
