@@ -21,4 +21,5 @@ I'm just updating it to make it more balanced and to make it run on Ikemen inste
 Capcom and SNK are their own separate entities and reserve all rights to the characters and media they encompass. I am not profiting off of Capcom vs SNK Prime.
 
 Original Game: © Capcom Co., Ltd.
+
 Characters: © Capcom Co., Ltd. / SNK Corporation / ARIKA / Piko Interactive / Nintendo / SEGA / Disney / Bandai Namco
