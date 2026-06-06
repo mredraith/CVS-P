@@ -2304,10 +2304,10 @@ envShake.freq = 120
 [State 1300, ChangeAnimElem]
 type = ChangeAnim
 trigger1 = MoveContact = 1 && HitPauseTime
-trigger1 = AnimElemTime(7) >= 0 && AnimElemTime(8) <= 0
+trigger1 = AnimElemTime(8) >= 0 && AnimElemTime(9) <= 0
 trigger1 = HitPauseTime <= ifElse(var(20), 4, 10)
 value = 1300
-elem = 7
+elem = 8
 ignoreHitPause = 1
 
 [State 1300, StateTypeSet: Idle]
