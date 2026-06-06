@@ -32,6 +32,28 @@ time = 1
 add = 255, 255, 255
 ignorehitpause = 1
 
+[State +1, Counter Zoom]
+type = zoom
+triggerall = roundstate = 2
+triggerall = !ishelper
+trigger1 = (MoveCountered = 1) && (MoveCountered < 2)
+trigger2 = (EnemyNear,MoveCountered = 1) && (EnemyNear, MoveCountered < 2)
+camerabound = 1
+lag = 0
+pos = 0, var(6769)
+scale = 1.1
+stagebound = 0
+time = 1
+
+[State +1, Counter Shake]
+type = varrandom
+triggerall = roundstate = 2
+triggerall = !ishelper
+trigger1 = (MoveCountered = 1) && (MoveCountered < 2)
+trigger2 = (EnemyNear,MoveCountered = 1) && (EnemyNear, MoveCountered < 2)
+v = 6769
+range = -10, 10
+
 ;Thank you Alceris for the programming assistance
 [State +1, Set Fvar]
 type = VarSet
