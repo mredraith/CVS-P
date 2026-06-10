@@ -410,12 +410,7 @@ time = 15
 
 [Command]
 name = "Crouch Kick Strong Teleport"
-command = ~DF, c
-time = 5
-
-[Command]
-name = "Crouch Kick Strong Teleport"
-command = ~DF, ~c
+command = /$DF, c
 time = 5
 
 ;-----------------------------
@@ -1250,9 +1245,8 @@ type = ChangeState
 value = 455
 triggerall = !AIlevel
 triggerall = command = "Crouch Kick Strong Teleport"
-triggerall = RoundState = 2 && StateType != A
-trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
-trigger2 = var(5)
+triggerAll = StateType != A
+trigger1 = ctrl || (StateNo = [100,101])
 
 ;--------------------------------------------------------------------------
 
