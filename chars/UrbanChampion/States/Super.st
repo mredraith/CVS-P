@@ -1123,6 +1123,12 @@ trigger1 = AnimElem = 3
 value = S1300,0
 channel = 0
 
+[State 3103, 5]
+type = PlaySnd
+trigger1 = !time
+value = 696,9
+channel = -1
+
 [State 3101, 1]
 type = Helper
 trigger1 = Time = 43
@@ -1843,6 +1849,11 @@ velSet = 0, 0
 sprPriority = 1
 powerAdd = -3000
 faceP2 = 1
+
+[State 3300, AssertSpecial]
+type = AssertSpecial
+trigger1 = Time < 40 && Time > 3
+flag = nobg
 
 [State 3300, Button Detect Reset]
 type = VarSet
