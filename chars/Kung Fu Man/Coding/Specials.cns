@@ -2817,7 +2817,7 @@ value = 5,0
 [State 1410, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 2 || AnimElem = 3 || AnimElem = 4 || AnimElem = 9
-x = 10
+x = 11
 
 [State 1410, Velocity]
 type = VelSet
@@ -2917,7 +2917,7 @@ value = 5,0
 [State 1420, PosAdd]
 type = PosAdd
 trigger1 = AnimElem = 2 || AnimElem = 3 || AnimElem = 4 || AnimElem = 9
-x = 10
+x = 12
 
 [State 1420, Velocity]
 type = VelSet
