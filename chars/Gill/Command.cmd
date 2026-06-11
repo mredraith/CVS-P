@@ -782,9 +782,10 @@ trigger1 = ctrl || StateNo = 52 || (StateNo = [100,101])
 type = ChangeState
 value = 800
 triggerAll = !AILevel
-trigger1 = (command = "holdfwd" || command = "holdback") && (command = "pp" || command = "kk")
+triggerAll = (command = "holdfwd" || command = "holdback") && (command = "pp" || command = "kk")
 trigger1 = RoundState = 2 && StateType = S
 trigger1 = ctrl
+trigger2 = stateno = 245
 
 [State -1, Zero Counter]
 type = ChangeState
