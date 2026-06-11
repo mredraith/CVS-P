@@ -620,30 +620,20 @@ trigger1 = AnimElem = 7
 value = 1,4
 channel = 1
 
-[State 245, VelSet]
-type = VelSet
-trigger1 = AnimElemTime(4) = 0
-x = 8 * const(size.xscale)
-
-[State 245, VelSet]
-type = VelSet
-trigger1 = AnimElemTime(9) = 0
-x = 0
+[State 245, PosAdd]
+type = PosAdd
+trigger1 = AnimElem = 1
+x = 30 * Const(Size.Xscale)
 
 [State 245, PosAdd]
 type = PosAdd
-trigger1 = AnimElemTime(10) = 0
+trigger1 = AnimElem = 2
+x = 20 * Const(Size.Xscale)
+
+[State 245, PosAdd]
+type = PosAdd
+trigger1 = AnimElem = 3
 x = 10 * Const(Size.Xscale)
-
-[State 245, PosAdd]
-type = PosAdd
-trigger1 = AnimElemTime(11) = 0
-x = 2 * Const(Size.Xscale)
-
-[State 245, PosAdd]
-type = PosAdd
-trigger1 = AnimElemTime(12) = 0
-x = 4 * Const(Size.Xscale)
 
 [State 245, HitDef]
 type = HitDef

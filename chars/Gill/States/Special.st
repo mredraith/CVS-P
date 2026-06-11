@@ -604,7 +604,7 @@ x = 3.75 + (var(10) * 1.00)
 
 [State 1200, PlaySnd]
 type = PlaySnd
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 7
 value = 4, 0
 volume = 255
 channel = 0
@@ -615,13 +615,14 @@ trigger1 = 1
 edge = 20,0
 
 [State 1200, VelAdd]
-type = Gravity
+type = veladd
 trigger1 = AnimElemTime(3) >= 0
+y = 0.45
 
 [State 1200, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 3 || var(20))
-trigger1 = AnimElem = 3
+trigger1 = AnimElem = 7
 attr = A, SA
 hitFlag = MAF
 guardFlag = HA
@@ -636,7 +637,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = High
 air.type = High
-ground.hitTime = 18
+ground.hitTime = ifElse(var(10) = 0, 16, ifElse(var(10) = 1, 20, 25))
 guard.hittime = (18) - 6
 ground.slideTime = 18
 air.hitTime = 120
@@ -667,7 +668,7 @@ envShake.freq = 120
 
 [State 1200, StateTypeSet: Idle]
 type = StateTypeSet
-trigger1 = AnimElemTime(8) >= 0
+trigger1 = AnimElemTime(10) >= 0
 moveType = I
 
 [State 1200, ChangeState]
