@@ -51,7 +51,7 @@ ground.hittime =12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
 ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
-air.velocity=-4.21,-7.36
+air.velocity=-4.21,(-7.36 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -129,7 +129,7 @@ guard.hittime = (15 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
-air.velocity=-3.24, -7.73
+air.velocity=-3.24, (-7.73 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -211,7 +211,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
-air.velocity=-5.39, -5.65
+air.velocity=-5.39, (-5.65 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -301,7 +301,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime=120
 ground.velocity=Ifelse(var(20),-4,-8), -2.5
 guard.velocity=Ifelse(var(20),-5,-10)
-air.velocity=Ifelse(var(20),-4,-8),-3
+air.velocity=Ifelse(var(20),-4,-8),(-3 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -424,7 +424,7 @@ guard.hittime = (12 + 2*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
-air.velocity=-6.46,-5.25
+air.velocity=-6.46,(-5.25 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -507,7 +507,7 @@ guard.hittime = (15 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
-air.velocity=-6.46,-5.25
+air.velocity=-6.46,(-5.25 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -591,7 +591,7 @@ guard.hittime = (20 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity =Ifelse(var(20),-6,-12)
 guard.velocity = Ifelse(var(20),-6,-12)
-air.velocity = -5.5,-6.8
+air.velocity = -5.5,(-6.8 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -669,7 +669,7 @@ guard.hittime = (12 + 2*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
-air.velocity=-4.21,-7.36
+air.velocity=-4.21,(-7.36 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -753,7 +753,7 @@ guard.hittime = (12 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
-air.velocity=-3.24, -7.73
+air.velocity=-3.24, (-7.73 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -787,6 +787,7 @@ anim=420
 sprpriority=2
 facep2=1
 velset=0,0
+juggle = 1
 
 [State 420, Swing Snd]
 type=playsnd
@@ -841,15 +842,15 @@ ground.slidetime = Ifelse(var(55)=2,20,18) + 4*var(9)
 ground.hittime = Ifelse(var(55)=2,20,18) + 4*var(9)
 guard.hittime = (Ifelse(var(55)=2,20,18) + 4*var(9)) - 6
 air.hittime = Ifelse(var(55)=2,20,120)
-ground.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-4.5,-9)),Ifelse(var(55)=2,-12,0)
+ground.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-4.5,-3)),Ifelse(var(55)=2,-12,-12)
 guard.velocity = Ifelse(var(20),-4.5,-9)
-air.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-2.5,-5)),Ifelse(var(55)=2,-10,-7.5)
+air.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-2.5,-5)),(Ifelse(var(55)=2,-10,-7.5) + (target,gethitvar(hitcount)))
 airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = Ifelse(var(55)=2,.4,.65)
-fall = 0
+fall = 1
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
 palFX.time = 12 * var(9)
@@ -982,7 +983,7 @@ guard.hittime = (12 + 2*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
-air.velocity=-6.46,-5.25
+air.velocity=-6.46,(-5.25 + (target,gethitvar(hitcount)))
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
@@ -1229,6 +1230,7 @@ poweradd= 10 * !var(20)
 ctrl=0
 anim=600
 sprpriority=2
+juggle = 1
 
 [State 600, Swing Snd]
 type=playsnd
@@ -1309,6 +1311,7 @@ poweradd= 20 * !var(20)
 ctrl=0
 anim=610
 sprpriority=2
+juggle = 1
 
 [State 610, Swing Snd]
 type=playsnd
@@ -1388,6 +1391,7 @@ poweradd= 30 * !var(20)
 ctrl=0
 anim=620
 sprpriority=2
+juggle = 1
 
 [State 620, Swing Snd]
 type=playsnd
@@ -1471,6 +1475,7 @@ poweradd= 10 * !var(20)
 ctrl=0
 anim=630
 sprpriority=2
+juggle = 1
 
 [State 630, Swing Snd]
 type=playsnd
@@ -1551,6 +1556,7 @@ poweradd= 20 * !var(20)
 ctrl=0
 anim=640
 sprpriority=2
+juggle = 1
 
 [State 640, Swing Snd]
 type=playsnd
@@ -1638,6 +1644,7 @@ poweradd= 30 * !var(20)
 ctrl=0
 anim=650
 sprpriority=2
+juggle = 1
 
 [State 650, Swing Snd]
 type=playsnd
@@ -1895,12 +1902,6 @@ physics = N
 velSet = 0,0
 sprPriority = 0
 
-[State 806, NotHitBy]
-type = NotHitBy
-trigger1 = 1
-value = SCA
-time = 1
-
 [State 806, ChangeAnim2]
 type = ChangeAnim2
 trigger1 = !Time
@@ -1934,11 +1935,6 @@ type = ChangeState
 trigger1 = !Time && !NumTarget
 value = 0
 ctrl = 1
-
-[State 810, More Safety]
-type = NotHitBy
-trigger1 = 1
-value = SCA
 
 [State 810, Throw Escape]
 type = ChangeState
@@ -2148,11 +2144,6 @@ type = ChangeState
 trigger1 = !Time && !NumTarget
 value = 0
 ctrl = 1
-
-[State 820, More Safety]
-type = NotHitBy
-trigger1 = 1
-value = SCA
 
 [State 820, Throw Escape]
 type = ChangeState
@@ -2414,11 +2405,6 @@ movetype= H
 physics = N
 velset = 0,0
 
-[State 826, More Safety]
-type = NotHitBy
-trigger1 = 1
-value = SCA
-
 [State 0, OffSet]
 type = OffSet
 trigger1 = Time > 0 && Time < 8
@@ -2516,11 +2502,6 @@ poweradd = 0
 sprpriority = 2
 ctrl=0
 
-[State 855, More Safety]
-type = NotHitBy
-trigger1 = 1
-value = SCA
-
 [State 855, ScreenBound]
 type = ScreenBound
 trigger1 =1
@@ -2610,11 +2591,6 @@ type = ChangeState
 trigger1 = !Time && !NumTarget
 value = 0
 ctrl = 1
-
-[State 856, More Safety]
-type = NotHitBy
-trigger1 = 1
-value = SCA
 
 [State 856, Target Facing]
 type = TargetFacing
@@ -2795,11 +2771,6 @@ sprpriority = 1
 facep2=1
 ctrl=0
 
-[State 860, NHB]
-type = nothitby
-trigger1 = 1
-value = SCA
-time = 1
 [State 860, Push]
 type = playerpush
 trigger1 = 1
@@ -2830,11 +2801,6 @@ ctrl=0
 type = ChangeAnim2
 trigger1 = !time
 value = 861
-
-[State 861, More Safety]
-type = NotHitBy
-trigger1 = 1
-value = SCA
 
 [State 0, OffSet]
 type = OffSet
@@ -2901,12 +2867,6 @@ value = 895
 type = TargetFacing
 trigger1 = !Time && NumTarget
 value = -1
-
-[State 890, NotHitBy]
-type = NotHitBy
-trigger1 = 1
-value = SCA
-time = 1
 
 [State 890, PlayerPush]
 type = PlayerPush
@@ -2986,12 +2946,6 @@ value = 5910
 type = ChangeAnim
 trigger1 = Time >= 20 && Anim = 130
 value = 140
-
-[State 895, NotHitBy]
-type = NotHitBy
-trigger1 = 1
-value = SCA
-time = 1
 
 [State 895, PlayerPush]
 type = PlayerPush

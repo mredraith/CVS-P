@@ -1159,9 +1159,16 @@ trigger1 = ctrl || (StateNo = [100,101])
 [State -1, Super Jump]
 type = ChangeState
 value = 123
-triggerall= !AILevel && var(55)=2 && roundstate=2 && statetype != A
+triggerall= !AILevel && roundstate=2 && statetype != A
+triggerall = var(55) = 2
 trigger1 = ctrl && command = "DU" 
 trigger2 = stateno=420 && movehit && command = "holdup"
+;--------------------------------------------------------------------------
+[State -1, Jump]
+type = ChangeState
+value = 40
+triggerall= !AILevel && roundstate=2 && statetype != A
+trigger1 = stateno=420 && movehit && command = "holdup"
 ;--------------------------------------------------------------------------
 [State -1, Roll]
 type = ChangeState
@@ -1323,7 +1330,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype=A&&command="y"
 trigger1=ctrl
 trigger2=var(4)
-trigger3=((stateno=[600,609])||(stateno=[630,639]))&&movecontact&&var(55)=2
+trigger3=((stateno=[600,609])||(stateno=[630,639]))&&movecontact
 ;---------------------------------------------------------------------------
 [State -1, Jumping High Punch]
 type=ChangeState
@@ -1332,7 +1339,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype=A&&command="z"
 trigger1=ctrl
 trigger2=var(4)
-trigger3=((stateno=[600,619])||(stateno=[630,649]))&&movecontact&&var(55)=2
+trigger3=((stateno=[600,619])||(stateno=[630,649]))&&movecontact
 ;---------------------------------------------------------------------------
 [State -1, Jumping Low Kick]
 type=ChangeState
@@ -1341,7 +1348,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype=A&&command="a"
 trigger1=ctrl
 trigger2=var(4)
-trigger3=(stateno=[600,609])&&movecontact&&var(55)=2
+trigger3=(stateno=[600,609])&&movecontact
 ;---------------------------------------------------------------------------
 [State -1, Jumping Medium Kick]
 type=ChangeState
@@ -1350,7 +1357,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype=A&&command="b"
 trigger1=ctrl
 trigger2=var(4)
-trigger3=((stateno=[600,619])||(stateno=[630,639]))&&movecontact&&var(55)=2
+trigger3=((stateno=[600,619])||(stateno=[630,639]))&&movecontact
 ;---------------------------------------------------------------------------
 [State -1, Jumping High Kick]
 type=ChangeState
@@ -1359,7 +1366,7 @@ triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
 triggerall=!AILevel&&Roundstate=2&&statetype=A&&command="c"
 trigger1=ctrl
 trigger2=var(4)
-trigger3=(stateno=[600,649])&&movecontact&&var(55)=2
+trigger3=(stateno=[600,649])&&movecontact
 ;---------------------------------------------------------------------------
 [State -1, Taunt]
 type = ChangeState
