@@ -132,7 +132,7 @@ value = 1
 type = VarSet
 trigger1 = 1
 v = 55
-value = 1
+value = 2
 ;___________________________________________________________________________
 ;Change the value number to 0 if you do not want chain comboing
 ;Change the value number to 1 if you want chain comboing
@@ -181,7 +181,7 @@ value = 0
 type = VarSet
 trigger1 = 1
 v = 59
-value = 9
+value = 8
 ;___________________________________________________________________________
 ;Change the value number to 1-2 if you want Easy
 ;Change the value number to 3-4 if you want Medium

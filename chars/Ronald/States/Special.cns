@@ -1397,13 +1397,25 @@ pos = 0,0
 size.xscale = 1
 size.yscale = 1
 ownpal = 1
-[State 1425, Shake]
+[State 1425, Apple]
 type = helper
 trigger1 = animelemtime(4) = 1
 helpertype = normal
-stateno = 1705
-ID = 1705
-name = "Shake"
+stateno = 1405
+ID = 1405
+name = "Apple"
+postype = p1
+pos = ceil(154*const(size.xscale)),ceil(-114*const(size.yscale))
+size.xscale = 1
+size.yscale = 1
+ownpal = 1
+[State 1425, Apple]
+type = helper
+trigger1 = animelemtime(4) = 1
+helpertype = normal
+stateno = 1409
+ID = 1409
+name = "Apple"
 postype = p1
 pos = ceil(154*const(size.xscale)),ceil(-114*const(size.yscale))
 size.xscale = 1
@@ -2801,7 +2813,7 @@ ignorehitpause=1
 [State 1400, Voice]
 type = PlaySnd
 trigger1 = animelem=2
-value =1400,1
+value =8000,7
 channel =0
 [State 1400, Throw Snd]
 type = PlaySnd
@@ -2883,7 +2895,7 @@ channel=3
 [State 1425, Voice]
 type = PlaySnd
 trigger1 = animelem=2
-value =1400,0
+value =8000,7
 channel =0
 [State 1425, Throw Snd]
 type = PlaySnd

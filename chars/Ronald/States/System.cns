@@ -62,6 +62,7 @@ trigger1 = time = [0, 250]
 flag = roundnotover
 
 ; Win pose 2 - Let's go with everyone together!
+; CNS difficulty: basic
 [Statedef 182]
 type = S
 ctrl = 0
@@ -80,6 +81,7 @@ trigger1 = time = [0, 250]
 flag = roundnotover
 
 ; Win pose 3 - Cool pose!
+; CNS difficulty: basic
 [Statedef 183]
 type = S
 ctrl = 0
@@ -1115,7 +1117,7 @@ ignoreHitPause = 1
 [State 781, Timer 1]
 type = VarSet
 trigger1 = !Time
-fvar(1) = 1000
+fvar(1) = 1
 ignoreHitPause = 1
 
 [State 781, Timer 2]
@@ -4471,6 +4473,102 @@ triggerall = (Target,MoveType = H) && (Target,StateNo != [120,159])
 trigger1 = (StateNo = [200,699]) || (StateNo = [1000,2999])
 trigger1 = MoveHit
 var(37) = 1
+
+[State -2, Juggle Count]
+type=varadd
+trigger1= movehit=1
+trigger1= !(hitdefattr=SCA,AT)
+var(15)=1
+[State -2, Juggle Reset Single]
+type=varset
+triggerall= numenemy=1 && var(15)
+trigger1= (enemy,statetype!=A) && ((enemy,stateno!=[5100,5109])||(enemy,statetype!=L)) && (enemy,time>=1)
+trigger2= (enemy,movetype!=H) || (enemy,stateno=[120,155]) || (enemy,ctrl)
+var(15)=0
+ignorehitpause=1
+[State -2, Juggle Reset Simul]
+type=varset
+triggerall= numenemy>=2 && var(15)
+trigger1= (enemynear(0),statetype!=A) && (enemynear(0),time>=1)
+trigger2= (enemynear(0),movetype!=H) || (enemynear(0),stateno=[120,155]) || (enemynear(0),ctrl)
+trigger3= !var(58)
+trigger3= (enemynear(1),statetype!=A) && (enemynear(1),time>=1)
+trigger4= !var(58)
+trigger4= (enemynear(1),movetype!=H) || (enemynear(1),stateno=[120,155]) || (enemynear(1),ctrl)
+var(15)=0
+ignorehitpause=1
+[State -2, Free Juggling]
+type=varset
+trigger1= roundstate=2
+var(15)=0
+ignorehitpause=1
+
+[State -2, Juggle Flag]
+type=varset
+trigger1= numenemy && !var(16)
+trigger1= (enemynear,stateno=5040) && !(enemynear,ctrl)
+var(16)=0
+ignorehitpause=1
+[State -2, Juggle Flag Reset Single]
+type=varset
+triggerall= numenemy=1 && var(16)
+trigger1= (enemy,movetype!=H) && (enemy,stateno!=5040)
+trigger2= !(enemy,hitshakeover) || (enemy,statetype=L) || (enemy,ctrl)
+trigger3= (enemy,movetype!=H) || (enemy,stateno=[120,155]) || (enemy,ctrl)
+var(16)=0
+ignorehitpause=1
+[State -2, Juggle Flag Reset Simul]
+type=varset
+triggerall= numenemy>=2 && var(16)
+trigger1= (enemynear(0),movetype!=H) && (enemynear(0),stateno!=5040)
+trigger2= !(enemynear(0),hitshakeover) || (enemynear(0),statetype=L) || (enemynear(0),ctrl)
+trigger3= !var(58)
+trigger3= (enemynear(1),movetype!=H) && (enemynear(1),stateno!=5040)
+trigger4= !var(58)
+trigger4= !(enemynear(1),hitshakeover) || (enemynear(1),statetype=L) || (enemynear(1),ctrl)
+trigger5= (enemynear,movetype!=H) || (enemynear,stateno=[120,155]) || (enemynear,ctrl)
+var(16)=0
+ignorehitpause=1
+
+[State -2, Juggle Limit Single]
+type=varadd
+triggerall= numenemy
+triggerall= (numenemy=1&&!numpartner) && Ifelse(var(22),time>50,time>2)
+triggerall= enemy, stateno=[5000,5999]
+trigger1= ((enemy, stateno=5030)||(enemy, stateno=5071))&&(enemy, hitfall)&&(enemy,time=1)
+trigger2= (enemy, stateno=5100)&&(enemy, prevstateno!=5050)&&(enemy, statetype=L)&&(enemy,time=1)
+trigger3= (enemy, stateno=5110)&&(enemy, prevstateno!=5071)&&(enemy, statetype=L)&&(enemy,time=1)
+trigger4= (enemy,movetype=H)&&(enemy, stateno!=[5000,5300])&&(enemy, vel y !=0)&&(enemy,time=1)
+trigger5= (enemy,statetype=L)&&(enemy, stateno!=[5000,5300])&&(enemy,time=1)
+fvar(8)=1
+ignorehitpause=1
+[State -2, Juggle Limit Simul]
+type=varadd
+triggerall= numenemy
+triggerall= ((numenemy>=2)||(teammode=simul)||(enemy,teammode=simul)) && Ifelse(var(22),time>50,time>2)
+triggerall= enemynear, stateno=[5000,5999]
+trigger1= ((enemynear, stateno=5030)||(enemynear, stateno=5071))&&(enemynear, hitfall)&&(enemynear,time=1)
+trigger2= (enemynear, stateno=5100)&&(enemynear, prevstateno!=5050)&&(enemynear, statetype=L)&&(enemynear,time=1)
+trigger3= (enemynear, stateno=5110)&&(enemynear, prevstateno!=5071)&&(enemynear, statetype=L)&&(enemynear,time=1)
+trigger4= (enemynear,movetype=H)&&(enemynear, stateno!=[5000,5300])&&(enemynear, vel y !=0)&&(enemynear,time=1)
+trigger5= (enemynear,statetype=L)&&(enemynear, stateno!=[5000,5300])&&(enemynear,time=1)
+fvar(8)=.5
+ignorehitpause=1
+[State -2, Juggle Limit Reset Single]
+type=varset
+triggerall= numenemy=1&&!numpartner
+trigger1= (enemy,movetype!=H)&&(enemy,statetype!=A||enemy,statetype!=L) && (enemy,ctrl) && (enemy,time>=1)
+trigger2= moveguarded
+fvar(8)=0
+ignorehitpause=1
+[State -2, Juggle Limit Reset Simul]
+type=varset
+triggerall= numenemy
+triggerall= ((numenemy>=2)||(teammode=simul)||(enemy,teammode=simul))
+trigger1= (enemynear,movetype!=H)&&(enemynear,statetype!=A||enemynear,statetype!=L) && (enemynear,ctrl) && (enemynear,time>=1)
+trigger2= moveguarded
+fvar(8)=0
+ignorehitpause=1
 
 [State -2, Custom Combo End]
 type = VarSet

@@ -80,7 +80,7 @@
 ;Constants
 ;======================================================================================
 [Data]
-life = 500
+life = 1000
 power = 3000
 attack = 100
 defence = 100
@@ -113,8 +113,8 @@ draw.offset = 0, 0
 [Velocity]
 walk.fwd  = 2.5625           ;Walk forward
 walk.back = -2.5625          ;Walk backward
-run.fwd  = 6           ;Run forward (x, y)  - if y<0, player will hop
-run.back = -5,-3           ;Run backward (x, y) - if y=0, player will run
+run.fwd  = 6.1667           ;Run forward (x, y)  - if y<0, player will hop
+run.back = -6,-4.8           ;Run backward (x, y) - if y=0, player will run
 jump.neu = 0,-10           ;Neutral jumping velocity (x, y)
 jump.back = -3.5, -9.75     ;Jump back Speed (x, y)
 jump.fwd = 3.5,-9.75        ;Jump forward Speed (x, y)
@@ -150,19 +150,20 @@ down.friction.threshold = 0.5
 victory0 = "I'm sorry, my body just naturally moves."
 victory1 = "Let's go to bed early and have a good time tomorrow!"
 victory2 = "Would you like to have your birthday party at McDonald's?"
-victory3 = "Ran ran ru...!"
+victory3 = "Ran Ran Ruu!"
 victory4 = "I'm lovin' it!"
-victory5 = "I know of you, too. Aren't you surprised?"
+victory5 = "I know you too, are you surprised?"
 victory6 = "I'm working on a song right now! I can't wait to sing it with everyone!"
 victory7 = "I love music and sports! And I can dance and ride a skateboard. What do you like to do?"
 
 ;Special Quotes
 ;Vs.Donald/Ronald
-victory8 = "Who's the imitation here?"
+victory8 = "You are whether the imitation of me?"
 ;Vs.Colonel Sanders
-victory9 = "This victory is for all of McDonald's!"
+victory9 = "It's won all of McDonald's!"
 ;Vs.Miku Hatsune
 victory10 = "I want to sing with you!"
+
 
 ;日本語
 [ja.Quotes]

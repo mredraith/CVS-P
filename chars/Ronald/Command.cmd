@@ -1160,7 +1160,7 @@ trigger1 = ctrl || (StateNo = [100,101])
 type = ChangeState
 value = 123
 triggerall= !AILevel && roundstate=2 && statetype != A
-triggerall = var(55) = 2
+triggerall = var(55) = 55
 trigger1 = ctrl && command = "DU" 
 trigger2 = stateno=420 && movehit && command = "holdup"
 ;--------------------------------------------------------------------------

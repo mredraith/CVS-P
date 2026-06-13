@@ -44,7 +44,7 @@ fvalue = 0
 type = VarSet
 trigger1 = !fvar(38)
 v = 40
-value = 0
+value = 2
 ;___________________________________________________________________________
 ;Change the value number to 0 if you do want Normal Mode
 ;Change the value number to 1 if you do want EX Mode
