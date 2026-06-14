@@ -1819,6 +1819,20 @@ triggerall = ctrl = 1
 trigger1 = Command = "holdback"
 x = -0.25
 
+[State 50, Drift Up]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holdup"
+y = -0.25
+
+[State 50, Drift Down]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holddown"
+y = 0.25
+
 [State 50, Gravity]
 type = Gravity
 trigger1 = Time >= 1 || PrevStateNo != 40

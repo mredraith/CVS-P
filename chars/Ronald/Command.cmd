@@ -16,211 +16,211 @@ command.buffer.time = 1
 [Command]
 name="DonaldMagic"
 command=~D, DF, F, D, DF, F, x
-time=32
+time=24
 [Command]
 name="DonaldMagic"
 command=~D, DF, F, D, DF, F, y
-time=32
+time=24
 [Command]
 name="DonaldMagic"
 command=~D, DF, F, D, DF, F, z
-time=32
+time=24
 [Command]
 name="DonaldMagic"
 command=~D, DF, F, D, DF, F, ~x
-time=32
+time=24
 [Command]
 name="DonaldMagic"
 command=~D, DF, F, D, DF, F, ~y
-time=32
+time=24
 [Command]
 name="DonaldMagic"
 command=~D, DF, F, D, DF, F, ~z
-time=32
+time=24
 
 [Command]
 name="MaxDonaldMagic"
 command=~D, DF, F, D, DF, F, x+y
-time=32
+time=24
 [Command]
 name="MaxDonaldMagic"
 command=~D, DF, F, D, DF, F, y+z
-time=32
+time=24
 [Command]
 name="MaxDonaldMagic"
 command=~D, DF, F, D, DF, F, x+z
-time=32
+time=24
 
 [Command]
 name="CrazyDance"
 command=~D, DF, F, D, DF, F, a
-time=32
+time=24
 [Command]
 name="CrazyDance"
 command=~D, DF, F, D, DF, F, b
-time=32
+time=24
 [Command]
 name="CrazyDance"
 command=~D, DF, F, D, DF, F, c
-time=32
+time=24
 [Command]
 name="CrazyDance"
 command=~D, DF, F, D, DF, F, ~a
-time=32
+time=24
 [Command]
 name="CrazyDance"
 command=~D, DF, F, D, DF, F, ~b
-time=32
+time=24
 [Command]
 name="CrazyDance"
 command=~D, DF, F, D, DF, F, ~c
-time=32
+time=24
 
 [Command]
 name="MaxCrazyDance"
 command=~D, DF, F, D, DF, F, a+b
-time=32
+time=24
 [Command]
 name="MaxCrazyDance"
 command=~D, DF, F, D, DF, F, b+c
-time=32
+time=24
 [Command]
 name="MaxCrazyDance"
 command=~D, DF, F, D, DF, F, a+c
-time=32
+time=24
 
 [Command]
 name="SuperApple"
 command=~D, DB, B, D, DB, B, x
-time=32
+time=24
 [Command]
 name="SuperApple"
 command=~D, DB, B, D, DB, B, y
-time=32
+time=24
 [Command]
 name="SuperApple"
 command=~D, DB, B, D, DB, B, z
-time=32
+time=24
 [Command]
 name="SuperApple"
 command=~D, DB, B, D, DB, B, ~x
-time=32
+time=24
 [Command]
 name="SuperApple"
 command=~D, DB, B, D, DB, B, ~y
-time=32
+time=24
 [Command]
 name="SuperApple"
 command=~D, DB, B, D, DB, B, ~z
-time=32
+time=24
 
 [Command]
 name="MaxSuperApple"
 command=~D, DB, B, D, DB, B, x+y
-time=32
+time=24
 [Command]
 name="MaxSuperApple"
 command=~D, DB, B, D, DB, B, y+z
-time=32
+time=24
 [Command]
 name="MaxSuperApple"
 command=~D, DB, B, D, DB, B, x+z
-time=32
+time=24
 
 [Command]
 name="SuperDance"
 command=~D, DF, F, D, DB, B, a
-time=32
+time=24
 [Command]
 name="SuperDance"
 command=~D, DF, F, D, DB, B, b
-time=32
+time=24
 [Command]
 name="SuperDance"
 command=~D, DF, F, D, DB, B, c
-time=32
+time=24
 [Command]
 name="SuperDance"
 command=~D, DF, F, D, DB, B, ~a
-time=32
+time=24
 [Command]
 name="SuperDance"
 command=~D, DF, F, D, DB, B, ~b
-time=32
+time=24
 [Command]
 name="SuperDance"
 command=~D, DF, F, D, DB, B, ~c
-time=32
+time=24
 
 [Command]
 name="MaxSuperDance"
 command=~D, DF, F, D, DB, B, a+b
-time=32
+time=24
 [Command]
 name="MaxSuperDance"
 command=~D, DF, F, D, DB, B, b+c
-time=32
+time=24
 [Command]
 name="MaxSuperDance"
 command=~D, DF, F, D, DB, B, a+c
-time=32
+time=24
 
 [Command]
 name="UnhappyMeal"
 command=~D, DF, F, D, DF, F, a+x
-time=32
+time=24
 [Command]
 name="UnhappyMeal"
 command=~D, DF, F, D, DF, F, b+y
-time=32
+time=24
 [Command]
 name="UnhappyMeal"
 command=~D, DF, F, D, DF, F, c+z
-time=32
+time=24
 
 [Command]
 name="BigBurger"
 command=~D, DB, B, D, DB, B, a+x
-time=32
+time=24
 [Command]
 name="BigBurger"
 command=~D, DB, B, D, DB, B, b+y
-time=32
+time=24
 [Command]
 name="BigBurger"
 command=~D, DB, B, D, DB, B, c+z
-time=32
+time=24
 
 [Command]
 name="Memorial"
 command=~D, DB, B, D, DF, F, a+x
-time=32
+time=24
 [Command]
 name="Memorial"
 command=~D, DB, B, D, DF, F, b+y
-time=32
+time=24
 [Command]
 name="Memorial"
 command=~D, DB, B, D, DF, F, c+z
-time=32
+time=24
 
 [Command]
 name="FunTime"
 command=~D, DF, F, D, DB, B, a+x
-time=32
+time=24
 [Command]
 name="FunTime"
 command=~D, DF, F, D, DB, B, b+y
-time=32
+time=24
 [Command]
 name="FunTime"
 command=~D, DF, F, D, DB, B, c+z
-time=32
+time=24
 
 [Command]
 name="AYKM"
 command=~D, DF, F, D, DF, F, s
-time=32
+time=24
 ;-| Special Motions |------------------------------------------------------
 [Command]
 name = "Support1"
@@ -1103,7 +1103,7 @@ trigger2=var(5)
 type=ChangeState
 value=Ifelse(command="HamburgerEX"&&var(20) <= 60&&power>=500,1130,1100)
 triggerall=!var(58)||(var(58)&&sysfvar(4)=0)
-triggerall=!AILevel && RoundState=2 && StateType = A && Pos y<=-25 && (var(3) != [1, 2]) && !fvar(25)
+triggerall=!AILevel && RoundState=2 && StateType = A && (var(3) != [1, 2]) && !fvar(25)
 triggerall=(command="Hamburger"||command="HamburgerEX")
 trigger1=ctrl
 trigger2=var(5)
