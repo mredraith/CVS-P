@@ -80,7 +80,7 @@
 ;Constants
 ;======================================================================================
 [Data]
-life = 1000
+life = 500
 power = 3000
 attack = 100
 defence = 100
@@ -111,21 +111,21 @@ shadowoffset = 0
 draw.offset = 0, 0
 
 [Velocity]
-walk.fwd  = 2.5625           ;Walk forward
-walk.back = -2.5625          ;Walk backward
-run.fwd  = 6.1667           ;Run forward (x, y)  - if y<0, player will hop
-run.back = -6,-4.8           ;Run backward (x, y) - if y=0, player will run
+walk.fwd  = 4           ;Walk forward
+walk.back = -4          ;Walk backward
+run.fwd  = 8           ;Run forward (x, y)  - if y<0, player will hop
+run.back = -8,-4           ;Run backward (x, y) - if y=0, player will run
 jump.neu = 0,-10           ;Neutral jumping velocity (x, y)
-jump.back = -3.5, -9.75     ;Jump back Speed (x, y)
-jump.fwd = 3.5,-9.75        ;Jump forward Speed (x, y)
-runjump.back = -4.5,-11    ;Running jump speeds (opt)
-runjump.fwd = 4.5,-11      
-airjump.neu = 0,-9.5      
-airjump.back = -4.5    ;Air jump speeds (opt)
-airjump.fwd = 2.5         
+jump.back = -4.5, -9.75     ;Jump back Speed (x, y)
+jump.fwd = 4.5,-9.75        ;Jump forward Speed (x, y)
+runjump.back = -5.5,-11    ;Running jump speeds (opt)
+runjump.fwd = 5.5,-11      
+airjump.neu = 0,-9      
+airjump.back = -3.5    ;Air jump speeds (opt)
+airjump.fwd = 3.5         
 
 [Movement]
-airJump.num = 0
+airJump.num = 9999999
 airJump.height = 0
 yaccel = 0.46875
 stand.friction = 0.85

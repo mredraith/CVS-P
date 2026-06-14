@@ -1194,7 +1194,7 @@ trigger1 = !var(41)
 [State -1, Run /Dash Back]
 type = ChangeState
 value = Ifelse(((command = "BB" && p2dist x >= 0) || (command = "FF" && p2dist x < 0)), 105, 102)
-trigger1 = !AILevel&&Roundstate=2&&statetype = S
+trigger1 = !AILevel&&Roundstate=2
 trigger1 = command = "FF"||command = "BB"
 trigger1 = ctrl
 ;--------------------------------------------------------------------------
@@ -1390,14 +1390,14 @@ trigger1=ctrl
 type = changestate
 value = 102
 trigger1 = AIlevel && numenemy
-trigger1 = statetype = S && roundstate = 2 && ctrl && random < (300 * (var(59) ** 2 / 64.0))
+trigger1 = roundstate = 2 && ctrl && random < (300 * (var(59) ** 2 / 64.0))
 trigger1 = (stateno != [100, 105]) && enemynear, movetype != A && p2bodydist x > 120
 
 [State -1, dash]
 type = changestate
 value = 105
 triggerall = AIlevel && numenemy
-triggerall = statetype = S && roundstate = 2 && ctrl && !numhelper(6085)
+triggerall = roundstate = 2 && ctrl && !numhelper(6085)
 triggerall = (p2bodydist x = [0, 80]) && backedgebodydist > 80 && (stateno != [100, 105])
 trigger1 = enemynear, movetype = A && random < (50 * (var(59) ** 2 / 64.0))
 trigger2 = enemynear, stateno = 5120 && enemynear, animtime = -3 && random < (300 * (var(59) ** 2 / 64.0))

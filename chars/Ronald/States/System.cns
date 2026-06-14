@@ -1805,6 +1805,20 @@ type = PosFreeze
 trigger1 = Time < 1 && PrevStateNo = 40
 value = 1
 
+[State 50, Drift Forward]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holdfwd"
+x = 0.25
+
+[State 50, Drift Backward]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holdback"
+x = -0.25
+
 [State 50, Gravity]
 type = Gravity
 trigger1 = Time >= 1 || PrevStateNo != 40
@@ -1925,6 +1939,11 @@ physics = S
 ctrl = 0
 VelSet = 0,0
 
+[State 100]
+type = CtrlSet
+trigger1 = AnimElem = 2
+value = 1
+
 [State 100, ChangeAnim]
 type = ChangeAnim
 trigger1 = !Time
@@ -2038,6 +2057,11 @@ anim = 102
 ctrl = 0
 velset = 0,0
 sprPriority = 1
+
+[State 102]
+type = CtrlSet
+trigger1 = AnimElem = 2
+value = 1
 
 [State 102, VarSet -> Running]
 type = VarSet
@@ -2153,6 +2177,11 @@ physics = S
 anim = 105
 ctrl = 0
 velset = 0, 0
+
+[State 105]
+type = CtrlSet
+trigger1 = AnimElem = 2
+value = 1
 
 [State 105, StateTypeSet];Air, no physics
 type = StateTypeSet
@@ -4442,7 +4471,7 @@ type = VarAdd
 triggerall = (StateNo != [3000,4999]) && !var(37)
 trigger1 = MoveHit = 1 && HitCount = 1
 trigger1 = !(HitDefAttr = SCA, AT)
-var(13) = 1
+var(13) = 0
 [State -2, Hit Count Reset]
 type = VarSet
 trigger1 = NumEnemy && var(13)
@@ -4478,7 +4507,7 @@ var(37) = 1
 type=varadd
 trigger1= movehit=1
 trigger1= !(hitdefattr=SCA,AT)
-var(15)=1
+var(15)=0
 [State -2, Juggle Reset Single]
 type=varset
 triggerall= numenemy=1 && var(15)
@@ -4540,7 +4569,7 @@ trigger2= (enemy, stateno=5100)&&(enemy, prevstateno!=5050)&&(enemy, statetype=L
 trigger3= (enemy, stateno=5110)&&(enemy, prevstateno!=5071)&&(enemy, statetype=L)&&(enemy,time=1)
 trigger4= (enemy,movetype=H)&&(enemy, stateno!=[5000,5300])&&(enemy, vel y !=0)&&(enemy,time=1)
 trigger5= (enemy,statetype=L)&&(enemy, stateno!=[5000,5300])&&(enemy,time=1)
-fvar(8)=1
+fvar(8)=0
 ignorehitpause=1
 [State -2, Juggle Limit Simul]
 type=varadd
@@ -5702,3 +5731,13 @@ IgnoreHitPause = 1
 type = assertspecial
 trigger1 = 1
 flag = nojugglecheck
+
+[State +1, Airturn]
+type = Turn
+trigger1 = !Time
+trigger1 = p2dist X < -5
+
+[State +1, Pos Limit]
+type = posset
+trigger1 = pos y <= -150
+y = -150
