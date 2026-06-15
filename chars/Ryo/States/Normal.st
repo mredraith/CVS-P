@@ -285,7 +285,7 @@ channel = 1
 [State 218, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1= animelem=5
+trigger1= animelem=4||animelem=5
 forceNoFall = !var(20)
 attr = S,NA
 hitflag = MAF
@@ -374,7 +374,7 @@ x = 0
 [State 240, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1= animelem=5
+trigger1= animelem=4||animelem=5
 forceNoFall = !var(20)
 attr = S,NA
 hitflag = MAF
@@ -939,13 +939,55 @@ channel=1
 [State 240, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
+trigger1= animelem=3
+forcenofall = !var(20)
+attr = S,NA
+hitflag = MAF
+guardflag = M
+priority = 4, Hit
+damage = ceil(ifelse(fvar(11)*35<7, 7, fvar(11)*35)), 0
+getpower = ifelse(!var(13),144,72)*!var(20), 36*!var(20)
+givepower = 36, 36
+pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+guard.pauseTime = ifElse(var(20), 3, 6), ifElse(var(20), 3, 6)
+animtype = Medium
+air.animtype = Back
+fall.animtype = Back
+ground.type = High
+air.type = Low
+ground.hitTime = 28 + 4 * var(9)
+guard.hittime = (28 + 4 * var(9)) - 6
+ground.slideTime = 18 + 4 * var(9)
+air.hitTime = 120
+ground.velocity = -3, 0
+ground.cornerPush.velOff = 0
+guard.velocity = -3
+guard.cornerPush.velOff = 0
+air.velocity = -3, 0
+air.cornerPush.velOff = 0
+yAccel = 0.58
+fall = 0
+fall.recover = 1
+fall.recovertime = 120
+hitsound = -1 + 0*(var(31):=5)
+guardsound = -1 + 0*(var(32):=0)
+sparkno = -1 + 0*(var(33):=8012)
+guard.sparkno = -1 + 0*(var(34):=8000)
+sparkxy = -10 + 0*(var(35):=85), var(36):=-58
+palfx.time = 12*var(9)
+palfx.add = 255,255,255
+palfx.sinadd= -255,-255,-255,48
+
+[State 240, Hit]
+type=hitdef
+trigger1= !var(16) && (var(15)<1 || var(20))
 trigger1= animelem=5
 forcenofall = !var(20)
 attr = S,NA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = ceil(ifelse(fvar(11)*77<7, 7, fvar(11)*77)), 0
+damage = ceil(ifelse(fvar(11)*35<7, 7, fvar(11)*35)), 0
 getpower = ifelse(!var(13),144,72)*!var(20), 36*!var(20)
 givepower = 36, 36
 pauseTime = ifElse(var(20), 6, 12), ifElse(var(20), 6, 12)

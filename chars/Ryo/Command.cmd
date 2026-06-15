@@ -420,48 +420,48 @@ time = 16
 
 [Command]
 name = "HienShippukyaku"
-command = ~$DB, $F, a
+command = ~D, DF, F, a
 time = 16
 
 [Command]
 name = "HienShippukyaku"
-command = ~$DB, $F, b
+command = ~D, DF, F, b
 time = 16
 
 [Command]
 name = "HienShippukyaku"
-command = ~$DB, $F, c
+command = ~D, DF, F, c
 time = 16
 
 [Command]
 name = "HienShippukyaku"
-command = ~$DB, $F, ~a
+command = ~D, DF, F, ~a
 time = 16
 
 [Command]
 name = "HienShippukyaku"
-command = ~$DB, $F, ~b
+command = ~D, DF, F, ~b
 time = 16
 
 [Command]
 name = "HienShippukyaku"
-command = ~$DB, $F, ~c
+command = ~D, DF, F, ~c
 time = 16
 
 
 [Command]
 name = "EXHienShippukyaku"
-command = ~$DB, $F, a+b
+command = ~D, DF, F, a+b
 time = 16
 
 [Command]
 name = "EXHienShippukyaku"
-command = ~$DB, $F, b+c
+command = ~D, DF, F, b+c
 time = 16
 
 [Command]
 name = "EXHienShippukyaku"
-command = ~$DB, $F, a+c
+command = ~D, DF, F, a+c
 time = 16
 
 
@@ -514,48 +514,48 @@ time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, D, B, x
+command = ~D, DB, B, x
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, D, B, y
+command = ~D, DB, B, y
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, D, B, z
+command = ~D, DB, B, z
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, D, B, ~x
+command = ~D, DB, B, ~x
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, D, B, ~y
+command = ~D, DB, B, ~y
 time = 16
 
 [Command]
 name = "KyokugenryuRenbuken"
-command = ~F, D, B, ~z
+command = ~D, DB, B, ~z
 time = 16
 
 
 [Command]
 name = "EXKyokugenryuRenbuken"
-command = ~F, D, B, x+y
+command = ~D, DB, B, x+y
 time = 16
 
 [Command]
 name = "EXKyokugenryuRenbuken"
-command = ~F, D, B, y+z
+command = ~D, DB, B, y+z
 time = 16
 
 [Command]
 name = "EXKyokugenryuRenbuken"
-command = ~F, D, B, x+z
+command = ~D, DB, B, x+z
 time = 16
 
 
@@ -878,7 +878,7 @@ type = ChangeState
 value = 1330
 triggerAll = !AILevel
 triggerAll = command = "EXZanretsuken"
-triggerAll = RoundState = 2 && StateType != A
+triggerAll = RoundState = 2
 triggerAll = power >= 500 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(6)
@@ -887,8 +887,8 @@ trigger2 = var(6)
 type = ChangeState
 value = 1230
 triggerAll = !AILevel
-triggerAll = command = "EXHienShippukyaku" && ifElse(var(20) > 0 || (StateNo = [1000, 4999]), 1, var(48) > 16 && var(50) > 16)
-triggerAll = RoundState = 2 && StateType != A
+triggerAll = command = "EXHienShippukyaku"
+triggerAll = RoundState = 2
 triggerAll = power >= 500 && var(20) <= 60
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(6)
@@ -956,8 +956,8 @@ trigger2 = var(6)
 type = ChangeState
 value = 1200
 triggerAll = !AILevel
-triggerAll = command = "HienShippukyaku" && ifElse(var(20) > 0 || (StateNo = [1000, 4999]), 1, var(48) > 16 && var(50) > 16)
-triggerAll = RoundState = 2 && StateType != A
+triggerAll = command = "HienShippukyaku"
+triggerAll = RoundState = 2
 trigger1 = ctrl || StateNo = 40 || StateNo = 52 || (StateNo = [100,101])
 trigger2 = var(6)
 
@@ -1063,7 +1063,7 @@ trigger2 = var(4)
 
 [State -1, Standing Heavy Kick]
 type = ChangeState
-value = 250 + (Abs(P2BodyDist X) <= 25)
+value = 250 + ifElse(Enemy, statetype!=a, (Abs(P2BodyDist X) <= 25), 0)
 triggerAll = !AILevel
 triggerAll = command != "holddown" && command = "c"
 triggerAll = StateType != A
