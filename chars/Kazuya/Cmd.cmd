@@ -31,92 +31,92 @@ time = 32
 
 [Command]
 name = "KungFuBarrage"
-command = ~D, DF, F, D, DF, x
+command = ~D, DB, B, D, DF, F, x
 time = 32
 
 [Command]
 name = "KungFuBarrage"
-command = ~D, DF, F, D, DF, ~x
+command = ~D, DB, B, D, DF, F, ~x
 time = 32
 
 [Command]
 name = "KungFuBarrage"
-command = ~D, DF, F, D, DF, y
+command = ~D, DB, B, D, DF, F, y
 time = 32
 
 [Command]
 name = "KungFuBarrage"
-command = ~D, DF, F, D, DF, ~y
+command = ~D, DB, B, D, DF, F, ~y
 time = 32
 
 [Command]
 name = "KungFuBarrage"
-command = ~D, DF, F, D, DF, z
+command = ~D, DB, B, D, DF, F, z
 time = 32
 
 [Command]
 name = "KungFuBarrage"
-command = ~D, DF, F, D, DF, ~z
+command = ~D, DB, B, D, DF, F, ~z
 time = 32
 
 [Command]
 name = "KungFuBarrageMax"
-command = ~D, DF, F, D, DF, x+y
+command = ~D, DB, B, D, DF, F, x+y
 time = 32
 
 [Command]
 name = "KungFuBarrageMax"
-command = ~D, DF, F, D, DF, y+z
+command = ~D, DB, B, D, DF, F, y+z
 time = 32
 
 [Command]
 name = "KungFuBarrageMax"
-command = ~D, DF, F, D, DF, x+z
+command = ~D, DB, B, D, DF, F, x+z
 time = 32
 
 [Command]
 name = "LightningUppercut"
-command = ~D, DF, F, D, DF, a
+command = ~D, DB, B, D, DF, F, a
 time = 32
 
 [Command]
 name = "LightningUppercut"
-command = ~D, DF, F, D, DF, ~a
+command = ~D, DB, B, D, DF, F, ~a
 time = 32
 
 [Command]
 name = "LightningUppercut"
-command = ~D, DF, F, D, DF, b
+command = ~D, DB, B, D, DF, F, b
 time = 32
 
 [Command]
 name = "LightningUppercut"
-command = ~D, DF, F, D, DF, ~b
+command = ~D, DB, B, D, DF, F, ~b
 time = 32
 
 [Command]
 name = "LightningUppercut"
-command = ~D, DF, F, D, DF, c
+command = ~D, DB, B, D, DF, F, c
 time = 32
 
 [Command]
 name = "LightningUppercut"
-command = ~D, DF, F, D, DF, ~c
+command = ~D, DB, B, D, DF, F, ~c
 time = 32
 
 [Command]
 name = "LightningUppercutMAX"
-command = ~D, DF, F, D, DF, a+b
+command = ~D, DB, B, D, DF, F, a+b
 time = 32
 
 [Command]
 name = "LightningUppercutMAX"
-command = ~D, DF, F, D, DF, a+c
+command = ~D, DB, B, D, DF, F, a+c
 time = 32
 
 [Command]
 name = "LightningUppercutMAX"
-command = ~D, DF, F, D, DF, b+c
+command = ~D, DB, B, D, DF, F, b+c
 time = 32
 
 ;[Command]

@@ -1,4 +1,4 @@
-;======================<Devil Strike>===================
+;=<Devil Strike>=
 [Statedef 3000 - Devil Strike]
 type    = S
 movetype= A
@@ -295,7 +295,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<MAX Devil Strike>===================
+;=<MAX Devil Strike>=
 [Statedef 3050 - MAX Devil Strike]
 type    = S
 movetype= A
@@ -632,7 +632,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<Lightning Uppercut>===================
+;=<Lightning Uppercut>=
 [Statedef 3100 - Lightning Uppercut]
 type = S
 movetype = A
@@ -685,6 +685,11 @@ trigger1 = !Time
 trigger1 = var(21) || var(22)
 var(15) = 0
 ignoreHitPause = 1
+
+[State 3100, PosAdd]
+type = PosAdd
+trigger1 = AnimElemTime(3) > 0 && AnimElemTime(10) < 0
+x = 1
 
 [State 3100, SuperPause FX]
 type = Helper
@@ -948,7 +953,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1061
 
-;======================<MAX Lightning Uppercut>===================
+;=<MAX Lightning Uppercut>=
 [Statedef 3150 - MAX Lightning Uppercut]
 type = S
 movetype = A
@@ -1584,7 +1589,7 @@ type = ChangeState
 trigger1 = pos y > -vel y
 value = 1061
 
-;======================<Devil Beam>===================
+;=<Devil Beam>=
 [Statedef 3200 - Devil Beam]
 type = S
 movetype = A

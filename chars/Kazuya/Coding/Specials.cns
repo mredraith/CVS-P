@@ -51,7 +51,7 @@ ownpal = 1
 
 [State 1000, Hit Near] 
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 4
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 86 < 7, 7, fvar(11) * 86)), 7
@@ -156,7 +156,7 @@ ownpal = 1
 
 [State 1010, Hit Near] 
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 4
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 95 < 7, 7, fvar(11) * 95)), 7
@@ -262,7 +262,7 @@ ownpal = 1
 
 [State 1020, Hit Near] 
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 4
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 104 < 7, 7, fvar(11) * 104)), 7
@@ -287,7 +287,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -5, -0.8
-air.velocity = -6,-5
+air.velocity = -6,((-5) + var(15))
 guard.velocity = -10
 airguard.velocity = -8, -3
 airguard.ctrlTime = 16
@@ -453,7 +453,7 @@ ownpal = 1
 [State 1030, Hit]
 type = HitDef
 triggerall = !NumTarget(1030)
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
@@ -478,7 +478,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -4, -0.8
-air.velocity = -8,-8
+air.velocity = -8,((-8) + var(15))
 guard.velocity = -10
 airguard.velocity = -8.5, -3
 airguard.ctrlTime = 16
@@ -753,7 +753,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Dragon Uppercut
-; CNS difficulty: easy
 [Statedef 1060]
 type    = S
 movetype= A
@@ -853,7 +852,7 @@ ownPal = 1
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -880,7 +879,7 @@ guard.hittime = (18) - 6
 air.hittime = 120
 ground.velocity = -5.5,-11.5
 guard.velocity = -7
-air.velocity = -3.5,-7
+air.velocity = -3.5,((-7) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -895,7 +894,7 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4 && !movecontact && !movereversed
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -922,7 +921,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -5.5,-8
 guard.velocity = -7
-air.velocity = -3.5,-7
+air.velocity = -3.5,((-7) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -937,7 +936,7 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5 && !movecontact && !movereversed
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -964,7 +963,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -5.5,-8
 guard.velocity = -7
-air.velocity = -3.5,-7
+air.velocity = -3.5,((-7) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -1092,7 +1091,7 @@ ownPal = 1
 
 [State 250, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 1
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1119,7 +1118,7 @@ guard.hittime = (18) - 6
 air.hittime = 120
 ground.velocity = -9, -2.2
 guard.velocity = -9
-air.velocity = -5.5,-6.8
+air.velocity = -5.5,((-6.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -1189,7 +1188,7 @@ value = 1, 5
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 6
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 91 < 7, 7, fvar(11) * 91)), 7
@@ -1215,7 +1214,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -1337,7 +1336,7 @@ removeongethit = 1
 
 [State 1100, Hit 1] 
 type = HitDef
-trigger1 = !var(16) && var(15) < 3
+
 trigger1 = AnimElem = 5
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 70 < 7, 7, fvar(11) * 70)), 7
@@ -1364,7 +1363,7 @@ guard.hittime = (18) - 6
 ground.velocity = -2.25, -8.5
 air.velocity = -1.85,-8.3
 guard.velocity = -8
-airguard.velocity = -3.5, -8
+airguard.velocity = -3.5, ((-8) + var(15))
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
@@ -1521,7 +1520,7 @@ ownPal = 1
 
 [State 1120, Hit 1&2] 
 type = HitDef
-trigger1 = !var(16) && var(15) < 3
+
 trigger1 = AnimElem = 5
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 85 < 7, 7, fvar(11) * 85)), 7
@@ -1546,7 +1545,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.25, -8.5
-air.velocity = -0.75, -8.3
+air.velocity = -0.75, ((-8.3) + var(15))
 guard.velocity = -8
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
@@ -1675,7 +1674,7 @@ removeongethit = 1
 
 [State 1120, Hit 1&2] 
 type = HitDef
-trigger1 = !var(16) && var(15) < 4
+
 trigger1 = AnimElem = 5
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 90 < 7, 7, fvar(11) * 90)), 7
@@ -1700,7 +1699,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.25, -8.5
-air.velocity = -0.75, -8.3
+air.velocity = -0.75, ((-8.3) + var(15))
 guard.velocity = -8
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
@@ -1816,7 +1815,7 @@ value = 1, 5
 
 [State 1200, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 3
+
 trigger1 = AnimElem = 5
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 96 < 7, 7, fvar(11) * 96)), 7
@@ -1841,7 +1840,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, -5.5
-air.velocity = -5,-5.5
+air.velocity = -5,-((5.5) + var(15))
 guard.velocity = -10
 airguard.velocity = -5, -3.5
 airguard.ctrlTime = 16
@@ -1955,7 +1954,7 @@ x = 3
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 5
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 58 < 7, 7, fvar(11) * 58)), 7
@@ -1980,7 +1979,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -4.5
-air.velocity = -4.5,-6.5
+air.velocity = -4.5,((-6.5) + var(15))
 guard.velocity = -8
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
@@ -2056,7 +2055,7 @@ x = 0
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 3
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 52 < 7, 7, fvar(11) * 52)), 7
@@ -2082,7 +2081,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -2135,7 +2134,7 @@ value = 1, 2
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 3
+
 trigger1 = AnimElem = 5
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 48 < 7, 7, fvar(11) * 48)), 7
@@ -2161,7 +2160,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -3.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -2266,7 +2265,7 @@ x = 4.5
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 5
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 64 < 7, 7, fvar(11) * 64)), 7
@@ -2292,7 +2291,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 down.hitTime = 12
 ground.velocity = -4.5
-air.velocity = -4.5,-6.5
+air.velocity = -4.5,((-6.5) + var(15))
 guard.velocity = -8
 down.velocity = -4.5, 0
 down.cornerpush.veloff = 0
@@ -2375,7 +2374,7 @@ x = 0
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 3
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 7
@@ -2404,7 +2403,7 @@ ground.velocity = -1.5, -6
 guard.velocity = -6.5
 down.velocity = -3.5, 0
 down.cornerpush.veloff = 0
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -2462,7 +2461,7 @@ value = 1, 2
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 3
+
 trigger1 = AnimElem = 5
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 52 < 7, 7, fvar(11) * 52)), 7
@@ -2488,7 +2487,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -3.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -2557,7 +2556,7 @@ y = 0.58
 
 [State 1400, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 8
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 86 < 7, 7, fvar(11) * 86)), 7
@@ -2582,7 +2581,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
-air.velocity = -5,-5
+air.velocity = -5,((-5) + var(15))
 guard.velocity = -10
 airguard.velocity = -5, -3.5
 airguard.ctrlTime = 16
@@ -2691,7 +2690,7 @@ y = 0.58
 
 [State 1400, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 8
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
@@ -2716,7 +2715,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
-air.velocity = -5,-5
+air.velocity = -5,((-5) + var(15))
 guard.velocity = -10
 airguard.velocity = -5, -3.5
 airguard.ctrlTime = 16
@@ -2802,7 +2801,7 @@ x = 0.5
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 3
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 36 < 7, 7, fvar(11) * 36)), 7
@@ -2828,7 +2827,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -2897,7 +2896,7 @@ y = 0.58
 
 [State 1400, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 8
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 50 < 7, 7, fvar(11) * 50)), 7
@@ -2922,7 +2921,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
-air.velocity = -5,-5
+air.velocity = -5,((-5) + var(15))
 guard.velocity = -10
 airguard.velocity = -5, -3.5
 airguard.ctrlTime = 16
@@ -3025,7 +3024,7 @@ value = 1, 5
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 3
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 23 < 7, 7, fvar(11) * 23)), 7
@@ -3051,7 +3050,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -3069,7 +3068,7 @@ envShake.freq = 120
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 12
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 22 < 7, 7, fvar(11) * 22)), 7
@@ -3095,7 +3094,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -3206,7 +3205,7 @@ y = 0.45
 
 [State 1400, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 8
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 50 < 7, 7, fvar(11) * 50)), 7
@@ -3231,7 +3230,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -9, 0
-air.velocity = -5,-5
+air.velocity = -5,((-5) + var(15))
 guard.velocity = -10
 airguard.velocity = -5, -3.5
 airguard.ctrlTime = 16
@@ -3346,7 +3345,7 @@ value = 1, 5
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 3
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
@@ -3372,7 +3371,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5, -3.5
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -3390,7 +3389,7 @@ envShake.freq = 120
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 12
 attr = A, SA
 damage = ceil(ifElse(fvar(11) * 35 < 7, 7, fvar(11) * 35)), 7
@@ -3416,7 +3415,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -3483,7 +3482,7 @@ channel=1
 
 [State 250, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 4
+
 trigger1 = AnimElem = 5
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3510,7 +3509,7 @@ guard.hittime = (17 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -9
 guard.velocity = -9
-air.velocity = -5.5,-6.8
+air.velocity = -5.5,((-6.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -3566,7 +3565,7 @@ channel=1
 
 [State 250, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 4
+
 trigger1 = AnimElem = 5
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3593,7 +3592,7 @@ guard.hittime = (17 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -9
 guard.velocity = -9
-air.velocity = -5.5,-6.8
+air.velocity = -5.5,((-6.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -3661,7 +3660,7 @@ x = 0.5
 
 [State 1300, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 4
+
 trigger1 = AnimElem = 5
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 55 < 7, 7, fvar(11) * 55)), 7
@@ -3687,7 +3686,7 @@ ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.5, -3.5
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 airguard.velocity = -6, -4
 airguard.ctrlTime = 16
 ground.cornerPush.velOff = 0
@@ -3778,7 +3777,7 @@ numHits = 0
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 4
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3820,7 +3819,7 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = !NumTarget(1590)
 trigger1 = AnimElem = 8
 ID = 1590
@@ -3849,7 +3848,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -1.33,9.5
 guard.velocity = -6
-air.velocity = -1 ,-3
+air.velocity = -1 ,((-3) + var(15))
 ;fall.xvelocity = -1.0
 ;fall.yvelocity = -8.0
 ground.cornerPush.velOff = 0
@@ -4045,7 +4044,7 @@ numHits = 0
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 4
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -4072,7 +4071,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3
 guard.velocity = -1.8
-air.velocity = -1.25,-2
+air.velocity = -1.25,((-2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -4086,7 +4085,7 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 250, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 10
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -4113,7 +4112,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -9
 guard.velocity = -9
-air.velocity = -5.5,-6.8
+air.velocity = -5.5,((-6.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -4200,7 +4199,7 @@ numHits = 0
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 4
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -4227,7 +4226,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3
 guard.velocity = -1.8
-air.velocity = -1.25,-2
+air.velocity = -1.25,((-2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -4241,7 +4240,7 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 8
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -4268,7 +4267,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -5.33,-3.5
 guard.velocity = -6
-air.velocity = -1 ,-3
+air.velocity = -1 ,((-3) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -4440,7 +4439,7 @@ numHits = 0
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 4
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -4467,7 +4466,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3
 guard.velocity = -1.8
-air.velocity = -1.25,-2
+air.velocity = -1.25,((-2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -4481,7 +4480,7 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 2
+
 trigger1 = AnimElem = 8
 id=1530
 attr = S,SA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
@@ -4614,7 +4613,7 @@ removeongethit = 1
 
 [State 1120, Hit 1&2] 
 type = HitDef
-trigger1 = !var(16) && var(15) < 4
+
 trigger1 = AnimElem = 5
 attr = S, SA
 damage = ceil(ifElse(fvar(11) * 40 < 7, 7, fvar(11) * 40)), 7
@@ -4639,7 +4638,7 @@ ground.slidetime = 18
 ground.hittime  = 18
 guard.hittime = (18) - 6
 ground.velocity = -1.25, -8.5
-air.velocity = -0.75, -8.3
+air.velocity = -0.75, ((-8.3) + var(15))
 guard.velocity = -5
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0

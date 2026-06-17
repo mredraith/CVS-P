@@ -41,7 +41,7 @@ var(1)=2
 
 [State 200, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S, NA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
@@ -72,12 +72,11 @@ guard.velocity = -5.5
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.velocity = -2.6,-7
+air.velocity = -2.6,((-7) + var(15))
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recoverTime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -152,7 +151,7 @@ y = 0
 
 [State 200, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = anim = 201 && AnimElem = 3
 attr = S, NA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
@@ -182,12 +181,11 @@ guard.velocity = -5.5
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.velocity = -2.6,-7
+air.velocity = -2.6,((-7) + var(15))
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recoverTime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -252,7 +250,7 @@ y = 0
 
 [State 200, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S, NA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
@@ -282,12 +280,11 @@ guard.velocity = -5.5
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.velocity = -2.6,-7
+air.velocity = -2.6,((-7) + var(15))
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recoverTime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -338,7 +335,7 @@ channel = 1
 
 [State 210, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -367,14 +364,13 @@ guard.ctrltime = 16
 air.hittime = 120
 ground.velocity = -7
 guard.velocity = -7
-air.velocity = -2, -7.6
+air.velocity = -2, ((-7.6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recoverTime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -392,7 +388,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Left-Right Punch
-;CNS Difficulty: easy
 [Statedef 211]
 type    = S
 movetype= A
@@ -453,7 +448,7 @@ y = 0
 
 [State 210, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -481,14 +476,13 @@ guard.hittime = (18 + 3*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3.5
 guard.velocity = -4.5
-air.velocity = -2, -7.6
+air.velocity = -2, ((-7.6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recoverTime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -522,7 +516,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Demon Slayer
-; CNS difficulty: easy
 [Statedef 212]
 type    = S
 movetype= A
@@ -566,7 +559,7 @@ y = 0
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -594,14 +587,13 @@ guard.hittime = (22 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -9
 guard.velocity = -9
-air.velocity = -5.25,-6
+air.velocity = -5.25,((-6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -619,7 +611,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Soul Thrust
-; CNS difficulty: easy
 [Statedef 213]
 type    = S
 movetype= A
@@ -660,7 +651,7 @@ x = 9
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 6
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -688,14 +679,13 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -6.5, -4.2
 guard.velocity = -9
-air.velocity = -5.25,-6
+air.velocity = -5.25,((-6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -714,7 +704,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Standing Strong Punch
-; CNS difficulty: easy
 [Statedef 220]
 type    = S
 movetype= A
@@ -752,7 +741,7 @@ channel = 1
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -781,14 +770,13 @@ guard.ctrltime = 19
 air.hittime = 120
 ground.velocity = -8
 guard.velocity = -8
-air.velocity = -5.25,-6
+air.velocity = -5.25,((-6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -805,7 +793,6 @@ value = 0
 ctrl = 1
 
 ; Dodge Strong Punch
-; CNS difficulty: easy
 [Statedef 221]
 type    = S
 movetype= A
@@ -831,7 +818,7 @@ channel = 1
 
 [State 221, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -858,7 +845,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -8, -2.5
 guard.velocity = -10
-air.velocity = -8,-3
+air.velocity = -8,((-3) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -882,7 +869,6 @@ value = 0
 ctrl = 1
 
 ; Z-Counter Punch
-; CNS difficulty: easy
 [Statedef 222]
 type    = S
 movetype= A
@@ -914,7 +900,7 @@ value = SCA
 
 [State 222, HitDef Z-Counter]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3 
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -941,7 +927,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -8, -2.5
 guard.velocity = -10
-air.velocity = -8,-3
+air.velocity = -8,((-3) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -966,7 +952,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Glorious Demon God Fist
-; CNS difficulty: easy
 [Statedef 223]
 type    = S
 movetype= A
@@ -1017,7 +1002,7 @@ x = 9
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 7
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1045,14 +1030,13 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -6.5, -4.2
 guard.velocity = -9
-air.velocity = -5.25,-6
+air.velocity = -5.25,((-6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1070,7 +1054,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Flash Punch Combo 2
-; CNS difficulty: easy
 [Statedef 226]
 type    = S
 movetype= A
@@ -1120,7 +1103,7 @@ x = 9
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1148,14 +1131,13 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -5.95, -1.8
 guard.velocity = -9
-air.velocity = -5.25,-6
+air.velocity = -5.25,((-6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1173,7 +1155,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Rampaging Demon
-; CNS difficulty: easy
 [Statedef 227]
 type    = S
 movetype= A
@@ -1253,7 +1234,7 @@ var(1)=3
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1282,14 +1263,13 @@ guard.ctrltime = 16
 air.hittime = 120
 ground.velocity = -7
 guard.velocity = -7
-air.velocity = -2, -7.6
+air.velocity = -2, ((-7.6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recoverTime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1313,7 +1293,6 @@ value = 0
 ctrl = 1
 
 ; Standing Medium Kick
-; CNS difficulty: easy
 [Statedef 228]
 type    = S
 movetype= A
@@ -1345,7 +1324,7 @@ var(1)=1
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1374,14 +1353,13 @@ guard.ctrltime = 18
 air.hittime = 120
 ground.velocity = -7
 guard.velocity = -7
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1405,7 +1383,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Glorious Demon God Fist
-; CNS difficulty: easy
 [Statedef 229]
 type    = S
 movetype= A
@@ -1456,7 +1433,6 @@ x = 9
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 7
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1484,14 +1460,13 @@ guard.hittime = (16 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -6.8, -5.2
 guard.velocity = -9
-air.velocity = -5.25,-5
+air.velocity = -5.25,((-5) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1509,7 +1484,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Light Kick
-; CNS difficulty: easy
 [Statedef 230]
 type    = S
 movetype= A
@@ -1546,7 +1520,7 @@ var(1)=4
 
 [State 230, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 2
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1575,14 +1549,13 @@ guard.ctrltime = 12
 air.hittime = 120
 ground.velocity = -5
 guard.velocity = -5
-air.velocity = -5.25,-5.8
+air.velocity = -5.25,((-5.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1608,7 +1581,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Standing Medium Kick
-; CNS difficulty: easy
 [Statedef 240]
 type    = S
 movetype= A
@@ -1634,7 +1606,7 @@ channel = 1
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1663,14 +1635,13 @@ guard.ctrltime = 18
 air.hittime = 120
 ground.velocity = -7
 guard.velocity = -7
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1688,7 +1659,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Twin Fang Stature Smash
-; CNS difficulty: easy
 [Statedef 241]
 type    = S
 movetype= A
@@ -1725,7 +1695,7 @@ var(1)=2
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1753,14 +1723,13 @@ guard.hittime = (26 + 3*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3.8
 guard.velocity = -4
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1785,7 +1754,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Agony Spear 2
-; CNS difficulty: easy
 [Statedef 242]
 type    = S
 movetype= A
@@ -1811,7 +1779,7 @@ channel = 1
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1840,14 +1808,13 @@ guard.ctrltime = 17
 air.hittime = 120
 ground.velocity = -7
 guard.velocity = -7
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1865,7 +1832,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Right Splits Kick
-; CNS difficulty: easy
 [Statedef 243]
 type    = S
 movetype= A
@@ -1891,7 +1857,7 @@ channel = 1
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -1920,14 +1886,13 @@ guard.ctrltime = 17
 air.hittime = 120
 ground.velocity = -7
 guard.velocity = -7
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -1945,7 +1910,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Left Splits Kick
-; CNS difficulty: easy
 [Statedef 244]
 type    = S
 movetype= A
@@ -1995,7 +1959,7 @@ x = 9
 
 [State 250, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2023,14 +1987,13 @@ guard.hittime = (22 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -9
 guard.velocity = -9
-air.velocity = -5.5,-6.8
+air.velocity = -5.5,((-6.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2048,7 +2011,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Twin Fang Double Kick
-; CNS difficulty: easy
 [Statedef 245]
 type    = S
 movetype= A
@@ -2101,7 +2063,7 @@ ownpal = 1
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2129,14 +2091,13 @@ guard.hittime = (26 + 3*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3.8
 guard.velocity = -4
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2155,7 +2116,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Standing Strong Kick
-; CNS difficulty: easy
 [Statedef 250]
 type    = S
 movetype= A
@@ -2181,7 +2141,6 @@ channel=1
 
 [State 250, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
 trigger1 = AnimElem = 5
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2209,14 +2168,13 @@ guard.hittime = (17 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -9
 guard.velocity = -9
-air.velocity = -5.5,-6.8
+air.velocity = -5.5,((-6.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2234,7 +2192,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Oni Stomp
-; CNS difficulty: easy
 [Statedef 252]
 type    = S
 movetype= A
@@ -2260,7 +2217,7 @@ channel=1
 
 [State 250, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAFD        ;HLAFD+-
@@ -2288,8 +2245,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2307,7 +2263,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Demon/Reign Startup
-; CNS difficulty: easy
 [Statedef 260]
 type    = S
 movetype= A
@@ -2364,7 +2319,7 @@ var(1)=4
 
 [State 230, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2393,14 +2348,13 @@ guard.ctrltime = 12
 air.hittime = 120
 ground.velocity = -5
 guard.velocity = -5
-air.velocity = -5.25,-5.8
+air.velocity = -5.25,((-5.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2426,7 +2380,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Left-Right Punch
-;CNS Difficulty: easy
 [Statedef 261]
 type    = S
 movetype= A
@@ -2475,7 +2428,7 @@ y = 0
 
 [State 210, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2503,14 +2456,13 @@ guard.hittime = (18 + 3*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3.5
 guard.velocity = -4.5
-air.velocity = -2, -7.6
+air.velocity = -2, ((-7.6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recoverTime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2536,7 +2488,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Twin Fang Stature Smash
-; CNS difficulty: easy
 [Statedef 262]
 type    = S
 movetype= A
@@ -2584,7 +2535,7 @@ x = 5
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2612,14 +2563,13 @@ guard.hittime = (26 + 3*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3.8
 guard.velocity = -4
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2652,7 +2602,6 @@ ctrl = 1
 
 ;------------------------------------------
 ; Demon's Wrath
-; CNS difficulty: easy
 [Statedef 263]
 type    = S
 movetype= A
@@ -2693,7 +2642,7 @@ x = 11
 
 [State 220, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2721,14 +2670,13 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime = 120
 ground.velocity = -4.5, -4.2
 guard.velocity = -9
-air.velocity = -3.25,-5
+air.velocity = -3.25,((-5) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2746,7 +2694,6 @@ ctrl = 1
 
 ;------------------------------------------------------
 ; Reign of Terror
-; CNS difficulty: easy
 [Statedef 264]
 type    = S
 movetype= A
@@ -2799,7 +2746,7 @@ ownpal = 1
 
 [State 240, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = S,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2827,14 +2774,13 @@ guard.hittime = (26 + 3*var(9)) - 6
 air.hittime = 120
 ground.velocity = -3.8
 guard.velocity = -4
-air.velocity = -3, -7.2
+air.velocity = -3, ((-7.2) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2853,7 +2799,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
-; CNS difficulty: easy
 [Statedef 400]
 type    = C
 movetype= A
@@ -2879,7 +2824,7 @@ channel=1
 
 [State 400, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2908,14 +2853,13 @@ guard.ctrltime = 12
 air.hittime = 120
 ground.velocity = -5.5
 guard.velocity = -5.5
-air.velocity = -5.5, -5.8
+air.velocity = -5.5, ((-5.8) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -2933,7 +2877,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
-; CNS difficulty: easy
 [Statedef 410]
 type    = C
 movetype= A
@@ -2959,7 +2902,7 @@ channel=1
 
 [State 410, Hit 1]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -2988,14 +2931,13 @@ guard.ctrltime = 16
 air.hittime = 120
 ground.velocity = -6
 guard.velocity = -6
-air.velocity = -3, -7
+air.velocity = -3, ((-7) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3012,7 +2954,6 @@ value = 11
 ctrl = 1
 ;--------------------------------------------------------------------------
 ; Crouching Strong Punch
-;CNS difficulty: easy
 [Statedef 420]
 type    = C
 movetype= A
@@ -3038,7 +2979,7 @@ channel=1
 
 [State 420, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3067,14 +3008,13 @@ guard.ctrltime = 19
 air.hittime = 120
 ground.velocity = -9
 guard.velocity = -9
-air.velocity = -3.5,-7.5
+air.velocity = -3.5,((-7.5) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3092,7 +3032,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Kick
-; CNS difficulty: easy
 [Statedef 430]
 type    = C
 movetype= A
@@ -3118,7 +3057,7 @@ channel=1
 
 [State 430, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3146,14 +3085,13 @@ guard.hittime = (16 + 2*var(9)) - 6
 air.hittime = 120
 ground.velocity = -5.5
 guard.velocity = -5.5
-air.velocity = -5,-6.5
+air.velocity = -5,((-6.5) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3171,7 +3109,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ;Crouch Medium Kick
-; CNS difficulty: easy
 [Statedef 440]
 type    = C
 movetype= A
@@ -3197,7 +3134,7 @@ channel=1
 
 [State 440, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3226,14 +3163,13 @@ guard.ctrltime = 17
 air.hittime = 120
 ground.velocity = -7
 guard.velocity = -7
-air.velocity = -5.25,-6.5
+air.velocity = -5.25,((-6.5) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3251,7 +3187,6 @@ ctrl = 1
 
 ;--------------------------------------------------------------------------
 ; Crouch Strong Kick
-; CNS difficulty: easy
 [Statedef 450]
 type    = C
 movetype= A
@@ -3277,7 +3212,7 @@ channel=1
 
 [State 450, HitDef]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5 
 attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3304,12 +3239,11 @@ guard.hittime = (18 + 4*var(9)) - 6
 guard.ctrltime = 19
 air.hittime = 120
 fall = 1
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 yaccel = .58
 ground.velocity = -1.5, -6
 guard.velocity = -6.5
-air.velocity = -1.5, -6
+air.velocity = -1.5, ((-6) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -3329,7 +3263,6 @@ value = 11
 ctrl = 1
 
 ; Z-Counter Version
-; CNS difficulty: easy
 [Statedef 451]
 type    = C
 movetype= A
@@ -3361,7 +3294,7 @@ value = SCA
 
 [State 451, HitDef: Z-Counter]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5
 attr = C,NA        ;SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
 hitflag = MAF        ;HLAFD+-
@@ -3391,7 +3324,7 @@ fall.recover = 0
 yaccel = .58
 ground.velocity = -6, -5.5
 guard.velocity = -6.5
-air.velocity = -6, -5.5
+air.velocity = -6, ((-5.5) + var(15))
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
@@ -3412,7 +3345,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Jump Light Punch
-; CNS difficulty: easy
 [Statedef 600]
 type    = A
 movetype= A
@@ -3436,7 +3368,7 @@ channel=1
 
 [State 600, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 21 < 7, 7, fvar(11) * 21)), 0
@@ -3472,8 +3404,7 @@ air.cornerPush.velOff = 0
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3494,7 +3425,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Medium Punch
-; CNS difficulty: easy
 [Statedef 610]
 type    = A
 movetype= A
@@ -3518,7 +3448,7 @@ channel=1
 
 [State 610, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 56 < 7, 7, fvar(11) * 56)), 0
@@ -3554,8 +3484,7 @@ air.hittime = 120
 airguard.ctrlTime = 16
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3576,7 +3505,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Strong Punch
-; CNS difficulty: easy
 [Statedef 620]
 type    = A
 movetype= A
@@ -3600,7 +3528,7 @@ channel=1
 
 [State 620, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 4
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
@@ -3636,15 +3564,14 @@ air.hittime = 120
 airguard.ctrlTime = 16
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
 
 [State 620, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 5 && !movecontact && !movereversed
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 84 < 7, 7, fvar(11) * 84)), 0
@@ -3680,8 +3607,7 @@ air.hittime = 120
 airguard.ctrlTime = 16
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3702,7 +3628,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Light Kick
-; CNS difficulty: easy
 [Statedef 630]
 type    = A
 movetype= A
@@ -3726,7 +3651,7 @@ channel=1
 
 [State 630, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 28 < 7, 7, fvar(11) * 28)), 0
@@ -3762,8 +3687,7 @@ air.cornerPush.velOff = 0
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3784,7 +3708,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Medium Kick
-; CNS difficulty: easy
 [Statedef 640]
 type    = A
 movetype= A
@@ -3808,7 +3731,7 @@ channel=1
 
 [State 640, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 63 < 7, 7, fvar(11) * 63)), 0
@@ -3844,8 +3767,7 @@ air.cornerPush.velOff = 0
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
@@ -3866,7 +3788,6 @@ value = 52
 
 ;---------------------------------------------------------------------------
 ; Jump Strong Kick
-; CNS difficulty: easy
 [Statedef 650]
 type    = A
 movetype= A
@@ -3890,7 +3811,7 @@ channel = 1
 
 [State 650, Hit]
 type = HitDef
-trigger1 = !var(16) && var(15) < 1
+
 trigger1 = AnimElem = 3
 attr = A, NA
 damage = ceil(ifElse(fvar(11) * 91 < 7, 7, fvar(11) * 91)), 0
@@ -3924,8 +3845,7 @@ air.cornerPush.velOff = 0
 air.hittime = 120
 yaccel = .58
 fall = 0
-fall.recover = 1
-fall.recovertime = 120
+fall.recover = 0
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
