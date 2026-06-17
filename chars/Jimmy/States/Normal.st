@@ -1900,7 +1900,6 @@ value=52
 
 ;---------------------------------------------------------------------------
 ;Kung Fu Throw - Attempt
-; CNS difficulty: medium-advanced
 [Statedef 800]
 type = S
 movetype= A

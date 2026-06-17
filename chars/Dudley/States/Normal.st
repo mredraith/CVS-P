@@ -1848,7 +1848,6 @@ movetype=I
 
 ;---------------------------------------------------------------------------
 ;Kung Fu Throw - Attempt
-; CNS difficulty: medium-advanced
 [Statedef 800]
 type = S
 movetype= A
@@ -2050,7 +2049,6 @@ trigger1 = Pos Y >= 0
 value = 5100
 ;---------------------------------------------------------------------------
 ;Kung Fu Throw - Attempt
-; CNS difficulty: medium-advanced
 [Statedef 900]
 type = S
 movetype= A
