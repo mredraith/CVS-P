@@ -23,14 +23,14 @@ mul = 0, 0, 0
 ignorehitpause = 1
 
 [State +1, Counter Flash]
-type = bgpalfx
+type = envcolor
 triggerall = roundstate = 2
 triggerall = !ishelper
 trigger1 = (MoveCountered = 1) && (MoveCountered < 2)
 trigger2 = EnemyNear,MoveCountered = 1 && (EnemyNear, MoveCountered < 2)
 time = 1
-add = 255, 255, 255
-ignorehitpause = 1
+value = 255, 255, 255
+under = 1
 
 [State +1, Counter Zoom]
 type = zoom
@@ -99,3 +99,31 @@ trigger1 = EnemyNear,AnimElemVar(NumClsn2)
 trigger2 = roundstate != 2
 fv = 17
 value = 0
+
+[State +1, Drift Forward]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holdfwd"
+x = 0.05
+
+[State +1, Drift Backward]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holdback"
+x = -0.05
+
+[State +1, Drift Up]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holdup"
+y = -0.05
+
+[State +1, Drift Down]
+type = veladd
+triggerall = StateType = a
+triggerall = ctrl = 1
+trigger1 = Command = "holddown"
+y = 0.05
