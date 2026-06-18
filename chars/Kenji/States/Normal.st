@@ -1285,6 +1285,12 @@ trigger1= animelem=11
 value=3100,2
 channel=1
 
+[State 250, Snd]
+type=playsnd
+trigger1= animelem=11
+value=1,2
+channel=-1
+
 [State 0, PlaySnd]
 type = PlaySnd
 trigger1 = Movehit = 1
@@ -1442,6 +1448,12 @@ type=playsnd
 trigger1= animelem=11
 value=3100,2
 channel=1
+
+[State 250, Snd]
+type=playsnd
+trigger1= animelem=11
+value=1,2
+channel=-1
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -2325,6 +2337,12 @@ type = PlaySnd
 trigger1 = animelem = 11
 value = 3100,2
 channel = 2
+
+[State 250, Snd]
+type=playsnd
+trigger1= animelem=11
+value=1,2
+channel=-1
 
 [State 0, PlaySnd]
 type = PlaySnd

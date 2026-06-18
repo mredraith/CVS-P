@@ -83,23 +83,23 @@ shadowoffset = 0
 draw.offset = 0,0
 
 [Velocity]
-walk.fwd = 2.4
-walk.back = -2.2
-run.fwd = 6.525, 0
-run.back = -6.5,0
-jump.neu = 0,-12
-jump.fwd = 3.21
-jump.back = -3.21
-runJump.fwd = 4.1441, -13.47 
-runJump.back = -4.8809, -12.47
-airjump.neu = 0,-8
-airjump.back = -3.2
-airjump.fwd = 3.2
+walk.fwd  = 4.609
+walk.back = -2.266
+run.fwd  = 7.04,0
+run.back = -6.72,-3
+jump.neu = 0, -8.41
+jump.fwd = 2.85
+jump.back = -3.35
+runJump.fwd = 4.20, -10.3
+runJump.back = -4.94, -10.3
+airjump.neu = 0,-6.5
+airjump.back = -2.8
+airjump.fwd = 2.8
 
 [Movement]
 airJump.num = 1
-airJump.height = 35
-yAccel = 0.51
+airJump.height = 0
+yAccel = 0.46875
 stand.friction = 0.85
 crouch.friction = 0.82
 stand.friction.threshold = 1.0
