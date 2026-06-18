@@ -460,48 +460,48 @@ time = 20
 
 [Command]
 name = "Special4"
-command = ~B, D, F, a
+command = ~D, DF, F, a
 time = 20
 
 [Command]
 name = "Special4"
-command = ~B, D, F, b
+command = ~D, DF, F, b
 time = 20
 
 [Command]
 name = "Special4"
-command = ~B, D, F, c
+command = ~D, DF, F, c
 time = 20
 
 [Command]
 name = "Special4"
-command = ~B, D, F, ~a
+command = ~D, DF, F, ~a
 time = 20
 
 [Command]
 name = "Special4"
-command = ~B, D, F, ~b
+command = ~D, DF, F, ~b
 time = 20
 
 [Command]
 name = "Special4"
-command = ~B, D, F, ~c
+command = ~D, DF, F, ~c
 time = 20
 
 
 [Command]
 name = "EXSpecial4"
-command = ~B, D, F, a+b
+command = ~D, DF, F, a+b
 time = 20
 
 [Command]
 name = "EXSpecial4"
-command = ~B, D, F, b+c
+command = ~D, DF, F, b+c
 time = 20
 
 [Command]
 name = "EXSpecial4"
-command = ~B, D, F, a+c
+command = ~D, DF, F, a+c
 time = 20
 
 [Command]
@@ -567,7 +567,7 @@ command = ~F, D, DF, c
 time = 20
 
 [Command]
-name = "Special3"
+name = "Special7"
 command = ~F, D, DF, ~a
 time = 20
 

@@ -3562,7 +3562,7 @@ Clsn2default: 3
 ; projectile
 [Begin Action 1001]
 Clsn1default: 1
-  Clsn1[0] = -11, -2, 8, 14
+  Clsn1[0] = -25, -2, 27, 14
 Clsn2default: 1
   Clsn2[0] = -25, -11, 33, 25
 -1,0, 0,0, 1
@@ -3577,8 +3577,8 @@ loopstart
 4004,19, 0,0, 3
 
 [Begin Action 1002]
-Clsn1default: 1
-  Clsn1[0] = -11, -2, 8, 14
+Clsn1Default: 1
+  Clsn1[0] = -25, -2, 27, 14
 Clsn2default: 1
   Clsn2[0] = -25, -11, 33, 25
 loopstart
@@ -3777,7 +3777,7 @@ Clsn2default: 3
   Clsn2[0] = -10, -91, 29, -64
   Clsn2[1] = -30, -77, 44, -25
   Clsn2[2] = -30, -32, 43, 7
-1100,0, 0,0, 16
+1100,0, 0,0, 8
 1100,1, 0,0, 3
 1100,2, 0,0, 3
 Clsn2default: 3
