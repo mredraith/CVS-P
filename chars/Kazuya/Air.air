@@ -2239,6 +2239,19 @@ Clsn2Default: 1
 
 
 
+;************************************
+; Parry high
+[Begin Action 9087]
+Clsn2Default: 1
+  Clsn2[0] = -20, -100, 20, 0
+700,0, 0,0, 2
+700,1, 0,0, 1
+700,2, 0,0, 8
+700,3, 0,0, 2
+10,0, 0,0, 1
+
+
+
 ;Parry crounch
 [Begin Action 761]
 Clsn2Default: 2
@@ -2252,6 +2265,16 @@ Clsn2Default: 2
 
 ;Parry air
 [Begin Action 762]
+Clsn2Default: 1
+  Clsn2[0] = -20, -112, 20, -32
+702,0, 0,0, 2
+702,1, 0,0, 10
+702,0, 0,0, 2
+
+
+
+;Parry air
+[Begin Action 9088]
 Clsn2Default: 1
   Clsn2[0] = -20, -112, 20, -32
 702,0, 0,0, 2

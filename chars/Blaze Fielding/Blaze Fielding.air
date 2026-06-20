@@ -1225,6 +1225,16 @@ Clsn2Default: 2
 220,0, 0,0, 5
 220,6, 0,0, 2
 
+; Parry High
+[Begin Action 9087]
+Clsn2Default: 2
+  Clsn2[0] = -22, -78, 21, 0
+  Clsn2[1] = -10, -98, 11, -78
+220,1, 0,0, 2
+220,0, 0,0, 5
+220,0, 0,0, 5
+220,6, 0,0, 2
+
 ; Parry Low
 [Begin Action 761]
 Clsn2Default: 2
@@ -1236,6 +1246,14 @@ Clsn2Default: 2
 
 ; Parry Air
 [Begin Action 762]
+Clsn2Default: 1
+  Clsn2[0] = -17, -109, 17, -34
+122,0, 10,-8, 2
+610,3, 1,9, 10
+122,0, 10,-8, 2
+
+; Parry Air
+[Begin Action 9088]
 Clsn2Default: 1
   Clsn2[0] = -17, -109, 17, -34
 122,0, 10,-8, 2

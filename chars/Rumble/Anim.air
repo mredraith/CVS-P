@@ -3972,6 +3972,14 @@ LoopStart
 1200,0, 0,0, 4
 
 
+; Parry High
+[Begin Action 9087]
+1200,6, 0,0, 8
+1200,4, 0,0, 3
+1200,5, 0,0, 4
+1200,0, 0,0, 4
+
+
 ; Parry Low
 [Begin Action 6081]
 420,1, 0,0, 12
@@ -3980,6 +3988,17 @@ LoopStart
 
 ; Parry Air
 [Begin Action 6082]
+Clsn2Default: 1
+  Clsn2[0] = -14, -99, 17, -30
+3001,7, 0,-5, 12
+40,2, 0,22, 3
+40,1, 0,14, 3
+LoopStart
+40,0, 0,17, 8
+
+
+; Parry Air
+[Begin Action 9088]
 Clsn2Default: 1
   Clsn2[0] = -14, -99, 17, -30
 3001,7, 0,-5, 12

@@ -848,7 +848,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Light Punch
-; CNS difficulty: easy
 [Statedef 400]
 type = C
 movetype= A
@@ -932,7 +931,6 @@ ctrl = 1
 
 ;---------------------------------------------------------------------------
 ; Crouching Medium Punch
-; CNS difficulty: easy
 [Statedef 410]
 type = C
 movetype= A

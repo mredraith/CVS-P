@@ -531,7 +531,7 @@ Trigger1= Movecontact!=[1,1]
 Trigger1=hitcount<3
 attr = S, SP
 animtype = Heavy
-damage = 50,3
+damage = 25,3
 hitflag = MAF
 guardflag = MA
 pausetime = 5,6

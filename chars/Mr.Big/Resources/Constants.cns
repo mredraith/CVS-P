@@ -1,0 +1,109 @@
+;***************************************************************************;
+;***************************************************************************;
+; CVS Mr. Big POTS/Infinite by Falcon Rapper
+;***************************************************************************;
+;***************************************************************************;
+; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+;***************************************************************************;
+;***************************************************************************;
+
+;============================================================================
+;Constants
+;============================================================================
+[Data]
+life = 1000			
+attack = 100		
+defence = 100		
+fall.defence_up = 50	
+liedown.time = 50		
+airjuggle = 0		
+sparkno = s8010			
+guard.sparkno = s8000	
+KO.echo = 0			
+volumescale = 100			
+IntPersistIndex = 0	
+FloatPersistIndex = 0 
+
+[Size]
+xScale = 1
+yScale = 1
+ground.back = 15
+ground.front = 15
+air.back = 15
+air.front = 15
+height = 60
+attack.dist = 160
+proj.attack.dist = 90
+proj.doScale = 0
+head.pos = -4, -83
+mid.pos = -3, -60
+shadowOffset = 0
+draw.offset = 0,0
+
+[Velocity]
+walk.fwd = 2.66
+walk.back = -2.66
+run.fwd = 6.0, 0
+run.back = -5.85, -4.2
+jump.neu = 0, -10.3
+jump.fwd = 3.2917
+jump.back = -3.9583
+runJump.fwd = 5.04, -11.9
+runJump.back = -5.81, -11.9
+airjump.neu = 0,-6.5
+airjump.back = -2.8
+airjump.fwd = 2.8       
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yAccel = 0.4725
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundlevel = 25
+air.gethit.groundrecover.ground.threshold = -20
+air.gethit.groundrecover.groundlevel = 10
+air.gethit.airrecover.threshold = -1
+air.gethit.airrecover.yaccel = 0.35
+air.gethit.trip.groundlevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yaccel = 0.4
+down.bounce.groundlevel = 12
+down.friction.threshold = 0.5
+
+[Quotes]
+victory0 = "I need a reason to fight? How 'bout your ugly mugs!";96
+victory1 = "Thought yourselves heroes, huh? It's so funny, I'm crying!"
+victory2 = "I can beat you with one finger! Now stay out of my way, trash!"
+victory3 = "How's that? Now understand what I am big at, don't you?";98UM
+victory4 = "BOR-ING… Come back after you've seen a real bloodbath!";XI
+victory5 = "Did you think you could beat ME?! Humph! You're a conceited one, aren't you?"
+victory6 = "Give up already. I'm no match for someone as weak as you."
+victory7 = "Heh heh heh. You really took it that round, didn't you?"
+victory8 = "Hey, what’s the matter? Enjoy yourself, your life is at stake!!"
+victory9 = "That's the difference between you and me!! You're better off crawling around on all fours!"
+victory10 = "What do you think? Wanna work for me? I'll treat you well..."
+victory11 = "You're not totally useless... But at this rate, the best you'll become is a bodyguard."
+victory12 = "I'm quite the ambitious one. There's no way winning this competition will satisfy me.";NBC
+victory13 = "Nice fight. If you want a bouncing job, I just might hire you."
+victory14 = "They call me Mr. Big. That's B-I-G! Burn it into your memory!"
+victory15 = "That's one fine way of losing. It would fit perfectly with a blues accompaniment."
+victory16 = "What a wimp! I didn't even work up a sweat! Next!";AOF1
+victory17 = "Just be grateful I didn't use my plumber's helper, pal!";AOF2
+victory18 = "I thought so. The power of my pole is positively preposterous!"
+victory19 = "You fought well. Who is your pal, baldy?!";Mr.Big
+;vs Ryo
+victory20 = "You're not worth anything to me anymore. Get out of here!!";XI
+victory21 = "Kyokugen Karate's not what it used to be. Ashamed, are you? Then go cry home to Papa Takuma!";NBC
+;vs Robert
+victory22 = "You really are a pest. I already returned Takuma's daughter to you, didn't I?";NBC
+;vs King
+victory23 = "Looks like you've become quite a coward. Pity... You used to be far more interesting.";XI
+;vs Geese
+victory24 = "Hey, Geese. Good job getting this far. I'll give you a rest... In eternal sleep!";XI
+victory25 = "Southtown is mine! And you're leaving it!";NBC
+;vs others
+victory26 = "Humph. There’s no way I’d lose in a kid’s playground!";XI - Kasumi/Malin/Momoko/Shingo
+victory27 = "That's why kids are dangerous. They don't know their ability until they get slapped around.";NBC - Yuki

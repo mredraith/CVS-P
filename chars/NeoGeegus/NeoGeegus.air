@@ -2265,6 +2265,13 @@ Clsn2Default: 1
 105,0, 0,0, 9
 120,0, 0,0, 3
 
+[Begin Action 9087]
+Clsn2Default: 1
+  Clsn2[0] = -24, -133, 27, 4
+120,0, 0,0, 3
+105,0, 0,0, 9
+120,0, 0,0, 3
+
 [Begin Action 761]
 Clsn2Default: 1
   Clsn2[0] = -19, -64, 33, 4
@@ -2273,6 +2280,13 @@ Clsn2Default: 1
 121,0, 0,0, 3
 
 [Begin Action 762]
+Clsn2Default: 1
+  Clsn2[0] = -13, -130, 39, -62
+122,0, 0,0, 3
+122,1, 0,0, 9
+122,0, 0,0, 3
+
+[Begin Action 9088]
 Clsn2Default: 1
   Clsn2[0] = -13, -130, 39, -62
 122,0, 0,0, 3

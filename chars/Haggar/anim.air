@@ -1850,6 +1850,15 @@ Clsn2Default: 1
 220,9, 0,0, 3
 
 
+;Standing Parry
+[Begin Action 9087]
+Clsn2Default: 1
+  Clsn2[0] = -23, -89, 37, 1
+220,9, 0,0, 2
+220,10, 0,0, 10
+220,9, 0,0, 3
+
+
 ;Crouching Parry
 [Begin Action 761]
 Clsn2Default: 1
@@ -1861,6 +1870,15 @@ Clsn2Default: 1
 
 ;Jumping Parry
 [Begin Action 762]
+Clsn2Default: 1
+  Clsn2[0] = -20, -108, 22, -44
+40,0, 0,0, 2
+40,1, 0,0, 10
+40,0, 0,0, 2
+
+
+;Jumping Parry
+[Begin Action 9088]
 Clsn2Default: 1
   Clsn2[0] = -20, -108, 22, -44
 40,0, 0,0, 2

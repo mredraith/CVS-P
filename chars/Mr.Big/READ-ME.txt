@@ -1,0 +1,115 @@
+;***************************************************************************;
+;***************************************************************************;
+; Mr.Big POTS/Infinite by Falcon Rapper
+;***************************************************************************;
+;***************************************************************************;
+; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+;***************************************************************************;
+
+             
+======================| Mr.Big POTS/Infinite by Falcon Rapper |=========================== [10/29/2019]            
+
+Contact:
+
+ - www.facebook.com/groups/MugenFDR (A Facebook group based on issues and creations related to engine mugen, giving priority to POTS-style conversions and similar styles (POTS / Infinite or POTS / Divinewolf) ... Everyone is welcome)
+ - www.youtube.com/channel/UC9g3hatollhGqE14PVJb1cA (Subscrive please... :D )
+
+=================<Features>=================
+
+ - All the essential stuff
+ - Details and moves taken from her various video game appearances
+ - Palette Selector
+ - Gameplay, graphics, character voices, among other effects can be changed in the file "config.txt".
+ - New Super combo added: California Dream 
+
+=================<Movelist>=================
+
+ U - up          x - light punch        a - light kick
+ D - down        y - medium punch       b - medium kick
+ F - forward     z - heavy punch        c - heavy kick
+ B - back        p - any punch          k - any kick
+ s - start       2p- two punches        2k- two kicks
+
+ (Air) - Move must be performed in the air.
+ (EX)  - Move has an EX version, performed by pressing two punch/kick buttons.
+ (MAX) - Use two punch/kick buttons when performing a Super move to power it up.
+
+
+=================<NORMAL>=================
+
+.Prick Stick		F + x
+.AOF2 Taunt		D + s
+
+=================<THROW>=================
+
+.Million Dollar Buster:		F/B + 2p   (near opponent)
+.High Lift Throw:               F/B + 2k   (near opponent)
+
+=================<SPECIAL (NORMAL)>=================
+
+.Ground Blaster (EX):         	D, DF, F, p
+.California Romance (EX):       F, D, DF, p
+.Cross Diving (EX):		F, DF, D, DB, B, p
+.Spinning Lancer (EX):		F, DF, D, DB, B, k
+..Spinning Lancer (Cancel):	x+a
+.Crazy Drum (EX):		D, DF, F, k
+
+=================<SUPER>=================
+
+.Blaster Wave (MAX):          	D, DF, F, D, DF, F, p
+.Crazy Drum Typhoon (MAX):	D, DF, F, D, DB, B, p
+.California Dream (MAX):	D, DF, F, D, DF, F, k
+
+=================<LV3 SUPER>=================
+
+.Rising Spear:			F, DF, D, DB, B, F, DF, D, DB, B, 2k
+
+=================<SYSTEM ABILITIES>=================
+
+.Forward Dash:                  F, F
+   .Run:                        hold
+.Backward Dash:                 B, B
+.Low Jump:                      tap U
+.High Jump:                     tap D, U
+.Long Low Jump:                 tap D, tap U            
+.Sankaku Tobi:           	UF / UB 	(in air, near edge of screen)
+.Sidestep:                      a + x
+   .Sidestep Attack:            p / k
+.Forward Roll:                  F + a + x
+.Backward Roll:                 B + a + x
+.Parry High:                    tap F
+.Parry Low:                     tap D
+.Air Parry:                     tap F           (Air)
+.Power Charge:                  hold b + y
+.Zero Counter:                  B, DB, D, p / k (during standing or crouching guard)
+.Custom Combo:                  c + z           (Air also)
+.Fall Recovery:                 2p / a + x      (while falling and allowed)
+
+
+=================<Credits>=================
+
+ - Electbyte (Creators of Mugen)
+ - VirtuallTeck (creators of Fighter Factory)
+ - Audacity (Sound effects)
+ - Racionais Mc's (Famous Brazilian group of RAP, to which I used the instrumental base of the song "Vida Loka Parte 2" as background for the FDR EASY CONFIGURATION).
+ - Dampir (Best KOF sprites to CVS converter, it's an honor to be able to use these sprites in this char)
+ - Infinite and R@ce Akira = For great chars in which I use as a template during conversion
+ - Phantom of the server (best sparks and best style for ground fighting)
+ - Jmorphman (Best effect for custom combos using helpers)
+ - David Demianoff, Ikaruga, Swipergod, Jerzy, Aomura & Shinrei (Chars used as template)
+ - Kater15, Left4Joker, IsRageNeko & LEON (Palettes)
+ - Gui007, Gus Saint, Shiyo Kakuge, JadeEye & UEMonthly (For always promoting my work via Youtube)
+ - Left4Joker (Always bringing good ideas and suggestions in my group on facebook)
+ - Admins and members of mugen groups on Facebook, especially Ramon Garcia (Mugen link & Share), Tiloger and David JR Ayad (Mugen Return) and to the group gallery there.
+ - Akito (For hints and tips which I used to improve this char).
+ - Members of the CVS EXtreme group (My group for mugen on facebook)
+ - To all the people subscribed in my YouTube channel: www.youtube.com/channel/UC9g3hatollhGqE14PVJb1cA
+
+=================<Possible Extras/Things To Do>=================
+
+ - Fix errors or bugs based on feedback  
+
+=================<Disclaimer>=================
+
+ - Mr. Big character is property of SNK
+ - This MUGEN character is a non-profit fan work, it cannot be used for any commercial purposes

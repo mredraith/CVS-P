@@ -1,0 +1,1570 @@
+;~~~~~~~~~~~~~~~~~爪(Claw)~~~~~~~~~~~~~~~~~~~~~~~
+[Statedef 10000]
+type = A
+movetype = I
+
+[state -2]
+type = sprpriority
+trigger1 = 1
+value = ifelse((root,stateno=[195,4099]),3,ifelse(root,teamside=2||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,0,2))
+
+[state -2]
+type = sprpriority
+trigger1 = root,numpartner
+trigger1 = (root,ID-partner,ID)>0
+value = ifelse((root,stateno=[195,4099]),-1,ifelse((root,teamside=2&&(root,stateno!=[195,4099]))||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,-4,-2))
+
+[State -3,varset]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 20000]
+type = varset
+trigger1 = 1
+var(1) = 0
+
+[State 20000]
+type = varset
+trigger1 = 1
+var(3) = 0
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && abs(root,vel X)>0
+var(1) = abs(ceil(Root,Vel X))
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && abs(enemynear,vel X)>0
+var(3) = abs(ceil(enemynear,Vel X))
+
+[State 10000]
+type = Bindtoroot
+trigger1 = 1
+Pos = 0,0
+facing = 1
+time = 1
+
+[State 20000]
+type = BindtoRoot
+trigger1 = Root,P2bodydist X<=0 && P2statetype!=A && (abs(var(0)-Root,pos X)<var(1)||abs(var(2)-enemynear,pos X)<var(3)) && backedgebodydist>2; && (root,anim=0||root,anim=11)
+pos = -floor(var(1)/(1.35-ifelse(enemynear,backedgebodydist<=2,ifelse(var(1)>6,.6,.4),0)))+(abs(var(2)-enemynear,pos X)>=var(3))-(backedgebodydist>2)*ceil(var(3)/2),0
+facing = 1
+time = 1
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && abs(root,vel X)>0
+var(0) = ceil(Root,Pos X)
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && abs(enemynear,vel X)>0
+var(2) = ceil(enemynear,Pos X)
+
+[State 10000,ChangeAnim]
+type = AssertSpecial
+trigger1 = root,movetype=H && (root,stateno!=[120,152]) && (root,stateno!=[4000,4199]) && (root,stateno!=[5000,5999]) && (root,stateno!=[0,40])
+trigger2 = (root,stateno=[102,119])||((root,stateno=[200,799])&&!((root,Anim=[600,699])&&(!root,numExplod(10000)||root,AnimTime=0)))||(root,stateno=[900,999])
+trigger3 = ((root,stateno=[1000,1999])&&!((root,Anim=[1250,1265])&&(!root,numExplod(10000)||root,AnimTime=0)))
+trigger4 = ((root,anim=[40,57])&&root,stateno!=4130)||(root,stateno=[2000,2399])||(root,Anim=[3200,3203])||(root,Anim=[5000,5999])
+flag = invisible
+
+[State 20000,ChangeAnim]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+triggerall = SelfAnimExist(10000+root,anim)&&root,movetype!=H
+trigger1 = (root,Anim=[0,22]) || (root,anim=[100,101]) || (root,Anim=[119,199]) || ((root,Anim=[600,699])&&(!root,numExplod(10000)||root,AnimTime=0)) || (root,Anim=[800,899])
+trigger2 = (root,Anim=[3000,3999]) ||(root,Anim=[2400,2599]) || ((root,Anim=[1000,1999])&&(root,stateno=[3000,3999]))
+trigger3 = (root,anim=[4000,4020])
+trigger4 = (root,stateno=1250&&((root,Anim=[1250,1265])&&(!root,numExplod(10000)||root,AnimTime=0)))
+value = 10000+root, Anim
+elem = root, AnimElemNo(0)
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = root,Anim=[3100,3120]
+value = 13100
+elem = root, AnimElemNo(0)
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = root,stateno=[4100,4120]
+value = 10150+(root,stateno=4110)*1+(root,stateno=4120)*2
+elem = root, AnimElemNo(0)
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = root,stateno=4130
+value = 10044
+elem = root, AnimElemNo(0)
+
+[State 10000]
+type = DestroySelf
+trigger1 = root,var(53)=1
+
+[State 10000,ChangeAnim]
+type = ChangeState
+trigger1 = root,stateno=4120
+value = 14120
+
+[State 10000,ChangeAnim]
+type = ChangeState
+trigger1 = (root,stateno=[120,159])
+value = 10120
+
+[State 10000,ChangeAnim]
+type = ChangeState
+triggerall = SelfAnimExist(10000+root,anim)
+trigger1 = (root,Anim=[5000,5950])
+trigger1 = (root,movetype=H && (root,stateno=[5000,5999]))||root,anim=5120||(root,stateno=[5910,5930])
+value = 15000
+
+;ガード動作
+[Statedef 10120]
+type = A
+movetype = I
+
+[state -2]
+type = sprpriority
+trigger1 = 1
+value = ifelse((root,stateno=[195,4099]),3,ifelse(root,teamside=2||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,0,2))
+
+[state -2]
+type = sprpriority
+trigger1 = root,numpartner
+trigger1 = (root,ID-partner,ID)>0
+value = ifelse((root,stateno=[195,4099]),-1,ifelse((root,teamside=2&&(root,stateno!=[195,4099]))||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,-4,-2))
+
+[State 10000]
+type = Bindtoroot
+trigger1 = 1
+Pos = ifelse(!Root,HitShakeover&&(Root,stateno=150||Root,stateno=152||Root,stateno=154),ifelse(root,time%2=1,1,0),0),0
+facing = 1
+time = 1
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = SelfAnimExist(10000+root,Anim)
+value = 10000+root, Anim
+elem = root, AnimElemNo(0)
+
+[State 10000, Claw]
+type = PlaySnd
+triggerall = root,Time = 1 && (root,var(59)!=5 || (root,var(59)=5 && root,Var(36)>6 && root,var(37)=0)) && root,var(31)>-1 && root,var(11)=0
+trigger1 = root,StateNo = 150
+trigger2 = root,StateNo = 152
+trigger3 = root,StateNo = 154
+value = 3,0+(root,var(31)<15)
+
+[State 10000]
+type = DestroySelf
+trigger1 = root,var(53)=1
+
+[state 0]
+type = Changestate
+triggerall = time>1
+trigger1 = (root,anim!=[120,159])
+trigger2 = (root,stateno!=[120,159])
+value = 10000
+
+;ジャストディフェンス動作
+[Statedef 14120]
+type = A
+movetype = I
+
+[state -2]
+type = sprpriority
+trigger1 = 1
+value = ifelse((root,stateno=[195,4099]),3,ifelse(root,teamside=2||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,0,2))
+
+[state -2]
+type = sprpriority
+trigger1 = root,numpartner
+trigger1 = (root,ID-partner,ID)>0
+value = ifelse((root,stateno=[195,4099]),-1,ifelse((root,teamside=2&&(root,stateno!=[195,4099]))||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,-4,-2))
+
+[State 10000]
+type = Bindtoroot
+trigger1 = 1
+Pos = ifelse(!Root,HitShakeover,ifelse(root,time%2=1,1,0),0),0
+facing = 1
+time = 1
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = SelfAnimExist(10000+root,Anim)
+value = 10000+root, Anim
+elem = root, AnimElemNo(0)
+
+[State 10000]
+type = DestroySelf
+trigger1 = root,var(53)=1
+
+[state 0]
+type = Changestate
+triggerall = time>1
+trigger1 = (root,stateno!=[4120,4130])
+value = 10000
+
+;食らい動作
+[Statedef 15000]
+type = A
+movetype = I
+sprpriority = ifelse(teamside=2,0,1)
+
+[State 10000]
+type = Bindtoroot
+trigger1 = 1
+Pos = ifelse(!Root,HitShakeover&&(Root,stateno=5000||Root,stateno=5010||Root,stateno=5020||Root,stateno=5070||Root,stateno=5080),ifelse(root,time%2=1,1,0),0),0
+facing = 1
+time = 1
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = SelfAnimExist(10000+root,anim)
+value = 10000+root, Anim
+elem = root, AnimElemNo(0)
+
+[state 10000]
+type = SprPriority
+trigger1 = root,movetype!=H
+value = ifelse(teamside=2,0,2)
+
+[State 10000]
+type = DestroySelf
+trigger1 = root,var(53)=1
+
+[state 0]
+type = Changestate
+triggerall = time>1
+trigger1 = (root,anim!=[5000,5950])
+trigger2 = root,movetype=H && (root,stateno!=[0,40]) && (root,stateno!=[5000,5999])
+trigger3 = !SelfAnimExist(20000+root,anim)
+value = 10000
+
+;爪落とす
+[Statedef 18000]
+type = A
+movetype =I
+physics = N
+anim = 18000
+velset = ifelse(prevstateno=19000,vel x,0),ifelse(prevstateno=19000,vel y,0)
+
+[State 18000,PlaySnd]
+type = PlaySnd
+trigger1 = time=0
+value = 3,10
+
+[State -3,varset]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 10000, SprPriority]
+type = SprPriority
+trigger1 = 1
+value = ifelse(anim=18000,4,-2)
+
+[State 180000, PosSet]
+type = PosSet
+trigger1 = prevstateno!=19000
+trigger1 = Time=0
+x = ceil(root,Pos X)
+y = -80+ceil(root,Pos Y)
+
+[State 180000, VelSet]
+type = VelSet
+trigger1 = prevstateno!=19000
+trigger1 = Time=0 && ((FrontEdgeBodyDist >=75 && random >=500) || BackEdgeBodyDist <75)
+x = 0.7
+y = -5.2
+
+[State 180000, VelSet]
+type = VelSet
+trigger1 = prevstateno!=19000
+trigger1 = Time=0 && Vel Y=0;(FrontEdgeBodyDist <70 || (BackEdgeBodyDist >=90 && random <500))
+x = -0.7
+y = -5.2
+
+[State 180000, VelAdd]
+type = VelAdd
+trigger1 = Anim=18000
+y = ifelse(prevstateno=19000,.3,.15)
+
+;zero3風
+[State 180000, VelSet]
+type = null;VelSet
+trigger1 = Vel Y>0 && Pos Y>=0 && Anim=18000 && time<50
+x = ifelse(Vel X >0,1.0,-1.0)
+y = -3.0
+
+[State 20000, VarSet]
+type = Varset
+trigger1 = Time=0 || ((Anim=19002 || Anim=19012) & Animtime=0)
+var(6)=0
+
+[State 20000, VarAdd]
+type = VarAdd
+trigger1 = (Anim=19000 || Anim=19010) && Animtime=0
+var(6)=1
+
+[State 18000]
+type = ChangeAnim
+trigger1 = Anim=18000 && Vel Y>0 && Pos Y >=0 && random<500
+trigger2 = (Anim=19000 || Anim=19002) && animtime=0
+value=19000+(var(6)=4)*2
+
+[State 18000]
+type = ChangeAnim
+trigger1 = Anim=18000 && Vel Y>0 && Pos Y >=0 && Anim!=19000
+trigger2 = (Anim=19010 || Anim=19012) && animtime=0
+value=19010+(var(6)=4)*2
+
+[State 180000, StatetypeSet]
+type = StatetypeSet
+trigger1 = (Anim=19000 || Anim=19010 || Anim=19002 || Anim=19012)
+Statetype = S
+physics = S
+
+[State 180000, VelSet]
+type = VelSet
+trigger1 = (Anim=19000 || Anim=19010 || Anim=19002 || Anim=19012)
+x = 0
+y = 0
+
+[State 180000, PosSet]
+type = PosSet
+trigger1 = (Anim=19000 || Anim=19010 || Anim=19002 || Anim=19012)
+y = 0
+
+[State 18000,Turn]
+type = Turn
+trigger1 = root,Facing=1 && Time=0
+
+[State 18000]
+type = parentvarSet
+trigger1 = Anim=19000 && (Pos X!=[-2,2])
+var(53)=ceil(Pos X)
+
+[State 18000]
+type = parentvarSet
+triggerall = Anim!=18000
+trigger1 = (rootDist X=[-15,20]) && root,Statetype!=A
+trigger1 = (root,movetype=I && root,StateNo<40) || (root,StateNo=[100,110])
+var(53)=0
+
+[State 18000,PlaySnd]
+type = PlaySnd
+trigger1 = root,var(53)=0
+value = 3,10
+
+[State 20000]
+type = DestroySelf
+trigger1 = root,var(53)=0
+
+[State 18000]
+type = null;ChangeState
+triggerall = Anim!=18000
+trigger1 = (rootDist X=[5,40]) && root,Statetype!=A
+trigger1 = (root,movetype=I && root,StateNo<40)
+value = 10000
+
+;爪外し
+[Statedef 19000]
+type = A
+movetype =I
+physics = N
+anim = 18000
+velset = 1.5+root,var(1)*.75,-5.2
+
+[State 18000,PlaySnd]
+type = PlaySnd
+trigger1 = time=0
+value = 3,10
+
+[State -3,varset]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[state 18000]
+type = ChangeState
+trigger1 = time=0
+value = 18000
+
+;~~~~~~~~~~~~~~~~~~仮面(Mask)~~~~~~~~~~~~~~~~~~~~~~~
+[Statedef 20000]
+type = A
+movetype = I
+
+[State -3,varset]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 20000, SprPriority]
+type = SprPriority
+triggerall = !(root,movetype=H && (root,stateno!=[150,155]) && (root,stateno!=[5000,5999]))
+trigger1 = roundState=2 && enemynear,statetype!=L
+trigger1 = (Root,MoveType=H && root,stateno!=4120 && (root,stateno!=[0,40])) || (teamside=2 && (root,StateNo!=[200,3599]))
+trigger2 = !Root,Alive
+value = 0
+
+[State 20000, SprPriority]
+type = SprPriority
+triggerall = !(root,movetype=H && (root,stateno!=[150,155]) && (root,stateno!=[5000,5999]))
+trigger1 = ((Root,MoveType!=H||root,stateno=4120||(root,stateno=[0,40])) && teamside=1)||(teamside=2 && (root,StateNo=[200,3599]))||enemynear,statetype=L
+trigger2 = (RoundState>2 || roundState<2) && Root,Alive
+value = 2
+
+[state -2]
+type = sprpriority
+trigger1 = 1
+value = ifelse((root,stateno=[195,4099]),3,ifelse(root,teamside=2||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,0,2))
+
+[state -2]
+type = sprpriority
+trigger1 = root,numpartner
+trigger1 = (root,ID-partner,ID)>0
+value = ifelse((root,stateno=[195,4099]),-1,ifelse((root,teamside=2&&(root,stateno!=[195,4099]))||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,-4,-2))
+
+[State 20000]
+type = varset
+trigger1 = 1
+var(1) = 0
+
+[State 20000]
+type = varset
+trigger1 = 1
+var(3) = 0
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && root,vel X>0
+var(1) = abs(ceil(Root,Vel X))
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && enemynear,vel X>0
+var(3) = abs(ceil(enemynear,Vel X))
+
+[State 20000]
+type = BindtoRoot
+trigger1 = 1
+pos = 0,0
+facing = 1
+time = 1
+
+[State 20000]
+type = null;BindtoRoot
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A; && (root,anim=0||root,anim=11)
+pos = 0,0
+facing = 1
+time = 1
+
+[State 20000]
+type = BindtoRoot
+trigger1 = Root,P2bodydist X<=0 && P2statetype!=A && (abs(var(0)-Root,pos X)<var(1)||abs(var(2)-enemynear,pos X)<var(3)) && backedgebodydist>2; && (root,anim=0||root,anim=11)
+pos = -floor(var(1)/(1.35-ifelse(enemynear,backedgebodydist<=2,ifelse(var(1)>6,.6,.4),0)))+(abs(var(2)-enemynear,pos X)>=var(3))-(backedgebodydist>2)*ceil(var(3)/2),0
+facing = 1
+time = 1
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && abs(root,vel X)>0
+var(0) = ceil(Root,Pos X)
+
+[State 20000]
+type = varset
+trigger1 = Root,P2bodydist X<0 && P2statetype!=A && abs(enemynear,vel X)>0
+var(2) = ceil(enemynear,Pos X)
+
+[State 20000,ChangeAnim]
+type = AssertSpecial
+trigger1 = root,movetype=H && (root,stateno!=[120,152]) && (root,stateno!=[4000,4199]) && (root,stateno!=[5000,5999]) && (root,stateno!=[0,40])
+trigger2 = (root,stateno=[102,119])||((root,stateno=[200,799])&&!((root,Anim=[600,699])&&(!root,numExplod(20000)||root,AnimTime=0)))||(root,stateno=[900,999])
+trigger3 = ((root,stateno=[1000,1999])&&!((root,Anim=[1250,1265])&&(!root,numExplod(10000)||root,AnimTime=0)))
+trigger4 = ((root,anim=[40,57])&&root,stateno!=4130)||(root,stateno=[2000,2399])||(root,Anim=[3200,3203])||(root,Anim=[5000,5999])
+flag = invisible
+
+[State 20000,ChangeAnim]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+
+[State 20000,ChangeAnim]
+type = ChangeAnim
+triggerall = SelfAnimExist(20000+root,anim)&&root,movetype!=H
+trigger1 = (root,Anim=[0,22]) || (root,anim=[100,101]) || (root,Anim=[119,199]) || ((root,Anim=[600,699])&&(!root,numExplod(20000)||root,animtime=0)) || (root,Anim=[800,899])
+trigger2 = (root,Anim=[3000,3999]) ||(root,Anim=[2400,2599]) || ((root,Anim=[1000,1999])&&(root,stateno=[3000,3999]))
+trigger3 = (root,anim=[4000,4020])
+trigger4 = (root,stateno=1250&&((root,Anim=[1250,1260])&&(!root,numExplod(10000)||root,AnimTime=0)))
+value = 20000+root, Anim
+elem = root, AnimElemNo(0)
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = root,Anim=[3100,3120]
+value = 23100
+elem = root, AnimElemNo(0)
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = root,stateno=[4100,4120]
+value = 20150+(root,stateno=4110)*1+(root,stateno=4120)*2
+elem = root, AnimElemNo(0)
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = root,stateno=4130
+value = 20044
+elem = root, AnimElemNo(0)
+
+[State 20000]
+type = DestroySelf
+trigger1 = root,var(54)=1
+
+[State 10000,ChangeAnim]
+type = ChangeState
+trigger1 = root,stateno=4120
+value = 24120
+
+[State 10000,ChangeAnim]
+type = ChangeState
+trigger1 = (root,stateno=[120,159])
+value = 20120
+
+[State 10000,ChangeAnim]
+type = ChangeState
+triggerall = SelfAnimExist(20000+root,anim)
+trigger1 = (root,Anim=[5000,5950])
+trigger1 = (root,movetype=H && (root,stateno=[5000,5999]))||root,anim=5120||(root,stateno=[5910,5930])
+value = 25000
+
+;ガード動作
+[Statedef 20120]
+type = A
+movetype = I
+
+[state -2]
+type = sprpriority
+trigger1 = 1
+value = ifelse((root,stateno=[195,4099]),3,ifelse(root,teamside=2||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,0,2))
+
+[state -2]
+type = sprpriority
+trigger1 = root,numpartner
+trigger1 = (root,ID-partner,ID)>0
+value = ifelse((root,stateno=[195,4099]),-1,ifelse((root,teamside=2&&(root,stateno!=[195,4099]))||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,-4,-2))
+
+[State 10000]
+type = Bindtoroot
+trigger1 = 1
+Pos = ifelse(!Root,HitShakeover&&(Root,stateno=150||Root,stateno=152||Root,stateno=154),ifelse(root,time%2=1,1,0),0),0
+facing = 1
+time = 1
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = (root,anim=[120,159])
+value = 20000+root, Anim
+elem = root, AnimElemNo(0)
+
+[State 10000]
+type = DestroySelf
+trigger1 = root,var(54)=1
+
+[state 0]
+type = Changestate
+triggerall = time>1
+trigger1 = (root,anim!=[120,159])
+trigger2 = (root,stateno!=[120,159])
+value = 20000
+
+;ジャストディフェンス動作
+[Statedef 24120]
+type = A
+movetype = I
+
+[state -2]
+type = sprpriority
+trigger1 = 1
+value = ifelse((root,stateno=[195,4099]),3,ifelse(root,teamside=2||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,0,2))
+
+[state -2]
+type = sprpriority
+trigger1 = root,numpartner
+trigger1 = (root,ID-partner,ID)>0
+value = ifelse((root,stateno=[195,4099]),-1,ifelse((root,teamside=2&&(root,stateno!=[195,4099]))||(root,movetype=H&&(root,stateno!=[0,40]))||(root,stateno=[5910,5950])||root,stateno=4120,-4,-2))
+
+[State 10000]
+type = Bindtoroot
+trigger1 = 1
+Pos = ifelse(!Root,HitShakeover,ifelse(root,time%2=1,1,0),0),0
+facing = 1
+time = 1
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = 1
+value = 20000+root, Anim
+elem = root, AnimElemNo(0)
+
+[State 10000]
+type = DestroySelf
+trigger1 = root,var(54)=1
+
+[state 0]
+type = Changestate
+triggerall = time>1
+trigger1 = (root,stateno!=[4120,4130])
+value = 20000
+
+;食らい動作
+[Statedef 25000]
+type = A
+movetype = I
+sprpriority = ifelse(teamside=2,0,1)
+
+[State 10000]
+type = Bindtoroot
+trigger1 = 1
+Pos = ifelse(!Root,HitShakeover&&(Root,stateno=5000||Root,stateno=5010||Root,stateno=5020||Root,stateno=5070||Root,stateno=5080),ifelse(root,time%2=1,1,0),0),0
+facing = 1
+time = 1
+
+[State 10000,ChangeAnim]
+type = ChangeAnim
+trigger1 = SelfAnimExist(20000+root,anim)
+value = 20000+root, Anim
+elem = root, AnimElemNo(0)
+
+[state 10000]
+type = SprPriority
+trigger1 = root,movetype!=H
+value = ifelse(teamside=2,0,2)
+
+[State 10000]
+type = DestroySelf
+trigger1 = root,var(54)=1
+
+[state 0]
+type = Changestate
+triggerall = time>1
+trigger1 = (root,anim!=[5000,5950])
+trigger2 = root,movetype=H && (root,stateno!=[0,40]) && (root,stateno!=[5000,5999])
+trigger3 = !SelfAnimExist(20000+root,anim)
+value = 20000
+
+
+;仮面落とす
+[Statedef 28000]
+type = A
+movetype = I
+physics = N
+anim=28000
+velset = ifelse(prevstateno=29000,vel x,0),ifelse(prevstateno=29000,vel y,0)
+
+[State 28000,PlaySnd]
+type = PlaySnd
+trigger1 = time=0
+value = 100,1
+
+[State 10000, SprPriority]
+type = SprPriority
+trigger1 = 1
+value = ifelse(anim=28000,4,-2)
+
+[State -3,varset]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 180000, PosSet]
+type = PosSet
+trigger1 = prevstateno!=29000
+trigger1 = Time=0
+x = ceil(root,Pos X)
+y = -80+ceil(root,Pos Y)
+
+[State 180000, VelSet]
+type = VelSet
+trigger1 = prevstateno!=29000
+trigger1 = Time=0 && ((FrontEdgeBodyDist >=75 && random >=500) || BackEdgeBodyDist <75)
+x = 0.7
+y = -5.2
+
+[State 180000, VelSet]
+type = VelSet
+trigger1 = prevstateno!=29000
+trigger1 = Time=0 && Vel Y=0;(FrontEdgeBodyDist <70 || (BackEdgeBodyDist >=70 && random <500))
+x = -0.7
+y = -5.2
+
+[State 180000, VelAdd]
+type = VelAdd
+trigger1 = Anim=28000
+y = ifelse(prevstateno=29000,.3,.15)
+
+;zero3風
+[State 180000, VelSet]
+type = null;VelSet
+trigger1 = Vel Y>0 && Pos Y>=0 && Anim=28000 && time<60
+x = ifelse(Vel X >0,1.0,-1.5)
+y = -3.0
+
+[State 18000]
+type = ChangeAnim
+trigger1 = Anim=28000 && Vel Y>0 && Pos Y >=0
+value=29000
+
+[State 180000, StatetypeSet]
+type = StatetypeSet
+trigger1 = Anim=29000
+Statetype = S
+physics = S
+
+[State 180000, VelSet]
+type = VelSet
+trigger1 = Anim=29000
+x = 0
+y = 0
+
+[State 180000, PosSet]
+type = PosSet
+trigger1 = Anim=29000
+y = 0
+
+[State 18000,Turn]
+type = Turn
+trigger1 = Root,Facing=1 && Time=0
+
+[State 18000]
+type = parentvarSet
+trigger1 = Anim=29000 && (Pos X!=[-2,2])
+var(54)=ceil(Pos X)
+
+[State 18000]
+type = parentvarSet
+triggerall = Anim!=28000
+trigger1 = (RootDist X=[5,40]) && Root,Statetype!=A
+trigger1 = (root,movetype=I && root,StateNo<40) || (root,StateNo=[100,110])
+var(54)=0
+
+[State 18000,PlaySnd]
+type = PlaySnd
+trigger1 = root,var(54)=0
+value = 100,1
+
+[State 20000]
+type = DestroySelf
+trigger1 = root,var(54)=0
+
+[State 18000]
+type = null;ChangeState
+triggerall = Anim!=28000
+trigger1 = (RootDist X=[5,40]) && Root,Statetype!=A
+trigger1 = (root,movetype=I && root,StateNo<40)
+value = 20000
+
+;仮面外し
+[Statedef 29000]
+type = A
+movetype = I
+physics = N
+anim=28000
+velset = 1.0,-7.0-root,var(1)
+
+[State 10000, SprPriority]
+type = SprPriority
+trigger1 = 1
+value = ifelse(anim=28000,4,-2)
+
+[State -3,varset]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[state 29000]
+type = Changestate
+trigger1 = time=0
+value = 28000
+;========================<HIT WALL>=============================
+;---Hit Pause---
+[Statedef 1125]
+type=A
+movetype=H
+physics=N
+velset=0,0
+[State 1125, anim]
+type=changeanim
+trigger1= 1
+value=5012
+[State 1125, end]
+type=changestate
+trigger1= hitshakeover
+value=1126
+
+
+;---Falling---
+[Statedef 1126]
+type=A
+movetype=H
+physics=N
+
+[State 1126, vel]
+type=hitvelset
+trigger1= !time
+x=1
+y=1
+[State 1126, grav]
+type=veladd
+trigger1= 1
+y=gethitvar(yaccel)
+
+[State 1126, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 1126, push]
+type=playerpush
+trigger1= 1
+value=0
+
+[State 1126, anim]
+type=changeanim
+trigger1= !time
+value=5030
+
+[State 1126, bounce]
+type=changestate
+trigger1= backedgebodydist<=10 || frontedgebodydist<=10
+value=1127
+[State 1126, end]
+type=selfstate
+trigger1= vel y>0 && pos y>=0
+value=5100
+
+
+;---Hitting Wall---
+[Statedef 1127]
+type=A
+movetype=H
+physics=N
+
+[State 1127, turn]
+type=turn
+trigger1= !time
+trigger1= frontedgedist<backedgedist
+
+
+[State 1127, pos]
+type=posset
+trigger1= 1
+x=-160*facing
+[State 1127, pos]
+type=posfreeze
+trigger1= 1
+x=1
+y=1
+
+[State 1127, EnvShake]
+type = EnvShake
+trigger1 = !time
+time =14
+ampl = 6
+ignorehitpause =1
+
+[State 1127, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 1127, push]
+type=playerpush
+trigger1= 1
+value=1
+
+[State 1127, anim]
+type=changeanim
+trigger1= 1
+value=5000
+
+[State 1127, end]
+type=changestate
+trigger1= time>=4
+value=1128
+
+
+;---Falling---
+[Statedef 1128]
+type=A
+movetype=H
+physics=N
+
+[State 1128, turn]
+type=turn
+trigger1= !time
+
+[State 1128, grav]
+type=veladd
+trigger1= 1
+y=.5
+[State 1128, vel]
+type=velset
+trigger1= !time
+x=-2.5
+y=-9
+
+[State 1128, anim]
+type=changeanim
+trigger1= !time
+value=ifelse(selfanimexist(5051),5051,5030)
+[State 1128, anim]
+type=changeanim
+trigger1= anim=5030 && !animtime
+value=5050
+[State 1128, Anim]
+type=changeanim
+trigger1= vel y>-3 && anim=5051 &&selfanimexist(5061)
+value=5061
+[State 1128, Anim]
+type=changeanim
+trigger1= vel y>-3 && anim=5051 &&!selfanimexist(5061)&&selfanimexist(5060)
+value=5060
+[State 1128, Anim]
+type=changeanim
+trigger1= vel y>-3 && anim=5051&&!selfanimexist(5060) &&!selfanimexist(5061)&&selfanimexist(5062)
+value=5062
+[State 1128, Anim]
+type=changeanim2
+trigger1= vel y>-3 && anim=5051&&!selfanimexist(5060) &&!selfanimexist(5061)&&!selfanimexist(5062)
+value=5061
+
+[State 1128, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,0
+[State 1128, push]
+type=playerpush
+trigger1= 1
+value=0
+
+[State 1128, end]
+type=selfstate
+trigger1= vel y>0 && pos y>=0
+value=5100
+;---------------------------------------------------------------------------
+[Statedef 1430]
+type    = A
+movetype= H
+physics = N
+velset=-1,-9
+ctrl = 0
+
+[State 0, veladd]
+type = VelAdd
+trigger1 = 1
+y = GetHitVar(yaccel)
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 4020
+[State 0, ChangeState]
+type = SelfState
+trigger1 = Pos Y >= 0 && Vel Y > 0
+value = 5100
+ctrl = 0
+;---------------------------------------------------------------------------
+[Statedef 1431]
+type    = A
+movetype= H
+physics = N
+velset=-1,-10
+ctrl = 0
+
+[State 0, veladd]
+type = VelAdd
+trigger1 = 1
+y = GetHitVar(yaccel)
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 4020
+[State 0, ChangeState]
+type = SelfState
+trigger1 = Pos Y >= 0 && Vel Y > 0
+value = 5100
+ctrl = 0
+;----------------------------------------------------------------
+;Bakushin Target
+[Statedef 1620]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+ctrl=0
+
+[State 1620, anim]
+type = ChangeAnim2
+Trigger1 = !time
+value = 1620
+[State 1620, PosSet]
+type = PosSet
+trigger1 =1
+y = 0
+ignorehitpause =1
+;----------------------------------------------------------------
+;Bakushin Target
+[Statedef 1621]
+type    = A
+movetype= H
+physics = N
+velset = -6,-5
+ctrl=0
+
+[State 1620, Selfstate]
+type = selfstate
+Trigger1 = !time
+value = 5050
+[State 1620, Posadd]
+type = posadd
+trigger1 = !time
+y = -10
+;---------------------------------------------------------------------------
+[Statedef 3055]
+type    = A
+movetype= H
+physics = N
+ctrl = 0
+
+[State 0, veladd]
+type = VelAdd
+trigger1 = 1
+y = GetHitVar(yaccel)
+[State 0, HitBy]
+type = HitBy
+trigger1 =1
+value = SCA,HA,HP
+time = 1
+ignorehitpause =1
+[State 0, hitvelset]
+type = HitVelSet
+trigger1 = Time = 0
+x = 1
+y = 1
+[State 0,Bound]
+type = ScreenBound
+trigger1 = 1
+value = 1
+movecamera = 1,0
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3055
+[State 0, ChangeState]
+type = SelfState
+trigger1 = Pos Y >= 0 && Vel Y > 0
+value = 5100
+ctrl = 0
+;---------------------------------------------------------------------------
+[Statedef 3420]
+type    = A
+movetype= H
+physics = N
+juggle = 1
+ctrl = 0
+velset = 0,0
+sprpriority = 1
+facep2 = 1
+
+[State 0, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3420  ;<=======custom animation
+[State 0,Bound]
+type = ScreenBound
+trigger1 = animelemtime(3)<0
+value = 0
+movecamera =0,0
+ignorehitpause=1
+[State 0, SelfState]
+type = SelfState
+trigger1=time<10
+trigger1=!gethitvar(isbound)
+value = 5050
+;-----------------------------------------------------------------
+[Statedef 3421]
+type=S
+physics=S
+movetype=H
+ctrl=0
+velset=0,0
+sprpriority=1
+
+[State 3421, nhb]
+type=nothitby
+trigger1= 1
+time=1
+value=SCA
+[State 3421, anim]
+type=changeanim2
+trigger1= !time
+value=3421
+
+[State 3421, stop]
+type=posset
+trigger1= 1
+y=0
+[State 3421, stop]
+type=velset
+trigger1= 1
+y=0
+[State 3421, dust]
+type=gamemakeanim
+trigger1= animelem=7
+value=60
+pos=0,0
+under=sysvar(1)<=14
+[State 3421, snd]
+type=playsnd
+trigger1= animelem=7
+value=f7,0
+
+[State 3421, Spark]
+type=Explod
+trigger1=time=5
+anim=F72
+pos=0, floor(screenpos y)-50
+postype = back
+sprpriority =4
+[State 4061, fx]
+type=explod
+trigger1= time=2
+anim=f71
+pos=0,floor(screenpos y)-50
+postype=back
+sprpriority=3
+[State 4061, fx]
+type=explod
+trigger1= !time
+anim=f70
+pos=0,floor(screenpos y)-50
+postype=back
+sprpriority=2
+
+[State 3421, end]
+type=selfstate
+trigger1= time>=110
+value=ifelse(alive,5120,5150)
+;---------------------------------------------------------------------------
+[Statedef 3520]
+type    = S
+movetype= H
+physics = S
+juggle = 1
+ctrl = 0
+velset = 0,0
+sprpriority = 1
+facep2 = 1
+
+[State 0, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+[State 0, stop]
+type=posset
+trigger1= 1
+y=0
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 3520  ;<=======custom animation
+[State 0, SelfState]
+type = SelfState
+trigger1=!animtime
+value=0
+ctrl=1
+
+[Statedef 3521]
+type = A
+movetype = H
+physics = N
+velset = -6,-4
+
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1=!time
+value = 3521
+[State 0, VelAdd]
+type = VelAdd
+trigger1 = 1
+y = .4
+[State 0, ChangeState]
+type = Changestate
+trigger1 = pos y > -vel y
+value = 3522
+
+[Statedef 3522]
+type = A
+movetype = H
+physics = N
+velset = -3,-2
+
+[State 0, PosAdd]
+type = PosAdd
+trigger1 =!time
+y = (const(size.mid.pos.y)-10)
+[State 0, VelAdd]
+type = VelAdd
+trigger1 = 1
+y = .45
+[State 0, Snd]
+type = PlaySnd
+trigger1=!time
+value = F7
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1=!time
+value = 3522
+
+[State 0, SelfState]
+type = SelfState
+triggerall=time>5
+trigger1 = pos y > -vel y
+value = 5100
+
+;---------------------------------------------------------------------------
+;Off screen Knockback
+[Statedef 4020]
+type    = A
+movetype= H
+physics = N
+juggle = 1
+ctrl = 0
+velset=-15,-3
+poweradd = 0
+sprpriority = 1
+facep2 = 1
+
+[State 0, VA]
+type = VelAdd
+trigger1 =animelemtime(2)>=0
+y =.45
+
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 4020  ;<=======custom animation
+
+[State 0, ChangeState]
+type = changeState
+trigger1 = Pos Y >= 0 && Vel Y > 0
+value = 4021
+ctrl = 0
+;---------------------------------------------------------------------------
+[Statedef 4021]
+type    = L
+movetype= H
+physics = N
+velset = 0,0
+facep2=1
+
+[State 4021, HitGround]
+type = PosSet
+trigger1 = 1
+y = 0
+[State 4021, 2]
+type = GameMakeAnim
+trigger1 = Time = 0
+trigger1 = !SysVar(0)
+value = 60 + (sysvar(1) > 5) + (sysvar(1) > 14)
+pos = 0, 0
+under = sysvar(1) <= 14
+[State 4021, EnvShake]
+type = EnvShake
+trigger1 =time=0
+time=18
+ampl=6
+[State 4021, BounceGround]
+type = ChangeAnim2
+trigger1 = !Time
+value = 4021
+
+[State 4021, finish]
+type = SelfState
+trigger1 = time>=100
+value = Ifelse(Alive,5120,5150)
+;---------------------------------------------------------------------------
+[Statedef 4058]
+type    = S
+movetype= H
+physics = S
+juggle = 1
+ctrl = 0
+velset = 0,0
+sprpriority = 0
+facep2 = 1
+
+[State 0, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+
+[State 0, PosSet]
+type = PosSet
+trigger1 = !time
+y = 0
+[State 0, HitBy]
+type = HitBy
+trigger1 =1
+value = SCA,HA,HP,HT
+time = 1
+ignorehitpause =1
+
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 4058  ;<=======custom animation
+
+[State 0, SelfState]
+type = SelfState
+trigger1 = animtime=0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+[Statedef 4059]
+type    = S
+movetype= H
+physics = S
+juggle = 1
+ctrl = 0
+velset = 0,0
+sprpriority = 0
+facep2 = 1
+
+[State 0, HitFallSet]
+type = HitFallSet
+trigger1 = 1
+value = 0
+[State 0, PosSet]
+type = PosSet
+trigger1 = !time
+y = 0
+[State 0, HitBy]
+type = HitBy
+trigger1 =1
+value = SCA,HA,HP,HT
+time = 1
+ignorehitpause =1
+[State 0, hitvelset]
+type = HitVelSet
+trigger1 = !time
+x = 1
+[State 0, VelMul]
+type = VelMul
+trigger1 = time>10
+x = .9
+[State 0, VelSet]
+type = VelSet
+trigger1 =time>20 
+x = 0
+
+[State 0, ChangeAnim2]
+type = ChangeAnim2
+trigger1 = !time
+value = 4059  ;<=======custom animation
+[State 0, SelfState]
+type = SelfState
+trigger1 = animtime=0
+value = 0
+ctrl = 1
+;---------------------------------------------------------------------------
+;Wall-knockdown
+[Statedef 4060]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+sprpriority = 1
+
+[State 4061, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 4060, anim]
+type=changeanim
+trigger1= !time&&selfanimexist(5035)
+value=5035
+[State 4060, anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5035)&&selfanimexist(5030)
+value=5030
+[State 4060, anim]
+type=changeanim2
+trigger1= !time&&!selfanimexist(5035)&&!selfanimexist(5030)
+value=4020
+[State 4060, Turn]
+type = Turn
+trigger1 = Time = 0
+trigger1 = P2Dist X < 0
+
+[State 4060, VelSet]
+type = VelSet
+trigger1 = !time
+x = -8
+y = Ifelse(BackEdgeBodyDist<=35,-8,-4)
+
+[State 4060, ChangeState]
+type = ChangeState
+triggerall = AnimElem = 1, > 0
+trigger1 = BackEdgeBodyDist <= 5
+trigger2 = Time >= 60
+value = 4061
+;---------------------------------------------------------------------------
+[Statedef 4061]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+sprpriority = 1
+
+[State 4061, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 4061, push]
+type=playerpush
+trigger1= 1
+value=1
+[State 4061, pos]
+type=posset
+trigger1= 1
+x=-160*facing
+[State 4061, pos]
+type=posfreeze
+trigger1= 1
+x=1
+y=1
+
+[State 4061, Anim]
+type=changeanim
+trigger1= !time&&selfanimexist(5051)
+value=5051
+[State 4061, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5051)&&selfanimexist(5050)
+value=5050
+[State 4060, anim]
+type=changeanim2
+trigger1= !time&&!selfanimexist(5051)&&!selfanimexist(5050)
+value=4020
+elem=3
+[State 4061, EnvShake]
+type = EnvShake
+trigger1 = !Time
+time = 14
+ampl = 6
+
+[State 4061, ChangeState]
+type = ChangeState
+trigger1=time=10
+value = 4062
+;---------------------------------------------------------------------------
+[Statedef 4062]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+sprpriority = 1
+
+[State 0, Turn]
+type = Turn
+trigger1 =!time
+[State 4062, screen]
+type=screenbound
+trigger1= 1
+value=1
+movecamera=0,1
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&selfanimexist(5061)
+value=5061
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5061)&&selfanimexist(5062)
+value=5062
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5061)&&!selfanimexist(5062)&&selfanimexist(5070)
+value=5070
+[State 4062, Anim]
+type=changeanim
+trigger1= !time&&!selfanimexist(5061)&&!selfanimexist(5062)&&!selfanimexist(5070)&&selfanimexist(5050)
+value=5050
+[State 4060, anim]
+type=changeanim2
+trigger1= !time&&!selfanimexist(5061)&&!selfanimexist(5062)&&!selfanimexist(5070)&&!selfanimexist(5050)
+value=4020
+elem=4
+[State 4062, VelSet]
+type = VelSet
+trigger1 = AnimElem = 1
+x = -2
+y = -2
+
+[State 4062, VelAdd]
+type = VelAdd
+Trigger1 = 1
+y = .45
+
+[State 4062, SelfState]
+type = SelfState
+trigger1 = Pos Y >= 0&&Vel Y > 0
+value = 5100
+;---------------------------------------------------------------------------
+;Custom-ceiling bounce
+[Statedef 4065]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+sprpriority = 1
+facep2=1
+
+[State 4065, anim2]
+type=changeanim2
+trigger1= !time
+value=4065
+[State 4065, VelSet]
+type = VelSet
+trigger1 =!time
+x = -6
+y = -10
+
+[State 4065, ScreenBound]
+type = ScreenBound
+trigger1 =1
+value = 1
+movecamera = 1,0
+
+[State 4060, ChangeState]
+type = ChangeState
+trigger1 = ceil(pos y<=-145)
+trigger2 = Time=50
+value = 4066
+

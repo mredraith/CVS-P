@@ -127,3 +127,71 @@ triggerall = StateType = a
 triggerall = ctrl = 1
 trigger1 = Command = "holddown"
 y = 0.05
+
+[State +1, Roman Cancel - Change State]
+type = ChangeState
+trigger1 = movecontact
+trigger1 = power >= 1000
+trigger1 = command = "c" && command = "z"
+value = 9087
+ctrl = 0
+
+[Statedef 9087]
+type = S
+physics = S
+movetype = I
+anim = ifelse(statetype != a, 9087, 9088)
+velset = 0, 0
+ctrl = 0
+sprpriority = 2
+poweradd = -1000
+facep2 = 1
+
+[State 9087, HB]
+type = hitby
+trigger1 = 1
+value = SCA, AT
+time = 1
+[State 9087, Stop]
+type = posfreeze
+trigger1 = statetype != a
+value = 1
+
+[State 9087, Pause]
+type = pause
+trigger1 = !time
+time = 20
+movetime = 20
+endcmdbuftime = 20
+pausebg = 0
+[State 9087, Pause]
+type = pause
+trigger1 = !time && numenemy
+trigger1 = (enemynear, movehit = 1)
+time = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpausetime), 0)
+movetime = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpausetime), 0)
+endcmdbuftime = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpausetime), 0)
+pausebg = 0
+
+[State 9087, Snd]
+type = playsnd
+trigger1 = !time
+value = 3 + (var(1) = 2) * 10, 6 -(var(1) = 2) * 3
+channel = 0
+
+[State 9087, No walking]
+type = assertspecial
+trigger1 = 1
+flag = nowalk
+
+[State 9087, Roman Cancel - Darken]
+type = BGPalFX
+trigger1 = !time
+time = 20
+mul = 64,64,64
+
+[State 9087, End]
+type = changestate
+trigger1 = !animtime
+value = 0
+ctrl = 1

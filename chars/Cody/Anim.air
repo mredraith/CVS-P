@@ -2248,8 +2248,26 @@ Clsn2Default: 2
 120,1, 0,0, 10
 120,0, 0,0, 3
 
+;Standing Parry
+[Begin Action 9087]
+Clsn2Default: 2
+  Clsn1[0] = -25, -89, 25, 1
+  Clsn1[1] = -4, -102, 23, -82
+120,0, 0,0, 2
+120,1, 0,0, 10
+120,0, 0,0, 3
+
 ;Standing Parry (Knife)
 [Begin Action 10760]
+Clsn2Default: 2
+  Clsn1[0] = -25, -89, 25, 1
+  Clsn1[1] = -4, -102, 23, -82
+10120,0, 0,0, 2
+10120,1, 0,0, 10
+10120,0, 0,0, 3
+
+;Standing Parry (Knife)
+[Begin Action 109087]
 Clsn2Default: 2
   Clsn1[0] = -25, -89, 25, 1
   Clsn1[1] = -4, -102, 23, -82
@@ -2284,8 +2302,26 @@ Clsn2Default: 2
 122,1, 8,0, 10
 122,0, 0,0, 3
 
+;Jumping Parry
+[Begin Action 9088]
+Clsn2Default: 2
+  Clsn2[0] = -18, -107, 25, -46
+  Clsn2[1] = -4, -117, 24, -94
+122,0, 0,0, 2
+122,1, 8,0, 10
+122,0, 0,0, 3
+
 ;Jumping Parry (Knife)
 [Begin Action 10762]
+Clsn2Default: 2
+  Clsn2[0] = -18, -107, 25, -46
+  Clsn2[1] = -4, -117, 24, -94
+10122,0, 0,0, 2
+10122,1, 8,0, 10
+10122,0, 0,0, 3
+
+;Jumping Parry (Knife)
+[Begin Action 109088]
 Clsn2Default: 2
   Clsn2[0] = -18, -107, 25, -46
   Clsn2[1] = -4, -117, 24, -94
