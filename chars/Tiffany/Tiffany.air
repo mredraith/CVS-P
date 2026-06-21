@@ -1812,6 +1812,15 @@ Clsn2Default: 2
 4000,1, 0,0, 10
 4000,0, 0,0, 2
 
+; Parry Stand
+[Begin Action 9087]
+Clsn2Default: 2
+  Clsn2[0] = -7, -97, 16, -74
+  Clsn2[1] = -18, -79, 24, 0
+4000,0, 0,0, 2
+4000,1, 0,0, 10
+4000,0, 0,0, 2
+
 ; Parry Crouch
 [Begin Action 761]
 Clsn2Default: 2
@@ -1823,6 +1832,15 @@ Clsn2Default: 2
 
 ;Parry Air
 [Begin Action 762]
+Clsn2Default: 2
+  Clsn2[0] = -14, -91, 25, -28
+  Clsn2[1] = -2, -105, 18, -85
+4010,0, 0,0, 2
+4010,1, 0,0, 10
+4010,0, 0,0, 2
+
+;Parry Air
+[Begin Action 9088]
 Clsn2Default: 2
   Clsn2[0] = -14, -91, 25, -28
   Clsn2[1] = -2, -105, 18, -85

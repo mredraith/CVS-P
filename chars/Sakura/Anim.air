@@ -1890,6 +1890,17 @@ Clsn2Default: 3
 
 
 ;
+[Begin Action 9087]
+Clsn2Default: 3
+  Clsn2[0] = -13, -87, 11, -63
+  Clsn2[1] = -20, -74, 20, -23
+  Clsn2[2] = -26, -32, 26, 0
+700,0, 0,0, 2
+700,1, 0,0, 10
+700,0, 0,0, 3
+
+
+;
 [Begin Action 701]
 Clsn2Default: 1
   Clsn2[0] = -16, -52, 30, 0
@@ -1900,6 +1911,18 @@ Clsn2Default: 1
 
 ;
 [Begin Action 702]
+Clsn2Default: 1
+  Clsn2[0] = -16, -92, 20, -32
+702,0, 0,0, 2
+702,1, 0,0, 10
+41,6, 0,0, 3
+Loopstart
+41,7, 0,0, 3
+41,8, 0,0, 3
+
+
+;
+[Begin Action 9088]
 Clsn2Default: 1
   Clsn2[0] = -16, -92, 20, -32
 702,0, 0,0, 2
