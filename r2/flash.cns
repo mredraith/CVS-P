@@ -133,14 +133,24 @@ type = ChangeState
 trigger1 = movecontact
 trigger1 = power >= 1000
 trigger1 = command = "c" && command = "z"
+trigger1 = statetype != a
 value = 9087
+ctrl = 0
+
+[State +1, Roman Cancel - Change State]
+type = ChangeState
+trigger1 = movecontact
+trigger1 = power >= 1000
+trigger1 = command = "c" && command = "z"
+trigger1 = statetype = a
+value = 9088
 ctrl = 0
 
 [Statedef 9087]
 type = S
 physics = S
 movetype = I
-anim = ifelse(statetype != a, 9087, 9088)
+anim = 9087
 velset = 0, 0
 ctrl = 0
 sprpriority = 2
@@ -154,7 +164,7 @@ value = SCA, AT
 time = 1
 [State 9087, Stop]
 type = posfreeze
-trigger1 = statetype != a
+trigger1 = 1
 value = 1
 
 [State 9087, Pause]
@@ -173,11 +183,32 @@ movetime = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpauset
 endcmdbuftime = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpausetime), 0)
 pausebg = 0
 
+[State 0, Explod]
+type = Explod
+trigger1 = !time
+anim = F50
+pos = 0,-50
+postype = P1  ;P2, Front, Back, Left, Right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,0
+accel = 0,0
+random = 0,0
+removetime = -2
+supermovetime = 20
+pausemovetime = 20
+scale = 1.5,1.5
+sprpriority = 0
+ontop = 1
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 1
+
 [State 9087, Snd]
 type = playsnd
 trigger1 = !time
-value = 3 + (var(1) = 2) * 10, 6 -(var(1) = 2) * 3
-channel = 0
+value = F35,0
 
 [State 9087, No walking]
 type = assertspecial
@@ -192,6 +223,86 @@ mul = 64,64,64
 
 [State 9087, End]
 type = changestate
-trigger1 = !animtime
+trigger1 = time > 20 || !animtime
+value = 0
+ctrl = 1
+
+[Statedef 9088]
+type = A
+physics = A
+movetype = I
+anim = 9088
+ctrl = 0
+sprpriority = 2
+poweradd = -1000
+facep2 = 1
+
+[State 9088, HB]
+type = hitby
+trigger1 = 1
+value = SCA, AT
+time = 1
+[State 9088, Stop]
+type = posfreeze
+trigger1 = Time = [0,20]
+value = 1
+
+[State 9088, Pause]
+type = pause
+trigger1 = !time
+time = 20
+movetime = 20
+endcmdbuftime = 20
+pausebg = 0
+[State 9088, Pause]
+type = pause
+trigger1 = !time && numenemy
+trigger1 = (enemynear, movehit = 1)
+time = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpausetime), 0)
+movetime = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpausetime), 0)
+endcmdbuftime = ifelse((enemynear, hitpausetime = [0, 15]), 15 -(enemynear, hitpausetime), 0)
+pausebg = 0
+
+[State 9088, Explod]
+type = Explod
+trigger1 = !time
+anim = F50
+pos = 0,-50
+postype = P1  ;P2, Front, Back, Left, Right
+facing = 1
+vfacing = 1
+bindtime = 1
+vel = 0,0
+accel = 0,0
+random = 0,0
+removetime = -2
+supermovetime = 20
+pausemovetime = 20
+scale = 1.5,1.5
+sprpriority = 0
+ontop = 1
+shadow = 0,0,0
+ownpal = 0
+removeongethit = 1
+
+[State 9088, Snd]
+type = playsnd
+trigger1 = !time
+value = F35,0
+
+[State 9088, No walking]
+type = assertspecial
+trigger1 = 1
+flag = nowalk
+
+[State 9088, Roman Cancel - Darken]
+type = BGPalFX
+trigger1 = !time
+time = 20
+mul = 64,64,64
+
+[State 9088, End]
+type = changestate
+trigger1 = time > 20 || !animtime
 value = 0
 ctrl = 1
