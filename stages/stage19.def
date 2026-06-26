@@ -1,6 +1,6 @@
 [Info]
-name = "Cruise"
-displayname = "Cruise"
+name = "Court"
+displayname = "Court"
 author = "MichaHil"
 
 ;--------------------------------------------------------
@@ -86,7 +86,7 @@ bgmvolume = 100
 model = stage16.glb
 
 ;Filename of .sff file, required by spec (and for stage portraits)
-spr = stage16.sff
+spr = stage01.sff
 
 ;debugbg = 0
 

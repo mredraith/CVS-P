@@ -86,7 +86,7 @@ bgmvolume = 100
 model = stage09.glb
 
 ;Filename of .sff file, required by spec (and for stage portraits)
-spr = stage09.sff
+spr = stage01.sff
 
 ;debugbg = 0
 
