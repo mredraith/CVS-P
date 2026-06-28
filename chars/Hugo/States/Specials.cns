@@ -3978,8 +3978,8 @@ guardflag=MA
 hitflag=MAF
 hitsound=S2+10*var(44),2
 guardsound=S130,0
-pausetime = 0,12
-guard.pausetime = 0,12
+pausetime = 2,12
+guard.pausetime = 2,12
 sparkNo=-1 + 0 * (var(33) :=8013)
 guard.sparkNo=-1 + 0 * (var(34) :=8001)
 sparkXY=-10 + 0 * (var(35) :=155), var(36) :=-60
