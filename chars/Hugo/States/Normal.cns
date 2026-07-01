@@ -54,7 +54,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=16 + 2 * var(9)
 ground.hittime =16 + 2 * var(9)
-guard.hittime=12
+guard.hittime = (16 + 2 * var(9)) - 6
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 air.velocity=-4.21,-7.36
@@ -148,7 +148,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=19 + 3*var(9)
 ground.hittime=19 + 3*var(9)
-guard.hittime=15
+guard.hittime = (19 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -163,8 +163,6 @@ fall.recoverTime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 210, StateTypeSet: Idle]
 type=StateTypeSet
@@ -251,7 +249,7 @@ ground.type=High
 air.type=Trip
 ground.slidetime=22 + 4*var(9)
 ground.hittime=22 + 4*var(9)
-guard.hittime=18
+guard.hittime = (22 + 4*var(9)) - 6
 air.hittime=120
 ground.velocity = -11.5*const(size.xscale)  
 guard.velocity = -11.5*const(size.xscale)
@@ -266,9 +264,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 15
-envshake.freq = 80
-envshake.ampl = -4
 
 [State 220, StateTypeSet: Idle]
 type=StateTypeSet
@@ -343,7 +338,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=22 + 4*var(9)
 ground.hittime=22 + 4*var(9)
-guard.hittime=18
+guard.hittime = (22 + 4*var(9)) - 6
 air.hittime=120
 ground.velocity=Ifelse(var(20),-4,-8), -2.5
 guard.velocity=Ifelse(var(20),-5,-10)
@@ -358,8 +353,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 221, HitDef Z-Counter]
 type=HitDef
@@ -387,7 +380,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=22 + 4*var(9)
 ground.hittime=22 + 4*var(9)
-guard.hittime=18
+guard.hittime = (22 + 4*var(9)) - 6
 air.hittime=120
 ground.velocity=Ifelse(var(20),-4,-8), -2.5
 guard.velocity=Ifelse(var(20),-5,-10)
@@ -402,8 +395,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 221, StateTypeSet: Idle]
 type=StateTypeSet
@@ -478,7 +469,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=19 + 3*var(9)
 ground.hittime=19 + 3*var(9)
-guard.hittime=15
+guard.hittime = (19 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -493,8 +484,6 @@ fall.recoverTime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 223, StateTypeSet: Idle]
 type=StateTypeSet
@@ -576,7 +565,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=19 + 3*var(9)
 ground.hittime=Ifelse(p2statetype = C, 35, 33) 
-guard.hittime=15
+guard.hittime = (Ifelse(p2statetype = C, 35, 33)) - 6
 air.hittime=120
 ground.velocity = -26.0*const(size.xscale)   
 guard.velocity = -26.0*const(size.xscale) 
@@ -592,9 +581,6 @@ palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
 P2facing = 1
-envshake.time = 5
-envshake.freq = 60
-envshake.ampl = 1
 
 [State 225, StateTypeSet: Idle]
 type=StateTypeSet
@@ -664,7 +650,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=16 + 2*var(9)
 ground.hittime=16 + 2*var(9)
-guard.hittime=12
+guard.hittime = (16 + 2*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
@@ -780,7 +766,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=19 + 3*var(9)
 ground.hittime=19 + 3*var(9)
-guard.hittime=15
+guard.hittime = (19 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -795,8 +781,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 240, HitDef]
 type=HitDef
@@ -824,7 +808,7 @@ ground.type=High
 air.type=Low
 ground.slidetime=19 + 3*var(9)
 ground.hittime=19 + 3*var(9)
-guard.hittime=15
+guard.hittime = (19 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -839,8 +823,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 240, Ctrlset]
 type=Ctrlset
@@ -932,6 +914,7 @@ guardsound=s130, 0
 ground.type = High
 ground.slidetime = 12
 ground.hittime  = 12
+guard.hittime = (12) - 6
 ground.velocity = -6
 air.velocity = Ifelse(var(20), -3, -2), Ifelse(var(20), -8, -4)
 air.hittime = 18
@@ -942,8 +925,6 @@ forcenofall = !var(20)
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 242, End]
 type = changestate
@@ -1023,7 +1004,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=22 + 4*var(9)
 ground.hittime=22 + 4*var(9)
-guard.hittime=18
+guard.hittime = (22 + 4*var(9)) - 6
 air.hittime=120
 ground.velocity = -100.0*const(size.xscale)
 guard.velocity = -100.0*const(size.xscale)
@@ -1038,8 +1019,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 
 [State 250, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1145,7 +1124,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=16 + 2*var(9)
 ground.hittime=16 + 2*var(9)
-guard.hittime=12
+guard.hittime = (16 + 2*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
@@ -1223,7 +1202,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=19 + 3*var(9)
 ground.hittime=19 + 3*var(9)
-guard.hittime=15
+guard.hittime = (19 + 3*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -1238,8 +1217,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 410, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1337,7 +1314,7 @@ ground.type = High
 air.type = Low
 ground.slidetime = 22 + 4*var(9)
 ground.hittime = 22 + 4*var(9)
-guard.hittime = 18
+guard.hittime = (22 + 4*var(9)) - 6
 air.hittime = Ifelse(var(55)=2,30,120)
 ground.velocity = Ifelse(var(55)=2,-1,Ifelse(var(55)=1,-4,-4))*(ifelse(!var(20),1,.5)),Ifelse(var(55)=2,-4,-10.5)
 guard.velocity = Ifelse(var(20),-4,-10.5)
@@ -1353,8 +1330,6 @@ fall.recovertime = Ifelse(var(55)=2,20,120)
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 
 [State 420, ChangeState]
 type = ChangeState
@@ -1467,7 +1442,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=16 + 2*var(9)
 ground.hittime=16 + 2*var(9)
-guard.hittime=12
+guard.hittime = (16 + 2*var(9)) - 6
 air.hittime=120
 ground.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
 guard.velocity=ceil(Ifelse(var(55),-3,-4.49)*(ifelse(!var(20),1,.5)))
@@ -1549,7 +1524,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=15 + 2*var(9)
 ground.hittime=15 + 2*var(9)
-guard.hittime=15
+guard.hittime = (15 + 2*var(9)) - 6
 air.hittime=120
 ground.velocity=-4.0*const(size.xscale),-7.0*const(size.yscale)
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
@@ -1564,8 +1539,6 @@ fall.recovertime=120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=10
-envshake.ampl=Ifelse(random<=500,-2,2)
 
 [State 440, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1660,7 +1633,7 @@ ground.type=Trip
 air.type=Trip
 ground.slidetime=22 + 4*var(9)
 ground.hittime=22 + 4*var(9)
-guard.hittime=18
+guard.hittime = (22 + 4*var(9)) - 6
 air.hittime=120
 fall=1
 fall.recover=1
@@ -1675,8 +1648,6 @@ air.cornerPush.velOff=0
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 fall.envshake.time=16
 fall.envshake.ampl=Ifelse(random<=500,-6,6)
 
@@ -1705,7 +1676,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=22 + 4*var(9)
 ground.hittime=22 + 4*var(9)
-guard.hittime=18
+guard.hittime = (22 + 4*var(9)) - 6
 air.hittime=120
 fall=1
 fall.recover=0
@@ -1719,8 +1690,6 @@ air.cornerPush.velOff=0
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time=12
-envshake.ampl=Ifelse(random<=500,-3,3)
 fall.envshake.time=16
 fall.envshake.ampl=Ifelse(random<=500,-6,6)
 
@@ -1821,7 +1790,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=16 + 2*var(9)
 ground.hittime =16 + 2*var(9)
-guard.hittime =12
+guard.hittime = (16 + 2*var(9)) - 6
 ground.velocity=Ifelse(var(20),-2,-4)
 guard.velocity=Ifelse(var(20),-2,-4)
 airguard.ctrlTime=16
@@ -1841,8 +1810,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 8
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 600, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1903,7 +1870,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=12 + 3*var(9)
 ground.hittime =12 + 3*var(9)
-guard.hittime =15
+guard.hittime = (12 + 3*var(9)) - 6
 ground.velocity=Ifelse(var(20),-2,-4)
 guard.velocity=Ifelse(var(20),-2,-4)
 air.animType=Back
@@ -1923,8 +1890,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 610, StateTypeSet: Idle]
 type=StateTypeSet
@@ -1985,7 +1950,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=12 + 4*var(9)
 ground.hittime =12 + 4*var(9)
-guard.hittime =18
+guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = Ifelse(var(20),-2.5,-5)
 guard.velocity = Ifelse(var(20),-2.5,-5)
 air.animType=Back
@@ -2006,8 +1971,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 
@@ -2033,7 +1996,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=12 + 4*var(9)
 ground.hittime =12 + 4*var(9)
-guard.hittime =18
+guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = Ifelse(var(20),-2.5,-5)
 guard.velocity = Ifelse(var(20),-2.5,-5)
 air.animType=Back
@@ -2054,8 +2017,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 
@@ -2124,7 +2085,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=12 + 4*var(9)
 ground.hittime =12 + 4*var(9)
-guard.hittime =18
+guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity = Ifelse(var(20),-2.5,-5)
 guard.velocity = Ifelse(var(20),-2.5,-5)
 air.animType=Back
@@ -2145,8 +2106,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 
@@ -2211,7 +2170,7 @@ fall.animType=Back
 ground.type=High
 ground.slidetime=16 + 2*var(9)
 ground.hittime =16 + 2*var(9)
-guard.hittime=12
+guard.hittime = (16 + 2*var(9)) - 6
 ground.velocity=Ifelse(var(20),-2,-4)
 guard.velocity=Ifelse(var(20),-2,-4)
 air.type=High
@@ -2229,8 +2188,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 8
-envshake.ampl = Ifelse(random<=500,-2,2)
 
 [State 630, StateTypeSet: Idle]
 type=StateTypeSet
@@ -2291,7 +2248,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=12 + 3*var(9)
 ground.hittime =12 + 3*var(9)
-guard.hittime=15
+guard.hittime = (12 + 3*var(9)) - 6
 ground.velocity=Ifelse(var(20),-2.5,-5)
 guard.velocity=Ifelse(var(20),-2.5,-5)
 air.animType=Back
@@ -2311,8 +2268,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 10
-envshake.ampl = Ifelse(random<=500,-3,3)
 
 [State 640, StateTypeSet: Idle]
 type=StateTypeSet
@@ -2372,7 +2327,7 @@ guardsound=s130, 0
 ground.type=High
 ground.slidetime=12 + 4*var(9)
 ground.hittime =12 + 4*var(9)
-guard.hittime=18
+guard.hittime = (12 + 4*var(9)) - 6
 ground.velocity=Ifelse(var(20),-2.5,-5)
 guard.velocity=Ifelse(var(20),-2.5,-5)
 air.type=High
@@ -2392,8 +2347,6 @@ fall.recovertime = 120
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
-envshake.time = 12
-envshake.ampl = Ifelse(random<=500,-4,4)
 fall.envshake.time = 12
 fall.envshake.ampl = Ifelse(random<=500,-5,5)
 

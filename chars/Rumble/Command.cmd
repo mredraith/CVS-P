@@ -226,40 +226,40 @@ time = 18
 
 [Command]
 name = "623k"
-command = ~F, D, DF, a
+command = ~D, DF, F, a
 time = 18
 [Command]
 name = "623k"
-command = ~F, D, DF, b
+command = ~D, DF, F, b
 time = 18
 [Command]
 name = "623k"
-command = ~F, D, DF, c
+command = ~D, DF, F, c
 time = 18
 [Command]
 name = "623k"
-command = ~F, D, DF, ~a
+command = ~D, DF, F, ~a
 time = 18
 [Command]
 name = "623k"
-command = ~F, D, DF, ~b
+command = ~D, DF, F, ~b
 time = 18
 [Command]
 name = "623k"
-command = ~F, D, DF, ~c
+command = ~D, DF, F, ~c
 time = 18
 
 [Command]
 name = "623kk"
-command = ~F, D, DF, a+b
+command = ~D, DF, F, a+b
 time = 18
 [Command]
 name = "623kk"
-command = ~F, D, DF, b+c
+command = ~D, DF, F, b+c
 time = 18
 [Command]
 name = "623kk"
-command = ~F, D, DF, a+c
+command = ~D, DF, F, a+c
 time = 18
 
 ;Fire Ball

@@ -167,9 +167,9 @@ air.animType = Back
 fall.animType = Back
 ground.type = High
 air.type = Low
-ground.hitTime = 15 + 3 * var(9)
-guard.hittime = (15 + 3 * var(9)) - 6
-ground.slideTime = 15 + 3 * var(9)
+ground.hitTime = 20 + 3 * var(9)
+guard.hittime = (20 + 3 * var(9)) - 6
+ground.slideTime = 20 + 3 * var(9)
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -3.96, -7.93), 0
 ground.cornerPush.velOff = 0
@@ -1285,9 +1285,7 @@ channel = 1
 
 [State 420, HitDef 1]
 type = HitDef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = AnimElem = 3
-forceNoFall = !var(20)
 attr = C, NA
 hitFlag = MAF
 guardFlag = M

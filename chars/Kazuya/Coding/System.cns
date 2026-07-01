@@ -2538,6 +2538,12 @@ trigger4 = !(EnemyNear(1), HitShakeOver) || (EnemyNear(1), StateType = L) || (En
 var(16) = 0
 ignoreHitPause = 1
 
+[State -2, Bound Reset Single];updated special thanks to 20S
+type = VarSet
+trigger1 = (Enemy, MoveType != H) || (Enemy, StateNo = [120,155]) || (Enemy, Ctrl)
+var(600) = 0
+ignoreHitPause = 1
+
 [State -2, Assert: UnGuardable]
 type = AssertSpecial
 trigger1 = var(17) > 0

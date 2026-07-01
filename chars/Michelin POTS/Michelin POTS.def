@@ -1,0 +1,49 @@
+; _________________________________________
+;| Character by Author Name |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+[info]
+name ="Michelin Man"
+displayname ="Michelin Man"
+versiondate =04,14,2002
+mugenversion =1.0
+author ="Cipry"
+pal.defaults =1,2,3,4,5,6,7,8,9,10
+localCoord = 428,240
+
+; files for the player
+[files]
+movelist = movelist.dat
+cmd =Michelin POTS.cmd
+cns =Michelin POTS.cns
+st =Michelin POTS.cns
+stcommon =common1.cns
+sprite =Michelin POTS.sff
+anim =Michelin POTS.air
+sound =Michelin POTS.snd
+pal14=
+pal13=
+pal1=Bib 1.act
+pal2=Old bibendum.act
+pal3=Bib 2.act
+pal4=Bib 3.act
+pal5=Bib 4.act
+pal6=Bib 5.act
+pal7=Bib 6.act
+pal8=Bib 7.act
+pal9=Bib 8.act
+pal10=Bib 9.act
+pal11=
+pal12=
+st1=Normals.cns
+st2=Specials.cns
+st3=Hypers.cns
+st4=Helpers.cns
+st5=Custom.cns
+st6=Shun Goku Satsu.cns
+st7=Shun Goku Satsu.cns
+
+
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard=

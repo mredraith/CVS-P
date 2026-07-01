@@ -34,7 +34,7 @@ fvalue = 0;DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH_DO-NOT-TOUCH
 type = VarSet
 trigger1 = 1
 ;---------------------------------------
-var(40) = ifElse((PalNo > 6), 1, 0) ;<- Edit this!
+var(40) = ifElse((PalNo > 6), 2, 0) ;<- Edit this!
 ;---------------------------------------
 ignoreHitPause = 1
 

@@ -3583,6 +3583,15 @@ triggerAll = StateType != A
 trigger1 = ctrl || (StateNo = [100,101])
 trigger2 = var(4)
 
+[State -1, Standing Far Heavy Punch (Chain)]
+type = ChangeState
+value = 220
+triggerAll = !AILevel
+;command != "holddown" && command = "z"
+triggerAll = (!NumExplod(90000002) && !NumExplod(90000003) && !NumExplod(90000001)) && (NumExplod(90000220) || command = "z")
+triggerAll = StateType != A
+trigger1 = MoveContact && stateno = 440
+
 [State -1, Standing Far/Close Heavy Kick]
 type = ChangeState
 value = 250 + (Abs(P2BodyDist X) <= 30) * 5

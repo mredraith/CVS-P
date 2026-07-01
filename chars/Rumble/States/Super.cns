@@ -1715,7 +1715,7 @@ value = 4100, 2
 [State 4100, Vel]
 type = VelSet
 trigger1 = AnimElemTime(18) >= 0
-x = 12
+x = 30
 
 [State 4100, Snd]
 type = PlaySnd

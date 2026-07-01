@@ -3760,7 +3760,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =Ifelse(p2statetype = C, 21, 19)
-guard.hittime=12
+guard.hittime = (Ifelse(p2statetype = C, 21, 19)) - 6
 ground.velocity=-9.0*const(size.xscale)
 air.velocity=-3.5*const(size.xscale),-10.0*const(size.yscale) 
 guard.velocity=-9.0*const(size.xscale)
@@ -3989,7 +3989,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =Ifelse(p2statetype = C, 21, 19)
-guard.hittime=12
+guard.hittime = (Ifelse(p2statetype = C, 21, 19)) - 6
 ground.velocity=-9.0*const(size.xscale)
 air.velocity=-3.5*const(size.xscale),-10.0*const(size.yscale) 
 guard.velocity=-9.0*const(size.xscale)
@@ -4035,7 +4035,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =Ifelse(p2statetype = C, 21, 19)
-guard.hittime=12
+guard.hittime = (Ifelse(p2statetype = C, 21, 19)) - 6
 ground.velocity=-9.0*const(size.xscale)
 air.velocity=-3.5*const(size.xscale),-10.0*const(size.yscale) 
 guard.velocity=-9.0*const(size.xscale)
@@ -4081,7 +4081,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =Ifelse(p2statetype = C, 21, 19)
-guard.hittime=12
+guard.hittime = (Ifelse(p2statetype = C, 21, 19)) - 6
 ground.velocity=-4.0*const(size.xscale),-11.0*const(size.yscale)
 air.velocity=-4.0*const(size.xscale),-10.0*const(size.yscale)
 guard.velocity=-9.0*const(size.xscale)
@@ -4260,7 +4260,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime=12
+guard.hittime = (18) - 6
 ground.velocity = 0,5.0*const(size.yscale)
 guard.velocity = -8.8*const(size.xscale)
 air.velocity=-1.0*const(size.xscale),5.0*const(size.yscale)
@@ -4311,7 +4311,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime=12
+guard.hittime = (18) - 6
 ground.velocity = 0,5.0*const(size.yscale)
 guard.velocity = -8.8*const(size.xscale)
 air.velocity=-1.0*const(size.xscale),5.0*const(size.yscale)
@@ -4362,7 +4362,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime=12
+guard.hittime = (18) - 6
 ground.velocity = 0,5.0*const(size.yscale)
 guard.velocity = -8.8*const(size.xscale)
 air.velocity=-1.0*const(size.xscale),5.0*const(size.yscale)
@@ -4583,7 +4583,7 @@ ground.type=Low
 air.type=Low
 ground.slidetime=18
 ground.hittime =18
-guard.hittime=12
+guard.hittime = (18) - 6
 ground.velocity = 0,-14.0*const(size.yscale)
 guard.velocity = -8.8*const(size.xscale)
 air.velocity=-1.0*const(size.xscale),5.0*const(size.yscale)

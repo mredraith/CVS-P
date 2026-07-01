@@ -1,0 +1,29 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name = "Karate Kenji" ;Name of character
+displayname = "Karate Kenji" ;Name of character to display
+versiondate = 04,14,2002 ;Version date of character (MM-DD-YYYY)
+mugenversion = 04,14,2002 ;Version of M.U.G.E.N character works on
+author = "Ahuron" ;Character author name
+pal.defaults = 6,3,4,2 ;Default palettes in order of preference
+localCoord = 428,240
+
+; Files for the player
+[Files]
+movelist = movelist.dat
+cmd = K-kenji.cmd ;Command set
+cns = K-kenji.cns ;Constants
+st = K-kenji.cns ;States
+stcommon = K-kenjicommon1.cns ;Common states
+sprite = K-kenji.sff ;Sprite
+anim = K-kenji.air ;Animation
+sound = K-kenji.snd ;Sound
+pal1 = K-kenji2.act
+pal2 = K-kenji2.act
+pal3 = K-kenji2.act
+pal4 = K-kenji.act
+pal5 = K-kenji.act
+pal6 = K-kenji.act

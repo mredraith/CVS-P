@@ -1,0 +1,83 @@
+; _________________________________________
+;| Character by Author Name                |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<CONSTANTS>====================
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+dizzypoints = 850
+guardpoints = 1000
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
+sparkNo = s8010
+guard.sparkNo = s8000
+KO.echo = 0
+volume = 128
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xScale = 1
+yScale = 1
+ground.back = 15
+ground.front = 15
+air.back = 15
+air.front = 15
+height = 60
+attack.dist = 160
+proj.attack.dist = 90
+proj.doScale = 0
+head.pos = 0 , -92
+mid.pos = -7, -53
+shadowOffset = -1
+draw.offset = 0,1
+
+[Velocity]
+walk.fwd = 4.0
+walk.back = -2.7
+run.fwd = 6.8, 0
+run.back = -6.25, -5.25
+jump.neu = 0, -11.47
+jump.fwd = 3.6
+jump.back = -3.7
+runJump.fwd = 5.3, -11.47
+runJump.back = -6.4, -10.47
+airjump.neu = 0,-6.5
+airjump.back = -2.8
+airjump.fwd = 2.8
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yAccel = 0.552
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundLevel = 25
+air.gethit.groundRecover.ground.threshold = -20
+air.gethit.groundRecover.groundLevel = 10
+air.gethit.airRecover.threshold = -1
+air.gethit.airRecover.yAccel = 0.35
+air.gethit.trip.groundLevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yAccel = 0.4
+down.bounce.groundLevel = 12
+down.friction.threshold = 0.5
+
+[Quotes]
+victory0 = "Arigatou gozaimashita! Thank you for this fight. I hope you'll fight alongside me next time."
+victory1 = "Use this battle as motivation to change your ways!"
+victory2 = "Although you may have tried to defeat me... I forgive you"
+victory3 = "We do not have to fight! You can fight the good fight instead!"
+victory4 = "I believe everyone deserves a second chance! Even after fighting I forgive you"
+victory5 = "I've experienced more pain than you could ever imagine. Mere punches cannot hurt me!"
+victory6 = "I always come out on top against the darkness!"
+victory7 = "With every opponent, I see a chance to grow..."
+victory8 = "In the future, there won't be any fear! I promise..."
+victory9 = "We will have a better world, trust me!"
+victory10 = "I won't let the darkness consume me! I know my strength comes from the heart..."
+victory11 = "Everything's gonna be just fine..."

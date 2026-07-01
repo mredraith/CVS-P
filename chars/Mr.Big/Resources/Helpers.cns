@@ -3,7 +3,7 @@
 ; CVS Mr. Big POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -3544,6 +3544,7 @@ guardsound=s130,1
 ground.type=Low
 ground.slidetime=10
 ground.hittime=10
+guard.hittime = (10) - 6
 ground.velocity=Ifelse(root,var(20),-5,-10), ifelse((root,var(20)),-5,0)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=Ifelse(root,var(20),-2,-4), -4
@@ -3761,6 +3762,7 @@ guardsound=s130,1
 ground.type=Low
 ground.slidetime=10
 ground.hittime=10
+guard.hittime = (10) - 6
 ground.velocity=Ifelse(root,var(20),-5,-10), ifelse((root,var(20)),-5,0)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,-5)
 air.velocity=Ifelse(root,var(20),-2,-4), -4
@@ -3980,6 +3982,7 @@ guardsound=s130,1
 ground.type=Low
 ground.slidetime=10
 ground.hittime=10
+guard.hittime = (10) - 6
 ground.velocity=-4, -3
 ground.cornerpush.veloff=0
 air.velocity=-4, -3
@@ -4218,6 +4221,7 @@ guardsound=s130,1
 ground.type=Low
 ground.slidetime=10
 ground.hittime=10
+guard.hittime = (10) - 6
 ground.velocity=-4, -3
 ground.cornerpush.veloff=0
 air.velocity=-4, -3
@@ -4474,8 +4478,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = High
 ground.hitTime = 15
+guard.hittime = (15) - 6
 ground.slideTime = 15
-guard.hitTime = 15
 air.hitTime = 60
 ground.velocity = -2.15,-12.0
 ground.cornerPush.velOff = 0
@@ -4524,8 +4528,8 @@ fall.animType = DiagUp
 ground.type = High
 air.type = High
 ground.hitTime = 15
+guard.hittime = (15) - 6
 ground.slideTime = 15
-guard.hitTime = 15
 air.hitTime = 60
 ground.velocity = -2.15,-12.0
 ground.cornerPush.velOff = 0

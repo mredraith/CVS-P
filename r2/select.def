@@ -36,15 +36,9 @@ eagle, random, order=1
 Dudley, random, order=1
 yun, random, order=1
 Sakura, random, order=1
-slot = {
-Dhalsim, random, order=1, previous=d, next=w
-Divesim, random, order=1, previous=d, next=w, select=/s+a
-}
+Dhalsim, random, order=1
 Cammy, random, order=1
-slot = {
-Chunli, random, order=1, previous=d, next=w
-Shadow Lady, random, order=3, previous=d, next=w, select=/s+a
-}
+Chunli, random, order=1
 randomselect
 Daimon, random, order=1
 Athena, random, order=1
@@ -103,29 +97,17 @@ todoh, random, order=1
 yuki, random, order=1
 ; break
 poison, random, order=1
-slot = {
-Evil Ryu, random, order=3, previous=d, next=w
-Funny Ryu, random, order=5, previous=d, next=w, select=/s+a
-}
-slot = {
-Dictator, random, order=2, previous=d, next=w
-Final Bison, random, order=5, previous=d, next=w, select=/s+a
-}
+Evil Ryu, random, order=3
+Dictator, random, order=2
 sagat, random, order=1
 adon, random, order=1
 leo, random, order=1
 jill, random, order=1
 randomselect
-slot = {
-haohmaru, random, order=1, previous=d, next=w
-Rasetsumaru, random, order=3, previous=d, next=w, select=/s+a
-}
+haohmaru, random, order=1
 saisyu, random, order=2
 geese, random, order=2
-slot = {
-rugal, random, order=2, previous=d, next=w
-God Rugal, random, order=5, previous=d, next=w, select=/s+a
-}
+rugal, random, order=2
 Iori Orochi, random, order=3
 Adelheid, random, order=1
 Yashiro, random, order=1
@@ -133,10 +115,7 @@ Yashiro, random, order=1
 Twelve, random, order=1
 Violent Ken, random, order=3
 Claw, random, order=2
-slot = {
-akuma, random, order=3, previous=d, next=w
-Shin Akuma, random, order=5, previous=d, next=w, select=/s+a
-}
+akuma, random, order=3
 Alex, random, order=2
 kenji, random, order=1
 hiryu, random, order=1
@@ -155,10 +134,7 @@ Boxer, random, order=2
 Dee Jay, random, order=1
 Urien, random, order=2
 hayato, random, order=1
-slot = {
-zero, random, order=1, previous=d, next=w
-nesmegaman, random, order=5, previous=d, next=w, select=/s+a
-}
+zero, random, order=1
 randomselect
 earthquake, random, order=1
 amakusa, random, order=2
@@ -175,7 +151,7 @@ Juli, random, order=1
 Elena, random, order=1
 Yang, random, order=1
 Q, random, order=1
-randomselect
+Kung Fu Man, stages/stageRO.def, order=6, includestage=-1
 Duo Lon, random, order=1
 Ash, random, order=1
 NeoGeegus, random, order=3
@@ -191,7 +167,7 @@ Necro, random, order=1
 Oro, random, order=1
 Juri, random, order=1
 Gill, random, order=3
-randomselect
+Ronald, random, order=6
 Eliza, random, order=1
 Rumble, random, order=2
 Axel Stone, random, order=1
@@ -217,23 +193,19 @@ empty
 empty
 ;break
 empty
+Shin Akuma, random, order=5
+nesmegaman, random, order=5
+Final Bison, random, order=5
+Divesim, random, order=1
+Shadow Lady, random, order=3
+Funny Ryu, random, order=5
 empty
-empty
-empty
-empty
-empty
-empty
-slot = {
-Kung Fu Man, stages/stageRO.def, includestage=-1, order=6, previous=d, next=w
-Ronald, random, order=6, previous=d, next=w, select=/s+a
-Donald, random, order=10, previous=d, next=w, select=/s+a
-}
-empty
-empty
-empty
-empty
-empty
-empty
+Rasetsumaru, random, order=3
+K-kenji
+Michelin POTS
+KamenRiderKuuga
+Spyro
+God Rugal, random, order=5
 empty
 ;break
 empty
@@ -252,6 +224,21 @@ empty
 empty
 empty
 ;break
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
+empty
 empty
 empty
 empty
@@ -647,19 +634,15 @@ stages/stage99.def
 
  ;Maximum number of matches to fight before game ends in Arcade single mode.
 arcade.maxmatches = 4,2,1,0,0,1,0,0,0,0
-
  ;Like arcade.maxmatches, but applies to Arcade team modes (sans 'Ratio').
 team.maxmatches = 3,1,1,0,0,1,0,0,0,0
-
  ;Maximum number of matches to fight before game ends in Time Attack mode.
 timeattack.maxmatches = 4,2,1,0,0,0,0,0,0,0
-
  ;IKEMEN feature: Similar to arcade.maxmatches, but applies to Survival mode.
  ;Use -1 value to choose which order number should have unlimited matches.
  ;By omitting -1 survival mode will end after particular amount of matches set
  ;below (in such case you can actually "complete" the mode).
 survival.maxmatches = -1,-1,-1,0,0,0,0,0,0,0
-
  ;IKEMEN feature: A 'Ratio' mode allows each team to select up to 3 characters
  ;and distribute 4 "ratio levels" amongst them, affecting their life and damage
  ;(ratio 2 is the default to which other ratios are compared, percentages are
@@ -713,4 +696,3 @@ arcade.ratiomatches = 1-3:1, 3:1, 2:1, 2:1, 1:2, 3:1, 1-2:3
  ; unlock = true
  ;
  ;Declare your Story Mode arcs below.
-

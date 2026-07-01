@@ -1,0 +1,32 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;******************* http://www.virtualltek.com *******************;
+;***************************************************************************;
+
+[Info]
+name = "Spyro"
+displayname = "Spyro"
+versiondate = 04,14,2002
+mugenversion = 1.0
+author = "JoeStar"
+pal.defaults = 
+localCoord = 428,240
+
+[Files]
+movelist = movelist.dat
+sprite = Spyro.sff
+anim = Spyro.air
+sound = Spyro.snd
+cmd = Spyro.cmd
+cns = Coding\System.cns
+stcommon = common1.cns
+st = Coding\System.cns
+st1 = Coding\Normal.cns
+st2 = Coding\Specials.cns
+st3 = Coding\Helpers.cns
+st4 = Coding\Supers.cns
+st5 = Coding\tinybuffering.txt
+
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard = Extra\ending.def

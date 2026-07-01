@@ -2583,7 +2583,7 @@ value = 6800 + (teamside = 2)
 
 [State 5901, Mega Man Intro] ;Intro for round 1
 type = ChangeState
-trigger1 = enemynear,name = "Mega Man" && enemynear,AuthorName = "NovaMagnolia" && enemynear,roundsexisted = 0 && teamside = 2
+trigger1 = enemynear,name = "Mega Man" && enemynear,roundsexisted = 0 && teamside = 2
 value = 19870
 
 [State 5901, Turns Intro]

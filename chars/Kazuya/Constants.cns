@@ -29,6 +29,7 @@
 ; Var(36) - Spark yPos
 ; Var(38) - Throw (0 = Allowed; 1 = Not Allowed)
 ; Var(58) - Game Time
+; Var(600) - Bound Check (0 = No Bound Yet; 1 = Bound Used)
 
 ;--------------------- Float Variable List ----------------------
 ;fvar(5) - Amount of Corner Push

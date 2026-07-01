@@ -26,5 +26,5 @@ anim = Anim.air
 sound = SoundSFA.snd
 	
 [Arcade]
-intro.storyBoard = intro.def
+intro.storyboard = intro.def
 ending.storyBoard = ending.def

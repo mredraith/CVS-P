@@ -3,7 +3,7 @@
 ; CVS Mr. Big POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
 ;***************************************************************************;
-; "Porque o guerreiro de fé nunca gela" by: Racionais mc's
+; "Porque o guerreiro de f nunca gela" by: Racionais mc's
 ;***************************************************************************;
 ;***************************************************************************;
 
@@ -11,12 +11,12 @@
 ;Constants
 ;============================================================================
 [Data]
-life = 1000			
-attack = 100		
-defence = 100		
-fall.defence_up = 50	
-liedown.time = 50		
-airjuggle = 0		
+life = 1000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
 sparkno = s8010			
 guard.sparkno = s8000	
 KO.echo = 0			
@@ -78,11 +78,11 @@ victory0 = "I need a reason to fight? How 'bout your ugly mugs!";96
 victory1 = "Thought yourselves heroes, huh? It's so funny, I'm crying!"
 victory2 = "I can beat you with one finger! Now stay out of my way, trash!"
 victory3 = "How's that? Now understand what I am big at, don't you?";98UM
-victory4 = "BOR-ING… Come back after you've seen a real bloodbath!";XI
+victory4 = "BOR-ING Come back after you've seen a real bloodbath!";XI
 victory5 = "Did you think you could beat ME?! Humph! You're a conceited one, aren't you?"
 victory6 = "Give up already. I'm no match for someone as weak as you."
 victory7 = "Heh heh heh. You really took it that round, didn't you?"
-victory8 = "Hey, what’s the matter? Enjoy yourself, your life is at stake!!"
+victory8 = "Hey, whats the matter? Enjoy yourself, your life is at stake!!"
 victory9 = "That's the difference between you and me!! You're better off crawling around on all fours!"
 victory10 = "What do you think? Wanna work for me? I'll treat you well..."
 victory11 = "You're not totally useless... But at this rate, the best you'll become is a bodyguard."
@@ -105,5 +105,5 @@ victory23 = "Looks like you've become quite a coward. Pity... You used to be far
 victory24 = "Hey, Geese. Good job getting this far. I'll give you a rest... In eternal sleep!";XI
 victory25 = "Southtown is mine! And you're leaving it!";NBC
 ;vs others
-victory26 = "Humph. There’s no way I’d lose in a kid’s playground!";XI - Kasumi/Malin/Momoko/Shingo
+victory26 = "Humph. Theres no way Id lose in a kids playground!";XI - Kasumi/Malin/Momoko/Shingo
 victory27 = "That's why kids are dangerous. They don't know their ability until they get slapped around.";NBC - Yuki
