@@ -1,0 +1,50 @@
+; _________________________________________
+;| Character by Author Name |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+[info]
+name ="Cipry POTS"
+displayname ="Cipry"
+versiondate =04,14,2002
+mugenversion =1.0
+author ="Cipry-POTS"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11
+
+; files for the player
+localCoord = 428,240
+[files]
+movelist = movelist.dat
+cmd =Cipry POTS.cmd
+cns =Cipry POTS.cns
+st =Cipry POTS.cns
+stcommon =common1.cns
+sprite =Cipry POTS.sff
+anim =Cipry POTS.air
+sound =Cipry POTS.snd
+pal14=Quico.act
+pal13=Stimpy.act
+pal1=Cipry 1.act
+pal2=Cipry 2.act
+pal3=Cipry 3.act
+pal4=Cipry 4.act
+pal5=Cipry 5.act
+pal6=Cipry 6.act
+pal7=Cipry 7.act
+pal8=Cipry 8.act
+pal9=Princess Susu.act
+pal10=Wacipry.act
+pal11=Super Mario.act
+pal12=Super Mario.act
+st1=Normals.cns
+st2=Specials.cns
+st3=Hypers.cns
+st4=Helpers.cns
+st5=Custom.cns
+st6=Shun Goku Satsu.cns
+st7=Shun Goku Satsu.cns
+
+; arcade mode
+[arcade]
+intro.storyboard = intro.def
+ending.storyboard =ending.def
+

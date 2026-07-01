@@ -1,0 +1,48 @@
+; _________________________________________
+;| Character by Author Name                |
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+[info]
+name ="Cipry POTS"
+displayname ="Cipry"
+versiondate =04,14,2002
+mugenversion =1.0
+author ="Luis Alberto-POTS"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11
+
+; files for the player
+[files]
+cmd     =Cipry POTS.cmd
+cns     =Cipry POTS.cns
+st      =Cipry POTS.cns
+stcommon =common1.cns
+sprite  =Cipry POTS.sff
+anim    =Cipry POTS.air
+sound   =Cipry POTS.snd
+pal14=Quico.act
+pal13=Don Ramon.act
+pal1=Cipry 1.act
+pal2=Cipry 2.act
+pal3=Cipry 3.act
+pal4=Cipry 4.act
+pal5=Cipry 5.act
+pal6=Cipry 6.act
+pal7=Princess Susu.act
+pal8=Wacipry.act
+pal9=Super Mario.act
+pal10=Stimpy.act
+pal11=Rocko.act
+pal12=Rocko.act
+st1=Normals.cns
+st2=Specials.cns
+st3=Hypers.cns
+st4=Helpers.cns
+st5=Custom.cns
+st6=Shun Goku Satsu.cns
+st7=Shun Goku Satsu.cns
+
+; arcade mode
+[arcade]
+intro.storyboard =intro.def
+ending.storyboard =ending.def
+

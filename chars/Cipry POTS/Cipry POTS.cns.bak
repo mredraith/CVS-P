@@ -1,0 +1,534 @@
+; _________________________________________
+;| Character by Author Name                |
+; ｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯｯ
+
+; これはKFMの定数と状態のファイルです。
+; このファイルの中には注釈が散らされているので、CNSを習いたいお方は
+; 読んでみたらいいです。
+
+[Data]
+;Amount of life to start with
+;体力ゲージの初期値
+life = 1000
+;attack power (more is stronger)
+;攻撃ダメージ
+attack = 100
+;defensive power (more is stronger)
+;体力パワー
+defence = 100
+power = 5000
+;Percentage to increase defense everytime player is knocked down
+fall.defence_up = 50
+;Time which player lies down for, before getting up
+liedown.time = 50
+;Number of points for juggling
+airjuggle = 15
+;Default hit spark number for HitDefs
+sparkno = 2
+;Default guard spark number
+guard.sparkno = 40
+;1 to enable echo on KO
+KO.echo = 0
+;Volume offset (negative for softer)
+volume = 0
+;Variables with this index and above will not have their values
+;reset to 0 between rounds or matches. There are 60 int variables,
+;indexed from 0 to 59, and 40 float variables, indexed from 0 to 39.
+;If omitted, then it defaults to 60 and 40 for integer and float
+;variables repectively, meaning that none are persistent, i.e. all
+;are reset. If you want your variables to persist between matches,
+;you need to override state 5900 from common1.cns.
+IntPersistIndex = 58
+FloatPersistIndex = 40
+
+[Size]
+xscale = 0.54          ;Horizontal scaling factor.
+yscale = 0.54            ;Vertical scaling factor.
+ground.back = 15     ;Player width (back, ground)
+ground.front = 16    ;Player width (front, ground)
+air.back = 12        ;Player width (back, air)
+air.front = 12       ;Player width (front, air)
+height = 60          ;Height of player (for opponent to jump over)
+attack.dist = 160    ;Default attack distance
+proj.attack.dist = 90 ;Default attack distance for projectiles
+proj.doscale = 0     ;Set to 1 to scale projectiles too
+head.pos = -5, -90   ;Approximate position of head
+mid.pos = -5, -60    ;Approximate position of midsection
+shadowoffset = 0     ;Number of pixels to vertically offset the shadow
+draw.offset = 0,0    ;Player drawing offset in pixels (x, y)
+
+[Velocity]
+walk.fwd  = 2.4      ;Walk forward
+walk.back = -2.2     ;Walk backward
+run.fwd  = 4.6, 0    ;Run forward (x, y)
+run.back = -4.5,-3.8 ;Hop backward (x, y)
+jump.neu = 0,-8.4    ;Neutral jumping velocity (x, y)
+jump.back = -2.55    ;Jump back Speed (x, y)
+jump.fwd = 2.5       ;Jump forward Speed (x, y)
+runjump.back = -2.55,-8.1 ;Running jump speeds (opt)
+runjump.fwd = 4,-8.1      ;.
+airjump.neu = 0,-8.1      ;.
+airjump.back = -2.55      ;Air jump speeds (opt)
+airjump.fwd = 2.5         ;.
+
+[Movement]
+airjump.num = 0      ;Number of air jumps allowed (opt)
+airjump.height = 35  ;Minimum distance from ground before you can air jump (opt)
+yaccel = .44         ;Vertical acceleration
+stand.friction = .85  ;Friction coefficient when standing
+crouch.friction = .82 ;Friction coefficient when crouching
+
+[Quotes]
+victory1 = "Sorry! I apologize for the beating."
+victory2 = "That's what you get for being crazy!"
+victory3 = "You brought it on yourself, so don't complain."
+victory4 = "STAND UP LIKE A MAN!"
+
+
+
+;---------------------------------------------------------------------------
+; Lose by Time Over
+; CNS difficulty: basic
+; CNS レベル: 基本
+[Statedef 170]
+type = S
+ctrl = 0
+anim = 170
+velset = 0,0
+
+[State 170, 1]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+;---------------------------------------------------------------------------
+; Win state decider
+; CNS difficulty: basic
+; CNS レベル: 基本
+[Statedef 180]
+type = S
+ctrl = 0
+anim = 180
+velset = 0,0
+
+[State 180, 1]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 180, 1]
+type = ChangeState
+trigger1 = PalNo = 7
+value = 182
+
+[State 180, 2]
+type = PlaySnd
+trigger1 = AnimElem = 1
+value = 180, 0
+
+[State 190, 0]
+type = ChangeState
+trigger1 = Time <= 0
+trigger1 = PalNo != 7
+trigger1 = Random <= 500
+trigger2 = PalNo >= 10
+value = 181
+
+;---------------------------------------------------------------------------
+; Win pose 1 - Bow
+; CNS difficulty: basic
+; CNS レベル: 基本
+[Statedef 181]
+type = S
+ctrl = 0
+anim = 181
+velset = 0,0
+
+[State 181, 0]
+type = AssertSpecial
+triggerall = var(59) = 0
+trigger1 = Time < 200
+flag = RoundNotOver
+
+[State 181, 1]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 181, 2]
+type = PlaySnd
+trigger1 = AnimElem = 1
+value = 180, 0
+
+;---------------------------------------------------------------------------
+; Win pose - Matrix Flight
+[Statedef 182]
+type = A
+physics = N
+ctrl = 0
+anim = 10
+velset = 0,0
+
+[State 182, 1]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 182, ScreenBound]
+type = ScreenBound
+trigger1 = 1
+value = 1
+movecamera = 0,0
+
+[State 182, Pause]
+type = Pause
+trigger1 = Anim = 10
+time = 5
+
+[State 182, 1]
+type = ChangeAnim
+trigger1 = Anim = 10
+trigger1 = AnimTime = 0
+value = 40
+
+[State 182, AfterImage]
+type = AfterImage
+trigger1 = Anim = 40
+trigger1 = AnimTime = 0
+palcontrast = 100,100,100
+palbright = 0,0,0
+paladd = 0,0,0
+palmul = 1,1,1
+trans = Add1
+framegap = 2
+length = 8
+time = 50
+
+[State 182, Explod]
+type = Explod
+trigger1 = Time = 0
+sprpriority = 5
+anim = F130
+pos = 0, 0
+id = 130
+
+[State 182, Explod]
+type = Explod
+trigger1 = Anim = 40
+trigger1 = AnimTime = 0
+sprpriority = 4
+anim = F60
+pos = 0, 20
+id = 60
+
+[State 182, Explod]
+type = Explod
+trigger1 = Anim = 40
+trigger1 = AnimTime = 0
+sprpriority = 3
+anim = F61
+pos = 0, 20
+id = 61
+
+[State 182, VarSet]
+type = VarSet
+trigger1 = Time <= 0
+var(0) = 10
+
+[State 182, VarAdd]
+type = VarAdd
+trigger1 = Anim = 41
+var(0) = 1
+
+[State 182, Explod]
+type = ModifyExplod
+trigger1 = Anim = 41
+scale = (Var(0))*.10, (Var(0))*.10
+id = 61
+
+[State 182, VelSet]
+type = VelSet
+trigger1 = Anim = 40
+trigger1 = AnimTime = 0
+y = -20
+
+[State 182, 1]
+type = ChangeAnim
+trigger1 = Anim = 40
+trigger1 = AnimTime = 0
+trigger2 = Anim = 41
+value = 41
+
+[State 182, VelAdd]
+type = VelAdd
+trigger1 = Anim = 41
+y = -1
+
+;---------------------------------------------------------------------------
+; Introduction
+; CNS difficulty: basic
+[Statedef 190]
+type = S
+ctrl = 0
+anim = 190
+velset = 0,0
+
+[State 190, 0]
+type = ChangeState
+trigger1 = PalNo != 7
+trigger1 = Random <= 500
+trigger1 = Time <= 0
+value = 193
+
+[State 190, 1] ;Freeze animation until PreIntro is over
+type = ChangeAnim
+trigger1 = RoundState = 0
+value = 190
+
+[State 190, Voice]
+type = PlaySnd
+trigger1 = AnimElem = 2
+value = 190, 0
+channel = 0
+
+[State 190, 2] ;Assert this until you want "round 1, fight" to begin
+type = AssertSpecial
+trigger1 = 1
+flag = Intro
+
+[State 190, 4] ;Change to stand state
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+
+;---------------------------------------------------------------------------
+; Walking Intro
+[Statedef 193]
+type = S
+ctrl = 0
+anim = 22
+velset = 0,0
+
+[State 190, 0]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 190, 2]
+type = AssertSpecial
+trigger1 = 1
+flag = Intro
+
+[State 190, ScreenBound]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0,0
+
+[State 190, PosAdd]
+type = PosAdd
+trigger1 = Time = 0
+x = -200
+
+[State 190, VelSet]
+type = VelSet
+trigger1 = Time = 50
+x = 2.5
+
+[State 190, VelSet]
+type = VelSet
+trigger1 = Time = 130
+x = 0
+
+[State 190, 1]
+type = ChangeAnim
+trigger1 = Time >= 130
+trigger1 = Time < 150
+value = 196
+elem = 4
+
+[State 190, 2]
+type = AssertSpecial
+trigger1 = Time < 50
+flag = Invisible
+
+[State 190, 2]
+type = PlaySnd
+trigger1 = Anim = 196
+trigger1 = AnimElem = 5
+value = s190, 0
+
+[State 190, 3]
+type = ChangeAnim
+trigger1 = Time = 290
+value = 196
+elem = 11
+
+[State 190, 3]
+type = ChangeAnim
+trigger1 = Time > 10
+trigger1 = Time < 10
+value = 196
+elem = 12
+
+[State 190, 3]
+type = ChangeAnim
+trigger1 = Time > 10
+trigger1 = Time < 10
+value = 196
+elem = 13
+
+[State 190, 5]
+type = ChangeState
+trigger1 = Anim = 196
+trigger1 = AnimTime = 0
+value = 0
+
+
+
+;---------------------------------------------------------------------------
+; Taunt
+; CNS difficulty: easy
+[Statedef 195]
+type = S
+ctrl = 0
+anim = 195
+velset = 0,0
+movetype = I
+physics = S
+sprpriority = 2
+
+[State 195, 1]
+type = CtrlSet
+trigger1 = Time = 40
+value = 1
+
+[State 195, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Roll Forward Taunt
+[Statedef 196]
+type    = C
+movetype= I
+physics = N
+velset = 0,0
+anim = 5230
+ctrl = 0
+
+[State 196, 1]
+type = VarSet
+trigger1 = 1
+v = 0
+value = 1
+
+[State 196, 2]
+type = PosSet
+trigger1 = Time = 0
+y = 0
+
+[State 196, 3]
+type = VelSet
+trigger1 = Anim = 5230
+x = 4
+
+[State 196, 4]
+type = ChangeState
+trigger1 = Time > 15
+value = 5110
+
+;---------------------------------------------------------------------------
+; Recovery Roll Backward
+[Statedef 5220]
+type    = C
+movetype= I
+physics = N
+velset = 0,0
+anim = 5220
+ctrl = 0
+
+[State 5220, 1]
+type = Turn
+trigger1 = Time = 0
+trigger1 = p2dist X < -5
+
+[State 5220, 2]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 5220, 3]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 5220, 4]
+type = PosSet
+trigger1 = Time = 0
+y = 0
+
+[State 5220, 5]
+type = VelSet
+trigger1 = Anim = 5220
+x = -5
+
+[State 5220, 6]
+type = ChangeState
+trigger1 = Time = 18
+value = 11
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Recovery Roll Forward
+[Statedef 5230]
+type    = C
+movetype= I
+physics = N
+velset = 0,0
+anim = 5230
+ctrl = 0
+
+[State 5230, 1]
+type = Turn
+trigger1 = Time = 0
+trigger1 = p2dist X < -5
+
+[State 5230, 2]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 5230, 3]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 5230, 4]
+type = PosSet
+trigger1 = Time = 0
+y = 0
+
+[State 5230, 5]
+type = VelSet
+trigger1 = Anim = 5230
+x = 5
+
+[State 5230, 6]
+type = ChangeState
+trigger1 = Time = 18
+value = 11
+ctrl = 1
+
+;---------------------------------------------------------------------------
+; Override common states (use same number to override) :
+;---------------------------------------------------------------------------

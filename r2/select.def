@@ -151,7 +151,7 @@ Juli, random, order=1
 Elena, random, order=1
 Yang, random, order=1
 Q, random, order=1
-Kung Fu Man, stages/stageRO.def, order=6, includestage=-1
+randomselect
 Duo Lon, random, order=1
 Ash, random, order=1
 NeoGeegus, random, order=3
@@ -167,7 +167,7 @@ Necro, random, order=1
 Oro, random, order=1
 Juri, random, order=1
 Gill, random, order=3
-Ronald, random, order=6
+randomselect
 Eliza, random, order=1
 Rumble, random, order=2
 Axel Stone, random, order=1
@@ -183,7 +183,7 @@ empty
 empty
 empty
 empty
-empty
+Kung Fu Man, stages/stageRO.def, order=6, includestage=-1
 empty
 empty
 empty
@@ -199,12 +199,12 @@ Final Bison, random, order=5
 Divesim, random, order=1
 Shadow Lady, random, order=3
 Funny Ryu, random, order=5
-empty
+Ronald, random, order=6
 Rasetsumaru, random, order=3
-K-kenji
-Michelin POTS
 KamenRiderKuuga
+Michelin POTS
 Spyro
+Cipry POTS
 God Rugal, random, order=5
 empty
 ;break
