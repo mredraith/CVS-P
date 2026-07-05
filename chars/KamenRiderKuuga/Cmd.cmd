@@ -248,17 +248,17 @@ time = 32
 ;----------------MAX Super 1
 [Command]
 name = "2RiderKick"
-command = ~D, DF, F, a+b
+command = ~D, DF, F, D, DF, F, a+b
 time = 32
 
 [Command]
 name = "2RiderKick"
-command = ~D, DF, F, b+c
+command = ~D, DF, F, D, DF, F, b+c
 time = 32
 
 [Command]
 name = "2RiderKick"
-command = ~D, DF, F, a+c
+command = ~D, DF, F, D, DF, F, a+c
 time = 32
 
 [Command]
@@ -279,32 +279,32 @@ time = 32
 ;----------------Super 1
 [Command]
 name = "1RiderKick"
-command = ~D, DF, F, a
+command = ~D, DF, F, D, DF, F, a
 time = 32
 
 [Command]
 name = "1RiderKick"
-command = ~D, DF, F, b
+command = ~D, DF, F, D, DF, F, b
 time = 32
 
 [Command]
 name = "1RiderKick"
-command = ~D, DF, F, c
+command = ~D, DF, F, D, DF, F, c
 time = 32
 
 [Command]
 name = "1RiderKick"
-command = ~D, DF, F, ~a
+command = ~D, DF, F, D, DF, F, ~a
 time = 32
 
 [Command]
 name = "1RiderKick"
-command = ~D, DF, F, ~b
+command = ~D, DF, F, D, DF, F, ~b
 time = 32
 
 [Command]
 name = "1RiderKick"
-command = ~D, DF, F, ~c
+command = ~D, DF, F, D, DF, F, ~c
 time = 32
 
 [Command]
@@ -431,32 +431,32 @@ time = 16
 
 [Command]
 name = "RiderSlash"
-command = ~B, DB, D, DF, F, a
+command = ~D, DF, F, a
 time = 16
 
 [Command]
 name = "RiderSlash"
-command = ~B, DB, D, DF, F, b
+command = ~D, DF, F, b
 time = 16
 
 [Command]
 name = "RiderSlash"
-command = ~B, DB, D, DF, F, c
+command = ~D, DF, F, c
 time = 16
 
 [Command]
 name = "RiderSlash"
-command = ~B, DB, D, DF, F, ~a
+command = ~D, DF, F, ~a
 time = 16
 
 [Command]
 name = "RiderSlash"
-command = ~B, DB, D, DF, F, ~b
+command = ~D, DF, F, ~b
 time = 16
 
 [Command]
 name = "RiderSlash"
-command = ~B, DB, D, DF, F, ~c
+command = ~D, DF, F, ~c
 time = 16
 ;----------------
 ;----------------EX Special 1
@@ -507,17 +507,17 @@ time = 16
 
 [Command]
 name = "ExRiderSlash"
-command = ~B, DB, D, DF, F, a+b
+command = ~D, DF, F, a+b
 time = 16
 
 [Command]
 name = "ExRiderSlash"
-command = ~B, DB, D, DF, F, b+c
+command = ~D, DF, F, b+c
 time = 16
 
 [Command]
 name = "ExRiderSlash"
-command = ~B, DB, D, DF, F, a+c
+command = ~D, DF, F, a+c
 time = 16
 ;----------------
 
