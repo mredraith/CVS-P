@@ -36,6 +36,7 @@ function options.f_saveCfg(reload)
 	end
 	-- Save the current configuration to 'config.ini'
 	saveGameOption(getCommandLineValue("-config"))
+	hook.run("options.save", reload)
 	-- Reload the game if the reload parameter is true
 	if reload then
 		main.f_warning(motif.warning_info.text.text.reload, motif.option_info, motif.optionbgdef)
@@ -50,14 +51,6 @@ end
 --;===========================================================
 --; LOOPS
 --;===========================================================
-function options.f_displayRatio(value)
-	local ret = options.f_precision((value - 1) * 100, '%.01f')
-	if ret >= 0 then
-		return '+' .. ret .. '%'
-	end
-	return ret .. '%'
-end
-
 local function f_switchLanguage(dir)
 	sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
 	-- collect available language keys
@@ -139,7 +132,7 @@ options.t_itemname = {
 			modifyGameOption('Options.GameSpeed', 0)
 			--modifyGameOption('Options.GameSpeedStep', 5)
 			modifyGameOption('Options.Match.Wins', 2)
-			modifyGameOption('Options.Match.MaxDrawGames', -2) -- -2: match.maxdrawgames
+			modifyGameOption('Options.Match.MaxDrawGames', 1)
 			modifyGameOption('Options.Credits', 10)
 			modifyGameOption('Options.QuickContinue', false)
 			modifyGameOption('Options.AutoGuard', false)
@@ -163,16 +156,6 @@ options.t_itemname = {
 			modifyGameOption('Options.Turns.Max', 4)
 			modifyGameOption('Options.Turns.Recovery.Base', 12.5)
 			modifyGameOption('Options.Turns.Recovery.Bonus', 27.5)
-			modifyGameOption('Options.Ratio.Recovery.Base', 0)
-			modifyGameOption('Options.Ratio.Recovery.Bonus', 20)
-			modifyGameOption('Options.Ratio.Level1.Attack', 0.82)
-			modifyGameOption('Options.Ratio.Level2.Attack', 1.0)
-			modifyGameOption('Options.Ratio.Level3.Attack', 1.17)
-			modifyGameOption('Options.Ratio.Level4.Attack', 1.30)
-			modifyGameOption('Options.Ratio.Level1.Life', 0.80)
-			modifyGameOption('Options.Ratio.Level2.Life', 1.0)
-			modifyGameOption('Options.Ratio.Level3.Life', 1.17)
-			modifyGameOption('Options.Ratio.Level4.Life', 1.40)
 			--modifyGameOption('Config.Motif', "data/system.def")
 			modifyGameOption('Config.Players', 4)
 			modifyGameOption('Config.Language', "en")
@@ -185,7 +168,9 @@ options.t_itemname = {
 			--modifyGameOption('Config.TickInterpolation', true)
 			--modifyGameOption('Config.ZoomActive', true)
 			--modifyGameOption('Config.EscOpensMenu', true)
-			--modifyGameOption('Config.BackgroundLoading', false) --TODO: not implemented
+			modifyGameOption('Config.VsScreenLoading', false)
+			modifyGameOption('Config.TurnsLoading', false)
+			--modifyGameOption('Config.BootLoadingMode', 0)
 			--modifyGameOption('Config.FirstRun', false)
 			--modifyGameOption('Config.WindowTitle', "Ikemen GO")
 			--modifyGameOption('Config.WindowIcon', {"external/icons/IkemenCylia_256.png", "external/icons/IkemenCylia_96.png", "external/icons/IkemenCylia_48.png"})
@@ -194,6 +179,7 @@ options.t_itemname = {
 			--modifyGameOption('Config.TrainingChar', "")
 			--modifyGameOption('Config.TrainingStage', "")
 			modifyGameOption('Config.GamepadMappings', "external/gamecontrollerdb.txt")
+			--modifyGameOption('Config.LegacyTime', 0)
 			modifyGameOption('Debug.AllowDebugMode', true)
 			modifyGameOption('Debug.AllowDebugKeys', true)
 			--modifyGameOption('Debug.ClipboardRows', 2)
@@ -255,8 +241,9 @@ options.t_itemname = {
 			--modifyGameOption('Input.XinputTriggerSensitivity', 0.5)
 			--modifyGameOption('Input.UiRepeatDelay', 30)
 			--modifyGameOption('Input.UiRepeatRate', 4)
+			--modifyGameOption('Input.PauseExitDelay', 10)
 
-			loadLifebar(motif.files.fight)
+			loadFightScreen(motif.files.fight)
 			setPlayers()
 			for _, v in ipairs(options.t_vardisplayPointers) do
 				v.vardisplay = options.f_vardisplay(v.itemname)
@@ -266,6 +253,7 @@ options.t_itemname = {
 			updateVolume()
 			options.modified = true
 			options.needReload = true
+			hook.run("options.default")
 		end
 		return true
 	end,
@@ -1180,7 +1168,7 @@ options.t_itemname = {
 	end,
 	--Key Config
 	['keyboard'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.done.key) --[[or getKey():match('^F[0-9]+$')]] then
+		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cursor.done.snd[1], motif.option_info.cursor.done.snd[2])
 			options.f_keyCfgInit('Keys', t.submenu[t.items[item].itemname].title)
 			while true do
@@ -1193,7 +1181,7 @@ options.t_itemname = {
 	end,
 	--Joystick Config
 	['gamepad'] = function(t, item, cursorPosY, moveTxt)
-		if getInput(-1, motif.option_info.menu.done.key) --[[or getKey():match('^F[0-9]+$')]] then
+		if getInput(-1, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cursor.done.snd[1], motif.option_info.cursor.done.snd[2])
 			if getCommandLineValue("-nojoy") == nil then
 				options.f_keyCfgInit('Joystick', t.submenu[t.items[item].itemname].title)
@@ -1265,19 +1253,33 @@ options.t_itemname = {
 		return true
 	end,
 	--Background Loading
-	--[[['backgroundloading'] = function(t, item, cursorPosY, moveTxt)
+	['vsscreenloading'] = function(t, item, cursorPosY, moveTxt)
 		if getInput(-1, motif.option_info.menu.add.key, motif.option_info.menu.subtract.key, motif.option_info.menu.done.key) then
 			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-			if gameOption('Config.BackgroundLoading') then
-				modifyGameOption('Config.BackgroundLoading', false)
+			if gameOption('Config.VsScreenLoading') then
+				modifyGameOption('Config.VsScreenLoading', false)
 			else
-				modifyGameOption('Config.BackgroundLoading', true)
+				modifyGameOption('Config.VsScreenLoading', true)
 			end
-			t.items[item].vardisplay = options.f_boolDisplay(gameOption('Config.BackgroundLoading'), motif.option_info.menu.valuename.enabled, motif.option_info.menu.valuename.disabled)
+			t.items[item].vardisplay = options.f_boolDisplay(gameOption('Config.VsScreenLoading'), motif.option_info.menu.valuename.enabled, motif.option_info.menu.valuename.disabled)
 			options.modified = true
 		end
 		return true
-	end,]]
+	end,
+	--Turns Preloading
+	['turnsloading'] = function(t, item, cursorPosY, moveTxt)
+		if getInput(-1, motif.option_info.menu.add.key, motif.option_info.menu.subtract.key, motif.option_info.menu.done.key) then
+			sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
+			if gameOption('Config.TurnsLoading') then
+				modifyGameOption('Config.TurnsLoading', false)
+			else
+				modifyGameOption('Config.TurnsLoading', true)
+			end
+			t.items[item].vardisplay = options.f_boolDisplay(gameOption('Config.TurnsLoading'), motif.option_info.menu.valuename.enabled, motif.option_info.menu.valuename.disabled)
+			options.modified = true
+		end
+		return true
+	end,
 	--HelperMax
 	['helpermax'] = function(t, item, cursorPosY, moveTxt)
 		if getInput(-1, motif.option_info.menu.add.key) then
@@ -1372,11 +1374,11 @@ options.t_itemname = {
 	--Save and Return
 	['savereturn'] = function(t, item, cursorPosY, moveTxt)
 		if getInput(-1, motif.option_info.menu.done.key) then
-			sndPlay(motif.Snd, motif.option_info.cancel.snd[1], motif.option_info.cancel.snd[2])
+			sndPlay(motif.Snd, motif.option_info.cursor.done.snd[1], motif.option_info.cursor.done.snd[2])
 			if options.modified then
 				options.f_saveCfg(options.needReload)
 			end
-			main.f_fadeReset('fadeout', motif.option_info)
+			fadeOutInit(motif.option_info.fadeout.FadeData)
 			main.close = true
 			--return false
 		end
@@ -1389,7 +1391,7 @@ options.t_itemname = {
 			if options.needReload then
 				main.f_warning(motif.warning_info.text.text.noreload, motif.option_info, motif.optionbgdef)
 			end
-			main.f_fadeReset('fadeout', motif.option_info)
+			fadeOutInit(motif.option_info.fadeout.FadeData)
 			main.close = true
 			--return false
 		end
@@ -1419,7 +1421,7 @@ function options.f_createMenu(tbl, bool_main)
 		main.f_menuItemBgAnimReset(motif.option_info)
 		if bool_main then
 			bgReset(motif.optionbgdef.BGDef)
-			main.f_fadeReset('fadein', motif.option_info)
+			fadeInInit(motif.option_info.fadein.FadeData)
 			playBgm({source = "motif.option"})
 			main.close = false
 		end
@@ -1430,15 +1432,17 @@ function options.f_createMenu(tbl, bool_main)
 				main.f_menuCommonDraw(t, item, cursorPosY, moveTxt, motif.option_info, motif.optionbgdef, false)
 			end
 			-- While fading, ignore normal option-menu inputs, but still allow ESC / menu-cancel to skip the fade.
-			if main.fadeActive then
-				main.f_fadeSkip(-1, motif.option_info.menu.cancel.key)
+			if fadeActive() then
+				if esc() or getInput(-1, motif.option_info.menu.cancel.key) then
+					fadeSkip()
+				end
 			else
 				cursorPosY, moveTxt, item = main.f_menuCommonCalc(t, item, cursorPosY, moveTxt, motif.option_info, motif.option_info.cursor)
 				textImgReset(motif.option_info.title.TextSpriteData)
 				textImgSetText(motif.option_info.title.TextSpriteData, tbl.title)
 				if main.close then
 					bgReset(motif[main.background].BGDef)
-					main.f_fadeReset('fadein', motif[main.group])
+					fadeInInit(motif[main.group].fadein.FadeData)
 					playBgm({source = "motif.title", interrupt = true})
 					main.close = false
 					break
@@ -1451,7 +1455,7 @@ function options.f_createMenu(tbl, bool_main)
 						if options.needReload then
 							main.f_warning(motif.warning_info.text.text.noreload, motif.option_info, motif.optionbgdef)
 						end
-						main.f_fadeReset('fadeout', motif.option_info)
+						fadeOutInit(motif.option_info.fadeout.FadeData)
 						main.close = true
 					else
 						break
@@ -1519,9 +1523,12 @@ options.t_vardisplay = {
 	['autoguard'] = function()
 		return options.f_boolDisplay(gameOption('Options.AutoGuard'))
 	end,
-	--['backgroundloading'] = function()
-	--	return options.f_boolDisplay(gameOption('Config.BackgroundLoading'), motif.option_info.menu.valuename.enabled, motif.option_info.menu.valuename.disabled)
-	--end,
+	['vsscreenloading'] = function()
+		return options.f_boolDisplay(gameOption('Config.VsScreenLoading'), motif.option_info.menu.valuename.enabled, motif.option_info.menu.valuename.disabled)
+	end,
+	['turnsloading'] = function()
+		return options.f_boolDisplay(gameOption('Config.TurnsLoading'), motif.option_info.menu.valuename.enabled, motif.option_info.menu.valuename.disabled)
+	end,
 	['bgmvolume'] = function()
 		return gameOption('Sound.BGMVolume') .. '%'
 	end,
@@ -1618,36 +1625,6 @@ options.t_vardisplay = {
 	end,
 	['quickcontinue'] = function()
 		return options.f_boolDisplay(gameOption('Options.QuickContinue'))
-	end,
-	['ratio1attack'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level1.Attack'))
-	end,
-	['ratio1life'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level1.Life'))
-	end,
-	['ratio2attack'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level2.Attack'))
-	end,
-	['ratio2life'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level2.Life'))
-	end,
-	['ratio3attack'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level3.Attack'))
-	end,
-	['ratio3life'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level3.Life'))
-	end,
-	['ratio4attack'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level4.Attack'))
-	end,
-	['ratio4life'] = function()
-		return options.f_displayRatio(gameOption('Options.Ratio.Level4.Life'))
-	end,
-	['ratiorecoverybase'] = function()
-		return gameOption('Options.Ratio.Recovery.Base') .. '%'
-	end,
-	['ratiorecoverybonus'] = function()
-		return gameOption('Options.Ratio.Recovery.Bonus') .. '%'
 	end,
 	['redlife'] = function()
 		return options.f_boolDisplay(gameOption('Options.RedLife'))
@@ -1828,24 +1805,6 @@ function options.f_start()
 					end
 					return true
 				end
-			end
-		-- ratio
-		elseif v:match('_ratio[1-4]+[al].-$') then
-			local ratioLevel, tmp1, tmp2 = v:match('_ratio([1-4])([al])(.-)$')
-			options.t_itemname['ratio' .. ratioLevel .. tmp1 .. tmp2] = function(t, item, cursorPosY, moveTxt)
-				local ratioKey = 'Options.Ratio.Level' .. tonumber(ratioLevel) .. '.' .. tmp1:upper() .. tmp2
-				if getInput(-1, motif.option_info.menu.add.key) then
-					sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-					modifyGameOption(ratioKey, gameOption(ratioKey) + 0.01)
-					t.items[item].vardisplay = options.f_displayRatio(gameOption(ratioKey))
-					options.modified = true
-				elseif getInput(-1, motif.option_info.menu.subtract.key) and gameOption(ratioKey) > 0.01 then
-					sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
-					modifyGameOption(ratioKey, gameOption(ratioKey) - 0.01)
-					t.items[item].vardisplay = options.f_displayRatio(gameOption(ratioKey))
-					options.modified = true
-				end
-				return true
 			end
 		end
 	end
@@ -2153,9 +2112,9 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 			captureActive = false
 			item = resetIndex
 			cursorPosY = resetIndex
-		--spacebar (disable key)
-		elseif getKey('SPACE') then
-			key = 'SPACE'
+		-- unbind key
+		elseif getKey(motif.option_info.keymenu.unbind.keycode) then
+			key = '__UNBIND__'
 		--keyboard key detection
 		elseif cfgType == 'Keys' then
 			key = getKey()
@@ -2181,8 +2140,8 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 		forcedDir = 0
 		--other keyboard or gamepad key
 		if key ~= '' and key ~= 'nil' then
-			if key == 'SPACE' then
-				sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
+			if key == '__UNBIND__' then
+				sndPlay(motif.Snd, motif.option_info.cancel.snd[1], motif.option_info.cancel.snd[2])
 				--decrease old button count
 				if t_keyList[joyNum][btn] ~= nil and t_keyList[joyNum][btn] > 1 then
 					t_keyList[joyNum][btn] = t_keyList[joyNum][btn] - 1
@@ -2194,7 +2153,7 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 				modifyGameOption(cfgType .. '_P' .. player .. '.' .. t[item].itemname, tostring(motif.option_info.menu.valuename.nokey))
 				options.modified = true
 			elseif cfgType == 'Keys' or (cfgType == 'Joystick' and key ~= 'nil') then
-				sndPlay(motif.Snd, motif.option_info.cursor.move.snd[1], motif.option_info.cursor.move.snd[2])
+				sndPlay(motif.Snd, motif.option_info.cursor.done.snd[1], motif.option_info.cursor.done.snd[2])
 				--decrease old button count
 				if t_keyList[joyNum][btn] ~= nil and t_keyList[joyNum][btn] > 1 then
 					t_keyList[joyNum][btn] = t_keyList[joyNum][btn] - 1
@@ -2446,7 +2405,7 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 			offx = motif.option_info.keymenu.p1.menuoffset[1],
 			offy = motif.option_info.keymenu.p1.menuoffset[2],
 			forceInactive = (side ~= 1),
-			skipBG0 = true, skipBG1 = true, skipTitle = true, skipInput = true,
+			skipBG0 = true, skipBG1 = true, skipTitle = true,
 		}
 	)
 	-- right pane (active highlight only if side == 2)
@@ -2456,7 +2415,7 @@ function options.f_keyCfg(cfgType, controller, bg, skipClear)
 			offx = motif.option_info.keymenu.p2.menuoffset[1],
 			offy = motif.option_info.keymenu.p2.menuoffset[2],
 			forceInactive = (side ~= 2),
-			skipBG0 = true, skipBG1 = true, skipTitle = true, skipInput = true,
+			skipBG0 = true, skipBG1 = true, skipTitle = true,
 		}
 	)
 	-- draw player labels on top of panels (above boxbg)

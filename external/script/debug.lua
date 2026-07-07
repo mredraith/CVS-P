@@ -39,9 +39,10 @@ addHotkey('F3', true, false, true, false, true, 'toggleMaxPowerMode()')
 addHotkey('F4', false, false, false, false, true, 'resetRound(); closeMenu(); trainingReset()')
 addHotkey('F4', false, false, true, false, true, 'reload(); closeMenu(); trainingReset()')
 addHotkey('F5', false, false, false, false, true, 'setTime(0)')
+addHotkey('F8', false, false, false, false, true, 'clearConsole()')
 addHotkey('F9', false, false, false, true, false, 'loadState()')
 addHotkey('F10', false, false, false, true, false, 'saveState()')
-addHotkey('SPACE', false, false, false, false, true, 'full(1); full(2); full(3); full(4); full(5); full(6); full(7); full(8); setTime(getRoundTime()); clearConsole()')
+addHotkey('SPACE', false, false, false, false, true, 'full(1); full(2); full(3); full(4); full(5); full(6); full(7); full(8); setTime(getRoundTime())')
 addHotkey('i', true, false, false, true, true, 'stand(1); stand(2); stand(3); stand(4); stand(5); stand(6); stand(7); stand(8)')
 addHotkey('PAUSE', false, false, false, true, false, 'togglePause(); closeMenu()')
 addHotkey('SCROLLLOCK', false, false, false, true, false, 'frameStep()')
@@ -112,7 +113,7 @@ function stand(p)
 end
 
 function closeMenu()
-	main.pauseMenu = false
+	main.pauseMenuActive = false
 end
 
 function trainingReset()

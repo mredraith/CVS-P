@@ -99,8 +99,7 @@ menu.t_itemname = {
 		if getInput(-1, sec.menu.done.key) then
 			if menu.currentMenu[1] == menu.currentMenu[2] then
 				sndPlay(motif.Snd, sec.exit.snd[1], sec.exit.snd[2])
-				togglePause(false)
-				main.pauseMenu = false
+				menu.pauseExitDelay = gameOption('Input.PauseExitDelay')
 			else
 				sndPlay(motif.Snd, sec.cancel.snd[1], sec.cancel.snd[2])
 			end
@@ -180,7 +179,7 @@ menu.t_itemname = {
 	end,
 	--Key Config
 	['keyboard'] = function(t, item, cursorPosY, moveTxt, sec)
-		if getInput(-1, sec.menu.done.key) --[[or getKey('F1')]] then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			options.f_keyCfgInit('Keys', t.submenu[t.items[item].itemname].title)
 			menu.itemname = t.items[item].itemname
@@ -189,7 +188,7 @@ menu.t_itemname = {
 	end,
 	--Joystick Config
 	['gamepad'] = function(t, item, cursorPosY, moveTxt, sec)
-		if getInput(-1, sec.menu.done.key) --[[or getKey('F2')]] then
+		if getInput(-1, sec.menu.done.key) then
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			options.f_keyCfgInit('Joystick', t.submenu[t.items[item].itemname].title)
 			menu.itemname = t.items[item].itemname
@@ -215,7 +214,7 @@ menu.t_itemname = {
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
 			resetRound()
-			main.pauseMenu = false
+			main.pauseMenuActive = false
 			return false
 		end
 		return true
@@ -226,7 +225,7 @@ menu.t_itemname = {
 			sndPlay(motif.Snd, sec.cursor.done.snd[1], sec.cursor.done.snd[2])
 			--togglePause(false)
 			reload()
-			main.pauseMenu = false
+			main.pauseMenuActive = false
 			return false
 		end
 		return true
@@ -247,7 +246,7 @@ menu.t_itemname = {
 			--togglePause(false)
 			endMatch()
 			start.characterchange = true
-			main.pauseMenu = false
+			main.pauseMenuActive = false
 			start.f_selectReset(false)
 			return false
 		end
@@ -260,7 +259,7 @@ menu.t_itemname = {
 			--togglePause(false)
 			endMatch()
 			start.exit = true
-			main.pauseMenu = false
+			main.pauseMenuActive = false
 			return false
 		end
 		return true
@@ -288,14 +287,17 @@ function menu.f_createMenu(tbl, sec, bg, bool_main)
 		else
 			main.f_menuCommonDraw(t, tbl.item, tbl.cursorPosY, tbl.moveTxt, sec, bg, true)
 		end
+		-- Skip everything else during pause exit delay
+		if menu.pauseExitDelay >= 0 then
+			return
+		end
 		tbl.cursorPosY, tbl.moveTxt, tbl.item = main.f_menuCommonCalc(t, tbl.item, tbl.cursorPosY, tbl.moveTxt, sec, sec.cursor)
 		textImgReset(sec.title.TextSpriteData)
 		textImgSetText(sec.title.TextSpriteData, tbl.title)
 		if esc() or getInput(-1, sec.menu.cancel.key) then
 			if bool_main then
 				sndPlay(motif.Snd, sec.exit.snd[1], sec.exit.snd[2])
-				togglePause(false)
-				main.pauseMenu = false
+				menu.pauseExitDelay = gameOption('Input.PauseExitDelay')
 			else
 				sndPlay(motif.Snd, sec.cancel.snd[1], sec.cancel.snd[2])
 			end
@@ -556,7 +558,7 @@ menu.movelistChar = 1
 function menu.f_init()
 	esc(false)
 	togglePause(true)
-	main.pauseMenu = true
+	main.pauseMenuActive = true
 	bgReset(motif.optionbgdef.BGDef)
 	local id = f_pauseMenuIdFromKey(f_pauseMenuKey(gameMode()))
 	if id == '' or menu.t_menuIndex == nil or menu.t_menuIndex[id] == nil then
@@ -566,7 +568,7 @@ function menu.f_init()
 		local entry = menu.t_menuIndex[id]
 		sndPlay(motif.Snd, entry.sec.enter.snd[1], entry.sec.enter.snd[2])
 		bgReset(entry.bg.BGDef)
-		main.f_fadeReset('fadein', entry.sec)
+		fadeInInit(entry.sec.fadein.FadeData)
 		if menu[id] ~= nil and menu[id].loop ~= nil then
 			menu.currentMenu = {menu[id].loop, menu[id].loop}
 			menu.currentMenuId = id
@@ -577,11 +579,13 @@ function menu.f_init()
 	else
 		sndPlay(motif.Snd, motif.pause_menu.pause_menu.enter.snd[1], motif.pause_menu.pause_menu.enter.snd[2])
 		bgReset(motif.pausebgdef.pausebgdef.BGDef)
-		main.f_fadeReset('fadein', motif.pause_menu.pause_menu)
+		fadeInInit(motif.pause_menu.pause_menu.fadein.FadeData)
 		menu.currentMenu = {menu.menu.loop, menu.menu.loop}
 		menu.currentMenuId = 'menu'
 	end
 end
+
+menu.pauseExitDelay = -1
 
 function menu.f_run()
 	local entry = nil
@@ -605,6 +609,17 @@ function menu.f_run()
 	end
 	--draw overlay
 	rectDraw(sec.overlay.RectData)
+	--pause exit delay
+	if menu.pauseExitDelay >= 0 then
+		if menu.pauseExitDelay > 0 then
+			menu.pauseExitDelay = menu.pauseExitDelay - 1
+		else
+			menu.pauseExitDelay = -1 --prevent retriggering at 0
+			togglePause(false)
+			main.pauseMenuActive = false
+			return false
+		end
+	end
 	--Button Config
 	if menu.itemname == 'keyboard' or menu.itemname == 'gamepad' then
 		if menu.itemname == 'keyboard' then
@@ -619,7 +634,7 @@ function menu.f_run()
 	else
 		menu.currentMenu[1]()
 	end
-	return main.pauseMenu
+	return main.pauseMenuActive
 end
 
 -- Reset selection/scroll state recursively for a menu table (root + submenus)
@@ -714,6 +729,7 @@ local function f_commandlistData(t, str, align, col)
 		if m1 ~= '' then
 			table.insert(t_insert, {glyph = false, text = m1, align = align, col = col})
 		end
+		m2 = m2:gsub('&lt;', '<'):gsub('&gt;', '>'):gsub('&amp;', '&')
 		if not m2:match('^#[A-Za-z0-9]+$') and not m2:match('^/$') and not m2:match('^#$') then
 			table.insert(t_insert, {glyph = true, text = m2, align = align, col = col})
 		elseif m2:match('^#[A-Za-z0-9]+$') then
@@ -746,9 +762,11 @@ function menu.f_commandlistParse()
 				pn = pn + (member - 1) * 2
 			end
 			if player(pn) and aiLevel() == 0 then
-				local ref = getSelectNo()
-				if start.f_getCharData(ref).commandlist == nil then
-					local movelist = getCharMovelist(ref)
+				local movelist = getMovelist()
+				if sel.movelistText ~= movelist then
+					sel.movelistText = movelist
+					sel.commandlist = nil
+					sel.movelistLine = 1
 					if movelist ~= '' then
 						-- Replace glyph tokens with <token> for later lookup in motif.glyphs.
 						for k, v in main.f_sortKeys(motif.glyphs, function(t, a, b) return string.len(a) > string.len(b) end) do
@@ -759,7 +777,8 @@ function menu.f_commandlistParse()
 								if pos > 1 and s:sub(pos - 1, pos - 1) == '<' then
 									return k
 								end
-								return '<' .. k .. '>'
+								local escaped = k:gsub('&', '&amp;'):gsub('<', '&lt;'):gsub('>', '&gt;')
+								return '<' .. escaped .. '>'
 							end)
 						end
 						local t = {}
@@ -784,14 +803,14 @@ function menu.f_commandlistParse()
 							table.insert(t, subt)
 						end
 						t[#t] = nil --blank line produced by regexp matching
-						start.f_getCharData(ref).commandlist = t
+						sel.commandlist = t
 					end
 				end
 				table.insert(menu.t_movelists, {
 					pn = pn,
-					name = start.f_getCharData(ref).name,
+					name = displayName(),
 					tbl = sel,
-					commandlist = start.f_getCharData(ref).commandlist,
+					commandlist = sel.commandlist,
 				})
 			end
 		end
