@@ -22,4 +22,4 @@ Capcom and SNK are their own separate entities and reserve all rights to the cha
 
 Original Game: © Capcom Co., Ltd.
 
-Characters: © Capcom Co., Ltd. / SNK Corporation / ARIKA / Piko Interactive / Nintendo / SEGA / Disney / Bandai Namco / Data East
+Characters: © Capcom Co., Ltd. / SNK Corporation / ARIKA Co, Ltd. / Piko Interactive / Nintendo / SEGA / Disney / Bandai Namco Entertainment Inc. / Marvelous Inc.
