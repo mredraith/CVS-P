@@ -2171,43 +2171,20 @@ type = VelSet
 trigger1 = var(10) = 1
 trigger1 = Time = 0
 x = 7
-y = -6
+y = -7
 
 [State 220, Vel]
 type = VelSet
 trigger1 = var(10) = 2
 trigger1 = Time = 0
 x = 10
-y = -6
+y = -8
 
 [State 1200, PlaySnd]
 type = PlaySnd
 trigger1 = AnimElem = 4
 value = 1200, 0
 channel = 0
-
-[State 1200, VelAdd]
-type = VelAdd
-trigger1 = var(10) = 0
-trigger1 = Vel X > 0
-x = -.1
-
-[State 1210, VelAdd]
-type = VelAdd
-trigger1 = var(10) = 1
-trigger1 = Vel X > 0
-x = -.15
-
-[State 1210, VelAdd]
-type = VelAdd
-trigger1 = var(10) = 2
-trigger1 = Vel X > 0
-x = -.2
-
-[State 1200, VelAdd]
-type = VelAdd
-trigger1 = 1
-y = .4
 
 [State 1200, Anim]
 type = ChangeAnim
@@ -2594,7 +2571,7 @@ value = 1, 5
 
 [State 0, ChangeState]
 type = ChangeState
-trigger1 = time = 4
+trigger1 = ifElse(var(10) = 2, time = 10, ifElse(var(10) = 1, time = 7, time = 4))
 value = 1305
 ctrl = 0
 
@@ -2624,7 +2601,7 @@ y = 0
 [State 0, VelSet]
 type = VelSet
 trigger1 = animelem=12
-y = ifelse(var(10)=2,6,ifelse(var(10)=1,5,4))
+y = ifelse(var(10)=2,4,ifelse(var(10)=1,5,6))
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -2654,7 +2631,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = High
 air.type = Low
-ground.hitTime = 18 + 4 * var(9)
+ground.hitTime = (ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.slideTime = 17 + 4 * var(9)
 air.hitTime = 120
@@ -2701,7 +2678,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = High
 air.type = Low
-ground.hitTime = 18 + 4 * var(9)
+ground.hitTime = (ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.slideTime = 17 + 4 * var(9)
 air.hitTime = 120
@@ -2748,7 +2725,7 @@ air.animType = Back
 fall.animType = Back
 ground.type = Low
 air.type = Low
-ground.hitTime = 18 + 4 * var(9)
+ground.hitTime = (ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)
 guard.hittime = (18 + 4 * var(9)) - 6
 ground.slideTime = 17 + 4 * var(9)
 air.hitTime = 120
