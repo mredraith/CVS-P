@@ -1369,7 +1369,7 @@ round.time = 10 ;Time to show round display
 ;round.default.scale = 2,2
 round.default.anim = 80
 round.default.layerno = -1
-round.default.displaytime = 54;90
+round.default.displaytime = 60;90
 round.default.offset = 640, 360
 ;round.default.scale = 1,1
 ; Sounds to play for each round (optional, specify up to round 9)
@@ -1522,6 +1522,7 @@ shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 81,15, 0,0, 4
 81,16, 0,0, 4
 81,17, 0,0, 8
+81,24, 0,0, 1
 
 ;"Fight!"
 [Begin Action 81]

@@ -1,0 +1,43 @@
+; Definition file for Sagat
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Tall Sagat"
+versiondate =6,12,2012
+mugenversion =1.0
+author ="DivineWolf"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
+localCoord = 214,240
+
+; Files for the player
+[Files]
+movelist = movelist.dat
+sprite =DivineSagat.sff
+anim =DivineSagat.air
+sound =DivineSagat.snd
+cmd =DivineSagat.cmd
+cns =Coding\System.cns
+stcommon =common1.cns
+st =Coding\System.cns
+pal1=Colors\Default.act
+pal2=Colors\PAVGN_Lions.act
+pal3=Colors\PAVGN_CVS23K.act
+pal4=Colors\PAVGN_RedWings.act
+pal5=Colors\PAVGN_Blue.act
+pal6=Colors\PAVGN_Green.act
+pal7=Colors\Goodaldo_SF1.act
+pal8=Colors\Goodaldo_BruceIrvin.act
+pal9=Colors\Knuckles_Kratos.act
+pal10=Colors\Knuckles_Custom1.act
+pal11=Colors\Knuckles_MB-02.act
+pal12=Colors\20S.act
+st1=Coding\Normal.cns
+st2=Coding\Helpers.cns
+st3=Coding\Specials.cns
+st4=Coding\Supers.cns
+
+;Arcade mode
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard=

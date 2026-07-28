@@ -831,31 +831,23 @@ type = normal
 spriteno = 200,0
 start = -640,0
 
-[SelectBG Blue Panels]
+[SelectBG Side Panels]
 type = normal
 spriteno = 200,1
 start = -640,0
-mask=1 
-
-[SelectBG Dots]
-type = normal
-spriteno = 200,4
-start = -640,0
-velocity = 0, -1
-tile = 1,1
-mask=1
+mask=0
 
 [SelectBG Portrait 1]
 type = normal
 spriteno = 200,5
 start = -588,77
-mask=1
+mask=0
 
 [SelectBG Portrait 2]
 type = normal
 spriteno = 200,6
 start = 319,77
-mask=1
+mask=0
 
 [SelectBG Transition]
 type = anim

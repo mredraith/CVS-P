@@ -99,7 +99,10 @@ yuki, random, order=1
 poison, random, order=1
 Evil Ryu, random, order=3
 Dictator, random, order=2
-sagat, random, order=1
+slot = {
+  sagat, random, order=1, previous=w, next=d
+  Tall Sagat, previous=w, next=d
+}
 adon, random, order=1
 leo, random, order=1
 jill, random, order=1
