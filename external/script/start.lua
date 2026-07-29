@@ -785,13 +785,33 @@ local function getParams(side, member, t, subname)
 	return paramsSide, params
 end
 
-local function drawPortraitRandom(randomCfg)
+local function drawPortraitRandom(randomCfg, side, member, paramsSide, params)
 	if not randomCfg then
 		return false
 	end
 	local spr = randomCfg.spr
 	if randomCfg.anim >= 0 or (spr and spr[1] >= 0 and spr[2] >= 0) then
-		main.f_animPosDraw(randomCfg.AnimData)
+		local x = f_portraitsXCalc(side, member, paramsSide, params)
+		local y = paramsSide.pos[2] + params.offset[2] + (member - 1) * paramsSide.spacing[2]
+		animSetPos(randomCfg.AnimData, x, y)
+		animDraw(randomCfg.AnimData)
+		animUpdate(randomCfg.AnimData)
+		return true
+	end
+	return false
+end
+
+local function drawPortraitSlot(slotCfg, side, member, paramsSide, params)
+	if not slotCfg then
+		return false
+	end
+	local spr = slotCfg.spr
+	if slotCfg.anim >= 0 or (spr and spr[1] >= 0 and spr[2] >= 0) then
+		local x = f_portraitsXCalc(side, member, paramsSide, params)
+		local y = paramsSide.pos[2] + params.offset[2] + (member - 1) * paramsSide.spacing[2]
+		animSetPos(slotCfg.AnimData, x, y)
+		animDraw(slotCfg.AnimData)
+		animUpdate(slotCfg.AnimData)
 		return true
 	end
 	return false
@@ -879,11 +899,12 @@ function start.f_drawPortraits(t_portraits, side, t, subname, last, iconDone)
 	end
 	-- draw random portraits (per member; required for co-op)
 	for m = 1, #t_portraits do
+		local paramsSide, params = getParams(side, m, t, subname)
 		if t_portraits[m].inRandom then
 			local pn = 2 * (m - 1) + side
 			local pData = f_getMotifP(t, pn, side)
 			-- face2 layer random portrait
-			if pData.face2.random and drawPortraitRandom(pData.face2.random) then
+			if pData.face2.random and drawPortraitRandom(pData.face2.random, side, m, paramsSide, params) then
 				t_portraits[m].skipCurrent = true
 			end
 			-- primary face random portrait
@@ -891,8 +912,33 @@ function start.f_drawPortraits(t_portraits, side, t, subname, last, iconDone)
 			if subname and subname ~= '' then
 				baseFace = baseFace[subname]
 			end
-			if baseFace.random and drawPortraitRandom(baseFace.random) then
+			if baseFace.random and drawPortraitRandom(baseFace.random, side, m, paramsSide, params) then
 				t_portraits[m].skipCurrent = true
+			end
+		end
+	end
+	-- draw slot indicator
+	for m = 1, #t_portraits do
+		local pn = 2 * (m - 1) + side
+		local pData = f_getMotifP(t, pn, side)
+
+		local baseFace = pData
+		if subname and subname ~= '' then
+			baseFace = baseFace[subname]
+		end
+		-- only show slot indicator while the char is not confirmed
+		if t_portraits[m].ref ~= nil and not start.p[side].t_selTemp[m].slotConfirmed then
+			local paramsSide, params = getParams(side, m, t, subname)
+			local charInfo = main.t_selChars[t_portraits[m].ref + 1]
+			if charInfo and charInfo.hasSlot then
+				-- face2 slot
+				if pData.face2.slot then
+					drawPortraitSlot(pData.face2.slot, side, m, paramsSide, params)
+				end
+				-- primary face slot
+				if baseFace.slot then
+					drawPortraitSlot(baseFace.slot, side, m, paramsSide, params)
+				end
 			end
 		end
 	end
@@ -2505,6 +2551,16 @@ function start.updateDrawList()
 						end
 					end
 					table.insert(drawList, item)
+					local grid = main.t_selGrid[cellIndex]
+					local hasMultipleChars = grid ~= nil and #grid.chars > 1
+					-- draw slot indicator
+					if hasMultipleChars and hasPortraitAnim(motif.select_info.cell.slot) then
+						local icon = getTransforms(motif.select_info.cell.slot)
+						icon.anim = motif.select_info.cell.slot.AnimData
+						icon.x = motif.select_info.pos[1] + t.x
+						icon.y = motif.select_info.pos[2] + t.y
+						table.insert(drawList, icon)
+					end
 				end
 			end
 		end
@@ -2627,6 +2683,9 @@ function start.f_selectScreen()
 		if start.needUpdateDrawList then
 			staticDrawList = start.updateDrawList()
 			start.needUpdateDrawList = false 
+		end
+		for _, item in ipairs(staticDrawList) do
+			animUpdate(item.anim)
 		end
 		batchDraw(staticDrawList)
 		--draw done cursors
@@ -3435,6 +3494,7 @@ function start.f_selectMenu(side, cmd, player, member, selectState)
 					ref = start.c[player].selRef,
 					cell = start.c[player].cell,
 					inRandom = false,
+					slotConfirmed = false,
 					face_anim = pCfg.face.anim,
 					face_data = start.f_animGet(start.c[player].selRef, side, member, pCfg.face, nil, true),
 					face2_anim = pCfg.face2.anim,
@@ -3545,6 +3605,7 @@ function start.f_selectMenu(side, cmd, player, member, selectState)
 					end
 					start.p[side].t_selTemp[member].pal = main.f_btnPalNo(cmd)
 					start.p[side].t_selTemp[member].inRandom = false
+					start.p[side].t_selTemp[member].slotConfirmed = true
 					if start.p[side].t_selTemp[member].pal == nil or start.p[side].t_selTemp[member].pal == 0 then
 						start.p[side].t_selTemp[member].pal = 1
 					end
@@ -3561,15 +3622,18 @@ function start.f_selectMenu(side, cmd, player, member, selectState)
 					local done_anim2 = pCfg.face2.done.anim
 					local done_spr = pCfg.face.done.spr
 					local palmenu_preview_anim = pCfg.palmenu.preview.anim
+					local palmenu_preview_spr = pCfg.palmenu.preview.spr
 					local face_anim = start.p[side].t_selTemp[member].face_anim
 					local face2_anim = start.p[side].t_selTemp[member].face2_anim
 					local canShow = main.coop or motif.select_info['p' .. side].face.num > 1 or main.f_tableLength(start.p[side].t_selected) + 1 == start.p[side].numChars
 					local canShow2 = main.coop or motif.select_info['p' .. side].face2.num > 1 or main.f_tableLength(start.p[side].t_selected) + 1 == start.p[side].numChars
 					-- primary face "done" / preview
-					if (face_anim ~= done_anim or done_spr[1] ~= -1) and canShow then
-						if motif.select_info.paletteselect == 0 and (done_anim ~= -1 or done_spr[1] ~= -1) then
-							setDoneAnim(start.c[player].selRef, side, member, pCfg.face.done, pCfg.face, 'face_data')
-						elseif palmenu_preview_anim ~= -1 and motif.select_info.paletteselect ~= 0 then
+					if canShow then
+						if motif.select_info.paletteselect == 0 then
+							if (face_anim ~= done_anim or done_spr[1] ~= -1) and (done_anim ~= -1 or done_spr[1] ~= -1) then
+								setDoneAnim(start.c[player].selRef, side, member, pCfg.face.done, pCfg.face, 'face_data')
+							end
+						elseif palmenu_preview_anim ~= -1 or palmenu_preview_spr[1] ~= -1 then
 							start.f_playWave(start.c[player].selRef, 'cursor', motif.select_info['p' .. side].palmenu.preview.snd[1], motif.select_info['p' .. side].palmenu.preview.snd[2])
 							setDoneAnim(start.c[player].selRef, side, member, pCfg.palmenu.preview, pCfg.face, 'face_data')
 						end
@@ -4192,6 +4256,9 @@ function start.f_selectVersus(active, t_orderSelect, loadStartArg)
 			if bgLoading and loadStarted then
 				loadCancel()
 				clearSelected()
+			end
+			if main.replayActive then
+				start.exit = true
 			end
 			fadeOutInit(motif.vs_screen.fadeout.FadeData)
 			fadeOutStarted = true

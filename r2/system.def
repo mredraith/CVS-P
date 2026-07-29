@@ -831,23 +831,31 @@ type = normal
 spriteno = 200,0
 start = -640,0
 
-[SelectBG Side Panels]
+[SelectBG Blue Panels]
 type = normal
 spriteno = 200,1
 start = -640,0
-mask=0
+mask=1			  
+
+[SelectBG Dots]
+type = normal
+spriteno = 200,4
+start = -640,0
+velocity = 0, -1
+tile = 1,1
+mask=1		  
 
 [SelectBG Portrait 1]
 type = normal
 spriteno = 200,5
 start = -588,77
-mask=0
+mask=1			   
 
 [SelectBG Portrait 2]
 type = normal
 spriteno = 200,6
 start = 319,77
-mask=0
+mask=1			  
 
 [SelectBG Transition]
 type = anim
@@ -855,6 +863,16 @@ actionno = 205
 layerno = 1
 start = -640,0
 
+
+
+[Begin Action 205]
+205,0, 0,0, 2, , , 2,2
+205,1, 0,0, 2, , , 2,2
+205,2, 0,0, 2, , , 2,2
+205,3, 0,0, 2, , , 2,2
+205,4, 0,0, 2, , , 2,2
+205,5, 0,0, 2, , , 2,2
+0,0, 0,0, -1
 ;-------------------------------------------------------------------
 [VS Screen]
 time = 420;360;200 ;Time to show screen

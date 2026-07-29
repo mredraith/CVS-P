@@ -1,4 +1,4 @@
-	if not main.makeRoster then
+if not main.makeRoster then
 	launchFight{}
 	setMatchNo(-1)
 	return
