@@ -12,7 +12,7 @@
 
 # Rules
 mapset{map: "_potstag_cfg_gauge_cost"; value: 100.0}				# Gauge percentage spent when breaking tag rules (Counter Tag etc)
-mapset{map: "_potstag_cfg_gauge_multiplier"; value: 1.0}			# Multiplier for Tag gauge gain. Determines how fast it fills up
+mapset{map: "_potstag_cfg_gauge_multiplier"; value: 2.0}			# Multiplier for Tag gauge gain. Determines how fast it fills up
 mapset{map: "_potstag_cfg_tagin_pause"; value: 0}					# Pause game while switching characters. Adds delay when tagging out from neutral
 mapset{map: "_potstag_cfg_tagin_crossup"; value: 1}					# Allow partners to tag in from opposite side of enemy
 mapset{map: "_potstag_cfg_tagin_loseredlife"; value: 0}				# Lose recoverable health when tagging in
@@ -33,12 +33,12 @@ mapset{map: "_potstag_cfg_intro_tagout_on_round_call"; value: 1}	# Partners leav
 																	# Disabling both intro options makes partners wait for the fight to start
 
 # Tag gauge text
-mapset{map: "_potstag_cfg_text_font"; value: -1}					# Font number to use from the lifebars. Default -1 (debug font)
+mapset{map: "_potstag_cfg_text_font"; value: 1}					# Font number to use from the lifebars. Default -1 (debug font)
 mapset{map: "_potstag_cfg_text_layer"; value: 0}					# Layer number for text. 0 behind chars. 1 in front
-mapset{map: "_potstag_cfg_text_scale"; value: 0.55}					# Font scale
-mapset{map: "_potstag_cfg_text_posx"; value: 89}					# X offset
-mapset{map: "_potstag_cfg_text_posy"; value: 41}					# Y offset
-mapset{map: "_potstag_cfg_text_flash"; value: 1}					# Flash text when at 100%
+mapset{map: "_potstag_cfg_text_scale"; value: 1}					# Font scale
+mapset{map: "_potstag_cfg_text_posx"; value: 120}					# X offset
+mapset{map: "_potstag_cfg_text_posy"; value: 34}					# Y offset
+mapset{map: "_potstag_cfg_text_flash"; value: 0}					# Flash text when at 100%
 mapset{map: "_potstag_cfg_text_darken"; value: 1}					# Darken text when not at 100%
 mapset{map: "_potstag_cfg_text_shadow"; value: 1}					# Draw shadows under text
 
@@ -756,7 +756,7 @@ ignorehitpause if teamMode = Tag && const(Default.Enable.Tag) && !isHelper && te
 				if teamside = 1 {
 					text{
 						font: F map(_potstag_cfg_text_font);
-						text: "%d%% x TAG";
+						text: "%d%% TAG";
 						params: $tagpercent;
 						removetime: 1;
 						layerno: map(_potstag_cfg_text_layer);
@@ -770,7 +770,7 @@ ignorehitpause if teamMode = Tag && const(Default.Enable.Tag) && !isHelper && te
 				} else {
 					text{
 						font: F map(_potstag_cfg_text_font);
-						text: "TAG x %d%%";
+						text: "TAG %d%%";
 						params: $tagpercent;
 						removetime: 1;
 						layerno: map(_potstag_cfg_text_layer);
@@ -788,7 +788,7 @@ ignorehitpause if teamMode = Tag && const(Default.Enable.Tag) && !isHelper && te
 			if teamside = 1 {
 				text{
 					font: F map(_potstag_cfg_text_font);
-					text: "%d%% x TAG";
+					text: "%d%% TAG";
 					params: $tagpercent;
 					removetime: 1;
 					layerno: map(_potstag_cfg_text_layer);
@@ -802,7 +802,7 @@ ignorehitpause if teamMode = Tag && const(Default.Enable.Tag) && !isHelper && te
 			} else {
 				text{
 					font: F map(_potstag_cfg_text_font);
-					text: "TAG x %d%%";
+					text: "TAG %d%%";
 					params: $tagpercent;
 					removetime: 1;
 					layerno: map(_potstag_cfg_text_layer);
