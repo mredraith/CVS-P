@@ -123,7 +123,7 @@ channel = 3
 [State 210, HitDef]
 type = HitDef
 trigger1 = !var(16) && (var(15) < 1 || var(20))
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 4
 forceNoFall = !var(20)
 attr = S, NA
 hitFlag = MAF
@@ -369,8 +369,8 @@ air.animType = Back
 fall.animType = Back
 ground.type = Low
 air.type = Low
-ground.hitTime = 18 + 4 * var(9)
-guard.hittime = (18 + 4 * var(9)) - 6
+ground.hitTime = 25 + 4 * var(9)
+guard.hittime = (25 + 4 * var(9)) - 6
 ground.slideTime = 18 + 4 * var(9)
 air.hitTime = 120
 ground.velocity = ifElse(var(20), -5.77, -10.52), 0
@@ -1503,10 +1503,7 @@ channel = 3
 
 [State 610, HitDef]
 type = HitDef
-triggerAll = !var(16) && (var(15) < (1 + HitCount) || var(20))
-trigger1 = AnimElem = 6
-trigger2 = AnimElem = 10
-trigger3 = AnimElem = 14
+trigger1 = AnimElem = 6 || AnimElem = 10 || AnimElem = 14 || AnimElem = 18 || AnimElem = 22 || AnimElem = 26 || AnimElem = 30 || AnimElem = 34 || AnimElem = 38 || AnimElem = 42
 forceNoFall = !var(20)
 attr = A, NA
 hitFlag = MAF
