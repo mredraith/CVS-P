@@ -414,48 +414,48 @@ time = 16
 
 [Command]
 name = "Special3"
-command = ~B, D, DB, x
+command = ~D, DB, B, x
 time = 20
 
 [Command]
 name = "Special3"
-command = ~B, D, DB, y
+command = ~D, DB, B, y
 time = 20
 
 [Command]
 name = "Special3"
-command = ~B, D, DB, z
+command = ~D, DB, B, z
 time = 20
 
 [Command]
 name = "Special3"
-command = ~B, D, DB, ~x
+command = ~D, DB, B, ~x
 time = 20
 
 [Command]
 name = "Special3"
-command = ~B, D, DB, ~y
+command = ~D, DB, B, ~y
 time = 20
 
 [Command]
 name = "Special3"
-command = ~B, D, DB, ~z
+command = ~D, DB, B, ~z
 time = 20
 
 
 [Command]
 name = "EXSpecial3"
-command = ~B, D, DB, x+y
+command = ~D, DB, B, x+y
 time = 20
 
 [Command]
 name = "EXSpecial3"
-command = ~B, D, DB, y+z
+command = ~D, DB, B, y+z
 time = 20
 
 [Command]
 name = "EXSpecial3"
-command = ~B, D, DB, x+z
+command = ~D, DB, B, x+z
 time = 20
 
 [Command]

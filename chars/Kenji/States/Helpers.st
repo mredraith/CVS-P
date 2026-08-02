@@ -1128,7 +1128,7 @@ value = 1
 
 [State 25001, 6]
 type = selfstate
-trigger1 = time = 105
+trigger1 = !animtime
 value = 0
 ctrl = 1
 

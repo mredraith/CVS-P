@@ -685,7 +685,6 @@ ownpal = 1
 
 [State -3,Super]
 type = Helper
-triggerall = frontedgebodydist > 200
 trigger1= AnimElem=7
 id = 1101
 name = "firecolumn"
@@ -698,35 +697,6 @@ ownpal = 1
 
 [State -3,Super]
 type = Helper
-triggerall = frontedgebodydist <= 200 && facing = 1
-trigger1= AnimElem=7
-id = 1101
-name = "firecolumn"
-pos = -25*const(size.xscale),const(size.yscale)
-postype = right
-stateno = 1101
-helpertype = normal
-facing = 1
-keyctrl = 0
-ownpal = 1
-
-[State -3,Super]
-type = Helper
-triggerall = frontedgebodydist <= 200 && facing = -1
-trigger1= AnimElem=7
-id = 1101
-name = "firecolumn"
-pos = 25*const(size.xscale),const(size.yscale)
-postype = left
-stateno = 1101
-helpertype = normal
-facing = -1
-keyctrl = 0
-ownpal = 1
-
-[State -3,Super]
-type = Helper
-triggerall = frontedgebodydist > 260
 trigger1= AnimElem=7
 id = 1101
 name = "firecolumn"
@@ -736,36 +706,6 @@ stateno = 1101
 helpertype = normal
 keyctrl = 0
 ownpal = 1
-
-[State -3,Super]
-type = Helper
-triggerall = frontedgebodydist <= 260 && facing = 1
-trigger1= AnimElem=7
-id = 1101
-name = "firecolumn"
-pos = -25*const(size.xscale),const(size.yscale)
-postype = right
-stateno = 1101
-helpertype = normal
-keyctrl = 0
-facing = 1
-ownpal = 1
-persistent = 1
-
-[State -3,Super]
-type = Helper
-triggerall = frontedgebodydist <= 260 && facing = -1
-trigger1= AnimElem=7
-id = 1101
-name = "firecolumn"
-pos = 25*const(size.xscale),const(size.yscale)
-postype = left
-stateno = 1101
-facing = -1
-helpertype = normal
-keyctrl = 0
-ownpal = 1
-persistent = 1
 
 [State 1030, ChangeState]
 type = ChangeState
@@ -816,20 +756,7 @@ channel = 16
 
 [State 0, StopSnd]
 type = StopSnd
-trigger1= var (10) = 2
-trigger1 = time= 60 
-channel = 16
-
-[State 0, StopSnd]
-type = StopSnd
-trigger1= var (10) = 1
-trigger1 = time= 72 
-channel = 16
-
-[State 0, StopSnd]
-type = StopSnd
-trigger1= var (10) = 0
-trigger1 = time= 84 
+trigger1 = time= 40 
 channel = 16
 
 [State -3,Super]

@@ -836,7 +836,7 @@ channel=2
 [State 220, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1= animelem=6
+trigger1= animelem=5||animelem=6
 forcenofall = !var(20)
 attr = S,NA
 hitflag = MAF
@@ -1867,7 +1867,7 @@ channel = 2
 [State 420, Hit]
 type=hitdef
 trigger1= !var(16) && (var(15)<1 || var(20))
-trigger1= animelem=6
+trigger1= animelem=5 || animelem=6
 forcenofall = !var(20)
 attr = C,NA
 hitflag = MAF
@@ -3321,67 +3321,16 @@ ownpal = 1
 random = 0, 5
 sprpriority = 3
 
-[State 650, Gravity]
-type = Gravity
-trigger1 = AnimElem=9,>1
-
 [State 350]
-type = VelSet
+type = VelAdd
 trigger1 = Animelem = 9
-x = 0
-y = -.25
+x = -7.07
+y = -7.07
 
-[State 350]
-type = VelSet
-trigger1 = Animelem = 10
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 11
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 12
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 13
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 14
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 15
-x = 0
-y = -.25
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 10
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 11
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 12
-x = -3
-
+[State 650]
+type = CtrlSet
+trigger1 = AnimElem >= 20
+value = 1
 
 [State 350]
 type = ChangeState
@@ -3535,66 +3484,16 @@ ownpal = 1
 random = 0, 5
 sprpriority = 3
 
-[State 650, Gravity]
-type = Gravity
-trigger1 = AnimElem=9,>1
-
 [State 350]
-type = VelSet
+type = VelAdd
 trigger1 = Animelem = 9
-x = 0
-y = -.25
+x = -7.07
+y = -7.07
 
-[State 350]
-type = VelSet
-trigger1 = Animelem = 10
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 11
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 12
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 13
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 14
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 15
-x = 0
-y = -.25
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 10
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 11
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 12
-x = -3
+[State 650]
+type = CtrlSet
+trigger1 = AnimElem >= 20
+value = 1
 
 [State 350]
 type = ChangeState
@@ -3747,67 +3646,15 @@ ownpal = 1
 random = 0, 5
 sprpriority = 3
 
-[State 650, Gravity]
-type = Gravity
-trigger1 = AnimElem=9,>1
-
 [State 350]
-type = VelSet
+type = VelAdd
 trigger1 = Animelem = 9
-x = 0
-y = -.25
+y = -10
 
-[State 350]
-type = VelSet
-trigger1 = Animelem = 10
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 11
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 12
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 13
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 14
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 15
-x = 0
-y = -.25
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 10
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 11
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 12
-x = -3
-
+[State 650]
+type = CtrlSet
+trigger1 = AnimElem >= 20
+value = 1
 
 [State 350]
 type = ChangeState
@@ -3960,67 +3807,15 @@ ownpal = 1
 random = 0, 5
 sprpriority = 3
 
-[State 650, Gravity]
-type = Gravity
-trigger1 = AnimElem=9,>1
-
 [State 350]
-type = VelSet
+type = VelAdd
 trigger1 = Animelem = 9
-x = 0
-y = -.25
+x = -10
 
-[State 350]
-type = VelSet
-trigger1 = Animelem = 10
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 11
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 12
-x = 0
-y = -1.5
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 13
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 14
-x = 0
-y = -.25
-
-[State 350]
-type = VelSet
-trigger1 = Animelem = 15
-x = 0
-y = -.25
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 10
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 11
-x = -3
-
-[State 350]
-type = posadd
-trigger1 = Animelem = 12
-x = -3
-
+[State 650]
+type = CtrlSet
+trigger1 = AnimElem >= 20
+value = 1
 
 [State 350]
 type = ChangeState
