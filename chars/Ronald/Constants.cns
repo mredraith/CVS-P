@@ -125,7 +125,7 @@ airjump.back = -3.5    ;Air jump speeds (opt)
 airjump.fwd = 3.5         
 
 [Movement]
-airJump.num = 9999999
+airJump.num = 0
 airJump.height = 0
 yaccel = 0.46875
 stand.friction = 0.85
@@ -158,9 +158,9 @@ victory7 = "I love music and sports! And I can dance and ride a skateboard. What
 
 ;Special Quotes
 ;Vs.Donald/Ronald
-victory8 = "You are whether the imitation of me?"
+victory8 = "Is this but a pale imitation of me?"
 ;Vs.Colonel Sanders
-victory9 = "It's won all of McDonald's!"
+victory9 = "I've won this for all of McDonald's!"
 ;Vs.Miku Hatsune
 victory10 = "I want to sing with you!"
 

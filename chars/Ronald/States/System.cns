@@ -1805,34 +1805,6 @@ type = PosFreeze
 trigger1 = Time < 1 && PrevStateNo = 40
 value = 1
 
-[State 50, Drift Forward]
-type = veladd
-triggerall = StateType = a
-triggerall = ctrl = 1
-trigger1 = Command = "holdfwd"
-x = 0.2
-
-[State 50, Drift Backward]
-type = veladd
-triggerall = StateType = a
-triggerall = ctrl = 1
-trigger1 = Command = "holdback"
-x = -0.2
-
-[State 50, Drift Up]
-type = veladd
-triggerall = StateType = a
-triggerall = ctrl = 1
-trigger1 = Command = "holdup"
-y = -0.2
-
-[State 50, Drift Down]
-type = veladd
-triggerall = StateType = a
-triggerall = ctrl = 1
-trigger1 = Command = "holddown"
-y = 0.2
-
 [State 50, Gravity]
 type = Gravity
 trigger1 = Time >= 1 || PrevStateNo != 40
@@ -5755,3 +5727,27 @@ trigger1 = p2dist X < -5
 type = posset
 trigger1 = pos y <= -150
 y = -150
+
+[State +1, Drift Forward]
+type = veladd
+triggerall = StateType = a
+trigger1 = Command = "holdfwd"
+x = 0.2
+
+[State +1, Drift Backward]
+type = veladd
+triggerall = StateType = a
+trigger1 = Command = "holdback"
+x = -0.2
+
+[State +1, Drift Up]
+type = veladd
+triggerall = StateType = a
+trigger1 = Command = "holdup"
+y = -0.2
+
+[State +1, Drift Down]
+type = veladd
+triggerall = StateType = a
+trigger1 = Command = "holddown"
+y = 0.2

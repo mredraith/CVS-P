@@ -49,14 +49,14 @@ air.type=Low
 ground.slidetime=12 + 2 * var(9)
 ground.hittime =12 + 2 * var(9)
 guard.hittime = (12 + 2 * var(9)) - 6
-ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 air.velocity=-4.21,-7.36
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 air.hittime=120
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 fall.recoverTime=120
@@ -127,13 +127,13 @@ ground.slidetime=15 + 3*var(9)
 ground.hittime=15 + 3*var(9)
 guard.hittime = (15 + 3*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 air.velocity=-3.24, -7.73
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 fall.recoverTime=120
@@ -209,7 +209,7 @@ ground.slidetime=18 + 4*var(9)
 ground.hittime=18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-9,-10.52)*(ifelse(!var(20),1,.5)))
 air.velocity=-5.39, -5.65
 ground.cornerPush.velOff=0
@@ -422,13 +422,13 @@ ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 fall.recovertime=120
@@ -505,13 +505,13 @@ ground.slidetime=15 + 3*var(9)
 ground.hittime=15 + 3*var(9)
 guard.hittime = (15 + 3*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 fall.recovertime=120
@@ -589,13 +589,13 @@ ground.slidetime = 20 + 4*var(9)
 ground.hittime = 20 + 4*var(9)
 guard.hittime = (20 + 4*var(9)) - 6
 air.hittime = 120
-ground.velocity =Ifelse(var(20),-6,-12)
+ground.velocity =(Ifelse(var(20),-6,-12) - (combocount * 0.0125))
 guard.velocity = Ifelse(var(20),-6,-12)
 air.velocity = -5.5,-6.8
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel = .58
+yaccel = (.58 + (combocount * 0.0125))
 fall = 0
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -667,13 +667,13 @@ ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 air.velocity=-4.21,-7.36
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 palFX.time=12 * var(9)
@@ -750,13 +750,13 @@ ground.slidetime=12 + 3*var(9)
 ground.hittime=12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 air.velocity=-3.24, -7.73
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 palFX.time=12 * var(9)
@@ -839,14 +839,14 @@ ground.slidetime = Ifelse(var(55)=2,20,18) + 4*var(9)
 ground.hittime = Ifelse(var(55)=2,20,18) + 4*var(9)
 guard.hittime = (Ifelse(var(55)=2,20,18) + 4*var(9)) - 6
 air.hittime = Ifelse(var(55)=2,20,120)
-ground.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-4.5,-9)),Ifelse(var(55)=2,-10,0)
+ground.velocity = (Ifelse(var(55)=2,-1,Ifelse(var(20),-4.5,-9)) - (combocount * 0.0125)),Ifelse(var(55)=2,-10,0)
 guard.velocity = Ifelse(var(20),-4.5,-9)
 air.velocity = Ifelse(var(55)=2,-1,Ifelse(var(20),-2.5,-5)),Ifelse(var(55)=2,-10,-6)
 airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel = Ifelse(var(55)=2,.4,.65)
+yaccel = (Ifelse(var(55)=2,.4,.65) + (combocount * 0.0125))
 fall = 0
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -890,7 +890,7 @@ airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel = Ifelse(var(55)=2,.4,.65)
+yaccel = (Ifelse(var(55)=2,.4,.65) + (combocount * 0.0125))
 fall = 1
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -978,13 +978,13 @@ ground.slidetime=12 + 2*var(9)
 ground.hittime=12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-3,-5.49)*(ifelse(!var(20),1,.5)))
 air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 palFX.time=12 * var(9)
@@ -1055,13 +1055,13 @@ ground.slidetime=15 + 2*var(9)
 ground.hittime=15 + 2*var(9)
 guard.hittime = (15 + 2*var(9)) - 6
 air.hittime=120
-ground.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
+ground.velocity=(ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5))) - (combocount * 0.0125))
 guard.velocity=ceil(Ifelse(var(55),-5,-7.51)*(ifelse(!var(20),1,.5)))
 air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yaccel=(.58 + (combocount * 0.0125))
 fall=0
 fall.recover=0
 palFX.time=12 * var(9)
@@ -1146,8 +1146,8 @@ air.hittime=120
 fall=1
 fall.recover=1
 fall.recovertime=120
-yaccel=.58
-ground.velocity=-1.5, -6
+yaccel=(.58 + (combocount * 0.0125))
+ground.velocity=(-1.5 - (combocount * 0.0125)), -6
 guard.velocity=Ifelse(var(20),-3,-6)
 air.velocity=-1.5, -6
 ground.cornerPush.velOff=0
@@ -1261,19 +1261,19 @@ ground.type=High
 ground.slidetime=12 + 2*var(9)
 ground.hittime =12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
-ground.velocity=Ifelse(var(20),-2,-4)
+ground.velocity=(Ifelse(var(20),-2,-4) - (combocount * 0.0125))
 guard.velocity=Ifelse(var(20),-2,-4)
 air.animType = Back
 fall.animType = Back
 air.type = High
-air.velocity = Ifelse(var(20)||var(55)=2,-1,-3),Ifelse(var(55)=2,-3.5,-7)
+air.velocity = -2.5, -4
 airguard.velocity = -4.75, -0.5
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.hittime = Ifelse(var(55)=2, 12, 120)
+air.hittime = 120
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yaccel = (.58 + (combocount * 0.0125))
 fall = 0
 fall.recover = 0
 palFX.time = 12 * var(9)
@@ -1294,6 +1294,11 @@ type=ChangeState
 trigger1=!AnimTime
 value=50
 ctrl=1
+
+[State 600, Ctrlset]
+type = CtrlSet
+trigger1 = animelem >= 4
+value = 1
 
 [State 600, End]
 type=ChangeState
@@ -1345,19 +1350,19 @@ ground.type=High
 ground.slidetime=12 + 3*var(9)
 ground.hittime =12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
-ground.velocity=Ifelse(var(20),-2,-4)
+ground.velocity=(Ifelse(var(20),-2,-4) - (combocount * 0.0125))
 guard.velocity=Ifelse(var(20),-2,-4)
 air.animType=Back
 fall.animType=Back
 air.type=High
-air.velocity = Ifelse(var(20)||var(55)=2,-1,-3),Ifelse(var(55)=2,-3.5,-7)
+air.velocity = -2, -5
 airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.hittime = Ifelse(var(55)=2, 12, 120)
+air.hittime = 120
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yaccel = (.58 + (combocount * 0.0125))
 fall = 0
 fall.recover = 0
 palFX.time = 12 * var(9)
@@ -1378,6 +1383,11 @@ type=ChangeState
 trigger1=!AnimTime
 value=50
 ctrl=1
+
+[State 610, Ctrlset]
+type = CtrlSet
+trigger1 = animelem >= 5
+value = 1
 
 [State 610, End]
 type=ChangeState
@@ -1430,19 +1440,19 @@ ground.type=High
 ground.slidetime=12 + 4*var(9)
 ground.hittime =12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
-ground.velocity = Ifelse(var(20),-2.5,-5)
+ground.velocity = (Ifelse(var(20),-2.5,-5) - (combocount * 0.0125))
 guard.velocity = Ifelse(var(20),-2.5,-5)
 air.animType=Back
 fall.animType=Back
 air.type=High
-air.velocity = Ifelse(var(55)=2,-4,Ifelse(var(20),-2,-5)),Ifelse(var(55)=2,-1,Ifelse(var(20),-3,-5))
+air.velocity = -6, -6
 airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.hittime = Ifelse(var(55)=2, 32, 120)
+air.hittime = 120
 airguard.ctrlTime = 16
-yaccel = Ifelse(var(55)=2,1,.58)
+yaccel = (Ifelse(var(55)=2,1,.58) + (combocount * 0.0125))
 fall = 1
 air.fall=var(55)=2
 fall.recover = var(55)!=2
@@ -1465,6 +1475,11 @@ type=ChangeState
 trigger1=!AnimTime
 value=50
 ctrl=1
+
+[State 620, Ctrlset]
+type = CtrlSet
+trigger1 = animelem >= 8
+value = 1
 
 [State 620, End]
 type=ChangeState
@@ -1519,17 +1534,17 @@ ground.type=High
 ground.slidetime=12 + 2*var(9)
 ground.hittime =12 + 2*var(9)
 guard.hittime = (12 + 2*var(9)) - 6
-ground.velocity=Ifelse(var(20),-2,-4)
+ground.velocity=(Ifelse(var(20),-2,-4) - (combocount * 0.0125))
 guard.velocity=Ifelse(var(20),-2,-4)
 air.type=High
-air.velocity =Ifelse(var(20)||var(55)=2,-1,-3),Ifelse(var(55)=2,-3.5,-7)
+air.velocity =-2.5, -4
 airguard.velocity = -5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.hittime = Ifelse(var(55)=2, 12, 120)
+air.hittime = 120
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yaccel = (.58 + (combocount * 0.0125))
 fall = 0
 fall.recover = 0
 palFX.time = 12 * var(9)
@@ -1550,6 +1565,11 @@ type=ChangeState
 trigger1=!AnimTime
 value=50
 ctrl=1
+
+[State 630, Ctrlset]
+type = CtrlSet
+trigger1 = animelem >= 4
+value = 1
 
 [State 630, End]
 type=ChangeState
@@ -1602,19 +1622,19 @@ ground.type=High
 ground.slidetime=12 + 3*var(9)
 ground.hittime =12 + 3*var(9)
 guard.hittime = (12 + 3*var(9)) - 6
-ground.velocity=Ifelse(var(20),-2.5,-5)
+ground.velocity=(Ifelse(var(20),-2.5,-5) - (combocount * 0.0125))
 guard.velocity=Ifelse(var(20),-2.5,-5)
 air.animType=Back
 fall.animType=Back
 air.type=High
-air.velocity = Ifelse(var(20)||var(55)=2,-1,-3),Ifelse(var(55)=2,-3.5,-7)
+air.velocity = -3, -5
 airguard.velocity = -6,-1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.hittime = Ifelse(var(55)=2, 12, 120)
+air.hittime = 120
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yaccel = (.58 + (combocount * 0.0125))
 fall = 0
 fall.recover = 0
 palFX.time = 12 * var(9)
@@ -1642,6 +1662,11 @@ type=ChangeState
 trigger1=!AnimTime
 value=50
 ctrl=1
+
+[State 640, Ctrlset]
+type = CtrlSet
+trigger1 = animelem >= 7
+value = 1
 
 [State 640, End]
 type=ChangeState
@@ -1694,19 +1719,19 @@ ground.type=Low
 ground.slidetime=12 + 4*var(9)
 ground.hittime =12 + 4*var(9)
 guard.hittime = (12 + 4*var(9)) - 6
-ground.velocity=Ifelse(var(20),-2.5,-5)
+ground.velocity=(Ifelse(var(20),-2.5,-5) - (combocount * 0.0125))
 guard.velocity=Ifelse(var(20),-2.5,-5)
 air.animType=Back
 fall.animType=Back
 air.type=Low
-air.velocity =Ifelse(var(55)=2,-5,Ifelse(var(20),-2,-5)),Ifelse(var(55)=2,-5,Ifelse(var(20),-4,-6))
+air.velocity = -8, 6
 airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-air.hittime = Ifelse(var(55)=2, 32, 120)
+air.hittime = 120
 airguard.ctrlTime = 16
-yaccel = Ifelse(var(55)=2,1,.58)
+yaccel = (Ifelse(var(55)=2,1,.58) + (combocount * 0.0125))
 fall = 1
 air.fall=var(55)=2
 fall.recover = var(55)!=2
@@ -1736,6 +1761,11 @@ type=ChangeState
 trigger1=!AnimTime
 value=50
 ctrl=1
+
+[State 650, Ctrlset]
+type = CtrlSet
+trigger1 = animelem >= 9
+value = 1
 
 [State 650, End]
 type=ChangeState
