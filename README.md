@@ -1,18 +1,20 @@
 <img width="800" height="600" alt="Capcom vs SNK Prime logo. Silhouette of Ryu and Kyo crossing over with their attacks." src="https://github.com/user-attachments/assets/f5be23fd-891c-4fbe-8963-cc015ad6a71c" />
 
-This is my patched/updated version of the Mugen game [Capcom vs SNK Evolution Rev 2](https://gamejolt.com/games/Capcom_vs_SNK/509026). It's more of a passion project/hobby than a real game, due to it already having a current release (even if I thnk it's very oddly balanced) and due to me having next to no knowledge on Mugen systems.
+This is my patched/updated version of the Mugen game Capcom vs SNK Evolution Rev 2. It's more of a passion project/hobby than a real game, due to it already having a current release (even if I think it's very oddly balanced) and due to me having next to no knowledge on Mugen systems.
 
 Featuring:
-
-* Like 150 characters, rebalanced
-* 14 3D stages made by me
+* 169 characters, edited and rebalanced for snappy gameplay
+* 19 3D stages made by me (Trying to make that number bigger)
 * Complete port to Ikemen GO
-  * Netplay via Ikemen GO's built-in connection system
-* Snappy and weighty pacing
-* Shin Akuma and God Rugal now have very funny divekicks that can combo into itself
-* Evil Ryu now has an overpowered dumb joke version called Funny Ryu with long legs
-* NES Mega Man
-* Press heavy slash with Rasetsumaru
+* Netplay via Ikemen GO's built-in online connection system
+* Inputs are easier to perform
+* Funny joke characters like Funny Ryu and Shin Akuma/God Rugal
+* Unique balancing ideas;
+  * Characters can drift slightly in the air (Hold a direction when actionable)
+  * Action cancels costing a full bar of meter (HP + HK)
+  * Press heavy slash with Rasetsumaru​
+* Outside of Capcom and SNK, characters like Kazuya, Karnov, and Urban Champion
+* Silly character additions like NES Mega Man, Michelin Man, and Spyro
 
 **I did not make the original build!!!**
 
