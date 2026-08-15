@@ -1,4 +1,4 @@
-;======================<Double Explosion>===================
+;==Double Explosion=
 [Statedef 3000]
 type    = S
 movetype= A
@@ -377,7 +377,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;======================<MAX Double Explosion>===================
+;==MAX Double Explosion=
 [Statedef 3050]
 type    = S
 movetype= A
@@ -756,7 +756,7 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-;======================<Flash kicks>===================
+;==Flash kicks=
 [Statedef 3100]
 type = S
 movetype = A
@@ -1093,7 +1093,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;======================<MAX Flash Kicks>===================
+;==MAX Flash Kicks=
 [Statedef 3150]
 type = S
 movetype = A
@@ -1487,7 +1487,7 @@ ctrl = 1
 
 
 
-;======================<Sibling rivalry>===================
+;==Sibling rivalry=
 [Statedef 3200]
 type = S
 movetype = A
@@ -2271,7 +2271,7 @@ type = ChangeState
 trigger1 = !AnimTime 
 value = 0
 ctrl = 1
-;======================<10-Hit Combo>===================
+;==10-Hit Combo=
 [Statedef 3300 - 10-Hit Combo]
 type    = S
 movetype= A
