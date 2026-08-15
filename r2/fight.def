@@ -1369,7 +1369,7 @@ round.time = 10 ;Time to show round display
 ;round.default.scale = 2,2
 round.default.anim = 80
 round.default.layerno = -1
-round.default.displaytime = 60;90
+round.default.displaytime = 62;90
 round.default.offset = 640, 360
 ;round.default.scale = 1,1
 ; Sounds to play for each round (optional, specify up to round 9)
@@ -1384,39 +1384,10 @@ round8.snd = 0,7
 round9.snd = 0,7
 
 round.sndtime = 0 ;Time to play the sounds
-; Components to show for each round (optional, specify up to round 9)
-; Uncomment to use
-;round1.anim = 90
-;round1.offset = 640,320
-;round1.scale = 2,2
-;round2.anim = 91
-;round2.offset = 640,320
-;round2.scale = 2,2
-;round3.anim = 92
-;round3.offset = 640,320
-;round3.scale = 2,2
-;round4.anim = 93
-;round4.offset = 640,320
-;round4.scale = 2,2
-;round5.anim = 94
-;round5.offset = 640,320
-;round5.scale = 2,2
-;round6.anim = 95
-;round6.offset = 640,320
-;round6.scale = 2,2
-;round7.anim = 95
-;round7.offset = 640,320
-;round7.scale = 2,2
-;round8.anim = 95
-;round8.offset = 640,320
-;round8.scale = 2,2
-;round9.anim = 95
-;round9.offset = 640,320
-;round9.scale = 2,2
 
 ; Fight!
 fight.time = 0 ;Time to show FIGHT component
-;fight.displaytime = 50
+;fight.displaytime = 38
 fight.offset = 640,360 ;Component for FIGHT display
 ;fight.scale = 2,2
 fight.anim = 81 ;.
@@ -1521,11 +1492,16 @@ shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 81,14, 0,0, 4
 81,15, 0,0, 4
 81,16, 0,0, 4
-81,17, 0,0, 8
-81,24, 0,0, 1
+81,17, 0,0, 68
 
 ;"Fight!"
 [Begin Action 81]
+81,18, 0,0, 1
+81,19, 0,0, 1
+81,20, 0,0, 1
+81,21, 0,0, 1
+81,22, 0,0, 1
+81,23, 0,0, 1
 81,24, 0,0, 1
 81,25, 0,0, 1
 81,26, 0,0, 1
@@ -1539,16 +1515,10 @@ shutter.col = 0, 0, 0 ;Ikemen feature: skip intro fade color (default: 0,0,0)
 81,34, 0,0, 1
 81,35, 0,0, 1
 81,36, 0,0, 1
-81,37, 0,0, 1
-81,38, 0,0, 1
-81,39, 0,0, 1
-81,40, 0,0, 1
-81,41, 0,0, 1
-81,42, 0,0, 1
-81,43, 0,0, 13
-81,44, 0,0, 2
-81,45, 0,0, 2
-81,46, 0,0, 2
+81,37, 0,0, 13
+81,38, 0,0, 2
+81,39, 0,0, 2
+81,40, 0,0, 2
 
 ;"K.O." Animation
 [Begin Action 200]
