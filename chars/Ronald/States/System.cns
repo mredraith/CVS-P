@@ -5725,8 +5725,8 @@ trigger1 = p2dist X < -5
 
 [State +1, Pos Limit]
 type = posset
-trigger1 = pos y <= -150
-y = -150
+trigger1 = pos y <= -100
+y = -100
 
 [State +1, Drift Forward]
 type = veladd

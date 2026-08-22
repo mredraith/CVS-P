@@ -90,7 +90,7 @@ airjuggle = 15
 sparkno = s8010
 guard.sparkno = s8000
 KO.echo = 0
-volumescale = 100
+volume = 125
 IntPersistIndex = 0
 FloatPersistIndex = 0
 
