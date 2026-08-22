@@ -5337,6 +5337,32 @@ ctrl = 1
 
 [StateDef -2]
 
+[State -2]
+type = playsnd
+trigger1 = !time
+trigger1 = roundno = 1
+trigger1 = roundstate = 0
+trigger1 = p2name = "Urban Champion"
+value = 6969,5
+abspan = 0
+
+[State -2]
+type = playsnd
+trigger1 = !time
+trigger1 = roundno != 1
+trigger1 = roundstate = 0
+trigger1 = p2name = "Urban Champion"
+value = 6969,2
+abspan = 0
+
+[State -2]
+type = playsnd
+trigger1 = !time
+trigger1 = roundstate = 3
+trigger1 = p2name = "Urban Champion"
+value = 6969,3
+abspan = 0
+
 [State -2, Hit Detection]
 type = VarSet
 trigger1 = MoveContact = 1 && var(30) < 0
