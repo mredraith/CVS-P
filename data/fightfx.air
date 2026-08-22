@@ -95,17 +95,23 @@
 ; Roman Cancel
 [Begin Action 50]
 Interpolate Blend
-50,1, 0,0, 2, , A1
+Interpolate Scale
+50,1, 0,0, 1, , A1
 Interpolate Blend
-50,2, 0,0, 2, , A1
+Interpolate Scale
+50,2, 0,0, 1, , A1
 Interpolate Blend
+Interpolate Scale
 50,3, 0,0, 2, , A1
 Interpolate Blend
-50,4, 0,0, 2, , A1
+Interpolate Scale
+50,4, 0,0, 3, , A1
 Interpolate Blend
-50,5, 0,0, 2, , A1
+Interpolate Scale
+50,5, 0,0, 4, , A1
 Interpolate Blend
-50,6, 0,0, 2, , A1
+Interpolate Scale
+50,6, 0,0, 5, , A1
 
 ; Small ground shockwave
 [Begin Action 60]
