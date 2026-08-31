@@ -25,3 +25,8 @@ Capcom and SNK are their own separate entities and reserve all rights to the cha
 Original Game: © Capcom Co., Ltd.
 
 Characters: © Capcom Co., Ltd. / SNK Corporation / ARIKA Co, Ltd. / Piko Interactive / Nintendo / SEGA / Disney / Bandai Namco Entertainment Inc. / Marvelous Inc.
+
+To-do list of things to-do:
+* Normalize every character's effective frame data, ensuring no moves have too short or too long attack timers
+* Replace every character's juggle system with something different a-la Tekken, so no juggle points like Street Fighter
+* Replace every character's hit and block sounds/sprites with custom made new ones
