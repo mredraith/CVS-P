@@ -843,11 +843,11 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = High
 air.type = Low
-ground.hittime = 18 + 4*var(9)
-guard.hittime = (18 + 4*var(9)) - 6
-ground.slidetime = 18 + 4*var(9)
+ground.hittime = 28 + 4*var(9)
+guard.hittime = (28 + 4*var(9)) - 6
+ground.slidetime = 28 + 4*var(9)
 air.hittime = 120
-ground.velocity = ifElse(PrevStateNo = 750, -6.46, Ifelse(var(20),-2,-7)), ifElse(PrevStateNo = 750, -5.25, 0)
+ground.velocity = ifElse(PrevStateNo = 750, -9.46, Ifelse(var(20),-2,-7)), ifElse(PrevStateNo = 750, -7.25, 0)
 ground.cornerPush.velOff = 0
 guard.velocity = Ifelse(var(20),-2,-7)
 guard.cornerPush.velOff = 0
@@ -874,7 +874,7 @@ id = 200
 attr = S,NA
 hitflag = MAF
 guardflag = M
-damage = ceil(ifelse(fvar(11)*91<7, 7, fvar(11)*91)), 0
+damage = 100
 getpower = ifelse(!var(13), 216, 72)*!var(20), 36*!var(20)
 givepower = 36, 36
 pausetime = ifelse(var(20), 6, 12), ifelse(var(20), 6, 12)

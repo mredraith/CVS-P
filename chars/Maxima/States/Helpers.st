@@ -3675,7 +3675,7 @@ type = hitdef
 trigger1 = Animelemtime(65) <= 0 && (GameTime % 8)
 attr=S,HP
 animtype=hard
-damage=Ifelse(var(2),15,17),3
+damage=50
 hitflag=MAF
 guardflag=M
 hitsound=s0,78

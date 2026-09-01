@@ -4713,7 +4713,7 @@ var(5) = 0
 ignoreHitPause = 1
 [State -3, Special Cancel Check]
 type = VarSet
-trigger1= (stateno = [200,699]) && Time <= 2
+trigger1= (stateno = [200,699])
 trigger2= (stateno = [200, 250]) && movecontact && stateno!=221 && var(55)
 trigger3= (stateno = [400, 440]) && movecontact && var(55)
 trigger4= var(20) && (stateno = [1000,1060]) && animelemtime(6)>1
@@ -4726,6 +4726,7 @@ trigger10= var(20) && stateno = 1105 && animelemtime(1)>1
 trigger11= var(20) && stateno = 1205 && animelemtime(1)>1
 trigger12= (stateno = [200, 250]) && movecontact && stateno!=221 && !var(55)
 trigger12= anim!=200 && anim!=215 && anim!=240 && anim!=250
+trigger13 = stateno = 200 && movecontact && var(55)
 var(5) = 1
 ignoreHitPause = 1
 
