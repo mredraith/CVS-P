@@ -3567,21 +3567,9 @@ trigger1 = !HitPauseTime
 trigger1 = !(HitDefAttr = SCA,AT)
 var(15) = 1
 
-[State -2, Juggle Reset Single]
+[State -2, Juggle Reset]
 type = VarSet
-triggerAll = NumEnemy = 1 && var(15)
-trigger1 = (Enemy, StateType != A) && (Enemy, StateNo != [5100, 5109]) && (Enemy, Time >= 1)
-trigger2 = (Enemy, MoveType != H) || (Enemy, StateNo = [120,155]) || (Enemy, Ctrl)
-var(15) = 0
-ignoreHitPause = 1
-
-[State -2, Juggle Reset Simul]
-type = VarSet
-triggerAll = NumEnemy >= 2 && var(15)
-trigger1 = (EnemyNear(0), StateType != A) && (EnemyNear(0), Time >= 1)
-trigger2 = (EnemyNear(0), MoveType != H) || (EnemyNear(0), StateNo = [120,155]) || (EnemyNear(0), Ctrl)
-trigger3 = (EnemyNear(1), StateType != A) && (EnemyNear(0), Time >= 1)
-trigger4 = (EnemyNear(1), MoveType != H) || (EnemyNear(0), StateNo = [120,155]) || (EnemyNear(0), Ctrl)
+trigger1 = 1
 var(15) = 0
 ignoreHitPause = 1
 
@@ -3598,21 +3586,9 @@ trigger1 = (EnemyNear, StateNo = 5040) && !(EnemyNear, Ctrl)
 var(16) = 1
 ignorehitpause = 1
 
-[State -2, Juggle Flag Reset Single]
+[State -2, Juggle Flag Reset]
 type = VarSet
-triggerAll = NumEnemy = 1 && var(16)
-trigger1 = (Enemy, MoveType != H) && (Enemy, StateNo != 5040)
-trigger2 = !(Enemy, HitShakeOver) || (Enemy, StateType = L) || (Enemy, Ctrl)
-var(16) = 0
-ignoreHitPause = 1
-
-[State -2, Juggle Flag Reset Simul]
-type = VarSet
-triggerAll = NumEnemy >= 2 && var(16)
-trigger1 = (EnemyNear(0), MoveType != H) && (EnemyNear(0), StateNo != 5040)
-trigger2 = !(EnemyNear(0), HitShakeOver) || (EnemyNear(0), StateType = L) || (EnemyNear(0), Ctrl)
-trigger3 = (EnemyNear(1), MoveType != H) && (EnemyNear(1), StateNo != 5040)
-trigger4 = !(EnemyNear(1), HitShakeOver) || (EnemyNear(1), StateType = L) || (EnemyNear(1), Ctrl)
+trigger1 = 1
 var(16) = 0
 ignoreHitPause = 1
 

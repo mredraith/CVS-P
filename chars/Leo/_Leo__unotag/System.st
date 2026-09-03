@@ -4667,23 +4667,11 @@ trigger1 = (enemynear, stateno = 5040) && !(enemynear, ctrl)
 var(16) = 1
 ignorehitpause = 1
 
-[State -2, Juggle Flag Reset Single]
-type = varset
-triggerall = numenemy = 1 && var(16)
-trigger1 = (enemy, movetype != H) && (enemy, stateno != 5040)
-trigger2 = !(enemy, hitshakeover) || (enemy, statetype = L) || (enemy, ctrl)
+[State -2, Juggle Flag Reset]
+type = VarSet
+trigger1 = 1
 var(16) = 0
-ignorehitpause = 1
-
-[State -2, Juggle Flag Reset Simul]
-type = varset
-triggerall = numenemy >= 2 && var(16)
-trigger1 = (enemynear(0), movetype != H) && (enemynear(0), stateno != 5040)
-trigger2 = !(enemynear(0), hitshakeover) || (enemynear(0), statetype = L) || (enemynear(0), ctrl)
-trigger3 = (enemynear(1), movetype != H) && (enemynear(1), stateno != 5040)
-trigger4 = !(enemynear(1), hitshakeover) || (enemynear(1), statetype = L) || (enemynear(1), ctrl)
-var(16) = 0
-ignorehitpause = 1
+ignoreHitPause = 1
 
 [State -2, Custom Combo End]
 type = varset

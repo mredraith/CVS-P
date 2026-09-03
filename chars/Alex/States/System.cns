@@ -3071,23 +3071,12 @@ trigger1= movehit=1
 trigger1= !(hitdefattr=SCA,AT)
 var(15)=1
 
-[State -2, Juggle Reset Single]
+[State -2, Juggle Reset]
 type=varset
-triggerall= numenemy=1 && var(15)
-trigger1= (enemy,statetype!=A) && ((enemy,stateno!=[5100,5109])||(enemy,statetype!=L)) && (enemy,time>=1)
-trigger2= (enemy,movetype!=H) || (enemy,stateno=[120,155]) || (enemy,ctrl)
+trigger1 = 1
 var(15)=0
 ignorehitpause=1
 
-[State -2, Juggle Reset Simul]
-type=varset
-triggerall= numenemy>=2 && var(15)
-trigger1= (enemynear(0),statetype!=A) && (enemynear(0),time>=1)
-trigger2= (enemynear(0),movetype!=H) || (enemynear(0),stateno=[120,155]) || (enemynear(0),ctrl)
-trigger3= (enemynear(1),statetype!=A) && (enemynear(0),time>=1)
-trigger4= (enemynear(1),movetype!=H) || (enemynear(0),stateno=[120,155]) || (enemynear(0),ctrl)
-var(15)=0
-ignorehitpause=1
 [State -2, Free Juggling]
 type=varset
 trigger1= roundstate!=2
@@ -3100,22 +3089,9 @@ trigger1= numenemy && !var(16)
 trigger1= (enemynear,stateno=5040) && !(enemynear,ctrl)
 var(16)=1
 ignorehitpause=1
-[State -2, Juggle Flag Reset Single]
+[State -2, Juggle Flag Reset]
 type=varset
-triggerall= numenemy=1 && var(16)
-trigger1= (enemy,movetype!=H) && (enemy,stateno!=5040)
-trigger2= !(enemy,hitshakeover) || (enemy,statetype=L) || (enemy,ctrl)
-trigger3= (enemy,movetype!=H) || (enemy,stateno=[120,155]) || (enemy,ctrl)
-var(16)=0
-ignorehitpause=1
-[State -2, Juggle Flag Reset Simul]
-type=varset
-triggerall= numenemy>=2 && var(16)
-trigger1= (enemynear(0),movetype!=H) && (enemynear(0),stateno!=5040)
-trigger2= !(enemynear(0),hitshakeover) || (enemynear(0),statetype=L) || (enemynear(0),ctrl)
-trigger3= (enemynear(1),movetype!=H) && (enemynear(1),stateno!=5040)
-trigger4= !(enemynear(1),hitshakeover) || (enemynear(1),statetype=L) || (enemynear(1),ctrl)
-trigger5= (enemynear,movetype!=H) || (enemynear,stateno=[120,155]) || (enemynear,ctrl)
+trigger1 = 1
 var(16)=0
 ignorehitpause=1
 
@@ -3142,17 +3118,7 @@ ignorehitpause=1
 
 [State -2, Juggle Limit Reset]
 type=varset
-triggerall= numenemy=1
-trigger1= (enemynear,movetype!=H)&&(enemynear,statetype!=A||enemynear,statetype!=L) && (enemy,ctrl) && (enemy,time>=1)
-trigger2= moveguarded
-fvar(8)=0
-ignorehitpause=1
-
-[State -2, Juggle Limit Simul]
-type=varset
-triggerall= ((numenemy>=2)||(teammode=simul)||(enemy,teammode=simul))
-trigger1= (enemynear,movetype!=H)&&(enemynear,statetype!=A||enemynear,statetype!=L) && (enemy,ctrl) && (enemy,time>=1)
-trigger2= moveguarded
+trigger1 = 1
 fvar(8)=0
 ignorehitpause=1
 
