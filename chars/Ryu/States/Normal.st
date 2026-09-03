@@ -42,8 +42,6 @@ channel = 1
 
 [State 200, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 200 && animelem = 2
 attr = S, NA
 damage = 20
@@ -71,7 +69,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7.35
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -84,8 +82,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 200, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 201 && animelem = 2
 attr = S, NA
 damage = 20
@@ -113,7 +109,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7.35
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5  + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -167,8 +163,6 @@ channel = 1
 
 [State 205, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 205
 attr = S, NA
 damage = 40
@@ -196,7 +190,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5  + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -209,8 +203,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 205, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 206
 attr = S, NA
 damage = 40
@@ -238,7 +230,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -251,8 +243,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 205, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 208
 attr = S, NA
 damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
@@ -280,7 +270,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5  + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -329,8 +319,6 @@ channel = 1
 
 [State 207, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4
 attr = S, NA
 damage = 25
@@ -358,7 +346,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -371,8 +359,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 207, hit2]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 5
 attr = S, NA
 damage = 25
@@ -401,7 +387,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -455,8 +441,6 @@ channel = 1
 
 [State 210, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4 && anim = 210
 attr = S, NA
 damage = 60
@@ -484,7 +468,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -497,8 +481,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 210, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)); && p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && (anim = 211 || anim = 2110)
 attr = S, NA
 damage = 60
@@ -526,7 +508,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -540,8 +522,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 210, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4 && (anim = 211 || anim = 2110)
 trigger1 = !movecontact && !movereversed
 attr = S, NA
@@ -570,7 +550,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -583,8 +563,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 210, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4 && anim = 213
 attr = S, NA
 damage = 60
@@ -613,7 +591,7 @@ air.cornerpush.veloff = 0
 fall = var(29);ifelse(p2movetype = A, 1, 0)
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -626,8 +604,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 210, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = prevstateno = 710
 trigger1 = animelem = 4 && anim = 210
 attr = S, NA
@@ -659,7 +635,7 @@ guard.cornerpush.veloff = 0;ifelse(var(20), -6.82, -12.74)
 fall = 1
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 sparkNo = -1 + 0 * (var(33) := 8012)
@@ -671,8 +647,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 210, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = prevstateno = 710
 trigger1 = animelem = 4 && anim = 213
 attr = S, NA
@@ -704,7 +678,7 @@ guard.cornerpush.veloff = 0;ifelse(var(20), -6.82, -12.74)
 fall = 1
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 sparkNo = -1 + 0 * (var(33) := 8012)
@@ -757,8 +731,6 @@ x = 6
 
 [State 212, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = (animelem = 6 || animelem = 7) && anim = 212
 attr = S, NA
 damage = 60
@@ -786,7 +758,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -840,8 +812,6 @@ channel = 1
 
 [State 213, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4
 attr = S, NA
 damage = 60
@@ -872,7 +842,7 @@ guard.velocity = ifelse(var(20), -5.77, -10.52)
 guard.cornerpush.veloff = 0;ifelse(var(20), -6.82, -12.74)
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 sparkNo = -1 + 0 * (var(33) := 8012)
@@ -948,8 +918,6 @@ supermovetime = -1
 
 [State 214, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = S, NA
 damage = 30
@@ -977,7 +945,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -990,8 +958,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 214, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = S, NA
 damage = 30
@@ -1019,7 +985,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1074,8 +1040,6 @@ channel = 1
 
 [State 215, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20)) ;&& p2stateno != 5040
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = S, NA
 damage = 15
@@ -1103,7 +1067,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1157,8 +1121,6 @@ channel = 1
 
 [State 220, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 220
 attr = S, NA
 damage = 40
@@ -1186,7 +1148,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1199,8 +1161,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 220, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 221
 attr = S, NA
 damage = 40
@@ -1228,7 +1188,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1314,8 +1274,6 @@ trigger1 = animelemtime(2) > 0
 
 [State 222, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 7
 attr = A, NA
 damage = 50
@@ -1343,7 +1301,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1398,8 +1356,6 @@ channel = 1
 
 [State 225, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 5 && anim = 225
 attr = S, NA
 damage = 60
@@ -1427,7 +1383,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1440,8 +1396,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 225, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && anim = 226
 attr = S, NA
 damage = 35
@@ -1470,7 +1424,7 @@ air.velocity = ifelse((var(1)!= 1 || var(20)), -2.6, -4.75), ifelse((var(1)!= 1 
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1483,7 +1437,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 225, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = animelem = 5 && anim = 226
 attr = S, NA
 damage = 35
@@ -1511,7 +1464,7 @@ air.velocity = ifelse(var(20), -4, -8), 8
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -1566,8 +1519,6 @@ channel = 1
 
 [State 230, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = C, NA 
 damage = 20
@@ -1595,7 +1546,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1649,8 +1600,6 @@ channel = 1
 
 [State 235, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = C, NA 
 damage = 40
@@ -1678,7 +1627,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1732,8 +1681,6 @@ channel = 1
 
 [State 240, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4
 attr = C, NA
 damage = 60
@@ -1761,7 +1708,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1775,8 +1722,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 240, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 5
 trigger1 = !movecontact && !movereversed
 attr = S, NA
@@ -1805,7 +1750,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1860,8 +1805,6 @@ channel = 1
 
 [State 245, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = C, NA 
 damage = 15
@@ -1890,7 +1833,7 @@ air.cornerpush.veloff = 0
 down.velocity = -2, -2
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1944,8 +1887,6 @@ channel = 1
 
 [State 250, Hit]
 type = hitdef
-triggerall = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3 && var(1)!= 2
 trigger2 = animelem = 4 && var(1) = 2
 attr = C, NA 
@@ -1975,7 +1916,7 @@ air.cornerpush.veloff = 0
 down.velocity = -3, -3
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -2036,8 +1977,6 @@ time = 1
 
 [State 255, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 4 && prevstateno!= 750
 attr = C, NA
 damage = 65
@@ -2067,7 +2006,7 @@ guard.velocity = ifelse(var(20), -5.77, -10.52)
 guard.cornerpush.veloff = 0;ifelse(var(20), -6.82, -12.74)
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.67
+yaccel = (0.67 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 0
 fall.recovertime = 120
@@ -2081,7 +2020,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 255, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = animelem = 4 && prevstateno = 750
 attr = C, SA
 damage = 65
@@ -2111,7 +2049,7 @@ guard.velocity = ifelse(var(20), -5.77, -10.52)
 guard.cornerpush.veloff = 0;ifelse(var(20), -6.82, -12.74)
 getpower = 0, 0
 givepower = 36, 36
-yaccel = 0.6
+yaccel = (0.6 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -2164,8 +2102,6 @@ channel = 1
 
 [State 260, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2
 attr = A, NA 
 damage = 20
@@ -2195,7 +2131,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2244,8 +2180,6 @@ channel = 1
 
 [State 265, Hit]
 type = hitdef
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
-trigger1 = !var(16) && (var(15) < 1 || var(20))
 trigger1 = anim = 265 && animelem = 2
 attr = A, NA 
 damage = 20
@@ -2278,7 +2212,7 @@ givepower = 36, 36
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2292,7 +2226,6 @@ palFX.sinAdd= -255,-255,-255,48
 [State 265, Hit]
 type = hitdef
 trigger1 = p2stateno != 5040
-trigger1 = !var(16) && (var(15) < 3 || var(20))
 trigger1 = anim = 265 && animelem = 3
 attr = A, NA 
 damage = 25
@@ -2325,7 +2258,7 @@ givepower = 36, 36
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2338,8 +2271,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 265, Hit]
 type = hitdef
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
-trigger1 = !var(16) && (var(15) < 1 || var(20)) && p2stateno != 5040
 trigger1 = anim = 266 && animelem = 3
 attr = A, NA 
 damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
@@ -2369,7 +2300,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2418,8 +2349,6 @@ channel = 1
 
 [State 270, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 3
 attr = A, NA
 damage = 60
@@ -2449,7 +2378,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2499,8 +2428,6 @@ channel = 1
 
 [State 275, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2 && anim = 275
 attr = A, NA 
 damage = 15
@@ -2530,7 +2457,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2546,8 +2473,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 275, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = animelem = 2 && anim = 276
 attr = A, NA 
 damage = ceil(ifelse(fvar(12) * 25 < 7, 7, fvar(12) * 25)), 0
@@ -2577,7 +2502,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2627,8 +2552,6 @@ channel = 1
 
 [State 280, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 280 && animelem = 3
 attr = A, NA 
 damage = 40
@@ -2658,7 +2581,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2674,8 +2597,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 280, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 281 && animelem = 2
 attr = A, NA 
 damage = ceil(ifelse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 0
@@ -2705,7 +2626,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2757,8 +2678,6 @@ y = 10.2
 
 [State 282, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = !movecontact && !movereversed
 attr = A, NA
 damage = 65
@@ -2790,7 +2709,7 @@ down.velocity = 0, 0
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
@@ -2841,8 +2760,6 @@ channel = 1
 
 [State 285, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 285 && animelem = 3
 attr = A, NA
 damage = 65
@@ -2872,7 +2789,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -2888,8 +2805,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 285, Hit]
 type = hitdef
-trigger1 = !var(16) && (var(15) < 1 || var(20))
-;trigger1 = ((p2stateno != [5020, 5050]) || var(20) || roundstate = 3) && p2stateno != 5040
 trigger1 = anim = 286 && animelem = 5
 attr = A, NA
 damage = ceil(ifelse(fvar(12) * 60 < 7, 7, fvar(12) * 60)), 0
@@ -2919,7 +2834,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yaccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0

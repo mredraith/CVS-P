@@ -100,7 +100,6 @@ ignorehitpause = 1
 
 [State 1005, Hit]
 type = hitdef
-trigger1 = !(Root, var(16)) && (Root, var(15) < 1 || Root, var(20))
 trigger1 = !(Root, var(27))
 priority = 4, Hit
 attr = S, SP
@@ -318,9 +317,7 @@ ignorehitpause = 1
 
 [State 1015, Hit]
 type = hitdef
-trigger1 = !(Root, var(16)) && (Root, var(15) < 5 || Root, var(20))
 trigger1 = var(2) < 2
-trigger2 = !(Root, var(16)) && (Root, var(15) < 3 || Root, var(20))
 trigger2 = var(2) = 2
 ID = 1015
 priority = 4, Hit
@@ -557,9 +554,7 @@ ignorehitpause = 1
 [State 1015, Hit]
 type = hitdef
 triggerall = 1
-trigger1 = !(Root, var(16)) && (Root, var(15) < 5 || Root, var(20))
 trigger1 = var(2) < 2
-trigger2 = !(Root, var(16)) && (Root, var(15) < 4 || Root, var(20))
 trigger2 = var(2) = 2
 priority = 4, Hit
 attr = S, SP
@@ -786,7 +781,7 @@ ignorehitpause = 1
 
 [State 1025, Hit]
 type = hitdef
-trigger1 = !(Root, var(16)) && (Root, var(15) < (Root, var(10))+1 || Root, var(20))
+trigger1 = 1
 priority = 4, Hit
 attr = S, SP
 ;damage = ceil(ifelse(var(10) = 1, 68, ifelse(var(10) = 2, 37, 27)) * root, fvar(12)), 7
@@ -1005,9 +1000,7 @@ ignorehitpause = 1
 
 [State 1025, Hit]
 type = hitdef
-trigger1 = !(Root, var(16)) && (Root, var(15) < 8 || Root, var(20))
 trigger1 = var(2) <= 2
-trigger2 = !(Root, var(16)) && (Root, var(15) < 7 || Root, var(20))
 trigger2 = var(2) > 2
 priority = 4, Hit
 attr = S, SP
@@ -1240,7 +1233,6 @@ ignorehitpause = 1
 
 [State 3005, Hit]
 type = hitdef
-trigger1 = !(Root, var(16)) && (Root, var(15) < 7 || Root, var(20))
 trigger1 = root, var(1) = 1
 priority = 4, Hit
 attr = S, HP
@@ -1282,9 +1274,7 @@ forcestand = 1
 type = hitdef
 triggerall = (root, var(1) != 1)
 trigger1 = (root, var(17)!= 2)
-trigger1 = !(root, var(16)) && (root, var(15) < 8)
 trigger2 = (root, var(17) = 2)
-trigger2 = !(root, var(16)) && (root, var(15) < 10 - var(4))
 priority = 4, Hit
 attr = S, HP
 damage = ceil(ifelse((root, fvar(12)) * ifelse(var(2) < 5, 32, 46) < 7, 7, (root, fvar(12)) * ifelse(var(2) < 5, 32, 43))), 8
@@ -1623,7 +1613,7 @@ ignorehitpause = 1
 
 [State 3025, Hit]
 type = hitdef
-trigger1 = !(Root, var(16)) && (Root, var(15) < 2+(var(10)*2) || Root, var(20))
+trigger1 = 1
 priority = 4, Hit
 attr = S, HP
 damage = ceil(ifelse((root, fvar(12)) * 48 < 7, 7, (root, fvar(12)) * 48)), 8

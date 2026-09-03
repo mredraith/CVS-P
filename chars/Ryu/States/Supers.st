@@ -895,7 +895,6 @@ channel = 0
 
 [State 3100, elbowhit]
 type = hitdef
-trigger1 = !var(16) && var(15) < ifelse(var(1)=3, 4, 2)
 trigger1 = animelem = 7 && anim = 3100
 ID = 3100
 attr = S, HA
@@ -943,7 +942,6 @@ palFX.sinAdd= -255,-255,-255,48
 [State 3100, elbowhit 2]
 type = hitdef
 trigger1 = !numtarget(3100)
-trigger1 = !var(16) && (var(15) >= ifelse(var(1)=3, 4, 2) && var(15) < 7)
 trigger1 = animelem = 7 && anim = 3100
 ID = 3115
 attr = S, HA
@@ -1095,7 +1093,6 @@ size.yscale = 2
 
 [State 3100, lowhit]
 type = hitdef
-trigger1 = !var(16) && var(15) < 4
 trigger1 = animelem = 6 && anim = 3101
 ID = 3100
 attr = S, HA
@@ -1140,7 +1137,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3100, shoryuuhit]
 type = hitdef
-trigger1 = !var(16) && var(15) < 8
 trigger1 = animelem = 7 && anim = 3101
 ID = 3100
 attr = A, HA
@@ -1344,9 +1340,7 @@ ownpal = 1
 
 [State 3120, lowhits]
 type = hitdef
-trigger1 = !var(16) && var(15) < 3
 trigger1 = animelem = 4 && anim = 3120
-trigger2 = !var(16) && var(15) < 10
 trigger2 = animelem = 3 && anim = 3121
 ID = 3120
 attr = S, HA
@@ -1395,7 +1389,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3120, shoryuuhits]
 type = hitdef
-trigger1 = !var(16) && var(15) < 13
 trigger1 = anim = 3120 && animelemtime(5) >= 0 && !(animelemtime(5) % 3)
 attr = A, HA
 damage = ceil(ifElse(fvar(12) * 28 < 7, 7, fvar(12) * 28)), 7
@@ -1438,7 +1431,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3120, shinshoryuuhits]
 type = hitdef
-trigger1 = !var(16) && var(15) < 10
 trigger1 = (animelem = 4 || animelem = 5) && anim = 3121
 ;trigger1 = animelem = 5 && anim = 3121
 ID = 3120
@@ -1798,7 +1790,6 @@ persistent = 0
 
 [State 3140, hitlow]
 type = hitdef
-trigger1 = !var(16) && var(15) < 1
 trigger1 = animelem = 14 && anim = 3140
 attr = S, HA 
 ;damage = 18, 6
@@ -1838,7 +1829,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3140, hitlow2]
 type = hitdef
-trigger1 = !var(16) && var(15) < 2
 trigger1 = (animelem = 3 || animelem = 15) && anim = 3140
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) * 22)), 6
@@ -1877,7 +1867,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3140, hitlow3]
 type = hitdef
-trigger1 = !var(16) && var(15) < 4
 trigger1 = animelem = 26 && anim = 3140
 ID = 3140
 attr = S, HA 
@@ -1920,7 +1909,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3140, hitlow4]
 type = hitdef
-trigger1 = !var(16) && var(15) < 5
 trigger1 = animelem = 27 && anim = 3140
 ID = 3140
 attr = S, HA 
@@ -1963,7 +1951,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3140, hithigh]
 type = hitdef
-trigger1 = !var(16) && var(15) < 4
 trigger1 = animelem = 4 && anim = 3140
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) * 22)), 6
@@ -2002,7 +1989,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3140, hithigh 2]
 type = hitdef
-trigger1 = !var(16) && var(15) < 4
 trigger1 = animelem = 16 && anim = 3140
 attr = S, HA
 damage = ceil(ifElse(fvar(12) * 22 < 7, 7, fvar(12) * 22)), 6
@@ -2041,7 +2027,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3140, hitfinal]
 type = hitdef
-trigger1 = !var(16) && var(15) < 6
 trigger1 = animelem = 28 && anim = 3140
 persistent = 0
 attr = A, HA 
@@ -2197,7 +2182,6 @@ channel = 0
 type = hitdef
 ;trigger1 = !numtarget(3165)
 ;trigger1 = numtarget(3121160)
-trigger1 = !var(16) && var(15) < 2
 trigger1 = anim = 3160 && animelem = 7
 attr = S, HA 
 ID = 3160
@@ -2245,7 +2229,6 @@ palFX.sinAdd= -255,-255,-255,48
 [State 3160, elbowhits]
 type = hitdef
 trigger1 = !numtarget(3160)
-trigger1 = !var(16) && (var(15) > 1 && var(15) < 8)
 trigger1 = anim = 3160 && (animelem = 7 || animelem = 8 || animelem = 9 || animelem = 10)
 ID = 3165
 attr = S, HA
@@ -2297,7 +2280,6 @@ ID = 3160
 ignorehitpause = 1
 [State 3160, switch]
 type = changeanim
-trigger1 = !var(16) && var(15) < 2
 trigger1 = anim = 3160 && animelemtime(12) >= 0 && animelemtime(13) < 0 && movehit
 trigger1 = (enemynear, stateno = 3162)
 value = 3161
@@ -2403,7 +2385,6 @@ time = 16
 
 [State 3160, lowhit]
 type = hitdef
-trigger1 = !var(16) && var(15) < 9
 trigger1 = animelem = 12 && anim = 3161
 ID = 3160
 attr = S, HA
@@ -2449,7 +2430,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3160, shoryuuhit]
 type = hitdef
-trigger1 = !var(16) && var(15) < 9
 trigger1 = anim = 3161 && !(animelemtime(13) % 3)
 attr = A, HA 
 ;damage = 22, 4
@@ -2694,9 +2674,7 @@ channel = 1
 
 [State 3180, highhits]
 type = hitdef
-trigger1 = !var(16) && var(15) < 4
 trigger1 = animelem = 15 || animelem = 27
-trigger2 = !var(16) && var(15) < 2
 trigger2 = animelem = 18 || animelem = 30
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 5
@@ -2736,7 +2714,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3180, lowhits]
 type = hitdef
-trigger1 = !var(16) && var(15) < 4
 trigger1 = animelem = 22 || animelem = 34
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 42 < 7, 7, fvar(12) * 42)), 5
@@ -2776,7 +2753,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3180, uppercut]
 type = hitdef
-trigger1 = !var(16) && var(15) < 8
 trigger1 = animelem = 39
 ID = 3180
 attr = S, HA 
@@ -2997,7 +2973,6 @@ physics = N
 
 [State 3200, Hit]
 type = hitdef
-trigger1 = !var(16) && var(15) < 14
 trigger1 = anim = 3201 && (animelem = 2 || animelem = 8 || animelem = 14 || animelem = 20 || animelem = 26 || animelem = 32 || animelem = 38)
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 24 < 7, 7, fvar(12) * 24)), 4
@@ -3044,7 +3019,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3200, Hit]
 type = hitdef
-trigger1 = !var(16) && var(15) < 13
 trigger1 = anim = 3201 && (animelem = 5 || animelem = 11 || animelem = 17 || animelem = 23 || animelem = 29 || animelem = 35)
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 24 < 7, 7, fvar(12) * 24)), 4
@@ -3091,7 +3065,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3200, hitfinal]
 type = hitdef
-trigger1 = !var(16) && var(15) < 14
 trigger1 = anim = 3201 && animelem = 41
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 40 < 7, 7, fvar(12) * 40)), 4
@@ -3139,7 +3112,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3200, hitevil]
 type = hitdef
-trigger1 = !var(16) && var(15) < 14
 trigger1 = anim = 3202 && (animelem = 2 || animelem = 8 || animelem = 14 || animelem = 20 || animelem = 26 || animelem = 32 || animelem = 38)
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 23 < 7, 7, fvar(12) * 23)), 15
@@ -3187,7 +3159,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3200, hitevil]
 type = hitdef
-trigger1 = !var(16) && var(15) < 12
 trigger1 = anim = 3202 && (animelem = 5 || animelem = 11 || animelem = 17 || animelem = 23 || animelem = 29 || animelem = 35)
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 23 < 7, 7, fvar(12) * 23)), 15
@@ -3235,7 +3206,6 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 3200, hitevilfinal]
 type = hitdef
-trigger1 = !var(16) && var(15) < 13
 trigger1 = anim = 3202 && animelem = 41
 attr = S, HA 
 damage = ceil(ifElse(fvar(12) * 37 < 7, 7, fvar(12) * 37)), 4

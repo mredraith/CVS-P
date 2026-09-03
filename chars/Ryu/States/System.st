@@ -4215,28 +4215,12 @@ var(15) = 9
 
 [State -2, Tatsumaki Juggle Reset]
 type = VarSet
-triggerall = NumEnemy = 1 && var(27)
-trigger1 = (Enemy, StateType != A) && (Enemy, StateNo != [5100,5109]) && (Enemy, Time >= 1)
-trigger2 = (Enemy, MoveType != H) || (Enemy, StateNo = [120,155]) || (Enemy, Ctrl)
-trigger3 = stateno = 1250 && hitcount > 1
-trigger4 = !NumTarget(1310) && var(1) = 1
+trigger1 = 1
 var(27) = 0
 
 [State -2, Juggle Reset Single]
 type = VarSet
-triggerAll = NumEnemy = 1 && var(15)
-trigger1 = (Enemy, StateType != A) && (Enemy, StateNo != [5100,5109]) && (Enemy, Time >= 1)
-trigger2 = (Enemy, MoveType != H) || (Enemy, StateNo = [120,155]) || (Enemy, Ctrl)
-var(15) = 0
-ignoreHitPause = 1
-
-[State -2, Juggle Reset Simul]
-type = VarSet
-triggerAll = NumEnemy >= 2 && var(15)
-trigger1 = (EnemyNear(0), StateType != A) && (EnemyNear(0), Time >= 1)
-trigger2 = (EnemyNear(0), MoveType != H) || (EnemyNear(0), StateNo = [120,155]) || (EnemyNear(0), Ctrl)
-trigger3 = (EnemyNear(1), StateType != A) && (EnemyNear(0), Time >= 1)
-trigger4 = (EnemyNear(1), MoveType != H) || (EnemyNear(0), StateNo = [120,155]) || (EnemyNear(0), Ctrl)
+trigger1 = 1
 var(15) = 0
 ignoreHitPause = 1
 
