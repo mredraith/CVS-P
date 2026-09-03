@@ -1366,7 +1366,7 @@ guard.velocity = -12.52
 guard.cornerPush.velOff = 0
 air.velocity = 0,0
 air.cornerPush.velOff = 0
-yaccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.03))
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -1807,7 +1807,7 @@ guard.velocity = -16.52
 guard.cornerPush.velOff = 0
 air.velocity = 0,0
 air.cornerPush.velOff = 0
-yaccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.03))
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 5)
 guardSound = -1 + 0 * (var(32) := 0)

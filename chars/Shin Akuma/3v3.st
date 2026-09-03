@@ -1887,7 +1887,7 @@ fall.recover = 1
 fall.recovertime = 120
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
@@ -4246,21 +4246,9 @@ trigger1 = (EnemyNear, StateNo = 5040) && !(EnemyNear, Ctrl)
 var(16) = 1
 ignorehitpause = 1
 
-[State -2, Juggle Flag Reset Single]
+[State -2, Juggle Flag Reset]
 type = VarSet
-triggerAll = NumEnemy = 1 && var(16)
-trigger1 = (Enemy, MoveType != H) && (Enemy, StateNo != 5040)
-trigger2 = !(Enemy, HitShakeOver) || (Enemy, StateType = L) || (Enemy, Ctrl)
-var(16) = 0
-ignoreHitPause = 1
-
-[State -2, Juggle Flag Reset Simul]
-type = VarSet
-triggerAll = NumEnemy >= 2 && var(16)
-trigger1 = (EnemyNear(0), MoveType != H) && (EnemyNear(0), StateNo != 5040)
-trigger2 = !(EnemyNear(0), HitShakeOver) || (EnemyNear(0), StateType = L) || (EnemyNear(0), Ctrl)
-trigger3 = (EnemyNear(1), MoveType != H) && (EnemyNear(1), StateNo != 5040)
-trigger4 = !(EnemyNear(1), HitShakeOver) || (EnemyNear(1), StateType = L) || (EnemyNear(1), Ctrl)
+trigger1 = 1
 var(16) = 0
 ignoreHitPause = 1
 

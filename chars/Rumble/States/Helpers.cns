@@ -373,7 +373,7 @@ envshake.time = 14
 envshake.freq = 120
 envshake.ampl = 4
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse((root, var(20)), -4, -8), -1.5
 forcestand = 1
@@ -661,7 +661,7 @@ palFX.mul = 256,256,256
 palFX.sinadd = 50,50,50,10
 palFX.color = 150
 sprpriority = 4
-yaccel = 0.45
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse((root, var(20)), -4, -8), -1.5
 forcestand = 1
@@ -1059,7 +1059,7 @@ palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 ;[State 3005, Hit Last]
@@ -1361,7 +1361,7 @@ palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 ;[State 3005, Hit Last]

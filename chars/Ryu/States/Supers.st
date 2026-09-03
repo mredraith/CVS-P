@@ -930,7 +930,7 @@ envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 9
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -974,7 +974,7 @@ envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 9
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1126,7 +1126,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 0
 fall.animtype = Medium
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8014)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1168,7 +1168,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1378,7 +1378,7 @@ envshake.ampl = 8
 fall = 1
 fall.recover = 0
 kill = ifelse(anim = 3120, (numenemy > 1), (numtarget != numenemy))
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1420,7 +1420,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1469,7 +1469,7 @@ fall.envshake.time = 18
 fall.envshake.freq = 120
 fall.envshake.ampl = 6
 kill = (numtarget != numenemy) || (animelem = 5)
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1818,7 +1818,7 @@ givepower = 36, 36
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1856,7 +1856,7 @@ givepower = 36, 36
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1898,7 +1898,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1940,7 +1940,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -1978,7 +1978,7 @@ givepower = 36, 36
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -2016,7 +2016,7 @@ givepower = 36, 36
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -2057,7 +2057,7 @@ envshake.freq = 120
 envshake.ampl = 7
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -2216,7 +2216,7 @@ envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 9
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
@@ -2261,7 +2261,7 @@ envshake.time = 8
 envshake.freq = 120
 envshake.ampl = 6
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 0
 sparkNo = -1 + 0 * (var(33) := 8013)
@@ -2419,7 +2419,7 @@ envshake.ampl = 9
 fall = 1
 fall.recover = 0
 fall.animtype = Medium
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -2463,7 +2463,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -2702,7 +2702,7 @@ envshake.time = 8
 envshake.freq = 120
 envshake.ampl = 6
 forcestand = 1
-yaccel = 0.4
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 0
 sparkNo = -1 + 0 * (var(33) := 8013)
@@ -2741,7 +2741,7 @@ envshake.time = 8
 envshake.freq = 120
 envshake.ampl = 6
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 0
 sparkNo = -1 + 0 * (var(33) := 8013)
@@ -2784,7 +2784,7 @@ envshake.time = 8
 envshake.freq = 120
 envshake.ampl = 6
 forcestand = 1
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 fall = 1
 fall.recover = 0
@@ -3008,7 +3008,7 @@ air.fall = 1
 fall.recover = 0
 sprpriority = -1
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3054,7 +3054,7 @@ air.fall = 1
 fall.recover = 0
 sprpriority = 1
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3101,7 +3101,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 0
 sprpriority = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3148,7 +3148,7 @@ envshake.ampl = 6
 air.fall = 1
 fall.recover = 0
 sprpriority = -1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3195,7 +3195,7 @@ envshake.ampl = 6
 air.fall = 1
 fall.recover = 0
 sprpriority = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
@@ -3242,7 +3242,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 0
 sprpriority = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)

@@ -591,7 +591,7 @@ envshake.freq=30
 envshake.ampl=4
 fall = 1
 fall.recover = 0
-yaccel = .6
+yAccel = (0.5 + (ComboCount * 0.03))
 [State 1105, Hit]
 type = HitDef
 ;triggerall = prevstateno = 1100
@@ -623,7 +623,7 @@ envshake.freq=30
 envshake.ampl=4
 fall = 1
 fall.recover = 0
-yaccel = .6
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State AttackDone]
 type=statetypeset

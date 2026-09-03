@@ -138,7 +138,7 @@ ground.slidetime = 17
 ground.velocity = -12
 air.velocity = -4,-6
 air.juggle = 10
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 getpower = 0,0
 givepower = 15,15
 kill = 0
@@ -1206,7 +1206,7 @@ ground.type = high
 ground.slidetime = 17
 ground.velocity = -12
 air.velocity = -4,-6
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 getpower = 0,0
 givepower = 15,15
 snap = 70,0,0
@@ -1326,7 +1326,7 @@ ground.type = high
 ground.slidetime = 17
 ground.velocity = -2,-13
 air.velocity = -2,-13
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 getpower = 0,0
 givepower = 15,15
 fall = 1
@@ -1435,7 +1435,7 @@ ground.type = high
 ground.slidetime = 17
 ground.velocity = -6,20
 air.velocity = -6,20
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 getpower = 0,0
 givepower = 15,15
 hitsound = -1 + 0*(var(31):=1)
@@ -1719,7 +1719,7 @@ ground.cornerpush.veloff = 0
 p2stateno = 2470
 getpower = 0,0
 givepower = 16,16
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 hitsound = -1 + 0*(var(31):=1)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8011)

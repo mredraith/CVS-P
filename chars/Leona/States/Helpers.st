@@ -2415,7 +2415,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 2]
 type = HitDef
@@ -2486,7 +2486,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 4]
 type = HitDef
@@ -2521,7 +2521,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 ;;=
 ;Medium Baltic Ball
 ;;=
@@ -2557,7 +2557,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 6]
 type = HitDef
@@ -2591,7 +2591,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 7]
 type = HitDef
@@ -2630,7 +2630,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 8]
 type = HitDef
@@ -2665,7 +2665,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 ;;=
 ;Heavy Baltic Ball
 ;;=
@@ -2701,7 +2701,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 10]
 type = HitDef
@@ -2734,7 +2734,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 11]
 type = HitDef
@@ -2775,7 +2775,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 12]
 type = HitDef
@@ -2810,7 +2810,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 ;;=
 ;EX Baltic Ball
 ;;=
@@ -2852,7 +2852,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, 14]
 type = HitDef
@@ -2889,7 +2889,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11010, HitSpark]
 type=Helper
@@ -3102,7 +3102,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11030, 2]
 type = HitDef
@@ -3135,7 +3135,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11030, 3]
 type = HitDef
@@ -3168,7 +3168,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11030, HitSpark]
 type=Helper
@@ -3390,7 +3390,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11040, 2]
 type = HitDef
@@ -3428,7 +3428,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11040, 3]
 type = HitDef
@@ -3466,7 +3466,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11040, 4]
 type = HitDef
@@ -3506,7 +3506,7 @@ envshake.time = 10
 envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11040, HitSpark]
 type=Helper
@@ -3658,7 +3658,7 @@ palfx.mul = 250,224,120
 palfx.sinadd = 110,55,85,10
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11050, 2]
 type = HitDef
@@ -3695,7 +3695,7 @@ palfx.mul = 250,224,120
 palfx.sinadd = 110,55,85,10
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11050, 3]
 type = HitDef
@@ -3732,7 +3732,7 @@ palfx.mul = 250,224,120
 palfx.sinadd = 110,55,85,10
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11050, ChangeState]
 type = ChangeState
@@ -3874,7 +3874,7 @@ palfx.mul = 250,224,120
 palfx.sinadd = 110,55,85,10
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11051, HitSpark]
 type=Helper
@@ -4032,7 +4032,7 @@ palfx.mul = 250,224,120
 palfx.sinadd = 110,55,85,10
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11052, 2]
 type = HitDef
@@ -4069,7 +4069,7 @@ palfx.mul = 250,224,120
 palfx.sinadd = 110,55,85,10
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11052, 3]
 type = HitDef
@@ -4107,7 +4107,7 @@ palfx.mul = 250,224,120
 palfx.sinadd = 110,55,85,10
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 11052, HitSpark]
 type=Helper
@@ -4205,7 +4205,7 @@ envshake.freq = 90
 envshake.ampl = -4
 envshake.phase = 180
 kill = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 id = 11053
 guard.dist = 0
 

@@ -215,7 +215,7 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 15
 
 [State 200, ice]
@@ -361,7 +361,7 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 15
 
 [State 200, ice]
@@ -503,7 +503,7 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 241, HitDef]
@@ -546,7 +546,7 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 200, ice]
 type = Explod
@@ -866,7 +866,7 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 1050, HitDef]
@@ -909,7 +909,7 @@ fall = 1
 air.fall = 1
 fall.recover = 0
 air.recover = 0
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 1050, ice]
 type = Explod
@@ -3776,7 +3776,7 @@ guard.velocity = ifElse(var(20), -1.36, -2.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -2.36, -3), -7
 air.cornerPush.velOff = 0
-yaccel = ifElse(var(20),.5,.6)
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -3821,7 +3821,7 @@ guard.velocity = ifElse(var(20), -2.36, -4.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -0.36, -0.52), ifelse(var(10)=2, -11.0, ifelse(var(10)=1, -10.25, -9.5))
 air.cornerPush.velOff = 0
-yaccel = ifElse(var(20),.5,.5)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -4066,7 +4066,7 @@ guard.velocity = ifElse(var(20), -1.36, -2.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), 0, -2), -3
 air.cornerPush.velOff = 0
-yaccel = ifElse(var(20),.5,.6)
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -4111,7 +4111,7 @@ guard.velocity = ifElse(var(20), -1.36, -2.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), 0, -2), -8
 air.cornerPush.velOff = 0
-yaccel = ifElse(var(20),.5,.6)
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -4156,7 +4156,7 @@ guard.velocity = ifElse(var(20), -2.36, -4.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -0.36, -0.52), -13.5
 air.cornerPush.velOff = 0
-yaccel = ifElse(var(20),.5,.6)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120

@@ -56,7 +56,7 @@ ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 air.hittime=120
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recoverTime=120
@@ -146,7 +146,7 @@ air.velocity=-3.24, -7.73
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recoverTime=120
@@ -251,7 +251,7 @@ air.velocity=-5.39, -5.65
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recovertime=120
@@ -339,7 +339,7 @@ air.velocity=Ifelse(var(20),-4,-8),-3
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=1
 fall.recover=0
 fall.recovertime=120
@@ -381,7 +381,7 @@ air.velocity=Ifelse(var(20),-4,-8),-3
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=1
 fall.recover=0
 fall.recovertime=120
@@ -459,7 +459,7 @@ air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recovertime=120
@@ -541,7 +541,7 @@ air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recovertime=120
@@ -639,7 +639,7 @@ air.velocity = -5.5,-6.8
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel = .58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -716,7 +716,7 @@ air.velocity=-4.21,-7.36
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recovertime=120
@@ -813,7 +813,7 @@ air.velocity=-3.24, -7.73
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recovertime=120
@@ -910,7 +910,7 @@ airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel = Ifelse(var(55)=2,.4,.65)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -953,7 +953,7 @@ airguard.velocity = -5.5, -1
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yaccel = Ifelse(var(55)=2,.4,.65)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 1
 fall.recovertime = Ifelse(var(55)=2,20,120)
@@ -1032,7 +1032,7 @@ air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recovertime=120
@@ -1125,7 +1125,7 @@ air.velocity=-6.46,-5.25
 ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall=0
 fall.recover=1
 fall.recovertime=120
@@ -1209,7 +1209,7 @@ air.hittime=120
 fall=1
 fall.recover=1
 fall.recovertime=120
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 ground.velocity=-1.5, -6
 guard.velocity=Ifelse(var(20),-3,-6)
 air.velocity=-1.5, -6
@@ -1251,7 +1251,7 @@ guard.hittime = (18 + 4*var(9)) - 6
 air.hittime=120
 fall=1
 fall.recover=0
-yaccel=.58
+yAccel = (0.5 + (ComboCount * 0.03))
 ground.velocity=Ifelse(var(20),-3,-6), -5.5
 guard.velocity=Ifelse(var(20),-3,-6)
 air.velocity=Ifelse(var(20),-3,-6), -5.5
@@ -1333,7 +1333,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 air.hittime = Ifelse(var(55)=2, 12, 120)
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -1412,7 +1412,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 air.hittime = Ifelse(var(55)=2, 12, 120)
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -1491,7 +1491,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 air.hittime = Ifelse(var(55)=2, 32, 120)
 airguard.ctrlTime = 16
-yaccel = Ifelse(var(55)=2,1,.58)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 air.fall=var(55)=2
 fall.recover = var(55)!=2
@@ -1573,7 +1573,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 air.hittime = Ifelse(var(55)=2, 12, 120)
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -1652,7 +1652,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 air.hittime = Ifelse(var(55)=2, 12, 120)
 airguard.ctrlTime = 16
-yaccel = .58;Ifelse(var(55)=2,.45,.58)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -1733,7 +1733,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 air.hittime = Ifelse(var(55)=2, 32, 120)
 airguard.ctrlTime = 16
-yaccel = Ifelse(var(55)=2,1,.58)
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 air.fall=var(55)=2
 fall.recover = var(55)!=2

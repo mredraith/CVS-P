@@ -553,7 +553,7 @@ guard.velocity = -3
 airguard.velocity = -3,-3
 air.type = Low
 air.velocity = -1,-9
-yaccel = .38
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall = 1
 fall.recover = 0
@@ -965,7 +965,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -7.81851892471313, ifElse(var(10) = 2, -4.1004527587891, -3.7484527587891)
 air.cornerpush.veloff = 0
-yaccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1764,7 +1764,7 @@ air.fall = 1
 fall.recover = 0
 sprpriority = -1
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3200, Hit]
@@ -1800,7 +1800,7 @@ air.fall = 1
 fall.recover = 0
 sprpriority = 1
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3200, hitfinal]
@@ -1839,7 +1839,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 0
 sprpriority = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 1030, ChangeState]
@@ -2688,7 +2688,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -5.54, -5.25
 air.cornerpush.veloff = 0
-yaccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120;24
@@ -2777,7 +2777,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -5.54, -5.25
 air.cornerpush.veloff = 0
-yaccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120;24

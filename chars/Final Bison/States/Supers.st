@@ -191,7 +191,7 @@ palfx.time = 32
 air.fall = 1
 fall.recover = 0
 ID = 3000
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3000, Hit]
 type = hitdef
@@ -230,7 +230,7 @@ palfx.time = 32
 air.fall = 1
 fall.recover = 0
 ID = 3000
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3000, hitthrow]
 type = hitdef
@@ -268,7 +268,7 @@ palfx.time = 32
 air.fall = 1
 fall.recover = 0
 ID = 3002
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3000, p2state]
 type= targetdrop
@@ -672,7 +672,7 @@ palfx.time = 32
 fall = 1
 fall.recover = 0
 ID = 3050
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3050, flames]
 type = helper
@@ -943,7 +943,7 @@ envshake.ampl = 6
 fall = 0
 air.fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3100, hitlow]
 type = hitdef
@@ -978,7 +978,7 @@ envshake.ampl = 6
 fall = 0
 air.fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3100, hitslide]
 type = hitdef
@@ -1015,7 +1015,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0;-12.74
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State Idle]
@@ -1152,7 +1152,7 @@ envshake.ampl = 6
 fall = 0
 air.fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3150, Hit]
 type = hitdef
@@ -1190,7 +1190,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3100, Anim]
 type = changeanim
@@ -1498,7 +1498,7 @@ sprpriority = 5
 fall = 1
 fall.recover = 0
 ID = 4000
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 4000, HitSound]

@@ -217,7 +217,7 @@ envshake.ampl = 6
 forcestand = 1
 air.fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3000, hitlow]
 type = hitdef
@@ -250,7 +250,7 @@ envshake.ampl = 6
 forcestand = 1
 air.fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3000, hitfinal]
 type = hitdef
@@ -284,7 +284,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3000, Snd]
@@ -628,7 +628,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3050, slow]
@@ -837,7 +837,7 @@ envshake.ampl = 6
 forcestand = 1
 air.fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 3100, Hit]
 type = hitdef
@@ -871,7 +871,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3100, Hit]
@@ -906,7 +906,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3100, Snd]

@@ -935,7 +935,7 @@ guard.hittime = (40) - 6
 ground.velocity = 0,-13.5
 air.hittime = 28
 air.velocity = 0,-12.5
-yaccel = .44
+yAccel = (0.5 + (ComboCount * 0.03))
 ;fall = 1
 
 [State 0, TargetState]
@@ -1537,7 +1537,7 @@ airguard.velocity = -8,-2
 air.type = High
 air.velocity = -5,-12
 air.hittime = 21
-yaccel = .5
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 air.recover = 0
 

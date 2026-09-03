@@ -106,7 +106,7 @@ getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
 envshake.time = 14
 envshake.ampl = 6
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 air.fall = 1
 fall.recover = 1
@@ -143,7 +143,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 1000, Anim]
@@ -243,7 +243,7 @@ envshake.ampl = 6
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 1005, End]
@@ -332,7 +332,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State Idle]
@@ -520,7 +520,7 @@ envshake.ampl = 5
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 1110, Vel]
@@ -615,7 +615,7 @@ air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -650,7 +650,7 @@ air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
 forcestand = 1
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -749,7 +749,7 @@ air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
 forcestand = 1
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -970,7 +970,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -1008,7 +1008,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), 4, 8), -1.5
 forcestand = 1
@@ -1173,7 +1173,7 @@ envshake.ampl = 5
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State Land]
@@ -1516,7 +1516,7 @@ envshake.ampl = 5
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State Land]

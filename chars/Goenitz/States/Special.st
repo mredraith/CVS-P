@@ -1699,7 +1699,7 @@ guard.velocity = ifElse(var(20), -2.36, -4.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -2.36, -4), -8
 air.cornerPush.velOff = 0
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 1
 hitSound = -1 + 0 * (var(31) := 9)
@@ -1776,7 +1776,7 @@ p1stateno = 1415
 p2stateno = 1420
 Fall = 1
 Fall.Recover = 0
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 Kill = 0
 
 [State 1410, 3]
@@ -2091,7 +2091,7 @@ guard.velocity = ifElse(var(20), -2.36, -4.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -2.36, -4), -8
 air.cornerPush.velOff = 0
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 air.fall = 1
 fall.recover = 1
 hitSound = -1 + 0 * (var(31) := 9)
@@ -2167,7 +2167,7 @@ p1stateno = 1445
 p2stateno = 1450
 Fall = 1
 Fall.Recover = 0
-yaccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.03))
 Kill = 0
 
 [State 1440, 3]

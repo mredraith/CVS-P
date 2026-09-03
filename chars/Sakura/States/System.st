@@ -1681,7 +1681,7 @@ air.velocity = -4, -8
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 
 [State 195, Snd]

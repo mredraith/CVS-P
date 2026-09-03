@@ -1539,7 +1539,7 @@ airguard.velocity = -4,-4
 p2facing = 1
 air.fall = 1
 fall = 1                   ;Make p2 fall down
-yaccel = .4                ;p2 will accelerate down at .4 pixels/sec^2 when falling
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 1100, 3]
 type = PosAdd
@@ -1652,7 +1652,7 @@ airguard.velocity = -4,-5
 p2facing = 1
 air.fall = 1
 fall = 1                   ;Make p2 fall down
-yaccel = .4                ;p2 will accelerate down at .4 pixels/sec^2 when falling
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 1110, 3]
 type = PosAdd
@@ -1843,7 +1843,7 @@ airguard.velocity = -4,-4
 p2facing = 1
 fall = 1
 fall.recovertime = 60
-yaccel = .4
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State 1120, 3]
 type = PosAdd
@@ -2449,7 +2449,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -3509,7 +3509,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -3979,7 +3979,7 @@ guard.velocity = -6
 guard.cornerPush.velOff = 0
 air.velocity = -6.46, -4.25
 air.cornerPush.velOff = 0
-yaccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120

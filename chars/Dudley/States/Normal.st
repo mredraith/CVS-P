@@ -1546,7 +1546,7 @@ air.velocity = -1,-12
 guard.velocity = -8
 airguard.velocity = -3, -7
 fall = 1
-yaccel = .6
+yAccel = (0.5 + (ComboCount * 0.03))
 
 [State AttackDone]
 type=statetypeset

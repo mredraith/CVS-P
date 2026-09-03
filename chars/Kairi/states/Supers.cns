@@ -644,7 +644,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 0
 ID = 4200
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 4200, hit combo low]
@@ -679,7 +679,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 4200, hit combo high]
@@ -714,7 +714,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 4200, hit final]
@@ -749,7 +749,7 @@ envshake.freq = 120
 envshake.ampl = 8
 fall = 1
 fall.recover = 0
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 p2stateno = 4150
 id = 4500

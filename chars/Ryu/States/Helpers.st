@@ -129,7 +129,7 @@ envshake.time = 14
 envshake.freq = 120
 envshake.ampl = 4
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse((root, var(20)), -4, -8), -1.5
 forcestand = 1
@@ -352,7 +352,7 @@ palfx.sinadd = 80, 25, 0, 8
 palfx.mul = 512, 256, 128
 palfx.time = 32
 sprpriority = 4
-yaccel = 0.45
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse((root, var(20)), -4, -8), -1.5
 forcestand = 1
@@ -588,7 +588,7 @@ envshake.ampl = 4
 ;palfx.mul = 128, 128, 128
 ;palfx.time = 32
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 airguard.ctrltime = 16
 airguard.velocity = ifelse((root, var(20)), -4, -8), -1.5
 forcestand = 1
@@ -1267,7 +1267,7 @@ envshake.time = 16
 envshake.freq = 120
 envshake.ampl = 6
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3005, Hit Evil]
@@ -1307,7 +1307,7 @@ palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 ;[State 3005, Hit Last]
@@ -1646,7 +1646,7 @@ palfx.sinadd = 10, 30, 60, 8
 palfx.mul = 128, 256, 512
 palfx.time = 32
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 ID = 3025
 forcestand = 1
 
@@ -1890,7 +1890,7 @@ palfx.sinadd = 64, 0, 0, 4
 palfx.mul = 256, 0, 0
 palfx.time = 48
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 ID = 3045
 forcestand = 1
 
@@ -2127,7 +2127,7 @@ givepower = 36, 36
 fall = 1
 fall.recover = 0
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3055, Hit]
@@ -2160,7 +2160,7 @@ givepower = 36, 36
 fall = 1
 fall.recover = 0
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 ;[State 3055, Sparks]
@@ -2764,7 +2764,7 @@ envshake.time = 16
 envshake.freq = 120
 envshake.ampl = 6
 sprpriority = 4
-yaccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.03))
 forcestand = 1
 
 [State 3605, Miss]
