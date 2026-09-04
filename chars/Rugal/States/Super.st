@@ -1057,7 +1057,7 @@ guard.hittime = (0) - 6
 guard.ctrltime = 0
 ground.velocity = 0,0
 air.velocity = 0,0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 0
 air.recover = 0
@@ -3553,7 +3553,7 @@ guard.velocity = -4.52
 guard.cornerPush.velOff = 0
 air.velocity = 0, 0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 forcestand = 1
 fall = 0
@@ -3769,7 +3769,7 @@ envshake.time = 9
 envshake.ampl = 2
 getpower = 0, 0
 givepower = 24,24
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3322
 
@@ -3809,7 +3809,7 @@ givepower = 24,24
 persistent = 0
 envshake.time = 9
 envshake.ampl = 3
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3323
 
@@ -3849,7 +3849,7 @@ givepower = 24,24
 persistent = 0
 envshake.time = 9
 envshake.ampl = 2
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3323
 
@@ -3889,7 +3889,7 @@ givepower = 24,24
 persistent = 0
 envshake.time = 9
 envshake.ampl = 3
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3322
 
@@ -3929,7 +3929,7 @@ givepower = 24,24
 persistent = 0
 envshake.time = 9
 envshake.ampl = 3
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3323
 
@@ -3970,7 +3970,7 @@ envshake.time = 9
 envshake.ampl = 2
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3302, Hit 7]
 type = HitDef
@@ -4012,7 +4012,7 @@ fall.recover = 0
 fall.recoverTime = 120
 envshake.time = 10
 envshake.ampl = 3
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3302, Effect]
 type = PlaySnd
@@ -4415,7 +4415,7 @@ guard.velocity = -4.52
 guard.cornerPush.velOff = 0
 air.velocity = 0, 0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 forcestand = 1
 fall = 0
@@ -4631,7 +4631,7 @@ envshake.time = 9
 envshake.ampl = 2
 getpower = 0, 0
 givepower = 24,24
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3322
 
@@ -4671,7 +4671,7 @@ envshake.time = 9
 envshake.ampl = 2
 getpower = 0, 0
 givepower = 24,24
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3323
 
@@ -4711,7 +4711,7 @@ envshake.time = 9
 envshake.ampl = 2
 getpower = 0, 0
 givepower = 24,24
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3323
 
@@ -4751,7 +4751,7 @@ envshake.time = 9
 envshake.ampl = 2
 getpower = 0, 0
 givepower = 24,24
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3322
 
@@ -4791,7 +4791,7 @@ envshake.time = 9
 envshake.ampl = 2
 getpower = 0, 0
 givepower = 24,24
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 p2stateno = 3323
 
@@ -4832,7 +4832,7 @@ envshake.time = 9
 envshake.ampl = 2
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 
 [State 3352, Hit 7]
@@ -4872,7 +4872,7 @@ envshake.time = 9
 envshake.ampl = 2
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 
 [State 3352, ChangeState]
@@ -5080,7 +5080,7 @@ envshake.time = 9
 envshake.ampl = 2
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 
 [State 3353, Hit 2]
@@ -5120,7 +5120,7 @@ envshake.time = 9
 envshake.ampl = 2
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 
 [State 3353, Hit 3]
@@ -5161,7 +5161,7 @@ envshake.time = 9
 envshake.ampl = 2
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 
 [State 3353, Hit 4]
@@ -5202,7 +5202,7 @@ envshake.ampl = 2
 fall = 1
 fall.recover = 0
 fall.recoverTime = 120
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3353, 1]
 type = statetypeset
@@ -5373,7 +5373,7 @@ guard.velocity = -4.52
 guard.cornerPush.velOff = 0
 air.velocity = 0, 0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 forcestand = 1
 fall = 0
@@ -5853,7 +5853,7 @@ guard.velocity = -4.52
 guard.cornerPush.velOff = 0
 air.velocity = 0, 0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 forcestand = 1
 fall = 0
@@ -6663,7 +6663,7 @@ guard.velocity = -8.52
 guard.cornerPush.velOff = 0
 air.velocity = 0, 0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 kill = 0
 forcestand = 1
 fall = 0

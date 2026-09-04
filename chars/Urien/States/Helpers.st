@@ -955,7 +955,7 @@ guard.sparkNo = -1
 palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3005, TargetState]
 type = TargetState
@@ -1252,7 +1252,7 @@ guard.sparkNo = -1
 palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3055, TargetState]
 type = TargetState
@@ -1461,7 +1461,7 @@ palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
 sprpriority = 4
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3210, Hit]
 type = HitDef
@@ -1501,7 +1501,7 @@ palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
 sprpriority = 4
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3210, TargetState]
 type = TargetState
@@ -2332,7 +2332,7 @@ palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
 sprpriority = 4
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3210, Hit]
 type = HitDef
@@ -2372,7 +2372,7 @@ palfx.sinadd = 64, 64, 64, 4
 palfx.mul = 128, 128, 128
 palfx.time = 32
 sprpriority = 4
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3210, TargetState]
 type = TargetState
@@ -3105,7 +3105,7 @@ guard.velocity = -11
 guard.cornerpush.veloff = 0
 air.velocity = -2.25, -7.75
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 0
 forcestand = 1
@@ -3150,7 +3150,7 @@ guard.velocity = -11
 guard.cornerpush.veloff = 0
 air.velocity = -2.25, -7.75
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 0
 forcestand = 1

@@ -1356,7 +1356,7 @@ guard.velocity = -4.49
 guard.cornerPush.velOff = 0
 air.velocity = 0,0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 800)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -5305,7 +5305,7 @@ guard.velocity = -4.49
 guard.cornerPush.velOff = 0
 air.velocity = 0,0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -5444,7 +5444,7 @@ guard.velocity = -4.49
 guard.cornerPush.velOff = 0
 air.velocity = 0,0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -5487,7 +5487,7 @@ guard.velocity = -4.49
 guard.cornerPush.velOff = 0
 air.velocity = 0,0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -5999,7 +5999,7 @@ guard.velocity = -4.49
 guard.cornerPush.velOff = 0
 air.velocity = 0,0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
 guardSound = -1 + 0 * (var(32) := 0)
@@ -7628,7 +7628,7 @@ guard.velocity = 0
 guard.cornerPush.velOff = 0
 air.velocity = -4.5, -7
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -7805,7 +7805,7 @@ guard.velocity = 0
 guard.cornerPush.velOff = 0
 air.velocity = -4.5, -7
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 air.fall = 1
 fall.recover = 1

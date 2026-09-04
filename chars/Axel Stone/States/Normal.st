@@ -2994,7 +2994,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 155), var(36):= -88
 hitSound = -1 +0 * (var(31) := 800)
 guardSound = -1 +0 * (var(32) := 0)
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -3016,7 +3016,7 @@ guard.sparkno = -1 + 0 * (var(34) := 8000)
 sparkxy = -10 + 0 * (var(35) := 155), var(36):= -88
 hitSound = -1 +0 * (var(31) := 800)
 guardSound = -1 +0 * (var(32) := 0)
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120

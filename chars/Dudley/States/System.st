@@ -4591,5 +4591,7 @@ value=s10,1
 channel=0
 ignorehitpause=1
 
-
-
+[State -3]
+type = assertspecial
+trigger1 = 1
+flag = nojugglecheck

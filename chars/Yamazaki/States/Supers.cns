@@ -230,7 +230,7 @@ nochainid = ifelse((prevstateno = 3550), 69, 999)
 fall = 1
 fall.recover = 0
 getpower = 0, 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 p2facing = 1
 
 [State 3000, 5]
@@ -265,7 +265,7 @@ nochainid = ifelse((prevstateno = 3550), 69, 999)
 fall = 1
 fall.recover = 0
 getpower = 0, 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 p2facing = 1
 
 [State 3000, HitDef]
@@ -1025,7 +1025,7 @@ nochainid = 999
 fall = 1
 fall.recover = 0
 getpower = 0, 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 p2facing = 1
 
 [State 3050, 5]
@@ -1060,7 +1060,7 @@ nochainid = 999
 fall = 1
 fall.recover = 0
 getpower = 0, 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 p2facing = 1
 
 [State 3050, HitDef]
@@ -8234,7 +8234,7 @@ guard.velocity = ifelse(var(20), -2.41, -4.49)
 guard.cornerpush.veloff = 0
 air.velocity = -5.40, -5.65
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 0
 fall.recovertime = 120
@@ -8367,7 +8367,7 @@ guard.velocity = ifelse(var(20), -5.05, -9.03)
 guard.cornerpush.veloff = 0
 air.velocity = -2.16, -8.00
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 0
 fall.recovertime = 120
@@ -8411,7 +8411,7 @@ guard.velocity = ifelse(var(20), -5.05, -9.03)
 guard.cornerpush.veloff = 0
 air.velocity = -2.16, -8.00
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 0
 fall.recovertime = 120
@@ -8455,7 +8455,7 @@ guard.velocity = ifelse(var(20), -5.05, -9.03)
 guard.cornerpush.veloff = 0
 air.velocity = -2.16, -8.00
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 0
 fall.recovertime = 120
@@ -8499,7 +8499,7 @@ guard.velocity = ifelse(var(20), -5.05, -9.03)
 guard.cornerpush.veloff = 0
 air.velocity = -2.16, -8.00
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 0
 fall.recovertime = 120

@@ -1,60 +1,25 @@
 ; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
 ; 
-;==
-;==SUPER STATES==
-;==
+;============================================================================================
+;======================================<SUPER STATES>========================================
+;============================================================================================
 
-;==ELERUSH KAMUI RIMSE=
+;======================<ELERUSH KAMUI RIMSE>=============================
 [Statedef 3000]
 type = A
 physics = N
-movetype = A
+movetype = I
 anim = 1500
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 facep2 = 1
 
-[State 3000, Erase Inputs]
-type = null
-trigger1 = !AIlevel
-trigger1 = time <= 0
-trigger1 = 1 || map(cmd_erase_motion_super) := 1
-trigger1 = 1 || map(cmd_erase_completed) := 1
-ignorehitpause = 1
-persistent = 0
-
-[State Cancel Flags]
-type = null
-trigger1 = time <= 0
-trigger1 = 1 || map(supercancelflag) := (prevstateno = [1000, 2999] && map(supercancel) && !map(customcombo))
-trigger1 = 1 || map(hypercancelflag) := (prevstateno = [3000, 4999] && map(hypercancel))
-ignorehitpause = 1
-persistent = 0
-
-[State Super Cancel Flash]
-type = palfx
-trigger1 = time % 2
-trigger1 = time = [1, 11]
-trigger1 = map(supercancelflag) || map(hypercancelflag)
-trigger1 = 1 || map(juggle_count) := 0
-time = 1
-add = 255, 255, 255
-ignorehitpause = 1
-
-[State 3000, Custom Combo End]
-type = palfx
-trigger1 = !time
-trigger1 = map(customcombo) > 0
-trigger1 = (map(customcombo) := 0) || (map(juggle_count) := 0) || 1
-time = 1
-
-[State 3000, Sound]
+[State 3000, Snd]
 type = playsnd
 trigger1 = !time
 value = 0, 40
-
 [State 3000, Dust]
 type = helper
 trigger1 = !time
@@ -69,22 +34,14 @@ ownpal = 1
 type = veladd
 trigger1 = 1
 y = 0.5
-
 [State 3000, Vel]
 type = velset
 trigger1 = !time
 y = -8
 
-[State 3000, NHB]
-type = nothitby
-trigger1 = vel y <= 0
-value2 = , AP
-time = 1
-
-[State 3000, OK]
+[State 3000, ok]
 type = changestate
-trigger1 = time >= 10
-trigger1 = pos y <= -52
+trigger1 = time >= 10 && pos y <= -52
 trigger1 = numhelper(10000)
 trigger1 = pos y <= (helper(10000), pos y + 94)
 value = ifelse(power >= 2000, 3001, 1509)
@@ -92,12 +49,11 @@ value = ifelse(power >= 2000, 3001, 1509)
 [State 3000, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 1591
 
 
-;----- Caught -----
+;--- Caught ---
 [Statedef 3001]
 type = A
 physics = N
@@ -105,26 +61,36 @@ movetype = A
 anim = 3001
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
-poweradd = -2000 + 0 * (map(superlevel) := 2)
+sprpriority = 1
+poweradd = -2000
 
-[State Damage Scaling - Add]
-type = mapadd
+[State 3001, Super Level]
+type = varset
+trigger1 = var(10) != 1
+var(10) = 1
+
+[State 3001, Custom Combo End]
+type = palfx
 trigger1 = !time
-trigger1 = map(combocheck)
-trigger1 = 1 || map(combocheck) := 0
-map = "combototal"
-value = 1
+trigger1 = var(20) > 0
+trigger1 = (var(20) := 0) || (var(15) := 0) || 1
+time = 1
+
+[State 3001, unguardable]
+type = varset
+trigger1 = time = 3 && numenemy
+trigger1 = (enemynear, stateno != [120, 155])
+var(17) = 45
 
 [State 3001, NHB]
 type = nothitby
-trigger1 = 1
+trigger1 = animtime || prevstateno = 3000
 time = 1
 value = SCA
 
 [State 3001, Superpause FX]
 type = helper
-trigger1 = map(cfg_superfx)
+trigger1 = fvar(31)
 trigger1 = time = 3
 helpertype = normal
 stateno = 8510
@@ -137,17 +103,17 @@ size.xscale = 1
 size.yscale = 1
 ownpal = 1
 
-[State 3001, Superpause]
+[State 3001, superpause]
 type = superpause
 trigger1 = time = 3
-time = 43
-movetime = 43
-p2defmul = 1
+time = 45
+movetime = 45
+p2defmul = 1 + (0 * (fvar(5) := 0))
 unhittable = 0
-anim = ifelse(map(cfg_superfx), -1, 101)
+anim = ifelse(fvar(31), -1, 101)
 pos = 5, -83
 sound = s0, 8510
-darken = !map(cfg_superfx)
+darken = ifelse(fvar(31), 0, 1)
 
 [State 3001, End]
 type = changestate
@@ -155,7 +121,7 @@ trigger1 = !animtime
 value = 3010
 
 
-;----- Dive -----
+;--- Dive ---
 [Statedef 3010]
 type = A
 physics = N
@@ -163,27 +129,25 @@ movetype = A
 anim = 3010
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 3010, Pos]
 type = posadd
 trigger1 = !time
 trigger1 = prevstateno = 3001
 y = -16
-
 [State 3010, Vel]
 type = velset
 trigger1 = 1
 x = 12.635
 y = 5.985
 
-[State 3010, Sound]
+[State 3010, Snd]
 type = playsnd
 trigger1 = !time
 value = 4, 4
 channel = 0
-
-[State 3010, Sound]
+[State 3010, Snd]
 type = playsnd
 trigger1 = !time
 value = 7, 1
@@ -196,22 +160,34 @@ stateno = 1005
 ID = 1005
 name = "Mutsube FX"
 postype = p1
-supermovetime = cond(numenemy, (p2, pausetime), 60)
+supermovetime = var(17)
+size.xscale = 0.5
+size.yscale = 0.5
+ownpal = 1
+[State 3010, FX]
+type = helper
+trigger1 = !time
+helpertype = normal
+stateno = 1006
+ID = 1005
+name = "Mutsube FX"
+postype = p1
+pos = 27, -4
+supermovetime = var(17)
 size.xscale = 0.5
 size.yscale = 0.5
 ownpal = 1
 
 [State 3010, Hit]
 type = hitdef
+trigger1 = var(15) < 2
 trigger1 = !time
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := 2)
 ID = 3000
 attr = A, HA
 hitflag = MAF
 guardflag = H
 priority = 4, Hit
-damage = 80, 20
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 12, 12
@@ -221,57 +197,54 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = High
 air.type = High
-ground.hittime = 1 + 18
-guard.hittime = (1 + 18) - 6
-ground.slidetime = 12
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
+ground.hittime = 48
+guard.hittime = (48) - 6
+ground.slidetime = 48
 air.hittime = 120
 ground.velocity = -4.49, 0
 guard.velocity = -10.52
 air.velocity = -4.31, -7.27
-ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+ground.cornerpush.veloff = 0;-8.17
+guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 air.fall = 1
 fall.recover = 0
-down.recover = 1
-p1sprpriority = sprpriority
 forcestand = 1
-sparkno = -1 + 0 * (map(sparkno) := 8024)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 38), map(sparky) := -10
-hitsound = s2, 8
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8035)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 38), var(37) := -10
+hitsound = -1 * (var(31) := 8) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
 
-[State 3010, P2 State]
-type = targetstate
-trigger1 = movehit = 1
-trigger1 = numtarget(3000)
-trigger1 = target(3000), alive
-trigger1 = (target(3000), pos x - pos x) * facing > 0
-trigger1 = target(3000), stateno = 5000 || target(3000), stateno = 5010
-ID = 3000
-value = 3030
+[State 3010, Blood]
+type = helper
+trigger1 = fvar(32)
+trigger1 = hitpausetime = 11
+trigger1 = movehit = 1 && numtarget
+helpertype = normal
+stateno = 8052
+ID = 8050
+name = "Blood"
+postype = p1
+pos = ifelse(p2dist x < 0, 0, ifelse(p2dist x < var(36), ceil(p2dist x), var(36))), var(37)
+facing = ifelse((target, facing = facing), 1, -1)
+ownpal = 1
+pausemovetime = 65535
+supermovetime = 65535
 ignorehitpause = 1
 
-[State 3010, P1 State]
+[State 3010, p1state]
 type = changestate
-trigger1 = movehit = 1
-trigger1 = numtarget(3000)
+trigger1 = movehit = 1 && numtarget(3000)
 trigger1 = (target(3000), statetype != A) && !(target(3000), hitshakeover)
 value = 3019
 ignorehitpause = 1
-
-[State 3010, P1 State]
+[State 3010, p1state]
 type = changestate
 trigger1 = movehit = 1 && !numtarget
 trigger2 = moveguarded = 1 || movereversed = 1
@@ -280,12 +253,11 @@ value = 3015
 [State 3010, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 3011
 
 
-;----- Land -----
+;--- Land ---
 [Statedef 3011]
 type = S
 physics = N
@@ -293,7 +265,7 @@ movetype = I
 anim = 3011
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 movehitpersist = 1
 
 [State 3011, Pos]
@@ -301,11 +273,10 @@ type = posset
 trigger1 = 1
 y = 0
 
-[State 3011, Sound]
+[State 3011, Snd]
 type = playsnd
 trigger1 = !time
 value = 0, 52
-
 [State 3011, Dust]
 type = explod
 trigger1 = !time
@@ -324,7 +295,7 @@ value = 11
 ctrl = 1
 
 
-;----- Jump back if blocked -----
+;--- Jump back if blocked ---
 [Statedef 3015]
 type = A
 physics = N
@@ -332,13 +303,12 @@ movetype = I
 anim = 3015
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 3015, Accel]
 type = veladd
 trigger1 = 1
 y = 0.6
-
 [State 3015, Vel]
 type = velset
 trigger1 = !time
@@ -348,12 +318,11 @@ y = -6
 [State 3015, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 3011
 
 
-;----- Jump back if connected -----
+;--- Jump back if connected ---
 [Statedef 3019]
 type = A
 physics = N
@@ -361,39 +330,26 @@ movetype = A
 anim = 3015
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 3019, Accel]
 type = veladd
 trigger1 = 1
 y = 0.6
-
 [State 3019, Vel]
 type = velset
 trigger1 = !time
 x = 0
 y = -6
 
-[State 3019, Track]
-type = velset
-trigger1 = !time
-x = p2bodydist x / 28.0
-
-[State 3019, Limits]
-type = velset
-trigger1 = !time
-trigger1 = vel x != [0, 4]
-x = ifelse(vel x < 0, 0, 4)
-
 [State 3019, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 3020
 
 
-;----- Combo -----
+;--- Combo ---
 [Statedef 3020]
 type = S
 physics = N
@@ -401,18 +357,16 @@ movetype = A
 anim = 3020
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 3020, Pos]
 type = posset
 trigger1 = 1
 y = 0
-
-[State 3020, Sound]
+[State 3020, Snd]
 type = playsnd
 trigger1 = !time
 value = 0, 52
-
 [State 3020, Dust]
 type = explod
 trigger1 = !time
@@ -428,30 +382,26 @@ ownpal = 1
 type = veladd
 trigger1 = vel x > 0
 x = -0.125
-
 [State 3020, Vel]
 type = velset
 trigger1 = vel x < 0
 x = 0
-
 [State 3020, Vel]
 type = velset
 trigger1 = animelem = 3 || animelem = 10 || animelem = 17 || animelem = 24 || animelem = 33
-x = 3.0
+x = 2
 
-[State 3020, Sound]
+[State 3020, Snd]
 type = playsnd
 trigger1 = animelem = 3
 value = 5, 9
 channel = 0
-
-[State 3020, Sound]
+[State 3020, Snd]
 type = playsnd
 trigger1 = animelem = 5 || animelem = 12 || animelem = 19 || animelem = 26 || animelem = 33
 value = 7, 2
 freqmul = 1.1
-;channel = 1
-stopongethit = 1
+channel = 1
 
 [State 3020, Sparkles]
 type = explod
@@ -472,14 +422,13 @@ ownpal = 1
 
 [State 3020, Hit]
 type = hitdef
+trigger1 = var(15) < 1
 trigger1 = animelem = 6 || animelem = 13 || animelem = 20 || animelem = 27
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := 1)
 attr = S, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 40, 10
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 4, 4
@@ -489,89 +438,87 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18
-guard.hittime = (1 + 18) - 6
-ground.slidetime = 12
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
+ground.hittime = 18
+guard.hittime = (18) - 6
+ground.slidetime = 18
 air.hittime = 120
 ground.velocity = -4.49, 0
 guard.velocity = -4.49
 air.velocity = -4.31, -7.27
-ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+ground.cornerpush.veloff = 0;-8.17
+guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 air.fall = 1
 fall.recover = 0
-down.recover = 0; cannot mash
-down.recovertime = 30
-sparkno = -1 + 0 * (map(sparkno) := 8014)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 84), map(sparky) := -56
-hitsound = s2, 2
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 84), var(37) := -56
+hitsound = -1 * (var(31) := 2) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
 
-[State 3020, Hit Final]
+[State 3020, Hit]
 type = hitdef
+trigger1 = var(15) < 1
 trigger1 = animelem = 35
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := 1)
 attr = S, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 40, 10
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 60 < 7, 7, fvar(11) * 60)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 12, 12
 guard.pausetime = 12, 12
-animtype = Diagup
-air.animtype = Diagup
-fall.animtype = Diagup
+animtype = Hard
+air.animtype = Hard
+fall.animtype = Hard
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18
-guard.hittime = (1 + 18) - 6
-ground.slidetime = 12
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
+ground.hittime = 18
+guard.hittime = (18) - 6
+ground.slidetime = 18
 air.hittime = 120
-ground.velocity = -5.0, -7.0
+ground.velocity = -3.5, -7.33
 guard.velocity = -4.49
-air.velocity = -5.0, -7.0
+air.velocity = -3.5, -7.33
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 0
-down.recover = 0; cannot mash
-down.recovertime = 30
-sparkno = -1 + 0 * (map(sparkno) := 8014)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 94), map(sparky) := -64
-hitsound = s2, 2
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 94), var(37) := -64
+hitsound = -1 * (var(31) := 2) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
+
+[State 3020, Sparkles]
+type = helper
+trigger1 = !numhelper(8160)
+trigger1 = movehit && numtarget
+trigger1 = !(target, hitshakeover)
+trigger1 = var(40) := (target, ID)
+helpertype = normal
+stateno = 8160
+ID = 8160
+name = "Sparkles"
+postype = p2
+ownpal = 1
+ignorehitpause = 1
 
 [State 3020, Type]
 type = statetypeset
-trigger1 = animelem = 36
+trigger1 = animelemtime(36) >= 0
 movetype = I
-
 [State 3020, End]
 type = changestate
 trigger1 = !animtime
@@ -579,97 +526,7 @@ value = 0
 ctrl = 1
 
 
-;----- Target Wait -----
-[Statedef 3030]
-type = S
-physics = N
-movetype = H
-velset = 0, 0
-
-[State 3030, Pos]
-type = posset
-trigger1 = 1
-y = 0
-
-[State 3030, Fall]
-type = hitfallset
-trigger1 = 1
-value = 0
-
-[State 3030, Anim]
-type = changeanim
-trigger1 = !time
-value = ifelse((gethitvar(groundtype) = 1), 5002, 5012)
-
-[State 3030, Anim]
-type = changeanim
-trigger1 = time > 0
-value = anim
-
-[State 3030, FFB Hard]
-type = forcefeedback
-trigger1 = !time
-time = 15
-ampl = 140
-waveform = sinesquare
-
-[State 3030, End]
-type = changestate
-trigger1 = hitshakeover
-value = 3031
-
-
-[Statedef 3031]
-type = S
-physics = S
-movetype = H
-
-[State 3031, Vel]
-type = velset
-trigger1 = !time
-x = const240p(-10.52)
-
-[State 3031, Anim]
-type = changeanim
-trigger1 = !animtime
-value = 5017
-
-[State 3031, Vel]
-type = velset
-trigger1 = time >= 18
-x = 0
-
-[State 3031, Defense]
-type = defencemulset
-trigger1 = time >= 18
-value = 1
-
-[State 3031, End]
-type = changestate
-trigger1 = time >= 18
-value = 3032
-
-
-[Statedef 3032]
-type = S
-physics = S
-movetype = H
-anim = 5300
-velset = 0, 0
-
-[State 3031, Defense]
-type = defencemulset
-trigger1 = time >= 48
-value = 1
-
-[State 3031, End]
-type = selfstate
-trigger1 = time >= 48
-value = 0
-ctrl = 1
-
-
-;==SHICHIKAPU KAMUI IRUSHIKA=
+;======================<SHICHIKAPU KAMUI IRUSHIKA>=============================
 [Statedef 3100]
 type = S
 physics = S
@@ -677,127 +534,104 @@ movetype = A
 anim = 3100
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
-poweradd = -1000 + 0 * (map(superlevel) := 1)
+sprpriority = 1
+poweradd = -1000
 
-[State Damage Scaling - Add]
-type = mapadd
-trigger1 = !time
-trigger1 = map(combocheck)
-trigger1 = 1 || map(combocheck) := 0
-map = "combototal"
-value = ifelse((prevstateno = [3000, 4999]), 3, ifelse((prevstateno = [1000, 2999]) && !map(customcombo), 2, 1))
-
-[State 3100, Strength]
-type = mapset
-trigger1 = !AIlevel
-trigger1 = time <= 0
-map = "strength"
-value = ifelse(map(cmd_strength_z), 2, ifelse(map(cmd_strength_y), 1, 0))
+[State 3100, Button]
+type = varset
+triggerall = time <= 0 && !AIlevel
+trigger1 = command = "x" || command = "y" || command = "z"
+trigger1 = var(11) := ifelse(command = "z", 2, ifelse(command = "y", 1, 0)) || 1
+trigger2 = command = "rlsx" || command = "rlsy" || command = "rlsz"
+trigger2 = var(11) := ifelse(command = "rlsz", 2, ifelse(command = "rlsy", 1, 0)) || 1
+trigger3 = command = "x+" || command = "y+" || command = "z+"
+trigger3 = var(11) := ifelse(command = "z+", 2, ifelse(command = "y+", 1, 0)) || 1
+trigger4 = command = "rlsx+" || command = "rlsy+" || command = "rlsz+"
+trigger4 = var(11) := ifelse(command = "rlsz+", 2, ifelse(command = "rlsy+", 1, 0)) || 1
+var(11) = var(11)
 ignorehitpause = 1
 persistent = 0
 
 [State 3100, Button AI]
-type = mapset
-trigger1 = AIlevel
-trigger1 = time <= 0
-map = "strength"
-value = ifelse(random < 333, 2, ifelse(random < 500, 1, 0))
+type = varset
+trigger1 = time <= 0 && AIlevel
+var(11) = ifelse(random < 333, 2, ifelse(random < 500, 1, 0))
 ignorehitpause = 1
 
-[State 3100, Strength]
-type = mapset
-trigger1 = !time
-trigger1 = prevstateno = 3020
-map = "strength"
-value = 2
+[State 3100, Button]
+type = varset
+trigger1 = !time && prevstateno = 3020
+var(11) = 2
 ignorehitpause = 1
 
-[State 3100, Erase Inputs]
-type = null
-trigger1 = !AIlevel
-trigger1 = time <= 0
-trigger1 = 1 || map(cmd_erase_motion_super) := 1
-trigger1 = 1 || map(cmd_erase_completed) := 1
-ignorehitpause = 1
-persistent = 0
-
-[State Cancel Flags]
-type = null
-trigger1 = time <= 0
-trigger1 = 1 || map(supercancelflag) := (prevstateno = [1000, 2999] && map(supercancel) && !map(customcombo))
-trigger1 = 1 || map(hypercancelflag) := (prevstateno = [3000, 4999] && map(hypercancel))
-ignorehitpause = 1
-persistent = 0
-
-[State Super Cancel Flash]
-type = palfx
-trigger1 = time % 2
-trigger1 = time = [1, 11]
-trigger1 = map(supercancelflag) || map(hypercancelflag)
-trigger1 = 1 || map(juggle_count) := 0
-time = 1
-add = 255, 255, 255
-ignorehitpause = 1
+[State 3100, Super Level]
+type = varset
+trigger1 = var(10) != 0
+var(10) = 0
 
 [State 3100, Custom Combo End]
 type = palfx
 trigger1 = !time
-trigger1 = map(customcombo) > 0
-trigger1 = (map(customcombo) := 0) || (map(juggle_count) := 0) || 1
+trigger1 = var(20) > 0
+trigger1 = (var(20) := 0) || (var(15) := 0) || 1
 time = 1
 
+[State 3100, unguardable]
+type = varset
+trigger1 = time = 4 && numenemy
+trigger1 = (enemynear, stateno != [120, 155])
+var(17) = 43
 [State 3100, NHB]
 type = nothitby
 trigger1 = animelemtime(6) < 0
 time = 1
 value = SCA
 
-[State 3100, Sound]
+[State 3100, Snd]
 type = playsnd
-trigger1 = time = 3
+trigger1 = time = 4
 value = 5, ifelse(prevstateno = 3020, 4, 5)
 channel = 0
 
 [State 3100, Mamahaha]
 type = helper
-trigger1 = time = 3
+trigger1 = !time
 helpertype = normal
 stateno = 10400
 ID = 10000
 name = "Mamahaha"
 postype = p1
-pos = map(mamahaha_dist_x), map(mamahaha_dist_y)
+pos = ceil(fvar(1)), ceil(fvar(2))
 ownpal = 1
-supermovetime = 44
+supermovetime = 47
 
 [State 3100, Superpause FX]
 type = helper
-trigger1 = map(cfg_superfx)
-trigger1 = time = 3
+trigger1 = fvar(31)
+trigger1 = time = 4
 trigger1 = numhelper(10000)
 helpertype = normal
 stateno = 8500
 ID = 8500
 name = "Super Charge"
 postype = p1
-pos = map(mamahaha_dist_x), map(mamahaha_dist_y) - 26
+pos = ceil(fvar(1)), ceil(fvar(2)) -26
 supermovetime = 255
 size.xscale = 1
 size.yscale = 1
 ownpal = 1
 
-[State 3100, Superpause]
+[State 3100, superpause]
 type = superpause
-trigger1 = time = 3
-time = 41
-movetime = 41
-p2defmul = 1
+trigger1 = time = 4
+time = 43
+movetime = 43
+p2defmul = 1 + (0 * (fvar(5) := 0))
 unhittable = 1
-anim = ifelse(map(cfg_superfx), -1, 100)
-pos = map(mamahaha_dist_x), map(mamahaha_dist_y) - 26
+anim = ifelse(fvar(31), -1, 100)
+pos = ceil(helper(10000), pos x) + 160, ceil(helper(10000), pos y) - 26
 sound = s0, 8500
-darken = !map(cfg_superfx)
+darken = ifelse(fvar(31), 0, 1)
 
 [State 3100, End]
 type = changestate
@@ -806,7 +640,7 @@ value = 0
 ctrl = 1
 
 
-;==SHIRIKORO KAMUI NOMI=
+;======================<SHIRIKORO KAMUI NOMI>=============================
 [Statedef 3200]
 type = S
 physics = S
@@ -814,59 +648,42 @@ movetype = I
 anim = 3200
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
-poweradd = -3000 + 0 * (map(superlevel) := 3)
+sprpriority = 1
+poweradd = -3000
 
-[State 3200, Erase Inputs]
-type = null
-trigger1 = !AIlevel
-trigger1 = time <= 0
-trigger1 = 1 || map(cmd_erase_motion_super) := 1
-trigger1 = 1 || map(cmd_erase_completed) := 1
-ignorehitpause = 1
-persistent = 0
-
-[State Cancel Flags]
-type = null
-trigger1 = time <= 0
-trigger1 = 1 || map(supercancelflag) := (prevstateno = [1000, 2999] && map(supercancel) && !map(customcombo))
-trigger1 = 1 || map(hypercancelflag) := (prevstateno = [3000, 4999] && map(hypercancel))
-ignorehitpause = 1
-persistent = 0
-
-[State Super Cancel Flash]
-type = palfx
-trigger1 = time % 2
-trigger1 = time = [1, 11]
-trigger1 = map(supercancelflag) || map(hypercancelflag)
-trigger1 = 1 || map(juggle_count) := 0
-time = 1
-add = 255, 255, 255
-ignorehitpause = 1
+[State 3200, Super Level]
+type = varset
+trigger1 = var(10) != 2
+var(10) = 2
 
 [State 3200, Custom Combo End]
 type = palfx
 trigger1 = !time
-trigger1 = map(customcombo) > 0
-trigger1 = (map(customcombo) := 0) || (map(juggle_count) := 0) || 1
+trigger1 = var(20) > 0
+trigger1 = (var(20) := 0) || (var(15) := 0) || 1
 time = 1
 
+[State 3200, unguardable]
+type = varset
+trigger1 = time = 4 && numenemy
+trigger1 = (enemynear, stateno != [120, 155])
+var(17) = 47
 [State 3200, NHB]
 type = nothitby
 trigger1 = 1
 time = 1
 value = SCA
 
-[State 3200, Sound]
+[State 3200, Snd]
 type = playsnd
-trigger1 = time = 3
+trigger1 = time = 4
 value = 5, 6
 channel = 0
 
 [State 3200, Superpause FX]
 type = helper
-trigger1 = map(cfg_superfx)
-trigger1 = time = 3
+trigger1 = fvar(31)
+trigger1 = time = 4
 helpertype = normal
 stateno = 8520
 ID = 8500
@@ -878,17 +695,17 @@ size.xscale = 1
 size.yscale = 1
 ownpal = 1
 
-[State 3200, Superpause]
+[State 3200, superpause]
 type = superpause
-trigger1 = time = 3
-time = 45
-movetime = 45
-p2defmul = 1
+trigger1 = time = 4
+time = 47
+movetime = 47
+p2defmul = 1 + (0 * (fvar(5) := 0))
 unhittable = 1
-anim = ifelse(map(cfg_superfx), -1, 102)
+anim = ifelse(fvar(31), -1, 102)
 pos = 1, -69
 sound = s0, 8520
-darken = !map(cfg_superfx)
+darken = ifelse(fvar(31), 0, 1)
 
 [State 3200, End]
 type = changestate
@@ -896,7 +713,7 @@ trigger1 = !animtime
 value = 3201
 
 
-;----- Channeling -----
+;--- Channeling ---
 [Statedef 3201]
 type = S
 physics = S
@@ -904,14 +721,17 @@ movetype = I
 anim = 3201
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 3201, heal]
 type = lifeadd
 trigger1 = 1
 value = ifelse(time <= 60, 3, ifelse(time <= 120, 2, 1))
-absolute = 1
-dizzy = 0
+
+;[State 3201, heal]
+;type = lifeadd
+;trigger1 = (time % 10)
+;value = 3
 
 [State 3201, FX]
 type = helper
@@ -939,32 +759,29 @@ trigger5 = inguarddist || (p2dist x = [-80, 80])
 value = 3202
 
 
-;----- Finished -----
+;--- Finished ---
 [Statedef 3202]
 type = S
 physics = S
 movetype = I
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 3202, Anim]
 type = changeanim
-trigger1 = !time
-trigger1 = anim != 3201
+trigger1 = !time && anim != 3201
 value = 3201
-
 [State 3202, Anim]
 type = changeanim
 trigger1 = time >= 16 && anim != 3202
 value = 3202
 
-[State 3202, Sound]
+[State 3202, Snd]
 type = playsnd
 trigger1 = anim = 3202 && animelem = 1
 value = 5, 7
 channel = 0
-
 [State 3202, FX]
 type = helper
 trigger1 = anim = 3202 && animelem = 1
@@ -977,13 +794,12 @@ ownpal = 1
 
 [State 3202, End]
 type = changestate
-trigger1 = !animtime
-trigger1 = anim = 3202
+trigger1 = anim = 3202 && !animtime
 value = 0
 ctrl = 1
 
 
-;==IRUSUKA YATORO LISE=
+;======================<IRUSUKA YATORO LISE>=============================
 [Statedef 3300]
 type = S
 physics = S
@@ -991,50 +807,47 @@ movetype = A
 anim = 3300
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
-poweradd = -2000 + 0 * (map(superlevel) := 2)
+sprpriority = 1
+poweradd = -2000
 
-[State Damage Scaling - Add]
-type = mapadd
-trigger1 = !time
-trigger1 = map(combocheck)
-trigger1 = 1 || map(combocheck) := 0
-map = "combototal"
-value = ifelse((prevstateno = [3000, 4999]), 3, ifelse((prevstateno = [1000, 2999]) && !map(customcombo), 2, 1))
-
-[State 3300, Strength]
-type = mapset
-trigger1 = !AIlevel
-trigger1 = time <= 0
-map = "strength"
-value = ifelse(map(cmd_strength_yz), 2, ifelse(map(cmd_strength_xz), 1, 0))
+[State 3300, Button]
+type = varset
+triggerall = time <= 0 && !AIlevel
+trigger1 = command = "x" || command = "y" || command = "z"
+trigger1 = var(11) := ifelse(command = "z", 2, ifelse(command = "y", 1, 0)) || 1
+trigger2 = command = "rlsx" || command = "rlsy" || command = "rlsz"
+trigger2 = var(11) := ifelse(command = "rlsz", 2, ifelse(command = "rlsy", 1, 0)) || 1
+trigger3 = command = "x+" || command = "y+" || command = "z+"
+trigger3 = var(11) := ifelse(command = "z+", 2, ifelse(command = "y+", 1, 0)) || 1
+trigger4 = command = "rlsx+" || command = "rlsy+" || command = "rlsz+"
+trigger4 = var(11) := ifelse(command = "rlsz+", 2, ifelse(command = "rlsy+", 1, 0)) || 1
+var(11) = var(11)
 ignorehitpause = 1
 persistent = 0
 
 [State 3300, Button AI]
-type = mapset
-trigger1 = AIlevel
-trigger1 = time <= 0
-map = "strength"
-value = ifelse(p2bodydist x >= 160, 2, ifelse(p2bodydist x >= 80, 1, 0))
+type = varset
+trigger1 = time <= 0 && AIlevel
+var(11) = ifelse(p2bodydist x >= 160, 2, ifelse(p2bodydist x >= 80, 1, 0))
 ignorehitpause = 1
 
-[State 3300, Erase Inputs]
-type = null
-trigger1 = !AIlevel
-trigger1 = time <= 0
-trigger1 = 1 || map(cmd_erase_motion_super) := 1
-trigger1 = 1 || map(cmd_erase_completed) := 1
-ignorehitpause = 1
-persistent = 0
+[State 3300, Super Level]
+type = varset
+trigger1 = var(10) != 1
+var(10) = 1
 
+[State 3300, unguardable]
+type = varset
+trigger1 = time = 4 && numenemy
+trigger1 = (enemynear, stateno != [120, 155])
+var(17) = 45
 [State 3300, NHB]
 type = nothitby
 trigger1 = animelemtime(8) < 1
 time = 1
 value = SCA
 
-[State 3300, Sound]
+[State 3300, Snd]
 type = playsnd
 trigger1 = time = 4
 value = 5, 10
@@ -1042,20 +855,20 @@ channel = 0
 
 [State 3300, Mamahaha]
 type = helper
-trigger1 = time = 3
+trigger1 = !time
 helpertype = normal
 stateno = 10600
 ID = 10000
 name = "Mamahaha"
 postype = p1
-pos = map(mamahaha_dist_x), map(mamahaha_dist_y)
+pos = ceil(fvar(1)), ceil(fvar(2))
 ownpal = 1
-supermovetime = 46
+supermovetime = 59
 
 [State 3300, Superpause FX]
 type = helper
-trigger1 = map(cfg_superfx)
-trigger1 = time = 3
+trigger1 = fvar(31)
+trigger1 = time = 4
 helpertype = normal
 stateno = 8510
 ID = 8500
@@ -1067,17 +880,17 @@ size.xscale = 1
 size.yscale = 1
 ownpal = 1
 
-[State 3300, Superpause]
+[State 3300, superpause]
 type = superpause
-trigger1 = time = 3
-time = 43
-movetime = 43
-p2defmul = 1
+trigger1 = time = 4
+time = 45
+movetime = 45
+p2defmul = 1 + (0 * (fvar(5) := 0))
 unhittable = 1
-anim = ifelse(map(cfg_superfx), -1, 101)
+anim = ifelse(fvar(31), -1, 101)
 pos = -1, -73
 sound = s0, 8510
-darken = !map(cfg_superfx)
+darken = ifelse(fvar(31), 0, 1)
 
 [State 3300, FX]
 type = helper
@@ -1101,7 +914,7 @@ trigger2 = (helper(10000), stateno != [10600, 10639])
 value = 3301
 
 
-;----- Recovery -----
+;--- Recovery ---
 [Statedef 3301]
 type = S
 physics = S
@@ -1109,7 +922,7 @@ movetype = A
 anim = 3301
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 3301, End]
 type = changestate
@@ -1118,7 +931,7 @@ value = 0
 ctrl = 1
 
 
-;==GANSO LELA MUTSUBE=
+;======================<GANSO LELA MUTSUBE>=============================
 [Statedef 3400]
 type = S
 physics = N
@@ -1126,67 +939,43 @@ movetype = A
 anim = 3400
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
-poweradd = -1000 + 0 * (map(superlevel) := 1)
+sprpriority = 1
+poweradd = -1000
 
-[State Damage Scaling - Add]
-type = mapadd
-trigger1 = !time
-trigger1 = map(combocheck)
-trigger1 = 1 || map(combocheck) := 0
-map = "combototal"
-value = ifelse((prevstateno = [3000, 4999]), 3, ifelse((prevstateno = [1000, 2999]) && !map(customcombo), 2, 1))
-
-[State 3400, Erase Inputs]
-type = null
-trigger1 = !AIlevel
-trigger1 = time <= 0
-trigger1 = 1 || map(cmd_erase_motion_super) := 1
-trigger1 = 1 || map(cmd_erase_completed) := 1
-ignorehitpause = 1
-persistent = 0
-
-[State Cancel Flags]
-type = null
-trigger1 = time <= 0
-trigger1 = 1 || map(supercancelflag) := (prevstateno = [1000, 2999] && map(supercancel) && !map(customcombo))
-trigger1 = 1 || map(hypercancelflag) := (prevstateno = [3000, 4999] && map(hypercancel))
-ignorehitpause = 1
-persistent = 0
-
-[State Super Cancel Flash]
-type = palfx
-trigger1 = time % 2
-trigger1 = time = [1, 11]
-trigger1 = map(supercancelflag) || map(hypercancelflag)
-trigger1 = 1 || map(juggle_count) := 0
-time = 1
-add = 255, 255, 255
-ignorehitpause = 1
+[State 3400, Super Level]
+type = varset
+trigger1 = var(10) != 0
+var(10) = 0
 
 [State 3400, Custom Combo End]
 type = palfx
 trigger1 = !time
-trigger1 = map(customcombo) > 0
-trigger1 = (map(customcombo) := 0) || (map(juggle_count) := 0) || 1
+trigger1 = var(20) > 0
+trigger1 = (var(20) := 0) || (var(15) := 0) || 1
 time = 1
 
+[State 3400, unguardable]
+type = varset
+trigger1 = time = 4 && numenemy
+trigger1 = (enemynear, stateno != [120, 155])
+var(17) = 43
 [State 3400, NHB]
 type = nothitby
-trigger1 = animelemtime(10) < 0
+trigger1 = animelemtime(10) < 1
 time = 1
 value = SCA
 
-[State 3400, Sound]
+[State 3400, Snd]
 type = playsnd
-trigger1 = time = 3
+trigger1 = time = 4
 value = 4, 2
 channel = 0
 
 [State 3400, Superpause FX]
 type = helper
-trigger1 = map(cfg_superfx)
-trigger1 = time = 3
+trigger1 = fvar(31)
+trigger1 = time = 4
+trigger1 = numhelper(10000)
 helpertype = normal
 stateno = 8500
 ID = 8500
@@ -1198,21 +987,21 @@ size.xscale = 1
 size.yscale = 1
 ownpal = 1
 
-[State 3400, Superpause]
+[State 3400, superpause]
 type = superpause
-trigger1 = time = 3
-time = 41
-movetime = 41
-p2defmul = 1
+trigger1 = time = 4
+time = 43
+movetime = 43
+p2defmul = 1 + (0 * (fvar(5) := 0))
 unhittable = 1
-anim = ifelse(map(cfg_superfx), -1, 100)
+anim = ifelse(fvar(31), -1, 100)
 pos = -16, -27
 sound = s0, 8500
-darken = !map(cfg_superfx)
+darken = ifelse(fvar(31), 0, 1)
 
 [State 3400, Type]
 type = statetypeset
-trigger1 = animelem = 10
+trigger1 = animelemtime(10) >= 0
 statetype = A
 physics = N
 
@@ -1221,7 +1010,6 @@ type = veladd
 trigger1 = animelemtime(10) >= 0 && animelemtime(12) < 0
 x = 0.125
 y = -0.4375
-
 [State 3400, Vel]
 type = velset
 trigger1 = animelem = 10
@@ -1233,7 +1021,6 @@ type = veladd
 trigger1 = animelemtime(12) >= 0
 x = -0.125
 y = 0.5
-
 [State 3400, Vel]
 type = velset
 trigger1 = vel x < 0
@@ -1245,20 +1032,18 @@ trigger1 = animelem = 12
 x = 6.5
 y = -2.5
 persistent = 0
-
 [State 3400, Pos]
 type = posadd
 trigger1 = animelem = 12
 y = 36
 persistent = 0
 
-[State 3400, Sound]
+[State 3400, Snd]
 type = playsnd
 trigger1 = animelem = 9
 value = 5, 1
 channel = 0
-
-[State 3400, Sound]
+[State 3400, Snd]
 type = playsnd
 trigger1 = animelem = 10
 value = 7, 1
@@ -1274,7 +1059,6 @@ postype = p1
 size.xscale = 0.5
 size.yscale = 0.5
 ownpal = 1
-
 [State 3400, Dust]
 type = helper
 trigger1 = animelem = 10
@@ -1287,15 +1071,14 @@ ownpal = 1
 
 [State 3400, Hit]
 type = hitdef
+trigger1 = var(15) < 2
 trigger1 = animelem = 10
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := 2)
 ID = 3400
 attr = A, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 80, 20
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 80 < 7, 7, fvar(11) * 80)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 12, 18
@@ -1305,41 +1088,39 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 18
-guard.hittime = (1 + 18) - 6
+ground.hittime = 18
+guard.hittime = (18) - 6
 ground.slidetime = 18
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
 air.hittime = 120
 ground.velocity = -6, -7.27
 guard.velocity = -10.52
 air.velocity = -6, -7.27
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 air.fall = 1
 fall.recover = 0
-down.recover = 1
-p1sprpriority = sprpriority
 forcestand = 1
-sparkno = -1 + 0 * (map(sparkno) := 8024)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 64), map(sparky) := -10
-hitsound = s2, 8
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8035)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 64), var(37) := -10
+hitsound = -1 * (var(31) := 8) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
 
-[State 3400, Hit Late]
-type = modifyhitdef
-trigger1 = animelem = 11
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := 1)
+[State 3400, Hit]
+type = hitdef
+trigger1 = animelemtime(10) >= 0
+trigger1 = !(var(15) < 2)
+trigger2 = animelemtime(11) >= 0 && !movecontact && !movereversed
+trigger2 = !(var(15) < 1)
+attr = A, HA
+hitflag =
+sparkxy = -10, -10
 
 [State 3400, p1state]
 type = changestate
@@ -1347,22 +1128,51 @@ trigger1 = movehit = 1 && numtarget(3400)
 trigger1 = animelemtime(11) < 0
 value = 3410
 
+[State 3400, Sparkles]
+type = helper
+trigger1 = !numhelper(8160)
+trigger1 = movehit && numtarget
+trigger1 = !(target, hitshakeover)
+trigger1 = var(40) := (target, ID)
+helpertype = normal
+stateno = 8160
+ID = 8160
+name = "Sparkles"
+postype = p2
+ownpal = 1
+ignorehitpause = 1
+
+[State 3400, Blood]
+type = helper
+trigger1 = fvar(32)
+trigger1 = hitpausetime = 11
+trigger1 = movehit = 1 && numtarget
+helpertype = normal
+stateno = 8052
+ID = 8050
+name = "Blood"
+postype = p1
+pos = ifelse(p2dist x < 0, 0, ifelse(p2dist x < var(36), ceil(p2dist x), var(36))), var(37)
+facing = ifelse((target, facing = facing), 1, -1)
+ownpal = 1
+pausemovetime = 65535
+supermovetime = 65535
+ignorehitpause = 1
+
 [State 3400, Idle]
 type = statetypeset
 trigger1 = animelemtime(12) >= 0
 movetype = I
-persistent = 0
 
 [State 3400, End]
 type = changestate
 trigger1 = animelemtime(12) >= 0
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 3401
 
 
-;----- Land -----
+;--- Land ---
 [Statedef 3401]
 type = S
 physics = N
@@ -1370,7 +1180,7 @@ movetype = I
 anim = 3401
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 movehitpersist = 1
 
 [State 3401, Pos]
@@ -1378,11 +1188,10 @@ type = posset
 trigger1 = 1
 y = 0
 
-[State 3401, Sound]
+[State 3401, Snd]
 type = playsnd
 trigger1 = !time
 value = 0, 52
-
 [State 3401, Dust]
 type = explod
 trigger1 = !time
@@ -1401,7 +1210,7 @@ value = 0
 ctrl = 1
 
 
-;----- Spinning -----
+;--- Spinning ---
 [Statedef 3410]
 type = A
 physics = N
@@ -1409,7 +1218,7 @@ movetype = A
 anim = 3410
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 hitcountpersist = 1
 
 [State 3410, Push]
@@ -1424,17 +1233,15 @@ x = 16
 
 [State 3410, Vel]
 type = velset
-trigger1 = !time
-trigger1 = numtarget(3400)
+trigger1 = !time && numtarget(3400)
 x = ((target(3400), pos x - pos x) * facing) / 35.0
 y = (target(3400), const(size.head.pos.y) + 8 + (target(3400), pos y) - pos y) / 35.0
 
-[State 3410, Sound]
+[State 3410, Snd]
 type = playsnd
 trigger1 = !(time % 8)
 value = 1, 7
-;channel = 1
-stopongethit = 1
+channel = 1
 
 [State 3410, FX]
 type = helper
@@ -1450,15 +1257,14 @@ ownpal = 1
 
 [State 3410, Hit]
 type = hitdef
+trigger1 = var(15) < (2 + hitcount)
 trigger1 = time = 2 || time = 8 || time = 14 || time = 20 || time = 26 || time = 32
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := (2 + hitcount))
 ID = 3410
 attr = A, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 15, 4
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 20 < 7, 7, fvar(11) * 20)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 0, 12
@@ -1468,36 +1274,45 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = High
 air.type = High
-ground.hittime = 1 + 18
-guard.hittime = (1 + 18) - 6
+ground.hittime = 18
+guard.hittime = (18) - 6
 ground.slidetime = 18
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
 air.hittime = 120
 ground.velocity = -10.52, 0
 guard.velocity = -10.52
 air.velocity = 0, -2
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 air.fall = 1
 fall.recover = 0
-down.recover = 1
-p1sprpriority = sprpriority
 forcestand = 1
-sparkno = -1 + 0 * (map(sparkno) := 8024)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 40), map(sparky) := -10
-hitsound = s2, 8
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8035)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 40), var(37) := -10
+hitsound = -1 * (var(31) := 8) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
+
+[State 3410, Blood]
+type = helper
+trigger1 = fvar(32)
+trigger1 = movehit = 1 && numtarget
+helpertype = normal
+stateno = 8052
+ID = 8050
+name = "Blood"
+postype = p1
+pos = ifelse(p2dist x < 0, 0, ifelse(p2dist x < var(36), ceil(p2dist x), var(36))), var(37)
+facing = ifelse(random < 500, -1, 1);(target, facing = facing), 1, -1)
+ownpal = 1
+pausemovetime = 65535
+supermovetime = 65535
+ignorehitpause = 1
 
 [State 3410, End]
 type = changestate
@@ -1507,12 +1322,11 @@ value = ifelse((movecontact || movereversed), 3411, 3412)
 [State 3410, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 3401
 
 
-;----- Kick -----
+;--- Kick ---
 [Statedef 3411]
 type = A
 physics = N
@@ -1520,43 +1334,39 @@ movetype = A
 anim = 3411
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 hitcountpersist = 1
 
 [State 3411, Accel]
 type = veladd
 trigger1 = animelemtime(2) >= 0
 y = 0.5
-
 [State 3411, Vel]
 type = velset
 trigger1 = animelem = 2
 x = -2
 y = -8
 
-[State 3411, Sound]
+[State 3411, Snd]
 type = playsnd
 trigger1 = animelem = 2
 value = 4, 4
 channel = 0
-
-[State 3411, Sound]
+[State 3411, Snd]
 type = playsnd
 trigger1 = animelem = 2
 value = 1, 3
-;channel = 1
-stopongethit = 1
+channel = 1
 
 [State 3411, Hit]
 type = hitdef
+trigger1 = var(15) < (2 + hitcount)
 trigger1 = animelem = 2
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := (2 + hitcount))
 attr = A, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 30, 8
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 20 < 7, 7, fvar(11) * 20)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 18, 18
@@ -1568,57 +1378,48 @@ ground.type = High
 air.type = High
 ground.hittime = 32
 guard.hittime = (32) - 6
-ground.slidetime = 18
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
+ground.slidetime = 32
 air.hittime = 120
 ground.velocity = -6, -6
 guard.velocity = -10.52
 air.velocity = -6, -6
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 air.fall = 1
 fall.recover = 0
-down.recover = 1
-p1sprpriority = sprpriority
 forcestand = 1
-sparkno = -1 + 0 * (map(sparkno) := 8014)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 20), map(sparky) := -10
-hitsound = s2, 5
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 20), var(37) := -10
+hitsound = -1 * (var(31) := 5) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
 
 [State 3411, End]
 type = changestate
 trigger1 = animelemtime(2) >= 0
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 3401
 
 
-;----- Miss -----
+;--- Miss ---
 [Statedef 3412]
 type = A
 physics = N
 movetype = I
 ctrl = 0
-sprpriority = 2
+sprpriority = 1
 movehitpersist = 1
 
 [State 3412, Anim]
 type = changeanim
-trigger1 = !time
-trigger1 = anim = 3410
+trigger1 = !time && anim = 3410
 value = 3412
 elem = animelemno(0)
 
@@ -1630,12 +1431,11 @@ y = 0.5
 [State 3412, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 3401
 
 
-;==APEFUCHI KAMUI RIMSE=
+;======================<APEFUCHI KAMUI RIMSE>=============================
 [Statedef 3500]
 type = S
 physics = N
@@ -1643,74 +1443,52 @@ movetype = A
 anim = 3500
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
-poweradd = -1000 + 0 * (map(superlevel) := 1)
+sprpriority = 1
+poweradd = -1000
 
-[State Damage Scaling - Add]
-type = mapadd
-trigger1 = !time
-trigger1 = map(combocheck)
-trigger1 = 1 || map(combocheck) := 0
-map = "combototal"
-value = ifelse((prevstateno = [3000, 4999]), 3, ifelse((prevstateno = [1000, 2999]) && !map(customcombo), 2, 1))
-
-[State 3500, Strength]
-type = mapset
-trigger1 = !AIlevel
-trigger1 = time <= 0
-map = "strength"
-value = ifelse(map(cmd_strength_c), 2, ifelse(map(cmd_strength_b), 1, 0))
+[State 3500, Button]
+type = varset
+triggerall = time <= 0 && !AIlevel
+trigger1 = command = "a" || command = "b" || command = "c"
+trigger1 = var(11) := ifelse(command = "c", 2, ifelse(command = "b", 1, 0)) || 1
+trigger2 = command = "rlsa" || command = "rlsb" || command = "rlsc"
+trigger2 = var(11) := ifelse(command = "rlsc", 2, ifelse(command = "rlsb", 1, 0)) || 1
+trigger3 = command = "a+" || command = "b+" || command = "c+"
+trigger3 = var(11) := ifelse(command = "c+", 2, ifelse(command = "b+", 1, 0)) || 1
+trigger4 = command = "rlsa+" || command = "rlsb+" || command = "rlsc+"
+trigger4 = var(11) := ifelse(command = "rlsc+", 2, ifelse(command = "rlsb+", 1, 0)) || 1
+var(11) = var(11)
 ignorehitpause = 1
 persistent = 0
 
 [State 3500, Button AI]
-type = mapset
-trigger1 = AIlevel
-trigger1 = time <= 0
-map = "strength"
-value = 2
+type = varset
+trigger1 = time <= 0 && AIlevel
+var(11) = 2
 ignorehitpause = 1
 
-[State 3500, Erase Inputs]
-type = null
-trigger1 = !AIlevel
-trigger1 = time <= 0
-trigger1 = 1 || map(cmd_erase_motion_super) := 1
-trigger1 = 1 || map(cmd_erase_completed) := 1
-ignorehitpause = 1
-persistent = 0
-
-[State Cancel Flags]
-type = null
-trigger1 = time <= 0
-trigger1 = 1 || map(supercancelflag) := (prevstateno = [1000, 2999] && map(supercancel) && !map(customcombo))
-trigger1 = 1 || map(hypercancelflag) := (prevstateno = [3000, 4999] && map(hypercancel))
-ignorehitpause = 1
-persistent = 0
-
-[State Super Cancel Flash]
-type = palfx
-trigger1 = time % 2
-trigger1 = time = [1, 11]
-trigger1 = map(supercancelflag) || map(hypercancelflag)
-trigger1 = 1 || map(juggle_count) := 0
-time = 1
-add = 255, 255, 255
-ignorehitpause = 1
+[State 3500, Super Level]
+type = varset
+trigger1 = var(10) != 0
+var(10) = 0
 
 [State 3500, Custom Combo End]
 type = palfx
 trigger1 = !time
-trigger1 = map(customcombo) > 0
-trigger1 = (map(customcombo) := 0) || (map(juggle_count) := 0) || 1
+trigger1 = var(20) > 0
+trigger1 = (var(20) := 0) || (var(15) := 0) || 1
 time = 1
+
+[State 3500, unguardable]
+type = varset
+trigger1 = time = 4 && numenemy
+trigger1 = (enemynear, stateno != [120, 155])
+var(17) = 43
 
 [State 3500, Correct Projectile Trade]
 type = hitby
 trigger1 = animelem = 7 || animelem = 14 || animelem = 22 || animelem = 26 || animelem = 34
-trigger2 = numhelper(1250)
-trigger2 = helper(1250), stateno = 1250
-value2 = SCA, AA, AT
+value = SCA, AA, AT
 time = 1
 
 [State 3500, NHB]
@@ -1719,16 +1497,16 @@ trigger1 = animelemtime(7) < 0
 time = 1
 value = SCA
 
-[State 3500, Sound]
+[State 3500, Snd]
 type = playsnd
-trigger1 = time = 3
+trigger1 = time = 4
 value = 4, 2
 channel = 0
 
 [State 3500, Superpause FX]
 type = helper
-trigger1 = map(cfg_superfx)
-trigger1 = time = 3
+trigger1 = fvar(31)
+trigger1 = time = 4
 helpertype = normal
 stateno = 8500
 ID = 8500
@@ -1740,91 +1518,69 @@ size.xscale = 1
 size.yscale = 1
 ownpal = 1
 
-[State 3500, Superpause]
+[State 3500, superpause]
 type = superpause
-trigger1 = time = 3
-time = 41
-movetime = 41
-p2defmul = 1
+trigger1 = time = 4
+time = 43
+movetime = 43
+p2defmul = 1 + (0 * (fvar(5) := 0))
 unhittable = 1
-anim = ifelse(map(cfg_superfx), -1, 100)
+anim = ifelse(fvar(31), -1, 100)
 pos = -23, -64
 sound = s0, 8500
-darken = !map(cfg_superfx)
+darken = ifelse(fvar(31), 0, 1)
 
 [State 3500, Vel]
 type = velmul
 trigger1 = animelemtime(38) < 0
 x = 0.8
-
 [State 3500, Vel]
 type = velset
 trigger1 = animelem = 5
-x = ifelse(map(strength) = 2, 12, ifelse(map(strength) = 1, 8, 4))
-
+x = ifelse(var(11) = 2, 12, ifelse(var(11) = 1, 8, 4))
 [State 3500, Vel]
 type = velset
 trigger1 = animelem = 12 || animelem = 20 || animelem = 28 || animelem = 33 || animelem = 38
-x = ifelse(map(strength) = 2, 6, ifelse(map(strength) = 1, 5, 4))
-
+x = ifelse(var(11) = 2, 6, ifelse(var(11) = 1, 5, 4))
 [State 3500, Vel]
 type = velset
 trigger1 = animelem = 45
 x = 0
 
-[State 3500, Sound]
+[State 3500, Snd]
 type = playsnd
 trigger1 = animelem = 5
 value = 5, 11
 channel = 0
-
-[State 3500, Sound]
+[State 3500, Snd]
 type = playsnd
 trigger1 = animelem = 6 || animelem = 13
 value = 7, 2
-;channel = 1
-stopongethit = 1
-
-[State 3500, Sound]
+channel = 1
+[State 3500, Snd]
 type = playsnd
 trigger1 = animelem = 20 || animelem = 25 || animelem = 32
 value = 7, 2
 freqmul = 1.1
-;channel = 1
-stopongethit = 1
-
-[State 3500, Sound]
+channel = 1
+[State 3500, Snd]
 type = playsnd
 trigger1 = animelem = 39
 value = 1, 5
-;channel = 1
-stopongethit = 1
+channel = 1
 
-[State 3500, Sound]
+[State 3500, Snd]
 type = playsnd
 trigger1 = animelem = 5
 value = 0, 102
-
-[State 3500, Sound]
+[State 3500, Snd]
 type = playsnd
 trigger1 = animelem = 38
 value = 0, 41
-
-[State 3500, Sound]
+[State 3500, Snd]
 type = playsnd
 trigger1 = animelem = 45
 value = 0, 52
-
-[State 3500, Dust]
-type = explod
-trigger1 = animelem = 45
-anim = 8104
-sprpriority = -3
-postype = p1
-scale = 0.5, 0.5
-pausemovetime = -1
-supermovetime = -1
-ownpal = 1
 
 [State 3500, Reflector]
 type = helper
@@ -1855,14 +1611,13 @@ ownpal = 1
 
 [State 3500, Hit]
 type = hitdef
+trigger1 = var(15) < (2 + hitcount)
 trigger1 = animelem = 7 || animelem = 14 || animelem = 26
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := (2 + hitcount))
 attr = S, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 35, 9
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 45 < 7, 7, fvar(11) * 45)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 4, 4
@@ -1872,45 +1627,38 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = Low
 air.type = Low
-ground.hittime = 1 + 24
-guard.hittime = (1 + 24) - 6
-ground.slidetime = 12
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
+ground.hittime = 24
+guard.hittime = (24) - 6
+ground.slidetime = 24
 air.hittime = 120
 ground.velocity = -4.49, 0
 guard.velocity = -4.49
 air.velocity = -2.75, -7.27; -4.31, -7.27
-ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+ground.cornerpush.veloff = 0;-8.17
+guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 air.fall = 1
 fall.recover = 0
-down.recover = 1
-sparkno = -1 + 0 * (map(sparkno) := 8014)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 84), map(sparky) := -56
-hitsound = s2, 2
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 84), var(37) := -56
+hitsound = -1 * (var(31) := 2) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
 
 [State 3500, Hit]
 type = hitdef
+trigger1 = var(15) < (2 + hitcount)
 trigger1 = animelem = 22 || animelem = 34
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := (2 + hitcount))
 attr = S, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 35, 9
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 45 < 7, 7, fvar(11) * 45)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 4, 4
@@ -1920,45 +1668,38 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 24
-guard.hittime = (1 + 24) - 6
-ground.slidetime = 12
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
+ground.hittime = 24
+guard.hittime = (24) - 6
+ground.slidetime = 24
 air.hittime = 120
 ground.velocity = -4.49, 0
 guard.velocity = -4.49
 air.velocity = -2.75, -7.27; -4.31, -7.27
-ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+ground.cornerpush.veloff = 0;-8.17
+guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 0
 air.fall = 1
 fall.recover = 0
-down.recover = 1
-sparkno = -1 + 0 * (map(sparkno) := 8014)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 84), map(sparky) := -56
-hitsound = s2, 2
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 84), var(37) := -56
+hitsound = -1 * (var(31) := 2) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
 
 [State 3500, Hit Final]
 type = hitdef
+trigger1 = var(15) < (2 + hitcount)
 trigger1 = animelem = 40
-air.juggle = 0 * (map(juggle_start) := 1 || map(juggle_increase) := 1 || map(juggle_limit) := (2 + hitcount))
 attr = S, HA
 hitflag = MAF
 guardflag = M
 priority = 4, Hit
-damage = 45, 11
-dizzypoints = 0
+damage = ceil(ifelse(fvar(11) * 45 < 7, 7, fvar(11) * 45)), 7
 getpower = 0, 0
 givepower = 40, 40
 pausetime = 12, 12
@@ -1968,39 +1709,47 @@ air.animtype = Hard
 fall.animtype = Hard
 ground.type = High
 air.type = Low
-ground.hittime = 1 + 18
-guard.hittime = (1 + 18) - 6
-ground.slidetime = 12
-guard.ctrltime = 1 + 16
-guard.slidetime = 16
+ground.hittime = 18
+guard.hittime = (18) - 6
+ground.slidetime = 18
 air.hittime = 120
 ground.velocity = -8, -4
 guard.velocity = -4.49
 air.velocity = -8, -4
 ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
+guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 0
-down.recover = 1
-sparkno = -1 + 0 * (map(sparkno) := 8014)
-guard.sparkno = -1 + 0 * (map(guard.sparkno) := 8001)
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 94), map(sparky) := -64
-hitsound = s2, 5
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
-envshake.time = 12; super
+sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
+guard.sparkno = ifelse(fvar(31), -1, 40) + (var(34) := 8001) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 94), var(37) := -64
+hitsound = -1 * (var(31) := 5) * 0
+guardsound = -1 * (var(32) := 0) * 0
+envshake.time = 12
+envshake.ampl = 2
 envshake.freq = 180
-envshake.ampl = ifelse((gametime % 2), -4, 4)
-envshake.mul = 0.667
+
+[State 3500, Sparkles]
+type = helper
+trigger1 = animelemtime(38) < 0
+trigger1 = !numhelper(8160)
+trigger1 = movehit && numtarget
+trigger1 = !(target, hitshakeover)
+trigger1 = var(40) := (target, ID)
+helpertype = normal
+stateno = 8160
+ID = 8160
+name = "Sparkles"
+postype = p2
+ownpal = 1
+ignorehitpause = 1
 
 [State 3500, Type]
 type = statetypeset
-trigger1 = animelem = 42
+trigger1 = animelemtime(42) >= 0
 movetype = I
-
 [State 3500, End]
 type = changestate
 trigger1 = !animtime
@@ -2008,7 +1757,7 @@ value = 0
 ctrl = 1
 
 
-;==SUICIDE=
+;======================<SUICIDE>=============================
 [Statedef 4000]
 type = S
 physics = S
@@ -2016,7 +1765,7 @@ movetype = I
 anim = 4000
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 4000, Assert]
 type = assertspecial
@@ -2030,7 +1779,7 @@ trans = addalpha
 alpha = 256 -ceil(4.27 * (time -30)), ceil(4.27 * (time -30))
 ignorehitpause = 1
 
-[State 4000, Soul]
+[State 4000, soul]
 type = helper
 trigger1 = time = 30
 helpertype = normal
@@ -2040,18 +1789,17 @@ name = "Soul"
 postype = p1
 ownpal = 1
 
-[State 4000, Sound]
+[State 4005, Snd]
 type = playsnd
 trigger1 = animelem = 2
 value = 6, 5
 channel = 0
-
-[State 4000, Sound]
+[State 4005, Snd]
 type = playsnd
 trigger1 = time = 30
 value = 7, 3
 
-[State 4000, Sparkles]
+[State 4005, Sparkles]
 type = explod
 trigger1 = time >= 30
 trigger1 = !(time % 2)
@@ -2072,12 +1820,11 @@ trigger1 = time >= 90
 flag = nokoslow
 flag2 = nokosnd
 
-[State 4000, Power]
-type = poweradd
+[State 4000, flag]
+type = varset
 trigger1 = time = 90
-value = 3000
-
-[State 4000, Life]
+var(47) = 1
+[State 4000, life]
 type = lifeset
 trigger1 = time = 90
 value = 0
@@ -2089,7 +1836,7 @@ trigger1 = time >= 90
 value = 5150
 
 
-;==ZETSUMEI OUGI=
+;======================<ZETSUMEI OUGI>=============================
 [Statedef 4100]
 type = S
 physics = N
@@ -2097,58 +1844,33 @@ movetype = A
 anim = 4100
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
-poweradd = -3000 + 0 * (map(superlevel) := 3)
+sprpriority = 1
+poweradd = -3000
 
-[State Damage Scaling - Add]
-type = mapadd
-trigger1 = !time
-trigger1 = map(combocheck)
-trigger1 = 1 || map(combocheck) := 0
-map = "combototal"
-value = ifelse((prevstateno = [3000, 4999]), 3, ifelse((prevstateno = [1000, 2999]) && !map(customcombo), 2, 1))
-
-[State 4100, Erase Inputs]
-type = null
-trigger1 = !AIlevel
-trigger1 = time <= 0
-trigger1 = 1 || map(cmd_erase_motion_super) := 1
-trigger1 = 1 || map(cmd_erase_completed) := 1
-ignorehitpause = 1
-persistent = 0
-
-[State Cancel Flags]
-type = null
-trigger1 = time <= 0
-trigger1 = 1 || map(supercancelflag) := (prevstateno = [1000, 2999] && map(supercancel) && !map(customcombo))
-trigger1 = 1 || map(hypercancelflag) := (prevstateno = [3000, 4999] && map(hypercancel))
-ignorehitpause = 1
-persistent = 0
-
-[State Super Cancel Flash]
-type = palfx
-trigger1 = time % 2
-trigger1 = time = [1, 11]
-trigger1 = map(supercancelflag) || map(hypercancelflag)
-trigger1 = 1 || map(juggle_count) := 0
-time = 1
-add = 255, 255, 255
-ignorehitpause = 1
+[State 4100, Super Level]
+type = varset
+trigger1 = var(10) != 2
+var(10) = 2
 
 [State 4100, Custom Combo End]
 type = palfx
 trigger1 = !time
-trigger1 = map(customcombo) > 0
-trigger1 = (map(customcombo) := 0) || (map(juggle_count) := 0) || 1
+trigger1 = var(20) > 0
+trigger1 = (var(20) := 0) || (var(15) := 0) || 1
 time = 1
 
+[State 4100, unguardable]
+type = varset
+trigger1 = time = 3 && numenemy
+trigger1 = (enemynear, stateno != [120, 155])
+var(17) = 47
 [State 4100, NHB]
 type = nothitby
 trigger1 = animelemtime(14) < 0
 time = 1
 value = SCA
 
-[State 4100, Sound]
+[State 4100, Snd]
 type = playsnd
 trigger1 = time = 3
 value = 6, 8
@@ -2156,7 +1878,7 @@ channel = 0
 
 [State 4100, Superpause FX]
 type = helper
-trigger1 = map(cfg_superfx)
+trigger1 = fvar(31)
 trigger1 = time = 3
 helpertype = normal
 stateno = 8520
@@ -2169,67 +1891,54 @@ size.xscale = 1
 size.yscale = 1
 ownpal = 1
 
-[State 4100, Superpause]
+[State 4100, superpause]
 type = superpause
 trigger1 = time = 3
-time = 45
-movetime = 45
-p2defmul = 1
+time = 40
+movetime = 40
+p2defmul = 1 + (0 * (fvar(5) := 0))
 unhittable = 1
-anim = ifelse(map(cfg_superfx), -1, 102)
+anim = ifelse(fvar(31), -1, 102)
 pos = 12, -36
 sound = s0, 8520
-darken = !map(cfg_superfx)
-
-[State 4100, No proximity block]
-type = attackdist
-trigger1 = 1
-value = 0
+darken = ifelse(fvar(31), 0, 1)
 
 [State 4100, Hit]
 type = hitdef
 trigger1 = animelem = 13
-trigger1 = !map(unthrowable) && !map(grabbehind)
-trigger1 = map(truebodydistx) <= 36
+trigger1 = !var(29)
+trigger1 = p2dist x >= 0 && p2bodydist x <= 36
 attr = S, HT
 hitflag = M
 priority = 7, Miss
 getpower = 0, 0
 givepower = 0, 0
-sparkno = -1 + (map(sparkno) := 0) * 0
-guard.sparkno = -1 + (map(guard.sparkno) := 0) * 0
-sparkxy = -10 + 0 * (map(sparkx.min) := 30) * (map(sparkx.max) := 40), map(sparky) := -50
-hitsound = s2, 800
-hitsound.channel = 2
-guardsound = s3, 0
-guardsound.channel = 2
+sparkno = -1 + (var(33) := 0) * 0
+guard.sparkno = -1 + (var(34) := 0) * 0
+sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 40), var(37) := -50
+hitsound = -1 * (var(31) := 800) * 0
+guardsound = -1 * (var(32) := 0) * 0
 yAccel = (0.5 + (ComboCount * 0.03))
 fall = 1
 fall.recover = 0
-down.recover = 0; cannot mash
-down.recovertime = 30
 numhits = 0
 p1stateno = 4110
-p2stateno = 4115
 
-[State 4100, Sound]
+[State 4100, Snd]
 type = playsnd
 trigger1 = animelem = 14
 value = 5000, 0
 channel = 0
-
-[State 4100, Sound]
+[State 4100, Snd]
 type = playsnd
 trigger1 = animelem = 14
 value = 1, 0
-;channel = 1
-stopongethit = 1
+channel = 1
 
 [State 4100, Type]
 type = statetypeset
-trigger1 = animelem = 14
+trigger1 = animelemtime(14) >= 0
 movetype = I
-
 [State 4100, End]
 type = changestate
 trigger1 = !animtime
@@ -2237,7 +1946,7 @@ value = 0
 ctrl = 1
 
 
-;----- Throw -----
+;--- Throw ---
 [Statedef 4110]
 type = S
 physics = S
@@ -2249,8 +1958,7 @@ sprpriority = 1
 
 [State 4110, Safety]
 type = changestate
-trigger1 = !time
-trigger1 = !numtarget
+trigger1 = !time && !numtarget
 value = 0
 ctrl = 1
 
@@ -2261,18 +1969,23 @@ time = 0
 p2defmul = 1
 anim = -1
 sound = -1
-darken = 0
+darken = ifelse(fvar(31), 0, 1)
 
 [State 4110, Throw]
 type = targetstate
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 value = 4115
 
 [State 4110, Throw]
 type = targetfacing
 trigger1 = numtarget
 value = -1
+
+[State 4110, juggle]
+type = varadd
+trigger1 = !time && numtarget
+var(15) = 1
+ignorehitpause = 1
 
 [State 4110, Width]
 type = width
@@ -2284,42 +1997,54 @@ type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(2) < 0
 pos = 40, 0
-
 [State 4110, Bind 2]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(2) >= 0 && animelemtime(3) < 0
 pos = 14, 0
-
 [State 4110, Bind 3]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(3) >= 0 && animelemtime(4) < 0
 pos = -14, 0
-
 [State 4110, Bind 4]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(4) >= 0 && animelemtime(5) < 0
 pos = -40, 0
-
 [State 4110, Bind 5]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(5) >= 0 && animelemtime(6) < 0
 pos = -24, 0
-
 [State 4110, Bind 6]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(6) >= 0 && animelemtime(7) < 0
 pos = -8, 0
-
 [State 4110, Bind 7]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelem = 7
 pos = 0, 0
+
+[State 4110, Damage]
+type = targetlifeadd
+trigger1 = numtarget
+trigger1 = animelem = 7
+value = ceil(ifelse(20 * fvar(11) < 7, -7, -20 * fvar(11)))
+kill = 0
+
+[State 4110, givepower]
+type = targetpoweradd
+trigger1 = numtarget && animelem = 7
+value = 36
+
+[State 4110, hitcount]
+type = hitadd
+trigger1 = numtarget
+trigger1 = animelem = 7
+value = 1
 
 [State 4110, Throw]
 type = targetstate
@@ -2331,13 +2056,11 @@ type = playsnd
 trigger1 = animelem = 7
 value = 4, 2
 channel = 0
-
 [State 4110, sound]
 type = playsnd
 trigger1 = animelem = 7
-value = 1, 5
-;channel = 1
-stopongethit = 1
+value = 1, 2
+channel = 1
 
 [State 4110, End]
 type = changestate
@@ -2345,7 +2068,7 @@ trigger1 = !animtime
 value = 4111
 
 
-;----- Follow -----
+;--- Follow ---
 [Statedef 4111]
 type = A
 physics = N
@@ -2353,7 +2076,7 @@ movetype = A
 anim = 4111
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 4111, Dust]
 type = helper
@@ -2365,11 +2088,10 @@ name = "Jump Dust"
 postype = p1
 ownpal = 1
 
-[State 4111, Sound]
+[State 4111, Snd]
 type = playsnd
 trigger1 = animelem = 2
 value = 0, 41
-
 [State 4111, Dust]
 type = helper
 trigger1 = animelem = 2
@@ -2384,7 +2106,6 @@ ownpal = 1
 type = veladd
 trigger1 = animelemtime(2) >= 0
 y = 0.6
-
 [State 4111, Vel]
 type = velset
 trigger1 = animelem = 2
@@ -2393,8 +2114,7 @@ y = -12
 
 [State 4111, End]
 type = changestate
-trigger1 = numtarget
-trigger1 = vel y >= 0
+trigger1 = numtarget && vel y >= 0
 trigger1 = target, stateno = 4116
 trigger1 = abs(target, pos x -pos x) <= 32 && abs(target, pos y -pos y) <= 32
 value = 4112
@@ -2402,12 +2122,11 @@ value = 4112
 [State 4111, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 52
 
 
-;----- Grab midair -----
+;--- Grab midair ---
 [Statedef 4112]
 type = A
 physics = N
@@ -2415,14 +2134,12 @@ movetype = A
 anim = 4112
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 4112, Throw]
 type = targetstate
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 value = 4117
-
 [State 4112, Throw]
 type = targetfacing
 trigger1 = numtarget
@@ -2438,37 +2155,32 @@ type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(2) < 0
 pos = 12, -20
-
 [State 4112, Bind 2]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(2) >= 0
 pos = 6, -16
 
-[State 4112, Sound]
+[State 4112, Snd]
 type = playsnd
 trigger1 = !time
-value = 2, 800
+value = 0, 800
 channel = 2
-
 [State 4112, sound]
 type = playsnd
 trigger1 = animelem = 2
 value = 4, 0
 channel = 0
-
 [State 4112, sound]
 type = playsnd
 trigger1 = animelem = 2
 value = 1, 5
-;channel = 1
-stopongethit = 1
+channel = 1
 
 [State 4112, Accel]
 type = veladd
 trigger1 = animelemtime(2) >= 0
 y = 0.5
-
 [State 4112, Vel]
 type = velset
 trigger1 = animelem = 2
@@ -2478,12 +2190,11 @@ y = 8
 [State 4112, End]
 type = changestate
 trigger1 = vel y > 0
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 4113
 
 
-;----- Hit Ground -----
+;--- Hit Ground ---
 [Statedef 4113]
 type = A
 physics = N
@@ -2491,14 +2202,12 @@ movetype = A
 anim = 4113
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 4113, Throw]
 type = targetstate
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 value = 4118
-
 [State 4113, Throw]
 type = targetfacing
 trigger1 = numtarget
@@ -2525,37 +2234,31 @@ type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(2) < 0
 pos = 6, 0
-
 [State 4113, Bind 2]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(2) >= 0 && animelemtime(3) < 0
 pos = -2, -12
-
 [State 4113, Bind 3]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(3) >= 0 && animelemtime(4) < 0
 pos = -19, -25
-
 [State 4113, Bind 4]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(4) >= 0 && animelemtime(5) < 0
 pos = -21, -30
-
 [State 4113, Bind 5]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(5) >= 0 && animelemtime(6) < 0
 pos = -5, -59
-
 [State 4113, Bind 6]
 type = targetbind
 trigger1 = numtarget
 trigger1 = animelemtime(6) >= 0 && animelemtime(7) < 0
 pos = 24, -45
-
 [State 4113, Bind 7]
 type = targetbind
 trigger1 = numtarget
@@ -2565,76 +2268,54 @@ pos = 27, -33
 
 [State 4113, Damage]
 type = targetlifeadd
-trigger1 = !time
-trigger1 = numtarget
-value = floor(-80 * map(damagescaling))
-dizzy = 0
+trigger1 = !time && numtarget
+value = ceil(ifelse(80 * fvar(11) < 7, -7, -80 * fvar(11)))
 kill = 0
-
 [State 4113, givepower]
 type = targetpoweradd
-trigger1 = !time
-trigger1 = numtarget
-value = 40; givepower
+trigger1 = !time && numtarget
+value = 36
 
-[State 4113, Hitcount]
+[State 4113, hitcount]
 type = hitadd
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 value = 1
-
-[State 4113, Shake]
-type = envshake
-trigger1 = !time
-time = 24
-freq = 180
-ampl = -4
-mul = 0.85
 
 [State 4113, FX]
 type = playsnd
 trigger1 = !time
-value = 7, 11
-
-[State 4113, Dust]
-type = helper
-trigger1 = map(cfg_sparks)
-trigger1 = !time
-helpertype = normal
-stateno = 8110
-ID = 8110
-name = "Impact Dust"
-postype = p1
-pos = 0, -pos y
-ownpal = 1
-
-[State 4113, Dust]
+value = 0, 5100
+[State 4113, FX]
 type = explod
-trigger1 = !map(cfg_sparks)
 trigger1 = !time
-anim = F 62
+anim = 8105
+sprpriority = -3
 postype = p1
-pos = 0, -pos y
-sprpriority = -10
+pos = 0, -ceil(pos y)
+scale = 0.5, 0.5
 ownpal = 1
+[State 4113, Shake]
+type = envshake
+trigger1 = !time
+time = 18
+ampl = -6
+freq = 120
 
-[State 4113, Sound]
+[State 4113, Snd]
 type = playsnd
 trigger1 = animelem = 2
 value = 1, 5
-;channel = 1
-stopongethit = 1
-
+channel = 1
 [State 4113, Dust]
 type = explod
 trigger1 = animelemtime(2) >= 0
-trigger1 = !(time % 3)
+trigger1 = !(time % 4)
 anim = 8103
 sprpriority = 3
 postype = p1
-pos = 0, -pos y
+pos = 0, -ceil(pos y)
 vel = -2, 0
-scale = 0.5, 0.5
+scale = 1, 1
 pausemovetime = -1
 supermovetime = -1
 ownpal = 1
@@ -2650,7 +2331,7 @@ trigger1 = !animtime
 value = 4120
 
 
-;----- Stab -----
+;--- Stab ---
 [Statedef 4120]
 type = A
 physics = N
@@ -2658,23 +2339,21 @@ movetype = A
 anim = 4120
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
-[State 4120, Kill]
+[State 4120, kill]
 type = changestate
 triggerall = numtarget
 trigger1 = animelem = 2 || animelem = 6 || animelem = 10
-trigger1 = target, life <= (80 * map(damagescaling))
+trigger1 = target, life <= (100 * fvar(11))
 trigger2 = animelem = 14
-trigger2 = target, life <= (80 * map(damagescaling))
+trigger2 = target, life <= (60 * fvar(11))
 value = 4130
 
 [State 4120, Throw]
 type = targetstate
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 value = 4125
-
 [State 4120, Throw]
 type = targetfacing
 trigger1 = numtarget
@@ -2685,7 +2364,6 @@ type = bindtotarget
 trigger1 = numtarget
 trigger1 = time && animelemtime(17) < 0
 pos = 0, 34 -(target, const(size.ground.front))
-
 [State 4120, Bind]
 type = bindtotarget
 trigger1 = numtarget
@@ -2696,25 +2374,21 @@ pos = 0, -(target, const(size.ground.front))
 type = targetlifeadd
 trigger1 = numtarget
 trigger1 = animelem = 4 || animelem = 8 || animelem = 12
-value = floor(-80 * map(damagescaling))
-dizzy = 0
+value = ceil(ifelse(100 * fvar(11) < 7, -7, -100 * fvar(11)))
 kill = 0
-
 [State 4120, Damage]
 type = targetlifeadd
 trigger1 = numtarget
 trigger1 = animelem = 17
-value = floor(-80 * map(damagescaling))
-dizzy = 0
+value = ceil(ifelse(60 * fvar(11) < 7, -7, -60 * fvar(11)))
 kill = 1
-
 [State 4120, givepower]
 type = targetpoweradd
 trigger1 = numtarget
 trigger1 = animelem = 4 || animelem = 8 || animelem = 12 || animelem = 17
-value = 40; givepower
+value = 36
 
-[State 4120, Hitcount]
+[State 4120, hitcount]
 type = hitadd
 trigger1 = numtarget
 trigger1 = animelem = 4 || animelem = 8 || animelem = 12 || animelem = 17
@@ -2731,70 +2405,130 @@ type = playsnd
 trigger1 = animelem = 4 || animelem = 8 || animelem = 12
 value = 4, 4
 channel = 0
-
 [State 4120, speech]
 type = playsnd
 trigger1 = animelem = 17
 value = 4, 1
 channel = 0
 
-;[State 4120, blade]
-;type = helper
-;trigger1 = !numhelper(4121)
-;trigger1 = animelem = 4 || animelem = 8 || animelem = 12
-;helpertype = normal
-;stateno = 4121
-;ID = 4121
-;name = "Blade"
-;postype = p1
-;pos = 0, 0
-;sizexscale = 64
-;sizeyscale = 64
-;pausemovetime = 65536
-;supermovetime = 65536
+[State 4120, blade]
+type = helper
+trigger1 = !numhelper(4121)
+trigger1 = animelem = 4 || animelem = 8 || animelem = 12
+helpertype = normal
+stateno = 4121
+ID = 4121
+name = "Blade"
+postype = p1
+pos = 0, 0
+sizexscale = 64
+sizeyscale = 64
+pausemovetime = 65536
+supermovetime = 65536
 
 [State 4120, whiffsound]
 type = playsnd
 trigger1 = animelem = 4 || animelem = 8 || animelem = 12
 value = 1, 8
-;channel = 1
-stopongethit = 1
-
+channel = 1
 [State 4120, whiffsound]
 type = playsnd
 trigger1 = animelem = 17
 value = 1, 5
-;channel = 1
-stopongethit = 1
-
-[State 4120, Hitsound]
+channel = 1
+[State 4120, hitsound]
 type = playsnd
-trigger1 = numtarget
-trigger1 = animelem = 4 || animelem = 8 || animelem = 12
+trigger1 = numtarget && (animelem = 4 || animelem = 8 || animelem = 12)
 value = 2, 8
 channel = 2
-
-[State 4120, Hitsound]
+[State 4120, hitsound]
 type = playsnd
-trigger1 = numtarget
-trigger1 = animelem = 17
+trigger1 = numtarget && animelem = 17
 value = 2, 5
 channel = 2
-
 [State 4120, Shake]
 type = envshake
 trigger1 = numtarget
 trigger1 = animelem = 4 || animelem = 8 || animelem = 12 || animelem = 17
-time = 24
-freq = 180
-ampl = -4
-mul = 0.85
+time = 18
+ampl = -6
+freq = 120
 
-;[State 4120, Sparks]
-;in ZSS
+[State 4120, Sparks]
+type = helper
+trigger1 = fvar(31)
+trigger1 = numtarget && (animelem = 4 || animelem = 8 || animelem = 12)
+helpertype = normal
+stateno = 8035
+ID = 8000
+name = "Spark"
+postype = p1
+pos = 14, -25
+facing = -1
+ownpal = 1
+size.xscale = 0.5
+size.yscale = 0.5
+pausemovetime = 65535
+supermovetime = 65535
 
-;[State 4120, Blood]
-;in ZSS
+[State 4120, Spark]
+type = explod
+trigger1 = !fvar(31)
+trigger1 = numtarget && (animelem = 4 || animelem = 8 || animelem = 12)
+anim = F3
+ID = 8000
+postype = p1
+pos = 14, -25
+supermovetime = -1
+pausemovetime = -1
+ontop = 1
+ownpal = 1
+
+[State 4120, Sparks]
+type = helper
+trigger1 = fvar(31)
+trigger1 = numtarget && animelem = 17
+helpertype = normal
+stateno = 8030
+ID = 8000
+name = "Spark"
+postype = p1
+pos = 14, -2
+facing = -1
+ownpal = 1
+size.xscale = 0.5
+size.yscale = 0.5
+pausemovetime = 65535
+supermovetime = 65535
+
+[State 4120, Spark]
+type = explod
+trigger1 = !fvar(31)
+trigger1 = numtarget && animelem = 17
+anim = F3
+ID = 8000
+postype = p1
+pos = 14, -2
+supermovetime = -1
+pausemovetime = -1
+ontop = 1
+ownpal = 1
+
+[State 4120, Blood]
+type = helper
+trigger1 = fvar(32)
+trigger1 = numtarget && (animelem = 4 || animelem = 8 || animelem = 12)
+helpertype = normal
+stateno = 8052
+ID = 8050
+name = "Blood"
+postype = p1
+pos = 14, -25
+facing = ifelse(random < 500, 1, -1)
+ownpal = 1
+pausemovetime = 65535
+supermovetime = 65535
+ignorehitpause = 1
 
 [State 4120, Throw]
 type = targetstate
@@ -2803,10 +2537,9 @@ trigger1 = target, name = "Bulleta" || target, name = "Baby Bonnie Hood"
 trigger2 = target, name = "Dizzy"
 trigger3 = target, name = "Felicia" || target, name = "cvsfelicia"
 trigger4 = target, name = "Jam" || target, name = "Jam Kuradoberi" || target, name = "Kuradoberi Jam"
-trigger5 = target, name = "Lei-Lei" || target, name = "Hsien-ko"
+trigger5 = target, name = "Lei -Lei" || target, name = "Hsien -ko"
 trigger6 = target, name = "Makoto"
-trigger7 = target, name = "Q-Bee"
-trigger8 = target, name = "Yamazaki"
+trigger7 = target, name = "Q -Bee"
 value = 4129
 
 [State 4120, End]
@@ -2815,7 +2548,7 @@ trigger1 = !animtime
 value = 4122
 
 
-;----- Jump off -----
+;--- Jump off ---
 [Statedef 4122]
 type = A
 physics = N
@@ -2823,19 +2556,16 @@ movetype = A
 anim = 4122
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 4122, Throw]
 type = targetstate
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 trigger1 = target, alive
 value = 4127
-
 [State 4122, Throw]
 type = targetstate
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 trigger1 = !(target, alive)
 value = 4135
 
@@ -2846,15 +2576,13 @@ value = -1
 
 [State 4122, Pos]
 type = posset
-trigger1 = !time
-trigger1 = pos y > 0
+trigger1 = !time && pos y > 0
 y = 0
 
 [State 4122, Accel]
 type = veladd
 trigger1 = 1
 y = 0.6
-
 [State 4122, Vel]
 type = velset
 trigger1 = !time
@@ -2863,12 +2591,11 @@ y = -8
 
 [State 4122, End]
 type = changestate
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && vel y > 0 && (pos y > -vel y)
 value = 52
 
 
-;----- Finisher -----
+;--- Finisher ---
 [Statedef 4130]
 type = A
 physics = N
@@ -2876,14 +2603,12 @@ movetype = A
 anim = 4130
 ctrl = 0
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 4130, Throw]
 type = targetstate
-trigger1 = !time
-trigger1 = numtarget
+trigger1 = !time && numtarget
 value = 4125
-
 [State 4130, Throw]
 type = targetfacing
 trigger1 = numtarget
@@ -2896,28 +2621,22 @@ pos = 0, 34 -(target, const(size.ground.front))
 
 [State 4130, Damage]
 type = targetlifeadd
-trigger1 = numtarget
-trigger1 = animelem = 20
-value = -9999
-dizzy = 0
+trigger1 = numtarget && animelem = 20
+value = -65536
 absolute = 1
-
 [State 4130, givepower]
 type = targetpoweradd
-trigger1 = numtarget
-trigger1 = animelem = 20
-value = 40; givepower
+trigger1 = numtarget && animelem = 20
+value = 36
 
-[State 4130, Hitcount]
+[State 4130, hitcount]
 type = hitadd
-trigger1 = numtarget
-trigger1 = animelem = 20
+trigger1 = numtarget && animelem = 20
 value = 1
 
 [State 4130, Throw]
 type = targetstate
-trigger1 = numtarget
-trigger1 = animelem = 20
+trigger1 = numtarget && animelem = 20
 value = 4126
 
 [State 4130, speech]
@@ -2925,55 +2644,90 @@ type = playsnd
 trigger1 = animelem = 1
 value = 6, 6
 channel = 0
-
 [State 4130, speech]
 type = playsnd
 trigger1 = animelem = 10
 value = 6, 7
 channel = 0
 
-;[State 4130, blade]
-;type = helper
-;trigger1 = !numhelper(4121) && animelemtime(20) >= 0
-;helpertype = normal
-;stateno = 4121
-;ID = 4121
-;name = "Blade"
-;postype = p1
-;pos = 0, 0
-;sizexscale = 64
-;sizeyscale = 64
-;pausemovetime = 65536
-;supermovetime = 65536
+[State 4130, blade]
+type = helper
+trigger1 = !numhelper(4121) && animelemtime(20) >= 0
+helpertype = normal
+stateno = 4121
+ID = 4121
+name = "Blade"
+postype = p1
+pos = 0, 0
+sizexscale = 64
+sizeyscale = 64
+pausemovetime = 65536
+supermovetime = 65536
 
 [State 4130, whiffsound]
 type = playsnd
 trigger1 = animelem = 20
 value = 1, 8
-;channel = 1
-stopongethit = 1
-
-[State 4130, Hitsound]
+channel = 1
+[State 4130, hitsound]
 type = playsnd
-trigger1 = numtarget
-trigger1 = animelem = 20
+trigger1 = numtarget && animelem = 20
 value = 2, 8
 channel = 2
-
 [State 4130, Shake]
 type = envshake
+trigger1 = numtarget && animelem = 20
+time = 18
+ampl = -6
+freq = 120
+
+[State 4130, Sparks]
+type = helper
+trigger1 = fvar(31)
+trigger1 = numtarget && animelem = 20
+helpertype = normal
+stateno = 8035
+ID = 8000
+name = "Spark"
+postype = p1
+pos = 14, -25
+facing = -1
+ownpal = 1
+size.xscale = 0.5
+size.yscale = 0.5
+pausemovetime = 65535
+supermovetime = 65535
+
+[State 4130, Spark]
+type = explod
+trigger1 = !fvar(31)
+trigger1 = numtarget && animelem = 20
+anim = F3
+ID = 8000
+postype = p1
+pos = 14, -25
+supermovetime = -1
+pausemovetime = -1
+ontop = 1
+ownpal = 1
+
+[State 4130, Blood]
+type = helper
+trigger1 = fvar(32)
 trigger1 = numtarget
-trigger1 = animelem = 20
-time = 24
-freq = 180
-ampl = -4
-mul = 0.85
-
-;[State 4130, Sparks]
-;in ZSS
-
-;[State 4130, Blood]
-;in ZSS
+trigger1 = !(time % 4)
+trigger1 = animelemtime(20) >= 0 && animelemtime(20) < 32
+helpertype = normal
+stateno = 8052
+ID = 8050
+name = "Blood"
+postype = p1
+pos = 14, -25
+facing = ifelse(random < 500, 1, -1)
+ownpal = 1
+pausemovetime = 65535
+supermovetime = 65535
+ignorehitpause = 1
 
 [State 4130, Throw]
 type = targetstate
@@ -2982,10 +2736,9 @@ trigger1 = target, name = "Bulleta" || target, name = "Baby Bonnie Hood"
 trigger2 = target, name = "Dizzy"
 trigger3 = target, name = "Felicia" || target, name = "cvsfelicia"
 trigger4 = target, name = "Jam" || target, name = "Jam Kuradoberi" || target, name = "Kuradoberi Jam"
-trigger5 = target, name = "Lei-Lei" || target, name = "Hsien-ko"
+trigger5 = target, name = "Lei -Lei" || target, name = "Hsien -ko"
 trigger6 = target, name = "Makoto"
-trigger7 = target, name = "Q-Bee"
-trigger8 = target, name = "Yamazaki"
+trigger7 = target, name = "Q -Bee"
 value = 4129
 
 [State 4130, End]
@@ -2993,53 +2746,50 @@ type = changestate
 trigger1 = animelemtime(23) >= 6 && numtarget
 trigger1 = target, alive || target, stateno = 4129
 trigger2 = animelemtime(23) >= 6 && numenemy
-trigger2 = p2stateno != 5150 || (p2, anim != 5110 && p2, anim != 5150)
+trigger2 = enemynear, stateno != 5150 || (enemynear, anim != 5110 && enemynear, anim != 5150)
 value = 4122
-
 [State 4130, End]
 type = changestate
-trigger1 = winko
-trigger1 = animelemtime(23) >= 60
+trigger1 = animelemtime(23) >= 60 && winko
 value = 4131
 
 
-;----- Win Pose -----
+;--- Win Pose ---
 [Statedef 4131]
 type = S
 physics = N
 movetype = I
 velset = 0, 0
-sprpriority = 2
-
-[State 4131, Wait]
-type = assertspecial
-trigger1 = time < 180
-flag = roundnotover
+sprpriority = 1
 
 [State 4131, Anim]
 type = changeanim
 trigger1 = anim != 4131
 value = 4131
+[State 4131, Assert]
+type = assertspecial
+trigger1 = time < 180
+flag = roundnotover
 
-[State 4131, Speech]
+[State 4131, speech]
 type = playsnd
 trigger1 = animelem = 1
 value = 6, 5
 channel = 0
 
-;[State 4131, Blade]
-;type = helper
-;trigger1 = !numhelper(4121)
-;helpertype = normal
-;stateno = 4121
-;ID = 4121
-;name = "Blade"
-;postype = p1
-;pos = 0, 0
-;sizexscale = 64
-;sizeyscale = 64
-;pausemovetime = 65536
-;supermovetime = 65536
+[State 4131, blade]
+type = helper
+trigger1 = !numhelper(4121)
+helpertype = normal
+stateno = 4121
+ID = 4121
+name = "Blade"
+postype = p1
+pos = 0, 0
+sizexscale = 64
+sizeyscale = 64
+pausemovetime = 65536
+supermovetime = 65536
 
 [State 4131, Throw]
 type = targetstate
@@ -3048,15 +2798,13 @@ trigger1 = target, name = "Bulleta" || target, name = "Baby Bonnie Hood"
 trigger2 = target, name = "Dizzy"
 trigger3 = target, name = "Felicia" || target, name = "cvsfelicia"
 trigger4 = target, name = "Jam" || target, name = "Jam Kuradoberi" || target, name = "Kuradoberi Jam"
-trigger5 = target, name = "Lei-Lei" || target, name = "Hsien-ko"
+trigger5 = target, name = "Lei -Lei" || target, name = "Hsien -ko"
 trigger6 = target, name = "Makoto"
-trigger7 = target, name = "Q-Bee"
-trigger8 = target, name = "Yamazaki"
+trigger7 = target, name = "Q -Bee"
 value = 4129
 
 [State 4131, End]
 type = changestate
-trigger1 = roundstate = 3
 trigger1 = prevstateno != 180
 value = 180
 ctrl = 1
@@ -3066,17 +2814,17 @@ type = changestate
 trigger1 = numtarget
 trigger1 = target, alive || target, stateno = 4129
 trigger2 = numenemy
-trigger2 = p2stateno != 5150 || (p2, anim != 5110 && p2, anim != 5150)
+trigger2 = enemynear, stateno != 5150 || (enemynear, anim != 5110 && enemynear, anim != 5150)
 value = 4122
 
 
-;----- Target -----
+;--- Target ---
 [Statedef 4115]
 type = A
-physics = N
 movetype = H
+physics = N
 velset = 0, 0
-sprpriority = 2
+sprpriority = 1
 
 [State 4115, Anim]
 type = changeanim2
@@ -3089,7 +2837,7 @@ trigger1 = 1
 value = 0
 movecamera = 0, 0
 
-[State 4115, Sprite Priority]
+[State 4115, spr]
 type = sprpriority
 trigger1 = 1
 value = ifelse(animelemtime(2) >= 0, 2, 0)
@@ -3100,7 +2848,7 @@ trigger1 = time >= 180
 value = 5040
 
 
-;----- Target Thrown -----
+;--- Target Thrown ---
 [Statedef 4116]
 type = A
 physics = N
@@ -3114,13 +2862,11 @@ type = nothitby
 trigger1 = 1
 time = 1
 value = SCA
-
 [State 4116, Camera]
 type = screenbound
 trigger1 = 1
 value = 1
 movecamera = 1, 0
-
 [State 4116, Push]
 type = playerpush
 trigger1 = 1
@@ -3128,29 +2874,24 @@ value = 0
 
 [State 4116, Anim]
 type = changeanim
-trigger1 = !time
-trigger2 = vel y < -2
+trigger1 = vel y < -2
 value = 5030
-
 [State 4116, Anim]
 type = changeanim
 trigger1 = selfanimexist(5035)
 trigger1 = anim = 5030 && vel y >= -2
 value = 5035
-
 [State 4116, Anim]
 type = changeanim
 trigger1 = !selfanimexist(5035)
 trigger1 = anim = 5030 && vel y >= -2
-trigger2 = !animtime
-trigger2 = anim = 5035
+trigger2 = anim = 5035 && !animtime
 value = 5050
 
 [State 4116, Accel]
 type = veladd
 trigger1 = 1
 y = 0.6
-
 [State 4116, Vel]
 type = velset
 trigger1 = !time
@@ -3164,11 +2905,11 @@ trigger1 = pos y >= 0
 value = 5100
 
 
-;----- Target Caught -----
+;--- Target Caught ---
 [Statedef 4117]
 type = A
-physics = N
 movetype = H
+physics = N
 velset = 0, 0
 sprpriority = 0
 
@@ -3189,7 +2930,7 @@ trigger1 = time >= 180
 value = 5040
 
 
-;----- Target Grounded -----
+;--- Target Grounded ---
 [Statedef 4118]
 type = A
 physics = N
@@ -3215,7 +2956,7 @@ trigger1 = time >= 180
 value = 5040
 
 
-;----- Target Ready -----
+;--- Target Ready ---
 [Statedef 4125]
 type = L
 physics = N
@@ -3255,7 +2996,7 @@ trigger1 = !alive
 value = 5150
 
 
-;----- Target Stabbed -----
+;--- Target Stabbed ---
 [Statedef 4126]
 type = L
 physics = N
@@ -3263,35 +3004,30 @@ movetype = H
 ctrl = 0
 velset = 0, 0
 sprpriority = 0
-
 [State 4126, NHB]
 type = nothitby
 trigger1 = 1
 time = 1
 value = SCA
-
 [State 4126, Pos]
 type = posset
 trigger1 = 1
 y = 0
-
 [State 4126, Width]
 type = width
 trigger1 = 1
 edge = 0, 32
-
 [State 4126, Anim]
 type = changeanim
 trigger1 = !time
 value = 5080
-
 [State 4126, End]
 type = changestate
 trigger1 = !animtime || time >= 12
 value = 4125
 
 
-;----- Target hit back -----
+;--- Target hit back ---
 [Statedef 4127]
 type = A
 physics = N
@@ -3308,17 +3044,14 @@ value = 5030
 [State 4127, Anim]
 type = changeanim
 trigger1 = selfanimexist(5035)
-trigger1 = anim = 5030
-trigger1 = !animtime
+trigger1 = anim = 5030 && !animtime
 value = 5035
 
 [State 4127, Anim]
 type = changeanim
 trigger1 = !selfanimexist(5035)
-trigger1 = !animtime
-trigger1 = anim = 5030
-trigger2 = !animtime
-trigger2 = anim = 5035
+trigger1 = anim = 5030 && !animtime
+trigger2 = anim = 5035 && !animtime
 value = 5050
 
 [State 4127, Accel]
@@ -3334,12 +3067,11 @@ y = -6
 
 [State 4127, End]
 type = selfstate
-trigger1 = vel y > 0
-trigger1 = pos y > -vel y
+trigger1 = vel y > 0 && (pos y > -vel y)
 value = 5100
 
 
-;----- Target Recover -----
+;--- Target Recover ---
 [Statedef 4128]
 type = L
 physics = N
@@ -3355,8 +3087,7 @@ y = 0
 
 [State 4128, Anim]
 type = changeanim
-trigger1 = !time
-trigger1 = anim != 5110
+trigger1 = !time && anim != 5110
 value = 5110
 
 [State 4128, End]
@@ -3365,7 +3096,7 @@ trigger1 = time >= 24
 value = 5120
 
 
-;----- Target Ready -----
+;--- Target Ready ---
 [Statedef 4129]
 type = L
 physics = N
@@ -3400,7 +3131,7 @@ trigger1 = time >= 300
 value = 5110
 
 
-;----- Target KO -----
+;--- Target KO ---
 [Statedef 4135]
 type = L
 physics = N

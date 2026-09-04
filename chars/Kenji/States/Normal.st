@@ -1089,7 +1089,7 @@ ground.velocity = -1,-10
 air.velocity = -1,-10
 fall = 1
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall.recover=0
 
 [State 240, Hit]
@@ -1120,7 +1120,7 @@ ground.cornerPush.velOff = 0
 air.velocity = -1,-10
 fall = 1
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall.recover=0
 hitsound = -1 + 0*(var(31):=4)
 guardsound = -1 + 0*(var(32):=0)
@@ -1208,7 +1208,7 @@ ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -3,-8
 air.velocity = -3,-8
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 
 [State 240, Idle]
@@ -1324,7 +1324,7 @@ ground.velocity = -5,-3
 ground.cornerPush.velOff = 0
 air.velocity = -5,-3
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 hitsound = -1 + 0*(var(31):=5)
 guardsound = -1 + 0*(var(32):=0)
@@ -1488,7 +1488,7 @@ ground.velocity = -5,-3
 ground.cornerPush.velOff = 0
 air.velocity = -5,-3
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 hitsound = -1 + 0*(var(31):=5)
 guardsound = -1 + 0*(var(32):=0)
@@ -2260,7 +2260,7 @@ ground.velocity = -1,-10
 air.velocity = -1,-10
 fall = 1
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall.recover=0
 
 
@@ -2295,7 +2295,7 @@ air.velocity = -1, -10
 air.cornerPush.velOff = 0
 fall = 1
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall.recover=0
 fall.recovertime = 120
 hitsound = -1 + 0*(var(31):=4)

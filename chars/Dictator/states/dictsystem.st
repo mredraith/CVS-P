@@ -3774,16 +3774,7 @@ ignorehitpause = 1
 
 [State -2, Juggle Reset]
 type = null; mapset
-triggerall = map(juggle_count)
-triggerall = p2, time >= 1
-trigger1 = p2movetype != H
-trigger2 = p2, hitfall = 0
-trigger3 = p2statetype = S || p2statetype = C
-trigger4 = p2statetype = L && p2, pos y = 0 && p2, vel y = 0
-trigger5 = p2stateno = [120, 155] || p2stateno = 5201 || p2stateno = 5210
-trigger6 = moveguarded = 1 || movereversed = 1
-trigger7 = roundstate != 2
-trigger8 = p2, ctrl
+trigger1 = 1
 map = "juggle_count"
 value = 0
 ignorehitpause = 1

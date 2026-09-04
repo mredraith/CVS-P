@@ -6733,3 +6733,8 @@ ownpal = 1
 pausemovetime = 255
 supermovetime = 255
 ignorehitpause = 1
+
+[State -3]
+type = assertspecial
+trigger1 = 1
+flag = nojugglecheck

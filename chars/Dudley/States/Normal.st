@@ -47,8 +47,8 @@ guard.hittime = (10) - 6
 ground.velocity = -4 ;Velocity at which opponent is pushed
 airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
 air.type = High ;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,
-air.hittime = 12 ;Time before opponent regains control in air
+air.velocity = -1.4,-6 ;X-velocity at which opponent is pushed,
+air.hittime = 120;Time before opponent regains control in air
 
 [State 200, 1]
 type = PlaySnd
@@ -116,9 +116,9 @@ guard.hittime = (10) - 6
 ground.velocity = -4 ;Velocity at which opponent is pushed
 airguard.velocity = -1.9,-.8 ;Guard velocity in air (def: (air.xvel*1.5, air.yvel/2))
 air.type = High ;Type: High, Low, Trip (def: same as ground.type)
-air.velocity = -1.4,-3 ;X-velocity at which opponent is pushed,
+air.velocity = -1.4,-6 ;X-velocity at which opponent is pushed,
 ;Y-velocity at which opponent is pushed
-air.hittime = 12 ;Time before opponent regains control in air
+air.hittime = 120;Time before opponent regains control in air
 
 [State 200, 1]
 type = PlaySnd
@@ -197,7 +197,7 @@ ground.slidetime = 12
 ground.hittime = 13
 guard.hittime = (13) - 6
 ground.velocity = -5.5
-air.velocity = -2.5,-4
+air.velocity = -2.5,-8
 
 [State 210, 5]
 type = ChangeState
@@ -296,7 +296,8 @@ ground.slidetime = 12
 ground.hittime = 13
 guard.hittime = (13) - 6
 ground.velocity = -5.5
-air.velocity = -2.5,-4
+air.velocity = -2.5,-8
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -376,7 +377,8 @@ ground.slidetime = 12
 ground.hittime = 16
 guard.hittime = (16) - 6
 ground.velocity = -5.5
-air.velocity = -2.5,-4
+air.velocity = -2.5,-8
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -461,7 +463,8 @@ ground.slidetime = 12
 ground.hittime = 13
 guard.hittime = (13) - 6
 ground.velocity = -5.5
-air.velocity = -2.5,-4
+air.velocity = -2.5,-8
+air.hittime = 120
 
 [State 221, Width]
 type = Width
@@ -533,7 +536,8 @@ ground.slidetime = 10
 ground.hittime = 11
 guard.hittime = (11) - 6
 ground.velocity = -5
-air.velocity = -2.5,-3.5
+air.velocity = -2.5,-7
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -606,7 +610,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
-air.velocity = -2.2,-3.2
+air.velocity = -2.2,-6.4
+air.hittime = 120
 
 [State 240, 4]
 type = ChangeState
@@ -690,7 +695,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
-air.velocity = -2.2,-3.2
+air.velocity = -2.2,-6.4
+air.hittime = 120
 
 [State 240, 4]
 type = ChangeState
@@ -768,7 +774,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
-air.velocity = -2.2,-3.2
+air.velocity = -2.2,-6.4
+air.hittime = 120
 
 [State 250, 2]
 type = HitDef
@@ -792,7 +799,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
-air.velocity = -2.2,-3.2
+air.velocity = -2.2,-6.4
+air.hittime = 120
 
 [State 250, ChangeState]
 type = ChangeState
@@ -882,7 +890,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
-air.velocity = -2.2,-3.2
+air.velocity = -2.2,-6.4
+air.hittime = 120
 
 [State 251, 1]
 type = ChangeState
@@ -956,7 +965,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -4
-air.velocity = -3,-4
+air.velocity = -3,-8
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -1015,7 +1025,8 @@ ground.slidetime = 12
 ground.hittime = 13
 guard.hittime = (13) - 6
 ground.velocity = -5.5
-air.velocity = -2.5,-4
+air.velocity = -2.5,-8
+air.hittime = 120
 
 [State 210, 5]
 type = ChangeState
@@ -1095,7 +1106,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -6
-air.velocity = -2.2,-3.2
+air.velocity = -2.2,-6.4
+air.hittime = 120
 
 [State 240, 4]
 type = ChangeState
@@ -1183,7 +1195,8 @@ ground.slidetime = 12
 ground.hittime = 16
 guard.hittime = (16) - 6
 ground.velocity = -5.5
-air.velocity = -2.5,-4
+air.velocity = -2.5,-8
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -1236,7 +1249,8 @@ ground.slidetime = 4
 ground.hittime = 10
 guard.hittime = (10) - 6
 ground.velocity = -4
-air.velocity = -1.5,-3
+air.velocity = -1.5,-6
+air.hittime = 120
 
 [State 400, 3]
 type = CtrlSet
@@ -1313,7 +1327,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -4
-air.velocity = -3,-4
+air.velocity = -3,-8
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -1364,7 +1379,8 @@ ground.slidetime = 12
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -4
-air.velocity = -3,-4
+air.velocity = -3,-8
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -1416,9 +1432,10 @@ ground.slidetime = 6
 ground.hittime = 10
 guard.hittime = (10) - 6
 ground.velocity = -5
-air.velocity = -2,-3
+air.velocity = -2,-6
 down.velocity = -5,0
 down.hittime = 20
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -1473,9 +1490,10 @@ ground.slidetime = 10
 ground.hittime = 15
 guard.hittime = (15) - 6
 ground.velocity = -1.5,-2
-air.velocity = -1.2,-3
+air.velocity = -1.2,-6
 guard.velocity = -5
 fall = 1
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -1546,7 +1564,8 @@ air.velocity = -1,-12
 guard.velocity = -8
 airguard.velocity = -3, -7
 fall = 1
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
+air.hittime = 120
 
 [State AttackDone]
 type=statetypeset
@@ -1595,9 +1614,9 @@ ground.slidetime = 12
 ground.hittime = 12
 guard.hittime = (12) - 6
 air.slidetime = 18
-air.hittime = 18
+air.hittime = 120
 ground.velocity = -4
-air.velocity = 1,-3
+air.velocity = 1,-6
 
 [State AttackDone]
 type=statetypeset
@@ -1647,9 +1666,9 @@ ground.slidetime = 15
 ground.hittime = 15
 guard.hittime = (15) - 6
 air.slidetime = 18
-air.hittime = 18
+air.hittime = 120
 ground.velocity = -5
-air.velocity = -1.3,-4
+air.velocity = -1.3,-8
 
 [State AttackDone]
 type=statetypeset
@@ -1694,7 +1713,7 @@ ground.slidetime = 18
 ground.hittime = 18
 guard.hittime = (18) - 6
 air.slidetime = 18
-air.hittime = 18
+air.hittime = 120
 ground.velocity = -5
 air.velocity = -13,9
 air.fall = 1
@@ -1742,9 +1761,9 @@ ground.slidetime = 12
 ground.hittime = 12
 guard.hittime = (12) - 6
 air.slidetime = 18
-air.hittime = 18
+air.hittime = 120
 ground.velocity = -4
-air.velocity = 1,-3
+air.velocity = 1,-6
 
 [State AttackDone]
 type=statetypeset
@@ -1789,9 +1808,9 @@ ground.slidetime = 15
 ground.hittime = 15
 guard.hittime = (15) - 6
 air.slidetime = 18
-air.hittime = 18
+air.hittime = 120
 ground.velocity = -5
-air.velocity = -1.3,-2
+air.velocity = -1.3,-4
 
 [State AttackDone]
 type=statetypeset
@@ -1835,7 +1854,7 @@ ground.slidetime = 18
 ground.hittime = 18
 guard.hittime = (18) - 6
 air.slidetime = 18
-air.hittime = 18
+air.hittime = 120
 ground.velocity = -5
 air.velocity = -13,9
 air.fall = 1

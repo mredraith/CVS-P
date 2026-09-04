@@ -958,7 +958,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, ifElse(var(10) = 2, -2.91, -6.91)
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = ifElse(var(10) = 2, 0, 1)
 air.fall = 1
 fall.recover = 1
@@ -1096,7 +1096,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -6.91
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -1240,7 +1240,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -2.91
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -1328,7 +1328,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -1.12, -9.91
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -1457,7 +1457,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -1504,7 +1504,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -1551,7 +1551,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -1598,7 +1598,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -1726,7 +1726,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -1772,7 +1772,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -2066,7 +2066,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -2111,7 +2111,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -2156,7 +2156,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -2201,7 +2201,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 ground.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forceStand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -2317,7 +2317,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -2362,7 +2362,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = 0,0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 hitsound = -1 + 0 * (var(31) := 2)
 guardsound = -1 + 0 * (var(32) := 0)
@@ -2581,7 +2581,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.64)
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -7.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -2679,7 +2679,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.64)
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -4.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -2722,7 +2722,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.64)
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -4.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -2969,7 +2969,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.64)
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -7.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 forceStand = 1
@@ -3061,7 +3061,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.64)
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -4.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -3104,7 +3104,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.64)
 guard.cornerpush.veloff = 0
 air.velocity = -4.32, -4.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -4105,7 +4105,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -5.54, -5.25
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120;24
@@ -4193,7 +4193,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -5.54, -5.25
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120;24

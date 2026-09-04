@@ -1022,7 +1022,7 @@ ground.slidetime = 17
 ground.velocity = 0
 guard.velocity = -3
 air.velocity = -4,-6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 hitsound = -1 + 0*(var(31):=5)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=-1)
@@ -1131,7 +1131,7 @@ ground.slidetime = 17
 ground.velocity = 0
 air.fall = 1
 air.velocity = -4,-7
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 p2stateno = 4010
 hitsound = -1 + 0*(var(31):=2)
 guardsound = -1 + 0*(var(32):=0)

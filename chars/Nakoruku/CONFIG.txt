@@ -9,38 +9,42 @@
 [Statedef 5901];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
 type = S;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
 [State 5901, Var];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
-type = null;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+type = varset;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-
+trigger1 = 1;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
 
 
 
-;---------------------------------------- HIT SPARKS ------------------------------------------
-;Adjust the number below to select which set of hit sparks to use
-;0 - Screenpack sparks
-;1 - Custom sparks type Geese
-;2 - Custom sparks type Nakoruru
+;--- COMMON EFFECTS ---
+;Set the variable below to 1 for custom effects, or 0 to use your screenpack's effects
+;Currently only the hit sparks and super pause effects are supported
 
-trigger1 = pi || map(cfg_sparks) := 1
+fvar(31) = 1
 
 
 
-;--------------------------------------- SUPER PAUSES -----------------------------------------
-;Set the number below to 1 for custom effects, or 0 to use your screenpack's effects
-
-trigger1 = pi || map(cfg_superfx) := 1
-
-
-
-;-------------------------------------- BLOOD EFFECTS -----------------------------------------
-;Set the number below to 1 to enable blood particle effects, or 0 to disable them
-
-trigger1 = pi || map(cfg_blood) := 1
+[State 5901, Var];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+type = varset;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-
+trigger1 = 1;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
 
 
 
-;-------------------------------------- VICTORY CAMERA ----------------------------------------
-;Set the number below to 1 to zoom in on the character during win poses
+;--- BLOOD EFFECTS ---
+;Set the variable below to 1 to enable blood particle effects, or 0 to disable them
 
-trigger1 = pi || map(cfg_winzoom) := 0
+fvar(32) = 1
+
+
+
+[State 5901, Var];NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO
+type = varset;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-
+trigger1 = 1;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
+
+
+
+;--- STUN SYSTEM ---
+;Set the variable below to 1 to enable Stun, or 0 to disable it
+
+fvar(33) = 1
 
 
 

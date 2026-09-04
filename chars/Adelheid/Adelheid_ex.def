@@ -10,7 +10,7 @@ versionDate=09,20,2022
 mugenVersion=1.0
 author="Saikou Shiva"
 pal.defaults=4,6,1,2
-localCoord = 428,240
+localCoord  = 428,240
 
 [Files]
 cmd=Command.cmd

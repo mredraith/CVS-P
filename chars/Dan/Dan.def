@@ -1,62 +1,57 @@
-; ______________________________
-;| Dan by Phantom.of.the.Server |
-; 
-;==DEFINITION==
+; ____________________________
+;| Dan Hibiki by RagingRowen	|
+; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+;====================<DEFINITION>====================
 [Info]
-name = "Dan Hibiki"
-displayname = "Dan"
-lifebarname = "Dan"
-versiondate = 2025
-mugenversion = 1.1; deprecated
-ikemenversion = 1.0
-author = "Phantom.of.the.Server"
-pal.defaults = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-localCoord = 428,240
-
+name        = "Dan Hibiki"
+displayName = "Dan"
+versionDate = 09,16,2021; Beta Release
+mugenVersion= 1.0
+author      = "RagingRowen"
+pal.defaults= 1,2,3,4,5,6,7,8,9,10,11,12
+localCoord  = 428,240
 
 [Files]
-cmd = dancmd.cns
-cns = dancns.cns
-st1 = states/danzss.zss
-st2 = states/dansystem.st
-st3 = states/dannormal.st
-st4 = states/danspecial.st
-st5 = states/dansuper.st
-st6 = states/danhelper.st
-st7 = states/inputs.zss
-st8 = CONFIG.txt
-stcommon= common1.cns
-sprite = dansprite.sff
-anim = dananim.air
-sound = dansound.snd
 movelist = movelist.dat
-pal1 = palettes/default.act
-pal2 = palettes/sfa2orange.act
-pal3 = palettes/sfa2magenta.act
-pal4 = palettes/mshgreen.act
-pal5 = palettes/sfa2yellow.act
-pal6 = palettes/sfa2blue.act
-pal7 = palettes/red.act
-pal8 = palettes/orange.act
-pal9 = palettes/black.act
-pal10 = palettes/ryu.act
-pal11 = palettes/ryo.act
-pal12 = palettes/oyaji.act
+cmd     = Command.cmd
+cns     = Constants.cns
+st      = States/System.st
+st1     = States/Normal.st
+st2     = States/Special.st
+st3     = States/Super.st
+st4     = States/Helpers.st
+st5		= Config.txt
+stCommon= common1.cns
+sprite  = Sprite.sff
+anim    = Anim.air
+sound   = Sound.snd
+pal1	= Palettes/Default.act
+pal2	= Palettes/CVS2_LK.act
+pal3	= Palettes/MCX_3.act
+pal4	= Palettes/Trololo_V-Ism2.act
+pal5	= Palettes/SpazMaster_Custom.act
+pal6	= Palettes/NDSilva_AnotherRobert.act
+pal7	= Palettes/NDSilva_AwakenedPineTree.act 
+pal8	= Palettes/Dronk_pots_kfd_coming_2062.act
+pal9	= Palettes/MCX_2.act
+pal10	= Palettes/CVS2_HP.act
+pal11	= Palettes/NDSilva_YuriSakazaki.act
+pal12	= Palettes/SpazMaster_Ryo.act
 
 [Palette Keymap]
-x = 1
-y = 2
-z = 3
 a = 4
 b = 5
 c = 6
-x2 = 7
-y2 = 8
-z2 = 9
+x = 1
+y = 2
+z = 3
 a2 = 10
 b2 = 11
 c2 = 12
+x2 = 7
+y2 = 8
+z2 = 9	
 
-[Arcade]
-intro.storyboard = intro.def
-;ending.storyboard = ending.def
+;[Arcade]
+;intro.storyBoard = intro.def
+;ending.storyBoard = ending.def

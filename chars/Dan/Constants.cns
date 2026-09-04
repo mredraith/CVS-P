@@ -1,0 +1,294 @@
+;====================<VARIABLE LIST>====================
+
+;var(3)  : Jump Type (0 = Normal; 1 = Low Jump; 2 = Long Low Jump; 3 = Long Jump)
+;var(4)  : Chain Combo (0 = Off; 1 = On)
+;var(5)  : Command Cancel Flag
+;var(6)  : Cancel Flag
+;var(7)  : Super Cancel Flag
+;var(8)  : Hyper Cancel Flag
+;var(9)  : Counter Flag
+;var(10) : Button Detect (0 = Light; 1 = Medium; 2 = Heavy)
+;var(11) : EX Danretsuken Juggle Flag (0 = Can't juggle; 1 = Can juggle)
+;var(12) : To-Be-Used Juggle Flag (0 = Can't juggle; 1 = Can juggle)
+;var(13) : Hit Count
+;var(14) : Followup Detection
+;var(15) : Juggle Points
+;var(16) : Juggle Flag
+;var(17) : Ticks UnGuardable
+;var(18) : ProjContact (0 = No; 1 = Yes)
+;var(19) : Throw Escape
+;var(20) : Custom Combo Time
+;var(21) : Super Cancel Flag
+;var(22) : Hyper Cancel Flag
+;var(23) : Super Finish Type
+
+;var(25) : Ticks to Apply EX FX
+;var(26) : Ticks Unable to Walk
+
+
+;var(30) : Hit Detection
+;var(31) : Hit Sound (0 = Light Punch; 1 = Medium Punch; 2 = Heavy Punch; 3 = Light Kick; 4 = Medium Kick; 5 = Heavy Kick; 6 = Projectile Hit; 800 = Grab)
+;var(32) : Guard Sound
+;var(33) : Hit Spark (8010 = Light; 8011 = Medium; 8012 = Heavy; 8013 = Special; 8014 = Super)
+;var(34) : Guard Spark (8000 = Normal; 8001 = Special)
+;var(35) : Spark xPos
+;var(36) : Spark yPos
+;var(37) : Special/Super Throws (0 = Allowed; 1 = Not Allowed)
+;var(38) : Throw (0 = Allowed; 1 = Not Allowed)
+;var(39) : Projectile Flag (0 = Off; 1 = On)
+
+;var(42) : EX Benimaru Collider super dampener flag
+;var(43) : Player ID to apply electric sparks to
+;var(44) : Electric particles timer
+;var(45) : Special Move Randomizer
+
+;var(58) : Game Time
+
+;fvar(5) : Amount of Corner Push
+;fvar(10): Damage Dampener
+;fvar(11): Damage Dampener with Counter Multiplier Added
+
+
+
+; ___________________________
+;| Dan Hibiki by RagingRowen |
+; 
+;====================<CONSTANTS>====================
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
+lieDown.time = 15
+airjuggle = 15
+sparkNo = s8010
+guard.sparkNo = s8000
+KO.echo = 0
+volume = 128
+IntPersistIndex = 0
+FloatPersistIndex = 0
+
+[Size]
+xScale = 0.933
+yScale = 1
+ground.back = 15
+ground.front = 15
+air.back = 15
+air.front = 15
+height = 78
+attack.dist = 160
+proj.attack.dist = 90
+proj.doScale = 0
+head.pos = -7, -95
+mid.pos = -3, -70
+shadowOffset = 0
+draw.offset = 0,0
+
+[Velocity]
+walk.fwd = 3.351955
+walk.back = -2.234636
+run.fwd = 5.586592,0
+run.back = -5.625,-4
+jump.neu = 0, -8.90625
+jump.fwd = 3.910614
+jump.back = -4.469273
+runJump.fwd = 5.865921,-10.2421760559
+runJump.back = -6.703910,-10.2421760559
+airjump.neu = 0,-6.5
+airjump.back = -2.8
+airjump.fwd = 2.8
+
+[Movement]
+airJump.num = 0
+airJump.height = 0
+yAccel = 0.48828125
+stand.friction = 0.85
+crouch.friction = 0.82
+stand.friction.threshold = 1.0
+crouch.friction.threshold = 1.0
+air.gethit.groundLevel = 25
+air.gethit.groundRecover.ground.threshold = -20
+air.gethit.groundRecover.groundLevel = 10
+air.gethit.airRecover.threshold = -1
+air.gethit.airRecover.yAccel = 0.35
+air.gethit.trip.groundLevel = 15
+down.bounce.offset = 0, 20
+down.bounce.yAccel = 0.4
+down.bounce.groundLevel = 12
+down.friction.threshold = 0.5
+
+
+;====================<WINQUOTES>====================
+[Quotes]
+victory0 = "My dad could beat you, and he's dead!"
+victory1 = "Anyone can fight... But no one can show off like I can!"
+victory2 = "I hate the art of fighting, but I want to be the king of fighters!"
+victory3 = "Now, you know who's really got the skills!"
+victory4 = "So, now you know what it feels like to be a total loser!"
+victory5 = "Sore loser! Don't go around beating inanimate objects!"
+victory6 = "Yahoo! Don't you just love that phrase? YAHOO! YAHOO! YAHOO!"
+victory7 = "You can't be a true martial artist without showmanship!"
+victory8 = "You've never heard of me? Give me a break! I'm Dan Hibiki!"
+victory9 = "The only master I need is myself!"
+victory10 = "Can you withstand the power of my super taunt?"
+victory11 = "This is first class Saikyo! Remember it well!"
+victory12 = "Behold! The might of my powered up Gadouken!"
+victory13 = "You should try my new exercise video: 7-Minute Saikyo!"
+victory14 = "There you go, looking pitiful..."
+victory15 = "In the name of pride, I will survive!"
+victory16 = "Little girls tie bows, real men Saikyo!"
+victory17 = "Dan is still the man! Yeah, baby, yeah!"
+victory18 = "My father must be looking down on me and smiling!"
+victory19 = "Yahoo! Hey, I should make the official Dan Hibiki fan club!"
+victory20 = "Passed out, eh...? Too bad. Just when I was getting warmed up! Gah haha!"
+victory21 = "I blow away all foes! That is the way of Saikyo!"
+victory22 = "Keep an eye on me, father! I won't let the Saikyo arts down!"
+victory23 = "Underestimating me is a surefire way to get hurt!"
+victory24 = "Whoever's still standing wins! I almost tripped, but I didn't, so I win!"
+victory25 = "Now you have to join my dojo! Just write your name and credit card number here..."
+victory26 = "Dinner? I usually eat beans right from the can while standing over the sink."
+victory27 = "I just thought of a great new taunt! Better write it down before I forget!"
+victory28 = "I stubbed my toe! You'd better have good insurance, bub!"
+victory29 = "If you let instant noodles soak long enough, they feel more filling!"
+victory30 = "It's not because you stink, it's because I'M AWESOME!"
+victory31 = "Heh. Those weren't even my best taunts and you still fell for 'em! You got a lot to learn!"
+victory32 = "Uh oh. I'm losin more of my hair! Saikyo Dojo's gonna have to invest in treatment..."
+victory33 = "That match was unforgettable, because I'm unforgettable."
+victory34 = "You're definitely Saikyo material! Pay the enrollment fee by tomorrow and you're in!"
+victory35 = "Piece of cake!"
+
+;Adon
+victory36 = "You'll never be king unless you move to the Saikyo arts! Wanna give it a try?"
+
+;Alex
+victory37 = "You're livin' out of a trailer? I know what it's like not havin' a home. Wanna come to my dojo?"
+
+;Akuma
+victory38 = "Who let this guy fight? This dude is cheap as hell!"
+victory39 = "That was a close one. My whole life flashed before my eyes. How sad..."
+
+;Balrog
+victory40 = "Chicks don't dig the whole greed thing, bro. You might wanna think about that."
+
+;Blanka
+victory41 = "Hey, Jimmy! I'm not getting many applicants lately. I wonder why..."
+
+;Cammy
+victory42 = "You're a friend of Sakura's? That gets you a 50% discount at my dojo!"
+
+;Chun Li
+victory43 = "Interfering with an investigation? Don't arrest me! I'm too pretty for jail!"
+
+;Cody
+victory44 = "I guess being unemployed beats being in prison... You OK, dude? Lighten up!"
+
+;Dan
+victory45 = "You can talk the talk, but you can't walk the walk! Jeez, what a letdown!"
+
+;Dee Jay
+victory46 = "Your music sucks. That said, I'd take a free CD if you've got any."
+
+;Dhalsim
+victory47 = "Dude, you're married?! And you have a kid? You're kidding! For real?!"
+
+;Dudley
+victory48 = "You rich people make me sick! I drink my tea from a paper cup and I like it!"
+
+;E. Honda
+victory49 = "What was that all about? I've seen sumo before, and that move was not sumo!"
+
+;Elena
+victory50 = "I underestimated the dancing power. I'll need improve my Saikyo style!"
+
+;Evil Ryu/Kage
+victory51 = "W-w-w-wait! Take it easy, man! You're gonna give yourself an aneurysm!"
+
+;Fei Long
+victory53 = "Remember the Saikyo arts! It blows your style away!"
+
+;Gen
+victory54 = "Don't even think of suing me for damages, gramps!"
+
+;Gill
+victory55 = "Takes a strong man to pull off the loincloth look, but it takes a stronger man to beat me!"
+
+;Gouken
+victory56 = "I heard you were dead. Wait a minute... Dude, you're not a ghost, are you?"
+
+;Guile
+victory57 = "I think the comfort of a regular income would just cramp my style, bro."
+
+;Guy
+victory58 = "Sorry, bro. I'm just driven to punch guys that are more handsome than me."
+
+;Hugo
+victory59 = "You can shoot Gadoken if you join my school. Not Hadoken. GADOKEN!"
+
+;Ibuki
+victory60 = "Alright! Alright! I won't treat you like a kid from now on. Happy?"
+
+;Juri
+victory61 = "You were tryin' to kill me for real, weren't ya? You're lucky I'm a nice guy."
+
+;Karin
+victory62 = "Come to think of it, doesn't your butler usually show up about now?"
+
+;Ken
+victory64 = "You think you're a real winner, but you didn't win this time, didja, big shot?"
+
+;M. Bison
+victory67 = "Anyone with a secret base or a private army or a house must be pure evil!"
+
+;Makoto
+victory69 = "If you hang up a plastic sheet to catch rain, be sure to do it from outside!"
+
+;Oro
+victory71 = "Senjutsu's got nothin' on Dan-jutsu! And by that I mean Saikyo-Style!"
+
+;Poison
+victory72 = "I could wrestle on the side. Saikyo Style is all about diversity!"
+
+;R. Mika
+victory73 = "Brute force alone won't beat me! You need to polish your moves!"
+
+;Rolento
+victory74 = "This perfect country of yours...Is it tax exempt? Free utilities, maybe?"
+
+;Rose
+victory75 = "Does sleight of hand magic really count as a fighting style? Seriously?"
+
+;Ryu
+victory76 = "Your moves are a convincing imitation, but I'm still stronger!"
+victory77 = "I'm always serious. Seriously the best!"
+
+;Sagat
+victory80 = "Father! Did you see that? I finally did it!"
+victory81 = "Some emperor you are. Consider my father avenged!"
+
+;Sakura
+victory82 = "Ready to give up? Huh? No, it's cool. We should stop now."
+
+;T. Hawk
+victory85 = "Not having a place to live sucks. I totally feel your pain, bro!"
+
+;Urien
+victory86 = "What's with the badass 'tude? You gotta have the skills to earn that!"
+
+;Vega
+victory87 = "Handsome dudes really get my goat! Great hair only makes me hate you more! Argh!"
+
+;Yang
+victory88 = "Huh? You wanna be stronger than your bro? Well, come to the Saikyo dojo!"
+
+;Yun
+victory89 = "You wear that cap to cover up your bald spot, right? Ha ha, I'm onto you!"
+
+;Zangief
+victory90 = "All your fans are snot nosed kids! I-I'm not jealous or anything..."
+
+;Ryo Sakazaki
+victory91 = "Pack in that Kyokugen stuff! I told you, this is the age of the Saikyo Groove!"
+
+;Yuri Sakazaki
+victory92 = "Don't get it mixed up! There's a big difference between learning something by copying it and learning through self improvement!"

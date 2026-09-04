@@ -2632,7 +2632,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = (ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)
-guard.hittime = (18 + 4 * var(9)) - 6
+guard.hittime = ((ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)) - 6
 ground.slideTime = 17 + 4 * var(9)
 air.hitTime = 120
 airguard.ctrlTime = 16
@@ -2679,7 +2679,7 @@ fall.animType = Back
 ground.type = High
 air.type = Low
 ground.hitTime = (ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)
-guard.hittime = (18 + 4 * var(9)) - 6
+guard.hittime = ((ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)) - 6
 ground.slideTime = 17 + 4 * var(9)
 air.hitTime = 120
 airguard.ctrlTime = 16
@@ -2726,7 +2726,7 @@ fall.animType = Back
 ground.type = Low
 air.type = Low
 ground.hitTime = (ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)
-guard.hittime = (18 + 4 * var(9)) - 6
+guard.hittime = ((ifElse(var(10)=2, 23, ifElse(var(10)=1, 20, 16))) + 4 * var(9)) - 6
 ground.slideTime = 17 + 4 * var(9)
 air.hitTime = 120
 airguard.ctrlTime = 16

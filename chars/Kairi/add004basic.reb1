@@ -25567,5 +25567,9 @@ type = selfstate
 trigger1 = vel y > 0 && pos y >= 0
 value = 5100
 
+[Statedef -3]
 
-
+[State -3]
+type = assertspecial
+trigger1 = 1
+flag = nojugglecheck

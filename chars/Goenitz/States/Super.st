@@ -1506,7 +1506,7 @@ p1facing = 1
 p2facing = 1
 p1stateno = 3101
 p2stateno = 3120
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 Fall = 1
 fall.recover = 0
 
@@ -1531,7 +1531,7 @@ p1facing = 1
 p2facing = 1
 p1stateno = 3101
 p2stateno = 3120
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 Fall = 1
 fall.recover = 0
 
@@ -1889,7 +1889,7 @@ p1facing = 1
 p2facing = 1
 p1stateno = 3151
 p2stateno = 3121
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 Fall = 1
 fall.recover = 0
 
@@ -1914,7 +1914,7 @@ p1facing = 1
 p2facing = 1
 p1stateno = 3151
 p2stateno = 3121
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 Fall = 1
 fall.recover = 0
 

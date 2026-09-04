@@ -411,7 +411,7 @@ guard.velocity = ifElse(var(20), -5.52547201545, -11.0509440309)
 guard.cornerPush.velOff = 0
 air.velocity = -5.39, -5.65
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = ifElse(PrevStateNo = 700, 1, 0)
 fall.recover = 1
 fall.recoverTime = 120

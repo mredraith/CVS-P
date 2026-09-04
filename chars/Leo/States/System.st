@@ -1,4 +1,4 @@
-﻿; ADD004 BASIC PIEs ReBuilded CNS (29/12/2018)
+; ADD004 BASIC PIEs ReBuilded CNS (29/12/2018)
 ;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
@@ -1631,7 +1631,7 @@ fall.recovery = 0
 fall.yvelocity = 0
 down.velocity = 0, 0
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 701, Explod]
 type = null
@@ -4636,19 +4636,7 @@ var(15)=1
 
 [State -2, Juggle Reset Single]
 type = varset
-triggerall = numenemy = 1 && var(15)
-trigger1 = (enemy, statetype != A) && (enemy, stateno != [5100, 5109]) && (enemy, time >= 0)
-trigger2 = (enemy, movetype != H) || (enemy, stateno = [120, 155]) || (enemy, ctrl)
-var(15) = 0
-ignorehitpause = 1
-
-[State -2, Juggle Reset Simul]
-type = varset
-triggerall = numenemy >= 2 && var(15)
-trigger1 = (enemynear(0), statetype != A) && (enemynear(0), time >= 0)
-trigger2 = (enemynear(0), movetype != H) || (enemynear(0), stateno = [120, 155]) || (enemynear(0), ctrl)
-trigger3 = (enemynear(1), statetype != A) && (enemynear(0), time >= 0)
-trigger4 = (enemynear(1), movetype != H) || (enemynear(0), stateno = [120, 155]) || (enemynear(0), ctrl)
+trigger1 = 1
 var(15) = 0
 ignorehitpause = 1
 

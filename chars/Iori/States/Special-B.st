@@ -2597,7 +2597,7 @@ guardSound = -1 + 0 * (var(32) := 0)
 sparkNo = -1 + 0 * (var(33) := 8013)
 guard.sparkNo = -1 + 0 * (var(34) := 8001)
 sparkXY = -10 + 0 * (var(35) := 100), var(36) := -78
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 palFX.time = 12 * var(9)
 palFX.add = 255,255,255
 palFX.sinAdd = -255,-255,-255,48
@@ -3864,7 +3864,7 @@ guard.velocity = ceil(Ifelse(var(55),-5,-7.51) * (ifelse(!var(20),1,.5)))
 guard.cornerPush.velOff = 0
 air.velocity=-3.24, -7.73
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recoverTime = 120
@@ -4263,7 +4263,7 @@ air.velocity = -3.24, -7.73
 ground.cornerPush.velOff = 0
 guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recoverTime = 120

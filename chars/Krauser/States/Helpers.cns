@@ -278,7 +278,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall=var(10)=3
 airguard.ctrltime=12
 airguard.velocity=ifelse((root,var(20)),-4,-8),-1.5
@@ -315,7 +315,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall=var(10)=3
 airguard.ctrltime=12
 airguard.velocity=ifelse((root,var(20)),-4,-8),-1.5
@@ -536,7 +536,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 airguard.ctrltime=12
 airguard.velocity=ifelse((root,var(20)),-4,-8),-1.5
 forcestand=1
@@ -1313,7 +1313,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall=var(8)>=5
 forcestand=1
 
@@ -1523,7 +1523,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall=var(8)>=9
 forcestand=1
 
@@ -1557,7 +1557,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall=var(8)>=9
 forcestand=1
 
@@ -1591,7 +1591,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall=var(8)>=9
 forcestand=1
 

@@ -689,7 +689,7 @@ guard.velocity = ifElse(var(20), -1.36, -2.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -2.36, -4), -7.5
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -731,7 +731,7 @@ guard.velocity = ifElse(var(20), -4.36, -8.52)
 guard.cornerPush.velOff = 0
 air.velocity = ifelse(var(20), -2.36, -4), -7.5
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 fall = 0
 fall.recover = 1
 fall.recovertime = 120
@@ -3539,7 +3539,7 @@ fall.recover = 1
 palFX.time = 12 * var(9)
 palfx.add = 255,255,255
 palfx.mul = 128,128,128
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 820, TargetPowerAdd]
 type = TargetPowerAdd

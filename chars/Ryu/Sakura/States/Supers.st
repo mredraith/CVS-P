@@ -423,7 +423,7 @@ forcestand = 1
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3100, hitmedium]
 type = hitdef
@@ -456,7 +456,7 @@ forcestand = 1
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3100, hithigh]
 type = hitdef
@@ -488,7 +488,7 @@ forcestand = 1
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3100, hitfinal]
 type = hitdef
@@ -521,7 +521,7 @@ fall.recover = 0
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 3100, statetype]
@@ -685,7 +685,7 @@ envshake.freq = 120
 envshake.ampl = 6
 ID = 3200
 nochainID = 3201
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3200, hitlow]
 type = hitdef
@@ -722,7 +722,7 @@ envshake.freq = 120
 envshake.ampl = 6
 ID = 3201
 nochainID = 3200
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 3200, hitfinal]
 type = hitdef
@@ -756,7 +756,7 @@ fall.recover = 0
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State Idle]
@@ -873,7 +873,7 @@ p2facing = 1
 p1stateno = 4001
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 4000, misssnd]
 type = playsnd
@@ -1311,7 +1311,7 @@ envshake.freq = 120
 envshake.ampl = 6
 p1stateno = 4101
 kill = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 
@@ -1488,7 +1488,7 @@ envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
 kill = (numtarget != numenemy)
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 4101, hithigh]
 type = hitdef
@@ -1524,7 +1524,7 @@ envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
 kill = ifelse((animelem = 3), 0, (numtarget != numenemy))
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 4101, hitlowshououken]
 type = hitdef
@@ -1557,7 +1557,7 @@ forcestand = 1
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 
@@ -1593,7 +1593,7 @@ forcestand = 1
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 
@@ -1630,7 +1630,7 @@ forcestand = 1
 envshake.time = 18
 envshake.freq = 120
 envshake.ampl = 6
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 
 [State 4101, statetype]
 type = statetypeset
@@ -1897,7 +1897,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 0
 ID = ifelse((animelem = 18), 4201, 4200)
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 4200, hitrising]
@@ -1933,7 +1933,7 @@ envshake.ampl = 6
 fall = 1
 fall.recover = 0
 ID = 4200
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 4200, hitcombohigh]
@@ -1968,7 +1968,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 4200, hitcombolow]
@@ -2003,7 +2003,7 @@ envshake.freq = 120
 envshake.ampl = 6
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 4200, hitfinal]
@@ -2038,7 +2038,7 @@ envshake.freq = 120
 envshake.ampl = 8
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 4200, posfix]

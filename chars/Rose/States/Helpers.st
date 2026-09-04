@@ -1005,7 +1005,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 air.recover=0
 air.fall=1
 airguard.ctrltime=12
@@ -1677,7 +1677,7 @@ palFX.time = 30
 palFX.mul = 128, 128, 128
 palFX.sinAdd = 96, 96, 96, 4
 sprpriority = 4
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 3405, HitSpark]
@@ -1944,7 +1944,7 @@ palFX.time = 30
 palFX.mul = 128, 128, 128
 palFX.sinAdd = 96, 96, 96, 4
 sprpriority = 4
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.04))
 forcestand = 1
 
 [State 3415, HitSpark]
