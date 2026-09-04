@@ -3129,20 +3129,7 @@ var(15) = 1
 
 [State -2, Juggle Reset Single];Special Thanks To 20S.
 type = VarSet
-triggerAll = NumEnemy = 1 && var(15)
-trigger1 = (Enemy, StateType != A) && (Enemy, StateNo != [5100,5109]) && (Enemy, Time >= 0)
-trigger2 = (Enemy, MoveType != H) || (Enemy, StateNo = [120,155]) || (Enemy, Ctrl)
-;trigger3 = StateNo = 420 && AnimElemTime(4) >= 0 && MoveContact
-var(15) = 0
-ignoreHitPause = 1
-
-[State -2, Juggle Reset Simul : Updated];Special Thanks To 20S.
-type = VarSet
-triggerAll = NumEnemy >= 2 && var(15)
-trigger1 = (EnemyNear(0), StateType != A) && (EnemyNear(0), Time >= 0)
-trigger2 = (EnemyNear(0), MoveType != H) || (EnemyNear(0), StateNo = [120,155]) || (EnemyNear(0), Ctrl)
-trigger3 = (EnemyNear(1), StateType != A) && (EnemyNear(0), Time >= 0)
-trigger4 = (EnemyNear(1), MoveType != H) || (EnemyNear(0), StateNo = [120,155]) || (EnemyNear(0), Ctrl)
+trigger1 = 1
 var(15) = 0
 ignoreHitPause = 1
 
