@@ -4496,20 +4496,7 @@ trigger1= !(hitdefattr=SCA,AT)
 var(15)=0
 [State -2, Juggle Reset Single]
 type=varset
-triggerall= numenemy=1 && var(15)
-trigger1= (enemy,statetype!=A) && ((enemy,stateno!=[5100,5109])||(enemy,statetype!=L)) && (enemy,time>=1)
-trigger2= (enemy,movetype!=H) || (enemy,stateno=[120,155]) || (enemy,ctrl)
-var(15)=0
-ignorehitpause=1
-[State -2, Juggle Reset Simul]
-type=varset
-triggerall= numenemy>=2 && var(15)
-trigger1= (enemynear(0),statetype!=A) && (enemynear(0),time>=1)
-trigger2= (enemynear(0),movetype!=H) || (enemynear(0),stateno=[120,155]) || (enemynear(0),ctrl)
-trigger3= !var(58)
-trigger3= (enemynear(1),statetype!=A) && (enemynear(1),time>=1)
-trigger4= !var(58)
-trigger4= (enemynear(1),movetype!=H) || (enemynear(1),stateno=[120,155]) || (enemynear(1),ctrl)
+trigger1 = 1
 var(15)=0
 ignorehitpause=1
 [State -2, Free Juggling]
@@ -4526,22 +4513,7 @@ var(16)=0
 ignorehitpause=1
 [State -2, Juggle Flag Reset Single]
 type=varset
-triggerall= numenemy=1 && var(16)
-trigger1= (enemy,movetype!=H) && (enemy,stateno!=5040)
-trigger2= !(enemy,hitshakeover) || (enemy,statetype=L) || (enemy,ctrl)
-trigger3= (enemy,movetype!=H) || (enemy,stateno=[120,155]) || (enemy,ctrl)
-var(16)=0
-ignorehitpause=1
-[State -2, Juggle Flag Reset Simul]
-type=varset
-triggerall= numenemy>=2 && var(16)
-trigger1= (enemynear(0),movetype!=H) && (enemynear(0),stateno!=5040)
-trigger2= !(enemynear(0),hitshakeover) || (enemynear(0),statetype=L) || (enemynear(0),ctrl)
-trigger3= !var(58)
-trigger3= (enemynear(1),movetype!=H) && (enemynear(1),stateno!=5040)
-trigger4= !var(58)
-trigger4= !(enemynear(1),hitshakeover) || (enemynear(1),statetype=L) || (enemynear(1),ctrl)
-trigger5= (enemynear,movetype!=H) || (enemynear,stateno=[120,155]) || (enemynear,ctrl)
+trigger1 = 1
 var(16)=0
 ignorehitpause=1
 

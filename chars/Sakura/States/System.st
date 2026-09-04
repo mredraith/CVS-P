@@ -3534,8 +3534,7 @@ ignorehitpause = 1
 
 [State -2, Free Juggling]
 type = assertspecial
-trigger1 = var(20) > 0
-trigger2 = roundstate != 2
+trigger1 = 1
 flag = nojugglecheck
 ignorehitpause = 1
 
