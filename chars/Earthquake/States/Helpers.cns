@@ -1,4 +1,4 @@
-;--------------------------------------------------------------------------------------
+﻿;--------------------------------------------------------------------------------------
 ;Pal Select
 [Statedef 256]
 physics = N
@@ -160,7 +160,7 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 19
 guard.hittime = (19) - 6
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.velocity=Ifelse(root,var(20),-1,-4), ifelse((root,var(20)),-5,-4+-1*var(10))
 ground.cornerpush.veloff=Ifelse(root,var(20),0,0)
 air.velocity=Ifelse(root,var(20),-2,-4), ifelse((root,var(20)),-4,-5.5)
@@ -409,7 +409,7 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 19
 guard.hittime = (19) - 6
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.velocity=ifelse(var(31)<2,-1,-4),ifelse(var(31)<2,-5,-4)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,0)
 air.velocity=ifelse(var(31)<2,-2,-4),ifelse(var(31)<2,-4,-3.5)
@@ -636,7 +636,7 @@ fall.recover=0
 getpower=72* !var(20), 36 * !var(20)
 givepower=35, 35
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.recover=0
 fall=0
 airguard.ctrltime=12
@@ -905,7 +905,7 @@ fall.recover=0
 getpower=0,0
 givepower=35, 35
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.recover=0
 fall=var(2)=2
 airguard.ctrltime=12
@@ -1117,7 +1117,7 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 19
 guard.hittime = (19) - 6
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.velocity=ifelse(var(31)<2,-6,-6),ifelse(var(31)<2,-5,-4)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,0)
 air.velocity=ifelse(var(31)<2,-6,-6),ifelse(var(31)<2,-4,-3.5)
@@ -1333,7 +1333,7 @@ ground.type = High
 ground.slidetime = 16
 ground.hittime = 19
 guard.hittime = (19) - 6
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.velocity=ifelse(var(31)<2,-6,-6),ifelse(var(31)<2,-5,-4)
 ground.cornerpush.veloff=Ifelse(root,var(20),0,0)
 air.velocity=ifelse(var(31)<2,-6,-6),ifelse(var(31)<2,-4,-3.5)
@@ -1564,7 +1564,7 @@ fall=(var(2)>=20)
 fall.recover = 0
 air.recover=0
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 getpower=0,0
 givepower=35, 35
 sprpriority=5

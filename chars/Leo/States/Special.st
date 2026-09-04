@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Leo by K6666orochi |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
@@ -114,7 +114,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 id= 1000
 
 [State 1000, 1]
@@ -145,7 +145,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 id= 1005
 
 [State 1000, 1]
@@ -176,7 +176,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 id= 1010
 
 [State 1000, Idle]
@@ -261,7 +261,7 @@ fall=1
 fall.recover = 1
 fall.animtype = back
 air.juggle = 8
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1000, 1]
 type = HitDef
@@ -297,7 +297,7 @@ fall=1
 fall.recover = 1
 fall.animtype = back
 air.juggle = 8
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1000, 1]
 type = HitDef
@@ -333,7 +333,7 @@ fall=1
 fall.recover = 1
 fall.animtype = back
 air.juggle = 8
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1000, Idle]
 type = StateTypeSet
@@ -490,7 +490,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1000, 1]
 type = HitDef
@@ -525,7 +525,7 @@ fall=1
 fall.recover = 1
 fall.animtype = back
 air.juggle = 8
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1000, ChangeState]
 type = ChangeState
@@ -642,7 +642,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 id= 1100
 
 [State 1000, 1]
@@ -673,7 +673,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 id= 1110
 
 [State 1000, 1]
@@ -704,7 +704,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 id= 1120
 
 
@@ -783,7 +783,7 @@ guard.velocity = ifElse(var(20), -4.86, -10.52)
 guard.cornerPush.velOff = 0
 air.velocity = -1, -8.24
 air.cornerPush.velOff = 0
-yAccel = 0.677
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -820,7 +820,7 @@ guard.velocity = ifElse(var(20), -4.86, -10.52)
 guard.cornerPush.velOff = 0
 air.velocity = -1, -8.24
 air.cornerPush.velOff = 0
-yAccel = 0.677
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -857,7 +857,7 @@ guard.velocity = ifElse(var(20), -4.86, -10.52)
 guard.cornerPush.velOff = 0
 air.velocity = -1, -8.24
 air.cornerPush.velOff = 0
-yAccel = 0.677
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -1023,7 +1023,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1000, Hit]
 type=hitdef
@@ -1051,7 +1051,7 @@ guard.velocity = ifElse(var(20), -4.86, -10.52)
 guard.cornerPush.velOff = 0
 air.velocity = -1, -8.24
 air.cornerPush.velOff = 0
-yAccel = 0.677
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -1220,7 +1220,7 @@ air.fall = 1
 air.cornerpush.veloff = 0
 fall.recover = 0
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 palfx.time = 30
 palfx.add = 10,10,10
 palfx.mul = 256,256,256
@@ -1257,7 +1257,7 @@ guard.cornerpush.veloff = -16.25
 airguard.ctrltime = 999
 air.velocity = -5, -6.43
 airguard.velocity = -5, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 palfx.time = 30
@@ -1298,7 +1298,7 @@ air.fall = 1
 air.cornerpush.veloff = 0
 fall.recover = 0
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 palfx.time = 40
 palfx.add = 184,184,200
 Palfx.mul = 220,220,255
@@ -1335,7 +1335,7 @@ guard.cornerpush.veloff = -16.25
 airguard.ctrltime = 999
 air.velocity = -5, -6.43
 airguard.velocity = -5, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 palfx.time = 40
@@ -1376,7 +1376,7 @@ air.fall = 1
 air.cornerpush.veloff = 0
 fall.recover = 0
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 palfx.time = 25
 palfx.add = 30,-40,-140
 palfx.sinadd = 60,60,50,10
@@ -1412,7 +1412,7 @@ guard.cornerpush.veloff = -16.25
 airguard.ctrltime = 999
 air.velocity = -5, -6.43
 airguard.velocity = -5, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 palfx.time = 25
@@ -1663,7 +1663,7 @@ fall = 1
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1300, 1]
 type = HitDef
@@ -1688,7 +1688,7 @@ fall = 1
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1300, 1]
 type = HitDef
@@ -1713,7 +1713,7 @@ fall = 1
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1200, 2]
 type = ChangeState
@@ -2254,7 +2254,7 @@ fall = 1
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1200, 2]
 type = ChangeState
@@ -2588,7 +2588,7 @@ guard.velocity = -12.64
 guard.cornerPush.velOff = 0
 air.velocity = -2,-7
 air.cornerPush.velOff = 0
-yAccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -2678,7 +2678,7 @@ guard.velocity = -6
 guard.cornerPush.velOff = 0
 air.velocity = -6.46, -4.25
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120

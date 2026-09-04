@@ -1,4 +1,4 @@
-; ADD004 BASIC PIEs ReBuilded CNS (27/12/2018)
+﻿; ADD004 BASIC PIEs ReBuilded CNS (27/12/2018)
 ;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
@@ -3012,7 +3012,7 @@ ground.hittime = 10
 guard.hittime = (10) - 6
 guard.ctrltime = 10
 ground.velocity = ifElse(var(20), -3.5, -7), 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 guard.velocity = -7
 air.velocity = ifelse ( p2stateno=5050, -3 , -2.5 ) , ifelse ( p2stateno=5050, -7 , -7)
 ground.cornerpush.veloff = -11

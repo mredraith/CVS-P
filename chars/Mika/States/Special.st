@@ -1,4 +1,4 @@
-; ________________________
+﻿; ________________________
 ;| R. Mika by DeathScythe |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
@@ -149,7 +149,7 @@ guard.velocity = ifelse(var(20), -3.61, -4)
 guard.cornerpush.veloff = 0
 air.velocity = -4, -6
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -374,7 +374,7 @@ guard.velocity = -4
 guard.cornerpush.veloff = 0
 air.velocity = -4, -6
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -494,7 +494,7 @@ guard.velocity = ifelse(var(20), -3.61, -4)
 guard.cornerpush.veloff = 0
 air.velocity = -4, -6
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -710,7 +710,7 @@ guard.cornerpush.veloff = 0
 air.velocity = -4, -6
 air.cornerPush.velOff = 0
 down.velocity = 0, 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -2396,7 +2396,7 @@ guard.velocity = -12.64
 guard.cornerPush.velOff = 0
 air.velocity = -4,-7
 air.cornerPush.velOff = 0
-yAccel = 0.5
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -2505,7 +2505,7 @@ guard.velocity = -6
 guard.cornerPush.velOff = 0
 air.velocity = -6.46, -4.25
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120

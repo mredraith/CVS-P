@@ -1,4 +1,4 @@
-[Data]
+﻿[Data]
 life = 1000
 power = 3000
 attack = 100
@@ -10134,7 +10134,7 @@ fall = 0
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 persistent = 0
 getpower = 0,0
 forcestand = 1
@@ -10197,7 +10197,7 @@ fall = 0
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 persistent = 0
 getpower = 0,0
 forcestand = 1
@@ -10238,7 +10238,7 @@ fall = 0
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 persistent = 0
 getpower = 0,0
 forcestand = 1

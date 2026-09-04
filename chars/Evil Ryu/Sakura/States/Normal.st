@@ -1,4 +1,4 @@
-; _________________________________
+﻿; _________________________________
 ;| Sakura by Phantom.of.the.Server |
 ; 
 ;
@@ -59,7 +59,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -130,7 +130,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -165,7 +165,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -236,7 +236,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -271,7 +271,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -307,7 +307,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -379,7 +379,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -450,7 +450,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -486,7 +486,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.65)
 guard.cornerpush.veloff = 0;ifelse(var(20), -8.83, -17.2)
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -562,7 +562,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -597,7 +597,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -668,7 +668,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 sprpriority = -1
 fall.recover = 1
 fall.recovertime = 120
@@ -704,7 +704,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -776,7 +776,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -847,7 +847,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -883,7 +883,7 @@ down.velocity = -3, -3
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -954,7 +954,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -990,7 +990,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1062,7 +1062,7 @@ down.velocity = -2, -2
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1133,7 +1133,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover = 1
 fall.recovertime = 120
 forcenofall = !var(20)
@@ -1212,7 +1212,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.65)
 guard.cornerpush.veloff = 0;ifelse(var(20), -8.83, -17.2)
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -1247,7 +1247,7 @@ guard.velocity = ifelse(var(20), -6.83, -12.65)
 guard.cornerpush.veloff = 0;ifelse(var(20), -8.83, -17.2)
 getpower = 0, 0
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
@@ -1318,7 +1318,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -1386,7 +1386,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -1454,7 +1454,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -1494,7 +1494,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -1562,7 +1562,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = 72 * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -1630,7 +1630,7 @@ air.velocity = ifelse(var(20), -2.5, -5), -7
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 144) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -1697,7 +1697,7 @@ air.velocity = -5, 0
 air.cornerpush.veloff = 0
 getpower = ifelse(p2movetype = H, 72, 216) * !var(20), 36 * !var(20)
 givepower = 36, 36
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0

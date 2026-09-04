@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Ken by Phantom.of.the.Server & Jmorphman|
 ; 
 ;
@@ -211,7 +211,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -475,7 +475,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -525,7 +525,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 1

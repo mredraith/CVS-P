@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| CVS Choi Bounge by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
@@ -2906,7 +2906,7 @@ guard.hittime = (9) - 6
 ground.velocity = -3.5,-6
 guard.velocity = -9
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 p2stateno = 3080
@@ -3148,7 +3148,7 @@ guard.hittime = (9) - 6
 ground.velocity = -3.5,-6
 guard.velocity = -9
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 p2stateno = 3085
@@ -3386,7 +3386,7 @@ guard.velocity = -10
 air.hittime = 13
 air.velocity = -6,-8
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 envshake.time=12

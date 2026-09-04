@@ -1,4 +1,4 @@
-;***************************************************************************;
+﻿;***************************************************************************;
 ;***************************************************************************;
 ; CVS Yashiro Nanakase POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
@@ -2563,7 +2563,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -4.31, -7.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forcestand = 1
@@ -2750,7 +2750,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -4.31, -7.36
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forcestand = 1

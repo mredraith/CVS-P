@@ -1,4 +1,4 @@
-; _______________________________________
+﻿; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
 ; 
 ;
@@ -1032,7 +1032,7 @@ envshake.freq=30
 envshake.ampl=4
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State AttackDone]
 type=statetypeset

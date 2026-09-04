@@ -1,4 +1,4 @@
-; ADD004 BASIC PIEs ReBuilded CNS (29/12/2018)
+﻿; ADD004 BASIC PIEs ReBuilded CNS (29/12/2018)
 ;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
@@ -1631,7 +1631,7 @@ fall.recovery = 0
 fall.yvelocity = 0
 down.velocity = 0, 0
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 701, Explod]
 type = null

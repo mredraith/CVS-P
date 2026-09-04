@@ -1,4 +1,4 @@
-; ___________________________________
+﻿; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
 ; 
 ;==============================================================================================
@@ -400,7 +400,7 @@ airguard.ctrltime = 16
 airguard.velocity = -6.00, -1.00
 airguard.cornerpush.veloff = 0
 guard.dist = const(size.proj.attack.dist)
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1

@@ -1,4 +1,4 @@
-;PARRY HELPER==
+﻿;PARRY HELPER==
 [StateDef 765]
 type = A
 physics = N
@@ -338,7 +338,7 @@ air.velocity = -5.35, -6.15
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = .58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -601,7 +601,7 @@ air.velocity = -5.35, -7
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, -1
 airGuard.cornerPush.velOff = 0
-yAccel = .58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = (var(2)>=2)
 air.fall = 1
 fall.recover = 1
@@ -1041,7 +1041,7 @@ air.velocity = -4.5, -7.5
 air.cornerPush.velOff = 0
 ;airGuard.velocity = -5, -1
 airGuard.cornerPush.velOff = 0
-yAccel = .58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1299,7 +1299,7 @@ air.velocity = -8, -6.5
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, -1
 airGuard.cornerPush.velOff = 0
-yAccel = .58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = (var(2)>=5)
 air.fall = 1
 fall.recover = 0

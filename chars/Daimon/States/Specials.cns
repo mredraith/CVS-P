@@ -1,4 +1,4 @@
-;***************************************************************************;
+﻿;***************************************************************************;
 ;***************************************************************************;
 ; CVS Goro Daimon POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
@@ -150,7 +150,7 @@ ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 guard.velocity = -8
 fall = 1
 fall.recover = 0
@@ -181,7 +181,7 @@ ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 guard.velocity = -8
 fall = 1
 fall.recover = 0
@@ -212,7 +212,7 @@ ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 guard.velocity = -8
 fall = 1
 fall.recover = 0
@@ -244,7 +244,7 @@ ground.hittime = 17
 guard.hittime = (17) - 6
 ground.velocity = -1.8,-5.5
 down.velocity = -1.8,-5.5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 guard.velocity = -8
 fall = 1
 fall.recover = 0

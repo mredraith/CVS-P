@@ -1,4 +1,4 @@
-; _______________________________________
+﻿; _______________________________________
 ;| Dudley by Dick Buckus & Mr.Ansatsuken |
 ; 
 ;
@@ -1564,7 +1564,7 @@ air.velocity = -1,-12
 guard.velocity = -8
 airguard.velocity = -3, -7
 fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.hittime = 120
 
 [State AttackDone]

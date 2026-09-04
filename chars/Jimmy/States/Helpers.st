@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Character by ZMugens |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
@@ -334,7 +334,7 @@ air.velocity = -5.35, -6.15
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = .58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -494,7 +494,7 @@ air.velocity = -5.35, -6.15
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = .58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1

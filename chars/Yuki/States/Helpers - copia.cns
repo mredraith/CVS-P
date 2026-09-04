@@ -1,4 +1,4 @@
-;--------------------------------------------------------------------------------------
+﻿;--------------------------------------------------------------------------------------
 ;Pal Select
 [Statedef 256]
 physics = N
@@ -211,7 +211,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime=12
 airguard.velocity=ifelse((root,var(20)),-4,-8),-3
 forcestand=1
@@ -254,7 +254,7 @@ givepower=36, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime=12
 airguard.velocity=ifelse((root,var(20)),-4,-8),-3
 forcestand=1

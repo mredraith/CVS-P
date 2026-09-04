@@ -1,4 +1,4 @@
-; ________________________________
+﻿; ________________________________
 ;| Cammy by Phantom.of.the.Server |
 ; 
 ;
@@ -727,7 +727,7 @@ guard.velocity = -5.41
 guard.cornerpush.veloff = 0
 air.velocity = -13.3, -3.66
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forcestand = 1
@@ -1052,7 +1052,7 @@ guard.velocity = -5.41
 guard.cornerpush.veloff = 0
 air.velocity = -13.3, -3.66
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forcestand = 1

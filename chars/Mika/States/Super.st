@@ -1,4 +1,4 @@
-; ________________________
+﻿; ________________________
 ;| R. Mika by DeathScythe |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
@@ -219,7 +219,7 @@ guard.velocity = -4.86
 guard.cornerPush.velOff = 0
 air.velocity = -2.5, -5.5
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -259,7 +259,7 @@ guard.velocity = -4
 guard.cornerPush.velOff = 0
 air.velocity = -4, -7
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 hitsound = -1 + 0*(var(31):=5)
@@ -514,7 +514,7 @@ guard.velocity = -4.86
 guard.cornerPush.velOff = 0
 air.velocity = -1.5, -5.5
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -553,7 +553,7 @@ guard.velocity = -4.86
 guard.cornerPush.velOff = 0
 air.velocity = -2.5, -5.5
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -593,7 +593,7 @@ guard.velocity = -4
 guard.cornerPush.velOff = 0
 air.velocity = -2.5, -5.5
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -633,7 +633,7 @@ guard.velocity = -4
 guard.cornerPush.velOff = 0
 air.velocity = -4, -8
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 hitsound = -1 + 0*(var(31):=5)

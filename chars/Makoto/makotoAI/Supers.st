@@ -1,4 +1,4 @@
-;***************************************************************************;
+﻿;***************************************************************************;
 ;******************************* Supers State ******************************;
 ;***************************************************************************;
 ;***************************************************************************;
@@ -401,7 +401,7 @@ p2stateno = 3040
 fall = 1
 fall.recover = 0
 kill = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 3301, Pow Effect]
 type = helper
@@ -822,7 +822,7 @@ p2stateno = 3040
 fall = 1
 fall.recover = 0
 kill = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 3301, Pow Effect]
 type = helper
@@ -1407,7 +1407,7 @@ p2stateno = 3040
 fall = 1
 fall.recover = 0
 kill = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 3301, Pow Effect]
 type = helper
@@ -2286,7 +2286,7 @@ ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-8
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 p2stateno = 3150
 envshake.time = 12
 envshake.ampl = 6
@@ -2369,7 +2369,7 @@ guard.hittime = (30) - 6
 ground.velocity = -2,-12
 air.velocity = -2,-12
 p2stateno = 3150
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 envshake.time = 18
 envshake.ampl = 6
 envshake.freq = 120
@@ -2987,7 +2987,7 @@ ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-8
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 p2stateno = 3150
 envshake.time = 12
 envshake.ampl = 6
@@ -3070,7 +3070,7 @@ guard.hittime = (30) - 6
 ground.velocity = -2,-12
 air.velocity = -2,-12
 p2stateno = 3150
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 envshake.time = 18
 envshake.ampl = 6
 envshake.freq = 120
@@ -3738,7 +3738,7 @@ ground.hittime = 30
 guard.hittime = (30) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-8
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 p2stateno = 3150
 envshake.time = 12
 envshake.ampl = 6
@@ -3829,7 +3829,7 @@ guard.hittime = (30) - 6
 ground.velocity = -2,-16
 air.velocity = -2,-16
 p2stateno = 3150
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 envshake.time = 18
 envshake.ampl = 6
 envshake.freq = 120
@@ -5832,7 +5832,7 @@ ground.velocity = -20,0
 air.velocity = -6,6
 envshake.time = 9
 envshake.ampl = 5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 0
 kill = 0
@@ -6039,7 +6039,7 @@ ground.velocity = -7,0
 air.velocity = -6,6
 envshake.time = 9
 envshake.ampl = 5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 0
 kill = 0
@@ -6193,7 +6193,7 @@ air.velocity = -6,6
 envshake.time = 9
 envshake.ampl = 5
 p2stateno = 3440
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 0
 kill = 0

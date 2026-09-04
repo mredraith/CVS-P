@@ -1,4 +1,4 @@
-;***************************************************************************;
+﻿;***************************************************************************;
 ;******************************* System State ******************************;
 ;***************************************************************************;
 ;***************************************************************************;
@@ -431,7 +431,7 @@ airguard.velocity = -6.67,-1
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 persistent = 0
 givepower = 36,36
 persistent = 0
@@ -508,7 +508,7 @@ airguard.velocity = -6.67,-1
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 persistent = 0
 givepower = 36,36
 persistent = 0

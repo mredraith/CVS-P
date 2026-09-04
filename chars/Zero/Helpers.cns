@@ -1,4 +1,4 @@
-;-------------------------------------------
+﻿;-------------------------------------------
 ; Charge FX!!
 [StateDef 2890]
 type = A
@@ -471,7 +471,7 @@ ground.slidetime = 26
 ground.hittime = 26
 guard.hittime = (26) - 6
 air.type = Low
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.animtype = Back
 air.fall = 1
 fall = 1

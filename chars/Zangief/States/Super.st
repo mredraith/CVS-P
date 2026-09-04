@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Zangief by varo_hades |
 ; 
 ;
@@ -5569,7 +5569,7 @@ fall = 1
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -5619,7 +5619,7 @@ fall = 1
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -5862,7 +5862,7 @@ fall = 1
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)
@@ -5915,7 +5915,7 @@ fall = 1
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recoverTime = 120
 forceStand = 1
 hitSound = -1 + 0 * (var(31) := 2)

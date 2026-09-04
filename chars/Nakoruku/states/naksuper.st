@@ -1,4 +1,4 @@
-; ___________________________________
+﻿; ___________________________________
 ;| Nakoruru by Phantom.of.the.Server |
 ; 
 ;============================================================================================
@@ -207,7 +207,7 @@ air.velocity = -4.31, -7.27
 ground.cornerpush.veloff = 0;-8.17
 guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -448,7 +448,7 @@ air.velocity = -4.31, -7.27
 ground.cornerpush.veloff = 0;-8.17
 guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -489,7 +489,7 @@ air.velocity = -3.5, -7.33
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
@@ -1098,7 +1098,7 @@ air.velocity = -6, -7.27
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1284,7 +1284,7 @@ air.velocity = 0, -2
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -1386,7 +1386,7 @@ air.velocity = -6, -6
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0;-20.01
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1637,7 +1637,7 @@ air.velocity = -2.75, -7.27; -4.31, -7.27
 ground.cornerpush.veloff = 0;-8.17
 guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -1678,7 +1678,7 @@ air.velocity = -2.75, -7.27; -4.31, -7.27
 ground.cornerpush.veloff = 0;-8.17
 guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -1719,7 +1719,7 @@ air.velocity = -8, -4
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0;-8.17
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 sparkno = ifelse(fvar(31), -1, 3) + 0 * (var(33) := 8030)
@@ -1918,7 +1918,7 @@ guard.sparkno = -1 + (var(34) := 0) * 0
 sparkxy = -10 + 0 * (var(35) := 30) * (var(36) := 40), var(37) := -50
 hitsound = -1 * (var(31) := 800) * 0
 guardsound = -1 * (var(32) := 0) * 0
-yAccel = (0.5 + (ComboCount * 0.03))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 numhits = 0

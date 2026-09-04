@@ -1,4 +1,4 @@
-; ADD004 BASIC PIEs ReBuilded CNS (24/12/2018)
+﻿; ADD004 BASIC PIEs ReBuilded CNS (24/12/2018)
 ;
 ; This file is Made by PIE.
 ; there is a backup of this file in the same folder, named "<samename>.a4bk".
@@ -3567,7 +3567,7 @@ guard.velocity = ifElse(var(20), -2.41, -4.49)
 guard.cornerPush.velOff = 0
 air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
-yAccel = 0.4
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 fall.recover = 1
 fall.recoverTime = 120

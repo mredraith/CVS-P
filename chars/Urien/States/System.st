@@ -1,4 +1,4 @@
-;
+﻿;
 ;SYSTEM STATES=
 ;
 
@@ -2218,7 +2218,7 @@ air.velocity = -1.2, -5
 air.cornerPush.velOff = 0
 airguard.velocity = -5, 0
 airguard.cornerPush.velOff = 0
-yAccel = 0.63
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 fall.recover = 0
 fall.recoverTime = 120

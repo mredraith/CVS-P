@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Benimaru by Jmorphman |
 ; 
 ;
@@ -586,7 +586,7 @@ guard.velocity = 5.32
 guard.cornerPush.velOff = 0
 air.velocity = -4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -1109,7 +1109,7 @@ guard.velocity = 5.32
 guard.cornerPush.velOff = 0
 air.velocity = -4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0

@@ -1,4 +1,4 @@
-; _______________________________
+﻿; _______________________________
 ;| Vega by Phantom.of.the.Server |
 ; 
 ;
@@ -332,7 +332,7 @@ sprpriority = 4
 airguard.ctrltime = 16
 airguard.velocity = ifelse((root, var(20)), -4, -8), -1.5
 forcestand = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1610, Sparks]
 type = explod

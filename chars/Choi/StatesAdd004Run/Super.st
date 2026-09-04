@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| CVS Choi Bounge by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
@@ -659,7 +659,7 @@ ground.velocity = 0
 guard.velocity = -5.0
 air.velocity = -3.5,-6
 ground.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1 
 fall.recover = 0
 fall.recover = 0
@@ -1389,7 +1389,7 @@ ground.velocity = 0
 guard.velocity = -5.0
 air.velocity = -3.5,-6
 ground.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1 
 fall.recover = 0
 fall.recover = 0
@@ -1941,7 +1941,7 @@ ground.hittime = 49
 guard.hittime = (49) - 6
 guard.ctrltime = 21
 air.hittime = 49
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.velocity = -4, -6.38
 guard.velocity = IfElse(AnimElemTime(57) = 0, -12, 0)
 air.velocity = -4, -6.38
@@ -2234,7 +2234,7 @@ ground.hittime = 49
 guard.hittime = (49) - 6
 guard.ctrltime = 21
 air.hittime = 49
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.velocity = -4, -6.38
 guard.velocity = IfElse(AnimElemTime(73) = 0, -12, 0)
 air.velocity = -4, -6.38
@@ -2434,7 +2434,7 @@ guard.hittime = (20) - 6
 ground.velocity = -6,-12
 guard.velocity = -10
 air.velocity = -6,-12
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 envshake.time=12

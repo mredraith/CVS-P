@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Hayato by varo_hades |
 ; 
 ;
@@ -206,7 +206,7 @@ givepower=72, 36
 envshake.time=12
 envshake.ampl=5
 sprpriority=5
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand=1
 palFX.time=12 * var(9)
 palFX.add=255,255,255
@@ -416,7 +416,7 @@ air.velocity = ifElse(var(13) % 2 = 0, -4.31, 4.31), -1.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -462,7 +462,7 @@ guard.velocity = -10.52
 guard.cornerPush.velOff = 0
 air.velocity = -4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forceStand = 1

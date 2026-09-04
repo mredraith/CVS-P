@@ -1,4 +1,4 @@
-
+﻿
 ;KAIRI FROM STREET FIGHTER EX + EDITS BY Mr.KARATE AND GUSTAVO C. MORAES
 ;CODES - Mr.KARATE
 ;SPRITES - GUSTAVO C. MORAES
@@ -918,7 +918,7 @@ air.velocity = -3, -6
 air.cornerpush.veloff = 0
 airguard.velocity = -6, -1
 airguard.ctrltime = 16
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 fall.recovertime = 120
@@ -1014,7 +1014,7 @@ air.velocity=-.75*vel x,-2
 air.cornerpush.veloff = 0
 airguard.velocity = -6, -1
 airguard.ctrltime = 16
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 fall.recover = 0
 fall.recovertime = 120
@@ -1104,7 +1104,7 @@ air.velocity = -3, -6
 air.cornerpush.veloff = 0
 airguard.velocity = -6, -1
 airguard.ctrltime = 16
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 fall.recovertime = 120
@@ -1836,7 +1836,7 @@ fall.envshake.time = 20
 p1sprpriority = 3
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 3001, bean efect]
 type = explod

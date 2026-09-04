@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Gen by mwryly & varo_hades |
 ; 
 ;HELPER STATES
@@ -186,7 +186,7 @@ guard.velocity = 15.30
 guard.cornerPush.velOff = 0
 air.velocity = 4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -231,7 +231,7 @@ guard.velocity = 15.30
 guard.cornerPush.velOff = 0
 air.velocity = 4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 kill = 0
 air.fall = 1
@@ -364,7 +364,7 @@ guard.velocity = 15.30
 guard.cornerPush.velOff = 0
 air.velocity = 4.32, -6.89
 air.cornerPush.velOff = 0
-yAccel = 0.48
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forceStand = 1
@@ -498,7 +498,7 @@ guard.velocity = 15.30
 guard.cornerPush.velOff = 0
 air.velocity = 4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -543,7 +543,7 @@ guard.velocity = 15.30
 guard.cornerPush.velOff = 0
 air.velocity = 4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 kill = 0
 air.fall = 1
@@ -676,7 +676,7 @@ guard.velocity = 15.30
 guard.cornerPush.velOff = 0
 air.velocity = 4.32, -6.89
 air.cornerPush.velOff = 0
-yAccel = 0.48
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forceStand = 1
@@ -863,7 +863,7 @@ air.velocity = ifElse(var(13) % 2 = 0, -4.31, 4.31), -1.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -909,7 +909,7 @@ guard.velocity = -10.52
 guard.cornerPush.velOff = 0
 air.velocity = -4.32, -7.49
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forceStand = 1

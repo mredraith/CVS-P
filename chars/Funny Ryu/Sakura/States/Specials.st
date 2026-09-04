@@ -1,4 +1,4 @@
-; _________________________________
+﻿; _________________________________
 ;| Sakura by Phantom.of.the.Server |
 ; 
 ;
@@ -338,7 +338,7 @@ fall = 0
 fall.recover = 1
 fall.recovertime = 120
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 
 [State 1100, hithigh]
@@ -374,7 +374,7 @@ fall = 0
 fall.recover = 1
 fall.recovertime = 120
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 
 [State 1100, hitlowfinal]
@@ -410,7 +410,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 
 [State 1100, hitmidair]
@@ -447,7 +447,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -542,7 +542,7 @@ forcestand = 1
 envshake.time = 16
 envshake.freq = 120
 envshake.ampl = 4
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 
 [State 1150, Anim]
@@ -608,7 +608,7 @@ fall = 0
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 
 [State 1150, hithigh]
@@ -643,7 +643,7 @@ fall = 0
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 
 [State 1150, hitmidair]
@@ -679,7 +679,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -830,7 +830,7 @@ fall.recover = 1
 fall.recovertime = 120
 ID = 1200
 nochainID = 1201
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -869,7 +869,7 @@ fall.recover = 1
 fall.recovertime = 120
 ID = 1201
 nochainID = 1200
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -1021,7 +1021,7 @@ envshake.ampl = 5
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 
 [State Idle]
@@ -1135,7 +1135,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -1174,7 +1174,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -1433,7 +1433,7 @@ givepower = 36, 36
 envshake.time = 12
 envshake.freq = 120
 envshake.ampl = 4
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -1472,7 +1472,7 @@ givepower = 36, 36
 envshake.time = 12
 envshake.freq = 120
 envshake.ampl = 4
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -1680,7 +1680,7 @@ envshake.ampl = 4
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1

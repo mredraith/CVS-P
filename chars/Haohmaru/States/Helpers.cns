@@ -1,4 +1,4 @@
-;--------------------------------------------------------------------------------------
+﻿;--------------------------------------------------------------------------------------
 ;Pal Select
 [Statedef 256]
 physics = N
@@ -218,7 +218,7 @@ fall = 1
 fall.recover = 0
 air.recover=0
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 getpower=72* !var(20), 36 * !var(20)
 givepower=35, 35
 envshake.time=10
@@ -504,7 +504,7 @@ fall = 1
 fall.recover = 0
 air.recover=0
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 getpower=0,0
 givepower=35, 35
 envshake.time=10
@@ -1033,7 +1033,7 @@ fall=(var(2)>=6)
 fall.recover = 0
 air.recover=0
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 getpower=0,0
 givepower=35, 35
 envshake.time=10
@@ -1296,7 +1296,7 @@ fall=(var(2)>=10)
 fall.recover = 0
 air.recover=0
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 getpower=0,0
 givepower=35, 35
 envshake.time=10
@@ -1508,7 +1508,7 @@ fall=(var(2)>=20)
 fall.recover = 0
 air.recover=0
 air.fall = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 getpower=0,0
 givepower=35, 35
 envshake.time=10

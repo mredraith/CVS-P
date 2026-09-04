@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Blanka by varo_hades |
 ; 
 ;
@@ -549,7 +549,7 @@ air.velocity = -5.0,-6.0
 air.cornerpush.veloff = 0
 ground.cornerpush.veloff = -22.0
 guard.cornerpush.veloff = ifelse((fvar(23)-ifelse(var(21),1,ceil(12*1.0/2)))<0,0,-22.0)
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover= 0
 air.recover=0
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
@@ -589,7 +589,7 @@ air.velocity = -5.0,-6.0
 air.cornerpush.veloff = 0
 ground.cornerpush.veloff = -22.0
 guard.cornerpush.veloff = ifelse((fvar(23)-ifelse(var(21),1,ceil(13*1.0/2)))<0,0,-22.0)
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover= 0
 air.recover=0
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
@@ -629,7 +629,7 @@ air.velocity = -5.0,-6.0
 air.cornerpush.veloff = 0
 ground.cornerpush.veloff = -22.0
 guard.cornerpush.veloff = ifelse((fvar(23)-ifelse(var(21),1,ceil(14*1.0/2)))<0,0,-22.0)
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.recover= 0
 air.recover=0
 getPower = ifElse(!var(13), 72, 36) * !var(20), 12 * !var(20)
@@ -2550,7 +2550,7 @@ guard.velocity = -10.52
 guard.cornerPush.velOff = 0
 air.velocity = -5.54, -5.25
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -2637,7 +2637,7 @@ guard.velocity = -10.52
 guard.cornerPush.velOff = 0
 air.velocity = -5.54, -5.25
 air.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120

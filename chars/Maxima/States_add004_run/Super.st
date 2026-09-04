@@ -1,4 +1,4 @@
-;***************************************************************************;
+﻿;***************************************************************************;
 ;***************************************************************************;
 ; CVS Maxima POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
@@ -292,7 +292,7 @@ ground.velocity = 0,30
 air.velocity = 0,30
 air.hittime = 120
 guard.velocity = -9
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 ID = 3000
@@ -729,7 +729,7 @@ ground.velocity = 0,30
 air.velocity = 0,30
 air.hittime = 120
 guard.velocity = -9
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 ID = 3000

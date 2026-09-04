@@ -1,4 +1,4 @@
-; Entering the screen
+﻿; Entering the screen
 [Statedef 4500]
 type = A
 movetype = A
@@ -93,7 +93,7 @@ air.type = High
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.velocity = -5, -9
 air.hittime = 120
 air.recover = 0
@@ -720,7 +720,7 @@ fall = 1
 fall.recover = 0
 fall.yvelocity = -6
 down.bounce = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 palfx.time = 70-(P2StateType = A)*60
 palfx.add = 30,30,50
 palfx.mul = 180,180,255

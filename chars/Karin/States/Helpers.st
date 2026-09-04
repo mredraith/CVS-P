@@ -1,4 +1,4 @@
-; ________________________________
+﻿; ________________________________
 ;| Karin by Phantom.of.the.Server |
 ; 
 ;
@@ -136,7 +136,7 @@ air.velocity = -9, -6
 ground.cornerpush.veloff = 0
 guard.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 forcestand = 1
 fall = 1
 fall.recover = 0

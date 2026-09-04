@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Dee Jay by varo_hades |
 ; 
 ;
@@ -209,7 +209,7 @@ air.velocity = ifElse(var(20), -2.36, -4), -8
 air.cornerPush.velOff = 0
 airguard.velocity = -5, -1.5
 airGuard.cornerPush.velOff = 0
-yAccel = ifElse(var(20),.5,.6)
+yAccel = (0.5 + (ComboCount * 0.06))
 air.fall = 1
 fall.recover = 1
 fall.recoverTime = 22 + ifElse(var(20), 6, 12)
@@ -459,7 +459,7 @@ guard.velocity = -8.52
 guard.cornerPush.velOff = 0
 air.velocity = -4, -8
 air.cornerPush.velOff = 0
-yAccel = 0.6
+yAccel = (0.5 + (ComboCount * 0.06))
 air.fall = 1
 fall.recover = 1
 fall.recoverTime = 22 + ifElse(var(20), 6, 12)

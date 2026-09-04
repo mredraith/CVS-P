@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| B. B. Hood by varo_hades |
 ; 
 ;
@@ -860,7 +860,7 @@ air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
 getpower = 0
 givepower = 0,0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 p2facing = 0
 fall = 1
 fall.recovertime = 60
@@ -1127,7 +1127,7 @@ air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
 getpower = 0
 givepower = 0,0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 p2facing = 0
 fall = 1
 fall.recovertime = 60
@@ -1282,7 +1282,7 @@ air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
 getpower = 0
 givepower = 0,0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.fall = 0
 p2facing = 1
 snap = 10
@@ -1451,7 +1451,7 @@ air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
 getpower = 0
 givepower = 0,0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.fall = 0
 p2facing = 1
 id = 3205
@@ -1497,7 +1497,7 @@ air.cornerpush.veloff = 0
 airguard.cornerpush.veloff = 0
 getpower = 0
 givepower = 0,0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 air.fall = 0
 p2facing = 1
 id = 3205

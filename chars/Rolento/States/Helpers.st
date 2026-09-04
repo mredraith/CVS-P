@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Rolento by Jmorphman |
 ; 
 ;
@@ -609,7 +609,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -971,7 +971,7 @@ airguard.velocity = -5, 0
 airguard.cornerpush.veloff = 0
 down.velocity = 0, 0
 down.cornerpush.veloff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -1566,7 +1566,7 @@ airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
 down.velocity = 0, 0
 down.cornerpush.veloff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 1
@@ -1729,7 +1729,7 @@ airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
 down.velocity = 0, 0
 down.cornerpush.veloff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 1
@@ -1882,7 +1882,7 @@ airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
 down.velocity = 0, 0
 down.cornerpush.veloff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 1
@@ -2229,7 +2229,7 @@ air.velocity = 10.49, -3.69
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.xVelocity = 2.49
 fall.recover = 0
@@ -2557,7 +2557,7 @@ airguard.velocity = -5, 0
 airguard.cornerpush.veloff = 0
 down.velocity = 0, 0
 down.cornerpush.veloff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
@@ -2754,7 +2754,7 @@ air.velocity = ifElse(Root, var(10) = 1, 16.49, -16.49), -2.69
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 forceStand = 1

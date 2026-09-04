@@ -1,4 +1,4 @@
-;------------------------------------------------------------------
+﻿;------------------------------------------------------------------
 ;Cross Cutter
 [Statedef 1000]
 type = S
@@ -415,7 +415,7 @@ fall = 1
 fall.recover = 1
 fall.recovertime = 120
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ID = 1100
 fall.envshake.time = ceil(ifelse(var(20), 0, ifelse(p2statetype = A, 8, ifelse(!var(10), 13, ifelse(var(10) = 1, 14, 15)))) * ifelse(var(9), 1.25, 1))
 fall.envshake.freq = 0.0
@@ -462,7 +462,7 @@ fall = 1
 fall.recover = 1
 fall.recovertime = 120
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ID = 1100
 fall.envshake.time = ceil(ifelse(var(20), 0, 8) * ifelse(var(9), 1.25, 1))
 fall.envshake.freq = 0.0
@@ -683,7 +683,7 @@ fall = 1
 fall.recover = 1
 fall.recovertime = 120
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ID = 1100
 fall.envshake.time = ceil(ifelse(var(20), 0, 8) * ifelse(var(9), 1.25, 1))
 fall.envshake.freq = 0.0
@@ -727,7 +727,7 @@ fall = 1
 fall.recover = 1
 fall.recovertime = 120
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ID = 1100
 fall.envshake.time = ceil(ifelse(var(20), 0, 8) * ifelse(var(9), 1.25, 1))
 fall.envshake.freq = 0.0
@@ -872,7 +872,7 @@ fall = 1
 fall.recover = 1
 air.recover = 0
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 guard.cornerpush.veloff = -18
@@ -1046,7 +1046,7 @@ fall = 1
 fall.recover = 1
 air.recover = 0
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 guard.cornerpush.veloff = -18
@@ -1617,7 +1617,7 @@ air.recover = 0
 fall = 1
 fall.recover = 0
 bounce = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 palfx.time = 70-(P2StateType = A)*60
 palfx.add = 30,30,50
 palfx.mul = 180,180,255
@@ -1822,7 +1822,7 @@ air.recover = 0
 fall = 1
 fall.recover = 0
 bounce = 1
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 palfx.time = 70-(P2StateType = A)*60
 palfx.add = 30,30,50
 palfx.mul = 180,180,255

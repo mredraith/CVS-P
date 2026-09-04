@@ -1,4 +1,4 @@
-; _________________________________________
+﻿; _________________________________________
 ;| Kasumi Todoh by Falcon Rapper |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;
@@ -2725,7 +2725,7 @@ ground.hittime = 22
 guard.hittime = (22) - 6
 ground.velocity = -1,-8
 air.velocity = -1,-4
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 fall.recover = 0
 hitsound=S2+10*var(44),2

@@ -1,4 +1,4 @@
-;***************************************************************************;
+﻿;***************************************************************************;
 ;***************************************************************************;
 ; CVS Kasumi Todoh POTS/Infinite by Falcon Rapper
 ;***************************************************************************;
@@ -3367,7 +3367,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -3698,7 +3698,7 @@ guard.cornerPush.velOff = 0
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -3995,7 +3995,7 @@ ground.velocity = -7.5,-2
 guard.cornerpush.veloff = 0
 air.velocity = -7.5,-2
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -4240,7 +4240,7 @@ ground.velocity = -7.5,-2
 guard.cornerpush.veloff = 0
 air.velocity = -7.5,-2
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -4460,7 +4460,7 @@ ground.velocity = -7.5,-2
 guard.cornerpush.veloff = 0
 air.velocity = -7.5,-2
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -4679,7 +4679,7 @@ ground.velocity = -7.5,-2
 guard.cornerpush.veloff = 0
 air.velocity = -7.5,-2
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0

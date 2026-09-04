@@ -1,4 +1,4 @@
-; _______________________________
+﻿; _______________________________
 ;| Vega by Phantom.of.the.Server |
 ; 
 ;
@@ -170,7 +170,7 @@ fall = 1
 fall.recover = 1
 fall.recovertime = 120
 ID = 1000
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -355,7 +355,7 @@ fall = 0
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -395,7 +395,7 @@ envshake.ampl = 4
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -570,7 +570,7 @@ air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
 ID = 1200
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 airguard.cornerpush.veloff = 0
@@ -774,7 +774,7 @@ givepower = 36, 36
 envshake.time = 12
 envshake.freq = 120
 envshake.ampl = 3
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -957,7 +957,7 @@ palfx.time = 36
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 airguard.ctrltime = 16
 airguard.velocity = ifelse(var(20), -4, -8), -1.5
 forcestand = 1
@@ -1114,7 +1114,7 @@ envshake.ampl = 4
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1300, Hit]
 type = hitdef
@@ -1154,7 +1154,7 @@ palfx.time = 36 + (4 * var(10))
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1300, flames]
 type = helper
@@ -1286,7 +1286,7 @@ palfx.time = 22
 air.fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.04))
+yAccel = (0.5 + (ComboCount * 0.06))
 
 [State 1400, hitsound]
 type = playsnd

@@ -1,4 +1,4 @@
-; _______________________________________________
+﻿; _______________________________________________
 ;| Cody Travers by Trololo |
 ; 
 ;
@@ -264,7 +264,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -766,7 +766,7 @@ air.velocity = -4.31, -7.36
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 1
@@ -1025,7 +1025,7 @@ air.velocity = -1.5, -8.26 + (var(10)*0.85)
 air.cornerPush.velOff = 0
 airGuard.velocity = -2.5, -8.26 + (var(10)*0.85)
 airGuard.cornerPush.velOff = 0
-yAccel = 0.45 - (var(10)*0.04)
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1319,7 +1319,7 @@ air.velocity = -1.5, -7.41
 air.cornerPush.velOff = 0
 airGuard.velocity = -2.5, -7.41
 airGuard.cornerPush.velOff = 0
-yAccel = 0.41
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1559,10 +1559,10 @@ air.velocity = -5.75, -6.55
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.475
+yAccel = (0.5 + (ComboCount * 0.06))
 fall.xvelocity = -2
 fall.yvelocity = -4
-yAccel = 0.475
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1783,7 +1783,7 @@ air.velocity = -1.31, -8.46
 air.cornerPush.velOff = 0
 airGuard.velocity = -5, 0
 airGuard.cornerPush.velOff = 0
-yAccel = 0.58
+yAccel = (0.5 + (ComboCount * 0.06))
 fall = 0
 air.fall = 1
 fall.recover = 0
