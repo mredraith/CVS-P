@@ -1,4 +1,4 @@
-﻿; ________________________________________
+; ________________________________________
 ;| Ryu by Phantom.of.the.Server and Mwryly |
 ; 
 ;
@@ -302,8 +302,6 @@ persistent = 0
 
 [State 1110, hit 1]
 type = hitdef
-trigger1 = var(1)!= 1
-
 trigger1 = animelem = 2 && anim = 1110
 ID = 1110
 attr = S, SA
@@ -350,8 +348,8 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 1110, hit 2]
 type = hitdef
-triggerall = animelem = 3 && anim = 1110
-trigger1 = numtarget(1110)
+trigger1 = animelem = 3 && anim = 1110
+trigger1 = !(enemy, statetype = A) && !(enemy, movetype = H)
 ID = 1111
 attr = S, SA
 damage = ceil(ifElse(fvar(12) * ifelse(var(1)!= 1, 50, 95) < 7, 7, fvar(12) * ifelse(var(1)!= 1, 50, 95))), ifelse(var(1)!= 1, 16, 8)
@@ -397,11 +395,8 @@ palFX.sinAdd= -255,-255,-255,48
 
 [State 1110, hit 2 alt]
 type = hitdef
-;trigger1 = !var(14)
-
 trigger1 = animelem = 3 && anim = 1110
 trigger1 = (enemy, statetype = A) && (enemy, movetype = H)
-trigger1 = !numtarget(1110)
 ID = 1112
 attr = S, SA
 damage = ceil(ifElse(fvar(12) * ifelse(var(1)!= 1, 42, 102) < 7, 7, fvar(12) * ifelse(var(1)!= 1, 42, 102))), ifelse(var(1)!= 1, 16, 8)
