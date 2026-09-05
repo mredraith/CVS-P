@@ -20,7 +20,7 @@ I want to do this via centering every character around my specific design philos
 
 1. Everything should be snappy. Buttons, movement, specials, supers, everything. Whatever you do should have the feel of a flick of the wrist.
 
-2. Attacks should be strong, but punishable. My idea is to have most attacks hovering around the 20-40 frame mark, where lights are closer to 20 and heavies are closer to 40. I'm okay with a little bit of plus frames on block for light attacks, but mediums should be punishable if not done at a distance, and heavies should be punishable in general.
+2. Attacks should be strong, but punishable. My idea is to have most attacks hovering around the 12-30 frame mark, where lights are closer to 12 and heavies are closer to 30. I'm okay with a little bit of plus frames on block for light attacks, but mediums should be punishable if not done at a distance, and heavies should be punishable in general.
 
 3. Nothing should be inherently invalidated compared to one another. While this is a little bit more difficult, especially with characters who don't have many unique attacks/animations, I want to make sure that the options you pick each have their own strengths and weaknesses, so responding to a scenario isn't as easy as "pressing the good button".
 
@@ -43,13 +43,17 @@ Q: What's changed?
 The most important change is that, by default, every character has normalized values;
 * All guard.hitTime values are the same as ground.hitTime values, but 6 frames less
 * All sweeps and supers grant hard knockdowns
-* Everyone's localcoord is 428,240
+* Everyone's* localcoord is 428,240
 * lieDown.time is 15f across the board
 * Everyone's health is 1000, everyone's maximum power is 3000, everyone's attack and defense is 100
 * No more envShake on normals (before statedefs 1000 and up)
 * I've also been working on:
   * Giving everyone 3f normals as their fastest attack
   * Changing hitboxes to be cleaner and more reasonable
+
+Fighters can juggle like it's Tekken now! Every additional hit in a combo makes it harder for you to keep the juggle going.
+
+Roman Cancels are now a thing, done by pressing C+Z simultaneously.
 
 Q: Where's the music?
 
