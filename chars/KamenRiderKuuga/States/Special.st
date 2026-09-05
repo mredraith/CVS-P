@@ -1,11 +1,11 @@
-﻿; _________________________________________
+; _________________________________________
 ;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-;==============================================================================================
-;========================================<SPECIAL MOVES>========================================
-;==============================================================================================
+;==
+;==<SPECIAL MOVES>==
+;==
 
-;========================<KAMEN PUNCH>=======================
+;==<KAMEN PUNCH>=
 [Statedef 1000]
 type = S
 movetype = A
@@ -313,8 +313,8 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
-guard.hittime = (18) - 6
+ground.hittime = 34
+guard.hittime = (34) - 6
 ground.velocity = -9, 0
 air.velocity = -6, -5
 guard.velocity = -10
@@ -486,8 +486,8 @@ fall.animtype = Back
 ground.type = Low
 air.type = Low
 ground.slidetime = 18
-ground.hittime = 18
-guard.hittime = (18) - 6
+ground.hittime = 38
+guard.hittime = (38) - 6
 ground.velocity = -9, 0
 air.velocity = -6, -5
 guard.velocity = -10
@@ -519,7 +519,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=======================<EX KAMEN PUNCH>===========================
+;=<EX KAMEN PUNCH>=
 [Statedef 1030]
 type = S
 movetype = A
@@ -747,7 +747,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
-;=====================<RISING RIDER>==========================
+;=<RISING RIDER>==
 [StateDef 1100]
 type = S
 physics = N
@@ -823,7 +823,7 @@ type = VelAdd
 triggerAll = vel x >= 0
 trigger1 = AnimElemTime(4) > 2 && var(40) != 3
 trigger2 = AnimElemTime(4) > 0 && var(40) = 3
-x = -0.78125
+x = -0.6
 
 [State 1100, VelSet]
 type = VelSet
@@ -1113,7 +1113,7 @@ ctrl = 1
 
 
 
-;========================<EX RISING RIDER>=============================
+;==<EX RISING RIDER>=
 [StateDef 1130]
 type = S
 physics = N
@@ -1424,7 +1424,7 @@ value = 1101
 
 
 
-;========================<RIDER SLASH>=============================
+;==<RIDER SLASH>=
 [StateDef 1200]
 type = S
 physics = S
@@ -1583,7 +1583,7 @@ ctrl = 1
 
 
 
-;========================<EX RIDER SLASH>=============================
+;==<EX RIDER SLASH>=
 [StateDef 1230]
 type = S
 physics = N
@@ -1870,7 +1870,7 @@ value = 1201
 
 
 
-;========================<HIT BY EX SLASH KICK>=============================
+;==<HIT BY EX SLASH KICK>=
 ;Being Launched
 [StateDef 1145]
 type = A
@@ -2086,7 +2086,7 @@ value = 5100
 
 
 
-;=====================<KAMEN KICK>==========================
+;=<KAMEN KICK>==
 [StateDef 1300]
 type = S
 physics = N
@@ -2318,7 +2318,7 @@ ctrl = 1
 
 
 
-;========================<SLAMMED AGAINST THE GROUND>=============================
+;==<SLAMMED AGAINST THE GROUND>=
 ;Being Slammed (Standing)
 [StateDef 5420]
 type = U
@@ -2506,7 +2506,7 @@ value = 5421
 
 
 
-;=====================<EX KAMEN KICK>==========================
+;=<EX KAMEN KICK>==
 [StateDef 1330]
 type = S
 physics = N
@@ -2727,7 +2727,7 @@ trigger1 = pos y > -vel y
 value = 1301
 
 
- ;========================<KICK ZERO COUNTER>=============================
+ ;==<KICK ZERO COUNTER>=
 [StateDef 2900]
 type = S
 physics = N
@@ -2802,7 +2802,7 @@ trigger1 = !AnimTime
 value = 0
 ctrl = 1
 
- ;========================<KICK ZERO COUNTER>=============================
+ ;==<KICK ZERO COUNTER>=
 [StateDef 2910]
 type = S
 physics = N

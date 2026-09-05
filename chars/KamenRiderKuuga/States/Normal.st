@@ -1,4 +1,4 @@
-﻿; _________________________________________
+; _________________________________________
 ;| Character by Author Name |
 ; ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ;==============================================================================================
@@ -57,9 +57,9 @@ air.animtype = Back
 fall.animtype = Back
 ground.type = Low
 air.type = Low
-ground.hittime = 12 + 2 * var(9)
-guard.hittime = (12 + 2 * var(9)) - 6
-ground.slidetime = 12 + 2 * var(9)
+ground.hittime = 14 + 2 * var(9)
+guard.hittime = (14 + 2 * var(9)) - 6
+ground.slidetime = 14 + 2 * var(9)
 air.hittime = 120
 ground.velocity = ifelse(var(20), -2.41, -4.49), 0
 ground.cornerpush.veloff = 0
@@ -671,6 +671,10 @@ value=250
 type=posset
 trigger1=!time
 y=0
+[State 250,Posadd]
+type=posadd
+trigger1= animelem=12
+x=40
 
 [State 250, Snd]
 type=playsnd
