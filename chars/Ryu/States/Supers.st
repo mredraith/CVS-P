@@ -1,4 +1,4 @@
-﻿; ________________________________________
+; ________________________________________
 ;| Ryu by Phantom.of.the.Server and Mwryly |
 ; 
 ;
@@ -939,54 +939,10 @@ palFX.time = 12 * var(29)
 palFX.add = 255,255,255
 palFX.sinAdd= -255,-255,-255,48
 
-[State 3100, elbowhit 2]
-type = hitdef
-trigger1 = !numtarget(3100)
-trigger1 = animelem = 7 && anim = 3100
-ID = 3115
-attr = S, HA
-damage = ceil(ifElse(fvar(12) * 132 < 7, 7, fvar(12) * 132)), 14
-;damage = 152, 16
-animtype = Hard
-air.animtype = Hard
-fall.animtype = Hard
-guardflag = M
-hitflag = MAF
-priority = 4, Hit
-pausetime = 12, 12
-guard.pausetime = 12, 12
-hitSound = -1 + 0 * (var(31) := 3)
-guardSound = -1 + 0 * (var(32) := 0)
-p2facing = 1
-ground.type = Low
-ground.slidetime = 16
-ground.hittime = 16
-guard.hittime = (16) - 6
-ground.velocity = -7, -7
-guard.velocity = -10.52
-ground.cornerpush.veloff = 0
-guard.cornerpush.veloff = 0
-air.type = Low
-air.velocity = -7, -7
-getpower = 0
-givepower = 36, 36
-envshake.time = 18
-envshake.freq = 120
-envshake.ampl = 9
-forcestand = 1
-yAccel = (0.5 + (ComboCount * 0.06))
-forcestand = 1
-sparkNo = -1 + 0 * (var(33) := 8014)
-guard.sparkNo = -1 + 0 * (var(34) := 8001)
-sparkXY = -10 + 0 * (var(35) := 40), var(36) := -60
-palFX.time = 12 * var(29)
-palFX.add = 255,255,255
-palFX.sinAdd= -255,-255,-255,48
-
 [State 3100, switch]
 type = changeanim
 trigger1 = anim = 3100
-trigger1 = animelemtime(7) >= 0 && animelemtime(8) < 0 && movehit && numtarget(3100)
+trigger1 = animelemtime(7) >= 0 && animelemtime(8) < 0 && movehit
 value = 3101
 ignorehitpause = 0
 

@@ -1,0 +1,10 @@
+[Statedef -4]
+if getHitVar(frame) && stateType = A {
+ let newvalue = gethitvar(xvel)*0.5;
+ gethitvarset{xvel: $newvalue}
+}
+
+if getHitVar(frame) && stateType = A {
+ let newvalue = gethitvar(yvel)+(0.4*(getHitVar(hitCount)));
+ gethitvarset{yvel: $newvalue}
+}

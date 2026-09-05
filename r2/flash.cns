@@ -1,6 +1,6 @@
-[Statedef +1]
+[Statedef -4]
 
-[State +1, Flash]
+[State -4, Flash]
 type = palfx
 triggerall = roundstate = 2
 triggerall = !ishelper
@@ -12,7 +12,7 @@ time = 1
 add = 64, 64, 64
 ignorehitpause = 1
 
-[State +1, Counter Flash]
+[State -4, Counter Flash]
 type = palfx
 triggerall = roundstate = 2
 triggerall = !ishelper
@@ -22,7 +22,7 @@ time = 1
 mul = 0, 0, 0
 ignorehitpause = 1
 
-[State +1, Counter Flash]
+[State -4, Counter Flash]
 type = envcolor
 triggerall = roundstate = 2
 triggerall = !ishelper
@@ -32,7 +32,7 @@ time = 1
 value = 255, 255, 255
 under = 1
 
-[State +1, Counter Zoom]
+[State -4, Counter Zoom]
 type = zoom
 triggerall = roundstate = 2
 triggerall = !ishelper
@@ -45,7 +45,7 @@ scale = 1.1
 stagebound = 0
 time = 1
 
-[State +1, Counter Shake]
+[State -4, Counter Shake]
 type = varrandom
 triggerall = roundstate = 2
 triggerall = !ishelper
@@ -55,7 +55,7 @@ v = 6769
 range = -10, 10
 
 ;Thank you Alceris for the programming assistance
-[State +1, Set Fvar]
+[State -4, Set Fvar]
 type = VarSet
 triggerall = roundstate = 2
 triggerall = !ishelper
@@ -65,7 +65,7 @@ trigger1 = EnemyNear,AnimElemVar(NumClsn2) = 0
 fv = 17
 value = 38
 
-[State +1, Zoom In]
+[State -4, Zoom In]
 type = zoom
 triggerall = !ishelper
 trigger1 = fvar(17) = 38
@@ -76,7 +76,7 @@ scale = 1.1
 stagebound = 0
 time = 3
 
-[State +1, Zoom Out]
+[State -4, Zoom Out]
 type = zoom
 triggerall = !ishelper
 triggerall = fvar(17) = 38
@@ -90,7 +90,7 @@ scale = camerazoom
 stagebound = 0
 time = 10
 
-[State +1, Fvar Resolve]
+[State -4, Fvar Resolve]
 type = VarSet
 triggerall = !ishelper
 triggerall = teammode = single
@@ -100,35 +100,35 @@ trigger2 = roundstate != 2
 fv = 17
 value = 0
 
-[State +1, Drift Forward]
+[State -4, Drift Forward]
 type = veladd
 triggerall = StateType = a
 triggerall = ctrl = 1
 trigger1 = Command = "holdfwd"
 x = 0.05
 
-[State +1, Drift Backward]
+[State -4, Drift Backward]
 type = veladd
 triggerall = StateType = a
 triggerall = ctrl = 1
 trigger1 = Command = "holdback"
 x = -0.05
 
-[State +1, Drift Up]
+[State -4, Drift Up]
 type = veladd
 triggerall = StateType = a
 triggerall = ctrl = 1
 trigger1 = Command = "holdup"
 y = -0.05
 
-[State +1, Drift Down]
+[State -4, Drift Down]
 type = veladd
 triggerall = StateType = a
 triggerall = ctrl = 1
 trigger1 = Command = "holddown"
 y = 0.05
 
-[State +1, Roman Cancel - Change State]
+[State -4, Roman Cancel - Change State]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = power >= 1000
@@ -137,7 +137,7 @@ trigger1 = statetype != a
 value = 9087
 ctrl = 0
 
-[State +1, Roman Cancel - Change State]
+[State -4, Roman Cancel - Change State]
 type = ChangeState
 trigger1 = movecontact
 trigger1 = power >= 1000
@@ -254,6 +254,7 @@ time = 20
 movetime = 20
 endcmdbuftime = 20
 pausebg = 0
+
 [State 9088, Pause]
 type = pause
 trigger1 = !time && numenemy
