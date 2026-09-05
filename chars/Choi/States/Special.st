@@ -142,7 +142,7 @@ ground.velocity=-4,-6
 guard.velocity=-8
 airguard.velocity=-8,-1
 air.velocity=-2,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 getpower=ifElse(PrevStateNo=750, 0, 20 * !var(20)),ifElse(PrevStateNo=750, 0, 20 * !var(20))
 givepower=10,5
 fall=1
@@ -348,7 +348,7 @@ ground.velocity=-1.5,-6
 guard.velocity=-8
 airguard.velocity=-8,-1
 air.velocity=-1.5,-7
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 getpower=0,0
 givepower=10,5
 fall=1
@@ -478,7 +478,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11
 air.velocity = -4,-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -656,7 +656,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -688,7 +688,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -720,7 +720,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -752,7 +752,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -784,7 +784,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -816,7 +816,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -848,7 +848,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -880,7 +880,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1073,7 +1073,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -4,-9
 air.velocity = -4,-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1246,7 +1246,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1278,7 +1278,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1310,7 +1310,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1342,7 +1342,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1374,7 +1374,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1406,7 +1406,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1438,7 +1438,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -1470,7 +1470,7 @@ ground.hittime = 18 + 4*var(9)
 guard.hittime = (18 + 4*var(9)) - 6
 ground.velocity = -11*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1)
 air.velocity = -4*ifelse((Facing =enemynear,Facing&&Var(17)!=9&&Var(17)!=6&&Var(17)!=3),-1,1),-9
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -2008,7 +2008,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.fall = 1
@@ -2073,7 +2073,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.fall = 1
@@ -2105,7 +2105,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.fall = 1
@@ -2221,7 +2221,7 @@ guard.hittime = (18) - 6
 ground.velocity = -2.7,-6
 guard.velocity = -6
 air.velocity = -2.7,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 1
 air.cornerpush.veloff = 0
@@ -2362,7 +2362,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.fall = 1
@@ -2436,7 +2436,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -2
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.fall = 1
@@ -2468,7 +2468,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = 0
 air.velocity = -3.5,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 ground.cornerpush.veloff = 0
 air.cornerpush.veloff = 0
 air.fall = 1
@@ -2548,7 +2548,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4 - (var(10) * 2)
 air.velocity = -3,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.cornerpush.veloff = 0
 ground.cornerpush.veloff = 0
 air.fall = 1
@@ -2654,7 +2654,7 @@ ground.hittime = 18
 guard.hittime = (18) - 6
 ground.velocity = -4 - (var(10) * 2)
 air.velocity = -3,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.cornerpush.veloff = 0
 ground.cornerpush.veloff = 0
 air.fall = 1
@@ -2759,7 +2759,7 @@ ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 fall=1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall.recover=0
 forcestand=1
 palFX.time=12 * var(9)
@@ -2802,7 +2802,7 @@ guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 fall=1
 air.fall=1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall.recover=0
 forcestand=1
 palFX.time=12 * var(9)
@@ -2845,7 +2845,7 @@ ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 fall=1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall.recover=0
 forcestand=1
 palFX.time=12 * var(9)
@@ -3010,7 +3010,7 @@ guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 fall=0
 air.fall=1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall.recover=0
 forcestand=1
 palFX.time=12 * var(9)
@@ -3052,7 +3052,7 @@ ground.cornerPush.velOff=0
 guard.cornerPush.velOff=0
 air.cornerPush.velOff=0
 fall=1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall.recover=0
 forcestand=1
 palFX.time=12 * var(9)
@@ -3209,7 +3209,7 @@ guard.hittime = (18) - 6
 ground.velocity = -4.3,-7
 guard.velocity = -6
 air.velocity = -4.3,-7
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 1
 ground.cornerpush.veloff = 0
@@ -3401,7 +3401,7 @@ guard.hittime = (18) - 6
 ground.velocity = -4.3,-7
 guard.velocity = -6
 air.velocity = -4.3,-7
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 1
 ground.cornerpush.veloff = 0

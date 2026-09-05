@@ -1018,7 +1018,7 @@ air.fall = 1
 getpower = 25,25
 givepower = 16,16
 ground.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 hitsound = -1 + 0*(var(31):=2)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8012)
@@ -1052,7 +1052,7 @@ fall = 1
 fall.recover = 0
 getpower = 25,25
 givepower = 16,16
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 ground.cornerpush.veloff = 0
 hitsound = -1 + 0*(var(31):=2)
 guardsound = -1 + 0*(var(32):=0)
@@ -1176,7 +1176,7 @@ air.juggle = 8
 ground.cornerpush.veloff = 0
 getpower = 25,25
 givepower = 16,16
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 hitsound = -1 + 0*(var(31):=1)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8011)
@@ -1210,7 +1210,7 @@ air.juggle = 8
 ground.cornerpush.veloff = 0
 getpower = 25,25
 givepower = 16,16
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 hitsound = -1 + 0*(var(31):=1)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8011)
@@ -1244,7 +1244,7 @@ air.juggle = 8
 ground.cornerpush.veloff = 0
 getpower = 25,25
 givepower = 16,16
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 hitsound = -1 + 0*(var(31):=1)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8011)
@@ -1280,7 +1280,7 @@ air.fall = 1
 ground.cornerpush.veloff = 0
 getpower = 25,25
 givepower = 16,16
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 hitsound = -1 + 0*(var(31):=2)
 guardsound = -1 + 0*(var(32):=0)
 sparkno = -1 + 0*(var(33):=8012)
@@ -1525,7 +1525,7 @@ ground.slidetime = 17
 ground.velocity = -4,-6
 air.velocity = -4,-6
 fall = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 getpower = 25,25
 givepower = 16,16
 hitsound = -1 + 0*(var(31):=2)
@@ -1611,7 +1611,7 @@ ground.slidetime = 17
 ground.velocity = -4,-7
 air.velocity = -4,-7
 fall = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.juggle = 10
 getpower = 25,25
 givepower = 16,16
@@ -1675,7 +1675,7 @@ ground.slidetime = 17
 ground.velocity = -4,-7
 air.velocity = -4,-7
 fall = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.juggle = 10
 getpower = 25,25
 givepower = 16,16
@@ -1776,7 +1776,7 @@ ground.slidetime = 17
 ground.velocity = -4,-7
 air.velocity = -4,-7
 fall = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.juggle = 10
 getpower = 25,25
 givepower = 16,16
@@ -1849,7 +1849,7 @@ ground.slidetime = 17
 ground.velocity = -4,-7
 air.velocity = -4,-7
 fall = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 air.juggle = 10
 getpower = 25,25
 givepower = 16,16
@@ -1947,7 +1947,7 @@ air.velocity = -1.5,-5
 fall = 1
 fall.recovertime = 35
 hitonce = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 getpower = 25,25
 givepower = 16,16
 ground.cornerpush.veloff = 0
@@ -2029,7 +2029,7 @@ guard.velocity = -12.64
 guard.cornerPush.velOff = 0
 air.velocity = -2,-7
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120
@@ -2117,7 +2117,7 @@ guard.velocity = -6
 guard.cornerPush.velOff = 0
 air.velocity = -6.46, -4.25
 air.cornerPush.velOff = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 1
 fall.recoverTime = 120

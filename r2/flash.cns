@@ -170,10 +170,11 @@ value = 1
 [State 9087, Pause]
 type = pause
 trigger1 = !time
-time = 20
-movetime = 20
-endcmdbuftime = 20
+time = 25
+movetime = 25
+endcmdbuftime = 25
 pausebg = 0
+
 [State 9087, Pause]
 type = pause
 trigger1 = !time && numenemy
@@ -218,7 +219,7 @@ flag = nowalk
 [State 9087, Roman Cancel - Darken]
 type = BGPalFX
 trigger1 = !time
-time = 20
+time = 25
 mul = 64,64,64
 
 [State 9087, End]
@@ -250,9 +251,9 @@ value = 1
 [State 9088, Pause]
 type = pause
 trigger1 = !time
-time = 20
-movetime = 20
-endcmdbuftime = 20
+time = 25
+movetime = 25
+endcmdbuftime = 25
 pausebg = 0
 
 [State 9088, Pause]
@@ -299,7 +300,7 @@ flag = nowalk
 [State 9088, Roman Cancel - Darken]
 type = BGPalFX
 trigger1 = !time
-time = 20
+time = 25
 mul = 64,64,64
 
 [State 9088, End]

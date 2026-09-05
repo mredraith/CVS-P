@@ -228,7 +228,7 @@ air.fall = 1
 fall.recover = 0
 down.recover = 1
 ID = 3000
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 kill = 0
 guard.kill = 1
 
@@ -322,7 +322,7 @@ air.fall = 1
 fall.recover = 0
 down.recover = 0; cannot mash
 down.recovertime = 30
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 kill = 0
 guard.kill = 1
 
@@ -737,7 +737,7 @@ guard.velocity = -10.52
 guard.cornerpush.veloff = 0
 air.velocity = -4, -6
 air.cornerpush.veloff = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 air.fall = 1
 fall.recover = 0
@@ -1171,7 +1171,7 @@ fall = 1
 fall.recover = 0
 down.recover = 0; cannot mash
 down.recovertime = 30
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3300, Vel]
 type = velmul
@@ -1525,7 +1525,7 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 down.recover = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3100, Hit Low]
 type = hitdef
@@ -1570,7 +1570,7 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 down.recover = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3100, Hit Slide]
 type = hitdef
@@ -1615,7 +1615,7 @@ envshake.mul = 0.667
 fall = 1
 fall.recover = 0
 down.recover = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 p1sprpriority = sprpriority
 forcestand = 1
 
@@ -1710,7 +1710,7 @@ fall = 0
 air.fall = 1
 fall.recover = 0
 down.recover = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3110, Hit]
 type = hitdef
@@ -1757,7 +1757,7 @@ envshake.mul = 0.667
 fall = 1
 fall.recover = 0
 down.recover = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3110, Accel]
 type = veladd
@@ -2394,7 +2394,7 @@ fall.recover = 0
 down.recover = 0; cannot mash
 down.recovertime = 30
 ID = 4001
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 p1sprpriority = sprpriority
 forcestand = 1
 

@@ -481,7 +481,7 @@ fall = 1
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 forcestand = 1
 envshake.time=16
 envshake.freq=30
@@ -623,7 +623,7 @@ envshake.freq=30
 envshake.ampl=4
 fall = 1 ;Make p2 fall down
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State AttackDone]
 type=statetypeset
@@ -852,7 +852,7 @@ envshake.time=16
 p2facing = 1
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3112, Combo]
 type=changeanim
@@ -929,7 +929,7 @@ fall.recover = 0
 envshake.time=16
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -1048,7 +1048,7 @@ ID = ifelse(fvar(8) && fvar(9),3051,3050)
 envshake.time=16
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State AttackDone]
 type=statetypeset
@@ -1353,7 +1353,7 @@ fall = 1
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 forcestand = 1
 envshake.time=16
 envshake.freq=30
@@ -1393,7 +1393,7 @@ fall = 1
 fall.recover = 0
 air.fall = 1
 air.recover = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 forcestand = 1
 envshake.time=16
 envshake.freq=30
@@ -1549,7 +1549,7 @@ envshake.freq=30
 envshake.ampl=4
 fall = 1 ;Make p2 fall down
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State AttackDone]
 type=statetypeset
@@ -1789,7 +1789,7 @@ forcestand = 1
 envshake.time=16
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3200, StateChange]
 type = Changeanim
@@ -1905,7 +1905,7 @@ forcestand = 1
 envshake.time=16
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3200, Hit]
 type = HitDef
@@ -1944,7 +1944,7 @@ forcestand = 1
 envshake.time=16
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 0, PlaySnd]
 type = PlaySnd
@@ -2074,7 +2074,7 @@ ID = ifelse(fvar(8) && fvar(9),3201,3200)
 envshake.time=16
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3200, Hit]
 type = HitDef
@@ -2107,7 +2107,7 @@ ID = ifelse(fvar(8) && fvar(9),3201,3200)
 envshake.time=16
 envshake.freq=60
 envshake.ampl=4
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 
 [State -2, Spark Level]
@@ -2824,7 +2824,7 @@ envshake.freq=30
 envshake.ampl=4
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 0, Explod]
 type = Explod

@@ -186,7 +186,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3000, 1]
 type = HitDef
@@ -221,7 +221,7 @@ fall=1
 fall.recover = 0
 fall.animtype = back
 air.juggle = 8
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 
 [State 3000, Idle]
@@ -417,7 +417,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3050, 2]
 type = HitDef
@@ -446,7 +446,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 3050, 5]
 type = ChangeState
@@ -581,7 +581,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 envshake.time = 5
 envshake.freq = 50
 envshake.ampl = 8
@@ -616,7 +616,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 envshake.time = 5
 envshake.freq = 50
 envshake.ampl = 8
@@ -651,7 +651,7 @@ airguard.ctrltime = 999
 air.type = Low
 air.velocity = -3, -6.43
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 envshake.time = 5
 envshake.freq = 50
 envshake.ampl = 6
@@ -688,7 +688,7 @@ airguard.ctrltime = 999
 air.type = Trip
 air.velocity = 1.25, -7.5
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 0
 envshake.time = 5
@@ -730,7 +730,7 @@ fall.recover = 0
 fall.yvelocity = -4
 fall.animtype = Heavy
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 envshake.time = 5
 envshake.freq = 50
 envshake.ampl = 10
@@ -772,7 +772,7 @@ fall = 1
 fall.recover = 0
 fall.yvelocity = -4
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 envshake.time = 5
 envshake.freq = 50
 envshake.ampl = 8
@@ -809,7 +809,7 @@ guard.cornerpush.veloff = -16.25
 airguard.ctrltime = 999
 air.velocity = 0, 7.5
 airguard.velocity = -5, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 fall = 1
 fall.recover = 0
 mindist = floor(160*const(size.xscale)), -9999
@@ -1029,7 +1029,7 @@ fall = 1
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1200, 2]
 type = ChangeState
@@ -1418,7 +1418,7 @@ fall = 1
 fall.recover = 0
 fall.xvelocity = -4.12
 fall.yvelocity = -7.5
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 2100, PlaySnd]
 type = PlaySnd

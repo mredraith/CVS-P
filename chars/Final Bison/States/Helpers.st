@@ -332,7 +332,7 @@ sprpriority = 4
 airguard.ctrltime = 16
 airguard.velocity = ifelse((root, var(20)), -4, -8), -1.5
 forcestand = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1610, Sparks]
 type = explod

@@ -406,7 +406,7 @@ p1sprpriority = sprpriority
 airguard.ctrltime = 1 + 16
 airguard.velocity = -6.00, -1.00
 forcestand = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1610, Getpower]
 type = poweradd
@@ -733,7 +733,7 @@ p1sprpriority = sprpriority
 airguard.ctrltime = 1 + 16
 airguard.velocity = -6.00, -1.00
 forcestand = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1640, Connected]
 type = changestate
@@ -1065,7 +1065,7 @@ p1sprpriority = sprpriority
 airguard.ctrltime = 1 + 16
 airguard.velocity = -6.00, -1.00
 forcestand = 1
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 p2facing = 1; ignore auto facing
 
 [State 1317, High Hit]
@@ -1211,7 +1211,7 @@ envshake.time = 12; super
 envshake.freq = 180
 envshake.ampl = ifelse((gametime % 2), -4, 4)
 envshake.mul = 0.667
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 p1sprpriority = sprpriority
 forcestand = 1
 kill = 0
@@ -1366,7 +1366,7 @@ envshake.time = 12; super
 envshake.freq = 180
 envshake.ampl = ifelse((gametime % 2), -4, 4)
 envshake.mul = 0.667
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 p1sprpriority = sprpriority
 forcestand = 1
 
@@ -1414,7 +1414,7 @@ envshake.time = 12; super
 envshake.freq = 180
 envshake.ampl = ifelse((gametime % 2), -4, 4)
 envshake.mul = 0.667
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 p1sprpriority = sprpriority
 forcestand = 1
 

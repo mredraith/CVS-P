@@ -1624,7 +1624,7 @@ fall.recovery = 0
 fall.yvelocity = 0
 down.velocity = 0, 0
 airguard.velocity = -3, -6.43
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 701, Explod]
 type = null

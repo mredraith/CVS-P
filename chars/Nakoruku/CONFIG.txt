@@ -44,7 +44,7 @@ trigger1 = 1;NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-NO-N
 ;--- STUN SYSTEM ---
 ;Set the variable below to 1 to enable Stun, or 0 to disable it
 
-fvar(33) = 1
+fvar(33) = 0
 
 
 

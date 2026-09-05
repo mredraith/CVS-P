@@ -278,7 +278,7 @@ palFX.sinAdd=-255,-255,-255,48
 envshake.time=12
 envshake.ampl=3
 envShake.freq=120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 id = 1100
 
 [State 1101, 3]
@@ -471,7 +471,7 @@ air.velocity = -3,-6
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
@@ -604,7 +604,7 @@ air.velocity = -3,-8.5
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
@@ -638,7 +638,7 @@ ground.velocity = -12
 air.velocity = -3,-6
 air.fall = 1
 fall.recovertime = 25
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
@@ -673,7 +673,7 @@ air.velocity = -3,-6
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
@@ -773,7 +773,7 @@ air.velocity = -3,-8.5
 fall = 1
 fall.recover = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
@@ -950,7 +950,7 @@ palFX.sinAdd=-255,-255,-255,48
 envshake.time=12
 envshake.ampl=3
 envShake.freq=120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1230, 3]
 type = HitDef
@@ -977,7 +977,7 @@ ground.velocity = -12
 air.velocity = -3,-6
 air.fall = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1230, 4]
 type = HitDef
@@ -1010,7 +1010,7 @@ palFX.sinAdd=-255,-255,-255,48
 envshake.time=12
 envshake.ampl=3
 envShake.freq=120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1230, Snd]
 type = playsnd
@@ -1126,7 +1126,7 @@ fall.recovertime = 120
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 200, 3]
 type = ChangeState
@@ -1227,7 +1227,7 @@ ground.velocity = -8
 air.velocity = -3,-6
 air.fall = 1
 fall.recovertime = 25
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 id = 1300
 
 [State 1301, 2]
@@ -1255,7 +1255,7 @@ ground.velocity = -8
 air.velocity = -3,-6
 air.fall = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
@@ -1364,7 +1364,7 @@ palFX.sinAdd=-255,-255,-255,48
 envshake.time=12
 envshake.ampl=3
 envShake.freq=120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1303, 2]
 type = HitDef
@@ -1398,7 +1398,7 @@ palFX.sinAdd=-255,-255,-255,48
 envshake.time=12
 envshake.ampl=3
 envShake.freq=120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State 1303, 3]
 type = ChangeState
@@ -1529,7 +1529,7 @@ ground.velocity = -8
 air.velocity = -3,-6
 air.fall = 1
 fall.recovertime = 25
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 id = 1300
 
 [State 1331, 2]
@@ -1557,7 +1557,7 @@ ground.velocity = -8
 air.velocity = -3,-6
 air.fall = 1
 fall.recovertime = 120
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 palFX.time=12 * var(9)
 palFX.add=255,255,255
 palFX.sinAdd=-255,-255,-255,48
@@ -1668,7 +1668,7 @@ ground.slidetime = 17
 guard.velocity = -12.3
 air.fall = 1
 air.velocity = -4,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 numhits = 0
 p1stateno = 1405
 
@@ -1950,7 +1950,7 @@ ground.slidetime = 17
 guard.velocity = -12.3
 air.fall = 1
 air.velocity = -4,-6
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 numhits = 0
 
 [State 200, 3]

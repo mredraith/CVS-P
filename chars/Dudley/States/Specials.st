@@ -1032,7 +1032,7 @@ envshake.freq=30
 envshake.ampl=4
 fall = 1
 fall.recover = 0
-yAccel = (0.5 + (ComboCount * 0.06))
+yAccel = (0.5 + (ComboCount * 0.01))
 
 [State AttackDone]
 type=statetypeset
