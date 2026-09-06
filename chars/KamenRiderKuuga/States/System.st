@@ -4496,22 +4496,7 @@ ignorehitpause = 1
 
 [State -3, Cancel Check]
 type = varset
-trigger1 = var(20) && (StateNo = [200,699])
-trigger2 = var(20) && (StateNo = [1000,2999]) && (MoveContact || var(18))
-trigger3 = (StateNo = [200,699]) && Time <= 2
-trigger4 = StateNo = [200,201] 
-trigger5 = StateNo = 211 && movecontact&&AnimElemTime(5) < 0
-trigger6 = StateNo = 421 && movecontact&& AnimElemTime(5) < 0
-trigger7 = StateNo = 231 && movecontact
-trigger8 = StateNo = 400
-trigger9 = StateNo = 410 && movecontact&& AnimElemTime(5) < 0
-trigger10 = StateNo = 430
-trigger11 = StateNo = 600
-trigger12 = StateNo = 630
-trigger13 = StateNo = 221 && MoveContact && AnimElemTime(6) < 0
-trigger14 = StateNo = 241 && MoveContact ;&& AnimElemTime(5) < 0 
-trigger15 = StateNo = 251 && MoveContact && AnimElemTime(6) < 0
-trigger16 = StateNo = 440 && MoveContact && AnimElemTime(5) < 0
+trigger1 = (StateNo = [200,699])
 var(6) = 1
 ignorehitpause = 1
 

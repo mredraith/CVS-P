@@ -834,7 +834,7 @@ x = 0
 type = VelAdd
 trigger1 = AnimElemTime(4) > 2 && var(40) != 3
 trigger2 = AnimElemTime(4) > 0 && var(40) = 3
-y = 0.5859375
+y = 0.5
 
 [State 1100, NotHitBy]
 type = NotHitBy
