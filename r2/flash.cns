@@ -103,30 +103,26 @@ value = 0
 [State -4, Drift Forward]
 type = veladd
 triggerall = StateType = a
-triggerall = ctrl = 1
 trigger1 = Command = "holdfwd"
-x = 0.05
+x = ifElse(ctrl = 1, 0.06, 0.03)
 
 [State -4, Drift Backward]
 type = veladd
 triggerall = StateType = a
-triggerall = ctrl = 1
 trigger1 = Command = "holdback"
-x = -0.05
+x = ifElse(ctrl = 1, -0.06, -0.03)
 
 [State -4, Drift Up]
 type = veladd
 triggerall = StateType = a
-triggerall = ctrl = 1
 trigger1 = Command = "holdup"
-y = -0.05
+y = ifElse(ctrl = 1, -0.06, -0.03)
 
 [State -4, Drift Down]
 type = veladd
 triggerall = StateType = a
-triggerall = ctrl = 1
 trigger1 = Command = "holddown"
-y = 0.05
+y = ifElse(ctrl = 1, 0.06, 0.03)
 
 [State -4, Roman Cancel - Change State]
 type = ChangeState
