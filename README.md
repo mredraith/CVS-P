@@ -7,6 +7,7 @@ Featuring:
 * 19 3D stages made by me (Trying to make that number bigger)
 * Complete port to Ikemen GO
 * Netplay via Ikemen GO's built-in online connection system
+* Characters have Tekken-like juggles
 * Inputs are easier to perform
 * Funny joke characters like Funny Ryu and Shin Akuma/God Rugal
 * Unique balancing ideas;
