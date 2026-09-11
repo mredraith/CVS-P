@@ -78,40 +78,40 @@ time = 32
 
 [Command]
 name = "Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, x
+command = ~D, DB, B, D, DB, B, x
 time = 32
 [Command]
 name = "Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, y
+command = ~D, DB, B, D, DB, B, y
 time = 32
 [Command]
 name = "Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, z
+command = ~D, DB, B, D, DB, B, z
 time = 32
 [Command]
 name = "Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, ~x
+command = ~D, DB, B, D, DB, B, ~x
 time = 32
 [Command]
 name = "Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, ~y
+command = ~D, DB, B, D, DB, B, ~y
 time = 32
 [Command]
 name = "Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, ~z
+command = ~D, DB, B, D, DB, B, ~z
 time = 32
 
 [Command]
 name = "MAX Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, x+y
+command = ~D, DB, B, D, DB, B, x+y
 time = 32
 [Command]
 name = "MAX Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, y+z
+command = ~D, DB, B, D, DB, B, y+z
 time = 32
 [Command]
 name = "MAX Crazy Drum Typhoon"
-command = ~D, DF, F, D, DB, B, x+z
+command = ~D, DB, B, D, DB, B, x+z
 time = 32
 
 [Command]
